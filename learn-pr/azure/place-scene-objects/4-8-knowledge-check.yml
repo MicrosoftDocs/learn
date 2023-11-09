@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Three multiple-choice questions
-  ms.date: 09/09/2021
-  author: Sean-Kerawala
-  ms.author: sekerawa
+  ms.date: 06/26/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
@@ -25,22 +25,11 @@ quiz:
         - content: "Prefabs are reusable components used to propagate changes to all its instances at once."
           isCorrect: true
           explanation: Prefabs are a special type of component that allows fully configured GameObjects to be saved in the Project for reuse.
-    - content: "Which Object Collection type allows randomization and supports dispersed style collection?"
-      choices:
-        - content: "Grid Object Collection"
-          isCorrect: false
-          explanation: A Grid Object Collection is simply a set of child objects organized with some layout parameters.
-        - content: "Tile Grid Object Collection"
-          isCorrect: false
-          explanation: This type of collection is a basic grid layout for game objects of a consistent size.
-        - content: "Scattered Grid Object Collection"
-          isCorrect: true
-          explanation: A Scattered Grid Object Collection is a set of child objects randomly laid out within a radius.
     - content: "Suppose you need an arrow always pointing in the direction of the sun. Which solver will you use to implement this function?"
       choices:
         - content: "Directional Indicator"
           isCorrect: true
-          explanation: Directional Indicator will orient towards the DirectionalTarget supplied.
+          explanation: Directional Indicator orients towards the DirectionalTarget supplied.
         - content: "Tap To Place"
           isCorrect: false
           explanation: Tap To Place is used to place a game object on surface.

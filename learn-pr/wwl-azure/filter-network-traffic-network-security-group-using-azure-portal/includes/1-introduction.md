@@ -1,4 +1,3 @@
-
 Network security is a critical aspect of maintaining a secure and reliable infrastructure. Azure provides a powerful tool called Network Security Group (NSG) that allows organizations to filter network traffic and enforce access controls in their cloud environments. In this training module, we will explore how to utilize Azure NSG to enhance network security and protect your resources.
 
 ## Scenario

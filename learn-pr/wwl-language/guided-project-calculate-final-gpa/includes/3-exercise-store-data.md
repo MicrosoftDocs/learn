@@ -1,6 +1,3 @@
-
-
-
 In this exercise, you'll begin setting up variables needed to calculate a student's GPA. Let's get started.
 
 > [!IMPORTANT]
@@ -10,7 +7,7 @@ In this exercise, you'll begin setting up variables needed to calculate a studen
 
 In this task, you'll identify the numeric equivalents for the student's earned letter grade. Then you'll declare variables to store the numeric grade value for each class. The numeric equivalents are represented as whole numbers, so you'll be using the Integer data type to store the values.
 
-1. Ensure that you have the .NET Editor open, and that you have the variables prepared with each student's name, course names, and credit hours.
+1. Ensure that you have the .NET Editor open, and that you have the variables prepared with the student's name, course names, and credit hours.
 
     In the Prepare unit for this Guided project module, the Setup instructions have you copy student course information into the editor. If necessary, go back and complete the Setup instructions.
 
@@ -112,3 +109,4 @@ In this task, you'll run the code and verify the output is correct.
 
 > [!IMPORTANT]
 > Be sure not to delete any of the code you've written so far. You'll build on this code in the next exercise.
+

@@ -11,5 +11,5 @@ In this exercise, you will:
 
 Follow these instructions to complete the challenge:
 
-- View the [challenge repo on GitHub](https://github.com/MicrosoftLearning/mslearn-mlops?azure-portal=true).
+- View the [challenge repo on GitHub](https://microsoftlearning.github.io/mslearn-mlops/?azure-portal=true).
 - Complete challenge 3: trigger GitHub Actions with feature-based development.

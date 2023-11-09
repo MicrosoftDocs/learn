@@ -1,5 +1,3 @@
-
-
 You can choose to deploy a model to a managed online endpoint without using the MLflow model format. To deploy a model, you'll need to create the scoring script and define the environment necessary during inferencing.
 
 To deploy a model, you need to have created an endpoint. Then you can deploy the model to the endpoint.

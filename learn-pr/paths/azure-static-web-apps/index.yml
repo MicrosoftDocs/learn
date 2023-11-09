@@ -34,7 +34,7 @@ roles:
 products:
   - azure
   - azure-app-service
-  - azure-app-service-static
+  - static-web-apps
 subjects:
 - cloud-computing
 modules:

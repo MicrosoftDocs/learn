@@ -1,7 +1,3 @@
-
-
-
-
 Here's a second chance to use what you've learned about casting and conversion to solve a coding challenge.
 
 The following challenge helps you to understand the implications of casting values considering the impact of narrowing and widening conversions.

@@ -29,3 +29,8 @@ Get started studying for this certification with the [official collection of tra
   * [Examples for Azure Cosmos DB for NoSQL SDK for .NET](/azure/cosmos-db/nosql/samples-dotnet)
 * **Best practices**
   * [Best practices for Azure Cosmos DB .NET SDK](/azure/cosmos-db/nosql/best-practice-dotnet)
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Guided project - Build a chat bot using Azure OpenAI, Azure Cosmos DB for NoSQL, and Blazor](/training/modules/build-chat-bot-azure-cosmos-db-openai-blazor/)

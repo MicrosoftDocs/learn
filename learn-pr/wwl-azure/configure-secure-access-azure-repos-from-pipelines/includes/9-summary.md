@@ -1,9 +1,9 @@
 In this module, we covered the steps to configure secure access to packages and configure credential secrets and secrets for services in Azure DevOps. Finally, we covered how to use the service connection in a YAML pipeline to access packages securely.
 
-You learned how to describe the benefits and usage of:
+You learned how to:
 
 - Configure pipeline access to packages.
-- Configure credential secrets, and secrets for services.
+- Configure credential secrets and secrets for services.
 - Ensure that the secrets are in the Azure Key Vault.
 - Ensure that secrets are not in the logs.
 

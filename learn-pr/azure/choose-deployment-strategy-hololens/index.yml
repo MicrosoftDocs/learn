@@ -17,7 +17,7 @@ abstract: |
     - Evaluate which deployment scenario is best suited for your organization
 
 prerequisites: "Although this module has no requirements, you're encouraged to have a HoloLens 2 device (or devices) ready for deployment."
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/choose-deployment-strategy-hololens.svg
 levels:
   - beginner
 roles:

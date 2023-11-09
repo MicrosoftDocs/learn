@@ -4,10 +4,9 @@ metadata:
   title: Management group and subscription organization
   description: Management group and subscription organization
   ms.date: 09/21/2020
-  author: kristopherjturner
-  ms.author: krturner
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 title: Management group and subscription organization
 durationInMinutes: 10
 content: |

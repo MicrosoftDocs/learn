@@ -107,7 +107,7 @@ Connect to the new server by using Remote Desktop client. You'll download a samp
 
 1. Select the **FileServerLocal** VM. The **FileServerLocal** virtual machine pane appears.
 
-1. In the top menu bar, select **Connect**, and from the dropdown list, select **RDP**. The **Connect** pane appears for your **FileServerLocal** virtual machine.
+1. In the top menu bar, select **Connect**. The **Connect** pane appears for your **FileServerLocal** VM. Select **Native RDP**.
 
 1. Select **Download RDP File**.
 

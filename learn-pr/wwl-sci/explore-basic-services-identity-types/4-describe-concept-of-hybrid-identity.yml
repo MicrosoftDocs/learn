@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-concept-of-hybrid-identities
+title: Describe hybrid identity
+metadata:
+  title: Describe hybrid identity
+  description: "Describe hybrid identity"
+  ms.date: 09/07/2023
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-describe-concept-of-hybrid-identity.md)]

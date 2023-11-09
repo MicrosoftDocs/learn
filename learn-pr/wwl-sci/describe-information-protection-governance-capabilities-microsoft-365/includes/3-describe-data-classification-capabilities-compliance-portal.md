@@ -8,7 +8,7 @@ Identifying and classifying sensitive items that are under your organization's c
 - automated pattern recognition, like sensitive information types
 - machine learning
 
-## Sensitive information types
+### Sensitive information types
 
 Sensitive information types (SIT) are pattern-based classifiers. They have set patterns that can be used to identify them.  For example, an identification number in a country/region may be based on a specific pattern, like this:
 
@@ -23,7 +23,7 @@ Examples include:
 - Bank account numbers
 - Health service numbers
 
-Refer to [Sensitive information type entity definitions](/microsoft-365/compliance/sensitive-information-type-entity-definitions?view=o365-worldwide) for a listing of available built-in sensitive information types.
+Refer to [Sensitive information type entity definitions](/microsoft-365/compliance/sensitive-information-type-entity-definitions) for a listing of available built-in sensitive information types.
 
 Data classification in Microsoft Purview also supports the ability to create custom sensitive information types to address organization-specific requirements.  For example, an organization may need to create sensitive information types to represent employee IDs or project numbers.
 
@@ -31,7 +31,7 @@ Also supported is exact data match (EDM) classification. EDM-based classificatio
 
 To explore how to classify data using sensitive info types with Microsoft Purview Information Protection, select the interactive guide available in the Learn more section of the Summary and resources unit of this module.
 
-## Trainable classifiers
+### Trainable classifiers
 
 Trainable classifiers use artificial intelligence and machine learning to intelligently classify your data. They're most useful classifying data unique to an organization like specific kinds of contracts, invoices, or customer records. This method of classification is more about training a classifier to identify an item based on what the item is, not by elements that are in the item (pattern matching).
 Two types of classifier are available:
@@ -50,7 +50,7 @@ Trainable classifiers can then sort through items in locations like SharePoint O
 > [!NOTE]
 > At this time, classifiers only work with items that aren't encrypted.
 
-## Understand and explore the data
+### Understand and explore the data
 
 Data classification can involve large numbers of documents and emails. To help administrators to easily derive insights and understanding, the overview section of the data classification pane in compliance portal provides many details at a glance, including:
 
@@ -60,7 +60,7 @@ Data classification can involve large numbers of documents and emails. To help a
 
 Administrators can also use the content and activity explorers to gain a deeper understanding and guide their actions.
 
-### What is the content explorer?
+#### What is the content explorer?
 
 The content explorer is available as a tab in the data classification pane of compliance portal. It enables administrators to gain visibility into the content that has been summarized in the overview pane.
 
@@ -73,7 +73,7 @@ Anyone who wants to access content explorer must have an account in one or both 
 
 With content explorer, administrators get a current snapshot of individual items that have been classified across the organization. It enables administrators to further drill down into items by allowing them to access and review the scanned source content that's stored in different kinds of locations, such as Exchange, SharePoint, and OneDrive.
 
-### What is the activity explorer?
+#### What is the activity explorer?
 
 Activity explorer provides visibility into what content has been discovered and labeled, and where that content is. It makes it possible to monitor what's being done with labeled content across the organization. Admins gain visibility into document-level activities like label changes and label downgrades (such as when someone changes a label from confidential to public).
 
@@ -93,11 +93,11 @@ Admins can use more than 30 filters for data including:
 - Sensitivity label
 - Retention label
 
-The value of understanding what actions are being taken with sensitive content is that admins can see if the controls that they've already put in place, such as [data loss prevention policies](/microsoft-365/compliance/dlp-create-deploy-policy?view=o365-worldwide), are effective or not. For example, if it’s discovered that a large number of items labeled *Highly Confidential* have suddenly been downgraded to *Public*, admins can update policies and act to restrict undesired behavior as a response.
+The value of understanding what actions are being taken with sensitive content is that admins can see if the controls that they've already put in place, such as [data loss prevention policies](/microsoft-365/compliance/dlp-create-deploy-policy), are effective or not. For example, if it’s discovered that a large number of items labeled *Highly Confidential* have suddenly been downgraded to *Public*, admins can update policies and act to restrict undesired behavior as a response.
 
-## Explore data classification in the compliance portal
+### Explore data classification in the compliance portal
 
-The video below walks you through the various data classification capabilities available in the compliance portal.
+The video that follows walks you through the various data classification capabilities available in the compliance portal.
 
 > [!NOTE]
 > The user interface (UI) in Microsoft 365 is continually evolving so the UI shown in the video may not reflect the most recent updates.

@@ -17,7 +17,7 @@ In this exercise, you'll create an application that uses single-shot recognition
 
     This command should take a few seconds to complete.
 
-1. When your .NET Core application has been created, add the Cognitive Services package to your application:
+1. When your .NET Core application has been created, add the Speech SDK package to your application:
 
     ```dotnetcli
     dotnet add package Microsoft.CognitiveServices.Speech
@@ -43,7 +43,7 @@ You'll use this WAV file for the application in this exercise and the applicatio
     code Program.cs
     ```
 
-1. Remove all the existing code and add the following `using` statements, which enable the Azure Cognitive Services Speech APIs for your application:
+1. Remove all the existing code and add the following `using` statements, which enable the Azure AI Speech APIs for your application:
 
     ```csharp
     using System.Text;
@@ -51,14 +51,14 @@ You'll use this WAV file for the application in this exercise and the applicatio
     using Microsoft.CognitiveServices.Speech.Audio;
     ```
 
-1. Add the following code, which uses Azure Cognitive Services Speech APIs to convert the contents of the WAV file that you created earlier to create a text file with the transcribed speech. Replace the `azureKey` and `azureLocation` values with the values you copied in the last exercise.
+1. Add the following code, which uses Azure AI Speech APIs to convert the contents of the WAV file that you created earlier to create a text file with the transcribed speech. Replace the `azureKey` and `azureLocation` values with the values you copied in the last exercise.
 
     ```csharp
     string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
     string azureLocation = "ENTER YOUR LOCATION FROM THE FIRST EXERCISE";
     string textFile = "Shakespeare.txt";
     string waveFile = "Shakespeare.wav";
-    
+
     try
     {
         FileInfo fileInfo = new FileInfo(waveFile);
@@ -69,7 +69,7 @@ You'll use this WAV file for the application in this exercise and the applicatio
             using var audioConfig = AudioConfig.FromWavFileInput(fileInfo.FullName);
             using var speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
             var result = await speechRecognizer.RecognizeOnceAsync();
-                        
+
             FileStream fileStream = File.OpenWrite(textFile);
             StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8);
             streamWriter.WriteLine(result.Text);
@@ -83,7 +83,7 @@ You'll use this WAV file for the application in this exercise and the applicatio
     }
     ```
 
-    This code uses your key and location to initialize a connection to Azure Cognitive Services. It then reads the contents of the WAV file that you downloaded, then uses the `RecognizeOnceAsync()` method of the `SpeechRecognizer` to convert the audio to text, then it uses a stream writer to save the results to a text file.
+    This code uses your key and location to initialize a connection to Azure AI Speech. It then reads the contents of the WAV file that you downloaded, then uses the `RecognizeOnceAsync()` method of the `SpeechRecognizer` to convert the audio to text, then it uses a stream writer to save the results to a text file.
 
 1. When you've finished adding all of the code, your file should resemble the following example:
 
@@ -92,12 +92,12 @@ You'll use this WAV file for the application in this exercise and the applicatio
     using System.Threading.Tasks;
     using Microsoft.CognitiveServices.Speech;
     using Microsoft.CognitiveServices.Speech.Audio;
-    
+
     string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
     string azureLocation = "ENTER YOUR LOCATION FROM THE FIRST EXERCISE";
     string textFile = "Shakespeare.txt";
     string waveFile = "Shakespeare.wav";
-    
+
     try
     {
         FileInfo fileInfo = new FileInfo(waveFile);
@@ -108,7 +108,7 @@ You'll use this WAV file for the application in this exercise and the applicatio
             using var audioConfig = AudioConfig.FromWavFileInput(fileInfo.FullName);
             using var speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
             var result = await speechRecognizer.RecognizeOnceAsync();
-                        
+
             FileStream fileStream = File.OpenWrite(textFile);
             StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8);
             streamWriter.WriteLine(result.Text);
@@ -124,7 +124,7 @@ You'll use this WAV file for the application in this exercise and the applicatio
 
     Make sure that you update the values for the `azureKey` and `azureLocation` variables with your key and location from the previous exercise.
 
-1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl-Q</kbd> to exit the editor.
+1. To save your changes, press <kbd>Ctrl+S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to exit the editor.
 
 ## Run your application
 
@@ -172,6 +172,6 @@ You'll use this WAV file for the application in this exercise and the applicatio
     The following quotes are from Act 2, scene seven of William Shakespeare's play as you like it.
     ```
 
-    If you listened to the sample WAV file, you'd notice that this text is only the first few seconds of the audio. Because we used the `RecognizeOnceAsync()` method of the `SpeechRecognizer`, the speech-to-text recognition stopped when the speaker paused.
+    If you listened to the sample WAV file, you'd notice that this text is only the first few seconds of the audio. Because we used the `RecognizeOnceAsync()` method of the `SpeechRecognizer`, the speech to text recognition stopped when the speaker paused.
 
 In the next exercise, you'll learn how to continue the speech to text recognition for the entire audio file.

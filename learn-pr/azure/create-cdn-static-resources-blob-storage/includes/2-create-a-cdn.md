@@ -35,8 +35,8 @@ There are four types of CDN available in Azure:
 
 - Standard Microsoft
 - Standard Akamai
-- Standard Verizon
-- Premium Verizon
+- Standard Edgio
+- Premium Edgio
 
 The types vary by features and caching options.
 
@@ -108,5 +108,5 @@ For more information on integrating a storage account into an Azure CDN, see the
 Propagation times between POPs vary, according to which CDN profile and pricing tier you're using.
 
 - Azure CDN Microsoft Standard profile typically propagates in 10 minutes
-- Azure CDN Verizon Standard and Azure CDN Verizon Premium profile typically complete in 10 minutes
+- Azure CDN Edgio Standard and Azure CDN Edgio Premium profile typically complete in 10 minutes
 - Azure CDN Akamai Standard profile usually propagates in 1 minute

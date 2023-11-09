@@ -1,4 +1,3 @@
-
 So far, you’ve been learning about Git concepts. Cloning, branching, merging, and committing are all concepts that are part of using Git as a source and version control system or framework. You may have heard of GitHub as well, and you may be wondering if there’s a difference.
 
 There is, and it’s an important difference.

@@ -12,10 +12,10 @@ title: Design solutions for network security
 summary: "You learn how to design secure network solutions using techniques like network segmentation, traffic filtering, network monitoring and posture management."
 abstract: |
   By the end of this module, you are able to:
-  -  Design solutions for network segmentation
-  -   Design solutions for filtering traffic with network security groups
-  -   Design solutions for network posture measurement
-  -   Design solutions for network monitoring
+  - Design solutions for network segmentation
+  - Design solutions for filtering traffic with network security groups
+  - Design solutions for network posture measurement
+  - Design solutions for network monitoring
 prerequisites: |
   -   Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
   -  Experience with hybrid and cloud implementations.

@@ -25,7 +25,7 @@ Azure Monitor collects data from each of the following tiers:
 
 * **Azure subscription monitoring data:** Data about an Azure subscription's operation and management, as well as data about Azure itself's health and operation.
 
-* **Azure tenant monitoring data:** Data about tenant-level Azure services' operation; for example, Azure Active Directory.
+* **Azure tenant monitoring data:** Data about tenant-level Azure services' operation; for example, Microsoft Entra ID.
 
 With Azure Monitor, customers can get a 360-degree view of their applications, infrastructure, and network with advanced analytics, dashboards, and visualization maps. Azure Monitor provides intelligent insights and allows for better decisions with AI. Customers can analyze, correlate, and monitor data from various sources using a powerful query language and built-in machine-learning constructs. Azure Monitor also provides out-of-the-box integration with popular DevOps, IT Service Management (ITSM), and Security Information and Event Management (SIEM) tools.
 

@@ -27,19 +27,19 @@ To quickly create a starter web application, you can use the Maven (`mvn`) comma
 mvn archetype:generate -DgroupId=example.webapp -DartifactId=helloworld -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-webapp
 ```
 
-This command creates a `helloworld` folder that contains the source code for our application.
+This command creates a `helloworld` folder that contains the source code for your application.
 
 ::: zone-end
 
 ::: zone pivot="node"
 
-You can use the Node Package Manager (`npm`) command-line tool that comes bundled with Node.js to create a new application. The `init` command creates a new `package.json` required for our application:
+You can use the Node Package Manager (`npm`) command-line tool that comes bundled with Node.js to create a new application. The `init` command creates a new `package.json` required for your application:
 
 ```bash
 npm init -y
 ```
 
-If you open the `package.json` file that was created on the current folder, you can add a `start` entry to the `scripts` section to describe how your web application should be run:
+If you open the `package.json` file that was created on the current folder, you can add a `start` entry to the `scripts` section to describe how your web application should run:
 
 ```json
 ...
@@ -69,7 +69,7 @@ This example code creates a server that listens on port 3000 of your computer an
 
 ::: zone pivot="python"
 
-To create a new web application starter using a few lines of code, you can use Flask, which is a commonly used web application framework. You can install Flask using the following command:
+To create a new web application starter using a few lines of code, you can use Flask, which is a commonly used web-application framework. You can install Flask using the following command:
 
 ```bash
 pip install flask
@@ -92,7 +92,7 @@ This example code creates a server that answers every request with a "Hello Worl
 
 ## Adding your code to source control
 
-After your web application code is ready, the next step is usually to put the code into a source-control repository such as Git. If you have Git installed on your machine, running these commands on your source code folder will initialize the repository.
+After your web application code is ready, the next step is usually to put the code into a source-control repository such as Git. If you have Git installed on your machine, running these commands in your source-code folder will initialize the repository.
 
 ```bash
 git init
@@ -100,7 +100,7 @@ git add .
 git commit -m "Initial commit"
 ```
 
-These commands allow you to initialize a local Git repository and create a first commit with your code. You immediately gain the benefit of the ability to keep a history of your changes with commits. Later on, you'll also be able to synchronize your local repository with a remote repository; for example, hosted on GitHub. This allows you to set up continuous integration and continuous deployment (CI/CD). While we recommend using a source-control repository for production applications, it's not a requirement to be able to deploy an application to Azure App Service.
+These commands allow you to initialize a local Git repository and create a first commit with your code. You immediately gain the benefit of keeping a history of your changes with commits. Later on, you'll also be able to synchronize your local repository with a remote repository; for example, hosted on GitHub. This allows you to set up continuous integration and continuous deployment (CI/CD). While we recommend using a source-control repository for production applications, it's not a requirement to be able to deploy an application to Azure App Service.
 
 > [!NOTE]
-> Using CI/CD enables more frequent code deployment in a reliable manner by automating builds, tests, and deployments for every code change. It allows delivering new features and bug fixes for your application faster and more effectively.
+> Using CI/CD enables more frequent code deployment in a reliable manner by automating builds, tests, and deployments for every code change. It enables delivering new features and bug fixes for your application faster and more effectively.

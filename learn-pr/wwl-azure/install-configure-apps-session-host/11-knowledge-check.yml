@@ -38,4 +38,4 @@ quiz:
       explanation: "That's incorrect. Yammer is a collaboration tool that helps you connect and engage across the company. Start conversations, share knowledge, and build communities."
     - content: "Microsoft Always On VPN"
       isCorrect: false
-      explanation: "That's incorrect. Always On VPN provides a single, cohesive solution for remote access and supports domain-joined, nondomain-joined (workgroup), or Azure AD–joined devices, even personally owned devices."
+      explanation: "That's incorrect. Always On VPN provides a single, cohesive solution for remote access and supports domain-joined, nondomain-joined (workgroup), or Microsoft Entra ID–joined devices, even personally owned devices."

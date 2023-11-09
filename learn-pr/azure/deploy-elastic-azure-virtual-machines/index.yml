@@ -28,7 +28,6 @@ roles:
 products:
   - azure
   - azure-virtual-machines
-  - azure-linux-vm
 subjects:
 - virtual-machine
 units:

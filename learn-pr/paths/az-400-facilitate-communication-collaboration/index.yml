@@ -31,7 +31,6 @@ modules:
 - learn.wwl.introduce-foundation-pillars-devops
 - learn.wwl.characterize-devops-continous-collaboration-improvement
 - learn.wwl.explain-devops-continous-delivery-quality
-- learn.azure.plan-manage-azure-costs
 - learn.azdo.route-system-feedback
 trophy:
   uid: az-400-facilitate-communication-collaboration.trophy

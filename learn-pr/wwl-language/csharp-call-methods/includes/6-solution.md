@@ -1,5 +1,3 @@
-
-
 The following code is one possible solution for the challenge from the previous unit.
 
 ```c#
@@ -11,7 +9,7 @@ Console.WriteLine(largerValue);
 
 ```
 
-The `Math.Max()` method supports 11 overloaded versions to accept different data types. The overloaded version of the `Math.Max()` method that you call will accept `int` as both input parameters, and returns the larger of the two values as an `int`.
+The `Math.Max()` method supports 13 overloaded versions to accept different data types. The overloaded version of the `Math.Max()` method that you call will accept `int` as both input parameters, and returns the larger of the two values as an `int`.
 
 When you run the code, you should see the following output:
 

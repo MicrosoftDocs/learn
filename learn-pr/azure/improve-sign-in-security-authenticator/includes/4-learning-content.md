@@ -30,7 +30,7 @@ You want to apply the new policy to a test user and confirm Microsoft Authentica
 
     Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
 -->
-You'll create a new user account in Azure AD and enable it for Microsoft Authenticator. Then you'll sign in, perform MFA, and set up Microsoft Authenticator. After you confirm the new user account has Microsoft Authenticator as the new default sign-in method, you'll apply the policy to the remote employees group. 
+You'll create a new user account in Microsoft Entra ID and enable it for Microsoft Authenticator. Then you'll sign in, perform MFA, and set up Microsoft Authenticator. After you confirm the new user account has Microsoft Authenticator as the new default sign-in method, you'll apply the policy to the remote employees group. 
 
 <!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
 

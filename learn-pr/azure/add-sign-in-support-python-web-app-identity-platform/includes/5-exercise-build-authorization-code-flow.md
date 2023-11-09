@@ -41,7 +41,7 @@ After adding the code snippet above, update the client ID, tenant ID, and client
 
 You're now ready to start writing your core application logic. The *app.py* file in your project directory will hold the code we add in the remaining part of this unit. 
 
-For your application to sign in Azure AD users, start by importing the authentication library into your application. You'll also import Flask modules that your application will use to handle render templates and session access. Add the snippet below to *app.py*:
+For your application to sign in Microsoft Entra users, start by importing the authentication library into your application. You'll also import Flask modules that your application will use to handle render templates and session access. Add the snippet below to *app.py*:
 
 ```python
 
@@ -131,7 +131,7 @@ In the code snippet above, when a user attempts to navigate to a location in the
 
 In the authorization code flow dictionary, we'll add an entry to store the post sign-in url where users are redirected after going through the authorization code flow.
 
-Next, add the authorization code flow initiation to the session and update the MSAL http response cache. You also redirect users to Azure AD, where they can perform the necessary authorization code flow actions. This could be logging in and consenting to the required permissions, if they haven't already. 
+Next, add the authorization code flow initiation to the session and update the MSAL http response cache. You also redirect users to Microsoft Entra ID, where they can perform the necessary authorization code flow actions. This could be logging in and consenting to the required permissions, if they haven't already. 
 
 ## Create app routes
 
@@ -202,7 +202,7 @@ def authorized():
     return redirect(auth_code_flow["post_sign_in_url"])
 ```
 
-The route you create in the preceding code snippet isn't initiated directly by a user's action in the application. Instead, Azure AD redirects the user's browser to this page when they sign in and consent to the required permissions.
+The route you create in the preceding code snippet isn't initiated directly by a user's action in the application. Instead, Microsoft Entra ID redirects the user's browser to this page when they sign in and consent to the required permissions.
 
 The other two routes that require a specific level of authentication and authorization are covered in the next section of this unit, [sign in users](#sign-in-users).
 

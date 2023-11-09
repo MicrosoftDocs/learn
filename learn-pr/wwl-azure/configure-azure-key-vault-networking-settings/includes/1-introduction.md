@@ -1,4 +1,3 @@
-
 Azure Key Vault is a powerful service that allows organizations to securely store and manage cryptographic keys, secrets, and certificates. To ensure the utmost security, it is essential to configure appropriate networking settings for Azure Key Vault. In this training module, we will explore how to configure Azure Key Vault networking settings to control access and secure the communication between Key Vault and other Azure resources.
 
 ## Scenario

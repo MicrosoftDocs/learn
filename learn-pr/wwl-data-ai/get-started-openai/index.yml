@@ -7,8 +7,7 @@ metadata:
   author: sheryang
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services 
-  ms.subservice: openai
+  ms.service: azure-ai-openai
 title: Get started with Azure OpenAI Service
 summary: This module provides engineers with the skills to begin building an Azure OpenAI Service solution.
 abstract: |

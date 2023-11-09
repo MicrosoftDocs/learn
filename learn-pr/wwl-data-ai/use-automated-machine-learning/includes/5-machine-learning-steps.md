@@ -1,4 +1,3 @@
-
 You can think of the steps in a machine learning process as: 
 1. **Prepare data**: Identify the features and label in a dataset. Pre-process, or clean and transform, the data as needed.   
 2. **Train model**: Split the data into two groups, a training and a validation set. Train a machine learning model using the training data set. Test the machine learning model for performance using the validation data set. 

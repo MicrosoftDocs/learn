@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-model-managed-online-endpoint
 metadata:
   title: Deploy a model to a managed online endpoint
   description: "Learn how to deploy models to a managed online endpoint for real-time inferencing."
-  ms.date: 06/07/2023
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Test online endpoints.
 prerequisites: |
   None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/deploy-model-managed-online-endpoint.svg
 levels:
 - beginner
 roles:
@@ -28,7 +28,6 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.deploy-model-managed-online-endpoint.introduction
-- learn.wwl.deploy-model-managed-online-endpoint.video
 - learn.wwl.deploy-model-managed-online-endpoint.explore-managed-online-endpoints
 - learn.wwl.deploy-model-managed-online-endpoint.deploy-your-mlflow-model-managed-online-endpoint
 - learn.wwl.deploy-model-managed-online-endpoint.eploy-custom-model-managed-online-endpoint

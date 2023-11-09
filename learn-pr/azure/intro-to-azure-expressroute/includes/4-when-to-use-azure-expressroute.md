@@ -5,7 +5,7 @@ Azure ExpressRoute meets Adatum’s needs for the following reasons. ExpressRout
 - Provides guaranteed availability to resources in the Azure cloud. Microsoft guarantees a minimum of 99.95% availability for ExpressRoute dedicated connections, which means that if Adatum adopts ExpressRoute, connectivity disruptions that occur when sending traffic over the public internet won't affect day-to-day operations.
 - Provides secure connection to Azure resources. Adatum clients, such as those that use drone imagery when establishing minerals claims, prefer their data be transferred using private connections rather than VPN connections over the internet.
 
-## When not to use Azure VPN Gateway
+## When to use Azure VPN Gateway
 
 Not all customer locations require a dedicated connection to Azure datacenters. For example, smaller branch offices can often use site-to-site VPN connections to route traffic between on-premises hosts and Azure, because small sites are less likely to require persistent high bandwidth connections.  
 

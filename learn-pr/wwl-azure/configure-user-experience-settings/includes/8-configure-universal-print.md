@@ -2,7 +2,7 @@ Universal Print is a modern print solution that organizations can use to manage 
 
 Universal Print runs entirely on Microsoft Azure. When it's deployed with Universal Print–compatible printers, it doesn't require any on-premises infrastructure.
 
-Universal Print is a Microsoft 365 subscription-based service that organizations use to centralize print management through the Universal Print portal. It's fully integrated with Azure Active Directory and supports single sign-on scenarios.
+Universal Print is a Microsoft 365 subscription-based service that organizations use to centralize print management through the Universal Print portal. It's fully integrated with Microsoft Entra ID and supports single sign-on scenarios.
 
 Universal Print can be deployed with non-compatible printers by using Universal Print connector software.
 
@@ -27,7 +27,7 @@ Universal Print can be deployed with non-compatible printers by using Universal 
 :::row-end:::
 :::row:::
   :::column:::
-    Azure Active Directory
+    Microsoft Entra ID
   :::column-end:::
   :::column:::
     User and device identity and authorization service
@@ -93,7 +93,7 @@ Once Universal Print is enabled for a tenant, a Universal Print license needs to
 
  -  A Universal Print license is assigned to the Microsoft 365 tenant by `Global Administrator`.
  -  To configure and manage Universal Print, the corresponding administrator must have a Universal Print license assigned.
- -  To configure and manage Universal Print, an administrator must be assigned either of the following two Azure Active Directory (Azure AD) roles: `Printer Administrator or Global Administrator`.
+ -  To configure and manage Universal Print, an administrator must be assigned either of the following two Microsoft Entra roles: `Printer Administrator or Global Administrator`.
  -  A client device (to install and print from Universal Print) running Windows client OS.
  -  An Internet connection.
 
@@ -113,7 +113,7 @@ Printers installed on Universal Print connector(s) need to be registered with Un
 
 ## Step 3: Assign permissions and share printer
 
-Registered printers need to have permissions assigned to Azure AD users and security groups. Once the permissions are configured, the printer needs to be shared for the users to be able to add it to their device for printing.
+Registered printers need to have permissions assigned to Microsoft Entra users and security groups. Once the permissions are configured, the printer needs to be shared for the users to be able to add it to their device for printing.
 
 [Assign printer permissions and share a printer.](/universal-print/portal/share-printers)
 
@@ -125,9 +125,9 @@ Before you try to add a Universal Print printer to a user's device, ensure that:
 
  -  The user's device is connected to internet.
  -  The user's device is either:
-     -  Azure AD joined
-     -  Azure AD registered
-     -  Hybrid Azure AD joined
+     -  Microsoft Entra joined
+     -  Microsoft Entra registered
+     -  Microsoft Entra hybrid joined
  -  The Universal Print printer has been shared.
  -  The user has been added to the permissions of Universal Print printer that is to be added on the device.
  -  The user has been assigned the license to use Universal Print.

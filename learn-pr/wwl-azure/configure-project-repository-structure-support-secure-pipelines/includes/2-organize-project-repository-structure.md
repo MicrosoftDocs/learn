@@ -1,5 +1,7 @@
 There are different ways to organize a project and repository structure in Azure DevOps.
 
+Suppose you work as a software director at a banking institution. The banking institution has decided to adopt Azure DevOps as their primary software development platform. You have several development teams working on different projects and applications, and you need a secure project and repository structure that will allow each team to work independently in some projects, and collaborate in others, while ensuring that their code is secure and meets cybersecurity and banking regulations.
+
 In the banking institution example, you would need to securely organize your different projects and repositories to allow for team collaboration or isolation as needed.
 
 Here, you’ll examine fundamental concepts for giving access and permissions, best practices for organizing projects and repositories, and possible project and repository structures.

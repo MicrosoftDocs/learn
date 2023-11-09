@@ -5,10 +5,9 @@ metadata:
   title: Introduction
   description: An introduction to the Govern methodology.
   ms.date: 09/22/2020
-  author: BrianBlanchard
-  ms.author: jumcn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

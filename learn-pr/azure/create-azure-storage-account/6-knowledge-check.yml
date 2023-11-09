@@ -13,15 +13,15 @@ metadata:
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Suppose you have two video files stored as blobs. One of the videos is business-critical and requires a replication policy that creates multiple copies across geographically diverse datacenters. The other video is non-critical, and a local replication policy is sufficient. Which of the following options would satisfy both data diversity and cost sensitivity consideration."
+  - content: "Suppose you have two video files stored as blobs. One of the videos is business-critical and requires a replication policy that creates multiple copies across geographically diverse datacenters. The other video is noncritical, and a local replication policy is sufficient. Which of the following options would satisfy both data diversity and cost sensitivity consideration."
     choices:
     - content: "Create a single storage account that makes use of Local-redundant storage (LRS) and host both videos from here."
       isCorrect: false
       explanation: "The usage of single storage account to host both videos in a single LRS enabled storage account takes cost savings into consideration, but doesn't consider the data diversity storage requirements for business-critical content."
     - content: "Create a single storage account that makes use of Geo-redundant storage (GRS) and host both videos from here."
       isCorrect: false
-      explanation: "The usage of single storage account to host both videos in a single RRS enabled storage account takes data diversity into consideration, but doesn't consider the cost savings requirements for non-critical content."
-    - content: "Create two storage accounts. The first account makes use of Geo-redundant storage (GRS) and hosts the business-critical video content. The second account makes use of Local-redundant storage (LRS) and hosts the non-critical video content."
+      explanation: "The usage of single storage account to host both videos in a single RRS enabled storage account takes data diversity into consideration, but doesn't consider the cost savings requirements for noncritical content."
+    - content: "Create two storage accounts. The first account makes use of Geo-redundant storage (GRS) and hosts the business-critical video content. The second account makes use of Local-redundant storage (LRS) and hosts the noncritical video content."
       isCorrect: true
       explanation: "In general, increased diversity means an increased number of storage accounts. A storage account by itself has no financial cost. However, the settings you choose for the account do influence the cost of services in the account. Use multiple storage accounts to reduce costs."
   - content: "The name of a storage account must be:"

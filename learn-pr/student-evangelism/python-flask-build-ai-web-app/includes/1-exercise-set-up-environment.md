@@ -2,7 +2,7 @@ To get started writing our Flask application with Python, we need to set up our 
 
 In this unit, you'll learn how to install Python tooling and create a virtual Python environment. You'll install Flask, which is the framework we'll use for creating the website.
 
-> [!Important]
+> [!IMPORTANT]
 > In this module, you install and configure a variety of software packages and create a Python virtual environment. After the virtual environment is activated in your Command Prompt window or terminal, keep the window or terminal open. If you close your window or terminal, be sure to restart your *same* Python virtual environment in the new window or terminal. It's important to do all of your work in the same Python virtual environment that you create at the beginning of this module.
 
 At a high level, we'll perform the following steps:
@@ -39,19 +39,16 @@ If Python is installed, the output shows the Python version number. If you need 
 > 1. Under the user variables, double click on the variable called **Path**, which will pop up a window with a list of paths
 > 1. Click **New** and paste in the copied path.
 > 1. Once inserted, click **Ok** and Python should now be reachable from any location in your computer
->
->_Note: To verify the path configuration was successful, open a new command prompt terminal and type python to see the python version info. In case you are unable to still run a python command, restart your computer for the changes to be effected_ 
+
+>[!NOTE]
+>To verify the path configuration was successful, open a new command prompt terminal and type python to see the python version info. In case you are unable to still run a python command, restart your computer for the changes to be effected.
 
 ## Create the project directory
 
 Create a directory in the location of your choice. This directory will be your **project directory**, and will contain all of the code we'll create. You can create a directory from a command or terminal window with one of the following commands:
 
 ```bash
-# Windows
-md contoso
-cd contoso
-
-## macOS or Linux
+# Windows, macOS or Linux
 mkdir contoso
 cd contoso
 ```
@@ -66,15 +63,19 @@ A Python virtual environment isn't necessarily as complex as it sounds. Rather t
 To use a virtual environment, we'll create and activate it. We create it by using the `venv` module, which you installed as part of your Python installation instructions earlier. When we activate it, we tell our system to use the folder we created for all of its Python needs.
 
 ```bash
-# Windows
+# Windows, macOS or Linux
 # Create the environment
 python -m venv venv
+```
+
+The process of creating a virtual environment may take a few seconds. Wait for the terminal prompt to appear again before activating the environment.
+
+```bash
+# Windows
 # Activate the environment
-.\venv\scripts\activate
+./venv/scripts/activate
 
 # macOS or Linux
-# Create the environment
-python -m venv venv
 # Activate the environment
 source ./venv/bin/activate
 ```

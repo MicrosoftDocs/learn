@@ -1,4 +1,3 @@
-
 Application security groups enable you to configure network security as a natural extension of an application's structure, allowing you to group virtual machines and define network security policies based on those groups. You can reuse your security policy at scale without manual maintenance of explicit IP addresses. The platform handles the complexity of explicit IP addresses and multiple rule sets, allowing you to focus on your business logic. To better understand application security groups, consider the following example:
 
 :::image type="content" source="../media/application-security-groups-fab4e68f.png" alt-text="Diagram showing an example of Azure Network Security Groups and Application Security Groups.":::

@@ -1,6 +1,3 @@
-
-
-
 In this step, you'll develop the code to complete another subtask, which is to assign the petting zoo animals to groups. Recall that you referenced a method `AssignGroup()` in your pseudo-code. Let's get started!
 
 ## Develop your method

@@ -3,7 +3,7 @@ uid: learn.wwl.describe-how-git-manages-source-control
 metadata:
   title: Describe how Git manages source control
   description: "Shallow dive into how Git, as a technology, manages source control."
-  ms.date: 07/31/2023
+  ms.date: 08/23/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial

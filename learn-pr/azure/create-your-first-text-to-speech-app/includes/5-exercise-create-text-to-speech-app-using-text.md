@@ -1,4 +1,4 @@
-In this exercise, you'll create a text file that you'll use to create an audio file by using the Azure Cognitive Services speech synthesizer.
+In this exercise, you'll create a text file that you'll use to create an audio file by using the Azure AI speech synthesizer.
 
 ## Create your text to speech application
 
@@ -17,7 +17,7 @@ In this exercise, you'll create a text file that you'll use to create an audio f
 
     This command should take a few seconds to complete.
 
-1. When your .NET Core application has been created, add the Cognitive Services package to your application:
+1. When your .NET Core application has been created, add the Speech SDK package to your application:
 
     ```dotnetcli
     dotnet add package Microsoft.CognitiveServices.Speech
@@ -33,7 +33,7 @@ In this exercise, you'll create a text file that you'll use to create an audio f
     code Program.cs
     ```
 
-1. Replace the existing code with the following `using` statements, which enable the Azure Cognitive Services Speech APIs for your application:
+1. Replace the existing code with the following `using` statements, which enable the Azure AI Speech APIs for your application:
 
     ```csharp
     using System.Text;
@@ -41,7 +41,7 @@ In this exercise, you'll create a text file that you'll use to create an audio f
     using Microsoft.CognitiveServices.Speech.Audio;
     ```
 
-1. Below the `using` statements, add the following code, which uses Azure Cognitive Services Speech APIs to convert the contents of the text file that you'll create to create a WAV file with the synthesized voice. Replace the `azureKey` and `azureLocation` values with the ones you copied in the last exercise.
+1. Below the `using` statements, add the following code, which uses Azure AI Speech APIs to convert the contents of the text file that you'll create to create a WAV file with the synthesized voice. Replace the `azureKey` and `azureLocation` values with the ones you copied in the last exercise.
 
     ```csharp
     string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
@@ -65,11 +65,11 @@ In this exercise, you'll create a text file that you'll use to create an audio f
     catch (Exception ex)
     {
         Console.WriteLine(ex.Message);
-         
+
     }
     ```
 
-    This code uses your key and location to initialize a connection to Azure Cognitive Services, then reads the contents of the text file you'll create, then uses the `SpeakTextAsync()` method of the speech synthesizer to convert the text to audio, then uses an audio stream to save the results to an audio file.
+    This code uses your key and location to initialize a connection to Azure AI services, then reads the contents of the text file you'll create, then uses the `SpeakTextAsync()` method of the speech synthesizer to convert the text to audio, then uses an audio stream to save the results to an audio file.
 
 1. When you've finished adding all of the code, your file should resemble the following example:
 
@@ -77,12 +77,12 @@ In this exercise, you'll create a text file that you'll use to create an audio f
     using System.Text;
     using Microsoft.CognitiveServices.Speech;
     using Microsoft.CognitiveServices.Speech.Audio;
-    
+
     string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
     string azureLocation = "ENTER YOUR LOCATION FROM THE FIRST EXERCISE";
     string textFile = "Shakespeare.txt";
     string waveFile = "Shakespeare.wav";
-        
+
     try
     {
         FileInfo fileInfo = new FileInfo(textFile);
@@ -104,7 +104,7 @@ In this exercise, you'll create a text file that you'll use to create an audio f
 
     Make sure that you update the values for the `azureKey` and `azureLocation` variables with your key and location from the previous exercise.
 
-1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl-Q</kbd> to exit the editor.
+1. To save your changes, press <kbd>Ctrl+S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to exit the editor.
 
 ## Create a text file for your application to read
 
@@ -131,7 +131,7 @@ In this exercise, you'll create a text file that you'll use to create an audio f
     His acts being seven ages.
     ```
 
-1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl-Q</kbd> to exit the editor.
+1. To save your changes, press <kbd>Ctrl+S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to exit the editor.
 
 ## Run your application
 
@@ -160,11 +160,11 @@ In this exercise, you'll create a text file that you'll use to create an audio f
 
 ## Optional: Listen to your WAV file
 
-[!include[](listen-to-your-wave-file.md)]
+[!INCLUDE[](listen-to-your-wave-file.md)]
 
 ## Optional: Change the voice
 
-The `SpeechConfig` class has a `SpeechSynthesisVoiceName` property you can use to specify a voice other than the default. You can find a list of voices you can use in the **Text to speech** section of the [Language and voice support for the Speech service](/azure/cognitive-services/speech-service/language-support#text-to-speech) article.
+The `SpeechConfig` class has a `SpeechSynthesisVoiceName` property you can use to specify a voice other than the default. You can find a list of voices you can use in the **Text to speech** section of the [Language and voice support for the Speech service](/azure/ai-services/speech-service/language-support#text-to-speech) article.
 
 To specify the voice, use the following steps.
 
@@ -195,4 +195,4 @@ To specify the voice, use the following steps.
     using var speechSynthesizer = new SpeechSynthesizer(speechConfig, null);
     ```
 
-    When you make this change and recompile your application, the text-to-speech synthesis will use the new voice.
+    When you make this change and recompile your application, the text to speech synthesis will use the new voice.

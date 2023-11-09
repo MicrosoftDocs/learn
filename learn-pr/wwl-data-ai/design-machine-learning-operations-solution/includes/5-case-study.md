@@ -1,6 +1,5 @@
 
 
-
 > [!Note]
 > To complete this exercise, read the case study. At the end, you'll be asked to give advice by answering the knowledge check questions. 
 

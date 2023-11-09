@@ -8,6 +8,8 @@ Without this solution, your team would be losing time by manually building and d
 
 In this module, you created resources by using your Azure subscription. The following steps show you how to clean up these resources so that there's no continued charge against your account.
 
+### Resource Groups
+
 1. Go to the Azure portal.
 
     > [!div class="nextstepaction"]
@@ -22,6 +24,14 @@ In this module, you created resources by using your Azure subscription. The foll
 1. To confirm the deletion, enter the name of the resource group. To delete all the resources you created in this module, select **Delete**.
 
 1. Repeat the steps for the resource group name that starts with **MC_mslearn-gh-pipelines**.
+
+1. Select your app from the [Application Registration](https://ms.portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
+
+1. At the top, select the **trash can**  marked **delete**.
+
+1. Select **delete** in the popup, which deletes the federated credentials too.
+
+### GitHub
 
 1. Go to your GitHub account and find your fork of the Contoso website.
 

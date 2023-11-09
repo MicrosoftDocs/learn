@@ -12,7 +12,7 @@ In order to listen to the WAV file that your application created, you'll first n
 
 1. When the **All resources** page is displayed, select your **cloudshellNNNNN** storage account, then select **File shares**, then select your **cloudshellfilesNNNNN** file share.
 
-    [![Screenshot showing the cloud shell file shares.](../media/5-cloud-shell-file-shares-small.png)](../media/5-cloud-shell-file-shares.png#lightbox)
+    [![Screenshot showing the Cloud Shell file shares.](../media/5-cloud-shell-file-shares-small.png)](../media/5-cloud-shell-file-shares.png#lightbox)
 
 1. When your **cloudshellfilesNNNNN** file shares page is displayed, select **Browse**, then select the **Shakespeare.wav** file, then select the **Download** icon.
 

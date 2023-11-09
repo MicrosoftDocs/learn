@@ -1,4 +1,3 @@
-
 Now that you have a GitHub account and the learn-git repo created, it's time to install software that will make interacting with your GitHub repository simpler. You'll need to install Visual Studio Code first, then install Git, and then configure Visual Studio Code.
 
 ## Install Visual Studio Code
@@ -57,4 +56,4 @@ Now we'll use a combination of batch commands and Git commands to create a Git r
 :::image type="content" source="../media/vscode-git-configuration-commands-1dafe3b1.png" alt-text="Screenshot of VS Code with the configuration commands run.":::
 
 
-Congratulations! You've sucesfully installed Git and Visual Studio Code. You've also configured Visual Studio Code to start working with your Git repository.
+Congratulations! You've successfully installed Git and Visual Studio Code. You've also configured Visual Studio Code to start working with your Git repository.

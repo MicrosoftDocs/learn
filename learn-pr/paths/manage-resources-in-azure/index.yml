@@ -31,7 +31,6 @@ modules:
 - learn.align-requirements-in-azure
 - learn.control-azure-services-with-cli
 - learn.automate-azure-tasks-with-powershell
-- learn.azure.plan-manage-azure-costs
 - learn.control-and-organize-with-resource-manager
 - learn.azure.move-azure-resources-to-another-resource-group
 trophy:

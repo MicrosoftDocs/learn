@@ -1,6 +1,3 @@
-
-
-
 Not only can methods perform operations, they can return a value as well. Methods can return a value by including the return type in the method signature. Methods can return any data type, or they can return nothing at all. The return type must always be specified before the method name. 
 
 Using `void` as the return type means the method only performs operations and doesn't return a value. For example:

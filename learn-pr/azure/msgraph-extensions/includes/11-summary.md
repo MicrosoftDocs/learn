@@ -6,14 +6,14 @@ You explored the four extension options provided by Microsoft Graph, and you ide
 + Permissions required by users to manage their data.
 + Syntax of REST API requests for each extension type and their associated data.
 + Ease of managing the extensions by grouping properties and applying query parameters.
-+ Azure Active Directory (Azure AD) scenarios that the extension types support.
++ Microsoft Entra ID scenarios that the extension types support.
 + Limitations and restrictions for each extension type.
 
 From your learnings and hands-on prototyping, you can now select an option that best fits the current needs of your team-bonding app and the future needs of your organization.
 
-Without Microsoft Graph extensions, you would need to explore alternative options for storing the three pieces of data in the user's profile information. If the options are outside Azure AD and Microsoft 365, you would need to integrate your app with the separate data source and manage the data. This alternative might introduce a needless cost overhead for you as a developer and to your organization.
+Without Microsoft Graph extensions, you would need to explore alternative options for storing the three pieces of data in the user's profile information. If the options are outside Microsoft Entra and Microsoft 365, you would need to integrate your app with the separate data source and manage the data. This alternative might introduce a needless cost overhead for you as a developer and to your organization.
 
-By using Microsoft Graph extensions, the organization takes advantage of an existing Azure AD capability that's available through its license at no additional cost. All the data is stored securely and, in line with Microsoft service-level agreements, availability is guaranteed. In addition, your organization avoids having to invest in a database system.
+By using Microsoft Graph extensions, the organization takes advantage of an existing Microsoft Entra ID capability that's available through its license at no additional cost. All the data is stored securely and, in line with Microsoft service-level agreements, availability is guaranteed. In addition, your organization avoids having to invest in a database system.
 
 Apart from the *user* resource, other Microsoft Graph resource types might support some of the extension options. For example, the *device* resource type supports all the extension options, and the *group* resource type supports schema, directory, and open extensions.
 

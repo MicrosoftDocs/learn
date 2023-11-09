@@ -4,51 +4,100 @@ Tailwind Traders has many physical stores all over the world. Each night, these 
 
 In this exercise, you write a Node.js program that can search for files called *sales.json* in a folder.
 
-## Sign in to the sandbox
 
-Activate the Microsoft Learn sandbox by selecting **Activate Sandbox** at the top of this page.
+## Open project in development container
 
-## Set up the environment
+#### [Remote development (browser)](#tab/github-codespaces)
 
-Run the following command in Azure Cloud Shell on the right to ensure that you're working with the most current version of Node.js:
+1. Start the process to create a new GitHub Codespace on the `main` branch of the [`MicrosoftDocs/node-essentials`](https://github.com/MicrosoftDocs/node-essentials) GitHub repository.
 
-```bash
-source <(curl -Ls https://aka.ms/install-node-lts)
-```
+    > [!div class="nextstepaction"]
+    > [Open this project in GitHub Codespaces](https://github.com/codespaces/new?azure-portal=true&hide_repo_select=true&ref=main&repo=278117471)
 
-## Clone the project
+1. On the **Create codespace** page, review the codespace configuration settings and then select **Create new codespace**
 
-1. Run the following command to clone the example project for this module:
+    :::image type="content" source="../media/codespaces/codespace-configuration.png" alt-text="Screenshot of the confirmation screen before creating a new codespace.":::
 
-   ```bash
-   git clone https://github.com/MicrosoftDocs/node-essentials && cd node-essentials/nodejs-files
-   ```
+1. Wait for the codespace to start. This startup process can take a few minutes.
 
-1. Open the Cloud Shell editor by running the following command in Cloud Shell.
+1. Open a new terminal in the codespace.
 
-   ```bash
-   code .
-   ```
+    > [!TIP]
+    > You can use the main menu to navigate to the **Terminal** menu option and then select the **New Terminal** option.
+    >
+    > :::image type="content" source="../media/codespaces/open-terminal-option.png" lightbox="../media/codespaces/open-terminal-option.png" alt-text="Screenshot of the codespaces menu option to open a new terminal.":::
 
-1. Expand the *stores* folder and each of the numbered folders inside.
+1. Validate that Node.js is installed in your environment:
 
-   :::image type="content" source="../media/folder-structure.png" alt-text="Screenshot that shows the project folder structure.":::
+    ```bash
+    node --version
+    ```
+
+    The dev container uses a Node.js LTS version such as `v20.5.1`. The exact version might be different.
+
+1. The remaining exercises in this project take place in the context of this development container.
+
+#### [Local development (Docker)](#tab/visual-studio-code)
+
+
+1. Open **Visual Studio Code** in the context of an empty directory.
+1. Ensure that you have the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) installed in Visual Studio Code.
+1. Open a new terminal in the editor.
+    > [!TIP]
+    > You can use the main menu to navigate to the **Terminal** menu option and then select the **New Terminal** option.
+    >
+    > :::image type="content" source="../media/codespaces/open-terminal-option.png" lightbox="../media/codespaces/open-terminal-option.png" alt-text="Screenshot of the menu option to open a new terminal.":::
+1. Clone the [`MicrosoftDocs/node-essentials`](https://github.com/MicrosoftDocs/node-essentials) GitHub repository into the current directory.
+
+    ```bash
+    git clone https://github.com/MicrosoftDocs/node-essentials.git
+    ```
+
+1. Open the repository in code with the following commands in the terminal.
+
+    ```bash
+    cd node-essentials
+    code .
+    ```
+
+1. Open the **Command Palette**, search for the **Dev Containers** commands, and then select **Dev Containers: Reopen in Container**.
+    :::image type="content" source="../media/codespaces/reopen-container-command-palette.png" alt-text="Screenshot of the Command Palette option to reopen the current folder within the context of a development container.":::
+    > [!TIP]
+    > Visual Studio Code might automatically prompt you to reopen the existing folder within a development container. This is functionally equivalent to using the command palette to reopen the current workspace in a container.
+    >
+    > :::image type="content" source="../media/codespaces/reopen-container-toast.png" alt-text="Screenshot of a toast notification to reopen the current folder within the context of a development container.":::
+1. Validate that Node.js is installed in your environment:
+
+    ```bash
+    node --version
+    ```
+
+    The dev container uses a Node.js LTS version such as `v20.5.1`. The exact version might be different.
+
+1. The remaining exercises in this project take place in the context of this development container.
+
+---
+
 
 ## Find the sales.json files
 
-You need to find all the files in only the topmost location: the *stores* folder.
+Your task is to find all the files in the *stores* folder.
+
+Expand the *stores* folder and each of the numbered folders inside.
+
+:::image type="content" source="../media/folder-structure.png" alt-text="Screenshot that shows the project folder structure.":::
 
 ### Include the fs module
 
-1. Select the *index.js* file to open it in the editor.
+1. In the `./nodejs-files` subfolder, create a *index.js* file to open it in the editor.
 
-1. Include the *fs* module at the top of the file.
+1. At the top of the file, add the following code in include the *fs* module is available to the code in the file.
 
    ```javascript
    const fs = require("fs").promises;
    ```
 
-1. Create a `main` method. This method is the entry point for your code. The last line of code in this file invokes the `main` method.
+1. Next, create tnode he `main` method is the entry point for your code. The last line of code in this file invokes the `main` method.
 
    ```javascript
    const fs = require("fs").promises;

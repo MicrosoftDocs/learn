@@ -29,7 +29,6 @@ roles:
 - solution-architect
 products:
 - azure
-- azure-linux-vm
 - azure-virtual-machines
 subjects:
 - cloud-computing

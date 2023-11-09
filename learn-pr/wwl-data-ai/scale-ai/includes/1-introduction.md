@@ -1,4 +1,3 @@
-
 How do companies keep up as industries evolve? The answer is innovation. Even if companies "do everything right" with their existing business models, they lose competitiveness if they don't embrace innovative disruptions.<sup>1</sup> The capacity to pivot as a business and foster innovation is crucial to long-term success. Innovative companies generally lead their industry's market share, attract top talent, and create cutting-edge products and services.
 
 Today, innovation means keeping up to date with AI. AI breakthroughs are happening all of the time, especially in terms of prebuilt models and generative AI. Implementing AI systems is faster and easier than ever. Additionally, this new wave of AI is making use cases possible that were inconceivable a few years ago.

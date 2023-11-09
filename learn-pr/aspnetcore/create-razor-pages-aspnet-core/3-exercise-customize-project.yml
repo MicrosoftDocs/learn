@@ -8,8 +8,7 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/3-exercise-customize-project.md)]

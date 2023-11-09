@@ -31,15 +31,14 @@ Other AI workloads Azure OpenAI supports can be categorized by tasks they suppor
 
 ### Azure OpenAI's relationship to Azure AI services 
 
-![Diagram showing Microsoft AI portfolio and how they relate.](../media/microsoft-ai-portfolio-graphic.png)
+>[!NOTE]
+>As of July 2023, Azure AI services encompass all of what were previously known as Cognitive Services and Azure Applied AI Services.
 
-Azure's AI services are tools for solving AI workloads and can be categorized into three groupings: Azure's Machine Learning platform, Cognitive Services, and Applied AI Services.   
- 
-Azure AI Services has five pillars: vision, speech, language, decision, and the Azure OpenAI Service. The services you choose to use depend on what you need to accomplish. In particular, there are several overlapping capabilities between the Cognitive Service's Language service and OpenAI's service, such as translation, sentiment analysis, and keyword extraction. 
+Azure AI services are tools for solving AI workloads. The services you choose to use depend on what you need to accomplish. In particular, there are several overlapping capabilities between Azure AI Language service and Azure OpenAI Service, such as translation, sentiment analysis, and keyword extraction. 
 
-While there's no strict guidance on when to use a particular service, Azure's existing Language service can be used for widely known use-cases that require minimal tuning (the process of optimizing a model's performance). Azure OpenAI's service may be more beneficial for use-cases that require highly customized generative models, or for exploratory research. 
+While there's no strict guidance on when to use a particular service, Azure AI Language service can be used for widely known use-cases that require minimal tuning (the process of optimizing a model's performance). Azure OpenAI Service may be more beneficial for use-cases that require highly customized generative models, or for exploratory research. 
 
 >[!NOTE]
->Pricing is different for Azure OpenAI and Azure Cognitive Service for Language. [Learn more here](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service?azure-portal=true).
+>Pricing is different for Azure OpenAI and Azure AI Language service. [Learn more here](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service?azure-portal=true).
 
 When making business decisions about what type of model to use, it's important to understand how time and compute needs factor into machine learning training. In order to produce an effective machine learning model, the model needs to be trained with a substantial amount of cleaned data. The 'learning' portion of training requires a computer to identify an algorithm that best fits the data. The complexity of the task the model needs to solve for and the desired level of model performance all factor into the time required to run through possible solutions for a best fit algorithm. 

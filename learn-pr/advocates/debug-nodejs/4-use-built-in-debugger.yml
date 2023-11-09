@@ -16,7 +16,6 @@ metadata:
   ms.contributors: yolasors-11052021
 durationInMinutes: 6
 interactive: "bash"
-azureSandbox: true
 content: |
   [!include[](includes/4-use-built-in-debugger.md)]
   

@@ -31,7 +31,7 @@ As a trusted partner, you play a critical role in all stages of the customer lif
 
 ## Maintain a secure environment
 
-With Azure Active Directory as a main element of your Partner Center account, ensure your team uses [multifactor authentication](/partner-center/partner-security-requirements-mandating-mfa) to keep data secure. Privacy safeguards and security are among our top priorities.
+With Microsoft Entra ID as a main element of your Partner Center account, ensure your team uses [multifactor authentication](/partner-center/partner-security-requirements-mandating-mfa) to keep data secure. Privacy safeguards and security are among our top priorities.
 
 ## Get data and analytics
 

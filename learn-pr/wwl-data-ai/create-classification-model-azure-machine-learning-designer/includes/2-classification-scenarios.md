@@ -1,4 +1,3 @@
-
 *Classification* is a form of machine learning that is used to predict which category, or *class*, an item belongs to. This machine learning technique can be applied to binary and multi-class scenarios. For example, a health clinic might use the characteristics of a patient (such as age, weight, blood pressure, and so on) to predict whether the patient is at risk of diabetes. In this case, the characteristics of the patient are the *features*, and the *label* is a binary classification of either **0** or **1**, representing non-diabetic or diabetic.
 
 ![Diagram of patients with clinical data, classified as diabetic and non-diabetic.](../media/diabetes.png)

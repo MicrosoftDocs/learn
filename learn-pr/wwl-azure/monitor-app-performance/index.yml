@@ -23,7 +23,6 @@ levels:
 roles:
 - developer
 products:
-- azure-application-insights
 - azure-monitor
 subjects:
 - cloud-computing

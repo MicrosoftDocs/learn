@@ -1,4 +1,3 @@
-
 ## Primary scenarios
 
 Use the Log Analytics agent if you need to:

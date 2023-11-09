@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.student-introduction-github.set-up-github
+metadata:
+  title: Get started with GitHub
+  description: "In this unit, you create a new GitHub profile, a new repository, and learn how to fork and clone."
+  ms.date: 9/7/2023
+  author: v-regandowner
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Get started with GitHub
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-set-up-github.md)]

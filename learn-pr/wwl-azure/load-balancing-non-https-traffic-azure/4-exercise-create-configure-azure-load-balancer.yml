@@ -4,11 +4,10 @@ title: 'Exercise: create and configure an Azure load balancer'
 metadata:
   title: 'Exercise: create and configure an Azure load balancer'
   description: "Exercise: create and configure an Azure load balancer"
-  ms.date: 07/12/2023
+  ms.date: 08/21/2023
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.service: load-balancer
+  ms.topic: unit
   ms.custom:
   - references_regions
 durationInMinutes: 15

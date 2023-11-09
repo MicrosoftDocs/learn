@@ -34,8 +34,8 @@ products:
   - azure-sql-database
   - github
   - azure-functions
-  - azure-app-service-static
-  - azure-web-apps
+  - static-web-apps
+  - azure-app-service
 subjects:
 - database
 units:

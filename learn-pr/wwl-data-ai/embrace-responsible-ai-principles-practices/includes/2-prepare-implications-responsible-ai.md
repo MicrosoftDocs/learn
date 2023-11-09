@@ -1,5 +1,3 @@
-
-
 AI is the defining technology of our time. It's already enabling faster and more profound progress in nearly every field of human endeavor and helping to address some of society’s most daunting challenges. For example, AI can help people with visual disabilities understand images by generating descriptive text for images. In another example, AI can help farmers produce enough food for the growing global population.
 
 At Microsoft, we believe that the computational intelligence of AI should be used to amplify the innate creativity and ingenuity of humans. Our vision for AI is to empower every developer to innovate, empower organizations to transform industries, and empower people to transform society.
@@ -23,7 +21,7 @@ Each breakthrough in AI technologies brings a new reminder of our shared respons
 Novel threats require a constant evolution in our approach to responsible AI. For example, because generative AI enables people to create or edit videos, images, or audio files so credibly that they look real, media authenticity is harder to verify. In response, Microsoft is teaming with other technology and news stakeholders to develop technical standards to address deepfake-related manipulation.  
 
 >[!NOTE]
-> To prepare for new types of attacks that could influence learning datasets, Microsoft developed technology such as advanced content filters and introduced supervisors for AI systems with automatic learning capabilities. Current generative AI models, such as those provided in Azure Cognitive Services or Bing Chat, are built upon these insights.
+> To prepare for new types of attacks that could influence learning datasets, Microsoft developed technology such as advanced content filters and introduced supervisors for AI systems with automatic learning capabilities. Current generative AI models, such as those provided in Azure AI Services or Bing Chat, are built upon these insights.
 
 ### Biased outcomes
 

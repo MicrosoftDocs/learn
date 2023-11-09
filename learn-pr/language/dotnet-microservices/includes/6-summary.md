@@ -8,7 +8,7 @@ Some of the changing business needs include:
 
 Microservice architecture helps address those needs by building a single application that is composed of a set of small services. Each microservice implements a specific end-to-end domain or business capability within a certain context boundary, and each must be developed autonomously and be deployable independently.
 
-Containers are a great approach to building microservices. Each application or service, its dependencies, and its configuration (abstracted as deployment manifest files) are packaged together as a container image. And Docker is a popular way of containerizing applications.
+Containers are a great approach to building microservices. Each application or service, its dependencies, and its configuration (abstracted as deployment manifest files) are packaged together as a container image. Docker is a popular way of containerizing applications.
 
 A Docker file is a text file that contains instructions on how to build a Docker image, and a Docker compose file is a YAML file that groups together several docker containers for build and deployment.
 

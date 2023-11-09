@@ -1,7 +1,3 @@
-
-
-
-
 ## Paging/swap file
 
 Use the following recommendations when configuring the paging/swap file:
@@ -15,7 +11,7 @@ Use the following recommendations when configuring the paging/swap file:
 
   - `sudo service waagent restart`
 
-For information regarding the recommended swap file size, refer to [SAP Note \#1597355](https://launchpad.support.sap.com/#/notes/1597355).
+For information regarding the recommended swap file size, refer to [SAP Note \#1597355](https://aka.ms/az-120-sapnote-1597355).
 
 ## Managed disks
 
@@ -29,13 +25,13 @@ For SAP application servers, including the Central Services virtual machines, yo
 
 ## Multi-disk volumes
 
-The number of disks used for the DBMS data files and the type of Azure Storage these disks are hosted on should be determined by the IOPS requirements and the latency required. It is important to note that IOPS traffic to different data files is not always the same since existing customer systems might have differently sized data files representing their databases. Effectively, it is recommended to use striping over multiple disks to create volumes hosting data files.
+The number of disks used for the DBMS data files and the type of Azure Storage these disks are hosted on should be determined by the IOPS requirements and the latency required. It's important to note that IOPS traffic to different data files is not always the same since existing customer systems might have differently sized data files representing their databases. Effectively, it's recommended to use striping over multiple disks to create volumes hosting data files.
 
 Stripe multiple Azure data disks using Storage Spaces to increase I/O bandwidth up to the target virtual machine's IOPS and throughput limits. On Linux, use the MDADM utility to stripe disks together. The MDADM is a small program which will allow you to configure and manage RAID devices in Linux.
 
-Depending on the type of workload your application is running, choose an appropriate stripe size. For random small IO requests, use a smaller stripe size. For large sequential IO requests, use a larger stripe size. Find out the stripe size recommendations for the application you will be running on Premium Storage. For SQL Server, configure a stripe size of 64 KB for OLTP workloads and 256 KB for data warehousing workloads.
+Depending on the type of workload your application is running, choose an appropriate stripe size. For random small IO requests, use a smaller stripe size. For large sequential IO requests, use a larger stripe size. Find out the stripe size recommendations for the application you'll be running on Premium Storage. For SQL Server, configure a stripe size of 64 KB for OLTP workloads and 256 KB for data warehousing workloads.
 
-Storage latency is critical for DBMS systems, even for SAP HANA, which, for the most part, keeps data in-memory. The critical path in storage is usually around the transaction log writes of the DBMS systems. However, operations like writing savepoints or loading data in-memory after crash recovery can also be critical. Therefore, it is mandatory to leverage Azure Premium Disks for **/hana/data** and **/hana/log** volumes. In order to achieve the minimum throughput of **/hana/log** and **/hana/data** as required by SAP, build a RAID 0 volume using MDADM or LVM over multiple Azure Premium Storage disks. As stripe sizes for the RAID 0 the recommendation is to use:
+Storage latency is critical for DBMS systems, even for SAP HANA, which, for the most part, keeps data in-memory. The critical path in storage is usually around the transaction log writes of the DBMS systems. However, operations like writing savepoints or loading data in-memory after crash recovery can also be critical. Therefore, it's mandatory to leverage Azure Premium Disks for **/hana/data** and **/hana/log** volumes. In order to achieve the minimum throughput of **/hana/log** and **/hana/data** as required by SAP, build a RAID 0 volume using MDADM or LVM over multiple Azure Premium Storage disks. As stripe sizes for the RAID 0 the recommendation is to use:
 
 - 64 KB or 128 KB for **/hana/data**
 - 32 KB for **/hana/log**
@@ -81,7 +77,7 @@ For M-Series deployments, Microsoft recommends that you use Azure Write Accelera
 These caching recommendations are based on the I/O characteristics of SAP HANA, including:
 
 - There is hardly any read workload against the HANA data files. Exceptions are large sized I/Os after restart of the HANA instance or when data is loaded into HANA. Another case of larger read I/Os against data files can be HANA database backups. As a result, read caching mostly does not make sense since in most of the cases, all data file volumes need to be read completely.
-- Writing against the data files is experienced in bursts based on HANA savepoints and HANA crash recovery. Writing savepoints is asynchronous and are not holding up any user transactions. Writing data during crash recovery is performance-critical to get the system to respond fast again. However, crash recoveries should be rather exceptional situations.
+- Writing against the data files is experienced in bursts based on HANA savepoints and HANA crash recovery. Writing savepoints is asynchronous and aren't holding up any user transactions. Writing data during crash recovery is performance-critical to get the system to respond fast again. However, crash recoveries should be rather exceptional situations.
 - There are hardly any reads from the HANA redo files. Exceptions are large I/Os when performing transaction log backups, crash recovery, or in the restart phase of a HANA instance.
 - Main load against the SAP HANA redo log file is writes. Dependent on the nature of workload, you can have I/Os as small as 4 KB or in other cases I/O sizes of 1 MB or more. Write latency against the SAP HANA redo log is performance critical.
 - All writes need to be persisted on disk in a reliable fashion.

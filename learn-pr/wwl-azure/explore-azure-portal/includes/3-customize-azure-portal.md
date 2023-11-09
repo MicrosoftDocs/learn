@@ -3,4 +3,4 @@
 
 
 > [!TIP]
-> When you finish the lab exercises. Don't forget to come back and complete the knowledge check! The knowledge check is required in order to earn points for completing this module. After completing the lab instruction steps, you may want to delete any Azure resources that you created during the lab.
+> When you finish the lab exercises, don't forget to come back and complete the knowledge check! The knowledge check is required in order to earn points for completing this module. After completing the lab instruction steps, you may want to delete any Azure resources that you created during the lab.

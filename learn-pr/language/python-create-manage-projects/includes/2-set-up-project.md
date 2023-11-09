@@ -170,7 +170,7 @@ print(now)
 Run the app:
 
 ```console
-python newapp.py
+python app.py
 ```
 
 The output should look something like this:

@@ -23,16 +23,16 @@ quiz:
     choices:
     - content: "True"
       isCorrect: true
-      explanation: "The Azure Cloud Shell is available in the browser and runs with the full Azure CLI. If you prefer Powershell, the Azure Cloud Shell has that as well."
+      explanation: "The Azure Cloud Shell is available in the browser and runs with the full Azure CLI. If you prefer PowerShell, the Azure Cloud Shell has that as well."
     - content: "False"
       isCorrect: false
       explanation: "The Azure Cloud Shell is available in the browser and runs with the full Azure CLI, so you wouldn't need to install software."
       
-  - content: "Suppose you have a script that creates several VMs with different images. When the script issues the command to create the first VM you do not want to block the script while the VM is created, instead you want the script to immediately move on to the next command. What is the best way to do this?"
+  - content: "Suppose you have a script that creates several VMs with different images. When the script issues the command to create the first VM you don't want to block the script while the VM is created, instead you want the script to immediately move on to the next command. What is the best way to do this?"
     choices:
     - content: "Add the '--async' argument to your create command."
       isCorrect: false
-      explanation: "There is no '--async' argument as part of 'azure VM create'."
+      explanation: "There's no '--async' argument as part of 'azure VM create'."
     - content: "Use the ampersand (&) to run the process in the background."
       isCorrect: false
       explanation: "This may do what you intend on some platforms but likely will use more system resources than the supported method."
@@ -40,14 +40,14 @@ quiz:
       isCorrect: true
       explanation: "Adding '--no-wait' will cause 'azure VM create' to return immediately without waiting for the VM to actually be created."
  
-  - content: "Most Azure commands return JSON by default. Sometimes this data set can be very large which makes it difficult to read and tricky to use the result of one command as input to another command. What can you use with Azure CLI to filter the results to get only the data that you need?"
+  - content: "Most Azure commands return JSON by default. Sometimes this dataset can be large, which makes it difficult to read and tricky to use the result of one command as input to another command. What can you use with Azure CLI to filter the results to get only the data that you need?"
     choices:
     - content: "You can use the '--query' argument."
       isCorrect: true
-      explanation: "All Azure commands support the '--query' argument which lets you select the useful data in any Azure command response."
+      explanation: "All Azure commands support the '--query' argument, which lets you select the useful data in any Azure command response."
     - content: "You can use the '--filter' argument."
       isCorrect: false
-      explanation: "Azure CLI does not have a '--filter' argument."
+      explanation: "Azure CLI doesn't have a '--filter' argument."
     - content: "You can pipe the results to a JSON parsing utility and use filtering capability there."
       isCorrect: false
-      explanation: "This may work but is more complex than using the built-in query support of the Azure CLI."
+      explanation: "This might work, but is more complex than using Azure CLI's built-in query support."

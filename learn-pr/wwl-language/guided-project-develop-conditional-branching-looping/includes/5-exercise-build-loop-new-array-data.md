@@ -1,7 +1,3 @@
-
-
-
-
 In this exercise, you develop code that controls the input of new `ourAnimals` array data. You calculate the initial values of your loop control variables and construct the loop that collects user specified data for the animals. The detailed tasks that you complete during this exercise are:
 
 1. Calculate petCount: write code that counts the number of pets in the `ourAnimals` array that have assigned data.
@@ -272,7 +268,7 @@ In this task, you update the `while (anotherPet == "y" && petCount < maxPets)` c
     case "3":
     ```
 
-    The value of `petCount` is incremented inside the `while` loop. If `petCount` is equal to `maxPets`, no more pets can be added to the `ourAnimals` array. You should let the user when this occurs.
+    The value of `petCount` is incremented inside the `while` loop. If `petCount` is equal to `maxPets`, no more pets can be added to the `ourAnimals` array. You should let the user know when this occurs.
 
 1. To inform the user that Contoso Pets has reached their capacity, update your code as follows:
 

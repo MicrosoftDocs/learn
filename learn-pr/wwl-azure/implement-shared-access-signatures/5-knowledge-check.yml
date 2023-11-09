@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/24/2023
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -23,7 +22,7 @@ quiz:
       explanation: "Incorrect. A service SAS delegates access to a resource in the following Azure Storage services: Blob storage, Queue storage, Table storage, or Azure Files."
     - content: "User delegation SAS"
       isCorrect: true
-      explanation: "Correct. A user delegation SAS is secured with Azure Active Directory credentials and also by the permissions specified for the SAS. A user delegation SAS applies to Blob storage only."
+      explanation: "Correct. A user delegation SAS is secured with Microsoft Entra credentials and also by the permissions specified for the SAS. A user delegation SAS applies to Blob storage only."
   - content: "Which of the following best practices provides the most flexible and secure way to use a service or account shared access signature (SAS)?"
     choices:
     - content: "Associate SAS tokens with a stored access policy."
@@ -34,4 +33,4 @@ quiz:
       explanation: "Incorrect. Using HTTPS prevents man-in-the-middle attacks but isn't the most flexible and secure practice."
     - content: "Implement a user delegation SAS"
       isCorrect: false
-      explanation: "Incorrect. A user delegation SAS is the most secure SAS, but isn't highly flexible because you must use Azure Active Directory to manage credentials."
+      explanation: "Incorrect. A user delegation SAS is the most secure SAS, but isn't highly flexible because you must use Microsoft Entra ID to manage credentials."

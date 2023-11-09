@@ -36,11 +36,11 @@ Please ensure that all "case creators" have at least the Service Support admin r
 | **Global Administrator**<br><br>**Owner** (Azure RBAC)<br><br>**Contributor** (Azure RBAC) | Accesses all administrative features (per role) in the Azure portal including access to create support requests. |
 | **Service Support Admin** | Create and manage Azure support tickets.<br>Read and configure Azure Service Health. |
 
-For more information, see [Azure roles, Azure AD roles, and classic subscription administrator roles](/azure/role-based-access-control/rbac-and-directory-admin-roles), [Service Health portal classic experience overview](/azure/service-health/service-health-overview)
+For more information, see [Azure roles, Microsoft Entra roles, and classic subscription administrator roles](/azure/role-based-access-control/rbac-and-directory-admin-roles), [Service Health portal classic experience overview](/azure/service-health/service-health-overview)
 
 [Service Support Administrator](/azure/active-directory/roles/permissions-reference#service-support-administrator) - This role can open support requests with Microsoft for Azure and Microsoft 365 services and views the service dashboard and message center in the Azure portal and Microsoft 365 admin center.
 
-To create a support request, you must be an **Owner**, **Contributor** or be assigned to the **Service Support Admin** role at the subscription level. To create a support request without a subscription, for example an Azure Active Directory scenario, you must be an **Admin**.
+To create a support request, you must be an **Owner**, **Contributor** or be assigned to the **Service Support Admin** role at the subscription level. To create a support request without a subscription, for example a Microsoft Entra scenario, you must be an **Admin**.
 
 **Account Administrator**, **Service Administrator**, and **Co-Administrator** are the three classic subscription administrator roles in Azure. Classic subscription administrators have full access to the Azure subscription. They can manage resources using the Azure portal, Azure Resource Manager APIs, and the classic deployment model APIs. The account that is used to sign up for Azure is automatically set as both the **Account Administrator** and **Service Administrator**. Then, additional **Co-Administrators** can be added. The **Service Administrator** and the **Co-Administrators** have the equivalent access of users who have been assigned the **Owner** role (an Azure RBAC role) at the subscription scope. 
 

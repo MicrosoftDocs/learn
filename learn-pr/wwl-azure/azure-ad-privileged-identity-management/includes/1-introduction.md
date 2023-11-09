@@ -1,4 +1,4 @@
-Azure AD Privileged Identity Management (PIM) allows you to manage, control, and monitor access to the most important resources in your organization. You can give just-in-time access and just-enough-access to users to allow them to do their tasks.
+Microsoft Entra Privileged Identity Management (PIM) allows you to manage, control, and monitor access to the most important resources in your organization. You can give just-in-time access and just-enough-access to users to allow them to do their tasks.
 
 ## Scenario
 
@@ -10,12 +10,12 @@ A security engineer uses Privileged Identity Management to protect administrator
 
 ## Skills measured
 
-Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/certifications/exams/az-500).
+Microsoft Entra ID is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
 
 Manage identity and access (30-35%)
 
- -  Configure secure access by using Azure AD
-     -  monitor privileged access for Azure AD Privileged Identity Management (PIM)
+ -  Configure secure access by using Microsoft Entra ID
+     -  monitor privileged access for Microsoft Entra Privileged Identity Management (PIM)
      -  configure PIM
 
 ## Learning objectives

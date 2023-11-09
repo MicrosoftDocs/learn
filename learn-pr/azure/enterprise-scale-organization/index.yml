@@ -4,14 +4,15 @@ metadata:
   title: Organizational design principles for enterprise-scale architecture 
   description: Enterprise-scale architecture organizational design principles
   ms.date: 10/18/2022
-  author: JefferyMitchell
-  ms.author: jemitche
-  ms.topic: interactive-tutorial
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: module
+  ms.service: caf
 title: Organizational design principles for enterprise-scale architecture 
-summary: Evaluate the critical design areas for enterprise enrollment and Azure Active Directory (Azure AD) tenants, identity and access management, and management group and subscription organization.
+summary: Evaluate the critical design areas for enterprise enrollment and Microsoft Entra tenants, identity and access management, and management group and subscription organization.
 abstract: | 
   After completing this module, you'll be able to:
-  - Determine the need for single or multiple Azure AD tenants.
+  - Determine the need for single or multiple Microsoft Entra tenants.
   - Define the Azure enterprise enrollment hierarchy.
   - Define the requirements for Privileged Identity Management.
   - Determine what role-based access control (RBAC) roles are necessary for enterprise-scale architecture.

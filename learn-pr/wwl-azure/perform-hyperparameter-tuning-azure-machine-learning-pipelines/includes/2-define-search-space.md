@@ -1,5 +1,3 @@
-
-
 The set of hyperparameter values tried during hyperparameter tuning is known as the **search space**. The definition of the range of possible values that can be chosen depends on the type of hyperparameter.
 
 ## Discrete hyperparameters

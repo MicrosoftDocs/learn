@@ -2,7 +2,7 @@ Data encryption in the cloud is an important tool to reduce risk, and it's expec
 
 ## Data encryption at rest
 
-Azure provides many options for [data encryption at rest](/azure/security/fundamentals/encryption-atrest) to help customers safeguard their data and meet their compliance needs. These options include Microsoft-managed encryption keys and customer-managed encryption keys. The security process relies on multiple encryption keys and services, such as Azure Key Vault and Azure Active Directory, to ensure secure key access and centralized key management.
+Azure provides many options for [data encryption at rest](/azure/security/fundamentals/encryption-atrest) to help customers safeguard their data and meet their compliance needs. These options include Microsoft-managed encryption keys and customer-managed encryption keys. The security process relies on multiple encryption keys and services, such as Azure Key Vault and Microsoft Entra ID, to ensure secure key access and centralized key management.
 
 Detailed information about various [data encryption models](/azure/security/fundamentals/encryption-models) and specifics on key management for a wide range of Azure platform services is available in the [online documentation](/azure/security/fundamentals/encryption-atrest).
 

@@ -40,9 +40,11 @@ To store the employees' public LinkedIn profile URL, Skype ID, and Xbox *gamerta
 
 The **onPremisesExtensionAttributes** property isn't returned by default. You must use the `$select` query parameter to read it. This property also supports the `$filter` (`eq` and `ne` operators) query parameter and you can also filter by extension attributes that are empty (`null`). When you use `$filter`, you must include the `$count=true` query parameter in the HTTP request and set the *ConsistencyLevel* header to `eventual`.
 
-## Other Azure AD scenarios for the custom data
+<a name='other-azure-ad-scenarios-for-the-custom-data'></a>
 
-Although you'll use the extension attribute properties to store data that's required by the team-bonding app, Azure AD also supports the following use cases for the custom data:
+## Other Microsoft Entra ID scenarios for the custom data
+
+Although you'll use the extension attribute properties to store data that's required by the team-bonding app, Microsoft Entra ID also supports the following use cases for the custom data:
 
 - Use extensions data as rules for dynamic group memberships.
 - Use extensions data to customize claims.
@@ -55,7 +57,7 @@ To avoid having to manually update the membership of the group, you can create t
 
 ### Customize tokens
 
-Another Azure AD use case for the extension attribute properties and their data is the ability to customize tokens with custom claims.
+Another Microsoft Entra ID use case for the extension attribute properties and their data is the ability to customize tokens with custom claims.
 
 An app might require some additional user information that's not available in token claims by default. For example, the app might require a user's LinkedIn profile URL in the authorization claims for redirection to the user's LinkedIn profile.
 

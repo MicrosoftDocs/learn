@@ -56,9 +56,9 @@ Algorithmic content recommendations are a common implementation of prescriptive 
 
 *Cognitive analytics* combines artificial intelligence, machine learning, and data analytics approaches to guide decision making. Cognitive analytics draws inferences from existing data and patterns, derives conclusions based on existing knowledge bases, and adds findings back into the knowledge base for future inferences--a self-learning feedback loop. This feedback loop enables cognitive applications to become more precise over time.
 
-By tapping the benefits of massive parallel/distributed computing and the falling costs of data storage and computing power, there's no limit to the cognitive development that these systems can achieve. Microsoft's Azure Cognitive Services enables users to take advantage of cognitive analytics by extracting insights from various types of data, including things like text and images.
+By tapping the benefits of massive parallel/distributed computing and the falling costs of data storage and computing power, there's no limit to the cognitive development that these systems can achieve. Microsoft's Azure AI Services enables users to take advantage of cognitive analytics by extracting insights from various types of data, including things like text and images.
 
-![A diagram of Microsoft's cognitive services platform featuring, Microsoft’s fully managed intelligent, big data and advanced analytics offering in the cloud.](../media/cognitive-analytics.png)
+![A diagram of Microsoft's Azure AI Services platform featuring, Microsoft’s fully managed intelligent, big data and advanced analytics offering in the cloud.](../media/cognitive-analytics.png)
 
 > [!NOTE]
-> To learn more about data cognitive analytics using Azure Cognitive Services, review [Get started with Cognitive Services](/azure/architecture/example-scenario/ai/scalable-personalization-with-content-based-recommendation-system).
+> To learn more about data cognitive analytics using Azure AI Services, review [Get started with Azure AI Services](/azure/architecture/example-scenario/ai/scalable-personalization-with-content-based-recommendation-system).

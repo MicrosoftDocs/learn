@@ -25,7 +25,6 @@ products:
 subjects:
 - serverless-compute
 modules:
-- learn.azure.azure-compute-fundamentals
 - learn.manage-vms-with-azure-cli
 - learn.choose-compute-provisioning
 - learn.azure.create-resource-manager-template-vs-code

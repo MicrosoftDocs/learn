@@ -1,4 +1,3 @@
-
 Azure Key Vault safeguards encryption keys and secrets like certificates, connection strings, and passwords.
 
 ## Use separate key vaults

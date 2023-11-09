@@ -1,4 +1,4 @@
-You first need to deploy a model to make API calls to receive completions to prompts. When you create a new deployment, you need to indicate which base model to deploy. You can only deploy one instance of each model. There are several ways you can deploy your base model. 
+You first need to deploy a model to make API calls to receive completions to prompts. When you create a new deployment, you need to indicate which base model to deploy. You can deploy any number of deployments in one or multiple Azure OpenAI resources as long as their TPM adds up to less than 240K total in that region. There are several ways you can deploy your base model. 
 
 ## Deploy using Azure OpenAI Studio
 
@@ -30,4 +30,4 @@ az cognitiveservices account deployment create \
 
 ## Deploy using the REST API
 
-You can deploy a model using the REST API. In the request body, you specify the base model you wish to deploy. See an example in the [Azure OpenAI documentation](/rest/api/cognitiveservices/azureopenaistable/deployments/create?azure-portal=true). 
+You can deploy a model using the REST API. In the request body, you specify the base model you wish to deploy. See an example in the [Azure OpenAI documentation](/azure/ai-services/openai/). 

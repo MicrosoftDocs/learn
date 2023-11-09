@@ -2,7 +2,7 @@ In YAML pipelines, variables store and retrieve values during pipeline runs. Ens
 
 In this unit, learn how to validate mandatory variables in Azure DevOps YAML pipelines.
 
-## Define mandatory and validate mandatory variables
+## Define and validate mandatory variables
 
 One way to validate mandatory variables is by using the assert expression function in YAML to validate required variables. The assert function allows us to check if a condition is true or false and return an error message if the condition is false. We can use the assert function to validate that the mandatory variables are present and set correctly.
 
