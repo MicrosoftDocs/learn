@@ -16,7 +16,7 @@ In many cases, you can implement instrumentation without access to application s
 
 :::image type="content" source="../media/4-application-insights-01.png" alt-text="Screenshot of onboarding to Application Insights in the Azure portal." lightbox="../media/4-application-insights-01.png":::
 
-Application Insights automatically collects data about your application's performance and health, and displays this data in the Azure portal. You can select **Failures** in the Application Insights left navigation to get a list of all failures that have been collected for your app and drill into each one.
+Application Insights automatically collects data about your application's performance and health, and displays this data in the Azure portal. You can select **Failures** in the Application Insights left navigation to get a list of all failures collected for your app and drill into each one.
 
 :::image type="content" source="../media/4-application-insights-02.png" alt-text="Screenshot of analyzing failures." lightbox="../media/4-application-insights-02.png":::
 
@@ -70,4 +70,3 @@ You can configure Application Insights alert rules to monitor your application's
 
 You can also specify who to notify about the alert. Application Insights can send notifications through email or text message, or use runbooks and webhooks to respond to alerts through automation.
 
-:::image type="content" source="../media/4-application-insights-09.png" alt-text="Screenshot of alert creation." lightbox="../media/4-application-insights-09.png":::

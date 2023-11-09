@@ -8,9 +8,9 @@ It's critical to monitor your systems closely to identify any performance proble
 
 Azure Monitor helps you maximize the availability and performance of your applications and services by detecting and diagnosing application, infrastructure, and platform issues. Azure Monitor also supports operational workflows with alerts and automated actions, and lets you create visualizations such as dashboards and reports.
 
-:::image type="content" source="../media/overview-simple-20230707-opt.svg" alt-text="Diagram that shows an overview of Azure Monitor with data sources on the left sending data to a central data platform and features on the right that use the collected data." lightbox="../media/overview-blowout-20230707-opt.svg" border="false":::
+:::image type="content" source="../media/overview-simple-20230707-opt.svg" alt-text="Diagram that shows an overview of Azure Monitor with data sources sending data to a central data platform, and features that use the collected data." lightbox="../media/overview-blowout-20230707-opt.svg" border="false":::
 
-Azure Monitor collects telemetry directly from Azure platform resources, and you can also ingest custom data by using APIs. Azure Monitor can also collect application-layer data and infrastructure-performance data from VM guest operating systems and containers.
+Azure Monitor collects telemetry directly from Azure platform resources, and you can also ingest custom data by using APIs. Azure Monitor can also collect application-layer data and infrastructure-performance data from containers and VM guest operating systems.
 
 Azure Monitor stores the collected data in centralized and fully managed data stores: *Azure Monitor Metrics* for numerical time-series values and *Azure Monitor Log Analytics workspaces* for resource logs. Azure Monitor  automatically collects and stores metrics for most Azure resources, but user configuration is required to send and store resource logs. You can choose how to consume, analyze, and respond to the collected data.
 
@@ -20,7 +20,7 @@ You can also visualize the data yourself with Azure dashboards in the Azure port
 
 :::image type="content" source="../media/3-azure-monitoring-options-02.png" alt-text="Screenshot of a full-stack monitoring dashboard." lightbox="../media/3-azure-monitoring-options-02.png":::
 
-You can further analyze collected data by using Metrics Explorer for charting and visual correlation, and Log Analytics for ad hoc queries, trending, and pattern recognition. Azure Monitor lets you manage and create alerts, notifications, and actions such as runbooks and autoscale based on metrics and logs. You can also integrate Azure Monitor with other tools by using Azure Event Hubs to export data or APIs for ingestion and export.
+You can further analyze collected data by using Metrics Explorer for charting and visual correlation, and Log Analytics for queries, trending, and pattern recognition. Azure Monitor lets you manage and create alerts, notifications, and actions such as runbooks and autoscale based on metrics and logs. You can also integrate Azure Monitor with other tools by using Azure Event Hubs to export data or APIs for ingestion and export.
 
 ## Microsoft Defender for Cloud
 
@@ -44,7 +44,7 @@ You can connect your data sources to Microsoft Sentinel. Data sources include Mi
 
 :::image type="content" source="../media/3-azure-monitoring-options-05.png" alt-text="Screenshot of the Microsoft Sentinel dashboard." lightbox="../media/3-azure-monitoring-options-05.png":::
 
-Incidents help you group and combine related alerts. You can use incidents to reduce the noise generated because of the scale of the data. Incidents also help you to further investigate anomalous activities or threats that have raised alerts.
+Incidents help you group and combine related alerts. You can use incidents to reduce the noise generated because of the scale of the data. Incidents also help you to further investigate anomalous activities or threats that raise alerts.
 
 :::image type="content" source="../media/3-azure-monitoring-options-06.png" alt-text="Screenshot of incident investigation." lightbox="../media/3-azure-monitoring-options-06.png":::
 
@@ -60,6 +60,6 @@ You can use notebooks to automate your investigations. Notebooks are playbooks t
 
 ## Log Analytics workspaces
 
-Microsoft Sentinel and Microsoft Defender for Cloud use Azure Monitor Logs as their underlying logging data platform, and store their data in Log Analytics workspaces. Log Analytics workspaces are centralized storage and management locations that collect and aggregate your application, infrastructure, and security logs for analysis, troubleshooting, and auditing.
+Microsoft Sentinel and Microsoft Defender for Cloud use Azure Monitor Logs as their underlying logging data platform, and store their data in Log Analytics workspaces. Log Analytics workspaces are central storage and management locations that collect and aggregate your application, infrastructure, and security logs for analysis, troubleshooting, and auditing.
 
 This centralized approach lets you use a single user interface and query language to correlate and investigate across application performance, infrastructure performance, and security logs within the same data analytics service. It's best to use as few workspaces as possible, and manage user and team access to subsets of log data by using resource or workspace permissions. For more information, see [Design a Log Analytics workspace architecture](/azure/azure-monitor/logs/workspace-design).

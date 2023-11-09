@@ -17,9 +17,9 @@ quiz:
   questions:
   - content: Where can you see a topology view with network connection details of your VMs and virtual machine scale sets?
     choices:
-    - content: An Azure dashboard
+    - content: Log Analytics
       isCorrect: false
-      explanation: Dashboards can provide a single pane of glass for monitoring your Azure infrastructure and services, but don't include topological views of network connections.
+      explanation: You can use Azure Monitor Log Analytics to cross-query monitoring data from multiple sources, but not to view network connections.
     - content: Metrics Explorer
       isCorrect: false
       explanation: Metrics Explorer lets you chart multiple metrics over time, but doesn't show a topological view of network connections.

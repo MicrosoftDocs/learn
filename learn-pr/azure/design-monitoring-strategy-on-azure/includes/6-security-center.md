@@ -1,6 +1,6 @@
 Because your company is a financial organization, it needs to meet the highest standards for security. Each customer or partner transaction must be completely protected from threats, and you must also respond effectively to potential threats. For example, if a virtual machine (VM) is compromised, you must act rapidly to address the issue.
 
-This unit describes how to protect resources and respond to threats by using Microsoft Defender for Cloud. Defender for Cloud helps you ensure that the security configuration of your resources is as secure as possible.
+This unit describes how to protect resources and respond to threats by using Microsoft Defender for Cloud. Defender for Cloud helps you ensure that the security configuration of your infrastructure is as secure as possible.
 
 You can use Defender for Cloud to:
 
@@ -69,13 +69,15 @@ Defender for Cloud can help you respond to threats faster and in an automated wa
 Expand any of the following sections to take action on the alert:
 
 - **Inspect resource context** to examine the resource logs around the time of the alert.
-- **Mitigate the threat** to see suggestions for minimizing or remidiating the threat.
+- **Mitigate the threat** to see suggestions for minimizing or remediating the threat.
 - **Prevent future attacks** to implement security recommendations.
 - **Trigger automated response** to trigger a logic app as an automated response to this security alert.
 - **Suppress similar alerts** by creating a suppression rule with predefined conditions.
 - **Configure email notification settings** to select who to notify about the alert and under what conditions.
 
-In the alert details, you should dismiss alerts if no action is required, for example if there are false positives. You should act to address known attacks, for example by blocking known malicious IP addresses. You should also decide which alerts require more investigation.
+:::image type="content" source="../media/6-security-center-update-10.png" alt-text="Screenshot of the Take action pane." lightbox="../media/6-security-center-update-10.png":::
+
+In the alert details, you should dismiss alerts if no action is required, for example if there are false positives. You should act to address known attacks, for example by blocking known malicious IP addresses, and you should decide which alerts require more investigation.
 
 :::image type="content" source="../media/6-security-center-update-09.png" alt-text="Screenshot of alert status." lightbox="../media/6-security-center-update-09.png":::
 

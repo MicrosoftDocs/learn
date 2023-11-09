@@ -26,14 +26,14 @@ quiz:
     - content: To cross-query data collected from multiple on-premises and cloud data sources.
       isCorrect: false
       explanation: You can use Azure Monitor Log Analytics to cross-query monitoring data from multiple sources, but not to monitor data for an enterprise.
-  - content: How can you use the Microsoft Sentinel investigation map to determine which users were affected by an incident?
+  - content: How can you use the Microsoft Sentinel investigation map to determine which users an incident affected?
     choices:
     - content: Use exploration queries.
       isCorrect: false
-      explanation: You can use predefined exploration queries to investigate more effectively, but they don't show which users were affected by an incident.
+      explanation: You can use predefined exploration queries to investigate incidents more effectively, but they don't show which users an incident affected.
     - content: Use entities.
       isCorrect: true
-      explanation: Use entities to view users that might have been affected by a particular threat or malicious activity.
+      explanation: Use entities to view users that a particular threat or malicious activity might have affected.
     - content: Use the timeline.
       isCorrect: false
-      explanation: You can the timeline feature to understand the path that a threat might have taken over time, but the timeline doesn't show affected users.
+      explanation: You can use the timeline feature to understand the path that a threat might have taken over time, but the timeline doesn't show affected users.

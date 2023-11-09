@@ -19,9 +19,9 @@ VM insights is an Azure Monitor feature that helps get you started monitoring yo
 - Monitor your VMs at scale across multiple subscriptions and resource groups.
 - Get a topology view that shows the processes and network connection details of your VMs and virtual machine scale sets.
 
-To enable Azure Monitor VM insights, select **Virtual Machines** from the Azure Monitor left navigation, and then select **Configure Insights** on the **Get started** tab. In the **Not monitored** section of the **Overview** tab, select the VMs and virtual machine scale sets to monitor, and then select **Enable**.
-
 :::image type="content" source="../media/5-analyze-resource-utilization-01.png" alt-text="Screenshot of getting started with Azure Monitor VM insights in the Azure portal." lightbox="../media/5-analyze-resource-utilization-01.png":::
+
+To enable Azure Monitor VM insights, select **Virtual Machines** from the Azure Monitor left navigation, and then select **Configure Insights** on the **Get started** tab. In the **Not monitored** section of the **Overview** tab, select the VMs and virtual machine scale sets to monitor, and then select **Enable**.
 
 Enabling VM insights adds extensions and configuration to your VMs and virtual machine scale sets that collect, store, and display a predetermined set of usage and performance measurements.
 

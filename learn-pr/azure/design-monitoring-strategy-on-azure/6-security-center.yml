@@ -33,7 +33,7 @@ quiz:
       explanation: Just-in-time access is used to control VM access, not respond to alerts.
     - content: Use adaptive application controls.
       isCorrect: false
-      explanation: You use adaptive controls to control which applications can run on your VMs, not respond to alerts.
+      explanation: You use adaptive controls to control which applications can run on your VMs, not to respond to alerts.
     - content: Use Azure Logic Apps.
       isCorrect: true
       explanation: Defender for Cloud lets you take action on alerts by triggering an automated response with Azure Logic Apps.

@@ -20,7 +20,7 @@ You can see all of your available data connectors by selecting **Data connectors
 
 Select the appropriate data connector for your data source, read the information about the connector, and select **Open connector page** to look at the prerequisites for your connector. Make sure you address all the prerequisites to successfully connect your data source.
 
-When you connect the data source, your logs are synced to Microsoft Sentinel. You see a summary of collected data in the **Data received** graph for your connector. You can also see the different data types that have been collected for the source. For example, the Microsoft Entra connector collects sign-in logs and audit logs.
+When you connect the data source, your logs are synced to Microsoft Sentinel. You see a summary of collected data in the **Data received** graph for your connector. You can also see the different data types that are collected for the source. For example, the Microsoft Entra connector collects sign-in logs and audit logs.
 
 :::image type="content" source="../media/7-sentinel-03.png" alt-text="Screenshot of the Data received graph." lightbox="../media/7-sentinel-03.png":::
 
@@ -36,7 +36,7 @@ Select **Analytics** in the Microsoft Sentinel left navigation under **Configura
 
 :::image type="content" source="../media/7-sentinel-05.png" alt-text="Screenshot of View all alerts." lightbox="../media/7-sentinel-05.png":::
 
-When you create a rule, you specify whether it should be enabled or disabled, and the severity of the alert. In the **Rule query** field of the **Set rule logic** tab, you enter a rule query.
+When you create a rule, you specify whether it should be enabled or disabled, and the severity of the alert. In the **Rule query** field of the **Set rule logic** tab, enter a rule query.
 
 :::image type="content" source="../media/7-sentinel-06.png" alt-text="Screenshot of Create alert rule." lightbox="../media/7-sentinel-06.png":::
 
@@ -67,7 +67,7 @@ The investigation map helps you understand what caused an incident and the affec
 
 :::image type="content" source="../media/7-sentinel-10.png" alt-text="Screenshot of an investigation map." lightbox="../media/7-sentinel-10.png":::
 
-The investigation map lets you drill down into an incident. For example, multiple entities can be mapped to an incident. Entities can include users, devices, and appliances. For example, you can get details about a user who's identified as part of the incident.
+The investigation map lets you drill down into an incident. For example, multiple entities can be mapped to an incident. Entities can include users, devices, and appliances. For example, you can get details about a user identified as part of the incident.
 
 :::image type="content" source="../media/7-sentinel-11.png" alt-text="Screenshot of entity." lightbox="../media/7-sentinel-11.png":::
 
