@@ -68,4 +68,4 @@ You can change the node count later in the cluster's configuration panel. It's a
 
 ## Node VM size
 
-Select from a wide range of VM specs. For development purposes, you can choose the B series to save on costs. In the exercises, you use series B2, the standard size. For more guidance to select a VM based on your needs, visit the [Azure VM selector tool](https://azure.microsoft.com/en-us/pricing/vm-selector/)
+Select from a wide range of VM specs. For development purposes, you can choose the B series to save on costs. In the exercises, you use series B2, the standard size. For more guidance to select a VM based on your needs, visit the [Azure VM selector tool](https://azure.microsoft.com/pricing/vm-selector/)
