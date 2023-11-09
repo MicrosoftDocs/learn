@@ -15,47 +15,44 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "TODO - THEORY CHECK 1"
+    - content: "Which of these is available for certain Azure compute services to let you save money by paying for only the compute that you use?"
       choices:
-        - content: "TODO"
+        - content: "Azure Advisor cost recommendations"
           isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
+          explanation: "Azure Advisor cost recommendations provide recommendations about how you can reduce your Azure spend by identifying idle and underutilized resources."
+        - content: "Azure Reservations"
           isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
+          explanation: "Azure reservations let you prepay for a one-year or three-year term to get a discount on the base compute rate. You cannot pay for only the compute that you use in this model."
+        - content: "Azure Hybrid Benefit"
           isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
+          explanation: "Azure Hybrid Benefit lets you use your on-premises Windows Server or SQL Server licenses with Software Assurance to pay a reduced rate on Azure Virtual Machines. It doesn't affect the cost of resources based on utilization."
+        - content: "Consumption-based billing"
           isCorrect: true
-          explanation: "TDOD"
+          explanation: "Services like Azure Functions and Azure Container Instances can be configured to use consumption-based billing, which means that you pay only for the compute that you use."
 
-    - content: "TODO - THEORY CHECK 2"
+    - content: "Which of the following HA designs should you avoid for cost-efficiency if you have already paid for the resources?"
       choices:
-        - content: "TODO"
+        - content: "Active-active"
           isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
+          explanation: "An active-active design should be used for workloads that are accessed across regions or for workloads that require zero or near-zero downtime."
+        - content: "Active-only"
           isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
-          isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
+          explanation: "An active-only design may be sufficient for workloads with workloads with high RPO and RTO targets."
+        - content: "Active-passive"
           isCorrect: true
-          explanation: "TDOD"
+          explanation: "An active-passive design may lead to paying for idle resources."
 
-    - content: "TODO - EXAMPLE BASED CHECK"
+    - content: "What is one way the workload team can ensure that they catch abandoned resources, like MySQL servers that are no longer used?"
       choices:
-        - content: "TODO"
+        - content: "Review the monthly Azure bill"
           isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
+          explanation: "The Azure bill will not provide information about the utilization of a given resource"
+        - content: "Setup Azure budget alerts"
           isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
+          explanation: "Budget alerts only notify users when the budget is exceeded, they cannot provide any information about a given resource's utilization"
+        - content: "Review the cost analysis report for the subscription"
           isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
+          explanation: "The cost analysis report will not provide information about the utilization of a given resource"
+        - content: "Review the Azure Advisor cost recommendations"
           isCorrect: true
-          explanation: "TDOD"
+          explanation: "Azure Advisor cost recommendations can identify underutilized MySQL servers and will provide a recommendation when such servers are found."

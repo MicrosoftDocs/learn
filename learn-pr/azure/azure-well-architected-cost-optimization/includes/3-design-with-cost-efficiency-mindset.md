@@ -5,7 +5,7 @@ Every architectural decision has direct and indirect financial implications. Und
 
 Given a set of requirements, optimize and make tradeoff decisions, in relation to costs, that still effectively address the cross-cutting concerns of the workload.
 
-The examples for the following approaches are based on a fictional company, Contoso Manufacturing (CM). CM runs a custom-built warehouse management system (WMS) to handle its four warehouses across South America and they have decided that it is time to update the solution and move it to the cloud. They are considering a lift-and-shift move of the current solution or a greenfield build with modern cloud tools. CM's senior leadership wants to control costs and has asked the workload team's leaders how they will approach the migration with a goal of maintaining cost efficiency.
+Contoso Manufacturing (CM). CM runs a custom-built warehouse management system (WMS) to handle its four warehouses across South America and they have decided that it is time to update the solution and move it to the cloud. They are considering a lift-and-shift move of the current solution or a greenfield build with modern cloud tools. CM's senior leadership wants to control costs and has asked the workload team's leaders how they will approach the migration with a goal of maintaining cost efficiency.
 
 The WMS solution is a .NET application running on IIS and uses SQL Server for its databases.
 
