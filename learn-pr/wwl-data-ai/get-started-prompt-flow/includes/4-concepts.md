@@ -1,4 +1,4 @@
-Azure Machine Learning's Prompt Flow is a cutting-edge feature currently in public preview that allows developers to create, test, and deploy large language model (LLM)-based applications. This learning unit provides an overview of the core components of Prompt Flow: connections, runtimes, flows, Prompt Flow tools, variants and monitoring metrics.
+Azure Machine Learning's Prompt Flow is a cutting-edge feature that allows developers to create, test, and deploy large language model (LLM)-based applications. This learning unit provides an overview of the core components of Prompt Flow: connections, runtimes, flows, Prompt Flow tools, variants and monitoring metrics.
 
 ## Connections
 
@@ -50,9 +50,10 @@ Tools are discrete executable units within Prompt Flow, each designed for a part
 - Benefits
   - Integration with third-party APIs and Python packages.
   - Facilitates a range of tasks from summarization to API interactions.
-  - Consideration: The preview is without an SLA and not recommended for production workloads.
 
-## Variants in Prompt Flow (Preview)
+> **Note**: The preview is without an SLA and not recommended for production workloads.
+
+## Variants in Prompt Flow
 
 Variants are different versions of a tool node, each with unique settings or prompt content, especially within the LLM tool.
 
