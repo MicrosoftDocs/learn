@@ -37,13 +37,13 @@ To set up a Blazor Hybrid project to work with, we use Visual Studio Code.
 
 1. In Visual Studio Code, open the **Explorer** and select **Create .NET Project** .
 
-2. Select **.NET MAUI Blazor Hybrid App** in the drop down.
+2. Select **.NET MAUI Blazor Hybrid App** in the dropdown list.
 
     ![Screenshot of the Visual Studio Code Create New Project screen and the .NET MAUI Blazor App template.](../media/visual-studio-code-create-new-project.png)
 
 3. Create a new folder in the pop up names **BlazorHybridApp** and select **Select Folder**.
 
-4. Name the project **BlazorHybridApp** and press **Enter** to confirmn.
+4. Name the project **BlazorHybridApp** and press **Enter** to confirm.
 
 5. This creates a basic Blazor Hybrid project powered by .NET MAUI with all required files and pages.
 
@@ -152,7 +152,7 @@ The project is a normal .NET MAUI project with some more Blazor related content.
 
 ::: zone pivot="vscode"
 
-- In Visual Studio Code, select the **Run** > **Start Debugging**. Select the **.NET MAUI** debugger from the drop down to start the application.
+- In Visual Studio Code, select the **Run** > **Start Debugging**. Select the **.NET MAUI** debugger from the dropdown list to start the application.
 
 :::zone-end
 
