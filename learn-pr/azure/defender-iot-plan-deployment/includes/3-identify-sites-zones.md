@@ -40,7 +40,8 @@ Separate sensors with similar characteristics, like recurring IP address ranges,
 Figures A and B will help you answer the knowledge check questions.
 
 :::image type="complex" source="../media/3-knowledge-check-figure-A.png" alt-text="A diagram, labeled Figure A, depicting two global locations, a Paris location and a Bengalaru location, each with different departments on different floors of the location." border="false":::
-Figure A shows an example of global locations. A Paris location with an office of different departments on three floors. The ground floor with Guests network, floor 1 with Sales, and floor 2 with Executives. The Bengaluru location includes an office with different departments on three floors. The ground floor with Offices network, floor 1 with Production Line A, and floor 2 with Production Line B. :::image-end:::
+Figure A shows an example of global locations. A Paris location with an office of different departments on three floors. The ground floor with Guests network, floor 1 with Sales, and floor 2 with Executives. The Bengaluru location includes an office with different departments on three floors. The ground floor with Offices network, floor 1 with Production Line A, and floor 2 with Production Line B.
+:::image-end:::
 <!--Optional "exercise-solution" video -->
 
 :::image type="complex" source="../media/3-knowledge-check-figure-B.png" alt-text="A diagram of a sample network, labeled Figure B. " border="false":::
