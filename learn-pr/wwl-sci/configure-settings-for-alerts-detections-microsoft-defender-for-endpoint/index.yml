@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.service: microsoft-365-security
+  ms.subservice: mde
 title: Configure for alerts and detections in Microsoft Defender for Endpoint
 summary: Learn how to configure settings to manage alerts and notifications.  You'll also learn to enable indicators as part of the detection process.
 abstract: |

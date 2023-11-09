@@ -1,4 +1,5 @@
 
+
 When the Configuration Manager client installs on a device and successfully assigns it to a site, you see the device in the **Assets and Compliance** workspace in the **Devices** node. Once in here, the device is likely to join one or more collections from which to be actively managed from.
 
 #### What is a Collection?

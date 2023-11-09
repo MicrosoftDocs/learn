@@ -7,8 +7,9 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: vs-code
   ms.custom: team=nextgen, devdivchpfy22, engagement-fy23
+  ms.devlang: python
 title: Get started with Python in Visual Studio Code
 summary: Get started with learning Python by installing and configuring the
   tools you'll need to build real applications.

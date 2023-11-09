@@ -155,28 +155,28 @@ Built-in roles are available to reduce the need for higher-level RBAC roles, suc
 
 During deployment of an Azure SQL Database logical server, you can specify the following **Authentication method**:
 
-- Use only Azure Active Directory (Azure AD) authentication
-- Use both SQL and Azure AD authentication
+- Use only Microsoft Entra authentication
+- Use both SQL and Microsoft Entra authentication
 - Use SQL authentication
 
 The server admin needs to be set during deployment. For databases in Azure SQL Database, the server admin is a server-level principal for the Azure SQL Database logical server.
 
-If you're migrating a workload that needs Windows authentication or your organization uses Azure Active Directory (Azure AD), you can use Azure AD. You can assign an Azure AD server admin by using the portal or command-line tools.
+If you're migrating a workload that needs Windows authentication or your organization uses Microsoft Entra ID, you can use Microsoft Entra ID. You can assign a Microsoft Entra server admin by using the portal or command-line tools.
 
-Azure AD-only authentication is the default option when configuring a new server. [Server logins](/azure/azure-sql/database/authentication-azure-ad-logins) have been introduced to allow Azure AD server principals, which are logins in the virtual `master` database of a SQL Database. Azure AD logins can be created from Azure AD *users, groups, and service principals*. When using Azure AD-only authentication, SQL authentication logins can be created and existing logins will remain. However, only Azure AD authentication logins and users can connect to the logical server. To learn more about Azure AD-only authentication, see [Azure AD-only authentication with Azure SQL](/azure/azure-sql/database/authentication-azure-ad-only-authentication)
+Microsoft Entra-only authentication is the default option when configuring a new server. [Server logins](/azure/azure-sql/database/authentication-azure-ad-logins) have been introduced to allow Microsoft Entra server principals, which are logins in the virtual `master` database of a SQL Database. Microsoft Entra logins can be created from Microsoft Entra *users, groups, and service principals*. When using Microsoft Entra-only authentication, SQL authentication logins can be created and existing logins will remain. However, only Microsoft Entra authentication logins and users can connect to the logical server. To learn more about Microsoft Entra-only authentication, see [Microsoft Entra-only authentication with Azure SQL](/azure/azure-sql/database/authentication-azure-ad-only-authentication)
 
-:::image type="content" source="../media/2-azure-ad-admin.png" alt-text="Screenshot of setting the Azure AD administrator." border="false":::  
+:::image type="content" source="../media/2-azure-ad-admin.png" alt-text="Screenshot of setting the Microsoft Entra administrator." border="false":::  
 
-Depending on how your organization has configured the Azure AD instance, you can connect to it by using any of the following three methods (for example, in SSMS):
+Depending on how your organization has configured the Microsoft Entra instance, you can connect to it by using any of the following three methods (for example, in SSMS):
 
-- **Azure Active Directory - Integrated**: A non-interactive method that you can use if you're signed in to Windows with your Azure AD credentials from a federated domain.  
-- **Azure Active Directory - Password**: A non-interactive method that allows you to connect with an Azure AD principal name by using the Azure AD-managed domain. From the documentation:
+- **Microsoft Entra ID - Integrated**: A non-interactive method that you can use if you're signed in to Windows with your Microsoft Entra credentials from a federated domain.  
+- **Microsoft Entra ID - Password**: A non-interactive method that allows you to connect with a Microsoft Entra principal name by using the Microsoft Entra ID-managed domain. From the documentation:
 
-   *This can apply to native or federated Azure AD users. A native user is one explicitly created in Azure AD and being authenticated using user name and password, while a federated user is a Windows user whose domain is federated with Azure AD. The latter method (using user & password) can be used when a user wants to use their windows credential, but their local machine is not joined with the domain (for example, using a remote access). In this case, a Windows user can indicate their domain account and password and can authenticate to SQL Database or Azure Synapse Analytics (formerly SQL DW) by using federated credentials.*
+   *This can apply to native or federated Microsoft Entra users. A native user is one explicitly created in Microsoft Entra ID and being authenticated using user name and password, while a federated user is a Windows user whose domain is federated with Microsoft Entra ID. The latter method (using user & password) can be used when a user wants to use their windows credential, but their local machine is not joined with the domain (for example, using a remote access). In this case, a Windows user can indicate their domain account and password and can authenticate to SQL Database or Azure Synapse Analytics (formerly SQL DW) by using federated credentials.*
 
-- **Azure Active Directory - Universal with Multi-Factor Authentication (MFA)**: An interactive method that safeguards access to data while meeting an organization's demand for a single sign-in process with Azure AD Multi-Factor Authentication.
+- **Microsoft Entra ID - Universal with multifactor authentication (MFA)**: An interactive method that safeguards access to data while meeting an organization's demand for a single sign-in process with Microsoft Entra multifactor authentication.
 
-For Azure SQL Database, there are a few nuances. You can have logins that exist in the virtual `master` database, database users, and even contained database users for Azure AD accounts (recommended). Although the server admin for Azure SQL Database essentially has `sysadmin` rights, you can create more limited admins by using server or database level roles. Two [database level roles](/sql/relational-databases/security/authentication-access/database-level-roles) are available for SQL Database that only exist in the virtual `master` database:
+For Azure SQL Database, there are a few nuances. You can have logins that exist in the virtual `master` database, database users, and even contained database users for Microsoft Entra accounts (recommended). Although the server admin for Azure SQL Database essentially has `sysadmin` rights, you can create more limited admins by using server or database level roles. Two [database level roles](/sql/relational-databases/security/authentication-access/database-level-roles) are available for SQL Database that only exist in the virtual `master` database:
 
 - **loginmanager**: A database-level role that allows members to create logins for the database server.
 - **dbmanager**: A database-level role that allows members to create and delete databases for the database server.

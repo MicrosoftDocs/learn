@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: data-factory
 title: Operationalize your Azure Data Factory or Azure Synapse Pipeline
 summary: In this module, you will learn how you can publish your Azure Data Factory work between different environments.
 abstract: |

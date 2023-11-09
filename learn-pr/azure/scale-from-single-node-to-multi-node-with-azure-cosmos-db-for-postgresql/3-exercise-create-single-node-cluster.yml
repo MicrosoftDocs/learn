@@ -9,7 +9,7 @@ metadata:
   author: sadukie
   ms.author: jonels
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 13
 content: |
   [!include[](includes/3-exercise-create-single-node-cluster.md)]

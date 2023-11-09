@@ -5,10 +5,12 @@ metadata:
   unitType: learning-content
   title: Publish Bicep code from a deployment pipeline
   description: Learn how to automate publishing a template spec to Azure and publishing a Bicep module to a registry.
-  ms.date: 04/10/2023
+  ms.date: 06/29/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-bicep
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |

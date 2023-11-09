@@ -17,5 +17,5 @@ In this module, you'll:
 
 ## Prerequisites
 
-- Foundational understanding of IT governance processes
-- An understanding of your organization's governance requirements and how they affect your cloud-adoption plan
+- Foundational understanding of IT governance processes.
+- An understanding of your organization's governance requirements and how they affect your cloud-adoption plan.

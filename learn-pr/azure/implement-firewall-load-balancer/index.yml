@@ -3,23 +3,21 @@ uid: learn.azure.implement-firewall-load-balancer
 metadata:
   moduleType: standard
   title: Implement Datacenter Firewall and Software Load Balancer on Azure Stack HCI
-  description: Microsoft Azure Stack HCI-based SDN facilitates the implementation of software-defined filtering and load balancing of network traffic.
-  ms.date: 5/6/2021
-  author: LBN-commits
-  ms.author: v-lanai
+  description: Learn how Azure Stack HCI software defined networking (SDN) helps implement network traffic filtering and load balancing.
+  ms.date: 08/14/2023
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-stack
+  ms.subservice: azure-stack-hci
 title: Implement Datacenter Firewall and Software Load Balancer on Azure Stack HCI
-summary: Microsoft Azure Stack HCI-based SDN facilitates the implementation of software-defined filtering and load balancing of network traffic.
+summary: Learn how Azure Stack HCI software defined networking (SDN) helps implement network traffic filtering and load balancing.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Describe and implement Datacenter Firewall on Azure Stack HCI.
-  - Describe and implement Software Load Balancer on Azure Stack HCI.
+  - Describe and implement Datacenter Firewall and Software Load Balancer on Azure Stack HCI.
 prerequisites: |
-  - A good understanding of networking technologies and their implementation on the Windows operating system platform
-  - General familiarity with software defined networking concepts
-  - General familiarity with Software Defined Networking (SDN) on Azure Stack HCI 
-  - Experience in implementing Azure Stack HCI
+  - Understanding of Windows networking technologies and their implementation.
+  - Familiarity with software defined networking (SDN) concepts.
+  - Experience implementing Azure Stack HCI, and familiarity with SDN on Azure Stack HCI.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
   - advanced

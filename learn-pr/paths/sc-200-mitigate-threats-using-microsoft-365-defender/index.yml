@@ -11,9 +11,9 @@ metadata:
 title: 'SC-200: Mitigate threats using Microsoft 365 Defender'
 prerequisites: |
   - Fundamental understanding of Microsoft security, compliance, and identity products
-  - Basic understanding of Microsoft 365
+  - Basic understanding of Microsoft 365 Defender
 summary: |
-  Analyze threat data across domains and rapidly remediate threats with built-in orchestration and automation in Microsoft 365 Defender.  This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.
+  Analyze threat data across domains and rapidly remediate threats with built-in orchestration and automation in Microsoft 365 Defender. This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.
 iconUrl: /training/achievements/mitigate-threats-using-microsoft-365-defender.svg
 levels:
 - intermediate
@@ -25,13 +25,9 @@ products:
 - defender-office365
 - m365
 - mdatp
-- microsoft-purview
 - microsoft-defender
 subjects:
 - cloud-security
-- compliance
-- information-protection-governance
-- insider-risk
 - security
 - threat-protection
 modules:
@@ -41,9 +37,5 @@ modules:
 - learn-m365.m365-threat-remediate
 - learn-m365.m365-threat-safeguard
 - learn-m365.cloud-app-security
-- learn.wwl.respond-to-data-loss-prevention-alerts-microsoft-365
-- learn-m365.m365-compliance-insider-manage-insider-risk
-- learn.wwl.investigate-threats-using-audit-in-microsoft-365-defender-microsoft-purview-standard
-- learn.wwl.investigate-threats-using-audit-in-microsoft-365-defender-microsoft-purview-premium
 trophy:
   uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-365-defender.trophy

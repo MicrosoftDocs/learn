@@ -1,4 +1,4 @@
-Government agencies can build solutions for their unique and complex data and cybersecurity requirements. By providing public multi-tenant, private, and hybrid cloud options, Azure empowers you to design the solutions you need to access the cloud's flexibility and resiliency while differentiating between various data classifications. At all classification levels, Azure protects data through strict residency and encryption requirements.
+Government agencies can build solutions for their unique and complex data and cybersecurity requirements. Azure provides public multi-tenant, private, and hybrid cloud options that empower agencies to design the solutions they need. Solutions that provide access to the cloud's flexibility and resiliency while differentiating between various data classifications. At all classification levels, Azure protects data through strict residency and encryption requirements.
 
 ## Learning objectives
 
@@ -11,4 +11,4 @@ In this module, you will:
 ## Prerequisites
 
 * Familiarity with current workloads that could benefit from moving to the cloud.
-* Familiarity with protection requirements across a variety of data classification.
+* Familiarity with protection requirements across various data classifications.

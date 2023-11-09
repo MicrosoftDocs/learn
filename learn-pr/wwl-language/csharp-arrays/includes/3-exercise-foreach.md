@@ -1,9 +1,11 @@
 
+
+
 Suppose you work for a manufacturing company. The company needs you to complete an inventory of your warehouse to determine the number of products that are ready to ship. In addition to the total number of finished products, you need to report the number of finished products stored in each individual bin in your warehouse, along with a running total. This running total will be used to create an audit trail so you can double-check your work and identify "shrinkage".
 
 ## Looping through an array using foreach
 
-The `foreach` statement provides a simple, clean way to iterate through the elements of an array. T `foreach` statement processes array elements in increasing index order, starting with index 0 and ending with index Length - 1. It uses a temporary variable to hold the value of the array element associated with the current iteration. Each iteration will run the code block that's located below the `foreach` declaration.
+The `foreach` statement provides a simple, clean way to iterate through the elements of an array. The `foreach` statement processes array elements in increasing index order, starting with index 0 and ending with index Length - 1. It uses a temporary variable to hold the value of the array element associated with the current iteration. Each iteration will run the code block that's located below the `foreach` declaration.
 
 Here's a simple example:
 

@@ -4,12 +4,11 @@ title: What is Delivery Plans?
 metadata:
   title: What is Delivery Plans?
   description: Discover how Delivery Plans can help you coordinate team sprints for optimal project delivery.
-  ms.date: 06/24/2022
+  ms.date: 10/06/2023
   ms.custom: devdivchpfy22
   author: chcomley
   ms.author: chcomley
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/3-what-is-delivery-plans.md)]
@@ -26,8 +25,8 @@ quiz:
       explanation: "A delivery plan includes multiple sprints, often across multiple teams, in order to provide an overall deliverable schedule."
     - content: "A document describing when and how a product will be delivered to the customer."
       isCorrect: false
-      explanation: "Despite using the term _delivery_, _delivery plans_ are not focused on the logistics of how deliverables will be produced."
-  - content: "Which of the following is not a good reason to use a delivery plan?"
+      explanation: "Despite using the term _delivery_, _delivery plans_ aren't focused on the logistics of how deliverables will be produced."
+  - content: "Which of the following isn't a good reason to use a delivery plan?"
     choices:
     - content: "You need to gauge the likelihood of other teams producing their deliverables on their current schedules based on their commitments."
       isCorrect: false
@@ -37,15 +36,15 @@ quiz:
       explanation: "Delivery plans can help you understand the schedule risks associated with dependencies you have taken on other teams."
     - content: "You need to understand how other teams are going to produce their deliverables."
       isCorrect: true
-      explanation: "Despite using the term _delivery_, _delivery plans_ are not focused on the logistics of how deliverables will be produced."
+      explanation: "Despite using the term _delivery_, _delivery plans_ aren't focused on the logistics of how deliverables will be produced."
   - content: "When is a good time to start using delivery plans?"
     choices:
     - content: "You should create a delivery plan before you start planning work sprints."
       isCorrect: false
-      explanation: "While delivery plans may be useful in planning work from the very beginning, it's never too late to start using them."
+      explanation: "While delivery plans might be useful in planning work from the very beginning, it's never too late to start using them."
     - content: "You should wait until all work is planned before creating a delivery plan."
       isCorrect: false
-      explanation: "While delivery plans are very useful for analyzing the planned work schedules of multiple teams, you don't have to wait for those schedules to be fully formed to start using them."
+      explanation: "While delivery plans are useful for analyzing the planned work schedules of multiple teams, you don't have to wait for those schedules to be fully formed to start using them."
     - content: "Creating a delivery plan can be valuable at any point in a project."
       isCorrect: true
       explanation: "Given how useful delivery plans are in planning and analyzing work schedules across multiple teams, there really is no bad time to start using them."

@@ -1,4 +1,4 @@
-In this module, you learned how Microsoft Sentinel provides a way to address the Contoso IT director's concerns:
+In this module, you learned how Microsoft Sentinel provides a way to address the concerns of your organizations IT director:
 
 - Alerts come from multiple products.
 - Too many alerts are triaged across dashboards.
@@ -33,7 +33,7 @@ You can learn more by reviewing the following documents.
 
 ### Azure roles
 
-- [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal?azure-portal=true)
+- [View and assign administrator roles in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-manage-roles-portal?azure-portal=true)
 - [What is Azure role-based access control (Azure RBAC)?](/azure/role-based-access-control/overview?azure-portal=true)
 
 ### Microsoft Sentinel agent

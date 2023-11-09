@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Describe application-based threats and how to protect against them
 summary: The proliferation of applications across the digital landscape presents an increased opportunity for cybercriminals.  Throughout this module, you’ll learn about the threat landscape of application-based attacks and how to protect your applications.
 abstract: |

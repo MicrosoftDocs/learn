@@ -8,8 +8,8 @@ metadata:
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: engagement-fy23
+  ms.devlang: bicep
 title: Build your first Bicep deployment workflow by using GitHub Actions
 summary: |
   Create an automated workflow in GitHub Actions that securely deploys resources to Azure from Bicep code. Configure your workflow to run on a schedule or when your configuration changes.

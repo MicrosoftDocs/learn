@@ -8,7 +8,9 @@ metadata:
   ms.author: socuff
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-arm-template
   ms.contributors: socuff-04232021
 title: Using Azure Resource Manager templates to deploy Azure Lighthouse
 durationInMinutes: 8

@@ -69,7 +69,7 @@ Some Azure security services and features that help secure your VMs and storage 
 
 - **Azure Key Vault and SSH keys**: Azure Key Vault is a service that provides centralized secrets management, with full control over access policies and audit history.
 
-- **Managed identities for Azure resources**: Managed identities for Azure resources provide Azure services with an automatically managed identity in Azure AD.
+- **Managed identities for Azure resources**: Managed identities for Azure resources provide Azure services with an automatically managed identity in Microsoft Entra ID.
 
 - **Policies**: Policies enable an organization to enforce various conventions and rules throughout the enterprise.
 

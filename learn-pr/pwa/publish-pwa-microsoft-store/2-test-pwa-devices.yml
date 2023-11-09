@@ -1,0 +1,23 @@
+### YamlMime:ModuleUnit
+uid: learn.edge.publish-pwa-to-msft-store.test-pwa
+title: Test PWA on devices and platforms
+metadata:
+  title: Test PWA on devices and platforms
+  description: This content is part of the "Test and publish Progressive Web Apps (PWAs) for Microsoft Store" module.
+  ms.date: 07/13/2023
+  author: beth-panx
+  ms.author: xupa
+  ms.topic: module-standard-task-based
+  ms.prod: microsoft-edge
+durationInMinutes : 3
+content: |
+  [!include[](includes/2-test-pwa-devices.md)]
+
+
+
+
+
+
+
+
+

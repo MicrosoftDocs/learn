@@ -1,82 +1,45 @@
 In this exercise, you move the static data from the app into a mock server, and then you use the actual server.
 
-## Use a mock server
+## Prepare code to fetch data from mock server
 
-At this point, you have a front-end app with static data inside of the app. You want to move the static data into a mock server, while you're waiting for the back-end team to finish building the API. Performing this step will set you up nicely for using the actual API, once it's done.
+At this point, you have a front-end app with static data inside of the app. You want to move the static data into a mock server, while you're waiting for the back-end team to finish building the API. Performing this step sets you up nicely for using the actual API, once it's done.
 
-1. In _Main.js_, locate and delete the following code:
+1. In _Pizza.jsx_, replace the code with the following code:
 
-   ```javascript
-   let pizzas = [{
-      id: 1, name: 'Cheese pizza', description: 'very cheesy'
-   },
-   {
-      id: 2, name: 'Al Tono pizza', description: 'lots of tuna'
-   }];
-   ```
+    :::code language="javascript" source="../code/with-components-and-fetch/Pizza.jsx":::
 
-1. Create a file named _db.json_ file in the _pizza-web_ directory. Insert the following content:
+    The data is fetched with a call to a mocked API instead of a front-end app's in-memory array. Notice that the URL used is `/pizzas` without the reference to the back-end server. This is because a proxy makes the requests toward the mocked API.
 
-   ```json
-   {
-     "pizzas" : [{
-        "id": 1, 
-        "name": "Cheese pizza", 
-        "description": "very cheesy"
-      },
-      {
-        "id": 2, 
-        "name": "Al Tono pizza", 
-        "description": "lots of tuna"
-      }]
-   }
-   ```
+1. Create a file named _db.json_ in the _PizzaClient_ directory. Insert the following content:
 
-   The above is a JSON representation of the deleted JavaScript array.
+    :::code language="json" source="../code/mock-server/db.json" :::
 
-1. Locate the definition of your `Main` component in _Main.js_, and change the definition of `Main` to the following content (don't change anything else):
+   This is a JSON representation of the mocked Pizza data.
+ 
+## Prepare proxy to mock server
 
-   ```javascript
-   const Main = () => {
-      const [pizzas, setPizzas] = useState([]);
-      useEffect(() => {
-        fetchData();
-      }, [])
-      
-      function fetchData() {
-        fetch("/pizzas")
-          .then(response => response.json())
-          .then(data => setPizzas(data)) 
-      }
-    
-      const data = pizzas.map(pizza => <Pizza pizza={pizza} />)
-    
-      return (<React.Fragment>
-        {pizzas.length === 0 ?
-         <div>No pizzas</div> :
-         <div>{data}</div>
-        }
-      </React.Fragment>)
-    }
-   ```
+1. In the Visual Studio Code panel, typically found below the editor region, select **Ports**. 
 
-   The above call to `useState()` creates a state with a list `pizzas` and a method to change the content in `pizzas` called `setPizzas()`. You also added `useEffect()` which is used to call side effects. At closer inspection, you are calling `fetchData()` inside of `useEffect()` which triggers a call to your API, which in turn fetches your data from the backend, and ends up calling `setPizzas()` to update your React app.
+1. Find the local address for the API on port 5100. Hover over the address and select the copy icon.
 
-   Also change the `import` at the top from:
+    :::image type="content" source="..//media/visual-studio-code-panel-port-copy.png" alt-text="{alt-text}":::
 
-   ```javascript
-   import React, { useState } from "react";
-   ```
+1. Paste this value as the proxy property in the Vite React **vite.config.js** so the front-end app uses the correct server port.
 
-   To:
+    :::code language="javascript" source="../code/with-components-and-fetch/vite.config.js":::
 
-   ```javascript
-   import React, { useState, useEffect } from "react";
-   ```
+    Vite reloads the React app to use the new proxy configuration.
 
-   The method `fetchData()` has been added, and it's being invoked. This action triggers a `GET` request to `http://localhost:5000/pizzas`. Next, you need to ensure that the mock server is up and running.
+## Start the mock server
 
-1. Run `npx json-server --watch --port 5000 db.json` in a separate terminal. Running this code starts the mock server, and output similar to the following appears:
+1. Right-click on the **PizzaClient** subfolder and select **Open in integrated terminal**. 
+1. Start the mock API with the following command in that new terminal.
+
+    ```bash
+    npx json-server --watch --port 5100 db.json
+    ```
+
+    Running this code starts the mock server, and output similar to the following appears:
 
    ```output
    \{^_^}/ hi!
@@ -84,69 +47,56 @@ At this point, you have a front-end app with static data inside of the app. You 
    Done
     
    Resources
-   http://localhost:5000/pizzas
+   http://localhost:5100/pizzas
     
    Home
-   http://localhost:5000
+   http://localhost:5100
    ```
 
-1. Add the following property to _package.json_ :
+1. Use your app in the browser to fetch data from the mock API. Create, update, and delete pizzas to make sure the changes work. 
 
-   ```json
-   "proxy": "http://localhost:5000",
-   ```
+1. Use <kbd>Ctrl</kbd> + <kbd>C</kbd> to stop the mock server.
 
-   API calls from the frontend will be proxied to `http://localhost:5000`.
+## Prepare code to fetch data from .NET Core API server
 
-1. Save all your changes and start the app:
+Suppose the back-end team has now finished building the server. To use the server, you just need to fetch the code from GitHub and run it and configure CORS as well.
+
+1. The back-end project is in the PizzaStore subdirectory. Right-click on that subdirectory and select **Open in integrated terminal.**.
+
+1. Run `dotnet ef database` to apply the migrations to create a database with tables.
 
    ```bash
-   yarn start
-   ```
-
-   Your app is now pulling data from the mock API!
-
-## Use the server API
-
-Suppose the back-end team has now finished building the server. To use the server, you just need to fetch the code from GitHub and run it. You might need to configure CORS as well.
-
-1. In the terminal with the mock database server, press **Ctrl**+**C** to stop the server.
-1. Navigate to the parent of the _pizza-web_ directory, and then download the back-end project:
-
-   ```bash
-   cd ..
-   git clone https://github.com/MicrosoftDocs/minimal-api-work-with-databases
-   ```
-
-1. Set your location to the _PizzaStore_ subdirectory and run `dotnet ef database` to apply the migrations that will create a database with tables.
-
-   ```bash
-   cd minimal-api-work-with-databases
-   cd PizzaStore
    dotnet ef database update
    ```
 
    > [!NOTE]
    > If the `dotnet ef` can't be found, install it with `dotnet tool install -g dotnet-ef` then repeat the previous command.
 
-1. In the file explorer, browse to the _PizzaStore_ directory, and open _Program.cs_. Add the following code to enable CORS (the code you need to add is highlighted):
+1. In the file explorer, browse to the _PizzaStore_ directory, and open _Program.cs_. Replace with the following code to enable CORS (the CORS-related code is highlighted):
 
-   :::code language="csharp" source="../code/minimal-spa-use-server-api.cs" highlight="6, 23-30, 39":::
+   :::code language="csharp" source="../code/dot-net-server/Program-cs-full.cs" highlight="14-27,38,39":::
 
-   The changes will configure CORS. You'll be able to read and write toward the API, despite the frontend and back end running on different ports.
+   The changes configure CORS. You'll be able to read and write toward the API, despite the front-end app and API running on different ports.
 
-1. Save all your changes, and then start the API in the terminal with `dotnet run`.
+## Prepare proxy to .NET API server URL
 
-   The server runs on port 5059.
-   
-1. Modify the proxy property in _package.json_ so the front-end app uses the correct server port:
+1. In the Visual Studio Code panel, typically found below the editor region, select **Ports**. The **Ports** panel appears.
 
-   ```
-   "proxy": "http://localhost:5059",
-   ```
+1. Find the local address for the API on port 5100. Hover over the address and select the copy icon.
 
-1. In the terminal running the frontend app, stop the app with **Ctrl**+**C**. Restart the frontend with `yarn start`.
+    :::image type="content" source="..//media/visual-studio-code-panel-port-copy.png" alt-text="{alt-text}":::
 
-   Upon loading the app, it displays one item with the title, _Pepperoni_.
+1. Paste this value as the proxy property in the Vite React **vite.config.js** so the front-end app uses the correct server port.
 
-Congratulations, you've created a full stack application! The React frontend is reading data from a backend database via a minimal API.
+## Start the .NET Core API server
+
+1. In the integrated terminal for the **PizzaStore** subfolder, start the .NET Core API in the terminal. The server runs on port 5100.
+
+    ```dotnetcli
+    dotnet run
+    ```
+
+1. In the open browser, use the app, it displays one item with the title, _Pepperoni_. 
+1. When you are done testing the app, leave the browser open and let the front-end React app run in the terminal. You can also let the .NET Core API server run in the terminal. You'll use them again in the next exercise.
+
+Congratulations, you've created a full stack application! The React front-end app is reading data from a back-end database via a minimal API.

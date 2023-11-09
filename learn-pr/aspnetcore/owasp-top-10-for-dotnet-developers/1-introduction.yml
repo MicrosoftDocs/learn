@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.owasp-top-10-for-dotnet-developers.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Overview of OWASP Top 10 in 2021 for .NET Developers. What is OWASP Top 10?"
+  ms.date: 06/12/2023
+  author: obrocki
+  ms.author: dawidobrocki
+  ms.topic: interactive-tutorial
+  ms.custom: devx-track-dotnet
+  ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Verify Azure SQL Database
 durationInMinutes: 10
-azureSandbox: true
+azureSandbox: false
 content: |
   [!include[](includes/4-exercise-verify-database.md)]

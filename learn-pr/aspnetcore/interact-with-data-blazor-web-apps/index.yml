@@ -7,8 +7,10 @@ metadata:
   ms.date: 02/09/2023
   author: csharpfritz
   ms.author: jefritz
+  ms.manager: markl
   ms.topic: interactive-tutorial
-  ms.prod: learning-blazor
+  ms.prod: dotnet-architecture
+  ms.technology: blazor
 title: Interact with data in Blazor web apps
 summary: Design user interface elements for a web app by using Blazor components. You'll also obtain data and display it to the user on dynamic webpages.
 abstract: |
@@ -22,14 +24,13 @@ prerequisites: |
   - Ability to write C# code at a novice level
   - Ability to create a Blazor web application
 iconUrl: /training/achievements/interact-with-data-blazor-web-apps.svg
-levels: 
+levels:
   - intermediate
-roles: 
+roles:
   - developer
   - solution-architect
-products: 
+products:
   - blazor
-  - dotnet-core
   - aspnet
 subjects:
 - development-tools

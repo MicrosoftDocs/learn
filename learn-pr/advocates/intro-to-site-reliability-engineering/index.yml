@@ -3,15 +3,15 @@ uid: learn.intro-to-site-reliability-engineering
 metadata:
   title: Introduction to Site Reliability Engineering (SRE)
   description: Learn about SRE, an engineering discipline that helps you sustainably achieve the appropriate level of reliability in your systems, services, and products.
-  ms.date: 09/26/2018
+  ms.date: 05/15/2023
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-01102020
+  ms.service: site-reliability-engineering 
 title: Introduction to Site Reliability Engineering (SRE)
-summary: Organizations big and small have started to realize just how crucial system and application reliability is to their business. They’ve also learned just how difficult it is to maintain that reliability while iterating at the speed demanded by the marketplace. Site Reliability Engineering (SRE) is a proven approach to this challenge.
+summary: Organizations large and small have started to realize just how crucial system and application reliability is to their business. They have also learned the difficulty of maintaining that reliability while iterating at the speed demanded by the marketplace. Site Reliability Engineering (SRE) is a proven approach to this challenge.
 abstract: |
   In this module you will:
   - Gain a basic understanding of Site Reliability Engineering (SRE)

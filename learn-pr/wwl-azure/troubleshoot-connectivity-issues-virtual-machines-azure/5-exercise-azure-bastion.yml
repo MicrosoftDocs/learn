@@ -4,9 +4,9 @@ title: Exercise – Troubleshoot connectivity issues with Azure Bastion
 metadata:
   title: Exercise – Troubleshoot connectivity issues with Azure Bastion
   description: "Exercise – Troubleshoot connectivity issues with Azure Bastion"
-  ms.date: 07/19/2022
-  author: wwlpublish
-  ms.author: lola
+  ms.date: 04/27/2023
+  author: fabianomira
+  ms.author: famira
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

@@ -4,11 +4,10 @@ title: Choose a model type
 metadata:
   title: Choose a model type
   description: "Choose a model type"
-  ms.date: 09/16/2022
+  ms.date: 10/18/2023
   author: wwlpublish
-  ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

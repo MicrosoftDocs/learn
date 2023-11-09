@@ -3,9 +3,9 @@ When deploying an Azure VM, Contoso IT staff must choose the type of disks that 
 
 |Type of disk|Description|
 |----------------------|------------------------------------------------------------|
-|Operating system disks|Each Azure VM has one operating system disk that contains the operating system drive. The maximum size of this disk is 2 terabytes (TB). On Azure VMs running Windows Server, the disk operating system is labeled as drive C.|
-|Data disks|The maximum number of data disks you can attach to the Azure VM is dependent on the Azure VM size. Disks are a maximum size of 32 TB, unless you're using Ultra SSD storage. On Azure VMs running the Windows operating system, you can assign any available drive letter (starting with F), or mount the disk without assigning a drive letter.|
-|Temporary disks|You can have one temporary disk per Azure VM. The disk size is dependent on the size of the Azure VM. On VMs running Windows Server, these drives are labeled as drive D. These disks provide temporary, non-persistent storage, and by default, host the paging file. The temporary disk resides on the host where the Azure VM runs.|
+|Operating system (OS) disks|Each Azure VM has one OS disk that contains the operating system drive. The maximum size of this disk is 2 terabytes (TB). On Azure VMs running Windows Server, the disk operating system is labeled as drive C. OS disks are managed disks.|
+|Data disks|The maximum number of data disks you can attach to the Azure VM is dependent on the Azure VM size. Disks have a maximum size of 32,767 GiB, unless you're using Ultra Disks or Premium SSD v2, which have a maximum size of 65,536 GiB. On Azure VMs running the Windows operating system, you can assign any available drive letter (starting with F), or mount the disk without assigning a drive letter. Data disks are managed disks.|
+|Temporary disks|Most VMs contain a temporary disk, which isn't a managed disk. The disk size is dependent on the size of the Azure VM. On VMs running Windows Server, these drives are labeled as drive D. These disks provide temporary, non-persistent storage, and by default, host the paging file. The temporary disk resides on the host where the Azure VM runs. Temporary disks are only intended to store data such as page files, swap files, or SQL Server tempdb. Data on the temporary disk may be lost during maintenance events or when the VM is redeployed.|
 
 ## Choose appropriate disk storage
 
@@ -13,41 +13,20 @@ Azure offers two primary tiers of Azure Storage—Standard and Premium—both of
 
 Premium Storage vs. Standard Storage:
 
-- Premium Storage offers superior performance, equivalent to what SSD technology provides.
-- Standard Storage provides performance similar to commodity magnetic disks, referred to typically as *hard disk drives* (HDD).
+- Premium Storage offers superior performance. VMs that support Premium Storage are required to use Ultra Disks, Premium SSD v2, or Premium SSD.
+- Standard Storage provides performance similar to commodity magnetic disks, referred to typically as *hard disk drives* (HDD). Standard Storage includes Standard HDDs and Standard SSDs.
 
 All Azure VM sizes support Standard Storage. A large number of Azure VM sizes also support Premium Storage.
 
 > [!TIP]
 > You can easily distinguish Premium Storage by the letter *S* in the Azure VM size designation.
 
-## Unmanaged and managed disks
+## Choose a disk type
 
-All Azure VM disks reside in Azure Storage accounts. An Azure Storage account is a logical namespace that, depending on its type, is capable of hosting different types of objects, including blobs, tables, queues, and files. When deploying an Azure VM, you must choose the type of disks that will host the operating system disk, and optionally, data disks. You can use unmanaged or managed disk types.
+Azure has five different types of managed disks you can select. It's important that you pick the one that best fits your needs.
 
-![A screenshot of the Create a virtual machine blade. The administrator has selected the Disks tab. The operating system disk type is Premium SSD, and a Data disk is also attached. Disks are managed.](../media/m8-choose-storage.png)
-
-### Unmanaged disks
-
-The use of unmanaged disks involves potentially significant administrative overhead. You must decide how many storage accounts you will create, then create those accounts, then decide how you will distribute .vhd disk files across them. You must also manually implement resiliency provisions by ensuring that when provisioning two or more Azure VMs into the same availability set, their respective storage accounts don't reside in the same storage stamp.
-
-> [!NOTE]
-> A Storage Stamp is a cluster of several racks of storage nodes with each rack built out as a separate fault domain with redundant networking and power supply.
-
-### Managed disks
-
-You can eliminate this administrative overhead by using managed disks. With this approach, the Azure platform controls Azure VM disk files placement and hides the complexity associated with managing Azure Storage accounts. Managed disks include the following benefits:
-
-- Far higher number of disks per subscription
-- Built-in resiliency for disks attached to Azure VMs in the same availability set
-- Support for Azure VMs deployed into availability zones
-- Granular, disk-level Role-Based Access Control (RBAC) permissions
-- Support for server-side and Azure Disk Encryption
-- Support for conversion between Standard and Premium storage tiers
-- Ability to create an Azure VM from a custom image stored in any storage account in the same region and the same subscription
-
-> [!NOTE]
-> With unmanaged disks, you must store Azure VM disks in the same storage account as the image.
-
-> [!CAUTION]
-> Make sure you choose the disk type you want to use at the time of Azure VM deployment. While you can convert Azure VM unmanaged disks to managed disks, this requires stopping and deallocating all VMs in the availability set. In addition, there is no support for converting managed disks to unmanaged disks.
+- **Standard HDD**: This type of storage is spindle disk storage. It might fit well where your application isn't bound by inconsistent latency or lower levels of throughput. A dev/test workload where guaranteed performance isn't required is a great use case for this disk type.
+- **Standard SSD**: This SSD-backed storage has the low latency of an SSD, but with lower levels of throughput. A non-production web server is a good use case for this disk type.
+- **Premium SSD**: This SSD-backed storage is well suited for those workloads that are going into production and require the high reliability, demand consistent low latency, or need high levels of throughput and IOPS. Because these disks have greater performance and reliability capabilities, they're recommended for all production workloads.
+- **Premium SSD v2**: Premium SSD v2 offers higher performance than Premium SSDs while also generally being less costly. You can individually tweak the performance (capacity, throughput, and IOPS) of Premium SSD v2 disks at any time, allowing workloads to be cost efficient while meeting shifting performance needs. For example, a transaction-intensive database may need a large amount of IOPS at a small size, or a gaming application may need a large amount of IOPS but only during peak hours. Because of this, for most general purpose workloads, Premium SSD v2 can provide the best price performance. Premium SSD v2 can't be used as OS disks.
+- **Ultra Disks**: Azure ultra disks are the highest-performing storage option for Azure virtual machines (VMs). You can change the performance parameters of an ultra disk without having to restart your VMs. Ultra disks are suited for data-intensive workloads such as SAP HANA, top-tier databases, and transaction-heavy workloads. Ultra disks must be used as data disks and can only be created as empty disks.

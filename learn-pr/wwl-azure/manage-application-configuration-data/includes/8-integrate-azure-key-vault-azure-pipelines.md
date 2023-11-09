@@ -1,3 +1,4 @@
+
 Applications contain many secrets, such as:
 
  -  Connection strings.

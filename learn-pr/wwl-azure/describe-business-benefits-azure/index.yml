@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.describe-business-benefits-azure
+metadata:
+  title: Describe the business benefits of Azure
+  description: "This module explores various business benefits of Azure, including cost-efficiency, innovation, agility, and security."
+  ms.date: 07/11/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+title: Describe the business benefits of Azure
+summary: This module explores various business benefits of Azure, including cost-efficiency, innovation, agility, and security.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe how your business can be more cost-efficient with Microsoft Azure and cloud economics.
+  - Envision growth and innovation strategies for your company with Azure.
+  - Imagine how Azure can make your workforce more agile and responsive.
+  - Describe how your business’s data and services can be highly secure and reliable with Azure.
+  - Describe how Azure empowers you to monitor your business’s cloud activities for compliance and reporting.
+  - Describe how Azure can ease your business’s regulatory compliance.
+  - Describe how Azure can decrease your business’s carbon footprint.
+prerequisites: |
+  None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- business-owner
+products:
+- azure
+units:
+- learn.wwl.describe-business-benefits-azure.introduction
+- learn.wwl.describe-business-benefits-azure.save-money-cloud-economics
+- learn.wwl.describe-business-benefits-azure.grow-innovate-azure
+- learn.wwl.describe-business-benefits-azure.be-secure-control-cloud
+- learn.wwl.describe-business-benefits-azure.operate-effectively-across-globe
+- learn.wwl.describe-business-benefits-azure.reduce-your-carbon-footprint-azure
+- learn.wwl.describe-business-benefits-azure.knowledge-check
+- learn.wwl.describe-business-benefits-azure.summary
+badge:
+  uid: learn.wwl.describe-business-benefits-azure.badge

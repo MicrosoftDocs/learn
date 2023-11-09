@@ -4,9 +4,9 @@ title: 'Demo: Troubleshoot authentication and access control issues'
 metadata:
   title: 'Demo: Troubleshoot authentication and access control issues'
   description: "Demo: Troubleshoot authentication and access control issues"
-  ms.date: 06/14/2022
-  author: wwlpublish
-  ms.author: lola
+  ms.date: 04/27/2023
+  author: fabianomira
+  ms.author: famira
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

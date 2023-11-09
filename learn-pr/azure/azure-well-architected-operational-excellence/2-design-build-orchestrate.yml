@@ -15,11 +15,11 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Which of the following is a benefit of incorporating CI/CD into your development processes?'
+  - content: 'Which of the following statements describes a benefit of incorporating CI/CD into your development processes?'
     choices:
     - content: 'Decreased confidence when deploying your code to production.'
       isCorrect: false
-      explanation: 'CI/CD will improve your confidence when deploying code to production.'
+      explanation: 'CI/CD improves your confidence when deploying code to production.'
     - content: 'Longer time between validation of developer code.'
       isCorrect: false
       explanation: 'Code is checked in and validated more frequently when using CI/CD.'
@@ -28,9 +28,9 @@ quiz:
       explanation: 'Build processes are fully automated in CI/CD workflows, with automated testing built into your pipeline.'
     - content: 'Earlier identification of code defects.'
       isCorrect: true
-      explanation: 'Your developers will be able to identify and resolve code defects earlier in the development cycle.'
+      explanation: 'Your developers are able to identify and resolve code defects earlier in the development cycle.'
 
-  - content: 'Which of the following is true of microservice architectures?'
+  - content: 'Which of the following statements is true of microservice architectures?'
     choices:
     - content: 'One large development team builds and maintains the entire code base.'
       isCorrect: false
@@ -40,7 +40,7 @@ quiz:
       explanation: 'REST calls are the most common mechanism used for communication.'
     - content: 'All services typically run on the same virtual machine.'
       isCorrect: false
-      explanation: 'Microservices are distributed across hardware and cloud services and are not run on the same virtual machine.'
+      explanation: "Microservices are distributed across hardware and cloud services and aren't run on the same virtual machine."
     - content: 'Microservices require that all services be developed with the same language.'
       isCorrect: false
       explanation: 'Microservices are language-independant, and each development team can select the language that best fits their expertise and service requirements.'

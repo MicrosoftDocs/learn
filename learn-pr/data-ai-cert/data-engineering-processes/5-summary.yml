@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which role works with Azure Cognitive Services, Cognitive Search, and the Bot Framework?"
+  - content: "Which role works with Azure AI services such as Azure Cognitive Search and the Bot Framework?"
     choices:
     - content: "A data engineer"
       isCorrect: false
@@ -27,7 +27,7 @@ quiz:
       explanation: "Data scientists perform advanced analytics to help drive value from data."
     - content: "An AI engineer"
       isCorrect: true
-      explanation: "Correct. Artificial intelligence (AI) engineers work with AI services such as Cognitive Services, Cognitive Search, and the Bot Framework."
+      explanation: "Correct. Artificial intelligence (AI) engineers work with Azure AI services such as Azure Cognitive Search and the Bot Framework."
   - content: "Which Microsoft Intelligent Data Platform is commonly used to process data in an ELT framework?"
     choices:
     - content: "Azure Data Factory"

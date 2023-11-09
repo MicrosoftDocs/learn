@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.export-search-results
+title: Export the search results and search report
+metadata:
+  title: Export the search results and search report
+  description: "Export the content search results."
+  ms.date: 05/25/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-export-search-results.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You're in the process of downloading search results, and you want to optimize the download experience so that it doesn't adversely affect network traffic. Which of the following guidelines should you follow to achieve this goal?"
+    choices:
+    - content: "Disable anti-virus scanning for the folder that you download the search result to"
+      isCorrect: true
+      explanation: "Correct. Disabling anti-virus scanning on the folder to which you're downloading search results helps to optimize the download process."
+    - content: "Download search results to the same folder for concurrent download jobs"
+      isCorrect: false
+      explanation: "Incorrect. When downloading search results for concurrent download jobs, you should download the results to different folders."
+    - content: "Download search results to a mapped network drive"
+      isCorrect: false
+      explanation: "Incorrect. Downloading search results to a mapped network drive can have an adverse effect on network traffic."

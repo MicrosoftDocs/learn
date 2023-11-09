@@ -3,11 +3,11 @@ uid: learn.azure-well-architected-cost-optimization
 metadata:
   title: Microsoft Azure Well-Architected Framework - Cost optimization
   description: Identify cost optimization opportunities to maximize cloud efficiency and visibility with the Microsoft Azure Well-Architected Framework.
-  ms.date: 03/01/2023
+  ms.date: 05/28/2023
   author: martinekuan
   ms.author: martinek
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: waf
 title: Microsoft Azure Well-Architected Framework - Cost optimization
 summary: Identify cost optimization opportunities to maximize cloud efficiency and visibility with the Microsoft Azure Well-Architected Framework.
 abstract:  | 

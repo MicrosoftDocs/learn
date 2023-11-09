@@ -9,6 +9,8 @@ metadata:
   author: codemillmatt  
   ms.author: masoucou  
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-languages
 durationInMinutes: 5 
 content: |

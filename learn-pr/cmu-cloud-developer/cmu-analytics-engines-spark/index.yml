@@ -7,8 +7,9 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.service: synapse-analytics
+  ms.subservice: spark
 title: 'Distributed computing on the cloud: Spark'
 summary: Spark is an open-source cluster-computing framework with different strengths than MapReduce has. Learn about how Spark works.
 abstract: | 

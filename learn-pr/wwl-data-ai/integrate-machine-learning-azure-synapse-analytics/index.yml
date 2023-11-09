@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: synapse-analytics
+  ms.subservice: machine-learning 
 title: Integrate machine learning within Azure Synapse Analytics
 summary: In this module, you will learn how you can build machine learning modules from within Azure Synapse Analytics.
 abstract: |

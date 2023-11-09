@@ -1,3 +1,5 @@
+
+
 Azure Storage offers four data services that can be accessed by using an Azure storage account:
 
 - **Azure Blob Storage (containers)**: A massively scalable object store for text and binary data.
@@ -6,7 +8,7 @@ Azure Storage offers four data services that can be accessed by using an Azure s
 
 - **Azure Queue Storage**: A messaging store for reliable messaging between application components.
 
-- **Azure Table Storage**: A NoSQL store for schemaless storage of structured data or _relational_ data.
+- **Azure Table Storage**: A service that stores non-relational structured data (also known as structured NoSQL data).
 
 Let's examine the details of these services.
 
@@ -45,7 +47,7 @@ Consider a scenario where you want your customers to be able to upload pictures,
 
 ### Azure Table Storage (Azure Cosmos DB)
 
-Azure Table Storage is now part of Azure Cosmos DB, which is a fully managed NoSQL database service for modern app development. As a fully managed service, Azure Cosmos DB takes database administration off your hands with automatic management, updates, and patching. It also handles capacity management with cost-effective serverless and automatic scaling options that respond to application needs to match capacity with demand.
+Azure Table Storage is a fully managed NoSQL database service for modern app development. As a fully managed service, Azure Cosmos DB takes database administration off your hands with automatic management, updates, and patching. It also handles capacity management with cost-effective serverless and automatic scaling options that respond to application needs to match capacity with demand.
 
 In addition to the existing Azure Table Storage service, there's a new Azure Cosmos DB Table API offering that provides throughput-optimized tables, global distribution, and automatic secondary indexes. 
 

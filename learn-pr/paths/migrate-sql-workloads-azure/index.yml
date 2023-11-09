@@ -1,22 +1,22 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.migrate-sql-workloads-to-azure
 metadata:
-  title: Migrate SQL workloads to Azure
-  description: Migrate SQL workloads to Azure
+  title: Migrate SQL Server workloads to Azure SQL
+  description: Migrate SQL Server workloads to Azure SQL
   ms.date: 01/18/2021
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Migrate SQL workloads to Azure
+title: Migrate SQL Server workloads to Azure SQL
 prerequisites: |
   The following prerequisites should be completed:
-  * Understand SQL Server Database file administration
-  * Successfully log in to the Azure portal
+  * Experience in administering SQL Server databases
+  * Knowledge of SQL Server editions and versions
   * Understand the Azure storage options
   * Understand the Azure compute options
 summary: |
-  The objective of this learning path is to educate the learner how they can migrate SQL Server workloads to SQL Services that exist on Azure.
+  The objective of this learning path is to educate the learner how they can migrate SQL Server workloads to Azure SQL offerings.
 iconUrl: /training/achievements/migrate-sql-workloads-to-azure.svg
 levels:
 - intermediate
@@ -36,7 +36,7 @@ subjects:
 - cloud-computing
 modules:
 - learn.wwl.introduction-data-platform-modernization
-- learn-sqlserver.assess-convert-sql-server-databases-using-dma
+- learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql
 - learn-sqlserver.test-optimize-sql-server-databases-using-dea
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines
 - learn-wwl.migrate-sql-workloads-azure-sql-databases

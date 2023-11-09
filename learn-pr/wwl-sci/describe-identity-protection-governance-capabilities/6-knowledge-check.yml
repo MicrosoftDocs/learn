@@ -4,33 +4,33 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/07/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Your organization has implemented important changes in their customer facing web-based applications.  You want to ensure that any user who wishes to access these applications agrees to the legal disclaimers. Which Azure AD feature should you implement?"
+  - content: "Your organization has implemented important changes in their customer facing web-based applications.  You want to ensure that any user who wishes to access these applications agrees to the legal disclaimers. Which Microsoft Entra feature should you implement?"
     choices:
     - content: "Entitlement management."
       isCorrect: false
       explanation: "Incorrect. Entitlement management automates access request workflows, access assignments, reviews, and expiration but does not address the business requirement for users to agree to terms of use."
-    - content: "Azure AD Terms of Use."
+    - content: "Microsoft Entra Terms of Use."
       isCorrect: true
-      explanation: "Correct. Azure AD Terms of Use presents information to users before they access data and can be configured to require users to accept the terms of use."
+      explanation: "Correct. Microsoft Entra Terms of Use presents information to users before they access data and can be configured to require users to accept the terms of use."
     - content: "Identity Protection."
       isCorrect: false
       explanation: "Incorrect. Identity Protection is a tool that allows organizations to utilize security signals to identify potential threats."
   - content: "An organization is project-oriented with employees often working on more than one project at a time. Which solution is best suited to managing user access to this organization’s resources?"
     choices:
-    - content: "Azure Terms of Use."
+    - content: "Microsoft Entra Terms of Use."
       isCorrect: false
-      explanation: "Incorrect. Azure AD Terms of Use presents information to users before they access data but doesn't manage access rights."
+      explanation: "Incorrect. Microsoft Entra Terms of Use presents information to users before they access data but doesn't manage access rights."
     - content: "Identity Protection."
       isCorrect: false
       explanation: "Incorrect. Identity Protection is a tool that allows organizations to utilize security signals to identify potential threats."
@@ -48,7 +48,7 @@ quiz:
     - content: "Identity Protection."
       isCorrect: false
       explanation: "Incorrect. Identity Protection allows you to detect identity-based risk but doesn't mitigate the risk of inappropriate privileges being assigned to users who have left the organization."
-  - content: "Your IT organization recently discovered that several user accounts in the finance department have been compromised. The CTO has asked for a solution to reduce the impact of compromised user accounts. The IT admin team is looking into Azure AD features. Which one should they recommend?"
+  - content: "Your IT organization recently discovered that several user accounts in the finance department have been compromised. The CTO has asked for a solution to reduce the impact of compromised user accounts. The IT admin team is looking into Microsoft Entra features. Which one should they recommend?"
     choices:
     - content: "Identity Protection."
       isCorrect: true
@@ -59,3 +59,14 @@ quiz:
     - content: "Entitlement management."
       isCorrect: false
       explanation: "Incorrect. Entitlement management is an Azure tool that automates access to the applications and data needed for someone to be productive in a particular project or role."
+  - content: "Your IT organization is looking for a solution that provides comprehensive visibility and control over permissions for any identity and any resource in their multi-vendor cloud environment. Which Microsoft solution is best suited to address these needs?"
+    choices:
+    - content: "Identity Protection."
+      isCorrect: false
+      explanation: "Incorrect. Identity Protection is a tool that allows organizations to utilize security signals to identify potential threats."
+    - content: "Privileged Identity Management."
+      isCorrect: false
+      explanation: "Incorrect. PIM provides just-in-time access for admin roles in Azure and Microsoft Online Services and apps that use groups. Permissions Management allows multicloud discovery, remediation, and monitoring of privileged access across Azure, AWS, and GCP."
+    - content: "Permissions Management."
+      isCorrect: true
+      explanation: "Correct. Permissions Management allows multicloud discovery, remediation, and monitoring of privileged access across Azure, AWS, and GCP."

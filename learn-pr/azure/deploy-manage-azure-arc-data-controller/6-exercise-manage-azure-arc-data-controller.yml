@@ -8,6 +8,8 @@ metadata:
   author: tchristiani
   ms.author: terrychr
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 10
 content: |

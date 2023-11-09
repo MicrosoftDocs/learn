@@ -2,26 +2,27 @@
 uid: learn.azdo.deploy-kubernetes
 metadata:
   title: Automate multi-container Kubernetes deployments with Azure Pipelines
-  description: Implement a CI/CD pipeline for multiple containers to Kubernetes.
-  ms.date: 08/09/2022
+  description: Deploy multiple containers to AKS cluster with Azure Pipelines.
+  ms.date: 04/19/2023
   author: ramiMSFT
   ms.author: rabououn
   ms.custom: devdivchpfy22
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: Azure Pipelines
+  manager: mijacobs
 title: Automate multi-container Kubernetes deployments with Azure Pipelines
-summary: Implement a CI/CD pipeline for multiple containers to Kubernetes.
+summary: Deploy multiple containers to AKS cluster with Azure Pipelines.
 abstract: |
   After completing this module, you'll be able to:
-  - Explain the benefits of Kubernetes and when to use it
-  - Create Azure resources to support a Kubernetes cluster
-  - Update a basic release pipeline to build, publish, and deploy multiple Docker containers to the Kubernetes cluster
-  - Monitor the build, release, and deployment of your project
+  - Explain the benefits of Kubernetes and when to use it.
+  - Create Azure resources to support a Kubernetes cluster.
+  - Update a basic release pipeline to build, publish, and deploy multiple Docker containers to the Kubernetes cluster.
+  - Monitor the build and deployment of your project.
 prerequisites: |
   - An Azure DevOps organization with access to **Microsoft-hosted** parallel jobs. [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
-  - An Azure subscription
-  - An Azure DevOps organization
-  - A GitHub account
+  - An Azure subscription.
+  - An Azure DevOps organization.
+  - A GitHub account.
 iconUrl: /training/achievements/azure-devops/deploy-kubernetes.svg
 levels:
 - beginner

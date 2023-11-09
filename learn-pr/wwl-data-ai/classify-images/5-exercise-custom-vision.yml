@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.classify-images.exercise-custom-vision
-title: Exercise - Classify images with custom vision
+title: Exercise - Classify images with Azure AI Custom Vision
 metadata:
-  title: Exercise - Classify images with custom vision
-  description: "Exercise - Classify images with custom vision"
+  title: Exercise - Classify images with Azure AI Custom Vision
+  description: "Exercise - Classify images with Azure AI Custom Vision"
   ms.date: 08/20/2021
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labId: 100992
 labModal: true

@@ -1,4 +1,3 @@
-
 Data sets have unique lifecycles. Early in the lifecycle, people access some data often. But the need for access drops drastically as the data ages. Some data stays idle in the cloud and is rarely accessed once stored. Some data expires days or months after creation, while other data sets are actively read and modified throughout their lifetimes.
 
 ## Access tiers
@@ -6,7 +5,8 @@ Data sets have unique lifecycles. Early in the lifecycle, people access some dat
 Azure storage offers different access tiers, allowing you to store blob object data in the most cost-effective manner. Available access tiers include:
 
 * **Hot** - Optimized for storing data that is accessed frequently.
-* **Cool** - Optimized for storing data that is infrequently accessed and stored for at least 30 days.
+* **Cool** - Optimized for storing data that is infrequently accessed and stored for a minimum of 30 days.
+* **Cold tier** - Optimized for storing data that is infrequently accessed and stored for a minimum of 90 days. The cold tier has lower storage costs and higher access costs compared to the cool tier.
 * **Archive** - Optimized for storing data that is rarely accessed and stored for at least 180 days with flexible latency requirements, on the order of hours.
 
 The following considerations apply to the different access tiers:

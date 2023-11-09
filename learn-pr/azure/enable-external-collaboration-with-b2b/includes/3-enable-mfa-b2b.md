@@ -3,7 +3,7 @@ It's important for your organization to secure your health records application a
 
 ## Adding protection through multi-factor authentication
 
-Multi-factor authentication adds an extra layer of security to your application. You can enforce multi-factor authentication by adding a new Conditional Access policy to your application's Azure AD settings in the portal. Then you can select the users that should be affected by the policy (in this case, guests and external users). Then, even if a B2B collaboration user authenticates through their identity provider, they'll still need to meet another authentication challenge before they can access your application.
+Multi-factor authentication adds an extra layer of security to your application. You can enforce multi-factor authentication by adding a new Conditional Access policy to your application's Microsoft Entra settings in the portal. Then you can select the users that should be affected by the policy (in this case, guests and external users). Then, even if a B2B collaboration user authenticates through their identity provider, they'll still need to meet another authentication challenge before they can access your application.
 
 Multi-factor authentication asks the user to complete challenges that can be put into three general categories:
 

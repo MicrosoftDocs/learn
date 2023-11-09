@@ -3,11 +3,10 @@ uid: learn.wwl.design-migrations
 metadata:
   title: Design migrations
   description: "Azure Architects design and recommend migration solutions."
-  ms.date: 02/16/2023
+  ms.date: 06/20/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Design migrations
 summary: Azure Architects design and recommend migration solutions.
 abstract: |

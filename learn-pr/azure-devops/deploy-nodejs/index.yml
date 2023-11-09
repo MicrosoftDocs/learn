@@ -3,19 +3,20 @@ uid: learn.azdo.deploy-nodejs
 metadata:
   title: Guided project - Automate Node.js deployments with Azure Pipelines
   description: Implement CI/CD pipeline for Node.js applications. Automate deployment of Vue, React, Angular or Webpack apps with Azure Pipelines.
-  ms.date: 11/10/2022
+  ms.date: 06/29/2023
   author: juliakm
   ms.author: jukullam
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: devdivchpfy22, engagement-fy23
+  ms.service: azure-devops-pipelines
+  manager: mijacobs
 title: Guided project - Automate Node.js deployments with Azure Pipelines
 summary: Implement CI/CD pipeline for Node.js applications.
 abstract: |
-  In this module, you'll practice how to:
+  In this module, you practice how to:
   - Fork a GitHub repo.
   - Create an App Service environment.
-  - Create an Azure DevOps pipeline that builds and deploys a basic Node.js application to Azure App Service.
+  - Create an Azure Pipeline that builds and deploys a basic Node.js application to Azure App Service.
 prerequisites: |
   - An Azure subscription
   - An Azure DevOps organization with access to **Microsoft-hosted** parallel jobs. [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).

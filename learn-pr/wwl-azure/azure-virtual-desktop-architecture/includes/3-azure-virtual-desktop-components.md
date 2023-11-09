@@ -7,7 +7,7 @@ Azure Virtual Desktop service architecture is similar to Windows Server Remote D
 
 Microsoft manages the following Azure Virtual Desktop services as part of Azure:
 
- -  **Web Access**: The Web Access service within Window Virtual Desktop lets users access virtual desktops and remote apps through an HTML5-compatible web browser as they would with a local PC, from anywhere on any device. You can secure Web Access using multifactor authentication in Azure Active Directory.
+ -  **Web Access**: The Web Access service within Window Virtual Desktop lets users access virtual desktops and remote apps through an HTML5-compatible web browser as they would with a local PC, from anywhere on any device. You can secure Web Access using multifactor authentication in Microsoft Entra ID.
  -  **Gateway**: The Remote Connection Gateway service connects remote users to Azure Virtual Desktop apps and desktops from any internet-connected device that can run an Azure Virtual Desktop client. The client connects to a gateway, which then orchestrates a connection from a VM back to the same gateway.
  -  **Connection Broker**: The Connection Broker service manages user connections to virtual desktops and remote apps. The Connection Broker provides load balancing and reconnection to existing sessions.
  -  **Diagnostics**: Remote Desktop Diagnostics is an event-based aggregator that marks each user or administrator action on the Azure Virtual Desktop deployment as a success or failure. Administrators can query the event aggregation to identify failing components.
@@ -22,11 +22,10 @@ Customers manage these components of Azure Virtual Desktop solutions:
 :::image type="content" source="../media/virtual-network-connection-10929655.png" alt-text="Diagram of a VNET connection from datacenter to Azure.":::
 
 
- -  **Azure AD**: Azure Virtual Desktop uses Azure AD for identity and access management. Azure AD integration applies Azure AD security features like conditional access, multifactor authentication, and the Intelligent Security Graph, and helps maintain app compatibility in domain-joined VMs.
- -  **AD DS**: Azure Virtual Desktop VMs must domain-join an AD DS service, and the AD DS must be in sync with Azure AD to associate users between the two services. You can use Azure AD Connect to associate AD DS with Azure AD.
+ -  **Microsoft Entra ID**: Azure Virtual Desktop uses Microsoft Entra ID for identity and access management. Microsoft Entra integration applies Microsoft Entra security features like conditional access, multifactor authentication, and the Intelligent Security Graph, and helps maintain app compatibility in domain-joined VMs.
+ -  **AD DS**: Azure Virtual Desktop VMs must domain-join an AD DS service. You can use Microsoft Entra Connect to associate AD DS with Microsoft Entra ID.
  -  **Azure Virtual Desktop session hosts**: A host pool can run the following operating systems:
-     -  Windows 7 Enterprise
-     -  Windows 10 Enterprise
+     -  Windows 10 Enterprise and Windows 11 Enterprise
      -  Windows 10 Enterprise Multi-session
      -  Windows Server 2012 R2 and above
      -  Custom Windows system images with pre-loaded apps, group policies, or other customizations

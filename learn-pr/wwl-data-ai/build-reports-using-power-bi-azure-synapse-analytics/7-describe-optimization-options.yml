@@ -4,12 +4,13 @@ title: Describe Power BI optimization options
 metadata:
   title: Describe Power BI optimization options
   description: "Describe Power BI optimization options"
-  ms.date: 03/30/2021
+  ms.date: 05/16/2023
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/7-describe-optimization-options.md)]

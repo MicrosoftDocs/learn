@@ -51,7 +51,7 @@ Often, you'll need to refer to resources in a different resource group. For exam
 
 Notice that the `scope` uses the `resourceGroup()` keyword to refer to the resource group that contains the virtual network.
 
-You can even refer to resources within a different Azure subscription, as long as the subscription is within your Azure Active Directory tenant. If your networking team had provisioned the virtual network in a different subscription, the template could refer to it like this:
+You can even refer to resources within a different Azure subscription, as long as the subscription is within your Microsoft Entra tenant. If your networking team had provisioned the virtual network in a different subscription, the template could refer to it like this:
 
 :::code language="bicep" source="code/6-subscription-scope.bicep" highlight="2":::
 

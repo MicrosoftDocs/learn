@@ -24,7 +24,6 @@ roles:
 products:
 - microsoft-purview
 - m365
-- m365-information-protection
 subjects:
 - information-protection-governance
 modules:

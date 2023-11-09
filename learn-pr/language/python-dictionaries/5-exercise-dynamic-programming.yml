@@ -5,12 +5,14 @@ metadata:
   unitType: exercise
   title: Exercise - Dynamic programming with dictionaries 
   description: In this exercise, you use keys and values to perform calculations on the data inside a dictionary.
-  ms.date: 12/08/2021
+  ms.date: 06/05/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-language
-durationInMinutes: 1
+durationInMinutes: 5
 sandbox: true
 notebook: notebooks/5-exercise-dynamic-programming.ipynb

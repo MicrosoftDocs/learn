@@ -7,7 +7,6 @@ metadata:
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Work with the Django admin site
 summary: Probably the most popular feature of the Python framework Django is its built-in admin site, which allows internal users to manage data without having to create a special utility. We'll explore how to configure users to use this site and how to set up the site itself.

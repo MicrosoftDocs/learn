@@ -41,9 +41,6 @@ Next, Tim adds **Http Request Defaults** and an **Http Request** sampler to the 
 
 :::image type="content" source="../media/4-apache-jmeter-http-request.png" alt-text="Screen shot that shows specifying the HTTP request in Apache JMeter.":::
 
-> [!TIP]
-> For reference, Microsoft hosts a version of the [Space Game website](http://tailspin-spacegame-web.azurewebsites.net?azure-portal=true). Go there if you want to follow along with Tim's load tests.
-
 **Tim:** This is a pretty basic test plan. We can explore many other options later. I think 100 requests is a good start to get meaningful results.
 
 ### Run the test plan
@@ -64,13 +61,13 @@ JMeter runs and produces the report file, *Results.xml*. This  example of the fi
 <?xml version="1.0" encoding="UTF-8"?>
 <testResults version="1.2">
 <httpSample t="180" it="0" lt="95" ct="35" ts="1569306009772" s="true" lb="HTTP Request" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="40871" sby="144" ng="1" na="1">
-  <java.net.URL>http://tailspin-spacegame-web.azurewebsites.net/</java.net.URL>
+  <java.net.URL>http://tailspin-space-game-web-staging-1234.azurewebsites.net/</java.net.URL>
 </httpSample>
 <httpSample t="174" it="0" lt="96" ct="38" ts="1569306009955" s="true" lb="HTTP Request" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="40869" sby="144" ng="1" na="1">
-  <java.net.URL>http://tailspin-spacegame-web.azurewebsites.net/</java.net.URL>
+  <java.net.URL>http://tailspin-space-game-web-staging-1234.azurewebsites.net/</java.net.URL>
 </httpSample>
 <httpSample t="160" it="0" lt="121" ct="35" ts="1569306010131" s="true" lb="HTTP Request" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="40879" sby="144" ng="2" na="2">
-  <java.net.URL>http://tailspin-spacegame-web.azurewebsites.net/</java.net.URL>
+  <java.net.URL>http://tailspin-space-game-web-staging-1234.azurewebsites.net/</java.net.URL>
 </httpSample>
 ```
 

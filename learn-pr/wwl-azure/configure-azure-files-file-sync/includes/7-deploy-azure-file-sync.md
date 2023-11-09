@@ -1,3 +1,4 @@
+
 Before you can start synchronizing files with Azure File Sync, there are several high-level steps that need to be completed.
 
 :::image type="content" source="../media/file-sync-steps-b6fa9fd9.png" alt-text="Flowchart that shows the steps to complete before you start synchronizing files with Azure File Sync." border="false":::

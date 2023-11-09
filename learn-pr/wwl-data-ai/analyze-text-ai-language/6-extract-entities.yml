@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-text-ai-language.extract-entitites
+title: Extract entities
+metadata:
+  title: Extract entities
+  description: "Extract entities"
+  ms.date: 08/31/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure-ai-language
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-extract-entities.md)]

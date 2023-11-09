@@ -3,53 +3,18 @@ Azure role-based access control (RBAC) has several Azure built-in roles that you
 
 The four general built-in roles are:
 
-:::row:::
-  :::column:::
-    **Built-in Role**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Contributor**
-  :::column-end:::
-  :::column:::
-    Grants full access to manage all resources, but does not allow you to assign roles in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Owner**
-  :::column-end:::
-  :::column:::
-    Grants full access to manage all resources, including the ability to assign roles in Azure RBAC.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Reader**
-  :::column-end:::
-  :::column:::
-    View all resources, but does not allow you to make any changes.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **User Access Administrator**
-  :::column-end:::
-  :::column:::
-    Lets you manage user access to Azure resources.
-  :::column-end:::
-:::row-end:::
-
+| **Built-in Role**             | **Description**                                                                                                                                                     |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Contributor**               | Grants full access to manage all resources, but does not allow you to assign roles in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries. |
+| **Owner**                     | Grants full access to manage all resources, including the ability to assign roles in Azure RBAC.                                                                    |
+| **Reader**                    | View all resources, but does not allow you to make any changes.                                                                                                     |
+| **User Access Administrator** | Lets you manage user access to Azure resources.                                                                                                                     |
 
 ## Custom roles for Azure resources
 
 If the built-in roles for Azure resources don't meet the specific needs of your organization, you can create your own custom roles. Just like built-in roles, you can assign custom roles to users, groups, and service principals at management group, subscription, and resource group scopes.
 
-Custom roles can be shared between subscriptions that trust the same Azure AD directory. There is a limit of 5,000 custom roles per directory. (For Azure Germany and Azure China 21Vianet, the limit is 2,000 custom roles.) Custom roles can be created using the Azure portal, Azure PowerShell, Azure CLI, or the REST API.
+Custom roles can be shared between subscriptions that trust the same Microsoft Entra directory. There is a limit of 5,000 custom roles per directory. (For Azure Germany and Azure China 21Vianet, the limit is 2,000 custom roles.) Custom roles can be created using the Azure portal, Azure PowerShell, Azure CLI, or the REST API.
 
 ## Custom role limits
 

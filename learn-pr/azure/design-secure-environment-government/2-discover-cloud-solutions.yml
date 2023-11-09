@@ -5,8 +5,8 @@ metadata:
   title: Discover cloud solutions with Azure
   description: Discussion of the challenges and opportunities of implementing cloud services for public agencies.
   ms.date: 02/08/2021
-  author: Adriamen
-  ms.author: micrum
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

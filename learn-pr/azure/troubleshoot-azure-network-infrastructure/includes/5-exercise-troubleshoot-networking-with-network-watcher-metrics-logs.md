@@ -87,13 +87,13 @@ To set up flow logs, you must configure the NSG to connect to the storage accoun
     | --- | --- |
     | **Project details**  |
     | Subscription | Select your subscription from the dropdown list. |
-    | + Select NSG| On the **Select network security group** pane, search for and select MyNsg and **Confirm selection**. |
+    | + Select Resource| On the **Select network security group** pane, search for and select MyNsg and **Confirm selection**. |
     | **Instance details**  |
     | Subscription | Select your subscription from the dropdown list. |
     | Storage Accounts | Select your unique storage account name.  |
     | Retention (days) | 1 |
 
-1. Select **Next: Configuration**, then select or enter the following values.
+1. Select **Next: Analytics**, then select or enter the following values.
 
     | Setting | Value |
     | --- | --- |

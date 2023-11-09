@@ -5,10 +5,12 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 04/10/2023
+  ms.date: 06/29/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-bicep
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |

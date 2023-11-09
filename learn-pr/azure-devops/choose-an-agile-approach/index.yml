@@ -3,21 +3,21 @@ uid: learn.azdo.choose-an-agile-approach
 metadata:
   title: Choose an Agile approach to software development
   description: Learn with the Space Game web team how to use Azure Boards to implement Agile software practices along with DevOps transparency and collaboration.
-  ms.date: 06/17/2022
+  ms.date: 10/11/2023
   ms.custom: devdivchpfy22
   author: chcomley
   ms.author: chcomley
-  ms.topic: interactive-tutorial
-  #ms.learn-contact: thpetche
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure-devops
+  manager: mijacobs
 title: Choose an Agile approach to software development
 summary: Learn to foster the DevOps values of transparency and team cooperation with Azure Boards.
 abstract: |
   After completing this module, you'll be able to:
-  - Define the term Agile
-  - Begin to make recommendations for incorporating Agile practices into your organization
-  - Create a project in Azure DevOps
-  - Add work items to Azure Boards by using the Basic process
+  - Define the term Agile.
+  - Begin to make recommendations for incorporating Agile practices into your organization.
+  - Create a project in Azure DevOps.
+  - Add work items to Azure Boards by using the Basic process.
 prerequisites: An Azure DevOps organization
 iconUrl: /training/achievements/azure-devops/choose-an-agile-approach-to-software-development.svg
 ratingEnabled: true

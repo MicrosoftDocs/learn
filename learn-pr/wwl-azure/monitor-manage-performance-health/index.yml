@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Monitor and manage performance and health
 summary: For Azure Virtual Desktop issues, check Azure Advisor first. Azure Advisor will give you directions for how to solve the problem, or at least point you towards a resource that can help.
 abstract: |

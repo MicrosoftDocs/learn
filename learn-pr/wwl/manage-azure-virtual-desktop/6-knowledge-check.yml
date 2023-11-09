@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/05/2023
+  ms.date: 05/12/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
@@ -26,14 +26,14 @@ quiz:
     - content: "Remote desktop services (RDS)"
       isCorrect: false
       explanation: "Incorrect - Remote desktop services (RDS) is a feature that allows users to connect to a virtual desktop from a remote location."
-  - content: "Which of the following is a unique remote action for Cloud PCs?"
+  - content: "Which Azure Virtual Desktop component is responsible for managing user connections to virtual machines and providing secure access to remote desktops over the internet?"
     choices:
-    - content: "Restart"
-      isCorrect: false
-      explanation: "Incorrect. This is a common action for both Cloud PCs and Windows Virtual Desktop. Try again."
-    - content: "Sync"
-      isCorrect: false
-      explanation: "Incorrect. This is a common action for both Cloud PCs and Windows Virtual Desktop. Try again."
-    - content: "Reprovisioning"
+    - content: "Azure Virtual Desktop Gateway"
       isCorrect: true
-      explanation: "Correct. Reprovisioning is a unique action for Cloud PCs."
+      explanation: "Correct - The Azure Virtual Desktop Gateway manages user connections to virtual machines and provides secure access to remote desktops over the internet."
+    - content: "FSLogix"
+      isCorrect: false
+      explanation: "Incorrect - FSLogix provides user profile storage and management for Azure Virtual Desktop."
+    - content: "Azure Virtual Desktop Broker"
+      isCorrect: false
+      explanation: "Incorrect - The Azure Virtual Desktop Broker manages the creation, allocation, and deletion of virtual machines for Azure Virtual Desktop."

@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-introduction-products.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is part of the "Introduction to GitHub's products" module.
+  ms.date: 08/21/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: training-unit
+durationInMinutes: 4
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What's the difference between GitHub organization accounts and GitHub personal/user accounts?"
+    choices:
+    - content: "Organizational accounts are shared accounts, while personal/user accounts are for individuals"
+      isCorrect: true
+      explanation: "Correct. Organizations are shared accounts where an unlimited number of people can collaborate across many projects at once. Unlike personal/user accounts, permissions with organization accounts are done at a tiered approach."
+    - content: "You pay more for organization accounts versus personal/user accounts"
+      isCorrect: false
+      explanation: "Incorrect. Depending on your plan, organization and personal accounts can both be free or have similar costs."
+    - content: "They're exactly the same"
+      isCorrect: false
+      explanation: "Incorrect. Organizations are shared accounts where an unlimited number of people can collaborate across many projects at once. Organization accounts are done at a tiered approach and personal/user accounts have more straightforward permission control."
+    - content: "Personal/user accounts have more access than organization accounts"
+      isCorrect: false
+      explanation: "Incorrect. Organizations are shared accounts where an unlimited number of people can collaborate across many projects at once."
+  - content: "What's the best reason to decide to upgrade to the GitHub Enterprise product?"
+    choices:
+    - content: "Because you want to use GitHub Actions and Codespaces"
+      isCorrect: false
+      explanation: "Incorrect. You don't need to license GitHub Enterprise to use GitHub Actions or Codespaces."
+    - content: "Because your VP needs to use GitHub Insights"
+      isCorrect: false
+      explanation: "Incorrect. GitHub Insights is available with the GitHub One product, not the GitHub Enterprise product."
+    - content: "Because you want to centrally manage users and repositories across multiple organizations"
+      isCorrect: true
+      explanation: "Correct. GitHub Enterprise allows you to collect multiple organizations together for central management."
+    - content: "Because you want to use the team pull request reviewers feature."
+      isCorrect: false
+      explanation: "Incorrect. The team pull request reviewers feature is available at the GitHub Pro and GitHub Team product level."
+  - content: "What's the purpose of a team?"
+    choices:
+    - content: "A team allows you to manage an organization account"
+      isCorrect: false
+      explanation: "Incorrect. A team doesn't allow you to manage an organization account."
+    - content: "A team allows you to control permission levels for an enterprise"
+      isCorrect: false
+      explanation: "Incorrect. A team doesn't allow you to control permission levels for an enterprise."
+    - content: "A team allows a single user to sign in using different accounts credentials"
+      isCorrect: false
+      explanation: "Incorrect. A team doesn't allow a single user to sign in using different accounts credentials."
+    - content: "A team is intended to reflect a company or group's structure. It's used to provide cascading access permissions and make it easy to notify all team members via mentions"
+      isCorrect: true
+      explanation: "Correct."
+  - content: "What's a function you can execute on GitHub Mobile?"
+    choices:
+    - content: "Check out branches with pull requests and view CI statuses"
+      isCorrect: false
+      explanation: "Incorrect. You can't do this on GitHub Mobile, but you can on GitHub Desktop."
+    - content: "Compare changed images"
+      isCorrect: false
+      explanation: "Incorrect. You can't do this on GitHub Mobile, but you can on GitHub Desktop."
+    - content: "Add and clone repositories"
+      isCorrect: false
+      explanation: "Incorrect. You can't do this on GitHub Mobile, but you can on GitHub Desktop."
+    - content: "Manage, triage, and clear notifications from github.com"
+      isCorrect: true
+      explanation: "Correct. On GitHub Mobile you can manage, triage, and clear notifications from github.com."
+
+

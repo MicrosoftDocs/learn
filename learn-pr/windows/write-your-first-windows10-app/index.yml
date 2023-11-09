@@ -1,22 +1,23 @@
 ### YamlMime:Module
 uid: learn-windows.writing-windows-10-apps
 metadata:
-  title: Write your first Windows 10 application
-  description: Learn how to create apps in the most popular Windows development frameworks - UWP, WPF, and Windows Forms.
-  ms.date: 12/10/2018
-  author: PeterTurcan
-  ms.author: v-pettur
+  title: Write your first Windows application
+  description: Learn how to create apps in some of the most popular Windows development frameworks - UWP, WPF, and Windows Forms.
+  ms.date: 05/18/2023
+  author: alvinashcraft
+  ms.author: aashcraft
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows
-title: Write your first Windows 10 application
-summary: Learn how to create apps in the most popular Windows development frameworks - UWP, WPF, and Windows Forms.
+  ms.prod: w10
+  manager: jken
+title: Write your first Windows application
+summary: Learn how to create apps in some of the most popular Windows development frameworks - UWP, WPF, and Windows Forms.
 abstract: |
   In this module, you will:
   - Learn how to write the same app on multiple Windows platforms.
 iconUrl: /training/achievements/write-your-first-windows10-app.svg
 prerequisites: |
- - A computer running the current release of Windows 10. To verify that you're running the latest version, go to Settings > Windows Update.
- - [Visual Studio 2017](/visualstudio/productinfo/vs2017-system-requirements-vs) installed on that computer.
+ - A computer running a supported release of Windows. To verify that you're running the latest version, go to Settings > Windows Update.
+ - [Visual Studio 2022](/visualstudio/releases/2022/system-requirements) installed on the computer.
  - Knowledge of C# or similar programming language.
 levels:
 - beginner

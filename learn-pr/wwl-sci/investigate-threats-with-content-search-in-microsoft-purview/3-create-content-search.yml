@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.create-content-search
+title: Create a content search
+metadata:
+  title: Create a content search
+  description: "Create a content search with Microsoft Purview."
+  ms.date: 05/25/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-create-content-search.md)]

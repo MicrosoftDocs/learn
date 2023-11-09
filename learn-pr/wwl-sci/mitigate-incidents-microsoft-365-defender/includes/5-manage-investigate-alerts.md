@@ -38,7 +38,12 @@ So, for example:
 
 ### Categories
 
-The alert categories align with the enterprise attack tactics in the MITRE ATT&CK matrix.  The categories are:
+The alert categories align closely with the attack tactics and techniques in the MITRE ATT&CK Enterprise matrix.
+
+> [!NOTE]
+> The alert categories also include items (like `Unwanted Software`) that are not part of the ATT&CK matrices.
+
+The categories are:
 
 - **Collection** - Locating and collecting data for exfiltration
 
@@ -86,7 +91,7 @@ There might be scenarios where you need to suppress alerts from appearing in Mic
 
 Suppression rules can be created from an existing alert. They can be disabled and re-enabled if needed.
 
-When a suppression rule is created, it will take effect from the point when the rule is created. The rule won't affect existing alerts already in the queue prior to the rule creation. The rule will only be applied to alerts that satisfy the conditions set after the rule is created.
+When a suppression rule is created, it takes effect from the point when the rule is created. The rule won't affect existing alerts already in the queue prior to the rule creation. The rule will only be applied to alerts that satisfy the conditions set after the rule is created.
 
 There are two contexts for a suppression rule that you can choose from:
 
@@ -128,11 +133,11 @@ The alert story details why the alert was triggered, related events that happene
 
 Entities are clickable, and every entity that isn't an alert is expandable using the expand icon on the right side of that entity's card. The entity in focus will be indicated by a blue stripe to the left side of that entity's card, with the alert in the title being in focus at first.
 
-Selecting an entity will switch the context of the details pane to this entity, and will allow you to review further information, and manage that entity. Selecting ... to the right of the entity card will reveal all actions available for that entity. These same actions appear in the details pane when that entity is in focus.
+Selecting an entity switches the context of the details pane to this entity, and will allow you to review further information, and manage that entity. Selecting ... to the right of the entity card reveals all actions available for that entity. These same actions appear in the details pane when that entity is in focus.
 
 ### Take action from the details pane
 
-Once you've selected an entity of interest, the details pane will change to display information about the selected entity type, historic information when it's available, and offer controls to take action on this entity directly from the alert page.
+Once you've selected an entity of interest, the details pane changes to display information about the selected entity type, historic information when it's available, and offer controls to take action on this entity directly from the alert page.
 
 Once you're done investigating, go back to the alert you started with, mark the alert's status as Resolved and classify it as either False alert or True alert. Classifying alerts helps tune this capability to provide more true alerts and fewer false alerts.
 

@@ -1,13 +1,11 @@
-Azure stores your VHD images as page blobs in an Azure Storage account. With managed disks, Azure takes care of managing the storage on your behalf, which is one of the best reasons to choose managed disks.
-
 When you create the VM, it chooses a size for the OS disk. The specific size is based on the image you select. On Linux, it's often around 30 GB, and on Windows about 127 GB.
 
 You can add data disks to provide for additional storage space, but you may also wish to expand an existing disk; perhaps a legacy application cannot split its data across drives, or you're migrating a physical PC's drive to Azure and need a larger OS drive.
 
 > [!NOTE]
-> You can only resize a disk to a *larger* size. Shrinking managed disks is not supported.
+> Shrinking managed disks isn't supported. You can only resize a disk to a larger size.
 
-Changing the disk's size can also change the disk's level (for example, from P10 to P20). Keep this in mind; this can be beneficial for performance upgrades, but will also cost more as you move up the premium tiers.
+Depending on how large the increase is, increasing the disk's size could also change the disk's performance tier (for example, from P10 to P20). Keep this in mind; this can be beneficial for performance upgrades, but will also cost more as you move up the premium tiers.
 
 ## VM size versus disk size
 

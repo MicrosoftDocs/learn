@@ -4,12 +4,13 @@ title: Understand Power BI data sources
 metadata:
   title: Understand Power BI data sources
   description: "Understand Power BI data sources"
-  ms.date: 03/30/2021
+  ms.date: 05/16/2023
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/4-understand-data-sources.md)]

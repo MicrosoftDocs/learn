@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-dedicated-hosts.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to Azure Dedicated Hosts.
+  ms.date: 06/1/2023
+  author: mattmcinnes
+  ms.author: mattmcinnes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-introduction.md)]

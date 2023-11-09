@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Three multiple-choice questions
-  ms.date: 09/09/2021
+  ms.date: 06/26/2023
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.topic: interactive-tutorial
@@ -14,36 +14,25 @@ content: Choose the best response for each question. Then select Check your answ
 quiz:
   title: Check your knowledge
   questions:
-    - content: " Which of the following option enables simulated eye-tracking for the Unity editor?"
+    - content: "Which of the following option enables simulated eye-tracking for the Unity editor?"
       choices:
-        - content: "Set the Default Eye Gaze Simulation Mode to Camera Forward Axis"
-          isCorrect: true
-          explanation: This enables simulated eye-tracking for the Unity editor.
-        - content: " Locate the Gaze Settings section and check the Is Eye Tracking Enabled checkbox"
-          isCorrect: false
-          explanation: This Enables eye based gaze in the gaze provider
-        - content: "Ensure Eye Gaze Input Capability is greyed out"
-          isCorrect: false
-          explanation: This Ensures the Eye Gaze Input capability is enabled
-    - content: "Which component handles the speech input events raised from the IMixedRealityInputSystem?"
+      - content: "Enable eye tracking simulation on the scene's MRTK Input Simulator game object."
+        isCorrect: true
+        explanation: MRTK's Input Simulator can simulate eye tracking within the Unity editor.
+      - content: "Add the Eye Gaze Interaction Profile to the OpenXR settings for the UWP platform."
+        isCorrect: false
+        explanation: Adding the Eye Gaze Interaction Profile enables eye tracking with the HoloLens OpenXR Runtime, not the Unity Editor.
+      - content: "Ensure Eye Gaze Input UWP capability is greyed out"
+        isCorrect: false
+        explanation: Whether or not the Eye Gaze Input UWP capability is greyed out indicates whether Eye Gaze Input capability is enabled in the UWP application.
+    - content: "Which component handles the speech input events raised from the Keyword Recognition Subsystem?"
       choices:
-        - content: "Speech Input Handler Component"
+        - content: "Speech Interactor"
           isCorrect: true
-          explanation: The Speech Input Handler script can be added to a GameObject to handle speech commands using UnityEvents.
-        - content: "Speech Commands Profile"
+          explanation: Stateful Interactables register themselves with the SpeechInteractor to receive events when the associated keyword is heard by KeywordRecognitionSubsystem.
+        - content: "Stateful Interactables"
           isCorrect: false
-          explanation: The Speech Commands Profile in the Input System Profile is where you configure the keywords to recognize.
-        - content: "Speech Confirmation Tooltip"
+          explanation: Stateful Interactables register themselves with the SpeechInteractor to receive events when the associated keyword is heard by KeywordRecognitionSubsystem.
+        - content: "Fuzzy Gaze Interactor"
           isCorrect: false
-          explanation: Speech Confirmation Tooltip displays animated confirmation tooltip label on recognition. 
-    - content: "Is eye-tracking enabled in HoloLens 1?"
-      choices:
-        - content: "Yes"
-          isCorrect: false
-          explanation: The Eye-tracking was not available in the HoloLens 1, yet it can be found in version 2.
-        - content: "No"
-          isCorrect: true
-          explanation: The Eye-tracking was not available in the HoloLens 1, yet it can be found in version 2.
-       
-      
-    
+          explanation: The Fuzzy Gaze Interactor is used for interacting with interactables at a distance using gaze raycasts.

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/21/2023
+  ms.date: 05/18/2023
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -18,32 +18,32 @@ quiz:
     choices:
     - content: "MongoDB API"
       isCorrect: false
-      explanation: "Incorrect. While the MongoDB API implements the wire protocol for MongoDB, it isn't the native API for Azure Cosmos DB."
+      explanation: "That's incorrect. While the MongoDB API implements the wire protocol for MongoDB, it isn't the native API for Azure Cosmos DB."
     - content: "Cassandra API"
       isCorrect: false
-      explanation: "Incorrect. While the Cassandra API implements the much of the native Apache Cassandra wire protocol, it isn't the native API for Azure Cosmos DB."
+      explanation: "That's incorrect. While the Cassandra API implements the much of the native Apache Cassandra wire protocol, it isn't the native API for Azure Cosmos DB."
     - content: "NoSQL API"
       isCorrect: true
-      explanation: "Correct. The NoSQL API is the native API for Azure Cosmos DB. All other APIs map to the NoSQL API in their implementations."
+      explanation: "That's correct. The NoSQL API is the native API for Azure Cosmos DB. All other APIs map to the NoSQL API in their implementations."
   - content: "Which property is required to be specified when creating a new Azure Cosmos DB for NoSQL container?"
     choices:
     - content: "Partition key path"
       isCorrect: true
-      explanation: "Correct. All containers in an Azure Cosmos DB for NoSQL database must have a partition key path defined."
+      explanation: "That's correct. All containers in an Azure Cosmos DB for NoSQL database must have a partition key path defined."
     - content: "Time-to-live"
       isCorrect: false
-      explanation: "Incorrect. You can create a container without a time-to-live value. The container doesn't expire items automatically."
+      explanation: "That's incorrect. You can create a container without a time-to-live value. The container won't expire items automatically."
     - content: "Indexing policy"
       isCorrect: false
-      explanation: "Incorrect. You can create a container without specifying an indexing policy. Azure Cosmos DB automatically indexes every property of every item."
-  - content: "Your team has an existing Azure Cosmos DB account, database, and container. A new team member would like to configure Azure Cosmos DB for a different team with unique needs for regional replication and default consistency levels. Which new resource should the team member create?"
+      explanation: "That's incorrect. You can create a container without specifying an indexing policy. Azure Cosmos DB will automatically index every property of every item."
+  - content: "Your team has an existing Azure Cosmos DB account, database, and container. A new team member would like to configure Azure Cosmos DB for a different team with unique needs for regional replication and default consistency levels. Which new resource should that member of the team create?"
     choices:
     - content: "Container"
       isCorrect: false
-      explanation: "Incorrect. If your team member creates a new container, the default consistency level and global replication settings remain the same between both teams."
+      explanation: "That's incorrect. If your team member creates a new container, the default consistency level and global replication settings will remain the same between both teams."
     - content: "Account"
       isCorrect: true
-      explanation: "Correct. In order to have different behavior for replication and default consistency, your team member must create a new account."
+      explanation: "That's correct. In order to have different behavior for replication and default consistency, your team member must create a new account."
     - content: "Database"
       isCorrect: false
-      explanation: "Incorrect. If your team member creates a new database, the default consistency level and global replication settings remain the same between both teams."
+      explanation: "That's incorrect. If your team member creates a new database, the default consistency level and global replication settings will remain the same between both teams."

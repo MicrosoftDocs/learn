@@ -28,6 +28,6 @@ SQL Database provides a range of built-in security and compliance features. Thes
 - Advanced Threat Protection
 - SQL Database auditing
 - Data encryption
-- Azure Active Directory authentication
+- Microsoft Entra authentication
 - Multifactor authentication
 - Compliance certification

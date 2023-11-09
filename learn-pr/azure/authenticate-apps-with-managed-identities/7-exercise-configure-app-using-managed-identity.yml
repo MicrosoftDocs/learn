@@ -7,6 +7,8 @@ metadata:
   author: barclayn
   ms.author: barclayn
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-azure
 title: Exercise - Configure a custom application in .NET by using managed identity
 durationInMinutes: 10

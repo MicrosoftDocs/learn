@@ -48,7 +48,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 1. The resource group should contain the resources displayed in the following table.
 
     | Name | Type | Description |
-    | --- | --- |
+    | --- | --- | --- |
     | `<yourName>-Sentinel` |Log Analytics workspace|Log Analytics workspace used by Microsoft Sentinel, where *\<yourName>* represents the workspace name that you chose in the previous task. |
     | `simple-vmNetworkInterface` |Network interface|Network interface for the VM. |
     | `SecurityInsights(<yourName>-Sentinel)` |Solution|Security insights for Microsoft Sentinel. |
@@ -63,20 +63,33 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. In the Azure portal, search for **Microsoft Sentinel**, and then select the previously created Microsoft Sentinel workspace.
 
-1. On the **Microsoft Sentinel | Overview** pane, in the left menu, under **Configuration**, select **Data connectors**.
+1. On the **Microsoft Sentinel | Overview** pane, in the left menu, scroll down to **Content Management** and select **Content Hub**.
 
-1. In the **Data connectors** pane, search for and select **Azure Activity**. In the details pane, select **Open connector page**.
+1. In the *Content Hub* page, type *Azure Activity* into the *Search* form, and select the **Azure Activity** solution.
 
-1. In the **Azure Activity** pane, select the **Configure Azure Activity logs** link.
+1. In the **Azure Activity** solution details pane, select **Install**.
 
-1. Select your subscription, and then select **Connect**.
+1. In the center *Content name* column, select the **Azure Activity** Data connector.
 
-1. When you receive a status of **Connected**, close all open panels to return to the **Microsoft Sentinel | Data connector** panel.
+   > [!NOTE]
+   > This solution installs these Content types: 12 Analytic rules, 14 Hunting queries, 1 Workbook, and the Azure Activity Data connector.
 
-    :::image type="content" source="../media/02-azure-sentinel-connector.png" alt-text="Screenshot that displays the Microsoft Sentinel connector." border="true":::
+1. Select **Open connector page**.
 
-    > [!Note]
-    > The connector for Azure Activity could take 15 minutes until Microsoft Sentinel displays a date. You can continue performing the rest of the steps in this unit and subsequent units in this module.
+1. In the *Instructions/Configuration* area, scroll down and under *2. Connect your subscriptions...* select **Launch Azure Policy Assignment Wizard**.
+
+1. In the **Basics** tab of the wizard, select the ellipsis ***...*** under **Scope**. On the **Scopes** pane, select your subscription and then select **Select**.
+
+1. Select the **Parameters** tab, and choose your Microsoft Sentinel workspace from the **Primary Log Analytics workspace** drop-down list.
+
+1. Select the **Remediation** tab, and select the **Create a remediation task** checkbox. This action applies the policy assignment to already existing Azure resources.
+
+1. Select the **Review + Create** button to review the configuration, and then select **Create**.
+
+    > [!NOTE]
+    > The connector for Azure Activity uses policy assignments, you need to have role permissions that allow you to create policy assignments. And, it typically take 15 minutes to display a status of **Connected**. While the connector deploys, you can continue performing the rest of the steps in this unit and subsequent units in this module.
+
+    :::image type="content" source="../media/06-azure-activity-content-hub-solution.png" alt-text="Screenshot that displays the Microsoft Sentinel Azure Activity Content Hub solution." border="true":::
 
 ## Task 4: Create an analytics rule
 
@@ -84,33 +97,31 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. On the **Microsoft Sentinel** page, on the menu bar, in the **Configuration** section, select **Analytics**.
 
-1. On the **Microsoft Sentinel | Analytics** page, select **Create** and then select **Scheduled Query Rule**.
+1. On the **Microsoft Sentinel | Analytics** page, select **Create** and then select **NRT Query Rule (Preview)**.
 
 1. On the **General** page, provide the inputs in the following table, and then select  **Next: Set rule logic >**.
 
     | Label | Description |
     | --- | --- |
     | Name | Provide a descriptive name, such as **Delete Virtual Machines**, to explain what type of suspicious activity the alert detects. |
-    | Description | Enter a detailed description that will help other security analysts understand what the rule does. |
-    | Tactics | From the **Tactics** drop-down menu, choose **Initial Access** category to classify the rule following the MITRE tactics. |
+    | Description | Enter a detailed description that helps other security analysts understand what the rule does. |
+    | Tactics and Techniques | From the **Tactics and Techniques** drop-down menu, choose **Initial Access** category to classify the rule following the MITRE tactics. |
     | Severity | Select the **Severity** drop-down menu to categorize the level of importance of the alert as one of four options: High, Medium, Low, or Informational. |
-    | Status | Specify the status of the rule. By default, the status is **Enable.** You can select **Disable** to disable the rule if it generates a large number of false positives. |
+    | Status | Specify the status of the rule. By default, the status is **Enabled.** You can select **Disabled** to disable the rule if it generates a large number of false positives. |
 
 1. On the **Set rule logic** page, in the **Rule query** section, enter the following query:
 
     ```kusto
       AzureActivity
-      | where OperationName == 'Delete Virtual Machine'
-      | where ActivityStatus == 'Accepted'
+      | where OperationNameValue == 'MICROSOFT.COMPUTE/VIRTUALMACHINES/DELETE'
+      | where ActivityStatusValue == 'Success'
       | extend AccountCustomEntity = Caller
       | extend IPCustomEntity = CallerIpAddress
     ```
 
-1. In the **Query Scheduling** section, you can configure how often the query should run. Select query to run on every 5 min.
+1. Accept the default values for all other settings and then select **Next: Incident setting**.
 
-1. Accept the default values for all other settings and then select **Next: Incident setting (Preview)**.
-
-1. On the **Incident setting (preview)** tab, ensure that **Enabled** is selected for creation of incidents from alerts triggered by this analytics rule. And then select **Next: Automated response**.
+1. On the **Incident setting** tab, ensure that **Enabled** is selected for creation of incidents from alerts triggered by this analytics rule. And then select **Next: Automated response**.
 
 1. On the **Automated response** tab, you can select a playbook to run automatically when the alert is generated. Only the playbooks that contain a Logic App Microsoft Sentinel connector are displayed.
 

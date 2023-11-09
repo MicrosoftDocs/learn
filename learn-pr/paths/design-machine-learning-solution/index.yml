@@ -19,7 +19,7 @@ levels:
 roles:
 - data-scientist
 products:
-- azure-cognitive-services
+- ai-services
 - azure-databricks
 - azure-devops
 - azure-machine-learning

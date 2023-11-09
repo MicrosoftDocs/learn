@@ -1,0 +1,61 @@
+### YamlMime:Module
+uid: learn.wwl.configure-pipelines-securely-use-variables-parameters
+metadata:
+  title: Configure pipelines to securely use variables and parameters
+  description: "This module is designed to help learners understand the importance of configuring pipelines to use variables and parameters securely in Azure DevOps."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure pipelines to securely use variables and parameters
+summary: "This module is designed to help learners understand the importance of configuring pipelines to use variables and parameters securely in Azure DevOps. The module covers fundamental concepts and best practices for ensuring that parameters and variables retain their type, identifying and restricting insecure use of parameters and variables, moving parameters into a YAML file that protects their type, limiting variables that can be set at queue time, and validating that mandatory variables are present and set correctly."
+abstract: |
+  In this module, you practice how to:
+    - Ensure that parameters and variables retain their type.
+    - Identify and restrict insecure use of parameters and variables.
+    - Move parameters into a YAML file that protects their type.
+    - Limit variables that can be set at queue time.
+    - Validate that mandatory variables are present and set correctly in Azure DevOps.
+prerequisites: |
+  - Basic knowledge of Azure Pipelines and YAML.
+iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
+levels:
+  - intermediate
+roles:
+  - administrator
+  - developer
+  - devops-engineer
+  - security-engineer
+  - security-operations-analyst
+  - solution-architect
+  - student
+  - support-engineer
+products:
+  - azure
+  - azure-artifacts
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+subjects:
+  - devops
+  - cloud-computing
+  - cloud-security
+  - key-management
+  - information-protection-governance
+  - identity-access
+  - compliance
+units:
+- learn.wwl.configure-pipelines-securely-use-variables-parameters.introduction
+- learn.wwl.configure-pipelines-securely-use-variables-parameters.ensure-parameter-variable-types
+- learn.wwl.configure-pipelines-securely-use-variables-parameters.identify-restrict-insecure-use-parameters-variables
+- learn.wwl.configure-pipelines-securely-use-variables-parameters.move-parameters-yaml-file
+- learn.wwl.configure-pipelines-securely-use-variables-parameters.limit-queue-time-variables
+- learn.wwl.configure-pipelines-securely-use-variables-parameters.validate-mandatory-variables
+- learn.wwl.configure-pipelines-securely-use-variables-parameters.lab-configure-pipelines-securely-use-variables-parameters
+- learn.wwl.configure-pipelines-securely-use-variables-parameters.knowledge-check
+- learn.wwl.configure-pipelines-securely-use-variables-parameters.summary
+badge:
+  uid: learn.wwl.configure-pipelines-securely-use-variables-parameters.badge

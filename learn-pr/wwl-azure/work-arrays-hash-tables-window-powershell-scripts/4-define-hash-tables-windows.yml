@@ -4,10 +4,11 @@ title: Define hash tables in Windows PowerShell Scripts
 metadata:
   title: Define hash tables in Windows PowerShell Scripts
   description: "Define hash tables in Windows PowerShell Scripts"
-  ms.date: 11/10/2022
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
+  ms.custom:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.sql-server-2022-data-virtualization.exercise-connect-azure-sql-database-use-polybase
+title: Exercise - Use data virtualization to connect to Azure SQL Database
+metadata:
+  title: Exercise - Use data virtualization to connect to Azure SQL Database
+  description: "An exercise to use data virtualization to connect to Azure SQL Database."
+  ms.date: 05/23/2023
+  author: HugoMSFT
+  ms.author: hudequei
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-sqlserver
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-connect-azure-sql-database-use-polybase.md)]

@@ -3,11 +3,11 @@ uid: learn.wwl.develop-azure-functions
 metadata:
   title: Develop Azure Functions
   description: "Learn how to create and deploy Azure Functions."
-  ms.date: 02/07/2023
+  ms.date: 05/05/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-functions
 title: Develop Azure Functions
 summary: Learn how to create and deploy Azure Functions.
 abstract: |

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.embrace-responsible-ai-principles-practices.put-responsible-ai-frameworks
+title: Put responsible AI frameworks in action
+metadata:
+  title: Put responsible AI frameworks in action
+  description: "Put responsible AI frameworks in action"
+  ms.date: 09/12/2023
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-put-responsible-ai-frameworks.md)]

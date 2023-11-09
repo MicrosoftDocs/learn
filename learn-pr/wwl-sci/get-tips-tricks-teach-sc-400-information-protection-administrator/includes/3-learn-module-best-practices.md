@@ -1,5 +1,6 @@
 
 
+
 The SC-400: Microsoft Information Protection Administrator course isn't a fundamentals course. Students should be familiar with Microsoft security and compliance technologies. Demos are provided in the trainer materials; however, you may want to use a lab environment to go through some of the steps in the lab to demonstrate the examples. Showing examples in a lab environment also provides your learners with a head start on the actual labs.
 
 Use the trainer demos and your own experience to demonstrate each module’s purpose and watch for links to additional information that you’ll want to share with your students.

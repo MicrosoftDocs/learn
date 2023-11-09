@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-secure-access-pipeline-resources.configure-agent-pools
+title: Configure agent pools
+metadata:
+  title: Configure agent pools
+  description: "Configure agent pools."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-configure-agent-pools.md)]

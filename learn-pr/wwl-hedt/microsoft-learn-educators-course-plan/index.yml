@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: learn
 title: Microsoft Learn for Educators course planning
 summary: As you prepare for your course delivery, begin by determining the curriculum integration approach, implementation plan, LMS integration of Microsoft Learn benefits, and student reporting. Provide clarity about certification and employability success to your students.
 abstract: |
@@ -27,7 +27,7 @@ levels:
 roles:
 - higher-ed-educator
 products:
-- azure-security-center
+- defender-for-cloud
 - dynamics-365
 - dynamics-customer-service
 units:

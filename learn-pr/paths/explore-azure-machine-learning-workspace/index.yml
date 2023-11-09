@@ -2,8 +2,8 @@
 uid: learn.wwl.explore-azure-machine-learning-workspace
 metadata:
   title: Explore the Azure Machine Learning workspace
-  description: Explore the Azure Machine Learning workspace
-  ms.date: 01/09/2023
+  description: Explore the Azure Machine Learning workspace, its resources and its assets. Explore which developer tools you can use to interact with the workspace, focusing on the CLI and Python SDK v2.
+  ms.date: 09/01/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   Throughout this learning path you'll explore the Azure Machine Learning workspace. Learn how you can create a workspace and what you can do with it. You'll also explore the various developer tools you can use to interact with the workspace.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/explore-azure-machine-learning-workspace.svg
 levels:
 - beginner
 roles:

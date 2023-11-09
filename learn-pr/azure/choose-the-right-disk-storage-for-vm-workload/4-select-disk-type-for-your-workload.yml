@@ -4,7 +4,7 @@ title: Select a disk type for your workload
 metadata:
   title: Select a disk type for your workload
   description: Select a disk type for your workload
-  ms.date: 09/21/2022
+  ms.date: 09/05/2023
   author: roygara
   ms.author: rogarana
   ms.topic: interactive-tutorial
@@ -36,6 +36,3 @@ quiz:
     - content: "Use Standard HDDs instead of Standard SSDs."
       isCorrect: false
       explanation: "Standard SSDs and standard HDDs don't guarantee an IOPS value."
-    - content: "Use unmanaged disks instead of managed disks."
-      isCorrect: false
-      explanation: "Managed disks and unmanaged disks don't guarantee an IOPS value."

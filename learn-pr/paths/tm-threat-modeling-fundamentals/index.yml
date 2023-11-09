@@ -23,8 +23,8 @@ roles:
 - solution-architect
 - security-engineer
 products:
-- azure-iot-security-center
-- azure-iot-security-center
+- azure
+- azure
 subjects:
 - threat-protection
 modules:

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: Understand how Azure Active Directory application provisioning works with SCIM.
+  description: Understand how Microsoft Entra application provisioning works with SCIM.
   ms.date: 7/28/2022
   author: kenwith
   ms.author: kenwith

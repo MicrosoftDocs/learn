@@ -4,10 +4,9 @@ metadata:
   title: Manage sensitive data and security policies within GitHub
   description: Familiarize yourself with GitHub's basic security tools, which prepare repositories for secure development and industry-standard response to threats.
   ms.date: 09/13/2021
-  author: sterling463
-  ms.author: csterling 
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Manage sensitive data and security policies within GitHub
 summary: Familiarize yourself with GitHub's basic security tools, which prepare repositories for secure development and industry-standard response to threats.
 abstract: |

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-form-recognizer.use-form-recognizer
-title: Use Form Recognizer
+title: Use Azure AI Document Intelligence
 metadata:
-  title: Use Form Recognizer
-  description: Use Form Recognizer
+  title: Use Azure AI Document Intelligence
+  description: Use Azure AI Document Intelligence
   ms.date: 03/14/2021
   author: laujan
   ms.author: lajanuar
@@ -13,4 +13,4 @@ durationInMinutes: 10
 azureSandbox: true
 interactive: bash
 content: |
-  [!include[](includes/5-use-form-recognizer.md)]
+  [!INCLUDE[](includes/5-use-form-recognizer.md)]

@@ -1,8 +1,8 @@
-SQL Server 2022 provides built-in capabilities to reduce time for query tuning with the Query Store and next generation of Intelligent Query Processing (IQP) features to help you gain faster, and consistent performance with no code changes.
+SQL Server 2022 provides built-in capabilities to reduce time for query tuning, including the Query Store and next generation Intelligent Query Processing (IQP) features, to help you gain faster and more consistent performance with no code changes.
 
 ## Challenges for query tuning
 
-Developers and SQL experts can all agree that while some queries just work, some performance situations can arise for queries that require performance troubleshooting and query tuning exercises. Tuning query performance can be an expensive and often lengthy process.
+Developers and SQL experts agree that while some queries just work, some performance situations can arise for queries that require performance troubleshooting and query tuning exercises. Tuning query performance can be an expensive and often lengthy process.
 
 ## Solutions for query tuning using the Query Store
 
@@ -12,7 +12,7 @@ SQL Server 2022 includes important enhancements to the Query Store to reduce the
 
 ### Query Store on by default
 
-Prior to SQL Server 2022, the Query Store must be enabled using the T-SQL [**ALTER DATABASE**](/sql/t-sql/statements/alter-database-transact-sql) statement. For SQL Server 2022, any new database created will have the Query Store enabled by default. Databases that have been restored from previous versions of SQL Server will retain the Query Store settings captured when the database was backed up. The Query Store has had several enhancements since its inception in SQL Server 2016 that allow users to enable the Query Store without significantly affecting application performance. In addition, several new settings are possible in the Query Store to allow users to more easily control how query performance information is captured and cleaned up. Users can disable the Query Store at any time using the T-SQL **ALTER DATABASE** statement.
+Prior to SQL Server 2022, the Query Store must be enabled using the T-SQL [**ALTER DATABASE**](/sql/t-sql/statements/alter-database-transact-sql) statement. For SQL Server 2022, any new database created will have the Query Store enabled by default. Databases that have been restored from previous versions of SQL Server will retain the Query Store settings captured when the database was backed up. The Query Store has had several enhancements since its inception in SQL Server 2016 that allow users to enable the Query Store without significantly affecting application performance. In addition, several new settings are possible in the Query Store to allow users to more easily control how query performance information is captured and cleaned up. Users can disable the Query Store at any time by using the T-SQL **ALTER DATABASE** statement.
 
 ### Query Store hints
 
@@ -22,7 +22,7 @@ Query store hints aren't intended to be used as a normal step to tune query perf
 
 ### Query Store for read replicas
 
-While the Query Store is beneficial for reducing the amount of time required to tune queries or easily identify query performance issues, performance information is only available for queries executed against the primary replica in an Always On availability group. In SQL Server 2022, a new option is available using the T-SQL **ALTER DATABASE** statement to enable the Query Store to collect performance information for read-only queries executed on secondary replicas. All performance information for all replicas is persisted on the primary replica. New information is captured in the Query Store to indicate which replica is associated with a query or query plan.
+While the Query Store is beneficial for reducing the amount of time required to tune queries or to easily identify query performance issues, performance information is only available for queries executed against the primary replica in an Always On availability group. In SQL Server 2022, a new option is available using the T-SQL **ALTER DATABASE** statement to enable the Query Store to collect performance information for read-only queries executed on secondary replicas. All performance information for all replicas is persisted on the primary replica. New information is captured in the Query Store to indicate which replica is associated with a query or query plan.
 
 > [!NOTE]
 > Trace flag 12606 is required to enable Query Store for secondary replicas.
@@ -33,11 +33,11 @@ While the Query Store collects key performance information for queries, the quer
 
 ## Solutions for faster performance with the next generation of Intelligent Query Processing
 
-Intelligent Query Processing is a family of capabilities built into the query processor in the database engine, designed to accelerate performance with no code changes. The next generation of Intelligent Query Processing is built on a foundation of capabilities found in SQL Server 2017 and 2019, as seen in the following figure:
+Intelligent Query Processing (IQP) is a family of capabilities built into the query processor in the database engine, designed to accelerate performance with no code changes. The next generation of Intelligent Query Processing is built on a foundation of capabilities found in SQL Server 2017 and 2019, as seen in the following diagram:
 
 :::image type="content" source="../media/intelligent-query-processing-feature-family.png" alt-text="Diagram of the Intelligent Query Processing feature family.":::
 
-As you can see in this diagram, there have been several IQP features that were part of SQL Server 2017 and SQL Server 2019. SQL Server 2022 adds several new capabilities for IQP. You can keep up to date with all the latest on IQP capabilities at [Intelligent query processing in SQL databases](https://aka.ms/iqp). Let's examine each of these new capabilities.
+As you can see, there have been several IQP features that were part of SQL Server 2017 and SQL Server 2019. SQL Server 2022 adds several new capabilities for IQP. You can keep up to date with all the latest on IQP capabilities at [Intelligent query processing in SQL databases](https://aka.ms/iqp). Let's examine each of these new capabilities.
 
 The database engine uses two principles to make decisions for Intelligent Query Processing:
 
@@ -46,7 +46,7 @@ The database engine uses two principles to make decisions for Intelligent Query 
 
 ## Capabilities after upgrading to SQL Server 2022
 
-If you upgrade to SQL Server 2022, there are new capabilities to accelerate performance independent of the database compatibility level for your database. The compatibility level allows you to take advantage of new features even if you need to use a database compatibility level from a previous version of SQL Server. For more information, see [Compatibility certification](https://aka.ms/dbcompat).
+If you upgrade to SQL Server 2022, there are new capabilities to accelerate performance independently of the database compatibility level for your database. The compatibility level allows you to take advantage of new features even if you need to use a database compatibility level from a previous version of SQL Server. For more information, see [Compatibility certification](https://aka.ms/dbcompat).
 
 ### Approximate percentile functions
 
@@ -90,7 +90,7 @@ You can get more Intelligent Query Processing capabilities, such as Parameter Se
 
 ### Parameter Sensitive Plan optimization
 
-When a query is compiled, the execution plan built takes into account values for any parameters used in queries in a stored procedure or parameterized query. This concept is commonly known as *parameter sniffing*. Only one query plan can exist in cache for statements in a stored procedure or parameterized query. In most cases, this doesn't result in any performance problems for applications. However, there are situations where the data retrieved for queries based on parameters can be *skewed*, or not evenly distributed. In these cases, the single cache plan may not be optimal for different parameter values. This problem is known as a *parameter sensitive plan*.
+When a query is compiled, the execution plan built takes into account values for any parameters used in queries in a stored procedure or parameterized query. This concept is called *parameter sniffing*. Only one query plan can exist in cache for statements in a stored procedure or parameterized query. In most cases, this doesn't result in any performance problems for applications. However, there are situations where the data retrieved for queries based on parameters can be *skewed*, or not evenly distributed. In these cases, the single cache plan may not be optimal for different parameter values. This problem is known as a *parameter sensitive plan*.
 
 In SQL Server 2022, the optimizer can detect parameter sensitive plan scenarios and cache multiple plans for the same stored procedure or parameterized query. The optimizer uses a concept called *query variants* to aggregate sets of parameter values to match a query plan best suited for those parameter values.
 
@@ -100,17 +100,17 @@ For more information, see [Parameter Sensitive Plan optimization](https://aka.ms
 
 In SQL Server 2014 with database compatibility level 120, Microsoft started using a new *model* within the query processor to make certain assumptions about cardinality estimation for certain query patterns. In some cases, the new model generated a more correct query plan but might result in slower performance than with the *legacy* CE model. The CE model scenarios include correlation, join containment, and row goal. Since SQL Server 2014, several options have been included to use the legacy CE model or control CE behavior at the database level or query level with trace flags or query hints.
 
-In SQL Server 2022 with the Query Store is enabled, the optimizer will evaluate highly repetitive queries that match patterns for CE model scenarios where the model may be making an incorrect assumption. The optimizer will then attempt to test and verify whether a query hint could be used to allow the query to perform faster. Upon verification of faster performance, a query hint will be persisted in the Query Store to be used for future query executions. You can see any applied query hints for CE feedback in the **sys.query_store_query_hints** catalog view and CE feedback details in the **sys.query_store_plan_feedback** catalog view. CE feedback will not be used if the legacy CE model has been enabled, if a query plan is forced in the query store, or a query has existing query store hints.
+In SQL Server 2022 with the Query Store enabled, the optimizer will evaluate highly repetitive queries that match patterns for CE model scenarios where the model may be making an incorrect assumption. The optimizer will then attempt to test and verify whether a query hint could be used to allow the query to perform faster. Upon verification of faster performance, a query hint will be persisted in the Query Store to be used for future query executions. You can see any applied query hints for CE feedback in the **sys.query_store_query_hints** catalog view and CE feedback details in the **sys.query_store_plan_feedback** catalog view. CE feedback will not be used if the legacy CE model has been enabled, if a query plan is forced in the query store, or if a query has existing query store hints.
 
 For more information, see [Cardinality Estimation](https://aka.ms/cefeedback).
 
 ### Degree of parallelism (DOP) feedback
 
-The optimizer in SQL Server will in some cases run pieces of the query plan called operators using parallelism with multiple concurrent threads. The number of threads used for a query plan operator is called degree of parallelism (DOP). SQL Server can control the maximum number of threads per operator using server, database, resource group, or query settings called max degree of parallelism (MAXDOP). Setting the right MAXDOP for a SQL Server deployment can be a complex, and sometimes difficult exercise.
+The optimizer in SQL Server will in some cases run pieces of the query plan (called *operators*) using parallelism with multiple concurrent threads. The number of threads used for a query plan operator is called degree of parallelism (DOP). SQL Server can control the maximum number of threads per operator using server, database, resource group, or query settings called max degree of parallelism (MAXDOP). Setting the right MAXDOP for a SQL Server deployment can be a complex and sometimes difficult exercise.
 
-In SQL Server 2022, the optimizer can use a technique called DOP feedback to find the *parallel efficiency* for a query. Parallel efficiency is the minimum DOP for a query that can result in the same overall query duration (factoring our common waits). Reducing the DOP for a query can provide more threads and CPU resources for other queries or applications.
+In SQL Server 2022, the optimizer can use a technique called DOP feedback to find the *parallel efficiency* for a query. Parallel efficiency is the minimum DOP for a query that can result in the same overall query duration (factoring out common waits). Reducing the DOP for a query can provide more threads and CPU resources for other queries or applications.
 
-DOP feedback requires the Query Store to be enabled, database compatibility level 160, and a database setting called `DOP_FEEDBACK` to be turned on. With these settings, the optimizer will work in coordination with Query Store background tasks to look for repetitive and long-running queries that could benefit from a lower DOP. A feedback cycle will be used to validate an adjusted query duration (factoring out waits) won't regress with a lower DOP value and that lower overall CPU is observed for the query. After a period of validation, a lower DOP is considered stabilized and will be persisted in the Query Store. The optimizer will continue to validate lower DOP values in a stepwise down fashion to find the best parallel efficiency or a minimum DOP, which is 2. DOP feedback will never increase DOP and will honor the MAXDOP setting for a query depending on server, database, resource governor, or query hint that has been applied.
+DOP feedback requires the Query Store to be enabled, database compatibility level 160, and a database setting called `DOP_FEEDBACK` to be turned on. With these settings, the optimizer will work in coordination with Query Store background tasks to look for repetitive and long-running queries that could benefit from a lower DOP. A feedback cycle will be used to validate an adjusted query duration (factoring out waits) won't regress with a lower DOP value and that lower overall CPU is observed for the query. After a period of validation, a lower DOP is considered stabilized and will be persisted in the Query Store. The optimizer will continue to validate lower DOP values in a stepwise down fashion to find the best parallel efficiency or a minimum DOP, which is 2. DOP feedback will never increase DOP and will honor the MAXDOP setting for a query depending on any server, database, resource governor, or query hint that has been applied.
 
 DOP feedback doesn't require recompilation, but validation will be examined on any new query compilation. You can observe persisted DOP feedback values in the **sys.query_store_plan_feedback** catalog view. You can see what is the most recent DOP used for a query using the `last_dop` column from the Dynamic Management View **sys.dm_exec_query_stats** and the **sys.query_store_runtime_stats** catalog view.
 

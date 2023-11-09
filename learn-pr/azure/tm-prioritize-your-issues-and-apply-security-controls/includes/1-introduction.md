@@ -4,22 +4,22 @@ It also doesn't recommend layered security controls based on their type and func
 
 ## Prioritizing issues
 
-Deciding the priority of issues is an important piece of threat modeling. It helps you to distribute resources to the most critical issues with your limited resources.
+Deciding the priority of issues is an important piece of threat modeling. It helps you to distribute your limited resources to the most critical issues.
 
 Examples include:
 
-- Having to choose between implementing a feature to log all administrative actions or using SSL/TLS to encrypt traffic
-- Deciding whether to implement access-control lists or strengthen the input validation process for your system first
+- Having to choose between implementing a feature to log all administrative actions or using SSL/TLS to encrypt traffic.
+- Deciding whether to implement access-control lists or strengthen the input validation process for your system first.
 
 ## When to prioritize
 
-Assign a priority to each issue according to its risk factor. Also, select security controls that work in conjunction with others to help provide a layered security-protection mechanism for your system.
+Assign a priority to each issue according to its risk factor. Also, select security controls that work with others to help provide a layered security-protection mechanism for your system.
 
-This process can take some time. It'll also require assistance from your colleagues and security team. Save enough time to work with them.
+This process can take some time. It also requires assistance from your colleagues and security team. Save enough time to work with them.
 
 ## Learning objectives
 
-In this module, you'll be able to:
+By the end of this module, you're able to:
 
 - Assign priorities to issues.
 - Categorize security controls.

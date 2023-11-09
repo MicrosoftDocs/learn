@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-c-sharp-part-5
 metadata:
   title: Create methods in C# console applications (Get started with C#, Part 5)
   description: This learning path covers the syntax of creating and using methods in C# console applications.
-  ms.date: 03/28/2023
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
@@ -20,12 +20,12 @@ summary: |
   
   :::row:::
   :::column:::
-    <img src="/training/achievements/csharp-first-steps.svg" width="101" alt="Screenshot of the trophy for the Write your first code using C# (Get started with C#, Part 1) learning path." role="presentation"></img>
+    <img src="/training/achievements/get-started-c-sharp-part-1.svg" width="101" alt="Screenshot of the trophy for the Write your first code using C# (Get started with C#, Part 1) learning path." role="presentation"></img>
     
     [Write your first code using C# (Get started with C#, Part 1)](../get-started-c-sharp-part-1/index.yml)
   :::column-end:::
   :::column:::
-    <img src="/training/achievements/csharp-logic.svg" width="101" alt="Screenshot of the trophy for the Create and run simple C# console applications (Get started with C#, Part 2) learning path." role="presentation"></img>
+    <img src="/training/achievements/get-started-c-sharp-part-2.svg" width="101" alt="Screenshot of the trophy for the Create and run simple C# console applications (Get started with C#, Part 2) learning path." role="presentation"></img>
     
     [Create and run simple C# console applications (Get started with C#, Part 2)](../get-started-c-sharp-part-2/index.yml)
   :::column-end:::
@@ -35,7 +35,6 @@ summary: |
     [Add logic to C# console applications (Get started with C#, Part 3)](../get-started-c-sharp-part-3/index.yml) 
   :::column-end:::
   :::row-end:::
-
   :::row:::
    :::column:::
     <img src="/training/achievements/csharp-data.svg" width="101" alt="Screenshot of the trophy for the Work with variable data in C# console applications (Get started with C#, Part 4) learning path." role="presentation"></img>
@@ -43,24 +42,26 @@ summary: |
     [Work with variable data in C# console applications (Get started with C#, Part 4)](../get-started-c-sharp-part-4/index.yml)
   :::column-end:::
   :::column:::
-    <img src="/training/achievements/generic-trophy.svg" width="101" alt="Screenshot of the trophy for the Describe the Create methods in C# console applications (Get started with C#, Part 5) learning path." role="presentation"></img>
+    <img src="/training/achievements/get-started-c-sharp-part-5.svg" width="101" alt="Screenshot of the trophy for the Describe the Create methods in C# console applications (Get started with C#, Part 5) learning path." role="presentation"></img>
     
     Create methods in C# console applications (Get started with C#, Part 5)
   :::column-end:::
    :::column:::
-    <img src="/training/achievements/generic-trophy.svg" width="101" alt="Screenshot of the trophy for the Debug C# console applications (Get started with C#, Part 6) learning path." role="presentation"></img>
+    <img src="/training/achievements/debug-c-sharp-console-applications.svg" width="101" alt="Screenshot of the trophy for the Debug C# console applications (Get started with C#, Part 6) learning path." role="presentation"></img>
     
     [Debug C# console applications (Get started with C#, Part 6)](../get-started-c-sharp-part-6/index.yml)
   :::column-end:::
   :::row-end:::
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/get-started-c-sharp-part-5.svg
 levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
+- k-12-educator
+- student
 products:
 - dotnet
-- dotnet-framework
 - vs-code
 subjects:
 - development-tools

@@ -7,9 +7,9 @@ metadata:
   author: deanobalino
   ms.author: deanbryen
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=cloud_advocates
   ms.contributors: debryen-11292021
+  ms.service: microsoft-sentinel
 title: Introduction to Microsoft Sentinel
 summary: Traditional security information and event management (SIEM) systems typically take a long time to set up and configure. They're also not necessarily designed with cloud workloads in mind. Microsoft Sentinel enables you to start getting valuable security insights from your cloud and on-premises data quickly. This module helps you get started. 
 abstract: |
@@ -29,7 +29,7 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-sentinel
+- microsoft-sentinel
 subjects:
 - cloud-security
 units:

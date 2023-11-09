@@ -6,9 +6,11 @@ metadata:
   title: Deploy Azure Route Server
   description: This unit provides an overview of deploying Azure Route Server.
   ms.date: 11/23/2021
-  author: LBN-commits
-  ms.author: v-lanai
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurepowershell
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |

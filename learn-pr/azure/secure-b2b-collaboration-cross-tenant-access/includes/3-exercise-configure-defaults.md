@@ -1,6 +1,6 @@
-In this exercise, we'll configure default cross-tenant access settings. These settings represent the B2B collaboration policies you generally want to apply to all external Azure AD organizations.
+In this exercise, we'll configure default cross-tenant access settings. These settings represent the B2B collaboration policies you generally want to apply to all external Microsoft Entra organizations.
 
-Recall that in the financial institution example, you want to allow outbound B2B collaboration for all of your internal employees. But you want to protect your internal accounting applications by blocking all inbound B2B collaboration by default. The only users you want to be able to access your internal accounting applications are users from the newly acquired branch, which we'll configure later. Right now, we'll configure your default cross-tenant access settings for B2B collaboration with other Azure AD organizations in general.
+Recall that in the financial institution example, you want to allow outbound B2B collaboration for all of your internal employees. But you want to protect your internal accounting applications by blocking all inbound B2B collaboration by default. The only users you want to be able to access your internal accounting applications are users from the newly acquired branch, which we'll configure later. Right now, we'll configure your default cross-tenant access settings for B2B collaboration with other Microsoft Entra organizations in general.
 
 ![Diagram of the full financial institution scenario with just the default settings highlighted.](../media/3-scenario-defaults.png)
 
@@ -8,21 +8,19 @@ To try this exercise yourself, you need an Azure subscription. If you don't have
 
 ## Set default outbound cross-tenant access
 
-Here, you'll configure your default outbound settings for B2B collaboration. You'll make sure your cross-tenant access settings will allow other Azure AD organizations to invite your users to their organization for B2B collaboration.
+Here, you'll configure your default outbound settings for B2B collaboration. You'll make sure your cross-tenant access settings will allow other Microsoft Entra organizations to invite your users to their organization for B2B collaboration.
 
-### Open the Azure Active Directory service in the portal
+<a name='open-the-azure-active-directory-service-in-the-portal'></a>
+
+### Open the Microsoft Entra service in the admin center
 
 1. Open a web browser.
-1. In the address bar, type https://portal.azure.com.
-1. Sign in using your Azure AD admin account.
-1. Open the Azure Active Directory service by following these steps:
-   - Under **Azure services**, select **Azure Active Directory**, or
-   - Use the search box search for "Azure Active Directory" and then select it.
+1. In the address bar, type https://entra.microsoft.com.
+1. Sign in using your Microsoft Entra admin account.
 
 ### Configure default outbound settings
 
-1. On the left navigation bar, select **External Identities**.
-1. Select **Cross-tenant access settings**.
+1. On the left navigation bar, browse to **Identity** > **External Identities** > **Cross-tenant access settings**.
 1. Select the **Default settings** tab.
 1. Under **Outbound access settings**, select **Edit outbound defaults**.
 
@@ -42,7 +40,7 @@ Here, you'll configure your default outbound settings for B2B collaboration. You
 
 ## Set default inbound cross-tenant access
 
-Now, you'll configure your default inbound settings to block all inbound B2B collaboration. You'll make sure your cross-tenant access settings will block everyone in other Azure AD organizations from being invited to your organization for B2B collaboration.
+Now, you'll configure your default inbound settings to block all inbound B2B collaboration. You'll make sure your cross-tenant access settings will block everyone in other Microsoft Entra organizations from being invited to your organization for B2B collaboration.
 
 1. On the main **Cross-tenant access settings**, select the **Default settings** tab.
 1. Under **Inbound access settings**, select **Edit inbound defaults**.
@@ -71,4 +69,4 @@ On the main **Cross-tenant access settings** page:
 
    ![Screenshot showing default settings with outbound access All allowed and inbound access All blocked.](../media/3-default-all-blocked.png)
 
-All your users can now be invited by other Azure AD organizations to use B2B collaboration, but all external Azure AD users are blocked from using B2B collaboration to access your applications.
+All your users can now be invited by other Microsoft Entra organizations to use B2B collaboration, but all external Microsoft Entra users are blocked from using B2B collaboration to access your applications.

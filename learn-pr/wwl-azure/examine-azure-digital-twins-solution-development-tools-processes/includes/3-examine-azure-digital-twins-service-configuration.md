@@ -43,10 +43,10 @@ The following resource configuration tabs are also available when creating your 
 
 ## Set up user access permissions
 
-Azure Digital Twins uses Azure Active Directory (Azure AD) for role-based access control (RBAC). This means that before a user can make data plane calls to your Azure Digital Twins instance (access the data), that user needs to be assigned a role with appropriate permissions. For Azure Digital Twins, this role is *Azure Digital Twins Data Owner*.
+Azure Digital Twins uses Microsoft Entra ID for role-based access control (RBAC). This means that before a user can make data plane calls to your Azure Digital Twins instance (access the data), that user needs to be assigned a role with appropriate permissions. For Azure Digital Twins, this role is *Azure Digital Twins Data Owner*.
 
 > [!NOTE]
-> This role is different from the Azure AD Owner role, which can also be assigned at the scope of the Azure Digital Twins instance. These are two distinct management roles, and Azure AD Owner does not grant access to data plane features that are granted with Azure Digital Twins Data Owner.
+> This role is different from the Microsoft Entra Owner role, which can also be assigned at the scope of the Azure Digital Twins instance. These are two distinct management roles, and Microsoft Entra Owner does not grant access to data plane features that are granted with Azure Digital Twins Data Owner.
 
 With your Azure Digital Twins instance open in the Azure portal, you can use Access control (IAM), to configure role assignments.
 

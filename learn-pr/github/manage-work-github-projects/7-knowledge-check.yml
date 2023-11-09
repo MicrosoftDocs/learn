@@ -1,0 +1,70 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.github.manage-work-github-projects.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is part of the "Manage your work with GitHub Projects" module.
+  ms.date: 05/05/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-github
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions: 
+  - content: "What Project descriptor will automatically save when you change it?"
+    choices:
+    - content: "Project name"
+      isCorrect: true
+      explanation: "A GitHub Project's name is the only descriptor that saves automatically."
+    - content: "Project description"
+      isCorrect: false
+      explanation: "You need to ensure your click save after writing your description to save it."
+    - content: "Project README"
+      isCorrect: false
+      explanation: "You also need to push save in order for your Project's README to save."
+  - content: "What does an iteration field help you do in Projects?"
+    choices:
+    - content: "Allows you to keep track of the various changes made to an issue or pull request."
+      isCorrect: false
+      explanation: "Although an iteration field may help you keep track of where your team is with a particular phase of your project, it unfortunately doesn't specific changes to an issue or pull request you've put in your Project."
+    - content: "Allows you to reverse the changes you made to your Project."
+      isCorrect: false
+      explanation: "An iteration field helps you and your team break down your Project into different phases, unfortunately it doesn't help reverse changes."
+    - content: "Allows you to create sequential phases of your project and group issues and pull request based on the phase."
+      isCorrect: true
+      explanation: "An iteration field helps you and your team break down your Project into different phases, allowing you to prioritize what comes first and implement timelines in order to keep you on track to accomplish your goals."
+  - content: "What field can you use in order to make a Priority grouping like High, Medium, and Low in your Project?"
+    choices:
+    - content: "Date"
+      isCorrect: false
+      explanation: "The Date field allows you to assign a date to the issue or pull request in your project."
+    - content: "Single select"
+      isCorrect: true
+      explanation: "Single select field allows you to create multiple groups like Priority grouping in order to help you organize and prioritize your Project."
+    - content: "Iteration field"
+      isCorrect: false
+      explanation: "Although the interaction field helps you build different phases of your Project, the Single select field can help you create groupings to organize your Project."
+  - content: "What is the easiest way to add automation to your Project?"
+    choices:
+    - content: "GraphQL API"
+      isCorrect: false
+      explanation: "Although GraphQL might be simple to some, it's not necessarily the simplest way to add automation to a Project."
+    - content: "Built-in Automation"
+      isCorrect: true
+      explanation: "Built-in automation built within Projects allows you a simple way to automate your Project."
+    - content: "GitHub Actions"
+      isCorrect: false
+      explanation: "Although Actions can be simple to some, it's not necessarily the simplest way to add automation to a Project."
+  - content: "What is the name of the section where you can edit the section where you change the visibility of your Project and delete or close your Project?"
+    choices:
+    - content: "Red Zone"
+      isCorrect: false
+      explanation: "Although the section is technically red, this isn't the name of the section."
+    - content: "Visibility and Access"
+      isCorrect: false
+      explanation: "Single select field allows you to create multiple groups like Priority grouping in order to help you organize and prioritize your Project."
+    - content: "Danger Zone"
+      isCorrect: true
+      explanation: "Correct!"

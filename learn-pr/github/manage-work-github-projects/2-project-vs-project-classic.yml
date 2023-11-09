@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.github.manage-work-github-projects.project-vs-project-classic
+title: Projects versus Projects Classic
+metadata:
+  title: Projects versus Projects Classic
+  description: This content is part of the "Manage your work with GitHub Projects" module.
+  ms.date: 05/05/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-github
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-project-vs-project-classic.md)]

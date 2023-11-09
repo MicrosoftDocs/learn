@@ -91,13 +91,13 @@ You want to control and secure email, documents, and sensitive data that you sha
 
 Classification is identifiable at all times, regardless of where the data is stored or with whom it's shared. The labels include visual markings such as a header, footer, or watermark. Metadata is added to files and email headers in clear text. The clear text ensures that other services, such as solutions to prevent data loss, can identify the classification and take appropriate action.
 
-The protection technology uses Azure Rights Management (Azure RMS). This technology is integrated with other Microsoft cloud services and applications, such as Microsoft 365 and Azure Active Directory. This protection technology uses encryption, identity, and authorization policies. Protection that is applied through Azure RMS stays with the documents and emails, independently of the location-inside or outside your organization, networks, file servers, and applications.
+The protection technology uses Azure Rights Management (Azure RMS). This technology is integrated with other Microsoft cloud services and applications, such as Microsoft 365 and Microsoft Entra ID. This protection technology uses encryption, identity, and authorization policies. Protection that is applied through Azure RMS stays with the documents and emails, independently of the location-inside or outside your organization, networks, file servers, and applications.
 
 This information protection solution keeps you in control of your data, even when it's shared with other people. You can also use Azure RMS with your own line-of-business applications and information protection solutions from software vendors, whether these applications and solutions are on-premises or in the cloud.
 
 We recommend that you:
 
--   [Deploy Azure Information Protection](https://learn.microsoft.com/azure/information-protection/deployment-roadmap) for your organization.
+-   [Deploy Microsoft Purview Information Protection](https://learn.microsoft.com/purview/information-protection) for your organization.
 -   Apply labels that reflect your business requirements. For example: Apply a label named "highly confidential" to all documents and emails that contain top-secret data, to classify and protect this data. Then, only authorized users can access this data, with any restrictions that you specify.
 -   Configure [usage logging for Azure RMS](https://learn.microsoft.com/azure/information-protection/log-analyze-usage) so that you can monitor how your organization is using the protection service.
 

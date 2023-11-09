@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-image-builder.when-to-use-azure-image-builder
+title: When to use Azure Image Builder?
+metadata:
+  title: When to use Azure Image Builder?
+  description: "When to use Azure Image Builder?"
+  ms.date: 06/05/2023
+  author: ericd-mst-github
+  ms.author: erd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-when-to-use-azure-image-builder.md)]

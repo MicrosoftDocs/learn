@@ -8,9 +8,11 @@ metadata:
   ms.date: 12/03/2021
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-languages
-durationInMinutes: 1 # user input: the estimate time to complete the unit
+durationInMinutes: 8
 sandbox: true
 notebook: notebooks/3-exercise-create-use-lists.ipynb

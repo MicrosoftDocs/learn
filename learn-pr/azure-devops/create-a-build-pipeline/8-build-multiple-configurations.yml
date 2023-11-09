@@ -4,7 +4,7 @@ title: Exercise - Build multiple configurations by using templates
 metadata:
   title: Exercise - Build multiple configurations by using templates
   description: Use a template to define build tasks that can build any configuration defined in the project file.
-  ms.date: 04/04/2023
+  ms.date: 06/02/2023
   ms.custom: devdivchpfy22, engagement-fy23
   author: steved0x
   ms.author: sdanie

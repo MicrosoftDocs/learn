@@ -1,10 +1,8 @@
-
-
 Complete the following steps:
 
 1. In the Azure portal, in the **DNS servers** pane, make sure that your virtual network DNS servers option is set to **Custom DNS**. Select your settings based on the type of network you have:
 
-     - **Corporate network connectivity (cross-premises)**: Add the IP addresses of the on-premises DNS servers. It is recommended that you can extend the on-premises DNS environment by installing additional DNS servers in Azure VMs. In such a case, add the IP addresses of these Azure VMs.
+     - **Corporate network connectivity (cross-premises)**: Add the IP addresses of the on-premises DNS servers. It's recommended that you can extend the on-premises DNS environment by installing additional DNS servers in Azure VMs. In such a case, add the IP addresses of these Azure VMs.
      - **VM deployments that are isolated in Azure**: Deploy an additional Azure VM in the same virtual network and configure them as DNS servers. Add the IP addresses of the Azure VMs that you've set up to run the DNS service.
 2. You need the following reserved host names and IP addresses:
 

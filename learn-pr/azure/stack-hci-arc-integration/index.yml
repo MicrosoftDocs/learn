@@ -3,19 +3,19 @@ uid: learn.azure.stack-hci-arc-integration
 metadata:
   title: Integrate Azure Arc and Azure Stack HCI
   description: Integrate Azure Arc and Azure Stack HCI
-  ms.date: 12/09/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 05/19/2023
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: e2e-hybrid
+  ms.service: azure-arc
 title: Integrate Azure Arc and Azure Stack HCI
-summary: In this module, you will learn the fundamentals of Azure Arc and how is it used to bring new capabilities to the management and monitoring of your Azure Stack HCI clusters at scale.
+summary: In this module, you'll learn the fundamentals of Azure Arc and how it's used to bring new capabilities to the management and monitoring of your Azure Stack HCI clusters at scale.
 abstract: |
-  In this module you will:
-  - Describe Azure Arc, its components, and use cases
-  - Describe the principles of integration of Azure Arc and Azure Stack HCI
-  - Describe the benefits of Azure Arc enabled Azure Stack HCI clusters
+  In this module, you will:
+  - Describe Azure Arc, its components, and use cases.
+  - Describe the principles of integration of Azure Arc and Azure Stack HCI.
+  - Describe the benefits of Azure Arc enabled Azure Stack HCI clusters.
 prerequisites: |
   - Basic concepts of cloud technologies
   - Basic characteristics of services available in Azure

@@ -11,7 +11,7 @@ The Azure Storage Migration Service in the Windows Admin Center is helpful when 
 
 ### Things to know about the Migration Service
 
-The Azure Storage Migration Service can you help you migrate unstructured data stored in on-premises file servers to Azure Files and Azure-hosted virtual machines. The migration process is accomplished through capabilities provided by the Migration Service, Azure File Sync, and Azure Migrate.
+The Azure Storage Migration Service can help you migrate unstructured data stored in on-premises file servers to Azure Files and Azure-hosted virtual machines. The migration process is accomplished through capabilities provided by the Migration Service, Azure File Sync, and Azure Migrate.
 
 :::image type="content" source="../media/storage-migration-service.png" alt-text="Illustration that shows how the Azure Storage Migration Service moves on-premises data." border="false":::
 
@@ -90,7 +90,7 @@ There are several common scenarios for working with Azure File Sync and Azure Fi
 
 | Scenario | Description |
 | --- | --- |
-| _Replace or supplement on-premises file servers_ | Virtually all companies use file servers. Azure Files can completely replace or supplement traditional on-premises file servers or Network Attached Storage (NAS) devices. With Azure file shares and Azure Active Directory Domain Services (Azure AD DS) authentication, you can migrate data to Azure Files and utilize high availability and scalability while minimizing client changes. |
+| _Replace or supplement on-premises file servers_ | Virtually all companies use file servers. Azure Files can completely replace or supplement traditional on-premises file servers or Network Attached Storage (NAS) devices. With Azure file shares and Microsoft Entra Domain Services authentication, you can migrate data to Azure Files and utilize high availability and scalability while minimizing client changes. |
 | _Lift and shift (rehome)_ | Azure Files makes it easy to lift-and-shift applications that expect a file share to store application or user data to the cloud. |
 | _Backup and disaster recovery_ | You can use Azure file shares as storage for backups, or for disaster recovery to improve business continuity. You can use Azure file shares to back up your data from existing file servers while preserving configured Windows discretionary access control lists (ACLs). Data that's stored on Azure file shares isn't affected by disasters that might affect on-premises locations. |
 | _Azure File Sync_ | With Azure File Sync, Azure file shares can replicate to Windows Server, either on-premises or in the cloud, for performance and distributed caching of data where it's being used. Consider using Azure File Sync when you want to migrate shared folder content to Azure. This method is especially useful as a means for replacing the Distributed File System on your Windows Servers in your on-premises datacenters. |

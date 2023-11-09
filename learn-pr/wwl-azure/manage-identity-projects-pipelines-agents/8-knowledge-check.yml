@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-identity-projects-pipelines-agents.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+quiz:
+  questions:
+  - content: "What are the two types of agents available in Azure Pipelines?"
+    choices:
+    - content: "Microsoft-hosted agents and externally hosted agents"
+      isCorrect: false
+      explanation: "Incorrect. Externally hosted agents aren't a category of agents in Azure Pipelines."
+    - content: "Self-hosted agents and open-source agents"
+      isCorrect: false
+      explanation: "Incorrect. Open-source agents aren't a category of agents in Azure Pipelines."
+    - content: "Microsoft-hosted agents and self-hosted agents"
+      isCorrect: true
+      explanation: "Correct. Microsoft-hosted agents are provided and managed by Microsoft, while self-hosted agents are deployed and managed within your own infrastructure."
+  - content: "What is the main benefit of using a Managed Identity over a Service Principal in Azure DevOps service connections?"
+    choices:
+    - content: "Managed Identities are automatically managed by Azure, simplifying lifecycle management."
+      isCorrect: true
+      explanation: "Correct. Unlike Service Principals, Managed Identities are created and managed by Azure, reducing the overhead of identity management."
+    - content: "Managed Identities have broader access to Azure resources."
+      isCorrect: false
+      explanation: "Incorrect. Both Managed Identities and Service Principals allow you to define the exact permissions and access levels for your pipelines."
+    - content: "Managed Identities provide faster execution of pipelines."
+      isCorrect: false
+      explanation: "Incorrect. The execution speed of pipelines isn't affected by the use of Managed Identities."
+  - content: "What is one of the best practices for configuring the scope of a service connection in Azure DevOps?"
+    choices:
+    - content: "Granting the broadest set of permissions possible to ensure smooth execution of tasks."
+      isCorrect: false
+      explanation: "Incorrect. It's best to follow the principle of least privilege, granting only the minimum set of permissions required for specific tasks."
+    - content: "Regularly reviewing and updating permissions to maintain appropriate and secure access levels."
+      isCorrect: true
+      explanation: "Correct. Periodically reviewing and updating the permissions and scope of your service connections helps ensure they remain appropriate and secure."
+    - content: "Using the same service connection for all pipelines to minimize the number of connections."
+      isCorrect: false
+      explanation: "Incorrect. While reducing the number of service connections can minimize the potential attack surface, it's important to ensure that access levels are suitable for all pipelines using the connection. Reusing a connection with overly broad access can increase security risks."

@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-kusto-fabric.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/30/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.service: fabric
+  ms.custom:
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which KQL keyword is used to limit the results of a query to a specified number of rows?"
+    choices:
+    - content: "`select`"
+      isCorrect: false
+      explanation: "Incorrect. `select` is a SQL keyword."
+    - content: "`take`"
+      isCorrect: true
+      explanation: "Correct. `take`  limits the results to a specified number of rows."
+    - content: "`project`"
+      isCorrect: false
+      explanation: "Incorrect. `project` is used to return specific columns."
+  - content: "Which KQL keyword is used to group and aggregate data?"
+    choices:
+    - content: "`group_by`"
+      isCorrect: false
+      explanation: "Incorrect. There's no `group_by` keyword in KQL."
+    - content: "`aggregate`"
+      isCorrect: false
+      explanation: "Incorrect. There's no `aggregate` keyword in KQL."
+    - content: "`summarize`"
+      isCorrect: true
+      explanation: "Correct. Use the `summarize` keyword to group and aggregate data."

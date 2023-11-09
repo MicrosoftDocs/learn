@@ -12,4 +12,4 @@ metadata:
   ms.custom: team=nextgen, devx-track-azurecli
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-azure-storage.md)]
+  [!INCLUDE[](includes/2-azure-storage.md)]

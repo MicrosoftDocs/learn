@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: monitor
 title: Monitor and troubleshoot ADT
 summary: This module introduces you to the Azure services and tools that can be used to monitor and troubleshoot an Azure Digital Twins solution.
 abstract: |
@@ -45,3 +45,4 @@ units:
 - learn.wwl.monitor-troubleshoot-adt.summary
 badge:
   uid: learn.wwl.monitor-troubleshoot-adt.badge
+hidden: true

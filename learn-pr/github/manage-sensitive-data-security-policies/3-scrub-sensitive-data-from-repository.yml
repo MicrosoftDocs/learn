@@ -6,8 +6,8 @@ metadata:
   title: Scrub sensitive data from a repository
   description: In this unit, you'll learn about the tools to help prevent committing sensitive data.
   ms.date: 09/13/2021
-  author: sterling463
-  ms.author: csterling
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 25

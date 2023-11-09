@@ -74,7 +74,7 @@ Instead of adding the `int` variable `widgetsSold` to the literal `int` `7`, the
 1. Run the code and you'll see the following result in the output console:
 
     ```Output
-    OuBob sold 14 widgets.
+    Bob sold 14 widgets.
     ```
 
 The parentheses symbol `()` becomes another overloaded operator. In this case, the opening and closing parentheses form the *order of operations* operator, just like you might use in a mathematical formula. You indicate that you want the inner-most parentheses resolved first resulting in the addition of `int` values `widgetsSold` and the value `7`. Once that is resolved, then it will implicitly convert the result to a string so that it can be concatenated with the rest of the message.

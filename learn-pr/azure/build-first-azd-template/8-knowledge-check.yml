@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-first-azure-developer-cli-template.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge of Azure Developer CLI templates
+  ms.date: 07/17/2023
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: engagement-fy23
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "When building your own new template, which `azd` command can be used to create a new starter template?"
+    choices:
+    - content: "azd template"
+      isCorrect: false
+      explanation: "Incorrect. The `azd template` command doesn't exist."
+    - content: "azd new"
+      isCorrect: false
+      explanation: "Incorrect. The `azd new` command doesn't exist."
+    - content: "azd up"
+      isCorrect: false
+      explanation: "Incorrect. The `azd up` command is used to provision and deploy templates."
+    - content: "azd init"
+      isCorrect: true
+      explanation: "Correct. `azd init` provides several different options for initializing new templates."
+  - content: "What is the purpose of the .azure folder in an `azd` template?"
+    choices:
+    - content: "It holds Azure environment variables and configuration files for the template."
+      isCorrect: true
+      explanation: "Correct. The `.azure` folder stores various default configurations for your template's Azure environment."
+    - content: "It contains the Azure Pipelines CI/Cd workflow files."
+      isCorrect: false
+      explanation: "Incorrect. Azure Pipelines files are stored in the `.azdo` folder."
+    - content: "It contains the Bicep files used to provision Azure resources."
+      isCorrect: false
+      explanation: "Incorrect. Infrastructure as code files are stored in the `infra` folder."
+    - content: "It contains the `azure.yaml` service mapping file."
+      isCorrect: false
+      explanation: "Incorrect. The `azure.yaml` file lives at the root of the template."
+  - content: "What is the purpose of the `azure.yaml` file?"
+    choices:
+    - content: "Defines the CI/CD pipeline for your `azd` template."
+      isCorrect: false
+      explanation: "Incorrect. The CI/CD pipeline is defined in the `azure-dev.yaml` file."
+    - content: "Defines and describes the hosted services that are included in your app and the Azure services they're deployed to."
+      isCorrect: true
+      explanation: "Correct. The `azure.yaml` file describes the hosted services in your code, such as the language and corresponding Azure resources."
+    - content: "Defines a Dev Container environment for the project."
+      isCorrect: false
+      explanation: "Incorrect. The `.devcontainer.json` file is used to set up dev containers for `azd` templates."
+    - content: "Defines the infrastructure as code templates that create resources in Azure."
+      isCorrect: false
+      explanation: "Incorrect. Infrastructure as code templates are defined in the template's Bicep files."
+  - content: "Which is the purpose of the `infra` folder in an `azd` template?"
+    choices:
+    - content: "It stores the CI/CD pipeline definitions for the template."
+      isCorrect: false
+      explanation: "Incorrect. CI/CD pipeline definitions are stored in the `.github` or `.azdo` folders."
+    - content: "It holds the source code for the deployed application."
+      isCorrect: false
+      explanation: "Incorrect. The application code in an `azd` template is stored in the `src` folder."
+    - content: "It contains the files necessary to set up a local dev container infrastructure."
+      isCorrect: false
+      explanation: "Incorrect. Dev container environments are configured in the `.devcontainer` folder."
+    - content: "It contains the Bicep or Terraform files that define the Infrastructure as Code (IaC) templates."
+      isCorrect: true
+      explanation: "Correct. The `infra` folder contains the Bicep or Terraform files that define the infrastructure as-code templates."

@@ -4,13 +4,10 @@ title: Determine replication strategies
 metadata:
   title: Determine replication strategies
   description: "Determine replication strategies"
-  ms.date: 02/24/2023
+  ms.date: 06/13/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/5-determine-replication-strategies.md)]

@@ -29,9 +29,9 @@ Windows Server 2016 and newer provides additional networking features to support
     > [!TIP]
     > You can use the `New-NetNat` Windows PowerShell cmdlet to create a NAT object.
 
-## Additional networking features in Windows Server 2019
+## Additional networking features in Windows Server
 
-Windows Server 2019 provides further network improvements with the following additional networking features:
+Windows Server provides further network improvements with the following additional networking features (introduced in Windows Server 2019):
 
 - Receive Segment Coalescing (RSC) in the vSwitch. *RSC* is a stateless offload technology that helps reduce CPU utilization for network processing on the receive side by offloading tasks from the CPU to an RSC-capable network adapter. In Windows Server 2019, RSC in the vSwitch is enabled by default and it supports Hyper-V workloads.
 - Dynamic Virtual Machine Multi-Queue (d.VMMQ). *d.VMMQ* improves on VMMQ by allocating traffic to CPUs dynamically. With d.VMMQ enabled, as network throughput changes, Windows Server 2019  automatically coalesces network packets onto more (or less) CPUs for processing. This helps maximize CPU efficiency in the Hyper-V host server and maintains consistent network throughput for each hosted VM. To use d.VMMQ, you must install a d.VMMQ-capable driver for your network adapters. However, no additional setup is required to use d.VMMQ with virtual workloads in Hyper-V.

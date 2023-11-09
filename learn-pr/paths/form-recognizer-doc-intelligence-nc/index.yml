@@ -1,0 +1,43 @@
+### YamlMime:LearningPath
+uid: learn.wwl.form-recognizer-document-intelligence
+hidden: true
+metadata:
+  title: Create document intelligence solutions with Azure AI Document Intelligence
+  description: Learn how to create document intelligence solutions with Azure AI Document Intelligence
+  ms.date: 07/18/2023
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure
+  ms.subservice: cognitive-services
+title: Create Document Intelligence Solutions with Azure AI Document Intelligence
+prerequisites: |
+  Before starting this learning path, you should already have:
+  *   Familiarity with Azure and the Azure portal.
+  *   Experience programming with C# or Python.
+  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
+summary: |
+  In this learning path, you'll learn how Azure Forms Recognizer can enable you to capture data from typed or hand-written forms.
+  You'll learn how to:
+  * Design a solution that analyzes your business forms by using prebuilt Azure AI Document Intelligence models.
+  * Create a solution that analyzes common documents by using Azure Forms Recognizer.
+  * Learn how to train custom models using Azure Forms Recognizer.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+products:
+- azure
+- ai-services
+- document-intelligence
+- azure-sdks
+subjects:
+- artificial-intelligence
+modules:
+- learn.wwl.plan-form-recognizer-solution
+- learn.wwl.use-prebuilt-form-recognizer-models
+- learn.wwl.work-with-form-recognizer
+trophy:
+  uid: learn.wwl.form-recognizer-document-intelligence.trophy

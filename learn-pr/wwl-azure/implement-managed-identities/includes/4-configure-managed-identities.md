@@ -3,7 +3,7 @@ You can configure an Azure virtual machine with a managed identity during, or af
 
 ## System-assigned managed identity
 
-To create, or enable, an Azure virtual machine with the system-assigned managed identity your account needs the **Virtual Machine Contributor** role assignment. No other Azure AD directory role assignments are required.
+To create, or enable, an Azure virtual machine with the system-assigned managed identity your account needs the **Virtual Machine Contributor** role assignment. No other Microsoft Entra directory role assignments are required.
 
 ### Enable system-assigned managed identity during creation of an Azure virtual machine
 
@@ -30,7 +30,7 @@ az vm identity assign -g myResourceGroup -n myVm
 
 ## User-assigned managed identity
 
-To assign a user-assigned identity to a virtual machine during its creation, your account needs the **Virtual Machine Contributor** and **Managed Identity Operator** role assignments. No other Azure AD directory role assignments are required.
+To assign a user-assigned identity to a virtual machine during its creation, your account needs the **Virtual Machine Contributor** and **Managed Identity Operator** role assignments. No other Microsoft Entra directory role assignments are required.
 
 Enabling user-assigned managed identities is a two-step process:
 
@@ -53,7 +53,7 @@ The following example creates a virtual machine associated with the new user-ass
 az vm create \
 --resource-group <RESOURCE GROUP> \
 --name <VM NAME> \
---image UbuntuLTS \
+--image Ubuntu2204 \
 --admin-username <USER NAME> \
 --admin-password <PASSWORD> \
 --assign-identity <USER ASSIGNED IDENTITY NAME> \

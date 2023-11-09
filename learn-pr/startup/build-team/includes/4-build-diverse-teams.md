@@ -36,7 +36,7 @@ The inclusion of people with disabilities in product development has been shown 
 
 Research has also shown that teams composed of people with disabilities make better business decisions and develop products that are more in tune with customers' changing needs. This leads to [revenue increases of up to 19 percent](https://www.fastcompany.com/90603481/4-reasons-why-hiring-disabled-workers-is-good-for-business?azure-portal=true).
 
-Yet workers with disabilities represent a large, underutilized talent pool. [In late 2020, the unemployment rate for workers with disabilities was twice the national average](https://www.fastcompany.com/90603481/4-reasons-why-hiring-disabled-workers-is-good-for-business?azure-portal=true).
+Yet workers with disabilities represent a large, underutilized talent pool. [In late 2020, the unemployment rate for workers with disabilities was twice the nationwide average](https://www.fastcompany.com/90603481/4-reasons-why-hiring-disabled-workers-is-good-for-business?azure-portal=true).
 
 ## Other types of diversity
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-microsoft-365-threat-protection.explore-microsoft-security-graph
+title: Explore Microsoft Security Graph
+metadata:
+  title: Explore Microsoft Security Graph
+  description: "Explore the Microsoft Security Graph."
+  ms.date: 5/31/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-explore-microsoft-security-graph.md)]

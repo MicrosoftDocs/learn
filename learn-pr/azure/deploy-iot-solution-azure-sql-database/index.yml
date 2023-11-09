@@ -8,7 +8,7 @@ metadata:
   ms.author: wiassaf
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sql-database
 title: Deploy IoT solutions with Azure SQL Database
 summary: In this module, learn how Azure SQL Database provides a price-performant backend for IoT applications. You'll also deploy a template that includes Azure SQL Database, Azure VMs, Azure Functions, and Power BI which simplifies deploying and configuring IoT solutions.
 abstract: By the end of this module, you'll be able to create scalable IoT solutions using Azure SQL Database, and use the template provided for many IoT use cases.
@@ -20,7 +20,6 @@ prerequisites: |
   - Familiarity with database concepts such as monitoring and querying
 iconUrl: /training/achievements/deploy-iot-solution-azure-sql-database.svg
 levels:
-- intermediate
 - advanced
 roles:
 - developer

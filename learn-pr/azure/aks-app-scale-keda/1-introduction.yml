@@ -5,10 +5,12 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Introduction
-  ms.date: 4/5/2021
-  author: pplavetzki
-  ms.author: paplavet
+  ms.date: 11/07/2023
+  author: schaffererin
+  ms.author: schaffererin
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |

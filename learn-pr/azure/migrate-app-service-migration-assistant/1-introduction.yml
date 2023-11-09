@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: An overview of the concepts and skills you'll learn in this module.
   ms.date: 05/21/2020
-  author: v-ksreedevan
-  ms.author: v-ksreedevan
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

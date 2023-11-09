@@ -9,7 +9,6 @@ To learn more about Azure Web PubSub, visit the following sites and articles:
 - [Azure Web PubSub service documentation](/azure/azure-web-pubsub/)
 - [Samples for Azure Functions, C#, Java, JavaScript and Python](https://github.com/Azure/azure-webpubsub/tree/main/samples)
 - [Quickstart: Azure Web PubSub from Azure CLI](/azure/azure-web-pubsub/quickstart-cli-try)
-- Everything about Azure Web PubSub in a PDF format: [Download PDF on everything Azure Web PubSub](/azure/opbuildpdf/azure-web-pubsub/toc.pdf?branch=live)
 
 ## Examples to implement Azure Web PubSub
 

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/15/2022
+  ms.date: 06/21/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -22,9 +22,9 @@ quiz:
     - content: "Run Register-AzWvdApplicationGroup"
       isCorrect: false
       explanation: "That's incorrect. Register-AzWvdApplicationGroup registers a Windows virtual desktop application group."
-    - content: "Configure a Run As account in Azure Automation"
+    - content: "Configure a managed identity"
       isCorrect: false
-      explanation: "That's incorrect. Run As accounts in Azure Automation provide authentication for managing resources on the Azure Resource Manager or Azure Classic deployment model using Automation runbooks and other Automation features."
+      explanation: "That's incorrect. Managed identity in Azure Automation provides authentication for managing resources on the Azure Resource Manager."
     - content: "A Group Policy Object (GPO) in westwind.com"
       isCorrect: true
       explanation: "That's correct. Configure a Group Policy Object (GPO) and set the LimitSecondsToForceLogOffUser parameter to zero. This allows the session configuration setting in specified group policies to handle signing off user sessions."

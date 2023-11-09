@@ -4,11 +4,10 @@ title: Select an option to implement directory and identity services using Activ
 metadata:
   title: Select an option to implement directory and identity services using Active Directory Domain Services in Azure
   description: "Select an option to implement directory and identity services using Active Directory Domain Services in Azure"
-  ms.date: 05/05/2022
+  ms.date: 08/25/2023
   author: wwlpublish
   ms.author: v-anwarr
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

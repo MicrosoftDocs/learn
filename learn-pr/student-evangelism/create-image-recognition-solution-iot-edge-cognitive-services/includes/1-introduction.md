@@ -1,6 +1,6 @@
-Azure IoT Edge allows you to move your workloads from the cloud to the edge. Doing so enables you to run your workloads locally on edge devices closer to where your data is being generated. This approach fits well with services that process large amounts of data, such as computer vision models. Cognitive Services with IoT Edge let you build a solution and deploy them to IoT devices as containers. When implemented together, Azure IoT Edge and Azure Cognitive Services enable you to find insights from images or video streams on the edge without transferring all of the data off-site first.
+Azure IoT Edge allows you to move your workloads from the cloud to the edge. Doing so enables you to run your workloads locally on edge devices closer to where your data is being generated. This approach fits well with services that process large amounts of data, such as computer vision models. Azure AI services with IoT Edge let you build a solution and deploy them to IoT devices as containers. When implemented together, Azure IoT Edge and Azure AI services enable you to find insights from images or video streams on the edge without transferring all of the data off-site first.
 
-Suppose you work as a Data Scientist and you are responsible for deploying Cognitive Services that implement the image recognition function for self-checkouts used in supermarkets. The system should include an image-to-speech capability to enable visually impaired people to use the self-checkout. The system will run the scanned item image against a pre-trained machine learning model to identify the item scanned. The item will then be weighed, and the cost will be calculated depending on the identification. This facility avoids the visually impaired person having to look at the item. Using text-to-speech, the customer will be informed by an audio message that the item has been scanned. The business logic for the image recognition module will reside in the device. The system will identify the scanned item and convert a label of the image to speech.
+Suppose you work as a Data Scientist and you are responsible for deploying Azure AI services that implement the image recognition function for self-checkouts used in supermarkets. The system should include an image-to-speech capability to enable visually impaired people to use the self-checkout. The system will run the scanned item image against a pre-trained machine learning model to identify the item scanned. The item will then be weighed, and the cost will be calculated depending on the identification. This facility avoids the visually impaired person having to look at the item. Using text to speech, the customer will be informed by an audio message that the item has been scanned. The business logic for the image recognition module will reside in the device. The system will identify the scanned item and convert a label of the image to speech.
 
 To implement this approach, you could build and train the image recognition module in the cloud, dedicated to a given domain (such as identifying fruit), and deploy the model as a container to the device.
 
@@ -13,7 +13,7 @@ By the end of this module, you'll be able to connect IoT devices to the cognitiv
 
 ## Learning objectives
 
-- Use a pre-trained image classification module with Azure Cognitive Services
+- Use a pre-trained image classification module with Azure AI services
 
 - Deploy your solution to the IoT Edge using Visual Studio Code
 
@@ -23,7 +23,7 @@ By the end of this module, you'll be able to connect IoT devices to the cognitiv
 
 - Basic knowledge of IoT Edge
 
-- Basic knowledge of Cognitive Services
+- Basic knowledge of Azure AI services
 
 - Ability to use Visual Studio Code 
 

@@ -67,13 +67,14 @@ Open the [Azure Data Factory Studio](https://adf.azure.com/) and select your Azu
     > [!NOTE]
     > You can choose to schedule the pipeline if your data is changing and you need to keep your index up-to-date. For this example, you'll import the data once.
 
-    :::image type="content" source="../media/create-http-linked-service.png" alt-text="A screenshot showing creating an HTTP linked service." lightbox="../media/create-http-linked-service.png":::
-
 #### Create the source linked service
 
 1. In **Source type**, select **HTTP**.
 1. Next to **Connection**, select **+ New connection**.
-1. In the **New linked service** pane, in **Name** enter **dataLocation**.
+
+    :::image type="content" source="../media/create-http-linked-service-new-small.png" alt-text="A screenshot showing creating an HTTP linked service." lightbox="../media/create-http-linked-service-new.png":::
+
+1. In the **New connection** pane, in **Name** enter **dataLocation**.
 1. In the **Base URL**, enter where your JSON file resides, in this example enter **https://raw.githubusercontent.com/Azure-Samples/azure-sql-db-import-data/main/json/user1.json**.
 1. In **Authentication type**, select **Anonymous**.
 1. Select **Create**.
@@ -84,12 +85,13 @@ Open the [Azure Data Factory Studio](https://adf.azure.com/) and select your Azu
 1. In **File format**, select **JSON**.
 1. Select **Next**.
 
-    :::image type="content" source="../media/create-search-linked-service.png" alt-text="A screenshot showing creating a linked service to cognitive search." lightbox="../media/create-search-linked-service.png":::
-
 #### Create the target linked service
 
-1. In **Target type**, select **Azure Search**.
-1. In the **New linked service** pane, in **Name** enter **searchIndex**.
+1. In **Destination type**, select **Azure Search**. Then select **+ New connection**.
+
+    :::image type="content" source="../media/create-search-linked-service-small.png" alt-text="A screenshot showing creating a linked service to cognitive search." lightbox="../media/create-search-linked-service.png":::
+
+1. In the **New connection** pane, in **Name** enter **search_index**.
 1. In **Azure subscription**, select your Azure subscription.
 1. In **Service name**, select your Azure Cognitive Search service.
 1. Select **Create**.
@@ -99,7 +101,7 @@ Open the [Azure Data Factory Studio](https://adf.azure.com/) and select your Azu
 
 1. Select **Next**.
 
-    :::image type="content" source="../media/update-schema-mapping.png" alt-text="A screenshot of the schema mapping pane." lightbox="../media/update-schema-mapping.png":::
+    :::image type="content" source="../media/update-schema-mapping-new-small.png" alt-text="A screenshot of the schema mapping pane." lightbox="../media/update-schema-mapping-new.png":::
 
 1. If you created an index with field names that match the JSON attributes ADF will automatically map the JSON to the field in your search index.
 1. In the above example, three fields in the JSON document need mapping to fields in the index.
@@ -123,7 +125,7 @@ Following these steps you've seen how you can push data into an index. The pipel
 
 ### Limitations of using the built-in Azure Cognitive Search as a linked service
 
-At the moment, the Cognitive Search linked service as a sink only supports these fields:
+At the moment, the Azure Cognitive Search linked service as a sink only supports these fields:
 
 |Azure Cognitive Search data type  |
 |---------|

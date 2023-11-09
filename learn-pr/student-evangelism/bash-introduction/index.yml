@@ -7,8 +7,8 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-bash
   ms.custom: team=nextgen
+  ms.devlang: bash
 title: Introduction to Bash
 summary: Use Bash to manage IT infrastructure.
 abstract:  | 

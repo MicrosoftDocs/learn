@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.open-ai-dotnet-text-completions.5-improve-completion-quality
+title: Understand prompts to improve completion quality
+metadata:
+  title: Understand prompts to improve completion quality
+  description: How to improve prompts to increase the quality of the text completion results
+  ms.date: 08/24/2023
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-improve-completion-quality.md)]

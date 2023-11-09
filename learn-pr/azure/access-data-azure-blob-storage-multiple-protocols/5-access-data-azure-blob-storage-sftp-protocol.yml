@@ -6,8 +6,8 @@ metadata:
   title: Access data from Azure Blob Storage by using the SFTP protocol.
   description: This unit describes how Azure Blob Storage supports data access by using the SFTP protocol.
   ms.date: 12/27/2021
-  author: AnuSridhar-25
-  ms.author: v-anursr
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

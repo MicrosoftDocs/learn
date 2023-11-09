@@ -4,11 +4,10 @@ title: Choose the appropriate compute target
 metadata:
   title: Choose the appropriate compute target
   description: "Learn about the different available compute targets in Azure Machine Learning, and how to choose when to use which type."
-  ms.date: 04/10/2023
+  ms.date: 07/31/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 7
 content: |
   [!include[](includes/2-compute-targets.md)]

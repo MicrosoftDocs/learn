@@ -1,0 +1,27 @@
+### YamlMime:ModuleUnit
+uid: learn.owasp-top-10-for-dotnet-developers.server-side-request-forgery
+title: Server-side request forgery
+metadata:
+  title: server-side-request-forgery
+  description: "OWASP Top 10 for .NET Developers. Server-side request forgery."
+  ms.date: 06/12/2023
+  author: obrocki
+  ms.author: dawidobrocki
+  ms.topic: interactive-tutorial
+  ms.custom: devx-track-dotnet
+  ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
+durationInMinutes: 2
+content: |
+  [!include[](includes/12-server-side-request-forgery.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:   
+  - content: "Performing input validation on client side only is considered to be best practice?"
+    choices:
+    - content: "Yes."
+      isCorrect: false
+      explanation: "Client side validation should never be the only line of defense when dealing with user input. Always validate on both client and server side."
+    - content: "No."
+      isCorrect: true
+      explanation: "Always validate on both client and server side."   

@@ -1,3 +1,4 @@
+
 Continuous Integration is one of the key pillars of DevOps.
 
 Once you have your code in a version control system, you need an automated way of integrating the code on an ongoing basis.

@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.create-manage-device-templates
+metadata:
+  title: Create and manage device templates in Azure IoT Central
+  description: Examine the features and component sections of the device template, a blueprint that defines the characteristics and behaviors of a type of device.
+  ms.date: 05/11/2023
+  author: dominicbetts
+  ms.author: dobett
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: module-standard-task-based
+  ms.prod: azure-iot-central
+title: Create and manage device templates in Azure IoT Central
+summary: Examine the features and component sections of the device template, a blueprint that defines the characteristics and behaviors of a type of device that connects to your application.
+abstract: |
+  After you complete this module, you'll be able to:
+  - Describe the features and components of a device template.
+  - Describe the component sections of a device template.
+  - Describe how to version a device template.
+prerequisites: |
+  - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
+  - Describe the features, capabilities, and data workflows of an IoT solution.
+  - Describe the components and capabilities of Azure IoT Central.
+iconUrl: /training/achievements/iot/create-manage-device-templates.svg
+levels:
+- intermediate
+roles:
+- administrator
+- developer
+- solution-architect
+products:
+- azure-iot
+- azure-iot-central
+subjects:
+- iot
+units:
+- learn.wwl.create-manage-device-templates.introduction
+- learn.wwl.create-manage-device-templates.introduction-to-device-templates
+- learn.wwl.create-manage-device-templates.create-device-capability-model
+- learn.wwl.create-manage-device-templates.add-cloud-properties-to-device-template
+- learn.wwl.create-manage-device-templates.add-customizations-to-device-template
+- learn.wwl.create-manage-device-templates.add-dashboards-to-device-template
+- learn.wwl.create-manage-device-templates.version-device-template
+- learn.wwl.create-manage-device-templates.knowledge-check
+- learn.wwl.create-manage-device-templates.summary
+badge:
+  uid: learn.wwl.create-manage-device-templates.badge

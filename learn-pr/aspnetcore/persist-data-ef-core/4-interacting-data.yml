@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.persist-data-ef-core.interacting-data
-title: Exercise - Interacting with data
+title: Exercise - Interact with data
 metadata:
-  title: Exercise - Interacting with data
-  description: "Write code to interact with databases using EF Core."
+  title: Exercise - Interact with data
+  description: "Write code to interact with databases by using EF Core."
   ms.date: 12/13/2021
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
 durationInMinutes: 10
@@ -20,7 +21,7 @@ quiz:
       choices:
       - content: "Set the entity's state to `EntityState.Unchanged`."
         isCorrect: false
-        explanation: "Incorrect. The entity is being tracked automatically by the `DbContext`. Manually setting the `Unchanged` state fools the `DbContext` into thinking there were no object graph changes."
+        explanation: "Incorrect. The entity is automatically tracked by `DbContext`. Manually setting the `Unchanged` state directs the `DbContext` process as if there were no object graph changes."
       - content: "Chain the `ToListAsync()` method call to the LINQ query or fluent method chain."
         isCorrect: false
         explanation: "Incorrect. The `ToListAsync` method returns the result set as a `List<T>` collection."

@@ -7,10 +7,12 @@ metadata:
   ms.date: 10/28/2020
   author: codemillmatt
   ms.author: masoucou
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - devx-track-dotnet
   ms.contributors:
   - masoucou-06132021
 durationInMinutes: 7

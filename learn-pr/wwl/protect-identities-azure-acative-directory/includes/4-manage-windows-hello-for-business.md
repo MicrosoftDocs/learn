@@ -33,6 +33,11 @@ When you open this setting, in the content pane, double-click **Use Windows Hell
 
 ### Windows Hello for Business certificate
 
-Windows Hello for Business setup is where you start by enrolling your Windows Hello for Business authentication certificate. This certificate has an expiration date, which depends on how long you've set it up in the Windows Hello for Business authentication certificate template. To avoid any authentication issues caused by expired certificates, the Windows certificate auto-enrollment was improved to renew them before they expire. So, you won't have to worry about failing to authenticate due to expired certificates anymore!
+A Windows Hello for Business certificate is an authentication credential used in certificate-based Windows Hello for Business deployments.
+The certificate is a digital identity for a user or device issued by a trusted certificate authority (CA) within an organization's public key infrastructure (PKI). When a user attempts to authenticate, the Windows Hello for Business certificate is presented to verify their identity, and the system checks the certificate's validity against the issuing CA.
+Using a Windows Hello for Business certificate provides several benefits, such as enhanced security through strong cryptographic mechanisms, easier management of user credentials, and seamless integration with existing PKI infrastructure. It enables organizations to take advantage of passwordless authentication while maintaining high levels of security and compliance.
+
+This certificate has an expiration date, which depends on how long you've set it up in the Windows Hello for Business authentication certificate template. To avoid any authentication issues caused by expired certificates, the Windows certificate auto-enrollment was improved to renew them before they expire. So, you won't have to worry about failing to authenticate due to expired certificates anymore!
 
 The process requires no user interaction, provided the user signs in using Windows Hello for Business.
+

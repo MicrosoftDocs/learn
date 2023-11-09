@@ -1,8 +1,8 @@
 Reading data from files and writing data to files are core concepts in .NET.
 
-Tailwind Traders needs to write the total of all the individual store sales files to a new file. This file will then be loaded into the company's sales system.
+Tailwind Traders needs to write the total of all the individual store sales files to a new file. Then, load the file into the company's sales system.
 
-Here, you'll learn how to use the `File` class to read and write to files.
+Here, you learn how to use the `File` class to read and write to files.
 
 ## Read data from files
 
@@ -70,7 +70,7 @@ File.WriteAllText($"salesTotalDir{Path.DirectorySeparatorChar}totals.txt", data.
 
 ### Append data to files
 
-In the preceding example, the file is overwritten every time you write to it. Sometimes you don't want that; you want to append data to the file, not replace it entirely. You can append data with the `File.AppendAllText` method. By default, `File.AppendAllText` will create the file if it doesn't already exist.
+In the preceding example, the file is overwritten every time you write to it. Sometimes, you don't want that. You want to append data to the file, instead of replacing it entirely. You can append data with the `File.AppendAllText` method. By default, `File.AppendAllText` creates the file if it doesn't already exist.
 
 ```csharp
 var data = JsonConvert.DeserializeObject<SalesTotal>(salesJson);

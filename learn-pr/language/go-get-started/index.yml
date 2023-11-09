@@ -7,8 +7,8 @@ metadata:
   author: danmabee
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.devlang: go
 title: Get started with Go
 summary: In this module, you’ll start taking your first steps with Go.
 abstract:  |

@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: iot-dps
 title: Examine Device Provisioning Service terms and concepts
 summary: This module introduces you to features of the Device Provisioning Service, enrollment types, attestation mechanisms, and the stages within the provisioning lifecycle.
 abstract: |
@@ -27,7 +27,6 @@ roles:
 - developer
 products:
 - azure
-- azure-iot-dps
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal

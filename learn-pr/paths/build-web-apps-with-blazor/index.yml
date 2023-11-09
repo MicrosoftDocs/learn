@@ -9,6 +9,9 @@ metadata:
   author: csharpfritz
   ms.author: jefritz
   ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
   ms.prod: learning-blazor
 prerequisites: None
 iconUrl: /training/achievements/build-blazor-webapps.svg
