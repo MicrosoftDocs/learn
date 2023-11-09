@@ -11,7 +11,7 @@ The WMS solution is a .NET application running on IIS and uses SQL Server for it
 
 ## Measure the workload design's total cost
 
-**Measure the total cost incurred by technology and automation choices, taking into account the impact on ROI. The design must work within the acceptable boundaries for all functional and nonfunctional requirements. The design must also be flexible to accommodate predicted evolution. Factor in the cost of acquisition, training, and change management.**
+**Measure the total cost incurred by technology and automation choices, taking into account the impact on return on investment (ROI). The design must work within the acceptable boundaries for all functional and nonfunctional requirements. The design must also be flexible to accommodate predicted evolution. Factor in the cost of acquisition, training, and change management.**
 
 Implementing a balanced approach that takes ROI into account prevents over-engineering, which might increase costs.
 
@@ -58,5 +58,5 @@ Enforcement via governance policies or built-in application design patterns can 
 
 - The team educates themselves about Azure cost management solutions.
 - The team plans to setup scale limits for the Azure App Service plans.
-- The team plans to setup policies to disallow the use of certain higher priced SKUs for the resource types that will be used in the Azure deployment.
+- The team plans to setup a Deny policy for certain higher priced virtual machine SKUs to disallow those SKUs from being deployed.
 - The team plans to implement automation to help control storage costs. Certain data types will automatically move from hot storage to cold or archive storage based on criteria like date of last access. This type of automation is not possible in the HCI environment.
