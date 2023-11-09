@@ -19,7 +19,7 @@ StormEvents // tabular expression statement 1
 
 ## Let statements
 
-A *let statement*, defines a binding between a name and an expression. Let statements can be used to break a long query into small named parts that are easier to understand.
+A `let` statement defines a binding between a name and an expression. Let statements can be used to break a long query into small named parts that are easier to understand.
 
 For example, the `let` statements in the following query are used to define scalar values:
 

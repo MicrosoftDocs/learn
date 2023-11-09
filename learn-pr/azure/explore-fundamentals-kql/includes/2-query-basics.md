@@ -23,11 +23,14 @@ There are various ways you can return data from a database, including:
 
 A query language consists of a set of keywords, operators, and syntax rules for writing statements that return data from a database.
 
-There are many query languages, each with its own syntax, capabilities, and strengths. Common query languages include Structured Query Language (SQL), a standard language for storing, manipulating and retrieving data in databases. And XQuery, a query language for XML data.
+There are many query languages, and each has its own syntax, capabilities, and strengths. Common query languages include:
+
+- **Structured Query Language (SQL)** - A standard language for storing, manipulating and retrieving data in databases.
+- **XQuery** - A query language for XML data.
 
 ## Why use KQL? 
 
-KQL was developed as part of Azure Data Explorer, a big data analytics platform for near-real-time analysis of large volumes of data streamed in from multiple sources. These capabilities make Azure Data Explorer and KQL the perfect foundation for services that require near-real-time monitoring and analytics. A foundation that helps ensure service and resource reliability, performance, and security.
+KQL was developed as part of Azure Data Explorer, a big data analytics platform for near-real-time analysis of large volumes of data streamed in from multiple sources. By ensuring service and resource reliability, performance, and security, the Azure Data Explorer and KQL form the perfect foundation for services that require near-real-time monitoring and analytics.
 
 In a later unit in this module, we take a quick look at Azure services that apply KQL's ability to quickly analyze large volumes of varied data.
 

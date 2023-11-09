@@ -1,4 +1,4 @@
-Now that you're familiar with how query languages work, and where KQL can be used. Let's explore the way a KQL query is built.
+Now that you're familiar with how query languages work and where KQL can be used, let's explore the way a KQL query is built.
 
 ## KQL query structure
 

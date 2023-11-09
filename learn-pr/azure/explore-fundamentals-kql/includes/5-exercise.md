@@ -93,6 +93,6 @@ resources
 Here's a step-by-step analysis of how the query processes the data.
 
 1. The query begins with the `Resources` table as the tabular input.
-1. It filters on records for which the `type`` column contains the term *storage*. 
+1. It filters on records for which the `type` column contains the term *storage*. 
 1. The resulting list is sorted in descending order based on the *LastEnabledTime* value in the dynamic field called `properties`.
 1. Finally, the top 10 records are returned.
