@@ -1,6 +1,6 @@
 You should scale out a system when you expect an increase in traffic. You might also scale out in response to declining performance.
 
-Remember that, in the hotel reservation system example, you increase the number of instances of the web app when you anticipate extra traffic because of a special event, a special offer, or seasonal fluctuations. You scale the system back when the demand drops.
+In the hotel reservation system example, you increase the number of instances of the web app when you anticipate extra traffic because of a special event, a special offer, or seasonal fluctuations. You scale the system back when the demand drops.
 
 In this exercise, you create an App Service plan and deploy a web app using this plan. You monitor the performance of the web app under load. Then scale out the app and verify that the plan improved the app's performance.
 
@@ -35,7 +35,7 @@ The exercise also runs a client app that simulates several users issuing POST an
     | Operating System     | Windows |
     | Region               | Accept *default* |
     | **App Service Plan** |         |
-    | Windows Plan       ) | Accept *default* |
+    | Windows Plan         | Accept *default* |
     | Pricing plan         | Accept *default* |
 
 1. Select **Review + create** > **Create**. Wait for the web app to be created and deployed.
@@ -174,7 +174,7 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 1. In the **Dashboard name** dropdown list, enter your web app name, and then select **Create and pin**.
 
-1. Allow the system to run for five minutes to stabilize, and then note the CPU Time, the number of HTTP 4xx errors, and the average response time. You should see a significant number of HTTP 4xx errors. These are HTTP 408 Timeout errors. The average response time is several seconds. You might see the occasional HTTP server error, depending on how the web server is coping with the burden.
+1. Allow the system to run for five minutes to stabilize, and then note the CPU Time, the number of HTTP 4xx errors, and the average response time. You should see a significant number of HTTP 4xx errors. These errors are HTTP 408 Timeout errors. The average response time is several seconds. You might see the occasional HTTP server error, depending on how the web server is coping with the burden.
 
    :::image type="content" source="../media/3-web-app-chart-before-scaling-out.png" alt-text="Screenshot showing the performance metrics for the web app before scaling out." lightbox="../media/3-web-app-chart-before-scaling-out.png":::
 

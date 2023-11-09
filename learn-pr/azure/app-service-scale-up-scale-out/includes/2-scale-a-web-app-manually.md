@@ -28,7 +28,9 @@ When you create a web app, you can either create a new App Service plan or use a
 
 You scale out by adding more instances to an App Service plan, up to the limit available for your selected tier. If you're not using the Free tier, you're charged for each instance on an hourly basis. You can perform this task in the Azure portal.
 
-The key to scaling effectively is knowing when to scale, and by how much. You monitor the performance of a web app by using the metrics available for the App Service. The simplest way to do this task is to use the Azure portal. If you notice a steady increase in resource use, such as CPU utilization, memory occupancy, or disk queue length, you should consider scaling out before these metrics hit a critical point. You should also monitor the average response time of requests and the number of failing requests. If both of these figures are high, the system might be running close to or beyond capacity. You might need to scale out immediately.
+The key to scaling effectively is knowing when to scale, and by how much. You monitor the performance of a web app by using the metrics available for the App Service. The simplest way to do this task is to use the Azure portal.
+
+If you notice a steady increase in resource use, such as CPU utilization, memory occupancy, or disk queue length, you should consider scaling out before these metrics hit a critical point. You should also monitor the average response time of requests and the number of failing requests. If both of these figures are high, the system might be running close to or beyond capacity. You might need to scale out immediately.
 
 If the metrics indicate that your system is lightly loaded and has plenty of spare capacity, you might want to scale back in to reduce costs.
 

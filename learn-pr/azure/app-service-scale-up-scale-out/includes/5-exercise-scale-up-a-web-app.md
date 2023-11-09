@@ -38,7 +38,7 @@ In this exercise, scale up the hotel reservation system web app that you deploye
 
 1. Under **Settings**, select **Scale up (App Service plan)**.
 
-1. Select the **P2V2** pricing tier and then select **Apply**. This pricing tier gives you 420 ACU (more than four times the power of the S1 pricing tier), and 7 GB of memory, that runs on a Dv2-Series virtual machine. But this virtual machine costs four times the cost of running the S1 pricing tier.
+1. Select the **P2V2** pricing tier and then select **Apply**. This pricing tier gives you 420 ACU (more than four times the power of the S1 pricing tier) and 7 GB of memory that runs on a Dv2-Series virtual machine. But this virtual machine costs four times the cost of running the S1 pricing tier.
 
 1. Wait for another five minutes, and then view the performance chart on the dashboard in the Azure portal.
 
