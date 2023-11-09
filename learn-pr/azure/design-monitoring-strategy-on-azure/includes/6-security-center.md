@@ -20,8 +20,6 @@ You must understand your architecture's security posture to help you build and m
 
 Defender for Cloud uses Azure Monitor Logs to collect data from your VMs to monitor for security vulnerabilities and threats. An agent reads various security-related configurations and event logs from the VM and copies the data to your Log Analytics workspace for analysis.
 
-:::image type="content" source="../media/6-security-center-update-01.png" alt-text="Screenshot of Microsoft Defender for Cloud Overview screen." lightbox="../media/6-security-center-update-01.png":::
-
 Defender for Cloud recommends ways to address the issues and risks that it uncovers. You can use recommendations to improve the security and compliance of your architecture.
 
 :::image type="content" source="../media/6-security-center-update-02.png" alt-text="Screenshot of recommendation in Microsoft Defender for Cloud." lightbox="../media/6-security-center-update-02.png":::

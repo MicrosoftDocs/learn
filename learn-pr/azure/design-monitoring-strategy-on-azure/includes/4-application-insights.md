@@ -54,15 +54,15 @@ You can use the Application Insights **Availability** page to continuously monit
 
 :::image type="content" source="../media/4-application-insights-07.png" alt-text="Screenshot of viewing application availability by locations over time." lightbox="../media/4-application-insights-07.png":::
 
+After you create an availability test, you can use the **Availability** page to see how your application is doing across different locations. Each dot on the **Scatter Plot** graph represents a test that was run. A red dot means that the test failed.
+
+Select a red dot to see a detailed breakdown of the test failure, including information on what might have caused it. You can use the information to respond appropriately.
+
 To create an availability test in the Azure portal, select **Availability** from the Application Insights left navigation, and then select **Add Standard test**. On the **Create Standard test** screen, specify details like frequency, the URL of your application, and locations from which to test the app.
 
 The following example shows the configuration of a test that sends a request to an application every five minutes from five geographic locations.
 
 :::image type="content" source="../media/4-application-insights-08.png" alt-text="Screenshot of availability test creation." lightbox="../media/4-application-insights-08.png":::
-
-After you create your availability test, you can use the **Availability** page to see how your application is doing across different locations. Each dot on the **Scatter Plot** graph represents a test that was run. A red dot means that the test failed.
-
-Select a red dot to see a detailed breakdown of the test failure, including information on what might have caused it. You can use the information to respond appropriately.
 
 ## Get notifications and take action
 
