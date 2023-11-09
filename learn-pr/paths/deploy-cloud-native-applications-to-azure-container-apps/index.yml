@@ -2,8 +2,8 @@
 uid: learn.wwl.deploy-cloud-native-applications-to-azure-container-apps
 metadata:
   title: Deploy cloud-native apps using Azure Container Apps
-  description: Deploy cloud-native apps using Azure Container Apps
-  ms.date: 11/08/2023
+  description: Learn how to build, deploy, scale, and manage containerized cloud-native apps using Azure Container Apps, Azure Container Registry, and Azure Pipelines.
+  ms.date: 11/09/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: learning-path
