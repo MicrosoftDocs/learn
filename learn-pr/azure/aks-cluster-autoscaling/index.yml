@@ -3,14 +3,14 @@ uid: learn.aks-cluster-autoscaling
 metadata:
   type: standard
   title: Automatically scale your AKS clusters with the cluster autoscaler
-  description: Learn how configure automatically scaling for your AKS clusters using the cluster autoscaler.
+  description: Learn how to configure automatic scaling for your AKS clusters using the cluster autoscaler.
   ms.date: 11/08/2023
   author: nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.service: azure-kubernetes-service
 title: Automatically scale your AKS clusters with the cluster autoscaler
-summary: Learn how configure automatically scaling for your AKS clusters using the cluster autoscaler.
+summary: Learn how to configure automatic scaling for your AKS clusters using the cluster autoscaler.
 abstract: |
   By the end of this module, you'll be able to:
   - Understand how cluster scalability can affect your workloads.
