@@ -1,8 +1,8 @@
-In the shipping-company scenario, you installed a web application by creating the Virtual Machine Scale Set. You now need to update the web app and install a new version across all VMs in the scale set. 
+In the shipping-company scenario, you installed a web application by creating the Virtual Machine Scale Set. You now need to update the web app and install a new version across all virtual machines (VMs) in the scale set. 
 
-You must ensure that the system will remain available during the rollout. A good way to ensure availability is to use a custom script extension to do the update. Apply this script across the Virtual Machine Scale Set. The scale set will apply the update to one VM at a time, leaving the other VMs up and running.
+You must ensure that the system remains available during the rollout. A good way to ensure availability is to use a custom script extension to do the update. Apply this script across the Virtual Machine Scale Set. The scale set applies the update to one VM at a time, leaving the other VMs up and running.
 
-In this exercise, you'll use a custom script extension to roll out a new version of the web app. You'll edit the message that's provided by the nginx server. You can use the same approach for bigger updates.
+In this exercise, you use a custom script extension to roll out a new version of the web app. Edit the message that the nginx server provides. You can use the same approach for bigger updates.
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the instructions to understand how to use the REST API to retrieve metrics.
