@@ -25,6 +25,18 @@ Before creating a custom SIT, you should be familiar with sensitive information 
 
 Also, confirm your organization has a Microsoft Purview DLP-capable subscription like Office 365 Enterprise.
 
+### Fundamental parts of a sensitive information type
+
+Every sensitive information type entity includes these fields:
+
+- **Name**: The identifier of the SIT
+- **Description**: Explains what data the SIT is looking for
+- **Pattern**: A pattern defines the sensitive information detection criteria, consisting of:
+  - **Primary element**: The main pattern that the sensitive information type is looking for. It can be a **regular expression** with or without a checksum validation, a **keyword list**, a **keyword dictionary**, or a **function**.
+  - **Supporting element**: Additional evidence that increases the confidence of the match. For example, keyword "SSN" in proximity to a Social Security Number (SSN). It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.
+  - **Confidence level**: Reflects how much supporting evidence is detected along with the primary element, ranging from high to medium to low. The more supporting evidence an item contains, the higher the confidence that a matched item contains the sensitive info you're looking for.
+  - **Proximity**: The number of characters between the primary and supporting elements.
+
 ### Create a custom sensitive information type
 
 To create a custom sensitive information type, you need to:
