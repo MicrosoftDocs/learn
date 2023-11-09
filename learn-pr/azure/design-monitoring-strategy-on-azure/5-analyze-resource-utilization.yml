@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.5-analyze-resource-utilization
 metadata:
-  title: Monitor VMs and containers with insights
+  title: Monitor VMs and containers by using insights
   description: Analyze VM and container utilization and performance by using Azure Monitor VM insights and container insights.
   ms.date: 03/22/2021
   author: kayodeprinceMS
   ms.author: kaprince
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Monitor VMs and containers with insights
+title: Monitor VMs and containers by using insights
 durationInMinutes: 10
 content: |
   [!include[](includes/5-analyze-resource-utilization.md)]
@@ -34,6 +34,6 @@ quiz:
     - content: VM insights
       isCorrect: false
       explanation: VM insights is an Azure Monitor feature that helps get you started monitoring VM clients, not containers.
-    - content: Grafana dashboards
+    - content: Grafana
       isCorrect: false
-      explanation: Grafana dashboards are for analyzing and visualizing data from data sources like Prometheus.
+      explanation: Grafana is a dashboard platform for analyzing and visualizing data from data sources like Prometheus.

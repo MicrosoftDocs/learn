@@ -15,17 +15,6 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Why do you use Azure Application Insights?
-    choices:
-    - content: To analyze and address problems that affect your cloud infrastructure's security.
-      isCorrect: false
-      explanation: Azure Application Insights is used for applications. You use Microsoft Defender for Cloud for your infrastructure's security.
-    - content: To analyze and address problems that affect enterprise security.
-      isCorrect: false
-      explanation: You use Microsoft Sentinel for enterprise security. Azure Application Insights is used for your applications.
-    - content: To analyze and address problems that affect your application's health.
-      isCorrect: true
-      explanation: You can use Application Insights to analyze and address application issues such as exceptions, failures, and availability problems.
   - content: Which aspects of application performance can Application Insights monitor?
     choices:
     - content: Key Vault requests and latency

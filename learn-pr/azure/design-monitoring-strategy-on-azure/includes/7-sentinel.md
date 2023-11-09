@@ -8,7 +8,7 @@ This unit describes how Microsoft Sentinel helps monitor and respond to security
 
 ## Connect your data sources to Microsoft Sentinel
 
-To implement Microsoft Sentinel, you need a Log Analytics workspace. When you create a Microsoft Sentinel resource in the Azure portal, you can create a Log Analytics workspace or connect an existing workspace.
+To implement Microsoft Sentinel, you need a Log Analytics workspace. When you create a Microsoft Sentinel resource in the Azure portal, you can create a new Log Analytics workspace or connect an existing workspace.
 
 :::image type="content" source="../media/7-sentinel-01.png" alt-text="Screenshot of adding a Log Analytics workspace." lightbox="../media/7-sentinel-01.png":::
 
@@ -40,7 +40,7 @@ When you create a rule, you specify whether it should be enabled or disabled, an
 
 :::image type="content" source="../media/7-sentinel-06.png" alt-text="Screenshot of Create alert rule." lightbox="../media/7-sentinel-06.png":::
 
-For example, you can enter the following query to determine if a suspicious number of Azure VMs are created or updated, or a suspicious number of resource deployments occur.
+For example, the following query can determine if a suspicious number of Azure VMs are created or updated, or a suspicious number of resource deployments occur.
 
 ```kusto
 AzureActivity
@@ -53,21 +53,17 @@ In the **Query scheduling** section, you can set how often the query should run 
 
 ## Investigate incidents
 
-Microsoft Sentinel combines generated alerts into incidents for further investigation. Select **Incidents** in the Microsoft Sentinel left navigation under **Threat management** to see details about all your incidents, such as how many incidents you closed, how many remain open, when the incidents happened, and their severity.
+Microsoft Sentinel combines generated alerts into incidents for further investigation. Select **Incidents** in the Microsoft Sentinel left navigation under **Threat management** to see details about all your incidents, such as how many incidents are closed, how many remain open, when the incidents happened, and their severity.
 
 To start to investigate an incident, select the incident. You get information about the incident in the right pane. Select **View full details** to get more information.
 
 :::image type="content" source="../media/7-sentinel-07.png" alt-text="Screenshot of the Incidents page." lightbox="../media/7-sentinel-07.png":::
 
-To investigate the incident, update its status from **New** to **In progress**.
+To investigate the incident, update its status from **New** to **Active**, assign it to an owner, and select **Investigate**.
 
 :::image type="content" source="../media/7-sentinel-08.png" alt-text="Screenshot of Incident detail." lightbox="../media/7-sentinel-08.png":::
 
-Assign the incident to an owner.
-
-:::image type="content" source="../media/7-sentinel-09.png" alt-text="Screenshot of selecting incident owner." lightbox="../media/7-sentinel-09.png":::
-
-You're now ready to investigate. Select **Investigate** to get an investigation map that helps you understand what caused an incident and the affected scope. You can also use the map to correlate data surrounding an incident.
+The investigation map helps you understand what caused an incident and the affected scope. You can also use the map to correlate data surrounding an incident.
 
 :::image type="content" source="../media/7-sentinel-10.png" alt-text="Screenshot of an investigation map." lightbox="../media/7-sentinel-10.png":::
 
@@ -85,7 +81,7 @@ The investigation map also gives you a timeline that helps you understand which 
 
 ## Respond to threats with playbooks
 
-Playbooks can help you automatically respond to threats in Microsoft Sentinel. To create a new playbook, select **Automation** under **Configuration** in the Microsoft Sentinel left navigation.
+Playbooks can help you automatically respond to threats in Microsoft Sentinel. To create a new playbook, select **Automation** under **Configuration** in the Microsoft Sentinel left navigation, and then select **Create**.
 
 :::image type="content" source="../media/7-sentinel-14.png" alt-text="Screenshot of Microsoft Sentinel playbooks." lightbox="../media/7-sentinel-14.png":::
 

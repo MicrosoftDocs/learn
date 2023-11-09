@@ -14,7 +14,7 @@ Azure Monitor collects telemetry directly from Azure platform resources, and you
 
 Azure Monitor stores the collected data in centralized and fully managed data stores: *Azure Monitor Metrics* for numerical time-series values and *Azure Monitor Log Analytics workspaces* for resource logs. Azure Monitor  automatically collects and stores metrics for most Azure resources, but user configuration is required to send and store resource logs. You can choose how to consume, analyze, and respond to the collected data.
 
-In most cases, you should start with insights, which are guided monitoring and troubleshooting experiences for Azure resources. For example, you can use Azure Monitor container insights for your Kubernetes workloads.
+In most cases, you should start with *insights*, which are guided monitoring and troubleshooting experiences for Azure resources. For example, you can use Azure Monitor container insights for your Kubernetes workloads.
 
 You can also visualize the data yourself with Azure dashboards in the Azure portal, create business views with Power BI, or create interactive reports by using workbooks. Use Azure Monitor for a detailed view of your applications' and infrastructure's health on a single screen.
 

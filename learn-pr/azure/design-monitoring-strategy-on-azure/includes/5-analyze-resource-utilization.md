@@ -1,4 +1,4 @@
-Your organization has migrated several applications from on-premises to Azure virtual machines (VMs) and Azure Kubernetes Service (AKS). Several hundred Azure resources are deployed across several Azure subscriptions.
+Your organization has migrated several applications from on-premises to Azure virtual machines (VMs) and Azure Kubernetes Service (AKS). Several hundred Azure resources are now deployed across several Azure subscriptions.
 
 You must track resource usage to ensure that cloud resources are adequately provisioned and their performance meets business requirements. You need a monitoring approach that provides broad visibility and the capability to triage and isolate problems quickly.
 
@@ -19,7 +19,7 @@ VM insights is an Azure Monitor feature that helps get you started monitoring yo
 - Monitor your VMs at scale across multiple subscriptions and resource groups.
 - Get a topology view that shows the processes and network connection details of your VMs and virtual machine scale sets.
 
-To enable Azure Monitor VM insights, select **Virtual Machines** from the Azure Monitor left navigation, and then select **Configure Insights** on the **Get started** tab. On the **Overview** tab, select the VMs and virtual machine scale sets to monitor, and then select **Enable**.
+To enable Azure Monitor VM insights, select **Virtual Machines** from the Azure Monitor left navigation, and then select **Configure Insights** on the **Get started** tab. In the **Not monitored** section of the **Overview** tab, select the VMs and virtual machine scale sets to monitor, and then select **Enable**.
 
 :::image type="content" source="../media/5-analyze-resource-utilization-01.png" alt-text="Screenshot of getting started with Azure Monitor VM insights in the Azure portal." lightbox="../media/5-analyze-resource-utilization-01.png":::
 
@@ -75,9 +75,9 @@ Azure Monitor managed service for Prometheus is a component of Azure Monitor Met
 
 ### Integrate with Azure Managed Grafana
 
-The primary method for visualizing Prometheus metrics is Azure Managed Grafana. You can connect your Azure Monitor workspace to a Grafana workspace to use your Prometheus metrics data as a data source in a Grafana dashboard.
+[Grafana](https://grafana.com) is an open-source visualization and dashboarding platform that's the primary method for visualizing Prometheus metrics. You can connect your Azure Monitor workspace to a Grafana workspace to use your Prometheus metrics data as a data source in a Grafana dashboard.
 
-You can import prebuilt Grafana dashboards that use Prometheus metrics, or you can create custom dashboards. The following screenshot shows a Grafana dashboard that uses AKS monitoring data.
+Azure Managed Grafana is a fully managed implementation of Grafana that offers multiple predefined Grafana dashboards for monitoring Kubernetes and doing full-stack troubleshooting. You can import prebuilt Grafana dashboards that use Prometheus metrics, or you can create custom dashboards. The following screenshot shows an Azure Managed Grafana dashboard that uses AKS monitoring data.
 
 :::image type="content" source="../media/managed-grafana.png" alt-text="Screenshot of a Grafana dashboard that shows AKS monitoring data." lightbox="../media/managed-grafana.png":::
 

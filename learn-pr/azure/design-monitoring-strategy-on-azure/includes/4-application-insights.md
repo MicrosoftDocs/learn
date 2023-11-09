@@ -32,7 +32,7 @@ You can view more details of each component in the map by selecting it. For exam
 
 ## Monitor your applications' performance
 
-You can further investigate slow transactions to identify slow requests and server-side dependencies. Drill down by using the option to investigate performance from the application map, or by selecting **Performance** from the Application Insights left navigation.
+You can further investigate slow transactions to identify slow requests and server-side dependencies. Drill down by selecting **Investigate performance** from the application map, or by selecting **Performance** from the Application Insights left navigation.
 
 :::image type="content" source="../media/4-application-insights-05.png" alt-text="Screenshot of analyzing performance." lightbox="../media/4-application-insights-05.png":::
 
