@@ -75,6 +75,6 @@ With this approach, a single example is given, aiding the model in generating a 
 
 In this method, Copilot is presented with several examples, which strike a balance between zero-shot unpredictability and the precision of fine-tuning. Let's say you want to generate code that sends you a greeting depending on the time of the day. Here's a few-shot version of that prompt:
 
-:::image type="content" source="../media/generate-greeting-code-from-examples.png" alt-text="Screenshot of Copilot generating greeting code based on multiple examples.":::
+:::image type="content" source="../media/2-generate-greeting-code-from-examples.png" alt-text="Screenshot of Copilot generating greeting code based on multiple examples.":::
 
 Now that you know how Copilot uses your prompts to learn, let's take an in-depth look at how it actually uses your prompt to suggest code for you.
