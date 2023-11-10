@@ -25,14 +25,14 @@ In this exercise, you configure autoscaling. Define scale rules that scale out a
     |---|---|
     | Metric source | Current resource (webServerScaleSet) |
     | Metric name | Percentage CPU |
-    | Time aggregation | Average  |
-    | Time grain statistic | Average |
     | Operator | Greater than |
     | Threshold | 75 |
     | Duration | 10 |
+    | Time grain statistic | Average |
+    | Time aggregation | Average  |
     | Operation | Increase count by |
-    | Instance count | 1 |
     | Cool down (minutes) | 5 |
+    | Instance count | 1 |
 
 ## Create a scale-in rule
 
@@ -44,14 +44,14 @@ In this exercise, you configure autoscaling. Define scale rules that scale out a
     |---|---|
     | Metric source | Current resource (webServerScaleSet) |
     | Metric name | Percentage CPU |
-    | Time aggregation | Average  |
-    | Time grain statistic | Average |
     | Operator | Less than |
     | Threshold | 50 |
     | Duration | 10 |
+    | Time grain statistic | Average |
+    | Time aggregation | Average  |
     | Operation | Decrease count by |
-    | Instance count | 1 |
     | Cool down (minutes) | 5 |
+    | Instance count | 1 |
 
 1. Select **Save**.
 
