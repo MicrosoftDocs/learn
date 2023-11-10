@@ -66,7 +66,7 @@ Azure Spring Apps can automatically bind the MySQL database we created to our mi
 1. Select **Continue with...Database credentials** and fill in the username and password fields. The username is "spring" and the password is the password attribute that we copied earlier.
 
     > [!NOTE]
-    > If you forget your password, you can reset it by using `az mysql server update -n "$SPRING_CLOUD_NAME"-mysql -g "$RESOURCE_GROUP_NAME" -p <new-password>`
+    > If you forget your password, you can reset it by using `az mysql server update -n ${SPRING_CLOUD_NAME}-mysql -g "$RESOURCE_GROUP_NAME" -p <new-password>`
 
 1. Verify that **Configure firewall rules to enable access to target service** is selected.
 1. Click on **Next: Review + Create**.

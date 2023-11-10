@@ -1,5 +1,8 @@
 An Azure Spring Apps cluster can be created by using either [the Azure portal](https://portal.azure.com/?WT.mc_id=azurespringcloud-mslearn-judubois) or [the Azure CLI](/cli/azure/install-azure-cli?WT.mc_id=azurespringcloud-mslearn-judubois). In this first module, we'll configure the necessary tools, and create our first cluster.
 
+> [!IMPORTANT]
+> To avoid unnecessary charges in your Azure subscription, remember to deprovision your Azure resources when you finish this module.
+
 ## Set up the Azure CLI
 
 If it isn't already installed on your machine, install [the Azure CLI](/cli/azure/install-azure-cli?WT.mc_id=azurespringcloud-mslearn-judubois). You can check the version of your current Azure CLI installation by running:
