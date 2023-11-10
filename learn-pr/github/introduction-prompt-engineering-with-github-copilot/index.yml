@@ -10,7 +10,7 @@ metadata:
   ms.topic: module-intro-to-product
   ms.prod: github
 summary: >
-  Discover the essentials of create effective prompts with GitHub Copilot. Uncover techniques to transform your coding comments into precise, actionable code, enhancing your development workflow. 
+  Discover the essentials of creating effective prompts with GitHub Copilot. Uncover techniques to transform your coding comments into precise, actionable code, enhancing your development workflow. 
 abstract: |
   By the end of this module, you'll be able to:
   - Craft effective prompts that optimize GitHub Copilot's performance, ensuring precision and relevance in every code suggestion.

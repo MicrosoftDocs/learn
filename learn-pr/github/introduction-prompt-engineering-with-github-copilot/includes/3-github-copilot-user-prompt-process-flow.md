@@ -2,7 +2,7 @@ In this unit, we'll break down how GitHub Copilot turns your prompts into smart,
 
 ## Process
 
-Let's walk through what happens inside the Copilot's Large Language Model (LLM) when it gets a prompt and turns it into a code suggestion.
+Let's walk through all the steps Copilot takes to process a user's prompt into a code suggestion.
 
 :::image type="content" source="../media/3-prompt-processing-flow-diagram.png" alt-text="Diagram of the GitHub Copilot prompt processing flow.":::
 
@@ -39,7 +39,7 @@ Copilot, informed by mapped intent, completes the following actions:
 - Delivers code suggestions tailored to your code preferences.
 - Proposes apt function and variable names.
 - Crafts complete code blocks ensuring syntax and context accuracy.
-- Aligns with the project’s specific language, framework, and standards.
+- Aligns with the project's specific language, framework, and standards.
 - Respects customized settings like coding styles and constraints.
 
 ### 5-User interaction

@@ -3,7 +3,7 @@ You reached the end of this module!  We unveiled the intricacies of optimizing G
 With the completion of this module, you now have the knowledge to:
 
 - Craft effective prompts that optimize GitHub Copilot's performance, ensuring precision and relevance in every code suggestion.
-- Understand the intricate relationship between prompts and Copilot’s responses, and utilize best practices in prompt engineering.
+- Understand the intricate relationship between prompts and Copilot's responses, and utilize best practices in prompt engineering.
 - Gain insights into the underlying mechanism of how GitHub Copilot handles user prompts, from secure transmission to content filtering and context analysis.
 
 ## References

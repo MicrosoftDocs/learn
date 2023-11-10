@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.introduction-prompt-engineering-with-github-copilot.introduction
-title: Introduction to prompt engineering with GitHub Copilot
+title: Introduction
 metadata:
-  title: Introduction to prompt engineering with GitHub Copilot
+  title: Introduction
   description: This content is part of the "Introduction to prompt engineering with GitHub Copilot" module.
   ms.date: 11/10/2023
   author: a-a-ron
