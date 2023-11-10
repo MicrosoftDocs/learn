@@ -6,9 +6,8 @@ metadata:
   description: Learn how to configure a Spring Cloud Config Server.
   author: judubois
   ms.author: judubois
-  ms.date: 11/01/2023
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.date: 11/10/2023
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: judubois-12022020
 durationInMinutes: 7

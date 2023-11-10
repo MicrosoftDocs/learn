@@ -5,7 +5,7 @@ metadata:
   description: Learn how to deploy Spring Boot microservices to Azure Spring Apps (ASA).
   author: judubois
   ms.author: judubois
-  ms.date: 11/01/2023
+  ms.date: 11/10/2023
   ms.topic: interactive-tutorial
   ms.custom: team=cloud_advocates
   ms.contributors: judubois-03042021
