@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What feature should you use to pass events between Blazor components"
+  - content: "What feature should you use to pass events between Blazor components?"
     choices:
     - content: "C# events"
       isCorrect: false
