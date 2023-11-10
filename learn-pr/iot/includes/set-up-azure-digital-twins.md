@@ -1,3 +1,11 @@
+---
+author: baanders
+ms.author: baanders
+ms.date: 11/10/2023
+ms.topic: include
+ms.service: digital-twins
+---
+
 ## Set up hands-on session
 
 For a hands-on experience with Azure Digital Twins, this unit provides Azure CLI commands that you can run with an Azure subscription. If you don't have an Azure subscription already, [create one for free now](https://azure.microsoft.com/free).
