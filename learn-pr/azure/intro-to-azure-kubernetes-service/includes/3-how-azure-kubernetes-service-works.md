@@ -38,18 +38,6 @@ With Bridge to Kubernetes, you can:
 - Redirect traffic between your connected Kubernetes cluster and your development computer. The bridge allows code on your development computer and services running in your Kubernetes cluster to communicate as if they are in the same Kubernetes cluster.
 - Replicate environment variables and mounted volumes available to pods in your Kubernetes cluster to your development computer. With Bridge to Kubernetes, you can modify your code without having to replicate those dependencies manually.
 
-## Deployment Center
-
-Deployment Center simplifies setting up a DevOps pipeline for your application. You can use this configured DevOps pipeline to set up a continuous integration (CI) and continuous delivery (CD) pipeline to your AKS Kubernetes cluster.
-
-With Azure DevOps Projects you can:
-
-- Automatically create Azure resources, such as an AKS cluster.
-- Create an Azure Application Insights resource for monitoring an AKS cluster.
-- Enable Azure Monitor for containers to monitor performance for the container workloads on an AKS cluster.
-
-You can add richer DevOps capabilities by extending the default configured DevOps pipeline. For example, you can add approvals before deploying, provision more Azure resources, run scripts, or upgrade workloads.
-
 ## Azure Service Integration
 
 AKS allows us to integrate any Azure service offering and use it as part of an AKS cluster solution.
