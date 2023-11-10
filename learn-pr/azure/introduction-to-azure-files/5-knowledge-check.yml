@@ -28,7 +28,7 @@ quiz:
     - content: Pay per transaction.
       isCorrect: false
       explanation: "Incorrect: Premium file shares are only available in a provisioned billing model, in which you pay for that storage capacity regardless of whether you use it or not."
-  - content: Azure customers can switch from premium file share to hot, cool, or transaction optimized file shares at any time.
+  - content: Azure customers can switch from premium file shares to hot, cool, or transaction optimized file shares at any time.
     choices:
     - content: True.
       isCorrect: false
