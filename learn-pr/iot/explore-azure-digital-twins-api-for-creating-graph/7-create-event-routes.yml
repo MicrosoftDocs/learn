@@ -6,9 +6,10 @@ interactive: bash
 metadata:
   title: Create event routes
   description: Use the Azure Digital Twins APIs to create an event route and check its status.
-  ms.date: 09/07/2023
+  ms.date: 10/11/2023
   author: baanders
   ms.author: baanders
+  ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-create-event-routes.md)]
+  [!include[](includes/7-create-event-routes.md)]

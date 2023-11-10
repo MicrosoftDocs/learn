@@ -6,9 +6,10 @@ interactive: bash
 metadata:
   title: Create endpoints
   description: Use the Azure Digital Twins APIs to create an endpoint and check its status.
-  ms.date: 09/07/2023
+  ms.date: 10/11/2023
   author: baanders
   ms.author: baanders
+  ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-create-endpoints.md)]
+  [!include[](includes/6-create-endpoints.md)]
