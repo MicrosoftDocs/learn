@@ -1,4 +1,4 @@
-In this unit, you'll use the Jobs API to import a sample scenario graph complete with models, twins, and relationships. The Import Jobs API uses a file placed in Azure Blob Storage to import all of these entities into your Azure Digital Twins instance at once. You'll then use Models and Digitaltwins APIs to verify the graph that was imported.
+In this unit, you use the Jobs API to import a sample scenario graph complete with models, twins, and relationships. The Import Jobs API uses a file placed in Azure Blob Storage to import all of these entities into your Azure Digital Twins instance at once. You then use Models and Digitaltwins APIs to verify the graph that was imported.
 
 Follow the steps in this unit to explore and import the sample scenario graph in to your Azure Digital Twins instance.
 
@@ -20,7 +20,7 @@ When you're done reviewing the contents of the import file, download the sample 
 
 ## Set up import resources and permissions
 
-For this unit, you'll be using the same Azure Digital Twins instance that you created in the previous unit. If you still have the same console window open, the name of this instance is stored in a variable `$INSTANCE_NAME`. If not, you can reset the variable below.
+For this unit, you'll be using the same Azure Digital Twins instance that you created in the previous unit. If you still have the same console window open, the name of this instance is stored in a variable `$INSTANCE_NAME`. If not, you can reset the variable as part of the following code sample.
 
 If you don't already have a Cloud Shell tab open, navigate to the [Azure Cloud Shell](https://ms.portal.azure.com/#cloudshell/) in a browser tab.
 
@@ -68,19 +68,19 @@ Now that the sample file is accessible from the Cloud Shell, you can run the fol
 az storage blob upload --account-name $STORAGE_ACCOUNT --container-name $CONTAINER --name distributionGridBulkImport.json --file distributionGridBulkImport.json --auth-mode login
 ```
 
-Now you have the import file available in an Azure storage account that can be accessed by your Azure Digital Twins instance. In the next section, you'll send an API request that uses this file to create the defined entities in your Azure Digital Twins instance.
+Now you have the import file available in an Azure storage account that your Azure Digital Twins instance can access. In the next section, you'll send an API request that uses this file to create the defined entities in your Azure Digital Twins instance.
 
 ## Make the import request
 
-In this section, you'll send an Import Jobs API request to import the sample file of models, twins, and relationships.
+In this section, you send an Import Jobs API request to import the sample file of models, twins, and relationships.
 
-Start by reviewing the [Jobs API documentation](/rest/api/digital-twins/dataplane/jobs). The API contains operations for managing long-running jobs, including add, cancel, delete, get by ID, and list for import jobs. In this section, you'll use **ImportJobs Add** to create an import request, and **ImportJobs GetById** to check the job's status.
+Start by reviewing the [Jobs API documentation](/rest/api/digital-twins/dataplane/jobs). The API contains operations for managing long-running jobs, including add, cancel, delete, get by ID, and list for import jobs. In this section, you use **ImportJobs Add** to create an import request, and **ImportJobs GetById** to check the job's status.
 
 :::image type="content" source="../media/3-jobs.png" alt-text="Reference doc screenshot showing the Jobs operations." border="false" lightbox="../media/3-jobs.png":::
 
 From your Postman collections, expand the folder path **Data plane** > **jobs** > **imports** > **{id}**, and open **PUT Import Jobs Add**. You'll fill in this request template to create a new import job.
 
-In the **Params** tab, set **api-version** to *2023-10-31* and the **id** value to *importdistributiongrid* to assign an ID value to the job you are creating.
+In the **Params** tab, set **api-version** to *2023-10-31* and the **id** value to *importdistributiongrid* to assign an ID value to the job you're creating.
 
 In the **Body** tab, replace any contents with the following section of code, replacing the placeholder with the URL of your Azure storage container created during the previous step. This information tells the request where to look for the file containing import details, and designates a location for any logs/outputted information.
 
@@ -93,19 +93,19 @@ In the **Body** tab, replace any contents with the following section of code, re
 
 Send the request.
 
-The response from a successful request will look something like this:
+The response from a successful request looks something like this:
 
 :::image type="content" source="../media/3-import-jobs-add.png" alt-text="Postman screenshot showing the results of the Import Jobs Add request." border="false" lightbox="../media/3-import-jobs-add.png":::
 
-This result indicates that the job has been created. It has probably started running in the minutes since the response was sent, so check the current status of the job by opening the **GET Import Jobs Get By Id** request template from the collection (also found in the **Data plane** > **jobs** > **imports** > **{id}** folder).
+This result indicates that the job was created. It has probably started running in the minutes since the response was sent, so check the current status of the job by opening the **GET Import Jobs Get By Id** request template from the collection (also found in the **Data plane** > **jobs** > **imports** > **{id}** folder).
 
 In the **Params** tab, set **api-version** to *2023-10-31* and the **id** value to *importdistributiongrid*.
 
 Send the request.
 
-The response from a successful request will look something like this:
+The response from a successful request looks something like this:
 
-:::image type="content" source="../media/3-import-jobs-get-by-id.png" alt-text="Postman screenshot showing the results of the Import Jobs Get By Id request." border="false" lightbox="../media/3-import-jobs-get-by-id.png":::
+:::image type="content" source="../media/3-import-jobs-get-by-id.png" alt-text="Postman screenshot showing the results of the Import Jobs Get By ID request." border="false" lightbox="../media/3-import-jobs-get-by-id.png":::
 
 The value of `succeeded` in the output indicates that the import job was successful.
 
@@ -128,11 +128,11 @@ In the **Headers** tab, uncheck the **max-items-per-page**, **traceparent**, and
 
 Send the request.
 
-The response from a successful request will look something like this:
+The response from a successful request looks something like this:
 
 :::image type="content" source="../media/3-digital-twin-models-list.png" alt-text="Postman screenshot showing the results of the Digital Twin Models List request." border="false" lightbox="../media/3-digital-twin-models-list.png":::
 
-The reply body will list all of the models that are present in your Azure Digital Twins instance. Review the results to confirm that the models from the import file (including consumers, substations, plants, and more) are represented.
+The reply body lists all of the models that are present in your Azure Digital Twins instance. Review the results to confirm that the models from the import file (including consumers, substations, plants, and more) are represented.
 
 ### Verify twins
 
@@ -149,15 +149,15 @@ In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
 
 Send the request.
 
-The response from a successful request will look something like this:
+The response from a successful request looks something like this:
 
-:::image type="content" source="../media/3-digital-twins-get-by-id.png" alt-text="Postman screenshot showing the results of the Digital Twins Get By Id request." border="false" lightbox="../media/3-digital-twins-get-by-id.png":::
+:::image type="content" source="../media/3-digital-twins-get-by-id.png" alt-text="Postman screenshot showing the results of the Digital Twins Get By ID request." border="false" lightbox="../media/3-digital-twins-get-by-id.png":::
 
-The reply body will give details of the *pl_distribute* digital twin. This twin is a power line with two properties indicating `Capacity` and `GridType`.
+The reply body gives details of the *pl_distribute* digital twin. This twin is a power line with two properties indicating `Capacity` and `GridType`.
 
 ### Verify relationships
 
-In this section, you'll use one of the relationships APIs to see the all of the relationships coming from the *pl_distribute* twin.
+In this section, you use one of the relationships APIs to see the all of the relationships coming from the *pl_distribute* twin.
 
 From your Postman collections, open the request template at **Data plane** > **digitaltwins** > **{id}** > **relationships** > **GET Digital Twins List Relationships**.
 
@@ -167,11 +167,11 @@ In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
 
 Send the request.
 
-The response from a successful request will look something like this:
+The response from a successful request looks something like this:
 
 :::image type="content" source="../media/3-digital-twins-list-relationships.png" alt-text="Postman screenshot showing the results of the Digital Twins List Relationships request." border="false" lightbox="../media/3-digital-twins-list-relationships.png":::
 
-The reply body will list all the relationships, both incoming and outgoing, of the *pl_distribute* digital twin. Review the results to see what kind of relationships this power line twin has in the graph.
+The reply body lists all the relationships, both incoming and outgoing, of the *pl_distribute* digital twin. Review the results to see what kind of relationships this power line twin has in the graph.
 
 ### Further exploration
 

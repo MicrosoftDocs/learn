@@ -1,4 +1,4 @@
-In this unit, you'll get ready to work with the Azure Digital Twins APIs. You'll create your Azure Digital Twins instance and configure Postman, including creating a bearer token for authentication and importing the API collection. Then, you'll review the API categories to understand their capabilities before jumping into using them in the next unit.
+In this unit, you get ready to work with the Azure Digital Twins APIs. You create your Azure Digital Twins instance and configure Postman, including creating a bearer token for authentication and importing the API collection. Then, you review the API categories to understand their capabilities before jumping into using them in the next unit.
 
 [!INCLUDE [Instructions to set up Azure Digital Twins instance](../../includes/set-up-azure-digital-twins.md)]
 
@@ -18,7 +18,7 @@ Follow the prompts to create a new blank workspace with a name that you'll remem
 
 Bearer tokens are used by Postman to authorize your API requests.
 
-The CLI commands in this section will give you two Azure Digital Twins bearer tokens: one for the **control plane** and one for the **data plane**. Control plane APIs are ARM APIs used to manage Azure resources related to Azure Digital Twins, so they cover operations like creating/deleting your entire instance and creating/deleting endpoints. Data plane APIs are used to manage the elements within your Azure Digital Twins instance, such as models, twins, relationships, and event routes. **You'll need both tokens to send all the API requests in this module.**
+The CLI commands in this section will give you two Azure Digital Twins bearer tokens: one for the **control plane** and one for the **data plane**. Control plane APIs are ARM APIs used to manage Azure resources related to Azure Digital Twins, so they cover operations like creating/deleting your entire instance and creating/deleting endpoints. Data plane APIs are used to manage the elements within your Azure Digital Twins instance, such as models, twins, relationships, and event routes. **You need both tokens to send all the API requests in this module.**
 
 In a new browser tab, navigate to the [Azure Cloud Shell](https://ms.portal.azure.com/#cloudshell/).
 
@@ -42,7 +42,7 @@ These tokens are valid for up to 60 minutes. If you run out of time allotted for
 
 ### Set up collections
 
-Requests in Postman can be grouped and saved into **Collections**. This allows you to apply common authorization details and settings to many requests at once. In this section, you'll create two collections in Postman: *Control plane* and *Data plane*.
+Requests in Postman can be grouped and saved into **Collections**. This allows you to apply common authorization details and settings to many requests at once. In this section, you create two collections in Postman: *Control plane* and *Data plane*.
 
 #### Import Swagger files
 

@@ -22,30 +22,30 @@ quiz:
     choices:
     - content: "True"
       isCorrect: false
-      explanation: "That's incorrect. Control plane APIs and data plane APIs each require their own bearer token, granted from a different Azure resource endpoint."
+      explanation: "Incorrect. Control plane APIs and data plane APIs each require their own bearer token, granted from a different Azure resource endpoint."
 
     - content: "False"
       isCorrect: true
-      explanation: "That's correct.  Control plane APIs and data plane APIs each require their own bearer token, granted from a different Azure resource endpoint."
+      explanation: "Correct.  Control plane APIs and data plane APIs each require their own bearer token, granted from a different Azure resource endpoint."
 
-  - content: "Which of the following is NOT an API category for Azure Digital Twins?"
+  - content: "Which of the following options is NOT an API category for Azure Digital Twins?"
     choices:
     - content: "Models"
       isCorrect: false
-      explanation: "Models is one of the API categories. It contains operations like upload, validation, retrieval, and deletion of models."
+      explanation: "Incorrect. Models is one of the API categories. It contains operations like upload, validation, retrieval, and deletion of models."
 
     - content: "Digitaltwins"
       isCorrect: false
-      explanation: "Digitaltwins is one of the API categories. It contains operations like creating, modifying, and deleting digital twins and their relationships."
+      explanation: "Incorrect. Digitaltwins is one of the API categories. It contains operations like creating, modifying, and deleting digital twins and their relationships."
 
     - content: "Graph"
       isCorrect: true
-      explanation: "Graph is NOT one of the API categories. The digital twin graph, including twins and their relationships, is managed with the Digitaltwins APIs. "
+      explanation: "Correct. Graph is NOT one of the API categories. The digital twin graph, including twins and their relationships, is managed with the Digitaltwins APIs. "
 
     - content: "Query"
       isCorrect: false
-      explanation: "Query is one of the API categories. You can use it to find sets of digital twins in the twin graph by their properties, models, or relationships. "
+      explanation: "Incorrect. Query is one of the API categories. You can use it to find sets of digital twins in the twin graph by their properties, models, or relationships. "
 
     - content: "Jobs"
       isCorrect: false
-      explanation: "Jobs is one of the API categories. It's for managing long-running, asynchronous actions such as bulk import of models, twins, and relationships."
+      explanation: "Incorrect. Jobs is one of the API categories. It's for managing long-running, asynchronous actions such as bulk import of models, twins, and relationships."
