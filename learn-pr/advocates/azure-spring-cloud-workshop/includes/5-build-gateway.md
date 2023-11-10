@@ -11,7 +11,7 @@ Gateways are used to route public HTTP traffic to microservices:
 To create our gateway, we use [https://start.spring.io](https://start.spring.io) with the command line:
 
 ```bash
-curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=cloud-gateway,cloud-eureka,cloud-config-client -d baseDir=todo-gateway -d bootVersion=2.6.4.RELEASE -d javaVersion=11 | tar -xzvf -
+curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=cloud-gateway,cloud-eureka,cloud-config-client -d baseDir=todo-gateway -d bootVersion=3.1.5.RELEASE -d javaVersion=17 | tar -xzvf -
 ```
 
 > [!NOTE]
@@ -34,7 +34,7 @@ spring.cloud.gateway.discovery.locator.enabled=true
 As in the previous module, create a specific `todo-gateway` application in your Azure Spring Apps instance. As this application is a gateway, we add the `--assign-endpoint` flag so it's exposed publicly.
 
 ```bash
-az spring app create --name todo-gateway --service "$SPRING_CLOUD_NAME" --resource-group "$RESOURCE_GROUP_NAME" --runtime-version Java_11 --assign-endpoint
+az spring app create --name todo-gateway --service "$SPRING_CLOUD_NAME" --resource-group "$RESOURCE_GROUP_NAME" --runtime-version Java_17 --assign-endpoint
 ```
 
 ## Deploy the application
@@ -60,7 +60,7 @@ cd ..
 As the gateway is connected to the Spring Cloud Service Registry, it should automatically open routes to the available microservices, with URL paths in the form of `/MICROSERVICE-ID/**`:
 [The MICROSERVICE-ID must be in capital letters]
 
-Test the `todo-service` microservice endpoint by doing: `curl https://XXXXXXXX-todo-gateway.azuremicroservices.io/TODO-SERVICE/` (replacing XXXXXXXX with the name of your Azure Spring Apps instance)
+Test the `todo-service` microservice endpoint by doing: `curl https://XXXXXXXX-todo-gateway.azuremicroservices.io/TODO-SERVICE/` (replacing XXXXXXXX with the name of your Azure Spring Apps instance).
 
 As in the previous module, the result of this command should be the three items that were initially inserted in the MySQL database:
 

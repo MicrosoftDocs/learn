@@ -10,7 +10,7 @@ This microservice uses Spring Data JPA to read and write data from an [Azure dat
 Create a specific `todo-service` application in your Azure Spring Apps instance:
 
 ```bash
-az spring app create --name todo-service --resource-group "$RESOURCE_GROUP_NAME" --service "$SPRING_CLOUD_NAME" --runtime-version Java_11
+az spring app create --name todo-service --resource-group "$RESOURCE_GROUP_NAME" --service "$SPRING_CLOUD_NAME" --runtime-version Java_17
 ```
 
 ## Create a MySQL database
@@ -62,29 +62,28 @@ Azure Spring Apps can automatically bind the MySQL database we created to our mi
     5. Select the MySQL database created earlier.
     6. Select **SpringBoot** as the Client type.
     7. Select the **Next: Authentication** button.
+1. On the **Authentication** page, verify that **Connection string** is selected.
+1. Select **Continue with...Database credentials** and fill in the username and password fields. The username is "spring" and the password is the password attribute that we copied earlier.
 
+    > [!NOTE]
+    > If you forget your password, you can reset it by using `az mysql server update -n "$SPRING_CLOUD_NAME"-mysql -g "$RESOURCE_GROUP_NAME" -p <new-password>`
 
-
-    2. In the **Binding type** list, select **Azure database for MySQL**.
-    3. The **Resource name** should be the MySQL database you created earlier.
-    4. The **Database name** should be **todos**
-    5. The **User name** should be **spring@YOUR_DATABASE_NAME**, with **YOUR_DATABASE_NAME** being the name of your database, that we set up earlier as **${SPRING_CLOUD_NAME}-mysql** when creating it.
-    6. The **Password** is the **password** attribute that we copied earlier, when creating the server.
-
-Select **Create**, and your Spring Boot application sets up the MySQL database connection.
+1. Verify that **Configure firewall rules to enable access to target service** is selected.
+1. Click on **Next: Review + Create**.
+1. After the **Validation passed** message appears, select the **Create** button to create the Service Connector.
 
 ## Create a Spring Boot microservice
 
 Now that we provisioned the Azure Spring Apps instance and configured the service binding, let's get the code for `todo-service` ready.
 
-To create our microservice, we'll use [https://start.spring.io/](https://start.spring.io/) with the command line:
+To create our microservice, we'll use [https://start.spring.io](https://start.spring.io) with the command line:
 
 ```bash
-curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=web,mysql,data-jpa,cloud-eureka,cloud-config-client -d baseDir=todo-service -d bootVersion=2.6.4.RELEASE -d javaVersion=11 | tar -xzvf -
+curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=web,mysql,data-jpa,cloud-eureka,cloud-config-client -d baseDir=todo-service -d bootVersion=3.1.5.RELEASE -d javaVersion=17 | tar -xzvf -
 ```
 
 > [!NOTE]
-> We use the `Spring Web`, `MySQL Driver`, `Spring Data JPA`, `Eureka Discovery Client` and the `Config Client` components.
+> We use the `Spring Web`, `MySQL Driver`, `Spring Data JPA`, `Eureka Discovery Client`, and the `Config Client` components.
 
 ## Add Spring code to manage data using Spring Data JPA
 

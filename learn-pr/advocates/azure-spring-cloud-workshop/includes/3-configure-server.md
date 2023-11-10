@@ -48,8 +48,8 @@ Once the token is generated, leave that tab open until the end of this section.
 ## Configure Azure Spring Apps to access the Git repository
 
 1. Go to [the Azure portal](https://portal.azure.com/?WT.mc_id=java-11899-judubois) and search for *Azure Spring Apps*.
-1. Go to the overview page of your Azure Spring Apps server and select **Config server** in the menu.
-1. Configure the repository we previously created:
+1. Go to the overview page of your Azure Spring Apps server and select **Config Server** in the menu.
+1. Configure the repository you previously created:
     1. Add the repository URL, for example `https://github.com/<YOUR_USERNAME>/azure-spring-cloud-config` or `git@github.com:<YOUR_USERNAME>/azure-spring-cloud-config.git`.
 
      > [!TIP]
@@ -59,10 +59,11 @@ Once the token is generated, leave that tab open until the end of this section.
     1. Select **Authentication** and select **HTTP Basic**.
     1. The **username** is your GitHub login name.
     1. The **password** is the personal token we created in the previous section.
+
+    ![Screenshot of the Spring Cloud config server settings.](../media/3-config-server.png)
+
 1. Select **Validate** and wait for the operation to succeed.
 1. Select **Apply** and wait for the operation to succeed.
-
-![Screenshot of the Spring Cloud config server settings.](../media/3-config-server.png)
 
 ## Review
 
