@@ -6,10 +6,8 @@ In the example scenario, you applied your knowledge to the shipping company's sy
 
 In Cloud Shell, run the following command to delete the resource group. This action also removes the scale set.
 
-```bash
-    az group delete \
-      --name myResourceGroup \
-      --yes
+```azurecli
+az group delete --name myResourceGroup --yes
 ```
 
 ## Learn more

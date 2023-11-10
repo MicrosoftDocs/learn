@@ -57,4 +57,4 @@ With Azure Spot Virtual Machines, you can specify two kinds of removal through s
 - **Deallocate** policy (default): The VM is stopped. The processing and memory resources are deallocated. Disks are left intact and data is kept. You're charged for the disk space while the VM isn't running.  
 - **Delete** policy: The entire VM is removed, including all of the underlying disks, so you aren't charged for storage.
 
-Azure Spot Virtual Machines are useful for workloads that run with interruptions or when you need larger VMs at a much-reduced cost. Just keep in mind that you can't control when a VM might be removed.
+Azure Spot Virtual Machines is useful for workloads that run with interruptions or when you need larger VMs at a much-reduced cost. Just keep in mind that you can't control when a VM might be removed.

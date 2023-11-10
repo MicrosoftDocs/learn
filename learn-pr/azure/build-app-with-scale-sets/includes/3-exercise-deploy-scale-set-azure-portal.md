@@ -1,4 +1,4 @@
-In the example scenario, you decide to use a scale set to run the web application for the shipping company. Using a scale set, the shipping company can maintain short response times for users as the workload varies.
+In the example scenario, you decide to use a scale set to run the web application for the shipping company. The shipping company can maintain short response times for users as the workload varies by using a scale set.
 
 Your first task is to create a scale set. Configure it to run a web server, in this case *nginx*. After you configure the scale set correctly, deploy your web application. Then set up a health probe that Azure uses to verify the availability of each virtual machine (VM) in the scale set. Finally, test the scale set by sending requests from a web browser.
 

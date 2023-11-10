@@ -15,9 +15,9 @@ In this exercise, you use a custom script extension to roll out a new version of
 
     ```azurecli
     az vmss show \
-        --name webServerScaleSet \
-        --resource-group myResourceGroup \
-        --query upgradePolicy.mode
+      --name webServerScaleSet \
+      --resource-group myResourceGroup \
+      --query upgradePolicy.mode
     ```
 
     Verify that the upgrade policy is set to `Automatic`. You specified this policy when you created the scale set in the first lab. If the policy was `Manual`, you would apply any VM changes by hand. Because the policy is `Automatic`, you can use the custom script extension and allow the scale set to do the update.
@@ -26,12 +26,12 @@ In this exercise, you use a custom script extension to roll out a new version of
 
     ```azurecli
     az vmss extension set \
-        --publisher Microsoft.Azure.Extensions \
-        --version 2.0 \
-        --name CustomScript \
-        --vmss-name webServerScaleSet \
-        --resource-group myResourceGroup \
-        --settings "{\"commandToExecute\": \"echo This is the updated app installed on the Virtual Machine Scale Set ! > /var/www/html/index.html\"}"
+      --publisher Microsoft.Azure.Extensions \
+      --version 2.0 \
+      --name CustomScript \
+      --vmss-name webServerScaleSet \
+      --resource-group myResourceGroup \
+      --settings "{\"commandToExecute\": \"echo This is the updated app installed on the Virtual Machine Scale Set ! > /var/www/html/index.html\"}"
     ```
 
 ## Test the updated web application
@@ -40,10 +40,10 @@ In this exercise, you use a custom script extension to roll out a new version of
 
     ```azurecli
     az network public-ip show \
-        --name webServerScaleSetLBPublicIP \
-        --resource-group myResourceGroup \
-        --output tsv \
-        --query ipAddress
+      --name webServerScaleSetLBPublicIP \
+      --resource-group myResourceGroup \
+      --output tsv \
+      --query ipAddress
     ```
 
 1. In your web browser, go to the public address of the scale set load balancer. Verify that you see the message **This is the updated app installed on the Virtual Machine Scale Set !**.

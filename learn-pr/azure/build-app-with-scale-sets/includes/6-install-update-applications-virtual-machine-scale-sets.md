@@ -52,12 +52,12 @@ You can use the same `az vmss extension set` command shown previously to deploy 
 
 ```azurecli
 az vmss extension set \
-    --publisher Microsoft.Azure.Extensions \
-    --version 2.0 \
-    --name CustomScript \
-    --resource-group yourResourceGroup \
-    --vmss-name yourScaleSet \
-    --settings @yourConfigV2.json
+  --publisher Microsoft.Azure.Extensions \
+  --version 2.0 \
+  --name CustomScript \
+  --resource-group yourResourceGroup \
+  --vmss-name yourScaleSet \
+  --settings @yourConfigV2.json
 ```
 
 The VMs are updated according to the upgrade policy for the scale set. This policy when you first create the scale set. The upgrade policy can have one of the following three modes:

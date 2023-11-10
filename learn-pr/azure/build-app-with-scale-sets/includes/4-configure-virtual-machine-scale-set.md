@@ -10,9 +10,9 @@ The following code uses the Azure CLI to change the number of instances in a Vir
 
 ```azurecli
 az vmss scale \
-    --name webServerScaleSet \
-    --resource-group MyResourceGroup \
-    --new-capacity 6
+  --name webServerScaleSet \
+  --resource-group MyResourceGroup \
+  --new-capacity 6
 ```
 
 ## Autoscale Virtual Machine Scale Sets
