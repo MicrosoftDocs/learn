@@ -1,6 +1,6 @@
 In this unit, you'll get ready to work with the Azure Digital Twins APIs. You'll create your Azure Digital Twins instance and configure Postman, including creating a bearer token for authentication and importing the API collection. Then, you'll review the API categories to understand their capabilities before jumping into using them in the next unit.
 
-[!include [Instructions to set up Azure Digital Twins instance]](../../includes/set-up-azure-digital-twins.md)
+[!INCLUDE [Instructions to set up Azure Digital Twins instance](../../includes/set-up-azure-digital-twins.md)]
 
 ## Configure Postman for Azure Digital Twins
 

@@ -177,4 +177,4 @@ The reply body will list all the relationships, both incoming and outgoing, of t
 
 From here, you can experiment with different API requests for viewing additional models, twins, or relationships in your graph. You may also want to view an interactive, visual version of the graph that you've created in this unit.
 
-[!include [Instructions to view an Azure Digital Twins graph in Azure Digital Twins Explorer]](../../includes/view-azure-digital-twins-graph.md)
+[!INCLUDE [Instructions to view an Azure Digital Twins graph in Azure Digital Twins Explorer](../../includes/view-azure-digital-twins-graph.md)]

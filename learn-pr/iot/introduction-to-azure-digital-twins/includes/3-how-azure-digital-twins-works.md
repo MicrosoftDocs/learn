@@ -1,6 +1,6 @@
 Here, you'll learn more about how an Azure Digital Twins solution is built. You'll see these concepts applied to the factory module scenario, and understand how an Azure Digital Twins graph might look for that environment.
 
-[!include [Instructions to set up Azure Digital Twins instance]](../../includes/set-up-azure-digital-twins.md)
+[!INCLUDE [Instructions to set up Azure Digital Twins instance](../../includes/set-up-azure-digital-twins.md)]
 
 ## Define models
 
@@ -127,7 +127,7 @@ Here's a screenshot from Azure Digital Twins Explorer, displaying the graph in 2
 
 ### Hands-on exercise: View the graph
 
-[!include [Instructions to view an Azure Digital Twins graph in Azure Digital Twins Explorer]](../../includes/view-azure-digital-twins-graph.md)
+[!INCLUDE [Instructions to view an Azure Digital Twins graph in Azure Digital Twins Explorer](../../includes/view-azure-digital-twins-graph.md)]
 
 ## Set up data flow
 
