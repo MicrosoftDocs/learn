@@ -4,6 +4,8 @@ Now that all the requirements are in place, you can write code that creates a ne
 
 The sample program contains a `SendMessageAsync` method. In this step, you write code to implement this method.
 
+1. Open the `Program.cs` file in your code editor.
+
 1. Locate the `SendMessageAsync` method.
 
 1. Remove the line that throws a `NotImplementedException`.
