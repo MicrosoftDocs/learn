@@ -14,4 +14,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-exercise-setup-use metrics-diagnostic-logs-iot-hub.md)]
+  [!include[](includes/4-exercise-setup-use-metrics-diagnostic-logs-iot-hub.md)]
