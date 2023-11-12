@@ -28984,6 +28984,21 @@
       "source_path": "learn-pr/aspnetcore/microservices-resiliency-aspnet-core/6-implement-linkerd-resiliency.yml",
       "redirect_url": "/training/modules/microservices-resiliency-aspnet-core",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-iot-hub-monitoring/2-configure-iot-hub-monitoring.md",
+      "redirect_url": "/training/modules/explore-iot-hub-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-iot-hub-monitoring/3-knowledge-check.md",
+      "redirect_url": "/training/modules/explore-iot-hub-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-iot-hub-monitoring/4-summary.md",
+      "redirect_url": "/training/modules/explore-iot-hub-monitoring",
+      "redirect_document_id": false
     }
   ]
 }
