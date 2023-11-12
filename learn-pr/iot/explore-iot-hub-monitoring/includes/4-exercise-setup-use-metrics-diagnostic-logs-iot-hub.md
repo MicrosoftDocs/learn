@@ -48,10 +48,10 @@ In this task, you enable monitoring diagnostics.
 
     You can see that there are 4 options available for routing the metrics - you can learn more about each by following the links below:
 
-    * [Send to Log Analytics workspace](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/resource-logs-collect-workspace)
-    * [Archive to a storage account](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/resource-logs-collect-storage)
-    * [Stream to an event hub](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/stream-monitoring-data-event-hubs)
-    * [Send to partner solution](https://docs.microsoft.com/en-us/azure/azure-monitor/partners)
+    * [Send to Log Analytics workspace](/azure/azure-monitor/platform/resource-logs-collect-workspace)
+    * [Archive to a storage account](/azure/azure-monitor/platform/resource-logs-collect-storage)
+    * [Stream to an event hub](/azure/azure-monitor/platform/stream-monitoring-data-event-hubs)
+    * [Send to partner solution](/azure/azure-monitor/partners)
 
     In this exercise, you use the storage account option.
 
@@ -101,7 +101,7 @@ In this task, you set up various metrics to watch for when messages are sent to 
     * Notice that **Metric Namespace** is already set to **IoT Hub standard metrics**.
 
     > [!NOTE]
-    > By default, there is only one metric namespace available. Namespaces are a way to categorize or group similar metrics together. By using namespaces, you can achieve isolation between groups of metrics that might collect different insights or performance indicators. For example, you might have a namespace called **memorymetrics** that tracks memory-use metrics which profile your app. Another namespace called **apptransaction** might track all metrics about user transactions in your application. You can learn more about custom metrics and namespaces [here](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/metrics-custom-overview?toc=%2Fazure%2Fazure-monitor%2Ftoc.json#namespace).
+    > By default, there is only one metric namespace available. Namespaces are a way to categorize or group similar metrics together. By using namespaces, you can achieve isolation between groups of metrics that might collect different insights or performance indicators. For example, you might have a namespace called **memorymetrics** that tracks memory-use metrics which profile your app. Another namespace called **apptransaction** might track all metrics about user transactions in your application. You can learn more about custom metrics and namespaces at [Custom metrics in Azure Monitor](/azure/azure-monitor/platform/metrics-custom-overview?toc=%2Fazure%2Fazure-monitor%2Ftoc.json#namespace).
 
     Your next steps is add a metric that is used to monitor how many telemetry messages have been sent to your IoT Hub.
 

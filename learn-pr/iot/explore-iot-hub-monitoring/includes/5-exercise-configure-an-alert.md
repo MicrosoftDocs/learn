@@ -32,13 +32,15 @@ In this exercise, you add an alert that triggers when 1 or more devices have con
 
     If you open the Signal type dropdown, you would see that there are 4 available options: *All*, *Log search*, *Resource health*, *Metrics*, and *Activity Log*.
 
-    > [!NOTE] The signal types available for monitoring vary based on the selected target(s). The signal types can be metrics, log search queries or activity logs.
+    > [!NOTE]
+    > The signal types available for monitoring vary based on the selected target(s). The signal types can be metrics, log search queries or activity logs.
 
 1. In the **Signal source** dropdown, ensure that **All** is selected.
 
     If you open the Signal source dropdown, you would see that there are the following options: *All*, *Log analytics*, *Log analytics (example query), *Resource health*, *Platform metrics*, and *Administrative*.
 
-    > [!NOTE] The platform service provides metrics on service utilization, where as the activity log tracks administrative activities.
+    > [!NOTE]
+    > The platform service provides metrics on service utilization, where as the activity log tracks administrative activities.
 
 1. In the **Search by signal name** textbox, type **connected**
 
@@ -55,7 +57,7 @@ In this exercise, you add an alert that triggers when 1 or more devices have con
     Notice that **Threshold** has two possible selections - *Static* and *Dynamic*. Also notice that **Static** is selected and **Dynamic** is unavailable for this signal type.
 
     > [!NOTE]
-    > As the names suggest, *Static Thresholds* specify a constant expression for the threshold, whereas *Dynamic Thresholds* detection leverages advanced machine learning (ML) to learn metrics' historical behavior, identify patterns and anomalies that indicate possible service issues. You can learn more about *Dynamic Thresholds* at [Dynamic thresholds in metric alerts](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-dynamic-thresholds).
+    > As the names suggest, *Static Thresholds* specify a constant expression for the threshold, whereas *Dynamic Thresholds* detection leverages advanced machine learning (ML) to learn metrics' historical behavior, identify patterns and anomalies that indicate possible service issues. You can learn more about *Dynamic Thresholds* at [Dynamic thresholds in metric alerts](/azure/azure-monitor/platform/alerts-dynamic-thresholds).
 
     You are going to create a static threshold that raises an alert whenever the average *connected devices* signal is less than 1.
 
@@ -88,7 +90,7 @@ In this exercise, you add an alert that triggers when 1 or more devices have con
     Notice that no action group is selected. There are options to **Select action groups** and **Create action group**.
 
     > [!NOTE]
-    > An action group is a collection of notification preferences defined by the owner of an Azure subscription. An action group name must be unique within the Resource Group that it is associated with. Azure Monitor and Service Health alerts use action groups to notify users that an alert has been triggered. Various alerts can use the same action group or different action groups depending on the user's requirements. You can configure up to 2,000 action groups in a subscription. You can learn more about creating and managing Action Groups at [Action groups](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/action-groups).
+    > An action group is a collection of notification preferences defined by the owner of an Azure subscription. An action group name must be unique within the Resource Group that it is associated with. Azure Monitor and Service Health alerts use action groups to notify users that an alert has been triggered. Various alerts can use the same action group or different action groups depending on the user's requirements. You can configure up to 2,000 action groups in a subscription. You can learn more about creating and managing Action Groups at [Action groups](/azure/azure-monitor/platform/action-groups).
 
 1. Under **Actions**, click **Select action groups**.
 
@@ -144,7 +146,7 @@ In this exercise, you add an alert that triggers when 1 or more devices have con
 1. Under **Enable the common alert schema**, click **Yes**.
 
     > [!NOTE]
-    > There are many benefits to using the Common Alert Schema. The common alert schema is a single extensible and unified alert payload that can be used across all the alert services in Azure Monitor. With the common alert schema, you can receive alert notifications with a consistent schema. You can learn more about the Common alert schema at [Common alert schema](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-common-schema).
+    > There are many benefits to using the Common Alert Schema. The common alert schema is a single extensible and unified alert payload that can be used across all the alert services in Azure Monitor. With the common alert schema, you can receive alert notifications with a consistent schema. You can learn more about the Common alert schema at [Common alert schema](/azure/azure-monitor/platform/alerts-common-schema).
 
 1. At the bottom of the **Email/SMS message/Push/Voice** page, to save the action configuration, click **OK**.
 
@@ -162,7 +164,7 @@ In this exercise, you add an alert that triggers when 1 or more devices have con
 
     A few things happen at the same time. First, **Add action group** blade closes, leaving you on the **Create an alert rule** blade, with the new Action Group added to the list of **Actions**.
 
-    Then, in quick succession, you should receive both an SMS notification and an email, both of which inform you that you have been added to the **GPEmailAG** action group. In the SMS message, you note that you can reply to the message to stop receiving future notifications and so on - you can learn more about the options at [Action groups](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-sms-behavior). In the email, you have links that you can click to view the details on action groups and, towards the bottom of the email (in a smaller font) you can see the option to unsubscribe.
+    Then, in quick succession, you should receive both an SMS notification and an email, both of which inform you that you have been added to the **GPEmailAG** action group. In the SMS message, you note that you can reply to the message to stop receiving future notifications and so on - you can learn more about the options at [Action groups](/azure/azure-monitor/platform/alerts-sms-behavior). In the email, you have links that you can click to view the details on action groups and, towards the bottom of the email (in a smaller font) you can see the option to unsubscribe.
 
 1. Click **Next: Details** to advance to the Create an alert rule blade.
 
