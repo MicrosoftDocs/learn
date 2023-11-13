@@ -26,13 +26,13 @@ In this task, you create the storage account. The storage account contains your 
 
 1. Select the **Location** closest to your geographical location.
 
-1. Do not change the other field defaults.
+1. Don't change the other field defaults.
 
 1. Select **OK**.
 
 ## Task 2: Enable diagnostics
 
-In this task, you enable monitoring diagnostics.
+In this task, you configure Monitor device connect/disconnect data that is stored in the storage account that you set up in task 1.
 
 1. Navigate to your portal dashboard.
 
@@ -46,7 +46,7 @@ In this task, you enable monitoring diagnostics.
 
 1. Take a moment to review the options listed under **Destination details**.
 
-    You can see that there are 4 options available for routing the metrics - you can learn more about each by following the links below:
+    You can see that there are four options available for routing the metrics - you can learn more about each by following these links:
 
     * [Send to Log Analytics workspace](/azure/azure-monitor/platform/resource-logs-collect-workspace)
     * [Archive to a storage account](/azure/azure-monitor/platform/resource-logs-collect-storage)
@@ -57,7 +57,7 @@ In this task, you enable monitoring diagnostics.
 
 1. Under **Destination details**, click **Archive to a storage account**.
 
-    Additional fields are made available once you select this destination option, including the option to specify **Retention (days)** for the log categories.
+    More fields are made available once you select this destination option, including the option to specify **Retention (days)** for the log categories.
 
 1. For the **Subscription** field, ensure that the subscription you used to create your IoT hub is selected.
 
@@ -69,7 +69,7 @@ In this task, you enable monitoring diagnostics.
 
 1. Close the **Diagnostics settings** blade.
 
-    You should now be on the **Diagnostics settings** pane of your IoT hub, and you should see that the list of **Diagnostics settings** has been updated to show the **diags-hub** setting that you just created.
+    You should now be on the **Diagnostics settings** pane of your IoT hub, and you should see that the list of **Diagnostics settings** is updated to show the **diags-hub** setting that you created.
 
     Later, when you look at the diagnostic logs, you'll be able to see the telemetry and connect/disconnect logging for the device.
 
@@ -103,34 +103,34 @@ In this task, you set up various metrics to watch for when messages are sent to 
     > [!NOTE]
     > By default, there is only one metric namespace available. Namespaces are a way to categorize or group similar metrics together. By using namespaces, you can achieve isolation between groups of metrics that might collect different insights or performance indicators. For example, you might have a namespace called **memorymetrics** that tracks memory-use metrics which profile your app. Another namespace called **apptransaction** might track all metrics about user transactions in your application. You can learn more about custom metrics and namespaces at [Custom metrics in Azure Monitor](/azure/azure-monitor/platform/metrics-custom-overview?toc=%2Fazure%2Fazure-monitor%2Ftoc.json#namespace).
 
-    Your next steps is add a metric that is used to monitor how many telemetry messages have been sent to your IoT Hub.
+    Your next step is add a metric that is used to monitor how many telemetry messages are sent to your IoT Hub.
 
 1. In the **Metric** dropdown, click **Telemetry messages sent**.
 
-    Notice the large number of metrics that are available for you to select from!
+    Notice the large number of metrics that are available for you to select from.
 
 1. Under **Aggregation**, ensure that **Sum** is selected.
 
-    Notice there are 4 aggregation operations available - *Avg*, *Min*, *Max* and *Sum*.
+    Notice there are four aggregation operations available - *Avg*, *Min*, *Max* and *Sum*.
 
 1. Take a moment to review your chart.
 
     Notice that the chart title has updated to reflect the metric chosen.
 
-    You have completed the specification for the first metric. Next, you add another metric to monitor the number of connected devices.
+    You completed the specification for the first metric. Next, you add another metric to monitor the number of connected devices.
 
 1. Under the chart title, on the toolbar, click **Add metric**.
 
-    A new metric appears. Notice that the **Scope** and **Metric Namespace** values are pre-populated.
+    A new metric appears. Notice that the **Scope** and **Metric Namespace** values are prepopulated.
 
 1. In the **Metric** dropdown, click **Connected devices**.
 
 1. Under **Aggregation**, ensure that **Avg** is selected.
 
-    Your screen should now show the minimized metric for Telemetry messages sent, as well as the new metric for avg connected devices. Notice that the chart title has updated to reflect both metrics.
+    Your screen should now show the minimized metric for Telemetry messages sent, as well as the new metric for avg connected devices. Notice that the chart title is updated to reflect both metrics.
 
     > [!NOTE]
-    > To edit the chart title, click the **pencil** to the right of the title.
+    > To edit the chart title, click the **pencil** icon to the right of the title.
 
 1. Under the **Chart Title**, on the right side of the toolbar, click **Save to dashboard**, click **Pin to dashboard**, ensure that **My Dashboard** is selected, and then click **Pin**.
 
@@ -146,4 +146,4 @@ In this task, you set up various metrics to watch for when messages are sent to 
 
     If the device simulator is running, you should see that telemetry messages have been sent and the device is connected:
 
-Now that you have enabled logging and set up a chart to monitor metrics, it's a good time for you to set up an alert. You will confire an alert in the next exercise.
+Now that you have enabled logging and set up a chart to monitor metrics, it's a good time for you to set up an alert. You'll configure an alert in the next exercise.

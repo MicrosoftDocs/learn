@@ -1,4 +1,4 @@
-In this exercise you configure a device simulator application. The primary connection string is used to connect the program to the IoT Hub. When executed, the application creates an active connection and generates telemetry. The active connection counts as a connected device.
+In this exercise, you configure a device simulator application. The primary connection string is used to connect the program to the IoT Hub. When executed, the application creates an active connection and generates telemetry. The active connection counts as a connected device that is tracked by the IoT Hub Monitor.
 
 In this exercise, you:
 
@@ -9,7 +9,7 @@ In this exercise, you:
 
 ## Task 1: Configure and run device simulator
 
-1. On your development machine, create a working folder for this project named **DeviceSimulator**. You will create all Visual Studio code files for this project within this folder.
+1. On your development machine, create a working folder for this project named **DeviceSimulator**. You create all Visual Studio Code files for this project within this folder.
 
 1. Open Visual Studio Code.
 
@@ -153,7 +153,7 @@ In this exercise, you:
 
 1. Optionally, take a moment to review the code.
 
-1. Create a file named **DeviceSimulator.csproj**.
+1. Create a file named **DeviceSimulator.csproj** in the DeviceSimulator folder.
 
 1. Paste the following code into **DeviceSimulator.csproj**.
 
@@ -172,11 +172,11 @@ In this exercise, you:
    </Project>   
    ```
 
-1. Save your changes to **SimulateDevice.csproj**.
+1. Save your changes to **DeviceSimulator.csproj**.
 
 1. In your Visual Studio Code window, open the **Terminal** menu and select **New Terminal**.
 
-    Examine the command prompt to ensure that the **DeviceSimulator** folder is specified. You do not want to start building this project from the wrong folder location.
+    Examine the command prompt to ensure that the **DeviceSimulator** folder is specified.
 
 1. At the Terminal command prompt, enter the following command to verify that the application builds without errors:
 
@@ -224,10 +224,10 @@ In this exercise, you:
     10/25/2023 6:10:14 PM > Sending message: {"temperature":20.723927165718717,"humidity":74.07808918230147}
    ```
 
-Leave the app running, so that a device is connected and telemetry is being sent.
+Leave the app running, so that a device is connected to your IoT hub and telemetry is being sent.
 
 ## Verify your work
 
-In this exercise, you created a device telemetry simulator. The simulator connects to your IoT hub using the IoT hub primary connection string, then sends a stream of temperature and humidity readings. These readings will be used in the next exercise.
+In this exercise, you created a device telemetry simulator. The simulator connects to your IoT hub using the IoT hub primary connection string, then sends a stream of temperature and humidity readings. These readings are used in the next exercise.
 
 Address any program build or runtime errors before proceeding to the next exercise.

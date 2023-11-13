@@ -33,10 +33,10 @@ quiz:
     choices:
     - content: "IoT Hub metrics help to assess the overall health of the IoT Hub service."
       isCorrect: true
-      explanation: "Correct. IoT Hub metrics will help to assess the overall health of the IoT Hub service."
-    - content: "IoT Hub metrics will help to assess the overall health of the devices connected to your IoT Hub."
+      explanation: "Correct. IoT Hub metrics help to assess the overall health of the IoT Hub service."
+    - content: "IoT Hub metrics help to assess the overall health of the devices connected to your IoT Hub."
       isCorrect: false
-      explanation: "Incorrect. IoT Hub metrics will help to assess the overall health of the IoT Hub service, not devices."
+      explanation: "Incorrect. IoT Hub metrics help to assess the overall health of the IoT Hub service, not devices."
     - content: "IoT Hub metrics are disabled by default."
       isCorrect: false
       explanation: "Incorrect. IoT Hub metrics are enabled by default."

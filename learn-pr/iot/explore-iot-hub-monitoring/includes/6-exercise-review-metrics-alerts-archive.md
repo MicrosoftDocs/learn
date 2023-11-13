@@ -1,10 +1,10 @@
-In this exercise, you examine some of the reporting and logging resources that you configured earlier in this module, and review the event data has been recorded in the short time that has elapsed.
+In this exercise, you examine some of the reporting and logging resources that you configured earlier in this module. You review the metrics, alerts, and diagnostic log event data has been recorded in the short time that has elapsed.
 
 ## Task 1: See the Metrics in the Portal
 
 In order to generate the alert where the number of connected devices is less than one, the device simulator app must be closed.
 
-1. Return to to Visual Studio code and exit the running app.
+1. Return to Visual Studio Code and exit the running app.
 
     Wait 30 seconds or so before proceeding to the next step.
 
@@ -20,7 +20,7 @@ In order to generate the alert where the number of connected devices is less tha
 
 ## Task 2: See the Alerts
 
-To use the Azure Portal to review alerts, complete the following steps.
+To use the Azure portal to review alerts, complete the following steps.
 
 1. Close the Metrics graphical display to return to the Dashboard.
 
@@ -40,22 +40,22 @@ To use the Azure Portal to review alerts, complete the following steps.
 
 1. Click **Alert condition**, click **Select all**, then click **Apply**.
 
-    You should now see a summary of alerts for the last hour including a total alerts count and a list of the severity categories with alert counts per category. The alerts we are interested in are **3 - Informational** Severity. You should see at least one alert. If you have stopped and restarted the device simulator, you may have generated more that one alert.
+    You should now see a summary of alerts for the last hour including a total alerts count and a list of the severity categories with alert counts per category. The alerts we are interested in are **3 - Informational** Severity. You should see at least one alert. If you stopped and restarted the device simulator, you may have generated more that one alert.
 
     > [!NOTE]
     > If you do not yet see an alert, wait a few more minutes - there is sometimes a delay in the alerts being raised.
 
 1. In the list of severities, click the number under **Informational**.
 
-    The **Informational** pane opens. At the top of the pane you see a number of filter fields. These have been populated with the values from the preceding screen. And only the **Informational** alerts for the selected IoT hub are shown. It also shows the alert condition of either Fired or Resolved, and the Fire time.
+    The **Informational** pane opens. At the top of the pane, you see several filter fields. These fields have been populated with the values from the preceding screen. And only the **Informational** alerts for the selected IoT hub are shown. It also shows the alert condition of either Fired or Resolved, and the Fire time.
 
 1. Under **Name**, to select metrics alert details about your 3 - Informational alert, click **Connected Devices Less than 1**.
 
-    A pane opens showing a **Summary** of the details for the alert. This includes a chart illustrating why the alert fired - a dash line shows the threshold value as well as the current values for the monitored metric. Below this are **Additional details**.
+    A pane opens showing a **Summary** of the details for the alert. This pane includes a chart illustrating why the alert fired - a dash line shows the threshold value and the current values for the monitored metric. Below this are **Additional details**.
 
 1. At the top of the pane, below the title, click **History**.
 
-    In this view you can see when the alert fired, the action group that was invoked, and any other changes such as when the alert was resolved.
+    In this view, you can see when the alert fired, the action group that was invoked, and any other changes such as when the alert was resolved.
 
 1. At this point, check your email and/or text and verify you received an alert message.
 
@@ -90,18 +90,18 @@ Earlier in this lab, you set up your diagnostic logs to be exported to blob stor
 
 1. Under **Blob containers**, click **insights-logs-connection**.
 
-    To view the logged data, you will need to navigate down a hierarchy of folders. The first folder will be named for the IoT Hub.
+    To view the logged data, you need to navigate down a hierarchy of folders. The first folder is named for the IoT Hub.
 
     > [!NOTE]
     > If no data is displayed, click **Refresh**. You may need to wait a minute or two and then refresh again.
 
 1. In the right-hand pane, select the name of your IoT hub, and then navigate down into the folder hierarchy.
 
-    Under your IoT hub folder, you will see folders for the partition, then numeric values for the year, month, and day. The final folder represents the hour, listed in UTC time. The hour folder will contain a number of block blobs that contain your logging message data.
+    Under your IoT hub folder, you see folders for the partition, then numeric values for the year, month, and day. The final folder represents the hour, listed in UTC time. The hour folder contains several block blobs that contain your logging message data.
 
 1. Locate the block blob for the data with the earliest time stamp.
 
-    The .avro files use a naming pattern of **{num}.avro** (i.e. **22.avro**).
+    The .avro files use a naming pattern of **{num}.avro** (that is, **22.avro**).
 
 1. Select **...** next to the block blob with the earliest time stamp, then select **Download** from the Context menu.
 
@@ -142,7 +142,7 @@ Earlier in this lab, you set up your diagnostic logs to be exported to blob stor
 
 ## Task 4: Review resolved Alert
 
-By this point, you should have received an email or SMS indicating the Monitor Alert has been resolved. Complete the following steps to review the resolved Alert in the portal.
+By this point, you should have received an email or SMS indicating the Monitor Alert is resolved. Complete the following steps to review the resolved Alert in the portal.
 
 > [!NOTE]
 > If you have not yet received the email or SMS - wait until they arrive before proceeding.
@@ -157,7 +157,7 @@ By this point, you should have received an email or SMS indicating the Monitor A
 
 1. On the left-side menu, near the top of the list, click **Alerts**.
 
-    This alerts view shows all alerts for all subscriptions. Let's filter this to the IoT Hub.
+    This alerts view shows all alerts for all subscriptions. Let's filter this list to your IoT Hub.
 
 1. Click **Subscription**, then select only the subscription you are using for this project. Then click **Apply**.
 
@@ -169,10 +169,12 @@ By this point, you should have received an email or SMS indicating the Monitor A
 
 1. Under **Name**, click the latest **Connected Devices Less than 1** alert.
 
-    A pane opens showing a **Summary** of the details for the alert. As before, this includes a chart illustrating why the alert fired - a dash line shows the threshold value as well as the current values for the monitored metric. Below this are **Additional details**.
+    A pane opens showing a **Summary** of the details for the alert. As before, this includes a chart illustrating why the alert fired - a dash line shows the threshold value and the current values for the monitored metric. Below this are **Additional details**.
 
 1. At the top of the pane, below the title, click **History**.
 
     In this view you can see when the alert fired, the action group that was invoked, and when the alert is resolved and so forth.
 
-Once you have completed this exercise, you can close the Device Simulator App.
+1. You can now close the Device Simulator App.
+
+## Verify your work

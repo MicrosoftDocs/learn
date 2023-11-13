@@ -2,6 +2,6 @@ Your team is responsible for monitoring IoT Hub and troubleshooting device conne
 
 You learned how to configure IoT Hub monitoring diagnostics, metrics, alerts, and logging.
 
-If you and your company had not learned about IoT Hub monitoring, you would not be prepared to set up monitoring diagnostics, metrics, alerts, and logging.
+If you and your company didn't research IoT Hub monitoring, you wouldn't be prepared to set up monitoring diagnostics, metrics, alerts, and logging.
 
-The experience that you have gained by configuring IoT Hub metrics, alerts, and logging in a test environment helps you to support your company's monitoring and troubleshooting goals.
+The experience that you gained by configuring IoT Hub metrics, alerts, and logging in a test environment helps you to support your company's monitoring and troubleshooting goals.

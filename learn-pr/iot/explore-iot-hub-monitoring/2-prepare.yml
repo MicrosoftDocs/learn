@@ -12,6 +12,6 @@ metadata:
   ms.service: iot-hub
 azureSandbox: false
 labModal: false
-durationInMinutes: 5
+durationInMinutes: 8
 content: |
   [!include[](includes/2-prepare.md)]

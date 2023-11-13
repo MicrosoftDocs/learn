@@ -1,9 +1,9 @@
-In this module, you will implement monitoring to track the number of connected devices, the number of telemetry messages sent, and you will also send connection events to a log. In addition, you will create an alert that is triggered when the number of connected devices drops below one. To test the system, you will connect a single device and stream telemetry, then disconnect the device to generate an alert.
+In this module, you implement monitoring to track the number of connected devices, the number of telemetry messages sent, and send connection events to a log. In addition, you create an alert that is triggered when the number of connected devices drops below one. To test the system, you connect a single device and stream telemetry, then disconnect the device to generate an alert.
 
-In this module, you will complete the following activities:
+In this module, you complete the following activities:
 
 * Configure the module prerequisites (the required Azure resources).
-* Download and run an app that simulates an IoT device sending messages to the hub.
+* Create an app that simulates an IoT device sending messages to the hub.
 * Run the app to generate telemetry.
 * Enable diagnostic logs.
 * Enable metrics.
@@ -13,11 +13,12 @@ In this module, you will complete the following activities:
 
 ## Setup
 
-As part of this module, the following resources will be created:
+As part of this module, the following resources are created:
 
 * Azure IoT Hub
 * Blob storage
 * Azure Monitor
+* Device simulator program
 
 :::image type="content" source="../media/architecture.png" alt-text="Diagram showing the module resource architecture.":::
 
@@ -44,11 +45,11 @@ Before you begin the exercises, you need an IoT Hub. Creating the IoT Hub can ta
 
 1. Accept the defaults values for the rest of the fields and select **Review + create** to continue creating your hub.
 
-1. Review the IoT hub details and make sure there are no errors to fix, then select **Create** to start the deployment of your new hub. Your deployment will be in progress a few minutes while the hub is being created. Once the deployment is complete, select **Go to resource** to open the new hub.
+1. Review the IoT hub details and make sure there are no errors to fix, then select **Create** to start the deployment of your new hub. Your deployment is in progress a few minutes while the hub is being created. Once the deployment is complete, select **Go to resource** to open the new hub.
 
 1. Once your IoT hub is provisioned, in your IoT hub navigation menu, open **Devices**, then select **Add Device** to add a device in your IoT hub.
 
-1. In **Device ID**, enter **sensor-th-2001**. Leave **Auto-generate keys** checked so that the primary and secondary keys will be generated automatically. Leave Authentication type as Symmetric key. Select **Save**. This action creates a device identity for your IoT hub.
+1. In **Device ID**, enter **sensor-th-2001**. Leave **Auto-generate keys** checked so that the primary and secondary keys are generated automatically. Leave Authentication type as Symmetric key. Select **Save**. This action creates a device identity for your IoT hub.
 
 1. After the device is created, open **sensor-th-2001** from the list in the **Devices** pane. Select the **Copy to clipboard** button to copy the value of **Primary connection string**. This connection string is used by device code to communicate with the IoT hub. Copy this value into a Notepad window.
 
@@ -57,7 +58,7 @@ Before you begin the exercises, you need an IoT Hub. Creating the IoT Hub can ta
 
 ### Development resources
 
-To simulate your IoT devices provisioning through Device Provisioning Service, you'll run two C# applications on your development machine. Have the following prerequisites ready on your development machine:
+To simulate your IoT devices provisioning through Device Provisioning Service, you'll run a C# application on your development machine. Have the following prerequisites ready on your development machine:
 
 * [Visual Studio Code](https://code.visualstudio.com/download)
 * [.NET SDK 6.0 or later](https://dotnet.microsoft.com/download)
