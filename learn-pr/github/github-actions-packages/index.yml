@@ -3,12 +3,12 @@ uid: learn.github.github-actions-packages
 metadata:
   title: Leverage GitHub Actions to publish to GitHub Packages
   description: Publish automatically and secure your code libraries or Docker images with GitHub Packages.
-  ms.date: 05/25/2022
+  ms.date: 11/12/2023
   author: a-a-ron
   ms.author: aastewar
   ms.topic: interactive-tutorial
 title: Leverage GitHub Actions to publish to GitHub Packages
-summary: Publish automatically and securely your code libraries or Docker images with GitHub Packages. You'll also run Docker images published into GitHub Packages locally.
+summary: Publish your code libraries or Docker images automatically and securely with GitHub Packages. You'll also run Docker images published into GitHub Packages locally.
 abstract: |
   By the end of this module, you will be able to:
   - Understand what a Package Repository is and when to use it.
