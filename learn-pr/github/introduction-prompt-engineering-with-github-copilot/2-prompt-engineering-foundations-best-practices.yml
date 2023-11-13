@@ -8,6 +8,6 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
   [!include[](includes/2-prompt-engineering-foundations-best-practices.md)]

@@ -8,6 +8,6 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/4-github-copilot-large-language-models.md)]
