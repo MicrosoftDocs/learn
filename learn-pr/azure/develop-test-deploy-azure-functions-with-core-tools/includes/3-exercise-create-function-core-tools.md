@@ -3,21 +3,21 @@ Azure Functions Core Tools lets you develop functions locally on your own comput
 - Creating the files and folders necessary for a functions project.
 - Providing a Functions host that runs locally from the root directory of your project.
 
-You've decided to start your work locally with Azure Functions by developing a function that computes simple interest. Eventually you'll work your way up to more complex functions that work together and call other services and databases, but using Core Tools to build a function that carries out a basic loan calculation is a good start. You also want to try running your function on your own computer before publishing it to Azure. You can do it all from Azure Cloud Shell using Core Tools.
+You decide to start your work locally with Azure Functions by developing a function that computes simple interest. Eventually, you can create more complex functions that work together and call other services and databases. Using Core Tools to build a function that carries out a basic loan calculation is a good start. You also want to try running your function on your own computer before publishing it to Azure. You can do it all from Azure Cloud Shell using Core Tools.
 
-The Azure Cloud Shell comes with Core Tools, Azure CLI, and an editor you can use to write code. Make sure to activate the sandbox above before proceeding.
+The Azure Cloud Shell comes with Core Tools, Azure CLI, and an editor you can use to write code. Make sure to activate the sandbox before you proceed.
 
 ## Create a local Azure Functions project
 
-In this exercise, you'll use Cloud Shell to develop your function.
+In this exercise, use Cloud Shell to develop your function.
 
-1. Azure Cloud Shell includes version 4.x of Azure Functions Core Tools. This version requires your Node.js version to be at least version ~14. Because the default version in Azure Cloud Shell is older, you first need to upgrade the Node.js version in your sandbox. Install the Node Version Manager (NVM) tool by executing the following request in the Cloud Shell on the right.
+1. Azure Cloud Shell includes version 4.x of Azure Functions Core Tools. This version requires your Node.js version to be at least version ~14. Because the default version in Azure Cloud Shell is older, you first need to upgrade the Node.js version in your sandbox. Install the Node Version Manager (NVM) tool by running the following request in the Cloud Shell on the right.
 
     ```bash
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
     ```
 
-    You'll need to reinstall NVM every time you get a new Cloud Shell sandbox.
+    You need to reinstall NVM every time you get a new Cloud Shell sandbox.
 
 1. Select the restart button at the top left of the Cloud Shell window to restart the shell and make NVM available.
 
@@ -42,17 +42,17 @@ In this exercise, you'll use Cloud Shell to develop your function.
     func init
     ```
 
-1. When prompted to select a worker runtime, enter **3** (for **node**).
+1. When prompted to select a worker runtime, enter **3** for **node**.
 
-1. When prompted to select a language, enter **1** (for **JavaScript**).
+1. When prompted to select a language, enter **1** for **javascript**.
 
-    The output will list the files being written to disk. You'll see **host.json** and **local.settings.json**, and a few other files:
-    - **package.json** is a JavaScript-specific file that keeps track of any packages you install and use within your code.
-    - **.gitignore** and **extensions.json** are configuration files that can be used by the Git version control tool and Visual Studio Code, respectively, but you can ignore them for now.
+    The output lists the files being written to disk. You see *host.json* and *local.settings.json*, and a few other files:
+    - *package.json* is a JavaScript-specific file that keeps track of any packages you install and use within your code.
+    - *.gitignore* and *extensions.json* are configuration files that can be used by the Git version control tool and Visual Studio Code, respectively, but you can ignore them for now.
 
 ## Create an HTTP-triggered function
 
-Let's create our function!
+It's time to create your function!
 
 1. In Cloud Shell, run `func new` to start the function creation wizard.
 
@@ -62,11 +62,11 @@ Let's create our function!
 
     Remember, you're running `func new` in the `loan-wizard` project folder you created, which is important.
 
-1. When prompted to select a template, enter **10** (for **HTTP trigger**).
+1. When prompted to select a template, enter **7** for **HTTP trigger**.
 
-1. When prompted to provide a function name for HTTP trigger, enter **simple-interest**.
+1. When prompted to provide a function name for HTTP trigger, enter *simple-interest*.
 
-1. Open the Cloud Shell editor by running the following command.
+1. Run the following command to open the Cloud Shell editor.
 
     ```bash
     code .
@@ -74,15 +74,15 @@ Let's create our function!
 
     :::image type="content" source="../media/3-functions-project-view.png" alt-text="Screenshot showing the simple-interest folder with the function.json file open in Cloud Shell code editor.":::
 
-    The wizard has created a new folder in our functions project called **simple-interest**, and created two files **index.js** and **function.json**, both with default content. Take a moment now to explore the project files using the editor. The screenshot above shows the expanded folder with the **function.json** file open in the editor.
+    The wizard creates a new folder in our functions project called **simple-interest** and two files *index.js* and *function.json*, both with default content. Take a moment now to explore the project files using the editor. The screenshot shows the expanded folder with the *function.json* file open in the editor.
 
 ## Implement the simple-interest function
 
-The default function implementation that Core Tools created for us in **index.js** looks for an input called `name` in the query string or the body of the inbound HTTP request and returns the string `Hello, [name]`. It's a good illustration of how to use an HTTP trigger, but we want to replace that code with code that calculates simple interest from three input parameters.
+The default function implementation that Core Tools created for us in *index.js* looks for an input called `name` in the query string or the body of the inbound HTTP request and returns the string `Hello, [name]`. It's a good illustration of how to use an HTTP trigger, but you want to replace that code with code that calculates simple interest from three input parameters.
 
-1. In the editor's **FILES** pane, expand the `simple-interest` folder, and select `index.js` to open the file in the editor.
+1. In the editor's **FILES** pane, expand the *simple-interest* folder, and select *index.js* to open the file in the editor.
 
-1. Replace the full contents of `index.js` with the following code:
+1. Replace the full contents of *index.js* with the following code:
 
     ```javascript
     module.exports = async function(context, req) {
@@ -108,13 +108,13 @@ The default function implementation that Core Tools created for us in **index.js
 
     This script looks for parameters named `principal`, `rate`, and `term` in the query string of the HTTP request, and returns the result of the simple interest calculation (principal * rate * term).
 
-1. Save the file by pressing <kbd>Ctrl+S</kbd>, and close the editor by pressing <kbd>Ctrl+Q</kbd>.
+1. Save the file by pressing **Ctrl**+**S**, and close the editor by pressing **Ctrl**+**Q**.
 
 ## Run the function in Cloud Shell
 
-To run our new function locally and try it out, we'll use `func start` to start the Functions runtime (func.exe) in a background process so we can use the command line while it's running. Then, we'll use a command-line tool, `curl`, to interact with the function. 
+To run your new function locally to try it out, use `func start` to start the Functions runtime (*func.exe*) in a background process so that you can use the command line while it's running. Then, use a command-line tool, `curl`, to interact with the function.
 
-If you're using Core Tools from your own computer, you can just use `curl` from a second terminal window or a web browser, and the output produced by Core Tools would appear in real time in the first terminal window. In Cloud Shell, we're limited to a single terminal, so this technique is necessary for this tutorial.
+If you're using Core Tools from your own computer, you can just use `curl` from a second terminal window or a web browser. The output produced by Core Tools appears in real time in the first terminal window. In Cloud Shell, you're limited to a single terminal, so this technique is necessary for this tutorial.
 
 1. Run the following command to start the Functions host silently in the background.
 
@@ -124,7 +124,7 @@ If you're using Core Tools from your own computer, you can just use `curl` from 
 
     As with `func new`, Cloud Shell should still be in the `loan-wizard` directory.
 
-    You can ignore the output of this command. The Functions host is now writing its output to the file `~/output.txt`, and we can continue to use the command line while it's running.
+    You can ignore the output of this command. The Functions host is now writing its output to the file *~/output.txt*. You can continue to use the command line while it's running.
 
     Use the `ps` command to verify that the `func` process is running.
 
@@ -134,30 +134,30 @@ If you're using Core Tools from your own computer, you can just use `curl` from 
     code ~/output.txt
     ```
 
-    Near the end of the output, you'll see a message that lists `Functions: simple-interest:` is available as a GET or POST HTTP request `http://localhost:7071/api/simple-interest`.
+    Near the end of the output, you see a message that lists `Functions: simple-interest:` is available as a GET or POST HTTP request `http://localhost:7071/api/simple-interest`.
 
     > [!NOTE]
-    > If you see an error message, press <kbd>Ctrl+C</kbd> to stop the host, and make sure that the contents of your index.js file are the same as the sample above.
+    > If you see an error message, select **Ctrl**+**C** to stop the host. Make sure that the contents of your *index.js* file are the same as the sample.
 
     This localhost URL isn't published to the web, it's only accessible from tools running in your Cloud Shell session.
 
-1. Close the editor by pressing <kbd>Ctrl+Q</kbd>.
+1. Close the editor by selecting **Ctrl**+**Q**.
 
-1. Run the following command to send an HTTP GET request to our locally running function.
+1. Run the following command to send an HTTP GET request to your locally running function.
 
     ```bash
     curl "http://localhost:7071/api/simple-interest" -w "\n"
     ```
 
-    The output, `Please supply principal, rate and term in the query string`, indicates that our function was successfully invoked and can return a response to us, but we aren't calling it as intended. We need to provide the parameters as part of the HTTP request.
+    The output, `Please supply principal, rate and term in the query string`, indicates that our function was successfully invoked and can return a response, but you're not calling it as intended. You need to provide the parameters as part of the HTTP request.
 
-1. Invoke the function again, this time providing a value for each of the query string parameters.
+1. Invoke the function again. This time, provide a value for each of the query string parameters.
 
     ```bash
     curl "http://localhost:7071/api/simple-interest?principal=5000&rate=.035&term=36" -w "\n"
     ```
 
-    This time, the output is `6300`. Our function is working as expected!
+    This time, the output is `6300`. Your function is working as expected!
 
 1. Enter the following command to again view the output log.
 
@@ -165,7 +165,7 @@ If you're using Core Tools from your own computer, you can just use `curl` from 
     code ~/output.txt
     ```
 
-    The top nine lines or so of the file will be the same as when you ran `func start` the first time. After that, you'll see a set of log entries, each starting with a timestamp for each time you called the function with `curl`, looking like this.
+    The top nine lines or so of the file are the same as when you ran `func start` the first time. After that, you see a set of log entries, each starting with a timestamp for each time you called the function with `curl`:
 
     ```output
     For detailed output, run func with --verbose flag.
@@ -178,4 +178,4 @@ If you're using Core Tools from your own computer, you can just use `curl` from 
     Application is shutting down...
     ```
 
-1. Close the editor by pressing <kbd>Ctrl+Q</kbd>.
+1. Close the editor by selecting **Ctrl**+**Q**.
