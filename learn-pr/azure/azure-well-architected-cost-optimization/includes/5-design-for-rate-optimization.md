@@ -1,34 +1,63 @@
-| :::image type="icon" source="media/goal.svg"::: Spend only on what you need to achieve the highest return on your investments. |
+| :::image type="icon" source="media/goal.svg"::: Increase efficiency without redesigning, renegotiating, or sacrificing functional or nonfunctional requirements. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
-Principle intro text
+Take advantage of opportunities to optimize the utility and costs of your existing resources and operations. If you don't, you unnecessarily spend money without any added ROI.
 
-## Approach 1 summary [70 character long. Essence of the approach]
+Contoso’s business intelligence (BI) team hosts a suite of GraphQL APIs for various business units to access various data stores across the organization without granting direct database access. They’ve been building these up over the years and found that versioning was important, so they have been exposing their APIs now over versioned endpoints a single API Management gateway, using consumption billing. 
 
-Example (Before). No more than four sentences. Highlight one or two key problems.
+Behind the API Management instances are three AKS clusters that host the APIs that are exposed. One running a Windows node pool for APIs written in .NET 4.5, one running pure Linux for the rest of the APIs written in Java Spring, and one they inherited from a prior team running dotnet core APIs. The clusters are now all owned by the BI team and are only used for these APIs. While managing three clusters isn’t ideal, they have been working as intended so have been left alone. 
 
-> **Approach**: Mostly full approach text.
+As a cost center in the business, the BI team is looking for ways to optimize its rates to drive down operating costs.
 
-Children's story about the approach.
+## Consolidate infrastructure where practical
 
-Example (After) - No more than two sentences, showing how this approach solved the two key problems.
+**Co-locate usage with other resources, workloads, and even teams. Prefer services that make it easier to achieve higher density. Consider the potential tradeoffs, especially on security boundaries.**
 
-## Approach 2 summary [70 character long. Essence of the approach]
+Consolidating your infrastructure will help you optimize your cloud costs. As density increases, the amount of resources that you need to run a workload decreases. This decrease reduces cost per unit and the cost of management.
 
-Example (Before). No more than four sentences. Highlight one or two key problems.
+*Challenge*
 
-> **Approach**: Mostly full approach text.
+- The workload team has designed their AKS infrastructure according to the Microsoft baseline architecture guidance, which recommends running at least three nodes per cluster. This configuration has resulted in the team supporting nine system nodes across the three clusters.
+- The team applies patches and updates to the clusters three times per month.
 
-Children's story about the approach.
+*Applying the approach and outcomes*
 
-Example (After) - No more than two sentences, showing how this approach solved the two key problems.
+- After testing, the team decides that they can combine all the API into a single cluster with three user node pools while achieving the same performance and OS characteristics of their original cluster.
+- After consolidating the APIs onto one cluster, they consolidate to four nodes for their system node pool, saving the costs of five virtual machines.
+- The team can also now streamline their patching and upgrading process on their cluster as they only have one cluster to manage.
+- Their next cost savings goal is to evaluate consolidating the two linux node pools into one to reduce the operational overhead even further.
 
-## Approach 3 summary [70 character long. Essence of the approach]
+## Take advantage of reservations and other infrastructure discounts
 
-Example (Before). No more than four sentences. Highlight one or two key problems.
+**Optimize by committing and pre-purchasing to take advantage of discounts offered on resource types that aren't expected to change over time and for which costs and utilization are predictable. Also, work with your licensing team to influence future purchase agreement programs and renewals.**
 
-> **Approach**: Mostly full approach text.
+Microsoft offers reduced rates for predictable and long-term commitment to specific resources and resource categories. Resources cost less during the usage period and can be amortized over the period.
 
-Children's story about the approach.
+By keeping your licensing team aware of the current and predicted investment by resource, you can help them right-size commitments when your organization signs the agreement. In some cases, these projections and commitments could influence your organization's price sheet, which benefits your workload's cost and also other teams that use the same technology.
 
-Example (After) - No more than two sentences, showing how this approach solved the two key problems.
+*Challenge*
+
+- Now that the team has consolidated onto one cluster, removing some of the excess compute and operational burden they previously absorbed, they are interested in finding additional measures to lower the cost of the cluster.
+- Because the BI team is happy with the AKS platform, they plan on continuing to use it for the foreseeable future, and likely will even grow its usage.
+
+*Applying the approach and outcomes*
+
+- Because AKS is built on top of Virtual Machine Scale Sets, the team looks into Azure Reservations. They know the expected SKUs and scale units they need for the user nodes.
+- They purchase a three-year reservation that covers the system node pool and the minimum instance count of nodes per user node pool.
+- With this purchase, the team knows they are getting the best deal on their compute needs while allowing the workload to grow over time.
+
+## Use fixed-price billing when practical
+
+**Switch to fixed-price billing instead of consumption-based billing for a resource when its utilization is high and predictable and a comparable SKU or billing option is available.**
+
+When utilization is high and predictable, the fixed-price model usually costs less and often supports more features. Using it could increase your ROI.
+
+*Challenge*
+
+- The API Management instances are all configured for consumption-based billing currently. After evaluating APIs' usage patterns, they understand that the APIs are used globally and sometimes quite heavily. The team decides to analyze the cost differences between the current billing model and a fixed-price model.
+
+*Applying the approach and outcomes*
+
+- After performing the cost analysis, the team finds that migrating from Consumption to Standard tier will be a bit less expensive overall given the current usage patterns. As the services grow over the next year, the cost differences will likely become more pronounced. Even though the fixed-pricing model doesn’t reflect the elasticity characteristics of the requests, sometimes pre-purchased billing models are the right choice.
+- As an added bonus, using the Standard tier allows the use of a Private Endpoint for inbound connections, which the team has been eager to implement for the workload.
+- In this case switching SKUs made sense for both utilization purposes and for the added benefit of the additional network segmentation that’s possible with a Private endpoint implementation.

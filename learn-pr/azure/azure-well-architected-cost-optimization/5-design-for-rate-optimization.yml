@@ -15,47 +15,47 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "TODO - THEORY CHECK 1"
+    - content: "Which of the following scenarios is a good use case for purchasing a reserved instance?"
       choices:
-        - content: "TODO"
-          isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
-          isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
-          isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
+        - content: "My workload is running on VMs and is accessed 24/7."
           isCorrect: true
-          explanation: "TDOD"
+          explanation: "Purchasing reserved instances for VMs that are running 24/7 is a good way to save money."
+        - content: "My workload is running on Azure App Service and is only accessed during business hours."
+          isCorrect: false
+          explanation: "Being able to stop the App Service instances when they are not in use is a better way to save money."
+        - content: "My workload is running on VMs and will only be in service for 6 months."
+          isCorrect: false
+          explanation: "Reservations can only be purchased on one- or three-year terms, so this is not a good use case for a reservation."
+        - content: "My workload is running on Azure Container Apps and is accessed 24/7."
+          isCorrect: false
+          explanation: "Azure reservations cannot be purchased for Azure Container Apps."
 
-    - content: "TODO - THEORY CHECK 2"
+    - content: "When might it be a good idea to switch from consumption-based billing to a flat-rate billing model?"
       choices:
-        - content: "TODO"
+        - content: "My workload is heavily used during weekdays and lightly used on weekends."
           isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
+          explanation: "In this case, you may be able to scale down your workload on weekends to save money."
+        - content: "My workload is heavily used each morning and moderately used the rest of the day"
           isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
-          isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
+          explanation: "Scaling up to handle the morning peak and scaling down the rest of the day is a better way to save money."
+        - content: "My workload is moderately used all day and night."
           isCorrect: true
-          explanation: "TDOD"
+          explanation: "This could be a good use case for a flat-rate billing model because the usage pattern is consistent."
+        - content: "My workload is seasonal and is only heavily used for 3 months of the year."
+          isCorrect: false
+          explanation: "You may be able to run your workload with far fewer resources for the other 9 months of the year, so a flat-rate billing model is not a good fit."
 
-    - content: "TODO - EXAMPLE BASED CHECK"
+    - content: "Contoso's SQL databases are spread across multiple VMs, each with its own SQL Server Enterprise license. Which of the following cost-saving measures should Contoso consider?"
       choices:
-        - content: "TODO"
+        - content: "Switch all of the SQL Enterprise licenses to SQL Server Developer."
           isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
-          isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
-          isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
+          explanation: "SQL Server Developer is only for development and testing purposes and cannot be used in production environments."
+        - content: "Consolidate the databases onto fewer VMs and apply Azure Hybrid Benefit to each Windows and SQL Server license."
           isCorrect: true
-          explanation: "TDOD"
+          explanation: "Consolidating the databases onto fewer VMs and applying Azure Hybrid Benefit to each Windows and SQL Server license cuts down the number of VMs and licenses to pay for."
+        - content: "Add all of the database servers into an Always On failover cluster."
+          isCorrect: false
+          explanation: "This may be a good idea for high availability, but it will not save Contoso any money."
+        - content: "Disable SQL backups."
+          isCorrect: false
+          explanation: "Disabling backups is not a good idea because it puts the databases at risk of data loss."

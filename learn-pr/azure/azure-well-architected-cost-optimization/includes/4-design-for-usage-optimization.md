@@ -7,7 +7,9 @@ Contoso University is currently hosting a commercial off-the-shelf (COTS) soluti
 
 The technology solution of the COTS offering is generally treated like a black box, except for its database which is Azure Database for MySQL. The custom integration is an Azure Durable Function, which runs fanned out on a Standard service plan in Azure App Service. This App Service previously hosted a university website, but that is no longer the case. This durable function is a Python application backed by a dedicated Azure Storage account that performs a nightly sync from the MySQL database into the SaaS’s API.
 
-## Use consumption-based pricing when it's practical.
+## Use consumption-based pricing when it's practical
+
+**There may be services that offer consumption-based pricing, which means that you are only billed for the utilization of the service, and you can shut down the service when it isn't needed to stop incurring costs. If you have workload components that are only utilized sporadically, this can help minimize wasted costs when compared to paying for the component to run 24/7/365.**
 
 By using consumption-based pricing, you only pay for exactly what you use. This option is a good choice when your workload compute isn't expected to be utilized full-time.
 
@@ -23,7 +25,9 @@ By using consumption-based pricing, you only pay for exactly what you use. This 
 - The team runs a performance test to ensure performance is sufficient and they notice a slight increase in run time, but it’s still within acceptable limits.
 - The workload's overall cost is reduced by using the consumption plan as they only incur costs when the job is executing.
 
-## Prioritize deployment of active-active models over active-only or active-passive models, as part of your recovery plan, if you already paid for the resources.
+## Optimize your high availability design
+
+**Prioritize deployment of active-active models over active-only or active-passive models, as part of your recovery plan, if you already paid for the resources.**
 
 If your design defaults to using active-passive models, you might have idle resources that could otherwise be used. Converting to active-active might enable you to meet your load leveling and scale bursting requirements without overspending. If you can meet your recovery targets with an active-only model, the costs of those resources can be removed completely.
 
@@ -39,8 +43,9 @@ If your design defaults to using active-passive models, you might have idle reso
 - The team tests building a new instance and recovering a database from backup and they are satisfied that they will still be in compliance with their recovery targets, so they decide to eliminate the standby instance.
 - The team updates the DR plan to reflect the new recovery plan and realize the cost savings through the new configuration.
 
+## Keep your cloud environment clean of unused resources and data
 
-## Regularly and rigorously review deployments for unused resources and data and decommission them. 
+**Regularly and rigorously review deployments for unused resources and data and decommission them.  Over time resources and data that were required for some purpose in the past, but are no longer being used can linger in your cloud environments and unnecessarily accrue costs. Be vigilant about keeping your environments clean to help optimize for cost efficiency.**
 
 Shutting down unused resources and deleting data when you no longer need it reduces waste and frees up funds so you can invest them elsewhere.
 

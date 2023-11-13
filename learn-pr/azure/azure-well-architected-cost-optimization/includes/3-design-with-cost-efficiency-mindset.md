@@ -44,7 +44,9 @@ You'll be able to explore cheaper options that might enable resource flexibility
 - After evaluating several cloud-native options, the team decides that moving the web components to Azure App Service would provide Windows IIS application compatibility without significant changes and wouldn't require significant training.
 - The team decides to continue using GitHub Actions with self-hosted runners, but they will migrate to a virtual machine scale set with the ability to scale to zero nodes when they aren't being used.
 
-## Design your architecture to support cost guardrails.
+## Design your architecture to support cost guardrails
+
+**Implement cost guardrails through platform solutions, policies, infrastructure and application design patterns, or automation to help ensure that your cloud environment costs are kept within budgets.**
 
 Enforcement via governance policies or built-in application design patterns can prevent incidental or unapproved charges.
 
