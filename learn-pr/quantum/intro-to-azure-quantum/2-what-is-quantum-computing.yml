@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-quantum
   show_latex: true
-durationInMinutes: 11
+durationInMinutes: 8
 content: |
   [!include[](includes/2-what-is-quantum-computing.md)]
