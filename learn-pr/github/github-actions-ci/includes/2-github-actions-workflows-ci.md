@@ -75,7 +75,7 @@ To learn more about npm, check out the npm documentation:
 
 When a workflow runs, it produces a log that includes the details of what happened and any errors or test failures.
 
-If there is an error or if a test has failed, you see a red X rather than a green check mark ✔ in the logs. You can examine the details of the error or failure to investigate what happened.
+If there is an error or if a test has failed, you see a red ✖ rather than a green check mark ✔ in the logs. You can examine the details of the error or failure to investigate what happened.
 
 :::image type="content" source="../media/2-log-details.png" alt-text=" GitHub Actions log with details on a failed test." border="true":::
 
