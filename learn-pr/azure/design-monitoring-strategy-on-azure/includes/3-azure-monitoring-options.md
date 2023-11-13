@@ -40,7 +40,7 @@ Defender for Cloud creates an agent on each supported VM when the VM is created.
 
 [Microsoft Sentinel](https://azure.microsoft.com/products/microsoft-sentinel) is a cloud-native security information and event management (SIEM) system that collects data on devices, users, infrastructure, and applications across your enterprise. You can use Microsoft Sentinel to proactively hunt for threats and anomalies, and respond by using orchestration and automation. Microsoft Sentinel has built-in threat intelligence for detection and investigation that can help reduce false positives.
 
-You can connect your data sources to Microsoft Sentinel. Data sources include Microsoft services such as Office 365 and Azure Advanced Threat Protection, and can also include external solutions such as AWS CloudTrail or on-premises sources. The Microsoft Sentinel dashboard shows detailed information collected from your sources.
+You can connect your data sources to Microsoft Sentinel. Data sources include Microsoft services such as Microsoft 365 and Defender for Cloud, and can also include external solutions such as AWS CloudTrail or on-premises sources. The Microsoft Sentinel dashboard shows detailed information collected from your sources.
 
 :::image type="content" source="../media/3-azure-monitoring-options-05.png" alt-text="Screenshot of the Microsoft Sentinel dashboard." lightbox="../media/3-azure-monitoring-options-05.png":::
 
@@ -48,15 +48,11 @@ Incidents help you group and combine related alerts. You can use incidents to re
 
 :::image type="content" source="../media/3-azure-monitoring-options-06.png" alt-text="Screenshot of incident investigation." lightbox="../media/3-azure-monitoring-options-06.png":::
 
-You can use playbooks to automate your response to alerts in Microsoft Sentinel. You configure playbooks by using Azure Logic Apps. Your playbook details the steps to take when an alert is triggered in Microsoft Sentinel.
-
-:::image type="content" source="../media/3-azure-monitoring-options-07.png" alt-text="Screenshot of playbooks." lightbox="../media/3-azure-monitoring-options-07.png":::
-
 You can use hunting queries to look for threats across your enterprise before alerts are raised. Microsoft security researchers maintain built-in hunting queries that act as bases for you to build your own queries.
 
 :::image type="content" source="../media/3-azure-monitoring-options-08.png" alt-text="Screenshot of hunting queries." lightbox="../media/3-azure-monitoring-options-08.png":::
 
-You can use notebooks to automate your investigations. Notebooks are playbooks that can consist of investigation or hunting steps that you reuse or share with others. Use Azure Notebooks for Microsoft Sentinel to develop and run your notebooks. For example, you might use the **Guided hunting - Anomalous Office365 Exchange Sessions** notebook to hunt for anomalous activities in Office 365 across your enterprise.
+Notebooks can consist of investigation or hunting steps that you reuse or share with others. Use Microsoft Sentinel Notebooks to develop and run your notebooks. For example, you might use the **Guided hunting - Anomalous Office365 Exchange Sessions** notebook to hunt for anomalous activities in Microsoft 365 across your enterprise.
 
 ## Log Analytics workspaces
 

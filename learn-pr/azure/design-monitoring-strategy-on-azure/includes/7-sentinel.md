@@ -12,7 +12,7 @@ To implement Microsoft Sentinel, you need a Log Analytics workspace. When you cr
 
 :::image type="content" source="../media/7-sentinel-01.png" alt-text="Screenshot of adding a Log Analytics workspace." lightbox="../media/7-sentinel-01.png":::
 
-After you create the Microsoft Sentinel resource and connect it to a workspace, you can connect the data sources for your enterprise. Microsoft Sentinel integrates with Microsoft solutions like Microsoft Entra ID and Office 365 through connectors. Microsoft Sentinel also comes with connectors for non-Microsoft solutions, and has a REST API that lets you connect to other data sources.
+After you create the Microsoft Sentinel resource and connect it to a workspace, you need to connect data sources for your enterprise. Install solutions with data connectors from the content hub. Microsoft Sentinel integrates with Microsoft solutions, including Microsoft Entra ID and Microsoft 365, through connectors.
 
 You can see all of your available data connectors by selecting **Data connectors** under **Configuration** in the Microsoft Sentinel left navigation.
 

@@ -20,7 +20,7 @@ quiz:
     - content: To improve the development lifecycle for an application.
       isCorrect: false
       explanation: You use Application Insights to improve your application development lifecycle.
-    - content: To get a detailed overview of your enterprise, including multiple clouds and on-premises locations.
+    - content: To detect and respond to security threats across multiple clouds.
       isCorrect: true
       explanation: Microsoft Sentinel helps monitor and respond to security threats across your entire enterprise.
     - content: To cross-query data collected from multiple on-premises and cloud data sources.
