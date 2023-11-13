@@ -79,10 +79,3 @@ The investigation map also gives you a timeline that helps you understand which 
 
 :::image type="content" source="../media/7-sentinel-13.png" alt-text="Screenshot of timeline." lightbox="../media/7-sentinel-13.png":::
 
-## Respond to threats with playbooks
-
-Playbooks can help you automatically respond to threats in Microsoft Sentinel. To create a new playbook, select **Automation** under **Configuration** in the Microsoft Sentinel left navigation, and then select **Create**.
-
-:::image type="content" source="../media/7-sentinel-14.png" alt-text="Screenshot of Microsoft Sentinel playbooks." lightbox="../media/7-sentinel-14.png":::
-
-You can add a new playbook with an incident trigger, an alert trigger, or an entity trigger, or you can create a blank playbook.
