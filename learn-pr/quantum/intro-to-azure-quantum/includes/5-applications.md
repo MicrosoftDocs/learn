@@ -15,13 +15,11 @@ In fact, one of the goals of quantum computing research is to study which proble
 
 Quantum mechanics is the underlying "operating system" of our universe. It describes how the fundamental building blocks of nature behave. Nature's behaviors, such as chemical reactions, biological reactions, and material formations, often involve many-body quantum interactions. For simulating intrinsically quantum mechanical systems, such as molecules, quantum computing is promising, because qubits can be used to represent the natural states in question. Examples of quantum systems that we can model include photosynthesis, superconductivity, and complex molecular formations.
 
-
 ## Resource estimation
 
 The Azure Quantum Azure Resource Estimator helps you prepare for the future of quantum computing by providing a way to estimate the resources required to run your quantum programs on scaled quantum computers. It helps you answer questions such as what hardware resources are required? How many physical and logical qubits are needed and what type? How long is the run time?
 
 As a result, you'll be able to refine your algorithms and build solutions that take advantage of scaled quantum computers when they become available.
-
 
 ## Quantum speedups
 

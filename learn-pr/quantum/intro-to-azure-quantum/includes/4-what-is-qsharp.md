@@ -23,7 +23,7 @@ The following sections describe some key features of Q#.
 The Q# libraries enable you to run complex quantum operations without having to design low-level operation sequences.
 
 - The standard library provides a set of essential and very useful functions and operations that can be used when writing quantum programs in Q#.
-- The quantum numeric library, which provides support for a wide range of numerics functionality.
+- The quantum numeric library provides support for a wide range of numerics functionality.
 
 ### Qubit management
 
@@ -48,6 +48,3 @@ Q# supports general classical control flow during the execution of an algorithm.
 ### Mixed classical and quantum computation
 
 Q# supports rich classical computation and quantum operations. This allows clean expression of adaptive algorithms such as the random walk phase estimation operation. Such algorithms are difficult to express directly in the circuit model of a fixed sequence of quantum gates.
-
-
-
