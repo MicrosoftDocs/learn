@@ -7,6 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
+  ms.service: cognitive-services
 title: Prepare to develop AI solutions on Azure
 summary: As an aspiring Azure AI Engineer, you should understand core concepts and principles of AI development, and the capabilities of Azure services used in AI solutions.
 abstract: |
@@ -16,7 +17,7 @@ abstract: |
   - Understand considerations for AI Engineers
   - Understand considerations for responsible AI
   - Understand capabilities of Azure Machine Learning
-  - Understand capabilities of Azure Cognitive Services
+  - Understand capabilities of Azure AI Services
   - Understand capabilities of the Azure Bot Service
   - Understand capabilities of Azure Cognitive Search
 prerequisites: |
@@ -29,6 +30,7 @@ roles:
 - developer
 products:
 - azure
+- ai-services
 subjects:
 - artificial-intelligence
 units:

@@ -14,22 +14,22 @@ From the **Templates** tab, you can select an existing workbook to display a det
 
 ## Review an existing workbook template
 
-As mentioned earlier, Contoso is concerned about compromised identities. As the security administrator, you can examine the existing **Azure AD Sign-in logs** workbook by selecting that template in the **Templates** section. Then select **View template** in the details pane.
+As mentioned earlier, Contoso is concerned about compromised identities. As the security administrator, you can examine the existing **Microsoft Entra sign-in logs** workbook by selecting that template in the **Templates** section. Then select **View template** in the details pane.
 
-The **Azure AD Sign-in logs** workbook contains predefined charts, graphs, and tables that can provide important insight about the sign-in activity in Azure AD. You can find information about user sign-ins and locations, email addresses, and IP addresses of your users. You can also review information about failed activities and the errors that triggered the failures.
+The **Microsoft Entra sign-in logs** workbook contains predefined charts, graphs, and tables that can provide important insight about the sign-in activity in Microsoft Entra ID. You can find information about user sign-ins and locations, email addresses, and IP addresses of your users. You can also review information about failed activities and the errors that triggered the failures.
 
-On the **Azure AD Sign-in logs** page, you can expand the time range or filter the apps and users that have sign-in privileges in Azure AD. For example, Contoso wants to identify users that can sign-in to the Azure portal, so you can filter the data as follows.
+On the **Microsoft Entra sign-in logs** page, you can expand the time range or filter the apps and users that have sign-in privileges in Microsoft Entra ID. For example, Contoso wants to identify users that can sign-in to the Azure portal, so you can filter the data as follows.
 
 :::image type="content" source="../media/05-filter-users.png" alt-text="Screenshot that displays Sign-in Analysis with filtering of the users that sign-in to the Azure portal." border="true":::
 
 Contoso is interested in identifying the failed sign-in attempts. You can display these accounts by selecting the information tiles, and then select a tile or a row to display more information such as:
 
-- **Sign-ins by location**. This section indicates the location from which the user signed in to Azure AD.
+- **Sign-ins by location**. This section indicates the location from which the user signed in to Microsoft Entra ID.
 - **Location sign-in details**. This section displays the users, their sign-in status, and the time of the sign-in attempt.
-- **Sign-ins by device**. This section lists devices used by the users to sign in to Azure AD.
+- **Sign-ins by device**. This section lists devices used by the users to sign in to Microsoft Entra ID.
 - **Device sign-in details**. This section displays the users that signed in on a particular device and the time they signed in.
 
-This information tile in the background is configured to run the query and filter the data collected from the Azure AD connector. Microsoft Sentinel then visualizes and presents the data collected by using tables, which are more meaningful and provide useful insight on user sign-in attempts.
+This information tile in the background is configured to run the query and filter the data collected from the Microsoft Entra connector. Microsoft Sentinel then visualizes and presents the data collected by using tables, which are more meaningful and provide useful insight on user sign-in attempts.
 
 The workbook contains other tiles that indicate the users who signed in using Conditional Access. From the **Conditional access status** table, you can review users who required multifactor authentication to validate their identity.
 

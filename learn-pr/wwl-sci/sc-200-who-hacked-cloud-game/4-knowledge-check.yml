@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check."
-  ms.date: 02/17/2023
+  ms.date: 07/20/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/4-knowledge-check.md)]
@@ -33,7 +32,7 @@ quiz:
       explanation: "This is the correct role for performing Microsoft Purview investigations."
     - content: "Identity Administrator"
       isCorrect: false
-      explanation: "This role is used for an Azure Active Directory investigation."
+      explanation: "This role is used for a Microsoft Entra investigation."
     - content: "Security Operations Analyst"
       isCorrect: false
       explanation: "This role is used in Microsoft Sentinel investigations"

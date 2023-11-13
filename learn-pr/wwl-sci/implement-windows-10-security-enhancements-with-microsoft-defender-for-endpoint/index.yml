@@ -3,12 +3,10 @@ uid: learn.wwl.implement-windows-10-security-enhancements-with-microsoft-defende
 metadata:
   title: Implement Windows security enhancements with Microsoft Defender for Endpoint
   description: "Implement Windows security enhancements with Microsoft Defender for Endpoint"
-  ms.date: 02/17/2023
+  ms.date: 08/31/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.service: microsoft-365-security
-  ms.subservice: mde
 title: Implement Windows security enhancements with Microsoft Defender for Endpoint
 summary: Microsoft Defender for Endpoint gives you various tools to eliminate risks by reducing the surface area for attacks without blocking user productivity. Learn about Attack Surface Reduction (ASR) with Microsoft Defender for Endpoint.
 abstract: |

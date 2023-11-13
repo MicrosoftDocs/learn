@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Test your knowledge on how and when to work with different types of compute targets in Azure Machine Learning."
-  ms.date: 04/10/2023
+  ms.date: 07/31/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 quiz:
+  title: ""
   questions:
   - content: "You're working in Visual Studio Code. You cloned a GitHub repository to Visual Studio Code and you're editing code in a Jupyter notebook. To test the code, you want to run a cell within the notebook. Which compute should you use?"
     choices:

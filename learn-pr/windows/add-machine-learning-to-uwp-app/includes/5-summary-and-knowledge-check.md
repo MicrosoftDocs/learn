@@ -35,7 +35,7 @@ We encourage you to keep learning. More courses are coming soon. Meanwhile, cons
 ### Other Machine Learning Resources at Microsoft
 
 - [Compare ML products at Microsoft](/azure/machine-learning/service/overview-more-machine-learning)
-- [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/): Find pre-built models to train with Vision, Speech, Knowledge, Search, or Language AI.
+- [Azure AI services](https://azure.microsoft.com/services/cognitive-services/): Find pre-built models to train with Vision, Speech, Knowledge, Search, or Language AI.
 - [Azure Custom Vision Service](/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier): Customize your own computer vision models for your unique use case by simply uploading and labeling images.
 - [Azure Machine Learning](https://azure.microsoft.com/overview/machine-learning/): Build, train, deploy, and manage your own models.
 - [Visual Studio Tools for AI](https://visualstudio.microsoft.com/downloads/ai-tools-vs/): An extension that supports deep learning frameworks including Microsoft Cognitive Toolkit (CNTK), Google TensorFlow, Theano, Keras, Caffe2 and more.

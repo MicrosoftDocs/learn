@@ -4,7 +4,7 @@ title: Implement Datacenter Firewall on Azure Stack HCI
 metadata:
   unitType: learning-content
   title: Implement Datacenter Firewall on Azure Stack HCI
-  description: This unit steps through the process of implementing Datacenter Firewall on Azure Stack HCI.
+  description: Step through the process of implementing Datacenter Firewall on Azure Stack HCI.
   ms.date: 5/6/2021
   author: rmcmurray
   ms.author: robmcm

@@ -43,3 +43,4 @@ units:
 - learn.wwl.examine-azure-iot-edge-environment.summary
 badge:
   uid: learn.wwl.examine-azure-iot-edge-environment.badge
+hidden: true

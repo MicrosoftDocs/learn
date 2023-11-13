@@ -1,4 +1,3 @@
-
 The first thing that comes to mind about Continuous Delivery is that everything needs to be automated.
 
 Otherwise, you can't deploy multiple times a day. But how to deal with testing, then?

@@ -8,7 +8,7 @@ This unit contains the procedure for rotating the following secrets:
 
  -  Encryption keys used within Azure App Service on Azure Stack Hub.
  -  Database connection credentials used by Azure App Service on Azure Stack Hub to interact with the hosting and metering databases.
- -  Certificates used by Azure App Service on Azure Stack Hub to secure endpoints and rotation of identity application certificates in Azure Active Directory (Azure AD) or Active Directory Federation Services (AD FS).
+ -  Certificates used by Azure App Service on Azure Stack Hub to secure endpoints and rotation of identity application certificates in Microsoft Entra ID or Active Directory Federation Services (AD FS).
  -  System credentials for Azure App Service on Azure Stack Hub infrastructure roles.
 
 ## Rotate encryption keys
@@ -41,23 +41,25 @@ To rotate the certificates used within Azure App Service on Azure Stack Hub, tak
 4.  Provide the **certificate file** and associated **password** for the certificates you wish to rotate and select **OK**.
 5.  The certificates are rotated as required throughout the Azure App Service on Azure Stack Hub role instances. Operators can check the status of the procedure using the **Status** button.
 
-When the identity application certificate is rotated, the corresponding app in Azure AD or AD FS must also be updated with the new certificate.
+When the identity application certificate is rotated, the corresponding app in Microsoft Entra ID or AD FS must also be updated with the new certificate.
 
 Failure to update the identity application with the new certificate after rotation will break the user portal experience for Azure Functions, prevent users from being able to use the KUDU developer tools, and prevent admins from managing worker tier scale sets from the App Service administration experience.
 
-### Rotate credential for the Azure AD identity application.
+<a name='rotate-credential-for-the-azure-ad-identity-application'></a>
+
+### Rotate credential for the Microsoft Entra identity application.
 
 The identity application is created by the operator before deployment of Azure App Service on Azure Stack Hub. If the application ID is unknown, follow these steps to discover it:
 
 1.  Go to the **Azure Stack Hub administrator portal**.
 2.  Go to **Subscriptions** and select **Default Provider Subscription**.
 3.  Select **Access Control (IAM)** and select the **App Service** application.
-4.  Take a note of the **APP ID**, this value is the application ID of the identity application that must be updated in Azure AD.
+4.  Take a note of the **APP ID**, this value is the application ID of the identity application that must be updated in Microsoft Entra ID.
 
-To rotate the certificate for the application in Azure AD, follow these steps:
+To rotate the certificate for the application in Microsoft Entra ID, follow these steps:
 
 1.  Go to the **Azure portal** and sign in using the Global Admin used to deploy Azure Stack Hub.
-2.  Go to **Azure Active Directory** and browse to **App Registrations**.
+2.  Go to **Microsoft Entra ID** and browse to **App Registrations**.
 3.  Search for the **Application ID**, then specify the identity Application ID.
 4.  Select the application and then go to **Certificates &amp; Secrets**.
 5.  Select **Upload certificate** and upload the new certificate for the identity application with one of the following file types: .cer, .pem, .crt.

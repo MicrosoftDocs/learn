@@ -1,4 +1,4 @@
-In this exercise, you'll set up a preconfigured environment with a Load Balancer, and create charts to monitor the health of the Load Balancer.
+In this exercise, you set up a preconfigured environment with a Load Balancer, and create charts to monitor the health of the Load Balancer.
 
 This exercise is optional. To complete it, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
@@ -10,7 +10,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 
 1. Select **Bash**.
 
-1. Run the following command to download the scripts you'll use for this exercise.
+1. Run the following command to download the scripts you use for this exercise.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-troubleshoot-inbound-network-connectivity-azure-load-balancer load-balancer
@@ -22,7 +22,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
     cd ~/load-balancer/src/scripts
     ```
 
-1. Run the following command to set the user name for the VMs. You can change the user name to something different. You'll need the user name later in this exercise, so make a note of what you use.
+1. Run the following command to set the user name for the VMs. You can change the user name to something different. You need the user name later in this exercise, so make a note of what you use.
 
     ```bash
     export USERNAME=azureuser

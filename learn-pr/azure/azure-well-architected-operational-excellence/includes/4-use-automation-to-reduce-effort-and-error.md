@@ -140,7 +140,7 @@ Automating resource deployment can be a massive benefit to your environment. The
 
 ## Automation of operational tasks
 
-Once your solutions are up and running, there are ongoing operational activities that you can also automate. Automating these tasks with Azure Automation reduces manual workloads, enables configuration and update management of compute resources, provides a framework for running any type of Azure task, and centralizes shared resources such as schedules, credentials, and certificates.
+Once your solutions are up and running, there are ongoing operational activities that you can also automate. Automating these tasks with Azure Automation and other Azure services reduces manual workloads, enables configuration and update management of compute resources, provides a framework for running any type of Azure task, and centralizes shared resources such as schedules, credentials, and certificates.
 
 Examples of this automation might include:
 
@@ -149,9 +149,7 @@ Examples of this automation might include:
 - Searching for and shutting down virtual machines in off hours
 - Running daily reports and producing a dashboard to report to senior management
 
-As an example, let's suppose that you want to reduce your compute costs by configuring one of your development virtual machines to run only during your organization's business hours. You can write a script to start the VM in the morning and shut it down in the evening, and you can configure Azure Automation to run the script at set times. The following illustration shows the role of Azure Automation in this process.
-
-![An illustration showing the role of Azure Automation in managing a repetitive business process.](../media/4-automation-vm-power-state.png)
+As an example, let's suppose that you want to reduce your compute costs by configuring one of your development virtual machines to run only during your organization's business hours. You can use the Start/Stop VMs v2 feature, which relies on [Azure Functions](/azure/azure-functions/functions-overview) to handle the VM start and stop execution.
 
 ## Automate development environments
 

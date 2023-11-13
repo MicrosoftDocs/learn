@@ -28,7 +28,6 @@ roles:
   - database-administrator
 products:
   - azure
-  - azure-linux-vm
   - azure-virtual-machines
   - azure-kubernetes-service
 subjects:

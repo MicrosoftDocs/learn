@@ -1,12 +1,12 @@
-
-
 ## Deployment via the Azure portal
 
 The Azure portal offers an intuitive interface for performing most common administrative tasks manually.
 
+Azure Center for SAP services (ACSS) makes SAP a top-level workload on Azure. Azure Center for SAP solutions is an end-to-end solution that enables you to deploy and manage SAP systems as a unified workload. ACSS supports manual Azure portal, tasks for deployment of new Azure-based SAP systems.
+
 ## Deployment via Microsoft Azure PowerShell cmdlets
 
-PowerShell is a powerful and extensible framework that has been widely adopted by customers that deploy larger numbers of systems in Azure. It is a common choice of administrators with Windows background, although with the release of PowerShell 6.0, it became possible to run it also on Linux and macOS.
+PowerShell is a powerful and extensible framework that has been widely adopted by customers that deploy larger numbers of systems in Azure. It's a common choice of administrators with Windows background, although with the release of PowerShell 6.0, it became possible to run it also on Linux and macOS.
 
 ## Deployment via Microsoft Azure CLI commands
 

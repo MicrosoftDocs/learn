@@ -27,7 +27,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-    - content: "What is Conditional Access in Azure AD?"
+    - content: "What is Conditional Access in Microsoft Entra ID?"
       choices:
         - content: "A feature that allows users to bypass security policies."
           isCorrect: false
@@ -44,7 +44,7 @@ quiz:
         - content: "An automated tool for managing user privileges within an organization."
           isCorrect: false
           explanation: "Conditional Access defines user-specific access policies but does not manage user privileges."
-    - content: "What is External Identities in Azure AD?"
+    - content: "What is External Identities in Microsoft Entra ID?"
       choices:
         - content: "A set of tools for managing conditional access policies for partners and customers."
           isCorrect: false

@@ -1,4 +1,4 @@
-If you're new to the C# programming language, you might be uncertain about how it relates to .NET. After all, it seems like the term *.NET* is applied to many things. What is .NET? Is C# part of .NET? How does .NET work?  Why do you need to learn about .NET?
+If you're new to the C# programming language, you might be wondering how it relates to .NET. After all, it seems like the term *.NET* is applied to many things. What is .NET? Is C# part of .NET? How does .NET work? Why do you need to learn about .NET?
 
 In this module, you'll learn about:
 - .NET and its ecosystem
@@ -7,9 +7,9 @@ In this module, you'll learn about:
 - The .NET ecosystem as a whole, including the resources that can help you learn
 - How to contribute to this ecosystem
 
-Finally, you'll write C# code using a web-based editor to better understand how each part of .NET works together to create a .NET application.
+Finally, you'll write C# code using a web-based editor to better understand how the parts of .NET work together to create a .NET application.
 
-By the end of this module, you'll have a mental model of .NET. This mental model will prove vital as you take your next steps to build .NET applications.
+By the end of this module, you'll have a good understanding of .NET, and you'll be ready to take your next steps in building .NET applications.
 
 ## Learning objectives
 

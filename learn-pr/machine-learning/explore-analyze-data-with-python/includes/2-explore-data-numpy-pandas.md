@@ -6,9 +6,9 @@ NumPy is a Python library that provides functionality comparable to mathematical
 
 ## What is Pandas?
 
-Pandas is an extremely popular Python library for data analysis and manipulation. Pandas is like a spreadsheet application for Python&mdash;providing easy-to-use functionality for data tables.
+Pandas is an extremely popular Python library for data analysis and manipulation. Pandas is like a spreadsheet application for Python, providing easy-to-use functionality for data tables.
 
-![Pandas DF.](../media/2-pandas-df.png)
+![Diagram of Pandas DF.](../media/2-pandas-df.png)
 
 ## Explore data in a Jupyter notebook
 
@@ -21,4 +21,4 @@ Data exploration and analysis is typically an *iterative* process, in which the 
 - **Clean data** to handle errors, missing values, and other issues.
 - **Apply statistical techniques to better understand the data** and how the sample might be expected to represent the real-world population of data, allowing for random variation.
 - **Visualize data** to determine relationships between variables, and in the case of a machine learning project, identify *features* that are potentially predictive of the *label*.
-- Revise the hypothesis and repeat the process.
+- **Revise the hypothesis** and repeat the process.

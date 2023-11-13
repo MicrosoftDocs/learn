@@ -15,7 +15,7 @@ prerequisites: |
   - [Azure Fundamentals: Describe Azure management and governance](/training/paths/describe-azure-management-governance/)
   - [AZ-104: Prerequisites for Azure administrators](/training/paths/az-104-administrator-prerequisites/)
 summary: |
-  Learn how to manage Azure Active Directory objects, role-based access control (RBAC), subscriptions, and governance in Azure. 
+  Learn how to manage Microsoft Entra objects, role-based access control (RBAC), subscriptions, and governance in Azure. 
   
   Here are the learning paths in the AZ-104 Azure Administrator series:
   :::row:::
@@ -59,7 +59,7 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cost-management
 - azure-rbac
 - azure-resource-manager

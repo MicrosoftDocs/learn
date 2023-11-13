@@ -1,21 +1,21 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.provision-manage-azure-cognitive-services
 metadata:
-  title: Provision and manage Azure Cognitive Services
-  description: Provision and manage Azure Cognitive Services
+  title: Provision and manage Azure AI Services
+  description: Provision and manage Azure AI Services
   ms.date: 06/28/2021
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure
-title: Provision and manage Azure Cognitive Services
+title: Provision and manage Azure AI Services
 prerequisites: |
   Before starting this learning path, you should already have:
   - Familiarity with Azure and the Azure portal.
   - Experience programming with C# or Python.
   If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
 summary: |
-  Azure Cognitive Services are building blocks of AI functionality that you can integrate into your applications. In this learning path, you'll learn how to provision, secure. monitor, and deploy cognitive services resources and use them to build intelligent solutions.
+  Azure AI Services are building blocks of AI functionality that you can integrate into your applications. In this learning path, you'll learn how to provision, secure. monitor, and deploy Azure AI Services resources and use them to build intelligent solutions.
 iconUrl: /training/achievements/provision-and-manage-azure-cognitive-services.svg
 levels:
 - intermediate
@@ -26,7 +26,7 @@ roles:
 - solution-architect
 - student
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - artificial-intelligence
 modules:

@@ -4,13 +4,12 @@ title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 12/21/2022
+  ms.date: 08/25/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: sql
+  ms.subservice: t-sql
 durationInMinutes: 3
 content: |
   [!include[](includes/8-summary.md)]

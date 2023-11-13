@@ -7,9 +7,9 @@ metadata:
   ms.date: 06/14/2021
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
+  ms.topic: unit
   ms.custom: team=nextgen
+  ms.service: iot-hub
 durationInMinutes: 3 # dummy number at present
 content: |
    [!include[](includes/7-monitor-solution.md)]

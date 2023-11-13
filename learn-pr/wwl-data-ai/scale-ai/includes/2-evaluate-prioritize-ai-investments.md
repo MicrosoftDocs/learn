@@ -1,5 +1,3 @@
-
-
 Adopting AI throughout an organization implies a serious investment. However, investing in AI projects requires a different perspective than most investments. If you use AI to improve or automate an existing process, then it's possible to measure return on investment (ROI) in the straightforward, traditional way. But there are a few characteristics of AI initiatives that make it difficult to estimate their costs and benefits.
 
 First, most AI models require upfront investment before it's even possible to measure effectiveness. It's hard to predict the accuracy of the model and its business impact until you've prepared data and completed model training and testing. Additionally, it's hard to predict the amount of long-term maintenance a model needs. Individual models improve over time in ways that are difficult to calculate in advance.

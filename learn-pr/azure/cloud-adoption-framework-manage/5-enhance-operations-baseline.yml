@@ -4,10 +4,9 @@ metadata:
   title: Enhance an operations baseline
   description: Enhance an operations baseline
   ms.date: 02/22/2021
-  author: rmcmurray
-  ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 title: Enhance an operations baseline
 durationInMinutes: 10
 content: |

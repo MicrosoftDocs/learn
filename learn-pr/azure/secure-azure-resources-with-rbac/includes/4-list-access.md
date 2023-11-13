@@ -22,13 +22,13 @@ Follow these steps to see what roles are currently assigned to you.
 
 Follow these steps to see what roles are assigned at the resource group scope.
 
-1. In the Search box at the top, search for **Resource groups**.
+1. In the Search box at the top, search for and select **Resource groups**.
 
     :::image type="content" source="../media/4-resource-groups.png" alt-text="Screenshot of the Azure portal that shows how to search for resource groups.":::
 
 1. In the list of resource groups, select a resource group.
 
-    These steps use a resource group named **example-group**, but your name will be different.
+    These steps use a resource group named **example-group**, but your resource group's name will be different.
 
 1. On the left menu pane, select **Access control (IAM)**.
 
@@ -46,7 +46,7 @@ As you learned in the previous unit, a role is a collection of permissions. Azur
 
 - In the menu bar at the top of the pane, select the **Roles** tab to list of all the built-in and custom roles.
 
-   Select a role from this tab to display the number of users and groups assigned to that role.
+   Select a role's **View** link in the **Details** column, then select the **Assignments** tab to display the number of users and groups assigned to that role.
 
    :::image type="content" source="../media/4-roles-list.png" alt-text="Screenshot showing a list of Roles and users and groups assigned to each role.":::
 

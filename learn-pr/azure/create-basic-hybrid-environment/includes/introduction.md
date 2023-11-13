@@ -11,9 +11,9 @@ Active Directory first appeared in Windows 2000. It has undergone many revisions
 
 Then along came cloud computing.  Cloud computing offered many benefits over on-premises computing.  These benefits include setup, maintenance, scalability, and tax implications.  Because of these benefits, many organizations wanted to move to the cloud.
 
-![Diagram that shows a basic Azure AD environment.](../media/prepare-6.png)
+![Diagram that shows a basic Microsoft Entra environment.](../media/prepare-6.png)
 
-To address this move, Microsoft introduced Azure.  Azure is a cloud platform with over 200 products and cloud services. In order to use these products and cloud services, a service similar to Active Directory was going to be needed.  To tackle this challenge, Microsoft introduced Azure Active Directory (Azure AD).  Azure AD is a cloud-based identity and access management service. 
+To address this move, Microsoft introduced Azure.  Azure is a cloud platform with over 200 products and cloud services. In order to use these products and cloud services, a service similar to Active Directory was going to be needed.  To tackle this challenge, Microsoft introduced Microsoft Entra ID.  Microsoft Entra ID is a cloud-based identity and access management service. 
 
 Because many organizations had been using Active Directory for so long and had made significant investments in it, just turning it off wasn't an option.  For this reason and many others, moving to the cloud was going to take time and planning.  Thus hybrid identity was born.  Organizations could have a presence both on-premise and in the cloud.
 
@@ -35,7 +35,7 @@ In this module, you'll practice how to:
  - Build a virtual machine using PowerShell
  - Install Active Directory using PowerShell
  - Create a test user in Active Directory using PowerShell
- - Use the Azure portal to create an Azure AD tenant.
+ - Use the Azure portal to create a Microsoft Entra tenant.
 
 ## Prerequisites
 
@@ -45,16 +45,3 @@ The following are prerequisites required for completing this module
 - A familiarity with using [Hyper-V](/virtualization/hyper-v-on-windows/about/).
 - A copy of Windows Server 2019.
 - A laptop or computer with at least 32 GB of RAM and 70 GB of free hard drive space.  This will be used as the host machine for our virtual machine.
-
-
-
-
-
-
-
-
-
-
-
-
-

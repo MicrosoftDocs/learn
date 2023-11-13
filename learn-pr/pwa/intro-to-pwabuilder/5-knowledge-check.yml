@@ -1,0 +1,85 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.edge.intro-to-pwabuilder.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is part of the "Introduction to PWABuilder" module.
+  ms.date: 05/01/2023
+  author: beth-panx
+  ms.author: xupa
+  ms.topic: module-intro-to-product
+  ms.prod: microsoft-edge
+durationInMinutes: 6
+quiz:
+  title: Check your knowledge
+  questions: 
+  - content: "What is the main purpose of PWABuilder?"
+    choices:
+    - content: "To optimize images for web use"
+      isCorrect: false
+      explanation: "Incorrect. PWABuilder isn't focused on optimizing images but rather on creating and deploying Progressive Web Apps (PWAs)."
+    - content: "To create native mobile apps"
+      isCorrect: false
+      explanation: "Incorrect. PWABuilder doesn't create native mobile apps but helps in creating PWAs, which are web applications that can be installed and run on various platforms."
+    - content: "To simplify the process of creating and deploying PWAs"
+      isCorrect: true
+      explanation: "Correct. PWABuilder is a tool that simplifies the process of creating and deploying PWAs, making it easier for developers to build web applications with features similar to native mobile apps."
+  - content: "How did Contoso EcoEmporium's team evaluate whether to use PWABuilder for their project?"
+    choices:
+    - content: "They evaluated their project objectives and requirements"
+      isCorrect: false
+      explanation: "Incorrect alone. Although evaluating project objectives and requirements is an essential step in determining if PWABuilder is the right fit for a project, there's a better option to select."
+    - content: "They compared features and support of alternative tools and frameworks"
+      isCorrect: false
+      explanation: "Incorrect alone. Although comparing features and support of alternative tools helps in deciding which tool would be best suited for the project, there's a better option to select."
+    - content: "They considered long-term maintenance and updates"
+      isCorrect: false
+      explanation: "Incorrect alone. Although considering long-term maintenance and updates is important when deciding on a tool, as it may impact the overall success of the project, there's a better option to select."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Correct. All of these factors were considered by the Contoso EcoEmporium team when evaluating whether to use PWABuilder for their project."
+  - content: "Which key component makes PWAs stand out compared to traditional web apps and native mobile apps?"
+    choices:
+    - content: "Reliability"
+      isCorrect: false
+      explanation: "Incorrect. While reliability is an important aspect of PWAs, it's not the key component that makes them stand out."
+    - content: "App Store distribution"
+      isCorrect: false
+      explanation: "Incorrect. App Store distribution is a characteristic of native mobile apps, not PWAs."
+    - content: "Service Worker"
+      isCorrect: true
+      explanation: "Correct. The Service Worker is the key component that makes PWAs stand out, as it enables features such as offline functionality, background tasks, and push notifications."
+    - content: "Server-side rendering"
+      isCorrect: false
+      explanation: "Incorrect. Server-side rendering is a technique used in web applications, but it isn't the key component that makes PWAs stand out."
+    - content: "Performance"
+      isCorrect: false
+      explanation: "Incorrect. While performance is important for PWAs, it isn't the key component that sets them apart."
+  - content: "In which of the following scenarios would it be beneficial to use PWABuilder for creating a PWA?"
+    choices:
+    - content: "When building a large-scale, complex web application with extensive server-side logic"
+      isCorrect: false
+      explanation: "Incorrect. PWABuilder isn't specifically designed for large-scale, complex web applications with extensive server-side logic."
+    - content: "When creating a responsive and high-performing web app that works well on various devices and network conditions"
+      isCorrect: true
+      explanation: "Correct. PWABuilder is designed to help developers create responsive, high-performing PWAs that work well across different devices and network conditions."
+    - content: "When developing a native mobile app for a specific platform (e.g., iOS or Android)"
+      isCorrect: false
+      explanation: "Incorrect. PWABuilder isn't meant for developing native mobile apps; it focuses on creating PWAs."
+    - content: "Creating a pure web base SaaS application with no requirement for notification"
+      isCorrect: false
+      explanation: "Incorrect. PWABuilder is meant for creating PWAs, which include features like notifications, so it wouldn't be the best choice for a pure web-based SaaS application without notification requirements."
+  - content: "What are some factors to consider when deciding whether to use PWABuilder for your project?"
+    choices:
+    - content: "Project scope and requirements"
+      isCorrect: true
+      explanation: "Correct. Considering the project scope and requirements is important in determining if PWABuilder is a suitable choice for your project."
+    - content: "The popularity of the programming language used in the project"
+      isCorrect: false
+      explanation: "Incorrect. The popularity of the programming language isn't a primary factor when deciding whether to use PWABuilder."
+    - content: "Technical expertise of the users"
+      isCorrect: false
+      explanation: "Incorrect. Considering the technical expertise of users isn't important, the technical expertise of the developers is more important as it may impact the ease of use and overall success of the project."
+    - content: "Availability of native developers working on the PWA"
+      isCorrect: false
+      explanation: "Incorrect. While having native developers might be helpful, the availability of native developers isn't a primary factor in deciding whether to use PWABuilder, as it's a tool specifically designed for creating PWAs, not native mobile apps."

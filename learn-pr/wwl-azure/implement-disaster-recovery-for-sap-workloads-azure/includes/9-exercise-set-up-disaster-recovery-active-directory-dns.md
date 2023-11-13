@@ -1,5 +1,3 @@
-
-
 ## Domain controllers and disaster recovery
 
 If you have only a few applications and one domain controller, you might want to fail over the entire site together. In this case, we recommend using Site Recovery to replicate the domain controller to the target site (either in Azure or in a secondary on-premises datacenter). You can use the same replicated domain controller or DNS virtual machine for test failover.
@@ -10,7 +8,7 @@ You can use Site Recovery to protect the virtual machine that hosts the domain c
 
 ## Protect the VM
 
-The domain controller that is replicated by using Site Recovery is used for test failover. Ensure that it meets the following requirements:
+The domain controller that's replicated by using Site Recovery is used for test failover. Ensure that it meets the following requirements:
 
 1. The domain controller is a global catalog server.
 2. The domain controller should be the FSMO role owner for roles that are needed during a test failover. Otherwise, these roles will need to be seized after the failover.
@@ -52,7 +50,7 @@ When you initiate a test failover, don't include all the domain controllers in t
 ## Issues caused by virtualization safeguards
 
 > [!IMPORTANT]
-> Some of the configurations described in this section are not standard or default domain controller configurations. If you don't want to make these changes to a production domain controller, you can create a domain controller that's dedicated to Site Recovery to use for test failover. Make these changes only to that domain controller.
+> Some of the configurations described in this section aren't standard or default domain controller configurations. If you don't want to make these changes to a production domain controller, you can create a domain controller that's dedicated to Site Recovery to use for test failover. Make these changes only to that domain controller.
 
 Beginning with Windows Server 2012, additional safeguards are built into Active Directory Domain Services (AD DS). These safeguards help protect virtualized domain controllers against USN rollbacks if the underlying hypervisor platform supports VM-GenerationID. Azure supports VM-GenerationID. Because of this, domain controllers that run Windows Server 2012 or later on Azure virtual machines have these additional safeguards.
 

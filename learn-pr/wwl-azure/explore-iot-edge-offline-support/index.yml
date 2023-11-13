@@ -45,3 +45,4 @@ units:
 - learn.wwl.explore-iot-edge-offline-support.summary
 badge:
   uid: learn.wwl.explore-iot-edge-offline-support.badge
+hidden: true

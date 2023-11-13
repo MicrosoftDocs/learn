@@ -1,5 +1,3 @@
-
-
 .NET provides a hierarchy of exception classes that derive from the `System.Exception` base class. C# applications can create and throw exceptions of any exception type. Developers can also customize exception objects with application specific information by assigning property values.
 
 > [!NOTE]

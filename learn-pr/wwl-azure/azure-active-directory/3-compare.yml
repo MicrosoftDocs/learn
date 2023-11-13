@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-active-directory.azure-ad-vs-ad-ds
-title: Self-managed Active Directory Domain Services, Azure Active Directory, and managed Azure Active Directory Domain Services
+title: Self-managed Active Directory Domain Services, Microsoft Entra ID, and managed Microsoft Entra Domain Services
 metadata:
-  title: Self-managed Active Directory Domain Services, Azure Active Directory, and managed Azure Active Directory Domain Services
-  description: "Self-managed Active Directory Domain Services, Azure Active Directory, and managed Azure Active Directory Domain Services"
-  ms.date: 07/12/2023
+  title: Self-managed Active Directory Domain Services, Microsoft Entra ID, and managed Microsoft Entra Domain Services
+  description: "Self-managed Active Directory Domain Services, Microsoft Entra ID, and managed Microsoft Entra Domain Services"
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial

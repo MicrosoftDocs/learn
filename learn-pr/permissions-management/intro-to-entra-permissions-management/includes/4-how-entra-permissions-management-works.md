@@ -10,7 +10,7 @@ With Microsoft Entra Permissions Management, your organization can adopt a new, 
 
 Permissions Management allows you to address three key use cases in securing and managing identity permissions in cloud environments: *discover*, *remediate*, and *monitor*.
 
-:::image type="content" source="../media/discover-remediate-monitor.png" alt-text="Image of the Discover, Remediate, and Monitor workflow of Entra Permissions Management."lightbox="../media/discover-remediate-monitor.png":::
+:::image type="content" source="../media/discover-remediate-monitor.png" alt-text="Image of the Discover, Remediate, and Monitor workflow of Microsoft Entra Permissions Management."lightbox="../media/discover-remediate-monitor.png":::
 
 ### Discover & Assess ###
 
@@ -50,7 +50,7 @@ This interactive video will help you to become more familiar with what securing 
 
 The Permissions Management architecture is composed of data processing and analytics and data collection that create a SaaS structure.
 
-:::image type="content" source="../media/epm-architecture.png" alt-text="Screen with Entra Permissions Management architecture."lightbox="../media/epm-architecture.png":::
+:::image type="content" source="../media/epm-architecture.png" alt-text="Screen with Microsoft Entra Permissions Management architecture."lightbox="../media/epm-architecture.png":::
 
 #### SaaS Service ####
 
@@ -59,13 +59,13 @@ The Permissions Management architecture is composed of data processing and analy
 - Data processing and analytics are done on these raw files to generate the usage metrics and reports that you see in the product.
 - Cloud Object Storage stores the raw data files that the collector service uploaded.
 - Data Lake is used to help with data analytics related to alerting. Know whether an activity triggered an alert through a data lake.
-- Cloud database serves all of our pages/tabs in Entra Permissions Management.
+- Cloud database serves all of our pages/tabs in Microsoft Entra Permissions Management.
 - Data Collector configures the collector service with the appropriate credentials to access the cloud service providers. This service collects data every hour.
 
 #### Key Terminology ####
 
 Here are some key terms used within the Permissions Management framework.
 
-:::image type="content" source="../media/epm-architecture-terminology.png" alt-text="Screen with Entra Permissions Management Architecture key terminology."lightbox="../media/epm-architecture-terminology.png":::
+:::image type="content" source="../media/epm-architecture-terminology.png" alt-text="Screen with Microsoft Entra Permissions Management Architecture key terminology."lightbox="../media/epm-architecture-terminology.png":::
 
-To familiarized yourself more with terms used in the world of Entra Permissions Management and understand the role Permissions Management plays in cloud operations and security, see the [Microsoft Entra Permissions Management Glossary](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE50HaO?culture=en-us&country=UShttps://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE50HaO?culture=en-us&country=US)
+To familiarized yourself more with terms used in the world of Microsoft Entra Permissions Management and understand the role Permissions Management plays in cloud operations and security, see the [Microsoft Entra Permissions Management Glossary](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE50HaO?culture=en-us&country=UShttps://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE50HaO?culture=en-us&country=US)

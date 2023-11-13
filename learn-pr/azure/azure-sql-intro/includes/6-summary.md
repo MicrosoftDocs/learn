@@ -1,5 +1,8 @@
 In this module, you learned about Azure SQL, including its deployment options, purchasing models, service tiers, and hardware choices. You now have a better understanding of the options you can and should choose for your applications and data.
 
+> [!NOTE]
+> If you're ready to get started with Azure SQL Database, [try Azure SQL Database free of charge](/azure/azure-sql/database/free-offer) for the life of your subscription.
+
 ## Learn more
 
 To learn more about the history of Azure SQL and the options, models, and management tools, check out the following references.
@@ -25,7 +28,7 @@ To learn more about what you can get from IaaS services, check out [What is IaaS
 
 If you're considering SQL Server on Azure Virtual Machines, you should review the [guidance on images](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview?azure-portal=true), the [quick checklist](/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-checklist) for getting optimal performance of SQL Server on Azure Virtual Machines, and the guidance for [storage configuration](/azure/azure-sql/virtual-machines/windows/storage-configuration).  
 
-If you're specifically considering SQL Server on RHEL Azure VMs, check out the [operations guide](https://azure.microsoft.com/resources/sql-server-on-rhel-azure-vms-operations-guide/?azure-portal=true).  
+If you're specifically considering SQL Server on Linux on Azure VMs, review [SQL Server on Linux](/sql/linux/sql-server-linux-overview). There are multiple quickstarts available for Linux distributions, for example: [Quickstart: Install SQL Server and create a database on Red Hat](/sql/linux/quickstart-install-connect-red-hat).
 
 ### Companies that use Azure SQL  
 
@@ -38,7 +41,7 @@ There are many companies that have moved to Azure SQL. You can learn more about 
 
 You can read [more about PaaS](https://azure.microsoft.com/overview/what-is-paas/?azure-portal=true).  
 
-Azure SQL Database and SQL Managed Instance are versionless, meaning you get updates as they become available and never have to migrate. You can [view a feed from Microsoft about those updates](https://azure.microsoft.com/updates/?category=databases&azure-portal=true). You also might find the [release notes](/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new) for Azure SQL Database helpful.  
+Azure SQL Database and SQL Managed Instance are versionless, meaning you get updates as they become available and never have to migrate. You can [view a feed from Microsoft about those updates](https://azure.microsoft.com/updates/?category=databases&azure-portal=true). Follow the latest feature announcements and news at [What's New in Azure SQL Database?](/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new) and [What's New in Azure SQL Managed Instance?](/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new)
 
 Learn more about pools in Azure SQL:
 
@@ -55,8 +58,10 @@ If you want to learn more about deployment options and how to choose one, check 
 
 You might want to learn more about the differences between [DTU-based](/azure/azure-sql/database/service-tiers-dtu) and [vCore-based](/azure/azure-sql/database/service-tiers-sql-database-vcore) purchasing models. To do that, review the [in-depth comparison of vCores and DTUs](/azure/azure-sql/database/purchasing-models). Note that only the vCore model allows you to save money with options like [Azure Hybrid Benefit for SQL Server](https://azure.microsoft.com/pricing/hybrid-benefit/?azure-portal=true) and [reserved capacity](/azure/azure-sql/database/reserved-capacity-overview).  
 
-The [documentation](/azure/azure-sql/database/service-tiers-sql-database-vcore#business-critical) goes deeper into the details and architectures for the various service tiers.  
+The [vCore purchasing model](/azure/azure-sql/database/service-tiers-sql-database-vcore) goes deeper into the details and architectures for the various service tiers.  
 
 ### Management interfaces
 
-To learn more about the tools, you can check out the [SQL tools documentation](/sql/tools/overview-sql-tools?azure-portal=true), which includes information about and guidance on the various options discussed in this module.
+To learn more about the tools, you can check out the [SQL tools documentation](/sql/tools/overview-sql-tools), which includes information about and guidance on the various options discussed in this module.
+
+For more on how to connect to the Database Engine in various products and services, from various tools or providers, read [Connect to the Database Engine](/sql/sql-server/connect-to-database-engine).

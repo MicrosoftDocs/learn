@@ -12,10 +12,10 @@ In the [Azure OpenAI Studio](https://oai.azure.com/portal?azure-portal=true), yo
 These Azure OpenAI models include:
 - **GPT-4** models that represent the latest generative models for natural language and code.
 - **GPT-3.5** models that can generate natural language and code responses based on prompts.
-- **Embeddings** models that convert to text to numeric vectors for analysis - for example comparing sources of text for similarity.
+- **Embeddings** models that convert text to numeric vectors for analysis - for example comparing sources of text for similarity.
 - **DALL-E** models that generate images based on natural language descriptions.
 
-Azure OpenAI's AI models can all be trained and customized with fine-tuning. We won't go into custom models here, but you can learn more on the [fine-tuning your model](/azure/cognitive-services/openai/how-to/fine-tuning?pivots=programming-language-studio?azure-portal=true) Azure documentation.
+Azure OpenAI's AI models can all be trained and customized with fine-tuning. We won't go into custom models here, but you can learn more on the [fine-tuning your model](/azure/ai-services/openai/how-to/fine-tuning?pivots=programming-language-studio?azure-portal=true) Azure documentation.
 
 > [!IMPORTANT]
 > Generative AI models *always* have a *probability* of reflecting true values. Higher performing models, such as models that have been fine-tuned for specific tasks, do a better job of returning responses that reflect true values. It is important to review the output of generative AI models. 

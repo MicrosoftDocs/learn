@@ -2,14 +2,16 @@
 uid: learn.azure.build-web-api-nodejs-express
 metadata:
   title: Build a web API with Node.js and Express by using JavaScript
-  description: Use Express for Node.js to build RESTful APIs. Create and configure middleware to add things like logging, authentication and authorization, and other web development technologies. Use JavaScript with Express to create a Node.js web server with Visual Studio Code.
+  description: Use Express for Node.js to build RESTful APIs. Create and configure middleware to add things like logging, authentication and authorization, and other web development technologies. Use JavaScript (CommonJs) with Express to create a Node.js web server with Visual Studio Code.
   ms.date: 06/08/2022
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.custom: team=nextgen
+  ms.devlang: nodejs, javascript
+  devlang: nodejs, javascript
 title: Build a web API with Node.js and Express
-summary: Use Express for Node.js to build RESTful APIs. Create and configure middleware to add things like logging, authentication and authorization, and other web development technologies.
+summary: Use Express for Node.js to build RESTful APIs. Create and configure middleware to add things like logging, authentication and authorization, and other web development technologies. This module uses JavaScript (CommonJS) with the Express.js server framework in the Node.js runtime.
 abstract: |
   By the end of this module, you'll be able to:
 

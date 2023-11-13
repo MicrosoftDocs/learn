@@ -45,7 +45,7 @@ We'll start by creating a new project with a release pipeline that can deploy th
     > [!NOTE]
     > *The template creates a production site and two deployment slots: Dev and Staging. We'll use Staging for our Green site.*
 
-9.  In the task list, click **Dev,** and in the **Agent job** pane, select **Azure Pipelines** for the **Agent pool** and **vs2017-win2016** for the **Agent Specification**.
+9.  In the task list, click **Dev,** and in the **Agent job** pane, select **Azure Pipelines** for the **Agent pool** and **windows-latest** for the **Agent Specification**.
 
     :::image type="content" source="../media/11-06-agent-job-configuration-bdbacecd.png" alt-text="Agent job configuration.":::
 

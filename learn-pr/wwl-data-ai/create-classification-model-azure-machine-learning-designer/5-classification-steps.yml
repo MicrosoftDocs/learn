@@ -4,11 +4,10 @@ title: Understand steps for classification
 metadata:
   title: Understand steps for classification
   description: "Understand steps for classification"
-  ms.date: 06/27/2023
+  ms.date: 09/21/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/5-classification-steps.md)]

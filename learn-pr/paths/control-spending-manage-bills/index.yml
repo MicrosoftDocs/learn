@@ -30,7 +30,6 @@ subjects:
 - finance-accounting
 modules:
 - learn.azure-well-architected-cost-optimization
-- learn.azure.plan-manage-azure-costs
 - learn.azure.analyze-costs-create-budgets-azure-cost-management
 - learn.save-money-with-azure-reserved-instances
 - learn.optimize-costs-data-analysis-powerbi

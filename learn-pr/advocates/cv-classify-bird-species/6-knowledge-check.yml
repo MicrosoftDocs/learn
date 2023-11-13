@@ -27,7 +27,7 @@ quiz:
       choices:
         - content: "A confusion matrix"
           isCorrect: true
-          explanation: "Correct! A confusion matrix is a valid metric, but it isn't provided by Azure Cognitive Services Custom Vision."
+          explanation: "Correct! A confusion matrix is a valid metric, but it isn't provided by Azure AI Custom Vision."
         - content: "Recall"
           isCorrect: false
           explanation: "Incorrect. The recall metric is provided."

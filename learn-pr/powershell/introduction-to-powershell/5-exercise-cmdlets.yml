@@ -9,9 +9,7 @@ metadata:
   ms.date: 12/7/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom:
-    - team=nextgen
-    - devx-track-azurepowershell
+  ms.custom: team=nextgen
 azureSandbox: true
 interactive: powershell
 durationInMinutes: 2

@@ -7,11 +7,11 @@ For this exercise, you need a JavaScript file to practice debugging. To use the 
 
 The goal of the program is to set the exchange rate between three currencies, USD, EUR, and JPY. Then, we want to display how much value `10 EUR` is in the other currencies by using two digits after the decimal point. For every currency added, the exchange rate for all other currencies should be calculated.
 
-1. In Visual Studio Code, select **File** > **New File**.
+1. In Visual Studio Code, create a file named  `mycurrency.js` at the `./nodejs-debug/` subfolder.
 
 1. Paste the following code into the new file editor:
 
-    ```js
+    ```javascript
     const rates = {};
 
     function setExchangeRate(rate, sourceCurrency, targetCurrency) {
@@ -55,30 +55,42 @@ The goal of the program is to set the exchange rate between three currencies, US
 
 1. To save the file, press <kbd>Ctrl+S</kbd> (Windows, Linux) or <kbd>Cmd+S</kbd> (Mac).
 
-   1. Browse to the folder where you want to save the new file.
-
-   1. For the file name, enter `currency`, and for the type, choose JavaScript (.js).
-
-1. Select **File** > **Add Folder to Workspace**.
-
-   1. Browse to the folder where you saved the new file.
-
-   1. Select **Add**.
-
-
 ## Create a launch configuration
 
 We're going to use the debugger a lot, so let's create a launch configuration for your app.
 
 1. On the **Run** tab in Visual Studio Code, select **Add Configuration**. 
 
-   Visual Studio Code creates the `.vscode/launch.json` configuration file in your project and opens the launch file for editing.
+   Visual Studio Code creates the `.vscode/launch.json` configuration file at the root of the workspace and opens the launch file for editing.
 
    :::image source="../media/launch-configuration.png" alt-text="Screenshot of generated launch configuration.":::
 
-   By default, a launch configuration is created to execute the currently opened file. In this example, the open file is `currency.js`. You can modify the launch configuration to customize how your program should start when you're debugging.
+   By default, a launch configuration is created to execute the currently opened file. In this example, the open file is `mycurrency.js`. You can modify the launch configuration to customize how your program should start when you're debugging.
 
-1. In the launch configuration, update the value of the `program` property. Replace `${workspaceFolder}` or `${file}` with the path to the `currency.js` file on your machine. For example, change `"program": "{$workspace}/app.js"` to `"program": "C:/Users/UserName/FolderName/currency.js"`. Be sure to save your changes to the configuration file.
+1. In the launch configuration, view the value of the `program` property. 
+
+    ```json
+    {
+        // Use IntelliSense to learn about possible attributes.
+        // Hover to view descriptions of existing attributes.
+        // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Launch Program",
+                "skipFiles": [
+                    "<node_internals>/**"
+                ],
+                "program": "${workspaceFolder}/nodejs-debug/mycurrency.js"
+            }
+        ]
+    }
+    ```
+
+    * `${workspaceFolder}` indicates the root of the workspace. 
+
 
 1. Close the `.vscode/launch.json` file.
 
@@ -91,8 +103,7 @@ We're going to use the debugger a lot, so let's create a launch configuration fo
 Make sure your Visual Studio Code environment is ready to monitor the debugging process:
 
 - The debugger panel should be open on the left. Use the **Run** tab icon on the left to toggle visibility of the panel.
-- The debug console should be open at the bottom. You can open the console by selecting **View** > **Debug Console**, or by pressing <kbd>Ctrl+Shift+Y</kbd> (Windows, Linux) or <kbd>Cmd+Shift+Y</kbd> (Mac).
-- Check your error logging preferences. You can add `"outputCapture": "std",` to your launch configuration file to increase logging output.
+- The debug console should be open at the bottom. You can open the console by selecting **View** > **Debug Console**, or by pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Y</kbd> (Windows, Linux) or <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>Y</kbd> (Mac).
 
 Now, you're ready to start debugging.
 
@@ -129,6 +140,10 @@ We can see two bugs here:
 
 - There are more than two digits after the decimal point.
 - The program crashed with an exception and failed to display the `JPY` value.
+
+> [!TIP]
+> - Set `"outputCapture": "std",` to your launch configuration file to increase logging output.
+> - Set a **logpoint** instead of a breakpoint to avoid stopping the program execution. A logpoint does not "break" into the debugger but instead logs a message to the console. Logpoints are especially useful for injecting logging while debugging production servers that cannot be paused or stopped.
 
 
 ## Fix the digits display
@@ -174,7 +189,7 @@ We need to fix this program bug by using the `displayValue` variable instead of 
 
 1. Update your `currency.js` file to use the correct the variable name. Change the call to the `console.info()` function on line 32 to use the `displayValue` variable instead of the `convertedValue` variable:
 
-   ```js
+   ```javascript
    console.info(`- ${displayValue} ${targetCurrency}`);
    ```
 
@@ -214,7 +229,7 @@ We know that the exception was thrown in the call to the `formatValueForDisplay(
 
    Visual Studio Code goes to the line in the `printForeignValues` function in your `currency.js` file, where the `formatValueForDisplay()` function was called:
 
-   ```js
+   ```javascript
    const displayValue = formatValueForDisplay(convertedValue);
    ```
 
@@ -233,7 +248,7 @@ What would be helpful in our case is to be able to make the debugger stop at thi
 
 1. After you right-click, enter the following condition to trigger the breakpoint, and then press <kbd>Enter</kbd>:
 
-   ```js
+   ```javascript
    `convertedValue === undefined`
    ```
    
@@ -252,7 +267,7 @@ Let's take some time to analyze the current program state.
 
 Take a look at the code of the `convertToCurrency()` function.
 
-```js
+```javascript
 function convertToCurrency(value, sourceCurrency, targetCurrency) {
   const exchangeRate = rates[sourceCurrency][targetCurrency];
   return exchangeRate && value * exchangeRate;
@@ -299,7 +314,7 @@ Let's set a breakpoint to watch the `rates` variable.
 
 It's time to look at the code for the `setExchangeRate()` function.
 
-```js
+```javascript
 function setExchangeRate(rate, sourceCurrency, targetCurrency) {
   if (rates[sourceCurrency] === undefined) {
     rates[sourceCurrency] = {};
@@ -325,13 +340,14 @@ Let's fix the code for the conversion rate issue.
 
    Replace the code on lines 12 and 13:
 
-   ```js
+   ```javascript
    rates[sourceCurrency][targetCurrency] = rate;
    rates[targetCurrency][sourceCurrency] = 1 / rate;
    ```
+
    with this updated code:
 
-   ```js
+   ```javascript
    for (const currency in rates) {
      if (currency !== targetCurrency) {
        // Use a pivot rate for currencies that don't have the direct conversion rate
@@ -367,3 +383,37 @@ The value of 10 EUR is:
 ```
 
 That's it. You fixed the code. You can now efficiently debug code you didn't even know beforehand by using Visual Studio Code. Well done!
+
+## Cleanup development container
+
+After completing the project, you may wish to clean up your development environment or return it to its typical state.
+
+### [Remote development (browser)](#tab/github-codespaces)
+
+Deleting the GitHub Codespaces environment ensures that you can maximize the amount of free per-core hours entitlement you get for your account.
+
+> [!IMPORTANT]
+> For more information about your GitHub account's entitlements, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
+
+1. Sign into the GitHub Codespaces dashboard (<https://github.com/codespaces>).
+
+1. Locate your currently running codespaces sourced from the [`MicrosoftDocs/node-essentials`](https://github.com/MicrosoftDocs/node-essentials) GitHub repository.
+
+    :::image type="content" source="../media/codespaces/codespace-dashboard.png" alt-text="Screenshot of all the running codespaces including their status and templates.":::
+
+1. Open the context menu for the codespace and select **Delete**.
+
+    :::image type="content" source="../media/codespaces/codespace-delete.png" alt-text="Screenshot of the context menu for a single codespace with the delete option highlighted.":::
+
+### [Local development (Docker)](#tab/visual-studio-code)
+
+You aren't necessarily required to clean up your local environment, but you can stop the running development container and return to running Visual Studio Code in the context of a local workspace.
+
+1. Open the **Command Palette**, search for the **Dev Containers** commands, and then select **Dev Containers: Reopen Folder Locally**.
+
+    :::image type="content" source="../media/codespaces/reopen-local-command-palette.png" alt-text="Screenshot of the Command Palette option to reopen the current folder within your local environment.":::
+
+> [!TIP]
+> Visual Studio Code will stop the running development container, but the container still exists in Docker in a stopped state. You always have the option to deleting the container instance, container image, and volumes from Docker to free up more space on your local machine.
+
+---

@@ -4,11 +4,10 @@ title: Exercise - Get started with array basics
 metadata:
   title: Exercise - Get started with array basics
   description: "Exercise - Get started with array basics"
-  ms.date: 05/09/2023
+  ms.date: 07/28/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 19
 content: |
   [!include[](includes/2-exercise-array-basics.md)]

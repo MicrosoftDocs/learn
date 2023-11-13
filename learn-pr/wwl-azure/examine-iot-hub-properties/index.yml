@@ -39,3 +39,4 @@ units:
 - learn.wwl.examine-iot-hub-properties.summary
 badge:
   uid: learn.wwl.examine-iot-hub-properties.badge
+hidden: true

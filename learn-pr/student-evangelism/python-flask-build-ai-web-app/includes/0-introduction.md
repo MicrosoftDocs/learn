@@ -8,7 +8,7 @@ In this module, we're going to explore Flask and the Translator service. We'll s
 
 ## Learning objectives
 
-In this module, you'll build a website using Flask and Cognitive Services to translate text.
+In this module, you'll build a website using Flask and Azure AI services to translate text.
 
 - Learn how to set up a Flask development environment
 - Learn how to use Flask to build a form

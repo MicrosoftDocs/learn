@@ -29,7 +29,7 @@ In Key Vault, a secret is a name-value pair of strings. Secret names must be 1-1
 
 ## Vault authentication and permissions
 
-Key Vault's API uses Azure Active Directory to authenticate users and apps. Vault access policies are based on *actions* and are applied across an entire vault. For example, an app with **Get** (read secret values), **List** (list names of all secrets), and **Set** (create or update secret values) permissions to a vault can create secrets, list all secret names, and get and set all secret values in that vault.
+Key Vault's API uses Microsoft Entra ID to authenticate users and apps. Vault access policies are based on *actions* and are applied across an entire vault. For example, an app with **Get** (read secret values), **List** (list names of all secrets), and **Set** (create or update secret values) permissions to a vault can create secrets, list all secret names, and get and set all secret values in that vault.
 
 *All* actions performed on a vault require authentication and authorization; there's no way to grant any kind of anonymous access.
 

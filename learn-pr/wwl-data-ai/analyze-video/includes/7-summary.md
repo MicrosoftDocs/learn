@@ -1,9 +1,9 @@
-In this module, you learned how to use the Video Analyzer for Media service to analyze videos.
+In this module, you learned how to use the Azure Video Indexer service to analyze videos.
 
 Now that you've completed this module, you can:
 
-- Describe Video Analyzer for Media capabilities.
+- Describe Azure Video Indexer capabilities.
 - Extract custom insights.
-- Use Video Analyzer for Media widgets and APIs.
+- Use Azure Video Indexer widgets and APIs.
 
-To find out more about the Video Analyzer for Media service, see the [Video Analyzer for Media documentation](/azure/azure-video-analyzer/video-analyzer-for-media-docs/).
+To find out more about the Azure Video Indexer service, see the [Azure Video Indexer documentation](/azure/azure-video-analyzer/video-analyzer-for-media-docs/).

@@ -1,5 +1,6 @@
 
 
+
 Your goal in this module was to work with a sequence of Order IDs programmatically to identify potentially fraudulent orders. You created an array of Order IDs, then iterated through each element of the sequence looking for a common fraud trait.
 
 Arrays enabled you to store each Order ID as an element of a single variable. You addressed a specific element of the array using an index -- a zero-based numeric value. You were able to retrieve and set the value of each element. You iterated through the elements of the array to inspect or output each element's value.

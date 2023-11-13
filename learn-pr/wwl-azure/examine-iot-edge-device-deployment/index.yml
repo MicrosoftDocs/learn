@@ -43,3 +43,4 @@ units:
 - learn.wwl.examine-iot-edge-device-deployment.summary
 badge:
   uid: learn.wwl.examine-iot-edge-device-deployment.badge
+hidden: true

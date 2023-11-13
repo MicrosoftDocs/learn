@@ -13,7 +13,7 @@ Azure Data Explorer offers a help cluster with different types of data preloaded
 
 #### Prerequisites
 
-This environment requires a Microsoft account or an Azure Active Directory user identity.
+This environment requires a Microsoft account or a Microsoft Entra user identity.
 
 #### Run sample query
 
@@ -97,4 +97,3 @@ Here's a step-by-step analysis of how the query processes the data.
 1. Then the resulting list is sorted in descending order by the *LastEnabledTime* value in the dynamic field called *properties*. 
 1. Finally, the top 10 records are returned.
 ---
-

@@ -8,8 +8,7 @@ metadata:
   ms.date: 03/17/2023
   author: greg-lindsay
   ms.author: greglin
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
 quiz:
@@ -36,7 +35,7 @@ quiz:
     - content: "A Ruleset contains matching domain with target DNS server IP addresses."
       isCorrect: false
       explanation: "Incorrect: The Forwarding rules are what contains matching domain with target DNS server IP addresses "
-  - content: "What the DNS resolver's outbound endpoint does?"
+  - content: "What does the DNS resolver's outbound endpoint do?"
     choices:
     - content: "Provides naming resolution for Azure endpoints."
       isCorrect: false

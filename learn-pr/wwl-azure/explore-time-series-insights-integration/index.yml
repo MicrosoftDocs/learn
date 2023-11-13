@@ -41,3 +41,4 @@ units:
 - learn.wwl.explore-time-series-insights-integration.summary
 badge:
   uid: learn.wwl.explore-time-series-insights-integration.badge
+hidden: true

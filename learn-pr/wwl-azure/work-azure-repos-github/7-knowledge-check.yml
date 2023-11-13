@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-azure-repos-github.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/03/2023
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following choices isn't a supported Azure Repos version control system?"
+    choices:
+    - content: "Git."
+      isCorrect: false
+      explanation: "Incorrect. Azure Repos provides two types of version control systems. Git: distributed version control and Team Foundation Version Control (TFVC): centralized version control."
+    - content: "Team Foundation Version Control (TFVC)."
+      isCorrect: false
+      explanation: "Incorrect. Azure Repos provides two types of version control systems. Git: distributed version control and Team Foundation Version Control (TFVC): centralized version control."
+    - content: "Source Safe."
+      isCorrect: true
+      explanation: "Correct. Azure Repos provides two types of version control systems. Git: distributed version control and Team Foundation Version Control (TFVC): centralized version control."
+  - content: "Which of the following choices is the exact number of days of history you can import Team Foundation Version Control (TFVC) to Git using the \"Import repository\" feature in Azure DevOps?"
+    choices:
+    - content: "90 days."
+      isCorrect: false
+      explanation: "Incorrect. There are some limitations here (that apply only when migrating source type TFVC) to a single branch and only 180 days of history."
+    - content: "180 days."
+      isCorrect: true
+      explanation: "Correct. There are some limitations here (that apply only when migrating source type TFVC) to a single branch and only 180 days of history."
+    - content: "365 days."
+      isCorrect: false
+      explanation: "Incorrect. There are some limitations here (that apply only when migrating source type TFVC) to a single branch and only 180 days of history."
+  - content: "Which of the following choices describe GitHub Codespaces?"
+    choices:
+    - content: "It's a platform for hosting and managing packages, including containers and other dependencies."
+      isCorrect: false
+      explanation: "Incorrect. It's describing GitHub Packages."
+    - content: "It's an AI pair programmer that helps you write code faster and with less work."
+      isCorrect: false
+      explanation: "Incorrect. It's describing GitHub Copilot."
+    - content: "It's an online implementation of Visual Studio Code."
+      isCorrect: true
+      explanation: "Correct. Codespaces is a cloud-based development environment that GitHub hosts. It's essentially an online implementation of Visual Studio Code."

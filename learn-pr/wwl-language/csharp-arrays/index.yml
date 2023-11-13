@@ -3,7 +3,7 @@ uid: learn.languages.csharp-arrays
 metadata:
   title: Store and iterate through sequences of data using Arrays and the foreach statement in C#
   description: "Store and iterate through sequences of data using Arrays and the foreach statement in C#"
-  ms.date: 05/09/2023
+  ms.date: 07/28/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial

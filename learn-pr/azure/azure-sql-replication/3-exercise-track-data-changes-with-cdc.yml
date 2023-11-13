@@ -4,8 +4,8 @@ title: Exercise - Work with change data capture
 metadata:
   unitType: exercise
   title: Exercise - Work with change data capture
-  description: "Learning how to enable change data capture (CDC) and query the CDC change tables for data changes and understanding common use cases. This section also includes a sandbox exercise to practice all CDC lessons learned."
-  ms.date: 3/21/2022
+  description: "Learning how to enable change data capture (CDC) and query the CDC change tables for data changes and understanding common use cases. This section also includes a sandbox exercise to practice CDC lessons."
+  ms.date: 08/30/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   ms.topic: interactive-tutorial

@@ -7,7 +7,6 @@ In this module, you have learned how to use accessibility features and tools bui
 
 ## Learn more
 
-- [Microsoft 365 Accessibility](https://www.microsoft.com/en-us/accessibility/office?activetab=pivot_1%3aprimaryr2) -- Overview of built-in accessibility features of Microsoft 365.
-- [Windows Accessibility](https://www.microsoft.com/en-gb/accessibility/windows) -- Find out more about Windows accessibility features.  
-- [Microsoft Disability Answer Desk](https://www.microsoft.com/en-us/accessibility/disability-answer-desk?activetab=contact-pivot%3aprimaryr9) -- Where people with disabilities can get support with Microsoft
-365, Windows, and Xbox accessibility.
+- [Microsoft 365 Accessibility](https://www.microsoft.com/en-us/accessibility/office?activetab=pivot_1%3aprimaryr2) - Overview of built-in accessibility features of Microsoft 365.
+- [Windows Accessibility](https://www.microsoft.com/en-gb/accessibility/windows) - Find out more about Windows accessibility features.  
+- [Microsoft Disability Answer Desk](https://www.microsoft.com/en-us/accessibility/disability-answer-desk?activetab=contact-pivot%3aprimaryr9) - Where people with disabilities can get support with Microsoft 365, Windows, and Xbox accessibility.

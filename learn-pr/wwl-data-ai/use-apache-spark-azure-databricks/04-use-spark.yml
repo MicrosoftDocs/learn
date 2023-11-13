@@ -4,11 +4,10 @@ title: Use Spark in notebooks
 metadata:
   title: Use Spark in notebooks
   description: "Use Spark in notebooks"
-  ms.date: 09/05/2022
+  ms.date: 08/29/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

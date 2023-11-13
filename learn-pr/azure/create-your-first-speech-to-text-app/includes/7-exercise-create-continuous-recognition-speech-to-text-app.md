@@ -20,10 +20,10 @@ In this exercise, you'll create an application that uses continuous recognition 
             using var audioConfig = AudioConfig.FromWavFileInput(fileInfo.FullName);
             using var speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
             var stopRecognition = new TaskCompletionSource<int>();
-            
+
             FileStream fileStream = File.OpenWrite(textFile);
             StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8);
-    
+
             speechRecognizer.Recognized += (s, e) =>
             {
                 switch(e.Result.Reason)
@@ -36,7 +36,7 @@ In this exercise, you'll create an application that uses continuous recognition 
                         break;
                 }
             };
-    
+
             speechRecognizer.Canceled += (s, e) =>
             {
                 if (e.Reason != CancellationReason.EndOfStream)
@@ -46,14 +46,14 @@ In this exercise, you'll create an application that uses continuous recognition 
                 stopRecognition.TrySetResult(0);
                 streamWriter.Close();
             };
-    
+
             speechRecognizer.SessionStopped += (s, e) =>
             {
                 Console.WriteLine("Speech recognition stopped.");
                 stopRecognition.TrySetResult(0);
                 streamWriter.Close();
             };
-    
+
             Console.WriteLine("Speech recognition started.");
             await speechRecognizer.StartContinuousRecognitionAsync();
             Task.WaitAny(new[] { stopRecognition.Task });
@@ -72,12 +72,12 @@ In this exercise, you'll create an application that uses continuous recognition 
     using System.Text;
     using Microsoft.CognitiveServices.Speech;
     using Microsoft.CognitiveServices.Speech.Audio;
-    
+
     string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
     string azureLocation = "ENTER YOUR LOCATION FROM THE FIRST EXERCISE";
     string textFile = "Shakespeare.txt";
     string waveFile = "Shakespeare.wav";
-    
+
     try
     {
         FileInfo fileInfo = new FileInfo(waveFile);
@@ -87,10 +87,10 @@ In this exercise, you'll create an application that uses continuous recognition 
             using var audioConfig = AudioConfig.FromWavFileInput(fileInfo.FullName);
             using var speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
             var stopRecognition = new TaskCompletionSource<int>();
-            
+
             FileStream fileStream = File.OpenWrite(textFile);
             StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8);
-    
+
             speechRecognizer.Recognized += (s, e) =>
             {
                 switch(e.Result.Reason)
@@ -103,7 +103,7 @@ In this exercise, you'll create an application that uses continuous recognition 
                         break;
                 }
             };
-    
+
             speechRecognizer.Canceled += (s, e) =>
             {
                 if (e.Reason != CancellationReason.EndOfStream)
@@ -113,14 +113,14 @@ In this exercise, you'll create an application that uses continuous recognition 
                 stopRecognition.TrySetResult(0);
                 streamWriter.Close();
             };
-    
+
             speechRecognizer.SessionStopped += (s, e) =>
             {
                 Console.WriteLine("Speech recognition stopped.");
                 stopRecognition.TrySetResult(0);
                 streamWriter.Close();
             };
-    
+
             Console.WriteLine("Speech recognition started.");
             await speechRecognizer.StartContinuousRecognitionAsync();
             Task.WaitAny(new[] { stopRecognition.Task });
@@ -135,7 +135,7 @@ In this exercise, you'll create an application that uses continuous recognition 
 
     As with the previous exercise, make sure that you update the values for the `azureKey` and `azureLocation` variables with your key and location from the first exercise.
 
-1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, then press <kbd>Ctrl-Q</kbd> to exit the editor.
+1. To save your changes, press <kbd>Ctrl+S</kbd> to save the file, then press <kbd>Ctrl+Q</kbd> to exit the editor.
 
 ## Run your application
 
@@ -193,7 +193,7 @@ In this exercise, you'll create an application that uses continuous recognition 
 
 In the previous section, you'll notice that the results for the second line of text weren't perfect; this error in recognition was due to the old English vocabulary in William Shakespeare's play. This example is analogous to the specialized vocabulary that your medical clients will use for their notes and dictations.
 
-Azure Cognitive Services allows you to help improve your recognition results by specifying a list of phrases that might be unfamiliar to the speech recognition engine.
+Azure AI Speech allows you to help improve your recognition results by specifying a list of phrases that might be unfamiliar to the speech recognition engine.
 
 To see an example of this type of improvement in action, use the following steps.
 
@@ -219,7 +219,7 @@ To see an example of this type of improvement in action, use the following steps
 
     These lines will enable the speech recognition engine to detect the old English phrase from Shakespeare's play.
 
-1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, then press <kbd>Ctrl-Q</kbd> to exit the editor.
+1. To save your changes, press <kbd>Ctrl+S</kbd> to save the file, then press <kbd>Ctrl+Q</kbd> to exit the editor.
 
 1. Rerun your application by using the following command:
 

@@ -60,4 +60,4 @@ A hub and spoke network topology isolates workloads while sharing services, such
 
 - Use spoke virtual networks to isolate workloads with each spoke managed separately from other spokes. Each workload can include multiple tiers, and multiple subnets that are connected with Azure load balancers.
 
-- Configure hub and spoke virtual networks in different resource groups, and even in different subscriptions. When you peer virtual networks in different subscriptions, the subscriptions can be associated to the same, or different, Azure Active Directory (Azure AD) tenants. You gain decentralized management of each workload, while sharing services maintained in the hub network.
+- Configure hub and spoke virtual networks in different resource groups, and even in different subscriptions. When you peer virtual networks in different subscriptions, the subscriptions can be associated to the same, or different, Microsoft Entra tenants. You gain decentralized management of each workload, while sharing services maintained in the hub network.

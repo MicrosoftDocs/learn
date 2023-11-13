@@ -12,7 +12,7 @@ The **Incidents** page provides a complete list of incidents in Microsoft Sentin
 From this page, you can take various steps to investigate incidents.
 
 > [!IMPORTANT]
-> Azure Active Directory (Azure AD) users who investigate incidents must be members of the Directory Reader role.
+> Microsoft Entra users who investigate incidents must be members of the Directory Reader role.
 
 ## Examine incident details
 

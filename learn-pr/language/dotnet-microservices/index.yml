@@ -18,14 +18,11 @@ abstract: |
   By the end of this module, you'll be able to:
     
   - Explain what microservices are.
-  - Know how various technologies involved in microservices are and how they relate.
+  - Know the various technologies involved in microservices and how they relate to each other.
   - Build a microservice using .NET.
 prerequisites: |
   - Familiarity with command-line based applications.
   - Familiarity with basic Docker concepts.
-  - .NET SDK installed
-  - Docker Desktop installed
-  - Visual Studio Code installed
 ratingEnabled: true
 iconUrl: /training/achievements/dotnet-microservices.svg
 levels:

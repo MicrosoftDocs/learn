@@ -5,10 +5,9 @@ metadata:
   title: Common blockers
   description: This Cloud Adoption Framework module is designed to guide readers through blockers to cloud adoption. The getting-started guides outline a streamlined path through some of the most common blockers.
   ms.date: 09/22/2020
-  author: martinekuan
-  ms.author: martinek
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/3-common-blockers.md)]

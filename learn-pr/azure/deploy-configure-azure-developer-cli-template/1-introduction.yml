@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-configure-azure-developer-cli-templates.introduction
+title: Introduction
+metadata:
+  unitType: learning-content
+  title: Introduction
+  description: Get started working with the Azure Developer CLI
+  ms.date: 06/20/2023
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: engagement-fy23
+durationInMinutes: 6
+content: |
+  [!include[](includes/1-introduction.md)]

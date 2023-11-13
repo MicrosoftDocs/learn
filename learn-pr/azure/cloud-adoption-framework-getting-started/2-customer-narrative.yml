@@ -5,10 +5,9 @@ metadata:
   title: Customer narrative
   description: Tailwind Traders serves as a customer narrative throughout the Cloud Adoption Framework Learn modules. This unit shares the core narrative to establish context.
   ms.date: 09/22/2020
-  author: martinekuan
-  ms.author: martinek
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/2-customer-narrative.md)]

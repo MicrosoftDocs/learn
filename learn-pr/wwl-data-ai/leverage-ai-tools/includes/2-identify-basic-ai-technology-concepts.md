@@ -1,5 +1,3 @@
-
-
 The term AI tends to be thrown around a lot. You've probably heard about machine learning, deep learning, data science, generative AI, and responsible AI. However, it may not be clear what all these terms mean and how they're different to each other. In this unit, we'll clarify these concepts so you can understand how they apply to your business problem.
 
 ## What is AI?

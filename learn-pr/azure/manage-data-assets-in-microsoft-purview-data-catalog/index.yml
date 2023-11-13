@@ -10,8 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.custom:
     - ignite-2022
-  ms.service: purview
-  ms.subservice: purview-data-catalog
+  ms.service: purview-data-catalog
 title: Manage data assets in the Microsoft Purview Data Catalog
 summary: "This module will teach you how to use the Microsoft Purview Data Catalog to manage your scanned data assets, curate a business glossary, and browse assets across your entire data estate."
 abstract: |

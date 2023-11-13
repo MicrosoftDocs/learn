@@ -32,7 +32,6 @@ products:
 subjects:
 - security
 modules:
-- learn.azure.secure-network-connectivity-azure
 - learn.configure-the-network-for-your-virtual-machines
 - learn.secure-and-isolate-with-nsg-and-service-endpoints
 - learn.end-to-end-encryption-with-app-gateway

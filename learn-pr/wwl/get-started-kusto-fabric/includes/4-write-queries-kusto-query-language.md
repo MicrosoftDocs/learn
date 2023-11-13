@@ -1,7 +1,3 @@
----
-ms.custom:
-  - build-2023
----
 To query data from a table in a KQL database, you can use the **Kusto Query Language (KQL)**, which is used to write queries in Azure Data Explorer, Azure Monitor Log Analytics, Azure Sentinel, and Azure Fabric. KQL is a read-only request to process data and return results. KQL queries are made of one or more query statements.
 
 A query statement consists of a table name followed by one or more operators that `take`, `filter`, `transform`, `aggregate`, or `join` data. For example:
@@ -29,10 +25,10 @@ To create a table and ingest data into it,  you can use the **`.create table`** 
 
 This command creates a table called **sales** with 9 columns of different data types.
 
-You can ingest data into a table in multiple ways, including the `ingest into` command, as shown here:
+You can ingest data into a table in multiple ways, including the `ingest into` command, as shown in this example:
 
 ```kql
- .ingest into table sales 'https://store.blob.core.windows.net/container/sales.csv' 
+ .ingest into table sales 'https://<StorageAccountName>.blob.core.windows.net/container/<TableName>.csv' 
  with (ignoreFirstRecord = true)
 ```
 

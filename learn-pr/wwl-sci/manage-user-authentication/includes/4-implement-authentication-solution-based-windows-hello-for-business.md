@@ -1,4 +1,4 @@
-In Windows 10, Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices. This authentication consists of a new type of user credential that is tied to a device and uses a biometric or PIN. Windows Hello for Business lets user authenticate to an Active Directory or Azure AD account.
+In Windows 10, Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices. This authentication consists of a new type of user credential that is tied to a device and uses a biometric or PIN. Windows Hello for Business lets user authenticate to an Active Directory or Microsoft Entra account.
 
 Windows Hello addresses the following problems with passwords:
 
@@ -13,12 +13,12 @@ Windows Hello addresses the following problems with passwords:
 ## How Windows Hello for Business works: key points
 
  -  Windows Hello credentials are based on certificate or asymmetrical key pair. Windows Hello credentials can be bound to the device, and the token that is obtained using the credential is also bound to the device.
- -  Identity provider (such as Active Directory, Azure Active Directory (Azure AD), part of Microsoft Entra, or a Microsoft account) validates user identity and maps the Windows Hello public key to a user account during the registration step.
+ -  Identity provider (such as Active Directory, Microsoft Entra ID, or a Microsoft account) validates user identity and maps the Windows Hello public key to a user account during the registration step.
  -  Keys can be generated in hardware (TPM (Trusted Platform Module) 1.2 or 2.0 for enterprises, and TPM 2.0 for consumers) or software, based on the policy.
  -  Two-factor authentication is the combination of a key or certificate tied to a device. Then something that the person knows (a PIN) or something that the person is (biometrics). The Windows Hello gesture doesn't roam between devices and isn't shared with the server. Biometrics templates are stored locally on a device. The PIN is never stored or shared.
  -  The private key never leaves a device when using TPM. The authenticating server has a public key that is mapped to the user account during the registration process.
  -  PIN entry and biometric gesture both trigger Windows 10 to use the private key to cryptographically sign data that is sent to the identity provider. The identity provider verifies the user's identity and authenticates the user.
- -  Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys. All keys are separated by identity providers' domains to help ensure user privacy.
+ -  Personal (Microsoft account) and corporate (Active Directory or Microsoft Entra ID) accounts use a single container for keys. All keys are separated by identity providers' domains to help ensure user privacy.
  -  Certificate private keys can be protected by the Windows Hello container and the Windows Hello gesture.
 
 ## Creating security groups
@@ -30,7 +30,7 @@ Windows Hello for Business uses several security groups to simplify the deployme
 
 ### Create the KeyCredential Admins security group
 
-Azure Active Directory Connect synchronizes the public key on the user object created during provisioning. You assign write and read permission to this group to the Active Directory attribute. This will ensure the Azure AD Connect service can add and remove keys as part of its normal workflow.
+Microsoft Entra Connect synchronizes the public key on the user object created during provisioning. You assign write and read permission to this group to the Active Directory attribute. This will ensure the Microsoft Entra Connect service can add and remove keys as part of its normal workflow.
 
 1.  Sign in a domain controller or management workstation with *Domain Admin* equivalent credentials.
 2.  Open **Active Directory Users and Computers**.

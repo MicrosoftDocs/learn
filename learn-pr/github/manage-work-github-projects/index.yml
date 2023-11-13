@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - A GitHub account
   - Access to an organization
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/manage-work-github-projects.svg
 ratingEnabled: true
 levels: 
 - beginner

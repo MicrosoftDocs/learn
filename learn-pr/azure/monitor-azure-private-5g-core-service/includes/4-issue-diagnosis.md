@@ -25,10 +25,10 @@ Here *\<`LocalMonitoringIP`\>* is the IP address for accessing the local monitor
 
 Azure Private 5G Core provides two authentication methods for the distributed tracing tool:
 
-- Azure active directory (AD): The [Azure AD method](/azure/private-5g-core/enable-azure-active-directory) allows users to sign in with their Azure accounts.
+- Microsoft Entra: The [Microsoft Entra method](/azure/private-5g-core/enable-azure-active-directory) allows users to sign in with their Azure accounts.
 - Username and password: The username/password method allows users to sign in with a default account.
 
-Whenever possible, use the Azure AD method, as it's more secure. Only use the username and password method when you don't have a stable connection to Azure. You can choose your preferred authentication method when you deploy or modify a site. For detailed instructions on configuring and using these authentication methods, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
+Whenever possible, use the Microsoft Entra method, as it's more secure. Only use the username and password method when you don't have a stable connection to Azure. You can choose your preferred authentication method when you deploy or modify a site. For detailed instructions on configuring and using these authentication methods, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
 
 Access to the distributed tracing tool is secured by HTTPS. You can use a self-signed certificate or provide your own to authenticate access to the tool. The article [Modify the local access configuration in a site](/azure/private-5g-core/modify-local-access-configuration) provides detailed instructions on checking or modifying the access certificate.
 

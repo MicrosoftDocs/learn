@@ -1,7 +1,3 @@
-
-
-
-
 Azure Storage is a service that you can use to store unstructured and partially structured data. When implementing Azure Storage, you create a storage account. An Azure Storage account is a logical namespace that, depending on its type, is capable of hosting different types of objects, including blobs, tables, queues, and files:
 
 - **Blobs**. These typically represent unstructured files such as media content, virtual machine disks, backups, or logs. Blobs offer a locking mechanism, which facilitates exclusive file access that IaaS virtual machines require. There are three types of blobs. The first one, known as a block blob, is optimized for sequential access, which is ideal for media content. The second one, referred to as a page blob, offers superior random-access capabilities, which is best suited for virtual machine disks. The third one, referred to as an append blob, supports data append operations, without the need to modify existing content. This works best with logging and auditing activities.

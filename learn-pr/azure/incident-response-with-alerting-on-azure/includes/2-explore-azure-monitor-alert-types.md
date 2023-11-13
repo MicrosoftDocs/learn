@@ -44,7 +44,7 @@ Every alert or notification available in Azure Monitor is the product of a rule.
 
 ## Scope of alert rules
 
-You can get monitoring data from across most of the Azure services, and report on it by using the Azure Monitor pipeline. In the Azure Monitor pipeline, you can create alert rules for these items and more:
+You can get monitoring data from across most of the Azure services and report on it by using the Azure Monitor pipeline. In the Azure Monitor pipeline, you can create alert rules for these items and more:
 
 - Metric values
 - Log search queries
@@ -66,7 +66,7 @@ The alert page shows a summary of all alerts. You can apply filters to the view 
 
 ### Alert condition
 
-The alert condition is set by the system.
+The system sets the alert condition.
 
 - When an alert fires, the alert's monitor condition is set to **Fired**.
 - After the underlying condition that caused the alert to fire clears, the monitor condition is set to **Resolved**.

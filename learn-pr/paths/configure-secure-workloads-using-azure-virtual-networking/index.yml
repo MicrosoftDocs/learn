@@ -6,14 +6,13 @@ metadata:
   ms.date: 05/09/2023
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Configure secure access to your workloads using Azure virtual networking
 prerequisites: ""
 summary: |
   In this learning path, you practice configuring secure access to workloads using Azure virtual networking.
 iconUrl: /training/achievements/generic-trophy.svg
-hidden: true
+hidden: false
 levels:
 - intermediate
 roles:
@@ -30,7 +29,6 @@ modules:
 - learn.control-network-traffic-flow-with-routes
 - learn.azure.host-domain-azure-dns
 - learn.wwl.configure-network-security-groups
-- learn.wwl.configure-azure-firewall
 - learn.wwl.guided-project-configure-secure-access-workloads
 trophy:
   uid: learn.wwl.configure-secure-workloads-using-azure-virtual-networking.trophy

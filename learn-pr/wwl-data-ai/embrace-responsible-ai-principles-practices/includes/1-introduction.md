@@ -1,4 +1,3 @@
-
 The societal implications of AI and the responsibility of organizations to anticipate and mitigate unintended consequences of AI technology are significant. Whether through third-party AI solutions or their own, organizations are finding the need to create internal policies and practices to guide their AI efforts. 
 
 Microsoft believes that as organizations and as a society, our steps towards responsible AI need to continually evolve to reflect new innovations and lessons from both our mistakes and accomplishments. The processes, tools, and resources mentioned in these units can be a starting point from which organizations create their own AI strategy.

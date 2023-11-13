@@ -4,13 +4,10 @@ title: Implement a privileged identity management workflow
 metadata:
   title: Implement a privileged identity management workflow
   description: "Implement a privileged identity management workflow"
-  ms.date: 02/02/2023
+  ms.date: 08/28/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 10
+durationInMinutes: 1
 content: |
   [!include[](includes/8-workflow.md)]

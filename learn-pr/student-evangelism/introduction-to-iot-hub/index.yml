@@ -16,7 +16,7 @@ abstract: |
     - Evaluate whether IoT Hub can effectively address the problems associated with large-scale IoT deployment
     - Describe how the components of IoT hub work together to build IoT applications managed through the cloud
  
-    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+    "***Produced in partnership with the University of Oxford – Ajit Jaokar, Artificial Intelligence: Cloud and Edge Implementations course.***"
 prerequisites: |
     - Basic knowledge of IoT applications and deploying applications in the Cloud
 iconUrl: /training/achievements/student-evangelism/introduction-to-iot-hub.svg

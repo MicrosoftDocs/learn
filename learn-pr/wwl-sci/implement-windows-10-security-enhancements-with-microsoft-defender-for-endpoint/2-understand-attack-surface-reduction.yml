@@ -4,11 +4,10 @@ title: Understand attack surface reduction
 metadata:
   title: Understand attack surface reduction
   description: "Understand attack surface reduction"
-  ms.date: 02/17/2023
+  ms.date: 08/31/2023
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

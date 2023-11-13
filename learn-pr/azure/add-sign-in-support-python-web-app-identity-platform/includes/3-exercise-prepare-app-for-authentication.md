@@ -195,10 +195,10 @@ The Microsoft identity platform performs identity and access management (IAM) on
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 1. If you have access to multiple tenants, use the **Directories + subscriptions** filter :::image type="icon" source="../media/2-portal-directory-subscription-filter.png" border="false"::: at the right of the top menu to switch to the tenant where you want to register the application.
-1. Search for and select **Azure Active Directory**.
+1. Search for and select **Microsoft Entra ID**.
 1. On the left side bar, under **Manage**, select **App registrations**, then **New registration**. 
 1. Enter a **Name** for your application, for example *python-flask-webapp*. Users of your application might see the display name when they use the app, for example during sign-in. You can change the display name at any time.
-1. Under **Supported account types**, select **Accounts in any organizational directory(Any Azure AD directory Multitenant)**
+1. Under **Supported account types**, select **Accounts in any organizational directory(Any Microsoft Entra directory Multitenant)**
 1. Ignore the **Redirect URI (optional)** for now. You'll configure it in the next section
 1. Select **Register** to complete the initial app registration.
 
@@ -246,7 +246,7 @@ In this scenario, one route requires an application-defined app role that allows
 
 After adding app roles to your application registration, you can assign users and groups to the roles. To assign users and groups to the created `admin role` using the Azure portal UI:
 
-1. In the Azure portal, select **Azure Active Directory**. 
+1. In the Azure portal, select **Microsoft Entra ID**. 
 1. Under **Manage**, select **Enterprise applications**.
 1. Select **All applications** to view a list of all your applications. If your Python web app doesn't appear in the list, search using the application name or ID. You can also use the filters at the top of the **All applications** list to restrict the list, or scroll down the list to locate your application. 
 1. Select the application you want to assign users or groups to roles. In this case, your Python web app.
