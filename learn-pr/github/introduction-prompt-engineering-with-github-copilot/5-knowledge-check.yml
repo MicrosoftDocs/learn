@@ -40,20 +40,20 @@ quiz:
     - content: "Implements real-time collaboration."
       isCorrect: false
       explanation: "Incorrect. Prompting in GitHub Copilot isn't related to real-time collaboration but to the user's communication with the AI to receive relevant code suggestions."
-  - content: "Which of the following is a principle of the 4 S's of prompt engineering?"
+  - content: "Which of the following is a principle of **the 4 Ss of prompt engineering**?"
     choices:
     - content: "Summarize code objectives concisely." 
       isCorrect: false
-      explanation: "Incorrect. While conciseness is encouraged, 'Summarize' isn't one of the 4 S's principles of prompt engineering."
+      explanation: "Incorrect. While conciseness is encouraged, 'Summarize' isn't one of the 4 Ss principles of prompt engineering."
     - content: "Specify instructions explicitly and in detail."
       isCorrect: true
-      explanation: "Correct. The principle of being 'Specific' is one of the 4 S's, emphasizing clear and detailed instructions."
+      explanation: "Correct. The principle of being 'Specific' is one of the 4 Ss, emphasizing clear and detailed instructions."
     - content: "Streamline processes for efficient code suggestions."
       isCorrect: false
-      explanation: "Incorrect. 'Streamline' isn't a term associated with the 4 S's principles."
+      explanation: "Incorrect. 'Streamline' isn't a term associated with the 4 Ss principles."
     - content: "Simplify coding languages for universal understanding."
       isCorrect: false
-      explanation: "Incorrect. The 4 S's don't include simplifying coding languages. The 4 S's are about making the prompts single, specific, short, and surrounded by context."
+      explanation: "Incorrect. The 4 Ss don't include simplifying coding languages. The 4 Ss are about making the prompts single, specific, short, and surrounded by context."
   - content: "How does GitHub Copilot handle personal data?"
     choices:
     - content: "It saves all personal data for future references." 
@@ -67,7 +67,7 @@ quiz:
       explanation: "Incorrect. It doesn't encrypt personal data, but rather, it avoids processing or storing it."
     - content: "It actively filters out personal data to protect user privacy."
       isCorrect: true
-      explanation: "Correct. GitHub Copilot is designed to actively filter out personal data to safeguard user privacy and data  security."
+      explanation: "Correct. GitHub Copilot is designed to actively filter out personal data to safeguard user privacy and data security."
   - content: "What is LoRA in the context of LLMs fine-tuning?"
     choices:
     - content: "A method that adds trainable elements to each layer of the pretrained model without a complete overhaul." 
@@ -75,10 +75,10 @@ quiz:
       explanation: "Correct. LoRA involves adding trainable parts to the model without changing the entire structure, optimizing its performance for specific tasks."
     - content: "A technology optimizing communication between different coding languages."
       isCorrect: false
-      explanation: "Incorrect. LoRA isn't a communication technology; it's a method of fine-tuning AI models."
+      explanation: "Incorrect. LoRA isn't a communication technology. It's a method of fine-tuning AI models."
     - content: "A specialized software library enhancing Copilot's performance."
       isCorrect: false
-      explanation: "Incorrect. LoRA isn't a software library but a fine-tuning method for AI models."
+      explanation: "Incorrect. LoRA isn't a software library. It's a fine-tuning method for AI models."
     - content: "A new programming paradigm supported exclusively by Copilot."
       isCorrect: false
       explanation: "Incorrect. LoRA refers to a fine-tuning technique for AI models, not a programming paradigm."
