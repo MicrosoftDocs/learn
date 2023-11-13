@@ -48,7 +48,7 @@ In this exercise, use Cloud Shell to develop your function.
 
     The output lists the files being written to disk. You see *host.json* and *local.settings.json*, and a few other files:
     - *package.json* is a JavaScript-specific file that keeps track of any packages you install and use within your code.
-    - *.gitignore* and *extensions.json* are configuration files that can be used by the Git version control tool and Visual Studio Code, respectively, but you can ignore them for now.
+    - *.gitignore* and *extensions.json* are configuration files that can be used by the Git version control tool and Visual Studio Code, respectively. You can ignore them for now.
 
 ## Create an HTTP-triggered function
 

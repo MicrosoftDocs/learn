@@ -4,7 +4,7 @@ You want to build your first function, a simple interest calculator, locally on 
 
 In this unit, you learn how to use the Core Tools to create and run functions locally. Let's learn more about Core Tools before we use them in the exercise in the next unit, which walks you through these concepts using the Azure Cloud Shell.
 
-## What are the Azure Functions Core Tools?
+## What is Azure Functions Core Tools?
 
 The Azure Functions Core Tools are a set of command-line tools that you can use to develop and test Azure Functions on your local computer.
 
@@ -40,7 +40,7 @@ Here are some fundamental concepts about functions.
 
 ### Function apps and functions projects
 
-Every function published to Azure belongs to a *function app*, which is a collection of one or more functions that Azure publishes together into the same environment. All of the functions in a function app share a common set of configuration values. Build them all for the same language runtime. A function app is an Azure resource that can be configured and managed independently.
+Every function published to Azure belongs to a *function app*, which is a collection of one or more functions that Azure publishes together into the same environment. In a function app, all of the functions share a common set of configuration values. Build them all for the same language runtime. A function app is an Azure resource that can be configured and managed independently.
 
 When you develop functions locally, you work within a *functions project*. The project is a folder that contains the code and configuration files that define your functions. A functions project on your computer is equivalent to a function app in Azure. It can contain multiple functions that use the same language runtime.
 

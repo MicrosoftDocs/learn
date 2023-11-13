@@ -10,7 +10,7 @@ This module's exercise can be completed in a browser, and doesn't require an Azu
 
 ## Learning objectives
 
-By the end of this module, you'll know how to use the Azure Functions Core Tools to:
+In this module, you learn how to use the Azure Functions Core Tools to:
 
 - Create new functions projects and functions
 - Run and test functions locally

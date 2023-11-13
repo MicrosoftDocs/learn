@@ -16,7 +16,7 @@ To publish a functions project to Azure, run `func azure functionapp publish <ap
 
 The Core Tools don't ask you to sign in to Azure. Instead, they access your subscriptions and resources by loading your session information from the Azure CLI or Azure PowerShell. If you don't have an active session in one of those tools, publishing fails. It's possible to publish from the Core Tools without the Azure CLI or Azure PowerShell. However, it's much easier if you do have them. We recommend you install one or the other. Make sure to sign in before you try to publish.
 
-After the tools indicate that publishing is complete, your functions are up and running in Azure. The final output from the Core Tools show the functions that were published, including the invocation URL of each function.
+After the tools indicate that publishing is complete, your functions are up and running in Azure. The final output from the Core Tools shows the functions that were published, including the invocation URL of each function.
 
 ### Things to know
 
