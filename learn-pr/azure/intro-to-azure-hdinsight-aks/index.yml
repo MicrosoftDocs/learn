@@ -3,7 +3,7 @@ uid: learn.intro-to-azure-hdinsight-aks
 metadata:
   moduleType: introduction        
   title: Introduction to Azure HDInsight on AKS
-  description: Evaluate whether Azure HDInsight can help your organization process big data. Describe how Azure HDInsight uses popular open-source frameworks that support many scenarios including extract, transform, data warehousing, and others.
+  description: writer description HDInsight on AKS
   ms.date: 11/14/2023  
   author: sairamyeturi
   ms.author: yeturis
