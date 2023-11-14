@@ -6,8 +6,7 @@ metadata:
   ms.date: 08/31/2019
   author: asudbring
   ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Azure Load Balancer features and capabilities
 durationInMinutes: 10
 content: |
