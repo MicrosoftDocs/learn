@@ -12,4 +12,4 @@ metadata:
   show_latex: true
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-what-is-quantum-computing.md)]
+  [!include[](includes/2-what-is-quantum-compute.md)]
