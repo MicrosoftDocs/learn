@@ -1,10 +1,10 @@
-In this exercise, you'll create an Azure Static Web Apps instance including a GitHub Action that will automatically build and publish your application.
+In this exercise, you create an Azure Static Web Apps instance including a GitHub Action that automatically builds and publishes your application.
 
 ## Create a Static Web App
 
 Now that you've created your GitHub repository, you can create a Static Web Apps instance from the Azure portal.
 
-This module uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure you've activated the sandbox at the top of this page.
+This module uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure that you activate the sandbox at the top of this page.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), making sure you use the same account to sign in as you did to activate the sandbox.
 
@@ -45,7 +45,7 @@ This module uses the Azure sandbox to provide you with a free, temporary Azure s
 
 ### Review the GitHub Action
 
-At this stage, your Static Web Apps instance is created in Azure, but your app isn't yet deployed. The GitHub Action that Azure creates in your repository will run automatically to trigger the first build and deployment of your app, but it takes a couple minutes to finish.
+At this stage, your Static Web Apps instance is created in Azure, but your app isn't yet deployed. The GitHub Action that Azure creates in your repository runs automatically to trigger the first build and deployment of your app, but it takes a couple minutes to finish.
 
 You can check the status of your build and deploy action by selecting the following link to go to the **Actions** page of your GitHub repository:
 
@@ -78,4 +78,4 @@ Congratulations! You've deployed your first app to Azure Static Web Apps!
 
 ## Next steps
 
-Your app is missing an API for its shopping list. Next, you'll explore how to add an Azure Functions API to your app that will publish to Azure alongside the static assets.
+Your app is missing an API for its shopping list. Next, you explore how to add an Azure Functions API to your app that publishes to Azure alongside the static assets.
