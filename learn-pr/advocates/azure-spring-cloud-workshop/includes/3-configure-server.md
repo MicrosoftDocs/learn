@@ -52,8 +52,8 @@ Once the token is generated, leave that tab open until the end of this section.
 1. Configure the repository you previously created:
     1. Add the repository URL, for example `https://github.com/<YOUR_USERNAME>/azure-spring-cloud-config` or `git@github.com:<YOUR_USERNAME>/azure-spring-cloud-config.git`.
 
-     > [!TIP]
-     > Make sure you include the `.git` ending in the URL, or you use the qualified URI.
+        > [!TIP]
+        > Make sure you include the `.git` ending in the URL, or use the qualified URI.
 
     1. Add your branch in `Label`. It defaults to `main` on GitHub, but older repositories or alternate Git providers might still use `master`.
     1. Select **Authentication** and select **HTTP Basic**.
