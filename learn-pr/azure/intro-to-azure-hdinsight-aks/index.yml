@@ -28,14 +28,14 @@ roles:
   - data-scientist
 products:
   - azure
-  - azure-hdinsight
+  - azure-hdinsight-aks
 subjects:
 - data-ai
 units:
 - learn.intro-to-azure-hdinsight-aks.1-introduction
-- learn.intro-to-azure-hdinsight-aks.2-what-is-azure-hdinsight
-- learn.intro-to-azure-hdinsight-aks.3-how-azure-hdinsight-works
-- learn.intro-to-azure-hdinsight-aks.4-when-to-use-azure-hdinsight
+- learn.intro-to-azure-hdinsight-aks.2-what-is-azure-hdinsight-aks
+- learn.intro-to-azure-hdinsight-aks.3-how-azure-hdinsight-aks-works
+- learn.intro-to-azure-hdinsight-aks.4-when-to-use-azure-hdinsight-aks
 - learn.intro-to-azure-hdinsight-aks.5-knowledge-check
 - learn.intro-to-azure-hdinsight-aks.6-summary
 badge:
