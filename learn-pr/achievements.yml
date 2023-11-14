@@ -2192,6 +2192,16 @@ achievements:
   title: Work with Data in Azure Machine Learning
   summary: Data is the foundation of machine learning. In this module, you will learn how to work with datastores and datasets in Azure Machine Learning, enabling you to build scalable, cloud-based model training solutions.
   iconUrl: /training/achievements/work-with-data-in-aml-badge.svg
+- uid: learn.paths-to-modern-endpoint-management.badge
+  type: badge
+  title: Plan your migration to Microsoft Endpoint Manager
+  summary: Learn about the migration paths you can follow to enable modern endpoint management using the products and services that encompass Microsoft Endpoint Manager.
+  iconUrl: /training/achievements/paths-to-modern-endpoint-management.svg
+- uid: learn.set-up-microsoft-intune.badge
+  type: badge
+  title: Set up Microsoft Intune
+  summary: Microsoft Intune helps you protect the devices, apps, and data that the people at your organization use to be productive. 
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.data-ai.automate-model-selection-with-azure-automl.badge
   type: badge
   title: Automate machine learning model selection with Azure Machine Learning

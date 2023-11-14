@@ -22521,6 +22521,111 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/endpoint-manager/paths-to-modern-endpoint-management/index.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/deployment-guide-intune-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/paths-to-modern-endpoint-management/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/deployment-guide-intune-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/paths-to-modern-endpoint-management/2-determine-starting-point.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/deployment-guide-intune-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/paths-to-modern-endpoint-management/3-limited-management-tools.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/deployment-guide-intune-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/paths-to-modern-endpoint-management/4-existing-third-party-mobile-management-provider.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/deployment-guide-intune-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/paths-to-modern-endpoint-management/5-existing-on-premises-management.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/deployment-guide-intune-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/paths-to-modern-endpoint-management/6-existing-on-premises-group-policy.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/deployment-guide-intune-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/paths-to-modern-endpoint-management/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/deployment-guide-intune-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/paths-to-modern-endpoint-management/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/deployment-guide-intune-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/set-up-microsoft-intune/index.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/try-intune-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/set-up-microsoft-intune/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/try-intune-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/set-up-microsoft-intune/2-review-supported-configurations.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/try-intune-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/set-up-microsoft-intune/3-sign-up-for-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/try-intune-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/set-up-microsoft-intune/4-configure-domain-name.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/try-intune-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/set-up-microsoft-intune/5-add-users.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/try-intune-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/set-up-microsoft-intune/6-create-groups.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/try-intune-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/set-up-microsoft-intune/7-assign-licenses-to-users.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/try-intune-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/set-up-microsoft-intune/8-grant-admin-permissions.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/try-intune-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/set-up-microsoft-intune/9-set-mdm-authority.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/try-intune-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/set-up-microsoft-intune/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/try-intune-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/endpoint-manager/set-up-microsoft-intune/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/mem/intune/fundamentals/try-intune-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/deploy-aspnet-apps-azure-app-service-pipelines/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
       "redirect_document_id": false
