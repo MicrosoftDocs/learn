@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-hdinsight-aks.3-how-azure-hdinsight-aks-works  
+title: How Azure HDInsight on AKS works  
+metadata:
+  unitType: learning-content  
+  title: How Azure HDInsight on AKS works
+  description: How Azure HDInsight on AKS works
+  ms.date: 11/14/2023 
+  author: sairamyeturi
+  ms.author: yeturis
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-how-azure-hdinsight-aks-works.md)]
