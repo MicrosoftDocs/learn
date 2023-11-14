@@ -15,47 +15,47 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "TODO - THEORY CHECK 1"
+    - content: "What types of Azure costs may show up in your cost tracking system that you can potentially optimize?"
       choices:
-        - content: "TODO"
+        - content: "Hardware support agreements"
           isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
+          explanation: "Your Azure costs only include the cost of the Azure services you use. Hardware support agreements are not included in your Azure costs."
+        - content: "Cloud consulting services"
           isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
+          explanation: "Any cloud consulting services you use are not included in your Azure costs."
+        - content: "AWS compute costs"
           isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
+          explanation: "AWS costs are not included in your Azure costs."
+        - content: "Azure storage costs"
           isCorrect: true
-          explanation: "TDOD"
+          explanation: "All Azure services, including Storage Accounts, are included in your Azure costs."
 
-    - content: "TODO - THEORY CHECK 2"
+    - content: "Which of the following aspects of your workload should you not consider refining according to ROI data?"
       choices:
-        - content: "TODO"
+        - content: "The workload's architecture design"
           isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
+          explanation: "The workload's architecture design should be continuously evaluated for refining according to ROI data."
+        - content: "Your workload's flows"
           isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
+          explanation: "Your workload's flows should be continuously evaluated for refining according to ROI data."
+        - content: "Your workload code"
           isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
+          explanation: "Your workload's code should be continuously evaluated for refining according to ROI data."
+        - content: "Your workload's functional and non-functional requirements"
           isCorrect: true
-          explanation: "TDOD"
+          explanation: "The functional and non-functional requirements are not subject to change based on ROI data."
 
-    - content: "TODO - EXAMPLE BASED CHECK"
+    - content: "Contoso Air developers are considering deploying a new Dev/Test environment in Azure. Which of the following design decisions would be most cost-effective?"
       choices:
-        - content: "TODO"
+        - content: "Deploying the app on an Azure App Service Isolated plan in the new Dev/Test environment resources"
           isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
+          explanation: "Dev/Test environments should be designed with the minimum resources required to support the workload."
+        - content: "Enabling Azure Site Recovery for the Dev/Test environment"
           isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
+          explanation: "Dev/Test environments should not be designed with disaster recovery capabilities in most cases."
+        - content: "Enabling Active geo-replication for the Dev/Test environment's Azure SQL databases"
           isCorrect: false
-          explanation: "TDOD"
-        - content: "TODO"
+          explanation: "Dev/Test environments typically only use test data and should not replicate that data to other regions in most cases."
+        - content: "Using the Developer SKU for the Dev/Test environment's API Management instance"
           isCorrect: true
-          explanation: "TDOD"
+          explanation: "Using the Developer SKU for the Dev/Test environment's API Management instance is the most cost-effective option."
