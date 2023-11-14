@@ -1,4 +1,4 @@
-Microsoft Defender for IoT provides comprehensive threat detection for IoT/OT environments, with multiple deployment options that include cloud-connected, fully on-premises, or hybrid.
+Microsoft Defender for IoT provides comprehensive threat detection for IoT/OT environments, with multiple deployment options that include cloud-connected, fully on-premises, or hybrid environments.
 
 This module describes the high-level steps required to plan your deployment of Defender for IoT for operational technology (OT) monitoring.
 
@@ -10,13 +10,13 @@ You need to create a deployment plan so that your organization can monitor traff
 
 ## What will we be doing?
 
-You'll identify the steps and roles involved in the different Microsoft Defender for Iot stages of a deployment. You'll then plan basic details about deploying an OT monitoring system, such as:
+You'll identify the steps and roles involved in the different stages of a Microsoft Defender for IoT deployment. You'll then plan basic details about deploying an OT monitoring system, such as:
 
 - **Sites and zones**: Decide how you'll segment a network you want to monitor using sites and zones representing locations all around the world.
 
-- **Sensor management**: Decide on the cloud connections to use. This example doesn't describe air-gapped or hybrid systems.
+- **Sensor management**: Decide on the cloud connections to use. This module doesn't describe air-gapped or hybrid systems.
 
-- **Users and roles**: Identify the types of users you need on each sensor, and the roles that they'll need for each activity.
+- **Users and roles**: Identify the types of users you need in Azure and on each sensor, and the roles that they'll need for each activity.
 
 ## What is the main goal?
 

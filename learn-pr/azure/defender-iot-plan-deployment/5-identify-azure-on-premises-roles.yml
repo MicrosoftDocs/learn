@@ -31,14 +31,14 @@ quiz:
       isCorrect: false
       explanation: "Zero Trust least-priviledged access suggests that Security Admin permissions are too high for someone who needs only read access to the sensor data."
 
-  - content: "Suppose you have an Active Directory group of users who are onboarding OT sensors. What Azure role should you give this group?"
+  - content: "Suppose you have a group of Azure users who are onboarding OT sensors. What Azure role should you give this group?"
     choices:
-    - content: "OT Security Reader" 
+    - content: "Security Reader" 
       isCorrect: false
-      explanation: "An OT Security Reader group presumably has read-only access to sensor data, which isn't enough to onboard OT sensors."
-    - content: "OT Security Admin"
+      explanation: "A Security Reader user presumably has read-only access to sensor data in Azure, which isn't enough to onboard OT sensors."
+    - content: "Security Admin"
       isCorrect: true
-      explanation: "An OT Security Admin group has sensor onboarding permissions but still has permission limits."
-    - content: "OT Owner"
+      explanation: "A Security Admin user has sensor onboarding permissions but still has permission limits."
+    - content: "Owner"
       isCorrect: false
-      explanation: "An OT Owner group presumably has all permissions and can create users. Creating users exceeds the permissions needed by the onboarding users."
+      explanation: "An Owner user presumably has all permissions and can create users. Creating users exceeds the permissions needed by the onboarding users."

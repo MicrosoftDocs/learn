@@ -1,4 +1,6 @@
 In the last unit, you identified the types of sites and zones you'll need for your car manufacturing organization. This unit considers the types of sensor management methods you need. Specifically, the type of cloud-connected sensor that best fits your organizational needs.
+
+This learn module doesn't cover on-premises only (air-gapped) or hybrid environments.
 <!-- 
     [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
 -->
@@ -25,7 +27,9 @@ Use the following questions to help you choose the right connection for your man
 
 If your answers to these questions are *Yes*, use a proxy connection with an Azure proxy.
 
-In the following image sensors are connected to the Defender for IoT portal in Azure through a proxy in the Azure virtual network to ensure communication confidentiality.
+If your answers to these questions are *Yes*, use a proxy connection with an Azure proxy. 
+
+In the following image, sensors are connected to Defender for IoT and Azure through a proxy in the Azure virtual network to ensure communication confidentiality.
 
 :::image type="content" source="../media/4-proxy.png" alt-text="Diagram of a proxy connection using an Azure proxy." border="false":::
 
@@ -36,7 +40,7 @@ In the following image sensors are connected to the Defender for IoT portal in A
 
 If your answers to these questions are *Yes*, use a proxy connection with proxy chaining.
 
-In the following image, sensors connect to the Defender for IoT portal in Azure through multiple proxies.
+In the following image, sensors connect to Defender for IoT and Azure through multiple proxies.
 
 :::image type="content" source="../media/4-proxy-chaining.png" alt-text="Diagram of a proxy connection using proxy chaining." border="false":::
 
@@ -44,7 +48,7 @@ In the following image, sensors connect to the Defender for IoT portal in Azure 
 
 - Do you want to connect your sensor to Azure directly?
 
-If so, you don't need a proxy at all. The following image shows an example of how you can connect your sensors to the Defender for IoT portal in Azure directly over the internet.
+If so, you don't need a proxy at all. The following image shows an example of how you can connect your sensors to Defender for IoT portal and Azure directly over the internet.
 
 :::image type="content" source="../media/4-direct.png" alt-text="Diagram of a direct cloud connection." border="false":::
 

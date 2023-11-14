@@ -11,17 +11,17 @@ metadata:
   ms.service: defender-for-iot
 title: |
   Plan to deploy Microsoft Defender for IoT to monitor operational technology (OT) networks
-summary: "To plan for the deployment of Microsoft Defender for IoT, plan the sites and zones, user access, and OT sensor and management connections."
+summary: "Plan for the deployment of Microsoft Defender for IoT, including the sites and zones, user access, and OT sensor and management connections."
 abstract: |
   By the end of this module, you'll be able to:
     - Describe the stages and the roles involved to deploy Microsoft Defender for IoT
     - Organize the locations and systems across your network into sites and zones
-    - Choose a sensor connection method to use for my organization to manage my OT security deployment
+    - Choose a sensor connection method to use for my deployment
     - Identify the users and roles your teams use with Defender for IoT
 prerequisites: |
   - Knowledge of what Defender for IoT is and how it works at a beginner level
   - Knowledge of operational technology (OT) networks and networking concepts at an intermediate level 
-  - Familiarity with the Purdue networking model like the device types that are included in each networking level
+  - Familiarity with the Purdue networking model, like the device types that are included in each networking level
   - Knowledge of what Azure roles and role-based access controls (RBAC) are and how they work at a beginner level
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
