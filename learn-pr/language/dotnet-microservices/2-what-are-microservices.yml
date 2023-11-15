@@ -26,15 +26,15 @@ quiz:
     - content: "A web API and a website that return and display a list of pizzas."
       isCorrect: false
       explanation: "A microservice performs only a single business purpose. Here, two business purposes are being performed."
-    - content: "GitHub Actions used to deploy a website."
+    - content: "GitHub Actions that are used to deploy a website."
       isCorrect: false
       explanation: "A microservice is a service that is part of a larger application that serves a business need. Although GitHub Actions helps with deployment, it doesn't fit as a microservice."
-    - content: "A Docker image"
+    - content: "A Docker image."
       isCorrect: false
       explanation: "A Docker image is a static representation of a microservice, not the microservice itself."
   - content: "What purpose does a Docker image have in a microservices architecture pattern?"
     choices:
-    - content: "It's a text file with instructions on how to build the microservice."
+    - content: "It's a text file with instructions for how to build the microservice."
       isCorrect: false
       explanation: "The Dockerfile is the text file with instructions on how to build the microservice."
     - content: "A Docker image is a static representation of a microservice, its configuration, and its dependencies."

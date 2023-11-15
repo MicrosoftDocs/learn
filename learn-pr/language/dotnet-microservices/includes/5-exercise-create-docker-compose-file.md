@@ -1,6 +1,6 @@
-The Contoso outdoor equipment company has two services that they'd like to group together to build and deploy as a single unit. They decided to use Docker Compose to build the services together.
+The Contoso outdoor equipment company has two services that they'd like to group together to build and deploy as a single unit. The company decides to use Docker Compose to build the services together.
 
-In this exercise, you create a Docker Compose YAML file, then use the Docker Compose utility to both build the Docker container images and run them.
+In this exercise, you create a Docker Compose YAML file. Then you use the Docker Compose utility to both build the Docker container images and run them.
 
 ## Connect to the codespace
 
@@ -9,13 +9,13 @@ To connect to the codespace:
 1. Open a browser and go to the [eShopLite repository](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative).
 1. Select **Code**, and then select the **Codespaces** tab.
 1. Select the codespace that you created in the previous exercise. GitHub opens the codespace.
-1. Change to the */dotnet-docker* directory.
+1. Go to the */dotnet-docker* directory.
 
 ## Create the Docker Compose file
 
-Now you can use the Docker Compose file to configure images for both the back-end and front-end services.
+Use the Docker Compose file to configure images for both the back-end and the front-end services.
 
-1. In the top folder of the codespace (the same folder that contains *README.md*), open the file named *docker-compose.yml*.
+1. In the top folder of the codespace (the folder that contains *README.md*), open the file named *docker-compose.yml*.
 1. Add the following code to the file:
 
     ```yml
@@ -44,20 +44,20 @@ Now you can use the Docker Compose file to configure images for both the back-en
                - "5200:8080"
     ```
 
-    This code does several things:
+   This code does several things:
 
-   1. It creates the front-end website and names it **frontend**. The code tells Docker to build it, and points to the *DockerfileStore* file.
-   1. The code sets an environment variable for the website: `ProductEndpoint=http://backend:8080`. This code is how the front-end service finds the Products back-end service.
-   1. A second environment variable specifies where images for products are located.
-   1. The code opens a port and declares that it depends on the back-end service.
+   - It creates the front-end website and names it **frontend**. The code tells Docker to build it and points to the *DockerfileStore* file.
+   - The code sets an environment variable for the website: `ProductEndpoint=http://backend:8080`. This code is how the front-end service finds the Products back-end service.
+   - A second environment variable specifies where images for products are located.
+   - The code opens a port and declares that it depends on the back-end service.
 
     The back-end service named **backend** is created next. The same Dockerfile that you created in the previous exercise builds it. The last command specifies which port to open.
 
-1. Select the **Ports** tab. Then, to the right of the local address for the **Back End** port, select the **Copy** icon.
+1. Select the **Ports** tab. To the right of the local address for the **Back End** port, select the **Copy** icon.
 
-    ![Screenshot that shows how to copy the address for the back-end Products service.](../media/copy-backend-address.png)
+   :::image type="content" source="../media/copy-backend-address.png" alt-text="Screenshot that shows how to copy the address for the back-end Products service.":::
 
-1. In the *docker-compose.yml* file, paste this URL in the `ImagePrefix` environment variable to replace the text `http://localhost`.
+1. In the *docker-compose.yml* file, paste this URL in the `ImagePrefix` environment variable. Replace the text `http://localhost`.
 1. Append `images` to the pasted text:
 
     ```docker-compose

@@ -19,7 +19,7 @@ quiz:
   questions:
   - content: "What is one use case for an orchestrator?"
     choices:
-    - content: "Correct. To scale out and manage complex distributed systems of microservices."
+    - content: "To scale out and manage complex distributed systems of microservices."
       isCorrect: true
       explanation: "Orchestrators are tools that are used to manage the hosts on which containers run."
     - content: "To hold the Docker images in source control."
@@ -35,7 +35,7 @@ quiz:
       explanation: "C# is a language that you might choose to write your microservice in."
     - content: "YAML"
       isCorrect: true
-      explanation: "Correct. YAML is the language that Docker Compose files are written in."
+      explanation: "YAML is the language that Docker Compose files are written in."
     - content: "JSON"
       isCorrect: false
       explanation: "Docker Compose files aren't written in JSON."
