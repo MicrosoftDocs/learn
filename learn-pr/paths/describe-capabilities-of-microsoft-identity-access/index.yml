@@ -50,9 +50,6 @@ summary: |
     Primer: [Describe the basic concepts of cybersecurity](../describe-basic-concepts-of-cybersecurity/index.yml)
   :::column-end:::
   :::row-end:::  
-video:
-  title: "Introduction video: Describe the capabilities of Microsoft Entra"
-  url: https://www.microsoft.com/videoplayer/embed/RE4XQ3g
 iconUrl: /training/achievements/describe-capabilities-of-microsoft-identity-access-management-solutions.svg
 levels:
 - beginner
