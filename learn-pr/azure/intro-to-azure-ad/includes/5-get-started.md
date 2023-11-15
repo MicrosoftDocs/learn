@@ -16,11 +16,11 @@ In the first stage, build a foundation of security for your Microsoft Entra ID. 
 | **Use regular administrative roles where possible** | Admins who aren't global admins should never have more permissions than they need to do their work. Use these regular admin roles by default. Avoid using the global admin roles unless you need to. | Free |
 | **Configure Privileged Identity Management (PIM) to track administrators** | Use PIM to monitor how your admin roles are used. This action helps you improve your governance and compliance.| Microsoft Entra ID P2 |
 | **Configure self-service password reset** | Let internal users reset their passwords through policies that you configure. This action reduces the number of help desk tickets for password resets. | Free |
-| **Create a list of banned passwords** | Use this list to prevent users from using passwords that are common phrases or words in your organization. Your list can include your company name or headquarters location, for example. |Free |
+| **Create a list of banned passwords** | Use this list to prevent users from using passwords that are common phrases or words in your organization. Your list can include your company name or headquarters location, for example. | Microsoft Entra ID P1 |
 | **Warn users to not reuse credentials** | When someone reuses the same credentials on multiple platforms, an attacker can use the credentials to access all of those platforms if a single platform is compromised. | Free |
 | **Set passwords to never expire for cloud-based user accounts** | Routine password resetting tempts users to increment their existing passwords. For example, they might change their password from `R4ndom1Strong` to `R4ndom2Strong`, and so on. In this case, because most of the password remains the same, it increases the risk of using already exposed credentials to gain access to an account. | Free |
-| **Enforce multi-factor authentication through conditional-access policies** | Configure conditional-access policies to require users to pass multiple authentication challenges before they can access an application. | Microsoft Entra ID P1 |
-| **Configure Microsoft Entra ID Protection (AADIP)** | Flag and block suspicious sign-ins and compromised user credentials for your organization's users. You can also use AADIP to automatically trigger multi-factor authentication or a password reset, depending on the severity of the detected risk. | Microsoft Entra ID P2 |
+| **Enforce multifactor authentication through conditional-access policies** | Configure conditional-access policies to require users to pass multiple authentication challenges before they can access an application. | Microsoft Entra ID P1 |
+| **Configure Microsoft Entra ID Protection (AADIP)** | Flag and block suspicious sign-ins and compromised user credentials for your organization's users. You can also use AADIP to automatically trigger multifactor authentication or a password reset, depending on the severity of the detected risk. | Microsoft Entra ID P2 |
 
 ### Stage 2: Add users, manage devices, and configure synchronization
 
@@ -53,7 +53,7 @@ Now you can address how much privilege your admins should have, and you can comp
 
 | Task | Description | License needed |
 |---|---|---|
-|**Use PIM to control administrator access** | Ensure that admins can use their account only after they pass a multi-factor authentication challenge or receive approval from an accepted approver. | Microsoft Entra ID P2 |
+|**Use PIM to control administrator access** | Ensure that admins can use their account only after they pass a multifactor authentication challenge or receive approval from an accepted approver. | Microsoft Entra ID P2 |
 |**Complete access reviews for Microsoft Entra directory roles in PIM**| Configure access review policies in PIM so you can regularly review administrative access based on your organization's requirements for privileged roles.  | Microsoft Entra ID P2 |
 |**Configure dynamic group membership policies**| Save time and effort by automatically adding users to specific groups based on known profile information, like department or region. For example, you can automatically add all users who are part of the human resources department to a user group called Human Resources. | Microsoft Entra ID P1 or P2 |
 | **Use group-based application assignment**| Use group-based access management to give all group members access to an application. When you use dynamic groups, users who are removed from a group automatically lose access to the application. This action helps keep your applications secure. |Free |
