@@ -8,8 +8,7 @@ metadata:
   ms.date: 9/1/2021
   author: sadadow
   ms.author: saadad
-  ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: learning-m365
+  ms.topic: unit
 durationInMinutes: 3 # user input: the estimate time to complete the unit
 content: |
   [!include[](includes/2-find-educator-content-in-learn.md)]
