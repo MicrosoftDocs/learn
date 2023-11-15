@@ -1,7 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.configure-postman-and-api-collections
 title:  Configure Postman and API collections
-sandbox: true
 interactive: bash
 metadata:
   title:  Configure Postman and API collections

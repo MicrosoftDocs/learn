@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.update-graph-elements
-title: Update graph 
-sandbox: true
-interactive: bash
+title: Update graph
 metadata:
   title: Update graph elements
   description: Use the Azure Digital Twins APIs to edit a model, twin properties, and twin relationships.
