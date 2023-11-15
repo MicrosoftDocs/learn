@@ -47,6 +47,6 @@ With a GZRS storage account, you can continue to read and write data if an avail
 
 Let's examine the scope of durability and availability for the different replication strategies. The following table describes several key factors during the replication process, including node unavailability within a data center, and whether the entire data center (zonal or nonzonal) becomes unavailable. The table identifies read access to data in a remote, geo-replicated region during region-wide unavailability, and the supported Azure storage account types.
 
-| Node in data center unavailable | Entire data center unavailable | Region-wide outage | Read access during region-wide outage | Supported storage accounts |
-| --- | --- | --- | --- | --- 
-| - **LRS** <br> - **ZRS** <br> - **GRS** <br> - **RA-GRS** <br> - **GZRS** <br> - **RA-GZRS** | - **ZRS** <br> - **GRS** <br> - **RA-GRS** <br> - **GZRS** <br> - **RA-GZRS** | - **GRS** <br> - **RA-GRS** <br> - **GZRS** <br> - **RA-GZRS** | - **RA-GRS** <br> - **RA-GZRS** | - **LRS**: _GPv1_, _GPv2_, _Blob_ <br> - **ZRS**: _GPv2_ <br> - **GRS**: _GPv1_, _GPv2_, _Blob_ <br> - **RA-GRS**: _GPv1_, _GPv2_, _Blob_ <br> - **GZRS**: _GPv2_ <br> - **RA-GZRS**: _GPv2_ |
+| Node in data center unavailable | Entire data center unavailable | Region-wide outage | Read access during region-wide outage | 
+| --- | --- | --- | --- |  
+| - **LRS** <br> - **ZRS** <br> - **GRS** <br> - **RA-GRS** <br> - **GZRS** <br> - **RA-GZRS** | - **ZRS** <br> - **GRS** <br> - **RA-GRS** <br> - **GZRS** <br> - **RA-GZRS** | - **GRS** <br> - **RA-GRS** <br> - **GZRS** <br> - **RA-GZRS** | - **RA-GRS** <br> - **RA-GZRS** |
