@@ -18,23 +18,23 @@ The Microsoft identity platform helps you build applications that your users and
 
 This module focuses on authenticating a work or school accounts provisioned through Microsoft Entra ID.
 
-:::image type="content" source="../media/02-azure-active-directory-tenants-and-users.png" alt-text="Screenshot of the Azure portal that shows the page for managing users and tenants.":::
+:::image type="content" source="../media/02-entra-tenants-and-users.png" alt-text="Screenshot of the Azure portal that shows the page for managing users and tenants.":::
 
 <a name='azure-ad-app-registration'></a>
 
 ## Microsoft Entra app registration
 
-For a web app to use the Microsoft identity platform to enable user authentication, you must register a new app with Microsoft Entra ID. You can do this in the [Azure portal](https://portal.azure.com/). Your web app should live in a Microsoft Entra tenant.
+For a web app to use the Microsoft identity platform to enable user authentication, you must register a new app with Microsoft Entra ID. You can do this in the [Azure portal](https://portal.azure.com). Your web app should live in a Microsoft Entra tenant.
 
 When you register a web app in Microsoft Entra ID, ensure that the redirect URI of the app points to the callback URL of the web app. This URL must match the redirect URI that the app provides when the authentication process starts. The authorization code will be sent to this endpoint, so you need to configure any authentication libraries and/or middleware to listen on this endpoint to receive the authorization code.
 
 You should also specify a sign-out URL so that the authentication libraries and/or middleware deletes any cached tokens or other data that's needed only for signed-in users.
 
-:::image type="content" source="../media/02-azure-active-directory-portal-new-app-details.png" alt-text="Screenshot of the Azure portal that shows a web app registration form.":::
+:::image type="content" source="../media/02-entra-portal-new-app-details.png" alt-text="Screenshot of the Azure portal that shows a web app registration form.":::
 
 The web app also needs a client secret to sign in with Microsoft Entra ID to exchange the authorization code for an access token.
 
-:::image type="content" source="../media/02-azure-active-directory-portal-new-app-secret.png" alt-text="Screenshot of Azure portal that shows the page for creating a new app secret.":::
+:::image type="content" source="../media/02-entra-portal-new-app-secret.png" alt-text="Screenshot of Azure portal that shows the page for creating a new app secret.":::
 
 You need three things from the Microsoft Entra app registration:
 
