@@ -1,4 +1,3 @@
-
 Let’s explore a real story of a business that transformed after switching to Microsoft Azure.
 
 Planzer is a Swiss transportation and logistics company that was looking to upgrade its old IT infrastructure. In only seven months, Planzer was able to migrate its entire IT infrastructure – over 200 computer servers serving 69 sites—to Microsoft Azure and the cloud.
