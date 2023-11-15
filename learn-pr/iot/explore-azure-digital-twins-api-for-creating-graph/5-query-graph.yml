@@ -1,7 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.query-graph
 title: Query graph
-sandbox: true
 interactive: bash
 metadata:
   title: Query graph
