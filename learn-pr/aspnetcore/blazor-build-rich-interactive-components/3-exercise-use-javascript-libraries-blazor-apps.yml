@@ -8,9 +8,8 @@ metadata:
   ms.date: 10/10/2023
   author: IEvangelist
   ms.author: dapine
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
-  ms.prod: learning-blazor
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-use-javascript-libraries-blazor-apps.md)]
