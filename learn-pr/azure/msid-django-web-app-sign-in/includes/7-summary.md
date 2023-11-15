@@ -14,4 +14,4 @@ The Microsoft identity platform offers integration of modern innovations in the 
 ## References
 
 - [Microsoft identity platform documentation](/azure/active-directory/develop/v2-overview)
-- [Django sample app on GitHub](https://github.com/Azure-Samples/ms-identity-python-django-tutorial/tree/main/1-Authentication/sign-in)
+- [Django sample app](https://github.com/Azure-Samples/ms-identity-python-django-tutorial/tree/main/1-Authentication/sign-in)
