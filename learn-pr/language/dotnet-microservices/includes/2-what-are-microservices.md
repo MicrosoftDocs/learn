@@ -1,47 +1,47 @@
 The cloud drives today's application development and IT systems management. Modern cloud applications need to be fast, agile, massively scalable, and reliable. 
 
-Containers help applications achieve all of those requirements. But putting an application into a container without following a design pattern is like getting into a vehicle and hoping to find way to a new city without a map (or GPS-enabled phone). You might end up at your destination, but the route probably wasn't the most efficient.
+Using containers can help you deploy applications that meet all of those requirements. But putting an application into a container without following a strategic design pattern is like getting into a vehicle and hoping to find your way to a new city without using a map or GPS. You might end up at your destination, but the route probably won't be direct or the most efficient.
 
-This is where a microservice architecture comes in. Microservices enable an approach to software development and deployment that is perfectly suited to the agility, scalability, and reliability requirements of modern cloud applications.
+This is where a microservices architecture comes in. Microservices give you an approach to software development and deployment that's perfectly suited to the agility, scalability, and reliability requirements of modern cloud applications.
 
-## What is a microservice architecture?
+## What is a microservices architecture?
 
-As the name implies, a microservices architecture is an approach in which a large application is split up into a set of smaller services. Each service runs in its own process and communicates with other processes using protocols such as HTTP/HTTPS, WebSockets, or Advanced Message Queuing Protocol (AMQP). Each microservice implements a specific end-to-end domain or business capability within a certain context boundary, and each must be developed autonomously and be deployable independently. Finally, each microservice should own its related domain data model and domain logic, and could be based on different data storage technologies (SQL, NoSQL) and different programming languages.
+In a microservices architecture, a large application is split up into a set of smaller services. Each service runs in its own process and communicates with other processes by using protocols like HTTP/HTTPS, WebSocket, or Advanced Message Queuing Protocol (AMQP). Each microservice implements a specific, end-to-end domain or business capability within a certain context boundary. Each microservice must be developed autonomously and be independently deployable. Finally, each microservice should own its related domain data model and domain logic, and can be based on different data storage technologies (SQL, NoSQL) and different programming languages.
 
-Some key characteristics of microservices are:
+These are some key characteristics of microservices:
 
-- Microservices are small, independent, and loosely coupled.
-- Each microservice has a separate codebase, which can be managed by a small development team.
-- Microservices are deployed independently. A team can update an existing microservice without rebuilding and redeploying the entire application.
-- Microservices are responsible for persisting their data or external state in their respective databases. Unlike the monolithic architecture, microservices don't share databases.
-- Microservices communicate with each other by using well-defined APIs. Internal implementation details of each service are hidden from other services.
-- Microservices support polyglot programming. For example, the microservices that make up a web application don't need to share the same technology stack, libraries, or frameworks.
+- They're small, independent, and loosely coupled.
+- Each microservice has a separate code base that can be managed by a small development team.
+- They're deployed independently. A team can update an existing microservice without rebuilding and redeploying the entire application.
+- They persist their data or the external state in their respective databases. Unlike in a monolithic architecture, microservices don't share databases.
+- They communicate with each other by using well-defined APIs. Internal implementation details of each service are hidden from other services.
+- They support polyglot programming. For example, the microservices that make up a web application don't need to share the same technology stack, libraries, or frameworks.
 
 > [!VIDEO https://aka.ms/docs/player?id=4c104952-cc11-4995-8de4-5fdc2ccc23bf]
 
-## Why develop in a microservice architecture?
+## Why develop by using a microservices architecture?
 
-Microservices typically encapsulate simpler customer-requirement functionality, which you can scale out or in, test, deploy, and manage independently. One important benefit of a microservices approach is that teams are driven more by customer scenarios than by technology. Each small team develops a microservice based on a customer scenario and uses any technologies they want to use.
+Microservices typically encapsulate simpler customer-requirement functionality, which you can scale out or scale in, and test, deploy, and manage independently. One important benefit of a microservices approach is that teams are driven more by customer scenarios than by specific technology. Each small team develops a microservice based on a customer scenario and uses any technologies they want to use.
 
-Microservices provide long-term agility. Microservices enable better maintainability in complex, large, and highly scalable systems by letting you create applications based on many independently deployable services that each have granular and autonomous lifecycles.
+Microservices provide long-term agility. Microservices support maintainability in complex, large, and highly scalable systems by letting you create applications based on many independently deployable services that each have granular and autonomous lifecycles.
 
-As another benefit, microservices can scale out independently. Instead of having a single monolithic application that you must scale out as a unit, you can instead scale out specific microservices. That way, you can scale just the functional area that needs more processing power or network bandwidth to support demand, rather than scaling out other areas of the application that don't need to be scaled. That means cost savings because you need less hardware.
+As another benefit, microservices can scale out independently. Instead of having a single, monolithic application that you must scale out as a unit, you can instead scale out specific microservices. That way, you can scale only the functional area that needs more processing power or network bandwidth to support demand, instead of scaling out other areas of the application that don't need to be scaled. That means cost savings because you need less hardware.
 
-![Diagram showing how microservices can scale across virtual machines.](../media/microservice-approach.png)
+![Diagram that shows how microservices can scale across virtual machines.](../media/microservice-approach.png)
 
 The microservices approach allows agile changes and rapid iteration of each microservice, because you can change specific, small areas of complex, large, and scalable applications.
 
-Architecting fine-grained microservices-based applications enables continuous integration and continuous delivery practices. It also accelerates delivery of new functions into the application. Fine-grained composition of applications also allows you to run and test microservices in isolation, and to evolve them autonomously while maintaining clear contracts between them. As long as you don't change the interfaces or contracts, you can change the internal implementation of any microservice or add new functionality without breaking other microservices.
+Architecting fine-grained microservices-based applications enables continuous integration and continuous delivery practices. It also accelerates delivery of new functions into the application. You can run and test microservices in isolation, and evolve them autonomously while maintaining clear contracts between services. As long as you don't change the interfaces or contracts, you can change the internal implementation of any microservice or add new functionality without breaking other microservices.
 
 ## What role do containers play?
 
-Containerization is an approach to software development in which an application or service, its dependencies, and its configuration (abstracted as deployment manifest files) are packaged together as a container image. You can test the containerized application as a unit, and deploy them as a container image instance to the host Operating System (OS).
+Containerization is an approach to software development in which an application or service, its dependencies, and its configuration (abstracted as deployment manifest files) are packaged together as a container image. You can test the containerized application as a unit and deploy it as a container image instance on the host operating system.
 
-Just as shipping containers allow goods to be transported by ship, train, or truck regardless of the cargo inside, software containers act as a standard unit of software deployment that can contain different code and dependencies. Containerizing software this way lets developers and IT professionals deploy them across environments with little or no modification.
+Just as shipping containers allow goods of all kinds to be transported by ship, train, or truck, software containers act as a standard unit of software deployment that can contain different code and dependencies. Developers and IT professionals can use containerized software to deploy code and dependencies across environments with little or no modification.
 
-If that sounds like containerizing an application would be a great way to implement the microservice architecture pattern, it is. The benefits of containers almost exactly line up to the benefits of microservices one-to-one.
+If it sounds like containerizing an application might be a great way to implement the microservices architecture pattern, it is. The benefits of using containers line up almost exactly to the benefits of using a microservices architecture.
 
-![Diagram showing multiple containers running on a single host.](../media/multiple-containers-single-host.png)
+![Diagram that shows multiple containers running on a single host.](../media/multiple-containers-single-host.png)
 
 > [!NOTE]
 > Containerizing an application is not the only way to deploy microservices. You could deploy microservices as individual services in Azure App Service, or via virtual machines, or any number of ways. However, containers are the deployment tool that we'll use for the rest of this module for our microservices.

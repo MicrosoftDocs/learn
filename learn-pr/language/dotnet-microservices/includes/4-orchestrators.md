@@ -1,4 +1,4 @@
-Contoso loves the results the microservice architecture has been giving them so far. The overall web application calls individual microservices to provide and manipulate data.
+Contoso loves the results the microservices architecture has been giving them so far. The overall web application calls individual microservices to provide and manipulate data.
 
 As more services get added, however, the overall system becomes more complex to scale out and manage. Orchestrators can help.
 
@@ -16,7 +16,7 @@ You use one container for each service instance. Docker containers are "units of
 
 ## Why would you use an orchestrator?
 
-There are many benefits to using an orchestrator with a containerized microservice architecture.
+There are many benefits to using an orchestrator with a containerized microservices architecture.
 
 The orchestrator helps with composing applications consisting of many microservices into one deployable unit. That unit is then moved &mdash; or deployed &mdash; to a host.
 

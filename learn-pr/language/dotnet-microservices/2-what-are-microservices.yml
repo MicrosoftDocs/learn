@@ -3,7 +3,7 @@ uid: learn.languages.dotnet-microservices.what-are-microservices
 title: What are microservices?
 metadata:
   title: What are microservices?
-  description: Today's application development and IT system management is driven by the cloud. Learn how microservices power cloud native development.
+  description: Learn how microservices power cloud native development.
   ms.date: 11/06/2023
   author: codemillmatt
   ms.author: masoucou
@@ -32,7 +32,7 @@ quiz:
     - content: "A Docker image"
       isCorrect: false
       explanation: "A docker image is a static representation of a microservice, not the microservice itself."
-  - content: "What purpose does a Docker image have in a microservice architecture pattern?"
+  - content: "What purpose does a Docker image have in a microservices architecture pattern?"
     choices:
     - content: "A text file with instructions on how to build the microservice."
       isCorrect: false
