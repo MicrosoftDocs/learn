@@ -26504,6 +26504,51 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/msid-django-web-app-sign-in/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/msid-django-web-app-sign-in/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/msid-django-web-app-sign-in/2-register-web-app-in-azure-active-directory-tenant.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/msid-django-web-app-sign-in/3-exercise-register-django-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/msid-django-web-app-sign-in/4-sign-in-users-to-django-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/msid-django-web-app-sign-in/5-exercise-sign-in-users-to-django-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/msid-django-web-app-sign-in/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/msid-django-web-app-sign-in/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.msid-django-web-app-sign-in.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/authenticate-users-node-web-app-use-azure-active-directory-b2c/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/active-directory-b2c/configure-a-sample-node-web-app",
       "redirect_document_id": false
