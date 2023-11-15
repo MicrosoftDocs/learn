@@ -1717,6 +1717,11 @@ achievements:
   title: Provision virtual machines in Azure
   summary: Learn the availability and sizing options of Azure Virtual Machines, and how to create a virtual machine by using the Azure CLI.
   iconUrl: /training/achievements/virtual-machines-provisions.svg
+- uid: learn.azure.ms-learn-live-live-foundations-serverless-dev.badge
+  type: badge
+  title: Foundations of Serverless Computing for Developers
+  summary: Learn about serverless computing and how to design and implement a cost-efficient, and auto-scalable HTTP API using Azure.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.wwl.implement-durable-functions.badge
   type: badge
   title: Implement Durable Functions
@@ -2390,3 +2395,4 @@ achievements:
   title: 'Microsoft Azure AI Fundamentals: Explore knowledge mining'
   summary: Knowledge mining is a discipline in artificial intelligence (AI) that uses a combination of intelligent services to quickly search and learn from vast amounts of information.
   iconUrl: /learn/achievements/knowledge-mining-fundamentals.svg
+
