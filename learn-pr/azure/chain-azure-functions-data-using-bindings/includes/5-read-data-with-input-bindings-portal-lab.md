@@ -286,9 +286,9 @@ Let's examine what this code is doing.
           "name": "bookmark",
           "direction": "in",
           "type": "cosmosDB",
-          "connectionStringSetting": "your-database_DOCUMENTDB",
+          "connection": "your-database_DOCUMENTDB",
           "databaseName": "func-io-learn-db",
-          "collectionName": "Bookmarks",
+          "containerName": "Bookmarks",
           "id": "{id}",
           "partitionKey": "{id}"
         }
