@@ -6,7 +6,11 @@ metadata:
   ms.date: 01/07/2022
   author: wwlpublish
   ms.author: cahowd
+<<<<<<< HEAD
   ms.topic: unit
+=======
+  ms.topic: learning-path
+>>>>>>> eda74a0a348f60cad8b684107cc5e18ea9435115
 title: Develop data insights and business integrations
 prerequisites: |
   Ability to:

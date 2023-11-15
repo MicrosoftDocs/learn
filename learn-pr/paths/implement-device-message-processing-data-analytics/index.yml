@@ -6,7 +6,11 @@ metadata:
   ms.date: 12/21/2021
   author: wwlpublish
   ms.author: cahowd
+<<<<<<< HEAD
   ms.topic: unit
+=======
+  ms.topic: learning-path
+>>>>>>> eda74a0a348f60cad8b684107cc5e18ea9435115
 title: Implement device message processing and data analytics
 prerequisites: |
   Ability to:
