@@ -4,33 +4,7 @@ When you have an IoT Hub solution running in production, you will want to set up
 
 In this exercise, you enable diagnostic logs and use them to check for errors. You also set up some metrics to watch, and alerts that fire when the metrics hit a certain boundary criteria.
 
-## Task 1: Create a Storage Account
-
-In this task, you create the storage account. The storage account contains your device telemetry logging information.
-
-1. Switch to your Azure portal window and navigate to your dashboard.
-
-    If necessary, log into your [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-
-1. In the **Search resources, services, and docs** text box, search for **Storage accounts**.
-
-1. Under **Services**, click **Storage accounts**.
-
-1. In the **Storage accounts** blade, select **+ Create** to create a storage account.
-
-1. In **Subscription**, select your sandbox account.
-
-1. For **Resource group**, select your sandbox resource group.
-
-1. Fill in the **Storage account name** field with a name for your storage account. This name must be globally unique, only lowercase letters and numbers, and a length between 3 and 24 characters.
-
-1. Select the **Location** closest to your geographical location.
-
-1. Don't change the other field defaults.
-
-1. Select **OK**.
-
-## Task 2: Enable diagnostics
+## Task 1: Enable diagnostics
 
 In this task, you configure Monitor device connect/disconnect data that is stored in the storage account that you set up in task 1.
 
@@ -57,13 +31,13 @@ In this task, you configure Monitor device connect/disconnect data that is store
 
 1. Under **Destination details**, click **Archive to a storage account**.
 
-    More fields are made available once you select this destination option, including the option to specify **Retention (days)** for the log categories.
+    More fields are made available once you select this destination option.
 
-1. For the **Subscription** field, ensure that the subscription you used to create your IoT hub is selected.
+1. For the **Subscription** field, select the <rgn>[sandbox resource group name]</rgn> resource group.
 
-1. For the **Storage account** field, ensure that the storage account that you created in Task 1 is selected.
+1. For the **Storage account** field, select the storage account name that is provided. Make a note of this name. The name should consist of a long sequence of letters and numbers. You will need to select this name from a list in Exercise - Review Metrics, Alerts and Archive. After you've created the diagnostic setting, a storage container is created in the storage account as soon as an event occurs in one of the enabled log categories.
 
-1. Under **Categories**, click **Connections**, and then click **DeviceTelemetry**.
+1. Under **Categories**, click **Connections** and **DeviceTelemetry**.
 
 1. At the top of the **Diagnostics settings** blade, click **Save**.
 

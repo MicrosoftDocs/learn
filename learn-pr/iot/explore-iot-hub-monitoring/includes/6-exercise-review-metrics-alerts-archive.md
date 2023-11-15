@@ -70,7 +70,9 @@ Earlier in this lab, you set up your diagnostic logs to be exported to blob stor
 
 1. Navigate to your Dashboard.
 
-1. In the list of resources, select the Storage Account that you created earlier.
+1. Click **Storage Account**.
+
+1. Select the Monitor Storage Account that you noted earlier. You may need to search for the storage account in the list.
 
 1. The **Essentials** and **Properties** of the storage account are displayed.
 
@@ -86,30 +88,26 @@ Earlier in this lab, you set up your diagnostic logs to be exported to blob stor
 
 1. In the **Storage Browser** blade, expand the **Blob containers** node.
 
-    When Azure Monitor first sends data to a storage account, it creates a container called **insights-logs-connection**.
+    When Azure Monitor first sends data to a storage account, it creates a container called **insights-logs-connections**.
 
 1. Under **Blob containers**, click **insights-logs-connection**.
 
-    To view the logged data, you need to navigate down a hierarchy of folders. The first folder is named for the IoT Hub.
+    To view the logged data, you need to navigate down a hierarchy of folders.
 
     > [!NOTE]
     > If no data is displayed, click **Refresh**. You may need to wait a minute or two and then refresh again.
 
-1. In the right-hand pane, select the name of your IoT hub, and then navigate down into the folder hierarchy.
+1. In the right-hand pane, select **insights-logs-connections**, and then navigate down into the folder hierarchy.
 
-    Under your IoT hub folder, you see folders for the partition, then numeric values for the year, month, and day. The final folder represents the hour, listed in UTC time. The hour folder contains several block blobs that contain your logging message data.
+    After you navigate down to your IoT hub folder, as you navigate down you see numeric values for the year, month, day, and hour. The final folder represents the minute. The minute folder contains a blob file that contain your monitor logging data.
 
-1. Locate the block blob for the data with the earliest time stamp.
+1. Click the json file name.
 
-    The .avro files use a naming pattern of **{num}.avro** (that is, **22.avro**).
-
-1. Select **...** next to the block blob with the earliest time stamp, then select **Download** from the Context menu.
+1. On the Overview page, click **Download**.
 
 1. Open Windows **File Explorer** and navigate to your **Downloads** folder.
 
-1. Right-click the .avro file, then select **Open with**, then select **Visual Studio Code**.
-
-1. In the Visual Studio Code window, select **Open Anyway**, then open the file in the Visual Studio text editor.
+1. Right-click the .json file, then select **Open with**, then select **Visual Studio Code**.
 
 1. To make the JSON easier to read, press **Shift+Alt+F** or select **Format Document** from the Context Menu.
 
@@ -139,6 +137,8 @@ Earlier in this lab, you set up your diagnostic logs to be exported to blob stor
     ```
 
     Notice that each individual entry is a single JSON record, although the overall document is not a valid JSON document as the JSON objects are not declared within a JSON array **[ ]** and comma separated. Within each record you can see details relating to the originating IoT Hub and **properties** for each event. Within the **properties** object, you can see the connecting (or disconnecting) **deviceId**.
+
+1. Optionally, review the **insights-logs-devicetelemetry** blob container. Navigate and down and review the json data as you did with insights-logs-connections.
 
 ## Task 4: Review resolved Alert
 
