@@ -6,7 +6,7 @@ This module describes the high-level steps required to plan your deployment of D
 
 Suppose you work for a car manufacturer with offices and production sites across the globe. You're tasked with implementing a system to monitor traffic and secure your manufacturing automation systems, from the access panels to the pneumatic and packaging systems. To take the organization's operational technology security visibility to the next level, your team chooses to use Microsoft Defender for IoT.
 
-You need to create a deployment plan so that your organization can monitor traffic from various systems, across several sites in different geographic areas around the world. You’ll need to decide on how you’re going to connect your network sensors to the cloud, and what users and user roles assignment to provision.
+You need to create a deployment plan so that your organization can monitor traffic from various systems, across several sites in different geographic areas around the world. You’ll need to decide on how you’re going to connect your network sensors to the cloud, and what users and user role assignments to provision.
 
 ## What will we be doing?
 

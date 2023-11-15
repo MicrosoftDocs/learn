@@ -38,7 +38,7 @@ quiz:
       explanation: "Sites are divided into zones. One site could have one zone but it can't be shared across two sites."
     - content: "2"
       isCorrect: false
-      explanation: "Site 1 can have one zone. However, Site 2 shouldn't have one zone or devices with recurring IP addresses can be consolidated incorrectly in the device inventory."
+      explanation: "Site 1 can have one zone. However, if Site 2 has one zone, devices with recurring IP addresses can be consolidated incorrectly in the device inventory."
     - content: "3"
       isCorrect: true
       explanation: "Site 1 can have one zone. Site 2 should be separated into two zones. That way devices in the segments with recurring IP addresses can consolidate correctly, and are identified as separate and unique devices in the device inventory."

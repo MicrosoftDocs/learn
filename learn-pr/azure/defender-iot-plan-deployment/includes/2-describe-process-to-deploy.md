@@ -1,5 +1,5 @@
 
- To deploy Defender for IoT for OT monitoring in your car manufacturer across global locations requires planning. You'll want to consider what traffic to monitor across various systems and sites in your organization. Sites could include offices responsible for design and plants with pneumatic  and packaging systems. Also, you'll want to know the teams and roles to involve in the different phases of deployment.
+ To deploy Defender for IoT for OT monitoring in your car manufacturer across global locations requires planning. You'll want to consider what traffic to monitor across various systems and sites in your organization. Sites could include offices responsible for design and plants with pneumatic  and packaging systems. Also, you'll want to know the teams and roles to involve in the different phases of deployment. This module describes the process to deploy Defender for IoT.
 
 ## Defender for IoT for OT deployment path
 
@@ -44,7 +44,7 @@ While planning for your organization, prepare the following items:
 
     Choose a traffic mirroring method for each OT sensor, such as a SPAN port or TAP.
 
-- **Appliances**: Given the OT sensors needed, what appliances profiles are needed? What preconfigured appliances and what ancillary hardware do you need? Prepare a deployment workstation and any hardware or virtual machines for your deployment.
+- **Appliances**: Given the OT sensors needed, what profiles are needed for your appliances? What preconfigured appliances and what ancillary hardware do you need? Prepare a deployment workstation and any hardware or virtual machines for your deployment.
 
     Order any preconfigured appliances and hardware that you intend to use.
 
