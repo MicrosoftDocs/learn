@@ -28994,6 +28994,11 @@
       "source_path": "learn-pr/aspnetcore/microservices-resiliency-aspnet-core/6-implement-linkerd-resiliency.yml",
       "redirect_url": "/training/modules/microservices-resiliency-aspnet-core",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/explore-fundamentals-of-knowledge-mining/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/document-intelligence-knowledge-mining/",
+      "redirect_document_id": false
     }
   ]
 }
