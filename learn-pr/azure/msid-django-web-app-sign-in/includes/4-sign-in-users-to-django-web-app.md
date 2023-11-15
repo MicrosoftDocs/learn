@@ -1,4 +1,4 @@
-Users need to authenticate whenever they're accessing protected resources. In our scenario, the bank requires customers to sign in before they can access information. The bank uses Django as its web app development framework. In this unit, you learn how to sign in users to a Django web app that's registered in a Microsoft Entra tenant.
+Users need to authenticate whenever they access protected resources. In our scenario, the bank requires customers to sign in before they can access information. The bank uses Django as its web app development framework. In this unit, you learn how to sign in users to a Django web app that's registered in a Microsoft Entra tenant.
 
 ## OAuth 2.0 authorization code flow
 
