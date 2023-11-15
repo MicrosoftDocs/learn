@@ -10,7 +10,7 @@ A VPN gateway is a type of Virtual Network Gateway. VPN gateways are deployed in
 - Connect individual devices to Azure virtual networks through a *point-to-site* connection.
 - Connect Azure virtual networks to other Azure virtual networks through a *network-to-network* connection.
 
-![Visualization of a VPN connection to Azure.](../media/2-vpngateway-site-to-site-connection-diagram.svg)
+:::image type="content" source="../media/2-vpngateway-site-to-site-connection-diagram.svg" alt-text="Diagram visualization of a VPN connection to Azure.":::
 
 All transferred data is encrypted in a private tunnel as it crosses the internet. You can deploy only one VPN gateway in each virtual network, but you can use one gateway to connect to multiple locations, including other Azure virtual networks or on-premises datacenters.
 

@@ -12,6 +12,9 @@ After you complete this exercise, you'll have a general understanding of the pro
 
 This application uses [CodeTour](https://github.com/microsoft/codetour), a Visual Studio Code extension to walk you through a guided tour of the codebase. Here, you walk through the codebase and orient yourself to the application that you're working on through this project.
 
+> [!IMPORTANT]
+> This code tour is only available in the `start` branch of the repository. If you don't see the tour commands or files, please validate that you are using the correct branch.
+
 1. Open the **Command Palette**, search for the **CodeTour** commands, and then select **CodeTour: Start Tour**.
 
     :::image type="content" source="../media/start-codetour-command-palette.png" alt-text="Screenshot of the Command Palette option to start the primary guided tour of the codebase.":::

@@ -1,7 +1,4 @@
-
-
-
-As you develop applications, you may find yourself writing code to do the same thing over and over again. Instead of writing duplicate code, using a method to perform the same task shortens your code and helps you develop applications faster. In this exercise, you'll identify repeated code and replace it with a reusable method. Let's get started!
+As you develop applications, you might find yourself writing code to do the same thing over and over again. Instead of writing duplicate code, using a method to perform the same task shortens your code and helps you develop applications faster. In this exercise, you'll identify repeated code and replace it with a reusable method. Let's get started!
 
 ### Identify duplicated code
 
@@ -105,7 +102,7 @@ In this task, you'll take a look at an application that tracks medication times 
 
     There are two `foreach` loops that format and display the medicine times. There are another two  `for` loops that adjust the times according to the time zone difference. 
 
-    As you write code, you may find yourself repeating blocks of code to do the same task. That's a perfect opportunity to consolidate your code by using a method to perform the task instead. Let's practice!
+    As you write code, you might find yourself repeating blocks of code to do the same task. That's a perfect opportunity to consolidate your code by using a method to perform the task instead. Let's practice!
 
 ### Create methods to perform the repeated tasks
 

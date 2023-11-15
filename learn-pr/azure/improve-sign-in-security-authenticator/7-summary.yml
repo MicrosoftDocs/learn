@@ -8,8 +8,7 @@ metadata:
   ms.date: 7/27/2022
   author: Justinha
   ms.author: Justinha
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
