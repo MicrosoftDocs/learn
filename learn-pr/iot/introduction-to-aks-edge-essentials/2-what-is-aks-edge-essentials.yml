@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-to-aks-edge-essentials.what-is-aks-edge-essentials
-title: What is AKS Edge Essentials
+title: What is AKS Edge Essentials?
 metadata:
-  title: What is AKS Edge Essentials
-  description: This content is a part of Introduction to Azure Kubernetes Service (AKS) Edge Essential
+  title: What is AKS Edge Essentials?
+  description: This content is a part of Introduction to Azure Kubernetes Service (AKS) Edge Essentials.
   ms.date: 11/3/2023
   author: asergaz
   ms.author: sergaz

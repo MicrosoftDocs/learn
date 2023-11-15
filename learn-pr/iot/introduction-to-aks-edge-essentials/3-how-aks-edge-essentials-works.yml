@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-to-aks-edge-essentials.how-aks-edge-essentials-works
-title: How AKS Edge Essentials Works
+title: How AKS Edge Essentials works
 metadata:
-  title: How AKS Edge Essentials Works
-  description: This content is a part of Introduction to Azure Kubernetes Service (AKS) Edge Essential
+  title: How AKS Edge Essentials works
+  description: This content is a part of Introduction to Azure Kubernetes Service (AKS) Edge Essentials.
   ms.date: 11/3/2023
   author: asergaz
   ms.author: sergaz

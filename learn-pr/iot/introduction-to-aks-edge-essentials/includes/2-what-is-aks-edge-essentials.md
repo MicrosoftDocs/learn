@@ -2,7 +2,7 @@ AKS Edge Essentials is the lightest weight AKS hybrid solution available. It's d
 
 To maintain a small resource footprint with the most focused possible experience, AKS Edge Essentials is designed for running predefined AKS configurations in production. Each machine in an AKS Edge Essentials cluster can have one Linux and an optional Windows node. The Linux VM acts as the control node and worker node for Linux workloads in the Kubernetes cluster.
 
-:::image type="content" source="../media/2-aks-edge-essentials-light-edge-inline.png" alt-text="AKS solution spanning cloud-to-edge - Light Edge" lightbox="../media/2-aks-edge-essentials-light-edge-expanded.png":::
+:::image type="content" source="../media/2-aks-edge-essentials-light-edge-inline.png" alt-text="Diagram of AKS solution spanning cloud-to-edge - Light Edge" lightbox="../media/2-aks-edge-essentials-light-edge-expanded.png":::
 
 ### Microsoft-managed Kubernetes platform
 
