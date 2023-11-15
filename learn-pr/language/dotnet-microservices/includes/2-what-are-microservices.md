@@ -2,16 +2,16 @@ The cloud drives today's application development and IT systems management. Mode
 
 Using containers can help you deploy applications that meet all of those requirements. But putting an application into a container without following a strategic design pattern is like getting into a vehicle and hoping to find your way to a new city without using a map or GPS. You might end up at your destination, but the route probably won't be direct or the most efficient.
 
-This is where a microservices architecture comes in. Microservices give you an approach to software development and deployment that's perfectly suited to the agility, scalability, and reliability requirements of modern cloud applications.
+A microservices architecture is useful in this scenario Microservices give you an approach to software development and deployment that's perfectly suited to the agility, scalability, and reliability requirements of modern cloud applications.
 
 ## What is a microservices architecture?
 
 In a microservices architecture, a large application is split up into a set of smaller services. Each service runs in its own process and communicates with other processes by using protocols like HTTP/HTTPS, WebSocket, or Advanced Message Queuing Protocol (AMQP). Each microservice implements a specific, end-to-end domain or business capability within a certain context boundary. Each microservice must be developed autonomously and be independently deployable. Finally, each microservice should own its related domain data model and domain logic, and can be based on different data storage technologies (SQL, NoSQL) and different programming languages.
 
-These are some key characteristics of microservices:
+Here are some key characteristics of microservices:
 
 - They're small, independent, and loosely coupled.
-- Each microservice has a separate code base that can be managed by a small development team.
+- Each microservice has a separate code base that a small development team can manage.
 - They're deployed independently. A team can update an existing microservice without rebuilding and redeploying the entire application.
 - They persist their data or the external state in their respective databases. Unlike in a monolithic architecture, microservices don't share databases.
 - They communicate with each other by using well-defined APIs. Internal implementation details of each service are hidden from other services.
@@ -70,7 +70,7 @@ A container image is immutable. After you build an image, the image can't be cha
 
 A Dockerfile is a text file that contains instructions for how to build a Docker image. Dockerfiles are written in a minimal scripting language that's designed for building and configuring images. Dockerfiles also document the operations that are required to build an image, starting with a base image.
 
-To create a Docker image that contains your application, you typically begin by identifying a base image. Then you add more files and configuration to the base image. The process of identifying a suitable base image usually starts with a search on Docker Hub for a readymade image that already contains an application framework and all the utilities and tools of a Linux distribution like Ubuntu or Alpine. For example, if you have an ASP.NET application that you want to package into a container, Microsoft publishes an image called *mcr.microsoft.com/dotnet/aspnet* that already contains the ASP.NET runtime.
+To create a Docker image that contains your application, you typically begin by identifying a base image. Then you add more files and configuration to the base image. The process of identifying a suitable base image usually starts with a search on Docker Hub for a ready-made image that already contains an application framework and all the utilities and tools of a Linux distribution like Ubuntu or Alpine. For example, if you have an ASP.NET application that you want to package into a container, Microsoft publishes an image called *mcr.microsoft.com/dotnet/aspnet* that already contains the ASP.NET runtime.
 
 You can customize an image by starting a container by using the base image and then making changes to it. Changes usually involve activities like copying files into the container from the local file system and running various tools and utilities to compile code.
 

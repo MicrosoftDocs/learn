@@ -9,7 +9,7 @@ Start by creating a new GitHub codespace that hosts the exercise.
 
 You can set up a [preconfigured GitHub codespace](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-docker%2Fdevcontainer.json).
 
-GitHub takes several minutes to create and configure the codespace. When it's finished, you'll see the code files for the exercise. The code that's used for the remainder of this module is in the */dotnet-docker* directory.
+GitHub takes several minutes to create and configure the codespace. When it's finished, you see the code files for the exercise. The code that's used for the remainder of this module is in the */dotnet-docker* directory.
 
 ## Edit the Dockerfile to configure the Products back end
 
