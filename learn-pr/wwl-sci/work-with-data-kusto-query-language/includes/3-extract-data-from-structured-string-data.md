@@ -23,11 +23,11 @@ The query example below shows the use of Dynamic fields with the SigninLogs tabl
 // Example query for SigninLogs showing how to break out packed fields.
 
 SigninLogs 
-    | extend OS = DeviceDetail.operatingSystem, Browser = DeviceDetail.browser 
-    | extend StatusCode = tostring(Status.errorCode), StatusDetails = tostring(Status.additionalDetails) 
-    | extend Date = startofday(TimeGenerated) 
-    | summarize count() by Date, Identity, UserDisplayName, UserPrincipalName, IPAddress, ResultType, ResultDescription, StatusCode, StatusDetails 
-    | sort by Date
+| extend OS = DeviceDetail.operatingSystem, Browser = DeviceDetail.browser 
+| extend StatusCode = tostring(Status.errorCode), StatusDetails = tostring(Status.additionalDetails) 
+| extend Date = startofday(TimeGenerated) 
+| summarize count() by Date, Identity, UserDisplayName, UserPrincipalName, IPAddress, ResultType, ResultDescription, StatusCode, StatusDetails 
+| sort by Date
 
 ```
 
