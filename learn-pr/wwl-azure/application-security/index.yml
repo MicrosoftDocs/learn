@@ -28,7 +28,6 @@ products:
 - azure-app-configuration
 - azure-app-service
 - ms-graph
-- microsoft-graph-permissions-api
 subjects:
 - cloud-security
 units:

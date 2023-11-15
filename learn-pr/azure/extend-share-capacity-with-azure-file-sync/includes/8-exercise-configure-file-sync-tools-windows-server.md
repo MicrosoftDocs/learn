@@ -1,6 +1,6 @@
-After you have all the Azure resources deployed, you need to register your on-premises Windows file server with the sync group. Then you'll connect to your Windows Server computer and install the Azure File Sync agent. After your server is registered, you'll add it as a server endpoint in your Azure subscription.
+After you have all the Azure resources deployed, you need to register your on-premises Windows file server with the sync group. Then connect to your Windows Server computer and install the Azure File Sync agent. After your server is registered, you'll add it as a server endpoint in your Azure subscription.
 
-In this exercise, you'll change the security setting so it allows you to download the Azure File Sync agent. You'll then install and run the agent to register the server with the Azure sync group.
+In this exercise, you change the security setting so it allows you to download the Azure File Sync agent. You then install and run the agent to register the server with the Azure sync group.
 
 The following video shows you how set up your on-premises server to work with Azure File Sync. Complete the steps in this exercise to continue following along in your Azure subscription.
 
@@ -74,7 +74,7 @@ The following video shows you how set up your on-premises server to work with Az
 
 1. On your local computer, sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Go to the CADFiles sync group you created earlier by going to **Storage Sync Services** > **CADSyncService** > **CADFiles**. Your **CADFiles** pane for your *Sync group* appears.
+1. Go to the CADFiles sync group you created earlier by going to **Storage Sync Services** > **CADSyncService** > **Sync groups** > **CADFiles**. Your **CADFiles** pane for your *Sync group* appears.
 
 1. Select **+ Add server endpoint**.
 
