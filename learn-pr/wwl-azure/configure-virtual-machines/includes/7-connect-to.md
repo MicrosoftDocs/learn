@@ -9,7 +9,7 @@ The Azure Bastion service is a fully platform-managed PaaS service. Azure Bastio
 <iframe width="854" height="480" src="https://www.youtube.com/embed/epWKTGGa_wY" title="How to use Azure Bastion to access virtual machines | Azure Tips and Tricks" frameborder="0" allowfullscreen></iframe>
 <br>
 
-Azure Bastion provides secure RDP and SSH connectivity to all virtual machines in the virtual network in which it's provisioned. Azure Bastion protects your virtual machines from exposing RDP/SSH ports to the outside world while still providing secure access with RDP/SSH. Azure Bastion lets you connect to the virtual machine directly from the Azure portal. You aren't a client, agent, or another piece of software.
+Azure Bastion provides secure RDP and SSH connectivity to all virtual machines in the virtual network. Azure Bastion protects your virtual machines from exposing RDP/SSH ports to the outside world while still providing secure access with RDP/SSH. Azure Bastion lets you connect to the virtual machine directly from the Azure portal. You aren't a client, agent, or another piece of software.
 
 ### Things to know about connecting Windows-based virtual machines
 

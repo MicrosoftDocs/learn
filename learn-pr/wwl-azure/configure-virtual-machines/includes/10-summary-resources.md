@@ -9,7 +9,7 @@ The main takeaways from this module are:
 
 ## Learn more with documentation
 
-- [Azure Virtual Machines documentation](/azure/virtual-machines/). This is your starting point for all things Azure virtual machines. 
+- [Azure Virtual Machines documentation](/azure/virtual-machines/). This article is your starting point for all things Azure virtual machines. 
 
 - [Virtual machine selector](https://azure.microsoft.com/pricing/vm-selector/). This tool helps you find the virtual machines for your needs and budget. 
 
