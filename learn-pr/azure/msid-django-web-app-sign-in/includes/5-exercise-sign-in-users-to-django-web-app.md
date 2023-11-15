@@ -4,7 +4,7 @@ In this exercise, you sign in users to your Django banking app. The users will p
 
 ## Create routes
 
-The *aad.config.json* configuration file defines some authentication endpoints that your Django web app uses. These endpoints are registered as `msal_urls`.
+The *aad.config.json* configuration file defines some authentication endpoints that your Django web app will use. These endpoints are registered as `msal_urls`.
 
 In addition to these endpoints, you define `sign_in_status` and `token_details` endpoints for testing purposes. The `sign_in_status` endpoint displays whether the user is signed in or not. The `token_details` endpoint displays details of the ID token.
 
@@ -265,10 +265,10 @@ To check whether your app is working well, run the following commands in the roo
 
 Go to `http://localhost:8000`. A page that says you're not signed in should appear.
 
-:::image type="content" source="../media/05-sign-in-user.png" alt-text="Screenshot of a web app sign-in page.":::
+![Screenshot of a web app sign-in page.](../media/05-sign-in-user.png)
 
 Select the sign-in button and enter your username (the test user that you created) and password. On successful sign-in, a page that says you're signed in as a test user should appear.
 
-:::image type="content" source="../media/05-succesfully-signed-in.png" alt-text="Screenshot of a web app after successful sign-in.":::
+![Screenshot of a web app after successful sign-in.](../media/05-succesfully-signed-in.png)
 
 To view the ID token details, select the **ID Token Details** button.
