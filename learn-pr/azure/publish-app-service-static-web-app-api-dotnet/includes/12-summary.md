@@ -6,7 +6,7 @@ Azure Static Web Apps provides these features as a great fit for this scenario:
 - Productivity: You get an automated build pipeline with CI/CD.
 - Security: Your web app is secured with an SSL certificate.
 
-_Without_ Azure Static Web Apps, you would need to:
+*Without* Azure Static Web Apps, you would need to:
 
 - Deploy your web assets to cloud storage.
 - Create and assign your own SSL certificate.
@@ -17,7 +17,7 @@ _Without_ Azure Static Web Apps, you would need to:
 
 Taking advantage of Azure Static Web Apps provides all these benefits. It enables you to spend your valuable time building new features and optimizing the user experience, rather than creating and maintaining site infrastructure.
 
-## Additional resources
+## Learn more
 
 Here are several resources where you can learn more about Azure Static Web Apps, Visual Studio Code, and other concepts covered in this module.
 

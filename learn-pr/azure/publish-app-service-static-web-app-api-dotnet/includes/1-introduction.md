@@ -1,6 +1,6 @@
 Your company is launching a shopping list web app. Through the site, customers can add, edit, view, and remove items from their list.
 
-As you build the app, your first concerns are that your app and API are hosted securely, are globally available, and are published automatically. Rather than build up a web server to handle all these concerns, you decide to use a hosting solution that serves your assets and API easily, without much setup or configuration.
+As you build the app, your first concerns are that your app and API are hosted securely, are globally available, and are published automatically. Rather than set up and configure a web server to handle these concerns, you decide to use a hosting solution that serves your assets and API easily, without much setup or configuration.
 
 ## What is Azure Static Web Apps?
 

@@ -28,15 +28,13 @@ The **Output location** is a relative path to the publish directory of your appl
 
 Your GitHub repo contains source code, not static assets, so it needs to be built before it can be published.
 
-When you create a Static Web Apps instance, Azure creates a GitHub Actions workflow in your repository. Every time you push changes or create a pull request against the branch you release from, the workflow builds your app, turning your source code into static assets that are served by Azure. After the build is complete, the action deploys the assets.
+When you create a Static Web Apps instance, Azure creates a GitHub Actions workflow in your repository. Every time you push changes or create a pull request against the branch you release from, the workflow builds your app. This process turns your source code into static assets that Azure serves. After the build is complete, the action deploys the assets.
 
 The GitHub Action is added to your repository in the *.github/workflows* folder. You can review or modify this file as needed. The settings you enter when you create the resource are stored in the GitHub Action's file.
 
 ### Integrated API with Azure Functions
 
-If your app requires an API, you can implement it as an Azure Functions project in your repository, and it's automatically deployed and hosted by your Static Web Apps instance. The GitHub Actions workflow that builds and deploys your app, locates the API within your repo using the name of the folder you specify.
-
-Typically, you name the project for your API with `Api` in it, and as such, you need to ensure it's set to the *API location* for the workflow file.
+If your app requires an API, you can implement it as an Azure Functions project in your repository, and your Static Web Apps instance automatically deploys and hosts it. The GitHub Actions workflow that builds and deploys your app, locates the API within your repo using the name of the folder you specified in the *API location* path.
 
 What if you don't have an API? Don't worry. If Azure Static Web Apps can't find an API in the folder you indicate, it doesn't publish an API, but it still publishes your app.
 

@@ -2,7 +2,7 @@ In this exercise, you create an Azure Static Web Apps instance including a GitHu
 
 ## Create a Static Web App
 
-Now that you've created your GitHub repository, you can create a Static Web Apps instance from the Azure portal.
+Now that you created your GitHub repository, you can create a Static Web Apps instance from the Azure portal.
 
 This module uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure that you activate the sandbox at the top of this page.
 
@@ -69,9 +69,9 @@ Select the *URL* link in the Azure portal to visit your app in the browser.
 
 :::image type="content" source="../media/static-web-apps-resource-overview.png" alt-text="Screenshot of the Azure Static Web Apps overview page.":::
 
-Your app is now globally available, but it's still stuck at *Loading data* because there's no data or API yet. You'll add the API for your web app in the next section.
+Your app is now globally available, but still says *Loading data* because there's no data or API yet. You'll add the API for your web app in the next section.
 
-Congratulations! You've deployed your first app to Azure Static Web Apps!
+Congratulations! You deployed your first app to Azure Static Web Apps!
 
 > [!NOTE]
 > Don't worry if you see a web page that says the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action runs automatically when the Azure Static Web Apps is created. So if you see the splash page, the app is still being deployed.
