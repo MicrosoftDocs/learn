@@ -32,5 +32,6 @@ products:
 modules:
 - learn.wwl.get-started-kusto-fabric
 - learn.wwl.explore-event-streams-microsoft-fabric
+- learn.wwl.query-data-kql-database-microsoft-fabric
 trophy:
   uid: learn.wwl.explore-real-time-analytics-microsoft-fabric.trophy
