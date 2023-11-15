@@ -11,7 +11,7 @@ metadata:
   author: seesharprun
   ms.author: sidandrews
   manager: jroth
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.date: 11/01/2023
   ms.service: cosmos-db
 title: Guided project - Build a .NET app with Azure Cosmos DB for NoSQL
