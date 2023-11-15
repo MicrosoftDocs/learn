@@ -21,10 +21,10 @@ quiz:
     choices:
     - content: "The resource dictionary makes it easy for a style to target particular UI controls."
       isCorrect: false
-      explanation: "This is incorrect. You use the `TargetType` property to target particular UI control types."
+      explanation: "Incorrect. You use the `TargetType` property to target particular UI control types."
     - content: "A resource dictionary makes it easy to use the style across multiple controls on the same page."
       isCorrect: true
       explanation: "Correct. You can access the values easily by referring to the resource dictionary's key."
     - content: "Having a style within a resource dictionary is the only way it can inherit from a style."
       isCorrect: false
-      explanation: "This is not correct. A style can inherit from another by using the `BasedOn` property."
+      explanation: "Incorrect. A style can inherit from another by using the `BasedOn` property."

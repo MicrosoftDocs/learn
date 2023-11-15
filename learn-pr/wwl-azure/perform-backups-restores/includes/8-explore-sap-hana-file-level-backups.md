@@ -1,8 +1,6 @@
-
-
 ## SAP HANA backup with the Azure Backup service
 
-The backups (log and non-log) in SAP HANA Azure VMs provided via Backint are streams to Azure Recovery Services vaults (which internally use Azure Storage Blob) and so it is important to understand this streaming methodology.
+The backups (log and non-log) in SAP HANA Azure VMs provided via Backint are streams to Azure Recovery Services vaults (which internally use Azure Storage Blob) and so it's important to understand this streaming methodology.
 
 The Backint component of HANA provides the 'pipes' (a pipe to read from and a pipe to write into), connected to underlying disks where database files reside, which are then read by the Azure Backup service and transported to Azure Recovery Services vault, which is a remote Azure Storage Account. The Azure Backup service also performs a checksum to validate the streams, in addition to the Backint native validation checks. These validations will make sure that the data present in Azure Recovery Services vault is indeed reliable and recoverable.
 
@@ -14,11 +12,11 @@ Without using Azure Backup service, the standard way to manage backup/restore at
 
 While this choice sounds straightforward, there are some considerations. An Azure VM has a limitation on number of data disks. There might not be capacity to store SAP HANA backup files on the file systems of the VM, depending on the size of the database and disk throughput requirements. Remediating this might require software striping across multiple data disks. Another option, which offers more freedom regarding total capacity, is Azure blob storage. In addition, this option gives customers the choice to select cool blob storage, which has a cost benefit.
 
-For additional resiliency, you can use a geo-replicated storage account to store the SAP HANA backups. One could place dedicated VHDs for SAP HANA backups in a dedicated backup storage account that is geo-replicated. Or else one could copy the VHDs that keep the SAP HANA backups to a geo-replicated storage account, or to a storage account that is in a different region.
+For additional resiliency, you can use a geo-replicated storage account to store the SAP HANA backups. One could place dedicated VHDs for SAP HANA backups in a dedicated backup storage account that's geo-replicated. Or else one could copy the VHDs that keep the SAP HANA backups to a geo-replicated storage account, or to a storage account that's in a different region.
 
 ### Azure Backup agent
 
-Azure Backup offers the option to not only back up complete VMs but also files and directories via the backup agent, which has to be installed on the guest OS. But this agent is only supported on Windows. A workaround is to first copy SAP HANA backup files to a Windows VM on Azure (for example, via SAMBA share) and then use the Azure backup agent from there. While it is technically possible, it would add complexity and slow down the backup or restore process quite a bit due to the copy between the Linux and the Windows VM. It is not recommended to follow this approach.
+Azure Backup offers the option to not only back up complete VMs but also files and directories via the backup agent, which has to be installed on the guest OS. But this agent is only supported on Windows. A workaround is to first copy SAP HANA backup files to a Windows VM on Azure (for example, via SAMBA share) and then use the Azure backup agent from there. While it's technically possible, it would add complexity and slow down the backup or restore process quite a bit due to the copy between the Linux and the Windows VM. It isn't recommended to follow this approach.
 
 ### Azure Storage utilities
 
@@ -32,8 +30,8 @@ As the copy affects only the dedicated file system for keeping the backup files,
 
 ### Copy SAP HANA backup files to NFS share
 
-To lessen the potential effect on the SAP HANA system from a performance or disk space perspective, one might consider storing the SAP HANA backup files on an NFS share. Technically it works, but traditionally this required using a second Azure VM as the host of the NFS share. This can be avoided by using Azure NetApp Files. Writing on an NFS share puts a load on the network and affects to some extent the SAP HANA system, but there is no subsequent effect related to managing the backup files.
+To lessen the potential effect on the SAP HANA system from a performance or disk space perspective, one might consider storing the SAP HANA backup files on an NFS share. Technically it works, but traditionally this required using a second Azure VM as the host of the NFS share. This can be avoided by using Azure NetApp Files. Writing on an NFS share puts a load on the network and affects to some extent the SAP HANA system, but there's no subsequent effect related to managing the backup files.
 
 ### Copy SAP HANA backup files to Azure Files
 
-It is possible to mount an Azure Files share inside an Azure Linux VM. Tests have shown, however, that SAP HANA backup doesn't currently work directly with this kind of CIFS mount. It is also stated in [SAP Note \#1820529](https://launchpad.support.sap.com/#/notes/1820529) that CIFS is not recommended.
+It is possible to mount an Azure Files share inside an Azure Linux VM. Tests have shown, however, that SAP HANA backup doesn't currently work directly with this kind of CIFS mount. It's also stated in [SAP Note \#1820529](https://me.sap.com/notes/1820529) that CIFS is not recommended.
