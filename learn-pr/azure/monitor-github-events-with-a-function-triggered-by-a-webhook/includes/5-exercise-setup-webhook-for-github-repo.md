@@ -1,4 +1,4 @@
-In this exercise, you'll set up a webhook for a GitHub repository. You'll learn how to listen for specific events (in this case, the *Gollum* event), and how to make your webhook callback to your function when the event is triggered.
+In this exercise, you'll set up a webhook for a GitHub repository. You'll learn how to listen for specific events (in this case, the *Gollum* event), and how to make the webhook callback in your function when the event is triggered.
 
 ## Setup
 
@@ -30,13 +30,13 @@ In this exercise, you'll set up a webhook for a GitHub repository. You'll learn 
 
 1. In the **Settings** sidebar, select **Webhooks**. The **Webhooks** pane appears.
 
-1. On the top right, select **Add webhook**. GitHub may ask you to confirm your password for GitHub.
+1. On the top right, select **Add webhook**. GitHub might ask you to confirm your password for GitHub.
 
 1. On the **Webhooks/ Add webhook** pane, enter the following values for each setting.
 
     | Setting  | Value |
     | ---------------- |
-    | Payload URL  | URL for your Azure function app from the previous exercise. For help see the following note. |
+    | Payload URL  | URL for your Azure function app from the previous exercise. For help, see the following note. |
     | Content type | From the dropdown list, select **application/json**. |
     | Which events would you like to trigger this webhook?| Select **Let me select individual events.** In the event list that appears, scroll down and select the **Wiki** checkbox. Make sure no other checkboxes are selected. |
     | Active  | Checked.|
@@ -68,7 +68,7 @@ In this exercise, you'll set up a webhook for a GitHub repository. You'll learn 
 
 1. Select **Edit**. The **Webhooks/Manage webhook** pane appears.
 
-1. Select the **Recent Deliveries** tab (you may need to scroll to the bottom of the page).
+1. Select the **Recent Deliveries** tab (you might need to scroll to the bottom of the page).
 
 1. In the list, select the top (latest) delivery entry by selecting the ellipsis (**...**).
 
