@@ -110,7 +110,7 @@ When you created the group enrollment in DPS, you set the initial twin configura
 
 1. Notice that the application has been notified of the updated device twin **telemetryDelay** desired property setting.
 
-   The application outputs messages to the Console that show that the new device twin desired properties have been loaded, and that the changes have been set and reported back to the Azure IoT hub.
+   The application outputs messages to the Console that show that the new device twin desired properties are loaded, and that the changes are set and reported back to the Azure IoT hub.
 
    ```text
    Desired Twin Property Changed:

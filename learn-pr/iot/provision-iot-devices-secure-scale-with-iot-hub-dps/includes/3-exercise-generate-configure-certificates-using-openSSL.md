@@ -29,7 +29,7 @@ In this section, you generate an X.509 CA certificate using OpenSSL. This certif
    chmod 700 certGen.sh
    ```
 
-   The helper script and supporting files are hosted in the **Azure/azure-iot-sdk-c** open source project hosted on GitHub, which is a component of the Azure IoT Device SDK. The **certGen.sh** helper script will provide you with a chance to see how CA certificates are used without diving too deeply into the specifics of OpenSSL configuration (which is outside the scope of this module).
+   The helper script and supporting files are hosted in the **Azure/azure-iot-sdk-c** open source project hosted on GitHub, which is a component of the Azure IoT Device SDK. The **certGen.sh** helper script provides you with a chance to see how CA certificates are used without diving too deeply into the specifics of OpenSSL configuration (which is outside the scope of this module).
 
    For more instructions on using this helper script, and for instructions on how to use PowerShell instead of Bash, see: [https://github.com/Azure/azure-iot-sdk-c/blob/master/tools/CACertificates/CACertificateOverview.md](https://github.com/Azure/azure-iot-sdk-c/blob/master/tools/CACertificates/CACertificateOverview.md)
 
@@ -54,7 +54,7 @@ In this section, you generate an X.509 CA certificate using OpenSSL. This certif
 
 ### Task 2: Create a group enrollment (X.509 certificate) in DPS
 
-1. In the Azure sandbox, upload your CA certificate to your Device Provisioning Service instance. The certificate name is `groupCA-sensors`. The `verified true` command parameter allows the certificate to be verified automatically on upload, bypassing the need for an additional step for certificate proof of possession generation.
+1. In the Azure sandbox, upload your CA certificate to your Device Provisioning Service instance. The certificate name is `groupCA-sensors`. The `verified true` command parameter allows the certificate to be verified automatically on upload, bypassing the need for an extra step for certificate proof of possession generation.
 
    ```azurecli
    az iot dps certificate create --dps-name dps-$suffix --certificate-name groupCA-sensors --path ~/certificates/certs/azure-iot-test-only.root.ca.cert.pem --verified true
@@ -74,7 +74,7 @@ In this section, you generate an X.509 CA certificate using OpenSSL. This certif
    | `--enrollment-id` | The name of the new enrollment group. |
    | `--root-ca-name` | Sets the attestation method for the enrollment group to be X.509 CA-signed certificates, and points to the CA certificate that you uploaded to DPS. |
    | `--iot-hubs` | Configures DPS to provision the devices in this enrollment group to the IoT hub that you created and linked to DPS at the beginning of this module. |
-   | `--initial-twin-properties` | Sets a desired property that all devices in this enrollment group will receive once they're provisioned. The devices will use the **properties.desired.telemetryDelay** property to set the time delay for reading and sending telemetry to IoT Hub. |
+   | `--initial-twin-properties` | Sets a desired property that all devices in this enrollment group receive once they're provisioned. The devices use the **properties.desired.telemetryDelay** property to set the time delay for reading and sending telemetry to IoT Hub. |
    | `allocation-policy` | Used to determine how a device is assigned to an IoT Hub. A static policy allows you to designate a single IoT hub that you want to assign devices to. |
 
 ## Check your work

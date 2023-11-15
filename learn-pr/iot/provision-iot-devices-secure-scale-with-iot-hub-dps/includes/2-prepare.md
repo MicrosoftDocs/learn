@@ -59,7 +59,7 @@ To complete this guided project, you need an IoT hub and a Device Provisioning S
    az iot dps linked-hub create --dps-name dps-$suffix --resource-group <rgn>[sandbox resource group name]</rgn> --connection-string $hubConnectionString
    ```
 
-1. Once the deployment has completed, open a text editor tool. Use the text editor to store configuration values associated with your Azure resources in case your sandbox times out after 20 minutes. In your text editor, save the following names and values to use in the next unit pages.
+1. Once the deployment is complete, open a text editor tool. Use the text editor to store configuration values associated with your Azure resources in case your sandbox times out after 20 minutes. In your text editor, save the following names and values to use in the next unit pages.
 
    | Name    | Value |
    | -------- | ------- |

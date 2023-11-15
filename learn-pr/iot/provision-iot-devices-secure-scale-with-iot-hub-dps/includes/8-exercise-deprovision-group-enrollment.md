@@ -1,4 +1,4 @@
-In this exercise you deprovision the full enrollment group, including disenrolling the enrollment from Device Provisioning Service (DPS) and deregistering the devices from IoT Hub.
+In this exercise, you deprovision the full enrollment group, including disenrolling the enrollment from Device Provisioning Service (DPS) and deregistering the devices from IoT Hub.
 
 ### Task 1: Disenroll the enrollment group from DPS
 
@@ -18,14 +18,14 @@ In this task, you disenroll your enrollment group from DPS, which disables the e
      az iot dps enrollment-group delete --dps-name dps-$suffix --enrollment-id enrollgroup-sensors
      ```
 
-If you run the sensor-thl-001 simulated device now, you will see an error message similar to what you saw with the disabled individual enrollment.
+If you run the sensor-thl-001 simulated device now, you'll see an error message similar to what you saw with the disabled individual enrollment.
 
 > [!NOTE]
 > If you delete an enrollment group for a certificate, devices that have the certificate in their certificate chain might still be able to enroll if a different, enabled enrollment group still exists for the root certificate or another intermediate certificate higher up in their certificate chain.
 
 ### Task 2: Deregister the devices from the IoT Hub
 
-Once the enrollment group has been removed from the Device Provisioning Service (DPS), the device registration still exists within Azure IoT Hub. To fully deprovision the devices, you need to remove that registration as well.
+Once the enrollment group is removed from the Device Provisioning Service (DPS), the device registration still exists within Azure IoT Hub. To fully deprovision the devices, you need to remove that registration as well.
 
 1. In the Azure sandbox, delete the device from your IoT hub device registry.
 

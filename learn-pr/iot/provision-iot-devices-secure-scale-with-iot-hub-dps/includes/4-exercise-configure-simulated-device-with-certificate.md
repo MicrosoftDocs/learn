@@ -16,7 +16,7 @@ In this exercise, you generate a device certificate using the root certificate, 
 
    This command creates a new device X.509 certificate .pem and .pfx pair that are signed by the CA certificate that was generated previously. Notice that the device ID (**sensor-thl-001**) is passed to the **create_device_certificate** command of the **certGen.sh** script. This device ID is set as the *common name*, or *CN=*, value of the device certificate. This command generates a leaf device X.509 certificate for your simulated device, which is used to authenticate the device with the Device Provisioning Service (DPS). This module uses the .pfx certificate file to validate the program that connects to DPS from your computer.
 
-   Once the **create_device_certificate** command has completed, the generated X.509 device certificate pair is named **new-device.cert.pfx** and **new-device.cert.pem** respectively, and is located within the **/certs** subdirectory.
+   Once the **create_device_certificate** command is complete, the generated X.509 device certificate pair is named **new-device.cert.pfx** and **new-device.cert.pem** respectively, and is located within the **/certs** subdirectory.
 
    > [!IMPORTANT]
    > This command overwrites any existing device certificate in the **/certs** subdirectory. If you want to create a certificate for multiple devices, ensure that you save a copy of **new-device.cert.pfx** and **new-device.cert.pem** each time you run the command.
@@ -343,7 +343,7 @@ In this task, you complete the following:
 
 1. Update the assigned value using the **DPS ID Scope** that you retrieved when you created the DPS instance.
 
-    When you have updated your code, it should look similar to the following:
+    When you update your code, it should look similar to the following:
 
     ```csharp
     private static string dpsIdScope = "0ne00000000";
