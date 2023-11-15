@@ -113,11 +113,11 @@ In this task, you set up various metrics to watch for when messages are sent to 
 
 ## Verify your work
 
-1. Navigate to the dashboard chosen above and verify the chart is displayed.
+1. Navigate to your dashboard and verify that the chart is displayed.
 
     > [!NOTE]
     > You can customize the size and position of the chart by using drag and drop operations.
 
-    If the device simulator is running, you should see that telemetry messages have been sent and the device is connected:
+1. If the device simulator is running, you should see that telemetry messages have been sent and the device is connected.
 
 Now that you have enabled logging and set up a chart to monitor metrics, it's a good time for you to set up an alert. You'll configure an alert in the next exercise.
