@@ -1,69 +1,89 @@
 Let's create the Azure virtual machine (VM) with Windows 11 Enterprise.
 
+<!-- TODO: Change all commands to Powershell! -->
+
 1. Execute the following command in the Azure Cloud Shell to set the variables for creating the Azure VM:
 
-    ```azurecli
-    resourcegroup=<rgn>[sandbox resource group name]</rgn>
-    location="westus3"
-    vmname="myVM"
-    username="azureuser"
-    let "randomIdentifier=$RANDOM*$RANDOM"
-    adminpassword="Admin-$randomIdentifier-Password!"
-    echo Admin Password: $adminpassword
+    ```powershell
+    $resourcegroup = <rgn>[sandbox resource group name]</rgn>
+    $location = "westus3"
+    $vmname = "myVM"
+    $username = "azureuser"
+    $randomIdentifier = Get-Random
+    $adminpassword = "Admin-$randomIdentifier-Password!"
+    $securedadminpassword = ConvertTo-SecureString $adminpassword -AsPlainText -Force
+    $credential = New-Object System.Management.Automation.PSCredential($username, $securedadminpassword)
+    Write-Output "Admin Password: $adminpassword"
     ```
 
     > [!NOTE]
     > Take a note of the `Admin Password`. You will need it later.
 
-1. Create the Azure VM with Windows 11 Enterprise using the [az vm create](/cli/azure/vm#az-vm-create) command.
+1. Create the Azure VM with Windows 11 Enterprise using the [New-AzVm](/powershell/module/az.compute/new-azvm) command.
 
-    ```azurecli
-    az vm create \
-        --resource-group $resourcegroup \
-        --name $vmname \
-        --image MicrosoftVisualStudio:windowsplustools:base-win11-gen2:latest \
-        --public-ip-sku Standard \
-        --admin-username $username \
-        --admin-password $adminpassword \
-        --size Standard_D2s_v3
+    ```powershell
+    $params = @{
+        ResourceGroupName = $resourcegroup
+        Location = $location
+        Name = $vmname
+        Image = "MicrosoftVisualStudio:windowsplustools:base-win11-gen2:latest"
+        VirtualNetworkName = 'myVnet'
+        SubnetName = 'mySubnet'
+        SecurityGroupName = 'myNetworkSecurityGroup'
+        PublicIpAddressName = 'myPublicIpAddress'
+        Credential = $credential
+        Size = 'Standard_D2s_v3'
+    }
+    New-AzVm @params
     ```
 
     It takes a few minutes to create the VM and supporting resources. The following example output shows the VM create operation was successful.
 
     ```output
-    {
-        "fqdns": "",
-        "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-rg-0000/providers/Microsoft.Compute/virtualMachines/myVM",
-        "location": "westus",
-        "macAddress": "00-00-00-00-00-00",
-        "powerState": "VM running",
-        "privateIpAddress": "10.0.0.4",
-        "publicIpAddress": "104.40.70.15",
-        "resourceGroup": "learn-rg-0000",
-        "zones": ""
-    }
+    ResourceGroupName        : learn-rg-0000                              
+    Id                       : /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-rg-0000/providers/Microsoft.Compute/virtualMachines/myVM            
+    VmId                     : 00000000-0000-0000-0000-000000000000                                    
+    Name                     : myVM                                                                    
+    Type                     : Microsoft.Compute/virtualMachines                                       
+    Location                 : westus3                                                                  
+    Tags                     : {}                                                                      
+    HardwareProfile          : {VmSize}                                                                
+    NetworkProfile           : {NetworkInterfaces}                                                     
+    OSProfile                : {ComputerName, AdminUsername, WindowsConfiguration, Secrets, AllowExtensionOperations RequireGuestProvisionSignal}                                             
+    ProvisioningState        : Succeeded                                                               
+    StorageProfile           : {ImageReference, OsDisk, DataDisks, DiskControllerType}                 
+    FullyQualifiedDomainName : myvm-000000.westus.cloudapp.azure.com                                   
+    TimeCreated              : 13/15/2023 2:33:56 PM    
     ```
 
-Now that the VM is created, let's prepare the machine for AKS Edge Essentials and run a PowerShell script by using [Run Command](/azure/virtual-machines/run-command-overview) and Azure CLI. Alternatively you could connect from your local machine via Remote Desktop Connection (RDP), download and run the PowerShell script there.
+Now that the VM is created, let's prepare the machine for AKS Edge Essentials and run a PowerShell script by using [Managed Run Commands](/azure/virtual-machines/windows/run-command-managed) in the Azure Cloud Shell. Alternatively you could connect from your local machine via Remote Desktop Connection (RDP), download and run the PowerShell script there.
 
 1. Execute the following command in the Azure Cloud Shell to create a `aksee` folder and navigate to it:
 
-    ```azurecli
-    mkdir ~/aksee
-    cd ~/aksee
+    ```powershell
+    New-Item -ItemType Directory -Path "$HOME\aksee"
+    Set-Location -Path "$HOME\aksee"
     ```
 
 <!-- TODO: Publish Script to main! -->
 1. Execute the following command in the Cloud Shell to download `AksEdgeQuickStartForLearn.ps1` in your `aksee` folder:
 
-    ```azurecli
-    wget https://raw.githubusercontent.com/asergaz/AKS-Edge/learnmodule/tools/scripts/AksEdgeQuickStart/AksEdgeQuickStartForLearn.ps1
+    ```powershell
+    Invoke-WebRequest -Uri "https://raw.githubusercontent.com/asergaz/AKS-Edge/learnmodule/tools/scripts/AksEdgeQuickStart/AksEdgeQuickStartForLearn.ps1" -OutFile "AksEdgeQuickStartForLearn.ps1"
     ```
 
-1. Run the Azure CLI [az vm run-command create](/cli/azure/vm/run-command#az-vm-run-command-create) command to deliver the Powershell script to the VM and execute it:
+1. Run the Powershell[Set-AzVMRunCommand](/powershell/module/az.compute/set-azvmruncommand) command to deliver the Powershell script to the VM and execute it:
 
-    ```azurecli
-    az vm run-command create --no-wait --name "deployAKSEE" --vm-name myVM --resource-group <rgn>[sandbox resource group name]</rgn> --script @AksEdgeQuickStartForLearn.ps1
+    ```powershell
+    $resourcegroup = <rgn>[sandbox resource group name]</rgn>
+    $location = "westus3"
+    $vmname = "myVM"
+    $scriptPath = "$HOME/aksee/AksEdgeQuickStartForLearn.ps1"
+    $parameters = @{
+        "WindowsNode" = $true
+    }
+
+    Set-AzVMRunCommand -ResourceGroupName $resourcegroup -VMName $vmname -Location $location -RunCommandName "deployAKSEE" -ScriptLocalPath $scriptPath -Parameter $parameters -NoWait
     ```
 
     > [!NOTE]
@@ -77,10 +97,14 @@ Now that the VM is created, let's prepare the machine for AKS Edge Essentials an
       - Installs required host OS features (`Install-AksEdgeHostFeatures`).
       - Deploys a single machine K3S cluster with a Linux and Windows node.
 
-1. Run the Azure CLI [az vm run-command show](/cli/azure/vm/run-command#az-vm-run-command-show) command to retrieve the output of the PowerShell script you executed in the VM:
+1. Run the Powershell [Get-AzVMRunCommand](/powershell/module/az.compute/get-azvmruncommand) command to retrieve the output of the PowerShell script you executed in the VM:
 
-    ```azurecli
-    az vm run-command show --name "deployAKSEE" --vm-name "myVM" --resource-group <rgn>[sandbox resource group name]</rgn> --instance-view | jq .instanceView.output | sed 's/\\n/\n/g'
+    ```powershell
+    $resourcegroup = <rgn>[sandbox resource group name]</rgn>
+    $vmname = "myVM"
+    $x = Get-AzVMRunCommand -ResourceGroupName $resourcegroup -VMName $vmname -RunCommandName "deployAKSEE" -Expand InstanceView
+
+    $x.InstanceView
     ```
 
     The following example output shows the download and installation of AKS Edge Essentials K3s distribution was successful:

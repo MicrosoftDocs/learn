@@ -2,7 +2,7 @@
 uid: learn.create-first-aks-edge-essentials.deploy-aks-edge-essentials
 title: Exercise - Deploy AKS Edge Essentials single-machine K3S cluster
 sandbox: true
-interactive: bash
+interactive: powershell
 metadata:
   title: Exercise - Deploy AKS Edge Essentials single-machine K3S cluster
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
