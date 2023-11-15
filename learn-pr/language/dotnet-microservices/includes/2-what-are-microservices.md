@@ -44,38 +44,38 @@ If it sounds like containerizing an application might be a great way to implemen
 ![Diagram that shows multiple containers running on a single host.](../media/multiple-containers-single-host.png)
 
 > [!NOTE]
-> Containerizing an application is not the only way to deploy microservices. You could deploy microservices as individual services in Azure App Service, or via virtual machines, or any number of ways. However, containers are the deployment tool that we'll use for the rest of this module for our microservices.
+> Containerizing an application is not the only way to deploy microservices. You can deploy microservices as individual services in Azure App Service, in virtual machines, or in any number of ways. However, containers are the deployment tool that we'll use for our microservices for the rest of this module.
 
-Another benefit of containerization is scalability. You can scale out quickly by creating new containers for short-term tasks. From an application point of view, instantiating an image (creating a container) is similar to instantiating a process like a service or a web app.
+Another benefit of containerization is scalability. You can scale out quickly by creating new containers to use for short-term tasks. From an application point of view, instantiating an image (creating a container) is similar to instantiating a process like a service or web app.
 
-In short, containers offer the benefits of isolation, portability, agility, scalability, and control across the whole application-lifecycle workflow.
+In short, containers offer the benefits of isolation, portability, agility, scalability, and control across the entire application lifecycle workflow.
 
-The microservices you'll build in this module will run in a container, specifically a Docker container.
+The microservices you build in this module will run in a Docker container.
 
 ### Docker
 
-[Docker](https://www.docker.com/) is an [open-source project](https://github.com/docker/docker) for automating the deployment of applications as portable, self-sufficient containers that can run in the cloud or on-premises. [Docker](https://www.docker.com/) is also a company that promotes and evolves this technology, working in collaboration with cloud, Linux, and Windows vendors, including Microsoft.
+[Docker](https://www.docker.com/) is an [open-source project](https://github.com/docker/docker) that you use to automate the deployment of applications as portable, self-sufficient containers that can run in the cloud or on-premises. Docker is also a company that promotes and evolves this technology. The Docker organization works in collaboration with cloud, Linux, and Windows vendors, including Microsoft.
 
 Docker containers can run anywhere: on-premises in the customer's datacenter, in an external service provider, or in the cloud. Docker image containers can run natively on Linux and Windows.
 
 ### What is an image?
 
-When a developer uses Docker, they create an app or service and package it and its dependencies into a container image. An image is a static representation of the app or service and its configuration and dependencies.
+When a developer uses Docker, they create an app or service, and then they package the app or service and its dependencies in a container image. An image is a static representation of the app or service and its configuration and dependencies.
 
-It's this image that, when run, becomes our container. The container is the in-memory instance of an image.
+The image, when it runs, becomes the container. The container is the in-memory instance of an image.
 
-A container image is immutable. Once you've built an image, the image can't be changed. Since you can't change an image, if you need to make changes, you'll create a new image. This feature is our guarantee that the image we use in production is the same image used in development and Quality Assurance (QA).
+A container image is immutable. After you build an image, the image can't be changed. Because you can't change an image, if you need to make changes to the app or service and its dependencies, create a new image. This feature guarantees that the image that you use in production is the same image that's used in development and testing.
 
 ### What is a Dockerfile?
 
-A Dockerfile is a text file that contains instructions on how to build a Docker image. Dockerfiles are written in a minimal scripting language designed for building and configuring images. They also document the operations required to build an image starting with a base image.
+A Dockerfile is a text file that contains instructions for how to build a Docker image. Dockerfiles are written in a minimal scripting language that's designed for building and configuring images. Dockerfiles also document the operations that are required to build an image, starting with a base image.
 
-To create a Docker image containing your application, you'll typically begin by identifying a base image to which you add more files and configuration. The process of identifying a suitable base image usually starts with a search on Docker Hub for a ready-made image that already contains an application framework and all the utilities and tools of a Linux distribution like Ubuntu or Alpine. For example, if you have an ASP.NET application that you want to package into a container, Microsoft publishes an image called **mcr.microsoft.com/dotnet/aspnet** that already contains the ASP.NET runtime.
+To create a Docker image that contains your application, you typically begin by identifying a base image. Then you add more files and configuration to the base image. The process of identifying a suitable base image usually starts with a search on Docker Hub for a readymade image that already contains an application framework and all the utilities and tools of a Linux distribution like Ubuntu or Alpine. For example, if you have an ASP.NET application that you want to package into a container, Microsoft publishes an image called *mcr.microsoft.com/dotnet/aspnet* that already contains the ASP.NET runtime.
 
-You can customize an image by starting a container with the base image and making changes to it. Changes usually involve activities like copying files into the container from the local filesystem, and running various tools and utilities to compile code.
+You can customize an image by starting a container by using the base image and then making changes to it. Changes usually involve activities like copying files into the container from the local file system and running various tools and utilities to compile code.
 
-In other words, a Dockerfile is a set of instructions that builds up a Docker image with the exact software you need in it to run your application - including your application itself.
+A Dockerfile is a set of instructions that creates a Docker image that has the exact software that you need in it to run your application, including the application itself.
 
 ## Why build microservices in .NET?
 
-Starting with .NET Core and continuing all the way through the present iterations, .NET was built to be cloud native first. It runs cross-platform, so your Docker image could be based on a flavor of Linux and your .NET code will still run. In addition, there are already .NET images created for Docker by Microsoft. Plus, .NET is extremely fast, with ASP.NET's Kestrel web server routinely outperforming other web servers.
+Starting with .NET Core and continuing to current iterations, .NET was built to be cloud native first. It runs cross-platform, so your Docker image can be based on a flavor of Linux, and your .NET code will still run. Microsoft has already created .NET images for Docker. Also, .NET is extremely fast. The ASP.NET Kestrel web server routinely outperforms other web servers.
