@@ -14,7 +14,7 @@ summary: |
   This learning path introduces you to the Azure Stack portfolio and describes basic architecture, core capabilities, and primary use cases of its products. You'll also learn about differences and similarities between Azure Stack HCI, Azure Stack Hub, Azure Stack Edge, and Azure.
 prerequisites: |
   - Azure
-  - Window Server software-defined storage
+  - Windows Server software-defined storage
   - Windows Server software-defined networking
   - IoT technologies
 iconUrl: /training/achievements/azure-stack-hci.svg

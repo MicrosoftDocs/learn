@@ -10,8 +10,6 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
 
 1. Select **Create**. The **Create Function App** pane appears.
 
-    [!include[](../../includes/functions-classic-workaround.md)]
-
 1. On the **Basics** tab, enter the following values for each setting.
 
     > [!NOTE]
@@ -28,19 +26,19 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
     | Runtime stack | Node.js |
     | Version | Accept default |
     | Region | Choose the nearest location to you that is also one of the allowed *Sandbox regions*. |
+    | **Operating system** |
+    | Operating System | Windows |
+    | **Hosting** |
+    | Hosting options and plans | Consumption (Serverless)  |
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. Select **Next : Hosting** to open the **Hosting** tab. Enter the following values for each setting.
+1. Select **Next : Storage** to open the **Storage** tab. Enter the following values for each setting.
 
     | Setting  | Value  |
     | --- | ---| 
     | **Storage** |
     | Storage account | (New), and accept the default name. |
-    | **Operating system** |
-    | Operating System | Windows |
-    | **Plan** |
-    | Plan type | Consumption (Serverless) |
 
 1. Select **Review + create**.
 
@@ -50,9 +48,9 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
 
 1. When your deployment is complete, select **Go to resource**. The **Overview** pane appears for your *Function App*.
 
-1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your *Function App*.
+1. Under **Functions**, select **Create in Azure portal**. 
 
-1. On the top menu bar bar, select **Create**. The **Create function** pane appears.
+1. The **Create function** pane appears.
 
 1. Under **Select a template**, select **HTTP trigger**, and then select **Create**. The **HttpTrigger1** pane appears for your *Function*, displaying essentials for your new trigger.
 

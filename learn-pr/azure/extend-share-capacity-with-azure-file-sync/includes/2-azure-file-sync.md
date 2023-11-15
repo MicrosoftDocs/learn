@@ -2,7 +2,7 @@ Azure File Sync allows you to extend your on-premises file shares into Azure. It
 
 You're researching the tools available to extend your on-premises file-share capacity into Azure. You want to understand Azure File Sync, how it works, and how it can help increase your file share capacity.
 
-In this unit, you'll explore what Azure File Sync is, how it works, and what you need to do to support it.
+In this unit, you explore what Azure File Sync is, how it works, and what you need to do to support it.
 
 ## Extend storage capacity
 
@@ -14,11 +14,11 @@ The following diagram shows what happens when a user requests two files. File A 
 
 With cloud tiering, you're storing a smaller set of file data locally, so you have more local storage space for the files your organization uses more often.
 
-By default, cloud tiering is off. You'll enable it when you create the server endpoint.
+By default, cloud tiering is off. You enable it when you create the server endpoint.
 
 ## Terminology
 
-These are some terms you need to understand to use Azure File Sync.
+You need to understand some terms to use Azure File Sync.
 
 - **Storage Sync Service** is the high-level Azure resource for Azure File Sync. The service is deployed to Azure resource groups. Within a Storage Sync Service, you can create sync groups.
 
@@ -51,9 +51,9 @@ Azure Files doesn't have change notification or journaling yet, so Azure File Sy
 The following steps describe the high-level process you can use to set up Azure File Sync.
 
 1. *Evaluate your on-premises system*:  Run the evaluation cmdlet on your on-premises server to check whether your OS and file system are supported.
-1. *Create Azure resources*: You need a storage account to contain a file share, a Storage Sync Service, a sync group, and a cloud endpoint. Create the resources in that order. If you create a sync group via the Azure portal, it will create a cloud endpoint at the same time.
+1. *Create Azure resources*: You need a storage account to contain a file share, a Storage Sync Service, a sync group, and a cloud endpoint. Create the resources in that order. If you create a sync group by using the Azure portal, it creates a cloud endpoint at the same time.
 1. *Install the Azure File Sync agent*: Install the agent on each Windows file server that's taking part in replication to the Storage Sync Service.
 1. *Register the Windows Server with the Storage Sync Service*: After you install the sync agent, you're prompted to register the server with the Storage Sync Service.
 1. *Create the server endpoint*: After the server is registered, you add it as a server endpoint in the sync group.
 
-We'll cover these steps in the following units.
+You learn about these steps in the following units.

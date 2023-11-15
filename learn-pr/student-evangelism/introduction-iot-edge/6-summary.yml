@@ -7,7 +7,7 @@ metadata:
   ms.date: 09/24/2019
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom: team=nextgen
   ms.service: iot-edge
 durationInMinutes: 2 # dummy number at present
