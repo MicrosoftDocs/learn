@@ -4,6 +4,8 @@ Imagine you want to contribute to another project you've found on GitHub. You wa
 
 When you clone a repository from GitHub, a copy of that repository is downloaded to your machine. If you clone via the Git CLI, you have to enter your GitHub credentials. You also have to set the local repository's remote URL. The remote URL is required so Git knows where to push your changes.
 
+With the GitHub integration in Visual Studio Code, cloning a repository is a much simpler process.
+
 ## Clone from Visual Studio Code
 
 You can clone a repository from GitHub using the Visual Studio Code Explorer or the command palette. If you have a new window with no folder open, you can toggle the Explorer from the activity bar or by selecting **View** > **Explorer**. You'll see a **Clone Repository** button.

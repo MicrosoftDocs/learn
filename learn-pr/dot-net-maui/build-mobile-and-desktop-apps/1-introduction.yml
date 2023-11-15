@@ -6,10 +6,9 @@ metadata:
   ms.date: 04/27/2022
   author: codemillmatt 
   ms.author: masoucou 
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-dotnet
-  ms.prod: learning-languages
 title: Introduction
 durationInMinutes: 2
 content: |

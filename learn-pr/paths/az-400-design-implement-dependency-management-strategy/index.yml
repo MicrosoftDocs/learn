@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/26/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'AZ-400: Design and implement a dependency management strategy'
 prerequisites: |
   None

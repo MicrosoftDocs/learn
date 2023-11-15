@@ -173,7 +173,7 @@ import (
 )
 
 func main() {
-    resp, err := http.Get("https://api.github.com/users/microsoft/repos?page=15&per_page=5")
+    resp, err := http.Get("https://api.github.com/users/microsoft/repos?page=15&per_page=3")
     if err != nil {
         fmt.Println("Error:", err)
         os.Exit(1)

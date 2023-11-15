@@ -17,12 +17,13 @@ The tasks that you complete during this exercise are:
 ## Gather user input for the pet characteristic search
 
 1. Review the menu switch statement following comment #5 in the Project.cs code. You discover the code that displays the *"UNDER CONSTRUCTION"* message.
-1. Delete the code between `case "2":` and the `break;` statement so the code matches the following sample:
+1. Delete the code `Console.WriteLine("\nUNDER CONSTRUCTION - please check back next month to see progress.");` between `case "2":` and the `Console.WriteLine("Press the Enter key to continue.");` statement so the code matches the following sample:
 
     ```csharp
     case "2":
         // Display all dogs with a specified characteristic
-
+        Console.WriteLine("Press the Enter key to continue.");
+        readResult = Console.ReadLine();
         break; 
     ```
 
@@ -43,6 +44,8 @@ The tasks that you complete during this exercise are:
                 dogCharacteristic = readResult.ToLower().Trim();
             }
         } 
+        Console.WriteLine("Press the Enter key to continue.");
+        readResult = Console.ReadLine();
         break;
     ```
 
@@ -70,7 +73,7 @@ The tasks that you complete during this exercise are:
 
 Now you add a feature to search using the user input `dogCharacteristic` within the dog descriptions following the previous code under `case "2"`. But first you need to identify the dogs.
 
-1. At the end of `case "2"` code, just before the `break;`, add the following code:
+1. At the end of `case "2"` code, just before the code `Console.WriteLine("\n\rPress the Enter key to continue");`, which is before the `break;`, add the following code:
 
     ```csharp
     // #6 loop through the ourAnimals array to search for matching animals
@@ -141,7 +144,7 @@ Now you add the search for `dogCharacteristic` in the combined data of `dogDescr
     bool noMatchesDog = true;
     ```
 
-    Now you can track when no matches are found with this tracking variable. When the default is set to `true` that means "it's true that no dogs match for the search." Now, when a dog is found you can "flip" the `noMatchesDog` from `true` to `false`
+   Now you can track when no matches are found with this tracking variable. When the default is set to `true` that means "it's true that no dogs match for the search." Now, when a dog is found you can "flip" the `noMatchesDog` from `true` to `false`
 
 1. In the brackets of the `if (dogDescription.Contains(dogCharacteristic))` statement, add the following code:
 
@@ -165,7 +168,7 @@ Now you add the search for `dogCharacteristic` in the combined data of `dogDescr
 
     Finally, you need to create code that decides if the "no matches found" message should be written to the console.
 
-1. Within `case "2"` dog search, a line before the `break;`, add the following code:
+1. At the end of `case "2"` code, just before the code `Console.WriteLine("\n\rPress the Enter key to continue");`, which is before the `break;`, add the following code:
 
     ```csharp
     if (noMatchesDog)
