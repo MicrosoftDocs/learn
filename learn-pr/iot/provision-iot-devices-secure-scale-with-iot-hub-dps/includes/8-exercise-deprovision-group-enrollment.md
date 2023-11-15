@@ -61,7 +61,7 @@ With the group enrollment deleted from the Device Provisioning Service, and the 
       at Microsoft.Azure.Devices.Provisioning.Client.Transport.ProvisioningTransportHandlerAmqp.RegisterAsync(ProvisioningTransportRegisterMessage message, CancellationToken cancellationToken)
    ```
 
-You have completed the registration, configuration, and deprovisioning as part of the IoT devices lifecycle with Device Provisioning Service (DPS).
+You have completed the registration, configuration, and deprovisioning as part of the IoT devices lifecycle with Device Provisioning Service.
 
 ## Verify your work
 
@@ -71,15 +71,13 @@ You have completed the registration, configuration, and deprovisioning as part o
    az iot dps enrollment-group show --dps-name dps-$suffix --enrollment-id enrollgroup-sensors
    ```
 
-   If the enrollment group is disabled, you should see command output that the `provisioningStatus` is disabled.
-
-   Enrollment group is disabled
+   If the enrollment group is disabled, you should see command output that the `provisioningStatus` is disabled:
 
    ```azurecli
    "provisioningStatus": "disabled"
    ```
 
-   If the erollment group is deleted, you should see a message similar to the following.
+   If the enrollment group is deleted, you should see a message similar to the following.
 
    ```azurecli
    {'code': 404204, 'message': 'Not Found.', 'trackingId': '3a1badb5-c1db-4dff-a001-69a5e6e252f4'}
@@ -91,7 +89,7 @@ You have completed the registration, configuration, and deprovisioning as part o
    az iot hub device-identity show --hub-name hub-$suffix --device-id sensor-thl-001
    ```
 
-    You should see an `DeviceNotFound` error message similar to the following.
+    You should see a `DeviceNotFound` error message similar to the following:
 
    ```azurecli
     {'Message': 'ErrorCode:DeviceNotFound;sensor-thl-001', 'ExceptionMessage': 'Tracking ID:06e0221675514160850421f0b3b787a9-G:0-TimeStamp:10/24/2023 16:57:00'}

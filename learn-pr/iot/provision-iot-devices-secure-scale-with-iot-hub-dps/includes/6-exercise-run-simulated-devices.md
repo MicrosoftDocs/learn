@@ -1,6 +1,6 @@
 In this exercise, you run the simulated device. When the device is started for the first time, it connects to the Device Provisioning Service (DPS) which automatically enrolls it using the configured group enrollment.
 
-Once the device is enrolled into the DPS group enrollment, the device is registered automatically in the Azure IoT Hub device registry. Once the device is enrolled and registered, the device can begin communicating with Azure IoT Hub securely using the configured X.509 device certificate authentication.
+Once the device is enrolled into the DPS group enrollment, the device is registered automatically in the IoT Hub device registry. Once the device is enrolled and registered, the device can begin communicating with Azure IoT Hub securely using the configured X.509 device certificate authentication.
 
 ### Task 1: Build and run the simulated device projects
 
@@ -39,7 +39,7 @@ Once the device is enrolled into the DPS group enrollment, the device is registe
 
     Scroll up to the top of the information displayed in the Terminal window.
 
-    Notice the X.509 sensor-thl-001 device certificate was loaded, the device was registered with the Device Provisioning Service (DPS), it was assigned to connect to the **hub-{your-suffix}** IoT Hub, and the device twin desired properties are loaded.
+    Notice the X.509 sensor-thl-001 device certificate was loaded, the device was registered with the Device Provisioning Service, it was assigned to connect to the **hub-{your-suffix}** IoT hub, and the device twin desired properties are loaded.
 
     ```text
     localmachine:LabFiles User$ dotnet run
@@ -62,7 +62,7 @@ Once the device is enrolled into the DPS group enrollment, the device is registe
 
     To review the source code for the simulated device, open the **Program.cs** source code file. Look for the **Console.WriteLine** statements that are used to output the messages seen to the console.
 
-1. Notice that JSON formatted telemetry messages are being sent to Azure IoT Hub.
+1. Notice that JSON formatted telemetry messages are being sent to IoT Hub.
 
     ```text
     Start reading and sending device telemetry...
@@ -70,9 +70,9 @@ Once the device is enrolled into the DPS group enrollment, the device is registe
     12/9/2019 5:47:01 PM > Sending message: {"temperature":26.628804161040485,"humidity":68.09610794675355,"pressure":1014.6454375411363,"latitude":40.093269544242695,"longitude":-98.22227128174003}
     ```
 
-    Once the simulated device completes the initial startup, provision, and registration tasks, it sends simulated sensor telemetry messages to Azure IoT Hub.
+    Once the simulated device completes the initial startup, provision, and registration tasks, it sends simulated sensor telemetry messages to IoT Hub.
 
-    Notice that the delay between each message sent to IoT Hub, as defined by the **telemetryDelay** Device Twin Property, is currently delaying **1 second** between sending sensor telemetry messages.
+    Notice that the delay between each message sent to IoT Hub, as defined by the **telemetryDelay** device twin property, is currently delaying **1 second** between sending sensor telemetry messages.
 
 1. Leave the simulated device running.
 
@@ -98,7 +98,7 @@ Once the device is enrolled into the DPS group enrollment, the device is registe
 
 ### Task 3: Change the device configuration through its twin
 
-When you created the group enrollment in DPS, you set the initial twin configuration for your devices to have a **telemetryDelay** property set to **1 second**. With the simulated devices running, the **telemetryDelay** configuration can be updated by editing the device twin desired state within Azure IoT Hub.
+When you created the group enrollment in DPS, you set the initial twin configuration for your devices to have a **telemetryDelay** property set to **1 second**. With the simulated devices running, the **telemetryDelay** configuration can be updated by editing the device twin desired state within IoT Hub.
 
 1. In the Azure sandbox, update the desired properties of the **sensor-thl-001** device to send telemetry every 3 seconds.
 

@@ -2,24 +2,24 @@ Here, we discuss the overall goals of the project and how to prepare resources f
 
 ## Project overview
 
-In this module, you begin by creating Azure resources that are required to complete this module, such as an instance of IoT Hub Device Provisioning Service (DPS) and an IoT hub. You then generate an X.509 root CA Certificate using OpenSSL within the Azure Cloud Shell, and use the root certificate to configure a Group Enrollment within the Device Provisioning Service (DPS). After that, you use the root certificate to generate two device certificates, which you use within a simulated device code to provision the devices to an IoT hub. While in your device code, you implement access to the device twin properties used to perform initial configuration of the device. You then test your simulated device. To finish up this module, you deprovision the entire group enrollment.
+In this module, you begin by creating Azure resources that are required to complete this module, such as an instance of Device Provisioning Service (DPS) and an IoT hub. You then generate an X.509 root CA Certificate using OpenSSL within the Azure Cloud Shell, and use the root certificate to configure a group enrollment within the DPS. After that, you use the root certificate to generate two device certificates, which you use within a simulated device code to provision the devices to an IoT hub. While in your device code, you implement access to the device twin properties used to perform initial configuration of the device. You then test your simulated device. To finish up this module, you deprovision the entire group enrollment.
 
 ## Setup
 
 As part of this module, the following resources are created:
 
 * An Azure IoT hub
-* An Azure IoT Device Provisioning Service (DPS) instance
+* An Azure IoT Hub Device Provisioning Service instance
 * Two simulated devices in C#
 
 ### Cloud resources
 
-To complete this guided project, you need an IoT hub and a Device Provisioning Service (DPS) instance that are linked to each other. Creating these service instances can take several minutes.
+To complete this guided project, you need an IoT hub and a Device Provisioning Service instance that are linked to each other. Creating these service instances can take several minutes.
 
 1. Start by clicking the **Activate sandbox** button. The sandbox automatically creates an Azure resource group for you that is displayed on this web page. You create more resources for this project using the following steps. The resource group name is substituted automatically where it's used within the code steps.
 
    > [!NOTE]
-   > The sandbox Azure Cloud Shell will time out after 20 minutes of inactivity. The sandbox will still be available and the Cloud Shell can be reactivated, but command-line and environment variables will be lost. Your IoT Hub and Device Provisioning Service (DPS) instances are functional and available. Make sure you copy these values as instructed at the end of this page so that you can still reference and enter the values in upcoming Cloud Shell commands when necessary.
+   > The sandbox Azure Cloud Shell will time out after 20 minutes of inactivity. The sandbox will still be available and the Cloud Shell can be reactivated, but command-line and environment variables will be lost. Your IoT Hub and Device Provisioning Service instances are functional and available. Make sure you copy these values as instructed at the end of this page so that you can still reference and enter the values in upcoming Cloud Shell commands when necessary.
 
 1. Install the Azure IoT extension for Azure CLI.
 
@@ -40,7 +40,7 @@ To complete this guided project, you need an IoT hub and a Device Provisioning S
    az iot hub create --name hub-$suffix --resource-group <rgn>[sandbox resource group name]</rgn> --location westus
    ```
 
-1. Create a Device Provisioning Service (DPS) instance in the resource group created by the Azure sandbox.
+1. Create a DPS instance in the resource group created by the Azure sandbox.
 
    ```azurecli
    az iot dps create --name dps-$suffix --resource-group <rgn>[sandbox resource group name]</rgn> --location westus
@@ -64,6 +64,7 @@ To complete this guided project, you need an IoT hub and a Device Provisioning S
    | Name    | Value |
    | -------- | ------- |
    | Resource group name  | Listed on this web page |
+   | Suffix | Stored in `$suffix`. For example, a value for `"$suffix"` is `"586732230"` |
    | IoT hub connection string | Stored in `$hubConnectionString` |
    | IoT hub name | The value for `name` in the JSON data returned from the `az iot hub create` command you ran in step 3. For example, a value for  `"name"` is `"hub-586732230"`.    |
    | DPS name    | The value for `name` in the JSON data returned from the `az iot dps create` command you ran in step 4. For example, a value for  `"name"` is `"dps-586732230"`.    |

@@ -6,7 +6,7 @@ This X.509 CA certificate is used to sign the device certificates for each devic
 
 In this section, you generate an X.509 CA certificate using OpenSSL. This certificate is used to configure a group enrollment within DPS.
 
-1. In the Azure sandbox, create a directory named "certificates" and then move into a new directory using the following commands:
+1. In the Azure sandbox, create a directory named **certificates** and then move into a new directory using the following commands:
 
    ```azurecli
    mkdir certificates
@@ -29,7 +29,7 @@ In this section, you generate an X.509 CA certificate using OpenSSL. This certif
    chmod 700 certGen.sh
    ```
 
-   The helper script and supporting files are hosted in the **Azure/azure-iot-sdk-c** open source project hosted on GitHub, which is a component of the Azure IoT Device SDK. The **certGen.sh** helper script will provide you with a chance to see how CA Certificates are used without diving too deeply into the specifics of OpenSSL configuration (which is outside the scope of this module).
+   The helper script and supporting files are hosted in the **Azure/azure-iot-sdk-c** open source project hosted on GitHub, which is a component of the Azure IoT Device SDK. The **certGen.sh** helper script will provide you with a chance to see how CA certificates are used without diving too deeply into the specifics of OpenSSL configuration (which is outside the scope of this module).
 
    For more instructions on using this helper script, and for instructions on how to use PowerShell instead of Bash, see: [https://github.com/Azure/azure-iot-sdk-c/blob/master/tools/CACertificates/CACertificateOverview.md](https://github.com/Azure/azure-iot-sdk-c/blob/master/tools/CACertificates/CACertificateOverview.md)
 
@@ -50,11 +50,11 @@ In this section, you generate an X.509 CA certificate using OpenSSL. This certif
 
    Notice that you ran the script with the **create_root_and_intermediate** option. This command assumes that you are running the script from within the **~/certificates** directory.
 
-   This command generated a Root CA Certificate named **azure-iot-test-only.root.ca.cert.pem** and placed it within a **./certs** directory (under the certificates directory that you created).
+   This command generated a root CA certificate named **azure-iot-test-only.root.ca.cert.pem** and placed it within a **./certs** directory (under the certificates directory that you created).
 
-### Task 2: Create a group enrollment (X.509 Certificate) in DPS
+### Task 2: Create a group enrollment (X.509 certificate) in DPS
 
-1. In the Azure sandbox, upload your CA certificate to your Device Provisioning Service (DPS) instance. The certificate name is `groupCA-sensors`. The `verified true` command parameter allows the certificate to be verified automatically on upload, bypassing the need for an additional step for certificate Proof of Possession generation.
+1. In the Azure sandbox, upload your CA certificate to your Device Provisioning Service instance. The certificate name is `groupCA-sensors`. The `verified true` command parameter allows the certificate to be verified automatically on upload, bypassing the need for an additional step for certificate proof of possession generation.
 
    ```azurecli
    az iot dps certificate create --dps-name dps-$suffix --certificate-name groupCA-sensors --path ~/certificates/certs/azure-iot-test-only.root.ca.cert.pem --verified true
@@ -97,7 +97,7 @@ In this section, you generate an X.509 CA certificate using OpenSSL. This certif
       "name": "groupCA-sensors"
       ```
 
-3. Examine this command return information to verify that the DPS enrollment group was created with the parameters that you specified in the az `iot dps certificate create` statement in Task 2, step 2.
+3. Examine this command return information to verify that the DPS enrollment group was created with the parameters that you specified in the `az iot dps certificate create` statement in task 2, step 2.
 
    ```azurecli
    az iot dps enrollment-group show --dps-name dps-$suffix --enrollment-id enrollgroup-sensors

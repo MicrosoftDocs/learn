@@ -14,7 +14,7 @@ In this exercise, you generate a device certificate using the root certificate, 
    ./certGen.sh create_device_certificate sensor-thl-001
    ```
 
-   This command creates a new device X.509 certificate .pem and .pfx pair that are signed by the CA certificate that was generated previously. Notice that the device ID (**sensor-thl-001**) is passed to the **create_device_certificate** command of the **certGen.sh** script. This device ID is set within the *common name*, or *CN=*, value of the device certificate. This certificate generates a leaf device X.509 certificate for your simulated device, and is used to authenticate the device with the Device Provisioning Service (DPS). This module uses the .pfx certificate file to validate the program that connects to DPS from your computer.
+   This command creates a new device X.509 certificate .pem and .pfx pair that are signed by the CA certificate that was generated previously. Notice that the device ID (**sensor-thl-001**) is passed to the **create_device_certificate** command of the **certGen.sh** script. This device ID is set as the *common name*, or *CN=*, value of the device certificate. This command generates a leaf device X.509 certificate for your simulated device, which is used to authenticate the device with the Device Provisioning Service (DPS). This module uses the .pfx certificate file to validate the program that connects to DPS from your computer.
 
    Once the **create_device_certificate** command has completed, the generated X.509 device certificate pair is named **new-device.cert.pfx** and **new-device.cert.pem** respectively, and is located within the **/certs** subdirectory.
 
@@ -43,7 +43,7 @@ In this exercise, you generate a device certificate using the root certificate, 
    ```
 
    > [!NOTE]
-   > Watch for a browser prompt asking you to save the file. Click the **Click here to download your file.** or **Download file** message when prompted. The file will be downloaded to your computer's Download folder.
+   > Watch for a browser prompt asking you to save the file. Select the **Click here to download your file.** or **Download file** message when prompted. The file will be downloaded to your computer's Download folder.
 
 1. Download the second generated X.509 device certificate from the Cloud Shell to your local machine using the following command:
 
@@ -52,7 +52,7 @@ In this exercise, you generate a device certificate using the root certificate, 
    ```
 
    > [!NOTE]
-   > Watch for a browser prompt asking you to save the file. Click the **Click here to download your file.** or **Download file** message when prompted. The file will be downloaded to your computer's Download folder.
+   > Watch for a browser prompt asking you to save the file. Select the **Click here to download your file.** or **Download file** message when prompted. The file will be downloaded to your computer's Download folder.
 
 In the next task, you start building the simulated devices that use the X.509 device certificates to authenticate with the Device Provisioning Service (DPS).
 
@@ -329,13 +329,13 @@ In this task, you complete the following:
    }
    ```
 
-1. Locate the **GlobalDeviceEndpoint** variable, and notice that its value is set to the global device endpoint for the Azure Device Provisioning Service. You should see code that is similar to the following:
+1. Locate the **GlobalDeviceEndpoint** variable, and notice that its value is set to the global device endpoint for the Device Provisioning Service. You should see code that is similar to the following:
 
    ```csharp
    private const string GlobalDeviceEndpoint = "global.azure-devices-provisioning.net";
    ```
 
-   All devices that connect to Azure DPS are configured with this global device endpoint DNS name.
+   All devices that connect to DPS are configured with this global device endpoint DNS name.
 
    The **ContainerDevice** application uses X.509 certificates as an attestation mechanism. From the application's perspective, it doesn't matter that this device is connecting using a group enrollment rather than an individual enrollment. All the device has to do is connect to its assigned DPS instance and receive its assigned IoT hub information.
 
@@ -346,7 +346,7 @@ In this task, you complete the following:
     When you have updated your code, it should look similar to the following:
 
     ```csharp
-    private static string dpsIdScope = "0ne000CBD6C";
+    private static string dpsIdScope = "0ne00000000";
     ```
 
     > [!NOTE]
@@ -360,10 +360,10 @@ In this task, you complete the following:
 
     The **certificatePassword** variable contains the password for the X.509 device certificate. It's set to **1234**, which is the default password used by the **certGen.sh** helper script when generating the X.509 certificates.
 
-    > [IMPORTANT]
-    > For the purpose of this lab, the password is hard coded. In a *production* scenario, the password needs to be stored in a more secure manner, such as in an Azure Key Vault. Additionally, the certificate file (PFX) should be stored securely on a production device using a Hardware Security Module (HSM).
+    > [!IMPORTANT]
+    > For the purpose of this lab, the password is hard coded. In a *production* scenario, the password needs to be stored in a more secure manner, such as in an Azure Key Vault. Additionally, the certificate file (PFX) should be stored securely on a production device using a hardware security module (HSM).
     >
-    > A HSM (Hardware Security Module), is used for secure, hardware-based storage of device secrets, and is the most secure form of secret storage. Both X.509 certificates and SAS tokens can be stored in the HSM. HSMs can be used with all attestation mechanisms the provisioning service supports.
+    > HSM is used for secure, hardware-based storage of device secrets, and is the most secure form of secret storage. Both X.509 certificates and SAS tokens can be stored in the HSM. HSMs can be used with all attestation mechanisms the provisioning service supports.
 
 1. Open the Visual Studio Code **File** menu, then select **Save**.
 

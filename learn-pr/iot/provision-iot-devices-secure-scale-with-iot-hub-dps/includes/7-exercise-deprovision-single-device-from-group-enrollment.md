@@ -1,6 +1,6 @@
 There are many reasons why you might need to deprovision just a portion of the devices that are registered as part of a group enrollment. For example, a device might no longer be needed, a newer version of the device might have become available, or it might have been broken or compromised.
 
-These steps explicitly disable a device certificate and deregister IoT hub entries for a single device, while allowing other devices who's individual certificates were signed by the CA to still function.
+These steps explicitly disable a device certificate and deregister IoT hub entries for a single device, while allowing other devices whose individual certificates were signed by the CA to still function.
 
 To deprovision a single device from a DPS enrollment group, you must do two things:
 

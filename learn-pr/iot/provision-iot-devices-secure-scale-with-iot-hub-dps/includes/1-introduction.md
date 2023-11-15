@@ -1,6 +1,4 @@
-Create programs that use X.509 certificate authentication to Azure IoT Hub Device Provisioning Service (DPS). The programs generate sample telemetry readings that are sent to an IoT hub.
-
-Use Azure Cloud Shell to create the DPS service, IoT hub, set device twin properties, and initiate group and single device enrollment and disenrollment. Test program DPS provisioning and device twin update scenarios.
+Experience implementing group enrollments using X.509 certificates, using code that accesses device twin properties to initialize a device, and deprovisioning enrollments groups or individual devices from an enrollment group.
 
 ## Example scenario
 
