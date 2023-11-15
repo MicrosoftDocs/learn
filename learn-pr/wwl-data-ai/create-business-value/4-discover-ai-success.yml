@@ -9,6 +9,6 @@ metadata:
   ms.author: rcaper
   ms.topic: unit
   ms.service: microsoft-365
-durationInMinutes: 4
+durationInMinutes: 10
 content: |
   [!include[](includes/4-discover-ai-success.md)]
