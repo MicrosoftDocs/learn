@@ -2380,3 +2380,8 @@ achievements:
   title: 'Microsoft Azure AI Fundamentals: Explore decision support'
   summary: Learn how to automate decision support processes using Azure.
   iconUrl: /training/achievements/explore-fundamentals-of-decision-support.svg
+- uid: learn.wwl.explore-fundamentals-of-knowledge-mining.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Explore knowledge mining'
+  summary: Knowledge mining is a discipline in artificial intelligence (AI) that uses a combination of intelligent services to quickly search and learn from vast amounts of information.
+  iconUrl: /learn/achievements/knowledge-mining-fundamentals.svg
