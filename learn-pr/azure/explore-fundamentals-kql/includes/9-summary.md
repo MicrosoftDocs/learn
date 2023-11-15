@@ -1,8 +1,8 @@
 Querying data using a query language is an effective way to retrieve and work with data you collect.
 
-In this module, you learned how you can use KQL to work with data from various sources to gain insights about your IT, business, and security. 
+In this module, you learned how you can use KQL to work with data from various sources to gain insights about your IT, business, and security.
 
-You learned that using KQL lets you go beyond the basic built-in monitoring and analytics capabilities provided by various services, by analyzing and troubleshooting issues, creating custom alerts and dashboards, and transforming data.
+You learned that using KQL lets you go beyond the basic built-in monitoring and analytics capabilities provided by various services. KQL queries let you analyze and troubleshoot issues, create custom alerts and dashboards, and transform data.
 
 You also gained some experience running basic queries in various services, including Azure Data Explorer, Azure Monitor, and Azure Resource Graph.
 
