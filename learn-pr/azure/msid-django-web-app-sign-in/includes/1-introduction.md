@@ -6,7 +6,7 @@ Suppose you work at a banking company as a developer. Your company wants to deve
 
 To meet security requirements, users need to authenticate before they can access these resources. Your company uses Python Django as the web framework to build its web apps. You've been tasked with building a mechanism to authenticate users.
 
-## What will you learn?
+## What will we be doing?
 
 In this module, you'll create a Django web app that authenticates users by using Microsoft Entra ID:
 
