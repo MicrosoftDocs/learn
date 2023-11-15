@@ -48,9 +48,6 @@ summary: |
     Primer: [Describe the basic concepts of cybersecurity](../describe-basic-concepts-of-cybersecurity/index.yml)
   :::column-end:::
   :::row-end::: 
-video:
-  title: "Introduction video: Describe the concepts of security, compliance, and identity"
-  url: https://www.microsoft.com/videoplayer/embed/RE4XI9D
 iconUrl: /training/achievements/describe-the-concepts-of-security-compliance-and-identity.svg
 levels:
 - beginner
