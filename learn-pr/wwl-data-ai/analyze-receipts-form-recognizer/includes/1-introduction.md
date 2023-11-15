@@ -1,19 +1,9 @@
 
-A common problem in many organizations is the need to process large volumes of documents. For example, a company might require expense claims to be submitted electronically with scanned receipts, or invoices might need to be digitized and routed to the correct accounts department. Typically after a document is scanned, someone will still need to manually enter the extracted text into a database. 
 
-Azure AI Document Intelligence service can solve for this issue by digitizing fields from documents using optical character recognition (OCR). Azure's OCR technologies extract the contents. Azure AI Document Intelligence identifies the content's structure and save the data in key, value pairs. 
+Document intelligence describes AI capabilities that support processing text and making sense of information in text. As an extension of optical character recognition (OCR), document intelligence takes the next step a person might after reading a form or document. It automates the process of extracting, understanding, and saving the data in text.  
 
-![A screenshot of a scanned receipt for the purchase of a Surface Pro and a Surface Pen.](../media/contoso-receipt-small.png)
+Consider an organization that needs to process large numbers of receipts for expenses claims, project costs, and other accounting purposes. Suppose someone needs to manually enter the information into a database. The manual process is relatively slow and potentially error-prone. 
 
-Using Azure AI Document Intelligence, we can input an image of a receipt, and return useful information that might be required for an expense claim, including:   
+Using document intelligence, the company can take a scanned image of a receipt, digitize the text with OCR, and pair the field items with their field names in a database. Document intelligence can identify specific data such as the merchant's name, merchant's address, total value, and tax value.  
 
-- The address and telephone number of the merchant.
-- The date and time of the purchase.
-- The quantity and price of each item purchased.
-- The subtotal, tax, and total amounts.
-
-In this module you will: 
- 
-- Identify suitable Azure services for processing receipts
-- Provision a Form Recognizer resource
-- Use a Form Recognizer resource to extract information from a receipt
+**Azure AI Document Intelligence** supports features that can analyze documents and forms with prebuilt and custom models. In this module, you explore how Azure AI services provide access to document intelligence capabilities. 
