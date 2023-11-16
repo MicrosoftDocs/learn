@@ -1,35 +1,23 @@
 Azure Policy is a service in Azure that enables you to create, assign, and manage policies. Azure Policy helps you define and implement your governance strategy by using policies to control and audit your resources. 
 
-In this module, you explored how to implement Azure policy definitions and initiatives for your corporate departments. You discovered how to create management groups to target specific policies and spending budgets. You reviewed how Azure policies can be scoped to meet compliance regulations.
+In this module, you have learned about Azure Policy and how it allows you to control and audit your resources. You explored how to implement Azure policy definitions and initiatives for your corporate departments. You learned how to create management groups, scope policies, and manage spending budgets. You reviewed how Azure policies can be scoped to meet compliance regulations.
+
+The main takeaways from this module are:
+- Azure Policy is a powerful service in Azure that enables you to enforce rules and ensure compliance with corporate standards and service level agreements.
+- Management groups provide a way to efficiently manage access, policies, and compliance across multiple subscriptions, allowing for unified policy and access management.
+- Creating policy definitions and initiative definitions allows you to define conventions for resources and control the scope of policies, ensuring resource compliance.
+- The Compliance feature in Azure Policy helps you determine the compliance state of your resources and evaluate whether they're compliant or compliant.
 
 ## Learn more with Azure documentation
 
-- Peruse [Azure Policy documentation](/azure/azure-policy/).
+- [Azure Policy documentation](/azure/governance/policy/). This collection of articles is your starting point for all things Azure policy. 
 
-- Explore [built-in policy definitions](/azure/governance/policy/samples/built-in-policies).
+- [Azure Policy built-in policy definitions](/azure/governance/policy/samples/built-in-policies). This page is an index of Azure Policy built-in policy definitions.
 
-- Discover [built-in policy initiatives](/azure/governance/policy/samples/built-in-initiatives).
+- [Azure built-in policy initiatives](/azure/governance/policy/samples/built-in-initiatives). This page is an index of Azure Policy built-in initiative definitions.
 
-- Review [recommended policies for Azure services](/azure/governance/policy/concepts/recommended-policies).
-
-- Find [pricing details for Azure Policy](https://azure.microsoft.com/pricing/details/azure-policy/).
-
-- Get started with [Azure Policy samples](/azure/governance/policy/samples/).
+- [Quickstart: Create a policy assignment to identify noncompliant resources](/azure/governance/policy/assign-policy-portal). This quickstart steps you through the process of creating a policy assignment to identify virtual machines that aren't using managed disks.
 
 ## Learn more with self-paced training
 
-- Review the [Introduction to Azure Policy](/training/modules/intro-to-azure-policy/) training module.
-
-- Complete the [Create a custom policy definition](/azure/governance/policy/tutorials/create-custom-policy-definition) tutorial.
-
-- Discover how to [Create and assign a policy definition](/azure/governance/policy/how-to/programmatically-create#create-and-assign-a-policy-definition) programmatically.
-
-- Follow the [Create a policy assignment to identify non-compliant resources](/azure/governance/policy/assign-policy-portal) quickstart.
-
-- Try the [Control and audit your resources](/training/modules/build-cloud-governance-strategy-azure/6-control-audit-resources-azure-policy) exercise.
-
-- Try the [Restrict deployments to specific locations](/training/modules/build-cloud-governance-strategy-azure/7-restrict-location-azure-policy) exercise.
-
-## Learn more with optional hands-on exercises
-
-- Advance to the [Build a cloud governance strategy on Azure](/training/modules/build-cloud-governance-strategy-azure/) training module.
+- [Introduction to Azure Policy](/training/modules/intro-to-azure-policy/). This module introduces you to Azure Policy and describes its characteristics, capabilities, and use cases.

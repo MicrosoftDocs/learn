@@ -50,7 +50,7 @@ The default rules for inbound traffic are:
 
 | Priority | Rule name  | Description  |
 |----------|------------|--------------|
-| 65000 | AllowVnetInbound | Allow inbound coming from any VM to any VM within the subnet |
+| 65000 | AllowVnetInbound | Allow inbound coming from any VM to any VM within the virtual network |
 | 65001 | AllowAzureLoadBalancerInbound | Allow traffic from the default load balancer to any VM within the subnet |
 | 65500 | DenyAllInBound | Deny traffic from any external source to any of the VMs |
 
@@ -58,7 +58,7 @@ The default rules for outbound traffic are:
 
 | Priority | Rule name  | Description  |
 |----------|------------|--------------|
-| 65000 | AllowVnetOutbound |  Allow outbound going from any VM to any VM within the subnet |
+| 65000 | AllowVnetOutbound |  Allow outbound going from any VM to any VM within the virtual network |
 | 65001 | AllowInternetOutbound | Allow outbound traffic going to the internet from any VM |
 | 65500 | DenyAllOutBound | Deny traffic from any internal VM to a system outside the virtual network |
 

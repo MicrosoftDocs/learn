@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-introduction-to-azure-search.exercise
-title: Exercise - Explore knowledge mining
+title: Exercise - Explore an Azure Cognitive Search index (UI)
 metadata:
-  title: Exercise - Explore knowledge mining
-  description: "Exercise - Explore knowledge mining"
-  ms.date: 08/17/2023
+  title: Explore an Azure Cognitive Search index (UI)
+  description: "Exercise - Explore an Azure Cognitive Search index (UI)"
+  ms.date: 10/26/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 35
