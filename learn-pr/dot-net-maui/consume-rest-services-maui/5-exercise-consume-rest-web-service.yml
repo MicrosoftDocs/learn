@@ -9,10 +9,9 @@ metadata:
   author: codemillmatt 
   ms.author: masoucou
   ms.manager: markl
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-dotnet
-  ms.prod: learning-languages
 interactive: bash
 azureSandbox: true
 durationInMinutes: 20
