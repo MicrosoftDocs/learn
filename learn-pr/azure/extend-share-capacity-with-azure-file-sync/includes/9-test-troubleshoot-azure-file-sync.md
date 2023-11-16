@@ -1,10 +1,10 @@
 There are several ways to monitor Azure File Sync. You could use the Azure portal, Azure Monitor, or the event log on one of the Windows Server computers. You could also monitor Azure File Sync by adding Azure File Sync performance counters to Performance Monitor.
 
-You've set up the Azure File Sync components in your Azure environment and on the target server. Now, you want to ensure the environment functions correctly and monitor replication and file-copy jobs.
+You set up the Azure File Sync components in your Azure environment and on the target server. Now, you want to ensure the environment functions correctly and monitor replication and file-copy jobs.
 
 ## Common problems
 
-Later in this unit, you'll see how you can monitor Azure File Sync and check for syncing problems. But first, let's look at some common problems and how they could be resolved.
+Later in this unit, you see how you can monitor Azure File Sync and check for syncing problems. But first, let's look at some common problems and how they could be resolved.
 
 ### Can't mount the Azure file share
 
@@ -27,7 +27,7 @@ In the first window, add a new text document in the CADFolder, then add some tex
 You can view server health, server endpoint health, and metrics in the Storage Sync Service properties in the Azure portal.
 
 - **Registered server health**: If the server state is **Online**, it's communicating successfully with the service. If the server state is **Appears Offline**, check the Storage Sync Monitor process service to ensure it's running on the server.
-- **Server endpoint health**: Server endpoint health is calculated based on events logged in **Telemetry**. If there are any errors, the sync health state will be registered as **unhealthy**.
+- **Server endpoint health**: Server endpoint health is calculated based on events logged in **Telemetry**. If there are any errors, the sync health state is registered as **unhealthy**.
 - **Metrics**: You can view various metrics from within the Storage Sync Service. The metrics are:
   - **Bytes synced**: Size of data transferred
   - **Cloud tiering recall**: Size of data recalled

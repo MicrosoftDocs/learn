@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/14/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Implement and operate an on-premises and hybrid networking infrastructure
 prerequisites: |
   - Experience with managing Windows Server operating system and Windows Server workloads in on-premises scenarios, including AD DS, DNS, DFS, Hyper-V, and File and Storage Services

@@ -7,8 +7,7 @@ metadata:
   ms.date: 06/26/2023
   author: marlenaklein-msft
   ms.author: marlenaklein
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/6-5-exercise-voice-commands.md)]
