@@ -8,8 +8,7 @@ metadata:
   ms.date: 01/31/2023
   author: davidsmatlak
   ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/6-knowledge-check.md)]
