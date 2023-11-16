@@ -1,4 +1,3 @@
-
 Let's review how to use the MARS agent and Azure Backup to complete backups of your on-premises files and folders. The following diagram shows the high-level steps to use the MARS agent for Azure Backup.
 
 :::image type="content" source="../media/file-folder-backup-6d3d3d1e.png" alt-text="Diagram that shows the steps to use the MARS agent for Azure Backup." border="false":::
