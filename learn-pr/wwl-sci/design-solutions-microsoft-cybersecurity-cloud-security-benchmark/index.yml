@@ -6,7 +6,7 @@ metadata:
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 title: Design solutions that align with the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB)
 summary: "You learn about the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB) and how you can use them to design more secure solutions."

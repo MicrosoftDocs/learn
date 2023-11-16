@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-  ms.prod: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/7-explore-azure-load-testing.md)]
