@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 09/08/2022
+  ms.date: 11/06/2023
   author: vhorne
   ms.author: victorh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -37,17 +36,17 @@ quiz:
     - content: "NAT"
       isCorrect: false
       explanation: "That's incorrect. You use a NAT rule to translate and filter inbound internet traffic based on your firewall's public IP address and a specified port number."
-  - content: "Suppose a company wants to deploy Azure Firewall Manager. Which of the following items is not an acceptable network architecture for Azure Firewall Manager?" 
+  - content: "Suppose a company wants to deploy Azure Firewall Manager. Which of the following items isn't an acceptable network architecture for Azure Firewall Manager?" 
     choices:
     - content: "Spoke virtual network"
       isCorrect: true
-      explanation: "That's correct. A spoke virtual network is not an acceptable network architecture for Azure Firewall Manager."
+      explanation: "That's correct. A spoke virtual network isn't an acceptable network architecture for Azure Firewall Manager."
     - content: "Hub virtual network"
       isCorrect: false
-      explanation: "That's incorrect. A hub virtual network is a standard Azure virtual network where one or more firewall policies have been applied and is an acceptable network architecture for Azure Firewall Manager."
+      explanation: "That's incorrect. A hub virtual network is a standard Azure virtual network where one or more firewall policies are applied and is an acceptable network architecture for Azure Firewall Manager."
     - content: "Secured virtual hub"
       isCorrect: false
-      explanation: "That's incorrect. A secured virtual hub is an Azure Virtual WAN Hub where one or more firewall policies have been applied and is an acceptable network architecture for Azure Firewall Manager."
+      explanation: "That's incorrect. A secured virtual hub is an Azure Virtual WAN Hub where one or more firewall policies are applied and is an acceptable network architecture for Azure Firewall Manager."
   - content: "If you want to filter www.microsoft.com/surface, which product and feature would you use?" 
     choices:
     - content: "Azure Firewall FQDN filtering"
@@ -58,4 +57,4 @@ quiz:
       explanation: "That's correct. You need to inspect the entire URL, and that capability is included in Azure Firewall Premium."
     - content: "Azure Firewall Premium Link filtering"
       isCorrect: false
-      explanation: "That's incorrect. You need to inspect the entire URL, and Link filtering is not an actual Azure Firewall Premium feature."
+      explanation: "That's incorrect. You need to inspect the entire URL, and Link filtering isn't an actual Azure Firewall Premium feature."

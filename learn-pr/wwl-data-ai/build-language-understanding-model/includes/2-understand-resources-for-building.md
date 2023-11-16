@@ -1,9 +1,7 @@
-To use the Language Understanding service to develop an NLP solution, you'll need to create a Language resource in Azure. That resource will be used for both authoring your model and processing prediction requests from client applications.
-
-Azure AI Language has various features, including sentiment analysis, key phrase extraction, entity recognition, intent recognition, and text classification. Some features, such as conversational language understanding and custom named entity recognition require a model to be built for prediction.
+To use the Language Understanding service to develop a NLP solution, you'll need to create a Language resource in Azure. That resource will be used for both authoring your model and processing prediction requests from client applications.
 
 > [!TIP]
-> This module's lab covers building a model for conversational language understanding. For more focused modules on custom text classification and custom named entity recognition, see the [Build custom text analytics](/training/paths/build-custom-text-analytics?azure-portal=true) learning path.
+> This module's lab covers building a model for conversational language understanding. For more focused modules on custom text classification and custom named entity recognition, see the custom solution modules in the [Develop natural language solutions](/training/paths/develop-language-solutions-azure-ai?azure-portal=true) learning path.
 
 ## Build your model
 
@@ -17,6 +15,14 @@ First, you'll need to create your Azure AI Language resource in the [Azure porta
 1. Fill out the necessary details, choosing the region closest to you geographically (for best performance) and giving it a unique name.
 
 Once that resource has been created, you'll need a key and the endpoint. You can find that on the left side under **Keys and Endpoint** of the resource overview page.
+
+### Use Language Studio
+
+For a more visual method of building, training, and deploying your model, you can use [Language Studio](https://aka.ms/languageStudio) to achieve each of these steps. On the main page, you can choose to create a **Conversational language understanding** project. Once the project is created, then go through the same process as above to build, train, and deploy your model.
+
+:::image type="content" source="../media/language-studio-conversational-small.png" alt-text="Screenshot of the Language Studio home page." lightbox="../media/language-studio-conversational.png":::
+
+The lab in this module will walk through using Language Studio to build your model. If you'd like to learn more, see the [Language Studio quickstart](/azure/ai-services/language-service/language-studio?azure-portal=true)
 
 ### Use the REST API
 
@@ -97,17 +103,78 @@ The response body will give the deployment status details. The `status` field wi
 
 For a full walkthrough of each step with example requests, see the [conversational understanding quickstart](/azure/ai-services/language-service/conversational-language-understanding/quickstart?pivots=rest-api&azure-portal=true#create-a-clu-project).
 
-### Use Language Studio
-
-For a more visual method of building, training, and deploying your model, you can use [Language Studio](https://aka.ms/languageStudio) to achieve each of these steps. On the main page, you can choose to create a **Conversational language understanding** project. Once the project is created, then go through the same process as above to build, train, and deploy your model.
-
-:::image type="content" source="../media/language-studio-conversational-small.png" alt-text="Screenshot of the Language Studio home page." lightbox="../media/language-studio-conversational.png":::
-
-The lab in this module will walk through using Language Studio to build your model. If you'd like to learn more, see the [Language Studio quickstart](/azure/ai-services/language-service/language-studio?azure-portal=true)
-
 ## Query your model
 
-To query your model for a prediction, create a **POST** request to the appropriate URL with the appropriate body specified. For built in features such as language detection or sentiment analysis, you'll query the `analyze-text` endpoint.
+To query your model for a prediction, you can use SDKs in C# or Python, or use the REST API.
+
+### Query using SDKs
+
+To query your model using an SDK, you first need to create your client. Once you have your client, you then use it to call the appropriate endpoint.
+
+```csharp
+var languageClient = new TextAnalyticsClient(endpoint, credentials);
+var response = languageClient.ExtractKeyPhrases(document);
+```
+
+```python
+language_client = TextAnalyticsClient(
+            endpoint=endpoint, 
+            credential=credentials)
+response = language_client.extract_key_phrases(documents = documents)[0]
+```
+
+Other language features, such as the conversational language understanding, require the request be built and sent differently.
+
+```csharp
+var data = new
+{
+    analysisInput = new
+    {
+        conversationItem = new
+        {
+            text = userText,
+            id = "1",
+            participantId = "1",
+        }
+    },
+    parameters = new
+    {
+        projectName,
+        deploymentName,
+        // Use Utf16CodeUnit for strings in .NET.
+        stringIndexType = "Utf16CodeUnit",
+    },
+    kind = "Conversation",
+};
+Response response = await client.AnalyzeConversationAsync(RequestContent.Create(data));
+```
+
+```python
+result = client.analyze_conversation(
+    task={
+        "kind": "Conversation",
+        "analysisInput": {
+            "conversationItem": {
+                "participantId": "1",
+                "id": "1",
+                "modality": "text",
+                "language": "en",
+                "text": query
+            },
+            "isLoggingEnabled": False
+        },
+        "parameters": {
+            "projectName": cls_project,
+            "deploymentName": deployment_slot,
+            "verbose": True
+        }
+    }
+)
+```
+
+### Query using the REST API
+
+To query your model using REST, create a **POST** request to the appropriate URL with the appropriate body specified. For built in features such as language detection or sentiment analysis, you'll query the `analyze-text` endpoint.
 
 > [!TIP]
 > Remember each request needs to be authenticated with your Azure AI Language resource key in the `Ocp-Apim-Subscription-Key` header
@@ -142,28 +209,7 @@ If you want to detect the language, for example, the JSON body would look someth
 }
 ```
 
-A sample response to your query would be similar to the following.
-
-```json
-{
-    "kind": "LanguageDetectionResults",
-    "results": {
-        "documents": [{
-            "id": "1",
-            "detectedLanguage": {
-                "name": "English",
-                "iso6391Name": "en",
-                "confidenceScore": 1.0
-            },
-            "warnings": []
-        }],
-        "errors": [],
-        "modelVersion": "{VERSION}"
-    }
-}
-```
-
-Other language features, such as the conversational language understanding discussed above, require the request be routed to a different endpoint. For example, the conversational language understanding request would be sent to the following.
+Other language features, such as the conversational language understanding, require the request be routed to a different endpoint. For example, the conversational language understanding request would be sent to the following.
 
 ```rest
 {ENDPOINT}/language/:analyze-conversations?api-version={API-VERSION}
@@ -199,7 +245,26 @@ That request would include a JSON body similar to the following.
 |`{PROJECT-NAME}`     | The name of the project where you built your model   |
 |`{DEPLOYMENT-NAME}`     | The name of your deployment  |
 
-A sample response to your query would be similar to the following.
+### Sample response
+
+The query response from an SDK will in the object returned, which varies depending on the feature (such as in `response.key_phrases` or `response.Value`). The REST API will return JSON that would be similar to the following.
+
+```json
+{
+    "kind": "KeyPhraseExtractionResults",
+    "results": {
+        "documents": [{
+            "id": "1",
+            "keyPhrases": ["modern medical office", "Dr. Smith", "great staff"],
+            "warnings": []
+        }],
+        "errors": [],
+        "modelVersion": "{VERSION}"
+    }
+}
+```
+
+For other models like conversational language understanding, a sample response to your query would be similar to the following.
 
 ```json
 {
@@ -232,5 +297,7 @@ A sample response to your query would be similar to the following.
   }
 }
 ```
+
+The SDKs for both Python and C# return JSON that is very similar to the REST response.
 
 For full documentation on features, including examples and how-to guides, see the [Azure AI Language documentation](/azure/ai-services/language-service/?azure-portal=true) documentation pages.
