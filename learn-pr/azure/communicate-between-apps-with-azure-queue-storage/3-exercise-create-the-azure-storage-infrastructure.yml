@@ -7,10 +7,9 @@ metadata:
   ms.date: 04/04/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurecli
-  ms.prod: learning-azure
 interactive: bash
 azureSandbox: true
 durationInMinutes: 10

@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/03/2022
   author: padmalathas
   ms.author: padmalathas
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: How Azure HPC works
 durationInMinutes: 10
 content: |

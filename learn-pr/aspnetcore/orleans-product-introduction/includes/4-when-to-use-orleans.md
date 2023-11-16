@@ -7,13 +7,13 @@ Orleans provides a flexible framework for building applications that handle many
 
 The following table includes examples specific use cases across different types of applications and industries.
 
-|  Application type        | Sample use case|
-|---------|---------|
-|Ecommerce     |  Use Orleans to manage shopping carts, product inventory, user accounts, transactions, and more.      |
-|Live data apps     | Orleans can provide near real-time data for scenarios such as stock tickers, chat apps, and other interactive experiences.         |
-|Gaming     | Orleans can be used with games to support underlying infrastructure, such as managing sessions and rooms or tracking game state data.         |
-|Finance     | Orleans supports ACID transactions for scalable, reliable operations, such as financial transactions or banking tasks.         |
-|IoT and event-driven apps     |  Orleans can handle and process large volumes of incoming event data, such as constant transactions from fleets of GPS enabled smart devices.       |
+| Application type | Sample use case |
+|--|--|
+| Ecommerce | Use Orleans to manage shopping carts, product inventory, user accounts, transactions, and more. |
+| Live data apps | Orleans can provide near real-time data for scenarios such as stock tickers, chat apps, and other interactive experiences. |
+| Gaming | Orleans can be used with games to support underlying infrastructure, such as managing sessions and rooms or tracking game state data. |
+| Finance | Orleans supports ACID transactions for scalable, reliable operations, such as financial transactions or banking tasks. |
+| IoT and event-driven apps | Orleans can handle and process large volumes of incoming event data, such as constant transactions from fleets of GPS enabled smart devices. |
 | Task scheduling | Orleans grains support durable scheduling mechanisms, meaning you can design your app to execute code at specific times. Scheduling could be used to design an app that sends out reminders, notifications, or promotions at specific times. |
 
 Orleans is production ready and already supports major implementations of the preceding examples on popular platforms. For example, Orleans is currently used in products such as Skype, Halo, Gears of War, and Playfab. Microsoft also uses Orleans internally for various products and systems. The framework is battle tested and actively supported by Microsoft.

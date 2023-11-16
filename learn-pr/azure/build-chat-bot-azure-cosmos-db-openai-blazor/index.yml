@@ -9,7 +9,7 @@ metadata:
   author: seesharprun
   ms.author: sidandrews
   ms.reviewer: mjbrown
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: learning-azure
   ms.date: 10/17/2023
 title: Guided project - Build a chat bot using Azure OpenAI, Azure Cosmos DB for NoSQL, and Blazor

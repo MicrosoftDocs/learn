@@ -1,8 +1,8 @@
-In this module, we'll build a Spring Boot microservice that's cloud-enabled. It uses a Spring Cloud Service Registry and a [Spring Cloud Config Server](https://cloud.spring.io/spring-cloud-config), which are both managed and supported by Azure Spring Apps.
+In this module, we'll build a cloud-enabled Spring Boot microservice. It uses a Spring Cloud service registry and a [Spring Cloud Config Server](https://cloud.spring.io/spring-cloud-config), which are both managed and supported by Azure Spring Apps.
 
-This microservice will use Spring Data JPA to read and write data from an [Azure database for MySQL](/azure/mysql/?WT.mc_id=azurespringcloud-mslearn-judubois) database:
+This microservice uses Spring Data JPA to read and write data from an [Azure database for MySQL](/azure/mysql/?WT.mc_id=azurespringcloud-mslearn-judubois) database:
 
-- That database will be automatically bound to our service by Azure Spring Apps.
+- Azure Spring Apps automatically binds that database to our service.
 - Azure database for MySQL is a fully managed version of MySQL, running on Azure.
 
 ## Create the application on Azure Spring Apps
@@ -10,7 +10,7 @@ This microservice will use Spring Data JPA to read and write data from an [Azure
 Create a specific `todo-service` application in your Azure Spring Apps instance:
 
 ```bash
-az spring app create --name todo-service --resource-group "$RESOURCE_GROUP_NAME" --service "$SPRING_CLOUD_NAME" --runtime-version Java_11
+az spring app create --name todo-service --resource-group "$RESOURCE_GROUP_NAME" --service "$SPRING_CLOUD_NAME" --runtime-version Java_17
 ```
 
 ## Create a MySQL database
@@ -26,8 +26,7 @@ az mysql server create \
     --admin-user "spring"
 ```
 
-This operation can take a few minutes, and will output a JSON document: copy the **password** attribute in that document,
-as we'll use it later.
+This operation can take a few minutes, and outputs a JSON document: copy the **password** attribute in that document, as we'll use it later.
 
 Now create a **todos** database in that server, and open up its firewall so that Azure Spring Apps can access it:
 
@@ -52,31 +51,39 @@ Once this operation completes, you can have a look at what was created in the re
 
 Azure Spring Apps can automatically bind the MySQL database we created to our microservice.
 
-1. Go to **Apps** in your Azure Spring Apps instance.
+1. Navigate to your Azure Spring Apps instance.
+1. Select **Apps**.
 1. Select the **todo-service** application.
-1. Go to **Service bindings**.
-1. Click on **Create service binding**.
-    1. Give your binding a name, for example **mysql-todos**.
-    2. In the **Binding type** list, select **Azure database for MySQL**.
-    3. The **Resource name** should be the MySQL database you created earlier.
-    4. The **Database name** should be **todos**
-    5. The **User name** should be **spring@YOUR_DATABASE_NAME**, with **YOUR_DATABASE_NAME** being the name of your database, that we set up earlier as **${SPRING_CLOUD_NAME}-mysql** when creating it.
-    6. The **Password** is the **password** attribute that we copied earlier, when creating the server.
+1. Select **Service Connector** and then choose **+ Create**.
+    1. For **Service type**, select **DB for MySQL single server**.
+    2. Specify a connection name, for example *mysql_todos*.
+    3. Verify that the correct subscription is shown.
+    4. Choose the MySQL server created in the preceding steps.
+    5. Select the MySQL database created earlier.
+    6. Select **SpringBoot** as the Client type.
+    7. Select the **Next: Authentication** button.
+1. On the **Authentication** page, verify that **Connection string** is selected.
+1. Select **Continue with...Database credentials** and fill in the username and password fields. The username is "spring" and the password is the password attribute that we copied earlier.
 
-Select **Create**, and your Spring Boot application will have the MySQL database connection set up.
+    > [!NOTE]
+    > If you forget your password, you can reset it by using `az mysql server update -n ${SPRING_CLOUD_NAME}-mysql -g "$RESOURCE_GROUP_NAME" -p <new-password>`
+
+1. Verify that **Configure firewall rules to enable access to target service** is selected.
+1. Click on **Next: Review + Create**.
+1. After the **Validation passed** message appears, select the **Create** button to create the Service Connector.
 
 ## Create a Spring Boot microservice
 
-Now that we've provisioned the Azure Spring Apps instance and configured the service binding, let's get the code for `todo-service` ready.
+Now that we provisioned the Azure Spring Apps instance and configured the service binding, let's get the code for `todo-service` ready.
 
-To create our microservice, we'll use [https://start.spring.io/](https://start.spring.io/) with the command line:
+To create our microservice, we'll use [https://start.spring.io](https://start.spring.io) with the command line:
 
 ```bash
-curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=web,mysql,data-jpa,cloud-eureka,cloud-config-client -d baseDir=todo-service -d bootVersion=2.6.4.RELEASE -d javaVersion=11 | tar -xzvf -
+curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=web,mysql,data-jpa,cloud-eureka,cloud-config-client -d baseDir=todo-service -d bootVersion=3.1.5.RELEASE -d javaVersion=17 | tar -xzvf -
 ```
 
 > [!NOTE]
-> We use the `Spring Web`, `MySQL Driver`, `Spring Data JPA`, `Eureka Discovery Client` and the `Config Client` components.
+> We use the `Spring Web`, `MySQL Driver`, `Spring Data JPA`, `Eureka Discovery Client`, and the `Config Client` components.
 
 ## Add Spring code to manage data using Spring Data JPA
 
@@ -190,7 +197,7 @@ spring.jpa.hibernate.ddl-auto=create-drop
 
 ## Deploy the application
 
-You can now build your "todo-service" project and send it to Azure Spring Apps:
+You can now build your *todo-service* project and send it to Azure Spring Apps:
 
 ```bash
 cd todo-service
@@ -210,7 +217,7 @@ az spring app logs --name todo-service --service "$SPRING_CLOUD_NAME" --resource
 Now that the application is deployed, it's time to test it!
 
 1. In the Azure portal, go to **Apps** in your Azure Spring Apps instance.
-    1. Verify **todo-service** has a **Registration status** that says **0/1**. This information shows that it's correctly registered in the Spring Cloud Service Registry.
+    1. Verify **todo-service** has a **Registration status** that says **0/1**. This information shows that it's correctly registered in the Spring Cloud service registry.
     1. Select **todo-service** to have more information on the microservice.
 1. Copy/paste the "Test Endpoint" that is provided.
 
