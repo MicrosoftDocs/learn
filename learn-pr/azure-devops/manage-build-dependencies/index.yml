@@ -7,7 +7,7 @@ metadata:
   ms.date: 07/18/2023
   author: ramiMSFT
   ms.author: rabououn
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-devops-artifacts
   manager: mijacobs
 title: Manage build dependencies with Azure Artifacts
