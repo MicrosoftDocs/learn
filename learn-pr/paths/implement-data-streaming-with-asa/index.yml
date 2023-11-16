@@ -6,8 +6,7 @@ metadata:
   ms.date: 12/13/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Implement a Data Streaming Solution with Azure Stream Analytics
 prerequisites: |
   Before starting this learning path, you should have a fundamental understanding of cloud computing and data analytics.
