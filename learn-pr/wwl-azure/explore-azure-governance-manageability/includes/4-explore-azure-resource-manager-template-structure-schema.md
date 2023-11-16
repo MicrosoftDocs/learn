@@ -138,3 +138,4 @@ For more information, see [Track versions using API profiles](/azure/azure-resou
 ## Optional demo
 
 - [Demonstration: Explore QuickStart templates](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-explore-quickstart-templates.md)
+
