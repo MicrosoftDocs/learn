@@ -8,8 +8,7 @@ metadata:
   ms.author: alexwolf
   ms.date: 12/08/2022
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
