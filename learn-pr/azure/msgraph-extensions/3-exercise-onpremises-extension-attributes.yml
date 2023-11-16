@@ -8,8 +8,7 @@ metadata:
   ms.date: 01/24/2023
   author: FaithOmbongi
   ms.author: ombongifaith
-  ms.topic: interactive-tutorial
-  ms.prod: learning-graph
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/3-exercise-onpremises-extension-attributes.md)]

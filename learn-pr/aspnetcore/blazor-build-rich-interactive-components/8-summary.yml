@@ -8,8 +8,7 @@ metadata:
   ms.date: 10/10/2023
   author: IEvangelist
   ms.author: dapine
-  ms.topic: interactive-tutorial
-  ms.prod: learning-blazor
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/8-summary.md)]
