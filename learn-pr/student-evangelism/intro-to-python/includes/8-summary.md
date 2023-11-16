@@ -6,6 +6,7 @@ For more information, there are some great Python tutorials online, including [t
 
 Here are some useful links to explore some of the topics we've covered in this module.
 
+- Check out a [gamified experience to learn Python](https://vscodeedu.com) 
 - [Install Python for Windows 11 from the Microsoft Store](https://apps.microsoft.com/store/search?hl=en-us&gl=us&publisher=Python%20Software%20Foundation&azure-portal=true)
 - [Download and Install Python for Windows, macOS, and Linux](https://www.python.org/downloads?azure-portal=true)
 - [Learn the Pythonic way](https://docs.python-guide.org/writing/style?azure-portal=true)

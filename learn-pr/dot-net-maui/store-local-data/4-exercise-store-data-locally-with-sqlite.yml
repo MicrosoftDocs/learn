@@ -8,10 +8,9 @@ metadata:
   ms.date: 04/29/2022
   author: codemillmatt 
   ms.author: masoucou
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-dotnet
-  ms.prod: learning-languages
 durationInMinutes: 15 
 content: |
   [!include[](includes/4-exercise-store-data-locally-with-sqlite.md)]

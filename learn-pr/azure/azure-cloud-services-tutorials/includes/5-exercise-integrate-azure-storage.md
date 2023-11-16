@@ -51,7 +51,7 @@ While you can view and verify all data changes from the UI inside the applicatio
 ## Write and read data from Azure Table Storage
 
 > [!Note]
-> Building and testing on HoloLens 2 is not mandatory. You can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a HoloLens device. You can purchase devices at [HoloLens.com](http://hololens.com/).
+> Building and testing on HoloLens 2 is not mandatory. You can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a HoloLens device. You can purchase devices at [HoloLens.com](https://hololens.com/).
 
 With everything prepared, it's time to create a *Tracked Object*.
 

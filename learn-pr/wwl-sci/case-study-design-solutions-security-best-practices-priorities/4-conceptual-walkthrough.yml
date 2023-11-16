@@ -7,8 +7,7 @@ metadata:
   ms.date: 4/4/2023
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 25
 content: |
   [!include[](includes/4-conceptual-walkthrough.md)]
