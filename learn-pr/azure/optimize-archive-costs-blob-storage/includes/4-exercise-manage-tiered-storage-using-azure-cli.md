@@ -1,20 +1,20 @@
 Azure CLI provides a set of command-line tools for configuring and managing Azure Storage tiers.
 
-Using the manufacturing company example, you are now going to start to implement your company's storage tier strategy. You'll use Azure CLI commands to retrieve and modify tier levels for Azure Storage blobs.
+Using the manufacturing-company example, you're now going to start implementing your company's storage-tier strategy. You'll use Azure CLI commands to retrieve and modify tier levels for Azure Storage blobs.
 
 In this exercise, you'll use Azure CLI commands to retrieve and modify storage tier assignments.
 
 ### Prepare storage account and blob
 
-In this step, you'll create a new storage account and container, and then upload a file to the container.
+In this section, you'll create a new storage account and container, then upload a file to the container.
 
-1. Run the following command in the Cloud Shell to create a sample file that you will use in later examples.
+1. Run the following command in the Cloud Shell to create a sample file that you'll use in later examples:
 
    ```bash
    touch dummy.png
    ```
 
-1. Run the following commands in the Cloud Shell to populate environment variables with unique names that you will use to create a new storage account and a container within your storage account.
+1. Run the following commands in the Cloud Shell to populate environment variables with unique names that you'll use to create a new storage account and a container within your storage account. Replace `<your storage account name>` with a name of your choosing for your storage account:
 
    ```bash
    export LOCATION=eastus2
@@ -23,7 +23,7 @@ In this step, you'll create a new storage account and container, and then upload
    export CONTAINER_NAME=userguides
    ```
 
-1. Run the following command in the Cloud Shell to create a new storage account, using the environment variable you populated for the storage account name.
+1. Run the following command in the Cloud Shell to create a new storage account, using the environment variable you populated for the storage account name:
 
    ```azurecli
    az storage account create \
@@ -34,7 +34,7 @@ In this step, you'll create a new storage account and container, and then upload
        --sku Standard_LRS
    ```
 
-1. To create a container, you will need the storage account key.  This command retrieves the storage account key and stores it in an environment variable.
+1. To create a container, you'll need the storage account key. This command retrieves the storage account key and stores it in an environment variable:
 
    ```bash
    export AZURE_STORAGE_KEY="$(az storage account keys list -g $RESOURCE_GROUP -n $STORAGE_ACCOUNT_NAME --query [0].value --output tsv)"
@@ -49,7 +49,7 @@ In this step, you'll create a new storage account and container, and then upload
        --account-key $AZURE_STORAGE_KEY
    ```
 
-1. Run the following command in the Cloud Shell to upload the sample file as a blob to your new container. The file will be called **guitar-model8.png** when it has been uploaded.
+1. Run the following command in the Cloud Shell to upload the sample file as a blob to your new container. The file will be called **guitar-model8.png** when it's been uploaded:
 
    ```azurecli
    az storage blob upload \
@@ -72,9 +72,9 @@ In this step, you'll create a new storage account and container, and then upload
 
 ### Change blob Access tier from Hot to Cool
 
-In this step, you'll first change Access tier for your blob from Hot to Cool. You'll then upload second blob and change Access tier from Hot to Archive.
+In this step, you'll first change the access tier for your blob from Hot to Cool. You'll then upload second blob and change the access tier from Hot to Archive.
 
-1. Run the following command in the Cloud Shell to change the access tier of the blob from Hot to Cool:
+1. Run the following command in the Cloud Shell to change the blob's access tier from Hot to Cool:
 
    ```azurecli
    az storage blob set-tier \
@@ -94,7 +94,7 @@ In this step, you'll first change Access tier for your blob from Hot to Cool. Yo
        --account-name $STORAGE_ACCOUNT_NAME
    ```
 
-1. Run the following command in the Cloud Shell to change the access tier of the blob from Cool to Archive:
+1. Run the following command in the Cloud Shell to change the blob's access tier from Cool to Archive:
 
    ```azurecli
    az storage blob set-tier \
@@ -104,7 +104,7 @@ In this step, you'll first change Access tier for your blob from Hot to Cool. Yo
        --tier Archive
    ```
 
-1. Run the following command in the Cloud Shell to view the blobs in your container.
+1. Run the following command in the Cloud Shell to view the blobs in your container:
 
    ```azurecli
    az storage blob list \
@@ -113,9 +113,9 @@ In this step, you'll first change Access tier for your blob from Hot to Cool. Yo
        --output table
    ```
 
-1. Your two blobs are in different tiers, with bass-model3.png now offline.
+1. Your two blobs are in different tiers, with **bass-model3.png** now offline.
 
-1. Run the following command in the Cloud Shell to change the access tier of the blob from Archive to Hot:
+1. Run the following command in the Cloud Shell to change the blob's access tier from Archive to Hot:
 
    ```azurecli
    az storage blob set-tier \
@@ -134,4 +134,4 @@ In this step, you'll first change Access tier for your blob from Hot to Cool. Yo
        --output table
    ```
 
-1. You'll notice that the blob **bass-model3.png** is still set to Archive. This is due to rehydration that may take several hours.
+1. You'll notice that the blob **bass-model3.png** is still set to Archive. This is due to rehydration, which might take several hours.
