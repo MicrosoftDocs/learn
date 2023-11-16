@@ -21,7 +21,7 @@ abstract: |
   - Dial a number from within the app.
 prerequisites: |
   - [Visual Studio 2022](https://www.visualstudio.com?azure-portal=true) with the .NET MAUI workload
-  - Optional: Local installations [Visual Studio Code](https://code.visualstudio.com), the [.NET SDK](https://dotnet.microsoft.com/download) with .NET MAUI workload, and the [.NET MAUI Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-maui?azure-portal=true)
+  - Optional: Local installations [Visual Studio Code](https://code.visualstudio.com), the [.NET SDK](https://dotnet.microsoft.com/download) with .NET MAUI workload, and the [.NET MAUI Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-maui)
   - Familiarity with C# and .NET
 iconUrl: /training/achievements/build-mobile-and-desktop-apps.svg
 levels: 
