@@ -7,8 +7,7 @@ metadata:
   ms.date: 10/12/2023
   author: mbender-ms
   ms.author: mbender
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/09/2023
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Configure secure access to your workloads using Azure virtual networking
 prerequisites: ""
 summary: |

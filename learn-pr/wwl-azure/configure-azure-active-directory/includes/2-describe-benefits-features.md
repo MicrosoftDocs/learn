@@ -1,4 +1,4 @@
-[Microsoft Entra ID](/azure/active-directory/) is Microsoft's multi-tenant cloud-based directory and identity management service. Microsoft Entra ID helps to support user access to resources and applications, such as:
+[Microsoft Entra ID](/azure/active-directory/) is Microsoft's multitenant cloud-based directory and identity management service. Microsoft Entra ID helps to support user access to resources and applications, such as:
 
 - Internal resources and apps located on your corporate network.
 
@@ -9,8 +9,6 @@
 The following diagram shows an example implementation of Microsoft Entra ID. In this scenario, Windows Server AD is using [Kerberos](/windows-server/security/kerberos/kerberos-authentication-overview) and [NTLM authentication](/windows-server/security/kerberos/ntlm-overview) to on-premises applications.
 
 :::image type="content" source="../media/azure-active-directory-a3b1df09.png" alt-text="Diagram that shows Windows Server Active Directory using Kerberos and NTLM authentication to on-premises apps." border="false":::
-
-<a name='things-to-know-about-azure-ad-features'></a>
 
 ## Things to know about Microsoft Entra features
 
@@ -23,9 +21,7 @@ Let's examine some of the prominent features of Microsoft Entra ID.
 | **Secure remote access** | Microsoft Entra ID enables secure remote access for on-premises web apps. Secure access can include multifactor authentication (MFA), conditional access policies, and group-based access management. Users can access on-premises web apps from everywhere, including from the same portal. |
 | **Cloud extensibility** | Microsoft Entra ID can extend to the cloud to help you manage a consistent set of users, groups, passwords, and devices across environments. |
 | **Sensitive data protection** | Microsoft Entra ID offers unique identity protection capabilities to secure your sensitive data and apps. Admins can monitor for suspicious sign-in activity and potential vulnerabilities in a consolidated view of users and resources in the directory. |
-| **Self-service support** | Microsoft Entra ID lets you delegate tasks to company employees that might otherwise be completed by admins with higher access privileges. Providing self-service app access and password management through verification steps can reduce helpdesk calls and enhance security. |
-
-<a name='things-to-consider-when-using-azure-ad-features'></a>
+| **Self-service support** | Microsoft Entra ID lets you delegate selected administrator tasks to company employees. Providing self-service app access and password management through verification steps can reduce helpdesk calls and enhance security. |
 
 ## Things to consider when using Microsoft Entra features
 
@@ -41,6 +37,7 @@ Microsoft Entra ID offers many features and benefits. Consider which features ca
 
 - **Consider advanced protection for sensitive data**. Enhance the security of your sensitive data and apps by using the built-in protection features of Microsoft Entra ID. Your admins can utilize advanced security reports, notifications, remediation recommendations, and risk-based policies.
 
-- **Consider reduced costs, self-service options**. Take advantage of the Microsoft Entra self-service features to help reduce costs for your organization. Delegate certain tasks like resetting passwords, or creating and managing groups to your non-admin users.
+- **Consider reduced costs, self-service options**. Take advantage of the Microsoft Entra self-service features to help reduce costs for your organization. Delegate certain tasks like resetting passwords, or creating and managing groups to your nonadmin users.
 
 In the next unit, we explore the Microsoft Entra concepts that make these features possible.
+

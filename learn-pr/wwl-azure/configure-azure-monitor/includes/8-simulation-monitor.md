@@ -1,4 +1,3 @@
-
 ## Lab scenario
 
 Your organization wants insight into the performance and configuration of Azure resources. As the Azure Administrator you need to:

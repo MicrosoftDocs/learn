@@ -1,6 +1,6 @@
-Now that you know your server is compatible with Azure File Sync, you're ready to set up your Azure resources. In this exercise, you'll create the four components that you need to connect your company's file server.
+Now that you know your server is compatible with Azure File Sync, you're ready to set up your Azure resources. In this exercise, you create the four components that you need to connect your company's file server.
 
-The following video shows how to create the Azure resources you'll need. Use the steps in this exercise to continue following along in your Azure subscription.
+The following video shows how to create the Azure resources you need. Use the steps in this exercise to continue following along in your Azure subscription.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LBmt]
 
@@ -70,6 +70,8 @@ Wait for the storage account to be created.
 Wait for the Storage sync service to be created.
 
 1. When deployment completes, select **Go to resource**. Your **Storage Sync Service** pane appears.
+
+1. Select **Sync** > **Sync groups**.
 
 1. In the top menu bar, select **+ Sync group**. The **Sync group** pane appears.
 

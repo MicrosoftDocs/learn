@@ -1,4 +1,4 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.azure.azure-vmware-solution.summary
 title: Summary
 metadata:
@@ -7,8 +7,7 @@ metadata:
   ms.date: 03/23/2023
   author: Mahesh-MSFT
   ms.author: maksh
-  ms.topic: interactive-tutorial
-  ms.prod: azure-vmware-solution
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/12-summary.md)]
