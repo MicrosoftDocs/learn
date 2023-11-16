@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/07/2022
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Monitor and troubleshoot an IoT solution by using Azure Monitor
 prerequisites: |
   Ability to:

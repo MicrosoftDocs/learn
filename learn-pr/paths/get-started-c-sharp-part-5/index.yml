@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/04/2023
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Create methods in C# console applications (Get started with C#, Part 5)
 prerequisites: |
   - Experience with basic coding tasks such as instantiating variables, using various data types, and sending output to a console window.

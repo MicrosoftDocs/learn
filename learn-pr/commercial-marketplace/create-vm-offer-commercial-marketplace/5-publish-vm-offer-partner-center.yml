@@ -7,8 +7,7 @@ metadata:
   ms.date: 06/03/2021
   author: marleva
   ms.author: maevan
-  ms.topic: interactive-tutorial
-  ms.service: marketplace
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/5-publish-vm-offer-partner-center.md)]

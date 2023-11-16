@@ -9,8 +9,7 @@ metadata:
   author: rgward
   ms.author: bobward
   ms.reviewer: vanto
-  ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/5-security-scalability-availability.md)]
