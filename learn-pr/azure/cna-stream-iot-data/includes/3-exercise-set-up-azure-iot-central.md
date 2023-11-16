@@ -136,7 +136,7 @@ When the app is ready, you can navigate to it from the Azure portal:
 
    :::image type="content" source="../media/3-azure-iot-connection-window.png" alt-text="Screenshot of the new Raspberry Pi device connection window in the IoT Central Application portal.":::
 
-1. Start another web browser window and navigate to the [Azure IoT Central Connection String Generator](https://dpsgen.z8.web.core.windows.net/?azure-portal=true) page.
+1. Start another web browser window and navigate to the [Azure IoT Central Connection String Generator](https://gloveboxes.github.io/Turn-a-Command-Line-tool-into-a-REST-API-with-Azure-Functions/dps-cstr.html) page.
 1. On the **Azure IoT Central Connection String Generator** page, paste the values of **Scope**, **Device ID**, and **Device Key** into their respective text boxes, and then select **Get Connection String**.
 
    > [!NOTE]
