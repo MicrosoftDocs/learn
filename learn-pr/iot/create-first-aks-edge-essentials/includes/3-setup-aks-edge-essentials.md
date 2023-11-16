@@ -142,7 +142,7 @@ Now that the VM is created, let's prepare the machine for AKS Edge Essentials an
     Hit <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file and <kbd>Ctrl</kbd>+<kbd>Q</kbd> to exit the editor.
 
 
-1. Run the Azure CLI [az vm run-command create](/cli/azure/vm/run-command#az-vm-run-command-create) command to deliver the Powershell script to the VM and execute it:
+1. Run the Azure CLI [az vm run-command create](/cli/azure/vm/run-command#az-vm-run-command-create) command to deliver the PowerShell script to the VM and execute it:
 
     ```azurecli
     az vm run-command create --no-wait --name "installAKSEE" --vm-name myVM --resource-group <rgn>[sandbox resource group name]</rgn> --script @install-aks-ee.ps1

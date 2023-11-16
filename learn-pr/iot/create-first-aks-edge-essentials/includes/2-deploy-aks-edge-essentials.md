@@ -1,7 +1,5 @@
 Let's create the Azure virtual machine (VM) with Windows 11 Enterprise.
 
-<!-- TODO: Change all commands to Powershell! -->
-
 1. Execute the following command in the Azure Cloud Shell to set the variables for creating the Azure VM:
 
     ```powershell
@@ -72,7 +70,7 @@ Now that the VM is created, let's prepare the machine for AKS Edge Essentials an
     Invoke-WebRequest -Uri "https://raw.githubusercontent.com/asergaz/AKS-Edge/learnmodule/tools/scripts/AksEdgeQuickStart/AksEdgeQuickStartForLearn.ps1" -OutFile "AksEdgeQuickStartForLearn.ps1"
     ```
 
-1. Run the Powershell[Set-AzVMRunCommand](/powershell/module/az.compute/set-azvmruncommand) command to deliver the Powershell script to the VM and execute it:
+1. Run the PowerShell [Set-AzVMRunCommand](/powershell/module/az.compute/set-azvmruncommand) command to deliver the PowerShell script to the VM and execute it:
 
     ```powershell
     $resourcegroup = <rgn>[sandbox resource group name]</rgn>
@@ -97,7 +95,7 @@ Now that the VM is created, let's prepare the machine for AKS Edge Essentials an
       - Installs required host OS features (`Install-AksEdgeHostFeatures`).
       - Deploys a single machine K3S cluster with a Linux and Windows node.
 
-1. Run the Powershell [Get-AzVMRunCommand](/powershell/module/az.compute/get-azvmruncommand) command to retrieve the output of the PowerShell script you executed in the VM:
+1. Run the PowerShell [Get-AzVMRunCommand](/powershell/module/az.compute/get-azvmruncommand) command to retrieve the output of the PowerShell script you executed in the VM:
 
     ```powershell
     $resourcegroup = <rgn>[sandbox resource group name]</rgn>
