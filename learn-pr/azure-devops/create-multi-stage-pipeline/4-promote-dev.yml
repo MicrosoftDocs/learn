@@ -8,8 +8,7 @@ metadata:
   ms.date: 08/19/2022
   author: juliakm
   ms.author: jukullam
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/4-promote-dev.md)]
