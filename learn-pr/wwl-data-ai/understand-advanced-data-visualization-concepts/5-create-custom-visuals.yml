@@ -7,10 +7,9 @@ metadata:
   ms.date: 08/17/2022
   author: wwlpublish
   ms.author: anrudduc
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-python
-  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 2
