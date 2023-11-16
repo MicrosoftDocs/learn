@@ -8,7 +8,8 @@ The following illustration shows how Docker Hub communicates with Docker Host.
 
 ## How to push a container image to a Docker Repo
 
-> [!Video https://www.youtube.com/embed/r_tGl4zF1ZQ]
+<iframe width="854" height="480" src="https://www.youtube.com/embed/r_tGl4zF1ZQ" title="How to move Azure Storage Blobs between containers" allowfullscreen></iframe>
+
 
 ### Things to know about Docker and containers
 
