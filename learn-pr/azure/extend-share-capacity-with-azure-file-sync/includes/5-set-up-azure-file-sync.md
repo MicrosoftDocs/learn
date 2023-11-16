@@ -1,8 +1,8 @@
-You've successfully evaluated the target server and found it suitable. Now, you'll prepare your Azure environment to deploy Azure File Sync and investigate what steps are required.
+You successfully evaluate the target server and found it suitable. Now, prepare your Azure environment to deploy Azure File Sync and investigate what steps are required.
 
-In this unit, you'll learn about the components and services that Azure File Sync relies on.
+In this unit, you learn about the components and services that Azure File Sync relies on.
 
-To support Azure File Sync, there are a number of resources that you need to create in your Azure subscription. Create these resources in the following order:
+To support Azure File Sync, there are many resources that you need to create in your Azure subscription. Create these resources in the following order:
 
 ## 1. Storage account
 
@@ -10,7 +10,7 @@ The storage account is used to store the file share. In Azure, a storage account
 
 ## 2. File share
 
-The file share is the cloud version of a normal on-premises file share. It will store all files and folders. You can control the size of the file share by specifying a quota size. You can change the quota later if you need to.
+The file share is the cloud version of a normal on-premises file share. It stores all files and folders. You can control the size of the file share by specifying a quota size. You can change the quota later if you need to.
 
 ## 3. Storage Sync Service
 

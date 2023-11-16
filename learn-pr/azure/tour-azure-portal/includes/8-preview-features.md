@@ -1,4 +1,4 @@
-Microsoft offers previews of Azure features for evaluation purposes. With *Azure Preview Features*, you can try out prerelease features and services before they are rolled out to everyone.
+Microsoft offers previews of Azure features for evaluation purposes. With *Azure Preview Features*, you can try out prerelease features and services before they're rolled out to everyone.
 
 Some common types of previews that you might see include:
 

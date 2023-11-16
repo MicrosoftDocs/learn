@@ -6,8 +6,7 @@ metadata:
   ms.date: 07/09/2023
   author: shsagir
   ms.author: shsagir
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: learning-path
 title: Data analysis in Azure Data Explorer with Kusto Query Language
 prerequisites: |
   The following pre-requisite should be completed:

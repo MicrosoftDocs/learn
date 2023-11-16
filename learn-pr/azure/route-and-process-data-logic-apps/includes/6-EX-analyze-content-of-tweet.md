@@ -8,13 +8,15 @@ In this exercise, we're going to continue work on our social media monitoring ap
 
 The Azure AI Language API provides natural language processing for text and includes capabilities such as sentiment analysis, key phrase extraction, language detection, and entity linking. We'll use this API for sentiment analysis and run a script to programmatically complete the following tasks:
 
-- Set up an Azure AI services account in the sandbox environment, making the account free for use in this module.
+- Set up an Azure AI services account.
 
 - Register the Text Analytics service.
 
 - Return an account key and an endpoint URL for the Azure AI services. For this exercise, we need these values to make calls and get back sentiment scores.
 
-1. In Azure Cloud Shell to the right, run the following `curl` command to copy the **setup-textanalytics.sh** script from GitHub:
+1. In the Azure portal, open a Cloud Shell session by selecting the **Cloud Shell** icon along the top of the screen. You can also open a Cloud Shell window at [https://shell.azure.com](https://shell.azure.com).
+
+1. In the Cloud Shell window, run the following `curl` command to copy the **setup-textanalytics.sh** script from GitHub:
 
    ```azurecli
    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-route-and-process-data-logic-apps/master/setup-textanalytics.sh > setup-textanalytics.sh
@@ -40,7 +42,7 @@ Now, we'll add the **Sentiment** action to our workflow using the Azure portal.
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), return to the workflow designer. On the logic app resource menu, under **Development Tools**, select **Logic app designer**.
 
-1. Under the Twitter trigger, select **New step**.
+1. Under the X trigger, select **New step**.
 
 1. In the **Choose an operation** search box, enter **Cognitive Services**.
 
@@ -48,7 +50,7 @@ Now, we'll add the **Sentiment** action to our workflow using the Azure portal.
 
 1. In the **Actions** section, select **Sentiment**.
 
-   The connection profile box appears so that you can provide informtion for your connection to your Azure AI services account.
+   The connection profile box appears so that you can provide information for your connection to your Azure AI services account.
 
 1. Provide the following connection information:
 
@@ -59,20 +61,20 @@ Now, we'll add the **Sentiment** action to our workflow using the Azure portal.
    | **Account Key** | Yes | <*your-previously-saved-API-key*> | The key to use for accessing your Azure AI services account |
    | **Site URL** | No | <*your-saved-endpoint-address*> | The URL address for your Azure AI services account endpoint |
    |||||
-   
+
 1. When you're done, select **Create**.
 
    The **Sentiment** action and properties now appear.
 
 ## Set up the Sentiment action
 
-Next, we'll set up the **Sentiment** action's properties to pass in the tweet text from the Twitter trigger.
+Next, we'll set up the **Sentiment** action's properties to pass in the tweet text from the X trigger.
 
 1. In the **Sentiment** action, select the **documents-id** field. Provide a unique ID to assign your document.
 
 1. Next, select the **documents-text** field.
 
-   The dynamic content list appears for you to select outputs from the prededing trigger or any actions.
+   The dynamic content list appears for you to select outputs from the preceding trigger or any actions.
 
 1. From the dynamic content list, under **When a new tweet is posted**, select **Tweet text**.
 
@@ -88,7 +90,7 @@ In this section, you'll learn how to monitor your logic app workflow's execution
 
 1. On the logic app resource menu, select **Overview**.
 
-1. On the **Oveview** pane toolbar, select **Refresh** every minute until the **Runs history** section shows at least one completed run.
+1. On the **Overview** pane toolbar, select **Refresh** every minute until the **Runs history** section shows at least one completed run.
 
    > [!NOTE]
    > 

@@ -1,14 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.get-started-with-artificial-intelligence-on-azure
 metadata:
-  title: 'Microsoft Azure AI Fundamentals: Get started with artificial intelligence'
-  description: 'Microsoft Azure AI Fundamentals: Get started with artificial intelligence'
-  ms.date: 10/06/2023
+  title: 'Microsoft Azure AI Fundamentals: AI Overview'
+  description: 'Microsoft Azure AI Fundamentals: AI Overview'
+  ms.date: 10/30/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: 'Microsoft Azure AI Fundamentals: Get started with artificial intelligence'
+  ms.topic: learning-path
+title: 'Microsoft Azure AI Fundamentals: AI Overview'
 prerequisites: |
   None
 summary: |
@@ -29,7 +28,6 @@ subjects:
 modules:
 - learn.wwl.get-started-ai-fundamentals
 - learn.wwl.fundamentals-machine-learning
-- learn.wwl.explore-azure-openai
 - learn.wwl.fundamentals-azure-ai-services
 trophy:
   uid: learn.wwl.get-started-with-artificial-intelligence-on-azure.trophy
