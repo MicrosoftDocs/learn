@@ -9,8 +9,7 @@ metadata:
   author: markingmyname
   ms.author: maghan
   manager: jroth
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 9
 content: |
   [!include[](includes/3-how-azure-database-for-mysql-works.md)]
