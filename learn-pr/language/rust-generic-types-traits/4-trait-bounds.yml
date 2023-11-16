@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/16/2021
   author: danmabee
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Use trait bounds and generic functions
 durationInMinutes: 4
