@@ -22,8 +22,8 @@ AnalyzeResult result = operation.Value;
 **Python**
 
 ```python
-endpoint = "YOUR_FORM_RECOGNIZER_ENDPOINT"
-key = "YOUR_FORM_RECOGNIZER_KEY"
+endpoint = "YOUR_DOC_INTELLIGENCE_ENDPOINT"
+key = "YOUR_DOC_INTELLIGENCE_KEY"
 
 model_id = "YOUR_CUSTOM_BUILT_MODEL_ID"
 formUrl = "YOUR_DOCUMENT"
@@ -98,7 +98,7 @@ Example **analyze document** JSON response:
                     ...
 ```
 
-Explore the documentation for [supported language quickstarts](/azure/ai-services/document-intelligence/quickstarts/get-started-sdks-rest-api?azure-portal=true)
+Explore the documentation for [supported language quickstarts](/azure/ai-services/document-intelligence/quickstarts/get-started-sdks-rest-api?azure-portal=true).
 
 ## Understanding confidence scores 
 
