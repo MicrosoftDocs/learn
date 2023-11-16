@@ -7,9 +7,7 @@ metadata:
   ms.date: 11/02/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.service: artificial-intelligence
-  ms.subservice: language-service
-durationInMinutes: 6
+  ms.topic: unit
+durationInMinutes: 10
 content: |
   [!include[](includes/3-get-started-azure.md)]

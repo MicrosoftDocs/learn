@@ -6,8 +6,7 @@ metadata:
   author: msangapu-msft
   ms.date: 07/06/2020
   ms.author: msangapu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Migrate ASP.NET Apps to Azure
 prerequisites: |
   - Some familiarity in working with virtual machines, Windows Server, and IIS

@@ -6,8 +6,7 @@ metadata:
   ms.date: 11/01/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: learning-path
 title: Extract data from forms by using Azure AI Document Intelligence
 prerequisites: |
   - None

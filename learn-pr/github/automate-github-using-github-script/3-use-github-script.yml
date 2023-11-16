@@ -7,10 +7,9 @@ metadata:
   ms.date: 06/26/2020
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-js
-  ms.prod: learning-azure
 durationInMinutes: 11
 content: |
   [!include[](includes/3-use-github-script.md)]
