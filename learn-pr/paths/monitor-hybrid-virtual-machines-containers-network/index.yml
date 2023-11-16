@@ -8,8 +8,7 @@ metadata:
   ms.date: 07/03/2023
   author: guywi-ms
   ms.author: guywild
-  ms.topic: interactive-tutorial
-  ms.service: azure-monitor
+  ms.topic: learning-path
 prerequisites: |
   - An Azure account with an [active subscription](https://azure.microsoft.com/free).
   - Familiarity with Azure virtual machines, Azure Arc, networking, and Kubernetes and its concepts.

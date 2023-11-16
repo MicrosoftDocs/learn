@@ -30,7 +30,7 @@ We'll use a script to create the Azure AI Document Intelligence resource, a stor
 1. Change the **03-composed-model** directory and then execute the setup script:
 
    ``` bash
-   cd doc-intelligence/03-composed-model/
+   cd doc-intelligence/Labfiles/03-composed-model/
    bash setup.sh
    ```
 

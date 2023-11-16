@@ -42,7 +42,7 @@ Next, we'll explore each of these items.
 
 The Azure Cloud Shell is available in the Sandbox environment that we're using for this exercise, but the Sandbox version of the shell has reduced functionality. To explore all of the Azure Cloud Shell features, use your own Azure subscription.
 
-1. Select the Azure Cloud Shell (`>_`) icon in the toolbar. Azure Cloud Shell will launch at the bottom of the screen.
+1. Select the Azure Cloud Shell (`>_`) icon in the toolbar. Azure Cloud Shell launches at the bottom of the screen.
 
 1. Read the welcome menu that appears, then select either **Bash** or **PowerShell**.
 
@@ -52,11 +52,7 @@ The Azure Cloud Shell is available in the Sandbox environment that we're using f
 
 ![Icon representing the directory and subscription option on the global control menu in the Azure portal.](../media/5-subscription-icon.png)
 
-1. Select the **Directory + Subscription** (book and filter) icon to show the **Directories + subscriptions** pane.  
-
-    This is where you can switch between multiple subscriptions or directories. You should see that you are in the Concierge Subscription of the Microsoft Learn Sandbox directory here. If your account has access to other Azure directories, those directories subscriptions will be available as well.
-
-1. Select the **X** in the top right-hand corner to close the **Directories + subscriptions** pane.
+Directories and subscriptions used to be accessed with this icon. The **Directories + subscriptions** feature, though, is now located on the portal settings page. Access the portal settings page by selecting the gear icon.
 
 ## Notifications
 

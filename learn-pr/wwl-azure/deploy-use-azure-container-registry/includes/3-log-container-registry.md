@@ -22,7 +22,7 @@ The output should resemble the image seen here.
 Sign-in to the registry using the resource name.
 
 ```azurecli
-az acr login --name <registry-name>
+az acr login --name <acrName>
 ```
 
 Example:

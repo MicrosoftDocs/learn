@@ -8,8 +8,7 @@ metadata:
   author: steved0x
   ms.author: sdanie
   #ms.learn-contact: thpetche
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Build applications with Azure DevOps
 summary: |
   Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to configure build pipelines that continuously build, test, and verify your applications.

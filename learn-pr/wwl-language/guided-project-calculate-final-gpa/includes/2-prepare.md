@@ -53,3 +53,4 @@ Use the following steps to prepare for the Guided project exercises:
     ```
 
 Now you're ready to begin the Guided project exercises. Good luck!
+

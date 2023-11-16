@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.exercise-create-static-web-app
-title: |
-  Exercise - Create a Static Web App with React
+title: Exercise - Create a Static Web App with React
 metadata:
-  title: |
-    Exercise - Create a Static Web App with React
+  title: Exercise - Create a Static Web App with React
   description: "Create a Static Web App with React"
   ms.date: 9/5/2023
   author: carlottac94
