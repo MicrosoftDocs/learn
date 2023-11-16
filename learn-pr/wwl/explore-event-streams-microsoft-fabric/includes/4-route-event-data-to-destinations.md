@@ -81,28 +81,40 @@ This processor operation is contained within the Event Task and you can edit it 
 
 Windowing functions are a way to perform operations on the data contained in temporal windows, such as aggregating, filtering, or transforming streaming events based on time. Windowing functions are useful for analyzing streaming data that changes over time, such as sensor readings, web clicks, on-line transactions, and more and provide great flexibility to keep an accurate record of events as they occurred.
 
-Earlier, we mentioned the **Group by** operator in the event processor editor. This graphical interface, allows us to define the logic we need for processing, transforming, and routing event data. There are four parameters that need specified in the **Group by** operator settings to use these windowing functions that include:
+Earlier, we mentioned the **Group by** operator in the event processor editor. This graphical interface allows us to define the logic we need for processing, transforming, and routing event data. There are four parameters that need specified in the **Group by** operator settings to use these windowing functions that include:
 
 - The **window type**, which can be **tumbling, sliding, snapshot, hopping**, or **session**.
   - **tumbling windows** divides incoming events into fixed and non-overlapping intervals based on arrival time.
-  
+
+    This window shows a count of tweets per time zone every 10 seconds apart.
+      
      ![Screenshot of the tumbling window concept.](./media/../../media/tumbling-window.png)
 
   - **sliding windows** takes the events into fixed and overlapping intervals based on time and divides them.
+   
+     This window is a 10-second sliding window that will alert the user whenever a topic is mentioned more than 3 times in under 10 seconds
   
      ![Screenshot of the sliding window concept.](./../media/sliding-window.png)
 
+    > [NOTE]
+    > All of the tweets belong to the same topic in this scenario
+
   - **session windows** simply divides events into variable and non-overlapping intervals which are based on a gap of lack of activity.
+    
+    This window will show the total count of tweets that occur within five minutes of one another
   
      ![Screenshot of the session window concept.](./../media/session-window.png)
 
   - **hopping windows** hopping windows are different from **tumbling** windows as they model scheduled overlapping window.
-
-     ![Screenshot of the hopping window concept.](./../media/hopping-window.png)
+  
+    This is a 10 second hopping window which refreshes every 5 seconds and provides the total count of tweets over the past 10 seconds.
+    
+      ![Screenshot of the hopping window concept.](./../media/hopping-window.png)
 
   - **snapshot windows** snapshot windows group eventstream events that have the same timestamp and are unlike the other windowing functions, which require the function to be named. In 
-  - **snapshot windows** you simply add the ```System.Timestam()``` to the ```GROUP BY``` clause.
+  - **snapshot windows** you simply add the ```System.Timestamp()``` to the ```GROUP BY``` clause.
 
+    This window provides a count of tweets with the same topic type that occur at exactly the same time.
 
      ![Screenshot of the snapshot window concept.](./../media/snapshot-window.png)
 

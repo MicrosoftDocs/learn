@@ -1,4 +1,4 @@
-You've deployed Azure File Sync and configured both the Azure and on-premises environments. In this exercise, you'll map a drive to the Azure file share and check that the file sync works.
+You deployed Azure File Sync and configured both the Azure and on-premises environments. In this exercise, you map a drive to the Azure file share and check that the file sync works.
 
 ## Find your connection details
 
@@ -10,7 +10,7 @@ You've deployed Azure File Sync and configured both the Azure and on-premises en
 
    ![Screenshot of the Access keys option under Security + settings.](../media/10-access-keys-option.png)
 
-1. Under **key1**, copy the **Key** value. You'll use this key to set up the mapped drive.
+1. Under **key1**, copy the **Key** value. Use this key to set up the mapped drive.
 
 ## Create a mapped drive to the Azure file share
 

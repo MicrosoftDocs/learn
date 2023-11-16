@@ -4,13 +4,11 @@ title: Configure connectors to apps
 metadata:
   title: Configure connectors to apps
   description: "Configure connectors to apps"
-  ms.date: 05/15/2023
+  ms.date: 10/26/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.topic: unit
+  ms.prod: identity-and-access
+durationInMinutes: 7
 content: |
   [!include[](includes/3-configure-connectors-apps.md)]
