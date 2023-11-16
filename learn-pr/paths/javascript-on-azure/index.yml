@@ -7,8 +7,7 @@ metadata:
   ms.date: 06/06/2023
   author: diberry
   ms.author: diberry
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: JavaScript on Azure
 summary: |
   Use the Azure JavaScript SDKs to build cloud-based applications.   
