@@ -9,22 +9,22 @@ The main takeaways from this module are:
 
 ## Learn more with documentation
 
-- [Azure Virtual Machines documentation](/azure/virtual-machines/).
+- [Azure Virtual Machines documentation](/azure/virtual-machines/). This article is your starting point for all things Azure virtual machines. 
 
-- [Virtual machine selector](https://azure.microsoft.com/pricing/vm-selector/).
+- [Virtual machine selector](https://azure.microsoft.com/pricing/vm-selector/). This tool helps you find the virtual machines for your needs and budget. 
 
 ## Learn more with self-paced training
 
-- [Plan and deploy Windows Server IaaS Virtual Machines (demonstration videos)](/training/modules/plan-deploy-windows-server-iaas-virtual-machines)
+- [Introduction to Azure Virtual Machines (sandbox)](/training/modules/intro-to-azure-virtual-machines). Learn about the decisions you make before creating a virtual machine.
 
-- [Provision a Linux virtual machine in Microsoft Azure](/training/modules/provision-linux-virtual-machine-in-azure/)
+- [Plan and deploy Windows Server IaaS Virtual Machines (demonstration videos)](/training/modules/plan-deploy-windows-server-iaas-virtual-machines). Understand Azure compute and storage in relation to Azure VMs. Deploy Azure VMs by using the Azure portal, Azure CLI, or templates.
 
-- [Choose the right disk storage for your virtual machine workload](/training/modules/choose-the-right-disk-storage-for-vm-workload/).
-
-- [Connect to virtual machines through the Azure portal by using Azure Bastion](/training/modules/connect-vm-with-azure-bastion/)
-
-## Learn more with hands-on exercises
-
-- [Introduction to Azure Virtual Machines (sandbox)](/training/modules/intro-to-azure-virtual-machines).
+- [Connect to virtual machines through the Azure portal by using Azure Bastion](/training/modules/connect-vm-with-azure-bastion/). Learn how to deploy Azure Bastion to securely connect to Azure virtual machines.
 
 - [Create a Windows virtual machines in Azure (sandbox)](/training/modules/create-windows-virtual-machine-in-azure/).
+
+- [Provision a Linux virtual machine in Microsoft Azure](/training/modules/provision-linux-virtual-machine-in-azure/). Learn how to deploy a Linux virtual machine with Bicep, the Azure portal, and the Azure CLI. 
+
+- [Choose the right disk storage for your virtual machine workload](/training/modules/choose-the-right-disk-storage-for-vm-workload/). Learn about the variety of disk storage options for virtual machine workloads. 
+
+

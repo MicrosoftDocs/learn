@@ -1,11 +1,10 @@
 In [Create a build pipeline with Azure Pipelines](/training/modules/create-a-build-pipeline?azure-portal=true), you created a basic but complete build configuration for an ASP.NET Core web application.
 
-In this module, you'll extend this build configuration by implementing a code collaboration strategy that uses Git and GitHub.
+In this module, you'll extend this build configuration by implementing a code-collaboration strategy that uses Git and GitHub.
 
-Collaboration is a key DevOps value. Developers need a way to work with source code and share their code revisions with others. A source control system facilitates cooperation among developers and more frequent deployments to improve the product.
+Collaboration is a key DevOps value. Developers need a way to work with source code and share their code revisions with others. A source-control system facilitates cooperation among developers and more frequent deployments to improve the product.
 
-Azure DevOps works with different kinds of source control, but many Azure DevOps organizations choose to use Git. Git is a distributed system in which all contributors have their own copy of the work. In this module, you use the branching and merging capabilities of Git to more efficiently work with other developers. You also use GitHub, a central location for teams to host their projects and share their work.
-
+Azure DevOps works with different kinds of source control, but many Azure DevOps organizations choose to use Git. Git is a distributed system in which all contributors have their own copy of the work. In this module, you'll use the branching and merging capabilities of Git to more efficiently work with other developers. You'll also use GitHub, a central location for teams to host their projects and share their work.
 
 ## Learning objectives
 
