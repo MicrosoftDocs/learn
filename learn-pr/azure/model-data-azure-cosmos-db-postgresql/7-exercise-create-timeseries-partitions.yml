@@ -10,8 +10,7 @@ metadata:
   author: seesharprun
   ms.author: sidandrews
   ms.reviewer: jonels
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/7-exercise-create-timeseries-partitions.md)]
