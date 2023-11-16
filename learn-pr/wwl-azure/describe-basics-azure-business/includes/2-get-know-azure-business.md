@@ -1,4 +1,3 @@
-
 What is the cloud? What is Microsoft Azure? And what can they do for your business?
 
 Learn all about Azure and the cloud in this video.

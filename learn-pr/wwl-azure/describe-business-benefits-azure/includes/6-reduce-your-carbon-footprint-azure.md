@@ -1,4 +1,3 @@
-
 Many businesses are striving to reduce their carbon emissions and meet other sustainability goals.
 
 Microsoft Azure is more energy-efficient and less carbon-intensive than traditional IT systems, so by switching to Azure you’ll be furthering those goals at your business.

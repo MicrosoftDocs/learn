@@ -7,7 +7,7 @@ metadata:
   author: ramiMSFT
   ms.author: rabououn
   ms.custom: devdivchpfy22, engagement-fy23
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-devops-pipelines
   manager: mijacobs
 title: Automate Docker container deployments with Azure Pipelines
