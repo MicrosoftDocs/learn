@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
-  ms.service: fabric
 durationInMinutes: 12
 content: |
   [!include[](includes/2-get-started-with-kql-queries.md)]
