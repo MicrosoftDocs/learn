@@ -6,7 +6,7 @@ In this unit, you learn how to manually scale out a web app and how to scale it 
 
 ## App Service plans and scalability
 
-A web app that run in Azure typically uses Azure App Service to provide the hosting environment. App Service can arrange for multiple instances of the web app to run. It load balances incoming requests across these instances. Each instance runs on a virtual machine.
+A web app that runs in Azure typically uses Azure App Service to provide the hosting environment. App Service can arrange for multiple instances of the web app to run. It load balances incoming requests across these instances. Each instance runs on a virtual machine.
 
 An App Service plan defines the resources available to each instance. The App Service plan specifies the operating system (Windows or Linux), the hardware (memory, CPU processing capacity, disk storage, and so on), and the availability of services like automatic backup and restore.
 
