@@ -7,8 +7,7 @@ metadata:
   ms.date: 10/19/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-view-mr-3d.md)]

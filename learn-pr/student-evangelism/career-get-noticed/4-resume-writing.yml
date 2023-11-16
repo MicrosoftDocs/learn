@@ -7,8 +7,7 @@ metadata:
   description: This unit describes the various elements of a resume and how a great presentation can make recruiters sit up and take notice.
   author: gcordido
   ms.author: gcordido
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom:
   - team=nextgen
   - team=cloud_advocates
