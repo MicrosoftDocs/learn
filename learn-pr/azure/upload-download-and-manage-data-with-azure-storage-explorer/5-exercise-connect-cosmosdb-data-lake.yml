@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/23/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Connect Azure Storage Explorer to Azure Data Lake Storage
 durationInMinutes: 10
 interactive: bash
