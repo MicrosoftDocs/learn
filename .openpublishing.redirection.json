@@ -25256,6 +25256,86 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/1-execute-first-function-portal.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/2-setup-local-development.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/3-create-function-endpoint.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/4-configure-http-action.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/5-configure-url-route.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/6-read-input-data-from-url.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/7-return-data-to-caller.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/8-post-complex-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/9-add-remaining-endpoints.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/10-setup-cosmos-database.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/11-configure-cosmos-database-bindings.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/12-configure-cosmos-database-output-bindings.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/13-secure-during-development.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/14-deploy-with-github-actions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-foundations-serverless-developers/15-configure-cross-origin-resource-sharing.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/serverless/architectures/web-app",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure-fundamentals/azure-architecture-fundamentals/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
       "redirect_document_id": false
@@ -30124,6 +30204,11 @@
     {
       "source_path": "learn-pr/aspnetcore/microservices-resiliency-aspnet-core/6-implement-linkerd-resiliency.yml",
       "redirect_url": "/training/modules/microservices-resiliency-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/explore-fundamentals-of-knowledge-mining/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/document-intelligence-knowledge-mining/",
       "redirect_document_id": false
     }
   ]
