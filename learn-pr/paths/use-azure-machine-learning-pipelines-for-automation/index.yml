@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/06/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: unit
+  ms.topic: learning-path
 title: Optimize model training with pipelines in Azure Machine Learning
 prerequisites: |
   None
