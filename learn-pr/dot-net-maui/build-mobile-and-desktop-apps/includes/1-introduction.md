@@ -4,8 +4,6 @@ Suppose you work for a national/regional grocery store chain. The chain wants to
 
 You've been tasked with identifying the technology and building a proof-of-concept. You identify .NET MAUI as a likely technology choice. .NET MAUI enables you to reuse the same application code and markup for creating a user interface (UI), and easily access hardware and platform-specific features like the phone dialer and location services. Additionally, with .NET MAUI you can make use of the C# skills of the developers you already work with.
 
-<!--[!include[](../../../includes/install-vs-mobile-workload.md)]-->
-
 ## Learning objectives
 
 In this module, you will:
@@ -19,4 +17,7 @@ In this module, you will:
 ## Prerequisites
 
 - Visual Studio 2022 with the .NET MAUI workload installed
+- Optional: Visual Studio Code with the .NET MAUI Extension and .NET SDK with the .NET MAUI workload installed
 - Familiarity with C# and .NET
+
+[!include[](../../../includes/install-dotnet-maui-workload.md)]

@@ -8,8 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.reviewer: tozimmergren
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

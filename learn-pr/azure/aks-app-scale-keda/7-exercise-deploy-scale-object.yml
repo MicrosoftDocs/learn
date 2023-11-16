@@ -6,8 +6,7 @@ metadata:
   ms.date: 11/07/2023
   author: schaffererin
   ms.author: schaffererin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Deploy a scale object into your Azure Kubernetes Service cluster
 durationInMinutes: 10
 content: |
