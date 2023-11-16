@@ -39,7 +39,7 @@ The following sample query alerts you when an anomalous number of resources is c
 AzureActivity
 | where OperationName == "MICROSOFT.COMPUTE/VIRTUALMACHINES/WRITE"
 | where ActivityStatus == "Succeeded"
-| make-seriesdcount(ResourceId)  default=0 on EventSubmissionTimestamp in range(ago(7d), now(), 1d) by Caller
+| make-series dcount(ResourceId)  default=0 on EventSubmissionTimestamp in range(ago(7d), now(), 1d) by Caller
 ```
 
 > [!Tip]
