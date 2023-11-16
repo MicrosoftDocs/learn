@@ -1,4 +1,4 @@
-The app management lifecycle for Intune and Configuration Manager apps begins when an app is added and progresses through more phases until you remove the app. To help you get started with app management in Intune, let's take a look at these phases in more detail.
+The app management lifecycle for Intune and Configuration Manager apps begins when you add an app and it progresses through more phases until you remove the app. To help you get started with app management in Intune, let's take a look at these phases in more detail.
 
 ![App management lifecycle in Microsoft Intune.](../media/intro-to-endpoint-manager-20.png)
 
@@ -17,8 +17,8 @@ Intune and Configuration Manager both provide methods to configure app installat
 - iOS/iPadOS app configuration policies supply settings for compatible iOS/iPadOS apps that are used when the app is run. For example, an app might require specific branding settings or the name of a server to which it must connect.
 - Managed browser policies help you to configure settings for Microsoft Edge, which replaces the default device browser and lets you restrict the websites that your users can visit.
 - You can set specific settings for Microsoft Outlook when you install it.
-- Configure whether certain apps should be installed in User or System context.
-- Rules to detect if the app is already installed, needs to be updated, or has specific installation dependencies.
+- Configure whether to install certain apps in User or System context.
+- Rules to detect if the app is installed, needs to be updated, or has specific installation dependencies.
 
 ## Protect
 

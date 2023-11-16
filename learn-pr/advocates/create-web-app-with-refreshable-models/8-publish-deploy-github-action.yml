@@ -6,8 +6,7 @@ metadata:
   author: jlooper
   ms.date: 02/10/2020
   ms.author: jelooper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen, devx-track-azurecli
   azureSandbox: true
 title: Exercise -  publish your web app and deploy it with a GitHub Action

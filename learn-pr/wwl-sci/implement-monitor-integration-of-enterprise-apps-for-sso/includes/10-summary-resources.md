@@ -6,7 +6,7 @@ Now that you have reviewed this module, you should be able to:
  -  Integrate custom SaaS apps for SSO
  -  Implement application user provisioning
  -  Create and manage application collections
- -  Monitor and audit access/sign-on to Microsoft Entra integrated enterprise applications
+ -  Monitor and audit access/sign-on to Microsoft Entra ID integrated enterprise applications
 
 ## Resources
 
