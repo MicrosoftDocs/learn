@@ -25,12 +25,12 @@ Let's create the Azure virtual machine (VM) with Windows 11 Enterprise.
         Location = $location
         Name = $vmname
         Image = "MicrosoftVisualStudio:windowsplustools:base-win11-gen2:latest"
-        VirtualNetworkName = 'myVnet'
-        SubnetName = 'mySubnet'
-        SecurityGroupName = 'myNetworkSecurityGroup'
-        PublicIpAddressName = 'myPublicIpAddress'
+        VirtualNetworkName = "myVnet"
+        SubnetName = "mySubnet"
+        SecurityGroupName = "myNetworkSecurityGroup"
+        PublicIpAddressName = "myPublicIpAddress"
         Credential = $credential
-        Size = 'Standard_D2s_v3'
+        Size = "Standard_D2s_v3"
     }
     New-AzVm @params
     ```
