@@ -11,8 +11,7 @@ metadata:
   ms.custom:
     - team=nextgen
     - devx-track-python
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/5-raise-exceptions.md)]
