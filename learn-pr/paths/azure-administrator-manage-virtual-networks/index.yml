@@ -7,8 +7,7 @@ metadata:
   ms.date: 05/15/2020
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Configure and manage virtual networks for Azure administrators
 summary: |
   Learn how to configure and manage Azure network capabilities like connectivity services, application protection, application delivery, and network monitoring services. 

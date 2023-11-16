@@ -7,8 +7,7 @@ metadata:
   ms.date: 02/02/2022
   author: aurnovcy
   ms.author: aurnovc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/5-threat-intelligence-for-azure-arc-enabled-servers-with-microsoft-sentinel.md)]

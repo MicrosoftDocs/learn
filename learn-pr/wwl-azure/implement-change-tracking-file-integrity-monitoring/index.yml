@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/29/2021
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: windows
 title: Implement change tracking and file integrity monitoring for Windows IaaS VMs
 summary: In this module, you’ll learn how to monitor Windows Server Azure IaaS VMs for changes in files and the registry, as well as other monitor modifications made to application software.

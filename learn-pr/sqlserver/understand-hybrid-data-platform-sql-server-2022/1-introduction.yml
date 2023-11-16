@@ -7,10 +7,9 @@ metadata:
   ms.date: 04/19/2023
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - build-2023
-  ms.prod: learning-azure
 durationInMinutes: 18
 content: |
   [!include[](includes/1-introduction.md)]
