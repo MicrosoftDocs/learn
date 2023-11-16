@@ -31,7 +31,7 @@ In this section, you generate an X.509 CA certificate using OpenSSL. This certif
 
    The helper script and supporting files are hosted in the **Azure/azure-iot-sdk-c** open source project hosted on GitHub, which is a component of the Azure IoT Device SDK. The **certGen.sh** helper script provides you with a chance to see how CA certificates are used without diving too deeply into the specifics of OpenSSL configuration (which is outside the scope of this module).
 
-   For more instructions on using this helper script, and for instructions on how to use PowerShell instead of Bash, see: [https://github.com/Azure/azure-iot-sdk-c/blob/master/tools/CACertificates/CACertificateOverview.md](https://github.com/Azure/azure-iot-sdk-c/blob/master/tools/CACertificates/CACertificateOverview.md)
+   For more instructions on using this helper script, and for instructions on how to use PowerShell instead of Bash, see: [Managing test CA certificates for samples and tutorials](https://github.com/Azure/azure-iot-sdk-c/blob/master/tools/CACertificates/CACertificateOverview.md)
 
    > [!WARNING]
    > Certificates created by this helper script **MUST NOT** be used for production. They contain hard-coded passwords ("*1234*"), expire after 30 days, and are provided for demonstration purposes only. When using CA certificates in production, be sure to apply your company's security best practices for certificate creation and lifetime management.

@@ -350,7 +350,7 @@ In this task, you complete the following:
     ```
 
     > [!NOTE]
-    > If you don't have the DPS ID Scope (idScope) value, you can get a copy from from the Overview pane of the Device Provisioning Service in the Azure portal or by running the CLI command `az iot dps show --name dps-$suffix`.
+    > If you don't have the DPS ID Scope (idScope) value, you can get a copy by running the CLI command `az iot dps show --name dps-$suffix`.
 
 1. Locate the **certificateFileName** variable, and notice that its value is set to the name of the device certificate file that you generated (**sensor-thl-001-device.cert.pfx**). If you named the certificate file something else, update the variable value to match.
 
@@ -367,9 +367,11 @@ In this task, you complete the following:
 
 1. Open the Visual Studio Code **File** menu, then select **Save**.
 
+## Verify your work
+
 1. Open the **Terminal** menu, then select **New Terminal**.
 
-## Verify your work
+1. At the Terminal command prompt, ensure that the current working directory is the **\sensor-thl-001-device** folder.
 
 1. At the Visual Studio Terminal command prompt, build the code to check for any errors.
 
@@ -377,5 +379,4 @@ In this task, you complete the following:
    dotnet build ContainerDevice.csproj
    ```
 
-2. If you see any build errors listed, fix them before continuing to the next exercise.
-3. Ensure that you updated the code files correctly and that you saved your changes to the .csproj and .cs files.
+1. If you see any build errors listed, fix them before continuing to the next exercise.

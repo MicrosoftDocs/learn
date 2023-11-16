@@ -64,11 +64,11 @@ To complete this guided project, you need an IoT hub and a Device Provisioning S
    | Name    | Value |
    | -------- | ------- |
    | Resource group name  | Listed on this web page |
-   | Suffix | Stored in `$suffix`. For example, a value for `"$suffix"` is `"586732230"` |
+   | Suffix | Stored in `$suffix`. For example, a value for `$suffix` is `586732230` |
    | IoT hub connection string | Stored in `$hubConnectionString` |
-   | IoT hub name | The value for `name` in the JSON data returned from the `az iot hub create` command you ran in step 3. For example, a value for  `"name"` is `"hub-586732230"`.    |
-   | DPS name    | The value for `name` in the JSON data returned from the `az iot dps create` command you ran in step 4. For example, a value for  `"name"` is `"dps-586732230"`.    |
-   | DPS ID scope | The value for `idScope` in the JSON data returned from the `az iot dps create` command you ran in step 4. For example, the value for `"idScope"` is `"0ne00B3761F"`.
+   | IoT hub name | The value for `name` in the JSON data returned from the `az iot hub create` command you ran in step 3. For example, a value for  `name` is `hub-586732230`.    |
+   | DPS name    | The value for `name` in the JSON data returned from the `az iot dps create` command you ran in step 4. For example, a value for  `name` is `dps-586732230`.    |
+   | DPS ID scope | The value for `idScope` in the JSON data returned from the `az iot dps create` command you ran in step 4. For example, the value for `idScope` is `0ne00B3761F`.
 
 ### Development resources
 
