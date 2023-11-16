@@ -1,29 +1,24 @@
-
-
-
-With Codespaces configured, your goal is to develop the Python console minigame. You need to create the game logic following the specifications and use GitHub Copilot to help create the methods.
+You already have your Codespaces working with GitHub Copilot. In this challenge exercise, your goal is to develop the logic of the Python minigame with the help of GitHub Copilot based in the specifications bellow.
 
 ## Specification
 
-- **Game rules:**
-    - Rock beats scissors (breaking it).
-    - Scissors beat paper (cutting it).
-    - Paper beat rock (wrapping it).
-    - The minigame is multiplayer and the computer plays the role of your opponent and chooses a random element from the list of elements
+As we learned in the introduction to this challenge, the winner of the game is determined by three simple rules:
 
-- **Interaction with the player:**
-    - The console is used to interact with the player. 
-    - The player can choose one of the three options: `rock`, `paper`, or `scissors`. 
-    - The player can choose whether to play again.
-    - The player should be warned if they enter an invalid option. 
-    - The player is shown their score at the end of the game.
+- `Rock` beats scissors.
+- `Scissors` beat paper.
+- `Paper` beats rock.
 
-- **Validation of user input:**
-    - At each round, the player must enter one of the options in the list and be informed if they won, lost, or tied with the opponent.
-    - The minigame must handle user inputs, putting them in lowercase and informing the user if the option is invalid.
-    - By the end of each round, the player must answer whether they want to play again or not.
+### What you should consider in the game interactions
 
-Using Visual Studio Code in your browser and GitHub Copilot to assist you, create a minigame that meets the above specifications.
+Let's add some more excitement to this challenge and make the game multiplayer, where the computer will be your opponent and can randomly choose one of the elements (`rock`, `paper`, or `scissors`) for each move, just like you. Your interaction in the game will be through the console (Terminal).
+
+- The player can choose one of the three options `rock`, `paper`, or `scissors` and should be warned if they enter an invalid option.
+- At each round, the player must enter one of the options in the list and be informed if they won, lost, or tied with the opponent.
+- By the end of each round, the player can choose whether to play again.
+- Display the player's score at the end of the game.
+- The minigame must handle user inputs, putting them in lowercase and informing the user if the option is invalid.
+
+In your GitHub Codespaces, use the provided specifications to create prompts that can be utilized by GitHub Copilot to assist you in developing the minigame. Remember, GitHub Copilot uses comments to understand context and provide accurate suggestions during development.
 
 ## Check your work
 

@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/10/2019
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Use activity log alerts to alert on events within your Azure infrastructure
 durationInMinutes: 10
 content: |

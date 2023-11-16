@@ -91,18 +91,3 @@ To revert the entire OneDrive to an earlier state, perform the following steps i
 1. Select **Restore** to revert all changes done from the selected time.
 
 Restoring the entire OneDrive content can be useful if mass changes of files in a user's account occurred, such as the deletion of a large number of files or if malware has modified a large number of files, like ransomware does when a client is infected.
-
-## Recovery options for administrators
-
-When a document isn't present in the recycle bin anymore, but still retained by a retention policy, Administrators can access the preservation hold library and recover it directly. To access the preservation hold library of a site collection, the appropriate site-collection administrator permissions are required.
-
-Perform the following steps from the Office 365 portal, to access the preservation hold library of a SharePoint Online site collection:
-
-1. Navigate to SharePoint Online in your tenant.
-
-1. Select the site collection where the document shall be restored from.
-
-1. Select the cogwheel in the upper right-side and select **Site contents**.
-
-1. Select **Preservation Hold Library** from the **Contents** list.
-
