@@ -1,4 +1,3 @@
-
 Let’s revisit the core concepts of **cloud economics** mentioned in the previous unit. The **Describe the business benefits of Azure** module explores these concepts in greater detail. It’s also important to have a basic understanding of how to think about business economics and finance in the cloud.
 
 ## Capital expenditures vs. operational expenditures
@@ -12,7 +11,7 @@ A traditional, off-cloud IT system entails many **capital expenditures**, such a
 
 Capital expenditures are the costs of physically acquiring and caring for your IT capital. Without the cloud, this equipment sets the limits of what your business’s IT capabilities can do. If you want to expand your capabilities or even just reorganize the system, you’re going to have to acquire new IT capital or modify what you have, which will take time and money.
 
-:::image type="content" source="../media/cloud-model-comparison-f2fb4a4f.png" alt-text="An illustration showing the difference between the capital expenditures model and the operational expenditures model.":::
+:::image type="content" source="../media/cloud-model-comparison-f2fb4a4f.png" alt-text="Screenshot of An illustration showing the difference between the capital expenditures model and the operational expenditures model.":::
 
 
 With Microsoft Azure, since you’re connecting to cloud equipment over the Internet, you won’t have to worry about capital expenditures anymore. Instead, you can start strategizing around the more flexible **operational expenditures** of doing whatever you can imagine with Azure:

@@ -7,8 +7,7 @@ metadata:
   ms.date: 02/10/2021
   author: cherylmc
   ms.author: cherylmc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
