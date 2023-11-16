@@ -8,8 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-  ms.custom:
-  - N/A
 durationInMinutes: 20
 content: |
   [!include[](includes/9-simulation-policy.md)]
