@@ -10,7 +10,7 @@ SignalR is only as durable as its underlying connection. That is, if there's cau
 
 Another consideration is the scalability of SignalR. Depending on the number of concurrently connected clients, your web server could experience *resource contention* when it reaches its limits. In situations like this, you would likely need to deploy the application to a server farm and use a backplane. Implementing this on your own can be tedious.
 
-Alternatively, you could resolve this problem by using [Azure SignalR Service](/azure/azure-signalr). Or you could help alleviate it by taking advantage of various [resiliency and disaster recovery](/azure/azure-signalr/signalr-concept-disaster-recovery) mechanisms.
+Alternatively, you could resolve this problem by using the [Azure SignalR Service](/azure/azure-signalr). Or you could help alleviate it by taking advantage of various [resiliency and disaster recovery](/azure/azure-signalr/signalr-concept-disaster-recovery) mechanisms.
 
 #### Example SignalR modalities
 
@@ -38,7 +38,7 @@ There are many valid use cases for SignalR. The following list represents good c
   - Gaming
   - Social networks
   - Voting
-  - Auction
+  - Auctions
   - GPS apps
 - Dashboards and monitoring apps:
   - Company dashboards
@@ -51,7 +51,7 @@ There are many valid use cases for SignalR. The following list represents good c
   - Team meeting apps
   - Document sharing apps
   - Visual Studio Live Share
-- Apps that require notifications:
+- Apps that require instant notifications:
   - Email apps
   - Chat apps
   - Turn-based games
@@ -60,4 +60,4 @@ There are many valid use cases for SignalR. The following list represents good c
 
 ## Contoso Pizza scenario
 
-If you're considering a client-side polling solution in the Contoso Pizza live orders map, SignalR could be a viable alternative. As with all programming and architectural decisions, it's critically important to weigh the advantages and disadvantages.
+If you're considering a client-side polling solution in the Contoso Pizza live orders map, SignalR could be a viable alternative. As with all programming and architectural decisions, it's critically important to weigh SignalR's advantages and disadvantages.

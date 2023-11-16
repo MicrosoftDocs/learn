@@ -3,10 +3,10 @@ uid: learn.cloud-adoption-framework-migrate
 metadata:
   title: "Migrate to Azure through repeatable processes and common tools"
   description: The Migrate methodology in the Cloud Adoption Framework guides you through migration to Azure by using repeatable processes and common tools.
-  ms.date: 04/18/2023
+  ms.date: 10/30/2023
   author: Zimmergren
   ms.author: tozimmergren
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: caf
   ms.subservice: caf-methodology-adopt-migrate
 title: "Migrate to Azure through repeatable processes and common tools"
