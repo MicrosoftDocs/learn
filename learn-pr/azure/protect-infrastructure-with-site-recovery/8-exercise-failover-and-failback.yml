@@ -6,10 +6,9 @@ metadata:
   ms.date: 05/09/2023
   author: ankitaduttaMSFT
   ms.author: ankitadutta
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurepowershell
-  ms.prod: learning-azure
 title: Exercise - Failover and failback using Azure Site Recovery
 durationInMinutes: 10
 content: |

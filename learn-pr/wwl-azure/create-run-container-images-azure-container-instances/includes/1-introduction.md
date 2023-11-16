@@ -1,4 +1,3 @@
-
 Azure Container Instances (ACI) offers the fastest and simplest way to run a container in Azure, without having to manage any virtual machines and without having to adopt a higher-level service.
 
 After completing this module, you'll be able to:

@@ -1,4 +1,3 @@
-
 Monitoring is the act of collecting and analyzing data. The data can be used to determine the performance, health, and availability of your business applications and the resources they depend on.
 
 An effective monitoring strategy helps you understand the detailed operation of the components of your applications. Monitoring also helps you increase your uptime by proactively notifying you of critical issues. You can then resolve the issues before they become severe.
