@@ -50,9 +50,6 @@ summary: |
     Primer: [Describe the basic concepts of cybersecurity](../describe-basic-concepts-of-cybersecurity/index.yml)
   :::column-end:::
   :::row-end::: 
-video:
-  title: "Introduction video: Describe the capabilities of Microsoft security solutions"
-  url: https://www.microsoft.com/videoplayer/embed/RE4Y13Z
 iconUrl: /training/achievements/describe-the-capabilities-of-microsoft-security-solutions.svg
 levels:
 - beginner
