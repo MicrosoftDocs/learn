@@ -6,6 +6,11 @@ The following illustration shows how Docker Hub communicates with Docker Host.
 
 :::image type="content" source="../media/docker-c787c4b8.png" alt-text="Diagram that shows Docker Hub communicating with Docker Host." border="false":::
 
+## How to push a container image to a Docker Repo
+
+<iframe width="854" height="480" src="https://www.youtube.com/embed/r_tGl4zF1ZQ" title="How to move Azure Storage Blobs between containers" allowfullscreen></iframe>
+
+
 ### Things to know about Docker and containers
 
 Examine the following characteristics of the Docker platform and containers.
@@ -14,7 +19,7 @@ Examine the following characteristics of the Docker platform and containers.
 
 - A Docker container package includes the application executable code, the runtime environment such as .NET Core, system tools, and settings.
 
-- A **Dockerfile** is a text file with instructions on how to build a Docker image. The Dockerfile is like a batch script. The first line identifies the base image. The rest of the file includes the build actions.
+- A **Dockerfile** is a text file with instructions on how to build a Docker image. The Dockerfile is like a batch script. The base image is listed first. The rest of the file includes the build actions.
 
 - The key feature of Docker is the guarantee that containerized software always runs the same locally on Windows or Linux, or in the cloud on Azure.
 
@@ -26,7 +31,7 @@ Before you begin using Docker and Azure Container Instances to create, build, an
 
 - **Container**: An instance of a Docker image. A container represents the execution of a single application, process, or service. It consists of the contents of a Docker image, an execution environment, and a standard set of instructions. When scaling a service, you create multiple instances of a container from the same image. A batch job can create multiple containers from the same image, and pass different parameters to each instance.
 
-- **Container image**: A package with all the dependencies and information required to create a container. The dependencies include frameworks and the deployment and execution configuration that a container runtime uses. Usually, an image derives from multiple base images that are layers stacked on top of each other to form the container's file system. An image is immutable after it's created.
+- **Container image**: A package with all the dependencies and information required to create a container. The dependencies include frameworks and the deployment and execution configuration that a container runtime uses. Usually, an image derives from multiple base images that are layers stacked on top of each other to form the container's file system. 
 
 - **Build**: The process of creating a container image based on the information and context provided by the Dockerfile. The build also includes any other necessary files. You build images by using the Docker `docker build` command.
 
