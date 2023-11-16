@@ -6,8 +6,7 @@ metadata:
   ms.date: 06/18/2021
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Operate and maintain Azure Stack HCI
 prerequisites: |
   - Familiarity with the key features of Windows Server

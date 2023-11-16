@@ -6,8 +6,7 @@ metadata:
   ms.date: 06/06/2023
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Write your first code using C# (Get started with C#, Part 1)
 prerequisites: |
   none

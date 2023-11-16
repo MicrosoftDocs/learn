@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/14/2021
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Extract text from images and documents
 prerequisites: |
   - Active Azure account

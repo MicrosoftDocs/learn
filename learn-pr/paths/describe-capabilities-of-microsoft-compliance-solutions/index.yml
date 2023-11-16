@@ -6,8 +6,7 @@ metadata:
   ms.date: 08/08/2022
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: learning-path
 title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft compliance solutions'
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
@@ -50,9 +49,6 @@ summary: |
     Primer: [Describe the basic concepts of cybersecurity](../describe-basic-concepts-of-cybersecurity/index.yml)
   :::column-end:::
   :::row-end::: 
-video:
-  title: "Introduction video: Describe the capabilities of Microsoft compliance solutions"
-  url: https://www.microsoft.com/videoplayer/embed/RE4Y140
 iconUrl: /training/achievements/describe-the-capabilities-of-microsoft-compliance-solutions.svg
 levels:
 - beginner
