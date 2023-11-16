@@ -8,8 +8,7 @@ metadata:
   ms.date: 05/11/2022
   author: vhorne
   ms.author: victorh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 20
 content: |
   [!include[](includes/7-exercise-route-network-traffic.md)]

@@ -89,7 +89,7 @@ In this step, you'll define the method to display the results of the animal grou
     void PlanSchoolVisit(string schoolName, int groups = 6)
     {
         RandomizeAnimals();
-        string[,] group = AssignGroup(6);
+        string[,] group = AssignGroup(groups);
         Console.WriteLine(schoolName);
         PrintGroup(group);
     }
