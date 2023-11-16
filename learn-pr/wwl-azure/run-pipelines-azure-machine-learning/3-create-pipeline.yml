@@ -7,9 +7,7 @@ metadata:
   ms.date: 06/06/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.service: machine-learning
-  ms.subservice: pipelines
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/3-create-pipeline.md)]

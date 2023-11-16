@@ -8,9 +8,9 @@ Normally, you have to create a repository on GitHub before you can publish your 
 
 1. Select the **mslearn-demo** folder that you created in step 1.
 
-### Create README.md
+### Create README.md file
 
-The README file is what people see when they visit your repo on Github.com. For more information about the purpose and content of a README file, check out the [Contribute to open source on GitHub](/training/modules/create-open-source-program-github/) module.
+The README file is what people see when they visit your repo on GitHub.com.
 
 1. On the **File** menu, select **New File**.
 
@@ -26,9 +26,9 @@ The README file is what people see when they visit your repo on Github.com. For 
 
 1. Save the file as **README.md**.
 
-### Create .env.development
+### Create .env.development file
 
-Many programs use an .env file type to define program information that's confidential. You should *not* push confidential information (such as database connection strings) to GitHub.
+Many programs use an `.env` file type to define program information that's confidential. You should *not* push confidential information (such as database connection strings) to GitHub.
 
 1. On the **File** menu, select **New File**.
 
@@ -64,7 +64,7 @@ Many programs use an .env file type to define program information that's confide
 
 1. Select **Open in GitHub** from the notification in Visual Studio Code.
 
-1. View your repository on Github.com.
+1. View your repository on GitHub.com.
 
    :::image type="content" source="../media/first-commit.jpg" alt-text="Screenshot of the repository page on Github.com, showing the README file.":::
 
@@ -88,9 +88,9 @@ Let's recap what you did in this section:
 
 - Created a new project and a README file
 - Published the project to GitHub from Visual Studio Code
-- Saw that the repository was created on Github.com
-- Examined the .gitignore file that was automatically created when you chose *not* to include the .env.development file
+- Saw that the repository was created on GitHub.com
+- Examined the `.gitignore file` that was automatically created when you chose *not* to include the `.env.development` file
 
 Visual Studio Code handled all the tedious work that needs to happen behind the scenes to make this publishing workflow seamless.
 
-Many times, though, you'll start a project from GitHub, not from a local machine. In the next section, you'll see how Visual Studio Code lets you clone repositories from your editor.
+However, in many cases, you'll start a project from GitHub, not from a local machine. In the next section, you'll see how Visual Studio Code lets you clone repositories from your editor.

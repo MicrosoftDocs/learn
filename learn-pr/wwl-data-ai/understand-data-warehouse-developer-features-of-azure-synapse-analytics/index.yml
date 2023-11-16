@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/23/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: synapse-analytics
 title: Understand data warehouse developer features of Azure Synapse Analytics
 summary: Learn about the language capabilities that are available to create data warehouses in Azure Synapse Analytics.
