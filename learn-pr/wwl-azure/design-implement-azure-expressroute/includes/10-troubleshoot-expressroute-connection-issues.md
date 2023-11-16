@@ -11,7 +11,7 @@ ExpressRoute connectivity traditionally involves three distinct network zones, a
 
 ## **Verify circuit provisioning and state through the Azure portal**
 
-Provisioning an ExpressRoute circuit establishes a redundant Layer 2 connections between customer edge routers, provider edge routers/switches that face Microsoft Enterprise Edge ExpressRoute routers and Microsoft Enterprise Edge ExpressRoute routers.
+Provisioning an ExpressRoute circuit establishes a redundant Layer 2 connections between CEs/PE-MSEEs (2)/(4) and MSEEs (5).
 
 > [!TIP]
 > A service key uniquely identifies an ExpressRoute circuit. Should you need assistance from Microsoft or from an ExpressRoute partner to troubleshoot an ExpressRoute issue, provide the service key to readily identify the circuit.
@@ -30,7 +30,7 @@ For an ExpressRoute circuit to be operational, the Circuit status must be Enable
 
 ## **Validate peering configuration**
 
-After the service provider has completed the provisioning the ExpressRoute circuit, multiple eBGP based routing configurations can be created over the ExpressRoute circuit between CEs/MSEE-PEs and MSEEs. Each ExpressRoute circuit can have: Azure private peering (traffic to private virtual networks in Azure), and/or Microsoft peering (traffic to public endpoints of PaaS and SaaS).
+After the service provider has completed the provisioning the ExpressRoute circuit, multiple eBGP based routing configurations can be created over the ExpressRoute circuit between CEs/MSEE-PEs (2)/ (4) and MSEEs (5). Each ExpressRoute circuit can have: Azure private peering (traffic to private virtual networks in Azure), and/or Microsoft peering (traffic to public endpoints of PaaS and SaaS).
 
 > [!NOTE]
 > In IPVPN connectivity model, service providers handle the responsibility of configuring the peering (layer 3 services). In such a model, after the service provider has configured a peering and if the peering is blank in the portal, try refreshing the circuit configuration using the refresh button on the portal. This operation will pull the current routing configuration from your circuit.

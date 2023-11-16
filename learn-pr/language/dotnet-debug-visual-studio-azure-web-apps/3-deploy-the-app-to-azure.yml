@@ -9,10 +9,9 @@ metadata:
   author: alexwolfmsft
   ms.author: alexwolf
   manager: jmartens
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-dotnet
-  ms.prod: learning-dotnet
 durationInMinutes: 10
 content: |
   [!include[](includes/3-deploy-the-app-to-azure.md)]
