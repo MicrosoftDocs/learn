@@ -6,8 +6,7 @@ metadata:
   ms.date: 3/10/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Exercise - Add button functionality for player buttons
 durationInMinutes: 5

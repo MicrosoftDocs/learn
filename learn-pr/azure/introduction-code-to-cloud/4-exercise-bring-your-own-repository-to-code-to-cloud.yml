@@ -1,7 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-code-to-cloud.exercise-bring-your-own-repository-to-code-to-cloud
-title: |
- Exercise - Bring your own repository and deploy to Code to Cloud
+title: Exercise - Bring your own repository and deploy to Code to Cloud
 metadata:
   title: Exercise - Bring your own repository and deploy to Code to Cloud
   description: Exercise - Bring your own repository and deploy with Code-to-Cloud

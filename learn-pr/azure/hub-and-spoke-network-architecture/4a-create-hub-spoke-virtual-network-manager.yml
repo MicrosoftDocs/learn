@@ -6,8 +6,7 @@ metadata:
   ms.date: 12/08/2021
   author: mbender-ms
   ms.author: mbender
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Create a hub-spoke network topology with Azure Virtual Network Manager
 durationInMinutes: 2
 content: |
