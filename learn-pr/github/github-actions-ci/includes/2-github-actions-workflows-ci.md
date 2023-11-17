@@ -1,6 +1,6 @@
 Here, you'll learn about GitHub Actions and workflows for CI. 
 
-You'll learn to:
+You'll learn how to:
 
 - Create a workflow from a template
 - Understand the GitHub Actions logs
@@ -11,7 +11,7 @@ You'll learn to:
 
 ## Create a workflow from a template
 
-To create a workflow, you'll start by using a template. A template has common jobs and steps pre-configured for the particular type of automation you're implementing. If you're not familiar with workflows, jobs, and steps, check out the [Automate development tasks by using GitHub Actions](/training/modules/github-actions-automate-tasks/) module.
+To create a workflow, you start by using a template. A template has common jobs and steps pre-configured for the particular type of automation you're implementing. If you're not familiar with workflows, jobs, and steps, check out the [Automate development tasks by using GitHub Actions](/training/modules/github-actions-automate-tasks/) module.
 
 On the main page of your repository, select the **Actions** tab to create a new workflow. You'll see that you can choose from many different templates. Two examples are the *Node.js* template, which does a clean install of node dependencies, builds the source code and runs tests across different versions of Node; and the *Python package* template, which installs Python dependencies and runs tests, including lint, across different versions of Python.
 
@@ -83,32 +83,32 @@ In the exercise, you'll identify failed tests by examining the details in the lo
 
 ## Customize workflow templates
 
-Recall that, at the beginning of this module, we described a scenario where you need to set up CI for your team. The Node.js template is a great start, but you want to customize it to better suit your own team's requirements. You want to target different versions of Node and different operating systems. You'll probably also want to separate the build and test steps into separate jobs.
+At the beginning of this module, we described a scenario where you need to set up CI for your team. The Node.js template is a great start, but you want to customize it to better suit your own team's requirements. You want to target different versions of Node and different operating systems. You'll probably also want the build and test steps to be separate jobs.
 
 Let's take a look at how you customize a workflow.
 
 ```yml
 strategy:
 matrix:
-    os: [ubuntu-lastest, windows-2016]
-    node-version: [8.x, 10.x]
+    os: [ubuntu-latest, windows-latest]
+    node-version: [16.x, 18.x]
 ```
 
-Here, we configured a [build matrix](https://docs.github.com/enterprise-server@3.1/actions/learn-github-actions/managing-complex-workflows#using-a-build-matrix) for testing across multiple operating systems and language versions. This matrix will produce four builds, one for each operating system paired with each version of Node.
+Here, we configured a [build matrix](https://docs.github.com/enterprise-server/actions/learn-github-actions/managing-complex-workflows#using-a-build-matrix) for testing across multiple operating systems and language versions. This matrix will produce four builds, one for each operating system paired with each version of Node.
 
-Four builds, along with all their tests, will produce quite a bit of log information. It might be difficult to sort through it all. In the sample below, we show you how to move the test step to a dedicated test job. This job tests against multiple targets. Making the build and test steps separate will make it easier to understand the log.
+Four builds, along with all their tests, will produce quite a bit of log information. It might be difficult to sort through it all. In the sample below, we show you how to move the test step to a dedicated test job. This job tests against multiple targets. Separating the build and test steps makes it easier to understand the log.
 
 ```yml
 test:
   runs-on: ${{ matrix.os }}
   strategy:
     matrix:
-      os: [ubuntu-lastest, windows-2016]
-      node-version: [8.x, 10.x]
+      os: [ubuntu-latest, windows-latest]
+      node-version: [16.x, 18.x]
   steps:
-  - uses: actions/checkout@v1
+  - uses: actions/checkout@v3
   - name: Use Node.js ${{ matrix.node-version }}
-    uses: actions/setup-node@v1
+    uses: actions/setup-node@v3
     with:
       node-version: ${{ matrix.node-version }}
   - name: npm install, and test
@@ -121,21 +121,21 @@ test:
 
 ## What are artifacts?
 
-When a workflow produces something other than a log entry, it's called an *artifact*. For example, the Node.js build will produce a Docker container that can be deployed. This artifact, the container, can be uploaded to storage by using the action [actions/upload-artifact](https://github.com/actions/upload-artifact?azure-portal=true) and downloaded from storage by using the action [actions/download-artifact](https://github.com/actions/download-artifact?azure-portal=true).
+When a workflow produces something other than a log entry, it's called an *artifact*. For example, the Node.js build will produce a Docker container that can be deployed. This artifact, the container, can be uploaded to storage by using the action [actions/upload-artifact](https://github.com/actions/upload-artifact?azure-portal=true) and later downloaded from storage by using the action [actions/download-artifact](https://github.com/actions/download-artifact?azure-portal=true).
 
-Storing an artifact helps to preserve it between jobs. Each job uses a fresh instance of a VM, so you can't reuse the artifact by saving it on the VM. If you need your artifact in a different job, you can upload the artifact to storage in one job and download it for the other job.
+Storing an artifact preserves it between jobs. Each job uses a fresh instance of a virtual machine (VM), so you can't reuse the artifact by saving it on the VM. If you need your artifact in a different job, you can upload the artifact to storage in one job and download it for the other job.
 
 ## Artifact storage
 
 Artifacts are stored in storage space on GitHub. The space is free for public repositories and some amount is free for private repositories, depending on the account. GitHub stores your artifacts for 90 days.
 
-In the following workflow snippet, notice that in the ```actions/upload-artifact@main``` action there is a ```path:``` attribute. This is the path to store the artifact. Here, we specify *public/* to upload everything to a directory. If it was just a file that we wanted to upload, we could use something like *public/mytext.txt*.
+In the following workflow snippet, notice that in the ```actions/upload-artifact@main``` action there is a ```path:``` attribute. This is the path to store the artifact. Here, we specify *public/* to upload everything to a directory. If it were just a single file that we wanted to upload, we'd use something like *public/mytext.txt*.
 
 ```yml
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: npm install and build webpack
         run: |
           npm install
@@ -158,20 +158,20 @@ In the following workflow snippet, we download the artifact. Now the test job ca
 
 ```yml
 steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v3
     - uses: actions/download-artifact@main
       with:
         name: webpack artifacts
         path: public
 ```
 
-For more information about using artifacts in workflows see [Persisting workflow data using artifacts](https://help.github.com/actions/configuring-and-managing-workflows/persisting-workflow-data-using-artifacts?azure-portal=true) in the GitHub documentation.
+For more information about using artifacts in workflows see [Storing workflow data as artifacts](https://docs.github.com/en/enterprise-cloud@latest/actions/using-workflows/storing-workflow-data-as-artifacts) in the GitHub documentation.
 
 ## Automate reviews in GitHub using workflows
 
-So far, we've described starting the workflow with GitHub events such as *push* or *pull-request*. We could also run a workflow on a schedule or on some event outside of GitHub.
+So far, we've described starting the workflow with GitHub events such as *push* or *pull-request*. We could also run a workflow on a schedule, or on some event outside of GitHub.
 
-Sometimes, we want to run the workflow after something a human needs to do. For example, we might only want to run a workflow after a reviewer has approved the pull request. For this scenario, we can trigger on ```pull-request-review```.
+Sometimes, we want to run the workflow only after a person performs an action. For example, we might only want to run a workflow after a reviewer has approved the pull request. For this scenario, we can trigger on ```pull-request-review```.
 
 Another action we could take is to add a label to the pull request. In this case, we use the [pullreminders/label-when-approved-action](https://github.com/pullreminders/label-when-approved-action?azure-portal=true) action.
 
@@ -185,6 +185,6 @@ Another action we could take is to add a label to the pull request. In this case
          ADD_LABEL: "approved"
 ```
 
-Notice the block called ```env:```. This is where you set the environment variables for this action. For example, you can set the number of approvers needed. Here, it's one. The ```GITHUB_TOKEN``` variable is required because the action must make changes to your repository by adding a label. Finally, you supply the name of the label to add.
+Notice the block called ```env:```. This is where you set the environment variables for this action. For example, you can set the number of approvers needed. Here, it's one. The ```secrets.GITHUB_TOKEN``` authentication variable is required because the action must make changes to your repository by adding a label. Finally, you supply the name of the label to add.
 
 Adding a label could be an event that starts another workflow, such as a merge. We'll cover this in the next module on continuous delivery with GitHub Actions.
