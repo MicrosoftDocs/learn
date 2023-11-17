@@ -15,9 +15,9 @@ You're developing an IoT-based solution to improve product packaging speed for y
 * Fast speed vibration levels can cause packages to fall from the belt and  accelerate system wear-and-tear.
 * When vibration levels exceed a threshold limit, the belt must be stopped to allow for inspection.
 
-It's not easy for operators to visually detect abnormal vibration levels, so you're prototyping an Azure IoT solution that help measure vibration levels and data anomalies. IoT vibration sensors are attached to the conveyor belt at various locations that send telemetry to an IoT hub. The IoT hub uses Azure Stream Analytics and a Machine Learning (ML) model to alert operators of vibration anomalies in real time. You also plan to archive all of the telemetry data so that in-house machine learning models can be developed in the future.
+It's not easy for operators to visually detect abnormal vibration levels, so you're prototyping an Azure IoT solution that helps measure vibration levels and data anomalies. IoT vibration sensors are attached to the conveyor belt at various locations that send telemetry to an IoT hub. The IoT hub uses Azure Stream Analytics and a Machine Learning (ML) model to alert operators of vibration anomalies in real time. You also plan to archive all of the telemetry data so that in-house machine learning models can be developed in the future.
 
-The automated IoT solution will also implement preventive maintenance based on vibration levels, which are used to detect early warning signs before serious system damage occurs.
+The automated IoT solution will implement preventive maintenance based on vibration levels, which are used to detect early warning signs before serious system damage occurs.
 
 The prototype uses simulated telemetry from a single IoT device. Several types of vibration can contribute to the overall vibration level. For example, a "force vibration" can be caused by a broken guide wheel, or an "increasing vibration" can be introduced when a system design limit such as speed or weight is exceeded. You work with an engineering group to develop simulated IoT device models that produce an accurate representation of vibration data.
 

@@ -2,7 +2,7 @@
 uid: learn.wwl.explore-message-processing-tasks
 metadata:
   title: Guided project - Route and process messages from your IoT devices
-  description: "This module provides you with experience analyzing and processing IoT device messages using IoT Hub message routing and the Azure Stream Analytics services, and experience configuring Azure Blob storage for your device data."
+  description: "This module provides you with experience analyzing and processing IoT device messages using IoT Hub message routing and the Azure Stream Analytics services, and experience configuring Azure Blob Storage for your device data."
   ms.date: 10/25/2023
   author: kgremban
   ms.author: kgremban
@@ -11,12 +11,12 @@ metadata:
   ms.topic: module-guided-project
   ms.service: iot-hub
 title: Guided project - Route and process messages from your IoT devices
-summary: This module provides you with experience analyzing and processing IoT device messages using IoT Hub message routing and the Azure Stream Analytics services, and experience configuring Azure Blob storage for your device data.
+summary: This module provides you with experience analyzing and processing IoT device messages using IoT Hub message routing and the Azure Stream Analytics services, and experience configuring Azure Blob Storage for your device data.
 abstract: |
   After you complete this module, you will be able to:
   - Connect a simulated device to Azure IoT Hub and verify that IoT Hub is receiving telemetry.
-  - Configure an Azure IoT Hub message route that outputs selected message data to Azure Blob storage.
-  - Configure an Azure Stream Analytics job that analyzes message data and routes the selected information to Azure Blob storage.
+  - Configure an Azure IoT Hub message route that outputs selected message data to Azure Blob Storage.
+  - Configure an Azure Stream Analytics job that analyzes message data and routes the selected information to Azure Blob Storage.
 prerequisites: |
   Ability to:
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.

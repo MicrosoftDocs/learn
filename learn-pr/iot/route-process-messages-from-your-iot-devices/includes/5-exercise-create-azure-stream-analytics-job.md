@@ -1,16 +1,16 @@
-In this exercise, you create an Azure Stream Analytics (ASA) job that outputs live stream messages to a Blob storage container. You then use the Storage browser to verify that your job runs successfully.
+In this exercise, you create an Azure Stream Analytics (ASA) job that outputs live stream messages to a Blob Storage container. You then use the Storage browser to verify that your job runs successfully.
 
 Your Stream Analytics job processes message data to an output location using the following parameters:
 
 * **Name** - vibrationJob
-* **ASA job input** - IoT hub Messaging Endpoint
-* **ASA job output** - Blob storage container
+* **ASA job input** - IoT Hub messaging endpoint
+* **ASA job output** - Blob Storage container
 * **ASA job query** - pass through all messages from input to output
 
 > [!NOTE]
-> It may seem odd that in this lab you are using IoT hub routing to deliver device data to a storage location, and then also processing your device message data through an Azure Stream Analytics job with output to the same storage location. In a real-world scenario you probably wouldn't use both of these message processing tools for processing device data in this way. Instead, it's more common to use an ASA job to invoke a time sensitive action based on analysis of real-time data. However, since this module is providing an introduction to both of these data processing tools, the Blob storage container provides an easy way to validate that your IoT hub route is working as expected and to show a simple implementation of Azure Stream Analytics.
+> It may seem odd that in this lab you are using IoT Hub routing to deliver device data to a storage location, and then also processing your device message data through an Azure Stream Analytics job with output to the same storage location. In a real-world scenario you probably wouldn't use both of these message processing tools for processing device data in this way. Instead, it's more common to use an ASA job to invoke a time sensitive action based on analysis of real-time data. However, since this module is providing an introduction to both of these data processing tools, the Blob Storage container provides an easy way to validate that your IoT Hub route is working as expected and to show a simple implementation of Azure Stream Analytics.
 
-### Task 1: Create the Stream Analytics Job
+### Task 1: Create the Stream Analytics job
 
 1. On the Azure portal menu, select **Create a resource**.
 
@@ -24,7 +24,7 @@ Your Stream Analytics job processes message data to an output location using the
 
    | Parameter | Value |
    | --------- | ----- |
-   | **Subscription** | Select your Azure sandbox subscription. |
+   | **Subscription** | Select the sandbox **Concierge subscription**. |
    | **Resource group** | Select your Azure sandbox resource group, <rgn>[sandbox resource group name]</rgn>. |
    | **Name** | Enter **vibrationJob**. |
    | **Region** | Choose a region close to you. |
@@ -40,9 +40,9 @@ Your Stream Analytics job processes message data to an output location using the
     > [!TIP]
     > If you miss the message to go to the new resource, or need to find a resource at any time, navigate to your Azure portal home page, then select **See all** under Resources. Or, you can type in the resource you are searching for in the **Search Resources, services, and docs** box near the top of the blade. Enter enough of the resource name for it to appear in the list of resources.
 
-### Task 2: Create the Stream Analytics Job Input
+### Task 2: Create the Stream Analytics job input
 
-1. On your Stream Analytics Job blade, on the left-side menu under **Job topology**, select **Inputs**.
+1. On your Stream Analytics job blade, on the left-side menu under **Job topology**, select **Inputs**.
 
     The **Inputs** pane is displayed.
 
@@ -70,7 +70,7 @@ Your Stream Analytics job processes message data to an output location using the
 
     The **Inputs** list should be updated to show the new input.
 
-### Task 3: Create the Stream Analytics Job Output
+### Task 3: Create the Stream Analytics job output
 
 1. To create an output, on the left-side menu under **Job topology**, select **Outputs**.
 
@@ -102,7 +102,7 @@ Your Stream Analytics job processes message data to an output location using the
 
     The **Outputs** list is updated with the new output.
 
-### Task 4: Create the Stream Analytics Job Query
+### Task 4: Create the Stream Analytics job query
 
 1. To edit the query, on the left-side menu under **Job topology**, select **Query**.
 
@@ -121,7 +121,7 @@ Your Stream Analytics job processes message data to an output location using the
 
 1. On the left-side menu, select **Overview**.
 
-### Task 5: Test the Logging Route
+### Task 5: Test the logging route
 
 Now for the fun part. Is the telemetry from your device app being processed through your ASA job and delivered to the storage container?
 
@@ -182,10 +182,10 @@ Now for the fun part. Is the telemetry from your device app being processed thro
 
 In this exercise, you performed the following steps:
 
-1. Create the Stream Analytics Job
-1. Create the Stream Analytics Job Input
-1. Create the Stream Analytics Job Output
-1. Create the Stream Analytics Job Query
-1. Test the Logging Route
+1. Create the Stream Analytics job
+1. Create the Stream Analytics job input
+1. Create the Stream Analytics job output
+1. Create the Stream Analytics job query
+1. Test the logging route
 
-You've traced the message data processes from the device app, to the IoT hub, and then through both an IoT hub route and Azure Stream Analytics job all the way to a Blob storage container. Great progress!
+You've traced the message data processes from the device app, to the IoT hub, and then through both an IoT hub route and Azure Stream Analytics job all the way to a Blob Storage container. Great progress!

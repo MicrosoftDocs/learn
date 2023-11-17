@@ -1,4 +1,4 @@
-In this module, you create a simulated device that sends vibration telemetry to your IoT hub. With simulated data arriving at the IoT hub, you implement an IoT hub message route and Azure Stream Analytics job that can be used to process device messages. In both cases, data is delivered to a Blob storage container that is used to verify successful implementation. 
+In this module, you create a simulated device that sends vibration telemetry to your IoT hub. With simulated data arriving at the IoT hub, you implement an IoT Hwub message route and Azure Stream Analytics job that can be used to process device messages. In both cases, data is delivered to a Blob Storage container that is used to verify successful implementation. 
 
 ## Setup
 
@@ -36,7 +36,7 @@ Before you begin the exercises, you need an IoT hub. Creating the IoT hub can ta
 
 1. Once your IoT hub is provisioned, in your IoT hub navigation menu, open **Devices**, then select **Add Device** to add a device in your IoT hub.
 
-1. In **Device ID**, enter **sensor-v-3000**. Leave **Auto-generate keys** checked so that the primary and secondary keys will be generated automatically. Leave Authentication type as Symmetric key. Select **Save**. This action creates a device identity for your IoT hub.
+1. In **Device ID**, enter **sensor-v-3000**. Leave **Auto-generate keys** checked so that the primary and secondary keys are generated automatically. Leave **Authentication type** as **Symmetric key**. Select **Save**. This action creates a device identity in your IoT hub.
 
 1. After the device is created, open the device from the list in the **Devices** pane. Select the **Copy to clipboard** button to copy the value of **Primary connection string**. This connection string is used by device code to communicate with the IoT hub. Copy this value into a Notepad window.
 
@@ -45,7 +45,7 @@ Before you begin the exercises, you need an IoT hub. Creating the IoT hub can ta
 
 ### Development resources
 
-To simulate your IoT device, you'll run a C# applications on your development machine. Have the following prerequisites ready on your machine:
+To simulate your IoT device, you run a C# applications on your development machine. Have the following prerequisites ready on your machine:
 
 * [Visual Studio Code](https://code.visualstudio.com/download)
 * [.NET SDK 6.0 or later](https://dotnet.microsoft.com/download)

@@ -26,17 +26,17 @@ quiz:
     - content: "Azure Service Bus Queue"
       isCorrect: false
       explanation: "Incorrect. Although Azure Service Bus Queue is supported as a custom endpoint for IoT hub message routing, it is not used in this module."
-    - content: "Azure Blob storage"
+    - content: "Azure Blob Storage"
       isCorrect: true
-      explanation: "Correct. You configured an Azure Storage account for Azure Blob storage."
-  - content: "In the lab activity for this module, what type of storage container was configured for the Output of the Azure Stream Analytics job?"
+      explanation: "Correct. You configured an Azure Storage account for Azure Blob Storage."
+  - content: "In the lab activity for this module, what type of storage container was configured for the output of the Azure Stream Analytics job?"
     choices:
     - content: "Azure Data Lake Gen 2"
       isCorrect: false
-      explanation: "Incorrect. Although Azure Data Lake Gen 2 is a supported Output for an ASA job, it is not what was configured in this module."
-    - content: "Azure Blob storage"
+      explanation: "Incorrect. Although Azure Data Lake Gen 2 is a supported output for an ASA job, it is not what was configured in this module."
+    - content: "Azure Blob Storage"
       isCorrect: true
-      explanation: "Correct. An Azure Blob storage container was configured as the Output of your ASA job."
+      explanation: "Correct. An Azure Blob Storage container was configured as the output of your ASA job."
     - content: "Azure Function"
       isCorrect: false
-      explanation: "Incorrect. Although an Azure Function is supported as an Output for an ASA job, it is not what was configured in this module."
+      explanation: "Incorrect. Although an Azure Function is supported as an output for an ASA job, it is not what was configured in this module."

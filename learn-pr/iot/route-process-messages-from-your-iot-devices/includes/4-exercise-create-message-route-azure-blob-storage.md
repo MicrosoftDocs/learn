@@ -1,15 +1,15 @@
 IoT solutions often require that incoming message data be sent to multiple endpoint locations, dependent upon either the type of data or for business reasons. Azure IoT Hub provides the _message routing_ feature to enable you to direct incoming data to locations required by your solution.
 
-The prototype architecture requires data be processed in two ways:
+The prototype architecture requires that data be processed in two ways:
 * routed to a storage location for archiving data
 * streamed in real-time for immediate analysis
 
 The prototype vibration monitoring scenario requires the following message processes:
 
-* An IoT Hub route that delivers message data to an Azure Blob storage location for data archiving
+* An IoT Hub route that delivers message data to an Azure Blob Storage location for data archiving
 * An Azure Stream Analytics job for real-time analysis
 
-First, we work on the logging route that sends data to Azure Blob storage.
+First, we work on the logging route that sends data to Azure Blob Storage.
 
 One important feature of message routing is the ability to filter incoming data before routing to an endpoint. The filter, written as a SQL query, directs output through a route only when certain conditions are met.
 
@@ -22,7 +22,7 @@ telemetryMessage.Properties.Add("sensorID", "VSTel");
 loggingMessage.Properties.Add("sensorID", "VSLog");
 ```
 
-With the messaged tagged in this way, you can embed a SQL query within your IoT hub message route that uses the **sensorID** property as a criteria for choosing the messages that are processed by the route. In this case, when the value assigned to **sensorID** is **VSLog** (vibration sensor log), the message is intended for the storage archive (logging).
+With the messages tagged in this way, you can embed a SQL query within your IoT hub message route that uses the **sensorID** property as a criteria for choosing the messages that are processed by the route. In this case, when the value assigned to **sensorID** is **VSLog** (vibration sensor log), the message is intended for the storage archive (logging).
 
 In this exercise, you create and test the logging route.
 
@@ -77,7 +77,7 @@ To create the storage endpoint:
 
    1. Take a moment to review the default selections for the rest of the fields.
 
-      * Under **Encoding**, notice that there are two options and that **AVRO** is selected. By default, IoT Hub writes the content in Avro format, which has both a message body property and a message property. The Avro format is not used for any other endpoints. Although the Avro format is great for data and message preservation, it's a challenge to use it to query data. In comparison, JSON or CSV format is easier for querying data. IoT Hub now supports writing data to Blob storage in JSON and AVRO.
+      * Under **Encoding**, notice that there are two options and that **AVRO** is selected. By default, IoT Hub writes the content in Avro format, which has both a message body property and a message property. The Avro format is not used for any other endpoints. Although the Avro format is great for data and message preservation, it's a challenge to use it to query data. In comparison, JSON or CSV format is easier for querying data. IoT Hub now supports writing data to Blob Storage in JSON and AVRO.
 
       * The **File name format** field specifies the pattern used to write the data to files in storage. The various tokens are replaced with values as the file is created.
 
@@ -106,7 +106,7 @@ To create the storage endpoint:
 
    If not, run it in the Visual Studio Code terminal using **dotnet run**.
 
-1. In the Resources section of your Azure portal homepage, navigate to the Storage account that you created in the previous section. If your Resources section does not list your Storage account, select **Resource groups** and then select the resource group for this sandbox, <rgn>[sandbox resource group name]</rgn>. Your Storage account should be listed as a resource in this group.
+1. In the **Resources** section of your Azure portal homepage, navigate to the Storage account that you created in the previous section. If your **Resources** section does not list your Storage account, select **Resource groups** and then select the resource group for this sandbox, <rgn>[sandbox resource group name]</rgn>. Your Storage account should be listed as a resource in this group.
 
 1. In the navigation menu of your Storage account, select **Storage browser**.
 
@@ -114,7 +114,7 @@ To create the storage endpoint:
 
 1. In the **Storage browser** pane, select **Blob containers** and then select **vibrationcontainer**.
 
-    To view the logged data, you need to navigate down a hierarchy of folders. The first folder is named for the IoT Hub.
+    To view the logged data, you need to navigate down a hierarchy of folders. The first folder is named for the IoT hub.
 
     > [!NOTE]
     > If no data is displayed, click **Refresh**. You may need to wait a minute or two and then refresh again.
@@ -131,7 +131,7 @@ To create the storage endpoint:
 
 <!-- TODO: Can you not view the file contents in Storage browser? Is downloading necessary?-->
 
-1. Open Windows **File Explorer** and navigate to your **Downloads** folder.
+1. Open **File Explorer** and navigate to your **Downloads** folder.
 
 1. Right-click the .avro file, then select **Open with**, then select **Visual Studio Code**.
 
@@ -150,6 +150,6 @@ In this exercise, you performed the following steps:
 1. Create a storage endpoint destination for messages in your route.
 2. Create a storage account and container.
 3. Create a route to the storage endpoint.
-4. Verified that .avro storage blobs are being created.
+4. Verify that .avro storage blobs are being created.
 
 If you encountered errors at any step or don't see .avro storage blobs created in the expected format, address the problem before continuing on to the next exercise.

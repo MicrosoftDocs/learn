@@ -1,6 +1,6 @@
 Both long term and real-time data analysis are required to automate the monitoring of the conveyor belt system and enable predictive maintenance. Since no historical data exists, your first step is to generate simulated data that mimics vibration data and data anomalies in a realistic manner. Company engineers developed an algorithm to simulate vibration over time and embedded the algorithm within a code class for you to implement. The engineers agreed to support any future updates required to adjust the algorithms.
 
-During your initial prototype phase, you implement a single IoT device that generates telemetry data. In addition to the vibration data, your device creates some other values (packages delivered, ambient temperature, and similar metrics) that are sent to Blob storage. This additional data simulates the data that is used to develop machine learning modules for predictive maintenance.
+During your initial prototype phase, you implement a single IoT device that generates telemetry data. In addition to the vibration data, your device creates some other values (packages delivered, ambient temperature, and similar metrics) that are sent to Blob Storage. This extra data simulates the data that is used to develop machine learning modules for predictive maintenance.
 
 In this exercise, you:
 
@@ -13,7 +13,7 @@ In this exercise, you:
 
 <!-- TODO: MOVE THE SAMPLE CODE INTO GITHUB -->
 
-1. On your development machine, create a working folder for this project named **VibrationDevice**. You create all Visual Studio code files for this project within this folder.
+1. On your development machine, create a working folder for this project named **VibrationDevice**. You create all Visual Studio Code files for this project within this folder.
 
 1. Open Visual Studio Code.
 
@@ -21,7 +21,7 @@ In this exercise, you:
 
 1. Paste the following code into the **Program.cs** file.
 
-   This simulated device application uses Symmetric Key authentication, sends both telemetry and logging messages to the IoT hub, and simulates the implementation of sensor inputs.
+   This simulated device application uses Symmetric key authentication, sends both telemetry and logging messages to the IoT hub, and simulates the implementation of sensor inputs.
 
    ```csharp
    // Copyright (c) Microsoft. All rights reserved.
@@ -335,7 +335,7 @@ In this exercise, you:
    }
    ```
 
-1. At the top of the **Program.cs** file, find the `deviceConnectionString` parameter. Replace the placeholder value with the Primary connection string you copied to Notepad for your **sensor-v-3000** device.
+1. At the top of the **Program.cs** file, find the `deviceConnectionString` parameter. Replace the placeholder value with the **Primary connection string** you copied to Notepad for your **sensor-v-3000** device.
 
 1. Save your changes to **Program.cs**.
 
@@ -389,7 +389,7 @@ In this exercise, you:
     > [!NOTE]
     > If you receive error messages, start by checking your device connection string.
 
-### Task 2: Test your code to send telemetry
+### Task 2: Run your code to send telemetry
 
 1. At the Terminal command prompt, enter the following command to run the app:
 
