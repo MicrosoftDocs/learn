@@ -31,6 +31,5 @@ products:
 subjects:
 - data-analytics
 units:
-- learn.azure.intro-to-anomaly-detector.exercise
 badge:
   uid: learn.azure.intro-to-anomaly-detector.badge
