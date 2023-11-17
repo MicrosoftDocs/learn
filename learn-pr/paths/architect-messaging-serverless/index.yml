@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/04/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Architect message brokering and serverless applications in Azure
 summary: Learn how to create reliable messaging for your applications, and how to take advantage of serverless application services in Azure.
 prerequisites: |

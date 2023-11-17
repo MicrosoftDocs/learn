@@ -4,10 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/25/2023
+  ms.date: 11/14/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: azure
 durationInMinutes: 3
 content: |
@@ -26,17 +26,6 @@ quiz:
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
       isCorrect: true
       explanation: "Correct. Azure Container Registry is a private registry service for building, storing, and managing container images and related artifacts. It enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-  - content: "What is the purpose of Azure Container Registry?"
-    choices:
-    - content: "A service for managing virtual machines in Azure"
-      isCorrect: false
-      explanation: "Incorrect. Azure Container Registry is a service for building, storing, and managing container images and related artifacts."
-    - content: "A service for managing databases in Azure"
-      isCorrect: false
-      explanation: "Incorrect. Azure Container Registry is a service for building, storing, and managing container images and related artifacts."
-    - content: "A private registry service for building, storing, and managing container images and related artifacts"
-      isCorrect: true
-      explanation: "Correct. Azure Container Registry is a private registry service for building, storing, and managing container images and related artifacts. It allows users to securely store and manage Docker images and other container formats."
   - content: "What is the purpose of Azure Kubernetes Service?"
     choices:
     - content: "To manage virtual machines"
@@ -48,3 +37,14 @@ quiz:
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
       isCorrect: true
       explanation: "Correct. Azure Kubernetes Service enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "What does Azure Container Registry enable?"
+    choices:
+    - content: "Enables the creation of virtual machines"
+      isCorrect: false
+      explanation: "Incorrect. Azure Container Registry is not related to virtual machines."
+    - content: "Enables the creation of web applications"
+      isCorrect: false
+      explanation: "Incorrect. Azure Container Registry is not related to web applications."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Azure Container Registry enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."

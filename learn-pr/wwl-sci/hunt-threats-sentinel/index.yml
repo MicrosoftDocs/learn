@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/25/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: microsoft-sentinel
 title: Threat hunting with Microsoft Sentinel
 summary: In this module, you'll learn to proactively identify threat behaviors by using Microsoft Sentinel queries. You'll also learn to use bookmarks and livestream to hunt threats.

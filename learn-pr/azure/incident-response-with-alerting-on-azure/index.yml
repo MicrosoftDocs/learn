@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/14/2023
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure
 title: Improve incident response with alerting on Azure
 summary: Respond to incidents and activities in your infrastructure through alerting capabilities in Azure Monitor.

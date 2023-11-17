@@ -6,8 +6,7 @@ metadata:
   ms.date: 07/27/2022
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'AZ-500: Implement platform protection'
 prerequisites: |
   None.  It is beneficial to have a solid infrastructure background in networking and servers.
