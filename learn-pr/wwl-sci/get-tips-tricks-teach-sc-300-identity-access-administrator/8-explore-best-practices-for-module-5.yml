@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: unit
-  ms.service: azure
 durationInMinutes: 19
 content: |
   [!include[](includes/8-explore-best-practices-for-module-5.md)]
