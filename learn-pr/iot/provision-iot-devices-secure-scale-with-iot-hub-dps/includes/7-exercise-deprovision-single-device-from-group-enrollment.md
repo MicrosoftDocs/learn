@@ -42,8 +42,6 @@ In this task, you configure an individual enrollment for the **sensor-thl-002** 
 
 1. Switch to the Visual Studio Code window containing your sensor-thl-002-device code project.
 
-1. Open the **View** menu and select **Terminal**.
-
 1. Ensure that the command prompt is located at the **sensor-thl-002-device** folder location.
 
 1. Run the simulated device app.

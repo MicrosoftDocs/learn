@@ -33,13 +33,11 @@ Once the enrollment group is removed from the Device Provisioning Service (DPS),
    az iot hub device-identity delete --hub-name hub-$suffix --device-id sensor-thl-001
    ```
 
-#### Task 3: Confirm that your devices have been deprovisioned
+#### Task 3: Confirm that your devices are deprovisioned
 
-With the group enrollment deleted from the Device Provisioning Service, and the device deleted from the Azure IoT Hub device registry, the device(s) have been fully removed from the solution.
+With the group enrollment deleted from the Device Provisioning Service, and the device deleted from the Azure IoT Hub device registry, the device(s) are fully removed from the solution.
 
 1. Switch to the Visual Studio Code window containing your sensor-thl-001-device code project.
-
-1. On the Visual Studio Code **View** menu, select **Terminal**.
 
 1. Run the simulated device app, enter the following command:
 
@@ -49,7 +47,7 @@ With the group enrollment deleted from the Device Provisioning Service, and the 
 
 1. Notice the exceptions listed when the device attempts to provision.
 
-   Now that the group enrollment and registered device have been deleted, the simulated device can no longer be able to provision or connect. When the application attempts to use the configured X.509 certificate to connect to DPS, it returns a **ProvisioningTransportException** error message.
+   Now that the group enrollment and registered device are deleted, the simulated device can no longer be able to provision or connect. When the application attempts to use the configured X.509 certificate to connect to DPS, it returns a **ProvisioningTransportException** error message.
 
    ```txt
    Found certificate: AFF851ED016CA5AEB71E5749BCBE3415F8CF4F37 CN=sensor-thl-001; PrivateKey: True

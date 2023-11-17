@@ -6,7 +6,7 @@ Once the device is enrolled into the DPS group enrollment, the device is registe
 
 1. In Visual Studio Code, open the **sensor-thl-001-device** folder if it isn't open already.
 
-1. On the **View** menu, select **Terminal** to open the integrated Terminal at the bottom of the Visual Studio Code window.
+1. In Visual Studio, open the **Terminal** menu, then select **New Terminal** to open the integrated Terminal at the bottom of the Visual Studio Code window.
 
 1. At the Terminal command prompt, ensure that the current working directory is the **\sensor-thl-001-device** folder.
 
@@ -86,7 +86,7 @@ Once the device is enrolled into the DPS group enrollment, the device is registe
 
 1. Navigate to the **sensor-thl-002-device** folder, and then select **Select Folder**.
 
-1. On the **View** menu, select **Terminal** to open the integrated Terminal at the bottom of the Visual Studio Code window.
+1. In Visual Studio, open the **Terminal** menu, then select **New Terminal** to open the integrated Terminal at the bottom of the Visual Studio Code window.
 
 1. At the Terminal command prompt, ensure that the current working directory is the **\sensor-thl-002-device** folder.
 
@@ -135,17 +135,7 @@ When you created the group enrollment in DPS, you set the initial twin configura
 
 ## Verify your work
 
-1. Verify that the CA certificate is registered with DPS. Examine the command return values including `Name`.
-
-   ```azurecli
-   az iot dps certificate show --certificate-name groupCA-sensors --dps-name dps-$suffix
-   ```
-
-1. Verify that the device certificate is registered with DPS. Examine the command return values including `Name`.
-
-   ```azurecli
-   az iot dps certificate show --certificate-name sensor-thl-001 --dps-name dps-$suffix
-   ```
+1. If either of your programs didn't work, fix the errors before proceeding to the next exercise.
 
 1. Verify that the Device Twin `telemetryDelay` value is `3` seconds.
 

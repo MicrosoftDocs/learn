@@ -367,9 +367,13 @@ In this task, you complete the following:
 
 1. Open the Visual Studio Code **File** menu, then select **Save**.
 
+1. Copy **sensor-thl-001-device.cert.pfx** from your **Downloads** folder into the **sensor-thl-001-device** folder.
+
+1. Copy **sensor-thl-002-device.cert.pfx** from your **Downloads** folder into the **sensor-thl-002-device** folder.
+
 ## Verify your work
 
-1. Open the **Terminal** menu, then select **New Terminal**.
+1. In Visual Studio, open the **Terminal** menu, then select **New Terminal**.
 
 1. At the Terminal command prompt, ensure that the current working directory is the **\sensor-thl-001-device** folder.
 
