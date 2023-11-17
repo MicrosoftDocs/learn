@@ -17,7 +17,7 @@ In this exercise, you:
 
 1. Open Visual Studio Code.
 
-1. In Visual Studio Code, select **File...**, then **Select Folder...**, then navigate to your **VibrationDevice** folder, then select **Open Folder**.
+1. In Visual Studio Code, select **File**, then **Select Folder**, then navigate to your **VibrationDevice** folder, then select **Open Folder**.
 
 1. Create a file named **Program.cs** in the **VibrationDevice** folder.
 
@@ -430,8 +430,6 @@ In this exercise, you:
 ### Task 3: Verify that IoT Hub is receiving telemetry
 
 In this task, you use the Azure portal to verify that your IoT Hub is receiving telemetry.
-
-1. In your browser, sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account with which you activated the sandbox.
 
 1. In the Azure portal, navigate to your IoT hub.
 
