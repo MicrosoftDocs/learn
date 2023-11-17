@@ -1,5 +1,3 @@
-
-
 The following code is one possible solution for the challenge from the previous unit.
 
 ```csharp
@@ -18,3 +16,4 @@ However, as long as your code follows the instructions from the challenge and pr
 
 > [!IMPORTANT]
 > If you had trouble completing this challenge, maybe you should review the previous units before you continue on.
+
