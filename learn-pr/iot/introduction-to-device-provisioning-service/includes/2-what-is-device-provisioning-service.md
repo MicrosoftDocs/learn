@@ -1,11 +1,47 @@
+Your team has developed a working proof-of-concept for your IoT solution, but so far in the development and testing phase you've been manually configuring each device with the details of which IoT Hub to connect to the device's own registration and authentication info. This approach won't scale when you move to the manufacturing and production phase. Now, you're evaluating whether Azure IoT Hub Device Provisioning Service is the right solution for this challenge.
+
+Device Provisioning Service (DPS) is a helper service for Azure IoT Hub. It provides zero-touch, just-in-time provisioning of devices to the right IoT hub.
+
+Device provisioning with DPS is a two part process. The first part is establishing the initial connection between the device and the IoT solution by registering the device. The second part is applying the proper configuration to the device based on the specific requirements of the solution. Once both steps have been completed, the device has been fully provisioned. Device Provisioning Service automates both steps to provide a seamless provisioning experience for the device.
+
+
+## Features
+
+* Secure attestation support for both X.509 and TPM-based identities.
+* Enrollment list containing the complete record of devices/groups of devices that may at some point register. The enrollment list contains information about the desired configuration of the device once it registers, and it can be updated at any time.
+* Multiple allocation policies to control how the Device Provisioning Service assigns devices to IoT hubs in support of your scenarios.
+* Monitoring and diagnostics logging to make sure everything is working properly.
+* Multi-hub support allows the Device Provisioning Service to assign devices to more than one IoT hub. The Device Provisioning Service can talk to hubs across multiple Azure subscriptions.
+* Cross-region support allows the Device Provisioning Service to assign devices to IoT hubs in other regions.
+* Encryption for data at rest allows data in DPS to be encrypted and decrypted transparently using 256-bit AES encryption, one of the strongest block ciphers available, and is FIPS 140-2 compliant.
+
+## Cross-platform support
+
+The Device Provisioning Service, like all Azure IoT services, works cross-platform with several operating systems. Azure offers open-source SDKs in various programming languages to facilitate connecting devices and managing the service. The Device Provisioning Service supports the following protocols for connecting devices:
+
+* HTTPS
+* AMQP
+* AMQP over web sockets
+* MQTT
+* MQTT over web sockets
+
+The Device Provisioning Service only supports HTTPS connections for service operations.
+
+
+
+
+
+
+
+
 The Device Provisioning Service supports the full lifecycle of a device, from initial provisioning by the manufacturer all the way through to retirement.
 
 ## Provisioning process
 
 There are two distinct phases in the provisioning/deployment process for a device. These two phases can be done independently:
 
- -  The manufacturing phase in which the device is created and prepared at the factory.
- -  The cloud setup phase in which the Device Provisioning Service is configured for automated provisioning.
+* The manufacturing phase in which the device is created and prepared at the factory.
+* The cloud setup phase in which the Device Provisioning Service is configured for automated provisioning.
 
 Both these phases fit in seamlessly with existing manufacturing and deployment processes. The Device Provisioning Service even simplifies some deployment processes that involve a lot of manual work to get connection information onto the device.
 
@@ -29,8 +65,8 @@ After the service has been configured for automatic provisioning, it must be pre
 
 Provisioning means various things depending on the industry in which the term is used. In the context of provisioning IoT devices to their cloud solution, provisioning is a two part process:
 
- -  The first part is establishing the initial connection between the device and the IoT solution by registering the device.
- -  The second part is applying the proper configuration to the device based on the specific requirements of the solution it was registered to.
+* The first part is establishing the initial connection between the device and the IoT solution by registering the device.
+* The second part is applying the proper configuration to the device based on the specific requirements of the solution it was registered to.
 
 Once both of those two steps have been completed, we can say that the device has been fully provisioned. Some cloud services only provide the first step of the provisioning process, registering devices to the IoT solution endpoint, but do not provide the initial configuration. The Device Provisioning Service automates both steps to provide a seamless provisioning experience for the device.
 
@@ -38,9 +74,9 @@ Once both of those two steps have been completed, we can say that the device has
 
 IoT Plug and Play enables device developers to create devices that solution builders can integrate within their solutions without any manual configuration. At the core of IoT Plug and Play, is a device model that a device uses to advertise its capabilities to an IoT Plug and Play-enabled application (such as IoT Hub and Azure IoT Central). This model is structured as a set of elements that define:
 
- -  Properties that represent the read-only or writable state of a device or other entity. For example, a device serial number may be a read-only property and a target temperature on a thermostat may be a writable property.
- -  Telemetry that's the data emitted by a device, whether the data is a regular stream of sensor readings, an occasional error, or an information message.
- -  Commands that describe a function or operation that can be done on a device. For example, a command could reboot a gateway or take a picture using a remote camera.
+* Properties that represent the read-only or writable state of a device or other entity. For example, a device serial number may be a read-only property and a target temperature on a thermostat may be a writable property.
+* Telemetry that's the data emitted by a device, whether the data is a regular stream of sensor readings, an occasional error, or an information message.
+* Commands that describe a function or operation that can be done on a device. For example, a command could reboot a gateway or take a picture using a remote camera.
 
 Device developers can group these elements in interfaces to reuse across models to make collaboration easier and to speed up development.
 

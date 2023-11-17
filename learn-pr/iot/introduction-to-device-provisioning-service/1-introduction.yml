@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.examine-device-provisioning-service-terms-concepts.introduction
+uid: learn.introduction-to-device-provisioning-service.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
   ms.date: 07/18/2022
-  author: wwlpublish
-  ms.author: cahowd
+  author: kgremban
+  ms.author: kgremban
   ms.topic: unit
 azureSandbox: false
 labModal: false
