@@ -7,8 +7,7 @@ metadata:
   ms.date: 06/25/2020
   author: steved0x
   ms.author: sdanie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: "Define and implement continuous integration"
 summary: |
   Create automated pipelines that continuously build, test, package, and deploy your applications.

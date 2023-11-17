@@ -1,6 +1,6 @@
-As part of the app that engineers use on customer site-visits, you need to add a feature that enables an engineer to look up the details of electrical components. This information will be held in a database and accessed through a REST web service. You've also been asked to provide an interface that enables an administrator to create, remove, and modify the details of parts held in the database using the same REST web service.
+As part of the app that engineers use on customer site visits, you need to add a feature that allows an engineer to look up the details of electrical components. This information will be held in a database and accessed through a REST web service. You've also been asked to provide an interface that allows an administrator to create, remove, and modify the details of parts held in the database using the same REST web service.
 
-In this exercise, you'll deploy the REST web service to Azure, and then verify that you can access it using a web browser. Then you'll add functionality to an existing app that uses the REST web service to retrieve, add, delete, and update the details of electrical components.
+In this exercise, you'll deploy the REST web service to Azure, then verify that you can access it using a web browser. Then, you'll add functionality to an existing app that uses the REST web service to retrieve, add, delete, and update the details of electrical components.
 
 You'll perform this exercise using the Azure sandbox.
 
@@ -14,13 +14,13 @@ You'll perform this exercise using the Azure sandbox.
     git clone https://github.com/microsoftdocs/mslearn-dotnetmaui-consume-rest-services
     ```
 
-1. Move to the **Consume-REST-services** folder
+1. Move to the **Consume-REST-services** folder:
 
     ```bash
     cd mslearn-dotnetmaui-consume-rest-services/src
     ```
 
-1. Run the command shown to deploy the Parts web service using the Azure Cloud Shell sandbox. This command makes the service available through a unique URL. Make a note of this URL when it's displayed. You'll configure the app to connect to the web service using this URL.
+1. Run the following command to deploy the Parts web service using the Azure Cloud Shell sandbox. This command makes the service available through a unique URL. Make a note of this URL when it's displayed. You'll configure the app to connect to the web service using this URL.
 
     ```bash
     bash initenvironment.sh
@@ -31,13 +31,16 @@ You'll perform this exercise using the Azure sandbox.
 > [!NOTE]
 > You'll perform the remainder of this exercise on your local development computer.
 
-1. On your desktop computer, open a command prompt window and clone the repository for this exercise. The code is in the [net-maui-learn-consume-rest-services](https://github.com/microsoftdocs/mslearn-dotnetmaui-consume-rest-services) repository.
+1. On your computer, open a command prompt window and clone the repository for this exercise. The code is in the [net-maui-learn-consume-rest-services](https://github.com/microsoftdocs/mslearn-dotnetmaui-consume-rest-services) repository.
 
     ```bash
     git clone https://github.com/microsoftdocs/mslearn-dotnetmaui-consume-rest-services
     ```
 
-1. Move to the **webservice\PartsServer** folder in your clone of the repository, and open the **PartsServer.sln** solution using Visual Studio. This solution contains a copy of the code for the web service that you deployed to Azure in the previous procedure.
+    > [!NOTE]
+    > It is best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
+
+1. Go to the **src\webservice\PartsServer** folder in your clone of the repository, and open the **PartsServer.sln** solution using Visual Studio or the folder in Visual Studio Code. This solution contains a copy of the code for the web service that you deployed to Azure in the previous procedure.
 
 1. In the Solution Explorer window, expand the **Models** folder. This folder contains two files:
 
@@ -55,25 +58,27 @@ You'll perform this exercise using the Azure sandbox.
 
 ## Examine the code for the .NET MAUI client app
 
-1. In Visual Studio, close the **PartsServer** solution, and open the **PartsClient** solution under the **src\client** folder in the cloned repository. This solution contains a partial implementation of a .NET MAUI client app that uses the **PartsServer** web service.
+[!include[](../../../includes/dotnet8-sdk-version.md)]
 
-1. In the Solution Explorer window, expand the **Data**. This folder contains the code for two classes:
+1. Close the **PartsServer** solution, and open the **PartsClient** solution in the **src\client\PartsClient** folder in the cloned repository. This solution contains a partial implementation of a .NET MAUI client app that uses the **PartsServer** web service.
 
-    - **PartsManager.cs**. The **PartsManager** class provides the methods that the client app uses to interact with the REST web service. This class is currently incomplete; you'll add the necessary code during this exercise. When complete, the **GetClient** method connects to the REST web service. The **GetAll** method returns a list of parts from the REST web service. The **Add** method adds a new part to the list of parts managed by the REST web service. The **Update** method modified the details of a part stored by the REST web service, and the **Delete** method removes a part.
+1. In the Solution Explorer window, expand the **Data** folder. This folder contains the code for two classes:
+
+    - **PartsManager.cs**. The **PartsManager** class provides the methods that the client app uses to interact with the REST web service. This class is currently incomplete; you'll add the necessary code during this exercise. When complete, the **GetClient** method connects to the REST web service. The **GetAll** method returns a list of parts from the REST web service. The **Add** method adds a new part to the list of parts managed by the REST web service. The **Update** method modifies the details of a part stored by the REST web service, and the **Delete** method removes a part.
 
     - **Part.cs**. The **Part** class models a part stored in the database. It exposes properties that an application can use to access the **PartID**, **PartName**, **PartAvailableDate**, **PartType**, and **PartSuppliers** fields. The class also provides a utility method named **SupplierString** that an application can use to retrieve a formatted string containing the supplier names.
 
 1. In the Solution Explorer window, expand the **Pages** folder. This folder contains the markup and code for two pages:
 
-    - **PartsPage.xaml**. This page uses a **CollectionView** layout with a **DataTemplate** to display the details of the parts available as a list. The **DataTemplate** uses data binding to connect the data displayed to the parts retrieved from the web service. You can select a row in the **CollectionView** to edit a part in the **AddPartPage**. Or you can select the **Add New Part** button to add a new part.
+    - **PartsPage.xaml**. This page uses a **CollectionView** layout with a **DataTemplate** to display the details of the parts available as a list. The **DataTemplate** uses data binding to connect the data displayed to the parts retrieved from the web service. You can select a row in the **CollectionView** to edit a part in the **AddPartPage**, or you can select the **Add New Part** button to add a new part.
 
-    - **AddPartPage.xaml**. This page enables the user to enter and save the details for a new part. The user can specify the part name, part type, and an initial supplier. The part ID and part available date are generated automatically.
+    - **AddPartPage.xaml**. This page allows users to enter and save the details for a new part. Users can specify the part name, part type, and an initial supplier. The part ID and part available date are generated automatically.
 
-1. In the Solution Explorer window, expand the **ViewModels** folder. This folder contains 2 classes **AddPartViewModel.cs** and **PartsViewModel.cs**. These are the view models for their respective pages and contain properties and logic needed by the page to display and manipulate data.
+1. In the Solution Explorer window, expand the **ViewModels** folder. This folder contains two classes: **AddPartViewModel.cs** and **PartsViewModel.cs**. These are the view models for their respective pages and contain properties and logic the page needs to display and manipulate data.
 
 ## Sign in to the service
 
-The REST service requires you to sign in first to get an authorization token. There's no user authentication. You call a specific endpoint first to get an authorization token. Then you send the token back to the server on each subsequent request in the HTTP header.
+The REST service requires you to sign in first to get an authorization token. There's no user authentication. You call a specific endpoint first to get an authorization token, then you send the token back to the server on each subsequent request in the HTTP header.
 
 1. Open the **PartsManager.cs** file in the **Data** folder.
 
@@ -94,7 +99,7 @@ The REST service requires you to sign in first to get an authorization token. Th
     private static string authorizationKey;
     ```
 
-1. Find the **GetClient** method. This method currently throws a **NotImplementedException** exception. Replace the existing code in this method with the following code. This code creates an **HttpClient** object, and then sends a request to the **login** endpoint of the REST web service. The service should respond with a message that contains the authorization token. Deserialize this token, and add it as a default Authorization request header for subsequent requests sent using the **HttpClient** object:
+1. Find the **GetClient** method. This method currently throws a **NotImplementedException** exception. Replace the existing code in this method with the following code. This code creates an **HttpClient** object, then sends a request to the **login** endpoint of the REST web service. The service should respond with a message that contains the authorization token. Deserialize this token, and add it as a default Authorization request header for subsequent requests sent using the **HttpClient** object:
 
     ```csharp
     private static async Task<HttpClient> GetClient()
@@ -107,7 +112,7 @@ The REST service requires you to sign in first to get an authorization token. Th
         if (string.IsNullOrEmpty(authorizationKey))
         {                
             authorizationKey = await client.GetStringAsync($"{Url}login");
-            authorizationKey = JsonConvert.DeserializeObject<string>(authorizationKey);
+            authorizationKey = JsonSerializer.Deserialize<string>(authorizationKey);
         }
 
         client.DefaultRequestHeaders.Add("Authorization", authorizationKey);
@@ -122,7 +127,7 @@ The REST service requires you to sign in first to get an authorization token. Th
 1. In the **PartsManager.cs** file, find the **GetAll** method. This is an asynchronous method that returns an enumerable list of parts. This method isn't yet implemented.
 
 1. In this method, delete the code that throws the **NotImplementedException** exception.
-1. Check to see if the device has internet connectivity by using the `Connectivity` class. If the internet is not present, return an empty `List<Part>`.
+1. Check to see if the device has internet connectivity by using the `Connectivity` class. If the internet isn't present, return an empty `List<Part>`.
 
     ```csharp
     if (Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
@@ -133,7 +138,7 @@ The REST service requires you to sign in first to get an authorization token. Th
 
 1. Call the **GetStringAsync** method of the **HttpClient** object and provide the base URL to retrieve an array of parts from the REST web service. The data is returned asynchronously as a JSON string.
 
-1. Deserialize the JSON string returned by this method into a list of **Part** objects using the **JsonConvert.Deserialize** method. Return this list to the caller.
+1. Deserialize the JSON string returned by this method into a list of **Part** objects using the **JsonSerializer.Deserialize** method. Return this list to the caller.
 
     The completed method should look like this:
 
@@ -143,10 +148,13 @@ The REST service requires you to sign in first to get an authorization token. Th
         if (Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
             return new List<Part>();
         
-        HttpClient client = await GetClient();
+        var client = await GetClient();
         string result = await client.GetStringAsync($"{Url}parts");
 
-        return JsonConvert.DeserializeObject<List<Part>>(result);                       
+        return JsonSerializer.Deserialize<List<Part>>(result, new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true,
+            });                     
     }
     ```
 
@@ -154,14 +162,14 @@ The REST service requires you to sign in first to get an authorization token. Th
 
     :::image type="content" source="../media/5-all-parts.png" alt-text="A screenshot of the Parts Client app running on Android showing a list of parts.":::
 
-1. When you have finished browsing the data, close the app and return to Visual Studio.
+1. When you've finished browsing the data, close the app and return to Visual Studio or Visual Studio Code.
 
 ## Perform a POST operation to add a new part to the database
 
-1. In the **PartsManager** class, locate the **Add** method. This method has parameters for the part name, a supplier, and the part type. The method is asynchronous. The purpose of this method is to insert a new part into the database, and return a **Part** object representing the newly created item.
+1. In the **PartsManager** class, locate the **Add** method. This method has parameters for the part name, a supplier, and the part type. The method is asynchronous. The method's purpose is to insert a new part into the database and return a **Part** object representing the newly created item.
 
 1. Delete the existing code in the method.
-1. Check to see if the device has internet connectivity by using the `Connectivity` class. If the internet is not present, return an empty `Part`.
+1. Check to see if the device has internet connectivity by using the `Connectivity` class. If the internet isn't present, return an empty `Part`.
 
     ```csharp
     if (Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
@@ -176,7 +184,7 @@ The REST service requires you to sign in first to get an authorization token. Th
     - Get an HTTP client from the **GetClient** method.
 
     ```csharp
-    Part part = new Part()
+    var part = new Part()
     {
         PartName = partName,
         Suppliers = new List<string>(new[] { supplier }),
@@ -206,23 +214,30 @@ The REST service requires you to sign in first to get an authorization token. Th
     response.EnsureSuccessStatusCode();
     ```
 
-    Note the above uses the `response.EnsureSuccessStatusCode` method. That will throw an error if anything other than a 2xx HTTP status code is returned.
+    Note the preceding uses the `response.EnsureSuccessStatusCode` method. That will throw an error if anything other than a 2xx HTTP status code is returned.
 
-1. If the web service returns information, such as an object serialized in JSON, you can read it out of the `HttpResponseMessage`. Then, you can deserialize the JSON using `JsonConvert.DeserializeObject`.
+1. If the web service returns information, such as an object serialized in JSON, you can read it out of the `HttpResponseMessage`. Then, you can deserialize the JSON using `JsonSerializer.Deserialize`.
 
     ```csharp
     var returnedJson = await response.Content.ReadAsStringAsync();
 
-    var insertedPart = JsonConvert.DeserializeObject<Part>(returnedJson);
+    var insertedPart = JsonSerializer.Deserialize<Part>(returnedJson, new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true,
+            });
     ```
 
 1. Finally, return the new inserted **Part**.
+
+    ```csharp
+    return insertedPart;
+    ```
 
 1. Build and run the app. Select the **Add New Part** button and enter a name, type, and supplier to create a new part. Select **Save**. The **Add** method in the **PartsManager** class will get invoked, which creates the new part in the web service. If the operation is successful, the part list page will reappear with the new part at the bottom of the list.
 
     :::image type="content" source="../media/5-insert-part.png" alt-text="A screenshot of the app running after a new part has been added. The new part is at the bottom of the list.":::
 
-1. When you have finished browsing the data, close the app and return to Visual Studio.
+1. When you've finished browsing the data, close the app and return to Visual Studio or Visual Studio Code.
 
 ## Perform a PUT operation to update the details for a part in the database
 
@@ -251,7 +266,7 @@ The REST service requires you to sign in first to get an authorization token. Th
 1. Get an HTTP client from the **GetClient** method.
 
     ```csharp
-    HttpClient client = await GetClient();
+    var client = await GetClient();
     ```
 
 1. Send the request with the `HttpClient` and then make sure it was successful.
@@ -261,14 +276,14 @@ The REST service requires you to sign in first to get an authorization token. Th
     response.EnsureSuccessStatusCode();
     ```
 
-1. Build and run the app. Tap or click on one of the parts from the list. The **AddPart** page will appear, this time will the properties already filled in. Update whatever you'd like.
+1. Build and run the app. Select one of the parts from the list. The **AddPart** page will appear, this time with the properties already filled in. Update whatever you'd like.
 
 1. Select **Save**. This calls the **Update** method in the **PartsManager** class to send the changes to the web service. If successful, the parts list page will reappear will your changes reflected.
 
     :::image type="content" source="../media/5-update-part.png" alt-text="A screenshot of the app running with the first item in the list updated.":::
 
     > [!NOTE]
-    > The part you added in the previous task will not appear on the **Part List** page. The data used by the app is reset to a list of predefined parts each time the app runs. This is to provide consistency for testing the app.
+    > The part you added in the previous task will not appear on the **Part List** page. The data the app uses is reset to a list of predefined parts each time the app runs. This is to provide consistency for testing the app.
 
 ## Perform a DELETE operation to remove the details for a part from the database
 
@@ -291,7 +306,7 @@ The REST service requires you to sign in first to get an authorization token. Th
 1. Get an HTTP client from the **GetClient** method.
 
     ```csharp
-    HttpClient client = await GetClient();
+    var client = await GetClient();
     ```
 
 1. Send the request to the web service. Check for success after it returns.
@@ -301,4 +316,4 @@ The REST service requires you to sign in first to get an authorization token. Th
     response.EnsureSuccessStatusCode();
     ```
 
-1. Build and run the app. Select a part from the list and then in the **Add Part** page, select **Delete**. If successful, the **Part List** page will reappear and the part you deleted will no longer be visible.
+1. Build and run the app. Select a part from the list and then select **Delete** on the **Add Part** page. If successful, the **Part List** page will reappear and the part you deleted will no longer be visible.
