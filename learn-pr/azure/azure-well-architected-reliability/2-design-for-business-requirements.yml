@@ -43,3 +43,17 @@ quiz:
     - content: "Only dependencies that are involved in critical flows."
       isCorrect: false
       explanation: "Dependencies that are not involved in critical flows still need to be considered as you may need to plan for operating in a degraded state if there is an issue with them."
+  - content: "The Contoso Insurance workload team is interested in learning about the guaranteed uptime for different Azure App Service SKUs. Where should they research this information?"
+    choices:
+    - content: "The Microsoft SLAs for Online Services documentation."
+      isCorrect: true
+      explanation: "The Microsoft SLAs for Online Services provides information about the guaranteed uptime for different Azure App Service SKUs."
+    - content: "The Azure App Service pricing page."
+      isCorrect: false
+      explanation: "The Azure App Service pricing page provides information about the cost of different Azure App Service SKUs, but not the guaranteed uptime."
+    - content: "The Azure App Service documentation."
+      isCorrect: false
+      explanation: "The Azure App Service documentation will provide information about how to use Azure App Service, but not the guaranteed uptime."
+    - content: "The Azure App Service FAQ."
+      isCorrect: false
+      explanation: "The Azure App Service FAQ will provide information about how to use Azure App Service, but not the guaranteed uptime."
