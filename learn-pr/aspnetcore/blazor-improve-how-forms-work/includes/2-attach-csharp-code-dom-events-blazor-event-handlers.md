@@ -141,10 +141,10 @@ In the following example, the `@onclick` event handler for the \<button\> elemen
 
 The following image shows the result when the user selects the button:
 
-:::image type="content" source="../media/2-change-focus.png" alt-text="Screenshot of the web page page after the user has clicked the button to set the focus to the input element":::
+:::image type="content" source="../media/2-change-focus.png" alt-text="Screenshot of the web page after the user has clicked the button to set the focus to the input element.":::
 
 > [!NOTE]
-> An app should only direct the focus to a specific control for a specific reason, such as to ask the user to modify input after an error. Don't try and use focusing to force the user to navigate through the elements on a page in a fixed order; this can be very frustrating to the user who might want to revisit elements to change their input.  
+> An app should only direct the focus to a specific control for a specific reason, such as to ask the user to modify input after an error. Don't use focusing to force the user to navigate through the elements on a page in a fixed order; this can be very frustrating to the user who might want to revisit elements to change their input.  
 
 ## Write inline event handlers
 
@@ -226,7 +226,7 @@ Several DOM events have default actions that run when the event occurs, regardle
 
 If you run this code and press the `@` key, the alert will be displayed, but the `@` character will also be added to the input. The addition of the `@` character is the default action of the event.
 
-:::image type="content" source="../media/2-key-down.png" alt-text="Screenshot of the user input showing the @ character":::
+:::image type="content" source="../media/2-key-down.png" alt-text="Screenshot of the user input showing the @ character.":::
 
 If you want to suppress this character from appearing in the input box, you can override the default action with the `preventDefault` attribute of the event, like this:
 
@@ -338,7 +338,7 @@ In this example, the `EventCallback` object is a component parameter, and its va
 
 The `TextTransformer` component is a Blazor page that creates an instance of the `TextDisplay` component. It populates the `OnKeypressCallback` parameter with a reference to the `TransformText` method in the code section of the page. The `TransformText` method takes the `KeyTransformation` object provided as its argument, and fills in the `TransformedKey` property with the value found in the `Key` property converted to upper case. The following diagram illustrates the flow of control when a user enters a value into the \<input\> field in the `TextDisplay` component displayed by the `TextTransformer` page:
 
-:::image type="content" source="../media/2-eventcallback-flow.png" alt-text="Diagram of the flow of control with an EventCallback in a child component":::
+:::image type="content" source="../media/2-eventcallback-flow.png" alt-text="Diagram of the flow of control with an EventCallback in a child component.":::
 
 The beauty of this approach is that you can use the `TextDisplay` component with any page that provides a callback for the `OnKeypressCallback` parameter. There's complete separation between the display and the processing. You can switch the `TransformText` method for any other callback that matches the signature of the `EventCallback` parameter in the `TextDisplay` component.
 
