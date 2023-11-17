@@ -14,7 +14,8 @@ You can think of Azure Storage as supporting three categories of data: structure
 
 ### How to create a storage account
 
-> [!Video https://www.youtube.com/embed/AhuNgBafmUo]
+<iframe width="854" height="480" src="https://www.youtube.com/embed/AhuNgBafmUo" title="How to move Azure Storage Blobs between containers" allowfullscreen></iframe>
+
 
 #### Storage account tiers
 

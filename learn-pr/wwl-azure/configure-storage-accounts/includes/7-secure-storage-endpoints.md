@@ -19,4 +19,4 @@ Here are some points to consider about configuring service access settings:
 
 ### How to connect to a storage account using private link
 
-> [!Video https://www.youtube.com/embed/vM7yDwHSc_o]
+<iframe width="854" height="480" src="https://www.youtube.com/embed/vM7yDwHSc_o" title="How to move Azure Storage Blobs between containers" allowfullscreen></iframe>
