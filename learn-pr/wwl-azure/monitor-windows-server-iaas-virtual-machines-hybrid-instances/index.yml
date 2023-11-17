@@ -6,7 +6,7 @@ metadata:
   ms.date: 12/13/2021
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: windows-server
 title: Monitor Windows Server IaaS Virtual Machines and hybrid instances
 summary: You'll be able to implement Azure Monitor for IaaS VMs in Azure, implement Azure Monitor in on-premises environments, and use dependency maps.

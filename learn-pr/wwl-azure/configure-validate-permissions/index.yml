@@ -6,7 +6,7 @@ metadata:
   ms.date: 1/25/2023
   author: LuizMacedo
   ms.author: lumac
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: learning-azure
 title: Configure and validate permissions
 summary: "This module covers fundamental concepts and best practices for configuring and validating user permissions, pipeline permissions, approval and branch checks, and auditing and managing permissions."

@@ -1,13 +1,15 @@
 All the exercises in this module relate to the prebuilt **TipCalculator** application. You modify and improve this app throughout the module. In this exercise, you use page-level resources to eliminate repeated XAML values.
 
-## Open the starter solution
+[!include[](../../../includes/dotnet8-sdk-version.md)]
 
-> [!NOTE]
-> If you are planning to run and debug your .NET MAUI apps on Android from Windows, it is best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
+## Open the starter solution
 
 1. Clone or download the exercise repo from [GitHub](https://github.com/microsoftdocs/mslearn-dotnetmaui-use-shared-resources).
 
-1. Open the starter solution from the **exercise1/TipCalculator** folder by using Visual Studio.
+    > [!NOTE]
+    > It is best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
+
+1. Open the starter solution from the **exercise1/TipCalculator** folder by using Visual Studio or this folder directly in Visual Studio Code.
 
 1. Verify that it builds and runs in your environment. (Any platform is fine.)
 
@@ -25,7 +27,7 @@ All the exercises in this module relate to the prebuilt **TipCalculator** applic
 
 ## Find repeated XAML
 
-1. In Visual Studio, open the **StandardTipPage.xaml** file.
+1. Open the **StandardTipPage.xaml** file.
 
 1. Find the XAML markup that sets the background color of the **LayoutRoot** grid. Notice that it uses a hard-coded value.
 

@@ -7,8 +7,9 @@ metadata:
   ms.date: 11/06/2023
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: azure
-durationInMinutes: 2
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
 content: |
   [!include[](includes/6-understand-server-response-time-degradation.md)]
