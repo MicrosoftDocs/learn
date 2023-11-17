@@ -1,1 +1,0 @@
-Your team will be responsible for implementing custom solutions for the IoT Edge. This lab has provided you with experience implementing a gateway device that provides extended offline support and local storage. You now have the experience that you will need to implement the company's production solution.
