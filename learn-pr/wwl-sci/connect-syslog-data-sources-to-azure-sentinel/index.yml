@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/27/2022
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: microsoft-sentinel
 title: Connect syslog data sources to Microsoft Sentinel
 summary: Learn about the Azure Monitor Agent Linux Syslog Data Collection Rule configuration options, which enable you to parse Syslog data.

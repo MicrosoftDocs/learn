@@ -37,7 +37,10 @@ You'll perform this exercise using the Azure sandbox.
     git clone https://github.com/microsoftdocs/mslearn-dotnetmaui-consume-rest-services
     ```
 
-1. Go to the **src\webservice\PartsServer** folder in your clone of the repository, and open the **PartsServer.sln** solution using Visual Studio. This solution contains a copy of the code for the web service that you deployed to Azure in the previous procedure.
+    > [!NOTE]
+    > It is best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
+
+1. Go to the **src\webservice\PartsServer** folder in your clone of the repository, and open the **PartsServer.sln** solution using Visual Studio or the folder in Visual Studio Code. This solution contains a copy of the code for the web service that you deployed to Azure in the previous procedure.
 
 1. In the Solution Explorer window, expand the **Models** folder. This folder contains two files:
 
@@ -55,7 +58,9 @@ You'll perform this exercise using the Azure sandbox.
 
 ## Examine the code for the .NET MAUI client app
 
-1. In Visual Studio, close the **PartsServer** solution, and open the **PartsClient** solution in the **src\client\PartsClient** folder in the cloned repository. This solution contains a partial implementation of a .NET MAUI client app that uses the **PartsServer** web service.
+[!include[](../../../includes/dotnet8-sdk-version.md)]
+
+1. Close the **PartsServer** solution, and open the **PartsClient** solution in the **src\client\PartsClient** folder in the cloned repository. This solution contains a partial implementation of a .NET MAUI client app that uses the **PartsServer** web service.
 
 1. In the Solution Explorer window, expand the **Data** folder. This folder contains the code for two classes:
 
@@ -107,7 +112,7 @@ The REST service requires you to sign in first to get an authorization token. Th
         if (string.IsNullOrEmpty(authorizationKey))
         {                
             authorizationKey = await client.GetStringAsync($"{Url}login");
-            authorizationKey = JsonConvert.DeserializeObject<string>(authorizationKey);
+            authorizationKey = JsonSerializer.Deserialize<string>(authorizationKey);
         }
 
         client.DefaultRequestHeaders.Add("Authorization", authorizationKey);
@@ -133,7 +138,7 @@ The REST service requires you to sign in first to get an authorization token. Th
 
 1. Call the **GetStringAsync** method of the **HttpClient** object and provide the base URL to retrieve an array of parts from the REST web service. The data is returned asynchronously as a JSON string.
 
-1. Deserialize the JSON string returned by this method into a list of **Part** objects using the **JsonConvert.Deserialize** method. Return this list to the caller.
+1. Deserialize the JSON string returned by this method into a list of **Part** objects using the **JsonSerializer.Deserialize** method. Return this list to the caller.
 
     The completed method should look like this:
 
@@ -143,10 +148,13 @@ The REST service requires you to sign in first to get an authorization token. Th
         if (Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
             return new List<Part>();
         
-        HttpClient client = await GetClient();
+        var client = await GetClient();
         string result = await client.GetStringAsync($"{Url}parts");
 
-        return JsonConvert.DeserializeObject<List<Part>>(result);                       
+        return JsonSerializer.Deserialize<List<Part>>(result, new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true,
+            });                     
     }
     ```
 
@@ -154,7 +162,7 @@ The REST service requires you to sign in first to get an authorization token. Th
 
     :::image type="content" source="../media/5-all-parts.png" alt-text="A screenshot of the Parts Client app running on Android showing a list of parts.":::
 
-1. When you've finished browsing the data, close the app and return to Visual Studio.
+1. When you've finished browsing the data, close the app and return to Visual Studio or Visual Studio Code.
 
 ## Perform a POST operation to add a new part to the database
 
@@ -176,7 +184,7 @@ The REST service requires you to sign in first to get an authorization token. Th
     - Get an HTTP client from the **GetClient** method.
 
     ```csharp
-    Part part = new Part()
+    var part = new Part()
     {
         PartName = partName,
         Suppliers = new List<string>(new[] { supplier }),
@@ -208,21 +216,28 @@ The REST service requires you to sign in first to get an authorization token. Th
 
     Note the preceding uses the `response.EnsureSuccessStatusCode` method. That will throw an error if anything other than a 2xx HTTP status code is returned.
 
-1. If the web service returns information, such as an object serialized in JSON, you can read it out of the `HttpResponseMessage`. Then, you can deserialize the JSON using `JsonConvert.DeserializeObject`.
+1. If the web service returns information, such as an object serialized in JSON, you can read it out of the `HttpResponseMessage`. Then, you can deserialize the JSON using `JsonSerializer.Deserialize`.
 
     ```csharp
     var returnedJson = await response.Content.ReadAsStringAsync();
 
-    var insertedPart = JsonConvert.DeserializeObject<Part>(returnedJson);
+    var insertedPart = JsonSerializer.Deserialize<Part>(returnedJson, new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true,
+            });
     ```
 
 1. Finally, return the new inserted **Part**.
+
+    ```csharp
+    return insertedPart;
+    ```
 
 1. Build and run the app. Select the **Add New Part** button and enter a name, type, and supplier to create a new part. Select **Save**. The **Add** method in the **PartsManager** class will get invoked, which creates the new part in the web service. If the operation is successful, the part list page will reappear with the new part at the bottom of the list.
 
     :::image type="content" source="../media/5-insert-part.png" alt-text="A screenshot of the app running after a new part has been added. The new part is at the bottom of the list.":::
 
-1. When you've finished browsing the data, close the app and return to Visual Studio.
+1. When you've finished browsing the data, close the app and return to Visual Studio or Visual Studio Code.
 
 ## Perform a PUT operation to update the details for a part in the database
 
@@ -251,7 +266,7 @@ The REST service requires you to sign in first to get an authorization token. Th
 1. Get an HTTP client from the **GetClient** method.
 
     ```csharp
-    HttpClient client = await GetClient();
+    var client = await GetClient();
     ```
 
 1. Send the request with the `HttpClient` and then make sure it was successful.
@@ -291,7 +306,7 @@ The REST service requires you to sign in first to get an authorization token. Th
 1. Get an HTTP client from the **GetClient** method.
 
     ```csharp
-    HttpClient client = await GetClient();
+    var client = await GetClient();
     ```
 
 1. Send the request to the web service. Check for success after it returns.

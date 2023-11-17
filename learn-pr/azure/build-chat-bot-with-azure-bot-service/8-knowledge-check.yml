@@ -7,8 +7,7 @@ metadata:
   ms.date: 09/24/2018
   author: jasallen
   ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 quiz:
   title: 'Knowledge check for "Build a chat bot with the Azure Bot Service"'

@@ -17,4 +17,7 @@ In this module, you'll learn:
 ## Prerequisites
 
 - Visual Studio 2022 with the .NET MAUI workload installed
+- Optional: Visual Studio Code with the .NET MAUI Extension and .NET SDK with the .NET MAUI workload installed
 - Familiarity with C# and .NET
+
+[!include[](../../../includes/install-dotnet-maui-workload.md)]
