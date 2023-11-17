@@ -6,7 +6,7 @@ In this module, you'll build a .NET MAUI application that consumes data from a R
 
 ## Learning objectives
 
-In this module, you’ll learn how to:
+In this module, you learned how to:
 
 - Detect if your device is connected to the internet.
 - Consume a REST web service by using **HttpClient**.
@@ -14,6 +14,9 @@ In this module, you’ll learn how to:
 
 ## Prerequisites
 
-- Visual Studio 2022 with the .NET MAUI workload
+- Visual Studio 2022 with the .NET MAUI workload installed
+- Optional: Visual Studio Code with the .NET MAUI Extension and .NET SDK with the .NET MAUI Workload installed
 - Familiarity with C# and .NET
 - Basic knowledge of REST
+
+[!include[](../../../includes/install-dotnet-maui-workload.md)]

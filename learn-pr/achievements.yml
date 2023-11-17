@@ -2405,4 +2405,8 @@ achievements:
   title: 'Microsoft Azure AI Fundamentals: Explore knowledge mining'
   summary: Knowledge mining is a discipline in artificial intelligence (AI) that uses a combination of intelligent services to quickly search and learn from vast amounts of information.
   iconUrl: /learn/achievements/knowledge-mining-fundamentals.svg
-
+- uid: learn.azure.intro-to-anomaly-detector.badge
+  type: badge
+  title: Introduction Azure AI Anomaly Detector
+  summary: Discover the services available on Azure to detect anomalies in your time-series, or real-time data.
+  iconUrl: /training/achievements/anomaly-detector.svg
