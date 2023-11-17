@@ -3,13 +3,17 @@ uid: learn.wwl.configure-storage-security
 metadata:
   title: Configure Azure Storage security
   description: "Learn how to configure common Azure Storage security features like storage access signatures."
-  ms.date: 05/10/2023
+  ms.date: 11/17/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: azure-storage
 title: Configure Azure Storage security
-summary: Learn how to configure common Azure Storage security features like storage access signatures.
+summary: |
+  Learn how to configure common Azure Storage security features like storage access signatures.
+  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   In this module, you learn how to:
   - Configure a shared access signature (SAS), including the uniform resource identifier (URI) and SAS parameters.
