@@ -14,13 +14,13 @@ The following video shows how to create the Azure resources you need. Use the st
 
 1. On the **Basics** tab, enter the following values for each setting.
 
-   | Setting | Value  |
+   | Setting | Value |
    |---------|---------|
    | **Project details** |
    | Subscription | Select the subscription associated with your account. |
    | Resource group | From the dropdown list, select *learn-file-sync-rg*, the resource group you created in Unit 4. |
    | **Instance details** |
-   | Storage account name   | Enter *extendcadfilesXXXX*, replacing "XXXX" with random letters or numbers of your choosing. |
+   | Storage account name | Enter *extendcadfilesXXXX*, replacing "XXXX" with random letters or numbers of your choosing. |
 
 1. Accept the defaults for the rest of the values.
 
@@ -40,14 +40,14 @@ Wait for the storage account to be created.
 
    | Setting | Value  |
    |---------|---------|
-   | Name    | **cadfileshare** |
-   | Tier    | **Transaction optimized** |
+   | Name    | cadfileshare |
+   | Tier    | Transaction optimized |
 
 1. Select **Review + Create**, and after validation passes, select **Create**.
 
 ## Create the Storage Sync Service
 
-1. In the upper-left corner of the portal, in the breadcrumb, select **Home**. The **Home** page for the Azure portal appears.
+1. In the upper-left corner of the portal, select **Home**. The **Home** page for the Azure portal appears.
 
 1. Under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
@@ -79,7 +79,7 @@ Wait for the Storage sync service to be created.
 
    | Setting | Value  |
    |---------|---------|
-   | Sync group name | **CADFiles** |
+   | Sync group name | CADFiles |
    | Storage account | Select **Select storage account**. The **Choose storage account** pane appears. Select **extendcadfilesXXXX**. |
    | Azure File Share | From the dropdown list, select **cadfileshare**. |
 
