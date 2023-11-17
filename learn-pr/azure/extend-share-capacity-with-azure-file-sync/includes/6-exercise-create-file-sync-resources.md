@@ -71,6 +71,8 @@ Wait for the Storage sync service to be created.
 
 1. When deployment completes, select **Go to resource**. Your **Storage Sync Service** pane appears.
 
+1. Select **Sync** > **Sync groups**.
+
 1. In the top menu bar, select **+ Sync group**. The **Sync group** pane appears.
 
 1. Enter the following values for each setting.

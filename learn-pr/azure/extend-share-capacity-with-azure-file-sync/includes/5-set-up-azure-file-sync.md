@@ -1,8 +1,8 @@
-You've successfully evaluated the target server and found it suitable. Now, prepare your Azure environment to deploy Azure File Sync and investigate what steps are required.
+You successfully evaluate the target server and found it suitable. Now, prepare your Azure environment to deploy Azure File Sync and investigate what steps are required.
 
 In this unit, you learn about the components and services that Azure File Sync relies on.
 
-To support Azure File Sync, there are several resources that you need to create in your Azure subscription. Create these resources in the following order:
+To support Azure File Sync, there are many resources that you need to create in your Azure subscription. Create these resources in the following order:
 
 ## 1. Storage account
 

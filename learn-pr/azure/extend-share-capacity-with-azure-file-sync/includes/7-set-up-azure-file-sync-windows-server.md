@@ -1,6 +1,6 @@
 Azure File Sync has a sync agent for all the supported versions of Windows Server. The agent completes the setup of the trust relationship between your on-premises Windows Server computer and the Azure Storage Sync Service.
 
-You've successfully set up your company's Azure resources to support Azure File Sync. Now, you're going to prepare your Windows file server to deploy the required Azure File Sync components.
+You successfully set up your company's Azure resources to support Azure File Sync. Now, you're going to prepare your Windows file server to deploy the required Azure File Sync components.
 
 In this unit, you learn how to prepare the Windows Server environment for Azure File Sync.
 

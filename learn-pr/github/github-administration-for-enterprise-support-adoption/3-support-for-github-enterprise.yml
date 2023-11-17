@@ -8,8 +8,7 @@ metadata:
   ms.date: 10/08/2021
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/3-support-for-github-enterprise.md)]

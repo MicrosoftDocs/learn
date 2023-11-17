@@ -43,7 +43,7 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
     -Subnet $subnetConfig
     ```
 
-1. Run the following command to set the username and password for the administrator account on the VM. Enter the *User* `learnadmin` and a password. The password needs to be at least eight characters long and include a digit, an uppercase letter, a lowercase letter, and a special character. Write down the password because you'll need it later.
+1. Run the following command to set the username and password for the administrator account on the VM. Enter the *User* `learnadmin` and a password. The password needs to be at least eight characters long. It must include a digit, an uppercase letter, a lowercase letter, and a special character. Write down the password because you need it later.
 
     ```powershell
     $cred = Get-Credential
@@ -84,7 +84,7 @@ In order to connect to the new server using Remote Desktop, create a public IP a
 
 1. Select the **FileServerLocal** VM. The **FileServerLocal** virtual machine pane appears.
 
-1. Under **Settings** > **Networking**, select the network interface called **FileServerLocal**.
+1. Under **Networking** > **Network settings**, select the network interface called **FileServerLocal**.
 
 1. Under **Settings** > **IP configurations**, select the IP configuration **FileServerLocal**.
 
@@ -94,7 +94,7 @@ In order to connect to the new server using Remote Desktop, create a public IP a
 
 ## Set up Windows Server for assessment
 
-Connect to the new server by using Remote Desktop client. Download a sample CAD file and install the Azure PowerShell module that you'll use later.
+Connect to the new server by using Remote Desktop client. Download a sample CAD file and install the Azure PowerShell module that you use later.
 
 1. Make sure that you're still signed in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 

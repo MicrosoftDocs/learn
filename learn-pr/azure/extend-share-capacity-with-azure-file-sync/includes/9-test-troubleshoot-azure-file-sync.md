@@ -1,6 +1,6 @@
 There are several ways to monitor Azure File Sync. You could use the Azure portal, Azure Monitor, or the event log on one of the Windows Server computers. You could also monitor Azure File Sync by adding Azure File Sync performance counters to Performance Monitor.
 
-You've set up the Azure File Sync components in your Azure environment and on the target server. Now, you want to ensure the environment functions correctly and monitor replication and file-copy jobs.
+You set up the Azure File Sync components in your Azure environment and on the target server. Now, you want to ensure the environment functions correctly and monitor replication and file-copy jobs.
 
 ## Common problems
 

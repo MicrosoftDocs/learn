@@ -14,7 +14,7 @@ The following diagram shows what happens when a user requests two files. File A 
 
 With cloud tiering, you store a smaller set of file data locally, so you have more local storage space for the files your organization uses more often.
 
-By default, cloud tiering is off. You can enable it when you create the server endpoint.
+By default, cloud tiering is off. You enable it when you create the server endpoint.
 
 ## Terminology
 
@@ -50,10 +50,10 @@ Azure Files doesn't have change notification or journaling yet, so Azure File Sy
 
 The following steps describe the high-level process you can use to set up Azure File Sync.
 
-1. *Evaluate your on-premises system*:  Run the evaluation cmdlet on your on-premises server to check whether your operating system and file system are supported.
+1. *Evaluate your on-premises system*: Run the evaluation cmdlet on your on-premises server to check whether your operating system and file system are supported.
 1. *Create Azure resources*: You need a storage account to contain a file share, a Storage Sync Service, a sync group, and a cloud endpoint. Create the resources in that order. If you create a sync group by using the Azure portal, it creates a cloud endpoint at the same time.
 1. *Install the Azure File Sync agent*: Install the agent on each Windows file server that's taking part in replication to the Storage Sync Service.
 1. *Register the Windows Server with the Storage Sync Service*: After you install the sync agent, you're prompted to register the server with the Storage Sync Service.
 1. *Create the server endpoint*: After the server is registered, you add it as a server endpoint in the sync group.
 
-Learn about these steps in the following units.
+You learn about these steps in the following units.
