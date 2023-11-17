@@ -76,7 +76,7 @@ In this example, the `OnInitialized` event populates an array of `WeatherForecas
 
 The following image shows an example of the page running:
 
-:::image type="content" source="../media/4-editform-data-binding.png" alt-text="Screenshot of the EditForm containing controls bound to a WeatherForecast object":::
+:::image type="content" source="../media/4-editform-data-binding.png" alt-text="Screenshot of the EditForm containing controls bound to a WeatherForecast object.":::
 
 > [!IMPORTANT]
 > The `EditForm` component implements two-way data binding. The form displays the values retrieved from the model, but the user can update these values in the form and they'll be pushed back to the model.
@@ -176,7 +176,7 @@ Notice that the color and size of the T-shirt are specified as enumerations. In 
 
 When you run the form, it looks like this:
 
-:::image type="content" source="../media/4-t-shirt-form.png" alt-text="Screenshot of the EditForm showing the radio button groups for T-Shirt size and color":::
+:::image type="content" source="../media/4-t-shirt-form.png" alt-text="Screenshot of the EditForm showing the radio button groups for T-Shirt size and color.":::
 
 ## Handle form submission
 
@@ -258,4 +258,4 @@ If an illegal combination is detected, the `Message` field on the form displays 
 
 The following image shows the results if the user attempts to provide invalid data:
 
-:::image type="content" source="../media/4-t-shirt-form-submission.png" alt-text="The T-shirt form showing a validation error after it has been submitted.":::
+:::image type="content" source="../media/4-t-shirt-form-submission.png" alt-text="Screenshot of the T-shirt form showing a validation error after it has been submitted.":::
