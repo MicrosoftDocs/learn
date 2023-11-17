@@ -13,6 +13,6 @@ metadata:
   ms.service: iot-hub
   sandbox: true
   interactive: bash
-durationInMinutes: 3
+durationInMinutes: 12
 content: |
   [!include[](includes/2-prepare.md)]

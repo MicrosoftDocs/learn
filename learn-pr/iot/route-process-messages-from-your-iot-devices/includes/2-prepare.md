@@ -25,16 +25,18 @@ Before you begin the exercises, you need an IoT hub. Creating the IoT hub can ta
 
    | Property | Value |
    | ----- | ----- |
-   | **Subscription** | Select the sandbox **Concierge subscription**. |
+   | **Subscription** | Select the sandbox **Concierge Subscription**. |
    | **Resource group** | Select the <rgn>[sandbox resource group name]</rgn> resource group. |
    | **IoT hub name** | Enter a name for your hub. This name must be globally unique, with a length between 3 and 50 alphanumeric characters. The name can also include the dash (`'-'`) character.<br><br>**Note:** IoT hubs are publicly discoverable as DNS endpoints, so avoid using any sensitive or personally identifiable information in the name. |
    | **Region** | Select the region, closest to you, where you want your hub to be located. |
 
 1. Accept the defaults values for the rest of the fields and select **Review + create** to continue creating your hub.
 
-1. Review the IoT hub details and make sure there are no errors to fix, then select **Create** to start the deployment of your new hub. Your deployment will be in progress a few minutes while the hub is being created. Once the deployment is complete, select **Go to resource** to open the new hub.
+1. Review the IoT hub details and make sure there are no errors to fix, then select **Create** to start the deployment of your new hub. Your deployment will be in progress a few minutes while the hub is being created.
 
-1. Once your IoT hub is provisioned, in your IoT hub navigation menu, open **Devices**, then select **Add Device** to add a device in your IoT hub.
+1. Once the deployment is complete, select **Go to resource** to open the new hub.
+
+1. In your IoT hub navigation menu, open **Devices**, then select **Add Device** to add a device in your IoT hub.
 
 1. In **Device ID**, enter **sensor-v-3000**. Leave **Auto-generate keys** checked so that the primary and secondary keys are generated automatically. Leave **Authentication type** as **Symmetric key**. Select **Save**. This action creates a device identity in your IoT hub.
 

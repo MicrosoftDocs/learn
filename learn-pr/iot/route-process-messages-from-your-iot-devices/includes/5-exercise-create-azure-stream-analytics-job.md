@@ -12,7 +12,7 @@ Your Stream Analytics job processes message data to an output location using the
 
 ### Task 1: Create the Stream Analytics job
 
-1. On the Azure portal menu, select **Create a resource**.
+1. On the Azure portal, navigate to the home page, then select **Create a resource**.
 
 1. On the **Create a resource** blade, search for **Stream Analytics job**.
 
@@ -24,7 +24,7 @@ Your Stream Analytics job processes message data to an output location using the
 
    | Parameter | Value |
    | --------- | ----- |
-   | **Subscription** | Select the sandbox **Concierge subscription**. |
+   | **Subscription** | Select the sandbox **Concierge Subscription**. |
    | **Resource group** | Select your Azure sandbox resource group, <rgn>[sandbox resource group name]</rgn>. |
    | **Name** | Enter **vibrationJob**. |
    | **Region** | Choose a region close to you. |
@@ -46,7 +46,7 @@ Your Stream Analytics job processes message data to an output location using the
 
     The **Inputs** pane is displayed.
 
-1. On the **Inputs** pane, select **+ Add stream input**, and then select **IoT Hub**.
+1. On the **Inputs** pane, select **+ Add input**, and then select **IoT Hub**.
 
     The **IoT Hub - New input** pane is displayed.
 
@@ -56,7 +56,7 @@ Your Stream Analytics job processes message data to an output location using the
    | --------- | ----- |
    | **Input alias** | Enter **vibrationInput**. |
    | **Select IoT Hub from your subscriptions** | Ensure that this option is selected. |
-   | **Subscription** | Make sure the Azure sandbox subscription is selected. |
+   | **Subscription** | Make sure the Concierge Subscription is selected. |
    | **IoT Hub** | Make sure your IoT hub is selected. |
    | **Consumer group** | **$Default** |
    | **Shared access policy name** | **iothubowner**<br><br>**Note**: The **Shared access policy key** is prepopulated and read-only. |
@@ -87,13 +87,14 @@ Your Stream Analytics job processes message data to an output location using the
    | **Output alias** | Enter **vibrationOutput**. |
    | **Select Blob storage/ADLS Gen2 from your subscriptions** | Ensure that this option is selected. |
    | **Subscription** | Select the Azure sandbox subscription. |
-   | **Storage account** | Select your Storage account. |
+   | **Storage account** | Select the Storage account that you created. |
    | **Container** | Ensure that **Use existing** is selected, and select **vibrationcontainer** from the dropdown list. |
    | **Authentication Mode** | Select **Connection string**<br><br>**Note**: The **Storage account key** is displayed. |
    | **Path pattern** | Leave this field blank. |
    | **Event serialization format** | **JSON** |
    | **Format** | **Line separated**<br><br>**Note**: This setting stores each record as a JSON object on each line and, taken as a whole, results in a file that is an invalid JSON record. The other option, **Array**, ensures that the entire document is formatted as a JSON array where each record is an item in the array. This formatting allows the entire file to be parsed as valid JSON. |
    | **Encoding** | **UTF-8** |
+   | **Write mode** | **Append, as results arrive** |
    | **Path pattern** | Leave this field blank. |
    | **Minimum rows** | Leave this field blank. |
    | **Maximum time** | Leave **Hours**, **Minutes**, **Seconds** blank. |
@@ -117,7 +118,7 @@ Your Stream Analytics job processes message data to an output location using the
         vibrationInput
     ```
 
-1. Directly above the query editor pane, select **Save Query**.
+1. Directly above the query editor pane, select **Save query**.
 
 1. On the left-side menu, select **Overview**.
 
@@ -139,7 +140,7 @@ Now for the fun part. Is the telemetry from your device app being processed thro
 
 1. From your Resources tile, navigate to your Storage account.
 
-1. On the **Overview** pane of your Storage account, select the **Monitoring** section.
+1. On the **Overview** pane of your Storage account, select the **Monitoring** tab.
 
 1. Under **Key metrics**, next to **Show data for last**, change the time range to **1 hour**.
 

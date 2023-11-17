@@ -42,7 +42,7 @@ To create the storage endpoint:
 
 1. In the **Message routing** pane, ensure that the **Routes** tab is selected.
 
-1. Select **Add** to add a new route.
+1. Select **+ Add** to add a new route.
 
 1. In the **Add a route** window, the first step is to create an endpoint:
 
@@ -125,7 +125,7 @@ To create the storage endpoint:
 
 1. Locate the block blob for the data with the earliest time stamp.
 
-    The .avro files use a naming pattern of **{num}.avro** (that is, **22.avro**).
+    The .avro files use a naming pattern of **{num}.avro** (for example, **22.avro**).
 
 1. Select **...** next to the block blob with the earliest time stamp, then select **Download** from the Context menu.
 

@@ -17,7 +17,9 @@ In this exercise, you:
 
 1. Open Visual Studio Code.
 
-1. Create a file named **Program.cs** in the VibrationDevice folder.
+1. In Visual Studio Code, select **File...**, then **Select Folder...**, then navigate to your **VibrationDevice** folder, then select **Open Folder**.
+
+1. Create a file named **Program.cs** in the **VibrationDevice** folder.
 
 1. Paste the following code into the **Program.cs** file.
 
@@ -339,7 +341,7 @@ In this exercise, you:
 
 1. Save your changes to **Program.cs**.
 
-1. Create a file named **VibrationDevice.csproj** in the VibrationDevice folder.
+1. Create a file named **VibrationDevice.csproj** in the **VibrationDevice** folder.
 
 1. Paste the following code into **VibrationDevice.csproj**.
 
@@ -423,7 +425,7 @@ In this exercise, you:
 
 1. Leave this app running for the next task.
 
-   If you won't be continuing to the next task, you can enter **Ctrl-C** in the Terminal window to stop the app. You can start it again later by using the **dotnet run** command.
+   If you won't be continuing to the next task, you can enter **Ctrl+C** in the Terminal window to stop the app. You can start it again later by using the **dotnet run** command.
 
 ### Task 3: Verify that IoT Hub is receiving telemetry
 
