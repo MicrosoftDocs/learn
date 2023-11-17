@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: azure
 title: Create Azure resources using Azure Resource Manager templates
 summary: This module explores Azure Resource Manager templates and their components and details dependencies and modularized templates with secrets.

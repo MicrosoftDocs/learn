@@ -7,9 +7,10 @@ metadata:
   ms.date: 11/06/2023
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: azure
-durationInMinutes: 5
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
 content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
