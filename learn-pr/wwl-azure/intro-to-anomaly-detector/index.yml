@@ -31,7 +31,6 @@ products:
 subjects:
 - data-analytics
 units:
-- learn.azure.intro-to-anomaly-detector.4-when-to-use-anomaly-detector
 - learn.azure.intro-to-anomaly-detector.exercise
 - learn.azure.intro-to-anomaly-detector.5-knowledge-check
 - learn.azure.intro-to-anomaly-detector.6-summary
