@@ -6,7 +6,7 @@ You also learned how to enhance the default Swagger documentation through XML co
 
 ## Learn more
 
-- [Getting started with OpenAPI](https://oai.github.io/Documentation)
+- [Getting started with OpenAPI](https://github.com/OAI/OpenAPI-Specification)
 - [Getting Started with Swagger](https://github.com/swagger-api/swagger-core/wiki/Swagger-2.X---Getting-started)
 - [Swashbuckle](/aspnet/core/tutorials/getting-started-with-swashbuckle)
 - [.NET Swashbuckle CLI](https://www.nuget.org/packages/Swashbuckle.AspNetCore.Cli/)
