@@ -24,4 +24,4 @@ Run the agent and sign in with your Azure account. To register the file server, 
 
 To finish setup of the trust relationship, return to the Azure portal and the sync group you created. In the sync group, you should already have a cloud endpoint. Now add its matching server endpoint. Because you registered your server, select **Add a server endpoint**, and then select your server.
 
-We'll complete these steps in the next unit.
+You complete these steps in the next unit.
