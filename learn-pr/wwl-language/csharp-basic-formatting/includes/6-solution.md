@@ -10,7 +10,7 @@ string russianLocation = $@"c:\Exercise\{projectName}\ru-RU\data.txt";
 Console.WriteLine($"{russianMessage}:\n\t\t{russianLocation}\n");
 ```
 
-This code represents "*one possible solution*". You may have some variation in naming variables or in the character escape sequences you used. You may have used `Console.Write` instead of `Console.WriteLine`. You may have attempted to combine everything without using several variables.
+This code represents "*one possible solution*". You might have some variation in naming variables or in the character escape sequences you used. You might have used `Console.Write` instead of `Console.WriteLine`. You might have attempted to combine everything without using several variables.
 
 However, as long as your code follows the instructions from the challenge and produces the desired output, then congratulations! Continue to the knowledge check in the next unit.
 
