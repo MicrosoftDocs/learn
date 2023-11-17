@@ -6,8 +6,8 @@ metadata:
   title: Manage your dependencies on GitHub
   description: In this unit, you will learn about the GitHub tools for managing your dependencies.
   ms.date: 1/5/2022
-  author: sterling463
-  ms.author: csterling 
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

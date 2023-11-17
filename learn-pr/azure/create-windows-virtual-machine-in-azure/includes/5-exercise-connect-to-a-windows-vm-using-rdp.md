@@ -31,11 +31,11 @@ You can enter this information into the RDP client, or download a pre-configured
     - Get the public IP address to connect to the VM
     - Get the activity of the CPU, disk, and network
 
-1. In the top menu bar, select **Connect**, and select **RDP** from the dropdown list. The **Connect** pane appears for your virtual machine.
+1. In the top menu bar, select **Connect**, and select the **RDP** tab. The **Connect with RDP** pane appears for your virtual machine.
 
-1. Note the **IP address** and **Port number** settings, then select **Download RDP File**, and save it to your computer.
+1. Note the **IP address** and **Port number** settings, then select **Download RDP File** and save it to your computer.
 
-1. Before we connect, let's adjust a few settings. On Windows, find the file using Explorer, right-click, and select **Edit** (you might need to select **Show more options** to find the **Edit** option). On macOS, you'll need to open the file first with the RDP client, then right-click on the item in the displayed list and select **Edit**.
+1. Before we connect, let's adjust a few settings. On Windows, find the file using Explorer, right-click it, and select **Edit** (you might need to select **Show more options** to find the **Edit** option). On macOS, you'll need to open the file first with the RDP client, then right-click on the item in the displayed list and select **Edit**.
 
 1. You can adjust a variety of settings to control the experience in connecting to the Azure VM. The settings you'll want to examine are:
 
@@ -48,6 +48,8 @@ You can enter this information into the RDP client, or download a pre-configured
 1. Switch back to the **General** tab, and select **Save** to save the changes. You can always come back and edit this file later to try other settings.
 
 ### Connect to the Windows VM
+
+1. Select **Connect**.
 
 1. On the **Remote Desktop Connection** dialog box, note the security warning and the remote computer IP address, and then select **Connect** to start the connection to the VM.
 

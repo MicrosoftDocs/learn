@@ -1,40 +1,73 @@
-Here, we'll help you decide if Azure IoT Central is right for your IoT needs. We'll help you make your decision by analyzing the following criteria:
+Use Azure IoT Central to quickly evaluate your IoT scenario and assess the opportunities it can create for your business.
 
-- Experience
-- Customization
+Recall that in the retail company scenario you'll want to first demonstrate the business impact you can create with the IoT data stream in one store, and then potentially extend the scenario across all stores. If the IoT data can help maintain pleasant temperature conditions, you'll help your company differentiate their stores from their competitors' stores.
+
+Here, you'll learn about the criteria used when deciding if IoT Central is right for your IoT scenario. Then you'll create and deploy an end-to-end solution using IoT Central *In-store Analytics - Checkout* application template.
 
 ## Decision criteria
 
-Azure IoT Central lets users take advantage of a pre-built, production-ready IoT solution. Some users may find that Azure IoT Central doesn't provide all the functionality their solution needs. For custom-built IoT solutions, you should first consider using Azure IoT Central along with companion applications. If that solution doesn't fit your needs, consider making the switch to a fully customized solution using *Azure IoT Hub* and the *Azure IoT device SDKs*.
+IoT Central is a ready-made environment and its primary interface is a web UI. You can use application templates for everything from getting a feel for what is possible, to fully customizing your application to fit your scenario. Some users may find that IoT Central doesn't provide all the functionality their solution needs to evaluate the scenario, though it's worth considering the options to export data to other services and applications or extend it with the REST API.
 
-Let's take a look at some of the criteria you should consider when determining which of these options is best for you:
+If you want to demonstrate the business impact you can create by using an IoT solution, using IoT Central is the fastest and easiest way to achieve it. If your team has plenty of skills and experience developing IoT solutions, then you can start with a fully customizable solution using the platform as a service (PaaS) IoT services such as: *Azure IoT Hub* and *IoT Hub Device Provisioning Service (DPS)*. Because IoT Central uses IoT Hub and DPS services internally, there are ways to migrate your device registrations between aPaaS and PaaS solutions.
+
+Let's take a look at some of the criteria you should consider when determining if IoT Central is best for you:
 
 | Criteria | Analysis |
 | --- | --- |
-| **Experience** | A common obstacle to producing successful IoT solutions is a lack of skills and experience. Therefore, it's crucial that you consider the skills and abilities of your IoT team. Fortunately, the Azure IoT Central platform is intended for users and teams that may not be experienced IoT professionals. |
-| **Customization** | Like most aPaaS solutions, the Azure IoT Central platform provides a ready-to-use application but there are a few customization options available as well. Before abandoning the Azure IoT Central platform for a custom-built solution from scratch, we'd recommend using companion applications with Azure IoT Central. Companion applications are often much easier to build than the alternative and can provide more functionality to your application. However, experienced professionals may find that they want or need full control over their IoT solution. In this case, Azure IoT Hub is the better option. |
-
+| **Experience** | A common obstacle to producing successful IoT solutions is a lack of skills and experience. Therefore, it's crucial that you consider the skills and abilities of your IoT team. IoT Central is intended for users and teams that may not be experienced IoT professionals. |
+| **Customization** | Like most aPaaS solutions, IoT Central provides a ready-to-use application and there are fewer customization options available when compared with PaaS solutions. Before selecting IoT Central to evaluate your IoT scenario, ensure that you can use the built-in analytics for your needs or alternatively, export data to other services and applications or use the REST API. If you started with IoT Central, then you can use the *IoT Central migrator tool* to migrate device registrations from IoT Central to a PaaS solution that uses IoT Hub and DPS. |
 ## Apply the criteria
 
-Azure IoT Central helps users scale their IoT solutions to hundreds of millions of devices, ensure high availability and estimate long-term costs. These capabilities are some of the benefits of having a pre-built solution. Pre-built solutions also come with limitations, so it's important for you to consider these criteria when deciding if Azure IoT Central is right for you. Let's apply these criteria to the requirements of our IoT solution from the example scenario introduced in the first unit.
+Apply these criteria to the requirements of the IoT solution from the example scenario introduced in the first unit. The following flowchart illustrates the decision process you'll use to determine if IoT Central can meet the needs of the retail company scenario. The decision process is based on the criteria defined in this unit.
 
-The following flowchart illustrates the decision process we'll use to determine if Azure IoT Central can meet the needs of our fictional IoT solution. Our decision process is based on the criteria defined in this unit.
+:::image type="content" source="../media/4-when-iot-central-flow-sml.png" alt-text="Diagram that summarizes the decision process for determining if Azure IoT Central is a good option for an IoT solution." lightbox="../media/4-when-iot-central-flow-lrg.png":::
 
-:::image type="complex" source="../media/4-decision-flow-chart.svg" alt-text="Diagram that summarizes the decision process for determining if Azure IoT Central is a good option for an IoT solution." border="false" lightbox="../media/4-decision-flow-chart-expanded.svg":::
-    Diagram of a flowchart that shows the decision process for deciding to use Azure IoT Central. The first criterion is **Requires custom features?** If users decide that their IoT application requires custom features, then they should consider using companion apps with Azure IoT Central. If this option doesn't meet their needs, then other options should be investigated. If the IoT solution doesn't require any custom features or the option to use companion apps with Azure IoT Central will work, then the next criterion, **IoT skills and experience?**, should be considered. Users with experience must then ask themselves if they need full control of the application. If so, Azure IoT Hub is a better option for their IoT needs. If not, then Azure IoT Central is a good choice for both non-experienced users and experienced users who don't need full control.
-:::image-end:::
+Now that you have the list of criteria and an illustration of the decision process, you can apply the criteria to the requirements of the retail company scenario. This process lets you determine if IoT Central can help you quickly evaluate the IoT scenario, and assess the opportunities it can create for the business.
 
-Now that we have our list of criteria and an illustration of the decision process, we can apply the criteria to the requirements of the example scenario. This comparison will allow us to determine if Azure IoT Central can help us develop a solution to improve the overall customer experience.
-
-| Criteria | Fictitious Requirement | Use Azure IoT Central? |
+| Criteria | Requirement | Use Azure IoT Central? |
 | --- | --- | --- |
-| **Experience** | As stated in our scenario, you and your team don't have much experience working on an IoT project. Therefore, the solution you design has to account for your lack of skills and experience. | Yes |
-| **Customization** | You and your team would like to design a custom notification system for the cloud application to notify store managers with critical alerts. | Maybe |
+| **Experience** | As stated in our scenario, your team doesn't have experience working on IoT projects. Therefore, the solution you design has to account for lack of skills and experience. | Yes |
+| **Customization** | You and your team would like to design a custom notification system for the cloud application to notify store managers with critical alerts. It needs to integrate with the current messaging system. | Yes - use rules to trigger external actions |
 
-## Guidance summary
+## Create a retail application
 
-Based on our analysis of the decision criteria, it appears that Azure IoT Central is a promising solution for our fictional grocery store chain's IoT needs. Some of the top features of the platform are the ability to connect different types of devices and scale the solution to millions of devices. These features will allow you to do just that with the proximity, optical, and accelerometer sensors from our example and then scale the solution to each of the thousands of stores.
+Based on the analysis of the decision criteria, IoT Central is the ideal platform to evaluate the retail company scenario and assess the opportunities it can create for the business. You also found that there's an industry-focused application template ready to be used and possible to customize afterwards.
 
-Likewise, Azure IoT Central is a great choice for development teams with little to no IoT experience. The aPaaS solution will save you time and money since most of the work is done for you. Using features like IoT Plug and Play and Device Connect, your team can start capturing IoT data from your devices with little to no code required.
+The following steps create an IoT Central application that uses the *In-store Analytics - Check out* template so you can get a feel for what is possible:
 
-The only requirement that Azure IoT Central can't satisfy is the custom notification system. APaaS solutions typically provide fewer opportunities for fully customized features because you usually don't have access to the underlying code. However, the custom notification system can be added to the solution using Azure IoT Central's built-in notification features or a companion application. So, it isn't a total deal breaker for our scenario. T We'd recommend reviewing these options with your team to reconsider the design of the custom notification system.
+1. Run the following commands in the Cloud Shell to generate a unique name for your IoT Central application and save it in an environment variable to use later:
+
+    ```azurecli
+    APP_NAME="in-store-analytics-$RANDOM"
+    echo "Your application name is: $APP_NAME"
+    ```
+
+    Make a note of the application name just in case the shell times out and loses the environment variable.
+
+1. Run the following command in the Cloud Shell to create an IoT Central application in the sandbox:
+
+    ```azurecli
+    az iot central app create \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name $APP_NAME --sku ST2 --location centralus \
+    --subdomain $APP_NAME --template iotc-store \
+    --display-name 'Store Analytics'
+    echo "You can now navigate to: https://$APP_NAME.azureiotcentral.com/dashboards"
+
+    ```
+
+    Expect this command to take a minute or two to run.
+
+1. In another browser tab or window, navigate to the URL shown in the output of the previous command. Wait for a minute or two before start seeing simulated data on the dashboards.
+
+:::image type="content" source="../media/4-store-analytics-architecture-frame.png" alt-text="Diagram of the in-store analytics application architecture." border="false" lightbox="../media/4-store-analytics-architecture-frame.png":::
+
+As shown in the preceding application architecture diagram, you can use the application template to:
+
+1. Connect various IoT sensors to an IoT Central application instance.
+2. Monitor and manage the health of the sensor network and any gateway devices in the environment.
+3. Create custom rules around the environmental conditions within a store to trigger alerts for store managers.
+4. Transform the environmental conditions within the stores into insights that the store team can use to improve the customer experience.
+5. Export the aggregated insights into existing or new business applications to provide useful and timely information to retail staff.
+
+To learn more, see the [tutorial on how to use and customize the IoT Central *In-store Analytics - Checkout* application template](/azure/iot-central/retail/tutorial-in-store-analytics-create-app).

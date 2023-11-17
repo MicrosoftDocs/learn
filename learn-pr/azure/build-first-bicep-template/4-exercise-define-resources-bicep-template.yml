@@ -9,8 +9,8 @@ metadata:
   ms.date: 01/06/2023
   author: davidsmatlak
   ms.author: davidsmatlak
-  ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: devx-track-bicep
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 12
 content: |

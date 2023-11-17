@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/31/2023
+  ms.date: 06/21/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7
@@ -17,14 +16,14 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "While deploying Azure Virtual desktop, what is used to integrate Active Directory Domain Services (AD DS) with Azure Active Directory (Azure AD)?"
+  - content: "While deploying Azure Virtual desktop, what is used to integrate Active Directory Domain Services (AD DS) with Microsoft Entra ID?"
     choices:
     - content: "ExpressRoute"
       isCorrect: false
       explanation: "That's incorrect. Azure ExpressRoute creates private connections between Azure datacenters and infrastructure on the premises or in a colocation."
-    - content: "Azure AD Connect"
+    - content: "Microsoft Entra Connect"
       isCorrect: true
-      explanation: "That's correct. Azure AD Connect is the Microsoft tool designed to meet and accomplish hybrid identity in the organization."
+      explanation: "That's correct. Microsoft Entra Connect is the Microsoft tool designed to meet and accomplish hybrid identity in the organization."
     - content: "RD Connection Broker"
       isCorrect: false
       explanation: "That's incorrect. Remote Desktop Connection Broker manages incoming remote desktop connections to the Session Host."

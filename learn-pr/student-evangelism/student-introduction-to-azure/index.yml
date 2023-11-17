@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.student-introduction-to-azure
+metadata:
+  title: Introduction to Azure for students
+  description: "Learn about cloud computing and explore some common scenarios for using Azure, GitHub, and Visual Studio Code." 
+  ms.date: 9/11/2023  
+  author: v-regandowner 
+  ms.author: chnoring
+  ms.topic: module-intro-to-product 
+  ms.custom: team=nextgen
+title: Introduction to Azure for students
+summary: "In this module, you'll learn about cloud computing and how Microsoft Azure and other helpful tools and services can help you solve common problems as a student."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Distinguish core concepts of cloud computing. 
+    - Understand what Azure can be used for by exploring some common scenarios. 
+    - Identify some tools and services that can help you get started with Azure.
+prerequisites: |
+  - None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - student
+  - developer
+products:
+- azure
+subjects:
+  - devops
+units:
+- learn.student-introduction-to-azure.introduction
+- learn.student-introduction-to-azure.cloud-computing-and-azure
+- learn.student-introduction-to-azure.tools-and-services
+- learn.student-introduction-to-azure.knowledge-check
+- learn.student-introduction-to-azure.summary
+badge:
+  uid: learn.student-introduction-to-azure.badge

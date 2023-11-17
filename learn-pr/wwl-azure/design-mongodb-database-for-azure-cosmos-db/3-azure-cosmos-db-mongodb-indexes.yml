@@ -7,8 +7,10 @@ metadata:
   ms.date: 12/28/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
+    - devx-track-python
   zone_pivot_groups: dev-lang-csharp-java-node-python
 azureSandbox: false
 labModal: false

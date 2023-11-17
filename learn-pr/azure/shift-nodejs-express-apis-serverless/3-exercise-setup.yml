@@ -6,8 +6,9 @@ metadata:
   ms.date: 04/10/2020
   author: johnpapa
   ms.author: jopapa
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-js
 title: Exercise - Set up and explore the sample project
 durationInMinutes: 5
 content: |

@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Three multiple-choice questions
-  ms.date: 09/13/2021
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
+  ms.date: 06/26/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
@@ -22,10 +22,10 @@ quiz:
         - content: "IaaS"
           isCorrect: false
           explanation: Infrastructure as a service (IaaS) is a type of cloud computing service that offers essential compute, storage and networking resources on demand, on a pay-as-you-go basis.
-        - content: "All of the above"
+        - content: "Both PaaS and IaaS"
           isCorrect: true
           explanation: Includes both PaaS and IaaS
-    - content: "Which of the following element is a non-relational storage system for large-scale storage?"
+    - content: "Which of the following elements has a nonrelational storage system for large-scale storage?"
       choices:
         - content: "Application"
           isCorrect: false
@@ -33,19 +33,6 @@ quiz:
         - content: "Compute"
           isCorrect: false
           explanation: Compute, in modern computing, refers to activities, applications or workloads that require more processing resources than its memory or I/O resource requirements.
-        - content: "Storage"
+        - content: "Azure Storage Service"
           isCorrect: true
           explanation: Azure Storage Service lets you create drives, manage queues, and store BLOBs.
-    - content: "Which Azure Service helps developers to create intelligent bots that can maintain natural conversation with users?"
-      choices:
-        - content: "Azure Spatial Anchors"
-          isCorrect: false
-          explanation: Azure Spatial Anchors empowers developers with essential capabilities to build spatially aware mixed reality applications. 
-        - content: " Azure Bot Service"
-          isCorrect: true
-          explanation: Bot Framework Composer, built on the Bot Framework SDK, is an open-source IDE for developers to author, test, provision, and manage conversational experiences. 
-        - content: "Azure Cloud Service"
-          isCorrect: false
-          explanation: Azure Cloud Services is an example of a platform as a service (PaaS). Like Azure App Service, this technology is designed to support applications that are scalable, reliable, and inexpensive to operate.
-        
-   

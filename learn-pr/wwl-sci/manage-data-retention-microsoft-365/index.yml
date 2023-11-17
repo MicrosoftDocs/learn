@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: riswinto
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.service: microsoft-365
 title: Manage data retention in Microsoft 365 workloads
 summary: Learn how to manage retention for Microsoft 365, and how retention solutions are implemented in the individual Microsoft 365 services.
 abstract: |
@@ -29,7 +29,6 @@ roles:
 products:
 - microsoft-purview
 - m365
-- m365-information-protection
 subjects:
 - compliance
 - data-management

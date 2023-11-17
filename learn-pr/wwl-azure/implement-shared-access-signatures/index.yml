@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Implement shared access signatures
 summary: Learn how to use shared access signatures to authorize access to storage resources.
 abstract: |

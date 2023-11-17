@@ -7,8 +7,9 @@ metadata:
   ms.date: 10/21/2020
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 azureSandbox: false
 durationInMinutes: 6
 content: |

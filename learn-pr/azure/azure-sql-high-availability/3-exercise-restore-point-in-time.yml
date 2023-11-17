@@ -6,8 +6,8 @@ metadata:
   ms.date: 03/15/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: devx-track-azurepowershell, devx-track-azurecli
 title: Exercise - Restore to a point in time
 durationInMinutes: 10
 interactive: powershell

@@ -4,8 +4,8 @@ title: Exercise - Add Voice Calling code
 metadata:
   title: Exercise - Exercise - Add Voice Calling code
   description: Adding code to provide voice calling with Azure Communication Services.
-  author: ProbablePrime
-  ms.author: rifox
+  author: rmcmurray
+  ms.author: robmcm
   ms.date: 04/20/2022
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

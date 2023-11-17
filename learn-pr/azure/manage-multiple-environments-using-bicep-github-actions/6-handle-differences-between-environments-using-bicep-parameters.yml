@@ -8,8 +8,9 @@ metadata:
   ms.date: 02/24/2023
   author: davidsmatlak
   ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 7
 content: |
   [!include[](includes/6-handle-differences-between-environments-using-bicep-parameters.md)]

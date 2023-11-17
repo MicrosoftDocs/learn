@@ -6,8 +6,7 @@ metadata:
   ms.date: 12/12/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Autonomous AI design architect 
 summary: |
   This learning path is a brief introduction to a new AI paradigm called Machine Teaching for Autonomous AI. Machine Teaching uses the knowledge of subject matter experts to teach AI. It integrates known control methods for stable control, Machine Learning for advance perception, and Deep Reinforcement Learning for learning strategies and human-like decision making. It's AI integrated in industrial processes without disruption and providing real business value. It's validated in simulation, explainable that your experts can validate. Machine Teaching for Autonomous AI stores expert operators' skill set, enhancing and homogenizing expert operators' best performance, and/or efficiently training novices on the job when deployed as a Decision Support tool. It helps your company achieve new levels of optimization for competitiveness, profitability, and sustainability. It provides a robust innovation path for all areas of industrial processes and business with real ROI.
@@ -19,7 +18,7 @@ summary: |
   - Fill up AI specification documents that accurately describe the problem and the proposed solution. 
   - Use AI specification documents to talk about use cases and brain designs to diverse stakeholders.
 
-  ***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***
+  ***Produced in partnership with the University of Oxford – Ajit Jaokar Artificial Intelligence: Cloud and Edge Implementations course***
 prerequisites: None
 iconUrl: /training/achievements/generic-badge.svg
 levels:

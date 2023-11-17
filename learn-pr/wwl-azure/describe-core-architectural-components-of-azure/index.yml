@@ -3,11 +3,10 @@ uid: learn.wwl.describe-core-architectural-components-of-azure
 metadata:
   title: Describe the core architectural components of Azure
   description: "Concepts around physical and management architecture for Azure, including data centers and regions, management groups and subscriptions, etc."
-  ms.date: 12/22/2022
+  ms.date: 08/09/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Describe the core architectural components of Azure
 summary: This module explains the basic infrastructure components of Microsoft Azure. You'll learn about the physical infrastructure, how resources are managed, and have a chance to create an Azure resource.
 abstract: |

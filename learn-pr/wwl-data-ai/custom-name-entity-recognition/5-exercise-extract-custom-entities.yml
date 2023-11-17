@@ -8,9 +8,9 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 45
+durationInMinutes: 35
 content: |
   [!include[](includes/5-exercise-extract-custom-entities.md)]

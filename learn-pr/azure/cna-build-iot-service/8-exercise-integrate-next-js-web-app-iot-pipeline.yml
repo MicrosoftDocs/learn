@@ -5,9 +5,12 @@ metadata:
   title: Exercise - Integrate Next.js web app with the IoT data pipeline
   description: Integrate Next.js web app with the IoT data pipeline
   ms.date: 04/29/2021
-  author: mpolicht
-  ms.author: jasdeb
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-js
   ms.prod: learning-azure
 durationInMinutes: 20
 content: |

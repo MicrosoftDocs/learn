@@ -1,6 +1,3 @@
-
-
-
 In this exercise, you use the `IndexOf()` method to locate the position of one or more characters string inside a larger string. You use the `Substring()` method to return the part of the larger string that follows the character positions you specify.
 
 You'll also use an overloaded version of the `Substring()` method to set the length of characters to return after a specified position in a string.
@@ -197,7 +194,7 @@ Hardcoded strings like `"<span>"` in the previous code listing are known as "mag
 
     The code uses a constant with the `const` keyword. A constant allows you to define and initialize a variable whose value can never be changed. You would then use that constant in the rest of the code whenever you needed that value. This ensures that the value is only defined once and misspelling the `const` variable will be caught by the compiler.
 
-    The pervious code listing is a safer way to write the same code you examined in the previous section. Now, if the value of `openSpan` changes to `<div>`, the line of code that uses the `Length` property continues to be valid.
+    The previous code listing is a safer way to write the same code you examined in the previous section. Now, if the value of `openSpan` changes to `<div>`, the line of code that uses the `Length` property continues to be valid.
 
 ## Recap
 

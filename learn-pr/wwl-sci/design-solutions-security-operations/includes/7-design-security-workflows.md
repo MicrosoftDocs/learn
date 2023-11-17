@@ -9,6 +9,13 @@ This unit will discuss solutions for the following types of security workflows:
 
 The following table summarizes the control recommendations for incident response from the Microsoft cloud security benchmark. For a complete discussion of these controls, as well as guidance for specific cloud platforms, see [Microsoft cloud security benchmark - Incident Response](https://learn.microsoft.com/security/benchmark/azure/mcsb-incident-response)
 
+Please refer to [Introduction to Microsoft Cybersecurity Reference Architecture and cloud security benchmark](/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/1-introduction-reference-architecture-benchmark) for more background on Microsoft Cloud Security Benchmark. 
+
+In the table below, we have included controls from the full baseline where:
+
+* Security controls were *supported* but *not* enabled by default
+* There was explicit guidance which contained action to be taken on the part of the customer
+
 | Control Number | Title | Summary |
 |---|---|---|
 | IR-1 | Preparation - update incident response plan and handling process  | Ensure your organization follows industry best practice to develop processes and plans to respond to security incidents on the cloud platforms. Be mindful about the shared responsibility model and the variances across IaaS, PaaS, and SaaS services. This will have a direct impact on how you collaborate with your cloud provider in incident response and handling activities, such as incident notification and triage, evidence collection, investigation, eradication, and recovery. Regularly test the incident response plan and handling process to ensure they're up to date.  |

@@ -1,8 +1,8 @@
 Referring to our scenario, let's say that you've decided to work on an Ubuntu DSVM. To do so, you'll specify its configuration and create a resource in your resource group.
 
-## Create a Data Science Virtual Machine using the Azure portal
+## Create a DSVM by using the Azure portal
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account that you activated the sandbox with.
 
 1. Select the **Create a resource** option in the upper-left corner of the portal page. The Azure Marketplace pane opens.
 
@@ -24,22 +24,23 @@ Referring to our scenario, let's say that you've decided to work on an Ubuntu DS
     | --- | --- |
     | **Project details**| |
     | Subscription | *Concierge Subscription* |
-    | Resource group | <rgn>[sandbox resource group name]</rgn>. This group is the sandbox resource group. |
+    | Resource group | Select <rgn>[sandbox resource group name]</rgn>. This group is the sandbox resource group. |
     | **Instance details**| |
-    | Virtual machine name | test-ubuntu-dsvm |
+    | Virtual machine name | Enter *test-ubuntu-dsvm* |
     | Region | Select a region near you. It should be the same as the resource group. |
     | Availability options | No infrastructure redundancy required |
     | Image | Data Science Virtual Machine - Ubuntu 20.04 - X64 Gen2 |
+    | VM architecture | x64 |
     | Security type | Standard |
-    | Size | Standard_DS1_v2. If that's not the selected value: Select **See all sizes** link; Enter **DS1\_** in the search box; Select the **DS1\_v2** row; Select **Select** to choose that size and return to the configuration screen. |
+    | Size | Standard_DS1_v2. If that's not the selected value: <br> - Select **See all sizes** link. <br> - Enter **DS1\_** in the search box. <br> - Select the **DS1\_v2** row. <br> - Select that size and return to the configuration screen. |
     | **Administrator account**| |
     | Authentication type | Password |
     | Username | Enter a string from 1 to 64 characters long. |
     | Password | Enter a strong password. |
 
-    :::image type="content" source="../media/azure-portal-create-virtual-machine-settings.png" alt-text="Screenshot that shows the details filled out for V M configuration.":::
+    :::image type="content" source="../media/azure-portal-create-virtual-machine-settings.png" alt-text="Screenshot that shows the details filled out for VM configuration.":::
 
-1. You can explore several other tabs to see the settings that you can influence during the VM creation. On the **Disks** tab, for example, you can specify your data disks. After you're finished exploring, select **Review + create** to review and validate the settings.
+1. You can explore several other tabs to see the settings that you can influence during the VM creation. On the **Disks** tab, for example, you can specify your data disks. After you finish exploring, select **Review + create** to review and validate the settings.
 
 1. On the review screen, verify that all the settings are the way you want them. Select **Create**.
 

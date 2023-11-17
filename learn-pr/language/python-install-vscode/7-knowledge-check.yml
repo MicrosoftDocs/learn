@@ -7,9 +7,11 @@ metadata:
   ms.date: 01/09/2023
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-languages
-  ms.custom: team=nextgen, devdivchpfy22
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devdivchpfy22
+    - devx-track-python
 durationInMinutes: 1
 quiz:
   title: Check your knowledge

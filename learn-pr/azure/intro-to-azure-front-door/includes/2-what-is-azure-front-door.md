@@ -1,4 +1,4 @@
-Many organizations have applications they want to make available to their customers, their suppliers, and almost certainly their users. The tricky part is making sure those applications are highly available. In addition, they need to be able to quickly respond while being appropriately secured. Azure Front Door provides different SKUs (pricing tiers) that meet these requirements. Let's briefly review the features and benefits of these SKUs so you can determine which option best suits your requirements.
+Many organizations have applications they want to make available to their customers, their suppliers, and almost certainly their users. The tricky part is making sure those applications are highly available. In addition, they need to be able to quickly respond while being appropriately secured. Azure Front Door provides different tiers (pricing tiers) that meet these requirements. Let's briefly review the features and benefits of these tiers so you can determine which option best suits your requirements.
 
 ## What is a secure, modern cloud CDN?
 
@@ -19,13 +19,13 @@ If an organization uses Azure, they might achieve these goals by implementing th
 > [!NOTE]
 > An *application backend* is any internet-facing service that you host, either inside or outside Azure.
 
-The following Azure Front door SKUs are available:
+The following Azure Front door tiers are available:
 
-- **Azure Front Door**, which is the entry level. Existing Azure customers often bolster these features with Azure Content Delivery Network, and Azure Web Application Firewall.
-- **Azure Front Door Standard**, which is optimized for virtually seamless content delivery.
+- **Azure Front Door (classic)**, which is the entry level. Existing Azure customers often bolster these features with Azure Content Delivery Network, and Azure Web Application Firewall.
+- **Azure Front Door Standard**, which is optimized for seamless content delivery.
 - **Azure Front Door Premium**, which is optimized for improved security.
 
-Let's examine these last two SKUs in more detail.
+Let's examine these last two tiers in more detail.
 
 ### Azure Front Door Standard
 
@@ -41,7 +41,7 @@ Azure Front Door Standard provides the capabilities of Azure Front Door (Classic
 
 ### Azure Front Door Premium
 
-Azure Front Door Premium provides the same capabilities as Azure Front Door Standard. However, it's security optimized and includes the following additional features:
+Azure Front Door Premium provides the same capabilities as Azure Front Door Standard. However, it's security optimized and includes the following extra features:
 
 - Extensive security capabilities across Web Application Firewall
 - Private link support
@@ -49,4 +49,4 @@ Azure Front Door Premium provides the same capabilities as Azure Front Door Stan
 
 ## How to improve your cloud app delivery
 
-To improve your cloud application delivery, consider deploying an Azure Front Door solution that best fits your needs. In the following unit, we'll discuss these choices in more detail.
+To improve your cloud application delivery, consider deploying an Azure Front Door solution that best fits your needs. In the following unit, we discuss these choices in more detail.

@@ -3,12 +3,12 @@ uid: learn.azure.intro-to-azure-monitor # Do not edit: uid must be globally uniq
 metadata:
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to Azure Monitor          # Do not edit: title must be "Introduction to <product>"
-  description: "Learn what Azure Monitor is and where you would use it."                 # Copy your 'evaluate' Learning Objective here (see below)
-  ms.prod: learning-azure-monitor
-  ms.date: 03/27/2023             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
-  author: gerryaobrien     # GitHub ID of the Microsoft employee either authoring or project-managing this content
-  ms.author: gerryo          # Alias     of the Microsoft employee either authoring or project-managing this content
+  description: "Learn how to use Azure Monitor to provide insights into your Azure resource performance and operations."                 # Copy your 'evaluate' Learning Objective here (see below)
+  ms.date: 08/31/2023             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  author: guywi-ms     # GitHub ID of the Microsoft employee either authoring or project-managing this content
+  ms.author: guywild          # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
+  ms.service: azure-monitor
 ###########################################################################
 ###
 ### Do not edit: title must be "Introduction to <product>"
@@ -37,7 +37,7 @@ title: Introduction to Azure Monitor
 ###
 ### Detailed guidance: https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main
 ###
-summary: "Learn about Azure Monitor and how provides insights into your Azure resource performance and operations."
+summary: "Learn how to use Azure Monitor to provide insights into your Azure resource performance and operations."
 ###########################################################################
 ###
 ### Learning Objectives
@@ -63,9 +63,10 @@ summary: "Learn about Azure Monitor and how provides insights into your Azure re
 ### Detailed guidance: https://review.learn.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main
 ###
 abstract: |
-  By the end of this module, you'll be able to:
-    - Evaluate whether Azure Monitor is appropriate for your Azure resource performance monitoring.
-    - Describe how the monitoring and reporting aspects of Azure Monitor work to provide insights into your resources hosted on Azure.
+  - Understand the uses and importance of monitoring.
+  - Learn the basics of how Azure Monitor works.
+  - Describe the key reasons for collecting and analyzing metrics and logs.
+  - Consider how Azure Monitor can support your Azure resource monitoring needs.
 ###########################################################################
 ###
 ### Prerequisites
@@ -88,9 +89,9 @@ abstract: |
 ###   Prerequisite 2: "Basic knowledge of REST services and APIs"
 ###
 prerequisites: |
-  - Basic knowledge of Azure portal navigation
-  - Basic knowledge of Azure resources
-  - Basic knowledge of application and resource scaling considerations and performance considerations
+  Basic knowledge and understanding of the following concepts:
+    - Azure portal navigation and resource management
+    - Application and resource scaling and performance
 ###########################################################################
 iconUrl: /training/achievements/intro-to-azure-monitor.svg
 ###########################################################################

@@ -15,12 +15,12 @@ Process is a task that receives, modifies, or redirects input to output.
 |Service isolation|Is the process running in a sandbox?|
 |Input|Can this process accept input from everyone, local accounts, or just administrators?|
 |Validation|How does the process parse, handle and accept input?|
-|Authentication|Does the process rely on Azure Active Directory for authentication? If not, what does it rely on?|
+|Authentication|Does the process rely on Microsoft Entra ID for authentication? If not, what does it rely on?|
 |Authorization|Does it rely on Access Control Lists (ACL) for authorization? If not, what does it rely on?|
 
 #### Woodgrove process elements
 
-- O365
+- Microsoft 365
 - Open-source bug management service
 - SaaS offerings (grouped)
 - GitHub
@@ -38,4 +38,4 @@ Process is a task that receives, modifies, or redirects input to output.
 
 #### Process labeling example
 
-**O365** - O365/SaaS/Azure ADauth (user credentials, session token, request/response)
+**Microsoft 365** - Microsoft 365/SaaS/Azure ADauth (user credentials, session token, request/response)

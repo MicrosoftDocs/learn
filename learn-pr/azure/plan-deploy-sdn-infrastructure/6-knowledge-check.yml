@@ -4,10 +4,10 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: This is a knowledge check unit.
+  description: A knowledge check unit.
   ms.date: 11/23/2021
-  author: LBN-commits
-  ms.author: v-lanai
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "Network Controller"
       isCorrect: true
-      explanation: "Correct. Network Controller provides a management interface that’s accessible from PowerShell, VMM, and Windows Admin Center through REST API for the deployment, management, configuration, monitoring, and troubleshooting of SDN infrastructure and network function virtualization-based services."
+      explanation: "Correct. Network Controller provides a management interface that’s accessible from PowerShell, VMM, and Windows Admin Center through REST API. The interface is for the deployment, management, configuration, monitoring, and troubleshooting of SDN infrastructure and network function virtualization-based services."
     - content: "Software Load Balancer"
       isCorrect: false
       explanation: "Incorrect. Azure Stack HCI SDN SLB isn’t directly accessible from Windows Admin Center."
@@ -54,7 +54,7 @@ quiz:
       explanation: "Correct. To automate your deployment, you can use an input configuration file that includes the values of deployment parameters. You can download a sample configuration file named MultiNodeSampleConfig.psd1 from the SDN Express GitHub repository."
     - content: ".psm1"
       isCorrect: false
-      explanation: "Incorrect. This is the extension of the SDN Express PowerShell module."
+      explanation: "Incorrect. This extension is for the SDN Express PowerShell module."
     - content: ".ps1"
       isCorrect: false
-      explanation: "Incorrect. This is the extension of the SDN Express PowerShell script."
+      explanation: "Incorrect. This extension is for the SDN Express PowerShell script."

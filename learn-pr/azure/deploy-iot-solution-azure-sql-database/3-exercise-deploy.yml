@@ -7,8 +7,9 @@ metadata:
   ms.date: 07/19/2021
   author: WilliamDAssafMSFT
   ms.author: wiassaf
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
 durationInMinutes: 30
 interactive: bash
 azureSandbox: true

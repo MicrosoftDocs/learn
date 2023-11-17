@@ -6,9 +6,11 @@ metadata:
   ms.date: 02/01/2023
   author: jongalloway
   ms.author: chnoring
+  ms.manager: markl
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.prod: entity-framework
+  ms.technology: entity-framework-core
 title: Use a database with minimal API, Entity Framework Core, and ASP.NET Core
 summary: Learn how to add a database to a minimal API application.
 abstract: |

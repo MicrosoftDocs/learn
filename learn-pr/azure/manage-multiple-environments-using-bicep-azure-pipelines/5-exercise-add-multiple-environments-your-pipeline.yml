@@ -8,8 +8,9 @@ metadata:
   ms.date: 02/27/2023
   author: davidsmatlak
   ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 7
 content: |
   [!include[](includes/5-exercise-add-multiple-environments-your-pipeline.md)]

@@ -55,36 +55,7 @@ You can alert on metrics and logs. These include but are not limited to:
 
 With the consolidation of alerting services still in process, there are some alerting capabilities that are not yet in the new alerts system.
 
-:::row:::
-  :::column:::
-    **Monitor source**
-  :::column-end:::
-  :::column:::
-    **Signal type**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Service health
-  :::column-end:::
-  :::column:::
-    Activity log
-  :::column-end:::
-  :::column:::
-    Not supported. View Create activity log alerts on service notifications.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Application Insights
-  :::column-end:::
-  :::column:::
-    Web availability tests
-  :::column-end:::
-  :::column:::
-    Not supported. View Web test alerts. Available to any website that's instrumented to send data to Application Insights. Receive a notification when availability or responsiveness of a website is below expectations.
-  :::column-end:::
-:::row-end:::
+| **Monitor source**   | **Signal type**        | **Description**                                                                                                                                                                                                        |
+| -------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Service health       | Activity log           | Not supported. View Create activity log alerts on service notifications.                                                                                                                                               |
+| Application Insights | Web availability tests | Not supported. View Web test alerts. Available to any website that's instrumented to send data to Application Insights. Receive a notification when availability or responsiveness of a website is below expectations. |

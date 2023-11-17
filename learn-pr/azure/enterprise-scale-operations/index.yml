@@ -6,8 +6,8 @@ metadata:
   ms.date: 04/20/2023
   author: ejhenry
   ms.author: erhenry
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: caf
 title: Operational design principles for enterprise-scale architecture 
 summary: Learn how to operationalize an Azure enterprise estate by using centralized management. This approach provides the guardrails needed to enable the organization's path to the cloud.
 abstract: | 

@@ -7,4 +7,4 @@ After completing this module, you'll be able to:
 - Describe the challenges with current digital identities and credentials.
 - Describe decentralized identifiers (DIDs).
 - Describe what makes DIDs different than other identifiers.
-- Describe How Verifiable credentials work.
+- Describe how Verifiable credentials work.

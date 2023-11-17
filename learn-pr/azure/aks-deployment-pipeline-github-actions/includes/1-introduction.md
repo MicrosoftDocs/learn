@@ -1,10 +1,10 @@
-Imagine that you work for a video production company. After a few months of planning, your team successfully migrated its technology stack to Azure Kubernetes Service (AKS).
+Imagine that you work for a video production company called Contoso Video. After a few months of planning, your team successfully migrated its technology stack to Azure Kubernetes Service (AKS).
 
-The new AKS solution is running without any problems. However, you've noticed that the developer team spends a significant amount of time building container images and deploying applications.
+The new AKS solution is running without any problems. However, you've noticed that the developer team spends too much time building container images and deploying applications.
 
 To reduce the team's time spent on these tasks, you decide to investigate using pipelines to deploy to AKS. When you approached management with this idea, they asked you to create a proof of concept by using the company's new website.
 
-In this module, you'll deploy Kubernetes workloads to an AKS cluster by using GitHub Actions.
+In this module, you learn how to deploy Kubernetes workloads to an AKS cluster by using GitHub Actions.
 
 ## Learning objectives
 

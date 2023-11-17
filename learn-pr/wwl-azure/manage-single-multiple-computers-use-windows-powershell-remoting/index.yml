@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Manage single and multiple computers by using Windows PowerShell remoting
 summary: This module explains how to use remoting to perform administration on remote computers.
 abstract: |
@@ -35,7 +34,7 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-virtual-machines
 - m365

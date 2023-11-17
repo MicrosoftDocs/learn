@@ -3,11 +3,11 @@ uid: learn.wwl.teach-azure-204-develop-solution-microsoft-azure-academic-program
 metadata:
   title: Get tips and tricks for teaching AZ-204 Developing Solution for Microsoft Azure in academic programs
   description: "Get tips and tricks for teaching AZ-204 Developing Solution for Microsoft Azure in academic programs"
-  ms.date: 11/18/2022
+  ms.date: 06/02/2023
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Get tips and tricks for teaching AZ-204 Developing Solution for Microsoft Azure in academic programs
 summary: Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials.
 abstract: |
@@ -22,7 +22,7 @@ prerequisites: |
   - Understand using the objective domains when preparing to teach
   - Prepare for the exam by understanding the exam structure
   - Prepare to teach the fundamentals courses leveraging best practices
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/teach-azure-204-develop-solution-microsoft-azure-academic-programs.svg
 levels:
 - advanced
 roles:

@@ -7,15 +7,17 @@ metadata:
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 title: Knowledge Check
 durationInMinutes: 3
 quiz:
 
   questions:
 
-  - content: "Which of the following scenarios would likely benefit from a SQL elastic pool."
+  - content: "Which of the following scenarios would likely benefit from a SQL elastic pool?"
     choices:
     - content: "You're hosting several SQL servers to track election data for a regional election."
       isCorrect: false

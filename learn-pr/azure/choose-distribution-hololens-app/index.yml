@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.choose-distribution-hololens-app
+metadata:
+  title: Choose a distribution channel for a HoloLens app 
+  description: "Learn how to choose a distribution channel for your HoloLens app."
+  ms.date: 7/13/2023
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: module-choose-best-product
+  ms.prod: hololens
+title: Choose a distribution channel for a HoloLens app
+summary: "Explore distribution channels for HoloLens apps and analyze which channel is best for your app."
+abstract: |
+  By the end of this module, you'll be able to:
+    -	Understand the available distribution options for HoloLens 2 apps
+    -	Explore the advantages and considerations of distributing HoloLens 2 apps via the Microsoft Store
+    -	Evaluate the benefits and use cases of sideloading HoloLens 2 apps
+    -	Gain insights into managing updates for HoloLens 2 apps
+
+prerequisites: "Although this module has no requirements, you’re encouraged to have a HoloLens 2 application complete and ready for distribution."
+iconUrl: /learn/achievements/choose-distribution-hololens-app.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - hololens
+subjects:
+  - business-applications
+units:
+- learn.choose-distribution-hololens-app.introduction
+- learn.choose-distribution-hololens-app.application-package
+- learn.choose-distribution-hololens-app.distribution-channels
+- learn.choose-distribution-hololens-app.analyze-decision-criteria
+- learn.choose-distribution-hololens-app.manage-updates
+- learn.choose-distribution-hololens-app.knowledge-check
+- learn.choose-distribution-hololens-app.summary
+badge:
+  uid: |
+    learn.choose-distribution-hololens-app.badge

@@ -6,8 +6,8 @@ metadata:
   ms.date: 04/20/2021
   author: jongalloway
   ms.author: jogallow
-  ms.topic: interactive-tutorial
-  ms.prod: learn-aspnetcore
+  ms.manager: markl
+  ms.topic: unit
   
 title: Exercise - Create the sample application
 durationInMinutes: 5

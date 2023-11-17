@@ -1,6 +1,3 @@
-
-
-
 In this exercise, you develop the data entry validation loops for each pet characteristic and then store the new `ourAnimals` array data. The detailed tasks that you complete during this exercise are:
 
 1. Read and validate species: build a loop and the inner code structure used to enter and validate the pet species.
@@ -152,7 +149,7 @@ In this task, you create a `do` loop that iterates until the user enters either 
     ```c#
     if (readResult != null)
     {
-        animalAge = readResult.ToLower();
+        animalAge = readResult;
 
     }
     ```
@@ -163,6 +160,10 @@ In this task, you create a `do` loop that iterates until the user enters either 
     if (animalAge != "?")
     {
         validEntry = int.TryParse(animalAge, out petAge);
+    }
+    else
+    {
+        validEntry = true;
     }
     ```
 
@@ -181,6 +182,10 @@ In this task, you create a `do` loop that iterates until the user enters either 
             if (animalAge != "?")
             {
                 validEntry = int.TryParse(animalAge, out petAge);
+            }
+            else
+            {
+                validEntry = true;
             }
         }
     } while (validEntry == false);

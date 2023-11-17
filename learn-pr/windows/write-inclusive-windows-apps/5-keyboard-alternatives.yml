@@ -5,10 +5,9 @@ metadata:
   title: Keyboard alternatives
   description: Modify an app to add complete keyboard alternatives and UI navigation.
   ms.date: 5/24/2019
-  author: PeterTurcan
-  ms.author: v-pettur
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  author: Karl-Bridge-Microsoft
+  ms.author: kbridge
+  ms.topic: unit
   
 durationInMinutes: 25
 content: |

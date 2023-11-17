@@ -8,8 +8,9 @@ metadata:
   ms.date: 01/23/2022
   author: davidsmatlak
   ms.author: davidsmatlak
-  ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 4
 content: |
   [!include[](includes/6-work-with-existing-resources.md)]

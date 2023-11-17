@@ -4,10 +4,9 @@ metadata:
   title: Customer narrative
   description: Understand the customer narrative.
   ms.date: 04/25/2022
-  author: BrianBlanchard
-  ms.author: brblanch
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 title: Customer narrative
 durationInMinutes: 10
 content: |

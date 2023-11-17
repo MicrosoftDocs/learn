@@ -4,11 +4,11 @@ You can think of the steps to train and evaluate a regression machine learning m
 3. **Evaluate performance**: Compare how close the model's predictions are to the known labels.  
 4. **Deploy a predictive service**: After you train a machine learning model, you need to convert the training pipeline into a real-time inference pipeline. Then you can deploy the model as an application on a server or device so that others can use it. 
 
-Let's follow these four steps as they appear in Azure designer. 
+Let's follow these four steps as they appear in Azure Machine Learning designer. 
 
 ## Prepare data 
 
-Azure machine learning designer has several pre-built components that can be used to prepare data for training. These components enable you to clean data, normalize features, join tables, and more. 
+Azure Machine Learning designer has several pre-built components that can be used to prepare data for training. These components enable you to clean data, normalize features, join tables, and more. 
 ![Screenshot of designer components that can be used to prepare data.](../media/prepare-data-example.png)
 
 ## Train model 

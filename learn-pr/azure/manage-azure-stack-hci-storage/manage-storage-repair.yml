@@ -5,8 +5,8 @@ metadata:
   title: Manage storage repair in Azure Stack HCI
   description: Determine how Azure Stack HCI handles the storage repair process.
   ms.date: 03/30/2022
-  author: mpolicht
-  ms.author: nedelgad
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

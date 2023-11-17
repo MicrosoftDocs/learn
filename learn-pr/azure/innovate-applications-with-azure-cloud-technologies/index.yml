@@ -4,10 +4,10 @@ metadata:
   title: Innovate applications by using Azure cloud technologies 
   description: Innovation is a complex subject that encompasses many disciplines. The agility of the public cloud allows quicker innovation cycles and quicker hypothesis verification. Learn how to use Azure cloud technologies to sustain your organization's innovation requirements. 
   ms.date: 04/14/2023
-  author: jomore
-  ms.author: jomore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: module
+  ms.service: caf
 title: Innovate applications by using Azure cloud technologies
 summary: Innovation is a complex subject that encompasses many disciplines. The agility of the public cloud allows to quicker innovation cycles and quicker hypothesis verification. Learn how to use Azure cloud technologies to sustain your organization's innovation requirements.
 abstract: | 

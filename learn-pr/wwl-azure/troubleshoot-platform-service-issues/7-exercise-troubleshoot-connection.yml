@@ -4,11 +4,10 @@ title: 'Exercise: Troubleshoot virtual machine connection'
 metadata:
   title: 'Exercise: Troubleshoot virtual machine connection'
   description: "Exercise: Troubleshoot virtual machine connection"
-  ms.date: 07/14/2022
-  author: wwlpublish
-  ms.author: lola
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/27/2023
+  author: fabianomira
+  ms.author: famira
+  ms.topic: unit
 azureSandbox: true
 labModal: false
 durationInMinutes: 9

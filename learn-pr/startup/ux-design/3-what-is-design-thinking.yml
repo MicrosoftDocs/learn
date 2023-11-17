@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.startup.ux-design.what-is-design-thinking
+title: What is design thinking?
+metadata:
+  title: 'What is design thinking?'
+  description: 'This content is part of the “Foundations of user experience and design thinking” module.'
+  ms.date: 04/19/2023
+  author: Obi-Akpuda
+  ms.author: obiakpuda
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes : 7
+content: |
+  [!include[](includes/3-what-is-design-thinking.md)]

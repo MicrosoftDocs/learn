@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.azure.use-slurm-hpc-azure-cyclecloud.slurm-integration-with-cyclecloud
+title: Describe Slurm integration with Azure CycleCloud
+metadata:
+  title: Describe Slurm integration with Azure CycleCloud
+  description: This content is part of the "Use Slurm for HPC on Azure CycleCloud" module.
+  ms.date: 05/17/2023
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: interactive-tutorial
+  ms.prod: azure-cyclecloud
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-slurm-integration-with-cyclecloud.md)]

@@ -1,4 +1,4 @@
-In this exercise, you'll create logins, users, and admins, and you'll grant Azure Active Directory (Azure AD) users access to the database, as you would for normal users in SQL Server.
+In this exercise, you'll create logins, users, and admins, and you'll grant Microsoft Entra users access to the database, as you would for normal users in SQL Server.
 
 1. Open SQL Server Management Studio (SSMS), and connect to your Azure SQL Database logical server, if you aren't already connected.
 
@@ -29,7 +29,7 @@ In this exercise, you'll create logins, users, and admins, and you'll grant Azur
 
     The best practice is to create non-admin accounts at the database level, unless the users need to be able to execute administrator tasks.  
 
-1. In SQL Server, you might be familiar with the concept of a contained database user. This means that a user has access only to specific databases and doesn't have a login to the server. In your Azure SQL Database, you can create contained database users with SQL authentication or Azure AD authentication. You must be in the context of the user database that you want to create user access to (as opposed to being in `master`). In SSMS, right-click your *database*, and then create a new query by running the following command:
+1. In SQL Server, you might be familiar with the concept of a contained database user. This means that a user has access only to specific databases and doesn't have a login to the server. In your Azure SQL Database, you can create contained database users with SQL authentication or Microsoft Entra authentication. You must be in the context of the user database that you want to create user access to (as opposed to being in `master`). In SSMS, right-click your *database*, and then create a new query by running the following command:
 
     ```sql
     CREATE USER MyDatabaseUser WITH PASSWORD = 'C0mpl3xPa55word!'
@@ -43,10 +43,12 @@ In this exercise, you'll create logins, users, and admins, and you'll grant Azur
 
 1. As a clean-up step, right-click the connection from *MyDatabaseUser*, and then select **Disconnect**.  
 
-## Grant access to other Azure AD users  
+<a name='grant-access-to-other-azure-ad-users'></a>
 
-You can create logins from Azure AD accounts as a contained database user using the `CREATE USER [anna@contoso.com] FROM EXTERNAL PROVIDER` T-SQL syntax. A contained database user maps to an identity in the Azure AD directory associated with the database and has no login in the `master` database.
+## Grant access to other Microsoft Entra users  
 
-With the introduction of Azure AD server logins in Azure SQL Database, you can create logins from Azure AD principals in the virtual `master` database of a SQL Database. Azure AD logins can be created from Azure AD *users, groups, and service principals*. For more information, see [Azure Active Directory server principals](/azure/azure-sql/database/authentication-azure-ad-logins)
+You can create logins from Microsoft Entra accounts as a contained database user using the `CREATE USER [anna@contoso.com] FROM EXTERNAL PROVIDER` T-SQL syntax. A contained database user maps to an identity in the Microsoft Entra directory associated with the database and has no login in the `master` database.
+
+With the introduction of Microsoft Entra server logins in Azure SQL Database, you can create logins from Microsoft Entra principals in the virtual `master` database of a SQL Database. Microsoft Entra logins can be created from Microsoft Entra *users, groups, and service principals*. For more information, see [Microsoft Entra server principals](/azure/azure-sql/database/authentication-azure-ad-logins)
 
 Additionally, the Azure portal can be used only to create administrators, and Azure role-based access control roles don't propagate to Azure SQL Database logical servers. You must grant additional server and database permissions by using Transact-SQL (T-SQL).

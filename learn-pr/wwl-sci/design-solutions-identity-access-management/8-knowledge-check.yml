@@ -7,8 +7,7 @@ metadata:
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 5
 ###########################################################################
 ###
@@ -27,7 +26,7 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-    - content: "What is Conditional Access in Azure AD?"
+    - content: "What is Conditional Access in Microsoft Entra ID?"
       choices:
         - content: "A feature that allows users to bypass security policies."
           isCorrect: false
@@ -45,13 +44,13 @@ quiz:
           isCorrect: false
           explanation: "Conditional Access defines user-specific access policies but does not manage user privileges."
           
-    - content: "What is Continuous Access Evaluation in Azure AD?"
+    - content: "What is Continuous Access Evaluation in Microsoft Entra ID?"
       choices:
         - content: "A feature that automatically enforces Azure Key Vault key rotation policies."
           isCorrect: false
           explanation: "Continuous Access Evaluation constantly evaluates conditions specified in Conditional Access policies, ensuring continued compliance. It has no direct relationship with Key Vault."
         
-        - content: "A security model designed to control user access to Azure AD-managed services."
+        - content: "A security model designed to control user access to Microsoft Entra ID-managed services."
           isCorrect: false
           explanation: "Continuous Access Evaluation is one component of Microsoft's Zero Trust Strategy, which is designed to mitigate risks across all domains, including mobile devices."
         
@@ -63,7 +62,7 @@ quiz:
           isCorrect: false
           explanation: "Continuous Access Evaluation assesses whether user requests meet the specified conditions set forth in Conditional Access policies, but it does not detect rogue devices connecting to a network."
     
-    - content: "What is External Identities in Azure AD?"
+    - content: "What is External Identities in Microsoft Entra ID?"
       choices:
         - content: "A set of tools for managing conditional access policies for partners and customers."
           isCorrect: false

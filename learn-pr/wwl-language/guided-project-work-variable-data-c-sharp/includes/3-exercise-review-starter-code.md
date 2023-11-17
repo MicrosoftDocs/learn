@@ -1,7 +1,3 @@
-
-
-
-
 In this first step of the development process, you review the code provided in the Starter project folder.
 
 ## Review the contents of the Program.cs file
@@ -173,6 +169,9 @@ The Program.cs file contains a preliminary version of the application that you'r
 
 1. Test the starter code console app, at the TERMINAL command prompt build & run your project code with one command by entering: `dotnet run`.
 
+    > [!NOTE]
+    > The TERMINAL prompt has to be opened in the start folder and the TERMINAL should look similar to `..\ArrayGuidedProject\starter>`
+    
     When the code runs, two menu items are displayed.
     - Enter "`1`" to test the "List all of our current pet information" output
     - Enter "`2`" to test the placeholder message "under construction" message

@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning 
 title: Automate machine learning workflows
 summary: Automate machine learning workflows with Azure Machine Learning pipelines, Azure Pipelines, and GitHub Actions.
 abstract: |

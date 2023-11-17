@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.exercise-check-services-configuration
+title: Exercise - Check Azure AI services configuration
+metadata:
+  title: Exercise - Check Azure AI services configuration
+  description: "Check Azure AI services credentials configuration"
+  ms.date: 9/5/2023
+  author: carlottac94
+  ms.author: cacaste
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-exercise-check-services-configuration.md)]

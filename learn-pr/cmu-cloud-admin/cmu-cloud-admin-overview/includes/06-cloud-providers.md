@@ -47,7 +47,7 @@ Azure also offers managed relational database services through Azure SQL Databas
 
 **PaaS products**: Azure offers several PaaS products, including Azure App Service, Azure SQL Database, and Azure Cosmos DB. In the analytics space, Azure offers several products including HDInsight, which is a managed Hadoop cluster service similar to Amazon's EMR; Azure Databricks, which is a managed Spark implementation; and Data Lake Analytics, which offers per-job pricing for analyzing and transforming massive quantities of data.
 
-**SaaS products**: Microsoft offers a range of SaaS services, two of which are Microsoft 365 and OneDrive. Other SaaS services include Azure Cognitive Services, which is a set of services and APIs for incorporating artificial intelligence into apps; Azure Machine Learning Services for building, deploying, and versioning machine-learning models; and Azure Machine Learning Studio, which provides a browser-based, drag-and-drop interface for building, training, and testing machine-learning models.
+**SaaS products**: Microsoft offers a range of SaaS services, two of which are Microsoft 365 and OneDrive. Other SaaS services include Azure AI services, which is a set of services and APIs for incorporating artificial intelligence into apps; Azure Machine Learning Services for building, deploying, and versioning machine-learning models; and Azure Machine Learning Studio, which provides a browser-based, drag-and-drop interface for building, training, and testing machine-learning models.
 
 # Google Cloud Platform (GCP)
 

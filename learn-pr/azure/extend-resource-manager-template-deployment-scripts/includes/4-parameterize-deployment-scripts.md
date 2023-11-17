@@ -39,7 +39,7 @@ Your second option is to create environment variables that your scripts can acce
 
 ::: zone-end
 
-One benefit of using environment variables is that you can use [the `secureValue` option](/azure/container-instances/container-instances-environment-variables#secure-values) for secrets that might need to be passed in to deployment scripts.
+One benefit of using environment variables is that you can use [the `secureValue` option](/azure/container-instances/container-instances-environment-variables#secure-values) for secrets that might need to be passed into deployment scripts.
 
 ::: zone pivot="jsoncli,jsonpowershell"
 
@@ -55,7 +55,7 @@ One benefit of using environment variables is that you can use [the `secureValue
 
 ## Passing through parameters
 
-As you've seen, you can set parameter values directly in the properties of the deployment script. There are several other options for values that can be passed in. You can use dynamic values coming from previously created resources, variables declared in the template, or parameters passed directly in to the template at deployment time.
+As you've learned, you can set parameter values directly in the properties of the deployment script. There are several other options for values that can be passed in. You can use dynamic values coming from previously created resources, variables declared in the template, or parameters passed directly in to the template at deployment time.
 
 ::: zone pivot="jsoncli,jsonpowershell"
 

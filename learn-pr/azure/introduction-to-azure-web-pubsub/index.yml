@@ -6,8 +6,9 @@ metadata:
   ms.date: 12/12/2022
   author: dlepow
   ms.author: danlep
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-intro-to-product
+  ms.service: azure-web-pubsub
+  manager: mcleans
 title: Introduction to Azure Web PubSub
 summary: "Learn about adding real-time messaging and communication functionality to your web application by using Azure Web PubSub. Describe client connections to the service using WebSocket protocol and the publish-subscribe pattern."  
 abstract: |  

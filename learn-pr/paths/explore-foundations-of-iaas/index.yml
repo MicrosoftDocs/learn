@@ -6,12 +6,11 @@ metadata:
   ms.date: 11/09/2021
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Explore the foundations of IaaS for SAP on Azure
 prerequisites: ""
 summary: |
-  As an IT Professional experienced in SAP solutions, you need to understand how to leverage Azure resources that include virtual machines, virtual networks, storage accounts, and Azure AD. These modules will provide the basis for running SAP workloads in Azure.
+  As an IT Professional experienced in SAP solutions, you need to understand how to leverage Azure resources that include virtual machines, virtual networks, storage accounts, and Microsoft Entra ID. These modules will provide the basis for running SAP workloads in Azure.
 iconUrl: /training/achievements/explore-the-foundations-of-iaas.svg
 levels:
 - advanced

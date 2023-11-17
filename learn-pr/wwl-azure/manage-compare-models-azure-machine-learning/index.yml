@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.manage-compare-models-azure-machine-learning
+metadata:
+  title: Create and explore the Responsible AI dashboard for a model in Azure Machine Learning
+  description: "Create and explore the Responsible AI dashboard for a model in Azure Machine Learning using the Python SDK v2."
+  ms.date: 09/11/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+title: Create and explore the Responsible AI dashboard for a model in Azure Machine Learning
+summary: Explore model explanations, error analysis, counterfactuals, and causal analysis by creating a Responsible AI dashboard. You'll create and run the pipeline in Azure Machine Learning using the Python SDK v2 to generate the dashboard.
+abstract: |
+  In this module, you learn how to:
+  - Understand Azure Machine Learning's built-in components for responsible AI.
+  - Create a Responsible AI dashboard.
+  - Explore a Responsible AI dashboard.
+prerequisites: ""
+iconUrl: /training/achievements/manage-compare-models-in-azure-machine-learning.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure-machine-learning
+subjects:
+- machine-learning
+units:
+- learn.wwl.manage-compare-models-azure-machine-learning.introduction
+- learn.wwl.manage-compare-models-azure-machine-learning.understand-responsible-ai
+- learn.wwl.manage-compare-models-azure-machine-learning.create-responsible-dashboard
+- learn.wwl.manage-compare-models-azure-machine-learning.explore-responsible-dashboard
+- learn.wwl.manage-compare-models-azure-machine-learning.exercise-explore-responsible-dashboard
+- learn.wwl.manage-compare-models-azure-machine-learning.knowledge-check
+- learn.wwl.manage-compare-models-azure-machine-learning.summary
+badge:
+  uid: learn.wwl.manage-compare-models-azure-machine-learning.badge

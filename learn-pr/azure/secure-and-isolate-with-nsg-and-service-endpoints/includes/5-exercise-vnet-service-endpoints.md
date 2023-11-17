@@ -2,11 +2,11 @@ As the solution architect, you're planning to move sensitive engineering diagram
 
 In this unit, you'll create a service endpoint and use network rules to restrict access to Azure Storage. You'll create a virtual network service endpoint for Azure Storage on the **Databases** subnet. You'll then verify that your **DataServer** VM can access Azure Storage. Lastly, you'll check that the **AppServer** VM, which is on a different subnet, can't access storage.
 
-![Diagram of exercise scenario service endpoint and rules.](../media/5-exercise-task.svg)
+:::image type="content" source="../media/5-exercise-task.svg" alt-text="Diagram of exercise scenario service endpoint and rules.":::
 
 ## Add rules to the network security group
 
-Ensure that communications with Azure Storage pass through the service endpoint. Add outbound rules to allow access to the Storage service, but deny all other internet traffic.
+Here, you'll ensure that communications with Azure Storage pass through the service endpoint. You'll add outbound rules to allow access to the Storage service, but deny all other internet traffic.
 
 1. To create an outbound rule to allow access to Storage, run the following command in Cloud Shell:
 
@@ -57,7 +57,7 @@ At this point, both **AppServer** and **DataServer** have access to the Azure St
 
 ## Configure storage account and file share
 
-In this step, you'll create a new storage account, then add an Azure file share to this account. This share is where you'll store your engineering diagrams.
+In this step, you'll create a new storage account, then add an Azure file share to this account. This file share is where you'll store your engineering diagrams.
 
 1. To create a storage account for engineering documents, run the following command in Cloud Shell:
 
@@ -69,7 +69,7 @@ In this step, you'll create a new storage account, then add an Azure file share 
                     --query "name" | tr -d '"')
     ```
 
-1. To store the primary key for your storage in a variable, run the following command in Cloud Shell:
+1. To store your storage account's primary key in a variable, run the following command in Cloud Shell:
 
     ```bash
     STORAGEKEY=$(az storage account keys list \
@@ -89,7 +89,7 @@ In this step, you'll create a new storage account, then add an Azure file share 
 
 ## Enable the service endpoint
 
-You now need to configure the storage account to be accessible only from database servers, by assigning the storage endpoint to the **Databases** subnet. You then need to add a security rule to the storage account.
+You now need to configure the storage account to be accessible only from database servers by assigning the storage endpoint to the **Databases** subnet. You then need to add a security rule to the storage account.
 
 1. To assign the **Microsoft.Storage** endpoint to the subnet, run the following command in Cloud Shell:
 
@@ -101,7 +101,7 @@ You now need to configure the storage account to be accessible only from databas
         --service-endpoints Microsoft.Storage
     ```
 
-1. To deny all access, change the default action to `Deny` by running the following command in Cloud Shell. After network access is denied, the storage account is not accessible from any network.
+1. To deny all access, change the default action to `Deny` by running the following command in Cloud Shell. After network access is denied, the storage account isn't accessible from any network.
 
     ```azurecli
     az storage account update \
@@ -122,7 +122,7 @@ You now need to configure the storage account to be accessible only from databas
 
 ## Test access to storage resources
 
-In this step, you'll connect to both of your servers, and verify that only **DataServer** has access to the Azure file share on the storage account.
+In this step, you'll connect to both of your servers and verify that only **DataServer** has access to the Azure file share on the storage account.
 
 1. To save the public IP addresses of **AppServer** and **DataServer** to variables, run the following command in Cloud Shell:
 
@@ -140,7 +140,7 @@ In this step, you'll connect to both of your servers, and verify that only **Dat
                         --output tsv)"
     ```
 
-1. To connect to your **AppServer** VM, and attempt to mount the Azure file share, run the following command in Cloud Shell:
+1. To connect to your **AppServer** VM and attempt to mount the Azure file share, run the following command in Cloud Shell:
 
     ```bash
     ssh -t azureuser@$APPSERVERIP \
@@ -152,7 +152,7 @@ In this step, you'll connect to both of your servers, and verify that only **Dat
 
 1. Enter the password you used when you created the VM.
 
-1. The response should include a `mount error` message. This connection isn't allowed, because there is no service endpoint for the storage account on the **Applications** subnet.
+1. The response should include a `mount error` message. This connection isn't allowed because there's no service endpoint for the storage account on the **Applications** subnet.
 
 1. To connect to your **DataServer** VM and attempt to mount the Azure file share, run the following command in Cloud Shell:
 
@@ -166,6 +166,6 @@ In this step, you'll connect to both of your servers, and verify that only **Dat
 
 1. Enter the password you used when you created the VM.
 
-1. The mount should be successful, and the response should include details of the mount point. This is allowed because you created the service endpoint for the storage account on the **Databases** subnet.
+1. The mount should succeed, and the response should include details of the mount point. This is allowed because you created the service endpoint for the storage account on the **Databases** subnet.
 
-By using the storage service endpoint on the **Databases** subnet, you've now verified that **DataServer** can access storage. You've also verified that **AppServer** can't access storage. This is because this server is on a different subnet, and doesn't have access to the virtual network service endpoint.
+By using the storage service endpoint on the **Databases** subnet, you've now verified that **DataServer** can access storage. You've also verified that **AppServer** can't access storage. This is because this server is on a different subnet and doesn't have access to the virtual network service endpoint.

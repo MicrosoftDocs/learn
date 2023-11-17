@@ -7,7 +7,6 @@ metadata:
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-vue
   ms.custom: team=nextgen
 title: Get started with Vue
 summary: Vue.js is a progressive web framework that allows developers to get up and running quickly, with just the addition of a script tag. But Vue.js can also grow with you. You can use it to create large scalable applications. In this module, you'll explore the core concepts of Vue.js and how to get started.
@@ -29,7 +28,7 @@ roles:
 - student
 - developer
 products:
-- azure-app-service-static
+- static-web-apps
 units:
 - learn.language.vue-get-started.1-introduction
 - learn.language.vue-get-started.2-create-app

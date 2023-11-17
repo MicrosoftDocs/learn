@@ -1,6 +1,3 @@
-
-
-
 In this exercise, you use the `IndexOfAny()` method to find the first location of any of the `string` from selected array. You also use `LastIndexOf()` to find the final location of a string within another string.
 
 ### Retrieve the last occurrence of a sub string

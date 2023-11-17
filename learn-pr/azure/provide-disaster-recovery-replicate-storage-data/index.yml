@@ -7,7 +7,6 @@ metadata:
   author: tamram
   ms.author: tamram
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Provide disaster recovery by replicating storage data across regions and failing over to a secondary location
 summary: Evaluate and choose a redundancy option for Azure Storage. Create a storage account and blob container to demonstrate replication. Initiate storage account failover to the secondary region.
 abstract: | 

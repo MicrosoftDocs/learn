@@ -7,8 +7,8 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen, py-fresh-zinc
+  ms.devlang: python
 title: Plan a Moon mission by using Python pandas
 summary: Like Fei Fei, use data to plan your own mission to the Moon. Ensure that your rocket can not only get you there, but also bring you and all your Moon rocks safely back to Earth.
 abstract:  |
@@ -22,7 +22,7 @@ abstract:  |
   > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
 
 prerequisites: |
-  - [Visual Studio Code, with the Python extension](https://aka.ms/LearnOnVSCode?azure-portal=true)
+  - [GitHub account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account)
 iconUrl: /training/achievements/student-evangelism/plan-moon-mission-using-python-pandas.svg
 levels:
 - beginner

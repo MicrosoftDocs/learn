@@ -8,6 +8,7 @@ In this module, you write a program that searches through folders for sales file
 
 By the end of this module, you're able to:
 
+- Use a dev container for your development environment
 - Work with directories
 - Create and delete files
 - Read from files

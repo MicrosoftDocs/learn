@@ -1,5 +1,3 @@
-
-
 ## Data protection
 
 - Use the Azure Resource Manager deployment model.
@@ -13,8 +11,8 @@
 
 ## Identity and access management
 
-- Use Azure Active Directory (Azure AD) to authorize access to blob data.
-- Keep in mind the principle of least privilege when assigning permissions to an Azure AD security principle via Azure RBAC.
+- Use Microsoft Entra ID to authorize access to blob data.
+- Keep in mind the principle of least privilege when assigning permissions to a Microsoft Entra security principle via Azure RBAC.
 - Use a user delegation SAS to grant limited access to blob data to clients.
 - Secure your account access keys with Azure Key Vault.
 - Regenerate your account keys periodically.

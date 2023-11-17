@@ -8,8 +8,9 @@ metadata:
   ms.date: 12/19/2022
   author: davidsmatlak
   ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-deploy-web-application.md)]

@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Query relational data in Azure
 summary: Learn about Structured Query Language (SQL), and how you can use it to query, insert, update, and delete data in a relational database.
 abstract: |

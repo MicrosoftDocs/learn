@@ -6,8 +6,8 @@ metadata:
   ms.date: 12/15/2021
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-portal
 title: Explore the Azure portal
 summary: This module introduces you to features of the Azure portal and provides you with experience configuring, navigating, and customizing the Azure portal UI.
 abstract: |
@@ -35,3 +35,4 @@ units:
 - learn.wwl.explore-azure-portal.summary
 badge:
   uid: learn.wwl.explore-azure-portal.badge
+hidden: true

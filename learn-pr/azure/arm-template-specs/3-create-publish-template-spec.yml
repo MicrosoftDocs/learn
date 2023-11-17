@@ -8,8 +8,9 @@ metadata:
   ms.date: 09/30/2021
   author: davidsmatlak
   ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
   zone_pivot_groups: arm-template-language-azure-shell-interface
 durationInMinutes: 3
 content: |

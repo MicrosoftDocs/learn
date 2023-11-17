@@ -4,12 +4,11 @@ title: Summary
 metadata:
   unitType: summary
   title: summary
-  description: Understand how Azure Active Directory application provisioning works with SCIM.
+  description: Understand how Microsoft Entra application provisioning works with SCIM.
   ms.date: 7/28/2022
   author: kenwith
   ms.author: kenwith
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/6-summary.md)]

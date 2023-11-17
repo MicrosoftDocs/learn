@@ -1,7 +1,0 @@
-Watch this video from Aileen Allkins, Microsoft Corporate Vice President of Customer Service & Support, as she discusses how customers' expectations are evolving and how AI can be a fundamental tool to address the change. Allkins also reflects on the cultural challenges that she addressed in her organization, which helped ensure an effective adoption of the new AI tools to ultimately become more customer-centric.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Y4Bi]
-
-When customers receive great service from one company, that becomes the bar that they set for the next company. The level of service a customer receives is a competitive differentiator. Even if a customer loves a product, if they don’t love the service, they can easily decide to move elsewhere. AI empowers Microsoft to deliver the highest levels of service whether it is through virtual agents or by assisting employees by offering suggestions as they interact with customers. AI is learning from each interaction and in doing so, and in partnership with employees, it continually works to improve the experience for all.
-
-Next, learn about the power of enabling AI systems to continuously learn and improve, and discover the importance of maximizing the value of AI applications by adapting how and where they are used.

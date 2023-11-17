@@ -4,16 +4,15 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/25/2023
+  ms.date: 08/23/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 quiz:
   title: ""
   questions:
-  - content: "To sort a string array, why is it be important to use the `String.Trim()` method on each array element before sorting?"
+  - content: "To sort a string array, why is it important to use the `String.Trim()` method on each array element before sorting?"
     choices:
     - content: "Only string arrays with elements trimmed with `String.Trim()` can sort"
       isCorrect: false

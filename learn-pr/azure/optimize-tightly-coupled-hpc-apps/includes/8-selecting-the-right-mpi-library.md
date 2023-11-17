@@ -11,7 +11,7 @@ The current limitation for an HPC cluster that can communicate over InfiniBand i
 > [!NOTE]
 > These limits might change in the future. If you have a tightly coupled MPI job that requires a higher limit, submit a support request. It might be possible to raise the limits for your situation.
 
-If an HPC application recommends a particular MPI library, try that version first. If you have flexibility regarding which MPI you can choose, and you want the best performance, try HPCX. Overall, the HPCX MPI performs the best by using the UCX framework for the InfiniBand interface, and takes advantage of all the Mellanox InfiniBand hardware and software capabilities.
+If an HPC application recommends a particular MPI library, try that version first. If you have flexibility regarding which MPI you can choose and you want the best performance, try HPCX. Overall, the HPCX MPI performs the best by using the UCX framework for the InfiniBand interface, and takes advantage of all the Mellanox InfiniBand hardware and software capabilities.
 
 The following illustration compares the popular MPI library architectures.
 
@@ -23,7 +23,7 @@ The queue pair 0 isn't accessible to the guest VM, in order to prevent any secur
 
 ## HPCX and OpenMPI mpirun arguments
 
-The following command illustrates some recommended `mpirun` arguments for HPCX and OpenMPI.
+The following command illustrates some recommended `mpirun` arguments for HPCX and OpenMPI:
 
 ```bash
 mpirun -n $NPROCS --hostfile $HOSTFILE --map-by ppr:$NUMBER_PROCESSES_PER_NUMA:numa:pe=$NUMBER_THREADS_PER_PROCESS -report-bindings $MPI_EXECUTABLE
@@ -40,7 +40,7 @@ In that command:
 | `-report-bindings` | Prints MPI processes mapping to cores, which is useful to verify that your MPI process pinning is correct. |
 | `$MPI_EXECUTABLE` | Specifies the MPI executable built linking in MPI libraries. MPI compiler wrappers do this automatically. For example: `mpicc` or `mpif90`. |
 
-If you suspect your tightly coupled MPI application is doing an excessive amount of collective communication, you can try enabling hierarchical collectives (`HCOLL`). To enable those features, use the following parameters.
+If you suspect your tightly coupled MPI application is doing an excessive amount of collective communication, you can try enabling hierarchical collectives (`HCOLL`). To enable those features, use the following parameters:
 
 ```bash
 -mca coll_hcoll_enable 1 -x HCOLL_MAIN_IB=<MLX device>:<Port>
@@ -50,7 +50,7 @@ If you suspect your tightly coupled MPI application is doing an excessive amount
 
 The Intel MPI 2019 release switched from the Open Fabrics Alliance (OFA) framework to the Open Fabrics Interfaces (OFI) framework, and currently supports libfabric. There are two providers for InfiniBand support: mlx and verbs. The provider mlx is the preferred provider on HB and HC VMs.
 
-Here are some suggested `mpirun` arguments for Intel MPI 2019 update 5+.
+Here are some suggested `mpirun` arguments for Intel MPI 2019 update 5+:
 
 ```bash
 export FI_PROVIDER=mlx
@@ -77,7 +77,7 @@ export I_MPI_COLL_EXTERNAL=1
 
 ## MVAPICH mpirun arguments
 
-The following list contains several recommended `mpirun` arguments.
+The following list contains several recommended `mpirun` arguments:
 
 ```bash
 export MV2_CPU_BINDING_POLICY=scatter

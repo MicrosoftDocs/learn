@@ -6,9 +6,8 @@ metadata:
   description: A discussion of how data is accessed across wide area networks and the various approaches you can take to move data to and from Azure.
   ms.date: 12/29/2020
   author: scjescho
-  ms.author: scjescho
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: padmalathas
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/8-hybrid-file-access-requirements.md)]
@@ -19,7 +18,7 @@ quiz:
     choices:
     - content: "Caching"
       isCorrect: false
-      explanation: "Incorrect. Caching is driven by requests for a given file."
+      explanation: "Incorrect. Caching retrieves and presents data based on requests for a given file."
     - content: "Synchronization"
       isCorrect: true
       explanation: "Correct. Synchronization checks the destination directory and creates or updates files based on whether they exist and reflect the most recent changes."

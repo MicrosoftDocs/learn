@@ -6,8 +6,7 @@ metadata:
   ms.date: 02/22/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'SC-200: Mitigate threats using Microsoft Defender for Cloud'
 prerequisites: |
   - Familiarity with Azure services, specifically Azure SQL Database and Azure Storage

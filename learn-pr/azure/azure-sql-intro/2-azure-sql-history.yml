@@ -2,8 +2,8 @@
 uid: learn.azure-sql-intro.2-azure-sql-history
 metadata:
   title: The history of Azure SQL
-  description: The history of Azure SQL
-  ms.date: 03/15/2023
+  description: Learn about the history of Azure SQL and how database services have evolved on Azure.
+  ms.date: 07/13/2023
   author: MashaMSFT
   ms.author: mathoma
   ms.topic: interactive-tutorial

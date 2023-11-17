@@ -3,11 +3,14 @@ uid: learn.wwl.introduction-development-operations-principles-for-machine-learn
 metadata:
   title: Introduction to DevOps principles for machine learning
   description: "Learn about DevOps for machine learning, machine learning operations, and MLOps."
-  ms.date: 08/08/2022
+  ms.date: 07/28/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.custom:
+  - build-2023
+  - build-2023-dataai
+  ms.service: azure-devops
 title: Introduction to DevOps principles for machine learning
 summary: Get familiar with DevOps principles and tools relevant for MLOps workloads.
 abstract: |

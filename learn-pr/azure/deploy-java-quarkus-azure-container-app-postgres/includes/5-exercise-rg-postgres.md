@@ -6,25 +6,25 @@ Then, you configure the Quarkus application to access the remote PostgreSQL data
 We need to set up some environment variables:
 
 ```bash
-AZ_PROJECT="azure-deploy-quarkus"
-AZ_RESOURCE_GROUP="rg-${AZ_PROJECT}"
-AZ_LOCATION="eastus"
-AZ_CONTAINERAPP="ca-${AZ_PROJECT}"
-AZ_CONTAINERAPP_ENV="cae-${AZ_PROJECT}"
-AZ_POSTGRES_DB_NAME="postgres"
-AZ_POSTGRES_USERNAME="postgres"
-AZ_POSTGRES_PASSWORD="postgres"
-AZ_POSTGRES_SERVER_NAME="psql<unique-identifier>"
+export AZ_PROJECT="azure-deploy-quarkus"
+export AZ_RESOURCE_GROUP="rg-${AZ_PROJECT}"
+export AZ_LOCATION="eastus"
+export AZ_CONTAINERAPP="ca-${AZ_PROJECT}"
+export AZ_CONTAINERAPP_ENV="cae-${AZ_PROJECT}"
+export AZ_POSTGRES_DB_NAME="postgres-${AZ_PROJECT}"
+export AZ_POSTGRES_USERNAME="postgres"
+export AZ_POSTGRES_PASSWORD="postgres"
+export AZ_POSTGRES_SERVER_NAME="psql-${AZ_PROJECT}"
 ```
 
 > [!NOTE]
-> You can name your Azure resources the way you want, but we recommend to check [this documentation](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) that gives you abbreviations for many Azure resources (for example, `rg` for Resource Groups or `ca` for Azure Container Apps).
+> You can name your Azure resources the way you want, but we recommend [this documentation](/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) that gives you abbreviations for many Azure resources (for example, `rg` for Resource Groups or `ca` for Azure Container Apps).
 
 Make sure to replace the placeholders when needed. These environment variables are used throughout this module.
 
 | Variable | Description |
 |-|-|
-| `AZ_PROJECT` | The name of the project |
+| `AZ_PROJECT` | The name of the project. To keep this value unique, we suggest using *AZ_PROJECT_\[*your initials*\]*. |
 | `AZ_RESOURCE_GROUP` | The name of the group holding all the other resources |
 | `AZ_LOCATION` | The Azure region you use. We recommend that you use a region close to where you live. To see the full list of available regions, enter `az account list-locations` |
 | `AZ_CONTAINERAPP` | The name of the Azure Container Apps holding all the containers |
@@ -54,7 +54,7 @@ az postgres flexible-server create \
     --database-name "$AZ_POSTGRES_DB_NAME" \
     --admin-user "$AZ_POSTGRES_USERNAME" \
     --admin-password "$AZ_POSTGRES_PASSWORD" \
-    --public all \
+    --public-access "All" \
     --tier "Burstable" \
     --sku-name "Standard_B1ms" \
     --storage-size 256 \
@@ -65,11 +65,11 @@ This command creates a small PostgreSQL server that uses the variables you set u
 
 ## Configure Quarkus to access the PostgreSQL database
 
-Now let's connect the Quarkus application to the PostgreSQL database. To do this, you first need to know the connection String of the database. For that, execute the following command:
+Now let's connect the Quarkus application to the PostgreSQL database. To do so, you first need to obtain the connection string for the database:
 
 ```bash
-POSTGRES_CONNECTION_STRING=$(
-az postgres flexible-server show-connection-string \
+export POSTGRES_CONNECTION_STRING=$(
+    az postgres flexible-server show-connection-string \
     --server-name "$AZ_POSTGRES_SERVER_NAME" \
     --database-name "$AZ_POSTGRES_DB_NAME" \
     --admin-user "$AZ_POSTGRES_USERNAME" \
@@ -78,16 +78,18 @@ az postgres flexible-server show-connection-string \
     --output tsv
 )
 
-echo "POSTGRES_CONNECTION_STRING=$POSTGRES_CONNECTION_STRING"
+export POSTGRES_CONNECTION_STRING_SSL="$POSTGRES_CONNECTION_STRING&ssl=true&sslmode=require"
+
+echo "POSTGRES_CONNECTION_STRING_SSL=$POSTGRES_CONNECTION_STRING_SSL"
 ```
 
 ## Configure the Quarkus application to connect to the PostgreSQL database
 
-Update the `application.properties` file in the `src/main/resources` folder of the project to configure the connection String to the PostgreSQL database. For that, set the `quarkus.datasource.jdbc.url` property with the value of the `$POSTGRES_CONNECTION_STRING` and append `&ssl=true&sslmode=require` to the end of the connection string to force the driver to use ssl. This is required for Azure Database for PostgreSQL.
+Update the `application.properties` file in the `src/main/resources` folder of the project to configure the connection string to the PostgreSQL database. To do so, set the `quarkus.datasource.jdbc.url` property with the value of `$POSTGRES_CONNECTION_STRING_SSL` output previously. The `&ssl=true&sslmode=require` portion of the connection string forces the driver to use SSL, a requirement for Azure Database for PostgreSQL.
 
 ```properties
 quarkus.hibernate-orm.database.generation=update
-quarkus.datasource.jdbc.url=<the value of the POSTGRES_CONNECTION_STRING appended with>&ssl=true&sslmode=require
+quarkus.datasource.jdbc.url=<the value of the POSTGRES_CONNECTION_STRING_SSL>
 ```
 
 ## Execute the Quarkus application locally to test the remote database connection
@@ -110,25 +112,29 @@ curl --header "Content-Type: application/json" \
     http://127.0.0.1:8080/api/todos
 ```
 
-Now check that the to-dos are in the database with the following Azure CLI command:
+Now check that the to-dos are in the database by accessing the GET endpoint defined in the to-do app:
 
 ```bash
-az postgres flexible-server execute \
-    --name "$AZ_POSTGRES_SERVER_NAME" \
-    --database-name "$AZ_POSTGRES_DB_NAME" \
-    --admin-user "$AZ_POSTGRES_USERNAME" \
-    --admin-password "$AZ_POSTGRES_PASSWORD" \
-    --querytext "select * from Todo" \
-    --output table
+curl http://127.0.0.1:8080/api/todos
 ```
 
 You should have the following output:
 
-```bash
-Createdat                   Description                         Details                                                         Done
---------------------------  ----------------------------------  --------------------------------------------------------------  ------
-2022-12-30T16:50:56.182820  Take Quarkus MS Learn               Take the MS Learn on deploying Quarkus to Azure Container Apps  True
-2022-12-30T16:51:08.789207  Take Azure Container Apps MS Learn  Take the ACA Learn module                                       False
+```json
+[
+   {
+      "description" : "Take Quarkus MS Learn",
+      "details" : "Take the MS Learn on deploying Quarkus to Azure Container Apps",
+      "done" : true,
+      "id" : 1
+   },
+   {
+      "description" : "Take Azure Container Apps MS Learn",
+      "details" : "Take the ACA Learn module",
+      "done" : false,
+      "id" : 2
+   }
+]
 ```
 
-If you have the following output, then you've successfully executed the Quarkus application and connected to the remote PostgreSQL database.
+If you have the following output, you have successfully executed the Quarkus application and connected to the remote PostgreSQL database.

@@ -9,8 +9,7 @@ metadata:
   author: rgward
   ms.author: bobward
   ms.reviewer: vanto
-  ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/7-sql-language-enhancements.md)]

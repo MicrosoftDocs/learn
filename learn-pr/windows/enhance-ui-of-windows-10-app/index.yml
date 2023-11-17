@@ -7,7 +7,8 @@ metadata:
   author: LanceMcCarthy
   ms.author: quradic
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  ms.prod: w10
+  manager: jken
 title: Enhance the user interface of your Windows 10 app
 summary: Learn how to add navigation and media to the UI of your Windows 10 app to enhance the user experience.
 abstract: |

@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning 
 title: Deploy an Azure Machine Learning model to a managed endpoint with CLI (v2)
 summary: Use the Azure Machine Learning CLI (v2) to deploy a machine learning model to a managed online endpoint.
 abstract: |

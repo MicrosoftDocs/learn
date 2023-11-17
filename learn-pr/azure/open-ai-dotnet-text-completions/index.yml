@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.azure.open-ai-dotnet-text-completions
+metadata:
+  title: Generate text and conversations with .NET and Azure OpenAI Completions
+  description: Learn how to use the .NET SDK with the Azure OpenAI service to have your applications carry on conversations with users in natural language.
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.date: 08/24/2023
+title: Generate text and conversations with .NET and Azure OpenAI Completions
+summary: Learn how to use the .NET SDK with the Azure OpenAI service to have your applications carry on conversations with users in natural language.
+abstract: |
+  In this module, you will:
+  - Learn how to use the Azure OpenAI .NET SDK
+  - Gain a foundational understanding of Azure OpenAI Completions
+  - Learn tips on improving completion quality
+prerequisites: |
+  - Some C# programming experience
+  - Basic familiarity with Azure OpenAI Service
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- dotnet
+subjects:
+- cloud-computing
+units:
+- learn.azure.open-ai-dotnet-text-completions.1-introduction
+- learn.azure.open-ai-dotnet-text-completions.2-azure-openai-text-completions-overview
+- learn.azure.open-ai-dotnet-text-completions.3-chat-completions
+- learn.azure.open-ai-dotnet-text-completions.4-exercise-install-sdk-create-completion
+- learn.azure.open-ai-dotnet-text-completions.5-improve-completion-quality
+- learn.azure.open-ai-dotnet-text-completions.6-exercise-improve-completion-quality
+- learn.azure.open-ai-dotnet-text-completions.7-summary
+
+badge:
+  uid: learn.open-ai-dotnet-text-completions.badge

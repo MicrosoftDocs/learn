@@ -8,10 +8,7 @@ metadata:
   author: markingmyname
   ms.author: maghan
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
-azureSandbox: true
-interactive: bash
 content: |
   [!include[](includes/7-exercise-use-database-app.md)]

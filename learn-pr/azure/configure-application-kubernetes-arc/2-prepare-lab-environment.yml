@@ -8,6 +8,8 @@ metadata:
   author: mijacobs
   ms.author: mijacobs
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 durationInMinutes: 12
 content: |

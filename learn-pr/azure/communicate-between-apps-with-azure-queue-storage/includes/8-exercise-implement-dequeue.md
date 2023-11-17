@@ -27,14 +27,14 @@ Add code to receive and process a message in the application.
 
 1. Find the `ReceiveMessageAsync` method in the application and delete the line throwing a `NotImplementedException`.
 
-1. At the top of the `ReceiveMessageAsync` method, add the following lines of code to get a message from the queue.
+2. At the top of the `ReceiveMessageAsync` method, add the following lines of code to get a message from the queue.
 
     ```csharp
     Response<QueueMessage> response = await queueClient.ReceiveMessageAsync();
     QueueMessage message = response.Value;
     ```
 
-1. Add the following lines of code below the two lines you just added to the method. This code prints some properties about the received message, including the body of the raw message in JSON format.
+3. Add the following lines of code below the two lines you just added to the method. This code prints some properties about the received message, including the body of the raw message in JSON format.
 
     ```csharp
     Console.WriteLine($"Message id    : {message.MessageId}");
@@ -42,7 +42,7 @@ Add code to receive and process a message in the application.
     Console.WriteLine($"Message (raw) : {message.Body}");
     ```
 
-1. To deserialize the message content into an object that we can work with in our code, add the `ToObjectFromJson` method on the `Body` property of the `QueueMessage` object.  Add the following lines to the method.
+4. To deserialize the message content into an object that we can work with in our code, add the `ToObjectFromJson` method on the `Body` property of the `QueueMessage` object.  Add the following lines to the method.
 
     ```csharp
     NewsArticle article = message.Body.ToObjectFromJson<NewsArticle>();
@@ -51,7 +51,7 @@ Add code to receive and process a message in the application.
     Console.WriteLine($"-  Location : {article.Location}");
     ```
 
-1. Finally, when we've processed the message, we need to delete the message from the queue so no other consumers process it.  Add the following code to the end of the `ReceiveMessageAsync` method.
+5. Finally, when we've processed the message, we need to delete the message from the queue so no other consumers process it.  Add the following code to the end of the `ReceiveMessageAsync` method.
 
     ```csharp
     Console.WriteLine("The processing for this message is just printing it out, so now it will be deleted");
@@ -81,6 +81,8 @@ Add code to receive and process a message in the application.
         Console.WriteLine($"Message deleted");
     }
     ```
+
+6. Save the `Program.cs` file.
 
 ## Execute the application
 

@@ -1,7 +1,7 @@
 **Elevation of privilege** occurs when individuals access resources without permission. Examples include:
 
-- Extracting data by exploiting weaknesses in input-handling logic or memory
-- Finding and using privileged accounts to corrupt the service (used in combination with spoofing and tampering threats)
+- Extracting data by exploiting weaknesses in input-handling logic or memory.
+- Finding and using privileged accounts to corrupt the service (used in combination with spoofing and tampering threats).
 
 ## Elements and interactions at risk from elevation of privilege
 
@@ -23,9 +23,9 @@
 
 **Authorization** ensures users have proper permissions. Examples include:
 
-- Implementing authorization mechanisms to verify permissions to data and resources
-- Applying security controls to run the service using the least possible amount of access
-- Monitoring access to detect anomalies and unauthorized access attempts
+- Implementing authorization mechanisms to verify permissions to data and resources.
+- Applying security controls to run the service using the least possible amount of access.
+- Monitoring access to detect anomalies and unauthorized access attempts.
 
 ### Common security controls to reduce or eliminate risk
 

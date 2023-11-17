@@ -3,11 +3,10 @@ uid: learn.wwl.configure-virtual-machine-availability
 metadata:
   title: Configure virtual machine availability
   description: "Learn how to configure virtual machine availability including vertical and horizontal scaling."
-  ms.date: 02/06/2023
+  ms.date: 07/20/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure virtual machine availability
 summary: Learn how to configure virtual machine availability including vertical and horizontal scaling.
 abstract: |

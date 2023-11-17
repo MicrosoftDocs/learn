@@ -7,7 +7,6 @@ metadata:
   author: shwars
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Introduction to natural language processing with TensorFlow
 summary: In this module, we'll explore different neural network architectures for processing natural language texts. Natural Language Processing (NLP) has experienced fast growth and advancement primarily because the performance of the language models depends on their overall ability to "understand" text and can be trained using an unsupervised technique on large text corpora. Additionally, pre-trained text models (such as BERT) simplified many NLP tasks and has dramatically improved the performance. We'll learn more about these techniques and the basics of NLP in this learning module.

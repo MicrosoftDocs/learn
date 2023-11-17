@@ -6,8 +6,8 @@ metadata:
   ms.date: 07/27/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: virtual-machines-windows
 title: Configure BitLocker disk encryption for Windows IaaS Virtual Machines
 summary: You'll be able to configure Azure Disk Encryption for Windows IaaS VMs and back up and recover encrypted data.
 abstract: |
@@ -23,7 +23,7 @@ prerequisites: |
   - Core Microsoft compute, storage, networking, and virtualization technologies
   - On-premises resiliency Windows Server-based compute and storage technologies
   - Implementing and managing IaaS services in Microsoft Azure
-  - Azure Active Directory (Azure AD)
+  - Microsoft Entra ID
   - Security-related technologies (firewalls, encryption, multi-factor authentication)
   - Windows PowerShell scripting
   - Automation and monitoring

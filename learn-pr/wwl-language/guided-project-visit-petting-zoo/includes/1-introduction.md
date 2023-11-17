@@ -1,6 +1,3 @@
-
-
-
 Methods are a fundamental programming concept. They provide code reusability, improve readability, and reduce the size of your code. Methods help you break down complex problems into modularized tasks, and help organize your code. Now that you've learned about methods, you're ready to start developing more functionality into your programs!
 
 Suppose you're an event coordinator for a petting zoo. You must regularly coordinate visits from different schools and organize animal visits for several groups of students. You decide to write an application that helps you plan school visits. The application divides students into groups and assigns them a set of animals to visit. The students will rotate groups after they visit their assigned animals. You decide to randomize the order animals so that each school's visit is unique.

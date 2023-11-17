@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Implement compliance controls for sensitive data
 summary: Explore data classification capabilities and degrees of confidentiality. Implement security options to maintain private data safe, including Azure SQL auditing, Microsoft Defender for SQL, row-level security, Dynamic Data Masking and Azure SQL Database Ledger.
 abstract: |

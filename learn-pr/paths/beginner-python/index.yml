@@ -7,8 +7,7 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-language
+  ms.topic: learning-path
 title: Python for beginners
 summary: |
   Get started with Python! Learn how to create programs and projects in Python. Work with strings, lists, loops, dictionaries, and functions. 
@@ -53,5 +52,6 @@ modules:
 - learn.beginner-python.functions-python
 - learn.beginner-python.python-error-handling
 - learn.beginner-python.create-run-jupyter-notebook
+- learn.github-copilot-with-python
 trophy:
   uid: learn.beginner-python.trophy

@@ -44,13 +44,13 @@ As a Node.js developer, you can communicate to Node.js the update behavior you w
 - **Minor version**: I'm OK with a new feature being added. I'm not OK with code that breaks.
 - **Patch version**: The only updates I'm OK with are bug fixes.
 
-If you're managing a new or smaller Node.js project, you can afford to be loose with how you define the update strategy. By default, you might choose to always update to the latest version. But for complex projects, there's a more nuance to consider. In that case, you might not do the update by default. In general, the smaller the dependency you're updating, the fewer dependencies it has and the more likely the update process will be easy.
+If you're managing a new or smaller Node.js project, you can afford to be loose with how you define the update strategy. By default, you might choose to always update to the latest version. But for complex projects, there's more nuance to consider. In that case, you might not do the update by default. In general, the smaller the dependency you're updating, the fewer dependencies it has and the more likely the update process will be easy.
 
 ### Configure the package.json for update
 
 Before you update one or more dependencies, you should configure your manifest file so you get predictable behavior when you run the `npm update <name of dependency>` command. You can communicate the approach you want to take for a package. Node.js has a set of symbols that allows you to define how you want your packages to update.
 
-The process is to add different prefixes to your package entries in the package.json file. There are many things you can configure in addition to major/minor/patch version. You can also express that you want packages within only a certain range, or that you want packages that have a certain tag, like `alpha` or `beta`.
+The process is to add different prefixes to your package entries in the package.json file. There are many things you can configure in addition to major/minor/patch version. You can also express that you want packages within only a certain range or that you want packages that have a certain tag, like `alpha` or `beta`.
 
 Here are some patterns that you can configure for major/minor/patch version:
 
@@ -80,7 +80,7 @@ The package-lock.json file also provides other features. It makes it easy to see
 
 ## Find and update outdated packages
 
-The `npm outdated` command lists outdated packages. This command can help you identify when newer versions of packages are available. Here's a typical output from the command:
+The `npm outdated` command lists outdated packages. This command helps you identify when newer versions of packages are available. Here's a typical output from the command:
 
 ```output
 Package       Current    Wanted   Latest     Location     Depended by

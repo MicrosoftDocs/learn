@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning
 title: Use an Azure Machine Learning job for automation
 summary: Learn how to take your machine learning model from experimentation to production by using Azure Machine Learning jobs.
 abstract: |

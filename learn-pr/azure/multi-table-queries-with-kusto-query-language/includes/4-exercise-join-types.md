@@ -4,7 +4,7 @@ You'll use the results of the `join` operator to answer questions about sales.
 
 ## Use the `join` operator
 
-In our retail company scenario, your team is asking you to list the three countries that have the most sales.
+In our retail company scenario, your team is asking you to list the three countries/regions that have the most sales.
 
 As you begin inspecting the *SalesFact* table, you notice that the figures you need are available in the **SalesAmount** column, but the table doesn't contain any country data. Examining the other tables, you notice that the country data is available in the **RegionCountryName** column in the *Customers* table. You also notice that both tables have a **CustomerKey** column.
 
@@ -26,7 +26,7 @@ In the following procedure, you'll build the query in stages to give yourself a 
 
     Take a look at the resulting list. Notice that the table contains columns from the *Customers* table, followed by matching columns from the *SalesFact* table.
 
-1. Run the following query to summarize the joined tables to get the three countries that have the most sales.
+1. Run the following query to summarize the joined tables to get the three countries/regions that have the most sales.
 
     <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA02MsQ7CMAxEdyT+4cZ2Zu6AIrEgMQA/4FILBWobOckQxMfTAAPTSe/dXSgpm7Cn9eqFm0XFPeo0RFV2nGjmtKNLhinCr7nn2rqpiJDHJ+NsmeatWNGMAb7k1C22+6y/vO8xVhz5Gk1DA14PJNx+sj2wafbv5g1dXsYVlQAAAA==" target="_blank">Run the query</a>
 
@@ -39,11 +39,11 @@ In the following procedure, you'll build the query in stages to give yourself a 
 
     Your results should look like those in the following image:
 
-    :::image type="content" source="../media/4-join-1.png" alt-text="Screenshot of the join operator query, showing the top three countries by sales.":::
+    :::image type="content" source="../media/4-join-1.png" alt-text="Screenshot of the join operator query, showing the top three countries/regions by sales.":::
 
-1. Take a look at the resulting list. Try modifying the query to also show the corresponding total cost and profit for these countries.
+1. Take a look at the resulting list. Try modifying the query to also show the corresponding total cost and profit for these countries/regions.
 
-Your team then asks you to identify the countries with the lowest revenues in the last recorded year, by month. To do this, you use a similar query. But this time, you use the `startofmonth()` function to facilitate grouping by month. You also use the `arg_min()` aggregation function to find the countries with the lowest revenues in each month.
+Your team then asks you to identify the countries/regions with the lowest revenues in the last recorded year, by month. To do this, you use a similar query. But this time, you use the `startofmonth()` function to facilitate grouping by month. You also use the `arg_min()` aggregation function to find the countries/regions with the lowest revenues in each month.
 
 1. Run the following query.
 
@@ -60,9 +60,9 @@ Your team then asks you to identify the countries with the lowest revenues in th
 
     Your results should look like those in the following image:
 
-    :::image type="content" source="../media/4-join-2.png" alt-text="Screenshot of the join operator query, showing the countries with the lowest revenues.":::
+    :::image type="content" source="../media/4-join-2.png" alt-text="Screenshot of the join operator query, showing the countries/regions with the lowest revenues.":::
 
-1. Look at each row. Notice that the first column shows the months of the last year, in descending order, followed by columns that show the total sales for the country with the lowest sales numbers that month.
+1. Look at each row. Notice that the first column shows the months of the last year, in descending order, followed by columns that show the total sales for the country/region with the lowest sales numbers that month.
 
 ## Use the rightouter `join` kind
 

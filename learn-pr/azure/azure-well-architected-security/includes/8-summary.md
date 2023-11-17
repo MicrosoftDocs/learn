@@ -2,7 +2,7 @@ In this module, we talked through many principles of the Security pillar of the 
 
 You learned how to approach security in your architecture through defense in depth. Looking only at firewalls or antimalware isn't enough to slow down attackers. You should use a layered approach and address security at each layer.
 
-We talked through identity management, and how identity becomes an integral piece of the architectural puzzle. Azure Active Directory (Azure AD) has features and capabilities to improve identity security for your environment.
+We talked through identity management, and how identity becomes an integral piece of the architectural puzzle. Microsoft Entra ID has features and capabilities to improve identity security for your environment.
 
 You learned strategies and features to protect access to your infrastructure. Proper protection ensures that the resources you create are administered by only those who should be administering them.
 
@@ -18,7 +18,7 @@ To learn more about the Security pillar of the Azure Well-Architected Framework,
 - [Introduction to Azure security](/azure/security/fundamentals/overview?azure-portal=true)
 - [Azure security documentation](/azure/security/?azure-portal=true)
 - [Configure encryption with customer-managed keys stored in Azure Key Vault](/azure/storage/common/storage-service-encryption-customer-managed-keys?azure-portal=true)
-- [Start using Azure Active Directory Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-getting-started?azure-portal=true)
+- [Start using Microsoft Entra Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-getting-started?azure-portal=true)
 - [What is Microsoft Defender for Cloud?](/azure/security-center/security-center-intro?azure-portal=true)
 - [What is Conditional Access?](/azure/active-directory/conditional-access/overview?azure-portal=true)
 - [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl?azure-portal=true)
