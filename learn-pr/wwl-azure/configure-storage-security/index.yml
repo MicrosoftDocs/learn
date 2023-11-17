@@ -21,7 +21,9 @@ abstract: |
   - Implement customer-managed keys.
   - Recommend opportunities to improve Azure Storage security.
 prerequisites: |
-  None
+  *   Basic knowledge of Azure storage solutions.
+  *   Familiarity with the Azure portal so you can configure the security measures.
+  *   Understanding of security concepts like encryption and keys.
 iconUrl: /training/achievements/storage-security-configure.svg
 levels:
 - intermediate

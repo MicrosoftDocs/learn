@@ -6,7 +6,7 @@ The main takeaways from this module are:
 
 - Shared access signatures (SAS) provide a secure way to grant restricted access rights to Azure Storage resources without compromising account keys.
 
-- Azure Storage encryption automatically encrypts data before it's stored and decrypts it when retrieved. Key management is done by Microsoft or using an Azure Key Vault for more control and flexibility.
+- Azure Storage encryption automatically encrypts and decrypts data. Key management is done by Microsoft or using an Azure Key Vault for more control and flexibility.
 
 
 ## Learn more with documentation
