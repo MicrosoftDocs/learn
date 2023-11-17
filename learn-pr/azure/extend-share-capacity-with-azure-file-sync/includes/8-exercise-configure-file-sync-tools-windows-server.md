@@ -20,7 +20,7 @@ The following video shows you how set up your on-premises server to work with Az
 
 1. In the **Properties** pane, under **IE Enhanced Security Configuration**, select **On**.
 
-    ![Screenshot that shows the On button for IE Enhanced Security Configuration.](../media/8-local-server-ie-security-config.png)
+    :::image type="content" source="../media/8-local-server-ie-security-config.png" alt-text="Screenshot that shows the On button for IE Enhanced Security Configuration.":::
 
 1. Select **Off** for **Administrators** and **Users**, and then select **OK**.
 
@@ -66,7 +66,7 @@ The following video shows you how set up your on-premises server to work with Az
 
 1. You should see that the registration is successful. Select **Close** to close the window.
 
-    ![Screenshot of the registration successful page.](../media/8-server-registration-successful.png)
+    :::image type="content" source="../media/8-server-registration-successful.png" alt-text="Screenshot of the registration successful page.":::
 
 1. Leave your Remote Desktop connection open for the next exercise.
 
@@ -85,7 +85,7 @@ The following video shows you how set up your on-premises server to work with Az
    | Registered Server  | **FileServerLocal** |
    | Path    | **D:\\CADFolder** |
 
-   ![Screenshot of the Add server endpoint window.](../media/8-add-server-endpoint.png)
+   :::image type="content" source="../media/8-add-server-endpoint.png" alt-text="Screenshot of the Add server endpoint window.":::
 
 1. For **Cloud Tiering**, select **Enabled**.
 
@@ -95,4 +95,4 @@ The following video shows you how set up your on-premises server to work with Az
 
 1. When the endpoint is created, the file sync process begins. This process might take a few minutes.
 
-    ![Screenshot that shows the status of the endpoint.](../media/8-created-endpoint.png)
+    :::image type="content" source="../media/8-created-endpoint.png" alt-text="Screenshot that shows the status of the endpoint.":::
