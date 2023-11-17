@@ -8,8 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-  ms.custom:
-  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/8-determine-compliance.md)]
