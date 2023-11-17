@@ -13,6 +13,8 @@ In this exercise, you enrich the documentation a developer sees about your API b
 
 1. Go back to the instance of Visual Studio Code that you used for the last exercise.
 
+1. If the web API is still running in the last exercise, press <kbd>ctrl+c</kbd> on Windows or <kbd>cmd+c</kbd> on Mac to stop it.
+
 1. To activate XML documentation in your project, update the **PrintFramerAPI.csproj** project file, add the `GenerateDocumentationFile` tag to the existing `<PropertyGroup>`, and set it to `true`.
 
    ```XML
@@ -89,9 +91,6 @@ In this exercise, you enrich the documentation a developer sees about your API b
     dotnet build
     ```
 
-   > [!TIP]
-   > You may need to first press <kbd>ctrl+c</kbd> on Windows or <kbd>cmd+c</kbd> on Mac to stop the web API from running in the last exercise.
-
 1. To see your changes, run the ASP.NET application locally by entering the following in the Visual Studio Code terminal window:
 
     ```bash
@@ -105,6 +104,8 @@ In this exercise, you enrich the documentation a developer sees about your API b
 ## Add data annotations to your API
 
 To enable Swagger to improve the OpenAPI documentation, you use attributes from the `Microsoft.AspNetCore.Mvc` namespace.
+
+1. If the web API is still running in the last exercise, press <kbd>ctrl+c</kbd> on Windows or <kbd>cmd+c</kbd> on Mac to stop it.
 
 1. To show that your `GetPrice` API supports a content type response for **text/plain**, in the API controller, **PriceFrameController.cs**, add a `[Produces("text/plain")]` attribute above the `GetPrice` definition.
 
@@ -123,7 +124,11 @@ A more robust way to tell developers the response types and error codes is throu
 
 Also update the HTTP verb filter constructor to include the `Name` property, and include the OpenAPI `operationId` value.
 
-1. Add `Microsoft.AspNetCore.Http` to the **PriceFrameController.cs** file.
+1. Add the following using statement to the **PriceFrameController.cs** file.
+
+    ```csharp
+    using Microsoft.AspNetCore.Http;
+    ```
 
 1. In **PriceFrameController.cs**, replace `GetPrice` with the following code and comment.
 
@@ -168,10 +173,16 @@ Also update the HTTP verb filter constructor to include the `Name` property, and
     - The HttpGet attribute includes a `Name` property to emit the OpenAPI `operationId` parameter.
     - The ProducesResponseType attributes list the different responses that the action can return. These attributes are combined with XML comments, as previously described, to include human-friendly descriptions with each response in the generated Swagger
 
-1. Rebuild and run the web API with the following command:
+1. Rebuild the web API with the following command:
 
     ```bash
     dotnet build
+    ```
+
+1. Run the ASP.NET application with the following command:
+
+    ```bash
+    dotnet run
     ```
 
 1. Look at the Swagger UI again at `http://localhost:5000/swagger`, and observe the added information provided by these annotations. The final Swagger UI for your API appears in the following image.

@@ -15,7 +15,7 @@ In this exercise, you document an ASP.NET Core Web API with OpenAPI and try out 
 1. To clone the sample Web API Project from GitHub, run the following `git clone` command in the terminal window.
 
    ```bash
-   git clone https://github.com/MicrosoftDocs/mslearn-improve-api-developer-experience-with-swagger  && cd mslearn-improve-api-developer-experience-with-swagger/PrintFramerAPI
+   git clone https://github.com/MicrosoftDocs/mslearn-improve-api-developer-experience-with-swagger && cd mslearn-improve-api-developer-experience-with-swagger/PrintFramerAPI
    ```
 
 1. Open the project in Visual Studio Code with the following terminal command.
@@ -32,7 +32,7 @@ In this exercise, you document an ASP.NET Core Web API with OpenAPI and try out 
     dotnet run
     ```
 
-1. Once the output from the command is complete, navigate to: http://localhost:5000/api/priceframe/6/17
+1. Once the output from the command is complete, navigate to: `http://localhost:5000/api/priceframe/6/17`
 
     When you navigate to the address in the browser, it should respond with the message `The cost of a 6x17 frame is $20.00`.
 
