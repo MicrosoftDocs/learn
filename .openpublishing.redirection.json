@@ -29234,6 +29234,11 @@
       "source_path": "learn-pr/wwl-azure/intro-to-anomaly-detector/2-what-is-anomaly-detector.md",
       "redirect_url": "https://learn.microsoft.com/azure/ai-services/anomaly-detector/overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-anomaly-detector/3-how-anomaly-detector-works.md",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/anomaly-detector/overview",
+      "redirect_document_id": false
     }
   ]
 }
