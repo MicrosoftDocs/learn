@@ -61,9 +61,7 @@ The tasks that you complete during this exercise are:
 
 1. Test the search term input functionality of the app by entering `2` to select Menu Option "2" searching.
 
-1. Press **"Enter"** without entering data at the *"Enter one desired dog characteristic to search for"* prompt to test the "TryParse".
-
-    The program should return to the menu without error.
+1. Press **"Enter"** without entering data at the *"Enter one desired dog characteristic to search for"* prompt. The program should return to the menu without error.
 
 1. Repeat selecting Menu Option "2" and test search term entry *"golden"*. The program should return to the menu without error.
 
@@ -194,7 +192,7 @@ Now you add the search for `dogCharacteristic` in the combined data of `dogDescr
 
 1. At the menu, enter "`2`" and "Enter" to test the dog search repeatedly.
 
-        - Enter nothing as input to test the `TryParse` to prevent a null error
+        - Enter nothing as input to test the null entry behavior
         - Enter "scuba" as input to test the "match not found"
         - Enter "golden" to get two matches
         - Enter "medium" to get one match
