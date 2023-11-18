@@ -15,4 +15,4 @@ metadata:
   ms.service: iot-dps
 durationInMinutes: 11
 content: |
-  [!include[](includes/3-exercise-generate-configure-certificates-using-openSSL.md)]
+  [!include[](includes/3-exercise-generate-configure-certificate.md)]
