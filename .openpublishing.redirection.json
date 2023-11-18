@@ -30400,6 +30400,41 @@
       "source_path": "learn-pr/wwl-azure/intro-to-anomaly-detector/4a-exercise.md",
       "redirect_url": "https://learn.microsoft.com/azure/ai-services/anomaly-detector/overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-iot-solution-azure-sql-database/index.yml",
+      "redirect_url":"https://learn.microsoft.com/training/paths/azure-sql-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-iot-solution-azure-sql-database/1-introduction.yml",
+      "redirect_url":"https://learn.microsoft.com/training/paths/azure-sql-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-iot-solution-azure-sql-database/2-analyze-solution-architecture.yml",
+      "redirect_url":"https://learn.microsoft.com/training/paths/azure-sql-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-iot-solution-azure-sql-database/3-exercise-deploy.yml",
+      "redirect_url":"https://learn.microsoft.com/training/paths/azure-sql-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-iot-solution-azure-sql-database/4-store-iot-data.yml",
+      "redirect_url":"https://learn.microsoft.com/training/paths/azure-sql-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-iot-solution-azure-sql-database/5-exercise-configure.yml",
+      "redirect_url":"https://learn.microsoft.com/training/paths/azure-sql-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-iot-solution-azure-sql-database/6-summary.yml",
+      "redirect_url":"https://learn.microsoft.com/training/paths/azure-sql-fundamentals/",
+      "redirect_document_id": false
     }
   ]
 }
