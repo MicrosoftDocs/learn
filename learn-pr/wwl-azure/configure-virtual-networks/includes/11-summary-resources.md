@@ -14,13 +14,13 @@ The main takeaways from this module are:
 
 - [What is Azure Virtual Network?](/azure/virtual-network/virtual-networks-overview). This article is your starting point to learn about virtual networks. 
 
-- [Public IP addresses](azure/virtual-network/ip-services/public-ip-addresses). This article reviews the basics of when to use public IP addresses. 
+- [Public IP addresses](/azure/virtual-network/ip-services/public-ip-addresses). This article reviews the basics of when to use public IP addresses. 
 
 - [Public IP addresses](/azure/virtual-network/private-ip-addresses).  This article reviews the basics of when to use private IP addresses. 
 
 ## Learn more with self-paced training
 
-- [Introduction to Azure Virtual Networks](/raining/modules/introduction-to-azure-virtual-networks/). Learn how to design and implement core Azure Networking infrastructure.
+- [Introduction to Azure Virtual Networks](/training/modules/introduction-to-azure-virtual-networks/). Learn how to design and implement core Azure Networking infrastructure.
 
 - [Design an IP addressing schema for your Azure deployment (sandbox)](/training/modules/design-ip-addressing-for-azure/). Learn about network IP addressing and integration. 
 

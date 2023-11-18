@@ -8,7 +8,7 @@ After resources are moved to Azure, they require the same networking functionali
 
 You can implement Azure Virtual Network to create a virtual representation of your network in the cloud. Let's examine some characteristics of virtual networks in Azure.
 
-- An Azure virtual network is a logical isolation of the Azure cloud that's dedicated to your subscription.
+- An Azure virtual network is a logical isolation of the Azure cloud resources.
 
 - You can use virtual networks to provision and manage virtual private networks (VPNs) in Azure.
 
