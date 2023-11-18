@@ -17,7 +17,7 @@ abstract: |
   - Describe Azure virtual network features and components.
   - Identify features and usage cases for subnets and subnetting.
   - Identify usage cases for private and public IP addresses.
-  - Create a virtual network and assign IP addresses.
+  - Create a virtual network and assign IP address.
 prerequisites: |
   - Basic knowledge of virtual networking in cloud environments.
   - Familiarity with IP address formats and subnetting.

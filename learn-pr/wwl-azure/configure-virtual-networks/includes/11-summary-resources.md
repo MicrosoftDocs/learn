@@ -6,13 +6,13 @@ The main takeaways from this module are:
 
 - Subnets within virtual networks provide logical divisions, improving security, performance, and management.
 
-- When creating virtual networks, ensure that the IP address space is unique and does not overlap with other subnets. 
+- When creating virtual networks, ensure that the IP address space is unique and doesn't overlap with other subnets. 
 
 - IP addresses can provide public or private access to resources. 
 
 ## Learn more with documentation
 
-- [What is Azure Virtual Network](/azure/virtual-network/virtual-networks-overview). This article is your starting point to learn about virtual networks. 
+- [What is Azure Virtual Network?](/azure/virtual-network/virtual-networks-overview). This article is your starting point to learn about virtual networks. 
 
 - [Public IP addresses](azure/virtual-network/ip-services/public-ip-addresses). This article reviews the basics of when to use public IP addresses. 
 
