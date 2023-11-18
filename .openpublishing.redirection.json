@@ -29903,6 +29903,31 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/explore-group-enrollment-tasks/index.md",
+      "redirect_url": "/training/modules/provision-iot-devices-secure-scale-with-iot-hub-dps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-group-enrollment-tasks/1-introduction.md",
+      "redirect_url": "/training/modules/provision-iot-devices-secure-scale-with-iot-hub-dps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-group-enrollment-tasks/2-provision-deprovision-devices-using-group-enrollments.md",
+      "redirect_url": "/training/modules/provision-iot-devices-secure-scale-with-iot-hub-dps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-group-enrollment-tasks/3-knowledge-check.md",
+      "redirect_url": "/training/modules/provision-iot-devices-secure-scale-with-iot-hub-dps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-group-enrollment-tasks/4-summary.md",
+      "redirect_url": "/training/modules/provision-iot-devices-secure-scale-with-iot-hub-dps/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/discover-microsoft-ai-financial-professionals/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/discover-microsoft-ai-leaders-financial-industry/",
       "redirect_document_id": false
