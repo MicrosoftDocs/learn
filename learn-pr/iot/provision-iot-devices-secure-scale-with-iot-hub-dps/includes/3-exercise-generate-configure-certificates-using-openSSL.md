@@ -13,7 +13,7 @@ In this section, you generate an X.509 CA certificate using OpenSSL. This certif
    cd certificates
    ```
 
-2. Download a helper script and two OpenSSL configuration files that you use to create X.509 certificates.
+2. Download a helper script and two OpenSSL configuration files that you use to create X.509 certificates. 
 
    Download files
 
