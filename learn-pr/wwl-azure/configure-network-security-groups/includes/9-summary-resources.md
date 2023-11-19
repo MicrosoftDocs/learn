@@ -1,4 +1,6 @@
-In this module, you learned about network security groups (NSGs) in Azure. NSGs are used to limit network traffic to resources in your virtual network by containing a list of security rules. You can associate NSGs with subnets or network interfaces and define rules to control inbound and outbound traffic. The module explains how NSG rules are evaluated and processed, and provides considerations for creating effective rules. It also introduces application security groups (ASGs), which allow for grouping virtual machines based on workload and defining NSG rules accordingly.
+In this module, you learned about network security groups (NSGs) in Azure. NSGs are used to limit network traffic to resources in your virtual network by containing a list of security rules. You can associate NSGs with subnets or network interfaces and define rules to control inbound and outbound traffic. 
+
+You also learned how NSG rules are evaluated and processed. Lastly, you learned how application security groups,  allow for grouping virtual machines based on workload.
 
 The main takeaways from this module are:
 
