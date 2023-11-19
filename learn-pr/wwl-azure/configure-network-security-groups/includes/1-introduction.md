@@ -1,6 +1,6 @@
 Organizations use virtual networks to enable resources to communicate with other resources, over the internet, and with on-premises networks. To provide secure communication and control access within a virtual network, you can use network security groups and network security group rules.
 
-In this module, suppose your company has several sites. All users in the company will use an enterprise resource planning app to migrate to Azure. The company will only consider moving key systems onto the platform if stringent security requirements can be met. These requirements include tight control over which computers have network access to the servers running the app. You need to secure both virtual machine networking and Azure services networking. Your goal is to prevent unwanted or unsecured network traffic from being able to reach key systems.
+In this module, suppose your company has several sites. All users in the company use an enterprise resource planning app to migrate to Azure. The company will only consider migrating key systems if stringent security requirements can be met. These requirements include tight control over which computers have network access to the servers running the app. You need to secure both virtual machine networking and Azure services networking. Your goal is to prevent unwanted or unsecured network traffic from being able to reach key systems.
 
 You need to implement network security groups. You need to create network security group rules and ensure the rules are correctly applied.
 
