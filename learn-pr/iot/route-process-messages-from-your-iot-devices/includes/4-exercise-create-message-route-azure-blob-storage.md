@@ -129,7 +129,7 @@ To create the storage endpoint:
 
 1. Select **...** next to the block blob with the earliest time stamp, then select **Download** from the Context menu.
 
-<!-- TODO: Can you not view the file contents in Storage browser? Is downloading necessary?-->
+   <!-- TODO: Can you not view the file contents in Storage browser? Is downloading necessary?-->
 
 1. Open **File Explorer** and navigate to your **Downloads** folder.
 

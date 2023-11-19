@@ -1,4 +1,4 @@
-In this module, you create a simulated device that sends vibration telemetry to your IoT hub. With simulated data arriving at the IoT hub, you implement an IoT Hwub message route and Azure Stream Analytics job that can be used to process device messages. In both cases, data is delivered to a Blob Storage container that is used to verify successful implementation. 
+In this module, you create a simulated device that sends vibration telemetry to your IoT hub. With simulated data arriving at the IoT hub, you implement an IoT Hub message route and Azure Stream Analytics job that can be used to process device messages. In both cases, data is delivered to a Blob Storage container that is used to verify successful implementation. 
 
 ## Setup
 
