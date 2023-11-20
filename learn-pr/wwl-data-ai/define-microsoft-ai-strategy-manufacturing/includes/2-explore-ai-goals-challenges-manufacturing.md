@@ -2,7 +2,7 @@ Manufacturing processes involve complex and physical tasks that require precisio
 
 ## Goals
 
-When manufacturing companies implement AI solutions, they expect to solve these business problems:
+When manufacturing companies implement AI solutions, they expect to solve these business problems.
 
 * **Balance the human and technological aspects of production:** Most factories rely on employees and robots working together. An aging workforce and the subsequent loss of institutional knowledge are disturbing this balance, as 46 percent of frontline workers say worker shortages are making it difficult to do their job.<sup>1</sup> AI can find an equipoise by enhancing the skills and capabilities of workers, while also automating and streamlining repetitive or hazardous tasks.
 * **Promote worker safety:** AI solutions enable companies to prevent accidents and monitor health conditions. By using AI, manufacturers can create a safer environment for their employees.
@@ -15,7 +15,7 @@ When manufacturing companies implement AI solutions, they expect to solve these 
 
 ## Challenge
 
-A first set of challenges for AI solutions in manufacturing involves difficulties in **data curation and management**:
+A first set of challenges for AI solutions in manufacturing involves difficulties in **data curation and management**.
 
 * **Niche customers or data types:** Traditional AI models work by finding patterns in large amounts of data. So, it struggles to deal with niche customers or data types without enough data or standardization. In these situations, it might be more effective to reuse pretrained large language models (LLMs), such as those included in Azure OpenAI Service.
 * **Unique file types and physical documents:** Manufacturers usually work with a higher proportion of unique file types such as .cad files, or physical documents such as signed contracts. AI systems don’t directly ingest these documents, so you must transform them.
