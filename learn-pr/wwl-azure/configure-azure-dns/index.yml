@@ -7,8 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
-  ms.custom:
-  - N/A
   ms.service: dns
 title: Configure Azure DNS
 summary: |
