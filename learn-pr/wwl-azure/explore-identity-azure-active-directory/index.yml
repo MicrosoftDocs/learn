@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/26/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: module-intro-to-product
+  ms.topic: module
   ms.prod: azure
 title: Explore identity in Microsoft Entra ID
 summary: This module covers definitions and available services for identity provided in Microsoft Entra ID  and to Microsoft 365. You start with authentication, authorization, and access tokens then build into full identity solutions.

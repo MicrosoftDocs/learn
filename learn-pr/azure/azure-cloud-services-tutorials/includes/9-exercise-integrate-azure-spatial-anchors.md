@@ -38,7 +38,7 @@ In this section, you'll learn how to configure the scene and make the necessary 
 ## Build and deploy the app to your HoloLens 2
 
 > [!Note]
-> Building and testing on HoloLens 2 is not mandatory. You can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a HoloLens device. You can purchase devices at [HoloLens.com](http://hololens.com/).
+> Building and testing on HoloLens 2 is not mandatory. You can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a HoloLens device. You can purchase devices at [HoloLens.com](https://hololens.com/).
 
 Azure Spatial Anchors can't run in Unity, so to test the Azure Spatial Anchors functionality, you need to deploy the project to your device.
 

@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/05/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: AZ-305 Microsoft Azure Architect Design Prerequisites
 prerequisites: |
   You should be familiar with basic computing concepts and terminology.
