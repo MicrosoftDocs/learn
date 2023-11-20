@@ -1,4 +1,3 @@
-
 ## Lab scenario
 
 Your organization has three datacenters connected with a mesh wide-area network. As the Azure Administrator, you need to implement the on-premises infrastructure in Azure.
