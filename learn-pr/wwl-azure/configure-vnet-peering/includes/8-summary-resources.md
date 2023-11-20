@@ -5,7 +5,7 @@ The main takeaways from this module are:
 
 - There are two types of peering: regional and global. Regional peering connects virtual networks in the same region. Global peering connects virtual networks in different regions. 
 
-- When using Azure Virtual Network peering, network traffic between peered virtual networks is private and kept on the Azure backbone network.
+- Network traffic between peered virtual networks is private and kept on the Azure backbone network.
 
 - You can configure Azure VPN Gateway in the peered virtual network as a transit point to access resources in another network.
 
