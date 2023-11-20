@@ -7,8 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
-  ms.custom:
-  - N/A
   ms.service: app-service
 title: Configure Azure App Service plans
 summary: |
