@@ -4,7 +4,7 @@ Suppose your healthcare organization is launching a new portal application for p
 
 The new portal needs to be available around the clock to handle failures. The portal must adjust to fluctuations in load by adding and removing resources to match the load. You need a solution to distribute work to virtual machines across the system as virtual machines are added. The solution should detect failures and reroute jobs to virtual machines as needed. Improved resiliency and scalability are required to help ensure patients can schedule appointments from any location.
 
-You're responsible for configuring the load balancers to distribute incoming network traffic across a group of back-end virtual machines. You need to scale your applications while maintaining throughput and keeping response times low.
+You're responsible for configuring the load balancers to distribute incoming network traffic across a group of back-end servers. You need to scale your applications while maintaining throughput and keeping response times low.
 
 The goal of this module is to equip you to implement an Azure load balancer. 
 
