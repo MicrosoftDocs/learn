@@ -1,22 +1,22 @@
-The Contoso outdoor equipment company has two services that they'd like to group together to build and deploy as a single unit. They decided to use Docker Compose to build the services together.
+The Contoso outdoor equipment company has two services that they'd like to group together to build and deploy as a single unit. The company decides to use Docker Compose to build the services together.
 
-In this exercise, you create a Docker Compose YAML file, then use the Docker Compose utility to both build the Docker container images and run them.
+In this exercise, you create a Docker Compose YAML file. Then you use the Docker Compose utility to both build the Docker container images and run them.
 
 ## Connect to the codespace
 
-If you need to connect to the codespace, follow these steps:
+To connect to the codespace:
 
 1. Open a browser and go to the [eShopLite repository](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative).
-2. Select **Code** and then select the **Codespaces** tab.
-3. Select the codespace you created in the previous exercise. GitHub opens the codespace.
-4. Change to the `/dotnet-docker` directory.
+1. Select **Code**, and then select the **Codespaces** tab.
+1. Select the codespace that you created in the previous exercise. GitHub opens the codespace.
+1. Go to the */dotnet-docker* directory.
 
-## Create the docker-compose file
+## Create the Docker Compose file
 
-Now we can use the docker-compose file to configure images for both the backend and frontend services:
+Use the Docker Compose file to configure images for both the back-end and the front-end services.
 
-1. In the topmost folder of the codespace (the same folder with README.md), open the file named **docker-compose.yml**.
-2. Add the following code to the **docker-compose.yml** file:
+1. In the top folder of the codespace (the folder that contains *README.md*), open the file named *docker-compose.yml*.
+1. Add the following code to the file:
 
     ```yml
     version: '3.4'
@@ -44,20 +44,21 @@ Now we can use the docker-compose file to configure images for both the backend 
                - "5200:8080"
     ```
 
-    This code does several things:
+   This code does several things:
 
-   - First, it creates the frontend website, naming it **frontend**. The code tells Docker to build it, pointing to the **DockerfileStore** file.
-   - Then the code sets an environment variable for the website: `ProductEndpoint=http://backend:8080`. This code is how the frontend service finds the Products backend service.
-   - A second environment variable specifies where images for products can be found.
-   - The code opens a port and declares it depends on the backend service.
-     - The backend service named **backend** gets created next. The same Dockerfile you created in the previous exercise builds it. The last command specifies which port to open.
+   - It creates the front-end website and names it **frontend**. The code tells Docker to build it and points to the *DockerfileStore* file.
+   - The code sets an environment variable for the website: `ProductEndpoint=http://backend:8080`. This code is how the front-end service finds the Products back-end service.
+   - A second environment variable specifies where images for products are located.
+   - The code opens a port and declares that it depends on the back-end service.
 
-3. Switch to the **PORTS** tab, then to the right of the local address for the **Back End** port, select the **Copy** icon. 
+    The back-end service named **backend** is created next. The same Dockerfile that you created in the previous exercise builds it. The last command specifies which port to open.
 
-    ![Screenshot showing how to copy the address for the backend products service.](../media/copy-backend-address.png)
+1. Select the **Ports** tab. To the right of the local address for the **Back End** port, select the **Copy** icon.
 
-4. Paste this URL into the `ImagePrefix` environment variable in the **docker-compose.yml** file, replacing the text `http://localhost`. 
-5. Append `images` to the pasted text:
+   :::image type="content" source="../media/copy-backend-address.png" alt-text="Screenshot that shows how to copy the address for the back-end Products service.":::
+
+1. In the *docker-compose.yml* file, paste this URL in the `ImagePrefix` environment variable. Replace the text `http://localhost`.
+1. Append `images` to the pasted text:
 
     ```docker-compose
     environment: 
@@ -67,25 +68,26 @@ Now we can use the docker-compose file to configure images for both the backend 
 
 ## Build the images and run the containers
 
-Now, lets use Docker Compose to build and start both front end and back end components:
+Now, use Docker Compose to build and start both front-end and back-end components.
 
-1. To build the container images, switch to the **TERMINAL** tab, and then run the following command:
+1. To build the container images, select the **Terminal** tab, and then run the following command:
 
     ```bash
     docker compose build
     ```
 
-1. Then, to start both the front end website and the back end web API, run this command:
+1. To start both the front-end website and the back-end web API, run this command:
 
     ```bash
     docker compose up
     ```
 
-1. After a bit of output, the website and web API will be running. You should get something similar to the following output:
+1. Some output appears, and then the website and web API are running. You should see output that's similar to this example:
 
     ```output
     Attaching to docker-aspnet-products_backend_1, docker-aspnet-products_frontend_1
     ```
 
-1. To test the front end service, switch to the **PORTS** tab, then to the right of the local address for the **Front End** port, select the globe icon. The browser displays the homepage. 
+1. To test the front-end service, select the **Ports** tab. Then, to the right of the local address for the **Front End** port, select the globe icon. The browser displays the home page.
+
 1. Select **Products**. The catalog shows Contoso's merchandise.
