@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/27/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: cognitive-search
 title: Build an Azure Machine Learning custom skill for Azure Cognitive Search
 summary: Custom skills allow you to enhance datasets as they pass through the enrichment pipeline. Azure Machine Learning can build custom models for regression or classification to enrich your search indexes.
