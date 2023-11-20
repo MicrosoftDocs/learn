@@ -12,6 +12,7 @@ Now that you have reviewed this module, you should:
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
+* To learn more about what Microsoft can do for your sustainability organization, visit our [Microsoft Cloud for Sustainability website](https://www.microsoft.com/sustainability/cloud).
 * Stay up to date with Microsoft AI, visit our [AI website](https://www.microsoft.com/ai).
 * To learn more about Microsoft commitment to responsible AI, visit our [Responsible AI website](https://www.microsoft.com/ai/responsible-ai).
 * To learn more about the models delivered by Azure OpenAI Service, read our [technical documentation on Azure OpenAI Service](/azure/cognitive-services/openai/concepts/models).
