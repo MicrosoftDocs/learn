@@ -12,7 +12,7 @@ The main takeaways from this module are:
 
 ## Learn more with documentation
 
- -  [Azure DNS documentation](/azure/dns/). This is your starting point for all things Azure DNS. 
+ -  [Azure DNS documentation](/azure/dns/). This article is your starting point for all things Azure DNS. 
 
 ## Learn more with self-paced training
 
