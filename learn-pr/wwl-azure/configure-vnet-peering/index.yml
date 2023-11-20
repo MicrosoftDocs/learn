@@ -7,8 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
-  ms.custom:
-  - N/A
   ms.service: virtual-network
 title: Configure Azure Virtual Network peering
 summary: |
