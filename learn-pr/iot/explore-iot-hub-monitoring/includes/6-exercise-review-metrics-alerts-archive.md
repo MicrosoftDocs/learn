@@ -10,11 +10,11 @@ In order to generate the alert where the number of connected devices is less tha
 
 1. Navigate to your Dashboard that includes the Metrics chart that you created.
 
-1. Open the Metrics chart that you pinned to the dashboard by clicking on the chart title.
+1. Open the Metrics chart that you pinned to the dashboard by selecting the chart title.
 
     The chart opens and fills the page.
 
-1. Click on **Local Time: Last 30 minutes**. Notice that you can adjust the time range, granularity and time zone. Click **Cancel**.
+1. Select **Local Time: Last 30 minutes**. Notice that you can adjust the time range, granularity and time zone. Select **Cancel**.
 
 1. Observe that you can see *Telemetry messages sent* and *Connected devices* values at the bottom of the blade. Hover your mouse over different parts of the chart to see *Telemetry messages sent* and *Connected devices* values for specific points in time. You should notice that the telemetry and connected devices plot lines reduced to zero after you stopped your telemetry simulator program.
 
@@ -26,34 +26,34 @@ To use the Azure portal to review alerts, complete the following steps.
 
 1. On the Azure portal toolbar, in the search box, type **monitor**
 
-1. In the search result pane, under **Services**, click **Monitor**.
+1. In the search result pane, under **Services**, select **Monitor**.
 
     The **Monitor - Overview** page is displayed. This is the overview for all of the monitoring activities for the current subscription.
 
-1. On the left-side menu, near the top of the list, click **Alerts**.
+1. On the left-side menu, near the top of the list, select **Alerts**.
 
     This alerts view shows all alerts for all subscriptions. Let's filter this for the IoT Hub used in this project.
 
-1. Near the top of the blade, click **Subscription**, then select only the subscription you are using for this project. Then click **Apply**.
+1. Near the top of the blade, select **Subscription**, then select only the subscription you are using for this project. Then select **Apply**.
 
-1. Click **Time range**, click **Past hour**, then click **Apply**.
+1. Select **Time range**, select **Past hour**, then select **Apply**.
 
-1. Click **Alert condition**, click **Select all**, then click **Apply**.
+1. Select **Alert condition**, select **Select all**, then select **Apply**.
 
     You should now see a summary of alerts for the last hour including a total alerts count and a list of the severity categories with alert counts per category. The alerts we are interested in are **3 - Informational** Severity. You should see at least one alert. If you stopped and restarted the device simulator, you may have generated more that one alert.
 
     > [!NOTE]
     > If you do not yet see an alert, wait a few more minutes - there is sometimes a delay in the alerts being raised.
 
-1. In the list of severities, click the number under **Informational**.
+1. In the list of severities, select the number under **Informational**.
 
     The **Informational** pane opens. At the top of the pane, you see several filter fields. These fields have been populated with the values from the preceding screen. And only the **Informational** alerts for the selected IoT hub are shown. It also shows the alert condition of either Fired or Resolved, and the Fire time.
 
-1. Under **Name**, to select metrics alert details about your 3 - Informational alert, click **Connected Devices Less than 1**.
+1. Under **Name**, to select metrics alert details about your 3 - Informational alert, select **Connected Devices Less than 1**.
 
     A pane opens showing a **Summary** of the details for the alert. This pane includes a chart illustrating why the alert fired - a dash line shows the threshold value and the current values for the monitored metric. Below this are **Additional details**.
 
-1. At the top of the pane, below the title, click **History**.
+1. At the top of the pane, below the title, select **History**.
 
     In this view, you can see when the alert fired, the action group that was invoked, and any other changes such as when the alert was resolved.
 
@@ -66,11 +66,11 @@ To use the Azure portal to review alerts, complete the following steps.
 
 ## Task 3: See the Diagnostic Logs
 
-Earlier in this lab, you set up your diagnostic logs to be exported to blob storage. It is a good time to check and see what was written.
+Earlier in this lab, you set up your diagnostic logs to be exported to Blob Storage. It is a good time to check and see what was written.
 
 1. Navigate to your Dashboard.
 
-1. Click **Storage Account**.
+1. Select **Storage Account**.
 
 1. Select the Monitor Storage Account that you noted earlier. You may need to search for the storage account in the list.
 
@@ -82,7 +82,7 @@ Earlier in this lab, you set up your diagnostic logs to be exported to blob stor
 
     You should see that there is activity displayed.
 
-1. On the left-side menu, to view the data that has been logged, click **Storage Browser**.
+1. On the left-side menu, to view the data that has been logged, select **Storage Browser**.
 
     You can use the Storage browser to verify that your data is being added to the storage account.
 
@@ -90,20 +90,20 @@ Earlier in this lab, you set up your diagnostic logs to be exported to blob stor
 
     When Azure Monitor first sends data to a storage account, it creates a container called **insights-logs-connections**.
 
-1. Under **Blob containers**, click **insights-logs-connection**.
+1. Under **Blob containers**, select **insights-logs-connection**.
 
     To view the logged data, you need to navigate down a hierarchy of folders.
 
     > [!NOTE]
-    > If no data is displayed, click **Refresh**. You may need to wait a minute or two and then refresh again.
+    > If no data is displayed, select **Refresh**. You may need to wait a minute or two and then refresh again.
 
 1. In the right-hand pane, select **insights-logs-connections**, and then navigate down into the folder hierarchy.
 
     After you navigate down to your IoT hub folder, as you navigate down you see numeric values for the year, month, day, and hour. The final folder represents the minute. The minute folder contains a blob file that contain your monitor logging data.
 
-1. Click the json file name.
+1. Select the json file name.
 
-1. On the Overview page, click **Download**.
+1. On the Overview page, select **Download**.
 
 1. Open Windows **File Explorer** and navigate to your **Downloads** folder.
 
@@ -151,27 +151,27 @@ By this point, you should have received an email or SMS indicating the Monitor A
 
 1. On the Azure portal toolbar, in the search box, type **monitor**
 
-1. In the search result pane, under **Services**, click **Monitor**.
+1. In the search result pane, under **Services**, select **Monitor**.
 
     The Monitor overview page is displayed. This is the overview for all of the monitoring activities for the current subscription.
 
-1. On the left-side menu, near the top of the list, click **Alerts**.
+1. On the left-side menu, near the top of the list, select **Alerts**.
 
     This alerts view shows all alerts for all subscriptions. Let's filter this list to your IoT Hub.
 
-1. Click **Subscription**, then select only the subscription you are using for this project. Then click **Apply**.
+1. Select **Subscription**, then select only the subscription you are using for this project. Then select **Apply**.
 
-1. Click **Time range**, click **Past hour**, then click **Apply**.
+1. Select **Time range**, select **Past hour**, then select **Apply**.
 
-1. Click **Alert condition**, click **Select all**, then click **Apply**.
+1. Select **Alert condition**, select **Select all**, then select **Apply**.
 
-1. In the list of severities, click the number under **Informational**.
+1. In the list of severities, select the number under **Informational**.
 
-1. Under **Name**, click the latest **Connected Devices Less than 1** alert.
+1. Under **Name**, select the latest **Connected Devices Less than 1** alert.
 
     A pane opens showing a **Summary** of the details for the alert. As before, this includes a chart illustrating why the alert fired - a dash line shows the threshold value and the current values for the monitored metric. Below this are **Additional details**.
 
-1. At the top of the pane, below the title, click **History**.
+1. At the top of the pane, below the title, select **History**.
 
     In this view you can see when the alert fired, the action group that was invoked, and when the alert is resolved and so forth.
 

@@ -1,6 +1,6 @@
 Azure Resource logs are platform logs emitted by Azure resources that describe their internal operation. All resource logs share a common top-level schema with the flexibility for each service to emit unique properties for their own events.
 
-When you have an IoT Hub solution running in production, you will want to set up various metrics and enable diagnostic logs. Then, if a problem occurs, you have data to look at that helps you to diagnose the problem and fix it more quickly.
+When you have an IoT Hub solution running in production, you'll want to set up various metrics and enable diagnostic logs. Then, if a problem occurs, you have data to look at that helps you to diagnose the problem and fix it more quickly.
 
 In this exercise, you enable diagnostic logs and use them to check for errors. You also set up some metrics to watch, and alerts that fire when the metrics hit a certain boundary criteria.
 
@@ -12,11 +12,11 @@ In this task, you configure Monitor device connect/disconnect data that is store
 
 1. In the **Resources** tile, select your IoT Hub.
 
-1. In the portal menu on the left side, under **Monitoring**, click **Diagnostic settings**.
+1. In the portal menu on the left side, under **Monitoring**, select **Diagnostic settings**.
 
-1. On the **Diagnostics settings** blade, under **Name**, click **+ Add diagnostic setting**.
+1. On the **Diagnostics settings** blade, under **Name**, select **+ Add diagnostic setting**.
 
-1. In the **Diagnostic settings name** textbox, enter **diags-hub**
+1. In the **Diagnostic settings name** textbox, enter **diags-hub**.
 
 1. Take a moment to review the options listed under **Destination details**.
 
@@ -29,17 +29,17 @@ In this task, you configure Monitor device connect/disconnect data that is store
 
     In this exercise, you use the storage account option.
 
-1. Under **Destination details**, click **Archive to a storage account**.
+1. Under **Destination details**, select **Archive to a storage account**.
 
     More fields are made available once you select this destination option.
 
 1. For the **Subscription** field, select the <rgn>[sandbox resource group name]</rgn> resource group.
 
-1. For the **Storage account** field, select the storage account name that is provided. Make a note of this name. The name should consist of a long sequence of letters and numbers. You will need to select this name from a list in Exercise - Review Metrics, Alerts and Archive. After you've created the diagnostic setting, a storage container is created in the storage account as soon as an event occurs in one of the enabled log categories.
+1. For the **Storage account** field, select the storage account name that is provided. Make a note of this name. The name should consist of a long sequence of letters and numbers. You'll need to select this name from a list in Exercise - Review Metrics, Alerts and Archive. After you've created the diagnostic setting, a storage container is created in the storage account as soon as an event occurs in one of the enabled log categories.
 
-1. Under **Categories**, click **Connections** and **DeviceTelemetry**.
+1. Under **Categories**, select **Connections** and **DeviceTelemetry**.
 
-1. At the top of the **Diagnostics settings** blade, click **Save**.
+1. At the top of the **Diagnostics settings** blade, select **Save**.
 
 1. Close the **Diagnostics settings** blade.
 
@@ -55,17 +55,17 @@ In this task, you set up various metrics to watch for when messages are sent to 
 
     The previous task left you on the **Diagnostics settings** pane of the IoT hub blade.
 
-1. On the left-side menu, under **Monitoring**, click **Metrics**.
+1. On the left-side menu, under **Monitoring**, select **Metrics**.
 
     The **Metrics** pane is displayed showing a new, empty, chart.
 
-1. In the top-right corner of the screen, to change the time range and granularity for the chart, click **Last 24 hours (Automatic)**.
+1. In the top-right corner of the screen, to change the time range and granularity for the chart, select **Last 24 hours (Automatic)**.
 
-1. In the context menu that appears, under **Time range**, click **Last 30 minutes**.
+1. In the context menu that appears, under **Time range**, select **Last 30 minutes**.
 
 1. In the same context menu, under **Show time as**, ensure that **Local** is selected.
 
-1. To save your time settings, click **Apply**.
+1. To save your time settings, select **Apply**.
 
 1. Take a minute to examine the settings that are used to specify the chart Metrics.
 
@@ -79,13 +79,13 @@ In this task, you set up various metrics to watch for when messages are sent to 
 
     Your next step is add a metric that is used to monitor how many telemetry messages are sent to your IoT Hub.
 
-1. In the **Metric** dropdown, click **Telemetry messages sent**.
+1. In the **Metric** dropdown, select **Telemetry messages sent**.
 
     Notice the large number of metrics that are available for you to select from.
 
 1. Under **Aggregation**, ensure that **Sum** is selected.
 
-    Notice there are four aggregation operations available - *Avg*, *Min*, *Max* and *Sum*.
+    Notice there are four aggregation operations available: Avg, Min, Max, and Sum.
 
 1. Take a moment to review your chart.
 
@@ -93,20 +93,20 @@ In this task, you set up various metrics to watch for when messages are sent to 
 
     You completed the specification for the first metric. Next, you add another metric to monitor the number of connected devices.
 
-1. Under the chart title, on the toolbar, click **Add metric**.
+1. Under the chart title, on the toolbar, select **Add metric**.
 
     A new metric appears. Notice that the **Scope** and **Metric Namespace** values are prepopulated.
 
-1. In the **Metric** dropdown, click **Connected devices**.
+1. In the **Metric** dropdown, select **Connected devices**.
 
 1. Under **Aggregation**, ensure that **Avg** is selected.
 
     Your screen should now show the minimized metric for Telemetry messages sent, as well as the new metric for avg connected devices. Notice that the chart title is updated to reflect both metrics.
 
     > [!NOTE]
-    > To edit the chart title, click the **pencil** icon to the right of the title.
+    > To edit the chart title, select the **pencil icon** to the right of the title.
 
-1. Under the **Chart Title**, on the right side of the toolbar, click **Save to dashboard**, click **Pin to dashboard**, ensure that **My Dashboard** is selected, and then click **Pin**.
+1. Under the **Chart Title**, on the right side of the toolbar, select **Save to dashboard**, select **Pin to dashboard**, ensure that **My Dashboard** is selected, and then select **Pin**.
 
     > [!NOTE]
     > In order to retain the chart you have just created, it **must** be pinned to a dashboard.

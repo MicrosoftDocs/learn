@@ -1,8 +1,8 @@
 Alerts are used to proactively notify you when important conditions are found in your monitoring data. They allow you to identify and address issues before the users of your system notice them.
 
-In your asset tracking scenario, you use sensors to track the containers that are being shipped to customers. Each time a sensor is added in a shipping container, it is autoprovisioned through a Device Provisioning Service (DPS). In production, you wish to send an alert if the number of sensors in transit exceed a predetermined capacity.
+In your asset tracking scenario, you use sensors to track the containers that are being shipped to customers. Each time a sensor is added in a shipping container, it is autoprovisioned through a Device Provisioning Service. In production, you wish to send an alert if the number of sensors in transit exceed a predetermined capacity.
 
-However, for your upcoming proof-of-concept demonstration, to keep things simple, you want to create an Alert that triggers when the number of containers drops below one. To trigger the Alert, you use the number of Device Connected events from IoT Hub.
+However, for your upcoming proof-of-concept review, to keep things simple, you want to create an Alert that triggers when the number of containers drops below one. To trigger the Alert, you use the number of connected devices events from IoT Hub.
 
 In this exercise, you add an alert that triggers when one or more devices have connected.
 
@@ -10,13 +10,13 @@ In this exercise, you add an alert that triggers when one or more devices have c
 
 1. In the **Resources** tile, select your IoT hub.
 
-1. On the left-side menu, under **Monitoring**, click **Alerts**.
+1. On the left-side menu, under **Monitoring**, select **Alerts**.
 
     The empty **Alerts** pane is displayed. Notice that the **Subscription**, **Resource group**, **Resource** and **Time range** fields are prepopulated.
 
-1. In the **Time range** dropdown, click **Past hour**.
+1. In the **Time range** dropdown, select **Past hour**.
 
-1. Click **Create alert rule**.
+1. Select **Create alert rule**.
 
     The **Create an alert rule** blade should now be displayed.
 
@@ -24,20 +24,20 @@ In this exercise, you add an alert that triggers when one or more devices have c
 
     The blade includes tabs for: Scope, Condition, Actions, Details, Tags, and Review + create. Scope includes two fields - Resource and Hierarchy. Notice that these fields are prepopulated with properties from your IoT Hub. You can edit the preselected resource if needed.
 
-1. Select **Condition**, and then click **See all signals**.
+1. Select **Condition**, and then select **See all signals**.
 
     The **Select a signal** pane should be displayed. Notice that there is a paginated table of available signals displayed. The fields above the table filter the table to help in finding the signal types you want.
 
 1. In the **Signal type** dropdown, ensure that **All** is selected.
 
-    If you open the Signal type dropdown, you would see that there are four available options: *All*, *Log search*, *Resource health*, *Metrics*, and *Activity Log*.
+    If you open the Signal type dropdown, you would see that there are four available options: **All**, **Log search**, **Resource health**, **Metrics**, and **Activity Log**.
 
     > [!NOTE]
     > The signal types available for monitoring vary based on the selected target(s). The signal types can be metrics, log search queries or activity logs.
 
 1. In the **Signal source** dropdown, ensure that **All** is selected.
 
-    If you open the Signal source dropdown, you would see that there are the following options: *All*, *Log analytics*, *Log analytics (example query)*, *Resource health*, *Platform metrics*, and *Administrative*.
+    If you open the Signal source dropdown, you would see that there are the following options: **All**, **Log analytics**, **Log analytics (example query)**, **Resource health**, **Platform metrics**, and **Administrative**.
 
     > [!NOTE]
     > The platform service provides metrics on service utilization, where as the activity log tracks administrative activities.
@@ -46,7 +46,7 @@ In this exercise, you add an alert that triggers when one or more devices have c
 
 1. Notice that the list of signals is immediately filtered based on your entry.
 
-1. Under **Signal name**, click **Connected devices**, then **Apply**.
+1. Under **Signal name**, select **Connected devices**, then **Apply**.
 
     The pane updates to display a chart **Preview** that is similar to what you created for **Metrics**. The chart displays the values associated with the selected signal. In this case, the chart displays the average number of connected devices. Since we only have one connected device, the program that is sending telemetry, the chart only shows one device.
 
@@ -54,14 +54,14 @@ In this exercise, you add an alert that triggers when one or more devices have c
 
 1. Scroll down on the page and take a moment to review the options under **Alert logic**
 
-    Notice that **Threshold** has two possible selections: *Static* and *Dynamic*. Also notice that **Static** is selected and **Dynamic** is unavailable for this signal type.
+    Notice that **Threshold** has two possible selections: Static and Dynamic. Also notice that **Static** is selected and **Dynamic** is unavailable for this signal type.
 
     > [!NOTE]
     > As the names suggest, *Static Thresholds* specify a constant expression for the threshold, whereas *Dynamic Thresholds* detection leverages advanced machine learning (ML) to learn metrics' historical behavior, identify patterns and anomalies that indicate possible service issues. You can learn more about *Dynamic Thresholds* at [Dynamic thresholds in metric alerts](/azure/azure-monitor/platform/alerts-dynamic-thresholds).
 
     You are going to create a static threshold that raises an alert whenever the average *connected devices* signal is less than 1.
 
-1. In the **Operator** dropdown, click **Less than**.
+1. In the **Operator** dropdown, select **Less than**.
 
     You may want to review all options for Operator and other Alert Logic fields.
 
@@ -85,18 +85,18 @@ In this exercise, you add an alert that triggers when one or more devices have c
 
     Next, you configure the action taken when the alert condition is met.
 
-1. On the **Create an alert rule** blade, click **Actions**.
+1. On the **Create an alert rule** blade, select **Actions**.
 
     Notice that no action group is selected. There are options to **Select action groups** and **Create action group**.
 
     > [!NOTE]
     > An action group is a collection of notification preferences defined by the owner of an Azure subscription. An action group name must be unique within the Resource Group that it is associated with. Azure Monitor and Service Health alerts use action groups to notify users that an alert has been triggered. Various alerts can use the same action group or different action groups depending on the user's requirements. You can configure up to 2,000 action groups in a subscription. You can learn more about creating and managing Action Groups at [Action groups](/azure/azure-monitor/platform/action-groups).
 
-1. Under **Actions**, click **Select action groups**.
+1. Under **Actions**, select **Select action groups**.
 
     The **Add action groups** pane is displayed. If there are existing Action Groups available within the selected subscription, they are listed here. Notice that you can change the subscription and filter the list. In this exercise, you create a new action group.
 
-1. Close the **Select action groups** pane, and then click **Create action group**.
+1. Close the **Select action groups** pane, and then select **Create action group**.
 
     The **Create an action group** blade is displayed.
 
@@ -124,49 +124,49 @@ In this exercise, you add an alert that triggers when one or more devices have c
     > [!NOTE]
     > The display name is used in place of a full action group name when notifications are sent using this group and is limited to a max of 12 characters.
 
-1. Click **Next: Notifications**, to view the action group notification fields.
+1. Select **Next: Notifications**, to view the action group notification fields.
 
 1. Open the **Notification Type** dropdown, and then review the available options.
 
-1. In the **Notification Type** dropdown, click **Email/SMS message/Push/Voice**.
+1. In the **Notification Type** dropdown, select **Email/SMS message/Push/Voice**.
 
     > [!NOTE]
     > After selecting the notification type, a new pane opens to enable multiple notifications to be added.
 
 1. Under **Name**, enter **GPNotifications**
 
-1. Click the pencil **Edit details** icon.
+1. Select the pencil **Edit details** icon.
 
 1. On the **Email/SMS message/Push/Voice** page, select **Email**, and then enter an email address that you have easy access to.
 
-1. Click **SMS**, and then enter the **Country code** and the **Phone number** for the phone that you wish to use to receive the SMS alert.
+1. Select **SMS**, and then enter the **Country code** and the **Phone number** for the phone that you wish to use to receive the SMS alert.
 
 1. Skip **Azure mobile app notification** and **Voice**.
 
-1. Under **Enable the common alert schema**, click **Yes**.
+1. Under **Enable the common alert schema**, select **Yes**.
 
     > [!NOTE]
     > There are many benefits to using the Common Alert Schema. The common alert schema is a single extensible and unified alert payload that can be used across all the alert services in Azure Monitor. With the common alert schema, you can receive alert notifications with a consistent schema. You can learn more about the Common alert schema at [Common alert schema](/azure/azure-monitor/platform/alerts-common-schema).
 
-1. At the bottom of the **Email/SMS message/Push/Voice** page, to save the action configuration, click **OK**.
+1. At the bottom of the **Email/SMS message/Push/Voice** page, to save the action configuration, select **OK**.
 
-    The notification row should now show that Email and SMS message are selected. The  **Edit details** icon can be clicked if further changes are required.
+    The notification row should now show that Email and SMS message are selected. The  **Edit details** icon can be selected if further changes are required.
 
-1. Click **Next: Actions**, to view the action group action fields.
+1. Select **Next: Actions**, to view the action group action fields.
 
 1. Open the **Action type** dropdown, and then review the available options.
 
     At this point, we could add multiple actions if we needed to launch some business integration via *WebHooks* or an *Azure Function*. However, for this exercise a simple notification is enough.
 
-1. At the bottom of the **Add action group** blade, to validate this action group, click **Review + create**.
+1. At the bottom of the **Add action group** blade, to validate this action group, select **Review + create**.
 
-1. Once the validation is complete, click **Create**.
+1. Once the validation is complete, select **Create**.
 
     A few things happen at the same time. First, **Add action group** blade closes, leaving you on the **Create an alert rule** blade, with the new Action Group added to the list of **Actions**.
 
-    Then, in quick succession, you should receive both an SMS notification and an email, both of which inform you that you have been added to the **GPEmailAG** action group. In the SMS message, note that you can reply to the message to stop receiving future notifications. You can learn more about the options at [Action groups](/azure/azure-monitor/platform/alerts-sms-behavior). In the email, you have links that you can click to view the details on action groups and, towards the bottom of the email (in a smaller font) you can see the option to unsubscribe.
+    Then, in quick succession, you should receive both an SMS notification and an email, both of which inform you that you have been added to the **GPEmailAG** action group. In the SMS message, note that you can reply to the message to stop receiving future notifications. You can learn more about the options at [Action groups](/azure/azure-monitor/platform/alerts-sms-behavior). In the email, you have links that you can select to view the details on action groups and, towards the bottom of the email (in a smaller font) you can see the option to unsubscribe.
 
-1. Click **Next: Details** to advance to the Create an alert rule blade.
+1. Select **Next: Details** to advance to the Create an alert rule blade.
 
 1. In the **Alert rule name** field, enter **Connected Devices Less than 1**
 
@@ -185,7 +185,7 @@ In this exercise, you add an alert that triggers when one or more devices have c
     > [!NOTE]
     > The severity level option range between **0 - Critical** and **4 - Verbose**.
 
-1. Click **Advanced options**.
+1. Select **Advanced options**.
 
 1. For the **Enable upon creation** field, ensure that the checkbox is selected (checked).
 
@@ -197,11 +197,11 @@ In this exercise, you add an alert that triggers when one or more devices have c
     > [!NOTE]
     > This ensures an alert is resolved should the condition no longer be met, and a new alert is not fired until the alert is resolved.
 
-1. At the bottom of the blade, click **Review + create**, then click **Create**.
+1. At the bottom of the blade, select **Review + create**, then select **Create**.
 
     The **Alerts** blade of your IoT Hub should now be displayed. A message in the middle at the bottom of the display should show that there were no alerts found. You can go back and edit or create new **Alert Rules** or **Action Groups** using the buttons near the top of the display.
 
     > [!NOTE]
-    > If the pane has not automatically updated, click **Refresh**.
+    > If the pane has not automatically updated, select **Refresh**.
 
 ## Verify your work

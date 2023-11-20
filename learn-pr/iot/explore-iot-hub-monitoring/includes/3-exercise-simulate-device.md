@@ -149,7 +149,7 @@ In this exercise, you:
     > [!Note]
     > This is the only change that you are required to make to this code.
 
-1. On the **File** menu, click **Save**.
+1. On the **File** menu, select **Save**.
 
 1. Optionally, take a moment to review the code.
 
