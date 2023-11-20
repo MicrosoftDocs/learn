@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/27/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Run a training script as a command job in Azure Machine Learning
 summary: Learn how to convert your code to a script and run it as a command job in Azure Machine Learning.
 abstract: |

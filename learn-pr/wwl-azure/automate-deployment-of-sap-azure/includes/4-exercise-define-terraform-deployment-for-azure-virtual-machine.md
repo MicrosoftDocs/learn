@@ -15,7 +15,7 @@ Automated tools that deploy or use Azure services such as Terraform should alway
 
 Terraform HCL (HashiCorp Configuration Language) is designed to be readable.
 
-:::image type="content" source="../media/example-azure-resource-manager-template-syntax-hcl-syntax.png" alt-text="Screenshot of Azure Resource Manager (A R M) Template Syntax vs HashiCorp Configuration Language (H C L) Syntax.":::
+:::image type="content" source="../media/example-azure-resource-manager-template-syntax-hcl-syntax.png" alt-text="Screenshot of Azure Resource Manager (ARM) Template Syntax vs HashiCorp Configuration Language (H C L) Syntax.":::
 
 ### Sample Terraform configuration file code to create an Azure Resource Group
 
@@ -82,6 +82,8 @@ Next, you go through steps to deploy a resource group using Terraform in the Azu
     :::image type="content" source="../media/azure-cloud-shell-editor.png" alt-text="Screenshot of the Azure Cloud Shell editor icon that opens the Azure Cloud Shell.":::
 
 1. In the Azure Cloud Shell editor, expand the **try_terraform** directory and select the file **main.tf**.
+
+    :::image type="content" source="../media/edit-terraform-azure-cloud-shell.png" alt-text="Screenshot of the Azure Cloud Shell editor with main.tf file open.":::
 
 1. Copy and paste the first section of the [previous Terraform code](#sample-terraform-configuration-file-code-to-create-an-azure-resource-group) (that starts with the comment **`# 1-Define Terraform Provider`**) into main.tf in the Cloud Shell editor.
 

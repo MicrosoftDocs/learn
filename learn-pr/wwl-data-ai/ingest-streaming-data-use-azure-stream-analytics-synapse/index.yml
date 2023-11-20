@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/24/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: learning-azure
   ms.service: stream-analytics
 title: Ingest streaming data using Azure Stream Analytics and Azure Synapse Analytics

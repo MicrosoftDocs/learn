@@ -6,8 +6,7 @@ metadata:
   ms.date: 02/02/2021
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Write the bank core package
 durationInMinutes: 9

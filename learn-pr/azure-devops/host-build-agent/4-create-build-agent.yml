@@ -8,8 +8,7 @@ metadata:
   ms.date: 07/11/2023
   author: steved0x
   ms.author: sdanie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 interactive: bash
 # azureSandbox: true
 durationInMinutes: 20
