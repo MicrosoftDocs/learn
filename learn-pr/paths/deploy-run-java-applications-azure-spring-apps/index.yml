@@ -6,8 +6,7 @@ metadata:
   ms.date: 02/02/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Deploying and running Java applications in Azure Spring Apps
 prerequisites: |
   - At least one year of experience developing scalable solutions through all phases of software development.

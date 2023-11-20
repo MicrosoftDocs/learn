@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/02/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: virtual-desktop
 title: Implement and manage networking for Azure Virtual Desktop
 summary: See how to monitor and repair health of their Azure Virtual Desktop including virtual machines, virtual networks, application gateways, and load balancers.

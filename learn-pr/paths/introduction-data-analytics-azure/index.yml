@@ -6,8 +6,7 @@ metadata:
   ms.date: 07/19/2022
   author: wwlpublish
   ms.author: shlindsay
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Introduction to data analytics on Azure
 prerequisites: |
   - You should be familiar with basic data concepts and terminology.
