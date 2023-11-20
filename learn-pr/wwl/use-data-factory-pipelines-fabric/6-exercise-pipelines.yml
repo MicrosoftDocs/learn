@@ -7,10 +7,9 @@ metadata:
   ms.date: 05/10/2023
   author: wwlpublish
   ms.author: shlindsay
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - build-2023
-  ms.prod: learning-azure
 durationInMinutes: 60
 content: |
   [!include[](includes/6-exercise-pipelines.md)]

@@ -8,10 +8,9 @@ metadata:
   author: MScalopez
   ms.author: calopez
   ms.reviewer: vanto
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - build-2023
-  ms.prod: learning-sqlserver
 durationInMinutes: 7
 content: |
   [!include[](includes/2-resumable-constraints-and-wait-low-priority-index.md)]

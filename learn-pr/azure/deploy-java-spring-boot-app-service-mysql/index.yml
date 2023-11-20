@@ -3,7 +3,7 @@ uid: learn.azure.deploy-java-spring-boot-app-service-mysql
 metadata:
   title: Deploy a Spring Boot app to Azure App Service
   description: Create a Spring Boot application, connect it to a MySQL database, and then deploy to Azure App Service.
-  ms.date: 11/16/2020
+  ms.date: 11/08/2023
   author: roryp
   ms.author: ropreddy
   ms.topic: interactive-tutorial

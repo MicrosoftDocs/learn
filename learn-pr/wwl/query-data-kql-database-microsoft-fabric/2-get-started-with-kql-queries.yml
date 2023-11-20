@@ -4,12 +4,10 @@ title: Get started with KQL queries
 metadata:
   title: Get started with KQL queries
   description: "Get started with KQL queries"
-  ms.date: 11/07/2023
+  ms.date: 11/17/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: module
-  ms.prod: azure
-  ms.service: fabric
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/2-get-started-with-kql-queries.md)]

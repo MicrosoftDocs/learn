@@ -7,8 +7,7 @@ metadata:
   ms.date: 03/10/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Predict rocket launch delays with machine learning
 summary: |
   This learning path introduces you to the world of machine learning. You'll take a real-life problem that NASA faces and apply machine learning to solve it. The goal is to get students excited and curious to discover how machine learning could help solve other problems in space discovery and different aspects of life. 

@@ -1,4 +1,4 @@
-In this lab, you create a Microsoft Fabric Eventstream and use the Fabric Main Editor to create and link object to read and write objects to a lakehouse.
+In this lab scenario, you’re an analyst that’s tasked with querying a sample dataset of raw metrics NYC taxicab rides that you pull summary statistics (profiling) the data from the Fabric environment. You use KQL to query this data and gather information in order to gain informational insights about the data.
 
 This lab takes approximately **30** minutes to complete.
 
