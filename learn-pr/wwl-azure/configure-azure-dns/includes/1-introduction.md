@@ -12,7 +12,7 @@ Configuring Azure DNS is part of [Exam AZ-104: Microsoft Azure Administrator](/l
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you learn how to:
 
  -  Identify features and usage cases for domains, custom domains, and private zones.
  -  Verify custom domain names using DNS records.

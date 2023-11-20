@@ -1,4 +1,4 @@
-In this module, you have learned about Azure DNS. You have learned how to identify features and usage cases for domains, custom domains, and private zones. You have also learned how to verify custom domain names using DNS records and implement DNS zones, delegation, and record sets. 
+In this module, you learned about Azure DNS. You learned how to identify features and usage cases for domains, custom domains, and private zones. You also learned how to verify custom domain names using DNS records and implement DNS zones, delegation, and record sets. 
 
 The main takeaways from this module are:
 
@@ -12,11 +12,11 @@ The main takeaways from this module are:
 
 ## Learn more with documentation
 
- -  [Azure DNS documentation](/azure/dns/)
+ -  [Azure DNS documentation](/azure/dns/). This is your starting point for all things Azure DNS. 
 
 ## Learn more with self-paced training
 
-- [Introduction to Azure DNS](/training/modules/intro-to-azure-dns/). Learn whatt Azure DNS does, how it works, and when you should choose to use Azure DNS.
+- [Introduction to Azure DNS](/training/modules/intro-to-azure-dns/). Learn what Azure DNS does, how it works, and when you should choose to use Azure DNS.
 
 - [Host your domain on Azure DNS (Sandbox)](/training/modules/host-domain-azure-dns/). Learn to create a DNS zone for your domain name. Create DNS records to map the URL to an IP address. Test to ensure the domain name resolves to your web server.
 
