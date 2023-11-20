@@ -6,10 +6,9 @@ metadata:
   ms.date: 04/10/2020
   author: johnpapa
   ms.author: jopapa
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-js
-  ms.prod: learning-azure
 title: Summary
 durationInMinutes: 2
 content: |
