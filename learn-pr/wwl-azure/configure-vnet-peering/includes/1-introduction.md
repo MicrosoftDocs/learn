@@ -20,6 +20,6 @@ The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Ad
 
 ## Prerequisites
 
-- Basic understandin of cloud networking including virtual networks and virtual machines.
+- Basic understanding of cloud networking including virtual networks and virtual machines.
 
-- Familiarity with the command line testing tools like ping. 
+- Familiarity with the command line connectivity testing tools.
