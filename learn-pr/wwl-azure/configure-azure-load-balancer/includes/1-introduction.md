@@ -1,4 +1,3 @@
-
 Many applications need to be resilient to failure and scale easily when demand increases. Administrators can address these requirements by using Azure Load Balancer.
 
 In this module, suppose your healthcare organization is launching a new portal application for patients to schedule appointments. The application has a patient portal, web application frontend, and business tier database. The database is used by the frontend to retrieve and save patient information.
@@ -18,14 +17,9 @@ In this module, you learn how to:
 
 ## Skills measured
 
-The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). The module concepts are covered in:
-
-Configure and manage virtual networking (25–30%)
-
-- Configure load balancing.
-   - Configure an internal or public load balancer.
-   - Troubleshoot load balancing.
+The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). 
 
 ## Prerequisites
 
-None.
+- Basic knowledge of virtual networks and routing.
+- Familiarity with the Azure portal so you can configure the load balancer.

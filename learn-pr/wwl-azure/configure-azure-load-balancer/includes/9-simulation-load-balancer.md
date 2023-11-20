@@ -1,4 +1,3 @@
-
 ## Lab scenario
 
 Your organization is migrating hub and spoke network topologies to Azure. As the Azure Administrator you need to:
