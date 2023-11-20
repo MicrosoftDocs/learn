@@ -16,7 +16,7 @@ Let's begin by creating a new VS Code console application project.
 
 1. Open your new project in VS Code by typing: 'code .' and press enter.
 
-This will open VS Code with the project you just created. Now you can launch a terminal window inside VS Code and run your starter 'Hello World' application to make sure you created your console application correctly.
+This will open VS Code with the project you created. Now you can launch a terminal window inside VS Code and run your starter 'Hello World' application to make sure you created your console application correctly.
 
 1. From the View menu, select Terminal.
 
@@ -25,9 +25,9 @@ This will open VS Code with the project you just created. Now you can launch a t
     >[!NOTE]
     >You can close the default Welcome file that is created for you by VS Code.
 
-Now that you have created the basic plumbing for a console application, meaning that your application runs in the little window called a console, you're ready to add files to it. Let's begin, however, by modifying the Program.cs file that was created for you.
+Now that you have created the basic plumbing for a console application, meaning that your application runs in the little window called a console, you're ready to add files to it. Let's begin, however, by modifying the Program.cs file that VS Code created for you.
 
-You'll create a two dimensional (16x16) byte array that represents our grid for the ants. You then display it by creating a nested looping structure that prints characters to the screen showing our cell locations, as well as building our vertical axis (or y-axis). The outer loop is creating our horizontal cells (x-axis), while our inner loop is stacking each row as it builds out the vertical axis.
+You'll create a two dimensional (16x16) byte array that represents our grid for the ants. You then display it by creating a nested looping structure that prints characters to the screen showing our cell locations. The outer loop is creating our horizontal cells (x-axis), while our inner loop is stacking each row as it builds out the vertical axis.
 
 ## Create a two dimensional integer array
 
