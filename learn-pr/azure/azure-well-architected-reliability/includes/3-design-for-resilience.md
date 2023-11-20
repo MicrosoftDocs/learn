@@ -1,25 +1,55 @@
-This module presented key principles of the Reliability pillar of the Azure Well-Architected Framework. You learned how to make your applications more reliable by planning and architecting high availability (HA), disaster recovery (DR), and backup and restore.
+| :::image type="icon" source="media/goal.svg"::: The workload must continue to operate with full or reduced functionality. |
+| :----------------------------------------------------------------------------------------------------------------------------------------- |
 
-In this module, you learned to carry out the following procedures:
+You should expect that component malfunctions, platform outages, performance degradations, and other faults will occur. Build resiliency in the system so that it's fault-tolerant and can degrade gracefully.
 
-- Determine the availability service level agreement (SLA) for your applications.
-- Define Recovery Point Objective (RPO) and Recovery Time Objective (RTO) as part of DR planning.
-- Test your recovery plans to ensure they provide sufficient protection for your applications.
-- Incorporate backup and restore into your recovery strategy to help protect against data loss.
+Contoso Air is a commercial airline that has an in-house development department. The main LOB application is a booking solution that allows customers to book flights directly with Contoso Air. The app is built in Azure and uses Azure App Service, Cosmos DB, Azure Functions, Azure Logic Apps and Azure Service Bus.
 
-You learned about the following technologies and services:
+## Determine failure risks.
 
-- Azure availability sets and availability zones to provide HA for virtual machine (VM) workloads.
-- Load balancing services such as Azure Traffic Manager, Azure Application Gateway, and Azure Load Balancer to distribute load across available systems.
-- Azure platform as a service (PaaS) services that have HA built in.
-- Azure Site Recovery to provide recovery capabilities for your applications.
-- Azure Backup for VMs, and the backup and restore capabilities of several Azure PaaS services.
+**Identify potential failure points in the system, especially for the critical components, and determine the effect on user and system flows.**
 
-## Learn more
+Analyze the failure case, blast radius and intensity of fault for each potential failure point. Failure cases and their intensity can range from relatively low-impact scenarios like the temporary loss of a backend process to full-scale outages resulting from disasters. Performing this analysis will help you determine the design of error handling capabilities at the component level.
 
-To learn more about the Azure Well-Architected Framework and Azure services that improve the reliability of your architectures, see the following resources:
+*Challenge*
 
-- [Azure Well-Architected Framework](/azure/well-architected)
-- [About Site Recovery](/azure/site-recovery/site-recovery-overview)
-- [Regions and Availability Zones in Azure](/azure/availability-zones/az-overview)
-- [What is the Azure Backup service?](/azure/backup/backup-overview)
+- The LOB application provides many key functions ranging from marketing through commerce. The ticket purchase user flow has been identified as the most critical flow and the workload team has determined that additional reliability measures should be implemented to ensure that the flow is optimized for resilience.
+- The team has time budgeted for improvements like decoupling components and redesigning flows, but wants to ensure that they are using that time to focus on the highest value improvements.
+
+*Applying the approach and outcomes*
+
+- The team has identified the external payment gateway as a potential failure point. The gateway is highly available but there is a potential for users experiencing occasional transient faults resulting from network issues or bursts of extremely high requests. The gateway may reject some requests when it is overloaded by multiple simultaneous requests being sent.
+- The team determines that users must resubmit requests when their initial requests are rejected by the gateway, causing a negative user experience.
+
+## Implement self-preservation mechanisms
+
+**Build self-preservation capabilities by using design patterns correctly and modularizing the design to isolate faults.**
+
+By building self-preservation capabilities into the system, you'll be able to prevent a problem from affecting downstream components. The system will be able to mitigate transient and permanent failures, performance bottlenecks, and other problems that might affect reliability. You'll also be able to minimize the blast radius.
+
+*Challenge*
+
+- The team wants to minimize the risk of transient failures causing users' requests to be rejected by the payment gateway.  Because of the transient nature of some of the error conditions, there is a high probability the same request will succeed if resubmitted.
+
+*Applying the approach and outcomes*
+
+- The team team develops custom logic in the flow to retry the transaction after a short delay when a failure that can be retried is detected.
+- The solution design will be modified to incorporate the Retry Pattern, slightly increasing the wait time between retries until the request is successfully processed or the maximum number of failures is reached.
+- The team also decides to decouple the user interaction and backend payment processing functionality of this flow using an event-driven approach with Azure Service Bus. When unrecoverable failures occur while processing the message (after the maximum number of retries), the backend processor abandons processing that request, leaving the message in the queue so it can be reprocessed at a later time.
+
+## Build comprehensive redundancy and resiliency
+
+**Build redundancy in layers and resiliency on various application tiers.**
+
+Aim for redundancy in physical utilities and immediate data replication. Also aim for redundancy in the functional layer that covers services, operations, and personnel. Redundancy helps minimize single points of failure. For example, if there’s an outage affecting one or more components, an availability zone, or an entire regional, a redundant (active-active or active-passive) deployment allows you to meet uptime targets.
+
+Adding intermediaries prevents direct dependency between components and improves buffering. Both of these benefits harden the resiliency of the system.
+
+*Challenge*
+
+- Implementing retries and decoupling the payment gateway calls from the UI using Service Bus has dramatically increased the reliability of this flow,but the business stakeholders still worry about data loss that may happen due to a catastrophic failure in the primary region.  
+
+*Applying the approach and outcomes*
+
+- The team decides to take upgrade to Service Bus premium tier. By doing so, they can take advantage of that tiers Availability Zones support functionality. With this functionality, multiple copies of the data are stored across three physically separated facilities (availability zones), and the service has enough capacity reserves to instantly cope with the complete, catastrophic loss of a datacenter.
+- Additionally, the team configures Azure Service Bus Geo-Disaster recovery to continuously replicate data to a secondary region that will be used in the unlikely case of a complete failure of the primary region.
