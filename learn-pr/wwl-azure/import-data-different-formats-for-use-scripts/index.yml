@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/11/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: powershell
   ms.technology: powershell-cmdlets
 title: Import data in different formats for use in scripts by using Windows PowerShell cmdlets

@@ -7,8 +7,7 @@ metadata:
   ms.date: 12/26/2022
   author: tchristiani
   ms.author: terrychr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/summary.md)]

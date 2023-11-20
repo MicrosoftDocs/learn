@@ -6,8 +6,7 @@ metadata:
   title: Manage a Helm release
   author: zr-msft
   ms.author: zarhoads
-  ms.prod: learning-azure
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.date: 03/10/2023
 
 durationInMinutes: 12

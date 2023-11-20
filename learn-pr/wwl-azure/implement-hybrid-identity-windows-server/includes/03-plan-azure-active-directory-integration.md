@@ -27,7 +27,7 @@ You can use Microsoft Entra Connect (Microsoft Entra Connect) to perform synchro
 - Exchange Hybrid deployment
 - Password change writeback
 - AD FS and AD FS proxy servers or Web Application Proxy 
-- Azure AD PowerShell module
+- [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) module
 
 > [!NOTE]
 > Most organizations deploy a dedicated synchronization server to host Microsoft Entra Connect.
