@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/13/2021
   author: mosabami
   ms.author: aayodeji
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-kubernetes-service
 title: Azure Kubernetes Services Governance with Azure Policy
 summary: >
