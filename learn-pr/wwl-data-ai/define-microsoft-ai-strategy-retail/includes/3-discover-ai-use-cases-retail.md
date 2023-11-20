@@ -2,7 +2,7 @@ Retail business is complex. It involves many different professional profiles, ta
 
 ## Productivity
 
-Boosting productivity is one of the major priorities of today’s organizations. Products such as Microsoft 365 Copilot and Microsoft Power BI include features to make you more productive:
+Boosting productivity is one of the major priorities of today’s organizations. Products such as Microsoft 365 Copilot and Microsoft Power BI include features to make you more productive.
 
 * **Analyze sales data:** Transforming data into actionable insights is often time-consuming. Tools like Microsoft Power BI help you save time by identifying trends and patterns.
 * **Assist in inventory management and sales forecasting:** Managers spend much time anticipating sales volumes and managing inventory accordingly. AI-powered productivity solutions help managers with these tasks.
