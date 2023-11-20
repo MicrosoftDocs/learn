@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/04/2022
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: bot-composer
 title: Create a Bot with the Bot Framework Composer
 summary: User the Bot Framework Composer to quickly and easily build sophisticated conversational bots without writing code.
