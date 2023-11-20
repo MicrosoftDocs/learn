@@ -2,7 +2,7 @@
 uid: learn.github.github-actions-packages
 metadata:
   title: Leverage GitHub Actions to publish to GitHub Packages
-  description: Publish automatically and secure your code libraries or Docker images with GitHub Packages.
+  description: Publish your code libraries or Docker images automatically and securely with GitHub Packages.
   ms.date: 11/12/2023
   author: a-a-ron
   ms.author: aastewar

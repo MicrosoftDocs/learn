@@ -9,13 +9,13 @@ GitHub Packages allow you to share your project dependencies within your organiz
 
 When you work on a project that has package dependencies, it’s important for you to trust them, understand their code, and connect with the community who built them. Within organizations, you also need to be able to quickly find what’s been approved for your use.
 
-GitHub Packages make it easy to use the same familiar GitHub interface to find public packages anywhere on GitHub, or private packages within your organization or repositories.
+GitHub Packages use the same familiar GitHub interface to find public packages anywhere on GitHub, or private packages within your organization or repositories.
 
 ## A standard package manager
 
 GitHub Packages is compatible with common package-management clients, so you can publish packages with your choice of tools. If your repository is more complex, you may need to publish multiple packages of different types. You can also use webhooks or GitHub Actions to fully customize your publishing and post-publishing workflows.
 
-Are you publishing an open-source package? Most open-source projects store their code on GitHub, so you can publish prerelease versions of your packages for testing within your community, then easily promote specific versions to the public registry of your choice.
+Are you publishing an open-source package? Many open-source projects store their code on GitHub, so you can publish prerelease versions of your packages for testing within your community, then easily promote specific versions to the public registry of your choice.
 
 :::image type="content" source="../media/2-github-packages-npm-package.png" alt-text="GitHub n p m package page, with description, and instructions about how to install it." border="false":::
 
@@ -23,7 +23,7 @@ At the time of writing, GitHub Packages is compatible with the following package
 
 - npm, a NodeJS package manager
 - NuGet, the .NET package manager
-- RubyGems
+- RubyGems, a Ruby package manager
 - Maven and Gradle, two package managers for Java
 
 ## GitHub Packages is also a container registry
@@ -54,7 +54,7 @@ With GitHub Packages, you can use a single set of credentials across your source
 [GitHub Actions](https://github.com/features/actions) is another GitHub feature that allows you to automate your software workflows. You can build, test, and deploy your code right from GitHub.
 
 > [!TIP]
-> If you want to learn more about GitHub Actions, checkout *[Build continuous integration (CI) workflows by using GitHub Actions](/training/modules/github-actions-ci/)* Learn module.
+> If you want to learn more about GitHub Actions, check out the *[Build continuous integration (CI) workflows by using GitHub Actions](/training/modules/github-actions-ci/)* Learn module.
 
 By combining GitHub Actions and GitHub Packages, you can build a workflow that will build and test your code, and then publish it to GitHub Packages by simply pushing code to your repository.
 
