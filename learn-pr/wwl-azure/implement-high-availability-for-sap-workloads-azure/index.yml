@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/17/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: sap-on-azure
 title: Implement high availability for SAP workloads in Azure
 summary: This module explores high availability and disaster recovery support of Azure for SAP workloads, such as SAP application servers, SAP ASCS-SCS instances, DBMS instances, and SAP HANA.

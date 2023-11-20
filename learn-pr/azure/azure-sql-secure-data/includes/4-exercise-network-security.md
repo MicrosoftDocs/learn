@@ -29,7 +29,7 @@ In this exercise, you'll see how to view and edit firewall rules. Setting up fir
 
     :::image type="content" source="../media/4-db-refresh.png" alt-text="Screenshot of how to refresh the database connection.":::  
 
-1. Optionally, you can see how SMSS is connecting to your Azure SQL Database instance by running this code from **New Query** in SSMS:  
+1. Optionally, you can see how SSMS is connecting to your Azure SQL Database instance by running this code from **New Query** in SSMS:  
 
     ```sql
     SELECT client_net_address FROM sys.dm_exec_connections WHERE session_id=@@SPID;

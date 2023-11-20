@@ -7,10 +7,9 @@ metadata:
   ms.date: 05/01/2023
   author: chasecrum
   ms.author: chasecrum
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-terraform
-  ms.prod: learning-azure
 durationInMinutes: 20
 content: |
   [!include[](includes/4-provision-linux-virtual-machine-using-terraform.md)]

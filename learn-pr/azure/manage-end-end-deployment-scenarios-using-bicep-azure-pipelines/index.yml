@@ -7,7 +7,7 @@ metadata:
   ms.date: 12/12/2022
   author: davidsmatlak
   ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-devops-pipelines
 title: Manage end-to-end deployment scenarios by using Bicep and Azure Pipelines
 summary: |

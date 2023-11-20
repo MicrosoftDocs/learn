@@ -6,8 +6,7 @@ metadata:
   ms.date: 09/07/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Manage and review models in Azure Machine Learning
 prerequisites: |
   None

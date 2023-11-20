@@ -7,9 +7,9 @@ metadata:
   ms.date: 11/07/2023
   author: wwlpublish
   ms.author: kadelane
-  ms.topic: interactive-tutorial
-  ms.service: sql
-  ms.subservice: t-sql
+  ms.topic: unit
+azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/3-scalar-multi-values-subqueries.md)]

@@ -6,8 +6,7 @@ metadata:
   ms.date: 11/18/2022
   author: johnpapa
   ms.author: jopapa
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   zone_pivot_groups: dev-javascript-framework
 azureSandbox: true
 title: Exercise - Create an Azure Static Web App
