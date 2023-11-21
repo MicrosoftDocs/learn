@@ -16,12 +16,12 @@ Related to this goal, EDP commits to produce **100 percent renewable energy by 2
 
 The organization developed several AI and IoT solutions based on Azure Machine Learning and Azure AI Services, focusing on generative AI in **Azure OpenAI Service**.
 
-* **Installation of electric chargers:** EDP is using geographical data, customer demand, road information, and other insights to detect the best places to install electric chargers on public roads. This project aims to encourage electric vehicles and green mobility.
-* **Proactive power lines maintenance:** Vegetation can easily obstruct aerial power lines. The Analytics4Vegetation project ensures the maintenance of such power lines in Portugal. It detects vegetation and identifies which power lines potentially need maintenance. Furthermore, it helps maintenance management by predicting optimal time until new maintenance action in the area.
-* **Power transformers:** There are more than 100,000 power transformers in Portugal. EDP is using Azure Machine Learning to predict their power curve, ensuring optimal efficiency.
-* **Data and AI strategy and governance plan:** EDP is implementing a full strategy and governance plan for their data and AI to back their AI initiatives and embrace corporate AI culture.
-* **Generative AI adoption:** The organization is committed to implementing generative AI. They’re accelerating their adoption across all business units to generate business value.
-* **Training and upskilling on AI for business:** Effective AI adoption relies on empowering employees to incorporate AI into their routines. For this purpose, EDP is using Microsoft training materials on AI for business, such as [Transform your business with Microsoft AI](/training/paths/transform-your-business-with-microsoft-ai/).
+* **Installation of electric chargers**: EDP is using geographical data, customer demand, road information, and other insights to detect the best places to install electric chargers on public roads. This project aims to encourage electric vehicles and green mobility.
+* **Proactive power lines maintenance**: Vegetation can easily obstruct aerial power lines. The Analytics4Vegetation project ensures the maintenance of such power lines in Portugal. It detects vegetation and identifies which power lines potentially need maintenance. Furthermore, it helps maintenance management by predicting optimal time until new maintenance action in the area.
+* **Power transformers**: There are more than 100,000 power transformers in Portugal. EDP is using Azure Machine Learning to predict their power curve, ensuring optimal efficiency.
+* **Data and AI strategy and governance plan**: EDP is implementing a full strategy and governance plan for their data and AI to back their AI initiatives and embrace corporate AI culture.
+* **Generative AI adoption**: The organization is committed to implementing generative AI. They’re accelerating their adoption across all business units to generate business value.
+* **Training and upskilling on AI for business**: Effective AI adoption relies on empowering employees to incorporate AI into their routines. For this purpose, EDP is using Microsoft training materials on AI for business, such as [Transform your business with Microsoft AI](/training/paths/transform-your-business-with-microsoft-ai/).
 
 ## The results
 

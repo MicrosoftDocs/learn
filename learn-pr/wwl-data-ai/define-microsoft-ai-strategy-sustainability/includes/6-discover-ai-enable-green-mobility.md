@@ -14,7 +14,7 @@ Besides, any solution must be scalable. SWM manages **vast amounts of data**: ea
 
 ## The solution
 
-SWM developed a smart connectivity solution to improve the efficiency of the bus charging system. This tool, called **INSIGHT**, is built upon Microsoft products such as Azure AI Services, Azure Machine Learning, and Azure IoT. Its design ensures transparent, sustainable processes.
+SWM developed a smart connectivity solution to improve the efficiency of the bus charging system. This tool called **INSIGHT** is built upon Microsoft products such as Azure AI Services, Azure Machine Learning, and Azure IoT. Its design ensures transparent, sustainable processes.
 
 In INSIGHT, an IoT device gathers real-time data from the electric buses, such as battery charge, engine speed, or activation of warning lights. There are around 120 sensors on each bus. The device sends this data to INSIGHT, which is based on Azure infrastructure. There, the solution creates a digital twin of each bus, which enables it to track every datapoint.
 

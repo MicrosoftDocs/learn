@@ -15,7 +15,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the biggest challenge in AI systems for sustainability and how can you deal with it?"
+  - content: "What is the biggest challenge in AI systems for sustainability and how can organizations deal with it?"
     choices:
     - content: "AI systems tend to be pollutant. You should minimize their use in sustainability solutions."
       isCorrect: false
@@ -28,10 +28,10 @@ quiz:
       explanation: "Correct. A bad design can make an AI sustainability solution waste too much energy. Remember that Microsoft Azure has features to minimize energy consumption with optimal performance."
   - content: "Which sustainability use cases enable each of these Microsoft products?"
     choices:
-    - content: "You can implement crop health monitoring systems with FarmVibes.AI."
+    - content: "Organizations can implement crop health monitoring systems with FarmVibes.AI."
       isCorrect: true
       explanation: "Correct. The FarmVibes project offers these AI models for this purpose. You can also use them to monitor soil health."
-    - content: "You can use Microsoft SynapseML to get data analytics of water consumption."
+    - content: "Companies can use Microsoft SynapseML to get data analytics of water consumption."
       isCorrect: false
       explanation: "Incorrect. Microsoft SynapseML serves a different purpose: helping you build a fully scalable, distributed AI system. Microsoft Cloud for Sustainability includes specific feature water consumption analytics."
     - content: "Microsoft Cloud for Sustainability detects solar and wind energy installations."
