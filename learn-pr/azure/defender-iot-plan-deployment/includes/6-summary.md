@@ -6,6 +6,8 @@ In this module you learned how to put together a deployment plan for deploying M
 
 Implementing your plan will help you to take your OT security visibility to the next level.
 
-## References
+## Learn more
 
 [Deploy Defender for IoT for OT monitoring](/azure/defender-for-iot/organizations/ot-deploy/ot-deploy-path)
+[Methods for connecting sensors to Azure](/azure/defender-for-iot/organizations/)
+[Microsoft Defender for IoT user management](/azure/defender-for-iot/organizations/manage-users-overview)

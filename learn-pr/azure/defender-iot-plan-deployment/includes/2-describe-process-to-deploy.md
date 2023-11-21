@@ -24,27 +24,42 @@ At the end of your deployment, baseline learning ends with a set of learned netw
 
 You and your architecture team (such as the network architect and OT engineers) should prepare to deploy Defender for IoT across your organization. Recall that you're planning to deploy sensors across many distinct types of locations globally, including offices and distinct manufacturing systems. Planning includes thinking about:
 
-- **Sites and zones**: How can you segment the networks you want to monitor using sites and zones representing locations in your auto manufacturing organization's global locations?
-- **Sensor management**: Does it make the most sense for you to manage your sensors as cloud-connected sensors, air-gapped locally managed sensors, or as a hybrid system? The example in this learn module assumes a cloud-connected sensor system. In a cloud-connected system, think about the connection methods you need (such as a direct connection or via a proxy).
+- **Sites and zones**: How can you segment the networks you want to monitor using sites and zones representing locations in your auto manufacturing organization's global locations? Sites and zones are described in the next unit.
+
+- **Sensor management**: The example in this learn module assumes a cloud-connected sensor system. What sensor connection methods do you need (such as a direct connection or via a proxy)?
+
 - **Users and roles**: Given the distinct locations and sensor connections, what types of users and user roles are needed on each sensor?
 
 ### OT site deployment preparation
 
-While planning for your organization, prepare the following items:
+While planning for your organization, identify and make notes about the following items:
 
-- **A network diagram**: What are your overall monitoring goals for your manufacturing organization? Where should you connect? What devices are there and how do they communicate? What are the security and operational risks, and where is the most interesting traffic for those risks?
+- **A network diagram**
+    - Your overall monitoring goals for your manufacturing organization.
+    - What areas of your network to connect.
+    - What devices there are and how they communicate.
+    - Your security and operational risks, and the most interesting traffic for those risks.
 
     Create a full list of monitored devices, subnets, switches, vendors, and protocols for verification.
 
-- **A list of sensors**: What sensors will your organization need? What sites and zones would be appropriate to assign?
+- **A list of sensors**
+    - The sensors your organization needs.
+    - The sites and zones that would be appropriate to assign.
 
     Based on the list of traffic, monitored devices, and subnets, make a list of the OT sensors needed and where to place them in your network.
 
-- **Traffic mirroring methods**: What and where are all the switch port types used in your organization? How should you deal with unmanaged switches? Do you use broadcast or multicast messaging? Which traffic mirroring method best fits your switch port types?
+- **Traffic mirroring methods**
+    - What and where your organization's switch port types are.
+    - How to manage your unmanaged switches.
+    - Whether you use broadcast or multicast messaging.
+    - The traffic mirroring method that best fits your switch port types.
 
     Choose a traffic mirroring method for each OT sensor, such as a SPAN port or TAP.
 
-- **Appliances**: Given the OT sensors needed, what profiles are needed for your appliances? What preconfigured appliances and what ancillary hardware do you need? Prepare a deployment workstation and any hardware or virtual machines for your deployment.
+- **Appliances**
+    - Given the OT sensors needed, the profiles needed for your appliances.
+    - The preconfigured appliances and ancillary hardware needed.
+    - The deployment workstation and any hardware or virtual machines for your deployment.
 
     Order any preconfigured appliances and hardware that you intend to use.
 
@@ -59,7 +74,7 @@ When onboarding, make sure to:
 - Assign sites and zones based on your sensor plans.
 - Download and save each OT sensor's activation file.
 
-Your onboarding team, which can include IoT and OT engineers, will need appropriate Azure roles, such as Admin or Security Admin, to complete onboarding and management tasks.
+Your onboarding team, which can include IoT and OT engineers, needs appropriate Azure roles, such as Admin or Security Admin, to complete onboarding and management tasks.
 
 ## Site networking setup
 
