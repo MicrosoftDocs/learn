@@ -14,7 +14,7 @@ HDInsight on AKS integrates with the entire Azure ecosystem, shortening implemen
 
 The latest version of HDInsight is orchestrated using AKS, which enables the platform to be more robust and empowers the users to handle the clusters effectively. Provisioning of clusters on HDInsight on AKS is fast and reliable, making it easy to manage clusters and perform in-place upgrades. With vast SKU choices and flexible subscription models, modernizing data lakehouses using open-source, cloud-native, and scalable infrastructure on HDInsight on AKS can meet all your analytics needs.
 
-:::image type="content" source="../media/hdinsight-on-aks-advantages.png" alt-text="Screenshot shows HDInsight on AKS integrates with the entire Azure ecosystem, shortening implementation cycles and improving time to realize value." lightbox="../media/hdinsight-on-aks-advantages.png":::
+:::image type="content" source="../media/modernized-on-cloud-native-platform.png" alt-text="Screenshot shows vast SKU choices and flexible subscription models, modernizing data lakehouses using open-source, cloud-native, and scalable infrastructure on HDInsight on AKS can meet all your analytics needs." lightbox="../media/modernized-on-cloud-native-platform.png":::
 
 Key features includes:
 
