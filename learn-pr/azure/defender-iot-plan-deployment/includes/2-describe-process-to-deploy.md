@@ -34,7 +34,7 @@ You and your architecture team (such as the network architect and OT engineers) 
 
 While planning for your organization, identify and make notes about the following items:
 
-- **A network diagram**
+- **A network diagram**, including:
     - Your overall monitoring goals for your manufacturing organization.
     - What areas of your network to connect.
     - What devices there are and how they communicate.
