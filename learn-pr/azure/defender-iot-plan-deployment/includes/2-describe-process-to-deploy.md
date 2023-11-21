@@ -48,7 +48,7 @@ While planning for your organization, identify and make notes about the followin
 
     Based on the list of traffic, monitored devices, and subnets, make a list of the OT sensors needed and where to place them in your network.
 
-- **Traffic mirroring methods**
+- **Traffic mirroring methods**, including:
     - What and where your organization's switch port types are.
     - How to manage your unmanaged switches.
     - Whether you use broadcast or multicast messaging.
