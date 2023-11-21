@@ -44,7 +44,7 @@ While planning for your organization, identify and make notes about the followin
 
 - **A list of sensors**, including:
     - The sensors your organization needs.
-    - The sites and zones that would be appropriate to assign.
+    - How you might segment your network into different geographical and logical areas.
 
     Based on the list of traffic, monitored devices, and subnets, make a list of the OT sensors needed and where to place them in your network.
 
