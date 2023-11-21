@@ -1,8 +1,14 @@
-Many organizations today work with *big data*. The huge volume and variety of data and the speed of data generation necessitates having systems that help you manage and control it. In the past, organizations used relational database-management systems to control data. However, organizations now want the functionality of open-source software combined with the benefits of hosted platforms. Azure HDInsight is the perfect example of this partnership. HDInsight allows you to process big data in many scenarios using historical or real-time data.
+Many organizations today work with *big data*. The huge volume and variety of data and the speed of data generation necessitates having systems that help you manage and control it. In the past, organizations used relational database-management systems to control data. However, organizations now want the functionality of open-source software combined with the benefits of hosted platforms. Azure HDInsight on AKS is the perfect example of this partnership. HDInsight on AKS allows you to deploy popular Open-Source Analytics workloads like Apache Spark™, Apache Flink®️, and Trino without the overhead of managing and monitoring containers.
 
-The following graphic depicts an overview of how you might use HDInsight. It depicts several data sources, including Internet of Things (IoT) sensors, databases, and several Azure datastores. HDInsight processes data from these locations. It then makes it available in long-term storage for real-time apps and additional analysis.
+You can build end-to-end, petabyte-scale Big Data applications spanning streaming through Apache Flink, data engineering and machine learning using Apache Spark, and Trino's powerful query engine.
 
-:::image type="content" source="../media/overview.png" alt-text="Diagram of the architecture of HDInsight in a typical organization, depicting several data sources from which it manages big data.":::
+You can build end-to-end, petabyte-scale Big Data applications spanning streaming through Apache Flink, data engineering and machine learning using Apache Spark, and Trino's powerful query engine.
+
+All these capabilities combined with HDInsight on AKS’s strong developer focus enables enterprises and digital natives with deep technical expertise to build and operate applications that are right fit for their needs. HDInsight on AKS allows developers to access all the rich configurations provided by open-source software and the extensibility to seamlessly include other ecosystem offerings. This offering empowers developers to test and tune their applications to extract the best performance at optimal cost.
+
+HDInsight on AKS integrates with the entire Azure ecosystem, shortening implementation cycles and improving time to realize value.
+
+:::image type="content" source="../media/hdinsight-on-aks-advantages.png" alt-text="Screenshot shows HDInsight on AKS integrates with the entire Azure ecosystem, shortening implementation cycles and improving time to realize value." lightbox="../media/hdinsight-on-aks-advantages.png":::
 
 ## Example scenario
 
@@ -19,4 +25,4 @@ By the end of this module, you'll be able to evaluate whether HDInsight can help
 
 ## What is the main goal?
 
-The main goal is to determine whether HDInsight is a suitable choice for your big-data processing requirements.
+The main goal is to determine whether HDInsight on AKS is a suitable choice for your big-data processing requirements.
