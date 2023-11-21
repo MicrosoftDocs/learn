@@ -56,7 +56,7 @@ While planning for your organization, identify and make notes about the followin
 
     Choose a traffic mirroring method for each OT sensor, such as a SPAN port or TAP.
 
-- **Appliances**
+- **Appliances**, including:
     - Given the OT sensors needed, the profiles needed for your appliances.
     - The preconfigured appliances and ancillary hardware needed.
     - The deployment workstation and any hardware or virtual machines for your deployment.
