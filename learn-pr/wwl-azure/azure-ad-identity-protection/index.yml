@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/02/2023
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: active-directory
 title: Deploy Microsoft Entra ID Protection
 summary: Protect identities in Microsoft Entra ID using Conditional Access, MFA, access reviews, and other capabilities.
