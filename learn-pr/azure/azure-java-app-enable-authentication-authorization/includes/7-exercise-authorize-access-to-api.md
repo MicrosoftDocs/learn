@@ -2,7 +2,7 @@ In this exercise, you'll configure the application with permissions and use MSAL
 
 ## Add Microsoft Graph permissions to App registration
 
-Web services secured by Microsoft Entra ID define a set of permissions that provide access to the API functionality and data exposed by that service. Before an application can can access data or act on a user's behalf, it must request these permissions to be approved by the users. You can assign these API permissionsto your app registration from the Azure portal. Here are the steps to assign Microsoft Graph API permissions to your application.
+Web services secured by Microsoft Entra ID define a set of permissions that provide access to the API functionality and data exposed by that service. Before an application can access data or act on a user's behalf, it must request these permissions to be approved by the users. You can assign these API permissions to your app registration from the Azure portal. Here are the steps to assign Microsoft Graph API permissions to your application.
 
 1. In the app's registration screen, select the **API permissions** blade in the left to add access to the APIs that your application needs.
    - Select the **+ Add a permission** button.
@@ -21,7 +21,7 @@ Web services secured by Microsoft Entra ID define a set of permissions that prov
 
 You can try the Graph API call on the application that you have running from the previous exercise.
 
-1. Open your browser and navigate to `http://localhost:8080/msal4j-servlet-graph/`. If you're not already signed in, you'll be redirected to login with Microsoft Entra ID. On successful sign-in, you should see a page as shown in the below image.
+1. Open your browser and navigate to `http://localhost:8080/msal4j-servlet-graph/`. If you're not already signed in, you'll be redirected to sign in with Microsoft Entra ID. On successful sign-in, you should see a page as shown in the below image.
 
     :::image type="content" source="../media/app-sign-in.png" alt-text="Screenshot showing the button to call graph displayed on the page after successfully signing in to sample application.":::
 
