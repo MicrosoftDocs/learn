@@ -6,7 +6,7 @@ Now that you have reviewed this module, you should:
 
 * Identify AI use cases in manufacturing.
 * Examine available AI tools and resources for manufacturing scenarios.
-* Discover insights from manufacturing-specific AI success stories.
+* Discover insights from manufacturing-specific AI success stories. 
 
 ## Use these resources to discover more
 
