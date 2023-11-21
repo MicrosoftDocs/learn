@@ -12,4 +12,3 @@ This module has only given an introduction, but you can continue with more modul
 
 - [Visual Studio Code Documentation](https://code.visualstudio.com/docs)
 - [Getting Started Videos](https://code.visualstudio.com/docs/getstarted/introvideos)
-- [Visual Studio Code Can Do That](https://vscodecandothat.com/)
