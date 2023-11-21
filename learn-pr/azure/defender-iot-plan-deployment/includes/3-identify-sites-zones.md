@@ -32,7 +32,6 @@ In your car manufacturer, you might segment factories and office areas in Paris 
 
 When you're working with multiple networks, separate sensors with recurring IP address ranges into separate zones. This ensures that Defender for IoT differentiates between the devices and identifies each device uniquely across your networks.
 
-
 ## Knowledge check
 
 Figures A and B will help you answer the knowledge check questions.
@@ -46,5 +45,3 @@ Figure A shows an example of two global locations. The Paris location has an off
 
 Figure B is a diagram of a sample network with two sites, Site 1 and Site 2. Site 1 contains Zone 1 with network segments 10.0.0.0\/24, 10.0.1.0\/24, and 10.0.3.0\/24. Site 2 contains Zone 2 with network segments 10.0.0.0\/24, 10.0.0.0\/24, and 10.0.2.0\/24.
 :::image-end:::
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
