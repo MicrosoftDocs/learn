@@ -13,9 +13,9 @@ Developing your own AI model from scratch isn’t always the best approach, as i
 
 The catalog of Azure AI Services is large, but some are especially pertinent in manufacturing.
 
-* **Azure Cognitive Search:** This platform enables you to retrieve information for your document intelligence applications. It enables you to scan your documentation to quickly find the information you need.
-* **Azure AI Vision and Custom Vision:** These two services deliver computer vision models, AI models that detect or classify objects of interest in images or video. This technology is key in manufacturing use cases such as anomaly detection.
-* **Document Intelligence:** The AI models contained in this service enable manufacturers to extract information from your documentation. This tool is most useful in scenarios involving handling printed or handwritten technical datasheets, forms, invoices, ID cards, and other complex layouts. It can play an important role in achieving better management of your suppliers.
+* **Azure Cognitive Search**: This platform enables you to retrieve information for your document intelligence applications. It enables you to scan your documentation to quickly find the information you need.
+* **Azure AI Vision and Custom Vision**: These two services deliver computer vision models, AI models that detect or classify objects of interest in images or video. This technology is key in manufacturing use cases such as anomaly detection.
+* **Document Intelligence**: The AI models contained in this service enable manufacturers to extract information from your documentation. This tool is most useful in scenarios involving handling printed or handwritten technical datasheets, forms, invoices, ID cards, and other complex layouts. It can play an important role in achieving better management of your suppliers.
 
 ## Azure OpenAI Service
 

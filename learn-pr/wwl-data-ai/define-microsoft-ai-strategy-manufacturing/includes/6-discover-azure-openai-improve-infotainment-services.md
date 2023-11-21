@@ -18,10 +18,10 @@ The feature was well received. However, the spectacular progress of generative A
 
 Mercedes-Benz uses Azure OpenAI Service to integrate ChatGPT into the “Hey Mercedes” feature. The resulting version adds some enhanced capabilities to the infotainment service.
 
-* **Talk naturally to the assistant:** Drivers can interact with the system in a more dynamic, intuitive way beyond mere voice commands.
-* **Ask questions freely:** The assistant isn’t limited to a set of simple questions. You can ask for a destination, a recipe, or anything else more elaborate.
-* **Ask follow-up questions:** ChatGPT uses context when delivering answers. So, the new “Hey Mercedes” service enables a more complex, multi-turn conversation. For example, you could first ask about a good restaurant in the area, then for the best route to get to it, and later for specific details of the road, without having to repeat the information to the assistant.
-* **Integrate with third-party services:** Many companies develop plugins for ChatGPT that enable further functionalities, like booking a restaurant or a movie. The system allows drivers to access these features.
+* **Talk naturally to the assistant**: Drivers can interact with the system in a more dynamic, intuitive way beyond mere voice commands.
+* **Ask questions freely**: The assistant isn’t limited to a set of simple questions. You can ask for a destination, a recipe, or anything else more elaborate.
+* **Ask follow-up questions**: ChatGPT uses context when delivering answers. So, the new “Hey Mercedes” service enables a more complex, multi-turn conversation. For example, you could first ask about a good restaurant in the area, then for the best route to get to it, and later for specific details of the road, without having to repeat the information to the assistant.
+* **Integrate with third-party services**: Many companies develop plugins for ChatGPT that enable further functionalities, like booking a restaurant or a movie. The system allows drivers to access these features.
 
 ## The results
 
