@@ -24,7 +24,7 @@ At the end of your deployment, baseline learning ends with a set of learned netw
 
 You and your architecture team (such as the network architect and OT engineers) should prepare to deploy Defender for IoT across your organization. Recall that you're planning to deploy sensors across many distinct types of locations globally, including offices and distinct manufacturing systems. Planning includes thinking about:
 
-- **Sites and zones**: How can you segment the networks you want to monitor using sites and zones representing locations in your auto manufacturing organization's global locations? Sites and zones are described in the next unit.
+- **Sites and zones**: How can you segment the networks you want to monitor across your auto manufacturing organization's global locations into different geographical and logical areas?
 
 - **Sensor management**: The example in this learn module assumes a cloud-connected sensor system. What sensor connection methods do you need (such as a direct connection or via a proxy)?
 
