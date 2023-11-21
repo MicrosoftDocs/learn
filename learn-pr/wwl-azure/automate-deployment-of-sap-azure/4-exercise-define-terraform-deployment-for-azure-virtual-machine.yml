@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: module
+  ms.custom: devx-track-terraform
   ms.prod: azure
 durationInMinutes: 9
 content: |
