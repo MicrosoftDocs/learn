@@ -42,7 +42,7 @@ While planning for your organization, identify and make notes about the followin
 
     Create a full list of monitored devices, subnets, switches, vendors, and protocols for verification.
 
-- **A list of sensors**
+- **A list of sensors**, including:
     - The sensors your organization needs.
     - The sites and zones that would be appropriate to assign.
 
