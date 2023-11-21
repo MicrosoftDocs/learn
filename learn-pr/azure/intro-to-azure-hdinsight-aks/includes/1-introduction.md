@@ -10,18 +10,24 @@ HDInsight on AKS integrates with the entire Azure ecosystem, shortening implemen
 
 :::image type="content" source="../media/hdinsight-on-aks-advantages.png" alt-text="Screenshot shows HDInsight on AKS integrates with the entire Azure ecosystem, shortening implementation cycles and improving time to realize value." lightbox="../media/hdinsight-on-aks-advantages.png":::
 
-## Example scenario
+## Modernized cloud-native compute platform
 
-Let's imagine you work for an organization that builds workloads that ingest data for historical reporting and advanced analytics. Perhaps you also have streaming data that requires analysis. In this situation, you might want to consider using HDInsight. It enables ingestion of all data into a single Data Lake location. You can then use it to manage the following workloads:
+The latest version of HDInsight is orchestrated using AKS, which enables the platform to be more robust and empowers the users to handle the clusters effectively. Provisioning of clusters on HDInsight on AKS is fast and reliable, making it easy to manage clusters and perform in-place upgrades. With vast SKU choices and flexible subscription models, modernizing data lakehouses using open-source, cloud-native, and scalable infrastructure on HDInsight on AKS can meet all your analytics needs.
 
-- Batch processing
-- Data warehousing
-- Data-science operations
-- Streaming
+:::image type="content" source="../media/hdinsight-on-aks-advantages.png" alt-text="Screenshot shows HDInsight on AKS integrates with the entire Azure ecosystem, shortening implementation cycles and improving time to realize value." lightbox="../media/hdinsight-on-aks-advantages.png":::
+
+Key features includes:
+
+- Fast cluster creation and scaling.
+- Ease of maintenance and periodic security updates.
+- Cluster resiliency powered by modern cloud-native AKS.
+- Native support for modern auth with OAuth, and Microsoft Entra ID.
+- Deep integration with Azure Services – Azure Data Factory (ADF), Power BI, Azure Monitor.
+
 
 ## What will we be doing?
 
-By the end of this module, you'll be able to evaluate whether HDInsight can help your organization process big data. You'll also be able to describe how HDInsight uses popular open-source frameworks that support many data scenarios.
+By the end of this module, you'll be able to evaluate whether HDInsight on AKS can help your organization process big data. You'll also be able to describe how HDInsight on AKS uses popular open-source frameworks that support many data scenarios.
 
 ## What is the main goal?
 
