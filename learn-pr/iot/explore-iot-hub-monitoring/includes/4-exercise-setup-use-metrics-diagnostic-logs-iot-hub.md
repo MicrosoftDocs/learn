@@ -14,7 +14,7 @@ In this task, you create a storage account. The storage account contains your de
 
 1. Under **Services**, click **Storage accounts**.
 
-1. In the **Storage accounts** blade, select **+ Create** to create a storage account.
+1. In the **Storage accounts** blade, select **Create** to create a storage account.
 
 1. In **Subscription**, select **Concierge Subscription**.
 
@@ -26,19 +26,23 @@ In this task, you create a storage account. The storage account contains your de
 
 1. Do not change the other field defaults.
 
-1. Select **OK**.
+1. Select **Review**.
+
+1. Select **Create**.
+
+1. Wait for the Storage account to deploy before proceeding.
 
 ## Task 2: Enable diagnostics
 
-In this task, you configure Monitor device connect/disconnect data that is stored in the storage account that you set up in task 1.
+In this task, you configure Monitor device connect/disconnect data that is stored in the storage account that you just created.
 
 1. Navigate to your portal dashboard.
 
-1. In the **Resources** tile, select your IoT Hub.
+1. In the **All resources** tile, select your IoT Hub.
 
 1. In the portal menu, under **Monitoring**, select **Diagnostic settings**.
 
-1. On the **Diagnostics settings** blade, under **Name**, select **+ Add diagnostic setting**.
+1. On the **Diagnostics settings** blade, under **Name**, select **Add diagnostic setting**.
 
 1. In the **Diagnostic settings name** textbox, enter **diags-hub**.
 
@@ -59,7 +63,7 @@ In this task, you configure Monitor device connect/disconnect data that is store
 
 1. For the **Subscription** field, select the **Concierge Subscription** resource group.
 
-1. For the **Storage account** field, select the storage account name that is provided. Make a note of this name. The name should consist of a long sequence of letters and numbers. You need to select this name from a list in Exercise - Review Metrics, Alerts and Archive. After you've created the diagnostic setting, a storage container is created in the storage account as soon as an event occurs in one of the enabled log categories.
+1. For the **Storage account** field, select the storage account name that you used in task 1. After you've created the diagnostic setting, a storage container is created in the storage account as soon as an event occurs in one of the enabled log categories.
 
 1. Under **Categories**, select **Connections** and **DeviceTelemetry**.
 
@@ -67,7 +71,7 @@ In this task, you configure Monitor device connect/disconnect data that is store
 
 1. Close the **Diagnostics settings** blade.
 
-    You should now be on the **Diagnostics settings** pane of your IoT hub, and you should see that the list of **Diagnostics settings** is updated to show the **diags-hub** setting that you created.
+    You should now be at the **Diagnostics settings** pane of your IoT hub. You should see that the list of **Diagnostics settings** is updated to show the **diags-hub** setting that you created.
 
     Later, when you look at the diagnostic logs, you'll be able to see the telemetry and connect/disconnect logging for the device.
 
@@ -83,7 +87,7 @@ In this task, you set up various metrics to watch for when messages are sent to 
 
     The **Metrics** pane is displayed showing a new, empty, chart.
 
-1. In the top-right corner of the screen, select **Last 24 hours (Automatic)**.
+1. In the top-right corner of the screen, select **Local time: Last 24 hours (Automatic)**.
 
 1. In the context menu that appears, under **Time range**, select **Last 30 minutes**.
 
@@ -105,13 +109,14 @@ In this task, you set up various metrics to watch for when messages are sent to 
 
 1. In the **Metric** dropdown, select **Telemetry messages sent**.
 
-    Notice the large number of metrics that are available for you to select from.
+    > [!NOTE]
+    > Notice the large number of metrics that are available for you to select from.
 
 1. Under **Aggregation**, ensure that **Sum** is selected.
 
     Notice there are four aggregation operations available: Avg, Min, Max, and Sum.
 
-1. Select the blue checkmark to finish editing the metric.
+1. Select the blue checkmark to save the metric.
 
 1. Take a moment to review your chart.
 
@@ -127,7 +132,7 @@ In this task, you set up various metrics to watch for when messages are sent to 
 
 1. Under **Aggregation**, ensure that **Avg** is selected.
 
-1. Select the blue checkmark to finish editing the metric.
+1. Select the blue checkmark to save the metric.
 
     Your screen should now show the minimized metric for Telemetry messages sent, and the new metric for avg connected devices. Notice that the chart title is updated to reflect both metrics.
 

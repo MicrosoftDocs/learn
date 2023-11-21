@@ -146,7 +146,7 @@ In this exercise, you:
     private readonly static string connectionString = "<your device connection string>";
     ```
 
-1. Replace the **<your device connection string>** placeholder value (including the angle brackets) with the device connection string that you saved earlier.
+1. Replace the "<your device connection string>" placeholder value (including the angle brackets) with the device connection string that you saved earlier.
 
     > [!Note]
     > This is the only change that you are required to make to this code.
@@ -226,7 +226,7 @@ In this exercise, you:
     10/25/2023 6:10:14 PM > Sending message: {"temperature":20.723927165718717,"humidity":74.07808918230147}
    ```
 
-Leave the app running, so that a device is connected to your IoT hub and telemetry is being sent.
+1. Leave the app running, so that a device is connected to your IoT hub and telemetry is being sent.
 
 ## Verify your work
 

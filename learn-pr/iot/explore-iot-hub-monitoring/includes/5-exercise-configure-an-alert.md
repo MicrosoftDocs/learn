@@ -4,9 +4,11 @@ In your asset tracking scenario, you use sensors to track the containers that ar
 
 However, for your upcoming proof-of-concept review, to keep things simple, you want to create an Alert that triggers when the number of containers drops below one. To trigger the Alert, you use the number of connected devices events from IoT Hub.
 
-In this exercise, you add an alert that triggers when one or more devices are connected.
+## Task 1: Create an alert rule
 
-1. Navigate to your portal dashboard.
+In this exercise, you add an alert that triggers when one or more devices are connected. You will fill out several tabs and associated dialog boxes to create the alert rule.
+
+1. Navigate to your portal Dashboard.
 
 1. In the **Resources** tile, select your IoT hub.
 
@@ -18,24 +20,22 @@ In this exercise, you add an alert that triggers when one or more devices are co
 
 1. Take a moment to review the **Create an alert rule** blade.
 
-    The blade includes tabs for: Scope, Condition, Actions, Details, Tags, and Review + create. Scope includes two fields: Resource and Hierarchy. Notice that these fields are prepopulated with properties from your IoT Hub. You can edit the preselected resource if needed.
+    The blade includes tabs for: **Scope**, **Condition**, **Actions**, **Details**, **Tags**, and **Review + create**. Scope includes two fields: **Resource** and **Hierarchy**. Notice that these fields are prepopulated with properties from your IoT Hub. You can edit the preselected resource if needed.
 
 1. Select the **Condition** tab, and then select **See all signals**.
 
-    The **Select a signal** pane should be displayed. Notice that there is a paginated table of available signals displayed. The fields above the table filter the table to help in finding the signal types you want.
+    The **Select a signal** pane should be displayed. Notice that there is a paginated table of available signals displayed. The fields above the table filter the table to help in finding the signal types.
 
-1. In the **Signal type** dropdown, ensure that **All** is selected.
-
-    If you open the Signal type dropdown, you would see that there are four available options: **All**, **Log search**, **Resource health**, **Metrics**, and **Activity Log**.
+1. For **Signal type**, ensure that **All** is selected.
 
     > [!NOTE]
+    > If you select **Signal type**, you'll see that there are four available options: **All**, **Log search**, **Resource health**, **Metrics**, and **Activity Log**.
     > The signal types available for monitoring vary based on the selected target(s). The signal types can be metrics, log search queries or activity logs.
 
-1. In the **Signal source** dropdown, ensure that **All** is selected.
-
-    If you open the Signal source dropdown, you would see that there are the following options: **All**, **Log analytics**, **Log analytics (example query)**, **Resource health**, **Platform metrics**, and **Administrative**.
+1. For **Signal source**, ensure that **All** is selected.
 
     > [!NOTE]
+    > If select **Signal source**, you'll see that there are the following options: **All**, **Log analytics**, **Log analytics (example query)**, **Resource health**, **Platform metrics**, and **Administrative**.
     > The platform service provides metrics on service utilization, where as the activity log tracks administrative activities.
 
 1. In the **Search by signal name** textbox, type **connected**.
@@ -46,9 +46,7 @@ In this exercise, you add an alert that triggers when one or more devices are co
 
     The pane updates to display a chart **Preview** that is similar to what you created for **Metrics**. The chart displays the values associated with the selected signal. In this case, the chart displays the average number of connected devices. Since we only have one connected device, the program that is sending telemetry, the chart only shows one device.
 
-    To the left of the chart is the area that defines the **Alert logic**.
-
-1. Scroll down on the page and take a moment to review the options under **Alert logic**
+1. To the left of the chart is the area that defines the **Alert logic**. Scroll down on the page and take a moment to review the **Alert logic** options.
 
     Notice that **Threshold** has two possible selections: **Static** and **Dynamic**. Also notice that **Static** is selected and **Dynamic** is unavailable for this signal type.
 
@@ -57,31 +55,32 @@ In this exercise, you add an alert that triggers when one or more devices are co
 
     You are going to create a static threshold that raises an alert whenever the average **Connected devices** signal is less than 1.
 
+1. Under **Aggregation type**, ensure that **Average** is selected.
+
 1. In the **Operator** dropdown, select **Less than**.
 
-    You may want to review all options for Operator and other Alert Logic fields.
-
-1. Under **Aggregation type**, ensure that **Average** is selected.
+    > [!NOTE]
+    > You may want to review all options for Operator and other Alert Logic fields.
 
 1. In the **Threshold value** textbox, enter **1**.
 
     > [!NOTE]
-    > The **Condition preview** shows you the condition under which the display refreshes based on the **Operator**, **Aggregation type**, and **Threshold** value settings that you entered. Below the **Preview** is the **Evaluation based on** area. These values determine the historical time period that is aggregated using the **Aggregation type** selected previously and how often the condition is evaluated.
+    > The **Preview** chart shows you the condition under which the display refreshes based on the **Alert logic**value settings that you entered. Below the **Preview** are **Time range** and **Time series** filters. These values determine the historical time period that is aggregated using the **Aggregation type** selected previously and how often the condition is evaluated.
 
 1. Under **Unit**, select **Count**.
 
 1. Under **Check every**, ensure that **1 minute** is selected.
 
-1. Under **Lookback period**, ensure that **1 Minute** is selected.
+1. Under **Lookback period**, select **1 Minute**.
 
     > [!NOTE]
     > If the **Check every** is shorter than **Lookback period**, this results in a sliding window evaluation. For example if the **Lookback period** is 5 minutes and **Check every** is 1 minute, it means that every minute, the preceding 5 minutes of values is aggregated (in this case, averaged), and then evaluated against the condition. After a minute of time has passed, once again the preceding 5 minutes of data is aggregated - this includes one minute of new data and four minutes of data that was already evaluated. Thus, we have a sliding window that moves forward a minute at a time, but is always including 4 minutes of data that was also evaluated as part of an earlier window.
 
-    Notice that the **Condition** is now populated and a **Estimated monthly cost** is displayed. At the time of writing, the estimated monthly cost of the alert condition is $0.10 (USD)/month.
+    Notice that the **Condition** is now populated and a **Estimated monthly cost** is displayed.
 
     Next, you configure the action taken when the alert condition is met.
 
-1. On the **Create an alert rule** blade, select **Actions**.
+1. Select **Next: Actions >**.
 
     Notice that no action group is selected. There are options to **Select action groups** and **Create action group**.
 
@@ -96,7 +95,7 @@ In this exercise, you add an alert that triggers when one or more devices are co
 
     The **Create an action group** blade is displayed.
 
-1. On the **Basics** tab, under **Subscription**, ensure that the subscription you are using for this exercise is selected.
+1. On the **Basics** tab, under **Subscription**, ensure that **Concierge Subscription** is selected.
 
 1. In the **Resource group** dropdown, ensure that your sandbox module resource group is selected.
 
@@ -110,45 +109,42 @@ In this exercise, you add an alert that triggers when one or more devices are co
 
     The next area, **Instance details** is used to specify the full and display names for the group.
 
-1. For **Action group name**, enter **Guided Project Email Action Group**
+1. For **Action group name**, enter **Guided Project Email Action Group**.
 
     > [!NOTE]
     > An action group name must be unique within the Resource Group it is associated with.
 
-1. Under **Display name**, enter **GPEmailAG**
+1. For **Display name**, enter **GPEmailAG**.
 
     > [!NOTE]
     > The display name is used in place of a full action group name when notifications are sent using this group and is limited to a max of 12 characters.
 
-1. Select **Next: Notifications**, to view the action group notification fields.
+1. Select **Next: Notifications >**, to view the action group notification fields.
 
 1. Open the **Notification Type** dropdown, and then review the available options.
 
 1. In the **Notification Type** dropdown, select **Email/SMS message/Push/Voice**.
 
-    > [!NOTE]
-    > After selecting the notification type, a new pane opens to enable multiple notifications to be added.
+1. For notification **Name**, enter **GPNotifications**.
 
-1. Under **Name**, enter **GPNotifications**
+1. After selecting the notification type, the **Email/SMS message/Push/Voice** pane opens to enable multiple notifications to be added.
 
-1. Select the pencil **Edit details** icon.
+    1. Select **Email**, and then enter an email address that you have easy access to.
 
-1. On the **Email/SMS message/Push/Voice** page, select **Email**, and then enter an email address that you have easy access to.
+    1. Select **SMS**, and then enter the **Country code** and the **Phone number** for the phone that you wish to use to receive the SMS alert.
 
-1. Select **SMS**, and then enter the **Country code** and the **Phone number** for the phone that you wish to use to receive the SMS alert.
+    1. Skip **Azure mobile app notification** and **Voice**.
 
-1. Skip **Azure mobile app notification** and **Voice**.
-
-1. Under **Enable the common alert schema**, select **Yes**.
+    1. Under **Enable the common alert schema**, select **Yes**.
 
     > [!NOTE]
     > There are many benefits to using the common alert schema. The common alert schema is a single extensible and unified alert payload that can be used across all the alert services in Azure Monitor. With the common alert schema, you can receive alert notifications with a consistent schema. You can learn more about the Common alert schema at [Common alert schema](/azure/azure-monitor/platform/alerts-common-schema).
 
 1. At the bottom of the **Email/SMS message/Push/Voice** page, to save the action configuration, select **OK**.
 
-    The notification row should now show that Email and SMS message are selected. The  **Edit details** icon can be selected if further changes are required.
+    The notification row should now show that Email and SMS message are selected. The **Edit details** icon can be selected if further changes are required.
 
-1. Select **Next: Actions**, to view the action group action fields.
+1. Select **Next: Actions >**, to view the action group action fields.
 
 1. Open the **Action type** dropdown, and then review the available options.
 
