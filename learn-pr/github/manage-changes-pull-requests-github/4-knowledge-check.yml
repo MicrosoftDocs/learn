@@ -3,7 +3,7 @@ uid: learn.github.manage-changes-pull-requests-github.4-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Check what you've learned.
+  description: Check what you learned.
   ms.date: 11/21/2023
   author: a-a-ron
   ms.author: aastewar
@@ -36,7 +36,7 @@ quiz:
     - content: "Add a table mapping directory paths to required users in *SECURITY.md*."
       isCorrect: false
       explanation: "While this file is a great way to explain your security policy, it doesn't automatically enforce anything."
-  - content: "You have been requested to review a pull request. As you read through it, you notice several minor coding errors and typos. How should you handle the review?"
+  - content: "You've been requested to review a pull request. As you read through it, you notice several minor coding errors and typos. How should you handle the review?"
     choices:
     - content: "Start a review and fix obvious typos inline. Add comments in places that require further discussion or offer educational value. Complete the review with changes requested."
       isCorrect: true
