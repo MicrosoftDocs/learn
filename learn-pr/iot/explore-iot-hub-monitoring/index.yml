@@ -2,7 +2,7 @@
 uid: learn.wwl.explore-iot-hub-monitoring
 metadata:
   title: Guided project - Explore IoT Hub monitoring
-  description: "This module provides you with experience configuring IoT Hub monitoring for your solution, setting up and triggering alerts, and reviewing the diagnostics logs."
+  description: "Explore configuring IoT Hub monitoring for your solution, setting up and triggering alerts, and reviewing the diagnostics logs."
   ms.date: 11/05/2023
   author: kgremban
   ms.author: kgremban
@@ -11,7 +11,7 @@ metadata:
   ms.topic: module-guided-project
   ms.service: iot-hub
 title: Guided project - Explore IoT Hub monitoring
-summary: This module provides you with experience configuring IoT Hub monitoring for your solution, setting up and triggering alerts, and reviewing the diagnostics logs.
+summary: Explore configuring IoT Hub monitoring for your solution, setting up and triggering alerts, and reviewing the diagnostics logs.
 abstract: |
   After you complete this module, you will be able to:
   - Enable IoT Hub diagnostics logs and metrics.

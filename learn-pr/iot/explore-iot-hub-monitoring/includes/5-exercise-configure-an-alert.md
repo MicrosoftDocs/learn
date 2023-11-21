@@ -12,19 +12,15 @@ In this exercise, you add an alert that triggers when one or more devices have c
 
 1. On the left-side menu, under **Monitoring**, select **Alerts**.
 
-    The empty **Alerts** pane is displayed. Notice that the **Subscription**, **Resource group**, **Resource** and **Time range** fields are prepopulated.
-
-1. In the **Time range** dropdown, select **Past hour**.
-
 1. Select **Create alert rule**.
 
     The **Create an alert rule** blade should now be displayed.
 
 1. Take a moment to review the **Create an alert rule** blade.
 
-    The blade includes tabs for: Scope, Condition, Actions, Details, Tags, and Review + create. Scope includes two fields - Resource and Hierarchy. Notice that these fields are prepopulated with properties from your IoT Hub. You can edit the preselected resource if needed.
+    The blade includes tabs for: Scope, Condition, Actions, Details, Tags, and Review + create. Scope includes two fields: Resource and Hierarchy. Notice that these fields are prepopulated with properties from your IoT Hub. You can edit the preselected resource if needed.
 
-1. Select **Condition**, and then select **See all signals**.
+1. Select the **Condition** tab, and then select **See all signals**.
 
     The **Select a signal** pane should be displayed. Notice that there is a paginated table of available signals displayed. The fields above the table filter the table to help in finding the signal types you want.
 
@@ -54,12 +50,12 @@ In this exercise, you add an alert that triggers when one or more devices have c
 
 1. Scroll down on the page and take a moment to review the options under **Alert logic**
 
-    Notice that **Threshold** has two possible selections: Static and Dynamic. Also notice that **Static** is selected and **Dynamic** is unavailable for this signal type.
+    Notice that **Threshold** has two possible selections: **Static** and **Dynamic**. Also notice that **Static** is selected and **Dynamic** is unavailable for this signal type.
 
     > [!NOTE]
-    > As the names suggest, *Static Thresholds* specify a constant expression for the threshold, whereas *Dynamic Thresholds* detection leverages advanced machine learning (ML) to learn metrics' historical behavior, identify patterns and anomalies that indicate possible service issues. You can learn more about *Dynamic Thresholds* at [Dynamic thresholds in metric alerts](/azure/azure-monitor/platform/alerts-dynamic-thresholds).
+    > As the names suggest, static thresholds specify a constant expression for the threshold, whereas dynamic threshold detection leverages advanced machine learning (ML) to learn metrics' historical behavior, identify patterns and anomalies that indicate possible service issues. You can learn more about dynamic thresholds at [Dynamic thresholds in metric alerts](/azure/azure-monitor/platform/alerts-dynamic-thresholds).
 
-    You are going to create a static threshold that raises an alert whenever the average *connected devices* signal is less than 1.
+    You are going to create a static threshold that raises an alert whenever the average **Connected devices** signal is less than 1.
 
 1. In the **Operator** dropdown, select **Less than**.
 
@@ -70,7 +66,7 @@ In this exercise, you add an alert that triggers when one or more devices have c
 1. In the **Threshold value** textbox, enter **1**.
 
     > [!NOTE]
-    > The **Condition preview** shows you the condition under which the display refreshes based on the Operator, Aggregation type, and Threshold value settings that you entered. Below the **Preview** is the *Evaluation based on* area. These values determine the historical time period that is aggregated using the **Aggregation type** selected previously and how often the condition is evaluated.
+    > The **Condition preview** shows you the condition under which the display refreshes based on the **Operator**, **Aggregation type**, and **Threshold** value settings that you entered. Below the **Preview** is the **Evaluation based on** area. These values determine the historical time period that is aggregated using the **Aggregation type** selected previously and how often the condition is evaluated.
 
 1. Under **Unit**, select **Count**.
 
@@ -146,7 +142,7 @@ In this exercise, you add an alert that triggers when one or more devices have c
 1. Under **Enable the common alert schema**, select **Yes**.
 
     > [!NOTE]
-    > There are many benefits to using the Common Alert Schema. The common alert schema is a single extensible and unified alert payload that can be used across all the alert services in Azure Monitor. With the common alert schema, you can receive alert notifications with a consistent schema. You can learn more about the Common alert schema at [Common alert schema](/azure/azure-monitor/platform/alerts-common-schema).
+    > There are many benefits to using the common alert schema. The common alert schema is a single extensible and unified alert payload that can be used across all the alert services in Azure Monitor. With the common alert schema, you can receive alert notifications with a consistent schema. You can learn more about the Common alert schema at [Common alert schema](/azure/azure-monitor/platform/alerts-common-schema).
 
 1. At the bottom of the **Email/SMS message/Push/Voice** page, to save the action configuration, select **OK**.
 
@@ -156,7 +152,7 @@ In this exercise, you add an alert that triggers when one or more devices have c
 
 1. Open the **Action type** dropdown, and then review the available options.
 
-    At this point, we could add multiple actions if we needed to launch some business integration via *WebHooks* or an *Azure Function*. However, for this exercise a simple notification is enough.
+    At this point, we could add multiple actions if we needed to launch some business integration via **WebHooks** or an **Azure Function**. However, for this exercise a simple notification is enough.
 
 1. At the bottom of the **Add action group** blade, to validate this action group, select **Review + create**.
 

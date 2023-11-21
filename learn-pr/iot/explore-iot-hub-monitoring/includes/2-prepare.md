@@ -45,20 +45,20 @@ Before you begin the exercises, you need an IoT Hub. Creating the IoT Hub can ta
 
 1. Accept the defaults values for the rest of the fields and select **Review + create** to continue creating your hub.
 
-1. Review the IoT hub details and make sure there are no errors to fix, then select **Create** to start the deployment of your new hub. Your deployment is in progress a few minutes while the hub is being created. Once the deployment is complete, select **Go to resource** to open the new hub.
+1. Review the IoT hub details and make sure there are no errors to fix, then select **Create** to start the deployment of your new IoT hub. Your deployment is in progress a few minutes while the hub is being created. Once the deployment is complete, select **Go to resource** to open the new IoT hub.
 
-1. Once your IoT hub is provisioned, in your IoT Hub navigation menu, open **Devices**, then select **Add Device** to add a device in your IoT hub.
+1. Once your IoT hub is provisioned, in your IoT Hub navigation menu, open **Devices**, then select **+ Add Device** to add a device in your IoT hub.
 
-1. In **Device ID**, enter **sensor-th-2001**. Leave **Auto-generate keys** checked so that the primary and secondary keys are generated automatically. Leave Authentication type as Symmetric key. Select **Save**. This action creates a device identity for your IoT hub.
+1. In **Device ID**, enter **sensor-th-2001**. Leave **Auto-generate keys** checked so that the primary and secondary keys are generated automatically. Leave Authentication type as **Symmetric key**. Select **Save**. This action creates a device identity for your IoT hub.
 
-1. After the device is created, open **sensor-th-2001** from the list in the **Devices** pane. Select the **Copy to clipboard** button to copy the value of **Primary connection string**. This connection string is used by device code to communicate with the IoT Hub. Copy this value into a Notepad window.
+1. After the device is created, open **sensor-th-2001** from the list in the **Devices** pane. Select **Refresh** if necessary to refresh the device list. Select the **Copy to clipboard** button to copy the value of **Primary connection string**. This connection string is used by device code to communicate with the IoT Hub. Copy this value into a Notepad window.
 
     > [!NOTE]
     > By default, the keys and connection strings are masked because they're sensitive information. If you click the eye icon, they're revealed. It's not necessary to reveal them to copy them with the copy button.
 
 ### Development resources
 
-To simulate your IoT devices provisioning through Device Provisioning Service, you'll run a C# application on your development machine. Have the following prerequisites ready on your development machine:
+To simulate your IoT devices provisioning through Device Provisioning Service, you run a C# application on your development machine. Have the following prerequisites ready on your development machine:
 
 * [Visual Studio Code](https://code.visualstudio.com/download)
 * [.NET SDK 6.0 or later](https://dotnet.microsoft.com/download)

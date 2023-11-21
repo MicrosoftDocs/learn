@@ -13,6 +13,8 @@ In this exercise, you:
 
 1. Open Visual Studio Code.
 
+1. Select **File**, then **Open Folder**. Select the **DeviceSimulator** folder and then select **Select Folder**.
+
 1. Create a file named **Program.cs** in the **DeviceSimulator** folder.
 
 1. Paste the following code into **Program.cs**.
@@ -144,7 +146,7 @@ In this exercise, you:
     private readonly static string connectionString = "<your device connection string>";
     ```
 
-1. Replace the "your device connection string" placeholder value (including the angle brackets) with the device connection string that you saved earlier.
+1. Replace the **<your device connection string>** placeholder value (including the angle brackets) with the device connection string that you saved earlier.
 
     > [!Note]
     > This is the only change that you are required to make to this code.
@@ -184,7 +186,7 @@ In this exercise, you:
     dotnet build
     ```
 
-    The output should be similar to:
+    The output should be similar to the following:
 
     ```text
     > dotnet build

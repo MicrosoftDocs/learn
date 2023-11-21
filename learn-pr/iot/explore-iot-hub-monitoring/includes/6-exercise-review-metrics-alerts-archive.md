@@ -1,6 +1,6 @@
 In this exercise, you examine some of the reporting and logging resources that you configured earlier in this module. You review the metrics, alerts, and diagnostic log event data has been recorded in the short time that has elapsed.
 
-## Task 1: See the Metrics in the Portal
+## Task 1: See the Metrics in the portal
 
 In order to generate the alert where the number of connected devices is less than one, the device simulator app must be closed.
 
@@ -16,15 +16,15 @@ In order to generate the alert where the number of connected devices is less tha
 
 1. Select **Local Time: Last 30 minutes**. Notice that you can adjust the time range, granularity and time zone. Select **Cancel**.
 
-1. Observe that you can see *Telemetry messages sent* and *Connected devices* values at the bottom of the blade. Hover your mouse over different parts of the chart to see *Telemetry messages sent* and *Connected devices* values for specific points in time. You should notice that the telemetry and connected devices plot lines reduced to zero after you stopped your telemetry simulator program.
+1. Observe that you can see **Telemetry messages sent** and **Connected devices** values at the bottom of the blade. Hover your mouse over different parts of the chart to see **Telemetry messages sent** and **Connected devices** values for specific points in time. You should notice that the telemetry and connected devices plot lines reduced to zero after you stopped your telemetry simulator program.
 
 ## Task 2: See the Alerts
 
-To use the Azure portal to review alerts, complete the following steps.
+To use the portal to review alerts, complete the following steps.
 
 1. Close the Metrics graphical display to return to the Dashboard.
 
-1. On the Azure portal toolbar, in the search box, type **monitor**
+1. In the portal search box, type **monitor**.
 
 1. In the search result pane, under **Services**, select **Monitor**.
 
@@ -78,7 +78,7 @@ Earlier in this lab, you set up your diagnostic logs to be exported to Blob Stor
 
 1. To view the storage metrics, select the **Monitoring** tab.
 
-1. Scroll down until you can see the metrics charts for the Storage Account: *Total egress*, *Total ingress*, *Average latency* and *Request breakdown*.
+1. Scroll down until you can see the metrics charts for the Storage Account: **Total egress**, **Total ingress**, **Average latency** and **Request breakdown**.
 
     You should see that there is activity displayed.
 
@@ -99,7 +99,7 @@ Earlier in this lab, you set up your diagnostic logs to be exported to Blob Stor
 
 1. In the right-hand pane, select **insights-logs-connections**, and then navigate down into the folder hierarchy.
 
-    After you navigate down to your IoT hub folder, as you navigate down you see numeric values for the year, month, day, and hour. The final folder represents the minute. The minute folder contains a blob file that contain your monitor logging data.
+    After you navigate down to your IoT hub folder, as you navigate down you see numeric values for the year, month, day, and hour. The final folder represents the minute. The minute folder contains a blob file that contains your monitor logging data.
 
 1. Select the json file name.
 
@@ -142,14 +142,14 @@ Earlier in this lab, you set up your diagnostic logs to be exported to Blob Stor
 
 ## Task 4: Review resolved Alert
 
-By this point, you should have received an email or SMS indicating the Monitor Alert is resolved. Complete the following steps to review the resolved Alert in the portal.
+By this point, you should have received an email or SMS indicating the Monitor Alert is resolved. Complete the following steps to review the resolved alert in the portal.
 
 > [!NOTE]
 > If you have not yet received the email or SMS - wait until they arrive before proceeding.
 
-1. In the Azure portal, navigate back to your Dashboard.
+1. In the portal, navigate to your Dashboard.
 
-1. On the Azure portal toolbar, in the search box, type **monitor**
+1. On the portal toolbar, in the search box, type **monitor**
 
 1. In the search result pane, under **Services**, select **Monitor**.
 
