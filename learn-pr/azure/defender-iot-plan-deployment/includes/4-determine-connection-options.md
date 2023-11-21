@@ -6,7 +6,7 @@ This learn module doesn't cover on-premises only (air-gapped) or hybrid environm
 
 A cloud-connection has on-premises sensors connected to Defender for IoT via Azure. Sensor detected data is displayed in the sensor console and delivered to Azure for analysis and sharing. Updates and configuration changes can be pushed automatically to cloud-connected sensors, for instance, Microsoft threat intelligence packages.
 
-All data collection, processing, analysis, and alerting takes place directly on the sensor. Only telemetry and insights are transferred on for management to the Azure portal.
+All data collection, processing, analysis, and alerting takes place directly on the sensor. Only telemetry and insights are transferred on to the Azure portal for management.
 
 ### Connection types
 
