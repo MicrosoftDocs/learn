@@ -51,7 +51,7 @@ To configure the code, open the application project in your preferred IDE like I
 
 3. Find the resulting `.war` file in `./target/msal4j-servlet-graph.war`. To deploy to Tomcat, copy this `.war` file to the `/webapps/` directory in your Tomcat installation directory and start the Tomcat server.
 
-4. Open your browser and navigate to `http://localhost:8080/msal4j-servlet-graph/`. You'll be redirected to login with Microsoft Entra ID. On successful login, you should see a page like the following:
+4. Open your browser and navigate to `http://localhost:8080/msal4j-servlet-graph/`. You'll be redirected to sign in with Microsoft Entra ID. On successful sign-in, you should see a page like the following:
 
     :::image type="content" source="../media/app-sign-in.png" alt-text="Screenshot showing user name displayed on the page after successfully signing in to sample application.":::
 
