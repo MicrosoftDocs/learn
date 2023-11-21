@@ -1,4 +1,4 @@
-In this exercise, you examine some of the reporting and logging resources that you configured earlier in this module. You review the metrics, alerts, and diagnostic log event data has been recorded in the short time that has elapsed.
+In this exercise, you examined some of the reporting and logging resources that you configured earlier in this module. You review the metrics, alerts, and diagnostic log event data has been recorded in the short time that has elapsed.
 
 ## Task 1: See the Metrics in the portal
 
@@ -34,13 +34,13 @@ To use the portal to review alerts, complete the following steps.
 
     This alerts view shows all alerts for all subscriptions. Let's filter this for the IoT Hub used in this project.
 
-1. Near the top of the blade, select **Subscription**, then select only the subscription you are using for this project. Then select **Apply**.
+1. Near the top of the blade, select **Subscription**, then select only the subscription you're using for this project. Then select **Apply**.
 
 1. Select **Time range**, select **Past hour**, then select **Apply**.
 
 1. Select **Alert condition**, select **Select all**, then select **Apply**.
 
-    You should now see a summary of alerts for the last hour including a total alerts count and a list of the severity categories with alert counts per category. The alerts we are interested in are **3 - Informational** Severity. You should see at least one alert. If you stopped and restarted the device simulator, you may have generated more that one alert.
+    You should now see a summary of alerts for the last hour including a total alerts count and a list of the severity categories with alert counts per category. The alerts we're interested in are **3 - Informational** Severity. You should see at least one alert. If you stopped and restarted the device simulator, you may have generated more that one alert.
 
     > [!NOTE]
     > If you do not yet see an alert, wait a few more minutes - there is sometimes a delay in the alerts being raised.
@@ -66,7 +66,7 @@ To use the portal to review alerts, complete the following steps.
 
 ## Task 3: See the Diagnostic Logs
 
-Earlier in this lab, you set up your diagnostic logs to be exported to Blob Storage. It is a good time to check and see what was written.
+Earlier in this lab, you set up your diagnostic logs to be exported to Blob Storage. It's a good time to check and see what was written.
 
 1. Navigate to your Dashboard.
 
@@ -80,7 +80,7 @@ Earlier in this lab, you set up your diagnostic logs to be exported to Blob Stor
 
 1. Scroll down until you can see the metrics charts for the Storage Account: **Total egress**, **Total ingress**, **Average latency** and **Request breakdown**.
 
-    You should see that there is activity displayed.
+    You should see that there's activity displayed.
 
 1. On the left-side menu, to view the data that has been logged, select **Storage Browser**.
 
@@ -136,7 +136,7 @@ Earlier in this lab, you set up your diagnostic logs to be exported to Blob Stor
     }
     ```
 
-    Notice that each individual entry is a single JSON record, although the overall document is not a valid JSON document as the JSON objects are not declared within a JSON array **[ ]** and comma separated. Within each record you can see details relating to the originating IoT Hub and **properties** for each event. Within the **properties** object, you can see the connecting (or disconnecting) **deviceId**.
+    Notice that each individual entry is a single JSON record, although the overall document is not a valid JSON document as the JSON objects aren't declared within a JSON array **[ ]** and comma separated. Within each record you can see details relating to the originating IoT Hub and **properties** for each event. Within the **properties** object, you can see the connecting (or disconnecting) **deviceId**.
 
 1. Optionally, review the **insights-logs-devicetelemetry** blob container. Navigate and down and review the json data as you did with insights-logs-connections.
 
@@ -159,7 +159,7 @@ By this point, you should have received an email or SMS indicating the Monitor A
 
     This alerts view shows all alerts for all subscriptions. Let's filter this list to your IoT Hub.
 
-1. Select **Subscription**, then select only the subscription you are using for this project. Then select **Apply**.
+1. Select **Subscription**, then select only the subscription you're using for this project. Then select **Apply**.
 
 1. Select **Time range**, select **Past hour**, then select **Apply**.
 
@@ -173,7 +173,7 @@ By this point, you should have received an email or SMS indicating the Monitor A
 
 1. At the top of the pane, below the title, select **History**.
 
-    In this view you can see when the alert fired, the action group that was invoked, and when the alert is resolved and so forth.
+    In this view, you can see when the alert fired, the action group that was invoked, when the alert is resolved, and other details.
 
 1. You can now close the Device Simulator App.
 

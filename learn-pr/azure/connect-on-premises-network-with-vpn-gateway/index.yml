@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/01/2023
   author: cherylmc
   ms.author: cherylmc
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: vpn-gateway
 title: Connect your on-premises network to Azure with VPN Gateway
 summary: VPN Gateway in Azure provides secure connectivity between your on-premises networks and clients.

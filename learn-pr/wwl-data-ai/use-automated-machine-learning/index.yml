@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/14/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: machine-learning
 title: Use Automated Machine Learning in Azure Machine Learning
 summary: Training a machine learning model is an iterative process that requires time and compute resources. Automated machine learning can help make it easier.

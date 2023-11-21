@@ -4,7 +4,7 @@ In your asset tracking scenario, you use sensors to track the containers that ar
 
 However, for your upcoming proof-of-concept review, to keep things simple, you want to create an Alert that triggers when the number of containers drops below one. To trigger the Alert, you use the number of connected devices events from IoT Hub.
 
-In this exercise, you add an alert that triggers when one or more devices have connected.
+In this exercise, you add an alert that triggers when one or more devices are connected.
 
 1. Navigate to your portal dashboard.
 
@@ -152,7 +152,7 @@ In this exercise, you add an alert that triggers when one or more devices have c
 
 1. Open the **Action type** dropdown, and then review the available options.
 
-    At this point, we could add multiple actions if we needed to launch some business integration via **WebHooks** or an **Azure Function**. However, for this exercise a simple notification is enough.
+    At this point, we could add multiple actions if we needed to launch some business integration via **WebHooks** or an **Azure Function**. For this exercise, a simple notification is enough.
 
 1. At the bottom of the **Add action group** blade, to validate this action group, select **Review + create**.
 

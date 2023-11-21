@@ -6,7 +6,7 @@ metadata:
   ms.date: 9/01/2022
   author: eriklindeman
   ms.author: eriklind
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-maps
 title: Create your first route finding app with Azure Maps
 summary: >
