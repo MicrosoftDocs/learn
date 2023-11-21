@@ -6,9 +6,9 @@ First you create the development resource group where you want to move your reso
 
 1. Return to the Azure portal.
 
-1. Under **Azure services**, select **Resource groups**.  The **Resource groups** pane appears.
+1. On the home page, select **Create a resource**. Search for and select **Resource group**. The **Resource group** pane appears.
 
-1. On the top menu bar, select **Create**. The **Create a resource group** pane appears.
+1. Select **Create**. The **Create a resource group** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 

@@ -10,16 +10,16 @@ Create a resource group to act as the production resource group.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. On the home page, under **Azure services**, select **Resource groups**. The **Resource groups** pane appears.
+1. On the home page, select **Create a resource**. Search for and select **Resource group**. The **Resource group** pane appears.
 
-1. In the top menu bar, select **Create**. The **Create a resource group** pane appears.
+1. Select **Create**. The **Create a resource group** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     |---|---|
     | **Project details** |
-    | Subscription | From the dropdown list, select your account's subscription  |
+    | Subscription | From the dropdown list, select your account's subscription. |
     | Resource group | Enter *production-learn-rg* |
     | **Resource details** |
     | Region | From the dropdown list, select a location close to you. |
@@ -65,7 +65,7 @@ Now, create some more resources that you can eventually move to a development re
 
 1. Accept the remaining default values.
 
-1. Select **Review + create**. After validation passes, select **Create**. Wait for deployment to complete.
+1. Select **Review**. After validation passes, select **Create**. Wait for deployment to complete.
 
 1. Create another storage account with a unique name by repeating the storage account creation steps again. Wait for deployment to complete.
 
