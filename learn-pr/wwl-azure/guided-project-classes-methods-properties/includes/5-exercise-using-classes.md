@@ -222,7 +222,7 @@ void Print(Game game)
 
 ## Housekeeping
 
-The last thing you need to do is delete the testing code you created. In your testing code you create a Game object, make calls to the Print method where you pass in the Game object, call the NextGeneration method and, finally, print the state of the game. You're done with testing code, however, and can delete it.
+The last thing you need to do is delete the testing code you created. In your testing code, you create a Game object, make calls to the Print method where you pass in the Game object, call the NextGeneration method and, finally, print the state of the game. You're done with testing code, however, and can delete it.
 
 You can now need to create an instance of the game below the 'using LangtonsAnts' statement. You can put your call into the Print method just below it.
 
@@ -257,7 +257,7 @@ To sum up, you have removed your previous testing code and now create a game obj
 
 ## Modify the Game.cs file
 
-Make an adjustment to the creation of your ants array in the Game.cs file. As you're now getting your ants from an Ants array, you no longer need the '+ 1'. You're now using what is called a 'FirstOrDefault' method on the collection, which isn't a 0 based collection, but starts with the number 1. As such, the creation of an ant doesn't need the help of a '+ 1'. The collection from 'FirstOrDefault' starts with the number 1.
+Make an adjustment to the creation of your ants array in the Game.cs file. As you're now getting your ants from an Ants array, you no longer need the '+ 1'. You're now using a 'FirstOrDefault' method on the collection, which isn't a 0 based collection, but starts with the number 1. As such, the creation of an ant doesn't need the help of a '+ 1'. The collection from 'FirstOrDefault' starts with the number 1.
 
 1. Open the Game.cs file.
 
@@ -279,9 +279,9 @@ Make an adjustment to the creation of your ants array in the Game.cs file. As yo
 
 ## Read user input
 
-The last thing on the agenda is to create a 'do...While' loop to read user input while playing the game. To do this, you'll start by creating a nullable string variable called 'input' in your Program.cs file.
+The last thing on the agenda is to create a 'do...While' loop to read user input while playing the game. You'll start by creating a nullable string variable called 'input' in your Program.cs file.
 
-The While clause in your 'do...While' loop will check the input variable to see if the user has entered anything from the keyboard. If they have not entered anything, the loop will execute, running the 'game.NextGeneration()' and 'Print(game)' methods, and prompting the user with 'Console.WriteLine' messages. Let's get started.
+The While clause in your 'do...While' loop will check the input variable to see if the user has entered anything from the keyboard. If they haven't entered anything, the loop will execute, running the 'game.NextGeneration()' and 'Print(game)' methods, and prompting the user with 'Console.WriteLine' messages. Let's get started.
 
 1. Open your Program.cs file.
 

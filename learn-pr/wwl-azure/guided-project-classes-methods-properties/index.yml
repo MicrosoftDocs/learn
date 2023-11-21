@@ -13,6 +13,7 @@ summary: |
   This module guides you through the steps required to begin building the LangtonsAnts demonstration. It sets up the application and then begins adding the classes, methods, and properties the application requires.
   [!INCLUDE [](../../includes/wwl/guided-project-notes.md)]
 abstract: |
+  After completing this module, you will be able to:
   - Create a console application
   - Create and Ant class and add properties and a constructor
   - Read user input in a loop

@@ -16,7 +16,7 @@ Let's begin by creating a new VS Code console application project.
 
 1. Open your new project in VS Code by typing: 'code .' and press enter.
 
-This will open VS Code with the project you created. Now you can launch a terminal window inside VS Code and run your starter 'Hello World' application to make sure you created your console application correctly.
+VS Code will open the project you created. Now you can launch a terminal window inside VS Code and run your starter 'Hello World' application to make sure you created your console application correctly.
 
 1. From the View menu, select Terminal.
 
