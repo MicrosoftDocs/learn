@@ -14,4 +14,4 @@ Azure Migrate: App Containerization helps you to:
 
 ![App Containerization process overview](../media/process-overview.png)
 
-In the next sections of this module, you'll setup a sample two-tier ASP.NET web application and use Azure Migrate: App Containerization to containerize and migrate the application to App Service. 
+In the next sections of this module, you'll set up a sample two-tier ASP.NET web application and use Azure Migrate: App Containerization to containerize and migrate the application to App Service. 
