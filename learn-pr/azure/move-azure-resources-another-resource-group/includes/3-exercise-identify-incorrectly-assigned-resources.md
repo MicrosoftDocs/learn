@@ -4,13 +4,13 @@ In this unit, you create both development and production resources, and put them
 
 [!include[](../../../includes/azure-subscription-prerequisite.md)]
 
-## Create resources
+## Create a resource group
 
 Create a resource group to act as the production resource group.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. On the home page, select **Create a resource**. Search for and select **Resource group**. The **Resource group** pane appears.
+1. On the home page, select **Create a resource**. Search for and select **Resource group** from the **Marketplace** pane. The **Resource group** pane appears.
 
 1. Select **Create**. The **Create a resource group** pane appears.
 
@@ -26,24 +26,29 @@ Create a resource group to act as the production resource group.
 
 1. Select **Review + create**. After validation passes, select **Create**.
 
-1. Use the following quickstart template to create a virtual machine (VM) in your production resource group: [Create a VM from the referenced image on Azure Stack HCI](https://azure.microsoft.com/resources/templates/vm-simple-windows/).
+## Create a resource
 
-1. Select **Deploy to Azure** on the template page. The **Deploy a simple Windows VM** pane appears.
+Create a storage account resource for production.
+
+1. Return to the Azure portal home page, and under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+
+1. In the search box, search for and select **Storage account**, and select **Create**. The **Create a storage account** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     |---|---|
     | **Project details** |
-    | Subscription | From the dropdown list, select your account's subscription |
+    | Subscription | From the dropdown list, select your account's subscription  |
     | Resource group | From the dropdown list, select *production-learn-rg* |
     | **Instance details** |
-    | Admin Username | Enter a unique username |
-    | Admin Password | Enter a unique password |
+    | Storage account name | Enter a unique storage account name that starts with the prefix *prod* |
 
 1. Accept the remaining default values.
 
-1. Select **Review + create**. After validation passes, select **Create**. Wait for deployment to complete.
+1. Select **Review**. After validation passes, select **Create**. Wait for deployment to complete.
+
+You now have a production resource group with a production storage account resource.
 
 ## Create more resources
 
@@ -79,7 +84,7 @@ Now, use the Azure portal to apply tags to resources so you can identify and loc
 
 1. Select the **production-learn-rg** resource group. The *production-learn-rg* resource group pane appears.
 
-1. Select the check box next to the **Name** field for both storage accounts you created.
+1. Select the check box next to the **Name** field for both of the *dev* storage accounts you created.
 
     ![Screenshot that shows your development resources selected.](../media/3-select-dev-resources.png)
 
@@ -96,7 +101,7 @@ Now, use the Azure portal to apply tags to resources so you can identify and loc
 
 1. Select **Save**. Your resources are now tagged with *development*.
 
-1. Repeat these steps to assign the following tag to the remaining resources.
+1. Repeat these steps to assign the following tag to the remaining *prod* resource.
 
     | Setting | Value  |
     |---------|---------|

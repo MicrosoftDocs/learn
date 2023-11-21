@@ -57,7 +57,7 @@ Now that a *devgroup* resource group is created, you can move your development r
 
 1. On the **Review** tab, check the disclaimer box, and then select **Move**.
 
-    The move might take a few minutes. Wait for the notification that your resource has moved. The notification appears in the top-right hand section of the portal.
+    The move might take a few minutes. Wait for the "Moving resources complete" notification that confirms your resource is scucessfuly moved. The notification appears in the top-right hand section of the portal.
 
 1. Repeat this process again to move the other storage account.
 
@@ -67,7 +67,7 @@ To confirm that your move operations are successful:
 
 1. Select **devgroup**. The *devgroup* Resource group pane appears.
 
-    Notice that the development resources have been moved to the *devgroup* resource group.
+    Notice that the development resources are now moved to the *devgroup* resource group.
 
     ![Screenshot that shows resources moved.](../media/7-exercise-resources-moved.png)
 
