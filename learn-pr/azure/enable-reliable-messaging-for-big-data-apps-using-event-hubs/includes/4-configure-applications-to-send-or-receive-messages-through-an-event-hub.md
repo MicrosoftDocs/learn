@@ -4,7 +4,7 @@ For example, a payment processing solution uses some form of a sender applicatio
 
 There are differences in how a Java application is configured, when compared to a .NET application. However, the principles are the same for enabling applications to connect to an event hub, and to successfully send or receive messages.
 
-## What are the minimum Event Hubs requirements for configuring an application?
+## What minimum requirements does Event Hubs have for configuring an application?
 
 To configure an application to send messages to an event hub, provide the following information, so that the application can create connection credentials:
 

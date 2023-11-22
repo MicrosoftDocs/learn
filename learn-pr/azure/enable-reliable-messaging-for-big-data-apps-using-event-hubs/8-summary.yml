@@ -26,16 +26,16 @@ quiz:
  
   - content: "By default, how many partitions does a new event hub have?"
     choices:
-    - content: "1"
+    - content: "One"
       isCorrect: false
       explanation: "Event Hubs default to four partitions. Partitions are the buckets within an event hub. Each publication goes into only one partition. Each consumer group might read from one or more than one partition."
-    - content: "2"
+    - content: "Two"
       isCorrect: false
       explanation: "Event Hubs default to four partitions. Partitions are the buckets within an event hub. Each publication goes into only one partition. Each consumer group might read from one or more than one partition."
-    - content: "3"
+    - content: "Three"
       isCorrect: false
       explanation: "Event Hubs default to four partitions. Partitions are the buckets within an event hub. Each publication goes into only one partition. Each consumer group might read from one or more than one partition."
-    - content: "4"
+    - content: "Four"
       isCorrect: true
       explanation: "Event Hubs default to four partitions. Partitions are the buckets within an event hub. Each publication goes into only one partition. Each consumer group might read from one or more than one partition."
  

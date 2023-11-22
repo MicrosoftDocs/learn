@@ -6,7 +6,7 @@ An event hub is an Azure resource, so your first step is to create a new hub in 
 
 Azure [Event Hubs](https://azure.microsoft.com/services/event-hubs/) is a cloud-based, event-processing service that can receive and process millions of events per second. Event Hubs acts as a front door for an event pipeline, it receives incoming data and stores this data until processing resources are available.
 
-An entity that sends data to your event hub is called a *publisher*, and an entity that reads data from an event hub is called a *consumer*, or a *subscriber*. Your event hub sits between the publisher and subscriber to divide the production (from the publisher) and consumption (to a subscriber) of an event stream. This decoupling helps to manage scenarios where the rate of event production is considerably higher than the consumption. The following illustration shows the role of an event hub.
+An entity that sends data to your event hub is called a *publisher*, and an entity that reads data from an event hub is called a *consumer*, or a *subscriber*. Your event hub sits between the publisher and subscriber to divide the production (from the publisher) and consumption (to a subscriber) of an event data stream. This decoupling helps to manage scenarios where the rate of event production is considerably higher than the consumption. The following illustration shows the role of an event hub.
 
 ![An illustration showing an Azure event hub placed between four publishers and two subscribers. The event hub receives multiple events from the publishers, serializes the events into data streams, and makes the data streams available to subscribers.](../media/2-event-hub-overview.png)
 
@@ -29,7 +29,7 @@ Event subscribers are apps that use one of two supported programmatic methods to
 
 ### Consumer groups
 
-An event hub **consumer group** represents a specific view of an event hub data stream. When you use separate consumer groups, multiple subscriber apps can process an event stream independently, and without affecting other apps. However, the use of many consumer groups isn't a requirement, and for many apps, the single default consumer group is sufficient.
+An event hub **consumer group** represents a specific view of an event hub data stream. When you use separate consumer groups, multiple subscriber apps can process an event data stream independently, and without affecting other apps. However, the use of many consumer groups isn't a requirement, and for many apps, the single default consumer group is sufficient.
 
 ### Pricing
 
@@ -45,7 +45,7 @@ An Event Hubs namespace is a container for managing one or more event hubs. Crea
 
 ### Define namespace-level settings
 
-Namespace capacity (configured using **throughput units** for the standard tier), pricing tier, and performance metrics are defined at the namespace level. These settings apply to all the event hubs within that namespace. If you don't define these settings, a default value is used: *1* for capacity and *Standard* for pricing tier.
+Namespace capacity (configured using **throughput units** for the standard tier), pricing tier, and performance metrics are defined at the namespace level. These settings apply to all the event hubs within that namespace. If you don't define these settings, a default value is used: `1` for capacity and `Standard` for pricing tier.
 
 Keep the following aspects in mind:
 
@@ -53,7 +53,7 @@ Keep the following aspects in mind:
 
 - You might consider configuring different event hubs for different throughput requirements. For example, if you have a sales data app, and you're planning for two event hubs, it would make sense to use a separate namespace for each hub.  
 
-  You configure one namespace for high throughput collection of real-time sales data telemetry and one namespace for infrequent event log collection. This way, you only need to configure (and pay for) high throughput capacity on the telemetry hub.
+  You configure one namespace for high throughput collection of real-time sales data and one namespace for infrequent event log collection. This way, you only need to configure (and pay for) high throughput capacity on the real-time sales data hub.
 
   1. Select a unique name for the namespace. The namespace is accessible through this URL: *_namespace_.servicebus.windows.net*
 

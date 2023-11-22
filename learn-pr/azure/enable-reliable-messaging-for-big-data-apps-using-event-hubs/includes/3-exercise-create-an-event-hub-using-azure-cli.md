@@ -2,7 +2,7 @@ You're now ready to create a new event hub. After creating it with Azure CLI com
 
 ## Create an Event Hubs namespace
 
-Let's create an Event Hubs namespace using Azure CLI and Bash in Azure Cloud Shell to the right.
+Let's create an Event Hubs namespace using Azure CLI and Bash in Azure Cloud Shell on the right.
 
 1. First, let's assign default values that can be reused so that you don't have to enter these values with every command. In particular, let's set the *resource group* and *location*. Enter the following command in Cloud Shell, and feel free to replace the location value with a region close to you.
   
@@ -97,7 +97,7 @@ Next, let's see what our event hub looks like in the Azure portal.
 
 1. In the middle menu pane, under **Entities**, select **Event Hubs**. The **Event Hubs** pane appears with list of event hubs in your namespace.
 
-    Your event hub is listed, showing the status (**Active**), and the expected default values for **Message Retention** (*7 days*) and **Partition Count** (*4*).
+    Your event hub is listed, showing the status (**Active**), and the expected default values for **Message retention** (*7 days (168 hours)*) and **Partition count** (*4*).
 
     ![Event Hub displayed in the Azure portal.](../media/3-event-hub.png)
 
