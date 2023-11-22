@@ -1,39 +1,46 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-reliability.4-backup-restore
-title: Processes for backup and restore
+uid: learn.azure-well-architected-reliability.4-design-for-recovery
 metadata:
-  title: Processes for backup and restore
-  description: Use backup and restore to help protect your data by defining requirements, testing processes, and learning about Azure backup and restore services.
-  ms.date: 05/19/2020
-  author: robbyatmicrosoft
-  ms.author: martinek
+  title: Design for recovery
+  description: Learn strategies for designing your Azure workload to support recovery.
+  ms.date: 12/31/2023
+  author: claytonsiemens77
+  ms.author: csiemens
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-backup-restore.md)]
+  [!include[](includes/4-design-for-recovery.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Do all Azure data storage options include automatic data backup?"
+  - content: "Which of the following is an example of a section you might find in a recovery plan?"
     choices:
-    - content: "Yes."
+    - content: ""
       isCorrect: false
-      explanation: "Some Azure data storage products, such as Azure Blob Storage, don't include automatic backups."
-    - content: "No."
+      explanation: "TBD"
+    - content: ""
+      isCorrect: false
+      explanation: "TBD"
+    - content: ""
+      isCorrect: false
+      explanation: "TBD"
+    - content: "TBD"
       isCorrect: true
-      explanation: "Most Azure services offer integrated backup, but it's not always enabled by default. You can add services like Azure Backup Agent as needed to make sure all your data is protected."
-  - content: "Which of the following goals doesn't directly relate to regular backup and restore process testing?"
+      explanation: "TBD"
+  - content: "TBD"
     choices:
-    - content: "Validate the integrity of your backups."
+    - content: "TBD"
       isCorrect: false
-      explanation: "Regular restore testing lets you validate the integrity of your backups."
-    - content: "Become familiar with your restoration process."
-      isCorrect: false
-      explanation: "Testing restores regularly lets you become more familiar with the restoration process."
-    - content: "Identify gaps in your backup and restore processes."
-      isCorrect: false
-      explanation: "Regular testing helps you identify gaps or problems in your backup and restore processes."
-    - content: "Determine the relative importance of your data types."
+      explanation: "TBD"
+    - content: "TBD"
       isCorrect: true
-      explanation: "Determining your data types and their relative importance is part of backup and restore planning, not testing existing processes."
+      explanation: "TBD"
+  - content: "TBD"
+    choices:
+    - content: "TBD"
+      isCorrect: false
+      explanation: "TBD"
+    - content: "TBD"
+      isCorrect: true
+      explanation: "TBD"
