@@ -23,7 +23,7 @@ HDInsight on AKS provides several benefits for organizations that are working wi
 
 - **Open-source**: Enables you to create optimized clusters for various open-source frameworks.
 - **Reliable**: Provides an end-to-end SLA for all production workloads.
-- **Auto Scale**: Enables you to Load based [Auto Scale](https://learn.microsoft.com/en-us/azure/hdinsight-aks/hdinsight-on-aks-autoscale-clusters#create-a-cluster-with-load-based-auto-scale), and Schedule based [Auto Scale](https://learn.microsoft.com/en-us/azure/hdinsight-aks/hdinsight-on-aks-autoscale-clusters#create-a-cluster-with-load-based-auto-scale) workloads to respond to demand changes. And also enables you to protect your enterprise data assets through integration with:
+- **Auto Scale**: Enables you to Load based [Auto Scale](https://learn.microsoft.com/azure/hdinsight-aks/hdinsight-on-aks-autoscale-clusters#create-a-cluster-with-load-based-auto-scale), and Schedule based [Auto Scale](https://learn.microsoft.com/azure/hdinsight-aks/hdinsight-on-aks-autoscale-clusters#create-a-cluster-with-load-based-auto-scale) workloads to respond to demand changes. And also enables you to protect your enterprise data assets through integration with:
   - Azure Virtual Network
   - Azure encryption technologies
   - Microsoft Entra ID
@@ -31,11 +31,11 @@ HDInsight on AKS provides several benefits for organizations that are working wi
   > [!TIP]
    > By creating clusters on demand, you can reduce your costs. You pay only for what you use.
   
-- **Security**: Support for ARM RBAC, Support for MSI based authentication, Option to provide [cluster access](https://learn.microsoft.com/en-us/azure/hdinsight-aks/hdinsight-on-aks-manage-authorization-profile) to other users.
-- **Storage**: ADLS Gen2 [Storage support](https://learn.microsoft.com/en-us/azure/hdinsight-aks/cluster-storage).
+- **Security**: Support for ARM RBAC, Support for MSI based authentication, Option to provide [cluster access](https://learn.microsoft.com/azure/hdinsight-aks/hdinsight-on-aks-manage-authorization-profile) to other users.
+- **Storage**: ADLS Gen2 [Storage support](https://learn.microsoft.com/azure/hdinsight-aks/cluster-storage).
 
-- **Metastore**: External Metastore support for [Trino](https://learn.microsoft.com/en-us/azure/hdinsight-aks/trino/trino-connect-to-metastore), [Spark](https://learn.microsoft.com/en-us/azure/hdinsight-aks/spark/use-hive-metastore) and [Flink](https://learn.microsoft.com/en-us/azure/hdinsight-aks/flink/use-hive-metastore-datastream), Integrate with [HDInsight](https://learn.microsoft.com/en-us/azure/hdinsight-aks/overview#connectivity-to-hdinsight).
-- **Logging and Monitoring**: Log aggregation in Azure [log analytics](https://learn.microsoft.com/en-us/azure/hdinsight-aks/how-to-azure-monitor-integration), for server logs, Cluster and Service metrics via [Managed Prometheus and Grafana](https://learn.microsoft.com/en-us/azure/hdinsight-aks/monitor-with-prometheus-grafana), Support server metrics in [Azure monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/overview), Service Status page for monitoring the Service health
+- **Metastore**: External Metastore support for [Trino](https://learn.microsoft.com/azure/hdinsight-aks/trino/trino-connect-to-metastore), [Spark](https://learn.microsoft.com/azure/hdinsight-aks/spark/use-hive-metastore) and [Flink](https://learn.microsoft.com/azure/hdinsight-aks/flink/use-hive-metastore-datastream), Integrate with [HDInsight](https://learn.microsoft.com/azure/hdinsight-aks/overview#connectivity-to-hdinsight).
+- **Logging and Monitoring**: Log aggregation in Azure [log analytics](https://learn.microsoft.com/azure/hdinsight-aks/how-to-azure-monitor-integration), for server logs, Cluster and Service metrics via [Managed Prometheus and Grafana](https://learn.microsoft.com/azure/hdinsight-aks/monitor-with-prometheus-grafana), Support server metrics in [Azure monitor](https://learn.microsoft.com/azure/azure-monitor/overview), Service Status page for monitoring the Service health
 
 ## Concept in HDInsight on AKS
 
