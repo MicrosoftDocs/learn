@@ -4,12 +4,12 @@ Today, retail companies face external pressures to keep up with the speed of com
 
 When retail organizations implement AI solutions, they usually pursue these business goals.
 
-* **Boost business and financial KPIs:** At the end of the day, any AI initiative must result in tangible benefits, such as cost savings or a positive ROI. You should be able to measure AI success.
-* **Improve customer experience:** AI offers many options to take care of customers in new or more efficient ways.
-* **Streamline processes:** Optimization use cases are a typical scenario for AI. Many retail processes can be simplified and made more efficient with AI solutions.
-* **Increase speed and scale:** Sales results greatly depend on how large your audience is and how fast you can reach it. AI can allow you to reduce your time to market and the size of your audience.
-* **Empower and serve digital natives:** Audiences are changing, partly because younger generations buy differently and have different expectations when shopping. Incorporating AI into the experience can help attract and retain these customers.
-* **Facilitate returns:** Order returns are an inevitable part of the online shopping experience. However, their logistics are often challenging as you need to reverse the order’s last mile. AI systems enable you to track these orders.
+* **Boost business and financial KPIs**: At the end of the day, any AI initiative must result in tangible benefits, such as cost savings or a positive ROI. You should be able to measure AI success.
+* **Improve customer experience**: AI offers many options to take care of customers in new or more efficient ways.
+* **Streamline processes**: Optimization use cases are a typical scenario for AI. Many retail processes can be simplified and made more efficient with AI solutions.
+* **Increase speed and scale**: Sales results greatly depend on how large your audience is and how fast you can reach it. AI can allow you to reduce your time to market and the size of your audience.
+* **Empower and serve digital natives**: Audiences are changing, partly because younger generations buy differently and have different expectations when shopping. Incorporating AI into the experience can help attract and retain these customers.
+* **Facilitate returns**: Order returns are an inevitable part of the online shopping experience. However, their logistics are often challenging as you need to reverse the order’s last mile. AI systems enable you to track these orders.
 
 ## Challenge
 
