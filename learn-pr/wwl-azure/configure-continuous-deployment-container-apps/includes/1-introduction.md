@@ -1,4 +1,4 @@
-This module covers the use of Azure Pipelines to automate build, test, and deployment processes.
+This module describes the continuous deployment options for container apps in Azure Container Apps. The module covers how to use Azure Pipelines to automate build, test, and deployment processes. The module also describes how to use environment and secret variables in your pipelines.
 
 ## Scenario
 
