@@ -51,6 +51,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/achievements/learn.add-sign-in-support-python-webapp-identity-platform.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/aks-deploy-container-app/6-expose-app.yml",
       "redirect_url": "/training/modules/aks-deploy-container-app",
       "redirect_document_id": false
