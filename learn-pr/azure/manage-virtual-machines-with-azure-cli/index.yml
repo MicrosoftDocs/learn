@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/08/2023
   author: cynthn
   ms.author: cynthn
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-cli
 title: Manage virtual machines with the Azure CLI
 summary: Learn how to use the cross-platform Azure CLI to create, start, stop, and perform other management tasks related to virtual machines in Azure.
