@@ -35,14 +35,14 @@ quiz:
     - content: "Make sure that an ant is within the grid (I and J represent the lower and upper bound x, y coordinates)"
       isCorrect: true
       explanation: "Correct. This line of code is checking to see if an ant is still on the grid"
-  - content: "Why did you use the Langton Ant project as an exercise?"
+  - content: "Why use the Langton Ant project as an exercise?"
     choices:
     - content: "To learn something about Alan Turing and the universal Turing machine"
       isCorrect: false
-      explanation: "Incorrect. Although you may do your own research on Alan Turing, he was not the only reason for this exercise"
-    - content: "To learn about how to create and use classes, methods, and properties"
+      explanation: "Incorrect. Although you may do your own research on Alan Turing, he was not the primary reason for this exercise"
+    - content: "To understand that by mimicking the behavior of ants we can learn to write better code"
       isCorrect: false
-      explanation: "Incorrect. Although close, this exercise was not solely about the previously mentioned aspects of object-oriented programming"
-    - content: "All of the above"
+      explanation: "Incorrect. This exercise was about learning to write better code by obesrving ants."
+    - content: "To learn about how to create and use classes, methods, and properties"
       isCorrect: true
-      explanation: "Correct. This exercise was about all three: Alan Turing, Langton's Ant, and how to code a fun project using your newly acquired skills"
+      explanation: "Correct. This exercise was about learning to write code using object-oriented programming techniques."

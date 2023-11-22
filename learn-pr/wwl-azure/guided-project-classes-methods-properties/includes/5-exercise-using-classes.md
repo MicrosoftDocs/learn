@@ -4,7 +4,7 @@ In this last exercise, you make your game field, or grid, look a little nicer. T
 
 In your Program.cs file, you begin by modifying the 'for' loops you created earlier in the Print method, replacing the zeros with a character. Start by removing that line in your inner 'for' loop.
 
-1. Delete the Console.Write($"{game.Field[i, j]}  ") in your inner loop and replace it with the following line 'char fieldChar = '░';'.
+1. Delete the `Console.Write($"{game.Field[i, j]}  ")` in your inner loop and replace it with the following line 'char fieldChar = '░';'.
 
 1. Now check to see if an ant exists in your collection at the current location by adding the following line, 'Ant? ant = game.Ants.FirstOrDefault(a => (i == a.I) && (j == a.J))'.
 
@@ -172,7 +172,7 @@ In your Program.cs file, you begin by modifying the 'for' loops you created earl
 
 ## Clean up Console.WriteLine statements
 
-As you have substantially modified this method, you must rearrange the Console.WriteLine statements that you created earlier so they output 'fieldChar' correctly. The 'fieldChar' you just added to the Console.WriteLine statement needs to come just after the 'else' clause. And the next Console.WriteLine is part of the outer 'for' loop. The first line, after your Print method, is also a Console.WriteLine. You can delete this line.
+As you have substantially modified this method, you must rearrange the Console.WriteLine statements that you created earlier so they output 'fieldChar' correctly. The 'fieldChar' you just added to the Console.WriteLine statement needs to come just after the 'else' clause. And the next Console.WriteLine is part of the outer 'for' loop. The line, after your Print method, is also a Console.WriteLine. You can delete this line.
 
 Your code should look like this.
 
@@ -377,7 +377,7 @@ In this task, you save build and run the code to verify the output is correct.
 
 1. Type __dotnet run__ and press Enter.
 
-Your output should look like this.
-![Screenshot showing VS Code output.](../media/guided-proj-3.jpg)
+    Your output should look like this.
+    ![Screenshot showing VS Code output.](../media/guided-proj-3.jpg)
 
 Now that you have added code to read user input, you should be able to press Enter to create and display new instances of the game.

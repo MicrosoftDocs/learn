@@ -16,3 +16,7 @@ The "ant" moves according to these rules:
 
 - At a white square, turn 90° clockwise, flip the color of the square, move forward one unit
 - At a black square, turn 90° counter-clockwise, flip the color of the square, move forward one unit
+
+## Setup
+
+You are just embarking on writing the LangtonsAnts code, therefore, there is no previous code that needs to be set up. You need to be sure that you are using the latest version of VS Code and that you are using .NET version 7 or above.

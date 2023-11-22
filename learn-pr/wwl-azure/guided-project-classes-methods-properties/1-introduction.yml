@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.guided-project-classes-methods-properties.introduction
-title: Guided Project
+title: Introduction
 metadata:
-  title: Guided Project
+  title: Introduction
   description: "The purpose of this lesson is to begin building the LangtonsAnts project using classes and methods."
   ms.date: 11/22/2023
   author: wwlpublish
