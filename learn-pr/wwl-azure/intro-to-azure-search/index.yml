@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/26/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: azure
 title: Fundamentals of Knowledge Mining with Azure Cognitive Search
 summary: Use Azure Cognitive Search to make your data searchable.
