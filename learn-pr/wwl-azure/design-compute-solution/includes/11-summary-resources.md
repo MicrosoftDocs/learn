@@ -42,6 +42,6 @@ In this module, you learned how to choose and recommend an Azure compute solutio
 
 - Create a [Windows virtual machine (sandbox)](/training/modules/create-windows-virtual-machine-in-azure/).
 
-- Create the [social media tracker Logic App (sandbox)](/training/modules/route-and-process-data-logic-apps/).
+- Create the [social media tracker Logic App](/training/modules/route-and-process-data-logic-apps/). _(Azure subscription required.)_
 
 - Host a [web application with Azure App Service (sandbox)](/training/modules/host-a-web-app-with-azure-app-service/).
