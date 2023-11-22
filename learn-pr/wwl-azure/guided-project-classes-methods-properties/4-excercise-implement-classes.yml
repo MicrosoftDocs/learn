@@ -4,10 +4,11 @@ title: Exercise - Implement classes
 metadata:
   title: Exercise - Implement classes
   description: "Create the main classes for the LangtonsAnts application."
-  ms.date: 11/21/2023
+  ms.date: 11/22/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: unit
+  ms.technology: (empty)
 durationInMinutes: 20
 content: |
   [!include[](includes/4-excercise-implement-classes.md)]

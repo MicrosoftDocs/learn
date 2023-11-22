@@ -8,7 +8,7 @@ Let's begin by creating a new VS Code console application project.
 
 1. Open a command prompt on your desktop in the directory of your choosing for the project.
 
-1. Verify that you're using the .NET 6.0 or above by typing 'dotnet --version' and pressing enter.
+1. Verify that you're using the .NET 6.0 or above by typing `dotnet --version` and pressing enter.
 
 1. Create your project by typing the type of application you want to create, its directory, and name for your application: 'dotnet new console -o LangtonsAnts' and press enter.
 

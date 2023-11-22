@@ -168,7 +168,7 @@ As you may notice, your Ant class implements the game mechanics and the movement
 
 ## Add Game class
 
-You'll now create your Game class and add a few properties to it. The Game class holds information about the state of the game. The state of the game is described by a generation number, the game field, and an ant instances collection.
+You'll now create your Game class and add a few properties to it. The Game class holds information about the state of the game. The state of the game has a generation number, the game field, and an ant instances collection.
 
 1. Select the Game folder, then select the New File icon.
 
@@ -277,7 +277,7 @@ namespace LangtonsAnts
 
 ## Add a constructor
 
-Add a constructor that sets a default 'size' variable to 64 for the two dimensional byte array that is your playing field. You'll also now initialize your 'Field' and 'Ants' properties. This should make the 'Non-nullable' errors you have been seeing go away.
+Add a constructor that sets a default 'size' variable to 64 for the two dimensional byte array that is your playing field. You'll also now initialize your 'Field' and 'Ants' properties. Adding these items should make the 'Non-nullable' errors you have been seeing go away.
 
 ```csharp
 namespace LangtonsAnts
@@ -366,7 +366,7 @@ if (ant.I < 0 || ant.J < 0 || ant.J >= Size || ant.I >= Size)
 }
 ```
 
-The next several lines of code essentially swap out the old grid value (initially a 0) and replace it with the new one (initially a 1), now that the ant has landed on it. The first thing you do is take the newField variable you created which is our entire grid and grab the individual cell the ant is currently on.
+The next several lines of code essentially swap out the old grid value (initially a `0`) and replace it with the new one (initially a `1`), now that the ant has landed on it. The first thing you do is take the newField variable you created which is our entire grid and grab the individual cell the ant is currently on.
 
 6. Add the following line below the `if` statement `byte v = newField[ant.I, ant.J];`.
 
@@ -426,7 +426,7 @@ The next several lines of code essentially swap out the old grid value (initiall
 
 ## Rewrite Program.cs to print game state
 
-Your final task for this exercise is to rewrite the Program.cs file so that it prints the state of the game. You'll do this by creating a Print method that takes a Game object and putting your existing print code inside the new method, changing the 'field' byte array to 'game.Field' so that it is now associated with an instance of the game.
+Your final task for this exercise is to rewrite the Program.cs file so that it prints the state of the game. Create a Print method that takes a Game object. Put your existing print code inside the new method, changing the 'field' byte array to `game.Field`, so that it's now associated with an instance of the game.
 
 1. Delete the 'field' byte array ('int[,] field = new int[16, 16];') we created in Program.cs to demo the playing field.
 
@@ -508,7 +508,7 @@ Now you should be ready to create an instance of the Game class and call NextGen
     Game game = new Game(16);
     ```
 
-1. Now add several calls to your 'Print' method, passing it the 'Game' object ('game') you created, then call the 'NextGeneration()' property on the game ('game.NextGeneration') to create additional ants.
+1. Now add several calls to your 'Print' method, passing it the 'Game' object ('game') you created, then call the 'NextGeneration()' property on the game ('game.NextGeneration') to create more ants.
 
     ```csharp
     void Print(Game game)
@@ -545,6 +545,6 @@ Now you should be ready to create an instance of the Game class and call NextGen
 
 1. Run your code, 'dotnet run'.
 
-1. Compare your output. It should look similar to the output below, with the game field being output three times. Each game field changes with each generation according to the LangtonsAnts rules.
+1. Compare your output. It should look similar to the output shown, with the game field being output three times. Each game field changes with each generation according to the LangtonsAnts rules.
 
 ![Screenshot showing VS Code output.](../media/guided-proj-2.jpg)

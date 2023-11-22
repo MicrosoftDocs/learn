@@ -172,7 +172,7 @@ In your Program.cs file, you begin by modifying the 'for' loops you created earl
 
 ## Clean up Console.WriteLine statements
 
-As you have substantially modified this method, you need to rearrange the Console.WriteLine statements that you created earlier so they output 'fieldChar' correctly. The 'fieldChar' you just added to the Console.WriteLine statement needs to come just after the 'else' clause. And the next Console.WriteLine is part of the outer 'for' loop. The first line, after your Print method, is also a Console.WriteLine. You can delete this line.
+As you have substantially modified this method, you must rearrange the Console.WriteLine statements that you created earlier so they output 'fieldChar' correctly. The 'fieldChar' you just added to the Console.WriteLine statement needs to come just after the 'else' clause. And the next Console.WriteLine is part of the outer 'for' loop. The first line, after your Print method, is also a Console.WriteLine. You can delete this line.
 
 Your code should look like this.
 
@@ -222,9 +222,9 @@ void Print(Game game)
 
 ## Housekeeping
 
-The last thing you need to do is delete the testing code you created. In your testing code, you create a Game object, make calls to the Print method where you pass in the Game object, call the NextGeneration method and, finally, print the state of the game. You're done with testing code, however, and can delete it.
+The last thing you need to do is delete the testing code you created. In your testing code, you create a Game object, make calls to the Print method where you pass in the Game object, call the NextGeneration method and, finally, print the state of the game. You can delete this code.
 
-You can now need to create an instance of the game below the 'using LangtonsAnts' statement. You can put your call into the Print method just below it.
+You now need to create an instance of the game below the 'using LangtonsAnts' statement. You can put your call into the Print method just below it.
 
 1. Delete the following lines at the bottom of your Program.cs file.
 
@@ -257,7 +257,7 @@ To sum up, you have removed your previous testing code and now create a game obj
 
 ## Modify the Game.cs file
 
-Make an adjustment to the creation of your ants array in the Game.cs file. As you're now getting your ants from an Ants array, you no longer need the '+ 1'. You're now using a 'FirstOrDefault' method on the collection, which isn't a 0 based collection, but starts with the number 1. As such, the creation of an ant doesn't need the help of a '+ 1'. The collection from 'FirstOrDefault' starts with the number 1.
+Make an adjustment to the creation of your ants array in the Game.cs file. As you're now getting your ants from an Ants array, you no longer need the '+ 1'. You're now using a 'FirstOrDefault' method on the collection, which isn't a `0` based collection, but starts with the number `1`. As such, the creation of an ant doesn't need the help of a '+ 1'. The collection from 'FirstOrDefault' starts with the number `1`.
 
 1. Open the Game.cs file.
 
@@ -269,7 +269,7 @@ Make an adjustment to the creation of your ants array in the Game.cs file. As yo
     }
     ```
 
-1. Remove the '+ 1's being passed in the constructor.
+1. Remove the `+ 1`s passed in the constructor.
 
     ```csharp
     Ants = new Ant[] {
