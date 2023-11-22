@@ -1,6 +1,6 @@
 In this exercise, you examined some of the reporting and logging resources that you configured earlier in this module. You review the metrics, alerts, and diagnostic log event data has been recorded in the short time that has elapsed.
 
-## Task 1: See the Metrics in the portal
+## Task 1: See the metrics in the portal
 
 In order to generate the alert where the number of connected devices is less than one, the device simulator app must be closed.
 
@@ -51,7 +51,7 @@ To use the portal to review alerts, complete the following steps.
 
 1. Under **Name**, to select metrics alert details about your 3 - Informational alert, select **Connected Devices Less than 1**.
 
-    A pane opens showing a **Summary** of the details for the alert. This pane includes a chart illustrating why the alert fired - a dash line shows the threshold value and the current values for the monitored metric. Below this are additional details.
+    A pane opens showing a **Summary** of the details for the alert. This pane includes a chart illustrating why the alert fired. A dash line shows the threshold value and the current values for the monitored metric. Below this are additional details.
 
 1. At the top of the pane, below the title, select **History**.
 
@@ -64,7 +64,7 @@ To use the portal to review alerts, complete the following steps.
     > [!NOTE]
     > As it takes a few minutes to resolve the alert, continue with the remaining tasks.
 
-## Task 3: See the Diagnostic Logs
+## Task 3: See the diagnostic logs
 
 Earlier in this lab, you set up your diagnostic logs to be exported to Blob Storage. It's a good time to check and see what was written.
 
@@ -136,12 +136,12 @@ Earlier in this lab, you set up your diagnostic logs to be exported to Blob Stor
 
     Notice that each individual entry is a single JSON record, although the overall document is not a valid JSON document as the JSON objects aren't declared within a JSON array **[ ]** and comma separated. Within each record you can see details relating to the originating IoT Hub and **properties** for each event. Within the **properties** object, you can see the connecting (or disconnecting) **deviceId**.
 
-## Task 4: Review resolved Alert
+## Task 4: Review resolved alert
 
 By this point, you should have received an email or SMS indicating the Monitor Alert is resolved. Complete the following steps to review the resolved alert in the portal.
 
 > [!NOTE]
-> If you have not yet received the email or SMS - wait until they arrive before proceeding.
+> If you have not yet received the email or SMS, wait until they arrive before proceeding.
 
 1. In the portal, navigate to your dashboard.
 
@@ -165,7 +165,7 @@ By this point, you should have received an email or SMS indicating the Monitor A
 
 1. Under **Name**, select the latest **Connected Devices Less than 1** alert.
 
-    A pane opens showing a **Summary** of the details for the alert. As before, this includes a chart illustrating why the alert fired - a dash line shows the threshold value and the current values for the monitored metric. Below this are additional details.
+    A pane opens showing a **Summary** of the details for the alert. As before, this includes a chart illustrating why the alert fired. A dash line shows the threshold value and the current values for the monitored metric. Below this are additional details.
 
 1. At the top of the pane, below the title, select **History**.
 

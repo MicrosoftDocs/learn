@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-iot-hub-monitoring.exercise-review-metrics-alerts-archive
-title: Exercise - Review Metrics, Alerts and Archive
+title: Exercise - Review metrics, alerts and archive
 metadata:
-  title: Exercise - Review Metrics, Alerts and Archive
-  description: "Review Metrics, Alerts and Archive"
+  title: Exercise - Review metrics, alerts and archive
+  description: "Review Azure IoT metrics, alerts and archive"
   ms.date: 11/05/2023
   author: kgremban
   ms.author: kgremban

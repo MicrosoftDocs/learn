@@ -4,7 +4,7 @@ When you have an IoT Hub solution running in production, you'll want to set up v
 
 In this exercise, you enable diagnostic logs and use them to check for errors. You also set up some metrics to watch, and alerts that fire when the metrics hit a certain boundary criteria.
 
-## Task 1: Create a Storage Account
+## Task 1: Create a storage account
 
 In this task, you create a storage account. The storage account contains your device telemetry logging information.
 
@@ -12,7 +12,7 @@ In this task, you create a storage account. The storage account contains your de
 
 1. In the **Search resources, services, and docs** text box, search for **storage accounts**.
 
-1. Under **Services**, click **Storage accounts**.
+1. Under **Services**, select **Storage accounts**.
 
 1. In the **Storage accounts** blade, select **Create** to create a storage account.
 
@@ -75,7 +75,7 @@ In this task, you configure Monitor device connect/disconnect data that is store
 
     Later, when you look at the diagnostic logs, you'll be able to see the telemetry and connect/disconnect logging for the device.
 
-### Task 3: Set up Metrics
+### Task 3: Set up metrics
 
 In this task, you set up various metrics to watch for when messages are sent to your IoT hub.
 
