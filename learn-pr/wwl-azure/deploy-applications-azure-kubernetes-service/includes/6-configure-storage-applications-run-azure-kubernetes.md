@@ -119,7 +119,7 @@ In this task, you validate that the volume mount was successful.
 4.  To list the content of the /mnt/azure directory (this time including the newly created *hello* file, run the following command:
     
     ```azurecli
-    kubectl exec -i nginx -- sh -c "echo 'Hello world' > /mnt/azure/hello"
+    kubectl exec -i nginx -- sh -c "cat /mnt/azure/hello"
     ```
 
 5.  To list the content of the /mnt/azure directory (this time including the newly created *hello* file, run the following command:
