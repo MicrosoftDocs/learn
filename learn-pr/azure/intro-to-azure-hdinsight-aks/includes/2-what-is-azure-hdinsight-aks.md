@@ -1,131 +1,96 @@
-Let's review the features and uses of HDInsight. This overview will help you evaluate whether HDInsight addresses your organization's requirements.
+Let's review the features and uses of HDInsight on AKS. This overview will help you evaluate whether HDInsight on AKS addresses your organization's requirements.
 
 ## What is big data?
 
 The term *big data* describes the vast volumes of structured *and* unstructured data that organizations collect. This data can be extremely useful for organizations. Specifically, if an organization can analyze the data for insights, it's better able to make decisions. The result is that these decisions can help an organization become more successful. For example, big-data analysis might enable a commercial organization to recognize customer habits, which could lead to increased sales.
 
-## Azure HDInsight definition
+## Azure HDInsight on AKS
 
-Azure HDInsight is a fully managed, cloud-based, open-source analytics service for enterprises. HDInsight enables you to control and manage your big data. HDInsight:
+HDInsight on AKS is a modern, reliable, secure, and fully managed Platform as a Service (PaaS) that runs on Azure Kubernetes Service (AKS).
 
-- Is a cloud distribution of Hadoop components.
-- Makes it easier, faster, and more cost-effective to process huge volumes of data.
+Key features include:
+
+- Fast cluster creation and scaling.
+- Ease of maintenance and periodic security updates.
+- Cluster resiliency powered by modern cloud-native AKS.
+- Native support for modern auth with OAuth, and Microsoft Entra ID.
+- Deep integration with Azure Services – Azure Data Factory (ADF), Power BI, Azure Monitor.
 - Supports the use of open-source frameworks, such as:
-
-  - Hadoop
   - Apache Spark
-  - Apache Hive
-  - Apache Kafka
+  - Apache Flink
+  - Trino
   
    > [!NOTE]
    > With these frameworks, you can enable a broad range of scenarios such as extract, transform, and load (ETL), data warehousing, machine learning, and IoT.
 
-HDInsight provides several benefits for organizations that are working with big data. It's:
+HDInsight on AKS provides several benefits for organizations that are working with big data. It's:
 
 - **Open-source**: Enables you to create optimized clusters for various open-source frameworks.
 - **Reliable**: Provides an end-to-end SLA for all production workloads.
-- **Scalable**: Enables you to scale workloads to respond to demand changes.
-
-   > [!TIP]
-   > By creating clusters on demand, you can reduce your costs. You pay only for what you use.
-
-- **Secure**: Enables you to protect your enterprise data assets through integration with:
-
+- **Auto Scale**: Enables you to Load based [Auto Scale](https://learn.microsoft.com/en-us/azure/hdinsight-aks/hdinsight-on-aks-autoscale-clusters#create-a-cluster-with-load-based-auto-scale), and Schedule based [Auto Scale](https://learn.microsoft.com/en-us/azure/hdinsight-aks/hdinsight-on-aks-autoscale-clusters#create-a-cluster-with-load-based-auto-scale) workloads to respond to demand changes. And also enables you to protect your enterprise data assets through integration with:
   - Azure Virtual Network
   - Azure encryption technologies
   - Microsoft Entra ID
 
-- **Compliant**: Meets popular industry and government compliance standards.
-- **Monitored**: Integrates with Azure Monitor logs to provide a single interface. Monitor all clusters by using the single interface.
+  > [!TIP]
+   > By creating clusters on demand, you can reduce your costs. You pay only for what you use.
+  
+- **Security**: Support for ARM RBAC, Support for MSI based authentication, Option to provide [cluster access](https://learn.microsoft.com/en-us/azure/hdinsight-aks/hdinsight-on-aks-manage-authorization-profile) to other users.
+- **Storage**: ADLS Gen2 [Storage support](https://learn.microsoft.com/en-us/azure/hdinsight-aks/cluster-storage).
 
-## How HDInsight can help you work with big data
+- **Metastore**: External Metastore support for [Trino](https://learn.microsoft.com/en-us/azure/hdinsight-aks/trino/trino-connect-to-metastore), [Spark](https://learn.microsoft.com/en-us/azure/hdinsight-aks/spark/use-hive-metastore) and [Flink](https://learn.microsoft.com/en-us/azure/hdinsight-aks/flink/use-hive-metastore-datastream), Integrate with [HDInsight](https://learn.microsoft.com/en-us/azure/hdinsight-aks/overview#connectivity-to-hdinsight).
+- **Logging and Monitoring**: Log aggregation in Azure [log analytics](https://learn.microsoft.com/en-us/azure/hdinsight-aks/how-to-azure-monitor-integration), for server logs, Cluster and Service metrics via [Managed Prometheus and Grafana](https://learn.microsoft.com/en-us/azure/hdinsight-aks/monitor-with-prometheus-grafana), Support server metrics in [Azure monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/overview), Service Status page for monitoring the Service health
 
-You can use HDInsight for many scenarios utilizing big-data processing. Your data can be:
+## Concept in HDInsight on AKS
 
-- **Historical data**: This data is already collected and stored.
-- **Real-time data**: This data is directly streamed from the source.
+In HDInsight on AKS, two new concepts are introduced:
 
-The following categories summarize the processing scenarios for this data:
+- Cluster Pools are used to group and manage clusters.
+- Clusters are used for open source computes, they're hosted within a cluster pool.
 
-- Batch processing
-- Data warehousing
-- IoT
-- Data science
-- Hybrid
+### Cluster Pools
 
-Let's examine these categories more closely.
+HDInsight on AKS runs on Azure Kubernetes Service (AKS). The top-level resource is the Cluster Pool and manages all clusters running on the same AKS cluster. When you create a Cluster Pool, an underlying AKS cluster is created at the same time to host all clusters in the pool. Cluster pools are a logical grouping of clusters, which helps in building robust interoperability across multiple cluster types and allow enterprises to have the clusters in the same virtual network. Cluster pools provide rapid and cost-effective access to all the cluster types created on-demand and at scale.One cluster pool corresponds to one cluster in AKS infrastructure.
 
-### Batch processing
+### Clusters
 
-Organizations use batch-processing jobs to prepare big data for further analysis. Typically, this process involves three stages:
+Clusters are individual open source compute workloads, such as Apache Spark, Apache Flink, and Trino, which can be created rapidly in few minutes with preset configurations and few clicks. Though running on the same cluster pool, each cluster can have its own configurations, such as cluster type, version, node VM size, node count. Clusters are running on separated compute resources with its own DNS and endpoints.
 
-1. Reading source data files from heterogeneous data sources.
-2. Processing the data.
-3. Writing the data to scalable storage.
+### Versions
 
-> [!NOTE]
-> This process is often referred to as ETL.
+Azure HDInsight on AKS has the concept of Cluster pools and Clusters, which tie together essential component versions such as packages and connectors with a specific open-source component. Each of the version upgrade periodically includes new improvements, features, and patches.
 
-You can use the transformed data for data warehousing or data science.
+Each number in the version indicates general compatibility with the previous version
 
-> [!TIP]
-> A significant requirement for ETL is compute scale-out. This enables processing of large data volumes.
+- **Major versions** change when incompatible API updates or backwards compatibility may be broken.
+- **Minor versions** change when functionality updates are made that are backwards compatible with the other minor releases (except for new feature additions or core security fixes/platform updates controlled by upstream).
+- **Patch versions** change when backwards compatible bug fixes are made to a minor version.
 
-### Data warehousing
 
-A data warehouse provides an organization with somewhere to store big data while waiting to analyze it. Data warehousing allows you to:
+### Enterprise security
 
-- Store your data.
-- Prepare your data for analysis.
-- Provide the prepared data in a structured format. You then can query the data by using analytical tools.
+Enterprise readiness for any software requires stringent security checks to prevent and address threats that may arise. HDInsight on AKS provides a multi-layered security model to protect you on multiple layers. The security architecture uses modern authorization methods using MSI. All the storage access is through MSI, and the database access is through username/password. The password is stored in Azure Key Vault, defined by the customer. This makes the setup robust and secure by default.
 
-The following diagram depicts how Apache Hadoop on HDInsight gathers and stores data from several sources. Apache Spark and Apache Hive prepare and analyze the data. Finally, the data is modeled for use with business intelligence (BI) tools. Power BI is used for data visualization.
+The below diagram illustrates a high-level technical architecture of security in HDInsight on AKS.
 
-:::image type="content" source="../media/architecture-data-warehouse.png" alt-text="Diagram showing how HDInsight helps several tools gather, store, and prepare data for analysis, and then facilitates data analysis by other tools.":::
+:::image type="content" source="../media/security-concept.png" alt-text="Screenshot shows a high-level technical architecture of security in HDInsight on AKS." lightbox="../media/security-concept.png":::
 
-Components in this scenario include:
+**Enterprise security** is divided into four main groups based on the type of control. These groups are also called security pillars and are of the following types: 
 
-- Apache Spark is a parallel processing framework. It supports in-memory processing, which helps boost the performance of big-data analytic applications.
-- Apache Hive in HDInsight is a data warehouse system for Apache Hadoop. Hive enables data summarization, querying, and analysis. You can use these components to perform queries at petabyte scales on structured and unstructured data, in any format.
+- Perimeter security
+- Authentication
+- Authorization
+- Encryption
 
-> [!TIP]
-> Hive queries are written in HiveQL, a query language similar to SQL.
+### Azure Monitor integration
 
-### Internet of things
+HDInsight on AKS offers an integration with Azure Monitor that can be used to monitor cluster pools and their clusters.
 
-As the following diagram depicts, HDInsight processes streaming data received in real time from different devices and sensors. In this example, several open-source frameworks provide stream processing, including Apache Spark and Apache Kafka.
+Azure Monitor collects metrics and logs from multiple resources into an Azure Monitor Log Analytics workspace, which presents the data as structured, queryable tables that can be used to configure custom alerts. Azure Monitor logs provide an excellent overall experience for monitoring workloads and interacting with logs, especially if you have multiple clusters.
 
-Azure gateway services and IoT hubs direct data from various sources to these frameworks. The frameworks then process the data, and it passes to:
 
-- Long-term storage.
-- Real-time apps.
-- Real-time dashboards.
+### Customize clusters
 
-:::image type="content" source="../media/architecture-iot.png" alt-text="Diagram of the Internet of things scenario, which the preceding text describes.":::
+Azure HDInsight on AKS provides a configuration method called  Script Actions that invoke custom scripts to customize the cluster. These scripts can be used to install more packages/jars and change configuration settings. The Script actions can be used only during cluster creation. Post cluster creation script actions are in the roadmap. Currently Script Actions are available only with Spark clusters.
 
-### Data science
 
-You can use HDInsight to complete common data-science tasks such as:
-
-- Data ingestion.
-- Feature engineering.
-- Modeling.
-- Model evaluation.
-
-The following diagram depicts a data-science scenario, in which:
-
-1. Data is collected from an on-premises data source by using Azure Data Factory.
-2. The ingested data is then stored in Azure storage (either Azure Blob Storage or a Data Lake Store).
-3. Azure Spark on HDInsight processes and prepares the data for Azure Machine Learning. Data is also visualized by using Power BI.
-
-:::image type="content" source="../media/architecture-data-science.png" alt-text="Diagram that displays the data-science scenario, which the preceding text describes.":::
-
-### Hybrid
-
-Organizations that have an on-premises, big-data infrastructure can use HDInsight to extend into Azure. This provides you with the benefits of the Azure cloud's advanced analytics capabilities. The following diagram depicts the hybrid scenario, in which:
-
-- The on-premises big-data infrastructure consists of metadata stores and a Hadoop or Spark distribution on local VMs.
-- An Azure ExpressRoute circuit connects the on-premises corporate network environment to Azure virtual networks.
-- A live data migrator for Azure replicates the data received from on-premises to HDInsight.
-
-:::image type="content" source="../media/architecture-hybrid.png" alt-text="Diagram of the hybrid scenario, which the preceding text describes.":::
