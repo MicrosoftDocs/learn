@@ -9,7 +9,6 @@ The term *big data* describes the vast volumes of structured *and* unstructured 
 HDInsight on AKS is a modern, reliable, secure, and fully managed Platform as a Service (PaaS) that runs on Azure Kubernetes Service (AKS).
 
 Key features include:
-
 - Fast cluster creation and scaling.
 - Ease of maintenance and periodic security updates.
 - Cluster resiliency powered by modern cloud-native AKS.
@@ -19,9 +18,6 @@ Key features include:
   - Apache Spark
   - Apache Flink
   - Trino
-  
-   > [!NOTE]
-   > With these frameworks, you can enable a broad range of scenarios such as extract, transform, and load (ETL), data warehousing, machine learning, and IoT.
 
 HDInsight on AKS provides several benefits for organizations that are working with big data. It's:
 
