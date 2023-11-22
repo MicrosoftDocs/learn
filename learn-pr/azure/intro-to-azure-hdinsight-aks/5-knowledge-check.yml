@@ -14,17 +14,17 @@ content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   questions:
-  - content: "Which Hadoop component is used to manage resources on a Hadoop system?"
+  - content: "What is the primary advantage of using HDInsight on AKS for big data processing?"
     choices:
-    - content: "YARN"
+    - content: "Improved security"
       isCorrect: true
-      explanation: "Correct. This is the component that is responsible for managing resources on a Hadoop cluster."
-    - content: "Spark"
+      explanation: "Correct. HDInsight on AKS provides a primary advantage of Scalability and flexibility for big data processing."
+    - content: "Scalability and flexibility"
       isCorrect: false
-      explanation: "Incorrect. Spark is a type of Hadoop cluster implementation."
-    - content: "MapReduce"
+    
+    - content: "Reduced cost"
       isCorrect: false
-      explanation: "Incorrect. MapReduce is a programming model that enables you to process and analyze data."
+      
   - content: "What type of file system does Apache Hadoop store data in?"
     choices:
     - content: "It has no storage. Data is stored in memory."
