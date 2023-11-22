@@ -4,11 +4,11 @@ In your asset tracking scenario, you use sensors to track the containers that ar
 
 However, for your upcoming proof-of-concept review, to keep things simple, you want to create an Alert that triggers when the number of containers drops below one. To trigger the Alert, you use the number of connected devices events from IoT Hub.
 
-## Task 1: Create an alert rule
-
 In this exercise, you add an alert that triggers when one or more devices are connected. You will fill out several tabs and associated dialog boxes to create the alert rule.
 
-1. Navigate to your portal Dashboard.
+To create an alert rule:
+
+1. Navigate to your portal dashboard.
 
 1. In the **Resources** tile, select your IoT hub.
 
@@ -46,7 +46,7 @@ In this exercise, you add an alert that triggers when one or more devices are co
 
     The pane updates to display a chart **Preview** that is similar to what you created for **Metrics**. The chart displays the values associated with the selected signal. In this case, the chart displays the average number of connected devices. Since we only have one connected device, the program that is sending telemetry, the chart only shows one device.
 
-1. To the left of the chart is the area that defines the **Alert logic**. Scroll down on the page and take a moment to review the **Alert logic** options.
+1. To the left of the chart is the area that defines the **Alert logic**. Scroll down and take a moment to review the **Alert logic** options.
 
     Notice that **Threshold** has two possible selections: **Static** and **Dynamic**. Also notice that **Static** is selected and **Dynamic** is unavailable for this signal type.
 
@@ -140,60 +140,62 @@ In this exercise, you add an alert that triggers when one or more devices are co
     > [!NOTE]
     > There are many benefits to using the common alert schema. The common alert schema is a single extensible and unified alert payload that can be used across all the alert services in Azure Monitor. With the common alert schema, you can receive alert notifications with a consistent schema. You can learn more about the Common alert schema at [Common alert schema](/azure/azure-monitor/platform/alerts-common-schema).
 
-1. At the bottom of the **Email/SMS message/Push/Voice** page, to save the action configuration, select **OK**.
+1. At the bottom of the **Email/SMS message/Push/Voice** pane, to save the action configuration, select **OK**.
 
     The notification row should now show that Email and SMS message are selected. The **Edit details** icon can be selected if further changes are required.
 
 1. Select **Next: Actions >**, to view the action group action fields.
 
-1. Open the **Action type** dropdown, and then review the available options.
+    1. Open the **Action type** dropdown, and then review the available options.
 
-    At this point, we could add multiple actions if we needed to launch some business integration via **WebHooks** or an **Azure Function**. For this exercise, a simple notification is enough.
+        At this point, we could add multiple actions if we needed to launch some business integration via **WebHooks** or an **Azure Function**. For this exercise, a simple notification is enough.
 
-1. At the bottom of the **Add action group** blade, to validate this action group, select **Review + create**.
+    1. At the bottom of the **Add action group** blade, to validate this action group, select **Review + create**.
 
-1. Once the validation is complete, select **Create**.
+    1. Once the validation is complete, select **Create**.
 
     A few things happen at the same time. First, **Add action group** blade closes, leaving you on the **Create an alert rule** blade, with the new Action Group added to the list of **Actions**.
 
     Then, in quick succession, you should receive both an SMS notification and an email, both of which inform you that you have been added to the **GPEmailAG** action group. In the SMS message, note that you can reply to the message to stop receiving future notifications. You can learn more about the options at [Action groups](/azure/azure-monitor/platform/alerts-sms-behavior). In the email, you have links that you can select to view the details on action groups and, towards the bottom of the email (in a smaller font) you can see the option to unsubscribe.
 
-1. Select **Next: Details** to advance to the Create an alert rule blade.
+1. Select **Next: Details >** to advance to the Create an alert rule blade.
 
-1. In the **Alert rule name** field, enter **Connected Devices Less than 1**
+    1. In the **Alert rule name** field, enter **Connected Devices Less than 1**.
 
-    The name should be descriptive enough to identify the alert.
+        The name should be descriptive enough to identify the alert.
 
-1. In the **Alert rule description** field, enter **This alert is raised when the number of devices connected to your IoT hub is less than 1.**
+    1. In the **Alert rule description** field, enter **This alert is raised when the number of devices connected to your IoT hub is less than 1.**
 
-    The description field is optional, but recommended.
+        The description field is optional, but recommended.
 
-1. In the **Save alert to resource group** field, ensure that your sandbox resource group is selected.
+    1. In the **Save alert to resource group** field, ensure that your sandbox resource group is selected.
 
-1. In the **Severity** field, ensure that **3 - Informational** is selected.
+    1. In the **Severity** field, ensure that **3 - Informational** is selected.
 
-    In our scenario, this alert is informational and not indicative of any critical failure, therefore severity level 3 is the correct choice.
+        In our scenario, this alert is informational and not indicative of any critical failure, therefore severity level 3 is the correct choice.
 
-    > [!NOTE]
-    > The severity level option range between **0 - Critical** and **4 - Verbose**.
+        > [!NOTE]
+        > The severity level option range between **0 - Critical** and **4 - Verbose**.
 
-1. Select **Advanced options**.
+    1. Select **Advanced options**.
 
-1. For the **Enable upon creation** field, ensure that the checkbox is selected (checked).
+    1. For the **Enable upon creation** field, ensure that the checkbox is selected (checked).
 
-    > [!NOTE]
-    > It can take up to 10 minutes for a metric alert rule to become active.
+        > [!NOTE]
+        > It can take up to 10 minutes for a metric alert rule to become active.
 
-1. For the **Automatically resolve alerts** field, ensure that the checkbox is selected (checked).
+    1. For the **Automatically resolve alerts** field, ensure that the checkbox is selected (checked).
 
-    > [!NOTE]
-    > This ensures an alert is resolved should the condition no longer be met, and a new alert is not fired until the alert is resolved.
+        > [!NOTE]
+        > This ensures an alert is resolved should the condition no longer be met, and a new alert is not fired until the alert is resolved.
 
 1. At the bottom of the blade, select **Review + create**, then select **Create**.
 
-    The **Alerts** blade of your IoT Hub should now be displayed. A message in the middle at the bottom of the display should show that there were no alerts found. You can go back and edit or create new **Alert Rules** or **Action Groups** using the buttons near the top of the display.
-
-    > [!NOTE]
-    > If the pane has not automatically updated, select **Refresh**.
-
 ## Verify your work
+
+The **Alerts** blade of your IoT Hub should now be displayed with the alert settings that you have configured. If the pane has not automatically updated with your alert, select **Refresh**.
+
+A message in the middle at the bottom of the display should show that there were no alerts found.
+
+> [!NOTE]
+> You can go back and edit or create new **Alert Rules** or **Action Groups** using the buttons near the top of the display.

@@ -146,7 +146,7 @@ In this exercise, you:
     private readonly static string connectionString = "<your device connection string>";
     ```
 
-1. Replace the "<your device connection string>" placeholder value (including the angle brackets) with the device connection string that you saved earlier.
+1. Replace the `<your device connection string>` placeholder value (including the angle brackets) with the device connection string that you saved earlier.
 
     > [!Note]
     > This is the only change that you are required to make to this code.
