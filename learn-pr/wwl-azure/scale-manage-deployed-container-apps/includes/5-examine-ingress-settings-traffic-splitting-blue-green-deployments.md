@@ -17,9 +17,16 @@ You can configure ingress for your container app using the Azure CLI, an Azure R
 You can enable ingress when you create your container app, or you can enable ingress for an existing container app.
 
 - To configure ingress when you create your container app, select Ingress from the App Configuration tab of the container app creation wizard.
-- To configure ingress for an existing container app, select Ingress from the Settings menu of the container app resource page.
+- To configure ingress for an existing container app, select Ingress from left-side menu of the container app resource page.
 
 ![Screenshot showing ingress configuration in the Azure portal.](../media/configure-ingress-portal.png)
+
+When you enable ingress, you can choose between two types of ingress:
+
+- External: Accepts traffic from both the public internet and your container app's internal environment.
+- Internal: Allows only internal access from within your container app's environment.
+
+Each container app within an environment can be configured with different ingress settings.
 
 ## Single revision mode
 
