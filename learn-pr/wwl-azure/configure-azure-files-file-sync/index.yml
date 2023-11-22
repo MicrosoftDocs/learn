@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/19/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: learning-azure
 title: Configure Azure Files and Azure File Sync
 summary: Learn how to configure Azure Files and Azure File Sync.

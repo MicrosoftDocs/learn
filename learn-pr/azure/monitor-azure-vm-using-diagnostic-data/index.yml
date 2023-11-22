@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/06/2023
   author: guywi-ms
   ms.author: guywild
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: engagement-fy23
   ms.service: virtual-machines
 title: Monitor your Azure virtual machines with Azure Monitor
