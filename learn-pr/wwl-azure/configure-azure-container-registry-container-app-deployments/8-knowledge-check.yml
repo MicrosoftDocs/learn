@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/07/2023
+  ms.date: 11/22/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
@@ -14,7 +14,7 @@ quiz:
   questions:
   - content: "What is the role of Azure Container Registry in the context of container app deployments?"
     choices:
-    - content: "To manage virtual machines in Azure."
+    - content: "To securely store and manage source code on virtual machines in Azure."
       isCorrect: false
       explanation: "Incorrect. Azure Container Registry is used to store and manage container images and related artifacts, not virtual machines."
     - content: "To provide a platform for web application development."
@@ -25,7 +25,7 @@ quiz:
       explanation: "Correct. Azure Container Registry is a managed registry service based on the open-source Docker Registry 2.0, used to store and manage container images and related artifacts."
   - content: "What key element must be configured for secure communication between Container Registry and Container Apps?"
     choices:
-    - content: "An Azure Pipelines."
+    - content: "An Azure Pipeline."
       isCorrect: false
       explanation: "Incorrect. Azure Pipelines do not contribute to secure communication between Container Registry and Container Apps."
     - content: "An Azure Container Registry image repository."
