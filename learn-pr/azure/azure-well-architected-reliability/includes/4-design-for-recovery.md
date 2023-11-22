@@ -1,25 +1,61 @@
-This module presented key principles of the Reliability pillar of the Azure Well-Architected Framework. You learned how to make your applications more reliable by planning and architecting high availability (HA), disaster recovery (DR), and backup and restore.
+| :::image type="icon" source="media/goal.svg"::: The workload must be able to anticipate and recover from most failures, of all magnitudes, with minimal disruption to the user experience and business objectives.. |
+| :----------------------------------------------------------------------------------------------------------------------------------------- |
 
-In this module, you learned to carry out the following procedures:
+Even highly resilient systems need disaster preparedness approaches, in both architecture design and workload operations. On the data layer, you should have strategies that can repair workload state in case of corruption.
 
-- Determine the availability service level agreement (SLA) for your applications.
-- Define Recovery Point Objective (RPO) and Recovery Time Objective (RTO) as part of DR planning.
-- Test your recovery plans to ensure they provide sufficient protection for your applications.
-- Incorporate backup and restore into your recovery strategy to help protect against data loss.
+Contoso currently hosts a large amount of data on an on-premises SQL Server database and has recently modernized their analytics solution for the data with Azure services. 
 
-You learned about the following technologies and services:
+The new analytics solution utilizes Azure Analysis Services, Azure Data Factory, Azure Synapse Analytics, Power BI, and Azure Virtual Machines. All users of the solution are internal. After considering the availability requirements of the solution, the team decides to implement the solution in a single region. 
 
-- Azure availability sets and availability zones to provide HA for virtual machine (VM) workloads.
-- Load balancing services such as Azure Traffic Manager, Azure Application Gateway, and Azure Load Balancer to distribute load across available systems.
-- Azure platform as a service (PaaS) services that have HA built in.
-- Azure Site Recovery to provide recovery capabilities for your applications.
-- Azure Backup for VMs, and the backup and restore capabilities of several Azure PaaS services.
+The data is ingested using Azure Data Factory and processed before being saved to the Analysis Services storage. Part of the process requires a legacy windows process, deployed to a VM in the cloud.
 
-## Learn more
+## Be prepared for disasters
 
-To learn more about the Azure Well-Architected Framework and Azure services that improve the reliability of your architectures, see the following resources:
+**Have structured, tested, and documented recovery plans that are aligned with the negotiated recovery targets. Plans must cover all components in addition to the system as a whole.**
 
-- [Azure Well-Architected Framework](/azure/well-architected)
-- [About Site Recovery](/azure/site-recovery/site-recovery-overview)
-- [Regions and Availability Zones in Azure](/azure/availability-zones/az-overview)
-- [What is the Azure Backup service?](/azure/backup/backup-overview)
+A well-defined process leads to a quick recovery that can prevent negative impact on the finances and reputation of your business. Conducting regular recovery drills tests the process of recovering system components, data, and failover and failback steps to avoid confusion when time and data integrity are key measures of success.
+
+*Challenge*
+
+- As the solution is only used internally and isn't considered mission-critical, the workload team and business stakeholders have agreed that rebuilding the solution in a secondary region is a sufficient recovery model in the unlikely event that the Azure region where it is currently deployed is lost or the entire solution becomes unavailable for some other reason.
+- The workload team has described how to build the solution in another region in their DR plan, but hasn't had the opportunity to perform a full DR drill yet.
+
+*Applying the approach and outcomes*
+
+- After experiencing a regional outage, the DR response team is able to follow the DR plan's instructions to redeploy the analytics solution in another region.
+- The team discovers gaps in the DR plans with respect to some of the operations required to deploy the solution, and the plan is updated to make the recovery more efficient in the future.
+- The workload team and stakeholders agree to accelerate the planned DR testing to ensure that the updated plan will produce a more efficient recovery.
+
+## Address stateful data
+
+**Ensure that you can repair data of all stateful components within your recovery targets.**
+
+Backups are essential to getting the system back to a working state by using a trusted recovery point, like the last-known good state.
+
+Immutable and transactionally consistent backups ensure that data can't be altered, and that the restored data isn't corrupted.
+
+*Challenge*
+
+- The workload team decides to move the SQL databases to Azure to cut down on the analytics processing times.  One of the databases is heavily used during the analytics process by the VMs, so the team needs to ensure that the database state can be recovered with the lowest possible RPO.
+
+*Applying the approach and outcomes*
+
+- Since the databases are quite large at over 4TB each, migrating to Azure SQL Database is not achievable in the short term. So, the team migrates to Azure VMs running SQL Server 2022.
+- The team decides that they will only use the Automated  Backup function for all of the databases except the critical ones, including the one used by the VMs.
+- For the critical databases, the team will use the Automated Backup function along with the Managed Instance link function to actively replicate the databases to an Azure SQL Managed Instance.
+
+## Implement automated self-healing capabilities in the design
+
+**Self-healing capabilities are mechanisms that allow components of the workload to automatically resolve issues by recovering affected components and if needed, failing over to redundant infrastructure. Use design patterns to add resilience to your workload through self-healing mechanisms.**
+
+Self-healing automation helps to reduce risks from external factors like human intervention, and shortens the break-fix cycle.
+
+*Challenge*
+
+- The Windows process invoked from Azure Data Factory when ingesting data was initially deployed to multiple VMs for increased availability.
+- There have been a few cases where the legacy Windows process has crashed, requiring a restart of the VM. While the processing time overall has been minimally affected (because of the level of redundancy), the team would like to implement a solution that automates the detection of the failure and the recovery.
+
+*Applying the approach and outcomes*
+
+- The team decides to implement a VMSS solution. VMSS is configured to deploy the Application Health Extension to continuously monitor the health of the VM process.
+- With Automatic Instance Repair enabled the VMSS is now able to repair the component by restarting the VM or creating a new instance based on the same image.
