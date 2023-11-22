@@ -36,7 +36,7 @@ In this task, you create a storage account. The storage account contains your de
 
 In this task, you configure Monitor device connect/disconnect data that is stored in the storage account that you just created.
 
-1. Navigate to your portal dashboard.
+1. Navigate to your dashboard.
 
 1. In the **All resources** tile, select your IoT Hub.
 
@@ -79,7 +79,7 @@ In this task, you configure Monitor device connect/disconnect data that is store
 
 In this task, you set up various metrics to watch for when messages are sent to your IoT hub.
 
-1. Ensure that you have your IoT Hub blade open.
+1. Ensure that your IoT Hub blade is open.
 
     The previous task left you on the **Diagnostics settings** pane of the IoT hub blade.
 

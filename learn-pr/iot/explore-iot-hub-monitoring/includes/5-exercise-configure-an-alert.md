@@ -8,7 +8,7 @@ In this exercise, you add an alert that triggers when one or more devices are co
 
 To create an alert rule:
 
-1. Navigate to your portal dashboard.
+1. Navigate to your dashboard.
 
 1. In the **Resources** tile, select your IoT hub.
 
@@ -65,7 +65,7 @@ To create an alert rule:
 1. In the **Threshold value** textbox, enter **1**.
 
     > [!NOTE]
-    > The **Preview** chart shows you the condition under which the display refreshes based on the **Alert logic**value settings that you entered. Below the **Preview** are **Time range** and **Time series** filters. These values determine the historical time period that is aggregated using the **Aggregation type** selected previously and how often the condition is evaluated.
+    > The **Preview** chart shows you the condition under which the display refreshes based on the **Alert logic** value settings that you entered. Below the **Preview** are **Time range** and **Time series** filters. These values determine the historical time period that is aggregated using the **Aggregation type** selected previously and how often the condition is evaluated.
 
 1. Under **Unit**, select **Count**.
 
@@ -74,7 +74,7 @@ To create an alert rule:
 1. Under **Lookback period**, select **1 Minute**.
 
     > [!NOTE]
-    > If the **Check every** is shorter than **Lookback period**, this results in a sliding window evaluation. For example if the **Lookback period** is 5 minutes and **Check every** is 1 minute, it means that every minute, the preceding 5 minutes of values is aggregated (in this case, averaged), and then evaluated against the condition. After a minute of time has passed, once again the preceding 5 minutes of data is aggregated - this includes one minute of new data and four minutes of data that was already evaluated. Thus, we have a sliding window that moves forward a minute at a time, but is always including 4 minutes of data that was also evaluated as part of an earlier window.
+    > If the **Check every** is shorter than **Lookback period**, this results in a sliding window evaluation. For example if the **Lookback period** is 5 minutes and **Check every** is 1 minute, it means that every minute, the preceding 5 minutes of values is aggregated (in this case, averaged), and then evaluated against the condition. After a minute of time has passed, once again the preceding 5 minutes of data is aggregated; this includes one minute of new data and four minutes of data that was already evaluated. Thus, we have a sliding window that moves forward a minute at a time, but is always including 4 minutes of data that was also evaluated as part of an earlier window.
 
     Notice that the **Condition** is now populated and a **Estimated monthly cost** is displayed.
 
@@ -127,7 +127,7 @@ To create an alert rule:
 
 1. For notification **Name**, enter **GPNotifications**.
 
-1. After selecting the notification type, the **Email/SMS message/Push/Voice** pane opens to enable multiple notifications to be added.
+1. In the **Email/SMS message/Push/Voice** pane, configure the following:
 
     1. Select **Email**, and then enter an email address that you have easy access to.
 
@@ -148,17 +148,26 @@ To create an alert rule:
 
     1. Open the **Action type** dropdown, and then review the available options.
 
-        At this point, we could add multiple actions if we needed to launch some business integration via **WebHooks** or an **Azure Function**. For this exercise, a simple notification is enough.
+        At this point, we could add multiple actions if we needed to launch some business integration via **WebHook** or an **Azure Function**. For this exercise, a simple notification is enough.
 
     1. At the bottom of the **Add action group** blade, to validate this action group, select **Review + create**.
 
     1. Once the validation is complete, select **Create**.
 
-    A few things happen at the same time. First, **Add action group** blade closes, leaving you on the **Create an alert rule** blade, with the new Action Group added to the list of **Actions**.
+    A few things happen at the same time. First, **Add action group** pane closes, leaving you on the **Create an alert rule** blade, with the new Action Group added to the list of **Action group name**.
 
     Then, in quick succession, you should receive both an SMS notification and an email, both of which inform you that you have been added to the **GPEmailAG** action group. In the SMS message, note that you can reply to the message to stop receiving future notifications. You can learn more about the options at [Action groups](/azure/azure-monitor/platform/alerts-sms-behavior). In the email, you have links that you can select to view the details on action groups and, towards the bottom of the email (in a smaller font) you can see the option to unsubscribe.
 
-1. Select **Next: Details >** to advance to the Create an alert rule blade.
+1. Select **Next: Details >** to advance to Alert rule details.
+
+    1. In the **Subscription** field, ensure that your sandbox resource group is selected.
+
+    1. In the **Severity** field, ensure that **3 - Informational** is selected.
+
+        In our scenario, this alert is informational and not indicative of any critical failure, therefore severity level 3 is the correct choice.
+
+        > [!NOTE]
+        > The severity level option range between **0 - Critical** and **4 - Verbose**.
 
     1. In the **Alert rule name** field, enter **Connected Devices Less than 1**.
 
@@ -167,15 +176,6 @@ To create an alert rule:
     1. In the **Alert rule description** field, enter **This alert is raised when the number of devices connected to your IoT hub is less than 1.**
 
         The description field is optional, but recommended.
-
-    1. In the **Save alert to resource group** field, ensure that your sandbox resource group is selected.
-
-    1. In the **Severity** field, ensure that **3 - Informational** is selected.
-
-        In our scenario, this alert is informational and not indicative of any critical failure, therefore severity level 3 is the correct choice.
-
-        > [!NOTE]
-        > The severity level option range between **0 - Critical** and **4 - Verbose**.
 
     1. Select **Advanced options**.
 
@@ -193,9 +193,9 @@ To create an alert rule:
 
 ## Verify your work
 
-The **Alerts** blade of your IoT Hub should now be displayed with the alert settings that you have configured. If the pane has not automatically updated with your alert, select **Refresh**.
+The **Alerts** blade of your IoT Hub should now be displayed with alert filters and counts. If the pane has not automatically updated with your alert, select **Refresh**.
 
-A message in the middle at the bottom of the display should show that there were no alerts found.
+A message in the middle at the bottom of the display should show that there are no alerts found.
 
 > [!NOTE]
 > You can go back and edit or create new **Alert Rules** or **Action Groups** using the buttons near the top of the display.

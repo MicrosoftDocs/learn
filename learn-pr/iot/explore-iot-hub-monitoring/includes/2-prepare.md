@@ -26,6 +26,9 @@ As part of this module, the following resources are created:
 
 Before you begin the exercises, you need an IoT Hub. Creating the IoT Hub can take several minutes.
 
+> [!NOTE]
+> There are many steps in this module for the allotted 60 minutes of sandbox time. It may be worthwhile to note the time that you started and minimize the number of breaks that you take during the 60 minutes so that you may finish before the sandbox terminates automatically.
+
 1. Start by selecting the **Activate sandbox** button. The sandbox automatically creates an Azure resource group for you that is displayed on this web page. You create more resources for this project using the following steps. The resource group name is substituted automatically where it's used within the code steps.
 
 1. Once the sandbox is activated, sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
@@ -47,7 +50,7 @@ Before you begin the exercises, you need an IoT Hub. Creating the IoT Hub can ta
 
 1. Review the IoT hub details and make sure there are no errors to fix, then select **Create** to start the deployment of your new IoT hub. Your deployment is in progress a few minutes while the hub is being created. Once the deployment is complete, select **Go to resource** to open the new IoT hub.
 
-1. Once your IoT hub is provisioned, in your IoT Hub navigation menu, open **Devices**, then select **+ Add Device** to add a device in your IoT hub.
+1. Once your IoT hub is provisioned, in your IoT Hub navigation menu, open **Devices**, then select **Add Device** to add a device in your IoT hub.
 
 1. In **Device ID**, enter **sensor-th-2001**. Leave **Auto-generate keys** checked so that the primary and secondary keys are generated automatically. Leave Authentication type as **Symmetric key**. Select **Save**. This action creates a device identity for your IoT hub.
 

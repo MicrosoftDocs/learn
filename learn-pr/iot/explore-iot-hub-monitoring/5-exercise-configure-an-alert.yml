@@ -12,6 +12,6 @@ metadata:
   ms.service: iot-hub
 azureSandbox: false
 labModal: false
-durationInMinutes: 15
+durationInMinutes: 12
 content: |
   [!include[](includes/5-exercise-configure-an-alert.md)]

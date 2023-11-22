@@ -12,6 +12,6 @@ metadata:
   ms.service: iot-hub
 azureSandbox: false
 labModal: false
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/6-exercise-review-metrics-alerts-archive.md)]

@@ -4,11 +4,11 @@ In this exercise, you examined some of the reporting and logging resources that 
 
 In order to generate the alert where the number of connected devices is less than one, the device simulator app must be closed.
 
-1. Return to Visual Studio Code and exit the running app.
+1. Return to Visual Studio Code and stop the running app.
 
-    Wait 30 seconds or so before proceeding to the next step.
+1. Wait 30 seconds or so before proceeding to the next step.
 
-1. Navigate to your Dashboard that includes the Metrics chart that you created.
+1. Navigate to your dashboard that includes the Metrics chart that you created.
 
 1. Open the Metrics chart that you pinned to the dashboard by selecting the chart title.
 
@@ -22,7 +22,7 @@ In order to generate the alert where the number of connected devices is less tha
 
 To use the portal to review alerts, complete the following steps.
 
-1. Close the Metrics graphical display to return to the Dashboard.
+1. Close the Metrics graphical display to return to the dashboard.
 
 1. In the portal search box, type **monitor**.
 
@@ -43,15 +43,15 @@ To use the portal to review alerts, complete the following steps.
     You should now see a summary of alerts for the last hour including a total alerts count and a list of the severity categories with alert counts per category. The alerts we're interested in are **3 - Informational** Severity. You should see at least one alert. If you stopped and restarted the device simulator, you may have generated more that one alert.
 
     > [!NOTE]
-    > If you do not yet see an alert, wait a few more minutes - there is sometimes a delay in the alerts being raised.
+    > If you do not yet see an alert, wait a few more minutes. There is sometimes a delay in the alerts being raised.
 
 1. In the list of severities, select the number under **Informational**.
 
-    The **Informational** pane opens. At the top of the pane, you see several filter fields. These fields have been populated with the values from the preceding screen. And only the **Informational** alerts for the selected IoT hub are shown. It also shows the alert condition of either Fired or Resolved, and the Fire time.
+    The **Informational** pane opens. At the top of the pane, you see several filter fields. These fields have been populated with the values from the preceding screen. And only the **Informational** alerts for the selected IoT hub are shown. It also shows the **Alert Condition** of either **Fired** or **Resolved**, and the Fire time.
 
 1. Under **Name**, to select metrics alert details about your 3 - Informational alert, select **Connected Devices Less than 1**.
 
-    A pane opens showing a **Summary** of the details for the alert. This pane includes a chart illustrating why the alert fired - a dash line shows the threshold value and the current values for the monitored metric. Below this are **Additional details**.
+    A pane opens showing a **Summary** of the details for the alert. This pane includes a chart illustrating why the alert fired - a dash line shows the threshold value and the current values for the monitored metric. Below this are additional details.
 
 1. At the top of the pane, below the title, select **History**.
 
@@ -68,7 +68,7 @@ To use the portal to review alerts, complete the following steps.
 
 Earlier in this lab, you set up your diagnostic logs to be exported to Blob Storage. It's a good time to check and see what was written.
 
-1. Navigate to your Dashboard.
+1. Navigate to your dashboard.
 
 1. Select **Storage Account**.
 
@@ -88,7 +88,7 @@ Earlier in this lab, you set up your diagnostic logs to be exported to Blob Stor
 
 1. In the **Storage Browser** blade, expand the **Blob containers** node.
 
-    When Azure Monitor first sends data to a storage account, it creates a container called **insights-logs-connections**.
+    When Azure Monitor first sends data to a storage account, it creates a container named **insights-logs-connections**.
 
 1. Under **Blob containers**, select **insights-logs-connection**.
 
@@ -97,9 +97,7 @@ Earlier in this lab, you set up your diagnostic logs to be exported to Blob Stor
     > [!NOTE]
     > If no data is displayed, select **Refresh**. You may need to wait a minute or two and then refresh again.
 
-1. In the right-hand pane, select **insights-logs-connections**, and then navigate down into the folder hierarchy.
-
-    After you navigate down to your IoT hub folder, as you navigate down you see numeric values for the year, month, day, and hour. The final folder represents the minute. The minute folder contains a blob file that contains your monitor logging data.
+1. In the right-hand pane, select **insights-logs-connections**, and then navigate down into the folder hierarchy. As you navigate down you see numeric values for the year, month, day, and hour. The final folder represents the minute. The minute folder contains a blob file that contains your monitor logging data.
 
 1. Select the json file name.
 
@@ -109,9 +107,9 @@ Earlier in this lab, you set up your diagnostic logs to be exported to Blob Stor
 
 1. Right-click the .json file, then select **Open with**, then select **Visual Studio Code**.
 
-1. To make the JSON easier to read, press **Shift+Alt+F** or select **Format Document** from the Context Menu.
+1. To make the JSON easier to read, press **Shift+Alt+F**.
 
-    The JSON shows a list of connection and disconnection events similar to:
+    The JSON shows a list of connection and disconnection events similar to the following.
 
     ```json
     {
@@ -138,8 +136,6 @@ Earlier in this lab, you set up your diagnostic logs to be exported to Blob Stor
 
     Notice that each individual entry is a single JSON record, although the overall document is not a valid JSON document as the JSON objects aren't declared within a JSON array **[ ]** and comma separated. Within each record you can see details relating to the originating IoT Hub and **properties** for each event. Within the **properties** object, you can see the connecting (or disconnecting) **deviceId**.
 
-1. Optionally, review the **insights-logs-devicetelemetry** blob container. Navigate and down and review the json data as you did with insights-logs-connections.
-
 ## Task 4: Review resolved Alert
 
 By this point, you should have received an email or SMS indicating the Monitor Alert is resolved. Complete the following steps to review the resolved alert in the portal.
@@ -147,7 +143,7 @@ By this point, you should have received an email or SMS indicating the Monitor A
 > [!NOTE]
 > If you have not yet received the email or SMS - wait until they arrive before proceeding.
 
-1. In the portal, navigate to your Dashboard.
+1. In the portal, navigate to your dashboard.
 
 1. On the portal toolbar, in the search box, type **monitor**
 
@@ -169,7 +165,7 @@ By this point, you should have received an email or SMS indicating the Monitor A
 
 1. Under **Name**, select the latest **Connected Devices Less than 1** alert.
 
-    A pane opens showing a **Summary** of the details for the alert. As before, this includes a chart illustrating why the alert fired - a dash line shows the threshold value and the current values for the monitored metric. Below this are **Additional details**.
+    A pane opens showing a **Summary** of the details for the alert. As before, this includes a chart illustrating why the alert fired - a dash line shows the threshold value and the current values for the monitored metric. Below this are additional details.
 
 1. At the top of the pane, below the title, select **History**.
 
@@ -178,3 +174,7 @@ By this point, you should have received an email or SMS indicating the Monitor A
 1. You can now close the Device Simulator App.
 
 ## Verify your work
+
+In this exercise, you reviewed the operational metrics, alerts, and diagnostic logs data based on the configuration that you created. These monitoring items are fed by the telemetry data sent by the DeviceSimulator program.
+
+The Azure services, email, and SMS notifications that you set up will terminate automatically 60 minutes after the sandbox was first created.
