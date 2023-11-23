@@ -4,7 +4,7 @@ With Virtual Machine Scale Sets, you don't need to pre-provision your virtual ma
 
 ### Increase app availability and scalability with Azure Virtual Machine Scale Sets
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/lE2xJXYHnB8" title="Increase app availability and scalability" allowfullscreen></iframe>
+<iframe width="854" height="480" src="https://youtu.be/fBW-_6vz2uI" title="Increase app availability and scalability" allowfullscreen></iframe>
 
 ### Things to know about Azure Virtual Machine Scale Sets 
 
