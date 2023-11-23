@@ -1,29 +1,32 @@
-Azure alerts proactively notify you when issues arise with your infrastructure or applications by using your monitoring data in Azure Monitor. You can use alerts to identify and address issues before they affect your users.
+In this module, you learned about Azure Monitor alerts. You can use alerts to identify and address issues before they affect your users. You learned how to configure Azure alert rules based on telemetry signals. You learned to configure actions groups to receive alert notifications.  
 
-In this module, you explored the characteristics of Azure alerts, including alert types, alert states, event types, and event categories. You reviewed how to configure alerts and set filters for your subscriptions, resources, and applications. You discovered how to create alert rules and assign action groups for issue resolution.
+The main takeaways from this module are:
 
-## Learn more
+- Azure Monitor captures telemetry data. Alerts can use this data to identity and then notify you of potential issues. 
 
-- Check out the [new alerts experience in Azure Monitor](/azure/monitoring-and-diagnostics/monitoring-overview-unified-alerts).
+- There are different types of alerts to support various configuration and monitoring scenarios. Alert types include metric alerts, log alerts, activity log alerts, and smart detection alerts.
 
-- Review [types of Azure Monitor alerts](/azure/azure-monitor/alerts/alerts-types).
+- You manage alerts by monitoring the alert state. States include new, acknowledged, and closed.
 
-- Create an [alert rule](/azure/azure-monitor/alerts/alerts-create-new-alert-rule).
+- You configure alert rules based on target resource, signal, criteria, and severity. 
 
-- Create and manage [action groups in the Azure portal](/azure/azure-monitor/alerts/action-groups).
+- Action groups define notification preferences and actions for when an alert is triggered. These actions include email, SMS, push, voice calls, and automated actions.
 
-- Deploy [Azure Monitor alerts and automated actions with recommended practices](/azure/azure-monitor/best-practices-alerts).
+## Learn more with Azure documentation
 
-- Manage your [alert rules](/azure/azure-monitor/alerts/alerts-manage-alert-rules).
+- [What are Azure Monitor alerts?](/azure/azure-monitor/alerts/alerts-overview). This article shows you how alerts work, and how alert rules monitor your data. The article also introduces the types of alerts that are available.
 
-- Manage your [alert instances](/azure/azure-monitor/alerts/alerts-manage-alert-instances).
+- [Create or edit an alert rule](/azure/azure-monitor/alerts/alerts-create-new-alert-rule). This article shows you how to create a new alert rule or edit an existing alert rule. The article shows how to configure the alert resources, signal, and condition.  
+
+- [Create and manage action groups](/azure/azure-monitor/alerts/action-groups). This article shows you how to create and manage action groups.
+
+- [Manage your alert rules](/azure/azure-monitor/alerts/alerts-manage-alert-rules). This article covers viewing and filtering alert rules in the Azure portal. 
 
 ## Learn more with self-paced training
 
-- Manage [alerts and incidents in Microsoft Defender for Endpoint](/training/modules/manage-alerts-incidents-microsoft-defender-for-endpoints/).
+- [Monitor the health of your Azure virtual machine by using Azure Monitor metrics explorer and metric alerts](/training/modules/monitor-azure-vm-using-diagnostic-data). Learn monitoring options for an Azure virtual machine (VM). Enable diagnostics to get data about your VM. Create a metric alert to monitor performance.
 
-## Learn more with optional hands-on exercises
+- [Improve incident response with alerting on Azure (sandbox)](/training/modules/incident-response-with-alerting-on-azure/). Learn to respond to incidents and activities in your infrastructure, Enable alerting capabilities in Azure Monitor.
 
-- Improve [incident response with alerting on Azure (sandbox)](/training/modules/incident-response-with-alerting-on-azure/).
 
-- Monitor the [health of your Azure virtual machine by using Azure Monitor metrics explorer and metric alerts](/training/modules/monitor-azure-vm-using-diagnostic-data). _Azure subscription required_.
+
