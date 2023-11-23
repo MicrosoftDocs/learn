@@ -6,7 +6,7 @@ Our goal was to help you evaluate whether Visual Studio Code is a suitable choic
 - Do I want a code editor or IDE with a small footprint?
 - Do I need source control integration with my code editor or IDE?
 
-You applied these criteria to building a website for a restaurant. Your analysis helped you determine that Visual Studio Code has the features you need. Such as, an integrated terminal and out-of-the-box support for Node.js that helps you start building right away. You're able to install extensions such as Prettier to help make coding easier. As you work, you're able to run and debug your application within the UI. With Visual Studio Code's integrated Git support, you're able to commit your code files to a remote repository on GitHub.
+You applied these criteria to building a website for a restaurant. Your analysis helped you determine that Visual Studio Code has the features you need. Such as, an integrated terminal, out-of-the-box support for Node.js that helps you start building right away, and the ability to install extensions such as Prettier to help make coding easier. As you work, you're able to run and debug your application within the UI. With Visual Studio Code's integrated Git support, you're able to commit your code files to a remote repository on GitHub.
 
 The criteria also helped you determine that Visual Studio Code is an appropriate choice for developing a restaurant inventory system in C++. Finally, it helped you decide that Visual Studio Code is suitable for performing data science tasks in a Python and Jupyter Notebooks environment.
 

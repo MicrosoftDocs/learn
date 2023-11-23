@@ -36,7 +36,7 @@ Microsoft publishes many popular extensions, including C/C++, Python, and Docker
 
 Now, let's apply this knowledge about how Visual Studio Code works and see how we might set up Visual Studio Code in our scenario.
 
-Recall that in the first part of the scenario, you want to build a website for a local restaurant. You decide to build a Node.js application.
+Recall that in the first part of the scenario, you want to build a website for a local restaurant. To accomplish this, you decide to build a Node.js application.
 
 Here's what you do:
 
