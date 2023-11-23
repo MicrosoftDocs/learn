@@ -1,4 +1,4 @@
-Administrative units are Microsoft Entra resources that can be containers for other Microsoft Entra resources. An administrative unit can contain only users and groups.
+Administrative units are Microsoft Entra ID resources that can be containers for other Microsoft Entra resources. An administrative unit can contain only users, groups, and devices.
 
 Administrative units restrict permissions in a role to any portion of your organization that you define. You could, for example, use administrative units to delegate the Helpdesk Administrator role to regional support specialists, so they can manage users only in the region that they support. You can manage administrative units by using the Azure portal, PowerShell cmdlets and scripts, or Microsoft Graph.
 
@@ -32,8 +32,6 @@ You can expect the creation of administrative units in the organization to go th
 2.  **Pruning**: After the criteria are defined, administrative units that are no longer required will be deleted.
 3.  **Stabilization**: Your organizational structure is defined, and the number of administrative units isn't going to change significantly in the short term.
 
-<a name='delegate-administration-in-azure-active-directory'></a>
-
 ## Delegate administration in Microsoft Entra ID
 
 With organizational growth comes complexity. One common response is to reduce some of the workload of access management with Microsoft Entra admin roles. You can assign the least possible privilege to users to access their apps and perform their tasks. Even if you don't assign the Global Administrator role to every application owner, you're placing application management responsibilities on the existing Global Administrators. There are many reasons for an organization move toward a more decentralized administration.
@@ -41,8 +39,8 @@ With organizational growth comes complexity. One common response is to reduce so
 In Microsoft Entra ID, you can delegate Application creation and management permissions in the following ways:
 
  -  Restricting who can create applications and manage the applications they create. By default in Microsoft Entra ID, all users can register application registrations and manage all aspects of applications they create. You can restrict to only allow selected people that permission.
- -  Assigning one or more owners to an application. A simple way to grant someone the ability to manage all aspects of Microsoft Entra configuration for a specific application.
- -  Assigning a built-in administrative role that grants access to manage configuration in Microsoft Entra ID for all applications. The recommended way to grant IT experts access to manage broad application configuration permissions without granting access to manage other parts of Microsoft Entra not related to application configuration.
+ -  Assigning one or more owners to an application. A simple way to grant someone the ability to manage all aspects of Microsoft Entra ID configuration for a specific application.
+ -  Assigning a built-in administrative role that grants access to manage configuration in Microsoft Entra ID for all applications. The recommended way to grant IT experts access to manage broad application configuration permissions without granting access to manage other parts of Microsoft Entra ID not related to application configuration.
  -  Create a custom role to define specific permissions. Then assign the role to a user to assign a limited-owner. Or you could assign at the directory scope - all applications - as a limited-administrator.
 
 When granting access, use one of the above methods for two reasons. First, delegating the ability to perform administrative tasks reduces global administrator overhead. Second, using limited permissions improves your security posture and reduces the potential for unauthorized access.

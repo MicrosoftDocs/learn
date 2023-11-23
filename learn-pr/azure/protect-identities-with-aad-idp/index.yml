@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/28/2023
   author: MicrosoftGuyJFlo
   ms.author: joflore
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: active-directory
   ms.subservice: identity-protection
 title: Protect your identities with Microsoft Entra ID Protection
@@ -25,7 +25,7 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 subjects:
 - identity-access
 units:

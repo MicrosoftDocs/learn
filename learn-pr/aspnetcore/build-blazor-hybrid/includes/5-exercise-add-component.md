@@ -1,4 +1,4 @@
-In this exercise, you'll add a Razor component to your application's home page.
+In this exercise, you add a Razor component to your application's home page.
 
 ## Add the Counter component to the Home page
 
@@ -22,9 +22,21 @@ In this exercise, you'll add a Razor component to your application's home page.
    <Counter />
    ```
 
+::: zone pivot="vstudio"
+
 If you still have the app running, save the file and select the **Hot reload** (<kbd>Alt+F10</kbd>) command so that the `Counter` component shows up on the Home page. In the running app, verify the counter appears by selecting another tab, then selecting the **Home** tab to return to the Home page. If you stopped debugging previously, start the app again by selecting **Debug** > **Start Debugging**.
 
 When you're ready to stop, return to Visual Studio and press <kbd>Shift+F5</kbd> to stop the app.
+
+::: zone-end
+
+::: zone pivot="vscode"
+
+If you still have the app running, return to Visual Studio Code, and press <kbd>Shift+F5</kbd> to stop the app. Save the file and start the app again by selecting **Run** > **Start Debugging**
+
+When you're ready to stop, return to Visual Studio Code, and press <kbd>Shift+F5</kbd> to stop the app.
+
+:::zone-end
 
 ![Screenshot of the counter component on the home page.](../media/counter-homepage.png)
 
@@ -73,7 +85,7 @@ Welcome to your new app.
 <Counter IncrementAmount="10" />
 ```
 
-Start the app again by selecting **Debug** > **Start Debugging**
+Start the app again 
 
 The `Index` component now has its own counter that increments by 10 each time you select the **Click me** button, as shown in the following image. The `Counter` component (_Counter.razor_) at `/counter` continues to increment by one.
 

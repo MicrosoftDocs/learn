@@ -1,16 +1,4 @@
-Containers are an excellent choice when developing software based on microservice architectures. They make efficient use of hardware, provide security features to run multiple instances simultaneously on the same host without affecting each other, and enable a service to be scaled out by deploying more instances.
-
-:::image type="content" source="../media/1-container-benefits.svg" alt-text="Diagram that shows three benefits of containerization; efficiency, isolation, and scalability." border="false":::
-
-The standard container management runtime focuses on managing individual containers. If you want to scale a complex system with multiple containers working together, this scenario becomes challenging. Consider the following aspects you'll have to address:
-
-- Configuring and maintaining load balancing
-- Network connectivity
-- Orchestrating the deployment process
-
-To make the management process easier, it's common to use a **container management platform** such as **Kubernetes**.
-
-Suppose you work at a drone-management company. Your company provides a drone-tracking solution to customers worldwide.
+To make the management process easier, it's common to use a **container management platform** such as **Kubernetes**. Suppose you work at a drone-management company. Your company provides a drone-tracking solution to customers worldwide.
 
 :::image type="content" source="../media/1-drone-solution-arch.svg" alt-text="Diagram of the high-level architecture that describes the drone-tracking solution." border="false":::
 
@@ -23,14 +11,24 @@ The solution is built and deployed as microservices, and includes several major 
 - **Data-processing service**: Fetches and processes data from the queue.
 - **NoSQL database**: Stores processed tracking data and user information captured from the website and the data-processing service.
 
-You're using containerized instances to quickly deploy into new customer regions and scale resources as needed to meet customer demands. To simplify developing, deploying, and managing these complex containerized applications, you want to use a container orchestration platform.
+Containers are an excellent choice when developing software based on microservice architectures. They make efficient use of hardware, provide security features to run multiple instances simultaneously on the same host without affecting each other, and enable a service to be scaled out by deploying more instances.
+
+:::image type="content" source="../media/1-container-benefits.svg" alt-text="Diagram that shows three benefits of containerization; efficiency, isolation, and scalability." border="false":::
+
+The standard container management runtime focuses on managing individual containers. If you want to scale a complex system with multiple containers working together, this scenario becomes challenging. Consider the following aspects:
+
+- Configuring and maintaining load balancing
+- Network connectivity
+- Orchestrating the deployment process
+
+You use containerized instances to quickly deploy into new customer regions, and scale resources as needed to meet customer demands. To simplify developing, deploying, and managing these complex containerized applications, you use a container orchestration platform, such as Kubernetes.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll learn:
 
-- Describe how Kubernetes supports container orchestration.
-- Describe the difference between control planes and nodes.
+- How Kubernetes supports container orchestration.
+- The differences between control planes and nodes.
 - Evaluate whether Kubernetes is an appropriate orchestration platform for a given workload.
 
 ## Prerequisites

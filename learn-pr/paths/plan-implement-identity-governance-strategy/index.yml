@@ -3,11 +3,10 @@ uid: learn.wwl.plan-implement-identity-governance-strategy
 metadata:
   title: 'SC-300: Plan and implement an identity governance strategy'
   description: Design and implement identity governance for your identity solution using entitlement, access reviews, privileged access, and monitoring your Microsoft Entra ID. Aligned to SC-300 exam.
-  ms.date: 02/07/2023
+  ms.date: 10/30/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: learning-path
 title: 'SC-300: Plan and implement an identity governance strategy'
 prerequisites: |
   None
@@ -18,14 +17,13 @@ levels:
 - intermediate
 roles:
 - administrator
-- identity-access-admin
 - security-engineer
 products:
 - azure
-- azure-active-directory
-- defender-identity
 - entra
 - entra-identity-governance
+- entra-permissions-management
+- entra-id
 subjects:
 - identity-access
 modules:
@@ -33,5 +31,6 @@ modules:
 - learn.wwl.plan-implement-manage-access-review
 - learn.wwl.plan-implement-privileged-access
 - learn.wwl.monitor-maintain-azure-active-directory
+- learn.permissions-management.explore-features-of-permissions-management
 trophy:
   uid: learn.wwl.plan-implement-identity-governance-strategy.trophy

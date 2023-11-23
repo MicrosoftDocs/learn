@@ -1,5 +1,3 @@
-
-
 ## Lab scenario
 
 Your organization is migrating network infrastructure and virtual machines to Azure. As the Azure Administrator you need to:
@@ -24,7 +22,7 @@ Your organization is migrating network infrastructure and virtual machines to Az
 + **Task 3**: Test the virtual machine connections.
     + Connect to **vm1** with RDP. 
     + Connect to **vm2** with RDP. 
-    + Disable the public and private Windows Defender firewall on both virtual machines.
+    + Disable the public and private Windows Firewall on both virtual machines.
     + Use Azure PowerShell to confirm **vm1** can ping **vm2**. 
 
 > [!NOTE]

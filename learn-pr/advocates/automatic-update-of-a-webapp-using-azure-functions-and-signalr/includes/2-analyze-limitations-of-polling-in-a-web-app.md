@@ -75,7 +75,7 @@ module.exports = async function (context, req, stocks) {
 
 ### Client
 
-The sample client uses Vue.js to compose the UI and the axios HTTP client to handle requests to the function.
+The sample client uses Vue.js to compose the UI and the Axios HTTP client to handle requests to the function.
 
 <!--
     REVIEW:
@@ -119,9 +119,9 @@ const app = new Vue({
 });
 ```
 
-The `update` method is called every five seconds once polling is started by the `startPoll` method. Inside the `update` method, a GET request is sent to the `getStocks` function and the result is set to `app.stocks` which updates the UI.
+Once the `startPoll` method begins polling, the `update` method is called every five seconds. Inside the `update` method, a GET request is sent to the `getStocks` function and the result is set to `app.stocks`, which updates the UI.
 
-The server and client code is relatively straightforward but, as we'll see, this simplicity brings with it some limitations.
+The server and client code is relatively straightforward but, as we find out in our analysis, this simplicity brings with it some limitations.
 
 ## Supporting CORS
 
@@ -147,21 +147,21 @@ This configuration allows a web application running at *localhost:8080* to make 
 
 CORS is an HTTP feature that enables a web application running under one domain to access resources in another domain. Web browsers implement a security restriction known as same-origin policy that prevents a web page from calling APIs in a different domain; CORS provides a secure way to allow one domain (the origin domain) to call APIs in another domain. 
 
-You can set CORS rules individually for each of the Azure Storage services, by calling Set Blob Service Properties, Set File Service Properties, Set Queue Service Properties, and Set Table Service Properties. Once you set the CORS rules for the service, then a properly authorized request made against the service from a different domain will be evaluated to determine whether it is allowed according to the rules you have specified.
+You can set CORS rules individually for each of the Azure Storage services, by calling Set Blob Service Properties, Set File Service Properties, Set Queue Service Properties, and Set Table Service Properties. Once you set the CORS rules for the service, a properly authorized request made against the service from a different domain is allowed or disallowed according to the rules you have specified.
 
 ## Analysis of current solution
 
 Let's think about some of the drawbacks of this timer-based polling approach.
 
-In the timer-based polling prototype, the client application contacts the server whether or not changes exist to the underlying data. Once data is returned from the server the entire list of stocks is updated on the web page - again - regardless of any changes in the data. This polling mechanism is an inefficient solution. 
+In the timer-based polling prototype, the client application contacts the server whether or not changes exist to the underlying data. Once data is returned from the server, the entire list of stocks is updated on the web page - again - regardless of any changes in the data. This polling mechanism is an inefficient solution.
 
-Selecting the best polling interval for your scenario is also a challenging. Polling forces you to make a choice between how much each call to the backend costs and how quickly you want your app to respond to new data. Delays also often exist between when new data becomes available and when it's detected by the app. The following illustration shows the issue.
+Selecting the best polling interval for your scenario is also a challenge. Polling forces you to make a choice between how much each call to the backend costs and how quickly you want your app to respond to new data. Delays often exist between the time that new data becomes available and the time that the app detects it. The following illustration shows the issue.
 
 ![An illustration showing a timeline and a polling trigger checking for new data every five minutes. New data becomes available after seven minutes. The app isn't aware of the new data until the next poll, which occurs at 10 minutes.](../media/polling-example.png)
 
 In the worst case, the potential delay for detecting new data is equal to the polling interval. So why not use a smaller interval?
 
-As the application scales, the amount of data exchanged between the client and server will become a problem. Each HTTP request header includes hundreds of bytes of data along with the session's cookie. All this overhead, especially when under heavy load, creates wasted resources and unnecessarily taxes the server.
+As the application scales, the amount of data exchanged between the client and server becomes a problem. Each HTTP request header includes hundreds of bytes of data along with the session's cookie. All this overhead, especially when under heavy load, creates wasted resources and unnecessarily taxes the server.
 
 Now that you're more familiar with the starting point of the application, it's time to get the application running on your machine.
 

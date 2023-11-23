@@ -4,11 +4,10 @@ title: Review Azure Container Instances
 metadata:
   title: Review Azure Container Instances
   description: "Review Azure Container Instances"
-  ms.date: 06/26/2023
+  ms.date: 11/16/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 2
