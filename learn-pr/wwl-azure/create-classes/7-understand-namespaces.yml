@@ -4,10 +4,10 @@ title: Understand namespaces
 metadata:
   title: Understand namespaces
   description: "This unit describes what a namespace is and how they're used."
-  ms.date: 10/25/2023
+  ms.date: 11/23/2023
   author: wwlpublish
   ms.author: gregorfisher
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/7-understand-namespaces.md)]

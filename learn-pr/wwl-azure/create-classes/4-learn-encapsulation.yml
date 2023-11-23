@@ -4,10 +4,10 @@ title: Learn about encapsulation
 metadata:
   title: Learn about encapsulation
   description: "This unit describes what encapsulation is and what it's used for."
-  ms.date: 10/25/2023
+  ms.date: 11/23/2023
   author: wwlpublish
   ms.author: gregorfisher
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/4-learn-encapsulation.md)]
