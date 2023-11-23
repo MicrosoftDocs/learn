@@ -127,7 +127,7 @@ In your Program.cs file, you begin by modifying the 'for' loops you created earl
 
     ```csharp
     using LangtonsAnts;
-
+    
     void Print(Game game)
     {
         for (int i = 0; i < game.Field.GetLength(0); i++)
@@ -135,10 +135,10 @@ In your Program.cs file, you begin by modifying the 'for' loops you created earl
             for (int j = 0; j < game.Field.GetLength(1); j++)
             {
                 char fieldChar = '░'; 
-
+    
                 // If the ant is at the cell, display ant direction instead of color value
                 Ant? ant = game.Ants.FirstOrDefault(a => (i == a.I) && (j == a.J));
-
+    
                 if (ant != null)
                 {
                     // Draw one of the ants
@@ -243,10 +243,10 @@ You now need to create an instance of the game below the 'using LangtonsAnts' st
 
     ```csharp
     using LangtonsAnts;
-
+    
     Game game = new Game(16);
     Print(game);
-
+    
     void Print(Game game)
     {
         // Method content not shown
@@ -346,7 +346,8 @@ The While clause in your 'do...While' loop will check the input variable to see 
 
 1. Lastly, add a 'Console.ReadLine' statement and capture the user's input in the nullable 'input' variable you created at the top of this section.
 
-    > [!NOTE]The reason you make the 'input' variable nullable, ('string? input') indicated by the question mark, is that this variable will be empty (or null) until the user enters something through the keyboard.
+    > [!NOTE]
+    > The reason you make the 'input' variable nullable, ('string? input') indicated by the question mark, is that this variable will be empty (or null) until the user enters something through the keyboard.
 
     ```csharp
     string? input;
@@ -354,10 +355,10 @@ The While clause in your 'do...While' loop will check the input variable to see 
     {
         game.NextGeneration();
         Console.WriteLine($"Generation #: {game.GenerationN}");
-
+    
         Console.WriteLine("Field:");
         Print(game);
-
+    
         Console.WriteLine("Press Enter for a new turn or any other key for exit");
         input = Console.ReadLine();
     }

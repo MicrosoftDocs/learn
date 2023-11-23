@@ -23,7 +23,7 @@ Now that you have a Game folder, you can begin adding your application files to 
     ```csharp
     namespace LangtonsAnts
     {
-
+    
     }
     ```
 
@@ -100,7 +100,7 @@ Add an Ant class in your new namespace in a file called Ant.cs.
             public int I { get; set; }
             public int J { get; set; }
             public AntDirection Direction { get; set; }
-
+    
             public Ant(int i, int j, AntDirection direction)
             {
                 I = i;
@@ -257,7 +257,7 @@ namespace LangtonsAnts
 
 ## Create a "getter" only Size property
 
-As you know, properties 'get' and 'set' values of a particular type (int, string, etc). You can, however, customize them so that they only either 'get' or 'set' a value, but not both. Here you're customizing your Size property so that it only gets the size of the field.
+As you know, properties 'get' and 'set' values of a particular type (int, string, etc.). You can, however, customize them so that they only either 'get' or 'set' a value, but not both. Here you're customizing your Size property so that it only gets the size of the field.
 
 ```csharp
 namespace LangtonsAnts
@@ -339,7 +339,7 @@ Add code to `CalcNextGeneration` method.
     ```csharp
     for (int index = Ants.Length - 1; index >= 0; index--)
     {
-
+    
     }
     ```
 
@@ -354,19 +354,19 @@ Add code to `CalcNextGeneration` method.
 
 5. Now check if the ant is still within the field with this 'if' statement, below your 'ant' variable.
 
-This next bit of code checks to see if the ant is still in the grid. The following `if` statement checks to see if an ant has exceeded the bound of the grid. If an ant has exceeded the bounds of the grid, you `continue` and skip processing that ants movements and begin the loop again with our next ant.
+    This next bit of code checks to see if the ant is still in the grid. The following `if` statement checks to see if an ant has exceeded the bound of the grid. If an ant has exceeded the bounds of the grid, you `continue` and skip processing that ants movements and begin the loop again with our next ant.
 
-```csharp
-// Check if the ant is still within the field
-if (ant.I < 0 || ant.J < 0 || ant.J >= Size || ant.I >= Size)
-{
-    // TODO later you can act on ants going out of the field, 
-    // for now you just exclude them from processing
-    continue;
-}
-```
+    ```csharp
+    // Check if the ant is still within the field
+    if (ant.I < 0 || ant.J < 0 || ant.J >= Size || ant.I >= Size)
+    {
+        // TODO later you can act on ants going out of the field, 
+        // for now you just exclude them from processing
+        continue;
+    }
+    ```
 
-The next several lines of code essentially swap out the old grid value (initially a `0`) and replace it with the new one (initially a `1`), now that the ant has landed on it. The first thing you do is take the newField variable you created which is our entire grid and grab the individual cell the ant is currently on.
+    The next several lines of code essentially swap out the old grid value (initially a `0`) and replace it with the new one (initially a `1`), now that the ant has landed on it. The first thing you do is take the newField variable you created which is our entire grid and grab the individual cell the ant is currently on.
 
 6. Add the following line below the `if` statement `byte v = newField[ant.I, ant.J];`.
 
@@ -421,8 +421,8 @@ The next several lines of code essentially swap out the old grid value (initiall
     }
     ```
 
-    > [!NOTE]
-    The generation (or number of ants) is also incremented.
+    >[!NOTE]
+    > The generation (or number of ants) is also incremented.
 
 ## Rewrite Program.cs to print game state
 
@@ -463,7 +463,7 @@ Your final task for this exercise is to rewrite the Program.cs file so that it p
 
     ```csharp
     using LangtonsAnts;
-
+    
     void Print(Game game)
     {
         for (int i = 0; i < game.Field.GetLength(0); i++)
@@ -480,7 +480,7 @@ Your final task for this exercise is to rewrite the Program.cs file so that it p
     ```
 
     >[!NOTE]
-    You will get an error saying that your Print method is declared but never used. The error will go away shortly, as you will now be adding code to invoke the method.
+    > You will get an error saying that your Print method is declared but never used. The error will go away shortly, as you will now be adding code to invoke the method.
 
 ## Create a game instance and go through a few generations
 

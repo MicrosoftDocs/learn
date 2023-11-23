@@ -34,8 +34,7 @@ You'll create a two dimensional (16x16) byte array that represents our grid for 
 1. Open your Program.cs file and delete the starter code in the file.
 
 1. Next, add the following two dimensional byte array for the grid:
-
-`int[,] field = new int[16, 16];`
+   `int[,] field = new int[16, 16];`
 
 ## Create loops
 
