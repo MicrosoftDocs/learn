@@ -4,10 +4,10 @@ title: Module review and takeaways
 metadata:
   title: Module review and takeaways
   description: "This unit reviews the use of classes, properties, and methods."
-  ms.date: 10/25/2023
+  ms.date: 11/23/2023
   author: wwlpublish
   ms.author: gregorfisher
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 20
 content: |
   [!include[](includes/7-review-module-takeaways.md)]

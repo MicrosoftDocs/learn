@@ -4,10 +4,10 @@ title: Instantiate a class
 metadata:
   title: Instantiate a class
   description: "This unit talks about how you instantiate a class."
-  ms.date: 10/25/2023
+  ms.date: 11/23/2023
   author: wwlpublish
   ms.author: gregorfisher
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/2-instantiate-class.md)]

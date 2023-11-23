@@ -4,10 +4,10 @@ title: Static properties and methods
 metadata:
   title: Static properties and methods
   description: "This unit describes how the static keyword affects class members."
-  ms.date: 10/25/2023
+  ms.date: 11/23/2023
   author: wwlpublish
   ms.author: gregorfisher
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 20
 content: |
   [!include[](includes/5-examine-static-properties-methods.md)]
