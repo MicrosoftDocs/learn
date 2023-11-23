@@ -15,7 +15,7 @@ In this module, you complete the following activities:
 
 As part of this module, the following resources are created:
 
-* Azure IoT Hub
+* IoT Hub
 * Blob Storage
 * Azure Monitor
 * Device simulator program
