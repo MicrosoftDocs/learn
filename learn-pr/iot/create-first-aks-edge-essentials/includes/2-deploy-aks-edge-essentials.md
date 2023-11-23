@@ -56,16 +56,18 @@ Let's create the Azure virtual machine (VM) with Windows 11 Enterprise.
 
 Now that the VM is created, let's prepare the machine for AKS Edge Essentials and run the `AksEdgeQuickStartForLearn.ps1` script by using [Managed Run Commands](/azure/virtual-machines/windows/run-command-managed) in the Azure Cloud Shell. Alternatively you could connect from your local machine via Remote Desktop Connection (RDP), download and run the PowerShell script there.
 
-<!-- TODO: Publish Script to main! I may not need the RunAsPassword and RunAsUser -->
+<!-- TODO: Publish Script to main! I may need the RunAsPassword and RunAsUser -->
 <!-- RunAsUser = $username -->
 <!-- RunAsPassword = $adminpassword -->
+
+<!-- When deploying it over Azure cloudshell I need to run this in the VM to be able to use kubectl: Get-AksEdgeKubeConfig -->
 
  <!--TODO if 2 params $parameters = @(@{Name='name';Value='Sergio'},@{Name='lastname';Value='Azevedooo'}) -->
 
 1. Run the PowerShell [Set-AzVMRunCommand](/powershell/module/az.compute/set-azvmruncommand) cmdlet to deliver the PowerShell script to the VM and execute it.
 
     ```powershell
-    $setazvmrparams = @{
+    $setazvmrparamsScript = @{
         ResourceGroupName = $resourcegroup
         VMName = $vmname
         Location = $location
@@ -74,7 +76,7 @@ Now that the VM is created, let's prepare the machine for AKS Edge Essentials an
         Parameter = @(@{Name='WindowsNode';Value=$true})
         NoWait = $true
     }
-    Set-AzVMRunCommand @setazvmrparams
+    Set-AzVMRunCommand @setazvmrparamsScript
     ```
 
     > [!NOTE]
@@ -85,20 +87,21 @@ Now that the VM is created, let's prepare the machine for AKS Edge Essentials an
     - In the VM working folder `C:\akseeLearn`, the script downloads the GitHub archive of [Azure/AKS-Edge](https://github.com/Azure/AKS-Edge) and unzips to a folder **AKS-Edge-main**.
     - Invokes the `Start-AideWorkflow` function that performs the following tasks:
       - Downloads and installs the AKS Edge Essentials MSI.
+      - Downloads Windows node files.
       - Installs required host OS features (`Install-AksEdgeHostFeatures`).
       - Deploys a single machine K3S cluster with a Linux and Windows node.
 
 1. Run the PowerShell [Get-AzVMRunCommand](/powershell/module/az.compute/get-azvmruncommand) cmdlet to retrieve the output of the PowerShell script you executed in the VM:
 
     ```powershell
-    $getazvmparams = @{
+    $getazvmparamsScript = @{
         ResourceGroupName = $resourcegroup
         VMName = $vmname
         RunCommandName = "deployAKSEE"
         Expand = "InstanceView"
     }
     while($true) {
-        (Get-AzVMRunCommand @getazvmparams).InstanceView
+        (Get-AzVMRunCommand @getazvmparamsScript).InstanceView
         Start-Sleep -Seconds 10
     }
     ```
@@ -159,17 +162,51 @@ Now that the VM is created, let's prepare the machine for AKS Edge Essentials an
     > [!NOTE]
     > This will create an infinite loop. When the output looks similar to the example above you can stop it by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd>. Since this takes around 30 minutes to complete, you can stop it now and continue to the next learning unit, we will get back to this later.
 
+Now that AKS Edge Essentials is deployed we will log in to the VM via RDP to further configure our single machine K3S cluster.
 
-
-<!-- TODO : This does not work with Powershell. Need to use SSH -->
-1. Confirm that the deployment was successful by running the PowerShell [Invoke-AzVMRunCommand](/powershell/module/az.compute/invoke-azvmruncommand) cmdlet to retrieve the output of kubectl:
+1. Run the Powershell [Get-AzRemoteDesktopFile](/powershell/module/az.compute/get-azremotedesktopfile) cmdlet to get the RDP file to connect to the VM:
 
     ```powershell
-    $invokeazvmparams = @{
+    $getazrdpfileparams = @{
         ResourceGroupName = $resourcegroup
         Name = $vmname
-        CommandId = "RunPowerShellScript"
-        ScriptString = "kubectl get nodes -o wide; kubectl get pods -A -o wide"
+        LocalPath = "./myvm2.rdp"
     }
-    Invoke-AzVMRunCommand @invokeazvmparams
+    Get-AzRemoteDesktopFile @getazrdpfileparams
     ```
+
+1. In Azure Cloud Shell, select **Upload/Download Files** to download the RDP file to your local machine.
+
+1. Open the RDP file and connect to the VM using *azureuser* as the **user** and the `Admin Password` you took a note earlier as the **password**. When logging in for the first time, you can accept all options by clicking **Next**.
+
+1. Open the PowerShell command line by clicking on the **Start** menu and typing **PowerShell**.
+
+1. Run the PowerShell [Get-AksEdgeKubeConfig](/azure/aks/hybrid/reference/aks-edge-ps/get-aksedgekubeconfig) cmdlet to pull the KubeConfig file from the Kubernetes Linux node so that kubectl on the host can access the AKS Edge Essentials cluster, and then press <kbd>Enter</kbd> to confirm:
+
+    ```powershell
+    Get-AksEdgeKubeConfig
+    ```
+
+1. Confirm that the deployment was successful by running the following command:
+
+    ```powershell
+    kubectl get nodes -o wide
+    kubectl get pods -A -o wide
+    ```
+
+    The following example output shows the Linux and Windows nodes are ready and the pods are running:
+
+    ```output
+    PS C:\Users\azureuser>kubectl get nodes -o wide
+    NAME         STATUS   ROLES                       AGE   VERSION        INTERNAL-IP   EXTERNAL-IP   OS-IMAGE                         KERNEL-VERSION     CONTAINER-RUNTIME
+    myvm-ledge   Ready    control-plane,etcd,master   46m   v1.26.6+k3s-   192.168.0.2   <none>        CBL-Mariner/Linux                5.15.133.1-1.cm2   containerd://1.7.1-k3s1
+    myvm-wedge   Ready    <none>                      33m   v1.26.6+k3s-   192.168.0.3   <none>        Windows Server 2022 Datacenter   10.0.20348.2031    containerd://1.7.1-k3s1
+    
+    PS C:\Users\azureuser>kubectl get pods -A -o wide
+    NAMESPACE     NAME                               READY   STATUS    RESTARTS      AGE   IP            NODE         NOMINATED NODE   READINESS GATES
+    kube-system   coredns-866448bdfb-8s26b           1/1     Running   0             47m   10.42.0.3     myvm-ledge   <none>           <none>
+    kube-system   kube-vip-cloud-provider-ds-n8l6t   1/1     Running   0             46m   10.42.0.2     myvm-ledge   <none>           <none>
+    kube-system   kube-vip-ds-rjl8v                  1/1     Running   2 (43m ago)   46m   192.168.0.2   myvm-ledge   <none>           <none>
+    ``````
+
+<!-- TODO: Add a ScreenShot here -->
