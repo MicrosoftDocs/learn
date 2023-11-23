@@ -67,11 +67,11 @@ While planning for your organization, identify and make notes about the followin
 
 :::image type="content" source="../media/2-onboard-sensors.png" alt-text="Diagram of an onboard sensors path." border="false":::
 
- With your deployment teams, onboard your OT sensors with Defender for IoT on the Azure portal.
+With your deployment teams, onboard your OT sensors with Defender for IoT on the Azure portal.
 
-When onboarding, make sure to:
+In the onboarding phase, make sure to:
 
-- Assign sites and zones based on your sensor plans.
+- Assign sites and zones for different geographic and logical areas based on your sensor plans.
 - Download and save each OT sensor's activation file.
 
 Your onboarding team, which can include IoT and OT engineers, needs appropriate Azure roles, such as Admin or Security Admin, to complete onboarding and management tasks.

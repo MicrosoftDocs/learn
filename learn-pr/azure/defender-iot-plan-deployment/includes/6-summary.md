@@ -8,6 +8,7 @@ Implementing your plan will help you to take your OT security visibility to the 
 
 ## Learn more
 
-[Deploy Defender for IoT for OT monitoring](/azure/defender-for-iot/organizations/ot-deploy/ot-deploy-path)
-[Methods for connecting sensors to Azure](/azure/defender-for-iot/organizations/)
-[Microsoft Defender for IoT user management](/azure/defender-for-iot/organizations/manage-users-overview)
+- [Deploy Defender for IoT for OT monitoring](/azure/defender-for-iot/organizations/ot-deploy/ot-deploy-path)
+- [Plan your OT monitoring system with Defender for IoT](/azure/defender-for-iot/organizations/best-practices/plan-corporate-monitoring)
+- [Methods for connecting sensors to Azure](/azure/defender-for-iot/organizations/)
+- [Microsoft Defender for IoT user management](/azure/defender-for-iot/organizations/manage-users-overview)
