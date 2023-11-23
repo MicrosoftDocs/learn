@@ -1,5 +1,3 @@
-
-
 You can use the Intune Data Warehouse to build professional looking reports that provide insight into your enterprise mobile environment. For example, some of the reports include:
 
  -  Trend of users enrolling in Intune so you can optimize your license purchases
@@ -35,7 +33,7 @@ When accessing data in the Data Warehouse with Power BI, you have two options:
 With a client authenticated to Microsoft Entra ID, the OData URL connects to the RESTful endpoint in the Data Warehouse API that exposes the data model to your reporting client. Follow these instructions to use Power BI Desktop to connect and create your own reports. You're not limited to Power BI Desktop, but can use your favorite analytic tool with the OData URL provided the client supports OAUTH2.0 authentication and the OData v4.0 standard.
 
 1.  Sign in to the Endpoint Manager portal and choose **Reports**.
-2.  Select **Data warehouse**. Retrieve the URL listed in the **Odata feel for reporting service** field. For example:
+2.  Select **Data warehouse**. Retrieve the URL listed in the **Odata feed for reporting service** field. For example:
     
     ```
     https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta
