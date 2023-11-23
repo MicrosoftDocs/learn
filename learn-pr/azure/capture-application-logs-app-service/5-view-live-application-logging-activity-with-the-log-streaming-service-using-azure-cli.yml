@@ -7,10 +7,9 @@ metadata:
   ms.date: 03/20/2019
   author: msangapu-msft
   ms.author: msangapu
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurecli
-  ms.prod: learning-azure
 durationInMinutes: 5
 interactive: bash
 azureSandbox: true

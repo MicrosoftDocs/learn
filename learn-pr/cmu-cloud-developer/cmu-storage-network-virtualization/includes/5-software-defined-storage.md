@@ -54,6 +54,6 @@ SDS is a fast-evolving approach to providing storage as a service that meets a c
 ***
 ### References
 
-1. _Thereska et al. (2013). IOFlow: [A Software-Defined Storage Architecture](http://rowstron.azurewebsites.net/Publications/ioflow_sosp13.pdf) SOSP'13: The 24th ACM Symposium on Operating Systems Principles_
+1. _Thereska et al. (2013). IOFlow: [A Software-Defined Storage Architecture](https://rowstron.azurewebsites.net/Publications/ioflow_sosp13.pdf) SOSP'13: The 24th ACM Symposium on Operating Systems Principles_
 
-[^1]: <http://rowstron.azurewebsites.net/Publications/ioflow_sosp13.pdf> "Thereska et al. (2013). IOFlow: *A Software-Defined Storage Architecture* in SOSP'13: The 24th ACM Symposium on Operating Systems Principles"
+[^1]: <https://rowstron.azurewebsites.net/Publications/ioflow_sosp13.pdf> "Thereska et al. (2013). IOFlow: *A Software-Defined Storage Architecture* in SOSP'13: The 24th ACM Symposium on Operating Systems Principles"

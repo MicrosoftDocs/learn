@@ -3,12 +3,11 @@ uid: learn.languages.dotnet-microservices.exercise-create-docker-compose-file
 title: Exercise - Create a Docker Compose file
 metadata:
   title: Exercise - Create a Docker Compose file
-  description: Learn how to group several microservices together into a single application using Docker Compose.
-  ms.date: 05/07/2021
+  description: Learn how to group several microservices together in a single application by using Docker Compose.
+  ms.date: 11/06/2023
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
   ms.custom:
   - team=cloud_advocates
   ms.contributors:

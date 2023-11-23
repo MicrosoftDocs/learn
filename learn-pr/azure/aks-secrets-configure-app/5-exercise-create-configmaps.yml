@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/09/2023
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 sandbox: false
 # interactive: bash
 # sandbox: true
