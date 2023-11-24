@@ -1,18 +1,19 @@
-Welcome to the introduction of the HDInsight on AKS module! In this module, we will explore the powerful combination of Azure HDInsight and Azure Kubernetes Service (AKS) to help you leverage big data analytics and machine learning capabilities in a scalable and efficient manner.
+Welcome to the introduction of the HDInsight on AKS module! 
 
-HDInsight is a fully-managed cloud service that makes it easy to process big data workloads using popular open-source frameworks such as Apache Hadoop, Spark, Hive, and more. It provides a reliable and scalable platform for running big data applications, allowing you to focus on extracting insights from your data rather than managing the underlying infrastructure.
+In this module, we will cover various topics, including:
 
-On the other hand, AKS is a managed container orchestration service provided by Azure. It simplifies the deployment, management, and scaling of containerized applications using Kubernetes, an open-source container orchestration platform. By combining HDInsight with AKS, you can take advantage of the scalability and flexibility of Kubernetes while leveraging the rich analytics capabilities of HDInsight.
+1.	What is HDInsight on AKS?
+1.	Understanding technical architecture of HDInsight on AKS
+1.	Security in HDInsight on AKS
+1.	When to use HDInsight on AKS
 
-Throughout this module, we will cover various topics, including:
+HDInsight on AKS is a modern, reliable, secure, and fully managed Platform as a Service (PaaS) that runs on Azure Kubernetes Service (AKS). HDInsight on AKS allows you to deploy popular Open-Source Analytics workloads like Apache Spark™, Apache Flink®️, and Trino without the overhead of managing and monitoring containers.
 
-1. Understanding the benefits of HDInsight on AKS and its use cases.
-2. Deploying and configuring HDInsight clusters on AKS.
-3. Running big data workloads on HDInsight clusters using popular frameworks.
-4. Integrating HDInsight with other Azure services for enhanced analytics capabilities.
-5. Monitoring and managing HDInsight on AKS clusters effectively.
+You can build end-to-end, petabyte-scale Big Data applications spanning streaming through Apache Flink, data engineering and machine learning using Apache Spark, and Trino's powerful query engine.
+All these capabilities combined with HDInsight on AKS’s strong developer focus enables enterprises and digital natives with deep technical expertise to build and operate applications that are right fit for their needs. 
+
+HDInsight on AKS allows developers to access all the rich configurations provided by open-source software and the extensibility to seamlessly include other ecosystem offerings. This offering empowers developers to test and tune their applications to extract the best performance at optimal cost.
 
 Whether you are a data engineer, data scientist, or a developer looking to harness the power of big data analytics and machine learning, this module will provide you with the knowledge and skills to get started with HDInsight on AKS.
 
 So, let's dive in and explore the world of HDInsight on AKS, and unlock the potential of your big data workloads!
-
