@@ -1,5 +1,9 @@
 Retail business is complex. It involves many different professional profiles, tasks, and processes. Accordingly, AI solutions can fit into several steps of the business to optimize and expand it.
 
+First, Shelley Bransten shares some key insights on customer cases and opportunities in the following video. Bransten is Corporate Vice President of Retail, Consumer Goods, and Gaming Industries at Microsoft.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6c7f31a3-ae3d-422b-9506-b0fb496d60f6]
+
 ## Productivity
 
 Boosting productivity is one of the major priorities of today’s organizations. Products such as Microsoft 365 Copilot and Microsoft Power BI include features to make you more productive.

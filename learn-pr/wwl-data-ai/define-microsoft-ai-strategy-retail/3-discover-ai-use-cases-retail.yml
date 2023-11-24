@@ -9,6 +9,6 @@ metadata:
   ms.author: rcaper
   ms.topic: unit
   ms.service: azure-ai-services
-durationInMinutes: 5
+durationInMinutes: 12
 content: |
   [!include[](includes/3-discover-ai-use-cases-retail.md)]
