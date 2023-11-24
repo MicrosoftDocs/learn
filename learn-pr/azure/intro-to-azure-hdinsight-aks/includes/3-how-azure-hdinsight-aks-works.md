@@ -1,73 +1,31 @@
-Here, you'll learn how Azure HDInsight works. You'll find out about the following components and how they fit together to provide data control and management:
+Enterprise readiness for any software requires stringent security checks to prevent and address threats that may arise. HDInsight on AKS provides a multi-layered security model to protect you on multiple layers. The security architecture uses modern authorization methods using MSI. All the storage access is through MSI, and the database access is through username/password. The password is stored in Azure Key Vault, defined by the customer. This makes the setup robust and secure by default.
 
-- Apache Hadoop
-- HDInsight storage
-- HDInsight processing
+The below diagram illustrates a high-level technical architecture of security in HDInsight on AKS.
 
-## What is Apache Hadoop?
+:::image type="content" source="../media/concept-security/security-concept.png" alt-text="Screenshot showing the security flow of authenticating a cluster." border="true" lightbox="../media/concept-security/security-concept.png":::
 
-Apache Hadoop is a cloud-distributed data-processing system at the core of HDInsight. It has three components, which the following table describes:
+Security is to divided into four main groups based on the type of control. These groups are also called security pillars and are of the following types: 
+- Perimeter security
+- Authentication
+- Authorization
+- Encryption
 
-| Apache Hadoop component | Description                                                  |
-| ----------------------- | ------------------------------------------------------------ |
-| HDFS              | The Apache Hadoop Distributed File System (HDFS) provides storage for the Hadoop system. |
-| YARN                    | The Apache Hadoop Yet Another Resource Negotiator (YARN) component provides processing for the system. |
-| MapReduce           | MapReduce is a programming model that enables you to process and analyze data. |
+## Perimeter security
 
-### How do the components interact?
+Perimeter security in HDInsight on AKS is achieved through virtual networks. An enterprise admin can create a cluster inside a virtual network (VNET) and use network security groups (NSG) to restrict access to the virtual network.
 
-The following diagram depicts storage and processing components interacting in a typical HDInsight Hadoop cluster. It illustrates the following components:
+## Authentication
 
-- The head node and worker nodes, which do the processing.
-- Multiple Windows Azure Storage Blob (WASB) storage centers, within the nodes. HDFS interacts with these containers.
-- Multiple default, linked, and unlinked storage containers. These are available to the two nodes.
+HDInsight on AKS provides Microsoft Entra ID-based authentication for cluster login and uses managed identities (MSI) to secure cluster access to files in Azure Data Lake Storage Gen2. Managed identity is a feature of Microsoft Entra ID that provides Azure services with a set of automatically managed credentials. With this setup, enterprise employees can sign into the cluster nodes by using their domain credentials. A managed identity from Microsoft Entra ID allows your app to easily access other Microsoft Entra protected resources such as Azure Key Vault, Storage, SQL Server, and Database. The identity managed by the Azure platform and doesn't require you to provision or rotate any secrets. This solution is a key for securing access to your HDInsight on AKS cluster and other dependent resources. Managed identities make your app more secure by eliminating secrets from your app, such as credentials in the connection strings.
 
-:::image type="content" source="../media/overall.png" alt-text="A diagram that depicts the head and worker nodes in Hadoop, then the multiple storage containers accessible to the nodes.":::
+You create a user-assigned managed identity, which is a standalone Azure resource, as part of the cluster creation process, which manages the access to your dependent resources.
 
-Let's now examine how storage and processing work.
+## Authorization
 
-## How does storage work?
+A best practice most enterprises follow is making sure that not every employee has full access to all enterprise resources. Likewise, the admin can define role-based access control policies for the cluster resources.
 
-A cluster's storage component isn't created automatically when you provision an HDInsight cluster. Instead, it's provided by an HDFS-compliant system such as Azure Storage or Azure Data Lake.
+The resource owners can configure role-based access control (RBAC). Configuring RBAC policies allows you to associate permissions with a role in the organization. This layer of abstraction makes it easier to ensure people have only the permissions needed to perform their work responsibilities. Authorization managed by ARM roles for cluster management (control plane) and cluster data access (data plane) managed by cluster access management.
 
-There are benefits in separating a cluster's storage component from the processing component. For example, you can safely delete any HDInsight clusters used only for computation without worrying about losing data. When you're adding an HDInsight cluster, you must define a default file system.
+## Encryption
 
-> [!IMPORTANT]
-> For Azure Storage, you must specify a blob container as the default file system.
-
-Providing a default file system ensures that HDInsight can resolve relative file references when searching for files.
-
-> [!TIP]
-> When you want to increase available storage, you can link and unlink additional file systems as required.
-
-:::image type="content" source="../media/storage.png" alt-text="A diagram depicting the storage element from the previous diagram.":::
-
-## How does processing work?
-
-When processing data, a Hadoop cluster's compute component on HDInsight breaks into two logical areas. The following table describes these two areas:
-
-| Component   | Description                                                  |
-| ----------- | ------------------------------------------------------------ |
-| Head node   | The head node accepts and manages client requests and passes the requests to the worker nodes. |
-| Worker node | The worker nodes process data.    |
-
-> [!NOTE]
-> The head node is sometimes referred to as a master node.
-
-Most clusters contain two head nodes, including:
-
-- An active head node, which manages client connections.
-- A passive head node, which provides resilience should the active node go offline.
-
-:::image type="content" source="../media/processing.png" alt-text="A diagram depicting the processing element in a typical Hadoop cluster.":::
-
-Both the head and worker nodes can connect directly to a locally attached HDFS or access data that is stored in Azure Blob or Azure Data Lake. What data gets managed depends on two factors:
-
-- How the MapReduce programming model has defined how to work with the data
-- How the head node allocates the work
-
-### What does YARN do?
-
-The YARN performs resource management within an HDInsight cluster. When you're processing data, this service manages resources and job scheduling.
-
-YARN sits between the HDFS and the computation system of the HDInsight cluster. It works with the head node to help distribute a job across the cluster's worker nodes. This helps to ensure that the data processing jobs occur in parallel.
+Protecting data is important for meeting organizational security and compliance requirements. Along with restricting access to data from unauthorized employees, you should encrypt it. The storage and the disks (OS disk and persistent data disk) used by the cluster nodes and containers are encrypted. Data in Azure Storage is encrypted and decrypted transparently using 256-bit AES encryption, one of the strongest block ciphers available, and is FIPS 140-2 compliant. Azure Storage encryption is enabled for all storage accounts, which makes data secure by default, you don't need to modify your code or applications to take advantage of Azure Storage encryption. Encryption of data in transit is handled with TLS 1.2.
