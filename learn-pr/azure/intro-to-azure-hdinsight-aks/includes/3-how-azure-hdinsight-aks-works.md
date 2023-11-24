@@ -2,7 +2,7 @@ Enterprise readiness for any software requires stringent security checks to prev
 
 The below diagram illustrates a high-level technical architecture of security in HDInsight on AKS.
 
-:::image type="content" source="../media/concept-security/security-concept.png" alt-text="Screenshot showing the security flow of authenticating a cluster." border="true" lightbox="../media/concept-security/security-concept.png":::
+:::image type="content" source="../media/security-concept.png" alt-text="Screenshot showing the security flow of authenticating a cluster." border="true" lightbox="../media/security-concept.png":::
 
 Security is to divided into four main groups based on the type of control. These groups are also called security pillars and are of the following types: 
 - Perimeter security
