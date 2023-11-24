@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.guided-project-classes-methods-properties.excercise-implement-classes
+uid: learn.wwl.guided-project-classes-methods-properties.exercise-implement-classes
 title: Exercise - Implement classes
 metadata:
   title: Exercise - Implement classes
@@ -11,4 +11,4 @@ metadata:
   ms.technology: (empty)
 durationInMinutes: 20
 content: |
-  [!include[](includes/4-excercise-implement-classes.md)]
+  [!include[](includes/4-exercise-implement-classes.md)]

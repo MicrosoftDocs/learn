@@ -29,7 +29,7 @@ Now that you have created the basic plumbing for a console application, meaning 
 
 You'll create a two dimensional (16x16) byte array that represents our grid for the ants. You then display it by creating a nested looping structure that prints characters to the screen showing our cell locations. The outer loop is creating our horizontal cells (x-axis), while our inner loop is stacking each row as it builds out the vertical axis.
 
-## Create a two dimensional integer array
+## Create a two-dimensional integer array
 
 1. Open your Program.cs file and delete the starter code in the file.
 
@@ -38,7 +38,7 @@ You'll create a two dimensional (16x16) byte array that represents our grid for 
 
 ## Create loops
 
-Now you'll need to be able to loop through each position in your two dimensional array to create the grid or field.
+Now you'll need to be able to loop through each position in your two-dimensional array to create the grid or field.
 
 1. First, create the outer `for` loop.
 
