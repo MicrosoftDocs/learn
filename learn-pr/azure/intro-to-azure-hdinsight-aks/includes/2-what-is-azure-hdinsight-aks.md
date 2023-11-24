@@ -11,4 +11,5 @@ You can create the pool with a single cluster or a combination of cluster types,
 - Monitoring
   
 The following diagram shows the logical technical architecture of components installed in a default cluster pool. The clusters are isolated using namespaces in AKS clusters.
+
 :::image type="content" source="./media/overview/hdinsight-on-aks-technical-architecture.png" alt-text="Screenshot shows the HDInsight on AKS architecture." border="true" lightbox="./media/overview/hdinsight-on-aks-technical-architecture.png":::
