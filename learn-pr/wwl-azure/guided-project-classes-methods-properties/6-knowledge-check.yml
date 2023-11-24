@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/23/2023
+  ms.date: 11/24/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: unit
@@ -42,7 +42,7 @@ quiz:
       explanation: "Incorrect. Although you may do your own research on Alan Turing, he was not the primary reason for this exercise"
     - content: "To understand that by mimicking the behavior of ants we can learn to write better code"
       isCorrect: false
-      explanation: "Incorrect. This exercise was about learning to write better code by obesrving ants."
+      explanation: "Incorrect. This exercise was about learning to write better code by observing ants."
     - content: "To learn about how to create and use classes, methods, and properties"
       isCorrect: true
       explanation: "Correct. This exercise was about learning to write code using object-oriented programming techniques."
