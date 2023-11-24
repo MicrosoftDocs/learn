@@ -2,7 +2,7 @@
 
 All of the members introduced in this lesson so far have been instance members. Instance members belong to individual instances of a class. For example, each House instance perhaps holds an array of Rooms. Rooms are then instance members of the House class. Any methods, properties, variables, and classes declared in the House class are also considered instance members of the House class.
 
-A class can also contain class members, as opposed to instance members. Class members pertain to the class itself, rather than to a particular instance of a class. For example, the House class might have a buiderID field that defines a shared builder identification number that all houses must have. By using static (often referred to as global) members you can access these methods globally, or outside of the context of a specific instance, by any object in your application.
+A class can also contain class members, as opposed to instance members. Class members pertain to the class itself, rather than to a particular instance of a class. For example, the House class might have a builderID field that defines a shared builder identification number that all houses must have. By using static (often referred to as global) members you can access these methods globally, or outside of the context of a specific instance, by any object in your application.
 
 ## Defining static members
 
@@ -91,4 +91,4 @@ house.AddHouseToDevProject();
 
 As you can see, in the static example the House class isn't "newing" or creating an instance of the House object. It only uses the class name (which is the same thing as they type name) followed by the name of the static method to access the property or method. The House class isn't being instantiated.
 
-Static classes, properties, and methods are global and do not belong to a specific instances of a class. As such, you don't need to instantiate the class they belong to in order to use them. Just remember, because they don't belong to individual instantiations of a class, your code will have that one buck to store and retrieve data from.
+Static classes, properties, and methods are global and do not belong to a specific instance of a class. As such, you don't need to instantiate the class they belong to in order to use them. Just remember, because they don't belong to individual instantiations of a class, your code will have that one buck to store and retrieve data from.

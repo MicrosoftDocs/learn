@@ -12,7 +12,8 @@ The following example declares a variable myCustomer of type Customer. The Custo
 Customer myCustomer;
 ```
 
->[!Note] It is important to note here the difference between declaring a variable and creating an instance of a class. When you declare a variable you are earmarking memory to be allocated for that object, but not actually using that memory. When you both declare an object and instantiate it at the same time you are both creating an object and putting it in your variable of that type.
+>[!Note]
+>It is important to note here the difference between declaring a variable and creating an instance of a class. When you declare a variable you are earmarking memory to be allocated for that object, but not actually using that memory. When you both declare an object and instantiate it at the same time you are both creating an object and putting it in your variable of that type.
 
 ## Create an instance of a class
 

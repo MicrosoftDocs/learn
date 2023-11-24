@@ -29,7 +29,8 @@ The following example calls the calcDiscount method that passes back an integer 
 int dsct = myCustomer.calcDiscount();
 ```
 
->[!Note] Both methods and properties can be designed to accept reference types.
+>[!Note]
+>Both methods and properties can be designed to accept reference types.
 
 At this point, you should have a pretty good idea of to create an object that has properties and methods and how to use it in your code.
 
