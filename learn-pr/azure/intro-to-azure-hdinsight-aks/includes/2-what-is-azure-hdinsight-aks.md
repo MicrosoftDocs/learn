@@ -12,7 +12,7 @@ You can create the pool with a single cluster or a combination of cluster types,
   
 The following diagram shows the logical technical architecture of components installed in a default cluster pool. The clusters are isolated using namespaces in AKS clusters.
 
-:::image type="content" source="../media/overview/hdinsight-on-aks-technical-architecture.png" alt-text="Screenshot shows the HDInsight on AKS architecture." border="true" lightbox="../media/overview/hdinsight-on-aks-technical-architecture.png":::
+:::image type="content" source="../media/hdinsight-on-aks-technical-architecture.png" alt-text="Screenshot shows the HDInsight on AKS architecture." border="true" lightbox="../media/hdinsight-on-aks-technical-architecture.png":::
 
 ## Storage
 
@@ -25,4 +25,4 @@ In Azure HDInsight on AKS, once you select a managed identity and storage during
 
 The following diagram provides an abstract view of the Azure HDInsight on AKS architecture of Azure Storage.
 
-:::image type="content" source="../media/cluster-storage/storage-architecture.png" alt-text="Screenshot showing storage architecture." lightbox="../media/cluster-storage/storage-architecture.png":::
+:::image type="content" source="../media/storage-architecture.png" alt-text="Screenshot showing storage architecture." lightbox="../media/storage-architecture.png":::
