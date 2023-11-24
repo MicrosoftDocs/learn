@@ -4,8 +4,8 @@ metadata:
   moduleType: introduction        
   title: Introduction to Azure HDInsight on AKS
   description: writer description HDInsight on AKS
-  ms.date: 11/14/2023  
-  author: sairamyeturi
+  ms.date: 11/24/2023  
+  author: yeturis
   ms.author: yeturis
   ms.topic: interactive-tutorial
   ms.service: hdinsight
