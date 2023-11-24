@@ -24,7 +24,6 @@ roles:
 - developer
 products:
 - ai-services
-- azure-content-moderator
 - azure-personalizer
 subjects:
 - artificial-intelligence
