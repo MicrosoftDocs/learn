@@ -1,26 +1,30 @@
-Azure Administrators use Azure Monitor to receive alerts for their monitored applications and resources. Alerts can help an organization address system issues in a timely manner, including setting up automated responsive actions.
+Azure Monitor alerts provide a way to capture telemetry data and detect potential problems in your infrastructure or applications.
 
-In this module, suppose you work for a large retail company with shopping applications recently deployed to the Azure platform. During peak sales times, the system begins to slow and response times increase.
+Imagine you're an IT administrator for a large e-commerce company. During a major sale event, you notice that the website performance is degrading, causing slow page load times and frustrated customers. You need a way to proactively identify and address these issues before they impact your users. By configuring alerts, you can monitor the performance of your infrastructure and receive notifications when certain conditions are met. This means you can make responsive decisions and ensure a better user experience.
 
-You're responsible for configuring Azure Monitor notifications and alerts for the key systems and applications. The alerts must notify the correct team based on the issue conditions and responsive actions. You need to detect issues in real time, and resolve any problems before they affect your customers.
+In this module, you learn how to configure different alerts in Azure Monitor. The topics include how to create alert rules and action groups. 
+
+The goal of this module is to provide you with the knowledge and skills to effectively use Azure Monitor alerts. 
 
 ## Learning objectives
 
 In this module, you learn how to:
 
-- Identify Azure Monitor alerts, including alert types and alert states.
 - Configure Azure Monitor alerts.
+
 - Create alert rules and action groups.
+
+- Report and monitor alerts. 
 
 ## Skills measured
 
-The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). The module covers the following course concept requirements:
+The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). 
 
-Monitor and back up Azure resources (10–15%)
-
-- Monitor resources by using Azure Monitor
-   - Set up alerts and actions.
-   
 ## Prerequisites
 
-None.
+- Understanding of the benefits and uses of notification alerts
+
+- Familiarity with Azure Monitor and the types of telemetry it collects. 
+
+- Working knowledge of the Azure portal so you can configure Azure alerts. 
+
