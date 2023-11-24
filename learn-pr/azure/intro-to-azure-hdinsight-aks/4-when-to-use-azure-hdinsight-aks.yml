@@ -5,9 +5,9 @@ metadata:
   unitType: learning-content  
   title: When to use Azure HDInsight on AKS
   description: When to use Azure HDInsight on AKS
-  ms.date: 11/14/2023 
+  ms.date: 11/24/2023 
   author: sairamyeturi
-  ms.author: yeturis
+  ms.author: sairamyeturi
   ms.topic: unit
 durationInMinutes: 5
 content: |
