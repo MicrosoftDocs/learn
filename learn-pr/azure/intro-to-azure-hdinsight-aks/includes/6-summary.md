@@ -1,15 +1,17 @@
-HDInsight is a fully managed, cloud-based, open-source analytics service for enterprises. Azure HDInsight processes big data in many scenarios, using historical or real-time data. Our goal was to help you decide if HDInsight is a good choice for your organization. We discussed the following criteria to help you with your decision:
+HDInsight on AKS (Azure Kubernetes Service) allows users to run big data workloads on a managed Kubernetes environment. It provides a scalable and flexible solution for processing and analyzing large datasets using popular open-source frameworks like Apache Flink, Apache Spark, and Trino. 
 
-- Range of workloads
-- Scalability
-- Fault tolerance
-- Security
+With HDInsight on AKS, users can easily deploy and manage their big data clusters, taking advantage of the scalability and reliability of Kubernetes. This integration enables seamless integration with other Azure services and provides a unified experience for managing and monitoring big data workloads.
 
-You applied these criteria to your fictional organization. The criteria helped you evaluate whether HDInsight is a good solution for your organization's processing requirements for big data. First, they let you assess how well HDInsight will solve your problem. Second, they give you an idea of the benefits it provides, such as fault tolerance and improved security. This process should give you enough information to choose the right product for your work.
+Key learnings:
+
+- HDInsight on AKS allows running big data workloads on a managed Kubernetes environment.
+- It supports popular open-source frameworks like Apache Flink, Apache Spark, and Trino.
+- Users can easily deploy and manage their big data clusters with the scalability and reliability of Kubernetes.
+- Integration with other Azure services provides a unified experience for managing and monitoring big data workloads.
 
 ## References
 
-- [Azure HDInsight documentation?](/azure/hdinsight/?azure-portal=true)
+- [Azure HDInsight on AKS documentation?](/azure/hdinsight-aks/)
 - [What is Apache Hadoop in Azure HDInsight?](/azure/hdinsight/hadoop/apache-hadoop-introduction?azure-portal=true)
 - [What is Apache Spark in Azure HDInsight?](/azure/hdinsight/spark/apache-spark-overview?azure-portal=true)
 - [What is Apache HBase in Azure HDInsight?](/azure/hdinsight/hbase/apache-hbase-overview?azure-portal=true)
