@@ -9,7 +9,8 @@ Although your IDE will create a namespace for you based on the name of your proj
 
 There are two kinds of namespaces, user-defined namespaces and system-defined namespaces. Each namespace contains classes that your program uses. System-defined namespaces are the namespaces used to organize the .NET Framework class library, so you can find pieces of functionality you might need in your application. User-defined namespaces are similarly used to organize classes, but they are namespaces you define in your code. The first example of a user-defined namespace shows you the keyword `namespace` followed by the name of the namespace you are using. You can create and modify the code in the namespaces that you create, but system-defined namespaces are only used so that you can include code from the .NET Framework libraries in your code.
 
->[!Note]Because different classes can have the same name, you can organize your classes into different namespaces. You can use this practice to avoid naming clashes that cause your code to crash.
+>[!Note]
+>Because different classes can have the same name, you can organize your classes into different namespaces. You can use this practice to avoid naming clashes that cause your code to crash.
 
 
 ### User defined namespaces
@@ -22,7 +23,7 @@ namespace Housing_Development_Project_1
 ```
 
 ### System defined namespaces
-This example show how both the system-defined and user-defined namespaces are used in an application. They are listed at the top of your file in what are called `using` statements. Any library you want to access that is not a part of your current namespace must be included in a `using` statement, including any user-defined namespaces you create. In this example you see several using statements for the `System` namespace, as well as a user-defined namespace. Finally, you can see that those system and user defined namespaces are ready to be accessed from within the `Another_namespace_here` namespace. 
+This example shows how both the system-defined and user-defined namespaces are used in an application. They are listed at the top of your file in what are called `using` statements. Any library you want to access that is not a part of your current namespace must be included in a `using` statement, including any user-defined namespaces you create. In this example you see several using statements for the `System` namespace, as well as a user-defined namespace. Finally, you can see that those system and user defined namespaces are ready to be accessed from within the `Another_namespace_here` namespace. 
 ```csharp
 using System;
 using System.Collections.Generic;

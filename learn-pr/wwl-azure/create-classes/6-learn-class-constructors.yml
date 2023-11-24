@@ -4,7 +4,7 @@ title: Learn about class constructors
 metadata:
   title: Learn about class constructors
   description: "This unit describes what class constructors are and how they're used."
-  ms.date: 11/23/2023
+  ms.date: 11/24/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: unit
@@ -21,7 +21,7 @@ quiz:
       explanation: "Incorrect. This is untrue, you may at some point want to have multiple constructors for an object."
     - content: "When you want to make your code more readable."
       isCorrect: false
-      explanation: "Incorrect. Having multiple constructor is not done for the purpose of making your code more readable."
+      explanation: "Incorrect. Having multiple constructors is not done for the purpose of making your code more readable."
     - content: "When you want to initialize your object for different purposes."
       isCorrect: true
       explanation: "Correct! As constructors are used to initialize an object, having an overloaded constructor allows you to initialize your object for different use cases."
