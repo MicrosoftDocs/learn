@@ -13,7 +13,7 @@ Correlation is a statistical method used to evaluate the strength and direction 
 Let's use the penguins dataset to explain how correlation works.
 
 > [!Note]
-> The penguins dataset used is a subset of data collected and made available by [Dr. Kristen Gorman](https://www.uaf.edu/cfos/people/faculty/detail/kristen-gorman.php?azure-portal=true) and the [Palmer Station, Antarctica LTER](https://pal.lternet.edu/?azure-portal=true), a member of the [Long Term Ecological Research Network](https://lternet.edu/?azure-portal=true).
+> The penguins dataset used is a subset of data collected and made available by [Dr. Kristen Gorman](https://www.uaf.edu/cfos/people/faculty/detail/kristen-gorman.php?azure-portal=true) and the Palmer Station, Antarctica LTER, a member of the [Long Term Ecological Research Network](https://lternet.edu/?azure-portal=true).
 
 ```python
 import seaborn as sns

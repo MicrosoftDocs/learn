@@ -8,10 +8,9 @@ metadata:
   ms.date: 01/17/2023
   author: davidsmatlak
   ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-bicep
-  ms.prod: learning-azure
 durationInMinutes: 6
 content: |
   [!include[](includes/3-exercise-create-run-basic-workflow.md)]

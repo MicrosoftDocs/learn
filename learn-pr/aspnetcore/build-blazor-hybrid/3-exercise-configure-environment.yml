@@ -8,10 +8,10 @@ metadata:
   author: jamesmontemagno
   ms.author: jamont
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
   ms.custom:
     - devx-track-dotnet
+  zone_pivot_groups: vsandcode
 durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-configure-environment.md)]

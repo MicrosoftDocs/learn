@@ -3,7 +3,7 @@ uid: learn.provision-linux-virtual-machine-in-azure
 metadata:
   ms.author: chasecrum
   author: chasecrum
-  ms.date: 05/01/2023
+  ms.date: 10/30/2023
   title: Provisioning a Linux virtual machine in Microsoft Azure
   description: Learn about different methods of provisioning Linux virtual machines in Microsoft Azure.
   ms.topic: interactive-tutorial

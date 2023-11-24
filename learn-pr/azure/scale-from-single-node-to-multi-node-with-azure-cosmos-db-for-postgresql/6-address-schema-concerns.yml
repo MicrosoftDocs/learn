@@ -8,8 +8,7 @@ metadata:
   ms.date: 02/22/2023
   author: sadukie
   ms.author: jonels
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/6-address-schema-concerns.md)]

@@ -4,7 +4,7 @@ The Mixed Reality Toolkit is an open-source cross-platform development kit that 
 
 - Enables rapid prototyping via in-editor simulation that allows you to see changes immediately.
 - Operates as an extensible framework that provides developers the ability to swap out core components.
-- Supports a wide range of platforms, including
+- Supports a wide range of platforms, including:
   - Microsoft HoloLens 2
   - Meta Quest (experimental)
   - Windows Mixed Reality (experimental)

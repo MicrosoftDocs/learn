@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/26/2021
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Create the CLI module
 durationInMinutes: 7

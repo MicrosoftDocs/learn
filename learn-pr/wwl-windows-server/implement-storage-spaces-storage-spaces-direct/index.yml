@@ -6,7 +6,7 @@ metadata:
   ms.date: 04/13/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: learning-azure
 title: Implement Storage Spaces and Storage Spaces Direct
 summary: Learn about the core functionality, benefits, use cases, and implementation of Storage Spaces and Storage Spaces Direct in Windows Server 2019.

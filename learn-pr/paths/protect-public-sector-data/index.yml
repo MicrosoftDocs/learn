@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/23/2021
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Protect public sector data in Azure
 summary: In this learning path, you’ll learn how Azure provides options to encrypt data throughout its lifecycle to protect sensitive data while following local regulations. Explore public multi-tenant, private, and hybrid cloud options to understand the cloud’s flexibility while differentiating between residency and encryption requirements. Implement and configure data breach notifications and response management options.
 prerequisites: |
@@ -26,7 +25,7 @@ products:
 - azure-stack-hub
 - azure-stack-edge
 - data-manager-for-agri
-- azure-active-directory
+- entra-id
 - azure-key-vault
 - defender-for-cloud
 - azure-monitor

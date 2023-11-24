@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/26/2020
   author: billwagner
   ms.author: wiwagn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.topic: learning-path
 title: Build .NET applications with C#
 summary: |
   .NET is a free, cross-platform, open source developer platform for building many different types of applications. With .NET, you can use multiple languages, editors, and libraries to build for web, mobile, desktop, games, and IoT.

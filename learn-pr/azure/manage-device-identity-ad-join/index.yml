@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/17/2023
   author: MicrosoftGuyJFlo
   ms.author: joflore
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: active-directory
 title: Manage device identity with Microsoft Entra join and Enterprise State Roaming
 summary: Evaluate options to manage device identities in Microsoft Entra ID. Allow users to join devices in Microsoft Entra ID. Require devices to be marked as compliant. Enable Enterprise State Roaming.
@@ -25,7 +25,7 @@ roles:
 - administrator
 - solution-architect
 products:
-- azure-active-directory
+- entra-id
 subjects:
 - device-management
 units:
