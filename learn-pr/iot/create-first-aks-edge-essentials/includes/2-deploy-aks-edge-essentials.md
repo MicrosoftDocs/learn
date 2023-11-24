@@ -170,16 +170,19 @@ Now that AKS Edge Essentials is deployed we will log in to the VM via RDP to fur
     $getazrdpfileparams = @{
         ResourceGroupName = $resourcegroup
         Name = $vmname
-        LocalPath = "./myvm2.rdp"
+        LocalPath = "./myvm.rdp"
     }
     Get-AzRemoteDesktopFile @getazrdpfileparams
     ```
 
 1. In Azure Cloud Shell, select **Upload/Download Files** to download the RDP file to your local machine.
 
-1. Open the RDP file and connect to the VM using *azureuser* as the **user** and the `Admin Password` you took a note earlier as the **password**. 
+1. Open the RDP file and connect to the VM using *azureuser* as the **user**, and the `Admin Password` you took a note earlier, as the **password**.
 
-When logging in for the first time to the Windows 11 Enterprise VM, you can accept all options by clicking **Next**. The following commands are executed in the PowerShell command line of the VM.
+The following commands are executed in the PowerShell command line of the VM.
+
+> [!TIP]
+> When logging in for the first time to the Windows 11 Enterprise Azure VM, you can accept all options by clicking **Next**.
 
 1. Open the PowerShell command line by clicking on the **Start** menu and typing **PowerShell**.
 
