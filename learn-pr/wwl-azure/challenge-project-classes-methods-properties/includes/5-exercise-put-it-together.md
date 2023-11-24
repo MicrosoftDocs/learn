@@ -1,5 +1,3 @@
-
-
 ## Create a new car object and set its information
 
 Create a new instance of the Car class, setting its initial values (make, model, year, and price) in the constructor.

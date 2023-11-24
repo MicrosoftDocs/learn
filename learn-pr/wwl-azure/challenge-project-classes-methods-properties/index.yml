@@ -3,7 +3,7 @@ uid: learn.wwl.challenge-project-classes-methods-properties
 metadata:
   title: Challenge project
   description: "This is a challenge project that reinforces the use of properties."
-  ms.date: 11/23/2023
+  ms.date: 11/24/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: module
@@ -39,7 +39,7 @@ units:
 - learn.wwl.challenge-project-classes-methods-properties.prepare
 - learn.wwl.challenge-project-classes-methods-properties.exercise-create-console-app
 - learn.wwl.challenge-project-classes-methods-properties.exercise-create-car-class
-- learn.wwl.challenge-project-classes-methods-properties.exercise-putting-it-together
+- learn.wwl.challenge-project-classes-methods-properties.exercise-put-it-together
 - learn.wwl.challenge-project-classes-methods-properties.knowledge-check
 - learn.wwl.challenge-project-classes-methods-properties.summary
 badge:
