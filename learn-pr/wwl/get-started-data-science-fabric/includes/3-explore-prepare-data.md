@@ -7,7 +7,7 @@ To guarantee both the quality and quantity of your data, using Microsoft Fabric'
 To work with data in Microsoft Fabric, you first need to ingest data. You can ingest data from multiple sources, both local and cloud data sources. For example, you can ingest data from a CSV file stored on your local machine or in an Azure Data Lake Storage (Gen2).
 
 > [!Tip]
-> Learn more about how to [ingest and orchestrate data from various sources with Microsoft Fabric](https://learn.microsoft.com/training/paths/ingest-data-with-microsoft-fabric/?azure-portal=true).
+> Learn more about how to [ingest and orchestrate data from various sources with Microsoft Fabric](/training/paths/ingest-data-with-microsoft-fabric/?azure-portal=true).
 
 After connecting to a data source, you can save the data into a Microsoft Fabric **lakehouse**. You can use the lakehouse as a central location to store any structured, semi-structured, and unstructured files. You can then easily connect to the lakehouse whenever you want to access your data for exploration or transformation.
 
@@ -32,3 +32,4 @@ To help you explore and transform your data more quickly, Microsoft Fabric offer
 After launching the Data Wrangler, you'll get a descriptive overview of the data you're working with. You can view the summary statistics of your data to find any issues like missing values.
 
 To clean your data, you can choose any of the built-in data-cleaning operations. When you select an operation, a preview of the result and the associated code is automatically generated for you. When you have selected all necessary operations, you can export the transformations to code and execute it on your data.
+

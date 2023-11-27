@@ -1,33 +1,25 @@
+Azure virtual networks are an essential component for creating private networks in Azure. They allow different Azure resources to securely communicate with each other, the internet, and on-premises networks.
 
+Suppose you work for a company in the healthcare industry. Your company is looking to migrate their on-premises infrastructure to Azure. They want to ensure secure communication between their resources in Azure and their on-premises network. The company is also concerned about scalability and availability. By using Azure virtual networks, they can create a private network in Azure and securely connect their resources. 
 
-Virtual networks are a fundamental component of private networks that enable resources to communicate securely. Communication can happen between resources, over the internet, and with on-premises networks. In this module, we explore how Azure Virtual Network can support your configuration.
+The topics covered in this module include subnetting, creating virtual networks, and using private and public IP addresses. You also learn about the different scenarios where virtual networks can be used, such as creating a dedicated private cloud-only network or extending a data center securely. The module provides a detailed explanation of subnets and their benefits, and how to plan IP addressing for Azure resources.
 
-Suppose your company is migrating to Azure. They want to replicate their on-premises network in the cloud. Their Azure resources need to be organized into virtual networks and subnets, and implement a customized IP addressing schema for the company. 
-
-You're responsible for configuring the virtual networks and subnets, including IP addressing. The company schema should provide flexibility, room for growth, and integration with on-premises networks. The schema should also minimize public exposure of systems, and give the organization flexibility in its network design. If your network configuration isn't properly designed, systems might not be able to communicate.
+By the end of this module, you have a clear understanding of how to create and configure virtual networks in Azure. You're able to effectively use subnets, assign IP addresses, and ensure secure communication between your Azure resources and on-premises network.
 
 ## Learning objectives
 
 In this module, you learn how to:
 
-- Describe Azure Virtual Network features and components.
+- Describe Azure virtual network features and components.
 - Identify features and usage cases for subnets and subnetting.
 - Identify usage cases for private and public IP addresses.
-- Create and determine which resources require public IP addresses.
-- Create and determine which resources require private IP addresses.
-- Create virtual networks.
+- Create a virtual network and assign an IP address. 
 
 ## Skills measured
 
-The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). The module concepts are covered in:
-
-Configure and manage virtual networking (20–25%)
-
-- Implement and manage virtual networking
-   - Create and configure virtual networks
-   - Implement subnets
-   - Configure private and public IP addresses
+The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). 
  
 ## Prerequisites
 
+- Basic knowledge of virtual networking in cloud environments.
 - Familiarity with IP address formats and subnetting.
