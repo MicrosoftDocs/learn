@@ -17,13 +17,56 @@ quiz:
   questions:
   - content: "To view details of recent and ongoing backup jobs and take appropriate action, you can use:"
     choices:
-    - content: "Maven Build Tool"
+    - content: "Metrics"
       isCorrect: false
-      explanation: "Maven is a build tool that allows you to configure dependencies and deploy apps."
-    - content: "Docker Runtime"
+      explanation: "To add"
+    - content: "Backup center"
       isCorrect: true
-      explanation: "Correct. Docker runtime is used to build, run, push and pull Docker container images."
-    - content: "Azure Container Registry"
+      explanation: "Correct. To add "
+    - content: "Log Analytics"
       isCorrect: false
-      explanation: "Azure Container Registry allows you to build, store, and manage container images and artifacts."
-  
+      explanation: "To add"
+  - content: "To pull information of historical jobs for audit purposes, you can use:"
+    choices:
+    - content: "Backup center"
+      isCorrect: false
+      explanation: "To add"
+    - content: "Azure Resource Graph"
+      isCorrect: false
+      explanation: "To add "
+    - content: "Backup Reports"
+      isCorrect: true
+      explanation: "Correct. To add"  
+  - content: "To configure Backup Reports, you will need to configure:"
+    choices:
+    - content: "Log Analytics workpsace and diagnostics setting"
+      isCorrect: true
+      explanation: "Correct. To add"
+    - content: "Azure Resource Graph"
+      isCorrect: false
+      explanation: "To add"
+    - content: "Built-in Azure Monitor alerts and metric alerts"
+      isCorrect: false
+      explanation: "To add"
+  - content: "The recommended way to get alerted and notified for any backup job failure is via:"
+    choices:
+    - content: "Backup jobs"
+      isCorrect: false
+      explanation: "To add"
+    - content: "Backup Reports"
+      isCorrect: false
+      explanation: "To add"
+    - content: "Built-in Azure Monitor alerts for Azure Backup"
+      isCorrect: true
+      explanation: "Correct. To add"
+  - content: "To configure email notification for built-in Azure Monitor alerts, you will need to create:"
+    choices:
+    - content: "Alert processing rule and action group"
+      isCorrect: true
+      explanation: "Correct. To add"
+    - content: "Log Analytics workspace"
+      isCorrect: false
+      explanation: "To add"
+    - content: "Alert rule and action group"
+      isCorrect: false
+      explanation: "To add"
