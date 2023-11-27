@@ -113,7 +113,7 @@ In this task, you'll run the code and verify that it's working correctly.
 
     The player hp stat should update.
 
-1. Click two food ingredients such as "bread", "bell pepper", "tomato", "mushroom", etc.
+1. Click two food ingredients such as "bread," "bell pepper," "tomato," "mushroom," etc.
 
     The "Consume" button should display "Craft".
 
