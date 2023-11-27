@@ -4,7 +4,7 @@ title: Examine interfaces designs
 metadata:
   title: Examine interfaces designs
   description: "Examine interfaces designs"
-  ms.date: 11/17/2023
+  ms.date: 11/27/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
@@ -44,9 +44,6 @@ quiz:
     - content: "Interfaces or abstract classes"
       isCorrect: true
       explanation: "Correct! The DIP states that classes should depend on interfaces or abstract classes, not other classes directly."
-    - content: "Other classes indirectly"
-      isCorrect: false
-      explanation: "Incorrect. The DIP states that classes should depend on interfaces or abstract classes, not other classes directly."
     - content: "Specific properties of other classes"
       isCorrect: false
       explanation: "Incorrect. The DIP states that classes should depend on interfaces or abstract classes, not other classes directly."

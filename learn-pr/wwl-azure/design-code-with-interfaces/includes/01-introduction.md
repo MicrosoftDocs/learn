@@ -10,6 +10,7 @@ In this module, you will:
 
 - Understand how interfaces reduce code dependencies
 - Identify how interfaces standardize code
+- Understand tightly coupled code
 - Learn to plan code design for changes to project scope
 
 ## Prerequisites
