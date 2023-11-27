@@ -16,7 +16,7 @@ quiz:
   questions:
     - content: "Choose the correct description of Prefabs in Unity."
       choices:
-        - content: "Prefabs are a mere collection of objects used for organizational purposes."
+        - content: "Prefabs are just a collection of objects used for organizational purposes."
           isCorrect: false
           explanation: Parent objects can be used for organizational purposes.
         - content: "Prefabs are components provided by the Mixed Reality Toolkit to manipulate objects on scene."
