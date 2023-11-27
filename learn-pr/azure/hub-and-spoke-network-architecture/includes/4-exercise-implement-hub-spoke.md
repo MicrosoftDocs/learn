@@ -135,23 +135,19 @@ You've created a network security group that can be assigned to each of the virt
 
 Now, you associate the network security group to the virtual network.
 
-1. Go to the **Home** page of the portal. Select **All services**.
+1. Go to the **Home** page of the portal. Select **All resources**.
 
-1. In the search box, enter **Network security group**, and then select **Network security groups**. The **Network security groups** pane appears.
+2. On the **All resources** pane, select the network security group you created called **HRNsg**. The **HRNsg** pane appears.
 
-    You should see the network security groups you created.
+3. In the left menu pane, under **Settings**, select **Subnets**. The **Subnets** pane appears for your HRNsg network security group.
 
-1. Select the network security group you created for the spoke, **HRNsg**. The **HRNsg** pane appears.
+4. On the top menu bar, select **+ Associate**. The **Associate subnet** pane appears.
 
-1. In the middle menu pane, under **Settings**, select **Subnets**. The **Subnets** pane appears for your HRNsg network security group.
+5. From the **Virtual network** dropdown list, select **HRappVnet**.
 
-1. On the top menu bar, select **Associate**. The **Associate subnet** pane appears.
+6. From the **Subnet** dropdown list, select **HRsystems**.
 
-1. From the **Virtual network** dropdown list, select **HRappVnet**.
-
-1. From the **Subnet** dropdown list, select **HRsystems**.
-
-1. To associate the network security group, select **OK**. The **Subnets** pane for your HRNsg network security group reappears.
+7. To associate the network security group, select **OK**. The **Subnets** pane for your HRNsg network security group reappears.
 
 ## Configure the network security group rule to stop inbound HTTP traffic
 
