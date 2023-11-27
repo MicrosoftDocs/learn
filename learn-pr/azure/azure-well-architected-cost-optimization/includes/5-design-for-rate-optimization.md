@@ -3,9 +3,9 @@
 
 Take advantage of opportunities to optimize the utility and costs of your existing resources and operations. If you don't, you unnecessarily spend money without any added ROI.
 
-Contoso’s business intelligence (BI) team hosts a suite of GraphQL APIs for various business units to access various data stores across the organization without granting direct database access. They’ve been building these up over the years and found that versioning was important, so they have been exposing their APIs now over versioned endpoints a single API Management gateway, using consumption billing. 
+Contoso's business intelligence (BI) team hosts a suite of GraphQL APIs for various business units to access data stores across the organization without granting direct database access. They’ve been building these up over the years and found that versioning was important, so they have been exposing their APIs now over versioned endpoints on a single API Management gateway, using consumption billing.
 
-Behind the API Management instances are three AKS clusters that host the APIs that are exposed. One running a Windows node pool for APIs written in .NET 4.5, one running pure Linux for the rest of the APIs written in Java Spring, and one they inherited from a prior team running dotnet core APIs. The clusters are now all owned by the BI team and are only used for these APIs. While managing three clusters isn’t ideal, they have been working as intended so have been left alone. 
+Behind the API Management instances are three AKS clusters that host the APIs that are exposed. One running a Windows node pool for APIs written in .NET 4.5, one Linux cluster for the APIs written in Java Spring, and one Linux they inherited from a prior team running dotnet core APIs. The clusters are now all owned by the BI team and are only used for these APIs. While managing three clusters isn’t ideal, they have been working as intended so have been left alone.
 
 As a cost center in the business, the BI team is looking for ways to optimize its rates to drive down operating costs.
 
@@ -54,10 +54,10 @@ When utilization is high and predictable, the fixed-price model usually costs le
 
 *Challenge*
 
-- The API Management instances are all configured for consumption-based billing currently. After evaluating APIs' usage patterns, they understand that the APIs are used globally and sometimes quite heavily. The team decides to analyze the cost differences between the current billing model and a fixed-price model.
+- The API Management instances are all configured for consumption-based billing currently. After evaluating the APIs' usage patterns, they understand that the APIs are used globally and sometimes quite heavily. The team decides to analyze the cost differences between the current billing model and a fixed-price model.
 
 *Applying the approach and outcomes*
 
-- After performing the cost analysis, the team finds that migrating from Consumption to Standard tier will be a bit less expensive overall given the current usage patterns. As the services grow over the next year, the cost differences will likely become more pronounced. Even though the fixed-pricing model doesn’t reflect the elasticity characteristics of the requests, sometimes pre-purchased billing models are the right choice.
+- After performing the cost analysis, the team finds that migrating from Consumption to Standard tier will be a bit less expensive overall given the current usage patterns. As the services grow over the next year, the cost differences will likely become more pronounced. Even though the fixed-pricing model doesn't reflect the elasticity characteristics of the requests, sometimes pre-purchased billing models are the right choice.
 - As an added bonus, using the Standard tier allows the use of a Private Endpoint for inbound connections, which the team has been eager to implement for the workload.
-- In this case switching SKUs made sense for both utilization purposes and for the added benefit of the additional network segmentation that’s possible with a Private endpoint implementation.
+- In this case switching SKUs made sense for both utilization purposes and for the added benefit of the additional network segmentation that's possible with a Private Endpoint implementation.

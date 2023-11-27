@@ -18,7 +18,7 @@ You might also be able to save some costs by evaluating the use of your support 
 *Challenge*
 
 - The workload team has always come in under budget, so optimization for cost efficiency hasn't been a priority.
-- They are planning to improve the workload's reliability next year and know that doing so will increase their Azure costs, likely pushing the workload over their budget. They are considering asking for an increased budget for next year. 
+- They are planning to improve the workload's reliability next year and know that doing so will increase their Azure costs, likely pushing the workload over their budget. They are considering asking for an increased budget for next year.
 
 *Applying the approach and outcomes*
 
@@ -41,7 +41,7 @@ Regular reviews of metrics, performance data, billing reports, and feature usage
 *Applying the approach and outcomes*
 
 - The team finds that they have allocated more resources than are necessary to low priority flows, and can safely scale back the allocated throughput, while maintaining their performance requirements. Specifically, they can move away from over-provisioning to handle peak loads and implement a queue-based load leveling system instead.
-- They also find that a new feature has been added to their selected SKU on their compute platform that replaces some authentication code. Using this feature will mean less code to maintain and less testing.
+- They also find that a new feature has been added to their selected SKU on their compute platform that replaces some authentication code. Using this feature will mean less code to maintain and test.
 
 ## Optimize your deployment environments
 

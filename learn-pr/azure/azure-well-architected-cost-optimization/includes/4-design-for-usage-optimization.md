@@ -5,7 +5,7 @@ Services and offerings provide various capabilities and pricing tiers. After you
 
 Contoso University is currently hosting a commercial off-the-shelf (COTS) solution that allows the university faculty to create and update courses for the school year and is the primary registration portal used by students for those courses. The solution has a custom integration with a software-as-a-service (SaaS) education management system, which they hope to eventually migrate all of their functions to in a few years. In the meantime, they want to optimize costs on the custom integration components. 
 
-The technology solution of the COTS offering is generally treated like a black box, except for its database which is Azure Database for MySQL. The custom integration is an Azure Durable Function, which runs fanned out on a Standard service plan in Azure App Service. This App Service previously hosted a university website, but that is no longer the case. This durable function is a Python application backed by a dedicated Azure Storage account that performs a nightly sync from the MySQL database into the SaaS’s API.
+The technology solution of the COTS offering is generally treated like a black box, except for its database which is Azure Database for MySQL. The custom integration is an Azure Durable Function, which runs fanned out on a Standard service plan in Azure App Service. This App Service previously hosted a university website, but that is no longer the case. This durable function is a Python application backed by a dedicated Azure Storage account that performs a nightly sync from the MySQL database into the SaaS's API.
 
 ## Use consumption-based pricing when it's practical
 
@@ -33,15 +33,15 @@ If your design defaults to using active-passive models, you might have idle reso
 
 *Challenge*
 
-- The COTS application uses Azure Database for MySQL Flexible Server configured for Same-Zone High Availability, which provides a standby server in the same availability zone as the primary server. They also have enabled automatic backups.
-- The workload's RPO is relatively long, at 12 hours and the RTO is 3 hours during the school day.
+- The COTS application uses Azure Database for MySQL Flexible Server configured for same-zone high availability, which provides a standby server in the same availability zone as the primary server. They also have enabled automatic backups.
+- The workload's RPO is relatively long at 12 hours, and the RTO is three hours during the school day.
 - Based on previous recovery tests, the team knows that they can meet their RPO and RTO targets through automatic failover to the standby server. They have also tested recovering the database from a backup and they can meet the targets in this scenario.
 
 *Applying the approach and outcomes*
 
 - The workload team reevaluates the benefit of the high availability design vs the cost of the service being twice as much as a single instance.
 - The team tests building a new instance and recovering a database from backup and they are satisfied that they will still be in compliance with their recovery targets, so they decide to eliminate the standby instance.
-- The team updates the DR plan to reflect the new recovery plan and realize the cost savings through the new configuration.
+- The team updates the DR plan to reflect the new recovery strategy and realize the cost savings through the new configuration.
 
 ## Keep your cloud environment clean of unused resources and data
 
@@ -51,7 +51,7 @@ Shutting down unused resources and deleting data when you no longer need it redu
 
 *Challenge*
 
-- The university has historically taken a conservative approach to decommissioning solutions, fearing that they may need to revert to a prior configuration. This cautiousness has led to having abandoned services running in one or more environments for months that have been forgotten about in some cases. \
+- The university has historically taken a conservative approach to decommissioning solutions, fearing that they may need to revert to a prior configuration. This cautiousness has led to having abandoned services running in one or more environments for months that have been forgotten about in some cases.
 - When abandoned services are discovered, it is usually by accident as there is no formal process to review the environment for such services.
 
 *Applying the approach and outcomes*
