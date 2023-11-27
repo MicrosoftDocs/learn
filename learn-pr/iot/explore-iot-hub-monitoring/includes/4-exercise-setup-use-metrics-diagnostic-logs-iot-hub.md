@@ -6,7 +6,7 @@ In this exercise, you enable diagnostic logs and use them to check for errors. Y
 
 ## Task 1: Create a storage account
 
-In this task, you create a storage account. The storage account contains your device telemetry logging information.
+In this task, you create a storage account that contains your device telemetry logging information.
 
 1. Navigate to your dashboard.
 
@@ -75,7 +75,7 @@ In this task, you configure Monitor device connect/disconnect data that is store
 
     Later, when you look at the diagnostic logs, you'll be able to see the telemetry and connect/disconnect logging for the device.
 
-### Task 3: Set up metrics
+## Task 3: Set up metrics
 
 In this task, you set up various metrics to watch for when messages are sent to your IoT hub.
 
