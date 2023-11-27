@@ -33,5 +33,3 @@ int dsct = myCustomer.calcDiscount();
 >Both methods and properties can be designed to accept reference types.
 
 At this point, you should have a pretty good idea of to create an object that has properties and methods and how to use it in your code.
-
-&nbsp;

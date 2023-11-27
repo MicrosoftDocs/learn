@@ -3,13 +3,13 @@ uid: learn.wwl.use-classes-properties-method
 metadata:
   title: Use classes, properties, and methods
   description: "This module introduces using classes, properties, and methods."
-  ms.date: 11/24/2023
+  ms.date: 11/27/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: module
   ms.prod: azure
 title: Use classes, properties, and methods
-summary: This lesson shows you how to use a class and access the properties and the methods of that class. Aside from instantiating your objects, properties and methods are the primary way you interact with your objects.
+summary: This lesson shows how to use a class and access the properties and the methods of that class. Aside from instantiating objects, properties and methods are the primary way one interacts with objects.
 abstract: |
   - Instantiate a class
   - Use a class property
