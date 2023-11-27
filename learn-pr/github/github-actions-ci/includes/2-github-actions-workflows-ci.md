@@ -17,11 +17,11 @@ On the main page of your repository, select the **Actions** tab to create a new 
 
 In the search box, enter **Node.js**.
 
-:::image type="content" source="../media/2-workflow-template-search.png" alt-text="GitHub Actions tab with the search box highlighted and containing the text 'Node.js'." border="true":::
+:::image type="content" source="../media/2-workflow-template-search.png" alt-text="Screenshot showing GitHub Actions tab with the search box highlighted and containing the text 'Node.js'." border="true":::
 
 In the search results, in the Node.js pane, select **Configure**.
 
-:::image type="content" source="../media/2-workflow-template-node-js.png" alt-text="GitHub Actions tab with the Node.js pane highlighted and the Node.js template selected." border="true":::
+:::image type="content" source="../media/2-workflow-template-node-js.png" alt-text="Screenshot showing GitHub Actions tab with the Node.js pane highlighted and the Node.js template selected." border="true":::
 
 You'll see this default Node.js template workflow, in the newly created file node.js.yml.
 
