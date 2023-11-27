@@ -2,86 +2,23 @@
 uid: learn.create-first-aks-edge-essentials
 metadata:
   title: Create your first Azure Kubernetes Service (AKS) Edge Essentials single machine cluster
-  description: "TODO"               # Copy your 'apply' Learning Objective here (see below)
-  ms.date: 10/23/2023               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
-  author: asergaz        # GitHub ID of the Microsoft employee either authoring or project-managing this content
-  ms.author: sergaz             # Alias     of the Microsoft employee either authoring or project-managing this content
-  ms.topic: module-build-your-first # Please don't edit, used for our analytics
+  description: Deploy AKS Edge Essentials in a single machine K3S cluster with a Linux and Windows node. 
+  ms.date: 11/27/2023
+  author: asergaz
+  ms.author: sergaz
+  ms.topic: module-build-your-first
   ms.service: aks-edge-essentials
 title: Create your first Azure Kubernetes Service (AKS) Edge Essentials single machine cluster
-###########################################################################
-###
-### Summary
-###
-### Length:
-###   - Write 2 sentences.
-###   - Total length should be 20-25 words; up to 35 is acceptable.
-###   - To keep it brief, avoid teaching, omit motivation, and remove "learn", "in this module", and title words.
-###
-### Sentence 1:
-###   Goal: Include key technologies
-###   Example (Logic Apps): "Define a workflow using built-in triggers, actions, and conditional operators."
-###
-### Sentence 2:
-###   Goal: Include key sub-tasks
-###   Example (Logic Apps): "Your workflow will run automatically when data is available, process the data in the cloud, record results in a database, and send email notifications."
-###
-### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main
-###
-summary: ""
-###########################################################################
-###
-### Learning Objectives
-###
-### Write 3 Learning Objectives, one that fits each pattern shown below.
-###
-### Learning Objective 1:
-###   Goal: Align to the verb 'prepare' as in "plan or get things ready to do the exercise"
-###   Example (Logic Apps): "Design a workflow to solve a business problem."
-###
-### Learning Objective 2:
-###   Goal: Align to the verb 'apply' as in "do the task in the exercise"
-###   Example (Logic Apps): "Implement a workflow from the standard triggers and actions"
-###
-### Learning Objective 3:
-###   Goal: Align to the verb 'validate' as in "check your work"
-###   Example (Logic Apps): "Run a workflow in the cloud to validate the results"
-###
-### Notes:
-###   - The YAML element name here is 'abstract' but it must contain your Learning Objectives.
-###   - Do not edit the lead-in sentence ("By the end of this module, you'll be able to:").
-###   - Start each objective with an upper-case letter.
-###   - End each objective with a period.
-###
-### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main
-###
+summary: Deploy AKS Edge Essentials in a single machine K3S cluster with a Linux and Windows node. You'll create an Azure virtual machine (VM) with Windows 11 Enterprise, install AKS Edge Essentials and deploy a Linux and Windows sample application to the cluster.
 abstract: |
-  By the end of this module, you'll be able to:
-    - (prepare)
-    - (apply)
-    - (validate)
-###########################################################################
-###
-### Prerequisites
-###   - The first prerequisite is "_Knowledge of what (product) is and how it works at the beginner level_"
-###   - Other than the required first prerequisite, others follow the standard guidance:
-###     - Avoid ambiguity, e.g. say "Ability to write HTML at a novice level" rather than "Familiarity with HTML".
-###     - Be concrete: e.g. say "Familiarity with programming concepts such as loops, conditionals and variables" rather than "Familiarity with programming concepts".
-###     - Do not mention or link to other content that teaches the required prerequisite skills.
-###     - If needed, include software setup requirements with setup links.
-###
-### Detailed guidance:
-###   https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main
-###
+  After you complete this module, you'll be able to:
+    - Prepare your machine for AKS Edge Essentials
+    - Deploy AKS Edge Essentials
+    - Deploy an application to AKS Edge Essentials
 prerequisites: |
-  - Knowledge of what (product) is and how it works at the beginner level
-  - TODO prerequisite 2
-  - TODO prerequisite 3
-###########################################################################
-###
-### Replace with the custom module icon when available
-###
-iconUrl: /learn/achievements/generic-badge.svg
+  - Knowledge about [Kubernetes core concepts for AKS](/azure/aks/hybrid/kubernetes-concepts)
+  - Ability to execute scripts with PowerShell 
+iconUrl: /training/achievements/iot/create-your-first-azure-kubernetes-service-edge-essentials-single-machine-cluster.svg
 levels:
 - beginner
 roles:
@@ -99,10 +36,10 @@ subjects:
 - container
 units:
 - learn.create-first-aks-edge-essentials.introduction
-- learn.create-first-aks-edge-essentials.deploy-aks-edge-essentials
-- learn.create-first-aks-edge-essentials.setup-aks-edge-essentials
-- learn.create-first-aks-edge-essentials.learning-content
-- learn.create-first-aks-edge-essentials.exercise
+- learn.create-first-aks-edge-essentials.prepare-machine-for-aks-edge-essentials
+- learn.create-first-aks-edge-essential.exercise-deploy-aks-edge-essentials
+- learn.create-first-aks-edge-essential.deploy-application-aks-edge-essentials
+- learn.create-first-aks-edge-essential.exercise-deploy-application-aks-edge-essentials
 - learn.create-first-aks-edge-essentials.knowledge-check
 - learn.create-first-aks-edge-essentials.summary
 badge:

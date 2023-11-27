@@ -1,4 +1,10 @@
-Let's create the Azure virtual machine (VM) with Windows 11 Enterprise.
+In this exercise we will deploy AKS Edge Essentials in a single machine K3S cluster with a Linux and Windows node. We will use the Azure Cloud Shell to create an Azure virtual machine (VM) with Windows 11 Enterprise and run a PowerShell script for easy deployment of AKS Edge Essentials.
+
+## Create an Azure VM with Windows 11 Enterprise
+
+Let's create the Azure VM with Windows 11 Enterprise using Azure Cloud Shell.
+
+1. Start by **activating the Azure sandbox above**.
 
 1. Execute the following command in the Azure Cloud Shell to set the variables for creating the Azure VM:
 
@@ -53,6 +59,8 @@ Let's create the Azure virtual machine (VM) with Windows 11 Enterprise.
     FullyQualifiedDomainName : myvm-000000.westus.cloudapp.azure.com                                   
     TimeCreated              : 13/15/2023 2:33:56 PM    
     ```
+
+## Deploy AKS Edge Essentials
 
 Now that the VM is created, let's prepare the machine for AKS Edge Essentials and run the `AksEdgeQuickStartForLearn.ps1` script by using [Managed Run Commands](/azure/virtual-machines/windows/run-command-managed) in the Azure Cloud Shell. Alternatively you could connect from your local machine via Remote Desktop Connection (RDP), download and run the PowerShell script there.
 
