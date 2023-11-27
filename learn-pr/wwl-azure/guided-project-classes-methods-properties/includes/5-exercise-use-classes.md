@@ -378,8 +378,7 @@ In this task, you save build and run the code to verify the output is correct.
 
 1. Type __dotnet run__ and press Enter.
 
-Your output should look like this.
-
-![Screenshot showing VS Code output.](../media/guided-proj-3.jpg)
+    Your output should look like this.
+    ![Screenshot showing VS Code output.](../media/guided-proj-3.jpg)
 
 Now that you have added code to read user input, you should be able to press Enter to create and display new instances of the game.
