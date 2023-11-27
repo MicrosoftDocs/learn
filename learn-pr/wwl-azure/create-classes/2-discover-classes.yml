@@ -4,7 +4,7 @@ title: Discover classes
 metadata:
   title: Discover classes
   description: "This unit describes working with classes and objects and how you use them to describe real world objects."
-  ms.date: 11/24/2023
+  ms.date: 11/27/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: unit
@@ -14,7 +14,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What other classes might you create that a house class contains?"
+  - content: "What other classes might a house class contain?"
     choices:
     - content: "A sidewalk."
       isCorrect: false

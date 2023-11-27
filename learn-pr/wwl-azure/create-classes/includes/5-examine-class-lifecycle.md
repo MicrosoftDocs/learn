@@ -3,6 +3,7 @@
 The process of understanding how objects are instantiated, or bought to life, in your code and later taken out of memory, freeing up precious resources is helpful to know. Indeed, you must allocate memory for your objects before you can use them. The process of allocating and deallocating memory for your objects is called the Class Lifecycle.
 
 When you create or *new* an object (also known as instantiating an object) and later no longer need it, the following things happen in the class lifecycle:
+
 - Allocation of memory
 - Initialization or instantiation of the class
 - Deallocation to free memory
@@ -21,6 +22,4 @@ The Common Language Runtime (CLR) determines if a reference exists to an object,
 
 ## Garbage collector
 
-The Garbage Collector performs Deallocation. When an object is no longer being referenced, it is said to have gone out of scope. And when an object goes out of scope, the garbage collector deletes it, freeing up the memory used by the object.  
-
-&nbsp;
+The Garbage Collector performs Deallocation. When an object is no longer being referenced, it is said to have gone out of scope. And when an object goes out of scope, the garbage collector deletes it, freeing up the memory used by the object.

@@ -16,7 +16,7 @@ When you write a class definition with methods and perhaps properties as well, y
 House house = new House();
 ```
 
-> [!NOTE] 
+> [!NOTE]
 > The term "class instance", or just "instance", is often used as an alternative to object.
 
 ## Exercise - Try it out
@@ -89,7 +89,7 @@ Add a constructor to initialize a House class variable. Let's begin by creating 
 
 ## Add a property
 
-Now add a property so that you can retrieve the house color value you initialized the House object with. In addition to a `get` property, let's also great a `set` property, in case you want to change the value.
+Now add a property so that you can retrieve the house color value you initialized the House object with. In addition to a `get` property, let's also create a `set` property, in case you want to change the value.
 
 10. In your House class, add a public `string` variable called `exteriorColor`.
 
