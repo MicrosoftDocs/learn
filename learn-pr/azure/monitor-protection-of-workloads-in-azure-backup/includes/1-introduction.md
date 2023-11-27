@@ -17,9 +17,9 @@ As you back up more and more data to Azure, it becomes important to have easy vi
 
 At the end of this module, you'll be able to:
 
-- 
-- 
-- 
+- Learn about various scenarios for your backup instances and backup jobs
+- Configure alerts for any failed backup operations
+- Perform historical reporting of your backup data based on log data.
 
 ## Prerequisites
 

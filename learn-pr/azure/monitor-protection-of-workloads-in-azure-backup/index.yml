@@ -1,23 +1,24 @@
 ### YamlMime:Module
-uid: learn.azure.accelerate-migration-journey
+uid: learn.azure.monitor-protection-of-workloads-in-azure-backup
 metadata:
-  title: Accelerate your migration, modernization, and innovation journey to Azure
-  description: Learn how to accelerate your migration and modernization journey to Azure.
-  ms.date: 05/15/2023
-  author: sgsneha
-  ms.author: sudhirsneha
+  title: Monitor protection of workloads in Azure Backup
+  description: Learn how to monitor Azure Backup protected workloads using Azure Monitor.
+  ms.date: 12/01/2023
+  author: AbhishekMallick-MS
+  ms.author: v-abhmallick
   ms.topic: interactive-tutorial
-  ms.service: azure
-title: Accelerate your migration, modernization, and innovation journey to Azure
-summary: Moving to Azure can help you optimize costs and stay secure and resilient by avoiding costly business interruptions. You can take advantage of fully managed services in Azure to reduce operational burden, scale on demand, and focus on more important tasks. There are many reasons for moving to Azure, and a proven, methodical approach can help you navigate that journey successfully. Microsoft provides guidance, tools, and programs you can use to ensure success. 
+  ms.service: backup
+title: Monitor protection of workloads in azure Backup
+summary: Monitor your backup instances and backup jobs, configure alerts for any failed operations, and do historical reporting based on log data in Azure Backup.
 abstract: |
   In this module, you will:
-  - List the drivers and benefits of moving to Azure.
-  - Describe the phases of a cloud migration and modernization journey and common migration and modernization projects.
-  - List the Azure migration and modernization tools and programs that enable successful moves.
+  - Learn about various scenarios for your backup instances and backup jobs
+  - Configure alerts for any failed backup operations
+  - Perform historical reporting of your backup data based on log data.
 prerequisites: |
-  - General understanding of cloud platforms 
-  - Understanding of your organization's migration plan and the types of workloads you need to migrate 
+  - Familiarity with the Azure Backup service. Familiarity with...
+  - Must have Read permission on the vaults that are used to back up data to view out-of-the-box Backup center views, such as backup jobs and backup instances.
+  - Must have Monitoring Contributor and Backup Contributor permissions on the required subscription to configure alerts and reports.
 iconUrl: /training/achievements/accelerate-migration-journey.svg
 ratingEnabled: true
 levels:
@@ -42,13 +43,13 @@ products:
 subjects:
 - migration
 units:
-- learn.azure.accelerate-migration-journey.1-introduction
-- learn.azure.accelerate-migration-journey.2-azure-benefits
-- learn.azure.accelerate-migration-journey.3-azure-migration-drivers
-- learn.azure.accelerate-migration-journey.4-cloud-journey-phases
-- learn.azure.accelerate-migration-journey.5-common-migration-projects
-- learn.azure.accelerate-migration-journey.6-azure-migration-tools
-- learn.azure.accelerate-migration-journey.7-azure-migrate-modernize-innovate
-- learn.azure.accelerate-migration-journey.8-summary
+- learn.azure.monitor-protection-of-workloads-in-azure-backup.1-introduction
+- learn.azure.monitor-protection-of-workloads-in-azure-backup.2-monitor-jobs-and-backup-instances-in-backup-center
+- learn.azure.monitor-protection-of-workloads-in-azure-backup.3-built-in-azure-monitor-alerts-for-azure-backup
+- learn.azure.monitor-protection-of-workloads-in-azure-backup.4-built-in-metrics-via-azure-monitor
+- learn.azure.monitor-protection-of-workloads-in-azure-backup.5-configure-monitor-alerts
+- learn.azure.monitor-protection-of-workloads-in-azure-backup.6-create-alerts-using-log-analytics
+- learn.azure.monitor-protection-of-workloads-in-azure-backup.7-knowledge-check
+- learn.azure.monitor-protection-of-workloads-in-azure-backup.8-summary
 badge:
-  uid: learn.azure.accelerate-migration-journey.badge
+  uid: learn.azure.monitor-protection-of-workloads-in-azure-backup.badge
