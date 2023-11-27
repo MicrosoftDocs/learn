@@ -1,1 +1,0 @@
-Your team will be responsible for implementing custom solutions for the IoT Edge. This lab has provided you with experience developing and debugging a custom module and publishing it to the Azure Container Registry. You now have the experience that you will need to implement the company's production solution.

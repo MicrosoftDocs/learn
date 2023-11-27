@@ -4,12 +4,12 @@ title: Compare Azure roles to Microsoft Entra roles
 metadata:
   title: Compare Azure roles to Microsoft Entra roles
   description: "Compare Azure roles to Microsoft Entra roles"
-  ms.date: 09/14/2023
+  ms.date: 10/23/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/5-compare-azure-roles-to-azure-ad-roles.md)]

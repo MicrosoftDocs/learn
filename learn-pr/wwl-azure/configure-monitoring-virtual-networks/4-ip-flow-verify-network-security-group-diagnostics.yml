@@ -4,11 +4,10 @@ title: IP flow verify and NSG diagnostics
 metadata:
   title: IP flow verify and NSG diagnostics
   description: "IP flow verify and NSG diagnostics"
-  ms.date: 10/09/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom:
   - references_regions
 durationInMinutes: 6

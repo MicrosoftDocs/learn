@@ -4,11 +4,10 @@ title: Load staging tables
 metadata:
   title: Load staging tables
   description: "Load staging tables"
-  ms.date: 04/14/2023
+  ms.date: 10/27/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.service: synapse-analytics
 durationInMinutes: 5
 content: |

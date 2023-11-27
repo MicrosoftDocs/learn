@@ -7,7 +7,7 @@ metadata:
   author: timlt
   ms.author: timlt
   manager: lizross
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: rtos
 title: Introduction to Azure RTOS NetX Duo
 summary: Learn the basics of Azure RTOS NetX Duo.

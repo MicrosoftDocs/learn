@@ -39,16 +39,31 @@ First, create two accounts by using the Azure CLI.
       --kind BlobStorage \
       --access-tier Cool
 
-5. Create a new container named specifications in the hot storage destination to hold fictitious specification files.
+4. Obtain the keys for your storage account.
 
-   ```azurecli
-      az storage container create \
-      --name $containerName \
-      --account-name $storageAccount \
-      --auth-mode login
+    ```azurecli
+    az storage account keys list \
+      --account-name $HOT_STORAGE_NAME \
+      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --output table
+    ```
+
+5. Create an environment variable for your account key. Use the value of the first key retrieved by the previous command.
+
+    ```bash
+    HOT_KEY="<source account key>"
+    ```
+
+6. Create a container named *specifications* in your storage account.
+
+    ```azurecli
+    az storage container create \
+      --name specifications \
+      --account-name $HOT_STORAGE_NAME \
+      --account-key $HOT_KEY
    ```
 
-6. Upload the files to your storage account and save each one as a blob. This command uploads several specification files.
+7. Upload the files to your storage account and save each one as a blob. This command uploads several specification files.
 
     ```azurecli
     az storage blob upload-batch \
@@ -59,7 +74,7 @@ First, create two accounts by using the Azure CLI.
       --account-key $HOT_KEY
     ```
 
-7. Verify that the blobs have been created.
+8. Verify that the blobs have been created.
 
     ```azurecli
     az storage blob list \

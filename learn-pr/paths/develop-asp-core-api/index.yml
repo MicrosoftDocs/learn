@@ -3,7 +3,7 @@ uid: learn.wwl.develop-asp-core-api
 metadata:
   title: Develop an ASP.NET Core web app that consumes an API
   description: Learn how to gather information from API documentation and perform HTTP operations in an ASP.NET Core Razor Pages web app.
-  ms.date: 10/11/2023
+  ms.date: 10/20/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -16,7 +16,6 @@ prerequisites: |
 summary: |
   Learn how to gather information from API documentation and perform HTTP operations in an ASP.NET Core Razor Pages web app.
 iconUrl: /training/achievements/generic-trophy.svg
-hidden: true
 levels:
 - intermediate
 roles:

@@ -6,7 +6,7 @@ metadata:
   ms.date: 12/13/2021
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: windows-server
 title: Implement hybrid identity with Windows Server
 summary: In this module, you’ll learn to configure an Azure environment so that Windows IaaS workloads requiring Active Directory are supported. You’ll also learn to integrate on-premises Active Directory Domain Services (AD DS) environment into Azure.
@@ -42,7 +42,7 @@ roles:
 - technology-manager
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines

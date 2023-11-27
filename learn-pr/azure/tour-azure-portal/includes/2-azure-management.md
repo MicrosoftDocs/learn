@@ -11,13 +11,13 @@ When you're starting out with Azure, you'll probably use the Azure portal most o
 
 ## Azure portal
 
-The [Azure portal](https://portal.azure.com) is a public website you can access with any web browser. Once you sign in with your Azure account, you can create, manage, and monitor Azure services and resources. In the Azure portal, you can use search to find different types of services and get links for help on a topic. The Azure portal also guides you through complex administrative tasks using wizards and tooltips.
+The [Azure portal](https://portal.azure.com) is a public website you can access with any web browser. Once you sign in with your Azure account, you can create, manage, and monitor Azure services and resources. In the Azure portal, you can use search to find different types of services and get links for help on a topic. The Azure portal also guides you through complex administrative tasks by using wizards and tooltips.
 
 :::image type="content" source="../media/2-azure-portal.png" alt-text="Screenshot of the Azure portal Home page." lightbox="../media/2-azure-portal.png":::
 
 The Azure portal is often the best interface for carrying out single tasks, or when you want to look at configuration options in detail.
 
-Generally speaking, the portal doesn't let you automate repetitive tasks. For example, to set up multiple VMs, you would need to create them one at a time. This process may make the portal approach less ideal for complex tasks that involve repetition. For these types of tasks, Azure PowerShell and Azure CLI can be helpful.
+Generally speaking, the portal doesn't let you automate repetitive tasks. For example, to set up multiple VMs, you would need to create them one at a time. This process might make the portal approach less ideal for complex tasks that involve repetition. For these types of tasks, Azure PowerShell and Azure CLI can be helpful.
 
 ## Azure PowerShell
 
@@ -58,7 +58,7 @@ az vm create \
 
 Both shells support Azure CLI and Azure PowerShell. Bash defaults to the Azure CLI (with the `az` command preinstalled), but you can switch to PowerShell Core within Linux by typing `pwsh`.
 
- The Cloud Shell also has many other developer tools available, such as text editors, source control tools, databases, and more.
+The Cloud Shell also has many other developer tools available, such as text editors, source control tools, databases, and more.
 
 You can access Azure Cloud Shell from within the Azure portal or by navigating to <https://shell.azure.com>.
 
@@ -73,14 +73,14 @@ Many of the interactive exercises across Microsoft Learn use the Cloud Shell to 
   :::column span="3":::
 The [Microsoft Azure mobile app](https://aka.ms/azuremobileapp/) allows you to access, manage, and monitor all your Azure accounts and resources from your iOS or Android phone or tablet. Once installed, you can:
 
-- Check the current status and critical metrics of your services
-- Stay informed with notifications and alerts about important health issues
-- Quickly diagnose and fix problems anytime, anywhere
-- Review the latest Azure alerts
-- Start, stop and restart virtual machines or web apps
-- Connect to your virtual machines
-- Manage permissions with role-based access control (RBAC)
-- Use the Azure Cloud Shell to run saved scripts or perform administrative tasks
+- Check the current status and critical metrics of your services.
+- Stay informed with notifications and alerts about important health issues.
+- Quickly diagnose and fix problems anytime, anywhere.
+- Review the latest Azure alerts.
+- Start, stop and restart virtual machines or web apps.
+- Connect to your virtual machines.
+- Manage permissions with role-based access control (RBAC).
+- Use the Azure Cloud Shell to run saved scripts or perform administrative tasks.
   :::column-end:::
 :::row-end:::
 

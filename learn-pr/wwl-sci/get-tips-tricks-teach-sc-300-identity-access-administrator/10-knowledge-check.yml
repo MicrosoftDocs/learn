@@ -4,12 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/03/2023
+  ms.date: 11/17/2023
   author: wwlpublish
   ms.author: tsheppard
-  ms.topic: interactive-tutorial
-  ms.prod: azure
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/10-knowledge-check.md)]
@@ -40,9 +38,9 @@ quiz:
       explanation: "Incorrect. Flash cards contain a small amount of information, held up for students to see, as an aid to learning, however the Microsoft Whiteboard can help people visualize a process and increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
   - content: "What is the name of the scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution?"
     choices:
-    - content: "Microsoft Entra entitlement management"
+    - content: "Azure AD entitlement management"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Entra entitlement management is an identity governance feature that enables organizations to manage identity and access lifecycle at scale, by automating access request workflows, access assignments, reviews, and expiration, whereas Microsoft Sentinel is a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution."
+      explanation: "Incorrect. Azure AD entitlement management is an identity governance feature that enables organizations to manage identity and access lifecycle at scale, by automating access request workflows, access assignments, reviews, and expiration, whereas Microsoft Sentinel is a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution."
     - content: "Log Analytics"
       isCorrect: false
       explanation: "Incorrect. Log Analytics is a tool in the Azure portal to edit and run log queries from data collected by Azure Monitor Logs and interactively analyze their results, whereas Microsoft Sentinel is a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution."

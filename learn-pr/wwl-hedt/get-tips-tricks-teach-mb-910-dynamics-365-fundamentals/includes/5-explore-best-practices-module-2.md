@@ -24,7 +24,3 @@ Module 2 Demos
 
 - Click-through demo: [Customer insights](https://edxinteractivepage.blob.core.windows.net/edxpages/mb-910/version2/LP-MKTING-M2-CI/index.html)
 - Click-through demo: [Event management](https://edxinteractivepage.blob.core.windows.net/edxpages/mb-910/version2/LP-MKTING-M2-EVENTS/index.html) 
-
-Module 2 Labs
-
-- [Create a simple customer journey](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_LP02_M01_Lab1_Create_a_simple_Customer_Journey.md)

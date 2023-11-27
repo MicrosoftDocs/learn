@@ -2,7 +2,7 @@ Suppose that you work as a DevOps lead at a drone-tracking and management compan
 
 You want to address both of these factors to save costs. First, you're looking for options to manage the cost-effective deployment of many workloads. Second, you want to introduce business policies that govern how your development teams create and use AKS compute resources.
 
-In this module, you'll explore strategies to optimize compute costs when developing cloud-native applications by using Azure Kubernetes Service (AKS). You'll configure a user node pool and see how to scale the node count to zero. You'll then configure AKS spot node pools by using the cluster autoscaler to access unused Azure compute capacity at a discount. Finally, you'll enable Azure Policy on AKS to manage resource quotas to govern the deployment of AKS compute resources.
+In this module, you explore strategies to optimize compute costs when developing cloud-native applications on AKS. To start, you create a user node pool and learn how to scale the nodes. Then, you configure AKS spot node pools for the cluster autoscaler to access unused Azure compute capacity at a discount. To end off, you define Azure Policy on AKS to manage resource quotas to govern the deployment of AKS compute resources.
 
 ## Learning objectives
 

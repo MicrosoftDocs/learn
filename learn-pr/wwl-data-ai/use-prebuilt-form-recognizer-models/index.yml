@@ -2,14 +2,14 @@
 uid: learn.wwl.use-prebuilt-form-recognizer-models
 metadata:
   title: Use prebuilt Azure AI Document Intelligence models
-  description: "Learn what data you can analyze by choosing prebuilt Azure AI Document Intelligence models and how to deploy these models in a Form Analyzer solution."
-  ms.date: 11/01/2022
+  description: "Learn what data you can analyze by choosing prebuilt Azure AI Document Intelligence models and how to deploy these models in a Document Intelligence solution."
+  ms.date: 10/18/2023
   author: wwlpublish
-  ms.author: rcaper
-  ms.topic: interactive-tutorial
+  ms.author: berryivor
+  ms.topic: module
   ms.service: azure-ai-document-intelligence
 title: Use prebuilt Azure AI Document Intelligence models
-summary: Learn what data you can analyze by choosing prebuilt Azure AI Document Intelligence models and how to deploy these models in a Form Analyzer solution.
+summary: Learn what data you can analyze by choosing prebuilt Azure AI Document Intelligence models and how to deploy these models in a Document Intelligence solution.
 abstract: |
   In this module, you will learn to:
   -	Identify business problems that you can solve by using prebuilt models in Azure AI Document Intelligence.

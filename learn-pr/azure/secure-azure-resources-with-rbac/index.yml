@@ -7,7 +7,7 @@ metadata:
   ms.date: 09/07/2023
   author: rolyon
   ms.author: rolyon
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: role-based-access-control
 title: Secure your Azure resources with Azure role-based access control (Azure RBAC)
 summary: Learn how to use Azure RBAC to manage access to resources in Azure.
@@ -29,7 +29,7 @@ roles:
 products: 
 - azure
 - azure-portal
-- azure-active-directory
+- entra-id
 - azure-rbac
 subjects:
 - identity-access

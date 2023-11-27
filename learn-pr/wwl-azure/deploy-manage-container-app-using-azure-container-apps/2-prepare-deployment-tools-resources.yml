@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-manage-container-app-using-azure-container-apps.prepare-deployment-tools-resources
+title: Prepare your app deployment tools and resources
+metadata:
+  title: Prepare your app deployment tools and resources
+  description: "Prepare your app deployment tools and resources"
+  ms.date: 11/27/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 40
+content: |
+  [!include[](includes/2-prepare-deployment-tools-resources.md)]

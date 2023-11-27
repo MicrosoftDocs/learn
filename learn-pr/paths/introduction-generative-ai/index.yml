@@ -1,15 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.intro-generative-ai
 metadata:
-  title: Introduction to Generative AI
+  title: "Microsoft Azure AI Fundamentals: Generative AI"
   description: Learn 
   brand: azure
   ms.date: 07/26/2023
   author: sherzyang
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Introduction to Generative AI
+  ms.topic: learning-path
+title: "Microsoft Azure AI Fundamentals: Generative AI"
 summary: |
   Generative AI is a form of artificial intelligence in which models are trained to generate new original content based on natural language input. In other words, you can describe a desired output in normal everyday language, and the model can respond by creating appropriate text, image, or even code output. 
 

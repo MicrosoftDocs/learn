@@ -4,11 +4,46 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/03/2023
+  ms.date: 11/23/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of Azure Container Registry?"
+    choices:
+    - content: "To create and manage virtual machines"
+      isCorrect: false
+      explanation: "Incorrect. Azure Container Registry is not used to create and manage virtual machines."
+    - content: "To store and manage data in a cloud database"
+      isCorrect: false
+      explanation: "Incorrect. Azure Container Registry is not used to store and manage data in a cloud database."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Azure Container Registry is a private registry service for building, storing, and managing container images and related artifacts. It enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "What is the purpose of Azure Key Vault?"
+    choices:
+    - content: "To store and manage data in a cloud database"
+      isCorrect: false
+      explanation: "Incorrect. Azure Key Vault is not used to store and manage data in a cloud database."
+    - content: "To manage virtual machines"
+      isCorrect: false
+      explanation: "Incorrect. Azure Key Vault is not used to manage virtual machines."
+    - content: "To safeguard cryptographic keys and secrets used by cloud applications and services"
+      isCorrect: true
+      explanation: "Correct. Azure Key Vault is a cloud service that safeguards cryptographic keys and secrets used by cloud applications and services. It provides secure access to sensitive information and helps meet compliance requirements."
+  - content: "What is the purpose of automation and validation in application hosting platforms?"
+    choices:
+    - content: "Enables manual creation and teardown of environments"
+      isCorrect: false
+      explanation: "Incorrect. Manual processes are prone to errors and inconsistencies."
+    - content: "Increases the time required for creating and tearing down environments"
+      isCorrect: false
+      explanation: "Incorrect. Automation reduces the time required for these processes."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Automation and validation ensure consistency, reduce errors, and improve security and stability of application hosting platforms."

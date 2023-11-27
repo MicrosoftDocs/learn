@@ -6,7 +6,7 @@ metadata:
   ms.date: 12/14/2022
   author: SoniaLopezBravo
   ms.author: sonialopez
-  ms.topic: tutorial
+  ms.topic: module
   ms.service: azure-quantum
   ms.subservice: qdk
 title: Create your first Q# program by using the Quantum Development Kit
@@ -17,7 +17,7 @@ abstract: |
   - Work with qubits and superposition to build a quantum random number generator.
   - Understand how Q# programs are structured.
 prerequisites: |
-  - [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1?azure-portal=true)
+  - [.NET Core 6.0](https://dotnet.microsoft.com/download/dotnet/6.0?azure-portal=true)
   - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
 iconUrl: /training/achievements/quantum/qsharp-create-first-quantum-development-kit.svg
 levels:

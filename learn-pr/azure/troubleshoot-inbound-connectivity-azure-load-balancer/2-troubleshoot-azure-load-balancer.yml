@@ -7,8 +7,7 @@ metadata:
   ms.date: 10/09/2023
   author: mbender-ms
   ms.author: mbender
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-troubleshoot-azure-load-balancer.md)]

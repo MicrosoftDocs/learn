@@ -7,8 +7,7 @@ metadata:
   ms.date: 02/20/2020
   author: Adriamen
   ms.author: japerena
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/4-transparent-trustworthy-bots.md)] 

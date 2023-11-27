@@ -2,10 +2,10 @@
 
 Password hash synchronization is one of the sign-in methods used to accomplish hybrid identity. Microsoft Entra Connect synchronizes a hash, of the hash, of a user's password from an on-premises Active Directory instance to a cloud-based Microsoft Entra instance.
 
-:::image type="content" source="../media/password-hash-sync-architecture-1-e3833a51.png" alt-text="Diagram of how Microsoft Entra Connect passes a password hash for a user between on-premises and in the cloud.":::
+:::image type="content" source="../media/password-hash-sync-architecture-ff7431fa.png" alt-text="Diagram of Microsoft Entra Connect passes a password hash for a user between on-premises and in the cloud.":::
 
 
-Active Directory Domain Services stores passwords in the form of a hash value representation of the actual user password. A hash value is a result of a one-way mathematical function (the hashing algorithm). There is no method to revert the result of a one-way function to the plain text version of a password. To synchronize your password, Microsoft Entra Connect Sync extracts your password hash from the on-premises Active Directory instance. Extra security processing is applied to the password hash before it is synchronized to the Microsoft Entra authentication service. Passwords are synchronized on a per-user basis and in chronological order.
+Active Directory Domain Services stores passwords in the form of a hash value representation of the actual user password. A hash value is a result of a one-way mathematical function (the hashing algorithm). There is no method to revert the result of a one-way function to the plain text version of a password. To synchronize your password, Microsoft Entra Connect sync extracts your password hash from the on-premises Active Directory instance. Extra security processing is applied to the password hash before it is synchronized to the Microsoft Entra authentication service. Passwords are synchronized on a per-user basis and in chronological order.
 
 The actual data flow of the password hash synchronization process is similar to the synchronization of user data. However, passwords are synchronized more frequently than the standard directory synchronization window for other attributes. The password hash synchronization process runs every 2 minutes. You cannot modify the frequency of this process. When you synchronize a password, it overwrites the existing cloud password.
 
@@ -26,7 +26,7 @@ If your server has been locked down according to Federal Information Processing 
 
 **To enable MD5 for password hash synchronization, perform the following steps:**
 
-1.  Go to `%programfiles%\Azure AD Sync\Bin`.
+1.  Go to `%programfiles%\Azure A D Sync\Bin`.
 2.  Open miiserver.exe.config.
 3.  Go to the configuration/runtime node at the end of the file.
 4.  Add the following node: `<enforceFIPSPolicy enabled="false"/>`
@@ -40,6 +40,8 @@ For reference, this snippet is what it should look like:
             <enforceFIPSPolicy enabled="false"/>
         </runtime>
     </configuration>
+
+
 
 
 ```

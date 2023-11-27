@@ -10,4 +10,4 @@ Now that you have reviewed this module, you should be able to:
 
 * Stay up to date with Microsoft AI, visit our [AI website](https://www.microsoft.com/ai).
 * To learn more about Microsoft commitment to responsible AI, visit our [Responsible AI website](https://www.microsoft.com/ai/responsible-ai).
-* To learn more about how to drive your organization to AI success, read our ["Building a Foundation for AI Success: A Leader's Guide" whitepaper](https://aka.ms/AI-Success-Whitepaper).
+* To learn more about how to drive your organization to AI success, read our ["Building a Foundation for AI Success: A Leader's Guide" whitepaper](https://aka.ms/AI-Success-Whitepaper). 

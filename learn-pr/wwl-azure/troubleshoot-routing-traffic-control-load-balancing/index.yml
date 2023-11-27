@@ -6,7 +6,7 @@ metadata:
   ms.date: 04/27/2023
   author: fabianomira
   ms.author: famira
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure 
 title: Troubleshoot routing, traffic control and load balancing in Microsoft Azure
 summary: Troubleshoot network issues revolving around routing and traffic control and load- balancing.
@@ -30,7 +30,7 @@ roles:
 - support-engineer
 products:
 - azure
-- azure-active-directory
+- entra-id
 - entra
 - azure-cdn
 - azure-firewall

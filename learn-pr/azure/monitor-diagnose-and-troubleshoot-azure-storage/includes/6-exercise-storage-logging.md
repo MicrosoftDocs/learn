@@ -26,7 +26,7 @@ In this exercise, you'll create a Log Analytics workspace, create a diagnostic s
 
 4. In the **Diagnostic settings** pane, select **blob**, then select **+ Add diagnostic setting**.
 
-5. In the **Diagnostic setting name** box, provide a name for the setting. 
+5. In the **Diagnostic setting name** box, provide a name for the setting.
 
 6. Select the **StorageRead** log category and in the **Destination details** section, select **Send to Log Analytics workspace**.
 
@@ -40,7 +40,7 @@ In this exercise, you'll create a Log Analytics workspace, create a diagnostic s
 
 2. In the **Containers** panel, select the container that you created in an earlier exercise.
 
-3. Select a blob that you added in an earlier exercise, and the select **Download**
+3. Select a blob that you added in an earlier exercise, select **...**, and then select **Download**.
 
 ## View logged activity by using a Log Analytics query
 
@@ -61,3 +61,5 @@ In this exercise, you'll create a Log Analytics workspace, create a diagnostic s
     ```
 
     This query shows read operations that occurred in the last hour, and includes various fields such as how the request was authentication, the name of the operation and the Uri of the resource. A read operation should appear for the download operation that you just performed.
+
+4. Select **Run**.
