@@ -32,7 +32,7 @@ quiz:
           explanation: Directional Indicator orients towards the DirectionalTarget supplied.
         - content: "Tap To Place"
           isCorrect: false
-          explanation: Tap To Place is used to place a game object on surface.
+          explanation: Tap To Place is used to place a game object on a surface.
         - content: "Radial View"
           isCorrect: false
           explanation: Radial View keeps the object within a view cone cast by the referenced object.

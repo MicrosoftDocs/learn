@@ -1,4 +1,4 @@
-Unity lets you place an object in the scene and then scale or rotate it. You can use the *RectTransform* feature to change the position of 2D objects, such as sprites. The *Transform* feature combines the move, rotate, and scale tools.
+Unity enables you to place an object in the scene and then scale or rotate it. You can use the *RectTransform* feature to change the position of 2D objects, such as sprites. The *Transform* feature combines the move, rotate, and scale tools.
 
 ## Parent object
 
