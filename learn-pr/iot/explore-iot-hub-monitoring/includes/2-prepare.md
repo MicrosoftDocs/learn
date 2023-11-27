@@ -24,11 +24,6 @@ As part of this module, the following resources are created:
 
 ### Cloud resources
 
-Before you begin the exercises, you need an IoT Hub. Creating the IoT Hub can take several minutes.
-
-> [!NOTE]
-> There are many steps in this module for the allotted 60 minutes of sandbox time. It may be worthwhile to note the time that you started and minimize the number of breaks that you take during the 60 minutes so that you may finish before the sandbox terminates automatically.
-
 1. Start by selecting the **Activate sandbox** button. The sandbox automatically creates an Azure resource group for you that is displayed on this web page. You create more resources for this project using the following steps. The resource group name is substituted automatically where it's used within the code steps.
 
 1. Once the sandbox is activated, sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
@@ -54,7 +49,7 @@ Before you begin the exercises, you need an IoT Hub. Creating the IoT Hub can ta
 
 1. In **Device ID**, enter **sensor-th-2001**. Leave **Auto-generate keys** checked so that the primary and secondary keys are generated automatically. Leave Authentication type as **Symmetric key**. Select **Save**. This action creates a device identity for your IoT hub.
 
-1. After the device is created, open **sensor-th-2001** from the list in the **Devices** pane. Select **Refresh** if necessary to refresh the device list. Select the **Copy to clipboard** button to copy the value of **Primary connection string**. This connection string is used by device code to communicate with the IoT Hub. Copy this value into a Notepad window.
+1. After the device is created, open **sensor-th-2001** from the list in the **Devices** pane. Select **Refresh** if necessary to refresh the device list. Select the **Copy to clipboard** button to copy the value of **Primary connection string**. This connection string is used by device code to communicate with the IoT Hub. Copy this value into a text editor such as Notepad.
 
     > [!NOTE]
     > By default, the keys and connection strings are masked because they're sensitive information. If you click the eye icon, they're revealed. It's not necessary to reveal them to copy them with the copy button.
