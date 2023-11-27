@@ -5,17 +5,17 @@ In Azure Monitor, you can create your own alerts in a Log Analytics workspace. I
 
 Open the **Logs** section of the Log Analytics workspace and create a query for your own Logs. When you select **New Alert Rule**, the Azure Monitor alert-creation page opens, as shown in the following image.
 
-![Create an alert in a Log Analytics workspace](media/backup-azure-monitoring-laworkspace/custom-alert.png)
+:::image type="content" source="../media/custom-alert.png" alt-text="Screenshot shows how to Create an alert in a Log Analytics workspace.":::
 
 Here the resource is already marked as the Log Analytics workspace, and action group integration is provided.
 
-![The Log Analytics alert-creation page](media/backup-azure-monitoring-laworkspace/inkedla-azurebackup-createalert.jpg)
+:::image type="content" source="../media/inked-la-azure-backup-create-alert.png" alt-text="Screenshot shows the Log Analytics alert-creation page.":::
 
 ## Alert condition
 
 The defining characteristic of an alert is its triggering condition. Select **Condition** to automatically load the Kusto query on the **Logs** page as shown in the following image. Here you can edit the condition to suit your needs. For more information, see [Sample Kusto queries](#sample-kusto-queries).
 
-![Setting up an alert condition](media/backup-azure-monitoring-laworkspace/la-azurebackup-alertlogic.png)
+:::image type="content" source="../media/la-azure-backup-alert-logic.png" alt-text="Screenshot shows how to set up an alert condition.":::
 
 If necessary, you can edit the Kusto query. Choose a threshold, period, and frequency. The threshold determines when the alert will be raised. The period is the window of time in which the query is run. For example, if the threshold is greater than 0, the period is 5 minutes, and the frequency is 5 minutes, then the rule runs the query every 5 minutes, reviewing the previous 5 minutes. If the number of results is greater than 0, you're notified through the selected action group.
 
@@ -26,7 +26,7 @@ If necessary, you can edit the Kusto query. Choose a threshold, period, and freq
 
 Use an action group to specify a notification channel. To see the available notification mechanisms, under **Action groups**, select **Create New**.
 
-![Available notification mechanisms in the "Add action group" window](media/backup-azure-monitoring-laworkspace/LA-AzureBackup-ActionGroup.png)
+:::image type="content" source="../media/la-azure-backup-action-group.png" alt-text="Screenshot shows the available notification mechanisms in the Add action group window.":::
 
 You can satisfy all alerting and monitoring requirements from Log Analytics alone, or you can use Log Analytics to supplement built-in notifications.
 
