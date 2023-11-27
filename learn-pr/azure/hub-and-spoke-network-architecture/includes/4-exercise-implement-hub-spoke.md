@@ -24,7 +24,9 @@ You can create a virtual network with the Azure portal, Azure CLI, or Azure Powe
 
 1. In the upper left of the Azure portal, select **Create a Resource**. The **Create a resource** pane appears.
 
-1. In the search box, enter **Virtual Network**, press <kbd>Enter</kbd>. The **Virtual Network-Create** pane appears.
+1. In the search box, enter **Virtual Network**.
+
+1. Select **Virtual Network** from the **Marketplace**. The **Virtual Network-Create** pane appears.
 
 1. To start configuring the virtual network, select **Create**. The **Create virtual network** pane appears.
 
@@ -40,10 +42,11 @@ The resource creation experience on the portal is a wizard that walks you throug
     | Subscription    | Concierge Subscription |
     | Resource group  | From the dropdown list, select <rgn>[sandbox resource group name]</rgn> |
     | **Instance details** |
-    | Name  | HRappVnet    |
+    | Virtual network name  | HRappVnet    |
     | Region  | Choose a location close to you. |
 
-1. Select **Next : IP Addresses**. Enter the following values for each setting.
+1. Select the **IP addresses** tab or select **Next > Next**. 
+1. Enter the following values for each setting.
 
     | Setting | Value  |
     |---------|---------|
@@ -53,16 +56,9 @@ The resource creation experience on the portal is a wizard that walks you throug
     | Setting | Value  |
     |---------|---------|
     | Subnet name | HRsystems |
-    | Subnet address range | 10.10.1.0/24 |
+    | Starting address | 10.10.1.0/24 |
 
 1. Select **Save**.
-
-1. Back on the **Create virtual network** pane, select **Next : Security**. Enter the following values for each setting.
-
-    | Setting | Value  |
-    |---------|---------|
-    | Azure DDoS Network Protection | **Disable**  |
-    | Firewall               | **Disable**  |
 
 1. Select **Review + create**. After validation passes, to start provisioning the virtual network, select **Create**.
 
@@ -78,9 +74,9 @@ Now that you've created the third spoke, you need to configure the virtual netwo
 
 1. Select **HubVNet**. The **HubVnet** pane appears.
 
-1. In the middle menu pane, under **settings**, select **Peerings**. The **Peerings** pane for your HubVnet pane appears.
+1. In the left menu pane, under **settings**, select **Peerings**. The **Peerings** pane for your HubVnet pane appears.
 
-1. On the top menu bar, select **Add**. The **Add peering** pane appears for your HubVnet.
+1. On the top menu bar, select **+ Add**. The **Add peering** pane appears for your HubVnet.
 
 1. Enter the following values for each setting.
 
@@ -88,17 +84,19 @@ Now that you've created the third spoke, you need to configure the virtual netwo
     |---------|---------|
     | **This virtual network** |
     | Peering link name   | *gwPeering_hubVNet_HRappVnet*. This name is the peering link name from HubvNet to HRappVnet. |
-    | Traffic to remote virtual network | Allow |
-    | Traffic forwarded from remote virtual network | Block traffic that originates from outside this virtual network |
-    | Virtual network gateway or Route Server | None (default) |
+    | Allow **HubVnet** to access the peered virtual network | Select check box to Allow access. |
+    | Allow **HubVnet** to receive forwarded traffic from the peered virtual network | Leave checkbox unchecked to Block traffic that originates from outside this virtual network. |
+    | Allow gateway in 'HubVnet' to forward traffic to the peered virtual network | Leave checkbox unchecked |
+    | Enable **HubVnet** to use the peered virtual networks' remote gateway | Leave checkbox unchecked |
     | **Remote virtual network** |
-    | Peering link name | *gwPeering_HRappVnet_hubVNet*. This name is the peering link name from HRappVnet to HubvNet. |
-    | Virtual network deployment model | **Resource manager** |
-    | Subscription | Concierge Subscription |
-    | Virtual network | HRappVnet |
-    | Traffic to remote virtual network | Allow |
-    | Traffic forwarded from remote virtual network | Block traffic that originates from outside this virtual network |
-    | Virtual network gateway or Route Server | None   |
+    | Peering link name | *gwPeering_HRappVnet_hubVNet*. This name is the peering link name from HRappVnet to HubVnet. |
+    | Virtual network deployment model | Select **Resource manager** |
+    | Subscription | Select **Concierge Subscription** |
+    | Virtual network | Select **HRappVnet** |
+    | Allow the peered virtual network to access **HubVnet**  | Select check box to Allow access. |
+    | Allow the peered virtual network to receive forwarded traffic from **HubVnet** | Leave checkbox unchecked to Block traffic that originates from outside this virtual network. |
+    | Allow gateway in the peered virtual network to forward traffic to **HubVnet**  | Leave checkbox unchecked |
+    | Enable the peered virtual networks to use **HubVnet's** remote gateway  | Leave checkbox unchecked |
 
 1. To create the peering, select **Add**. The **Peerings** pane reappears with your new peering.
 
