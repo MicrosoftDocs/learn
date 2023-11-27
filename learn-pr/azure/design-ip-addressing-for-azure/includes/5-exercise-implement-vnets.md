@@ -1,6 +1,6 @@
-Now, you're ready to create and deploy some virtual networks with the IP addresses that you planned.
+Now, you're ready to create and deploy some virtual networks with the IP addresses based on your design.
 
-In this unit, you deploy three virtual networks and subnets to support resources in those virtual networks.
+In this unit, you deployed three virtual networks and subnets to support resources in those virtual networks.
 
 The **CoreServicesVnet** virtual network is deployed in the **US West** region. This virtual network has the largest number of resources. It has connectivity to on-premises networks through a VPN connection. This network has web services, databases, and other systems that are key to business operations. Shared services, such as domain controllers and DNS, are located here as well. A large amount of growth is anticipated, so a large address space is necessary for this virtual network.
 
