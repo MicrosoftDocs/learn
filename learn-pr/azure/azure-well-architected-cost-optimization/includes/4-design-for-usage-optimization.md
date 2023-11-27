@@ -27,7 +27,7 @@ By using consumption-based pricing, you only pay for exactly what you use. This 
 
 ## Optimize your high availability design
 
-**Prioritize deployment of active-active models over active-only or active-passive models, as part of your recovery plan, if you already paid for the resources.**
+**Prioritize deployment of active-active or active-only over active-passive models, as part of your recovery plan, if you already paid for the resources.**
 
 If your design defaults to using active-passive models, you might have idle resources that could otherwise be used. Converting to active-active might enable you to meet your load leveling and scale bursting requirements without overspending. If you can meet your recovery targets with an active-only model, the costs of those resources can be removed completely.
 

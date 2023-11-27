@@ -13,7 +13,7 @@ Contoso Air provides a baggage tracking solution for airlines. The workload is h
 
 You'll reduce costs by avoiding paying for resources that aren't fully utilized. Understanding pricing metrics can help you make decisions that are more aligned with your cost model. It can also prevent unwarranted billing. Resizing or removing underutilized resources, or even changing SKUs, can reduce costs.
 
-You might also be able to save some costs by evaluating the use of your support contract and right-sizing it.
+You might also be able to save some costs by evaluating the use of your support contracts with your technology suppliers and right-sizing them.
 
 *Challenge*
 

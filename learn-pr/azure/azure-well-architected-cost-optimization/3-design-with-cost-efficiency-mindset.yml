@@ -30,7 +30,7 @@ quiz:
           isCorrect: true
           explanation: "The impact on ROI is one of the factors that you should take into account when measuring your workload's total cost."
 
-    - content: "When fine-tuning the workload design, which of these should you prioritize?"
+    - content: "When fine-tuning the workload design for cost, which of these should you prioritize?"
       choices:
         - content: "Achieving the highest possible resilience"
           isCorrect: false
