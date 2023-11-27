@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-classes-methods-properties.exercise-implement-classes
+title: Exercise - Implement classes
+metadata:
+  title: Exercise - Implement classes
+  description: "Create the main classes for the LangtonsAnts application."
+  ms.date: 11/24/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+  ms.technology: (empty)
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-exercise-implement-classes.md)]
