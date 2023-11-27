@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.monitor-protection-of-workloads-in-azure-backup.7-knowledge-check
+title: Knowledge Check
+metadata:
+  unitType: Knowledge Check
+  title: Knowledge Check
+  description: Knowledge Check
+  ms.date: 9/28/2021
+  author: AbhishekMallick-MS
+  ms.author: v-abhmallick
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-extended-java
+  ms.prod: learning-azure
+has context menudurationInMinutes: 10
+quiz:
+  questions:
+  - content: "To view details of recent and ongoing backup jobs and take appropriate action, you can use:"
+    choices:
+    - content: "Maven Build Tool"
+      isCorrect: false
+      explanation: "Maven is a build tool that allows you to configure dependencies and deploy apps."
+    - content: "Docker Runtime"
+      isCorrect: true
+      explanation: "Correct. Docker runtime is used to build, run, push and pull Docker container images."
+    - content: "Azure Container Registry"
+      isCorrect: false
+      explanation: "Azure Container Registry allows you to build, store, and manage container images and artifacts."
+  
