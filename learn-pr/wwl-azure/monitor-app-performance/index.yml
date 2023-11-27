@@ -5,7 +5,7 @@ metadata:
   description: "Monitor app performance"
   ms.date: 04/24/2023
   author: wwlpublish
-  ms.author: jeffko
+  ms.author: aaronmax
   ms.topic: interactive-tutorial
 title: Monitor app performance
 summary: Learn how to use the tools offered in Application Insights to enhance the performance and stability of your applications.
