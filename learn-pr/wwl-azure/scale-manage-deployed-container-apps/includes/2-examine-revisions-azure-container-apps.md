@@ -53,7 +53,7 @@ Each revision in Container Apps is automatically assigned a unique identifier, b
 
 `<CONTAINER_APP_NAME>-<REVISION_SUFFIX>`
 
-For example, if you have a container app named "album-api" and decide to set the revision suffix as "first-revision," the complete revision name becomes "album-api-first-revision."
+For example, if you have a container app named "album-api" and decide to set the revision suffix as "first-revision," the complete revision name becomes "album-api--first-revision."
 
 When choosing a revision suffix name, keep in mind the following guidelines:
 

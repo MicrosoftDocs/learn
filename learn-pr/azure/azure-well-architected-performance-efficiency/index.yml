@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/19/2023
   author: martinekuan
   ms.author: martinek
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: waf
 title: 'Microsoft Azure Well-Architected Framework - Performance efficiency'
 summary: Scaling your system to handle load, identifying network bottlenecks, and optimizing your storage performance are important to ensure your users have the best experience. Learn how to make your application perform at its best.

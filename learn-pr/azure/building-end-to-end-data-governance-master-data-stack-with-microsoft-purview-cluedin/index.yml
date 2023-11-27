@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/14/2023
   author: whhender
   ms.author: whhender
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure
 title: Build an end to end data governance and master data management stack with Microsoft Purview and CluedIn
 summary: |

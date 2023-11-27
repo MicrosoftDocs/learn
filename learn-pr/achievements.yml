@@ -2585,3 +2585,8 @@ achievements:
   title: Introduction Azure AI Anomaly Detector
   summary: Discover the services available on Azure to detect anomalies in your time-series, or real-time data.
   iconUrl: /training/achievements/anomaly-detector.svg
+- uid: learn.azure.deploy-iot-solution-azure-sql-database.badge
+  type: badge
+  title: Deploy IoT solutions with Azure SQL Database
+  summary: By the end of this module, you'll be able to create scalable IoT solutions using Azure SQL Database, and use the template provided for many IoT use cases.
+  iconUrl: /training/achievements/deploy-iot-solution-azure-sql-database.svg

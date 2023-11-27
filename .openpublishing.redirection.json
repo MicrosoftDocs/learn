@@ -1,6 +1,76 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/2-authentication-with-identity-platform.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/3-exercise-prepare-app-for-authentication.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/4-microsoft-authentication-library-python-auth-code-flow.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/5-exercise-build-authorization-code-flow.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/6-permissions-and-access.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/7-exercise-call-protected-web-api.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/index.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.add-sign-in-support-python-webapp-identity-platform.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deploy-container-app/6-expose-app.yml",
+      "redirect_url": "/training/modules/aks-deploy-container-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deploy-container-app/7-exercise-expose-app.yml",
+      "redirect_url": "/training/modules/aks-deploy-container-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deploy-container-app/8-summary.yml",
+      "redirect_url": "/training/modules/aks-deploy-container-app/6-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/choose-network-plugin-aks/7-summary.yml",
       "redirect_url": "/training/modules/choose-network-plugin-aks/6-summary",
       "redirect_document_id": false
@@ -29903,6 +29973,31 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/explore-group-enrollment-tasks/index.md",
+      "redirect_url": "/training/modules/provision-iot-devices-secure-scale-with-iot-hub-dps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-group-enrollment-tasks/1-introduction.md",
+      "redirect_url": "/training/modules/provision-iot-devices-secure-scale-with-iot-hub-dps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-group-enrollment-tasks/2-provision-deprovision-devices-using-group-enrollments.md",
+      "redirect_url": "/training/modules/provision-iot-devices-secure-scale-with-iot-hub-dps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-group-enrollment-tasks/3-knowledge-check.md",
+      "redirect_url": "/training/modules/provision-iot-devices-secure-scale-with-iot-hub-dps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-group-enrollment-tasks/4-summary.md",
+      "redirect_url": "/training/modules/provision-iot-devices-secure-scale-with-iot-hub-dps/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/discover-microsoft-ai-financial-professionals/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/discover-microsoft-ai-leaders-financial-industry/",
       "redirect_document_id": false
@@ -30292,6 +30387,31 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/explore-message-processing-tasks/index.md",
+      "redirect_url": "/training/modules/route-process-messages-from-your-iot-devices/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-message-processing-tasks/1-introduction.md",
+      "redirect_url": "/training/modules/route-process-messages-from-your-iot-devices/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-message-processing-tasks/2-implement-device-message-routing.md",
+      "redirect_url": "/training/modules/route-process-messages-from-your-iot-devices/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-message-processing-tasks/3-knowledge-check.md",
+      "redirect_url": "/training/modules/route-process-messages-from-your-iot-devices/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-message-processing-tasks/4-summary.md",
+      "redirect_url": "/training/modules/route-process-messages-from-your-iot-devices/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/explore-fundamentals-of-decision-support/index.md",
       "redirect_url": "https://learn.microsoft.com/azure/ai-services/anomaly-detector/overview",
       "redirect_document_id": false
@@ -30399,6 +30519,41 @@
     {
       "source_path": "learn-pr/wwl-azure/intro-to-anomaly-detector/4a-exercise.md",
       "redirect_url": "https://learn.microsoft.com/azure/ai-services/anomaly-detector/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-iot-solution-azure-sql-database/index.yml",
+      "redirect_url":"https://learn.microsoft.com/training/paths/azure-sql-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-iot-solution-azure-sql-database/1-introduction.yml",
+      "redirect_url":"https://learn.microsoft.com/training/paths/azure-sql-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-iot-solution-azure-sql-database/2-analyze-solution-architecture.yml",
+      "redirect_url":"https://learn.microsoft.com/training/paths/azure-sql-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-iot-solution-azure-sql-database/3-exercise-deploy.yml",
+      "redirect_url":"https://learn.microsoft.com/training/paths/azure-sql-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-iot-solution-azure-sql-database/4-store-iot-data.yml",
+      "redirect_url":"https://learn.microsoft.com/training/paths/azure-sql-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-iot-solution-azure-sql-database/5-exercise-configure.yml",
+      "redirect_url":"https://learn.microsoft.com/training/paths/azure-sql-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-iot-solution-azure-sql-database/6-summary.yml",
+      "redirect_url":"https://learn.microsoft.com/training/paths/azure-sql-fundamentals/",
       "redirect_document_id": false
     }
   ]

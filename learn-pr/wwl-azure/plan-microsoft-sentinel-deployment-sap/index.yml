@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/29/2022
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: microsoft-sentinel
 title: Plan to deploy the Microsoft Sentinel solution for SAP
 summary: Understand the Microsoft Sentinel solution for SAP. The module covers the roles of the team members who will work together to design, deploy and implement the Microsoft Sentinel solution for SAP.
