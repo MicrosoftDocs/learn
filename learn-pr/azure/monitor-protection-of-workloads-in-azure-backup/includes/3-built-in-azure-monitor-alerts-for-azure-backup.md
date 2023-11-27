@@ -17,19 +17,19 @@ Follow these steps:
 
 1. On the Azure portal, go to **Backup center** > **Overview**.
 
-   :::image type="content" source="./media/move-to-azure-monitor-alerts/backup-center-overview-inline.png" alt-text="Screenshot showing Overview tab in Backup center." lightbox="./media/move-to-azure-monitor-alerts/backup-center-overview-expanded.png":::
+   :::image type="content" source="../media/backup-center-overview-inline.png" alt-text="Screenshot showing Overview tab in Backup center." lightbox="./media/move-to-azure-monitor-alerts/backup-center-overview-expanded.png":::
 
 1. On the **Alerts** tile, the count of vaults appears that still has the classic alerts enabled.
 
    Select the link to take the required action.
 
-   :::image type="content" source="./media/move-to-azure-monitor-alerts/backup-center-alerts-link-inline.png" alt-text="Screenshot showing number of vaults which have classic alerts enabled." lightbox="./media/move-to-azure-monitor-alerts/backup-center-alerts-link-expanded.png":::
+   :::image type="content" source="../media/backup-center-alerts-link.png" alt-text="Screenshot showing number of vaults which have classic alerts enabled." lightbox="../media/backup-center-alerts-link.png":::
 
    On the next screen, there are two recommended actions:
 
    - **Create rule**: This action creates an alert processing rule attached to an action group to enable you to receive notifications for Azure Monitor alerts. After you select, it leads you to a template deployment experience.
 
-     :::image type="content" source="./media/move-to-azure-monitor-alerts/recommended-action-one.png" alt-text="Screenshot showing recommended alert migration action Create rule for Recovery Services vaults.":::
+     :::image type="content" source="../mediarecommended-action-one.png" alt-text="Screenshot showing recommended alert migration action Create rule for Recovery Services vaults.":::
 
      You can deploy two resources via this template:
 
@@ -40,29 +40,29 @@ Follow these steps:
 
 1. Enter the subscription, resource group, and region in which the alert processing rule and action group should be created. Also specify the email ID(s) to which notifications should be sent. Other parameters populate with default values and only need to be edited, if you want to customize the names and descriptions that the resources are created in.
 
-   :::image type="content" source="./media/move-to-azure-monitor-alerts/alert-processing-rule-parameters.png" alt-text="Screenshot showing template parameters to set up notification rules for Azure Monitor alerts.":::
+   :::image type="content" source="../media/alert-processing-rule-parameters.png" alt-text="Screenshot showing template parameters to set up notification rules for Azure Monitor alerts.":::
 
 1. Select **Review+Create** to initiate deployment.
 
    Once deployed, notifications for Azure Monitor based alerts are enabled. If you have multiple subscriptions, repeat the above process to create an alert processing rule for each subscription.
 
-   :::image type="content" source="./media/move-to-azure-monitor-alerts/alert-processing-rule-deploy.png" alt-text="Screenshot showing deployment of notification rules for Azure Monitor alerts.":::
+   :::image type="content" source="../media/alert-processing-rule-deploy.png" alt-text="Screenshot showing deployment of notification rules for Azure Monitor alerts.":::
 
 1. Next, you need to opt-out of classic alerts to avoid receiving duplicate alerts from two solutions.
 
    Select **Manage Alerts** to view the vaults for which classic alerts are currently enabled.
 
-   :::image type="content" source="./media/move-to-azure-monitor-alerts/recommended-action-two.png" alt-text="Screenshot showing recommended alert migration action Manage Alerts for Recovery Services vaults.":::
+   :::image type="content" source="../media/recommended-action-two.png" alt-text="Screenshot showing recommended alert migration action Manage Alerts for Recovery Services vaults.":::
 
 1. Select **Update** > **Use only Azure Monitor alerts** checkbox.
 
    By doing so, you agree to receive backup alerts only via Azure Monitor, and you'll stop receiving alerts from the older (classic alerts) solution.
 
-   :::image type="content" source="./media/move-to-azure-monitor-alerts/classic-alerts-vault.png" alt-text="Screenshot showing how to opt out of classic alerts for vault.":::
+   :::image type="content" source="../media/classic-alerts-vault.png" alt-text="Screenshot showing how to opt out of classic alerts for vault.":::
 
 1. To select multiple vaults on a page and update the settings for these vaults with a single action, select **Update** from the top menu.
 
-   :::image type="content" source="./media/move-to-azure-monitor-alerts/classic-alerts-multiple-vaults.png" alt-text="Screenshot showing how to opt out of classic alerts for multiple vaults.":::
+   :::image type="content" source="../media/classic-alerts-multiple-vaults.png" alt-text="Screenshot showing how to opt out of classic alerts for multiple vaults.":::
 
 
 
