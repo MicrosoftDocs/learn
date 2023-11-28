@@ -4,7 +4,7 @@ The Backup center is a single pane of glass that helps you to monitor the jobs a
 
 By using the Backup center, you can view detailed information on all the jobs that were created in your backup estate and take appropriate action for the failing jobs. You can select an item in the grid to view more details about a specific job. Right-click an item to go to the resource to take the necessary actions.
 
-:::image type="content" source="../media/backup-center-jobs.png" alt-text="Screenshot shows how to vier details of backup jobs.":::
+:::image type="content" source="../media/backup-center-jobs.png" alt-text="Screenshot shows how to vier details of the backup job.":::
 
 By using the Backup jobs tab, you can view jobs up to the last seven days. To view older jobs, use Backup Reports.
 

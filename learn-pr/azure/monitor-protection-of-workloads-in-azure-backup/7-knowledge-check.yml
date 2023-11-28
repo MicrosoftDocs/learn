@@ -19,54 +19,54 @@ quiz:
     choices:
     - content: "Metrics"
       isCorrect: false
-      explanation: "To add"
+      explanation: "Incorrect"
     - content: "Backup center"
       isCorrect: true
-      explanation: "Correct. To add "
+      explanation: "Correct"
     - content: "Log Analytics"
       isCorrect: false
-      explanation: "To add"
+      explanation: "Incorrect"
   - content: "To pull information of historical jobs for audit purposes, you can use:"
     choices:
     - content: "Backup center"
       isCorrect: false
-      explanation: "To add"
+      explanation: "Incorrect"
     - content: "Azure Resource Graph"
       isCorrect: false
-      explanation: "To add "
+      explanation: "Incorrect"
     - content: "Backup Reports"
       isCorrect: true
-      explanation: "Correct. To add"  
+      explanation: "Correct"  
   - content: "To configure Backup Reports, you will need to configure:"
     choices:
-    - content: "Log Analytics workpsace and diagnostics setting"
+    - content: "Log Analytics workspace and diagnostics setting"
       isCorrect: true
-      explanation: "Correct. To add"
+      explanation: "Correct"
     - content: "Azure Resource Graph"
       isCorrect: false
-      explanation: "To add"
+      explanation: "Incorrect"
     - content: "Built-in Azure Monitor alerts and metric alerts"
       isCorrect: false
-      explanation: "To add"
+      explanation: "Incorrect"
   - content: "The recommended way to get alerted and notified for any backup job failure is via:"
     choices:
     - content: "Backup jobs"
       isCorrect: false
-      explanation: "To add"
+      explanation: "Incorrect"
     - content: "Backup Reports"
       isCorrect: false
-      explanation: "To add"
+      explanation: "Incorrect"
     - content: "Built-in Azure Monitor alerts for Azure Backup"
       isCorrect: true
-      explanation: "Correct. To add"
+      explanation: "Correct"
   - content: "To configure email notification for built-in Azure Monitor alerts, you will need to create:"
     choices:
     - content: "Alert processing rule and action group"
       isCorrect: true
-      explanation: "Correct. To add"
+      explanation: "Correct"
     - content: "Log Analytics workspace"
       isCorrect: false
-      explanation: "To add"
+      explanation: "Incorrect"
     - content: "Alert rule and action group"
       isCorrect: false
-      explanation: "To add"
+      explanation: "Incorrect"
