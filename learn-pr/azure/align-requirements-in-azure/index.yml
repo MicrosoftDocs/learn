@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/13/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure 
 title: Align requirements with cloud types and service models in Azure
 summary: Azure supports public, private, and hybrid cloud approaches to deploying cloud resources. Each approach affects several factors, including cost, maintenance requirements, and security. This module provides information about all three approaches, and helps you choose which one to leverage for your services. We'll also quickly look at the service models supported by Azure, which can help you determine the services you should start with when planning an Azure deployment.
