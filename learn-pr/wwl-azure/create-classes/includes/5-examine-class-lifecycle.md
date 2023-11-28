@@ -1,6 +1,6 @@
 
 
-The process of understanding how objects are instantiated, or bought to life, in your code and later taken out of memory, freeing up precious resources is helpful to know. Indeed, you must allocate memory for your objects before you can use them. The process of allocating and deallocating memory for your objects is called the Class Lifecycle.
+Knowing how to instantiate objects, or bring them to life, in your code and how to free up memory by removing them later is helpful. You must allocate memory for your objects before you can use them. The class lifecycle is the process of allocating and deallocating memory for your objects.
 
 When you create or *new* an object (also known as instantiating an object) and later no longer need it, the following things happen in the class lifecycle:
 
@@ -10,11 +10,13 @@ When you create or *new* an object (also known as instantiating an object) and l
 
 ## Allocation
 
-During allocation, memory is allocated for the class containing the functionality you need to access.
+During allocation, you allocate memory for the class containing the functionality you need to access.
 
 ## Instantiation
 
-Objects require initialization to be performed before they can be used. Classes are initialized using a process called instantiation, where a constructor method within the class is accessed when put in memory using the new keyword. After instantiation, you can access the functionality of the class within your code.
+Objects require initialization before you can use them. You initialize classes using a process called instantiation. When you instantiate an object, you automatically call a constructor method within the class. If you pass parameters into the constructor, those parameters give the object the starting values it needs to do its job.
+
+A class is instantiated and put in memory using the __new__ keyword. After instantiation, you can access the functionality of the class within your code.
 
 ## Deallocation
 
@@ -22,4 +24,4 @@ The Common Language Runtime (CLR) determines if a reference exists to an object,
 
 ## Garbage collector
 
-The Garbage Collector performs Deallocation. When an object is no longer being referenced, it is said to have gone out of scope. And when an object goes out of scope, the garbage collector deletes it, freeing up the memory used by the object.
+The garbage collector performs Deallocation. When an object is no longer being referenced, it's said to have gone out of scope. And when an object goes out of scope, the garbage collector deletes it, freeing up the memory used by the object.

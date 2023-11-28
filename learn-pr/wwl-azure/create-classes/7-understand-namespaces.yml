@@ -3,8 +3,8 @@ uid: learn.wwl.create-classes.understand-namespaces
 title: Understand namespaces
 metadata:
   title: Understand namespaces
-  description: "This unit describes what a namespace is and how they're used."
-  ms.date: 11/27/2023
+  description: "This unit describes what a namespace is and how to use them."
+  ms.date: 11/28/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: unit
@@ -14,7 +14,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "How do you access a class that is in another namespace?"
+  - content: "How does one access a class that is in another namespace?"
     choices:
     - content: "Provide a link to the other namespace."
       isCorrect: false
@@ -25,14 +25,14 @@ quiz:
     - content: "Prefix your object with the name of the namespace it belongs to."
       isCorrect: true
       explanation: "Correct! The way you access objects in another namespace is prefix the name of your object with the name of the class that belongs to it."
-  - content: "Why would two classes be in the same namespace?"
+  - content: "Why do two classes share the same namespace?"
     choices:
-    - content: "To avoid collisions."
+    - content: "Because they do the same thing."
       isCorrect: false
-      explanation: "Incorrect. Although classes are put in separate namespaces to avoid crashes, classes are not put in the same namespace to avoid crashes (class naming conflicts)."
+      explanation: "Incorrect. No two classes should do the exact same thing and this would not be a reason to put them in the same namespace."
     - content: "Because they are of the same type."
       isCorrect: false
       explanation: "Incorrect. Classes of the same name/type are put in different namespaces to avoid name conflicts."
     - content: "Because they perform related functionality."
       isCorrect: true
-      explanation: "Correct! Classes are put in namespaces to avoid name conflicts and because they share related functionality."
+      explanation: "Correct! Namespaces group classes that have related functionality and avoid name conflicts."

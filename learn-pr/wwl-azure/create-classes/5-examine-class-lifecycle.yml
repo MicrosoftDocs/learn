@@ -3,8 +3,8 @@ uid: learn.wwl.create-classes.examine-class-lifecycle
 title: Examine class lifecycle
 metadata:
   title: Examine class lifecycle
-  description: "This unit describes what the class lifecycle is and how it's used."
-  ms.date: 11/27/2023
+  description: "This unit describes what the class lifecycle is and how .NET uses it."
+  ms.date: 11/28/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: unit
@@ -30,7 +30,7 @@ quiz:
     - content: "A process of removing system level resources."
       isCorrect: false
       explanation: "Incorrect. Garbage collection has nothing to do with system resources, but with the freeing up of user defined objects in memory."
-    - content: "When the garbage man collects the garbage at my home."
+    - content: "When the garbage collector collects the garbage at my home."
       isCorrect: false
       explanation: "Incorrect. Although certainly the form of garbage collection we're most used to, it doesn't apply to computer programming."
     - content: "Automatic Memory Management."
