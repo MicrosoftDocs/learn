@@ -1,6 +1,6 @@
 Your team is responsible for monitoring IoT Hub and troubleshooting device connection and communication issues for the company's IoT solution.
 
-You learned how to configure IoT Hub monitoring diagnostics, metrics, alerts, and logging.
+In this module, you learned how to configure IoT Hub monitoring diagnostics, metrics, alerts, and logging.
 
 If you hadn't research IoT Hub monitoring, you wouldn't be prepared to create a IoT Hub monitoring proof-of-concept.
 
