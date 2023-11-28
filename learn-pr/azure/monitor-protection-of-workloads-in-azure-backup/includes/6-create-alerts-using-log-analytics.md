@@ -13,7 +13,7 @@ Here the resource is already marked as the Log Analytics workspace, and action g
 
 ## Alert condition
 
-The defining characteristic of an alert is its triggering condition. Select **Condition** to automatically load the Kusto query on the **Logs** page as shown in the following image. Here you can edit the condition to suit your needs. For more information, see [Sample Kusto queries](#sample-kusto-queries).
+The defining characteristic of an alert is its triggering condition. Select **Condition** to automatically load the Kusto query on the **Logs** page as shown in the following screenshot. Here you can edit the condition to suit your needs.
 
 :::image type="content" source="../media/la-azure-backup-alert-logic.png" alt-text="Screenshot shows how to set up an alert condition.":::
 
