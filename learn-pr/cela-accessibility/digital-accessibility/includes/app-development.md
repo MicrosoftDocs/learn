@@ -26,7 +26,7 @@ When designing keyboard navigation, examine your UI and think about these questi
 
 Group of app menu elements/controls
 
-The goal is to help the user understand how the UI is laid out, and identify the controls that are actionable. If too much tabbing is required before the user completes the navigation loop, consider grouping related controls together. Some controls that are related, such as a hybrid control, may need to be addressed at the early exploration stage of developing your app. After you begin to develop your product, it's difficult to rework the keyboard navigation, so plan carefully and plan early!
+The goal is to help the user understand how the UI is laid out, and identify the controls that are actionable. If too much tabbing is required before the user completes the navigation loop, consider grouping related controls together. Some controls that are related, such as a hybrid controls, might need to be addressed at the early exploration stage of developing your app. After you begin to develop your product, it's difficult to rework the keyboard navigation, so plan carefully and plan early!
 
 To learn more about keyboard navigation among UI elements, explore the Windows Dev Center documentation about [Keyboard accessibility](/windows/uwp/design/accessibility/keyboard-accessibility).
 
@@ -41,9 +41,9 @@ reduces eyestrain, and makes it easier to read.
 
 Calculators shown in light theme and high-contrast black theme
 
-The UI for your app must be designed to work equally well when viewed with or without high contrast mode. For example, when you verify your UI in high contrast, check that the controls have been coded consistently, and that you've used system colors and not hard-coded colors. Ensure that a high contrast user is able to see all the controls on the screen that a user who isn't using high contrast would see.
+The UI for your app must be designed to work equally well when viewed with or without high contrast mode. For example, when you verify your UI in high contrast, check that the controls are coded consistently, and that you use system colors and not hard-coded colors. Ensure that a high contrast user is able to see all the controls on the screen that a user who isn't using high contrast would see.
 
-As long as you haven't overridden system colors, a Universal Windows Platform (UWP) app that works on all Windows-based platforms and devices supports high-contrast themes by default. If a user selects a high-contrast theme from their device's system settings or accessibility tools, the UWP framework automatically uses colors and style settings that produce a high-contrast layout and rendering for controls and components in the UI.
+As long as you don't override system colors, a Universal Windows Platform (UWP) app that works on all Windows-based platforms and devices supports high-contrast themes by default. If a user selects a high-contrast theme from their device's system settings or accessibility tools, the UWP framework automatically uses colors and style settings that produce a high-contrast layout and rendering for controls and components in the UI.
 
 For more information, see this Windows support article about [High-contrast](/windows/uwp/design/accessibility/high-contrast-themes).
 
@@ -63,7 +63,7 @@ Examples of an icon with high color contrast (21:1 ratio) and an icon with low c
 
 Programmatic access is necessary to create accessibility in apps. Programmatic access ensures that UI controls are exposed to assistive technology or alternative output devices.
 
-Without programmatic access, the APIs for assistive technology can't interpret information correctly, leaving the user unable to effectively use or interact with the app. The assistive technology that someone uses determines what actions and options are available to them. Therefore, if an app doesn't have accessible names and descriptions, several parts may be deemed unavailable by the assistive technology.
+Without programmatic access, the APIs for assistive technology can't interpret information correctly, leaving the user unable to effectively use or interact with the app. The assistive technology that someone uses determines what actions and options are available to them. Therefore, if an app doesn't have accessible names and descriptions, several parts might be deemed unavailable by the assistive technology.
 
 For example, accessible names and descriptions for content and interactive UI controls are critical elements to achieve programmatic access in your app. For people who use Microsoft Narrator or a Braille
 display to use an app, the descriptive names for images or buttons help them understand and navigate the app.
@@ -74,7 +74,7 @@ For more information about assistive technology applications, explore the list o
 
 ## Accessibility checklists
 
-As we've covered, there are several steps required to make your app accessible. You may find it helpful to follow a checklist to keep track of each requirement as you develop your app. Here's an abbreviated version of an accessibility checklist you may find useful:
+As we covered in this module, there are several steps required to make your app accessible. You might find it helpful to follow a checklist to keep track of each requirement as you develop your app. Here's an abbreviated version of an accessibility checklist you might find useful:
 
 1. Set the accessible name (required) and description (optional) for content and interactive elements in your app.
 1. Implement keyboard accessibility.
