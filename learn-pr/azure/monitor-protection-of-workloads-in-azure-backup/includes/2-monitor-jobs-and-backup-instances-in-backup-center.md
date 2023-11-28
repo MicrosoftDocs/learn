@@ -34,7 +34,7 @@ The Backup center allows easy search and discoverability of backup instances acr
 
 2. Right-click *any  item in the grid* to perform actions on the given backup instance, such as navigating to the resource, trigger on-demand backups and restores, or stop backup.
 
-:::image type="image" source="../media/backup-center-instances.png" alt-text="Screenshot shows the Backup center instances.":::
+:::image type="content" source="../media/backup-center-instances.png" alt-text="Screenshot shows the Backup center instances.":::
 
 
 
