@@ -9,12 +9,12 @@ metadata:
   ms.topic: module-build-your-first
   ms.service: aks-edge-essentials
 title: Create your first Azure Kubernetes Service (AKS) Edge Essentials single machine cluster
-summary: Deploy AKS Edge Essentials in a single machine K3S cluster with a Linux and Windows node. You'll create an Azure virtual machine (VM) with Windows 11 Enterprise, install AKS Edge Essentials and deploy a Linux and Windows sample application to the cluster.
+summary: Deploy AKS Edge Essentials in a single machine K3S cluster with a Linux and Windows node. You'll create an Azure virtual machine (VM) with Windows 11 Enterprise, deploy AKS Edge Essentials and run a Linux and Windows sample application on the cluster.
 abstract: |
   After you complete this module, you'll be able to:
     - Prepare your machine for AKS Edge Essentials
     - Deploy AKS Edge Essentials
-    - Deploy an application to AKS Edge Essentials
+    - Run containerized applications on AKS Edge Essentials
 prerequisites: |
   - Knowledge about [Kubernetes core concepts for AKS](/azure/aks/hybrid/kubernetes-concepts)
   - Ability to execute scripts with PowerShell 
