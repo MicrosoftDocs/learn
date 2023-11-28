@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/21/2023
+  ms.date: 11/28/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -37,7 +37,7 @@ quiz:
     - content: "Microsoft Cloud for Sustainability detects solar and wind energy installations."
       isCorrect: false
       explanation: "Incorrect. The Microsoft tool with that feature is the Global Renewables Watch. Microsoft Cloud for Sustainability enables other scenarios, such as reducing environmental impact of facilities, obtaining data analytics of water consumption, or improving mobility with optimized routes and logistics."
-  - content: "In the Nearshore Habitat program, which function do these Microsoft AI products fulfill?"
+  - content: "In the Nearshore Habitat program, which functions do these Microsoft AI products fulfill?"
     choices:
     - content: "Azure Machine Learning performs video classification by ingesting short clips of video footage."
       isCorrect: false
