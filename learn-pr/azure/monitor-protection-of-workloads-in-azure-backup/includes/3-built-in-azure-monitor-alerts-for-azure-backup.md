@@ -17,7 +17,7 @@ Follow these steps:
 
 1. On the Azure portal, go to **Backup center** > **Overview**.
 
-   :::image type="content" source="../media/backup-center-overview-inline.png" alt-text="Screenshot showing Overview tab in Backup center." lightbox="./media/move-to-azure-monitor-alerts/backup-center-overview-expanded.png":::
+   :::image type="content" source="../media/backup-center-overview.png" alt-text="Screenshot showing Overview tab in Backup center." lightbox="../media/backup-center-overview.png":::
 
 1. On the **Alerts** tile, the count of vaults appears that still has the classic alerts enabled.
 

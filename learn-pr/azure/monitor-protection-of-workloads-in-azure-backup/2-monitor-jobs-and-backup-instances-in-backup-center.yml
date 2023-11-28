@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-azure-benefits.md)]
+  [!include[](includes/2-monitor-jobs-and-backup-instances-in-backup-center.md)]

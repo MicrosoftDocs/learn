@@ -5,14 +5,14 @@ metadata:
   unitType: Knowledge Check
   title: Knowledge Check
   description: Knowledge Check
-  ms.date: 9/28/2021
+  ms.date: 12/01/2023
   author: AbhishekMallick-MS
   ms.author: v-abhmallick
   ms.topic: interactive-tutorial
   ms.custom:
     - devx-track-extended-java
   ms.prod: learning-azure
-has context menudurationInMinutes: 10
+durationInMinutes: 10
 quiz:
   questions:
   - content: "To view details of recent and ongoing backup jobs and take appropriate action, you can use:"
