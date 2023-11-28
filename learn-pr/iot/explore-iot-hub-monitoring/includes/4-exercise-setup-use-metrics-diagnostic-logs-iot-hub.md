@@ -34,7 +34,7 @@ In this task, you create a storage account that contains your device telemetry l
 
 ## Task 2: Enable diagnostics
 
-In this task, you configure Monitor device connect/disconnect data that is stored in the storage account that you just created.
+In this task, you configure Monitor device connect/disconnect data that is stored in the storage account that you created.
 
 1. Navigate to your dashboard.
 
@@ -63,7 +63,7 @@ In this task, you configure Monitor device connect/disconnect data that is store
 
 1. For the **Subscription** field, select the **Concierge Subscription** resource group.
 
-1. For the **Storage account** field, select the storage account name that you used in task 1. After you've created the diagnostic setting, a storage container is created in the storage account as soon as an event occurs in one of the enabled log categories.
+1. For the **Storage account** field, select the storage account name that you used in task 1. After you create the diagnostic setting, a storage container is created in the storage account as soon as an event occurs in one of the enabled log categories.
 
 1. Under **Categories**, select **Connections** and **DeviceTelemetry**.
 

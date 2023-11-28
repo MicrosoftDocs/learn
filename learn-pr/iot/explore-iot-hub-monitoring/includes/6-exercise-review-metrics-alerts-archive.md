@@ -49,7 +49,7 @@ To use the portal to review alerts, complete the following steps.
 
 1. Under **Name**, to select metrics alert details about your 3 - Informational alert, select **Connected Devices Less than 1**.
 
-    A **Alert details** pane opens showing a **Summary** of the details for the alert. This pane includes a chart illustrating why the alert fired. A dash line shows the **Threshold** value and the current values for the monitored metric. Below this are additional details.
+    A **Alert details** pane opens showing a **Summary** of the details for the alert. This pane includes a chart illustrating why the alert fired. A dash line shows the **Threshold** value and the current values for the monitored metric. Below this are more details.
 
 1. At the top of the pane, below the title, select **History**.
 
@@ -161,7 +161,7 @@ By this point, you should have received an email or SMS indicating the Monitor A
 
 1. Under **Name**, select the latest **Connected Devices Less than 1** alert.
 
-    A pane opens showing a **Summary** of the details for the alert. As before, this includes a chart illustrating why the alert fired. A dash line shows the threshold value and the current values for the monitored metric. Below this are additional details.
+    A pane opens showing a **Summary** of the details for the alert. As before, this includes a chart illustrating why the alert fired. A dash line shows the threshold value and the current values for the monitored metric. Below this are more details.
 
 1. Review the chart to verify that the alert was resolved.
 
@@ -171,7 +171,7 @@ By this point, you should have received an email or SMS indicating the Monitor A
 
 1. In the list of historical events, verify that the alert was resolved.
 
-1. You can now close the Device Simulator App.
+1. You can now close the device simulator App.
 
 ## Verify your work
 
