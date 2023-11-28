@@ -2,15 +2,14 @@ You'll make an HTTP call to the Azure IoT Edge device that has the Azure AI serv
 
 ## Open port 5000 of the edge device.
 
-1. Go to the edge device you created.
+1. Go to the edge device VM you created in the Azure portal.
 
-1. Go to the VM details, then **Settings** > **Networking**.
+1. Under **Networking**, select **Network settings**.
 
-1. Navigate to **Inbound port rules** to add an inbound security rule to open port 5000.
+1. Navigate to **Rules** section to add an inbound security rule to open port 5000.
 
-    1. Click the **Add inbound port rule** button
+    1. Select the **Create port rule** button and select **Inbound port rule**.
 
-        ![The illustration shows how to add inbound rule.](../media/inbound.png)
     1. Set the **Destination Port Ranges** to **5000**
 
     1. Set the **Name** to **Port_5000**
@@ -19,7 +18,7 @@ You'll make an HTTP call to the Azure IoT Edge device that has the Azure AI serv
 
         ![The configured inbound port.](../media/port-config.png)
 
-1. Copy the public IP address of your edge device.
+1. Copy the public IP address of your edge device from the overview page.
 
 <a name='query-the-azure-ai-services-container-running-on-your-iot-edge-device-from-any-browser'></a>
 

@@ -2,12 +2,12 @@ Before deploying the Language Detection module to your edge device, you need to 
 
 <a name='create-an-azure-ai-services-text-analytics-resource'></a>
 
-## Create an Azure AI Text Analytics resource
+## Create an Azure AI Language service resource
 
-Create a Azure AI Text Analytics resource that matches the container.
+Create a Azure AI Language service resource that matches the container.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
-1. Select **Create a resource**, and then go to **AI + Machine Learning** > **Text Analytics**.
+1. Select **Create a resource**, and then go to **AI + Machine Learning** > **Language service**.
 1. Enter all the required settings:
 
    | Setting        | Value                                   |
@@ -20,7 +20,7 @@ Create a Azure AI Text Analytics resource that matches the container.
 
 1. Select **Create**, and wait for the resource to be created. Your browser automatically redirects to the newly created resource page.
 1. Go to the resource.
-1. In the **Keys and Endpoint** page under **Resource Management**, copy "API Key 1" and endpoint.
+1. In the **Keys and Endpoint** page under **Resource Management**, copy **KEY 1** and **Endpoint**.
 
    ![The illustration shows access keys of the cognitive service.](../media/keys-endpoint.png)
 
@@ -28,7 +28,7 @@ Create a Azure AI Text Analytics resource that matches the container.
 
 To deploy the Language Detection container image as Azure IoT Edge modules from Azure Marketplace, follow these steps:
 
-1. In the Azure portal, enter **Edge Module – Language Detection (Text Analytics)** into the search and open the Azure Marketplace result.
+1. In the Azure portal, enter **Edge Module - Language Detection (Text Analytics)** into the search and open the Azure Marketplace result.
 
 1. Select **Create** to create the image.
 
@@ -56,7 +56,7 @@ To deploy the Language Detection container image as Azure IoT Edge modules from 
 
    ![The illustration shows environment variables.](../media/provide-info.png)
 
-1. Navigate to **Container Create Options**, and update the options to be:
+1. Navigate to **Container Create Options**, and verify the options to be:
 
     ```json
     {
