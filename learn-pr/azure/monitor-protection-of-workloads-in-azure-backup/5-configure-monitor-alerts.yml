@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-protection-of-workloads-in-azure-backup.5-configure-monitor-alerts
-title: Configure Monitor alerts
+title: Configure monitor alerts
 metadata:
-  title: Configure Monitor alerts
+  title: Configure monitor alerts
   description: Learn how to configure Monitor alerts in vaults. 
   ms.date: 12/01/2023
   author: AbhishekMallick-MS

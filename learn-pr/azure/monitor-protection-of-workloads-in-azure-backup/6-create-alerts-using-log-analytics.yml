@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-protection-of-workloads-in-azure-backup.6-create-alerts-using-log-analytics
-title: Azure migration and modernization tools
+title: Create alerts using log analytics tools
 metadata:
   title: Create alerts using log analytics
   description: Learn how to create alerts using log analytics for Azure Backup.
