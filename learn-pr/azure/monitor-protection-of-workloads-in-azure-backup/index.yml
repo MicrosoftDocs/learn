@@ -8,7 +8,7 @@ metadata:
   ms.author: v-abhmallick
   ms.topic: interactive-tutorial
   ms.service: backup
-title: Monitor protection of workloads in azure Backup
+title: Monitor protection of workloads in Azure Backup
 summary: Monitor your backup instances and backup jobs, configure alerts for any failed operations, and do historical reporting based on log data in Azure Backup.
 abstract: |
   In this module, you will:
