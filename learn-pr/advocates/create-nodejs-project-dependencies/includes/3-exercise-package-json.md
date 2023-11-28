@@ -1,4 +1,4 @@
-You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node.js project is an important skill to have. Setup includes generating a manifest file and creating some common scripts that you're likely to use throughout the project lifecycle.
+You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node.js project is an important skill to have. Setup includes generating a `package.json` file and creating some common scripts to use throughout the project lifecycle.
 
 ## Open project in development container
 

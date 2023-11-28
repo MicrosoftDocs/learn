@@ -1,4 +1,6 @@
-When you build an application, you write code to implement business requirements. For the sake of speed and reliability, you and your team might not write all the code yourselves. You might rely on external _packaged_ code that someone else wrote.
+When you build an application, you write code to implement business requirements. For the sake of speed and reliability, you won't write all the code but instead rely on external _packaged_ code. NPM, which stands for **Node Package Manager**, is a tool that helps you use packaged code in your application. Think of NPM as a helpful assistant that simplifies how developers discover, use, and share code with one another.
+
+In this module, you'll use the **npm command-line tool** and the **npm global registry** to add dependencies as _packages_ to your application code. You'll also learn about package updates and mitigating issues.
 
 A dependency on external, packaged code allows you to:
 
@@ -8,7 +10,6 @@ A dependency on external, packaged code allows you to:
 * **Offload development tasks** by using packages that provide tasks such as linting and transpiling. For example: ESLint, Babel, TypeScript, and Webpack.
 * **Testing** by using packages that provide testing frameworks. For example: Jest and Playwright.
 
-In this module, you'll use the **npm command-line tool** and the **npm global registry** to add packages to your application code. You'll also be learn about package updates and mitigating issues.
 
 ## Learning objectives
 
