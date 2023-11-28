@@ -14,7 +14,7 @@ Finally, in the last unit of the module, you learned about the package.json file
 
 ## Node.js resources
 
-* [node cli](https://nodejs.org/api/cli.html)
+* [Node.js cli](https://nodejs.org/api/cli.html)
 
 ## npm CLI
 

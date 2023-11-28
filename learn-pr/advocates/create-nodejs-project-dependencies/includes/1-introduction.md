@@ -1,8 +1,14 @@
-When you work on an application, you write code to implement business requirements. For the sake of speed and reliability, you and your team might not write all the code yourselves. You might rely on external code, or _libraries_, that someone else wrote.
+When you build an application, you write code to implement business requirements. For the sake of speed and reliability, you and your team might not write all the code yourselves. You might rely on external _packaged_ code that someone else wrote.
 
-One way to approach building your app with external libraries is to use an existing ecosystem of libraries that you can download from and possibly even add to. By using these libraries, you'll be able to finish building your app sooner and take it to market faster than the competition. Another benefit to using libraries could be to ensure your app follows recommended practices for authentication and authorization. After all, protecting your data and your customers' data is a significant concern.
+A dependency on external, packaged code allows you to:
 
-In this module, you'll use the npm command-line tool and the npm global registry to add libraries to your application code. You'll also be introduced to managing updates and mitigating issues.
+* **Build your app faster** by building on top of existing packages. An common example of this is using a JavaScript front-end (React, Angular, Vue) or back-end (Express.js, Restify.js) framework.
+* **Integrate with Cloud services faster** by using packages provided by the Cloud provider. For example, you can use the Azure SDK for JavaScript to integrate with Azure services.
+* **Use best practices** by using packages that are written by experts. For example, you can use the Microsoft Authentication Library (MSAL) to integrate with Azure Active Directory (Azure AD) for authentication and authorization. MSAL is written by experts in authentication and authorization.
+* **Offload development tasks** by using packages that provide tasks such as linting and transpiling. For example: ESLint, Babel, TypeScript, and Webpack.
+* **Testing** by using packages that provide testing frameworks. For example: Jest and Playwright.
+
+In this module, you'll use the **npm command-line tool** and the **npm global registry** to add packages to your application code. You'll also be learn about package updates and mitigating issues.
 
 ## Learning objectives
 
