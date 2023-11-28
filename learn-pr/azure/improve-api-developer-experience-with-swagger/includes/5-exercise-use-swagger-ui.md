@@ -1,23 +1,25 @@
 
-In this exercise, you'll enrich the documentation a developer sees about your API by adding comments and annotations to your code. First, let's see what we get from Swagger UI by default.
+In this exercise, you enrich the documentation a developer sees about your API by adding comments and annotations to your code. First, let's see what we get from Swagger UI by default.
 
-1. To examine the OpenAPI definition of the endpoint of our API in Swagger UI, navigate to http://localhost:5000/swagger in your browser. You should see output similar to the following when you select the **Get** method.
+1. To examine the OpenAPI definition of the endpoint of our API in Swagger UI, navigate to `http://localhost:5000/swagger` in your browser. You should see output similar to the following when you select the **Get** method.
 
     :::image type="content" source="../media/swagger-ui-initial.png" alt-text="Default Swagger UI for our API." loc-scope="third-party":::
 
-    Swagger UI gives us some useful information about the API. It shows the methods you can call (in your simple case, one method called **PriceFrame**). You see it is an HTTP Get operation and takes two required parameters, namely Height and Width. To see the API Call in action, you can also **Try it out**, enter values for Height and Width, and select **Execute**. 
+    Swagger UI gives us some useful information about the API. It shows the methods you can call (in your simple case, one method called **PriceFrame**). You can see it's an HTTP Get operation that takes two required parameters named **Height** and **Width**. To see the API Call in action, you can select **Try it out**, enter values for **Height** and **Width**, and select **Execute**.
 
-    The API users don't have enough information to know the limitations of the PriceFrame method. Let's help them out with some more detailed information through XML comments.
+    Your API users still don't have enough information to know the limitations of the **PriceFrame** method. Let's help them out with some more detailed information through XML comments.
 
 #### Add XML comments to your API
 
 1. Go back to the instance of Visual Studio Code that you used for the last exercise.
 
+1. If the web API is still running in the last exercise, press <kbd>ctrl+c</kbd> on Windows or <kbd>cmd+c</kbd> on Mac to stop it.
+
 1. To activate XML documentation in your project, update the **PrintFramerAPI.csproj** project file, add the `GenerateDocumentationFile` tag to the existing `<PropertyGroup>`, and set it to `true`.
 
    ```XML
    <PropertyGroup>
-       <TargetFramework>netcoreapp3.1</TargetFramework> 
+       <TargetFramework>net7.0</TargetFramework>
        <GenerateDocumentationFile>true</GenerateDocumentationFile>
        <NoWarn>$(NoWarn);1591</NoWarn>
    </PropertyGroup>
@@ -30,7 +32,7 @@ In this exercise, you'll enrich the documentation a developer sees about your AP
     using System.IO;
     ```
 
-1. In **Startup.cs**, to tell Swashbuckle to use XML documentation by updating the call to the `AddSwaggerGen()` in `ConfigureServices`.
+1. In **Startup.cs**, tell Swashbuckle to use XML documentation by updating the call to the `AddSwaggerGen()` in `ConfigureServices`.
 
    ```csharp
     public void ConfigureServices(IServiceCollection services)
@@ -64,7 +66,7 @@ In this exercise, you'll enrich the documentation a developer sees about your AP
 
     In the preceding code, reflection determines the name of the XML file to load XML comments.
 
-1. In **PriceFrameController.cs**, add the following XML comment block above the *HttpGet* attribute of the `GetPrice` method. Adding triple-slash comments to an action enhances the Swagger UI by adding the description to the section header.
+1. In the **Controllers** folder, open **PriceFrameController.cs**. Add the following XML comment block above the *HttpGet* attribute of the `GetPrice` method. Adding triple-slash comments to an action enhances the Swagger UI by adding the description to the section header.
 
    ```csharp
     /// <summary>
@@ -89,25 +91,21 @@ In this exercise, you'll enrich the documentation a developer sees about your AP
     dotnet build
     ```
 
-   > [!TIP]
-   > You may need to first press <kbd>ctrl+c</kbd> on Windows or 
-<kbd>cmd+c</kbd> on Mac to stop the web API from running in the last 
-exercise.
-
-
 1. To see your changes, run the ASP.NET application locally by entering the following in the Visual Studio Code terminal window:
 
     ```bash
     dotnet run
     ```
 
-1. Look at the Swagger UI again at http://localhost:5000/swagger, and observe the added information provided by your XML comments to the OpenAPI documentation.
+1. Look at the Swagger UI again at `http://localhost:5000/swagger`, and observe the added information provided by your XML comments to the OpenAPI documentation.
 
     :::image type="content" source="../media/swagger-ui-and-xml-comments.png" alt-text="Swagger UI with the final documentation from XML comments for our API." loc-scope="third-party":::
 
 ## Add data annotations to your API
 
 To enable Swagger to improve the OpenAPI documentation, you use attributes from the `Microsoft.AspNetCore.Mvc` namespace.
+
+1. If the web API is still running in the last exercise, press <kbd>ctrl+c</kbd> on Windows or <kbd>cmd+c</kbd> on Mac to stop it.
 
 1. To show that your `GetPrice` API supports a content type response for **text/plain**, in the API controller, **PriceFrameController.cs**, add a `[Produces("text/plain")]` attribute above the `GetPrice` definition.
 
@@ -120,14 +118,19 @@ To enable Swagger to improve the OpenAPI documentation, you use attributes from 
 
 ## Add Swashbuckle annotations to your API
 
-So far, your API returns the status code 200 whether it could calculate a price for the given frame dimensions. In the description of the GetPrice method, note the case when a price can't be calculated.
+So far, your API returns the status code 200 when it can calculate a price for the given frame dimensions. In the description of the `GetPrice` method, note the case when a price can't be calculated.
 
-A more robust way to tell developers the response types and error codes is through the following XML comments and data annotations. Swashbuckle and the Swagger tooling will use these values to clearly generate an OpenAPI description of the  expected HTTP response codes.
+A more robust way to tell developers the response types and error codes is through the following XML comments and data annotations. Swashbuckle and the Swagger tooling use these values to clearly generate an OpenAPI description of the expected HTTP response codes.
 
-Also update the HTTP verb filter constructor to include the `Name` property. This will include the OpenAPI `operationId`.
+Also update the HTTP verb filter constructor to include the `Name` property, and include the OpenAPI `operationId` value.
 
-1. Add `Microsoft.AspNetCore.Http` to the **PriceFrameController.cs** file.
-1. In **PriceFrameController.cs**, replace GetPrice with the following code and comment.
+1. Add the following using statement to the **PriceFrameController.cs** file.
+
+    ```csharp
+    using Microsoft.AspNetCore.Http;
+    ```
+
+1. In **PriceFrameController.cs**, replace `GetPrice` with the following code and comment.
 
     ```csharp
     /// <summary>
@@ -164,19 +167,26 @@ Also update the HTTP verb filter constructor to include the `Name` property. Thi
     ```
 
     This code update makes the following changes:
+
     - The method uses the `BadRequest()` and `Ok()` methods to create a BadRequest (400) and an Ok status respectively, passing in the string result to the response.
     - The XML comments describe each status code this method can return.  
-    - The HttpGet includes a Name property to emit the OpenAPI operationId parameter.
-    - The ProducesResponseTypeAttribute lists the different responses that the action can return. These attributes are combined with XML comments, as previously described, to include human-friendly descriptions with each response in the generated Swagger
+    - The HttpGet attribute includes a `Name` property to emit the OpenAPI `operationId` parameter.
+    - The ProducesResponseType attributes list the different responses that the action can return. These attributes are combined with XML comments, as previously described, to include human-friendly descriptions with each response in the generated Swagger
 
-1. Rebuild and run the web API with the following command:
+1. Rebuild the web API with the following command:
 
     ```bash
     dotnet build
     ```
 
-1. Look at the Swagger UI again at http://localhost:5000/swagger, and observe the added information provided by these annotations. The final Swagger UI for your API appears in the following image.
+1. Run the ASP.NET application with the following command:
+
+    ```bash
+    dotnet run
+    ```
+
+1. Look at the Swagger UI again at `http://localhost:5000/swagger`, and observe the added information provided by these annotations. The final Swagger UI for your API appears in the following image.
 
     :::image type="content" source="../media/swagger-ui-final.png" alt-text="Swagger UI with more documentation from XML comments for our API." loc-scope="third-party":::
 
-In this exercise, you enriched the information that a developer receives about our API, making it much easier to consume.
+In this exercise, you enriched the information that a developer receives about your API, making it much easier to consume.

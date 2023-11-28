@@ -6,8 +6,8 @@ metadata:
   title: Lint and validate your Bicep code
   description: Learn about linting and validating your Bicep code in a deployment workflow.
   ms.date: 12/27/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep
