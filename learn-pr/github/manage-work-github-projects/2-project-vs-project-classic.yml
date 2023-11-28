@@ -1,4 +1,4 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.github.manage-work-github-projects.project-vs-project-classic
 title: Projects versus Projects Classic
 metadata:
@@ -7,8 +7,7 @@ metadata:
   ms.date: 05/05/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-github
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-project-vs-project-classic.md)]

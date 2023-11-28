@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/19/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: cognitive-services
 title: Build a question answering solution
 summary: The question answering capability of the Azure AI Language service makes it easy to build applications in which users ask questions using natural language and receive appropriate answers.

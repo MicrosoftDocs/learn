@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/03/2023
   author: QuinnRadich
   ms.author: quradic
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: windows
   manager: jken
 title: Implement data binding in your Windows application

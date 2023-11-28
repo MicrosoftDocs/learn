@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/31/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-ai-translator
 title: Translate text with the Azure AI Translator service
 summary: The Azure AI Translator service enables you to create intelligent apps and services that can translate text between languages.
