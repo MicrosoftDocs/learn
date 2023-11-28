@@ -4,7 +4,7 @@ title: Instantiate a class
 metadata:
   title: Instantiate a class
   description: "This unit talks about how you instantiate a class."
-  ms.date: 11/27/2023
+  ms.date: 11/28/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: unit
@@ -14,14 +14,14 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Can a method be be called on an object after the object has been declared, but not yet instantiated?"
+  - content: "Can a method call an object that is declared, but not instantiated yet?"
     choices:
     - content: "Yes."
       isCorrect: false
-      explanation: "Incorrect. A method can't be called until it has been instatiated."
+      explanation: "Incorrect. A method can't be called until the object it belongs to is instantiated."
     - content: "Yes, if the constructor is initialized."
       isCorrect: false
-      explanation: "Incorrect. In this example, an object has only been declared, but not instantiated. Therefore, the constructor cannot yet be initialized."
+      explanation: "Incorrect. In this example, an object is only declared, but not instantiated. Therefore, the constructor can't yet be initialized."
     - content: "No."
       isCorrect: true
-      explanation: "Correct. Declaring a class introduces a new variable to your application, but does not create it without instantiation unless it is static."
+      explanation: "Correct. Declaring a class introduces a new variable object to your application, but doesn't create it without instantiation, unless it's static."

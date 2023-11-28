@@ -6,10 +6,10 @@ In programming you call constants (values that don't change), variables, methods
 
 To access a property, use the property name as if it were a public variable in the class. The compiler implicitly understands you want either the get accessor or the set accessor on the instance, depending on whether you're getting or setting the property value.
 
-The following code sets the `name` property of the myCustomer object to “Sasha.” Setting the name of the property implicitly calls the `set` accessor. The next line of code *gets* (retrieves) the `name` text property, which implicitly calls the `get` accessor.
+The following code sets the `name` property of the myCustomer object to “Customer name.” Setting the name of the property implicitly calls the `set` accessor. The next line of code *gets* (retrieves) the `name` text property, which implicitly calls the `get` accessor.
 
 ```csharp
-myCustomer.name="Sasha";
+myCustomer.name="Customer name";
 
 return myCustomer.name ;
 ```

@@ -270,7 +270,7 @@ This exercise is a chance for you to practice putting it all together before mov
     Console.WriteLine("Builder ID: " + House.BuilderID); // static property
     ```
 
-    Notice that the static property you created is not referenced like the other members of the instance. Even though it is the last thing you added to your code, because it is static, it is created first by the compiler when your application started and is not a part of the instance members of your object. It is also called differently, using the class name rather than an object name. For example, `House.BuilderID` (House is the class name) is used to call your static property, not `house.Color` (instance/object name).
+    References to the static property are different from the other members of the instance. Even though it's the last thing you added to your code, because it's static, the compiler creates the property first. The compiler creates it when your application starts. It's not a part of the instance members of your object, however. Calls to static properties start with the class name, not the lowercase object name. For example, in `House.BuilderID` uppercase `House` is the class name used to call your static property, not a lowercase `house`, as in `house.Color`. In this case, lowercase `house` represents the instantiated House class.
 
 1. Run your code. Your output should look like the following.
 
@@ -278,4 +278,4 @@ This exercise is a chance for you to practice putting it all together before mov
 
 ## Recap
 
-This exercise gave you a chance to put many of the things you learned into practice. You created a class that has methods and properties and then used that class from your Program.cs file. I hope you notice that although methods typically perform actions on an object, they can also set and get data without performing an action, as in your GetNumberOfRooms and SetNumberOfRooms methods. In addition to methods and properties, you created an overridden method and a static method. Congratulate yourself on learning several skills that are fundamental to creating an object-oriented program!
+This exercise gave you a chance to put many of the things you learned into practice. You create a class that has methods and properties and then use that class in your Program.cs file. I hope you notice, although methods typically perform actions on an object, they can also `set` and `get` data without performing an action. You used the GetNumberOfRooms and SetNumberOfRooms methods to do the same things as properties. They're methods, used like properties to `get` and `set` values. In addition to methods and properties, you create an overridden method and a static method. Congratulate yourself on learning several skills that are fundamental to creating an object-oriented program!

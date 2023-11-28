@@ -4,7 +4,7 @@ title: Use properties and methods
 metadata:
   title: Use properties and methods
   description: "This unit talks about how properties and methods are used."
-  ms.date: 11/27/2023
+  ms.date: 11/28/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: unit
@@ -16,12 +16,12 @@ quiz:
   questions:
   - content: "When are the `get` and `set` methods for a property called?"
     choices:
-    - content: "When an object is first created"
+    - content: "When an object is first created."
       isCorrect: false
-      explanation: "Incorrect. Although `get` and `set` methods for a property can be called when an object is first created, they can be called at any time."
+      explanation: "Incorrect. They can be called at any time."
     - content: "When there isn't time to create a method."
       isCorrect: false
-      explanation: "Incorrect. This is not a real reason to choose to create a property."
-    - content: "When there is a need to get or set the state of your object."
+      explanation: "Incorrect. Time is not a valid reason to choose to create a property."
+    - content: "When there's a need to get or set the state of your object."
       isCorrect: true
       explanation: "Correct! They're used to get basic state or status information in and/or out of an object."

@@ -13,7 +13,7 @@ Customer myCustomer;
 ```
 
 >[!Note]
->It is important to note here the difference between declaring a variable and creating an instance of a class. When you declare a variable you are earmarking memory to be allocated for that object, but not actually using that memory. When you both declare an object and instantiate it at the same time you are both creating an object and putting it in your variable of that type.
+>It's important to note here the difference between declaring a variable and creating an instance of a class. When you declare a variable you are earmarking memory to be allocated for that object, but not actually using that memory. When you both declare an object and instantiate it at the same time you are both creating an object and putting it in your variable of that type.
 
 ## Create an instance of a class
 
@@ -31,10 +31,8 @@ For example, the following code instantiates the myCustomer object:
 myCustomer = new Customer();
 ```
 
-Here is an example of both declaring and then instantiating a class in a single line of code. The following example declares the myCustomer object and instantiates the class in one line. Declaring and instantiating you objects in a single line is typically how objects are instantiated.
+Here's an example of both declaring and then instantiating a class in a single line of code. The following example declares the myCustomer object and instantiates the class in one line. Declaring and instantiating your objects in a single line is typically how objects are instantiated.
 
 ```csharp
 Customer myCustomer = new Customer(param1, param2);
 ```
-
-&nbsp;
