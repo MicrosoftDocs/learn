@@ -25,7 +25,7 @@ The **IoT Edge runtime** is a collection of programs that turn a device into an 
 
 ## Create an IoT Hub
 
-Azure IoT Hub enables the communication between the virtual device and the cloud. To create a new Azure IoT Hub with the Azure CLI, you'll use the `az IoT hub create` command set.
+Azure IoT Hub enables the communication between the virtual device and the cloud. To create a new Azure IoT Hub with the Azure CLI, you'll use the `az iot hub create` command set.
 
 > [!NOTE]
 > Only one **free** IoT hub instance is allowed in a subscription. The free level of IoT Hub works for this exercise. If you've used IoT Hub in the past and already have a free hub created, you can use that IoT hub.
