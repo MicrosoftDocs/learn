@@ -1,4 +1,12 @@
-The package.json file is a manifest file for your Node.js project. It contains metadata information on your project. It also governs things like how your dependencies are managed, what files go into a package meant for npm, and much more. Let's take a closer look at the properties and what they mean.
+Learn about local Node.js project management with npm and package management.
+
+## Packaging and package management
+
+Packaging is the process of preparing your code for distribution. It's the process of taking your code and all its dependencies and bundling it into a package that can be installed and used by others. Package management is added by:
+
+* The **package.json** file which defines your project. The package.json file is a manifest file for your Node.js project. It contains metadata information on your project. It also governs things like how your dependencies are managed, what files go into a package and much more. 
+* The **npm** CLI tool which is used to install and manage packages available from the npm registry.
+* The **npm registry** which is a public collection of packages that you can use in your projects.
 
 ## Initialize a package.json
 

@@ -18,4 +18,8 @@ After you complete this module, you'll be able to:
 
 - Familiarity with editing text and code files in a text editor
 - Experience with using the command line, including using it for Git operations
+- Experience using JavaScript functions and variables
+- Development environment, either one of these:
+    - GitHub account to use GitHub Codespaces to use a browser-based environment
+    - Visual Studio Code and Docker to use local environment
 
