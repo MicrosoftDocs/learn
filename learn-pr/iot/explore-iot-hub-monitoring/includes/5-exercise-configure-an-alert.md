@@ -35,7 +35,7 @@ To create an alert rule:
 1. For **Signal source**, ensure that **All** is selected.
 
     > [!NOTE]
-    > If select **Signal source**, you'll see that there are the following options: **All**, **Log analytics**, **Log analytics (example query)**, **Resource health**, **Platform metrics**, and **Administrative**.
+    > If you select **Signal source**, you'll see that there are the following options: **All**, **Log analytics**, **Log analytics (example query)**, **Resource health**, **Platform metrics**, and **Administrative**.
     > The platform service provides metrics on service utilization, where as the activity log tracks administrative activities.
 
 1. In the **Search by signal name** textbox, type **connected**.
@@ -119,7 +119,7 @@ To create an alert rule:
     > [!NOTE]
     > The display name is used in place of a full action group name when notifications are sent using this group and is limited to a max of 12 characters.
 
-1. Select **Next: Notifications >**, to view the action group notification fields.
+1. Select **Next: Notifications >** to view the action group notification fields.
 
 1. Open the **Notification Type** dropdown, and then review the available options.
 
@@ -198,4 +198,4 @@ The **Alerts** blade of your IoT Hub should now be displayed with alert filters 
 A message in the middle at the bottom of the display should show that there are no alerts found.
 
 > [!NOTE]
-> You can go back and edit or create new **Alert Rules** or **Action Groups** using the buttons near the top of the display.
+> You can go back and edit or create new **Alert rules** or **Action groups** using the buttons near the top of the display.

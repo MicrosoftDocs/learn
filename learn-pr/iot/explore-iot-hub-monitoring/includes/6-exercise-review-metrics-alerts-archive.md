@@ -6,11 +6,11 @@ In order to generate the alert where the number of connected devices is less tha
 
 1. Return to Visual Studio Code and stop the running app.
 
-1. Wait 30 seconds or so before proceeding to the next step.
+1. Wait 30 seconds before proceeding to the next step.
 
 1. Navigate to your dashboard that includes the Metrics chart that you created.
 
-1. Open the Metrics chart that you pinned to the dashboard by selecting the chart title.
+1. Open the metrics chart that you pinned to the dashboard by selecting the chart title.
 
     The chart opens and fills the page.
 
@@ -22,7 +22,7 @@ In order to generate the alert where the number of connected devices is less tha
 
 To use the portal to review alerts, complete the following steps.
 
-1. Close the Metrics graphical display to return to the dashboard.
+1. Close the metrics graphical display to return to the dashboard.
 
 1. In the portal search box, type **monitor**.
 
@@ -32,9 +32,7 @@ To use the portal to review alerts, complete the following steps.
 
 1. On the left-side menu, near the top of the list, select **Alerts**.
 
-    This alerts view shows all alerts for all subscriptions. Let's filter this for the IoT Hub used in this project.
-
-1. Near the top of the blade, select **Subscription**, then select only the subscription you're using for this project. Then select **Apply**.
+1. For this module, the alerts view shows all alerts for only your **Concierge Subscription**. In a production environment, you would need to adjust the **Subscription** filter to filter for your subscription only.
 
 1. Select **Time range**, select **Past hour**, then select **Apply**.
 
@@ -47,15 +45,17 @@ To use the portal to review alerts, complete the following steps.
 
 1. In the list of severities, select the number under **Informational**.
 
-    The **Informational** pane opens. At the top of the pane, you see several filter fields. These fields have been populated with the values from the preceding screen. And only the **Informational** alerts for the selected IoT hub are shown. It also shows the **Alert Condition** of either **Fired** or **Resolved**, and the Fire time.
+    The **Informational** pane opens. At the top of the pane, you see several filter fields. These fields have been populated with the values from the preceding screen. And only the **Informational** alerts for the selected IoT hub are shown. It also shows the **Alert condition** of either **Fired** or **Resolved**, and the **Fire time**.
 
 1. Under **Name**, to select metrics alert details about your 3 - Informational alert, select **Connected Devices Less than 1**.
 
-    A pane opens showing a **Summary** of the details for the alert. This pane includes a chart illustrating why the alert fired. A dash line shows the threshold value and the current values for the monitored metric. Below this are additional details.
+    A **Alert details** pane opens showing a **Summary** of the details for the alert. This pane includes a chart illustrating why the alert fired. A dash line shows the **Threshold** value and the current values for the monitored metric. Below this are additional details.
 
 1. At the top of the pane, below the title, select **History**.
 
     In this view, you can see when the alert fired, the action group that was invoked, and any other changes such as when the alert was resolved.
+
+1. Close the **Alert details** pane.
 
 1. At this point, check your email and/or text and verify you received an alert message.
 
@@ -70,9 +70,7 @@ Earlier in this lab, you set up your diagnostic logs to be exported to Blob Stor
 
 1. Navigate to your dashboard.
 
-1. Select **Storage Account**.
-
-1. Select the Monitor Storage Account that you noted earlier. You may need to search for the storage account in the list.
+1. In **All resources**, select the Storage account that you created earlier.
 
 1. The **Essentials** and **Properties** of the storage account are displayed.
 
@@ -82,9 +80,9 @@ Earlier in this lab, you set up your diagnostic logs to be exported to Blob Stor
 
     You should see that there's activity displayed.
 
-1. On the left-side menu, to view the data that has been logged, select **Storage Browser**.
+1. On the left-side menu, to view the data that has been logged, select **Storage browser**.
 
-    You can use the Storage browser to verify that your data is being added to the storage account.
+    You can use the **Storage browser** to verify that your data is being added to the storage account.
 
 1. In the **Storage Browser** blade, expand the **Blob containers** node.
 
@@ -97,13 +95,13 @@ Earlier in this lab, you set up your diagnostic logs to be exported to Blob Stor
     > [!NOTE]
     > If no data is displayed, select **Refresh**. You may need to wait a minute or two and then refresh again.
 
-1. In the right-hand pane, select **insights-logs-connections**, and then navigate down into the folder hierarchy. As you navigate down you see numeric values for the year, month, day, and hour. The final folder represents the minute. The minute folder contains a blob file that contains your monitor logging data.
+1. Navigate down into the folder hierarchy until you reach the minute folder. The folder should appear as **m=00**. As you navigate down you see numeric values for the year, month, day, and hour. The final folder represents the minute. The minute folder contains a blob file that contains your monitor logging data.
 
 1. Select the json file name.
 
-1. On the Overview page, select **Download**.
+1. Select the **...** context menu for the file, then select **Download**.
 
-1. Open Windows **File Explorer** and navigate to your **Downloads** folder.
+1. Open your **File Explorer** and navigate to your **Downloads** folder.
 
 1. Right-click the .json file, then select **Open with**, then select **Visual Studio Code**.
 
@@ -153,9 +151,7 @@ By this point, you should have received an email or SMS indicating the Monitor A
 
 1. On the left-side menu, near the top of the list, select **Alerts**.
 
-    This alerts view shows all alerts for all subscriptions. Let's filter this list to your IoT Hub.
-
-1. Select **Subscription**, then select only the subscription you're using for this project. Then select **Apply**.
+1. Ensure that the **Subscription** shown is **Concierge Subscription**.
 
 1. Select **Time range**, select **Past hour**, then select **Apply**.
 
@@ -167,9 +163,13 @@ By this point, you should have received an email or SMS indicating the Monitor A
 
     A pane opens showing a **Summary** of the details for the alert. As before, this includes a chart illustrating why the alert fired. A dash line shows the threshold value and the current values for the monitored metric. Below this are additional details.
 
+1. Review the chart to verify that the alert was resolved.
+
 1. At the top of the pane, below the title, select **History**.
 
     In this view, you can see when the alert fired, the action group that was invoked, when the alert is resolved, and other details.
+
+1. In the list of historical events, verify that the alert was resolved.
 
 1. You can now close the Device Simulator App.
 
@@ -177,4 +177,4 @@ By this point, you should have received an email or SMS indicating the Monitor A
 
 In this exercise, you reviewed the operational metrics, alerts, and diagnostic logs data based on the configuration that you created. These monitoring items are fed by the telemetry data sent by the DeviceSimulator program.
 
-The Azure services, email, and SMS notifications that you set up will terminate automatically 60 minutes after the sandbox was first created.
+The Azure services, email, and SMS notifications that you set up will terminate automatically 120 minutes after the sandbox was first created. You can unsubscribe from email and SMS alerts using your apps if needed before the sandbox terminates.

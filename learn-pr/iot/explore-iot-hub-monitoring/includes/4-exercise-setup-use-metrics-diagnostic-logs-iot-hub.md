@@ -114,7 +114,7 @@ In this task, you set up various metrics to watch for when messages are sent to 
 
 1. Under **Aggregation**, ensure that **Sum** is selected.
 
-    Notice there are four aggregation operations available: Avg, Min, Max, and Sum.
+    Notice there are four aggregation operations available: **Avg**, **Min**, **Max**, and **Sum**.
 
 1. Select the blue checkmark to save the metric.
 
@@ -139,7 +139,7 @@ In this task, you set up various metrics to watch for when messages are sent to 
     > [!NOTE]
     > To edit the chart title, select the **pencil icon** to the right of the title.
 
-1. Under the **Chart Title**, on the right side of the toolbar, select **Save to dashboard**, select **Pin to dashboard**, ensure that **My Dashboard** is selected, and then select **Pin**.
+1. Under the chart title, on the right side of the toolbar, select **Save to dashboard**, then select **Pin to dashboard**, ensure that **My Dashboard** is selected, and then select **Pin**.
 
     > [!NOTE]
     > In order to retain the chart you have just created, it **must** be pinned to a dashboard.
