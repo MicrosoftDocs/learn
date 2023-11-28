@@ -7,7 +7,7 @@ metadata:
   author: timlt
   ms.author: timlt
   manager: lizross
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: rtos
 title: Building and running a TCP echo client
 summary: Design, build, and run a TCP echo client.
