@@ -6,8 +6,8 @@ metadata:
   title: Publish a module to a private registry
   description: Learn how to create and control access to a private registry, and how to publish modules to the registry.
   ms.date: 03/06/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep
