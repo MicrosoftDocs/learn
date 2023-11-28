@@ -11432,6 +11432,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/windows/develop-web-apps-with-vs-code/index.md",
+      "redirect_url": "/training/modules/get-started-with-web-development",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/develop-web-apps-with-vs-code/1-introduction.md",
+      "redirect_url": "/training/modules/get-started-with-web-development",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/develop-web-apps-with-vs-code/2-installation-and-tour.md",
+      "redirect_url": "/training/modules/get-started-with-web-development",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/develop-web-apps-with-vs-code/3-extensions.md",
+      "redirect_url": "/training/modules/get-started-with-web-development",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/develop-web-apps-with-vs-code/4-creating-files.md",
+      "redirect_url": "/training/modules/get-started-with-web-development",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/develop-web-apps-with-vs-code/5-building-app.md",
+      "redirect_url": "/training/modules/get-started-with-web-development",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/develop-web-apps-with-vs-code/6-summary-and-knowledge-check.md",
+      "redirect_url": "/training/modules/get-started-with-web-development",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/build-azure-vm-templates/index.md",
       "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code",
       "redirect_document_id": false
