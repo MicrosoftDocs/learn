@@ -1,6 +1,61 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/2-authentication-with-identity-platform.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/3-exercise-prepare-app-for-authentication.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/4-microsoft-authentication-library-python-auth-code-flow.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/5-exercise-build-authorization-code-flow.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/6-permissions-and-access.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/7-exercise-call-protected-web-api.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/index.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.add-sign-in-support-python-webapp-identity-platform.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/aks-deploy-container-app/6-expose-app.yml",
       "redirect_url": "/training/modules/aks-deploy-container-app",
       "redirect_document_id": false
@@ -11374,6 +11429,41 @@
     {
       "source_path": "learn-pr/student-evangelism/implement-cicd-iot-edge/8-monitor-devices-app-insights.md",
       "redirect_url": "/training/modules/implement-cicd-iot-edge",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/develop-web-apps-with-vs-code/index.md",
+      "redirect_url": "/training/modules/get-started-with-web-development",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/develop-web-apps-with-vs-code/1-introduction.md",
+      "redirect_url": "/training/modules/get-started-with-web-development",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/develop-web-apps-with-vs-code/2-installation-and-tour.md",
+      "redirect_url": "/training/modules/get-started-with-web-development",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/develop-web-apps-with-vs-code/3-extensions.md",
+      "redirect_url": "/training/modules/get-started-with-web-development",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/develop-web-apps-with-vs-code/4-creating-files.md",
+      "redirect_url": "/training/modules/get-started-with-web-development",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/develop-web-apps-with-vs-code/5-building-app.md",
+      "redirect_url": "/training/modules/get-started-with-web-development",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/develop-web-apps-with-vs-code/6-summary-and-knowledge-check.md",
+      "redirect_url": "/training/modules/get-started-with-web-development",
       "redirect_document_id": false
     },
     {

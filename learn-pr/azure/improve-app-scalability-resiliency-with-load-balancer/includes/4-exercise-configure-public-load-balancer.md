@@ -2,7 +2,7 @@ You can configure Azure Load Balancer by using the Azure portal, PowerShell, or 
 
 In your healthcare organization, you want to load-balance client traffic to provide a consistent response based on the patient portal web servers' health. You have two virtual machines (VMs) in an availability set to act as your healthcare-portal web application.
 
-Here, you'll create a load balancer resource and use it to distribute a load across the VMs.
+Here, you create a load balancer resource and use it to distribute a load across the VMs.
 
 ## Deploy the patient portal web application
 
@@ -13,7 +13,7 @@ First, deploy your patient-portal application across two virtual machines in a s
 
 To deploy the patient portal web application:
 
-1. Run the following `git clone` command in Azure Cloud Shell. The command clones the repo that contains the source for the app and runs the setup script from GitHub. You'll then change to the directory of the cloned repo.
+1. Run the following `git clone` command in Azure Cloud Shell. The command clones the repo that contains the source for the app and runs the setup script from GitHub. Then changes to the directory of the cloned repo.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-improve-app-scalability-resiliency-with-load-balancer.git
@@ -26,7 +26,7 @@ To deploy the patient portal web application:
     bash create-high-availability-vm-with-sets.sh <rgn>[sandbox resource group name]</rgn>
     ```
 
-1. When the script finishes, on the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **Resource groups**, then select the **<rgn>[sandbox resource group name]</rgn>** resource group. Review the resources that were created by the script.
+1. When the script finishes, on the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **Resource groups**, then select the **<rgn>[sandbox resource group name]</rgn>** resource group. Review the resources created by the script.
 
 ::: zone pivot="portal"
 
@@ -122,7 +122,7 @@ Finally, let's create a rule for the load balancer.
     | ----- | ----------- |
     | Name | A name for the load balancing rule. For example, *lbrule-http*. |
     | IP Version | **IPv4** |
-    | Frontend IP address | Select the Frontend IP address that you named earlier. It will be marked as (to be created). |
+    | Frontend IP address | Select the Frontend IP address that you named earlier. It's marked as (to be created). |
     | Backend pool | Select the back-end pool that you named earlier. For example, *bepool-http*.|
     | Protocol | **TCP** |
     | Port | Enter **80** (default). |
@@ -214,7 +214,7 @@ When you use PowerShell to configure a load balancer, you must create the back-e
       -RequestPath "/"
     ```
 
-1. You now need a load balancer rule that's used to define how traffic is distributed to the VMs. You define the front-end IP configuration for the incoming traffic and the back-end IP pool to receive the traffic, along with the required source and destination port. To make sure only healthy VMs receive traffic, you also define the health probe to use.
+2. You now need a load balancer rule to define how traffic is distributed to the VMs. You define the front-end IP configuration for the incoming traffic and the back-end IP pool to receive the traffic, along with the required source and destination port. To make sure only healthy VMs receive traffic, you also define the health probe to use.
 
     ```powershell
     $lbrule = New-AzLoadBalancerRuleConfig `
@@ -227,7 +227,7 @@ When you use PowerShell to configure a load balancer, you must create the back-e
       -Probe $probe
     ```
 
-1. Now, you can create the basic load balancer by running the **New-AzLoadBalancer** cmdlet:
+3. Now, you can create the basic load balancer by running the **New-AzLoadBalancer** cmdlet:
 
     ```powershell
     $lb = New-AzLoadBalancer `
@@ -240,7 +240,7 @@ When you use PowerShell to configure a load balancer, you must create the back-e
       -LoadBalancingRule $lbrule
     ```
 
-1. Connect the VMs to the back-end pool by updating the network interfaces that the script created to use the back-end pool information.
+4. Connect the VMs to the back-end pool by updating the network interfaces that the script created to use the back-end pool information.
 
     ```powershell
     $nic1 = Get-AzNetworkInterface -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name "webNic1"
@@ -253,7 +253,7 @@ When you use PowerShell to configure a load balancer, you must create the back-e
     Set-AzNetworkInterface -NetworkInterface $nic2 -AsJob
     ```
 
-1. Run the following command to get the load balancer's public IP address and your website's URL:
+5. Run the following command to get the load balancer's public IP address and your website's URL:
 
     ```powershell
     Write-Host http://$($(Get-AzPublicIPAddress `
@@ -300,7 +300,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
       --port 80  
     ```
 
-1. Now, you need a load balancer rule that's used to define how traffic is distributed to the VMs. You define the front-end IP configuration for the incoming traffic and the back-end IP pool to receive the traffic, along with the required source and destination port. To make sure only healthy VMs receive traffic, you also define the health probe to use.
+2. Now, you need a load balancer rule to define how traffic is distributed to the VMs. You define the front-end IP configuration for the incoming traffic and the back-end IP pool to receive the traffic, along with the required source and destination port. To make sure only healthy VMs receive traffic, you also define the health probe to use.
 
     ```azurecli
     az network lb rule create \
@@ -315,7 +315,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
       --probe-name myHealthProbe
     ```
 
-1. Connect the VMs to the back-end pool by updating the network interfaces you created in the script to use the back-end pool information.
+3. Connect the VMs to the back-end pool by updating the network interfaces you created in the script to use the back-end pool information.
 
     ```azurecli
     az network nic ip-config update \
@@ -333,7 +333,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
       --lb-address-pools myBackEndPool
     ```
 
-1. Run the following command to get the load balancer's public IP address and your website's URL:
+4. Run the following command to get the load balancer's public IP address and your website's URL:
 
     ```azurecli
     echo http://$(az network public-ip show \
@@ -349,10 +349,10 @@ Let's use the Azure CLI to create the load balancer and its associated resources
 
 Let's test the load balancer setup to show how it can handle availability and health issues dynamically.
 
-1. In a new browser tab, go to the public IP address that you noted. You'll see that the response is returned from one of the VMs.
+1. In a new browser tab, go to the public IP address that you noted. A response from one of the VMs is displayed in the browser.
 
-1. Try a "force refresh" by pressing <kbd>Ctrl+F5</kbd> a few times to see that the response is returned randomly from both VMs.
+2. Try a "force refresh" by pressing <kbd>Ctrl+F5</kbd> a few times to see that the response is returned randomly from both VMs.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**. Then select **webVM1**, and select **Stop**.
+3. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**. Then select **webVM1**, and select **Stop**.
 
-1. Return to the tab that shows the website and force a refresh of the webpage. All requests are returned from **webVM2**.
+4. Return to the tab that shows the website and force a refresh of the webpage. All requests are returned from **webVM2**.

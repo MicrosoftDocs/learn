@@ -8,7 +8,7 @@ Azure Pipelines provides several different types of agents.
 
 | Agent type | Description | Availability |
 | --- | --- | --- |
-|Microsoft-hosted agents | Agents hosted and managed by Microsoft | Azure DevOps Services |
+| Microsoft-hosted agents | Agents hosted and managed by Microsoft | Azure DevOps Services |
 | Self-hosted agents | Agents that you configure and manage, hosted on your VMs | Azure DevOps Services, Azure DevOps Server, TFS |
 | Azure Virtual Machine Scale Set agents | A form of self-hosted agents, using Azure Virtual Machine Scale Sets, that can be autoscaled to meet demands | Azure DevOps Services |
 
@@ -90,9 +90,9 @@ Sign in to DevOps with the user account you plan to use in your Azure DevOps org
 
 ![Screenshot showing user settings selected in an Azure DevOps organization.](../media/windows-self-hosted-agent-select-personal-access-tokens.png)
 
-To create a personal access token, select **+ New Token**. At the bottom of the Create a new personal access token window, to see the complete list of scopes, select **Show all scopes**. Select the **Agent Pools (read, manage)** and **Deployment group (read, manage)** scopes. Ensure that all the other boxes are cleared. Copy the token. 
+To create a personal access token, select **+ New Token**. At the bottom of the Create a new personal access token window, to see the complete list of scopes, select **Show all scopes**. Select the **Agent Pools (read, manage)** and **Deployment group (read, manage)** scopes. Ensure that all the other boxes are cleared. Copy the token.
 
-> [!NOTE] 
+> [!NOTE]
 > You use this token when you configure the agent.
 
 The following information describes how to download and configure the agent.
