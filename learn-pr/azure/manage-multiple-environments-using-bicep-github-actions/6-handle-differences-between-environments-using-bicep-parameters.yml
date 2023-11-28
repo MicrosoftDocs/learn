@@ -6,8 +6,8 @@ metadata:
   title: Handle differences between environments by using Bicep parameters
   description: Learn about how to pass parameters into Bicep deployments from a workflow.
   ms.date: 02/24/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep
