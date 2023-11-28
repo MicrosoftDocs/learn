@@ -86,7 +86,7 @@ A development container is a configured environment, which includes all tools an
 A development container can run:
 
 * **Remotely**: In the browser, you can use GitHub Codespaces and Visual Studio Code for the Web, using free compute time available with your GitHub account.
-*  **Locally**: On your local computer, you can use Visual Studio Code [] with a configured container environment or you can start with the default environment. Docker Community edition is required.
+*  **Locally**: On your local computer, you can use Visual Studio Code with a configured container environment or you can start with the default environment. Docker Community edition is required.
 
 ### Remote development
 

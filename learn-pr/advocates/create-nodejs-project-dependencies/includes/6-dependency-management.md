@@ -112,7 +112,11 @@ found 3 vulnerabilities (1 low, 2 high)
   run `npm audit fix` to fix them, or `npm audit` for details
 ```
 
-The log lists vulnerabilities with severity levels of high and low. If you have any high-level vulnerabilities, you should update the package. To fix an issue and apply an update, you can run the `npm audit` command, as indicated in the log response. This command lists each vulnerability. A response from `npm audit` might look like this example:
+The log lists vulnerabilities with severity levels of high and low. If you have any high-level vulnerabilities, you should update the package. To fix an issue and apply an update, you can run the `npm audit` command, as indicated in the log response. This command lists each vulnerability. 
+
+The `npm audit` command sends information about the dependencies specified in your package to the default registry and requests a report on any known vulnerabilities. It examines direct dependencies, devDependencies, bundledDependencies and optionalDependenciesbut does not assess peerDependencies.
+
+A response from `npm audit` might look like this example:
 
 ```output
 # Run  npm install lodash@4.17.15  to resolve 3 vulnerabilities

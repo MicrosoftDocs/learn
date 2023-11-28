@@ -43,11 +43,11 @@ You're given some code that parses an address from a string. Your task should be
    npm install jest --save-dev
    ```
 
-1. After the Jest library installs, open the package.json file and find the `devDependencies` section. You should see an entry that looks like this example:
+1. After the Jest library installs, open the package.json file and find the `devDependencies` section. You should see an entry that looks like this example where the value for the `jest` property is a semantic version number:
 
    ```json
    "devDependencies": {
-      "jest": "^29.6.3"
+      "jest": "<number.number.number>"
     }
    ```
 
@@ -70,7 +70,7 @@ You're given some code that parses an address from a string. Your task should be
     > [!NOTE]
     > Make sure that you use double underscores when you create the *\_\_tests\_\_* folder.
 
-1. In the \_\_tests\_\_ folder, create a file named **address-parser.js**, and then add the following content to the file:
+1. In the \_\_tests\_\_ folder, create a file named **address-parser.spec.js**, and then add the following content to the file:
 
    ```javascript
    const { parse } = require("../address-parser");
