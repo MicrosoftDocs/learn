@@ -37,7 +37,7 @@ quiz:
     - content: "Backup Reports"
       isCorrect: true
       explanation: "Correct"  
-  - content: "To configure Backup Reports, you will need to configure:"
+  - content: "To configure Backup Reports, you'll need to configure:"
     choices:
     - content: "Log Analytics workspace and diagnostics setting"
       isCorrect: true
@@ -59,7 +59,7 @@ quiz:
     - content: "Built-in Azure Monitor alerts for Azure Backup"
       isCorrect: true
       explanation: "Correct"
-  - content: "To configure email notification for built-in Azure Monitor alerts, you will need to create:"
+  - content: "To configure email notification for built-in Azure Monitor alerts, you'll need to create:"
     choices:
     - content: "Alert processing rule and action group"
       isCorrect: true
