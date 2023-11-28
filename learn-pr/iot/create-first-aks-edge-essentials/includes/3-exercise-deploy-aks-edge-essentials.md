@@ -222,4 +222,4 @@ The following commands are executed in the PowerShell command line of the VM.
     kube-system   kube-vip-ds-rjl8v                  1/1     Running   2 (43m ago)   46m   192.168.0.2   myvm-ledge   <none>           <none>
     ``````
 
-    :::image type="content" source="../media/2-aks-ee-deploysuccess-inline.png" alt-text="Screenshot of Windows VM with powershell commands output demonstrating a successful deployment of AKS Edge Essentials." lightbox="../media/2-aks-ee-deploysuccess-expanded.png":::
+    :::image type="content" source="../media/3-aks-ee-deploysuccess-inline.png" alt-text="Screenshot of Windows VM with powershell commands output demonstrating a successful deployment of AKS Edge Essentials." lightbox="../media/3-aks-ee-deploysuccess-expanded.png":::

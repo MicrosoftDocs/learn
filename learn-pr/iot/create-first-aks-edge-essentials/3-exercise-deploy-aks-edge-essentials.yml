@@ -12,4 +12,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-exercise-deploy-aks-edge-essentials.md)]
+  [!include[](includes/3-exercise-deploy-aks-edge-essentials.md)]

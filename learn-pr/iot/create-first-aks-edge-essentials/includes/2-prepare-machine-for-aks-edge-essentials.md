@@ -1,104 +1,44 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+To maintain a small resource footprint with the most focused possible experience, AKS Edge Essentials is designed for running predefined AKS configurations in production.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+In the industrial factory scenario, we will use AKS Edge Essentials to automate and run containerized applications, on multiple specialized devices.
 
-    Heading: none
+Here, you will learn how to prepare your machine and define the amount of CPU and memory resources needed, to ensure that applications running on the host have the required resources.
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+## Hardware requirements
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+| Specs | Local cluster | Arc-connected cluster and GitOps|
+| ---------- | --------- |--------- |
+| Host OS | Windows 10/11 (IoT Enterprise / Enterprise / Pro) or Windows (Server / Server IoT) 2019/2022||
+| Total physical memory | 4 GB with at least 2.5 GB free | 8 GB with at least 4.5 GB free  |
+| CPU | 2 vCPUs, clock speed at least 1.8 GHz |4 vCPUs, clock speed at least 1.8 GHz|
+| Disk space | At least 14 GB free |At least 14 GB free |
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+For developer and training use cases, you can run AKS Edge Essentials in an Azure Virtual Machine (VM). You can create a Windows VM with either Windows 10/11 IoT Enterprise/Enterprise/Pro or (Server / Server IoT) 2019/2022, on a VM image that supports nested virtualization.
 
-    Goal: Describe the part of the scenario covered in this exercise
+In our example scenario, we will use a Windows 11 Enterprise [Dsv3-series](/azure/virtual-machines/dv3-dsv3-series) Azure VM.
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+## Clusters and nodes
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+AKS Edge Essentials is intended for static, pre-defined configurations and doesn't enable dynamic VM creation/deletion or cluster lifecycle management. Each machine in an AKS Edge Essentials cluster can only have one Linux and/or Windows VM. The Linux VM acts as the control node and worker node for Linux workloads in the Kubernetes cluster. Each machine with AKS Edge Essentials has a VM with restricted RAM, storage, and physical CPU cores according to a static allocation assigned at install time. This static allocation enables you to control how resources are used and ensures that applications running on the host have the required resources. AKS Edge Essentials manages the lifecycle, configuration, and updates of the VMs.
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+After you set up your machines, you can deploy AKS Edge Essentials in the following configurations:
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+* **Single machine cluster:** Runs Kubernetes nodes on a single machine to create a single machine cluster. This deployment uses an internal network switch to enable communication across the nodes. This deployment supports only one Linux node and one Windows node, both running on a single machine.
+* **Scalable cluster:** Lets you create a multi-node Kubernetes cluster that can be scaled across multiple machines. AKS Edge Essentials doesn't offer dynamic creation of virtual machines. If a node VM goes down, you have to recreate it. That said, if you have a scalable cluster with multiple control plane nodes and worker nodes, if a VM goes down, Kubernetes moves workloads to an active node.
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+:::image type="content" source="../media/2-aks-edge-deployment-options-inline.png" alt-text="Diagram showing AKS Edge Essentials deployment scenarios." lightbox="../media/2-aks-edge-deployment-options-expanded.png":::
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+In our example scenario, we will use a single machine K3S cluster with one Linux node and one Windows node.
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+## Deployment schema for a single machine K3S cluster with one Linux node and one Windows node
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+The AKS Edge Essentials deployment schema provides a flexible and scalable way to deploy and manage containerized applications on edge devices. The following table describes some of the values used to deploy AKS Edge Essentials in our example scenario:
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
-
-    Goal: List the steps they'll do to complete the exercise.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
-
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation -------------------------------------------------------------------------------------------
-
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. Feedback like this is critical for learning.
-
-    Structure:
-        1. A heading of "## Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
-
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+| Attribute | Value type      |  Description |  Value |
+| :------------ |:-----------|:------------------|:--------|
+| `DeploymentType` |[`SingleMachineCluster` / `ScalableCluster`]| Specifies deployment type. In `ScalableCluster`, you can add more machines to the cluster infrastructure. | `SingleMachineCluster` |
+| `Machines[].LinuxNode.CpuCount` | [`2-x`] | Number of CPU cores reserved for VM/VMs. | `2` |
+| `Machines[].LinuxNode.MemoryInMB` | [`2048-2x`] | RAM in MBs reserved for VM/VMs. | `2048` |
+| `Machines[].LinuxNode.DataSizeInGB` | Number | Size of the data partition. For large applications, we recommend increasing this number. Only for Linux VMs. | `20` |
+| `Machines[].WindowsNode.CpuCount` | [`2-x`] | Number of CPU cores reserved for VM/VMs. | `2` |
+| `Machines[].WindowsNode.MemoryInMB` | [`2048-2x`] | RAM in MBs reserved for VM/VMs (multiples of 2). | `2048` |
