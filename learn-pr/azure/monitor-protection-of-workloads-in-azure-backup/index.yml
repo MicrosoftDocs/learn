@@ -41,15 +41,15 @@ products:
 - azure
 - azure-migrate
 subjects:
-- migration
+- monitor
 units:
-- learn.azure.monitor-protection-of-workloads-in-azure-backup.1-introduction
-- learn.azure.monitor-protection-of-workloads-in-azure-backup.2-monitor-jobs-and-backup-instances-in-backup-center
-- learn.azure.monitor-protection-of-workloads-in-azure-backup.3-built-in-azure-monitor-alerts-for-azure-backup
-- learn.azure.monitor-protection-of-workloads-in-azure-backup.4-built-in-metrics-via-azure-monitor
-- learn.azure.monitor-protection-of-workloads-in-azure-backup.5-configure-monitor-alerts
-- learn.azure.monitor-protection-of-workloads-in-azure-backup.6-create-alerts-using-log-analytics
-- learn.azure.monitor-protection-of-workloads-in-azure-backup.7-knowledge-check
-- learn.azure.monitor-protection-of-workloads-in-azure-backup.8-summary
+- learn.azure.monitor-protection-of-workloads-in-azure-backup.introduction
+- learn.azure.monitor-protection-of-workloads-in-azure-backup.monitor-jobs-and-backup-instances-in-backup-center
+- learn.azure.monitor-protection-of-workloads-in-azure-backup.built-in-azure-monitor-alerts-for-azure-backup
+- learn.azure.monitor-protection-of-workloads-in-azure-backup.built-in-metrics-via-azure-monitor
+- learn.azure.monitor-protection-of-workloads-in-azure-backup.configure-monitor-alerts
+- learn.azure.monitor-protection-of-workloads-in-azure-backup.create-alerts-using-log-analytics
+- learn.azure.monitor-protection-of-workloads-in-azure-backup.knowledge-check
+- learn.azure.monitor-protection-of-workloads-in-azure-backup.summary
 badge:
   uid: learn.azure.monitor-protection-of-workloads-in-azure-backup.badge
