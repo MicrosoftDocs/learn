@@ -5,8 +5,8 @@ metadata:
   title: Build your first Bicep template
   description: Learn how to create Bicep templates and create reusable infrastructure as code.
   ms.date: 09/28/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: interactive-tutorial
   ms.devlang: bicep
 title: Build your first Bicep template

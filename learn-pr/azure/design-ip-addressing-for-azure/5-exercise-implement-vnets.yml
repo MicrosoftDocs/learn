@@ -3,9 +3,9 @@ uid: learn.design-ip-addressing-for-azure.5-exercise-implement-vnets
 metadata:
   title: Exercise - Design and implement IP addressing for Azure virtual networks
   description: Exercise - Design and implement IP addressing for Azure virtual networks
-  ms.date: 03/01/2022
-  author: asudbring
-  ms.author: allensu
+  ms.date: 11/28/2023
+  author: mbender-ms
+  ms.author: mbender
   ms.topic: unit
   ms.custom: devx-track-azurecli
 title: Exercise - Design and implement IP addressing for Azure virtual networks
