@@ -18,7 +18,7 @@ To manage monitoring settings for a Backup vault, follow these steps:
 
 1. We also recommend you to select the checkbox **Use only Azure Monitor alerts**.
 
-   By selecting this option, you're consenting to receive backup alerts only via Azure Monitor and you'll stop receiving alerts from the older classic alerts solution. [Review the key differences between classic alerts and built-in Azure Monitor alerts](./move-to-azure-monitor-alerts.md).
+   By selecting this option, you're consenting to receive backup alerts only via Azure Monitor and you'll stop receiving alerts from the older classic alerts solution. Review the key differences between classic alerts and built-in Azure Monitor alerts.
 
 	:::image type="content" source="../media/recovery-services-vault-opt-out-classic-alerts.png" alt-text="Screenshot showing the option to enable receiving backup alerts.":::
 
