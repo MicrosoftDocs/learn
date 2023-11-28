@@ -4,7 +4,7 @@ The Backup center is a single pane of glass that helps you to monitor the jobs a
 
 By using the Backup center, you can view detailed information on all the jobs that were created in your backup estate and take appropriate action for the failing jobs. You can select an item in the grid to view more details about a specific job. Right-click an item to go to the resource to take the necessary actions.
 
-:::image type="content" source="../media/backup-center-jobs-expanded.png" alt-text="Screenshot shows how to vier details of backup jobs.":::
+:::image type="content" source="../media/backup-center-jobs.png" alt-text="Screenshot shows how to vier details of backup jobs.":::
 
 By using the Backup jobs tab, you can view jobs up to the last seven days. To view older jobs, use Backup Reports.
 
@@ -34,7 +34,7 @@ The Backup center allows easy search and discoverability of backup instances acr
 
 2. Right-click *any  item in the grid* to perform actions on the given backup instance, such as navigating to the resource, trigger on-demand backups and restores, or stop backup.
 
-:::image type="content" source="../media/backup-center-instances.png" alt-text="Screenshot shows the Backup center instances."::: 
+:::image type="image" source="../media/backup-center-instances.png" alt-text="Screenshot shows the Backup center instances.":::
 
 
 
