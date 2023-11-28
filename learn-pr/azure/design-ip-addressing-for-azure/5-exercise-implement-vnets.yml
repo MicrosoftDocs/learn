@@ -6,9 +6,8 @@ metadata:
   ms.date: 03/01/2022
   author: asudbring
   ms.author: allensu
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom: devx-track-azurecli
-  ms.prod: learning-azure
 title: Exercise - Design and implement IP addressing for Azure virtual networks
 durationInMinutes: 10
 interactive: bash
