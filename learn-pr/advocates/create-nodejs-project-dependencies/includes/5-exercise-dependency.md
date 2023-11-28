@@ -27,10 +27,10 @@ You're given some code that parses an address from a string. Your task should be
 1. Open the **address-parser.js** file. It should look like this file:
 
    ```javascript
-   exports.parse = function parseOrder(order) {
-     const match = order.match(/order:\s(?<order>\w+\s\w+).*address:\s(?<address>\w+\s\w+\s\w+).*payment info:\s(?<payment>\w+)/)
-   return match.groups;
-   }
+    exports.addressParser = function parseOrder(order) {
+      const match = order.match(/order:\s(?<order>\w+\s\w+).*address:\s(?<address>\w+\s\w+\s\w+).*payment info:\s(?<payment>\w+)/)
+      return match.groups;
+    }
    ```
 
    This function takes a string and parses out information about what a customer orders, where it should be delivered, and how it will be paid for. We'll add Jest and write some tests for the function.
@@ -73,21 +73,18 @@ You're given some code that parses an address from a string. Your task should be
 1. In the \_\_tests\_\_ folder, create a file named **address-parser.spec.js**, and then add the following content to the file:
 
    ```javascript
-   const { parse } = require("../address-parser");
-
-   describe('Address parser', () => {
-     test('should parse correctly', () => {
-       expect(
-         parse(
-            "I want to to order: 3 books to address: 112 street city here is my payment info: cardnumber"
-         )
-         ).toEqual({
-           order: "3 books",
-           address: "112 street city",
-           payment: "cardnumber",
-         });
-     })
-   })
+    const { addressParser } = require('../address-parser');
+    
+    describe('Address Parser', () => {
+        test('should parse correctly', () => {
+            expect(addressParser("I want to to order: 3 books to address: 112 street city here is my payment info: cardnumber")
+            ).toEqual({
+                order: "3 books",
+                address: "112 street city",
+                payment: "cardnumber",
+            });
+        });
+    });
    ```
 
    Save your changes and close the file.

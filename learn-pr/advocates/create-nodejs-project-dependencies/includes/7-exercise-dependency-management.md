@@ -27,24 +27,24 @@ Tailwind Traders has asked you to work on an app that has some outdated dependen
 
 1. Open the index.js file:
 
-   ```javascript
-   const fetch = require('node-fetch')
-   const _ = require('lodash');
-   const path = require('path');
-   const fs = require('fs');
-
-   async function run() {
-     const response = await fetch("https://dev.to/api/articles?state=rising");
-     const json = await response.json();
-     const sorted = _.sortBy(json, ["public_reactions_count"], ['desc']);
-     const top3 = _.take(sorted, 3);
-
-     const filePrefix = new Date().toISOString().split('T')[0];
-     fs.writeFileSync(path.join(__dirname, `${filePrefix}-feed.json`), JSON.stringify(top3, null, 2));
+    ```javascript
+    const fetch = require('node-fetch')
+    const _ = require('lodash');
+    const path = require('path');
+    const fs = require('fs');
+    
+    async function run() {
+      const response = await fetch("https://dev.to/api/articles?state=rising");
+      const json = await response.json();
+      const sorted = _.sortBy(json, ["public_reactions_count"], ['desc']);
+      const top3 = _.take(sorted, 3);
+    
+      const filePrefix = new Date().toISOString().split('T')[0];
+      fs.writeFileSync(path.join(__dirname, `${filePrefix}-feed.json`), JSON.stringify(top3, null, 2));
     }
-
+    
     run();
-   ```
+    ```
 
    This code pulls data from a REST API by using the `node-fetch` library. It processes the response by sorting it and takes the top three results by using the `lodash` library. The result is stored in a file.
 
