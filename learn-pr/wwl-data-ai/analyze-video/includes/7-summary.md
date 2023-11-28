@@ -6,4 +6,4 @@ Now that you've completed this module, you can:
 - Extract custom insights.
 - Use Azure Video Indexer widgets and APIs.
 
-To find out more about the Azure Video Indexer service, see the [Azure Video Indexer documentation](/azure/azure-video-analyzer/video-analyzer-for-media-docs/).
+To find out more about the Azure Video Indexer service, see the [Azure Video Indexer documentation](/azure/azure-video-indexer/).

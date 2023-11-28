@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/25/2023
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: learning-azure
 title: Configure network security
 summary: Use Azure network capabilities to secure your network and applications from external and internal attacks.
