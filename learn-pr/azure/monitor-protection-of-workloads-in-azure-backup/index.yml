@@ -16,7 +16,7 @@ abstract: |
   - Configure alerts for any failed backup operations
   - Perform historical reporting of your backup data based on log data.
 prerequisites: |
-  - Familiarity with the Azure Backup service. Familiarity with...
+  - Familiarity with the Azure Backup service.
   - Must have Read permission on the vaults that are used to back up data to view out-of-the-box Backup center views, such as backup jobs and backup instances.
   - Must have Monitoring Contributor and Backup Contributor permissions on the required subscription to configure alerts and reports.
 iconUrl: /training/achievements/accelerate-migration-journey.svg
