@@ -26,7 +26,7 @@ If necessary, you can edit the Kusto query. Choose a threshold, period, and freq
 
 Use an action group to specify a notification channel. To see the available notification mechanisms, under **Action groups**, select **Create New**.
 
-:::image type="content" source="../media/la-azure-backup-action-group.png" alt-text="Screenshot shows the available notification mechanisms in the "Add action group" window.":::
+:::image type="content" source="../media/la-azure-backup-action-group.png" alt-text="Screenshot shows the available notification mechanisms in the Add action group window.":::
 
 :::image type="content" source="../media/create-action-group.png" alt-text="Screenshot shows the creation of action group." lightbox="../media/create-action-group.png":::
 
