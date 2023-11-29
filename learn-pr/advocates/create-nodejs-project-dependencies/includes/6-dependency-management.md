@@ -13,23 +13,14 @@ Before updating a library, consider:
 
 Semantic versioning is a key standard in software development. It's essential for both publishing and using npm packages. It helps manage update risks by indicating the type of changes in a new version. A version number has specific sections to reflect these changes:
 
-|Type              | Syntax position  |     What happens               | Update Approach |
-|------------------|------------------|--------------------------------|-----------------|
-|**Major** version     | 1st number       | 1.0.0 changes to **2**.0.0 -  A change here means breaking changes. You might need to adjust your code.| I'm OK with updating to the latest major version as soon as it's out. I accept the fact that I might need to change code on my end. |
-|**Minor** version     | 2nd number       | 1.2.9 changes to 1.**3**.0 - A change here means new features. Your code should still work. Updates are generally safe.| I'm OK with a new feature being added. I'm not OK with code that breaks. |
-|**Patch** version     | 3rd number       | 1.0.7 changes to 1.0.**8** - A change here means bug fixes. Updates should be safe.| I'm OK with bug fixes. |
-
+| Version Type | Position | Syntax | What Happens | Update Approach |
+|--------------|----------|--------|--------------|-----------------|
+| **Major**    | 1st      | x.0.0 or * | Changes from 1.0.0 to **2**.0.0 indicate breaking changes. Code adjustments may be necessary. | Comfortable with immediate updates to the latest major version, acknowledging potential code changes. |
+| **Minor**    | 2nd      | 1.x.1 or ^ | Changes from 1.2.9 to 1.**3**.0 introduce new features. Existing code should still function. Updates are typically safe. | Open to new features, but not breaking changes. |
+| **Patch**    | 3rd      | 1.1.x or ~ | Changes from 1.0.7 to 1.0.**8** mean bug fixes. Updates should be safe. | Accepting of bug fixes. |
 For small Node.js projects, you can freely update to the latest versions. But for larger projects, updates need careful thought and aren't always automatic. Generally, updating smaller dependencies, with fewer of their own dependencies, makes the process easier.
 
 Before you update one or more dependencies, you should configure your `package.json` file so you get predictable behavior when you run the `npm update <name of dependency>` command. Node.js uses set of symbols that allows you to define how you want your packages to update.
-
-|Pattern                    | Update level                          | 
-|---------------------------|---------------------------------------|
-|x.0.0 or *&nbsp;(asterisk) | Update to the highest **major** version.  |
-|1.x.1 or ^&nbsp;(insert)   | Update to only the **minor** version.     |
-|1.1.x or ~&nbsp;(tilde)    | Update to the latest **patch** version.<sup>1</sup>  |
-
-Use the pattern "~1.0.0" to update only the patch version. This pattern causes an update to the value "equal to or greater than in the same range."
 
 ## Update a package with npm CLI
 
