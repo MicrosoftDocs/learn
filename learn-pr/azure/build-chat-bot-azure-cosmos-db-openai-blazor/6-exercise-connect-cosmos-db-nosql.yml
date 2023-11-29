@@ -11,9 +11,8 @@ metadata:
   manager: jroth
   ms.author: sidandrews
   ms.reviewer: mjbrown
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom: devx-track-dotnet
-  ms.prod: learning-azure
   ms.date: 10/17/2023
 durationInMinutes: 10
 content: |
