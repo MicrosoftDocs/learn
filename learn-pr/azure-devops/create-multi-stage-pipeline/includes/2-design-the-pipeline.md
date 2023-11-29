@@ -25,7 +25,7 @@ Recall that the team decided on these five tasks for their sprint:
 - Automate performance tests.
 - Improve release cadence.
 
-The team meets to talk about the first task, *Create a multistage pipeline*. After the team defines the pipeline, the team can move from its basic proof of concept to a release pipeline that includes additional stages, quality checks, and approvals.
+The team meets to talk about the first task, *Create a multistage pipeline*. After the team defines the pipeline, it can move from its basic proof of concept to a release pipeline that includes more stages, quality checks, and approvals.
 
 Amita and Tim are watching Andy and Mara demonstrate the release pipeline a second time. They see that the artifact is built and installed on App Service.
 
@@ -235,13 +235,13 @@ This stage, `Test`, runs only when the previous stage succeeds and the built-in 
 
 You see a more complete example later in this module.
 
-**Amita:** I like this. I don't even have to pick up the release manually and install it. It will be ready for me.
+**Amita:** I like this. I don't even have to pick up the release manually and install it. It's ready for me.
 
 **Andy:** And remember, if we want to automate more later, we can. Nothing's written in stone. The pipeline evolves as we improve and learn.
 
 ## Add the Staging stage
 
-**Tim:** It's my turn. I need a stage to run additional stress tests. We also need a stage where we can demo to management to get their approval. For now, we can combine those two needs into a stage that we can call *Staging*.
+**Tim:** It's my turn. I need a stage to run more stress tests. We also need a stage where we can demo to management to get their approval. For now, we can combine those two needs into a stage that we can call *Staging*.
 
 **Andy:** Well said, Tim. Having a *staging*, or preproduction environment is important. This staging environment is often the last stop before a feature or bug fix reaches our users.
 

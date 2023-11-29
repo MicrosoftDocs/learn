@@ -58,4 +58,4 @@ Andy and Mara add the *Test* stage to the pipeline. They show the results to Ami
 
 **Amita:** I like that changes are built and deployed so that I can test them each morning. But I don't see how I can control when changes arrive at *Staging*.
 
-**Mara:** Yes, deploying through automation saves a lot of time. Remember that we included only the scheduled trigger. We'll add a release approval for you when we set up the *Staging* environment for Tim. That way, changes will move to *Staging* only when you're ready.
+**Mara:** Yes, deploying through automation saves lots of time. Remember that we included only the scheduled trigger. Let's add a release approval for you when we set up the *Staging* environment for Tim. That way, changes move to *Staging* only when you're ready.

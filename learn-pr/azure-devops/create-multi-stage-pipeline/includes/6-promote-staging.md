@@ -8,7 +8,7 @@ In this part, you'll:
 
 ## Create the staging environment
 
-Here, you create an environment in Azure Pipelines for *Staging*. For learning purposes, you assign yourself as the approver. In practice, you would assign the users who are required to sign off on changes before those changes move to the next stage. For the Tailspin team, Amita approves changes so that they can be promoted from *Test* to *Staging*.
+Here, you create an environment in Azure Pipelines for *Staging*. For learning purposes, you assign yourself as the approver. In practice, you would assign the users who are required to approve changes before those changes move to the next stage. For the Tailspin team, Amita approves changes so that they can be promoted from *Test* to *Staging*.
 
 Earlier in this module, you specified `environment` settings for both *Dev* and *Test* stages. Here's an example for the *Dev* stage.
 
@@ -91,6 +91,6 @@ The Tailspin team gathers to discuss their progress. Amita approves changes in t
 
 **Tim:** To tell you the truth, at first I was a little nervous about automated release pipelines. But I really like this now that I see it working. Each stage can have its own environment, associated tests, and approvers. The pipeline automates many things that we had to do manually. But we still have control where we need it.
 
-**Amita:** I could imagine us doing something similar to promote changes from *Staging* to *Production*. Speaking of which, when will we add a **production** environment?
+**Amita:** I could imagine us doing something similar to promote changes from *Staging* to *Production*. Speaking of...when do we add a **production** environment?
 
-**Andy:** We'll add that shortly. I think we still need to fill in a few pieces here first.
+**Andy:** Shortly. I think we still need to fill in a few pieces here first before we add that.
