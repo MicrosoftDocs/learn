@@ -14,7 +14,7 @@ First, try a query that finds twins based on their model. Say that you want to s
 
 From your Postman collections, start by opening the request template at **Data plane** > **query** > **POST Query Query Twins**.
 
-In the **Params** tab, set the **api-version** to *2023-10-31*. In the **Headers** tab, uncheck the **max-items-per-page**, **traceparent**, and **tracestate** options.
+In the **Params** tab, set the **api-version** value to *2023-10-31*. In the **Headers** tab, uncheck the **max-items-per-page**, **traceparent**, and **tracestate** options.
 
 In the **Body** tab, replace the contents with the following information. This query returns all twins that have a model of *dtmi:example:grid:transmission:powerLine;1*.
 

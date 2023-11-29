@@ -8,6 +8,6 @@ metadata:
   author: baanders
   ms.author: baanders
   ms.topic: unit
-durationInMinutes: 15
+durationInMinutes: 20
 content: |
   [!include[](includes/4-update-graph-elements.md)]
