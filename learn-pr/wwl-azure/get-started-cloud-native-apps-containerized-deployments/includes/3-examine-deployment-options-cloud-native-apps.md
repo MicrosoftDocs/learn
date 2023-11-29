@@ -1,4 +1,4 @@
-Teams that want to build and deploy cloud-native apps on Azure have several options for hosting their apps.
+Businesses that want to build and deploy cloud-native apps on Azure have several options for hosting their apps.
 
 The following sections examine the host platforms for cloud-native apps on Azure. The service descriptions enable you to compare Azure Container Apps with the other container options on Azure.
 
@@ -28,11 +28,11 @@ Azure Kubernetes Service (AKS) provides a fully managed Kubernetes option in Azu
 
 ## Azure Functions
 
-Azure Functions is a serverless Functions-as-a-Service (FaaS) solution. It's optimized for running event-driven applications using the functions programming model. It shares many characteristics with Azure Container Apps around scale and integration with events, but optimized for ephemeral functions deployed as either code or containers. The Azure Functions programming model provides productivity benefits for teams looking to trigger the execution of your functions on events and bind to other data sources. When you're building FaaS-style functions, Azure Functions is the ideal option. The Azure Functions programming model is available as a base container image, making it portable to other container based compute platforms allowing teams to reuse code as environment requirements change.
+Azure Functions is a serverless Functions-as-a-Service (FaaS) solution. It's optimized for running event-driven applications using the functions programming model. It shares many characteristics with Azure Container Apps around scale and integration with events, but optimized for ephemeral functions deployed as either code or containers. The Azure Functions programming model enhances team productivity by enabling the triggering of functions based on events and establishing bindings to different data sources. When you're building FaaS-style functions, Azure Functions is the ideal option. The Azure Functions programming model is available as a base container image, making it portable to other container based compute platforms allowing teams to reuse code as environment requirements change.
 
 ## Azure Spring Apps
 
-Azure Spring Apps is a fully managed service for Spring developers. If you want to run Spring Boot, Spring Cloud or any other Spring applications on Azure, Azure Spring Apps is an ideal option. The service manages the infrastructure of Spring applications so developers can focus on their code. Azure Spring Apps provides lifecycle management using comprehensive monitoring and diagnostics, configuration management, service discovery, CI/CD integration, blue-green deployments, and more.
+Azure Spring Apps is a fully managed service for Java developers using the Spring Framework. If you want to run Spring Boot, Spring Cloud or any other Spring applications on Azure, Azure Spring Apps is an ideal option. The service manages the infrastructure of Spring applications so developers can focus on their code. Azure Spring Apps provides lifecycle management using comprehensive monitoring and diagnostics, configuration management, service discovery, CI/CD integration, blue-green deployments, and more.
 
 ## Azure Red Hat OpenShift
 
