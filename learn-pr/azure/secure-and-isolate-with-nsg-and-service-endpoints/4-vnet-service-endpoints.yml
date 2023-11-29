@@ -6,8 +6,7 @@ metadata:
   ms.date: 09/18/2023
   author: asudbring
   ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Secure network access to PaaS services with virtual network service endpoints
 durationInMinutes: 5
 content: |

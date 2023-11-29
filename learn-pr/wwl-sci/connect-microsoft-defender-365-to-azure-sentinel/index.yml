@@ -28,7 +28,7 @@ products:
 - microsoft-sentinel
 - defender-for-cloud
 - defender-for-iot
-- m365-defender
+- defender-xdr
 subjects:
 - threat-protection
 - cloud-security
