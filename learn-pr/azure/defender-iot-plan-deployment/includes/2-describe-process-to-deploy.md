@@ -1,9 +1,9 @@
 
- To implement Defender for IoT for OT monitoring in your car manufacturer, across global locations, requires planning. You'll want to consider what traffic to monitor across various systems and sites in your organization. Sites could include offices responsible for design and plants with pneumatic  and packaging systems. Also, you'll want to know the teams and roles to involve in the different phases of deployment.
+ To deploy Defender for IoT for OT monitoring in your car manufacturer across global locations requires planning. You'll want to consider what traffic to monitor across various systems and sites in your organization. Sites could include offices responsible for design and plants with pneumatic  and packaging systems. Also, you'll want to know the teams and roles to involve in the different phases of deployment. This unit describes the process to deploy Defender for IoT.
 
 ## Defender for IoT for OT deployment path
 
-The image depicts an OT monitoring deployment path, with the team responsible for each phase that your organization could plan:
+The image depicts an OT monitoring deployment path, with the team responsible for each phase:
 :::image type="content" source="../media/2-ot-deploy.png" alt-text="Diagram of an OT deployment path." border="false":::
 
 The phases include:
@@ -13,7 +13,8 @@ The phases include:
 - Site networking setup, done by your connectivity teams
 - Deploy sensors, done by your deployment teams
 - Calibrate and fine-tune, done by your deployment teams
-- Baseline learning ends with a set of learned network traffic, and operation mode begins
+
+At the end of your deployment, baseline learning ends with a set of learned network traffic, and operation mode begins.
 
 ## Plan and prepare
 
@@ -21,29 +22,44 @@ The phases include:
 
 ### OT site deployment planning
 
-You and your architecture team (such as the network architect and OT engineers) should prepare to deploy Defender for IoT for OT monitoring across your organization. Recall that you're planning to deploy sensors across many distinct types of locations globally, including offices and distinct manufacturing systems. Planning includes thinking about:
+You and your architecture team (such as the network architect and OT engineers) should prepare to deploy Defender for IoT across your organization. Recall that you're planning to deploy sensors across many distinct types of locations globally, including offices and distinct manufacturing systems. Planning includes thinking about:
 
-- **Sites and zones**: How can you segment the networks you want to monitor using sites and zones representing locations in your auto manufacturing organization's global locations?
-- **Sensor management**: Does it make the most sense for you to manage your sensors as cloud-connected sensors, air-gapped locally managed sensors, or as a hybrid system? The example in this learn module assumes a cloud-connected sensor system. In a cloud-connected system, think about the connection methods you need (such as a direct connection or via a proxy).
+- **Sites and zones**: How can you segment the networks you want to monitor across your auto manufacturing organization's global locations into different geographical and logical areas?
+
+- **Sensor management**: The example in this learn module assumes a cloud-connected sensor system. What sensor connection methods do you need (such as a direct connection or via a proxy)?
+
 - **Users and roles**: Given the distinct locations and sensor connections, what types of users and user roles are needed on each sensor?
 
 ### OT site deployment preparation
 
-While planning for your organization, prepare the following items:
+While planning for your organization, identify and make notes about the following items:
 
-- **A network diagram**: What are your overall monitoring goals for your manufacturing organization? Where should you connect? What devices are there and how do they communicate? What are the security and operational risks and the most interesting traffic for those risks?
+- **A network diagram**, including:
+    - Your overall monitoring goals for your manufacturing organization.
+    - What areas of your network to connect.
+    - What devices there are and how they communicate.
+    - Your security and operational risks, and the most interesting traffic for those risks.
 
     Create a full list of monitored devices, subnets, switches, vendors, and protocols for verification.
 
-- **A list of sensors**: What sensors will your organization need? What sites and zones would be appropriate to assign?
+- **A list of sensors**, including:
+    - The sensors your organization needs.
+    - How you might segment your network into different geographical and logical areas.
 
     Based on the list of traffic, monitored devices, and subnets, make a list of the OT sensors needed and where to place them in your network.
 
-- **Traffic mirroring methods**: What and where are all the switch port types used in your organization and what connector media do you need? How should you deal with unmanaged switches? Is there rack space for a collector? Do you use broadcast or multicast messaging? Which traffic mirroring method best fits your switch port types?
+- **Traffic mirroring methods**, including:
+    - What and where your organization's switch port types are.
+    - How to manage your unmanaged switches.
+    - Whether you use broadcast or multicast messaging.
+    - The traffic mirroring method that best fits your switch port types.
 
     Choose a traffic mirroring method for each OT sensor, such as a SPAN port or TAP.
 
-- **Appliances**: Given the OT sensors needed, what appliances profiles are needed? What preconfigured appliances and what ancillary hardware do you need? Prepare a deployment workstation and any hardware or virtual machines needed.
+- **Appliances**, including:
+    - Given the OT sensors needed, the profiles needed for your appliances.
+    - The preconfigured appliances and ancillary hardware needed.
+    - The deployment workstation and any hardware or virtual machines for your deployment.
 
     Order any preconfigured appliances and hardware that you intend to use.
 
@@ -51,14 +67,14 @@ While planning for your organization, prepare the following items:
 
 :::image type="content" source="../media/2-onboard-sensors.png" alt-text="Diagram of an onboard sensors path." border="false":::
 
- With your deployment teams, onboard your OT sensors with Defender for IoT on the Azure portal.
+With your deployment teams, onboard your OT sensors with Defender for IoT on the Azure portal.
 
-When onboarding, make sure to:
+In the onboarding phase, make sure to:
 
-- Assign sites and zones based on your sensor plans.
+- Assign sites and zones for different geographic and logical areas based on your sensor plans.
 - Download and save each OT sensor's activation file.
 
-Your onboarding team, which can include IoT and OT engineers, will need appropriate Azure roles, such as Admin or Security Admin, to complete onboarding and management tasks.
+Your onboarding team, which can include IoT and OT engineers, needs appropriate Azure roles, such as Admin or Security Admin, to complete onboarding and management tasks.
 
 ## Site networking setup
 

@@ -1,6 +1,6 @@
 In the previous unit, you identified the types of cloud connection options for an OT network sensor.
 
-Now let's look at the user roles you'll need for your automotive manufacturing environment.
+Now let's look at the user roles you'll need for your automotive manufacturing environment with Defender for IoT.
 
 Microsoft Defender for IoT provides both built-in Azure and on-premises roles for managing user access to Defender for IoT data.
 
@@ -10,11 +10,11 @@ Teams working with the Azure portal must have roles defined in Azure, using Azur
 
 The following built-in Azure roles are available for Defender for IoT:
 
-- **Security Reader**: Can view all resources, such as values for sites, Defender for IoT settings, and Azure workbooks, but can't make any changes. Can download OT sensor and on-premises management console software, endpoint details, and OT threat intelligence packages.
-- **Security Admin/Contributor**: Has all Security Reader permissions and can also update resources. Also they can onboard OT/enterprise IoT sensors, download sensor activation files, recover on-premises management console passwords, and push OT threat intelligence updates.
+- **Security Reader**: Can view all resources, such as values for sites, Defender for IoT settings, and Azure workbooks, but can't make any changes. They can download OT sensor and on-premises management console software, endpoint details, and OT threat intelligence packages.
+- **Security Admin/Contributor**: Has all Security Reader permissions and can also update resources. Also, they can onboard sensors, download sensor activation files, and push OT threat intelligence updates.
 
-    Security admins have extra permissions for enterprise IoT monitoring.
-- **Owner**: Has all Contributor permissions plus can create and manage users.
+    Security admins have extra permissions for enterprise IoT monitoring, which isn't covered in this module.
+- **Owner**: Has all Contributor permissions, plus they can create and manage users.
 
 ## OT sensor roles
 
@@ -22,16 +22,15 @@ Some data and data visualizations are currently available only from the OT senso
 
 The following roles are available on OT network sensors:
 
-- **Read-Only**: Has read access permissions for tasks such as viewing alerts and devices on the device map. Read-Only users can access options displayed in the **Discover** and **Analyze** menus on the sensor.
-- **Security Analyst**: Has all Read-Only permissions and can manage alerts, create alert comments and rules, and manage multiple notifications simultaneously. Security Analysts can access options on the sensor displayed in the **Discover** and **Analyze** menus.
+- **Read-Only**: Has read access permissions for tasks such as viewing alerts and devices on the device map.
+- **Security Analyst**: Has all Read-Only permissions and can manage alerts, create alert comments and rules, and manage multiple notifications simultaneously.
 - **Admin**: Has all Security Analyst permissions and access to all tools. This includes map zoom control, user and certificate creation and management, and more.
 
-The built in support user has access to advanced tools for troubleshooting and setup. The support user is the default admin user used to set up the sensor after installation and to set up other users. When setting up a sensor for the first time, sign in the support user, create an initial user with an admin role, and then create extra users for security analysts and read-only users.
+The built-in *support* user has access to advanced tools for troubleshooting and setup. The *support* user is the default admin user used to set up the sensor after installation and to set up other users. When setting up a sensor for the first time, sign in as the *support* user, create an initial user with an admin role, and then create extra users for security analysts and read-only users.
 
 ### Active Directory integration
 
-Connect your sensors to Active Directory to allow Active Directory users or groups to sign into your sensors. For instance, assign a large number of users to a group with **Read-Only** permissions or create user groups with global access control across Defender for IoT on-premises resources and specific business units, regions, and sites.
-<!-- [https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/manage-users-sensor] -->
+Connect your sensors to Active Directory to allow Active Directory users or groups to sign into your sensors. For instance, assign a large number of users to a group with **Read-Only** permissions or create user groups with global access control across Defender for IoT on-premises resources.
 
 Defender for IoT's integration with Active Directory supports LDAP v3 and the following LDAP-based authentication:
 
