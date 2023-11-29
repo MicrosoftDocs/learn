@@ -3,11 +3,11 @@ uid: learn.introduction-large-language-models.when-to-use-llms
 title: "When to use LLMs?"
 metadata:
   title: "When to use LLMs?"
-  description: TBD
+  description: Learn when to use large language models.
   ms.date: 11/30/2023
   author: softchris
   ms.author: chnoring
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-when-to-use-llms.md)]
+  [!include[](includes/4-when-use-large-language-models.md)]

@@ -1,15 +1,15 @@
-You may have heard about AI models that can analyze text, an image or perhaps audio, all these tasks require dedicated models. With large language models, there’s a new way to approach AI. Here’s an AI model that’s "general purpose" which means it’s good at many things. It has the potential to improve workflows for people in many different professions.
+You may have heard about AI models that can analyze text, an image or perhaps audio, all these tasks require dedicated models. Large language models (LLMs) provide a new way to approach AI. LLMs are "general purpose" AI models, which means they're good at many things. It has the potential to improve workflows for people in many different professions.
 
-Scenario: evaluating large language models for your tech startup
+## Scenario: Evaluating large language models for your tech startup
 
-You’re a student thinking about creating a product that uses AI. You’ve heard about LLMs, large language models and you may even have used something like ChatGPT. To better understand if this type of AI is right for your product, you need to learn more about core concepts and understand what scenarios LLMs are good for.
+You're a student thinking about creating a product that uses AI. You've heard about LLMs and you might have used something like ChatGPT. To better understand if this type of AI is right for your product, you need to learn more about core concepts and understand what scenarios LLMs are good for.
 
 ## What will you learn?
 
 In this module you'll learn to:
 
-- Explain what a large language model (LLM) is.
-- What LLMs can and can’t do.
+- Explain what a large language model is.
+- What LLMs can and can't do.
 - Understand core concepts like prompts, tokens and completions.
 - Distinguish between different models to understand which one to choose for what purpose.
 
