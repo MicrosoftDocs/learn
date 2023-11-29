@@ -18,7 +18,7 @@ In the PITR exercise, you used the Azure CLI to perform a restore for Azure SQL 
 
 KQL is used for many logging activities in Azure. To learn more about the language, see the [KQL documentation](/azure/data-explorer/kusto/query/).
 
-You've also used PowerShell in the availability exercises. To learn more about PowerShell commands that are available for Azure SQL, see [Azure PowerShell samples](//azure/azure-sql/database/powershell-script-content-guide).  
+You've also used PowerShell in the availability exercises. To learn more about PowerShell commands that are available for Azure SQL, see [Azure PowerShell samples](/azure/azure-sql/database/powershell-script-content-guide).  
 
 ### High availability
 
