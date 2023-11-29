@@ -126,7 +126,7 @@ For this unit, the JavaScript source code has been provided for you. Your job is
     - `name`: "tailwind-trader-api"
     - `description`: "HTTP API to manage items from the Tailwind Traders database"
     - `main`: "index.js"
-    - `keywords`: ["api", "database"]
+    - `keywords`: ["API", "database"]
     - `author`: "Sam"
 
    Your package.json file should now look like this code:
