@@ -8,8 +8,7 @@ metadata:
   ms.date: 06/15/2021
   author: DrewLonMS
   ms.author: oliverlondon
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]
