@@ -1,24 +1,26 @@
-In this step, you'll create an interface that will define which behaviors an Ant can perform. You'll also implement the interface in a new class as well as the existing Ant class.
+In this exercise, you'll create an interface that defines which behaviors an Ant can perform. You'll also implement the interface in a new class as well as the existing Ant class.
 
 > [!IMPORTANT]
 > You need to have completed the Setup instructions in the previous unit, Prepare, before you begin this Exercise.
 
 ## Create an interface
 
-1. In the Solution Explorer, right click on the **Game** folder.
+1. In the Explorer, right click on the **Game** folder.
 
-1. In the context menu, select "Add" > "New Item"
+1. In the context menu, select "New File"
 
-1. In the "Add New Item" dialog box, select "Interface" from the list of available templates.
+1. In textbox, enter "IAnt.cs"
 
-1. In the "Name" textbox, enter "IAnt.cs" and click "Add"
-
-    The new interface file should appear in the code editor with a basic template applied. Now you can define which methods and properties the interface should contain.
-
-1. Change the visibility of the interface by updating the interface definition to the following:
+1. Open the new file and type the following code:
 
     ```c#
-    public interface IAnt
+    namespace LangtonsAnt
+    {
+        public interface IAnt
+        {
+
+        }
+    }
     ```
 
 1. In the interface definition, add the following properties:
@@ -37,7 +39,7 @@ In this step, you'll create an interface that will define which behaviors an Ant
     public void RotateCCW();
     ```
 
-1. In the Solution Explorer, open the **Ant.cs** file under the **Game** folder.
+1. In the Explorer, open the **Ant.cs** file under the **Game** folder.
 
 1. Add the following code to make the `Ant` class extend `IAnt`:
 
@@ -86,7 +88,7 @@ In this step, you'll create an interface that will define which behaviors an Ant
 
 ## Check your work
 
-In this task, you'll verify your code is working correctly.
+In this task, you verify that your code is working correctly.
 
 1. Compare your code in the `IAnt` class to the following to ensure it's correct:
 
@@ -102,10 +104,14 @@ In this task, you'll verify your code is working correctly.
     }
     ```
 
-1. Build your solution using <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> or by selecting **Build Solution** from the **Build** menu.
+1. Save your work.
 
-1. Verify that the code builds successfully and there are no errors.
+1. Right-click the "M04-Guided-Project" folder in the Explorer and click "Open in Integrated Terminal"
 
-    If your code produces unexpected errors, you'll need to review your code to find your error and make updates. Run the code again to see if you've fixed the problem. Continue updating and running your code until your code produces the expected results.
+1. In the terminal command prompt, enter **dotnet run**
 
-1. Run the Guided Project solution and press Enter a few times to view the generated ant pattern.
+    A console window should open and display the output of the code.
+
+1. In the console window, press Enter a few times to view the generated ant pattern.
+
+If your code produces unexpected errors, you'll need to review your code to find your error and make updates. Run the code again to see if you've fixed the problem. Continue updating and running your code until your code produces the expected results.

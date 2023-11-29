@@ -1,36 +1,42 @@
-You'll be using Visual Studio to develop a Langston's Ant project. 
+You' use Visual Studio to develop a Langston's Ant project. 
 
 ## Project overview
 
-In this project, you'll apply what you've learned about interfaces to abstract the Ant's behavior. Afterwards, you'll implement the new interface and create a new type of Ant as well.
+In this project, you'll apply what you learned about interfaces to abstract the Ant's behavior. Afterwards, you'll implement the new interface and create a new type of Ant as well.
 
 ## Setup
 
 Use the following steps to prepare for the Guided Project exercises:
 
-1. To download a zip file containing the Starter project code, select the following link: [Lab Files](https://github.com/MicrosoftLearning/Challenge-project-Create-methods-in-CSharp/archive/refs/heads/main.zip).
+> [!IMPORTANT]
+> You must have .NET Framework 8.0 installed and a Github account to complete these steps.
 
-1. Unzip the download files.
+> [NOTE]
+> If you completed previous modules in this Learning Path, you can skip these steps. Instead, close any open files and expand the **M04-Guided-Project** folder.
 
-    Unzip the files in your development environment. Consider using your PC as your development environment so that you have access to your code after completing this module. If you aren't using your PC as your development environment, you can unzip the files in a sandbox or hosted environment.
+1. Open Visual Studio Code.
 
-    1. On your local machine, navigate to your downloads folder.
-    1. Right-click **Guided-project-Langstons-Ant.main.zip**, and then select **Extract all**.
-    1. Select **Show extracted files when complete**, and then select **Extract**.
-    1. Make note of the extracted folder location.
+    You can use the Windows Start menu (or equivalent resource for another OS) to open Visual Studio Code.
 
-1. Copy the extracted **LangstonsAnt** folder to your Windows Desktop folder.
+1. Under the Visual Studio Code **Start** section, select **Clone Git Repository**.
 
-    > [!NOTE]
-    > If a folder named **LangstonsAnt** already exists, you can select **Replace the files in the destination** to complete the copy operation.
+1. In the URL bar, enter `https://github.com/MicrosoftLearning/MSLearn-Implement-interfaces-in-CSharp`
 
-1. Open the new **LangstonsAnt** folder in Visual Studio.
+1. In the File Explorer, create a new folder in a location that is easy to find and remember, such as a folder in your Desktop.
 
-    1. Open Visual Studio in your development environment.
-    1. In Visual Studio, on the **File** menu, select **Open Folder**.
-    1. Navigate to the Windows Desktop folder and locate the "ChallengeProject" folder.
-    1. Select **ChallengeProject** and then select **Select Folder**.
+1. Click the **Select as Repository Destination** button.
 
-        The Visual Studio Code EXPLORER view should show the **ChallengeProject** folder and two sub-folders named **Final** and **Starter**.
+    You need to be signed in to GitHub to successfully clone the project.
+
+1. Open the project in Visual Studio Code
+
+1. In Explorer, right-click the **M04-Guided-Project** folder and click **Open in Integrated Terminal**
+
+1. Expand the **M04-Guided-Project** folder.
+
+    You should see a "Game" folder and "Program.cs" file.
+
+> [NOTE]
+> If you get stuck, the solution for this module is available in **Solution-Guided-Project**
 
 You're now ready to begin the Guided Project exercises. Good luck!
