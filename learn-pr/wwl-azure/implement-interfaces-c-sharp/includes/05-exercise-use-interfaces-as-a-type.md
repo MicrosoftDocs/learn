@@ -2,11 +2,13 @@ Polymorphism is a programming concept that allows objects to take on multiple fo
 
 ## Exercise - Cast objects to an interface type
 
-1. In the Visual Studio Solution Explorer, open up the **Model.cs** file.
+1. In the Visual Studio Code Explorer, open up the **Model.cs** file.
 
     This file contains existing logic that is called by the user interface.
 
 1. Navigate to the `GetItemAction` method.
+
+    Previously, you added logic to check if two items are selected and the first one is an `ICombinable` type. Now, you'll add logic to check if the items can be successfully combined before returning the "Craft" string.
 
 1. Update the method with the following code:
 
@@ -18,7 +20,7 @@ Polymorphism is a programming concept that allows objects to take on multiple fo
     }
     ```
 
-    In this code, you use the `is` keyword to check if the selected item is the `ICombinable` type, and then assign the value to a variable of that type, `material`. Using the `ICombinable` type allows you to call the `CanCombine` method, so you can check if the items can successfully be combined before returning the "Craft" string. Next, you'll do the same with `IEquipable`.
+    The `is` keyword checks if an object is an instance of a class or interface type, and assigns the object to a variable of that type. Using an `ICombinable` variable allows you to call the `CanCombine` method on that object, so you can check if the items can successfully be combined before returning the "Craft" string.
 
     You could also use the `as` keyword to cast the object to the interface type. The `as` keyword attempts to cast an object to the specified interface type and returns null if the cast fails. For example:
 
@@ -31,7 +33,7 @@ Polymorphism is a programming concept that allows objects to take on multiple fo
     }
     ```
 
-    The `as` keyword is a helpful tool when working with abstract types.
+    Both the `is` and `as` keywords are helpful tools when working with abstract types. Next, you'll update the `GetItemAction` method to return "Unquip" when an equipped item is selected.
 
 1. Update the code as follows:
 
@@ -40,13 +42,13 @@ Polymorphism is a programming concept that allows objects to take on multiple fo
         return equipable.Equipped ? unequip : equip;
     ```
 
-    Similar to the previous step, you assign the value to the interface type. Afterwards, you can reference the implemented properties and methods of the interface. The "Select" button should now display "Unequip" for an equipped item. 
+    Similar to the previous step, you assign the selected item to a variable of the interface type. Afterwards, you can reference the implemented properties and methods of the interface. The "Select" button should now display "Unequip" for an equipped item. 
     
     Now that you're comfortable casting objects as interface types, you're ready to add functionality to the "Select" button.
 
 1. Navigate to the `DoItemAction` method.
 
-    This method is executed when the "Select" button is clicked. You'll add logic here to make the inventory items useable.
+    This method is executed when the "Select" button is clicked. Let's add logic here to make the inventory items useable.
 
 1. Update the `IEquipable` check as follows:
 
@@ -58,11 +60,15 @@ Polymorphism is a programming concept that allows objects to take on multiple fo
         else
             equipable.Equip();
     }
+    else if (selectedItems[0] is IConsumable consumable)
+    {
+        consumable.Consume();
+    }
     ```
 
-    Similar to the previous code, you assign the item to an `IEquipable` type to use its properties and methods. Let's do the same with `ICombinable`.
+    Similar to the previous code, you assign the item to an `IEquipable` type to use its properties and methods, likewise for the `IConsumable` item. Let's do the same with `ICombinable`.
 
-1. Update the rest of the code as follows:
+1. Update the "combine" portion of the code as follows:
 
     ```c#
     else if (selectedItems.Count == 2 && selectedItems[0] is ICombinable material)
@@ -87,11 +93,11 @@ Polymorphism is a programming concept that allows objects to take on multiple fo
     }
     ```
 
+    Great work! Now you're ready to test your logic!
+
 ## Check Your Work
 
 In this task, you'll run the code and verify that it's working correctly.
-
-1. Ensure the Startup Project is set to "M02-Implement-Interfaces"
 
 1. Save your work, then build and run the project.
 
@@ -103,7 +109,7 @@ In this task, you'll run the code and verify that it's working correctly.
 
 1. Click any item and select "Equip"
 
-    The "Equip" button should display "Unequip". The player stats are also updated.
+    The "Equip" button should display "Unequip." The player stats are also updated.
 
 1. Click the "Consumables" button
     
@@ -115,7 +121,7 @@ In this task, you'll run the code and verify that it's working correctly.
 
 1. Click two food ingredients such as "bread," "bell pepper," "tomato," "mushroom," etc.
 
-    The "Consume" button should display "Craft".
+    The "Consume" button should display "Craft."
 
 1. Click the "Craft" button.
 

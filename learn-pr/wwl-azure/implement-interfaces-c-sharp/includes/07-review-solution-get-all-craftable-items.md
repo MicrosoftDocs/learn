@@ -19,7 +19,7 @@ The following code is one possible solution for the challenge from the previous 
 
     ```
 
-This code is just "*one possible solution*" because you may have added line feeds in different spots, used variables differently, or formatted the code differently.
+This code is just "*one possible solution*" because you may have added line feeds in different spots, written logic differently, used different variable names, or formatted the code differently.
 
 Regardless of minor code differences, you should have checked if the items are of the `ICombinable` type before adding them to the list. When you run the code, clicking the "Craftables" button should update the inventory to display only craftable items.
 

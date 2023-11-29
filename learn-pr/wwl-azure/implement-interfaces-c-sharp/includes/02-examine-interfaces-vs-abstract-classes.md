@@ -7,7 +7,7 @@ Here are some key differences between interfaces and abstract classes:
 - <b>Implementation</b><br/>
 An abstract class can provide default implementation for some of its methods, whereas an interface can't provide any implementation details at all. This abstraction means that interfaces provide looser coupling between classes than abstract classes.
 
-- <b>Inheritance<b><br/> 
+- <b>Inheritance</b><br/> 
 A class can only inherit from one abstract class, but can implement multiple interfaces. Interfaces can also extend other interfaces. Classes can implement interfaces without being limited by inheritance.
 
 - <b>Constructors</b><br/> 

@@ -1,4 +1,4 @@
-One of the key features of interfaces is that classes can implement multiple interfaces. Multiple interfaces allow a class to support different behaviors that are independent of each other. To implement multiple interfaces, a class lists all the interfaces it wants to implement separated by commas after the colon following the class name. For example:
+One of the key features of interfaces is that classes can implement many of them. Multiple interfaces allow a class to support different behaviors that are independent of each other. To implement multiple interfaces, a class only needs to list each interface it wants to implement, separated by commas. For example:
 
 ```c#
 public class MyClass : IMyInterface1, IMyInterface2
@@ -11,33 +11,33 @@ Implementing multiple interfaces is useful when you need a class to have multipl
 
 ## Prepare your coding environment
 
-This module includes hands-on activities that guide you through the process of building and running demonstration code. You're encouraged to complete these activities using Visual Studio as your development environment. Using Visual Studio for these activities can help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
+This module includes hands-on activities that guide you through the process of building and running demonstration code. You're encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities can help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
 
 > [!IMPORTANT]
-> You must have a Github account to complete these steps.
+> You must have .NET Framework 8.0 installed and a Github account to complete these steps.
 
-> [!NOTE] 
-> If you completed previous modules in this Learning Path, you can skip these steps. Instead, load the **Interfaces** solution in Visual Studio. Right-click and unload the **M01-Implement-Interface** project. Then right-click the **M02-Implement-Interface** project and select **Reload Project with Dependencies**.
+> [NOTE]
+> If you completed previous modules in this Learning Path, you can skip these steps. Instead, close any open files and expand the **M02-Implement-Interface** folder.
 
-1. Open Visual Studio.
+1. Open Visual Studio Code.
 
-    You can use the Windows Start menu (or equivalent resource for another OS) to open Visual Studio.
+    You can use the Windows Start menu (or equivalent resource for another OS) to open Visual Studio Code.
 
-1. Under the Visual Studio **Get Started** section, select **Clone a repository**.
+1. Under the Visual Studio Code **Start** section, select **Clone Git Repository**.
 
-1. Under **Repository Location**, enter `https://github.com/MicrosoftLearning/Implement-interfaces-in-CSharp` 
+1. In the URL bar, enter `https://github.com/MicrosoftLearning/MSLearn-Implement-interfaces-in-CSharp`
 
-1. Under **Path**, create a new folder in a location that is easy to locate and remember, such as a folder in your Desktop.
+1. In the File Explorer, create a new folder in a location that is easy to find and remember, such as a folder in your Desktop.
 
-1. Click the **Clone** button.
+1. Click the **Select as Repository Destination** button.
 
     You need to be signed in to GitHub to successfully clone the project.
 
-1. Once the project loads, double-click the **Interfaces** solution in the Solution Explorer tab.
+1. Open the project in Visual Studio Code
 
-1. In the Solution Explorer, right-click the **M02-Implement-Interfaces** project and click **Reload Project with Dependencies**
+1. In Explorer, right-click the **M02-Implement-Interfaces** folder and click **Open in Integrated Terminal**
 
-1. Expand the **M02-Implement-Interfaces** project.
+1. Expand the **M02-Implement-Interfaces** folder.
 
     You should see a list of folders and files, including an Items folder and a Model.cs file.
 
@@ -47,29 +47,28 @@ In this exercise, you'll update existing classes to implement multiple interface
 
 :::image type="content" source="../media/M02-04-Demo.png" alt-text="A snapshot of the inventory program for this module with craftable items":::
 
-1. In the Solution Explorer, right click on the **Items** folder.
+1. In the Explorer, right click on the **Items** folder.
 
-1. In the context menu, select "Add" > "New Item"
+1. In the context menu, select "New File"
 
-1. In the "Add New Item" dialog box, select "Interface" from the list of available templates.
+1. In the textbox, enter "ICombinable.cs"
 
-1. In the "Name" textbox, enter "ICombinable.cs" and click "Add"
-
-    The new interface file should appear in the code editor with a basic template applied. Next, you'll define which methods and properties the interface should contain.
-
-1. In the interface definition, add the following code:
+1. Open the new file and type the following code:
 
     ```c#
-    internal interface ICombinable
+    namespace M02_Implement_Interfaces.Items
     {
-        public Item? Combine(Item item);
-        public bool CanCombine(Item item);
+        internal interface ICombinable
+        {
+            public bool CanCombine(Item item);
+            public Item? Combine(Item item);
+        }
     }
     ```
 
     This interface allows an item to check if it can be combined with another and perform a combination. The `Combine` method returns the new combined item or `null` if there was no combination. Now you're ready to implement the interface.
 
-1. In the Visual Studio Solution Explorer, open up the **Weapon.cs** file located in the **Items** folder.
+1. In the Visual Studio Code Explorer, open up the **Weapon.cs** file located in the **Items** folder.
 
 1. Navigate to the class definition and update it to the following code:
 
@@ -77,9 +76,17 @@ In this exercise, you'll update existing classes to implement multiple interface
     internal class Weapon : Item, IEquipable, ICombinable
     ```
 
-    Notice that the Weapon class now inherits an abstract class and two interfaces. This class contains a method `CreateRandomWeapon` that returns a new weapon. You can use this method for the `Combine` implementation.
+    Notice that the Weapon class now inherits an abstract class and two interfaces. Abstract classes and interfaces are a great way to provide flexibility in your code. 
     
-1. Implement the interface methods with the following code:
+    This class contains a method `CreateRandomWeapon` that returns a new weapon. You can use this method for the `Combine` implementation.
+    
+1. Hover over `ICombinable` until the error message appears, then click **Quick Fix**
+
+1. In the context menu, select **Implement interface**
+    
+    The interface methods should populate with a default `NotImplementedException`. You want to allow the player to combine a weapon with a rune to create a new type of weapon.
+
+1.  Update the `CanCombine` method with the following code:
 
     ```c#
     public bool CanCombine(Item item)
@@ -92,7 +99,15 @@ In this exercise, you'll update existing classes to implement multiple interface
 
         return false;
     }
+    ```
 
+    In this method, you first check if the item is `null`. Afterwards, you check if the given item is a rune material. You only return `true` when a weapon is combined with a Material that represents a rune item.
+
+    Next, implement the `Combine` to use the `CreateRandomWeapon` method.
+    
+1. Update the `Combine` method with the following code:
+
+    ```c#
     public Item? Combine(Item item)
     {
         if (CanCombine(item))
@@ -102,9 +117,9 @@ In this exercise, you'll update existing classes to implement multiple interface
     }
     ```
 
-    In the `CanCombine` method, you first check if the item is `null`. Then you only return `true` when a weapon is combined with a Material that represents a rune item. In the `Combine` method, you first check if the items can successfully be combined. If the combination is successful, you make use of the `CreateRandomWeapon` method to return a new weapon from the combination action. Otherwise, you return `null`. Next, you'll make Food items combinable.
+    In this method, you first check if the items can successfully be combined. If the combination is allowed, you use the `CreateRandomWeapon` method to return a new weapon. Otherwise, you return `null`. Next, let's make Food items combinable.
 
-1. In the Visual Studio Solution Explorer, open up the **Food.cs** file located in the **Items** folder.
+1. In the Visual Studio Code Explorer, open up the **Food.cs** file located in the **Items** folder.
 
 1. Navigate to the class definition and update it to the following code:
 
@@ -134,9 +149,9 @@ In this exercise, you'll update existing classes to implement multiple interface
     }
     ```
 
-    In this code, you check if both items are food ingredients to allow a combination. For simplicity, you make use of the `CreateRandomFood` method to return a new food from the combination action or `null` if the items can't be combined.
+    In this code, you check if both items are food ingredients to allow a combination. For simplicity, you make use of the `CreateRandomFood` method to return a new food from the combination, or `null` if the items can't be combined.
 
-1. In the Visual Studio Solution Explorer, open up the **Material.cs** file located in the **Items** folder.
+1. In the Visual Studio Code Explorer, open up the **Material.cs** file located in the **Items** folder.
 
 1. Navigate to the class definition and update it to the following code:
 
@@ -144,7 +159,7 @@ In this exercise, you'll update existing classes to implement multiple interface
     internal class Material : Item, ICombinable
     ```
 
-    This class contains several helper methods: `CreatesPotion` and `CreatesWeapon` take an `Item` argument to check if a combination results in a Potion or Weapon item. For simplicity, `CreateRandomPotion` creates a random Potion object. These methods help simplify the implementation of the interface methods.
+    This class contains several helper methods. `CreatesPotion` and `CreatesWeapon` take an `Item` argument to check if a combination results in a Potion or Weapon item. For simplicity, `CreateRandomPotion` creates a random Potion object. These methods will help you simplify the implementation of the interface methods.
 
 1. Implement the methods with the following code:
 
@@ -166,17 +181,19 @@ In this exercise, you'll update existing classes to implement multiple interface
     }
     ```
 
-    In this code, you use the existing `bool` methods `CreatesPotion` and `CreatesWeapon` to check if the item combination results in a Potion or Weapon. If not, the `CanCombine` method returns false. 
+    In the `CanCombine` method, you use the existing `bool` methods `CreatesPotion` and `CreatesWeapon` to check if the item combination results in a Potion or Weapon. If not, the `CanCombine` method returns false. 
 
-    Afterwards, you use the helper methods to check if the item creates a Potion or Weapon. If the item creates a Potion, a random Potion is returned. If the item creates a Weapon, you return the result of `Weapon.Combine()`. 
+    In `Combine`, you check if the item creates a Potion, and if so,  return a random Potion. If the item creates a Weapon, you return the result of `Weapon.Combine()`. 
+
+    Next, let's add a craft button for these items.
     
-1. In the Visual Studio Solution Explorer, open up the **Model.cs** file.
+1. In the Visual Studio Code Explorer, open up the **Model.cs** file.
 
     This file contains existing logic that is called by the user interface. For this exercise, you'll only focus on two simple methods.
 
 1. Navigate to the `GetItemAction` method.
 
-    This method returns available actions for a selected item in the player's inventory. The default action is "Select". Items also support "Equip", "Unequip", and "Consume". Now you'll add "Craft" to the available actions.
+    This method returns available actions for a selected item in the player's inventory. The default action is "Select." Items also support "Equip," "Unequip," and "Consume." Now add "Craft" to the available actions.
 
 1. Update the method with the following code:
 
@@ -201,18 +218,22 @@ In this exercise, you'll update existing classes to implement multiple interface
 
     In this code, you check that there's more than one selected item, and if the item is `ICombinable`, then you return the "Craft" string.
 
+    In the next exercise, you'll update the `DoItemAction` method to allow the player to craft items.
+
 ## Check Your Work
 
 In this task, you'll run the code and verify that it's working correctly.
 
-1. Ensure the Startup Project is set to "M02-Implement-Interfaces"
+1. Save your work.
 
-1. Save your work, then build and run the project.
+1. Right-click the "M02-Implement-Interfaces" folder in the Explorer and click "Open in Integrated Terminal"
 
-    You should see a windows form dialog appear, populated with game assets.
+1. In the terminal command prompt, enter **dotnet run**
+
+    You should see a windows form dialog appear, populated with game assets. Be sure to check that the form title displays "M02 Inventory"
     :::image type="content" source="../media/M02-04-CheckYourWork.png" alt-text="A snapshot of the inventory program for this module":::
 
-1. Select two food ingredients, such as "bread", "broccoli", "lettuce", "bell pepper". Use the <kbd>Ctrl</kbd> to multi-select.
+1. Select two food ingredients, such as "bread," "broccoli," "lettuce," "bell pepper." Use the <kbd>Ctrl</kbd> key to multi-select.
 
     You should see the "Select" button change to "Craft"
 
@@ -226,9 +247,9 @@ In this task, you'll run the code and verify that it's working correctly.
 
 1. Select any weapon item.
 
-    The "Select" button should change to "Equip".
+    The "Select" button should change to "Equip."
 
-    If your code displays different results, review your code to find the error and make updates. Run the code again to see if you've fixed the problem. Continue updating and running your code until your code produces the expected results. If you get stuck, try taking a look at the solution code.
+    If your code displays different results, review your code to find the error and make updates. Run the code again to see if you fixed the problem. Continue updating and running your code until your code produces the expected results. If you get stuck, try taking a look at the solution code.
 
 > [!IMPORTANT]
 > Be sure not to delete any of the code you've written so far. You'll build on this code throughout this training module.

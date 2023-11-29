@@ -17,8 +17,8 @@ In this module, you will:
 
 ## Prerequisites
 
-- Visual Studio Community installed
+- Visual Studio Code installed
 - A GitHub account to clone code repositories
-- Basic knowledge of the Visual Studio IDE and project structure
+- Basic knowledge of the Visual Studio Code IDE
 - Basic understanding of the C# programming language
 - Familiarity with classes, abstract classes, and inheritance
