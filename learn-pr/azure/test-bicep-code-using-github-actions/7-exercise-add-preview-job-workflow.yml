@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Add a preview job to your workflow
   description: Add a what-if preview job to your Bicep deployment workflow.
   ms.date: 12/27/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep

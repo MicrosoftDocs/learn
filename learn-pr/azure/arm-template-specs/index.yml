@@ -5,8 +5,8 @@ metadata:
   title: Publish libraries of reusable infrastructure code by using template specs
   description: Learn how to create, publish, and deploy template specs, which enable you to store and reuse templates across your organization.
   ms.date: 09/30/2021
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: interactive-tutorial
 title: Publish libraries of reusable infrastructure code by using template specs
 summary: |
