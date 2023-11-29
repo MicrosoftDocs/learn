@@ -1,8 +1,8 @@
 By using virtual networks, network security groups, virtual network peering, and Azure ExpressRoute, you can create different network topologies hosted in the cloud.
 
-Your company is planning a migration of your on-premises resources to Azure. Your central datacenter is currently located at your headquarters, and will eventually migrate completely to Azure. Initially, you've been asked to move some of your satellite offices into the cloud, while also maintaining the connectivity to your headquarters. The ultimate goal for the migration is to host all your computing resources on Azure.
+Your company is planning a migration of all your on-premises resources to Azure. Your central datacenter is currently located at your headquarters. Prior to full migration, you've been asked to move some of your satellite offices into the cloud, while also maintaining the connectivity to your headquarters. This results in a hybrid network scenario. The ultimate goal for the migration is to host all your computing resources on Azure.
 
-In this unit, you'll explore the following parts of this model:
+In this unit, you explore the following parts of this model:
 
 - The hub-spoke architecture
 - The topology
@@ -13,7 +13,7 @@ In this unit, you'll explore the following parts of this model:
 
 ![Diagram of a hub-spoke architecture.](../media/2-hub-and-spoke.png)
 
-A hub and spoke consists of a centralized architecture (a hub) connecting to multiple points (spokes). When drawn, it looks similar to a wheel, with a hub at the center and spokes connected to it. This model in Azure organizes your network infrastructure into multiple connected virtual networks. This architecture provides an efficient way to manage common communication, security requirements, and potential subscription limitations.
+A hub and spoke topology consists of a centralized architecture (a hub) connecting to multiple points (spokes). When drawn, it looks similar to a wheel, with a hub at the center and spokes connected to it. This model in Azure organizes your network infrastructure into multiple connected virtual networks. This architecture provides an efficient way to manage common communication, security requirements, and potential subscription limitations.
 
 Implementing a hub and spoke architecture can have the following benefits:
 
