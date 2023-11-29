@@ -6,7 +6,7 @@ metadata:
   ms.date: 9/29/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: cognitive-search
 title: Improve search results using vector search in Azure Cognitive Search
 summary: "Learn how to use vector search in Azure Cognitive Search to get better search results."

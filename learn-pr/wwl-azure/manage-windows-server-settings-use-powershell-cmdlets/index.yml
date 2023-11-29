@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/20/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: windows-server
 title: Manage Windows Server settings using PowerShell cmdlets
 summary: This module covers cmdlets that are used to configure settings related to Group Policy, Server Manager, Hyper-V, and Internet Information Services (IIS).

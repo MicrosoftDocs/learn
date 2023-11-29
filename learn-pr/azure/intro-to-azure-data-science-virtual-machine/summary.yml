@@ -8,7 +8,7 @@ metadata:
   ms.author: jcioffi
   ms.reviewer: franksolomon 
   ms.topic: unit
-  ms.prod: learning-azure
+  ms.service: machine-learning
 title: Summary
 durationInMinutes: 2
 content: |

@@ -2,6 +2,8 @@ In the sample scenario, you have a MAUI app that contains pages for displaying i
 
 In this exercise, you add flyout navigation to the app.
 
+[!include[](../../../includes/dotnet8-sdk-version.md)]
+
 ## Open the starter solution
 
 1. Clone or download the [exercise repo](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-create-multi-page-apps).
@@ -11,7 +13,7 @@ In this exercise, you add flyout navigation to the app.
 
 1. Go to the **exercise1** folder in the cloned repo, and then move to the **start** folder.
 
-1. Use Visual Studio to open the **Astronomy.sln** solution.
+1. Use Visual Studio to open the **Astronomy.sln** solution or the folder in Visual Studio Code.
 
 1. In the **Solution Explorer** window, in the **Astronomy** project, expand the **Pages** folder. This folder contains the following pages:
 
@@ -25,7 +27,7 @@ In this exercise, you add flyout navigation to the app.
 
     :::image type="content" source="../media/3-initial-moonphase.png" alt-text="A screenshot of the Astronomy app running on Android. The functionality required to navigate to pages is missing.":::
 
-1. Close the app and return to Visual Studio.
+1. Close the app and return to Visual Studio or Visual Studio Code.
 
 ## Add flyout navigation
 

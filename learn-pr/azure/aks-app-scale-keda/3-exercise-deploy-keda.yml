@@ -6,8 +6,8 @@ metadata:
   ms.date: 11/07/2023
   author: schaffererin
   ms.author: schaffererin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: devx-track-azurecli
 title: Exercise - Deploy KEDA on an Azure Kubernetes Service cluster
 durationInMinutes: 5
 content: |
