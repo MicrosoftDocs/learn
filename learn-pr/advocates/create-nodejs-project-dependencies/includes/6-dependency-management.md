@@ -18,6 +18,7 @@ Semantic versioning is a key standard in software development. It's essential fo
 | **Major**    | 1st      | x.0.0 or * | Changes from 1.0.0 to **2**.0.0 indicate breaking changes. Code adjustments may be necessary. | Comfortable with immediate updates to the latest major version, acknowledging potential code changes. |
 | **Minor**    | 2nd      | 1.x.1 or ^ | Changes from 1.2.9 to 1.**3**.0 introduce new features. Existing code should still function. Updates are typically safe. | Open to new features, but not breaking changes. |
 | **Patch**    | 3rd      | 1.1.x or ~ | Changes from 1.0.7 to 1.0.**8** mean bug fixes. Updates should be safe. | Accepting of bug fixes. |
+
 For small Node.js projects, you can freely update to the latest versions. But for larger projects, updates need careful thought and aren't always automatic. Generally, updating smaller dependencies, with fewer of their own dependencies, makes the process easier.
 
 Before you update one or more dependencies, you should configure your `package.json` file so you get predictable behavior when you run the `npm update <name of dependency>` command. Node.js uses set of symbols that allows you to define how you want your packages to update.
