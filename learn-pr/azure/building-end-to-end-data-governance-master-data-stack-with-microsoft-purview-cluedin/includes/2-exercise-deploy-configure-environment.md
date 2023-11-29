@@ -1,8 +1,5 @@
 To provide an end to end data technology stack, we'll be creating many resources and integrating them together to create a flow of data. This exercise includes setting up Azure Data Factory, Microsoft Purview, CluedIn, a service principal, an Azure Storage account, and Azure Key Vault. If you have these components already, you can move on to the next section. 
 
->[!TIP]
->Even if you already have a security principal, confirm you have the correct permissions in the [set up authentication using a service principal](#set-up-authentication-using-service-principal) section.
-
 ## Create an Azure Data Factory
 
 We'll be using Azure Data Factory as our mechanism to pull data from source systems into storage accounts, and pull data registered in Microsoft Purview to CluedIn to be processed.
@@ -33,6 +30,9 @@ You'll need to bring your own Microsoft Purview instance to the learning module,
 1. Select **Review & Create**, and then select **Create**.
 
 ## Create a service principal
+
+>[!TIP]
+>Even if you already have a security principal, confirm you have the correct permissions in the [set up authentication using a service principal](#set-up-authentication-using-service-principal) section.
 
 You'll also need to set up a Service Principal to generate the right credentials for all the components to talk with each other.
 
