@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-large-language-models.when-to-use-llms
+title: "When to use LLMs?"
+metadata:
+  title: "When to use LLMs?"
+  description: TBD
+  ms.date: 11/30/2023
+  author: chnoring
+  ms.author: chnoring
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-when-to-use-llms.md)]

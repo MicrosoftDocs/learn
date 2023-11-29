@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-large-language-models.summary
+title: Summary
+metadata:
+  title: Summary
+  description: TBD
+  ms.date: 11/30/2023
+  author: chnoring
+  ms.author: chnoring
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

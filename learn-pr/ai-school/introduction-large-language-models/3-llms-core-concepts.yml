@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-large-language-models.llms-core-concepts
+title: "Core concepts of LLMS"
+metadata:
+  title: "Core concepts of LLMS"
+  description: TBD
+  ms.date: 11/30/2023
+  author: chnoring
+  ms.author: chnoring
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-llms-core-concepts.md)]
