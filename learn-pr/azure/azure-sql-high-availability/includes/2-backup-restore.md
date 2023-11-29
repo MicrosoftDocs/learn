@@ -6,17 +6,17 @@ By default, a full database backup is taken once a week. Log backups are taken e
 
 ## Create a backup strategy for Azure SQL Managed Instance and Azure SQL Database
 
-Azure SQL takes care of the heavy lifting. But it's still important to understand how backups are stored and processed and what your options for retention and restoring are. Ultimately, you're still responsible for the overall strategy for point in time restore, long-term retention, and geo-restore.
+Azure SQL takes care of the heavy lifting, but it's still important to understand how backups are stored and processed and what your options for retention and restoring are. Ultimately, you're still responsible for the overall strategy for point-in-time restore, long-term retention, and geo-restore.
 
 ### Point in time restore (PITR)
 
-In Azure SQL Database and Azure SQL Managed Instance, you can perform a self-service restore. You can choose the exact point in time to which you want to restore and start the process by using the Azure portal, the PowerShell/Azure CLI, or REST APIs. Point in time restore (PITR) will create a new database (with a different name) in the same logical server. If you need to replace the original database with the PITR database, you have to rename both the original and the new database to return to a working condition. You won't need to update connection strings.
+In Azure SQL Database and Azure SQL Managed Instance, you can perform a self-service restore. You can choose the exact point in time to which you want to restore and start the process by using the Azure portal, the PowerShell/Azure CLI, or REST APIs. Point-in-time restore (PITR) will create a new database (with a different name) in the same logical server. If you need to replace the original database with the PITR database, you have to rename both the original and the new database to return to a working condition. You won't need to update connection strings.
 
-Retention for PITR varies between 1 and 35 days. By default, the retention period (for all service tiers and deployment options) is 7 days. In most deployment options and service tiers, you can configure the policy to be between 1 and 35 days, depending on your scenario's requirements. For example, you might need only 1 day for a test database, but you might choose the maximum of 35 days for a mission-critical database.
+Retention for PITR varies between one and 35 days. By default, the retention period (for all service tiers and deployment options) is seven days. In most deployment options and service tiers, you can configure the policy to be between one and 35 days, depending on your scenario's requirements. For example, you might need only one day for a test database, but you might choose the maximum of 35 days for a mission-critical database.
 
 ### Long-term retention (LTR)
 
-If 35 days isn't long enough to meet your organization's needs or compliance requirements, you can choose long-term retention (LTR). This option enables you to automatically create full database backups that are stored in RA-GRS, ZRS, or LRS storage for up to 10 years. For Azure SQL Database, LTR is generally available. For Azure SQL Managed Instance, LTR is available in a limited public preview.
+If 35 days isn't long enough to meet your organization's needs or compliance requirements, you can choose long-term retention (LTR). This option allows you to automatically create full database backups that are stored in RA-GRS, ZRS, or LRS storage for up to 10 years. For Azure SQL Database, LTR is generally available. For Azure SQL Managed Instance, LTR is available in a limited public preview.
 
 ### Geo-restore
 
