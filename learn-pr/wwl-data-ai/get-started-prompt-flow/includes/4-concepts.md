@@ -40,7 +40,7 @@ The flow types include:
 
 ### Flows use cases
 
-Prompt flow 'flows' have two main use cases. They enable the building and management of operations sequences for efficient data handling, streamlining the process of data manipulation in AI applications. Additionally, Flows offer a notebook-like UI, allowing users to tailor AI application logic interactively and intuitively, enhancing customization and ease of use.
+Prompt flow *flows* have two main use cases. They enable the building and management of operations sequences for efficient data handling, streamlining the process of data manipulation in AI applications. Additionally, Flows offer a notebook-like UI, allowing users to tailor AI application logic interactively and intuitively, enhancing customization and ease of use.
 
 ## Tools
 
