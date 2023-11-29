@@ -48,18 +48,18 @@ Tailwind Traders has asked you to work on an app that has some outdated dependen
 
    This code pulls data from a REST API by using the `node-fetch` library. It processes the response by sorting it and takes the top three results by using the `lodash` library. The result is stored in a file.
 
-   Close the file.
+1. Close the file.
 
 1. Open the package.json file and look at the `dependencies` section:
 
    ```json
-   "lodash": "^1.1.0",
-   "node-fetch": "^1.0.2"
+   "lodash": "^4.17.21",
+   "node-fetch": "^2.6.1"
    ```
    
    Notice the patterns specify the insert (^) character, which indicates updates to the minor version to support dependencies.
    
-   Close the file. 
+1. Close the file. 
 
 1. In the terminal, run this command to check for outdated dependencies:
 
@@ -71,7 +71,6 @@ Tailwind Traders has asked you to work on an app that has some outdated dependen
 
    ```output
    Package       Current    Wanted    Latest    Location                   Depended by
-   lodash        1.1.0      1.3.1     4.17.21   node_modules/lodash        7-exercise-dependency-management
    node-fetch    1.0.2      1.7.3     3.2.3     node_modules/node-fetch    7-exercise-dependency-management
    ```
 
