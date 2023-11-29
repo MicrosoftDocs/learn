@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/27/2023
+  ms.date: 11/29/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
@@ -16,10 +16,10 @@ quiz:
     choices:
     - content: "To provide an implementation of a class."
       isCorrect: false
-      explanation: "incorrect choice"
+      explanation: "Incorrect. Interfaces don't provide an implementation of a class."
     - content: "To create an instance of a concrete class."
       isCorrect: false
-      explanation: "incorrect choice"
+      explanation: "Incorrect. Interfaces are not used to create instances of concrete classes."
     - content: "To define a contract for functionality."
       isCorrect: true
       explanation: "Correct. Interfaces in C# define a contract for functionality that implementing classes must adhere to."

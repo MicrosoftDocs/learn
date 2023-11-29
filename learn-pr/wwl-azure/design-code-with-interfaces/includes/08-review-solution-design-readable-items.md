@@ -2,11 +2,14 @@ The following code is one possible solution for the challenge from the previous 
 
     ```c#
     // IReadable.cs
-    internal interface IReadable
+    namespace M03_Implement_Interfaces.Items
     {
-        public void Read();
-        public void MarkAsUnread();
-        public bool IsRead { get; set; }
+        internal interface IReadable
+        {
+            public void Read();
+            public void MarkAsNew();
+            public bool IsRead { get; set; }
+        }
     }
     ```
 
@@ -26,7 +29,7 @@ The following code is one possible solution for the challenge from the previous 
             IsRead = true;
         }
 
-        public void MarkAsUnread()
+        public void MarkAsNew()
         {
             IsRead = false;
         }
@@ -44,7 +47,7 @@ The following code is one possible solution for the challenge from the previous 
         //
         else if (selectedItems[0] is IReadable text)
         {
-            return text.IsRead ? read : markAsUnread;
+            return text.IsRead ? markAsNew : read;
         }
         return none;
     }
@@ -57,7 +60,7 @@ The following code is one possible solution for the challenge from the previous 
             else if (selectedItems[0] is IReadable text)
             {
                 if (text.IsRead)
-                    text.MarkAsUnread();
+                    text.MarkAsNew();
                 else
                     text.Read();
             }    
@@ -79,12 +82,9 @@ The following code is one possible solution for the challenge from the previous 
 
 This code is just "*one possible solution*" because you may have added line feeds in different spots, used variables differently, or formatted the code differently.
 
-Regardless of minor code differences, you should have successfully created and implemented the `IReadable` interface with the `Read` and `MarkAsUnread` methods and the `IsRead` property. And all readable items should be displayed when the "Readabkes" tav is clicked in the inventory, and the action buttons should update correctly.
+Regardless of minor code differences, you should have successfully created and implemented the `IReadable` interface with the `Read` and `MarkAsNew` methods and the `IsRead` property. And all readable items should be displayed when the "Readables" tab is clicked in the inventory, and the action buttons should update correctly.
 
-TODO
-screenshot
-
-:::image type="content" source="../media/M02-07-Challenge.png" alt-text="A snapshot of the inventory program for this module":::
+:::image type="content" source="../media/M03-08-Solution.png" alt-text="A snapshot of the inventory program for this module":::
 
 If you completed this challenge, congratulations! You've proven your mastery over interfaces! Continue on to the next unit to check your knowledge.
 

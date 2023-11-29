@@ -1,4 +1,4 @@
-Suppose the game designer wants some items to provide a synergy buff. For example, a sword, helmet, and shield might be part of the same collection, and when equipped simultaneously, they provide a strength or defense bonus. You've been tasked with implementing a synergy system for different types of items.
+Suppose the game designer wants some items to provide a synergy buff. For example, a sword, helmet, and shield might be part of the same collection, and when equipped simultaneously, they provide a strength or defense bonus. You are tasked with implementing a synergy system for different types of items.
 
 ## Exercise - Design a standard to achieve the goal
 
@@ -14,7 +14,7 @@ In this exercise, you'll plan and implement a design standard for the synergy of
 
 1. Identify common functionality.
 
-    Consider the functions items with synergy need to take. This will become the basis for your methods in the interface.
+    Consider the functions items with synergy need to take. These functions are the basis for your methods in the interface.
 
     Items with synergy capabilities should:
     - Check for synergy with another item
@@ -25,13 +25,13 @@ In this exercise, you'll plan and implement a design standard for the synergy of
 
     You'll also need a means of assigning items to a particular collection.
 
-Now that you've created a plan for your code, you're ready to implement your design. 
+Now that you created a plan for your code, you're ready to implement your design. 
 
 ### Create the code standard
 
 In this task, you'll create and implement the new interface.
 
-1. In the **Items** folder, create a new interface file with the name "ISynergyEffect.cs"
+1. In the **Items** folder, create a new file with the name "ISynergyEffect.cs"
 
 1. Open the file and enter the following code:
 
@@ -45,7 +45,7 @@ In this task, you'll create and implement the new interface.
     }
     ```
 
-    This method will allow you to check if an item has synergy with another. Next, you'll add a method to check if the items in a list have synergy with each other.
+    This method allows you to check if an item has synergy with another. Next, you'll add a method to check if the items in a list have synergy with each other.
 
 1. In the interface definition, enter the following code:
 
@@ -55,9 +55,9 @@ In this task, you'll create and implement the new interface.
     public bool SynergyActive();
     ```
 
-    Next, you'll need to decide how the synergy bonus effect will be retrieved. You want to make sure the effect is straightforward to use, but also open to extension in the future. To do that, you'll first create a new SynergyBonus type for the interface to return.
+    Next, you need to decide how the synergy bonus effect will be retrieved. You want to make sure the effect is straightforward to use, but also open to extension in the future. To do that,  first create a new SynergyBonus type for the interface to return.
 
-1. In the **Items** folder, create a class new file with the name "SynergyBonus.cs"
+1. In the **Items** folder, create a new file with the name "SynergyBonus.cs"
 
 1. Open the file and enter the following code:
 
@@ -78,7 +78,7 @@ In this task, you'll create and implement the new interface.
     }
     ```
 
-    Here, you define a string to represent the stat that is modified by the synergy bonus, and an integer to represent the amount that the stat is boosted. This implementation is simple enough to achieve the purpose for now.
+    Here, you define a string to represent the stat that's modified by the synergy bonus, and an integer to represent the amount that the stat is boosted. This implementation is simple enough to achieve the purpose for now.
 
 1. Navigate back to the **ISynergyEffect** interface.
 
@@ -99,7 +99,7 @@ In this task, you'll create and implement the new interface.
     }
     ```
 
-    Now you've successfully created a standard to enable a synergy capability for items. Next, you'll need a way to assign items to a collection. This will be simplified as a string property for this exercise.
+    Now you successfully created a standard to enable a synergy capability for items. Next, you need a way to assign items to a collection. This is simplified as a string property for this exercise.
 
 1. Navigate to the **Item.cs** file.
 
@@ -161,7 +161,7 @@ In this task, you'll create and implement the new interface.
     }
     ```
 
-    For now, you'll simply apply an attack bonus. This implementation can easily be modified in the future to become more complex.
+    For now, just apply an attack bonus. This implementation can easily be modified in the future to become more complex.
 
 1. Implement the remaining interface methods with the following code:
 
@@ -187,4 +187,4 @@ In this task, you'll create and implement the new interface.
     }
     ```
 
-Now you've successfully implemented your design. You used an interface rather than adding individual implementations of synergy to different classes. Your modular design allows more classes to implement `ISynergyEffect`, resulting in consistent, robust code. Great work!
+Now you successfully implemented your design. You used an interface rather than adding individual implementations of synergy to different classes. Your modular design allows more classes to implement `ISynergyEffect`, resulting in consistent, robust code. Great work!

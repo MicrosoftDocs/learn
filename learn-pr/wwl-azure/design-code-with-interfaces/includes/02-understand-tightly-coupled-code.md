@@ -1,10 +1,10 @@
-Interfaces allow developers to create modular and flexible code. Since implementation details are abstract, many parts of a project can be updated or replaced independently, without affecting the rest of the code. Using interfaces can help prevent tightly-coupled code.
+Interfaces allow developers to create modular and flexible code. Since implementation details are abstract, many parts of a project can be updated or replaced independently, without affecting the rest of the code. Using interfaces can help prevent tightly coupled code.
 
-## Understand tightly-coupled code
+## Understand tightly coupled code
 
-Tightly-coupled code occurs when there are strong dependencies between different parts of a program. When you modify the class or add a new subclass, you'll have to update both the class code and the code that uses the class. As a result, it can be challenging to make changes to one module without affecting others, and that comes with a higher risk of introducing accidental bugs.
+Tightly coupled code occurs when there are strong dependencies between different parts of a program. When you modify a tightly coupled class, you need to update any code that uses that class. As a result, it can be challenging to make changes to one module without affecting others, and that comes with a higher risk of introducing accidental bugs.
 
-Take a moment to examine the code below.
+Take a moment to examine the code below:
 
 ```c#
 public class WeatherService
@@ -26,7 +26,7 @@ public class WeatherReporter
 }
 ```
 
-In this example, the `WeatherReporter` directly depends on the `WeatherService` to fetch weather data as a displayable string. This means the `WeatherReporter` class is tightly coupled with the `WeatherService` class. Suppose the `GetWeatherData` method is updated to return a different data type so that weekly and hourly data can be included in the result. 
+In this example, the `WeatherReporter` directly depends on the `WeatherService` to fetch weather data as a displayable string. This dependence means `WeatherReporter` class is tightly coupled with the `WeatherService` class. Suppose the `GetWeatherData` method is updated to return a different data type so that weekly and hourly data can be included in the result. 
 
     ```c#
     public class WeatherService
@@ -68,6 +68,6 @@ To reduce the tight coupling, you can introduce an interface, such as `IWeatherS
     }
     ```
 
-Using an interface this way, the `WeatherReporter` becomes decoupled from any specific `WeatherService` implementations, and it only needs to trusts the contract established in the `IWeatherService` interface. 
+By relying on an interface, the `WeatherReporter` becomes decoupled from any specific `WeatherService` implementations, and it only needs to trust the contract established in the `IWeatherService` interface. 
 
-Using interfaces to create modular designs allows developers write code around objects and services without needing to work around any specific implementation details. Correctly using interfaces is a great way to create loosely-coupled code that is flexible and maintainable.
+Using interfaces to create modular designs allows developers to write code around objects and services without needing to work around any specific implementation details. Correctly using interfaces is a great way to create loosely coupled code that is flexible and maintainable.

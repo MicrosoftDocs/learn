@@ -4,9 +4,9 @@ Planning for interfaces and abstract classes before writing code can help develo
 
 1. As you plan your project and create class diagrams, look for areas where classes have dependencies on other classes.  Consider whether those dependencies could be replaced with a service that an interface can provide.
 
-1. Define any necessary interfaces. Once you've identified the areas where a service will be useful, define the behaviors the service will provide.
+1. Define any necessary interfaces. Once you identify the areas where a service is useful, define the behaviors the service should provide.
 
-1. Reexamine the relationships between any interfaces and classes you've created. Consider whether some classes or interfaces could benefit from inheritance. 
+1. Reexamine the relationships between any interfaces and classes you created. Consider whether some classes or interfaces could benefit from inheritance. 
 
 1. Determine the contracts and parameters your interfaces need. If you find that a default implementation would be more useful, consider using an abstract class instead.
 

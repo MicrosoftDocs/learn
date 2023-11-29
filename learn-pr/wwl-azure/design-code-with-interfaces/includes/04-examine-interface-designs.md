@@ -1,8 +1,8 @@
-Suppose there are many programmers developing a role-playing game, and two programmers are tasked with inventory management. Mahmud, one of the programmers, designs a set of methods for adding and removing items from the player's inventory. He creates a method named `AddItemToInventory` and another named `RemoveItemFromInventory`. 
+Suppose there are many programmers developing a role-playing game, and two programmers are tasked with inventory management. Mahmud, one of the programmers, designs a set of methods for adding and removing items from the player's inventory. Mahmud creates a method named `AddItemToInventory` and another named `RemoveItemFromInventory`. 
 
 Yara, another developer, is unaware of Mahmud's efforts. Yara creates methods with similar functionality but different naming conventions in another class, like `InsertItem` and `DiscardItem`. This type of inconsistency can cause confusion and frustration for all programmers using the different classes.
 
-If methods for inventory management are defined consistently, then programmers can quickly learn how to call the methods, and don't have to re-learn how to add or remove an item each time they use a new class. Establishing code standards up front will help simplify your project code and make it easier to maintain.
+If methods for inventory management are defined consistently, then programmers can quickly learn how to call the methods. They don't have to relearn how to add or remove an item each time they use a new class. Establishing code standards up front helps toe simplify your project code and make it easier to maintain.
 
 ## Coding Standards
 
