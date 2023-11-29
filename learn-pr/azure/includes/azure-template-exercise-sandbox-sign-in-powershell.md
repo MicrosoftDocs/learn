@@ -1,9 +1,9 @@
 ---
-author: davidsmatlak
+author: mumian
 ms.prod: learning-azure
 ms.topic: include
 ms.date: 06/10/2021
-ms.author: davidsmatlak
+ms.author: jgao
 ---
 ### Sign in to Azure by using Azure PowerShell
 
