@@ -25,7 +25,7 @@ Large language models are proficient in over a dozen programming languages, such
 
 - **Build applications**: You can use it to generate code like a Web API based on text sentence.
 - **Maintain applications**: Many times, you work on an existing codebase. A large language model can help here as well by modifying the existing code.
-- **Improve applications**: A third aspect of code is to improve it for a specific metric, like increasing security or logging. 
+- **Improve applications**: A third aspect of code is to improve it for a specific metric, like increasing security or logging.
 
 For example, given the input "Write a for loop counting from 1 to 10 in Python," the following answer is provided:
 
@@ -45,4 +45,4 @@ There are three different capabilities available:
 
 - **Image generation**: It can generate original images using input text of what you would like the image to be. The more detailed you are, the more likely the model will provide the desired image.
 - **Editing an image**: It can edit an image using input text of what you would like it to be. You can change the style of an image, add or remove items, or generate new content to add.
-- **Image variations**: it can generate variations of an image using an image and specifying how many variations of the image you would like. The image will stay the same, but the colour may change, background scene, and where the objects are located.
+- **Image variations**: it can generate variations of an image using an image and specifying how many variations of the image you would like. The image will stay the same, but the color may change, background scene, and where the objects are located.
