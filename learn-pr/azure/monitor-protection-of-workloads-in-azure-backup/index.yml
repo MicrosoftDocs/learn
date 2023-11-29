@@ -39,9 +39,9 @@ roles:
 - technology-manager 
 products:
 - azure
-- azure-migrate
+- backup
 subjects:
-- migration
+- monitoring
 units:
 - learn.azure.monitor-protection-of-workloads-in-azure-backup.introduction
 - learn.azure.monitor-protection-of-workloads-in-azure-backup.monitor-jobs-and-backup-instances-in-backup-center
