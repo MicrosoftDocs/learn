@@ -41,7 +41,7 @@ products:
 - azure
 - azure-backup
 subjects:
-- azure-log-analytics
+- log-analytics
 units:
 - learn.azure.monitor-protection-of-workloads-in-azure-backup.introduction
 - learn.azure.monitor-protection-of-workloads-in-azure-backup.monitor-jobs-and-backup-instances-in-backup-center
