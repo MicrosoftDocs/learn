@@ -3,11 +3,10 @@ uid: learn.design-ip-addressing-for-azure.2-network-ip-addressing-integration
 metadata:
   title: Network IP addressing and integration
   description: Network IP addressing and integration
-  ms.date: 03/01/2022
-  author: asudbring
-  ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/28/2023
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
 title: Network IP addressing and integration
 durationInMinutes: 8
 content: |

@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/27/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: cognitive-search
 title: Create a custom skill for Azure Cognitive Search
 summary: Use the power of artificial intelligence to enrich your data and find new insights.

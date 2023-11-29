@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/18/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-ai-document-intelligence
 title: Plan an Azure AI Document Intelligence solution
 summary: Learn how to use Azure AI Document Intelligence to build solutions that analyze forms and output data for storage or further processing.

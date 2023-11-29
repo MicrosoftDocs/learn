@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/20/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure
 title: Who Hacked cloud game
 summary: Provide instructions and guidance on playing the SC-200 Who Hacked cloud game.
@@ -23,7 +23,7 @@ roles:
 products:
 - microsoft-sentinel
 - defender-for-cloud
-- mdatp
+- defender-endpoint
 - microsoft-defender
 - microsoft-purview
 subjects:

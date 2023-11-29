@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/18/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-ai-document-intelligence
 title: Use prebuilt Azure AI Document Intelligence models
 summary: Learn what data you can analyze by choosing prebuilt Azure AI Document Intelligence models and how to deploy these models in a Document Intelligence solution.

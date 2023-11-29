@@ -7,11 +7,10 @@ metadata:
   title: Exercise - Create and use a module
   description: Create a set of Bicep modules and a template that uses them.
   ms.date: 03/27/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
   ms.custom: devx-track-bicep
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 9
 content: |

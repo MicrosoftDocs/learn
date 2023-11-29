@@ -4,12 +4,10 @@ title: Exercise - query a KQL database in Microsoft Fabric
 metadata:
   title: Exercise - query a KQL database in Microsoft Fabric
   description: "Exercise - query a KQL database in Microsoft Fabric"
-  ms.date: 11/07/2023
+  ms.date: 11/17/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: module
-  ms.prod: azure
-  ms.service: fabric
+  ms.topic: unit
 durationInMinutes: 35
 content: |
   [!include[](includes/5-exercise.md)]

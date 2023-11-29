@@ -3,15 +3,14 @@ uid: learn.azure.migrate-aspnet-app-azure-app-service.containerization-overview
 metadata:
   title: Azure Migrate App Containerization overview
   description: Provides an overview of Azure Migrate App Containerization feature
-  ms.date: 09/01/2021
+  ms.date: 11/21/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Azure Migrate App Containerization overview
 durationInMinutes: 4
 content: |
-  [!include[](includes/app-containerization-overview.md)]
+  [!include[](includes/app-containerization-overview.md)]s
 quiz:
   title: Check your knowledge
   questions:

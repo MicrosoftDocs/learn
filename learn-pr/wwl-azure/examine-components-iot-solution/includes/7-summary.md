@@ -1,1 +1,0 @@
-Your team will be building an IoT solution and needs to understand how the components of a solution work together. Examining the hardware, software, and cloud service components of an IoT solution gives you a deeper understanding of the data workflows between devices and the cloud.

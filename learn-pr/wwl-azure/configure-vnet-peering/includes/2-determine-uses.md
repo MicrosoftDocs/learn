@@ -1,4 +1,3 @@
-
 Perhaps the simplest and quickest way to connect your virtual networks is to use Azure Virtual Network peering. Virtual Network peering enables you to seamlessly connect two Azure virtual networks. After the networks are peered, the two virtual networks operate as a single network, for connectivity purposes.
 
 ### Things to know about Azure Virtual Network peering
