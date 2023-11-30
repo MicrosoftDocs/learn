@@ -6,7 +6,8 @@ metadata:
   ms.date: 12/31/2023
   author: claytonsiemens77
   ms.author: csiemens
-  ms.topic: unit
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 15
 content: |
   [!include[](includes/4-design-for-recovery.md)]
