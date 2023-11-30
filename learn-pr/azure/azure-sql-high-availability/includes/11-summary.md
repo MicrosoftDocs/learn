@@ -28,7 +28,7 @@ In the Business Critical tier, you can opt in (for no additional fee) for a [zon
 
 ### Availability and consistency
 
-If you want to learn more about how Azure manages data integrity, check out this in-depth [blog post](https://azure.microsoft.com/blog/data-integrity-in-azure-sql-database/?azure-portal=true). If you want to learn more about Accelerated Database Recovery, the [documentation](/azure/azure-sql/accelerated-database-recovery) is detailed and provides references to other resources, like white papers.
+If you want to learn more about how Azure manages data integrity, check out this in-depth [blog post](https://azure.microsoft.com/blog/data-integrity-in-azure-sql-database/?azure-portal=true). If you want to learn more, the [Accelerated Database Recovery documentation](/azure/azure-sql/accelerated-database-recovery) is detailed and provides references to other resources, like white papers.
 
 ### Designing cloud solutions for disaster recovery
 
