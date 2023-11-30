@@ -2590,3 +2590,8 @@ achievements:
   title: Deploy IoT solutions with Azure SQL Database
   summary: By the end of this module, you'll be able to create scalable IoT solutions using Azure SQL Database, and use the template provided for many IoT use cases.
   iconUrl: /training/achievements/deploy-iot-solution-azure-sql-database.svg
+- uid: learn.msgraph-extensions.badge
+  type: badge
+  title: Add custom data to your app by using extensions in Microsoft Graph
+  summary: "Add custom data to Microsoft Graph resources by using Microsoft Graph extensions. Query and update the custom data to build unique experiences for your applications."
+  iconUrl: /training/achievements/msgraph-extensions.svg
