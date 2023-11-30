@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 20
 content: |
-  [!include[](includes/3-disaster-recovery.md)]
+  [!include[](includes/3-design-for-resilience.md)]
 quiz:
   title: Check your knowledge
   questions:
@@ -22,7 +22,7 @@ quiz:
       explanation: "Monitoring and alerting are important, but they cannot minimize the affects of malfunctions on your workload. They can only help you detect them and respond to them."
     - content: "Health modeling"
       isCorrect: false
-      explanation: "Health modeling helps you understand the health of your workload, but it cannot minimize the affects of malfunctions on your workload.
+      explanation: "Health modeling helps you understand the health of your workload, but it cannot minimize the affects of malfunctions on your workload."
     - content: "Threat analysis"
       isCorrect: false
       explanation: "Threat analysis helps you understand the threats to your workload, but it cannot minimize the affects of malfunctions on your workload."
