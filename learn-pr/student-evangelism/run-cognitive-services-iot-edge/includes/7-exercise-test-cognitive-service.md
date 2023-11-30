@@ -14,7 +14,7 @@ You'll make an HTTP call to the Azure IoT Edge device that has the Azure AI serv
 
     1. Set the **Name** to **Port_5000**
 
-    1. Click the **Add button**
+    1. Select the **Add button**
 
         ![The configured inbound port.](../media/port-config.png)
 
@@ -33,5 +33,5 @@ You'll make an HTTP call to the Azure IoT Edge device that has the Azure AI serv
 1. Open the browser, and replace the IP address of edge device with `<<your-ipaddress>>`.
 1. Go to `http://<<your-ipaddress>>:5000`.
 1. Select **API Description** or go to `http://<<your-ipaddress>>:5000/swagger` to get a detailed description of the API.
-1. Select **Try it out** and then **Execute**. You can change the input value as you like. The result will show up farther down on the page.
+1. Select **Try it out** and then **Execute**. You can change the input value as you like. The result shows up farther down on the page.
     ![The illustration shows the execution of Azure AI services on the browser.](../media/execute-cognitive-service.png)
