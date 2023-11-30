@@ -41,8 +41,8 @@ units:
 - learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.configure-postman-and-api-collections
 - learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.upload-models-twins-and-graph-in-bulk
 - learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.update-graph-elements
-- learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.create-endpoints-and-event-routes
 - learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.query-graph
+- learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.create-endpoints-and-event-routes
 - learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.summary
 badge:
   uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.badge
