@@ -30,28 +30,35 @@ Follow these steps to import a repository:
 
 1. In the upper-right corner of any page, select **+**, and then select **Import repository**.
 
-      :::image type="content" source="../media/1-import-repository.png" alt-text="Screenshot of the import repository button.":::
+    :::image type="content" source="../media/1-import-repository.png" alt-text="Screenshot of the import repository button.":::
+
 2. Under "Your old repository's clone URL," type the URL of the project you want to import.
 
-      :::image type="content" source="../media/2-import-url.png" alt-text="Screenshot of the old repository URL textbox.":::
+    :::image type="content" source="../media/2-import-url.png" alt-text="Screenshot of the old repository URL textbox.":::
+
 3. Choose your user account or an organization to own the repository, then type a name for the repository on GitHub.
 
-      :::image type="content" source="../media/3-import-repo-owner-name.png" alt-text="Screenshot of the new import repository owner name."::: 
+    :::image type="content" source="../media/3-import-repo-owner-name.png" alt-text="Screenshot of the new import repository owner name.":::
+
 4. Specify whether the new repository should be public or private. For more information, check out [Setting repository visibility.](https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility)
 
-      :::image type="content" source="../media/4-import-public-or-private.png" alt-text="Screenshot of the new repository public or private options.":::
+    :::image type="content" source="../media/4-import-public-or-private.png" alt-text="Screenshot of the new repository public or private options.":::
+
 5. Review the information you entered, then select **Begin import**.
 
-      :::image type="content" source="../media/5-begin-import-button.png" alt-text="Screenshot of the begin import button for a new repository import.":::
+    :::image type="content" source="../media/5-begin-import-button.png" alt-text="Screenshot of the begin import button for a new repository import.":::
+
 6. If your old project was protected by a password, type your sign-in information for that project, then select **Submit**.
 
-      :::image type="content" source="../media/6-submit-old-credentials-importer.png" alt-text="Screenshot of the location to input your old repository credentials importer.":::
+    :::image type="content" source="../media/6-submit-old-credentials-importer.png" alt-text="Screenshot of the location to input your old repository credentials importer.":::
+
 7. If there are multiple projects hosted at your old project's clone URL, choose the project you'd like to import, then select **Submit**.
 
-      :::image type="content" source="../media/7-choose-project-importer.png" alt-text="Screenshot of a selection of projects found at the same URL. project importer.":::
+    :::image type="content" source="../media/7-choose-project-importer.png" alt-text="Screenshot of a selection of projects found at the same URL. project importer.":::
+
 8. If your project contains files larger than 100 MB, choose whether to import the large files using [Git Large File Storage](https://docs.github.com/repositories/working-with-files/managing-large-files), then select **Continue**.
 
-      :::image type="content" source="../media/8-select-git-lfs-importer.png" alt-text="Screenshot of files suitable for Git LFS importer.":::
+    :::image type="content" source="../media/8-select-git-lfs-importer.png" alt-text="Screenshot of files suitable for Git LFS importer.":::
 
 When the repository is fully imported, you receive an email.
 
@@ -64,18 +71,22 @@ During an import, you can match commits in your repository with the GitHub accou
 Follow these steps to update a commit author:
 
 1. After importing your repository, on the import status page, select **Match authors**.
+
     :::image type="content" source="../media/1-match-authors-button.png" alt-text="Screenshot of the match authors button.":::
-2. Next to the author whose information you'd like to update, select **Connect**.
+
+1. Next to the author whose information you'd like to update, select **Connect**.
+
     :::image type="content" source="../media/2-connect-commit-author.png" alt-text="Screenshot of the connect commit author process.":::
-3. Type the email address or GitHub username of the author, then press **Enter**.
+
+1. Type the email address or GitHub username of the author, then press **Enter**.
 
 #### Attributing commits to a GitHub user with a public email address
 
-If an author of a commit in your imported repository has a GitHub account associated with the email address they used to author the commits, and they don't [set their commit email address as private](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-user-account/managing-email-preferences/setting-your-commit-email-address). GitHub Importer matches the email address associated with the commit to the public email address associated with their GitHub account, and attributes the commit to their GitHub account.
+If an author of a commit in your imported repository has a GitHub account associated with the email address they used to author the commits, and they don't [set their commit email address as private](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-user-account/managing-email-preferences/setting-your-commit-email-address). Then, GitHub Importer matches the email address associated with the commit to the public email address associated with their GitHub account, and attributes the commit to their GitHub account.
 
 #### Attributing commits to a GitHub user without a public email address
 
-If the author of a commit in your imported repository doesn't set a public email address on their GitHub profile, or [set their commit email address as private](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-user-account/managing-email-preferences/setting-your-commit-email-address). GitHub Importer might not be able to match the email address associated with the commit with their GitHub account.
+If the author of a commit in your imported repository doesn't set a public email address on their GitHub profile, or [set their commit email address as private](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-user-account/managing-email-preferences/setting-your-commit-email-address). Then, GitHub Importer might not be able to match the email address associated with the commit with their GitHub account.
 
 The commit author can resolve this issue by setting their email address as private. Their commits are then attributed to `<username>@users.noreply.github.com`, and the imported commits are associated with their GitHub account.
 
@@ -104,26 +115,27 @@ For purposes of demonstration, we use:
 Follow these steps to import your external repository:
 
 1. [Create a new repository on GitHub.](https://docs.github.com/repositories/creating-and-managing-repositories/creating-a-new-repository) You import your external Git repository to this new repository.
-2. On the command line, make a "bare" clone of the repository using the external clone URL. This command creates a full copy of the data, but without a working directory for editing files, and ensures a clean, fresh export of all the old data.
+
+1. On the command line, make a "bare" clone of the repository using the external clone URL. This command creates a full copy of the data, but without a working directory for editing files, and ensures a clean, fresh export of all the old data.
 
     ```bash
-        $ git clone --bare https://external-host.com/ext-user/repo.git
-        #Makes a bare clone of the external repository in a local directory 
+    $ git clone --bare https://external-host.com/ext-user/repo.git
+    #Makes a bare clone of the external repository in a local directory 
     ```
 
-3. Push the locally cloned repository to GitHub using the "mirror" option, which ensures that all references, such as branches and tags, are copied to the imported repository.
+1. Push the locally cloned repository to GitHub using the "mirror" option, which ensures that all references, such as branches and tags, are copied to the imported repository.
 
     ```bash
-      $ cd repo.git
-      $ git push --mirror https://github.com/ghuser/repo.git
-      #Pushes the mirror to the new repository on GitHub.com 
+    $ cd repo.git
+    $ git push --mirror https://github.com/ghuser/repo.git
+    #Pushes the mirror to the new repository on GitHub.com 
     ```
 
-4. Remove the temporary local repository.
+1. Remove the temporary local repository.
 
-    ```bash 
-        $ cd ..
-        $ rm -rf repo.git 
+    ```bash
+    $ cd ..
+    $ rm -rf repo.git 
     ```
 
 ### Adding locally hosted code to GitHub
@@ -138,73 +150,74 @@ Follow these steps to add a local repository with GitHub CLI:
 
 1. In the command line, navigate to the root directory of your project.
 
-2. Initialize the local directory as a Git repository.
+1. Initialize the local directory as a Git repository.
 
     ```bash
-      git init -b main
+    git init -b main
     ```
 
-3. Stage and commit all the files in your project.
+1. Stage and commit all the files in your project.
 
     ```bash
-      git add . && git commit -m "initial commit"
+    git add . && git commit -m "initial commit"
     ```
 
-4. To create a repository for your project on GitHub, use the `gh repo create subcommand`. When prompted, select **Push an existing local repository to GitHub** and enter the desired name for your repository. If you want your project to belong to an organization instead of your user account, specify the organization name and project name with `organization-name/project-name`.
+1. To create a repository for your project on GitHub, use the `gh repo create subcommand`. When prompted, select **Push an existing local repository to GitHub** and enter the desired name for your repository. If you want your project to belong to an organization instead of your user account, specify the organization name and project name with `organization-name/project-name`.
 
-5. Follow the interactive prompts. To add the remote and push the repository, confirm **yes** when asked to add the remote and push the commits to the current branch.
+1. Follow the interactive prompts. To add the remote and push the repository, confirm **yes** when asked to add the remote and push the commits to the current branch.
 
-6. Alternatively, to skip all the prompts, supply the path to the repository with the `--source` flag and pass a visibility flag (`--public`, `--private`, or `--internal`). For example, `gh repo create --source=. --public`. Specify a remote with the `--remote` flag. To push your commits, pass the `--push` flag. For more information about possible arguments, reference the [GitHub CLI manual.](https://cli.github.com/manual/gh_repo_create)
+1. Alternatively, to skip all the prompts, supply the path to the repository with the `--source` flag and pass a visibility flag (`--public`, `--private`, or `--internal`). For example, `gh repo create --source=. --public`. Specify a remote with the `--remote` flag. To push your commits, pass the `--push` flag. For more information about possible arguments, reference the [GitHub CLI manual.](https://cli.github.com/manual/gh_repo_create)
 
 #### Adding a local repository to GitHub using Git
 
 Follow these steps to add a local repository using Git:
 
 1. [Create a new repository](https://docs.github.com/repositories/creating-and-managing-repositories/creating-a-new-repository) on GitHub.com. To avoid errors, don't initialize the new repository with README, license, or `gitignore files`. You can add these files after your project is pushed to GitHub.
-    :::image type="content" source="../media/1-repo-create.png" alt-text="Screenshot of new repository creation.":::
 
-2. Open Git Bash.
+   :::image type="content" source="../media/1-repo-create.png" alt-text="Screenshot of new repository creation.":::
 
-3. Change the current working directory to your local project.
+1. Open Git Bash.
 
-4. Initialize the local directory as a Git repository.
+1. Change the current working directory to your local project.
+
+1. Initialize the local directory as a Git repository.
 
     ```bash
-      $ git init -b main
+    $ git init -b main
     ```
 
-5. Add the files in your new local repository. This command also stages them for the first commit.
+1. Add the files in your new local repository. This command also stages them for the first commit.
 
     ```bash
-      $ git add .
+    $ git add .
       # Adds the files in the local repository and stages them for commit. To unstage a file, use 'git reset HEAD YOUR-FILE'.
     ```
 
-6. Commit the files that are staged in your local repository.
+1. Commit the files that are staged in your local repository.
 
     ```bash
-      $ git commit -m "First commit"
-      # Commits the tracked changes and prepares them to be pushed to a remote repository. To remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again.
+    $ git commit -m "First commit"
+    # Commits the tracked changes and prepares them to be pushed to a remote repository. To remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again.
     ```
 
-7. At the top of your repository on GitHub.com's Quick Setup page, select the **Copy** button to copy the remote repository URL.
+1. At the top of your repository on GitHub.com's Quick Setup page, select the **Copy** button to copy the remote repository URL.
 
     :::image type="content" source="../media/7-copy-remote-repository-url-quick-setup.png" alt-text="screenshot copy remote repository url quick setup":::
 
-8. In the Command prompt, [add the URL for the remote repository](https://docs.github.com/get-started/getting-started-with-git/managing-remote-repositories). Your local repository is pushed to this location.
+1. In the Command prompt, [add the URL for the remote repository](https://docs.github.com/get-started/getting-started-with-git/managing-remote-repositories). Your local repository is pushed to this location.
 
     ```bash
-        $ git remote add origin <REMOTE_URL> 
-        # Sets the new remote
-        $ git remote -v
-        # Verifies the new remote URL
+    $ git remote add origin <REMOTE_URL> 
+    # Sets the new remote
+    $ git remote -v
+    # Verifies the new remote URL
     ```
 
-9. [Push the changes](https://docs.github.com/get-started/using-git/pushing-commits-to-a-remote-repository) in your local repository to GitHub.com.
+1. [Push the changes](https://docs.github.com/get-started/using-git/pushing-commits-to-a-remote-repository) in your local repository to GitHub.com.
 
     ```bash
-        $ git push origin main
-        # Pushes the changes in your local repository up to the remote repository you specified as the origin
+    $ git push origin main
+    # Pushes the changes in your local repository up to the remote repository you specified as the origin
     ```
 
 ### Source code migration tools 
