@@ -4,7 +4,7 @@ In this unit, you'll use the Query API to gather more information about the stat
 
 Start by reviewing the [Query API documentation](/rest/api/digital-twins/dataplane/query). The API contains one operation for running a query. The text of the query determines what digital twins are in the result.
 
-:::image type="content" source="../media/5-query.png" alt-text="Reference doc screenshot showing the Query operation." border="false" lightbox="../media/5-query":::
+:::image type="content" source="../media/5-query.png" alt-text="Reference doc screenshot showing the Query operation." border="false" lightbox="../media/5-query.png":::
 
 Queries are written in the SQL-like **Azure Digital Twins query language**, and can find twins by their models, properties, and relationships. You can also combine these parameters to further narrow down query results.
 
@@ -38,7 +38,7 @@ Next, run some queries that find twins based on their property values.
 
 ### Query for undefined properties
 
-The *Power Line* model contains a property definition for *Capacity*. Although you imported several power line twins in [Unit 3](./3-upload-models-twins-graph-bulk.md), they don't all have a value set for this property. The query in this section builds on the model query from the previous section and adds a provision to select only the power lines that don't have a value set for their capacity property.
+The *Power Line* model contains a property definition for *Capacity*. Although you imported several power line twins in [Unit 3](../3-upload-models-twins-graph-bulk.yml), they don't all have a value set for this property. The query in this section builds on the model query from the previous section and adds a provision to select only the power lines that don't have a value set for their capacity property.
 
 In the same request template of  **POST Query Query Twins**, edit the **Body** tab. Replace the contents with the following information. This query looks for power line twins that don't have a defined *Capacity* property.
 
@@ -55,7 +55,7 @@ The 200 response from a successful request looks very similar to the response fr
 You can use queries like this to make sure your digital twin representation is fully populated.
 
 >[!TIP]
->You learned how to update a twin property in [Unit 4](./4-update-graph-elements.md#update-twin-properties). For a challenge exercise, try using the *$dtId* values in the query result along with that process to update the *Capacity* property on each twin that's missing it.
+>You learned how to update a twin property in [Unit 4](../4-update-graph-elements.yml). For a challenge exercise, try using the *$dtId* values in the query result along with that process to update the *Capacity* property on each twin that's missing it.
 
 ### Query by value
 

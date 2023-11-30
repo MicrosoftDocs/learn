@@ -27,7 +27,7 @@ In this section, you use the Endpoints API to create a new endpoint in your Azur
 
 Start by reviewing the [Endpoints API documentation](/rest/api/digital-twins/controlplane/endpoints). Notice that unlike previous API sets used so far in this module, the Endpoints API is part of the **Control plane** collection, because it's scoped beyond Azure Digital Twins and needs to interact with other Azure resources in your subscription. The API contains operations for creating/updating, deleting, getting, and listing endpoints.
 
-:::image type="content" source="../media/6-endpoints.png" alt-text="Reference doc screenshot showing the Endpoints operations." border="false" lightbox="../media/6-endpoints":::
+:::image type="content" source="../media/6-endpoints.png" alt-text="Reference doc screenshot showing the Endpoints operations." border="false" lightbox="../media/6-endpoints.png":::
 
 ### Prepare the endpoint resource
 
@@ -35,7 +35,7 @@ Next, create an Event Grid topic in Azure. Later, you'll register this Event Gri
 
 In a browser tab, navigate to the [Azure Cloud Shell](https://ms.portal.azure.com/#cloudshell/).
 
-Run the following command in the Cloud Shell to create an Event Grid topic. The command assumes you're using the resource group name of *azure-digital-twins-training* that was provided in [Unit 2](./2-configure-postman-api-collections.md), and there's a placeholder to name your new Event Grid topic.
+Run the following command in the Cloud Shell to create an Event Grid topic. The command assumes you're using the resource group name of *azure-digital-twins-training* that was provided in [Unit 2](../2-configure-postman-api-collections.yml), and there's a placeholder to name your new Event Grid topic.
 
 ```azurecli
     az eventgrid topic create --resource-group azure-digital-twins-training --location westus2 --name <name-for-your-event-grid-topic> 
@@ -75,7 +75,7 @@ In the **Body** tab, replace the contents with the following information, and fi
 Send the request.
 
 >[!TIP]
->If your control plane bearer token from [Unit 2](./2-configure-postman-api-collections.md) has expired, remember that you can re-run the `az account get-access-token --resource https://management.azure.com/` command to get a new one.
+>If your control plane bearer token from [Unit 2](../2-configure-postman-api-collections.yml) has expired, remember that you can re-run the `az account get-access-token --resource https://management.azure.com/` command to get a new one.
 
 The response from a successful request looks something like this:
 
@@ -107,7 +107,7 @@ In this section, you'll use the Event Routes API to create a new event route tha
 
 Start by reviewing the [Event Routes API documentation](/rest/api/digital-twins/dataplane/event-routes). This is a data plane API that contains operations for adding, deleting, getting, and listing event routes.
 
-:::image type="content" source="../media/7-event-routes.png" alt-text="Reference doc screenshot showing the Event Routes operations." border="false" lightbox="../media/7-event-routes":::
+:::image type="content" source="../media/7-event-routes.png" alt-text="Reference doc screenshot showing the Event Routes operations." border="false" lightbox="../media/7-event-routes.png":::
 
 ### Send the event route request
 
@@ -147,7 +147,7 @@ Send the request.
 
 The response from a successful request looks something like this:
 
-:::image type="content" source="../media/6-event-routes-get-by-id.png" alt-text="Postman screenshot showing the results of the Event Routes Add request." border="false" lightbox="../media/6-event-routes-get-by-id.png":::
+:::image type="content" source="../media/6-event-routes-get-by-id.png" alt-text="Postman screenshot showing the results of the Event Routes Get by Id request." border="false" lightbox="../media/6-event-routes-get-by-id.png":::
 
 This 200 response returns the details of your event route, including its ID, the endpoint where it connects, and any filters it applies.
 
