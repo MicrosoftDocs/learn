@@ -41,6 +41,8 @@ for i in range(1,11):
 
 Large language models can create both realistic and artistic images, change the layout or style of an image, and create variations on a provided image. There are three different capabilities available:
 
-- **Image generation**: It can generate original images by using input text of what you would like the image to be. The more detailed you are, the more likely it is that the model will provide the desired image.
+- **Image generation**: It can generate original images by using input text of what you would like the image to be. The more detailed you are, the more likely it is that the model produces the desired image.
+
 - **Editing an image**: It can edit an image by using input text of what you would like changed about the image. You can change the style of an image, add or remove items, or generate new content to add.
-- **Image variations**: It can generate variations of an image by using the image itself and input text specifying how many variations of the image to produce. The original image will stay the same, but the color, background scene, and where the objects are located might change in variations.
+
+- **Image variations**: It can generate variations of an image by using the image itself and input text specifying how many variations of the image to produce. The original image stays the same, but the color, background scene, and where the objects are located might change in variations.

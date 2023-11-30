@@ -11,7 +11,7 @@ A text prompt is a sentence. An LLM understands several different languages. You
 
 - _Create a web app in Python that handles customers_
 
-The more specific you are about what you’re asking for, the better the result will be.
+The more specific you are about what you’re asking for, the better the result is.
 
 ## Tokens
 
@@ -39,7 +39,7 @@ This token representation is what allows AI models to generate words that you ca
 
 ## How does completion work?
 
-Natural Language Models generate completions one token at a time in a nondeterministic manner.
+Natural language models generate completions one token at a time in a nondeterministic manner.
 
 At each step, the model outputs a list of tokens and their associated weights. The API then samples one token from the list based on its weight. Heavily weighted tokens are more likely to be selected.
 
