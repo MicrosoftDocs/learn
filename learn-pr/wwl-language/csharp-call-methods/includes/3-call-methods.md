@@ -23,7 +23,7 @@ While some methods can be called the same way that you called `Console.WriteLine
 
 ## Prepare your coding environment
 
-This module includes hands-on activities that guide you through the process of building and running sample code. You are encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities will help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
+This module includes coding activities that guide you through the process of building and running sample code. You are encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities will help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
 
 1. Open Visual Studio Code.
 
@@ -145,7 +145,7 @@ The latest version of the .NET Runtime enables you to instantiate an object with
 Random dice = new();
 ```
 
-The intension is to simplify code readability. You always use parentheses when writing a target-typed `new` expression.
+The intention is to simplify code readability. You always use parentheses when writing a target-typed `new` expression.
 
 ## Why is the Next() method stateful?
 
