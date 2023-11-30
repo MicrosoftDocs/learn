@@ -1,10 +1,7 @@
-* Restate the scenario problem(s) -- Creating a digital representation of an energy grid scenario.
-    * Show how you solved the scenario problem(s) -- Used the Azure Digital Twins APIs to create models and twins and connect them into a graph. Used queries to verify the graph, and created endpoints and event routes in preparation for data to flow between twins.
-    * Describe the experience without the product -- You would have to write a custom application with custom modeling and custom event handling code.
-    * Describe the business impact -- Stakeholders and operators have a quick, all-up view of the energy grid components in the city and how they connect to each other. Later, you can send IoT data into this graph in order to gather insights and build dashboards for what is happening with the city's energy.
+In this module, you explored the major Azure Digital Twins API operations as part of a solution to digitally represent a city energy grid.
 
-## Clean up hands-on resources
-In your Cloud Shell, run the following command to delete the resources that you created in the hands-on exercises for this module.
-```azurecli
-az group delete --name azure-digital-twins-training
-```
+After configuring the API collections in Postman, you used the Import Jobs API to populate an Azure Digital Twins graph with models, twins, and relationships to represent city grid entities. You used the Models and Digital Twins API to verify and update the graph, and the Query API to further validate and explore it. Finally, you used the Endpoints control plane API and Event Routes API to prepare the graph for IoT data to propagate through it.
+
+Using the Azure Digital Twins built-in capabilities for creating models, devices, and connections between them has given you a central destination for device data that's intuitively organized like your real world environment. This can be used to give stakeholders and operators a quick, all-up view of the energy grid components in the city and how they connect to each other. Later, you can send IoT data into this graph in order to gather queryable insights and build dashboards to track what is happening with the city's energy flow.
+
+[!INCLUDE [Instructions to clean up Azure Digital Twins resources](../../includes/clean-up-azure-digital-twins.md)]

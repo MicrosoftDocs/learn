@@ -195,10 +195,4 @@ You can also query historized twin data collected over time using the **data his
 
 For further data processing or storage, you can create **event routes** that export digital twin data to endpoints in either Azure Event Grid, Azure Event Hubs, or Azure Service Bus. Other applications can watch these endpoints and receive the data there. Endpoints and event routes can be defined using the Azure Digital Twins APIs and SDKs or the Azure CLI. In the request, you'll provide the name of the Azure Digital Twins instance, the name of the Event Grid, Event Hubs, or Service Bus resource, and optional filter conditions to specify which events are routed there. If your company in the factory example is already using any database or external applications for distribution center monitoring, you can use event routes to integrate your Azure Digital Twins data into those solutions.
 
-## Clean up hands-on resources
-
-In your Cloud Shell, run the following command to delete the resources that you created in the hands-on exercises for this unit.
-
-```azurecli
-az group delete --name azure-digital-twins-training
-```
+[!INCLUDE [Instructions to clean up Azure Digital Twins resources](../../includes/clean-up-azure-digital-twins.md)]
