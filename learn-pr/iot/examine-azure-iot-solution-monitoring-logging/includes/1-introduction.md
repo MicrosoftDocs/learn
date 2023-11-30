@@ -4,9 +4,9 @@ Suppose you have joined a team that is implementing an Azure IoT solution for th
 
 In this module, you will:
 
- -  Examine Azure Monitor support.
- -  Examine IoT Hub metrics and resource logs.
- -  Examine IoT device connection state monitoring and lifecycle events.
- -  Review IoT Hub service limits and their impact on monitoring.
+* Examine Azure Monitor support.
+* Examine IoT Hub metrics and resource logs.
+* Examine IoT device connection state monitoring and lifecycle events.
+* Review IoT Hub service limits and their impact on monitoring.
 
 By the end of this module, you will be able to describe how to configure Azure Monitor and IoT Hub to support solution monitoring.

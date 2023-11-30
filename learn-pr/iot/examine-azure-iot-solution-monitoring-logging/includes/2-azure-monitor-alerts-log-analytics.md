@@ -4,18 +4,17 @@ Azure Monitor maximizes the availability and performance of your applications an
 
 Just a few examples of what you can do with Azure Monitor include:
 
- -  Detect and diagnose issues across applications and dependencies with Application Insights.
- -  Correlate infrastructure issues with Azure Monitor for VMs and Azure Monitor for Containers.
- -  Drill into your monitoring data with Log Analytics for troubleshooting and deep diagnostics.
- -  Support operations at scale with smart alerts and automated actions.
- -  Create visualizations with Azure dashboards and workbooks.
+* Detect and diagnose issues across applications and dependencies with Application Insights.
+* Correlate infrastructure issues with Azure Monitor for VMs and Azure Monitor for Containers.
+* Drill into your monitoring data with Log Analytics for troubleshooting and deep diagnostics.
+* Support operations at scale with smart alerts and automated actions.
+* Create visualizations with Azure dashboards and workbooks.
 
 ## Overview
 
 The following diagram gives a high-level view of Azure Monitor. At the center of the diagram are the data stores for metrics and logs, which are the two fundamental types of data used by Azure Monitor. On the left are the sources of monitoring data that populate these data stores. On the right are the different functions that Azure Monitor performs with this collected data such as analysis, alerting, and streaming to external systems.
 
 :::image type="content" source="../media/m09-l01-monitoring-logging-azure-monitor-overview-7616d1b6.png" alt-text="Diagram that shows the different functions that Azure Monitor performs.":::
-
 
 ## Monitoring data platform
 
@@ -31,11 +30,11 @@ Azure Monitor uses a version of the Kusto query language that is suitable for si
 
 Azure Monitor can collect data from various sources. You can think of monitoring data for your applications in tiers ranging from your application, any operating system and services it relies on, down to the platform itself. Azure Monitor collects data from each of the following tiers:
 
- -  Application monitoring data: Data about the performance and functionality of the code you have written, regardless of its platform.
- -  Guest OS monitoring data: Data about the operating system on which your application is running. This OS could be running in Azure, another cloud, or on-premises.
- -  Azure resource monitoring data: Data about the operation of an Azure resource.
- -  Azure subscription monitoring data: Data about the operation and management of an Azure subscription, as well as data about the health and operation of Azure itself.
- -  Azure tenant monitoring data: Data about the operation of tenant-level Azure services, such as Microsoft Entra ID.
+* Application monitoring data: Data about the performance and functionality of the code you have written, regardless of its platform.
+* Guest OS monitoring data: Data about the operating system on which your application is running. This OS could be running in Azure, another cloud, or on-premises.
+* Azure resource monitoring data: Data about the operation of an Azure resource.
+* Azure subscription monitoring data: Data about the operation and management of an Azure subscription, as well as data about the health and operation of Azure itself.
+* Azure tenant monitoring data: Data about the operation of tenant-level Azure services, such as Microsoft Entra ID.
 
 As soon as you create an Azure subscription and start adding resources such as virtual machines and web apps, Azure Monitor starts collecting data. Activity logs record when resources are created or modified. Metrics tell you how the resource is performing and the resources that it's consuming.
 
@@ -62,33 +61,32 @@ The diagram below represents the flow of alerts.
 
 :::image type="content" source="../media/m09-l01-monitoring-logging-alerts-flow-52464b0e.png" alt-text="Diagram that shows the flow of alerts in Azure and Azure Monitor.":::
 
-
 Alert rules are separated from alerts and the actions taken when an alert fires. The alert rule captures the target and criteria for alerting. The alert rule can be in an enabled or a disabled state. Alerts only fire when enabled.
 
 The following are key attributes of an alert rule:
 
- -  Target Resource: Defines the scope and signals available for alerting. A target can be any Azure resource. Example targets: a virtual machine, a storage account, a virtual machine scale set, a Log Analytics workspace, or an Application Insights resource. For certain resources (like virtual machines), you can specify multiple resources as the target of the alert rule.
- -  Signal: Emitted by the target resource. Signals can be of the following types: metric, activity log, Application Insights, and log.
- -  Criteria: A combination of signal and logic applied on a target resource. Examples:
-     -  Percentage CPU &gt; 70%
-     -  Server Response Time &gt; 4 ms
-     -  Result count of a log query &gt; 100
- -  Alert Name: A specific name for the alert rule configured by the user.
- -  Alert Description: A description for the alert rule configured by the user.
- -  Severity: The severity of the alert after the criteria specified in the alert rule is met. Severity can range from 0 to 4.
-     -  Sev 0 = Critical
-     -  Sev 1 = Error
-     -  Sev 2 = Warning
-     -  Sev 3 = Informational
-     -  Sev 4 = Verbose
- -  Action: A specific action taken when the alert is fired.
+* Target Resource: Defines the scope and signals available for alerting. A target can be any Azure resource. Example targets: a virtual machine, a storage account, a virtual machine scale set, a Log Analytics workspace, or an Application Insights resource. For certain resources (like virtual machines), you can specify multiple resources as the target of the alert rule.
+* Signal: Emitted by the target resource. Signals can be of the following types: metric, activity log, Application Insights, and log.
+* Criteria: A combination of signal and logic applied on a target resource. Examples:
+* Percentage CPU &gt; 70%
+  * Server Response Time &gt; 4 ms
+  * Result count of a log query &gt; 100
+* Alert Name: A specific name for the alert rule configured by the user.
+* Alert Description: A description for the alert rule configured by the user.
+* Severity: The severity of the alert after the criteria specified in the alert rule is met. Severity can range from 0 to 4.
+  * Sev 0 = Critical
+  * Sev 1 = Error
+  * Sev 2 = Warning
+  * Sev 3 = Informational
+  * Sev 4 = Verbose
+* Action: A specific action taken when the alert is fired.
 
 #### What you can alert on
 
 You can alert on metrics and logs. These include but are not limited to:
 
- -  Metric values
- -  Log search queries
- -  Activity log events
- -  Health of the underlying Azure platform
- -  Tests for website availability
+* Metric values
+* Log search queries
+* Activity log events
+* Health of the underlying Azure platform
+* Tests for website availability

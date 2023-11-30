@@ -210,7 +210,6 @@ Notification message for module:
   :::column-end:::
 :::row-end:::
 
-
 Body: This section is in JSON format and represents the twin of the created module identity. For example,
 
 ```json
@@ -375,10 +374,8 @@ Device identities are represented as JSON documents with the following propertie
   :::column-end:::
 :::row-end:::
 
-
 > [!NOTE]
 > Connection state can only represent the IoT Hub view of the status of the connection. Updates to this state may be delayed, depending on network conditions and configurations.
-
 > [!NOTE]
 > Currently the device SDKs do not support using the + and \# characters in the deviceId.
 
@@ -531,7 +528,6 @@ Module identities are represented as JSON documents with the following propertie
     A temporal indicator, showing the date and last time the device connected, received, or sent a message.
   :::column-end:::
 :::row-end:::
-
 
 > [!NOTE]
 > Currently the device SDKs do not support using the \\+ and \\\# characters in the \*\*deviceId\*\* and \*\*moduleId\*\*.

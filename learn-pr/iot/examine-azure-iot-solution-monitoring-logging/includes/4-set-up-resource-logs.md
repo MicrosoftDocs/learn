@@ -12,35 +12,35 @@ Azure Resource Health helps you diagnose and get support when an Azure issue imp
 
 ## Resource logs and monitoring
 
-Azure Monitor provides diagnostics information for Azure resources, which means that you can monitor operations that take place within your IoT hub. Azure Monitor's diagnostics settings replaces the IoT Hub operations monitor. If you currently use operations monitoring, you should migrate your workflows. For more information, see [Migrate from operations monitoring to diagnostics settings] (https://learn.microsoft.com/azure/iot-hub/iot-hub-migrate-to-diagnostics-settings).
+Azure Monitor provides diagnostics information for Azure resources, which means that you can monitor operations that take place within your IoT hub. Azure Monitor's diagnostics settings replaces the IoT Hub operations monitor. If you currently use operations monitoring, you should migrate your workflows. For more information, see [Migrate from operations monitoring to diagnostics settings](https://learn.microsoft.com/azure/iot-hub/iot-hub-migrate-to-diagnostics-settings).
 
-To learn more about the specific metrics and events that Azure Monitor watches, see [Supported metrics with Azure Monitor] (https://learn.microsoft.com/azure/azure-monitor/platform/metrics-supported) and Supported services, schemas, and categories for Azure Diagnostic Logs [https://learn.microsoft.com/azure/azure-monitor/platform/metrics-supported](/azure/azure-monitor/platform/metrics-supported).
+To learn more about the specific metrics and events that Azure Monitor watches, see [Supported metrics with Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/platform/metrics-supported) and [Supported metrics with Azure Monitor](/azure/azure-monitor/platform/metrics-supported).
 
 Choose where you want to send the logs. You can select any combination of the three options:
 
- -  Archive to a storage account
- -  Stream to an Event Hubs
- -  Send to Log Analytics
+* Archive to a storage account
+* Stream to an Event Hubs
+* Send to Log Analytics
 
-See Azure Monitor pricing: [https://azure.microsoft.com/pricing/details/monitor/](https://azure.microsoft.com/pricing/details/monitor/)
+See [Azure Monitor pricing](https://azure.microsoft.com/pricing/details/monitor/).
 
 Choose which operations you want to monitor, and enable logs for those operations. The operations that diagnostic settings can report on are:
 
- -  Connections
- -  DeviceTelemetry
- -  C2DCommands
- -  DeviceIdentityOperations
- -  FileUploadOperations
- -  Routes
- -  D2CTwinOperations
- -  C2DTwinOperations
- -  TwinQueries
- -  JobsOperations
- -  DirectMethods
- -  DistributedTracing
- -  Configurations
- -  DeviceStreams
- -  AllMetrics
+* Connections
+* DeviceTelemetry
+* C2DCommands
+* DeviceIdentityOperations
+* FileUploadOperations
+* Routes
+* D2CTwinOperations
+* C2DTwinOperations
+* TwinQueries
+* JobsOperations
+* DirectMethods
+* DistributedTracing
+* Configurations
+* DeviceStreams
+* AllMetrics
 
 If you want to turn on diagnostics settings with PowerShell, use the following code:
 
@@ -86,9 +86,9 @@ The connections category tracks device connect and disconnect events from an IoT
 
 The cloud-to-device commands category tracks errors that occur at the IoT hub and are related to the cloud-to-device message pipeline. This category includes errors that occur from:
 
- -  Sending cloud-to-device messages (like unauthorized sender errors).
- -  Receiving cloud-to-device messages (like delivery count exceeded errors).
- -  Receiving cloud-to-device message feedback (like feedback expired errors).
+* Sending cloud-to-device messages (like unauthorized sender errors).
+* Receiving cloud-to-device messages (like delivery count exceeded errors).
+* Receiving cloud-to-device message feedback (like feedback expired errors).
 
 This category does not catch errors when the cloud-to-device message is delivered successfully but then improperly handled by the device.
 
@@ -140,9 +140,9 @@ The device identity operations category tracks errors that occur when you attemp
 
 The message routing category tracks errors that occur during message route evaluation and endpoint health as perceived by IoT Hub. This category includes events such as:
 
- -  A rule evaluates to "undefined".
- -  IoT Hub marks an endpoint as dead.
- -  Any errors received from an endpoint.
+* A rule evaluates to "undefined".
+* IoT Hub marks an endpoint as dead.
+* Any errors received from an endpoint.
 
 This category does not include specific errors about the messages themselves (like device throttling errors), which are reported under the "device telemetry" category.
 
@@ -192,9 +192,9 @@ The device telemetry category tracks errors that occur at the IoT hub and are re
 
 The file upload category tracks errors that occur at the IoT hub and are related to file upload functionality. This category includes:
 
- -  Errors that occur with the SAS URI, such as when it expires before a device notifies the hub of a completed upload.
- -  Failed uploads reported by the device.
- -  Errors that occur when a file is not found in storage during IoT Hub notification message creation.
+* Errors that occur with the SAS URI, such as when it expires before a device notifies the hub of a completed upload.
+* Failed uploads reported by the device.
+* Errors that occur when a file is not found in storage during IoT Hub notification message creation.
 
 This category cannot catch errors that directly occur while the device is uploading a file to storage.
 
@@ -338,7 +338,8 @@ The direct methods category tracks request-response interactions sent to individ
 
 After you set up event logging through diagnostics settings, you can create applications that read out the logs so that you can take action based on the information in them. This sample code retrieves logs from an Event Hubs:
 
-```
+```csharp
+
 class Program
 {
     static string connectionString = "{your AMS eventhub endpoint connection string}";
@@ -408,12 +409,12 @@ class Program
 
 Use Azure Resource Health to monitor whether your IoT hub is up and running. You can also learn whether a regional outage is impacting the health of your IoT hub. To understand specific details about the health state of your Azure IoT Hub, we recommend that you use Azure Monitor as described in the previous section.
 
-Azure IoT Hub indicates health at a regional level. If a regional outage impacts your IoT hub, the health status shows as Unknown. To learn more, see [Resource types and health checks in Azure resource health] (https://learn.microsoft.com/azure/service-health/resource-health-checks-resource-types).
+Azure IoT Hub indicates health at a regional level. If a regional outage impacts your IoT hub, the health status shows as Unknown. To learn more, see [Resource types and health checks in Azure resource health](https://learn.microsoft.com/azure/service-health/resource-health-checks-resource-types).
 
 To check the health of your IoT hubs, follow these steps:
 
- -  Sign in to the Azure portal.
- -  Navigate to Service Health &gt; Resource health.
- -  From the drop-down boxes, select your subscription then select IoT Hub as the resource type.
+* Sign in to the Azure portal.
+* Navigate to Service Health &gt; Resource health.
+* From the drop-down boxes, select your subscription then select IoT Hub as the resource type.
 
-To learn more about how to interpret health data, see [Azure resource health overview] (https://learn.microsoft.com/azure/service-health/resource-health-overview).
+To learn more about how to interpret health data, see [Resource Health overview](https://learn.microsoft.com/azure/service-health/resource-health-overview).
