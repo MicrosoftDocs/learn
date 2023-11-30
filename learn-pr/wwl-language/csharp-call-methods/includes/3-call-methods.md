@@ -145,7 +145,7 @@ The latest version of the .NET Runtime enables you to instantiate an object with
 Random dice = new();
 ```
 
-The intension is to simplify code readability. You always use parentheses when writing a target-typed `new` expression.
+The intention is to simplify code readability. You always use parentheses when writing a target-typed `new` expression.
 
 ## Why is the Next() method stateful?
 
