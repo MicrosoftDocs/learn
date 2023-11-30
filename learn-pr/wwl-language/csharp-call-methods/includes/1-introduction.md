@@ -7,7 +7,7 @@ In this module, you learn about class libraries, and write code that calls metho
 By the end of this module, you'll know how to find classes and methods in the .NET Class Library, and how to use them to perform common programming tasks.
 
 > [!IMPORTANT]
-> This module includes hands-on activities that require Visual Studio Code. You'll need access to a development environment that has Visual Studio Code installed and configured for C# application development.
+> This module includes coding activities that require Visual Studio Code. You'll need access to a development environment that has Visual Studio Code installed and configured for C# application development.
 
 ## Learning Objectives
 
