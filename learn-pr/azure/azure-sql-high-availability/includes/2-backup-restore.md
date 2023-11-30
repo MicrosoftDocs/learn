@@ -12,7 +12,7 @@ Azure SQL takes care of the heavy lifting, but it's still important to understan
 
 In Azure SQL Database and Azure SQL Managed Instance, you can perform a self-service restore. You can choose the exact point in time to which you want to restore and start the process by using the Azure portal, the PowerShell/Azure CLI, or REST APIs. Point-in-time restore (PITR) will create a new database (with a different name) in the same logical server. If you need to replace the original database with the PITR database, you have to rename both the original and the new database to return to a working condition. You won't need to update connection strings.
 
-Retention for PITR varies between one and 35 days. By default, the retention period (for all service tiers and deployment options) is seven days. In most deployment options and service tiers, you can configure the policy to be between one and 35 days, depending on your scenario's requirements. For example, you might need only one day for a test database, but you might choose the maximum of 35 days for a mission-critical database.
+Retention for PITR varies between 1 and 35 days. By default, the retention period (for all service tiers and deployment options) is seven days. In most deployment options and service tiers, you can configure the policy to be between 1 and 35 days, depending on your scenario's requirements. For example, you might need only one day for a test database, but you might choose the maximum of 35 days for a mission-critical database.
 
 ### Long-term retention (LTR)
 
