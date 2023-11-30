@@ -190,7 +190,7 @@ Follow these steps to add a local repository using Git:
 
     ```bash
     $ git add .
-      # Adds the files in the local repository and stages them for commit. To unstage a file, use 'git reset HEAD YOUR-FILE'.
+    # Adds the files in the local repository and stages them for commit. To unstage a file, use 'git reset HEAD YOUR-FILE'.
     ```
 
 1. Commit the files that are staged in your local repository.
