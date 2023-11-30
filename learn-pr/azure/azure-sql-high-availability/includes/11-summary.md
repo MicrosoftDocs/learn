@@ -1,4 +1,4 @@
-In this module and throughout the exercises, you gained some experience with many availability-related features that are available for Azure SQL. In the next module in the Azure SQL fundamentals learning path, you'll look at two scenarios that challenge you to create solutions that use Azure SQL.  
+In this module and throughout the exercises, you gained some experience with many availability-related features for Azure SQL. In the next module in the Azure SQL fundamentals learning path, you'll look at two scenarios that challenge you to create solutions that use Azure SQL.
 
 ## Learn more
 
@@ -12,26 +12,26 @@ People learn in different ways. A Channel 9 video series related to this learnin
 
 In the SQL documentation, you can learn more about how to [restore to a point in time](/sql/relational-databases/backup-restore/restore-a-sql-server-database-to-a-point-in-time-full-recovery-model) and [restore a deleted database](/azure/sql-database/sql-database-recovery-using-backups#deleted-database-restore).
 
-In the PITR exercise, you used the Azure CLI to perform a restore for Azure SQL Database. In Azure SQL Managed Instance, the process is similar but uses slightly different commands. You can review the commands in the [SQL documentation](/azure/azure-sql/database/recovery-using-backups#sql-managed-instance-2).  
+In the PITR exercise, you used the Azure CLI to perform a restore for Azure SQL Database. In Azure SQL Managed Instance, the process is similar, but uses slightly different commands. You can review the commands in the [SQL documentation](/azure/azure-sql/database/recovery-using-backups#sql-managed-instance-2).  
 
 ### Kusto Query Language (KQL) and Azure PowerShell
 
-KQL is used for many logging activities in Azure. To learn more about the language, see the [KQL documentation](/azure/kusto/query/?azure-portal=true).
+KQL is used for many logging activities in Azure. To learn more about the language, see the [KQL documentation](/azure/data-explorer/kusto/query/).
 
-You've also used PowerShell in the availability exercises. To learn more about PowerShell commands that are available for Azure SQL, see [Azure PowerShell samples](/azure/sql-database/sql-database-powershell-samples?azure-portal=true&tabs=single-database).  
+You've also used PowerShell in the availability exercises. To learn more about PowerShell commands that are available for Azure SQL, see [Azure PowerShell samples](/azure/azure-sql/database/powershell-script-content-guide).  
 
 ### High availability
 
-See the SQL Database documentation for more information about [business continuity](/azure/sql-database/sql-database-business-continuity?azure-portal=true) and [high availability](/azure/sql-database/sql-database-high-availability?azure-portal=true) in Azure SQL. You can also review the SLAs for [Azure SQL Managed Instance](https://azure.microsoft.com/support/legal/sla/azure-sql-sql-managed-instance/v1_0/) and [Azure SQL Database](https://azure.microsoft.com/support/legal/sla/azure-sql-database/v1_5/).
+See the SQL Database documentation for more information about [business continuity](/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview) and [high availability](/azure/azure-sql/database/high-availability-sla) in Azure SQL. You can also review the SLAs for [Azure SQL Managed Instance](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services) and [Azure SQL Database](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services).
 
-In the Business Critical tier, you can opt in (for no additional fee) for a [zone-redundant configuration](/azure/sql-database/sql-database-high-availability#zone-redundant-configuration?azure-portal=true) if your [region supports that](/azure/availability-zones/az-overview#services-support-by-region?azure-portal=true).
+In the Business Critical tier, you can opt in (for no additional fee) for a [zone-redundant configuration](/azure/azure-sql/database/high-availability-sla#zone-redundant-availability) if your [region supports that](/azure/reliability/availability-zones-service-support).
 
 ### Availability and consistency
 
-If you want to learn more about how Azure manages data integrity, check out this in-depth [blog post](https://azure.microsoft.com/blog/data-integrity-in-azure-sql-database/?azure-portal=true). If you want to learn more about Accelerated Database Recovery, the [documentation](/azure/azure-sql/accelerated-database-recovery?azure-portal=true) is detailed and provides references to other resources, like white papers.
+If you want to learn more about how Azure manages data integrity, check out this in-depth [blog post](https://azure.microsoft.com/blog/data-integrity-in-azure-sql-database/?azure-portal=true). If you want to learn more, the [Accelerated Database Recovery documentation](/azure/azure-sql/accelerated-database-recovery) is detailed and provides references to other resources, like white papers.
 
 ### Designing cloud solutions for disaster recovery
 
-You can learn more about how to [design globally available services by using Azure SQL Database here](/azure/sql-database/sql-database-designing-cloud-solutions-for-disaster-recovery?azure-portal=true). Also, Microsoft provides [outage recovery guidance](/azure/sql-database/sql-database-disaster-recovery?azure-portal=true) and encourages you to complete [disaster recovery drills](/azure/sql-database/sql-database-disaster-recovery-drills?azure-portal=true).
+You can learn more about how to [design globally available services by using Azure SQL Database here](/azure/azure-sql/database/designing-cloud-solutions-for-disaster-recovery). Also, Microsoft provides [outage recovery guidance](/azure/azure-sql/database/disaster-recovery-guidance) and encourages you to complete [disaster recovery drills](/azure/azure-sql/database/disaster-recovery-drills).
 
-The exercise you completed on implementing a geo-distributed application is based on a [tutorial in the documentation](/azure/sql-database/sql-database-implement-geo-distributed-database?azure-portal=true&tabs=azure-powershell). This tutorial also includes information about using the Azure portal and the Azure CLI.
+The exercise you completed on implementing a geo-distributed application is based on a [tutorial in the documentation](/azure/azure-sql/database/geo-distributed-application-configure-tutorial). This tutorial also includes information about using the Azure portal and the Azure CLI.
