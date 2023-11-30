@@ -147,7 +147,7 @@ Send the request.
 
 The response from a successful request looks something like this:
 
-:::image type="content" source="../media/6-event-routes-get-by-id.png" alt-text="Postman screenshot showing the results of the Event Routes Get by Id request." border="false" lightbox="../media/6-event-routes-get-by-id.png":::
+:::image type="content" source="../media/6-event-routes-get-by-id.png" alt-text="Postman screenshot showing the results of the Event Routes Get by ID request." border="false" lightbox="../media/6-event-routes-get-by-id.png":::
 
 This 200 response returns the details of your event route, including its ID, the endpoint where it connects, and any filters it applies.
 
