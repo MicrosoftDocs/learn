@@ -1,8 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-well-architected-reliability.6-keep-it-simple
+title: Keep it simple
 metadata:
-  title: Design for recovery
-  description: Learn strategies for designing your Azure workload to support recovery.
+  title: Keep it simple
+  description: Learn strategies for simplifying your workload design to optimize its reliability.
   ms.date: 12/31/2023
   author: claytonsiemens77
   ms.author: csiemens
