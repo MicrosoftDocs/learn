@@ -12,3 +12,4 @@ The Azure cloud is made up of physical hardware and there are limits to its scal
 
 > [!NOTE]
 > A subscription is also the "financial" constraint with spending limits that require a request to extend.
+

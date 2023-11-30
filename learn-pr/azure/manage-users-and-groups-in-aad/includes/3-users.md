@@ -1,10 +1,10 @@
-Every user who needs access to Azure resources needs an Azure user account. A user account contains all the information needed to authenticate you during the sign-in process. Once authenticated, Microsoft Entra ID builds an access token to authorize you, determine what resources you can access, and determine what you can do with those resources.
+Every user who needs access to Azure resources needs an Azure user account. Your user account contains all the information needed to authenticate you during the sign-in process. Once authenticated, Microsoft Entra ID builds an access token to authorize you, determine what resources you can access, and determine what you can do with those resources.
 
-You can use the **Microsoft Entra ID** dashboard in the Azure portal to work with user objects. Keep in mind that you can only work with a single directory at a time, but you can use the **Directory + Subscription** pane to switch directories. The dashboard also has a **Switch directory** button in the toolbar, which makes it easy to switch to another available directory.
+You can use the **Microsoft Entra ID** dashboard in the Azure portal to work with user objects. Keep in mind that you can only work with a single directory at a time, but you can use the **Directory + Subscription** pane to switch directories. The dashboard also has a **Manage tenants** button in the toolbar, which makes it easy to view all your directories and switch to another available directory.
 
 ## View users
 
-To view the Microsoft Entra users, in the left menu pane, under **Manage**, select **Users**. The **All Users** pane appears. Take a minute to access the portal and view your users. Notice the **User type** and **Identities** columns, as shown in the following screenshot:
+To view the Microsoft Entra users, in the left menu pane, under **Manage**, select **Users**. The **All Users** pane appears. Notice the **User type** and **Identities** columns, as shown in the following screenshot:
 
 ![Screenshot that depicts the All users pane, with the **User type** and **Identities** columns noted.](../media/M1-AAD-Users.png)
 
@@ -37,7 +37,7 @@ You can manually add new users through the Azure portal. This is the easiest way
 
     ![Screenshot showing the New User button highlighted in the Microsoft Entra admin center.](../media/2-new-user-all-users-pane.png)
 
-1. In addition to **Name** and **User name**, you can add profile information, like **Job Title** and **Department**.
+1. In addition to **Name** and **User name**, you can add profile information, like **Job Title** and **Department**, on the **Properties** tab.
 
     ![Screenshot showing the New user dialog.](../media/2-new-user-user-pane.png)
 
@@ -94,7 +94,7 @@ To use a CSV with Azure PowerShell:
 
 1. Run the `Connect-AzureAD` command to create an Azure PowerShell connection to your directory. Connect with an admin account that has privileges on your directory.
 
-1. Create new password profiles for the new users. The passwords for the new users need to conform to the password complexity rules you have set for your directory.
+1. Create new password profiles for the new users. The passwords for the new users need to conform to the password-complexity rules you have set for your directory.
 
 1. Use `Import-CSV` to import the CSV. You need to specify the path and file name of the CSV.
 

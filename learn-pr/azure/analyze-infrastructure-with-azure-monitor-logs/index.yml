@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/27/2023
   author: guywi-ms
   ms.author: guywild
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-monitor
   ms.subservice: logs
 title: Analyze your Azure infrastructure by using Azure Monitor logs

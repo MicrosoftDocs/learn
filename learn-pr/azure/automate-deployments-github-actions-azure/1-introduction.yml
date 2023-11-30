@@ -12,8 +12,7 @@ metadata:
     - team=nextgen
     - devx-track-dotnet
     - devx-track-python
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 02
 content: |
   [!include[](includes/1-introduction.md)]

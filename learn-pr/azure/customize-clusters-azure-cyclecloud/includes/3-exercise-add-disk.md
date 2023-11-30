@@ -136,11 +136,10 @@ Now, you'll download and modify the sample Azure CycleCloud template that's comp
     cd ~/cyclecloud-slurm/templates
     ```
 
-1. Run the following commands to download the intended version of the cluster template:
+1. Run the following commands to create a backup of the original cluster template:
 
     ```azurecli
-    mv slurm.txt slurm.bak.txt
-    curl -O https://raw.githubusercontent.com/Azure/cyclecloud-slurm/2.4.1/templates/slurm.txt
+    cp slurm.txt slurm.bak.txt
     ```
 
 1. Run the following command to open the downloaded template in the nano editor:

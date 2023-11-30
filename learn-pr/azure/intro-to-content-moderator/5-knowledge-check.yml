@@ -7,8 +7,7 @@ metadata:
   ms.date: 01/29/2021
   author: gerryo
   ms.author: gerryo
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 10
 quiz:

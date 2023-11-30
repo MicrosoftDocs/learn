@@ -3,10 +3,10 @@ uid: learn.optimize-operations-with-automanage
 metadata:
   title: Optimizing IT operations and management with Azure Automanage
   description: Learn how to use Azure Automanage to optimize IT operations and management.
-  ms.date: 06/30/2023
+  ms.date: 11/27/2023
   author: johnmarco
   ms.author: johnmarc
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: automanage
 title: Optimizing IT operations and management with Azure Automanage
 summary: In this module, you'll discover how to optimize IT operations and management with Azure Automanage. 
@@ -27,8 +27,8 @@ roles:
   - administrator
   - solution-architect
 products:
-- azure
 - azure-arc
+- azure-automanage
 subjects:
   - cloud-computing
 units:
