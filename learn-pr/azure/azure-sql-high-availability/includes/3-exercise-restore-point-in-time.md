@@ -180,7 +180,7 @@ The first step is to figure out the time to which to restore the database. You n
     :::image type="content" source="../media/3-log-analytics-results.png" alt-text="Screenshot that shows Log Analytics results.":::
 
     > [!NOTE]
-    > It can take five to 10 minutes for the logs to appear here, so for the purposes of this exercise, we've left it out. You'll instead use the completion time you noted in the previous step. (You need to convert it to GMT.) In a real-world situation, you're not likely to be able to get to the window with the completion time, so auditing can be a great help.  
+    > It can take 5 to 10 minutes for the logs to appear here, so for the purposes of this exercise, we've left it out. You'll instead use the completion time you noted in the previous step. (You need to convert it to GMT.) In a real-world situation, you're not likely to be able to get to the window with the completion time, so auditing can be a great help.  
 
 1. In this example, the date/time is `2020-07-24 08:06:24.386` from Log Analytics and `2020-07-24T13:06:24.386-07:00` from SSMS. The required format is slightly different. Use the following example to determine the correct format. You might also want to subtract 0.001 seconds to ensure you restore to a time *before* the error occurred:
     * Log Analytics format: `2020-07-24 08:06:24.386`
@@ -204,7 +204,7 @@ In this section, you'll use `az cli db restore` to restore the database to a tim
     az sql db restore --dest-name "AdventureWorks-copy" --name "AdventureWorks" --time $before_error_time --verbose
     ```
 
-    The restore will take about five to 10 minutes. When you run a restore, Azure deploys a new Azure SQL database in your Azure SQL Database logical server. The new database has the same configuration options as the original. After the Azure SQL database is deployed, Azure restores the database into the new Azure SQL database.  
+    The restore will take about 5 to 10 minutes. When you run a restore, Azure deploys a new Azure SQL database in your Azure SQL Database logical server. The new database has the same configuration options as the original. After the Azure SQL database is deployed, Azure restores the database into the new Azure SQL database.  
 
 1. You can check the status by refreshing your view of databases in SSMS. Right-click the **Databases** folder and select **Refresh**. After the database is deployed, you'll see that the restore is in progress:  
 
