@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-large-language-models.llms-core-concepts
-title: "Core concepts of LLMS"
+title: "Core concepts of LLMs"
 metadata:
-  title: "Core concepts of LLMS"
+  title: "Core concepts of LLMs"
   description: Learn core concepts of large language models.
   ms.date: 11/30/2023
   author: softchris
