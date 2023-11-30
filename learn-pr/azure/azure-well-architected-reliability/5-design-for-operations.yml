@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-reliability.4-design-for-recovery
+uid: learn.azure-well-architected-reliability.5-design-for-operations
 metadata:
   title: Design for recovery
   description: Learn strategies for designing your Azure workload to support recovery.
@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-design-for-recovery.md)]
+  [!include[](includes/5-design-for-operations.md)]
 quiz:
   title: Check your knowledge
   questions:
