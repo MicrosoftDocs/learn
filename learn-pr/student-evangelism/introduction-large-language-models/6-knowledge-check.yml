@@ -3,7 +3,7 @@ uid: learn.introduction-large-language-models.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Determine your understanding of large language models.
+  description: Check your knowledge.
   ms.date: 11/30/2023
   author: softchris
   ms.author: chnoring
@@ -16,9 +16,9 @@ quiz:
   questions:
   - content: "What is the purpose of an LLM?"
     choices:
-    - content: "To process and produce natural language text by learning from a massive amount of text data to discover patterns and rules of language from them."
+    - content: "To process and produce natural language text by learning from a massive amount of text data to discover patterns and rules of language."
       isCorrect: true
-      explanation: "Correct. An LLM processes and produces natural language text by learning from a massive amount of text data to discover patterns and rules of language from them."
+      explanation: "Correct. An LLM processes and produces natural language text by learning from a massive amount of text data to discover patterns and rules of language."
     - content: "To exhibit anthropomorphism and understand emotions."
       isCorrect: false
       explanation: "Incorrect. An LLM can't exhibit anthropomorphism or understand emotions."
