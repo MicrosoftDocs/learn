@@ -7,7 +7,7 @@ GitHub Codespaces a hosted developer environment operating in the cloud that can
 
 ## Scenario: Improving a project
 
-As a developer, you want to be more productive typing code faster both for net new projects and existing ones. For this task, you hope that an AI assistant is what you need to improve your developer workflows in code writing, documentation, testing and more.
+As a developer, you want to be more productive typing code faster both for new projects and existing ones. For this task, you hope that an AI assistant is what you need to improve your developer workflows in code writing, documentation, testing and more.
 
 In this module, you'll understand how you can use GitHub Copilot with applied examples modifying a repository using a prompt to customize scroll behavior as well as live suggestions after typing initial code.
 
