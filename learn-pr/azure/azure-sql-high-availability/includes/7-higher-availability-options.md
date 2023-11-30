@@ -14,7 +14,10 @@ Availability Zones are relatively new to Azure SQL, so they're currently availab
 
 Azure SQL maintains a service-level agreement (SLA) that provides financial backing to the commitment to achieve and maintain service levels. If your service level isn't achieved and maintained as described in the SLA, you might be eligible for a credit toward a portion of your monthly service fees.
 
-Currently, you can achieve the highest availability (99.995%) from an Azure SQL Database Business Critical deployment that has Availability Zones configured. The Business Critical tier is the only option in the industry that provides RPO and RTO SLAs of five seconds and 30 seconds, respectively. RPO stands for *recovery point object*. It represents the amount of data you're potentially willing to lose in a worst case scenario. RTO stands for *recovery time objective*. It represents how long it takes to be back up and running again if a disaster occurs.
+Currently, you can achieve the highest availability (99.995%) from an Azure SQL Database Business Critical deployment that has Availability Zones configured. The Business Critical tier is the only option in the industry that provides RPO and RTO SLAs of 5 to 30 seconds, respectively.
+
+- RPO stands for *recovery point object*. It represents the amount of data you're potentially willing to lose in a worst case scenario. 
+- RTO stands for *recovery time objective*. It represents how long it takes to be back up and running again if a disaster occurs.
 
 For General Purpose or single-zone Business Critical deployments of Azure SQL Database or Azure SQL Managed Instance, the SLA is 99.99%.
 
