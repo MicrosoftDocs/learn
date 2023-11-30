@@ -1,4 +1,4 @@
-There are a few core concepts that are important to understand to effectively use LLMs, namely tokens and prompts.
+There are a few core concepts that are important to understand to effectively use LLMs, namely *tokens* and *prompts*.
 
 - **Prompt**: A prompt is a text sentence used to instruct the LLM. Depending on how you word the sentence, you get different results.
 - **Token**: A token can be a single character, a fraction of a word, or an entire word. A single token can be used to represent common words, while multiple tokens are needed to represent less common words.
@@ -9,20 +9,20 @@ A text prompt is a sentence. An LLM understands several different languages. You
 
 - _Generate an image of a pink parrot with a pirate hat._
 
-- _Create a web app in Python that handles customers_
+- _Create a web app in Python that handles customers._
 
 The more specific you are about what you’re asking for, the better the result is.
 
 ## Tokens
 
-A token is a basic unit text or code that an LLM understands and can process.
+A token is a basic unit text or code that an LLM can understand and process.
 
 OpenAI natural language models don't operate on words or characters as units of text, but on something in-between: tokens.
 
 OpenAI provides a useful tokenizer website that can help you understand how it tokenizes your requests. For more information, see [OpenAI tokenizer](https://platform.openai.com/tokenizer).
 
 > [!NOTE]
-> After you start typing inside the prompt box a counter appears to count the total number of tokens in the box.
+> After you start typing inside the OpenAI tokenizer prompt box a counter appears to count the total number of tokens in the box.
 >
 > If you're actively typing, the counter might take a few seconds to update.
 
@@ -45,11 +45,11 @@ At each step, the model outputs a list of tokens and their associated weights. T
 
 :::image type="content" source="../media/token-list.png" alt-text="Diagram showing multiple square blocks that represent n number of input tokens with an arrow beside them pointing to one square block that represents one output token.":::
 
-The API adds the selected token to the prompt and repeats the process until the maximum length of tokens for completions is reached or until the model generates a special token called the `stop token`, which prevents the generation of new tokens.
+The API adds the selected token to the prompt and repeats the process until the maximum length of tokens for completions is reached or until the model generates a special token called the *stop token*, which prevents the generation of new tokens.
 
 This nondeterministic process is what makes the model generate new words each time we send a request for completions.
 
 > [!NOTE]
-> Each LLM has a limit on the number of tokens it can generate. In completions, this limit applies to the total number of tokens in the original prompt and the newly generated ones as they are added together. For more information about token limits, see the [Azure OpenAI Service models](https://learn.microsoft.com/azure/ai-services/openai/concepts/models).
+> Each LLM has a limit on the number of tokens it can generate. In completions, this limit applies to the total number of tokens in the original prompt and the newly generated ones as they're added together. For more information about token limits, see the [Azure OpenAI Service models](https://learn.microsoft.com/azure/ai-services/openai/concepts/models).
 >
 > Larger token limits allow for longer completions and much larger prompts.

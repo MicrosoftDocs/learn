@@ -2,7 +2,7 @@ You might be familiar with AI models that can analyze text, images, or audio. Ea
 
 ## Scenario: Evaluating large language models for your tech startup
 
-You're a student thinking about creating a product that uses AI. You heard about LLMs and you might have used something like ChatGPT. To determine if this type of AI is right for your product, you need to learn about core concepts and understand what scenarios LLMs are good for.
+Imagine you're a student thinking about creating a product that uses AI. You heard about LLMs and you might have experience using a feature like ChatGPT. To determine if this type of AI is right for your product, you need to learn the core concepts of LLMs and understand what scenarios LLMs are good for.
 
 ## What will you learn?
 
