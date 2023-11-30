@@ -122,7 +122,7 @@ First, let's confirm that the table we'll *accidentally* delete exists and has d
 
     :::image type="content" source="../media/3-default.png" alt-text="Screenshot that shows the default connection.":::
 
-1. Expand the **Databases** folder, then right-click your AdventureWorks database and select **New Query**. Enter the following query run it by selecting **Execute**, then review the results:  
+1. Expand the **Databases** folder, then right-click your AdventureWorks database and select **New Query**. Enter the following query and run it by selecting **Execute**, then review the results:  
 
     ```sql
     SELECT TOP 10 * from SalesLT.SalesOrderDetail
