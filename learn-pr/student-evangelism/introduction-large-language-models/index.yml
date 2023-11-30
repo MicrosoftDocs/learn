@@ -11,8 +11,8 @@ title: "Introduction to large language models"
 summary: Learn how to use large language models (LLMs), "general purpose" AI models that can analyze text, images, and audio, to improve your workflow.
 abstract: |
   After completing this module, you'll be able to:
-  - Explain what a large language model is.
-  - Describe What LLMs can and can't do.
+  - Explain what a large language model (LLM) is.
+  - Describe what LLMs can and can't do.
   - Understand core concepts like prompts, tokens, and completions.
   - Distinguish between different models to understand which one to choose for what purpose.
 prerequisites: None

@@ -23,7 +23,7 @@ Large language models can perform multiple natural language tasks, including:
 
 Large language models are proficient in over a dozen programming languages, such as C#, JavaScript, Perl, PHP, and Python. By using LLMs to code, you can solve the following challenges:
 
-- **Build applications**: You can use LLMs to generate code like a Web API based on prompts.
+- **Build applications**: You can use LLMs to generate code like a web API based on prompts.
 - **Maintain applications**: If you work on an existing codebase, LLMs can help you update or maintain the existing code.
 - **Improve applications**: You can use LLMs to improve code for a specific metric, like increased security or logging.
 

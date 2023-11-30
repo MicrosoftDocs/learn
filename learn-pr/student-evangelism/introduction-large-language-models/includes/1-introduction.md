@@ -6,13 +6,13 @@ Imagine you're a student thinking about creating a product that uses AI. You hea
 
 ## What will you learn?
 
-In this module you learn to:
+In this module, you learn to:
 
-- Explain what a large language model is.
-- Describe What LLMs can and can't do.
+- Explain what an LLM is.
+- Describe what LLMs can and can't do.
 - Understand core concepts like prompts, tokens, and completions.
 - Distinguish between different models to understand which one to choose for what purpose.
 
 ## What is the main goal?
 
-Understand large language models and which one to use for what purpose.
+Understand LLMs and which one to use for what purpose.

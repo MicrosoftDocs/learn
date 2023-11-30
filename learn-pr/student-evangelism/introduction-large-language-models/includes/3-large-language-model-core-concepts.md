@@ -22,7 +22,7 @@ OpenAI natural language models don't operate on words or characters as units of 
 OpenAI provides a useful tokenizer website that can help you understand how it tokenizes your requests. For more information, see [OpenAI tokenizer](https://platform.openai.com/tokenizer).
 
 > [!NOTE]
-> After you start typing inside the OpenAI tokenizer prompt box a counter appears to count the total number of tokens in the box.
+> After you start typing inside the OpenAI tokenizer prompt box, a counter appears to count the total number of tokens in the box.
 >
 > If you're actively typing, the counter might take a few seconds to update.
 
@@ -30,7 +30,7 @@ OpenAI provides a useful tokenizer website that can help you understand how it t
 
 Let's try to determine the number of tokens for the following words `apple`, `blueberries`, and `Skarsgård`.
 
-Because the word `apple` is a common word, it requires one token to be represented. On the other hand, the word `blueberries` requires two tokens `blue` and `berries` to be represented. Unless the word is common, proper names like `Skarsgård` require multiple tokens to be represented.
+Because the word `apple` is a common word, it requires one token to be represented. On the other hand, the word `blueberries` requires two tokens (`blue` and `berries`) to be represented. Unless the word is common, proper names like `Skarsgård` require multiple tokens to be represented.
 
 This token representation is what allows AI models to generate words that you can't find in any dictionary without having to generate text on a letter-by-letter basis.
 
@@ -41,7 +41,7 @@ This token representation is what allows AI models to generate words that you ca
 
 Natural language models generate completions one token at a time in a nondeterministic manner.
 
-At each step, the model outputs a list of tokens and their associated weights. The API then samples one token from the list based on its weight. Heavily weighted tokens are more likely to be selected.
+At each step, the model emits a list of tokens and their associated weights. The API then samples one token from the list based on its weight. Heavily weighted tokens are more likely to be selected.
 
 :::image type="content" source="../media/token-list.png" alt-text="Diagram showing multiple square blocks that represent n number of input tokens with an arrow beside them pointing to one square block that represents one output token.":::
 
@@ -50,6 +50,6 @@ The API adds the selected token to the prompt and repeats the process until the 
 This nondeterministic process is what makes the model generate new words each time we send a request for completions.
 
 > [!NOTE]
-> Each LLM has a limit on the number of tokens it can generate. In completions, this limit applies to the total number of tokens in the original prompt and the newly generated ones as they're added together. For more information about token limits, see the [Azure OpenAI Service models](https://learn.microsoft.com/azure/ai-services/openai/concepts/models).
+> Each LLM has a limit on the number of tokens it can generate. In completions, this limit applies to the total number of tokens in the original prompt and the newly generated ones as they're added together. For more information about token limits, see the [Azure OpenAI Service models](/azure/ai-services/openai/concepts/models?azure-portal=true).
 >
 > Larger token limits allow for longer completions and much larger prompts.
