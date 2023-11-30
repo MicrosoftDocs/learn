@@ -4,7 +4,7 @@ Now that you know about all the possibilities, you need to create a strategy for
 
 A large part of creating a strategy is stepping back and thinking about the requirements of your workload. Here are some questions to consider:
 
-- Do you need long-term backups? Or is one to 35 days long enough?
+- Do you need long-term backups? Or is 1-35 days long enough?
 - What are your RTO and RPO needs?
 - Based on the SLA, what service tier makes the most sense?
 - Do you need Availability Zones?
@@ -37,7 +37,7 @@ In addition to Azure service events, you can also view the availability of your 
 
 One way to view a possible reason for a managed instance or database to be unavailable is to examine resource health by using the Azure portal or REST APIs.
 
-You can always use standard SQL Server tools like SSMS to connect to a managed instance or database server and check the status of these resources. You can use the tool or T-SQL queries.
+You can always use standard SQL Server tools like SQL Server Management Studio (SSMS) to connect to a managed instance or database server and check the status of these resources. You can use the tool or T-SQL queries.
 
 Interfaces like Azure CLI can show the status of Azure SQL. For example:
 
