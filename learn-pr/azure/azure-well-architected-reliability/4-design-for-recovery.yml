@@ -1,5 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-well-architected-reliability.4-design-for-recovery
+title: Design for recovery
 metadata:
   title: Design for recovery
   description: Learn strategies for designing your Azure workload to support recovery.
