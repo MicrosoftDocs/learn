@@ -46,9 +46,9 @@ There are several other files commonly used in GitHub projects to explain differ
 |File|Purpose|
 |---|----|
 |`README.md`|The landing page for the directory. This page is rendered when its directory is viewed on GitHub.|
-|`LICENSE.md`|The license under which the code is provided.|
+|`LICENSE.md`|This file contains the license under which the code is provided.|
 |`CONTRIBUTING.md`|Explains how users should contribute to the project, such as pull request expectations.|
-|`SECURITY.md`|Explains the security policy for the project and provides guidance to users wanting to submit sensitive security-related code or feedback that shouldn't be publicly disclosed before it's addressed.|
+|`SECURITY.md`|Explains the security policy for the project. This file provides guidance to users that want to submit sensitive security-related code or feedback that shouldn't be publicly disclosed before being addressed.|
 
 Learn more about [Setting up your project for healthy contributions](https://docs.github.com/communities/setting-up-your-project-for-healthy-contributions).
 
