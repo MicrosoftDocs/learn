@@ -6,8 +6,8 @@ metadata:
   title: Define child resources
   description: Learn how to create child resources in your Bicep template.
   ms.date: 01/23/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep
