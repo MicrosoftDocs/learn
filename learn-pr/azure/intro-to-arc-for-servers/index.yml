@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/13/2023
   author: johnmarco
   ms.author: johnmarc
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: e2e-hybrid
   ms.service: azure-arc
 title: Introduction to Azure Arc-enabled servers
