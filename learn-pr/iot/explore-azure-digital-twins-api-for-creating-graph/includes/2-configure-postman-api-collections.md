@@ -38,7 +38,8 @@ az account get-access-token --resource 0b07f429-9f4b-4714-9392-cc5e8e80c8b0
 
 Copy the value of `accessToken` from the result, and save it to use in the next section. This is your **data plane token** value.
 
-These tokens are valid for up to 60 minutes. If you run out of time allotted for the current tokens, you can repeat the steps in this section to generate new ones.
+>[!IMPORTANT]
+>These tokens are valid for up to 60 minutes. If you run out of time allotted for the current tokens, you can repeat the steps in this section to generate new ones.
 
 ### Set up collections
 

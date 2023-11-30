@@ -15,16 +15,16 @@ In another browser tab, navigate to the [Azure Cloud Shell](https://ms.portal.az
 Run the following commands in the Cloud Shell to set up your session and create a resource group to use for this unit. There is one placeholder for your Azure subscription ID value.
 
 ```azurecli
-    az account set --subscription "<your-Azure-subscription-ID>"
-    az group create --name azure-digital-twins-training --location westus2
+az account set --subscription "<your-Azure-subscription-ID>"
+az group create --name azure-digital-twins-training --location westus2
 ```
 
 Next, create an Azure Digital Twins instance. Run the following commands in the Cloud Shell to generate a random name for the instance and then create a new instance with that name.
 
 ```azurecli
-    INSTANCE_NAME="Digital-Twins-$RANDOM"
-    echo "Your Azure Digital Twins instance name will be: $INSTANCE_NAME"
-    az dt create --dt-name $INSTANCE_NAME --resource-group azure-digital-twins-training --location westus2
+INSTANCE_NAME="Digital-Twins-$RANDOM"
+echo "Your Azure Digital Twins instance name will be: $INSTANCE_NAME"
+az dt create --dt-name $INSTANCE_NAME --resource-group azure-digital-twins-training --location westus2
 ```
 
 Finally, run the following command to grant yourself the *Azure Digital Twins Data Owner* role on the instance, which is required to edit its data.
@@ -35,6 +35,6 @@ Finally, run the following command to grant yourself the *Azure Digital Twins Da
 > If you find you're unable to run this command and you want to follow along with the hands-on exercises in this unit, have someone with elevated permissions (such as an Owner, Account Admin, or User Access Administrator + Contributor) run this command on your behalf. Instead of assigning the role to the current signed-in user account, they can enter the email associated with your Azure account for the `assignee` parameter.
 
 ```azurecli
-    $USER = az ad signed-in-user show --query id -o tsv
-    az dt role-assignment create --dt-name $INSTANCE_NAME --assignee $USER --role "Azure Digital Twins Data Owner"
+$USER = az ad signed-in-user show --query id -o tsv
+az dt role-assignment create --dt-name $INSTANCE_NAME --assignee $USER --role "Azure Digital Twins Data Owner"
 ```
