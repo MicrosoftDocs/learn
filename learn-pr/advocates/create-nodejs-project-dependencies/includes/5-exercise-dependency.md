@@ -36,13 +36,13 @@ You have some code that extracts an address from a string. Your job is simple: i
 
 1. Close the `address-parser.js` file.
 
-1. Install the Jest library by running this command:
+1. Install the Jest package by running this command:
 
    ```bash
    npm install jest --save-dev
    ```
 
-1. After the Jest library installs, open the `package.json` file and find the `devDependencies` section. You should see an entry that looks like this example where the value for the `jest` property is a semantic version number:
+1. After the Jest package installs, open the `package.json` file and find the `devDependencies` section. You should see an entry that looks like this example where the value for the `jest` property is a semantic version number:
 
    ```json
    "devDependencies": {

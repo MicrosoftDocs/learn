@@ -41,7 +41,7 @@ Here's a sneak peek of the `package.json` file you'll generate.
 Think of the `package.json` file as a treasure chest, filled with precious gems that give your project its sparkle. These gems are the properties in the `package.json` file, and they fall into three main categories:
 
 - **Meta-information**: These properties are like the crown jewels, defining the meta-information about your project. They include the project name, description, author, keywords, and more.
-- **Dependencies**: These are the gold and silver coins, representing the libraries your project uses. The `dependencies` and `devDependencies` properties hold these treasures. As we journey further, you'll learn how to use these properties to install, update, and manage your dependencies.
+- **Dependencies**: These are the gold and silver coins, representing the packages your project uses. The `dependencies` and `devDependencies` properties hold these treasures. As we journey further, you'll learn how to use these properties to install, update, and manage your dependencies.
 - **Scripts**: These are the terminal commands that make your project tasks happen. You can list scripts for tasks like start, build, test, and lint.
 
 ### Expediate tasks with scripts
@@ -50,7 +50,7 @@ In your `package.json` file, you should include at least four common scripts:
 
 - `start`: This spell brings your project to life. For example, it might use the command `node ./src/index.js`.
 - `build`: This spell prepares your project for its grand debut. It might transform TypeScript into JavaScript, for instance.
-- `test`: This spell checks your project's health, typically using a testing library.
+- `test`: This spell checks your project's health, typically using a testing package.
 - `lint`: This spell tidies up your code, checking for style and formatting issues using a tool like ESLint.
 
 These script names are like magic words, universally recognized in the developer community and essential for keeping your project organized.

@@ -46,7 +46,7 @@ Tailwind Traders has asked you to work on an app that has some outdated dependen
     run();
     ```
 
-   This code pulls data from a REST API by using the `node-fetch` library. It processes the response by sorting it and takes the top three results by using the `lodash` library. The result is stored in a file.
+   This code pulls data from a REST API by using the `node-fetch` package. It processes the response by sorting it and takes the top three results by using the `lodash` package. The result is stored in a file.
 
 
 ## npm audit

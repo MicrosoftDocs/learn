@@ -1,8 +1,8 @@
-As a developer at Tailwind Traders, it's important to keep our libraries up-to-date. This helps ensure that we're using the latest features and fixes. It also helps us avoid security vulnerabilities. In this unit, you'll learn how to manage dependencies in a Node.js project. You'll learn how to update packages, use semantic versioning, and manage security issues.
+As a developer at Tailwind Traders, it's important to keep our packages up-to-date. This helps ensure that we're using the latest features and fixes. It also helps us avoid security vulnerabilities. In this unit, you'll learn how to manage dependencies in a Node.js project. You'll learn how to update packages, use semantic versioning, and manage security issues.
 
 ## Considerations before updating a package
 
-Before updating a library, consider:
+Before updating a package, consider:
 
 * **Update Type**: Understand if it's a minor fix, a new feature, or a major change that could break your code. Semantic versioning can help identify this.
 * **Project Configuration**: Ensure your project is set to receive only desired updates to avoid unexpected changes.

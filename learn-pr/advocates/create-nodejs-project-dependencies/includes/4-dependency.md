@@ -6,22 +6,22 @@ As a new developer at Tailwind Traders, you need to add functionality to a proje
 
 When should you use an existing package? Here are some factors to consider:
 
-* **Quality**: For tasks like security, using well-established libraries ensures you're following best practices and handling edge cases.
-* **Efficiency**: Writing your own code takes time. Using existing libraries can save you significant effort.
+* **Quality**: For tasks like security, using well-established packages ensures you're following best practices and handling edge cases.
+* **Efficiency**: Writing your own code takes time. Using existing packages can save you significant effort.
 * **Maintenance**: Libraries need updates and bug fixes. It's often more efficient to let an open-source team handle this.
 
 Developers can find and download packages from various sources. These include:
 
 * **Registries**: These are collections of packages, like the npm registry. You can also host your own registry.
 * **Repositories**: You can install packages directly from a GitHub URL.
-* **Files**: Packages can be installed from a local folder or zipped file, useful for testing your own libraries.
+* **Files**: Packages can be installed from a local folder or zipped file, useful for testing your own packages.
 * **Directories**: You can also install directly from a directory.
 
 Once you select a package, check its dependencies. Consider these factors:
 
 * **Size**: More dependencies mean a larger footprint. This matters if you have bandwidth or hardware limitations. Remember, installing a package also installs its dependencies. This can result in a large node_modules folder.
 * **Popularity**: A package's popularity can indicate its quality. 
-* **Licensing**: If you plan to sell your software, ensure the library's license allows this.
+* **Licensing**: If you plan to sell your software, ensure the package's license allows this.
 * **Active maintenance**: Avoid dependencies that are deprecated or rarely updated.
 
 To learn more about a package, visit their package page on NPM and their GitHub repository. You can also use the npm command: `npm view <package name>`.
