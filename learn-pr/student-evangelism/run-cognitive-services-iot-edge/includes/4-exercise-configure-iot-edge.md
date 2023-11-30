@@ -82,6 +82,9 @@ Make sure that your password(**adminPasswordOrKey**) must be at least 12 charact
 
 It may take a few minutes to create and start the new virtual machine. Once the deployment is complete, you should receive JSON-formatted output in the CLI that contains the SSH information to connect to the virtual machine. Copy the value of the **public SSH** entry of the **outputs** section.
 
+> [!IMPORTANT]
+> The IoT Edge language detection module requires your virtual machine to have at least 8 GB of memory and 16 GB of disk storage. The module fails if you use the default VM size defined in the deployment template. Resize of your virtual machine to at least size **D2s_v3**. For information resizing virtual machines, see [Change the size of a virtual machine](https://learn.microsoft.com/azure/virtual-machines/resize-vm). For more information expanding disk storage, see [How to expand virtual hard disks attached to a Windows virtual machine](https://learn.microsoft.com/azure/virtual-machines/windows/expand-os-disk).
+
 ## Viewing the IoT Edge runtime status
 
 Use the following command to connect to your virtual machine. Replace `azureuser` if you used a different username than the one suggested during the deployment of the VM. Replace `{DNS name}` with your machine's DNS name.
