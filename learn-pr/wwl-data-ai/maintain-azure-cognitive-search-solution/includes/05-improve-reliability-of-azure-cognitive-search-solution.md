@@ -1,3 +1,4 @@
+
 Now you've a well-managed, secured, and cost-effective search solution. The next step is to make sure your service is highly available and protected from disasters. 
 
 Here, you'll explore how to protect your search service reliability and make it more responsive globally.
@@ -29,6 +30,3 @@ There's more work you'll need to do to replicate your indexes across all the reg
 ## Back up options for your search indexes
 
 At present, Azure doesn't offer a formal backup and restore mechanism for Azure Cognitive Search. However, you can build your own tools to back up index definitions as a series of JSON files. Then you can recreate your search indexes using these files.
-
-> [!TIP]
-> If you'd like to see an example of how to do this, see [Back up and restore an Azure Cognitive Search index](https://github.com/Azure-Samples/azure-search-dotnet-samples/tree/master/index-backup-restore) on GitHub.

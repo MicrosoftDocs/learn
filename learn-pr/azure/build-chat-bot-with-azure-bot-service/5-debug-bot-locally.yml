@@ -7,8 +7,9 @@ metadata:
   ms.date: 09/24/2018
   author: jasallen
   ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-js
 #labId: 46466
 durationInMinutes: 20
 content: |

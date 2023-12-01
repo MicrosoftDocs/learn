@@ -7,8 +7,7 @@ metadata:
   ms.date: 10/01/2022
   author: TBD
   ms.author: v-jenhor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-describe-azure-geographies-and-regions.md)]
@@ -22,7 +21,7 @@ quiz:
       explanation: "Incorrect. Regions reside in geographies."
     - content: "One or more regions can reside in a geography."
       isCorrect: true
-      explanation: "Correct. Some geographies are countries or groups of countries, and regions reside in those geographies."
+      explanation: "Correct. Some geographies are countries/regions or groups of countries/regions that reside in those geographies."
     - content: "Geographies and regions are the same."
       isCorrect: false
       explanation: "Incorrect. They're different concepts."

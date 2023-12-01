@@ -1,3 +1,4 @@
+
 The cloud is changing how applications are designed and secured. Instead of monoliths, applications are divided into smaller, decentralized services. These services communicate through APIs or by using asynchronous messaging or events. The services scale horizontally, adding new instances as demand requires.
 
 These design changes bring new challenges. Application states are distributed, and operations are done in parallel and asynchronously. Applications must:

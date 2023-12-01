@@ -13,7 +13,7 @@ For each call to the REST API, you need the endpoint and a key from your Azure O
 
 ## Completions
 
-Once you've deployed a model in your AOAI resource, you can send a prompt to the service using a `POST` request. The most common endpoint is `completions`, which generates the completion of your prompt.
+Once you've deployed a model in your AOAI resource, you can send a prompt to the service using a `POST` request. One endpoint is `completions`, which generates the completion of your prompt.
 
 ```rest
 curl https://YOUR_ENDPOINT_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYMENT_NAME/completions?api-version=2022-12-01\
@@ -57,7 +57,7 @@ curl https://YOUR_ENDPOINT_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYM
   -d '{"messages":[{"role": "system", "content": "You are a helpful assistant, teaching people about AI."},
 {"role": "user", "content": "Does Azure OpenAI support multiple languages?"},
 {"role": "assistant", "content": "Yes, Azure OpenAI supports several languages, and can translate between them."},
-{"role": "user", "content": "Do other Azure Cognitive Services support translation too?"}]}'
+{"role": "user", "content": "Do other Azure AI Services support translation too?"}]}'
 ```
 
 The response from the API will be similar to the following JSON:
@@ -78,7 +78,7 @@ The response from the API will be similar to the following JSON:
             "message":
                 {
                     "role": "assistant",
-                    "content": "Yes, other Azure Cognitive Services also support translation. Azure Cognitive Services offer translation between multiple languages for text, documents, or custom translation through Azure Cognitive Services Translator."
+                    "content": "Yes, other Azure AI Services also support translation. Azure AI Services offer translation between multiple languages for text, documents, or custom translation through Azure AI Services Translator."
                 },
             "finish_reason": "stop",
             "index": 0

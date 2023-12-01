@@ -7,7 +7,6 @@ metadata:
   author: JBrentJ
   ms.author: jejacks
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure 3D assets for mixed reality in Unity
 summary: Learn how to place Prefab 3D assets or models into a Unity scene.
 abstract: |
@@ -26,7 +25,7 @@ roles:
 products:
 - azure
 - azure-cloud-services
-- azure-cognitive-services
+- ai-services
 - azure-digital-twins
 - azure-iot
 - azure-iot-hub

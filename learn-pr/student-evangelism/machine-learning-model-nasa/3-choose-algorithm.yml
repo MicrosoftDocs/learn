@@ -6,9 +6,10 @@ metadata:
   ms.date: 05/24/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
 title: Exercise - Choose the machine learning algorithm to predict rocket launch success
 durationInMinutes: 4
 content: |

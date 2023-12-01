@@ -1,13 +1,12 @@
 ### YamlMime:Module
 uid: learn.wwl.enroll-devices-use-intune
 metadata:
-  title: Understand Azure Active Directory
+  title: Understand Microsoft Entra ID
   description: "Students will learn how to configure and setup Intune to more easily manage Windows, Android, and iOS devices."
-  ms.date: 03/14/2023
+  ms.date: 09/07/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Enroll devices using Microsoft Intune
 summary: Students will learn how to configure and setup Intune to more easily manage Windows, Android, and iOS devices.
 abstract: |
@@ -27,7 +26,7 @@ levels:
 roles:
 - administrator
 products:
-- azure-active-directory
+- entra-id
 units:
 - learn.wwl.enroll-devices-use-intune.introduction
 - learn.wwl.enroll-devices-use-intune.manage-mobile-devices-intune

@@ -7,8 +7,8 @@ metadata:
   ms.date: 05/12/2021
   author: JBrentJ
   ms.author: jejacks
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
 durationInMinutes: 20
 content: |
   [!include[](includes/6-connect-stream-data.md)]

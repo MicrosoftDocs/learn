@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.embrace-responsible-ai-principles-practices.design-system-ai-governance
+title: Design a system for AI governance
+metadata:
+  title: Design a system for AI governance
+  description: "Design a system for AI governance"
+  ms.date: 11/30/2023
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-design-system-ai-governance.md)]

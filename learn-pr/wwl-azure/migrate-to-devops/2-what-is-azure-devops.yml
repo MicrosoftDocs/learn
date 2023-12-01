@@ -7,8 +7,9 @@ metadata:
   ms.date: 11/18/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 azureSandbox: false
 labModal: false
 durationInMinutes: 2

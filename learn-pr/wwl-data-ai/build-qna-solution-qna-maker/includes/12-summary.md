@@ -1,8 +1,9 @@
-In this module, you have learned how to use the *question answering* capability of the Language service to create a knowledge base of question and answer pairs that can support an application or bot.
+
+In this module, you have learned how to use the *question answering* capability of the Azure AI Language service to create a knowledge base of question and answer pairs that can support an application or bot.
 
 Now that you've completed this module, you can:
 
-- Describe the question answering capabilities of the Language service.
+- Describe the question answering capabilities of the Azure AI Language service.
 - Describe the differences between question answering and conversational language understanding.
 - Create a knowledge base.
 - Implement multi-turn conversation.
@@ -11,4 +12,4 @@ Now that you've completed this module, you can:
 - Implement active learning.
 - Create a question answering bot.
 
-To learn more about the question answering capability of the Language service, see the [Question answering documentation](/azure/cognitive-services/language-service/question-answering/overview).
+To learn more about the question answering capability of the Azure AI Language service, see the [Question answering documentation](/azure/cognitive-services/language-service/question-answering/overview).

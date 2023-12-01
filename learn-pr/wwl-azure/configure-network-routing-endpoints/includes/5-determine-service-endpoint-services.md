@@ -1,3 +1,4 @@
+
 It's easy to add a service endpoint to the virtual network. In the Azure portal, you select the Azure service for which to create the endpoint. In this unit, we examine several services, including Azure Cosmos DB, Event Hubs, Key Vault, and SQL Database.
 
 :::image type="content" source="../media/add-service-endpoints-5df9ecfc.png" alt-text="Screenshot of the Service endpoints page in the Azure portal.":::

@@ -7,7 +7,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore Automated Intelligence
 summary: In this module, you'll learn about several automated methods such as math (control theory), menus (optimization algorithms) and manuals (expert systems and expert rules), which are components of Machine Teaching. In addition, you’ll learn automated intelligence strengths and limitations, when to best use these technologies and when Autonomous Intelligence methods will be the best choice.
 abstract: | 
@@ -16,7 +15,7 @@ abstract: |
   - Describe automated methods strengths and weaknesses
   - Decide when automated methods are best used
 
-  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+  "***Produced in partnership with the University of Oxford – Ajit Jaokar Artificial Intelligence: Cloud and Edge Implementations course***"
 prerequisites: None
 iconUrl: /training/achievements/generic-badge.svg
 levels: 

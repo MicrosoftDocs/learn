@@ -4,4 +4,4 @@ Suppose you work at a coffee machine company as the IT expert. Your company will
 
 In this module, you'll connect a coffee machine simulator to IoT Central for monitoring telemetry such as water temperature and humidity, observe the state of the machine, set optimal temperature, receive warranty status, and send commands. You'll then configure rules to send maintenance notifications when the water temperature is outside the expected range.
 
-Upon completion of this module, you'll be able to create an IoT Central custom application, connect a simulated IoT device, and configure rules for maintenance notifications.
+After you complete this module, you'll be able to create an IoT Central custom application, connect a simulated IoT device, and configure rules for maintenance notifications.

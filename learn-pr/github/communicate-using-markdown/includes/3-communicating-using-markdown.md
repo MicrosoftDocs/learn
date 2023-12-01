@@ -1,4 +1,4 @@
-This exercise checks your knowledge on content covered in this module by using Markdown in order to collaborate more expressively throughout GitHub.
+This exercise allows you to practice the content covered in this module: use Markdown to communicate effectively on GitHub.
 
 ## Get started
 
@@ -9,16 +9,16 @@ After you make your own repository from the template, wait about 20 seconds and 
 
 - Follow the instructions in the repository's README to understand how the exercise works, its learning objectives, and how to successfully complete the exercise.
 
-When you've finished the exercise in GitHub, return here for:
+When you finish the exercise in GitHub, return here to:
 
 > [!div class="checklist"]
-> * A quick knowledge check 
-> * A summary of what you've learned
-> * To earn a badge for completing this module
+> * Complete a quick knowledge check 
+> * Review a summary of what you've learned
+> * Earn a badge for completing this module
 
->[!Note] 
+>[!Note]
 > You don't need to modify any of the workflow files to complete this exercise.
 > **Altering the contents in this workflow can break the exercise's ability to validate your actions, provide feedback, or grade the results**.
 
 > [!div class="nextstepaction"]
-> [Start the exercise on GitHub](https://github.com/skills/communicate-using-markdown)
+> [Start the exercise on GitHub](https://github.com/skills/communicate-using-markdown?azure-portal=true)

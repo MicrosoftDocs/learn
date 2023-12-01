@@ -1,6 +1,6 @@
 Let's set up the environment to deploy a Helm chart to AKS by using GitHub Actions.
 
-In this exercise, to deploy a Helm chart, we'll complete the following tasks:
+In this exercise, to deploy a Helm chart, you'll complete the following tasks:
 
 - Check the Helm installation
 - Create a chart
@@ -20,9 +20,9 @@ In this exercise, to deploy a Helm chart, we'll complete the following tasks:
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
 
     > [!IMPORTANT]
-    > We'll run all the scripts with Bash. If you haven't created a Cloud Shell yet, select **Bash** as the running shell. For more information about setting up Cloud Shell, see [Overview of Azure Cloud Shell](/azure/cloud-shell/overview#connect-your-microsoft-azure-files-storage).
+    > We'll run all the scripts with Bash. If you haven't created a Cloud Shell yet, select **Bash** as the terminal. For more information about setting up Cloud Shell, see [Overview of Azure Cloud Shell](/azure/cloud-shell/overview#connect-your-microsoft-azure-files-storage).
 
-1. Run `helm version` and check whether the displayed version is greater than **3**.
+1. Run `helm version` to check whether the displayed version is greater than **3**.
 
 1. To pull the changes you've made to the CI workflow in the preceding units, run this command:
 
@@ -32,9 +32,13 @@ In this exercise, to deploy a Helm chart, we'll complete the following tasks:
 
 ## Create a chart
 
-1. Run `cd` to go to the repository you forked, and then run `cd` to go to the `kubernetes` directory.
+1. While inside the learn repository you forked go to the `kubernetes` directory.
 
-1. Run this command:
+    ```bash
+    cd kubernetes
+    ```
+
+1. While inside, generate a boilerplate template `with helm create`:
 
     ```bash
     helm create contoso-website
@@ -42,7 +46,17 @@ In this exercise, to deploy a Helm chart, we'll complete the following tasks:
 
    The command creates a new directory called `contoso-website` in the `kubernetes` directory.
 
-1. Run `cd` to go to the new directory. Delete the `charts` and `templates` folders in that directory.
+1. Switch to the new directory with `cd`.
+
+    ```bash
+    cd contoso-website
+    ```
+
+1. Delete the `charts` and `templates` folders in that directory.
+
+    ```bash
+    rm -r charts templates
+    ```
 
 1. Run the following command to create a new empty `templates` folder:
 
@@ -50,7 +64,7 @@ In this exercise, to deploy a Helm chart, we'll complete the following tasks:
     mkdir templates
     ```
 
-    You've created an empty chart. To start building the workloads, you'll use what others have already built. You'll use YAML files that currently aren't in the new directory you created.
+    You've created an empty chart. To start building the workloads, use what others have already built. Create a new set of YAML files
 
 1. Move the old `kubernetes` files to the `templates` folder.
 
@@ -64,7 +78,7 @@ Completing these steps is all it takes to create a chart. Now, let's configure t
 
 ## Configure the chart
 
-1. Run `cd ../..` to return to the parent directory. You should be at the root of the repository now.
+1. Run `cd ../..` to return back to the learn repo.
 
 1. To open the editor in the current directory, run `code .` .
 
@@ -112,7 +126,7 @@ Completing these steps is all it takes to create a chart. Now, let's configure t
 
 1. In the left menu, go to the `kubernetes` folder. Find the `deployment.yaml` file in the `templates` folder.
 
-    The file should look like this example:
+    The file is similar to this initial file:
 
     ```yaml
     apiVersion: apps/v1
@@ -143,45 +157,24 @@ Completing these steps is all it takes to create a chart. Now, let's configure t
                   name: http
     ```
 
-    Next, we'll add templating for this deployment, beginning with the `namespace` and `name` keys.
+    Next, we add templates for this deployment, beginning with the `namespace` and `name` keys.
 
-1. In the `metadata` section, add a new key called `namespace`.  The key should have the following configuration:
+1. In the `metadata` section, add a new key called `namespace` with the value `{{ default "staging" .Release.Namespace }}`.  
+
+    The metadata configuration:
 
     ```yaml
-    apiVersion: apps/v1
-    kind: Deployment
     metadata:
       name: contoso-website
       namespace: {{ default "staging" .Release.Namespace }}
-    spec:
-      selector:
-        matchLabels:
-          app: contoso-website
-      template:
-        metadata:
-          labels:
-            app: contoso-website
-        spec:
-          containers:
-            - image: !IMAGE!
-              name: contoso-website
-              resources:
-                requests:
-                  cpu: 100m
-                  memory: 128Mi
-                limits:
-                  cpu: 250m
-                  memory: 256Mi
-              ports:
-                - containerPort: 80
-                  name: http
     ```
 
-    By default, you deploy this resource to the `staging` namespace. But, if the installation has a `namespace` option, use that instead.
+    >[!NOTE]
+    > By default, the workflow will deploy this resource to the `staging` namespace. But, if the `helm install` command has a `namespace` option, it will overide it to use that instead.
 
-1. Go to the `image` key.
+1. Under the specs for the container, update the `image` key to fetch the latest and tag versions from your AKS cluster.
 
-    It's a good practice to split up the `registry`, `tag`, and `image` parts of the image name. Add three new template variables to this section of the file:
+    Use the templating values of `{{ .Values.image.registry }}.azurecr.io/{{ .Values.image.name }}:{{ default "latest" .Values.image.tag }}`. It's a good practice to split up the `registry`, `tag`, and `image` parts of the image name. Add three new template variables to this section of the file:
 
     ```yaml
     apiVersion: apps/v1
@@ -213,17 +206,15 @@ Completing these steps is all it takes to create a chart. Now, let's configure t
                   name: http
     ```
 
-    In this section, you split the three sections of the image so you can work with them more easily.
+    In this section, you split the three sections of the image to work with them more easily.
 
 1. Save and close the file.
 
-## Create an empty YAML file
+## Add contents to the values.yaml file
 
 1. In the root of the `contoso-website` directory, open the `values.yaml` file.
 
 1. Delete all contents in the file, so you have an empty YAML file.
-
-## Add contents to the YAML file
 
 Now, let's add your content to the empty file.
 
@@ -244,6 +235,7 @@ Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Value
       tag: latest
     ```
 
+    Replace `<your-acr-name>` with the value from exercise 6.
     These values are the *default* values if you don't pass a new value as a parameter by using the `--set` option of the Helm CLI.
 
 1. Save and close the file.
@@ -277,7 +269,7 @@ Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Value
 
 1. Find and open the `ingress.yaml` file.
 
-1. In the `metadata` section of the file, add a new key called `namespace`. Use the same value that you used in the `deployment.yaml` file.
+1. In the `metadata` section of the file, once again add the `namespace` value that you used in the `deployment.yaml` file.
 
     ```yaml
     apiVersion: networking.k8s.io/v1
@@ -327,7 +319,7 @@ Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Value
                 pathType: Prefix
     ```
 
-1. Add a new template variable, which will be your DNS zone name:
+1. Add a new template variable for your DNS zone name:
 
     ```yaml
     apiVersion: networking.k8s.io/v1
@@ -374,6 +366,8 @@ Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Value
     ```azurecli-interactive
     az aks show -g {resource-group-name} -n {aks-cluster-name} -o tsv --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
     ```
+
+    Replace `<your-dns-zone-name>` with the output value and `<your-acr-name>` with the value from exercise 6.
 
 1. Save and close the file.
 

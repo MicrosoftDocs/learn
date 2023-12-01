@@ -5,10 +5,9 @@ metadata:
   title: Choose a deployment model
   description: Discussion of a potential Azure cloud architecture for several data classifications with Azure Stack Hub and Azure Stack Edge.
   ms.date: 02/23/2021
-  author: Adriamen
-  ms.author: micrum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/4-choose-deployment-model.md)] 

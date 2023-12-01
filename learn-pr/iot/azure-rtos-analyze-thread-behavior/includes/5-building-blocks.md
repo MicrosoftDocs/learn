@@ -4,16 +4,16 @@ There's no fundamental design change between ProjectHelloWorld and ProjectAnalyz
 
 ## Declarations, definitions, and prototypes - part 1
 
-The code block below shows **Part 1 of building block 1**.
+The following code block shows **Part 1 of building block 1**.
 
 > [!NOTE]
-> This code is virtually identical to what's in ProjectHelloWorld. The only changes shown in the following code block are in the comments section where additional information is provided, and brief instructions added on how to change this project.
+> This code is virtually identical to the code in ProjectHelloWorld. The only changes shown in the following code block are in the comments section where additional information is provided and brief instructions added on how to change this project.
 
 :::code language="c" source="code/project-analyze.c" range="1-18":::
 
 ## Declarations, definitions, and prototypes - part 2
 
-The code block below shows **Part 2 of building block 1**. You'll need to make the following changes in the highlighted lines:
+The following code block shows **Part 2 of building block 1**. You'll need to make the following changes in the highlighted lines:
 
 1. Add variables for counters and totals in part 2.
 1. Define the variables needed to obtain cumulative performance information about Urgent thread and Routine thread.
@@ -23,7 +23,7 @@ The code block below shows **Part 2 of building block 1**. You'll need to make t
 
 ## The main entry point
 
-**Building block 2** - the main entry point is _exactly the same as ProjectHelloWorld_. You don't need to make any changes to the following code; it's displayed for reference.
+In **Building block 2**, the main entry point is _exactly the same as ProjectHelloWorld_. You don't need to make any changes to the following code; it's displayed here for reference.
 
 :::code language="c" source="code/project-analyze.c" range="35-40":::
 
@@ -37,11 +37,11 @@ The code block below shows **Part 2 of building block 1**. You'll need to make t
 
 **Building block 4** includes the Urgent and Routine thread entry functions, and these functions are the same as in ProjectHelloWorld. They're shown here for reference. No changes are need in these blocks.
 
-#### Urgent thread entry function
+### Urgent thread entry function
 
 :::code language="c" source="code/project-analyze.c" range="81-107":::
 
-#### Routine thread entry function
+### Routine thread entry function
 
 :::code language="c" source="code/project-analyze.c" range="111-137":::
 

@@ -1,7 +1,0 @@
-AI holds amazing promise for healthcare. However, in practice, organizations are struggling to take advantage of this aspect of digital transformation in sustained and practical ways. Insight Digital Innovation is an award-winning Microsoft partner that has solved problems in healthcare with AI. Watch this video from David Le Penske, Director of Healthcare & Life Sciences at Insight Digital Innovation, as he shares what can make an AI project successful in this challenging and highly regulated industry.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Y7cN]
-
-David Le Penske suggests that one of the significant benefits of AI is that the technology is going to provide more modular care that can add devices and sensors. This will allow more information to be relayed which will provide improved health and care reminders. AI will help to keep patients connected with their family members, their caregivers, their healthcare providers, and the health services they need, at the right place and the right time. AI promises to help all of us live healthier and more independent lives.
-
-Next, let’s look at how Ochsner Health System improved their patent treatment with AI, by selecting a use case that minimized disruption while maximizing impact.

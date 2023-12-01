@@ -1,4 +1,4 @@
-Learn about advanced Azure Active Directory Domain Services (AD DS) administration tasks, including creating trust relationships, implementing Enhanced Security Administrative Environment (ESAE) forests, monitoring and troubleshooting AD DS replication, and creating custom AD DS partitions.
+Learn about advanced Microsoft Entra Domain Services administration tasks, including creating trust relationships, implementing Enhanced Security Administrative Environment (ESAE) forests, monitoring and troubleshooting AD DS replication, and creating custom AD DS partitions.
 
 ## Scenario
 

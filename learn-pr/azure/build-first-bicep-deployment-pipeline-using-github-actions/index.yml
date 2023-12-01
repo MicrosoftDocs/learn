@@ -5,11 +5,11 @@ metadata:
   title: Build your first Bicep deployment workflow by using GitHub Actions
   description: Build a basic deployment workflow for Bicep infrastructure as code templates by using Azure DevOps and GitHub Actions.
   ms.date: 01/17/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: engagement-fy23
+  ms.devlang: bicep
 title: Build your first Bicep deployment workflow by using GitHub Actions
 summary: |
   Create an automated workflow in GitHub Actions that securely deploys resources to Azure from Bicep code. Configure your workflow to run on a schedule or when your configuration changes.

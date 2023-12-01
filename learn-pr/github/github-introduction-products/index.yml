@@ -2,40 +2,40 @@
 uid: learn.github.github-introduction-products
 metadata:
   title: Introduction to GitHub's products
-  description: Overview of GitHub's products, associated features, and licensing of per-use and metered features.
-  ms.date: 02/09/2023
-  author: davenowell
-  ms.author: dapolite
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Overview of GitHub's products, plans, associated features, and billing. 
+  ms.date: 08/21/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: module-intro-to-product
+  ms.prod: github
 title: Introduction to GitHub's products
-summary: Overview of GitHub's products, associated features, and licensing of per-use and metered features.
+summary: This module provides an overview of GitHub products, including the account types, plan options, associated features, and billing. It also covers how to access GitHub on-the-go using GitHub Desktop and GitHub Mobile. 
 abstract: |
   After completing this module, you'll be able to:
-  - Explain the difference between each GitHub product, and which features are available with each product.
-  - Make key distinctions between plans, account types, teams, repository permissions, organization permission levels, and so on.
-  - Describe licensing terms for GitHub Actions, GitHub Packages, and Codespaces.
+  - Define the difference between the different types of GitHub accounts: Personal, Organization, and Enterprise.
+  - Explain each GitHub plan: GitHub Free for personal accounts and organizations, GitHub Pro for personal accounts, GitHub Team, and GitHub Enterprise.
+  - Distinguish the features associated with accessing GitHub on GitHub Mobile and GitHub Desktop.
+  - Describe a brief overview of GitHub billing and payments.
 prerequisites: |
-  - Familiarity with GitHub, repositories, and the basics of managing individual accounts is required
-  - A high-level familiarity with GitHub's product plans and features would be helpful, but isn't required
-ratingEnabled: true
+  - Familiarity with GitHub, repositories, and the basics of managing individual accounts is required.
+ratingEnabled: false
 iconUrl: /training/achievements/github-introduction-products.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- administrator
-- devops-engineer
-- technology-manager
+  - administrator
+  - devops-engineer
+  - technology-manager
 products:
-- github
+  - github
 subjects:
-- devops
+  - devops
 units:
-- learn.github.github-introduction-products.introduction
-- learn.github.github-introduction-products.what-are-github-products
-- learn.github.github-introduction-products.how-licensing-works
-- learn.github.github-introduction-products.knowledge-check
-- learn.github.github-introduction-products.summary
-
+  - learn.github.github-introduction-products.introduction
+  - learn.github.github-introduction-products.what-are-github-products
+  - learn.github.github-introduction-products.how-licensing-works
+  - learn.github.github-introduction-products.github-billing
+  - learn.github.github-introduction-products.knowledge-check
+  - learn.github.github-introduction-products.summary
 badge:
   uid: learn.github.github-introduction-products.badge

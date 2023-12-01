@@ -4,10 +4,9 @@ metadata:
   title: Exercise - Build container image for your ASP.NET app
   description: Describes the steps to build the container image for the application
   ms.date: 09/01/2021
-  author: v-ksreedevan
-  ms.author: v-ksreedevan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 title: Exercise - Build container image for your ASP.NET app
 durationInMinutes: 8
 content: |

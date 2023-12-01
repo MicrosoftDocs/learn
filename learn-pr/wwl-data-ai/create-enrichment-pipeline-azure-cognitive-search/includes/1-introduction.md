@@ -8,9 +8,12 @@ For example:
 
 To support these scenarios, you can implement custom skills as web-hosted services (such as Azure Functions) that support the required interface for integration into a skillset.
 
-![A skillset in an Azure Cognitive Search solution connects to an Azure function to integrate a custom skill.](../media/enrichment-pipeline.png)
+:::image type="content" source="../media/enrichment-pipeline.png" alt-text="A diagram showing how a skillset in an Azure Cognitive Search solution connects to an Azure function to integrate a custom skill.":::
 
-In this module, you'll learn how to implement a custom skill as an Azure Function, and integrate it into an Azure Cognitive Search skillset.
+In this module you will learn how to:
+
+- Implement a custom skill for Azure Cognitive Search
+- Integrate a custom skill into an Azure Cognitive Search skillset
 
 > [!NOTE]
 > This module assumes you already know how to create and use an Azure Cognitive Search solution that includes built-in skills. If not, complete the [Create an Azure Cognitive Search solution](/training/modules/create-azure-cognitive-search-solution/) module first.

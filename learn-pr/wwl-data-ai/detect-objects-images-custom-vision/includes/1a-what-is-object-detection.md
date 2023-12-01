@@ -1,4 +1,3 @@
-
 Let's look at example of object detection. Consider the following image:
 
 ![Various pieces of fruit](../media/produce.png)

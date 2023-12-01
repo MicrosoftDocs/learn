@@ -3,11 +3,13 @@ uid: learn.host-a-web-application-with-azure-web-apps
 metadata:
   title: Host a web application with Azure App Service
   description: 'Create a website using C#, Java, Python or Node.js and deploy it through the hosted web app platform in Azure App Service.'
-  ms.date: 03/20/2023
+  ms.date: 09/06/2023
   author: cephalin
   ms.author: cephalin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: app-service
+  ms.subservice: web-apps
+  manager: mijacobs
 title: Host a web application with Azure App Service
 summary: Azure App Service enables you to build and host web applications in the programming language of your choice without managing infrastructure. Learn how to create a website through the hosted web app platform in Azure App Service.
 abstract: |

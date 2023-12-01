@@ -8,7 +8,7 @@ Let's create a database in Azure and then configure backups. Set the retention t
 
 Let's use the Azure CLI to create a SQL Database server and a database.
 
-1. Run the following commands in Azure Cloud Shell to set up some variables for creation of the SQL Database server.
+1. Run the following commands in Azure Cloud Shell to set up some variables for creation of the SQL Database server:
 
     ```powershell
     $serverName = "erpserver-$(Get-Random)"
@@ -21,7 +21,7 @@ Let's use the Azure CLI to create a SQL Database server and a database.
 
    This step also sets the location for your server to the location of the resource group. Finally, it sets the credentials used to access the database server. When the command prompts you, enter a complex password of your choice.
 
-1. Run the `New-AzSqlServer` command to create a SQL Database server to store the database.
+1. Run the `New-AzSqlServer` command to create a SQL Database server to store the database:
 
     ```powershell
     New-AzSqlServer `
@@ -31,7 +31,7 @@ Let's use the Azure CLI to create a SQL Database server and a database.
         -SqlAdministratorCredentials $sqlAdmin
     ```
 
-1. Run the `New-AzSqlDatabase` command to create a database.
+1. Run the `New-AzSqlDatabase` command to create a database:
 
     ```powershell
     New-AzSqlDatabase `
@@ -42,7 +42,7 @@ Let's use the Azure CLI to create a SQL Database server and a database.
 
 ## Configure the database retention policy
 
-In the portal, you can examine the default retention policy and adapt it to your needs.
+In the Azure portal, you can examine the default retention policy and adapt it to your needs.
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the **erpserver-NNNN** database server that you created. Your database (SQL) server pane appears.
 
@@ -50,9 +50,9 @@ In the portal, you can examine the default retention policy and adapt it to your
 
 1. On the **Retention policies** tab, select the **sql-erp-db** database, and in the top menu bar, select **Configure policies**. The **Configure policies** pane appears.
 
-1. In the **Point-in-time-restore** slider bar, select **28**.
+1. Move the **Point-in-time-restore** slider bar to **28**.
 
-    :::image type="content" source="../media/3-configure-backup-pitr-retention.png" alt-text="Screenshot of the Azure portal, showing the database restore options for point-in-time restore.":::
+    :::image type="content" source="../media/3-configure-backup-pitr-retention.png" alt-text="Screenshot of the Azure portal, showing the database restore options for point-in-time restore." lightbox="../media/3-configure-backup-pitr-retention.png":::
 
 1. Select **Apply**, and then select **Yes** to confirm your selection.
 
@@ -66,7 +66,7 @@ By default, Azure SQL Database blocks network access to the server. Let's enable
 
 1. In the **Exceptions** section, select the checkbox for **Allow Azure services and resources to access this server**.
 
-    :::image type="content" source="../media/3-add-client-ip.png" alt-text="Screenshot of Add a client IP address rule with a callout highlighting Allow access to Azure services option and the Save button.":::
+    :::image type="content" source="../media/3-add-client-ip.png" alt-text="Screenshot of Add a client IP address rule with a callout highlighting Allow access to Azure services option and the Save button." lightbox="../media/3-add-client-ip.png":::
 
 1. Select **Save**.
 
@@ -74,11 +74,11 @@ By default, Azure SQL Database blocks network access to the server. Let's enable
 
 Now, let's add a table and a sample record to the database. It's helpful to have some data in the database to validate that our backups and restores work later in the module.
 
-1. In the middle menu pane, under **Settings**, select **SQL databases**, and then select **sql-erp-db**. Your database server pane reappears.
+1. In the middle menu pane, under **Settings**, select **SQL databases**, then select **sql-erp-db**. Your database server pane reappears.
 
 1. In the left menu pane, select **Query editor (preview)**, and then sign in with the **dbadmin** credentials and the password that you specified for this account.
 
-1. To create a table, in the **Query 1** window, enter the following SQL command, and then select **Run**.
+1. To create a table, in the **Query 1** window, enter the following SQL command, then select **Run**.
 
     ```sql
     CREATE TABLE Person
@@ -92,7 +92,7 @@ Now, let's add a table and a sample record to the database. It's helpful to have
 
     :::image type="content" source="../media/3-create-table.png" alt-text="Screenshot of the query editor with T-SQL to create a new table in the sql-erp-db database. A callout highlights the run button.":::
 
-1. To add a record, in the top menu bar, select **New Query**. In the **Query 2** window, enter the following SQL command, and then select **Run**.
+1. To add a record, in the top menu bar, select **New Query**. In the **Query 2** window, enter the following SQL command, and select **Run**.
 
     ```sql
     INSERT INTO PERSON (FirstName, LastName, DateOfBirth)
@@ -101,7 +101,7 @@ Now, let's add a table and a sample record to the database. It's helpful to have
 
     :::image type="content" source="../media/3-insert-record.png" alt-text="Screenshot of the query editor with T-SQL to insert a record into the Person table of the sql-erp-db database. A callout highlights the run button.":::
 
-1. To query the database, select **New Query**. In the **Query 3** window, enter the following SQL command, and then select **Run**.
+1. To query the database, select **New Query**. In the **Query 3** window, enter the following SQL command, and select **Run**.
 
     ```sql
     SELECT * FROM dbo.Person
@@ -111,4 +111,4 @@ Now, let's add a table and a sample record to the database. It's helpful to have
 
     :::image type="content" source="../media/3-query-person-table.png" alt-text="Screenshot of the query editor with T-SQL to query the person table in the sql-erp-db database. A callout highlights the run button.":::
 
-You now have an Azure SQL database populated with data. And you've set up a retention policy to ensure that you have four (4) weeks of backups immediately available for restore.
+You now have an Azure SQL database populated with data, and you've set up a retention policy to ensure that you have four weeks of backups immediately available for restore.

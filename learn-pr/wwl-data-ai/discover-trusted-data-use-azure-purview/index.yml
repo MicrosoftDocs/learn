@@ -6,8 +6,8 @@ metadata:
   ms.date: 07/22/2022
   author: wwlpublish
   ms.author: shlindsay
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: purview 
 title: Discover trusted data using Microsoft Purview
 summary: Use Microsoft Purview Studio to discover trusted organizational assets for reporting.
 abstract: |

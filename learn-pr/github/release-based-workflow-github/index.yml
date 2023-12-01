@@ -7,7 +7,6 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: "Manage software delivery by using a release based workflow on GitHub"
 summary: Learn to implement a release based workflow on GitHub using project boards, branches, and releases.
 abstract: |

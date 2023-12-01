@@ -6,8 +6,9 @@ metadata:
   ms.date: 06/09/2021
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-stack
+  ms.subservice: azure-stack-hci
 title: Manage Azure Stack HCI virtual machine workloads
 summary: This module describes how to manage and maintain Microsoft Azure Stack HCI virtual machine (VM) workloads.
 abstract: |

@@ -8,17 +8,17 @@ Here, you'll explore the main upgrade paths available for different versions of 
 
 ## Available upgrade paths for different versions
 
-The older the database you want to migrate, the fewer the options available. As previously discussed, if you want to upgrade SQL Server 2000 databases, you need to do an interim upgrade to SQL Server 2008, before switching to any later version.
+The older the database you want to migrate, the fewer the options available. As previously discussed, if you want to upgrade SQL Server 2000 databases, you need to do an interim upgrade to SQL Server 2008 before switching to any later version.
 
 ## Backup and restore
 
-You can use the **backup and restore** option on any version of SQL Server from 2005 through 2016. You can't back up and restore any of the systems databases, such as master, model, msdb, or temp. Take a backup of the database from the source server and restore it on the target server. You then change the compatibility of the database. For example, to change the compatibility of a database named **Customer Services** to SQL Server 2016, you would run the following command:
+You can use the **backup and restore** option on any version of SQL Server from 2005 through 2016. You can't back up and restore any of the systems databases, such as master, model, msdb, or temp. Take a backup of the database from the source server and restore it on the target server, then change the compatibility of the database. For example, to change the compatibility of a database named **Customer Services** to SQL Server 2016, you'd run the following command:
 
 ```sql
 ALTER DATABASE [CustomerServices] SET COMPATIBILITY_LEVEL = 130
 ```
 
-Ensure that all objects within the database are supported by the target environment, otherwise you can't change the compatibility level. You'll need to remove any deprecated features, such as queries to management views that have been renamed or replaced, updated system stored procedures, or deprecated data types.
+Ensure that all objects within the database are supported by the target environment; otherwise, you can't change the compatibility level. You'll need to remove any deprecated features, such as queries to management views that have been renamed or replaced, updated system stored procedures, or deprecated data types.
 
 ## Bulk load
 
@@ -26,10 +26,10 @@ Versions as far back as SQL Server 2005 can use the **bulk load** operation to c
 
 ## Transactional replication
 
-Replication enables you to upgrade SQL Server databases, but you'll need working knowledge of how transactional replication works. Replication allows you to have a mix of versions within the topology, so is already geared to enabling upgrades. The **Distributor** must be the same version of SQL Server as the **Publisher**, or later. The **Subscriber** can be up to two versions newer or earlier than the Publisher. Replication offers two upgrade paths:
+Replication allows you to upgrade SQL Server databases, but you'll need working knowledge of how transactional replication works. Replication allows you to have a mix of versions within the topology, so it's already geared to enabling upgrades. The **Distributor** must be the same version of SQL Server as the **Publisher**, or later. The **Subscriber** can be up to two versions newer or earlier than the Publisher. Replication offers two upgrade paths:
 
-- **Side-by-side**. With side-by-side replication, you create a new parallel environment with the target version of SQL Server. Then you move the databases, logins, scheduled jobs, and any other objects, to your new environment.
-- **In-place**. An in-place replication upgrade replaces the existing installation, and upgrades both system and user databases.
+- **Side-by-side**: With side-by-side replication, you create a new parallel environment with the target version of SQL Server. Then you move the databases, logins, scheduled jobs, and any other objects, to your new environment.
+- **In-place**: An in-place replication upgrade replaces the existing installation and upgrades both system and user databases.
 
 If you already have replication in place, you should consider one of these options to complete your migration.
 
@@ -43,24 +43,24 @@ You can use database mirroring to upgrade **principals** running SQL Server 2008
 
 ## Log shipping
 
-Log shipping can be used to upgrade if the **principal** is running SQL Server 2008 SP3, SQL Server 2008 R2 SP2 or higher, to a **secondary** running SQL Server 2014 or higher. After failover to the newer version of SQL Server, the older version now running as the secondary won't receive changes from the primary.
+You can use log shipping to upgrade if the **principal** is running SQL Server 2008 SP3, SQL Server 2008 R2 SP2 or higher, to a **secondary** running SQL Server 2014 or higher. After failover to the newer version of SQL Server, the older version now running as the secondary won't receive changes from the primary.
 
 ## Data Migration Assistant
 
-The **Data Migration Assistant (DMA)** supports versions of SQL Server from 2005 upwards. Using the assistant, you connect to the instance and select the database you plan to upgrade. You tell the assistant the target version of SQL Server and it will analyze the size and schema of the database. The assistant will also make recommendations for your upgrade. After the analysis, DMA provides a compatibility report, which highlights breaking changes, behavioral changes, and deprecated features, so these problems can be fixed.
+The **Data Migration Assistant (DMA)** supports versions of SQL Server from 2005 upwards. Using the assistant, you connect to the instance and select the database you plan to upgrade. You tell the assistant the target version of SQL Server, and it analyzes the size and schema of the database. The assistant also makes recommendations for your upgrade. After the analysis, DMA provides a compatibility report, which highlights breaking changes, behavioral changes, and deprecated features, so these problems can be fixed.
 
 ![Screenshot of the Data Migration Assistant with the New assessment dialog opened.](../media/4-dma-screenshot.png)
 
-DMA also makes recommendations for how the database uses performance, storage, and security features in the target version. These results can be exported to a CSV or JSON file for future reference. This situation is ideal when you have a large number of databases for upgrade and need a concise list of tasks to prevent application failure after upgrading. You then use DMA to upgrade your database and logins to the target server.
+DMA also makes recommendations for how the database uses performance, storage, and security features in the target version. You can export these results to a CSV or JSON file for future reference. This situation is ideal when you have a large number of databases to upgrade and need a concise list of tasks to prevent application failure after upgrading. You then use DMA to upgrade your database and logins to the target server.
 
 ## Choosing an upgrade method
 
-In your law firm, for databases on SQL Server 2000, you must start by upgrading to SQL Server 2008 using the backup and restore method. Make sure you set the database compatibility level to 100 after the migration, so it can be further upgraded afterwards. 
+In your law firm, for databases on SQL Server 2000, you must start by upgrading to SQL Server 2008 using the backup and restore method. Make sure you set the database compatibility level to 100 after the migration so it can be further upgraded afterwards.
 
-When you've completed the initial upgrade from SQL Server 2000, all your databases are at SQL Server 2008 and higher, but you still have a complex situation. 
+When you've completed the initial upgrade from SQL Server 2000, all your databases are at SQL Server 2008 and higher, but you still have a complex situation.
 
 The simplest consistent method for upgrading all these databases is to use the DMA, which can upgrade any database hosted on SQL Server 2005 and later. This tool provides a complete list of compatibility issues that you must fix before you upgrade a database. Your team can work through that list to resolve all problems before you use DMA to do the upgrade.
 
-Various methods are available for upgrading your SQL Servers. The path you choose depends on the version you're upgrading from and whether there's a failover mechanism that you must use for the upgrade. DMA supports database upgrades from SQL Server 2005 onward. If you have different versions across your database landscape, this tool is ideal for upgrading from one central point. 
+Various methods are available for upgrading your SQL Servers. The path you choose depends on the version you're upgrading from and whether there's a failover mechanism that you must use for the upgrade. DMA supports database upgrades from SQL Server 2005 onward. If you have different versions across your database landscape, this tool is ideal for upgrading from one central point.
 
-Most usefully, DMA highlights deprecated features in older databases so you can see the code that will break, before you begin the upgrade. DMA also suggests features that will boost security and performance, and the results can be exported.
+Most usefully, DMA highlights deprecated features in older databases, so you can see the code that will break before you begin the upgrade. DMA also suggests features that will boost security and performance, and you can export the results.

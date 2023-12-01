@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/11/2023
   author: Adriamen
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-knowledge-check.md)] 
@@ -26,9 +25,9 @@ quiz:
     - content: "Just-in-time (JIT) privileged access management system."
       isCorrect: false
       explanation: "Incorrect.  Controls are in place to restrict insider access to production systems and customer data, including the Just-in-Time (JIT) privileged access management system."
-    - content: "Azure Active Directory (Azure AD)."
+    - content: "Microsoft Entra ID."
       isCorrect: true
-      explanation: "Correct. To access encryption keys in Azure Key Vault HSMs, Azure AD must authenticate all callers. Azure AD authentication enforces tenant isolation and implements robust measures to prevent access by unauthorized parties, including Microsoft insiders."
+      explanation: "Correct. To access encryption keys in Azure Key Vault HSMs, Microsoft Entra ID must authenticate all callers. Microsoft Entra authentication enforces tenant isolation and implements robust measures to prevent access by unauthorized parties, including Microsoft insiders."
   - content: "What protects connections between customer’s client systems and Microsoft cloud services by generating a unique session key for every session a customer initiates?"
     choices:
     - content: "In-transit encryption for VMs."

@@ -7,8 +7,10 @@ metadata:
   ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
+    - devx-track-bicep
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

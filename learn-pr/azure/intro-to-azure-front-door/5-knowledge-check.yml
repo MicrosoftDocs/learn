@@ -5,11 +5,10 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
-  ms.date: 03/14/2021
+  ms.date: 10/16/2023
   author: duongau
   ms.author: duau
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -39,7 +38,7 @@ quiz:
       explanation: "Correct. Both Azure Front Door Standard and Premium SKUs support this feature."
   - content: "Security admins at Contoso want to ensure that the Azure Front Door SKU you select integrates with Microsoft Threat Intelligence and security analytics. Which SKU provides this support?"
     choices:
-    - content: "Azure Front Door"
+    - content: "Azure Front Door (classic)"
       isCorrect: false
       explanation: "Incorrect. Azure Front Door doesn't support this integration."
     - content: "Azure Front Door Premium"
@@ -50,7 +49,7 @@ quiz:
       explanation: "Incorrect. Azure Front Door Standard doesn't support this integration."
   - content: "With Azure Front Door, how can you help guarantee that the front-end hosts ensure requests from the same user are forwarded to the same backend?"
     choices:
-    - content: "This is not a feature of Azure Front Door."
+    - content: "This isn't a feature of Azure Front Door."
       isCorrect: false
       explanation: "Incorrect. This is a feature of Azure Front Door routing."
     - content: "By using weighted routing"

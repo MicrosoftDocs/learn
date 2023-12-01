@@ -7,8 +7,7 @@ metadata:
   ms.date: 11/01/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 4
@@ -28,7 +27,7 @@ quiz:
     - content: "At the repository level."
       isCorrect: false
       explanation: "Incorrect. To use SSO, you need to connect your identity provider to GitHub at the organization level."
-  - content: "Applications are registered with an Azure AD tenant within Azure Active Directory. Registering an application creates an identity configuration. Which of the following choices isn't correct about who can use it?"
+  - content: "Applications are registered with a Microsoft Entra tenant within Microsoft Entra ID. Registering an application creates an identity configuration. Which of the following choices isn't correct about who can use it?"
     choices:
     - content: "Accounts in the same organizational directory."
       isCorrect: false

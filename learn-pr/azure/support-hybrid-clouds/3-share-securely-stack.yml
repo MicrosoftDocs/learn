@@ -5,10 +5,9 @@ metadata:
   title: Share information securely with Azure Stack Edge
   description: Discussion of how you can store and process highest classification data, uploading resulting information or models to Azure, with Azure Data Box Edge.
   ms.date: 02/23/2021
-  author: Adriamen
-  ms.author: micrum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 4 
 content: |
   [!include[](includes/3-share-securely-stack.md)] 

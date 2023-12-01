@@ -1,3 +1,7 @@
+This module covers best practices for cybersecurity capabilities and controls, which are essential to reduce the risk of attackers succeeding.
+
+## Learning objectives
+
 In this module, you learn how to:
 
 - Use Microsoft Cybersecurity Reference Architecture (MCRA) to design more secure solutions.
@@ -57,14 +61,12 @@ In the MCSB controls are grouped into "families" or "domains". The following tab
 | [Incident Response (IR)](https://learn.microsoft.com/security/benchmark/azure/mcsb-incident-response) | Incident Response covers controls in incident response life cycle - preparation, detection and analysis, containment, and post-incident activities, including using Azure services (such as Microsoft Defender for Cloud and Sentinel) and/or other cloud services to automate the incident response process. |
 | [Posture and Vulnerability Management (PV)](https://learn.microsoft.com/security/benchmark/azure/mcsb-posture-vulnerability-management) | Posture and Vulnerability Management focuses on controls for assessing and improving cloud security posture, including vulnerability scanning, penetration testing and remediation, as well as security configuration tracking, reporting, and correction in cloud resources. |
 | [Endpoint Security (ES)](https://learn.microsoft.com/security/benchmark/azure/mcsb-endpoint-security) | Endpoint Security covers controls in endpoint detection and response, including use of endpoint detection and response (EDR) and anti-malware service for endpoints in cloud environments. |
-| [Backup and Recovery (BR)](https://learn.microsoft.com/security/benchmark/azure/mcsb-backup-recovery)[Backup and Recovery (BR)](https://learn.microsoft.com/security/benchmark/azure/mcsb-backup-recovery) | Backup and Recovery covers controls to ensure that data and configuration backups at the different service tiers are performed, validated, and protected. |
+| [Backup and Recovery (BR)](https://learn.microsoft.com/security/benchmark/azure/mcsb-backup-recovery)[Backup and Recovery (BR)](https://learn.microsoft.com/security/benchmark/azure/mcsb-backup-recovery) | Backup and Recovery cover controls to ensure that data and configuration backups at the different service tiers are performed, validated, and protected. |
 | [DevOps Security (DS)](https://learn.microsoft.com/security/benchmark/azure/mcsb-devops-security) | DevOps Security covers the controls related to the security engineering and operations in the DevOps processes, including deployment of critical security checks (such as static application security testing, vulnerability management) prior to the deployment phase to ensure the security throughout the DevOps process; it also includes common topics such as threat modeling and software supply security. |
-| [Governance and Strategy (GS)](https://learn.microsoft.com/security/benchmark/azure/mcsb-governance-strategy) | Governance and Strategy provides guidance for ensuring a coherent security strategy and documented governance approach to guide and sustain security assurance, including establishing roles and responsibilities for the different cloud security functions, unified technical strategy, and supporting policies and standards. |
+| [Governance and Strategy (GS)](https://learn.microsoft.com/security/benchmark/azure/mcsb-governance-strategy) | Governance and Strategy provide guidance for ensuring a coherent security strategy and documented governance approach to guide and sustain security assurance, including establishing roles and responsibilities for the different cloud security functions, unified technical strategy, and supporting policies and standards. |
 
 ### Service baselines
-<!--
-https://learn.microsoft.com/security/benchmark/azure/security-baselines-overview
--->
+
 Security baselines are standardized documents for Azure product offerings, describing the available security capabilities and the optimal security configurations to help you strengthen security through improved tooling, tracking, and security features. We currently have service baselines available for Azure only.
 
 Security baselines for Azure focus on cloud-centric control areas in Azure environments. These controls are consistent with well-known industry standards such as: Center for Internet Security (CIS) or National Institute for Standards in Technology (NIST). Our baselines provide guidance for the control areas listed in the Microsoft cloud security benchmark v1.

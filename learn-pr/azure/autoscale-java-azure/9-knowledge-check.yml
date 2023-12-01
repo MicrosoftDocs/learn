@@ -7,9 +7,10 @@ metadata:
   ms.date: 11/18/2021
   author: roryp
   ms.author: ropreddy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.topic: unit
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-extended-java
   ms.contributors: ropreddy-12032021
 durationInMinutes: 2
 quiz:

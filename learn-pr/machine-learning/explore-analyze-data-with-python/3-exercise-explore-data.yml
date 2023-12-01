@@ -7,8 +7,9 @@ metadata:
   ms.date: 12/22/2022
   author: TomReidNZ
   ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-python
 durationInMinutes: 12
 sandbox: true
 notebook: notebooks/01-numpy-and-pandas.ipynb

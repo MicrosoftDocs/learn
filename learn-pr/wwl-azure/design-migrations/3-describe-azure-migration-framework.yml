@@ -4,11 +4,11 @@ title: Describe the Azure migration framework
 metadata:
   title: Describe the Azure migration framework
   description: "Describe the Azure migration framework"
-  ms.date: 02/16/2023
+  ms.date: 10/20/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.reviewer: tozimmergren
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

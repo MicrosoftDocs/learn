@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.protect-identities-azure-acative-directory.explore-identity-protection
-title: Explore Azure AD identity protection
+title: Explore Microsoft Entra ID Protection
 metadata:
-  title: Explore Azure AD identity protection
-  description: "Explore Azure AD identity protection"
-  ms.date: 04/25/2023
+  title: Explore Microsoft Entra ID Protection
+  description: "Explore Microsoft Entra ID Protection"
+  ms.date: 05/11/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/5-explore-identity-protection.md)]

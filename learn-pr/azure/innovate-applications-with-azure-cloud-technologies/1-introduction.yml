@@ -4,10 +4,9 @@ metadata:
   title: Introduction
   description: Introduction
   ms.date: 04/14/2023
-  author: jomore
-  ms.author: jomore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 title: Introduction
 durationInMinutes: 3
 content: |

@@ -5,11 +5,10 @@ metadata:
   unitType: introduction
   title: Introduction
   description: This is an introduction to the module.
-  ms.date: 04/21/2023
+  ms.date: 10/20/2023
   author: LBN-commits
   ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

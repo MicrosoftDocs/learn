@@ -6,8 +6,8 @@ metadata:
   ms.date: 04/24/2023
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: app-service
 title: Scale apps in Azure App Service
 summary: Learn how autoscale operates in App Service and how to identify autoscale factors, enable autoscale, and how to create sound autoscale conditions.
 abstract: |

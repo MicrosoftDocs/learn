@@ -1,5 +1,3 @@
-
-
 In this module, you've learned how to:
 
 - Create a batch endpoint.  

@@ -5,11 +5,10 @@ metadata:
   unitType: exercise
   title: Exercise - Create and configure Front Door
   description: Create Front Door for the two virtual machines hosting the vehicle registration web app and an App Service for a license renewal web app.
-  ms.date: 06/08/2022
+  ms.date: 10/16/2023
   author: duongau
   ms.author: duau
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 20
 content: |
   [!include[](includes/5-exercise-create-configure-front-door.md)]

@@ -1,4 +1,4 @@
-A scalar subquery is an inner SELECT statement within an outer query, written to return a single value. Scalar subqueries may be used anywhere in an outer T-SQL statement where a single-valued expression is permitted—such as in a SELECT clause, a WHERE clause, a HAVING clause, or even a FROM clause. They can also be used in data modification statements, such as UPDATE or DELETE.
+A scalar subquery is an inner SELECT statement within an outer query, written to return a single value. Scalar subqueries might be used anywhere in an outer T-SQL statement where a single-valued expression is permitted—such as in a SELECT clause, a WHERE clause, a HAVING clause, or even a FROM clause. They can also be used in data modification statements, such as UPDATE or DELETE.
 
 Multi-valued subqueries, as the name suggests, can return more than one row. However they still return a single column.
 
@@ -73,4 +73,4 @@ So how do you decide whether to write a query involving multiple tables as a JOI
 
 One restriction you should keep in mind is that when using a nested query, the results returned to the client can only include columns from the outer query. So if you need to return columns from both tables, you should write the query using a JOIN.
 
-Finally, there are situations where the inner query needs to perform much more complicated operations that the simple retrievals in our examples. Rewriting complex subqueries using a JOIN can be difficult. Many SQL developers find subqueries work best for complicated processing because it allows you to break down the processing into smaller steps.
+Finally, there are situations where the inner query needs to perform much more complicated operations than the simple retrievals in our examples. Rewriting complex subqueries using a JOIN can be difficult. Many SQL developers find subqueries work best for complicated processing because it allows you to break down the processing into smaller steps.

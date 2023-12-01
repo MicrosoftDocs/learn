@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/08/2023
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -60,13 +59,13 @@ quiz:
       explanation: "Correct. To aggregate measures in a fact table by attributes in a dimension table, include an aggregate function for the measure, join the tables on the surrogate key, and group the results by the appropriate attributes."
   - content: "You use the `RANK` function in a query to rank customers in order of the number of purchases they have made. Five customers have made the same number of purchases and are all ranked equally as 1. What rank will the customer with the next highest number of purchases be assigned?"
     choices:
-    - content: "2"
+    - content: "two"
       isCorrect: false
-      explanation: "Incorrect. There are five customers with a higher number of purchases, and `RANK` takes these into account. A value of 2 would be returned by `DENSE_RANK`"
-    - content: "6"
+      explanation: "Incorrect. There are five customers with a higher number of purchases, and `RANK` takes these into account. A value of two would be returned by `DENSE_RANK`"
+    - content: "six"
       isCorrect: true
       explanation: "Correct. There are five customers with a higher number of purchases, and `RANK` takes these into account."
-    - content: "1"
+    - content: "one"
       isCorrect: false
       explanation: "Incorrect. There are five customers with a higher number of purchases, and `RANK` takes these into account."
   - content: "You need to compare approximate production volumes by product while optimizing query response time. Which function should you use?"

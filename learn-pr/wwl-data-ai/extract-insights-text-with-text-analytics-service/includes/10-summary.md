@@ -1,4 +1,4 @@
-In this module, you learned how to use the Language service to:
+In this module, you learned how to use the Azure AI Language service to:
 
 - Detect language
 - Extract key phrases
@@ -6,4 +6,4 @@ In this module, you learned how to use the Language service to:
 - Extract entities
 - Extract linked entities
 
-To learn more about the Language service, explore the [Language Cognitive Services documentation](/azure/cognitive-services/language-service/).
+To learn more about the Azure AI Language service, explore the [Azure AI Language documentation](/azure/cognitive-services/language-service/).

@@ -81,7 +81,7 @@ Let's add some JavaScript code to the TypeScript file and then compile it.
  
    You should now be able to see the *.ts* and *.js* files side by side. Notice that they're identical, except that the *.js* file doesn't include the new type annotations.
 
-1. At the Terminal command prompt, enter `node .\build\module01.js`. This command runs the JavaScript and displays the result in the console log.
+1. At the Terminal command prompt, enter `node ./build/module01.js`. This command runs the JavaScript and displays the result in the console log.
 
 ## Add an HTML file
 

@@ -7,9 +7,9 @@ metadata:
   ms.date: 04/30/2021
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
+  ms.topic: unit
   ms.custom: team=nextgen
+  ms.service: iot-edge
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/3-how-deploy-edge-device.md)]

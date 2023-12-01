@@ -23,7 +23,7 @@ In this unit, you'll create a system-assigned managed identity for your VM. You'
     export publicIP=$(az vm create \
         --name $VMNAME \
         --resource-group <rgn>[Sandbox resource group]</rgn> \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --generate-ssh-keys \
         --output tsv \
         --query "publicIpAddress")

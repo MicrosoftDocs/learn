@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-healthcare.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 11/30/2023
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

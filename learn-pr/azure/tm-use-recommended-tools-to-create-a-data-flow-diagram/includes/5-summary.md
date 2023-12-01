@@ -4,7 +4,7 @@ You learned about the different tools you can use to create your data-flow diagr
 
 In this module, you:
 
-- Learned more about the Threat Modeling Tool.
+- Learned more about the Microsoft Threat Modeling Tool.
 - Learned more about Visio.
 
 > [!NOTE]

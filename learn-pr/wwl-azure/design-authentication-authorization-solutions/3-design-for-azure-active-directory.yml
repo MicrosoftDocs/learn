@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-authentication-authorization-solutions.design-for-azure-active-directory
-title: Design for Azure Active Directory
+title: Design for Microsoft Entra ID
 metadata:
-  title: Design for Azure Active Directory
-  description: "Design for Azure Active Directory"
+  title: Design for Microsoft Entra ID
+  description: "Design for Microsoft Entra ID"
   ms.date: 03/24/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

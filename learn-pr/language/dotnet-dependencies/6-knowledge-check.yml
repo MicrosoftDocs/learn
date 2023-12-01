@@ -4,11 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 10/28/2020
+  ms.date: 10/12/2023
   author: jamesmontemagno
   ms.author: jamont
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/6-knowledge-check.md)]

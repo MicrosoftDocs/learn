@@ -11,8 +11,7 @@ Microsoft Sentinel is both a Security Information and Event Management (SIEM) an
 
 
 
-> [!Note]
-
+> [!NOTE]
 > SIEM solutions provide storage and analysis of logs, events, and alerts that other systems generate. You can configure these solutions to raise their own alerts. SOAR solutions support the remediation of vulnerabilities and the overall automation of security processes.
 
 
@@ -54,7 +53,6 @@ Logic apps use connectors to connect to hundreds of services. A *connector* is a
 
 
 > [!NOTE]
-
 > A Microsoft Sentinel data connector and a Logic Apps connector are not the same thing. A Microsoft Sentinel data connector connects Microsoft Sentinel with Microsoft security products and security ecosystems for non-Microsoft solutions. A Logic Apps connector is a component that provides an API connection for an external service and allows integration of events, data, and actions across other apps, services, systems, protocols, and platforms. 
 
 
@@ -89,8 +87,7 @@ Currently, there are two triggers from Microsoft Sentinel Logic Apps connector:
 
 
 
-> [!Note]
-
+> [!NOTE]
 > Because Microsoft Sentinel Logic App connector is in preview, the features described in this module might change in the future.
 
 
@@ -100,39 +97,24 @@ The following table lists all the current actions for the Microsoft Sentinel con
 
 
 | Name | Description |
-
 | --- | --- |
-
 | Add comment to incident | Adds comments to the selected incident. |
-
 | Add labels to incident | Adds labels to the selected incident. |
-
 | Alert - Get incident | Returns the incident associated with the selected alert. |
-
 | Change incident description | Changes the description for the selected incident. |
-
 | Change incident severity | Changes the severity for the selected incident. |
-
 | Change incident status | Changes the status for the selected incident. |
-
 | Change incident title (V2) | Changes the title for the selected incident. |
-
 | Entities - Get Accounts | Returns a list of accounts associated with the alert. |
-
 | Entities - Get FileHashes | Returns a list of File Hashes associated with the alert. |
-
 | Entities - Get Hosts | Returns a list of hosts associated with the alert. |
-
 | Entities - Get IPs | Returns a list of IPs associated with the alert. |
-
 | Entities - Get URLs | Returns a list of URLs associated with the alert. |
-
 | Remove labels from incident | Removes the labels for the selected incident. |
 
 
 
-> [!Note]
-
+> [!NOTE]
 > Actions that have **(V2)** or a higher number provide a new version of the action and might differ from the old functionality of the action.
 
 

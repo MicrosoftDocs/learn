@@ -49,11 +49,11 @@ The following high-level design guidelines can help translate your organization'
 
 These design areas are discussed in more detail in other Microsoft Learn modules about enterprise-scale architecture.
 
-- **Enterprise enrollment and Azure Active Directory (Azure AD) tenants**: An Enterprise Agreement (EA) enrollment represents the commercial relationship between Microsoft and how your organization uses Azure. It provides the basis for billing across all your subscriptions and affects the administration of your digital estate.
+- **Enterprise enrollment and Microsoft Entra tenants**: An Enterprise Agreement (EA) enrollment represents the commercial relationship between Microsoft and how your organization uses Azure. It provides the basis for billing across all your subscriptions and affects the administration of your digital estate.
 
 - **Identity and access management**: Identity and access management provides the basis of a large part of security assurance. To protect data and resources, it enables access based on identity authentication and authorization controls, and it helps you decide which requests should be permitted.
 
-- **Management group and subscription organization**: When an organization plans Azure adoption at scale, it must thoroughly consider management group structures within an Azure AD tenant. A well-defined management group and subscription organization simplifies the management of Azure Policy and role-based access control (RBAC) assignments.
+- **Management group and subscription organization**: When an organization plans Azure adoption at scale, it must thoroughly consider management group structures within a Microsoft Entra tenant. A well-defined management group and subscription organization simplifies the management of Azure Policy and role-based access control (RBAC) assignments.
 
 - **Network topology and connectivity**: There are key design considerations and recommendations surrounding networking and connectivity to, from, and within Azure. Network topology is a critical element of an enterprise-scale architecture, because it defines how applications can communicate with each other.
 

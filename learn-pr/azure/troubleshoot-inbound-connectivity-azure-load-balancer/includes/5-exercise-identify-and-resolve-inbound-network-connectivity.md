@@ -1,6 +1,6 @@
-In our scenario, a change was made to the network configuration. You've started to receive alerts informing you that virtual machines in the back-end pool aren't responding to health probes. Now you need to diagnose the cause of these failures and fix them.
+In our scenario, a change was made to the network configuration. You're receiving alerts that virtual machines in the back-end pool aren't responding to health probes. Now you need to diagnose the cause of these failures and fix them.
 
-In this exercise, you'll use a script to reconfigure the environment and cause health probe failures. You'll use the skills learned in this module to return the load-balanced HTTP service back to full operation.
+In this exercise, you use a script to reconfigure the environment and cause health probe failures. You use the skills learned in this module to return the load-balanced HTTP service back to full operation.
 
 ## Reconfigure load balancer and retest
 
@@ -16,19 +16,19 @@ In this exercise, you'll use a script to reconfigure the environment and cause h
     cd ~/load-balancer/src/scripts
     ```
 
-1. Run the following command to reconfigure the load balancer, network, and virtual machines. This script introduces some problems that you'll later diagnose and correct.
+2. Run the following command to reconfigure the load balancer, network, and virtual machines. This script introduces some problems that you'll diagnose and correct.
 
     ```bash
     bash reconfigure.sh
     ```
 
-1. Run the following commands to move to the **src/stresstest** folder.
+3. Run the following commands to move to the **src/stresstest** folder.
 
     ```bash
     cd ~/load-balancer/src/stresstest
     ```
 
-1. Run the stress test again where you replace <*ip address*> with the IP address of the load balancer. If you can't remember this address, run the **src/scripts/findip.sh** script again.
+4. Run the stress test again where you replace <*ip address*> with the IP address of the load balancer. If you can't remember this address, run the **src/scripts/findip.sh** script again.
 
     ```bash
     dotnet run <ip address>
@@ -36,9 +36,9 @@ In this exercise, you'll use a script to reconfigure the environment and cause h
 
     This time, the app won't generate any output and might eventually time out with the message "Error sending request to Load Balancer: The operation was canceled." Press <kbd>Enter</kbd> to stop the application.
 
-1. In the Azure portal, select **Dashboard** > **dashboard-learn-ts-loadbalancer**.
+5. In the Azure portal, select **Dashboard** > **dashboard-learn-ts-loadbalancer**.
 
-1. Review the dashboard that shows the health probe status and data path availability. You might need to change the time range to the past 30 minutes. It should look like the following chart, with both metrics dropped to zero.
+6. Review the dashboard that shows the health probe status and data path availability. You might need to change the time range to the past 30 minutes. It should look like the following chart, with both metrics dropped to zero.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot that shows the health probe status and data path availability is in an unhealthy state.](../media/5-probe-unhealthy.png)
@@ -68,10 +68,10 @@ You can't ping the *appretailvm1* or *appretailvm2* virtual machines directly be
     cat passwd.txt
     ```
 
-1. Sign in to the jump box. Replace **azureuser** if you used a different user name.
+1. Sign in to the jump box with the IP address and password from the previous command outputs. Replace **azureuser** if you used a different user name.
 
     ```bash
-    ssh azureuser@<jumpbox ip address>
+    ssh azureuser@<jump box ip address>
     ```
 
 1. On the jump box, run the following command to test whether the *retailappvm1* virtual machine is running.
@@ -117,7 +117,7 @@ The *retailappvm1* virtual machine is up, and the application is running on that
 
 1. Go to the resource group **learn-ts-loadbalancer-rg**, and select **retailapplb**.
 
-1. Select **Load balancing rule** > **retailapprule**. This rule receives Tcp traffic on port 80 of the front-end IP address, and sends it to port 80 on the selected virtual machine in the back-end pool. This configuration appears to be correct, although the port used by the health probe looks suspicious. It's currently set to port 85.
+1. Select **Load balancing rules** > **retailapprule**. This rule receives Tcp traffic on port 80 of the front-end IP address, and sends it to port 80 on the selected virtual machine in the back-end pool. This configuration appears to be correct, although the port used by the health probe looks suspicious. It's currently set to port 85.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the **retailapprule** page that shows the health probe is using  port 85.](../media/5-retailapprule.png)
@@ -165,7 +165,7 @@ The problem might be caused by a network security rule blocking external traffic
 
 1. Select the **retailappnsg** network security group. This security group determines which traffic is allowed through the virtual network.
 
-1. Select **Inbound security rules**. Although there's a rule that allows incoming traffic from the load balancer running in the virtual network, there's no rule that permits traffic originating from outside the virtual network through port 80.
+1. Select **Inbound security rules**. While there's a rule that allows incoming traffic from the load balancer running in the virtual network, there's no rule permitting traffic originating from outside the virtual network through port 80.
 
 1. Select **Add**. The **Add inbound security rule** pane appears.
 
@@ -201,7 +201,7 @@ The problem might be caused by a network security rule blocking external traffic
 
 It seems that the *appretailvm2* virtual machine might not be handling requests properly. You need to check whether this virtual machine is up, and whether Load Balancer can connect to it.
 
-1. In Cloud Shell, sign in to the jump box again.
+1. In Cloud Shell, sign in to the jump box with the IP address and password from the previous command outputs
 
     ```bash
     ssh azureuser@<jump box ip address>

@@ -1,13 +1,16 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.azure.cna-build-basic-service.exercise-connect-express-js-postgresql
 title: Exercise - Connect Express.js to Azure Database for PostgreSQL
 metadata:
   title: Exercise - Connect Express.js to Azure Database for PostgreSQL
   description: Create a database on the Azure Database for PostgreSQL server and connect Express.js backend to the database.
   ms.date: 05/15/2021
-  author: mpolicht
-  ms.author: jasdeb
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-js
   ms.prod: learning-azure
 durationInMinutes: 25
 content: |

@@ -4,10 +4,9 @@ metadata:
   title: Decompose a monolithic application into a microservices architecture
   description: Improve development agility, deployment, fault tolerance, and scalability by modernizing your application with a microservices architecture.
   ms.date: 03/04/2022
-  author: davidcberry13
-  ms.author: daberry
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Decompose a monolithic application into a microservices architecture
 summary: Improve development agility, deployment, fault tolerance, and scalability by modernizing your application with a microservices architecture.
 abstract: | 

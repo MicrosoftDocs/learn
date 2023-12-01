@@ -9,6 +9,6 @@ After completing this module, you will be able to:
 - Understand considerations for AI Engineers
 - Understand considerations for responsible AI
 - Understand capabilities of Azure Machine Learning
-- Understand capabilities of Azure Cognitive Services
+- Understand capabilities of Azure AI Services
 - Understand capabilities of the Azure Bot Service
 - Understand capabilities of Azure Cognitive Search

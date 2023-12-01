@@ -7,8 +7,9 @@ metadata:
   ms.date: 03/15/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 2
 content: |
   [!include[](includes/4-summary.md)]

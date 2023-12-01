@@ -8,7 +8,6 @@ metadata:
   author: kaitlynjones
   ms.author: kaitlynjones
   ms.topic: interactive-tutorial
-  ms.prod: learning-hardware-devices
 durationInMinutes: 12
 content: |
   [!include[](includes/02-hardware-components.md)]

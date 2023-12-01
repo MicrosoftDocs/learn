@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-authentication-methods.exercise-create-azure-ad-workbook
-title: Exercise - Create an Azure AD workbook
+title: Exercise - Create a Microsoft Entra workbook
 metadata:
   unitType: exercise
-  title: Exercise - Create an Azure AD workbook
-  description: Exercise - Create an Azure AD workbook
+  title: Exercise - Create a Microsoft Entra workbook
+  description: Exercise - Create a Microsoft Entra workbook
   ms.date: 07/21/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.topic: unit
 durationInMinutes: 25
 content: |
   [!include[](includes/exercise-create-azure-ad-workbook.md)]

@@ -4,13 +4,13 @@ title: What are orchestrators?
 metadata:
   title: What are orchestrators?
   description: Orchestrators help with the manual tasks of managing containerized microservices. Learn about what they do and how Kubernetes fits in.
-  ms.date: 08/03/2021
+  ms.date: 11/06/2023
   author: codemillmatt
-  ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: masoucou  
+  ms.topic: unit  
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - devx-track-dotnet
   ms.contributors:
   - masoucou-09032021
 durationInMinutes: 5
@@ -24,7 +24,7 @@ quiz:
         - content: "Each microservice needs to be maintained, scaled, and deployed individually. An orchestrator helps manage those tasks."
           isCorrect: true
           explanation: "The orchestrator can dynamically respond to changes in the environment to increase or decrease the deployed instances of the managed app. Or, it can ensure all deployed container instances get updated if a new version of a service is released."
-        - content: "An orchestrator holds instructions on how to build and version Docker image."
+        - content: "An orchestrator holds instructions on how to build and version Docker images."
           isCorrect: false
           explanation: "An orchestrator is a system that automatically deploys and manages containerized apps."
         - content: "An orchestrator is the only means by which to run a containerized application in the cloud."

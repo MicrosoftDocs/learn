@@ -8,8 +8,8 @@ metadata:
   author: alexwolfmsft
   ms.author: alexwolf
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.topic: module
+  ms.service: app-service
 title: Remotely debug ASP.NET Core apps hosted on Azure App Service using Visual Studio
 summary: Learn how to remotely debug your ASP.NET Core apps on Azure App Service directly using Visual Studio 2022.
 abstract: |

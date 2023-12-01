@@ -1,4 +1,3 @@
-
 This exercise uses the Azure Blob storage client library to show you how to perform the following actions on Azure Blob storage in a console app:
 
 * Create a container
@@ -16,6 +15,8 @@ This exercise uses the Azure Blob storage client library to show you how to perf
 * [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0) is the target framework for the steps below.
 
 * The [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
+
+* [Azure CLI](/cli/azure/install-azure-cli)
 
 ## Setting up
 
@@ -246,3 +247,4 @@ The app deleted the resources it created. You can delete all of the resources cr
 ```bash
 az group delete --name az204-blob-rg --no-wait
 ```
+

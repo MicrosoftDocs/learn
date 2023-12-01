@@ -8,8 +8,8 @@ metadata:
   ms.date: 9/29/2021
   author: csharpfritz
   ms.author: jefritz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
 durationInMinutes: 3
 content: |
 quiz:
@@ -54,10 +54,10 @@ quiz:
       choices:
         - content: "Integration Requirements"
           isCorrect: false
-          explanation: "While you may be integrating with other applications and logic, this doesn't require the application run on the server."
+          explanation: "While you might be integrating with other applications and logic, this doesn't require the application run on the server."
         - content: "Code Security Requirements"
           isCorrect: true
-          explanation: "Blazor Server is an application configuration where all code executes on the server, and only user-interface updates are sent to the browser."
+          explanation: "Blazor Server is an application configuration where all code executes on the server, and only user interface updates are sent to the browser."
         - content: "Complexity of the Application"
           isCorrect: false
           explanation: "While this scenario describes a complex application, it's not the primary reason to build with Blazor Server."
@@ -65,10 +65,10 @@ quiz:
       choices:
         - content: "Integration Requirements"
           isCorrect: false
-          explanation: "While you may not be asked to integrate with existing .NET resources, this isn't the primary reason to choose a solution other than Blazor."
+          explanation: "While you might not be asked to integrate with existing .NET resources, this isn't the primary reason to choose a solution other than Blazor."
         - content: "Code Security Requirements"
           isCorrect: false
-          explanation: "While your application may need to be secured and run on a server as Blazor Server can, you should instead prefer to use Node and the tools with which you're already familiar."
+          explanation: "While your application might need to be secured and run on a server such as Blazor Server, you should instead prefer to use Node and the tools with which you're already familiar."
         - content: ".NET Familiarity"
           isCorrect: true
-          explanation: "Blazor exposes techniques and interactions that are common for .NET developers to use. Developers who are more familiar with other technologies should use those technologies with which they're more familiar."
+          explanation: "Blazor uses techniques and interactions that are common for .NET developers to use. Developers who are more familiar with other technologies should use those technologies."
