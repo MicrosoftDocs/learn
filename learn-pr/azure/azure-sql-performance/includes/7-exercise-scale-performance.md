@@ -10,7 +10,7 @@ To scale performance for a problem that appears to be a CPU capacity problem, yo
   
     For Azure, you can use `ALTER DATABASE`, the Azure CLI, or the Azure portal to increase CPU capacity with no database migration on the part of the user.
   
-1. Using the Azure portal, you can see options for how you can scale for more CPU resources. From the your database's **Overview** pane, select the **Pricing** tier for the current deployment. The **Pricing** tier allows you to change the service tier and the number of vCores.
+1. Using the Azure portal, you can see options for how you can scale for more CPU resources. From your database's **Overview** pane, select the **Pricing** tier for the current deployment. The **Pricing** tier allows you to change the service tier and the number of vCores.
   
     :::image type="content" source="../media/7-azure-portal-change-tier.png" alt-text="Screenshot of changing service tier in the Azure portal.":::
   
