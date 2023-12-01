@@ -1,4 +1,4 @@
-You're finished with the tasks for this module. Here, you'll clean up your Azure resources, move the work item to the **Done** state on Azure Boards, and clean up your Azure DevOps environment.
+You're finished with the tasks for this module. In this unit, you clean up your Azure resources, move the work item to the **Done** state on Azure Boards, and clean up your Azure DevOps environment.
 
 > [!IMPORTANT]
 > This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. It also helps ensure that you're not charged for Azure resources after you complete this module.
@@ -34,7 +34,7 @@ To clean up your resource group:
 
 ## Move the work item to Done
 
-Here, you move the work item that you assigned to yourself earlier in this module. You move **Create a multistage pipeline** to the **Done** column.
+Now, move the work item that you assigned to yourself earlier in this module. Move **Create a multistage pipeline** to the **Done** column.
 
 In practice, "Done" often means putting working software into the hands of your users. For learning purposes, here, you mark this work as done because you fulfilled the goal for the Tailspin team. They wanted to define a complete multistage pipeline to deliver new features.
 
@@ -67,7 +67,7 @@ To disable the pipeline:
     :::image type="content" source="../../shared/media/azure-pipelines-settings-button.png" alt-text="A screenshot of Azure Pipelines showing the location of the Settings menu.":::
 1. Under **Processing of new run requests**, select **Disabled**, and then select **Save**.
 
-    Your pipeline will no longer process build requests.
+    Now, your pipeline no longer processes build requests.
 
 ### Option 2: Delete the Azure DevOps project
 
