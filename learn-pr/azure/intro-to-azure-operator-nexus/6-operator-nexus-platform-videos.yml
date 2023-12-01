@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-operator-nexus.operator-nexus-platform-videos
+title: Operator Nexus platform videos
+metadata:
+  title: Operator Nexus platform videos
+  description: Operator Nexus platform videos
+  ms.date: 12/01/2023
+  author: lnyswonger
+  ms.author: lnyswonger
+  ms.topic: unit
+durationInMinutes: 60
+content: |
+  [!include[](includes/6-operator-nexus-platform-videos.md)]
