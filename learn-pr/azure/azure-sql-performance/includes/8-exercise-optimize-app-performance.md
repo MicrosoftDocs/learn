@@ -118,7 +118,7 @@ The problem isn't a high percentage of log write activity. The Azure portal and 
 
 Examine the **order_rating_insert_single.sql** workload T-SQL script. Each `INSERT` is a single transaction commit, which requires a transaction log flush.
 
-One commit for each insert isn't efficient, but the application wasn't affected on a local SSD because each commit was very fast. The Business Critical pricing tier (service objective or SKU) provides local SSD drives with a lower latency. It's possible that there is an application optimization, so the workload isn't as sensitive to I/O latency for the transaction log.
+One commit for each insert isn't efficient, but the application wasn't affected on a local SSD because each commit was very fast. The Business Critical pricing tier (service objective or SKU) provides local SSD drives with a lower latency. It's possible that there's an application optimization, so the workload isn't as sensitive to I/O latency for the transaction log.
 
 You can change the T-SQL batch for the workload to wrap a `BEGIN TRAN/COMMIT TRAN` around the `INSERT` iterations.
 
