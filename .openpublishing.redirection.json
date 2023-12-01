@@ -30660,6 +30660,11 @@
       "source_path": "learn-pr/wwl-azure/challenge-project-classes-methods-properties/4-exercise-create-car-class.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/challenge-project-classes-methods-properties/3-exercise-create-console-app.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
     }
   ]
 }
