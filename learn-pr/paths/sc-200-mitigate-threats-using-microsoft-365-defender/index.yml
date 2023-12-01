@@ -23,7 +23,7 @@ products:
 - defender-identity
 - defender-office365
 - m365
-- mdatp
+- defender-endpoint
 - microsoft-defender
 subjects:
 - cloud-security

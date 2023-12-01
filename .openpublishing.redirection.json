@@ -11432,6 +11432,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/windows/develop-web-apps-with-vs-code/index.md",
+      "redirect_url": "/training/modules/get-started-with-web-development",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/develop-web-apps-with-vs-code/1-introduction.md",
+      "redirect_url": "/training/modules/get-started-with-web-development",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/develop-web-apps-with-vs-code/2-installation-and-tour.md",
+      "redirect_url": "/training/modules/get-started-with-web-development",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/develop-web-apps-with-vs-code/3-extensions.md",
+      "redirect_url": "/training/modules/get-started-with-web-development",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/develop-web-apps-with-vs-code/4-creating-files.md",
+      "redirect_url": "/training/modules/get-started-with-web-development",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/develop-web-apps-with-vs-code/5-building-app.md",
+      "redirect_url": "/training/modules/get-started-with-web-development",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/develop-web-apps-with-vs-code/6-summary-and-knowledge-check.md",
+      "redirect_url": "/training/modules/get-started-with-web-development",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/build-azure-vm-templates/index.md",
       "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code",
       "redirect_document_id": false
@@ -19430,6 +19465,66 @@
       "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/9-design-service-principals.md",
       "redirect_url": "/training/modules/design-authentication-authorization-solutions/9-two-design-service-principals",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/2-onpremises-extension-attributes.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/3-exercise-onpremises-extension-attributes.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/4-directory-extensions.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/5-exercise-directory-extensions.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/6-schema-extensions.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/7-exercise-schema-extensions.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/8-open-extensions.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/9-exercise-open-extensions.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/create-production-workloads-azure-databricks-azure-data-factory/index.md",
