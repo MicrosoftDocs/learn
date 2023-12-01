@@ -1,6 +1,3 @@
-> [!NOTE]
-> Resource logs were previously known as diagnostic logs. The name was changed in October 2019 as the types of logs gathered by Azure Monitor shifted to include more than just the Azure resource.
-
 Businesses that implement Azure IoT Hub expect reliable performance from their resources. To help you maintain a close watch on your operations, IoT Hub is fully integrated with Azure Monitor and Azure Resource Health. These two services work to provide you with the data you need to keep your IoT solutions up and running in a healthy state.
 
 Azure Monitor is a single source of monitoring and logging for all your Azure services. You can send the resource logs that Azure Monitor generates to Azure Monitor logs, Event Hubs, or Azure Storage for custom processing. Azure Monitor's metrics and diagnostics settings give you visibility into the performance of your resources. Continue reading this article to learn how to Use Azure Monitor with your IoT hub.

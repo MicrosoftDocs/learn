@@ -15,9 +15,11 @@ A more complex implementation could include the information from Azure Monitor a
 
 ## Device and module lifecycle notifications
 
-IoT Hub can notify your IoT solution when an identity is created or deleted by sending lifecycle notifications. To do so, your IoT solution needs to create a route and to set the Data Source equal to **DeviceLifecycleEvents** or **ModuleLifecycleEvents**. By default, no lifecycle notifications are sent, that is, no such routes pre-exist. The notification message includes properties, and body.
+IoT Hub can notify your IoT solution when an identity is created or deleted by sending lifecycle notifications. To do so, your IoT solution needs to create a route and to set the Data Source equal to **DeviceLifecycleEvents** or **ModuleLifecycleEvents**. By default, no lifecycle notifications are sent, that is, no such routes pre-exist. The notification message includes properties and body.
 
-Properties: Message system properties are prefixed with the /$ symbol.
+### Properties
+
+Message system properties are prefixed with the `$` symbol.
 
 Notification message for device:
 
@@ -102,8 +104,9 @@ Notification message for device:
   :::column-end:::
 :::row-end:::
 
+### Body
 
-Body: This section is in JSON format and represents the twin of the created device identity. For example,
+This section is in JSON format and represents the twin of the created device identity. For example,
 
 ```json
 {
@@ -258,7 +261,7 @@ Device identities are represented as JSON documents with the following propertie
     required, read-only on updates
   :::column-end:::
   :::column:::
-    A case-sensitive string (up to 128 characters long) of ASCII 7-bit alphanumeric characters plus certain special characters: - . + % \_ \# \* ? ! ( ) , = @ $ '
+    A case-sensitive string (up to 128 characters long) of ASCII 7-bit alphanumeric characters plus certain special characters: `- . + % _ # \* ? ! ( ) , = @ $ '`
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -347,8 +350,8 @@ Device identities are represented as JSON documents with the following propertie
   :::column-end:::
   :::column:::
     A field indicating connection status: either **Connected** or **Disconnected**. This field represents the IoT Hub view of the device connection status.
-
-*Important:* This field should be used only for development/debugging purposes. The connection state is updated only for devices using MQTT or AMQP. Also, it is based on protocol-level pings (MQTT pings, or AMQP pings), and it can have a maximum delay of only 5 minutes. For these reasons, there can be false positives, such as devices reported as connected but that are disconnected.
+> [!IMPORTANT]
+> This field should be used only for development/debugging purposes. The connection state is updated only for devices using MQTT or AMQP. Also, it is based on protocol-level pings (MQTT pings, or AMQP pings), and it can have a maximum delay of only 5 minutes. For these reasons, there can be false positives, such as devices reported as connected but that are disconnected.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -373,11 +376,10 @@ Device identities are represented as JSON documents with the following propertie
     A temporal indicator, showing the date and last time the device connected, received, or sent a message.
   :::column-end:::
 :::row-end:::
-
 > [!NOTE]
 > Connection state can only represent the IoT Hub view of the status of the connection. Updates to this state may be delayed, depending on network conditions and configurations.
 > [!NOTE]
-> Currently the device SDKs do not support using the + and \# characters in the deviceId.
+> Currently the device SDKs do not support using the `+` and `#` characters in deviceId.
 
 ## Module identity properties
 
@@ -402,7 +404,7 @@ Module identities are represented as JSON documents with the following propertie
     required, read-only on updates
   :::column-end:::
   :::column:::
-    A case-sensitive string (up to 128 characters long) of ASCII 7-bit alphanumeric characters plus certain special characters: - . + % \_ \# \* ? ! ( ) , = @ $ '
+    A case-sensitive string (up to 128 characters long) of ASCII 7-bit alphanumeric characters plus certain special characters: `- . + % _ # \* ? ! ( ) , = @ $ '`
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -413,7 +415,7 @@ Module identities are represented as JSON documents with the following propertie
     required, read-only on updates
   :::column-end:::
   :::column:::
-    A case-sensitive string (up to 128 characters long) of ASCII 7-bit alphanumeric characters plus certain special characters: - . + % \_ \# \* ? ! ( ) , = @ $ '
+    A case-sensitive string (up to 128 characters long) of ASCII 7-bit alphanumeric characters plus certain special characters: `- . + % _ # \* ? ! ( ) , = @ $ '`
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -503,7 +505,8 @@ Module identities are represented as JSON documents with the following propertie
   :::column:::
     A field indicating connection status: either **Connected** or **Disconnected**. This field represents the IoT Hub view of the device connection status.
 
-*Important:* This field should be used only for development/debugging purposes. The connection state is updated only for devices using MQTT or AMQP. Also, it is based on protocol-level pings (MQTT pings, or AMQP pings), and it can have a maximum delay of only 5 minutes. For these reasons, there can be false positives, such as devices reported as connected but that are disconnected.
+> [!IMPORTANT]
+> This field should be used only for development/debugging purposes. The connection state is updated only for devices using MQTT or AMQP. Also, it is based on protocol-level pings (MQTT pings, or AMQP pings), and it can have a maximum delay of only 5 minutes. For these reasons, there can be false positives, such as devices reported as connected but that are disconnected.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -530,4 +533,4 @@ Module identities are represented as JSON documents with the following propertie
 :::row-end:::
 
 > [!NOTE]
-> Currently the device SDKs do not support using the \\+ and \\\# characters in the \*\*deviceId\*\* and \*\*moduleId\*\*.
+> Currently the device SDKs do not support using the `+` and `#` characters in the **deviceId** and **moduleId**.
