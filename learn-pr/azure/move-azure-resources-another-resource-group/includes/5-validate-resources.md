@@ -1,6 +1,6 @@
-You've assessed all the development resources that are in the incorrect production resource group. You think they'll move without problems, but you'd like to test it first.
+You assessed all the development resources that are in the incorrect production resource group. You think they can move without problems, but you want to test it first.
 
-In this unit, you'll learn how to validate that a move will be successful. You'll also learn how to use the Azure REST API `validate move` operation to test and validate your moves.
+In this unit, you learn how to validate that a move will be successful. You also learn how to use the Azure REST API `validate move` operation to test and validate your moves.
 
 ## Prepare to test your move
 
@@ -16,11 +16,11 @@ az rest --method post --uri <enter the correct REST operation URI here>
 
 To formulate the correct REST URI to call, and to provide the other necessary details, you must obtain the following information:
 
-- Your Azure subscription ID
-- The name of the resource group currently holding your resources
-- The [resource ID](/powershell/module/az.resources/get-azresource) for each of the resources in your original resource group
-- The [resource ID](/powershell/module/az.resources/get-azresourcegroup) for the destination resource group where you want to move your resources
-- Your account [access token](/rest/api/azure/#acquire-an-access-token)
+- Your Azure subscription ID.
+- The name of the resource group currently holding your resources.
+- The [resource ID](/powershell/module/az.resources/get-azresource) for each of the resources in your original resource group.
+- The [resource ID](/powershell/module/az.resources/get-azresourcegroup) for the destination resource group where you want to move your resources.
+- Your account [access token](/rest/api/azure/#acquire-an-access-token).
 
 When you use the Azure CLI to call an Azure REST API operation, you don't have to provide a subscription ID or an access token. The CLI includes these values automatically.
 
@@ -65,9 +65,9 @@ location: https://management.azure.com/subscriptions/<your-subscription-id>/oper
 retry-after: 15
 ```
 
-At this stage, the API has only validated your request. It hasn't yet validated whether your move will be successful. This response gives you a location URL. You'll use this location URL to test your move. Wait for the amount of time shown in the `retry-after` value in the request validation before attempting to test your validation. In this example, the value is 15 seconds.
+At this stage, the response shows that the API accepts your request, but it hasn't validated whether your move will be successful. This response gives you a location URL. Use this location URL to test your move. Wait for the amount of time shown in the `retry-after` value in the request validation before attempting to test your validation. In this example, the value is 15 seconds.
 
-You'll then send a GET request to the location URL:
+After waiting for the specified time, send a GET request to the location URL:
 
 ``` http
 GET <location-url>
@@ -80,7 +80,7 @@ To submit this GET request by using the Azure CLI, run this command:
 az rest --method get --uri <location-url>
 ```
 
-If your move validates as successful, you'll get a 204 status code. Otherwise, you'll receive the following error message, indicating that your move won't be successful:
+If your move validates as successful, you get a 204 status code. Otherwise, you receive the following error message, indicating that your move won't be successful:
 
 ``` json
 {"error":{"code":"ResourceMoveProviderValidationFailed","message":"<message>"...}}

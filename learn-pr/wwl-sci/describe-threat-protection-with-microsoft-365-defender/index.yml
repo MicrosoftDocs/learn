@@ -32,7 +32,7 @@ products:
 - defender-for-cloud-apps
 - defender-identity
 - defender-office365
-- mdatp
+- defender-endpoint
 - microsoft-defender
 - defender-for-threat-intelligence
 subjects:
