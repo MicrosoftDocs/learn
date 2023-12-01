@@ -1,25 +1,56 @@
-This module presented key principles of the Reliability pillar of the Azure Well-Architected Framework. You learned how to make your applications more reliable by planning and architecting high availability (HA), disaster recovery (DR), and backup and restore.
+| :::image type="icon" source="media/goal.svg"::: Avoid overengineering the architecture design, application code, and operations. |
+| :----------------------------------------------------------------------------------------------------------------------------------------- |
 
-In this module, you learned to carry out the following procedures:
+It's often what you remove rather than what you add that leads to the most reliable solutions. Simplicity reduces the surface area for control, minimizing inefficiencies and potential misconfigurations or unexpected interactions. On the other hand, oversimplification can introduce single points of failure. Maintain a balanced approach.
 
-- Determine the availability service level agreement (SLA) for your applications.
-- Define Recovery Point Objective (RPO) and Recovery Time Objective (RTO) as part of DR planning.
-- Test your recovery plans to ensure they provide sufficient protection for your applications.
-- Incorporate backup and restore into your recovery strategy to help protect against data loss.
+Contoso Travel is buying and integrating a small startup company with a popular web-based travel app. The app has gone viral because of its business model of negotiating deep discounts with hotel chains and airlines, and the use of social media to do intense and highly targeted marketing campaigns.
 
-You learned about the following technologies and services:
+The existing version of the startup product was developed in nodejs, and is running on VMs that are hosted between the on-premises data center, and AWS.
 
-- Azure availability sets and availability zones to provide HA for virtual machine (VM) workloads.
-- Load balancing services such as Azure Traffic Manager, Azure Application Gateway, and Azure Load Balancer to distribute load across available systems.
-- Azure platform as a service (PaaS) services that have HA built in.
-- Azure Site Recovery to provide recovery capabilities for your applications.
-- Azure Backup for VMs, and the backup and restore capabilities of several Azure PaaS services.
+## Minimize the workload components
 
-## Learn more
+**Add components to your architecture only if they help you achieve target business values. Keep the critical path lean.**
 
-To learn more about the Azure Well-Architected Framework and Azure services that improve the reliability of your architectures, see the following resources:
+Designing for business requirements can lead to a straightforward solution that's easy to implement and manage. Avoid having too many critical components, because each one is a significant point of failure.
 
-- [Azure Well-Architected Framework](/azure/well-architected)
-- [About Site Recovery](/azure/site-recovery/site-recovery-overview)
-- [Regions and Availability Zones in Azure](/azure/availability-zones/az-overview)
-- [What is the Azure Backup service?](/azure/backup/backup-overview)
+*Contoso's challenge*
+
+- One of the components of the newly acquired application facilitates collecting feedback from the users directly on the website, after they have made a reservation. The feature has very rarely been used since its release because most users just skip over it. There has been a strong feedback loop mechanism from users that works through the company’s social media accounts, which are heavily used for marketing user interaction. This mechanism has been used significantly more frequently than the website's feedback function.
+
+*Applying the approach and outcomes*
+
+- AS part of the initial release of the Contoso Travel-branded version of the app, the team decides to remove the website feedback component of the workload.
+- A smaller codebase lowers the cost of maintenance and operations. And, in this case, there is no impact to the business requirements.
+
+## Standardize the software development lifecycle
+
+**Establish standards in code implementation, deployment, and processes, and document them. Identify opportunities to enforce those standards by using automated validations.**
+
+Standards provide consistency and minimize human errors. Approaches like standard naming conventions and code style guides can help you maintain quality and make assets easy to identify during troubleshooting.
+
+*Contoso's challenge*
+
+- The development team from the startup doesn’t have many development and process standards defined. There are a number of libraries being used that overlap in functionality, coding styles are not enforced, and the release pipelines lack formal release gates that use automated testing.
+- The Contoso workload team realizes the cost of maintenance of the new codebase is much higher because  of the lack of consistency in styles, and the inconsistent use libraries and design patterns.
+- There are frequent incidents after major updates in production, sometimes requiring rollbacks of the updates or mid-deployment hot-fixes. The frequency of these types of deployment issues force the team to use an all-hands-on-deck support model when releasing updates to production. To make matters worse, the frequent issues are negatively impacting Contoso's reputation through a poor user experience.
+
+*Applying the approach and outcomes*
+
+- The team taking over support of the new app makes an effort to achieve greater consistency in applying coding styles, standardizing on a common set of libraries and design patterns, and formalizing the use of release gates based on automated tests.
+- While these changes are being implemented, the workload team adhere's to their standard documentation requirements. All of the new tools, design patterns, and styles being adopted are thoroughly documented, allowing the team to understand and maintain the workload more efficiently going forward. This also allows the team to more easily identify deviations in the standards when performing code reviews.
+
+## Minimize your operations and development burden
+
+**Take advantage of platform-provided features and prebuilt assets that can help you effectively meet business targets.**
+
+This approach minimizes development time. It also enables you to rely on tried and tested practices that have been used with similar workloads.
+
+*Contoso's challenge*
+
+- As part of the initial release under the Contoso Travel branding, the nodejs solution is going to be migrated from VMs to App Services, to take advantage of the many native features the service provides from a reliability perspective.
+- The version deployed on VMs contains a significant amount of custom code needed for instrumentation.
+
+*Applying the approach and outcomes*
+
+- During the initial migration to App Services, the team was able to remove all custom instrumentation code by implementing App Insights auto-instrumentation in App Services.
+- The team is also able to take advantage of several other native App Service functions like auto-scaling, Key Vault integration, and zonal redundancy.
