@@ -1,6 +1,6 @@
 Tightly coupled code occurs when different parts of the code are highly dependent on each other. When components rely heavily on each other's implementation details, changes made in one area can have a significant impact on other areas. Tightly coupled code can reduce flexibility, increase the risk of introducing bugs, and make the codebase harder to maintain. 
 
-Interfaces can mitigate these issues, but it is important that they're implemented correctly. In this exercise, you'll work with a class that has a less than ideal implementation of an interface. You'll correct the implementation and improve the modular design of the code. Let's get started!
+Interfaces can mitigate these issues, but it's important that they're implemented correctly. In this exercise, you'll work with a class that has a less than ideal implementation of an interface. You'll correct the implementation and improve the modular design of the code. Let's get started!
 
 ## Prepare your coding environment
 
