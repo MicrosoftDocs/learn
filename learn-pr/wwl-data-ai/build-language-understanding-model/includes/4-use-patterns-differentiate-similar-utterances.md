@@ -13,7 +13,7 @@ To correctly train your model, provide a handful of examples of each intent that
 - **TurnOnDevice**:
     - "Turn on the {DeviceName}"
     - "Switch the {DeviceName} on"
-    - "Turn on the {DeviceName}"
+    - "Turn the {DeviceName} on"
 - **GetDeviceStatus**:
     - "Is the {DeviceName} on[?]"
 - **TurnOffDevice**:
