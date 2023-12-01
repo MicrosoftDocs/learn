@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-classes.learn-class-constructors
+title: Learn about class constructors
+metadata:
+  title: Learn about class constructors
+  description: "This unit describes what class constructors are and how they're used."
+  ms.date: 12/01/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-learn-class-constructors.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the reason for having multiple constructor methods in your class?"
+    choices:
+    - content: "Multiple constructors are never needed."
+      isCorrect: false
+      explanation: "Incorrect. This is untrue, at some point objects may need multiple constructors."
+    - content: "To make your code more readable."
+      isCorrect: false
+      explanation: "Incorrect. Having multiple constructors isn't done to make your code more readable."
+    - content: "To initialize your object for different purposes."
+      isCorrect: true
+      explanation: "Correct! As constructors are used to initialize an object, having an overloaded constructor allows your objects to be initialized for different use cases."
+  - content: "Which of these scenarios is a good reason to possibly add a second (overloaded) constructor?"
+    choices:
+    - content: "To have more than one way to create your object."
+      isCorrect: false
+      explanation: "Incorrect. Although partially correct, this answer is too vague and doesn't provide any reasoning for the answer given."
+    - content: "When the main constructor no longer works."
+      isCorrect: false
+      explanation: "Incorrect. Constructors aren't added to a class as backup for another constructor."
+    - content: "To have an option to initialize your object with limited basic information, and an option for initializing it with a full set of information."
+      isCorrect: true
+      explanation: "Correct! While there can be various reasons for having more than one constructor, this is a good answer for this scenario."
