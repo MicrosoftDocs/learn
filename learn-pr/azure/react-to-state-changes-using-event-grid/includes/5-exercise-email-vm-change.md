@@ -12,7 +12,7 @@ First, let's create a condition that runs the logic app whenever a certain event
 
 1. In the **Logic app** menu, under **Development Tools**, select **Logic app designer**. The **Logic app designer** pane for your logic app appears.
 
-1. In the event grid under **When a resource event occurs**, select **New step**. The **Choose an operation** pane appears.
+1. In the Event Grid under **When a resource event occurs**, select **New step**. The **Choose an operation** pane appears.
 
     :::image type="content" source="../media/5-choose-new-step-condition.png" alt-text="Screenshot of the icon for a new logic app step.":::
 
@@ -47,7 +47,7 @@ First, let's create a condition that runs the logic app whenever a certain event
 > [!NOTE]
 > In the command bar, select **Code view** to view the JSON text of the operation you are creating. Select **Designer** to return to the editor.
 
-## Send an email notification
+##  email notification
 
 Now we can add an email action based on the logic app being triggered. The following steps use Office 365 Outlook. If you don't have an Office 365 account, you can also use Outlook.com. The configuration steps for email programs may differ, so you may need to adjust accordingly.
 
