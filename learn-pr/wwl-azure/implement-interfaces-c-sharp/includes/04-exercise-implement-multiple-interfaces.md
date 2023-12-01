@@ -16,7 +16,7 @@ This module includes hands-on activities that guide you through the process of b
 > [!IMPORTANT]
 > You must have .NET Framework 8.0 installed and a Github account to complete these steps.
 
-> [NOTE]
+> [!NOTE]
 > If you completed previous modules in this Learning Path, you can skip these steps. Instead, close any open files and expand the **M02-Implement-Interface** folder.
 
 1. Open Visual Studio Code.
@@ -45,7 +45,7 @@ This module includes hands-on activities that guide you through the process of b
 
 In this exercise, you'll update existing classes to implement multiple interfaces. You'll create an interface that allows some items to be combined to create new ones. The player should be able to combine runes and weapons, food ingredients, and herbs with containers to create new items. Let's get started!
 
-:::image type="content" source="../media/M02-04-Demo.png" alt-text="A snapshot of the inventory program for this module with craftable items":::
+:::image type="content" source="../media/m-02-04-demo.png" alt-text="A snapshot of the inventory program for this module with craftable items.":::
 
 1. In the Explorer, right click on the **Items** folder.
 
@@ -83,7 +83,7 @@ In this exercise, you'll update existing classes to implement multiple interface
 1. Hover over `ICombinable` until the error message appears, then click **Quick Fix**
 
 1. In the context menu, select **Implement interface**
-    
+   
     The interface methods should populate with a default `NotImplementedException`. You want to allow the player to combine a weapon with a rune to create a new type of weapon.
 
 1.  Update the `CanCombine` method with the following code:
@@ -93,10 +93,10 @@ In this exercise, you'll update existing classes to implement multiple interface
     {
         if (item == null) 
             return false;
-
+    
         if (item is Material material) 
             return material.GetMaterialType() == MaterialType.Rune;
-
+    
         return false;
     }
     ```
@@ -168,7 +168,7 @@ In this exercise, you'll update existing classes to implement multiple interface
     {
         return CreatesPotion(item) || CreatesWeapon(item);
     }
-
+    
     public Item? Combine(Item item)
     {
         if (CreatesPotion(item))
@@ -208,7 +208,7 @@ In this exercise, you'll update existing classes to implement multiple interface
         {
             if (selectedItems[0] is IEquipable)
                 return equip;
-
+    
             else if (selectedItems[0] is IConsumable)
                 return consume;
         }
@@ -220,7 +220,7 @@ In this exercise, you'll update existing classes to implement multiple interface
 
     In the next exercise, you'll update the `DoItemAction` method to allow the player to craft items.
 
-## Check Your Work
+## Check your work
 
 In this task, you'll run the code and verify that it's working correctly.
 
@@ -231,7 +231,7 @@ In this task, you'll run the code and verify that it's working correctly.
 1. In the terminal command prompt, enter **dotnet run**
 
     You should see a windows form dialog appear, populated with game assets. Be sure to check that the form title displays "M02 Inventory"
-    :::image type="content" source="../media/M02-04-CheckYourWork.png" alt-text="A snapshot of the inventory program for this module":::
+    :::image type="content" source="../media/m-02-04-check-your-work.png" alt-text="A snapshot of the inventory program for this module.":::
 
 1. Select two food ingredients, such as "bread," "broccoli," "lettuce," "bell pepper." Use the <kbd>Ctrl</kbd> key to multi-select.
 

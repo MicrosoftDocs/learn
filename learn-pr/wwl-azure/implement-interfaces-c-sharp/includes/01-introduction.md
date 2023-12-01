@@ -6,7 +6,7 @@ Suppose you're developing an inventory for a roleplaying game. There are differe
 
 In this module, you'll learn to use multiple interfaces to grant classes more capabilities. You'll also learn to use interfaces as a type, and get a better understanding of the key features interfaces provide. By the end of this module, you'll be able to identify when to use interfaces to create well-designed code.
 
-## Learning Objectives
+## Learning objectives
 
 In this module, you will:
 

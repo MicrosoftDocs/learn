@@ -3,7 +3,7 @@ uid: learn.wwl.implement-interfaces-c-sharp
 metadata:
   title: Implement interfaces
   description: "Implement interfaces"
-  ms.date: 11/29/2023
+  ms.date: 12/01/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
@@ -36,11 +36,11 @@ products:
 units:
 - learn.wwl.implement-interfaces-c-sharp.introduction
 - learn.wwl.implement-interfaces-c-sharp.examine-interfaces-vs-abstract-classes
-- learn.wwl.implement-interfaces-c-sharp.when-to-use-interfaces
+- learn.wwl.implement-interfaces-c-sharp.when-use-interfaces
 - learn.wwl.implement-interfaces-c-sharp.exercise-implement-multiple-interfaces
-- learn.wwl.implement-interfaces-c-sharp.exercise-use-interfaces-as-a-type
-- learn.wwl.implement-interfaces-c-sharp.exercise-challenge-get-all-craftable-items
-- learn.wwl.implement-interfaces-c-sharp.review-solution-get-all-craftable-items
+- learn.wwl.implement-interfaces-c-sharp.exercise-use-interfaces-type
+- learn.wwl.implement-interfaces-c-sharp.exercise-challenge-get-craftable-items
+- learn.wwl.implement-interfaces-c-sharp.review-solution-get-craftable-items
 - learn.wwl.implement-interfaces-c-sharp.knowledge-check
 - learn.wwl.implement-interfaces-c-sharp.summary
 badge:

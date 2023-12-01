@@ -85,17 +85,17 @@ Polymorphism is a programming concept that allows objects to take on multiple fo
     else if (selectedItems.Count == 2 && selectedItems[0] is ICombinable material)
     {
         Item? newItem = material.Combine(selectedItems[1]);
-
+    
         if (newItem != null)
             inventory.Add(newItem);
-
+    
         return newItem;
     }
     ```
 
     Great work! Now you're ready to test your logic!
 
-## Check Your Work
+## Check your work
 
 In this task, you'll run the code and verify that it's working correctly.
 
@@ -112,7 +112,7 @@ In this task, you'll run the code and verify that it's working correctly.
     The "Equip" button should display "Unequip." The player stats are also updated.
 
 1. Click the "Consumables" button
-    
+   
     The inventory should update to only display items that are consumable.
 
 1. Click any item and select "Consume"

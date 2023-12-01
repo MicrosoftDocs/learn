@@ -10,20 +10,20 @@ The following code is one possible solution for the challenge from the previous 
             {
                 if (item is Food food && !food.IsIngredient())
                     continue;
-
+    
                 items.Add(item);
             }
         }
         return items;
     }
-
+    
     ```
 
 This code is just "*one possible solution*" because you may have added line feeds in different spots, written logic differently, used different variable names, or formatted the code differently.
 
 Regardless of minor code differences, you should have checked if the items are of the `ICombinable` type before adding them to the list. When you run the code, clicking the "Craftables" button should update the inventory to display only craftable items.
 
-:::image type="content" source="../media/M02-07-Challenge.png" alt-text="A snapshot of the inventory program for this module":::
+:::image type="content" source="../media/m-02-07-challenge.png" alt-text="A snapshot of the inventory program for this module.":::
 
 If you completed this challenge, congratulations! You're one step closer to mastering interfaces! Continue on to the next unit to check your knowledge.
 
