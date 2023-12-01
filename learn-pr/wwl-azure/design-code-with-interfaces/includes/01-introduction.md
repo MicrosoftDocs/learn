@@ -4,7 +4,7 @@ Suppose you're a developer on a large application with multiple developers. If u
 
 Although it's possible to build an object-oriented application without using interfaces, it's best practice to define interfaces in your application when applicable. In this module, you'll learn how interfaces improve your project by reducing code dependencies and standardizing your code.
 
-## Learning Objectives
+## Learning objectives
 
 In this module, you will:
 

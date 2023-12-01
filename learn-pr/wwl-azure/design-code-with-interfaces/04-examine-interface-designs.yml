@@ -4,7 +4,7 @@ title: Examine interfaces designs
 metadata:
   title: Examine interfaces designs
   description: "Examine interfaces designs"
-  ms.date: 11/29/2023
+  ms.date: 12/01/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
@@ -21,7 +21,7 @@ quiz:
       explanation: "Incorrect. Code standardization is about creating rules for writing code, not about the number of languages used."
     - content: "Make the code consistent and easy to read and modify across a project."
       isCorrect: true
-      explanation: "Correct! Code standards establish rules for writing code that make it easier to read and modify."
+      explanation: "Correct. Code standards establish rules for writing code that make it easier to read and modify."
     - content: "Increase the complexity of the codebase."
       isCorrect: false
       explanation: "Incorrect. Code standardization helps make code easier to read and modify, not more complex."
@@ -29,7 +29,7 @@ quiz:
     choices:
     - content: "A class should have only one reason to change."
       isCorrect: true
-      explanation: "Correct! The Single Responsibility Principle states that a class should have a single, clear responsibility and only one reason to change."
+      explanation: "Correct. The Single Responsibility Principle states that a class should have a single, clear responsibility and only one reason to change."
     - content: "A class should have multiple reasons for change."
       isCorrect: false
       explanation: "Incorrect. The Single Responsibility Principle states that a class should have a single, clear responsibility and only one reason to change."
@@ -43,7 +43,7 @@ quiz:
       explanation: "Incorrect. The DIP states that classes should depend on interfaces or abstract classes, not other classes directly."
     - content: "Interfaces or abstract classes"
       isCorrect: true
-      explanation: "Correct! The DIP states that classes should depend on interfaces or abstract classes, not other classes directly."
+      explanation: "Correct. The DIP states that classes should depend on interfaces or abstract classes, not other classes directly."
     - content: "Specific properties of other classes"
       isCorrect: false
       explanation: "Incorrect. The DIP states that classes should depend on interfaces or abstract classes, not other classes directly."

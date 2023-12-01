@@ -1,6 +1,6 @@
 The following code is one possible solution for the challenge from the previous unit.
 
-    ```c#
+    ​```c#
     // IReadable.cs
     namespace M03_Implement_Interfaces.Items
     {
@@ -11,34 +11,34 @@ The following code is one possible solution for the challenge from the previous 
             public bool IsRead { get; set; }
         }
     }
-    ```
-
-    ```c#
+    ​```
+    
+    ​```c#
     // Scroll.cs
     internal class Scroll : Item, IReadable
     {
         public bool IsRead {get; set;}
-
+    
         public Scroll(string resourceName, Bitmap image) : base(ParseResourceName(resourceName), image) 
         { 
             // Nothing to do for now
         }
-
+    
         public void Read()
         {
             IsRead = true;
         }
-
+    
         public void MarkAsNew()
         {
             IsRead = false;
         }
-
+    
         protected override int InternalSortOrder { get { return 5; } }
     }
-    ```
-
-    ```c#
+    ​```
+    
+    ​```c#
     // Model.cs
      public string GetItemAction()
     {
@@ -51,7 +51,7 @@ The following code is one possible solution for the challenge from the previous 
         }
         return none;
     }
-
+    
     public Item? DoItemAction()
     {
         //
@@ -67,7 +67,7 @@ The following code is one possible solution for the challenge from the previous 
         }
         // Continued...
     }
-
+    
     public List<Item> GetReadables()
     {
         List<Item> items = new();
@@ -78,13 +78,13 @@ The following code is one possible solution for the challenge from the previous 
         }
         return items;
     }
-    ```
+    ​```
 
 This code is just "*one possible solution*" because you may have added line feeds in different spots, used variables differently, or formatted the code differently.
 
 Regardless of minor code differences, you should have successfully created and implemented the `IReadable` interface with the `Read` and `MarkAsNew` methods and the `IsRead` property. And all readable items should be displayed when the "Readables" tab is clicked in the inventory, and the action buttons should update correctly.
 
-:::image type="content" source="../media/M03-08-Solution.png" alt-text="A snapshot of the inventory program for this module":::
+:::image type="content" source="../media/m-03-08-solution.png" alt-text="A snapshot of the inventory program for this module":::
 
 If you completed this challenge, congratulations! You've proven your mastery over interfaces! Continue on to the next unit to check your knowledge.
 

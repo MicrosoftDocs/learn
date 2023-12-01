@@ -1,6 +1,6 @@
 Tightly coupled code occurs when different parts of the code are highly dependent on each other. When components rely heavily on each other's implementation details, changes made in one area can have a significant impact on other areas. Tightly coupled code can reduce flexibility, increase the risk of introducing bugs, and make the codebase harder to maintain. 
 
-Interfaces can mitigate these issues, but it's important that they're implemented correctly. In this exercise, you'll work with a class that has a less than ideal implementation of an interface. You'll correct the implementation and improve the modular design of the code. Let's get started!
+Interfaces can mitigate these issues, but it is important that they're implemented correctly. In this exercise, you'll work with a class that has a less than ideal implementation of an interface. You'll correct the implementation and improve the modular design of the code. Let's get started!
 
 ## Prepare your coding environment
 
@@ -9,28 +9,28 @@ This module includes hands-on activities that guide you through the process of b
 > [!IMPORTANT]
 > You must have .NET Framework 8.0 installed and a Github account to complete these steps.
 
-> [NOTE]
+> [!NOTE]
 > If you completed previous modules in this Learning Path, you can skip these steps. Instead, close any open files and expand the **M03-Implement-Interface** folder.
 
 1. Open Visual Studio Code.
 
     You can use the Windows Start menu (or equivalent resource for another OS) to open Visual Studio Code.
 
-1. Under the Visual Studio Code **Start** section, select **Clone Git Repository**.
+2. Under the Visual Studio Code **Start** section, select **Clone Git Repository**.
 
-1. In the URL bar, enter `https://github.com/MicrosoftLearning/MSLearn-Implement-interfaces-in-CSharp`
+3. In the URL bar, enter `https://github.com/MicrosoftLearning/MSLearn-Implement-interfaces-in-CSharp`
 
-1. In the File Explorer, create a new folder in a location that is easy to find and remember, such as a folder in your Desktop.
+4. In the File Explorer, create a new folder in a location that is easy to find and remember, such as a folder in your Desktop.
 
-1. Click the **Select as Repository Destination** button.
+5. Click the **Select as Repository Destination** button.
 
     You need to be signed in to GitHub to successfully clone the project.
 
-1. Open the project in Visual Studio Code
+6. Open the project in Visual Studio Code
 
-1. In Explorer, right-click the **M03-Implement-Interfaces** folder and click **Open in Integrated Terminal**
+7. In Explorer, right-click the **M03-Implement-Interfaces** folder and click **Open in Integrated Terminal**
 
-1. Expand the **M03-Implement-Interfaces** folder.
+8. Expand the **M03-Implement-Interfaces** folder.
 
     You should see a list of folders and files, including an Items folder and a Model.cs file.
 
@@ -44,9 +44,9 @@ Since the combination action is exclusive to ingredients, you can improve the im
 
 1. In the Explorer, expand the **Items** folder.
 
-1. Open up the **Ingredient.cs** file.
+2. Open up the **Ingredient.cs** file.
 
-1. Make the `Ingredient` class extend the `Food` class by adding the following code:
+3. Make the `Ingredient` class extend the `Food` class by adding the following code:
 
     ```c#
     internal class Ingredient : Food
@@ -57,7 +57,7 @@ Since the combination action is exclusive to ingredients, you can improve the im
     > [!NOTE] 
     > Since `Food` provides the implementation for the abstract method `InternalSortOrder`, you can choose to remove the implementation from this `Ingredient` class.
 
-1. Implement the `ICombinable` interface by adding the following code:
+4. Implement the `ICombinable` interface by adding the following code:
 
     ```c#
     internal class Ingredient : Food, ICombinable
@@ -65,7 +65,7 @@ Since the combination action is exclusive to ingredients, you can improve the im
 
     This interface allows you to check if an item can be combined with another. Next, implement the interface to allow combinations of ingredients.
 
-1. Copy and paste the following methods to implement the `ICombinable` interface:
+5. Copy and paste the following methods to implement the `ICombinable` interface:
 
     ```c#
     public bool CanCombine(Item item)
@@ -89,7 +89,7 @@ Since the combination action is exclusive to ingredients, you can improve the im
 
     Now that the `Ingredient` class correctly implements the `ICombinable` interface, you can remove the implementation from the base `Food` class.
 
-1. In the constructor, initialize the `healthBoost` property with the following code:
+6. In the constructor, initialize the `healthBoost` property with the following code:
 
     ```c#
     healthBoost = 5 + random.Next(0, 5);
@@ -105,25 +105,25 @@ In this task, you'll run the code and verify that it's working correctly.
 
 1. Save your work.
 
-1. Right-click the "M03-Implement-Interfaces" folder in the Explorer and click "Open in Integrated Terminal"
+2. Right-click the "M03-Implement-Interfaces" folder in the Explorer and click "Open in Integrated Terminal"
 
-1. In the terminal command prompt, enter **dotnet run**
+3. In the terminal command prompt, enter **dotnet run**
 
     You should see a windows form dialog appear, populated with game assets. Be sure to check that the form title displays "M03 Inventory"
 
-1. Click the "Craftables" button.
+4. Click the "Craftables" button.
 
     You should see a list of items that can be combined. Notice that the list doesn't include any noncombinable food items.
 
-1. Select two ingredients, such as "bread," "broccoli," "lettuce," "bell pepper." Use the <kbd>Ctrl</kbd> key to multi-select.
+5. Select two ingredients, such as "bread," "broccoli," "lettuce," "bell pepper." Use the <kbd>Ctrl</kbd> key to multi-select.
 
     You should see the "Select" button change to "Craft"
 
-1. Click the "Craft" button.
+6. Click the "Craft" button.
 
     A new food item should appear in the inventory and replace a selected ingredient.
 
-1. Select two foods, such as "curry," "lo mein," "cream puff," "gyro." Use the <kbd>Ctrl</kbd> key to multi-select.
+7. Select two foods, such as "curry," "lo mein," "cream puff," "gyro." Use the <kbd>Ctrl</kbd> key to multi-select.
 
     You should see the "Craft" button change to "Select"
 
