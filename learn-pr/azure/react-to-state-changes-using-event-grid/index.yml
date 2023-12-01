@@ -16,7 +16,7 @@ abstract: |
   - Create an application that handles events by using Event Grid and Logic Apps.
 prerequisites: | 
   - An Azure subscription
-  - An Office365, Outlook.com, or Gmail email account to receive notifications
+  - An Office 365, Outlook.com, or Gmail email account to receive notifications
 iconUrl: /training/achievements/react-to-state-changes-using-event-grid.svg
 levels:
 - intermediate
