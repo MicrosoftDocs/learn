@@ -2600,3 +2600,11 @@ achievements:
   title: Add custom data to your app by using extensions in Microsoft Graph
   summary: "Add custom data to Microsoft Graph resources by using Microsoft Graph extensions. Query and update the custom data to build unique experiences for your applications."
   iconUrl: /training/achievements/msgraph-extensions.svg
+- uid: learn.wwl.challenge-project-classes-methods-properties.badge
+  type: badge
+  title: Challenge project
+  summary: >-
+    In this challenge project the student is asked to create an application that can take in, and display, information as properties on a car class.
+  
+    [!INCLUDE [](../../includes/wwl/challenge-project-notes.md)]
+  iconUrl: /training/achievements/generic-badge.svg
