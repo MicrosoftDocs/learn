@@ -11,7 +11,7 @@ Key learnings:
 
 ## References
 
-- [Azure HDInsight on AKS documentation](https://learn.microsoft.com/azure/hdinsight-aks/)
-- [What is Apache Flink in Azure HDInsight on AKS](https://learn.microsoft.com/azure/hdinsight-aks/flink/flink-overview)
-- [What is Apache Spark in Azure HDInsight on AKS](https://learn.microsoft.com/azure/hdinsight-aks/spark/hdinsight-on-aks-spark-overview)
-- [What is Trino in Azure HDInsight on AKS](https://learn.microsoft.com/azure/hdinsight-aks/trino/trino-overview)
+- [Azure HDInsight on AKS documentation](/azure/hdinsight-aks/)
+- [What is Apache Flink in Azure HDInsight on AKS](/azure/hdinsight-aks/flink/flink-overview)
+- [What is Apache Spark in Azure HDInsight on AKS](/azure/hdinsight-aks/spark/hdinsight-on-aks-spark-overview)
+- [What is Trino in Azure HDInsight on AKS](/azure/hdinsight-aks/trino/trino-overview)
