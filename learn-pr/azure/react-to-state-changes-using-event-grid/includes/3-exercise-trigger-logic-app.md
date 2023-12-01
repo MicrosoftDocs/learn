@@ -70,13 +70,13 @@ Let's create a logic app that runs whenever a virtual machine change is detected
 
 ## Add an Event Grid trigger to the logic app
 
-1. In the menu on the left, select **Logic app deesigner** in the **Development Tools** section. 
+1. In the menu on the left, select **Logic app designer** in the **Development Tools** section. 
 
 1. Scroll down to **Templates** section, then select **Blank Logic App**.  The **Logic Apps Designer** pane appears.
 
     :::image type="content" source="../media/3-choose-logic-app-template.png" alt-text="Screenshot of the template for a blank logic app.":::
 
-1. In the *Search connectors and triggers* search box, enter *event grid* as your filter. From the list of triggers, select **When a resource event occurs**.
+1. In the *Search connectors and triggers* search box, enter *Event Grid* as your filter. From the list of triggers, select **When a resource event occurs**.
 
     :::image type="content" source="../media/3-logic-app-event-grid-trigger.png" alt-text="Screenshot of the selections for adding an Event Grid trigger.":::
 
