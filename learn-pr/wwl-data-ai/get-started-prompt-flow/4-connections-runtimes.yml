@@ -10,6 +10,6 @@ metadata:
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
-durationInMinutes: 6
+durationInMinutes: 4
 content: |
   [!include[](includes/4-connections-runtimes.md)]
