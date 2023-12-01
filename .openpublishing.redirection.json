@@ -30675,6 +30675,11 @@
       "source_path": "learn-pr/wwl-azure/challenge-project-classes-methods-properties/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/challenge-project-classes-methods-properties/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
     }
   ]
 }
