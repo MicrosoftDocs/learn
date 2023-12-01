@@ -29,7 +29,7 @@ products:
 subjects:
 - iot
 modules:
-- learn.wwl.introduction-to-device-provisioning-service
+- learn.introduction-to-device-provisioning-service
 - learn.wwl.examine-device-provisioning-service-coding-tools-access
 - learn.wwl.examine-device-provisioning-lifecycle-tasks
 - learn.wwl.explore-group-enrollment-tasks
