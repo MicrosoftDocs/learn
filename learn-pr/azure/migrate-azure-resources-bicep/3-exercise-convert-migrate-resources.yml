@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Convert and migrate resources
   description: Learn how to export your Azure resources to JSON ARM templates and how to use the Bicep decompiler to convert the templates to Bicep files.
   ms.date: 12/01/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep

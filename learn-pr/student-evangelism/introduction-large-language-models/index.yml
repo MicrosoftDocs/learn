@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.introduction-large-language-models
+metadata:
+  ms.author: chnoring
+  author: softchris
+  ms.date: 11/30/2023
+  title: Introduction to large language models
+  description: Learn about large language models, their core concepts, the models that are available to use, and when to use them.
+  ms.topic: module
+title: "Introduction to large language models"
+summary: Learn how to use large language models (LLMs), "general purpose" AI models that can analyze text, images, and audio, to improve your workflow.
+abstract: |
+  After completing this module, you'll be able to:
+  - Explain what a large language model (LLM) is.
+  - Describe what LLMs can and can't do.
+  - Understand core concepts like prompts, tokens, and completions.
+  - Distinguish between different models to understand which one to choose for what purpose.
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.introduction-large-language-models.introduction
+- learn.introduction-large-language-models.concept-understand-llms
+- learn.introduction-large-language-models.llms-core-concepts
+- learn.introduction-large-language-models.when-to-use-llms
+- learn.introduction-large-language-models.which-model-to-use
+- learn.introduction-large-language-models.knowledge-check
+- learn.introduction-large-language-models.summary
+badge:
+  uid: learn.introduction-large-language-models-badge

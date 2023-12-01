@@ -9,7 +9,7 @@ In this module, you'll learn how to choose names for your variables that describ
 By the end of this module, you'll write code more purposefully, focusing on the readability and quality of the code to communicate to both the compiler and other developers.
 
 > [!IMPORTANT]
-> This module includes hands-on activities that require Visual Studio Code. You'll need access to a development environment that has Visual Studio Code installed and configured for C# application development.
+> This module includes coding activities that require Visual Studio Code. You'll need access to a development environment that has Visual Studio Code installed and configured for C# application development.
 
 ## Learning objectives
 
