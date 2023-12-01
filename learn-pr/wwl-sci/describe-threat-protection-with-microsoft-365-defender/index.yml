@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/25/2023
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom:
   - N/A
   ms.service: microsoft-365-security
@@ -32,7 +32,7 @@ products:
 - defender-for-cloud-apps
 - defender-identity
 - defender-office365
-- mdatp
+- defender-endpoint
 - microsoft-defender
 - defender-for-threat-intelligence
 subjects:

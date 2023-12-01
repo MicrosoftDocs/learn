@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/10/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Azure Backup features and scenarios
 durationInMinutes: 5
 content: |

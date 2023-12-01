@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/20/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: cloud-shell
 title: Review the features and tools for Azure Cloud Shell
 summary: This module covers Azure Cloud Shell and its features.

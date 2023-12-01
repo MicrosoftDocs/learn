@@ -1,4 +1,3 @@
-
 In this module, you learned what the cloud is, what Microsoft Azure is, and what they might do for your business. You studied the basics of cloud economics and read stories of real businesses transformed by Azure.
 
 ## Learning Objectives

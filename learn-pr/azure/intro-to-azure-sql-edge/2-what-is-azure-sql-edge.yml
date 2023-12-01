@@ -9,8 +9,7 @@ metadata:
   author: rwestMSFT
   ms.author: randolphwest  
   manager: jroth
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-what-is-azure-sql-edge.md)]

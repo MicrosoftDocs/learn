@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/10/2023
   author: scjescho
   ms.author: padmalathas
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: hpc-cache
 title: Understand factors that influence HPC storage selection in Azure
 summary: This module covers various factors that influence HPC storage selection in Azure. We review NFS, file access, directory services, parallel file systems, and hybrid file-access considerations.

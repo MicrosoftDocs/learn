@@ -31,7 +31,7 @@ Another way to examine these metrics is to use the **Count** aggregation. This a
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the Metrics page for Azure Load Balancer shows data captured for the Health Probe Status and Data Path Availability metrics.](../media/3-probe-metrics.png)
 
-An interesting point in this chart is that the number of successful Data Path Availability probes has remained within a consistent range. However, the number of successful Health Probe Status checks has spiked momentarily and then dropped to about half the value before the spike occurred.
+An interesting point in this chart is that the number of successful Data Path Availability probes remained within a consistent range. However, the number of successful Health Probe Status checks has spiked momentarily and then dropped to about half the value before the spike occurred.
 
 In the setup used to generate this graph, the back-end pool contained just two VMs. One of these machines was stopped, to simulate a failure. The Data Path Availability metric shows that it's still possible for a client application to connect to the application running on the remaining working VM. But the Health Probe Status indicates that the overall *health* of the back-end pool is only half of what it was previously.
 

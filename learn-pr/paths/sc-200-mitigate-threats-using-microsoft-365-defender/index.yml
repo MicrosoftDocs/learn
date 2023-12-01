@@ -6,8 +6,7 @@ metadata:
   ms.date: 02/17/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: learning-path
 title: 'SC-200: Mitigate threats using Microsoft 365 Defender'
 prerequisites: |
   - Fundamental understanding of Microsoft security, compliance, and identity products
@@ -24,7 +23,7 @@ products:
 - defender-identity
 - defender-office365
 - m365
-- mdatp
+- defender-endpoint
 - microsoft-defender
 subjects:
 - cloud-security
