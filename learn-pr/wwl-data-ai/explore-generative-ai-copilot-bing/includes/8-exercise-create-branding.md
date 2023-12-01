@@ -60,11 +60,11 @@ for potential visitors?
 
 ```
 If you are looking for a unique and creative place to enjoy a drink and 
-a bite in the woods, look no further than The Branch. This cosy speakeasy 
-type of bar is located high above the ground and built into the branches of 
+a bite in the woods, look no further than The Branch. This cozy restaurant 
+is located high above the ground and built into the branches of 
 a tree, offering you a stunning view of the forest and the sky. The Branch 
 is more than just a bar, it’s an experience that combines nature and art, 
-where you can sip on signature cocktails, listen to live music, and 
+where you can sip on signature drinks, listen to live music, and 
 explore the hidden features of this amazing destination.
 
 ```

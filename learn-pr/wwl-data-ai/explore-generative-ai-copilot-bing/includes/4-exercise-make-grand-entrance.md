@@ -49,10 +49,10 @@ I like idea about the hidden door you suggested. Can you elaborate on it?
 ```
 **Sample response**:
 ```
-The entrance to the bar is a giant hollow log that looks like a 
+The entrance to the restaurant is a giant hollow log that looks like a 
 natural part of the forest. Visitors have to crawl inside the 
 log and slide down a smooth and curvy path that takes them to 
-the base of the tree where the bar is located. 
+the base of the tree where the restaurant is located. 
 
 The slide is dark and thrilling, but also safe and comfortable. 
 Along the way, visitors can hear sounds of nature and see 

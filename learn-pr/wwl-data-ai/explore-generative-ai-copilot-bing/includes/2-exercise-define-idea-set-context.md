@@ -50,22 +50,6 @@ Wow, thank you for the flattering introduction. I'm honored
 to be part of this creative endeavor. What kind of experience 
 are we creating?
 ```
-Since this isn't a standard ask and receive prompt, so you might want to prompt Copilot to confirm that it will act like this role.
-
-**Sample prompt**:
-
-```
-Please confirm that you will act like this role, personally.
-```
-**Sample response**:
-
-```
-Yes, I will act like this role, personally. I am an 
-experiential designer and I enjoy creating immersive 
-experiences that ignite the senses and transport 
-patrons into a realm of pure magic.
-```
-
 
 ### Note on conversation limits
 
@@ -127,9 +111,9 @@ a name. Focus on what makes this destination unique.
 We will brand and name this experience later.
 
 - new destination experience
-- cosy speakeasy type of bar located deep in the woods
-- this bar is high above the ground and built into the branches of a tree 
-- Thematically it's organic nature meets speakeasy
+- cozy secluded type of restaurant located deep in the woods
+- this restaurant is high above the ground and built into the branches of a tree 
+- Thematically it's organic nature meets invitation-only destination
 - Mysterious and hidden
 
 ```
@@ -140,10 +124,10 @@ We will brand and name this experience later.
 
 Are you ready for a new destination experience that will take 
 you to new heights of adventure and relaxation? 
-Imagine a cozy speakeasy type of bar located deep in the woods, 
+Imagine a cozy secluded type of restaurant located deep in the woods, 
 where you can enjoy a drink and a chat with your friends while 
 surrounded by the beauty of nature. But this is no ordinary bar. 
-This is a bar that is high above the ground and built into the 
+This is a destination restaurant that is high above the ground and built into the 
 branches of a tree, blending organic elements with a vintage style. 
 
 To get there, you'll have to follow a secret path and climb a 

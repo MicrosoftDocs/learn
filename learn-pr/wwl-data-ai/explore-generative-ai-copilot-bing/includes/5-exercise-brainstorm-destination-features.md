@@ -56,7 +56,7 @@ who want to enjoy the fresh air, smell the flowers, or roast marshmallows.
 ```
 
 ## Expand the ideas
-Select **two of the ideas** to explore. For each idea, you need to work on creating a description and then creating an image. 
+Select **two of the ideas** to explore. For each idea, you need to work on creating a description and then creating an image.
 
 **Steps**:
 1. Copy the following sample prompt and edit as needed.
@@ -124,7 +124,8 @@ Sample image created.
 Image created [of the Roost](https://www.bing.com/images/create/a-cozy-and-intimate-seating-area-that-is-shaped-li/649af52aabfe4860ab77aae36dfbb76e?id=he2eTz0FiCnziEwETvpXQQ%3d%3d&view=detailv2&idpp=genimg&idpclose=1&FORM=SYDBIC).
 
 
-**Repeat the previous two sets of steps** so that you have a name, description, and image for at **least two spaces**.
+> [!IMPORTANT]
+> Repeat the **Expand the ideas** and **Create an image** sections so that you have a name, description, and image for at **least two spaces**.
 
 When you have two spaces complete, you can move to the next unit.
 

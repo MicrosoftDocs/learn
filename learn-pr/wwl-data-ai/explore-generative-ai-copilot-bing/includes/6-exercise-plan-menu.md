@@ -109,20 +109,23 @@ Steps:
 2. Paste the prompt into the chat.
 
 **Sample prompt**:
-
+```
 We need to ideate about a signature drink. It should embrace the theme of the 
 destination and should surprise 
 and delight people. What it is served in matters, 
 the glass or container should be really unique and it
 should embrace the theme of the destination. 
 Can you give me three ideas for signature refreshments or drinks, but please be inclusive and include something in your suggestions for everyone. Please also name them something clever that reflects the theme. 
+```
 
 **Sample response**:
 
+```
 Sure, I can help you with that. Here are three possible ideas for signature refreshments or drinks that match the theme of your destination, along with some clever names:
 - **The Acorn**: A drink made with almond milk, coffee, and hazelnut liqueur, served in a ceramic cup shaped like an acorn. This drink is nutty and smooth, and it also resembles the food of the forest animals.
 - **The Leaf**: A drink made with green tea, lime juice, and honey, served in a glass that has a leaf-shaped rim. This drink is refreshing and soothing, and it also creates a nice green color that matches the foliage of the trees.
 - **The Owl**: A drink made with chocolate milk, whipped cream, and Oreo cookies, served in a glass that has two Oreo cookies as eyes. This drink is sweet and creamy, and it also looks like the face of an owl, the nocturnal bird of the forest.
+```
 
 ## Generate an image
 Now you generate an image for one of the drink ideas.
@@ -157,7 +160,7 @@ Use Copilot Image input as shown in the following screenshot to upload or share 
 
 
 **Steps**:
-1. Copy the sample prompt and edit it as you need.
+1. Copy the sample prompt and edit it needed.
 2. When you paste it into the chat, select the image icon to the right of the chat box.
 3. Upload a reference photo or use the URL of an image you want to reference.
 4. Submit the prompt to the chat.
@@ -165,15 +168,16 @@ Use Copilot Image input as shown in the following screenshot to upload or share 
 
 **Sample prompt**:
 ```
-could you take The Acorn image just created and add some of the smoke shown in this image?
+Could you take The Acorn image just created and add some of the smoke shown in this image?
 <put your image url here or add it via the 
 Image icon on the input box >
 
 ```
-**Sample response**:
 This sample is how it applied that reference image to create a new one.
 ![Screenshot of the Mug image.](../media/acorn.png)
 
+> [!TIP]
+> This prompt relies on the context of the conversation. If Copilot can't generate an image for you, try including the the description of the image you created in the prompt.
 
 ## Key takeaways and further exploration
 

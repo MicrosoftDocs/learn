@@ -22,7 +22,7 @@ quiz:
     - content: "More Balanced."
       isCorrect: false
       explanation: "That's incorrect. This option is ideal for friendly and informative chats."
-    - content: "More Creative"
+    - content: "More Creative."
       isCorrect: true
       explanation: "That's correct. Selecting the more creative option at the beginning of your chat conversation leads to more inventive responses."
   - content: "What is the main benefit of using the multimodal capabilities in Copilot in Bing?"
@@ -36,7 +36,7 @@ quiz:
     - content: "It allows the copilot to perform actions and tasks within the chat without leaving the browser."
       isCorrect: false
       explanation: "That's incorrect. This speaks more to the features or benefits of Copilot in Bing."
-  - content: "What is the main difference between few-shot prompting and zero-shot prompting in Generative AI?"
+  - content: "What is the main difference between few-shot prompting and zero-shot prompting in generative AI?"
     choices:
     - content: "Few-shot prompting sends many paragraphs where a zero-shot prompt is just a sentence."
       isCorrect: false
