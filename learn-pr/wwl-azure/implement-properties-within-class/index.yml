@@ -3,7 +3,7 @@ uid: learn.wwl.implement-properties-within-class
 metadata:
   title: Implement properties within a class
   description: "This lesson shows how to implement properties in a class. The properties in your class allow you to store information about your objects, such as the house style and square footage of the house."
-  ms.date: 11/27/2023
+  ms.date: 12/01/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: module
