@@ -1,26 +1,14 @@
-**Foundation models**, such as GPT-3, are state-of-the-art natural language processing models designed to understand, generate, and interact with human language. To understand the significance of foundation models, it's essential to explore their origins, which stem from advancements in the fields of **artificial intelligence** and **natural language processing**.
+The true power of **Large Language Models** (**LLMs**) lies in their application. Whether you want to use LLMs to classify web pages into categories, or to build a chatbot on your data. To harness the power of the LLMs available, you need to create an application that combines your data sources with LLMs and generates the desired output.
 
-## Understand artificial intelligence
+To develop, test, tune, and deploy LLM applications, you can use **prompt flow**, accessible in the [Azure Machine Learning studio](https://learn.microsoft.com/azure/machine-learning/prompt-flow/overview-what-is-prompt-flow?azure-portal=true) and the [Azure AI studio](https://learn.microsoft.com/azure/ai-studio/how-to/prompt-flow?azure-portal=true).
 
-:::image type="content" source="../media/overview-hierarchy.png" alt-text="Diagram visualizing the relationship between artificial intelligence, machine learning, and deep learning.":::
+:::image type="content" source="../media/prompt-flow-feature.png" alt-text="Diagram showing prompt flow as a feature of Azure Machine Learning and Azure AI.":::
 
-1. The purpose of **artificial intelligence** (**AI**) is for computers or machines to perform tasks with human-like intelligence.
-1. A popular approach nowadays to approach artificial intelligence is through **machine learning**, a subfield that gives computers the ability to learn without being explicitly programmed.
-1. The subfield of **deep learning** uses artificial neural networks to learn and represent complex patterns and hierarchies from data, which are especially useful for data like images and text.
+> [!Note]
+> Throughout this module, the focus is on understanding and exploring prompt flow, whether that is through the Azure Machine Learning or Azure AI studio.
 
-In other words, machine learning and deep learning techniques can be used to realize AI. There are different types of tasks that you can have computers or machines perform.
+Prompt flow takes a **prompt** as input, which in the context of LLMs, refers to the query provided to the LLM application to generate a response. It's the text or set of instructions given to the LLM application, prompting it to generate output or perform a specific task.
 
-## Understand natural language processing
+For example, when you want to use a text generation model, the prompt might be a sentence or a paragraph that initiates the generation process. In the context of a question-answering model, the prompt could be a query asking for information on a particular topic. The effectiveness of the prompt often depends on how well it conveys the user's intent and the desired outcome.
 
-**Natural language processing** (**NLP**) is a type of AI that focuses on understanding, interpreting, and generating human language. Some common NLP use cases are:
-
-:::image type="content" source="../media/natural-language-processing.png" alt-text="Diagram visualizing six common use cases for natural language processing tasks.":::
-
-1. **Speech-to-text and text-to-speech conversion**. For example, generate subtitles for videos.
-1. **Machine translation**. For example, translate text from English to Japanese.
-1. **Text classification**. For example, label an email as spam or not spam.
-1. **Entity extraction**. For example, extract keywords or names from a document.
-1. **Question answering**. For example, provide answers to questions like "What is the capital of France?"
-1. **Text summarization**. For example, generate a short one-paragraph summary from a multi-page document.
-
-Historically, NLP has been challenging as our language is complex and computers find it hard to *understand* text. In this module, you learn how developments in AI and specifically NLP have led to the models we use today. You'll explore and use various language models in the model catalog, available in the Azure Machine Learning studio.
+Prompt flow allows you to create **flows**, which refers to the sequence of actions or steps that are taken to achieve a specific task or functionality. A flow represents the overall process or pipeline that incorporates the interaction with the LLM to address a particular use case. The flow encapsulates the entire journey from receiving input to generating output or performing a desired action.

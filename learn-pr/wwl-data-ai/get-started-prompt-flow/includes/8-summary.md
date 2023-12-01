@@ -1,5 +1,5 @@
 In this module, you learned:
 
-- Understand the developments that have led to foundation models.
-- Explore the different types of foundation models available in the model catalog.
-- Use a foundation model.
+- The development lifecycle when creating LLM applications.
+- What a flow is in prompt flow.
+- The core components when working with prompt flow.

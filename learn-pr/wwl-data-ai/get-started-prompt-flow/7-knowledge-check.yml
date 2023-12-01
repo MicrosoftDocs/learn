@@ -26,36 +26,36 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "Which of the following techniques is used to determine the importance of words in a document within the context of a larger collection of documents?"
+  - content: "A flow uses an LLM tool to generate text with a GPT-3.5 model. What do you need to create to ensure prompt flow can securely call the deployed model from Azure Open AI?"
     choices:
-    - content: "Naïve Bayes"
+    - content: "Runtimes"
       isCorrect: false
-      explanation: "Incorrect. Naïve Bayes calculates the probability of a document belonging to a particular class based on the probabilities of individual words given that class."
-    - content: "TF-IDF (Term Frequency-Inverse Document Frequency)"
+      explanation: "Incorrect. Runtimes provide the necessary compute to run the flow."
+    - content: "Connections"
       isCorrect: true
-      explanation: "Correct. TF-IDF is a technique used to determine the importance of words in a document within the context of a larger collection of documents."
-    - content: " Word2Vec"
+      explanation: "Correct. Create a connection to allow prompt flow to securely communicate with Azure Open AI."
+    - content: "Tools"
       isCorrect: false
-      explanation: "Incorrect. Word2Vec is a technique for generating word embeddings, which are dense vector representations of words that capture semantic relationships between words. "
-  - content: "What type of neural network architecture is widely used for natural language processing tasks and has been instrumental in achieving state-of-the-art results in various language-related tasks?"
+      explanation: "Incorrect. You use tools when adding nodes to your flow. Though a tool provides the functionality, it doesn't allow you to safely store connection information."
+  - content: "You want to integrate your flow with an online website. What do you need to do to easily integrate your flow?"
     choices:
-    - content: "Recurrent Neural Network (RNN)"
+    - content: "Create a custom environment."
       isCorrect: false
-      explanation: "Incorrect. While RNNs have been historically used for sequence data like text, they suffer from issues like vanishing gradients and struggle to capture long-range dependencies in text. However, Transformers have shown to be more efficient at processing large amounts of text compared to RNNs."
-    - content: "Long Short-Term Memory (LSTM)"
+      explanation: "Incorrect. You create a custom environment when you need extra packages to be installed to run your flow."
+    - content: "Create a runtime."
       isCorrect: false
-      explanation: "Incorrect. LSTMs are a type of recurrent neural network designed to handle sequences by effectively capturing long-range dependencies. However, Transformers have shown to be more efficient at processing large amounts of text compared to RNNs."
-    - content: "Transformer"
+      explanation: "Incorrect. A runtime is needed to run your flow, during development and testing."
+    - content: "Deploy your flow to an endpoint."
       isCorrect: true
-      explanation: "Correct. Transformers are a neural network architecture specifically designed for processing sequential data, like text. The introduction of positional encoding together with attention, instead of using recurrence, has resulted in a massive advancement in NLP."
-  - content: "Which of the following foundation models, available through the model catalog in Azure Machine Learning, is likely most suitable for text classification?"
+      explanation: "Correct. When you deploy a flow to an endpoint, prompt flow generates a URL and key that the website can use to call the flow for real-time predictions."
+  - content: "After deployment, you notice that your flow is underperforming. Which stage in the development lifecycle should you revert back to?"
     choices:
-    - content: "BERT"
+    - content: "Experimentation"
       isCorrect: true
-      explanation: "Correct. BERT is commonly used for text classification and question answering."
-    - content: "GPT"
+      explanation: "Correct. Revert back to the experimentation stage to develop and test your flow with a small dataset."
+    - content: "Evaluation and refinement"
       isCorrect: false
-      explanation: "Incorrect. GPT is commonly used for tasks like text generation and chat completions."
-    - content: "LLaMA"
+      explanation: "Incorrect. Only move to evaluation and refinement to test your flow with a larger dataset when you developed and tested it with a smaller dataset first."
+    - content: "Production"
       isCorrect: false
-      explanation: "Incorrect. LLaMA is commonly used for tasks like text generation and chat completions."
+      explanation: "Incorrect. During production you deploy and monitor the flow."

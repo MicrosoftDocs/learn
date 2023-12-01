@@ -2,19 +2,19 @@
 uid: learn.get-started-prompt-flow
 metadata:
   title: Get started with prompt flow to develop Large Language Model (LLM) apps
-  description: Get started with Azure Machine Learning's prompt flow to develop Large Language Model (LLM) apps.
+  description: Get started with prompt flow to develop Large Language Model (LLM) apps.
   ms.date: 11/30/2023
   author: madiepev
   ms.author: madiepev
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: machine-learning
 title: Get started with prompt flow to develop Large Language Model (LLM) apps
-summary: Learn about how to use Azure Machine Learning's prompt flow to develop applications that leverage Large Language Models (LLMs).
+summary: Learn about how to use prompt flow to develop applications that leverage Large Language Models (LLMs).
 abstract: |
   By the end of this module, you'll be able to:
-    - Understand how to create LLM apps.
-    - Get started with Azure Machine Learning's prompt flow.
-    - Explore the concepts in Azure Machine Learning's prompt flow.
+    - Understand the development lifecycle when creating LLM applications.
+    - Understand what a flow is in prompt flow.
+    - Explore the core components when working with prompt flow.
 prerequisites: |
   - Familiarity with Azure and the Azure portal.
 iconUrl: /learn/achievements/generic-badge.svg
@@ -31,10 +31,10 @@ subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribu
   - natural-language-processing
 units:
 - learn.get-started-prompt-flow.introduction
-- learn.get-started-prompt-flow.understand-prompt-flow
-- learn.get-started-prompt-flow.get-started-prompt-flow
-- learn.get-started-prompt-flow.concepts
-- learn.get-started-prompt-flow.develop-flows
+- learn.get-started-prompt-flow.understand-lifecycle
+- learn.get-started-prompt-flow.understand-flows
+- learn.get-started-prompt-flow.connections-runtimes
+- learn.get-started-prompt-flow.variants-monitor
 - learn.get-started-prompt-flow.exercise
 - learn.get-started-prompt-flow.knowledge-check
 - learn.get-started-prompt-flow.summary
