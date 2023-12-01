@@ -13,7 +13,7 @@ metadata:
 title: Examine Azure IoT solution monitoring and logging
 summary: This module describes Azure Monitor and how to configure monitoring and logging of events using IoT Hub metrics, and it examines the relationship between IoT Hub service limits and device lifecycle events.
 abstract: |
-  After you complete this module, you will be able to:
+  After you complete this module, you'll be able to:
   - Describe Azure Monitor support.
   - Describe IoT Hub metrics and resource logs.
   - Describe IoT device connection state monitoring and lifecycle events.

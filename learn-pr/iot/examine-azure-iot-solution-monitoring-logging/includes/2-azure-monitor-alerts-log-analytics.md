@@ -12,7 +12,10 @@ Just a few examples of what you can do with Azure Monitor include:
 
 ## Overview
 
-The following diagram gives a high-level view of Azure Monitor. At the center of the diagram are the data stores for metrics and logs, which are the two fundamental types of data used by Azure Monitor. On the left are the sources of monitoring data that populate these data stores. On the right are the different functions that Azure Monitor performs with this collected data such as analysis, alerting, and streaming to external systems.
+The following diagram gives a high-level view of Azure Monitor:
+* At the center are the data stores for metrics and logs, which are the two fundamental types of data used by Azure Monitor.
+* On the left are the sources of monitoring data that populate these data stores.
+* On the right are the different functions that Azure Monitor performs with this collected data such as analysis, alerting, and streaming to external systems.
 
 :::image type="content" source="../media/m09-l01-monitoring-logging-azure-monitor-overview-7616d1b6.png" alt-text="Diagram that shows the different functions that Azure Monitor performs.":::
 
@@ -20,9 +23,9 @@ The following diagram gives a high-level view of Azure Monitor. At the center of
 
 All data collected by Azure Monitor fits into one of two fundamental types, metrics and logs. Metrics are numerical values that describe some aspect of a system at a particular point in time. They are lightweight and capable of supporting near real-time scenarios. Logs contain different kinds of data organized into records with different sets of properties for each type. Telemetry such as events and traces are stored as logs in addition to performance data so that it can all be combined for analysis.
 
-For many Azure resources, you'll see data collected by Azure Monitor right in their Overview page in the Azure portal. The Azure IoT Hub Overview page includes charts for **Device twin operation** and **Device to cloud messages**. Click on any of the graphs to open the data in metrics explorer in the Azure portal, which allows you to chart the values of multiple metrics over time. You can view the charts interactively or pin them to a dashboard to view them with other visualizations.
+For many Azure resources, you see data collected by Azure Monitor right in their Overview page in the Azure portal. The Azure IoT Hub Overview page includes charts for **Device twin operation** and **Device to cloud messages**. Click on any of the graphs to open the data in metrics explorer in the Azure portal, which allows you to chart the values of multiple metrics over time. You can view the charts interactively or pin them to a dashboard to view them with other visualizations.
 
-Log data collected by Azure Monitor can be analyzed with queries to quickly retrieve, consolidate, and analyze collected data. You can create and test queries using Log Analytics in the Azure portal and then either directly analyze the data using these tools or save queries for use with visualizations or alert rules.
+Log data collected by Azure Monitor can be analyzed with queries to quickly retrieve, consolidate, and analyze collected data. You can create and test queries using Log Analytics in the Azure portal, and then either directly analyze the data using these tools or save queries for use with visualizations or alert rules.
 
 Azure Monitor uses a version of the Kusto query language that is suitable for simple log queries but also includes advanced functionality such as aggregations, joins, and smart analytics.
 
@@ -30,7 +33,7 @@ Azure Monitor uses a version of the Kusto query language that is suitable for si
 
 Azure Monitor can collect data from various sources. You can think of monitoring data for your applications in tiers ranging from your application, any operating system and services it relies on, down to the platform itself. Azure Monitor collects data from each of the following tiers:
 
-* Application monitoring data: Data about the performance and functionality of the code you have written, regardless of its platform.
+* Application monitoring data: Data about the performance and functionality of the code you write, regardless of its platform.
 * Guest OS monitoring data: Data about the operating system on which your application is running. This OS could be running in Azure, another cloud, or on-premises.
 * Azure resource monitoring data: Data about the operation of an Azure resource.
 * Azure subscription monitoring data: Data about the operation and management of an Azure subscription, as well as data about the health and operation of Azure itself.
@@ -38,7 +41,7 @@ Azure Monitor can collect data from various sources. You can think of monitoring
 
 As soon as you create an Azure subscription and start adding resources such as virtual machines and web apps, Azure Monitor starts collecting data. Activity logs record when resources are created or modified. Metrics tell you how the resource is performing and the resources that it's consuming.
 
-Extend the data you're collecting into the actual operation of the resources by enabling diagnostics and adding an agent to compute resources. This configuration will collect telemetry for the internal operation of the resource and allow you to configure different data sources to collect logs and metrics from Windows and Linux guest operating system.
+Extend the data you're collecting into the actual operation of the resources by enabling diagnostics and adding an agent to compute resources. This configuration collects telemetry for the internal operation of the resource and allow you to configure different data sources to collect logs and metrics from Windows and Linux guest operating system.
 
 ## Responding to critical situations
 
@@ -50,14 +53,14 @@ Alerts in Azure Monitor proactively notify you of critical conditions and potent
 
 Alert rules in Azure Monitor use action groups, which contain unique sets of recipients and actions that can be shared across multiple rules. Based on your requirements, action groups can perform such actions as using webhooks to have alerts start external actions or to integrate with your ITSM tools.
 
-The unified alert experience in Azure Monitor includes alerts that were previously managed by Log Analytics and Application Insights. In the past, Azure Monitor, Application Insights, Log Analytics, and Service Health had separate alerting capabilities. Over time, Azure improved and combined both the user interface and different methods of alerting. The consolidation is still in process.
+The unified alert experience in Azure Monitor includes alerts previously managed by Log Analytics and Application Insights. In the past, Azure Monitor, Application Insights, Log Analytics, and Service Health had separate alerting capabilities. Over time, Azure improved and combined both the user interface and different methods of alerting. The consolidation is still in process.
 
 > [!NOTE]
 > You can view classic alerts only in the classic alerts user screen in the Azure portal. You get this screen from the View classic alerts button on the Alerts blade of IoT Hub in the Azure portal.
 
 #### Overview of alerts in Azure
 
-The diagram below represents the flow of alerts.
+The following diagram represents the flow of alerts.
 
 :::image type="content" source="../media/m09-l01-monitoring-logging-alerts-flow-52464b0e.png" alt-text="Diagram that shows the flow of alerts in Azure and Azure Monitor.":::
 
@@ -83,7 +86,7 @@ The following are key attributes of an alert rule:
 
 #### What you can alert on
 
-You can alert on metrics and logs. These include but are not limited to:
+You can alert on metrics and logs, including but are not limited to:
 
 * Metric values
 * Log search queries

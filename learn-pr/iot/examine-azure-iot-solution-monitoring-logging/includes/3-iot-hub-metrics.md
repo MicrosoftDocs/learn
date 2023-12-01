@@ -305,7 +305,7 @@ The following tables provide a partial listing of the metrics that each IoT hub 
     Average
   :::column-end:::
   :::column:::
-    Number of total messages used today. This is a cumulative value that is reset to zero at 00:00 UTC every day.
+    Number of total messages used today; a cumulative value that is reset to zero at 00:00 UTC every day.
   :::column-end:::
   :::column:::
     No Dimensions
