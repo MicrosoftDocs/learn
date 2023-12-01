@@ -5,7 +5,7 @@ To develop, test, tune, and deploy LLM applications, you can use **prompt flow**
 :::image type="content" source="../media/prompt-flow-feature.png" alt-text="Diagram showing prompt flow as a feature of Azure Machine Learning and Azure AI.":::
 
 > [!Note]
-> Throughout this module, the focus is on understanding and exploring prompt flow, whether that is through the Azure Machine Learning or Azure AI studio.
+> Throughout this module, the focus is on understanding and exploring prompt flow. The content applies to the prompt flow experience in both Azure Machine Learning and Azure AI studio.
 
 Prompt flow takes a **prompt** as input, which in the context of LLMs, refers to the query provided to the LLM application to generate a response. It's the text or set of instructions given to the LLM application, prompting it to generate output or perform a specific task.
 
