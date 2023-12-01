@@ -3,7 +3,7 @@ uid: learn.wwl.guided-project-langstons-ant
 metadata:
   title: Guided project langstons ant
   description: "Guided project langstons ant"
-  ms.date: 11/29/2023
+  ms.date: 12/01/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
@@ -37,7 +37,7 @@ units:
 - learn.wwl.guided-project-langstons-ant.introduction
 - learn.wwl.guided-project-langstons-ant.prepare
 - learn.wwl.guided-project-langstons-ant.exercise-create-interface
-- learn.wwl.guided-project-langstons-ant.exercise-use-the-interface-type
+- learn.wwl.guided-project-langstons-ant.exercise-use-interface-type
 - learn.wwl.guided-project-langstons-ant.knowledge-check
 - learn.wwl.guided-project-langstons-ant.summary
 badge:

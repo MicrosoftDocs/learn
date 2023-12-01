@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.guided-project-langstons-ant.exercise-use-the-interface-type
+uid: learn.wwl.guided-project-langstons-ant.exercise-use-interface-type
 title: Exercise - Use the interface as a type
 metadata:
   title: Exercise - Use the interface as a type
   description: "Exercise - Use the interface as a type"
-  ms.date: 11/29/2023
+  ms.date: 12/01/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/04-exercise-use-the-interface-type.md)]
+  [!include[](includes/04-exercise-use-interface-type.md)]
