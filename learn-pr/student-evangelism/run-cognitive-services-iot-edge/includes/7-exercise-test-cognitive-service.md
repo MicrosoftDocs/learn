@@ -9,6 +9,7 @@ You'll make an HTTP call to the Azure IoT Edge device that has the Azure AI serv
 1. Navigate to **Rules** section to add an inbound security rule to open port 5000.
 
     1. Select the **Create port rule** button and select **Inbound port rule**.
+    ![The illustration shows how to add inbound rule.](../media/inbound.png)
 
     1. Set the **Destination Port Ranges** to **5000**
 
