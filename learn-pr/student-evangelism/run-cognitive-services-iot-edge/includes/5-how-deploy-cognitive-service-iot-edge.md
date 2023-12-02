@@ -26,7 +26,7 @@ To deploy the Language Detection module, you:
 
 In the following exercise, you'll complete these steps:
 
-1. Create a Azure AI Text Analytics resource
+1. Create an Azure AI Text Analytics resource
 1. Configure the Azure AI services API to the Language Detection module
 1. Deploy the Language Detection module to the edge device
 
