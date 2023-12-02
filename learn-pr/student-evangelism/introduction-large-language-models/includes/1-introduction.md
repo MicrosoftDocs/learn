@@ -16,3 +16,5 @@ In this module, you learn to:
 ## What is the main goal?
 
 Understand LLMs and which one to use for what purpose.
+
+**Thank you to Gold Student Ambassador John Aziz for your help in writing this module**
