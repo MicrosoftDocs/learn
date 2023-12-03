@@ -30731,5 +30731,10 @@
       "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/",
       "redirect_document_id": false
     },
+    {
+      "source_path": "learn-pr/achievements/learn.monitor-vm-performance-using-azure-monitor-for-vms.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/",
+      "redirect_document_id": false
+    }
   ]
 }
