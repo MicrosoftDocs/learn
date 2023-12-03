@@ -35,7 +35,6 @@ subjects:
 modules:
 - learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances
 - learn.azure.monitor-azure-vm-using-diagnostic-data
-- learn.monitor-vm-performance-using-azure-monitor-for-vms
 - learn.wwl.monitor-windows-server-performance
 - learn.wwl.manage-monitor-event-logs
 - learn.wwl.implement-windows-server-auditing-diagnostics

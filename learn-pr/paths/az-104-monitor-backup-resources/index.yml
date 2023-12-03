@@ -77,6 +77,6 @@ modules:
 - learn.wwl.configure-network-watcher
 - learn.incident-response-with-alerting-on-azure
 - learn.analyze-infrastructure-with-azure-monitor-logs
-- learn.monitor-vm-performance-using-azure-monitor-for-vms
+- learn.azure.monitor-azure-vm-using-diagnostic-data
 trophy:
   uid: learn.az-104-monitor-backup-resources.trophy
