@@ -30695,6 +30695,11 @@
       "source_path": "learn-pr/paths/implement-classes-properties-methods/index.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-performance-using-azure-monitor-for-vms/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/",
+      "redirect_document_id": false
     }
   ]
 }
