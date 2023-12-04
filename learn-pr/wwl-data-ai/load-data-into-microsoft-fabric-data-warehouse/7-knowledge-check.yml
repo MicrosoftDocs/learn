@@ -16,36 +16,36 @@ metadata:
 durationInMinutes: 8
 quiz:
   questions:
-  - content: What type of data does Data Wrangler currently support?
+  - content: What are the four data ingestion options available in Microsoft Fabric for loading data into a data warehouse?
     choices:
-    - content: Only Pandas DataFrames.
+    - content: COPY (Transact-SQL) statement, data pipelines, dataflows, and cross-warehouse.
       isCorrect: true
-      explanation: Correct. As of now, Data Wrangler only supports Pandas DataFrames.
-    - content: Only Spark DataFrames.
+      explanation: Correct. COPY (Transact-SQL) statement, data pipelines, dataflows, and cross-warehouse are the four data ingestion options available in Microsoft Fabric for loading data into a data warehouse.
+    - content: COPY (Transact-SQL) statement, data pipelines, dataflows, and Data Wrangler.
       isCorrect: false
-      explanation: Incorrect. While support for Spark DataFrames is in progress, currently Data Wrangler only supports Pandas DataFrames.
-    - content: Both Pandas and Spark DataFrames.
+      explanation: Incorrect. Data Wrangler is a tool used to preprocess data.
+    - content: COPY (Transact-SQL) statement, data pipelines, dataflows, and cross-platform ingestion.
       isCorrect: false
-      explanation: Incorrect. Support for Spark DataFrames is in progress, but currently, only Pandas DataFrames are supported.
-  - content: How can you launch Data Wrangler from a Microsoft Fabric notebook?
+      explanation: Incorrect. The fourth option is cross-warehouse, not cross-platform ingestion.
+  - content: What are the supported data sources and file formats for the COPY (Transact-SQL) statement in Warehouse?
     choices:
-    - content: By selecting the DataFrame you wish to open in Data Wrangler from the "Data" tab under the notebook ribbon.
+    - content: Azure Data Lake Storage (ADLS) Gen2 and Azure Blob Storage, with PARQUET and CSV file formats.
       isCorrect: true
-      explanation: Correct. Users can launch Data Wrangler directly from a Microsoft Fabric notebook to explore and transform any Pandas DataFrame.
-    - content: By right-clicking on the DataFrame and selecting "Open in Data Wrangler".
+      explanation: Correct. The COPY (Transact-SQL) statement currently supports the PARQUET and CSV file formats, and Azure Data Lake Storage (ADLS) Gen2 and Azure Blob Storage as data sources.
+    - content: Azure Data Lake Storage (ADLS) Gen1 and Azure Blob Storage, with PARQUET and CSV file formats.
       isCorrect: false
-      explanation: Incorrect. The correct way to launch Data Wrangler from a notebook is by using the "Data" tab under the notebook ribbon.
-    - content: By double-clicking on the DataFrame.
+      explanation: Incorrect. The supported data source is Azure Data Lake Storage (ADLS) Gen2, not Gen1.
+    - content: Azure Data Lake Storage (ADLS) Gen2 and Azure Blob Storage, with ORC and CSV file formats.
       isCorrect: false
-      explanation: Incorrect. Double-clicking on the DataFrame won't launch Data Wrangler.
-  - content: What is the purpose of one-hot encoding in machine learning?
+      explanation: Incorrect. The supported file formats are PARQUET and CSV, not ORC and CSV.
+  - content: What is the recommended minimum file size when working with external data on files in Microsoft Fabric?
     choices:
-    - content: To handle missing values in the dataset.
-      isCorrect: false
-      explanation: Incorrect. One-hot encoding doesn't handle missing values. It's used for converting categorical data.
-    - content: To convert categorical data into a format that can be provided to machine learning algorithms to improve prediction accuracy.
+    - content: At least 4 MB.
       isCorrect: true
-      explanation: Correct. One-hot encoding is a process of converting categorical data variables so they can be provided to machine learning algorithms to improve prediction accuracy.
-    - content: To increase the dimensionality of the dataset.
+      explanation: Correct. When working with external data on files, we recommend that files are at least 4 MB in size.
+    - content: At least 1 MB.
       isCorrect: false
-      explanation: Incorrect. While one-hot encoding does increase the dimensionality of the dataset, its primary purpose is to convert categorical data for machine learning algorithms. Increasing dimensionality is a side effect and can sometimes lead to the curse of dimensionality.
+      explanation: Incorrect. The recommended minimum file size is 4 MB, not 1 MB.
+    - content: At least 10 MB.
+      isCorrect: false
+      explanation: Incorrect. The recommended minimum file size is 4 MB, not 10 MB.

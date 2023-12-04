@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse
 metadata:
-  title: Preprocess data with Data Wrangler in Microsoft Fabric
+  title: Load data into a Microsoft Fabric data warehouse
   description: "Explore the process of preparing data for machine learning models using the Data Wrangler tool in Microsoft Fabric notebooks."
   ms.date: 12/01/2023
   author: wwlpublish
@@ -16,10 +16,10 @@ title: Preprocess data with Data Wrangler in Microsoft Fabric
 summary: Data Wrangler serves as a comprehensive tool for preprocessing data. It enables users to clean data, handle missing values, and transform features to build machine learning models.
 abstract: |
   In this module, you'll:
-  - Learn Data Wrangler features, and its role in the data science workflow.
-  - Perform different types of preprocessing operations in data science.
-  - Learn how to handle missing values, and imputation strategies.
-  - Use one-hot encoding and other techniques to convert categorical data into a format suitable for machine learning algorithms.
+  - Learn different strategies to load data into a data warehouse in Microsoft Fabric.
+  - Learn how data pipelines works in Microsoft Fabric and how it can be used for loading purposes.
+  - Learn how to load data in a warehouse using T-SQL.
+  - Learn how to load and transform data with dataflow.
 prerequisites: |
   Before starting this module, you should be familiar with the basic principles of machine learning.
 iconUrl: /training/achievements/generic-badge.svg
@@ -36,11 +36,11 @@ subjects:
 - machine-learning
 units:
 - learn-wwl.load-data-into-microsoft-fabric-data-warehouse.introduction
-- learn-wwl.load-data-into-microsoft-fabric-data-warehouse.understand-data-wrangler
-- learn-wwl.load-data-into-microsoft-fabric-data-warehouse.explore-data-with-data-wrangler
-- learn-wwl.load-data-into-microsoft-fabric-data-warehouse.handle-missing-data
-- learn-wwl.load-data-into-microsoft-fabric-data-warehouse.transform-data
-- learn-wwl.load-data-into-microsoft-fabric-data-warehouse.exercise-preprocess-data-with-data-wrangler
+- learn-wwl.load-data-into-microsoft-fabric-data-warehouse.explore-data-load-strategies
+- learn-wwl.load-data-into-microsoft-fabric-data-warehouse.load-data-using-data-pipeline
+- learn-wwl.load-data-into-microsoft-fabric-data-warehouse.load-data-using-tsql
+- learn-wwl.load-data-into-microsoft-fabric-data-warehouse.load-data-using-dataflow
+- learn-wwl.load-data-into-microsoft-fabric-data-warehouse.exercise-load-data-using-data-pipeline
 - learn-wwl.load-data-into-microsoft-fabric-data-warehouse.knowledge-check
 - learn-wwl.load-data-into-microsoft-fabric-data-warehouse.summary
 badge:
