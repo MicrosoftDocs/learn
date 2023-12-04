@@ -17,7 +17,7 @@ summary: Microsoft Fabric Data Warehouse is a complete platform for data, analyt
 abstract: |
   In this module, you'll:
   - Learn different strategies to load data into a data warehouse in Microsoft Fabric.
-  - Learn how data pipelines works in Microsoft Fabric and how it can be used for loading purposes.
+  - Learn how data pipeline works in Microsoft Fabric and how it can be used for loading purposes.
   - Learn how to load data in a warehouse using T-SQL.
   - Learn how to load and transform data with dataflow.
 prerequisites: |
