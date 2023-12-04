@@ -21,7 +21,7 @@ Description
 
 ```
 > [!NOTE]
-> **Few Shot Prompt example.** This prompt is an example of a Few Shot prompt, where you provided some guidance or an example of what you wanted it to do and the output to be. Zero-shot gives no guidance.
+> **Few Shot Prompt example**. This prompt is an example of a Few Shot prompt, where you provided some guidance or an example of what you wanted it to do and the output to be. Zero-shot gives no guidance.
 
 
 **Sample response**:
@@ -72,7 +72,7 @@ Can you also suggest three alternative names for the Nest?
 ```
 
 > [!NOTE]
-> **Complex Directive.** You asked the model to do a few things here in a single prompt and it will work to figure out what it needs to do when you issue multiple directives in a single prompt.
+> **Complex Directive**. You asked the model to do a few things here in a single prompt and it will work to figure out what it needs to do when you issue multiple directives in a single prompt.
 
 **Sample response**:
 ```

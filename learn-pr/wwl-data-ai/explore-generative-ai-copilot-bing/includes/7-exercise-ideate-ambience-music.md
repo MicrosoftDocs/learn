@@ -4,7 +4,7 @@ Music is a powerful way to create the mood and atmosphere of your destination. I
 Ask Copilot to create a list of 10 songs that would be appropriate for your destination. Add any details or references to help guide Copilot. You're going to format this list as a table.
 
 > [!TIP]
-> **Get creative with directions.** Add details to get more interesting results. Ask for one-hit wonders, indie artists, provide references to other soundtracks, or describe the vibe you are going for.
+> **Get creative with directions**. Add details to get more interesting results. Ask for one-hit wonders, indie artists, provide references to other soundtracks, or describe the vibe you are going for.
 
 **Steps**:
 1. Copy the sample prompt and edit as desired.

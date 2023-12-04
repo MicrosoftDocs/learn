@@ -1,6 +1,6 @@
 In this module, you learned some basic prompt creation techniques, explored some of the capabilities of Copilot in Bing, and were introduced to the capabilities of generative AI. Interacting with and exploring generative AI is essential to understanding these capabilities and applying them in your everyday work.
 
-## Continue your learning journey
+**Continue your learning journey**
 
 - Review [Fundamentals of Generative AI](/training/modules/fundamentals-generative-ai) to learn how generative AI enables the creation of an AI-powered copilot that can assist humans in creative tasks. 
 - Learn how to safely implement generative AI solutions in [Fundamentals of Responsible Generative AI.](/training/modules/responsible-generative-ai/)
