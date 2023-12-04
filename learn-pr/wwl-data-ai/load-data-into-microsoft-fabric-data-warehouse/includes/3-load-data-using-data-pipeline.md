@@ -1,8 +1,8 @@
 Microsoft Fabric’s Warehouse provides integrated data ingestion tools, enabling users to load and ingest data into warehouses on a large scale through either coding or noncoding experiences.
 
-Data pipelines is the cloud-based ETL and data integration service that allows you to create data-driven workflows for orchestrating data movement and transforming data at scale. You can create and schedule data pipelines that can load and ingest data from disparate data stores. You can build complex ETL, or ELT processes that transform data visually with data flows.
+Data pipeline is the cloud-based service for data integration, which enables the creation of workflows for data movement and data transformation at scale. You can create and schedule data pipelines that can ingest and load data from disparate data stores. You can build complex ETL, or ELT processes that transform data visually with data flows.
 
-Much of the functionality of data pipelines in Microsoft Fabric come from the Azure Data Factory. 
+Most of the functionality of data pipelines in Microsoft Fabric comes from Azure Data Factory, allowing for seamless integration and utilization of its features within the Microsoft Fabric ecosystem.
 
 > [!Note] 
 > All data in a Warehouse is automatically stored in the Delta Parquet format in OneLake.
@@ -15,13 +15,13 @@ There are a few ways to launch the data pipeline editor.
     
     :::image type="content" border="false" source="../media/3-data-pipeline-create.gif" alt-text="Animated GIF showing how to launch Data Pipeline from the workspace.":::
 
-- **From the Warehouse asset -** Select **Get Data**, and then **New data pipeline**. 
+- **From the warehouse asset -** Select **Get Data**, and then **New data pipeline**. 
 
     :::image type="content" border="false" source="../media/3-create-data-pipeline.png" alt-text="Screenshot showing the shortcuts for a few features in the Warehouse asset.":::
 
 There are three options available when creating a pipeline.
 
-:::image type="content" border="false" source="../media/3-build-pipeline.png" alt-text="Screenshot showing the main loading options when you launch Data Pipeline.":::
+:::image type="content" border="false" source="../media/3-build-pipeline.png" alt-text="Screenshot showing the options available when creating a pipeline.":::
 
 | Option | Description |
 | --- | --- |
@@ -29,7 +29,7 @@ There are three options available when creating a pipeline.
 | **2. Copy data** | Launches an assistant to copy data from various data sources to a data destination. A new pipeline activity is generated at the end with a preconfigured **Copy Data** task. |
 | **3. Choose a task to start** | You can choose from a collection of predefined templates to assist you in initiating pipelines based on many scenarios. |
 
-## Configure Copy data assistant
+## Configure the copy data assistant
 
 The copy data assistant provides a step-by-step interface that facilitates the configuration of a **Copy Data** task.
 

@@ -72,10 +72,14 @@ INNER JOIN [social_lakehouse].[dbo].[social_data] social
 ON sales.[product_id] = social.[product_id];
 ``` 
 
-All the Warehouses that share the same workspace are integrated into the same logical SQL server. If you use SQL client tools such as SQL Server Management Studio, you can easily perform a cross-database query like in any SQL Server instance.
+All the Warehouses that share the same workspace are integrated into the same logical SQL server. If you use SQL client tools such as [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms?azure-portal=true), you can easily perform a cross-database query like in any SQL Server instance.
 
 :::image type="content" border="false" source="../media/4-load-using-ssms.gif" alt-text="Animated GIF showing how to reference other Warehouses in a workspace from SQL Server Management Studio.":::
 
-If you’re using the object Explorer from the workspace to query your Warehouses, you need to add them explicitly. The databases added will also be visible from the Visual query editor.
+*MyWarehouse* and *Sales* are both warehouse assets that share the same workspace.
+
+If you’re using the object Explorer from the workspace to query your Warehouses, you need to add them explicitly. The warehouses added will also be visible from the Visual query editor.
 
 :::image type="content" border="false" source="../media/4-query-using-workspace.gif" alt-text="Animated GIF showing how to query other Warehouses in a workspace from the Fabric workspace.":::
+
+When using T-SQL, data can be efficiently loaded into a warehouse in Microsoft Fabric through the COPY statement, or from other warehouses and lakehouses within the same workspace, allowing for seamless data management and analysis.
