@@ -54,14 +54,18 @@ Here's the resulting image:
 ![Diagram of a color image.](../media/color-square.png)
 
 The purple squares are represented by the combination: 
+```
 Red: 150 
 Green: 0 
 Blue: 255 
+```
 
 The yellow squares in the center are represented by the combination: 
+```
 Red: 255
 Green: 255
 Blue: 0
+```
 
 ## Using filters to process images
 
