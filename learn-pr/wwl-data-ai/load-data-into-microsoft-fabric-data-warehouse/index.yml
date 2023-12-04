@@ -28,7 +28,6 @@ levels:
 roles:
 - data-analyst
 - data-engineer
-- data-scientist
 products:
 - fabric
 subjects:
