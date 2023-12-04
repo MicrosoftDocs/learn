@@ -2,12 +2,12 @@
 uid: learn.wwl.guided-project-configure-secure-access-workloads
 metadata:
   title: Guided Project - Configure secure access to workloads with Azure virtual networking services
-  description: "Guided Project - Configure secure access to workloads with Azure virtual networking services"
-  ms.date: 06/13/2023
+  description: "In this module, you practice configuring secure access to workloads using Azure virtual networking. The lab combines both learning and hands-on practice."
+  ms.date: 12/04/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: module
-  ms.prod: learning-azure
+  ms.prod: azure
 title: Guided Project - Configure secure access to workloads with Azure virtual networking services
 summary: In this module, you practice configuring secure access to workloads using Azure virtual networking. The lab combines both learning and hands-on practice.
 abstract: |
@@ -20,8 +20,7 @@ prerequisites: |
   - Experience using the Azure portal to create resources.
   - Experience with cloud networking.
   - The prerequisites can be obtained by completing the other modules in this learning path.
-iconUrl: /training/achievements/generic-badge.svg
-hidden: false
+iconUrl: /training/achievements/guided-project-configure-secure-access-workloads.svg
 levels:
 - intermediate
 roles:
