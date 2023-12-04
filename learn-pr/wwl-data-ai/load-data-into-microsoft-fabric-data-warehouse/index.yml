@@ -2,7 +2,7 @@
 uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse
 metadata:
   title: Load data into a Microsoft Fabric data warehouse
-  description: "Explore the process of preparing data for machine learning models using the Data Wrangler tool in Microsoft Fabric notebooks."
+  description: "Explore the process of loading data into a warehouse in Microsoft Fabric."
   ms.date: 12/01/2023
   author: wwlpublish
   ms.author: jupadrao
@@ -12,8 +12,8 @@ metadata:
     - build-2023
     - build-2023-dataai
     - build-2023-fabric 
-title: Preprocess data with Data Wrangler in Microsoft Fabric
-summary: Data Wrangler serves as a comprehensive tool for preprocessing data. It enables users to clean data, handle missing values, and transform features to build machine learning models.
+title: Load data into a Microsoft Fabric data warehouse
+summary: Microsoft Fabric Data Warehouse is a complete platform for data, analytics, and AI (Artificial Intelligence). It refers to the process of storing, organizing, and managing large volumes of structured and semi-structured data.
 abstract: |
   In this module, you'll:
   - Learn different strategies to load data into a data warehouse in Microsoft Fabric.
@@ -21,7 +21,7 @@ abstract: |
   - Learn how to load data in a warehouse using T-SQL.
   - Learn how to load and transform data with dataflow.
 prerequisites: |
-  Before starting this module, you should be familiar with the basic principles of machine learning.
+  Before starting this module, you should be familiar with the basic principles of a data warehouse.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner

@@ -38,7 +38,7 @@ With the **Add data destination** feature, you can separate your ETL logic and d
 
 Once the data is transformed, the next step is to add a destination step. On the **Query settings** tab, select **+** to add a destination step in your dataflow.
 
-:::image type="content" border="false" source="../media/5-add-destination.png" alt-text="Screenshot showing how to add a data destination in a dataflow.":::
+:::image type="content" border="false" source="../media/5-add-destination.png" alt-text="Screenshot showing the option to add a data destination in a dataflow.":::
 
 The following destination options are available.
 
@@ -52,9 +52,9 @@ Data that’s loaded into a destination like a warehouse can be easily accessed 
 
 When you select a warehouse as a destination, you can choose the following update methods.
 
-:::image type="content" border="false" source="../media/5-update-table-options.png" alt-text="Screenshot showing how to add a data destination in a dataflow.":::
+:::image type="content" border="false" source="../media/5-update-table-options.png" alt-text="Diagram showing visually the difference between the append and replace methods to update a row.":::
 
-- **Append:** Add new records to an existing table.
+- **Append:** Add new rows to an existing table.
 - **Replace:** Replace the entire content of a table with a new set of data.
 
 ## Publish a dataflow
