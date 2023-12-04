@@ -27,7 +27,7 @@ levels:
 roles:
   - technology-manager
 products: 
-  defender-for-iot
+  - defender-for-iot
 subjects: 
   - security
 units:
