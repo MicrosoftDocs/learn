@@ -39,7 +39,7 @@ For example, if you’re running an online store, your fact table might contain 
 
 ### Slowly changing dimension (SCD)
 
-Slowly Changing Dimension are changed over time but at a slowly pace but unpredictably. For example, a customer’s address in a retail business. When a customer moves, their address changes. If you overwrite the old address with the new one, you lose the history. But if you want to analyze historical sales data, you might need to know where the customer lived at the time of each sale. This is where SCDs come into play.
+Slowly Changing Dimensions change over time, but at a slow pace and unpredictably. For example, a customer’s address in a retail business. When a customer moves, their address changes. If you overwrite the old address with the new one, you lose the history. But if you want to analyze historical sales data, you might need to know where the customer lived at the time of each sale. This is where SCDs come into play.
 
 There are several types of slowly changing dimensions in a data warehouse, with type 1 and type 2 being the most frequently used.
 
