@@ -14,33 +14,23 @@ In this step, we will ask Bing Chat to suggest some features we can build for ou
 
 ### Sample Prompt
 
-> Hey Bing, from what I have shared so far about my idea, I now want to implement and start building. Can you help me narrow down the main features my product should have?
+```
+Hey Bing, from what I have shared so far about my idea, I now want to implement and start building. Can you help me narrow down the main features my product should have?
+```
 
 ### Sample Response
 ![Project features](./media/poject-features.png)
-
-_Sure, I can help you narrow down the main features your product should have based on your idea. Based on your summary and UI ideas, I think your product should have the following main features:_
-
-_IoT and AI integration: Your product should be able to connect and communicate with various devices, such as sensors, cameras, drones, and satellites, that can collect data on wildlife and human activities and threats. Your product should also be able to use AI to process and analyze the data, using techniques such as computer vision, natural language processing, machine learning, or deep learning. Your product should also be able to use AI to generate alerts, recommendations, or interventions based on the data and analysis results..._
-
-_I hope these features can help you with your product development. If you have any questions or feedback, please let me know. 😊_
 
 But before we focus on each feature separately, let us ask Bing chat to help identify the tools and services we will need to put this together.
 
 ### Sample Prompt on tools/services for our project
 
-> Thanks for the help so far. To successfully implement these features, which tools/ services will I need to get? Please use a list and respond in short bullet points and categorize the tools per feature/ functionality.
+```
+Thanks for the help so far. To successfully implement these features, which tools/ services will I need to get? Please use a list and respond in short bullet points and categorize the tools per feature/ functionality.
+```
 
 ### Sample Response on tools/services for our project
 ![Tools and services to implement our features](./media/tools-for-project.png)
-
-_You’re welcome. Based on the web search results, I can suggest some tools and services that you may need to get for each feature or functionality of your software solution. Here is a list of possible tools and services for each feature or functionality:_
-
-_- IoT and AI integration: You may need to get some hardware devices, such as sensors, cameras, drones, or satellites, that can collect data on wildlife and human activities and threats. You may also need to get some software platforms, such as Arduino1, Apache NetBeans2, or AWS IoT, that can provide IoT and AI development tools, such as IDEs, SDKs, libraries, frameworks, or APIs. You may also need to get some cloud platforms, such as Azure, Google Cloud, or IBM Cloud, that can provide IoT and AI services, such as data storage, processing, analysis, visualization, communication, or action._
-
-_- User interface and experience: You may need to get some UI design tools, such as Adobe XD, Figma, or Sketch, that can help you create and prototype your user interface, such as an app, website, or dashboard. You may also need to get some UI development tools, such as React, Angular, or Vue, that can help you build and deploy your user interface. You may also need to get some UX testing tools, such as UserTesting, Hotjar, or Crazy Egg, that can help you evaluate and improve your user experience._
-
-_- Analytics and machine learning: You will need to leverage the power of AI to analyze and process your IoT data, such as detecting, identifying, and tracking wildlife and human activities and threats. You will need to use the relevant AI tools and services, such as TensorFlow, PyTorch, or Azure Machine Learning, to build and deploy your machine learning models. These tools and services provide the necessary features, such as data preprocessing, model training, testing, and optimization, to enable your AI development._
 
 ## Step 2: Select a feature and flesh out more details on implementation
 
@@ -55,15 +45,11 @@ Now let's focus on each feature/ functionality separately.
 
 ### Sample Prompt for a specific feature
 
-> We are building a wildlife AI system. How can we create a dashboard for users to view and manage the data collected? In addition, suggest which tools/ frameworks/ languages we need to successfully build our application. Summarize the response in bullet points.
+```
+We are building a wildlife AI system. How can we create a dashboard for users to view and manage the data collected? In addition, suggest which tools/ frameworks/ languages we need to successfully build our application. Summarize the response in bullet points.
+```
 
 ### Sample Response for a specific feature
-
-_To create a dashboard for users to view and manage the data collected from your wildlife AI system, you can follow these steps:_
-
-_Choose a suitable IoT platform that can handle the data collection, processing, visualization, and device management. [For example, you can use AWS IoT, Azure IoT, Google Cloud IoT, or ThingsBoard](https://bing.com/search?q=tools+and+frameworks+for+IoT+and+AI+development)[1](https://bing.com/search?q=tools+and+frameworks+for+IoT+and+AI+development)._
-
-_Connect your IoT devices, such as sensors, cameras, drones, and satellites, to the IoT platform using the appropriate IoT protocols, such as MQTT, CoAP, or HTTP. [You can use tools like Arduino](https://bing.com/search?q=tools+and+frameworks+for+IoT+and+AI+development)[2](https://www.geeksforgeeks.org/top-iot-tools/)[, Kinoma](https://bing.com/search?q=tools+and+frameworks+for+IoT+and+AI+development)[2](https://www.geeksforgeeks.org/top-iot-tools/)[, or Mainspring](https://bing.com/search?q=tools+and+frameworks+for+IoT+and+AI+development)[2](https://www.geeksforgeeks.org/top-iot-tools/) to build and program your IoT devices..._
 
 ![Image showing sample response](./media/sample-response.png)
 
@@ -92,7 +78,9 @@ Note: Explore asking Bing chat for some code samples too
 
 #### Sample Prompt on different components/libraries
 
-> Can you guide me on how to create the calendar of emotions on react native?
+```
+Can you guide me on how to create the calendar of emotions on react native?
+```
 
 #### Sample Response on different components/libraries
 
@@ -108,19 +96,11 @@ The purpose of building an MVP is to ensure that you can be able to test and val
 
 ### Sample Prompt on deployment
 
-> Part of my solution is a website, and I am also thinking of building my company website. As a student, how can I deploy websites using Microsoft services or free tools to avail this to my users?
+```
+Part of my solution is a website, and I am also thinking of building my company website. As a student, how can I deploy websites using Microsoft services or free tools to avail this to my users?
+```
 
-### Sample Response on deployment
-
-_I can help you with some options on how to deploy it to final users using Microsoft services or free tools. Here are some possible ways:_
-
-_- You can use Azure Static Web Apps to host your website for free on the Azure cloud platform. Azure Static Web Apps is a service that automatically builds and deploys full stack web apps from a GitHub repository......_
-
-_- You can use Web Deploy to publish your website to an Azure App Service. Web Deploy is a tool that simplifies the migration, management, and deployment of web applications and websites. You can use it to package and deploy your website from Visual Studio or the command line...._
-
-_- You can use GitHub Pages to host your website for free on GitHub. GitHub Pages is a service that allows you to create and publish websites directly from your GitHub repository..._
-
-_I hope these options help you with your deployment. If you need more assistance, please let me know._
+This should give you ideas on different tools and services you can use to deploy your project.
 
 ## Next Steps
 

@@ -4,7 +4,7 @@ You learned how to create your own prototype and even your own Minimal Viable Pr
 
 Learning is a lifelong process that can help you grow both personally and professionally. It can open doors to new opportunities and help you achieve your goals. So, keep learning, keep growing, and keep changing the world with AI!
 
-# Next steps: Apply for Founders Hub
+# Next steps: Apply for Founders Hub or Participate in Imagine Cup
 
 You have identified a real-world problem and identified potential customers with the help of Bing chat. At this stage, you're convicted that your idea solves the identified problem and you now have an insight on how your startup would operate.
 
