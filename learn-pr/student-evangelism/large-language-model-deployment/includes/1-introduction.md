@@ -1,4 +1,4 @@
-To use a large language model (LLM), you can either run it locally or from a cloud provider, like Azure. The benefits of using a cloud hosted version are that the provider leaves you with guarantees that things will work, which means if you’re building a tech startup or adding a large language model to an existing product, you need that guarantee oftentimes for a customer to trust you. Also you data is yours, you don’t worry about the data leaking out. 
+To use a large language model (LLM), you can either run it locally or from a cloud provider, like Azure. The benefits of using a cloud hosted version are that the provider leaves you with guarantees that things will work, which means if you’re building a tech startup or adding a large language model to an existing product, you can guarantee performance for customers to trust you. Also your data is yours, you don’t worry about the data leaking out. 
 
 ## Scenario: Trying out an LLM for my tech MVP
 

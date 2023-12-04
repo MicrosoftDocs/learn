@@ -3,14 +3,14 @@ In this exercise, you create an Azure OpenAI service that enables you to interac
 > [!NOTE]
 > In order to complete this exercise, you need the following:
 >
-> - An Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services). 
+> - An Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services).
 > - Access granted to Azure OpenAI in the desired Azure subscription.
->   Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the form at [https://aka.ms/oai/access](https://aka.ms/oai/access). 
+>   Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the form at [https://aka.ms/oai/access](https://aka.ms/oai/access).
 >
 
 ## Provision a resource in the Azure portal
 
-For this exercise, you will use Azure Portal to provision a resource.
+For this exercise, you'll use Azure portal to provision a resource.
 
 1. Visit the [Azure portal](https://portal.azure.com) in your browser and sign in.  
 1. Type **openai** in the search bar at the top of the portal page and select **Azure OpenAI** from the options that appear.
@@ -21,7 +21,7 @@ For this exercise, you will use Azure Portal to provision a resource.
 
     :::image type="content" source="../media/create-button.png" alt-text="Screenshot from the Azure portal with create Azure OpenAI highlighted in a red box.":::
 
-1. Make the following selections, text entries to provide the needed data to create a resource: 
+1. Make the following selections, text entries to provide the needed data to create a resource:
 
     | **What** | **Comment**  |
     |---------|---------|
@@ -41,6 +41,6 @@ For this exercise, you will use Azure Portal to provision a resource.
 
 1. Confirm your configuration settings and select **Create**. This action should start provisioning the resource, wait for the deployment to finish.  
 
-1. Select **Go to resource**, to inspect your created resource. On this page, you will be able to manage your resource and locate important information like the endpoint URL, API keys and more.  
+1. Select **Go to resource**, to inspect your created resource. On this page, you can manage your resource and locate important information like the endpoint URL, API keys and more.  
 
-Congrats, you’ve provisioned a resource, in the next exercise, you will deploy a model so you can interact with your large language model of choice.
+Congrats, you’ve provisioned a resource, in the next exercise you'll deploy a model so you can interact with your large language model of choice.

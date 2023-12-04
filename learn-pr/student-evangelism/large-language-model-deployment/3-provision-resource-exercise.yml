@@ -3,7 +3,7 @@ uid: learn.large-language-model-deployment.provision-resource-exercise
 title: "Exercise: Provision an Azure OpenAI resource"
 metadata:
   title: "Exercise: Provision an Azure OpenAI resource"
-  description: TBD
+  description: Practice provisioning an Azure OpenAI resource.
   ms.date: 12/04/2023
   author: softchris
   ms.author: chnoring

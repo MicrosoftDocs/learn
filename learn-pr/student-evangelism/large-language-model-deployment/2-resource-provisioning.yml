@@ -3,7 +3,7 @@ uid: learn.large-language-model-deployment.resource-provisioning
 title: "Azure OpenAI resource provisioning"
 metadata:
   title: "Azure OpenAI resource provisioning"
-  description: TBD
+  description: Learn about Azure OpenAI resource provisioning.
   ms.date: 12/04/2023
   author: softchris
   ms.author: chnoring

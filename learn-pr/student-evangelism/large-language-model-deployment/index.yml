@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.large-language-model-deployment
 metadata:
-  ms.author: softchris
-  author: Chris Noring
+  ms.author: chnoring
+  author: softchris
   ms.date: 12/04/2023
   title: Create an LLM deployment
   description: Lean how to create a large language model deployment. 
   ms.topic: module
 title: "Create an LLM deployment"
-summary: TBD
+summary: "This module provides a step-by-step guide on how to provision an Azure OpenAI cloud resource, create a deployment for a specific LLM model, and experiment with different prompts to explore the capabilities of a large language model in various scenarios."
 abstract: |
  In this module, you'll learn how to: 
   - Provision an Azure OpenAI cloud resource.

@@ -12,7 +12,7 @@ In this exercise, you create an Azure OpenAI deployment. By creating a deploymen
 
 In this exercise, you will create a deployment and use Azure OpenAI Studio to do so. You can have more than one Azure OpenAI cloud resource; to ensure you manage the correct one, you need to navigate to Azure OpenAI Studio from the instance blade.
 
-1. Navigate to [Azure Portal](https://portal.azure.com) and locate your newly provisioned Azure OpenAI instance by typing **openai** in the top search bar; this will take you to your provisioned Azure OpenAI instances. From there, select your specific cloud instance.
+1. Navigate to [Azure portal](https://portal.azure.com) and locate your newly provisioned Azure OpenAI instance by typing **openai** in the top search bar; this will take you to your provisioned Azure OpenAI instances. From there, select your specific cloud instance.
 
 1. Select **Model deployments** from the left side menu on your cloud instance blade then, select **Manage Deployments**.
 
@@ -28,11 +28,11 @@ In this exercise, you will create a deployment and use Azure OpenAI Studio to do
 
 1. In the opened modal, fill in the following fields:
 
-| **What** | **Value** |
-|---|---|
-| Select a model | Select **gpt-35-turbo** |
-| Model version | Select 0301 |
-| Deployment name | It needs to be unique for this cloud instance. Name it to something that makes sense to you, for example **conversation-model**, as this model type and GPT4 is optimized for conversation. |
+    | **What** | **Value** |
+    |---|---|
+    | Select a model | Select **gpt-35-turbo** |
+    | Model version | Select 0301 |
+    | Deployment name | It needs to be unique for this cloud instance. Name it to something that makes sense to you, for example **conversation-model**, as this model type and GPT4 is optimized for conversation. |
 
 1. Select **Create**.
 
