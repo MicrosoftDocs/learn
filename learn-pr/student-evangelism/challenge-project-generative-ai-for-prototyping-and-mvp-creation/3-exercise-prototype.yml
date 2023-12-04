@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation.exercise-prototype
+title: Exercise - Using Bing to give your ideas on how to build your prototype
+metadata:
+  title: Exercise - Using Bing to give your ideas on how to build your prototype
+  description: "Exercise - Using Bing to give your ideas on how to build your prototype"
+  ms.date: 12/10/2023
+  author: bethanycheum
+  ms.author: bethanycheum
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-prototype.md)]
