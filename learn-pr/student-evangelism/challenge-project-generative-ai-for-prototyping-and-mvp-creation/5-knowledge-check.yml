@@ -18,10 +18,10 @@ quiz:
     choices:
     - content: "Yes"
       isCorrect: true
-      explanation: "Incorrect. Bing Chat is free for personal use, but not for enterprise use."
+      explanation: "Correct. Bing Chat is free for personal use, but not for enterprise use."
     - content: "No"
       isCorrect: false
-      explanation: "Correct! Bing Chat is free for personal use, but not for enterprise use."
+      explanation: "Incorrect! Bing Chat is free for personal use, but not for enterprise use."
     - content: "Maybe"
       isCorrect: false
       explanation: "Incorrect. Bing Chat is free for personal use, but not for enterprise use."
