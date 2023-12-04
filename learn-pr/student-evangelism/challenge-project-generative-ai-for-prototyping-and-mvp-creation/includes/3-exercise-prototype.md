@@ -8,11 +8,12 @@ Copy the sample prompt provided below and edit it to add your refined idea 1-par
 
 ### Sample Prompt
 
-_Hey Bing, here is a paragraph summary of my idea that I want to create a prototype for then implement/ start building. Can you help me break down the core functionalities of my software solution (app/ website/ dashboard). Suggest this in short bullet points._
-
-_Human-wildlife conflict is a serious and growing problem that affects both wildlife conservation and human development. Current solutions are often inadequate, expensive, or unsustainable. They also lack real-time data that can enable proactive and preventive actions. Our solution is to use IoT and AI to create a smart system that can monitor, predict, and prevent human-wildlife conflict. The system can collect and analyze data from various devices, such as sensors, cameras, drones, and satellites. The system can then use AI to detect, identify, and track wildlife and human activities and threats. The system can also use AI to provide alerts, recommendations, or interventions to the relevant stakeholders, such as wildlife managers, farmers, or rangers. Our solution is unique and competitive because it uses IoT and AI to provide a comprehensive and adaptive solution that can address the diverse and dynamic challenges of human-wildlife coexistence. It is also scalable and customizable to different contexts and needs. Our solution has the potential to improve the conservation and welfare of wildlife species, as well as the livelihoods and security of people living with wildlife._
+> Hey Bing, here is a paragraph summary of my idea that I want to create a prototype for then implement/ start building. Can you help me break down the core functionalities of my software solution (app/ website/ dashboard). Suggest this in short bullet points.
+>
+> Human-wildlife conflict is a serious and growing problem that affects both wildlife conservation and human development. Current solutions are often inadequate, expensive, or unsustainable. They also lack real-time data that can enable proactive and preventive actions. Our solution is to use IoT and AI to create a smart system that can monitor, predict, and prevent human-wildlife conflict. The system can collect and analyze data from various devices, such as sensors, cameras, drones, and satellites. The system can then use AI to detect, identify, and track wildlife and human activities and threats. The system can also use AI to provide alerts, recommendations, or interventions to the relevant stakeholders, such as wildlife managers, farmers, or rangers. Our solution is unique and competitive because it uses IoT and AI to provide a comprehensive and adaptive solution that can address the diverse and dynamic challenges of human-wildlife coexistence. It is also scalable and customizable to different contexts and needs. Our solution has the potential to improve the conservation and welfare of wildlife species, as well as the livelihoods and security of people living with wildlife.
 
 ### Sample Response
+![Response for: break down the core functionalities of my software solution](./media/core-functionalities.png)
 
 _Your idea sounds innovative and promising! Here are some of the core functionalities of your software solution:_
 
@@ -37,33 +38,20 @@ _I hope this helps you get started with your project!_
 
 ### Sample Prompt for UI ideas
 
-_Can you suggest some UI ideas that easily provide these core functionalities for the users? If the dashboard needs to be multi-page, you can separate the features for the respective pages. Please include links UI designs with similar examples for additional inspiration_
+> Can you suggest some UI ideas that easily provide these core functionalities for the users? If the dashboard needs to be multi-page, you can separate the features for the respective pages. Please include links UI designs with similar examples for additional inspiration
 
 ### Sample Response for UI ideas
+![Sample response for UI Ideas](./media/ui-ideas.png)
 
-_Sure! Here are some UI ideas for a dashboard that can easily provide the core functionalities of your software solution:_
+_Sure, I can suggest some UI ideas that can easily provide the core functionalities for your software solution. Based on your summary, I think your solution can be divided into four main pages: Dashboard, Devices, Alerts, and Settings. Here are some possible features and examples for each page:_
 
-_**Data collection page** : This page can display real-time data from various devices, such as sensors, cameras, drones, and satellites. It can also allow users to add or remove devices and configure their settings._
+_**Devices** This page can show the list and status of the devices that are connected to your IoT and AI system. You can use different icons, colors, or labels to indicate the device type, status, or battery level..._
 
-_!Data Collection Page_
+_**Alerts** This page can show the alerts, recommendations, or interventions that are generated by your AI system based on the data and analysis results..._
 
-_**Data analysis page** : This page can display visualizations of data analysis results using AI algorithms to detect, identify, and track wildlife and human activities and threats. It can also allow users to customize the visualization settings and filters._
+_**Settings** This page can show the settings and preferences of your IoT and AI system. You can use different menus, tabs, or sliders to allow users to customize the system according to their needs and contexts..._
 
-_!Data Analysis Page_
-
-_**Alerts and notifications page** : This page can display alerts, recommendations, or interventions generated by the system to the relevant stakeholders, such as wildlife managers, farmers, or rangers. It can also allow users to customize the alert settings and filters._
-
-_!Alerts and Notifications Page_
-
-_**Customization page** : This page can allow users to customize the system's settings, such as language, time zone, and notification preferences. It can also allow users to provide feedback and suggestions to improve the system's performance._
-
-_!Customization Page_
-
-_**Comprehensive solution page** : This page can provide an overview of the system's features, benefits, and performance metrics. It can also allow users to access user manuals, FAQs, and support services._
-
-_!Comprehensive Solution Page_
-
-_These are just some ideas to get you started. You can customize the dashboard pages based on your specific needs and requirements. Good luck with your project!_
+_I hope these UI ideas can help you with your software solution. If you have any questions or feedback, please let me know. 😊_
 
 > [!NOTE]
 > Bing chat will provide some links to the UI samples to inspire.
