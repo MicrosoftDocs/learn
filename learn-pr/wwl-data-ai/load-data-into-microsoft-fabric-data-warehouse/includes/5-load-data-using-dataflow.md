@@ -1,4 +1,4 @@
-[Dataflow Gen2](/fabric/data-factory/dataflows-gen2-overview) is the new generation of dataflows. It provides a comprehensive Power Query experience, guiding you through each step of importing data into your dataflow. The process of creating dataflows has been simplified, reducing the number of steps involved.
+[Dataflow Gen2](/fabric/data-factory/dataflows-gen2-overview?azure-portal=true) is the new generation of dataflows. It provides a comprehensive Power Query experience, guiding you through each step of importing data into your dataflow. The process of creating dataflows has been simplified, reducing the number of steps involved.
 
 You can use dataflows in data pipelines to ingest data into a lakehouse or warehouse, or to define a dataset for a Power BI report.
 
@@ -61,6 +61,6 @@ When you select a warehouse as a destination, you can choose the following updat
 
 After you choose your update method, the final step is to publish your dataflow. 
 
-Publishing makes your transformations and data loading operations live, allowing the dataflow to be executed either manually or on a schedule. This process encapsulates your ETL operations into a single, reusable, and schedulable unit, streamlining your data management workflow. 
+Publishing makes your transformations and data loading operations live, allowing the dataflow to be executed either manually or on a schedule. This process encapsulates your ETL operations into a single and reusable unit, streamlining your data management workflow. 
 
 Any changes made in the dataflow take effect when it’s published. So, always ensure to publish your dataflow after making any relevant modifications. 

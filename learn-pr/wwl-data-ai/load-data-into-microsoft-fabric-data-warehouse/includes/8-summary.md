@@ -13,6 +13,6 @@ There’s no one-size-fits-all solution for loading your data. The best approach
 For additional reading, you can refer to the following URLs:
 
 - [Create a Warehouse in Microsoft Fabriv](/fabric/data-warehouse/create-warehouse?azure-portal=true)
-- [Ingest data into the Warehouse](/fabric/data-warehouse/ingest-data)
+- [Ingest data into the Warehouse](/fabric/data-warehouse/ingest-data?azure-portal=true)
 - [Compare the Warehouse and the SQL Endpoint of the Lakehouse](/fabric/data-warehouse/data-warehousing#compare-the-warehouse-and-the-sql-endpoint-of-the-lakehouse?azure-portal=true)
  

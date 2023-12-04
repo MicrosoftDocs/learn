@@ -29,7 +29,7 @@ There are two types of data loads to consider when loading a data warehouse.
 
 An ETL (Extract, Transform, Load) process for a data warehouse doesn't always need both the full load and the incremental load. In some cases, a combination of both methods might be used. The choice between a full load and an incremental load depends on many factors such as the amount of data, the characteristics of the data, and the requirements of the data warehouse.
 
-To learn more about how to perform an incremental load, see [**Incremental load**](/fabric/data-factory/tutorial-incremental-copy-data-warehouse-lakehouse).
+To learn more about how to perform an incremental load, see [**Incremental load**](/fabric/data-factory/tutorial-incremental-copy-data-warehouse-lakehouse?azure-portal=true).
 
 ## Load a dimension table
 
@@ -73,7 +73,7 @@ BEGIN
 END
 ```
 
-The mechanism for detecting changes in source systems is crucial for determining when records are inserted, updated, or deleted. [Change Data Capture (CDC)](/sql/relational-databases/track-changes/about-change-data-capture-sql-server), [change tracking](/sql/relational-databases/track-changes/about-change-tracking-sql-server), and [triggers](/sql/relational-databases/triggers/dml-triggers) are all features available for managing data tracking in source systems such as SQL Server.
+The mechanism for detecting changes in source systems is crucial for determining when records are inserted, updated, or deleted. [Change Data Capture (CDC)](/sql/relational-databases/track-changes/about-change-data-capture-sql-server?azure-portal=true), [change tracking](/sql/relational-databases/track-changes/about-change-tracking-sql-server?azure-portal=true), and [triggers](/sql/relational-databases/triggers/dml-triggers?azure-portal=true) are all features available for managing data tracking in source systems such as SQL Server.
 
 ## Load a fact table
 

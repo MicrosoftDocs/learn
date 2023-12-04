@@ -4,7 +4,7 @@ This is because the Warehouse is powered by the same SQL engine they're familiar
 
 ## Use COPY statement
 
-The [COPY statement](/sql/t-sql/statements/copy-into-transact-sql?view=fabric) serves as the main method for importing data into the Warehouse. It facilitates efficient data ingestion from an external Azure storage account. 
+The [COPY statement](/sql/t-sql/statements/copy-into-transact-sql?azure-portal=true) serves as the main method for importing data into the Warehouse. It facilitates efficient data ingestion from an external Azure storage account. 
 
 It offers flexibility, allowing you to specify the format of the source file, designate a location for storing rows that are rejected during the import process, skip header rows, among other configurable options.
 
@@ -52,12 +52,12 @@ Ensure that all the files have the same structure (that is, same columns in the 
 
 You can load data from various data assets in a workspace, such as other warehouses and lakehouses.
 
-To reference the data asset, ensure that you use [three-part naming](/sql/t-sql/language-elements/transact-sql-syntax-conventions-transact-sql) to combine data from tables on these workspace assets. You can then use `CREATE TABLE AS SELECT` (CTAS) and `INSERT...SELECT` to load the data into the warehouse.
+To reference the data asset, ensure that you use [three-part naming](/sql/t-sql/language-elements/transact-sql-syntax-conventions-transact-sql?azure-portal=true) to combine data from tables on these workspace assets. You can then use `CREATE TABLE AS SELECT` (CTAS) and `INSERT...SELECT` to load the data into the warehouse.
 
 | SQL Statement | Description |
 | --- | --- |
-| [**`CREATE TABLE AS SELECT`**](/sql/t-sql/statements/create-table-as-select-azure-sql-data-warehouse) | Allows you to create a new table based on the output of a `SELECT` statement. This operation is often used for creating a copy of a table or for transforming and loading the results of complex queries. |
-| [**`INSERT...SELECT`**](/sql/t-sql/statements/insert-transact-sql) | Allows you to insert data from one table into another. It’s useful when you want to copy data from one table to another without creating a new table. |
+| [**`CREATE TABLE AS SELECT`**](/sql/t-sql/statements/create-table-as-select-azure-sql-data-warehouse?azure-portal=true) | Allows you to create a new table based on the output of a `SELECT` statement. This operation is often used for creating a copy of a table or for transforming and loading the results of complex queries. |
+| [**`INSERT...SELECT`**](/sql/t-sql/statements/insert-transact-sql?azure-portal=true) | Allows you to insert data from one table into another. It’s useful when you want to copy data from one table to another without creating a new table. |
 
 In a scenario where an analyst needs data from both a warehouse and a lakehouse, they can use this feature to combine the data. They can then load this combined data into the warehouse for analysis. This feature is useful when data is distributed across many assets in a workspace.
 

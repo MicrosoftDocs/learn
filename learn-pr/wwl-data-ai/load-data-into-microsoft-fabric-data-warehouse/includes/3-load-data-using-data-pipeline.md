@@ -17,11 +17,11 @@ There are a few ways to launch the data pipeline editor.
 
 - **From the Warehouse asset -** Select **Get Data**, and then **New data pipeline**. 
 
-    :::image type="content" border="false" source="../media/3-create-data-pipeline.png" alt-text="Screenshot showing how to launch Data Pipeline from the Warehouse asset.":::
+    :::image type="content" border="false" source="../media/3-create-data-pipeline.png" alt-text="Screenshot showing the shortcuts for a few features in the Warehouse asset.":::
 
 There are three options available when creating a pipeline.
 
-:::image type="content" border="false" source="../media/3-build-pipeline.png" alt-text="Screenshot showing how to launch Data Pipeline from the Warehouse asset.":::
+:::image type="content" border="false" source="../media/3-build-pipeline.png" alt-text="Screenshot showing the main loading options when you launch Data Pipeline.":::
 
 | Option | Description |
 | --- | --- |
@@ -47,12 +47,12 @@ After you copy the data, you can use other tasks to further transform and analyz
 
 You can schedule your data pipeline by selecting **Schedule** from the data pipeline editor.
 
-:::image type="content" border="false" source="../media/3-schedule-data-pipeline.png" alt-text="Screenshot showing how to schedule a data pipeline.":::
+:::image type="content" border="false" source="../media/3-schedule-data-pipeline.png" alt-text="Screenshot showing where to schedule a data pipeline from the pipeline designer.":::
 
 You can also configure the schedule by selecting **Settings** in the **Home** menu in the data pipeline editor.
 
-:::image type="content" border="false" source="../media/3-schedule-configuration.png" alt-text="Screenshot showing how to schedule a data pipeline.":::
+:::image type="content" border="false" source="../media/3-schedule-configuration.png" alt-text="Screenshot showing the configuration properties when you schedule a data pipeline.":::
 
 We recommend data pipelines for a code-free or low-code experience due to the graphical user interface. They're ideal for data workflows that run at a schedule, or that connects to different data sources. 
 
-To learn more about data pipelines, see [Ingest data into your Warehouse using data pipelines](/fabric/data-warehouse/ingest-data-pipelines).
+To learn more about data pipelines, see [Ingest data into your Warehouse using data pipelines](/fabric/data-warehouse/ingest-data-pipelines?azure-portal=true).
