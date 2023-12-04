@@ -76,8 +76,8 @@ _Connect your IoT devices, such as sensors, cameras, drones, and satellites, to 
 Bing will give us an overview of the different tools we may need to ensure we successfully implement a product. We can ask Bing for ideas on how we can use this in the project as follows:
 
 > [!NOTE]
->If you're a student, you can have 100USD free Azure credits to use it in your technology. Learn more about it, [here](https://azure.microsoft.com/en-us/free/students/?WT.mc_id=academic-114050-bethanycheum).
-> If you're new to azure, you can sign in and try azure for 30-days, register [here](https://azure.microsoft.com/en-us/free/?WT.mc_id=academic-114050-bethanycheum)
+>If you're a student, you can have 100USD free Azure credits to use it in your technology. Learn more about it, [at Azure for Studens](https://azure.microsoft.com/free/students/?WT.mc_id=academic-114050-bethanycheum).
+> If you're new to azure, you can sign in and try azure for 30-days, register [at Azure free account](https://azure.microsoft.com/free/?WT.mc_id=academic-114050-bethanycheum)
 
 Repeat step 2 for each feature until you have a clear understanding of how you can build the final product.
 
@@ -132,8 +132,8 @@ _I hope these options help you with your deployment. If you need more assistance
 
 Whether you are building a website, an application or an API there are various tools you can utilize to deploy your solution, be sure to modify the prompt to match your needs. Some additional resources you can use to deploy your solution are:
 
-- [Deploy your company website on Azure using Azure Static Web Apps](https://learn.microsoft.com/en-us/training/paths/azure-static-web-apps/?WT.mc_id=academic-114050-bethanycheum)
-- [Deploy your web application with Azure using Azure Web Apps](https://learn.microsoft.com/en-us/training/paths/deploy-a-website-with-azure-app-service/?WT.mc_id=academic-114050-bethanycheum)
-- [Publish your API on Azure](https://learn.microsoft.com/en-us/azure/api-management/import-and-publish?WT.mc_id=academic-114050-bethanycheum)
+- [Deploy your company website on Azure using Azure Static Web Apps](https://learn.microsoft.com/training/paths/azure-static-web-apps/?WT.mc_id=academic-114050-bethanycheum)
+- [Deploy your web application with Azure using Azure Web Apps](https://learn.microsoft.com/training/paths/deploy-a-website-with-azure-app-service/?WT.mc_id=academic-114050-bethanycheum)
+- [Publish your API on Azure](https://learn.microsoft.com/azure/api-management/import-and-publish?WT.mc_id=academic-114050-bethanycheum)
 - [Configure a virtual dev environment for all your software engineers – GitHub Codespaces.](https://github.com/features/codespaces?WT.mc_id=academic-114050-bethanycheum)
-- [Build a database for your application on Azure.](https://learn.microsoft.com/en-us/azure/developer/javascript/database-developer-guide?tabs=MySQL%2Cazure-cli?WT.mc_id=academic-114050-bethanycheum)
+- [Build a database for your application on Azure.](https://learn.microsoft.com/azure/developer/javascript/database-developer-guide?tabs=MySQL%2Cazure-cli?WT.mc_id=academic-114050-bethanycheum)

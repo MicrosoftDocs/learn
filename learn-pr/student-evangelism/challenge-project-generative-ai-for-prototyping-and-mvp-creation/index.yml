@@ -15,7 +15,7 @@ abstract: |
   - In this module you will develop the following skills: Lateral thinking, Visual reading, Out-of-the-box thinking, Problem-solving, Artistic creativity, and Analytical mind
 prerequisites: |
   - Personal account for [Bing Chat](https://www.bing.com/new).
-  - Use [Edge Browser Profiles](https://support.microsoft.com/en-us/topic/sign-in-and-create-multiple-profiles-in-microsoft-edge-df94e622-2061-49ae-ad1d-6f0e43ce6435) to sign in to [Bing Chat](https://www.bing.com/new) and [Bing Image Creator](https://www.bing.com/images/create)
+  - Use [Edge Browser Profiles](https://support.microsoft.com/topic/sign-in-and-create-multiple-profiles-in-microsoft-edge-df94e622-2061-49ae-ad1d-6f0e43ce6435) to sign in to [Bing Chat](https://www.bing.com/new) and [Bing Image Creator](https://www.bing.com/images/create)
   - Pen and paper for your sketch prototype
 iconUrl: /training/achievements/generic-badge.svg
 levels:
@@ -27,7 +27,6 @@ roles:
 - student
 products:
 - bing
-- edge
 units:
 - learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation.introduction
 - learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation.prepare
