@@ -22,7 +22,7 @@ Indexes are often critical to query performance for both SQL Server and Azure SQ
 
 ## In-memory OLTP
 
-Online transaction processing (OLTP) captures, stores, and processes data from transactions in real time. In-memory OLTP is a capability for transaction latency sensitive applications, such as applications that involve a high number of concurrent users who are modifying data. Here are important points related to in-memory OLTP and Azure SQL:
+The important factor that characterizes on-line transaction processing (OLTP) is an application that reads and writes data with many concurrent transactions in real time. In-memory OLTP is a capability for transaction latency sensitive applications, such as applications that involve a high number of concurrent users who are modifying data. Here are important points related to in-memory OLTP and Azure SQL:
 
 - Memory-optimized tables are only available in Business Critical tiers.
 - The memory-optimized FILEGROUP is pre-created in Azure SQL Database and SQL Managed Instance when a database is created (even for general purpose tiers).
@@ -33,9 +33,9 @@ Online transaction processing (OLTP) captures, stores, and processes data from t
 With SQL Server, you often use partitions for tables with a large number of rows to improve performance by sub-dividing data by a column in the table. Consider these points for partitions with Azure SQL:
 
 - Partitions are supported for Azure SQL Database and SQL Managed Instance.
-- You can only use filegroups with partitions with SQL Managed Instance.
+- You can only use filegroups with partitions on SQL Managed Instance.
 
-## SQL Server 2019 performance enhancements
+## Recent SQL Server performance enhancements
 
 Many of the performance features in SQL Server 2019, such as intelligent query processing, are also available in Azure SQL. However, there are some exceptions. For example, `tempdb` metadata optimization isn't yet available for Azure SQL.
 

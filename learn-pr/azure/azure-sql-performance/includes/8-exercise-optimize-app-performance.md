@@ -4,7 +4,7 @@ In this exercise, you'll observe a new performance scenario and resolve it by op
 
 In some cases, migrating an existing application and SQL query workload to Azure can uncover opportunities to optimize and tune queries.
 
-To support a new extension to a website for `AdventureWorks` orders to provide a rating system from customers, you need to add a new table for a heavy set of concurrent INSERT activity. You've tested the SQL query workload on a development computer with SQL Server 2019 that has a local SSD drive for the database and transaction log.
+To support a new extension to a website for `AdventureWorks` orders to provide a rating system from customers, you need to add a new table for a heavy set of concurrent INSERT activity. You've tested the SQL query workload on a development computer with SQL Server 2022 that has a local SSD drive for the database and transaction log.
 
 When you move your test to Azure SQL Database by using the general purpose tier (eight vCores), the INSERT workload is slower. Should you change the service objective or tier to support the new workload, or should you look at the application?
 
@@ -103,7 +103,7 @@ With these queries, you can observe the following facts:
 
 - Many requests constantly have a `wait_type` of WRITELOG, with a value > 0.
 - The `WRITELOG` wait type is one of the highest counts for wait types.
-- The average time to write to the transaction log is somewhere around 2 ms.
+- The average time to write to the transaction log (the **avg_tlog_io_write_ms** column in the *tlog_io.sql* result set) is somewhere around 2 ms.
 
 The duration of this workload on a SQL Server 2019 instance with an SSD drive is approximately 10-12 seconds. The total duration on Azure SQL Database with a Gen5 v8 core is approximately 25 seconds.
 

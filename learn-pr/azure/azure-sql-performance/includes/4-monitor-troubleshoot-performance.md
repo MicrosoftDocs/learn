@@ -18,7 +18,9 @@ Azure SQL provides nearly the same extended events infrastructure as SQL Server,
 
 ### Lightweight query profiling
 
-You can use lightweight query profiling to examine the query plan and running state of an active query. This is a key feature to debug query performance for statements as they are running. This capability cuts down the time for you to solve performance problems, compared to using tools like extended events to trace query performance. You can access lightweight query profiling through DMVs, and it's on by default for Azure SQL as it is for SQL Server 2019.
+Lightweight profiling is an advanced method to troubleshoot scenarios that require retrieval of the actual execution plan for in-flight requests and high-value queries. Due to its low overhead, any server that's not already CPU bound can run lightweight profiling continuously, and allow database professionals to tap into any running execution at any time; for example, using the Activity Monitor in SQL Server Management Studio (SSMS) or directly querying **sys.dm_exec_query_profiles** or **dm_exec_query_statistics_xml**.
+
+You can use lightweight query profiling to examine the query plan and running state of an active query. This is a key feature to debug query performance for statements as they are running. This capability cuts down the time for you to solve performance problems, compared to using tools like extended events to trace query performance. You can access lightweight query profiling through DMVs, and it's on by default for Azure SQL as it is for SQL Server 2019 and later versions.
 
 ### Query plan debug capabilities
 
@@ -94,7 +96,7 @@ You can use extended events SQL Managed Instance, just like SQL Server, by creat
 - File targets are supported with Azure Blob storage because you don't have access to the underlying operating system disks.
 - Some specific events are added for SQL Managed Instance to trace events specific to the management and execution of the instance.
 
-You can use SSMS or T-SQL to create and start sessions. You can use SSMS to view extended event session target data or the system function **sys.fn_xe_file_target_read_file**. SSMS's ability to view live data is supported for SQL Managed Instance.
+You can use SSMS or T-SQL to create and start sessions. You can use SSMS to view extended event session target data or the system function `sys.fn_xe_file_target_read_file`. SSMS's ability to view live data is supported for SQL Managed Instance.
 
 ## Performance scenarios for Azure SQL
 
@@ -177,14 +179,14 @@ To perform analysis on waiting scenarios, you'd typically look at the following 
 
 - `sys.dm_os_waiting_tasks`
 
-    Queries that use parallelism use multiple tasks for a particular query. You might need to use this DMV to find wait types for a particular task for a specific query.
+    You can use this DMV to find wait types for a particular task for a specific query that is currently executing, perhaps to see why it is taking longer than normal. `sys.dm_os_waiting_tasks` contains the live wait stats that sys.dm_os_wait_stats aggregates over time.
 
 - Query Store
 
     Query Store provides reports and catalog views that show an aggregation of the top waits for query plan execution. It's important to know that a wait of **CPU** is equivalent to a *running* problem.
 
 > [!TIP]
-> You can use extended events for any running or waiting scenarios. To do so, you must set up an extended events session to trace queries. This method to debug a performance problem can be considered heavy.
+> You can use extended events for any running or waiting scenarios. To do so, you must set up an extended events session to trace queries. This method to debug a performance problem is more advanced and can return a lot of information in exchange for more performance overhead than DMVs.
 
 ### Scenarios specific to Azure SQL
 
@@ -201,7 +203,7 @@ Azure SQL can use log rate governance to enforce resource limits on transaction 
 
 #### Worker limits
 
-SQL Server uses a worker pool of threads but has limits on the maximum number of workers. Applications with a large number of concurrent users might need a certain number of workers. Keep these points in mind on how worker limits are enforced for Azure SQL Database and SQL Managed Instance:
+SQL Server uses a worker pool of threads but has limits on the maximum number of workers. Applications with a large number of concurrent users might approach the worker limits enforced for Azure SQL Database and SQL Managed Instance:
 
 - Azure SQL Database has limits based on service tier and size. If you exceed this limit, a new query receives an error.
 - At the current time, SQL Managed Instance uses `max worker threads`, so workers past this limit might see `THREADPOOL` waits.

@@ -6,7 +6,7 @@ Intelligent performance for Azure SQL includes intelligent query processing, aut
 
 Intelligent query processing (IQP) is a suite of new capabilities built into the query processor. You enable it by using the latest database compatibility level. Applications can gain performance by using the latest database compatibility level. There are no code changes required. An example of IQP is *table variable deferred compilation* to help make queries that use table variables run faster.
 
-Azure SQL Database and Azure SQL Managed Instance support the same database compatibility level required to use IQP (150) as SQL Server 2019.
+Azure SQL Database and Azure SQL Managed Instance support the same database compatibility level required to use IQP as SQL Server 2019.
 
 ## Automatic plan correction
 
@@ -31,15 +31,15 @@ The main scenario automatic tuning is designed to address pertains to indexes. A
 
 Automatic tuning for Azure SQL Database takes a conservative approach to recommending indexes. This means that recommendations that might appear in a DMV like **sys.dm_db_missing_index_details**, or a query show plan, might not show up immediately as recommendations for automatic tuning. Automatic tuning services monitor queries over time and use machine-learning algorithms to make recommendations to truly affect query performance.
 
-Be aware that automatic tuning for index recommendations doesn't account for any overhead performance an index can cause on your operations, such as inserts, updates, or deletes.
+Be aware that automatic tuning for index recommendations doesn't account for any overhead performance an index can cause on your operations, such as inserts, updates, or deletes. Usually, the new nonclustered indexes that the automatic indexes feature create have a major positive performance impact.
 
 Parameterized queries represent an additional scenario for automatic tuning. Queries with non-parameterized values can lead to performance overhead, because the execution plan is recompiled each time the non-parameterized values are different. In many cases, the same queries with different parameter values generate the same execution plans. These plans, however, are still separately added to the plan cache. The process of recompiling execution plans uses database resources, increases the query duration time, and overflows the plan cache. These events, in turn, cause plans to be evicted from the cache.
 
-You can alter this SQL Server behavior by setting the forced parameterization option on the database (run the `ALTER DATABASE` T-SQL statement and use the `PARAMETERIZATION FORCED` option). Automatic tuning can analyze a query performance workload against a database over time and recommend forced parameterization for the database. If you observe performance degradation over time, the option is disabled.
+You can use [Parameter Sensitive Plan (PSP) optimization](/sql/relational-databases/performance/parameter-sensitive-plan-optimization) to address this scenario. PSP optimization automatically enables multiple, active cached plans for a single parameterized statement. Cached execution plans accommodate different data sizes based on the customer-provided runtime parameter values.
 
 ## Example of indexes with automatic tuning in Azure SQL Database
 
-The following is an example from the Azure portal, in which indexes are recommended for a database based on workload analysis over time.
+The following is an example from the Azure portal, in which indexes are recommended for a database based on workload analysis over time. We haven't sent enough activity to your sandbox Azure SQL Database to generate recommendations like this yet. `CREATE INDEX` recommendations are generated over time as your workload is captured, and not in the small time frame of this exercise.
 
 :::image type="content" source="../media/9-index-recommendation-notification.png" alt-text="Screenshot of index recommendation notification.":::
 

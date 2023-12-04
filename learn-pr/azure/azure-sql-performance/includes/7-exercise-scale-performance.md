@@ -28,6 +28,9 @@ To scale performance for a problem that appears to be a CPU capacity problem, yo
 
     Select **Execute** to run this T-SQL batch.
 
+    > [!NOTE]
+    > Running the preceding query flushes the in-memory portion of the Query Store data to disk.
+
 1. Open the script  **get_service_objective.sql** in SSMS. Your query editor window should look like the following text:
 
     ```sql
@@ -107,7 +110,7 @@ Now that the database has more CPU capacity, let's run the workload we did in th
     SELECT * FROM sys.dm_db_resource_stats;
     ```
 
-    You should see that the average CPU resource usage has decreased from the almost 100 percent usage in the previous exercise.
+    You should see that the average CPU resource usage has decreased from the almost 100 percent usage in the previous exercise. Note that resizing causes d`m_db_resource_stats` to reset, when normally it keeps one hour of activity.
 
 1. Using SSMS, run the same query from the first exercise of this module to observe results from the script **dmexecrequests.sql**.
 
@@ -133,7 +136,7 @@ Let's look at the same Query Store reports as we did in the previous exercise.
 
     You will now see two queries (`query_id`). These are the same query, but show up as different `query_id` values in the Query Store, because the scale operation required a restart and the query had to be recompiled. You can see in the report the overall and average duration was significantly less.
 
-1. Look also at the **Query Wait Statistics** report as you did in the previous exercise. You can see the overall average wait time for the query is less, and it's a lower percentage of the overall duration. This is a good indication that the CPU isn't as much of a resource bottleneck when the database had a lower number of vCores:
+1. Look also at the **Query Wait Statistics** report and select the **CPU wait** bar. You can see the overall average wait time for the query is less, and it's a lower percentage of the overall duration. This is a good indication that the CPU isn't as much of a resource bottleneck when the database had a lower number of vCores:
 
     :::image type="content" source="../media/7-ssms-top-wait-stats-query-faster.png" alt-text="Screenshot of top wait statistics results running faster.":::
 
