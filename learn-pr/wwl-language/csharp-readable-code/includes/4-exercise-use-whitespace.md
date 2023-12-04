@@ -129,7 +129,7 @@ The C# compiler ignores whitespace. To understand how whitespace is ignored, and
 
     Your first line of whitespace is used to separate the declaration of the `dice` variable from the code lines used to assign values to your roll variables. This separation makes it easier to see how `dice` is being used in your code.
 
-    Your next line of whitespace separates the declaration of your roll variables from the declaration of `total`. Grouping the declaration of your three roll variables is helpful in two ways. First, it creates a group of code lines that includes related variables. Second, the variable names are so similar and the declaration follows the same pattern. So,grouping them together draws your eye to the similarities and helps to expose the differences.
+    Your next line of whitespace separates the declaration of your roll variables from the declaration of `total`. Grouping the declaration of your three roll variables is helpful in two ways. First, it creates a group of code lines that includes related variables. Second, the variable names are so similar and the declaration follows the same pattern. So, grouping them together draws your eye to the similarities and helps to expose the differences.
 
     Finally, your third line of whitespace separates another group of related statements from your nested `if` statements. The group of statements that includes the declaration of `total` and the `Console.WriteLine()` method is related by purpose rather than appearance. Your code is focused on the total value achieved by the three dice and whether the roll included doubles or triples. These lines are related because you need to calculate `total` and report the results of the roll to the user.
 
