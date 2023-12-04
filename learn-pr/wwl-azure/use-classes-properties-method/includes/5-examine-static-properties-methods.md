@@ -89,6 +89,6 @@ house.NumberOfHouses
 house.AddHouseToDevProject();
 ```
 
-As you can see, in the static example the House class isn't "newing" or creating an instance of the House object. It only uses the class name (which is the same thing as they type name) followed by the name of the static method to access the property or method. The House class isn't being instantiated.
+As you can see, in the static example the House class isn't creating an instance of the House object. It only uses the class name (which is the same thing as they type name) followed by the name of the static method to access the property or method. The House class isn't being instantiated.
 
 Static classes, properties, and methods are global and do not belong to a specific instance of a class. As such, you don't need to instantiate the class they belong to in order to use them. Just remember, because they don't belong to individual instantiations of a class, your code will have that one buck to store and retrieve data from.

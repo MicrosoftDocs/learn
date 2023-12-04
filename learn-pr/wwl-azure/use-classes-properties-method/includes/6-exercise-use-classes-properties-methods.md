@@ -274,7 +274,7 @@ This exercise is a chance for you to practice putting it all together before mov
 
 1. Run your code. Your output should look like the following.
 
-    ![Screenshot showing Visual Studio output.](../media/output-sqrfeet.jpg)
+    ![Screenshot showing Visual Studio output.](../media/output-square-feet.jpg)
 
 ## Recap
 
