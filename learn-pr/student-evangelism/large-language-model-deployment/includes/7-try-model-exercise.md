@@ -57,30 +57,30 @@ In this next exercise, you will ask your LLM to organize your text as a table wh
 
 1. Clear the completions text box then copy the following text and paste it there.
 
-```text
-
-There are many fruits that were found on the recently discovered planet Goocrux. There are neoskizzles that grow there, which are purple and taste like candy. There are also loheckles, which are a grayish blue fruit and are very tart, a little bit like a lemon. Pounits are a bright green color and are more savory than sweet. There are also plenty of loopnovas which are a neon pink flavor and taste like cotton candy. Finally, there are fruits called glowls, which have a very sour and bitter taste which is acidic and caustic, and a pale orange tinge to them.
-
-Please make a table summarizing the fruits from Goocrux
-
-| Fruit | Color | Flavor |
-| Neoskizzles | Purple | Sweet |
-| Loheckles | Grayish blue | Tart |
-
-```
+    ```text
+    
+    There are many fruits that were found on the recently discovered planet Goocrux. There are neoskizzles that grow there, which are purple and taste like candy. There are also loheckles, which are a grayish blue fruit and are very tart, a little bit like a lemon. Pounits are a bright green color and are more savory than sweet. There are also plenty of loopnovas which are a neon pink flavor and taste like cotton candy. Finally, there are fruits called glowls, which have a very sour and bitter taste which is acidic and caustic, and a pale orange tinge to them.
+    
+    Please make a table summarizing the fruits from Goocrux
+    
+    | Fruit | Color | Flavor |
+    | Neoskizzles | Purple | Sweet |
+    | Loheckles | Grayish blue | Tart |
+    
+    ```
 
 1. Select **Generate**. You should see an output similar to this text:
 
-```text
-
-| Fruit | Color | Flavor |
-| Neoskizzles | Purple | Sweet |
-| Loheckles | Grayish blue | Tart |
-| Pounits | Bright green | Savory |
-| Loopnovas | Neon pink | Cotton candy |
-| Glowls | Pale orange | Sour/Bitter |
-
-```
+    ```text
+    
+    | Fruit | Color | Flavor |
+    | Neoskizzles | Purple | Sweet |
+    | Loheckles | Grayish blue | Tart |
+    | Pounits | Bright green | Savory |
+    | Loopnovas | Neon pink | Cotton candy |
+    | Glowls | Pale orange | Sour/Bitter |
+    
+    ```
 
 In this example, the model is primed with the desired output format: a header row, and a couple of examples.
 
@@ -90,28 +90,28 @@ You’ve seen how an LLM can produce a table given some text. You can take this 
 
 1. Clear the completions text box then copy the following text and paste it there.
 
-```text
-
-There are many fruits that were found on the recently discovered planet Goocrux. There are neoskizzles that grow there, which are purple and taste like candy. There are also loheckles, which are a grayish blue fruit and are very tart, a little bit like a lemon. Pounits are a bright green color and are more savory than sweet. There are also plenty of loopnovas which are a neon pink flavor and taste like cotton candy. Finally, there are fruits called glowls, which have a very sour and bitter taste which is acidic and caustic, and a pale orange tinge to them.
-
-Please make a table summarizing the fruits from Goocrux, Also make a JSON array summarizing the fruits from Goocrux.
-
-| Fruit | Color | Flavor |
-| Neoskizzles | Purple | Sweet |
-| Loheckles | Grayish blue | Tart |
-
-```
+    ```text
+    
+    There are many fruits that were found on the recently discovered planet Goocrux. There are neoskizzles that grow there, which are purple and taste like candy. There are also loheckles, which are a grayish blue fruit and are very tart, a little bit like a lemon. Pounits are a bright green color and are more savory than sweet. There are also plenty of loopnovas which are a neon pink flavor and taste like cotton candy. Finally, there are fruits called glowls, which have a very sour and bitter taste which is acidic and caustic, and a pale orange tinge to them.
+    
+    Please make a table summarizing the fruits from Goocrux, Also make a JSON array summarizing the fruits from Goocrux.
+    
+    | Fruit | Color | Flavor |
+    | Neoskizzles | Purple | Sweet |
+    | Loheckles | Grayish blue | Tart |
+    
+    ```
 
 1. Select **Generate**. You should see an output similar to this text:
 
-```json
-
-| Loopnovas | Neon pink | Cotton candy | 
-| Glowls | Pale orange | Sour/Bitter | 
-
-` { "fruits": [ { "fruit": "Neoskizzles", "color": "Purple", "flavor": "Sweet" }, { "fruit": "Loheckles", "color": "Grayish blue", "flavor": "Tart" }, { "fruit": "Pounits", "color": "Bright green", "flavor": "Savory" }, { "fruit": "Loopnovas", "color": "Neon pink", "flavor": "Cotton candy" }, { "fruit": "Glowls", "color": "Pale orange", "flavor": "Sour/Bitter" } ]
-
-```
+    ```json
+    
+    | Loopnovas | Neon pink | Cotton candy | 
+    | Glowls | Pale orange | Sour/Bitter | 
+    
+    ` { "fruits": [ { "fruit": "Neoskizzles", "color": "Purple", "flavor": "Sweet" }, { "fruit": "Loheckles", "color": "Grayish blue", "flavor": "Tart" }, { "fruit": "Pounits", "color": "Bright green", "flavor": "Savory" }, { "fruit": "Loopnovas", "color": "Neon pink", "flavor": "Cotton candy" }, { "fruit": "Glowls", "color": "Pale orange", "flavor": "Sour/Bitter" } ]
+    
+    ```
 
 In this example, the model returned a JSON array of the fruit and their attributes following the JSON format. It’s important to remember that an LLM can both give you *what* you want and *how* you want it.
 
@@ -121,26 +121,26 @@ In this exercise, you will see how an LLM is able to sort your content into diff
 
 1. Clear the completions text box then copy the following text and paste it there.
 
-```text
-
-Classify the following news headline into 1 of the following categories: Business, Tech, Politics, Sport, Entertainment
-
-Headline 1: Donna Steffensen Is Cooking Up a New Kind of Perfection. The Internet's most beloved cooking guru has a buzzy new book and a fresh new perspective.
-Category: Entertainment
-
-Headline 2: Major Retailer Announces Plans to Close Over 100 Stores.
-Category:
-
-```
+    ```text
+    
+    Classify the following news headline into 1 of the following categories: Business, Tech, Politics, Sport, Entertainment
+    
+    Headline 1: Donna Steffensen Is Cooking Up a New Kind of Perfection. The Internet's most beloved cooking guru has a buzzy new book and a fresh new perspective.
+    Category: Entertainment
+    
+    Headline 2: Major Retailer Announces Plans to Close Over 100 Stores.
+    Category:
+    
+    ```
 
 1. Select **Generate**. You should see an output similar to this text:
 
-```text
-
-Headline 2: Major Retailer Announces Plans to Close Over 100 Stores
-Category: Business
-
-```
+    ```text
+    
+    Headline 2: Major Retailer Announces Plans to Close Over 100 Stores
+    Category: Business
+    
+    ```
 
 In this example, you provided one example of a headline and a category and ask the model to classify a second example. This is an example of "one-shot learning": with just one example, the model can generalize to classify a new example.
 
@@ -160,23 +160,23 @@ Summarizing content can be hugely helpful if you want to quickly understand what
 
 1. Clear the completions text box then copy the following text and paste it there.
 
-```text
-
-At Microsoft, we have been on a quest to advance AI beyond existing techniques, by taking a more holistic, human-centric approach to learning and understanding. As Chief Technology Officer of Azure AI Cognitive Services, I have been working with a team of amazing scientists and engineers to turn this quest into a reality. In my role, I enjoy a unique perspective in viewing the relationship among three attributes of human cognition: monolingual text (X), audio or visual sensory signals, (Y) and multilingual (Z). At the intersection of all three, there’s magic—what we call XYZ-code as illustrated in Figure 1—a joint representation to create more powerful AI that can speak, hear, see, and understand humans better.
-
-We believe XYZ-code will enable us to fulfill our long-term vision: cross-domain transfer learning, spanning modalities and languages. The goal is to have pre-trained models that can jointly learn representations to support a broad range of downstream AI tasks, much in the way humans do today. Over the past five years, we have achieved human performance on benchmarks in conversational speech recognition, machine translation, conversational question answering, machine reading comprehension, and image captioning. These five breakthroughs provided us with strong signals toward our more ambitious aspiration to produce a leap in AI capabilities, achieving multi-sensory and multilingual learning that is closer in line with how humans learn and understand. I believe the joint XYZ-code is a foundational component of this aspiration, if grounded with external knowledge sources in the downstream AI tasks.
-
-TL;DR
-
-```
+    ```text
+    
+    At Microsoft, we have been on a quest to advance AI beyond existing techniques, by taking a more holistic, human-centric approach to learning and understanding. As Chief Technology Officer of Azure AI Cognitive Services, I have been working with a team of amazing scientists and engineers to turn this quest into a reality. In my role, I enjoy a unique perspective in viewing the relationship among three attributes of human cognition: monolingual text (X), audio or visual sensory signals, (Y) and multilingual (Z). At the intersection of all three, there’s magic—what we call XYZ-code as illustrated in Figure 1—a joint representation to create more powerful AI that can speak, hear, see, and understand humans better.
+    
+    We believe XYZ-code will enable us to fulfill our long-term vision: cross-domain transfer learning, spanning modalities and languages. The goal is to have pre-trained models that can jointly learn representations to support a broad range of downstream AI tasks, much in the way humans do today. Over the past five years, we have achieved human performance on benchmarks in conversational speech recognition, machine translation, conversational question answering, machine reading comprehension, and image captioning. These five breakthroughs provided us with strong signals toward our more ambitious aspiration to produce a leap in AI capabilities, achieving multi-sensory and multilingual learning that is closer in line with how humans learn and understand. I believe the joint XYZ-code is a foundational component of this aspiration, if grounded with external knowledge sources in the downstream AI tasks.
+    
+    TL;DR
+    
+    ```
 
 1. Select **Generate**. You should see an output similar to this text:
 
-```text
-
-At the intersection of monolingual text, audio or visual sensory signals, and multilingual capabilities lies the "XYZ-code," a joint representation allowing for the transfer of learning in AI systems, according to Microsoft's Xuedong Huang. The CTO of Azure AI Cognitive Services said the company's aim is to create pre-trained models that will enable machines to jointly learn representations and support a broad range of downstream AI tasks.
-
-```
+    ```text
+    
+    At the intersection of monolingual text, audio or visual sensory signals, and multilingual capabilities lies the "XYZ-code," a joint representation allowing for the transfer of learning in AI systems, according to Microsoft's Xuedong Huang. The CTO of Azure AI Cognitive Services said the company's aim is to create pre-trained models that will enable machines to jointly learn representations and support a broad range of downstream AI tasks.
+    
+    ```
 
 In this example, you used TL;DR (that is, too long; didn't read) to make the model create a short summary of a larger piece of text.
 
@@ -186,18 +186,18 @@ Even though the outputs are generated based on frequencies of similar content in
 
 1. Clear the completions text box then copy the following text and paste it there.
 
-```text
-Write a limerick about the Python programming language
-```
+    ```text
+    Write a limerick about the Python programming language
+    ```
 
 1. Select **Generate**. You should see an output similar to this text:
 
-```text
-There once was a language named Python
-Whose syntax was easy and quite fun
-It could handle big data
-And was used by NASA
-So learn it and you'll be second to none!
-```
+    ```text
+    There once was a language named Python
+    Whose syntax was easy and quite fun
+    It could handle big data
+    And was used by NASA
+    So learn it and you'll be second to none!
+    ```
 
 How was the limerick? If you don't like it, you can always ask the completions playground to generate a new one using the blue circular arrow icon.
