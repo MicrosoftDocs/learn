@@ -17,7 +17,7 @@ The following diagram gives a high-level view of Azure Monitor:
 * On the left are the sources of monitoring data that populate these data stores.
 * On the right are the different functions that Azure Monitor performs with this collected data such as analysis, alerting, and streaming to external systems.
 
-:::image type="content" source="../media/m09-l01-monitoring-logging-azure-monitor-overview-7616d1b6.png" alt-text="Diagram that shows the different functions that Azure Monitor performs.":::
+:::image type="content" source="../media/examine-azure-iot-solution-monitoring-logging-overview.png" alt-text="Diagram that shows the different functions that Azure Monitor performs.":::
 
 ## Monitoring data platform
 
