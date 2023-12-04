@@ -17,7 +17,7 @@ prerequisites: |
   *   Experience working with Active Directory Domain Services (AD DS)
   *   Experience working with Azure Active Directory (Azure AD)
 summary: |
-  Learn to use monitoring and troubleshooing tools, processes, and best practices to streamline app performance and availabilty of your Windows Server environment and your Windows Server IaaS VMs and hybrid instances.
+  Learn to use monitoring and troubleshooting tools, processes, and best practices to streamline app performance and availability of your Windows Server environment and your Windows Server IaaS VMs and hybrid instances.
 iconUrl: /training/achievements/monitor-and-troubleshoot-windows-server-environments.svg
 levels:
 - intermediate
@@ -35,7 +35,6 @@ subjects:
 modules:
 - learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances
 - learn.azure.monitor-azure-vm-using-diagnostic-data
-- learn.monitor-vm-performance-using-azure-monitor-for-vms
 - learn.wwl.monitor-windows-server-performance
 - learn.wwl.manage-monitor-event-logs
 - learn.wwl.implement-windows-server-auditing-diagnostics
