@@ -7,7 +7,7 @@ metadata:
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: sql-db-mi
   ms.subservice: performance
 title: Deliver consistent performance with Azure SQL
