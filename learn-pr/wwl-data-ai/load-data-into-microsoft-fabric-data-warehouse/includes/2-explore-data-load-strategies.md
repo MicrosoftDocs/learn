@@ -92,4 +92,4 @@ JOIN Dim_Date d ON o.OrderDate = d.Date
 JOIN Dim_Product p ON o.ProductID = p.ProductID;
 ```
 
-One way to link the two phrases is to use a transitional phrase or word to connect the ideas. For example, you could say: "In this example, we use a `JOIN` operation to look up the `DateKey` and `ProductKey` values in the *Dim_Date* and *Dim_Product* tables, respectively, and then insert the data into the *Fact_Sales* table. However, it is important to note that the complexity of the loading process depends on several factors, including the amount of data, the transformation requirements, error handling, schema differences, and performance." This connects the two phrases by using the word "however" to introduce a contrasting idea.
+In this example, we use a `JOIN` operation to look up the `DateKey` and `ProductKey` values in the *Dim_Date* and *Dim_Product* tables, respectively, and then insert the data into the *Fact_Sales* table. However, it is important to note that the complexity of the loading process depends on several factors, including the amount of data, the transformation requirements, error handling, schema differences, and performance.
