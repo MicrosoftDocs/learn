@@ -30,7 +30,7 @@ quiz:
     - content: "The base branch becomes unstable until the conflicts are resolved. As a result, associated builds probably can't succeed."
       isCorrect: false
       explanation: "When a merge conflict happens, the merge is rejected and the base branch is unchanged. The branch developer merges the differences into their branch before retrying the upstream merge."
-    - content: "This is a trick question. Merge conflicts aren't bad; they're an inevitable part of distributed version control."
+    - content: "This question is a trick. Merge conflicts aren't bad; they're an inevitable part of distributed version control."
       isCorrect: true
       explanation: "As projects scale, the probability of multiple people changing the same files grows. Merge conflicts are raised to avoid code being unintentionally overwritten."
     - content: "Merge conflicts are embarrassing for the offending developer because everyone thinks they were careless."
