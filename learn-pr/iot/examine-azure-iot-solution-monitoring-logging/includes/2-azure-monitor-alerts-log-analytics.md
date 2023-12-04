@@ -55,9 +55,6 @@ Alert rules in Azure Monitor use action groups, which contain unique sets of rec
 
 The unified alert experience in Azure Monitor includes alerts previously managed by Log Analytics and Application Insights. In the past, Azure Monitor, Application Insights, Log Analytics, and Service Health had separate alerting capabilities. Over time, Azure improved and combined both the user interface and different methods of alerting. The consolidation is still in process.
 
-> [!NOTE]
-> You can view classic alerts only in the classic alerts user screen in the Azure portal. You get this screen from the View classic alerts button on the Alerts blade of IoT Hub in the Azure portal.
-
 #### Overview of alerts in Azure
 
 The following diagram represents the flow of alerts.

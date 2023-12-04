@@ -2,18 +2,11 @@ IoT Hub metrics provide you with access to data that describes the state of the 
 
 Metrics are enabled by default.
 
-> [!NOTE]
-> You can use IoT Hub metrics to view information about IoT Plug and Play devices connected to your IoT Hub. IoT Plug and Play devices are part of the IoT Plug and Play public preview.
-
 ## How to view IoT Hub metrics
 
 On the Overview blade of your IoT hub, select **Metrics**.
 
-:::image type="content" source="../media/m09-l01-monitoring-logging-enable-metrics-1-ad5cfc68.png" alt-text="Screenshot that shows where to find metrics for IoT Hub using the Azure portal.":::
-
 On the Metrics blade, you can view the metrics for your IoT hub and create custom views of your metrics.
-
-:::image type="content" source="../media/m09-l01-monitoring-logging-enable-metrics-2-ce3e10af.png" alt-text="Screenshot that shows how to view the metrics for IoT Hub.":::
 
 To send your metrics data to an Event Hubs endpoint or an Azure Storage account, select **Diagnostics settings**, then select **Add diagnostic setting**.
 
