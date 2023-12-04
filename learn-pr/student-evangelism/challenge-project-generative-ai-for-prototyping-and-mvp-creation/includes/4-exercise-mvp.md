@@ -71,7 +71,7 @@ _Choose a suitable IoT platform that can handle the data collection, processing,
 
 _Connect your IoT devices, such as sensors, cameras, drones, and satellites, to the IoT platform using the appropriate IoT protocols, such as MQTT, CoAP, or HTTP. [You can use tools like Arduino](https://bing.com/search?q=tools+and+frameworks+for+IoT+and+AI+development)[2](https://www.geeksforgeeks.org/top-iot-tools/)[, Kinoma](https://bing.com/search?q=tools+and+frameworks+for+IoT+and+AI+development)[2](https://www.geeksforgeeks.org/top-iot-tools/)[, or Mainspring](https://bing.com/search?q=tools+and+frameworks+for+IoT+and+AI+development)[2](https://www.geeksforgeeks.org/top-iot-tools/) to build and program your IoT devices..._
 
-![Image showing sample response](../media/sample-response.png)
+![Image showing sample response](./media/sample-response.png)
 
 Bing will give us an overview of the different tools we may need to ensure we successfully implement a product. We can ask Bing for ideas on how we can use this in the project as follows:
 
@@ -102,7 +102,7 @@ _Can you guide me on how to create the calendar of emotions on react native?_
 
 #### Sample Response on different components/libraries
 
-![Resources for calendar of emotions](../media/emotional-calendar.png)
+![Resources for calendar of emotions](./media/emotional-calendar.png)
 
 As a student you have free access to [GitHub Copilot](https://education.github.com/pack), that will be your coding buddy as you bring your MVP to life. You can use GitHub Copilot on various IDEs including Visual Studio, JetBrains, Neovim and Visual Studio Code.
 

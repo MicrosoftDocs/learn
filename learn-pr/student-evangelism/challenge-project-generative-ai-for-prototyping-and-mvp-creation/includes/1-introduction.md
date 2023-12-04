@@ -1,7 +1,7 @@
 
 Imagine if you could use artificial intelligence to generate prototypes for your ideas. What if you could simply describe your idea in natural language, and let AI do the rest? That is the goal of this module, that is designed to help you create your own prototype with the help of Generative AI.
 
-![can AI help with prototyping? - yes](../media/prototype-help.png)
+![can AI help with prototyping? - yes](./media/prototype-help.png)
 
 Whether you want to build a mobile app, a website, a game, or a physical device, today, you can use AI to help you generate a prototype that matches your description from natural language. Our goal is to enable creators to explore their ideas without being limited by their technical skills or resources, and to foster a culture of innovation and creativity.
 

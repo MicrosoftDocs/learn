@@ -77,11 +77,11 @@ Grab your pen and paper and try to sketch your UI.
 
 ### [Optional] Share your mock-up with Bing chat for more visual inspiration
 
-![Example of sharing your mockup](../media/mockup.png)
+![Example of sharing your mockup](./media/mockup.png)
 
-![Ideas on wireframing tools](../media/prototyping-tools.png)
+![Ideas on wireframing tools](./media/prototyping-tools.png)
 
-![Sample prototypes](../media/sample-prototypes.png)
+![Sample prototypes](./media/sample-prototypes.png)
 
 ## Next Steps
 
