@@ -22,16 +22,16 @@ Azure Firewall policy is a top-level resource that contains security and operati
     |Rule collection action|**Allow**|
     |Rule collection group| **DefaultApplicationRuleCollectionGroup**|
 
-- Under **rules** use the values in the following table and select **Add** 
+    - Under **rules** use the values in the following table and select **Add** 
 
-    |Property|  Value |
-    |:---------|:---------|
-    |Name	|**AllowAzurePipelines**|
-    |Source type|**IP address**|
-    |Source|**10.1.0.0/23**|
-    |Protocol|**https** |
-    |Destination type|FQDN|
-    |Destination|**dev.azure.com, azure.microsoft.com**|
+        |Property|  Value |
+        |:---------|:---------|
+        |Name	|**AllowAzurePipelines**|
+        |Source type|**IP address**|
+        |Source|**10.1.0.0/23**|
+        |Protocol|**https** |
+        |Destination type|FQDN|
+        |Destination|**dev.azure.com, azure.microsoft.com**|
 
 2.  Create a **network rule collection** that contains a single IP Address rule by using the values in the following table. For any property that is not specified, use the default value.
 
@@ -43,15 +43,15 @@ Azure Firewall policy is a top-level resource that contains security and operati
     |Rule collection action|**Allow**|
     |Rule collection group| **DefaultNetworkRuleCollectionGroup**|
 
--  Under **rules** use the values in the following table and select **Add**    
+    -  Under **rules** use the values in the following table and select **Add**    
 
-    |Property|	Value|
-    |:---------|:---------|
-    |Rule |	**AllowDns**|
-    |Source|	**10.1.0.0/23**|
-    |Protocol|	**UDP**|
-    |Destination ports|	**53**|
-    |Destination addresses|	**1.1.1.1, 1.0.0.1**|
+        |Property|	Value|
+        |:---------|:---------|
+        |Rule |	**AllowDns**|
+        |Source|	**10.1.0.0/23**|
+        |Protocol|	**UDP**|
+        |Destination ports|	**53**|
+        |Destination addresses|	**1.1.1.1, 1.0.0.1**|
 
     Learn more on [creating an application rule](/azure/firewall/tutorial-firewall-deploy-portal#configure-an-application-rule) and [creating a network rule](/azure/firewall/tutorial-firewall-deploy-portal#configure-a-network-rule).
 
