@@ -76,8 +76,8 @@ _Connect your IoT devices, such as sensors, cameras, drones, and satellites, to 
 Bing will give us an overview of the different tools we may need to ensure we successfully implement a product. We can ask Bing for ideas on how we can use this in the project as follows:
 
 > [!NOTE]
->If you're a student, you can have 100USD free Azure credits to use it in your technology. Learn more about it, [here](aka.ms/azure/students/free).
-> If you're new to azure, you can sign in and try azure for 30-days, register [here](aka.ms/azure/free)
+>If you're a student, you can have 100USD free Azure credits to use it in your technology. Learn more about it, [here](https://azure.microsoft.com/en-us/free/students/?WT.mc_id=academic-114050-bethanycheum).
+> If you're new to azure, you can sign in and try azure for 30-days, register [here](https://azure.microsoft.com/en-us/free/?WT.mc_id=academic-114050-bethanycheum)
 
 Repeat step 2 for each feature until you have a clear understanding of how you can build the final product.
 
@@ -86,7 +86,7 @@ Repeat step 2 for each feature until you have a clear understanding of how you c
 You now have a proper guide to the technical requirements to implement your project. Next step is for you (and your team) to start building. Bing chat has helped us identify tools that you would need to install, so a good flow of events from here would be:
 
 1. Review your sketch designs to ensure that you are clear on what you are building
-2. Set up your local or virtual developer environment such as [GitHub Codespaces](https://github.com/features/codespaces) to begin the project
+2. Set up your local or virtual developer environment such as [GitHub Codespaces](https://github.com/features/codespaces?WT.mc_id=academic-114050-bethanycheum) to begin the project
 
 ### [Optional] Keep working with Bing chat
 
@@ -104,7 +104,7 @@ _Can you guide me on how to create the calendar of emotions on react native?_
 
 ![Resources for calendar of emotions](./media/emotional-calendar.png)
 
-As a student you have free access to [GitHub Copilot](https://education.github.com/pack), that will be your coding buddy as you bring your MVP to life. You can use GitHub Copilot on various IDEs including Visual Studio, JetBrains, Neovim and Visual Studio Code.
+As a student you have free access to [GitHub Copilot](https://education.github.com/pack?WT.mc_id=academic-114050-bethanycheum), that will be your coding buddy as you bring your MVP to life. You can use GitHub Copilot on various IDEs including Visual Studio, JetBrains, Neovim and Visual Studio Code.
 
 But before you leave to create your awesome project, finish this module to identify more opportunities for you to share your project globally in a global student competition and access founders' programs for additional support to launch your very own startup.
 
@@ -132,8 +132,8 @@ _I hope these options help you with your deployment. If you need more assistance
 
 Whether you are building a website, an application or an API there are various tools you can utilize to deploy your solution, be sure to modify the prompt to match your needs. Some additional resources you can use to deploy your solution are:
 
-- [Deploy your company website on Azure using Azure Static Web Apps](https://learn.microsoft.com/en-us/training/paths/azure-static-web-apps/)
-- [Deploy your web application with Azure using Azure Web Apps](https://learn.microsoft.com/en-us/training/paths/deploy-a-website-with-azure-app-service/)
-- [Publish your API on Azure](https://learn.microsoft.com/en-us/azure/api-management/import-and-publish)
-- [Configure a virtual dev environment for all your software engineers – GitHub Codespaces.](https://github.com/features/codespaces)
-- [Build a database for your application on Azure.](https://learn.microsoft.com/en-us/azure/developer/javascript/database-developer-guide?tabs=MySQL%2Cazure-cli)
+- [Deploy your company website on Azure using Azure Static Web Apps](https://learn.microsoft.com/en-us/training/paths/azure-static-web-apps/?WT.mc_id=academic-114050-bethanycheum)
+- [Deploy your web application with Azure using Azure Web Apps](https://learn.microsoft.com/en-us/training/paths/deploy-a-website-with-azure-app-service/?WT.mc_id=academic-114050-bethanycheum)
+- [Publish your API on Azure](https://learn.microsoft.com/en-us/azure/api-management/import-and-publish?WT.mc_id=academic-114050-bethanycheum)
+- [Configure a virtual dev environment for all your software engineers – GitHub Codespaces.](https://github.com/features/codespaces?WT.mc_id=academic-114050-bethanycheum)
+- [Build a database for your application on Azure.](https://learn.microsoft.com/en-us/azure/developer/javascript/database-developer-guide?tabs=MySQL%2Cazure-cli?WT.mc_id=academic-114050-bethanycheum)

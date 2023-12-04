@@ -25,16 +25,16 @@ In this module you will develop the following skills:
 
 This exercise will require you to have access to the text and image generation capabilities of Generative AI.
 
-1. Personal account for [Bing Chat](https://www.bing.com/new).
-2. Use [Edge Browser Profiles](https://support.microsoft.com/en-us/topic/sign-in-and-create-multiple-profiles-in-microsoft-edge-df94e622-2061-49ae-ad1d-6f0e43ce6435) to sign in to [Bing Chat](https://www.bing.com/new) and [Bing Image Creator](https://www.bing.com/images/create)
+1. Personal account for [Bing Chat](https://www.bing.com/new?WT.mc_id=academic-114050-bethanycheum).
+2. Use [Edge Browser Profiles](https://support.microsoft.com/en-us/topic/sign-in-and-create-multiple-profiles-in-microsoft-edge-df94e622-2061-49ae-ad1d-6f0e43ce6435?WT.mc_id=academic-114050-bethanycheum) to sign in to [Bing Chat](https://www.bing.com/new?WT.mc_id=academic-114050-bethanycheum) and [Bing Image Creator](https://www.bing.com/images/create?WT.mc_id=academic-114050-bethanycheum)
 3. Pen and paper for your sketch prototype
 
 ## Alternative Tools
 
 You need Bing Chat to do this exercise. It involves text and image generation. If you don't have Bing Chat, you can use other tools, but you may need to change some steps. Here are some places where you can find these tools:
 
-- Bing Image Creator at [Bing Image Creator](https://www.bing.com/images/create)
-- ChatGPT at [http://openai.com](http://openai.com/)
-- Dalle-2 at OpenAI - [http://openai.com](http://openai.com/)
+- Bing Image Creator at [Bing Image Creator](https://www.bing.com/images/create?WT.mc_id=academic-114050-bethanycheum)
+- ChatGPT at [OpenAI](http://openai.com/)
+- Dalle-2 at OpenAI - [OpenAI](http://openai.com/)
 
 You can use other platforms if you would like, just note that the directions are intended for Bing Chat so you might have to adapt a few things specifically when it comes to image creation.
