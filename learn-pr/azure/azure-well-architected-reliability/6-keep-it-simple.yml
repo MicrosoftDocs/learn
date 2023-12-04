@@ -15,33 +15,45 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following is an example of a section you might find in a recovery plan?"
+  - content: "Why should you try to minimize the number of components in your workload?"
     choices:
-    - content: ""
-      isCorrect: false
-      explanation: "TBD"
-    - content: ""
-      isCorrect: false
-      explanation: "TBD"
-    - content: ""
-      isCorrect: false
-      explanation: "TBD"
-    - content: "TBD"
+    - content: "Minimizing the components in your workload will reduce the complexity, which will make it easier to manage and troubleshoot."
       isCorrect: true
-      explanation: "TBD"
-  - content: "TBD"
+      explanation: "Correct. The more components you have, the more complex your workload will be. This will make it more difficult to manage and troubleshoot."
+    - content: "Minimizing the number of components in your workload means you don't have to monitor the workload."
+      isCorrect: false
+      explanation: "Incorrect. You should always monitor your workload, regardless of how many components it has."
+    - content: "Minimizing the number of components in your workload means you can use services that are in preview."
+      isCorrect: false
+      explanation: "Incorrect. You should never use services that are in preview in production workloads."
+    - content: "Minimizing the number of components in your workload reduces the need to enable scaling."
+      isCorrect: false
+      explanation: "Incorrect. Your scaling strategy should be based on the needs of your workload, not the number of components it has."
+  - content: "What elements of your software development lifecycle should be standardized?"
     choices:
-    - content: "TBD"
+    - content: "Development languages, frameworks, and tools"
       isCorrect: false
-      explanation: "TBD"
-    - content: "TBD"
+      explanation: "Incorrect. These are all important, but they are not the only elements that should be standardized."
+    - content: "Documentation"
+      isCorrect: false
+      explanation: "Incorrect. Documentation is important, but it is not the only element that should be standardized."
+    - content: "Testing"
+      isCorrect: false
+      explanation: "Incorrect. Testing is important, but it is not the only element that should be standardized."
+    - content: "All of the above"
       isCorrect: true
-      explanation: "TBD"
-  - content: "TBD"
+      explanation: "Correct. All of these elements should be standardized to ensure that your workload is reliable and easy to manage."
+  - content: "How did moving to Azure App Services help the Contonso team simplify their workload?"
     choices:
-    - content: "TBD"
+    - content: "It saved them from having to rewrite the application."
       isCorrect: false
-      explanation: "TBD"
-    - content: "TBD"
+      explanation: "Incorrect. Rewriting the application wasn't a concen for the Contonso team."
+    - content: "It allowed them to reduce the amount of code they had to maintain."
       isCorrect: true
-      explanation: "TBD"
+      explanation: "Correct. By moving to Azure App Services, the Contonso team was able to reduce the amount of code they had to maintain by removing the instrumentation code."
+    - content: "It allowed them to containerize their application."
+      isCorrect: false
+      explanation: "Incorrect. The team didn't containerize the app."
+    - content: "It allowed the team to move to a serverless architecture."
+      isCorrect: false
+      explanation: "Incorrect. Azure App Services is not a serverless architecture."

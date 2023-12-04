@@ -22,7 +22,7 @@ Designing for business requirements can lead to a straightforward solution that'
 - AS part of the initial release of the Contoso Travel-branded version of the app, the team decides to remove the website feedback component of the workload.
 - A smaller codebase lowers the cost of maintenance and operations. And, in this case, there is no impact to the business requirements.
 
-## Standardize the software development lifecycle
+## Standardize your software development lifecycle
 
 **Establish standards in code implementation, deployment, and processes, and document them. Identify opportunities to enforce those standards by using automated validations.**
 
