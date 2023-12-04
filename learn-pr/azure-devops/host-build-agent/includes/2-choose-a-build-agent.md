@@ -47,9 +47,9 @@ When you're choosing a build agent, there are two factors to consider:
 
 Azure Pipelines supports these operating systems:
 
-* Windows
-* macOS
-* Linux (Ubuntu, Red Hat Enterprise Linux, and CentOS)
+* [Windows](/azure/devops/pipelines/agents/windows-agent)
+* [macOS](/azure/devops/pipelines/agents/osx-agent)
+* [Linux](/azure/devops/pipelines/agents/linux-agent)
 
 The build agent you choose depends mainly on what tools you use to build your code. For example, if you use Xcode to build your applications, you might choose a macOS agent. If you need Visual Studio, you'd likely choose a Windows agent.
 
