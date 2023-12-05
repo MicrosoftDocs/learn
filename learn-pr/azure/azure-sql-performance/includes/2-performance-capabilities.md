@@ -1,6 +1,6 @@
 Let's start by looking at some of the performance capabilities of Azure SQL as compared to SQL Server.
 
-Because Azure SQL Database and Azure SQL Managed Instance are based on the SQL Server database engine, most of the capabilities that come with SQL Server are also available with Azure SQL. There are a few capabilities that have an impact on your databases' performance that you should consider when you're deploying and configuring Azure SQL. These include maximum capacities, indexes, in-memory OLTP, partitions, SQL Server 2019 enhancements, and intelligent performance capabilities.
+Because Azure SQL Database and Azure SQL Managed Instance are based on the SQL Server database engine, most of the capabilities that come with SQL Server are also available with Azure SQL. There are a few capabilities that have an impact on your databases' performance that you should consider when you're deploying and configuring Azure SQL. These include maximum capacities, indexes, in-memory OLTP, partitions, SQL Server enhancements, and intelligent performance capabilities.
 
 ## Memory, CPU, and I/O capacities
 
