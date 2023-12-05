@@ -8,7 +8,7 @@ Data warehouse security is important to protect your data from unauthorized acce
 - SSL encryption to secure the communication between the warehouse and the client applications.
 - Azure Storage Service Encryption to protect the data in transit and at rest.
 - Azure Monitor and Azure Log Analytics to monitor the warehouse activity and audit the access to the data.
-- Multi-Factor Authentication (MFA) to add an extra layer of security to user accounts.
+- Multifactor authentication (MFA) to add an extra layer of security to user accounts.
 - Azure Active Directory (Azure AD) integration to manage the user identities and access to the warehouse.
 
 ### Workspace permissions
