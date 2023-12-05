@@ -9,7 +9,6 @@ metadata:
   ms.author: franksolomon
   ms.topic: unit
   ms.reviewer: franksolomon
-  ms.prod: learning-azure
 durationInMinutes: 4
 content: |
   [!include[](includes/4-examine-data-types.md)]

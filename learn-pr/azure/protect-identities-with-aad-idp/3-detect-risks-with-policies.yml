@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/23/2019
   author: MicrosoftGuyJFlo
   ms.author: joflore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Detect risks with Microsoft Entra ID Protection policies
 durationInMinutes: 10
 content: |

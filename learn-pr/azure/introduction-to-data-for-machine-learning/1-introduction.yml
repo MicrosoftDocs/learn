@@ -9,7 +9,6 @@ metadata:
   ms.author: franksolomon
   ms.reviewer: franksolomon
   ms.topic: unit
-  ms.prod: learning-azure
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)] 
