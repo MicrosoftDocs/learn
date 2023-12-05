@@ -88,7 +88,7 @@ To create an alert rule:
 
 1. On the **Basics** tab, under **Subscription**, ensure that **Concierge Subscription** is selected.
 
-1. In the **Resource group** dropdown, ensure that <rgn>[sandbox resource group name]</rgn> is selected.
+1. In the **Resource group** dropdown, ensure that **<rgn>[sandbox resource group name]</rgn>** is selected.
 
     Action groups are usually shared across a subscription and would likely be centrally managed by the Azure subscription owner. As such they are more likely to be included in a common resource group rather than in a project specific resource group.
 
@@ -148,7 +148,7 @@ To create an alert rule:
 
     1. In the **Subscription** field, select **Concierge Subscription**.
 
-    1. In the **Resource group** dropdown, ensure that <rgn>[sandbox resource group name]</rgn> is selected.
+    1. In the **Resource group** dropdown, ensure that **<rgn>[sandbox resource group name]</rgn>** is selected.
 
     1. In the **Severity** field, ensure that **3 - Informational** is selected.
 

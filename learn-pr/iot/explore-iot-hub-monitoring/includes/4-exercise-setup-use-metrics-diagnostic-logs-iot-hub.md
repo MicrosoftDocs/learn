@@ -16,7 +16,7 @@ In this task, you create a storage account that contains your device telemetry l
 
 1. In **Subscription**, select **Concierge Subscription**.
 
-1. In **Resource group**, select <rgn>[sandbox resource group name]</rgn>.
+1. In **Resource group**, select **<rgn>[sandbox resource group name]</rgn>**.
 
 1. Fill in the **Storage account name** field with a name for your storage account. This name must be globally unique, only lowercase letters and numbers, and a length between 3 and 24 characters.
 
