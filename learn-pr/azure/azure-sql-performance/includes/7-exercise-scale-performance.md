@@ -110,7 +110,7 @@ Now that the database has more CPU capacity, let's run the workload we did in th
     SELECT * FROM sys.dm_db_resource_stats;
     ```
 
-    You should see that the average CPU resource usage has decreased from the almost 100 percent usage in the previous exercise. Note that resizing causes d`m_db_resource_stats` to reset, when normally it keeps one hour of activity.
+    You should see that the average CPU resource usage has decreased from the almost 100 percent usage in the previous exercise. Normally, `sys.dm_db_resource_stats` displays one hour of activity. Resizing the database causes `sys.dm_db_resource_stats` to reset.
 
 1. Using SSMS, run the same query from the first exercise of this module to observe results from the script **dmexecrequests.sql**.
 
