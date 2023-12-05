@@ -18,7 +18,7 @@ Azure SQL provides nearly the same extended events infrastructure as SQL Server,
 
 ### Lightweight query profiling
 
-Lightweight profiling is an advanced method to troubleshoot scenarios that require retrieval of the actual execution plan for in-flight requests and high-value queries. Due to its low overhead, any server that's not already CPU bound can run lightweight profiling continuously, and allow database professionals to tap into any running execution at any time; for example, using the Activity Monitor in SQL Server Management Studio (SSMS) or directly querying **sys.dm_exec_query_profiles** or **dm_exec_query_statistics_xml**.
+Lightweight profiling is an advanced method to troubleshoot scenarios that require retrieval of the actual execution plan for in-flight requests and high-value queries. Due to its low overhead, any server that's not already CPU bound can run lightweight profiling continuously, and allow database professionals to tap into any running execution at any time; for example, using the Activity Monitor in SQL Server Management Studio (SSMS) or directly querying `sys.dm_exec_query_profiles` or `dm_exec_query_statistics_xml`.
 
 You can use lightweight query profiling to examine the query plan and running state of an active query. This is a key feature to debug query performance for statements as they are running. This capability cuts down the time for you to solve performance problems, compared to using tools like extended events to trace query performance. You can access lightweight query profiling through DMVs, and it's on by default for Azure SQL as it is for SQL Server 2019 and later versions.
 
