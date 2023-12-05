@@ -11,6 +11,6 @@ metadata:
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.service: bing
-durationInMinutes: 1
+durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-define-customers-valueprop-and-customer-relations.md)]
