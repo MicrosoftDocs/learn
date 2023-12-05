@@ -32,7 +32,7 @@ If you're unfamiliar with HTML code, review the ["Quick HTML primer"](#quick-htm
 
     Notice the tags:`<div>`,`<h2>`,`<span>` and symbol code `&trade;` contained in the `input` variable.
 
-1. Examine the desired output for the final solution:
+1. Examine the **desired output** for the final program output:
 
     ```Output
     Quantity: 5000
@@ -45,7 +45,7 @@ If you're unfamiliar with HTML code, review the ["Quick HTML primer"](#quick-htm
 
 1. Set the `output` variable to the value of input, then remove the `<div>` and `</div>` tags.
 
-1. Replace the HTML character `™` (`&trade;`) with `®` (`&reg`) in the `output` variable.
+1. Replace the HTML character `™` (`&trade;`) with `®` (`&reg;`) in the `output` variable.
 
 1. Run your solution and verify the output put matches the expected output.
 

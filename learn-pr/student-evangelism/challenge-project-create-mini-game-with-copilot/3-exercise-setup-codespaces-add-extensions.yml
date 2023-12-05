@@ -8,8 +8,7 @@ metadata:
   author: cyz
   ms.author: cyzanon
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-setup-codespaces-add-extensions.md)]

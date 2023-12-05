@@ -8,10 +8,9 @@ metadata:
   ms.author: jogallow
   ms.manager: markl
   ms.date: 10/28/2020
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-dotnet
-  ms.prod: learning-azure
 durationInMinutes: 2
 quiz:
   title: Check your knowledge
