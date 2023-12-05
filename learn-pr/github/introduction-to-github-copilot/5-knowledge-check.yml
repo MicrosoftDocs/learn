@@ -51,7 +51,7 @@ quiz:
     - content: "A product focused on organizations to help them be more productive, secure, and fulfilled."
       isCorrect: false
       explanation: "Although GitHub Copilot for Business is a part of GitHub Copilot X, GitHub Copilot X is GitHub's vision for the future of AI-powered software development."
-        - content: "Who is eligible for GitHub Copilot Enterprise?"
+  - content: "Who is eligible for GitHub Copilot Enterprise?"
     choices:
     - content: "Organizations who have GitHub Enterprise Cloud."
       isCorrect: true
