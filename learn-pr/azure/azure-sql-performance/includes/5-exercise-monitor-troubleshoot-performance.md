@@ -291,7 +291,7 @@ Query Store comes with a series of system catalog views to view performance data
 
     This database table has so few rows that it doesn't need a plan; it can be inefficient. Tuning the query won't improve performance by a measurable amount. You might see a warning in the plan about a lack of statistics for one of the columns for the clustered index seek. This doesn't factor into overall performance.
 
-1. Underneath the **Top Resource Consuming Queries** report in SSMS is a report called **Query Wait Statistics**. You know from earlier diagnostics that a high number of requests constantly were in a RUNNABLE status, along with almost 100 percent CPU. Query Store comes with reports to look at possible performance bottlenecks due to waits on resources. Select this report and hover over the bar chart. Your results should look like the following image:
+1. Following the **Top Resource Consuming Queries** report in SSMS is a report called **Query Wait Statistics**. You know from earlier diagnostics that a high number of requests constantly were in a RUNNABLE status, along with almost 100 percent CPU. Query Store comes with reports to look at possible performance bottlenecks due to waits on resources. Select this report and hover over the bar chart. Your results should look like the following image:
 
     :::image type="content" source="../media/5-ssms-top-wait-stats.png" alt-text="Screenshot of the top wait statistics.":::
 
