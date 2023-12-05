@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-security.5-encryption
+uid: learn.azure-well-architected-security.5-design-to-protect-availability
 title: Encryption
 metadata:
   title: Encryption
@@ -10,30 +10,49 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-encryption.md)]
+  [!include[](includes/5-design-to-protect-availability.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'True or false: only Windows virtual machines can use Azure Disk Encryption.'
+  - content: 'TBD'
     choices:
-    - content: 'True'
-      isCorrect: false
-      explanation: 'Azure Disk Encryption is available for both Windows and Linux virtual machines.'
-    - content: 'False'
+    - content: 'TBD'
       isCorrect: true
-      explanation: 'Azure Disk Encryption is available for both Windows and Linux virtual machines.'
-
-  - content: "When you're classifying data, which of the following is a factor?"
+      explanation: 'TBD'
+    - content: 'TBD'
+      isCorrect: false
+      explanation: 'TBD'
+    - content: 'TBD'
+      isCorrect: false
+      explanation: 'TBD'
+    - content: 'TBD'  
+      isCorrect: false
+      explanation: 'TBD'
+  - content: 'TBD'
     choices:
-    - content: 'Level of risk posed to customers if exposed'
+    - content: "TBD"
+      isCorrect: false
+      explanation: "TBD"
+    - content: 'TBD'
       isCorrect: true
-      explanation: "Classifying data that should be encrypted is commonly based on the impact it can have to customers if it's exposed."
-    - content: 'Method of data transport'
+      explanation: 'TBD'
+    - content: 'TBD'
       isCorrect: false
-      explanation: "Classifying data that should be encrypted is commonly based on the impact it can have to customers if it's exposed."
-    - content: 'Whether the data is stored on virtual machines or in a database'
-      isCorrect: false 
-      explanation: "Classifying data that should be encrypted is commonly based on the impact it can have to customers if it's exposed."  
-    - content: 'The amount of data stored'
+      explanation: "TBD"
+    - content: 'TBD'
       isCorrect: false
-      explanation: "Classifying data that should be encrypted is commonly based on the impact it can have to customers if it's exposed."
+      explanation: "TBD"
+  - content: 'TBD'
+    choices:
+    - content: "TBD"
+      isCorrect: false
+      explanation: "TBD"
+    - content: 'TBD'
+      isCorrect: true
+      explanation: 'TBD'
+    - content: 'TBD'
+      isCorrect: false
+      explanation: "TBD"
+    - content: 'TBD'
+      isCorrect: false
+      explanation: "TBD"

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-security.3-identity-management
+uid: learn.azure-well-architected-security.3-design-to-protect-confidentiality
 title: Identity management
 metadata:
   title: Identity management
@@ -10,36 +10,49 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-identity-management.md)]
+  [!include[](includes/3-design-to-protect-confidentiality.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Which of the following is *not* a benefit of single sign-on?'
+  - content: 'TBD'
     choices:
-    - content: 'Increased complexity in assigning permissions to users'
+    - content: 'TBD'
       isCorrect: true
-      explanation: 'Single sign-on can reduce the complexity needed to assign permissions to users because there are fewer identities to manage.'
-    - content: 'Fewer IDs and passwords for users to remember'
+      explanation: 'TBD'
+    - content: 'TBD'
       isCorrect: false
-      explanation: 'Single sign-on can reduce the complexity needed to assign permissions to users because there are fewer identities to manage.'
-    - content: 'Lower administration effort when users change roles or leave an organization'
+      explanation: 'TBD'
+    - content: 'TBD'
       isCorrect: false
-      explanation: 'Single sign-on can reduce the complexity needed to assign permissions to users because there are fewer identities to manage.'
-    - content: 'Ensuring a consistent password policy across applications'
+      explanation: 'TBD'
+    - content: 'TBD'  
       isCorrect: false
-      explanation: 'Single sign-on can reduce the complexity needed to assign permissions to users because there are fewer identities to manage.'
-
-  - content: 'Which of the following would be a valid second element for multifactor authentication, when combined with a password?'
+      explanation: 'TBD'
+  - content: 'TBD'
     choices:
-    - content: "A driver's license"
+    - content: "TBD"
       isCorrect: false
-      explanation: "A driver's license can't be used for multifactor authentication."
-    - content: 'A token-generating device'
+      explanation: "TBD"
+    - content: 'TBD'
       isCorrect: true
-      explanation: 'A token-generating device or mobile app that receives a notification are great components to use for multifactor authentication.'
-    - content: 'Your account number'
+      explanation: 'TBD'
+    - content: 'TBD'
       isCorrect: false
-      explanation: "Your account number can't be used for multifactor authentication."
-    - content: 'Your car keys'
+      explanation: "TBD"
+    - content: 'TBD'
       isCorrect: false
-      explanation: "Your car keys can't be used for multifactor authentication."
+      explanation: "TBD"
+  - content: 'TBD'
+    choices:
+    - content: "TBD"
+      isCorrect: false
+      explanation: "TBD"
+    - content: 'TBD'
+      isCorrect: true
+      explanation: 'TBD'
+    - content: 'TBD'
+      isCorrect: false
+      explanation: "TBD"
+    - content: 'TBD'
+      isCorrect: false
+      explanation: "TBD"

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-security.4-infrastructure-protection
+uid: learn.azure-well-architected-security.4-design-to-protect-integrity
 title: Infrastructure protection
 metadata:
   title: Infrastructure protection
@@ -10,30 +10,49 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-infrastructure-protection.md)]
+  [!include[](includes/4-design-to-protect-integrity.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Which of the following scopes cannot be secured with Azure role-based access control?'
+  - content: 'TBD'
     choices:
-    - content: 'Subscription'
-      isCorrect: false
-      explanation: 'Role-based access control can be applied at the subscription scope.'
-    - content: 'Resource group'
-      isCorrect: false
-      explanation: 'Role-based access control can be applied at the resource group scope.'
-    - content: 'Files and folders within a Linux file system'
+    - content: 'TBD'
       isCorrect: true
-      explanation: 'Azure role-based access control can be applied to only Azure resources. Files and folders within a Linux file system can be secured with various methods, but not with Azure role-based access control.'
-    - content: 'Resource'
+      explanation: 'TBD'
+    - content: 'TBD'
       isCorrect: false
-      explanation: 'Role-based access control can be applied at the resource scope.'
-
-  - content: 'True or false: a managed identity for Azure resources can be assigned to a virtual machine to give it rights to start and stop other virtual machines.'
+      explanation: 'TBD'
+    - content: 'TBD'
+      isCorrect: false
+      explanation: 'TBD'
+    - content: 'TBD'  
+      isCorrect: false
+      explanation: 'TBD'
+  - content: 'TBD'
     choices:
-    - content: 'True'
-      isCorrect: true
-      explanation: 'Managed identities for Azure resources are a method of assigning an identity to services. Through this assignment, role-based access control can be granted to manage Azure services, such as starting and stopping virtual machines.'
-    - content: 'False'
+    - content: "TBD"
       isCorrect: false
-      explanation: 'Managed identities for Azure resources are a method of assigning an identity to services. Through this assignment, role-based access control can be granted to manage Azure services, such as starting and stopping virtual machines.'
+      explanation: "TBD"
+    - content: 'TBD'
+      isCorrect: true
+      explanation: 'TBD'
+    - content: 'TBD'
+      isCorrect: false
+      explanation: "TBD"
+    - content: 'TBD'
+      isCorrect: false
+      explanation: "TBD"
+  - content: 'TBD'
+    choices:
+    - content: "TBD"
+      isCorrect: false
+      explanation: "TBD"
+    - content: 'TBD'
+      isCorrect: true
+      explanation: 'TBD'
+    - content: 'TBD'
+      isCorrect: false
+      explanation: "TBD"
+    - content: 'TBD'
+      isCorrect: false
+      explanation: "TBD"
