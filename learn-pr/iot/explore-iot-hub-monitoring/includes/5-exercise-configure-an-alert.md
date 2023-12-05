@@ -34,7 +34,7 @@ To create an alert rule:
 1. For **Signal source**, ensure that **All** is selected.
 
     If you select **Signal source**, you'll see that there are the following options: **All**, **Log analytics**, **Log analytics (example query)**, **Resource health**, **Platform metrics**, and **Administrative**.
-    The platform service provides metrics on service utilization, where as the activity log tracks administrative activities.
+    The platform service provides metrics on service utilization, whereas the activity log tracks administrative activities.
 
 1. In the **Search by signal name** textbox, type **connected**.
 

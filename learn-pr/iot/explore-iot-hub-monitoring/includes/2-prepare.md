@@ -37,7 +37,7 @@ As part of this module, the following resources are created:
    | Property | Value |
    | ----- | ----- |
    | **Subscription** | Select **Concierge Subscription**. |
-   | **Resource group** | Select the <rgn>[sandbox resource group name]</rgn> resource group. |
+   | **Resource group** | Select the **<rgn>[sandbox resource group name]</rgn>** resource group. |
    | **IoT hub name** | Enter a name for your hub. This name must be globally unique, with a length between 3 and 50 alphanumeric characters. The name can also include the dash (`'-'`) character.<br><br>**Note:** IoT Hubs are publicly discoverable as DNS endpoints, so avoid using any sensitive or personally identifiable information in the name. |
    | **Region** | Select the region closest to you, where you want your hub to be located. |
 
