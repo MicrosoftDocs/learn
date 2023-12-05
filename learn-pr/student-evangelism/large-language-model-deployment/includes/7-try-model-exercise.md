@@ -50,7 +50,7 @@ In this example, you combined a prompt with data to extract information using na
 
 ## Extract input and format the output
 
-In this next exercise, you'll ask your LLM to organize your text as a table which shows that LLMs are capable of formatting and generating text.
+In this next exercise, you'll ask your LLM to organize your text as a table, which shows that LLMs are capable of generating *and* formatting text.
 
 1. Clear the completions text box then copy the following text and paste it there.
 
@@ -83,7 +83,7 @@ In this example, the model is primed with the desired output format: a header ro
 
 ### Try different formatting: JSON
 
-You've seen how an LLM can produce a table given some text. You can take this a step further by asking it to produce the data in JSON format.
+You've seen how an LLM can produce a table given some text. You can also ask an LLM to produce the data in JSON format.
 
 1. Clear the completions text box then copy the following text and paste it there.
 
@@ -114,7 +114,7 @@ In this example, the model returned a JSON array of the fruit and their attribut
 
 ## Classify content
 
-In this exercise, you will see how an LLM is able to sort your content into different categories.
+In this exercise, you'll use an LLM to sort your content into different categories.
 
 1. Clear the completions text box then copy the following text and paste it there:
 

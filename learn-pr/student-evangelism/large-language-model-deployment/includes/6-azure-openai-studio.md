@@ -14,7 +14,7 @@ An LLM has built-in capabilities that you can use without training it further. L
 
   *"Hello, my name is Robert Smith"*
 
-  Then ask it to *extract the person's name* from this text it will return:
+  Ask it to *extract the person's name* from this text and it returns:
 
   *"Robert Smith"*
 
@@ -22,7 +22,7 @@ An LLM has built-in capabilities that you can use without training it further. L
 
   *"I like the following colors: red, green, and yellow. I also like the following food: macaroni, cheese, and honey"*
 
-  Then ask it to summarize what you like in a table or JSON format it will return:
+  Ask it to summarize what you like in a table or JSON format and it returns:
 
   `{ "colors": ["red", "green", "yellow"], "food": ["macaroni", "cheese", "honey"] }`
 
@@ -30,7 +30,7 @@ An LLM has built-in capabilities that you can use without training it further. L
 
   *"I loved your product it really helped me do what I wanted"*
 
-  Then ask it whether this text was negative or positive it will return:
+  Ask it whether this text was negative or positive and it returns:
 
   "positive"
 
@@ -38,11 +38,11 @@ An LLM has built-in capabilities that you can use without training it further. L
 
   *"Hey James, I had a fun last weekend with you we spend lots of time playing on the beach. Let’s do that again soon! bye"*
 
-  Then ask it to summarize what the person wants from you it will return:
+  Ask it to summarize what the person wants from you and it returns:
 
   "The person is asking James to spend time with them again soon"
 
-- **Generating novel content**: You can ask an LLM to generate new content about nearly anything you could think of. For example, if you ask the LLM to write a haiku about happiness it will return:
+- **Generating novel content**: You can ask an LLM to generate new content about nearly anything you could think of. For example, if you ask the LLM to write a haiku about happiness it returns:
 
   "The sun sets gently
   Warm breeze whispers through the trees

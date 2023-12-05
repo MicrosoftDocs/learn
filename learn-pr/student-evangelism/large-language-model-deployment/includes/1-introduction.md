@@ -2,7 +2,7 @@ To use a large language model (LLM), you can run it locally or through a cloud p
 
 ## Scenario: Trying out an LLM for my tech MVP
 
-Imagine you run a tourism tech startup and think you can use an LLM for various tasks to run your business more efficiently and to offer a better customer experience. Before you choose to use an LLM, you want to test it out to see if it provides useful responses. You also want to ensure that whatever prompts the LLM is given stay between you and your cloud provider. You imagine there should be some sort of testing playground to explore these concerns.
+Imagine you run a tourism tech startup and want to use an LLM for various tasks to run your business more efficiently and to offer a better customer experience. Before you choose to use an LLM, you want to test it out to see if it provides useful responses. You also want to ensure that whatever prompts the LLM is given stay between you and your cloud provider. You imagine there should be some sort of testing playground to explore these concerns.
 
 ## What will you learn?
 

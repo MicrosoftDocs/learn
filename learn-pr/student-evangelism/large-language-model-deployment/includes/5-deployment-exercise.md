@@ -1,4 +1,4 @@
-In this exercise, you create an Azure OpenAI deployment. By creating a deployment on your previously provisioned resource, you'll be able to interact with your large language model (LLM).
+In this exercise, you create an Azure OpenAI deployment. By creating a deployment on your previously provisioned resource, you're able to interact with your large language model (LLM).
 
 > [!NOTE]
 > In order to complete this exercise, you need the following:
@@ -9,9 +9,9 @@ In this exercise, you create an Azure OpenAI deployment. By creating a deploymen
 
 ## Create a deployment
 
-In this exercise, you'll create a deployment and by using Azure OpenAI Studio. You can have more than one Azure OpenAI cloud resource; to ensure you manage the correct one, you need to navigate to Azure OpenAI Studio from the instance blade.
+In this exercise, you create a deployment by using Azure OpenAI Studio. You can have more than one Azure OpenAI cloud resource; to ensure you manage the correct one, you need to navigate to Azure OpenAI Studio from the instance blade.
 
-1. Navigate to the [Azure portal](https://portal.azure.com) and locate your newly provisioned Azure OpenAI instance by typing **openai** in the top search bar; this will take you to your provisioned Azure OpenAI instances. From there, select your specific cloud instance.
+1. Navigate to the [Azure portal](https://portal.azure.com) and locate your newly provisioned Azure OpenAI instance by typing **openai** in the top search bar. From there, select your specific cloud instance.
 
 1. Select **Model deployments** from the left side menu on your cloud instance blade then, select **Manage Deployments**.
 

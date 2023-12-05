@@ -18,17 +18,17 @@ There are two ways you can provision an Azure OpenAI resource. Which one you use
 
 - **Azure portal**: Azure portal offers a graphical user interface and can be a good option when you’re just starting out and want to learn more about cloud computing, and Azure OpenAI in particular.
 
-- **Azure CLI**: When you run a business this might be the preferred option because you can store, put under version control, and parameterize deployment scripts so you can reuse them elsewhere.
+- **Azure CLI**: If you run a business, the Azure CLI might be the preferred option because you can store, version control, and parameterize deployment scripts so you can reuse them elsewhere.
 
 ## Provision a resource by using Azure portal
 
 Follow these steps to create a provision of Azure OpenAI in the Azure portal:
 
-1.**Locate the cloud template** for Azure OpenAI via the top search bar of the Azure Portal by typing "OpenAI."
+1.**Locate the cloud template** for Azure OpenAI via the top search bar of the Azure portal by typing "OpenAI."
 
 1. **Create provisioning** from the Azure OpenAI landing page. You can manage other provisioned instances and create new ones.
 
-1. **Inspect the provisioned resource** via the detail page of your provisioned resource. Here, you will find the web endpoint and keys that you need to interface with your resource programmatically.
+1. **Inspect the provisioned resource** via the detail page of your provisioned resource. Here, you find the web endpoint and keys that you need to interface with your resource programmatically.
 
 ## Provision a resource in the Azure CLI
 
@@ -37,11 +37,11 @@ Follow these steps to create a provision of Azure OpenAI in the Azure portal:
 
 A CLI tool has a few different advantages over the Azure portal and a graphical interface. Some of these advantages are:
 
-- **Speed**: It's usually faster to create and manage your resources with a command line tool.
+- **Speed**: It's faster to create and manage your resources with a command line tool.
 
 - **Repeatability**: The scripts you write to manage your cloud resources can be stored in a text file for later reuse.
 
-- **Can be versioned**: Storing deployment scripts in a text file allows you to understand what's been deployed. By using version control, you can also see how your deployments change over time.
+- **Can be versioned**: Storing deployment scripts in a text file allows you to understand deployment history. By using version control, you can also see how your deployments change over time.
 
 To create an Azure OpenAI service from the CLI, you need the following resources:
 
@@ -57,7 +57,7 @@ The following command creates a resource group called “resourceGroupName” in
 az group create --name resourceGroupName --location eastus 
 ```
 
-To create a cognitive services account, you need to mention the resource group you just created, give it a name, a location, a type, a stock keeping unit (SKU) and your subscription ID.  
+To create a cognitive services account, you need to mention the resource group you created, give it a name, a location, a type, a stock keeping unit (SKU) and your subscription ID.  
 
 The following code is an example of how to create your cognitive service account. Change these values to fit your circumstances.
 

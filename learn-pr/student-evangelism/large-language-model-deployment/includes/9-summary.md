@@ -1,6 +1,6 @@
 In this module, you first learned about the Azure OpenAI cloud resource. The Cloud resource is something you need to have to use an LLM in the cloud.
 
-Next, you explored deployments. A deployment is done on a specific model you want to use. Once a model is deployed on your cloud resource you’re able to use it.
+Next, you explored deployments. A deployment is done on a specific model you want to use. After a model is deployed on your cloud resource, you’re able to use it.
 
 Key takeaways from this module:
 

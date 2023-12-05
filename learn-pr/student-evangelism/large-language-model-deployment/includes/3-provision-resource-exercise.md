@@ -8,7 +8,7 @@ In this exercise, you create an Azure OpenAI service that enables you to interac
 
 ## Provision a resource in the Azure portal
 
-For this exercise, you'll use Azure portal to provision a resource.
+For this exercise, complete the following steps tp provision a resource in the Azure portal.
 
 1. Navigate to the [Azure portal](https://portal.azure.com) in your browser and sign in.  
 
@@ -42,4 +42,4 @@ For this exercise, you'll use Azure portal to provision a resource.
 
 1. Select **Go to resource**, to inspect your created resource. On this page, you can manage your resource and locate important information like the endpoint URL, API keys, and more.  
 
-Congratulations, you provisioned a resource. In the next exercise you'll deploy a model so you can interact with your LLM.
+Congratulations, you provisioned a resource. In the next exercise, you'll deploy a model so you can interact with your LLM.

@@ -2,7 +2,7 @@ Once you create an Azure OpenAI Resource, you must deploy a model before you can
 
 ## Deployments
 
-Deployments provide endpoints that are configured with settings to meet your needs, including the content moderation model, version handling, and deployment size, to the Azure OpenAI base models, or your fine-tuned models.
+Deployments provide endpoints configured with settings to meet your needs, including the content moderation model, version handling, and deployment size, to the Azure OpenAI base models.
 
 > [!IMPORTANT]
 > You get two things from the deployment:
@@ -27,12 +27,12 @@ Azure OpenAI Studio is a web-based interface that allows you to interact with Az
 
 ## Provision a model deployment by using Azure CLI
 
-You know that the Azure CLI can be used instead of the Azure portal to deploy cloud resources, specifically a resource group and a cognitive services account. You can also use Azure CLI to create a deployment on a cognitive services account. To do this you need to specify the following fields:
+You know that the Azure CLI can be used instead of the Azure portal to deploy cloud resources, specifically a resource group and a cognitive services account. You can also use the Azure CLI to create a deployment on a cognitive services account by specifying the following fields:
 
 - **The cognitive service account name**: to identify what account you're creating the model deployment for.
 - **The resource group name**: logical bucket to store the created resources inside.
-- **A deployment name (optional)**: to help identify different deployments from the same model. For example, you'll need a deployment name when sending requests programmatically. It will default to the chosen model's name if this is not specified.
-- **A model name**: This is the name of your chosen model type. You need a specific type depending on what you're trying to do like text generation, chat, generating images and so on.
+- **A deployment name (optional)**: to help identify different deployments from the same model. For example, you need a deployment name when sending requests programmatically. It defaults to the chosen model's name if it isn't specified.
+- **A model name**: The name of your chosen model type. You need a specific type depending on what you're trying to do like text generation, chat, generating images and so on.
 - **The model version**: Models come in different versions.
 - **The model format**: Models also come in different formats.
 - **A SKU capacity (optional)** for the cognitive service deployment.
