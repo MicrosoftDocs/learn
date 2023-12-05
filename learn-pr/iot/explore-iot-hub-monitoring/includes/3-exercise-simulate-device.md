@@ -1,4 +1,4 @@
-In this exercise, you configure a device simulator application. The primary connection string is used to connect the program to the IoT Hub. When executed, the application creates an active connection and generates telemetry. The active connection counts as a connected device that is tracked by the IoT Hub Monitor.
+In this exercise, you configure a device simulator application. The primary connection string is used to connect the program to the IoT Hub. When executed, the application creates an active connection and generates telemetry. The active connection counts as a connected device that is tracked by the Azure Monitor.
 
 In this exercise, you:
 
@@ -153,8 +153,6 @@ In this exercise, you:
 
 1. On the **File** menu, select **Save**.
 
-1. Optionally, take a moment to review the code.
-
 1. Create a file named **DeviceSimulator.csproj** in the DeviceSimulator folder.
 
 1. Paste the following code into **DeviceSimulator.csproj**.
@@ -230,6 +228,6 @@ In this exercise, you:
 
 ## Verify your work
 
-In this exercise, you created a device telemetry simulator. The simulator connects to your IoT hub using the IoT hub primary connection string, then sends a stream of temperature and humidity readings. These readings are used in the next exercise.
+In this exercise, you created a device telemetry simulator. The simulator connects to your IoT hub using the device primary connection string, then sends a stream of temperature and humidity readings. These readings are used in the next exercise.
 
 Address any program build or runtime errors before proceeding to the next exercise.

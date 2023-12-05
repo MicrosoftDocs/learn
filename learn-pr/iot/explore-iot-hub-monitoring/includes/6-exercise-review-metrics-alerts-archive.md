@@ -2,13 +2,13 @@ In this exercise, you examined some of the reporting and logging resources that 
 
 ## Task 1: See the metrics in the portal
 
-In order to generate the alert where the number of connected devices is less than one, the device simulator app must be closed.
+In order to trigger the alert where the number of connected devices is less than one, stop the device simulator app.
 
 1. Return to Visual Studio Code and stop the running app.
 
 1. Wait 30 seconds before proceeding to the next step.
 
-1. Navigate to your dashboard that includes the Metrics chart that you created.
+1. Navigate to your dashboard that includes the metrics chart that you created.
 
 1. Open the metrics chart that you pinned to the dashboard by selecting the chart title.
 
@@ -18,7 +18,7 @@ In order to generate the alert where the number of connected devices is less tha
 
 1. Observe that you can see **Telemetry messages sent** and **Connected devices** values at the bottom of the blade. Hover your mouse over different parts of the chart to see **Telemetry messages sent** and **Connected devices** values for specific points in time. You should notice that the telemetry and connected devices plot lines reduced to zero after you stopped your telemetry simulator program.
 
-## Task 2: See the Alerts
+## Task 2: See the alerts
 
 To use the portal to review alerts, complete the following steps.
 
@@ -59,7 +59,7 @@ To use the portal to review alerts, complete the following steps.
 
 1. At this point, check your email and/or text and verify you received an alert message.
 
-1. To automatically resolve the alert, return to Visual Studio Code and restart the app.
+1. To resolve the alert, return to Visual Studio Code and restart the app.
 
     > [!NOTE]
     > As it takes a few minutes to resolve the alert, continue with the remaining tasks.
@@ -68,15 +68,15 @@ To use the portal to review alerts, complete the following steps.
 
 Earlier in this lab, you set up your diagnostic logs to be exported to Blob Storage. It's a good time to check and see what was written.
 
-1. Navigate to your dashboard.
+1. In the portal menu, select **Home**.
 
-1. In **All resources**, select the Storage account that you created earlier.
+1. In **Resources**, select the storage account that you created earlier.
 
 1. The **Essentials** and **Properties** of the storage account are displayed.
 
 1. To view the storage metrics, select the **Monitoring** tab.
 
-1. Scroll down until you can see the metrics charts for the Storage Account: **Total egress**, **Total ingress**, **Average latency** and **Request breakdown**.
+1. Scroll down until you can see the metrics charts for the storage account: **Total egress**, **Total ingress**, **Average latency** and **Request breakdown**.
 
     You should see that there's activity displayed.
 
@@ -136,12 +136,10 @@ Earlier in this lab, you set up your diagnostic logs to be exported to Blob Stor
 
 ## Task 4: Review resolved alert
 
-By this point, you should have received an email or SMS indicating the Monitor Alert is resolved. Complete the following steps to review the resolved alert in the portal.
+By this point, you should have received an email or SMS indicating the Monitor alert is resolved. Complete the following steps to review the resolved alert in the portal.
 
 > [!NOTE]
 > If you have not yet received the email or SMS, wait until they arrive before proceeding.
-
-1. In the portal, navigate to your dashboard.
 
 1. On the portal toolbar, in the search box, type **monitor**
 

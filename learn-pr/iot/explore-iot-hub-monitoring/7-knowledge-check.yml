@@ -26,7 +26,7 @@ quiz:
     - content: "It monitors the IoT device telemetry."
       isCorrect: false
       explanation: "Incorrect. Azure Monitor doesn't monitor IoT device telemetry, it monitors Azure services like IoT Hub."
-    - content: "It monitors the IoT Hub."
+    - content: "It monitors the IoT hub."
       isCorrect: true
       explanation: "Correct. Azure Monitor is used to monitor Azure services like IoT Hub."
   - content: "Which of the following statements about IoT Hub metrics is correct?"

@@ -8,7 +8,7 @@ In this exercise, you add an alert that triggers when one or more devices are co
 
 To create an alert rule:
 
-1. Navigate to your dashboard.
+1. In the portal menu, select **Dashboard**.
 
 1. In the **Resources** tile, select your IoT hub.
 
@@ -20,7 +20,7 @@ To create an alert rule:
 
 1. Take a moment to review the **Create an alert rule** blade.
 
-    The blade includes tabs for: **Scope**, **Condition**, **Actions**, **Details**, **Tags**, and **Review + create**. Scope includes two fields: **Resource** and **Hierarchy**. Notice that these fields are prepopulated with properties from your IoT Hub. You can edit the preselected resource if needed.
+    The blade includes tabs for: **Scope**, **Condition**, **Actions**, **Details**, **Tags**, and **Review + create**. Scope includes two fields: **Resource** and **Hierarchy**. Notice that these fields are prepopulated with properties from your IoT hub. You can edit the preselected resource if needed.
 
 1. Select the **Condition** tab, and then select **See all signals**.
 
@@ -85,11 +85,11 @@ To create an alert rule:
     Notice that no action group is selected. There are options to **Select action groups** and **Create action group**.
 
     > [!NOTE]
-    > An action group is a collection of notification preferences defined by the owner of an Azure subscription. An action group name must be unique within the Resource Group that it is associated with. Azure Monitor and Service Health alerts use action groups to notify users that an alert has been triggered. Various alerts can use the same action group or different action groups depending on the user's requirements. You can configure up to 2,000 action groups in a subscription. You can learn more about creating and managing Action Groups at [Action groups](/azure/azure-monitor/platform/action-groups).
+    > An action group is a collection of notification preferences defined by the owner of an Azure subscription. An action group name must be unique within the Resource Group that it is associated with. Azure Monitor and Service Health alerts use action groups to notify users that an alert has been triggered. Various alerts can use the same action group or different action groups depending on the user's requirements. You can configure up to 2,000 action groups in a subscription. You can learn more about creating and managing action groups at [Action groups](/azure/azure-monitor/platform/action-groups).
 
 1. Under **Actions**, select **Select action groups**.
 
-    The **Add action groups** pane is displayed. If there are existing Action Groups available within the selected subscription, they are listed here. Notice that you can change the subscription and filter the list. In this exercise, you create a new action group.
+    The **Add action groups** pane is displayed. If there are existing action groups available within the selected subscription, they are listed here. Notice that you can change the subscription and filter the list. In this exercise, you create a new action group.
 
 1. Close the **Select action groups** pane, and then select **Create action group**.
 
@@ -100,7 +100,7 @@ To create an alert rule:
 1. In the **Resource group** dropdown, ensure that your sandbox module resource group is selected.
 
     > [!NOTE]
-    > Action Groups are usually shared across a subscription and would likely be centrally managed by the Azure subscription owner. As such they are more likely to be included in a common resource group rather than in a project specific resource group.
+    > Action groups are usually shared across a subscription and would likely be centrally managed by the Azure subscription owner. As such they are more likely to be included in a common resource group rather than in a project specific resource group.
 
 1. In the **Region** dropdown, select **Global**.
 
@@ -154,7 +154,7 @@ To create an alert rule:
 
     1. Once the validation is complete, select **Create**.
 
-    A few things happen at the same time. First, **Add action group** pane closes, leaving you on the **Create an alert rule** blade, with the new Action Group added to the list of **Action group name**.
+    A few things happen at the same time. First, **Add action group** pane closes, leaving you on the **Create an alert rule** blade, with the new action group added to the list of **Action group name**.
 
     Then, in quick succession, you should receive both an SMS notification and an email, both of which inform you that you have been added to the **GPEmailAG** action group. In the SMS message, note that you can reply to the message to stop receiving future notifications. You can learn more about the options at [Action groups](/azure/azure-monitor/platform/alerts-sms-behavior). In the email, you have links that you can select to view the details on action groups and, towards the bottom of the email (in a smaller font) you can see the option to unsubscribe.
 

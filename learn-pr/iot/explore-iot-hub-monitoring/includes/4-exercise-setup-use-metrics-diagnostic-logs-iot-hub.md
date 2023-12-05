@@ -1,4 +1,4 @@
-Azure Resource logs are platform logs emitted by Azure resources that describe their internal operation. All resource logs share a common top-level schema with the flexibility for each service to emit unique properties for their own events.
+Azure resource logs are platform logs emitted by Azure resources that describe their internal operation. All resource logs share a common top-level schema with the flexibility for each service to emit unique properties for their own events.
 
 When you have an IoT Hub solution running in production, you'll want to set up various metrics and enable diagnostic logs. Then, if a problem occurs, you have data to look at that helps you to diagnose the problem and fix it more quickly.
 
@@ -8,9 +8,7 @@ In this exercise, you enable diagnostic logs and use them to check for errors. Y
 
 In this task, you create a storage account that contains your device telemetry logging information.
 
-1. Navigate to your dashboard.
-
-1. In the **Search resources, services, and docs** text box, search for **storage accounts**.
+1. In the portal **Search resources, services, and docs** text box, search for **storage accounts**.
 
 1. Under **Services**, select **Storage accounts**.
 
@@ -18,7 +16,7 @@ In this task, you create a storage account that contains your device telemetry l
 
 1. In **Subscription**, select **Concierge Subscription**.
 
-1. In **Resource group**, select your sandbox resource group.
+1. In **Resource group**, select <rgn>[sandbox resource group name]</rgn>.
 
 1. Fill in the **Storage account name** field with a name for your storage account. This name must be globally unique, only lowercase letters and numbers, and a length between 3 and 24 characters.
 
@@ -34,11 +32,11 @@ In this task, you create a storage account that contains your device telemetry l
 
 ## Task 2: Enable diagnostics
 
-In this task, you configure Monitor device connect/disconnect data that is stored in the storage account that you created.
+In this task, you configure Azure Monitor device connect and disconnect diagnostics. Raw device connection data is stored in the storage account that you created in task 1.
 
-1. Navigate to your dashboard.
+1. Select **Home**.
 
-1. In the **All resources** tile, select your IoT Hub.
+1. In the **Resources** tile, select your IoT Hub.
 
 1. In the portal menu, under **Monitoring**, select **Diagnostic settings**.
 
@@ -134,19 +132,21 @@ In this task, you set up various metrics to watch for when messages are sent to 
 
 1. Select the blue checkmark to save the metric.
 
-    Your screen should now show the minimized metric for Telemetry messages sent, and the new metric for avg connected devices. Notice that the chart title is updated to reflect both metrics.
+    Your screen should now show the minimized metric for telemetry messages sent, and the new metric for average connected devices. Notice that the chart title is updated to reflect both metrics.
 
     > [!NOTE]
-    > To edit the chart title, select the **pencil icon** to the right of the title.
+    > To edit the chart title, select the pencil icon to the right of the title.
 
 1. Under the chart title, on the right side of the toolbar, select **Save to dashboard**, then select **Pin to dashboard**, ensure that **My Dashboard** is selected, and then select **Pin**.
 
     > [!NOTE]
-    > In order to retain the chart you have just created, it **must** be pinned to a dashboard.
+    > In order to retain the chart you have just created, it *must* be pinned to a dashboard.
 
 ## Verify your work
 
-1. Navigate to your dashboard and verify that the chart is displayed. Scroll down to the bottom of the display if necessary to view the chart.
+1. In the portal menu, select **Dashboard**.
+
+1. Verify that the chart is displayed. Scroll down to the bottom of the display if necessary to view the chart.
 
     > [!NOTE]
     > You can customize the size and position of the chart by using drag and drop operations.
