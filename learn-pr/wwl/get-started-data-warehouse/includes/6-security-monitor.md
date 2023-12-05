@@ -1,7 +1,3 @@
----
-ms.custom:
-  - build-2023
----
 Security and monitoring are critical aspects of managing your data warehouse.
 
 ## Security
@@ -13,7 +9,7 @@ Data warehouse security is important to protect your data from unauthorized acce
 - Azure Storage Service Encryption to protect the data in transit and at rest.
 - Azure Monitor and Azure Log Analytics to monitor the warehouse activity and audit the access to the data.
 - Multi-Factor Authentication (MFA) to add an extra layer of security to user accounts.
-- Microsoft Entra integration to manage the user identities and access to the warehouse.
+- Azure Active Directory (Azure AD) integration to manage the user identities and access to the warehouse.
 
 ### Workspace permissions
 
@@ -22,7 +18,7 @@ Data in Fabric is organized into workspaces, which are used to control access an
 In addition to workspace roles, you can grant *item permissions* and access through SQL.
 
 > [!TIP]
-> See [Workspaces in Power BI](https://learn.microsoft.com/power-bi/collaborate-share/service-new-workspaces#roles-and-licenses) for more information on workspace roles.
+> See [Workspaces in Power BI](/power-bi/collaborate-share/service-new-workspaces#roles-and-licenses) for more information on workspace roles.
 
 ### Item permissions
 
