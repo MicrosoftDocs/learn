@@ -110,7 +110,7 @@ You need to create an image to visualize this grand entrance.
 2. Paste the prompt into the chat.
 3. Choose image you like and download it.
 
-If it can't generate an image for you, you can go to [Image Creator](https://www.bing.com/images/create) or another online tool that can generate images from text. If you have trouble using this prompt, which relies on the context of the conversation, try using the description you created for a prompt.
+If it can't generate an image for you, you can go to directly to [Image Creator](https://www.bing.com/images/create). If you have trouble using this prompt, which relies on the context of the conversation, try using the description you created for a prompt.
 
 **Sample prompt**:
 
