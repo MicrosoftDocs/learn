@@ -28,15 +28,13 @@ To create an alert rule:
 
 1. For **Signal type**, ensure that **All** is selected.
 
-    > [!NOTE]
-    > If you select **Signal type**, you'll see that there are four available options: **All**, **Log search**, **Resource health**, **Metrics**, and **Activity Log**.
-    > The signal types available for monitoring vary based on the selected target(s). The signal types can be metrics, log search queries or activity logs.
+    If you select **Signal type**, you'll see that there are four available options: **All**, **Log search**, **Resource health**, **Metrics**, and **Activity Log**.
+    The signal types available for monitoring vary based on the selected target(s). The signal types can be metrics, log search queries or activity logs.
 
 1. For **Signal source**, ensure that **All** is selected.
 
-    > [!NOTE]
-    > If you select **Signal source**, you'll see that there are the following options: **All**, **Log analytics**, **Log analytics (example query)**, **Resource health**, **Platform metrics**, and **Administrative**.
-    > The platform service provides metrics on service utilization, where as the activity log tracks administrative activities.
+    If you select **Signal source**, you'll see that there are the following options: **All**, **Log analytics**, **Log analytics (example query)**, **Resource health**, **Platform metrics**, and **Administrative**.
+    The platform service provides metrics on service utilization, where as the activity log tracks administrative activities.
 
 1. In the **Search by signal name** textbox, type **connected**.
 
@@ -50,8 +48,7 @@ To create an alert rule:
 
     Notice that **Threshold** has two possible selections: **Static** and **Dynamic**. Also notice that **Static** is selected and **Dynamic** is unavailable for this signal type.
 
-    > [!NOTE]
-    > As the names suggest, static thresholds specify a constant expression for the threshold, whereas dynamic threshold detection leverages advanced machine learning (ML) to learn metrics' historical behavior, identify patterns and anomalies that indicate possible service issues. You can learn more about dynamic thresholds at [Dynamic thresholds in metric alerts](/azure/azure-monitor/platform/alerts-dynamic-thresholds).
+    As the names suggest, static thresholds specify a constant expression for the threshold, whereas dynamic threshold detection leverages advanced machine learning (ML) to learn metrics' historical behavior, identify patterns and anomalies that indicate possible service issues. You can learn more about dynamic thresholds at [Dynamic thresholds in metric alerts](/azure/azure-monitor/platform/alerts-dynamic-thresholds).
 
     You are going to create a static threshold that raises an alert whenever the average **Connected devices** signal is less than 1.
 
@@ -59,13 +56,11 @@ To create an alert rule:
 
 1. In the **Operator** dropdown, select **Less than**.
 
-    > [!NOTE]
-    > You may want to review all options for Operator and other Alert Logic fields.
+    You may want to review all options for Operator and other Alert Logic fields.
 
 1. In the **Threshold value** textbox, enter **1**.
 
-    > [!NOTE]
-    > The **Preview** chart shows you the condition under which the display refreshes based on the **Alert logic** value settings that you entered. Below the **Preview** are **Time range** and **Time series** filters. These values determine the historical time period that is aggregated using the **Aggregation type** selected previously and how often the condition is evaluated.
+    The **Preview** chart shows you the condition under which the display refreshes based on the **Alert logic** value settings that you entered. Below the **Preview** are **Time range** and **Time series** filters. These values determine the historical time period that is aggregated using the **Aggregation type** selected previously and how often the condition is evaluated.
 
 1. Under **Unit**, select **Count**.
 
@@ -73,8 +68,7 @@ To create an alert rule:
 
 1. Under **Lookback period**, select **1 Minute**.
 
-    > [!NOTE]
-    > If the **Check every** is shorter than **Lookback period**, this results in a sliding window evaluation. For example if the **Lookback period** is 5 minutes and **Check every** is 1 minute, it means that every minute, the preceding 5 minutes of values is aggregated (in this case, averaged), and then evaluated against the condition. After a minute of time has passed, once again the preceding 5 minutes of data is aggregated; this includes one minute of new data and four minutes of data that was already evaluated. Thus, we have a sliding window that moves forward a minute at a time, but is always including 4 minutes of data that was also evaluated as part of an earlier window.
+    If the **Check every** is shorter than **Lookback period**, this results in a sliding window evaluation. For example if the **Lookback period** is 5 minutes and **Check every** is 1 minute, it means that every minute, the preceding 5 minutes of values is aggregated (in this case, averaged), and then evaluated against the condition. After a minute of time has passed, once again the preceding 5 minutes of data is aggregated; this includes one minute of new data and four minutes of data that was already evaluated. Thus, we have a sliding window that moves forward a minute at a time, but is always including 4 minutes of data that was also evaluated as part of an earlier window.
 
     Notice that the **Condition** is now populated and a **Estimated monthly cost** is displayed.
 
@@ -84,8 +78,7 @@ To create an alert rule:
 
     Notice that no action group is selected. There are options to **Select action groups** and **Create action group**.
 
-    > [!NOTE]
-    > An action group is a collection of notification preferences defined by the owner of an Azure subscription. An action group name must be unique within the Resource Group that it is associated with. Azure Monitor and Service Health alerts use action groups to notify users that an alert has been triggered. Various alerts can use the same action group or different action groups depending on the user's requirements. You can configure up to 2,000 action groups in a subscription. You can learn more about creating and managing action groups at [Action groups](/azure/azure-monitor/platform/action-groups).
+    An action group is a collection of notification preferences defined by the owner of an Azure subscription. An action group name must be unique within the Resource Group that it is associated with. Azure Monitor and Service Health alerts use action groups to notify users that an alert has been triggered. Various alerts can use the same action group or different action groups depending on the user's requirements. You can configure up to 2,000 action groups in a subscription. You can learn more about creating and managing action groups at [Action groups](/azure/azure-monitor/platform/action-groups).
 
 1. Under **Actions**, select **Select action groups**.
 
@@ -99,13 +92,11 @@ To create an alert rule:
 
 1. In the **Resource group** dropdown, ensure that your sandbox module resource group is selected.
 
-    > [!NOTE]
-    > Action groups are usually shared across a subscription and would likely be centrally managed by the Azure subscription owner. As such they are more likely to be included in a common resource group rather than in a project specific resource group.
+    Action groups are usually shared across a subscription and would likely be centrally managed by the Azure subscription owner. As such they are more likely to be included in a common resource group rather than in a project specific resource group.
 
 1. In the **Region** dropdown, select **Global**.
 
-    > [!NOTE]
-    > Global requests from clients can be processed by action group services in any region. If one region of the action group service is down, the traffic is automatically routed and processed in other regions. As a global service, an action group helps provide a disaster recovery solution. Regional requests rely on availability zone redundancy to meet privacy requirements and offer a similar disaster recovery solution.
+    Global requests from clients can be processed by action group services in any region. If one region of the action group service is down, the traffic is automatically routed and processed in other regions. As a global service, an action group helps provide a disaster recovery solution. Regional requests rely on availability zone redundancy to meet privacy requirements and offer a similar disaster recovery solution.
 
     The next area, **Instance details** is used to specify the full and display names for the group.
 
@@ -137,8 +128,7 @@ To create an alert rule:
 
     1. Under **Enable the common alert schema**, select **Yes**.
 
-    > [!NOTE]
-    > There are many benefits to using the common alert schema. The common alert schema is a single extensible and unified alert payload that can be used across all the alert services in Azure Monitor. With the common alert schema, you can receive alert notifications with a consistent schema. You can learn more about the Common alert schema at [Common alert schema](/azure/azure-monitor/platform/alerts-common-schema).
+    There are many benefits to using the common alert schema. The common alert schema is a single extensible and unified alert payload that can be used across all the alert services in Azure Monitor. With the common alert schema, you can receive alert notifications with a consistent schema. You can learn more about the Common alert schema at [Common alert schema](/azure/azure-monitor/platform/alerts-common-schema).
 
 1. At the bottom of the **Email/SMS message/Push/Voice** pane, to save the action configuration, select **OK**.
 
@@ -186,8 +176,7 @@ To create an alert rule:
 
     1. For the **Automatically resolve alerts** field, ensure that the checkbox is selected (checked).
 
-        > [!NOTE]
-        > This ensures an alert is resolved should the condition no longer be met, and a new alert is not fired until the alert is resolved.
+    This ensures an alert is resolved should the condition no longer be met, and a new alert is not fired until the alert is resolved.
 
 1. At the bottom of the blade, select **Review + create**, then select **Create**.
 
@@ -197,5 +186,4 @@ The **Alerts** blade of your IoT Hub should now be displayed with alert filters 
 
 A message in the middle at the bottom of the display should show that there are no alerts found.
 
-> [!NOTE]
-> You can go back and edit or create new **Alert rules** or **Action groups** using the buttons near the top of the display.
+You can go back and edit or create new **Alert rules** or **Action groups** using the buttons near the top of the display.

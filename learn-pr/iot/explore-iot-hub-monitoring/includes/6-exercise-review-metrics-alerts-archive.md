@@ -38,10 +38,9 @@ To use the portal to review alerts, complete the following steps.
 
 1. Select **Alert condition**, select **Select all**, then select **Apply**.
 
-    You should now see a summary of alerts for the last hour including a total alerts count and a list of the severity categories with alert counts per category. The alerts we're interested in are **3 - Informational** Severity. You should see at least one alert. If you stopped and restarted the device simulator, you may have generated more that one alert.
+    You should now see a summary of alerts for the last hour including a total alerts count and a list of the severity categories with alert counts per category. If you do not yet see an alert, wait a few more minutes. There is sometimes a delay in the alerts being raised.
 
-    > [!NOTE]
-    > If you do not yet see an alert, wait a few more minutes. There is sometimes a delay in the alerts being raised.
+    The alerts we're interested in are **3 - Informational** Severity. You should see at least one alert. If you stopped and restarted the device simulator, you may have generated more that one alert.
 
 1. In the list of severities, select the number under **Informational**.
 
@@ -49,7 +48,7 @@ To use the portal to review alerts, complete the following steps.
 
 1. Under **Name**, to select metrics alert details about your 3 - Informational alert, select **Connected Devices Less than 1**.
 
-    A **Alert details** pane opens showing a **Summary** of the details for the alert. This pane includes a chart illustrating why the alert fired. A dash line shows the **Threshold** value and the current values for the monitored metric. Below this are more details.
+    An **Alert details** pane opens showing a **Summary** of the details for the alert. This pane includes a chart illustrating why the alert fired. A dash line shows the **Threshold** value and the current values for the monitored metric. Below this are more details.
 
 1. At the top of the pane, below the title, select **History**.
 
@@ -59,10 +58,7 @@ To use the portal to review alerts, complete the following steps.
 
 1. At this point, check your email and/or text and verify you received an alert message.
 
-1. To resolve the alert, return to Visual Studio Code and restart the app.
-
-    > [!NOTE]
-    > As it takes a few minutes to resolve the alert, continue with the remaining tasks.
+1. To resolve the alert, return to Visual Studio Code and restart the app. As it takes a few minutes to resolve the alert, continue with the remaining tasks.
 
 ## Task 3: See the diagnostic logs
 
@@ -90,10 +86,7 @@ Earlier in this lab, you set up your diagnostic logs to be exported to Blob Stor
 
 1. Under **Blob containers**, select **insights-logs-connection**.
 
-    To view the logged data, you need to navigate down a hierarchy of folders.
-
-    > [!NOTE]
-    > If no data is displayed, select **Refresh**. You may need to wait a minute or two and then refresh again.
+    To view the logged data, you need to navigate down a hierarchy of folders. If no data is displayed, select **Refresh**. You may need to wait a minute or two and then refresh again.
 
 1. Navigate down into the folder hierarchy until you reach the minute folder. The folder should appear as **m=00**. As you navigate down you see numeric values for the year, month, day, and hour. The final folder represents the minute. The minute folder contains a blob file that contains your monitor logging data.
 
@@ -136,10 +129,9 @@ Earlier in this lab, you set up your diagnostic logs to be exported to Blob Stor
 
 ## Task 4: Review resolved alert
 
-By this point, you should have received an email or SMS indicating the Monitor alert is resolved. Complete the following steps to review the resolved alert in the portal.
+By this point, you should have received an email or SMS indicating the Monitor alert is resolved. If you have not yet received the email or SMS, wait until they arrive before proceeding.
 
-> [!NOTE]
-> If you have not yet received the email or SMS, wait until they arrive before proceeding.
+Complete the following steps to review the resolved alert in the portal.
 
 1. On the portal toolbar, in the search box, type **monitor**
 

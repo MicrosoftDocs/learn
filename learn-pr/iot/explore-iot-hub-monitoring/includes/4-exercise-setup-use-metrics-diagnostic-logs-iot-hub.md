@@ -100,15 +100,13 @@ In this task, you set up various metrics to watch for when messages are sent to 
     * Notice that the **Scope** is already set to the name of your IoT hub.
     * Notice that **Metric Namespace** is already set to **IoT Hub standard metrics**.
 
-    > [!NOTE]
-    > By default, there is only one metric namespace available. Namespaces are a way to categorize or group similar metrics together. By using namespaces, you can achieve isolation between groups of metrics that might collect different insights or performance indicators. For example, you might have a namespace called **memorymetrics** that tracks memory-use metrics which profile your app. Another namespace called **apptransaction** might track all metrics about user transactions in your application. You can learn more about custom metrics and namespaces at [Custom metrics in Azure Monitor](/azure/azure-monitor/platform/metrics-custom-overview?toc=%2Fazure%2Fazure-monitor%2Ftoc.json#namespace).
+    By default, there is only one metric namespace available. Namespaces are a way to categorize or group similar metrics together. By using namespaces, you can achieve isolation between groups of metrics that might collect different insights or performance indicators. For example, you might have a namespace called **memorymetrics** that tracks memory-use metrics which profile your app. Another namespace called **apptransaction** might track all metrics about user transactions in your application. You can learn more about custom metrics and namespaces at [Custom metrics in Azure Monitor](/azure/azure-monitor/platform/metrics-custom-overview?toc=%2Fazure%2Fazure-monitor%2Ftoc.json#namespace).
 
     Your next step is to add a metric that is used to monitor how many telemetry messages are sent to your IoT Hub.
 
 1. In the **Metric** dropdown, select **Telemetry messages sent**.
 
-    > [!NOTE]
-    > Notice the large number of metrics that are available for you to select from.
+    Notice the large number of metrics that are available for you to select from.
 
 1. Under **Aggregation**, ensure that **Sum** is selected.
 
@@ -139,8 +137,7 @@ In this task, you set up various metrics to watch for when messages are sent to 
 
 1. Under the chart title, on the right side of the toolbar, select **Save to dashboard**, then select **Pin to dashboard**, ensure that **My Dashboard** is selected, and then select **Pin**.
 
-    > [!NOTE]
-    > In order to retain the chart you have just created, it *must* be pinned to a dashboard.
+    In order to retain the chart you have just created, it *must* be pinned to a dashboard.
 
 ## Verify your work
 
@@ -148,9 +145,8 @@ In this task, you set up various metrics to watch for when messages are sent to 
 
 1. Verify that the chart is displayed. Scroll down to the bottom of the display if necessary to view the chart.
 
-    > [!NOTE]
-    > You can customize the size and position of the chart by using drag and drop operations.
-
 1. If the device simulator is running, you should see that telemetry messages are being sent and the device is connected.
+
+    You can customize the size and position of the chart by using drag and drop operations.
 
 Now that you have enabled logging and set up a chart to monitor metrics, it's a good time for you to set up an alert. You'll configure an alert in the next exercise.
