@@ -34,10 +34,13 @@ Can you suggest some UI ideas that easily provide these core functionalities for
 ```
 
 ### Sample Response for UI ideas
+
 ![Sample response for UI Ideas](./media/ui-ideas.png)
 
 > [!NOTE]
 > Bing chat will provide some links to the UI samples to inspire.
+
+![Alt text](./medi/bing-chat-samples.gif)
 
 ## Sketch your UI from the examples recommended by Bing chat
 
