@@ -9,7 +9,7 @@ Powered by OpenAI Codex, GitHub Copilot's generative pretrained language model i
 By the end of this module, you'll be able to:
 
 - Explain what GitHub Copilot is and the advantages it provides.
-- Understand the availability of GitHub Copilot for individuals and Businesses.
+- Understand the availability of GitHub Copilot Individual, Business, and Enterprise.
 - Discuss the future of GitHub Copilot with Copilot X.
 - Learn how to get started using GitHub Copilot and some common configurations.
 - Develop using GitHub Copilot with Visual Studio Code using hands-on exercises.
@@ -18,3 +18,4 @@ By the end of this module, you'll be able to:
 
 - A GitHub account
 - Basic understanding of GitHub fundamentals
+- Awareness that you will be asked for a form of payment when signing up for the free GitHub Copilot trial even though you will not be charged until the trial is over
