@@ -155,6 +155,6 @@ Let's look at the same Query Store reports as we did in the previous exercise.
     :::image type="content" source="../media/7-azure-metrics-query-comparison.png" alt-text="Screenshot of query comparison in the Azure portal.":::
 
 > [!TIP]
-> If you continue to increase vCores for this database, you can improve performance up to a threshold where all queries have plenty of CPU resources. This doesn't mean you must match the number of vCores to the number of concurrent users from your workload. In addition, you can change the Pricing Tier to use **Serverless** Compute Tier, instead of **Provisioned**. This helps you achieve a more auto-scaled approach to a workload. For example,  if you chose a minimum vCore value of two for this workload and maximum vCore value of eight, this workload would immediately scale to eight vCores.
+> If you continue to increase vCores for this database, you can improve performance up to a threshold where all queries have plenty of CPU resources. This doesn't mean you must match the number of vCores to the number of concurrent users from your workload. In addition, you can change the Pricing Tier to use **Serverless** Compute Tier, instead of **Provisioned**. This helps you achieve a more auto-scaled approach to a workload. For example,  if you chose a minimum vCore value of 2 for this workload and maximum vCore value of 8, this workload would immediately scale to 8 vCores.
 
 In the next exercise, you'll observe a performance problem and resolve it by applying best practices for application performance.
