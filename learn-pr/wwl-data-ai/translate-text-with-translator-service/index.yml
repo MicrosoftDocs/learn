@@ -7,8 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: module
-  ms.service: cognitive-services
-  ms.subservice: translator-text
+  ms.prod: azure
+  ms.service: azure-ai-translator
 title: Translate text with Azure AI Translator service
 summary: The Translator service enables you to create intelligent apps and services that can translate text between languages.
 abstract: |
