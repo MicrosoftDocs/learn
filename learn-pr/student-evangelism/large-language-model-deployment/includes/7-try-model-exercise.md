@@ -1,4 +1,4 @@
-In this exercise, you use natural language to interact with an Azure OpenAI deployment in the completion’s playground.
+In this exercise, you use natural language to interact with an Azure OpenAI deployment in the completions playground. 
 
 You may be familiar with natural language generative AI from applications like ChatGPT, but you can use these models for more than chatbots. Let's explore other useful applications of these models.
 
@@ -6,12 +6,11 @@ You may be familiar with natural language generative AI from applications like C
 > In order to complete this exercise, you need the following:
 >
 > - An Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services).
-> - Access granted to Azure OpenAI in the desired Azure subscription.
->   Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the form at [https://aka.ms/oai/access](https://aka.ms/oai/access).
+> - Access granted to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the form at [https://aka.ms/oai/access](https://aka.ms/oai/access).
 > - An Azure OpenAI resource with a model deployed. For more information about model deployment, see the [documentation here](/azure/ai-services/openai/how-to/create-resource)
 >
 
-In this exercise, you will:
+In this exercise, you'll:
 
 - Open the Azure OpenAI completions playground.
 - Use natural language to interact with a deployment.
@@ -22,15 +21,13 @@ Let's get started by opening the [Azure OpenAI Completions playground](https://o
 
 ## Extract information
 
-In this example, you will learn how to extract information using a prompt that consists of both a sample text and an instruction.
+In this example, you'll learn how to extract information by using a prompt that consists of both a sample text and an instruction.
 
 1. Copy the following text and paste it into the completions text box.
 
-    > [!NOTE]
-    > Extract the person’s name, company name, location and phone number from the text below.
-
     ```text
-    
+    Extract the person's name, company name, location and phone number from the text below.
+
     Hello. My name is Robert Smith. I’m calling from Contoso Insurance, Delaware. My colleague mentioned that you are interested in learning about our comprehensive benefits policy. Could you give me a call back at (555) 346-9322 when you get a chance so we can go over the benefits?
     
     ```
@@ -53,7 +50,7 @@ In this example, you combined a prompt with data to extract information using na
 
 ## Extract input and format the output
 
-In this next exercise, you will ask your LLM to organize your text as a table which shows that LLMs isn’t just capable of generating text but also formatting.
+In this next exercise, you'll ask your LLM to organize your text as a table which shows that LLMs are capable of formatting and generating text.
 
 1. Clear the completions text box then copy the following text and paste it there.
 
@@ -86,7 +83,7 @@ In this example, the model is primed with the desired output format: a header ro
 
 ### Try different formatting: JSON
 
-You’ve seen how an LLM can produce a table given some text. You can take this a step further by asking it to produce the data in JSON format.
+You've seen how an LLM can produce a table given some text. You can take this a step further by asking it to produce the data in JSON format.
 
 1. Clear the completions text box then copy the following text and paste it there.
 
@@ -113,13 +110,13 @@ You’ve seen how an LLM can produce a table given some text. You can take this 
     
     ```
 
-In this example, the model returned a JSON array of the fruit and their attributes following the JSON format. It’s important to remember that an LLM can both give you *what* you want and *how* you want it.
+In this example, the model returned a JSON array of the fruit and their attributes following the JSON format. It's important to remember that an LLM can both give you *what* you want and *how* you want it.
 
 ## Classify content
 
 In this exercise, you will see how an LLM is able to sort your content into different categories.
 
-1. Clear the completions text box then copy the following text and paste it there.
+1. Clear the completions text box then copy the following text and paste it there:
 
     ```text
     
@@ -142,7 +139,7 @@ In this exercise, you will see how an LLM is able to sort your content into diff
     
     ```
 
-In this example, you provided one example of a headline and a category and ask the model to classify a second example. This is an example of "one-shot learning": with just one example, the model can generalize to classify a new example.
+In this example, you provided one example of a headline and a category and asked the model to classify a second example. This is an example of "one-shot learning": with just one example, the model can generalize to classify a new example.
 
 > [!NOTE]
 > You can modify headline 2 with other text to generate different categories.
@@ -156,7 +153,7 @@ In this example, you provided one example of a headline and a category and ask t
 
 ## Summarize content
 
-Summarizing content can be hugely helpful if you want to quickly understand what a longer text is saying. This capability is built into the LLM.
+Summarizing content can be helpful if you want to quickly understand what longer text is saying. This capability is built into the LLM.
 
 1. Clear the completions text box then copy the following text and paste it there.
 
@@ -178,11 +175,11 @@ Summarizing content can be hugely helpful if you want to quickly understand what
     
     ```
 
-In this example, you used TL;DR (that is, too long; didn't read) to make the model create a short summary of a larger piece of text.
+In this example, you used TL;DR (too long; didn't read) to make the model create a short summary of a larger piece of text.
 
 ## Generate novel content
 
-Even though the outputs are generated based on frequencies of similar content in the training data, generative AI models are still capable of generating novel content that doesn't exist.
+Even though the outputs are generated based on frequencies of similar content in the training data, generative AI models are capable of generating novel content that doesn't exist.
 
 1. Clear the completions text box then copy the following text and paste it there.
 

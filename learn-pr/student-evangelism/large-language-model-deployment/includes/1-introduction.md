@@ -1,8 +1,8 @@
-To use a large language model (LLM), you can either run it locally or from a cloud provider, like Azure. The benefits of using a cloud hosted version are that the provider leaves you with guarantees that things will work, which means if you’re building a tech startup or adding a large language model to an existing product, you can guarantee performance for customers to trust you. Also your data is yours, you don’t worry about the data leaking out. 
+To use a large language model (LLM), you can run it locally or through a cloud provider, like Azure. The benefits of using a cloud hosted version are that the provider guarantees that the model works. If you’re building a tech startup or adding a large language model to an existing product, you can foster customer trust via guaranteed performance. Additionally, when you run an LLM through a cloud provider, you don’t need to worry about the data leaking because your data is protected. 
 
 ## Scenario: Trying out an LLM for my tech MVP
 
-I have a tech startup within tourism, and I think I can use an LLM for a variety of tasks to run my business more efficiently but also to offer a better customer experience. Before I completely buy into using an LLM, I want to test it out to ensure it’s giving me useful responses. I imagine there should be some sort of testing playground. Another concern is that I want to make sure whatever I’m asking the LLM to do stays between me and my cloud provider.
+Imagine you run a tourism tech startup and think you can use an LLM for various tasks to run your business more efficiently and to offer a better customer experience. Before you choose to use an LLM, you want to test it out to see if it provides useful responses. You also want to ensure that whatever prompts the LLM is given stay between you and your cloud provider. You imagine there should be some sort of testing playground to explore these concerns.
 
 ## What will you learn?
 
@@ -10,7 +10,7 @@ In this module, you'll learn to:
 
 - Provision an Azure OpenAI cloud resource.
 - Create a deployment for a specific LLM model.
-- Experiment with different prompts to see what type of results an LLM can give me in different situations.
+- Experiment with different prompts to see what type of results an LLM can give in different situations.
 
 ## What is the main objective?
 
