@@ -244,7 +244,7 @@ Let's use the DMV queries you loaded earlier to observe performance.
     For a SQL Server on-premises environment, you'd typically use a tool specific to the operating system to track overall resource usage such a CPU. For example, you might use Windows Performance Monitor for this purpose. If you ran this example on an on-premises SQL Server or SQL Server in a virtual machine with two CPUs, you'd see near 100 percent CPU utilization on the server.
 
     > [!NOTE]
-    > You can run another DMV, **sys.resource_stats**, in the context of the Azure SQL Database server's master database to see resource usage for all Azure SQL Database databases associated with the server. This view is less granular and shows resource usage every five minutes (kept for 14 days).
+    > You can run another DMV, `sys.resource_stats`, in the context of the Azure SQL Database server's `master` database to see resource usage for all Azure SQL Database databases associated with the server. This view is less granular and shows resource usage every five minutes (kept for 14 days).
 
     Leave this query editor window open. You'll run it again in the next exercise.
 
