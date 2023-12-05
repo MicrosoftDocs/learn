@@ -18,7 +18,7 @@ Human-wildlife conflict is a serious and growing problem that affects both wildl
 
 ### Sample response
 
-![Response for: break down the core functionalities of my software solution](./media/core-functionalities.png)
+![Screenshot showing the response to a request to break down the core functionalities of a software solution.](./media/core-functionalities.png)
 
 ## Generate UI ideas for your project
 
@@ -35,12 +35,12 @@ Can you suggest some UI ideas that easily provide the core functionalities for t
 
 ### Sample response for UI ideas
 
-![Sample response for UI Ideas](./media/ui-ideas.png)
+![Screenshot showing a sample response for UI ideas.](./media/ui-ideas.png)
 
 > [!NOTE]
 > Bing Chat will provide some links to the UI samples to inspire.
 
-![Alt text](./medi/bing-chat-samples.gif)
+![Animated GIF showing Bing Chat providing links to UI samples for inspiration.](./medi/bing-chat-samples.gif)
 
 ## Sketch your UI from the examples recommended by Bing Chat
 
@@ -51,11 +51,11 @@ Grab your pen and paper and try to sketch your UI.
 
 ### [Optional] Share your mock-up with Bing Chat for more visual inspiration
 
-![Example of sharing your mockup](./media/mockup.png)
+![Screenshot showing an example of sharing a mockup.](./media/mockup.png)
 
-![Ideas on wireframing tools](./media/prototyping-tools.png)
+![Screenshot showing ideas on wireframing tools.](./media/prototyping-tools.png)
 
-![Sample prototypes](./media/sample-prototypes.png)
+![Screenshot showing sample prototypes.](./media/sample-prototypes.png)
 
 ## Next steps
 

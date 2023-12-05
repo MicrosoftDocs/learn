@@ -3,13 +3,13 @@
 
 Put the Challenge project on one side and Bing chat on the other  to work simultaneously. We set up the two browser windows to work side by side throughout this challenge.
 
-![Alt text](./media/split-screen.png)
+![Screenshot showing a split screen between two browser windows being used to work side by side throughout a challenge.](./media/split-screen.png)
 
 ## Go to Bing Chat
 
 Open Bing Chat in your personal profile [https://www.bing.com/new](https://www.bing.com/new).
 
-![Bing chat image](./media/bing-chat.png)
+![Screenshot showing Bing chat interface.](./media/bing-chat.png)
 
 Click  **Chat now.**
 
@@ -20,7 +20,7 @@ Click  **Chat now.**
 
 Set the conversation style to  **More Creative**
 
-![Showing the three different converational styles](./media/conversation-style.png)
+![Screenshot showing the three different conversational styles.](./media/conversation-style.png)
 
 > [!NOTE]
 > Setting the conversation style helps you define what type of output you will be getting. Creative mode encourages Bing to use more expressive language, use humour or emotion, and generate different types of content. Precise mode, on the other end, focuses on clarity and accuracy, while balanced looks to provide a balance between the two extremes.

@@ -20,7 +20,7 @@ Hey Bing, from what I have shared so far about my idea, I now want to implement 
 
 ### Sample response
 
-![Project features](./media/poject-features.png)
+![Screenshot showing a sample Bing chat response discussing project features from a prompt.](./media/poject-features.png)
 
 But before we focus on each feature separately, let us ask Bing chat to help identify the tools and services we need to put our project together.
 
@@ -32,7 +32,7 @@ Thanks for the help so far. To successfully implement these features, which tool
 
 ### Sample response on tools/services for our project
 
-![Tools and services to implement our features](./media/tools-for-project.png)
+![Screenshot showing the tools and services used to implement our features.](./media/tools-for-project.png)
 
 ## Step 2: Select a feature and flesh out more details on implementation
 
@@ -53,7 +53,7 @@ We are building a wildlife AI system. How can we create a dashboard for users to
 
 ### Sample response for a specific feature
 
-![Image showing sample response](./media/sample-response.png)
+![Screenshot showing a sample response to a specific feature.](./media/sample-response.png)
 
 Bing gives us an overview of the different tools we may need to ensure we successfully implement a product. We can ask Bing for ideas on how we can use the tools in the project as follows:
 
@@ -86,7 +86,7 @@ Can you guide me on how to create the calendar of emotions on react native?
 
 #### Sample response on different components/libraries
 
-![Resources for calendar of emotions](./media/emotional-calendar.png)
+![Screenshot showing the resources for a calendar of emotions.](./media/emotional-calendar.png)
 
 As a student you have free access to [GitHub Copilot](https://education.github.com/pack?WT.mc_id=academic-114050-bethanycheum) your AI-powered coding buddy as you bring your MVP to life. You can use GitHub Copilot on various IDEs including Visual Studio, JetBrains, Neovim and Visual Studio Code.
 
