@@ -96,7 +96,7 @@ You can use extended events SQL Managed Instance, just like SQL Server, by creat
 - File targets are supported with Azure Blob storage because you don't have access to the underlying operating system disks.
 - Some specific events are added for SQL Managed Instance to trace events specific to the management and execution of the instance.
 
-You can use SSMS or T-SQL to create and start sessions. You can use SSMS to view extended event session target data or the system function `sys.fn_xe_file_target_read_file`. SSMS's ability to view live data is supported for SQL Managed Instance.
+You can use SSMS or T-SQL to create and start sessions. You can use SSMS to view extended event session target data or the system function `sys.fn_xe_file_target_read_file`. The ability of SSMS to view live data is supported for SQL Server and Azure SQL Managed Instance.
 
 ## Performance scenarios for Azure SQL
 
