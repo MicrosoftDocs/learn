@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: module
-  ms.prod: azure
   ms.service: azure-ai-services
 title: Fundamentals of Azure AI services
 summary: In this module, you learn the fundamentals of how Azure AI services can be used to build applications.
