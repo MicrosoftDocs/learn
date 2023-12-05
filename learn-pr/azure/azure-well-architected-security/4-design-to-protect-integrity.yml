@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-well-architected-security.4-design-to-protect-integrity
-title: Infrastructure protection
+title: Design to protect integrity
 metadata:
-  title: Infrastructure protection
+  title: Design to protect integrity
   description: In this unit, we'll discuss how to protect access to your infrastructure
   ms.date: 05/19/2020
   author: martinekuan

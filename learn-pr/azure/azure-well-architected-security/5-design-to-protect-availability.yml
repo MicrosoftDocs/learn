@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-well-architected-security.5-design-to-protect-availability
-title: Encryption
+title: Design to protect availability
 metadata:
-  title: Encryption
+  title: Design to protect availability
   description: In this unit, we'll discuss how to use encryption to secure your architecture
   ms.date: 05/19/2020
   author: martinekuan

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-well-architected-security.3-design-to-protect-confidentiality
-title: Identity management
+title: Design to protect confidentiality
 metadata:
-  title: Identity management
+  title: Design to protect confidentiality
   description: In this unit, we'll discuss how to protect your identities
   ms.date: 05/19/2020
   author: martinekuan

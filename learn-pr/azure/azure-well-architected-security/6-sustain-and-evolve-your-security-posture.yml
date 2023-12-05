@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-well-architected-security.6-sustain-and-evolve-your-security-posture
-title: Network security
+title: Sustain and evolve your security posture
 metadata:
-  title: Network security
+  title: Sustain and evolve your security posture
   description: In this unit, we'll discuss how to secure your network infrastructure
   ms.date: 10/17/2022
   author: martinekuan
