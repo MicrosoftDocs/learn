@@ -81,7 +81,7 @@ You can use extended events for Azure SQL Database, just like SQL Server, by cre
 - File, `ring_buffer`, and counter targets are supported.
 - File targets are supported with Azure Blob storage because you don't have access to the underlying operating system disks.
 
-You can use SSMS or T-SQL to create and start sessions. You can use SSMS to view extended event session target data or the system function **sys.fn_xe_file_target_read_file**.
+You can use SSMS or T-SQL to create and start sessions. You can use SSMS to view extended event session target data or the system function `sys.fn_xe_file_target_read_file`.
 
 > [!NOTE]
 > It's not possible to use SSMS to view active data for Azure SQL Database.
