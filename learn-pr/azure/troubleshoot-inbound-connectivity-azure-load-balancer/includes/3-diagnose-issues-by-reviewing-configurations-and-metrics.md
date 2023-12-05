@@ -36,7 +36,7 @@ In the setup used to generate this graph, the back-end pool contained just two V
 
 The **Resource health** page for Load Balancer reports on the general state of your system. You access this page in the portal from Azure Monitor. Select **Service Health**, then select **Resource Health**, and then select **Load Balancer** as the resource type.
 
-:::image type="content" source="../media/3-monitor.png" alt-text="Screenshots that shows the Monitor and Service Health pages in the Azure portal.":::
+:::image type="content" source="../media/3-monitor.png" alt-text="Screenshot that shows the Monitor and Service Health pages in the Azure portal.":::
 
 Select your load balancer. You see a report that details the health history of your service. You can expand any item in the report to view the details. The following image shows the summary generated when one of the VMs in the back-end pool was taken offline.
 

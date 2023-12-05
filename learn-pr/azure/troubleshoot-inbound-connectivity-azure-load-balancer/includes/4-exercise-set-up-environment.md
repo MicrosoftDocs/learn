@@ -152,7 +152,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 
 1. At the top of the page, set the time range to **Last 30 minutes**. The chart should look similar to the one shown here. Note the peak value of the average packet count.
 
-    :::image type="content" source="../media/4-packet-count-healthy.png" alt-text="The average packet count while the load balancer is in a healthy state.":::
+    :::image type="content" source="../media/4-packet-count-healthy.png" alt-text="Chart showing the average packet count while the load balancer is in a healthy state.":::
 
 1. Select **Pin to dashboard**.
 
