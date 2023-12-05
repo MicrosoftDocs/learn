@@ -61,7 +61,7 @@ In this view, you see specific recommendations, and the history of any automatic
 
 You can set automatic tuning options at the database server or database level. If you enabled automatic tuning in this scenario, the index would be created automatically.
 
-You can also view automatic tuning options through the **sys.database_automatic_tuning_options** DMV.
+You can also view automatic tuning options through the `sys.database_automatic_tuning_options` DMV.
 
 > [!NOTE]
 > Recommendations and automation for indexes and parameter-sensitive plans aren't available for Azure SQL Managed Instance or SQL Server. Automatic plan correction is available.
