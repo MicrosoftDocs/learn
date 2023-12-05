@@ -38,5 +38,4 @@ units:
 - learn.onboard-sensor-microsoft-defender-iot.knowledge-check
 - learn.onboard-sensor-microsoft-defender-iot.summary
 badge:
-  uid: |
-    learn.onboard-sensor-microsoft-defender-iot.badge
+  uid: learn.onboard-sensor-microsoft-defender-iot.badge
