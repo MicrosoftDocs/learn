@@ -29,7 +29,7 @@ The cloud provides a method for Microsoft to provide additional services in form
 
 The main scenario automatic tuning is designed to address pertains to indexes. Automatic tuning analyzes data from a database's telemetry, including the Query Store and DMVs, to recommend indexes to be created that can improve application performance. Additionally, you can enable automatic tuning to automatically create indexes that can improve query performance. Automatic tuning also monitors index changes, and recommends dropping or automatically drops indexes that don't improve query performance.
 
-Automatic tuning for Azure SQL Database takes a conservative approach to recommending indexes. This means that recommendations that might appear in a DMV like **sys.dm_db_missing_index_details**, or a query show plan, might not show up immediately as recommendations for automatic tuning. Automatic tuning services monitor queries over time and use machine-learning algorithms to make recommendations to truly affect query performance.
+Automatic tuning for Azure SQL Database takes a conservative approach to recommending indexes. This means that recommendations that might appear in a DMV like `sys.dm_db_missing_index_details`, or a query show plan, might not show up immediately as recommendations for automatic tuning. Automatic tuning services monitor queries over time and use machine-learning algorithms to make recommendations to truly affect query performance.
 
 Be aware that automatic tuning for index recommendations doesn't account for any overhead performance an index can cause on your operations, such as inserts, updates, or deletes. Usually, the new nonclustered indexes that the automatic indexes feature create have a major positive performance impact.
 
