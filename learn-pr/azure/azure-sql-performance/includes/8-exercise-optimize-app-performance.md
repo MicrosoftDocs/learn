@@ -103,7 +103,7 @@ With these queries, you can observe the following facts:
 
 - Many requests constantly have a `wait_type` of WRITELOG, with a value > 0.
 - The `WRITELOG` wait type is one of the highest counts for wait types.
-- The average time to write to the transaction log (the **avg_tlog_io_write_ms** column in the *tlog_io.sql* result set) is somewhere around 2 ms.
+- The average time to write to the transaction log (the `avg_tlog_io_write_ms` column in the **tlog_io.sql** result set) is somewhere around 2 ms.
 
 The duration of this workload on a SQL Server 2022 instance with an SSD drive is approximately 10-12 seconds. The total duration on Azure SQL Database with a Gen5 v8 core is approximately 25 seconds.
 
@@ -111,7 +111,7 @@ The duration of this workload on a SQL Server 2022 instance with an SSD drive is
 
 ## Decide on a resolution
 
-The problem isn't a high percentage of log write activity. The Azure portal and `sys.dm_db_resource_stats` don't show any numbers higher than 20-25 percent (you don't need to query these). The problem isn't an IOPS limit either. The issue is that this application workload is sensitive to low latency for transaction log writes, and the general purpose tier isn't designed for this type of latency requirement. The documentation for Azure SQL Database states that the resource limits for I/O latency are 5-7 ms.
+The problem isn't a high percentage of log write activity. The Azure portal and `sys.dm_db_resource_stats` don't show any numbers higher than 20-25 percent (you don't need to query these). The problem isn't an IOPS limit either. The issue is that this application workload is sensitive to low latency for transaction log writes, and the general purpose tier isn't designed for this type of latency requirement. The expected I/O latency for Azure SQL Database is 5-7 ms.
 
 > [!NOTE]
 > General purpose Azure SQL Database documents approximate I/O latency averages as 5-7 (writes) and 5-10 (reads). You might experience latencies more like these numbers. Latencies for general purpose Azure SQL Managed Instance are similar. If your application is very sensitive to I/O latencies, consider Business Critical tiers.
