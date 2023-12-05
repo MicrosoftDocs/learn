@@ -105,7 +105,7 @@ With these queries, you can observe the following facts:
 - The `WRITELOG` wait type is one of the highest counts for wait types.
 - The average time to write to the transaction log (the **avg_tlog_io_write_ms** column in the *tlog_io.sql* result set) is somewhere around 2 ms.
 
-The duration of this workload on a SQL Server 2019 instance with an SSD drive is approximately 10-12 seconds. The total duration on Azure SQL Database with a Gen5 v8 core is approximately 25 seconds.
+The duration of this workload on a SQL Server 2022 instance with an SSD drive is approximately 10-12 seconds. The total duration on Azure SQL Database with a Gen5 v8 core is approximately 25 seconds.
 
 `WRITELOG` wait types with higher wait times are indicative of latency flushing to the transaction log. A wait time of 2 ms per write doesn't seem like much, but on a local SSD drive these waits can be less than 1 ms.
 
