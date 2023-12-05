@@ -146,7 +146,7 @@ To create an alert rule:
 
     A few things happen at the same time. First, **Add action group** pane closes, leaving you on the **Create an alert rule** blade, with the new action group added to the list of **Action group name**.
 
-    Then, in quick succession, you should receive both an SMS notification and an email, both of which inform you that you have been added to the **GPEmailAG** action group. In the SMS message, note that you can reply to the message to stop receiving future notifications. You can learn more about the options at [Action groups](/azure/azure-monitor/platform/alerts-sms-behavior). In the email, you have links that you can select to view the details on action groups and, towards the bottom of the email (in a smaller font) you can see the option to unsubscribe.
+    Then, in quick succession, you should receive both an SMS notification and an email, both of which inform you that you have been added to the **GPEmailAG** action group. In the SMS message, you can reply to the message to stop receiving future notifications. You can learn more about the options at [Action groups](/azure/azure-monitor/platform/alerts-sms-behavior). In the email, you have links that you can select to view the details on action groups and, towards the bottom of the email (in a smaller font) you can see the option to unsubscribe.
 
 1. Select **Next: Details >** to advance to Alert rule details.
 
@@ -171,12 +171,11 @@ To create an alert rule:
 
     1. For the **Enable upon creation** field, ensure that the checkbox is selected (checked).
 
-        > [!NOTE]
-        > It can take up to 10 minutes for a metric alert rule to become active.
+        It can take up to 10 minutes for a metric alert rule to become active.
 
     1. For the **Automatically resolve alerts** field, ensure that the checkbox is selected (checked).
 
-    This ensures an alert is resolved should the condition no longer be met, and a new alert is not fired until the alert is resolved.
+        This ensures an alert is resolved should the condition no longer be met, and a new alert is not fired until the alert is resolved.
 
 1. At the bottom of the blade, select **Review + create**, then select **Create**.
 
