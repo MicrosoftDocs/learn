@@ -8,7 +8,7 @@ In order to trigger the alert where the number of connected devices is less than
 
 1. Wait 30 seconds before proceeding to the next step.
 
-1. Navigate to your dashboard that includes the metrics chart that you created.
+1. Use the portal menu to navigate to your dashboard that includes the metrics chart that you created.
 
 1. Open the metrics chart that you pinned to the dashboard by selecting the chart title.
 
@@ -80,7 +80,7 @@ Earlier in this lab, you set up your diagnostic logs to be exported to Blob Stor
 
     You can use the **Storage browser** to verify that your data is being added to the storage account.
 
-1. In the **Storage Browser** blade, expand the **Blob containers** node.
+1. In the **Storage Browser** blade, select the **Blob containers** node.
 
     When Azure Monitor first sends data to a storage account, it creates a container named **insights-logs-connections**.
 
@@ -88,11 +88,9 @@ Earlier in this lab, you set up your diagnostic logs to be exported to Blob Stor
 
     To view the logged data, you need to navigate down a hierarchy of folders. If no data is displayed, select **Refresh**. You may need to wait a minute or two and then refresh again.
 
-1. Navigate down into the folder hierarchy until you reach the minute folder. The folder should appear as **m=00**. As you navigate down you see numeric values for the year, month, day, and hour. The final folder represents the minute. The minute folder contains a blob file that contains your monitor logging data.
+1. Navigate down into the folder hierarchy until you reach the minute folder. The folder should appear as **m=00**. As you navigate down you see numeric values for the year, month, day, and hour. The final folder represents the minute. The minute folder contains a JSON format blob file that contains your monitor logging data.
 
-1. Select the json file name.
-
-1. Select the **...** context menu for the file, then select **Download**.
+1. Select the **...** context menu for the .json file, then select **Download**.
 
 1. Open your **File Explorer** and navigate to your **Downloads** folder.
 

@@ -32,7 +32,7 @@ In this task, you create a storage account that contains your device telemetry l
 
 ## Task 2: Enable diagnostics
 
-In this task, you configure Azure Monitor device connect and disconnect diagnostics. Raw device connection data is stored in the storage account that you created in task 1.
+In this task, you configure Azure Monitor device connect and disconnect diagnostics. Device connection data is stored in the storage account that you created in task 1.
 
 1. Select **Home**.
 
@@ -59,7 +59,7 @@ In this task, you configure Azure Monitor device connect and disconnect diagnost
 
     More fields are made available once you select this destination option.
 
-1. For the **Subscription** field, select the **Concierge Subscription** resource group.
+1. For the **Subscription** field, select **Concierge Subscription**.
 
 1. For the **Storage account** field, select the storage account name that you used in task 1. After you create the diagnostic setting, a storage container is created in the storage account as soon as an event occurs in one of the enabled log categories.
 

@@ -8,7 +8,7 @@ In this exercise, you add an alert that triggers when one or more devices are co
 
 To create an alert rule:
 
-1. In the portal menu, select **Dashboard**.
+1. In the portal menu, select **Home**.
 
 1. In the **Resources** tile, select your IoT hub.
 
@@ -48,25 +48,23 @@ To create an alert rule:
 
     Notice that **Threshold** has two possible selections: **Static** and **Dynamic**. Also notice that **Static** is selected and **Dynamic** is unavailable for this signal type.
 
-    As the names suggest, static thresholds specify a constant expression for the threshold, whereas dynamic threshold detection leverages advanced machine learning (ML) to learn metrics' historical behavior, identify patterns and anomalies that indicate possible service issues. You can learn more about dynamic thresholds at [Dynamic thresholds in metric alerts](/azure/azure-monitor/platform/alerts-dynamic-thresholds).
+    As the names suggest, static thresholds specify a constant expression for the threshold, whereas dynamic threshold detection leverages advanced machine learning (ML) to learn metrics' historical behavior, identify patterns and anomalies that indicate possible service issues. You can learn more about dynamic thresholds at [Create a metric alert with dynamic thresholds](/azure/azure-monitor/platform/alerts-dynamic-thresholds).
 
     You are going to create a static threshold that raises an alert whenever the average **Connected devices** signal is less than 1.
 
-1. Under **Aggregation type**, ensure that **Average** is selected.
+1. In the **Aggregation type** dropdown, select **Average**.
 
 1. In the **Operator** dropdown, select **Less than**.
-
-    You may want to review all options for Operator and other Alert Logic fields.
 
 1. In the **Threshold value** textbox, enter **1**.
 
     The **Preview** chart shows you the condition under which the display refreshes based on the **Alert logic** value settings that you entered. Below the **Preview** are **Time range** and **Time series** filters. These values determine the historical time period that is aggregated using the **Aggregation type** selected previously and how often the condition is evaluated.
 
-1. Under **Unit**, select **Count**.
+1. In the **Unit** dropdown, select **Count**.
 
-1. Under **Check every**, ensure that **1 minute** is selected.
+1. In the **Check every** dropdown, select **1 minute**.
 
-1. Under **Lookback period**, select **1 Minute**.
+1. In the **Lookback period** dropdown, select **1 Minute**.
 
     If the **Check every** is shorter than **Lookback period**, this results in a sliding window evaluation. For example if the **Lookback period** is 5 minutes and **Check every** is 1 minute, it means that every minute, the preceding 5 minutes of values is aggregated (in this case, averaged), and then evaluated against the condition. After a minute of time has passed, once again the preceding 5 minutes of data is aggregated; this includes one minute of new data and four minutes of data that was already evaluated. Thus, we have a sliding window that moves forward a minute at a time, but is always including 4 minutes of data that was also evaluated as part of an earlier window.
 
@@ -90,7 +88,7 @@ To create an alert rule:
 
 1. On the **Basics** tab, under **Subscription**, ensure that **Concierge Subscription** is selected.
 
-1. In the **Resource group** dropdown, ensure that your sandbox module resource group is selected.
+1. In the **Resource group** dropdown, ensure that <rgn>[sandbox resource group name]</rgn> is selected.
 
     Action groups are usually shared across a subscription and would likely be centrally managed by the Azure subscription owner. As such they are more likely to be included in a common resource group rather than in a project specific resource group.
 
@@ -111,8 +109,6 @@ To create an alert rule:
     > The display name is used in place of a full action group name when notifications are sent using this group and is limited to a max of 12 characters.
 
 1. Select **Next: Notifications >** to view the action group notification fields.
-
-1. Open the **Notification Type** dropdown, and then review the available options.
 
 1. In the **Notification Type** dropdown, select **Email/SMS message/Push/Voice**.
 
@@ -138,7 +134,7 @@ To create an alert rule:
 
     1. Open the **Action type** dropdown, and then review the available options.
 
-        At this point, we could add multiple actions if we needed to launch some business integration via **WebHook** or an **Azure Function**. For this exercise, a simple notification is enough.
+        At this point, we could add multiple actions if we needed to launch some business integration via **WebHook** or an **Azure Function**. For this exercise, a simple notification is enough. Close the **Action type** dropdown without selecting anything.
 
     1. At the bottom of the **Add action group** blade, to validate this action group, select **Review + create**.
 
@@ -150,7 +146,9 @@ To create an alert rule:
 
 1. Select **Next: Details >** to advance to Alert rule details.
 
-    1. In the **Subscription** field, ensure that your sandbox resource group is selected.
+    1. In the **Subscription** field, select **Concierge Subscription**.
+
+    1. In the **Resource group** dropdown, ensure that <rgn>[sandbox resource group name]</rgn> is selected.
 
     1. In the **Severity** field, ensure that **3 - Informational** is selected.
 
@@ -181,7 +179,7 @@ To create an alert rule:
 
 ## Verify your work
 
-The **Alerts** blade of your IoT Hub should now be displayed with alert filters and counts. If the pane has not automatically updated with your alert, select **Refresh**.
+The **Alerts** blade of your IoT Hub should now be displayed with alert filters and counts.
 
 A message in the middle at the bottom of the display should show that there are no alerts found.
 
