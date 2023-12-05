@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-operator-nexus.operator-nexus-platform-videos
-title: Operator Nexus technical deepdive videos
+title: Operator Nexus technical deep dive videos
 metadata:
-  title: Operator Nexus technical deepdive videos
+  title: Operator Nexus technical deep dive videos
   description: This is a series of technical deep dive videos for Nexus.
   ms.date: 12/01/2023
   author: lnyswonger
