@@ -9,7 +9,6 @@ metadata:
   ms.author: franksolomon
   ms.topic: unit
   ms.reviewer: franksolomon
-  ms.prod: learning-azure
 durationInMinutes: 8
 sandbox: true
 notebook: notebooks/3-5-exercise-normalize-data-predict-missing-values.ipynb
