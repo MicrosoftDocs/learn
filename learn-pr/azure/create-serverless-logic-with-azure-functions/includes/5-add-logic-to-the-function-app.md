@@ -382,4 +382,4 @@ We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to te
 
 1. In the Developer menu on the left, select **Monitor** to see that the request has been logged to Application Insights. The **Monitor** pane appears for your function.
 
-The **Invocations Tab** of the pane displays **Invocation Traces** for each of you function invocations. If you select the **Date(UTC)** value for one of the invocations, you can see more detail about the execution of your function.
+   The **Invocations Tab** of the pane displays **Invocation Traces** for each of your function invocations. Select the **Date(UTC)** value for one of the invocations and view the detail about the execution of your function.
