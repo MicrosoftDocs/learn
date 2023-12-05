@@ -1,7 +1,7 @@
 
 ## Use 'Split Screen' to work side by side.
 
-Put the Challenge project on one side and Bing chat on the other  to work simultaneously. We will set up the two browser windows to work side by side throughout this challenge.
+Put the Challenge project on one side and Bing chat on the other  to work simultaneously. We set up the two browser windows to work side by side throughout this challenge.
 
 ![Alt text](./media/split-screen.png)
 
