@@ -1,11 +1,11 @@
 
-Now that you have completed your brainstorming/ideation and used Bing Chat in the first challenge project, we are using it to guide us in generating a prototype.
+Now that you completed your brainstorming/ideation and used Bing Chat in the first challenge project, we're using it to guide us in generating a prototype.
 
 ## Identify the core functionalities of your software
 
 ### Steps
 
-1. Copy the sample prompt provided and edit it to add your refined idea one-paragraph summary from unit four of the previous challenge.
+1. Copy the sample prompt provided and edit it to add your refined idea one-paragraph summary from unit 4 of the previous challenge.
 1. Paste it into Bing Chat.
 
 ### Sample prompt
@@ -40,7 +40,7 @@ Can you suggest some UI ideas that easily provide the core functionalities for t
 > [!NOTE]
 > Bing Chat will provide some links to the UI samples to inspire.
 
-![Animated GIF showing Bing Chat providing links to UI samples for inspiration.](./medi/bing-chat-samples.gif)
+![Animated GIF showing Bing Chat providing links to UI samples for inspiration.](./media/bing-chat-samples.gif)
 
 ## Sketch your UI from the examples recommended by Bing Chat
 
@@ -59,4 +59,4 @@ Grab your pen and paper and try to sketch your UI.
 
 ## Next steps
 
-Bing Chat provided us with valuable insights and inspiration for creating our mock-up and prototype. We were able to use the tools and visual resources provided by Bing Chat to develop our ideas and refine our vision. Having created our prototype, we are now ready to move forward with the next phase of our project and begin building.
+Bing Chat provided us with valuable insights and inspiration for creating our mock-up and prototype. We were able to use the tools and visual resources provided by Bing Chat to develop our ideas and refine our vision. Having created our prototype, we're now ready to move forward with the next phase of our project and begin building.

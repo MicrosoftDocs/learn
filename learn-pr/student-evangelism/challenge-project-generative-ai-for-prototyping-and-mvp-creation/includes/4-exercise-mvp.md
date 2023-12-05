@@ -90,7 +90,7 @@ Can you guide me on how to create the calendar of emotions on react native?
 
 As a student you have free access to [GitHub Copilot](https://education.github.com/pack?WT.mc_id=academic-114050-bethanycheum) your AI-powered coding buddy as you bring your MVP to life. You can use GitHub Copilot on various IDEs including Visual Studio, JetBrains, Neovim and Visual Studio Code.
 
-But before you leave to create your awesome project, finish this module to identify more opportunities for you to share your project globally in a global student competition and access founders' programs for additional support to launch your own startup.
+But before you leave to create your awesome project, finish this module to identify more opportunities for you to share your project globally in a global student competition and access founders' programs for moreadditional support to launch your own startup.
 
 ## Step 5: Free deployment services to share your project with others
 
@@ -106,7 +106,7 @@ The output by Bing gives ideas on different tools and services to deploy the pro
 
 ## Next steps
 
-Whether you're building a website, an application or an API there are various tools you can utilize to deploy your solution, be sure to modify the prompt to match your needs. Some additional resources you can use to deploy your solution are:
+Whether you're building a website, an application or an API there are various tools you can utilize to deploy your solution, be sure to modify the prompt to match your needs. Some more resources you can use to deploy your solution are:
 
 - [Deploy your company website on Azure using Azure Static Web Apps](https://learn.microsoft.com/training/paths/azure-static-web-apps/?WT.mc_id=academic-114050-bethanycheum)
 - [Deploy your web application with Azure using Azure Web Apps](https://learn.microsoft.com/training/paths/deploy-a-website-with-azure-app-service/?WT.mc_id=academic-114050-bethanycheum)
