@@ -1,8 +1,8 @@
 Index and query design are closely linked. After we build the index, we can perform queries. A crucial component to understand is that the schema of the index determines what queries can be answered.
 
-Azure Cognitive Search queries can be submitted as an HTTP or REST API request, with the response coming back as JSON. Queries can specify what fields are searched and returned, how search results are shaped, and how the results should be filtered or sorted. A query that doesn't specify the field to search will execute against all the searchable fields within the index.
+Azure AI Search queries can be submitted as an HTTP or REST API request, with the response coming back as JSON. Queries can specify what fields are searched and returned, how search results are shaped, and how the results should be filtered or sorted. A query that doesn't specify the field to search will execute against all the searchable fields within the index.
 
-Azure Cognitive Search supports two types of syntax: simple and full Lucene. Simple syntax covers all of the common query scenarios, while full Lucene is useful for advanced scenarios.
+Azure AI Search supports two types of syntax: simple and full Lucene. Simple syntax covers all of the common query scenarios, while full Lucene is useful for advanced scenarios.
 
 ### Simple query requests
 
@@ -18,7 +18,7 @@ Breaking the query into components, it's made up of search terms, (`coffee`), pl
 
 By default, the search engine will match any of the terms in the query. Content containing just `coffee` would be a match. In this example, using `-"busy"` would lead to the search results including all content that doesn't have the exact string "busy" in it.
 
-The simple query syntax in Azure Cognitive Search excludes some of the more complex features of the full Lucene query syntax, and it's the default search syntax for queries. 
+The simple query syntax in Azure AI Search excludes some of the more complex features of the full Lucene query syntax, and it's the default search syntax for queries. 
 
 You can learn more about query syntax in the [documentation](/azure/search/query-odata-filter-orderby-syntax). 
 

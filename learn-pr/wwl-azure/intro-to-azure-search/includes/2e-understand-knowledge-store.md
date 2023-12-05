@@ -4,7 +4,7 @@ A knowledge store is persistent storage of enriched content. The purpose of a kn
 
 Recall that skillsets move a document through a sequence of enrichments that invoke transformations, such as recognizing entities or translating text. The outcome can be a search index, or projections in a knowledge store. The two outputs, search index and knowledge store, are mutually exclusive products of the same pipeline; derived from the same inputs, but resulting in output that is structured, stored, and used in different applications.
 
-While the focus of an Azure Cognitive Search solution is usually to create a searchable index, you can also take advantage of its data extraction and enrichment capabilities to persist the enriched data in a knowledge store for further analysis or processing. 
+While the focus of an Azure AI Search solution is usually to create a searchable index, you can also take advantage of its data extraction and enrichment capabilities to persist the enriched data in a knowledge store for further analysis or processing. 
 
 A knowledge store can contain one or more of three types of projection of the extracted data:  
 - Table projections are used to structure the extracted data in a relational schema for querying and visualization 
