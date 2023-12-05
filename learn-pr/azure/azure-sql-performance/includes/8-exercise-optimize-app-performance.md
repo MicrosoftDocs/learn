@@ -6,7 +6,7 @@ In some cases, migrating an existing application and SQL query workload to Azure
 
 To support a new extension to a website for `AdventureWorks` orders to provide a rating system from customers, you need to add a new table for a heavy set of concurrent INSERT activity. You've tested the SQL query workload on a development computer with SQL Server 2022 that has a local SSD drive for the database and transaction log.
 
-When you move your test to Azure SQL Database by using the general purpose tier (eight vCores), the INSERT workload is slower. Should you change the service objective or tier to support the new workload, or should you look at the application?
+When you move your test to Azure SQL Database by using the general purpose tier (8 vCores), the INSERT workload is slower. Should you change the service objective or tier to support the new workload, or should you look at the application?
 
 You can find all the scripts for this exercise in the *04-Performance\tuning_applications* folder in the GitHub repository you cloned or the zip file you downloaded.
 
