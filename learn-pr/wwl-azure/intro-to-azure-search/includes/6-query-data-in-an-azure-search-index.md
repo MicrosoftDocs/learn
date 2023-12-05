@@ -14,7 +14,7 @@ coffee (-"busy" + "wifi")
 
 This query is trying to find content about coffee, excluding busy and including wifi.
 
-Breaking the query into components, it's made up of search terms, (`coffee`), plus two verbatim phrases, `"busy"` and `"wifi"`, and operators (`-`, `+`, and `( )`). The search terms can be matched in the search index in any order or location in the content. The two phrases will only match with exactly what is specified, so `wi-fi` would not be a match. Finally, a query can contain a number of operators. In this example, the `-` operator tells the search engine that these phrases should *NOT* be in the results. The parenthesis group terms together, and set their precedence.
+Breaking the query into components, it's made up of search terms (`coffee`), plus two verbatim phrases, `"busy"` and `"wifi"`, and operators (`-`, `+`, and `( )`). The search terms can be matched in the search index in any order or location in the content. The two phrases will only match with exactly what is specified, so `wi-fi` would not be a match. Finally, a query can contain a number of operators. In this example, the `-` operator tells the search engine that these phrases should *NOT* be in the results. The parenthesis group terms together, and set their precedence.
 
 By default, the search engine will match any of the terms in the query. Content containing just `coffee` would be a match. In this example, using `-"busy"` would lead to the search results including all content that doesn't have the exact string "busy" in it.
 
