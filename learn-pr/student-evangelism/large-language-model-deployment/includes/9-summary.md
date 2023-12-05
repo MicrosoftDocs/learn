@@ -19,5 +19,5 @@ Finally, you learned to verify your deployment by using Azure OpenAI Studio. You
 - For more information about creating an Azure OpenAI deployment, see the [documentation here](/azure/ai-services/openai/how-to/create-resource#deploy-a-model).
 - [Azure OpenAI Service pricing](https://azure.microsoft.com/products/ai-services/openai-service/#pricing)
 - [Azure AI Hub](https://github.com/Azure-Samples/azure-ai)
-- The [Transparency Note for Azure OpenAI Service](/legal/ai-services/openai/transparency-note) provides details on the capabilities, use cases, and limitations of Azure OpenAI models.
+- The [Transparency Note for Azure OpenAI Service](/legal/cognitive-services/openai/transparency-note) provides details on the capabilities, use cases, and limitations of Azure OpenAI models.
 - Take the [Azure Associate AI Engineer Exam](/credentials/certifications/exams/ai-102/) to validate your learning.

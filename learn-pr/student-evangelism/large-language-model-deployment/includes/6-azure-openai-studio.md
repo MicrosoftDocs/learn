@@ -2,13 +2,13 @@ Playgrounds are useful interfaces in Azure OpenAI Studio that you can use to exp
 
 ## Completions playground
 
-The Completions playground allows you to make calls to your deployed models through a text-in/text-out interface and adjust parameters. You need to select the deployment name of your model under Deployments. Optionally, you can use the provided examples to get you started, and then you can enter your own prompts.
+The Completions playground allows you to make calls to, and adjust the parameters of, your deployed model through a text-in/text-out interface. Select the deployment name of your model under Deployments. Optionally, you can use the provided examples to get you started, and then you can enter your own prompts.
 
-[![Screenshot of the Azure OpenAI Studio portal's completions playground.](../media/completions-playground.png)](https://github.com/MicrosoftDocs/learn/blob/2494909f827dd773f5802e19996178eaf37fce16/learn-pr/wwl-data-ai/get-started-openai/media/azure-openai-completions-playground.png)
+:::image type="content" source="../media/completions-playground.png" alt-text="Screenshot of the Azure OpenAI Studio portal's completions playground.":::
 
 ## LLMs' capabilities
 
-An LLM has built-in capabilities that you can use without training it further. LLMs can therefore do more than just generating new words, they're also capable of the following behavior:
+An LLM has built-in capabilities that you can use without training it further. LLMs can do more than generate new words, they're also capable of the following behavior:
 
 - **Extracting information**: You can provide an LLM with some text and ask it to extract specific pieces of information from that text. For example, if you provide the LLM with this text:
 
@@ -18,7 +18,7 @@ An LLM has built-in capabilities that you can use without training it further. L
 
   *"Robert Smith"*
 
-- **Changing the format of content**: You can provide an LLM with some text and ask it to summarize it by using a specific format. For example, if you provide the LLM with this text:
+- **Changing the format of content**: You can provide an LLM with some text and ask it to summarize by using a specific format. For example, if you provide the LLM with this text:
 
   *"I like the following colors: red, green, and yellow. I also like the following food: macaroni, cheese, and honey"*
 

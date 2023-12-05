@@ -9,19 +9,19 @@ In this exercise, you create an Azure OpenAI deployment. By creating a deploymen
 
 ## Create a deployment
 
-In this exercise, you create a deployment by using Azure OpenAI Studio. You can have more than one Azure OpenAI cloud resource; to ensure you manage the correct one, you need to navigate to Azure OpenAI Studio from the instance blade.
+In this exercise, you'll create a deployment by using Azure OpenAI Studio. You can have more than one Azure OpenAI cloud resource; to ensure you manage the correct one, you need to navigate to Azure OpenAI Studio from the instance blade.
 
 1. Navigate to the [Azure portal](https://portal.azure.com) and locate your newly provisioned Azure OpenAI instance by typing **openai** in the top search bar. From there, select your specific cloud instance.
 
-1. Select **Model deployments** from the left side menu on your cloud instance blade then, select **Manage Deployments**.
+1. Select **Model deployments** from the left side menu on your cloud instance blade, then, select **Manage Deployments**.
 
     :::image type="content" source="../media/manage-deployments.png" alt-text="Screenshot from the Azure portal newly created OpenAI resource highlighting the model deployments and manage deployments buttons in red boxes.":::
 
-    When you select **Manage Deployments**, you’re taken to Azure OpenAI Studio. Ensure that **Deployments** is selected.
+    When you select **Manage Deployments**, you're taken to Azure OpenAI Studio. Ensure that **Deployments** is selected.
 
     :::image type="content" source="../media/find-deployments.png" alt-text="Screenshot from the Azure OpenAI studio highlighting the deployments button in a red box.":::
 
-1. Select **Create new deployment** from the toolbar. You should see a modal open where you're asked to fill in values.
+1. Select **Create new deployment** from the toolbar. You should see a modal open.
 
     :::image type="content" source="../media/new-deployment.png" alt-text="A screenshot of the modal to create a new deployment.":::
 
@@ -35,4 +35,4 @@ In this exercise, you create a deployment by using Azure OpenAI Studio. You can 
 
 1. Select **Create**.
 
-Congratulations, you successfully created a model deployment that enables you to interact with the gpt-35-turbo (ChatGPT) large language model.
+Congratulations, you successfully created a model deployment that enables you to interact with the gpt-35-turbo (ChatGPT) LLM.

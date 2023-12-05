@@ -1,6 +1,6 @@
 In this exercise, you use natural language to interact with an Azure OpenAI deployment in the completions playground. 
 
-You may be familiar with natural language generative AI from applications like ChatGPT, but you can use these models for more than chatbots. Let's explore other useful applications of these models.
+You might be familiar with natural language generative AI from applications like ChatGPT, but you can use these models for more than chatbots. Let's explore other useful applications of these models.
 
 > [!NOTE]
 > In order to complete this exercise, you need the following:
@@ -79,7 +79,7 @@ In this next exercise, you'll ask your LLM to organize your text as a table, whi
     
     ```
 
-In this example, the model is primed with the desired output format: a header row, and a couple of examples.
+In this example, the model is primed with the desired output format: a header row and a couple of examples.
 
 ### Try different formatting: JSON
 
@@ -153,7 +153,7 @@ In this example, you provided one example of a headline and a category and asked
 
 ## Summarize content
 
-Summarizing content can be helpful if you want to quickly understand what longer text is saying. This capability is built into the LLM.
+Summarizing content can be helpful if you want to quickly understand what a longer block of text says. This capability is built into the LLM.
 
 1. Clear the completions text box then copy the following text and paste it there.
 

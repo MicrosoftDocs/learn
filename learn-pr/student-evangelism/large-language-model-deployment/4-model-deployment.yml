@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.large-language-model-deployment.model-deployment
-title: "Deploy a model"
+title: "Model deployment"
 metadata:
-  title: "Deploy a model"
+  title: "Model deployment"
   description: Learn how to deploy about model deployment.
   ms.date: 12/04/2023
   author: softchris
