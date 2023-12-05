@@ -12,7 +12,7 @@ Azure SQL Database and Azure SQL Managed Instance support the same database comp
 
 Query plan regressions represent one of the most difficult performance problems to solve with SQL Server. A query plan regression occurs when the same query is recompiled and a new plan results in worse performance.
 
-SQL Server 2017 and Azure SQL Database introduced the concept of automatic plan correction by analyzing data in the Query Store. When you enable the Query Store with a database in SQL Server 2017 (or later) and in Azure SQL Database, the SQL Server engine looks for query plan regressions and provides recommendations. You can see these recommendations in the **sys.dm_db_tuning_recommendations** dynamic management view (DMV). These recommendations include T-SQL statements to manually force a query plan when performance was in a good state.
+SQL Server 2017 and Azure SQL Database introduced the concept of automatic plan correction by analyzing data in the Query Store. When you enable the Query Store with a database in SQL Server 2017 (or later) and in Azure SQL Database, the SQL Server engine looks for query plan regressions and provides recommendations. You can see these recommendations in the `sys.dm_db_tuning_recommendations` dynamic management view (DMV). These recommendations include T-SQL statements to manually force a query plan when performance was in a good state.
 
 If you gain confidence in these recommendations, you can enable SQL Server to force plans automatically when regressions are encountered. Enable automatic plan correction by using `ALTER DATABASE` and the `AUTOMATIC_TUNING` argument.
 
