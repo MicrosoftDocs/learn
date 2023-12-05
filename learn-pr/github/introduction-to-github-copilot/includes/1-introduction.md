@@ -18,4 +18,4 @@ By the end of this module, you'll be able to:
 
 - A GitHub account
 - Basic understanding of GitHub fundamentals
-- Awareness that you will be asked for a form of payment when signing up for the free GitHub Copilot trial even though you will not be charged until the trial is over
+- Awareness that if you choose to complete the module exercise you will be asked for a form of payment when signing up for the free GitHub Copilot trial even though you will not be charged until the trial is over
