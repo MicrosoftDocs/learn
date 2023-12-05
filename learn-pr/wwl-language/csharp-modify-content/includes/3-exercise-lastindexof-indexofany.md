@@ -94,7 +94,7 @@ You update the `message` string, adding different types of symbols like square `
     Console.WriteLine($"Found WITHOUT using startPosition: {message.Substring(openingPosition)}");
     
     openingPosition = message.IndexOfAny(openSymbols, startPosition);
-    Console.WriteLine($"Found WITH using startPosition: {message.Substring(openingPosition)}");
+    Console.WriteLine($"Found WITH using startPosition {startPosition}: {message.Substring(openingPosition)}");
     ```
 
 1. Save your code file, and then use Visual Studio Code to run your code. 
@@ -176,7 +176,7 @@ You update the `message` string, adding different types of symbols like square `
     closingPosition = message.IndexOf(matchingSymbol, openingPosition);
     ```
 
-    The variable `closingPosition` is used in the `Substring()` method, but is also used to find the next `openingPosition` value:
+    The variable closingPosition is used to find the length passed into the Substring() method, but it is also used to find the next openingPosition value:
 
     ```csharp
     int openingPosition = message.IndexOfAny(openSymbols, closingPosition);
