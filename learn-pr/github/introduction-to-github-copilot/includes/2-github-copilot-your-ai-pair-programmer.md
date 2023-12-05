@@ -12,7 +12,7 @@ GitHub Copilot is a service that provides you with an AI pair programmer that wo
 
 Developed in collaboration with OpenAI, GitHub Copilot is powered by OpenAI Codex, an AI system created by OpenAI. OpenAI Codex has broad knowledge of how people use code and is more capable than GPT-3 in code generation, in part because it was trained on a data set that includes a larger concentration of public source code.
 
-GitHub Copilot is available as an extension for Visual Studio Code, Visual Studio, Neovim, and the JetBrains suite of integrated development environments (IDEs).
+GitHub Copilot is available as an extension for Visual Studio Code, Visual Studio, Vim/Neovim, and the JetBrains suite of integrated development environments (IDEs).
 
 ## GitHub Copilot X
 
