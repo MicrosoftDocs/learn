@@ -16,7 +16,7 @@ Click  **Chat now.**
 > [!NOTE]
 > When you start a chat, do not refresh the page. Refreshing the page might result in your conversation being lost and as each step builds on the next, the history of the conversation is important. If you happen to refresh the page, you may need to start over again quickly by using the sample prompts.
 
-## Set the Conversation Style
+## Set the conversation style
 
 Set the conversation style to  **More Creative**
 

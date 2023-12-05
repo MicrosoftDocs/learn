@@ -10,7 +10,7 @@ By the end of this module, you will learn how to use Bing Chat to guide you on h
 > [!NOTE]
 > This is a **_challenge project_** module where you will complete a project end-to-end based on a specification. This module is designed to be a test of your skills: there are few guidelines and no step-by-step instructions.
 
-## Alternative Tools
+## Alternative tools
 
 You need Bing Chat to do this exercise. It involves text and image generation. If you don't have Bing Chat, you can use other tools, but you may need to change some steps. Here are some places where you can find these tools:
 
