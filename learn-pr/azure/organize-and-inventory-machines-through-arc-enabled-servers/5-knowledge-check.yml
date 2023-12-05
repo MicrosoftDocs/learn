@@ -25,14 +25,14 @@ quiz:
     - content: "Management groups"
       isCorrect: false
       explanation: "Management groups help you manage access, policy, and compliance for multiple subscriptions. All subscriptions in a management group automatically inherit the conditions that are applied to the management group."
-  - content: "What Azure service allows you to query at scale across a set of subscriptions, helping you to govern your enviroment?"
+  - content: "What Azure service allows you to query at scale across a set of subscriptions, helping you to govern your environment?"
     choices:
     - content: "Azure Resource Graph"
       isCorrect: true
       explanation: "Azure Resource Graph is an Azure service that enables you to efficiently explore and query your Azure resources on a large scale. It offers a robust and effective method for searching, analyzing, and visualizing your resource data across numerous Azure subscriptions and resource groups."
     - content: "Azure Policy"
       isCorrect: false
-      explanation: "Azure Policy is a service that helps you enforce organizational standards and compliance in your hybrid and multicloud environments. It allows you to define and apply a set of rules, called policy definitions, to your Azure resources."
+      explanation: "Azure Policy is a service that helps you enforce organizational standards and compliance in your hybrid and multi-cloud environments. It allows you to define and apply a set of rules, called policy definitions, to your Azure resources."
     - content: "Tags"
       isCorrect: false
       explanation: "Tags are metadata elements you apply to your Azure resources. They are key-value pairs that help identify resources, based on settings relevant to your organization."

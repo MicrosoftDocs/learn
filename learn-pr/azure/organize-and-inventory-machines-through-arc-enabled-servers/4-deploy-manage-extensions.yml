@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.4-deploy-and-manage-extensions
+uid: learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.4-deploy-manage-extensions
 title: Deploy and manage virtual machine extensions through Azure Policy
 metadata:
   unitType: learning-content
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-deploy-and-manage-extensions.md)]
+  [!include[](includes/4-deploy-manage-extensions.md)]

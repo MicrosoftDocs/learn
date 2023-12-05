@@ -37,9 +37,9 @@ subjects:
 - resource-management
 units:
   - learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.1-introduction
-  - learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.2-organize-and-categorize-machines
+  - learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.2-organize-categorize-machines
   - learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.3-report-on-server-metadata
-  - learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.4-deploy-and-manage-extensions
+  - learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.4-deploy-manage-extensions
   - learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.5-knowledge-check
   - learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.6-summary
 badge:

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.2-organize-and-categorize-machines
+uid: learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.2-organize-categorize-machines
 title: Organize and categorize your virtual machines
 metadata:
   unitType: learning-content
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-organize-and-categorize-machines.md)]
+  [!include[](includes/2-organize-categorize-machines.md)]

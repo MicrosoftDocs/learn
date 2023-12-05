@@ -1,4 +1,4 @@
-Many different types of metadata are collected for Arc-enabled servers. This includes the platform, operating system, presence of SQL server, or AWS and GCP details. This data can be queried at scale using Azure Resourse Graph.
+Many different types of metadata are collected for Arc-enabled servers. This includes the platform, operating system, presence of SQL server, or AWS and GCP details. This data can be queried at scale using Azure Resource Graph.
 
 Azure Resource Graph is an Azure service designed to extend the capabilities of [Azure Resource Manager](/azure/azure-resource-manager/management/overview) by providing efficient resource exploration. Azure Resource Graph gives you the ability to query at scale across a set of subscriptions, allowing you to more effectively govern your environment. You can query resources with complex filtering, grouping, and sorting by resource properties.
 
