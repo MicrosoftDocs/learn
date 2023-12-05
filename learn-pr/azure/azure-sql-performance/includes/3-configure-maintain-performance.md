@@ -1,4 +1,4 @@
-Understanding Azure SQL's capabilities is important for delivering consistent performance. It's also important to understand the options and restrictions you have to configure in Azure SQL Managed Instance and Azure SQL Database that can affect performance. This includes the following:
+Understanding the capabilities of Azure SQL is important for delivering consistent performance. It's also important to understand the options and restrictions you have to configure in Azure SQL Managed Instance and Azure SQL Database that can affect performance. This includes the following:
 
 - Topics of the `tempdb` database
 - Configuring databases
@@ -9,15 +9,15 @@ Understanding Azure SQL's capabilities is important for delivering consistent pe
 
 ## Tempdb
 
-`Tempdb` is an important shared resource used by applications. Ensuring the right configuration of `tempdb` can affect your ability to deliver consistent performance. You use `tempdb` in the same way for both SQL Server and Azure SQL. Note, however, that your ability to configure `tempdb` is different, including the placement of files, the number and size of files, and `tempdb` configuration options.
+The `tempdb` system database is an important shared resource used by applications. Ensuring the right configuration of `tempdb` can affect your ability to deliver consistent performance. You use `tempdb` in the same way for both SQL Server and Azure SQL. Note, however, that your ability to configure `tempdb` is different, including the placement of files, the number and size of files, and `tempdb` configuration options.
 
-`Tempdb` files are always automatically stored on local SSD drives, so I/O performance shouldn't be an issue.
+The database files of `tempdb` are always automatically stored on local SSD drives, so I/O performance shouldn't be an issue.
 
 SQL Server professionals often use more than one database file to partition allocations for `tempdb` tables. For Azure SQL Database, the number of files are scaled with the number of vCores (for example, two vCores equals four files) with a maximum of 16. The number of files isn't configurable through T-SQL against `tempdb`, but you can configure it by changing the deployment option. The maximum size of `tempdb` is scaled per number of vCores. You get 12 files with SQL Managed Instance, independent of vCores.
 
 The database option `MIXED_PAGE_ALLOCATION` is set to *OFF*, and `AUTOGROW_ALL_FILES` is set to *ON*. You can't configure this, but, as with SQL Server, these are the recommended defaults.
 
-Currently, the `tempdb` metadata optimization feature in SQL Server 2019, which can alleviate heavy latch contention, isn't available in Azure SQL.
+Currently, the `tempdb` metadata optimization feature introduced in SQL Server 2019, which can alleviate heavy latch contention, isn't currently available in Azure SQL Database or Azure SQL Managed Instance.
 
 ## Database configuration
 
