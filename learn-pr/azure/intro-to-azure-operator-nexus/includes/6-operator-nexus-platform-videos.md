@@ -2,19 +2,19 @@
 ## Azure Operator Nexus platform overview
 The following video provides a technical overview of Azure Operator Nexus:
 
-> [!VIDEO 40a5ddc4-b2b9-4d7a-bb6f-d8eb9df81562]
+> [!VIDEO 169da617-9497-40b1-adab-62f06705116e]
 
 ## Azure Operator Nexus lifecycle management
 The following video introduces Azure Operator Nexus lifecycle management:
 
-> [!VIDEO 40a5ddc4-b2b9-4d7a-bb6f-d8eb9df81562]
+> [!VIDEO 91c79c9e-5e83-43a8-be56-f6e2569bc373]
 
 ## Azure Operator Nexus operations
 The following video introduces Azure Operator Nexus operations:
 
-> [!VIDEO 40a5ddc4-b2b9-4d7a-bb6f-d8eb9df81562]
+> [!VIDEO 66f16db1-fcbc-402c-af89-5808dfa7d06e]
 
 ## Azure Operator Nexus security
 The following video introduces Azure Operator Nexus security:
 
-> [!VIDEO 40a5ddc4-b2b9-4d7a-bb6f-d8eb9df81562]
+> [!VIDEO 72b54078-985a-46ec-a9e1-eae41e823204]
