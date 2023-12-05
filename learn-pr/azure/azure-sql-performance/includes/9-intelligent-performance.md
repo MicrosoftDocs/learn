@@ -6,7 +6,7 @@ Intelligent performance for Azure SQL includes intelligent query processing, aut
 
 Intelligent query processing (IQP) is a suite of new capabilities built into the query processor. You enable it by using the latest database compatibility level. Applications can gain performance by using the latest database compatibility level. There are no code changes required. An example of IQP is *table variable deferred compilation* to help make queries that use table variables run faster.
 
-Azure SQL Database and Azure SQL Managed Instance support the same database compatibility level required to use IQP as SQL Server 2019.
+Azure SQL Database and Azure SQL Managed Instance support the same database compatibility level required (150) to use IQP as SQL Server 2019 and later versions.
 
 ## Automatic plan correction
 
