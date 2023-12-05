@@ -13,7 +13,7 @@ In this exercise, you'll create a deployment by using Azure OpenAI Studio. You c
 
 1. Navigate to the [Azure portal](https://portal.azure.com) and locate your newly provisioned Azure OpenAI instance by typing **openai** in the top search bar. From there, select your specific cloud instance.
 
-1. Select **Model deployments** from the left side menu on your cloud instance blade, then, select **Manage Deployments**.
+1. Select **Model deployments** from the left side menu on your cloud instance blade then select **Manage Deployments**.
 
     :::image type="content" source="../media/manage-deployments.png" alt-text="Screenshot from the Azure portal newly created OpenAI resource highlighting the model deployments and manage deployments buttons in red boxes.":::
 
