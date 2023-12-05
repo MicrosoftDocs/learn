@@ -40,17 +40,17 @@ DMVs have been a driving force to monitor and troubleshoot performance for many 
 
 ### Azure SQL Managed Instance
 
-All DMVs for SQL Server are available for SQL Managed Instance. Key DMVs like **sys.dm_exec_requests** and **sys.dm_os_wait_stats** are commonly used to examine query performance.
+All DMVs for SQL Server are available for SQL Managed Instance. Key DMVs like `sys.dm_exec_requests` and `sys.dm_os_wait_stats` are commonly used to examine query performance.
 
 **sys.server_resource_stats** is specific to Azure, and shows historical resource usage for the managed instance. This is an important DMV to see resource usage, because you don't have direct access to operating system tools like Performance Monitor.
 
 ### Azure SQL Database
 
-Most of the common DMVs you need for performance, including **sys.dm_exec_requests** and **sys.dm_os_wait_stats**, are available. Note that these DMVs only provide information specific to the database, not information across all databases for a logical server.
+Most of the common DMVs you need for performance, including `sys.dm_exec_requests` and `sys.dm_os_wait_stats`, are available. Note that these DMVs only provide information specific to the database, not information across all databases for a logical server.
 
-**sys.dm_db_resource_stats** is a DMV specific to Azure SQL Database, and you can use it to view a history of resource usage for the database. Use this DMV similar to how you would use `sys.server_resource_stats` for a managed instance.
+The `sys.dm_db_resource_stats` DMV is specific to Azure SQL Database, and you can use it to view a history of resource usage for the database. Use this DMV similar to how you would use `sys.server_resource_stats` for a managed instance.
 
-**sys.elastic_pool_resource_stats** is similar to `sys.dm_db_resource_stats`, but you can use it to view resource usage for elastic pool databases.
+The `sys.elastic_pool_resource_stats` DMV is similar to `sys.dm_db_resource_stats`, but you can use it to view resource usage for elastic pool databases.
 
 ### DMVs you need
 
