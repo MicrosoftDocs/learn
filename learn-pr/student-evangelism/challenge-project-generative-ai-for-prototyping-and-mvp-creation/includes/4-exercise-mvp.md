@@ -1,5 +1,5 @@
 
-We created our protype, which enables us to visualize how our project would look like as well as the tools we would need to bring it to life. In this section, we cover how we can narrow down on the key features for our product and build a Minimal Viable Product. A Minimal Viable Product (MVP) is the simplest version of your product your users can use.
+We created our prototype, which enables us to visualize how our project would look like as well as the tools we would need to bring it to life. In this section, we cover how we can narrow down on the key features for our product and build a Minimal Viable Product. A Minimal Viable Product (MVP) is the simplest version of your product your users can use.
 
 An MVP is a tangible product that you can use to test and validate your prototype with customers.
 
@@ -14,22 +14,24 @@ In this step, we will ask Bing Chat to suggest some features we can build for ou
 
 ### Sample Prompt
 
-```
+```text
 Hey Bing, from what I have shared so far about my idea, I now want to implement and start building. Can you help me narrow down the main features my product should have?
 ```
 
 ### Sample Response
+
 ![Project features](./media/poject-features.png)
 
 But before we focus on each feature separately, let us ask Bing chat to help identify the tools and services we will need to put this together.
 
 ### Sample Prompt on tools/services for our project
 
-```
+```text
 Thanks for the help so far. To successfully implement these features, which tools/ services will I need to get? Please use a list and respond in short bullet points and categorize the tools per feature/ functionality.
 ```
 
 ### Sample Response on tools/services for our project
+
 ![Tools and services to implement our features](./media/tools-for-project.png)
 
 ## Step 2: Select a feature and flesh out more details on implementation
@@ -45,7 +47,7 @@ Now let's focus on each feature/ functionality separately.
 
 ### Sample Prompt for a specific feature
 
-```
+```text
 We are building a wildlife AI system. How can we create a dashboard for users to view and manage the data collected? In addition, suggest which tools/ frameworks/ languages we need to successfully build our application. Summarize the response in bullet points.
 ```
 
@@ -61,7 +63,7 @@ Bing will give us an overview of the different tools we may need to ensure we su
 
 Repeat step 2 for each feature until you have a clear understanding of how you can build the final product.
 
-## Step 4: Now to the exciting part: Building our MVP.
+## Step 4: Now to the exciting part: Building our MVP
 
 You now have a proper guide to the technical requirements to implement your project. Next step is for you (and your team) to start building. Bing chat has helped us identify tools that you would need to install, so a good flow of events from here would be:
 
@@ -70,7 +72,7 @@ You now have a proper guide to the technical requirements to implement your proj
 
 ### [Optional] Keep working with Bing chat
 
-Here are some additional ways in you can keep using bang chat throughout your project development cycle. Be creative on how you engage the tool to guide your development or unblock you if you get stuck.
+Here are some additional ways in you can keep using Bing chat throughout your project development cycle. Be creative on how you engage the tool to guide your development or unblock you if you get stuck.
 
 #### Example: Ask help on how to build specific components and on libraries to use
 
@@ -78,7 +80,7 @@ Note: Explore asking Bing chat for some code samples too
 
 #### Sample Prompt on different components/libraries
 
-```
+```text
 Can you guide me on how to create the calendar of emotions on react native?
 ```
 
@@ -96,7 +98,7 @@ The purpose of building an MVP is to ensure that you can be able to test and val
 
 ### Sample Prompt on deployment
 
-```
+```text
 Part of my solution is a website, and I am also thinking of building my company website. As a student, how can I deploy websites using Microsoft services or free tools to avail this to my users?
 ```
 

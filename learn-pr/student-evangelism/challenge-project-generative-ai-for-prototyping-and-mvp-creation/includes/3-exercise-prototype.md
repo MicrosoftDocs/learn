@@ -1,20 +1,23 @@
+
 Now that you have completed your brainstorming/ ideation and with Bing Chat in the first challenge project, we will now use it to guide us in generating a prototype.
 
 ## Identify the core functionalities of your software
 
 ### Steps
 
-Copy the sample prompt provided below and edit it to add your refined idea 1-paragraph summary from unit 4 of the previous challenge. Paste it into Bing Chat.
+1. Copy the sample prompt provided below and edit it to add your refined idea 1-paragraph summary from unit 4 of the previous challenge.
+1. Paste it into Bing Chat.
 
 ### Sample Prompt
 
-```
+```text
 Hey Bing, here is a paragraph summary of my idea that I want to create a prototype for then implement/ start building. Can you help me break down the core functionalities of my software solution (app/ website/ dashboard). Suggest this in short bullet points.
 
 Human-wildlife conflict is a serious and growing problem that affects both wildlife conservation and human development. Current solutions are often inadequate, expensive, or unsustainable. They also lack real-time data that can enable proactive and preventive actions. Our solution is to use IoT and AI to create a smart system that can monitor, predict, and prevent human-wildlife conflict. The system can collect and analyze data from various devices, such as sensors, cameras, drones, and satellites. The system can then use AI to detect, identify, and track wildlife and human activities and threats. The system can also use AI to provide alerts, recommendations, or interventions to the relevant stakeholders, such as wildlife managers, farmers, or rangers. Our solution is unique and competitive because it uses IoT and AI to provide a comprehensive and adaptive solution that can address the diverse and dynamic challenges of human-wildlife coexistence. It is also scalable and customizable to different contexts and needs. Our solution has the potential to improve the conservation and welfare of wildlife species, as well as the livelihoods and security of people living with wildlife.
 ```
 
 ### Sample Response
+
 ![Response for: break down the core functionalities of my software solution](./media/core-functionalities.png)
 
 ## Generate UI ideas for your project
@@ -26,7 +29,7 @@ Human-wildlife conflict is a serious and growing problem that affects both wildl
 
 ### Sample Prompt for UI ideas
 
-```
+```text
 Can you suggest some UI ideas that easily provide these core functionalities for the users? If the dashboard needs to be multi-page, you can separate the features for the respective pages. Please include links UI designs with similar examples for additional inspiration
 ```
 
