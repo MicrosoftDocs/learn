@@ -6,8 +6,7 @@ metadata:
   ms.date: 11/09/2023
   author: tejaswikolli
   ms.author: tejaswikolli
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Introduction to Azure Container Registry
 durationInMinutes: 2
 content: |
