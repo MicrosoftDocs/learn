@@ -2,7 +2,7 @@ In this exercise, you'll learn how to monitor and troubleshoot a performance pro
 
 ### Set up: Use scripts to deploy Azure SQL Database
 
-The terminal session on the right, Azure Cloud Shell, enables you to interact with Azure by using a browser. For this exercise, you'll run a script to create your environment, an instance of Azure SQL Database with the `AdventureWorks` database. In the script, you're prompted for a password and your local IP address to enable your device to connect to the database.  
+The terminal session on the right, Azure Cloud Shell, enables you to interact with Azure by using a browser. For this exercise, you'll run a script to create your environment, an instance of Azure SQL Database with the `AdventureWorks` database. (The smaller, simpler sample `AdventureWorksLT` database is used, but we'll call it `AdventureWorks` to prevent confusion.)  In the script, you're prompted for a password and your local IP address to enable your device to connect to the database.  
 
 This script takes 3-5 minutes to complete. Make sure to note your password, unique ID, and region. These won't be shown again.
 
