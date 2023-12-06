@@ -8,8 +8,8 @@ metadata:
   ms.date: 12/01/2023
   author: johnmarco
   ms.author: johnmarc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.prod: azure-arc-servers
 durationInMinutes: 6
 content: |
 quiz:
@@ -32,7 +32,7 @@ quiz:
       explanation: "Azure Resource Graph is an Azure service that enables you to efficiently explore and query your Azure resources on a large scale. It offers a robust and effective method for searching, analyzing, and visualizing your resource data across numerous Azure subscriptions and resource groups."
     - content: "Azure Policy"
       isCorrect: false
-      explanation: "Azure Policy is a service that helps you enforce organizational standards and compliance in your hybrid and multi-cloud environments. It allows you to define and apply a set of rules, called policy definitions, to your Azure resources."
+      explanation: "Azure Policy is a service that helps you enforce organizational standards and compliance in your hybrid and multicloud environments. It allows you to define and apply a set of rules, called policy definitions, to your Azure resources."
     - content: "Tags"
       isCorrect: false
       explanation: "Tags are metadata elements you apply to your Azure resources. They are key-value pairs that help identify resources, based on settings relevant to your organization."

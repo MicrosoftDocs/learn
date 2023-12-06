@@ -71,7 +71,7 @@ top five results.
 To download CSV results from the Azure portal, browse to the Azure Resource Graph Explorer and run a
 query. On the toolbar, click **Download as CSV**.
 
-:::image type="content" source="../media/arg-export-csv.png" alt-text="Screenshot of Azure Resource Graph Explorer in Azure portal with Download as CSV button highlighted":::
+:::image type="content" source="../media/azure-resource-graph-export-csv.png" alt-text="Screenshot of Azure Resource Graph Explorer in Azure portal with Download as CSV button highlighted." lightbox="../media/azure-resource-graph-export-csv.png":::
 
 > [!NOTE]
 > When using the comma-separated value (CSV) export functionality of Azure Resource Graph Explorer, the result set is limited to 55,000 records. This is a platform limit that cannot be overridden by filing an Azure support ticket.
