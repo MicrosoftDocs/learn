@@ -1,4 +1,3 @@
-
 Identity Protection is a tool that allows organizations to accomplish three key tasks:
 
 - Automate the detection and remediation of identity-based risks.
@@ -28,7 +27,7 @@ A user risk represents the probability that a given identity or account is compr
 - Microsoft Entra threat intelligence. This risk detection type indicates user activity that is unusual for the given user or is consistent with known attack patterns based on Microsoft's internal and external threat intelligence sources.
 
 Identity Protection only generates risk detections when correct credentials are used in the authentication request. If a user uses incorrect credentials, it will not be flagged by Identity Protection since there isn't a risk of credential compromise unless a bad actor uses the correct credentials.
-Risk detections can then trigger actions such as requiring users to provide multi-factor authentication, reset their password, or block access until an administrator takes action.
+Risk detections can then trigger actions such as requiring users to provide multifactor authentication, reset their password, or block access until an administrator takes action.
 
 ### Investigate risks
 
