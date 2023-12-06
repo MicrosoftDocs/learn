@@ -2,7 +2,7 @@ Here, we'll discuss how you can use filters, blame, and cross-linking to search 
 
 Put yourself in the position of a developer who has just joined a large project. Someone just posted a new issue reporting a bug related to the web app's sidebar, and you've been assigned to fix it. You've already read through the report a few times and understand the problem being described, so now you need to figure out how to get started with the fix.
 
-As a new team member, you're not yet familiar with the codebase. You also haven't been part of the planning discussions, code reviews, or anything else that would provide you the context you need to start implementation. You'll first need to acquire that background knowledge to best determine the right fix.
+As a new team member, you're not yet familiar with the codebase. You also haven't been part of the planning discussions, code reviews, or anything else that would provide you with the context you need to start implementation. You'll first need to acquire that background knowledge to best determine the right fix.
 
 ## Searching GitHub
 
