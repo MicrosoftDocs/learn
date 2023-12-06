@@ -30795,6 +30795,11 @@
       "source_path": "learn-pr/wwl-azure/create-classes/index.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/2-discover-classes.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
     }
   ]
 }
