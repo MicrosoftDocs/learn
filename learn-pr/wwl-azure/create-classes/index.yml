@@ -32,7 +32,6 @@ products:
 subjects:
 - development-tools
 units:
-- learn.wwl.create-classes.learn-encapsulation
 - learn.wwl.create-classes.understand-namespaces
 - learn.wwl.create-classes.summary
 badge:
