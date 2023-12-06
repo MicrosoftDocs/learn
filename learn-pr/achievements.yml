@@ -2622,3 +2622,8 @@ achievements:
   title: Create classes and objects in C#
   summary: The purpose of this module is to learn about classes and objects and to understand the differences between the two.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.implement-properties-within-class.badge
+  type: badge
+  title: Implement properties within a class
+  summary: This module discusses the use of properties and the concepts of read-write, read-only, and write-only properties. The concepts of declaring and passing variable by reference and by value are also introduced.
+  iconUrl: /training/achievements/generic-badge.svg
