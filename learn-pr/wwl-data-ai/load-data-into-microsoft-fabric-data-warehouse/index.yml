@@ -39,7 +39,7 @@ units:
 - learn-wwl.load-data-into-microsoft-fabric-data-warehouse.load-data-using-data-pipeline
 - learn-wwl.load-data-into-microsoft-fabric-data-warehouse.load-data-using-tsql
 - learn-wwl.load-data-into-microsoft-fabric-data-warehouse.load-data-using-dataflow
-- learn-wwl.load-data-into-microsoft-fabric-data-warehouse.exercise-load-data-using-data-pipeline
+- learn-wwl.load-data-into-microsoft-fabric-data-warehouse.exercise-load-data-into-warehouse
 - learn-wwl.load-data-into-microsoft-fabric-data-warehouse.knowledge-check
 - learn-wwl.load-data-into-microsoft-fabric-data-warehouse.summary
 badge:

@@ -1,4 +1,6 @@
-As we've seen, when it comes to loading data in a data warehouse, there are several considerations to keep in mind.
+There’s no one-size-fits-all solution for loading your data. The best approach depends on the specifics of your business requirement and the question you’re trying to answer.
+
+When it comes to loading data in a data warehouse, there are several considerations to keep in mind.
 
 |  | Description |
 |---------------|-------------|
@@ -8,11 +10,9 @@ As we've seen, when it comes to loading data in a data warehouse, there are seve
 | **Dependencies** | Understand dependencies in the data model for loading dimensions. |
 | **Script design** | Design efficient import scripts considering column names, filtering rules, value mapping, and database indexing. |
 
-There’s no one-size-fits-all solution for loading your data. The best approach depends on the specifics of your business requirement and the question you’re trying to answer.
-
 For additional reading, you can refer to the following URLs:
 
-- [Create a Warehouse in Microsoft Fabriv](/fabric/data-warehouse/create-warehouse?azure-portal=true)
+- [Create a Warehouse in Microsoft Fabric](/fabric/data-warehouse/create-warehouse?azure-portal=true)
 - [Ingest data into the Warehouse](/fabric/data-warehouse/ingest-data?azure-portal=true)
 - [Compare the Warehouse and the SQL Endpoint of the Lakehouse](/fabric/data-warehouse/data-warehousing#compare-the-warehouse-and-the-sql-endpoint-of-the-lakehouse?azure-portal=true)
  
