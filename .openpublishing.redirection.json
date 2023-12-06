@@ -30572,6 +30572,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/explore-iot-hub-monitoring/2-configure-iot-hub-monitoring.md",
+      "redirect_url": "/training/modules/explore-iot-hub-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-iot-hub-monitoring/3-knowledge-check.md",
+      "redirect_url": "/training/modules/explore-iot-hub-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-iot-hub-monitoring/4-summary.md",
+      "redirect_url": "/training/modules/explore-iot-hub-monitoring",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/explore-fundamentals-of-knowledge-mining/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/document-intelligence-knowledge-mining/",
       "redirect_document_id": false
@@ -30735,6 +30750,46 @@
       "source_path": "learn-pr/achievements/learn.monitor-vm-performance-using-azure-monitor-for-vms.badge.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/technical-support/intro-to-azure-incident-readiness/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-incident-readiness/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/technical-support/intro-to-azure-incident-readiness/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-incident-readiness/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/technical-support/intro-to-azure-incident-readiness/2-communication-philosophy.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-incident-readiness/2-communication-philosophy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/technical-support/intro-to-azure-incident-readiness/3-prepare-for-unexpected.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-incident-readiness/3-prepare-for-unexpected",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/technical-support/intro-to-azure-incident-readiness/4-what-to-expect.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-incident-readiness/4-what-to-expect",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/technical-support/intro-to-azure-incident-readiness/5-after-an-incident.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-incident-readiness/5-after-an-incident",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/technical-support/intro-to-azure-incident-readiness/6-when-to-engage-support.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-incident-readiness/6-when-to-engage-support",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/technical-support/intro-to-azure-incident-readiness/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-incident-readiness/7-summary",
+      "redirect_document_id": true
     }
   ]
 }
