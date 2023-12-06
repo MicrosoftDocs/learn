@@ -42,7 +42,7 @@ DMVs have been a driving force to monitor and troubleshoot performance for many 
 
 All DMVs for SQL Server are available for SQL Managed Instance. Key DMVs like `sys.dm_exec_requests` and `sys.dm_os_wait_stats` are commonly used to examine query performance.
 
-**sys.server_resource_stats** is specific to Azure, and shows historical resource usage for the managed instance. This is an important DMV to see resource usage, because you don't have direct access to operating system tools like Performance Monitor.
+The `sys.server_resource_stats` system view is specific to Azure SQL Managed Instance, and shows historical resource usage. This is a valuable tool to see resource usage, because you don't have direct access to operating system tools like Performance Monitor.
 
 ### Azure SQL Database
 
