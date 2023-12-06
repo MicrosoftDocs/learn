@@ -33,7 +33,6 @@ subjects:
 - development-tools
 units:
 - learn.wwl.create-classes.introduction
-- learn.wwl.create-classes.discover-classes
 - learn.wwl.create-classes.exercise-examine-classes-objects
 - learn.wwl.create-classes.learn-encapsulation
 - learn.wwl.create-classes.examine-class-lifecycle
