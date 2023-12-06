@@ -248,64 +248,20 @@ For more information, visit [Traffic Manager endpoints](/azure/traffic-manager/t
 
 This example shows how to create and configure a new Traffic Manager profile to direct client traffic based on endpoint priority.
 
-From the Azure portal home page, select **Create a resource**. In the search box, query for 'Traffic Manager profile', and then select **Traffic Manager profile**.
+From the Azure portal home page, From the Azure portal home page, navigate to the Global Search bar and search **Traffic Manager profile**. Then select **Traffic Manager profiles**.
 
-:::image type="content" source="../media/create-traffic-manager-profile-1-1eb497fc.png" alt-text="Selecting 'Traffic Manager profile' from the 'Create a resource' page":::
+:::image type="content" source="../media/create-traffic-manager-profile-1-1eb497fc.png" alt-text="Selecting 'Traffic Manager profile' from the 'Create a resource' page.":::
 
-Select **Create**.
+Select **+ Create** or the **Create traffic manager profile** button.
 
-:::image type="content" source="../media/create-traffic-manager-profile-2-7ebe79cf.png" alt-text="Create Traffic Manager profile":::
+You need to enter the following information on the **Create Traffic Manager profile** page:
 
-You need to enter the following information on the **Create Traffic Manager profile** page.
-
-:::row:::
-  :::column:::
-    **Field**
-  :::column-end:::
-  :::column:::
-    **Information**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Name
-  :::column-end:::
-  :::column:::
-    Enter a unique name for the Traffic Manager profile.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Routing method
-  :::column-end:::
-  :::column:::
-    Select the routing method to use in this profile.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Subscription
-  :::column-end:::
-  :::column:::
-    Select the subscription from the list that you want this profile to be applied to.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Resource group
-  :::column-end:::
-  :::column:::
-    Select the appropriate resource group from the list or create a new one.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Resource group location
-  :::column-end:::
-  :::column:::
-    The Azure Traffic Manager service is global and not bound to a location. This setting refers to the location of the selected resource group and has no impact on the runtime availability of your Traffic Manager profile.
-  :::column-end:::
-:::row-end:::
+| Field | Information |
+| --- | --- |
+| Name | Enter a unique name for the Traffic Manager profile. |
+| Routing method | Select the routing method to use in this profile. |
+| Subscription | Select the subscription from the list that you want this profile to be applied to. |
+| Resource group | Select the appropriate resource group from the list or create a new one. |
 
 Select **Create** to create the profile.
 
@@ -321,7 +277,7 @@ On the Traffic manager profile page, under **Settings**, select **Endpoints**, t
 
 :::image type="content" source="../media/add-traffic-manager-endpoints-2-b3c932c6.png" alt-text="Traffic Manager profile - Endpoints - Add":::
 
-You then enter the required information on the **Add endpoint** page.
+You then enter the required information on the **Add endpoint** page:
 
 :::row:::
   :::column:::
