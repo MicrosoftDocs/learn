@@ -30810,6 +30810,11 @@
       "source_path": "learn-pr/wwl-azure/create-classes/3-exercise-examine-classes-objects.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
     }
   ]
 }
