@@ -141,7 +141,7 @@ The steps in this section use the following prefixes: **\[A\]**: The step applie
     sudo pvcreate /dev/disk/azure/scsi1/lun3
     ```
 
-     - Create the logical volumes. A linear volume is created when you use `lvcreate`` without the `-i`` switch. We suggest that you create a striped volume for better I/O performance, where the -i argument should be the number of the underlying physical volume. In this case, two physical volumes are used for the data volume, so the -i switch argument is set to 2. One physical volume is used for the log volume, so no -i switch is explicitly used. Use the -i switch and set it to the number of the underlying physical volume when you use more than one physical volume for each data, log, or shared volumes.
+     - Create the logical volumes. A linear volume is created when you use `lvcreate` without the `-i` switch. We suggest that you create a striped volume for better I/O performance, where the -i argument should be the number of the underlying physical volume. In this case, two physical volumes are used for the data volume, so the -i switch argument is set to 2. One physical volume is used for the log volume, so no -i switch is explicitly used. Use the -i switch and set it to the number of the underlying physical volume when you use more than one physical volume for each data, log, or shared volumes.
 
     ```
     sudo vgcreate vg_hana_data_HN1 /dev/disk/azure/scsi1/lun0 /dev/disk/azure/scsi1/lun1
