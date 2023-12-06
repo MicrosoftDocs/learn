@@ -8,8 +8,8 @@ metadata:
   author: bethanyjep
   ms.author: bethanycheum
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-challenge-project
+  ms.service: bing
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"

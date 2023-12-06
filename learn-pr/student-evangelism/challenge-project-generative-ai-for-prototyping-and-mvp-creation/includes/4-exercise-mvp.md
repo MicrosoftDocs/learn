@@ -20,7 +20,7 @@ Hey Bing, from what I have shared so far about my idea, I now want to implement 
 
 ### Sample response
 
-![Screenshot showing a sample Bing chat response discussing project features from a prompt.](./media/poject-features.png)
+![Screenshot showing a sample Bing chat response discussing project features from a prompt.](./media/project-features.png)
 
 But before we focus on each feature separately, let us ask Bing chat to help identify the tools and services we need to put our project together.
 
@@ -63,7 +63,7 @@ Bing gives us an overview of the different tools we may need to ensure we succes
 
 Repeat step 2 for each feature until you have a clear understanding of how you can build the final product.
 
-## Step 4: Now to the exciting part: Building our MVP
+## Step 3: Now to the exciting part: Building our MVP
 
 You now have a proper guide to the technical requirements to implement your project. Next step is for you (and your team) to start building. Bing chat helps us identify tools that you would need to install, so a good flow of events from here would be:
 
@@ -92,7 +92,7 @@ As a student you have free access to [GitHub Copilot](https://education.github.c
 
 But before you leave to create your awesome project, finish this module to identify more opportunities for you to share your project globally in a global student competition and access founders' programs for moreadditional support to launch your own startup.
 
-## Step 5: Free deployment services to share your project with others
+## Step 4: Free deployment services to share your project with others
 
 The purpose of building an MVP is to ensure that you can be able to test and validate your ideas. In addition, it gives you an opportunity to finally put your product to potential customers. We can ask Bing to give us ideas of how we can deploy our product, for example:
 

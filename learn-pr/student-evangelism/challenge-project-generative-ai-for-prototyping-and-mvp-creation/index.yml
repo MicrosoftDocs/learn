@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation.
+uid: learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation
 metadata:
   title: Challenge project - Using Generative AI for prototyping and MVP creation
   description: "In this challenge project, Bing Chat guides you on how to create prototypes/ mock-ups of your solution and on implementing the project."
@@ -7,8 +7,8 @@ metadata:
   author: bethanyjep
   ms.author: bethanycheum
   ms.custom: team=nextgen
-  ms.topic: module
-  ms.prod: learning-azure
+  ms.topic: module-challenge-project
+  ms.service: bing
 title: Challenge project - Using Generative AI for prototyping and MVP creation
 summary: In this challenge project, Bing Chat guides you on how to create prototypes/ mock-ups of your solution and on implementing the project.
 abstract: |
