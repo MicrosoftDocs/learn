@@ -31,7 +31,6 @@ products:
 subjects:
 - development-tools
 units:
-- learn.wwl.implement-properties-within-class.knowledge-check
 - learn.wwl.implement-properties-within-class.summary
 badge:
   uid: learn.wwl.implement-properties-within-class.badge
