@@ -10,13 +10,13 @@ Check that you're using your personal profile in Microsoft Edge or that you're l
 
 We'll set up the two browser windows to work side by side throughout this challenge. Put the Challenge project on one side and Bing chat on the other one.
 
-![Split screen on microsoft edge](../media/Split-screen.png)
+![Screenshot showing split screen feature on Microsoft Edge.](../media/split-screen.png)
 
 ## Go to Bing Chat
 
 Open Bing Chat in your personal profile <https://www.bing.com/new>.
 
-![Start chat with Bing](../media/Bing-New.png)
+![Start chat with Bing](../media/bing-new.png)
 
 Select **Chat now**.
 
@@ -30,7 +30,7 @@ Set the conversation style to **More Creative**
 > [!IMPORTANT]
 > Setting the conversation style helps you define what type of output you will be getting. Creative mode encourages Bing to use more expressive language, use humour or emotion, and generate different types of content. Precise mode, on the other end, focuses on clarity and accuracy, while balanced looks to provide a balance between the two extremes.
 
-![Set conversation style to creative](../media/conversation-style.png)
+![Screenshot showing conversation style set to creative.](../media/conversation-style.png)
 
 ## Utilize the Role Setting Technique
 
@@ -60,10 +60,10 @@ I will give you my idea and you will help me create a business model for it, oka
 **Sample Response**
 
 Below is a sample response from Bing Chat.
-![Use role setting technique](../media/role-setting.png)
+![Screenshot showing using role setting technique.](../media/role-setting.png)
 
 ## Note on Conversation Limits
 
 If you are on Bing Chat with your personal profile in Microsoft Edge, you should have **30 conversation turns**. A conversation turn is a response from Bing chat, so basically this means that you get up to 30 responses in one session (without refreshing). This tutorial takes around 24 conversation turns, leaving you with a few to explore as we go along. You can identify how many turns you have left by looking at your last conversation response, as shown below. If you see a lower number (like 5), make sure you log into the Microsoft Edge Browser with your personal profile.
 
-![Conversation turn limits](../media/conversation-limits.png)
+![Screenshot showing conversation turn limits.](../media/conversation-limits.png)

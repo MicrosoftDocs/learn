@@ -22,7 +22,7 @@ We will brand and name this startup later.
 
 Below is a sample response from Bing Chat.
 
-![Example response on business pitch](../media/business-pitch.png)
+![Screenshot showing example response on business pitch.](../media/business-pitch.png)
 
 We now want to design a logo for the company that reflects the startup's core business.
 

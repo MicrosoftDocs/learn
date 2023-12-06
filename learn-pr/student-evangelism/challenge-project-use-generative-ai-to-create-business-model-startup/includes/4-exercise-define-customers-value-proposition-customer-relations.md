@@ -1,5 +1,5 @@
 
-Before jumping straight to the solution, a key step for the startup is to identify which customers the company tries to serve through its products and services. Remember, you can't really have any startup/ business without customers. With your idea in mind, think about the needs of your most important users and their attributes including demographics and categorization. Will your most important customers be: -
+Before jumping straight to the solution, a key step for the startup is to identify which customers the company tries to serve through its products and services. Remember, you can't really have any startup/ business without customers. With your idea in mind, think about the needs of your most important users and their attributes including demographics and categorization. Your most important customers could be: -
 
 1. **A mass market** - Your product considered to serve a wide view of potential users with no specific attributes.
 1. **A niche market** - Your product is customized for uses with a specialized need and characteristics.
@@ -25,14 +25,14 @@ The customers could belong to any market type. Please summarize the main points 
 
 Below is a sample response from Bing Chat.
 
-![Sample response on customers](../media/customers.png)
+![Screenshot showing sample response on customers.](../media/customers.png)
 
 > [!NOTE]
 > You can iterate and ask for more ideas. However, if using Bing Chat, just note that it can only handle 30 conversation turns in a single session, and you don't want to start over in a new chat before you finish the challenge project!
 
 ## What is your value proposition?
 
-The value proposition comprises of the set of offerings that your startup offers to meet the needs of your customers. This also defines your unique selling point and features that set your startup apart from your competitors.
+The value proposition comprises the set of offerings that your startup offers to meet the needs of your customers. This also defines your unique selling point and features that set your startup apart from your competitors.
 
 ### Sample Prompt
 
@@ -45,7 +45,7 @@ Please summarize the main points of your response in short bullet points.
 
 Below is a sample response from Bing Chat.
 
-![Sample response on value proposition](../media/value-proposition.png)
+![Screenshot showing sample response on value proposition.](../media/value-proposition.png)
 
 ### Copy Edit the Description
 
@@ -62,11 +62,11 @@ Please use bullet points to simply list out a short phrase of each value proposi
 
 Below is a sample response from Bing Chat.
 
-![Sample response on value proposition editted](../media/value-proposition-editted.png)
+![Screenshot showing sample response on value proposition editted.](../media/value-proposition-editted.png)
 
 ## Customer Relations
 
-Having identified who your customers are, the next important thing would be to think about how you won't only obtain more customers, but also retain them in the end. To build great relations with customers, think about strategies you'll enforce to **get new customers to grow your user base, retain your existing customers** and how your value proposition evolves to **increase revenue from your current customers.**
+Having identified who your customers are, the next important thing would be to think about how you not only obtain more customers, but also retain them in the end. To build great relations with customers, think about strategies you enforce to **get new customers to grow your user base, retain your existing customers** and how your value proposition evolves to **increase revenue from your current customers.**
 
 ### Sample Prompt
 
@@ -80,4 +80,4 @@ Please summarize the main points of your response in short bullet points.
 
 Below is a sample response from Bing Chat.
 
-![Sample response on customer relations](../media/customer-relations.png)
+![Screenshot showing sample response on customer relations.](../media/customer-relations.png)

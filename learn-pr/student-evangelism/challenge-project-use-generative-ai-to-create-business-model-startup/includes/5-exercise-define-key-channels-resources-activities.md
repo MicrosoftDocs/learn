@@ -26,7 +26,7 @@ Please summarize the main points of your response in short bullet points.
 ### Sample Response
 
 Below is a sample response from Bing Chat.
-![Sample response on key channels](../media/channels.png)
+![Screenshot showing sample response on key channels.](../media/channels.png)
 
 ## Key Activities
 
@@ -44,7 +44,7 @@ Please summarize the main points of your response in short bullet points.
 ### Sample Response
 
 Below is a sample response from Bing Chat.
-![Sample response on key activities](../media/activities.png)
+![Screenshot showing sample response on key activities.](../media/activities.png)
 
 ## Key Resources
 
@@ -66,7 +66,7 @@ Please summarize the main points of your response in short bullet points.
 
 Below is a sample response from Bing Chat.
 
-![Sample response on key resources](../media/resources.png)
+![Screenshot showing sample response on key resources.](../media/resources.png)
 
 ## Key Partners
 
@@ -84,4 +84,4 @@ Please summarize the main points of your response in short bullet points.
 ### Sample Response
 
 Below is a sample response from Bing Chat.
-![Sample response on key partners](../media/partners.png)
+![Screenshot showing sample response on key partners.](../media/partners.png)

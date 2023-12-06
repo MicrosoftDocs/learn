@@ -12,7 +12,7 @@ Bing chat also tries to recommend other prompts that can help you explore furthe
 
 You can select the suggestions from Bing chat to get more insights.
 
-![Bing suggestions](../media/bing-suggestions.png)
+![Screenshot showing bing suggestions.](../media/bing-suggestions.png)
 
 ## Next steps: Apply for Founders Hub
 

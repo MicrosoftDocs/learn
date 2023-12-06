@@ -11,7 +11,7 @@ Put on your learning gear and join this challenge where you'll be **creating a B
 
 See an example of a finished project that was created on PowerPoint and exported as a video.
 
-[![Wildsense Introduction](../media/wildsense-intro.png)](https://youtu.be/LCa1FWKZfNg)
+[![Screenshot showing an introduction to a startup called wildsense.](../media/wildsense-intro.png)](https://youtu.be/LCa1FWKZfNg)
 
 > [!NOTE]
 > In this challenge project, you will use Bing Chat to create a Business Model for your existing startup or a fictitious startup.

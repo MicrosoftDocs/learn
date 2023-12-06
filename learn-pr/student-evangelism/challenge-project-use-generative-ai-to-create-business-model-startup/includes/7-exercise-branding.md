@@ -7,7 +7,7 @@
 
 ## Branding
 
-We have generated almost everything we need to bring this idea as close to a startup as possible. Now we need to do some basic branding for the startup. We'll create:
+We generated almost everything we need to bring this idea as close to a startup as possible. Now we need to do some basic branding for the startup. We'll create:
 
 - a catchy name for our startup
 - a short description/ tagline that captures its mission
@@ -25,11 +25,11 @@ Can you list 5 suggestions of catchy startup names for this startup along with a
 ### Sample Response
 
 Below is a sample response from Bing Chat.
-![Sample response on branding](../media/branding.png)
+![Screenshot showing sample response on branding.](../media/branding.png)
 
 ## Pulling it Together
 
-Bing Chat can’t remember the images it generated but it can remember the content. We can ask it to summarize the content to make it easier to pull together. It does have a character limit, and you do have a number of requests limit, so this only works if you have more questions available to ask, and it might be wise to do it in two segments to accommodate for the character limit. You can always revisit the chat to get your content, but let's see if we can summarize.
+Bing Chat can’t remember the images it generated but it can remember the content. We can ask it to summarize the content to make it easier to pull together. It has a character limit, and you have a request limit, so this only works if you have more questions available to ask, and it might be wise to do it in two segments to accommodate for the character limit. You can always revisit the chat to get your content, but let's see if we can summarize.
 
 ### Sample Prompt
 
@@ -70,7 +70,7 @@ We created a bunch of content. We'll now use a PowerPoint template to bring all 
 - Replace the images and content in the deck with your own
 - Export as video. See the image below
 
-    ![Example of completed project](../media/export-video.png)
+    ![Screenshot showing example of completed project](../media/export-video.png)
 
 *The template has everything you need, you just need to replace the images and the text. Each slide has a little sticky note that tells you what to do. Remember to remove the sticky note image from each slide!*
 
