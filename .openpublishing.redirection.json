@@ -30582,6 +30582,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/explore-iot-hub-monitoring/2-configure-iot-hub-monitoring.md",
+      "redirect_url": "/training/modules/explore-iot-hub-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-iot-hub-monitoring/3-knowledge-check.md",
+      "redirect_url": "/training/modules/explore-iot-hub-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-iot-hub-monitoring/4-summary.md",
+      "redirect_url": "/training/modules/explore-iot-hub-monitoring",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/explore-fundamentals-of-knowledge-mining/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/document-intelligence-knowledge-mining/",
       "redirect_document_id": false
