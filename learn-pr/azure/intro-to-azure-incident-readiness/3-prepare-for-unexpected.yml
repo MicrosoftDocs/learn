@@ -33,7 +33,6 @@ quiz:
   - content: "What's an important step you should take to alleviate concerns about account compromise exposure?"
     choices:
     - content: "Enforcing multifactor authentication"
-
       isCorrect: true
     - content: "Configuring service health alerts"
       isCorrect: false
