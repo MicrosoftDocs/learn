@@ -21532,6 +21532,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/achievements/learn-windows.add-machine-learning-to-your-uwp-app.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn-windows.creating-ui-windows-10-apps.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/design/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn-windows.enhance-ui-of-windows-10-app.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
       "redirect_document_id": false
