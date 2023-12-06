@@ -73,7 +73,6 @@ Service Health tracks different types of health events that may affect your reso
 | Service Health Event Type | Description |
 |---|---|
 | **Service issue** | Problems in the Azure services that affect you right now, also known as service incidents. |
-
 | **Planned maintenance** | Upcoming maintenance that can affect the availability of your services in the future.|
 | **Health advisories** | Changes in Azure services that require your attention. Examples include when you need to take an action, when Azure features are deprecated, upgrade requirements or if you exceed a usage quota. |
 | **Security advisories** | Security related notifications dealing with platform vulnerabilities and security and privacy breaches at the subscription and tenant level, also known as security &/or privacy incident. |
