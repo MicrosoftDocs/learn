@@ -1,8 +1,8 @@
-Azure OpenAI service provides REST API access to OpenAI's powerful language models including the GPT-4, GPT-35-Turbo, and Embeddings model series. 
+Azure OpenAI Service provides REST API access to powerful language models including the GPT-4, GPT-35-Turbo, and Embeddings model series. 
 
 To use these models, you must provision an Azure OpenAI service in your Azure subscription. You can do this by using the Azure portal or the Azure CLI.
 
-After you provision the resource, you can use its **endpoint** and one of its keys to call the Azure OpenAI APIs from your code, or, try it out first in the **playground**.
+After you provision the resource, you can use its **endpoint** and one of its keys to call the Azure OpenAI APIs from your code. You can also test the resource first in the **playground**.
 
 ## High-level deployment plan
 
@@ -16,11 +16,11 @@ After you provision the resource, you can use its **endpoint** and one of its ke
 
 There are two ways you can provision an Azure OpenAI resource. Which one you choose is up to you.
 
-- **Azure portal**: Azure portal offers a graphical user interface and can be a good option for beginners who want to learn more about cloud computing, and Azure OpenAI in particular.
+- **Azure portal**: The Azure portal offers a graphical user interface and can be a good option for beginners who want to learn more about cloud computing, and Azure OpenAI in particular.
 
 - **Azure CLI**: If you run a business, the Azure CLI might be the preferred option because you can store, version control, and parameterize deployment scripts so you can reuse them elsewhere.
 
-## Provision a resource by using Azure portal
+## Provision a resource by using the Azure portal
 
 Follow these steps to create a provision of Azure OpenAI in the Azure portal:
 
@@ -57,7 +57,7 @@ The following command creates a resource group called "resourceGroupName" in the
 az group create --name resourceGroupName --location eastus 
 ```
 
-To create a cognitive services account, you need to mention the resource group you created, give it a name, location, type, stock keeping unit (SKU), and your subscription ID.  
+To create a cognitive services account, you need to mention the resource group you created, and give it a name, location, type, stock keeping unit (SKU), and your subscription ID.  
 
 The following code is an example of how to create your cognitive service account. Change the values to fit your circumstances.
 

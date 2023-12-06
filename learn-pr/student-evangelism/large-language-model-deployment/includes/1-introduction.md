@@ -1,4 +1,4 @@
-To use a large language model (LLM), you can run it locally or through a cloud provider, like Azure. The benefits of using a cloud-hosted version are that the provider guarantees that the model works. If you’re building a tech startup or adding a large language model to an existing product, you can foster customer trust via guaranteed performance. Additionally, when you run an LLM through a cloud provider, you don’t need to worry about the data leaking because your data is protected. 
+To use a large language model (LLM), you can run it locally or through a cloud provider, like Azure. The benefits of using a cloud-hosted version are that the provider guarantees that the model works. If you're building a tech startup or adding a large language model to an existing product, you can foster customer trust via guaranteed performance. Additionally, when you run an LLM through a cloud provider, you don't need to worry about the data leaking, because your data is protected. 
 
 ## Scenario: Trying out an LLM for a tech MVP
 
@@ -14,4 +14,4 @@ In this module, you'll learn to:
 
 ## What is the main objective?
 
-Provision and use a large language model deployment in Azure OpenAI studio.
+Provision and use a large language model deployment in Azure OpenAI Studio.

@@ -10,7 +10,7 @@ In this exercise, you create an Azure OpenAI service that enables you to interac
 
 For this exercise, complete the following steps to provision a resource in the Azure portal.
 
-1. Navigate to the [Azure portal](https://portal.azure.com) in your browser and sign in.  
+1. Go to the [Azure portal](https://portal.azure.com) in your browser and sign in.  
 
 1. Type **openai** in the search bar at the top of the portal page and select **Azure OpenAI** from the options that appear.
 
