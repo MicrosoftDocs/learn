@@ -3,6 +3,8 @@
 
 You should expect that component malfunctions, platform outages, performance degradations, and other faults will occur. Build resiliency in the system so that it's fault-tolerant and can degrade gracefully.
 
+**Example scenario**
+
 Contoso Air is a commercial airline that has an in-house development department. The main LOB application is a booking solution that allows customers to book flights directly with Contoso Air. The app is built in Azure and uses Azure App Service, Cosmos DB, Azure Functions, Azure Logic Apps and Azure Service Bus.
 
 ## Determine failure risks.
@@ -11,7 +13,7 @@ Contoso Air is a commercial airline that has an in-house development department.
 
 Analyze the failure case, blast radius and intensity of fault for each potential failure point. Failure cases and their intensity can range from relatively low-impact scenarios like the temporary loss of a backend process to full-scale outages resulting from disasters. Performing this analysis will help you determine the design of error handling capabilities at the component level.
 
-*Challenge*
+*Contoso's challenge*
 
 - The LOB application provides many key functions ranging from marketing through commerce. The ticket purchase user flow has been identified as the most critical flow and the workload team has determined that additional reliability measures should be implemented to ensure that the flow is optimized for resilience.
 - The team has time budgeted for improvements like decoupling components and redesigning flows, but wants to ensure that they are using that time to focus on the highest value improvements.
@@ -27,7 +29,7 @@ Analyze the failure case, blast radius and intensity of fault for each potential
 
 By building self-preservation capabilities into the system, you'll be able to prevent a problem from affecting downstream components. The system will be able to mitigate transient and permanent failures, performance bottlenecks, and other problems that might affect reliability. You'll also be able to minimize the blast radius.
 
-*Challenge*
+*Contoso's challenge*
 
 - The team wants to minimize the risk of transient failures causing users' requests to be rejected by the payment gateway.  Because of the transient nature of some of the error conditions, there is a high probability the same request will succeed if resubmitted.
 
@@ -45,7 +47,7 @@ Aim for redundancy in physical utilities and immediate data replication. Also ai
 
 Adding intermediaries prevents direct dependency between components and improves buffering. Both of these benefits harden the resiliency of the system.
 
-*Challenge*
+*Contoso's challenge*
 
 - Implementing retries and decoupling the payment gateway calls from the UI using Service Bus has dramatically increased the reliability of this flow,but the business stakeholders still worry about data loss that may happen due to a catastrophic failure in the primary region.  
 

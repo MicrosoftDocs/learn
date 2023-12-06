@@ -3,6 +3,8 @@
 
 Even highly resilient systems need disaster preparedness approaches, in both architecture design and workload operations. On the data layer, you should have strategies that can repair workload state in case of corruption.
 
+**Example scenario**
+
 Contoso currently hosts a large amount of data on an on-premises SQL Server database and has recently modernized their analytics solution for the data with Azure services. 
 
 The new analytics solution utilizes Azure Analysis Services, Azure Data Factory, Azure Synapse Analytics, Power BI, and Azure Virtual Machines. All users of the solution are internal. After considering the availability requirements of the solution, the team decides to implement the solution in a single region. 
@@ -15,7 +17,7 @@ The data is ingested using Azure Data Factory and processed before being saved t
 
 A well-defined process leads to a quick recovery that can prevent negative impact on the finances and reputation of your business. Conducting regular recovery drills tests the process of recovering system components, data, and failover and failback steps to avoid confusion when time and data integrity are key measures of success.
 
-*Challenge*
+*Contoso's challenge*
 
 - As the solution is only used internally and isn't considered mission-critical, the workload team and business stakeholders have agreed that rebuilding the solution in a secondary region is a sufficient recovery model in the unlikely event that the Azure region where it is currently deployed is lost or the entire solution becomes unavailable for some other reason.
 - The workload team has described how to build the solution in another region in their DR plan, but hasn't had the opportunity to perform a full DR drill yet.
@@ -34,7 +36,7 @@ Backups are essential to getting the system back to a working state by using a t
 
 Immutable and transactionally consistent backups ensure that data can't be altered, and that the restored data isn't corrupted.
 
-*Challenge*
+*Contoso's challenge*
 
 - The workload team decides to move the SQL databases to Azure to cut down on the analytics processing times.  One of the databases is heavily used during the analytics process by the VMs, so the team needs to ensure that the database state can be recovered with the lowest possible RPO.
 
@@ -50,7 +52,7 @@ Immutable and transactionally consistent backups ensure that data can't be alter
 
 Self-healing automation helps to reduce risks from external factors like human intervention, and shortens the break-fix cycle.
 
-*Challenge*
+*Contoso's challenge*
 
 - The Windows process invoked from Azure Data Factory when ingesting data was initially deployed to multiple VMs for increased availability.
 - There have been a few cases where the legacy Windows process has crashed, requiring a restart of the VM. While the processing time overall has been minimally affected (because of the level of redundancy), the team would like to implement a solution that automates the detection of the failure and the recovery.

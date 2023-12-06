@@ -17,7 +17,7 @@ The target values indicate an ideal state. You can use the values as test thresh
 
 Compliance requirements must also have predictable outcomes for in-scope flows. Prioritizing these flows bring attention to areas that are the most sensitive.
 
-*Challenge*
+*Contoso's challenge*
 
 - The workload team wants to ensure that they are optimizing how resources are spent on making the workload reliable.
 - They have decomposed the workload into flows and have rated the flows based on their criticality.
@@ -33,7 +33,7 @@ Compliance requirements must also have predictable outcomes for in-scope flows. 
 
 Service-level agreements (SLAs) vary by service. Not all services and features are covered equally. Having a good understanding of coverage and limits can help you detect drift and build resiliency and recovery mechanisms.
 
-*Challenge*
+*Contoso's challenge*
 
 - The workload team and stakeholders have determined that the data for the app needs to have a guaranteed recovery time objective (RTO) that cannot exceed 30 seconds to support the criticality of their Claim Submission and Approval flow.
 
@@ -47,7 +47,7 @@ Service-level agreements (SLAs) vary by service. Not all services and features a
 
 Keeping track of dependent infrastructure, services, APIs, and functions developed by other teams or third parties helps you determine whether the workload can operate in absence of those dependencies. It also helps you understand cascading failures and improve downstream operations. Developers can implement resilient design patterns to handle potential failures when you use external services that might be susceptible to failures.
 
-*Challenge*
+*Contoso's challenge*
 
 - The Claim Submission and Approval flow has a dependency on a small reference dataset that is hosted and managed by a different department within Contoso Insurance.
 - The dataset is updated multiple times a day, during normal working hours.

@@ -11,7 +11,7 @@ Contoso University runs a web app built on microservices that provides education
 
 Monitoring and diagnostics are crucial operations. If something fails, you need to know that it failed, when it failed, and why it failed. Observability at the component level is fundamental, but aggregated observability of components and correlated flows provides a holistic view of health status. This data is required to enable site-reliability engineers to prioritize their efforts for remediation.
 
-*Challenge*
+*Contoso's challenge*
 
 - The workload application is deployed as part of a suite of five decoupled services across multiple functional tiers.
 - The team would like to be able to analyze transactions and users requests as they traverse the various tiers of the solution to identify bottlenecks that may lead to instability and perform more efficient troubleshooting when issues arise.
@@ -28,7 +28,7 @@ Monitoring and diagnostics are crucial operations. If something fails, you need 
 
 Site reliability engineers can be notified immediately so that they can mitigate ongoing live site incidents and proactively mitigate potential failures identified by predictive alerts before they become live incidents.
 
-*Challenge*
+*Contoso's challenge*
 
 - The team is expecting a significant increase in traffic at the beginning of each term, as students register for classes, access syllabi, and purchase textbooks.
 - During this critical period of the academic year, the team needs to ensure that enough capacity for the increase in expected load is available. The team also needs to be able to react quickly to other potential availability issues that may arise.
@@ -44,7 +44,7 @@ Site reliability engineers can be notified immediately so that they can mitigate
 
 It's beneficial to experience failures in production so you can set realistic expectations for recovery. This allows you to make design choices that gracefully respond to failures. Also, it enables you to test the thresholds you set for business metrics.
 
-*Challenge*
+*Contoso's challenge*
 
 - Communication between the web tier and the student registration REST service in this workload relies on client certificates.
 - Because the student registration functionality is not used much after the term begins, if the certificate used by the student registration service expires, the issue may go undetected for some time.

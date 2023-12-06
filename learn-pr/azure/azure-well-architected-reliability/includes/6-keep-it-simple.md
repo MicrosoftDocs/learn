@@ -3,6 +3,8 @@
 
 It's often what you remove rather than what you add that leads to the most reliable solutions. Simplicity reduces the surface area for control, minimizing inefficiencies and potential misconfigurations or unexpected interactions. On the other hand, oversimplification can introduce single points of failure. Maintain a balanced approach.
 
+**Example scenario**
+
 Contoso Travel is buying and integrating a small startup company with a popular web-based travel app. The app has gone viral because of its business model of negotiating deep discounts with hotel chains and airlines, and the use of social media to do intense and highly targeted marketing campaigns.
 
 The existing version of the startup product was developed in nodejs, and is running on VMs that are hosted between the on-premises data center, and AWS.
