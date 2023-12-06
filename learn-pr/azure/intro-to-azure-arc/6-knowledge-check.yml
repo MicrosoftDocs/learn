@@ -50,7 +50,7 @@ quiz:
     - content: "Any Cloud Native Computing Foundation (CNCF) certified Kubernetes cluster."
       isCorrect: true
       explanation: "Correct. Azure Arc lets you connect any CNCF-certified Kubernetes cluster to Azure."
-    - content: "Amazon Web Services	Elastic Kubernetes Service (EKS)and Google Cloud Platform	Google Kubernetes Engine (GKE) only."
+    - content: "Amazon Web Services	EKS and Google Cloud Platform	GKE only."
       isCorrect: false
       explanation: "Incorrect. Azure Arc lets you connect any CNCF-certified Kubernetes cluster to Azure."
 
