@@ -32,7 +32,6 @@ subjects:
 - development-tools
 units:
 - learn.wwl.implement-properties-within-class.introduction
-- learn.wwl.implement-properties-within-class.define-class-properties
 - learn.wwl.implement-properties-within-class.exercise-control-access-properties
 - learn.wwl.implement-properties-within-class.examine-reference-type-properties
 - learn.wwl.implement-properties-within-class.knowledge-check
