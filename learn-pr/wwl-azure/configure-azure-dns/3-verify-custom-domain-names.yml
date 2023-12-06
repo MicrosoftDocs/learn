@@ -4,13 +4,12 @@ title: Verify custom domain names
 metadata:
   title: Verify custom domain names
   description: "Verify custom domain names"
-  ms.date: 01/10/2023
+  ms.date: 11/20/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/3-verify-custom-domain-names.md)]

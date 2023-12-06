@@ -1,5 +1,3 @@
-
-
 For on-premises development, you can use either HANA System Replication or use shared storage to establish high availability for SAP HANA. On Azure virtual machines (VMs), HANA System Replication on Azure is currently the only supported high availability function. SAP HANA Replication consists of one primary node and at least one secondary node. Changes to the data on the primary node are replicated to the secondary node synchronously or asynchronously.
 
 :::image type="content" source="../media/sap-hana-high-availability-overview-c1c1ac0b.png" alt-text="Overview diagram of S A P HANA high availability.":::
@@ -36,7 +34,7 @@ You can use one of the quickstart templates that are on GitHub to deploy all the
      - **System Availability**: Select **HA**.
      - **Admin Username and Admin Password**: A new administrative user account that can be used to sign in to the operating system.
      - **New Or Existing Subnet**: Determines whether a new virtual network and subnet should be created or an existing subnet used. If you already have a virtual network that's connected to your on-premises network, select Existing.
-     - **Subnet ID**: If you want to deploy the VM into an existing VNet where you have a subnet defined the VM should be assigned to, name the ID of that specific subnet. The ID usually looks like: `/subscriptions/subscription ID/resourceGroups/resource group name/providers/Microsoft.Network/virtualNetworks/virtual network name/subnets/subnet name`
+     - **Subnet ID**: If you want to deploy the VM into an existing virtual network where you have a subnet defined the VM should be assigned to, name the ID of that specific subnet. The ID usually looks like: `/subscriptions/subscription ID/resourceGroups/resource group name/providers/Microsoft.Network/virtualNetworks/virtual network name/subnets/subnet name`
 
 ## Manual deployment (via the Azure portal)
 
@@ -50,11 +48,11 @@ You can use one of the quickstart templates that are on GitHub to deploy all the
      - Select the virtual network created in step 2.
 5. **Create virtual machine 1**.
 
-     - Use a SLES4SAP image in the Azure gallery that is supported for SAP HANA on the VM type you selected.
+     - Use a SLES4SAP image in the Azure gallery that's supported for SAP HANA on the VM type you selected.
      - Select the availability set created in step 3.
 6. **Create virtual machine 2**.
 
-     - Use a SLES4SAP image in the Azure gallery that is supported for SAP HANA on the VM type you selected.
+     - Use a SLES4SAP image in the Azure gallery that's supported for SAP HANA on the VM type you selected.
      - Select the availability set created in step 3.
 7. **Add data disks**.
 8. **Configure the load balancer. First, create a front-end IP pool**:
@@ -104,10 +102,10 @@ You can use one of the quickstart templates that are on GitHub to deploy all the
      - Make sure to enable Floating IP.
      - Repeat these steps for ports 30341 and 30342.
 
-For more information about the required ports for SAP HANA, see [SAP Note \#2388694](https://launchpad.support.sap.com/#/notes/2388694).
+For more information about the required ports for SAP HANA, see [SAP Note \#2388694](https://me.sap.com/notes/2388694).
 
 > [!IMPORTANT]
-> Do not enable TCP timestamps on Azure VMs placed behind Azure load balancer. Enabling TCP timestamps will cause the health probes to fail. Set parameter net.ipv4.tcp\_timestamps to 0.
+> Don't enable TCP timestamps on Azure VMs placed behind Azure load balancer. Enabling TCP timestamps will cause the health probes to fail. Set parameter net.ipv4.tcp\_timestamps to 0.
 
 ## Create a Pacemaker cluster
 
@@ -143,7 +141,7 @@ The steps in this section use the following prefixes: **\[A\]**: The step applie
     sudo pvcreate /dev/disk/azure/scsi1/lun3
     ```
 
-     - Create the logical volumes. A linear volume is created when you use lvcreate without the -i switch. We suggest that you create a striped volume for better I/O performance, where the -i argument should be the number of the underlying physical volume. In this case, two physical volumes are used for the data volume, so the -i switch argument is set to 2. One physical volume is used for the log volume, so no -i switch is explicitly used. Use the -i switch and set it to the number of the underlying physical volume when you use more than one physical volume for each data, log, or shared volumes.
+     - Create the logical volumes. A linear volume is created when you use `lvcreate` without the `-i` switch. We suggest that you create a striped volume for better I/O performance, where the -i argument should be the number of the underlying physical volume. In this case, two physical volumes are used for the data volume, so the -i switch argument is set to 2. One physical volume is used for the log volume, so no -i switch is explicitly used. Use the -i switch and set it to the number of the underlying physical volume when you use more than one physical volume for each data, log, or shared volumes.
 
     ```
     sudo vgcreate vg_hana_data_HN1 /dev/disk/azure/scsi1/lun0 /dev/disk/azure/scsi1/lun1
@@ -206,7 +204,7 @@ The steps in this section use the following prefixes: **\[A\]**: The step applie
     sudo mount -a
     ```
 
-3. **\[A\]** Set up host name resolution for all hosts. You can either use a DNS server or modify the /etc/hosts file on all nodes.
+3. **\[A\]** Setup host name resolution for all hosts. You can either use a DNS server or modify the /etc/hosts file on all nodes.
 4. **\[A\]** Install the SAP HANA high availability packages
 
     ```
@@ -216,7 +214,7 @@ The steps in this section use the following prefixes: **\[A\]**: The step applie
 5. **\[A\]** Run the hdblcm program from the HANA installation media. Enter the following values at the prompt:
 
      - Choose installation: Enter 1.
-     - Elect additional components for installation: Enter 1.
+     - Elect other components for installation: Enter 1.
      - Enter Installation Path \[/hana/shared\]: Select Enter.
      - Enter Local Host Name \[..\]: Select Enter.
      - Do you want to add additional hosts to the system? (y/n) \[n\]: Select Enter.
@@ -311,7 +309,7 @@ The steps in this section use the following prefixes: **\[A\]**: The step applie
     hdbsql -d SYSTEMDB -u system -i 03 "BACKUP DATA USING FILE ('initialbackup')"
     ```
 
-     - If you use a multi-tenant installation, also back up the tenant database:
+     - If you use a multitenant installation, also back up the tenant database:
 
     ```
     hdbsql -d HN1 -u system -i 03 "BACKUP DATA USING FILE ('initialbackup')"
@@ -388,7 +386,7 @@ The steps in this section use the following prefixes: **\[A\]**: The step applie
     sudo crm configure rsc_defaults migration-threshold=5000
     ```
 
-3. Make sure that the cluster status is ok and that all of the resources are started. It's not important on which node the resources are running.
+3. Make sure that the cluster status is ok and that all of the resources are started. It isn't important on which node the resources are running.
 
     ```
     sudo crm_mon -r
@@ -410,7 +408,7 @@ The steps in this section use the following prefixes: **\[A\]**: The step applie
 
 ## Test the cluster setup
 
-1. Test the migration. Before you start the test, make sure that Pacemaker does not have any failed action (via crm\_mon -r), there are no unexpected location constraints (for example leftovers of a migration test) and that HANA is sync state, for example with 'SAPHanaSR-showAttr':
+1. Test the migration. Before you start the test, make sure that Pacemaker doesn't have any failed action (via crm\_mon -r), there are no unexpected location constraints (for example leftovers of a migration test) and that HANA is sync state, for example with 'SAPHanaSR-showAttr':
 
     ```
     aspx-csharp
@@ -461,7 +459,7 @@ The steps in this section use the following prefixes: **\[A\]**: The step applie
     ```
     su - hn1adm
     
-    # Stop the HANA instance just in case it is running
+    # Stop the HANA instance just in case it's running
     
     hn1adm@hn1-db-0:/usr/sap/HN1/HDB03> sapcontrol -nr 03 -function StopWait 600 10
     
@@ -527,7 +525,7 @@ The steps in this section use the following prefixes: **\[A\]**: The step applie
     ```
     su - hn1adm
     
-    # Stop the HANA instance just in case it is running
+    # Stop the HANA instance just in case it's running
     
     sapcontrol -nr 03 -function StopWait 600 10
     
@@ -581,7 +579,7 @@ The steps in this section use the following prefixes: **\[A\]**: The step applie
     
     su - hn1adm
     
-    # Stop the HANA instance just in case it is running
+    # Stop the HANA instance just in case it's running
     
     sapcontrol -nr 03 -function StopWait 600 10
     

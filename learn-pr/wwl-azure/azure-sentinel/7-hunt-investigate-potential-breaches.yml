@@ -4,12 +4,10 @@ title: Hunt and investigate potential breaches
 metadata:
   title: Hunt and investigate potential breaches
   description: "Hunt and investigate potential breaches"
-  ms.date: 02/24/2023
+  ms.date: 06/23/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
   [!include[](includes/7-hunt-investigate-potential-breaches.md)]

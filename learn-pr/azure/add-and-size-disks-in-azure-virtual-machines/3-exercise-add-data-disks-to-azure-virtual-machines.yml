@@ -7,8 +7,9 @@ metadata:
   ms.date: 09/24/2018
   author: roygara
   ms.author: rogarana
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 interactive: bash
 azureSandbox: true
 durationInMinutes: 10

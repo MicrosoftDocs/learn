@@ -8,6 +8,8 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-extended-java
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-java-node
 durationInMinutes: 5

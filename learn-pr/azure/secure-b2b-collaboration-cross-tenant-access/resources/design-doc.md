@@ -84,4 +84,4 @@ You've recently acquired a branch whose employees will need access to your inter
 
 ## Notes
 
-- [External Identities Cross-tenant access documentation](https://learn.microsoft.com/azure/active-directory/external-identities/cross-tenant-access-overview)
+- [External Identities Cross-tenant access documentation](/azure/active-directory/external-identities/cross-tenant-access-overview)

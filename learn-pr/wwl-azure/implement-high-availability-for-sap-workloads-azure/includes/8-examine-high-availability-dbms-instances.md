@@ -1,5 +1,3 @@
-
-
 The DBMS also constitutes a single point of failure in an SAP system. To protect it by using a high-availability solution, you typically deploy the DBMS layer in an active/passive mode with a failover clustering solution to protect from infrastructure or software failures. The failover cluster solution could be a DBMS-specific failover framework, Windows Server Failover Clustering, or Pacemaker.
 
 The DBMS-specific failover framework commonly integrates with the operating system-level clustering functionality and takes advantage of the Azure platform support. For example, SQL Server Always On high-availability solution in Azure integrates with Windows Server Failover Clustering and involves the use of an Azure load balancer and an availability set. SQL Server Always On replicates DBMS data and log files by using its own DBMS replication. This replication eliminates the need for shared storage.

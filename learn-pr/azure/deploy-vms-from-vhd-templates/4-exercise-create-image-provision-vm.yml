@@ -7,8 +7,9 @@ metadata:
   ms.date: 8/31/2019
   author: cynthn
   ms.author: cynthn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
   zone_pivot_groups: platform-cloud
 interactive: bash
 azureSandbox: true

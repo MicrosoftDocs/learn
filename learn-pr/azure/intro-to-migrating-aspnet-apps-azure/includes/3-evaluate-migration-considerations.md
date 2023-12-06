@@ -69,27 +69,31 @@ Communication with your on-premises network is accomplished through:
 
 - **ExpressRoute connection**: Established between your network and Azure, through an ExpressRoute partner. This connection is private. Traffic does not go over the internet.
 
-## Explore Azure AD for security
+<a name='explore-azure-ad-for-security'></a>
 
-Azure AD is a cloud-based identity- and access-management service that helps your employees sign in and access resources. It provides access to:
+## Explore Microsoft Entra ID for security
+
+Microsoft Entra ID is a cloud-based identity- and access-management service that helps your employees sign in and access resources. It provides access to:
 
 - External resources, including Microsoft 365, the Azure portal, and many other SaaS applications.
 
 - Internal resources, such as applications on your corporate network or any cloud apps developed by your own organization.
 
-### Explore authentication and access control with Azure AD
+<a name='explore-authentication-and-access-control-with-azure-ad'></a>
 
-Azure AD authentication can provide verification of a username and password, but it's also much more. To improve security and reduce the need for helpdesk assistance, Azure AD authentication includes the following components:
+### Explore authentication and access control with Microsoft Entra ID
+
+Microsoft Entra authentication can provide verification of a username and password, but it's also much more. To improve security and reduce the need for helpdesk assistance, Microsoft Entra authentication includes the following components:
 
 - **Self-service password reset**: Users can update or change their passwords by using a web browser from any device.
 
-- **Azure AD Multi-Factor Authentication**: Users can choose an additional form of authentication during sign-in, such as a phone call or mobile app notification.
+- **Microsoft Entra multifactor authentication**: Users can choose an additional form of authentication during sign-in, such as a phone call or mobile app notification.
 
 - **Hybrid integration**: When a user updates or resets their password by using self-service password reset, that password can also be written back to an on-premises Active Directory environment. Hybrid integration is also used to enforce password protection policies for an on-premises environment.
 
 - **Password-less authentication**: This option includes entering credentials that are provided by using methods such as biometrics with Windows Hello for Business or a FIDO2 security key.
 
-You can use Azure AD for access control to all your resources on Azure. The single sign-on capabilities also mean that your users won't need to remember multiple sign-on credentials.
+You can use Microsoft Entra ID for access control to all your resources on Azure. The single sign-on capabilities also mean that your users won't need to remember multiple sign-on credentials.
 
 ## Explore cost considerations
 

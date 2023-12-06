@@ -5,11 +5,10 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Apply what you have learned from the Microsoft Defender for Cloud learn module to answer questions and show how Defender for Cloud protects your multicloud environment. Show your knowledge and prove that you know when and how to use Defender for Cloud.
-  ms.date: 06/21/2022
+  ms.date: 10/20/2023
   author: ElazarK
   ms.author: elkrieger
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 
 content: |
@@ -18,23 +17,23 @@ quiz:
   title: Check your knowledge
 
   questions:
-  - content: "Describe how the Secure Score of Defender for Cloud works to enhance your security posture?"
+  - content: "Describe how the Defender for Cloud Secure Score works to enhance your security posture."
     choices:
-    - content: "The Secure Score provides a percentage based KPI that informs you of your environment's security posture. The lower your Secure Score is, the more secure your environment is. "
+    - content: "The Secure Score provides a percentage-based KPI that informs you of your environment's security posture. Your environment is more secure the lower your Secure Score is."
       isCorrect: false
-      explanation: "The Secure Score increase with every recommendation and alert that is remediated. The closer your score is to 100 the more secure your environment is."
+      explanation: "The Secure Score increases with every recommendation and alert that is remediated. Your environment is more secure the closer your Secure Score is to 100."
     - content: "The Secure Score automatically fixes all issues and misconfigurations on your environments."
       isCorrect: false
       explanation: ""
-    - content: "The Secure Score is a percentage based KPI that informs you of your environment's security posture. The higher your Secure Score is, the more secure your environment is."
+    - content: "The Secure Score is a percentage-based KPI that informs you of your environment's security posture. Your environment is more secure the higher your Secure Score is."
       isCorrect: true
-      explanation: "The Secure Score increases when you remediate recommendations and alerts. The closer your score is to 100 the more secure your environment is."
+      explanation: "The Secure Score increases when you remediate recommendations and alerts. Your environment is more secure the closer your Secure Score is to 100."
   
-  - content: "Describe how the Cloud Security Posture Management (CSPM) of Defender for Cloud works to protect your multicloud environments?"
+  - content: "Describe how the Defender for Cloud Cloud Security Posture Management (CSPM) works to protect your multicloud environments."
     choices:
-    - content: "Defender for Cloud uses the Secure Score to inform you of the misconfigurations, threats, misuse and compliance violations across your multicloud infrastructure."
+    - content: "Defender for Cloud uses the Secure Score to inform you of the misconfigurations, threats, misuse, and compliance violations across your multicloud infrastructure."
       isCorrect: true
-      explanation: "Cloud Security Posture Management (CSPM) is a proactive system by which organizations can identify and remediate misconfigurations, threats, misuse and compliance violations across a multicloud infrastructure."
+      explanation: "Cloud Security Posture Management (CSPM) is a proactive system by which organizations can identify and remediate misconfigurations, threats, misuse, and compliance violations across a multicloud infrastructure."
     - content: "Defender for Cloud uses the Cloud Workload Protection (CWP) to add enhanced layers of security to your environments."
       isCorrect: false
       explanation: "Cloud Workload Protection (CWP) is the reactive part of Defender for Cloud. It uses alerts to inform you about potential cyberattacks against your multicloud environments."
@@ -42,38 +41,38 @@ quiz:
       isCorrect: false
       explanation: "Your SOC team is responsible for following up on the alerts and recommendations provided by Defender for Cloud."
 
-  - content: "An online casino received an email stating that if they do not transfer $10 million dollars to a well known hacker group, that hacker group will perform a brute force attack against their online casino. The casino has Defender for Cloud enabled, how will Defender for Cloud let them know if such an attack occurs?"
+  - content: "An online casino received an email stating that if they don't transfer $10 million dollars to a well known hacker group, that hacker group is going to perform a brute force attack against their online casino. The casino has Defender for Cloud enabled, how is Defender for Cloud going to let them know if such an attack occurs?"
     choices:
-    - content: "Defender for Cloud will use the Secure Score to alert the casino about any known attacks."
+    - content: "Defender for Cloud uses the Secure Score to alert the casino about any known attacks."
       isCorrect: false
-      explanation: "Defender for Cloud uses the Secure Score to inform the Casino about any misconfigurations, threats, misuse and compliance violations across a multicloud infrastructure. "
-    - content: "Defender for Cloud will use the Alerts page to inform the Casino about any known attacks."
+      explanation: "Defender for Cloud uses the Secure Score to inform the Casino about any misconfigurations, threats, misuse, and compliance violations across a multicloud infrastructure. "
+    - content: "Defender for Cloud uses the Alerts page to inform the Casino about any known attacks."
       isCorrect: true
-      explanation: "Alerts are generated through Defender for Cloud's enhanced security features on the Alerts page in Defender for Cloud. The Alerts page informs you via alerts, about possible cyberattacks or potential malicious actions taken against your resources."
-    - content: "Defender for Cloud creates workspaces whose job it is to actively investigate situations and will send text messages to the SOC team to handle any cyberattacks. "
+      explanation: "Alerts are generated through Defender for Cloud's enhanced security features on the Alerts page in Defender for Cloud. The Alerts page informs you via alerts about possible cyberattacks or potential malicious actions taken against your resources."
+    - content: "Defender for Cloud creates workspaces that actively investigate situations and send text messages to the SOC team to handle any cyberattacks. "
       isCorrect: false
-      explanation: "Defender for Cloud will provide alerts, recommendations and use the Secure Score to inform the casino of all of its issues and misconfigurations."
+      explanation: "Defender for Cloud provides alerts, recommendations, and uses the Secure Score to inform the casino of all of its issues and misconfigurations."
 
-  - content: "A financial company is building an online multicloud presence to let their brokers trade financial instruments. The environment will maintain several databases that contain sensitive information. How can Defender for Cloud protect their multicloud environment?"
+  - content: "A financial company is building an online multicloud presence to let their brokers trade financial instruments. The environment maintains several databases that contain sensitive information. How can Defender for Cloud protect their multicloud environment?"
     choices:
     - content: "Defender for Cloud has various plans that can protect databases."
       isCorrect: true
-      explanation: "Defender for Cloud uses its various plans and functionality to protect the following types of databases: SQL DBs, SQL on machines, MariaDB, MySQL, PostGreSQL, Cosmos DB."
-    - content: "Defender for Cloud will install an active firewall that surrounds and protects databases."
+      explanation: "Defender for Cloud uses its various plans and functionality to protect the following types of databases: SQL DBs, SQL on machines, MariaDB, MySQL, PostGreSQL, and Cosmos DB."
+    - content: "Defender for Cloud installs an active firewall that surrounds and protects databases."
       isCorrect: false
-      explanation: "Defender for Cloud may offer recommendations to install or alter a firewall, but it does not include firewall protection."
+      explanation: "Defender for Cloud might offer recommendations to install or alter a firewall, but it doesn't include firewall protection."
     - content: "Defender for Cloud has no capabilities that can secure databases."
       isCorrect: false
       explanation: "Defender for Cloud offers recommendations and alerts via the various Defender plans that can protect your databases in several ways."
 
-  - content: "A clothing retailer has a very large online presence that exists in Azure, Amazon Web Service (AWS), Google Cloud Platform (GCP) and on-premises. They want to ensure that all of their environments are protected. If they enable Defender for Cloud will all of their environments be protected?"
+  - content: "A clothing retailer has a large online presence that exists in Azure, Amazon Web Service (AWS), Google Cloud Platform (GCP) and on-premises. They want to ensure that all of their environments are protected. If they enable Defender for Cloud, are all of their environments protected?"
     choices:
-    - content: "No, only Azure will be protected."
+    - content: "No, only Azure is protected."
       isCorrect: false
-      explanation: "Azure, Amazon Web Service (AWS), Google Cloud Platform (GCP) and on-premises are all protected by Defender for Cloud."
-    - content: "Defender for Cloud will only protect Azure, AWS and GCP environments."
+      explanation: "Azure, Amazon Web Service (AWS), Google Cloud Platform (GCP), and on-premises are all protected by Defender for Cloud."
+    - content: "Defender for Cloud only protects Azure, AWS, and GCP environments."
       isCorrect: false
-      explanation: "Defender for Cloud will protect Azure, AWS and GCP environments, but it will also protect on-premises environments."
-    - content: "Defender for Cloud protects Azure, AWS, GCP and on-premises environments."
+      explanation: "Defender for Cloud protects Azure, AWS, and GCP environments, but it also protects on-premises environments."
+    - content: "Defender for Cloud protects Azure, AWS, GCP, and on-premises environments."
       isCorrect: true
-      explanation: "Defender for Cloud uses both reactive and proactive measures that will protect Azure, AWS, GCP and on-premises environments."
+      explanation: "Defender for Cloud uses both reactive and proactive measures to protect Azure, AWS, GCP, and on-premises environments."

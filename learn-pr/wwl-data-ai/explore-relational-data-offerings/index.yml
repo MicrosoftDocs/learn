@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore fundamental relational data concepts
 summary: Relational database systems are a common way to store and manage transactional and analytical data in organizations of any size around the world.
 abstract: |

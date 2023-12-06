@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.edge.integrate-with-pwabuilder.app-manifest
+title: App manifest and service worker with PWABuilder
+metadata:
+  title: App manifest and service worker with PWABuilder
+  description: This content is part of the "Integrate your project with PWABuilder" module.
+  ms.date: 07/11/2023
+  author: beth-panx
+  ms.author: xupa
+  ms.topic: module-standard-task-based
+  ms.prod: microsoft-edge
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-app-manifest-service-worker.md)]

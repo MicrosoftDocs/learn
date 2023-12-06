@@ -5,10 +5,9 @@ metadata:
   description: Learn how to secure resources using policy, role-based access control, and other Azure services
   brand: azure
   ms.date: 10/1/2019
-  author: adrianstevens
-  ms.author: adsteven
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: learning-path
 title: Implement resource management security in Azure
 summary: | 
   Learn how to secure resources using policy, role-based access control, and other Azure services. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer).
@@ -32,8 +31,6 @@ products:
 subjects:
 - security
 modules:
-- learn.azure.protect-against-security-threats-azure
-- learn.azure.build-cloud-governance-strategy-azure
 - learn.control-and-organize-with-resource-manager
 - learn.secure-azure-resources-with-rbac
 - learn.azure.manage-subscription-access-azure-rbac

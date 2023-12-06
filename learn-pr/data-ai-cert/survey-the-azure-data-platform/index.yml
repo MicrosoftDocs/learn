@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Survey the services on the Microsoft Intelligent Data Platform
 summary: Learn about Azure technologies that analyze text and images and relational, nonrelational, or streaming data. See how data engineers can choose the technologies that meet their business needs and scale to meet demand securely.
 abstract: |

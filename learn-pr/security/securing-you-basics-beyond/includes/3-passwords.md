@@ -2,20 +2,20 @@ Let's start with the basics. What are passwords, and what are they for? In the s
 
 ## What are credentials?
 
-Credentials are the combination of a username and a password. The username is the identifier of your user account, such as your email address or a name that you chose. The password is the *secret* part of your credentials. 
+Credentials are the combination of a username and a password. The username is the identifier of your user account, such as your email address or a name that you chose. The password is the *secret* part of your credentials.
 
-Some accounts let you create a special username that's different from your email address. Others might require that you use your personal email address. In any case, the username is not meant to be a secret, but the password is.
+Some accounts let you create a special username that's different from your email address. Others might require that you use your personal email address. In any case, the username isn't meant to be a secret, but the password is.
 
 ## How secret are your passwords?
 
-Many passwords are not as secret as people think they are. *Billions* of username/password combinations are currently for sale, but even more are available for free. Where did they all come from? Previous breaches. Thousands of breaches happen every year. Those breaches expose all kinds of personal data, along with account information that often includes usernames and passwords.
+Many passwords aren't as secret as people think they are. *Billions* of username/password combinations are currently for sale, but even more are available for free. Where did they all come from? Previous breaches. Thousands of breaches happen every year. Those breaches expose all kinds of personal data, along with account information that often includes usernames and passwords.
 
-What is a *data breach*, and why should you care? A data breach is theft of information that shouldn't be public. This often happens when a hacker takes advantage of flaws in a security system or just takes the data after a company accidentally exposes a database with no security settings turned on. That information can then be used for identity theft, blackmail, harassment, and other crimes. 
+What is a *data breach*, and why should you care? A data breach is theft of information that shouldn't be public. This often happens when a hacker takes advantage of flaws in a security system or just takes the data after a company accidentally exposes a database with no security settings turned on. That information can then be used for identity theft, blackmail, harassment, and other crimes.
 
 Even an account that you might not care about, such as an email account that you don't use anymore, can be used by an attacker to pretend to be you. The attacker might send email with malware to your contacts or sign up for other accounts with your name. There are many other bad uses for stolen accounts.
 
 > [!TIP]
-> You can go to [HaveIBeenPwned](https://HaveIBeenPwned.com/?azure-portal=true) and see if one or more of your accounts have been leaked in one of the thousands of public data breaches. You can even check your old passwords to see if they've been exposed through a breach. 
+> You can go to [HaveIBeenPwned](https://HaveIBeenPwned.com/?azure-portal=true) and see if one or more of your accounts have been leaked in one of the thousands of public data breaches. You can even check your old passwords to see if they've been exposed through a breach.
 >
 > If your information shows up here, don't worry. Just change the passwords for any identified accounts, and store your new secrets in your password manager (which we'll discuss shortly).
 
@@ -32,7 +32,7 @@ But how do you remember a different password for every account? What if you have
 - Write them in a notebook and store the notebook in a safe. This is secure because hackers usually can't physically access your safe and open it.
 - Use a password manager. This is secure because password managers are designed solely to store passwords. A password manager can be opened only with a key (the secret password or passphrase) that's known only to the person who owns it. Password managers are also convenient, so they're more likely to be used.
 
-Because storing a notebook of passwords in a safe is not convenient, a password manager is the better option for most people who use a computer and/or smartphone. A password manager is your safest option, if you treat it carefully. In this case, *carefully* means that you should:
+Because storing a notebook of passwords in a safe isn't convenient, a password manager is the better option for most people who use a computer and/or smartphone. A password manager is your safest option if you treat it carefully. In this case, *carefully* means that you should:
 
 - Use a passphrase instead of a short password.
 - Use *multifactor authentication* to secure it even further.
@@ -41,13 +41,13 @@ We'll explain multifactor authentication later in this training.
 
 ## What's even better than a password?
 
-What is a *passphrase*, and how is it different from a password?
+What's a *passphrase*, and how is it different from a password?
 
 In the past, the recommendation for a strong password was to use eight characters. The characters had to include at least one uppercase character, number, and special character such as !, :, @, *, $, or #. This guidance resulted in passwords that were easy for a hacker to crack and hard for people to remember. People tended to create the simplest passwords possible that met all of those rules. To make matters worse, people often reused those weak passwords for other accounts.
 
 :::image type="content" source="../media/3-password-risks.png" alt-text="Visual table that presents 30 passwords you should never use, like strings of consecutive letters." lightbox="../media/3-password-risks-large.png":::
 
-One famous example is the password *Pa$$w0rd*. It meets all of the criteria, yet it's high on the list of the 1,000 most commonly used passwords. Hackers also have access to other password lists (for example, the 1,000,000 most commonly used passwords) that they simply plug into their password-cracking software. 
+One famous example is the password *Pa$$w0rd*. It meets all of the criteria, yet it's high on the list of the 1,000 most commonly used passwords. Hackers also have access to other password lists (for example, the 1,000,000 most commonly used passwords) that they simply plug into their password-cracking software.
 
 If you think you have a password that has never been used, you should know that tools exist to launch a *brute force* attack. This type of attack tries every combination of all characters to guess a password. Computers are good at guessing quickly, so don't assume that your password can never be guessed.
 
@@ -64,7 +64,7 @@ Another approach is easier to both type and remember: a *passphrase*. A passphra
 
 That comic example shows how it's much easier for a computer to guess a short, complicated-looking password than a longer set of easy-to-remember words. You can see that the passphrase words are much easier to remember than something long and complicated.
 
-How can you make your own passphrase? One easy way is to pick any four words from objects in the room around you. Then add a fifth word, anywhere in the middle, that represents something unique to you. You've created a fantastic passphrase. 
+How can you make your own passphrase? One easy way is to pick any four words from objects in the room around you. Then add a fifth word, anywhere in the middle, that represents something unique to you. You've created a fantastic passphrase.
 
 Take for example: *speaker card recyclable antenna sheetrock*. If you use a passphrase like that (be sure to create your own and don't reuse this example) to secure your password manager, you'll be safe. If you add another word or a combination of numbers or other characters, you'll be even better off. If you know any words in different language, you can also add one of those.
 
@@ -72,36 +72,36 @@ After you've made a passphrase with your own words and are ready to make sure al
 
 ## Password managers to the rescue!
 
-In the past decade, *password managers* have improved to make it easy and convenient for you to keep your accounts secure without having to memorize all your passwords. A password manager is a program that locks up all of your passwords until you need them, similar to a safe. 
+In the past decade, *password managers* have improved to make it easy and convenient for you to keep your accounts secure without having to memorize all your passwords. A password manager is a program that locks up all of your passwords until you need them, similar to a safe.
 
 You can access your passwords by using your one easy-to-remember and hard-to-crack passphrase. Password managers also encrypt your data, so the data is unusable to anyone who doesn't have the key to *decrypt* (unlock) it.
 
-First, you'll need to find a trusted password manager. Here are five common, convenient, and highly rated password managers. They work in all browsers, on Windows, macOS, and most smartphones.
+First, you'll need to find a trusted password manager. Here are four common, convenient, and highly rated password managers. They work in all browsers, on Windows, macOS, and most smartphones.
 
 - 1Password
 - LastPass
 - Dashlane
 - Bitwarden
 
-All of these except 1Password have free plans that you can use indefinitely. At the time of this writing, 1Password has a free trial for 30 days only.
+All of these except 1Password have free plans that you can use indefinitely. At the time of this writing, 1Password has a free trial for 14 days only.
 
-To test any of these password managers, simply download the program to your computer or smartphone and give it a try. You should be able to use all except 1Password for free, without a credit card. Most of them have additional features available for a fee. 
+To test any of these password managers, download the program to your computer or smartphone and give it a try. You should be able to use all except 1Password for free, without a credit card. Most of them have additional features available for a fee.
 
 You should also consider installing your password manager's *browser extension* (the program that runs in your internet browser). These extensions make signing in online while using that browser much more convenient, while still being secure.
 
 ## After you've installed a password manager, what's next?
 
-Now that you have a password manager, you should change any basic or reused passwords to make sure they're complex (long, with much variety). Also make sure that you're not using them for more than one account each. While you're making updates, this is a great opportunity to change all your passwords and add those accounts to your password manager. 
+Now that you have a password manager, you should change any basic or reused passwords to make sure they're complex (long, with much variety). Also make sure that you're not using them for more than one account each. While you're making updates, this is a great opportunity to change all your passwords and add those accounts to your password manager.
 
 Some password managers will generate long and complex passwords for you as you make changes. Good password managers will also record new entries or updates for you automatically, so you won't have to enter that information twice.
 
 With your accounts and passwords now stored securely, you'll be able to view and manage sign-in information from just one place. You can add and store other confidential information like addresses, credit card numbers, or your passport number.
 
-Now things will be more convenient. For example, when you visit a website, your password manager can automatically fill in the username and password for you. As long as you unlock your vault with your passphrase, you can sign in to your other accounts automatically afterward. If you're concerned about someone else using your password manager if you step away from your computer, you can set your password manager to automatically lock itself after the amount of time that you set.
+Now things will be more convenient. For example, when you visit a website, your password manager can automatically fill in the username and password for you. As long as you unlock your vault with your passphrase, you can sign in to your other accounts automatically afterward. If you're concerned about someone else using your password manager if you step away from your computer, you can set your password manager to automatically lock itself after an amount of time that you set.
 
 :::image type="content" source="../media/3-password-manager.svg" alt-text="Diagram showing a user's password manager that has access to multiple accounts, protected by a single key sign-in.":::
 
-When you're done using your online accounts, you can close or lock the password manager. This will make sure your passwords are unavailable to anyone else you might share a computer with.
+When you're done using your online accounts, you can close or lock the password manager. This will make sure your passwords are unavailable to anyone else with whom you might share a computer.
 
 > [!TIP]
 > You don't have to put *every* password or passphrase in your password manager. You can keep some of them in your head, or written on a piece of paper that stays in a safe or lockbox. Just make sure that every password or passphrase that you use is long and difficult to crack.
@@ -115,6 +115,6 @@ If you're worried about whether the data is stored securely, you should also kno
 > [!TIP]
 > You really don't want to be locked out of your password manager, especially because you now have passwords that aren't reused and that are long and varied. If you aren't sure if you can remember your new passphrase, you should write it on a piece of paper and store it somewhere safe. After you're sure you can remember your passphrase, you can destroy the piece of paper. In the meantime, you have a backup plan for accessing your passwords.
 
-Password managers can also allow you to share just one or a few of your passwords with family members, without having to share your main passphrase. You can even provide an emergency access option to a trusted family member for all of the secured information, if you want a backup plan.
+Password managers can also allow you to share just one or a few of your passwords with family members without having to share your main passphrase. You can even provide an emergency-access option to a trusted family member for all of the secured information if you want a backup plan.
 
 Password managers are convenient, secure, and simple to use. They'll do most of the hard work for you. You'll have to add your accounts, but only once. After that, all you need to remember is your single passphrase to get access to all of your passwords.

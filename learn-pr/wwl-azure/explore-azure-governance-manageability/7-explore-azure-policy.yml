@@ -4,11 +4,10 @@ title: Explore Azure Policy
 metadata:
   title: Explore Azure Policy
   description: "Explore Azure Policy"
-  ms.date: 04/21/2023
+  ms.date: 11/08/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/7-explore-azure-policy.md)]

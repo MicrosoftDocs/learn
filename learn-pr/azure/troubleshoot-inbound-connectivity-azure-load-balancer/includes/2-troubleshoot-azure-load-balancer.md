@@ -1,17 +1,17 @@
 Azure Load Balancer operates at the transport layer of the network stack. Load Balancer advertises a single public IP address to which all clients connect. Load Balancer then uses its own routing and address translation rules to direct incoming TCP requests to one of a set of outbound addresses. Typically, each outbound address is associated with a different virtual machine (VM), each running an instance of your application.
 
-Load Balancer uses a health probe to determine the availability of each VM that's referenced by addresses in the back-end pool. Load Balancer only sends requests to VMs that indicate they're healthy.
+Load Balancer uses a health probe to determine the availability of each VM in the back-end pool. Load Balancer only sends requests to VMs that indicate they're healthy.
 
 In the example scenario, you've gotten alerts indicating that Load Balancer can't direct requests to VMs in the back-end pool. You suspect a recent change in network configuration might be causing the problem. But you need to understand how network changes affect the operation of Load Balancer.
 
-By the end of this unit, you'll be able to:
+By the end of this unit, you're able to:
 
 - Describe a typical configuration of Load Balancer, and the components involved in routing requests to VMs.
 - Explain common problems that can cause Load Balancer to fail to distribute requests to VMs.
 
 ## How does Load Balancer work?
 
-Azure Load Balancer includes a number of components:
+Azure Load Balancer includes many components:
 
 - A front-end IP address
 - A back-end pool of VM addresses
@@ -21,7 +21,7 @@ Azure Load Balancer includes a number of components:
 
 The following diagram shows how the various elements used by Load Balancer operate together.
 
-![Diagram that shows the components of Azure Load Balancer.](../media/2-LoadBalancer.png)
+:::image type="content" source="../media/2-LoadBalancer.png" alt-text="Diagram that shows the components of Azure Load Balancer.":::
 
 ### Front-end IP address and back-end pool
 
@@ -41,17 +41,17 @@ The hashed value is used as a key to a table that holds the IP addresses in the 
 
 ### Scalability
 
-You can start additional VM instances and add their IP addresses to the back-end pool at any time. Load Balancer includes these new instances when it distributes user requests.
+You can start more VM instances and add their IP addresses to the back-end pool at any time. Load Balancer includes these new instances when it distributes user requests.
 
 Load Balancer can expose more than one public front-end IP address, and might have multiple back-end pools. This scheme enables you to reuse the same instance of Load Balancer to handle requests for different systems.
 
 ### Routing rules
 
-You define load-balancing rules to specify how requests directed toward each front-end IP address are mapped to a back-end pool. A load-balancing rule also specifies the protocol to match against, and optionally the source (client) and destination ports. Incoming requests arriving on a front-end IP address that don't match the protocol and port requirements are discarded by Load Balancer. A load-balancing rule can also configure session persistence so that a given client is likely to have its requests routed to the same VM. In this way, applications running on a VM take advantage of caching to hold session-specific information.
+You define load-balancing rules to specify how requests directed toward each front-end IP address are mapped to a back-end pool. A load-balancing rule also specifies the protocol to match against, and optionally the source (client) and destination ports. Incoming requests arriving on a front-end IP address that don't match the protocol and port requirements are discarded by Load Balancer. A load-balancing rule can also configure session persistence so that a given client is likely to have its requests routed to the same VM allowing applications running on a VM take advantage of caching to hold session-specific information.
 
 ### Health probes
 
-Load Balancer needs to determine whether each VM referenced by the back-end pool is available for handling requests. You add a health probe to do this. A health probe sends regular *ping* messages to a port that you specify for the VMs in the back-end pool. You provide a service on the VMs that responds to these ping messages with an HTTP 200 (OK) message.
+Load Balancer needs to determine whether each VM referenced by the back-end pool is available for handling requests. Availability is determined by adding a health probe. A health probe sends regular *ping* messages to a port that you specify for the VMs in the back-end pool. You provide a service on the VMs that responds to these ping messages with an HTTP 200 (OK) message.
 
 When the VM fails to respond after a specified number of attempts, Load Balancer assumes it's unhealthy, and removes it from the list of VMs that can accept user requests. The workload is then distributed among the remaining healthy VMs. Load Balancer continues to ping an unresponsive VM. If the VM starts to reply, it's added back into the list of healthy VMs, and starts receiving user requests again.
 
@@ -59,7 +59,7 @@ If you don't provide a health probe, Load Balancer doesn't know whether a VM is 
 
 ### Virtual network
 
-The VMs referenced by the back-end pool are typically in a virtual network subnet, hosted by Azure. You protect the VMs in this network by configuring a network security group (NSG). An NSG implements inbound and outbound security rules that can limit the traffic entering and exiting the virtual network to a set of well-defined endpoints.
+The VMs referenced by the back-end pool are hosted in an Azure Virtual Network subnet. You protect the VMs in this network by configuring a network security group (NSG). An NSG implements inbound and outbound security rules that can limit the traffic entering and exiting the virtual network to a set of well-defined endpoints.
 
 For example, the VMs in the back-end pool of Load Balancer typically allow inbound traffic on port 80 (HTTP) and port 443 (HTTPS) that arrives from outside the virtual network. But VMs might block traffic that appears on other ports.
 

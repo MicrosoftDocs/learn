@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-business-benefits-azure.save-money-cloud-economics
+title: Save money with cloud economics
+metadata:
+  title: Save money with cloud economics
+  description: "Save money with cloud economics"
+  ms.date: 11/07/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-save-money-cloud-economics.md)]
+interactive: bash

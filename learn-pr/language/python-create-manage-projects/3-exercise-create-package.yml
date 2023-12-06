@@ -7,9 +7,10 @@ metadata:
   ms.date: 01/25/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-language
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/3-exercise-create-package.md)]

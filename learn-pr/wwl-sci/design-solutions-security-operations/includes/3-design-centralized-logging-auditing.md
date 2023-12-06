@@ -2,6 +2,13 @@
 
 Microsoft cloud security benchmark provides guidance on designing logging capabilities, which is summarized in the following table. For more complete information about these controls, see [Microsoft cloud security benchmark - Logging and threat detection](https://learn.microsoft.com/security/benchmark/azure/mcsb-logging-threat-detection)
 
+Please refer to [Introduction to Microsoft Cybersecurity Reference Architecture and cloud security benchmark](/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/1-introduction-reference-architecture-benchmark) for more background on Microsoft Cloud Security Benchmark. 
+
+In the summary below, we have included controls from the full baseline where:
+
+* Security controls were *supported* but *not* enabled by default
+* There was explicit guidance which contained action to be taken on the part of the customer
+
 | Control number | Title | Summary |
 |---|---|---|
 | LT-3   | Enable logging for security investigation  | Enable logging for your cloud resources to meet the requirements for security incident investigations and security response and compliance purposes.  |
@@ -70,7 +77,7 @@ Azure Monitor collects these types of data:
 |---------|---------|
 |Application|Data about the performance and functionality of your application code on any platform.|
 |Infrastructure|**- Container.** Data about containers, such as Azure Kubernetes Service, Prometheus, and about the applications running inside containers.<br>**- Operating system.** Data about the guest operating system on which your application is running.|
-|Azure Platform|**- Azure resource**. The operation of an Azure resource.<br>**- Azure subscription.** The operation and management of an Azure subscription, and data about the health and operation of Azure itself.<br>**- Azure tenant.** Data about the operation of tenant-level Azure services, such as Azure Active Directory.<br>**- Azure resource changes.** Data about changes within your Azure resources and how to address and triage incidents and issues.         |
+|Azure Platform|**- Azure resource**. The operation of an Azure resource.<br>**- Azure subscription.** The operation and management of an Azure subscription, and data about the health and operation of Azure itself.<br>**- Azure tenant.** Data about the operation of tenant-level Azure services, such as Microsoft Entra ID.<br>**- Azure resource changes.** Data about changes within your Azure resources and how to address and triage incidents and issues.         |
 |Custom Sources|Use the Azure Monitor REST API to send customer metric or log data to Azure Monitor and incorporate monitoring of resources that don’t expose monitoring data through other methods.|
 
 For detailed information about each of the data sources, see [data sources](https://learn.microsoft.com/azure/azure-monitor/data-sources).

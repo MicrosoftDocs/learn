@@ -1,8 +1,6 @@
-
-
 Suppose you need to quickly determine whether a customer's purchase is eligible for a promotional discount. The details for the promotion indicate that when a purchase value is greater than $1000, the purchase is eligible for a $100 discount. If the purchase amount is $1000 or less, the purchase is eligible for a $50 discount.
 
-While you could certainly use the `if ... elseif ... else` branching construct to express this business rule, using the *conditional operator* to evaluate eligibility for the promotional discount may be a better choice. The conditional operator uses a compact format that saves a few lines of code and possibly makes the intent of the code clearer.
+While you could certainly use the `if ... elseif ... else` branching construct to express this business rule, using the *conditional operator* to evaluate eligibility for the promotional discount might be a better choice. The conditional operator uses a compact format that saves a few lines of code and possibly makes the intent of the code clearer.
 
 ## What is the conditional operator?
 
@@ -14,7 +12,7 @@ Here's the basic form:
 <evaluate this condition> ? <if condition is true, return this value> : <if condition is false, return this value>
 ```
 
-Take a minute to consider how you'ld apply the conditional operator to the promotional discount scenario. Your goal is to display a message to the customer that shows their discount percentage. The amount of their discount will be based on whether they've spent more than $1000 on their purchase.
+Take a minute to consider how you'd apply the conditional operator to the promotional discount scenario. Your goal is to display a message to the customer that shows their discount percentage. The amount of their discount will be based on whether they've spent more than $1000 on their purchase.
 
 ### Add code that uses a conditional operator
 

@@ -5,11 +5,12 @@ metadata:
   unitType: learning-content
   title: Deploy and configure Azure NAT Gateway
   description: This unit provides an overview of deploying Azure NAT Gateway by using the Azure portal or an Azure Resource Manager template.
-  ms.date: 04/21/2023
+  ms.date: 10/20/2023
   author: LBN-commits
   ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
 durationInMinutes: 10
 content: |
   [!include[](includes/5-deploy-configure-azure-nat-gateway.md)]

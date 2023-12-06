@@ -29,7 +29,7 @@
         // Allocate 4-qubit register necessary to represent the possible values (digits 0-9)
         use digitReg = Qubit[4];
         mutable missingDigit = 0;
-        mutable resultISBN = new Int[10];
+        mutable resultISBN = [0, size=10];
         mutable attempts = 0;
 
         // Repeat the algorithm until the result forms a valid ISBN
@@ -124,7 +124,7 @@
 
 
     function MakeResultIsbn(missingDigit : Int, inputISBN : Int[]) : Int[] {
-        mutable resultISBN = new Int[Length(inputISBN)];
+        mutable resultISBN = [0, size = Length(inputISBN)];
         for i in 0..Length(inputISBN) - 1 {
             if inputISBN[i] < 0 {
                 set resultISBN w/= i <- missingDigit;

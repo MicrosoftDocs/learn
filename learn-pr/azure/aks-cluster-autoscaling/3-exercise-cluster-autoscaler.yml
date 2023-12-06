@@ -3,13 +3,12 @@ uid: learn.aks-cluster-autoscaling.3-exercise-cluster-autoscaler
 title: Exercise - Enable cluster scalability on AKS
 metadata:
   type: exercise
-  title: Exercise - Enable cluster scalability on AKS
-  description: In this exercise, you'll enable the cluster autoscaler module in an AKS cluster that's already created. After that, you'll test the scalability of your applications against the cluster autoscaler.
-  ms.date: 04/27/2021
+  title: Exercise - Enable the cluster autoscaler on AKS
+  description: In this exercise, you enable the cluster autoscaler on an AKS cluster and then test the scalability of your applications against the cluster autoscaler.
+  ms.date: 11/08/2023
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-durationInMinutes: 10
+  ms.topic: unit
+durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-cluster-autoscaler.md)]

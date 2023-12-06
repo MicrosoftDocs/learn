@@ -8,14 +8,13 @@ metadata:
   ms.date: 03/15/2023
   author: msmimart
   ms.author: mimart
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |  
 quiz:
   title: Check your knowledge
   questions:
-  - content: What is one of the main advantages of using Azure AD B2B collaboration?
+  - content: What is one of the main advantages of using Microsoft Entra B2B collaboration?
     choices:
     - content: You can allow people outside of your organization to use their own credentials to sign in to your apps.
       isCorrect: true
@@ -28,13 +27,13 @@ quiz:
       explanation: Try again. A user object for the B2B collaboration user is added to your directory, and you can manage it like other user objects in your directory. For example you can assign it permissions, add it to groups, and so on.
   - content: How can you add a layer of protection to the application?
     choices:
-    - content: Use unconditional access policies in Azure AD B2B.
+    - content: Use unconditional access policies in Microsoft Entra B2B.
       isCorrect: false
       explanation: Try again. There's no such thing as unconditional access policies in Azure.
-    - content: Use Conditional Access policies in Azure AD B2B.
+    - content: Use Conditional Access policies in Microsoft Entra B2B.
       isCorrect: true
       explanation: Correct. Conditional Access policies offer further protection for your applications. You can ensure that your applications are only accessed when all conditions you set have been met.
-    - content: Use criteria access policies in Azure AD B2B.
+    - content: Use criteria access policies in Microsoft Entra B2B.
       isCorrect: false
       explanation: Try again. There's no such thing as criteria access policies in Azure.
   - content: What is one of the **External Collaboration settings** you should review to make sure B2B collaboration is enabled?

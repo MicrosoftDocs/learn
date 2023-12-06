@@ -8,8 +8,10 @@ metadata:
   ms.date: 11/09/2021
   author: IEvangelist
   ms.author: dapine
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 1
 content: |
   [!include[](includes/5-summary.md)]

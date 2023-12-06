@@ -1,8 +1,8 @@
-Now you'll examine the key factors that determine Azure NetApp Files performance. You'll also learn how to calculate the required bandwidth of your applications.
+Now let's examine the key factors that determine Azure NetApp Files performance. Including, how to calculate the required bandwidth of your applications.
 
 ## Storage hierarchy
 
-The following diagram of Azure NetApp Files storage hierarchy shows the relationship between subscriptions, accounts, capacity pools, and volumes.
+The following diagram of the Azure NetApp Files storage hierarchy shows the relationship between subscriptions, accounts, capacity pools, and volumes.
 
 ![Diagram of Azure NetApp Files storage hierarchy showing the relationship between subscriptions, accounts, capacity pools, and volumes.](../media/storage-hierarchy.png)
 
@@ -14,15 +14,15 @@ The Azure NetApp Files account is primarily an administrative concept and is in 
 
 A single Azure NetApp Files account can have up to 25 capacity pools. The provisioned size of each pool can then be assigned to volumes within it.
 
-In the preceding example, we provisioned 4 TiB to capacity pool 1. This pool is also assigned a Premium service level, which we'll discuss in the next section.
+In the preceding example, we provisioned 4 TiB to capacity pool 1. This pool is also assigned a Premium service level, which we discuss in the next section.
 
 Azure NetApp Files is charged based on the provisioned size of capacity pools. The size of pools can vary from 4 TiB to 500 TiB each.
 
 ### Volumes
 
-Volumes are the actual constructs that will be mounted from your VMs and be consumed. Volume quota can be assigned in a range from 100 GB to 100 TB. The total volume capacity can't exceed the size of the capacity pool.
+Volumes are the actual constructs that are mounted from your VMs and consumed. Volume quota can be assigned in a range from 100 GB to 100 TB. The total volume capacity can't exceed the size of the capacity pool.
 
-In the preceding example, two volumes are within capacity pool 1 and the total quota limit can't exceed 4 TiB. All volumes in a pool will have the same service level. In this example, the service level is Premium.
+In the preceding example, two volumes are within capacity pool 1 and the total quota limit can't exceed 4 TiB. All volumes in a pool have the same service level. In this example, the service level is Premium.
 
 ## Service levels
 
@@ -45,13 +45,13 @@ Let's walk through an example:
 - If I choose the Premium service level, I get 64 MiB per second for every 1 TB of quota within the volume.
 - If I provision a volume with a 2-TB quota, that volume can deliver up to 128 MiB per second of throughput.
 
-Note that:
+Consider that:
 
 - The limit of maximum throughput of an Azure NetApp Files volume is 4,500 MiB per second.
-- The gross throughput is set by the quota of the volume, not the actual capacity consumed in the volume.
-- You can resize the volume quota anytime, even if it's mounted. Changes to quality of service will take effect in near real time. You don't need to reboot your VM or remount the volume.
+- The quota of the volume sets the gross throughput, not the actual capacity consumed in the volume.
+- You can resize the volume quota anytime, even if it's mounted. Changes to quality of service take effect in near real time. You don't need to reboot your VM or remount the volume.
 
-Keep in mind that storage performance is affected by a wide range of factors, such as the read/write mix, block size mix, and access patterns like random or sequential access.
+Keep in mind that a wide range of factors affect the storage performance. Such as, the read/write mix, block size mix, and access patterns like random or sequential access.
 
 ## Calculate required bandwidth
 

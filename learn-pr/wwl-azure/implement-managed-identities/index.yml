@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Implement managed identities
 summary: Learn how managed identities can help you deploy secure solutions on Azure without the need to manage credentials.
 abstract: |

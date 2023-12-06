@@ -4,13 +4,10 @@ title: 'Exercise: Create and configure a virtual network gateway'
 metadata:
   title: 'Exercise: Create and configure a virtual network gateway'
   description: "Exercise: Create and configure a virtual network gateway"
-  ms.date: 01/05/2023
+  ms.date: 10/09/2023
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-configure-local-network-gateway.md)]

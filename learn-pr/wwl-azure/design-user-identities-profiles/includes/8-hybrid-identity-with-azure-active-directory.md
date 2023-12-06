@@ -2,7 +2,7 @@ Organizations are a mixture of on-premises and cloud applications. Users require
 
 Microsoft identity spans on-premises and cloud-based capabilities. These solutions create a common user identity for authentication and authorization to all resources, regardless of location.
 
-To achieve hybrid identity with Azure AD, one of three authentication methods can be used, depending on your scenarios. The three methods are:
+To achieve hybrid identity with Microsoft Entra ID, one of three authentication methods can be used, depending on your scenarios. The three methods are:
 
  -  [Password hash synchronization (PHS)](/azure/active-directory/hybrid/whatis-phs)
  -  [Pass-through authentication (PTA)](/azure/active-directory/hybrid/how-to-connect-pta)

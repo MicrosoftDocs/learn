@@ -16,7 +16,7 @@ By default, if no schema is specified when a user creates an object, SQL Server 
 
 ## Logins and users
 
-No matter the mode of authentication that is used, a login name used to access your SQL database is set up as a login within the instance. Those logins are set up at the instance level of SQL Server and stored in the master database. However, you can configure contained users, which are added at the database level. These users can be configured as SQL Server Authentication users as well as either Windows Authentication users or Azure Active Directory users (depending on which platform you're using). In order to create these users, the database must be configured for partial containment, which is configured by default in Azure SQL Database, and optionally configurable in SQL Server.
+No matter the mode of authentication that is used, a login name used to access your SQL database is set up as a login within the instance. Those logins are set up at the instance level of SQL Server and stored in the master database. However, you can configure contained users, which are added at the database level. These users can be configured as SQL Server Authentication users as well as either Windows Authentication users or Microsoft Entra users (depending on which platform you're using). In order to create these users, the database must be configured for partial containment, which is configured by default in Azure SQL Database, and optionally configurable in SQL Server.
 
 These users only have access to the database that the user is set up with. For the purposes of Azure SQL Database, it's considered a best practice to create users at the scope of the user database, and not in the master database as shown below.
 
@@ -25,7 +25,7 @@ CREATE USER [dba@contoso.com] FROM EXTERNAL PROVIDER;
 GO
 ```
 
-The `CREATE USER` statement is executed in the context of the user database. In the example above, the user is an Azure Active Directory user as indicated with the `FROM EXTERNAL PROVIDER` syntax.
+The `CREATE USER` statement is executed in the context of the user database. In the example above, the user is a Microsoft Entra user as indicated with the `FROM EXTERNAL PROVIDER` syntax.
 
 If logins are created at the instance level in SQL Server, a user should then be created within the database, which maps the user to the server-based login as shown in the following example.
 

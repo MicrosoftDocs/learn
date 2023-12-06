@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/04/2023
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   zone_pivot_groups: None
 durationInMinutes: 7
 content: |
@@ -51,12 +50,12 @@ quiz:
       explanation: "A retention policy would only ensure files are not deleted, they could still be modified."
   - content: "Which statements are factual when configuring an Azure file share for a business group?"
     choices:
-    - content: "Azure Files can authenticate to Azure Active Directory Domain Services."
+    - content: "Azure Files can authenticate to Microsoft Entra Domain Services."
       isCorrect: true
-      explanation: "Azure Files can authenticate with Azure AD."
+      explanation: "Azure Files can authenticate with Microsoft Entra ID."
     - content: "Azure Files cannot authenticate to on-premises Active Directory Domain Services."
       isCorrect: false
-      explanation: "Azure Files can authenticate to an on-premises Azure AD Domain Service"
+      explanation: "Azure Files can authenticate to an on-premises Microsoft Entra Domain Service"
     - content: "Azure Files can use RBAC for share-level or directory/file permissions."
       isCorrect: false
       explanation: "Azure Files cannot use RBAC for share-level or directory/file permissions. Only share-level permissions can use RBAC. Directory or file level permissions can use Windows DACLs, or not."

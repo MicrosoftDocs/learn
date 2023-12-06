@@ -3,13 +3,13 @@
 
 Common scenarios for using workbooks include:
 
-- Get shareable, at-a-glance summary reports about your Azure AD tenant, and build your own custom reports.
+- Get shareable, at-a-glance summary reports about your Microsoft Entra tenant, and build your own custom reports.
 
 - Find and diagnose sign-in failures, and get a trending view of your organization's sign-in health.
 
-- Monitor Azure AD logs for sign-ins, tenant administrator actions, provisioning, and risk together in a flexible, customizable format.
+- Monitor Microsoft Entra logs for sign-ins, tenant administrator actions, provisioning, and risk together in a flexible, customizable format.
 
-- Watch trends in your tenant’s usage of Azure AD features such as conditional access, self-service password reset, and more.
+- Watch trends in your tenant’s usage of Microsoft Entra features such as conditional access, self-service password reset, and more.
 
 - Know who's using legacy authentications to sign in to your environment.
 
@@ -36,28 +36,25 @@ Private templates when you start building your own workbooks and want to save on
 
 - **Private templates** when you start building your own workbooks and want to save one as a template to serve as the foundation for multiple workbooks in your tenant.
 
-
 ## Prerequisites
 
 To use Monitor workbooks, you need:
 
-- An Azure Active Directory tenant with a premium (P1 or P2) license. Learn how to get a premium license.
+- A Microsoft Entra tenant with a premium (P1 or P2) license. Learn how to get a premium license.
 
 - A Log Analytics workspace.
 
 - Access to the log analytics workspace
 
-- Following roles in Azure Active Directory (if you're accessing Log Analytics through Azure Active Directory portal)
-   - Security administrator
-   - Security reader
-   - Report reader 
-   - Global administrator
-   
-
+- The following roles in Microsoft Entra ID (if you're accessing Log Analytics through Microsoft Entra admin center)
+  - Security administrator
+  - Security reader
+  - Report reader
+  - Global administrator
 
 ## Roles
 
-To access workbooks in Azure Active Directory, you must have access to the underlying Log Analytics workspace and be assigned to one of the following roles:
+To access workbooks in Microsoft Entra ID, you must have access to the underlying Log Analytics workspace and be assigned to one of the following roles:
 
 - Global Reader
 
@@ -77,10 +74,10 @@ To access workbooks in Azure Active Directory, you must have access to the under
 
 To access workbooks:
 
-1. Sign in to the Azure portal.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a Reports Reader.
 
-2. Navigate to **Azure Active Directory > Monitoring > Workbooks**.
+2. Navigate to **Microsoft Entra ID** > **Monitoring** > **Workbooks**.
 
 3. Select a report or template, or on the toolbar select **Open**.
 
-:::image type="content" source="../media/azure-monitor-workbooks-in-azure-ad.png" alt-text="Schematic diagram that shows a query as a funnel." border="false"::: 
+:::image type="content" source="../media/azure-monitor-workbooks-in-azure-ad.png" alt-text="Schematic diagram that shows a query as a funnel." border="false":::

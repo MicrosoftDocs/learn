@@ -1,22 +1,22 @@
-In API Management, you use policies to implement throttling.
+In API Management, you use policies to implement throttling (rate limiting).
 
 Recall that your government agency would like to prevent the abuse of their APIs, such as large volumes of requests.
 
-In this unit, you learn how to set limits on the frequency that your census API can be called. You also learn how these limits can be applied globally to all of your census endpoints or granularly to each client.
+In this unit, you learn how to set a limit on the frequency that your Census API can be called. In this example, the limit is applied globally to all of your Census API endpoints.
 
 ## Apply a rate limit policy
 
 To apply a **throttling** policy within API Management, follow these steps:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/) using the same account you used in the previous exercises.
 
-1. On the Azure portal menu or from the **Home** page, select **All Resources**, and then select your API gateway.
+1. On the Azure portal menu or from the **Home** page, select **All Resources**, and then select your API Management instance.
 
 1. In the left menu pane, Under **APIs**, select **APIs**, and in the middle pane, select **Census Data**.
 
 1. In the top menu bar, select the **Design** tab, and then select **All operations**.
 
-1. In the **Inbound processing** section, select the **</>** icon.
+1. In the **Inbound processing** section, select the **</>** icon. The XML policy editor appears.
 
    :::image type="content" source="../media/7-apply-throttling-policy.png" alt-text="Screenshot of the Design tab with the Policies icon highlighted in the Inbound processing section.":::
 

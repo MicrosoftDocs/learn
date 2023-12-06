@@ -11,7 +11,7 @@ Bicep makes it easy to describe your Azure resources and create reusable templat
 Now, when you want to prepare your resources for the next product launch, you can use the Bicep template you created with parameter values unique to the product launch. Your company can quickly and easily provision its Azure resources.
 
 > [!TIP]
-> In this module, you've only scratched the surface of Bicep's capabilities. Keep following the [Fundamentals of Bicep learning path](xref:learn.bicep-deploy-manage), and our other Bicep learning paths, to progress your understanding.
+> In this module, you've only scratched the surface of Bicep's capabilities. Keep following the [Fundamentals of Bicep learning path](xref:learn.bicep-deploy-manage) and our other Bicep learning paths to progress your understanding.
 
 ## References
 

@@ -6,7 +6,7 @@ You aim to go through the following six steps to plan, train, deploy, and monito
 
 1. **Define the problem**: Decide on what the model should predict and when it's successful. 
 1. **Get the data**: Find data sources and get access. 
-1. **Prepare the data**: Explore the data. CLean and transform the data based on the model's requirements.
+1. **Prepare the data**: Explore the data. Clean and transform the data based on the model's requirements.
 1. **Train the model**: Choose an algorithm and hyperparameter values based on trial and error.
 1. **Integrate the model**: Deploy the model to an endpoint to generate predictions.
 1. **Monitor the model**: Track the model's performance.

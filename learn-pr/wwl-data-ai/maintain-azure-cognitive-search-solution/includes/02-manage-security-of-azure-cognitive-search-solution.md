@@ -25,7 +25,7 @@ If you'd like to use your own encryption keys, ACS supports using the Azure Key 
 
 If your search solution can be accessed externally from the internet or apps, you can reduce the attack surface. Azure Cognitive Search lets you restrict access to the public endpoint for free using a firewall to allow access from specific IP addresses.
 
-:::image type="content" source="../media/inbound-traffic-through-firewalls-azure-cogntive-search.png" alt-text="Diagram showing inbound traffic secured using ExpressRoute through a firewall into Azure Cognitive Search." border="false":::
+:::image type="content" source="../media/inbound-traffic-through-firewalls-azure-cogntive-search-small.png" lightbox="../media/inbound-traffic-through-firewalls-azure-cogntive-search.png"alt-text="Diagram showing inbound traffic secured using ExpressRoute through a firewall into Azure Cognitive Search." border="false":::
 
 If your search service is only going to be used by on-premises resources, you can harden security with an ExpressRoute circuit, Azure Gateway, and an App service. There's also the option to change the public endpoint to use an Azure private link. You'll also need to set up an Azure virtual network and other resources. Using a private endpoint is the most secure solution, although it does come with the added cost of using those services that need to be hosted on the Azure platform.
 
@@ -67,11 +67,11 @@ If you need a role that can also manage the data plane for example search indexe
 
 ## Secure outbound traffic
 
-Typically your outbound traffic indexes source data or enriches it using Artificial Intelligence (AI). The outbound connections support using key-based authentication, database logins, or Azure AD logins if you can use Azure Active Directory.
+Typically your outbound traffic indexes source data or enriches it using Artificial Intelligence (AI). The outbound connections support using key-based authentication, database logins, or Microsoft Entra logins if you can use Microsoft Entra ID.
 
 If your data sources are hosted on the Azure platform, you can also secure connections using a system or user-assigned managed identity.
 
-:::image type="content" source="../media/secure-outbound-traffic.png" alt-text="Diagram showing Azure Cognitive Search solution accessing data sources through an IP restricted firewall." border="false":::
+:::image type="content" source="../media/secure-outbound-traffic-small.png" lightbox="../media/secure-outbound-traffic.png" alt-text="Diagram showing Azure Cognitive Search solution accessing data sources through an IP restricted firewall." border="false":::
 
 Azure services can restrict access to them using a firewall. Your firewall can be configured to only allow the IP address of your Azure Cognitive Search service. If you're enriching your indexes with AI, you'll also need to allow all the IP addresses in the **AzureCognitiveSearch** service tag.
 
@@ -94,7 +94,7 @@ With this field in place and populated with the allowed user or groups, you can 
 }
 ```
 
-This would filter the returned search results on the user ID and groups that this user belongs to. If your application can use Azure Active Directory, it's possible to use the user's identity and group memberships from there.
+This would filter the returned search results on the user ID and groups that this user belongs to. If your application can use Microsoft Entra ID, it's possible to use the user's identity and group memberships from there.
 
 > [!TIP]
-> For a step-by-step guide on how to use Azure Active Directory, see [Security filters for trimming Azure Cognitive Search results using Active Directory identities](/azure/search/search-security-trimming-for-azure-search-with-aad)
+> For a step-by-step guide on how to use Microsoft Entra ID, see [Security filters for trimming Azure Cognitive Search results using Active Directory identities](/azure/search/search-security-trimming-for-azure-search-with-aad)

@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Manage Git repositories
 summary: This module explores how to work with large repositories, purge repository data and manage and automate release notes using GitHub.
 abstract: |

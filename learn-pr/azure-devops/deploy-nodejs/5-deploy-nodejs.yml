@@ -7,9 +7,8 @@ metadata:
   ms.date: 11/09/2022
   author: juliakm
   ms.author: jukullam
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: devdivchpfy22, engagement-fy23
+  ms.topic: unit
+  ms.custom: devdivchpfy22, engagement-fy23, devx-track-js, devx-track-extended-java
 durationInMinutes: 15
 content: |
   [!include[](includes/5-deploy-nodejs.md)]

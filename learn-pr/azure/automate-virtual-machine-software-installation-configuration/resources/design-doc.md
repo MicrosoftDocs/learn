@@ -73,12 +73,12 @@ Identify the subtasks of *Automate the installation and configuration of softwar
 
     - PIVOT 1 - Automate the creation of a Linux virtual machine
         - Use the Cloud Shell to create a fully configured Ubuntu VM with a shared SSH key (Resource Group, VNet, Public IP Address, NSG, and NIC)
-        - az vm create --resource-group myResourceGroup --name linuxVM --location eastus --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
+        - az vm create --resource-group myResourceGroup --name linuxVM --location eastus --image Ubuntu2204 --admin-username azureuser --generate-ssh-keys
         - Connect with `ssh` check what's running
 
     - PIVOT 2 - Automate the creation of a Windows virtual machine 
         - Use the Cloud Shell to create a fully configured Windows VM (Resource Group, VNet, Public IP Address, NSG, and NIC)
-        - az vm create --resource-group myResourceGroup --name linuxVM --location eastus --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
+        - az vm create --resource-group myResourceGroup --name linuxVM --location eastus --image Ubuntu2204 --admin-username azureuser --generate-ssh-keys
         - Open port 80 for RDP connections and use `mstsc /v:publicIpAddress` check what's running
 
 1. **Automate the configuration of a web server**
@@ -202,7 +202,7 @@ az vm create \
     --name linuxVM \
     --availability-set vmsAvailabilitySet \
     --nics vmsNic \
-    --image UbuntuLTS \
+    --image Ubuntu2204 \
     --admin-username azureuser \
     --generate-ssh-keys \
     --custom-data cloud_init.txt \

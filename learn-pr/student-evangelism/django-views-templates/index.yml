@@ -7,7 +7,6 @@ metadata:
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Create views and templates in Django 
 summary: As with every web framework, Django has a templating engine for creating dynamic HTML. The information that the user wants to access is created by this engine and presented through views. We'll explore how the engine works and the process of creating views in Django.

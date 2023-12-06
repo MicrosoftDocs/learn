@@ -4,10 +4,11 @@ metadata:
   title: Choose the best Azure landing zone to support your requirements for cloud operations
   description: Azure landing zones help accelerate how you configure your environment to meet your operational requirements.
   ms.date: 05/12/2022
-  author: BrianBlanchard
-  ms.author: brblanch
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.service: caf
+  ms.subservice: caf-methodology-ready
+  ms.topic: module
 title: Choose the best Azure landing zone to support your requirements for cloud operations
 summary: Azure landing zones can accelerate configuration of your cloud environment. This module will help you choose and get started with the best landing zone option for your needs.
 abstract: |
@@ -17,7 +18,7 @@ abstract: |
   - Choose the best Azure landing zone and Learn modules to support your needs for cloud adoption. 
 prerequisites: |
   - An understanding of your organization's cloud adoption strategy 
-  - Familiarity with the Azure cloud environment, including network configuration, network connectivity, and Azure Active Directory 
+  - Familiarity with the Azure cloud environment, including network configuration, network connectivity, and Microsoft Entra ID 
   - Familiarity with Azure governance tools, including Azure Policy and Azure Resource Manager templates 
   - A general understanding of the environmental requirements for proceeding with your cloud adoption plan  
 iconUrl: /training/achievements/cloud-adoption-framework-ready.svg

@@ -1,4 +1,4 @@
-Another authentication mechanism offered by Azure AD is Managed identities.
+Another authentication mechanism offered by Microsoft Entra ID is Managed identities.
 
 Imagine that you need to connect from an Azure Data Factory (ADF) to an Azure SQL Database. What identity should ADF present to the database?
 
@@ -11,7 +11,7 @@ The traditional answer would have been to use SQL Authentication with a username
 
 Many Azure services expose their own identity. It isn't an identity that you need to manage. For example, you don't need to worry about password policies and so on.
 
-You can assign permissions to that identity, as with any other Azure AD identity.
+You can assign permissions to that identity, as with any other Microsoft Entra identity.
 
 In the ADF example, you can add the ADF MSI as an Azure SQL Database user and add it to roles within the database.
 

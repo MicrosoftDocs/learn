@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/04/2021
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Create your HorizontalPodAutoscaler
 durationInMinutes: 2
 content: |

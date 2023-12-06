@@ -8,7 +8,7 @@ YAML-based pipelines allow you to fully implement CI/CD as code, in which pipeli
 
 Regardless of the choice of the pipeline style, to build your code or deploy your solution by using Azure Pipelines, you need an agent. An agent hosts compute resources that run one job at a time. Jobs can be run directly on the host machine of the agent or in a container. You have an option to run your jobs using Microsoft-hosted agents, which are managed for you, or implementing a self-hosted agent that you set up and manage on your own.
 
-In this lab, you'll step through converting a classic pipeline into a YAML-based one and running it first by using a Microsoft-hosted agent and then performing the equivalent task using a self-hosted agent.
+In this lab, you will learn how to implement and use self-hosted agents with YAML pipelines.
 
 ## Objectives
 
@@ -33,4 +33,4 @@ During this lab, you'll complete the following exercises:
  -  Exercise 2: Manage Azure DevOps agent pools.
 
 [:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button which will take you to the lab.":::
-](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M03_L04_Configuring_Agent_Pools_and_Understanding_Pipeline_Styles.html)
+](https://aka.ms/az-400-configure-agent-pools-and-understand-pipeline-styles)

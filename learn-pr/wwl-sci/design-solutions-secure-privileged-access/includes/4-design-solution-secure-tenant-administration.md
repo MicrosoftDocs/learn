@@ -38,11 +38,11 @@ Azure Lighthouse includes multiple ways to help streamline engagement and manage
 
 A Microsoft 365 tenant is a dedicated instance of the services of Microsoft 365 and your organization data stored within a specific default location, such as Europe or North America. This location is specified when you create the tenant for your organization. Each Microsoft 365 tenant is distinct, unique, and separate from all other Microsoft 365 tenants. You create a Microsoft 365 tenant when you purchase one or more products from Microsoft, such as Microsoft 365 E3 or E5, and a set of licenses for each.
 
-Your Microsoft 365 tenant also includes an Azure Active Directory (Azure AD) tenant, which is a dedicated instance of Azure AD for user accounts, groups, and other objects. Each Azure AD tenant is distinct, unique, and separate from all other Azure AD tenants. While your organization can have multiple Azure AD tenants that you can set up with Azure subscriptions, Microsoft 365 tenants can only use a single Azure AD tenant, the one that was created when you created the tenant.
+Your Microsoft 365 tenant also includes a Microsoft Entra tenant, which is a dedicated instance of Microsoft Entra ID for user accounts, groups, and other objects. Each Microsoft Entra tenant is distinct, unique, and separate from all other Microsoft Entra tenants. While your organization can have multiple Microsoft Entra tenants that you can set up with Azure subscriptions, Microsoft 365 tenants can only use a single Microsoft Entra tenant, the one that was created when you created the tenant.
 
 Here is an example:
 
-![Diagram that shows an example Microsoft 365 tenant with its Azure AD tenant.](../media/tenant-management-example-tenant.png)
+![Diagram that shows an example Microsoft 365 tenant with its Microsoft Entra tenant.](../media/tenant-management-example-tenant.png)
 
 _Tenant management_ is the planning, deployment, and ongoing operation of your Microsoft 365 tenants.
 <!-- 
@@ -62,7 +62,7 @@ Here are the elements:
     -   For enterprise networks, you have optimized network traffic to the Microsoft network for onsite workers.
     -   You have optimized network traffic for remote workers who are using a VPN client.
 -   You have synchronized your Active Directory Domain Services (AD DS) accounts, groups, and other objects.
-    -   Your Azure AD tenant accounts are mapped to Exchange Online mailboxes with the correct DNS domains for email addresses.
+    -   Your Microsoft Entra tenant accounts are mapped to Exchange Online mailboxes with the correct DNS domains for email addresses.
     -   Your user accounts have been assigned the correct licenses from the correct purchased products (such as Microsoft 365 E3 or E5).
 -   You have configured strong identity and access management.
     -   You are requiring secure user sign-in with passwordless or multi-factor authentication (MFA).
@@ -81,4 +81,4 @@ In this illustration, the Microsoft 365 tenant includes:
 -   Products and licenses for Microsoft 365 E3 and E5.
 -   Microsoft 365 productivity apps.
 -   Intune with enrolled devices and device and application policies.
--   An Azure AD tenant that has synchronized user account (groups and other directory objects are not shown), domains, and Conditional Access policies.
+-   A Microsoft Entra tenant that has synchronized user account (groups and other directory objects are not shown), domains, and Conditional Access policies.

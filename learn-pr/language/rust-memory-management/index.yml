@@ -7,8 +7,8 @@ metadata:
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.devlang: rust
 title: Understand how Rust manages memory
 summary: "Discover the features that make Rust so unique: ownership and borrowing."
 abstract:  |

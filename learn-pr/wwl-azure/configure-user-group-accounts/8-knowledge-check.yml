@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/21/2022
+  ms.date: 10/26/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
@@ -33,20 +32,20 @@ quiz:
     - content: "Security group​"
       isCorrect: true
       explanation: "Correct. You can create a security group for a specific security policy and apply the same permissions to all members of the group."
-    - content: "Azure AD bulk group​"
+    - content: "Microsoft Entra bulk group​"
       isCorrect: false
-      explanation: "Incorrect. You can do bulk operations on users in Azure AD, but there's no defined 'bulk' group."
+      explanation: "Incorrect. You can do bulk operations on users in Microsoft Entra ID, but there's no defined 'bulk' group."
     - content: "Microsoft 365 group​"
       isCorrect: false
       explanation: "Incorrect. Microsoft 365 groups give members access to a shared mailbox, calendar, files, and so on."
-  - content: "Which Azure AD role enables a user to manage all groups in your Teams tenants, and also assign other admin roles?"
+  - content: "Which Microsoft Entra role enables a user to manage all groups in your Teams tenants, and also assign other admin roles?"
     choices:
     - content: "Global administrator"
       isCorrect: true
-      explanation: "Correct. The Global Administrator role manages all aspects of Azure AD and Microsoft services that use Azure AD identities. This role can manage groups across tenants and assign other administrator roles."
+      explanation: "Correct. The Global Administrator role manages all aspects of Microsoft Entra ID and Microsoft services that use Microsoft Entra identities. This role can manage groups across tenants and assign other administrator roles."
     - content: "Security administrator​"
       isCorrect: false
-      explanation: "Incorrect. The Security Administrator role can read security information and reports, and manage configuration in Azure AD and Microsoft 365."
+      explanation: "Incorrect. The Security Administrator role can read security information and reports, and manage configuration in Microsoft Entra ID and Microsoft 365."
     - content: "User administrator​"
       isCorrect: false
       explanation: "Incorrect. The User Administrator role can manage all aspects of users and groups, including resetting passwords for limited admins."

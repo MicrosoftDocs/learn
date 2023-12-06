@@ -6,8 +6,8 @@ metadata:
   ms.date: 06/27/2022
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: microsoft-sentinel
 title: Connect threat indicators to Microsoft Sentinel
 summary: Learn how to connect Threat Intelligence Indicators to the Microsoft Sentinel workspace using the provided data connectors.
 abstract: |

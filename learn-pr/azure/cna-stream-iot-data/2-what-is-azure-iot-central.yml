@@ -5,10 +5,9 @@ metadata:
   title: Describe Azure IoT Central
   description: Description of Azure IoT Central
   ms.date: 04/24/2021
-  author: mpolicht
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-what-is-azure-iot-central.md)]

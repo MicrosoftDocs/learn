@@ -43,7 +43,7 @@ Use the framework tools to create conversational bots that interact with custome
 
 ### Bot Framework Composer
 
-*Bot Framework Composer*, built on the Bot Framework SDK, is an open-source IDE for developers to author, test, and manage conversational experiences as well as provision Azure resources like the Azure Bot and cognitive services. It provides a powerful visual-authoring canvas. This canvas helps you create dialogs, language-understanding models, knowledge bases, and language-generation responses from a single design canvas. Extend bots with code for more complex tasks such as integration with external services and apps. You can then test these bots within Composer and provision them into Azure as a Bot Service instance, along with any dependent resources.
+*Bot Framework Composer*, built on the Bot Framework SDK, is an open-source IDE for developers to author, test, and manage conversational experiences as well as provision Azure resources like Azure Bot and Azure AI services. It provides a powerful visual-authoring canvas. This canvas helps you create dialogs, language-understanding models, knowledge bases, and language-generation responses from a single design canvas. Extend bots with code for more complex tasks such as integration with external services and apps. You can then test these bots within Composer and provision them into Azure as a Bot Service instance, along with any dependent resources.
 
 > [!NOTE]
 > Bot Framework Composer is available as a desktop application for Windows, macOS, and Linux. It's also available as a web-based component that you can customize and extend.

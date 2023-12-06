@@ -6,8 +6,8 @@ metadata:
   ms.date: 11/08/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: sql-db-mi
 title: Understand client-server communication in MySQL
 summary: Learn about connection handling in MySQL, back up and restore, and the client interface options available for MySQL.
 abstract: |

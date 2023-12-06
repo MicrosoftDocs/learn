@@ -1,4 +1,4 @@
-﻿This exercise provides an overview of setting up the collection and initial processing of IoT telemetry by using Azure IoT Central applications. You'll start by creating an Azure IoT Central application, onboarding simulated IoT devices, and then reviewing the built-in analytics functionality to review the collected telemetry.
+This exercise provides an overview of setting up the collection and initial processing of IoT telemetry by using Azure IoT Central applications. You'll start by creating an Azure IoT Central application, onboarding simulated IoT devices, and then reviewing the built-in analytics functionality to review the collected telemetry.
 
 In this exercise, you'll:
 
@@ -9,25 +9,32 @@ In this exercise, you'll:
 ## Prerequisites
 
 * An active Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-* A Microsoft account or an Azure Active Directory (Azure AD) account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription
+* A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription
 
 ## Create an Azure IoT Central application
 
-1. On a web browser, go to the [Welcome to IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) page.
-1. On the **Welcome to IoT Central** page, select the avatar icon in the top-right corner.
-1. When prompted, sign in to access the Azure subscription you'll be using in this module.
-1. Select **Build app** in the bottom-right corner of the page.
-1. On the **Build your IoT application** page, review the available application templates, and then on the **Custom app** tile, select **Create app**.
-1. On the **New application** page, configure the following settings, and then select **Create**.
+1. Navigate to the [Create IoT Central Application](https://portal.azure.com/#create/Microsoft.IoTCentral) page in the Azure portal. If prompted, sign in with your Azure account.
 
-   | Setting | Configuration |
-   | --- | --- |
-   | Application Name | Enter **adatum-iot-custom-application**. |
-   | Application URL | Enter a unique name that consists of lower-case letters, digits or dashes, and starts with a letter. |
-   | Application template | Select **Custom application**. |
-   | Pricing plan | Select one of the standard pricing plans. Select your **Directory**, **Azure subscription**, and **Location**. To learn about creating IoT Central applications, see [Create an IoT Central application](/azure/iot-central/core/howto-create-iot-central-application). To learn about pricing, see [Azure IoT Central pricing](https://azure.microsoft.com/pricing/details/iot-central/).. |
+1. Enter the following information:
 
-   :::image type="content" source="../media/3-azure-iot-build-app-page.png" alt-text="Screenshot of the New application page in the IoT Central Application portal.":::
+    | Field | Description |
+    | ----- | ----------- |
+    | Subscription | The Azure subscription you want to use. |
+    | Resource group | The resource group you want to use.  You can create a new resource group or use an existing one. |
+    | Resource name | A valid Azure resource name such as *adatum-iot-custom-application*. |
+    | Application URL | A URL subdomain for your application such as *adatum-iot-custom-application*. The URL for an IoT Central application looks like `https://adatum-iot-custom-application.azureiotcentral.com`. |
+    | Template | **Custom application** |
+    | Region | The Azure region you want to use. |
+    | Pricing plan | Select one of the standard pricing plans. To learn about pricing, see [Azure IoT Central pricing](https://azure.microsoft.com/pricing/details/iot-central/). |
+
+1. Select **Review + create**. Then select **Create**.
+
+When the app is ready, you can navigate to it from the Azure portal:
+
+:::image type="content" source="../media/3-view-app-portal.png" alt-text="Screenshot that shows the IoT Central application resource in the Azure portal. The application URL is highlighted.":::
+
+> [!TIP]
+> To list all the IoT Central applications you have access to, navigate to [IoT Central Applications](https://apps.azureiotcentral.com/myapps).
 
 ## Create an IoT device template
 
@@ -129,7 +136,7 @@ In this exercise, you'll:
 
    :::image type="content" source="../media/3-azure-iot-connection-window.png" alt-text="Screenshot of the new Raspberry Pi device connection window in the IoT Central Application portal.":::
 
-1. Start another web browser window and navigate to the [Azure IoT Central Connection String Generator](https://dpsgen.z8.web.core.windows.net/?azure-portal=true) page.
+1. Start another web browser window and navigate to the [Azure IoT Central Connection String Generator](https://gloveboxes.github.io/Turn-a-Command-Line-tool-into-a-REST-API-with-Azure-Functions/dps-cstr.html) page.
 1. On the **Azure IoT Central Connection String Generator** page, paste the values of **Scope**, **Device ID**, and **Device Key** into their respective text boxes, and then select **Get Connection String**.
 
    > [!NOTE]

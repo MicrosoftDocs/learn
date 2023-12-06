@@ -1,4 +1,3 @@
-
 Now you have:
 
 - Explored Azure virtual networks.
@@ -47,5 +46,5 @@ Now you have:
 - [Create, change, or delete a virtual network](/azure/virtual-network/manage-virtual-network)
 - [Transport Management System - Concept](https://help.sap.com/saphelp_me60/helpdata/en/c4/6045377b52253de10000009b38f889/content.htm)
 - [SAP Remote Support documentation](https://support.sap.com/en/tools/connectivity-tools/remote-support.html)
-- [SAP Note \#2015553](https://launchpad.support.sap.com/#/notes/2015553)
+- [SAP Note \#2015553](https://aka.ms/az-120-sapnote-2015553)
 - [SAP Note \#2731110](https://launchpad.support.sap.com/#/notes/2731110)

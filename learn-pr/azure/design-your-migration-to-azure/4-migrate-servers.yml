@@ -4,10 +4,9 @@ metadata:
   title: Migrate servers with Azure Migrate
   description: Review Azure Migrate and see how to use it to migrate specific workloads to Azure.
   ms.date: 04/13/2023
-  author: v-ksreedevan
-  ms.author: v-ksreedevan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 title: Migrate servers with Azure Migrate
 durationInMinutes: 10
 content: |

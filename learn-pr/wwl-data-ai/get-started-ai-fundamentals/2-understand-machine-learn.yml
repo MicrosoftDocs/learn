@@ -4,13 +4,10 @@ title: Understand machine learning
 metadata:
   title: Understand machine learning
   description: "Understand machine learning"
-  ms.date: 04/03/2023
+  ms.date: 12/05/2023
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.author: sheryang
+  ms.topic: unit
+durationInMinutes: 4
 content: |
   [!include[](includes/2-understand-machine-learn.md)]

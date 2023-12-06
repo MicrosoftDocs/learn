@@ -13,7 +13,7 @@ You must configure two pieces of information in your two console apps to access 
 
 You can get these values from the connection string.
 
-1. In Azure Cloud Shell, run the following command, replacing `<namespace-name>` with the Service Bus namespace that you created in the last exercise.
+1. In Azure Cloud Shell on the right, run the following command, replacing `<namespace-name>` with the Service Bus namespace that you created in the last exercise.
 
     ```azurecli
     az servicebus namespace authorization-rule keys list \
@@ -61,7 +61,7 @@ You can get these values from the connection string.
 
    Paste the connection string between the quotation marks.
 
-1. If you used a name different from **salesmessages** for the queue name, update the value for `QueueName` property in the code.
+1. If you used a name different from **salesmessages** for the queue name, update the value for `QueueName` property in the code:
 
     ```csharp
     const string QueueName = "salesmessages";
@@ -187,11 +187,11 @@ You can get these values from the connection string.
     }
     ```
 
-1. Save the *privatemessagesender/Program.cs* file using either the **...** icon or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
+1. To save your changes, select <kbd>Ctrl+S</kbd>, and then select <kbd>Ctrl+Q</kbd> to close the editor.
 
 ## Send a message to the queue
 
-1. In the Cloud Shell (bottom window of the right pane) where you see commands, run the following command to send a message about a sale. The first line ensures that you are in the correct path.
+1. In the Cloud Shell, run the following command to send a message about a sale. The first line ensures that you are in the correct path.
 
     ```bash
     cd ~/mslearn-connect-services-together/implement-message-workflows-with-service-bus/src/start
@@ -417,7 +417,7 @@ You can get these values from the connection string.
     
     ```
 
-1. Save the file either through the **&#9776;** menu or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
+1. To save your changes, select <kbd>Ctrl+S</kbd>, and then select <kbd>Ctrl+Q</kbd> to close the editor.
 
 ## Receive a message from the queue
 

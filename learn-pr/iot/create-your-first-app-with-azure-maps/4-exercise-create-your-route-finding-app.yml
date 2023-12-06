@@ -5,8 +5,9 @@ metadata:
   ms.date: 6/1/2020
   author: PeterTurcan
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-js
 title: Exercise - create your route finding app
 durationInMinutes: 12
 content: |

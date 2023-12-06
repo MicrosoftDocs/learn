@@ -1,4 +1,5 @@
 
+
 Considering user profiles keep user state and users can modify their state, users must possess Write permissions to their user profiles. As long as users have Write permissions, they can write as much data as they want if there’s available free disk space unless an administrator limits them. Because user profiles contain user data, and user data can increase rapidly.
 
 For example, if users store large graphic or multimedia files in their Documents folder, which is in their profile, an administrator often limits the space for storing user profiles.
@@ -19,6 +20,6 @@ You can make user profiles smaller by redirecting folders that typically consume
 
 #### Use Group Policy to limit user profile sizes
 
-You can keep local and roaming user profile sizes in check by activating the Limit profile size setting in the user part of Group Policy. When you activate this, you can decide the max profile size and craft a unique message that users get when their profiles go over the limit. You can limit profile size to up to 30KBs. With local user profiles, users can be periodically reminded that their user profile exceeds the allowed size, but they can still write data to their profiles and sign out. Roaming user profiles means users can sign out, however, changes to their local copy won't sync up with the network. That means any changes to their local profile won't be copied to the file server until they delete some data and get the size of their local roaming user profile to be smaller than what's allowed in Group Policy.
+You can keep local and roaming user profile sizes in check by activating the Limit profile size setting in the user part of Group Policy. When you activate this, you can decide the max profile size and craft a unique message that users get when their profiles go over the limit. With local user profiles, users can be periodically reminded that their user profile exceeds the allowed size, but they can still write data to their profiles and sign out. Roaming user profiles means users can sign out, however, changes to their local copy won't sync up with the network. That means any changes to their local profile won't be copied to the file server until they delete some data and get the size of their local roaming user profile to be smaller than what's allowed in Group Policy.
 
 Users can have smaller user profiles if they store data files outside of their user profiles, for example, in a dedicated shared folder or in the home folder.

@@ -3,12 +3,11 @@ uid: learn.tensorflow.intro-machine-learning-keras.data
 title: Data
 metadata:
   title: Data
-  description: Learn how to get your data ready to be used by a neural network
-  ms.date: 07/07/2021
+  description: Learn how to get your data ready for use by a neural network.
+  ms.date: 07/17/2023
   author: bstollnitz
   ms.author: bstollnitz
   ms.topic: interactive-tutorial
-  ms.prod: learning-tensorflow
   ms.product: learning-tensorflow
   ms.contributors:
   - bstollnitz-08202021
@@ -28,7 +27,7 @@ quiz:
     - content: "It's a good idea to learn about it, especially if we're going to work with larger data in the future."
       isCorrect: false
       explanation: "This is true, but other options are also true."
-    - content: "Because it returns our data in batches of 64 images when we iterate over it, which we'll use later when training."
+    - content: "Because it returns our data in batches of 64 images when we iterate over it, which we use later when training."
       isCorrect: false
       explanation: "This is true, but other options are also true."
     - content: "All of the above."

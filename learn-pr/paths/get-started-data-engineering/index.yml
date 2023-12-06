@@ -6,8 +6,7 @@ metadata:
   ms.date: 02/07/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Get started with data engineering on Azure
 prerequisites: |
   Before starting this learning path, you should have completed the [Microsoft Azure Data Fundamentals certification](/certifications/azure-data-fundamentals/) or have equivalent knowledge and experience.
@@ -19,7 +18,7 @@ levels:
 roles:
 - data-engineer
 products:
-- azure-data-lake-gen2
+- azure-data-lake-storage
 - azure-synapse-analytics
 subjects:
 - data-engineering

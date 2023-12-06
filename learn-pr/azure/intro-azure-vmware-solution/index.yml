@@ -6,10 +6,10 @@ metadata:
   ms.date: 03/13/2023
   author: Orin-Thomas
   ms.author: orthomas
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: phschmit-07282021
+  ms.service: azure-vmware
 title: Introduction to Azure VMware Solution
 summary: Learn how Azure VMware Solution supports enterprise customers in their transition to the cloud. Evaluate key features and differentiators. Examine the use cases and customer stories. Understand the support structure and options. Explore the service's components.
 abstract: | 

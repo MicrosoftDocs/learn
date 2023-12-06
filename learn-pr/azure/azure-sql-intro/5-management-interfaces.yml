@@ -2,12 +2,11 @@
 uid: learn.azure-sql-intro.5-management-interfaces
 metadata:
   title: Management interfaces for Azure SQL
-  description: Management interfaces for Azure SQL
-  ms.date: 03/15/2023
+  description: Learn about management interfaces for Azure SQL, like the Azure portal, CLI, and APIs.
+  ms.date: 07/13/2023
   author: MashaMSFT
   ms.author: mathoma
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Management interfaces for Azure SQL
 durationInMinutes: 10
 content: |

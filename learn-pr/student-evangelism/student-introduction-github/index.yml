@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.student-evangelism.student-introduction-github
+metadata:
+  title: Tooling, Git and GitHub products
+  description: "In this module, students are introduced to GitHub and version control."
+  ms.date: 9/7/2023 
+  author: v-regandowner 
+  ms.author: chnoring
+  ms.topic: module-intro-to-product
+  ms.custom: team=nextgen
+title: Tooling, Git and GitHub products
+summary: "This module provides an overview of Git, GitHub, and version control. It provides step-by-step guidance for performing basic tasks in GitHub."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Grasp the purpose and significance of version control.
+  - Comprehend the core principles of Git, a distributed version control system, encompassing vital concepts such as repositories, commits, branches, and merging within Git. 
+  - Attain insights into the role of GitHub as a web-based platform for hosting Git repositories and fostering collaboration. 
+  - Understand the essence of GitHub Codespaces and its substantial importance. 
+prerequisites: | 
+ - None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+- developer
+- student
+products:
+- azure
+subjects:
+- devops
+units:
+- learn.student-evangelism.student-introduction-github.introduction
+- learn.student-evangelism.student-introduction-github.what-is-version-control
+- learn.student-evangelism.student-introduction-github.set-up-github
+- learn.student-evangelism.student-introduction-github.when-to-use-github
+- learn.student-evangelism.student-introduction-github.exercise-pull-requests
+- learn.student-evangelism.student-introduction-github.knowledge-check
+- learn.student-evangelism.student-introduction-github.summary
+badge:
+  uid: learn.student-evangelism.student-introduction-github.badge

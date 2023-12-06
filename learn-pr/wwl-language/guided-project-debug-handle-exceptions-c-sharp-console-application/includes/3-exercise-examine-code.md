@@ -1,6 +1,3 @@
-
-
-
 In this exercise, you review and test the code in the Starter project, isolate and fix a logic issue, and then verify that your updated application is working as expected.
 
 You complete the following tasks during this exercise:
@@ -33,11 +30,9 @@ In this task, you complete a walkthrough of the Starter project code. The Progra
 
 1. Open the Program.cs file in the Visual Studio Code Editor.
 
-1. After a few seconds, notice that a dialog box is displayed asking if you want to load the assets required for building and debugging.
+1. On the View menu, select **Command Palette**.
 
-    Visual Studio Code recognizes the C# file extension, `.cs`, and recognizes that your "Starter" project is missing the required assets.
-
-1. To load the required assets, select **Yes**.
+1. At the command prompt, enter **.net: g** and then select **.NET: Generate Assets for Build and Debug**.
 
 1. At the **Select the project to launch** prompt, select the **Starter** project.
 
@@ -153,10 +148,10 @@ In this task, you complete a walkthrough of the Starter project code. The Progra
 
     The top-level statements code completes the following tasks:
 
-    - Configures the application data and environment variables used to test the `MackChange` method.
+    - Configures the application data and environment variables used to test the `MakeChange` method.
     - Calls the `LoadTillEachMorning()`, `LogTillStatus()`, and `TillAmountSummary()` methods to prepare the money till and print status messages to the console.
     - Uses a `while` loop to simulate a series of transactions.
-    - Calls the `MackChange` method from inside the code block of the `while` loop.
+    - Calls the `MakeChange` method from inside the code block of the `while` loop.
     - Reports the status of the money till after each transaction.
 
     > [!NOTE]

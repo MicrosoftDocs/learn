@@ -1,3 +1,4 @@
+
 After creating and testing a knowledge base, you can improve its performance with *active learning* and by defining *synonyms*.
 
 ## Use active learning
@@ -6,7 +7,7 @@ After creating and testing a knowledge base, you can improve its performance wit
 
 Active learning helps improve the knowledge base in two ways:
 
-- **Implicit feedback**: As incoming requests are processed, the service identifies user-provided questions that have multiple, similarly scored matches in the knowledge base. These are automatically clustered as alternate phrase suggestions for the possible answers that you can accept or reject in the **Suggestions** page for your knowledge base in Language Studio.
+- **Implicit feedback**: As incoming requests are processed, the service identifies user-provided questions that have multiple, similarly scored matches in the knowledge base. These are automatically clustered as alternate phrase suggestions for the possible answers that you can accept or reject in the **Suggestions** page for your knowledge base in Azure AI Language Studio.
 - **Explicit feedback**. When developing a client application you can control the number of possible question matches returned for the user's input by specifying the **top** parameter, as shown here:
 
     ```JSON
@@ -67,7 +68,7 @@ Active learning helps improve the knowledge base in two ways:
 
     The **qnaId** in the feedback corresponds to the **id** of the question the user identified as the correct match. The **userId** parameter is an identifier for the user and can be any value you choose, such as an email address or numeric identifier.
 
-    The feedback will be presented in the active learning **Suggestions** page for your knowledge base in Language Studio for you to accept or reject.
+    The feedback will be presented in the active learning **Suggestions** page for your knowledge base in Azure AI Language Studio for you to accept or reject.
 
 > [!NOTE]
 > To learn more about active learning, see the [Enrich your project with active learning](/azure/cognitive-services/language-service/question-answering/tutorials/active-learning).

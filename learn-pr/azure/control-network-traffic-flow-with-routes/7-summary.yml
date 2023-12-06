@@ -3,11 +3,10 @@ uid: learn.control-network-traffic-flow-with-routes.7-summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 03/02/2022
-  author: KumudD
-  ms.author: kumud
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/20/2023
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
 title: Summary
 durationInMinutes: 1
 content: |

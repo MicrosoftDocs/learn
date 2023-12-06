@@ -6,8 +6,9 @@ metadata:
   ms.date: 12/28/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: cosmos-db
+  ms.subservice: mongodb
 title: Design an Azure Cosmos DB for MongoDB database
 summary: This module will introduce Azure Cosmos DB modeling, shard keys and indexing concepts. We will also discuss Azure Cosmos DB for MongoDB collection's support for MongoDB aggregation pipelines.
 abstract: |

@@ -9,7 +9,7 @@ The numbered steps below show what’s happening to the network traffic that Irw
 
 2. The browser request enters the edge of the Azure network and passes inspection by the native **Azure DDoS Protection services**. The DDoS services help ensure the traffic isn't part of a larger attack
 
-3. The request moves to the **Azure Active Directory authentication service**, which adds multifactor authentication for increased security.
+3. The request moves to the **Microsoft Entra authentication service**, which adds multifactor authentication for increased security.
 
 4. Once authenticated, Irwin’s request proceeds to **Azure Front Door**, which displays some of the SAP Fiori content by using content caching. This improves the response time and user experience.
 

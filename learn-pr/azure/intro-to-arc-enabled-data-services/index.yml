@@ -7,9 +7,10 @@ metadata:
   author: MikeRayMSFT
   ms.author: mikeray
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: e2e-hybrid
+  ms.service: azure-arc
+  ms.subservice: azure-arc-data
 title: Introduction to Azure Arc-enabled data services
 summary: In this module, you learn the fundamentals of hybrid computing and Azure Arc. You also learn the basics of Azure Arc-enabled data services including the overall architecture. Then you learn the capabilities of Azure Arc-enabled SQL Managed Instance.
 abstract: |

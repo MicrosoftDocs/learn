@@ -6,8 +6,9 @@ metadata:
   ms.date: 04/30/2019
   author: lauradolan
   ms.author: ladolan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 title: What is Azure Batch?
 durationInMinutes: 6
 content: |

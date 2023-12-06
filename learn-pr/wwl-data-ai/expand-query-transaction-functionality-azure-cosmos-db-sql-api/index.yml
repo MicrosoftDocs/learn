@@ -6,8 +6,9 @@ metadata:
   ms.date: 02/06/2023
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: cosmos-db
+  ms.subservice: nosql
 title: Expand query and transaction functionality in Azure Cosmos DB for NoSQL
 summary: Author user-defined functions and triggers using JavaScript in Azure Cosmos DB for NoSQL.
 abstract: |

@@ -7,8 +7,9 @@ metadata:
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurepowershell
 title: Exercise - Configure long-term retention policies
 durationInMinutes: 7
 interactive: powershell

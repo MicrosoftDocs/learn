@@ -6,8 +6,8 @@ metadata:
   ms.date: 11/22/2022
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: microsoft-sentinel
 title: Manage content in Microsoft Sentinel
 summary: By the end of this module, you'll be able to manage _content_ in Microsoft Sentinel.
 abstract: |

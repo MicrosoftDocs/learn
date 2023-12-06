@@ -2,17 +2,17 @@ Now that your network and identity access are configured and secure, let's consi
 
 ## Data encryption
 
-Encrypted connections are forced by Azure SQL Database, with the option to additionally specify the inbound Transport Layer Security (TLS) required minimum version (>1.0, >1.1, or >1.2). The recommended task is to force encryption on the client to avoid server negotiation, and to not trust the server certificate as a best practice.
+Encrypted connections are forced by Azure SQL Database, with the option to additionally specify the inbound Transport Layer Security (TLS) required minimum version (>1.0, >1.1, or >1.2). We recommend forcing encryption on the client to avoid server negotiation, and not trusting the server certificate as a best practice.
 
 ## Transparent data encryption
 
-Transparent Data Encryption (TDE) provides encryption for data at rest and is on by default for all new databases in Azure SQL Database. It can be configured for all deployment options with a switch in the Azure portal, as shown here:  
+Transparent Data Encryption (TDE) provides encryption for data at rest and is on by default for all new databases in Azure SQL Database. You can configure it for all deployment options with a switch in the Azure portal, as shown here:  
 
 :::image type="content" source="../media/6-transparent-data-encryption-enabled.png" alt-text="Screenshot of confirming TDE is on in the Azure portal.":::  
 
-At the server level, you can also choose to use a **Service-managed key** or use [Bring Your Own Key (BYOK)](/azure/azure-sql/database/transparent-data-encryption-byok-overview) using the **Customer-managed key** option. The default is to let the Azure service manage your key. Azure will automatically generate a key to encrypt your databases, and it will manage the key rotations. You've seen how to do this with the Azure portal, but you can also use Azure PowerShell, the Azure CLI, Transact-SQL (T-SQL), or REST APIs.
+At the server level, you can also choose to use a **Service-managed key** or use [Bring Your Own Key (BYOK)](/azure/azure-sql/database/transparent-data-encryption-byok-overview) using the **Customer-managed key** option. The default is to let the Azure service manage your key. Azure automatically generates a key to encrypt your databases, and it manages the key rotations. You've learned how to do this with the Azure portal, but you can also use Azure PowerShell, the Azure CLI, Transact-SQL (T-SQL), or REST APIs.
 
-:::image type="content" source="../media/6-transparent-data-encryption-key.png" alt-text="Server view of TDE options.":::  
+:::image type="content" source="../media/6-transparent-data-encryption-key.png" alt-text="Screenshot of the TDE options server view.":::  
 
 ### Customer-managed keys with TDE
 
@@ -21,18 +21,18 @@ You can alternately use BYOK and take advantage of an Azure key vault. The advan
 - Full and granular control over usage and management of the TDE protector
 - Transparency of the TDE protector usage
 - Ability to implement separation of duties in the management of keys and data within the organization
-- Key Vault administrator can revoke key access permissions to make encrypted database inaccessible
+- The key vault administrator can revoke key access permissions to make encrypted database inaccessible
 - Central management of keys in AKV
-- Greater trust from your end customers, since AKV is designed such that Microsoft can't see nor extract encryption keys
+- Greater trust from your end customers because AKV is designed so that Microsoft can't see or extract encryption keys
 
 You can also take advantage of using a [user-assigned managed identity (UMI)](/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity) with customer-managed keys for TDE, which:
 
-- Enables the ability to pre-authorize key vault access for Azure SQL logical servers by creating a user-assigned managed identity, and granting it access to key vault, even before the server or database has been created
-- Allows creation of an Azure SQL logical server with TDE and CMK enabled
-- Enables the same user-assigned managed identity to be assigned to multiple servers, eliminating the need to individually turn on system-assigned managed identity for each Azure SQL logical server, and providing it access to key vault
-- Provides the capability to enforce CMK at server creation time with an available built-in Azure policy
+- Enables the ability to pre-authorize key vault access for Azure SQL logical servers by creating a user-assigned managed identity and granting it access to key vault, even before the server or database has been created.
+- Allows creation of an Azure SQL logical server with TDE and CMK enabled.
+- Enables the same user-assigned managed identity to be assigned to multiple servers, eliminating the need to individually turn on system-assigned managed identity for each Azure SQL logical server and providing it access to key vault.
+- Provides the capability to enforce CMK at server creation time with an available built-in Azure policy.
 
-[Automatic key rotation](/azure/azure-sql/database/transparent-data-encryption-byok-key-rotation#automatic-key-rotation) has been introduced for customer-managed keys using TDE. When enabled, the server will continuously check the key vault for any new versions of the key being used as the TDE protector. If a new version of the key is detected, the TDE protector on the server will be automatically rotated to the latest key version within 60 minutes.
+[Automatic key rotation](/azure/azure-sql/database/transparent-data-encryption-byok-key-rotation#automatic-key-rotation) has been introduced for customer-managed keys using TDE. When enabled, the server continuously checks the key vault for any new versions of the key being used as the TDE protector. If a new version of the key is detected, the TDE protector on the server is automatically rotated to the latest key version within 60 minutes.
 
 ## Always Encrypted
 
@@ -63,7 +63,7 @@ GRANT UNMASK to DataOfficers
 
 From the preceding commands, you can see that there are multiple ways to apply a mask via functions.
 
-For example, if they're assigned to a role such as *DataOfficers* (this is an example, not an official role), some users might need to be able to view the masked data. They can be given `UNMASK` privileges with the following T-SQL command:
+For example, if they're assigned to a role such as *DataOfficers* (this is an example, not an official role), some users might need to be able to view the masked data. You can give them `UNMASK` privileges with the following T-SQL command:
 
 ```sql
 GRANT UNMASK TO DataOfficers
@@ -73,7 +73,7 @@ Depending on who is querying, the results would be as shown here:
 
 :::image type="content" source="../media/6-mask-example.png" alt-text="Screenshot of an example of users with unmask access.":::
 
-With the introduction to granular dynamic data masking permissions, you can grant or revoke UNMASK permission at the database-level, schema-level, table-level or at the column-level to a database user, Azure AD identity, Azure AD group, or database role.
+With the introduction to granular dynamic data-masking permissions, you can grant or revoke `UNMASK` permission at the database level, schema level, table level, or at the column level to a database user, Microsoft Entra identity, Microsoft Entra group, or database role.
 
 ## Tasks for data protection
 

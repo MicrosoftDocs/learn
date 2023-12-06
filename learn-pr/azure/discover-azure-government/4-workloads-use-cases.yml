@@ -5,10 +5,9 @@ metadata:
   title: Utilize the scale and economic benefits of Azure
   description: Review of several scenarios in which Microsoft Azure helps public sector agencies comply with different data protection requirements.
   ms.date: 02/23/2021
-  author: Adriamen
-  ms.author: micrum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/4-workloads-use-cases.md)] 

@@ -1,6 +1,6 @@
 Now that your delivery network is configured, let's verify that your site content is being delivered through the CDN.
 
-In this unit, review how CDNs update content and the delay that you typically see when updating the source files.
+In this unit, review how CDN update contents and the delay that you typically see when updating the source files.
 
 ## Review both the Origin Server and CDN Versions
 
@@ -14,7 +14,7 @@ Open the URLs for the origin server and the link to the CDN-published version in
 
 1. Open another browser tab.
 
-1. Enter the URL of your Endpoint Hostname from the CDN endpoint in the form **endpointname.azureedge.net**. Again, the replicated copy of your source website should appear. You may see a _Page not Found_ if the content hasn't propagated. Propagation can take a few minutes to complete and you may need to refresh the page.
+1. Enter the URL of your Endpoint Hostname from the CDN endpoint in the form **endpointname.azureedge.net**. Again, the replicated copy of your source website should appear. You might see a _Page not Found_ if the content hasn't propagated. Propagation can take a few minutes to complete and you might need to refresh the page.
 
     :::image type="content" source="../media/5-cdn-endpoint.png" alt-text="Screenshot of the website through the Azure CDN endpoint.":::
 
@@ -56,4 +56,4 @@ Open the URLs for the origin server and the link to the CDN-published version in
 
     :::image type="content" source="../media/5-cdn-endpoint-updated.png" alt-text="Screenshot of the website through the Azure CDN endpoint updated.":::
 
-1. You may continue to the next unit while you wait for the CDN to update.
+1. You can continue to the next unit while you wait for the CDN to update.

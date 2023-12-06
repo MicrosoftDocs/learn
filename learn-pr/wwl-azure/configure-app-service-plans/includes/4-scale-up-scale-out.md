@@ -2,8 +2,7 @@ There are two methods for scaling your Azure App Service plan and applications: 
 
 Watch the following video about how to implement automatic scaling for your Azure App Service plan and applications. 
 
-
-<iframe width="854" height="480" src="https://www.youtube.com/embed/LS8ZPbQzRpc" title="How to automatically scale Azure App Service applications | Azure Tips and Tricks" frameborder="0" allowfullscreen></iframe>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/LS8ZPbQzRpc" title="How to move Azure Storage Blobs between containers" allowfullscreen></iframe>
 
 ### Things to know about Azure App Service scaling
 

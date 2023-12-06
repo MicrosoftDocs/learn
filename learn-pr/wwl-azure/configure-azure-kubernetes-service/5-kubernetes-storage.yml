@@ -4,11 +4,10 @@ title: Configure Azure Kubernetes Service storage
 metadata:
   title: Configure Azure Kubernetes Service storage
   description: "Configure Azure Kubernetes Service storage"
-  ms.date: 03/06/2023
+  ms.date: 07/13/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

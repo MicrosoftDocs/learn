@@ -7,8 +7,10 @@ metadata:
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 title: Create a SQL elastic pool
 durationInMinutes: 7
 content: |

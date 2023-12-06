@@ -1,59 +1,90 @@
-Here, we discuss how pull requests can help you request, review, and incorporate changes across your repository.
+We begin by:
 
-## The GitHub flow
+- Reviewing branches and their importance to pull requests.
+- Defining what a pull request is.
+- Learning about creating a pull request, reviewing pull request statuses, and merging a pull request.
 
-In addition to providing a platform for collaborative software development, GitHub also offers a prescribed workflow designed to optimize use of its various features. While this unit focuses on pull requests, it is recommended that you first review [Understanding the GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow).
+## Branches
 
-### Working on branches
+First, let’s define what branches are, why they’re important to developers, and how they’re related to pull requests. 
 
-Developers working on independent branches has become a ubiquitous concept in modern software development. By having their own branch, a developer can make any changes they need to without worrying about how those changes will impact other developers working on their own branches.
+Branches are isolated workspaces where you can develop your work without affecting others in the repository. They allow you to develop features, fix bugs, and safely experiment with new ideas in a contained area of your repository.
 
-### You have to merge eventually
+Developers working on independent branches is a common concept in modern software development. By having their own branch, a developer can make any changes, called *commits*, without worrying about how their commits affect other developers working on their own branches.
 
-While working on a branch is great for individual developer productivity, it opens a new challenge. At some point, each developer's branch will need to be merged into a common branch, like `main`. As projects scale, there can be many merges that need to happen, and it becomes increasingly important to track and review each. This is where pull requests come in.
+### Merging branches
+
+Although having each developer work on a separate branch is great for individual productivity, it opens a new challenge. At some point, each developer's branch needs to be *merged* into a common branch, like `main`. As projects scale, there can be many merges that need to happen, and it becomes increasingly important to track and review each merge. Needing to keep track of multiple changes to a project is where pull requests come in.
 
 ## What is a pull request?
 
-A pull request is a mechanism used to communicate that changes from one branch are ready to be merged into another. They offer an opportunity for stakeholders to review and discuss the proposed changes to ensure that the code quality in the base branch is kept as high as possible.
+A pull request is a way to document branch changes and communicate that the changes from the developer’s branch are ready to be *merged* into the base (main) branch. Pull requests enable stakeholders to review and discuss the proposed changes to ensure that the code quality in the base branch is kept as high as possible. 
 
-![A pull request.](../media/2-pull-request.png)
+In order for the two branches to be merged, they must be different from one another:
 
-> [!NOTE]
-> This unit discusses working with pull requests within the context of a browser. There are also many development platforms, like [Visual Studio](https://visualstudio.microsoft.com/?azure-portal=true), that offer integrated pull request experiences.
-### Author responsibilities
+- The *compare* branch is the developer’s own branch, which contains the specific changes they made.  
+- The *base* branch, also referred to as the *main* branch, is the branch that the changes need to be merged into. 
 
-The author of a pull request is the person who created the pull request. They're hoping to ultimately have the changes from the **compare** branch merged into the **base** branch. They're generally responsible for answering questions about the changes and applying feedback.
+The most common use of *compare* is to compare branches, such as when you're starting a new pull request. You're always taken to the branch comparison view when starting a new pull request.
 
-Before creating a pull request, the author is responsible for ensuring the merge can succeed. It's best practice to often pull down changes from the remote to your local copy to confirm that the code builds with the latest base changes.
+## Create a pull request
 
-![Creating a pull request.](../media/2-creating-pull-request.png)
+Now let’s review how to create a pull request!
 
-Learn more about [Proposing changes to your work with pull requests](https://help.github.com/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests?azure-portal=true).
+1. On `GitHub.com`, navigate to the main page of the repository.
 
-### Reviewer responsibilities
+1. In the **Branch** menu, select the branch that contains your commits.
 
-Reviewers may be assigned to review the pull request based on their expertise with or responsibility for the code in question. For example, there may be a database guru who reviews any database code. Or there might be a lead developer who reviews any code before it gets merged into `main` anywhere in the project.
+   :::image type="content" source="../media/2-new-branch-name-text-box.png" alt-text="Screenshot of creating a new branch and naming it." border="false":::
 
-GitHub offers a visual experience for reviewing code that allows reviewers to see code changes in a *diff* view where changes are highlighted. They can then leave comments inline, suggest changes, or approve. Reviewer feedback is kept as part of the repository history so that changes and decisions can be easily traced within their original context.
+1. Above the list of files, in the yellow banner, select the **Compare & pull request** button to create a pull request for the associated branch.
 
-![Reviewing a pull request.](../media/2-reviewing-pull-request.png)
+   :::image type="content" source="../media/2-compare-and-pull-request.png" alt-text="Screenshot of a yellow text box, highlighting the green compare and pull request button." border="false":::
 
-As the name implies, reviewers are responsible for reviewing changes. When feedback is minor, such as typos, reviewers may leave comments, edit the files directly, or suggest changes within specific files being modified. To recommend more substantive changes, a pull request should be opened against the author's branch.
+1. In the **base branch** dropdown menu, select the branch you'd like to merge your changes into. Then select the **compare branch** dropdown menu to select the topic branch you made your changes in.
 
-Reviewers may be automatically assigned to a pull request by using a [CODEOWNERS file](https://help.github.com/github/creating-cloning-and-archiving-repositories/about-code-owners?azure-portal=true). This file uses the same path syntax as `.gitignore` to map parts of the codebase to users or teams responsible for reviewing their changes. Learn how to [make these reviews mandatory](https://help.github.com/github/administering-a-repository/enabling-required-reviews-for-pull-requests?azure-portal=true).
+1. Enter a title and description for your pull request.
 
-Learn more about [Reviewing changes in pull requests](https://help.github.com/github/collaborating-with-issues-and-pull-requests/reviewing-changes-in-pull-requests?azure-portal=true).
+1. To create a pull request that’s ready for review, select the **Create Pull Request** button. To create a draft pull request, select the dropdown and select **Create Draft Pull Request**, then select **Draft Pull Request**. 
 
-### Applying suggested changes
+## Pull request statuses
 
-When reviewers suggest changes in a pull request, the author or assigned individual with write access to the repository can incorporate the changes into the pull request. You can commit a single suggestion or batch multiple suggestions into a single commit. When suggested changes are added to the pull request, both the author of the suggested change and the person who applies the suggested change will be co-authors of the commit, but it's the person who applies the suggested change who is also the committer of the commit.
+Now let’s review the different statuses of a pull request.
 
-:::image type="content" source="../media/2-add-suggestion-batch.png" alt-text="Some suggestions for changes with a button to add the suggestions to the batch.":::
+- **Draft pull request** - When you create a pull request, you can choose to either create a pull request that’s ready for review or a *draft* pull request. A pull request with a draft status can’t be merged, and code owners aren’t automatically requested to review draft pull requests.
 
-### Assignee responsibilities
+- **Open pull request** - An open status means the pull request is active and not yet merged to the base branch. You can still make commits and discuss and review potential changes with collaborators. 
 
-While not mandatory, pull requests may be assigned to a specific user. That person takes responsibility for determining if and when the pull request is merged. This may require them to corral stakeholders into agreeing whether the merge should be approved.
+- **Closed pull request** - You can choose to close a pull request without merging it into the base/main branch. This option can be handy if the changes proposed in the branch are no longer needed, or if another solution is proposed in another branch.
 
-Once a pull request has been merged, it's recommended that you delete the branch it was based on. Allowing the branch to linger can result in headaches down the road. Remember that all branch history will have been merged into the base branch, so its commits can always be accessed later on.
+- **Merged pull request** - The merged pull request status means that the updates and commits from the compare branch were combined with the base branch. Anyone with push access to the repository can complete the merge. 
 
-Learn more about [Incorporating changes from a pull request](https://help.github.com/github/collaborating-with-issues-and-pull-requests/incorporating-changes-from-a-pull-request?azure-portal=true).
+## Merge a pull request
+
+1. Under your repository name, select **Pull requests**.
+
+   :::image type="content" source="../media/3-pull-request-tab.png" alt-text="Screenshot of the top navigation bar of a repo with the Pull request tab highlighted." border="false":::
+
+1. In the **Pull requests** list, select the pull request you'd like to merge.
+
+1. Scroll down to the bottom of the pull request. Depending on the merge options enabled for your repository, you can:
+
+   - Merge all of the commits into the base branch by selecting the **Merge pull request** button. If the **Merge pull request** option isn’t shown, select the merge dropdown menu, choose the **Create a merge commit** option, and then select the **Create a merge commit** button.
+
+     :::image type="content" source="../media/3-merge-pull-request.png" alt-text="Screenshot of the dropdown menu of the green merge pull request button with the Create a merge commit selected." border="false":::
+
+   - **Squash and merge** allows you to take all of your commits and combine them into one. This option can help you keep your repository history more readable and organized. Select the **Squash and merge** option, and then select the **Squash and merge** button.
+
+   - The **Rebase and merge** option allows you to make commits without a merge commit. This option enables you to skip a merge by maintaining a linear project history. Select the merge dropdown menu, then choose the **Rebase and merge** option, and then select the **Rebase and merge** button.
+
+1. If prompted, enter a commit message, or accept the default message.
+
+1. If you have more than one email address associated with your account on `GitHub.com`, select the email address dropdown menu and select the email address to use as the Git author email address. Only verified email addresses appear in this dropdown menu. If you enabled email address privacy, then a no-reply GitHub email is the default commit author email address.
+
+   :::image type="content" source="../media/3-select-author-of-merge.png" alt-text="Screenshot of a commit change with a description box and the drop-down menu of the email to select as the author of the commit." border="false":::
+
+1. Select **Confirm merge**, **Confirm squash and merge**, or **Confirm rebase and merge**.
+
+1. Optionally, you can delete the compare branch to keep the list of branches in your repository tidy.
+
+Next, you complete an exercise that takes what you reviewed and applies it to a real-life example.

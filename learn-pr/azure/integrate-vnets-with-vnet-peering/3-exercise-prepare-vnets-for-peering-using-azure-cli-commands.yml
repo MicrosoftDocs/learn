@@ -4,11 +4,12 @@ title: Exercise - Prepare virtual networks for peering by using Azure CLI comman
 metadata:
   title: Exercise - Prepare virtual networks for peering by using Azure CLI commands
   description: Prepare virtual networks for peering by using Azure CLI commands
-  ms.date: 03/02/2022
-  author: kumudd
-  ms.author: kumud
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/05/2023
+  author: asudbring
+  ms.author: allensu
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 10
 azureSandbox: true
 interactive: bash

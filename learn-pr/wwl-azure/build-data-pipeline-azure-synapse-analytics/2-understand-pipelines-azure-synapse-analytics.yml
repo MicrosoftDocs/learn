@@ -4,12 +4,10 @@ title: Understand pipelines in Azure Synapse Analytics
 metadata:
   title: Understand pipelines in Azure Synapse Analytics
   description: "Understand pipelines in Azure Synapse Analytics"
-  ms.date: 02/03/2023
+  ms.date: 10/06/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.service: synapse-analytics
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/2-understand-pipelines-azure-synapse-analytics.md)]

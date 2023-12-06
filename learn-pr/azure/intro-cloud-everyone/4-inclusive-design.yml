@@ -5,10 +5,9 @@ metadata:
   title: What is inclusive design?
   description: You learn about inclusive design.
   ms.date: 02/24/2020
-  author: PhilStollery
-  ms.author: tinaes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/4-inclusive-design.md)]

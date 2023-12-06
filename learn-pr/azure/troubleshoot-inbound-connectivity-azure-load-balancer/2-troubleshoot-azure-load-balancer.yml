@@ -4,11 +4,10 @@ title: Troubleshoot Azure Load Balancer
 metadata:
   title: Troubleshoot Azure Load Balancer
   description: Troubleshoot Azure Load Balancer
-  ms.date: 03/23/2020
-  author: asudbring
-  ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 12/04/2023
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-troubleshoot-azure-load-balancer.md)]

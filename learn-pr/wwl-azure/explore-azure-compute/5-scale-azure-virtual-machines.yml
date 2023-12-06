@@ -4,11 +4,10 @@ title: Scale Azure virtual machines
 metadata:
   title: Scale Azure virtual machines
   description: "Scale Azure virtual machines"
-  ms.date: 04/21/2023
+  ms.date: 12/06/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/5-scale-azure-virtual-machines.md)]

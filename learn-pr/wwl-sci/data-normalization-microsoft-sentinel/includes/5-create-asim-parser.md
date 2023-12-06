@@ -50,7 +50,7 @@ A representative set of logs should include:
 Before you develop a parser, map the information available in the source event, or events to the schema you identified:
 
 - Map all mandatory fields and preferably also recommended fields.
-- Try to map any information available from the source to normalized fields. If not available as part of th selected schema, consider mapping to fields available in other schemas.
+- Try to map any information available from the source to normalized fields. If not available as part of the selected schema, consider mapping to fields available in other schemas.
 - Map values for fields at the source to the normalized values allowed by ASIM. The original value is stored in a separate field, such as EventOriginalResultDetails.
 
 ### Developing parsers

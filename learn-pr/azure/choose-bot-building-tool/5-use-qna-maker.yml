@@ -8,8 +8,7 @@ metadata:
   ms.date: 6/15/2021
   author: jasonkellingtonwaypoint
   ms.author: v-jaske
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/5-use-qna-maker.md)]

@@ -7,8 +7,9 @@ metadata:
   ms.date: 04/23/2020
   author: msangapu-msft
   ms.author: msangapu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-python
   zone_pivot_groups: dev-lang-nodeexpress-pythonflask
 azureSandbox: true
 durationInMinutes: 5

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-entra-verified-id
+title: Describe Microsoft Entra Verified ID
+metadata:
+  title: Describe Microsoft Entra Verified ID
+  description: "Describe Microsoft Entra Verified ID"
+  ms.date: 12/06/2023
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5b-describe-entra-verified-id.md)]

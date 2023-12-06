@@ -7,8 +7,7 @@ metadata:
   ms.date: 07/11/2022
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -17,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which table (data type) would you query for the Azure Active Directory data?"
+  - content: "Which table (data type) would you query for the Microsoft Entra data?"
     choices:
     - content: "OfficeActivity"
       isCorrect: false
@@ -39,7 +38,7 @@ quiz:
     - content: "SigninLogs"
       isCorrect: false
       explanation: "Incorrect.  This connector doesn't write to the SigninLogs table."
-  - content: "Which table (data type) would you query for the Azure Active Directory Identity Protection data?"
+  - content: "Which table (data type) would you query for the Microsoft Entra ID Protection data?"
     choices:
     - content: "OfficeActivity"
       isCorrect: false

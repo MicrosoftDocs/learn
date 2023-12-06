@@ -6,10 +6,9 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 01/31/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -30,10 +29,10 @@ quiz:
     choices:
     - content: When you use workload identities, you must carefully manage their secrets.
       isCorrect: false
-      explanation: Incorrect. Federated credentials enable deployment workflows to securely authenticate to Azure Active Directory without you storing any secrets.
+      explanation: Incorrect. Federated credentials enable deployment workflows to securely authenticate to Microsoft Entra ID without you storing any secrets.
     - content: Workload identities can use federated credentials to authenticate.
       isCorrect: true
-      explanation: Correct. Federated credentials enable deployment workflows to securely authenticate to Azure Active Directory without you storing any secrets.
+      explanation: Correct. Federated credentials enable deployment workflows to securely authenticate to Microsoft Entra ID without you storing any secrets.
     - content: Workload identities must be created through the Azure portal.
       isCorrect: false
       explanation: Incorrect. Workload identities and federated credentials can be created through the Azure CLI, Azure PowerShell, or the Azure portal.

@@ -1,10 +1,8 @@
-
-
 To determine the latency between the different zones, you need to:
 
 - Deploy the VM SKU you want to use for your DBMS instance in all three zones. Make sure Azure Accelerated Networking is enabled when you take this measurement.
 - When you find the two zones with the least network latency, deploy another three VMs of the VM SKU that you want to use as the application layer VM across the three Availability Zones. Measure the network latency against the two DBMS VMs in the two DBMS zones that you selected.
-- Use niping as a measuring tool. This tool, from SAP, is described in [SAP Note \#500235](https://launchpad.support.sap.com/#/notes/500235) and [SAP Note \#1100926](https://launchpad.support.sap.com/#/notes/1100926). Focus on the commands documented for latency measurements. Ping isn't recommended in such scenarios because it doesn't work through the Azure Accelerated Networking code paths.
+- Use niping as a measuring tool. This tool, from SAP, is described in [SAP Note \#500235](https://aka.ms/az-120-sapnote-500235) and [SAP Note \#1100926](https://launchpad.support.sap.com/#/notes/1100926). Focus on the commands documented for latency measurements. Ping isn't recommended in such scenarios because it doesn't work through the Azure Accelerated Networking code paths.
 
 Based on your measurements and the availability of your VM SKUs in the Availability Zones, you need to make some decisions:
 

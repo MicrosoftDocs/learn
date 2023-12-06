@@ -1,23 +1,23 @@
 ### YamlMime:Module
 uid: learn.azure-security.secure-aad-users-with-mfa
 metadata:
-  title: Secure Azure Active Directory users with Multi-Factor Authentication
-  description: Learn how to use multi-factor authentication with Azure AD to harden your user accounts.
-  ms.date: 10/31/2022
+  title: Secure Microsoft Entra users with multifactor authentication
+  description: Learn how to use multifactor authentication with Microsoft Entra ID to harden your user accounts.
+  ms.date: 11/03/2023
   author: Justinha
   ms.author: justinha
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Secure Azure Active Directory users with Multi-Factor Authentication
-summary: Learn how to use multi-factor authentication with Azure AD to harden your user accounts.
+  ms.topic: module
+  ms.service: active-directory
+title: Secure Microsoft Entra users with multifactor authentication
+summary: Learn how to use multifactor authentication with Microsoft Entra ID to harden your user accounts.
 abstract: |
   In this module, you will:
-  - Learn about Azure AD Multi-Factor Authentication (Azure AD MFA)
-  - Create a plan to deploy Azure AD MFA
-  - Turn on Azure AD MFA for users and specific apps
+  - Learn about Microsoft Entra multifactor authentication
+  - Create a plan to deploy Microsoft Entra multifactor authentication
+  - Turn on Microsoft Entra multifactor authentication for users and specific apps
 prerequisites: |
   - Basic knowledge of the Azure portal
-  - Basic knowledge of Azure Active Directory
+  - Basic knowledge of Microsoft Entra ID
 iconUrl: /training/achievements/secure-aad-users-with-mfa.svg
 badge:
   uid: learn.azure-security.secure-aad-users-with-mfa.badge
@@ -29,7 +29,7 @@ roles:
 products:
 - azure
 - azure-portal
-- azure-active-directory
+- entra-id
 subjects:
 - identity-access
 units:

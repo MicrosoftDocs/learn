@@ -4,11 +4,10 @@ title: Exercise - Set up your environment
 metadata:
   title: Exercise - Set up your environment
   description: Set up the resources you'll need to troubleshoot inbound network connectivity.
-  ms.date: 03/23/2020
-  author: asudbring
-  ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 12/04/2023
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
 durationInMinutes: 40
 azureSandbox: false
 content: |

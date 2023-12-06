@@ -4,11 +4,10 @@ title: Examine Azure virtual machine scaling considerations
 metadata:
   title: Examine Azure virtual machine scaling considerations
   description: "Examine Azure virtual machine scaling considerations"
-  ms.date: 04/21/2023
+  ms.date: 12/06/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/6-examine-azure-virtual-machine-scaling-considerations.md)]

@@ -8,8 +8,7 @@ metadata:
   author: anandmeg
   ms.author: meghaanand
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-visual-studio
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -26,11 +25,11 @@ quiz:
           explanation: Incorrect. Visual Studio predates Visual Studio Code by several years.
         - content: Visual Studio is more than 20 years old, while Visual Studio Code was first released in 2015.
           isCorrect: true
-          explanation: Correct. Visual Studio Code is the latest addition to the Visual Studio family that started over 20 years ago.
+          explanation: Correct. Visual Studio Code is the latest addition to the Visual Studio family that started more than 20 years ago.
         - content: Visual Studio Code is an integrated development environment, while Visual Studio is a lightweight source-code editor. 
           isCorrect: false
-          explanation: Incorrect. The reverse is true. Visual Studio is an IDE, and VS Code is the lightweight editor.
-    - content: What is one tool that enables me to pair program in Visual Studio?
+          explanation: Incorrect. The reverse is true. Visual Studio is an IDE, and Visual Studio Code is the lightweight editor.
+    - content: What is one tool that enables you to pair program in Visual Studio?
       choices:
         - content: IntelliCode
           isCorrect: false
@@ -40,11 +39,11 @@ quiz:
           explanation: Correct. Live Share allows you to share your coding context with a friend so they can code along with you. They can navigate your code and view the same output and debug information that you see locally over a remote connection.
         - content: Code fixes
           isCorrect: false
-          explanation: Incorrect. Code fixes are the suggested code blocks that appear in light bulb and screwdriver icons in the margin.
+          explanation: Incorrect. Code fixes are the suggested  blocks that appear in light bulb and screwdriver icons in the margin.
         - content: Extensions
           isCorrect: false
           explanation: Incorrect. Extensions are the community and Microsoft provided add-ons that you can install in Visual Studio to enable all kinds of custom functionality.
-    - content: What ways can Visual Studio help me publish my apps?
+    - content: What ways can Visual Studio help you publish your apps?
       choices:
         - content: You can publish locally to your machine using the debugger.
           isCorrect: false 
@@ -58,3 +57,25 @@ quiz:
         - content: All of the above.
           isCorrect: true
           explanation: Correct. You can publish locally to your machine, publish to the cloud using Azure, publish to a Docker container, and more!
+    - content: What features does Visual Studio include?
+      choices:
+        - content: A debugger
+          isCorrect: false 
+          explanation: Incorrect. Visual Studio Code does include a debugger, but that's not the only feature it has.
+        - content: Font and theme customization
+          isCorrect: false
+          explanation: Incorrect. You can customize your fonts and themes in Visual Studio, but those aren't the only features Visual Studio includes.
+        - content: AI-assisted development
+          isCorrect: false
+          explanation: Incorrect. Visual Studio does have tools like GitHub Copilot and IntellCode for AI-assisted development, but those aren't its only features.
+        - content: All of these, and more
+          isCorrect: true
+          explanation: Correct. In addition to a debugger, customizations, and AI-assisted development, Visual Studio has many more features.
+    - content: Can external developers design extensions for Visual Studio Code?
+      choices:
+        - content: No
+          isCorrect: false
+          explanation: Incorrect. Developers can make and share extensions in the Visual Studio Marketplace.
+        - content: Yes
+          isCorrect: true
+          explanation: Correct. Developers can make and share extensions in the Visual Studio Marketplace.

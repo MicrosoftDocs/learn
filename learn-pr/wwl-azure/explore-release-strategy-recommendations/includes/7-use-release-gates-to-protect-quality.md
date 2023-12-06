@@ -1,3 +1,4 @@
+
 A quality gate is the best way to enforce a quality policy in your organization. It's there to answer one question: can I deliver my application to production or not?
 
 A quality gate is located before a stage that is dependent on the outcome of a previous stage. A quality gate was typically something that a QA department monitored in the past.

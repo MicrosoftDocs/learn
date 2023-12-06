@@ -2,7 +2,7 @@ A sample project is available, which includes a pre-configured application. You 
 
 ## Download the starter project
 
-Download the [Mixed Reality starter project](https://sjanlassets.blob.core.windows.net/assets/space-jam-a-new-legacy-mrtk-starter-project.zip?azure-portal=true) from Azure. You will find a zip folder called **space-jam-a-new-legacy-mrtk-starter-project**. Extract the contents of this zip file, and save to your computer:
+Download the Mixed Reality starter project from Azure. You will find a zip folder called **space-jam-a-new-legacy-mrtk-starter-project**. Extract the contents of this zip file, and save to your computer:
 
 ![Screenshot of Windows File Explorer, showing the contents of the "Space Jam" folder, which is in the "space-jam-a-new-legacy-mrtk-starter-project" folder.](../media/extracted-folders.png)
 

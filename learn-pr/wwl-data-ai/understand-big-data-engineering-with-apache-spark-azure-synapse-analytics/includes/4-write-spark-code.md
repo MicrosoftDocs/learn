@@ -180,11 +180,11 @@ display(bikes_df)
 
 The results from the code example would look similar to the following table:
 
-| ProductName | ListPrice |
-| -- | -- |
-| Mountain-100 Silver, 38 | 3399.9900 |
-| Road-750 Black, 52 | 539.9900 |
-| ... | ... |
+| ProductID | ProductName | ListPrice |
+| --| -- | -- |
+| 38 | Mountain-100 Silver, 38 | 3399.9900 |
+| 52 | Road-750 Black, 52 | 539.9900 |
+| ... | ... | ... |
 
 ### Using SQL code
 

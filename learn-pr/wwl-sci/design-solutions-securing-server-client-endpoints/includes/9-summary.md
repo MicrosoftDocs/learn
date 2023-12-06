@@ -11,6 +11,7 @@ You learned:
 
 - [Azure security baseline for Windows Virtual Machines](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline)
 - [Microsoft cloud security benchmark - Endpoint security](https://learn.microsoft.com/security/benchmark/azure/mcsb-endpoint-security)
+- [Microsoft Defender for IoT - Overview](https://learn.microsoft.com/azure/defender-for-iot/organizations/overview)
 - [Security in your IoT workload - Microsoft Azure Well-Architected Framework](https://learn.microsoft.com/azure/architecture/framework/iot/iot-security)
 - [Learn about Windows security baselines you can deploy with Microsoft Intune](https://learn.microsoft.com/mem/intune/protect/security-baselines)
 - [Plan for virtual machine remote access - Cloud Adoption Framework](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-virtual-machine-remote-access)

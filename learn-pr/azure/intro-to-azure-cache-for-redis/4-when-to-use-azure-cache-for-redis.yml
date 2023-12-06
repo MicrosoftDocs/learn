@@ -8,8 +8,7 @@ metadata:
   ms.date: 04/09/2021  
   author: tchristiani
   ms.author: terrychr
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/4-when-to-use-azure-cache-for-redis.md)]
