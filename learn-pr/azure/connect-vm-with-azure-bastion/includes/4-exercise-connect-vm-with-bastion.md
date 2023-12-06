@@ -101,7 +101,7 @@ Before you can use Azure Bastion, you need to create a subnet on the virtual net
 
 1. Select the virtual machine **internalappvm**.
 
-1. Select **Connect** > **Bastion** > **Create Azure Bastion using defaults**.
+1. Select **Connect** > **Bastion** > **Deploy Bastion**.
 
    :::image type="content" source="../media/4-connect-bastion.png" alt-text="Screenshot of the Connect page and Bastion tab, with the Create Azure Bastion using defaults button.":::
 
