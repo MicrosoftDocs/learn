@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/29/2021
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/7-analyze-telemetry-data.md)]

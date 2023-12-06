@@ -7,8 +7,7 @@ metadata:
   ms.date: 2/16/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/2-what-is-github-administration.md)]
