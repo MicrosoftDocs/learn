@@ -35,4 +35,4 @@ Now you have:
 - [SAP Note \#2080648 – Suite on HANA memory Sizing report – Advanced correction 3](https://me.sap.com/notes/2080648)
 - [SAP Note \#2175150 – Suite on HANA memory Sizing report – Advanced correction 4](https://me.sap.com/notes/2175150)
 - [SAP Note \#2213586 – Suite on HANA memory Sizing report – Advanced correction 5](https://me.sap.com/notes/2213586)
-- [SAP Note \#2303847 – Suite on HANA memory Sizing report – Advanced correction 6](https://me.sap.com/notes/2303847)
+- [SAP Note \#2303847 – Suite on HANA memory Sizing report – Advanced correction 6](https://me.sap.com/notes/2303847) 
