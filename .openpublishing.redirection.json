@@ -30850,6 +30850,11 @@
       "source_path": "learn-pr/wwl-azure/implement-properties-within-class/2-define-class-properties.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-properties-within-class/4-examine-reference-type-properties.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
     }
   ]
 }
