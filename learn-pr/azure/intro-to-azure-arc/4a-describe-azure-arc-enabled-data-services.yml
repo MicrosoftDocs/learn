@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   ms.custom: e2e-hybrid
 title: Describe Azure Arc-enabled data services
-durationInMinutes: 7
+durationInMinutes: 4
 content: |
   [!include[](includes/4a-describe-azure-arc-enabled-data-services.md)]
