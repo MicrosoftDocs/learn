@@ -17,7 +17,7 @@ SQL Server professionals often use more than one database file to partition allo
 
 The database option `MIXED_PAGE_ALLOCATION` is set to *OFF*, and `AUTOGROW_ALL_FILES` is set to *ON*. You can't configure this, but, as with SQL Server, these are the recommended defaults.
 
-Currently, the `tempdb` metadata optimization feature introduced in SQL Server 2019, which can alleviate heavy latch contention, isn't currently available in Azure SQL Database or Azure SQL Managed Instance.
+The `tempdb` metadata optimization feature introduced in SQL Server 2019, which can alleviate heavy latch contention, isn't currently available in Azure SQL Database or Azure SQL Managed Instance.
 
 ## Database configuration
 
