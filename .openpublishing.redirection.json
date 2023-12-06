@@ -19467,6 +19467,66 @@
       "redirect_document_id": true
     },
     {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/2-onpremises-extension-attributes.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/3-exercise-onpremises-extension-attributes.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/4-directory-extensions.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/5-exercise-directory-extensions.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/6-schema-extensions.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/7-exercise-schema-extensions.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/8-open-extensions.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/9-exercise-open-extensions.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/msgraph-extensions/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/graph/extensibility-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/create-production-workloads-azure-databricks-azure-data-factory/index.md",
       "redirect_url": "/training/modules/run-azure-databricks-notebooks-azure-data-factory/",
       "redirect_document_id": false
@@ -30512,6 +30572,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/explore-iot-hub-monitoring/2-configure-iot-hub-monitoring.md",
+      "redirect_url": "/training/modules/explore-iot-hub-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-iot-hub-monitoring/3-knowledge-check.md",
+      "redirect_url": "/training/modules/explore-iot-hub-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-iot-hub-monitoring/4-summary.md",
+      "redirect_url": "/training/modules/explore-iot-hub-monitoring",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/explore-fundamentals-of-knowledge-mining/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/document-intelligence-knowledge-mining/",
       "redirect_document_id": false
@@ -30589,6 +30664,91 @@
     {
       "source_path": "learn-pr/azure/deploy-iot-solution-azure-sql-database/6-summary.yml",
       "redirect_url":"https://learn.microsoft.com/training/paths/azure-sql-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/challenge-project-classes-methods-properties/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/challenge-project-classes-methods-properties/4-exercise-create-car-class.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/challenge-project-classes-methods-properties/3-exercise-create-console-app.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/challenge-project-classes-methods-properties/5-exercise-put-it-together.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/challenge-project-classes-methods-properties/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/challenge-project-classes-methods-properties/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/challenge-project-classes-methods-properties/2-prepare.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/challenge-project-classes-methods-properties/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/implement-classes-properties-methods/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-performance-using-azure-monitor-for-vms/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-performance-using-azure-monitor-for-vms/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-performance-using-azure-monitor-for-vms/2-what-are-azure-monitor-logs-vms.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-performance-using-azure-monitor-for-vms/3-exercise-set-up-log-analytics-workspace.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-performance-using-azure-monitor-for-vms/4-build-log-queries-using-kusto.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-performance-using-azure-monitor-for-vms/5-exercise-build-log-queries.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-performance-using-azure-monitor-for-vms/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.monitor-vm-performance-using-azure-monitor-for-vms.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/",
       "redirect_document_id": false
     }
   ]

@@ -90,7 +90,7 @@ pub enum Action {
     Add {
         /// The task description text.
         #[structopt()]
-        text: String,
+        task: String,
     },
     /// Remove an entry from the journal file by position.
     Done {
