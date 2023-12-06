@@ -2,18 +2,15 @@ In this module, you learned how to manage changes to your repository source by u
 
 You learned about:
 
-- Reviewing branches and their importance to pull requests 
-- Defining what a pull request is
-- Learning how to create a pull request
-- Understanding the different pull request statuses
-- Merging a pull request to a base branch
-
+- Reviewing branches and their importance to pull requests. 
+- Defining what a pull request is.
+- Learning how to create a pull request.
+- Understanding the different pull request statuses.
+- Merging a pull request to a base branch.
 
 Now that you're familiar with merging commits using pull requests, learn to [Settle competing commits by using merge conflict resolution on GitHub](/training/modules/resolve-merge-conflicts-github/).
 
 ## Learn more
-
-Here are some links to more information on the topics we discussed in this module.
 
 - [Proposing changes to your work with pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests?azure-portal=true)
 - [Reviewing changes in pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/reviewing-changes-in-pull-requests?azure-portal=true)
