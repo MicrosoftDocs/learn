@@ -1,25 +1,19 @@
-At the core of developing object-oriented programs is working with classes. Working with classes includes knowing how to create them, and gaining an understanding of what they consist of. Learning about what properties and methods do in a class and how they work is an essential part of that understanding.
+To develop object-oriented programs, you need to work with classes. This involves creating classes and understanding their composition. It’s also essential to learn about the properties and methods of a class and how they function.
 
-Suppose you want to create a fun application that implements Langton's ant, an application that demonstrates Alan Turing’s (b. 1912 – d. 1954) invention of what is considered a model of a general-purpose computer. It was invented by Chris Langton in 1986 and runs on a grid of black and white cells and demonstrates complex behavior based on a simple set of movement rules.
+Suppose you want to create a fun application that demonstrates the concept of a general-purpose computer. Langton’s Ant is a popular example of such an application. It was invented by Chris Langton in 1986 and runs on a grid of black and white cells. The ant’s movement is governed by a simple set of rules, yet it demonstrates complex behavior. The application is named after Alan Turing (b. 1912 – d. 1954), who is considered the father of computer science.
 
->[!NOTE]
->A Turing machine is a hypothetical machine thought of by the mathematician Alan Turing in 1936. Despite its simplicity, the machine can simulate ANY computer algorithm, no matter how complicated it is!
+> [!NOTE]
+> A Turing machine is a hypothetical machine thought of by the mathematician Alan Turing in 1936. Despite its simplicity, the machine can simulate ANY computer algorithm, no matter how complicated it is!
 
-This module guides you through the steps required to begin building the LangtonsAnts demonstration. You'll set up your application and then begin adding the classes, methods, and properties the application requires.
+This module will guide you through the process of building the Langton's Ant demonstration. You’ll start by setting up your application and then proceed to add the classes, methods, and properties that the application requires.
+
 By the end of this module, you'll be able to write code that uses classes, properties, constructors, and reads user input.
 
->[!NOTE]
->This is a guided project module where you complete an end-to-end project by following step-by-step instructions.
+> [!NOTE]
+> This is a guided project module where you complete an end-to-end project by following step-by-step instructions.
 
 ## Learning objectives in this module
 
-- Create a console application
-- Create and Ant class and add properties and a constructor
-- Read user input in a loop
-
-## Prerequisites
-
-- Installation of Visual Studio Code that's configured for C# application development, including C# Dev Kit
-- Experience with the VS Code editor
-- Ability to develop C# console applications that implement business logic using loops, if statements, properties, and methods
-- Experience with basic C# syntax rules
+- Create a console application.
+- Create an Ant class, add properties and methods, and a constructor.
+- Read user input in a loop.
