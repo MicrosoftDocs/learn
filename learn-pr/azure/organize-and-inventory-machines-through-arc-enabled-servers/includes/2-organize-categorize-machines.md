@@ -14,7 +14,7 @@ Azure provides four levels of management:
 
 These levels of management help to manage access, policies, and compliance more efficiently. For example, if you apply a policy at one level, it propagates down to lower levels, helping improve governance posture. Moreover, these levels can be used to scope policies and security controls. For Arc-enabled servers, the different business units, applications, or workloads can be used to derive the hierarchical structure in Azure. Once resources have been onboarded to Azure Arc, you can seamlessly move an Arc-enabled server between different resource groups and scopes
 
-:::image type="content" source="../media/management-levels.png" alt-text="Flow chart of Azure management levels":::
+:::image type="content" source="../media/management-levels.png" alt-text="Flow chart of Azure management levels.":::
 
 ### Creating management structures
 
