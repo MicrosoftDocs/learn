@@ -30790,6 +30790,91 @@
       "source_path": "learn-pr/technical-support/intro-to-azure-incident-readiness/7-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-incident-readiness/7-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/2-discover-classes.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/5-examine-class-lifecycle.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/3-exercise-examine-classes-objects.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/6-learn-class-constructors.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/4-learn-encapsulation.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/7-understand-namespaces.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-properties-within-class/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-properties-within-class/2-define-class-properties.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-properties-within-class/4-examine-reference-type-properties.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-properties-within-class/3-exercise-control-access-properties.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-properties-within-class/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-properties-within-class/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-properties-within-class/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
     }
   ]
 }
