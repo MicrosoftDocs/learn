@@ -90,7 +90,7 @@ Can you guide me on how to create the calendar of emotions on react native?
 
 As a student you have free access to [GitHub Copilot](https://education.github.com/pack?WT.mc_id=academic-114050-bethanycheum) your AI-powered coding buddy as you bring your MVP to life. You can use GitHub Copilot on various IDEs including Visual Studio, JetBrains, Neovim and Visual Studio Code.
 
-But before you leave to create your awesome project, finish this module to identify more opportunities for you to share your project globally in a global student competition and access founders' programs for moreadditional support to launch your own startup.
+But before you leave to create your awesome project, finish this module to identify more opportunities for you to share your project globally in a global student competition and access founders' programs for more support to launch your own startup.
 
 ## Step 4: Free deployment services to share your project with others
 
