@@ -3,6 +3,8 @@
 
 Cost optimization is conducted at various levels of the organization. It's important to understand how your workload is aligned with organizational goals and FinOps practices. A view into the business units, resource organization, and centralized audit policies allows you to apply a standardized financial system and approach to your workload.
 
+**Example scenario**
+
 Contoso organizes and hosts trade shows. Contoso sees an opportunity to gain efficiencies with their ticket sales process for trade shows by developing a mobile app in-house. The scenarios below follow the development process from ideation through implementation, focusing on cost optimization concerns. The mobile app is a web app written in .NET that is hosted on Azure App Service infrastructure and uses Azure SQL Database for its database.
 
 ## Develop a cost model
@@ -11,7 +13,7 @@ Contoso organizes and hosts trade shows. Contoso sees an opportunity to gain eff
 
 A cost model helps segment expenses and estimate and forecast the total cost of ownership, including infrastructure, support, and implementation. It enables you to identify cost drivers early and predict how usage growth or shrinkage will affect overall revenue and spending in your projected business model for the workload.
 
-*Challenge*
+*Contoso's challenge*
 
 - Going into the ideation phase, the workload team cannot predict what the total cost of ownership for delivering an experience like this might be, especially as a ticketing system usually deals with burst demand. They know they want to start small and grow over time, but they don't know how to model this to predict the cost of an incremental approach to building and maintaining the workload. 
 - Without these initial estimates, it will be hard to get initial funding for the project and predict long term funding needs.
@@ -30,7 +32,7 @@ A cost model helps segment expenses and estimate and forecast the total cost of 
 
 You'll be able to set financial boundaries and establish ways to check your spending against the allocated budget. You'll also get notifications when certain thresholds are exceeded, which prevents overspending at the tenant scope, resource scope, and other scopes that are applied to the budget.
 
-*Challenge*
+*Contoso's challenge*
 
 - In this scenario, the app is in the design phase and initial resource SKUs have been determined.
 - Contoso needs to allocate funding to the mobile ticketing workload.
@@ -50,7 +52,7 @@ You'll be able to set financial boundaries and establish ways to check your spen
 
 Costs are reduced when you act on feedback, which should be considered as meaningful as numeric data. You'll empower employees by using their input to drive realistic design changes and business strategies.
 
-*Challenge*
+*Contoso's challenge*
 
 - Contoso's mobile ticketing workload has been successfully implemented and is in production.
 - After analyzing the usage patterns over time, the workload team members find that the implementation isn't really as optimized for cost efficiency as it could be.

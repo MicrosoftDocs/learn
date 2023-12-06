@@ -5,6 +5,8 @@ What was important yesterday might not be important today. As you learn through 
 
 You should carefully assess the impact of all changes on cost. Monitor changes and the ROI trend on a regular cadence, and evaluate whether you need to adjust functional and nonfunctional requirements.
 
+**Example scenario**
+
 Contoso Air provides a baggage tracking solution for airlines. The workload is hosted in Azure and runs on AKS with Cosmos DB for its database and uses Event Hubs for messaging. The workload is deployed in the West US and the East US regions.
 
 ## Continuously evaluate and optimize your environment and support costs.
@@ -15,7 +17,7 @@ You'll reduce costs by avoiding paying for resources that aren't fully utilized.
 
 You might also be able to save some costs by evaluating the use of your support contracts with your technology suppliers and right-sizing them.
 
-*Challenge*
+*Contoso's challenge*
 
 - The workload team has always come in under budget, so optimization for cost efficiency hasn't been a priority.
 - They are planning to improve the workload's reliability next year and know that doing so will increase their Azure costs, likely pushing the workload over their budget. They are considering asking for an increased budget for next year.
@@ -33,7 +35,7 @@ You might also be able to save some costs by evaluating the use of your support 
 
 Regular reviews of metrics, performance data, billing reports, and feature usage might lead to fine-tuning that can reduce costs.
 
-*Challenge*
+*Contoso's challenge*
 
 - Since the team has stayed under budget historically, they haven't looked at alternative approaches to existing functionality. Instead, most of their planning focuses on building new features.
 - After finding waste through their initial evaluation, they decide to look at the rest of the current components to look for optimization opportunities.
@@ -51,7 +53,7 @@ You can save money by understanding that not all environments need to simulate p
 
 You also can save costs by creating pre-production environments on-demand and removing them when you no longer need them.
 
-*Challenge*
+*Contoso's challenge*
 
 - The workload team spends more on pre-production environments than it does on production environments. While this may be important for some scenarios, it seems excessive for this workload.
 - The pre-production environments have been built to match the production environment very closely. The workload team appreciates having a very close approximation of the production environment in the lower environments as it provides them a high degree of confidence that behaviors in production will match the lower environments.

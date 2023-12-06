@@ -5,6 +5,8 @@ Every architectural decision has direct and indirect financial implications. Und
 
 Given a set of requirements, optimize and make tradeoff decisions, in relation to costs, that still effectively address the cross-cutting concerns of the workload.
 
+**Example scenario**
+
 Contoso Manufacturing (CM). CM runs a custom-built warehouse management system (WMS) to handle its four warehouses across South America and they have decided that it is time to update the solution and move it to the cloud. They are considering a lift-and-shift move of the current solution or a greenfield build with modern cloud tools. CM's senior leadership wants to control costs and has asked the workload team's leaders how they will approach the migration with a goal of maintaining cost efficiency.
 
 The WMS solution is a .NET application running on IIS and uses SQL Server for its databases.
@@ -15,7 +17,7 @@ The WMS solution is a .NET application running on IIS and uses SQL Server for it
 
 Implementing a balanced approach that takes ROI into account prevents over-engineering, which might increase costs.
 
-*Challenge*
+*Contoso's challenge*
 
 - The workload engineering team is excited to get this workload into the cloud, joining other CM teams who have already been doing cloud-native development.
 - They are aware of the technical debt in the application and expect to address it by rewriting a significant amount of application code and moving to to new cloud-native solutions for many components.
@@ -33,7 +35,7 @@ Implementing a balanced approach that takes ROI into account prevents over-engin
 
 You'll be able to explore cheaper options that might enable resource flexibility or dynamic scaling, or you might justify the use of existing investments. The prioritization parameters might factor in costs that are required for critical workloads, runtime, and operations, and other costs that might help the team work more efficiently.
 
-*Challenge*
+*Contoso's challenge*
 
 - The existing workload is hosted on a hyper-converged (HCI) appliance and the team's cost center is charged back for compute, network, and storage costs.
 - The workload has deployed the pre-production and production environments on Windows virtual machines.
@@ -50,7 +52,7 @@ You'll be able to explore cheaper options that might enable resource flexibility
 
 Enforcement via governance policies or built-in application design patterns can prevent incidental or unapproved charges.
 
-*Challenge*
+*Contoso's challenge*
 
 - The existing system has no cost guardrails, but rarely changes so there has been little motivation to build such guardrails.
 - The owners of the HCI environment have set a resource limit that applies to this workload, effectively stopping the workload from consuming excess compute and storage resources.

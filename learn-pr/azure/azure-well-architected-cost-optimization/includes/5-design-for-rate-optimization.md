@@ -3,6 +3,8 @@
 
 Take advantage of opportunities to optimize the utility and costs of your existing resources and operations. If you don't, you unnecessarily spend money without any added ROI.
 
+**Example scenario**
+
 Contoso's business intelligence (BI) team hosts a suite of GraphQL APIs for various business units to access data stores across the organization without granting direct database access. They’ve been building these up over the years and found that versioning was important, so they have been exposing their APIs now over versioned endpoints on a single API Management gateway, using consumption billing.
 
 Behind the API Management instances are three AKS clusters that host the APIs that are exposed. One running a Windows node pool for APIs written in .NET 4.5, one Linux cluster for the APIs written in Java Spring, and one Linux they inherited from a prior team running dotnet core APIs. The clusters are now all owned by the BI team and are only used for these APIs. While managing three clusters isn’t ideal, they have been working as intended so have been left alone.
@@ -15,7 +17,7 @@ As a cost center in the business, the BI team is looking for ways to optimize it
 
 Consolidating your infrastructure will help you optimize your cloud costs. As density increases, the amount of resources that you need to run a workload decreases. This decrease reduces cost per unit and the cost of management.
 
-*Challenge*
+*Contoso's challenge*
 
 - The workload team has designed their AKS infrastructure according to the Microsoft baseline architecture guidance, which recommends running at least three nodes per cluster. This configuration has resulted in the team supporting nine system nodes across the three clusters.
 - The team applies patches and updates to the clusters three times per month.
@@ -35,7 +37,7 @@ Microsoft offers reduced rates for predictable and long-term commitment to speci
 
 By keeping your licensing team aware of the current and predicted investment by resource, you can help them right-size commitments when your organization signs the agreement. In some cases, these projections and commitments could influence your organization's price sheet, which benefits your workload's cost and also other teams that use the same technology.
 
-*Challenge*
+*Contoso's challenge*
 
 - Now that the team has consolidated onto one cluster, removing some of the excess compute and operational burden they previously absorbed, they are interested in finding additional measures to lower the cost of the cluster.
 - Because the BI team is happy with the AKS platform, they plan on continuing to use it for the foreseeable future, and likely will even grow its usage.
@@ -52,7 +54,7 @@ By keeping your licensing team aware of the current and predicted investment by 
 
 When utilization is high and predictable, the fixed-price model usually costs less and often supports more features. Using it could increase your ROI.
 
-*Challenge*
+*Contoso's challenge*
 
 - The API Management instances are all configured for consumption-based billing currently. After evaluating the APIs' usage patterns, they understand that the APIs are used globally and sometimes quite heavily. The team decides to analyze the cost differences between the current billing model and a fixed-price model.
 
