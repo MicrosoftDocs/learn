@@ -5,7 +5,7 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
-- uid: learn.monitor-vm-performance-using-azure-monitor-for-vms
+- uid: learn.monitor-vm-performance-using-azure-monitor-for-vms.badge
   type: badge
   title: Monitor performance of virtual machines by using Azure Monitor VM Insights
   summary: Monitor performance of virtual machines by using Azure Monitor VM Insights
