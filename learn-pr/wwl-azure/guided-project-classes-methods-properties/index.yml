@@ -3,7 +3,7 @@ uid: learn.wwl.guided-project-classes-methods-properties
 metadata:
   title: Guided project classes methods properties
   description: "This lesson describes building the LangtonsAnt project using classes and methods."
-  ms.date: 11/30/2023
+  ms.date: 12/06/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: module
@@ -13,6 +13,7 @@ title: Guided project classes methods properties
 summary: |
   This module guides you through the steps required to begin building the LangtonsAnts demonstration. It sets up the application and then begins adding the classes, methods, and properties the application requires.
   [!INCLUDE [](../../includes/wwl/guided-project-notes.md)]
+  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   After completing this module, you will be able to:
   *   Create a console application
