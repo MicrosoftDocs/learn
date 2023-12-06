@@ -2,7 +2,7 @@ Azure Arc enables organizations like Contoso to extend Azure capabilities to com
 
 Similarly, Contoso could use Azure Monitor to help monitor and manage their existing on-premises server resources that are connected through Azure Arc. Azure Monitor Container Insights can help Contoso collect health and resource utilization data for their Azure Arc-enabled Kubernetes clusters.
 
-:::image type="content" source="../media/5-insights-map.png" alt-text="Screenshot that depicts the Map tab on the Insights page for a VM in Azure. ContosoVM1 is displayed with details of open TCP ports. A VM summary is also displayed, detailing the VM's operating system, IP address, and links for Health, Machine properties, and Azure VM properties. Three buttons are displayed for access to Properties (selected), Log Events, Alerts, and Connections." border="false":::
+:::image type="content" source="../media/5-insights-map.png" alt-text="Screenshot that depicts the Map tab on the Insights page for a VM in Azure. ContosoVM1 is displayed with details of open TCP ports. A VM summary is also displayed." border="false" lightbox="../media/5-insights-map.png":::
 
 ## How can you use Azure Policy?
 
@@ -22,11 +22,11 @@ To manage and assign Azure Arc policies for a computer, browse to Azure Arc in t
 - Description
 - Policy enforcement (Enabled or Disabled)
 
-:::image type="content" source="../media/5-assign-policy.png" alt-text="The screenshot depicts the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies." border="false":::
+:::image type="content" source="../media/5-assign-policy.png" alt-text="The screenshot depicts the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies." border="false" lightbox="../media/5-assign-policy.png" :::
 
 After assigning policies, you can review the policy settings on the selected server from Azure Arc.
 
-:::image type="content" source="../media/5-review-policies.png" alt-text="The screenshot depicts the applied policies on ContosoVM1. Two policies are applied, and the VM is compliant with one but not the other." border="false":::
+:::image type="content" source="../media/5-review-policies.png" alt-text="The screenshot depicts the applied policies on ContosoVM1. Two policies are applied, and the VM is compliant with one but not the other." border="false" lightbox="../media/5-review-policies.png":::
 
 ## How can you use Azure Monitor?
 
@@ -47,4 +47,4 @@ Deploying the Azure Monitor agent to your Arc-enabled servers lets you do the fo
 
 For Azure Arc-enabled Kubernetes, you can use Container insights, a feature of Azure Monitor that monitors the performance and health of container workloads. Container insights helps to collects memory and processor metrics from controllers, nodes, and containers, in addition to gathering container logs. You can analyze the collected data for the different components in your Kubernetes clusters with a collection of views and pre-built workbooks.
 
-You can archive collected monitoring data in Azure Storage for long-term analysis or compliance purposes. You can also route this data to Azure Stream Analytics, or to other services, for further analysis.
+You can archive collected monitoring data in Azure Storage for long term analysis or compliance purposes. You can also route this data to Azure Stream Analytics, or to other services, for further analysis.

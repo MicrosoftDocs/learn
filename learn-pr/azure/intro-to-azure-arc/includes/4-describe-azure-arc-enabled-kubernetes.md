@@ -2,11 +2,11 @@ Contoso hosts Kubernetes clusters in multiple datacenters throughout the world, 
 
 ## What is Azure Arc-enabled Kubernetes?
 
-Using Azure Arc, you can connect Kubernetes clusters located anywhere to Azure. You can then manage these connected clusters in a consistent way, just as you would in Azure. Azure Arc-enabled Kubernetes lets you control the cluster configuration and workloads at scale using your Git repositories as the source of truth. This connection to Azure provides you with extensive management capabilities such as inventory, monitoring, policy compliance, security, user access, and more.
+Using Azure Arc, you can connect Kubernetes clusters located anywhere to Azure. You can then manage these connected clusters in a consistent way, just as you would in Azure. Azure Arc-enabled Kubernetes lets you control the cluster configuration and workloads at scale, using your Git repositories as the source of truth. This connection to Azure provides management capabilities such as inventory, monitoring, policy compliance, security, user access, and more.
 
 Azure Arc-enabled Kubernetes works with any Cloud Native Computing Foundation (CNCF) certified Kubernetes clusters. This includes clusters running on other public cloud providers and clusters running in on-premises datacenters.
 
-## Onboard Kubernetes cluster to Azure Arc
+## Onboard Kubernetes clusters to Azure Arc
 
 Similar to the way that you onboard servers to Azure Arc, you must deploy agents to your Kubernetes clusters in order to connect them. These agents are responsible for connecting to Azure, collecting Azure Arc logs and metrics, and managing configuration requests.
 
@@ -18,7 +18,7 @@ Each Kubernetes cluster that you enable with Azure Arc:
 - Appears in the Azure portal.
 - Can use tags and other Azure management features.
 
-:::image type="content" source="../media/4-kubernetes.png" alt-text="Screenshot of the Azure Arc Kubernetes clusters page in the Azure portal that displays a list of Kubernetes resources." border="false":::
+:::image type="content" source="../media/4-kubernetes.png" alt-text="Screenshot of the Azure Arc Kubernetes clusters page in the Azure portal that displays a list of Kubernetes resources." border="false" lightbox="../media/4-kubernetes.png" :::
 
 ## What can you do with Azure Arc-enabled Kubernetes?
 

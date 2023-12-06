@@ -7,7 +7,7 @@ Azure Arc-enabled servers allows you to manage all your servers as if they're Az
 - Physical computers.
 - VMs hosted in an on-premises datacenter.
 - VMs hosted with another cloud provider.
-- Running either Windows Server or many popular distributions of Linux.
+- Running either Windows Server or Linux. Many popular distributions of Linux are supported.
 
 ## Onboard servers to Azure Arc
 
@@ -23,7 +23,7 @@ Each server that you onboard:
 - Appears in the Azure portal.
 - Can use tags and other Azure management features.
 
-:::image type="content" source="../media/3-onboard.png" alt-text="Screenshot that depicts the Machines - Azure Arc page in the Azure portal. A single computer, ContosoVM1, is listed." border="false":::
+:::image type="content" source="../media/3-onboard.png" alt-text="Screenshot that depicts the Machines - Azure Arc page in the Azure portal. A single computer, ContosoVM1, is listed." border="false" lightbox="../media/3-onboard.png":::
 
 Once installed, the Azure Connected Machine agent sends a heartbeat message to the Azure Arc service every five minutes. If the Azure Arc service stops receiving heartbeat messages from the connected machine, it considers the machine to be offline. The machine is then marked as **Disconnected** until heartbeats resume, at which time the machine is marked as **Connected**.
 

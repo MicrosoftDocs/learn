@@ -25,5 +25,5 @@ The Azure Arc-enabled SQL Managed Instance operates on any supported Kubernetes 
 To run the services in direct connected mode, you must:
 
 - Have access to a Kubernetes cluster that is sized appropriately for your workload.
-- Use a supported Azure CLI version (>= 2.16.0 and <= 2.29.0).
+- Use a supported Azure CLI version.
 - Add the `arcdata` and associated `k8s` CLI extensions.

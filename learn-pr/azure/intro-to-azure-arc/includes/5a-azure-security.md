@@ -15,7 +15,7 @@ Through Azure Arc, these benefits can extend to servers across Contoso's hybrid 
 
 Microsoft Sentinel comes with several connectors for Microsoft solutions available out of the box and providing real-time integration. For physical and virtual machines, you install the Log Analytics agent that collects the logs and forwards them to Microsoft Sentinel.
 
-After your Azure Arc-enabled servers have been connected to the Log Analytics workspace, with Microsoft Sentinel enabled, you can set up data connectors to start ingesting logs.
+After your Azure Arc-enabled servers have been connected to the Log Analytics workspace and Microsoft Sentinel has been enabled, you can set up data connectors to start ingesting logs.
 
 Contoso can use Microsoft Sentinel's threat detection templates to create their own rules for detecting suspicious activity. These rule templates are based on known threats and common attack vectors, allowing Contoso to create specific rules to automatically search their environment for threats. Templates can be customized to search for activities or filter them out as needed.
 

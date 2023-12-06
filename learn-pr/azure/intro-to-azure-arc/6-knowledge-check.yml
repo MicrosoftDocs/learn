@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-azure-arc.6-knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 12/08/2023
+  ms.date: 12/07/2023
   author: JnHs
   ms.author: jenhayes
   ms.topic: unit
@@ -24,12 +24,12 @@ quiz:
     - content: "Create a Kubernetes cluster on the server, then connect that cluster to Azure Arc."
       isCorrect: false
       explanation: "Incorrect. You don't have to create a Kubernetes cluster in order to use Arc-enabled servers."
-    - content: "The administrator must install the Azure Connected Machine agent on the server for onboarding."
+    - content: "Install the Azure Connected Machine agent on the server."
       isCorrect: true
       explanation: "Correct. The Azure Connected Machine agent enables you to manage on-premises computers in Azure."
 
 
-  - content: "Which of these Azure services can an organization implement for threat detection and security incident response?"
+  - content: "Which of these services enables threat detection and security incident response for Arc-enabled servers?"
     choices:
     - content: "Azure Policy."
       isCorrect: false
