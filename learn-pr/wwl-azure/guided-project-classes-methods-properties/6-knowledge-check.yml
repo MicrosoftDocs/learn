@@ -16,7 +16,7 @@ quiz:
     choices:
     - content: "An application that consoles you and makes you feel better."
       isCorrect: false
-      explanation: "Incorrect. The answer implies a misunderstanding of the word console and how it is used in the context of a console applicatiopn."
+      explanation: "Incorrect. The answer implies a misunderstanding of the word console and how it is used in the context of a console application."
     - content: "An application that creates a graphical user interface, also called a GUI."
       isCorrect: false
       explanation: "Incorrect. A console application displays its output as text, not as a GUI."

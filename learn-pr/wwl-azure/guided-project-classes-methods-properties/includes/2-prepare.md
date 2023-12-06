@@ -1,8 +1,8 @@
-You’ll use the VS Code Editor as your code development environment. You create a console application and write code to create a class that has a constructor and properties. The class also reads user input.
+You use the VS Code Editor as your code development environment. You create a console application and write code to create a class that has a constructor and properties. The class also reads user input.
 
 ## Project overview
 
-You’re developing an application that demonstrates Langton’s Ant, which is based on the concept of a universal Turing machine invented by mathematician Alan Turing. The application showcases the computation logic that Mr. Turing came up with. To create the demonstration, you’ll need to create an ant and define its movement rules using inputs from the grid. Mr. Turing’s universal machine is still used as a model for how computers work today from a logical standpoint.
+You’re developing an application that demonstrates Langton’s Ant, which is based on the concept of a universal Turing machine invented by mathematician Alan Turing. The application showcases the computation logic that Mr. Turing came up with. To create the demonstration, you need to create an ant and define its movement rules using inputs from the grid. Mr. Turing’s universal machine is still used as a model for how computers work today from a logical standpoint.
 
 The application simulates ants on a grid and their movements. Along the way, you create classes, methods, and properties that model your application.
 
