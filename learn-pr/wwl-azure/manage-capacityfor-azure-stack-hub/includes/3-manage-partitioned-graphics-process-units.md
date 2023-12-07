@@ -20,7 +20,7 @@ NCv3-series virtual machines are powered by NVIDIA Tesla V100 GPUs. Customers ca
 
 ## NVv4
 
-The NVv4-series virtual machines are powered by [AMD Radeon Instinct MI25](https://www.amd.com/en/products/professional-graphics/instinct-MI25) GPUs. With NVv4-series Azure Stack Hub is introducing virtual machines with partial GPUs. This size can be used for GPU accelerated graphics applications and virtual desktops. NVv4 virtual machines currently support only Windows guest operating system.
+The NVv4-series virtual machines are powered by AMD Radeon Instinct MI25 GPUs. With NVv4-series Azure Stack Hub is introducing virtual machines with partial GPUs. This size can be used for GPU accelerated graphics applications and virtual desktops. NVv4 virtual machines currently support only Windows guest operating system.
 
 :::row:::
   :::column:::
