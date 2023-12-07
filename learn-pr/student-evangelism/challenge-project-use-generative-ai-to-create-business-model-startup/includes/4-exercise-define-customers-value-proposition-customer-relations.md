@@ -62,7 +62,7 @@ Please use bullet points to simply list out a short phrase of each value proposi
 
 Below is a sample response from Bing Chat.
 
-![Screenshot showing sample response on value proposition editted.](../media/value-proposition-edited.png)
+![Screenshot showing sample response on value proposition edited.](../media/value-proposition-edited.png)
 
 ## Customer Relations
 
