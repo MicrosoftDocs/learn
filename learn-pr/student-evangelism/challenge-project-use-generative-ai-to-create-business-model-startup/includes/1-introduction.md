@@ -9,9 +9,7 @@ Put on your learning gear and join this challenge where you'll be **creating a B
 
 **Your goal** is to create a PowerPoint Deck/ Video that will communicate your business strategy with AI generated content. A Deck template is provided to you, and with each step of the challenge, you'll fill a respective slide on the Deck to accelerate your output.
 
-See an example of a finished project that was created on PowerPoint and exported as a video.
-
-[![Screenshot showing an introduction to a startup called wildsense.](../media/wildsense-intro.png)](https://youtu.be/LCa1FWKZfNg)
+![Screenshot showing an introduction slide to a startup called wildsense.](../media/wildsense-intro.png)
 
 > [!NOTE]
 > In this challenge project, you will use Bing Chat to create a Business Model for your existing startup or a fictitious startup.
