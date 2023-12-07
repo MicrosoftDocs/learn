@@ -28,11 +28,11 @@ quiz:
   - content: "What is the Brainwriting tecnique?"
     choices:
       - content: “It is a technique for rapid idea generation that involves writing down and sharing ideas in the group.” 
-      isCorrect: true 
-      explanation: “This is the correct definition of brainwriting.”
+        isCorrect: true 
+        explanation: “This is the correct definition of brainwriting.”
       - content: “It is a technique for evaluating and selecting the best ideas from a pool of generated ideas.” 
-      isCorrect: false 
-      explanation: “This is not the definition of brainwriting, but rather a description of another ideation technique.”
+        isCorrect: false 
+        explanation: “This is not the definition of brainwriting, but rather a description of another ideation technique.”
       - content: “It is a technique for prototyping and testing the most promising ideas with users and stakeholders.” 
-      isCorrect: false 
-      explanation: “This is not the definition of brainwriting, but rather a description of another ideation technique called rapid prototyping.”
+        isCorrect: false 
+        explanation: “This is not the definition of brainwriting, but rather a description of another ideation technique called rapid prototyping.”

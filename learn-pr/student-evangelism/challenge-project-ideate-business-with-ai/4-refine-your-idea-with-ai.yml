@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.challenge-project-use-generative-ai-to-ideate.refine-your-idea-with-ai
+uid: learn.challenge-project-use-generative-ai-to-ideate.refine-idea-with-ai
 title: Refine your idea with AI
 metadata:
   title: Refine your idea with AI
@@ -12,4 +12,4 @@ metadata:
   ms.service: bing
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-refine-your-idea-with-ai.md)]
+  [!include[](includes/4-refine-idea-with-ai.md)]
