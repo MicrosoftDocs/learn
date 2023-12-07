@@ -1,5 +1,5 @@
 
-Before jumping straight to the solution, a key step for the startup is to identify which customers the company tries to serve through its products and services. Remember, you can't really have any startup/ business without customers. With your idea in mind, think about the needs of your most important users and their attributes including demographics and categorization. Your most important customers could be: -
+Before jumping straight to the solution, a key step for the startup is to identify which customers the company tries to serve through its products and services. Remember, you can't really have any startup/ business without customers. With your idea in mind, think about the needs of your most important users and their attributes including demographics and categorization. Your most important customers could be:
 
 1. **A mass market** - Your product considered to serve a wide view of potential users with no specific attributes.
 1. **A niche market** - Your product is customized for uses with a specialized need and characteristics.
@@ -62,7 +62,7 @@ Please use bullet points to simply list out a short phrase of each value proposi
 
 Below is a sample response from Bing Chat.
 
-![Screenshot showing sample response on value proposition editted.](../media/value-proposition-editted.png)
+![Screenshot showing sample response on value proposition edited.](../media/value-proposition-edited.png)
 
 ## Customer Relations
 
