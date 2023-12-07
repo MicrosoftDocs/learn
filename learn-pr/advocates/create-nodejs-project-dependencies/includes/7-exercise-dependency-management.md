@@ -52,68 +52,68 @@ Tailwind Traders has asked you to work on an app that has some outdated dependen
 ## npm audit
 
 
-1. To understand if there are any vulnerabilities, run this command:
+To understand if there are any vulnerabilities, run this command:
 
-   ```bash
-   npm audit
-   ```
+```bash
+npm audit
+```
 
-   You should see output similar to this example:
+You should see output similar to this example:
 
-   ```output
-    # npm audit report
-    
-    lodash  <=4.17.20
-    Severity: critical
-    Regular Expression Denial of Service (ReDoS) in lodash - https://github.com/advisories/GHSA-x5rq-j2xg-h7qm
-    Prototype Pollution in lodash - https://github.com/advisories/GHSA-fvqr-27wr-82fm
-    Prototype Pollution in lodash - https://github.com/advisories/GHSA-jf85-cpcp-j695
-    Command Injection in lodash - https://github.com/advisories/GHSA-35jh-r3h4-6jhm
-    Prototype Pollution in lodash - https://github.com/advisories/GHSA-4xc9-xhrj-v574
-    Regular Expression Denial of Service (ReDoS) in lodash - https://github.com/advisories/GHSA-29mw-wpgm-hmr9
-    fix available via `npm audit fix --force`
-    Will install lodash@4.17.21, which is a breaking change
-    node_modules/lodash
-    
-    node-fetch  <=2.6.6
-    Severity: high
-    The `size` option isn't honored after following a redirect in node-fetch - https://github.com/advisories/GHSA-w7rc-rwvf-8q5r
-    node-fetch forwards secure headers to untrusted sites - https://github.com/advisories/GHSA-r683-j2x4-v87g
-    fix available via `npm audit fix --force`
-    Will install node-fetch@3.3.2, which is a breaking change
-    node_modules/node-fetch
-    
-    2 vulnerabilities (1 high, 1 critical)
-    
-    To address all issues (including breaking changes), run:
-      npm audit fix --force
-   ```
+```output
+# npm audit report
 
-   The output states the vulnerabilities and the version of the package that fixes the issue. 
-    
-    ```
-    Will install lodash@4.17.21, which is a breaking change
-    Will install node-fetch@3.3.2, which is a breaking change
-    ```
+lodash  <=4.17.20
+Severity: critical
+Regular Expression Denial of Service (ReDoS) in lodash - https://github.com/advisories/GHSA-x5rq-j2xg-h7qm
+Prototype Pollution in lodash - https://github.com/advisories/GHSA-fvqr-27wr-82fm
+Prototype Pollution in lodash - https://github.com/advisories/GHSA-jf85-cpcp-j695
+Command Injection in lodash - https://github.com/advisories/GHSA-35jh-r3h4-6jhm
+Prototype Pollution in lodash - https://github.com/advisories/GHSA-4xc9-xhrj-v574
+Regular Expression Denial of Service (ReDoS) in lodash - https://github.com/advisories/GHSA-29mw-wpgm-hmr9
+fix available via `npm audit fix --force`
+Will install lodash@4.17.21, which is a breaking change
+node_modules/lodash
+
+node-fetch  <=2.6.6
+Severity: high
+The `size` option isn't honored after following a redirect in node-fetch - https://github.com/advisories/GHSA-w7rc-rwvf-8q5r
+node-fetch forwards secure headers to untrusted sites - https://github.com/advisories/GHSA-r683-j2x4-v87g
+fix available via `npm audit fix --force`
+Will install node-fetch@3.3.2, which is a breaking change
+node_modules/node-fetch
+
+2 vulnerabilities (1 high, 1 critical)
+
+To address all issues (including breaking changes), run:
+npm audit fix --force
+```
+
+The output states the vulnerabilities and the version of the package that fixes the issue. 
+   
+```
+Will install lodash@4.17.21, which is a breaking change
+Will install node-fetch@3.3.2, which is a breaking change
+```
 
 
 ## npm outdated
 
-1. In the terminal, run this command to check for outdated dependencies:
+In the terminal, run this command to check for outdated dependencies:
 
-   ```bash
-   npm outdated
-   ```
+```bash
+npm outdated
+```
 
-   You should see output similar to this example:
+You should see output similar to this example:
 
-   ```output
-    Package     Current  Wanted   Latest  Location                 Depended by
-    lodash        1.3.1   1.3.1  4.17.21  node_modules/lodash      7-exercise-dependency-management
-    node-fetch    1.7.3   1.7.3    3.3.2  node_modules/node-fetch  7-exercise-dependency-management
-   ```
+```output
+Package     Current  Wanted   Latest  Location                 Depended by
+lodash        1.3.1   1.3.1  4.17.21  node_modules/lodash      7-exercise-dependency-management
+node-fetch    1.7.3   1.7.3    3.3.2  node_modules/node-fetch  7-exercise-dependency-management
+```
 
-    The current and wanted versions are the same, but the latest version is different. The semantic update strategy specified in the `package.json` has been met but the vulnerabilities still exist. 
+The current and wanted versions are the same, but the latest version is different. The semantic update strategy specified in the `package.json` has been met but the vulnerabilities still exist. 
 
 ## npm update
 
