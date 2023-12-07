@@ -1,4 +1,3 @@
-
 Entitlement management is an identity governance feature that enables organizations to manage the identity and access lifecycle at scale. Entitlement management automates access request workflows, access assignments, reviews, and expiration.
 
 - Users may not know what access they should have, and even if they do, they might have difficulty locating the right individuals to approve it.
