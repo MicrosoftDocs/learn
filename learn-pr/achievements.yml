@@ -2617,3 +2617,13 @@ achievements:
   summary: >-
     Your goal was to learn about the differences between a class and an object and how a class is the blueprint for an object. You then went on to learn about encapsulation (or data hiding in a class) and an object's lifecycle. The term lifecycle refers to the allocation and deallocation of memory for an object. You learned about constructors and that they're used to initialize values in an object. Finally, you learned that namespaces are used to organize your classes into groups to avoid collisions of resources that may have the same name.
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.create-classes.badge
+  type: badge
+  title: Create classes and objects in C#
+  summary: The purpose of this module is to learn about classes and objects and to understand the differences between the two.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.implement-properties-within-class.badge
+  type: badge
+  title: Implement properties within a class
+  summary: This module discusses the use of properties and the concepts of read-write, read-only, and write-only properties. The concepts of declaring and passing variable by reference and by value are also introduced.
+  iconUrl: /training/achievements/generic-badge.svg
