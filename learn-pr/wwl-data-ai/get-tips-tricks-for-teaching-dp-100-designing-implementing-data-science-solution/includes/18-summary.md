@@ -10,4 +10,4 @@ Supplemental Resources:
 - [Microsoft Technical Documentation](https://aka.ms/docs)
 - [Microsoft Whiteboard](https://aka.ms/whiteboard)
 - [DP-100 study guide](https://aka.ms/DP100-StudyGuide)
-- [Exam DP-100: Designing and Implementing a Data Science Solution on Azure](https://aka.ms/DP100exam)
+- [Exam DP-100: Designing and Implementing a Data Science Solution on Azure](/training/courses/dp-100t01)
