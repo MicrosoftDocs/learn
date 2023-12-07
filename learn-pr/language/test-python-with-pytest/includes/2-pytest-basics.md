@@ -1,6 +1,6 @@
 Let's get started testing with Pytest. As we've mentioned before, Pytest is highly configurable and can handle complex test suites. But it doesn't require much to start writing tests. In fact, the easier a framework allows you to write tests, the better. 
 
-By the end of this section you'll have everything you need to start writing your first tests and run them with Pytest.
+By the end of this section you should have everything you need to start writing your first tests and run them with Pytest.
 
 ## Conventions
 
@@ -10,10 +10,10 @@ There aren't hard rules about test files, test directories, or general testing l
 
 ### Tests directory and test files
 
-The main directory for tests is the _tests_ directory. You can place this directory at the root level of the project, but it is also not unusual to see it alongside code modules.
+The main directory for tests is the *tests* directory. You can place this directory at the root level of the project, but it's also not unusual to see it alongside code modules.
 
 > [!NOTE]
-> In this module we'll default to using _tests_ at the root of a project. 
+> In this module we'll default to using *tests* at the root of a project. 
 
 Let's see how the root of a small Python project named `jformat` looks:
 
@@ -28,19 +28,19 @@ Let's see how the root of a small Python project named `jformat` looks:
     └── test_main.py
 ```
 
-The _tests_ directory is at the root of the project with a single test file. In this case, the test file is called _test_main.py_. These are two critical conventions:
+The *tests* directory is at the root of the project with a single test file. In this case, the test file is called *test_main.py*. These are two critical conventions:
 
-- Use a _tests_ directory to place test files and nested test directories
-- Prefix test files with _test_. The prefix indicates the file contains test code.
+- Use a *tests* directory to place test files and nested test directories.
+- Prefix test files with *test*. The prefix indicates the file contains test code.
 
 > [!CAUTION]
-> Avoid using `test` (singular form) as the directory name. The `test` name is a Python module, so creating a directory named the same would override it. Always use the plural _tests_ instead.
+> Avoid using `test` (singular form) as the directory name. The `test` name is a Python module, so creating a directory named the same would override it. Always use the plural `tests` instead.
 
 ### Test functions
 
-One of the strong arguments to use Pytest is that it allows writing test functions. Similar to test files, function must be prefixed with `test_`. Using the `test_` prefix, you'll ensure that Pytest collects the test and executes it.
+One of the strong arguments to use Pytest is that it allows writing test functions. Similar to test files, functions must be prefixed with `test_`. Using the `test_` prefix, ensures that Pytest collects the test and executes it.
 
-The following is how a simple test function looks:
+Here's what a simple test function looks like:
 
 ```python
 def test_main():
@@ -52,7 +52,7 @@ def test_main():
 
 ### Test classes and test methods
 
-Similar to the conventions already mentioned, test classes and methods must be prefixed with `test`. 
+Similar to the conventions already mentioned, test classes and methods must be prefixed with `test`.
 
 Following other naming conventions in Python for classes and methods, this is how a small testing class that is checking usernames in an application would look like:
 
@@ -67,7 +67,6 @@ This is a core difference with Python's `unittest` library: there is no need to 
 
 - Test classes are prefixed with `Test`
 - Test methods are prefixed with `test_`
-
 
 ## Run tests
 
