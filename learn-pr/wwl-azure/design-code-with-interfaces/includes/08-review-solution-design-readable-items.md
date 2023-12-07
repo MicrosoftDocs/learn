@@ -84,7 +84,7 @@ This code is just "*one possible solution*" because you may have added line feed
 
 Regardless of minor code differences, you should have successfully created and implemented the `IReadable` interface with the `Read` and `MarkAsNew` methods and the `IsRead` property. And all readable items should be displayed when the "Readables" tab is clicked in the inventory, and the action buttons should update correctly.
 
-:::image type="content" source="../media/m-03-08-solution.png" alt-text="A snapshot of the inventory program for this module":::
+:::image type="content" source="../media/m-03-08-solution.png" alt-text="Screenshot of the inventory program for this module. The inventory contains scrolls.":::
 
 If you completed this challenge, congratulations! You've proven your mastery over interfaces! Continue on to the next unit to check your knowledge.
 

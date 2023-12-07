@@ -1,7 +1,5 @@
 Interfaces allow developers to create modular and flexible code. Since implementation details are abstract, many parts of a project can be updated or replaced independently, without affecting the rest of the code. Using interfaces can help prevent tightly coupled code.
 
-## Understand tightly coupled code
-
 Tightly coupled code occurs when there are strong dependencies between different parts of a program. When you modify a tightly coupled class, you need to update any code that uses that class. As a result, it can be challenging to make changes to one module without affecting others, and that comes with a higher risk of introducing accidental bugs.
 
 Take a moment to examine the code below:

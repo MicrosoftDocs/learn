@@ -2,11 +2,11 @@ Code challenges reinforce what you learned, and help you gain some confidence be
 
 The game designer is planning to add new items to the game. These items will include maps, scrolls, letters, and other texts. The designer wants to make sure that the player can read these items. The designer has asked you to add support for readable items.
 
-:::image type="content" source="../media/m-03-08-solution.png" alt-text="A snapshot of the inventory program for this module":::
+:::image type="content" source="../media/m-03-08-solution.png" alt-text="Screenshot of the inventory program for this module. The inventory contains scrolls.":::
 
 ## Challenge: Create Readable items
 
-1. Create a new "IReadable" interface. 
+1. Create a new `IReadable` interface. 
 
     Remember to include the namespace "M03_Design_Code_With_Interfaces.Items"
 
@@ -17,7 +17,7 @@ The game designer is planning to add new items to the game. These items will inc
 
 2. A `Scroll` class has been added for you to test your interface with.
 
-    Implement the IReadable interface on the `Scroll` class.
+    Implement the `IReadable` interface on the `Scroll` class.
 
 3. Open the **Model.cs** file and navigate to `GetItemAction` method.
 
