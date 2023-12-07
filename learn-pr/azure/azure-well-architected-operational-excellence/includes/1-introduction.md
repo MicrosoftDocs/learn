@@ -1,17 +1,28 @@
-When you analyze your cloud-based solutions, you should be asking yourself a series of questions that help you determine whether your applications are following operational best practices. For example: how operationally mature is your cloud environment? Are you incorporating modern practices such as DevOps into the way your organization operates? Are you able to assess the health of your infrastructure? Are adverse events visible and actionable? Are you provisioning resources manually, or have you automated them to reduce risk and increase efficiency?
+The Azure Well-Architected Framework is a design framework that can improve the quality of a workload by helping it to:
 
-In this module, you learn about the *Operational Excellence* pillar of the Azure Well-Architected Framework, which allows you to answer these types of questions and improve the operations of your Azure cloud deployments. The concepts discussed in this module aren't all-inclusive, but they represent some of the important considerations when building a solution on the cloud. For more details on the Azure Well-Architected Framework, visit the [Azure Architecture Center](/azure/architecture/framework?azure-portal=true) as you start planning and designing your architecture.
+- Be resilient, available, and recoverable.
+- Be as secure as you need it to be.
+- Deliver a sufficient return on investment.
+- Support responsible development and operations.
+- Accomplish its purpose within acceptable timeframes.
+
+Yada yada yada
+
+The concepts described in this module are not all-inclusive of security in a workload, but they represent the core principles and some of their key approaches when you're designing a workload. For a complete perspective, across all of the Well-Architected Framework pillars, visit the [Azure Well-Architected Framework](/azure/well-architected) as you start planning and designing your architecure.
+
+Each unit in this module focuses on one design principle and three approaches associated with that principle. The approaches in each unit are supported through the use of examples to help demonstrate how they can be applied to real-world scenarios. The examples are all based on a fictional company.
 
 ## Learning objectives
 
-By the end of this module, you're able to:
+By the end of this module, you'll understand the five principles of the Security pillar and learn three approaches for each of the following:
 
-- Apply modern practices to design, build, and orchestrate resources on Azure.
-- Gain operational insights by using monitoring and analytics.
-- Reduce effort and error by using automation.
-- Identify issues and improve quality in your application by using tests.
+- 1
+- 2
+- 3
+- 4
+- 5
 
-## Prerequisites
+## Prequisites
 
-- Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking.
-- Experience building or operating technology systems to solve business problems.
+- Experience building or operating solutions by using core infrastructure technology such as data storage, compute, and networking
+- Experience building or operating technology systems to solve business problems
