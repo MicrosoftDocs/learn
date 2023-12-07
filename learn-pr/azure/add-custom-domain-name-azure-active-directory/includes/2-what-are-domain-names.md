@@ -14,11 +14,11 @@ Azure provides the default domain name onmicrosoft.com to all Microsoft Entra or
 
 You can associate a domain name that your company owns with Microsoft Entra ID to make the sign-in names more memorable and identifiable for your organization. In Microsoft Entra ID, you can add your domain name as a custom domain name. For our scenario, let's say your company owns proseware.com. If you add that domain name as a custom domain in Microsoft Entra ID, your users will sign in with names in the format *username*@proseware.com.
 
-After users sign in, Microsoft Entra ID's access-management features control their access to external Microsoft services. Such services include Microsoft 365 and the Azure portal. With Microsoft Entra ID, users can also access your company's internal resources, like intranets and cloud apps developed in-house.
+After users sign in, Microsoft Entra ID's access-management features control their access to external Microsoft services such as Microsoft 365 and the Azure portal. With Microsoft Entra ID, users can also access your company's internal resources, like intranets and cloud apps developed in-house.
 
 ## Buy a domain name
 
-You can buy a domain name by using Azure App Service domains or another domain name registrar. App Service domains are top-level domains that Azure directly manages. They make it easy to manage custom domains for App Service.
+You can buy a domain name by using Azure App Service domains or another domain-name registrar. App Service domains are top-level domains that Azure directly manages. They make it easy to manage custom domains for App Service.
 
 ## Add a domain name to Azure
 

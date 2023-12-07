@@ -2,7 +2,7 @@ You can add custom domain names to Microsoft Entra ID. After you add the domain 
 
 Your organization used Azure to develop and test a pilot project. It has now decided to make Azure available to the entire company. You're the organization's Global Administrator in Microsoft Entra ID. You're going to set up accounts for all your employees.
 
-You want to create usernames that are familiar to your users. Their Azure sign-in names need to be memorable. Also, their Microsoft Entra accounts should clearly be associated with your organization. You have a new custom domain name that your organization bought from a domain name registrar. Before you create the user accounts, you want to add your organization's custom domain name to Microsoft Entra ID.
+You want to create usernames that are familiar to your users. Their Azure sign-in names need to be memorable. Also, their Microsoft Entra accounts should clearly be associated with your organization. You have a new custom domain name that your organization bought from a domain-name registrar. Before you create the user accounts, you want to add your organization's custom domain name to Microsoft Entra ID.
 
 This module explains how Microsoft Entra ID supports custom domain names and shows how to add them. The final unit discusses some common problems you might encounter and how to solve them.
 

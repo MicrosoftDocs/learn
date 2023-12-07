@@ -6,4 +6,4 @@ By reducing the number of usernames your employees must remember, you improve th
 
 ## Learn more
 
-- [Take over an unmanaged directory as administrator in Microsoft Entra ID](/azure/active-directory/users-groups-roles/domains-admin-takeover)
+- [Take over an unmanaged directory as administrator in Microsoft Entra ID](/entra/identity/users/domains-admin-takeover)
