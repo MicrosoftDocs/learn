@@ -10,7 +10,7 @@ Check that you're using your personal profile in Microsoft Edge or that you're l
 
 We'll set up the two browser windows to work side by side throughout this challenge. Put the Challenge project on one side and Bing chat on the other one.
 
-![Screenshot showing split screen feature on Microsoft Edge.](../media/split-screen.png)
+![Screenshot showing split screen feature on Microsoft Edge.](../media/split-screen-feature.png)
 
 ## Go to Bing Chat
 
