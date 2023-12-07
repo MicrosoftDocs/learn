@@ -8,7 +8,6 @@ metadata:
   author: graememalcolm
   ms.author: gmalc
   ms.topic: unit
-  ms.prod: learning-azure
 durationInMinutes: 2
 content: |
   [!include[](includes/2-plan-responsible-ai.md)]

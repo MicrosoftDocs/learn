@@ -7,8 +7,7 @@ metadata:
   ms.date: 03/03/2022
   author: MGoedtel
   ms.author: magoedte
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 14
 content: |
   [!include[](includes/7-exercise-deploy-docker-image-to-container-instance.md)]

@@ -8,7 +8,6 @@ metadata:
   author: fbsolo-ms1
   ms.author: franksolomon
   ms.topic: unit
-  ms.prod: learning-azure
 durationInMinutes: 8
 sandbox: true
 notebook: notebooks/3-3-exercise-detect-visualize-missing-data.ipynb

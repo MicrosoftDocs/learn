@@ -1,0 +1,27 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-classes-properties-method.use-properties-methods
+title: Use properties and methods
+metadata:
+  title: Use properties and methods
+  description: "This unit talks about how properties and methods are used."
+  ms.date: 12/04/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-use-properties-methods.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When are the `get` and `set` methods for a property called?"
+    choices:
+    - content: "When an object is first created."
+      isCorrect: false
+      explanation: "Incorrect. They can be called at any time."
+    - content: "When there isn't time to create a method."
+      isCorrect: false
+      explanation: "Incorrect. Time is not a valid reason to choose to create a property."
+    - content: "When there's a need to get or set the state of your object."
+      isCorrect: true
+      explanation: "Correct! They're used to get basic state or status information in and/or out of an object."

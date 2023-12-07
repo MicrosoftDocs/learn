@@ -7,8 +7,7 @@ metadata:
   ms.date: 05/15/2023
   author: sgsneha
   ms.author: sudhirsneha
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/7-azure-migration-programs.md)]
