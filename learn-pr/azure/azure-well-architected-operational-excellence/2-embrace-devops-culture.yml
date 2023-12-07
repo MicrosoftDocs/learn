@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/embrace-devops-culture.md)]
+  [!include[](includes/2-embrace-devops-culture.md)]
 quiz:
   title: Check your knowledge
   questions:

@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/adopt-safe-deployment-practices.md)]
+  [!include[](includes/7-adopt-safe-deployment-practices.md)]
 quiz:
   title: Check your knowledge
   questions:

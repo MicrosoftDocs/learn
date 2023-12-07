@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/deploy-with-confidence.md)]
+  [!include[](includes/5-deploy-with-confidence.md)]
 quiz:
   title: Check your knowledge
   questions:

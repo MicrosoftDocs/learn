@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/establish-development-standards.md)]
+  [!include[](includes/3-establish-development-standards.md)]
 quiz:
   title: Check your knowledge
   questions:

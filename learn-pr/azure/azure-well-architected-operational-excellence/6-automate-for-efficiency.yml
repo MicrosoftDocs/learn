@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/automate-for-efficiency.md)]
+  [!include[](includes/6-automate-for-efficiency.md)]
 quiz:
   title: Check your knowledge
   questions:
