@@ -1,4 +1,4 @@
-You' use Visual Studio to develop a Langston's Ant project. 
+You use Visual Studio to develop a Langston's Ant project. 
 
 ## Project overview
 
