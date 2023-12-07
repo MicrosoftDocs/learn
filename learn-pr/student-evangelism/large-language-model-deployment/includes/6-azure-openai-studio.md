@@ -1,20 +1,20 @@
-Playgrounds are useful interfaces in Azure OpenAI Studio that you can use to experiment with your deployed models without needing to develop your own client application.
+Playgrounds in Azure OpenAI Studio are useful interfaces that you can use to experiment with your deployed models without needing to create your own client application.
 
 ## Completions playground
 
-The Completions playground allows you to make calls to, and adjust the parameters of, your deployed model through a text-in/text-out interface. Select the deployment name of your model under Deployments. Optionally, you can use the provided examples to get you started, and then you can enter your own prompts.
+The Completions playground allows you to make calls to your deployed model and adjust its parameters by using a text-in/text-out interface. Select the deployment name of your model under **Deployments**. If you're not sure where to start, you can use the provided examples and then you can enter your own prompts when you're more comfortable.
 
 :::image type="content" source="../media/completions-playground.png" alt-text="Screenshot of the Azure OpenAI Studio portal's completions playground.":::
 
-## LLMs' capabilities
+## LLM capabilities
 
-An LLM has built-in capabilities that you can use without training it further. LLMs can do more than generate new words, they're also capable of the following behavior:
+LLMs have built-in capabilities that you can use without extra training. LLMs can do more than generate new words, they're also capable of the following behavior:
 
 - **Extracting information**: You can provide an LLM with some text and ask it to extract specific pieces of information from that text. For example, if you provide the LLM with this text:
 
   *"Hello, my name is Robert Smith"*
 
-  Ask it to *extract the person's name* from this text and it returns:
+  Ask it to *extract the person's name* from this text, and it returns:
 
   *"Robert Smith"*
 
@@ -22,23 +22,23 @@ An LLM has built-in capabilities that you can use without training it further. L
 
   *"I like the following colors: red, green, and yellow. I also like the following food: macaroni, cheese, and honey"*
 
-  Ask it to summarize what you like in a table or JSON format and it returns:
+  Ask it to summarize what you like in a table or JSON format, and it returns:
 
   `{ "colors": ["red", "green", "yellow"], "food": ["macaroni", "cheese", "honey"] }`
 
-- **Classifying content**: You can provide an LLM with some text and ask it to classify the content to different known categories or even give it your own categories. For example, if you provide the LLM with this text:
+- **Classifying content**: You can provide an LLM with some text and ask it to classify the content into different known categories or even give it your own categories. For example, if you provide the LLM with this text:
 
   *"I loved your product it really helped me do what I wanted"*
 
-  Ask it whether this text was negative or positive and it returns:
+  Ask it whether this text was negative or positive, and it returns:
 
   "positive"
 
-- **Summarizing content**: You can provide an LLM with lots of text and ask it to summarize it for you. For example, if you provide the LLM with this text:
+- **Summarizing content**: You can provide an LLM with a chunk of text and ask it to summarize it for you. For example, if you provide the LLM with this text:
 
-  *"Hey James, I had a fun last weekend with you we spend lots of time playing on the beach. Let’s do that again soon! bye"*
+  *"Hey James, I had a fun last weekend with you we spend lots of time playing on the beach. Let’s do that again soon! Bye."*
 
-  Ask it to summarize what the person wants from you and it returns:
+  Ask it to summarize what the person wants from you, and it returns:
 
   "The person is asking James to spend time with them again soon"
 

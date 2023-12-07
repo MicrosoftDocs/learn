@@ -6,14 +6,9 @@ You might be familiar with natural language generative AI from applications like
 > In order to complete this exercise, you need the following:
 >
 > - An Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services).
-> - Access granted to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the form at [https://aka.ms/oai/access](https://aka.ms/oai/access).
-> - An Azure OpenAI resource with a model deployed. For more information about model deployment, see the [documentation here](/azure/ai-services/openai/how-to/create-resource)
+> - Access to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted only through applications. Apply for access to Azure OpenAI by completing this form: [https://aka.ms/oai/access](https://aka.ms/oai/access).
+> - An Azure OpenAI resource with a model deployed. For more information about model deployment, see the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource)
 >
-
-In this exercise, you'll:
-
-- Open the Azure OpenAI completions playground.
-- Use natural language to interact with a deployment.
 
 Let's get started by opening the [Azure OpenAI Completions playground](https://oai.azure.com/portal/playground) and selecting a model deployment.
 
@@ -23,7 +18,7 @@ Let's get started by opening the [Azure OpenAI Completions playground](https://o
 
 In this example, you'll learn how to extract information by using a prompt that consists of both a sample text and an instruction.
 
-1. Copy the following text and paste it into the completions text box.
+1. Copy and paste the following text into the completions text box:
 
     ```text
     Extract the person's name, company name, location and phone number from the text below.
@@ -32,7 +27,7 @@ In this example, you'll learn how to extract information by using a prompt that 
     
     ```
 
-1. Select **Generate**. You should see an output similar to this text:
+1. Select **Generate**. You should see a similar output:
 
     ```text
     
@@ -52,7 +47,7 @@ In this example, you combined a prompt with data to extract information using na
 
 In this next exercise, you'll ask your LLM to organize your text as a table, which shows that LLMs are capable of generating *and* formatting text.
 
-1. Clear the completions text box then copy the following text and paste it there.
+1. Clear the completions text box then copy and paste the following text:
 
     ```text
     
@@ -66,7 +61,7 @@ In this next exercise, you'll ask your LLM to organize your text as a table, whi
     
     ```
 
-1. Select **Generate**. You should see an output similar to this text:
+1. Select **Generate**. You should see a similar output:
 
     ```text
     
@@ -83,9 +78,9 @@ In this example, the model is primed with the desired output format: a header ro
 
 ### Try different formatting: JSON
 
-You've seen how an LLM can produce a table given some text. You can also ask an LLM to produce the data in JSON format.
+An LLM can produce a table given some text, but you can also ask an LLM to produce the data in JSON format.
 
-1. Clear the completions text box then copy the following text and paste it there.
+1. Clear the completions text box then copy and paste the following text:
 
     ```text
     
@@ -99,7 +94,7 @@ You've seen how an LLM can produce a table given some text. You can also ask an 
     
     ```
 
-1. Select **Generate**. You should see an output similar to this text:
+1. Select **Generate**. You should see a similar output:
 
     ```json
     
@@ -110,13 +105,13 @@ You've seen how an LLM can produce a table given some text. You can also ask an 
     
     ```
 
-In this example, the model returned a JSON array of the fruit and their attributes following the JSON format. It's important to remember that an LLM can both give you *what* you want and *how* you want it.
+In this example, the model returned a JSON array of the fruit and their attributes following the JSON format. It's important to remember that an LLM can both give you *what* you want *how* you want it.
 
 ## Classify content
 
 In this exercise, you'll use an LLM to sort your content into different categories.
 
-1. Clear the completions text box then copy the following text and paste it there:
+1. Clear the completions text box then copy and paste the following text:
 
     ```text
     
@@ -130,7 +125,7 @@ In this exercise, you'll use an LLM to sort your content into different categori
     
     ```
 
-1. Select **Generate**. You should see an output similar to this text:
+1. Select **Generate**. You should see a similar output:
 
     ```text
     
@@ -142,8 +137,8 @@ In this exercise, you'll use an LLM to sort your content into different categori
 In this example, you provided one example of a headline and a category and asked the model to classify a second example. This is an example of "one-shot learning": with just one example, the model can generalize to classify a new example.
 
 > [!NOTE]
-> You can modify headline 2 with other text to generate different categories.
-> Here are some headlines for you to try:
+> You can change headline 2 to generate different categories.
+> Here are some example headlines you can try:
 >
 > - Jets lose, again!
 > - Obama announces re-election bid
@@ -153,9 +148,9 @@ In this example, you provided one example of a headline and a category and asked
 
 ## Summarize content
 
-Summarizing content can be helpful if you want to quickly understand what a longer block of text says. This capability is built into the LLM.
+Summarized content can be helpful if you want to quickly understand what a longer block of text says. This capability is built into the LLM.
 
-1. Clear the completions text box then copy the following text and paste it there.
+1. Clear the completions text box then copy and paste the following text:
 
     ```text
     
@@ -167,7 +162,7 @@ Summarizing content can be helpful if you want to quickly understand what a long
     
     ```
 
-1. Select **Generate**. You should see an output similar to this text:
+1. Select **Generate**. You should see a similar output:
 
     ```text
     
@@ -175,19 +170,19 @@ Summarizing content can be helpful if you want to quickly understand what a long
     
     ```
 
-In this example, you used TL;DR (too long; didn't read) to make the model create a short summary of a larger piece of text.
+In this example, you used TL; DR (too long; didn't read) to make the model create a short summary of a larger piece of text.
 
 ## Generate novel content
 
-Even though the outputs are generated based on frequencies of similar content in the training data, generative AI models are capable of generating novel content that doesn't exist.
+Even though the outputs are generated based on frequency of similar content in the training data, generative AI models are capable of generating novel content that doesn't exist.
 
-1. Clear the completions text box then copy the following text and paste it there.
+1. Clear the completions text box then copy and paste the following text:
 
     ```text
     Write a limerick about the Python programming language
     ```
 
-1. Select **Generate**. You should see an output similar to this text:
+1. Select **Generate**. You should see a similar output:
 
     ```text
     There once was a language named Python

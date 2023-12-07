@@ -1,13 +1,11 @@
-In this module, you first learned about the Azure OpenAI cloud resource. The Cloud resource is something you need to have to use an LLM in the cloud.
+In this module, you learned about the Azure OpenAI cloud resource, which you must have in order to use an LLM in the cloud. You also practiced the deployment of a specific model you want to use. After a model is deployed on your cloud resource, you’re able to use it.
 
-Next, you explored deployments. A deployment is done on a specific model you want to use. After a model is deployed on your cloud resource, you’re able to use it.
+Finally, you learned to verify your deployment by using Azure OpenAI Studio. By testing out different prompts, you not only confirmed the success of your deployment, but also explored some capabilities LLMs can perform without the need for further training.
 
 Key takeaways from this module:
 
-- Azure OpenAI Service is a managed service that provides access to state-of-the-art natural language generative AI models. These models include ChatGPT and GPT-4 from OpenAI alongside the security and enterprise promise of Azure.
-- Azure OpenAI Service provides a simple REST API for accessing these models.
-
-Finally, you learned to verify your deployment by using Azure OpenAI Studio. You verified it by trying out various prompts that not only showed the deployment was successful but also showed some capabilities the LLM can perform without the need for further training.
+- Azure OpenAI Service is a managed service that provides access to state-of-the-art natural language generative AI models such as ChatGPT and GPT-4 as well as the security and enterprise promise of Azure.
+- Accessing these models is easy with the straightforward REST API provided by Azure OpenAI Service.
 
 ## Further reading
 
