@@ -2,6 +2,8 @@ An interface is a blueprint that specifies a set of methods and properties that 
 
 But how do you know when to use an interface? And how do you decide between using a regular class, inheriting from an existing class, using an abstract class, or creating an interface? This is a common question in many technical interviews. Let's explore some scenarios where interfaces are useful, and some scenarios where they should be avoided.
 
+## When to consider interfaces
+
 Here are some common scenarios you may encounter where you should consider using an interface:
 
 - <b>You're working on a project with other programmers</b><br/>

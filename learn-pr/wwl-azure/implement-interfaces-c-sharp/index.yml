@@ -2,8 +2,8 @@
 uid: learn.wwl.implement-interfaces-c-sharp
 metadata:
   title: Implement interfaces
-  description: "Implement interfaces"
-  ms.date: 12/01/2023
+  description: "In this module, you'll learn to extend classes with multiple interfaces, use interfaces as a type, and understand interface design practices."
+  ms.date: 12/07/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
@@ -35,7 +35,7 @@ products:
 - vs-ide
 units:
 - learn.wwl.implement-interfaces-c-sharp.introduction
-- learn.wwl.implement-interfaces-c-sharp.examine-interfaces-vs-abstract-classes
+- learn.wwl.implement-interfaces-c-sharp.examine-interfaces-and-abstract-classes
 - learn.wwl.implement-interfaces-c-sharp.when-use-interfaces
 - learn.wwl.implement-interfaces-c-sharp.exercise-implement-multiple-interfaces
 - learn.wwl.implement-interfaces-c-sharp.exercise-use-interfaces-type

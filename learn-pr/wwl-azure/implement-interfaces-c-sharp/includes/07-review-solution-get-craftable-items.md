@@ -19,11 +19,11 @@ The following code is one possible solution for the challenge from the previous 
     
     ```
 
-This code is just "*one possible solution*" because you may have added line feeds in different spots, written logic differently, used different variable names, or formatted the code differently.
+This code is just "*one possible solution*" because you might use line feeds in different spots, write logic differently, use different variable names, or format the code differently.
 
-Regardless of minor code differences, you should have checked if the items are of the `ICombinable` type before adding them to the list. When you run the code, clicking the "Craftables" button should update the inventory to display only craftable items.
+Regardless of minor code differences, you need to check if the items are of the `ICombinable` type before adding them to the list. When you run the code, clicking the "Craftables" button should update the inventory to display only craftable items.
 
-:::image type="content" source="../media/m-02-07-challenge.png" alt-text="A snapshot of the inventory program for this module.":::
+:::image type="content" source="../media/m-02-07-challenge.png" alt-text="Screenshot of the inventory program for this module. The inventory displays combinable items.":::
 
 If you completed this challenge, congratulations! You're one step closer to mastering interfaces! Continue on to the next unit to check your knowledge.
 
