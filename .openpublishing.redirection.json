@@ -30875,6 +30875,56 @@
       "source_path": "learn-pr/wwl-azure/implement-properties-within-class/6-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
       "redirect_document_id": false
-    }
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/use-classes-properties-method/index.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/use-classes-properties-method/1-introduction.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/use-classes-properties-method/2-instantiate-class.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/use-classes-properties-method/3-instantiate-class-parameterized-constructor.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/use-classes-properties-method/4-use-properties-methods.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/use-classes-properties-method/5-examine-static-properties-methods.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/use-classes-properties-method/6-exercise-use-classes-properties-methods.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/use-classes-properties-method/7-review-module-takeaways.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/use-classes-properties-method/8-knowledge-check.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/use-classes-properties-method/9-summary.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+    "redirect_document_id": false
+  }
   ]
 }
