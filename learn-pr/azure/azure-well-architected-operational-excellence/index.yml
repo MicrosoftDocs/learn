@@ -33,7 +33,7 @@ units:
 - learn.azure-well-architected-operational-excellence.1-introduction
 - learn.azure-well-architected-operational-excellence.2-embrace-devops-culture
 - learn.azure-well-architected-operational-excellence.3-establish-development-standards
-- learn.azure-well-architected-operational-excellence.4-evolve-operations-model-with-observability
+- learn.azure-well-architected-operational-excellence.4-evolve-operations-with-observability
 - learn.azure-well-architected-operational-excellence.5-deploy-with-confidence
 - learn.azure-well-architected-operational-excellence.6-automate-for-efficiency
 - learn.azure-well-architected-operational-excellence.7-adopt-safe-deployment-practices

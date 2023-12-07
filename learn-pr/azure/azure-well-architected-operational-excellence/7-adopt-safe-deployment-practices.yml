@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-(pillar-principle)
-title: Principle-name
+uid: learn.azure-well-architected-operational-excellence.7-adopt-safe-deployment-practices
+title: Adopt safe deployment practices
 metadata:
-  title: Principle-name
-  description: description
+  title: Adopt safe deployment practices
+  description: Learn how to adopt safe deployment practices to improve your operational excellence.
   ms.date: 12/05/2023
   author: claytonsiemens77
   ms.author: csiemens
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/md-name)]
+  [!include[](includes/adopt-safe-deployment-practices.md)]
 quiz:
   title: Check your knowledge
   questions:
