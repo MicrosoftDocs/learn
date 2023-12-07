@@ -13,7 +13,7 @@ abstract: |
  In this module, you'll learn how to: 
   - Provision an Azure OpenAI cloud resource.
   - Create a deployment for a specific LLM model.
-  - Experiment with different prompts to see what type of results an LLM can give me in different situations.
+  - Experiment with different prompts to see what type of results an LLM can provide in different situations.
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
@@ -26,7 +26,7 @@ units:
 - learn.large-language-model-deployment.introduction
 - learn.large-language-model-deployment.resource-provisioning
 - learn.large-language-model-deployment.provision-resource-exercise
-- learn.large-language-model-deployment.model-deployment
+- learn.large-language-model-deployment.deploy-model
 - learn.large-language-model-deployment.deployment-exercise
 - learn.large-language-model-deployment.azure-openai-studio
 - learn.large-language-model-deployment.try-model-exercise

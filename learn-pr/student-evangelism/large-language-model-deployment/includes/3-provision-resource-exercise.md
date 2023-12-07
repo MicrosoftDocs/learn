@@ -1,9 +1,9 @@
 In this exercise, you create an Azure OpenAI service that enables you to interact with different large language models (LLM). 
 
 > [!NOTE]
-> In order to complete this exercise, you need the following:
+> To complete this exercise, you need the following:
 >
-> - An Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services).
+> - An Azure subscription. [Create one for free](https://azure.microsoft.com/free/ai-services).
 > - Access to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted only through applications. Apply for access to Azure OpenAI by completing this form: [https://aka.ms/oai/access](https://aka.ms/oai/access).
 
 ## Provision a resource in the Azure portal
@@ -16,7 +16,7 @@ Complete the following steps to provision a resource in the Azure portal:
 
     :::image type="content" source="../media/search-openai.png" alt-text="Screenshot from the Azure portal with the search word, openai, and the search result, Azure OpenAI, highlighted in a red box.":::
 
-1. Select **Create** in the toolbar.
+1. Select **Create**.
 
     :::image type="content" source="../media/create-button.png" alt-text="Screenshot from the Azure portal with create Azure OpenAI highlighted in a red box.":::
 
@@ -24,11 +24,11 @@ Complete the following steps to provision a resource in the Azure portal:
 
     | **What** | **Comment**  |
     |---------|---------|
-    |Subscription    |The same subscription you used to apply for Azure OpenAI access.         |
-    |Resource Group     |Use an existing resource group or select to create a new one.          |
+    |Subscription    |Use the same subscription you used to apply for Azure OpenAI access.         |
+    |Resource Group     |Use an existing resource group or create a new one.          |
     |Region      |Select a region close to you for best response times.          |
     |Name     |The name must be globally unique.          |
-    |Pricing tier     |Currently S0 is the only available tier          |
+    |Pricing tier     |Currently S0 is the only available tier.          |
 
     :::image type="content" source="../media/project-details.png" alt-text="Screenshot from the Azure portal with configuration basic details of Azure OpenAI highlighted in red.":::
 

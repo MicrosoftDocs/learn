@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.large-language-model-deployment.resource-provisioning
-title: "Provision an Azure OpenAI"
+title: "Provision an Azure OpenAI resource"
 metadata:
-  title: "Provision an Azure OpenAI"
+  title: "Provision an Azure OpenAI resource"
   description: Learn about Azure OpenAI resource provisioning.
   ms.date: 12/04/2023
   author: softchris

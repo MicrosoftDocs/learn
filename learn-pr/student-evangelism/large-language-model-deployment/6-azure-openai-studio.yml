@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.large-language-model-deployment.azure-openai-studio
-title: "Azure OpenAI Studio"
+title: "Explore Azure OpenAI Studio"
 metadata:
-  title: "Azure OpenAI Studio"
+  title: "Explore Azure OpenAI Studio"
   description: Learn about Azure OpenAI Studio.
   ms.date: 12/04/2023
   author: softchris
