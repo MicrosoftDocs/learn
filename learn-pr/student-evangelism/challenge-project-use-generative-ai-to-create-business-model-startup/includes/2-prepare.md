@@ -16,7 +16,7 @@ We'll set up the two browser windows to work side by side throughout this challe
 
 Open Bing Chat in your personal profile <https://www.bing.com/new>.
 
-![Start chat with Bing](../media/bing-new.png)
+![Start chat with Bing](../media/bing-new-chat.png)
 
 Select **Chat now**.
 

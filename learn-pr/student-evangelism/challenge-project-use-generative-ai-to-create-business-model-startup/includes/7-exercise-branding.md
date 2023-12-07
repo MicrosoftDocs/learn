@@ -7,7 +7,7 @@
 
 ## Branding
 
-We generated almost everything we need to bring this idea as close to a startup as possible. Now we need to do some basic branding for the startup. We'll create:
+We generated almost everything we need to bring this idea as close to a startup as possible. Now we need to do some basic branding for the startup. We create:
 
 - a catchy name for our startup
 - a short description/ tagline that captures its mission
@@ -61,7 +61,7 @@ This should pull together all your written content for you. You can always revis
 
 ## Creating your final output
 
-We created a bunch of content. We'll now use a PowerPoint template to bring all that content together.
+We created a bunch of content. We'll use a PowerPoint template to bring all that content together.
 
 ### Steps
 
@@ -76,4 +76,4 @@ We created a bunch of content. We'll now use a PowerPoint template to bring all 
 
 ## Completed
 
-Congrats! We're excited to see what you created. This exercise taught some basic prompt creation techniques, highlighted some Bing Chat capabilities, and provided a introduction to the capabilities of Generative AI, whether it be completion, transformation, conversation or summarizing.
+Congrats! We're excited to see what you created. This exercise taught some basic prompt creation techniques, highlighted some Bing Chat capabilities, and provided an introduction to the capabilities of Generative AI, whether it be completion, transformation, conversation or summarizing.
