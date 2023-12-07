@@ -76,7 +76,7 @@ Here are some more ways in you can keep using Bing chat throughout your project 
 
 #### Example: Ask help on how to build specific components and on libraries to use
 
-Note: Explore asking Bing chat for some code samples too
+Explore asking Bing chat for some code samples too.
 
 #### Sample prompt on different components/libraries
 
