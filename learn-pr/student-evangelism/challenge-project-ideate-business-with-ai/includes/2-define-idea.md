@@ -1,4 +1,3 @@
-# Define your idea
 Let's help you determine an idea you want to pursue!
 
 For a productive brainstorming session, take your time on this step to implement practical thinking, listen to your personal motivations and interests, that will help you narrow down to an idea that you will enjoy working on. 

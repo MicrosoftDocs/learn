@@ -1,4 +1,3 @@
-# Summary
 ## Learnings
 Key takeaways from this step:
 

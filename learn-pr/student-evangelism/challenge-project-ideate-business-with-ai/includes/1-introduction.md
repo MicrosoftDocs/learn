@@ -1,5 +1,3 @@
-# Introduction
-
 ## How to Use Ideation to Solve Problems and Challenges
 Ideation is a Design Thinking stage that aims to produce ideas that are innovative, practical, and, most importantly, solves a problem among a defined user audience. These ideas in turn inspire the design of new or better solutions/projects/products. The goal is to not only have a solution at the end of this challenge, but it is to think beyond obvious solutions by exploring areas of innovation to increase the innovative potential of your idea.
 
@@ -24,4 +22,4 @@ Our Deck contains the following items:
 
 See an example of a finished ideation project below:
 
-![Set conversation style to balanced](./assets/ideation-example.png)
+![Set conversation style to balanced](../media/ideation-example.png)

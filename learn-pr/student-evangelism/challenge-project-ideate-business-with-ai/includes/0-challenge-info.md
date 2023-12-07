@@ -1,5 +1,3 @@
-# Challenge project – Use Generative AI for Ideation
-
 **Time target:** 30 minutes
 
 Ideation is a Design Thinking stage that aims to produce ideas that are innovative, practical, and most importantly, that solve a problem among a defined user audience. These ideas in turn inspire the design of new or better solutions/projects/ products
