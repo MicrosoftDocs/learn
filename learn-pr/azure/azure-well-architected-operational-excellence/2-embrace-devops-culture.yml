@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-(pillar-principle)
-title: Principle-name
+uid: learn.azure-well-architected-operational-excellence.2-embrace-devops-culture
+title: Embrace DevOps culture
 metadata:
-  title: Principle-name
-  description: description
-  ms.date: 12/05/2023
+  title: Embrace DevOps culture
+  description: Learn how embracing DevOps culture can improve your operational excellence.
+  ms.date: 12/07/2023
   author: claytonsiemens77
   ms.author: csiemens
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/md-name)]
+  [!include[](includes/embrace-devops-culture.md)]
 quiz:
   title: Check your knowledge
   questions:
