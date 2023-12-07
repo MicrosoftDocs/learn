@@ -48,10 +48,10 @@ Think of the `package.json` file as a treasure chest, filled with precious gems 
 
 In your `package.json` file, you should include at least four common scripts:
 
-- `start`: This spell brings your project to life. For example, it might use the command `node ./src/index.js`.
-- `build`: This spell prepares your project for its grand debut. It might transform TypeScript into JavaScript, for instance.
-- `test`: This spell checks your project's health, typically using a testing package.
-- `lint`: This spell tidies up your code, checking for style and formatting issues using a tool like ESLint.
+- `start`: This script brings your project to life. For example, it might use the command `node ./src/index.js`.
+- `build`: This script prepares your project for its grand debut. It might transform TypeScript into JavaScript, for instance.
+- `test`: This script checks your project's health, typically using a testing package.
+- `lint`: This script tidies up your code, checking for style and formatting issues using a tool like ESLint.
 
 These script names are like magic words, universally recognized in the developer community and essential for keeping your project organized.
 
