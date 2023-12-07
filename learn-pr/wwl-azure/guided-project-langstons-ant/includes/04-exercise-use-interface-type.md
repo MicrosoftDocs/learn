@@ -64,6 +64,6 @@ In this task, you verify that your code is working correctly.
 1. In the console window, press Enter a few times to see the generated ant pattern.
 
     You should see two ant patterns that appear to be mirrored.
-     :::image type="content" source="../media/m-04-04-demo.png" alt-text="Mirrored ant patterns":::
+     :::image type="content" source="../media/m-04-04-demo.png" alt-text="SCreenshot of the program displaying mirrored ant patterns.":::
 
 If your code produces unexpected errors, you'll need to review your code to find your error and make updates. Run the code again to see if you've fixed the problem. Continue updating and running your code until your code produces the expected results.
