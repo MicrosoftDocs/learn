@@ -21442,6 +21442,101 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/windows/add-machine-learning-to-uwp-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/add-machine-learning-to-uwp-app/1-introduction-to-windows-machine-learning.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/add-machine-learning-to-uwp-app/2-create-uwp-app.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/add-machine-learning-to-uwp-app/3-add-onnx-model-to-your-uwp-app.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/add-machine-learning-to-uwp-app/4-load-bind-evaluate.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/add-machine-learning-to-uwp-app/5-summary-and-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/create-ui-for-windows-10-apps/index.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/design/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/create-ui-for-windows-10-apps/1-creating-a-ui-layout.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/design/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/create-ui-for-windows-10-apps/2-adding-elements-to-your-ui.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/design/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/create-ui-for-windows-10-apps/3-getting-user-input.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/design/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/create-ui-for-windows-10-apps/4-summary-and-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/design/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/enhance-ui-of-windows-10-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/enhance-ui-of-windows-10-app/1-application-navigation.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/enhance-ui-of-windows-10-app/2-using-html.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/enhance-ui-of-windows-10-app/3-playing-media.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/enhance-ui-of-windows-10-app/4-summary-and-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn-windows.add-machine-learning-to-your-uwp-app.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn-windows.creating-ui-windows-10-apps.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/design/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn-windows.enhance-ui-of-windows-10-app.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
       "redirect_document_id": false
@@ -30739,6 +30834,131 @@
     {
       "source_path": "learn-pr/achievements/learn.monitor-vm-performance-using-azure-monitor-for-vms.badge.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/technical-support/intro-to-azure-incident-readiness/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-incident-readiness/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/technical-support/intro-to-azure-incident-readiness/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-incident-readiness/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/technical-support/intro-to-azure-incident-readiness/2-communication-philosophy.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-incident-readiness/2-communication-philosophy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/technical-support/intro-to-azure-incident-readiness/3-prepare-for-unexpected.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-incident-readiness/3-prepare-for-unexpected",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/technical-support/intro-to-azure-incident-readiness/4-what-to-expect.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-incident-readiness/4-what-to-expect",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/technical-support/intro-to-azure-incident-readiness/5-after-an-incident.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-incident-readiness/5-after-an-incident",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/technical-support/intro-to-azure-incident-readiness/6-when-to-engage-support.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-incident-readiness/6-when-to-engage-support",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/technical-support/intro-to-azure-incident-readiness/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-incident-readiness/7-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/2-discover-classes.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/5-examine-class-lifecycle.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/3-exercise-examine-classes-objects.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/6-learn-class-constructors.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/4-learn-encapsulation.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-classes/7-understand-namespaces.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-properties-within-class/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-properties-within-class/2-define-class-properties.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-properties-within-class/4-examine-reference-type-properties.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-properties-within-class/3-exercise-control-access-properties.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-properties-within-class/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-properties-within-class/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-properties-within-class/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
       "redirect_document_id": false
     }
   ]
