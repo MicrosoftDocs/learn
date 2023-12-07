@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-interfaces-c-sharp.examine-interfaces-and-abstract-classes
+uid: learn.wwl.implement-interfaces-c-sharp.examine-interfaces-abstract-classes
 title: Examine interfaces vs abstract classes
 metadata:
   title: Examine interfaces vs abstract classes
@@ -10,7 +10,7 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/02-examine-interfaces-and-abstract-classes.md)]
+  [!include[](includes/02-examine-interfaces-abstract-classes.md)]
 quiz:
   title: "Check your knowledge"
   questions:

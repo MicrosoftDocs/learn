@@ -35,7 +35,7 @@ products:
 - vs-ide
 units:
 - learn.wwl.implement-interfaces-c-sharp.introduction
-- learn.wwl.implement-interfaces-c-sharp.examine-interfaces-and-abstract-classes
+- learn.wwl.implement-interfaces-c-sharp.examine-interfaces-abstract-classes
 - learn.wwl.implement-interfaces-c-sharp.when-use-interfaces
 - learn.wwl.implement-interfaces-c-sharp.exercise-implement-multiple-interfaces
 - learn.wwl.implement-interfaces-c-sharp.exercise-use-interfaces-type
