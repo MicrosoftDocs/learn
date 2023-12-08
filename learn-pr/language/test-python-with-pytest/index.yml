@@ -11,7 +11,7 @@ metadata:
 title: Testing with Pytest
 summary: Improve your testing experience with Pytest, a great choice to write, run, and extend tests in Python. Get exposed to useful patterns and the basics of testing with Pytest.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - Write tests using `pytest`, one of the most popular test frameworks for Python
     - Get used to the powerful reporting in tests failures
     - Use functions, classes, and methods for testing

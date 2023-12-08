@@ -4,13 +4,13 @@ Pytest is one of the most popular testing tools and frameworks for Python. Altho
 
 A crucial aspect of Pytest is that it makes writing tests easier. You can write a test function with no dependencies or configuration and run the test right away.
 
-In this module, we cover some of the basics needed to get started with Pytest so you can take your test suite to the next level.
+Here, we cover some of the basics needed to get started with Pytest so you can take your test suite to the next level.
 
 ## What you will learn
 
-By the end of this module, you're able to write tests with Pytest, interpret its rich failure reporting, and take advantage of its featureful test runner. You should also feel comfortable working with both test functions and classes, and be capable of determining when to use either.
+By the end of this module, you're able to write tests with Pytest, interpret its rich failure reporting, and take advantage of its featureful test runner. You should feel comfortable working with both test functions and classes, and be capable of determining when to use either.
 
-This allows you to:
+This knowledge allows you to:
 
 - Work with existing tests for Pytest or extend an existing test suite.
 - Use Pytest's error reporting to accurately determine failures.
@@ -18,4 +18,4 @@ This allows you to:
 
 ## What is the main goal?
 
-You should feel comfortable working with Pytest and writing tests for Pytest. This makes you a more efficient engineer, as you'll be writing more and better tests.
+You should feel comfortable working with Pytest and writing tests for Pytest, allowing you to become a more efficient engineer by helping you write more and better tests.
