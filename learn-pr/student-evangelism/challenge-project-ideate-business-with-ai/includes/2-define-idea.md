@@ -97,4 +97,4 @@ Draft your idea in rough bullet points. Example
 - Cases of human wildife conflicts and poaching are rising at an alarming rate
 - Existing solutions don't provide realtime data to prevent deaths and destruction of property
 - Solution uses IOT and AI to fix this
-- ```
+```
