@@ -18,7 +18,7 @@ The name `copilot` originates from Microsoft and is used across-industry to desc
 
 Microsoft Copilot features can be found throughout commonly used applications. The goal of these features is to empower people to be smarter, more productive, more creative, and connected to the people and things around them.
 
-For example, Microsoft Copilot can be used with Microsoft Bing search engine to generate natural language answers to questions based on context rather than just search results of indexed pages. 
+For example, [Microsoft Copilot](https://copilot.microsoft.com?azure-portal=true) can be used with Microsoft Bing search engine to generate natural language answers to questions based on context rather than just search results of indexed pages.  
 
 ![Screenshot of Microsoft Copilot landing page.](../media/microsoft-copilot1.png)
 
