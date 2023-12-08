@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-interfaces-c-sharp.examine-interfaces-abstract-classes
-title: Examine interfaces vs abstract classes
+title: Examine interfaces and abstract classes
 metadata:
-  title: Examine interfaces vs abstract classes
-  description: "Examine interfaces vs abstract classes"
-  ms.date: 12/07/2023
+  title: Examine interfaces and abstract classes
+  description: "Examine interfaces and abstract classes"
+  ms.date: 12/08/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit

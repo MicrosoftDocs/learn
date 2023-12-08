@@ -45,7 +45,7 @@ This module includes hands-on activities that guide you through the process of b
 
 In this exercise, you'll update existing classes to implement multiple interfaces. You'll create an interface that allows some items to be combined to create new ones. The player should be able to combine runes and weapons, food ingredients, and herbs with containers to create new items. Let's get started!
 
-:::image type="content" source="../media/m-02-04-demo.png" alt-text="Screenshot of the inventory program for this module with craftable items.":::
+:::image type="content" source="../media/04-demo.png" alt-text="Screenshot of the inventory program for this module with craftable items.":::
 
 1. In the Explorer, right click on the **Items** folder.
 
@@ -231,7 +231,7 @@ In this task, you'll run the code and verify that it's working correctly.
 1. In the terminal command prompt, enter **dotnet run**
 
     You should see a windows form dialog appear, populated with game assets. Be sure to check that the form title displays "M02 Inventory"
-    :::image type="content" source="../media/m-02-04-check-your-work.png" alt-text="Screenshot of the inventory program for this module with two food items selected and a craft button.":::
+    :::image type="content" source="../media/04-check-your-work.png" alt-text="Screenshot of the inventory program for this module with two food items selected and a craft button.":::
 
 1. Select two food ingredients, such as "bread," "broccoli," "lettuce," "bell pepper." Use the <kbd>Ctrl</kbd> key to multi-select.
 

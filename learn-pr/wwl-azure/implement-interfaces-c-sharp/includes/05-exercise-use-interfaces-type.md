@@ -126,7 +126,7 @@ In this task, you'll run the code and verify that it's working correctly.
 1. Click the "Craft" button.
 
     A new food item should appear in the inventory.
-    :::image type="content" source="../media/m-02-05-check-your-work.png" alt-text="Screenshot of the inventory program for this module with a new food item selected and a consume button.":::
+    :::image type="content" source="../media/05-check-your-work.png" alt-text="Screenshot of the inventory program for this module with a new food item selected and a consume button.":::
 
 > [!IMPORTANT]
 > Be sure not to delete any of the code you've written so far. You'll build on this code throughout this training module.
