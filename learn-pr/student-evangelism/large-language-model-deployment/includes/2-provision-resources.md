@@ -1,6 +1,6 @@
 Azure OpenAI Service provides REST API access to powerful language models, including the GPT-4, GPT-3.5-Turbo, and the Embeddings model series. 
 
-To get started using these models, you must provision an Azure OpenAI service in your Azure subscription. You can provision resources by using the Azure portal or the Azure CLI.
+To get started using these models, you must provision an Azure OpenAI Service resource in your Azure subscription. You can provision resources by using the Azure portal or the Azure CLI.
 
 After you provision the resource, you can use its **endpoint** and one of its keys to call the Azure OpenAI APIs from your code. You can also test the resource in the **playground** before integrating it into your workflow.
 

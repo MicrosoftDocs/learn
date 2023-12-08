@@ -1,4 +1,4 @@
-In this exercise, you create an Azure OpenAI service that enables you to interact with different large language models (LLMs). 
+In this exercise, you create an Azure OpenAI Service resource that enables you to interact with different large language models (LLMs). 
 
 > [!NOTE]
 > To complete this exercise, you need the following:
