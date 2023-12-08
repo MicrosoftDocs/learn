@@ -15,48 +15,39 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-
-  - content: 'question-1'
+  - content: 'How was Contoso able to identify the root cause of the issue with blank pages and generic errors some users experienced?'
     choices:
-    - content: 'choice-1-content'
+    - content: 'The team asked the users to provide more information about the errors they were seeing.'
       isCorrect: false
-      explanation: 'choice-2-explanation'
-    - content: 'choice-3-content'
+      explanation: 'Incorrect. The users were unable to provide more information about the errors they were seeing.'
+    - content: 'The team added deeper monitoring to the application.'
       isCorrect: true
-      explanation: 'choice-3-explanation'
-    - content: 'choice-4-content'
+      explanation: 'Correct. Adding additional monitoring to the application allowed the team to identify that the database query timeouts were the root cause.'
+    - content: 'The team performed chaos testing.'
       isCorrect: false
-      explanation: "choice-4-explanation"
-    - content: 'choice-5-content'
+      explanation: "Incorrect. Chaos testing is a great way to identify issues, but it wasn't part of this scenario."
+    - content: 'The team asked the operations team to reproduce the issue.'
       isCorrect: false
-      explanation: "choice-5-explanation"
-
-  - content: 'question-2'
+      explanation: "Incorrect. In this case, the workload team implemented additional monitoring to identify the root cause of the issue."
+  - content: 'Which of the following is good way to design monitoring dashboards?'
     choices:
-    - content: 'choice-1-content'
+    - content: 'Build a single dashboard that provides all the information that anyone might need.'
       isCorrect: false
-      explanation: 'choice-2-explanation'
-    - content: 'choice-3-content'
+      explanation: 'Incorrect. A single dashboard would have too much information and would be unwieldy.'
+    - content: 'Build a dashboard that provides all the information that anyone might need, but allow users to filter the information to only what they need.'
+      isCorrect: false
+      explanation: 'Incorrect. This would design would be difficult to use and would have too much information.'
+    - content: 'Build dashboards that are specific to each team that needs data about the workload.'
       isCorrect: true
-      explanation: 'choice-3-explanation'
-    - content: 'choice-4-content'
+      explanation: "Correct. Dashboards should be designed to provide the right information to the right people. This means that each team should have their own dashboard that provides the information they need to do their job."
+    - content: 'Build custom dashboards for each user.'
       isCorrect: false
-      explanation: "choice-4-explanation"
-    - content: 'choice-5-content'
-      isCorrect: false
-      explanation: "choice-5-explanation"
-
-  - content: 'question-3'
+      explanation: "Incorrect. This design would be very difficult to manage and maintain."
+  - content: 'True or false: alerts should mostly be informational.'
     choices:
-    - content: 'choice-1-content'
+    - content: 'True'
       isCorrect: false
-      explanation: 'choice-2-explanation'
-    - content: 'choice-3-content'
+      explanation: 'Incorrect. Alerts should be actionable, not informational.'
+    - content: 'False'
       isCorrect: true
-      explanation: 'choice-3-explanation'
-    - content: 'choice-4-content'
-      isCorrect: false
-      explanation: "choice-4-explanation"
-    - content: 'choice-5-content'
-      isCorrect: false
-      explanation: "choice-5-explanation"
+      explanation: 'Correct. Alerts should be actionable, not informational.'
