@@ -30,13 +30,13 @@ Or
 
 The Azure CLI can be used instead of the Azure portal to deploy cloud resources. You can also use the Azure CLI to create a model deployment by specifying:
 
-- **The cognitive service account name** to identify the account for which you're creating the model deployment.
+- **The resource name** to identify the account for which you're creating the model deployment.
 - **The resource group name**, which acts as the logical bucket to store the created resource.
 - **A deployment name (optional)** to help identify different deployments from the same model. For example, you must have a deployment name when you send requests programmatically. The default is the chosen model's name if a deployment name isn't specified.
 - **The model type name**. Enter the specific model type, depending on what you're trying to do. For example, enter _text generation_, _chat_, or _generating images_.
 - **The model format**.
-- **A SKU capacity (optional)** for the cognitive service deployment.
-- **A SKU name (optional)** for the cognitive service deployment.
+- **The SKU capacity value (optional)**.
+- **The SKU name (optional)**.
 
 Here's an example of how to create your model deployment. Change the code to fit your needs.
 
