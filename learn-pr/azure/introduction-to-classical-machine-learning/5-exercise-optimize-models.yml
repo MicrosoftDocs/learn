@@ -8,7 +8,6 @@ metadata:
   author: lgayhardt
   ms.author: lagayhar
   ms.topic: unit
-  ms.prod: learning-azure
 durationInMinutes: 10
 sandbox: true
 notebook: notebooks/2-5-exercise-optimize-models.ipynb
