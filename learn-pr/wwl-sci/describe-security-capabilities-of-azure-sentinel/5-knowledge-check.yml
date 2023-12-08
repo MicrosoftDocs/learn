@@ -33,6 +33,6 @@ quiz:
     - content: "Playbooks."
       isCorrect: false
       explanation: "Incorrect. Playbooks allow you to automate your common tasks and simplify security orchestration."
-    - content: "Microsoft 365 Defender."
+    - content: "Microsoft Defender XDR."
       isCorrect: false
-      explanation: "Incorrect. Microsoft 365 Defender provides protection for email, client endpoints, enterprise IoT, Identity, Apps, and Cloud apps."
+      explanation: "Incorrect. Microsoft Defender XDR provides protection for email, client endpoints, enterprise IoT, Identity, Apps, and Cloud apps."
