@@ -28,7 +28,7 @@ Another example is Microsoft Copilot for Microsoft 365, which works alongside yo
 
 ![Screenshot of Microsoft Copilot for Microsoft 365 in PowerPoint with a blank slide.](../media/microsoft-copilot-for-powerpoint-example1.png)
 
-![Screenshot of result of Microsoft Copilot for Microsoft 365 in PowerPoint after asking Copilot to build a presentation about coffee. The slides now show content about coffee.](../media/microsoft-copilot-for-powerpoint-example1.png)
+![Screenshot of result of Microsoft Copilot for Microsoft 365 in PowerPoint after asking Copilot to build a presentation about coffee. The slides now show content about coffee.](../media/microsoft-copilot-for-powerpoint-example2.png)
 
 Yet another example is GitHub Copilot, which provides support to software developers, helping them write, document, and test code.
 
