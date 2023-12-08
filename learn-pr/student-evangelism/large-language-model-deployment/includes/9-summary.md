@@ -14,8 +14,8 @@ Key takeaways from this module:
 - [Course: Develop generative AI solutions with Azure OpenAI Service](/training/courses/ai-050t00)
 - [Microsoft Learn OpenAI training](/training/browse/?terms=OpenAI)
 - [Azure OpenAI Service documentation](/azure/ai-services/openai/)
-- [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource#deploy-a-model).
+- [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource#deploy-a-model)
 - [Azure OpenAI Service pricing](https://azure.microsoft.com/products/ai-services/openai-service/#pricing)
 - [Azure AI hub](https://github.com/Azure-Samples/azure-ai)
 - [Transparency note for Azure OpenAI Service](/legal/cognitive-services/openai/transparency-note)
-- [Azure Associate AI Engineer Exam](/credentials/certifications/exams/ai-102/)
+- [Azure AI Engineer Associate exam](/credentials/certifications/exams/ai-102/)

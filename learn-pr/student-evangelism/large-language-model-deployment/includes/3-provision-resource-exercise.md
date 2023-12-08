@@ -1,4 +1,4 @@
-In this exercise, you create an Azure OpenAI service that enables you to interact with different large language models (LLM). 
+In this exercise, you create an Azure OpenAI service that enables you to interact with different large language models (LLMs). 
 
 > [!NOTE]
 > To complete this exercise, you need the following:
@@ -25,7 +25,7 @@ Complete the following steps to provision a resource in the Azure portal:
     | **What** | **Comment**  |
     |---------|---------|
     |Subscription    |Use the same subscription you used to apply for Azure OpenAI access.         |
-    |Resource Group     |Use an existing resource group or create a new one.          |
+    |Resource group     |Use an existing resource group or create a new one.          |
     |Region      |Select a region close to you for best response times.          |
     |Name     |The name must be globally unique.          |
     |Pricing tier     |Currently S0 is the only available tier.          |

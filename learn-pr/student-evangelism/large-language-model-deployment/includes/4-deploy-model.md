@@ -1,4 +1,4 @@
-After you create an Azure OpenAI resource, you must deploy a model to kickstart your API calls and text generation. Use the Deployment APIs to choose and deploy your chosen model.
+After you create an Azure OpenAI resource, you must deploy a model to kickstart your API calls and text generation. Use the deployment APIs to choose and deploy your model.
 
 ## Deployments
 
@@ -12,10 +12,10 @@ Deployment provides an endpoint to the Azure OpenAI base model, or model of your
 
 ## Azure OpenAI Studio
 
-Azure OpenAI Studio is a web-based interface that allows you to interact with Azure OpenAI Service. You can use the playground to experiment with service capabilities by submitting prompts and generating completions. You can also use the Azure OpenAI Studio to manage your deployments and models. To sign in to Azure OpenAI Studio:
+Azure OpenAI Studio is a web-based interface that allows you to interact with Azure OpenAI Service. You can use the playground to experiment with service capabilities by submitting prompts and generating completions. You can also use Azure OpenAI Studio to manage your deployments and models. To sign in to Azure OpenAI Studio:
 
-- Navigate directly to the interface, select your subscription, and select your cloud resource.
-Or
+- Navigate directly to the interface, select your subscription, and select your cloud resource.<br>
+Or<br>
 - Navigate to the site via the cloud resource blade in the Azure portal.
 
 ## What you can do with Azure OpenAI Studio

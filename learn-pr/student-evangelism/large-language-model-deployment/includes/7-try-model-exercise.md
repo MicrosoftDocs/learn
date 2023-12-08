@@ -27,7 +27,7 @@ In this example, you'll learn how to extract information by using a prompt that 
     
     ```
 
-1. Select **Generate**. You should see a similar output:
+1. Select **Generate**. Your output should resemble the following text:
 
     ```text
     
@@ -61,7 +61,7 @@ In this next exercise, you'll ask your LLM to organize your text as a table, whi
     
     ```
 
-1. Select **Generate**. You should see a similar output:
+1. Select **Generate**. Your output should resemble the following text:
 
     ```text
     
@@ -78,9 +78,9 @@ In this example, the model is primed with the desired output format: a header ro
 
 ### Try different formatting: JSON
 
-An LLM can produce a table given some text, but you can also ask an LLM to produce the data in JSON format.
+An LLM can produce a table if you give it some text, but you can also ask an LLM to return the data in JSON format.
 
-1. Clear the completions text box then copy and paste the following text:
+1. Clear the completions text box. Then paste the following text:
 
     ```text
     
@@ -94,7 +94,7 @@ An LLM can produce a table given some text, but you can also ask an LLM to produ
     
     ```
 
-1. Select **Generate**. You should see a similar output:
+1. Select **Generate**. Your output should resemble the following text:
 
     ```json
     
@@ -105,13 +105,13 @@ An LLM can produce a table given some text, but you can also ask an LLM to produ
     
     ```
 
-In this example, the model returned a JSON array of the fruit and their attributes following the JSON format. It's important to remember that an LLM can both give you *what* you want *how* you want it.
+In this example, the model returned a JSON array of the fruits and their attributes in a JSON format. Remember that an LLM can give you both *what* you want and *how* you want it.
 
 ## Classify content
 
 In this exercise, you'll use an LLM to sort your content into different categories.
 
-1. Clear the completions text box then copy and paste the following text:
+1. Clear the completions text box. Then paste the following text:
 
     ```text
     
@@ -125,7 +125,7 @@ In this exercise, you'll use an LLM to sort your content into different categori
     
     ```
 
-1. Select **Generate**. You should see a similar output:
+1. Select **Generate**. Your output should resemble the following text:
 
     ```text
     
@@ -162,7 +162,7 @@ Summarized content can be helpful if you want to quickly understand what a longe
     
     ```
 
-1. Select **Generate**. You should see a similar output:
+1. Select **Generate**. Your output should resemble the following text:
 
     ```text
     
@@ -182,7 +182,7 @@ Even though the outputs are generated based on frequency of similar content in t
     Write a limerick about the Python programming language
     ```
 
-1. Select **Generate**. You should see a similar output:
+1. Select **Generate**. Your output should resemble the following text:
 
     ```text
     There once was a language named Python
@@ -192,4 +192,4 @@ Even though the outputs are generated based on frequency of similar content in t
     So learn it and you'll be second to none!
     ```
 
-How was the limerick? If you don't like it, you can always ask the Completions playground to generate a new one by using the blue circular arrow icon.
+How was the limerick? If you don't like it, you can always ask the Completions playground to generate a new limerick by using the blue circular arrow icon.

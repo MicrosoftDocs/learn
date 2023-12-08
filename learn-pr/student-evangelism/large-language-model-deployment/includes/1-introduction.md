@@ -14,4 +14,4 @@ In this module, you'll learn to:
 
 ## What is the main objective?
 
-Provision and use a large language model deployment in Azure OpenAI Studio.
+Provision and use an LLM deployment in Azure OpenAI Studio.

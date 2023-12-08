@@ -17,7 +17,7 @@ Let's walk through creating a deployment by using Azure OpenAI Studio. You can h
 
     :::image type="content" source="../media/manage-deployments.png" alt-text="Screenshot of the Azure portal, showing the newly created OpenAI resource. The model deployments and manage deployments buttons are highlighted with red boxes.":::
 
-    When you select **Manage Deployments**, you'll be directed to Azure OpenAI Studio. Double-check that **Deployments** is selected.
+    When you select **Manage Deployments**, you're directed to Azure OpenAI Studio. Double-check that **Deployments** is selected.
 
     :::image type="content" source="../media/find-deployments.png" alt-text="Screenshot of Azure OpenAI Studio, in which the Deployments tab is highlighted with a red box.":::
 
@@ -29,10 +29,10 @@ Let's walk through creating a deployment by using Azure OpenAI Studio. You can h
 
     | **What** | **Value** |
     |---|---|
-    | Select a model | Select **gpt-35-turbo** |
-    | Model version | Select **0301** |
-    | Deployment name | Add a name that's unique for this cloud instance. The name should make sense to you, for example **conversation-model**, because this model type and GPT4 are optimized for conversation. |
+    | Select a model | Select **gpt-35-turbo**. |
+    | Model version | Select **0301**. |
+    | Deployment name | Add a name that's unique for this cloud instance. The name should make sense to you, for example **conversation-model**, because this model type and GPT-4 are optimized for conversation. |
 
 1. Select **Create**.
 
-Congratulations! You successfully created a model deployment that enables you to interact with the GPT 3.5 Turbo LLM.
+Congratulations! You successfully created a model deployment that enables you to interact with the GPT-3.5-Turbo LLM.

@@ -45,13 +45,11 @@ A CLI tool has a few advantages over the Azure portal graphical interface. Some 
 
 - **Versioning**: Keep track of deployment history and changes over time by using version control.
 
-To create an Azure OpenAI service from the CLI, ensure you have the following resources:
-
-- **Resource group**: Think of a resource group as a logical bucket. To stay organized, create all resources for the same app or logical grouping within the same resource group.
+To create an Azure OpenAI service from the CLI, ensure you have a **resource group**. Think of a resource group as a logical bucket. To stay organized, create all resources for the same app or logical grouping within the same resource group.
 
 Here's an example of how to create a resource group:
 
-- The following command creates a resource group called "resourceGroupName" in the East US location. You can change the name and location as you want, but the name needs to be unique to your subscription.
+- The following command creates a resource group called _resourceGroupName_ in the East US location. You can change the name and location as you want, but the name needs to be unique to your subscription.
 
     ``` azurecli
     az group create --name resourceGroupName --location eastus 
