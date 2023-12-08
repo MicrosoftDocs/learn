@@ -45,6 +45,6 @@ quiz:
     - content: "No, Pytest only allows extensibility through plugins."
       isCorrect: false
       explanation: "Incorrect. Although Pytest allows extensions via plugins, it can also be used as a library."
-    - content: "Yes, Pytest has modules and helpers that you can import in your tests"
+    - content: "Yes, Pytest has modules and helpers that you can import in your tests."
       isCorrect: true
       explanation: "Correct. Pytest does offer several helpers and modules for easier testing."
