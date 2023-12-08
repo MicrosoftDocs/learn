@@ -34,7 +34,7 @@ The process to complete a failback is the same as a failover, even down to reusi
 
 ## Manage failovers
 
-Site Recovery can run failovers on demand. Test failovers are isolated, meaning they don't impact production services. This flexibility allows you to run a failover without interrupting that system's users. The flexibility works the other way too, allowing failback on-demand either as part of a planned test or as part of a fully-invoked DR process.
+Site Recovery can run failovers on demand. Test failovers are isolated, meaning they don't impact production services. This flexibility allows you to run a failover without interrupting that system's users. The flexibility works the other way too, allowing failback on-demand either as part of a planned test or as part of a fully invoked DR process.
 
 The recovery plans in Site Recovery also allow for customizing and sequencing failover and failback. The plans allow you to group machines and workloads.
 
