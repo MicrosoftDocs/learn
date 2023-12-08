@@ -1,12 +1,12 @@
 
 
-DP-900: Learning Path 3 Explore fundamentals of non-relational data in Azure
+DP-900: Learning Path 3 Explore fundamentals of nonrelational data in Azure
 
-As you're preparing to teach this learning path, get familiar with what the students will learn during the learning path. In this learning path, students will explore the characteristics of non-relational data. Students will also learn about the different types of non-relational data and non-relational database management systems. 
+As you're preparing to teach this learning path, get familiar with what the students learn during the learning path. In this learning path, students explore the characteristics of nonrelational data. Students also learn about the different types of nonrelational data and nonrelational database management systems. 
 
 This module consists of two lessons: 
 
-- Lesson 1 – Explore Azure storage for non-relational data 
+- Lesson 1 – Explore Azure storage for nonrelational data 
 
 - Lesson 2 – Explore fundamentals of Azure Cosmos database 
  

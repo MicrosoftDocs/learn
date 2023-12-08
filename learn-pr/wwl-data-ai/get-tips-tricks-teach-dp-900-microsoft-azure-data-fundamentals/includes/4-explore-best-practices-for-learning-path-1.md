@@ -4,7 +4,7 @@ DP-900: Learning Path 1 Explore fundamentals of data
 
 Learning Path 1 Overview
 
-As you are preparing to teach this learning path, get familiar with what the students will learn during the learning path – the concepts and methodologies they will be working through. In this learning path students will explore relational data offerings, provisioning and deploying relational databases, and querying relational data through cloud data solutions with Microsoft Azure. Students will also review common tasks typically performed by these job roles and the types of tools they use.  
+As you're preparing to teach this learning path, get familiar with what the students learn during the learning path – the concepts and methodologies they're working through. In this learning path student will explore relational data offerings, provisioning and deploying relational databases, and querying relational data through cloud data solutions with Microsoft Azure. Students also review common tasks typically performed by these job roles and the types of tools they use.  
 
 This learning path consists of two lessons:
 
@@ -19,7 +19,7 @@ This learning path consists of five focus areas:
 
 - Emphasize the importance of data storage and organization formats 
 
-- Introduce databases and the difference between relational and non-relational databases 
+- Introduce databases and the difference between relational and nonrelational databases 
 
 - Explore Online Transaction Processing (OLTP) and ACID principles 
 
