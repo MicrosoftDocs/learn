@@ -124,7 +124,7 @@ In this task, you'll run the code and verify that it's working correctly.
 1. In the terminal command prompt, enter **dotnet run**
 
     You should see a windows form dialog appear, populated with game assets. Be sure to check that the form title displays "M01 Inventory"
-    :::image type="content" source="../media/m-01-04-example.png" alt-text="A snapshot of the inventory program for this module":::
+    :::image type="content" source="../media/m-01-04-example.png" alt-text="Screenshot of the inventory program for this module with a shield selected and an equip button.":::
 
 1. Select an item that appears to be a weapon, such as an ax, wand, or sword.
 

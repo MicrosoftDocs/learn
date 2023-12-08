@@ -1,6 +1,6 @@
 Suppose you're writing code to manage inventory in a video game. The player is able to collect and store items, such as weapons, armor, potions, and more. Each type of item comes with its own capabilities. In this exercise, you'll create functionality to make Armor and Weapons equipable.
 
-:::image type="content" source="../media/m-01-03-demo.png" alt-text="A snapshot of the inventory program for this module.":::
+:::image type="content" source="../media/m-01-03-demo.png" alt-text="Screenshot of the inventory program for this module. The inventory contains different items.":::
 
 ## Prepare your coding environment
 
@@ -63,7 +63,7 @@ In this exercise, you'll create an IEquipable interface to be used by the Armor 
     ```
 
     Notice that this line of code contains the error: "Interfaces cannot contain instance fields." 
-    :::image type="content" source="../media/m-01-03-interface-field-error.png" alt-text="An error in Visual Studio that occurs when adding an instance field to an interface":::
+    :::image type="content" source="../media/m-01-03-interface-field-error.png" alt-text="Screenshot of an error in Visual Studio that occurs when adding an instance field to an interface.":::
     Recall that interfaces act as blueprints; they don't define implementations. A field represents data implementation, so you need to change this instance field to a property.
 
 1. Update the previous line of code as follows:

@@ -10,39 +10,38 @@ The following code is one possible solution for the challenge from the previous 
             public bool Consumed { get; set; }
         }
     }
-    ```
- 
-    ```c#
+
+    //
     // Food.cs
+    //
     internal class Food : Item, IConsumable 
     {
-        // other code
-        // ...
+        // previous code...
 
         public bool Consumed { get; set; }
         public void Consume()
         {
             Consumed = true;
         }
-    ```
- 
-    ```c#
+        // continued...
+
+    //
     // Potion.cs
+    //
     internal class Potion : Item, IConsumable 
     {
-        // other code
-        // ...
+        // previous code...
 
         public bool Consumed { get; set; }
         public void Consume()
         {
             Consumed = true;
         }
-    ```
- 
-    ```c# 
-    // Model.cs
+        // continued...
 
+    //
+    // Model.cs
+    //
     public string GetItemAction()
     {
         if (selectedItems[0] is IEquipable)
@@ -55,8 +54,7 @@ The following code is one possible solution for the challenge from the previous 
             return none;
     }
     
-    // other code
-    // ...
+    // continued...
 
     public List<Item> GetConsumables()
     {
