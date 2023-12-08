@@ -9,8 +9,7 @@ metadata:
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.service: azure-blob-storage
-  ms.custom:
-  - N/A
+  ms.custom: N/A, devx-track-dotnet
 durationInMinutes: 15
 content: |
   [!include[](includes/4-develop-blob-storage-dotnet.md)]

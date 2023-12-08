@@ -1,4 +1,4 @@
-Azure Container Apps manages the details of Kubernetes and container orchestration for you. Containers in Azure Container Apps can use any runtime, programming language, or development stack of your choice.
+Azure Container Apps manages the details of Kubernetes and container orchestration for you. Containers in Azure Container Apps can use the runtime, programming language, or development stack of your choice.
 
 ![Screenshot showing how containers for container app instances are grouped together in pods inside revision snapshots.](../media/azure-container-apps-containers.png)
 
@@ -21,6 +21,9 @@ Jobs features include:
 - Job executions use the template configuration section to define the container image and other settings when each execution starts.
 
 - If a container exits with a non-zero exit code, the job execution is marked as failed. You can configure a job to retry failed executions.
+
+> [!NOTE]
+> In Azure Container Apps, a revision is a snapshot of your container app. Multiple revisions can be used to represent different versions of your container app.
 
 ## Configuration
 

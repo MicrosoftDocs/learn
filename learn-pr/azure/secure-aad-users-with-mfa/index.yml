@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/03/2023
   author: Justinha
   ms.author: justinha
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: active-directory
 title: Secure Microsoft Entra users with multifactor authentication
 summary: Learn how to use multifactor authentication with Microsoft Entra ID to harden your user accounts.

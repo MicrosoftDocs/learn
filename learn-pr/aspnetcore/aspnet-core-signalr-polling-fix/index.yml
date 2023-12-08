@@ -8,7 +8,7 @@ metadata:
   author: IEvangelist
   ms.author: dapine
   ms.manager: markl
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: module
   ms.prod: aspnet-core
   ms.technology: aspnetcore-signalr
 title: Replace client-side polling with ASP.NET Core SignalR

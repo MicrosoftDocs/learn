@@ -4,7 +4,7 @@ The main takeaways from this module are that Azure Container Apps implements con
 
 Detailed resources:
 
-- Revisions in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/revisions](/azure/container-apps/revisions)
+- Select the right code-to-cloud path for Azure Container Apps [https://learn.microsoft.com/azure/container-apps/code-to-cloud-options](/azure/container-apps/code-to-cloud-options)
 
 - Publish revisions with Azure Pipelines in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/azure-pipelines](/azure/container-apps/azure-pipelines)
 

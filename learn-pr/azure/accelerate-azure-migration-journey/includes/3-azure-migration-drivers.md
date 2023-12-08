@@ -89,7 +89,6 @@ These triggers include:
 - Focus on innovation
 - Faster time to market
 - Cost-optimizing applications
-- Focus on innovation
 
 ### Scale web apps and infrastructure
 

@@ -6,8 +6,7 @@ metadata:
   ms.date: 11/07/2023 
   author: schaffererin
   ms.author: schaffererin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Concept - Kubernetes scaling options
 durationInMinutes: 5
 content: |

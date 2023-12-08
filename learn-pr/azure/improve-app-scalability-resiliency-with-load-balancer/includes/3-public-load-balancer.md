@@ -42,4 +42,4 @@ Remote Desktop Gateway is a Windows service that you can use to enable clients o
 
 Another use case for source IP affinity is media upload. In many implementations, a client initiates a session through a TCP protocol and connects to a destination IP address. This connection remains open throughout the upload to monitor progress, but the file is uploaded through a separate UDP protocol.
 
-With the five-tuple hash, the load balancer likely will send the TCP and UDP connections to different destination IP addresses and the upload won't finish successfully. Use source IP affinity to resolve this issue.
+With the five-tuple hash, the load balancer likely sends the TCP and UDP connections to different destination IP addresses and the upload won't finish successfully. Use source IP affinity to resolve this issue.

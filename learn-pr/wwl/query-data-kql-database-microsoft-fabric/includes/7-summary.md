@@ -4,4 +4,4 @@ The main takeaways from this module are that KQL queries in Microsoft Fabric can
 
 Additional Reading:
 1. [Microsoft Fabric Terminology](/fabric/get-started/fabric-terminology): This resource provides an overview of the terminology used in Microsoft Fabric.
-3. [Query Data in a KQL Queryset](/fabric/real-time-analytics/kusto-query-set): This resource provides information on how to query data in a KQL queryset.
+3. [Query Data in a KQL Queryset](/fabric/real-time-analytics/kusto-query-set): This resource provides information on how to query data in a KQL queryset. 

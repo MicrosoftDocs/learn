@@ -6,7 +6,7 @@ metadata:
   ms.date: 04/27/2023
   author: fabianomira
   ms.author: famira
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure 
 title: Troubleshoot authentication and access control issues in Microsoft Azure
 summary: Microsoft Azure has a sophisticated authentication and access control system to provide high security. Microsoft Entra authentication includes Self-service password reset, multifactor authentication, hybrid integration, and passwordless authentication.

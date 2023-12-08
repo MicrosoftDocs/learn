@@ -7,7 +7,7 @@ metadata:
   author: timlt
   ms.author: timlt
   manager: lizross
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: rtos
 title: Use message queues for inter-thread communication in Azure RTOS ThreadX
 summary: Learn how to have threads send messages to other threads.

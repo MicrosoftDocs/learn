@@ -3,7 +3,7 @@ By using Microsoft Sentinel Analytics rules, you can configure notification and 
 
 ## Types of analytics rules
 
-You can search for potential threats by using the built-in analytics rules that Microsoft Sentinel Analytics provides. There are currently five types of analytics rules:
+You can search for potential threats by using the built-in analytics rules that Microsoft Sentinel Analytics provides, including the following types:
 
 - Anomaly
 
@@ -27,9 +27,9 @@ Anomaly alerts are informational and identify anomalous behaviors.
 
 ## Fusion
 
-Microsoft Sentinel uses the Fusion correlation engine, with its scalable machine learning algorithms, to detect advanced multistage attacks by correlating many low-fidelity alerts and events across multiple products into high-fidelity and actionable incidents. Fusion is enabled by default. Because the logic is hidden and therefore not customizable, you can only create one rule with this template.
+Microsoft Sentinel uses the Fusion correlation engine, with its scalable machine learning algorithms, to detect advanced multistage attacks. The engine correlates many low-fidelity alerts and events across multiple products into high-fidelity and actionable incidents. Fusion is enabled by default. Because the logic is hidden and therefore not customizable, you can only create one rule with this template.
 
-The Fusion engine can also correlate alerts produced by scheduled analytics rules with alerts from other systems, producing high-fidelity incidents as a result.
+The Fusion engine can also correlate alerts from scheduled analytics rules with alerts from other systems, producing high-fidelity incidents as a result.
 
 By default, Fusion detection is enabled in Microsoft Sentinel. Microsoft is constantly updating Fusion detection scenarios for threat detection. At the time of writing this article, for Anomaly and Fusion detection, you must configure the following data connectors:
 
@@ -37,23 +37,24 @@ By default, Fusion detection is enabled in Microsoft Sentinel. Microsoft is cons
 
 - Alerts from Microsoft Products
 
-    - Microsoft Entra ID Protection
+  - Microsoft Entra ID Protection
 
-    - Microsoft Defender for Cloud
+  - Microsoft Defender for Cloud
 
-    - Microsoft Defender for IoT
+  - Microsoft Defender for IoT
 
     - Microsoft Defender XDR
 
-    - Microsoft Defender for Cloud Apps
 
-    - Microsoft Defender for Endpoint
+  - Microsoft Defender for Cloud Apps
 
-    - Microsoft Defender for Identity
+  - Microsoft Defender for Endpoint
 
-    - Microsoft Defender for Office 365
+  - Microsoft Defender for Identity
 
-- Alerts from scheduled analytics rules, both built-in and those created by your security analysts. Analytics rules must contain kill-chain (tactics) and entity mapping information in order to be used by Fusion
+  - Microsoft Defender for Office 365
+
+- Alerts from scheduled analytics rules, both built-in and created by your security analysts. Analytics rules must contain kill-chain (tactics) and entity mapping information in order to be used by Fusion
 
 Some of the common attack detection scenarios that Fusion alerts identify include:
 
@@ -74,7 +75,7 @@ Some of the common attack detection scenarios that Fusion alerts identify includ
 
 You can configure Microsoft security solutions that are connected to Microsoft Sentinel to automatically create incidents from all alerts generated in the connected service.  
 
-For example, you can configure for Contoso to be alerted when a user who has been categorized as a high-risk threat attempts to sign in and access corporate resources.
+For example, you can configure for Contoso to be alerted when a user who is categorized as a high-risk threat attempts to sign in and access corporate resources.
 
 You can configure the following security solutions to pass their alerts to Microsoft Sentinel:
 
@@ -99,7 +100,7 @@ You can filter these alerts by severity and by specific text that is contained i
 
 ## ML behavior analytics
 
-Microsoft Sentinel Analytics includes built-in machine learning behavior analytics rules. You can't edit these built-in rules or review the rule settings. These rules use Microsoft machine learning algorithms to detect suspicious activity. Machine Learning algorithms correlate several low-fidelity incidents into a high-fidelity security incident. This saves hours that you might otherwise spend manually analyzing numerous alerts from different products and correlating them. Machine learning algorithms that analytics rules use also help reduce the noise around alerts by quickly ingesting and connecting important data.
+Microsoft Sentinel Analytics includes built-in machine learning behavior analytics rules. You can't edit these built-in rules or review the rule settings. These rules use Microsoft machine learning algorithms to detect suspicious activity. Machine Learning algorithms correlate several low-fidelity incidents into a high-fidelity security incident. This correlation saves hours that you might otherwise spend manually analyzing numerous alerts from different products and correlating them. Machine learning algorithms that analytics rules use also help reduce the noise around alerts by quickly ingesting and connecting important data.
 
 For example, by using a machine learning behavior analytics rule, you can detect an anomalous secure shell protocol (SSH) sign-in or remote desktop protocol (RDP) sign-in activity.
 

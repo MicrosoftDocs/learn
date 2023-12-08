@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/17/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: unit
+  ms.topic: learning-path
 title: Secure storage for Azure Files and Azure Blob Storage
 prerequisites: |
   *   Experience using the Azure portal to create resources.

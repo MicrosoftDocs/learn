@@ -2,7 +2,7 @@ Exact data match (EDM) allows you to create a sensitive information type (SIT) t
 
 - **Is easily updated**: Quickly adapt to changes in your sensitive data.
 - **Reduces false positives**: Accurately identify the correct information, minimizing mistakes.
-- **Fits structured data**: Works well with organized data sets like those in databases.
+- **Fits structured data**: Works well with organized data sets.
 - **Ensures privacy**: Keeps sensitive data secure and private, even from Microsoft.
 - **Integrates across services**: Functions with a range of Microsoft cloud services for better data governance.
 

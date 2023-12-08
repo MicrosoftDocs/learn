@@ -36,6 +36,6 @@ You can find Service Connector on the left-side menu under Settings. Selecting *
 
 ![Screenshot showing the Basics tab during Service Connector configuration of a container app instance.](../media/service-connector-preview-container-app.png)
 
-The Authentication enables you to configure the authentication type you’d like to use between your compute service and target service. The Networking tab enables you to configure network access to target service by updating firewall settings, network access control, using private link or Virtual Network service endpoints.
+The Authentication tab enables you to configure the authentication type you’d like to use between your compute service and target service. The Networking tab enables you to configure network access to a target service by updating firewall settings, network access control, using private link or Virtual Network service endpoints.
 
 ![Screenshot showing the Authentication tab during Service Connector configuration of a container app instance.](../media/service-connector-preview-container-app-authentication.png)

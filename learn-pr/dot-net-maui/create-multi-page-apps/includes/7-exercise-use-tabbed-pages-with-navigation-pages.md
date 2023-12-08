@@ -8,7 +8,7 @@ In the astronomy app, you've been asked to add pages that enable the user to sel
 
 1. Go to the **exercise3** folder in repo that you cloned at the start of this module, and then move to the **start** folder.
 
-1. Use Visual Studio to open the **Astronomy.sln** solution.
+1. Use Visual Studio to open the **Astronomy.sln** solution or the folder in Visual Studio Code.
 
     > [!NOTE]
     > This solution contains pages that aren't in the version of the app you used in the previous exercises.
@@ -95,4 +95,4 @@ The **AstronomicalBodiesPage** has already been added as a tab on the page that 
 
     :::image type="content" source="../media/7-navigation.png" alt-text="A screenshot of the app running with the astronomical body detail screen shown.":::
 
-1. Close the app and return to Visual Studio.
+1. Close the app and return to Visual Studio or Visual Studio Code.

@@ -1,13 +1,15 @@
 In this exercise, you use a .NET MAUI application to see the effect of the four primary layout options when applied to a view contained in a `Grid`. You don't write code in the exercise. Instead, you use the provided solution and select buttons to change the layout options of a label.
 
+[!include[](../../../includes/dotnet8-sdk-version.md)]
+
 ## Open the starter solution
 
 1. Clone or download the exercise repo from [GitHub](https://github.com/microsoftdocs/mslearn-dotnetmaui-customize-xaml-pages-layout).
 
-   > [!NOTE]
-   > If you are planning to run and debug your .NET MAUI apps on Android from Windows, it is best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
+    > [!NOTE]
+    > It is best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
 
-1. Open the starter solution from the **exercise1/Alignment** folder by using Visual Studio.
+1. Open the starter solution from the **exercise1/Alignment** folder by using Visual Studio or this folder in Visual Studio Code.
 
 ## Test the application behavior
 

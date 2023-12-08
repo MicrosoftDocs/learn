@@ -6,8 +6,7 @@ metadata:
   ms.date: 02/03/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: learning-path
 title: 'SC-300: Implement an identity management solution'
 prerequisites: |
   None

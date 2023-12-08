@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/20/2022
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-ai-vision
 title: Read Text in Images and Documents with the Azure AI Vision Service
 summary: Azure's Azure AI Vision service uses algorithms to process images and return information. This module teaches you how to use the Read API for optical character recognition (OCR).

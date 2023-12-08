@@ -7,8 +7,9 @@ metadata:
   ms.date: 11/06/2023
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: azure
-durationInMinutes: 3
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
 content: |
   [!include[](includes/2-examine-when-get-notification.md)]

@@ -49,7 +49,7 @@ To create a failed sign-in:
 
 ## Review a failed sign-in
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a [Reports Reader](/azure/active-directory/roles/permissions-reference.md#reports-reader).
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a Reports Reader.
 
 2. Navigate to your [sign-in log](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/SignIns).
 

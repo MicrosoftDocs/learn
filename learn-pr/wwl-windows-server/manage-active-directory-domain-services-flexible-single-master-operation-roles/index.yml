@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/05/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: active-directory
   ms.subservice: domain-services
 title: Manage AD DS domain controllers and FSMO roles

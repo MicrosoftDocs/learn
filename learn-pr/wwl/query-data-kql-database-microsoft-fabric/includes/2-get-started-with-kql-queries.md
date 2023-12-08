@@ -74,18 +74,22 @@ As mentioned, T-SQL can be run to a limit extent against a Microsoft Fabric KQL 
                    WHEN pickup_boroname IS NULL OR pickup_boroname = '' THEN 'Unidentified'
                    ELSE pickup_boroname
                  END;
-        ```
+    ```
      generates the following KQL Syntax. This is a powerful feature within the KQL Engine
-       ```kusto
+
+    ```kusto
     
     Trips
     | summarize ['Total Trip Distance']=sum(trip_distance) by groupByExpression1=iff((isnull(pickup_boroname) or (pickup_boroname == "")), "Unidentified", > > ickup_boroname)
     | project Borough=groupByExpression1, ['Total Trip Distance']
-        ```
+    
+    ```
      
 [ ![Screenshot of T - S Q L conversion resultset used to convert.](../media/tsql-same-results.png) ](../media/tsql-same-results-expanded.png#lightbox)
     
+
      Which produces the same outcome:
+
     
 [ ![Screenshot of K Q L Query with highlighted element of publishing to Power B I.](../media/kql-same-results.png) ](../media/kql-same-results-expanded.png#lightbox)
     

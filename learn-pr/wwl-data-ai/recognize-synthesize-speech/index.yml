@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/02/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure
 title: Fundamentals of Azure AI Speech
 summary: Learn how to recognize and synthesize speech by using Azure AI Speech.

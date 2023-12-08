@@ -1,4 +1,4 @@
-There are several concepts, syntax, and elements to be aware of to make your web pages accessible for people of all abilities. This unit provides an overview of essential topics. To fully explore the details about making accessible websites, see the recommended resources.
+There are several concepts, syntax, and elements to be aware of to make your web pages accessible for people of all abilities. This unit provides an overview of essential subjects. To fully explore the details about making accessible websites, see the recommended resources.
 
 ## HTML5 and ARIA
 
@@ -16,7 +16,7 @@ of a page: \<header\>, \<nav\>, \<main\>, and \<footer\>. If used properly, thes
 However, to maximize accessibility, it's best to use the HTML5 elements with ARIA roles. ARIA roles include: role="banner", role="navigation", role="main", and role="contentinfo." These ARIA roles
 create a landmark structure that enables people using screen readers to quickly and easily navigate to a desired part of a web page. For example, rather than having to wait for the screen reader to narrate each element one-by-one, a person can skip to a specific landmark further down a web page right away.
 
-For more information, explore the W3C [ARIA Landmarks Example](https://w3c.github.io/aria-practices/#aria_lh_main).
+For more information, explore the W3C [ARIA Landmarks Example](https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/search.html).
 
 ## Page structure
 
@@ -30,7 +30,7 @@ To avoid these issues:
 
 ## Color
 
-As with any digital content, the use of color is an essential consideration when creating a web page. You should ensure that color isn't the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. When color alone is used, people who are blind or colorblind may not be able to tell which fields are required, which items are selected, and so on. Ensure that text and images of text provide a color contrast ratio of at least 4.5 to 1. Several color contrast analyzers are available online for free. For example, you can use the [Color Contrast Analyzer in Accessibility Insights in Windows](https://accessibilityinsights.io/docs/en/windows/getstarted/colorcontrast) to ensure accessible contrast ratios.
+As with any digital content, the use of color is an essential consideration when creating a web page. You should ensure that color isn't the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. When color alone is used, people who are blind or colorblind might not be able to tell which fields are required, which items are selected, and so on. Ensure that text and images of text provide a color contrast ratio of at least 4.5 to 1. Several color contrast analyzers are available online for free. For example, you can use the [Color Contrast Analyzer in Accessibility Insights in Windows](https://accessibilityinsights.io/docs/en/windows/getstarted/colorcontrast) to ensure accessible contrast ratios.
 
  A few exceptions to this guideline include:
 
@@ -54,11 +54,11 @@ Data tables can be difficult for some assistive technology (AT) applications, su
 
 :::image type="content" source="../media/data-table-html.png" alt-text="Data table and its corresponding native HTML table elements.":::
 
-If these steps aren't taken, people who use assistive technology may have difficulty understanding the data tables on your site.
+If these steps aren't taken, people who use assistive technology might have difficulty understanding the data tables on your site.
 
 ## Form timeout and feedback
 
-If error messages aren't clearly identified, people using assistive technology may not be able to complete a form accurately on a website. Timed responses may prevent people who use assistive technology from being able to complete a form or use a web application.
+If error messages aren't clearly identified, people using assistive technology might not be able to complete a form accurately on a website. Timed responses might prevent people who use assistive technology from being able to complete a form or use a web application.
 
 After validation, you can clearly indicate error messages by:
 
@@ -67,17 +67,17 @@ After validation, you can clearly indicate error messages by:
 - Identifying error fields at the beginning of the form.
 - Identifying error fields in the label for each field.
 
-Suggestions for alternative inputs must be provided when possible. However, this approach isn't necessary when doing so would defeat the purpose of the form. For example, when the form is part of a test, a suggestion for alternative inputs could potentially provide a clue or answer to a question, which may not be appropriate.
+Suggestions for alternative inputs must be provided when possible. However, this approach isn't necessary when doing so would defeat the purpose of the form. For example, when the form is part of a test, a suggestion for alternative inputs could potentially provide a clue or answer to a question, which might not be appropriate.
 
 Error prevention should be provided for legal or financial transactions. One option is to allow people to review their inputs before making a final submission.
 
 ## Links
 
-People who use screen readers may navigate a web page by viewing a list of the web page\'s links.
+People who use screen readers can navigate a web page by viewing a list of the web page\'s links.
 
-If several links on a web page have the same name but point to different URLs, people may become confused. Ensure link names are meaningful, unique, and descriptive, whether in or out of context.
+If several links on a web page have the same name but point to different URLs, people might become confused. Ensure link names are meaningful, unique, and descriptive, whether in or out of context.
 
-Avoid generic, nondescriptive link names that appear out of context, such as in an "Additional Resources" list. A person who is using a screen reader doesn't have any context or understanding as to what the link is, or why it has been provided. These examples show a list with generic, inaccessible link names, and a list with accessible, descriptive link names.
+Avoid generic, nondescriptive link names that appear out of context, such as in an "Additional Resources" list. A person who is using a screen reader doesn't have any context or understanding as to what the link is, or why it's there. These examples show a list with generic, inaccessible link names, and a list with accessible, descriptive link names.
 
 **Accessible links example:**
 
@@ -95,7 +95,7 @@ Series of generic, nondescriptive link names
 
 People who are blind can't see images, and rely on website developers and content authors to describe them.
 
-People who have low vision may have difficulty reading an image of text because it's pixelated when magnified. Other difficulties occur when the contrast isn't strong enough, or the image is too small.
+People who have low vision might have difficulty reading an image of text because it pixelates when magnified. Other difficulties occur when the contrast isn't strong enough, or the image is too small.
 
 Provide brief, specific, and informative alternative text for images such as photos and buttons.  
 

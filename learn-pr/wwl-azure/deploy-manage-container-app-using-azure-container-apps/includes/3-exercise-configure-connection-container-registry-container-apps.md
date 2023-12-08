@@ -6,6 +6,9 @@ The following Azure resources must be available in your Resource group named RG1
 - A Virtual Network with subnets.
 - Service Bus Namespace
 
+> [!IMPORTANT]
+> The previous unit (Prepare your app deployment tools and resources) includes a Setup section that describes how to configure the recourses for this guided project module. If necessary, go back and follow the Setup instructions.
+
 You've been asked to configure your Azure resources to meet the following requirements:
 
 - Your resource group must include a user-assigned managed identity.

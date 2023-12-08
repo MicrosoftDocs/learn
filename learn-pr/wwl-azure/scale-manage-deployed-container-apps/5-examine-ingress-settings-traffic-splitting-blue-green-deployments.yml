@@ -4,7 +4,7 @@ title: Examine ingress settings for traffic-splitting and blue-green deployments
 metadata:
   title: Examine ingress settings for traffic-splitting and blue-green deployments
   description: "Examine ingress settings for traffic-splitting and blue-green deployments"
-  ms.date: 11/08/2023
+  ms.date: 11/22/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit

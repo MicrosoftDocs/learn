@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/21/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure
 title: Create a classification model with Azure Machine Learning designer
 summary: Classification is a supervised machine learning technique used to predict categories or *classes*. Learn how to create classification models using Azure Machine Learning designer.

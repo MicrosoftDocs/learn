@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/14/2022
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: microsoft-sentinel
 title: Connect Microsoft Defender XDR to Microsoft Sentinel
 summary: Learn about the configuration options and data provided by Microsoft Sentinel connectors for Microsoft Defender XDR.
@@ -28,7 +28,7 @@ products:
 - microsoft-sentinel
 - defender-for-cloud
 - defender-for-iot
-- m365-defender
+- defender-xdr
 subjects:
 - threat-protection
 - cloud-security

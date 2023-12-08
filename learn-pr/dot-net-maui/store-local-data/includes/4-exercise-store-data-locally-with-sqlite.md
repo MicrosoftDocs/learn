@@ -1,5 +1,7 @@
 In this exercise, you'll use SQLite to store information locally with an application. In the sample scenario, you decided to cache data for the social-media app to improve responsiveness. This exercise creates and uses a local SQLite database for storing information about people. You'll save the physical database file in local storage.
 
+[!include[](../../../includes/dotnet8-sdk-version.md)]
+
 ## Open the starter solution
 
 1. Clone or download the [exercise repo](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-store-local-data).
@@ -7,7 +9,7 @@ In this exercise, you'll use SQLite to store information locally with an applica
     > [!NOTE]
     > It's best to clone the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
 
-1. Use Visual Studio to open the **People.sln** solution, which you'll find in **mslearn-dotnetmaui-store-local-data** > **People**.
+1. Use Visual Studio to open the **People.sln** solution, which you'll find in **mslearn-dotnetmaui-store-local-data** > **People**, or the starter folder in Visual Studio Code.
 
     > [!NOTE]
     > Don't try and build the solution just yet. The code is incomplete and won't compile until you add the missing elements later in this exercise.
@@ -21,11 +23,10 @@ In this exercise, you'll use SQLite to store information locally with an applica
 1. Modify the class and mark it as `public`:
 
     ```csharp
-    namespace People.Models
+    namespace People.Models;
+
+    public class Person
     {
-       public class Person
-       {
-       }
     }
     ```
 
@@ -34,13 +35,12 @@ In this exercise, you'll use SQLite to store information locally with an applica
 1. Add a `string` property called `Name`. The class should look like this:
 
     ```csharp
-    namespace People.Models
+    namespace People.Models;
+
+    public class Person
     {
-        public class Person
-        {
-            public int Id { get; set; }
-            public string Name { get; set; }
-        }
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
     ```
 
@@ -54,7 +54,14 @@ In this exercise, you'll use SQLite to store information locally with an applica
 
     :::image type="content" source="../media/4-sqlite-nuget-package.png" alt-text="A screenshot showing the NuGet package manager with the sqlite-net-pcl library selected.":::
 
-1. Also search for and select **SQLitePCLRaw.provider.dynamic_cdecl**, then select **Install**.
+1. Also search for and select **SQLitePCLRaw.bundle_green**, then select **Install**.
+
+If using Visual Studio Code, open the terminal and these packages with the following commands:
+
+    ```bash
+    dotnet add package sqlite-net-pcl
+    dotnet add package SQLitePCLRaw.bundle_green
+    ```
 
 ## Add SQLite attributes
 
@@ -63,12 +70,11 @@ In this exercise, you'll use SQLite to store information locally with an applica
     ```csharp
     using SQLite;
 
-    namespace People.Models
+    namespace People.Models;
+
+    public class Person
     {
-        public class Person
-        {
-            ...
-        }
+        ...
     }
     ```
 
@@ -83,17 +89,16 @@ In this exercise, you'll use SQLite to store information locally with an applica
     ```csharp
     using SQLite;
 
-    namespace People.Models
+    namespace People.Models;
+
+    [Table("people")]
+    public class Person
     {
-       [Table("people")]
-       public class Person
-       {
-          [PrimaryKey, AutoIncrement]
-          public int Id { get; set; }
-    
-          [MaxLength(250), Unique]
-          public string Name { get; set; }
-       }
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+
+        [MaxLength(250), Unique]
+        public string Name { get; set; }
     }
     ```
 
@@ -268,6 +273,6 @@ In this exercise, you'll use SQLite to store information locally with an applica
 
 1. Experiment by adding more names and retrieving the list of stored people.
 
-1. Return to Visual Studio and stop debugging by using <kbd>Shift+F5</kbd>.
+1. Return to Visual Studio or Visual Studio Code and stop debugging by using <kbd>Shift+F5</kbd>.
 
 1. Restart the app and select **Get All People**. Verify that the names you stored previously are still stored in the database. Close the app when you're finished.

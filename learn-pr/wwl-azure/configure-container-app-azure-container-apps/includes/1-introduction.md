@@ -2,7 +2,7 @@ Azure Container Apps is a fully managed environment that enables you to run micr
 
 ## Scenario
 
-Imagine you're a DevOps engineer or developer who needs to deploy a microservice application that can handle event-driven processing. You decide to use Azure Container Apps to deploy your application. With Azure Container Apps, you can easily deploy your application without worrying about managing cloud infrastructure and complex container orchestrators. You can also take advantage of the benefits of running containers, such as dynamic scaling, while leaving behind the concerns of managing cloud infrastructure and complex container orchestrators.
+Imagine you're a DevOps engineer or developer who needs to deploy a microservice application that can handle event-driven processing. You decide to use Azure Container Apps to deploy your application. With Azure Container Apps, you can easily deploy your application without worrying about managing cloud infrastructure and complex container orchestrators. You can also take advantage of the benefits of running containers, such as dynamic scaling.
 
 ## Table of contents
 

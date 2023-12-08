@@ -4,11 +4,10 @@ title: Examine constrained vCPU capable virtual machine sizes
 metadata:
   title: Examine constrained vCPU capable virtual machine sizes
   description: "Examine constrained vCPU capable virtual machine sizes"
-  ms.date: 04/21/2023
+  ms.date: 12/06/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-examine-constrained-vcpu-capable-virtual-machine-sizes.md)]

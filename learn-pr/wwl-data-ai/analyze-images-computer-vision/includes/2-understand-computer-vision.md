@@ -22,36 +22,50 @@ The array of pixel values for this image is two-dimensional (representing rows a
 
 ```
 Red:
- 0   0   0   0   0   0   0  
- 0   0   0   0   0   0   0
- 0   0  255 255 255  0   0
- 0   0  255 255 255  0   0
- 0   0  255 255 255  0   0
- 0   0   0   0   0   0   0
- 0   0   0   0   0   0   0
+ 150  150  150  150  150  150  150  
+ 150  150  150  150  150  150  150
+ 150  150  255  255  255  150  150
+ 150  150  255  255  255  150  150
+ 150  150  255  255  255  150  150
+ 150  150  150  150  150  150  150
+ 150  150  150  150  150  150  150
 
 Green:
- 0   0   0   0   0   0   0  
- 0   0   0   0   0   0   0
- 0   0  255 255 255  0   0
- 0   0  255 255 255  0   0
- 0   0  255 255 255  0   0
- 0   0   0   0   0   0   0
- 0   0   0   0   0   0   0
+ 0    0    0    0    0    0    0          
+ 0    0    0    0    0    0    0
+ 0    0   255  255  255   0    0
+ 0    0   255  255  255   0    0
+ 0    0   255  255  255   0    0
+ 0    0    0    0    0    0    0
+ 0    0    0    0    0    0    0
 
 Blue:
- 0   0   0   0   0   0   0  
- 0   0   0   0   0   0   0
- 0   0  255 255 255  0   0
- 0   0  255 255 255  0   0
- 0   0  255 255 255  0   0
- 0   0   0   0   0   0   0
- 0   0   0   0   0   0   0
+ 255  255  255  255  255  255  255  
+ 255  255  255  255  255  255  255
+ 255  255   0    0    0   255  255
+ 255  255   0    0    0   255  255
+ 255  255   0    0    0   255  255
+ 255  255  255  255  255  255  255
+ 255  255  255  255  255  255  255
 ```
 
 Here's the resulting image:
 
 ![Diagram of a color image.](../media/color-square.png)
+
+The purple squares are represented by the combination: 
+```
+Red: 150 
+Green: 0 
+Blue: 255 
+```
+
+The yellow squares in the center are represented by the combination: 
+```
+Red: 255
+Green: 255
+Blue: 0
+```
 
 ## Using filters to process images
 

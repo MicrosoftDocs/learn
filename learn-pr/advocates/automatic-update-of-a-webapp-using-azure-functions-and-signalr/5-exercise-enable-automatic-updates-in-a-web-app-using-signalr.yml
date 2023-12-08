@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/31/2019
   author: craigshoemaker
   ms.author: cshoe
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise – Enable automatic updates in a web application using SignalR Service
 interactive: bash
 azureSandbox: true

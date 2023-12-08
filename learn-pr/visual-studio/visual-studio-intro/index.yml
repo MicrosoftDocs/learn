@@ -8,6 +8,7 @@ metadata:
   author: anandmeg
   ms.author: meghaanand
   manager: jmartens
+  hidden: true
   ms.topic: module-intro-to-product
   ms.prod: visual-studio-windows
 title: Introduction to Visual Studio

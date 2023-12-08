@@ -58,7 +58,7 @@ Like iOS, Android has a similar security model around network communication. Thi
 
 ### Permit clear text traffic
 
-To permit clear text traffic, create a new AML file in the **Resources/xml** folder named **network_security_config.xml** (You might also need to create the **xml** folder). The **Resources** folder is in the **Android** platform folder in Solution Explorer. Inside this file, add a `network-security-config` element with a `domain-config` child element. The following configuration enables clear text traffic for a specific domain and for an IP address:
+To permit clear text traffic, create a new XML file in the **Resources/xml** folder named **network_security_config.xml** (You might also need to create the **xml** folder). The **Resources** folder is in the **Android** platform folder in Solution Explorer. Inside this file, add a `network-security-config` element with a `domain-config` child element. The following configuration enables clear text traffic for a specific domain and for an IP address:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
