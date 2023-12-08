@@ -2632,3 +2632,8 @@ achievements:
   title: Use classes, properties, and methods
   summary: This lesson shows how to use a class and access the properties and the methods of that class. Aside from instantiating objects, properties and methods are the primary way one interacts with objects.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.introduction-to-microsoft-graph-powershell.badge
+  type: badge
+  title: Introduction to Microsoft Graph PowerShell
+  summary: Characterize the types of business processes that Microsoft Graph PowerShell can automate. Describe the commands and permissions needed to automate processes with Microsoft Graph PowerShell.
+  iconUrl: /training/achievements/introduction-to-microsoft-graph-powershell-learn-module.svg

@@ -31020,6 +31020,41 @@
     "source_path": "learn-pr/wwl-azure/use-classes-properties-method/9-summary.md",
     "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/introduction-to-microsoft-graph-powershell/index.yml",
+    "redirect_url": "https://learn.microsoft.com/powershell/microsoftgraph/overview?view=graph-powershell-1.0",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/introduction-to-microsoft-graph-powershell/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/powershell/microsoftgraph/overview?view=graph-powershell-1.0",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/introduction-to-microsoft-graph-powershell/2-what-is-microsoft-graph-powershell.yml",
+    "redirect_url": "https://learn.microsoft.com/powershell/microsoftgraph/overview?view=graph-powershell-1.0",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/introduction-to-microsoft-graph-powershell/3-how-microsoft-graph-powershell-works.yml",
+    "redirect_url": "https://learn.microsoft.com/powershell/microsoftgraph/overview?view=graph-powershell-1.0",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/introduction-to-microsoft-graph-powershell/4-when-to-use-microsoft-graph-powershell.yml",
+    "redirect_url": "https://learn.microsoft.com/powershell/microsoftgraph/overview?view=graph-powershell-1.0",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/introduction-to-microsoft-graph-powershell/5-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/powershell/microsoftgraph/overview?view=graph-powershell-1.0",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/introduction-to-microsoft-graph-powershell/6-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/powershell/microsoftgraph/overview?view=graph-powershell-1.0",
+    "redirect_document_id": false
   }
   ]
 }
