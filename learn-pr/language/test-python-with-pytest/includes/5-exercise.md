@@ -124,7 +124,7 @@ The operation of the lists isn’t being used to return the value. Since it isn'
     ```
 
 > [!NOTE]
-> Since the function is able to work with more values of different casing, more tests should be added to cover those variations. This would prevent future changes to the function from cauwsing a different (unexpected) behavior.
+> Since the function is able to work with more values of different casing, more tests should be added to cover those variations. This would prevent future changes to the function from causing a different (unexpected) behavior.
 
 ## Step 4 - Add new code with tests
 
@@ -140,7 +140,7 @@ In this case, the `admin_command()` function is trusting blindly that the `comma
     import pytest
     ```
 
-    - Now append a new test to the class to check on the exception. This test should expect a `TypeError` from the function when a non_list value is passed to it:
+    - Now append a new test to the class to check on the exception. This test should expect a `TypeError` from the function when the value passed to it is not a list:
 
     ```python
         def test_non_list_commands(self):

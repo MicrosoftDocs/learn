@@ -161,7 +161,7 @@ class TestIsDone:
 
 There aren't any strict rules as to when to use a class instead of a function. It's always a good idea to follow the conventions in current projects and teams that you're working with. Here are some general questions to ask that can help you determine when to use a class:
 
-- Do your tests need a similar setup or cleanup routine?
+- Do your tests need similar setup or cleanup helper code?
 - Does grouping your tests together make logical sense?
 - Are there at least a few tests in your test suite?
-- Could your tests benefit from a common set of helper routines?
+- Could your tests benefit from a common set of helper functions?
