@@ -1,4 +1,4 @@
-Azure Site Recovery replicates your virtual machine workloads between Azure regions. You can also use Site Recovery to migrate VMs from other environments, such as on-premises infrastructure, to Azure.  You'll see that Site Recovery does much more than just backing up and restoring infrastructure.
+Azure Site Recovery replicates your virtual-machine workloads between Azure regions. You can also use Site Recovery to migrate VMs from other environments—such as on-premises infrastructure—to Azure. You'll learn that Site Recovery does much more than just backing up and restoring infrastructure.
 
 Let's assume your organization recently suffered an outage caused by a hurricane. Here, we'll learn about the Site Recovery features that help handle future interruptions. We'll also identify the Site Recovery features required to protect your Azure VMs by enabling failing over to a secondary Azure region.
 
@@ -6,9 +6,9 @@ Let's assume your organization recently suffered an outage caused by a hurricane
 
 ![Diagram showing a VM environment that is unavailable and failing over to a secondary environment.](../media/2-failover.png)
 
-Site Recovery manages the orchestration of disaster recovery in Azure. It's designed to replicate workloads from a primary site or region to a secondary site. If the primary site has an issue, Site Recovery can replicate the protected VMs to another Azure region.
+Site Recovery manages disaster-recovery orchestration in Azure. It's designed to replicate workloads from a primary site or region to a secondary site. If the primary site has an issue, Site Recovery can replicate the protected VMs to another Azure region.
 
-Site Recovery manages the replication of Azure VMs between regions or the replication of on-premises VMs to Azure and back again. Because it's built natively into Azure, Site Recovery can run seamless tests (disaster recovery drills) without affecting production workloads.
+Site Recovery manages replicating Azure VM between regions or replicating on-premises VMs to Azure and back again. Because it's built natively into Azure, Site Recovery can run seamless tests (disaster recovery drills) without affecting production workloads.
 
 ### Azure virtual machine protection
 
@@ -34,7 +34,7 @@ Site Recovery can use accelerated networking for Azure VMs, reducing jitter and 
 
 ### Disaster recovery drills
 
-Site Recovery enables you to do disaster recovery drills after all the prerequisite configuration tasks are complete. Running a DR drill enables you to validate the replication strategy for your environment without losing data, having downtime, or compromising your production environment. Drills don't affect your production environment and are a way to test that you have correctly configured everything.
+Site Recovery enables you to do disaster recovery drills after all the prerequisite configuration tasks are complete. Running a DR drill allows you to validate the replication strategy for your environment without losing data, having downtime, or compromising your production environment. Drills don't affect your production environment and are a way to test that you've correctly configured everything.
 
 ### Flexible failover and failback
 
