@@ -1,4 +1,4 @@
-In this exercise, you use natural language to interact with an Azure OpenAI deployment in the Completions playground. 
+In this exercise, you use natural language to interact with an Azure OpenAI deployment in the completions playground. 
 
 You might be familiar with natural language generative AI from applications like ChatGPT, but you can use these models for more than chatbots. Let's explore other useful applications of these models.
 
@@ -10,9 +10,9 @@ You might be familiar with natural language generative AI from applications like
 > - An Azure OpenAI resource with a model deployed. For more information about model deployment, see [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource).
 >
 
-Let's get started by opening the [Azure OpenAI Completions playground](https://oai.azure.com/portal/playground) and selecting a model deployment.
+Let's get started by opening the [Azure OpenAI completions playground](https://oai.azure.com/portal/playground) and selecting a model deployment.
 
-:::image type="content" source="../media/completions-playground-2.png" alt-text="Screenshot of Azure OpenAI Completions playground with the deployment name highlighted in a red box." lightbox="../media/completions-playground-2.png":::
+:::image type="content" source="../media/completions-playground-2.png" alt-text="Screenshot of Azure OpenAI completions playground with the deployment name highlighted in a red box." lightbox="../media/completions-playground-2.png":::
 
 ## Extract information
 
@@ -192,4 +192,4 @@ Even though the outputs are generated based on frequency of similar content in t
     So learn it and you'll be second to none!
     ```
 
-How was the limerick? If you don't like it, you can always ask the Completions playground to generate a new limerick by using the blue circular arrow icon.
+How was the limerick? If you don't like it, you can always ask the completions playground to generate a new limerick by using the blue circular arrow icon.
