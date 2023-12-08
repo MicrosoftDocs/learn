@@ -2,7 +2,7 @@
 uid: learn.create-first-aks-edge-essential.exercise-deploy-aks-edge-essentials
 title: Exercise - Deploy AKS Edge Essentials single machine K3S cluster
 sandbox: true
-interactive: powershell
+interactive: bash
 metadata:
   title: Exercise - Deploy AKS Edge Essentials single machine K3S cluster
   description: This content is a part of Create your first Azure Kubernetes Service (AKS) Edge Essentials single machine cluster.

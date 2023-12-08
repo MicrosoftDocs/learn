@@ -8,83 +8,196 @@ Let's create the Azure VM with Windows 11 Enterprise using Azure Cloud Shell.
 
 1. Execute the following command in the Azure Cloud Shell to set the variables for creating the Azure VM:
 
-    ```powershell
-    $resourcegroup = "<rgn>[sandbox resource group name]</rgn>"
-    $location = "westus3"
-    $vmname = "myVM"
-    $username = "azureuser"
-    $randomIdentifier = Get-Random
-    $adminpassword = "Admin-$randomIdentifier-Password!"
-    $securedadminpassword = ConvertTo-SecureString $adminpassword -AsPlainText -Force
-    $credential = New-Object System.Management.Automation.PSCredential($username, $securedadminpassword)
-    Write-Output "Admin Password: $adminpassword"
+    ```azurecli
+    resourcegroup=<rgn>[sandbox resource group name]</rgn>
+    location="westus3"
+    vmname="myVM"
+    username="azureuser"
+    let "randomIdentifier=$RANDOM*$RANDOM"
+    adminpassword="Admin-$randomIdentifier-Password!"
+
+    echo Admin Password: $adminpassword
     ```
 
     > [!NOTE]
     > Take a note of the `Admin Password`. You will need it later.
 
-1. Create the Azure VM with Windows 11 Enterprise using the [New-AzVm](/powershell/module/az.compute/new-azvm) cmdlet.
+1. Create the Azure VM with Windows 11 Enterprise using the [az vm create](/cli/azure/vm#az-vm-create) command.
 
-    ```powershell
-    $newazvmparams = @{
-        ResourceGroupName = $resourcegroup
-        Location = $location
-        Name = $vmname
-        Image = "MicrosoftVisualStudio:windowsplustools:base-win11-gen2:latest"
-        VirtualNetworkName = "myVnet"
-        SubnetName = "mySubnet"
-        SecurityGroupName = "myNetworkSecurityGroup"
-        PublicIpAddressName = "myPublicIpAddress"
-        Credential = $credential
-        Size = "Standard_D2s_v3"
-    }
-    New-AzVm @newazvmparams
+    ```azurecli
+    az vm create \
+        --resource-group $resourcegroup \
+        --name $vmname \
+        --image MicrosoftVisualStudio:windowsplustools:base-win11-gen2:latest \
+        --public-ip-sku Standard \
+        --admin-username $username \
+        --admin-password $adminpassword \
+        --size Standard_D2s_v3
     ```
 
     It takes a few minutes to create the VM and supporting resources. The following example output shows the VM create operation was successful.
 
     ```output
-    ResourceGroupName        : learn-rg-0000                              
-    Id                       : /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-rg-0000/providers/Microsoft.Compute/virtualMachines/myVM            
-    VmId                     : 00000000-0000-0000-0000-000000000000                                    
-    Name                     : myVM                                                                    
-    Type                     : Microsoft.Compute/virtualMachines                                       
-    Location                 : westus3                                                                  
-    Tags                     : {}                                                                      
-    HardwareProfile          : {VmSize}                                                                
-    NetworkProfile           : {NetworkInterfaces}                                                     
-    OSProfile                : {ComputerName, AdminUsername, WindowsConfiguration, Secrets, AllowExtensionOperations RequireGuestProvisionSignal}                                             
-    ProvisioningState        : Succeeded                                                               
-    StorageProfile           : {ImageReference, OsDisk, DataDisks, DiskControllerType}                 
-    FullyQualifiedDomainName : myvm-000000.westus.cloudapp.azure.com                                   
-    TimeCreated              : 13/15/2023 2:33:56 PM    
+    {
+        "fqdns": "",
+        "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-rg-0000/providers/Microsoft.Compute/virtualMachines/myVM",
+        "location": "westus",
+        "macAddress": "00-00-00-00-00-00",
+        "powerState": "VM running",
+        "privateIpAddress": "10.0.0.4",
+        "publicIpAddress": "104.40.70.15",
+        "resourceGroup": "learn-rg-0000",
+        "zones": ""
+    }
+
+## Download AKS Edge Essentials
+
+Let's download the K3s installer and Windows node files to [Azure file share](/azure/storage/files/storage-how-to-use-files-windows) and then mount it in the VM so we can access it using the drive with letter *Z*.
+
+1. Take a note of the storage account name, key and the Azure file share name. You will need it later.
+
+    ```azurecli
+    storageAccountName=$(az storage account list --resource-group $resourcegroup --query '[0].name' -o tsv)
+    storageAccountKey=$(az storage account keys list --resource-group $resourcegroup --account-name $storageAccountName --query '[0].value' -o tsv)
+    storageAccountFile=$(az storage share list --account-name $storageAccountName --account-key $storageAccountKey --query '[0].name' -o tsv)
+
+    echo Storage Account Name: $storageAccountName
+    echo Storage Account Key: $storageAccountKey
+    echo Storage Account File: $storageAccountFile
+    ```
+
+1. Download K3s installer and Windows node files to the Azure file share.
+
+    ```azurecli
+    curl -L -o ~/clouddrive/AksEdge-Learn.msi "https://aka.ms/aks-edge/k3s-msi" &
+    curl -L -o ~/clouddrive/AksEdgeWindows-Learn.zip "https://aka.ms/aks-edge/windows-node-zip" &
+    ```
+
+1. Run the Powershell [Get-AzRemoteDesktopFile](/powershell/module/az.compute/get-azremotedesktopfile) cmdlet to get the RDP file to connect to the VM:
+
+    ```azurecli
+    publicIp=$(az vm show -d -g $resourcegroup -n $vmname --query publicIps -o tsv)
+    echo full address:s:$publicIp > ./myvm.rdp
+    echo username:s:$username >> ./myvm.rdp
+    ```
+
+1. Download the RDP file to your local machine.
+
+    ```azurecli
+    download myvm.rdp
+    ```
+
+1. Open the RDP file and connect to the VM using *azureuser* as the **user**, and the `Admin Password` you took a note earlier, as the **password**.
+
+> [!TIP]
+> When logging in for the first time to the Windows 11 Enterprise Azure VM, you can accept all options by clicking **Next**.
+
+The following commands are executed in the PowerShell command line of the VM.
+
+1. Open the PowerShell command line by clicking on the **Start** menu and typing **PowerShell**.
+
+1. Run the following PowerShell commands to mount the Azure file share in the VM with the letter *Z*. Replace the values of `[YOUR_STORAGE_ACCOUNT_NAME]`, `[YOUR_STORAGE_ACCOUNT_KEY]` and `[YOUR_STORAGE_ACCOUNT_FILE]` with the values you took a note earlier.
+
+    ```powershell
+    $storageAccountName = "[YOUR_STORAGE_ACCOUNT_NAME]"
+    $storageAccountKey = "[YOUR_STORAGE_ACCOUNT_KEY]"
+    $storageAccountFile = "[YOUR_STORAGE_ACCOUNT_FILE]"
+
+    # Save the password so the drive will persist on reboot
+    cmd.exe /C "cmdkey /add:`"$storageAccountName.file.core.windows.net`" /user:`"localhost\$storageAccountName`" /pass:`"$storageAccountKey`""
+
+    # Mount the drive with the letter Z
+    New-PSDrive -Name Z -PSProvider FileSystem -Root "\\$storageAccountName.file.core.windows.net\$storageAccountFile" -Persist
     ```
 
 ## Deploy AKS Edge Essentials
 
-Now that the VM is created, let's prepare the machine for AKS Edge Essentials and run the `AksEdgeQuickStartForLearn.ps1` script by using [Managed Run Commands](/azure/virtual-machines/windows/run-command-managed) in the Azure Cloud Shell. Alternatively you could connect from your local machine via Remote Desktop Connection (RDP), download and run the PowerShell script there.
+Now that the VM is created and the install files downloaded, let's run the `AksEdgeQuickStart-v2.ps1` PowerShell script for easy deployment of AKS Edge Essentials.
 
-<!-- TODO: Publish Script to main! I may need the RunAsPassword and RunAsUser -->
-<!-- RunAsUser = $username -->
-<!-- RunAsPassword = $adminpassword -->
+> [!NOTE]
+> The following commands are executed in the PowerShell command line of the VM.
 
-<!-- When deploying it over Azure cloudshell I need to run this in the VM to be able to use kubectl: Get-AksEdgeKubeConfig -->
-
- <!--TODO if 2 params $parameters = @(@{Name='name';Value='Sergio'},@{Name='lastname';Value='Azevedooo'}) -->
-
-1. Run the PowerShell [Set-AzVMRunCommand](/powershell/module/az.compute/set-azvmruncommand) cmdlet to deliver the PowerShell script to the VM and execute it.
+1. Open the PowerShell command line by clicking on the **Start** menu and typing **PowerShell**. Then run the following command to change the working directory to `C:\akseeLearn`.
 
     ```powershell
-    $setazvmrparamsScript = @{
-        ResourceGroupName = $resourcegroup
-        VMName = $vmname
-        Location = $location
-        RunCommandName = "deployAKSEE"
-        SourceScriptUri = "https://raw.githubusercontent.com/asergaz/AKS-Edge/learnmodule/tools/scripts/AksEdgeQuickStart/AksEdgeQuickStartForLearn.ps1"
-        Parameter = @(@{Name='WindowsNode';Value=$true})
-        NoWait = $true
+    if (!(Test-Path -Path "C:\akseeLearn")) {
+        New-Item -ItemType Directory -Path "C:\akseeLearn" | Out-Null
     }
-    Set-AzVMRunCommand @setazvmrparamsScript
+    Push-Location "C:\akseeLearn"
+    ```
+
+1. Set the parameters to create a single machine K3S cluster with a Linux and Windows node. The `aideuser-config.json` and `aksedge-config.json` files will be used to run the `AksEdgeQuickStart-v2.ps1` PowerShell script.
+
+    ```powershell
+    $aideuserConfig = @"
+    {
+        "SchemaVersion": "1.1",
+        "Version": "1.0",
+        "AksEdgeProduct": "AKS Edge Essentials - K3s",
+        "AksEdgeProductUrl": "Z:\\AksEdge-Learn.msi",
+        "Azure": {
+            "SubscriptionName": "",
+            "SubscriptionId": "",
+            "TenantId": "",
+            "ResourceGroupName": "",
+            "ServicePrincipalName": "",
+            "Location": "",
+            "CustomLocationOID":"",
+            "Auth":{
+                "ServicePrincipalId":"",
+                "Password":""
+            }
+        },
+        "AksEdgeConfigFile": "aksedge-config.json"
+    }
+    "@
+
+    echo $aideuserConfig | Out-File -FilePath "aideuser-config.json"
+
+    $aksedgeConfig = @"
+    {
+        "SchemaVersion": "1.9",
+        "Version": "1.0",
+        "DeploymentType": "SingleMachineCluster",
+        "Init": {
+            "ServiceIPRangeSize": 10
+        },
+        "Network": {
+            "NetworkPlugin": "flannel",
+            "InternetDisabled": false
+        },
+        "User": {
+            "AcceptEula": true,
+            "AcceptOptionalTelemetry": true
+        },
+        "Machines": [
+            {
+                "LinuxNode": {
+                    "CpuCount": 2,
+                    "MemoryInMB": 2048,
+                    "DataSizeInGB": 20
+                },
+                "WindowsNode": {
+                    "CpuCount": 2,
+                    "MemoryInMB": 2048
+                }
+            }
+        ]
+    }
+    "@
+
+    echo $aksedgeConfig | Out-File -FilePath "aksedge-config.json"
+    ```
+
+1. Download and run the `AksEdgeQuickStart-v2.ps1` PowerShell script.
+
+    ```powershell
+    $url = "https://raw.githubusercontent.com/Azure/AKS-Edge/main/tools/scripts/AksEdgeQuickStart/AksEdgeQuickStart-v2.ps1"
+    Invoke-WebRequest -Uri $url -OutFile .\AksEdgeQuickStart-v2.ps1
+    Unblock-File .\AksEdgeQuickStart-v2.ps1
+    Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
+
+    .\AksEdgeQuickStart-v2.ps1 -AideUserConfigFilePath .\aideuser-config.json -AksEdgeConfigFilePath .\aksedge-config.json
     ```
 
     > [!NOTE]
@@ -94,27 +207,14 @@ Now that the VM is created, let's prepare the machine for AKS Edge Essentials an
 
     - In the VM working folder `C:\akseeLearn`, the script downloads the GitHub archive of [Azure/AKS-Edge](https://github.com/Azure/AKS-Edge) and unzips to a folder **AKS-Edge-main**.
     - Invokes the `Start-AideWorkflow` function that performs the following tasks:
-      - Downloads and installs the AKS Edge Essentials MSI.
-      - Downloads Windows node files.
+      - Unzips Windows install files.
+      - Installs the AKS Edge Essentials MSI.
       - Installs required host OS features (`Install-AksEdgeHostFeatures`).
       - Deploys a single machine K3S cluster with a Linux and Windows node.
 
-1. Run the PowerShell [Get-AzVMRunCommand](/powershell/module/az.compute/get-azvmruncommand) cmdlet to retrieve the output of the PowerShell script you executed in the VM:
-
-    ```powershell
-    $getazvmparamsScript = @{
-        ResourceGroupName = $resourcegroup
-        VMName = $vmname
-        RunCommandName = "deployAKSEE"
-        Expand = "InstanceView"
-    }
-    while($true) {
-        (Get-AzVMRunCommand @getazvmparamsScript).InstanceView
-        Start-Sleep -Seconds 10
-    }
-    ```
-
     The following example with the last lines of the output, shows the download and installation of AKS Edge Essentials K3s distribution was successful:
+
+    <!-- TODO: NEED TO CHANGE THIS WITH EXAMPLE FROM THE VM using ```powershell``` -->
 
     ```output
     ExecutionState   : Succeeded
@@ -167,38 +267,8 @@ Now that the VM is created, let's prepare the machine for AKS Edge Essentials an
     Statuses         : 
     ```
 
-    > [!NOTE]
-    > This will create an infinite loop. When the output looks similar to the example above you can stop it by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd>. Since this takes around 30 minutes to complete, you can stop it now and continue to the next learning unit, we will get back to this later.
-
-Now that AKS Edge Essentials is deployed we will log in to the VM via RDP to further configure our single machine K3S cluster.
-
-1. Run the Powershell [Get-AzRemoteDesktopFile](/powershell/module/az.compute/get-azremotedesktopfile) cmdlet to get the RDP file to connect to the VM:
-
-    ```powershell
-    $getazrdpfileparams = @{
-        ResourceGroupName = $resourcegroup
-        Name = $vmname
-        LocalPath = "./myvm.rdp"
-    }
-    Get-AzRemoteDesktopFile @getazrdpfileparams
-    ```
-
-1. In Azure Cloud Shell, select **Upload/Download Files** to download the RDP file to your local machine.
-
-1. Open the RDP file and connect to the VM using *azureuser* as the **user**, and the `Admin Password` you took a note earlier, as the **password**.
-
-The following commands are executed in the PowerShell command line of the VM.
-
 > [!TIP]
-> When logging in for the first time to the Windows 11 Enterprise Azure VM, you can accept all options by clicking **Next**.
-
-1. Open the PowerShell command line by clicking on the **Start** menu and typing **PowerShell**.
-
-1. Run the PowerShell [Get-AksEdgeKubeConfig](/azure/aks/hybrid/reference/aks-edge-ps/get-aksedgekubeconfig) cmdlet to pull the KubeConfig file from the Kubernetes Linux node so that kubectl on the host can access the AKS Edge Essentials cluster, and then press <kbd>Enter</kbd> to confirm:
-
-    ```powershell
-    Get-AksEdgeKubeConfig
-    ```
+> Since this takes around 30 minutes to complete, you can continue to the next learning unit, we will get back to this later.
 
 1. Confirm that the deployment was successful by running the following command:
 
