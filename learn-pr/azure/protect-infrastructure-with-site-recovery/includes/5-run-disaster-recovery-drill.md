@@ -52,7 +52,7 @@ Site Recovery gives you the flexibility to run a full DR test scenario for all o
 
 Just like testing the single VMs, the same test cleanup is available for everything included in the recovery plan.
 
-:::image type="content" source="../media/5-test-success.png" alt-text="Screenshot that shows the option to cleanup a test failover." lightbox="../media/5-test-success.png":::
+:::image type="content" source="../media/5-test-success.png" alt-text="Screenshot that shows the option to clean up a test failover." lightbox="../media/5-test-success.png":::
 
 ## Difference between a drill and production failover
 
