@@ -2627,3 +2627,8 @@ achievements:
   title: Implement properties within a class
   summary: This module discusses the use of properties and the concepts of read-write, read-only, and write-only properties. The concepts of declaring and passing variable by reference and by value are also introduced.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.use-classes-properties-method.badge
+  type: badge
+  title: Use classes, properties, and methods
+  summary: This lesson shows how to use a class and access the properties and the methods of that class. Aside from instantiating objects, properties and methods are the primary way one interacts with objects.
+  iconUrl: /training/achievements/generic-badge.svg
