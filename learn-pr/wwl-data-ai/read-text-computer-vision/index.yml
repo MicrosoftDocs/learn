@@ -7,8 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: module
-  ms.service: artificial-intelligence
-  ms.subservice: computer-vision
+  ms.service: azure-ai-vision
 title: Fundamentals of optical character recognition
 summary: Optical character recognition (OCR) enables artificial intelligence (AI) systems to read text in images, enabling applications to extract information from photographs, scanned documents, and other sources of digitized text.
 abstract: |
