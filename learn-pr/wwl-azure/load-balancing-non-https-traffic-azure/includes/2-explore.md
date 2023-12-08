@@ -34,7 +34,6 @@ The table below summarizes these categorizations for each Azure load balancing s
 | Application Gateway | Regional        | HTTP(S)             |
 | Azure Load Balancer | Regional or Global      | non-HTTP(S)         |
 
-
 ## Choosing a load balancing option for Azure
 
 When choosing an appropriate load balancing option, there are some key factors to consider:
@@ -47,8 +46,7 @@ When choosing an appropriate load balancing option, there are some key factors t
 
 The flowchart below will help you to select the most appropriate load-balancing solution for your application, by guiding you through a set of key decision criteria in order to reach a recommendation.
 
-:::image type="content" source="../media/load-balancing-decision-tree-3f132096.png" alt-text="flow chart to help select a load-balancing solution for your application":::
-
+:::image type="content" source="../media/load-balancing-decision-tree-3f132096.png" alt-text="flow chart to help select a load-balancing solution for your application.":::
 
 **As every application will have its own unique requirements, you should only use this flowchart and the suggested recommendation as a starting point, and then perform a more detailed evaluation yourself in order to select the best option for your environment.**
 
@@ -61,15 +59,15 @@ You can use the **Azure Load Balancing** page in the Azure portal to help you gu
 - Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
 - In the search box at the top of the page, type load balancing. When **Load balancing - help me choose (Preview)** appears in the search results, select it.
 
-    :::image type="content" source="../media/choosing-load-balancing-service-1-b14cd6e9.png" alt-text="Azure portal screenshot of Load balancing - help me choose":::
+    :::image type="content" source="../media/choosing-load-balancing-service-1-b14cd6e9.png" alt-text="Azure portal screenshot of Load balancing - help me choose.":::
 
-- Answer the Yes or No questions on this page to get a recommended solution. Note, that the final recommended solution may be a combination of multiple load balancing services.
+- Answer the Yes or No questions on this page to get a recommended solution. Note that the final recommended solution may be a combination of multiple load balancing services.
 
-    :::image type="content" source="../media/choosing-load-balancing-service-2-a7b58c9f.png" alt-text="Azure portal screenshot load balancing help me choose":::
+    :::image type="content" source="../media/choosing-load-balancing-service-2-a7b58c9f.png" alt-text="Azure portal screenshot load balancing help me choose.":::
 
 - Depending on what answers you give, the list of potential load balancing services change.
 
-    :::image type="content" source="../media/choosing-load-balancing-service-3-936f9c14.png" alt-text="Azure portal screenshot Load balancing help me choose":::
+    :::image type="content" source="../media/choosing-load-balancing-service-3-936f9c14.png" alt-text="Azure portal screenshot Load balancing help me choose.":::
 
 - Optionally, you can also select the **Service comparison** or **Tutorial** tabs for more information and training on the different load balancing services.
 

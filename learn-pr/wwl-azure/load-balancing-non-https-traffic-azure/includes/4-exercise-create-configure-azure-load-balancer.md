@@ -4,7 +4,7 @@ In this lab, you will create an internal load balancer for the fictional Contoso
 
 ## Architecture diagram
 
-:::image type="content" source="../media/4-exercise-create-configure-azure-load-balancer.png" alt-text="internal standard loadbalancer diagram":::
+:::image type="content" source="../media/4-exercise-create-configure-azure-load-balancer.png" alt-text="Diagram of internal standard load balancer.":::
 
 ## Objectives
 

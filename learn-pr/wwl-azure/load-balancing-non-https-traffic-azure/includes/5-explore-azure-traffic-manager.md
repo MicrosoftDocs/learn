@@ -206,7 +206,7 @@ As mentioned earlier, each Traffic Manager profile can only specify one traffic-
 
 The example and diagrams below illustrate the combining of the **Performance** and **Weighted** traffic-routing methods in nested profiles.
 
-### Example: combining 'performance' and 'weighted' traffic routing methods using nested profiles
+### Example: Combining 'performance' and 'weighted' traffic routing methods using nested profiles
 
 Suppose that you deployed an application in the following Azure regions: West US, West Europe, and East Asia. You use the **Performance** traffic-routing method to distribute traffic to the region closest to the user.
 
@@ -250,7 +250,7 @@ This example shows how to create and configure a new Traffic Manager profile to 
 
 From the Azure portal home page, From the Azure portal home page, navigate to the Global Search bar and search **Traffic Manager profile**. Then select **Traffic Manager profiles**.
 
-:::image type="content" source="../media/create-traffic-manager-profile-1-1eb497fc.png" alt-text="Selecting 'Traffic Manager profile' from the 'Create a resource' page.":::
+:::image type="content" source="../media/create-traffic-manager-profile-1-1eb497fc.png" alt-text="Screenshot of Selecting 'Traffic Manager profile' from the 'Create a resource' page.":::
 
 Select **+ Create** or the **Create traffic manager profile** button.
 
@@ -292,7 +292,7 @@ You then enter the required information on the **Add endpoint** page:
     Type
   :::column-end:::
   :::column:::
-    Select the type of endpoint to add. You can select from the following endpoint types: **Azure endpoints** **External endpoints** **Nested endpoints** Depending on which endpoint type you select here, the remaining options differ.
+    Select the type of endpoint to add. You can select from the following endpoint ttypes: <br>**Azure endpoints** <br>**External endpoints** <br>**Nested endpoints** <br>Depending on which endpoint type you select here, the remaining options differ.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -340,7 +340,7 @@ You then enter the required information on the **Add endpoint** page:
     Minimum child endpoints **(for Nested endpoints only)**
   :::column-end:::
   :::column:::
-    Specify the minimum number of endpoints that must be available in the *child* Traffic Manager profile for it to receive traffic. If the available endpoints in the child profile falls below this threshold, this endpoint is considered as degraded.
+    Specify the minimum number of endpoints that must be available in the *child* Traffic Manager profile for it to receive traffic. If the available-endpoints number in the child profile falls below this threshold, this endpoint is considered as degraded.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -348,7 +348,7 @@ You then enter the required information on the **Add endpoint** page:
     Custom Header setting **(optional setting)**
   :::column-end:::
   :::column:::
-    You can configure custom headers for your endpoint, using the following paired formatting: *host:contoso.com,customheader:contoso* The maximum number of supported pairs is 8, and they're applicable for both the HTTP and HTTPS protocols. These endpoint Custom Header settings override the settings configured in a profile.
+    You can configure custom headers for your endpoint, using the following paired formatting: <br>*host:contoso.com,customheader:contoso* <br>The maximum number of supported pairs is 8, and they're applicable for both the HTTP and HTTPS protocols. These endpoint Custom Header settings override the settings configured in a profile.
   :::column-end:::
 :::row-end:::
 :::row:::

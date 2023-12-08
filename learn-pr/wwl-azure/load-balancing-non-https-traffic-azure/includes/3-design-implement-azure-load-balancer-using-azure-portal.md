@@ -10,7 +10,6 @@ An [**internal load balancer**](/azure/load-balancer/components) is used where p
 
 :::image type="content" source="../media/load-balancer-3cfca04c.png" alt-text="Diagram illustrating Internal and Public load balancers in Azure":::
 
-
 ## Azure load balancer and availability zones
 
 Azure services that support availability zones fall into three categories:
@@ -19,13 +18,13 @@ Azure services that support availability zones fall into three categories:
 - Zone-redundant services: Resources are replicated or distributed across zones automatically. Azure replicates the data across three zones so that a zone failure doesn't impact its availability.
 - Non-regional services: Services are always available from Azure geographies and are resilient to zone-wide outages and region-wide outages.
 
-Azure Load Balancer supports availability zones scenarios. You can use Standard Load Balancer to increase availability throughout your scenario by aligning resources with, and distribution across zones. Review this document to understand these concepts and fundamental scenario design guidance
+Azure Load Balancer supports availability zones scenarios. You can use Standard Load Balancer to increase availability throughout your scenario by aligning resources with, and distribution across zones. Review this document to understand these concepts and fundamental scenario design guidance.
 
 A Load Balancer can either be zone redundant, zonal, or non-zonal. To configure the zone related properties (mentioned above) for your load balancer, select the appropriate type of frontend needed.
 
 ### Zone redundant
 
-:::image type="content" source="../media/zone-redundant-019f3528.png" alt-text="Diagram illustrating Zone redundant load balancers in Azure":::
+:::image type="content" source="../media/zone-redundant-019f3528.png" alt-text="Diagram illustrating Zone redundant load balancers in Azure.":::
 
 In a region with Availability Zones, a Standard Load Balancer can be zone-redundant. This traffic is served by a single IP address.
 
@@ -39,7 +38,7 @@ You can choose to have a frontend guaranteed to a single zone, which is known as
 
 Additionally, the use of zonal frontends directly for load balanced endpoints within each zone is supported. You can use this configuration to expose per zone load-balanced endpoints to individually monitor each zone. For public endpoints, you can integrate them with a DNS load-balancing product like Traffic Manager and use a single DNS name.
 
-:::image type="content" source="../media/zonal-load-balancer-3933c0be.png" alt-text="Diagram illustrating Zonal load balancers in Azure":::
+:::image type="content" source="../media/zonal-load-balancer-3933c0be.png" alt-text="Diagram illustrating Zonal load balancers in Azure.":::
 
 For a public load balancer frontend, you add a zones parameter to the public IP. This public IP is referenced by the frontend IP configuration used by the respective rule.
 
@@ -240,17 +239,17 @@ After you select **Next: Frontend IP configuration**, select **+ Add frontend IP
 
 :::image type="content" source="../media/create-load-balancer-frontend-ip-configuration.png" alt-text="Screenshot of Frontend IP configuration tab and Add frontend IP configuration options.":::
 
-Once completed with the frontend IP configuration, select **Next:  **Review + Create**, where the configuration settings for the new load balancer resource will be validated, and then you can select **Create** to deploy the resource.
+Once completed with the frontend IP configuration, select **Review + Create**, where the configuration settings for the new load balancer resource will be validated, and then you can select **Create** to deploy the resource.
 
-:::image type="content" source="../media/create-load-balancer-validation.png" alt-text="screenshot of the configuration settings for the new load balancer after validation.":::
+:::image type="content" source="../media/create-load-balancer-validation.png" alt-text="Screenshot of the configuration settings for the new load balancer after validation.":::
 
 The resource starts to be deployed.
 
-:::image type="content" source="../media/create-load-balancer-complete.png" alt-text="Create load balancer - deployment complete":::
+:::image type="content" source="../media/create-load-balancer-complete.png" alt-text="Screenshot of Create load balancer - deployment complete.":::
 
 When it completes, you can select **Go to resource** to view the new load balancer resource in the portal.
 
-:::image type="content" source="../media/create-load-balancer-overview.png" alt-text="View load balancer resource Overview page in Azure portal":::
+:::image type="content" source="../media/create-load-balancer-overview.png" alt-text="Screenshot of View load balancer resource Overview page in Azure portal.":::
 
 ### Add a backend pool
 
@@ -270,7 +269,7 @@ You need to enter the following information on the **Add backend pool** page:
 
 You could add existing virtual machines to the backend pool at this point, or you can create and add them later. You then select **Save** to add the backend pool.
 
-:::image type="content" source="../media/create-backend-pool-config.png" alt-text="Add backend pool - Add":::
+:::image type="content" source="../media/create-backend-pool-configuration.png" alt-text="Screenshot of Add backend pool - Add.":::
 
 ### Add virtual machines to the backend pool
 
@@ -278,7 +277,7 @@ The next task is to add the virtual machines to the existing back-end pool.
 
 On the **Backend pools** page, select the backend pool from the list.
 
-:::image type="content" source="../media/add-vm-backend-pool-add.png" alt-text="View backend pool in the load balancer":::
+:::image type="content" source="../media/add-vm-backend-pool-add.png" alt-text="Screenshot of View backend pool in the load balancer.":::
 
 You need to enter the following information to add the virtual machines to the backend pool:
 
@@ -289,24 +288,24 @@ You need to enter the following information to add the virtual machines to the b
 
 Then under the **IP configurations** section, select **+ Add**.
 
-:::image type="content" source="../media/add-vm-backend-pool-2-eb71b178.png" alt-text="Add VM to backend pool":::
+:::image type="content" source="../media/add-vm-backend-pool-2-eb71b178.png" alt-text="Add VM to backend pool.":::
 
 Select the virtual machines you want to add to the backend pool and select **Add**.
 
-:::image type="content" source="../media/add-vm-backend-pool-3-c6a69d39.png" alt-text="View list of VMs added to backend pool":::
+:::image type="content" source="../media/add-vm-backend-pool-3-c6a69d39.png" alt-text="View list of VMs added to backend pool.":::
 
 Then select **Save** to add them to the backend pool.
 
-:::image type="content" source="../media/add-vm-backend-pool-4-956bad09.png" alt-text="Save backend pool with VMs added":::
+:::image type="content" source="../media/add-vm-backend-pool-4-956bad09.png" alt-text="Save backend pool with VMs added.":::
 
-:::image type="content" source="../media/add-vm-backend-pool-5-baabc018.png" alt-text="View list of backend pools running in load balancer":::
+:::image type="content" source="../media/add-vm-backend-pool-5-baabc018.png" alt-text="View list of backend pools running in load balancer.":::
 
 ### Add health probes
 
 The next task is to create a health probe to monitor the virtual machines in the back-end pool.
 
 On the **Backend pools** page of the load balancer,  select **Health probes** under **Settings**, and then select **+ Add**.
-:::image type="content" source="../media/create-health-probe-1-aba00e8f.png" alt-text="Add health probes":::
+:::image type="content" source="../media/create-health-probe-1-aba00e8f.png" alt-text="Add health probes.":::
 
 You need to enter the following information on the **Add health probe** page:
 
@@ -319,9 +318,9 @@ You need to enter the following information on the **Add health probe** page:
 
 You then select **Save** to add the health probe.
 
-:::image type="content" source="../media/create-health-probe-2-0a34ee7f.png" alt-text="configure health probe settings":::
+:::image type="content" source="../media/create-health-probe-2-0a34ee7f.png" alt-text="configure health probe settings.":::
 
-:::image type="content" source="../media/create-health-probe-3-b1f594b7.png" alt-text="View list of added health probes in load balancer":::
+:::image type="content" source="../media/create-health-probe-3-b1f594b7.png" alt-text="View list of added health probes in load balancer.":::
 
 ### Add a load balancer rule
 
@@ -329,7 +328,7 @@ The last task is to create a load balancing rule for the load balancer. A load b
 
 On the **Health probes** page of the load balancer, select **Load balancing rules** under **Settings**, and then select **+ Add**.
 
-:::image type="content" source="../media/create-load-balancing-rule-1-7a88cf13.png" alt-text="Add load balancing rule":::
+:::image type="content" source="../media/create-load-balancing-rule-1-7a88cf13.png" alt-text="Add load balancing rule.":::
 
 You need to enter the following information on the **Add load balancing rule** page:
 
@@ -347,12 +346,11 @@ You need to enter the following information on the **Add load balancing rule** p
 | **Idle timeout (minutes)** | Specify the time to keep a TCP or HTTP connection open without relying on clients to send *keep-alive* messages. The default idle timeout is **4** minutes, which is also the minimum setting. The maximum setting is 30 minutes. |
 | **Enable TCP Reset** | Choose between **Disabled** or **Enabled**. With TCP Reset on Idle set to **Disabled**, Azure doesn't send a TCP reset packet when the idle timeout period is reached. With TCP Reset on Idle set to **Enabled**, Azure sends a TCP reset packet when the idle timeout period is reached. |
 | **Enable Floating IP** | Choose between **Disabled** or **Enabled**. With Floating IP set to **Disabled**, Azure exposes a traditional load balancing IP address mapping scheme for ease of use (the VM instances' IP). With Floating IP set to **Enabled**, it changes the IP address mapping to the Frontend IP of the load balancer to allow for more flexibility. |
-
 | **Outbound source network address translation (SNAT)** | Choose between **Disabled** or **Enabled**. With Outbound SNAT set to **Disabled**, Azure doesn't translate the source IP address of outbound flows to public IP addresses. With Outbound SNAT set to **Enabled**, Azure translates the source IP address of outbound flows to public IP addresses. |
 
-:::image type="content" source="../media/create-load-balancing-rule-2-cd857974.png" alt-text="Add load balancing rule - Add":::
+:::image type="content" source="../media/create-load-balancing-rule-2-cd857974.png" alt-text="Screenshot of Add load balancing rule - Add.":::
 
-:::image type="content" source="../media/create-load-balancing-rule-3-04f47848.png" alt-text="View list of added load balancing rules":::
+:::image type="content" source="../media/create-load-balancing-rule-3-04f47848.png" alt-text="Screenshot of View list of added load balancing rules.":::
 
 ### Test the load balancer
 
