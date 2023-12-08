@@ -7,19 +7,19 @@ We'll provide some guiding questions, requiring you to think about what is impor
 ## Identify a problem
 Take a moment to think about these questions. *(If you already have a rough idea, move to the next step)*
 
-1. What are some of the problems that affect what you care about? *(problems that affect your family/friends, community, animals, mother nature etcetera)*
-    1. Make a list of them to not lose any!
-    2. Remember, you can merge ideas to make them more appealing and help fulfill your vision. 
+- What are some of the problems that affect what you care about? *(problems that affect your family/friends, community, animals, mother nature etcetera)*
+    - Make a list of them to not lose any!
+    - Remember, you can merge ideas to make them more appealing and help fulfill your vision. 
        
-1. Which of these problems affect you the most?
+- Which of these problems affect you the most?
 
-1. Is there any existing solution that addresses this problem?
+- Is there any existing solution that addresses this problem?
 
-    (a) If YES, why is the existing solution not effective? What would you do differently?
+    - If YES, why is the existing solution not effective? What would you do differently?
     
-    (b) If NO, what would you do to address this problem?
+    - If NO, what would you do to address this problem?
 
-1. What industry category does your idea fall under? Here are some examples:
+- What industry category does your idea fall under? Here are some examples:
 
     **Industry Categories**
 
@@ -28,7 +28,7 @@ Take a moment to think about these questions. *(If you already have a rough idea
     | Education | Lifestyle |  Climate Change | Environmental and Sustainability  |
     | Legal Technology |  Real Estate Technology |  Gaming & Entertainment | Information Technology  |
 
-1. Who is a typical user of your solution?
+- Who is a typical user of your solution?
 
 *At the least, your idea should contain a problem and an innovative solution.*
 
@@ -53,10 +53,10 @@ An example of an idea to help in increasing productivity
 Think about some of the natural disasters which strucked in different parts of the world, and how technology can be used to mitigate or prevent.
 
 An example of an idea generated from natural causes
-- **Natural disasters such as earthquakes, floods, hurricanes, and wildfires can cause massive damage and loss of lives and are often hard to predict and prepare for**. I'm thinking of creating an** AI-powered early warning system** that can:
- - Monitor
- - Analyze
- - Forecast natural hazards 
+- **Natural disasters such as earthquakes, floods, hurricanes, and wildfires can cause massive damage and loss of lives and are often hard to predict and prepare for**. I'm thinking of creating an **AI-powered early warning system** that can:
+  - Monitor
+  - Analyze
+  - Forecast natural hazards 
 - Using various sources of data such as satellite imagery, weather models, social media, and sensors. 
 - The system can also alert and advise authorities, communities, and individuals on how to respond and evacuate in an imminent disaster.
 

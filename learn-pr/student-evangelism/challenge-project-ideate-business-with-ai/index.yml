@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.challenge-project-ideate-business-with-ai
 metadata:
-  title: Challenge Project – Use Generative AI to create ideate your startup.
+  title: Challenge Project – Use generative AI to create ideate your startup
   description: "Challenge Project - Use Generative AI (Bing Chat) to Create the perfect idea for your Startup or business"
   ms.date: 12/7/2023
   author: pablonunes
@@ -9,7 +9,7 @@ metadata:
   ms.custom: team=nextgen
   ms.topic: module-challenge-project # Please don't edit, used for our analytics
   ms.service: bing
-title: Challenge Project – Use Generative AI to create ideate your startup.
+title: Challenge Project – Use generative AI to create ideate your startup
 summary: Use Generative AI (Bing Chat, GPT-4) to Create the perfect idea for your Startup or business
 abstract: |
   In this module you'll develop the following skills that can be used in your everyday interaction with Generative AI:

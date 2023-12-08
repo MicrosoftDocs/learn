@@ -20,7 +20,7 @@ _**Sample Response**_
 
 A sample response from Bing Chat.
 
-![Screenshot showing idea summary response](../media/summary-response.png)
+![Screenshot showing idea summary response.](../media/summary-response.png)
 
 ## Generate an Executive summary of your Idea
 ### Steps
@@ -46,7 +46,7 @@ _**Sample Response**_
 
 A sample response from Bing Chat.
 
-![Screenshot showing idea summarized](../media/idea-summarized.png)
+![Screenshot showing idea summarized.](../media/idea-summarized.png)
 
 This should pull together all your written content for you. You can always revisit the chat, but you can summarize your work this way.
 

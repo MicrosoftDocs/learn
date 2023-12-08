@@ -18,7 +18,7 @@ In this module, you'll develop the following skills:
 
 This exercise requires you to have access to the text and image generation capabilities of Generative AI.
 
-1. Personal account for [Bing Chat](https://www.bing.com/new) and [Bing Image Creator](https://www.bing.com/images/create)
+- Personal account for [Bing Chat](https://www.bing.com/new) and [Bing Image Creator](https://www.bing.com/images/create)
 
 ## Alternative Tools
 

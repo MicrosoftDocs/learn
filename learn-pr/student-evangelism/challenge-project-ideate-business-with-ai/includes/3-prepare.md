@@ -9,13 +9,13 @@ Check that you're using your personal profile in Microsoft Edge or that you're l
 
 We'll set up the two browser windows to work side by side throughout this challenge. Put the Challenge project on one side and bing chat on the other one.
 
-![split screen on microsoft edge](../media/split-screen.png)
+![Screenshot showing split screen on Microsoft Edge.](../media/split-screen.png)
 
 ## Go to Bing Chat
 
 Open Bing Chat in your personal profile https://www.bing.com/new.
 
-![Start chat with bing](../media/bing-new.png)
+![Screenshot showing start chat with bing.](../media/bing-new.png)
 
 Click **Chat now**.
 
@@ -29,7 +29,7 @@ Set the conversation style to **More Precise**
 > [!NOTE]
 > Setting the conversation style helps you define what type of output you'll be getting. Creative mode encourages Bing to use more expressive language, use humour or emotion, and generate different types of content. Precise mode, on the other end, focuses on clarity and accuracy, while balanced looks to provide a balance between the two extremes.
 
-![Set conversation style to balanced](../media/conversation-style.png)
+![Screenshot showing set conversation style to balanced.](../media/conversation-style.png)
 
 ## Utilize the Role Setting Technique
 
@@ -55,9 +55,9 @@ _**Sample Response**_
 
 See a sample response from Bing Chat.
 
-![Screenshot showing role setting response](../media/role-setting.png)
+![Screenshot showing role setting response.](../media/role-setting.png)
 
 ## Note on Conversation Limits
 If you're on Bing Chat with your personal profile in Edge, you should have **30 conversation turns**. This tutorial takes around 24 conversation turns, leaving you with a few to explore as we go along. You can identify how many turns you have by looking at your last conversation response, as shown. If you see a lower number (like five), make sure you log into the Edge Browser with your personal profile.
 
-![Conversation turn limits](../media/conversation-limits.png)
+![Screenshot showing conversation turn limits.](../media/conversation-limits.png)

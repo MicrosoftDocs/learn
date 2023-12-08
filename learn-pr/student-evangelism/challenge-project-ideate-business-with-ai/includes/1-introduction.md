@@ -22,4 +22,4 @@ Our Deck contains the following items:
 
 See an example of a finished ideation project:
 
-![Set conversation style to balanced](../media/ideation-example.png)
+![Illustration of ideation example.](../media/ideation-example.png)
