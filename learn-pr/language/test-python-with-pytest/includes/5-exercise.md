@@ -93,13 +93,13 @@ The operation of the lists isn’t being used to return the value. Since it isn'
 
     ```python
     def admin_command(command, sudo=True):
-    """
-    Prefix a command with `sudo` unless it is explicitly not needed. Expects
-    `command` to be a list.
-    """
-    if sudo:
-        return ["sudo"] + command
-    return command
+        """
+        Prefix a command with `sudo` unless it is explicitly not needed. Expects
+        `command` to be a list.
+        """
+        if sudo:
+            return ["sudo"] + command
+        return command
     ```
 
 2. Rerun the test with Pytest. Try increasing the verbosity of the output by using the `-v` flag with Pytest:
@@ -168,15 +168,15 @@ In this case, the `admin_command()` function is trusting blindly that the `comma
 
     ```python
     def admin_command(command, sudo=True):
-    """
-    Prefix a command with `sudo` unless it is explicitly not needed. Expects
-    `command` to be a list.
-    """
-    if not isinstance(command, list):
-        raise TypeError(f"was expecting command to be a list, but got a {type(command)}")
-    if sudo:
-        return ["sudo"] + command
-    return command
+        """
+        Prefix a command with `sudo` unless it is explicitly not needed. Expects
+        `command` to be a list.
+        """
+        if not isinstance(command, list):
+            raise TypeError(f"was expecting command to be a list, but got a {type(command)}")
+        if sudo:
+            return ["sudo"] + command
+        return command
     ```
 
 4. Finally, update the `test_non_list_commands()` method to check for the error message:
