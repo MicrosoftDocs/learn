@@ -30960,6 +30960,161 @@
       "source_path": "learn-pr/wwl-azure/implement-properties-within-class/6-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
       "redirect_document_id": false
-    }
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/use-classes-properties-method/index.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/use-classes-properties-method/1-introduction.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/use-classes-properties-method/2-instantiate-class.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/use-classes-properties-method/3-instantiate-class-parameterized-constructor.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/use-classes-properties-method/4-use-properties-methods.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/use-classes-properties-method/5-examine-static-properties-methods.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/use-classes-properties-method/6-exercise-use-classes-properties-methods.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/use-classes-properties-method/7-review-module-takeaways.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/use-classes-properties-method/8-knowledge-check.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/use-classes-properties-method/9-summary.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/introduction-to-microsoft-graph-powershell/index.yml",
+    "redirect_url": "https://learn.microsoft.com/powershell/microsoftgraph/overview?view=graph-powershell-1.0",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/introduction-to-microsoft-graph-powershell/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/powershell/microsoftgraph/overview?view=graph-powershell-1.0",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/introduction-to-microsoft-graph-powershell/2-what-is-microsoft-graph-powershell.yml",
+    "redirect_url": "https://learn.microsoft.com/powershell/microsoftgraph/overview?view=graph-powershell-1.0",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/introduction-to-microsoft-graph-powershell/3-how-microsoft-graph-powershell-works.yml",
+    "redirect_url": "https://learn.microsoft.com/powershell/microsoftgraph/overview?view=graph-powershell-1.0",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/introduction-to-microsoft-graph-powershell/4-when-to-use-microsoft-graph-powershell.yml",
+    "redirect_url": "https://learn.microsoft.com/powershell/microsoftgraph/overview?view=graph-powershell-1.0",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/introduction-to-microsoft-graph-powershell/5-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/powershell/microsoftgraph/overview?view=graph-powershell-1.0",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/introduction-to-microsoft-graph-powershell/6-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/powershell/microsoftgraph/overview?view=graph-powershell-1.0",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/enable-external-collaboration-with-b2b/index.yml",
+    "redirect_url": "https://learn.microsoft.com/en-us/entra/external-id/what-is-b2b/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/enable-external-collaboration-with-b2b/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/en-us/entra/external-id/what-is-b2b/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/enable-external-collaboration-with-b2b/2-azure-ad-b2b-overview.yml",
+    "redirect_url": "https://learn.microsoft.com/en-us/entra/external-id/what-is-b2b/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/enable-external-collaboration-with-b2b/3-enable-mfa-b2b.yml",
+    "redirect_url": "https://learn.microsoft.com/en-us/entra/external-id/what-is-b2b/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/enable-external-collaboration-with-b2b/4-collaborate-externally-b2b.yml",
+    "redirect_url": "https://learn.microsoft.com/en-us/entra/external-id/what-is-b2b/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/enable-external-collaboration-with-b2b/5-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/en-us/entra/external-id/what-is-b2b/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/enable-external-collaboration-with-b2b/6-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/en-us/entra/external-id/what-is-b2b/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/secure-b2b-collaboration-cross-tenant-access/index.yml",
+    "redirect_url": "https://learn.microsoft.com/en-us/entra/external-id/cross-tenant-access-overview/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/secure-b2b-collaboration-cross-tenant-access/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/en-us/entra/external-id/cross-tenant-access-overview/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/secure-b2b-collaboration-cross-tenant-access/2-design-settings.yml",
+    "redirect_url": "https://learn.microsoft.com/en-us/entra/external-id/cross-tenant-access-overview/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/secure-b2b-collaboration-cross-tenant-access/3-exercise-configure-defaults.yml",
+    "redirect_url": "https://learn.microsoft.com/en-us/entra/external-id/cross-tenant-access-overview/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/secure-b2b-collaboration-cross-tenant-access/4-exercise-configure-organizational-settings.yml",
+    "redirect_url": "https://learn.microsoft.com/en-us/entra/external-id/cross-tenant-access-overview/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/secure-b2b-collaboration-cross-tenant-access/5-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/en-us/entra/external-id/cross-tenant-access-overview/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/secure-b2b-collaboration-cross-tenant-access/6-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/en-us/entra/external-id/cross-tenant-access-overview/",
+    "redirect_document_id": false
+  }
   ]
 }
