@@ -29858,6 +29858,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/8-understand-capabilities-of-azure-bot-service.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-to-develop-ai-solutions-azure/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/autonomous-systems/intro-to-project-bonsai/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
       "redirect_document_id": false
