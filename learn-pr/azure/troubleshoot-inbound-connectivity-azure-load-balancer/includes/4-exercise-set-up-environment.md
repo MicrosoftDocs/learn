@@ -113,8 +113,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 
 1. Open a browser window, and go to this IP address. The result should be a page with the message **retailappvm1** or **retailappvm2**, depending on how the load balancer routed the request.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the browser showing the response from the sample app running in Load Balancer.](../media/4-browser-response.png)
+    :::image type="content" source="../media/4-browser-response.png" alt-text="Screenshot of the browser showing the response from the sample app running in Load Balancer.":::
 
 1. In Cloud Shell, run the following command to go to the **src/stresstest** folder.
 
@@ -153,8 +152,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 
 1. At the top of the page, set the time range to **Last 30 minutes**. The chart should look similar to the one shown here. Note the peak value of the average packet count.
 
-    > [!div class="mx-imgBorder"]
-    > ![The average packet count while the load balancer is in a healthy state.](../media/4-packet-count-healthy.png)
+    :::image type="content" source="../media/4-packet-count-healthy.png" alt-text="Chart showing the average packet count while the load balancer is in a healthy state.":::
 
 1. Select **Pin to dashboard**.
 
