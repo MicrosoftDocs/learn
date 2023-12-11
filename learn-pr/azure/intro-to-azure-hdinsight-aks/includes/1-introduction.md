@@ -2,10 +2,10 @@ Welcome to the introduction of the HDInsight on AKS module!
 
 In this module, we will cover various topics, including:
 
-1.	What is HDInsight on AKS?
-1.	Understanding technical architecture of HDInsight on AKS
-1.	Security in HDInsight on AKS
-1.	When to use HDInsight on AKS
+-	What is HDInsight on AKS?
+- Understanding technical architecture of HDInsight on AKS
+- Security in HDInsight on AKS
+- When to use HDInsight on AKS
 
 HDInsight on AKS is a modern, reliable, secure, and fully managed Platform as a Service (PaaS) that runs on Azure Kubernetes Service (AKS). HDInsight on AKS allows you to deploy popular Open-Source Analytics workloads like Apache Spark, Apache Flink, and Trino without the overhead of managing and monitoring containers.
 
