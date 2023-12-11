@@ -19,7 +19,7 @@ In this module, you'll learn how to:
 
 - Create a chat completion.
 - Explain how a chat completion works to produce a better response.
-- Protect your model, and chat, from bad actors.  
+- Protect your model, and chat, from security risks.  
 
 ## What is the main objective?
 

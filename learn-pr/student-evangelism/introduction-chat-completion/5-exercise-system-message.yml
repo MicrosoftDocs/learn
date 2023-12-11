@@ -3,7 +3,7 @@ uid: learn.chat-completions.use-system-message
 title: "Exercise: Use system message"
 metadata:
   title: "Exercise: Use system message"
-  description: Practice using system messages.
+  description: Learn how to implement system message.
   ms.date: 12/11/2023
   author: softchris
   ms.author: chnoring

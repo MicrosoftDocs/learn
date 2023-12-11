@@ -170,7 +170,7 @@ Now, we'll use the chat history to provide more context to the model.
     3. Tritium: This is a radioactive isotope of hydrogen and it has 1 proton and 2 neutrons.
     ```
 
-In this example, the model responds with an answer involving isotopes of hydrogen even though your second prompt didn't mention hydrogen or neutrons, the response used the context of the chat to provide a more useful answer.
+In this example, the model responds with an answer involving isotopes of hydrogen even though your second prompt didn't mention hydrogen or neutrons. The response used the context of the chat to provide a more useful answer.
 
 > [!NOTE]
-> The key here is sending previous prompts back into the next request provides the model with more context and grounding and therefore providing a more valuable answer to the end user.
+> The key here is sending previous prompts back into the next request, which provides the model with more context and grounding to produce a more valuable answer to the end user.
