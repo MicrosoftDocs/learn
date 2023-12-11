@@ -20,15 +20,15 @@ Microsoft Copilot features can be found throughout commonly used applications. T
 
 For example, [Microsoft Copilot](https://copilot.microsoft.com?azure-portal=true) can be used with Microsoft Bing search engine to generate natural language answers to questions based on context rather than just search results of indexed pages.  
 
-![Screenshot of Microsoft Copilot landing page.](../media/microsoft-copilot1.png)
+![Screenshot of Microsoft Copilot landing page.](../media/microsoft-copilot-landing-page.png)
 
-![Screenshot of Microsoft Copilot result for a prompt 'write a cover letter for a person with a bachelors degree in history'.](../media/microsoft-copilot2.png)
+![Screenshot of Microsoft Copilot result for a prompt 'write a cover letter for a person with a bachelors degree in history'.](../media/microsoft-copilot-example-write-letter.png)
 
 Another example is Microsoft Copilot for Microsoft 365, which works alongside you in productivity and communication apps such as PowerPoint and Outlook, assisting you in creating effective documents, spreadsheets, presentations, emails, and more. 
 
-![Screenshot of Microsoft Copilot for Microsoft 365 in PowerPoint with a blank slide.](../media/microsoft-copilot-for-powerpoint-example1.png)
+![Screenshot of Microsoft Copilot for Microsoft 365 in PowerPoint with a blank slide.](../media/microsoft-copilot-for-powerpoint-start.png)
 
-![Screenshot of result of Microsoft Copilot for Microsoft 365 in PowerPoint after asking Copilot to build a presentation about coffee. The slides now show content about coffee.](../media/microsoft-copilot-for-powerpoint-example2.png)
+![Screenshot of result of Microsoft Copilot for Microsoft 365 in PowerPoint after asking Copilot to build a presentation about coffee. The slides now show content about coffee.](../media/microsoft-copilot-for-powerpoint-result.png)
 
 Yet another example is GitHub Copilot, which provides support to software developers, helping them write, document, and test code.
 
