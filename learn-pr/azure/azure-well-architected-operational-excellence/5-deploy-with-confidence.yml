@@ -15,16 +15,15 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-
-  - content: 'question-1'
+  - content: 'How can deploying infrastructure as code help you deploy with confidence?'
     choices:
-    - content: 'choice-1-content'
+    - content: "Infrastructure that's deployed as code doesn't have to be patched."
       isCorrect: false
-      explanation: 'choice-2-explanation'
-    - content: 'choice-3-content'
+      explanation: 'Incorrect. Infrastructure as code is still subject to the same patching requirements as any other infrastructure.'
+    - content: "Infrastructure that's deployed as code can be consistently and repeatedly deployed."
       isCorrect: true
-      explanation: 'choice-3-explanation'
-    - content: 'choice-4-content'
+      explanation: 'Correct. Deploying infrastructure as code allows you to consistently and repeatedly deploy your workload, cutting down the risk of human error.'
+    - content: "Infrastructure that's deployed as code 
       isCorrect: false
       explanation: "choice-4-explanation"
     - content: 'choice-5-content'
