@@ -3,15 +3,15 @@ In Azure Monitor, you can create your own alerts in a Log Analytics workspace. I
 > [!IMPORTANT]
 > For information on the cost of creating this query, see [Azure Monitor pricing](https://azure.microsoft.com/pricing/details/monitor/).
 
-Open the **Logs** section of the Log Analytics workspace and create a query for your own logs. When you select **New Alert Rule**, the Azure Monitor alert-creation page opens.
+Open the **Logs** section of the Log Analytics workspace and create a query for your own logs. When you select **New alert rule**, the Azure Monitor alert-creation page opens.
 
 :::image type="content" source="../media/custom-alert.png" alt-text="Screenshot that shows how to create an alert in a Log Analytics workspace.":::
 
-Here, the resource is already marked as the Log Analytics workspace, and action group integration is provided.
+Here, the resource is already marked as the Log Analytics workspace, and action group integration is provided:
 
 :::image type="content" source="../media/inked-log-analytics-azure-backup-create-alert.png" alt-text="Screenshot that shows the Log Analytics alert-creation page.":::
 
-## Alert condition
+## Set an alert condition
 
 The defining characteristic of an alert is its triggering condition. Select **Condition** to automatically load the Kusto query on the **Logs** page. Here you can edit the condition to match your requirements.
 
@@ -22,9 +22,9 @@ If necessary, you can edit the Kusto query. Choose a threshold, period, and freq
 > [!NOTE]
 > To run the alert rule once a day for all events and logs that were generated that day, change the value of both **period** and **frequency** to **1440**, that is, 24 hours.
 
-## Alert action groups
+## Create an alert action group
 
-Use an action group to specify a notification channel. To see the available notification mechanisms, under **Action groups**, select **Create New**.
+Use an action group to specify a notification channel. To see the available notification mechanisms, under **Action groups**, select **Create new**.
 
 :::image type="content" source="../media/log-analytics-azure-backup-action-group.png" alt-text="Screenshot that shows the available notification mechanisms in the Add action group pane.":::
 

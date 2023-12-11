@@ -39,7 +39,7 @@ quiz:
       explanation: "Correct"  
   - content: "To configure Backup Reports, you'll need to configure:"
     choices:
-    - content: "Log Analytics workspace and diagnostics settings"
+    - content: "A Log Analytics workspace and diagnostics settings"
       isCorrect: true
       explanation: "Correct"
     - content: "Azure Resource Graph"

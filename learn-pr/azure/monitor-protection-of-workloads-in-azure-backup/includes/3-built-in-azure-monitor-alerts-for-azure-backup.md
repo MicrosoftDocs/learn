@@ -1,6 +1,6 @@
 Azure Backup provides new and improved alerting capabilities via Azure Monitor. Built-in alerts for some default scenarios are automatically generated. Alerts are generated when backup data is deleted, when soft-delete is disabled, and when backup or restore fails. You can view these default alerts in Backup center. You can use alert processing rules and action groups in Azure Monitor to route alerts in a wide range of notification options, such as by email or by role assignment.
 
-- **Configure notifications in a wide range of channels**: Azure Monitor supports a wide range of notification channels, such as email, IT service management (ITSM), webhooks, and logic apps. You can configure notifications for backup alerts to any of these channels without investing much time in creating custom integrations.
+- **Configure notifications in a wide range of channels**: Azure Monitor supports a wide range of notification channels, including email, IT service management (ITSM), webhooks, and logic apps. You can configure notifications for backup alerts to any of these channels without investing much time in creating custom integrations.
 
 - **Enable notifications for select scenarios**: You can choose the scenarios that generate notifications. Also, you can enable notifications for test subscriptions.
 
@@ -8,7 +8,7 @@ Azure Backup provides new and improved alerting capabilities via Azure Monitor. 
 
 - **Manage alerts and notifications programmatically**: You can use the Azure Monitor REST APIs to manage alerts and notifications via nonportal clients as well.
 
-- **Consistent alert management for multiple Azure services, including backup**: Azure Monitor is the native service for monitoring resources across Azure. With the integration of Azure Backup with Azure Monitor, you can manage backup alerts the same way you manage alerts for other Azure services, without a separate learning curve.
+- **Consistent alert management for multiple Azure services, including backup**: Azure Monitor is the native service for monitoring resources across Azure. With the integration of Azure Backup with Azure Monitor, you can manage backup alerts the same way you manage alerts for other Azure services, and without a separate learning curve.
 
 Azure Backup provides a guided experience via Backup center where you can switch to built-in Azure Monitor alerts and notifications. To perform this action, you must have access to the Backup Contributor and Monitoring Contributor Azure role-based access control (Azure RBAC) roles in the subscription.
 
@@ -24,9 +24,9 @@ To set up default notification alerts:
 
    :::image type="content" source="../media/backup-center-alerts-link.png" alt-text="Screenshot that shows number of vaults that have classic alerts enabled." lightbox="../media/backup-center-alerts-link.png":::
 
-   The next pane shows two recommended actions:
+1. Select **Create rule**.
 
-   - **Create rule**: This action creates an alert processing rule that's attached to an action group so that you receive notifications for Azure Monitor alerts. Select **Create rule** to begin a template deployment.
+   This action creates an alert processing rule that's attached to an action group so that you receive notifications for Azure Monitor alerts.
 
      :::image type="content" source="../media/recommended-action-one.png" alt-text="Screenshot that shows recommended alert migration action Create rule for Recovery Services vaults.":::
 
@@ -49,7 +49,7 @@ To set up default notification alerts:
 
 1. Next, opt out of classic alerts to avoid receiving duplicate alerts from two solutions.
 
-   Select **Manage Alerts** to view the vaults for which classic alerts are currently enabled.
+   Select **Manage alerts** to view the vaults for which classic alerts are currently enabled.
 
    :::image type="content" source="../media/recommended-action-two.png" alt-text="Screenshot that shows recommended alert migration action Manage Alerts for Recovery Services vaults.":::
 
