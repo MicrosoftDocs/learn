@@ -31127,6 +31127,11 @@
     "redirect_document_id": false
   },
   {
+    "source_path": "learn-pr/partner-center-modules/introduction-to-partner-center/index.yml",
+    "redirect_url": "https://learn.microsoft.com/partner-center/overview",
+    "redirect_document_id": false
+  },
+  {
     "source_path": "learn-pr/partner-center-modules/introduction-to-partner-center/1-introduction.yml",
     "redirect_url": "https://learn.microsoft.com/partner-center/overview",
     "redirect_document_id": false
