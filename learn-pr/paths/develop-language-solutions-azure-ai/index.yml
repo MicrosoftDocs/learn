@@ -30,7 +30,6 @@ modules:
 - learn.wwl.analyze-text-ai-language
 - learn.wwl.create-question-answer-solution-ai-language
 - learn.wwl.build-language-understanding-model
-- learn.wwl.publish-use-language-understand-app
 - learn.wwl.custom-text-classification
 - learn.wwl.custom-name-entity-extraction
 - learn.wwl.translate-text-with-translator-service
