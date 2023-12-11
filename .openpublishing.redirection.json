@@ -31092,32 +31092,37 @@
     "redirect_document_id": false
   },
   {
-    "source_path_from_root": "learn-pr/partner-center-modules/introduction-to-partner-center/1-introduction.yml",
+    "source_path": "learn-pr/partner-center-modules/introduction-to-partner-center/1-introduction.yml",
     "redirect_url": "https://learn.microsoft.com/partner-center/overview",
     "redirect_document_id": false
   },
   {
-    "source_path_from_root": "learn-pr/partner-center-modules/introduction-to-partner-center/2-what-is-partner-center.yml",
+    "source_path": "learn-pr/partner-center-modules/introduction-to-partner-center/2-what-is-partner-center.yml",
     "redirect_url": "https://learn.microsoft.com/partner-center/overview",
     "redirect_document_id": false
   },
   {
-    "source_path_from_root": "learn-pr/partner-center-modules/introduction-to-partner-center/3-how-partner-center-works.yml",
+    "source_path": "learn-pr/partner-center-modules/introduction-to-partner-center/3-how-partner-center-works.yml",
     "redirect_url": "https://learn.microsoft.com/partner-center/overview",
     "redirect_document_id": false
   },
   {
-    "source_path_from_root": "learn-pr/partner-center-modules/introduction-to-partner-center/4-when-to-use-partner-center.yml",
+    "source_path": "learn-pr/partner-center-modules/introduction-to-partner-center/4-when-to-use-partner-center.yml",
     "redirect_url": "https://learn.microsoft.com/partner-center/overview",
     "redirect_document_id": false
   },
   {
-    "source_path_from_root": "learn-pr/partner-center-modules/introduction-to-partner-center/5-knowledge-check.yml",
+    "source_path": "learn-pr/partner-center-modules/introduction-to-partner-center/5-knowledge-check.yml",
     "redirect_url": "https://learn.microsoft.com/partner-center/overview",
     "redirect_document_id": false
   },
   {
-    "source_path_from_root": "learn-pr/partner-center-modules/introduction-to-partner-center/6-summary.yml",
+    "source_path": "learn-pr/partner-center-modules/introduction-to-partner-center/6-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/partner-center/overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/achievements/learn.partner-center.badge.yml",
     "redirect_url": "https://learn.microsoft.com/partner-center/overview",
     "redirect_document_id": false
   }
