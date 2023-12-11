@@ -1,23 +1,23 @@
 ### YamlMime:Module
 uid: learn.azure.monitor-protection-of-workloads-in-azure-backup
 metadata:
-  title: Monitor protection of workloads in Azure Backup
-  description: Learn how to monitor Azure Backup protected workloads using Azure Monitor.
+  title: Monitor workload protection in Azure Backup
+  description: Learn how to monitor Azure Backup-protected workloads by using Azure Monitor.
   ms.date: 12/01/2023
   author: AbhishekMallick-MS
   ms.author: v-abhmallick
   ms.topic: interactive-tutorial
   ms.service: backup
-title: Monitor protection of workloads in Azure Backup
-summary: Monitor your backup instances and backup jobs, configure alerts for any failed operations, and do historical reporting based on log data in Azure Backup.
+title: Monitor workload protection in Azure Backup
+summary: Monitor your backup instances and backup jobs, configure alerts for failed operations, and do historical reporting based on log data in Azure Backup.
 abstract: |
   In this module, you will:
-  - Learn about various scenarios for your backup instances and backup jobs
-  - Configure alerts for any failed backup operations
+  - Learn about various scenarios for your backup instances and backup jobs.
+  - Configure alerts for failed backup operations.
   - Perform historical reporting of your backup data based on log data.
 prerequisites: |
   - Familiarity with the Azure Backup service.
-  - Must have Read permission on the vaults that are used to back up data to view out-of-the-box Backup center views, such as backup jobs and backup instances.
+  - Must have Read permission on the vaults that are used to back up data to view default Backup center views, such as backup jobs and backup instances.
   - Must have Monitoring Contributor and Backup Contributor permissions on the required subscription to configure alerts and reports.
 iconUrl: /training/achievements/accelerate-migration-journey.svg
 ratingEnabled: true
