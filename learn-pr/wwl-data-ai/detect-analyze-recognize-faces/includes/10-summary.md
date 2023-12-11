@@ -4,7 +4,7 @@ Now that you've completed this module, you can:
 
 - Identify options for face detection analysis.
 - Describe considerations for face analysis.
-- Detect faces with the Azure AI Vision service.
+- Detect people with the Azure AI Vision service.
 - Describe the capabilities of the Face service.
 - Understand facial recognition.
 
