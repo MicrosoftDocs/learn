@@ -6,8 +6,10 @@ metadata:
   description: "Exercise - Translate text with the Azure AI Translator service"
   ms.date: 12/05/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: unit
 durationInMinutes: 30
+labId: 152401
+labModal: true
 content: |
   [!include[](includes/6-exercise-translate-text.md)]

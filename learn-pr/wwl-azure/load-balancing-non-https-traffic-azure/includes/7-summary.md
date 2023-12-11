@@ -2,7 +2,6 @@ In this module, you had a high-level overview of the different load-balancing op
 
 You now have the knowledge required to help you to load balance network traffic in your Azure networks.
 
-
 ## Learn more
 
 - [Introduction to Azure Load Balancer](/training/modules/intro-to-azure-load-balancer/)
