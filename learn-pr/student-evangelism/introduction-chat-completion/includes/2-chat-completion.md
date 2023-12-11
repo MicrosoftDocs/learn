@@ -16,7 +16,7 @@ We've mentioned a chat being a series of completions containing a prompt and a r
 
 - **User**, this is the person interacting with the LLM.
 
-For example, a conversation may look like so:
+For example, a conversation might look like so:
 
 ```text
 - System: Hi, I'm a chatbot. What can I help you with today?
@@ -33,10 +33,12 @@ Leveraging the roles (system and user) we were just taught about, we can simulat
 
 Let's take the previous chat conversation example:
 
-> - System: Hi, I'm a chatbot. What can I help you with today?
-> - User: I'm looking for a new pair of shoes.
-> - System: What kind of shoes are you looking for?
-> - User: I'm looking for a pair of running shoes.
+```text
+- System: Hi, I'm a chatbot. What can I help you with today?
+- User: I'm looking for a new pair of shoes.
+- System: What kind of shoes are you looking for?
+- User: I'm looking for a pair of running shoes.
+```
 
 For the LLM to understand the above conversation, we need to turn it into something it can understand, a "chat history". Here's what that could look like in JSON format:
 
@@ -57,7 +59,7 @@ For the LLM to understand the above conversation, we need to turn it into someth
 ]
 ```
 
-If you feed the above chat conversation to the LLM, the LLM would already understand it should respond to the user's request for "running shoes".
+If you feed the above chat conversation to the LLM, the LLM would understand that it should respond to the user's request for running shoes.
 
 > [!NOTE]
 > An AI model can't learn and has no memory of previous interactions if the user leaves and comes back but the application is using prompt engineering to add this memory.
@@ -68,11 +70,11 @@ You can use the Azure OpenAI Studio to test your model using chat and simulate a
 
 The Azure OpenAI Studio has a chat playground where you can interact with your model using chat.
 
-:::image type="content" source="../media/chat-playground-preview.png" alt-text="Screenshot of Azure OpenAI Studio with chat playground highlighted.":::
+:::image type="content" source="../media/chat-playground-preview.png" alt-text="Screenshot of Azure OpenAI Studio with chat playground highlighted." lightbox="../media/chat-playground-preview.png":::
 
-## Temperature – create a more interesting chat
+## Temperature: Create a more interesting chat
 
-To make our chat a bit more interesting, we can use a concept called temperature. The idea with temperature is that you can increase or decrease how creative the LLM is in its responses.
+To make our chat more interesting, we can use a concept called *temperature*. The idea with temperature is that you can increase or decrease how creative the LLM is in its responses.
 
 The higher the temperature value, the more creative responses you'll get. The lower the temperature value, the more predictable the responses will be.
 
@@ -82,45 +84,45 @@ What goes on *under the hood*, in the model, is that at low values of temperatur
 
 Lower temperature values tend to produce more predictable and straightforward values, while higher temperature values produce less predictable and creative responses.
 
-Here are some general guides for how the temperature values may affect the responses:
+Here are some general guides for how the temperature values can affect the responses:
 
-- **Low temperature values (below 0.5)**: These values may be used when you need a single correct answer without leaving the space open for creativity. The responses are predictable and straightforward.
+- **Low temperature values (below 0.5)**: These values can be used when you need a single correct answer without leaving the space open for creativity. The responses are predictable and straightforward.
 
-- **Medium temperature values (between 0.5 and 0.9)**: These values may be used when you need ideas or content that can be considered relatively creative but not fictitious.
+- **Medium temperature values (between 0.5 and 0.9)**: These values can be used when you need ideas or content that can be considered relatively creative but not fictitious.
 
-- **High temperature values (above 0.9)**: These values may be used when you need creative answers. The responses are less predictable and open ended.
+- **High temperature values (above 0.9)**: These values can be used when you need creative answers. The responses are less predictable and open ended.
 
-## Example: Varying the temperature
+## Change the temperature
 
 If you instruct the LLM with the following prompt:
 
-    "Write 3 sentences about football"
+"Write 3 sentences about football"
 
-    You may arrive at the following output:
+You arrive at the following output:
 
-    *Football is a popular sport played around the world. It involves two teams of eleven players each, who try to score goals by kicking a ball into the opposing team's net. The sport requires a combination of physical fitness, skill, and strategy.*
+*Football is a popular sport played around the world. It involves two teams of eleven players each, who try to score goals by kicking a ball into the opposing team's net. The sport requires a combination of physical fitness, skill, and strategy.*
 
 ### Medium temperature
 
 Let's try the same prompt again, but this time setting the temperature to a medium value:
 
-    "Write 3 sentences about football"
+"Write 3 sentences about football"
 
-    *Football, also known as soccer in some countries, is the most popular sport in the world. It is played between two teams of eleven players each, with the objective of scoring more goals than the opposing team. The game is played on a rectangular field with a goal at each end, and the ball can be touched with any part of the body except the hands and arms (except for the goalkeeper).*
+*Football, also known as soccer in some countries, is the most popular sport in the world. It is played between two teams of eleven players each, with the objective of scoring more goals than the opposing team. The game is played on a rectangular field with a goal at each end, and the ball can be touched with any part of the body except the hands and arms (except for the goalkeeper).*
 
 Notice how the output is similar, but not identical. In the latter example, the LLM has generated a more creative response, but it still contains the same information as the previous example.
 
-### High temperature value
+### High temperature
 
 Let's change the temperature to a high value and see what happens:
 
-    "Write 3 sentences about football"
+ "Write 3 sentences about football"
 
-    *Football, also known as soccer in some countries, is a popular sport played all around the world. The objective of the game is to score goals by kicking the ball into the opposing team's net using only your feet and/or head. Football is known for its passionate fans, who often support their favorite teams with great enthusiasm.*
+*Football, also known as soccer in some countries, is a popular sport played all around the world. The objective of the game is to score goals by kicking the ball into the opposing team's net using only your feet and/or head. Football is known for its passionate fans, who often support their favorite teams with great enthusiasm.*
 
 What you get now is a response similar to your last attempt but with a lot more creativity.
 
-## Changing the temperature via Azure Open AI Studio
+## Change the temperature via Azure Open AI Studio
 
 Azure Open AI Studio is a tool, a playground we can use to test our models. In this tool, you're able to not only type in prompts but also change the temperature value.
 

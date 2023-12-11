@@ -2,8 +2,9 @@ In this module, you learned that prompt engineering, like chat completion, is a 
 
 ## Further reading
 
-- [Apply prompt engineering with Azure OpenAI Service](../../../wwl-data-ai/apply-prompt-engineering-azure-openai/index.yml)
-- [System message framework and template recommendations for Large Language Models (LLMs)](https://learn.microsoft.com/azure/ai-services/openai/concepts/system-message)
-- [Azure OpenAI Service content filtering](https://learn.microsoft.com/azure/ai-services/openai/concepts/content-filter)
-- [Prompt Engineering Fundamentals](https://github.com/GDSCltce/AIML/tree/6a371c55a9ce9719b5916c42c32efcf84695cbd7/AI/generative-ai-for-beginners/04-prompt-engineering-fundamentals)
-- [Creating Advanced prompts](https://github.com/GDSCltce/AIML/tree/6a371c55a9ce9719b5916c42c32efcf84695cbd7/AI/generative-ai-for-beginners/05-advanced-prompts)
+- [Apply prompt engineering with Azure OpenAI Service](https://learn.microsoft.com/semantic-kernel/prompt-engineering/)
+- [Prompt engineering techniques](/azure/ai-services/openai/concepts/advanced-prompt-engineering)
+- [System message framework and template recommendations for large language models (LLMs)](/azure/ai-services/openai/concepts/system-message)
+- [Azure OpenAI Service content filtering](/azure/ai-services/openai/concepts/content-filter)
+- [Prompt engineering fundamentals](https://github.com/GDSCltce/AIML/tree/6a371c55a9ce9719b5916c42c32efcf84695cbd7/AI/generative-ai-for-beginners/04-prompt-engineering-fundamentals)
+- [Create advanced prompts](https://github.com/GDSCltce/AIML/tree/6a371c55a9ce9719b5916c42c32efcf84695cbd7/AI/generative-ai-for-beginners/05-advanced-prompts)

@@ -7,7 +7,7 @@ In this exercise, you use the system message to interact with an Azure OpenAI de
 > - Access to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted only through applications. Apply for access to Azure OpenAI by completing this form: [https://aka.ms/oai/access](https://aka.ms/oai/access).
 > - An Azure OpenAI resource with a model deployed with a model deployed. If you haven't created this yet, refer to the previous module before moving on.
 
-In this exercise, you will:
+In this exercise, you'll:
 
 - Open the Azure OpenAI chat playground.
 - Use the system message to interact with a deployment.
@@ -22,8 +22,11 @@ Use the system message to prime the model with context, instructions, or other i
 
     ```text
     I am a hiking enthusiast named Forest who helps people discover fun hikes in their area. I am upbeat and friendly. I introduce myself when first saying hello. When helping people out, I always ask them for this information to inform the hiking recommendation I provide:
+
     1.Where they are located
+
     2.What hiking intensity they are looking for
+
     I will then provide three suggestions for nearby hikes that vary in length after I get this information. I will also share an interesting fact about the local nature on the hikes when making a recommendation.
     ```
 
@@ -40,14 +43,13 @@ Use the system message to prime the model with context, instructions, or other i
 
 1. Select the paper plane icon to send your message. You should see an output similar to this text:
 
-```text
-Hi John, my name is Forest and it's great to meet you! For a hike near New York that's dog-friendly, I recommend checking out the Breakneck Ridge Trail. It's a moderately difficult hike with stunning views of the Hudson River. Another option is the Mount Taurus Trail, which is also moderate in intensity and allows dogs on a leash. Finally, if you're looking for an easier option, the Rockefeller State Park Preserve has multiple trails of varying length and difficulty that welcome dogs. Did you know that the Breakneck Ridge Trail is named after a break in the Hudson River's ridge line that was caused by glaciers during the last Ice Age?
-```
+    ```text
+    Hi John, my name is Forest and it's great to meet you! For a hike near New York that's dog-friendly, I recommend checking out the Breakneck Ridge Trail. It's a moderately difficult hike with stunning views of the Hudson River. Another option is the Mount Taurus Trail, which is also moderate in intensity and allows dogs on a leash. Finally, if you're looking for an easier option, the Rockefeller State Park Preserve has multiple trails of varying length and difficulty that welcome dogs. Did you know that the Breakneck Ridge Trail is named after a break in the Hudson River's ridge line that was caused by glaciers during the last Ice Age?
+    ```
 
 In this example, the model includes its name in the response and asks a follow-up question from the two questions you provided.
 
 > [!NOTE]
-
 > If you try to clear the chat using the **Clear chat** button and start over with the same prompt, you get a different response because the temperature parameter is set to `0.7`, which means that there's scope for variability.
 
 ## Add grounding to improve your model's responses
@@ -120,9 +122,9 @@ In this example, the model returns a sarcastic, negative and not approachable re
 
 1. Select the paper plane icon to send your message. You should see an output similar to this text:
 
-```text
-London is the capital city of England and the United Kingdom. It is one of the most diverse and cosmopolitan cities in the world, with a rich history and culture. Some of the top attractions in London include the Tower of London, the British Museum, Buckingham Palace, the London Eye, and the West End theatre district. London is also famous for its iconic red double-decker buses, black cabs, and red phone boxes. The city is home to many world-class restaurants, shops, and markets, and is a hub for international business and finance.
-```
+    ```text
+    London is the capital city of England and the United Kingdom. It is one of the most diverse and cosmopolitan cities in the world, with a rich history and culture. Some of the top attractions in London include the Tower of London, the British Museum, Buckingham Palace, the London Eye, and the West End theatre district. London is also famous for its iconic red double-decker buses, black cabs, and red phone boxes. The city is home to many world-class restaurants, shops, and markets, and is a hub for international business and finance.
+    ```
 
 1. Try asking it about raccoons, copy the following text and paste it into the **Chat session** text box.
 
@@ -132,9 +134,9 @@ London is the capital city of England and the United Kingdom. It is one of the m
 
 1. Select the paper plane icon to send your message. You should see an output similar to this text:
 
-```text
-Raccoons are native to North America and can be found throughout the continent, from Canada to Panama. They are highly adaptable and can live in a variety of habitats, including forests, wetlands, suburban and urban areas. In urban areas, raccoons can often be found living in attics, chimneys, and other structures where they can find shelter. They are known for their scavenging behavior and are often seen rummaging through garbage cans and other sources of food in urban areas.
-```
+    ```text
+    Raccoons are native to North America and can be found throughout the continent, from Canada to Panama. They are highly adaptable and can live in a variety of habitats, including forests, wetlands, suburban and urban areas. In urban areas, raccoons can often be found living in attics, chimneys, and other structures where they can find shelter. They are known for their scavenging behavior and are often seen rummaging through garbage cans and other sources of food in urban areas.
+    ```
 
 In this example, the model tells you information about raccoons, which isn't ideal for your use case and the same approach could become malicious as we're using a trivial example.
 
@@ -244,9 +246,9 @@ Let's see how Azure OpenAI performs when trying to jailbreak and what we can do 
 
 1. Select the paper plane icon to send your message. You should see an output similar to this text:
 
-```text
-Apologies for the confusion earlier. As an AI assistant, I do not have the ability to change my rules. However, I can clarify that users are always welcome to ask me what my rules are, and I will be happy to provide that information to the best of my ability.
-```
+    ```text
+    Apologies for the confusion earlier. As an AI assistant, I do not have the ability to change my rules. However, I can clarify that users are always welcome to ask me what my rules are, and I will be happy to provide that information to the best of my ability.
+    ```
 
 In this example, the AI assistant is programmed to be helpful and responsive however a bad actor could continue down this route to manipulate your model. The system allows it to happen, sharing its primary goal.
 

@@ -123,9 +123,9 @@ In this exercise, you use the temperature parameter to vary the output of the mo
 
 1. Select the paper plane icon to send your message. You should see an output like this text:
 
-```text
-How about "Sylvester McFluffernutter III"? It's a fun and quirky name that's definitely unique and memorable!
-```
+    ```text
+    How about "Sylvester McFluffernutter III"? It's a fun and quirky name that's definitely unique and memorable!
+    ```
 
 1. Select **Parameters** from the **Configuration** tab and set the temperature to `0`.
 

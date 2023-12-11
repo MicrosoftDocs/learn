@@ -8,6 +8,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/2-chat-completion.md)]

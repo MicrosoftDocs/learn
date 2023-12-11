@@ -8,6 +8,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-system-message.md)]

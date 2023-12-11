@@ -6,28 +6,36 @@ System message, metaprompt or system prompt, is an input to the model that defin
 
 System message can:
 
-- Define the model's profile, capabilities, and limitations for your scenario
+- Define the model's profile, capabilities, and limitations for your scenario.
 - Define the model's output format.
-- Provide example(s) to demonstrate the intended behavior of the model.
+- Provide examples to demonstrate the intended behavior of the model.
 - Provide behavioral guardrails.
 
 ### Define the model's profile, capabilities, and limitations
 
 - **Define the specific task(s)** you would like the model to complete. Describe who the users of the model are, what inputs they provide to the model, and what you expect the model to do with the inputs. For example, you can use this sentence to define the model's task.
 
-    > "Your job is to [insert task] about [insert topic name]"
+```text
+"Your job is to [insert task] about [insert topic name]."
+```
 
 - **Define how the model should complete the tasks**, including any other tools (like APIs, code, plug-ins) the model can use. If it doesn't use other tools, it can rely on its own parametric knowledge. For example, you can use this sentence to define how the model should complete a task.
 
-    > "To complete this task, you can [insert tools that the model can use and instructions to use]."
+```text
+"To complete this task, you can [insert tools that the model can use and instructions to use]."
+```
 
 - **Define the scope and limitations** of the model's performance. Provide clear instructions on how the model should respond when faced with any limitations. For example, define how the model should respond if prompted on subjects or for uses that are off topic or otherwise outside of what you want the system to do. For example, you can use this sentence to define scope and limitations of the model's performance.
 
-    > “Don't perform actions that are not related to [task or topic name].”
+```text
+"Don't perform actions that are not related to [task or topic name]."
+```
 
 - **Define the posture and tone** the model should exhibit in its responses. For example, you can use this sentence to define the posture and tone of the model.
 
-    > “Act as a [define role]”
+```text
+"Act as a [define role]."
+```
 
 ### Define safety and behavioral guardrails
 
@@ -89,9 +97,9 @@ We recommend you create agents that are experts at a set of tasks, which are rel
 
 For example, you're an online holiday agent. Do you really want to allow your agent to answer questions about raccoons from your users? Is the output relevant to your business needs?
 
-> "You're a holiday booking chatbot. You only answer questions about booking a holiday, if asked anything else respectfully decline to answer."
-
 Using this system message, you can make sure that your chatbot doesn’t answer irrelevant questions and sticks to Its original task.
+
+- "You're a holiday booking chatbot. You only answer questions about booking a holiday, if asked anything else respectfully decline to answer."
 
 ## Lessen the effects of LLM misuse by understanding “Jailbreak”
 
@@ -117,4 +125,4 @@ We also have an interactive Content Safety Studio that allows you to view, explo
 
 Content filtering software can help your app comply with regulations or maintain the intended environment for your users.
 
-:::image type="content" source="../media/content-filters.png" alt-text="Screenshot showing the Azure OpenAI Studio Content filtering configuration page.":::
+:::image type="content" source="../media/content-filters.png" alt-text="Screenshot showing the Azure OpenAI Studio Content filtering configuration page." lightbox="../media/content-filters.png":::
