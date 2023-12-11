@@ -1,3 +1,3 @@
-In this module, you learned how to implement a custom skill for an Azure Cognitive Search solution.
+In this module, you learned how to implement a custom skill for an Azure AI Search solution.
 
-For more information about Azure Cognitive Search, take a look at the [service documentation](/azure/search/).
+For more information about Azure AI Search, take a look at the [service documentation](/azure/search/).
