@@ -16,13 +16,13 @@ quiz:
     choices:
     - content: "Microsoft Azure Monitor"
       isCorrect: false
-      explanation: "Incorrect. Azure monitor does not provide details of Fabric capacity unit consumption."
+      explanation: "Incorrect. Azure monitor doesn't provide details of Fabric capacity unit consumption."
     - content: "Microsoft Fabric Capacity Metrics app"
       isCorrect: true
-      explanation: "Correct. A Data Factory pipeline is not an interactive Spark environment."
+      explanation: "Correct. A Data Factory pipeline isn't an interactive Spark environment."
     - content: "Microsoft Azure Data Studio."
       isCorrect: false
-      explanation: "Incorrect. Microsoft Azure Data Studio does not provide details of Fabric capacity unit consumption."
+      explanation: "Incorrect. Microsoft Azure Data Studio doesn't provide details of Fabric capacity unit consumption."
   - content: "Which dynamic management view provides details about SQL commands running in the data warehouse?"
     choices:
     - content: "sys.dm_exec_requests"
@@ -30,7 +30,7 @@ quiz:
       explanation: "Correct. The sys.dm_exec_requests view contains details of active commands."
     - content: "sys.dm_exec_connections"
       isCorrect: false
-      explanation: "Incorrect. The sys.dm_exec_connections view contains details of active connections, not commands.."
+      explanation: "Incorrect. The sys.dm_exec_connections view contains details of active connections, not commands."
     - content: "sys.dm_exec_sessions"
       isCorrect: false
       explanation: "Incorrect. The sys.dm_exec_sessions view contains details of active sessions, not commands."
