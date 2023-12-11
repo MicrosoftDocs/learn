@@ -10,7 +10,7 @@ The schema of these tables is shown here:
 
 ## Querying DMVs
 
-You can retrieve a lot of detailed information about current activities in the data warehouse by querying the *dm_exec-\** DMVs. For example, consider the following query:
+You can retrieve detailed information about current activities in the data warehouse by querying the *dm_exec-\** DMVs. For example, consider the following query:
 
 ```sql
 SELECT sessions.session_id, sessions.login_name,
@@ -35,4 +35,4 @@ This query returns details about the active requests in the current database, or
 |137|zoe@contoso.com|10.23.119.171|SELECT|2023-12-07T14:57:38.6070000|4|
 
 > [!TIP]
-> For more information about using DMVs, refer to **[Monitor connections, sessions, and requests using DMVs](/fabric/data-warehouse/monitor-using-dmv)** in the Microsoft Fabric documentation .
+> For more information about using DMVs, refer to **[Monitor connections, sessions, and requests using DMVs](/fabric/data-warehouse/monitor-using-dmv)** in the Microsoft Fabric documentation.

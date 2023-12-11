@@ -4,7 +4,7 @@ The cost of using Fabric is based on *capacity units* (CUs). Each action you per
 
 ## Using the Microsoft Fabric Capacity Metrics app
 
-The Microsoft Fabric Capacity Metrics app is an app that an administrator can install in a Fabric environment and use to monitor capacity utilization. To monitor capacity utilization related to data warehousing , you can filter the interface to show only **warehouse** activity, like this:
+The Microsoft Fabric Capacity Metrics app is an app that an administrator can install in a Fabric environment and use to monitor capacity utilization. To monitor capacity utilization related to data warehousing, you can filter the interface to show only **warehouse** activity, like this:
 
 ![Screenshot of the Fabric Capacity Metrics app showing warehouse activity.](../media/fabric-capacity-metrics-app.gif)
 
