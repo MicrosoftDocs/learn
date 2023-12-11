@@ -1,18 +1,20 @@
 Several clinicians from partnering clinics will need access to your health records application. Let's take a look at how B2B collaboration will let them conveniently access your application while keeping sensitive data secure.
 
-## What is Azure AD B2B collaboration?
+<a name='what-is-azure-ad-b2b-collaboration'></a>
 
-Azure AD B2B collaboration is a method for sharing applications and resources with anyone outside of your organization. You can invite external users to access applications including Office 365 apps, software-as-a-service (SaaS) apps, and line-of-business applications. With B2B collaboration, you invite the external user using their preferred work, school, or social account. Then they use that account for authentication whenever they access your application.
+## What is Microsoft Entra B2B collaboration?
 
-Once you invite a user to B2B collaboration, a user object is created for them in the same Azure AD directory where you manage your employees. This user object can be managed like other user objects in your directory, meaning you can assign permissions, add it to groups, and so on.
+Microsoft Entra B2B collaboration is a method for sharing applications and resources with anyone outside of your organization. You can invite external users to access applications including Office 365 apps, software-as-a-service (SaaS) apps, and line-of-business applications. With B2B collaboration, you invite the external user using their preferred work, school, or social account. Then they use that account for authentication whenever they access your application.
+
+Once you invite a user to B2B collaboration, a user object is created for them in the same Microsoft Entra directory where you manage your employees. This user object can be managed like other user objects in your directory, meaning you can assign permissions, add it to groups, and so on.
 
 There are no credentials associated with B2B collaboration users in your organization. Instead, they authenticate with their own organization or identity provider, and then your organization checks the B2B collaboration user’s eligibility for B2B collaboration.
 
 ## What happens when you invite a B2B collaboration user
 
-The following steps show how Azure AD B2B lets you collaborate with external partner users. The numbers in the diagram are explained below.
+The following steps show how Microsoft Entra B2B lets you collaborate with external partner users. The numbers in the diagram are explained below.
 
-![Diagram of Azure AD B2B overview.](../media/2-guest-user.png)
+![Diagram of Microsoft Entra B2B overview.](../media/2-guest-user.png)
 
 1. **Send a B2B collaboration invitation to the user**
 

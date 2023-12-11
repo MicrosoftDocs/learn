@@ -1,7 +1,0 @@
-### YamlMime:AchievementDetail
-achievementUid: learn.build-daemon-python.badge
-metadata:
-  title: >-
-    Microsoft Badge: Build a Python daemon app that calls a protected API using
-    the Microsoft identity platform was issued by Microsoft
-socialImageUrl: /training/achievements/build-daemon-python-social.png

@@ -4,16 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/04/2023
+  ms.date: 09/18/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
+  ms.service: cognitive-search
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
-content: |
-  [!include[](includes/10-knowledge-check.md)]
 quiz:
   questions:
   - content: "You want to find information in Microsoft Word documents that are stored in an Azure Storage blob container. What should you do to ensure the files can be accessed by Azure Cognitive Search?"

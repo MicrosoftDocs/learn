@@ -6,7 +6,7 @@ Another important piece of information available in the Azure portal include the
 
 The portal also displays information about the power state. The power state indicates whether the hardware unit is powered on or off. It does not represent the state of the operating system. As you restart a HANA Large Instance unit, you will experience a short period of time where the state of the unit changes from **Starting** to **Started**. The **Started** state indicates that the OS is starting up or that the OS has been started up completely. As a result, after a restart of the unit, you might need to wait before you can log in even if the state already changed to Started.
 
-Beyond identifying the basic status of HANA Large Instance units, you can also review their activities. One of the main activities recorded is restarts. The captured data includes the status of the activity, the timestamp of its trigger, the subscription ID of the trigger, and the Azure Active Directory identity that initiated the trigger.
+Beyond identifying the basic status of HANA Large Instance units, you can also review their activities. One of the main activities recorded is restarts. The captured data includes the status of the activity, the timestamp of its trigger, the subscription ID of the trigger, and the Microsoft Entra identity that initiated the trigger.
 
 Another type of recorded activity represents changes to metadata associated with individual units (such as adding or deleting a tag). This activity is recorded as **Write HANAInstances** and has no impact on the operational state of the HANA Large Instance unit. By default, the HANA Large Instance units have no tag assigned.
 

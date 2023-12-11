@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-text-ai-language.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/31/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure-ai-language
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "How should you create an application that monitors the comments on your company's web site and flags any negative posts?"
+    choices:
+    - content: "Use the Azure AI Language service to extract key phrases."
+      isCorrect: false
+      explanation: "Incorrect. Key phrases might help understand what the customer is posting about, but they won't indicate positive or negative feedback."
+    - content: "Use the Azure AI Language service to perform sentiment analysis of the comments."
+      isCorrect: true
+      explanation: "Correct. sentiment analysis helps you determine if text is negative or positive."
+    - content: "Use the Azure AI Language service to extract named entities from the comments."
+      isCorrect: false
+      explanation: "Incorrect. Named entities might help understand what the customer is posting about, but they won't indicate positive or negative feedback."
+  - content: "You have analyzed text that contains the word \"Paris\". How might you determine of this word refers to the French city or the character in Homer's \"The Iliad\"?"
+    choices:
+    - content: "Use the Azure AI Language service to extract key phrases."
+      isCorrect: false
+      explanation: "Incorrect. Key phrases are terms that indicate the main themes of the text, not specific entities that are mentioned."
+    - content: "Use the Azure AI Language service to detect the language of the text."
+      isCorrect: false
+      explanation: "Incorrect. The language text is written in won't help identify which \"Paris\" is being referenced."
+    - content: "Use the Azure AI Language service to extract linked entities."
+      isCorrect: true
+      explanation: "Correct. Linked entities enable you to disambiguate common entities of the same name."

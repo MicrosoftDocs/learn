@@ -7,8 +7,7 @@ metadata:
   author: scottaddie
   ms.author: scaddie
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.topic: unit
 title: Knowledge check
 durationInMinutes: 5
 content: |
@@ -29,7 +28,7 @@ quiz:
         - content: GitHub secrets
           isCorrect: true
           explanation: "You can define secrets at the repository or the organization level. This information is encrypted and made accessible to GitHub Actions."
-    - content: "What's the purpose of creating an Azure Active Directory service principal for GitHub Actions to use?"
+    - content: "What's the purpose of creating a Microsoft Entra service principal for GitHub Actions to use?"
       choices:
         - content: "The service principal is for storing application logs."
           isCorrect: false

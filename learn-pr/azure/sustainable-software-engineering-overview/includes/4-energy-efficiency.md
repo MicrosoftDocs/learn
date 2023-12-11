@@ -1,5 +1,5 @@
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwMdr]
-_The content in the video is still valid, but the principle numbers may differ due to the Green Software Foundation's principle renumbering._
+_This video's content is still valid, but the principle numbers may differ due to the Green Software Foundation's principle renumbering._
 
 ## Electricity and carbon
 
@@ -27,9 +27,9 @@ Electricity is often reported as either Power or Energy, which are two different
 
 A common way of referring to energy consumption is _Power over a unit of Time, such as Watt-seconds or Kilowatt-hours_. For example:
 
-- 20 Watt-seconds or `20 Ws` is the amount of energy you would get if `20 W` were run for one second. Since 1 Watt is 1 Joule per second, this value is 20 Joules.
+- 20 Watt-seconds or `20 Ws` is the amount of energy you'd get if `20 W` were run for one second. Since 1 Watt is 1 Joule per second, this value is 20 Joules.
 
-- 20 Kilowatt-hours or `20 kWh` is the energy you would get if 20,000 Watts ran for one hour.
+- 20 Kilowatt-hours or `20 kWh` is the energy you'd get if 20,000 Watts ran for one hour.
 
   `Energy = 60 X 60 X 20,000 = 72,000,000 Joules = 72 Megajoules (72 MJ)`
 
@@ -39,9 +39,9 @@ A common way of referring to energy consumption is _Power over a unit of Time, s
 
 Utilization measures how much of a computer's resources are being used, which is typically represented as a percentage. An idle computer has a low utilization percentage and isn't being utilized. A computer running at its maximum capacity has a high percentage and is being fully utilized.
 
-[Energy proportionality](https://en.wikipedia.org/wiki/Energy_proportional_computing) is a measure of the relationship between power consumed in a computer system and the rate at which useful work is done (its utilization). If the overall power consumption is proportional to the computer's utilization, then its energy proportional.
+[Energy proportionality](https://en.wikipedia.org/wiki/Energy_proportional_computing) is a measure of the relationship between power consumed in a computer system and the rate at which useful work is done (its utilization). If the overall power consumption is proportional to the computer's utilization, then it's energy proportional.
 
-In an energy proportional system, the energy efficiency is a constant; no matter the utilization, the energy efficiency remains the same. However, the energy efficiency of hardware isn't constant. It varies based on context. Due to the complex interactions of many different hardware device components, it can be nonlinear, which means that the relationship between power and utilization isn't proportional.
+In an energy-proportional system, the energy efficiency is a constant; no matter the utilization, the energy efficiency remains the same. However, the energy efficiency of hardware isn't constant. It varies based on context. Due to the complex interactions of many different hardware device components, it can be nonlinear, which means that the relationship between power and utilization isn't proportional.
 
 ![Diagram showing power versus utilization.](../media/7-energy-proportionality-1.svg)
 
@@ -59,7 +59,7 @@ Servers aren't typically configured for aggressive or even minimal power-saving.
 
 #### Clock speed
 
-Clock speed (frequency) is the operating speed of a computer or its microprocessor, expressed in cycles per second (megahertz). Dynamically adjusting the clock speed of computing devices is often used in consumer devices to achieve more energy proportionality.
+Clock speed (frequency) is the operating speed of a computer or its microprocessor, expressed in cycles per second (megahertz). Consumer devices often dynamically adjust the clock speed of computing devices to achieve more energy proportionality.
 
 Clock speed denotes how fast a computer can execute instructions.
 

@@ -1,4 +1,4 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.azure.azure-cyclecloud-high-performance-computing.knowledge-check
 title: Knowledge check
 metadata:
@@ -8,8 +8,7 @@ metadata:
   ms.date: 06/07/2021
   author: anhoward
   ms.author: anhoward
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
 quiz:

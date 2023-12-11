@@ -4,9 +4,10 @@ metadata:
   title: Microsoft Cloud Adoption Framework for Azure
   description: "Microsoft Cloud Adoption Framework for Azure"
   ms.date: 08/23/2023
-  author: wwlpublish
-  ms.author: cynthist
-  ms.topic: interactive-tutorial
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.service: caf
+  ms.topic: module
 title: Microsoft Cloud Adoption Framework for Azure
 summary: This module covers the basics of how to use the Cloud Adoption Framework—a set of documentation, implementation guidance, best practices, and tools that aid in aligning the strategy for business, people, and technology.
 abstract: |

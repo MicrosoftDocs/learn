@@ -1,15 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.responsible-generative-ai
 metadata:
-  title: Responsible Generative AI
+  title: Fundamentals of Responsible Generative AI
   description: "A practical approach to implementing generative AI responsibly."
   ms.date: 7/13/2023
   author: graememalcolm
   ms.author: gmalc
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
-  ms.service: cognitive-services
-  ms.subservice: openai
-title: Responsible Generative AI
+  ms.service: azure-ai-openai
+title: Fundamentals of Responsible Generative AI
 summary: "Generative AI enables amazing creative solutions, but must be implemented responsibly to minimize the risk of harmful content generation."
 abstract: |
   By the end of this module, you'll be able to:

@@ -2,6 +2,9 @@ You're still looking for the ISBN of a book on how to grow potatoes in outer spa
 
 In the next few units, you'll write a Q# program to do just that by using Grover's algorithm.
 
+> [!NOTE]
+> Each code snippet is shown to demonstrate a specific concept and solution, and will not run by itself. The entire program is summarized at the end of the module for you to actually run. 
+
 ## ISBN check digits
 
 Fortunately, an ISBN isn't simply a random sequence of digits. Instead, the system uses check digits, a type of redundancy check historically used to detect simple errors when digits are entered manually.
@@ -49,16 +52,16 @@ for a given modulus $N$ and constant integer multiplier $a$.
 
 To implement our mapping specifically, we need to set the $|b\rangle$ register to the number state $|9\rangle$. Note that each register will need to consist of four qubits to accurately represent the digits 0 through 9.
 
-Properly using this mapping as an oracle on the four-qubit data register $|x\rangle$ proceeds by first creating a four-qubit target register (that is, $|b\rangle$) and preparing it in the number state $|9\rangle$. You can do this by using the [`ApplyXorInPlace` operation](/qsharp/api/qsharp/microsoft.quantum.arithmetic.applyxorinplace?azure-portal=true) and then performing the mapping by providing $N=11$ and $a=6$, like this:
+Properly using this mapping as an oracle on the four-qubit data register $|x\rangle$ proceeds by first creating a four-qubit target register (that is, $|b\rangle$) and preparing it in the number state $|9\rangle$. You can do this by using the [`ApplyXorInPlace`](/qsharp/api/qsharp/microsoft.quantum.arithmetic.applyxorinplace?azure-portal=true)  operation and then performing the mapping by providing $N=11$ and $a=6$, like this:
 $$
 |x\rangle|9\rangle \mapsto |x\rangle|(9 + 6 \cdot x) \bmod 11\rangle
 $$
 
 In the remainder of this unit, you'll learn how to explicitly implement this mapping as a Q# operation.
 
-### Step 1. Flag the correct state by applying the oracle
+### Step 1: Flag the correct state by applying the oracle
 
-Recall from the [module on Grover's algorithm](/training/modules/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm?azure-portal=true) that the primary function of the oracle is to flip the sign of, or *flag*, the "good" states. The good states provide a solution to the search problem.
+Recall from the [Implement Grover's search algorithm in Q#](/azure/quantum/tutorial-qdk-grovers-search?azure-portal=true) tutorial that the primary function of the oracle is to flip the sign of, or *flag*, the "good" states. The good states provide a solution to the search problem.
 
 You can do this by using the *phase kickback* trick. This trick makes use of the fact that when a controlled `X` operation is applied to the $|-\rangle$ state, the $|-\rangle$ state remains unchanged and the corresponding states of the control register receive a factor of -1.
 
@@ -90,7 +93,7 @@ The following code defines the operation `IsbnOracle`, which implements the full
 
 Note that upon allocation, `targetReg` will be in the state $|0\rangle$. Therefore, `ComputeIsbnCheck` will need to first initialize.
 
-### Step 2. Apply the arithmetic mapping to the target state
+### Step 2: Apply the arithmetic mapping to the target state
 
 We just described how you implement the oracle by using the `ComputeIsbnCheck` operation, which performs the mapping:
 $$
@@ -103,7 +106,7 @@ Here's the code to do this:
 
 :::code language="qsharp" source="../code/4-program-2.qs":::
 
-## Step 3. Generalize to arbitrary ISBNs
+## Step 3: Generalize to arbitrary ISBNs
 
 We simplified the discussion in this unit by considering only the specific ISBN check of 
 $$

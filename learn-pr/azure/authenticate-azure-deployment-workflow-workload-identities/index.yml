@@ -5,9 +5,9 @@ metadata:
   title: Authenticate your Azure deployment workflow by using workload identities
   description: Learn how to create, manage, and grant permissions to workload identities, which enable your deployment workflows to securely authenticate to Azure.
   ms.date: 01/31/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
+  author: mumian
+  ms.author: jgao
+  ms.topic: module
   ms.custom: engagement-fy23
   ms.service: azure
 title: Authenticate your Azure deployment workflow by using workload identities
@@ -36,7 +36,7 @@ languages:
   - bicep
 products:
   - azure
-  - azure-active-directory
+  - entra-id
   - azure-resource-manager
   - github
 subjects:

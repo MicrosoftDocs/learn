@@ -12,7 +12,7 @@ Blob Storage supports the SFTP protocol on storage accounts enabled with a hiera
 With an SFTP-enabled storage account, you can create local users and grant them access to multiple root containers. You can specify Read, Write, Create, List, and Delete permissions for each container. The SFTP clients use these local users for authentication purposes. You can also configure a user's home directory so the SFTP client can connect to that directory.
 
 > [!NOTE]
-> SFTP clients can't use Azure Active Directory (Azure AD) authentication or Shared Access Signature (SAS).
+> SFTP clients can't use Microsoft Entra authentication or Shared Access Signature (SAS).
 
 Use the following procedure to enable support for SFTP and create local users and then configure their container permissions:
 

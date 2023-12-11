@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-text-ai-language.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 08/31/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure-ai-language
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

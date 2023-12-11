@@ -5,10 +5,9 @@ metadata:
   title: Azure migration and modernization drivers
   description: Understand the primary drivers for Azure migration, and how applications can be changed or replaced to use new cloud technologies.
   ms.date: 05/15/2023
-  author: jamcneil
-  ms.author: jumcn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: sgsneha
+  ms.author: sudhirsneha
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-azure-migration-drivers.md)]

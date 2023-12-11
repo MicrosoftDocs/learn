@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/01/2023
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'AZ-500: Manage security operation'
 prerequisites: |
   - None
@@ -22,7 +21,6 @@ roles:
 products:
 - azure-log-analytics
 - azure-monitor
-- azure-sentinel
 - defender-for-cloud
 - microsoft-sentinel
 subjects:

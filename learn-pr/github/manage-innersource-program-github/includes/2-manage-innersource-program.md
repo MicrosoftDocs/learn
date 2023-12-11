@@ -2,6 +2,8 @@ Here, we discuss how you can design an InnerSource program to enjoy the best of 
 
 ## What is InnerSource?
 
+Open-source software can be freely used, modified, and shared by anyone. Using open-source software, anyone can view, modify, and distribute a project for any purpose with the idea that sharing code leads to better, more reliable software.
+
 **InnerSource** is the practice of applying open-source patterns to projects with a limited audience. For example, a company may establish an InnerSource program that mirrors the structure of a typical open-source project, except that it's only accessible to the employees of that company. In effect, it's an open-source program behind your company's firewall.
 
 ### InnerSource benefits
@@ -10,9 +12,9 @@ An InnerSource program can offer numerous benefits beyond what traditional close
 
 First, they *encourage transparency*. Access to the source code of other company projects can help developers be more productive when working on their own projects. They can see how different teams solved problems similar to the ones they're facing, and often find code and other assets that they can reuse. Access to team issues, pull requests, and project plans also provide better data for them to understand the velocity and direction of the project.
 
-Next, they *reduce friction*. If a consumer team is dependent on a bug fix or new feature for a project owned by a different team, they have a channel through which they can propose the changes they need. And if those changes can't be merged in for any reason, the consumer team has the option of forking the project to meet their needs.
+Next, they *reduce friction*. If a consumer team is dependent on a bug fix or new feature for a project that's owned by a different team, they have a channel through which they can propose the changes they need. And if those changes can't be merged in for any reason, the consumer team has the option of forking the project to meet their needs.
 
-Finally, they *standardize practices*. A common challenge development organizations face is that different teams often diverge in the ways they operate. Building an InnerSource program is a great opportunity to adopt standard conventions that can be used across every development team, even if they don't follow identical practices. For example, two teams may prefer different processes for accepting contributions. Having them standardize on the way they communicate their different processes makes it much easier for anyone to contribute to either. 
+Finally, they *standardize practices*. A common challenge development organizations face is that different teams often diverge in the ways they operate. Building an InnerSource program is a great opportunity to adopt standard conventions that can be used across every development team, even if they don't follow identical practices. For example, two teams may prefer different processes for accepting contributions. Having them standardize on the way they communicate their different processes makes it much easier for anyone to contribute to either.
 
 These examples are just a few of the benefits enjoyed by InnerSource programs. To learn more, see [An introduction to InnerSource](https://resources.github.com/whitepapers/introduction-to-innersource/?azure-portal=true).
 
@@ -44,13 +46,21 @@ A few best practices include:
 
 - Use a descriptive repository name, such as `warehouse-api` or `supply-chain-web`.
 - Include a concise description. A sentence or two should be enough for potential users to know if the project might fit their needs.
-- Include a `README.md` file in the root of the repository. GitHub uses this file as the landing page when people visit the repository.
-	- Articulate the purpose and vision of the project so potential consumers understand whether it fits their needs.
-	- Offer visual aids, such as screenshots or code samples, to illustrate the project in action.
-	- Include a link to a production or demo version of the app for review.
-	- Set expectations for prerequisites and deployment procedures. If the project has disqualifying prerequisites, then let potential users know early.
-	- Include references to projects on which you depend. Visitors might only need to use one of the projects you depend on to meet their needs, which saves everyone time. It's also a good way to promote the work of others.
-	- Make use of Markdown to guide readers through properly formatted content.
+- [License your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) so that customers know how they can use, change, and distribute the software.
+- Include a `README.md` file in the repository. GitHub uses this file as the landing page when people visit the repository.
+
+### Add a README file
+
+A README file communicates expectations for your project and helps you manage contributions. README files can:
+
+- Articulate the purpose and vision of the project so potential consumers understand whether it fits their needs.
+- Offer visual aids, such as screenshots or code samples, to illustrate the project in action.
+- Include links to a production or demo version of the app for review.
+- Set expectations for prerequisites and deployment procedures.
+- Include references to the projects on which you depend. These references are a good way to promote the work of others.
+- Use Markdown to guide readers through properly formatted content.
+
+If you put your README file in your repository's hidden *.github*, *docs*, or in the root directory, GitHub recognizes and automatically surfaces your README to repository visitors. If a repository contains more than one README file, then the file shown is chosen from locations in the following order: the *.github* directory, then the repository's root directory, and finally the *docs* directory.
 
 Check out some [Awesome README examples](https://github.com/matiassingers/awesome-readme?azure-portal=true).
 
@@ -68,11 +78,13 @@ If a `CONTRIBUTING.md` exists, GitHub presents a link to it when users create is
 
 Check out some [Awesome CONTRIBUTING.md examples](https://github.com/mntnr/awesome-contributing?azure-portal=true)
 
+Additionally, consider [adding a CODEOWNERS file](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) to the repository to define individuals or teams that are responsible for reviewing code modifications.
+
 ### Create issue and pull request templates
 
 GitHub supports starter templates for new issues and pull requests. Use these to provide the initial description text for a newly created issue or pull request.
 
-For example, if your project has `.github/ISSUE_TEMPLATE.md`, anytime a user starts the process of creating an issue, they see this content. Rather than having to constantly reference the required details from a `CONTRIBUTING.md`, they are able to just fill out the issue like a form using the template text.
+For example, if your project has `.github/ISSUE_TEMPLATE.md`, anytime a user starts the process of creating an issue, they see this content. Rather than having to constantly reference the required details from a `CONTRIBUTING.md`, they're able to just fill out the issue like a form using the template text.
 
 ![A new issue using the template.](../media/2-new-issue-template.png)
 

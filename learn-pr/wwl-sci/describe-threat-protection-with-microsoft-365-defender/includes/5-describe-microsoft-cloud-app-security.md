@@ -47,7 +47,7 @@ Defender for Cloud Apps is also integrated directly into Microsoft 365 Defender,
 ### App to app protection with app governance
  OAuth, an open standard for token-based authentication and authorization, enables a user's account information to be used by third-party services, without exposing the user's password. Apps that use OAuth often have extensive permissions to access data in other apps on behalf of a user, making OAuth apps susceptible to a compromise.
 
-Defender for Cloud Apps closes the gap on OAuth app security, helping you protect inter-app data exchange with application governance. With Defender fr Cloud Apps, you can watch for unused apps and monitor both current and expired credentials to govern the apps used in your organization and maintain app hygiene.
+Defender for Cloud Apps closes the gap on OAuth app security, helping you protect inter-app data exchange with application governance. With Defender for Cloud Apps, you can watch for unused apps and monitor both current and expired credentials to govern the apps used in your organization and maintain app hygiene.
 
 :::image type="content" source="../media/microsoft-cloud-app-security-v2-inline.png" lightbox="../media/microsoft-cloud-app-security-v2-expanded.png" alt-text="Screenshot of Microsoft Defender for Cloud Apps dashboard.":::
 

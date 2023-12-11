@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/10/2019
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise -Use an activity log alert and an action group to notify users about events in your Azure infrastructure
 durationInMinutes: 10
 interactive: bash

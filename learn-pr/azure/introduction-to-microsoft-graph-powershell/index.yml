@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to Microsoft Graph PowerShell          # Do not edit: title must be "Introduction to (product)"
   description: Evaluate whether Microsoft Graph PowerShell is appropriate to automate your business processes             # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 9/19/2022             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  ms.date: 9/22/2023             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: msewaweru      # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: eunicewaweru           # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
@@ -101,7 +101,7 @@ iconUrl: /training/achievements/introduction-to-microsoft-graph-powershell-learn
 ### Do not edit: level must be 'beginner'
 ###
 levels:
-  - beginner
+  - intermediate
 ###########################################################################
 ###
 ### Specify the target roles.
@@ -116,7 +116,7 @@ roles:
 ### Use value(s) from the product taxonomy (https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product)
 ###
 products:
-  - microsoft-graph-powershell-sdk
+  - ms-graph
 ###########################################################################
 ###
 ### Specify the subject areas.

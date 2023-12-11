@@ -10,7 +10,7 @@ Let's explore the core elements of Synapse Real-Time Analytics (RTA) in Microsof
 
 ## KQL Database objects
 
-As with many databases, the KQL Database has many objects to support your data storage, streaming, and querying needs to support decision support systems downstream.
+As with many databases, the KQL Database has many objects to handle your data storage, streaming, and querying needs to support your decision making systems downstream.
 
 ![Screenshot of a Fabric Kusto Database.]( ../media/kusto-database.png)
 

@@ -30,7 +30,7 @@ You can use the Boolean return value to take action on the value (like performin
 
 ### Out parameters
 
-Methods can return a value or return "void", meaning they return no value. Methods can also return values through `out` parameters, which are defined just like an input parameter, but include the `out` keyword.
+Methods can return a value or return "void" - meaning they return no value. Methods can also return values through `out` parameters, which are defined just like an input parameter, but include the `out` keyword.
 
 ### TryParse() a string into an int
 
@@ -112,7 +112,7 @@ Methods can return a value or return "void", meaning they return no value. Metho
 
 1. Examine the last line of code in the previous sample, `Console.WriteLine($"Measurement (w/ offset): {50 + result}");`,
 
-    Since the `result` variable is defined outside of the if statement, it can be accessed later in your code. */
+    Since the `result` variable is defined outside of the if statement, it can be accessed later in your code. 
 
 ### Modify the string variable to a value that can't be parsed
 
@@ -170,5 +170,5 @@ The `TryParse()` method is a valuable tool. Here are few quick ideas to remember
 
 - Use `TryParse()` when converting a string into a numeric data type.
 - `TryParse()` returns `true` if the conversion is successful, `false` if it's unsuccessful.
-- Out parameters provide a secondary means of a method returning a value. In this case, the out parameter returns the converted value.
-- Use the keyword `out` when passing in an argument to a method that has defined an out parameter.
+- Out parameters provide a secondary means of a method returning a value. In this case, the `out` parameter returns the converted value.
+- Use the keyword `out` when passing in an argument to a method that has defined an `out` parameter.

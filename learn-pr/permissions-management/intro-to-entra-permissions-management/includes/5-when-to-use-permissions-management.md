@@ -1,6 +1,8 @@
-## When to use Entra Permissions Management ###
+<a name='when-to-use-entra-permissions-management-'></a>
 
-Here we'll look at how Entra Permissions Management fits in the landscape of cloud security, and within the full security offerings from Microsoft.
+## When to use Microsoft Entra Permissions Management ###
+
+Here we'll look at how Microsoft Entra Permissions Management fits in the landscape of cloud security, and within the full security offerings from Microsoft.
 
 ### Working with Privileged Access Management & Identity Governance
 
@@ -8,7 +10,7 @@ Cloud Infrastructure Entitlement Management (CIEM) enhances an overall set of cl
 
 ### Privileged Access Management ###
 
-Privileged Access, or Identity, Management is a service in Azure Active Directory (Azure AD) that allows you to manage, control, and monitor access to key resources in your organization. Privileged Access Management (PAM) complements CIEM by providing identity lifecycle management, credential management, session management and recording, and just-in-time identity access.
+Privileged Access, or Identity, Management is a service in Microsoft Entra ID that allows you to manage, control, and monitor access to key resources in your organization. Privileged Access Management (PAM) complements CIEM by providing identity lifecycle management, credential management, session management and recording, and just-in-time identity access.
 
 ### Identity Governance & Administration ###
 
@@ -20,7 +22,7 @@ Identity Governance and Administration (IGA) allows you to balance the need for 
 
 ### Building a foundation for Zero Trust ###
 
-Microsoft's implementation of a CIEM with Entra Permissions Management plays a key role in how Microsoft's overall cloud security offerings empower customers with a complete foundation for a zero trust strategy.  
+Microsoft's implementation of a CIEM with Microsoft Entra Permissions Management plays a key role in how Microsoft's overall cloud security offerings empower customers with a complete foundation for a zero trust strategy.  
 
 :::image type="content" source="../media/microsoft-empowering-zero-trust.png" alt-text="Screen with Microsoft Security Empowers Zero Trust."lightbox="../media/microsoft-empowering-zero-trust.png":::
 

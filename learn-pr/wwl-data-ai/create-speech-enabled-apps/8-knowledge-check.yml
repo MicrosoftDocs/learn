@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-speech-enabled-apps.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/31/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure-ai-speech
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What information do you need from your Azure AI Speech service resource to consume it using the Azure AI Speech SDK?"
+    choices:
+    - content: "The location and one of the keys"
+      isCorrect: true
+      explanation: "Correct. The Azure AI Speech SDK requires the location and a key to connect to the Azure AI Speech service."
+    - content: "The primary and secondary keys"
+      isCorrect: false
+      explanation: "Incorrect. The Azure AI Speech SDK requires the location and a key to connect to the Azure AI Speech service."
+    - content: "The endpoint and one of the keys"
+      isCorrect: false
+      explanation: "Incorrect. The Azure AI Speech SDK requires the location and a key to connect to the Azure AI Speech service."
+  - content: "Which object should you use to specify that the speech input to be transcribed to text is in an audio file?"
+    choices:
+    - content: "SpeechConfig"
+      isCorrect: false
+      explanation: "Incorrect. Use an AudioConfig to specify the input source for speech."
+    - content: "AudioConfig"
+      isCorrect: true
+      explanation: "Correct. Use an AudioConfig to specify the input source for speech."
+    - content: "SpeechRecognizer"
+      isCorrect: false
+      explanation: "Incorrect. Use an AudioConfig to specify the input source for speech."
+  - content: "How can you change the voice used in speech synthesis?"
+    choices:
+    - content: "Specify a SpeechSynthesisOutputFormat enumeration in the SpeechConfig object."
+      isCorrect: false
+      explanation: "Incorrect. To set a voice, set the SpeechSynthesisVoiceName property of the SpeechConfig to a voice name, such as \"en-GB-George\"."
+    - content: "Set the SpeechSynthesisVoiceName property of the SpeechConfig object to the desired voice name."
+      isCorrect: true
+      explanation: "Correct. To set a voice, set the SpeechSynthesisVoiceName property of the SpeechConfig to a voice name, such as \"en-GB-George\"."
+    - content: "Specify a filename in the AudioConfig object."
+      isCorrect: false
+      explanation: "Incorrect. To set a voice, set the SpeechSynthesisVoiceName property of the SpeechConfig to a voice name, such as \"en-GB-George\"."

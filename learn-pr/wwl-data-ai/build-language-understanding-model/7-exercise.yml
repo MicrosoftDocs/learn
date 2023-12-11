@@ -4,16 +4,12 @@ title: Exercise - Build an Azure AI services conversational language understandi
 metadata:
   title: Exercise - Build an Azure AI services conversational language understanding model
   description: "Exercise - Build an Azure AI services conversational language understanding model"
-  ms.date: 08/31/2023
+  ms.date: 11/07/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.service: azure-ai-language
   ms.subservice: azure-ai-clu
-azureSandbox: false
-labId: 126701
-labModal: true
 durationInMinutes: 35
 content: |
   [!include[](includes/7-exercise.md)]

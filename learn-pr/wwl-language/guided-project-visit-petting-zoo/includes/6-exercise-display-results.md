@@ -16,13 +16,13 @@ In this step, you'll define the method to display the results of the animal grou
 1. Add the following code to the `PrintGroup` method:
 
     ```c#
-    void PrintGroup(string[,] groups)
+    void PrintGroup(string[,] group)
     {
-        for (int i = 0; i < groups.GetLength(0); i++) 
+        for (int i = 0; i < group.GetLength(0); i++) 
         {
-            for (int j = 0; j < groups.GetLength(1); j++) 
+            for (int j = 0; j < group.GetLength(1); j++) 
             {
-                Console.Write($"{groups[i,j]}  ");
+                Console.Write($"{group[i,j]}  ");
             }
         }
     }
@@ -33,14 +33,14 @@ In this step, you'll define the method to display the results of the animal grou
 1. Update your method with the following code:
 
     ```c#
-    void PrintGroup(string[,] groups) 
+    void PrintGroup(string[,] group) 
     {
-        for (int i = 0; i < groups.GetLength(0); i++) 
+        for (int i = 0; i < group.GetLength(0); i++) 
         {
             Console.Write($"Group {i + 1}: ");
-            for (int j = 0; j < groups.GetLength(1); j++) 
+            for (int j = 0; j < group.GetLength(1); j++) 
             {
-                Console.Write($"{groups[i,j]}  ");
+                Console.Write($"{group[i,j]}  ");
             }
             Console.WriteLine();
         }

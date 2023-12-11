@@ -1,4 +1,3 @@
-
 In this module, you learned how to:
 
 - Identify classification machine learning scenarios.

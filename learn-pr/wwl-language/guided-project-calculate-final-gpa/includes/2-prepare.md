@@ -1,5 +1,3 @@
-
-
 You'll be using the .NET Editor as your code development environment. You'll be writing code that uses string and numeric variables, performs calculations, then formats and displays the results to a console.
 
 ## Project overview
@@ -55,3 +53,4 @@ Use the following steps to prepare for the Guided project exercises:
     ```
 
 Now you're ready to begin the Guided project exercises. Good luck!
+

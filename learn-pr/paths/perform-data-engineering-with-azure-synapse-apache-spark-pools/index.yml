@@ -6,8 +6,7 @@ metadata:
   ms.date: 02/09/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
   ms.service: synapse-analytics
 title: Perform data engineering with Azure Synapse Apache Spark Pools
 prerequisites: |

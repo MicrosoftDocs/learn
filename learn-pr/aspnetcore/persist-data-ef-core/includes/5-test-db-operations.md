@@ -1,4 +1,4 @@
-In the previous exercise, you wrote code for your team's API to implement database operations. In this exercise, you test the API now that it's connected to the database.
+In the previous exercise, you wrote code for your team's API to implement database operations. In this exercise, you'll test the API now that it's connected to the database.
 
 ## Run the API
 
@@ -34,11 +34,11 @@ Now that the API is running, test the API to see if the operations work as expec
 
 ## Test CRUD operations
 
-In the following steps, you use the Swagger UI to test each of the API's operations the way that a client application would. After each operation, inspect the database in SQLite Explorer to see the database changes as they happen.
+In the following steps, you'll use the Swagger UI to test each of the API's operations the way that a client application would. After each operation, inspect the database in SQLite Explorer to see the database changes as they happen.
 
 1. Request the full list of pizzas:
 
-    1. Under the **Pizza** heading, expand the **GET /Pizza** operation and select **Try it out**.
+    1. Under the **Pizza** heading, expand the **GET /Pizza** operation and select the **Try it out** button.
     1. Select the **Execute** button.
 
     The API returns the list of pizzas as JSON (under **Response body**).
@@ -67,18 +67,18 @@ In the following steps, you use the Swagger UI to test each of the API's operati
     ```
 
    > [!TIP]
-   > *Why are the `sauce` and `toppings` properties null?* This result is expected because in the `PizzaService.GetAll` method, you didn't use the `Include` extension method to specify that the navigation properties should be loaded.
+   > *Why are the `sauce` and `toppings` properties null?* This result is expected, because in the `PizzaService.GetAll` method, you didn't use the `Include` extension method to specify that the navigation properties should be loaded.
 
 1. Request a single pizza:
 
-    1. Scroll down to the **GET /Pizza{id}** operation and expand it. Then select **Try it out**.
-    1. In the **id** field, enter `2` and select **Execute**.
+    1. Scroll down to the **GET /Pizza{id}** operation and expand it, then select the **Try it out** button.
+    1. In the **id** field, enter **2**, then select **Execute**.
 
     The API returns the "Hawaiian" pizza. Notice that the `sauce` and `toppings` properties are populated because the `PizzaService.GetById` method uses the `Include` extension method.
 
 1. Add a new pizza:
 
-    1. Scroll up to the **POST /Pizza** operation (located between the **GET** operations you just used) and expand it. Then select **Try it out**.
+    1. Scroll up to the **POST /Pizza** operation (located between the **GET** operations you just used) and expand it, then select the **Try it out** button.
     1. In the **Request body** text box, paste the following JSON:
 
         ```json
@@ -103,7 +103,7 @@ In the following steps, you use the Swagger UI to test each of the API's operati
 
 1. Add another topping to the BBQ Beef pizza:
 
-    1. Scroll down to the **PUT /Pizza{id}/addtopping** operation and expand it. Select **Try it out**.
+    1. Scroll down to the **PUT /Pizza{id}/addtopping** operation and expand it, then select the **Try it out** button.
     1. In the **id** field, enter **4**.
     1. In the **toppingId** field, enter **5**.
     1. Select **Execute**.
@@ -112,7 +112,7 @@ In the following steps, you use the Swagger UI to test each of the API's operati
 
 1. Change the sauce on the BBQ Beef pizza:
 
-    1. Scroll down to the **PUT /Pizza{id}/updatesauce** operation and expand it. Select **Try it out**.
+    1. Scroll down to the **PUT /Pizza{id}/updatesauce** operation and expand it, then select the **Try it out** button.
     1. In the **id** field, enter **4**.
     1. In the **sauceId** field, enter **2**.
     1. Select **Execute**.
@@ -149,7 +149,7 @@ In the following steps, you use the Swagger UI to test each of the API's operati
 
     Delete the pizza:
 
-    1. Find the **DELETE /Pizza{id}** operation and expand it. Select **Try it out**.
+    1. Find the **DELETE /Pizza{id}** operation and expand it, then select the **Try it out** button.
     1. In the **id** field, enter **4**.
     1. Select **Execute**.
 
@@ -158,6 +158,6 @@ In the following steps, you use the Swagger UI to test each of the API's operati
 1. In the terminal with the running app, select <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the running app.
 
 > [!TIP]
-> You can experiment with the app. Whenever you'd like to start with a fresh database, stop the app and delete the *ContosoPizza.db*, *.db-shm*, and *.db-wal* files. Then run the app again.
+> You can experiment with the app. Whenever you'd like to start with a fresh database, stop the app and delete the *ContosoPizza.db*, *.db-shm*, and *.db-wal* files. Then, run the app again.
 
 Great work! The app is working with your database as expected! In the next unit, you'll scaffold entity models from an existing database.

@@ -1,9 +1,9 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.azure.cna-set-up-apps-use-scale.6-manage-monitor-azure-ad-apps
-title: Manage and monitor Azure AD apps 
+title: Manage and monitor Microsoft Entra apps 
 metadata:
-  title: Manage and monitor Azure AD apps
-  description: Manage and monitor Azure AD apps
+  title: Manage and monitor Microsoft Entra apps
+  description: Manage and monitor Microsoft Entra apps
   ms.date: 05/19/2021
   author: rmcmurray
   ms.author: robmcm

@@ -5,7 +5,7 @@ There are several components that make up the Microsoft identity platform:
 
 * **OAuth 2.0 and OpenID Connect standard-compliant authentication service** enabling developers to authenticate several identity types, including:
 
-    * Work or school accounts, provisioned through Azure Active Directory
+    * Work or school accounts, provisioned through Microsoft Entra ID
     * Personal Microsoft account, like Skype, Xbox, and Outlook.com
     * Social or local accounts, by using Azure Active Directory B2C
 
@@ -14,4 +14,3 @@ There are several components that make up the Microsoft identity platform:
 * **Application configuration API and PowerShell**: Programmatic configuration of your applications through the Microsoft Graph API and PowerShell so you can automate your DevOps tasks.
 
 For developers, the Microsoft identity platform offers integration of modern innovations in the identity and security space like passwordless authentication, step-up authentication, and Conditional Access. You don’t need to implement such functionality yourself: applications integrated with the Microsoft identity platform natively take advantage of such innovations.
-

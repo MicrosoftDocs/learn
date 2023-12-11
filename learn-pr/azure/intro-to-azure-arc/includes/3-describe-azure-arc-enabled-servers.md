@@ -45,15 +45,21 @@ Each of your onboarded machines is:
 
 To onboard a server, you must install the Azure Connected Machine agent. This installation connects your machines to Azure Arc-enabled servers. The Azure Connected Machine agent currently supports the following versions of the Windows and Linux operating systems:
 
-- Windows Server 2008 R2 SP1, 2012 R2, 2016, 2019, and 2022, including Server Core installations
-- Windows IoT Enterprise
+- Amazon Linux 2 and 2023
+- Azure Linux (CBL-Mariner) 1.0, 2.0
 - Azure Stack HCI
-- Ubuntu 16.04, 18.04, 20.04, and 22.04 LTS
 - CentOS Linux 7 and 8
-- SUSE Linux Enterprise Server (SLES) 12 and 15
-- Red Hat Enterprise Linux (RHEL) 7 and 8
-- Amazon Linux 2
+- Debian 10, 11, and 12
 - Oracle Linux 7 and 8
+- Red Hat Enterprise Linux (RHEL) 7, 8 and 9
+- Rocky Linux 8
+- SUSE Linux Enterprise Server (SLES) 12 SP3-SP5 and 15
+- Ubuntu 16.04, 18.04, 20.04, and 22.04 LTS
+- Windows 10, 11
+- Windows IoT Enterprise
+- Windows Server 2008 R2 SP1, 2012, 2012 R2, 2016, 2019, and 2022
+    - Both Desktop and Server Core experiences are supported
+    - Azure Editions are supported on Azure Stack HCI
 
 The Azure Connected Machine agent sends a heartbeat message to the Azure Arc service every five minutes. If the Azure Arc service stops receiving heartbeat messages from the connected machine, it considers the machine to be offline. The machine is then marked as **Disconnected** until heartbeats resume, at which time the machine is marked as **Connected**.
 
@@ -80,5 +86,5 @@ With Azure Arc-enabled servers, you can deploy extensions to Windows and Linux s
 | -------------------------- | ------------------------------------------------------------ |
 | CustomScriptExtension      | Downloads and runs scripts on servers                       |
 | DSC                        | Uploads and applies a PowerShell DSC configuration on servers |
-| Log Analytics agent        | Installs the Log Analytics agent on servers and enrolls VMs into an existing Log Analytics workspace |
+| Azure Monitor agent        | Installs the Azure Monitor agent to monitor the operating system and any workloads running on the machine |
 | Microsoft Dependency Agent | Installs the Dependency Agent to enable Azure Monitor Insights on servers |

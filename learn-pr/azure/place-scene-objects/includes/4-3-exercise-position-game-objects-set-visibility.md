@@ -8,7 +8,7 @@ To get started, first download the following Unity custom package: [MRTK.HoloLen
 
     :::image type="content" source="../media/import-custom-package.png" alt-text="Screenshot that shows how to import a custom package." lightbox="../media/import-custom-package.png":::
 
-2. In **Import package**, select the **MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unity** package that you downloaded, and then select **Open**.
+2. In **Import package**, select the **MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.3.0.0** unitypackage that you downloaded, and then select **Open**.
 
     :::image type="content" source="../media/import-tutorial-package.png" alt-text="Screenshot that shows how to import the tutorial package." lightbox="../media/import-tutorial-package.png":::
 
@@ -40,7 +40,7 @@ To get started, first download the following Unity custom package: [MRTK.HoloLen
 
     :::image type="content" source="../media/select-prefabs-folder.png" alt-text="Screenshot of the Project window with the Prefabs folder selected." lightbox="../media/select-prefabs-folder.png":::
 
-2. From the **Project** window, drag the **Table** prefab onto the **RoverExplorer** object, to make it a child of that object. Then, in the **Inspector** window, configure the **Transform** component as follows:
+2. From the **Project** window, drag the **Table** prefab onto the **RoverExplorer** object, to make it a child of that object. Then, in the **Inspector** window, configure the table's **Transform** component as follows:
 
     * **Position**: X = 0, Y = -0.005, Z = 0
     * **Rotation**: X = 0, Y = 0, Z = 0
@@ -48,7 +48,7 @@ To get started, first download the following Unity custom package: [MRTK.HoloLen
 
     :::image type="content" source="../media/position-prefab-table.png" alt-text="Screenshot of the newly added Table prefab selected and positioned." lightbox="../media/position-prefab-table.png":::
 
-3. From **Project**, drag the **RoverAssembly** prefab onto the **RoverExplorer** object, to make it a child of that object. Then, in **Inspector**, configure the **Transform** component as follows:
+3. From the **Project** pane, drag the **RoverAssembly** prefab onto the **RoverExplorer** object, to make it a child of that object. Then, in **Inspector**, configure the **Transform** component as follows:
 
     * **Position**: X = -0.1, Y = 0, Z = 0
     * **Rotation**: X = 0, Y = -135, Z = 0

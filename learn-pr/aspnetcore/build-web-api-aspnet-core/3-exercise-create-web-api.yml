@@ -6,10 +6,9 @@ metadata:
   ms.date: 04/28/2021
   author: jongalloway
   ms.author: jogallow
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-dotnet
-  ms.prod: aspnet-core
 title: Exercise - Create a web API project
 durationInMinutes: 8
 content: |

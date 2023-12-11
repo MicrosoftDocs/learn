@@ -24,7 +24,3 @@ Module 5 Tips and Tricks
 Module 5 Demo
 
 - Click-through demo: [Connected field service](https://edxinteractivepage.blob.core.windows.net/edxpages/mb-910/version2/LP-FS-M2-CFS/index.html)
-
-Module 5 Labs
-
-- [Schedule items](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_M05_Lab2_Schedule_Items.md)

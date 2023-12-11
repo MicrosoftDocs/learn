@@ -1,4 +1,3 @@
-
 Training and deploying an effective machine learning model involves a lot of work, much of it time-consuming and resource-intensive. Azure Machine Learning is a cloud-based service that helps simplify some of the tasks it takes to prepare data, train a model, and deploy a predictive service. Classification machine learning models can be built using Azure Machine Learning.
 
 Most importantly, Azure Machine Learning helps data scientists increase their efficiency by automating many of the time-consuming tasks associated with training models. It enables them to use cloud-based compute resources that scale effectively to handle large volumes of data while incurring costs only when actually used.
@@ -22,6 +21,6 @@ At its core, Azure Machine Learning is a service for training and managing machi
 In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), you can manage the compute targets for your data science activities. There are four kinds of compute resource you can create:
 - **Compute Instances**: Development workstations that data scientists can use to work with data and models.
 - **Compute Clusters**: Scalable clusters of virtual machines for on-demand processing of experiment code.
-- **Inference Clusters**: Deployment targets for predictive services that use your trained models.
+- **Kubernetes Clusters**: Deployment targets for predictive services that use your trained models.  You can access previous versions of "inference clusters" here. 
 - **Attached Compute**: Links to existing Azure compute resources, such as Virtual Machines or Azure Databricks clusters.
 

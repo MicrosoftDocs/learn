@@ -1,4 +1,4 @@
-Azure Storage enables you to authorize access to files with a shared key, with a shared access signature (SAS), or via Azure Active Directory (Azure AD). With a SAS, you control what a client can do with the files and for how long.
+Azure Storage enables you to authorize access to files with a shared key, with a shared access signature (SAS), or via Microsoft Entra ID. With a SAS, you control what a client can do with the files and for how long.
 
 Your company's image diagnostic system accesses its patient images internally via a shared key. You need to create an API to allow third parties access to diagnostic images. You create a test page on your web app to see how a SAS can help you grant secure access to third-party clients.
 

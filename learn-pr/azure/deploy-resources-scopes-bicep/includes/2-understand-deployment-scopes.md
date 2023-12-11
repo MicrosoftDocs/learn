@@ -8,7 +8,7 @@ Azure has a hierarchical resource structure with multiple levels of management. 
 
 :::image type="content" source="../media/2-hierarchy.png" alt-text="Diagram showing an Azure tenant, three management groups, three subscriptions, and four resource groups." border="false":::
 
-:::image type="icon" source="../media/callout-01.png"::: Your *tenant* corresponds to your Azure Active Directory (Azure AD) instance. An organization ordinarily has only one Azure AD instance. This instance acts as the root of the resource hierarchy.
+:::image type="icon" source="../media/callout-01.png"::: Your *tenant* corresponds to your Microsoft Entra instance. An organization ordinarily has only one Microsoft Entra instance. This instance acts as the root of the resource hierarchy.
 
 :::image type="icon" source="../media/callout-02.png"::: *Management groups* provide a way to organize Azure subscriptions. Each tenant has a single root management group, and you can establish your own hierarchy of management groups under it. You might create separate management groups for the various parts of your organization, or for subscriptions that have their own security or governance requirements. You can apply policy and access-control restrictions to management groups, and these restrictions are inherited by all subscriptions below that management group in the hierarchy. Management groups aren't deployed to regions, and they have no impact on the locations of your resources.
 

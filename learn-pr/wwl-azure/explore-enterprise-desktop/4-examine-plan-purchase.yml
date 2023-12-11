@@ -4,10 +4,12 @@ title: Examine planning and purchasing
 metadata:
   title: Examine planning and purchasing
   description: "Examine planning and purchasing"
-  ms.date: 08/28/2023
+  ms.date: 10/19/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/4-examine-plan-purchase.md)]

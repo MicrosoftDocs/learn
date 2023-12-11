@@ -22,10 +22,6 @@ You must create an Azure DevOps Organization and a Team Project for some exercis
 
 To get the most out of this course, we recommend that you understand Azure DevOps and pipeline management.
 
-For study recommendations, see:
-
-- [Configure a project and repository structure to support secure pipelines - Introduction.](/training/modules/configure-project-repository-structure-support-secure-pipelines/includes/1-introduction)
-
 Ensure you have all the necessary resources and access to Azure DevOps before starting the course.
 
 Let's begin!

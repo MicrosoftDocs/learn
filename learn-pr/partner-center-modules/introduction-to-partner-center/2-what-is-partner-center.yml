@@ -9,8 +9,7 @@ metadata:
   author: JulCsc
   ms.author: juliacawthra
   manager: jasonh
-  ms.topic: interactive-tutorial
-  ms.service: partner-dashboard
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/2-what-is-partner-center.md)]

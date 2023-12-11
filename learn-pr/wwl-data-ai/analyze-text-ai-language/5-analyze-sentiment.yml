@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-text-ai-language.analyze-sentiment
+title: Analyze sentiment
+metadata:
+  title: Analyze sentiment
+  description: "Analyze sentiment"
+  ms.date: 08/31/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure-ai-language
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-analyze-sentiment.md)]

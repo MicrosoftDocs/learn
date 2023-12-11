@@ -8,7 +8,7 @@
 
     [Learning-unit introduction guidance](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
 -->
-Azure AD users can satisfy multifactor authentication requirements by using various authentications methods. 
+Microsoft Entra users can satisfy multifactor authentication requirements by using various authentications methods. 
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -52,9 +52,11 @@ Here, you'll review modern authentication methods and security features. Then yo
 -->
 
 <!-- Pattern for simple chunks (repeat as needed) -->
-## What authentication and verification methods are available in Azure Active Directory?
+<a name='what-authentication-and-verification-methods-are-available-in-azure-active-directory'></a>
 
-Users with accounts in Azure Active Directory (Azure AD) have many ways to authenticate themselves when they sign in for services like Microsoft 365 or Azure. While a username and password is one common way, that basic password should be supplemented or replaced with modern authentication and security features in Azure AD. 
+## What authentication and verification methods are available in Microsoft Entra ID?
+
+Users with accounts in Microsoft Entra ID have many ways to authenticate themselves when they sign in for services like Microsoft 365 or Azure. While a username and password is one common way, that basic password should be supplemented or replaced with modern authentication and security features in Microsoft Entra ID. 
 
 Let's take a closer look at each method to better understand their advantages. Knowing the advantages of each method will help you determine a path to move remote employees from less secure methods. 
 
@@ -78,7 +80,7 @@ FIDO2 security keys are an unphishable standards-based passwordless authenticati
 
 Users can register and then select a FIDO2 security key at the sign-in interface as their main means of authentication. These FIDO2 security keys are typically USB devices, but could also use Bluetooth or NFC. With a hardware device that handles the authentication, the security of an account is increased as there's no password that could be exposed or guessed.
 
-FIDO2 security keys can be used to sign in to their Azure AD or hybrid Azure AD joined Windows 10 devices and get single-sign on to their cloud and on-premises resources. Users can also sign in to supported browsers. FIDO2 security keys are a great option for enterprises who are very security sensitive or have scenarios or employees who aren't willing or able to use their phone as a second factor.
+FIDO2 security keys can be used to sign in to their Microsoft Entra ID or Microsoft Entra hybrid joined Windows 10 devices and get single-sign on to their cloud and on-premises resources. Users can also sign in to supported browsers. FIDO2 security keys are a great option for enterprises who are very security sensitive or have scenarios or employees who aren't willing or able to use their phone as a second factor.
 
 :::image type="content" border="true" source="../media/security-key.png" alt-text="Screenshot of FIDO2 Security key sign-in.":::
    
@@ -86,9 +88,9 @@ FIDO2 security keys can be used to sign in to their Azure AD or hybrid Azure AD 
 
 OATH TOTP (Time-based One Time Password) is an open standard that specifies how one-time password (OTP) codes are generated. OATH TOTP can be implemented using either software or hardware to generate the codes. 
 
-Software OATH tokens are typically applications such as Microsoft Authenticator and other authenticator apps. Azure AD generates the secret key, or seed, that's input into the app and used to generate each OTP. Microsoft Authenticator automatically generates codes when set up to do push notifications so a user has a backup even if their device doesn't have connectivity. 
+Software OATH tokens are typically applications such as Microsoft Authenticator and other authenticator apps. Microsoft Entra ID generates the secret key, or seed, that's input into the app and used to generate each OTP. Microsoft Authenticator automatically generates codes when set up to do push notifications so a user has a backup even if their device doesn't have connectivity. 
 
-OATH-TOTP SHA-1 hardware tokens refresh codes every 30 or 60 seconds. Customers can purchase these tokens from the vendor of their choice. OATH TOTP hardware tokens typically come with a secret key, or seed, pre-programmed in the token. These keys must be input into Azure AD.
+OATH-TOTP SHA-1 hardware tokens refresh codes every 30 or 60 seconds. Customers can purchase these tokens from the vendor of their choice. OATH TOTP hardware tokens typically come with a secret key, or seed, pre-programmed in the token. These keys must be input into Microsoft Entra ID.
 
 :::image type="content" border="true" source="../media/oath-tokens.png" alt-text="Screenshot of OATH token upload.":::
 
@@ -102,7 +104,7 @@ Users can also verify themselves using a mobile phone as secondary form of authe
   
 ## Compare security
 
-The following table summarizes user considerations for each Azure AD authentication method. Usability refers to how easily users can sign-in with that method. For example, OATH tokens can only be used as a secondary form of verification. Availability refers to the number of environments where users can sign-in with that method. Some environments don't allow phones to be used for verification, which makes SMS and Voice call less available. 
+The following table summarizes user considerations for each Microsoft Entra authentication method. Usability refers to how easily users can sign-in with that method. For example, OATH tokens can only be used as a secondary form of verification. Availability refers to the number of environments where users can sign-in with that method. Some environments don't allow phones to be used for verification, which makes SMS and Voice call less available. 
 
 | Authentication method          | Security | Usability | Availability |
 |--------------------------------|:--------:|:---------:|:------------:|

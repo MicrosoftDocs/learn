@@ -4,16 +4,16 @@ Here, you'll explore the billing model, learn how to estimate baseline costs, an
 
 ## Estimate your search solutions baseline costs
 
-The Azure pricing calculator is a great tool that allows you to estimate the costs of using any of the Azure services. Use it to create a baseline for your search service needs. 
+The Azure pricing calculator is a great tool that allows you to estimate the costs of using any of the Azure services. Use it to create a baseline for your search service needs.
 
 1. Browse to the [Azure Cognitive Search pricing calculator](https://azure.microsoft.com/pricing/details/search/).
 1. Choose your region, currency, and hour or monthly pricing.
 
-:::image type="content" source="../media/azure-price-calculator.png" alt-text="A screenshot of the Azure pricing tool showing the cost estimates of an S1 and S2 tier service." lightbox="../media/azure-price-calculator.png":::
+:::image type="content" source="../media/azure-price-calculator-new.png" alt-text="A screenshot of the Azure pricing tool showing the cost estimates of an S1 and S2 tier service." lightbox="../media/azure-price-calculator-new.png":::
 
 The above example shows estimates based on the number of search units. The shown monthly costs don't include everything you need for an accurate estimate. The pricing calculator also lists estimates on the additional services.
 
-:::image type="content" source="../media/additional-price-examples.png" alt-text="A screenshot of the additional Cognitive Search services." lightbox="../media/additional-price-examples.png":::
+:::image type="content" source="../media/additional-price-examples-new.png" alt-text="A screenshot of the additional Cognitive Search services." lightbox="../media/additional-price-examples-new.png":::
 
 > [!IMPORTANT]
 > The prices shown are for illustration purposes, please check the price calculator for the most up-to-date values.
@@ -67,8 +67,8 @@ These tips can help you reduce the cost of running your search solution:
 
 The most effective way to manage your costs is to monitor how much you're spending, and take action if the costs have increased over your budget.
 
-All Azure resources can be monitored with budgets in Azure Cost Management. Follow the steps in [Tutorial: Create and manage Azure budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets) for a detailed walk-through on how to create budgets.
+All Azure resources can be monitored with budgets in Microsoft Cost Management. Follow the steps in [Tutorial: Create and manage Azure budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets) for a detailed walk-through on how to create budgets.
 
-:::image type="content" source="../media/budgets-cost-management.png" alt-text="A screenshot of the budgets section of Azure cost management." lightbox="../media/budgets-cost-management.png":::
+:::image type="content" source="../media/budgets-cost-management-small.png" alt-text="A screenshot of the budgets section of Microsoft Cost management." lightbox="../media/budgets-cost-management.png":::
 
 With your budget in place, you can enable alerts to notify you if your organizations search stakeholders to avoid the risks of overspending.

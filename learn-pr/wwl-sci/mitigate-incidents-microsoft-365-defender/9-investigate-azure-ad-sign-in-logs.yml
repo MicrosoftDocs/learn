@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.mitigate-incidents-microsoft-365-defender.investigate-azure-ad-sign-in-logs
-title: Investigate Azure AD sign-in logs
+title: Investigate Microsoft Entra sign-in logs
 metadata:
-  title: Investigate Azure AD sign-in logs
-  description: "Investigate Azure AD sign-in logs"
+  title: Investigate Microsoft Entra sign-in logs
+  description: "Investigate Microsoft Entra sign-in logs"
   ms.date: 02/27/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

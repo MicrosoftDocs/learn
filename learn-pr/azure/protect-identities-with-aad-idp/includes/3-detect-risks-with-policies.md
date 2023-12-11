@@ -2,7 +2,7 @@ Risk policies make it possible for your organization to respond more appropriate
 
 Previously, your retail company's IT team didn't have security skills in-house and had to hire external contractors to protect identities. Your manager wants to avoid the same situation going forward. Your company needs to be able to respond to threats in a controlled and more cost-effective manner without weakening security.
 
-You've been asked to investigate how identity risks are detected in Azure AD Identity Protection. You've been asked to look into risk policies and how to use them.
+You've been asked to investigate how identity risks are detected in Microsoft Entra ID Protection. You've been asked to look into risk policies and how to use them.
 
 In this unit, you investigate what risk policies are. You also learn what each type of risk policy is used for, and how to configure and enable them. Then, you see what the user experience is like for each risk policy type.
 
@@ -22,7 +22,7 @@ You use a form to configure a sign-in risk policy in the Azure portal. You can s
 - The conditions that must be met, such as how high a score triggers the policy
 - How you want to respond
 
-Make sure users are already registered for Azure AD Multi-Factor Authentication before you apply this policy.
+Make sure users are already registered for Microsoft Entra multifactor authentication before you apply this policy.
 
 ![Screenshot of a sign-in risk policy.](../media/3-signin-risk-policy.png)
 

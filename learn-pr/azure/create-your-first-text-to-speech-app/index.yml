@@ -7,7 +7,7 @@ metadata:
   author:  eric-urban
   ms.author: eur
   manager: nitinme
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: cognitive-services
 title: Create your first Azure AI services text to speech application
 summary: Microsoft's Azure AI services provide developers with APIs to create applications that take advantage of Azure's text to speech features. In this module, you'll learn how to use Azure AI services to create a text to speech application that uses both plain text and Speech Synthesis Markup Language (SSML) to create audio files.
@@ -28,7 +28,7 @@ products:
 - azure
 - azure-clis
 - ai-services
-- azure-text-speech
+- azure-speech
 units:
 - learn.azure.create-your-first-text-to-speech-app.introduction
 - learn.azure.create-your-first-text-to-speech-app.create-azure-cognitive-services-account

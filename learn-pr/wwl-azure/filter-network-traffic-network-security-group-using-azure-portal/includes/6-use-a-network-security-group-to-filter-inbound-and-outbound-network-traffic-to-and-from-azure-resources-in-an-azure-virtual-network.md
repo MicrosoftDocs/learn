@@ -8,5 +8,5 @@ Launch the exercise and follow the instructions.
 > [!TIP]
 > To continue your learning journey, open the exercise in a new browser tab or window while staying on this page. To do this, right-click the Launch Exercise button and select Open link in new tab or Open link in new window.
 
-[:::image type="content" source="../media/launch-exercise-162c1d6a.png" alt-text="Button to launch exercise.":::
-](https://microsoftlearning.github.io/Secure-Azure-services-and-workloads-with-Microsoft-Cloud-Security-Benchmark/Instructions/Labs/LAB_01_Create%20a%20virtual%20network%20infrastructure.html)<br>
+[:::image type="content" source="../media/launch-exercise-162c1d6a.png" alt-text="Screenshot showing an icon for the Launch Exercise button.":::
+](https://microsoftlearning.github.io/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/Instructions/Labs/LAB_01_Create%20a%20virtual%20network%20infrastructure.html)<br>

@@ -3,10 +3,10 @@ uid: learn.wwl.configure-azure-key-vault-networking-settings
 metadata:
   title: Configure Azure Key Vault networking settings
   description: "Learn to configure Azure Key Vault networking settings via the Azure portal, enabling secure access control to your vault, protecting sensitive keys and secrets."
-  ms.date: 09/04/2023
+  ms.date: 10/11/2023
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: azure
 title: Configure Azure Key Vault networking settings
 summary: In this module, you'll learn to configure Azure Key Vault networking settings via the Azure portal, ensuring secure and controlled access to your stored secrets.
@@ -19,7 +19,6 @@ abstract: |
   - Recognize the benefits of properly configuring networking settings for Azure Key Vault in enhancing overall security.
 prerequisites: ""
 iconUrl: /training/achievements/generic-badge.svg
-hidden: true
 levels:
 - intermediate
 roles:

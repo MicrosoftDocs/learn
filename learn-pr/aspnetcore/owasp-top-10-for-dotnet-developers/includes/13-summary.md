@@ -26,7 +26,6 @@ Finally, security is a journey, not a destination. With the right mindset, you c
 * [Vulnerability Scanning Tools | OWASP Foundation.](https://owasp.org/www-community/Vulnerability_Scanning_Tools)
 * [OWASP Secure Coding Practices Quick Reference Guide.](https://owasp.org/www-pdf-archive/OWASP_Code_Review_Guide-V1_1.pdf)
 * [OWASP Code Review Guide.](https://owasp.org/www-pdf-archive/OWASP_SCP_Quick_Reference_Guide_v2.pdf)
-* [OWASP Zap Scan - GitHub Action.](https://github.com/marketplace/actions/owasp-zap-full-scan)
 
 ## References
 

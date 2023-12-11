@@ -5,29 +5,16 @@ Microsoft Graph PowerShell is a Software Development Kit (SDK) that acts as an A
 
 ## Packaging
 
-Microsoft Graph PowerShell is packaged as the **Microsoft.Graph** module in PowerShell gallery as the root module, with multiple child modules. Microsoft.Graph acts as a container for the other modules.
+Microsoft Graph PowerShell is packaged as the **Microsoft.Graph** and **Microsoft.Graph.Beta** modules in PowerShell gallery as the GA and beta root modules, respectively, with multiple child modules. Microsoft.Graph acts as a container for the other modules.
 
-Microsoft.Graph.Authentication is the core module, which contains the following components:
+**Microsoft.Graph.Authentication** is the core module, which contains the following components:
 
 - `Connect-MgGraph`: to sign in to Microsoft Graph
 - `Invoke-MgGraphRequest`: to issue REST API requests for the Microsoft Graph API
-- Commands to switch between **beta** and **V1.0** versions of the SDK
 - Commands to discover permissions and API-specific Graph commands in other modules
 
 Other modules are made up of thousands of commands.
 
 Commands are named like **{Verb}**-Mg **{Resource}** (a Graph API resource) for example, user,group, and application. For example, in the command `Get-MgUser`, **get** is the verb and **user** the resource.
 
-## Microsoft Graph PowerShell features & benefits
-
-Microsoft Graph PowerShell has the following features and benefits:
-
-- **Access to all Microsoft Graph APIs**: Microsoft Graph PowerShell is based on Microsoft Graph API. The Microsoft Graph API includes, in addition to Azure AD, APIs from other Microsoft services like SharePoint, Exchange, and Outlook, all accessed through a single endpoint with a single access token.
-- **Supports PowerShell 7**: Microsoft Graph PowerShell module works with PowerShell 7 and later. It's also compatible with Windows PowerShell 5.1.
-- **Cross-platform support**: Microsoft Graph PowerShell module works on all platforms including Windows, macOS, and Linux.
-- **Supports modern authentication**: Microsoft Graph PowerShell supports the Microsoft Authentication Library (MSAL) which offers more security. For example, you can use Passwordless sign-in experiences.
-- **Supports external identities**: Users from other Azure AD tenants can authenticate to services in your tenant with Microsoft Graph PowerShell.
-- **Uses least privilege**: Microsoft Graph PowerShell permissions are NOT pre-authorized and users must perform one-time request for app permissions depending on their needs.
-- **Advanced queries**: Microsoft Graph PowerShell supports rich, advanced queries via eventual consistency. For example, you can get a near-instant count of all users using advanced queries.
-- **Open source**: Feature teams and the community can create great PowerShell experiences and share them with everyone.
-- **Receives regular updates**: Microsoft Graph PowerShell commands are updated regularly to support the latest Graph API updates.
+To differentiate between v1.0 cmdlets and those in beta, the beta cmdlets are prefixed with **Beta**. For example, `Get-MgUser` is the v1.0 cmdlet and `Get-MgBetaUser` is the beta cmdlet.

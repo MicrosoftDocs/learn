@@ -4,18 +4,20 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/08/2023
+  ms.date: 11/23/2023
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
+  ms.service: microsoft-sentinel
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "As the lead admin, it's important to convince your team to start using Microsoft Sentinel. You’ve put together a presentation. What are the four security operation areas of Microsoft Sentinel that cover this area?"
+  - content: "As the lead admin, it's important to convince your team to start using Microsoft Sentinel. You’ve put together a presentation. What are the four security operation areas of Microsoft Sentinel?"
     choices:
     - content: "Collect, Detect, Investigate, and Redirect."
       isCorrect: false

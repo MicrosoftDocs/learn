@@ -4,11 +4,11 @@ title: Exercise - Create a search solution
 metadata:
   title: Exercise - Create a search solution
   description: "Exercise - Create a search solution"
-  ms.date: 05/04/2023
+  ms.date: 09/18/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
+  ms.service: cognitive-search
 azureSandbox: false
 labId: 93859
 labModal: true

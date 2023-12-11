@@ -4,12 +4,14 @@ title: Describe Microsoft Defender for Endpoint
 metadata:
   title: Describe Microsoft Defender for Endpoint
   description: "Describe Microsoft Defender for Endpoint"
-  ms.date: 09/08/2023
+  ms.date: 09/25/2023
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  # ms.prod: learning-m365
+  ms.topic: unit
   ms.service: microsoft-365-security
+  ms.subservice: m365d
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/4-describe-defender-endpoint.md)]

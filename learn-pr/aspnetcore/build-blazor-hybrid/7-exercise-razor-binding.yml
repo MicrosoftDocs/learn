@@ -8,8 +8,8 @@ metadata:
   author: jamesmontemagno
   ms.author: jamont
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
+  zone_pivot_groups: vsandcode
 durationInMinutes: 10
 content: |
   [!include[](includes/7-exercise-razor-binding.md)]

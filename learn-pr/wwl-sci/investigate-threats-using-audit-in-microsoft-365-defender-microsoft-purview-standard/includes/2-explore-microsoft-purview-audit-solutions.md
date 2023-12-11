@@ -41,7 +41,7 @@ Audit (Premium) builds on the capabilities of Audit (Standard) by providing audi
      -  the service where the audited activities occurred.
      -  specific audited activities.
      -  the user who performed an audited activity.
- -  **Longer retention of audit records**. Exchange, SharePoint, and Azure Active Directory audit records are retained for one year by default. Audit records for all other activities are retained for 90 days by default. With Audit (Premium), organizations can use audit log retention policies to configure longer retention periods.
+ -  **Longer retention of audit records**. Exchange, SharePoint, and Microsoft Entra audit records are retained for one year by default. Audit records for all other activities are retained for 90 days by default. With Audit (Premium), organizations can use audit log retention policies to configure longer retention periods.
  -  **High-value, crucial Audit (Premium) events**. Audit records for crucial events can help an organization conduct forensic and compliance investigations. It does so by providing visibility to events such as:
      -  When mail items were accessed.
      -  When mail items were replied to and forwarded.

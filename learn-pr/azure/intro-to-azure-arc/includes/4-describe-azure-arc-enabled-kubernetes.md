@@ -58,7 +58,7 @@ Use Azure Arc-enabled Kubernetes integrated management to more efficiently creat
 - Implement other Azure services and use your choice of Azure tools to:
   - Integrate with Azure Monitor, Defender for Cloud, GitHub, and others.
   - Automate configuration and infrastructure as code to provide repeatable deployments using templates.
-  - Provide end-to-end identity for your users and your resources with Azure Resource Manager and Azure Active Directory (Azure AD).
+  - Provide end-to-end identity for your users and your resources with Azure Resource Manager and Microsoft Entra ID.
 
 #### Collect inventory data
 

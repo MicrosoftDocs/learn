@@ -1,17 +1,17 @@
 ### YamlMime:Module
 uid: learn.wwl.azure-active-directory
 metadata:
-  title: Secure Azure solutions with Azure Active Directory
-  description: "Explore how to securely configure and administer your Azure Active Directory instance."
+  title: Secure Azure solutions with Microsoft Entra ID
+  description: "Explore how to securely configure and administer your Microsoft Entra instance."
   ms.date: 09/11/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-title: Secure Azure solutions with Azure Active Directory
-summary: Explore how to securely configure and administer your Azure Active Directory instance.
+title: Secure Azure solutions with Microsoft Entra ID
+summary: Explore how to securely configure and administer your Microsoft Entra instance.
 abstract: |
   By the end of this module, you will be able to:
-  - Configure Azure AD and Azure AD Domain Services for security
+  - Configure Microsoft Entra ID and Microsoft Entra Domain Services for security
   - Create users and groups that enable secure usage of your tenant
   - Use MFA to protect user's identities
   - Configure passwordless security options
@@ -24,8 +24,8 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-active-directory
-- azure-active-directory-b2c
+- entra-id
+- entra-external-id
 subjects:
 - identity-access
 units:

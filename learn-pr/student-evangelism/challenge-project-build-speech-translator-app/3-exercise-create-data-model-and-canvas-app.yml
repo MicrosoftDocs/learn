@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.challenge-project-build-speech-translator-app.exercise-create-data-model-and-canvas-app
+title: Exercise - Create Data Model and Canvas App
+metadata:
+  title: Exercise - Create Data Model and Canvas App
+  description: "Exercise - Create Data Model and Canvas App"
+  ms.date: 10/2/2023
+  author: theoyinbooke
+  ms.author: ooyinbooke
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+durationInMinutes: 45
+content: |
+  [!include[](includes/3-exercise-create-data-model-and-canvas-app.md)]

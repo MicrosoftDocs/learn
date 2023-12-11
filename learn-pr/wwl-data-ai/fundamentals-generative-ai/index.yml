@@ -44,5 +44,4 @@ units:
 - learn.wwl.fundamentals-generative-ai.knowledge-check
 - learn.wwl.fundamentals-generative-ai.summary
 badge:
-  uid: |
-    learn.wwl.fundamentals-generative-ai.badge
+  uid: learn.wwl.fundamentals-generative-ai.badge

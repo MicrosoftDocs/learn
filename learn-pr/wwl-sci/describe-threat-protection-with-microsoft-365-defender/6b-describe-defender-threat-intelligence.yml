@@ -4,12 +4,14 @@ title: Describe Microsoft Defender Threat Intelligence
 metadata:
   title: Describe Microsoft Defender Threat Intelligence
   description: "Describe Microsoft Defender Threat Intelligence"
-  ms.date: 09/08/2023
+  ms.date: 09/25/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  # ms.prod: learning-m365
   ms.service: microsoft-365-security
+  ms.subservice: m365d
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/6b-describe-defender-threat-intelligence.md)]

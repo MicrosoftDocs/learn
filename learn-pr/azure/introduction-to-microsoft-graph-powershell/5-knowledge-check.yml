@@ -5,12 +5,11 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of basic concepts in Microsoft Graph PowerShell
-  ms.date: 9/19/2022
+  ms.date: 9/22/2023
   author: msewaweru
   ms.author: eunicewaweru
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 5
 ###########################################################################
 ###
@@ -38,9 +37,9 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "An IT admin has recently installed Microsoft Graph PowerShell to administer various tasks in Azure AD. They're new to this module and would like to find cmdlets for different resources in the directory. What would be the **BEST** place for them to start?"
+  - content: "An IT admin has recently installed Microsoft Graph PowerShell to administer various tasks in Microsoft Entra ID. They're new to this module and would like to find cmdlets for different resources in the directory. What would be the **BEST** place for them to start?"
     choices:
-    - content: "Run `Connect-MgGraph` to connect to the Azure AD directory and run cmdlets based on `Verb-MgResource` format."
+    - content: "Run `Connect-MgGraph` to connect to the Microsoft Entra directory and run cmdlets based on `Verb-MgResource` format."
       isCorrect: false
       explanation: "Connect-MgGraph helps you sign in to your directory requesting the appropriate permissions."
     - content: "Run `Find-MgGraphCommand` to discover cmdlets associated with the resource name, for example, user."

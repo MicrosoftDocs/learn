@@ -6,14 +6,14 @@ metadata:
   ms.date: 05/26/2023
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: learning-azure
 title: Configure application security features
 summary: Register your company applications then use Azure security features to configure and monitor secure access to the application.
 abstract: |
   By the end of this module, you will be able to:
   - Register an application in Azure using app registration
-  - Select and configure which Azure AD users can access each application
+  - Select and configure which Microsoft Entra users can access each application
   - Configure and deploy web app certificates
 prerequisites: |
   - None
@@ -27,10 +27,7 @@ products:
 - azure
 - azure-app-configuration
 - azure-app-service
-- azure-web-apps
 - ms-graph
-- microsoft-graph-permissions-api
-- microsoft-identity-platform
 subjects:
 - cloud-security
 units:

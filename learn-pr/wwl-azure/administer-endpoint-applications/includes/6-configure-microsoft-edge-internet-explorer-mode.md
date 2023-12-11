@@ -1,5 +1,3 @@
-
-
 For Windows 11 and later, Microsoft Edge is the default browser experience. However, legacy web applications may still exist that were originally written for Internet Explorer 11. 
 
 > [!NOTE]

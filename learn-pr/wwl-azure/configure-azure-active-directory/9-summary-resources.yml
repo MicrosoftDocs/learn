@@ -4,11 +4,12 @@ title: Summary and resources
 metadata:
   title: Summary and resources
   description: "Summary and resources"
-  ms.date: 08/18/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.service: active-directory
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary-resources.md)]

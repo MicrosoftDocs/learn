@@ -33,9 +33,9 @@ You need to configure the related compliance policies to drive Conditional Acces
 
 ### Device-based Conditional Access
 
-Intune and Azure Active Directory work together to make sure only managed and compliant devices can access email, Office 365 services, Software as a service (SaaS) apps, and on-premises apps. Additionally, you can set a policy in Azure Active Directory to only enable domain-joined computers or mobile devices that are enrolled in Intune to access Office 365 services.
+Intune and Microsoft Entra ID work together to make sure only managed and compliant devices can access email, Office 365 services, Software as a service (SaaS) apps, and on-premises apps. Additionally, you can set a policy in Microsoft Entra ID to only enable domain-joined computers or mobile devices that are enrolled in Intune to access Office 365 services.
 
-Intune provides device compliance policy capabilities that evaluate the compliance status of the devices. The compliance status is reported to Azure Active Directory that uses it to enforce the Conditional Access policy created in Azure Active Directory when the user tries to access company resources.
+Intune provides device compliance policy capabilities that evaluate the compliance status of the devices. The compliance status is reported to Microsoft Entra ID that uses it to enforce the Conditional Access policy created in Microsoft Entra ID when the user tries to access company resources.
 
 ### Conditional Access based on network access control
 
@@ -59,9 +59,9 @@ Conditional Access for PCs provides capabilities similar to those available for 
 
 #### Corporate-owned
 
-- **Hybrid Azure AD joined:** Organizations that are reasonably comfortable with how they're already managing their PCs through AD group policies or Configuration Manager commonly use this option.
+- **Microsoft Entra hybrid joined:** Organizations that are reasonably comfortable with how they're already managing their PCs through AD group policies or Configuration Manager commonly use this option.
 
-- **Azure AD domain joined and Intune management:** This scenario is for organizations that want to be cloud-first (that is, primarily use cloud services, with a goal to reduce use of an on-premises infrastructure) or cloud-only (no on-premises infrastructure). Azure AD Join works well in a hybrid environment, enabling access to both cloud and on-premises apps and resources. The device joins to the Azure AD and gets enrolled to Intune, which can be used as a Conditional Access criteria when accessing corporate resources.
+- **Microsoft Entra domain joined and Intune management:** This scenario is for organizations that want to be cloud-first (that is, primarily use cloud services, with a goal to reduce use of an on-premises infrastructure) or cloud-only (no on-premises infrastructure). Microsoft Entra join works well in a hybrid environment, enabling access to both cloud and on-premises apps and resources. The device joins to the Microsoft Entra ID and gets enrolled to Intune, which can be used as a Conditional Access criteria when accessing corporate resources.
 
 #### Bring your own device (BYOD)
 
@@ -69,4 +69,4 @@ Conditional Access for PCs provides capabilities similar to those available for 
 
 ## App-based Conditional Access
 
-Intune and Azure Active Directory work together to make sure only managed apps can access corporate e-mail or other Office 365 services.
+Intune and Microsoft Entra ID work together to make sure only managed apps can access corporate e-mail or other Office 365 services.
