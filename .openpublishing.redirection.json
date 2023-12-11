@@ -155,7 +155,6 @@
       "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
       "redirect_document_id": false
     },
-    ,
     {
       "source_path_from_root": "/learn-pr/partner-center/introduction-to-partner-center/index.yml",
       "redirect_url": "/training/modules/partner-center/introduction-to-partner-center/",
