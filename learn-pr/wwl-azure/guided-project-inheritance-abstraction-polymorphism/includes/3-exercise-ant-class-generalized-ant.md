@@ -50,7 +50,7 @@ In this exercise, you'll get to see how inheritance works and how to implement i
     }
     ```
 
-    While you will be passing these constructor parameters into `GeralizedAnt`, you will use the constructor from the `Ant` class to initialize `GeneralizedAnt`.
+    While you'll be passing these constructor parameters into `GeralizedAnt`, you'll use the constructor from the `Ant` class to initialize `GeneralizedAnt`.
 
     The `Ant` class is the base class for `GeneralizedAnt`. To make `GeneralizedAnt` use the `Ant` constructor, you modify the `GeneralizedAnt` constructor, telling it to pass the parameters to the `Ant` base class constructor.
 
@@ -73,7 +73,7 @@ In this exercise, you'll get to see how inheritance works and how to implement i
 
 1. Replace Ant with `GeneralizedAnt`.
 
-    The last thing you need to do is to use your new class. To do that, you will modify the `Game` class so that your `Ants` array is initialized using the new `GeneralizedAnt` class.
+    The last thing you need to do is to use your new class. To do that, you'll modify the `Game` class so that it initializes the `Ants` array is using the new `GeneralizedAnt` class.
 
     1. Open the `Game.cs` file in your Games folder.
     1. Replace the line in the constructor for the creation of the `Ants` array that creates an `Ant` so that it now creates a `GenerlizedAnt` instead.
@@ -99,3 +99,8 @@ Now you can check your work. The program should work exactly like it did before.
 1. Select Terminal.
 1. Build your code, type 'dotnet build' and press enter.
 1. Run your code, type 'dotnet run' and press enter.
+
+Learn more
+
+> [!NOTE]
+> <a href="https://www.bing.com/search?showconv=1&sendquery=1&q=Write%20a%20C%23%20that%20demonstrates%20polymorphism.%20The%20demonstration%20code%20should%20have%20an%20animal%20base%20class%20with%20a%20MakeSound%20method%20that%20is%20inherited%20from%20a%20Dog%20and%20Cat%20child%20classes.%20Identify%20each%20aspect%20of%20the%20program%20that%20is%20polymorhic%20and%20why%20it%20is%20polymorphic%20using%20bullet%20points%0A">See examples of polymorphism with Bing Chat AI</a>

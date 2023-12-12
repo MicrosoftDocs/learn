@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.guided-project-inheritance-abstraction-polymorphism.introduction
-title: Guided Project - Learn about code optimization and reuse
+title: Introduction
 metadata:
-  title: Guided Project - Learn about code optimization and reuse
+  title: Introduction
   description: "The purpose of this lesson is to learn about how to optimize your code using inheritance and code reuse."
-  ms.date: 12/11/2023
+  ms.date: 12/12/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: unit

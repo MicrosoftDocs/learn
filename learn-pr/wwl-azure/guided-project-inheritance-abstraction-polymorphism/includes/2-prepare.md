@@ -16,9 +16,7 @@ Use the following steps to prepare for the Guided Project exercises:
 
     1. On your local machine, navigate to your downloads folder in File Explorer.
 
-    1. Right-click.
-
-    1. **Challenge-Project-implement-inheritance-abstraction-polymorphism-main.zip**, and then select **Extract all**.
+    1. Right-click **Challenge-Project-implement-inheritance-abstraction-polymorphism-main.zip**, and then select **Extract all**.
 
     1. Select **Show extracted files when complete**, and then select **Extract**.
 
