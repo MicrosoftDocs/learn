@@ -7,7 +7,7 @@ Through automation, you save time, effort, and money, and you avoid mistakes.
 
 **Example scenario**
 
-Contoso University has developed a web application, currently in production and hosted in Azure, which provides online education for Contoso's students and faculty.
+Contoso University has developed a web application, currently in production and hosted in Azure, which provides online education services for Contoso's students and faculty.
 
 The technology solution is built on Azure App Service, Azure SQL Database, Azure Active Directory, Azure Key Vault, and Azure DevOps.  
 
