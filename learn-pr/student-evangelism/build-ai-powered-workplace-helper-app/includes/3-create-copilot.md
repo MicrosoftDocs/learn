@@ -1,6 +1,6 @@
-Your first activity will be to create a Copilot with generative answers. You will provide the AI knowledge in the form of PDF documents and/or website addresses.
+In this activity you'll create a Copilot with generative answers. You'll provide the AI knowledge in the form of PDF documents and/or website addresses.
 
-You can complete this exercise either for our fictitious Contoso company or for an organization you are a part of and can access information and documents for. If you choose your organization, include an emergency evacuation document to complete the module as it is written.
+You can complete this exercise either for our fictitious Contoso company or for an organization you're a part of and can access information and documents for. If you choose your organization, include an emergency evacuation document to complete the module as it is written.
 
 ## Specification
 
@@ -13,13 +13,13 @@ You should then configure your Copilot as follows:
 - Add further training data by providing web addresses *(not available for Contoso example)*
 
 > **Contoso example PDF files**
-> To create the chatbot for the Contoso example, you can download the PDFs at [TODO URL](URL) to use as your organizational knowledge resources.
+> To create the chatbot for the Contoso example, you can download the PDFs at [TODO URL] to use as your organizational knowledge resources.
 
 ## Check your work
 
 To validate that you have satisfied the requirements for the first exercise, test your app behavior by following these steps:
 
 1. Ensure your chatbot is saved in Copilot Studio.
-1. Test your chatbot by clicking "Test your Copilot" in the bottom left corner of Copilot Studio. Ask your chatbot questions about content you know is in the provided documents/websites.
+1. Test your chatbot by selecting "Test your Copilot" in the bottom left corner of Copilot Studio. Ask your chatbot questions about content you know is in the provided documents/websites.
 1. Test your chatbot with a question that is out of the scope of what is covered in the provided documents/websites.
 1. Test to see what your chatbot does when you ask for emergency fire procedures.

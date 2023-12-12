@@ -4,8 +4,8 @@ In this module, you'll develop a Power App that will help the employees of an or
 
 ## About the challenge
 
-Big organizations have a lot of information and documents, such as workplace policies and procedures, plans for emergencies, or general business information. With so much information, employees may struggle to find the answers to their questions quickly.
+Large organizations have a lot of information and documents, such as workplace policies and procedures, plans for emergencies, or general business information. With so much information, employees might struggle to find the answers to their questions quickly.
 
-In this module, you'll build a Power App that leverages a chatbot you have built in Copilot Studio to answer employee questions. You will provide organizational data for your chatbot to ingest in the form of PDF files and websites to allow it to generate answers and links with an AI solution based on organizational knowledge. Your app will also include specified answers for dealing with emergency situations in the local area alongside AI-generated answers.
+In this module, you'll build a Power App that leverages a chatbot you built in Copilot Studio to answer employee questions. You'll provide organizational data for your chatbot to ingest in the form of PDF files and websites to allow it to generate answers and links with an AI solution based on organizational knowledge. Your app will also include specified answers for dealing with emergency situations in the local area alongside AI-generated answers.
 
-By the end of this module, you'll have built a app that responds to employees when they ask it to help them find the specific information they need.
+By the end of this module, you'll have an app that responds to employees when they ask it to help them find the specific information they need.
