@@ -45,7 +45,7 @@ This requirement suggests the use of Azure Arc as the technology that not only h
 
 ### What are the primary Microsoft Defender products and services that offer security solutions for an infrastructure?
 
-Microsoft Defender comprises a suite of security-focused products, including Microsoft 365 Defender, Microsoft Defender for Cloud, Microsoft Defender for IoT, Microsoft Defender Threat Intelligence, and Microsoft Defender capabilities in the Windows operating system. Solutions focusing on infrastructure benefit directly or indirectly from all of them, but the ones of particular importance are Microsoft Defender for Cloud and Microsoft Defender for IoT. 
+Microsoft Defender comprises a suite of security-focused products, including Microsoft Defender XDR, Microsoft Defender for Cloud, Microsoft Defender for IoT, Microsoft Defender Threat Intelligence, and Microsoft Defender capabilities in the Windows operating system. Solutions focusing on infrastructure benefit directly or indirectly from all of them, but the ones of particular importance are Microsoft Defender for Cloud and Microsoft Defender for IoT. 
 
 Microsoft Defender for Cloud provides unified security management and advanced threat protection across hybrid and multicloud workloads. The following Defender for Cloud plans offer comprehensive defenses for the compute, data, and service layers of your environment:
 
@@ -91,7 +91,7 @@ Microsoft Defender for Endpoint protects Windows and Linux machines whether in A
 The integration between Defender for Endpoint and Defender for Cloud offers the following capabilities:
 
 - Automated onboarding. Defender for Cloud automatically enables the Defender for Endpoint sensors on all supported machines connected to Defender for Cloud.
-- Single-pane of glass. The Defender for Cloud portal pages display Defender for Endpoint alerts. To investigate them further, you can use Microsoft Defender for Endpoint pages in the Microsoft 365 Defender portal, where you find additional information such as the alert process tree and the incident graph. 
+- Single-pane of glass. The Defender for Cloud portal pages display Defender for Endpoint alerts. To investigate them further, you can use Microsoft Defender for Endpoint pages in the Microsoft Defender portal, where you find additional information such as the alert process tree and the incident graph. 
 
 The integration between Defender for Endpoint and Defender for Cloud Apps provides you with the ability to perform anomaly detection against the Azure activity logs.
 

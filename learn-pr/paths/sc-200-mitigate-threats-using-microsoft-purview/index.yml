@@ -10,7 +10,7 @@ metadata:
 title: 'SC-200: Mitigate threats using Microsoft Purview'
 prerequisites: |
   - Fundamental understanding of Microsoft security, compliance, and identity products
-  - Basic understanding of Microsoft 365 Defender
+  - Basic understanding of Microsoft Defender XDR
 summary: |
   In this Learning Path we focus on Microsoft Purview's risk and compliance solutions that assist security operations analysts detect threats to organizations and identify, classify, and protect sensitive data, as well as monitor and report on compliance. This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.
 iconUrl: /training/achievements/mitigate-threats-using-microsoft-365-defender.svg
