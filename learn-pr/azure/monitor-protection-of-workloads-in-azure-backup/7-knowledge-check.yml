@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-protection-of-workloads-in-azure-backup.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  unitType: Knowledge Check
-  title: Knowledge Check
-  description: Knowledge Check
+  unitType: Knowledge check
+  title: Knowledge check
+  description: Knowledge check
   ms.date: 12/01/2023
   author: AbhishekMallick-MS
   ms.author: v-abhmallick
@@ -15,7 +15,7 @@ metadata:
 durationInMinutes: 10
 quiz:
   questions:
-  - content: "To view details of recent and ongoing backup jobs and take appropriate action, you can use:"
+  - content: "To view the details of recent and ongoing backup jobs, and then take appropriate action, you can use:"
     choices:
     - content: "Metrics"
       isCorrect: false
@@ -26,7 +26,7 @@ quiz:
     - content: "Log Analytics"
       isCorrect: false
       explanation: "Incorrect"
-  - content: "To pull information of historical jobs for audit purposes, you can use:"
+  - content: "To pull information about historical jobs for audit purposes, you can use:"
     choices:
     - content: "Backup center"
       isCorrect: false
@@ -39,7 +39,7 @@ quiz:
       explanation: "Correct"  
   - content: "To configure Backup Reports, you'll need to configure:"
     choices:
-    - content: "Log Analytics workspace and diagnostics setting"
+    - content: "A Log Analytics workspace and diagnostics settings"
       isCorrect: true
       explanation: "Correct"
     - content: "Azure Resource Graph"
@@ -48,7 +48,7 @@ quiz:
     - content: "Built-in Azure Monitor alerts and metric alerts"
       isCorrect: false
       explanation: "Incorrect"
-  - content: "The recommended way to get alerted and notified for any backup job failure is via:"
+  - content: "The recommended way to be alerted and notified for any backup job failure is via:"
     choices:
     - content: "Backup jobs"
       isCorrect: false
@@ -61,12 +61,12 @@ quiz:
       explanation: "Correct"
   - content: "To configure email notification for built-in Azure Monitor alerts, you'll need to create:"
     choices:
-    - content: "Alert processing rule and action group"
+    - content: "An alert processing rule and an action group"
       isCorrect: true
       explanation: "Correct"
-    - content: "Log Analytics workspace"
+    - content: "A Log Analytics workspace"
       isCorrect: false
       explanation: "Incorrect"
-    - content: "Alert rule and action group"
+    - content: "An alert rule and an action group"
       isCorrect: false
       explanation: "Incorrect"
