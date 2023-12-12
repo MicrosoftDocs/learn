@@ -69,7 +69,7 @@ By default, Azure SQL Database blocks network access to the logical server. Let'
 
 1. In the **Firewall rules** section, select **Add your client IPv4 address**. If necessary, identify and provide your current IPv4 IP address as the start and end addresses.
 
-1. In the **Exceptions** section, check the box next to **Allow Azure services and resources to access this server**. Outside of this exercise, enabling this option might not be appropriate. In that case case, access must be granted through other means not covered in this exercise, likely via [private endpoints](/azure/azure-sql/database/private-endpoint-overview) by using Azure Private Link.
+1. In the **Exceptions** section, check the box next to **Allow Azure services and resources to access this server**. Outside of this exercise, enabling this option might not be appropriate. In that case, access must be granted through other means not covered in this exercise, likely via [private endpoints](/azure/azure-sql/database/private-endpoint-overview) by using Azure Private Link.
 
     :::image type="content" source="../media/3-add-client-ip.png" alt-text="Screenshot of Add a client IP address rule with a callout highlighting Allow access to Azure services option and the Save button." lightbox="../media/3-add-client-ip.png":::
 
