@@ -3,7 +3,7 @@
 ## Action center
 
 
-The unified Action center of the Microsoft 365 Defender portal lists pending and completed remediation actions for your devices, email & collaboration content, and identities in one location.
+The unified Action center of the Microsoft Defender portal lists pending and completed remediation actions for your devices, email & collaboration content, and identities in one location.
 
 The unified Action center brings together remediation actions across Defender for Endpoint and Defender for Office 365. It defines a common language for all remediation actions and provides a unified investigation experience. Your security operations team has a "single pane of glass" experience to view and manage remediation actions.
 
@@ -23,7 +23,7 @@ The Action Center consists of pending and historical items:
 
 Select Automated Investigations, then Action center.
 
-:::image type="content" source="../media/action-center.png" alt-text="Screenshot of the Microsoft 365 Defender Action center.":::
+:::image type="content" source="../media/action-center.png" alt-text="Screenshot of the Microsoft Defender XDR Action center.":::
 
 When an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be Malicious, Suspicious, or No threats found depending on:
 
@@ -109,7 +109,7 @@ The Action center includes an Action source column that tells you where each act
 
 ## Submissions 
 
-In Microsoft 365 organizations with Exchange Online mailboxes, admins can use the Submissions portal in the Microsoft 365 Defender portal to submit email messages, URLs, and attachments to Microsoft for scanning.
+In Microsoft 365 organizations with Exchange Online mailboxes, admins can use the Submissions portal in the Microsoft Defender portal to submit email messages, URLs, and attachments to Microsoft for scanning.
 
 When you submit an email message for analysis, you'll get:
 
@@ -127,7 +127,7 @@ When you submit an email message for analysis, you'll get:
 
 - To submit messages and files to Microsoft, you need to have one of following roles:
 
-  Security Administrator or Security Reader in the Microsoft 365 Defender portal.
+  Security Administrator or Security Reader in the Microsoft Defender portal.
 
 
 - Admins can submit messages as old as 30 days if it's still available in the mailbox and not purged by the user or another admin.
