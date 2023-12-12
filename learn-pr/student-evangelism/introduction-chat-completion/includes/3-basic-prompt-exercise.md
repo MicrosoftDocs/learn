@@ -14,9 +14,9 @@ In this exercise, you'll:
 - Open the Azure OpenAI chat playground.
 - Use basic prompts to interact with a deployment.
 
-:::image type="content" source="../media/chat-playground.png" alt-text="Screenshot of Azure OpenAI Chat playground with the deployment name highlighted.":::
+:::image type="content" source="../media/chat-playground.png" alt-text="Screenshot of Azure OpenAI chat playground with the deployment name highlighted.":::
 
-Let's get started by opening the [Azure OpenAI Chat playground](https://oai.azure.com/portal/chat) and selecting a model deployment.
+Let's get started by opening the [Azure OpenAI chat playground](https://oai.azure.com/portal/chat) and selecting a model deployment.
 
 ## Explore the chat capabilities using basic prompts
 
@@ -129,11 +129,11 @@ In this exercise, you use the temperature parameter to vary the output of the mo
 
 1. Select **Parameters** from the **Configuration** tab and set the temperature to `0`.
 
-    :::image type="content" source="../media/change-temperature.png" alt-text="Screenshot of the Azure OpenAI Chat playground with the parameters tab and the temperature bar highlighted.":::
+    :::image type="content" source="../media/change-temperature.png" alt-text="Screenshot of the Azure OpenAI chat playground with the parameters tab and the temperature bar highlighted.":::
 
 1. Select the blue circular arrow icon from the **Chat session** tab to generate a new cat name.
 
-    :::image type="content" source="../media/chat-session-reload.png" alt-text="Screenshot of the Azure OpenAI Chat playground with the reload icon highlighted.":::
+    :::image type="content" source="../media/chat-session-reload.png" alt-text="Screenshot of the Azure OpenAI chat playground with the reload icon highlighted.":::
 
 1. Repeat the previous step multiple times using different temperature values and notice the change or the no change in the generated content.
 

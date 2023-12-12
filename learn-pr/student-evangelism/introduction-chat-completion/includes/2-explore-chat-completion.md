@@ -64,13 +64,13 @@ If you feed the above chat conversation to the LLM, the LLM would understand tha
 > [!NOTE]
 > An AI model can't learn and has no memory of previous interactions if the user leaves and comes back but the application is using prompt engineering to add this memory.
 
-### Chat in Azure OpenAI Studio
+### Chat in the Azure OpenAI Studio
 
 You can use the Azure OpenAI Studio to test your model using chat and simulate a conversation using a chat history.
 
 The Azure OpenAI Studio has a chat playground where you can interact with your model using chat.
 
-:::image type="content" source="../media/chat-playground-preview.png" alt-text="Screenshot of Azure OpenAI Studio with chat playground highlighted." lightbox="../media/chat-playground-preview.png":::
+:::image type="content" source="../media/chat-playground-preview.png" alt-text="Screenshot of the Azure OpenAI Studio with chat playground highlighted." lightbox="../media/chat-playground-preview.png":::
 
 ## Temperature: Create a more interesting chat
 

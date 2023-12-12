@@ -69,13 +69,13 @@ Below is an example of a potential system message, or metaprompt, for a retail c
 
 :::image type="content" source="../media/metaprompt-template.png" alt-text="Screenshot of metaprompts influencing a chatbot conversation.":::
 
-### System message in Azure Open AI Studio
+### System messages in the Azure Open AI Studio
 
 You can use the Azure OpenAI Studio to change the system message to specify how the chat should act.
 
 The Azure OpenAI Studio has an Assistant setup pane in the Chat playground where you can select a pre-made template or add your custom system message.
 
-:::image type="content" source="../media/assistant-setup.png" alt-text="Screenshot from the Azure OpenAI studio showing the assistant setup and chat session panes.":::
+:::image type="content" source="../media/assistant-setup.png" alt-text="Screenshot from the Azure OpenAI Studio showing the assistant setup and chat session panes.":::
 
 ## Response grounding – limiting the AI
 

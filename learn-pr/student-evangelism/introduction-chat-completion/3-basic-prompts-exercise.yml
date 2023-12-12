@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.chat-completions.use-basic-prompts
+uid: learn.chat-completions.basic-prompts-exercise
 title: "Exercise: Use basic prompts"
 metadata:
   title: "Exercise: Use basic prompts"
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-exercise-basic-prompts.md)]
+  [!include[](includes/3-basic-prompts-exercise.md)]

@@ -12,7 +12,7 @@ In this exercise, you'll:
 - Open the Azure OpenAI chat playground.
 - Use the system message to interact with a deployment.
 
-Let's get started by opening the [Azure OpenAI Chat playground](https://oai.azure.com/portal/chat) and selecting a model deployment.
+Let's get started by opening the [Azure OpenAI chat playground](https://oai.azure.com/portal/chat) and selecting a model deployment.
 
 ## Use system message
 
@@ -155,7 +155,7 @@ Let's update the system message to be even clearer about what the agent should a
 
 Think about how you can use this against bad actors when a model is released in the real world.
 
-## Trigger Azure OpenAI content safety feature using prompts
+## Trigger Azure OpenAI content safety features by using prompts
 
 1. Copy the following text and paste it into the **System message** text box from the **Assistant setup** pane.
 
