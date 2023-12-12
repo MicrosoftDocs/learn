@@ -42,7 +42,7 @@ Before you start designing the solution based on Contoso's requirements, conside
 - What are primary Microsoft Entra device identity options?
 - Which Microsoft Entra services contribute to enhanced security in hybrid scenarios?
 - What are the AD DS-specific benefits provided by Microsoft Entra ID in hybrid scenarios?
-- Are there any Microsoft 365 Defender services that help enhance identity protection in hybrid scenarios?
+- Are there any Microsoft Defender XDR services that help enhance identity protection in hybrid scenarios?
 - Is there a way to provide access to on-premises web-based applications that rely on Kerberos authentication without the need for allowing inbound connectivity? 
 - Which Microsoft Entra services provide secure delegated identity and resource management?
 - Which Microsoft Entra services facilitate delegated access to Microsoft Entra applications in business-to-business scenarios?
@@ -54,7 +54,7 @@ As you're architecting the solution based on the requirements of Contoso, answer
 - Which hybrid authentication method or methods would you recommend to address the security needs of Contoso?
 - Which device identity option or options would you recommend for remote Contoso's users?
 - Which Microsoft Entra services would allow Contoso to enhance security of their on-premises AD DS environment? 
-- Which Microsoft 365 Defender services would allow Contoso to enhance security of their on-premises AD DS environment? 
+- Which Microsoft Defender XDR services would allow Contoso to enhance security of their on-premises AD DS environment? 
 - How would you use Microsoft Entra capabilities to provide access to the on-premises web-based applications?
 - What mechanism would you use for delegated identity and resource management?
 - How does the proposed solution reflect the use of the Zero Trust principles of verify explicitly, use least privilege access, and assume breach?

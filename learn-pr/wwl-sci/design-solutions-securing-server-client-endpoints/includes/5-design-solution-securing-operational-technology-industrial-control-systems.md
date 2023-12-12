@@ -68,7 +68,7 @@ Create custom alerts for your plugin to pinpoint specific network activity and e
 
 Use one or both of the following methods to extend Defender for IoT's agentless security features beyond OT environments to enterprise IoT devices.
 
--   Add an Enterprise IoT plan in Microsoft Defender for Endpoint for added alerts, vulnerabilities, and recommendations for IoT devices in Defender for Endpoint. An Enterprise IoT plan also provides a shared device inventory across the Azure portal and Microsoft 365 Defender.
+-   Add an Enterprise IoT plan in Microsoft Defender for Endpoint for added alerts, vulnerabilities, and recommendations for IoT devices in Defender for Endpoint. An Enterprise IoT plan also provides a shared device inventory across the Azure portal and Microsoft Defender XDR.
     
 -   Onboard an Enterprise IoT network sensor in Defender for IoT (Public Preview) to extend Defender for IoT device visibility to devices that aren't covered by Defender for Endpoint.
 
