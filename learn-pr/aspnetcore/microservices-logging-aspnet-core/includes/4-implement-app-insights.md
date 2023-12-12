@@ -9,7 +9,7 @@ You will:
 
 ## Review the directory structure
 
-Review the directories in the explorer pane in the IDE. Relative to the workspace root, the files for this module are located in *modules/microservices-logging-aspnet-core*.
+Review the directories in the explorer pane in Visual Studio Code. Relative to the workspace root, the files for this module are located in *modules/microservices-logging-aspnet-core*.
 
 > [!IMPORTANT]
 > For brevity, all directory paths described in this module are relative to the *modules/microservices-logging-aspnet-core* directory.
@@ -37,7 +37,7 @@ Review the directories in the explorer pane in the IDE. Relative to the workspac
         az configure --defaults group= location=
     ```
 
-    The preceding commands create four Application Insights resources, in the resource group you created for this module. A variation of the following output appears:
+    The preceding commands create four Application Insights resources in the resource group you created for this module. A variation of the following output appears:
 
     ```console
     {
@@ -111,8 +111,8 @@ Logging to Application Insights has been enabled in the ordering and coupon serv
 
         In the preceding code:
 
-        - The `AddApplicationInsightsTelemetry` extension method is provided by the `Microsoft.ApplicationInsights.AspNetCore` NuGet package.
-        - The `AddApplicationInsightsKubernetesEnricher` extension method is provided by the `Microsoft.ApplicationInsights.Kubernetes` NuGet package.
+        - The `Microsoft.ApplicationInsights.AspNetCore` NuGet package provides the `AddApplicationInsightsTelemetry` extension method.
+        - The `Microsoft.ApplicationInsights.Kubernetes` NuGet package provides the `AddApplicationInsightsKubernetesEnricher` extension method.
 
     1. In the *:::no-loc text="Startup.cs":::* file's `ConfigureServices` method, invoke the `AddAppInsights` extension method.
 
@@ -130,15 +130,15 @@ Logging to Application Insights has been enabled in the ordering and coupon serv
         - The `APPINSIGHTS_INSTRUMENTATIONKEY` environment variable defined in the catalog service's Helm chart template is accessed with the .NET Core Configuration API.
 
         > [!NOTE]
-        > Startup logging with Application Insights [isn't supported](/aspnet/core/fundamentals/logging/#log-during-host-construction), so it must be accomplished using another logger. This example uses Serilog with the Application Insights sink, passing the instrumentation key. Although this is the simplest way to enable logging to Application Insights during startup, it can lead to losing correlation between metrics and log traces.
+        > Startup logging with Application Insights [isn't supported](/aspnet/core/fundamentals/logging/), so we need to use another logger. This example uses Serilog with the Application Insights sink, passing the instrumentation key. Although this is the simplest way to enable logging to Application Insights during startup, it can lead to losing correlation between metrics and log traces.
 
-1. Save all your changes, and then build the catalog service and its dependencies:
+1. Save all your changes, then build the catalog service and its dependencies:
 
     ```dotnetcli
     dotnet build
     ```
 
-    The build succeeds with no warnings. If the build fails, check the output for troubleshooting information.
+    The build succeeds with no warnings or errors. If the build fails, check the output for troubleshooting information.
 
 ## Build and deploy modified container images
 
@@ -186,7 +186,7 @@ In the previous section, you modified the catalog service to enable Application 
     ./deploy-application.sh --registry eshoplearn --charts coupon,ordering
     ```
 
-    The coupon and ordering services deployed by the setup script are already instrumented for telemetry. Since there were no code changes, the containers only need redeployment with the new configuration settings. The `--registry` parameter instructs the script to use the Docker Hub registry that hosts the unmodified images. As in the previous step, the `kubectl get pods` command is executed:
+    The coupon and ordering services the setup script deploys are already instrumented for telemetry. Because there were no code changes, the containers only need redeployment with the new configuration settings. The `--registry` parameter instructs the script to use the Docker Hub registry that hosts the unmodified images. As in the previous step, the `kubectl get pods` command is executed:
 
     ```console
     NAME                              READY   STATUS              RESTARTS   AGE
@@ -215,19 +215,19 @@ Even though the app has been deployed, it might take a few minutes to come onlin
     - Web SPA application       : http://203.0.113.55/
     ```
 
-1. Select the **General application status** link in the terminal to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page is designed to refresh automatically, every 10 seconds.
+1. Select the **General application status** link in the terminal to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page is designed to refresh automatically every 10 seconds.
 
     > [!IMPORTANT]
     > If the WebStatus isn't automatically refreshing, it's due to an issue with the container image used for WebStatus. To work around the issue, manually refresh the WebStatus page periodically.
 
-    :::image type="content" source="../media/4-implement-app-insights/health-check.png" alt-text="health checks status dashboard." lightbox="../media/4-implement-app-insights/health-check.png":::
+    :::image type="content" source="../media/4-implement-app-insights/health-check.png" alt-text="Screenshot of the Health Checks status dashboard." lightbox="../media/4-implement-app-insights/health-check.png":::
 
     > [!NOTE]
     > The services take several minutes to return to a healthy state.
 
 1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the terminal to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
-    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app." border="true" lightbox="../../media/microservices/eshop-spa.png":::
+    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="Screenshort of the eShop single-page app." border="true" lightbox="../../media/microservices/eshop-spa.png":::
 
 You've successfully verified that the app was deployed to AKS and is working properly.
 
