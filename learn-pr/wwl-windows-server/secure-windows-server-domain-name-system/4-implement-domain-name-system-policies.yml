@@ -4,12 +4,10 @@ title: Implement DNS policies
 metadata:
   title: Implement DNS policies
   description: "Implement DNS policies"
-  ms.date: 10/20/2021
+  ms.date: 12/12/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/4-implement-domain-name-system-policies.md)]

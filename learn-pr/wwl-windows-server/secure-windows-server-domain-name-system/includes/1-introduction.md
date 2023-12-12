@@ -1,4 +1,3 @@
-
 Learn how to secure Windows Server DNS to help protect your network name resolution infrastructure and also learn how to implement DNS policies. 
 
 ## Scenario
