@@ -34,3 +34,4 @@ In this module, you will:
 - Experience using `switch` statements, if-else statements, and for-loops
 - Experience using the `Random` class to generate a random number.
 - Basic understanding of C# methods
+
