@@ -104,7 +104,7 @@ The integration with Microsoft Defender for Identity allows you to pivot directl
 ### Office 365 Threat Intelligence connection
 This feature is only available if you've an active Office 365 E5 or the Threat Intelligence add-on. 
 
-When you turn on this feature, you'll be able to incorporate data from Microsoft Defender for Office 365 into Microsoft 365 Defender to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
+When you turn on this feature, you'll be able to incorporate data from Microsoft Defender for Office 365 into Microsoft Defender XDR to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
 
 > [!NOTE]
 > You'll need to have the appropriate license to enable this feature.

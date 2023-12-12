@@ -1,7 +1,7 @@
 You learned how to:
 
 -   Evaluate security posture for collaboration and productivity workloads
--   Design a Microsoft 365 Defender solution
+-   Design a Microsoft Defender XDR solution
 -   Design configurations and operational practices for Microsoft 365
 
 ## Learn more with security documentation
@@ -12,8 +12,8 @@ You learned how to:
 
 ## Learn more with reference architectures
 
-- [Integrate Azure and Microsoft 365 Defender security services - Azure Architecture Center](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/microsoft-365-defender-security-integrate-azure)
-- [Build the second layer of defense with Microsoft 365 Defender Security services - Azure Architecture Center](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/microsoft-365-defender-build-second-layer-defense)
+- [Integrate Azure and Microsoft Defender XDR security services - Azure Architecture Center](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/microsoft-365-defender-security-integrate-azure)
+- [Build the second layer of defense with Microsoft Defender XDR Security services - Azure Architecture Center](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/microsoft-365-defender-build-second-layer-defense)
 
 > [!NOTE]
 > This module contains AI-generated content.

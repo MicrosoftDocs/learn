@@ -1145,7 +1145,7 @@ achievements:
 - uid: learn.wwl.describe-endpoint-security-with-microsoft-intune.badge
   type: badge
   title: Describe endpoint security with Microsoft Intune
-  summary: Learn how Microsoft Intune provides endpoint security. Topics include security baselines, compliance policies, integration with Microsoft 365 Defender for Endpoint, more.  Also, explore the Microsoft Endpoint Manager admin portal.
+  summary: Learn how Microsoft Intune provides endpoint security. Topics include security baselines, compliance policies, integration with Microsoft Defender XDR for Endpoint, more.  Also, explore the Microsoft Endpoint Manager admin portal.
   iconUrl: /training/achievements/describe-endpoint-security-with-microsoft-intune.svg
 - uid: learn.wwl.evaluate-strategies-for-migrating-sql-databases-to-azure.badge
   type: badge

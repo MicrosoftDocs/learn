@@ -28,7 +28,7 @@ In other words, DLP is smart enough to recognize the difference between the foll
 
 ## Achieve DLP with Microsoft tools
 
-Several Microsoft products help provide DLP. Some of the most common are the Microsoft 365 platform's Microsoft Purview compliance portal and the Microsoft 365 Defender portal. You can use a DLP policy in the compliance portal to help identify, monitor, and automatically protect sensitive information across Microsoft 365 services and applications.
+Several Microsoft products help provide DLP. Some of the most common are the Microsoft 365 platform's Microsoft Purview compliance portal and the Microsoft Defender portal. You can use a DLP policy in the compliance portal to help identify, monitor, and automatically protect sensitive information across Microsoft 365 services and applications.
 
 With a DLP policy, you can:
 
