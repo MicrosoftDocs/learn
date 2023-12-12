@@ -12,7 +12,7 @@ To start, add a public string value property called Rule to `GeneralizedAnt`. Yo
 
 1. Open the `GeneralizedAnt.cs` file.
 
-1. Below the contructor, type `prop`, then press Enter.
+1. Below the constructor, type `prop`, then press Enter.
 
 1. For the return type, type `string` and press Enter twice.
 
@@ -41,7 +41,7 @@ Now you need to implement a new version of the Act method that uses your Rule pr
 
 Implement a new version in your `GeneralizedAnt` class that changes the direction of your `GeneralizedAnt` instance, according to the rule set by the `Rule` property. Rather than change direction based on the color of the cell landed on, it will instead change direction based on the previous direction. If an ant went to the right previously, it will now go to the left, etcetera.
 
-You will also make this version of your `Act` method override the the original inherited version in the `Ant` class. To do that, you make the original `Ant` class version of the method virtual, then override the method in `GeneralizedAnt`.
+You will also make this version of your `Act` method override the original inherited version in the `Ant` class. To do that, you make the original `Ant` class version of the method virtual, then override the method in `GeneralizedAnt`.
 
 1. Create an `Act` method beneath your Rule property.
 

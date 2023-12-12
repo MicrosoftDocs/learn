@@ -11,7 +11,7 @@ metadata:
   ms.devlang: csharp
 title: 'Guided Project: Inheritance, Abstraction and Polymorphism'
 summary: |
-  In this guided project, you are were asked to repurpose your code, such that it better supports reuse. Much like functions are stand-alone pieces of code that can be reused for different purposes.
+  In this guided project, you were asked to repurpose your code, such that it better supports reuse. Much like functions are stand-alone pieces of code that can be reused for different purposes.
   [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   - How to use inheritance.
