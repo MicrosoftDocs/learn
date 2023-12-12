@@ -7,10 +7,9 @@ metadata:
   ms.date: 09/24/2018
   author: mikefrobbins
   ms.author: mirobb
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurepowershell
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/3-install-azure-powershell.md)]

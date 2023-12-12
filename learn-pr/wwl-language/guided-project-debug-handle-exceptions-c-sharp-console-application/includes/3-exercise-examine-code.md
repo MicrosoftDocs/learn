@@ -1,7 +1,3 @@
-
-
-
-
 In this exercise, you review and test the code in the Starter project, isolate and fix a logic issue, and then verify that your updated application is working as expected.
 
 You complete the following tasks during this exercise:

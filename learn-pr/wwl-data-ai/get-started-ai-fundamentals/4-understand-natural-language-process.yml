@@ -4,11 +4,10 @@ title: Understand natural language processing
 metadata:
   title: Understand natural language processing
   description: "Understand natural language processing"
-  ms.date: 10/26/2023
+  ms.date: 12/05/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-understand-natural-language-process.md)]

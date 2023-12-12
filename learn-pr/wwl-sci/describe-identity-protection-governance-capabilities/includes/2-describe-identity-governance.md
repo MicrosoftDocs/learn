@@ -1,4 +1,3 @@
-
 Microsoft Entra ID Governance allows you to balance your organization's need for security and employee productivity with the right processes and visibility. It provides you with capabilities to ensure that the right people have the right access to the right resources.
 
 ID Governance gives organizations the ability to do the following tasks:

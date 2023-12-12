@@ -70,8 +70,7 @@ explore the hidden features of this amazing destination.
 ```
 
 > [!TIP] 
-> **Pull it all together**
-> You now have everything you need to describe your idea and destination. You can copy your AI-generated content into another format, such as a Microsoft PowerPoint presentation, to further refine and share with others.
+> **Pull it all together**.You now have everything you need to describe your idea and destination. You can copy your AI-generated content into another format, such as a Microsoft PowerPoint presentation, to further refine and share with others.
 
 ## Key takeaways and further exploration
 

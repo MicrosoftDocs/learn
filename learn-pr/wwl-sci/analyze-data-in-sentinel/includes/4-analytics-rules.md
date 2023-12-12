@@ -43,7 +43,8 @@ By default, Fusion detection is enabled in Microsoft Sentinel. Microsoft is cons
 
   - Microsoft Defender for IoT
 
-  - Microsoft 365 Defender
+    - Microsoft Defender XDR
+
 
   - Microsoft Defender for Cloud Apps
 

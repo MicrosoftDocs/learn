@@ -72,7 +72,7 @@ Can you also suggest three alternative names for the Nest?
 ```
 
 > [!NOTE]
-> **Complex Directive**. You asked the model to do a few things here in a single prompt and it will work to figure out what it needs to do when you issue multiple directives in a single prompt.
+> **Complex directive**. You asked the model to do a few things here in a single prompt and it will work to figure out what it needs to do when you issue multiple directives in a single prompt.
 
 **Sample response**:
 ```
