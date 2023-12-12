@@ -13,13 +13,13 @@ metadata:
     - build-2023-dataai
     - build-2023-fabric 
 title: Load data into a Microsoft Fabric data warehouse
-summary: Microsoft Fabric Data Warehouse is a complete platform for data, analytics, and AI (Artificial Intelligence). It refers to the process of storing, organizing, and managing large volumes of structured and semi-structured data.
+summary: Data warehouse in Microsoft Fabric is a comprehensive platform for data and analytics, featuring advanced query processing and full transactional T-SQL capabilities for easy data management and analysis.
 abstract: |
   In this module, you'll:
   - Learn different strategies to load data into a data warehouse in Microsoft Fabric.
   - Learn how to build a data pipeline to load a warehouse in Microsoft Fabric.
   - Learn how to load data in a warehouse using T-SQL.
-  - Learn how to load and transform data with dataflow.
+  - Learn how to load and transform data with dataflow (Gen 2).
 prerequisites: |
   Before starting this module, you should be familiar with the basic principles of a data warehouse.
 iconUrl: /training/achievements/generic-badge.svg

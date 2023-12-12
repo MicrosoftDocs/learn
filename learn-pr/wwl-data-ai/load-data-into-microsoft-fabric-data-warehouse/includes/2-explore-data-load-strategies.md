@@ -37,7 +37,7 @@ Think of a dimension table as the *"who, what, where, when, why”* of your data
 
 For example, if you’re running an online store, your fact table might contain the raw sales data - how many units of each product were sold. But without a dimension table, you wouldn’t know who bought those products, when they were bought, or where the buyer is located.
 
-### Slowly changing dimension (SCD)
+### Slowly changing dimensions (SCD)
 
 Slowly Changing Dimensions change over time, but at a slow pace and unpredictably. For example, a customer’s address in a retail business. When a customer moves, their address changes. If you overwrite the old address with the new one, you lose the history. But if you want to analyze historical sales data, you might need to know where the customer lived at the time of each sale. This is where SCDs come into play.
 
