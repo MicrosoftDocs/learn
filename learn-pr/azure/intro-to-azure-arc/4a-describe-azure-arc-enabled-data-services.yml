@@ -6,8 +6,7 @@ metadata:
   ms.date: 12/07/2023
   author: MikeRayMSFT
   ms.author: mikeray
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Describe Azure Arc-enabled data services
 durationInMinutes: 4
