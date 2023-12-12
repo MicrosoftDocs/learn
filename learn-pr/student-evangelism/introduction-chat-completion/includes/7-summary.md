@@ -2,7 +2,7 @@ In this module, you learned that prompt engineering, like chat completion, is a 
 
 ## Further reading
 
-- [Apply prompt engineering with Azure OpenAI Service](https://learn.microsoft.com/semantic-kernel/prompt-engineering/)
+- [Apply prompt engineering with Azure OpenAI Service](/semantic-kernel/prompt-engineering/)
 - [Prompt engineering techniques](/azure/ai-services/openai/concepts/advanced-prompt-engineering)
 - [System message framework and template recommendations for large language models (LLMs)](/azure/ai-services/openai/concepts/system-message)
 - [Azure OpenAI Service content filtering](/azure/ai-services/openai/concepts/content-filter)
