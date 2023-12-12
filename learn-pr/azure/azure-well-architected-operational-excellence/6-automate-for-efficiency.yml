@@ -36,7 +36,7 @@ quiz:
       explanation: "Incorrect. In this case, Contoso didn't use a third-party tool."
     - content: 'They modified their UI components to better support automation'
       isCorrect: true
-      explanation: "Correct. The team realized that the UI components didn't easily support automation, so they modifie"d those components."
+      explanation: "Correct. The team realized that the UI components didn't easily support automation, so they modified those components."
     - content: 'They abandoned the idea of automating UI testing'
       isCorrect: false
       explanation: "Incorrect. The team didn't abandon the idea of automating UI testing, they modified the UI components to better support automation."
