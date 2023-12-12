@@ -2,8 +2,8 @@
 uid: learn.backup-restore-azure-sql
 metadata:
   title: Back up and restore your Azure SQL database
-  description: Protect the data in your Azure SQL database and recover from data loss or corruption with backup and restore.
-  ms.date: 06/02/2023
+  description: Learn how to protect the data in your Azure SQL database and recover from data loss or corruption with backup and restore.
+  ms.date: 12/11/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
