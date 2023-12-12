@@ -37,7 +37,7 @@ The beta version provides new or enhanced APIs that are still in preview status.
 
 For Security Operations Analysts, both Microsoft Graph API versions support advanced hunting using the **runHuntingQuery** method. This method includes a query in Kusto Query Language (KQL).
 
- - Advanced hunting example in Microsoft 365 Defender: 
+ - Advanced hunting example in Microsoft Defender XDR: 
 
     ```html    
     POST https://graph.microsoft.com/v1.0/security/runHuntingQuery

@@ -5,7 +5,7 @@ To perform a sign-in investigation including conditional access policies evaluat
 
 | Location | Table |
 | :--- | :--- |
-| Microsoft 365 Defender Threat Hunting| AADSignInEventsBeta|
+| Microsoft Defender XDR Threat Hunting| AADSignInEventsBeta|
 | Microsoft Entra ID Log Analytics| SigninLogs|
 
 

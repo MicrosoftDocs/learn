@@ -10,7 +10,7 @@ In Office apps, a sensitivity label appears like a tag to users on an email or d
 
 ## Sensitivity label creation and configuration
 
-You can create and publish sensitivity labels in the Microsoft Purview Compliance Portal, Microsoft 365 Defender portal, or Exchange admin center. When you create and configure a sensitivity label, you define access restrictions on content that has that label. You can configure the following settings:
+You can create and publish sensitivity labels in the Microsoft Purview Compliance Portal, Microsoft Defender portal, or Exchange admin center. When you create and configure a sensitivity label, you define access restrictions on content that has that label. You can configure the following settings:
 
 - **Scope** of the label, such as files, emails, meetings, and sites or groups.
 
