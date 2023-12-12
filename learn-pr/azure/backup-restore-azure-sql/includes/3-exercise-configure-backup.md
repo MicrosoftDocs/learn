@@ -45,7 +45,7 @@ A logical server for Azure SQL Database is distinct from a SQL server instance t
 
 ## Configure the database backup retention policy
 
-In the Azure portal, you can examine the default retention policy and adapt it to your needs.
+In the Azure portal, you can examine the default backup retention policy and adapt it to your needs.
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the **erpserver-NNNN** database logical server that you created. Your database (SQL) server pane appears.
 
@@ -61,7 +61,7 @@ In the Azure portal, you can examine the default retention policy and adapt it t
 
 ## Allow network access to the database logical server
 
-By default, Azure SQL Database blocks network access to the server. Let's enable both your IP address and Azure services to access the server so that we can run queries from Cloud Shell and the Azure portal. By adding your IP address, you can also connect directly from your local device.
+By default, Azure SQL Database blocks network access to the logical server. Let's enable both your IP address and Azure services to access the server so that we can run queries from Cloud Shell and the Azure portal. By adding your IP address, you can also connect directly from your local device.
 
 1. Navigate back to the **erpserver-NNNN** database logical server that you created.
 

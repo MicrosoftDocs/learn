@@ -1,4 +1,4 @@
-Your retail organization must comply with data protection regulations in your jurisdiction. You need to configure a long-term retention policy in Azure SQL Database to meet these requirements.
+Your retail organization must comply with data protection regulations in your jurisdiction. You need to configure a long-term retention (LTR) policy in Azure SQL Database to meet these requirements.
 
 Let's use the Azure portal to set up a policy and then check it in PowerShell. You need to set up the following retention policy to meet your regulatory requirements:
 
@@ -10,7 +10,7 @@ Let's use the Azure portal to set up a policy and then check it in PowerShell. Y
 
 ## Use the Azure portal to configure long-term retention
 
-Let's start by configuring the retention policy by using the portal.
+Let's start by configuring the LTR policy by using the portal.
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select **erpserver-NNNN**.
 
@@ -30,7 +30,7 @@ Let's start by configuring the retention policy by using the portal.
 
 ## Use PowerShell to configure long-term retention
 
-You can also configure long-term retention policies by using PowerShell.
+You can also configure LTR policies by using PowerShell.
 
 1. In Azure Cloud Shell, run this command to set a variable to the value of your SQL Server instance:
 
@@ -52,7 +52,7 @@ You can also configure long-term retention policies by using PowerShell.
     > [!NOTE]
     > You might see a message display after the output: `Long Term Retention is not supported : Not supported for master.` This message doesn't affect completion of this module.
 
-1. Run this command to view the long-term retention policy for the **sql-erp-db** database:
+1. Run this command to view the LTR policy for the **sql-erp-db** database:
 
     ``` powershell
     Get-AzSqlDatabaseBackupLongTermRetentionPolicy `
@@ -61,7 +61,7 @@ You can also configure long-term retention policies by using PowerShell.
         -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
     ```
 
-1. Now let's configure the rest of the policy to meet the requirements specified earlier. To configure a long-term retention policy via PowerShell, run this command:
+1. Now let's configure the rest of the policy to meet the requirements specified earlier. To configure an LTR policy via PowerShell, run this command:
 
     ``` powershell
     Set-AzSqlDatabaseBackupLongTermRetentionPolicy `

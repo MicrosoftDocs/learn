@@ -19,9 +19,9 @@ You can use these backups to:
 - Restore a new copy of an existing database.
 - Restore a deleted database up to the time when the deletion occurred.
 - Restore the database to an alternative location or region.
-- Restore a database from a long-term backup by using long-term retention (LTR).
+- Restore a database from a long-term backup by using long-term retention (LTR). LTR can be enabled for Azure SQL Database.
 
-LTR can be enabled for Azure SQL Database. Though rare, if a total storage failure occurs, you might lose changes from up to five minutes ago if you lose the live transaction logs. If the transaction logs are intact, you can restore up to the moment that the failure occurred.
+Though rare, if a total storage failure occurs, you might lose changes from up to five minutes ago if you lose the live transaction logs. If the transaction logs are intact, you can restore up to the moment that the failure occurred.
 
 ## Backups and service tiers
 
