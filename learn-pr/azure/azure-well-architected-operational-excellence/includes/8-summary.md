@@ -1,12 +1,16 @@
-In this module, you've looked at the five key principles of the x pillar of the Azure Well-Architected Framework.
+In this module, you've looked at the six key principles of the Operational Excellence pillar of the Azure Well-Architected Framework.
 
-A cost-optimized workload isn't necessarily a low-cost workload. There are significant tradeoffs. Tactical approaches are reactive and can reduce costs only 
+The operational requirements of a workload are as important as its business requirements. Efficient processes ensure the workload achieves business outcomes within the constraints of compliance, whether that compliance is organizational or external. The key is to find repeatability with consistency.
+
+**The goals of the Operational Excellence pillar are to do the right thing, to do it the right way, and to solve the right problems as a team.**
+
+If you meet these goals, workloads will run reliably and predictably even during times of change. Inability to fulfill operational requirements can lead to failed deployments, inconsistent user experience, and added costs that could have been avoided through proper planning and streamlined execution.
 
 ## Learn more
 
 To learn more about workload cost optimization, review the following documentation:
 
-- [Cost Optimization design principles](/azure/well-architected/cost-optimization/principles)
-- [Design review checklist for Cost Optimization](/azure/well-architected/cost-optimization/checklist)
-- [Cost Optimization tradeoffs](/azure/well-architected/cost-optimization/tradeoffs)
-- [Cloud design patterns that support cost optimization](/azure/well-architected/cost-optimization/design-patterns)
+- [Operational Excellence design principles](/azure/well-architected/operational-excellence/principles)
+- [Design review checklist for Operational Excellence](/azure/well-architected/operational-excellence/checklist)
+- [Operational Excellence tradeoffs](/azure/well-architected/operational-excellence/tradeoffs)
+- [Cloud design patterns that support operational excellence](/azure/well-architected/operational-excellence/design-patterns)
