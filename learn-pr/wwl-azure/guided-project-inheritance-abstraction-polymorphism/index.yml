@@ -35,8 +35,8 @@ units:
 - learn.wwl.guided-project-inheritance-abstraction-polymorphism.introduction
 - learn.wwl.guided-project-inheritance-abstraction-polymorphism.prepare
 - learn.wwl.guided-project-inheritance-abstraction-polymorphism.exercise-ant-class-generalized-ant
+- learn.wwl.guided-project-inheritance-abstraction-polymorphism.a-exercise-bonus-material
 - learn.wwl.guided-project-inheritance-abstraction-polymorphism.exercise-implement-generalized-ant
-- learn.wwl.guided-project-inheritance-abstraction-polymorphism.4a-exercise-bonus-material
 - learn.wwl.guided-project-inheritance-abstraction-polymorphism.knowledge-check
 - learn.wwl.guided-project-inheritance-abstraction-polymorphism.summary
 badge:
