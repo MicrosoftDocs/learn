@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-  ms.prod: azure
 durationInMinutes: 30
 content: |
   [!include[](includes/3-exercise-set-up-service-connections.md)]

@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/27/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: configuration-manager
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/2-deploy-configuration-manager-client.md)]

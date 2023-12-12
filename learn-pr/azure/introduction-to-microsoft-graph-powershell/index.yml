@@ -116,7 +116,7 @@ roles:
 ### Use value(s) from the product taxonomy (https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product)
 ###
 products:
-  - microsoft-graph-powershell-sdk
+  - ms-graph
 ###########################################################################
 ###
 ### Specify the subject areas.

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-classes.learn-encapsulation
+title: Learn about encapsulation
+metadata:
+  title: Learn about encapsulation
+  description: "This unit describes what encapsulation is and what it's used for."
+  ms.date: 12/01/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-learn-encapsulation.md)]

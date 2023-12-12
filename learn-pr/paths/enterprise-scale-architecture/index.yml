@@ -7,8 +7,7 @@ metadata:
   ms.date: 10/17/2022
   author: JefferyMitchell
   ms.author: jemitche
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Create a scalable and modular architecture with Azure landing zones
 summary: Learn how Microsoft Cloud Adoption Framework for Azure landing zones can help your organization to accelerate cloud adoption from months to weeks. We will explore how to create Azure landing zone architecture at enterprise-scale. Learn about landing zone critical design areas to build and operationalize your Azure environment.
 prerequisites: None

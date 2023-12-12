@@ -6,8 +6,7 @@ metadata:
   ms.date: 04/10/2023
   author: johnmarco
   ms.author: johnmarc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Describe Azure Arc security solutions
 durationInMinutes: 8

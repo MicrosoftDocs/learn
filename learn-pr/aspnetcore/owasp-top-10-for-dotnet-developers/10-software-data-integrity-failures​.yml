@@ -7,8 +7,7 @@ metadata:
   ms.date: 06/12/2023
   author: obrocki
   ms.author: dawidobrocki
-  ms.topic: interactive-tutorial
-  ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
+  ms.topic: unit
 durationInMinutes: 2
 
 content: |

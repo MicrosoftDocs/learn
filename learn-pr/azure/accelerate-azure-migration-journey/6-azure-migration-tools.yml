@@ -5,8 +5,8 @@ metadata:
   title: Azure migration and modernization tools
   description: Learn about the tools and services provided by Microsoft to enable a successful move to Azure. 
   ms.date: 05/15/2023
-  author: jamcneil
-  ms.author: jumcn
+  author: sgsneha
+  ms.author: sudhirsneha
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

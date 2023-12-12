@@ -3,10 +3,10 @@ uid: learn.wwl.explore-real-time-analytics-microsoft-fabric
 metadata:
   title: Implement Real-Time Analytics with Microsoft Fabric
   description: Implement Real-Time Analytics with Microsoft Fabric
-  ms.date: 10/06/2023
+  ms.date: 11/08/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
+  ms.topic: learning-path
   ms.prod: azure
   ms.service: fabric
 title: Implement Real-Time Analytics with Microsoft Fabric
@@ -32,5 +32,6 @@ products:
 modules:
 - learn.wwl.get-started-kusto-fabric
 - learn.wwl.explore-event-streams-microsoft-fabric
+- learn.wwl.query-data-kql-database-microsoft-fabric
 trophy:
   uid: learn.wwl.explore-real-time-analytics-microsoft-fabric.trophy

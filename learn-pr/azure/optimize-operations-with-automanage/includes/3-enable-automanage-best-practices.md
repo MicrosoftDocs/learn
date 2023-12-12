@@ -56,7 +56,7 @@ The `configurationProfile` value can be one of the following values:
 
 - `"/providers/Microsoft.Automanage/bestPractices/AzureBestPracticesProduction"`
 - `"/providers/Microsoft.Automanage/bestPractices/AzureBestPracticesDevTest"`
-- `"/subscriptions/[sub ID]/resourceGroups/resourceGroupName/providers/Microsoft.Automanage/configurationProfiles/customProfileName (for custom profiles)`
+- `"/subscriptions/[sub ID]/resourceGroups/resourceGroupName/providers/Microsoft.Automanage/configurationProfiles/customProfileName (for custom profiles)"`
 
 To deploy the templates, follow these steps:
 

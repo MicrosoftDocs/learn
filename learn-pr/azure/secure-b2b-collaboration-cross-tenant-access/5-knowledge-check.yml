@@ -9,8 +9,7 @@ metadata:
   manager: CelesteDG
   author: msmimart
   ms.author: mimart
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.topic: unit
 durationInMinutes: 3
 content: |
 quiz:

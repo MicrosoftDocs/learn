@@ -5,8 +5,9 @@ metadata:
   title: Summary
   description: "Summary"
   ms.date: 08/22/2023
-  author: wwlpublish
+  author: cyz
   ms.author: cyzanon
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

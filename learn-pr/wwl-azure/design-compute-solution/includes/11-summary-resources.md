@@ -34,16 +34,14 @@ In this module, you learned how to choose and recommend an Azure compute solutio
 
 ## Learn more with optional hands-on exercises
 
-- Practice with an [Introduction to Azure Virtual Machines (sandbox)](/training/modules/intro-to-azure-virtual-machines/).
+- Practice with an [Introduction to Azure Virtual Machines](/training/modules/intro-to-azure-virtual-machines/).
 
 - Create an [Azure Batch account by using the Azure portal](/training/modules/create-batch-account-using-azure-portal/). _(Azure subscription required.)_
 
-- Create [serverless logic with Azure Functions (sandbox)](/training/modules/create-serverless-logic-with-azure-functions/).
+- Create [serverless logic with Azure Functions](/training/modules/create-serverless-logic-with-azure-functions/). _(Azure subscription required.)_
 
-- Create a [web app in the Azure portal (sandbox)](/training/modules/host-a-web-app-with-azure-app-service/3-exercise-create-a-web-app-in-the-azure-portal?pivots=csharp).
+- Create a [Windows virtual machine](/training/modules/create-windows-virtual-machine-in-azure/).
 
-- Create a [Windows virtual machine (sandbox)](/training/modules/create-windows-virtual-machine-in-azure/3-exercise-create-a-vm).
+- Create the [social media tracker Logic App](/training/modules/route-and-process-data-logic-apps/). _(Azure subscription required.)_
 
-- Create the [social media tracker Logic App (sandbox)](/training/modules/route-and-process-data-logic-apps/4-ex-create-social-media-tracker).
-
-- Host a [web application with Azure App Service (sandbox)](/training/modules/host-a-web-app-with-azure-app-service/).
+- Host a [web application with Azure App Service](/training/modules/host-a-web-app-with-azure-app-service/).

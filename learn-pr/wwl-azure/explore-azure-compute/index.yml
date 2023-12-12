@@ -6,7 +6,7 @@ metadata:
   ms.date: 04/21/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: sap-on-azure
 title: Explore Azure for SAP compute
 summary: This module explores the design of scalable, performant, and resilient compute components for SAP deployments in Azure.

@@ -1,4 +1,3 @@
-
 Many business leaders are hesitant to move to the cloud because they want to stay in control of their data.
 
 In fact, Microsoft Azure is one of the safest, most reliable places your business can store its data. Using tools you can access from your own computer, you can keep track of your whole company’s cloud activities to make sure they're secure, operating as expected, and in compliance with company policies.

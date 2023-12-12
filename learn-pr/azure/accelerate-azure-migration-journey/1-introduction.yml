@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Learn how to accelerate your migration and modernization journey to Azure.
   ms.date: 05/15/2023
-  author: jamcneil
-  ms.author: jumcn
+  author: sgsneha
+  ms.author: sudhirsneha
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

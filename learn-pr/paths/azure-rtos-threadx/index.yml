@@ -8,8 +8,7 @@ metadata:
   author: timlt
   ms.author: timlt
   manager: lizross
-  ms.topic: interactive-tutorial
-  ms.service: rtos
+  ms.topic: learning-path
 title: Azure RTOS ThreadX
 prerequisites: |
   Working knowledge of C or C++, GitHub and Visual Studio

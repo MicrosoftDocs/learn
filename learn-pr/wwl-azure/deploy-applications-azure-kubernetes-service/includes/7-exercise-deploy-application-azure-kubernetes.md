@@ -106,7 +106,7 @@ In this task, you roll back the deployment by switching back to the original con
 3.  To roll back the deployment, run the following command:
     
     ```azurecli
-    kubectl rollouts undo deployment/nginx-deployment --namespace demo-deployment
+    kubectl rollout undo deployment/nginx-deployment --namespace demo-deployment
     ```
 
 4.  To validate the rollback enumerate deployments, pods, and replica sets by running the following commands:

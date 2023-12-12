@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/26/2023
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: learning-azure
 title: Write your first C# method
 summary: Learn to create your own methods to perform specific tasks.

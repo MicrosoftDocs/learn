@@ -4,11 +4,10 @@ title: When to use Azure Firewall
 metadata:
   title: When to use Azure Firewall
   description: Evaluate whether Azure Firewall and Azure Firewall Manager are the right solutions for your company.
-  ms.date: 09/08/2022
+  ms.date: 11/06/2023
   author: vhorne
   ms.author: victorh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/4-when-to-use-azure-firewall.md)]

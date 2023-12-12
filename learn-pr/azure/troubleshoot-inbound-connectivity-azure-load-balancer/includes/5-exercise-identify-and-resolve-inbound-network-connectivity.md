@@ -1,4 +1,4 @@
-In our scenario, a change was made to the network configuration. You've started to receive alerts informing you that virtual machines in the back-end pool aren't responding to health probes. Now you need to diagnose the cause of these failures and fix them.
+In our scenario, a change was made to the network configuration. You're receiving alerts that virtual machines in the back-end pool aren't responding to health probes. Now you need to diagnose the cause of these failures and fix them.
 
 In this exercise, you use a script to reconfigure the environment and cause health probe failures. You use the skills learned in this module to return the load-balanced HTTP service back to full operation.
 
@@ -16,19 +16,19 @@ In this exercise, you use a script to reconfigure the environment and cause heal
     cd ~/load-balancer/src/scripts
     ```
 
-1. Run the following command to reconfigure the load balancer, network, and virtual machines. This script introduces some problems that you'll later diagnose and correct.
+2. Run the following command to reconfigure the load balancer, network, and virtual machines. This script introduces some problems that you'll diagnose and correct.
 
     ```bash
     bash reconfigure.sh
     ```
 
-1. Run the following commands to move to the **src/stresstest** folder.
+3. Run the following commands to move to the **src/stresstest** folder.
 
     ```bash
     cd ~/load-balancer/src/stresstest
     ```
 
-1. Run the stress test again where you replace <*ip address*> with the IP address of the load balancer. If you can't remember this address, run the **src/scripts/findip.sh** script again.
+4. Run the stress test again where you replace <*ip address*> with the IP address of the load balancer. If you can't remember this address, run the **src/scripts/findip.sh** script again.
 
     ```bash
     dotnet run <ip address>
@@ -36,9 +36,9 @@ In this exercise, you use a script to reconfigure the environment and cause heal
 
     This time, the app won't generate any output and might eventually time out with the message "Error sending request to Load Balancer: The operation was canceled." Press <kbd>Enter</kbd> to stop the application.
 
-1. In the Azure portal, select **Dashboard** > **dashboard-learn-ts-loadbalancer**.
+5. In the Azure portal, select **Dashboard** > **dashboard-learn-ts-loadbalancer**.
 
-1. Review the dashboard that shows the health probe status and data path availability. You might need to change the time range to the past 30 minutes. It should look like the following chart, with both metrics dropped to zero.
+6. Review the dashboard that shows the health probe status and data path availability. You might need to change the time range to the past 30 minutes. It should look like the following chart, with both metrics dropped to zero.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot that shows the health probe status and data path availability is in an unhealthy state.](../media/5-probe-unhealthy.png)

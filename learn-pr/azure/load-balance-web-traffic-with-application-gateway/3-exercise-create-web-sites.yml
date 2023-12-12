@@ -6,10 +6,9 @@ metadata:
   ms.date: 05/02/2019
   author: vhorne
   ms.author: victorh
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurecli
-  ms.prod: learning-azure
 title: Exercise - Create web sites
 durationInMinutes: 10
 content: |

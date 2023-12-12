@@ -22,8 +22,8 @@ Integrating your on-premises directories with Microsoft Entra ID makes your user
 
 * Users can use a single identity to access both on-premises applications and cloud services such as Microsoft 365.
 * A single tool provides an easy deployment experience for synchronization and sign-in.
-* Integration provides the newest capabilities for your scenarios. Microsoft Entra Connect replaces older versions of identity integration tools, such as DirSync and Azure AD Sync. For more information, check out [Hybrid Identity directory integration tools comparison](/azure/active-directory/hybrid/plan-hybrid-identity-design-considerations-tools-comparison).
+* Integration provides the newest capabilities for your scenarios. Microsoft Entra Connect replaces older versions of identity integration tools such as DirSync and Azure AD Sync.
 
 ## Installing
 
-Installing and configuring Microsoft Entra Connect is not a trivial task, and requires some initial planning and decisions before you begin. Microsoft has a full [Installation guide](/azure/active-directory/hybrid/how-to-connect-install-roadmap) to help you prepare, install, configure and test your AD Connect setup.
+Installing and configuring Microsoft Entra Connect is not a trivial task, and requires some initial planning and decisions before you begin. Microsoft has a full [Installation guide](/entra/identity/hybrid/connect/how-to-connect-install-roadmap) to help you prepare, install, configure and test your AD Connect setup.

@@ -7,11 +7,10 @@ metadata:
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - build-2023
     - build-2023-dataai
-  ms.prod: learning-azure
 title: Manage SQL elastic pools performance and cost
 durationInMinutes: 7
 content: |

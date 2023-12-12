@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-properties-within-class.exercise-control-access-properties
+title: Exercise - Control access to properties
+metadata:
+  title: Exercise - Control access to properties
+  description: "Exercise - Control access to properties"
+  ms.date: 12/01/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 13
+content: |
+  [!include[](includes/3-exercise-control-access-properties.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which answer is a reason to use a write-only property?"
+    choices:
+    - content: "To be able to set and get the number of rooms in your house object."
+      isCorrect: false
+      explanation: "Incorrect. A write-only property is only for setting values, not getting values."
+    - content: "To get the number of rooms in your house object."
+      isCorrect: false
+      explanation: "Incorrect. A write-only property is only for setting values, not getting values."
+    - content: "To set, but not retrieve, the maximum number of rooms in your house object."
+      isCorrect: true
+      explanation: "Correct! Use a write-only property when you only need to set a value."
+  - content: "When might it be a good idea to have a read-only property?"
+    choices:
+    - content: "When you're wearing glasses."
+      isCorrect: false
+      explanation: "Incorrect. Read-only properties have nothing to do with wearing glasses."
+    - content: "When no other properties are available."
+      isCorrect: false
+      explanation: "Incorrect. There's no limit to the number of properties that can be created."
+    - content: "When you want to check the state (also known as status) of an object."
+      isCorrect: true
+      explanation: "Correct! The primary reason you might want a read-only property is to check on the state of an object."

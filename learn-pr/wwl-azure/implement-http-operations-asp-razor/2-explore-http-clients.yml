@@ -9,8 +9,7 @@ metadata:
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
-  ms.custom:
-  - N/A
+  ms.custom: N/A, devx-track-dotnet
 durationInMinutes: 7
 content: |
   [!include[](includes/2-explore-http-clients.md)]

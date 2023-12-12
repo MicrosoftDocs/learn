@@ -1,6 +1,3 @@
-
-
-
 SC-300: Module 2 Implement an identity management solution
 
 Module 2 Overview
@@ -20,9 +17,9 @@ This module consists of six lessons:
 
 Module 2 Tips and Tricks
 
-- Describe Microsoft Entra roles and custom roles
+- Describe Azure AD roles and custom roles
 - Explain the use of external identity providers
-- Clarify Microsoft Entra Connect
+- Clarify Azure AD connect
 - Explain how to implement PHS, PTA, and SSO
 - Focus on proper maintenance!
 
@@ -39,7 +36,7 @@ Module 2 Lab/Exercise
 
 - Lab 2.1: [Manage user roles](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_06_AddFederatedIdentityProvider.md)
 - Lab 2.2: [Working with tenant properties](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_25_CreatingAccessReviewsForUsers.md)
-- Lab 2.3: [Assign licenses to users by group membership Microsoft Entra ID](https://aka.ms/whiteboard)
+- Lab 2.3: [Assign licenses to users by group membership Azure AD](https://aka.ms/whiteboard)
 - Lab 2.4: [Configure external collaboration settings](https://aka.ms/msle)
 - Lab 2.5: [Add guest users to the directory](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_23_AddTermsOfUseAcceptanceReporting.md)
 - Lab 2.6: [Add federated identity provider](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_15_ConfigureAAD_MultiFactorAuthRegPolicy.md)

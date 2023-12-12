@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-classes-methods-properties.prepare
+title: Prepare
+metadata:
+  title: Prepare
+  description: "The purpose of this lesson is to begin building the LangtonsAnts project using classes and methods."
+  ms.date: 11/24/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+  ms.technology: (empty)
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-prepare.md)]

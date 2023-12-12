@@ -6,8 +6,7 @@ metadata:
   ms.date: 08/05/2020
   author: jasallen
   ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Create machine learning models
 prerequisites: |
   This learning path assumes knowledge of basic mathematical concepts. Some experience with Python is also beneficial.

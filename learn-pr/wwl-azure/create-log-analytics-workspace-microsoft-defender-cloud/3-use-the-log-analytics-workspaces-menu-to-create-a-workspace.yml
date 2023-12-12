@@ -7,8 +7,7 @@ metadata:
   ms.date: 10/09/2023
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-use-the-log-analytics-workspaces-menu-to-create-a-workspace.md)]
