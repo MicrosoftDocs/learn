@@ -29858,6 +29858,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/8-understand-capabilities-of-azure-bot-service.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-to-develop-ai-solutions-azure/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/autonomous-systems/intro-to-project-bonsai/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/leverage-ai-tools/",
       "redirect_document_id": false
@@ -31124,6 +31129,46 @@
   {
     "source_path": "learn-pr/azure/secure-b2b-collaboration-cross-tenant-access/6-summary.yml",
     "redirect_url": "https://learn.microsoft.com/en-us/entra/external-id/cross-tenant-access-overview/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/partner-center-modules/introduction-to-partner-center/index.yml",
+    "redirect_url": "https://learn.microsoft.com/partner-center/overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/partner-center-modules/introduction-to-partner-center/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/partner-center/overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/partner-center-modules/introduction-to-partner-center/2-what-is-partner-center.yml",
+    "redirect_url": "https://learn.microsoft.com/partner-center/overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/partner-center-modules/introduction-to-partner-center/3-how-partner-center-works.yml",
+    "redirect_url": "https://learn.microsoft.com/partner-center/overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/partner-center-modules/introduction-to-partner-center/4-when-to-use-partner-center.yml",
+    "redirect_url": "https://learn.microsoft.com/partner-center/overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/partner-center-modules/introduction-to-partner-center/5-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/partner-center/overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/partner-center-modules/introduction-to-partner-center/6-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/partner-center/overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/achievements/learn.partner-center.badge.yml",
+    "redirect_url": "https://learn.microsoft.com/partner-center/overview",
     "redirect_document_id": false
   }
   ]
