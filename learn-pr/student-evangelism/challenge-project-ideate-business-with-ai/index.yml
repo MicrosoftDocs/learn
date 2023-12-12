@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.challenge-project-ideate-business-with-ai
+metadata:
+  title: Challenge project – Use generative AI to create ideate your startup
+  description: "Challenge Project - Use Generative AI (Bing Chat) to Create the perfect idea for your Startup or business"
+  ms.date: 12/7/2023
+  author: pablonunes
+  ms.author: pablolopes
+  ms.custom: team=nextgen
+  ms.topic: module-challenge-project # Please don't edit, used for our analytics
+  ms.service: bing
+title: Challenge project – Use generative AI to create ideate your startup
+summary: Use Generative AI (Bing Chat, GPT-4) to Create the perfect idea for your Startup or business
+abstract: |
+  In this module you'll develop the following skills that can be used in your everyday interaction with Generative AI:
+    - Utilizing the various features or capabilities of Bing Chat
+    - Utilizing multi-modal features of Bing Chat
+    - Prompt writing tips and techniques
+    - Practice your Critical/ Creative Thinking with Bing Chat
+    - Researching with Bing Chat
+    - Applying format and tone to Generative AI Models
+prerequisites: |
+  - Personal account for [Bing Chat](https://www.bing.com/new) and [Bing Image Creator](https://www.bing.com/images/create)
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles: 
+  - student
+  - business-owner
+  - startup-founder
+products: 
+  - bing
+subjects:
+  - digital-application-innovation
+units:
+- learn.challenge-project-use-generative-ai-to-ideate.challenge-info
+- learn.challenge-project-use-generative-ai-to-ideate.introduction
+- learn.challenge-project-use-generative-ai-to-ideate.define-idea
+- learn.challenge-project-use-generative-ai-to-ideate.prepare
+- learn.challenge-project-use-generative-ai-to-ideate.refine-idea-with-ai
+- learn.challenge-project-use-generative-ai-to-ideate.next-step
+- learn.challenge-project-use-generative-ai-to-ideate.knowledge-check
+- learn.challenge-project-use-generative-ai-to-ideate.summary
+badge:
+  uid: learn.challenge-project-use-generative-ai-to-ideate.badge

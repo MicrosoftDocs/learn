@@ -4,13 +4,10 @@ title: Specify translation options
 metadata:
   title: Specify translation options
   description: "Specify translation options"
-  ms.date: 08/31/2023
+  ms.date: 12/05/2023
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
-  ms.service: azure-ai-translator
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/4-specify-translation-options.md)]
