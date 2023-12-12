@@ -4,9 +4,9 @@ Azure AI services offer a wide range of prebuilt AI capabilities across multiple
 
 | Natural language processing | Knowledge mining and document intelligence | Computer vision | Decision support | Generative AI |
 | -------- | ------ | ------ | -------- | -------- |
-| Text analysis             | Cognitive Search             | Image analysis                |  Anomaly detection | Azure OpenAI Service |
+| Text analysis             | AI Search             | Image analysis                |  Content safety | Azure OpenAI Service |
 | Question answering        | Document Intelligence        | Video analysis                | Content moderation | DALL-E image generation |
-| Language understanding    | Custom Document Intelligence | Image classification          | Content personalization | |
+| Language understanding    | Custom Document Intelligence | Image classification          | | |
 | Translation               | Custom skills                | Object detection              | | | 
 | Named entity recognition  |                              | Facial analysis               | | |
 | Custom text classification|                              | Optical character recognition | | |
