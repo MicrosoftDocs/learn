@@ -3,12 +3,12 @@ uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse.load-data-using-da
 title: Use data pipelines to load a warehouse
 metadata:
   title: Use data pipelines to load a warehouse
-  description: "Learn how data pipelines works in Microsoft Fabric and how it can be used for loading purposes."
+  description: "Learn how data pipelines work in Microsoft Fabric and how it can be used for loading purposes."
   ms.date: 12/01/2023
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.service: fabric
+  ms.topic: module
+  ms.prod: fabric
   ms.custom:
     - build-2023
     - build-2023-dataai

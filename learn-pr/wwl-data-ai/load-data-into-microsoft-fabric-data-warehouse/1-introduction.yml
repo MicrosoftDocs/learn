@@ -6,9 +6,8 @@ metadata:
   description: "Introduction"
   ms.date: 12/01/2023
   author: wwlpublish
-  ms.topic: interactive-tutorial
   ms.author: jupadrao
-  ms.service: fabric
+  ms.topic: module
   ms.custom:
     - build-2023
     - build-2023-dataai
