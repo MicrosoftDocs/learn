@@ -8,7 +8,7 @@ Let's create a database in Azure and then configure backups. Set the retention t
 
 Let's use the Azure CLI to create a SQL Database logical server and a database.
 
-A logical server for Azure SQL Database is distinct from a SQL server instance that you might be familiar with in the on-premises world. In Azure SQL Database, *server* is a logical construct that acts as a central administrative point for a collection of databases. Azure SQL databases exist in and are managed by a single logical server within the same Azure region. For example, you use the logical SQL server to configure some settings for each database, including firewall and backup retention.
+A logical server for Azure SQL Database is distinct from a SQL Server instance that you might be familiar with in the on-premises world. In Azure SQL Database, *server* is a logical construct that acts as a central administrative point for a collection of databases. Azure SQL databases exist in and are managed by a single logical server within the same Azure region. For example, you use the logical Azure SQL server to configure some settings for each database, including firewall and backup retention.
 
 1. Run the following commands in Azure Cloud Shell to set up some variables for creation of the SQL Database logical server:
 
@@ -21,9 +21,9 @@ A logical server for Azure SQL Database is distinct from a SQL server instance t
 
    This step creates a server name with a random number at the end to ensure that it's globally unique. The server name is referred to as `erpserver-NNNN` through the exercises, but replace this name with the name of the server that you generate here.
 
-   This step also sets the location for your server to the location of the resource group. Finally, it sets the credentials used to access the database logical server. When the command prompts you, enter a complex password of your choice.
+   This step also sets the location for your server to the location of the resource group. Finally, it sets the credentials used to access the Azure SQL database logical server. When the command prompts you, enter a complex password of your choice.
 
-1. Run the `New-AzSqlServer` command to create a SQL Database logical server to store the database:
+1. Run the `New-AzSqlServer` command to create an Azure SQL Database logical server to store the database:
 
     ```powershell
     New-AzSqlServer `

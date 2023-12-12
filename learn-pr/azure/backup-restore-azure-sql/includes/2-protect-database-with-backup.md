@@ -8,7 +8,7 @@ Let's learn about Azure SQL Database backups and how to use them effectively.
 
 Azure SQL Database automatically creates database backups and keeps them for seven to 35 days. The retention time depends on the purchasing model and the service tier that you choose when you create your database. When the backups are complete, SQL Database stores them as blobs in a read-access geo-redundant storage (RA-GRS) account in your Azure subscription. SQL Database replicates the RA-GRS accounts to a paired region, giving you protection from service issues in any one region.
 
-Azure SQL Database uses SQL server technology to make these types of backups:
+Azure SQL Database uses SQL Server technology to make these types of backups:
 
 - **Full backups**: In a full backup, SQL Database backs up everything in the database and the transaction logs. SQL Database makes a full backup once a week.
 - **Differential backups**: In a differential backup, SQL Database backs up everything that changed since the last full backup. SQL Database makes a differential backup every 12 hours.
