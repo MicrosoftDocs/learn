@@ -1,8 +1,8 @@
 [Microsoft Fabric Data Warehouse](/fabric/data-warehouse/?azure-portal=true) is a complete platform for data, analytics, and AI (Artificial Intelligence). It refers to the process of storing, organizing, and managing large volumes of structured and semi-structured data. 
 
-Warehouse in Microsoft Fabric is powered up with Synapse Analytics by offering a rich set of features that make it easier to manage and analyze data. It includes advanced query processing capabilities, and supports the full transactional T-SQL capabilities like an enterprise data warehouse.
+The Warehouse in Microsoft Fabric is powered up with Synapse Analytics by offering a rich set of features that make it easier to manage and analyze data. It includes advanced query processing capabilities, and supports the full transactional T-SQL capabilities like an enterprise data warehouse.
 
-A warehouse in Microsoft Fabric is centered around a single data lake. This setup allows users to focus on tasks such as data preparation, analysis, and reporting. It takes advantage of the SQL engine’s extensive capabilities, where a unique copy of their data is stored in [Microsoft OneLake](/fabric/onelake/onelake-overview?azure-portal=true).
+Unlike a dedicated SQL pool in Synapse Analytics, a warehouse in Microsoft Fabric is centered around a single data lake. The data in the Microsoft Fabric warehouse is stored in the Parquet file format. This setup allows users to focus on tasks such as data preparation, analysis, and reporting. It takes advantage of the SQL engine’s extensive capabilities, where a unique copy of their data is stored in [Microsoft OneLake](/fabric/onelake/onelake-overview?azure-portal=true).
 
 :::image type="content" source="../media/1-access-onelake-data-other-tools.png" alt-text="Diagram showing the function and structure of OneLake." lightbox="../media/1-access-onelake-data-other-tools.png":::
 
