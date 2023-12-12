@@ -32,7 +32,8 @@ Let's create the Azure VM with Windows 11 Enterprise using Azure Cloud Shell.
         --public-ip-sku Standard \
         --admin-username $username \
         --admin-password $adminpassword \
-        --size Standard_D2s_v3
+        --size Standard_D2s_v3 \
+        --security-type Standard
     ```
 
     It takes a few minutes to create the VM and supporting resources. The following example output shows the VM create operation was successful.
