@@ -14,16 +14,16 @@ summary: |
   > This is a **_Challenge Project_** module where you complete an end-to-end project using high-level guidance; there are no step-by-step instructions.
 abstract: |
   In this module, you'll demonstrate your ability to:
-    - "Build a canvas app with Power Apps."
-    - "Create, configure, and publish a conversational bot with Copilot Studio."
-    - "Combine AI generative answers and topical answers in Copilot Studio."
-    - "Integrate Copilot Studio with Power Apps."
+    - Build a canvas app with Power Apps.
+    - Create, configure, and publish a conversational bot with Copilot Studio.
+    - Combine AI generative answers and topical answers in Copilot Studio.
+    - Integrate Copilot Studio with Power Apps.
 prerequisites: |
-  - "Experience setting up a Power Platform environment."
-  - "Basic knowledge of Power Apps and how to add components."
-  - "Basic knowledge of Copilot Studio topics"
-  - "Power Apps Developer account"
-  - "Activate AI Builder"
+  - Experience setting up a Power Platform environment.
+  - Basic knowledge of Power Apps and how to add components.
+  - Basic knowledge of Copilot Studio topics.
+  - Power Apps Developer account
+  - Activate AI Builder
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner

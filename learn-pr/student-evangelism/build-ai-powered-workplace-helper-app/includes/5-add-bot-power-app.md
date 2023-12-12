@@ -1,8 +1,8 @@
-You are almost done! The last step of the process is to insert your chatbot into a Power App so employees can access it easily.
+You're almost done! The last step of the process is to insert your chatbot into a Power App so employees can access it easily.
 
 ## Specification
 
-Create a Power Apps App that meets the following basic functionalities and specifications:
+Create a Power Apps app that meets the following basic functionalities and specifications:
 
 - Create a Power App for a mobile phone layout
 - Add the company's name and the office location that this app is designed to support.
@@ -12,7 +12,7 @@ Create a Power Apps App that meets the following basic functionalities and speci
 
 > [!NOTE]
 > **Power Platform Environment** <br>
-> Ensure you are in the same Power Platform environment you created your Copilot Studio in so you can access it.
+> Ensure you're in the same Power Platform environment you created your Copilot Studio in so you can access it.
 
 ## Check your work
 
