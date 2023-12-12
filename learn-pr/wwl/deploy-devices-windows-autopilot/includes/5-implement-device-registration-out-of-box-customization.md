@@ -24,7 +24,7 @@ When employees turn on a computer that a hardware vendor has delivered, the OOBE
 
  -  What is your preferred keyboard layout?
  -  Do you accept the Microsoft Software License Terms?
- -  Should the computer join AD DS or Microsoft Entra ID?
+ -  Should the computer join AD DS or Azure AD?
  -  Which privacy settings should you use?
 
 These settings can be confusing for employees, and therefore, they often call the help desk or they misconfigure Windows. With traditional, custom image deployment, you can preconfigure those settings so that employees can’t view or configure them. However, when a hardware vendor delivers a computer directly, the default Windows image is used, and the employee has to provide all of the configuration settings. An employee who completes the OOBE also becomes a member of the local Administrators group, which can cause many problems.
@@ -36,9 +36,9 @@ The Default OOBE setup phase:
 
 The OOBE setup phase with Windows Autopilot:
 
-:::image type="content" source="../media/azure-active-directory-sign-9f107960.png" alt-text="Screenshot shows the Windows AutoPilot setup process. The user enters their Microsoft Entra ID email address instead of a Microsoft Account during the setup.":::
+:::image type="content" source="../media/azure-active-directory-sign-9f107960.png" alt-text="Screenshot shows the Windows AutoPilot setup process. The user enters their Azure AD email address instead of a Microsoft Account during the setup.":::
 
 
-Windows Autopilot puts administrators in control of the entire OOBE setup phase for known Windows devices. After administrators identify devices by their hardware IDs, they can create and apply a Windows Autopilot deployment profile to those devices. When the devices start and have internet connectivity, they connect to the Windows Autopilot cloud service, ask the employees for their company credentials, and apply settings from the Windows Autopilot profile. This preconfigures and hides many dialog boxes that would otherwise display during OOBE. It simplifies the user experience and enables employees to get configured and productive Windows devices in just a few selects. Based on employee credentials, the devices join Microsoft Entra ID and can automatically enroll in Intune or another mobile device management solution.
+Windows Autopilot puts administrators in control of the entire OOBE setup phase for known Windows devices. After administrators identify devices by their hardware IDs, they can create and apply a Windows Autopilot deployment profile to those devices. When the devices start and have internet connectivity, they connect to the Windows Autopilot cloud service, ask the employees for their company credentials, and apply settings from the Windows Autopilot profile. This preconfigures and hides many dialog boxes that would otherwise display during OOBE. It simplifies the user experience and enables employees to get configured and productive Windows devices in just a few selects. Based on employee credentials, the devices join Azure AD and can automatically enroll in Intune or another mobile device management solution.
 
 You can’t use Windows Autopilot to perform advanced provisioning, but you can use mobile device management solutions such as Intune to do this. Windows Autopilot deployment is also the only way in which a user who goes through OOBE doesn’t become a local Administrator of the device. Note that you can manage Windows Autopilot in Microsoft Store for Business or in Intune.

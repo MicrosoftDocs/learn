@@ -7,8 +7,7 @@ metadata:
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Recover data by restoring an Azure SQL database
 durationInMinutes: 7
 azureSandbox: true

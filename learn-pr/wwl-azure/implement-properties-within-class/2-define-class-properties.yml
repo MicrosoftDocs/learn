@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-properties-within-class.define-class-properties
+title: Define class properties
+metadata:
+  title: Define class properties
+  description: "This unit gives a definition of a property, as well why and how they're used."
+  ms.date: 12/01/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-define-class-properties.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Why is it a best practice to access variables through a property instead of accessing them directly?"
+    choices:
+    - content: "Because accessing variables through properties isn't allowed."
+      isCorrect: false
+      explanation: "Incorrect. You can create public variables in your objects that can be accessed by other objects, but it isn't recommended."
+    - content: "Because it gives you more time to spend on other tasks."
+      isCorrect: false
+      explanation: "Incorrect. Creating properties doesn't save you time, it makes your code cleaner."
+    - content: "Because it allows you to hide the contents of your object that isn't intended to be accessed outside of your object, encapsulating private members."
+      isCorrect: true
+      explanation: "Correct! Encapsulation is a best practice because it makes your code cleaner by hiding the things in your classes that shouldn't be used externally."
+  - content: "What would be an example of a property for a House class?"
+    choices:
+    - content: "A property that allows you to send messages."
+      isCorrect: false
+      explanation: "Incorrect. This answer is too vague and doesn't provide any reasoning for the answer given."
+    - content: "A property that allows you to set and get the wallpaper in a room."
+      isCorrect: false
+      explanation: "Incorrect. A property that allows you to select a wallpaper for a room is more appropriate for a room, not a house."
+    - content: "A property that allows you to set and get the color of the house."
+      isCorrect: true
+      explanation: "Correct! Houses are painted a color and a property that allows you to set and get the color is appropriate for a house class."

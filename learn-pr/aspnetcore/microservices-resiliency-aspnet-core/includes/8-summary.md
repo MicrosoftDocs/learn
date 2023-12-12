@@ -1,11 +1,6 @@
-In this module, you:
+When designing a cloud-native application, you always need to consider **Resiliency** - The ability of an application or service to handle problems. Resiliency helps make your app fault-tolerant in a way that has the lowest possible impact on the user. 
 
-* Created an Azure Kubernetes Service (AKS) cluster with a sample e-commerce app.
-* Created an Azure Container Registry (ACR) instance to publish and deploy an updated microservice to AKS.
-* Reviewed some key resiliency concepts.
-* Implemented a resiliency feature in your app's code using Polly.
-* Implemented a resiliency system in your cluster using Linkerd.
+You explored the following resilience approaches in this module:
+  * Using a code-based approach
+  * Using an infrastructure-based approach
 
-[!INCLUDE[de-provision your Azure resources](../../includes/microservices/remove-az-resources.md)]
-
-[!INCLUDE[learn more with these resources](../../includes/microservices/learn-more.md)]

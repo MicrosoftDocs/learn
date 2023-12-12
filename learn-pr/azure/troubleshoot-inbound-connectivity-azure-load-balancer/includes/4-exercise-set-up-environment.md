@@ -81,7 +81,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
     | **retailapplb** | Load balancer | Load balancer for the app running on the VMs. The back-end pool in the load balancer references the *retailappvm1* and *retailappvm2* virtual machines. |
     | **nicvm1** and **nicvm2** | Network interface | Network interfaces for the two VMs. |
     | **retailappnicvm1nsg**, and **retailappnicvm2nsg** | Network security group (NSG) | NSGs that control the traffic entering each VM. |
-    | **retailappnsg** | Network security group | Acts as an initial filter for both virtual machines, but the NSG for each virtual machine provides the ability to filter traffic on a per-machine basis. |
+    | **retailappnsg** | Network security group | Acts as an initial filter for both virtual machines, but the NSG for each virtual machine allows filtering of traffic on a per-machine basis. |
     | **retailappip** | Public IP address | Public IP address that provides front-end access to the load balancer. |
     | **retailappvm1** and **retailappvm2** | Virtual machine | VMs running the retail application. |
     | **retailappvmjumpbox** | Virtual machine | VM that is also in the virtual network but has a public IP address. An administrator can sign in to this virtual machine to access the *retailappvm1* and *retailappvm2* VMs, which only have private IP addresses. |
@@ -111,7 +111,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
     bash findip.sh
     ```
 
-1. Open a browser window, and go to this IP address. The result should be a page with the message **retailappvm1** or **retailappvm2**, depending on how Load Balancer has routed the request.
+1. Open a browser window, and go to this IP address. The result should be a page with the message **retailappvm1** or **retailappvm2**, depending on how the load balancer routed the request.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the browser showing the response from the sample app running in Load Balancer.](../media/4-browser-response.png)

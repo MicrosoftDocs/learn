@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/06/2023
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-devops
 title: Software Composition Analysis
 summary: This module explains Composition Analysis, how to inspect and validate code bases for compliance, integration with security tools, and integration with Azure Pipelines.

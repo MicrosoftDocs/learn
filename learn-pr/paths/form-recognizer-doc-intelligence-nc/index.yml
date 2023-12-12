@@ -7,9 +7,7 @@ metadata:
   ms.date: 07/18/2023
   author: ivorb
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.service: azure
-  ms.subservice: cognitive-services
+  ms.topic: learning-path
 title: Create Document Intelligence Solutions with Azure AI Document Intelligence
 prerequisites: |
   Before starting this learning path, you should already have:

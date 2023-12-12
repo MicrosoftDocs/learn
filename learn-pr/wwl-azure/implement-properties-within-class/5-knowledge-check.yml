@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-properties-within-class.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/01/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a property?"
+    choices:
+    - content: "A property refers to the connectivity between two objects."
+      isCorrect: false
+      explanation: "Incorrect. A property does not refer to the connectivity between two objects."
+    - content: "It's a piece of land or real estate."
+      isCorrect: false
+      explanation: "Incorrect. While the noun property can be defined this way, it is not how the term is used in computer programming."
+    - content: "A property is a class member that provides a mechanism to read, write, or compute the values of a field."
+      isCorrect: true
+      explanation: "Correct! A property allows for the getting, setting, and computing the values of a field."
+  - content: "What are the three property accessor types?"
+    choices:
+    - content: "Read-write, Write-write, Read-only."
+      isCorrect: false
+      explanation: "Incorrect. There is no such thing as a Write-write accessor."
+    - content: "Read-only, Write-only, Read-write-only."
+      isCorrect: false
+      explanation: "Incorrect. There is no such thing as a Read-write-only accessor."
+    - content: "Read-write, Read-only, Write-only."
+      isCorrect: true
+      explanation: "Correct! Read-write, Read-only, Write-only are the three accessor types."
+  - content: "What is a reference type?"
+    choices:
+    - content: "A 64-bit native variable."
+      isCorrect: false
+      explanation: "Incorrect. A reference type can be a 64-bit variable, but it can be a 32-bit variable also and does not have to be a native type."
+    - content: "It's a way to create related objects."
+      isCorrect: false
+      explanation: "Incorrect. A reference type has nothing to do with creating related objects."
+    - content: "A reference is the \"bucket\" holding a variable that the programmer can modify."
+      isCorrect: true
+      explanation: "Correct! A variable that is a reference type can be modified."

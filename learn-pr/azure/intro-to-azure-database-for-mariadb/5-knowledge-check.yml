@@ -9,8 +9,7 @@ metadata:
   author: markingmyname
   ms.author: maghan 
   manager: jroth 
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/5-knowledge-check.md)]

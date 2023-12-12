@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-properties-within-class.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 12/01/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

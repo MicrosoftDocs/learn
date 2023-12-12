@@ -99,7 +99,7 @@ Here are some popular hosting services for the package types we just described:
 
     An NPM package is used for JavaScript. An NPM package is a file or folder that contains JavaScript files and a package.json file that describes the metadata of the package. For node.js, the package usually contains one or more modules that can be loaded after the package is consumed.
 
-* [Maven Central Repository](https://mvnrepository.com/repos/central/?azure-portal=true)
+* [Maven Central Repository](https://mvnrepository.com/)
 
     Maven is used for Java-based projects. Each package has a Project Object Model file that describes the metadata of the project, and is the basic unit for defining a package and working with it.
 

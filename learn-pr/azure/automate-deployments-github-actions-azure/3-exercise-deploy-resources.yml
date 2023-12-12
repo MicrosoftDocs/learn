@@ -14,8 +14,7 @@ metadata:
     - devx-track-arm-template
     - devx-track-azurepowershell
     - devx-track-python
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure  
+  ms.topic: unit
   zone_pivot_groups: dev-lang-csharp-node-python
 durationInMinutes: 15
 interactive: powershell

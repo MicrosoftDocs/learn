@@ -14,8 +14,7 @@ metadata:
   author: seesharprun
   ms.author: sidandrews
   ms.reviewer: jonels
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 prerequisites: |
   - Basic familiarity with relational databases
 iconUrl: /learn/achievements/generic-trophy.svg

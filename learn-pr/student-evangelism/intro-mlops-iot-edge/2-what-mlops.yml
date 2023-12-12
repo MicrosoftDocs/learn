@@ -5,9 +5,9 @@ metadata:
   title: What is MLOps for IoT Edge?
   description: In this section, we provide a definition of the product and discuss the value proposition of the product.
   ms.date: 03/17/2023
-  author: leestott
+  author: PatAltimore
   ms.author: leestott
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom: team=nextgen
   ms.service: iot-hub
 durationInMinutes: 7 # dummy number at present

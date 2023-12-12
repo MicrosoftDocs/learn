@@ -10,8 +10,7 @@ metadata:
   ms.date: 08/10/2022
   author: steved0x
   ms.author: sdanie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 13
 content: |
   [!include[](includes/6-perform-code-coverage.md)]

@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/27/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: cognitive-search
 title: Create a knowledge store with Azure Cognitive Search
 summary: Persist the output from an Azure Cognitive Search enrichment pipeline for independent analysis or downstream processing.

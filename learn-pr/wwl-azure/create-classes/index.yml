@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.create-classes
+metadata:
+  title: Create classes and objects in C#
+  description: "This module describes creating and working with classes."
+  ms.date: 12/01/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: module
+  ms.prod: azure
+title: Create classes and objects in C#
+summary: The purpose of this module is to learn about classes and objects and to understand the differences between the two.
+abstract: |
+  * Describe a class
+  *   Differentiate between a class and an object
+  *   Describe the life cycle of a class
+  *   Organize classes into groups using namespaces
+prerequisites: |
+  *   An installation of Visual Studio Community
+  *   Ability to develop C# console applications that implement business logic using iteration statements, selection statements, and custom methods
+  *   A basic understanding of code debuggers and the debug process
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- vs
+subjects:
+- development-tools
+units:
+- learn.wwl.create-classes.introduction
+- learn.wwl.create-classes.discover-classes
+- learn.wwl.create-classes.exercise-examine-classes-objects
+- learn.wwl.create-classes.learn-encapsulation
+- learn.wwl.create-classes.examine-class-lifecycle
+- learn.wwl.create-classes.learn-class-constructors
+- learn.wwl.create-classes.understand-namespaces
+- learn.wwl.create-classes.knowledge-check
+- learn.wwl.create-classes.summary
+badge:
+  uid: learn.wwl.create-classes.badge

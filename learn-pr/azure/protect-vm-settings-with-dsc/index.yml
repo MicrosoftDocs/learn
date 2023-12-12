@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/22/2023
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: automation
 title: Protect your virtual machine settings with Azure Automation State Configuration
 summary: Create a desired state configuration script that checks that IIS is installed. Onboard virtual machines (VMs) for management by Azure Automation. Automatically install IIS on the VMs where that feature is missing.

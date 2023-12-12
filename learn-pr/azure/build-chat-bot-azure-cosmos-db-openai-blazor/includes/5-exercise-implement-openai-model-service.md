@@ -25,12 +25,13 @@ First, implement a question-answer conversation by sending a system prompt, a qu
     ChatMessage userMessage = new(ChatRole.User, userPrompt);
     ```
 
-1. Create a new variable named `options` of type `ChatCompletionsOptions`. Add the message variable to the `Messages` list, set the value of `User` to the `sessionId` constructor parameter, set `MaxTokens` to `4000`, and set the remaining properties to the recommended values here.
+1. Create a new variable named `options` of type `ChatCompletionsOptions`. Add the two message variables to the `Messages` list, set the value of `User` to the `sessionId` constructor parameter, set `MaxTokens` to `4000`, and set the remaining properties to the recommended values here.
 
     ```csharp
     ChatCompletionsOptions options = new()
     {
         Messages = {
+            systemMessage,
             userMessage
         },
         User = sessionId,
@@ -159,6 +160,7 @@ At this point, your application should have a thorough enough implementation of 
         {
             Messages =
             {
+                systemMessage,
                 userMessage
             },
             User = sessionId,

@@ -3,10 +3,10 @@ Now that you have a basic understanding of how Advisor Score can help you optimi
 If you've still got your Advisor dashboard open, you can skip ahead to step 3.
 
 1. First, sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
-1. Go to your Advisor dashboard by typing "advisor" in the search bar and then selecting **Advisor** from the list of services.
-1. The **Advisor Score** page opens showing your overall Advisor Score and the individual category scores. Remember, your dashboard looks different from the screenshots in this exercise because Advisor is personalized for you.
+1. Go to your Advisor dashboard by typing *Advisor* in the search bar and then selecting **Advisor** from the list of services.
+1. The **Advisor Score** page opens, showing your overall Advisor Score and the individual category scores. Remember, your dashboard looks different from the screenshots in this exercise because Advisor is personalized for you.
 
-   :::image type="content" source="../media/azure-select-advisor-score.png" alt-text="Screenshot showing how to open the Advisor Score page." lightbox="../media/azure-select-advisor-score.png":::
+   :::image type="content" source="../media/azure-select-advisor-score.png" alt-text="Screenshot showing the Advisor Score page." lightbox="../media/azure-select-advisor-score.png":::
 
 1. Notice your overall **Advisor Score**.
 
@@ -25,7 +25,7 @@ If you've still got your Advisor dashboard open, you can skip ahead to step 3.
 
    Right away, you can see that although the overall **Advisor Score** in this example might be considered good, two of the category scores are below 50% and really could use some attention.
 
-1. Go ahead and select the category with the lowest score. For our example, we're going to look at **Cost** since it's showing a score of 45%. But you might see in your environment that you have a different category you want to address.
+1. Select the category with the lowest score. For our example, we're going to look at **Cost** because it's showing a score of 45%, but you have a different category in your environment that you want to address.
 
    The area at the bottom of the **Advisor Score** page shows recommendations for the category you chose.
 
@@ -33,12 +33,12 @@ If you've still got your Advisor dashboard open, you can skip ahead to step 3.
 
    Some of the fields shown in the table are familiar, such as **Potential yearly savings** and **Impacted resources**. But you'll also notice a new field called **Cost score impact**, which is the **Category score impact** for the **Cost** category. It shows you at a quick glance how much the corresponding recommendation impacts the category score when you address it. The higher the percentage, the greater benefit it has. That way, you can focus on the recommendations that improve your Advisor Score the most.
 
-1. Select a recommendation from the **Description** list to review it in more detail and to see ways in which you can remediate the surfaced issue. For this exercise, we're looking at the recommendation for **Right-size or shutdown underutilized virtual machines** because its **Cost score impact** is greatest. But feel free to select any active recommendation you see.
+1. Select a recommendation from the **Description** list to review it in more detail and to see ways in which you can remediate the surfaced issue. For this exercise, we're looking at the recommendation for **Right-size or shutdown underutilized virtual machines** because its **Cost score impact** is greatest, but feel free to select any active recommendation you see.
 
    When you make your selection, a more detailed page opens, showing the impacted resources and recommended actions you can take to resolve the issues.
 
 > [!NOTE]
-> If you're not ready to take action during this exercise, simply close the Azure portal and no changes will be made to your subscriptions or resources. The only way to undo a recommendation is to take the opposite action.
+> If you're not ready to take action during this exercise, simply close the Azure portal, and no changes will be made to your subscriptions or resources. The only way to undo a recommendation is to take the opposite action.
 
 When you do apply any of the recommendations, your Advisor Score improves! It can take up to 24 hours for the score to change, so check back in a day or so to see how much higher it is.
 

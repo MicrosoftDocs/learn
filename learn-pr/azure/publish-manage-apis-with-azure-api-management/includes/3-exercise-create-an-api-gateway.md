@@ -1,4 +1,4 @@
-In this exercise, you deploy a sample web API, and you configure an API gateway. You'll publish the web API to your gateway in a later unit.
+In this exercise, you deploy a sample web API, and you configure an API gateway. In a later unit, you publish the web API to your gateway.
 
 In the shoe company example, NorthWind Shoes has decided to share an inventory API with partners. This API enables partners to access inventory and product information.
 
@@ -10,11 +10,11 @@ You've developed a .NET Core app that generates inventory and product informatio
 
 To save time, let's start by running a script to host our RESTful API in Azure. The script performs the following steps:
 
-- Create an Azure App Service plan in the free tier
-- Create a web API within an Azure App Service, configured for Git deployment from a local repo
-- Set account-level deployment credentials for our app
-- Configure Git locally
-- Deploy our web API to our App Service instance
+- Creates an Azure App Service plan in the free tier.
+- Creates a web API within an Azure App Service, configured for Git deployment from a local repo.
+- Sets account-level deployment credentials for our app.
+- Configures Git locally.
+- Deploys our web API to our App Service instance.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 
@@ -35,32 +35,32 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
     ls -l
     ```
 
-   One of the files is setup.sh. As its name suggests, it's the script we'll run to set up our test API. 
+   One of the files is setup.sh. As its name suggests, it's the script we run to set up our test API.
 
-1. Enter the following command to run this script. It will generate a public web app that exposes an OpenAPI interface.
+1. Enter the following command to run this script. It generates a public web app that exposes an OpenAPI interface.
 
     ```bash
     bash setup.sh
     ```
 
-    The script takes about a minute to run. During deployment, all dependencies needed for our app to run are automatically installed on the remote App Service. The output lists all the operations. When the script finishes, the last two lines are URLs that you'll use to test the app deployment.
+    The script takes about a minute to run. During deployment, all of the dependencies needed for our app to run are automatically installed on the remote App Service. The output lists all the operations. When the script finishes, the last two lines are the URLs that you use to test the app deployment.
 
 1. To test that our app deployed correctly, copy the first URL (Swagger URL) from Cloud Shell and paste it into a new tab of your browser.
 
    The browser should display the swagger UI for our app and declare the following RESTful endpoints:
 
-    - **api/inventory** generates a list of products and the number in stock
-    - **api/inventory/{productid}** returns the number in stock for the specified product ID (an integer)
-    - **api/Products** generates a list of products
-    - **api/Products/{productid}** returns the details for the specified product ID
+    - **api/inventory** generates a list of products and the number in stock.
+    - **api/inventory/{productid}** returns the number in stock for the specified product ID (an integer).
+    - **api/Products** generates a list of products.
+    - **api/Products/{productid}** returns the details for the specified product ID.
 
     :::image type="content" source="../media/3-swagger.png" alt-text="Overview of API management." loc-scope="third-party"::: <!-- no-loc -->
 
-1. Finally, copy the second URL (Swagger JSON URL) from the Cloud Shell output, and save it somewhere such as Notepad. You'll need this URL in the next exercise.
+1. Finally, copy the second URL (Swagger JSON URL) from the Cloud Shell output, and save it somewhere such as Notepad. You need this URL in the next exercise.
 
 ## Deploy an API gateway
 
-The final task in this exercise is to create an API gateway in the Azure portal. In the next exercise, you'll use this gateway to publish your API.
+The final task in this exercise is to create an API gateway in the Azure portal. In the next exercise, you use this gateway to publish your API.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 
@@ -87,6 +87,6 @@ The final task in this exercise is to create an API gateway in the Azure portal.
 
 1. Select **Review + create** to validate your settings.
 
-1. When validation has passed, select **Create**. Deployment may take several minutes to complete.
+1. When validation has passed, select **Create**. Deployment can take several minutes to complete.
 
-1. When deployment has completed, you'll see the API Management instance listed in the Azure resources. Select **Go to resource** to view the pane for your API Management service.
+1. When deployment has completed, your API Management instance is listed in the Azure resources. Select **Go to resource** to view the pane for your API Management service.

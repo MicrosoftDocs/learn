@@ -1,4 +1,3 @@
-
 Blob containers support system properties and user-defined metadata, in addition to the data they contain.
 
 *  **System properties**: System properties exist on each Blob storage resource. Some of them can be read or set, while others are read-only. Under the covers, some system properties correspond to certain standard HTTP headers. The Azure Storage client library for .NET maintains these properties for you.
@@ -98,3 +97,4 @@ public static async Task ReadContainerMetadataAsync(BlobContainerClient containe
     }
 }
 ```
+

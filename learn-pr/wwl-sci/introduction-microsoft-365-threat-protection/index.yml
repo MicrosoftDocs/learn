@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/10/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: microsoft-365
 title: Introduction to Microsoft 365 threat protection
 summary: In this module, you'll learn how to use the Microsoft 365 Defender integrated threat protection suite.
@@ -26,7 +26,7 @@ products:
 - defender-for-cloud-apps
 - defender-identity
 - m365
-- m365-defender
+- defender-xdr
 subjects:
 - cloud-security
 - security

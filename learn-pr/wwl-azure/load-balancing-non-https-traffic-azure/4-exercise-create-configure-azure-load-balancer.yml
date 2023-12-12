@@ -7,8 +7,7 @@ metadata:
   ms.date: 08/21/2023
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.service: load-balancer
+  ms.topic: unit
   ms.custom:
   - references_regions
 durationInMinutes: 15
