@@ -1,8 +1,6 @@
 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dSQt]
-
-> [!VIDEO https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn-video.azurefd.net%2Fvod%2Fplayer%3Fid%3Dc550fd6a-34c4-4d8a-921e-25a3c6ab301b&data=05%7C01%7Csimranjits%40skillup.tech%7C973bcbf76864416c130b08dbf7d15356%7C0037007b3e0347d99d6ef8363c420817%7C0%7C0%7C638376250683176649%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=jmveWXY95eHQ9tziQ%2BSJ82zxvcgb9g50XfGq0K7pfpc%3D&reserved=0]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c550fd6a-34c4-4d8a-921e-25a3c6ab301b]
 
 All topics covered in the DP-900: Microsoft Azure Data Fundamentals course are related to foundational knowledge of cloud services and how those services are provided with Microsoft Azure and map directly to [Exam DP-900: Microsoft Azure Data Fundamentals.](https://aka.ms/dp900exam) Percentages indicate the relative weight of each area on the exam. The higher the percentage, the more questions you're likely to see in that area. For the most up-to-date breakdown, access the [DP-900 study guide](https://aka.ms/DP900StudyGuide) from the [Exam DP-900: Microsoft Azure Data Fundamentals](https://aka.ms/dp900exam) page.
 

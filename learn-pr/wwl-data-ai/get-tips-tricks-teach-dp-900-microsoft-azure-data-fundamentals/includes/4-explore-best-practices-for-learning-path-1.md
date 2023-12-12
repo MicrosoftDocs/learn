@@ -11,7 +11,7 @@ This learning path consists of two lessons:
 - Lesson 1 – Explore core data concepts
 - Lesson 2 – Explore data roles and services
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dXUz]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=74113b2e-71fd-49d1-adaa-2d0a2827fb50]  
 
 This learning path consists of five focus areas: 
 

@@ -10,7 +10,7 @@ This learning path consists of three lessons:
 - Lesson 2 – Explore fundamentals of real-time analytics 
 - Lesson 3 – Explore fundamentals of data visualization 
  
-> [!VIDEO https://www.microsoft.com/videoplayer/RE5dXUy]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2dc0480f-3b76-4d03-b788-3089a8f67694]  
 
 This learning path consists of four focus areas: 
 

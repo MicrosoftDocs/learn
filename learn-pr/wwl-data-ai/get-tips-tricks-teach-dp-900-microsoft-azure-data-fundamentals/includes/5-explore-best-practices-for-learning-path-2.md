@@ -8,7 +8,7 @@ This learning path consists of two lessons:
 - Lesson 1 – Lesson 1 – Explore fundamental relational data concepts
 - Lesson 2 – Explore relational database services in Azure
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dXUA]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=948895af-31db-4381-aabb-a2d7312348f2]
 
 This learning path consists of five focus areas: 
 
