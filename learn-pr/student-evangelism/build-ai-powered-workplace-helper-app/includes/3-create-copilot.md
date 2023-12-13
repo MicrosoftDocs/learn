@@ -1,8 +1,8 @@
-In this activity you'll create a Copilot with generative answers. You'll provide the AI knowledge in the form of PDF documents and/or website addresses.
+In this activity, you'll create a Copilot with generative answers. You'll provide the AI knowledge in the form of PDF documents and/or website addresses.
 
 You can complete this exercise either for our fictitious Contoso company or for an organization you're a part of and can access information and documents for. If you choose your organization, include an emergency evacuation document to complete the module as it is written.
 
-## Specification
+## Specifications
 
 Create a new Copilot in [Copilot Studio](https://web.powerva.microsoft.com/) within an environment hosted in the United States.
 
@@ -10,7 +10,7 @@ Configure your Copilot as follows:
 
 - Enable generative answers in the **Settings** > **AI Capabilities** menu.
 - Train the Generative AI model by providing company information in the form of PDFs or other text-based files.
-- If you are completing this exercise for your own organization, you can dd further training data by providing web addresses.
+- If you're completing this exercise for your own organization, you can add further training data by providing web addresses.
 
 > [!NOTE]
 > To create the chatbot for the Contoso example, you can download the PDFs at [TODO URL] to use as your organizational knowledge resources.
