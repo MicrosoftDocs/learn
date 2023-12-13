@@ -83,7 +83,7 @@ The Application Map provides one way of exploring captured telemetry. You can al
 
     A variation of the following page appears:
 
-    :::image type="content" source="../media/5-monitor-app-insights/givemefreestuff-search-results.png" alt-text="Screenshot of the event search results matching the term 'GIVEMEFREESTUFF'" border="true" lightbox="../media/5-monitor-app-insights/givemefreestuff-search-results.png":::
+    :::image type="content" source="../media/5-monitor-app-insights/givemefreestuff-search-results.png" alt-text="Screenshot of the event search results matching the term 'GIVEMEFREESTUFF'." border="true" lightbox="../media/5-monitor-app-insights/givemefreestuff-search-results.png":::
 
 1. Select the **Event types** button. Unselect all options except for *Trace*.
 
@@ -91,7 +91,7 @@ The Application Map provides one way of exploring captured telemetry. You can al
 
     The *:::no-loc text="webshoppingagg":::* search results page refreshes to only show *TRACE* events:
 
-    :::image type="content" source="../media/5-monitor-app-insights/givemefreestuff-trace-search-results.png" alt-text="Screenshot of the TRACE event search results matching the term 'GIVEMEFREESTUFF'" border="true" lightbox="../media/5-monitor-app-insights/givemefreestuff-trace-search-results.png":::
+    :::image type="content" source="../media/5-monitor-app-insights/givemefreestuff-trace-search-results.png" alt-text="Screenshot of the TRACE event search results matching the term 'GIVEMEFREESTUFF'." border="true" lightbox="../media/5-monitor-app-insights/givemefreestuff-trace-search-results.png":::
 
 1. In the result set, select a **TRACE** item with the description `----- Coupon not found: 404 - Content: "ERROR: The coupon doesn't exist"`. An end-to-end transaction trace appears.
 

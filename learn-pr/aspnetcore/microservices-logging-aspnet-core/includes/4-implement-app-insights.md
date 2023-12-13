@@ -227,7 +227,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
 1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the terminal to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
-    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="Screenshort of the eShop single-page app." border="true" lightbox="../../media/microservices/eshop-spa.png":::
+    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="Screenshot of the eShop single-page app." border="true" lightbox="../../media/microservices/eshop-spa.png":::
 
 You've successfully verified that the app was deployed to AKS and is working properly.
 
