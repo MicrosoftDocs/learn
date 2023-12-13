@@ -1,52 +1,66 @@
 
-To start exploring the Copilot in Azure Quantum, you can copy and paste a simple Q# program into the code window.
+To start exploring the Copilot and coding in Azure Quantum, use one of the samples from the **Quantum Samples** dropdown.
 
 ## Run a quantum program
 
-1. Navigate to the [Copilot in Azure Quantum](https://quantum.microsoft.com/en-us/experience/quantum-coding).
-1. Copy and paste the following code into the code window. This program generates a random integer between 0 and 50.
+1. Navigate to the [Code in Azure Quantum](https://quantum.microsoft.com/en-us/experience/quantum-coding).
+1. Select **Quantum Samples** and then select **Random Number Generator**. The following code is copied to the code window.
 
     ```qsharp
-    namespace Qrng {
-        open Microsoft.Quantum.Canon;
-        open Microsoft.Quantum.Intrinsic;
+    /// # Sample
+    /// Quantum Random Number Generator
+    ///
+    /// # Description
+    /// This program implements a quantum ranndom number generator by setting qubits
+    /// in superposition and then using the measurement results as random bits.
+    namespace Sample {
         open Microsoft.Quantum.Measurement;
-        open Microsoft.Quantum.Math;
-        open Microsoft.Quantum.Convert;
+        open Microsoft.Quantum.Intrinsic;
     
-        operation SampleQuantumRandomNumberGenerator() : Result {
-            // Allocate a qubit.
-            use q = Qubit();
-            // Put the qubit to superposition.
-            H(q);
-            // It now has a 50% chance of being measured 0 or 1.
-            // Measure the qubit value.
-            return MResetZ(q);
-        }
-        operation SampleRandomNumberInRange(max : Int) : Int {
-            mutable output = 0; 
-            repeat {
-                mutable bits = []; 
-                for idxBit in 1..BitSizeI(max) {
-                    set bits += [SampleQuantumRandomNumberGenerator()]; 
-                }
-                set output = ResultArrayAsInt(bits);
-            } until (output <= max);
-            return output;
-        }
         @EntryPoint()
-        operation SampleRandomNumber() : Int {
-            let max = 50;
-            Message($"Sampling a random number between 0 and {max}: ");
-            return SampleRandomNumberInRange(max);
+        operation Main() : Result[] {
+            // Generate 5-bit random number.
+            let nBits = 5;
+            return GenerateNRandomBits(nBits);
+        }
+    
+        /// # Summary
+        /// Generates N random bits.
+        operation GenerateNRandomBits(nBits : Int) : Result[] {
+            // Allocate N qubits.
+            use register = Qubit[nBits];
+    
+            // Set the qubits into superposition of 0 and 1 using the Hadamard
+            // operation `H`.
+            for qubit in register {
+                H(qubit);
+            }
+    
+            // At this point each has 50% chance of being measured in the |0〉 state
+            // and 50% chance of being measured in the |1〉 state.
+            // Measure each qubit and reset them all so they can be safely
+            // deallocated.
+            let results = MeasureEachZ(register);
+            ResetAll(register);
+            return results;
         }
     }
     ```
 
-1. Click **Run**. The results are displayed in the **Results** field, and a histogram of the results is displayed below the code window. 
-1. You can move the slider for **Select number of shots** to specify how many times the program is run.
-1. The **Shots** field displays the result for each shot.
-1. Click **Explain code** to prompt the Copilot in Azure Quantum to generate an analysis of the code sample.
+1. Select **In-Memory Simulator**.
+1. Select **Run**.
+
+- The results are displayed in the **Results** field, and a histogram of the results is displayed below the code window. 
+- You can move the slider for **Select number of shots** to specify how many times the program is run.
+- The **Shots** field displays the result for each shot. 
+
+To run your program again using a different simulator:
+
+1. Select the **In-Memory Simulator** dropdown and select **Quantinuum H-Series Emulator**.
+1. Select the number of shots (currently limited to 20) and select **Run**.
+
+- The job status is displayed at the top of the code window.
+- A histogram of the results is displayed below the code window. Results for each shot is not currently available with the Quantinuum H-Series Emulator.
 
 ## Ask the Copilot
 
@@ -56,3 +70,13 @@ You can prompt the Copilot in Azure Quantum for almost anything quantum related.
 - "Write Q# code that entangles two qubits"
 - "Explain quantum interference"
 - "What is the difference between a qubit and a classical bit?"
+
+## Open your code sample on VS Code for the Web
+
+To explore the sample code further, you can open the code in [VS Code for the Web](https://vscode.dev) and take advantage of features such as improved error messaging, Q# syntax highlighting, and integrated debugging. If you already have an Azure account set up, you can connect directly to your Azure Quantum workspaces from VS Code.
+
+To open your code in VS Code for the Web:
+
+1. Select the VS Code icon on the bottom of the code window.
+  
+    :::image type="content" source="../media/launch-vs-code.png" alt-text="Screenshot of the icon to launch VS Code.":::

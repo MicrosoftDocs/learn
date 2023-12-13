@@ -1,4 +1,4 @@
-The Azure Quantum portal includes a notebook gallery with sample notebooks You can use these notebooks to learn about quantum computing, and to run your own quantum programs.
+The Azure Quantum portal includes a notebook gallery with sample notebooks You can use these notebooks to run your own quantum programs.
 
 ## Prerequisites
 

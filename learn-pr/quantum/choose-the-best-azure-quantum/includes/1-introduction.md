@@ -1,6 +1,6 @@
-Azure Quantum offers a variety of tools and services to help you learn about quantum computing and quantum programming, and to help you develop quantum solutions. 
+Azure Quantum offers a variety of tools to help you learn about quantum computing and quantum programming, and to help you develop your quantum solutions. 
 
-Choosing the one or another will depend on your programming skills, your quantum computing background and your goals. In this module, you'll review the different options available to develop quantum computing with Azure Quantum, and the advantages of each option.
+Choosing the one or another tool will depend on your programming skills, your quantum computing background and your goals. In this module, you'll review the different options available to develop quantum computing with Azure Quantum, and the features of each option.
 
 ## Learning objectives
 

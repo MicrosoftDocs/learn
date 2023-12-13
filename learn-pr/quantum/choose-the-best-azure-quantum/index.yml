@@ -3,7 +3,7 @@ uid: learn.quantum.choose-the-best-azure-quantum
 metadata:
   title: Choose the best Azure Quantum option for your needs
   description: Learn how to get started with Azure Quantum and choose the best service for your needs.
-  ms.date: 10/23/2023
+  ms.date: 12/13/2023
   author: SoniaLopezBravo
   ms.author: sonialopez
   ms.topic: interactive-tutorial
@@ -40,8 +40,8 @@ units:
 - learn.quantum.choose-the-best-azure-quantum.introduction
 - learn.quantum.choose-the-best-azure-quantum.explore-azure-quantum-options
 - learn.quantum.choose-the-best-azure-quantum.use-qcom
-- learn.quantum.choose-the-best-azure-quantum.use-azure-portal
 - learn.quantum.choose-the-best-azure-quantum.use-qdk
+- learn.quantum.choose-the-best-azure-quantum.use-azure-portal
 - learn.quantum.choose-the-best-azure-quantum.knowledge-check
 - learn.quantum.choose-the-best-azure-quantum.summary
 badge:

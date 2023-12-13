@@ -6,7 +6,7 @@ metadata:
   description: Check your understanding so far.
   author: SoniaLopezBravo
   ms.author: sonialopez
-  ms.date: 10/19/2023
+  ms.date: 12/13/2023
   ms.topic: interactive-tutorial
   ms.prod: learning-quantum
   show_latex: true
@@ -19,15 +19,15 @@ quiz:
 
   - content: "If you want to start using Azure Quantum, but you don't have an Azure account, what should you do?"
     choices:
-    - content: "You can navigate to the Copilot in Azure Quantum and run code without an Azure subscription. You can also create an Azure account and benefit from the free Azure Quantum Credits."
+    - content: "You can use the Azure Quantum website or install the QDK extension for Visual Studio Code without an Azure account. You can also create an Azure account and benefit from the free Azure Quantum Credits."
       isCorrect: true
       explanation: "An Azure account is not required to start using Azure Quantum, but it's recommended if you want have access to all the features."
     - content: "You need to create an Azure account and have a valid subscription in order to start using Azure Quantum."
       isCorrect: false
-      explanation: "Without an Azure account you can go to the Azure Quantum website and run your programs in the Copilot. An Azure account is not required to start using Azure Quantum, but it's recommended if you want have access to all the features."
+      explanation: "Without an Azure account you can go to the Azure Quantum website and run your programs in the Copilot, or install the QDK extension for Visual Studio Code. An Azure account is not required to start using Azure Quantum, but it's recommended if you want have access to all the features."
     - content: "If you don't have an account, you can still use the notebooks in Azure portal to run your programs."
       isCorrect: false
-      explanation: "To access the Azure portal and the notebooks, you need to have an Azure account. An Azure account is not required to start using Azure Quantum, but it's recommended if you want have access to all the features."
+      explanation: "To access the Azure portal and the notebooks, you need to have an Azure account."
 
   - content: 'Although anyone can install it, select which of these users would be best suited to install the QDK extension.'
     choices:
