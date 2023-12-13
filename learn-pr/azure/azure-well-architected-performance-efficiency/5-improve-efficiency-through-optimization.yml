@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-(pillar-principle)
-title: Principle-name
+uid: learn.azure-well-architected-performance-efficiency-5-improve-efficiency-through-optimization
+title: Improve efficiency through optimization
 metadata:
-  title: Principle-name
-  description: 
-  ms.date:
-  author:
-  ms.author:
+  title: Improve efficiency through optimization
+  description: Learn how to continuously improve your workload's efficiency through optimization.
+  ms.date: 12/13/2023
+  author: claytonsiemens77
+  ms.author: csiemens
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/md-name)]
+  [!include[](includes/5-improve-efficiency-through-optimization.md)]
 quiz:
   title: Check your knowledge
   questions:

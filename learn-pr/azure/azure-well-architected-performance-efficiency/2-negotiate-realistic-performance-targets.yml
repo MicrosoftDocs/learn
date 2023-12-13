@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-(pillar-principle)
-title: Principle-name
+uid: learn.azure-well-architected-performance-efficiency-2-negotiate-realistic-performance-targets
+title: Negotiate realistic performance targets
 metadata:
-  title: Principle-name
-  description: 
-  ms.date:
-  author:
-  ms.author:
+  title: Negotiate realistic performance targets
+  description: Learn how to define realistic performance targets for your workload.
+  ms.date: 12/13/2023
+  author: claytonsiemens77
+  ms.author: csiemens
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/md-name)]
+  [!include[](includes/2-negotiate-realistic-performance-targets.md)]
 quiz:
   title: Check your knowledge
   questions:

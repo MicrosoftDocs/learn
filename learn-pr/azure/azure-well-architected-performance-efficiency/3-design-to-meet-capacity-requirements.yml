@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-(pillar-principle)
-title: Principle-name
+uid: learn.azure-well-architected-performance-efficiency-3-design-to-meet-capacity-requirements
+title: Design to meet capacity requirements
 metadata:
-  title: Principle-name
-  description: 
-  ms.date:
-  author:
-  ms.author:
+  title: Design to meet capacity requirements
+  description: Learn how to design your workload to meet capacity requirements.
+  ms.date: 12/13/2023
+  author: claytonsiemens77
+  ms.author: csiemens
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/md-name)]
+  [!include[](includes/3-design-to-meet-capacity-requirements.md)]
 quiz:
   title: Check your knowledge
   questions:

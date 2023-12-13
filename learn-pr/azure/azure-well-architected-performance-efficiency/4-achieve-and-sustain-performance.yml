@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-(pillar-principle)
-title: Principle-name
+uid: learn.azure-well-architected-performance-efficiency-4-achieve-and-sustain-performance
+title: Achieve and sustain performance
 metadata:
-  title: Principle-name
-  description: 
-  ms.date:
-  author:
-  ms.author:
+  title: Achieve and sustain performance
+  description: Learn how to operate your workload to achieve and sustain performance.
+  ms.date: 12/13/2023
+  author: claytonsiemens77
+  ms.author: csiemens
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/md-name)]
+  [!include[](includes/4-achieve-and-sustain-performance.md)]
 quiz:
   title: Check your knowledge
   questions:
