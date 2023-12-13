@@ -39,21 +39,38 @@ The SDK contains useful methods that creates a new resource if it doesn't alread
 
 Here, you create a container with a specific "slice" of the shared throughput from the database.
 
-1. Return to the *Program.cs* file again.
-
-1. Create, or get, a new container by calling <xref:Microsoft.Azure.Cosmos.Database.CreateContainerIfNotExistsAsync(System.String,System.String,System.Nullable{System.Int32},Microsoft.Azure.Cosmos.RequestOptions,System.Threading.CancellationToken)>. Store the result in a variable named `container`. Be sure to set these parameters:
+1. Create a properties object for a new container using the <xref:Microsoft.Azure.Cosmos.ContainerProperties> type. Store the result in a variable named `properties`. Be sure to set these parameters:
 
     | Parameter | Value |
     | --- | --- |
     | **id** | `products` |
     | **partitionKeyPath** | `/categoryId` |
-    | **throughput** | `400` |
+
+    ```csharp
+    ContainerProperties properties = new(
+        id: "products",
+        partitionKeyPath: "/categoryId"
+    );
+    ```
+
+1. Create an **autoscale** throughput object using the <xref:Microsoft.Azure.Cosmos.ThroughputProperties.CreateAutoscaleThroughput(System.Int32)> static method. Store the result in a variable named `throughput`. Be sure to set these parameters:
+
+    | Parameter | Value |
+    | --- | --- |
+    | **autoscaleMaxThroughput** | `1000` |
+
+    ```csharp
+    var throughput = ThroughputProperties.CreateAutoscaleThroughput(
+        autoscaleMaxThroughput: 1000
+    );
+    ```
+
+1. Create, or get, a new container by calling <xref:Microsoft.Azure.Cosmos.Database.CreateContainerIfNotExistsAsync(System.String,System.String,System.Nullable{System.Int32},Microsoft.Azure.Cosmos.RequestOptions,System.Threading.CancellationToken)>. Store the result in a variable named `container`. Be sure to set these parameters:
 
     ```csharp
     Container container = await database.CreateContainerIfNotExistsAsync(
-        id: "products",
-        partitionKeyPath: "/categoryId",
-        throughput: 400
+        containerProperties: properties,
+        throughputProperties: throughput
     );
     ```
 
@@ -202,10 +219,18 @@ Your app now creates a database and container. The methods you used to create th
     
     Console.WriteLine($"[Database created]:\t{database.Id}");
     
-    Container container = await database.CreateContainerIfNotExistsAsync(
+    ContainerProperties properties = new(
         id: "products",
-        partitionKeyPath: "/categoryId",
-        throughput: 400
+        partitionKeyPath: "/categoryId"
+    );
+    
+    var throughput = ThroughputProperties.CreateAutoscaleThroughput(
+        autoscaleMaxThroughput: 1000
+    );
+    
+    Container container = await database.CreateContainerIfNotExistsAsync(
+        containerProperties: properties,
+        throughputProperties: throughput
     );
     
     Console.WriteLine($"[Container created]:\t{container.Id}");

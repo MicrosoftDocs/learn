@@ -2,7 +2,6 @@ To create a deployment with Azure Center for SAP solutions (ACSS) Azure infrastr
 
 Supplemental options for this lesson include:
 
-- A detailed set of lab steps are available in AZ-120 GitHub lab Module 4: Design and implement an infrastructure to support SAP workloads on Azure - [Exercise 2: Deploy the infrastructure that will host SAP workloads in Azure by using Azure Center for SAP solutions](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/polichtm-acss-lab1/Instructions/AZ-120_Lab04-ACSS_Deployment.md#exercise-2-deploy-the-infrastructure-that-will-host-sap-workloads-in-azure-by-using-azure-center-for-sap-solutions).
 - Interactive Guides including clickable simulations are available for:
   - [Installing ACSS prerequisites](https://mslearn.cloudguides.com/guides/Azure%20Center%20for%20SAP%20solutions%20-%20Complete%20the%20prerequisites%20for%20deploying%20and%20registering%20SAP%20systems).
   - [Infrastructure deployment](https://mslearn.cloudguides.com/guides/Azure%20Center%20for%20SAP%20solutions%20-%20Deploy%20an%20SAP%20system) and the installation of the SAP software.

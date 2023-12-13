@@ -7,8 +7,7 @@ metadata:
   ms.date: 05/19/2020
   author: martinekuan
   ms.author: martinek
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/4-use-monitoring-and-analytics-to-gain-cost-insights.md)]

@@ -1,4 +1,4 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.azure.cna-deploy-maintain-cloud-native-apps.6-use-devops-iot-scenarios
 title: Explore the role of GitHub in IoT scenarios 
 metadata:
@@ -7,8 +7,7 @@ metadata:
   ms.date: 05/31/2021
   author: juliakm
   ms.author: jukullam
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/6-use-devops-iot-scenarios.md)]

@@ -1,4 +1,4 @@
-In this exercise, you'll add the ability to save and load the todo list to the file system.
+In this exercise, you add the ability to save and load the todo list to the file system.
 
 ## Add load and save buttons
 

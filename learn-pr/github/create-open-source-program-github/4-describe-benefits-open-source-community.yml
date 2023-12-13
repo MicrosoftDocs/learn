@@ -7,8 +7,7 @@ metadata:
   ms.date: 11/23/2020
   author: tallard
   ms.author: trallard
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/4-describe-benefits-open-source-community.md)]

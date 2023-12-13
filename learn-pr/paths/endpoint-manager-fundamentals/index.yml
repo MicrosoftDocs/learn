@@ -7,8 +7,7 @@ metadata:
   ms.date: 03/23/2023
   author: Erikre
   ms.author: erikre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Microsoft Intune fundamentals
 summary: | 
   This learning path will help you understand how to manage and protect your organization's data, devices, and apps. The first module explains the products and services that encompass Microsoft Intune, as well as the value that each provides. You'll learn about the Intune environment and the supported platforms, such iOS, Windows, and Android. As part of managing devices, you'll understand security rules, compliance policies, and access rights. For app management, you learn how apps can be assigned, managed, and protected. You'll also learn about configuring apps, protecting app data, managing app policy assignments, and implementing app security rules. 

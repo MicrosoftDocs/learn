@@ -7,8 +7,7 @@ metadata:
   ms.date: 05/15/2020
   author: tamram
   ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Implement and manage storage for Azure administrators
 summary: |
   Learn how to manage storage accounts, data in Azure Storage, and Azure File and Blob storage. 

@@ -7,7 +7,7 @@ metadata:
   ms.service: machine-learning
   author: msakande
   ms.author: mopeakande
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Introduction to machine learning
 summary: A high-level overview of machine learning for people with little or no knowledge of computer science and statistics. You’re introduced to some essential concepts, explore data, and interactively go through the machine learning life-cycle - using Python to train, save, and use a machine learning model, just like in the real world.
 abstract: | 

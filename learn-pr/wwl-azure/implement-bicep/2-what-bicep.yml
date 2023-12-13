@@ -7,10 +7,9 @@ metadata:
   ms.date: 11/01/2022
   author: wwlpublish
   ms.author: yasa
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-bicep
-  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 2

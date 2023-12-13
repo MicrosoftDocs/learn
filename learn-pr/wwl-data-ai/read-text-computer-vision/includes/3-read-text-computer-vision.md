@@ -1,8 +1,8 @@
-In this exercise, you will test the capabilities of the Read API. You'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
+If you have an Azure subscription, you can use [Vision Studio](https://portal.vision.cognitive.azure.com/gallery/featured?azure-portal=true) to explore the capabilities of Azure AI Vision.
 
 > [!NOTE]
-> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.
+> If you don't already have one, you can [sign up for an Azure subscription](https://azure.microsoft.com/free?azure-portal=true), which includes free credits for the first 30 days.
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/ai900-ocr-lab?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2249951)

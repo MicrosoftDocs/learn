@@ -2,8 +2,8 @@
 uid: learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook
 metadata:
   title: Monitor GitHub events by using a webhook with Azure Functions
-  description: Discover the benefits of webhooks when you trigger an Azure function with a GitHub webhook and parse the payload for insights.
-  ms.date: 03/01/2022
+  description: Discover the benefits of webhooks when you trigger an Azure function with a GitHub webhook and then parse the payload for insights.
+  ms.date: 10/27/2022
   author: ggailey777
   ms.author: glenga
   ms.topic: module-standard-task-based

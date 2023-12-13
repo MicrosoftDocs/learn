@@ -8,8 +8,7 @@ metadata:
   author: rwestmsft
   ms.author: randolphwest
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/4-collect-assess-inventory-data.md)]

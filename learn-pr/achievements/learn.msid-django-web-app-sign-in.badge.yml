@@ -1,7 +1,0 @@
-### YamlMime:AchievementDetail
-achievementUid: learn.msid-django-web-app-sign-in.badge
-metadata:
-  title: >-
-    Microsoft Badge: Enable user sign-in to your Django web app using Azure AD
-    was issued by Microsoft
-socialImageUrl: /learn/achievements/msid-django-web-app-sign-in-social.png

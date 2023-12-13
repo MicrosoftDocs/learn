@@ -8,8 +8,7 @@ metadata:
   author: juliakm
   ms.author: jukullam
   ms.custom: devdivchpfy22
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/9-clean-up-environment.md)]

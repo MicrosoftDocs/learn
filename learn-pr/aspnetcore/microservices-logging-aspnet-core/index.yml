@@ -8,7 +8,7 @@ metadata:
   ms.manager: markl
   ms.date: 10/14/2020
   ms.prod: aspnet-core
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Instrument a cloud-native ASP.NET Core microservice
 summary: Learn how to instrument your cloud-native ASP.NET Core microservices app to diagnose problems and monitor performance.
 abstract: |

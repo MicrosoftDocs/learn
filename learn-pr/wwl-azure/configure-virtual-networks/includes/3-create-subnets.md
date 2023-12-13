@@ -1,5 +1,3 @@
-
-
 Subnets provide a way for you to implement logical divisions within your virtual network. Your network can be segmented into subnets to help improve security, increase performance, and make it easier to manage. 
 
 ### Things to know about subnets

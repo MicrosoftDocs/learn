@@ -1,1 +1,0 @@
-Your team will be working on an IoT solution. The team must be able to register, configure, and manage devices when the project starts. You have learned about the device lifecycle and the device twin capabilities that can be applied to device management. This knowledge will help to ensure successful device deployments and configuration once the implementation process begins.

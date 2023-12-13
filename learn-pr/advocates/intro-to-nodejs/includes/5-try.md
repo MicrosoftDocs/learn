@@ -104,6 +104,8 @@ You have now run your first Node.js JavaScript code.
 
 ## Add an asynchronous function
 
+The following top-level asynchronous code requests an HTTP JSON data source then displays it. 
+
 1. Add the following code to the `index.js` file to create an asynchronous HTTP request:
 
     ```javascript
@@ -111,9 +113,13 @@ You have now run your first Node.js JavaScript code.
     
     console.log(`start`);
     
-    https.get('https://nodejs.org/dist/index.json', (res) => {
+    try{
+        const response = await https.get('https://nodejs.org/dist/index.json';
+
         console.log(res.statusCode);
-    });
+    } catch( error ){
+        console.log(error);
+    }
     
     console.log(`end`);
     ```

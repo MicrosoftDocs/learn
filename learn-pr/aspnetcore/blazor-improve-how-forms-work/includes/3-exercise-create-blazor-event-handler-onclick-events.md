@@ -28,7 +28,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
     Visual Studio Code might prompt you about unresolved dependencies. Select **Restore**.
 
 1. Run the app to check everything is working correctly.
-1. In Visual Studio Code press <kbd>F5</kbd>, or in the **Run** menu select **Start Debugging**.
+1. In Visual Studio Code, press <kbd>F5</kbd> or select **Run** > **Start Debugging**.
 
     :::image type="content" source="../media/3-blazing-pizza-starting-state.png" alt-text="Screenshot of the Blazing Pizza app after cloning it":::
 
@@ -64,7 +64,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
     </div>
     ```
 
-    The above code connects the HTML `onclick` event for the button element to the `PlaceOrder` Blazor method in the `@code` block.
+    The preceding code connects the HTML `onclick` event for the button element to the `PlaceOrder` Blazor method in the `@code` block.
 
     The refactoring references two new Blazor controls `OrderReview` and `AddressEditor`. You'll move the old checkout code that listed the pizzas to the `OrderReview` component.
 
@@ -150,7 +150,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 
 ## Test the new checkout page
 
-1. In Visual Studio Code press <kbd>F5</kbd>, or in the **Run** menu select **Start Debugging**.
+1. In Visual Studio Code, press <kbd>F5</kbd> or select **Run** > **Start Debugging**.
 
     :::image type="content" source="../media/3-new-checkout-page.png" alt-text="Screenshot of the new checkout page.":::
 
@@ -162,7 +162,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 
 When the customer is taken to the checkout page, the first thing they do is enter their name. Blazor allows you to set the focus on HTML elements on a page. Let's make our app better by adding this.
 
-1. In **AddressEditor.razor** change the HTML for the name `input` element to add `@ref="startName"`.
+1. In **AddressEditor.razor**, change the HTML for the name `input` element to add `@ref="startName"`.
 
     ```razor
     <input @ref="startName" @bind="Address.Name" />
@@ -185,7 +185,7 @@ When the customer is taken to the checkout page, the first thing they do is ente
 
     This code creates the `ElementReference` and then after a page has been rendered sets the focus to the `Name` field.
 
-1. In Visual Studio Code press <kbd>F5</kbd>, or in the **Run** menu select **Start Debugging**.
+1. In Visual Studio Code, press <kbd>F5</kbd> or select **Run** > **Start Debugging**.
 
     :::image type="content" source="../media/3-focus-name-field.png" alt-text="Screenshot of the Name field getting focus on page render.":::
 

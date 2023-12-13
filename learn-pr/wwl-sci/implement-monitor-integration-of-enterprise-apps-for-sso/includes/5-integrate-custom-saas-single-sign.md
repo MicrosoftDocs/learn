@@ -1,7 +1,7 @@
-:::image type="content" source="../media/app-single-sign-on-79005b35.png" alt-text="Diagram of Microsoft Entra being the single-sign-on provider for cloud apps.  User and external users log into Microsoft Entra ID, then connect to cloud applications.":::
+:::image type="content" source="../media/app-single-sign-on-79005b35.png" alt-text="Diagram of Microsoft Entra ID being the single-sign-on provider for cloud apps. User and external users log into Microsoft Entra ID, then connect to cloud applications.":::
 
 
- -  You can use Microsoft Entra ID as your identity system for just about any app. Many apps are already pre-configured and can be set up with minimal effort. These pre-configured apps are published in the Microsoft Entra App Gallery.
+ -  You can use Microsoft Entra ID as your identity system for just about any app. Many apps are already pre-configured and can be set up with minimal effort. These pre-configured apps are published in the Microsoft Entra ID App Gallery.
  -  You can manually configure most apps for single-sign-on if they aren't already in the gallery. Microsoft Entra ID provides several SSO options. SAML-based SSO and OIDC-based SSO.
 
 Effectively, apps can delegate maintenance of their own username and password information to a centralized identity provider, Microsoft Entra ID as an example. Delegating authentication and authorization enables scenarios such as Conditional Access policies that require a user to be in a specific location or require multifactor authentication. The use of single-sign-on (SSO), enables a user to sign in once and then be automatically signed in to all of the web apps that share the same centralized directory.
@@ -14,6 +14,6 @@ The following list is a brief comparison of the various protocols used by Micros
  -  **OAuth vs. SAML**: OAuth is used for authorization and Security Assertion Markup Language (SAML) is used for authentication.
  -  **OpenID Connect vs. SAML**: Both OpenID Connect and SAML are used to authenticate a user and are used to enable single-sign-on. SAML authentication is commonly used with identity providers such as Active Directory Federation Services (ADFS) federated to Microsoft Entra ID and is therefore frequently used in enterprise applications. OpenID Connect is commonly used for apps that are purely in the cloud, such as mobile apps, web sites, and web APIs.
 
-If you have an application that you want to integrate with AzureAD providing the single-sign-on experience for your users, please see the article ClaimsXRay in Microsoft Entra ID with Directory Extension, linked below:
+If you have an application that you want to integrate with Microsoft Entra ID to provide the single-sign-on experience for your users, please see the article ClaimsXRay in Microsoft Entra ID with Directory Extension, linked below:
 
 [ClaimsXRay in Microsoft Entra ID with Directory Extension](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/claimsxray-in-azuread-with-directory-extension/ba-p/1505737)
