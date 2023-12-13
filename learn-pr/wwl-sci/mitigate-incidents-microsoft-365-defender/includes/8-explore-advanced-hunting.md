@@ -12,7 +12,7 @@ You can use the same threat-hunting queries to build custom detection rules. The
 
 - Microsoft Defender for Identity
 
-To use advanced hunting, turn on Microsoft 365 Defender.
+To use advanced hunting, turn on Microsoft Defender XDR.
 
 ## Data freshness and update frequency
 
