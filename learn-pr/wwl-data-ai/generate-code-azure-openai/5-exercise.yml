@@ -11,5 +11,8 @@ metadata:
   ms.author: berryivor
   ms.topic: unit
 durationInMinutes: 25
+azureSandbox: false
+labId: 152390
+labModal: true
 content: |
   [!include[](includes/5-exercise.md)]

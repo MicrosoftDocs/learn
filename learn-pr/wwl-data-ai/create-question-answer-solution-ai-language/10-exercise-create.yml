@@ -11,5 +11,7 @@ metadata:
   ms.service: azure-ai-language
   ms.subservice: azure-ai-question-answering
 durationInMinutes: 20
+labId: 152405
+labModal: true
 content: |
   [!include[](includes/10-exercise-create.md)]

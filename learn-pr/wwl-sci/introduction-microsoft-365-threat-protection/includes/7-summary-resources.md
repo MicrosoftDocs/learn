@@ -1,10 +1,10 @@
 
-You should have learned the role that Microsoft 365 Defender plays in a modern SOC.
+You should have learned the role that Microsoft Defender XDR plays in a modern SOC.
 
 You should now be able to:
 
-- Understand Microsoft 365 Defender solution by domain
-- Understand Microsoft 365 Defender role in a Modern SOC
+- Understand Microsoft Defender XDR solution by domain
+- Understand Microsoft Defender XDR role in a Modern SOC
 
 
 ## Learn more

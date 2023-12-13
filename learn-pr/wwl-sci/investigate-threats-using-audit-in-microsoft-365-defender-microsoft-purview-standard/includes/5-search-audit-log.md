@@ -19,7 +19,7 @@ Microsoft 365 supports an audit log so that organizations can search it for acti
 | Exchange Online                         | ExchangeAdmin, ExchangeItem, ExchangeItemAggregated                                                                  |
 | Forms                                   | MicrosoftForms                                                                                                       |
 | Information barriers                    | InformationBarrierPolicyApplication                                                                                  |
-| Microsoft 365 Defender                  | AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation, MS365DCustomDetection                         |
+| Microsoft Defender XDR                  | AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation, MS365DCustomDetection                         |
 | Microsoft Teams                         | MicrosoftTeams                                                                                                       |
 | MyAnalytics                             | MyAnalyticsSettings                                                                                                  |
 | OneDrive for Business                   | OneDrive                                                                                                             |
