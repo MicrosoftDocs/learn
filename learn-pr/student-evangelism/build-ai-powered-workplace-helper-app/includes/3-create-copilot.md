@@ -4,22 +4,23 @@ You can complete this exercise either for our fictitious Contoso company or for 
 
 ## Specification
 
-Create a new Copilot in [Copilot Studio](https://web.powerva.microsoft.com/) within an environment hosted in the United States. *(This is currently needed to access new AI generative text features).*
+Create a new Copilot in [Copilot Studio](https://web.powerva.microsoft.com/) within an environment hosted in the United States.
 
-You should then configure your Copilot as follows:
+Configure your Copilot as follows:
 
-- Enable generative answers in the Settings > AI Capabilities menu
-- Train the generative AI model by providing company information in the form of PDFs or other text-based files.
-- Add further training data by providing web addresses *(not available for Contoso example)*
+- Enable generative answers in the **Settings** > **AI Capabilities** menu.
+- Train the Generative AI model by providing company information in the form of PDFs or other text-based files.
+- If you are completing this exercise for your own organization, you can dd further training data by providing web addresses.
 
-> **Contoso example PDF files**
+> [!NOTE]
 > To create the chatbot for the Contoso example, you can download the PDFs at [TODO URL] to use as your organizational knowledge resources.
 
 ## Check your work
 
-To validate that you have satisfied the requirements for the first exercise, test your app behavior by following these steps:
+Follow these steps to test your app and validate that you satisfied the requirements for the first exercise:
 
 1. Ensure your chatbot is saved in Copilot Studio.
-1. Test your chatbot by selecting "Test your Copilot" in the bottom left corner of Copilot Studio. Ask your chatbot questions about content you know is in the provided documents/websites.
+1. Test your chatbot by selecting **Test your Copilot** in the bottom left corner of Copilot Studio.
+1. Ask your chatbot questions about content you know is in the provided documents/websites.
 1. Test your chatbot with a question that is out of the scope of what is covered in the provided documents/websites.
 1. Test to see what your chatbot does when you ask for emergency fire procedures.

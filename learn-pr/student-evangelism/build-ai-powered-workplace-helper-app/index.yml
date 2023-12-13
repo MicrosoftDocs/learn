@@ -10,8 +10,6 @@ metadata:
 title: Build an AI-powered workplace helper app
 summary: |
   This challenge project will help you demonstrate your ability to integrate Copilot Studio with Generative AI and topic-based answers into a Power App. 
-  > [!NOTE]
-  > This is a **_Challenge Project_** module where you complete an end-to-end project using high-level guidance; there are no step-by-step instructions.
 abstract: |
   In this module, you'll demonstrate your ability to:
     - Build a canvas app with Power Apps.
