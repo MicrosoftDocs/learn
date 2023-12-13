@@ -11,7 +11,7 @@ Create a Power Apps app that meets the following basic functionalities and speci
 - Publish your app.
 
 > [!NOTE]
-> Ensure you're in the same Power Platform environment you created your Copilot Studio in so you can access it.
+> Ensure that you're in the same Power Platform environment you created your Copilot Studio.
 
 ## Check your work
 
