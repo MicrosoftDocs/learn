@@ -6,9 +6,9 @@ The .NET logging framework provides a simple way to redact data in log messages.
 
 Redaction is the process of removing sensitive information from a message. For example, you might want to redact a user's name from a log message. Or you might want to redact a user's IP address from a telemetry event.
 
-The most simple redaction is to erase the value, simply return an empty string for the variables value. This is the default for the `Redactor` class. Microsoft has included a `HMACSHA256Redactor` class that can be used to redact data using a hash function. This is useful if you want to redact data, but still be able to identify it later. The last option is to provide your own redaction function. This is useful if you want to redact data using a custom algorithm.
+The most simple redaction is to erase the value, and return an empty string for the variables. This behavior is the default for the `Redactor` class. Microsoft includes a `HMACSHA256Redactor` class that can be used to redact data using a hash function. The HMAC redaction is useful if you want to redact data, but still be able to identify it later. The last option is to provide your own redaction function, which is useful if you want to redact data using a custom algorithm.
 
-For example, you may want to make it clearer in the logs that a value has been redacted by replacing it with `*****`.
+For example, you may want to make it clearer in the logs that a value is redacted by replacing it with `*****`.
 
 ## How to redact data in a cloud native application
 
@@ -23,7 +23,7 @@ There are three steps you need to take to enable redaction in your app:
 
 ### Add the redaction service to the Dependency Injection container
 
-The following example is for a Blazor WebAssembly app. The process is similar for other types of apps, but the code will be slightly different depending on how the dependency injection container is configured.
+The following example is for a Blazor WebAssembly app. The process is similar for other types of apps, but the code is slightly different depending on how the dependency injection container is configured.
 
 In the **program.cs** file, add the following dependencies:
 
@@ -32,7 +32,7 @@ using Microsoft.Extensions.Compliance.Classification;
 using Microsoft.Extensions.Compliance.Redaction;
 ```
 
-These allow you to then add the redaction service to the dependency injection container:
+The above packages allow you to then add the redaction service to the dependency injection container with this code:
 
 ```csharp
 builder.Services.AddRedaction();
@@ -40,7 +40,7 @@ builder.Services.AddRedaction();
 
 ### Choose which redaction implementation to use for each type of classified data
 
-The `AddRedactor` method can include a `RedactorOptions` parameter. This parameter allows you to specify which redaction implementation to use for each type of classified data.
+The `AddRedactor` method can include a `RedactorOptions` parameter. The parameter allows you to specify which redaction implementation to use for each data taxonomy.
 
 For example, the following code specifies that the `HMACSHA256Redactor` should be used for `EUII` data.
 
@@ -94,7 +94,7 @@ builder.Services.AddLogging(logging =>
 });
 ```
 
-With this in place, you need to create a new logger that uses the redaction service. Add this in the code where you want to write `Order` information into the logs.
+With the above code in place, you can create a new logger that uses the redaction service. Implement a new `LogOrders` logger wherever you want to write order information to the logs.
 
 ```csharp
 public static partial class Log
@@ -106,9 +106,9 @@ public static partial class Log
 
 ## Create a custom redaction implementation
 
-Microsoft allows you to create a custom redaction implementation. This is useful if you want to redact data using a custom algorithm. Let's implement a custom redactor that replaces the value with `*****`.
+Microsoft allows you to create a custom redaction implementation. You'll use a custom redaction when you want to redact data using your own algorithm. Let's implement a custom redactor that replaces sensitive data with `*****`.
 
-Custom redactors need to implement the `Redactor` class. This class has two methods that need to be implemented:
+Custom redactors need to implement the `Redactor` class. The class needs two methods implemented:
 
 ```csharp
 public class EShopCustomRedactor : Redactor

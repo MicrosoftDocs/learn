@@ -1,6 +1,6 @@
 In this exercise, you'll classify the sensitive data types in a sample **:::no-loc text="eShopLite":::** application. 
 
-The app is in active development and currently has two data classes, **:::no-loc text="Product":::** and **:::no-loc text="Order":::**. They're building out the ordering process and have asked you to add the code to classify data types.
+The app is in active development and currently has two data classes, **:::no-loc text="Product":::** and **:::no-loc text="Order":::**. They're building out the ordering process and wabt you to add the code to classify data types.
 
 In this exercise, you'll:
 
@@ -15,7 +15,7 @@ In this exercise, you'll:
 
     - Select **Code**.
     - Select the **Codespaces** tab.
-    - Select ... (Codespace respository configuration)
+    - Select ... (Codespace repository configuration)
     - Select **+ New with options**.
     - Select the **Default project configuration** dropdown, then select **eShopLite - dotnet-compliance**.
     - Select **Create codespace**.
@@ -27,7 +27,7 @@ In this exercise, you'll:
 
 ### Update docker settings to run in a codespace
 
-If you are using a codespace for this exercise, you need to update the **docker-compose.yml** file to use the correct URL for the apps images.
+If you're using a codespace for this exercise, you need to update the **docker-compose.yml** file to use the correct URL for the apps images.
 
 1. Select the **PORTS** tab. To the right of the local address for the **Back End (32001)** port, select the **Copy** icon.
 
@@ -112,11 +112,11 @@ In this task, you'll add the code to create two new taxonomies. Then you'll anno
 
 ### Classify the data types
 
-You'll now use these taxonomies and attributes to classify the data types in the **:::no-loc text="eShopLite":::** app.
+Use these taxonomies and attributes to classify the data types in the **:::no-loc text="eShopLite":::** app.
 
 1. In the **EXPLORER** pane, expand the **DataEntities** folder, then select the **Product.cs** file.
 
-    There isn't specific customer sensitive data in this class, but the app could leak pseudonymous data if the product id property is connected to a customer in the logs.
+    There isn't specific customer sensitive data in this class, but the app could leak pseudonymous data if the product ID property is connected to a customer in the logs.
 
 1. Add the **:::no-loc text="EUPData":::** attribute to the **:::no-loc text="ProductId":::** property:
 

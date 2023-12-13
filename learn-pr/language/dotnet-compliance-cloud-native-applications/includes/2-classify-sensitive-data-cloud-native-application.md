@@ -1,6 +1,4 @@
-The microservices nature of cloud native apps means that sensitive information can be distributed into multiple logs and telemetry locations. This makes it difficult to ensure that sensitive data isn't leaked.
-
-The first step to implementing compliance in a cloud native application is to classify the data. Data classification is the process of identifying data your application uses by its sensitivity. This is usually done by assigning a label to each data type. For example, you might label a user's name as "sensitive" and a user's age as "non-sensitive".
+The first step to implementing compliance in a cloud native application is to classify the data. Data classification is the process of identifying data your application uses by its sensitivity. Data classification is done by assigning a label to each data type. For example, you might label a user's name as "sensitive" and a user's age as "nonsensitive".
 
 In this unit, you'll explore some of the compliance features of .NET. Then you'll learn how to classify data in a cloud native application.
 
@@ -8,20 +6,20 @@ In this unit, you'll explore some of the compliance features of .NET. Then you'l
 
 Organizations need to comply with their own internal policies and with external regulations. For example, a company might have a policy that says that customer data can't be stored in a log file. Or a government might have create regulations to enforce the appropriate handling of customers data. These policies and regulations are often referred to as *compliance requirements*.
 
-Compliance requirements are usually implemented by creating a set of rules that are applied to an organizations applications. These rules are often implemented by a compliance team. The compliance team is responsible for creating the rules and then ensuring that they're followed.
+Compliance requirements are implemented by creating a set of rules that are applied to an organizations applications. Usually a compliance team is responsible for implementing compliance rules and then ensuring that they're followed.
 
 ## What is data classification?
 
-Data classification is a term used in cybersecurity and information governance to describe the process of identifying, categorizing, and protecting content according to its sensitivity or impact level. Data classification is a means of protecting your organizations data from unauthorized disclosure, alteration, or destruction based on how sensitive or impactful it is.
+Data classification is a term used in cybersecurity and information governance. Data classification describes the process of identifying, categorizing, and protecting content according to its sensitivity or impact level. Data classification protects your organizations data from unauthorized disclosure, alteration, or destruction based on how sensitive or impactful it is.
 
-You're company has decided to implement a data classification policy. This policy will classify data into two taxonomies:
+Your company decides to implement a data classification policy. This policy classifies data into two taxonomies:
 
-- **End User Identifiable Information (EUII)** - This is information that can be used to identify an individual. For example, a user's name,  address, or phone number.
-- **End User Pseudonymous Identifiers (EUPI)** - This is information that can be used to identify an individual, but only if it's combined with other information. For example, a user's ID for their data in a database, or IP address.
+- **End User Identifiable Information (EUII)** - Information that can be used to identify an individual. For example, a user's name,  address, or phone number.
+- **End User Pseudonymous Identifiers (EUPI)** - Information that can be used to identify an individual, but only if data are combined with other information. For example, a user's ID for their data in a database, or IP address.
 
 ## How to classify data in a cloud native application
 
-Microsoft have added a new extension to .NET that makes it easy to implement data classification. The `Microsoft.Extensions.Compliance.Classification` extension enables you to define `DataClassification` and `DataClassificationAttribute` properties.
+Microsoft has added a new extension to .NET that makes it easy to implement data classification. The `Microsoft.Extensions.Compliance.Classification` extension enables you to define `DataClassification` and `DataClassificationAttribute` properties.
 
 To use the extension in your solution, add the `Microsoft.Extensions.Compliance.Redaction` NuGet package to your project.
 
@@ -61,4 +59,4 @@ public class User
 }
 ```
 
-Let's see how to implement this in an example cloud native application.
+Let's see how to implement data classification in an example cloud native application.

@@ -1,4 +1,4 @@
-You've been asked to add some logging to the order process. You'll use the redaction features of .NET to ensure that the sensitive data isn't leaked into the logs.
+You need add some logging to the order process. You'll use the redaction features of .NET to ensure that the sensitive data isn't leaked into the logs.
 
 In this exercise, you'll:
 
@@ -11,7 +11,7 @@ In this exercise, you'll:
 
 ## Add the redaction service
 
-You should still have the codespace or Visual Studio code window open. If not, open it now.
+You should still have the codespace or Visual Studio Code window open. If not, open it now.
 
 1. In the **TERMINAL** window, enter this command:
 
@@ -80,7 +80,7 @@ You should still have the codespace or Visual Studio code window open. If not, o
 
 ## Test the new redacted logging
 
-With all the above code in place, the app will use the default redaction implementation to redact the `Order` information. You'll now test this.
+With all the above code in place, the app can use the default redaction implementation to redact the `Order` information. You'll now test this.
 
 1. In the **TERMINAL** window, navigate to the root of the `dotnet-compliance` folder with this command:
 
@@ -95,7 +95,7 @@ With all the above code in place, the app will use the default redaction impleme
     ```
 
 1. Select the **PORTS** tab, then select the **Open in Browser** globe icon for the **Front End (32000)** port.
-1. Select the **Products** link. Add a number of products to your shopping basket.
+1. Select the **Products** link. Add some products to your shopping basket.
 1. Select the **Buy Basket** button.
 1. In the **TERMINAL** window, press <kbd>CTRL</kbd>+<kbd>F</kbd>, in the search field enter **"EventId":1,**.
 
@@ -156,7 +156,7 @@ You'll now enhance the redaction implementation to use different redaction algor
     ```
 
 1. Select the **PORTS** tab, then select the **Open in Browser** globe icon for the **Front End (32000)** port.
-1. Select the **Products** link. Add a number of products to your shopping basket.
+1. Select the **Products** link. Add some products to your shopping basket.
 1. Select the **Buy Basket** button.
 1. In the **TERMINAL** window, press <kbd>CTRL</kbd>+<kbd>F</kbd>, in the search field enter **"EventId":1,**.
 
