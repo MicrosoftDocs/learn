@@ -18,31 +18,79 @@ Deployment of your workspace may take a few minutes. The status and deployment d
 
 ## Run a quantum program using Azure Quantum notebooks
 
-To get started, copy the sample notebook from the notebook gallery.
+
+### Create a notebook
 
 1. Select your Azure Quantum workspace in the [Azure portal](https://portal.azure.com).
 1. Select **Notebooks**.
-1. Select **Sample gallery**.
-1. Locate the **Hello, world: Q#** notebook tile, select the quantum provider (the sample code is identical), and select **Copy to my notebooks**.
-1. The sample notebook can be found under **My notebooks** and you can now run the notebook.
+1. Click **My Notebooks** and click **Add New**.
+1. Type a name for the file, for example *submit-quantum-job.ipynb*, and click **Create file**.
+1. The notebook can be found under **My notebooks** and you can now run the notebook.
 
-:::image type="content" source="../media/create-notebook-steps.png" alt-text="Screenshot of loading a sample Jupyter notebook":::
+### Connect to your Azure Quantum workspace
 
-The notebook first imports the required packages for the sample, then connects to the Azure Quantum service, and then runs a Q# program.
+To connect to the Azure Quantum service, your need the resource ID and the location of your Azure Quantum workspace. You can find this values in the **Overview** section of your workspace in the Azure portal.
 
-1. In **My notebooks**, select the **hello-world-qsharp-[provider]** notebook.
+Copy the following code in a new cell in your notebook and replace the values for `resource_id` and `location` with the values for your workspace.
+
+```python
+
+import azure.quantum
+
+workspace = Workspace ( 
+    resource_id = "", # Add your resource_id 
+    location = ""  # Add your workspace location (for example, "westus") 
+)
+```
+
+### Write a Q# operation
+
+1. First, you need to import the `qsharp` package to enable the "%%qsharp" magic command used in later cells. Add the following code in a new cell in your notebook.
+
+    ```python
+    import qsharp
+    ```
+
+1. Copy the following code in a new cell in your notebook. This code defines a Q# operation that generates a random bit using the `%%qsharp` 'magic' command.
+
+    ```python
+    %%qsharp
+    
+    operation Random() : Result {
+        use q = Qubit();
+        H(q);
+        let result = M(q);
+        Reset(q);
+        return result
+    }
+    
+    operation RandomNBits(N: Int): Result[] {
+        mutable results = [];
+        for i in 0 .. N - 1 {
+            let r = Random();
+            set results += [r];
+        }
+        return results
+    }
+    ```
+
+    - The operation `Random` uses the `H` gate to put a qubit in a superposition of `0` and `1`, then measures the qubit to get a random bit. The `Reset` operation resets the qubit to the `|0⟩` state.
+    - The operation `RandomNBits` takes an integer `N` as input and returns an array of `N` random bits.
+
+### Run the Q# operation
+
+1. Add the following code in a new cell in your notebook to run the `RandomNBits` operation for 100 shots against the Rigetti simulator.
+
+    ```python
+    operation = qsharp.compile("RandomNBits(4)")
+    target = workspace.get_targets("rigetti.sim.qvm")
+    job = target.submit(operation, "my-azure-quantum-job", input_params={ "count": 100 })
+    
+    # Wait for the job to complete
+    job.get_results()
+    ```
+
 1. To run the full program from top to bottom, select **Run all**.
 1. To walk through the example and run each cell individually from top to bottom, select the cell you want to run and select the **run icon**.
 
-### Stepping through the program 
 
-The *hello world* program runs a simple quantum random number generator and displays a histogram of the results.
-
-Some things to note:
-
-- **The kernel**: In the upper right of the notebook, you can see that the notebook is running the **Python 3 (ipykernel)** kernel, which is the default Python shell for Jupyter Notebooks. When you create a notebook in Azure Quantum, you can select either the **Python 3 (ipykernel)** or the **Azure Quantum Q#** kernel. Both kernels are fully compatible with Q# code.
-- **1st cell**: Preloads your subscription information to connect to the Azure Quantum service.
-- **2nd cell**: Retrieves the available targets (quantum computers and simulators) in your workspace.
-- **3rd and 4th cells**: The Q# code that defines the program. Note the *%%qsharp* magic command which allows you to enter Q# code directly into the notebook when using the **Python 3 (ipykernel)**.
-- **5th cell**: Sets the target and submits the job.
-- **6th and 7th cells**: Plots and displays the result. The results should be roughly split between 0 and 1.

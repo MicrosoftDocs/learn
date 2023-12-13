@@ -9,8 +9,9 @@ The Azure Quantum Development Kit (QDK) extension for Visual Studio Code allows 
     - An Azure Quantum workspace.
 
     > [!TIP]
-    > If you have an Azure Quantum workspace, you can benefit from the free $500 USD in Azure Quantum Credits when you submit your Q# programs to Azure Quantum.
-## Create a Q# program in Visual Studio Code
+    > If you have an Azure Quantum workspace, you can benefit from **free $500 USD** in Azure Quantum Credits when you submit your Q# programs to Azure Quantum.
+
+## Create and run a Q# program in Visual Studio Code
 
 1. Open Visual Studio Code and select **File** > **New Text File** to create a new file.
 1. Save the file as `RandomNum.qs`. This file will contain the Q# code for your program.
@@ -52,7 +53,7 @@ The Azure Quantum Development Kit (QDK) extension for Visual Studio Code allows 
 1. To test run your program locally on the built-in simulator, select **Run Q# file** from the play icon drop-down in the top-right, or press **Ctrl+5**. Your output will appear in the debug console.
 1. To debug your program before submitting it to Azure Quantum, select **Debug Q# file** from the play icon, or **press F5**. Use the debugging controls at the top to step over, into, and out of the code. .
 
-## Connect to Azure Quantum and submit your job
+### Connect to Azure Quantum and submit your job
 
 1. Open the **QUANTUM WORKSPACES** section in the **Explorer** view of the VS Code sidebar.
 1. Select **Add an existing workspace** and follow the prompts to connect to your preferred directory, subscription, and workspace. 
@@ -64,3 +65,12 @@ The Azure Quantum Development Kit (QDK) extension for Visual Studio Code allows 
 1. Expand **Jobs** and hover over your job, which displays the times and status of your job. 
 1. To view the results, select the cloud icon next to the job name to download the results from your workspace storage and display it in VS Code.
 
+## Create an Azure Quantum notebook
+
+The QDK extension allows you to create Azure Quantum notebooks in VS Code. Azure Quantum notebooks are Jupyter notebooks that allow you to run quantum programs on the quantum computers and simulators of the providers you selected for your Azure Quantum workspace.
+
+To create an Azure Quantum notebook:
+
+1. In VS Code open the **View** menu, and select **Command Palette**.
+1. Type **Q#: Create an Azure Quantum notebook**.
+1. A Jupyter Notebook opens in a new tab. The notebook includes a code cell that imports the required packages for the sample, connects to the Azure Quantum service, and runs a Q# program.

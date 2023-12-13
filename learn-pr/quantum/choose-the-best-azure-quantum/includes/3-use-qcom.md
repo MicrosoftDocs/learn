@@ -50,17 +50,17 @@ To start exploring the Copilot and coding in Azure Quantum, use one of the sampl
 1. Select **In-Memory Simulator**.
 1. Select **Run**.
 
-- The results are displayed in the **Results** field, and a histogram of the results is displayed below the code window. 
-- You can move the slider for **Select number of shots** to specify how many times the program is run.
-- The **Shots** field displays the result for each shot. 
+    - The results are displayed in the **Results** field, and a histogram of the results is displayed below the code window. 
+    - You can move the slider for **Select number of shots** to specify how many times the program is run.
+    - The **Shots** field displays the result for each shot. 
 
 To run your program again using a different simulator:
 
 1. Select the **In-Memory Simulator** dropdown and select **Quantinuum H-Series Emulator**.
 1. Select the number of shots (currently limited to 20) and select **Run**.
 
-- The job status is displayed at the top of the code window.
-- A histogram of the results is displayed below the code window. Results for each shot is not currently available with the Quantinuum H-Series Emulator.
+    - The job status is displayed at the top of the code window.
+    - A histogram of the results is displayed below the code window. Results for each shot is not currently available with the Quantinuum H-Series Emulator.
 
 ## Ask the Copilot
 
