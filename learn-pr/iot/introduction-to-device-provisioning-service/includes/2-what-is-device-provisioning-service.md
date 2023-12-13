@@ -1,83 +1,65 @@
-Your team has developed a working proof-of-concept for your IoT solution, but so far in the development and testing phase you've been manually configuring each device with the details of which IoT Hub to connect to the device's own registration and authentication info. This approach won't scale when you move to the manufacturing and production phase. Now, you're evaluating whether Azure IoT Hub Device Provisioning Service is the right solution for this challenge.
+Your team has developed a working proof-of-concept for your IoT solution, but so far in the development and testing phase you've been manually configuring each device with its registration and authentication info as well as the details of which IoT Hub to connect to. This approach won't scale when you move to the manufacturing and production phase. Now, you're evaluating whether Azure IoT Hub Device Provisioning Service is the right solution for this challenge.
 
 Device Provisioning Service (DPS) is a helper service for Azure IoT Hub. It provides zero-touch, just-in-time provisioning of devices to the right IoT hub.
 
-Device provisioning with DPS is a two part process. The first part is establishing the initial connection between the device and the IoT solution by registering the device. The second part is applying the proper configuration to the device based on the specific requirements of the solution. Once both steps have been completed, the device has been fully provisioned. Device Provisioning Service automates both steps to provide a seamless provisioning experience for the device.
-
-
-## Features
-
-* Secure attestation support for both X.509 and TPM-based identities.
-* Enrollment list containing the complete record of devices/groups of devices that may at some point register. The enrollment list contains information about the desired configuration of the device once it registers, and it can be updated at any time.
-* Multiple allocation policies to control how the Device Provisioning Service assigns devices to IoT hubs in support of your scenarios.
-* Monitoring and diagnostics logging to make sure everything is working properly.
-* Multi-hub support allows the Device Provisioning Service to assign devices to more than one IoT hub. The Device Provisioning Service can talk to hubs across multiple Azure subscriptions.
-* Cross-region support allows the Device Provisioning Service to assign devices to IoT hubs in other regions.
-* Encryption for data at rest allows data in DPS to be encrypted and decrypted transparently using 256-bit AES encryption, one of the strongest block ciphers available, and is FIPS 140-2 compliant.
-
-## Cross-platform support
-
-The Device Provisioning Service, like all Azure IoT services, works cross-platform with several operating systems. Azure offers open-source SDKs in various programming languages to facilitate connecting devices and managing the service. The Device Provisioning Service supports the following protocols for connecting devices:
-
-* HTTPS
-* AMQP
-* AMQP over web sockets
-* MQTT
-* MQTT over web sockets
-
-The Device Provisioning Service only supports HTTPS connections for service operations.
-
-
-
-
-
-
-
-
-The Device Provisioning Service supports the full lifecycle of a device, from initial provisioning by the manufacturer all the way through to retirement.
-
-## Provisioning process
-
-There are two distinct phases in the provisioning/deployment process for a device. These two phases can be done independently:
-
-* The manufacturing phase in which the device is created and prepared at the factory.
-* The cloud setup phase in which the Device Provisioning Service is configured for automated provisioning.
-
-Both these phases fit in seamlessly with existing manufacturing and deployment processes. The Device Provisioning Service even simplifies some deployment processes that involve a lot of manual work to get connection information onto the device.
-
-## Manufacturing phase
-
-This step is all about what happens on the device manufacturing line, and is concerned with creating the hardware itself.
-
-The Device Provisioning Service does not introduce a new step in the manufacturing process; rather, it ties into the existing step that installs the initial software and (ideally) the hardware security module (HSM) on the device. Instead of creating a device ID in this step, the device is programmed with the provisioning service information, enabling it to call the provisioning service to get its connection info/IoT solution assignment when it is switched on.
-
-Also in this step, the manufacturer supplies the device deployer/operator with the identifying key information for the device. Supplying that information could be as simple as confirming that all devices have an X.509 certificate generated from a signing certificate provided by the device deployer/operator, or as complicated as extracting the public portion of a trusted platform module (TPM) endorsement key from each TPM device. These services are offered by many silicon manufacturers today.
-
-## Cloud setup phase
-
-This step is about configuring the cloud for proper automatic provisioning. Generally there are two types of users involved in the cloud setup step: someone who knows how devices need to be initially set up (a device operator), and someone else who knows how devices are to be split among the IoT hubs (a solution operator).
-
-There is a one-time initial setup of the provisioning service that must occur, which is usually handled by the solution operator. Once the provisioning service is configured, it does not have to be modified unless the use case changes.
-
-After the service has been configured for automatic provisioning, it must be prepared to enroll devices. This step is done by the device operator, who knows the desired configuration of the device(s) and is in charge of making sure the provisioning service can properly attest to the device's identity when it comes looking for its IoT hub. The device operator takes the identifying key information from the manufacturer and adds it to the enrollment list. There can be subsequent updates to the enrollment list as new entries are added or existing entries are updated with the latest information about the devices.
-
-## Registration and provisioning
-
-Provisioning means various things depending on the industry in which the term is used. In the context of provisioning IoT devices to their cloud solution, provisioning is a two part process:
+In the context of provisioning IoT devices to their cloud solution, provisioning is a two part process:
 
 * The first part is establishing the initial connection between the device and the IoT solution by registering the device.
 * The second part is applying the proper configuration to the device based on the specific requirements of the solution it was registered to.
 
-Once both of those two steps have been completed, we can say that the device has been fully provisioned. Some cloud services only provide the first step of the provisioning process, registering devices to the IoT solution endpoint, but do not provide the initial configuration. The Device Provisioning Service automates both steps to provide a seamless provisioning experience for the device.
+Once both of those two steps have been completed, we can say that the device has been fully provisioned. The Device Provisioning Service automates both steps to provide a seamless provisioning experience for the device.
 
-## IoT Plug and Play devices
+## Key terms and features
 
-IoT Plug and Play enables device developers to create devices that solution builders can integrate within their solutions without any manual configuration. At the core of IoT Plug and Play, is a device model that a device uses to advertise its capabilities to an IoT Plug and Play-enabled application (such as IoT Hub and Azure IoT Central). This model is structured as a set of elements that define:
+* Secure attestation support for both X.509 and TPM-based identities.
+* Enrollment lists contain the complete record of devices/groups of devices that may at some point register. The enrollment list contains information about the desired configuration of a device once it registers, and it can be updated at any time.
+* Allocation policies control how DPS assigns devices to IoT hubs.
+* Monitoring and diagnostics logging makes sure everything is working properly.
+* Multi-hub support allows DPS to assign devices to more than one IoT hub, even IoT hubs across multiple Azure subscriptions.
+* Cross-region support allows DPS to assign devices to IoT hubs in other regions.
+* Encryption for data at rest allows data in DPS to be encrypted and decrypted transparently using 256-bit AES encryption, one of the strongest block ciphers available, and is FIPS 140-2 compliant.
 
-* Properties that represent the read-only or writable state of a device or other entity. For example, a device serial number may be a read-only property and a target temperature on a thermostat may be a writable property.
-* Telemetry that's the data emitted by a device, whether the data is a regular stream of sensor readings, an occasional error, or an information message.
-* Commands that describe a function or operation that can be done on a device. For example, a command could reboot a gateway or take a picture using a remote camera.
 
-Device developers can group these elements in interfaces to reuse across models to make collaboration easier and to speed up development.
+### Service operations endpoint
 
-For more information about Azure IoT Plug and Play devices, see [IoT Plug and Play](/azure/iot-develop/overview-iot-plug-and-play).
+The service operations endpoint is the endpoint for managing the service settings and maintaining the enrollment list. This endpoint is only used by the service administrator; it is not used by devices.
+
+### Device provisioning endpoint
+
+The device provisioning endpoint is the single endpoint all devices use for autoprovisioning. The URL is the same for all provisioning service instances, to eliminate the need to reflash devices with new connection information in supply chain scenarios. The ID scope ensures tenant isolation.
+
+### Linked IoT hubs
+
+The Device Provisioning Service can only provision devices to IoT hubs that have been linked to it. Linking an IoT hub to an instance of the Device Provisioning Service gives the service read/write permissions to the IoT hub's device registry; with the link, a Device Provisioning Service can register a device ID and set the initial configuration in the device twin. Linked IoT hubs may be in any Azure region. You may link hubs in other subscriptions to your provisioning service.
+
+### Allocation policy
+
+The service-level setting that determines how Device Provisioning Service assigns devices to an IoT hub. There are three supported allocation policies:
+
+* Evenly weighted distribution: linked IoT hubs are equally likely to have devices provisioned to them. The default setting. If you are provisioning devices to only one IoT hub, you can keep this setting.
+* Lowest latency: devices are provisioned to an IoT hub with the lowest latency to the device. If multiple linked IoT hubs would provide the same lowest latency, the provisioning service hashes devices across those hubs.
+* Static configuration via the enrollment list: specification of the desired IoT hub in the enrollment list takes priority over the service-level allocation policy.
+* Custom (Use Azure Function): A custom allocation policy gives you more control over how devices are assigned to an IoT hub. This is accomplished by using custom code in an Azure Function to assign devices to an IoT hub. The device provisioning service calls your Azure Function code providing all relevant information about the device and the enrollment to your code. Your function code is executed and returns the IoT hub information used to provisioning the device.
+
+### Enrollment
+
+An enrollment is the record of devices that may register through autoprovisioning. The two types of enrollments supported by Device Provisioning Service are *group enrollment* and *individual enrollment*.
+
+* Group enrollment: An enrollment group is recommended for a large number of devices that share a desired initial configuration, or for devices all going to the same tenant.
+* Individual enrollment: Individual enrollments are recommended for devices that require unique initial configurations, or for devices that can only authenticate using SAS tokens via TPM attestation.
+
+The enrollment record contains information about the device or group of devices, including:
+
+* The attestation mechanism used by the device
+* The optional initial desired configuration
+* Desired IoT hub
+* The desired device ID
+
+### Registration
+
+A registration is the record of a device successfully registering/provisioning to an IoT Hub via the Device Provisioning Service. Registration records are created automatically; they can be deleted, but they cannot be updated.
+
+### Operations
+
+Operations are the billing unit of the Device Provisioning Service. One operation is the successful completion of one instruction to the service. Operations include device registrations and re-registrations; operations also include service-side changes such as adding enrollment list entries, and updating enrollment list entries.
+
