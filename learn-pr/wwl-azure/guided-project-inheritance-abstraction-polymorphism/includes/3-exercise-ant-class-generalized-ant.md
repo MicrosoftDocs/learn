@@ -69,7 +69,7 @@ In this exercise, you'll get to see how inheritance works and how to implement i
     }
     ```
 
-    Essentially, what you are doing here is passing in the same parameters you passed into the `Ant` class into your new `GeneralizedAnt` class. You are then inheriting the base class constructor of `GeneralizedAnt`, the `Ant` class constructor, to initialize `GeneralizedAnt`.
+    Essentially, what you are doing here's passing in the same parameters you passed into the `Ant` class into your new `GeneralizedAnt` class. You're then inheriting the base class constructor of `GeneralizedAnt`, the `Ant` class constructor, to initialize `GeneralizedAnt`.
 
 1. Replace Ant with `GeneralizedAnt`.
 

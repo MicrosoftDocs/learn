@@ -1,10 +1,10 @@
-In this exercise, you'll add a movement rule to your  `GeneralizedAnt` class. Currently, LangtonsAnts is pretty simple. You have two colors, `0` for black and `1` for white. An ant rotates clockwise when standing on a cell with `0` color and counter-clockwise when standing on `1`. Upon landing on either a `0` or `1`, the color of the cell is flipped from either black to white, or white to black.
+In this exercise, you'll add a movement rule to your  `GeneralizedAnt` class. Currently, LangtonsAnts is simple. You have two colors, `0` for black and `1` for white. An ant rotates clockwise when standing on a cell with `0` color and counter-clockwise when standing on `1`. When an ant lands on a `0` or `1` cell, the cell color changes from black to white or from white to black.
 
 Let’s make a `GeneralizedAnt` rule so that an ant can turn in either direction, when standing on either a black or white cell.
 
 ## Implement Rule property
 
-To start, add a public string value property called Rule to `GeneralizedAnt`. You will use a string that maps the direction our Ant turns, based on the color of its previous cell. For example, string "R" would mean that we turn "right" (clockwise) on color 0 and "left" (counter-clockwise) on color 1.
+To start, add a public string value property called Rule to `GeneralizedAnt`. You'll use a string that maps the direction our Ant turns, based on the color of its previous cell. For example, string "R" would mean that we turn "right" (clockwise) on color 0 and "left" (counter-clockwise) on color 1.
 
 1. Open the LangtonsAnts project in VS Code.
 
@@ -16,7 +16,7 @@ To start, add a public string value property called Rule to `GeneralizedAnt`. Yo
 
 1. For the return type, type `string` and press Enter twice.
 
-1. Type Rule for the name, type `Rule` then press Enter to move to the end of the line.
+1. Enter `Rule` for the name, then press Enter to move to the end of the line.
 
 1. At the end of the property, add `= "RL"`
 
@@ -41,7 +41,7 @@ Now you need to implement a new version of the Act method that uses your Rule pr
 
 Implement a new version in your `GeneralizedAnt` class that changes the direction of your `GeneralizedAnt` instance, according to the rule set by the `Rule` property. Rather than change direction based on the color of the cell landed on, it will instead change direction based on the previous direction. If an ant went to the right previously, it will now go to the left, etcetera.
 
-You will also make this version of your `Act` method override the original inherited version in the `Ant` class. To do that, you make the original `Ant` class version of the method virtual, then override the method in `GeneralizedAnt`.
+You'll also make this version of your `Act` method override the original inherited version in the `Ant` class. To do that, you make the original `Ant` class version of the method virtual, then override the method in `GeneralizedAnt`.
 
 1. Create an `Act` method beneath your Rule property.
 
@@ -124,6 +124,6 @@ Now you can check your work. The program should work exactly like it did before.
 
 1. Select VS Code View menu.
 1. Select Terminal.
-1. Type `cd` and press Enter to go to the Starter directory, if you are not already in it.
+1. Type `cd` and press Enter to go to the Starter directory, if you aren't already in it.
 1. Type 'dotnet build' to build your code and press enter.
 1. Type 'dotnet run' and press enter.
