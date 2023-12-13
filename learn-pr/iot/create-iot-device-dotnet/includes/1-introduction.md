@@ -1,4 +1,4 @@
-.NET runs on many different platforms and architectures. One of the most exciting places to run .NET is on IoT devices like Raspberry Pi. These devices enable new scenarios, making use of sensors, analog-to-digital converters, and LCD devices.
+.NET runs on many different platforms and architectures. One of the most exciting places to run .NET is on IoT devices like Raspberry Pi. These devices enable new scenarios making use of sensors, analog-to-digital converters, and LCD devices.
 
 With the .NET IoT Libraries, you can build devices for tasks such as:
 
