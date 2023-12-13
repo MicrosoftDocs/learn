@@ -3,7 +3,8 @@ uid: learn.implement-compliance-cloud-native-applications.exercise-generate-comp
 title: Exercise - Redact sensitive data in cloud native applications
 metadata:
   title: Exercise - Redact sensitive data in cloud native applications
-  description: Add code to your cloud native application to generate compliance reports, and then review them.
+  description: Add code to your cloud native application to generate compliance reports and then review them.
+  ms.date: 11/30/2023
   author: codemillmatt
   ms.author: masoucou
   ms.topic: unit
