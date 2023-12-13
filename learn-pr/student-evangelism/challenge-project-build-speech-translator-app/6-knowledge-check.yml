@@ -3,7 +3,7 @@ uid: learn.student-evangelism.challenge-project-build-speech-translator-app.know
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge Check"
+  description: "Knowledge check."
   ms.date: 10/2/2023
   author: theoyinbooke
   ms.author: ooyinbooke
@@ -28,13 +28,13 @@ quiz:
     choices:
     - content: "Directly in formula bars"
       isCorrect: false
-      explanation: "Incorrect. Storing keys directly in formula bars is insecure"
+      explanation: "Incorrect. Storing keys directly in formula bars is insecure."
     - content: "As app settings"
       isCorrect: false
-      explanation: "Incorrect. App settings are visible to users. Storing keys in controls is insecure"
+      explanation: "Incorrect. App settings are visible to users. Storing keys in controls is insecure."
     - content: "API connections"
       isCorrect: true
-      explanation: "Correct. Keys should be stored securely in API connections, not coded directly"
+      explanation: "Correct. Keys should be stored securely in API connections, not coded directly."
   - content: "How can the Speech API model be improved over time?"
     choices:
     - content: "Increase API call volume"
