@@ -2,8 +2,8 @@
 uid: learn.backup-restore-azure-sql.7-exercise-restore-database
 metadata:
   title: Exercise - Recover data by restoring an Azure SQL database
-  description: In this unit, you'll recover from a mistaken database modification by restoring a backup.
-  ms.date: 03/10/2022
+  description: Learn how to recover from a mistaken database modification by restoring a backup.
+  ms.date: 12/11/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
