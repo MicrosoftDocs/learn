@@ -5,7 +5,7 @@ metadata:
   description: "Build a speech translation app using Microsoft Power Apps and integrate AI into it."
   ms.date: 12/13/2023
   author: theoyinbooke
-  ms.author: ooyinbooke
+  ms.author: somelezediko
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
 title: Challenge project - Build a speech translator app
