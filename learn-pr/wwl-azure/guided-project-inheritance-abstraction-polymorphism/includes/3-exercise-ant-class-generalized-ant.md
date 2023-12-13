@@ -102,5 +102,8 @@ Now you can check your work. The program should work exactly like it did before.
 
 Learn more
 
-> [!NOTE]
-> <a href="https://www.bing.com/search?showconv=1&sendquery=1&q=Write%20a%20C%23%20that%20demonstrates%20polymorphism.%20The%20demonstration%20code%20should%20have%20an%20animal%20base%20class%20with%20a%20MakeSound%20method%20that%20is%20inherited%20from%20a%20Dog%20and%20Cat%20child%20classes.%20Identify%20each%20aspect%20of%20the%20program%20that%20is%20polymorhic%20and%20why%20it%20is%20polymorphic%20using%20bullet%20points%0A">See examples of polymorphism with Bing Chat AI</a>
+> <a href="https://www.bing.com/search?showconv=1&sendquery=1&q=Write%20a%20C%23%20that%20demonstrates%20polymorphism.%20The%20demonstration%20code%20should%20have%20an%20animal%20base%20class%20with%20a%20MakeSound%20method%20that%20is%20inherited%20from%20a%20Dog%20and%20Cat%20child%20classes.%20Identify%20each%20aspect%20of%20the%20program%20that%20is%20polymorhic%20and%20why%20it%20is%20polymorphic%20using%20bullet%20points%0A">Example 1, Polymorphism, with Bing Chat AI</a>  
+
+> <a href="https://www.bing.com/search?showconv=1&sendquery=1&q=Create a class diagram that describes polymorphism using inheritance in object-oriented programming. Use bullet points. Include text based diagram.">Example 2, Polymorphism, with Bing Chat AI</a>  
+
+> <a href="https://www.bing.com/search?showconv=1&sendquery=1&q=Give me a concise description of object-oriented polymorphism using inheritance. Include bullet points.">Example 3, Polymorphism, with Bing Chat AI</a>
