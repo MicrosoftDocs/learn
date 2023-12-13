@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-(pillar-principle)
+title: Principle-name
+metadata:
+  title: Principle-name
+  description: 
+  ms.date:
+  author:
+  ms.author:
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/md-name)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'question-1'
+    choices:
+    - content: 'choice-1-content'
+      isCorrect: false
+      explanation: 'choice-2-explanation'
+    - content: 'choice-3-content'
+      isCorrect: true
+      explanation: 'choice-3-explanation'
+    - content: 'choice-4-content'
+      isCorrect: false
+      explanation: "choice-4-explanation"
+    - content: 'choice-5-content'
+      isCorrect: false
+      explanation: "choice-5-explanation"
+
+  - content: 'question-2'
+    choices:
+    - content: 'choice-1-content'
+      isCorrect: false
+      explanation: 'choice-2-explanation'
+    - content: 'choice-3-content'
+      isCorrect: true
+      explanation: 'choice-3-explanation'
+    - content: 'choice-4-content'
+      isCorrect: false
+      explanation: "choice-4-explanation"
+    - content: 'choice-5-content'
+      isCorrect: false
+      explanation: "choice-5-explanation"
+
+  - content: 'question-3'
+    choices:
+    - content: 'choice-1-content'
+      isCorrect: false
+      explanation: 'choice-2-explanation'
+    - content: 'choice-3-content'
+      isCorrect: true
+      explanation: 'choice-3-explanation'
+    - content: 'choice-4-content'
+      isCorrect: false
+      explanation: "choice-4-explanation"
+    - content: 'choice-5-content'
+      isCorrect: false
+      explanation: "choice-5-explanation"
