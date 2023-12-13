@@ -31,4 +31,6 @@ To validate that you have satisfied the requirements for the second exercise, te
 1. Ask your bot what the evacuation process is. Does it provide only generative answers?
 1. Ask your bot other questions within the scope of its knowledge and see if it only provides generative answers.
 
+:::image type="content" source="../media/emergency-questions.png" alt-text="Screenshot showing the Copilot Studio chatbot answering emergency-related questions.":::
+
 For more information on Generative Answers Nodes, see this documentation [Generative Answers with Search and Summarize Content](/microsoft-copilot-studio/nlu-boost-node)

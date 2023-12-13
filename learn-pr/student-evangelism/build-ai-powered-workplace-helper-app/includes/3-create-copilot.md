@@ -22,5 +22,8 @@ Follow these steps to test your app and validate that you satisfied the requirem
 1. Ensure your chatbot is saved in Copilot Studio.
 1. Test your chatbot by selecting **Test your Copilot** in the bottom left corner of Copilot Studio.
 1. Ask your chatbot questions about content you know is in the provided documents/websites.
+
+    :::image type="content" source="../media/test-copilot.png" alt-text="Screenshot showing the chat window in Copilot Studio with an ongoing dialogue with the chatbot on employee procedure information.":::
+
 1. Test your chatbot with a question that is out of the scope of what is covered in the provided documents/websites.
 1. Test to see what your chatbot does when you ask for emergency fire procedures.
