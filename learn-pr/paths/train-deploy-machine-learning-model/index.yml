@@ -3,7 +3,7 @@ uid: learn.wwl.train-deploy-machine-learning-model
 metadata:
   title: Train and deploy a machine learning model with Azure Machine Learning
   description: To train a machine learning model with Azure Machine Learning, you need to make data available and configure compute. After training your model and tracking model metrics with MLflow, you can decide to deploy your model to an endpoint for real-time predictions.
-  ms.date: 12/13/2023
+  ms.date: 12/12/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: learning-path
@@ -12,7 +12,7 @@ prerequisites: |
   None
 summary: |
   To train a machine learning model with Azure Machine Learning, you need to make data available and configure the necessary compute. After training your model and tracking model metrics with MLflow, you can decide to deploy your model to an online endpoint for real-time predictions. Throughout this learning path, you explore how to set up your Azure Machine Learning workspace, after which you train and deploy a machine learning model.
-iconUrl: /training/achievements/train-deploy-machine-learning-model.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
 roles:
