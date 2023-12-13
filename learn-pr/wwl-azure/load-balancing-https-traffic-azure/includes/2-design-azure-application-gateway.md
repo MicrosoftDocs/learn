@@ -1,4 +1,3 @@
-
 Azure Application Gateway is a web traffic load balancer that enables you to manage traffic to your web applications. Traditional load balancers operate at the transport layer (OSI layer 4 - TCP and UDP) and route traffic based on source IP address and port, to a destination IP address and port.
 
 :::image type="content" source="../media/azure-application-gateway-flow-699baa3e.png" alt-text="Azure Application Gateway traffic flow":::
@@ -37,7 +36,7 @@ Path-based routing sends requests with different URL paths different pools of ba
 
 ### Multiple site routing
 
-Multiple site routing configures more than one web application on the same application gateway instance. In a multi-site configuration, you register multiple DNS names (CNAMEs) for the IP address of the Application Gateway, specifying the name of each site. Application Gateway uses separate listeners to wait for requests for each site. Each listener passes the request to a different rule, which can route the requests to servers in a different back-end pool. For example, you could direct all requests for [http://contoso.com](http://contoso.com/) to servers in one back-end pool, and requests for [http://fabrikam.com](http://fabrikam.com/) to another back-end pool. The following diagram shows this configuration.
+Multiple site routing configures more than one web application on the same application gateway instance. In a multi-site configuration, you register multiple DNS names (CNAMEs) for the IP address of the Application Gateway, specifying the name of each site. Application Gateway uses separate listeners to wait for requests for each site. Each listener passes the request to a different rule, which can route the requests to servers in a different back-end pool. For example, you could direct all requests for [https://contoso.com](https://contoso.com/) to servers in one back-end pool, and requests for [https://fabrikam.com](https://fabrikam.com/) to another back-end pool. The following diagram shows this configuration.
 
 :::image type="content" source="../media/app-gateway-site-0ea3f85a.png" alt-text="Multiple site routing example":::
 

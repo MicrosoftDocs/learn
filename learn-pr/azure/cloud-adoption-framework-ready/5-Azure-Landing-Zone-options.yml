@@ -8,8 +8,7 @@ metadata:
   ms.date: 05/12/2022
   author: Zimmergren
   ms.author: tozimmergren
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/5-Azure-Landing-Zone-options.md)]

@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/21/2023
   author: PageWriter-MSFT
   ms.author: b-ahibbard
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-vmware
 title: Using Azure NetApp Files with Azure VMware Solution
 summary: |

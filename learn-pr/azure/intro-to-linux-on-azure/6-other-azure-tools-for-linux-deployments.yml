@@ -7,11 +7,10 @@ metadata:
   ms.date: 05/01/2023
   author: chasecrum
   ms.author: chasecrum
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-arm-template
     - devx-track-azurecli
-  ms.prod: learning-azure
 durationInMinutes: 11
 content: |
   [!include[](includes/6-other-azure-tools-for-linux-deployments.md)]

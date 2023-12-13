@@ -1,7 +1,11 @@
-Now it's your chance to work with the Responsible AI dashboard in Azure Machine Learning for yourself. In this exercise, you create a Responsible AI dashboard with the Python SDK v2 and explore the results.
+Now it's your chance to work with the Responsible AI dashboard in Azure Machine Learning for yourself. 
 
-> [!NOTE]
-> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.
+In this exercise, learn how to:
+
+- Create a pipeline with the Python SDK v2 to create a Responsible AI dashboard.
+- Explore the results of the dashboard in the Azure Machine Learning studio.
+
+## Instructions
 
 Launch the exercise and follow the instructions.
 

@@ -5,9 +5,9 @@ metadata:
   title: Summary
   description: In this section, we summarize the key ideas in the module and emphasize the ideas to ensure learning retention
   ms.date: 6/22/2020
-  author: leestott
+  author: PatAltimore
   ms.author: leestott
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom: team=nextgen
   ms.service: iot-hub
 durationInMinutes: 4 # dummy number at present

@@ -14,7 +14,7 @@ In this exercise, you'll complete the following steps:
 
 ## Deploy the same database in the Business Critical tier
 
-In a previous module of this learning path, you learned how to scale a database by using T-SQL. The goal of this exercise is to upgrade the database that you used in the previous exercise from General Purpose to Business Critical. You'll use Azure CLI commands in Azure Cloud Shell to upgrade the database. Because there's a limit on the frequency of failovers, you'll use the same sample database but name it AdventureWorks-bc.  
+In a previous module, you learned how to scale a database by using T-SQL. The goal of this exercise is to upgrade the database that you used in the previous exercise from General Purpose to Business Critical. You'll use the Azure Cloud Shell to upgrade the database. Because there's a limit on the frequency of failovers, you'll use the same sample database but name it AdventureWorks-bc.  
 
 1. In the Azure Cloud Shell terminal on the right side of this page, run the following PowerShell script to configure your environment:  
 
@@ -43,7 +43,7 @@ In a previous module of this learning path, you learned how to scale a database 
     --zone-redundant false
     ```
 
-    It will take some time for this command to finish. While it's running, you can review some of the parameters used:
+    This command takes some time to finish. While it's running, you can review some of the parameters used:
 
     * `family`: This parameter specifies the generation of the hardware. To be consistent with the previous exercise, we used `Gen5`.
     * `capacity`: This parameter specifies the number of DTUs or vCores. To be consistent with the previous exercise, we used `2` vCores.
@@ -70,7 +70,7 @@ In a previous module of this learning path, you learned how to scale a database 
 
 As in the previous exercise, you'll use ostress to repeatedly query your Azure SQL database.
 
-1. Open a new Command Prompt window on your local computer. Use `cd` to go to the directory in the repository you cloned or downloaded earlier that contains the availability module. For example, you might use this command: 
+1. If you closed the Command Prompt you used in the previous exercise, open a new Command Prompt window on your local computer. Use `cd` to go to the directory in the repository you cloned or downloaded earlier that contains the availability module. For example, you might use this command:
 
     ```cmd
     cd C:\Users\username\mslearn-azure-sql-fundamentals\05-Availability
@@ -105,7 +105,7 @@ As in the previous exercise, you'll use ostress to repeatedly query your Azure S
 
 1. While this command is running, you should observe any changes that appear in the terminal. You'll notice that you can't access the database while the failover occurs. This time is very short. After you become disconnected, you should be reconnected after about 5 seconds! This failover is more than six times faster than the one in the General Purpose tier.  
 
-    Remember that databases or managed instances in the Business Critical service tier essentially have an Always On availability group deployed behind the scenes. So when you fail over, all that happens is a change in pointers in the back end as Azure redirects you to one of the secondaries. That's why the failover is so much faster than it would be in General Purpose.
+    Remember that databases or managed instances in the Business Critical service tier essentially have an Always On availability group deployed behind the scenes, so when you fail over, all that happens is a change in pointers in the back end as Azure redirects you to one of the secondaries. That's why the failover is so much faster than it would be in General Purpose.
 
 ## Connect to the read-only replica
 
@@ -123,7 +123,7 @@ ApplicationIntent=ReadOnly;
 
     :::image type="content" source="../media/3-connect-azure-sql.png" alt-text="Screenshot that shows the Connect to Server dialog box.":::  
 
-1. Select **Connection Properties**, and then select **Reset All**. Under **Connect to database**, select **Browse server** and then select your **AdventureWorks-bc** database.  
+1. Select **Connection Properties**, and then select **Reset All**. Under **Connect to database**, select **Browse server** and then select your **AdventureWorks-bc** database. Select **OK**.
 
 1. Select **Additional Connection Parameters** and paste the following into the text box. Select **Connect**.  
 

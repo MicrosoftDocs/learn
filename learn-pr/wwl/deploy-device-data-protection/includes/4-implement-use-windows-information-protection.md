@@ -57,14 +57,14 @@ The following table describes the different boundary type options.
 
 | Network element        | Description |
 | ---------------------- | ----------- |
-| Cloud resources        |Specifies URLs for cloud-based resources or applications such as SharePoint Online or Microsoft Visual Studio Codespace that should be treated as containing organizational data. You can make multiple entries by using the format URL1|URL2.|
+| Cloud resources        |Specifies URLs for cloud-based resources or applications such as SharePoint Online or Microsoft Visual Studio Codespace that should be treated as containing organizational data. You can make multiple entries by using the format **URL1**\|**URL2**.|
 | Protected domains      |Defines DNS suffixes for domains that should be treated as protected. Multiple entries are allowed by using the format domainname1,domainname2; for example, corp.adatum.com,sales.adatum.com.|
 | Network domains        |Defines the DNS suffixes that are used within your environment. Multiple entries are allowed by using the format domainname1,domainname2; for example, corp.adatum.com,sales.adatum.com.|
 | Proxy servers          |Specifies external-facing proxy server addresses and ports where WIP should protect traffic. For example, proxy.adatum.com:80;proxy2.adatum.com:137.|
 | Internal proxy servers |Specifies proxy servers that devices use to reach cloud-based resources. Uses the same format as enterprise proxy servers.|
 | IPv4 ranges            |Specifies the range of Internet Protocol version 4 (IPv4) addresses used in your network. Enter by using the format startingaddress-endingaddress, with multiple ranges separated by commas. This network element is required if you don't specify an enterprise Internet Protocol version 6 (IPv6) range.|
 | IPv6 ranges            |Specifies the range of IPv6 addresses used in your network. This network element is required if you don't specify enterprise IPv4 ranges, and it uses the same format as IPv4.|
-| Neutral resources      |Specifies authentication redirection endpoints for your company, such as Active Directory Federation Services endpoints. Enter by using the format URL1|URL2.|
+| Neutral resources      |Specifies authentication redirection endpoints for your company, such as Active Directory Federation Services endpoints. Enter by using the format **URL1**\|**URL2**.|
 
 #### Data Recovery Agent (DRA) certificate
 

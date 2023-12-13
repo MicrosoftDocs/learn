@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/07/2023
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: active-directory
 title: Describe access management capabilities of Microsoft Entra ID
 summary: A key function of Microsoft Entra ID is to manage access.  Learn about the conditional access and how Microsoft Entra roles and role-based access control (RBAC) helps organizations manage and control access.

@@ -7,7 +7,7 @@ metadata:
   author: rwestmsft
   ms.author: randolphwest
   manager: jroth
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: sql
   ms.technology: sql-linux
 title: Deploy SQL Server on Linux

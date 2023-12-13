@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation.exercise-mvp
+title: Exercise - Create your minimum viable product
+metadata:
+  title: Exercise - Create your minimum viable product
+  description: "Exercise - Create your minimum viable product"
+  ms.date: 12/04/2023
+  author: bethanyjep
+  ms.author: bethanycheum
+  ms.custom: team=nextgen
+  ms.topic: module-challenge-project
+  ms.service: bing
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-mvp.md)]

@@ -1,5 +1,4 @@
 
-
 A software developer once famously said, "The hardest part of software development is naming things." Not only does the name of a variable have to follow certain syntax rules, it should also be used to make the code more human-readable and understandable. That's a lot to ask of one line of code!
 
 ## Variable name rules

@@ -1,8 +1,8 @@
 This unit describes how to use permissions granted by custom roles in Microsoft Entra ID to address your application management needs. In Microsoft Entra ID, you can delegate application creation and management permissions by:
 
  -  Restricting who can create applications and manage the applications they create.
- -  Assigning one or more owners to an application. Assigning owners is a simple way to grant someone the ability to manage all aspects of Microsoft Entra configuration for a specific application.
- -  Assigning a built-in administrative role that grants access to manage configuration in Microsoft Entra ID for all applications. Built-in roles are the recommended way to grant IT experts access to manage broad application configuration permissions without granting access to manage other parts of Microsoft Entra not related to application configuration.
+ -  Assigning one or more owners to an application. Assigning owners is a simple way to grant someone the ability to manage all aspects of Microsoft Entra ID configuration for a specific application.
+ -  Assigning a built-in administrative role that grants access to manage configuration in Microsoft Entra ID for all applications. Built-in roles are the recommended way to grant IT experts access to manage broad application configuration permissions without granting access to manage other parts of Microsoft Entra ID not related to application configuration.
  -  Creating a custom role defining specific permissions and assigning it to someone either to the scope of a single application as a limited owner, or at the directory scope (all applications) as a limited administrator.
 
 It's important to consider granting access using one of the above methods for two reasons. First, delegating the ability to perform administrative tasks reduces global administrator overhead. Second, using limited permissions improves your security posture and reduces the potential for unauthorized access.
@@ -17,9 +17,9 @@ In Microsoft Entra ID, all users can register application registrations and mana
 2.  Set one or both of the following:
     
     
-     -  On the **User settings** page for your organization, set the **Users can register applications** setting to No. This will disable the default ability for users to create application registrations.
-     -  On the **User Settings** for enterprise application, configure if users can add Gallery Apps to My App or if Office 365 apps appear in the Office portal.
-     -  On the **Consent and Permissions** settings for enterprise applications, set the **Users can consent to applications accessing company data on their behalf** setting to No. This will disable the default ability for users to consent to applications accessing company data on their behalf.
+     -  On the **User settings** page for your organization, set the **Users can register applications** setting to No. This disables the default ability for users to create application registrations.
+     -  On the **User Settings** for enterprise applications, configure if users can add Gallery Apps to My App or if Office 365 apps appear in the Office portal.
+     -  On the **Consent and Permissions** settings for enterprise applications, set the **Users can consent to applications accessing company data on their behalf** setting to No. This disables the default ability for users to consent to applications accessing company data on their behalf.
 
 ### Grant individual permissions to create and consent to applications when the default ability is disabled
 
@@ -27,7 +27,7 @@ Assign the Application Developer role to grant the ability to create application
 
 ## Assign application owners
 
-Assigning owners is a simple way to grant the ability to manage all aspects of Microsoft Entra configuration for a specific application registration or enterprise application. As a system behavior, when a user creates a new application registration, they're automatically added as the first owner. Ownership permissions give the user the ability to manage all aspects of an application registration or enterprise application that they own. The original owner can be removed and additional owners can be added.
+Assigning owners is a simple way to grant the ability to manage all aspects of Microsoft Entra ID configuration for a specific application registration or enterprise application. As a system behavior, when a user creates a new application registration, they're automatically added as the first owner. Ownership permissions give the user the ability to manage all aspects of an application registration or enterprise application that they own. The original owner can be removed and additional owners can be added.
 
 ### Enterprise application owners
 
@@ -45,17 +45,17 @@ In some cases, enterprise applications created from the application gallery incl
 > [!IMPORTANT]
 > Users and service principals can be owners of application registrations. Only users can be owners of enterprise applications. Groups cannot be assigned as owners of either.
 
-Owners can add credentials to an application and use those credentials to impersonate the application’s identity. The application may have more permissions than the owner, and thus would be an elevation of privilege over what the owner has access to as a user or service principal. Depending on the application's permissions, an application owner could potentially create or update users or other objects while impersonating the application.
+Owners can add credentials to an application and use those credentials to impersonate the application’s identity. The application has more permissions than the owner, and thus would be an elevation of privilege over what the owner has access to as a user or service principal. Depending on the application's permissions, an application owner could potentially create or update users or other objects while impersonating the application.
 
 ## Assign built-in application admin roles
 
-Microsoft Entra ID has a set of built-in admin roles for granting access to manage configuration in Microsoft Entra ID for all applications. These roles are the recommended way to grant IT experts access to manage broad application configuration permissions without granting access to manage other parts of Microsoft Entra not related to application configuration.
+Microsoft Entra ID has a set of built-in admin roles for granting access to manage configuration in Microsoft Entra ID for all applications. These roles are the recommended way to grant IT experts access to manage broad application configuration permissions without granting access to manage other parts of Microsoft Entra ID not related to application configuration.
 
  -  Application Administrator: Users in this role can create and manage all aspects of enterprise applications, application registrations, and application proxy settings. This role also grants the ability to consent to delegated permissions and application permissions, excluding Microsoft Graph. Users assigned to this role aren't added as owners when creating new application registrations or enterprise applications.
  -  Cloud Application Administrator: Users in this role have the same permissions as the Application Administrator role, excluding the ability to manage application proxy. Users assigned to this role aren't added as owners when creating new application registrations or enterprise applications.
     
     > [!IMPORTANT]
-    > Application Administrators and Cloud Application Administrators can add credentials to an application and use those credentials to impersonate the application’s identity. The application may have permissions that are an elevation of privilege over the admin role's permissions. Depending on the application's permissions, an admin in one of these roles could potentially create or update users or other objects while impersonating the application. Neither role grants the ability to manage Conditional Access settings.
+    > Application Administrators and Cloud Application Administrators can add credentials to an application and use those credentials to impersonate the application’s identity. The application has permissions that are an elevation of privilege over the admin role's permissions. Depending on the application's permissions, an admin in one of these roles could potentially create or update users or other objects while impersonating the application. Neither role grants the ability to manage Conditional Access settings.
 
 ## Create and assign a custom role
 
@@ -68,6 +68,6 @@ This separation enables you to create a single role definition and then assign i
 
 Tips when creating and using custom roles for delegating application management:
 
- -  Custom roles only grant access in the most current app registration blades of the Microsoft Entra admin center. They don't grant access in the legacy app registrations blades.
- -  Custom roles don't grant access to the Microsoft Entra admin center when the **Restrict access to Microsoft Entra administration** portal user setting is set to Yes.
+ -  Custom roles only grant access in the most current app registration screen of the Microsoft Entra admin center. They don't grant access in the legacy app registrations screen.
+ -  Custom roles don't grant access to the Microsoft Entra ID portal when the **Restrict access to Microsoft Entra ID administration** portal user setting is set to Yes.
  -  For app registrations the user has access to, role assignments only show up in the **All applications** tab on the **App registration** page. They don't show up in the **Owned applications** tab.

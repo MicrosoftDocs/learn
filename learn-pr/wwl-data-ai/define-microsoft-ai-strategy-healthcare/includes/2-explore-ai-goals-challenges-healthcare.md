@@ -2,6 +2,10 @@ Healthcare is a large and diverse sector. It encompasses a wide range of service
 
 Despite its size and complexity, there are some shared goals and challenges that are crucial for the healthcare industry.
 
+In the following video, Rob Dahdah shares how Microsoft is helping healthcare organizations face current challenges. Dahdah is Corporate Vice President of Industry and Partner Sales for the Health and Life Sciences at Microsoft.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=402b705a-ba7e-412a-b9ed-17570b745397]
+
 ## Goals
 All healthcare professionals share these objectives. As all healthcare practices, AI use cases must adhere to them.
 

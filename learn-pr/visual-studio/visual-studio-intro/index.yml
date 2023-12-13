@@ -4,10 +4,11 @@ metadata:
   moduleType: introduction
   title: Introduction to Visual Studio
   description: "Evaluate what Visual Studio can add to your development experience with tools like the advanced editor, debugger, code-sharing, and publishing tools"
-  ms.date: 12/20/2022
+  ms.date: 10/27/2023
   author: anandmeg
   ms.author: meghaanand
   manager: jmartens
+  hidden: true
   ms.topic: module-intro-to-product
   ms.prod: visual-studio-windows
 title: Introduction to Visual Studio

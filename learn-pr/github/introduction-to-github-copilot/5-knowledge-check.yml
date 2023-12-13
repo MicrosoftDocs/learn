@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check what you've learned.
-  ms.date: 5/2/2023
+  ms.date: 12/5/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: github
+  ms.topic: unit
 durationInMinutes: 5
 ###########################################################################
 
@@ -52,3 +51,4 @@ quiz:
     - content: "A product focused on organizations to help them be more productive, secure, and fulfilled."
       isCorrect: false
       explanation: "Although GitHub Copilot for Business is a part of GitHub Copilot X, GitHub Copilot X is GitHub's vision for the future of AI-powered software development."
+

@@ -8,8 +8,7 @@ metadata:
   author: steved0x
   ms.author: sdanie
   ms.custom: devdivchpfy22, devx-track-azurecli
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/3-set-up-environment.md)]

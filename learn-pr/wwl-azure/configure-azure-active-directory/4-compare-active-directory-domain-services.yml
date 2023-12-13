@@ -4,11 +4,10 @@ title: Compare Active Directory Domain Services to Microsoft Entra ID
 metadata:
   title: Compare Active Directory Domain Services to Microsoft Entra ID
   description: "Compare Active Directory Domain Services to Microsoft Entra ID"
-  ms.date: 10/10/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.service: active-directory
+  ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 2

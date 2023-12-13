@@ -6,8 +6,7 @@ metadata:
   ms.date: 04/14/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Exercise - Ensure that Visual Studio Code is ready to create a personality quiz
 durationInMinutes: 5

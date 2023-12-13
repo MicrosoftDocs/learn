@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-large-language-models.concept-understand-llms
+title: "Understand LLMs"
+metadata:
+  title: "Understand LLMs"
+  description: Understand what large language models are and how they can be used.
+  ms.date: 11/30/2023
+  author: softchris
+  ms.author: chnoring
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-understand-large-language-models.md)]

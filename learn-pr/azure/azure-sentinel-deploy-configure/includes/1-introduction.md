@@ -8,7 +8,7 @@ Suppose you work for a midsize financial services company in London with a branc
 - Microsoft Entra ID Protection
 - Microsoft Defender for Cloud Apps
 - Microsoft Defender for Cloud
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 - Microsoft Purview Information Protection
 - Microsoft Intune
 

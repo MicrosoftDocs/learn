@@ -1,21 +1,19 @@
 ### YamlMime:Module
 uid: learn.wwl.publish-use-language-understand-app
 metadata:
-  title: Publish and use an Azure AI Language Understanding app
-  description: "After creating an Azure AI Language Understanding app, you can publish it and consume it from client applications."
-  ms.date: 10/12/2022
+  title: Develop an app with Azure AI Language
+  description: "After creating an Azure AI Language Understanding model, you can publish it and consume it from client applications."
+  ms.date: 11/7/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-ai-language
-  ms.subservice: azure-ai-luis
-title: Publish and use an Azure AI Language Understanding app
-summary: After creating an Azure AI Language Understanding app, you can publish it and consume it from client applications.
+title: Develop an app with Azure AI Language
+summary: After creating an Azure AI Language Understanding model, you can publish it and consume it from client applications.
 abstract: |
   After completing this module, you'll be able to:
-  - Understand capabilities of an Azure AI Language Understanding app
-  - Process predictions from an Azure AI Language Understanding app
-  - Deploy an Azure AI Language understanding app in a container
+  - Understand capabilities of an Azure AI Language Understanding model
+  - Process predictions from an Azure AI Language in your app
 prerequisites: |
   Before starting this module, you should already have:
   *   Familiarity with Azure and the Azure portal.

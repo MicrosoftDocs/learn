@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-configuration-aspnet-core.6-summary
+metadata:
+  title: Summary
+  description: Summary
+  author: codemillmatt
+  ms.author: masoucou  
+  ms.date: 11/06/2023
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]

@@ -1,11 +1,10 @@
-The developers at Tailwind Traders realize that they're about to put extensive resources into developing apps for the Node.js platform. These apps are going to need testing. After some analysis, they find that Node.js has limited testing capabilities. So they need to use a framework. They've found Jest in the npm registry. It seems to be widely used and promises to be a zero-config test framework. At this point, they just want you to install Jest, write a couple tests, and run them to see if Jest delivers on its promise. 
+The Tailwind Traders team is planning to develop several Node.js apps. They've found Jest, a popular zero-config test framework, in the npm registry. They want you to install Jest, write a few tests, and run them to evaluate its effectiveness.
 
-## Add a testing package by using the npm tool
+## Add a test package with npm CLI
 
-You're given some code that parses an address from a string. Your task should be fairly straightforward. It involves installing the test framework, writing a couple tests, and running them.
+You have some code that extracts an address from a string. Your job is simple: install the test framework, write a few tests, and run them.
 
-
-1. In a new terminal window (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>), change to the folder that has the cloned files for this exercise:
+1. In a new terminal window (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>), change to the folder that has the files for this exercise:
 
    ```bash
    cd node-dependencies/5-exercise-dependency
@@ -27,31 +26,29 @@ You're given some code that parses an address from a string. Your task should be
 1. Open the **address-parser.js** file. It should look like this file:
 
    ```javascript
-   exports.parse = function parseOrder(order) {
-     const match = order.match(/order:\s(?<order>\w+\s\w+).*address:\s(?<address>\w+\s\w+\s\w+).*payment info:\s(?<payment>\w+)/)
-   return match.groups;
-   }
+    exports.addressParser = function parseOrder(order) {
+      const match = order.match(/order:\s(?<order>\w+\s\w+).*address:\s(?<address>\w+\s\w+\s\w+).*payment info:\s(?<payment>\w+)/)
+      return match.groups;
+    }
    ```
 
    This function takes a string and parses out information about what a customer orders, where it should be delivered, and how it will be paid for. We'll add Jest and write some tests for the function.
 
-   Close the address-parser.js file.
+1. Close the `address-parser.js` file.
 
-1. Install the Jest library by running this command:
+1. Install the Jest package by running this command:
 
    ```bash
    npm install jest --save-dev
    ```
 
-1. After the Jest library installs, open the package.json file and find the `devDependencies` section. You should see an entry that looks like this example:
+1. After the Jest package installs, open the `package.json` file and find the `devDependencies` section. You should see an entry that looks like this example where the value for the `jest` property is a semantic version number:
 
    ```json
    "devDependencies": {
-      "jest": "^29.6.3"
+      "jest": "<number.number.number>"
     }
    ```
-
-   Notice that the Jest library has an identified development dependency.
 
 1. In the package.json file, find the `scripts` section. Replace the existing `test` action entry with the following code:
 
@@ -59,7 +56,7 @@ You're given some code that parses an address from a string. Your task should be
    "test": "jest"
    ```
 
-   Save your changes and close the package.json file.
+1. Save your changes and close the package.json file.
 
 1. In the terminal, create a new subfolder named **\_\_tests\_\_**.
 
@@ -68,31 +65,32 @@ You're given some code that parses an address from a string. Your task should be
    ```
 
     > [!NOTE]
-    > Make sure that you use double underscores when you create the *\_\_tests\_\_* folder.
+    > Make sure that you use double underscores when you create the *\_\_tests\_\_* folder. The __tests__ folder is a naming convention used by Jest, the testing framework. Jest automatically recognizes any files in a __tests__ folder (or files with .test. or .spec. in their names) as test files and includes them when running tests. This convention helps keep test files organized and easily identifiable in your project.
 
-1. In the \_\_tests\_\_ folder, create a file named **address-parser.js**, and then add the following content to the file:
+1. In the \_\_tests\_\_ folder, create a file named **address-parser.spec.js**, and then add the following content to the file:
 
    ```javascript
-   const { parse } = require("../address-parser");
-
-   describe('Address parser', () => {
-     test('should parse correctly', () => {
-       expect(
-         parse(
-            "I want to to order: 3 books to address: 112 street city here is my payment info: cardnumber"
-         )
-         ).toEqual({
-           order: "3 books",
-           address: "112 street city",
-           payment: "cardnumber",
-         });
-     })
-   })
+    const { addressParser } = require('../address-parser');
+    
+    describe('Address Parser', () => {
+        test('should parse correctly', () => {
+            expect(addressParser("I want to to order: 3 books to address: 112 street city here is my payment info: cardnumber")
+            ).toEqual({
+                order: "3 books",
+                address: "112 street city",
+                payment: "cardnumber",
+            });
+        });
+    });
    ```
 
-   Save your changes and close the file.
+    The test script:
+    * Checks the parsing ability of the address-parser.js function.
+    * Ensures the function can correctly parse out the needed information.
 
-   Your project structure should now look like this example:
+1. Save your changes and close the file.
+
+1. Your project structure should now look like this example:
 
    ```output
    -| package.json
@@ -100,8 +98,6 @@ You're given some code that parses an address from a string. Your task should be
    -| __tests__/
    ---| address-parser.js
    ```
-
-   The test script checks the parsing ability of the address-parser.js function. The test ensures the function can correctly parse out the needed information.
 
 1. Run the tests by entering this command in the terminal:
 
