@@ -10,20 +10,17 @@ In this exercise, you'll:
 
 ## Open the development environment
 
-1. In a new browser window, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your own GitHub account.
-1. To set up your development environment with a Codespace, on the GitHub page for your forked repository:
+You can choose to use a GitHub codespace that hosts the exercise, or complete the exercise locally in Visual Studio Code.
 
-    - Select **Code**.
-    - Select the **Codespaces** tab.
-    - Select ... (Codespace repository configuration)
-    - Select **+ New with options**.
-    - Select the **Default project configuration** dropdown, then select **eShopLite - dotnet-compliance**.
-    - Select **Create codespace**.
+To use a **codespace** create a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-compliance%2Fdevcontainer.json).
 
-1. To use Visual Studio Code:
-    - Make sure Docker is running. In a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
-    - Search for and select **Dev Containers: Clone Repository in Container Volume**.
-    - Select your forked repository. Visual Studio Code creates your development container locally.
+GitHub takes several minutes to create and configure the codespace. When it's finished, you see the code files for the exercise. The code that's used for the remainder of this module is in the **/dotnet-compliance** directory.
+
+To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your own GitHub account. Then:
+
+1. Make sure Docker is running. In a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
+1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
+1. Select your forked repository. Visual Studio Code creates your development container locally.
 
 ### Update docker settings to run in a codespace
 
