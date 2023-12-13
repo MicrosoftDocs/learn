@@ -22,4 +22,6 @@ To validate that you have satisfied the requirements for the third exercise, tes
 1. Ask the bot a question about the company.
 1. Ask the bot a question about a fire-related emergency.
 
+    :::image type="content" source="../media/power-apps-deployment.png" alt-text="Screenshot showing the app successfully deployed on Power Apps.":::
+
 Congratulations! Your commitment paid off. You built a Workplace Helper App by using Copilot Studio with Generative AI and Power Apps! You can now get creative and add any extra features to your app or bot that you think would improve the experience for users.
