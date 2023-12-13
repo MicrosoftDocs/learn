@@ -6,8 +6,8 @@ Before proceeding with any other actions, it's essential to understand how to ac
 
 ### To access the portal
 
-To access the Defender for Cloud Apps portal, go to [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/). You can also access the portal through the [Microsoft 365 Defender portal](https://security.microsoft.com/), as follows:
-- In the [Microsoft 365 Defender Portal](https://security.microsoft.com/), select **More resources**, and then select **Defender for Cloud Apps**.
+To access the Defender for Cloud Apps portal, go to [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/). You can also access the portal through the [Microsoft Defender portal](https://security.microsoft.com/), as follows:
+- In the [Microsoft Defender portal](https://security.microsoft.com/), select **More resources**, and then select **Defender for Cloud Apps**.
 
 :::image type="content" source="../media/access-from-o365-s2.png" alt-text="Screenshot of the Microsoft Defender for Cloud Apps page with access settings.":::
 
@@ -72,7 +72,7 @@ Required task: Enable Defender for Cloud Apps to view your cloud app use.
     1. On the Log collectors tab, configure the log collector.
 
 ### Migration recommendation
-We recommend using Defender for Cloud Apps discovery in parallel with your current CASB solution. Start by configuring automatic firewall log upload to Defender for Cloud Apps [log collectors](/defender-cloud-apps/discovery-docker). If you use Defender for Endpoint, in Microsoft 365 Defender, make sure you [turn on the option](/defender-cloud-apps/mde-integration#how-to-integrate-microsoft-defender-for-endpoint-with-defender-for-cloud-apps) to forward signals to Defender for Cloud Apps. Configuring Cloud Discovery won't conflict with the log collection of your current CASB solution.
+We recommend using Defender for Cloud Apps discovery in parallel with your current CASB solution. Start by configuring automatic firewall log upload to Defender for Cloud Apps [log collectors](/defender-cloud-apps/discovery-docker). If you use Defender for Endpoint, in Microsoft Defender XDR, make sure you [turn on the option](/defender-cloud-apps/mde-integration#how-to-integrate-microsoft-defender-for-endpoint-with-defender-for-cloud-apps) to forward signals to Defender for Cloud Apps. Configuring Cloud Discovery won't conflict with the log collection of your current CASB solution.
 ### To create a snapshot Cloud Discovery report
 
 Go to **Discover** > **Create snapshot report** and follow the steps shown.

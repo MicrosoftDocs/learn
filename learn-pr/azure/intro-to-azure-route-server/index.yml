@@ -4,9 +4,9 @@ metadata:
   moduleType: introduction        
   title: Introduction to Azure Route Server         
   description: Evaluate whether Microsoft Azure Route Server is appropriate for resolving delays and outages in network communication.       
-  ms.date: 03/24/2023            
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 12/08/2023
+  author: halkazwini
+  ms.author: halkazwini
   ms.topic: module
   ms.service: route-server
 title: Introduction to Azure Route Server
