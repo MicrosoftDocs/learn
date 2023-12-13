@@ -36,11 +36,11 @@ subjects:
 units:
 - learn.implement-compliance-cloud-native-applications.introduction
 - learn.implement-compliance-cloud-native-applications.classify-sensitive-data-cloud-native-application
-- learn.implement-compliance-cloud-native-applications.exercise-create-github-action-build-container-images
+- learn.implement-compliance-cloud-native-applications.exercise-classify-sensitive-data-cloud-native-application
 - learn.implement-compliance-cloud-native-applications.redact-sensitive-data-cloud-native-application
 - learn.implement-compliance-cloud-native-applications.exercise-redact-sensitive-data-cloud-native-application
 - learn.implement-compliance-cloud-native-applications.generate-compliance-reports-cloud-native-application
-- learn.implement-compliance-cloud-native-applications.
+- learn.implement-compliance-cloud-native-applications.exercise-generate-compliance-reports-cloud-native-application
 - learn.implement-compliance-cloud-native-applications.knowledge-check
 - learn.implement-compliance-cloud-native-applications.summary
 badge:

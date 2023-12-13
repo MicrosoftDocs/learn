@@ -6,7 +6,7 @@ metadata:
   description: Add code to your cloud native application to generate compliance reports, and then review them.
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: module
+  ms.topic: unit
   ms.prod: .net
   ms.custom:
     - team=cloud_advocates
