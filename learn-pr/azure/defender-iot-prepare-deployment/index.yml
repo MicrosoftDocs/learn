@@ -3,7 +3,7 @@ uid: learn.defender-iot-prepare-deployment
 metadata:
   title: |
     Prepare to deploy Microsoft Defender for IoT
-  description: Learn how to plan your deployment of Microsoft Defender for IoT to monitor your OT network.
+  description: Learn how to prepare your deployment of Microsoft Defender for IoT to monitor your OT network.
   ms.date: 10/11/2023
   author: cwatson-cat
   ms.author: cwatson
