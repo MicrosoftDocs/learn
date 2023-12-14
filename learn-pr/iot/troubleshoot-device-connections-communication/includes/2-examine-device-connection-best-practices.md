@@ -239,7 +239,7 @@ When a device fails to connect to IoT Hub, or is disconnected from IoT Hub, reco
 :::row-end:::
 :::row:::
   :::column:::
-    For errors that indicate a retry is possible, but reconnection has failed 10 consecutive times
+    For errors that indicate a retry is possible, but reconnection failed 10 consecutive times
   :::column-end:::
   :::column:::
     Reprovision the device to DPS.
