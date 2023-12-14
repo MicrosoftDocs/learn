@@ -4,14 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "TODO this field is for search engine optimization and isn't user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 11/30/2023
+  ms.date: 12/13/2023
   author: codemillmatt
   ms.author: masoucou
   ms.topic: unit
-  ms.prod: .net
-  ms.custom:
-    - team=cloud_advocates
-    - devx-track-dotnet
+  ms.prod: dotnet
   ms.contributors:
   - masoucou-05122021
 durationInMinutes: 2

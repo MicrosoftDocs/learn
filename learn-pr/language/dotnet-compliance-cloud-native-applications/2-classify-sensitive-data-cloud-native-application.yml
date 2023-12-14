@@ -5,14 +5,11 @@ metadata:
   title: Classify sensitive data in a cloud native application
     learning-content
   description: The first step to protecting sensitive data is to identify it. In this unit, you'll learn how to classify sensitive data in a cloud native application.
-  ms.date: 11/30/2023
+  ms.date: 12/13/2023
   author: codemillmatt
   ms.author: masoucou
   ms.topic: unit
-  ms.prod: .net
-  ms.custom:
-    - team=cloud_advocates
-    - devx-track-dotnet
+  ms.prod: dotnet
   ms.contributors:
   - masoucou-05122021
 durationInMinutes: 3

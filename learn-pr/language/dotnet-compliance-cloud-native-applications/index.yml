@@ -7,7 +7,7 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.topic: module
-  ms.prod: .net
+  ms.prod: dotnet
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
@@ -23,13 +23,14 @@ prerequisites: |
   - Familiarity with basic Docker concepts and a Docker account
   - Familiarity with microservice design
   - Familiarity with developing applications in C# and .NET.
-iconUrl: /training/achievements/dotnet-microservices.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels: 
   - beginner
 roles: 
   - developer
 products: 
   - dotnet
+  - aspnet-core
 subjects: 
   - custom-app-development
   - compliance

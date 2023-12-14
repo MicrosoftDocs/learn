@@ -4,11 +4,11 @@ title: Summary
 metadata:
   title: Summary
   description: A quick recap of what you learned in this module.
-  ms.date: 11/30/2023
+  ms.date: 12/13/2023
   author: codemillmatt
   ms.author: masoucou
   ms.topic: unit
-  ms.prod: .net
+  ms.prod: dotnet
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]
