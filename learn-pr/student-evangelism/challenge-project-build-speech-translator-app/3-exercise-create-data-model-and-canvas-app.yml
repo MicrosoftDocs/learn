@@ -4,11 +4,11 @@ title: Exercise - Create data model and canvas app
 metadata:
   title: Exercise - Create data model and canvas app
   description: "Exercise - Create data model and canvas app."
-  ms.date: 10/2/2023
+  ms.date: 12/13/2023
   author: theoyinbooke
   ms.author: somelezediko
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
+  ms.topic: iunit
 durationInMinutes: 45
 content: |
   [!include[](includes/3-exercise-create-data-model-and-canvas-app.md)]
