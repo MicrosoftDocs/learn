@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.manage-application-access-microsoft-entra-id
+metadata:
+  title: Manage application access in Microsoft Entra ID
+  description: "This module focuses on effectively managing identities and enhancing security in Microsoft Enterprise Identity (Entra ID), ensuring that users, groups, and external identities are protected against security threats and unauthorized access."
+  ms.date: 12/14/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: module-intro-to-product
+  ms.prod: azure
+title: Manage application access in Microsoft Entra ID
+summary: This module is designed to equip administrators with the knowledge and skills necessary to manage and secure access to enterprise applications using Microsoft Enterprise Identity (Entra ID), ensuring that applications are accessible only to authorized users.
+abstract: |
+  By the end of this module, participants will be able to:
+  - Manage enterprise application access in Entra ID, including OAuth permission grants for access control.
+  - Govern application integration with identity platforms through Entra ID app registrations.
+  - Configure app registration permission scopes for appropriate resource access levels.
+  - Manage app registration consent and use service principals and managed identities for automated management and enhanced security.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- azure
+- entra-id
+subjects:
+- cloud-security
+units:
+- learn.wwl.manage-application-access-microsoft-entra-id.introduction
+- learn.wwl.manage-application-access-microsoft-entra-id.manage-access-to-an-application
+- learn.wwl.manage-application-access-microsoft-entra-id.managing-application-registrations-in-microsoft-entra-id
+- learn.wwl.manage-application-access-microsoft-entra-id.configure-an-application-to-expose-a-web-api
+- learn.wwl.manage-application-access-microsoft-entra-id.permissions-and-consent
+- learn.wwl.manage-application-access-microsoft-entra-id.application-and-service-principal-objects-in-microsoft-entra-id
+- learn.wwl.manage-application-access-microsoft-entra-id.managed-identities
+- learn.wwl.manage-application-access-microsoft-entra-id.configure-authentication-for-an-azure-ad-application-proxy
+- learn.wwl.manage-application-access-microsoft-entra-id.knowledge-check
+- learn.wwl.manage-application-access-microsoft-entra-id.summary
+badge:
+  uid: learn.wwl.manage-application-access-microsoft-entra-id.badge

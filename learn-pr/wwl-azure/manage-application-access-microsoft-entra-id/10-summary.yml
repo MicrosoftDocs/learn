@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-application-access-microsoft-entra-id.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 12/14/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/10-summary.md)]

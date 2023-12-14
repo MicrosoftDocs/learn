@@ -1,0 +1,72 @@
+## Application registration
+
+To delegate identity and access management functions to Microsoft Entra ID, an application must be registered with a Microsoft Entra tenant. When you register your application with Microsoft Entra ID, you're creating an identity configuration for your application that allows it to integrate with Microsoft Entra ID. When you register an app, you choose whether it's a single tenant, or multi-tenant, and can optionally set a redirect URI. For step-by-step instructions on registering an app, see the app registration quickstart.
+
+When you've completed the app registration, you have a globally unique instance of the app (the application object) that lives within your home tenant or directory. You also have a globally unique ID for your app (the app/client ID). You can add secrets or certificates and scopes to make your app work, customize the branding of your app in the sign-in dialog, and more.<br>
+
+If you register an application, an application object and a service principal object are automatically created in your home tenant. If you register/create an application using the Microsoft Graph APIs, creating the service principal object is a separate step.
+
+## Application object
+
+A Microsoft Entra application is defined by its one and only application object, which resides in the Microsoft Entra tenant where the application was registered (known as the application's "home" tenant). An application object is used as a template or blueprint to create one or more service principal objects. A service principal is created in every tenant where the application is used. Similar to a class in object-oriented programming, the application object has some static properties that are applied to all the created service principals (or application instances).
+
+The application object describes three aspects of an application:<br>
+
+ -  How the service can issue tokens in order to access the application<br>
+ -  The resources that the application might need to access
+ -  The actions that the application can take
+
+You can use the App registrations page in the Microsoft Entra admin center to list and manage the application objects in your home tenant.
+
+:::image type="content" source="../media/app-registrations-blade-e72e92be.png" alt-text="Screenshot showing owned application registrations.":::
+
+
+The Microsoft Graph **Application entity** defines the schema for an application object's properties.
+
+## Service principal object
+
+To access resources that are secured by a Microsoft Entra tenant, the entity that requires access must be represented by a security principal. This requirement is true for both users (user principal) and applications (service principal). The security principal defines the access policy and permissions for the user/application in the Microsoft Entra tenant. This enables core features such as authentication of the user/application during sign-in, and authorization during resource access.
+
+There are three types of service principal:<br>
+
+ -  Application - This type of service principal is the local representation, or application instance, of a global application object in a single tenant or directory. In this case, a service principal is a concrete instance created from the application object and inherits certain properties from that application object. A service principal is created in each tenant where the application is used and references the globally unique app object. The service principal object defines what the app can actually do in the specific tenant, who can access the app, and what resources the app can access.
+
+    > [!NOTE]
+    > When an application is given permission to access resources in a tenant (upon registration or consent), a service principal object is created. When you register an application, a service principal is created automatically. You can also create service principal objects in a tenant using Azure PowerShell, Azure CLI, Microsoft Graph, and other tools.
+
+ -  **Managed identity** \- This type of service principal is used to represent a managed identity. Managed identities eliminate the need for developers to manage credentials. Managed identities provide an identity for applications to use when connecting to resources that support Microsoft Entra authentication. When a managed identity is enabled, a service principal representing that managed identity is created in your tenant. Service principals representing managed identities can be granted access and permissions, but can't be updated or modified directly.<br>
+ -  **Legacy** \- This type of service principal represents a legacy app, which is an app created before app registrations were introduced or an app created through legacy experiences. A legacy service principal can have credentials, service principal names, reply URLs, and other properties that an authorized user can edit, but doesn't have an associated app registration. The service principal can only be used in the tenant where it was created.<br>
+
+The Microsoft Graph ServicePrincipal entity defines the schema for a service principal object's properties.
+
+:::image type="content" source="../media/enterprise-apps-blade-7ad4c369.png" alt-text="Screenshot showing all applications.":::
+
+
+## Relationship between application objects and service principals
+
+The application object is the global representation of your application for use across all tenants, and the service principal is the local representation for use in a specific tenant. The application object serves as the template from which common and default properties are derived for use in creating corresponding service principal objects.
+
+An application object has:<br>
+
+ -  A one-to-one relationship with the software application, and<br>
+ -  A one-to-many relationship with its corresponding service principal object(s)
+
+A service principal must be created in each tenant where the application is used, enabling it to establish an identity for sign-in and/or access to resources being secured by the tenant. A single-tenant application has only one service principal (in its home tenant), created and consented for use during application registration. A multi-tenant application also has a service principal created in each tenant where a user from that tenant has consented to its use.
+
+## List service principals associated with an app
+
+You can find the service principals associated with an application object.
+
+:::image type="content" source="../media/find-service-principal-410fc2d6.png" alt-text="Screenshot showing service principals associated with an app.":::
+
+
+## Consequences of modifying and deleting applications
+
+Any changes that you make to your application object are also reflected in its service principal object in the application's home tenant only (the tenant where it was registered). This means that deleting an application object will also delete its home tenant service principal object. However, restoring that application object through the app registrations UI won't restore its corresponding service principal.
+
+:::image type="content" source="../media/application-objects-relationship-88879f4a.png" alt-text="Diagram showing the consequences of modifying and deleting applications.":::
+<br>
+
+In this example scenario:
+
+:::image type="content" source="../media/application-object-example-scenario-70edd409.png" alt-text="Table showing an example scenario.":::

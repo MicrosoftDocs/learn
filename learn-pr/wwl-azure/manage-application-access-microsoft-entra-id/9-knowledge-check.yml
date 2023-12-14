@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-application-access-microsoft-entra-id.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/14/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of using Managed Identities in Azure?"
+    choices:
+    - content: "To decrease the security of the resources"
+      isCorrect: false
+      explanation: "Incorrect. Managed Identities are used to simplify the authentication process and reduce the need for credentials."
+    - content: "To increase the cost of resource management"
+      isCorrect: false
+      explanation: "Incorrect. Managed Identities are used to simplify the authentication process and reduce the need for credentials."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Managed Identities are used to simplify the authentication process and reduce the need for credentials, enabling the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "What does Entra ID enable in terms of application hosting platforms?"
+    choices:
+    - content: "Enables the creation of applications without any security measures"
+      isCorrect: false
+      explanation: "Incorrect. Entra ID is designed to ensure secure and compliant application access for authorized users."
+    - content: "Enables the creation of applications with limited functionality"
+      isCorrect: false
+      explanation: "Incorrect. Entra ID does not limit the functionality of applications, but rather governs their integration with the identity platform."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Entra ID enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "What is the purpose of environment automation?"
+    choices:
+    - content: "Enables manual creation and teardown of environments"
+      isCorrect: false
+      explanation: "Incorrect. Manual processes are prone to errors and inconsistencies."
+    - content: "Enables the creation of unstable application hosting platforms"
+      isCorrect: false
+      explanation: "Incorrect. Unstable platforms can lead to downtime and security vulnerabilities."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Automation helps ensure consistency, reduces errors, and improves security and stability of the platform."
+  - content: "What is the purpose of Infrastructure as Code (IaC)?"
+    choices:
+    - content: "IaC is a programming language used to create web applications."
+      isCorrect: false
+      explanation: "Incorrect. IaC is not a programming language used to create web applications."
+    - content: "IaC is a tool used to manage user authentication and authorization."
+      isCorrect: false
+      explanation: "Incorrect. IaC is not a tool used to manage user authentication and authorization."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      isCorrect: true
+      explanation: "Correct. IaC enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."

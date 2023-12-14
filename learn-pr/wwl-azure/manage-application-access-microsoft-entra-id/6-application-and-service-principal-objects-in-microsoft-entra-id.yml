@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-application-access-microsoft-entra-id.application-and-service-principal-objects-in-microsoft-entra-id
+title: Manage and use service principals
+metadata:
+  title: Manage and use service principals
+  description: "Manage and use service principals"
+  ms.date: 12/14/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-application-and-service-principal-objects-in-microsoft-entra-id.md)]
