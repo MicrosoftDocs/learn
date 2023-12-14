@@ -31,6 +31,6 @@ Every debugger has its own set of features. The two most important features that
 - Control of your program execution. You can pause your program and run it step by step, which allows you to see which code is executed and how it affects your program's state.
 - Observation of your program's state. For example, you can look at your variables' value and function parameters at any point during your code execution.
 
-Mastering debugger usage is an important skill for a developer that's often overlooked. It makes you more efficient at hunting bugs in your code. It can also help you quickly understand how a program works.
+Mastering a debugger makes you more efficient at hunting bugs in your code by helping you quickly understand how a program works.
 
 Let's discover that in the next section.
