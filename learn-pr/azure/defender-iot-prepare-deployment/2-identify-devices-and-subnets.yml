@@ -4,10 +4,10 @@ uid: learn.defender-iot-prepare-deploymen.identify-devices-and-subnets
 title: Identify devices and subnets to monitor with Defender for IoT
 metadata:
   title: Identify devices and subnets to monitor with Defender for IoT
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Describes the planning process for Defender for IoT, to identify devices and subnets to monitor."
   ms.date: 10/11/2023
-  author: cwatson-cat
-  ms.author: cwatson
+  author: mjosephym
+  ms.author: v-mjosephy
   ms.topic: interactive-tutorial
 ###########################################################################
 ###
@@ -20,7 +20,35 @@ metadata:
 ### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
   ms.prod: TODO
-  ms.service: TODO
+  ms.service: defender-for-iot
 durationInMinutes: 1
 content: |
   [!include[](includes/2-identify-devices-and-subnets.md)]
+
+quiz:
+
+  questions:
+  
+  - content: "Figure A shows a network diagram depicting three floors, each with endpoints and switches. Floor three also houses  firewalls, core switches, a server, and routers. The blue dotted line depicts traffic traveling outside of the IP segment and the red line depicts interesting traffic.  Where should you put a Defender for IoT sensor?"
+    choices:
+    - content: "A" 
+      isCorrect: true
+      explanation: "It is recommended to place sensors to stream interesting traffic to Defender for IoT."
+    - content: "B"
+      isCorrect: false
+      explanation: "While it could be useful to capture traffic traveling outside of the IP segment, placing a sensor in location B would not transfer interesting traffic to Defender for IoT."
+    - content: "C"
+      isCorrect: false
+      explanation: "While it could be useful to capture traffic traveling outside of the IP segment, placing a sensor in location C would not transfer interesting traffic to Defender for IoT."  
+
+  - content: "What at factors should you consider when choosing a traffic mirroring method for each sensor?"
+    choices:
+    - content: "Place your sensor where you can see all or most of your OT traffic."
+      isCorrect: true
+      explanation: "Your sensor should be placed to see all or most of your OT traffic, typically between level 2 and 3 or 3 and 3.5 on the Purdue model."
+    - content: "Place your sensor where you can see all or most of your IT traffic."
+      isCorrect: false 
+      explanation: "You are trying to monitor OT traffic so your sensor should be placed where you can see all or most of your OT traffic."
+    - content: "Place your sensor where you can see all or most of your OT and IT traffic."
+      isCorrect: false
+      explanation: "You are trying to monitor OT traffic so your sensor should be placed where you can see all or most of your OT traffic."

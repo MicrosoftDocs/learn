@@ -8,70 +8,90 @@
 
     [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
 -->
-TODO: add your topic sentences(s)
+In the previous unit, you determine the traffic mirroring methods to use for your site. Now you'll prepare to choose the right appliances for your system and the hardware profiles that best fit your organization's network monitoring needs.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+## Appliance types
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+The following appliance types are available to use with your Microsoft Defender for IoT OT sensors:
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+- Pre-configured physical appliances
+- Virtual appliances
+- Self-configured physical appliances
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+## Pre-configured physical appliances
+Microsoft partnered with Arrow Electronics to provide pre-configured physical appliances validated for Defender for IoT OT system monitoring. The advantages of pre-configured appliances are:
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+- **Better performance** over the total assets monitored.
+- **Compatibility** with new Defender for IoT releases, with validations for upgrades and driver support.
+- **Stability** due to traffic monitoring and packet loss tests
+- **In-lab experience** by training Microsoft support teams, who gain a working knowledge of the hardware.
+- **Long term world-wide availability** of selected components.
 
-    Goal: State concisely what's covered in this unit
+ The following deployment configurations influence what processors, memory, network cards, and storage amounts you choose for your appliances:
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+- Raw network speed
+- The size of the network to monitor
+- Application configuration
+- Data amount, type, and length of storage
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+### Pre-configured appliances for OT network sensors
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+| Hardware profile |Appliance |SPAN/TAP throughput |Physical specifications| Used for |
+|---------|---------|---------|---------|-------|
+| **C5600** |HPE ProLiant DL360 |**Max bandwidth:** Up to 3 Gbps</br>**Max devices**: 12K 16C[32T] CPU/32G RAM/5.6TB |**Mounting:** 1U</br>**Ports:** 15x RJ45 or 8x SFP (OPT)| Corporate environments |
+| **E1800** |HPE ProLiant DL20 Gen10 Plus (4SFF)</br>Dell PowerEdge R350 |**Max bandwidth:** Up to 1 Gbps</br>**Max devices:** 10K 4C[8T] CPU/32G RAM/1.8TB |**Mounting:** 1U</br>**Ports:** 8x RJ45 or 6x SFP (OPT)| Large enterprises |
+| **E500** |Dell Edge 5200 (Rugged MIL-STD-810G) |**Max bandwidth:** Up to 1 Gbps</br> **Max devices:** 10K 8C[8T] CPU/32G RAM/512GB |**Mounting:** Wall Mount</br>**Ports:** 3x RJ45| Large enterprises | 
+| **L500** |HPE ProLiant DL20 Gen10 Plus (NHP 2LFF) |**Max bandwidth:** Up to 200 Mbps</br>**Max devices:** 1,000 4C[8T] CPU/8G RAM/500GB |**Mounting:** 1U</br>**Ports**: 4x RJ45|Production line |
+| **L100** |YS-Techsystems YS-FIT2 (Rugged MIL-STD-810G) |**Max bandwidth:** Up to 10 Mbps</br>**Max devices:** 100 4C[4T] CPU/8G RAM/128GB | **Mounting:** DIN/VESA</br>**Ports:** 2x RJ45 | Production lines|
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+## Virtual appliances
+<!-- need information about why you would choose virtual appliances. like ease of testing, deployment, backup. But not in the documentation. confirm-->
+### Virtualization hardware
 
-    Heading: none
--->
-TODO: add a visual element
+The *hypervisors* or virtual machine hosts supported by Defender for IoT to run guest operating systems are:
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+- **VMware ESXi** (version 5.0 and later)
+- **Microsoft Hyper-V** (VM configuration version 8.0 and later)
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+Other hypervisor types aren't supported for production environments due to their lack of exclusive hardware control and resource reservation.
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+### Virtual appliance design considerations
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+When choosing virtual appliance components, consider the following:
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+|Specification  |Considerations  |
+|---------|---------|
+|**CPU**     |   Assign dedicated CPU cores with at least 2.4 GHz, which aren't dynamically allocated. The appliance continuously records and analyzes network traffic so CPU usage is high. CPU performance is critical to capturing and analyzing network traffic. Any slowdown could lead to packet drops and performance degradation.   |
+|**Memory**     | Allocate RAM statically for the required capacity, not dynamically. Sensors have high RAM usage due to the sensor's constant network traffic recording and analytics.        |
+|**Network interfaces**  |  Physical mapping provides best performance, lowest latency, and efficient CPU usage. Physically map Network Interface Cards (NIC)s to the virtual machines with Single Root Input/Output Virtualization (SR-IOV) or a dedicated NIC. Given the high traffic monitoring levels, expect high network utilization. <br>Set the promiscuous mode on your vSwitch to **Accept**, which allows all traffic to reach the virtual machine. Some vSwitch implementations might block certain protocols they aren't configured correctly.|
+|**Storage**     | Make sure to allocate enough read and write IOPs and throughput to match the performance of the virtual appliances. Expect high storage usage due to the large traffic monitoring volumes.      |
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+### OT network sensor VM requirements
+
+For all deployments, bandwidth results for virtual machines can vary based on:
+
+- distribution of protocols
+- hardware resources, including the CPU model, memory bandwidth, and IOPS
+
+See the following table for system requirements for OT network sensors on virtual appliances:
+
+|Hardware profile  |Performance / Monitoring  |Physical specifications  |
+|---------|---------|---------|
+|**C5600**     |   **Max bandwidth**: 2.5 Gb/sec <br>**Max monitored assets**: 12,000      | **vCPU**: 32 <br>**Memory**: 32 GB <br>**Storage**: 5.6 TB (600 IOPS)        |
+|**E1800**     |    **Max bandwidth**: 800 Mb/sec <br>**Max monitored assets**: 10,000      | **vCPU**: 8 <br>**Memory**: 32 GB <br>**Storage**: 1.8 TB (300 IOPS)        |
+|**E1000**     |    **Max bandwidth**: 800 Mb/sec <br>**Max monitored assets**: 10,000      | **vCPU**: 8 <br>**Memory**: 32 GB <br>**Storage**: 1 TB (300 IOPS)        |
+|**E500**     |    **Max bandwidth**: 800 Mb/sec <br>**Max monitored assets**: 10,000      | **vCPU**: 8 <br>**Memory**: 32 GB <br>**Storage**: 500 GB (300 IOPS)        |
+|**L500**     |   **Max bandwidth**: 160 Mb/sec <br>**Max monitored assets**: 1,000      | **vCPU**: 4 <br>**Memory**: 8 GB <br>**Storage**: 500 GB (150 IOPS)        |
+|**L100**     |    **Max bandwidth**: 100 Mb/sec <br>**Max monitored assets**: 800      | **vCPU**: 4 <br>**Memory**: 8 GB <br>**Storage**: 100 GB (150 IOPS)        |
+|**L60** |     **Max bandwidth**: 10 Mb/sec <br>**Max monitored assets**: 100      | **vCPU**: 4 <br>**Memory**: 8 GB <br>**Storage**: 60 GB (150 IOPS)        |
+
+The sensor installation includes an operating system image for the virtual machine.
+
+### Self-configured
+
+If the pre-configured appliances don't meet your system needs, you can use the supplied specifications to get your own hardware.
+
+## Knowledge check
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 

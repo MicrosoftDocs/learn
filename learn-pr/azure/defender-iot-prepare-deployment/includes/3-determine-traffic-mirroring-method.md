@@ -1,78 +1,48 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+In the previous unit, you prepared the devices and subnets in your automotive manufacturing site to monitor. Now you'll determine the traffic mirroring methods to use for your site.
 
-    Goal: briefly summarize the key skill this unit will teach
+## Traffic Mirroring
 
-    Heading: none
+Traffic mirroring allows you to mirror network traffic to Defender for IoT to monitor and diagnose problems. Defender for IoT monitors traffic to your OT network sensor. Configure traffic mirroring on a switch or a terminal access point (TAP) with only industrial ICS and SCADA traffic. Doing so ensures that Defender for IoT monitors only traffic you want monitored.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+### Mirroring port scope
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+To prevent rogue devices from connecting undetected to an unmonitored port, configure traffic mirroring from all of your switch's ports. For OT networks that use broadcast or multicast messaging, configure traffic mirroring only for RX (*Receive*) transmissions to prevent unnecessary bandwidth use.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+## Traffic mirroring methods
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+You'll need to determine what method to use based on your network configuration. Defender for IoT supports the following traffic mirroring methods:
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+|Method  |Description  |
+|---------|---------|
+|**Switch SPAN port**     |  Mirrors local traffic from interfaces on the switch to a different interface on the same switch. |  
+|**Remote SPAN (RSPAN) port**     |  Mirrors traffic from multiple, distributed source ports into a dedicated remote virtual local area network (VLAN). The VLAN data is delivered through trunked ports, across multiple switches to a specified switch containing the physical destination port. |
+|**Active or passive aggregation (TAP)** |  Installs an active/passive aggregation terminal access point (TAP) inline to your network cable. The TAP duplicates *Receive* and *Transmit* traffic to the OT network sensor. The TAP hardware device allows network traffic to flow between ports without interruption and without compromising network integrity. The advantages of TAPs include that they're hardware based, pass all messages, including damaged ones, and aren't processor-sensitive. </br>They're recommended for forensic monitoring. |
+|**Encapsulated remote switched port analyzer (ERSPAN)**  | Secures remote networks by  mirroring input interfaces over an IP network to your OT sensor's monitoring promiscuous interface. Traffic payloads are encapsulated by generic routing encapsulation (GRE) tunnel encapsulation and are analyzed by the sensor. </br>ERSPAN is good for when traffic needs to be routed across OSI Layer 3 networks. It can include sources like ethernet ports, VLANs, fabric port channels, and satellite ports.|
+|**ESXi vSwitch** |  Uses a virtual switch and *Promiscuous mode* as a workaround for configuring a monitoring port, since virtual switches don't have mirroring capabilities. Any traffic that goes through the virtual switch is visible to other network interfaces in the same port group. |
+|**Hyper-V vSwitch** | Uses a virtual switch and *Promiscuous mode* as a workaround for configuring a monitoring port, since virtual switches don't have mirroring capabilities. Any traffic that goes through the virtual switch is visible to other network interfaces in the same port group. |
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+Choose your monitoring method based on considerations like your overall monitoring needs, network configuration, sensor connection, and available resources.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+## Example Scenarios
 
-    Goal: State concisely what's covered in this unit
+### Remote VLAN architecture
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+In the following example of a Remote VLAN architecture, your source switches are configured with remote SPAN sessions, which distribute the data via intermediate switches to the destination switch. The destination switch monitors traffic from your OT network sensor with Defender for IoT:
+<!-- should this be switch or port? -->
+:::image type="content" source="../media/3-remote-span-vlan.jpg" alt-text="Diagram of a remote VLAN architecture" border="false":::
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+### Active or passive aggregation (TAP)
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+In the following example of a network TAP architecture the TAP is installed inline to the network cable and mirrors traffic to Defender for IoT:
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+:::image type="content" source="../media/3-active-passive-tap-v2.png" alt-text="Diagram of a network TAP" border="false":::
 
-    Heading: none
--->
-TODO: add a visual element
+### ERSPAN architecture
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+In the following example of an ERSPAN architecture, the source router encapsulates traffic and sends the packet over the OSI layer 3 network to the destination router. Then it's decapsulated and sent to the OT network sensor and on to Defender for IoT:
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+<!-- the packet or the payload?-->
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+:::image type="content" source="../media/3-erspan-architecture.png" alt-text="Diagram of a ERSPAN network" border="false":::
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+## Knowledge check
