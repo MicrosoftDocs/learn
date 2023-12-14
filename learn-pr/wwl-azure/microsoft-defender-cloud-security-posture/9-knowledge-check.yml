@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-security-posture.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/14/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What does Microsoft Defender for Cloud enable in terms of application hosting platforms?"
+    choices:
+    - content: "Enables the validation of environments only"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Cloud enables both creation and teardown of environments, as well as validation."
+    - content: "Enables the creation of environments only"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Cloud enables both creation and teardown of environments."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Microsoft Defender for Cloud enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "What is the purpose of Microsoft Defender for Cloud?"
+    choices:
+    - content: "Offers virtual machine management tools"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Cloud does not offer virtual machine management tools."
+    - content: "Provides cloud storage solutions"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Cloud does not provide cloud storage solutions."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Microsoft Defender for Cloud enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "What is the purpose of connecting non-Azure machines to Microsoft Defender for Cloud?"
+    choices:
+    - content: "To monitor the security posture of Azure resources only"
+      isCorrect: false
+      explanation: "Incorrect. Defender for Cloud can monitor non-Azure machines as well."
+    - content: "To limit the capabilities of Defender for Cloud to Azure resources only"
+      isCorrect: false
+      explanation: "Incorrect. Connecting non-Azure machines enhances the capabilities of Defender for Cloud."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Connecting non-Azure machines to Defender for Cloud allows for comprehensive monitoring, detection, and response to security threats across diverse IT landscapes."
+  - content: "What does Microsoft Defender for Cloud enable in terms of application hosting platforms?"
+    choices:
+    - content: "Enables the validation of environments only"
+      isCorrect: false
+      explanation: "Incorrect. Defender for Cloud enables both the creation and validation of environments."
+    - content: "Enables the creation of environments only"
+      isCorrect: false
+      explanation: "Incorrect. Defender for Cloud enables both the creation and teardown of environments."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Defender for Cloud enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "What does Microsoft Defender External Attack Surface Management (Defender EASM) do?"
+    choices:
+    - content: "Provides internal view of online infrastructure"
+      isCorrect: false
+      explanation: "Incorrect. Defender EASM provides external view of online infrastructure."
+    - content: "Only discovers and maps known assets"
+      isCorrect: false
+      explanation: "Incorrect. Defender EASM recursively searches for infrastructure with observed connections to known legitimate assets to uncover previously unknown and unmonitored properties."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Defender EASM continuously discovers and maps your digital attack surface to provide an external view of your online infrastructure. This visibility enables security and IT teams to identify unknowns, prioritize risk, eliminate threats, and extend vulnerability and exposure control beyond the firewall."
