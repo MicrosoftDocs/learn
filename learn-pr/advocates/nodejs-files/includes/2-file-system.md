@@ -6,19 +6,19 @@ Here, you learn how to use Node.js to read the file system to discover files and
 
 ## Include the fs module
 
-Node.js provides a built-in module, **fs** (short for _file system_), for working with the file system. Because it is part of the Node.js runtime, you don't need to install it; you reference it just as you would any other dependency. 
+Node.js provides a built-in module, ***fs*** (short for _file system_), for working with the file system. Because it is part of the Node.js runtime, you don't need to install it; you reference it just as you would any other dependency. 
 
-The **fs** module has a `promises` namespace that has promise versions of all methods. Using the promise namespace is the preferred way to work with the **fs** module because it allows you to use `async` to avoids the messiness of callbacks or the blocking of synchronous methods.
+The ***fs*** module has a `promises` namespace that has promise versions of all methods. Using the promise namespace is the preferred way to work with the ***fs*** module because it allows you to use `async` to avoids the messiness of callbacks or the blocking of synchronous methods.
 
 ```javascript
 const fs = require("fs").promises;
 ```
 
-You can use the **fs** module to do various operations on files and directories. It has several methods to pick from. For now, we're going to focus on what you need to know to work with directories.
+You can use the ***fs*** module to do various operations on files and directories. It has several methods to pick from. For now, we're going to focus on what you need to know to work with directories.
 
-## List contents in a directory
+## List contents in a directory with fs.readdir
 
-One task that you often do with the **fs** module is list out or *enumerate* the contents in a directory. For instance, Tailwind Traders, has a root folder called *stores*. In that folder are subfolders organized by store number. Inside those folders, are the sales-total files. The structure looks like this:
+One task that you often do with the ***fs*** module is list out or *enumerate* the contents in a directory. For instance, Tailwind Traders, has a root folder called *stores*. In that folder are subfolders organized by store number. Inside those folders, are the sales-total files. The structure looks like this:
 
 ```
 📂 stores
@@ -28,7 +28,7 @@ One task that you often do with the **fs** module is list out or *enumerate* the
     📂 202
 ```
 
-To read through the contents of the folder, you can use the async `readdir` method. Most operations on the **fs** module have both synchronous (postpended with `Sync`) and asynchronous options. The results are returned in alphabetical order.
+To read through the contents of the folder, you can use the async `readdir` method. Most operations on the ***fs*** module have both synchronous (postpended with `Sync`) and asynchronous options. The results are returned in alphabetical order.
 
 ```javascript
 const fs = require("fs").promises;
@@ -46,7 +46,7 @@ The alphanum-sorted list of items looks like this:
 [ '201', '202', '203', '204' ]
 ```
 
-## Determine content type
+## Determine content type with isDirectory
 
 When you read the contents of a directory, you get back both folders and files as an array of strings. You can determine which strings are files and which ones are directories by passing in the `withFileTypes` option. This option returns an array of `Dirent` objects instead of an array of strings. The `Dirent` object has `isFile` and `isDirectory` methods that you can use to determine what type of object you're dealing with.
 
@@ -74,7 +74,6 @@ The alphanum-sorted list of items looks like this:
 
 ## A note about recursion
 
-
 Often, you may need to work with complex directory structures that include multiple nested folders, each potentially containing more subfolders and files. In such cases, you need a way to navigate through this tree-like structure to find specific files.
 
 To achieve this, you can create a function that identifies if an item is a folder. If it is, the function then searches within that folder for more files. This process is repeated for every folder that is found.
@@ -95,6 +94,8 @@ async function findFiles(folderName) {
 
     for (const item of items) {
         if (item.isDirectory()) {
+
+            // RECURSION - calling the function from within itself
             const resultsReturned = await findFiles(`${folderName}/${item.name}`);
             results = results.concat(resultsReturned);
         } else {

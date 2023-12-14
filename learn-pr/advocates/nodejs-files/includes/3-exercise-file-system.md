@@ -91,7 +91,7 @@ Expand the *stores* folder and each of the numbered folders inside.
 
 1. In the `./nodejs-files` subfolder, create a *index.js* file to open it in the editor.
 
-1. At the top of the file, add the following code in include the *fs* module is available to the code in the file.
+1. At the top of the file, add the following code in include the **fs** module is available to the code in the file.
 
    ```javascript
    const fs = require("fs").promises;
@@ -123,7 +123,7 @@ Expand the *stores* folder and each of the numbered folders inside.
 
     * (1) Add an array at the top, to hold the paths to all the sales files that the program finds.
     * (2) Read the currentFolder with the `readdir` method. 
-    * (3) Add a block to loop over each item returned from the `readdir` function using the asynchronous `for...of` loop. 
+    * (3) Add a block to loop over each item returned from the `readdir` method   using the asynchronous `for...of` loop. 
     * (4) Add an `if` statement to determine if the item is a file or a directory. 
     * (5) If the item is a directory, _resursively call the function `findSalesFiles` again, passing in the path to the item. 
     * (6) If it's not a directory, add a check to make sure the item name matches *sales.json*.
@@ -137,7 +137,7 @@ Expand the *stores* folder and each of the numbered folders inside.
       // (2) Read the currentFolder with the `readdir` method. 
       const items = await fs.readdir(folderName, { withFileTypes: true });
     
-      // (3) Add a block to loop over each item returned from the `readdir` function using the asynchronous `for...of` loop. 
+      // (3) Add a block to loop over each item returned from the `readdir` method using the asynchronous `for...of` loop. 
       for (const item of items) {
     
         // (4) Add an `if` statement to determine if the item is a file or a directory. 
@@ -181,7 +181,7 @@ Expand the *stores* folder and each of the numbered folders inside.
       // (2) Read the currentFolder with the `readdir` method. 
       const items = await fs.readdir(folderName, { withFileTypes: true });
     
-      // (3) Add a block to loop over each item returned from the `readdir` function using the asynchronous `for...of` loop. 
+      // (3) Add a block to loop over each item returned from the `readdir` method using the asynchronous `for...of` loop. 
       for (const item of items) {
     
         // (4) Add an `if` statement to determine if the item is a file or a directory. 
@@ -232,7 +232,7 @@ Excellent! You've successfully written a command-line program that can traverse 
 
 However, the way that the path to subfolders was constructed in this example is a little clumsy because it requires concatenating strings together. Also, you might run into issues on other operating systems (like Windows) that use different path separators. 
 
-In the next section, you'll learn how to construct paths that work across operating systems by using the *path* module.
+In the next section, you'll learn how to construct paths that work across operating systems by using the **path** module.
 
 ### Got stuck?
 
@@ -249,7 +249,7 @@ async function findSalesFiles(folderName) {
   // (2) Read the currentFolder with the `readdir` method. 
   const items = await fs.readdir(folderName, { withFileTypes: true });
 
-  // (3) Add a block to loop over each item returned from the `readdir` function using the asynchronous `for...of` loop. 
+  // (3) Add a block to loop over each item returned from the `readdir` method using the asynchronous `for...of` loop. 
   for (const item of items) {
 
     // (4) Add an `if` statement to determine if the item is a file or a directory. 
