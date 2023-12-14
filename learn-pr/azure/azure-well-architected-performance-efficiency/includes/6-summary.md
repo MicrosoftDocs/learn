@@ -1,12 +1,14 @@
-In this module, you've looked at the five key principles of the x pillar of the Azure Well-Architected Framework.
+In this module, you've looked at the five key principles of the Performance Efficiency pillar of the Azure Well-Architected Framework.
 
-A cost-optimized workload isn't necessarily a low-cost workload. There are significant tradeoffs. Tactical approaches are reactive and can reduce costs only 
+Performance efficiency is about effective use of workload resources. Without a good strategy, you might not be able to anticipate and meet user demands. A comprehensive strategy focuses on sustaining performance throughout its lifecycle, adjusting to changes without compromising the user experience. The principles covered in this module can help you build an effective strategy of continuous improvement that will set you up for long-term success. 
+
+
 
 ## Learn more
 
-To learn more about workload cost optimization, review the following documentation:
+To learn more about workload performance efficiency, review the following documentation:
 
-- [Cost Optimization design principles](/azure/well-architected/cost-optimization/principles)
-- [Design review checklist for Cost Optimization](/azure/well-architected/cost-optimization/checklist)
-- [Cost Optimization tradeoffs](/azure/well-architected/cost-optimization/tradeoffs)
-- [Cloud design patterns that support cost optimization](/azure/well-architected/cost-optimization/design-patterns)
+- [Performance Efficiency design principles](/azure/well-architected/performance-efficiency/principles)
+- [Design review checklist for Performance Efficiency](/azure/well-architected/performance-efficiency/checklist)
+- [Performance Efficiency tradeoffs](/azure/well-architected/performance-efficiency/tradeoffs)
+- [Cloud design patterns that support performance efficiency](/azure/well-architected/performance-efficiency/design-patterns)
