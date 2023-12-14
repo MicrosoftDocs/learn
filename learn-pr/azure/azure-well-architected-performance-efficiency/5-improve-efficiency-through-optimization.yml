@@ -15,48 +15,45 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-
-  - content: 'question-1'
+  - content: 'How did the Contoso team change their development process to address ongoing performance issues?'
     choices:
-    - content: 'choice-1-content'
+    - content: 'They removed their team from internal messaging groups.'
       isCorrect: false
-      explanation: 'choice-2-explanation'
-    - content: 'choice-3-content'
+      explanation: 'Incorrect. The team needed to dedicate time to address performance issues, not remove themselves from internal messaging groups.'
+    - content: 'They dedicated time during each cycle to address performance issues.'
       isCorrect: true
-      explanation: 'choice-3-explanation'
-    - content: 'choice-4-content'
+      explanation: 'By dedicating time during each cycle to address performance issues, the team was able to address longstanding issues and continuously improve the efficiency of their workload.'
+    - content: 'They added more developers to the team.'
       isCorrect: false
-      explanation: "choice-4-explanation"
-    - content: 'choice-5-content'
+      explanation: "Incorrect. In this case, the team needed to dedicate time to address performance issues, not add more developers to the team."
+    - content: 'They stopped development of new functions'
       isCorrect: false
-      explanation: "choice-5-explanation"
-
-  - content: 'question-2'
+      explanation: "Incorrect. Stopping the development of new functions would be a drastic and unnecessary measure."
+  - content: 'Which of the following is a good strategy to improve the efficiency of your workload?'
     choices:
-    - content: 'choice-1-content'
-      isCorrect: false
-      explanation: 'choice-2-explanation'
-    - content: 'choice-3-content'
+    - content: 'Implement new design patterns and components.'
       isCorrect: true
-      explanation: 'choice-3-explanation'
-    - content: 'choice-4-content'
+      explanation: 'Correct. New design patterns and components can boost performance in ways that may not be possible with your current design.'
+    - content: 'Relax the security requirements of your workload.'
       isCorrect: false
-      explanation: "choice-4-explanation"
-    - content: 'choice-5-content'
+      explanation: 'Incorrect. Relaxing security requirements is not a good strategy to improve the efficiency of your workload, as it puts your workload at risk of a security incident.'
+    - content: 'Add more developers to your team.'
       isCorrect: false
-      explanation: "choice-5-explanation"
-
-  - content: 'question-3'
+      explanation: "Incorrect. Adding more developers to your team doesn't address the root cause of any performance issues."
+    - content: 'Use services in public or private preview.'
+      isCorrect: false
+      explanation: "Incorrect. Using services in public or private preview is not recommended as they are not intended to be used in production systems."
+  - content: 'What type of tool can help you analyze performance trends and identify execution bottlenecks?'
     choices:
-    - content: 'choice-1-content'
+    - content: 'A security information and event management tool'
       isCorrect: false
-      explanation: 'choice-2-explanation'
-    - content: 'choice-3-content'
+      explanation: 'Incorrect. A security information and event management tool is used to monitor security events, not performance events.'
+    - content: 'A log management tool'
+      isCorrect: false
+      explanation: 'Incorrect. A log management tool is used to collect and analyze log data, not performance data.'
+    - content: 'An application performance monitoring tool'
       isCorrect: true
-      explanation: 'choice-3-explanation'
-    - content: 'choice-4-content'
+      explanation: "Correct. An application performance monitoring tool can help you analyze performance trends and identify execution bottlenecks."
+    - content: 'A network performance monitoring tool'
       isCorrect: false
-      explanation: "choice-4-explanation"
-    - content: 'choice-5-content'
-      isCorrect: false
-      explanation: "choice-5-explanation"
+      explanation: "Incorrect. A network performance monitoring tool is used to monitor network performance, not application performance."
