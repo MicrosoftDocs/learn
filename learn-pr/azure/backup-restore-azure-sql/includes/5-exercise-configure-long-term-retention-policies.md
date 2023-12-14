@@ -1,4 +1,4 @@
-Your retail organization must comply with data protection regulations in your jurisdiction. You're to configure a long-term retention policy in Azure SQL Database to meet these requirements.
+Your retail organization must comply with data protection regulations in your jurisdiction. You need to configure a long-term retention (LTR) policy in Azure SQL Database to meet these requirements.
 
 Let's use the Azure portal to set up a policy and then check it in PowerShell. You need to set up the following retention policy to meet your regulatory requirements:
 
@@ -10,7 +10,7 @@ Let's use the Azure portal to set up a policy and then check it in PowerShell. Y
 
 ## Use the Azure portal to configure long-term retention
 
-Let's start by configuring the five-year retention by using the portal.
+Let's start by configuring the LTR policy by using the portal.
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select **erpserver-NNNN**.
 
@@ -18,17 +18,19 @@ Let's start by configuring the five-year retention by using the portal.
 
 1. In the list of databases, select **sql-erp-db**. Select the **Retention policies** tab, and then select **Configure policies**.
 
-1. Select **Yearly LTR Backups**.
+1. In the **Long-term retention** section, enter the value *8* and select **Week(s)** under **Weekly LTR Backups**.
 
-1. In the **How long would you like this annual backup to be kept?** controls, enter the value **5** and select **Year(s)**.
+1. Under **Monthly LTR Backups**, enter the value *12* and select **Month(s)**.
 
-    :::image type="content" source="../media/5-configure-ltr-policy.png" alt-text="Screenshot of the configure policies panel used to create a yearly retention policy.":::
+1. Under **Yearly LTR Backups**, enter the value *5* and select **Year(s)**.
+
+    :::image type="content" source="../media/5-configure-ltr-policy.png" alt-text="Screenshot of the configure policies panel used to create a yearly retention policy." lightbox="../media/5-configure-ltr-policy.png":::
 
 1. Select **Apply**, and then select **Yes**.
 
 ## Use PowerShell to configure long-term retention
 
-You can also configure long-term retention policies by using PowerShell. Let's configure the remainder of the policy this way.
+You can also configure LTR policies by using PowerShell.
 
 1. In Azure Cloud Shell, run this command to set a variable to the value of your SQL Server instance:
 
@@ -50,7 +52,7 @@ You can also configure long-term retention policies by using PowerShell. Let's c
     > [!NOTE]
     > You might see a message display after the output: `Long Term Retention is not supported : Not supported for master.` This message doesn't affect completion of this module.
 
-1. Run this command to view the long-term retention policy for the **sql-erp-db** database:
+1. Run this command to view the LTR policy for the **sql-erp-db** database:
 
     ``` powershell
     Get-AzSqlDatabaseBackupLongTermRetentionPolicy `
@@ -59,7 +61,7 @@ You can also configure long-term retention policies by using PowerShell. Let's c
         -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
     ```
 
-1. Now let's configure the rest of the policy to meet the requirements specified earlier. To configure a long-term retention policy via PowerShell, run this command:
+1. Now let's configure the rest of the policy to meet the requirements specified earlier. To configure an LTR policy via PowerShell, run this command:
 
     ``` powershell
     Set-AzSqlDatabaseBackupLongTermRetentionPolicy `
