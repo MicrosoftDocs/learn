@@ -8,7 +8,7 @@ metadata:
   author: theoyinbooke
   ms.author: somelezediko
   ms.custom: team=nextgen
-  ms.topic: iunit
+  ms.topic: unit
 durationInMinutes: 45
 content: |
   [!include[](includes/3-exercise-create-data-model-and-canvas-app.md)]
