@@ -31180,6 +31180,31 @@
     "source_path": "learn-pr/achievements/learn.partner-center.badge.yml",
     "redirect_url": "https://learn.microsoft.com/partner-center/overview",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/3-learn-module-best-practices.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/4-explore-best-practices-for-module-1.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/5-explore-best-practices-for-module-2.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/6-explore-best-practices-for-module-3.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/7-explore-best-practices-for-module-4.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals",
+    "redirect_document_id": false
   }
   ]
 }
