@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-monitoring-automation-solutions.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/14/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of data connectors in Microsoft Sentinel?"
+    choices:
+    - content: "To delete data from Microsoft Sentinel"
+      isCorrect: false
+      explanation: "Incorrect. Data connectors are used to ingest data into Microsoft Sentinel, not delete it."
+    - content: "To encrypt data in Microsoft Sentinel"
+      isCorrect: false
+      explanation: "Incorrect. Data connectors are used to ingest data into Microsoft Sentinel, not encrypt it."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Data connectors are used to ingest data into Microsoft Sentinel, allowing for real-time integration with various data sources, including non-Microsoft products, through APIs or agent-based mechanisms."
+  - content: "What is the purpose of creating custom analytics rules in Microsoft Sentinel?"
+    choices:
+    - content: "To delete all logs from the environment"
+      isCorrect: false
+      explanation: "Incorrect. Deleting logs is not the purpose of creating custom analytics rules."
+    - content: "To generate more false positives in the environment"
+      isCorrect: false
+      explanation: "Incorrect. Generating more false positives is not the purpose of creating custom analytics rules."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Custom analytics rules help discover threats and anomalous behaviors in the environment, alert you when certain event thresholds or conditions are reached, generate incidents for your SOC to triage and investigate, and respond to threats with automated tracking and remediation processes."
+  - content: "What does a playbook enable in terms of application hosting platforms?"
+    choices:
+    - content: "Enables the manual creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: false
+      explanation: "Incorrect. Playbooks enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+    - content: "Enables the creation and teardown of environments to help deliver unstable application hosting platforms"
+      isCorrect: false
+      explanation: "Incorrect. Playbooks enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Playbooks enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "What does the Incident settings section in Microsoft Sentinel allow you to do?"
+    choices:
+    - content: "Automatically group all alerts into a single incident"
+      isCorrect: false
+      explanation: "Incorrect. This setting only groups alerts triggered by a specific analytics rule."
+    - content: "Disable the creation of incidents for all analytics rules"
+      isCorrect: false
+      explanation: "Incorrect. This setting only applies to the specific analytics rule being configured."
+    - content: "Enable or disable the creation of incidents for alerts triggered by a specific analytics rule"
+      isCorrect: true
+      explanation: "Correct. The Incident settings section allows you to enable or disable the creation of incidents for alerts triggered by a specific analytics rule."
+  - content: "What is the purpose of automation in security monitoring?"
+    choices:
+    - content: "To reduce the number of security events detected"
+      isCorrect: false
+      explanation: "Incorrect. Automation is meant to increase the efficiency and accuracy of incident response, not reduce the number of events detected."
+    - content: "To replace human analysts with machines"
+      isCorrect: false
+      explanation: "Incorrect. Automation is meant to assist human analysts, not replace them."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Automation enables swift and accurate incident response, reducing the time to detect and respond to security events."
