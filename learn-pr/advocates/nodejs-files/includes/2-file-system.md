@@ -85,23 +85,27 @@ This is achieved by using a technique called *recursion*, where the function cal
 ```javascript
 const fs = require("fs").promises;
 
-let results = []
-
 async function findFiles(folderName) {
+
+    let results = []
+
     results.push(`${folderName}`);
 
     const items = await fs.readdir(folderName, { withFileTypes: true });
 
     for (const item of items) {
         if (item.isDirectory()) {
-            await findFiles(`${folderName}/${item.name}`);
+            const resultsReturned = await findFiles(`${folderName}/${item.name}`);
+            results = results.concat(resultsReturned);
         } else {
             results.push(`${folderName}/${item.name}`);
         }
     }
+
+    return results;
 }
 
-findFiles("stores").then(() => console.log(results));
+findFiles("stores").then((results) => console.log(results));
 ```
 
 The output looks like: 
