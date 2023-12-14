@@ -1,0 +1,1 @@
+In this module, you learned how to manage authentication in Microsoft Enterprise Identity (Entra ID), including configuring various authentication methods such as multi-factor authentication, passwordless authentication, and single sign-on, and enforcing modern authentication protocols to enhance security.
