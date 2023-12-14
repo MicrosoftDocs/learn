@@ -7,7 +7,7 @@ All topics covered in the DP-900: Microsoft Azure Data Fundamentals course is re
 Become familiar with the objective domains, which are a comprehensive set of specific and measurable knowledge, skills, and abilities that are the basis for the development of both this course and the certification exam:
 
 - Learning Path 1: Explore fundamentals of data
-- Learning Path 2 2: Explore fundamentals of relational data in Azure
+- Learning Path 2: Explore fundamentals of relational data in Azure
 - Learning Path 3: Explore fundamentals of non-relational data in Azure
 - Learning Path 4: Explore fundamentals of data analytics
 
