@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/14/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of Microsoft Defender for Servers?"
+    choices:
+    - content: "Provides advanced defenses only for Windows machines in Azure"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Servers provides advanced defenses for both Windows and Linux machines in Azure, AWS, GCP, and on-premises environments."
+    - content: "Enables the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: false
+      explanation: "Incorrect. This describes a different feature. Microsoft Defender for Servers includes security baselines and OS level assessments, vulnerability assessment scanning, adaptive application controls (AAC), file integrity monitoring (FIM), and more."
+    - content: "Brings threat detection and advanced defenses to Windows and Linux machines that run in Azure, AWS, GCP, and on-premises environments"
+      isCorrect: true
+      explanation: "Correct. Microsoft Defender for Servers provides threat detection and advanced defenses to both Windows and Linux machines in various environments, including Azure, AWS, GCP, and on-premises."
+  - content: "What does Defender for Cloud do with the vulnerabilities identified by the vulnerability assessment tool?"
+    choices:
+    - content: "Defender for Cloud ignores the vulnerabilities and does not present any recommendations."
+      isCorrect: false
+      explanation: "Incorrect. Defender for Cloud presents the findings and related information as recommendations."
+    - content: "Defender for Cloud only presents the vulnerabilities for a specific VM, not for all VMs in the currently selected subscriptions."
+      isCorrect: false
+      explanation: "Incorrect. Defender for Cloud shows you all the findings for all VMs in the currently selected subscriptions."
+    - content: "Defender for Cloud presents the findings and related information as recommendations, including remediation steps, relevant CVEs, CVSS scores, and more."
+      isCorrect: true
+      explanation: "Correct. Defender for Cloud presents the findings and related information as recommendations, including remediation steps, relevant CVEs, CVSS scores, and more."
+  - content: "What does Defender for Databases in Microsoft Defender for Cloud provide?"
+    choices:
+    - content: "Protection for only Azure SQL databases"
+      isCorrect: false
+      explanation: "Incorrect. Defender for Databases provides protection for multiple types of databases."
+    - content: "Protection for only open source relational databases"
+      isCorrect: false
+      explanation: "Incorrect. Defender for Databases provides protection for multiple types of databases."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Defender for Databases allows you to protect your entire database estate with attack detection and threat response for the most popular database types in Azure, including Microsoft Defender for Azure SQL databases, Microsoft Defender for SQL servers on machines, Microsoft Defender for open source relational databases, and Microsoft Defender for Azure Cosmos DB."
+  - content: "What does Microsoft Defender for Cloud offer?"
+    choices:
+    - content: "A range of advanced, intelligent protections for your workloads"
+      isCorrect: false
+      explanation: "Incorrect. This is only one of the features offered by Microsoft Defender for Cloud."
+    - content: "A tool to manage your cloud resources"
+      isCorrect: false
+      explanation: "Incorrect. While Microsoft Defender for Cloud does provide some management capabilities, this is not its primary function."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Microsoft Defender for Cloud offers security alerts powered by Microsoft Threat Intelligence, as well as advanced threat protection capabilities for various types of resources in your subscriptions. However, its primary function is to enable automation and validation of environment creation and teardown for secure and stable application hosting platforms."
+  - content: "What does Defender for Cloud use to identify threats?"
+    choices:
+    - content: "Behavioral analytics that depends on known patterns derived from large data sets"
+      isCorrect: false
+      explanation: "Incorrect. Behavioral analytics is not used for anomaly detection."
+    - content: "Exporting alerts to CSV reports"
+      isCorrect: false
+      explanation: "Incorrect. Exporting alerts is a way to view alerts outside of Defender for Cloud, but it is not used for identifying threats."
+    - content: "Anomaly detection"
+      isCorrect: true
+      explanation: "Correct. Anomaly detection is used to identify threats by determining normal activity for your deployments and then generating rules to define outlier conditions that could represent a security event."
