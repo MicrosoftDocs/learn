@@ -8,8 +8,7 @@ metadata:
   ms.author: chnoring
   ms.date: 11/09/2021
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/4-run-nvidia-deepstream-reference-application.md)]

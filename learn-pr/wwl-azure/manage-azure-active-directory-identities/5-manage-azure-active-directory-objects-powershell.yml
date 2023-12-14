@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-azure-active-directory-identities.manage-azure-active-directory-objects-powershell
-title: Manage Azure AD objects with PowerShell
+title: Manage Microsoft Entra objects with PowerShell
 metadata:
-  title: Manage Azure AD objects with PowerShell
-  description: "Manage Azure AD objects with PowerShell"
+  title: Manage Microsoft Entra objects with PowerShell
+  description: "Manage Microsoft Entra objects with PowerShell"
   ms.date: 09/01/2023
   author: wwlpublish
   ms.author: rstearman

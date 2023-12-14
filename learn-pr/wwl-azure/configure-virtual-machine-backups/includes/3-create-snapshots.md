@@ -1,4 +1,3 @@
-
 An Azure Backup job creates a snapshot for your virtual machine in two phases:
 
 - Phase 1: Take a snapshot of the virtual machine data

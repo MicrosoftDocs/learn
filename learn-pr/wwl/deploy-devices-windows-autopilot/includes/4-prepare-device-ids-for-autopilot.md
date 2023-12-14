@@ -7,10 +7,10 @@ After you meet all the prerequisites, you can set up Windows Autopilot deploymen
 
 ### Manage Windows Autopilot in Intune
 
-If you want to manage Windows Autopilot in the Intune, you must configure automatic mobile device management enrollment of Microsoft Entra member Windows 11 devices. You can configure automatic mobile device management enrollment by performing the following steps:
+If you want to manage Windows Autopilot in the Intune, you must configure automatic mobile device management enrollment of Azure AD member Windows 11 devices. You can configure automatic mobile device management enrollment by performing the following steps:
 
-1.  In the Azure portal, select **Microsoft Entra ID**.
-2.  On the Microsoft Entra blade, select **Mobility (MDM and MAM)**, and then in the details pane, select **Microsoft Intune**.
+1.  In the Azure portal, select **Azure Active Directory**.
+2.  On the Azure Active Directory blade, select **Mobility (MDM and MAM)**, and then in the details pane, select **Microsoft Intune**.
 3.  On the Microsoft Intune blade, in MDM user scope, select **All** if you want all users to be able to enroll their devices to mobile device management. If you want only some users to be able to enroll their devices to mobile device management, select **Some**, specify the groups whose members should be able to enroll, and then select **Save**.
 
 As discussed earlier, you can create Windows Autopilot deployment profiles in the Microsoft Intune admin center.
@@ -66,9 +66,9 @@ To complete this process using Intune, use the following procedure:
 
 ### Import a device hash directly into Intune
 
-In certain circumstances, it may be beneficial to directly import the device hash into Microsoft Intune rather than generating the file as shown above. This is often useful in testing scenarios or perhaps could be useful if you have a batch of machines that are being built by onsite technicians ready for users.
+In certain circumstances, it might be beneficial to directly import the device hash into Microsoft Intune rather than generating the file as shown above. This is often useful in testing scenarios or perhaps could be useful if you have a batch of machines that are being built by onsite technicians ready for users.
 
-The following example imports the device directly into Intune along with assigning a Dynamic variable tag (Autopilot-Devices) to a Microsoft Entra group to ensure the device ends up in a specific group:
+The following example imports the device directly into Intune along with assigning a Dynamic variable tag (Autopilot-Devices) to an Azure AD group to ensure the device ends up in a specific group:
 
 Open a PowerShell prompt on the Autopilot device at the 'Welcome screen':
 

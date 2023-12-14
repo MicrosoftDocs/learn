@@ -7,9 +7,7 @@ metadata:
   ms.date: 5/18/2023
   author: mattwojo
   ms.author: mattwoj
-  ms.topic: module-standard-task-based
-  ms.prod: windows
-  ms.technology: arm
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

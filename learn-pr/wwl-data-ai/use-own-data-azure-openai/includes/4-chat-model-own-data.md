@@ -6,7 +6,7 @@ Since Azure OpenAI on your data includes search results on your index in the pro
 
 The system message, for example, is a useful reference for instructions for the model and is included with every call. While there's no token limit for the system message, when using your own data the system message gets truncated if it exceeds 200 tokens. The response from the model is also limited when using your own data is 1500 tokens.
 
-Due to these token limitations, it's recommended that you limit both the question length and the conversation history length in your call. [Prompt engineering techniques](/azure/cognitive-services/openai/concepts/advanced-prompt-engineering?azure-portal=true) such as breaking down the task and chain of though prompting can help the model respond more effectively.
+Due to these token limitations, it's recommended that you limit both the question length and the conversation history length in your call. [Prompt engineering techniques](/azure/cognitive-services/openai/concepts/advanced-prompt-engineering?azure-portal=true) such as breaking down the task and chain of thought prompting can help the model respond more effectively.
 
 ## Using the API
 

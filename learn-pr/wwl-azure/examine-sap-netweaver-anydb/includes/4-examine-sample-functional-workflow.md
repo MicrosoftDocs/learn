@@ -1,5 +1,3 @@
-
-
 This workflow illustrates how a user request flows through an SAP landscape built on NetWeaver using Azure Virtual Machines to host SAP applications and a SQL Server database. This system takes advantage of OS clustering for high availability, premium storage for faster storage performance and scalability, SQL Server Always On capability for replication, and a full disaster recovery (DR) configuration for 99.95% system availability.
 
 :::image type="content" source="../media/sap-netweaver-anydb-workflow-example-e1119375.gif" alt-text="Diagram of S A P Net Weaver with Any D B on Azure virtual machines sample functional workflow.":::

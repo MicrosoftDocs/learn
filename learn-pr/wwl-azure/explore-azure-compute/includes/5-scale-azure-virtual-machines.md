@@ -1,16 +1,14 @@
-
-
 ## Compute
 
 Azure provides the ability to change the size of your virtual machine (VM) based on the required CPU, network, or disk performance. Resizing is important for temporary performance needs like upgrades and migrations.
 
-After you create a VM, you can scale the VM up or down by changing the VM size. Resizing a VM might require deallocating it first if the new size isn't available on the hardware cluster that is currently hosting the VM. Similarly, when resizing VMs in the same availability set, if the new size for a VM in an availability set isn't available on the hardware cluster currently hosting the VM, then all VMs in the availability set will need to be deallocated to resize the VM. You also might need to update the size of other VMs in the availability set after one VM has been resized.
+After you create a VM, you can scale the VM up or down by changing the VM size. Resizing a VM might require deallocating it first if the new size isn't available on the hardware cluster that's currently hosting the VM. Similarly, when resizing VMs in the same availability set, if the new size for a VM in an availability set isn't available on the hardware cluster currently hosting the VM, then all VMs in the availability set needs to be deallocated to resize the VM. You also might need to update the size of other VMs in the availability set after one VM is resized.
 
 Resizing of Azure VMs can be performed from the Azure portal, via PowerShell, Azure CLI, Azure Resource Manager templates, or programmatically (including REST API).
 
 Key considerations for resizing include:
 
-- The Azure region may not contain the hardware requirements to support the desired sizes
+- The Azure region might not contain the hardware requirements to support the desired sizes
 - Resizing without the need to restart the VM depending on the current hardware cluster
 - New VM support or Premium Storage
 - Updating the VM in an availability set

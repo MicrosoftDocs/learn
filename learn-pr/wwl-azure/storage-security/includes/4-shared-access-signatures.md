@@ -9,7 +9,7 @@ You can give a customer a shared access signature token, for example, so they ca
 
  -  You can use a **service-level** shared access signature to allow access to specific resources in a storage account. You'd use this type of shared access signature, for example, to allow an app to retrieve a list of files in a file system or to download a file.
  -  Use an **account-level** shared access signature to allow access to anything that a service-level shared access signature can allow, plus additional resources and abilities. For example, you can use an account-level shared access signature to allow the ability to create file systems.
- -  A **user delegation SAS**, introduced with version 2018-11-09. A user delegation SAS is secured with Azure AD credentials. This type of SAS is supported for the Blob service only and can be used to grant access to containers and blobs.
+ -  A **user delegation SAS**, introduced with version 2018-11-09. A user delegation SAS is secured with Microsoft Entra credentials. This type of SAS is supported for the Blob service only and can be used to grant access to containers and blobs.
 
 Additionally, a service SAS can reference a stored access policy that provides an additional level of control over a set of signatures, including the ability to modify or revoke access to the resource if necessary.
 

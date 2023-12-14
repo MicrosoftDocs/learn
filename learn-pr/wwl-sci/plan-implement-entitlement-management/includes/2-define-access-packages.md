@@ -2,14 +2,14 @@
 
 Enterprise organizations often face challenges when managing employee access to resources such as:
 
- -  Users may not know what access they should have, and even if they do, they may have difficulty locating the right individuals to approve their access
- -  Once users find and receive access to a resource, they may hold on to access longer than is required for business purposes
+ -  Users don't know what access they should have, and even if they do, they can have difficulty locating the right individuals to approve their access
+ -  Once users find and receive access to a resource, they hold on to access longer than is required for business purposes
 
-These problems are compounded for users who need access from another organization, such as external users who are from supply chain organizations or other business partners. For example, Azure Active Directory (Azure AD), part of Entra entitlement management can help organizations ensure that everyone has access to the correct directories and that all user access is managed consistently.
+These problems are compounded for users who need access from another organization, such as external users who are from supply chain organizations or other business partners. For example, Microsoft Entra entitlement management can help organizations ensure that everyone has access to the correct directories and that all user access is managed consistently.
 
 This video provides an overview of entitlement management and its value:
 
-**Watch this video to learn more about Azure Active Directory entitlement management**
+**Watch this video to learn more about Microsoft Entra entitlement management**
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MFIb]
 
@@ -33,26 +33,26 @@ Before exploring entitlement management and its documentation in depth, you shou
 | assignment             | An assignment of an access package to a user ensures the user has all the resource roles of that access package. Access package assignments typically have a time limit before they expire.                                                                                                                                                    |
 | catalog                | A container of related resources and access packages. Catalogs are used for delegation so non-administrators can create their own access packages. Catalog owners can add resources they own to a catalog.                                                                                                                                     |
 | catalog creator        | A collection of users who are authorized to create new catalogs. When a non-administrator user who is authorized to be a catalog creator creates a new catalog, they automatically become the owner of that catalog.                                                                                                                           |
-| connected organization | An external Azure AD directory or domain that you have a relationship with. The users from a connected organization can be specified in a policy as being allowed to request access.                                                                                                                                                           |
+| connected organization | An external Microsoft Entra directory or domain that you have a relationship with. The users from a connected organization can be specified in a policy as being allowed to request access.                                                                                                                                                    |
 | policy                 | A set of rules that defines the access lifecycle, such as how users get access, who can approve, and how long users have access through an assignment. A policy is linked to an access package. For example, an access package could have two policies: one for employees to request access and a second for external users to request access. |
 | resource               | An asset, such as an Office group, a security group, an application, or a SharePoint Online site, with a role that a user can be granted permissions to.                                                                                                                                                                                       |
 | resource directory     | A directory that has one or more resources to share.                                                                                                                                                                                                                                                                                           |
-| resource role          | A collection of permissions associated with and defined by a resource. A group has two roles: member and owner. SharePoint sites typically have three roles but may have additional custom roles. Applications can have custom roles.                                                                                                          |
+| resource role          | A collection of permissions associated with and defined by a resource. A group has two roles: member and owner. SharePoint sites typically have three roles but can have additional custom roles. Applications can have custom roles.                                                                                                          |
 
 ## What are access packages and what resources can I manage with them?
 
-Entitlement management introduces to Azure AD the concept of an *access package*. An access package is a bundle of all the resources with the access a user needs to work on a project or perform their task. Access packages are used to govern access for your internal employees and users outside your organization. You can manage user access to the following resources with entitlement management:
+Entitlement management introduces to Microsoft Entra ID the concept of an *access package*. An access package is a bundle of all the resources with the access a user needs to work on a project or perform their task. Access packages are used to govern access for your internal employees and users outside your organization. You can manage user access to the following resources with entitlement management:
 
- -  Membership of Azure AD security groups.
+ -  Membership of Microsoft Entra security groups.
  -  Membership of Microsoft 365 Groups and Teams.
- -  Assignment to Azure AD enterprise applications, including SaaS applications and custom-integrated applications that support federation/single-sign-on and/or provisioning.
+ -  Assignment to Microsoft Entra enterprise applications, including SaaS applications and custom-integrated applications that support federation/single-sign-on and/or provisioning.
  -  Membership of SharePoint Online sites.
 
-You can also control access to other resources that rely upon Azure AD security groups or Microsoft 365 Groups. For example, you can provide:
+You can also control access to other resources that rely upon Microsoft Entra security groups or Microsoft 365 Groups. For example, you can provide:
 
- -  Licenses for Microsoft 365 by using an Azure AD security group in an access package and configuring group-based licensing for that group.
- -  Access to manage Azure resources by using an Azure AD security group in an access package and creating an Azure role assignment for that group.
- -  Access to manage Azure AD roles by using groups assignable to Azure AD roles in an access package and assigning an Azure AD role to that group.
+ -  Licenses for Microsoft 365 by using a security group in an access package and configuring group-based licensing for that group.
+ -  Access to manage Azure resources by using a security group in an access package and creating an Azure role assignment for that group.
+ -  Access to manage Microsoft Entra roles by using groups assignable to roles in an access package and assigning a role to that group.
 
 ## How do I control who gets access?
 
@@ -72,7 +72,7 @@ Access packages don't replace other mechanisms for access assignment. They're mo
  -  Employees need time-limited access for a particular task. For example, you might use group-based licensing and a dynamic group to ensure all employees have an Exchange Online mailbox, and then use access packages for situations in which employees need additional access, such as to read departmental resources from another department.
  -  Access requires the approval of an employee's manager or other designated individuals.
  -  Departments wish to manage their own access policies for their resources without IT involvement.
- -  Two or more organizations are collaborating on a project, and as a result, multiple users from one organization will need to be brought in via Azure AD B2B to access another organization's resources.
+ -  Two or more organizations are collaborating on a project, and as a result, multiple users from one organization will need to be brought in via Microsoft Entra B2B to access another organization's resources.
 
 The following diagram shows an example of the elements in entitlement management:
 

@@ -1,3 +1,6 @@
 To complete this exercise on your own computer, launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://github.com/MicrosoftLearning/mslearn-knowledge-mining/blob/main/Instructions/Labs/04-exercise-enrich-cognitive-custom-classes.md) 
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-knowledge-mining/Instructions/Exercises/04-exercise-enrich-cognitive-custom-classes.html?azure-portal=true)
+
+> [!TIP]
+> After completing the exercise, if you've finished exploring Azure AI services, delete the Azure resources that you created during the exercise.

@@ -7,7 +7,7 @@ metadata:
   ms.date: 05/01/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-stack
   ms.subservice: azure-stack-hci
 title: Plan for and deploy SDN infrastructure on Azure Stack HCI

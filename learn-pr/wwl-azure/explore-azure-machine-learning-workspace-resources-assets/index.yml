@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/09/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom:
   - N/A
   ms.service: machine-learning
@@ -30,7 +30,6 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.explore-azure-machine-learning-workspace-resources-assets.introduction
-- learn.wwl.explore-azure-machine-learning-workspace-resources-assets.video
 - learn.wwl.explore-azure-machine-learning-workspace-resources-assets.provision
 - learn.wwl.explore-azure-machine-learning-workspace-resources-assets.identify-resources
 - learn.wwl.explore-azure-machine-learning-workspace-resources-assets.identify-assets

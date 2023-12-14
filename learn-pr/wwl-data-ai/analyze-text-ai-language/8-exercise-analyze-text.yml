@@ -9,9 +9,8 @@ metadata:
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure-ai-language
-azureSandbox: false
-labId: 99990
-labModal: true
 durationInMinutes: 30
+labId: 152406
+labModal: true
 content: |
   [!include[](includes/8-exercise-analyze-text.md)]

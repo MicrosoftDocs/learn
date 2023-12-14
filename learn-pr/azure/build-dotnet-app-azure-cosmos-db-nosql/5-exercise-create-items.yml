@@ -14,8 +14,7 @@ metadata:
   sandbox: true
   author: seesharprun
   ms.author: sidandrews
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.date: 6/5/2023
 durationInMinutes: 10
 content: |

@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-active-directory.compare-ad-ds-to
-title: Compare Active Directory Domain Services to Azure Active Directory
+title: Compare Active Directory Domain Services to Microsoft Entra ID
 metadata:
-  title: Compare Active Directory Domain Services to Azure Active Directory
-  description: "Compare Active Directory Domain Services to Azure Active Directory"
-  ms.date: 10/10/2023
+  title: Compare Active Directory Domain Services to Microsoft Entra ID
+  description: "Compare Active Directory Domain Services to Microsoft Entra ID"
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.service: active-directory
+  ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 2

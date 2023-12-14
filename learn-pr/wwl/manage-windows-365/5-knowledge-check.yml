@@ -33,14 +33,14 @@ quiz:
     - content: "Ready-to-use Cloud PCs"
       isCorrect: false
       explanation: "Incorrect - Ready-to-use Cloud PCs are available in both Windows 365 Enterprise and Windows 365 Business."
-    - content: "Azure AD integration"
+    - content: "Microsoft Entra integration"
       isCorrect: false
-      explanation: "Incorrect - Azure AD integration is available in both Windows 365 Enterprise and Windows 365 Business."
+      explanation: "Incorrect - Microsoft Entra integration is available in both Windows 365 Enterprise and Windows 365 Business."
   - content: "Contoso is interested in deploying Windows as virtual sessions. The company has 150 seats, and it wants a solution that provides ready-to-use Cloud PCs with simple management options. It doesn't want any licensing prerequisites or any dependencies on Active Directory. Given these requirements, which of the following solutions should Contoso use?"
     choices:
     - content: "Windows 365 Enterprise"
       isCorrect: false
-      explanation: "Incorrect. This edition is for larger companies who want unlimited seats for creating Cloud PCs. It includes options to create custom Cloud PCs based on device images that you create, more management options, and full integration with Microsoft Endpoint Manager. It leverages Azure AD and AD DS domains. Try again."
+      explanation: "Incorrect. This edition is for larger companies who want unlimited seats for creating Cloud PCs. It includes options to create custom Cloud PCs based on device images that you create, more management options, and full integration with Microsoft Endpoint Manager. It leverages Microsoft Entra ID and AD DS domains. Try again."
     - content: "Azure Virtual Desktop"
       isCorrect: false
       explanation: "Incorrect. This edition is for larger companies. It requires Azure administration skills and has a complex setup because the customer manages the VMs. Try again."

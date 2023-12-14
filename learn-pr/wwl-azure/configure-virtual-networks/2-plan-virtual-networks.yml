@@ -4,11 +4,10 @@ title: Plan virtual networks
 metadata:
   title: Plan virtual networks
   description: "Plan virtual networks"
-  ms.date: 04/12/2023
+  ms.date: 11/18/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/2-plan-virtual-networks.md)]

@@ -10,7 +10,7 @@ Centralized Identity Management or Central Identity System is a single identity 
 - Management is by single authority
    - Admin or Admin group
 - Used for identity and access management
-- Example: Azure Active Directory (Azure AD)
+- Example: Microsoft Entra ID
 
 **Secure adaptive access** - Protect access to resources and data using strong authentication and risk-based adaptive access policies without compromising user experience.
 

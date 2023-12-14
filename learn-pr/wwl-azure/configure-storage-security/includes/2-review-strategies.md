@@ -6,9 +6,9 @@ Let's look at some characteristics of Azure Storage security.
 
 - **Encryption**. All data written to Azure Storage is automatically encrypted by using Azure Storage encryption.
 
-- **Authentication**. Azure Active Directory (Azure AD) and role-based access control (RBAC) are supported for Azure Storage for both resource management operations and data operations.
-    - Assign RBAC roles scoped to an Azure storage account to security principals, and use Azure AD to authorize resource management operations like key management.
-    - Azure AD integration is supported for data operations on Azure Blob Storage and Azure Queue Storage.
+- **Authentication**. Microsoft Entra ID and role-based access control (RBAC) are supported for Azure Storage for both resource management operations and data operations.
+    - Assign RBAC roles scoped to an Azure storage account to security principals, and use Microsoft Entra ID to authorize resource management operations like key management.
+    - Microsoft Entra integration is supported for data operations on Azure Blob Storage and Azure Queue Storage.
 
 - **Data in transit**. Data can be secured in transit between an application and Azure by using Client-Side Encryption, HTTPS, or SMB 3.0.
 
@@ -24,7 +24,7 @@ Review the following strategies for authorizing requests to Azure Storage. Think
 
 | Authorization strategy | Description |
 | --- | --- |
-| **Azure Active Directory** | Azure AD is Microsoft's cloud-based identity and access management service. With Azure AD, you can assign fine-grained access to users, groups, or applications by using role-based access control. |
+| **Microsoft Entra ID** | Microsoft Entra ID is Microsoft's cloud-based identity and access management service. With Microsoft Entra ID, you can assign fine-grained access to users, groups, or applications by using role-based access control. |
 | **Shared Key** | Shared Key authorization relies on your Azure storage account access keys and other parameters to produce an encrypted signature string. The string is passed on the request in the Authorization header. |
 | **Shared access signatures** | A SAS delegates access to a particular resource in your Azure storage account with specified permissions and for a specified time interval. |
 | **Anonymous access to containers and blobs** | You can optionally make blob resources public at the container or blob level. A public container or blob is accessible to any user for anonymous read access. Read requests to public containers and blobs don't require authorization.

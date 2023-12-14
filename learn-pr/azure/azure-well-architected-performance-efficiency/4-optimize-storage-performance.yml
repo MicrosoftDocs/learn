@@ -3,12 +3,11 @@ uid: learn.azure-well-architected-performance-efficiency.4-optimize-storage-perf
 title: Optimize storage performance
 metadata:
   title: Optimize storage performance
-  description: In this unit, you'll learn how to optimize storage performance for your architecture.
+  description: In this unit, you learn how to optimize storage performance for your architecture.
   ms.date: 06/15/2023
   author: martinekuan
   ms.author: martinek
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 9
 content: |
   [!include[](includes/4-optimize-storage-performance.md)]

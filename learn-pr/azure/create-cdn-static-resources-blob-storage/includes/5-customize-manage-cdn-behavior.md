@@ -14,11 +14,11 @@ To provide custom domain mapping, you first need to create the CNAME record in D
 |----------------------|-------|-----------------------------|
 | www.contoso.com      | CNAME | endpointname.azureedge.net. |
 
-DNS may take up to 72 hours to update.
+DNS can take up to 72 hours to update.
 
 ### Mapping the temporary cdnverify subdomain
 
-You can configure the CNAME record and publish it if your web server isn't yet online. If your domain is already in production and pointing to the origin server, you don't want to have any interruption to your users when you configure the CDN record. CNAME records should point to the **cdnverify** subdomain. In this case, the record looks like this format:
+You can configure the CNAME record and publish it if your web server isn't yet online. You don't want to interrupt your users when you set up the CDN record. If your domain is already in production and pointing to the origin server, setting up the CDN record without interrupting your users is important. CNAME records should point to the **cdnverify** subdomain. In this case, the record looks like this format:
 
 | Address (left field) | type  | Points to (Right field)     |
 |----------------------|-------|-----------------------------|
@@ -40,13 +40,13 @@ If the custom domain name resolves to the endpoint hostname, select **Add**. Now
 
 ## Compressing files
 
-Azure CDN can improve performance by compressing the files before they're delivered. Files are then decompressed by the receiving browser. How this activity applies depends on whether the file is originally compressed on the origin server or not.
+Azure CDN can improve performance by compressing the files before they're delivered. The receiving browser decompresses the files. How this activity applies depends on whether the file is originally compressed on the origin server or not.
 
 :::image type="content" source="../media/5-compression.png" alt-text="Screenshot of the compression settings page for a CDN profile.":::
 
 Azure CDN passes along the compressed files unaltered if you enable compression on files hosted on your origin server. Azure CDN dynamically compresses uncompressed files on the origin server that is of a type that can be compressed. It then stores the compressed files on the POP. This process improves the client experience and site performance.
 
-Compression in Azure CDN Standard from Microsoft is on by default. You can't configure other file types to compress or delete existing file types. However, you can add and modify file types to compress in the Akamai Standard and Verizon profiles.
+Compression in Azure CDN Standard from Microsoft is on by default. You can't configure other file types to compress or delete existing file types. However, you can add and modify file types to compress in the Akamai Standard and Edgio profiles.
 
 ## Controlling caching behavior
 
@@ -69,7 +69,7 @@ To change these settings, in the Endpoint pane, select **Caching rules** and the
 
 If you publish a website through Azure CDN, the files on that site are cached until their TTL expires. The Cache-Control header contained in the HTTP response from origin server determines the TTL duration.
 
-If you don't set a TTL on a file, Azure CDN sets a default value. However, this default may be overridden if you have set up caching rules in Azure. Default TTL values are as follows:
+If you don't set a TTL on a file, Azure CDN sets a default value. However, this default can be overridden if you have set up caching rules in Azure. Default TTL values are as follows:
 
 - Generalized web delivery optimizations: seven days
 - Large file optimizations: one day
@@ -99,9 +99,9 @@ For more information content expiration, see the Further Reading section of the 
 
 ## Geo-filtering
 
-Geo-filtering enables you to allow or block content in specific countries/regions, based on the country code. In the Azure CDN Standard for Microsoft Tier, you can only allow or block the entire site. With the Verizon and Akamai tiers, you can also set up restrictions on directory paths. For more information, see the further reading section in the Summary unit.
+Geo-filtering enables you to allow or block content in specific countries/regions, based on the country/region code. In the Azure CDN Standard for Microsoft Tier, you can only allow or block the entire site. With the Edgio and Akamai tiers, you can also set up restrictions on directory paths. For more information, see the further reading section in the Summary unit.
 
-To configure geo-filtering, in the properties of the respective endpoint, select Geo-filtering. On the Geo-filtering panel, select either allow or block, then in the country codes list, select which countries/regions you want to allow or block.
+To configure geo-filtering, in the properties of the respective endpoint, select Geo-filtering. On the Geo-filtering panel, select either allow or block, then in the country/region codes list, select which countries/regions you want to allow or block.
 
 :::image type="content" source="../media/5-geo-filtering.png" alt-text="Screenshot of the geo filtering page for a CDN profile.":::
 

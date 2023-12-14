@@ -3,10 +3,10 @@ uid: learn.wwl.analyze-text-ai-language
 metadata:
   title: Analyze text with Azure AI Language
   description: "Analyze text with Azure AI Language"
-  ms.date: 04/21/2023
+  ms.date: 10/10/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-ai-language
 title: Analyze text with Azure AI Language
 summary: The Azure AI Language service enables you to create intelligent apps and services that extract semantic information from text.

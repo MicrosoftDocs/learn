@@ -6,8 +6,7 @@ metadata:
   ms.date: 07/16/2021
   author: lauradolan
   ms.author: ladolan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Run high-performance computing (HPC) applications on Azure
 prerequisites: |
   - Basic familiarity with Azure compute services

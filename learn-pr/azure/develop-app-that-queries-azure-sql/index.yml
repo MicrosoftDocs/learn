@@ -7,7 +7,7 @@ metadata:
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: sql-database
 title: Develop and configure an ASP.NET application that queries an Azure SQL database
 summary: Create a database on Azure SQL Database to store data for an application, and create an ASP.NET application to query data from the database.

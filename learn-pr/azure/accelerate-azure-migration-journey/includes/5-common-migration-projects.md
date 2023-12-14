@@ -146,7 +146,6 @@ Learn more about running SAP on Azure:
 
 - SAP on Azure [implementation guide](https://azure.microsoft.com/resources/sap-on-azure-implementation-guide/?azure-portal=true)
 - eBook: [Migrating SAP applications](https://azure.microsoft.com/resources/migrating-sap-applications-to-azure/?azure-portal=true) to Azure
-- SAP to Azure migration [methodology](https://azure.microsoft.com/resources/migration-methodologies-for-sap-on-azure/?azure-portal=true)
 
 ## Virtual Desktop Infrastructure (VDI)
 

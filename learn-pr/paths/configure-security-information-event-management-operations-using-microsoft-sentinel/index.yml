@@ -6,8 +6,7 @@ metadata:
   ms.date: 8/01/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.service: Microsoft Sentinel
+  ms.topic: learning-path
 title: 'Configure SIEM security operations using Microsoft Sentinel'
 prerequisites: |
   - Fundamental understanding of Microsoft Azure
@@ -15,8 +14,11 @@ prerequisites: |
   - Experience using Kusto Query Language (KQL) in Microsoft Sentinel
 summary: |
   Get started with Microsoft Sentinel security operations by configuring the Microsoft Sentinel workspace, connecting Microsoft services and Windows security events to Microsoft Sentinel, configuring Microsoft Sentinel analytics rules, and responding to threats with automated responses.
+  > [!NOTE] 
+  > You need to have your own Azure subscription.  
+  > [!INCLUDE [](../../includes/azure-subscription-prerequisite.md)]   
 iconUrl: /training/achievements/configure-your-azure-sentinel-environment.svg
-hidden: true
+hidden: false
 levels:
 - intermediate
 roles:
@@ -33,7 +35,7 @@ modules:
 - learn.wwl.connect-microsoft-services-to-azure-sentinel
 - learn.wwl.connect-windows-hosts-to-azure-sentinel
 - learn.azure.analyze-data-in-sentinel
-- learn.azure.threat-response-sentinel-playbooks
+- learn.wwl.automation-microsoft-sentinel
 - learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs
 trophy:
   uid: learn.wwl.configure-siem-security-operations-using-microsoft-sentinel.trophy

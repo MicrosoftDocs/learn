@@ -4,7 +4,7 @@ The Microsoft Service Trust Portal provides a variety of content, tools, and oth
 The Service Trust Portal (STP) is Microsoft's public site for publishing audit reports and other compliance-related information associated with Microsoft’s cloud services. STP users can download audit reports produced by external auditors and gain insight from Microsoft-authored whitepapers that provide details on how Microsoft cloud services protect your data, and how you can manage cloud data security and compliance for your organization.
 
 ### Accessing the Service Trust Portal
-To access some of the resources on the Service Trust Portal, you must log in as an authenticated user with your Microsoft cloud services account (Azure Active Directory organization account) and review and accept the Microsoft non-disclosure agreement for Compliance Materials.
+To access some of the resources on the Service Trust Portal, you must log in as an authenticated user with your Microsoft cloud services account (Microsoft Entra organization account) and review and accept the Microsoft non-disclosure agreement for Compliance Materials.
 
 ### Service Trust Portal Content Categories
 The Service Trust Portal landing page includes content that is organized into the following categories:

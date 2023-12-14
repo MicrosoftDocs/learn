@@ -51,7 +51,7 @@ First, follow the steps in [Initializing your project and first application](/tr
 2) Download and **import** the following Unity custom packages **in the order they are listed**:
 
     * [AzureStorageForUnity.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v3.0.0/AzureStorageForUnity.unitypackage)
-    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureCloudServices.3.0.0](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureCloudServices.3.0.0.unitypackage)
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureCloudServices.3.0.1](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v3.0.1/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureCloudServices.3.0.1.unitypackage)
 
     After you have imported the tutorial assets your Project window should look similar to this:
 
@@ -117,7 +117,7 @@ In this section, you'll connect *SceneManager*, *DataManager*, and *RootMenu* to
 ## Prepare project build pipeline
 
 > [!Note]
-> Building and testing on HoloLens 2 is not mandatory. You can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a HoloLens device. You can purchase devices at [HoloLens.com](http://hololens.com/).
+> Building and testing on HoloLens 2 is not mandatory. You can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a HoloLens device. You can purchase devices at [HoloLens.com](https://hololens.com/).
 
 Before we finish the scene, let's prepare the project to be built for **HoloLens 2**.
 
@@ -138,7 +138,7 @@ Before we finish the scene, let's prepare the project to be built for **HoloLens
 ### 2. Deploy the app to your HoloLens 2
 
 > [!Note]
-> Building and testing on HoloLens 2 is not mandatory. You can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a HoloLens device. You can purchase devices at [HoloLens.com](http://hololens.com/).
+> Building and testing on HoloLens 2 is not mandatory. You can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a HoloLens device. You can purchase devices at [HoloLens.com](https://hololens.com/).
 
 You won't be able to run all the features that you'll use in this tutorial series inside the Unity editor. Therefore, you need to be familiar with deploying the application to your HoloLens 2 device.
 

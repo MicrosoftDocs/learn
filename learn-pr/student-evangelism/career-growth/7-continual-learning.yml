@@ -8,8 +8,7 @@ metadata:
   ms.date: 08/23/2021
   author: jlooper
   ms.author: jelooper
-  ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 6
 content: |

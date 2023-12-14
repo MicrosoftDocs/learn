@@ -9,8 +9,7 @@ metadata:
   author: IEvangelist
   ms.author: dapine
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/3-refactor-to-signalr.md)]

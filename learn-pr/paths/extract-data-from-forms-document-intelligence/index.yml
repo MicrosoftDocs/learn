@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.extract-data-from-forms-document-intelligence
 metadata:
-  title: Extract data from forms by using Azure AI Document Intelligence
-  description: Extract data from forms using Azure AI Document Intelligence
+  title: Develop solutions with Azure AI Document Intelligence
+  description: Develop solutions with Azure AI Document Intelligence
   ms.date: 10/10/2022
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure
-title: Extract data from forms by using Azure AI Document Intelligence
+title: Develop solutions with Azure AI Document Intelligence
 prerequisites: |
   - None
 summary: |
