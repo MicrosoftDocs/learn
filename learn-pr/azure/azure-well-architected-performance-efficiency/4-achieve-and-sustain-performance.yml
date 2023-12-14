@@ -16,47 +16,39 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'question-1'
+  - content: 'True or false: performance testing during production is not recommended.'
     choices:
-    - content: 'choice-1-content'
+    - content: 'True.'
       isCorrect: false
-      explanation: 'choice-2-explanation'
-    - content: 'choice-3-content'
+      explanation: 'Incorrect. You should test performance throughout the development lifecycle, including production.'
+    - content: 'False.'
       isCorrect: true
-      explanation: 'choice-3-explanation'
-    - content: 'choice-4-content'
-      isCorrect: false
-      explanation: "choice-4-explanation"
-    - content: 'choice-5-content'
-      isCorrect: false
-      explanation: "choice-5-explanation"
-
-  - content: 'question-2'
+      explanation: 'Correct. You should test performance throughout the development lifecycle, including production.'
+  - content: 'Which of the following aspects of your workload should you monitor to help ensure that performance targets are met?'
     choices:
-    - content: 'choice-1-content'
-      isCorrect: false
-      explanation: 'choice-2-explanation'
-    - content: 'choice-3-content'
+    - content: 'Both real and synthetic transactions.'
       isCorrect: true
-      explanation: 'choice-3-explanation'
-    - content: 'choice-4-content'
+      explanation: 'Correct. It is important to monitor both real and synthetic transactions to ensure that performance during real-world usage is acceptable.'
+    - content: 'Only synthetic transactions.'
       isCorrect: false
-      explanation: "choice-4-explanation"
-    - content: 'choice-5-content'
+      explanation: 'Incorrect. Synthetic transactions may not give you a full picture of how your workload performs under real-world usage.'
+    - content: 'Only real transactions.'
       isCorrect: false
-      explanation: "choice-5-explanation"
-
-  - content: 'question-3'
+      explanation: "Incorrect. Monitoring synthetic transactions can help you proactively identify performance issues before they impact real users."
+    - content: 'Neither real nor synthetic transactions.'
+      isCorrect: false
+      explanation: "Incorrect. It is important to monitor both real and synthetic transactions to ensure that performance during real-world usage is acceptable."
+  - content: 'Why is the Contoso team planning on changing their database structure?'
     choices:
-    - content: 'choice-1-content'
+    - content: 'To fix broken images in the application.'
       isCorrect: false
-      explanation: 'choice-2-explanation'
-    - content: 'choice-3-content'
+      explanation: 'Incorrect. The database structure is not related to broken images in the application.'
+    - content: 'To improve security.'
+      isCorrect: false
+      explanation: 'Incorrect. The team is not facing a security issue with their current database structure.'
+    - content: 'To handle increased load.'
       isCorrect: true
-      explanation: 'choice-3-explanation'
-    - content: 'choice-4-content'
+      explanation: "Correct. The team saw some inefficiencies in their database structure that could cause performance issues as the workload's usage increases."
+    - content: 'To begin the process of migrating to a new database solution.'
       isCorrect: false
-      explanation: "choice-4-explanation"
-    - content: 'choice-5-content'
-      isCorrect: false
-      explanation: "choice-5-explanation"
+      explanation: "Incorrect. The team is not planning on migrating to a new database solution."
