@@ -116,7 +116,7 @@ For each sensor include:
 
 The Purdue Reference Model for Industrial Control System (ICS)/OT network segmentation divides a network into different OT and IT and layers to better isolate IT and OT systems and enhance OT system protection. Levels one through three are OT levels and four and five are IT levels. The levels are as follows:
 
-|Name|Description|
+| Name | Description |
 |---------|---------|
 |**Level 0**: </br>Cell and area| The wide variety of sensors, actuators, and devices involved in the basic manufacturing process. These devices perform the basic functions of the industrial automation and control system, like driving a motor or key functions like welding and bending.|
 |**Level 1:** </br>Process control| Embedded controllers that communicate with Level 0 devices and control and manipulate the manufacturing process. In discrete manufacturing, those devices are programmable logic controllers (PLCs) or remote telemetry units (RTUs). In process manufacturing, the basic controller is called a distributed control system (DCS).|
@@ -133,11 +133,11 @@ The following diagram depicts how devices might be divided into the different OT
 :::image type="content" source="../media/2-purdue-only.png" alt-text="Purdue model diagram" border="false":::
 
 ## Knowledge check
+
 :::image type="complex" source="../media/2-sample-network-diagram-knowledge-check.png" alt-text="Diagram of a sample network diagram" border="false":::
 
 Figure A shows a sample diagram of a network in a building of three floors, where each floor houses endpoints and switches. The third floor also houses firewalls, core switches, a server, and routers. A blue dotted line depicts traffic traveling outside of the IP segment, traveling throughout floor 1 and 2 and up to a server connected to a core server on floor 3. Interesting traffic is depicted in red from two switches on floor 2 to each of the firewalls on floor 3. In addition, there's a Defender for IoT sensor with the question where should the Defender for IoT sensor be connected and three choices: A- to the switch for interesting traffic between on floor 2, B- to the switch where traffic is traveling outside of the IP segment on level 2, or C- to the switch for traffic is traveling outside of the IP segment on level 1. 
 :::image-end:::
-
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 

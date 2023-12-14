@@ -21,7 +21,7 @@ metadata:
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
   ms.prod: TODO
   ms.service: defender-for-iot
-durationInMinutes: 1
+durationInMinutes: 7
 content: |
   [!include[](includes/2-identify-devices-and-subnets.md)]
 

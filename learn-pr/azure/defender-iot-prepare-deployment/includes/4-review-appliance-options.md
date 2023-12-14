@@ -1,13 +1,3 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: briefly summarize the key skill this unit will teach
-
-    Heading: none
-
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
-
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
 In the previous unit, you determine the traffic mirroring methods to use for your site. Now you'll prepare to choose the right appliances for your system and the hardware profiles that best fit your organization's network monitoring needs.
 
 ## Appliance types
@@ -19,6 +9,7 @@ The following appliance types are available to use with your Microsoft Defender 
 - Self-configured physical appliances
 
 ## Pre-configured physical appliances
+
 Microsoft partnered with Arrow Electronics to provide pre-configured physical appliances validated for Defender for IoT OT system monitoring. The advantages of pre-configured appliances are:
 
 - **Better performance** over the total assets monitored.
@@ -46,6 +37,7 @@ Microsoft partnered with Arrow Electronics to provide pre-configured physical ap
 
 ## Virtual appliances
 <!-- need information about why you would choose virtual appliances. like ease of testing, deployment, backup. But not in the documentation. confirm-->
+
 ### Virtualization hardware
 
 The *hypervisors* or virtual machine hosts supported by Defender for IoT to run guest operating systems are:
@@ -63,7 +55,7 @@ When choosing virtual appliance components, consider the following:
 |---------|---------|
 |**CPU**     |   Assign dedicated CPU cores with at least 2.4 GHz, which aren't dynamically allocated. The appliance continuously records and analyzes network traffic so CPU usage is high. CPU performance is critical to capturing and analyzing network traffic. Any slowdown could lead to packet drops and performance degradation.   |
 |**Memory**     | Allocate RAM statically for the required capacity, not dynamically. Sensors have high RAM usage due to the sensor's constant network traffic recording and analytics.        |
-|**Network interfaces**  |  Physical mapping provides best performance, lowest latency, and efficient CPU usage. Physically map Network Interface Cards (NIC)s to the virtual machines with Single Root Input/Output Virtualization (SR-IOV) or a dedicated NIC. Given the high traffic monitoring levels, expect high network utilization. <br>Set the promiscuous mode on your vSwitch to **Accept**, which allows all traffic to reach the virtual machine. Some vSwitch implementations might block certain protocols they aren't configured correctly.|
+|**Network interfaces**  |  Physical mapping provides best performance, lowest latency, and efficient CPU usage. Physically map Network Interface Cards (NIC)s to the virtual machines with Single Root Input/Output Virtualization (SR-IOV) or a dedicated NIC. Given the high traffic monitoring levels, expect high network utilization. </br>Set the promiscuous mode on your vSwitch to **Accept**, which allows all traffic to reach the virtual machine. Some vSwitch implementations might block certain protocols they aren't configured correctly.|
 |**Storage**     | Make sure to allocate enough read and write IOPs and throughput to match the performance of the virtual appliances. Expect high storage usage due to the large traffic monitoring volumes.      |
 
 ### OT network sensor VM requirements
@@ -77,13 +69,13 @@ See the following table for system requirements for OT network sensors on virtua
 
 |Hardware profile  |Performance / Monitoring  |Physical specifications  |
 |---------|---------|---------|
-|**C5600**     |   **Max bandwidth**: 2.5 Gb/sec <br>**Max monitored assets**: 12,000      | **vCPU**: 32 <br>**Memory**: 32 GB <br>**Storage**: 5.6 TB (600 IOPS)        |
-|**E1800**     |    **Max bandwidth**: 800 Mb/sec <br>**Max monitored assets**: 10,000      | **vCPU**: 8 <br>**Memory**: 32 GB <br>**Storage**: 1.8 TB (300 IOPS)        |
-|**E1000**     |    **Max bandwidth**: 800 Mb/sec <br>**Max monitored assets**: 10,000      | **vCPU**: 8 <br>**Memory**: 32 GB <br>**Storage**: 1 TB (300 IOPS)        |
-|**E500**     |    **Max bandwidth**: 800 Mb/sec <br>**Max monitored assets**: 10,000      | **vCPU**: 8 <br>**Memory**: 32 GB <br>**Storage**: 500 GB (300 IOPS)        |
-|**L500**     |   **Max bandwidth**: 160 Mb/sec <br>**Max monitored assets**: 1,000      | **vCPU**: 4 <br>**Memory**: 8 GB <br>**Storage**: 500 GB (150 IOPS)        |
-|**L100**     |    **Max bandwidth**: 100 Mb/sec <br>**Max monitored assets**: 800      | **vCPU**: 4 <br>**Memory**: 8 GB <br>**Storage**: 100 GB (150 IOPS)        |
-|**L60** |     **Max bandwidth**: 10 Mb/sec <br>**Max monitored assets**: 100      | **vCPU**: 4 <br>**Memory**: 8 GB <br>**Storage**: 60 GB (150 IOPS)        |
+|**C5600**     |   **Max bandwidth**: 2.5 Gb/sec </br>**Max monitored assets**: 12,000      | **vCPU**: 32 </br>**Memory**: 32 GB </br>**Storage**: 5.6 TB (600 IOPS)        |
+|**E1800**     |    **Max bandwidth**: 800 Mb/sec </br>**Max monitored assets**: 10,000      | **vCPU**: 8 </br>**Memory**: 32 GB </br>**Storage**: 1.8 TB (300 IOPS)        |
+|**E1000**     |    **Max bandwidth**: 800 Mb/sec </br>**Max monitored assets**: 10,000      | **vCPU**: 8 </br>**Memory**: 32 GB </br>**Storage**: 1 TB (300 IOPS)        |
+|**E500**     |    **Max bandwidth**: 800 Mb/sec </br>**Max monitored assets**: 10,000      | **vCPU**: 8 </br>**Memory**: 32 GB </br>**Storage**: 500 GB (300 IOPS)        |
+|**L500**     |   **Max bandwidth**: 160 Mb/sec </br>**Max monitored assets**: 1,000      | **vCPU**: 4 </br>**Memory**: 8 GB </br>**Storage**: 500 GB (150 IOPS)        |
+|**L100**     |    **Max bandwidth**: 100 Mb/sec </br>**Max monitored assets**: 800      | **vCPU**: 4 </br>**Memory**: 8 GB </br>**Storage**: 100 GB (150 IOPS)        |
+|**L60** |     **Max bandwidth**: 10 Mb/sec </br>**Max monitored assets**: 100      | **vCPU**: 4 </br>**Memory**: 8 GB </br>**Storage**: 60 GB (150 IOPS)        |
 
 The sensor installation includes an operating system image for the virtual machine.
 
