@@ -1,21 +1,21 @@
-[Data science](/fabric/data-science/data-science-overview/?azure-portal=true) is a multidisciplinary field that uses scientific methods, processes, algorithms, and tools to extract knowledge and insights from structured and unstructured data. 
+[Microsoft Fabric Data Warehouse](/fabric/data-warehouse/?azure-portal=true) is a complete platform for data, analytics, and AI (Artificial Intelligence). It refers to the process of storing, organizing, and managing large volumes of structured and semi-structured data. 
 
-In a typical data science project, it's a common practice to start with the Exploratory Data Analysis (EDA) where it involves understanding the patterns, spotting anomalies, and checking assumptions related to the underlying data.
+Data warehouse in Microsoft Fabric is powered up with Synapse Analytics by offering a rich set of features that make it easier to manage and analyze data. It includes advanced query processing capabilities, and supports the full transactional T-SQL capabilities like an enterprise data warehouse.
 
-Once you have this understanding, you can move on to the preprocessing phase. This is where you address the data quality issues identified during EDA and prepare your data for modeling. Preprocessing transforms raw data into an understandable format for machine learning algorithms, which improves their ability to make accurate predictions.
+The process of querying a data warehouse is a key component of business intelligence. It involves the extraction and manipulation of the data stored in a data warehouse, allowing users to extract valuable insights from large volumes of data.
 
-[Data Wrangler](/en-us/fabric/data-science/data-wrangler?azure-portal=true) in Microsoft Fabric provides a graphical experience where you can easily generate code for exploration and preprocessing purposes, and ensures that your data is in the best possible shape before it’s used to train a machine learning model.
+## Star schema design
 
-## Understand the data science process
+In a typical data warehouse, the data is organized using a schema, often a [star schema](/power-bi/guidance/star-schema?azure-portal=true) or a [snowflake schema](/power-bi/guidance/star-schema#snowflake-dimensions?azure-portal=true). The star schema and snowflake schema are mature modeling approaches widely adopted by relational data warehouses. It requires you to classify tables as either dimension or fact.
 
-Data preprocessing is a preliminary preparation of the data that sets the stage for all subsequent steps in the data science process.
+Fact tables store the measurable, quantitative data about a business, while dimension tables contain descriptive attributes related to fact data.
 
-:::image type="content" source="../media/1-data-science-process.png" alt-text="Diagram of sequential steps in the data science process.":::
+:::image type="content" border="false" source="../media/1-star-schema.png" alt-text="Screenshot of a star schema design with a fact table in the center and dimension tables forming the points of the star.":::
 
-1. **Define the problem**: Together with business users and analysts, decide on what the model should predict and when it's successful.
-1. **Get the data**: Find data sources and get access by storing your data in a Lakehouse.
-1. **Prepare the data**: Explore the data by reading it from a Lakehouse into a notebook. Clean and transform the data based on the model's requirements.
-1. **Train the model**: Choose an algorithm and hyperparameter values based on trial and error by tracking your experiments with MLflow.
-1. **Generate insights**: Use model batch scoring to generate the requested predictions.
+Think of a dimension table as the *"who, what, where, when, why”* of your data warehouse. It’s like the descriptive backdrop that gives context to the raw numbers found in the fact tables.
 
-In this module, the focus is on preprocessing data using Data Wrangler. You work within a Microsoft Fabric notebook, using both Data Wrangler and Python for data exploration. You learn how to manage missing data and use various operators to transform data for a model-building pipeline. Lastly, you get hands-on experience in preprocessing data using Data Wrangler within Microsoft Fabric notebooks through a practical exercise.
+For example, if you’re running an online store, your fact table might contain the raw sales data - how many units of each product were sold. But without a dimension table, you wouldn’t know who bought those products, when they were bought, or where the buyer is located.
+
+We will explore different ways to connect and query a data warehouse, and how they can facilitate the tasks of effectively extracting information.
+
+For more information, see [Understand star schema and the importance for Power BI](/power-bi/guidance/star-schema).
