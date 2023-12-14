@@ -1,0 +1,82 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-authorization-microsoft-entra-id.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/14/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of adding a condition to a role assignment in Azure Role-Based Access Control?"
+    choices:
+    - content: "To provide more privileges to the user assigned the role"
+      isCorrect: false
+      explanation: "Incorrect. This is not the purpose of adding a condition to a role assignment."
+    - content: "To limit the number of users who can access the resource"
+      isCorrect: false
+      explanation: "Incorrect. This is not the purpose of adding a condition to a role assignment."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Adding a condition to a role assignment provides more fine-grained access control by enabling the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "What is the purpose of Privileged Identity Management?"
+    choices:
+    - content: "Provides unlimited access permissions to all resources"
+      isCorrect: false
+      explanation: "Incorrect. This would increase the risk of excessive or misused access permissions."
+    - content: "Allows anyone to activate privileged roles without approval"
+      isCorrect: false
+      explanation: "Incorrect. Approval is required to activate privileged roles."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Privileged Identity Management provides time based and approval based role activation to mitigate the risks of excessive, unnecessary, or misused access permissions on resources that you care about."
+  - content: "What is the purpose of conditional access policy?"
+    choices:
+    - content: "Allows unlimited access to all users"
+      isCorrect: false
+      explanation: "Incorrect. Conditional access policy is used to restrict access based on certain conditions."
+    - content: "Prevents users from accessing any application"
+      isCorrect: false
+      explanation: "Incorrect. Conditional access policy is used to restrict access based on certain conditions, not prevent access altogether."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Conditional access policy is used to enforce additional security requirements, such as multi-factor authentication, based on specific conditions such as user location or device type."
+  - content: "What is the purpose of enabling 'Show recommendations' in Microsoft Entra ID access reviews?"
+    choices:
+    - content: "To deny access to all users who have not logged in within the past 30 days"
+      isCorrect: false
+      explanation: "Incorrect. This setting only shows system recommendations based on the user's access information."
+    - content: "To automatically approve all user access requests"
+      isCorrect: false
+      explanation: "Incorrect. This setting only shows system recommendations based on the user's access information."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. This setting shows system recommendations based on the user's access information, which can help reviewers make informed decisions about granting or denying access."
+  - content: "What is the purpose of Microsoft Entra Privileged Identity Management PIM?"
+    choices:
+    - content: "Provides access to Azure resources without any prerequisites"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Entra Privileged Identity Management PIM requires prerequisites such as licenses and specific roles assigned."
+    - content: "Allows users to manage their own access to Azure resources"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Entra Privileged Identity Management PIM is used to create access reviews for privileged access to Azure resource and Microsoft Entra roles, not for managing individual user access."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Microsoft Entra Privileged Identity Management PIM is used to create access reviews for privileged access to Azure resource and Microsoft Entra roles, enabling the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "What does Privileged Identity Management enable?"
+    choices:
+    - content: "Enables users to bypass administrator approval for role assignments"
+      isCorrect: false
+      explanation: "Incorrect. Users cannot bypass administrator approval for role assignments."
+    - content: "Enables users to manage their own roles without administrator approval"
+      isCorrect: false
+      explanation: "Incorrect. Users need administrator approval to manage their roles."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Privileged Identity Management enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."

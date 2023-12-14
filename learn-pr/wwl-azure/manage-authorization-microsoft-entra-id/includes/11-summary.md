@@ -1,0 +1,1 @@
+In this module, you learned how to manage authorization in Microsoft Enterprise Identity (Entra ID) by configuring role permissions, assigning built-in and custom roles, implementing permissions management, configuring Privileged Identity Management, role management, and access reviews, and enforcing Conditional Access policies to control and monitor access to resources.

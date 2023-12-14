@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-authorization-microsoft-entra-id.create-an-access-review-of-azure-resource-and-microsoft-entra-roles
+title: Configure role management and access reviews by using Microsoft Entra Identity Governance
+metadata:
+  title: Configure role management and access reviews by using Microsoft Entra Identity Governance
+  description: "Configure role management and access reviews by using Microsoft Entra Identity Governance"
+  ms.date: 12/14/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-create-an-access-review-of-azure-resource-and-microsoft-entra-roles.md)]
