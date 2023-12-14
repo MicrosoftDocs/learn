@@ -1,4 +1,4 @@
-Compliance departments need to be able to review code and complaince reports to ensure that the application is compliant with the company's policies. The .NET compliance framework provides a way to generate reports that show the compliance status of the application.
+Compliance departments need to be able to review code and compliance reports to ensure that the application is compliant with the company's policies. The .NET compliance framework provides a way to generate reports that show the compliance status of the application.
 
 ## What is a compliance report?
 
@@ -82,6 +82,6 @@ There are two steps that you need to take for each project you'd like to generat
     <ComplianceReportOutputPath>$(MSBuildThisFileDirectory)\path to folder location</ComplianceReportOutputPath>
     ```
 
-    The first switches the compliance report generation on. The second specifies the path to the folder where the report will be generated. The file name will be **ComplianceReport.json**.
+    The first switches the compliance report generation on. The second specifies the path to the folder where the report will be generated. The file name is **ComplianceReport.json**.
 
-With these updates, running `dotnet build` in the solution folder will generate a compliance report for each project that has the `GenerateComplianceReport` property set to `true`.
+With these updates, running `dotnet build` in the solution folder generates a compliance report for each project that has the `GenerateComplianceReport` property set to `true`.
