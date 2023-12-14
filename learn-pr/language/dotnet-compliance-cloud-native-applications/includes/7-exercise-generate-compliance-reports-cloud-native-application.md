@@ -1,4 +1,4 @@
-Your compliance team have asked you to produce complaince reports for all the projects in your app.
+Your compliance team has asked you to produce compliance reports for all the projects in your app.
 
 In the exercise you'll learn how to:
 

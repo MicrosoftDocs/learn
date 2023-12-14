@@ -1,6 +1,6 @@
 In this exercise, you'll classify the sensitive data types in a sample **:::no-loc text="eShopLite":::** application. 
 
-The app is in active development and currently has two data classes, **:::no-loc text="Product":::** and **:::no-loc text="Order":::**. They're building out the ordering process and wabt you to add the code to classify data types.
+The app is in active development and currently has two data classes, **:::no-loc text="Product":::** and **:::no-loc text="Order":::**. They're building out the ordering process and want you to add the code to classify data types.
 
 In this exercise, you'll:
 

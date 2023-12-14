@@ -14,7 +14,7 @@ For example, you may want to make it clearer in the logs that a value is redacte
 
 Your organizations cloud native app could be writing logs and creating telemetry in multiple projects. For example, it could be writing logs from the database service, the web app, or any other API's it uses. Depending on the type of logging, you'll need to add the redaction service to each one.
 
-There are three steps you need to take to enable redaction in your app:
+There are four steps you need to take to enable redaction in your app:
 
 1. Add the `Microsoft.Extensions.Compliance.Redaction` NuGet package to each project.
 1. Add the redaction service to the dependency injection container.
