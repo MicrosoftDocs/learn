@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-public-access-azure-resources.azure-ddos-protection
+title: Recommend when to use Azure DDoS Protection Standard
+metadata:
+  title: Recommend when to use Azure DDoS Protection Standard
+  description: "Recommend when to use Azure DDoS Protection Standard"
+  ms.date: 12/14/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-azure-ddos-protection.md)]
