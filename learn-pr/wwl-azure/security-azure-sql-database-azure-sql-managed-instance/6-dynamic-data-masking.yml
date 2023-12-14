@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-azure-sql-database-azure-sql-managed-instance.dynamic-data-masking
+title: Plan and implement dynamic masking
+metadata:
+  title: Plan and implement dynamic masking
+  description: "Configure dynamic data masking"
+  ms.date: 12/14/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-dynamic-data-masking.md)]
