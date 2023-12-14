@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-virtual-networks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/14/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of creating user defined routes in Azure?"
+    choices:
+    - content: "To override the default system routes and add more routes to a virtual machine's route table"
+      isCorrect: false
+      explanation: "Incorrect. This answer describes the purpose of creating custom routes for a virtual machine, not user defined routes for a subnet."
+    - content: "To create a new virtual network with a different IP address range"
+      isCorrect: false
+      explanation: "Incorrect. Creating a new virtual network with a different IP address range is not the purpose of user defined routes."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. User defined routes allow for more control over routing traffic within a subnet, which can help ensure secure and stable application hosting platforms."
+  - content: "What is the purpose of a Site to Site (S2S) VPN gateway connection?"
+    choices:
+    - content: "Allows for a connection over a remote desktop protocol (RDP) session"
+      isCorrect: false
+      explanation: "Incorrect. RDP is a different protocol used for remote access to a computer."
+    - content: "Enables secure connection to a virtual network from an individual client computer"
+      isCorrect: false
+      explanation: "Incorrect. This describes a Point to Site (P2S) VPN gateway connection."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. S2S connections can be used for cross premises and hybrid configurations, requiring a VPN device located on premises with a public IP address assigned to it."
+  - content: "What does Azure Virtual WAN enable?"
+    choices:
+    - content: "Enables the creation of virtual machines only"
+      isCorrect: false
+      explanation: "Incorrect. Azure Virtual WAN enables more than just the creation of virtual machines."
+    - content: "Enables the creation of virtual networks only"
+      isCorrect: false
+      explanation: "Incorrect. Azure Virtual WAN enables more than just the creation of virtual networks."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Azure Virtual WAN enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "What is the purpose of environment automation in application hosting platforms?"
+    choices:
+    - content: "Enables the creation of unstable application hosting platforms"
+      isCorrect: false
+      explanation: "Incorrect. Unstable platforms can lead to downtime and security vulnerabilities."
+    - content: "Enables manual creation and teardown of environments"
+      isCorrect: false
+      explanation: "Incorrect. Manual processes are prone to errors and inconsistencies."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Automation ensures consistency and reduces the risk of errors, while validation ensures that the environment meets security and stability requirements."
+  - content: "What is the purpose of application security groups in Azure?"
+    choices:
+    - content: "To assign network interfaces from different virtual networks to the same group"
+      isCorrect: false
+      explanation: "Incorrect. Network interfaces from different virtual networks cannot be assigned to the same application security group."
+    - content: "To limit the number of virtual networks in a subscription"
+      isCorrect: false
+      explanation: "Incorrect. Application security groups do not limit the number of virtual networks in a subscription."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Application security groups enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."

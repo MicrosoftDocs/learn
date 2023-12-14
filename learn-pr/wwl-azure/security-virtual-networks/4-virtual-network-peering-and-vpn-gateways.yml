@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-virtual-networks.virtual-network-peering-and-vpn-gateways
+title: Plan and implement Virtual Network (VNET) peering or VPN gateway
+metadata:
+  title: Plan and implement Virtual Network (VNET) peering or VPN gateway
+  description: "Plan and implement Virtual Network (VNET) peering or VPN gateway"
+  ms.date: 12/14/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-virtual-network-peering-and-vpn-gateways.md)]
