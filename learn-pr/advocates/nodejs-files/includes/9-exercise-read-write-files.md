@@ -52,30 +52,30 @@ In this exercise, you complete the project by reading the `.json files`, adding 
     * (1) Add a call to the `calculateSalesTotals` function just above the `fs.writeFile` call.
     * (2) Modify the `fs.writeFile` block to write the value of the `salesTotal` variable to the *totals.txt* file.
     
-   ```javascript
-   async function main() {
-     const salesDir = path.join(__dirname, "stores");
-     const salesTotalsDir = path.join(__dirname, "salesTotals");
-
-     try {
-       await fs.mkdir(salesTotalsDir);
-     } catch {
-       console.log(`${salesTotalsDir} already exists.`);
-     }
-
-     const salesFiles = await findSalesFiles(salesDir);
-
-     // (1) Add a call to the `calculateSalesTotals` function just above the `fs.writeFile` call.
-     const salesTotal = await calculateSalesTotal(salesFiles);
-
-     // (2) Modify the `fs.writeFile` block to write the value of the `salesTotal` variable to the *totals.txt* file.
-     await fs.writeFile(
-       path.join(salesTotalsDir, "totals.txt"),
-       `${salesTotal}\r\n`,
-       { flag: "a" }
-     );
-   }
-   ```
+    ```javascript
+    async function main() {
+      const salesDir = path.join(__dirname, "stores");
+      const salesTotalsDir = path.join(__dirname, "salesTotals");
+    
+      try {
+        await fs.mkdir(salesTotalsDir);
+      } catch {
+        console.log(`${salesTotalsDir} already exists.`);
+      }
+    
+      const salesFiles = await findSalesFiles(salesDir);
+    
+      // (1) Add a call to the `calculateSalesTotals` function just above the `fs.writeFile` call.
+      const salesTotal = await calculateSalesTotal(salesFiles);
+    
+      // (2) Modify the `fs.writeFile` block to write the value of the `salesTotal` variable to the *totals.txt* file.
+      await fs.writeFile(
+        path.join(salesTotalsDir, "totals.txt"),
+        `${salesTotal}\r\n`,
+        { flag: "a" }
+      );
+    }
+    ```
 
 ## Run the program
 
@@ -85,6 +85,10 @@ In this exercise, you complete the project by reading the `.json files`, adding 
    node index.js
    ```
 
+    ```console
+    185933.76
+    ```
+
 1. Open the `./salesTotals/totals.txt` file to see the total of all the sales from the *sales.json* and *totals.json* files: 185933.76.
 
 1. Run the program from the terminal again.
@@ -92,6 +96,11 @@ In this exercise, you complete the project by reading the `.json files`, adding 
    ```bash
    node index.js
    ```
+
+    ```console
+    185933.76
+    185933.76
+    ```
 
    The *totals.txt* file now has a second line. Every time you run the program, the totals are added up again and a new line is written to the file.
 

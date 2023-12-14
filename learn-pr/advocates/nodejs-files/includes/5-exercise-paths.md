@@ -2,7 +2,7 @@ As a developer at Tailwind Traders, you're about to enhance a program by using t
 
 ## Include the path module
 
-At the top of the *index.js* file, include the **path** module.
+At the top of your existing *index.js* file, include the **path** module.
 
 ```javascript
 const path = require("path");
@@ -72,7 +72,7 @@ Instead of looking for just *sales.json* files, the program needs to search for 
    mv stores/201/sales.json stores/201/totals.json
    ```
 
-1. In the `findSalesFiles` function, change the `if` statement to check just the filename extension. Use the `path.join` method to compose the full path to the file.
+1. In the `findSalesFiles` function, change the `if` statement to check just the filename extension.
 
    ```javascript
    if (path.extname(item.name) === ".json") {

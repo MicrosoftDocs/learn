@@ -1,4 +1,4 @@
-The Tailwind Traders application needs to read each store's sales data then calculate the total, then write the total of all the individual store sales files to a new file. This file is then loaded into the company's sales system.
+The Tailwind Traders application needs to read each store's sales data then calculate the total, then write the total of all the individual store sales files to a new file. 
 
 ## Read data from files with fs.readFile
 
@@ -75,7 +75,7 @@ const fileContents = await fs.readFile("stores/201/sales.json");
 const data = JSON.parse(fileContents);
 
 // file name is totals.txt
-const filePath = path.join("salesTotals/totals.txt");
+const filePath = path.join("salesTotals","totals.txt");
 
 // write the total to the "totals.json" file
 await fs.writeFile(filePath, data.total);
@@ -99,7 +99,7 @@ const fileContents = await fs.readFile("stores/201/sales.json");
 const data = JSON.parse(fileContents);
 
 // file name is totals.txt
-const filePath = path.join("salesTotals/totals.txt");
+const filePath = path.join("salesTotals","totals.txt");
 
 // write the total to the "totals.json" file
 await fs.writeFile(filePath, `${data.total}\r\n`, {flag: "a"});

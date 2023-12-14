@@ -1,5 +1,3 @@
-Large retailers often write data to files so that it can be processed later in batches.
-
 Tailwind Traders has each of its stores write its sales total to a file and send that file to a central location. To use those files, the company needs to create a batch process that can work with the file system.
 
 Here, you learn how to use Node.js to read the file system to discover files and directories.

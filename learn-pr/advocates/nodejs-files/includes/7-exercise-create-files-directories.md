@@ -37,11 +37,7 @@ As a Tailwind Traders developer, you've created a robust command-line applicatio
    node index.js
    ```
 
-1. Select the **Refresh** icon in the **Files** explorer.
-
-   :::image type="content" source="../media/refresh-file-explorer.png" alt-text="Screenshot of the Refresh icon in the Files explorer of the Cloud Shell editor.":::
-
-You created the file but it doesn't have the totals yet. The next step is to read the sales files, add up the totals, and write the grand total to the new *totals.txt* file. Next you learn how to read and parse data inside files.
+1. Select the **Refresh** icon in the **Files** explorer to see the new file. You created the file but it doesn't have the totals yet. The next step is to read the sales files, add up the totals, and write the grand total to the new *totals.txt* file. Next you learn how to read and parse data inside files.
 
 ## Got stuck?
 

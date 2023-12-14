@@ -1,23 +1,25 @@
-Node.js has a built-in mechanism for working with file system paths.
-
-In the previous exercise, we didn't have many folders to find and look through. If you have many files or folders, manually building paths can get tedious. Node.js provides some built-in constants and utilities to make file paths easier.
-
-Here, you learn about the Node.js **path** module and the `__dirname` constant so that you can make the program smarter and more resilient.
+As a new developer at Tailwind Traders, you need to know how to manage paths to files and folders. If you have many files or folders, manually building paths can get tedious. Node.js provides some built-in constants and utilities to make file paths easier.
 
 ## Determine the current directory with __dirname
 
-Sometimes, you don't know which directory your program is running in. You just want it to use the path of the current directory. Node.js exposes the full path to the current directory via the constant `__dirname`.
-
-```javascript
-console.log(__dirname);
-```
-
-If you run that code from the *sales* folder in the following folder structure, the `_dirname` value is `/stores/201/sales`.
+Sometimes, you don't know which directory your program is running in. You just want it to use the path of the current directory. 
 
 ```
 📂 stores
     📂 201
         📂 sales
+```
+
+Node.js exposes the full path to the current directory via the constant `__dirname`.
+
+```javascript
+console.log(__dirname);
+```
+
+If you run that code from the *sales* folder in the following folder structure, the `_dirname` value is:
+
+```console
+/stores/201/sales
 ```
 
 ## Work with paths with path module
@@ -51,6 +53,12 @@ The **path** module can also identify the extension of a filename. If you have a
 
 ```javascript
 console.log(path.extname("sales.json"));
+```
+
+The output is:
+
+```console
+.json
 ```
 
 > [!TIP]

@@ -1,5 +1,3 @@
-You can use Node.js to find and return information about files and folders.
-
 Tailwind Traders has many physical stores all over the world. Each night, these stores create a file called *sales.json* that contains the total for all their sales for the previous day. These files are organized in folders named by store ID.
 
 In this exercise, you write a Node.js program that can search for files called *sales.json* in a folder.
