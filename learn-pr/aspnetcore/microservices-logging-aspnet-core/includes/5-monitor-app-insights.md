@@ -11,7 +11,7 @@ The four services instrumented for Application Insights send telemetry to Applic
 
 A view similar to the following appears:
 
-:::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-live-metrics.png" alt-text="Azure portal showing the live metrics dashboard for the webshoppingagg-appinsights resource." border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-live-metrics.png":::
+:::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-live-metrics.png" alt-text="Screenshot of the Azure portal showing the live metrics dashboard for the webshoppingagg-appinsights resource." border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-live-metrics.png":::
 
 In the preceding image, notice the following things:
 
@@ -29,7 +29,7 @@ Use the app to generate some telemetry data to examine. Open another browser tab
 
 1. Use the **:::no-loc text="Web SPA application":::** link in the terminal to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
-    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app." border="true" lightbox="../../media/microservices/eshop-spa.png":::
+    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="Screenshot of the eShop single page app." border="true" lightbox="../../media/microservices/eshop-spa.png":::
 
 1. Complete a purchase as follows:
     1. Select the **:::no-loc text="LOGIN":::** link in the upper right to sign into the app. Sign in using the credentials provided on the page.
@@ -39,7 +39,7 @@ Use the app to generate some telemetry data to examine. Open another browser tab
     1. Enter the code *:::no-loc text="GIVEMEFREESTUFF":::* in the **:::no-loc text="HAVE A DISCOUNT CODE?":::** text box and select **:::no-loc text="APPLY":::**.
 
         Because this code is invalid, the message **ERROR: The coupon doesn't exist!** appears. You'll see this error message when you examine the telemetry later in this unit.
-    1. Replace the code *:::no-loc text="GIVEMEFREESTUFF":::* with *:::no-loc text="DISC-10":::* for a 10 USD discount. Select **:::no-loc text="APPLY":::**.
+    1. Replace the code *:::no-loc text="GIVEMEFREESTUFF":::* with *:::no-loc text="DISC-10":::* for a $10 USD discount. Select **:::no-loc text="APPLY":::**.
     1. Select **:::no-loc text="PLACE ORDER":::** to complete the purchase.
 
 Application Insights will capture telemetry from each of the four instrumented services. The telemetry captured represents HTTP and SQL requests to/from the services. As the telemetry is captured, it's ingested by endpoints in Azure. The ingestion process takes a few minutes.
@@ -55,7 +55,7 @@ Investigate the earlier failed coupon service request with the following steps:
 
 1. In the Azure portal, select **Application Map** from the **Investigate** section.
 
-    :::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-initial-app-map.png" alt-text="The initial view of the webshoppingagg Application Map." border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-initial-app-map.png":::
+    :::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-initial-app-map.png" alt-text="Screenshot of the initial view of the webshoppingagg Application Map." border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-initial-app-map.png":::
 
     A view similar to the preceding screenshot appears. The Application Map initially displays a simplified representation of the *:::no-loc text="webshoppingagg":::* app. This view doesn't list individual dependencies.
 
@@ -64,7 +64,7 @@ Investigate the earlier failed coupon service request with the following steps:
 
 1. Select the **Update map components** button to load a detailed view of the entire *:::no-loc text="eShopOnContainers":::* solution.
 
-    :::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-detail-app-map.png" alt-text="The detailed Application Map." border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-detail-app-map.png":::
+    :::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-detail-app-map.png" alt-text="Screenshot of the detailed Application Map." border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-detail-app-map.png":::
 
     A view similar to the preceding screenshot appears. The services that are instrumented in Application Insights are represented by green circles.
 
@@ -72,7 +72,7 @@ Investigate the earlier failed coupon service request with the following steps:
 
     A **:::no-loc text="webshoppingagg":::** panel appears. The panel provides a quick view of the service's top failing requests and slowest requests. It also displays common properties that may provide insights into the health of the service. For each category, more detailed information is available by selecting the button.
 
-    :::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-request-summary.png" alt-text="A summary of failing requests and performance." border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-request-summary.png":::
+    :::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-request-summary.png" alt-text="Screenshot of a summary of failing requests and performance." border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-request-summary.png":::
 
 ## Investigate an end-to-end transaction
 
@@ -83,19 +83,19 @@ The Application Map provides one way of exploring captured telemetry. You can al
 
     A variation of the following page appears:
 
-    :::image type="content" source="../media/5-monitor-app-insights/givemefreestuff-search-results.png" alt-text="event search results matching the term 'GIVEMEFREESTUFF'" border="true" lightbox="../media/5-monitor-app-insights/givemefreestuff-search-results.png":::
+    :::image type="content" source="../media/5-monitor-app-insights/givemefreestuff-search-results.png" alt-text="Screenshot of the event search results matching the term 'GIVEMEFREESTUFF'." border="true" lightbox="../media/5-monitor-app-insights/givemefreestuff-search-results.png":::
 
 1. Select the **Event types** button. Unselect all options except for *Trace*.
 
-    :::image type="content" source="../media/5-monitor-app-insights/event-types-trace.png" alt-text="Event types Trace option." border="true" lightbox="../media/5-monitor-app-insights/event-types-trace.png":::
+    :::image type="content" source="../media/5-monitor-app-insights/event-types-trace.png" alt-text="Screenshot of the Event types Trace option." border="true" lightbox="../media/5-monitor-app-insights/event-types-trace.png":::
 
     The *:::no-loc text="webshoppingagg":::* search results page refreshes to only show *TRACE* events:
 
-    :::image type="content" source="../media/5-monitor-app-insights/givemefreestuff-trace-search-results.png" alt-text="TRACE event search results matching the term 'GIVEMEFREESTUFF'" border="true" lightbox="../media/5-monitor-app-insights/givemefreestuff-trace-search-results.png":::
+    :::image type="content" source="../media/5-monitor-app-insights/givemefreestuff-trace-search-results.png" alt-text="Screenshot of the TRACE event search results matching the term 'GIVEMEFREESTUFF'." border="true" lightbox="../media/5-monitor-app-insights/givemefreestuff-trace-search-results.png":::
 
 1. In the result set, select a **TRACE** item with the description `----- Coupon not found: 404 - Content: "ERROR: The coupon doesn't exist"`. An end-to-end transaction trace appears.
 
-    :::image type="content" source="../media/5-monitor-app-insights/end-to-end-transaction-details.png" alt-text="end-to-end transaction details for a TRACE event." border="true" lightbox="../media/5-monitor-app-insights/end-to-end-transaction-details.png":::
+    :::image type="content" source="../media/5-monitor-app-insights/end-to-end-transaction-details.png" alt-text="Screenshot of the end-to-end transaction details for a TRACE event." border="true" lightbox="../media/5-monitor-app-insights/end-to-end-transaction-details.png":::
 
 1. Notice the trace includes each step of the request:
     1. The initial request is received by the HTTP aggregator:
@@ -108,7 +108,7 @@ The Application Map provides one way of exploring captured telemetry. You can al
             :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/services/couponservice.cs" id="snippet_CheckCouponByCodeNumberAsync" highlight="3":::
 
     1. The HTTP aggregator makes a request to the coupon service at the path `GET /api/v1/coupon/GIVEMEFREESTUFF`.
-    1. Since the preceding request fails, the overall request fails:
+    1. Because the preceding request fails, the overall request fails:
         - An **INFORMATION** log entry beginning with the text `----- WebAggregator <-- Coupon-API: HttpResponseMessage` is logged. That message is logged via a `LogInformation` call in the `CheckCouponByCodeNumberAsync` method of *:::no-loc text="src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Services/CouponService.cs":::*:
 
             :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/services/couponservice.cs" id="snippet_CheckCouponByCodeNumberAsync2" highlight="3":::
@@ -121,7 +121,7 @@ The Application Map provides one way of exploring captured telemetry. You can al
 
 1. Select the **View timeline** button. A graphical representation of the request and dependency timing is displayed.
 
-    :::image type="content" source="../media/5-monitor-app-insights/end-to-end-transaction-timeline.png" alt-text="end-to-end transaction timeline." border="true" lightbox="../media/5-monitor-app-insights/end-to-end-transaction-timeline.png":::
+    :::image type="content" source="../media/5-monitor-app-insights/end-to-end-transaction-timeline.png" alt-text="Screenshot of the end-to-end transaction timeline." border="true" lightbox="../media/5-monitor-app-insights/end-to-end-transaction-timeline.png":::
 
     In the preceding screenshot, notice the following details:
 
