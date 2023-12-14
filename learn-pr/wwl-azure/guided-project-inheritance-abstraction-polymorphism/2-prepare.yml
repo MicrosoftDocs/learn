@@ -11,4 +11,3 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-prepare.md)]
-interactive: csharp
