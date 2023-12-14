@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-storage.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/14/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/11-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the recommended way to authorize access to data in Azure Storage?"
+    choices:
+    - content: "Using Shared Key authorization"
+      isCorrect: false
+      explanation: "Incorrect. Shared Key authorization is not recommended as it may be less secure."
+    - content: "Using access keys and connection strings for all applications"
+      isCorrect: false
+      explanation: "Incorrect. Use of access keys and connection strings should be limited to initial proof of concept apps or development prototypes that don't access production or sensitive data."
+    - content: "Using either Microsoft Entra ID or a shared access signature (SAS)"
+      isCorrect: true
+      explanation: "Correct. Microsoft recommends that clients use either Microsoft Entra ID or a shared access signature (SAS) to authorize access to data in Azure Storage."
+  - content: "What is the purpose of Bring Your Own Key (BYOK) in Azure Key Vault?"
+    choices:
+    - content: "To transfer keys from Azure Key Vault to an on-premises HSM"
+      isCorrect: false
+      explanation: "Incorrect. This is the opposite of what BYOK is used for."
+    - content: "To generate new keys within Azure Key Vault"
+      isCorrect: false
+      explanation: "Incorrect. BYOK is used to import keys generated outside of Azure Key Vault."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. BYOK allows customers to securely transfer a key from their on-premises HSM outside Azure, into the HSM backing Azure Key Vault."
+  - content: "What does enabling container soft delete do for a storage account?"
+    choices:
+    - content: "Allows clients to access blob or queue data in the storage account without Microsoft Entra credentials."
+      isCorrect: false
+      explanation: "Incorrect. This is not what enabling container soft delete does."
+    - content: "Enables automatic deletion of all containers in the storage account after a specified period of time."
+      isCorrect: false
+      explanation: "Incorrect. This is not what enabling container soft delete does."
+    - content: "Protects data from being accidentally or erroneously modified or deleted and allows for recovery of deleted containers and their contents within a specified retention period."
+      isCorrect: true
+      explanation: "Correct. Enabling container soft delete protects data from being accidentally or erroneously modified or deleted and allows for recovery of deleted containers and their contents within a specified retention period."
+  - content: "What is the purpose of rotating access keys for a storage account in Azure?"
+    choices:
+    - content: "To increase the storage capacity of the account"
+      isCorrect: false
+      explanation: "Incorrect. Rotating access keys does not affect the storage capacity of the account."
+    - content: "To permanently disable access to the storage account"
+      isCorrect: false
+      explanation: "Incorrect. This would not allow for continued access to the storage account."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Rotating access keys helps maintain security by ensuring that only authorized users have access to the storage account, and helps ensure stability by allowing for the automation of key rotation."
+  - content: "What does Azure Files enable for application hosting platforms?"
+    choices:
+    - content: "Enables the creation and management of Azure Active Directory accounts"
+      isCorrect: false
+      explanation: "Incorrect. This is a feature of Azure Active Directory, not Azure Files."
+    - content: "Enables the automation and validation of the creation and teardown of virtual machines"
+      isCorrect: false
+      explanation: "Incorrect. This is a feature of Azure Virtual Machines, not Azure Files."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Azure Files enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
