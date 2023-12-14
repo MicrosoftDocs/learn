@@ -4,12 +4,12 @@ title: Examine the device communications troubleshooting guide
 metadata:
   title: Examine the device communications troubleshooting guide
   description: "Examine the device communications troubleshooting guide"
-  ms.date: 07/14/2022
-  author: wwlpublish
-  ms.author: cahowd
-  ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.date: 12/06/2023
+  author: kgremban
+  ms.author: kgremban
+  ms.custom: engagement-fy23
+  ms.topic: module-standard-task-based
+  ms.service: iot-hub 
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-troubleshoot-guide-device-communication.md)]
+  [!include[](includes/4-troubleshoot-guide-device-communication.md)]

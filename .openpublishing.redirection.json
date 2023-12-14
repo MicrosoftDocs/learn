@@ -31180,6 +31180,26 @@
     "source_path": "learn-pr/achievements/learn.partner-center.badge.yml",
     "redirect_url": "https://learn.microsoft.com/partner-center/overview",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/troubleshoot-device-connections-communication/2-device-side-connectivity-management.md",
+    "redirect_url": "/training/modules/troubleshoot-device-connections-communication/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/troubleshoot-device-connections-communication/3-troubleshoot-guide-device-communication.md",
+    "redirect_url": "/training/modules/troubleshoot-device-connections-communication/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/troubleshoot-device-connections-communication/4-knowledge-check.md",
+    "redirect_url": "/training/modules/troubleshoot-device-connections-communication/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/troubleshoot-device-connections-communication/5-summary.md",
+    "redirect_url": "/training/modules/troubleshoot-device-connections-communication/",
+    "redirect_document_id": false
   }
   ]
 }
