@@ -1,10 +1,10 @@
 This module is designed to equip administrators with the knowledge and skills necessary to manage and secure access to enterprise applications using Microsoft Enterprise Identity (Entra ID), ensuring that applications are accessible only to authorized users.
 
-# Scenario
+## Scenario
 
-Imagine you are an identity and access management specialist responsible for controlling and monitoring access to enterprise applications within your organization. Your organization relies on Entra ID for identity and access management, and you need to ensure that application access is secure and compliant with policies.
+Imagine you are an identity and access management specialist responsible for controlling and monitoring access to enterprise applications within your organization. Your organization relies on Microsoft Entra ID for identity and access management, and you need to ensure that application access is secure and compliant with policies.
 
-# Learning Objectives
+## Learning Objectives
 
 By the end of this module, participants will be able to:
 
@@ -15,6 +15,6 @@ By the end of this module, participants will be able to:
  -  Manage and utilize service principals to automate application management and interactions.
  -  Administer managed identities for Azure resources to enhance security and simplify access management.
 
-# Goals
+## Goals
 
 The module aims to provide participants with the knowledge and skills required to effectively manage application access within Microsoft Enterprise Identity (Entra ID). Participants will learn how to control access to enterprise applications, configure app registrations, manage permissions, and leverage service principals and managed identities, ultimately ensuring secure and compliant application access for authorized users.

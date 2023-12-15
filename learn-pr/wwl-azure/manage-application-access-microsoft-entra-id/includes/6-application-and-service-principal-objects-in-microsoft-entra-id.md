@@ -1,6 +1,6 @@
 ## Application registration
 
-To delegate identity and access management functions to Microsoft Entra ID, an application must be registered with a Microsoft Entra tenant. When you register your application with Microsoft Entra ID, you're creating an identity configuration for your application that allows it to integrate with Microsoft Entra ID. When you register an app, you choose whether it's a single tenant, or multi-tenant, and can optionally set a redirect URI. For step-by-step instructions on registering an app, see the app registration quickstart.
+To delegate identity and access management functions to Microsoft Entra ID, an application must be registered with a Microsoft Entra tenant. When you register your application with Microsoft Entra ID, you're creating an identity configuration for your application that allows it to integrate with Microsoft Entra ID. When you register an app, you choose whether it's a single tenant, or multitenant, and can optionally set a redirect URI. For step-by-step instructions on registering an app, see the app registration quickstart.
 
 When you've completed the app registration, you have a globally unique instance of the app (the application object) that lives within your home tenant or directory. You also have a globally unique ID for your app (the app/client ID). You can add secrets or certificates and scopes to make your app work, customize the branding of your app in the sign-in dialog, and more.<br>
 
@@ -51,7 +51,7 @@ An application object has:<br>
  -  A one-to-one relationship with the software application, and<br>
  -  A one-to-many relationship with its corresponding service principal object(s)
 
-A service principal must be created in each tenant where the application is used, enabling it to establish an identity for sign-in and/or access to resources being secured by the tenant. A single-tenant application has only one service principal (in its home tenant), created and consented for use during application registration. A multi-tenant application also has a service principal created in each tenant where a user from that tenant has consented to its use.
+A service principal must be created in each tenant where the application is used, enabling it to establish an identity for sign-in and/or access to resources being secured by the tenant. A single-tenant application has only one service principal (in its home tenant), created and consented for use during application registration. A multitenant application also has a service principal created in each tenant where a user from that tenant has consented to its use.
 
 ## List service principals associated with an app
 
