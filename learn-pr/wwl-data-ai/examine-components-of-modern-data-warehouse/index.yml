@@ -3,10 +3,12 @@ uid: learn.wwl.examine-components-of-modern-data-warehouse
 metadata:
   title: Explore fundamentals of large-scale data analytics
   description: "Explore fundamentals of large-scale analytics"
-  ms.date: 08/31/2022
+  ms.date: 12/15/2023
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.prod: azure
+  ms.service: azure
 title: Explore fundamentals of large-scale analytics
 summary: |
   Organizations use analytics platforms to build large scale data analytics solutions that generate insights and drive success.
