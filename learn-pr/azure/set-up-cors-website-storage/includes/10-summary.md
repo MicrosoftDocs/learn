@@ -1,6 +1,6 @@
 In this module, you:
 
-- Learned about Cross Origin Resource Sharing (CORS) and why it is used.
+- Learned about Cross Origin Resource Sharing (CORS) and why it's used.
 - Explored different ways to enable CORS for your Azure Storage Services.
 - Learned how to set CORS rules to accept and deny requests sent to your storage service resources from a web request originating outside your domain.
 
@@ -14,16 +14,16 @@ The following resources will provide you with detailed information about the des
 
 #### Cross-Origin Resource Sharing (CORS) Specifications
 
-- [Cross-Origin Resource Sharing (CORS) at W3C](https://www.w3.org/TR/cors/)
+- [Cross-Origin Resource Sharing (CORS) at W3C](https://fetch.spec.whatwg.org/#http-cors-protocol)
 - [Cross-Origin Resource Sharing (CORS) at Mozilla](https://developer.mozilla.org/docs/Web/HTTP/CORS)
 
 #### Azure Support for CORS
 
 - [CORS Support for the Azure Storage Services](/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services)
 - [CORS using Azure CLI](/cli/azure/storage/cors)
-- [CORS using Azure Powershell](/powershell/module/azure.storage/set-azurestoragecorsrule)
-- [Authorization for the Azure Storage Services](/rest/api/storageservices/authorization-for-the-azure-storage-services)
-- [Versioning for the Azure Storage Services](/rest/api/storageservices/versioning-for-the-azure-storage-services)
+- [CORS using Azure PowerShell](/powershell/module/azure.storage/set-azurestoragecorsrule)
+- [Authorize requests to Azure Storage](/rest/api/storageservices/authorization-for-the-azure-storage-services)
+- [Versioning for Azure Storage](/rest/api/storageservices/versioning-for-the-azure-storage-services)
 
 #### Azure CORS REST APIs
 
