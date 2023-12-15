@@ -15,7 +15,7 @@ Azure AI Speech is the back-end engine that completes the solution you're buildi
 
 ## Set up Microsoft Azure AI Speech
 
-Go to the [Microsoft Azure portal](https://portal.azure.com) and follow the steps to create a Speech resource. When done, you have access to your keys, locations/regions, and endpoints. You need these details before you can consume the service in Power Apps.
+Go to the [Microsoft Azure portal](https://portal.azure.com) and follow the steps to create a Speech resource. This process gives you access to your keys, locations/regions, and endpoints. You need these details before you can consume the service in Power Apps.
 
 > [!NOTE]
 > You need an active Microsoft Azure subscription to carry out this exercise. If you're a student you can benefit from a [free Azure for Students subscription](https://azure.microsoft.com/free/students). If you're not a student, you can still sign up for a [free Azure trial](https://azure.microsoft.com/free).
@@ -26,7 +26,7 @@ Azure Blob Storage lets you store massive amounts of unstructured data as binary
 
 ## Set up Microsoft Azure Blob Storage
 
-Go to the Azure portal and create a storage account by following the steps to set up the resource. When done, you have access to your keys, location/region, Blob Storage name, and endpoints. You need these details before you can consume the service in Power Apps.
+Go to the Azure portal and create a storage account by following the steps to set up the resource. This process gives you access to your keys, location/region, Blob Storage name, and endpoints. You need these details before you can consume the service in Power Apps.
 
 ## About Microsoft Azure AI Translator
 
@@ -34,7 +34,7 @@ Azure AI Translator converts text from one language to another. Translator uses 
 
 ## Set up Microsoft Azure AI Translator
 
-Go to the Azure portal and follow the steps to create a Translator resource. When done, you have access to your keys, location/region, Translator resource name, and the endpoints. You need these details before you can consume the service in Power Automate.
+Go to the Azure portal and follow the steps to create a Translator resource. This process gives you access to your keys, location/region, Translator resource name, and the endpoints. You need these details before you can consume the service in Power Automate.
 
 ## Check your work
 
