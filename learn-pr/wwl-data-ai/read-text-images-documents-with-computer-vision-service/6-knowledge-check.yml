@@ -24,7 +24,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect: Document Intelligence is the best choice for large amounts of structured text and multiple languages, however isn't the best choice for shorter, unstructured handwritten text."
     - content: "Image Analysis API"
-      isCorrect: false
+      isCorrect: true
       explanation: "Correct: The Image Analysis service OCR feature is best suited for short sections of handwritten text."
   - content: "What levels of division are the OCR results returned?"
     choices:
