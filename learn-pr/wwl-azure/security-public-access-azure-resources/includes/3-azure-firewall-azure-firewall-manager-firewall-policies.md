@@ -6,7 +6,7 @@ Azure Firewall is offered in three SKUs: Standard, Premium, and Basic.
 
 Azure Firewall Standard provides L3-L7 filtering and threat intelligence feeds directly from Microsoft Cyber Security. Threat intelligence-based filtering can alert and deny traffic from/to known malicious IP addresses and domains that are updated in real time to protect against new and emerging attacks.
 
-:::image type="content" source="../media/firewall-standard-58eb6d54.png":::
+:::image type="content" source="../media/firewall-standard-58eb6d54.png" alt-text="Diagram showing an example of the Azure Firewall Standard.":::
 
 
 ## Azure Firewall Premium
@@ -17,7 +17,7 @@ Azure Firewall Premium provides advanced capabilities include signature based ID
 
 Azure Firewall Basic is intended for small and medium size (SMB) customers to secure their Azure cloud. environments. It provides the essential protection SMB customers need at an affordable price point.
 
-:::image type="content" source="../media/firewall-basic-diagram-6ac715e5.png" alt-text="Image showing an Azure Firewall Basic.":::
+:::image type="content" source="../media/firewall-basic-diagram-6ac715e5.png" alt-text="Diagram showing an Azure Firewall Basic.":::
 
 
 Azure Firewall Basic is like Firewall Standard, but has the following main limitations:
@@ -40,7 +40,7 @@ Firewall Manager can provide security management for two network architecture ty
 
     This is a standard Azure virtual network that you create and manage yourself. When security policies are associated with such a hub, it is referred to as a hub virtual network. At this time, only Azure Firewall Policy is supported. You can peer spoke virtual networks that contain your workload servers and services. You can also manage firewalls in standalone virtual networks that aren't peered to any spoke.<br>
 
-:::image type="content" source="../media/trusted-security-partners-babe9875.png" alt-text="Image showing how Azure Firewall Manager works.":::
+:::image type="content" source="../media/trusted-security-partners-babe9875.png" alt-text="Diagram showing how Azure Firewall Manager works.":::
 <br>
 
 ## Azure Firewall Manager features
@@ -70,7 +70,7 @@ This feature is available only with secured virtual hub deployments.<br>
 
 ## Centralized route management<br>
 
-Easily route traffic to your secured hub for filtering and logging without the need to manually set up User Defined Routes (UDR) on spoke virtual networks.
+Easily route traffic to your secured hub for filtering and logging without the need to manually setup User Defined Routes (UDR) on spoke virtual networks.
 
 This feature is available only with secured virtual hub deployments.<br>
 

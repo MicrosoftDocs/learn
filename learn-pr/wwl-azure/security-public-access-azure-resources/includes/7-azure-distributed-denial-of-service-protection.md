@@ -52,7 +52,8 @@ Maximize the effectiveness of your DDoS protection strategy by following these b
 
 Azure DDoS Protection monitors actual traffic utilization and constantly compares it against the thresholds defined in the DDoS Policy. When the traffic threshold is exceeded, DDoS mitigation is initiated automatically. When traffic returns below the thresholds, the mitigation is stopped.
 
-## :::image type="content" source="../media/mitigation-e8cd1a50.png" alt-text="Image showing an example of Always-on traffic monitoring."::: 
+:::image type="content" source="../media/mitigation-e8cd1a50.png" alt-text="Diagram showing an example of Always-on traffic monitoring.":::
+
 
 During mitigation, traffic sent to the protected resource is redirected by the DDoS protection service and several checks are performed, such as:
 
@@ -64,12 +65,12 @@ Azure DDoS Protection drops attack traffic and forwards the remaining traffic to
 
 ## Adaptive real time tuning
 
-The complexity of attacks (for example, multi-vector DDoS attacks) and the application-specific behaviors of tenants call for per-customer, tailored protection policies. The service accomplishes this by using two insights:Image
+The complexity of attacks (for example, multi-vector DDoS attacks) and the application-specific behaviors of tenants call for per-customer, tailored protection policies. The service accomplishes this by using two insights:
 
  -  Automatic learning of per-customer (per-Public IP) traffic patterns for Layer 3 and 4.<br>
  -  Minimizing false positives, considering that the scale of Azure allows it to absorb a significant amount of traffic.
 
-:::image type="content" source="../media/ddos-protection-real-time-tuning-78f2320e.png" alt-text="Image showing an example of Adaptive real time tuning.":::
+:::image type="content" source="../media/ddos-protection-real-time-a3ddb050.png" alt-text="Diagram showing an example of Adaptive real time tuning.":::
 
 
 ## Azure DDoS Protection mitigation policies
@@ -78,7 +79,7 @@ In the Azure portal, select Monitor &gt; Metrics. In the Metrics pane, select th
 
 DDoS Protection applies three auto-tuned mitigation policies (TCP SYN, TCP, and UDP) for each public IP of the protected resource, in the virtual network that has DDoS enabled. You can view the policy thresholds by selecting the metric Inbound packets to trigger DDoS mitigation.<br>
 
-:::image type="content" source="../media/ddos-protection-mitigation-metrics-e5240f44.png" alt-text="Screenshot showing an example a Azure DDoS Protection mitigation policy.":::
+:::image type="content" source="../media/ddos-protection-mitigation-metrics-e5240f44.png" alt-text="Screenshot showing an example of an Azure DDoS Protection mitigation policy.":::
 
 
 The policy thresholds are auto-configured via machine learning-based network traffic profiling. DDoS mitigation occurs for an IP address under attack only when the policy threshold is exceeded.

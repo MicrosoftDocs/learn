@@ -1,10 +1,10 @@
-This module is designed to empower administrators with the knowledge and skills required to plan and implement robust security measures for public access to Azure resources, ensuring the confidentiality, integrity, and availability of applications and services.
+This module equips administrators to secure public Azure access, ensuring application and service confidentiality, integrity, and availability
 
-# Scenario
+## Scenario
 
 Imagine you are an Azure security specialist responsible for managing the security of Azure resources that are publicly accessible. Your organization relies on Azure services to deliver web applications and APIs to customers and partners, and you need to ensure that these resources are protected against threats while maintaining high performance.
 
-# Learning Objectives
+## Learning objectives
 
 By the end of this module, participants will be able to:
 
@@ -16,6 +16,6 @@ By the end of this module, participants will be able to:
  -  Set up and manage a Web Application Firewall (WAF) to protect web applications from common web-based attacks.
  -  Make informed recommendations on when to use Azure DDoS Protection Standard to defend against distributed denial-of-service (DDoS) attacks.
 
-# Goals
+## Goals
 
 The module aims to equip participants with the knowledge and expertise necessary to design, implement, and manage a comprehensive security strategy for public access to Azure resources. Participants will be able to secure web applications, APIs, and network traffic effectively, ensuring the availability and performance of critical services while protecting against security threats.

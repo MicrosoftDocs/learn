@@ -3,7 +3,7 @@ uid: learn.wwl.security-public-access-azure-resources
 metadata:
   title: Plan and implement security for public access to Azure resources
   description: "This module is designed to empower administrators with the knowledge and skills required to plan and implement robust security measures for public access to Azure resources, ensuring the confidentiality, integrity, and availability of applications and services."
-  ms.date: 12/14/2023
+  ms.date: 12/15/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
@@ -34,12 +34,12 @@ subjects:
 - security
 units:
 - learn.wwl.security-public-access-azure-resources.introduction
-- learn.wwl.security-public-access-azure-resources.plan-and-implement-transport-layer-security-tls
-- learn.wwl.security-public-access-azure-resources.azure-firewall-including-azure-firewall-and-manager-firewall-policies
+- learn.wwl.security-public-access-azure-resources.plan-implement-transport-layer-security
+- learn.wwl.security-public-access-azure-resources.azure-firewall-azure-firewall-manager-firewall-policies
 - learn.wwl.security-public-access-azure-resources.azure-application-gateway
 - learn.wwl.security-public-access-azure-resources.front-door-overview
 - learn.wwl.security-public-access-azure-resources.azure-web-application-firewall
-- learn.wwl.security-public-access-azure-resources.azure-ddos-protection
+- learn.wwl.security-public-access-azure-resources.azure-distributed-denial-of-service-protection
 - learn.wwl.security-public-access-azure-resources.knowledge-check
 - learn.wwl.security-public-access-azure-resources.summary
 badge:
