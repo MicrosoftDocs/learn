@@ -3,17 +3,17 @@ uid: learn.azure.set-up-cors-website-storage
 metadata:
   title: Set up Cross-Origin Resource Sharing for your website and storage assets
   description: Set up Cross-Origin Resource Sharing (CORS) for your Azure website and storage assets in order to allow cross-domain access to your resources.
-  ms.date: 04/23/2019
+  ms.date: 11/06/2023
   author: tamram
   ms.author: tamram
   ms.topic: module
   ms.service: Azure
 title: Core Cloud Services - Set up CORS for your website and storage assets
-summary: Set up Cross-Origin Resource Sharing (CORS) for your Azure website and storage assets in order to allow cross-domain access to your resources.
+summary: In this module, you'll set up Cross-Origin Resource Sharing (CORS) for your Azure website and storage assets in order to allow cross-domain access to your resources.
 abstract: |
   In this module, you will:  
-  - Understand Cross-Origin Resource Sharing (CORS) concepts and terminology
-  - Configure CORS rules for your Azure Storage services
+  - Understand Cross-Origin Resource Sharing (CORS) concepts and terminology.
+  - Configure CORS rules for your Azure Storage services.
 prerequisites: |
   - Knowledge of the Azure Storage Services
   - Familiarity with the Azure CLI, and PowerShell
