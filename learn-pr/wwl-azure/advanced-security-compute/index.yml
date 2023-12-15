@@ -35,15 +35,15 @@ subjects:
 - cloud-security
 units:
 - learn.wwl.advanced-security-compute.introduction
-- learn.wwl.advanced-security-compute.remote-access-to-public-endpoints-including-azure-bastion
-- learn.wwl.advanced-security-compute.best-practices-for-cluster-isolation-in-azure-kubernetes-service
-- learn.wwl.advanced-security-compute.microsoft-defender-for-containers
-- learn.wwl.advanced-security-compute.best-practices-for-authentication-and-authorization-in-azure-kubernetes-service
-- learn.wwl.advanced-security-compute.monitor-container-resources-in-azure-container-instances
-- learn.wwl.advanced-security-compute.security-considerations-for-azure-container-instances
-- learn.wwl.advanced-security-compute.azure-container-registry-roles-and-permissions
+- learn.wwl.advanced-security-compute.remote-access-public-endpoints-including-azure-bastion
+- learn.wwl.advanced-security-compute.best-practices-cluster-isolation-azure-kubernetes-service
+- learn.wwl.advanced-security-compute.microsoft-defender-containers
+- learn.wwl.advanced-security-compute.best-practices-authentication-authorization
+- learn.wwl.advanced-security-compute.monitor-container-resources-azure-container-instances
+- learn.wwl.advanced-security-compute.security-considerations-azure-container-instances
+- learn.wwl.advanced-security-compute.azure-container-registry-roles-permissions
 - learn.wwl.advanced-security-compute.azure-data-encryption
-- learn.wwl.advanced-security-compute.azure-security-baseline-for-api-management
+- learn.wwl.advanced-security-compute.azure-security-baseline-api-management
 - learn.wwl.advanced-security-compute.knowledge-check
 - learn.wwl.advanced-security-compute.summary
 badge:

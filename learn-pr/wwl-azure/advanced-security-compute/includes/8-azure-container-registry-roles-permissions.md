@@ -1,6 +1,6 @@
 The Azure Container Registry service supports a set of built-in Azure roles that provide different levels of permissions to an Azure container registry. Use Azure role-based access control (Azure RBAC) to assign specific permissions to users, service principals, or other identities that need to interact with a registry, for example to pull or push container images. You can also define custom roles with fine-grained permissions to a registry for different operations.
 
-:::image type="content" source="../media/table-showing-azure-container-registry-roles-and-permissions-311e7a68.png":::
+:::image type="content" source="../media/table-showing-azure-container-registry-roles-permissions-50daaf65.png":::
 
 
 ## Assign roles
@@ -11,7 +11,7 @@ When creating a service principal, you also configure its access and permissions
 
 ## Differentiate users and services
 
-Any time permissions are applied, a best practice is to provide the most limited set of permissions for a person, or service, to accomplish a task. The following permission sets represent a set of capabilities that may be used by humans and headless services.
+Anytime permissions are applied, a best practice is to provide the most limited set of permissions for a person, or service, to accomplish a task. The following permission sets represent a set of capabilities that might be used by humans and headless services.
 
 ## CI/CD solutions
 
@@ -43,7 +43,7 @@ To determine which permissions to apply to a custom role, see the list of Micros
 
 For example, the following JSON defines the minimum actions for a custom role that permits importing images to a registry.
 
-:::image type="content" source="../media/azure-json-custom-role-to-import-images-f856b69a.png" alt-text="Screenshot showing how JSON defines the minimum actions for a custom role that permits importing images to a registry.":::
+:::image type="content" source="../media/azure-json-custom-role-import-images-ce376cb9.png" alt-text="Screenshot showing how JSON defines the minimum actions for a custom role that permits importing images to a registry.":::
 
 
 To create or update a custom role using the JSON description, use the Azure CLI, Azure Resource Manager template, Azure PowerShell, or other Azure tools. Add or remove role assignments for a custom role in the same way that you manage role assignments for built-in Azure roles.

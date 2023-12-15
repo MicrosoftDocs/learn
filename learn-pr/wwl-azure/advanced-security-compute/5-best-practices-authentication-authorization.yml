@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.advanced-security-compute.best-practices-for-authentication-and-authorization-in-azure-kubernetes-service
+uid: learn.wwl.advanced-security-compute.best-practices-authentication-authorization
 title: Configure authentication for AKS
 metadata:
   title: Configure authentication for AKS
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-best-practices-for-authentication-and-authorization-in-azure-kubernetes-service.md)]
+  [!include[](includes/5-best-practices-authentication-authorization.md)]

@@ -76,7 +76,7 @@ A safe list not only reduces the attack surface but can also provide a baseline 
 
 ## Enforce network segmentation on running containers
 
-To help protect containers in one subnet from security risks in another subnet, maintain network segmentation (or nano-segmentation) or segregation between running containers. Maintaining network segmentation may also be necessary to use containers in industries that are required to meet compliance mandates.
+To help protect containers in one subnet from security risks in another subnet, maintain network segmentation (or nano-segmentation) or segregation between running containers. Maintaining network segmentation might also be necessary to use containers in industries that are required to meet compliance mandates.
 
 For example, the partner tool Aqua provides an automated approach for nano-segmentation. Aqua monitors container network activities in runtime. It identifies all inbound and outbound network connections to/from other containers, services, IP addresses, and the public internet. Nano-segmentation is automatically created based on monitored traffic.<br>
 
@@ -88,14 +88,14 @@ As with any IT environment, you should consistently monitor activity and user ac
  -  The Azure Container Monitoring solution helps you view and manage other Docker and Windows container hosts in a single location. For example:<br>
      -  View detailed audit information that shows commands used with containers.<br>
      -  Troubleshoot containers by viewing and searching centralized logs without having to remotely view Docker or Windows hosts.
-     -  Find containers that may be noisy and consume excess resources on a host.
+     -  Find containers that might be noisy and consume excess resources on a host.
      -  View centralized CPU, memory, storage, and network usage and performance information for containers.
 
 The solution supports container orchestrators including Docker Swarm, DC/OS, unmanaged Kubernetes, Service
 
 ## Monitor container resource activity
 
-Monitor your resource activity, like files, network, and other resources that your containers access. Monitoring resource activity and consumption is useful both for performance monitoring and as a security measure.
+Monitor your resource activity, like files, network, and other resources that your containers access. Monitoring resource activity and consumption are useful both for performance monitoring and as a security measure.
 
 Azure Monitor enables core monitoring for Azure services by allowing the collection of metrics, activity logs, and diagnostic logs. For example, the activity log tells you when new resources are created or modified.<br>
 
@@ -105,6 +105,6 @@ Metrics are available that provide performance statistics for different resource
 
 Maintain an accurate audit trail of administrative access to your container ecosystem, including your Kubernetes cluster, container registry, and container images. These logs might be necessary for auditing purposes and will be useful as forensic evidence after any security incident. Azure solutions include:
 
- -  Integration of Azure Kubernetes Service with Microsoft Defender for Cloud to monitor the security configuration of the cluster environment and generate security recommendations<br>
- -  Azure Container Monitoring solution
- -  Resource logs for Azure Container Instances and Azure Container Registry
+ -  Integration of Azure Kubernetes Service with Microsoft Defender for Cloud to monitor the security configuration of the cluster environment and generate security recommendations.<br>
+ -  Azure Container Monitoring solution.
+ -  Resource logs for Azure Container Instances and Azure Container Registry.

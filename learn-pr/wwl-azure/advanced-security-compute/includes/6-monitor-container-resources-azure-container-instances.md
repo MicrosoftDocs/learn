@@ -10,9 +10,9 @@ Azure Monitor provides the following metrics for Azure Container Instances. Thes
 
  -  CPU Usage measured in millicores.<br>
      -  One millicore is 1/1000th of a CPU core, so 500 millicores represents usage of 0.5 CPU core.
- -  Memory Usage in bytes
- -  Network bytes received per second
- -  Network bytes transmitted per second
+ -  Memory Usage in bytes.
+ -  Network bytes received per second.
+ -  Network bytes transmitted per second.
 
 ## Get metrics - Azure portal
 

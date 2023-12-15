@@ -3,7 +3,7 @@ Microsoft Defender for Containers is the cloud-native solution to improve, monit
 Defender for Containers assists you with four core aspects of container security:<br>
 
  -  **Environment hardening** \- Defender for Containers protects your Kubernetes clusters whether they're running on Azure Kubernetes Service, Kubernetes on-premises/IaaS, or Amazon EKS. Defender for Containers continuously assesses clusters to provide visibility into misconfigurations and guidelines to help mitigate identified threats.<br>
- -  **Vulnerability assessment** \- Vulnerability assessment and management tools for images stored in Azure Container Registry and Elastic Container Registry<br>
+ -  **Vulnerability assessment** \- Vulnerability assessment and management tools for images stored in Azure Container Registry and Elastic Container Registry.<br>
  -  **Run-time threat protection for nodes and clusters** \- Threat protection for clusters and nodes generates security alerts for suspicious activities.<br>
  -  **Agentless discovery for Kubernetes** \- Provides tools that give you visibility into your data plane components, generating security insights based on your Kubernetes and environment configuration and lets you hunt for risks.<br>
 
@@ -48,12 +48,12 @@ Examples of security events that Microsoft Defenders for Containers monitors inc
 
 You can view security alerts by selecting the Security alerts tile at the top of the Defender for Cloud's overview page, or the link from the sidebar.
 
-:::image type="content" source="../media/overview-page-alerts-links-c4ad0274.png" alt-text="Screenhot showing an example of the overview page alerts links in Microsoft Defender for Cloud.":::
+:::image type="content" source="../media/overview-page-alerts-links-c4ad0274.png" alt-text="Screenshot showing an example of the overview page alerts links in Microsoft Defender for Cloud.":::
 
 
 The security alerts page opens.
 
-:::image type="content" source="../media/view-containers-alerts-7648c638.png" alt-text="Screenshoty showing the security alerts page.":::
+:::image type="content" source="../media/view-containers-alerts-7648c638.png" alt-text="Screenshot showing the security alerts page.":::
 
 
 Security alerts for runtime workload in the clusters can be recognized by the K8S.NODE\_ prefix of the alert type.
@@ -78,16 +78,16 @@ The cloud security graph is a graph-based context engine that exists within Defe
 
 Defender for Cloud then uses the generated graph to perform an attack path analysis and find the issues with the highest risk that exist within your environment. You can also query the graph using the cloud security explorer.
 
-:::image type="content" source="../media/security-map-9a2d0bc4.png" alt-text="Image showing an example of a security map.":::
+:::image type="content" source="../media/security-map-9a2d0bc4.png" alt-text="Diagram showing an example of a security map.":::
 
 
 ## Attack path analysis
 
-Attack path analysis is a graph-based algorithm that scans the cloud security graph. The scans expose exploitable paths that attackers may use to breach your environment to reach your high-impact assets. Attack path analysis exposes attack paths and suggests recommendations as to how best remediate issues that will break the attack path and prevent successful breach.
+Attack path analysis is a graph-based algorithm that scans the cloud security graph. The scans expose exploitable paths that attackers might use to breach your environment to reach your high-impact assets. Attack path analysis exposes attack paths and suggests recommendations as to how best remediate issues that will break the attack path and prevent successful breach.
 
-When you take your environment's contextual information into account, attack path analysis identifies issues that may lead to a breach on your environment, and helps you to remediate the highest risk ones first. For example its exposure to the internet, permissions, lateral movement, and more.<br>
+When you take your environment's contextual information into account, attack path analysis identifies issues that might lead to a breach on your environment, and helps you to remediate the highest risk ones first. For example its exposure to the internet, permissions, lateral movement, and more.<br>
 
-:::image type="content" source="../media/attack-path-47ebcc57.png" alt-text="Image showing an example of an attack path.":::
+:::image type="content" source="../media/attack-path-47ebcc57.png" alt-text="Diagram showing an example of an attack path.":::
 
 
 ## Cloud security explorer

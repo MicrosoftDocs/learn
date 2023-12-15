@@ -5,7 +5,7 @@ As you deploy and maintain clusters in Azure Kubernetes Service (AKS), you imple
 
 ## Use Microsoft Entra ID
 
-**Best practice guidance:** Deploy AKS clusters with Microsoft Entra integration. Using Microsoft Entra ID centralizes the identity management layer. Any change in user account or group status is automatically updated in access to the AKS cluster. Scope users or groups to the minimum permissions amount using Roles, ClusterRoles, or Bindings.
+**Best practice guidance**: Deploy AKS clusters with Microsoft Entra integration. Using Microsoft Entra ID centralizes the identity management layer. Any change in user account or group status is automatically updated in access to the AKS cluster. Scope users or groups to the minimum permissions amount using Roles, ClusterRoles, or Bindings.
 
 Your Kubernetes cluster developers and application owners need access to different resources. Kubernetes lacks an identity management solution for you to control the resources with which users can interact. Instead, you can integrate your cluster with an existing identity solution like Microsoft Entra ID, an enterprise-ready identity management solution.<br>
 
@@ -21,29 +21,29 @@ With Microsoft Entra integrated clusters in AKS, you create Roles or ClusterRole
 
 5. Kubernetes RBAC and cluster policies are applied.
 
-6. The developer's request is successful based on previous validation of Microsoft Entra group membership and Kubernetes RBAC and policies.
+6. The developer's request is successfully based on previous validation of Microsoft Entra group membership and Kubernetes RBAC and policies.
 
 ## Use Kubernetes role-based access control (Kubernetes RBAC)
 
-**Best practice guidance:** Define user or group permissions to cluster resources with Kubernetes RBAC. Create roles and bindings that assign the least amount of permissions required. Integrate with Microsoft Entra ID to automatically update any user status or group membership change and keep access to cluster resources current.
+**Best practice guidance**: Define user or group permissions to cluster resources with Kubernetes RBAC. Create roles and bindings that assign the least amount of permissions required. Integrate with Microsoft Entra ID to automatically update any user status or group membership change and keep access to cluster resources current.
 
 In Kubernetes, you provide granular access control to cluster resources. You define permissions at the cluster level, or to specific namespaces. You determine what resources can be managed and with what permissions. You then apply these roles to users or groups with a binding. For more information about Roles, ClusterRoles, and Bindings, see Access and identity options for Azure Kubernetes Service (AKS).<br>
 
 For example, you create a role with full access to resources in the namespace named `finance-app`, as shown in the following example YAML manifest:<br>
 
-:::image type="content" source="../media/yaml-manifest-create-a-role-example-663772f2.png" alt-text="Screenshot showing an example using a YAML manifest to create a role with full access to resources.":::
+:::image type="content" source="../media/yaml-manifest-create-role-example-ac37f805.png" alt-text="Screenshot showing an example using a YAML manifest to create a role with full access to resources.":::
 
 
 You then create a `RoleBinding`and bind the Microsoft Entra user developer1@contoso.com to it, as shown in the following YAML manifest:
 
-:::image type="content" source="../media/yaml-manifest-create-a-role-binding-example-a26a4f0b.png" alt-text="Screenshot showing an example using a YAML manifest to create a Role Binding.":::
+:::image type="content" source="../media/yaml-manifest-create-role-binding-example-4ab9c3e4.png" alt-text="Screenshot showing an example using a YAML manifest to create a Role Binding.":::
 
 
 When `developer1@contoso.com` is authenticated against the AKS cluster, they have full permissions to resources in the finance-app namespace. In this way, you logically separate and control access to resources. Use Kubernetes RBAC with Microsoft Entra ID-integration.
 
 ## Use Azure RBAC
 
-**Best practice guidance:** Use Azure RBAC to define the minimum required user and group permissions to AKS resources in one or more subscriptions.
+**Best practice guidance**: Use Azure RBAC to define the minimum required user and group permissions to AKS resources in one or more subscriptions.
 
 There are two levels of access needed to fully operate an AKS cluster:<br>
 
@@ -62,7 +62,7 @@ Don't use fixed credentials within pods or container images, as they are at risk
 
 To access other Azure resources, like Azure Cosmos DB, Key Vault, or Blob storage, the pod needs authentication credentials. You could define authentication credentials with the container image or inject them as a Kubernetes secret. Either way, you would need to manually create and assign them. Usually, these credentials are reused across pods and aren't regularly rotated.
 
-With pod-managed identities (preview) for Azure resources, you automatically request access to services through Microsoft Entra ID. Pod-managed identities is currently in preview for AKS.<br>
+With pod-managed identities (preview) for Azure resources, you automatically request access to services through Microsoft Entra ID. Pod-managed identities are currently in preview for AKS.<br>
 
 Microsoft Entra pod-managed identity (preview) supports two modes of operation:
 
@@ -83,9 +83,9 @@ Instead of manually defining credentials for pods, pod-managed identities reques
 
 When pods request a security token from Microsoft Entra ID to access to an Azure resource, network rules redirect the traffic to the NMI server.
 
-1. The NMI server:<br>
+1. The NMI server:
 
- -  Identifies pods requesting access to Azure resources based on their remote address.<br>
+ -  Identifies pods requesting access to Azure resources based on their remote address.
  -  Queries the Azure Resource Provider.
 
 2. The Azure Resource Provider checks for Azure identity mappings in the AKS cluster.
@@ -96,10 +96,10 @@ When pods request a security token from Microsoft Entra ID to access to an Azure
 
  -  This access token can be used by the pod to then request access to resources in Azure.
 
-1. Cluster operator creates a service account to map identities when pods request access to resources.
+5. Cluster operator creates a service account to map identities when pods request access to resources.
 
-2. The NMI server is deployed to relay any pod requests, along with the Azure Resource Provider, for access tokens to Microsoft Entra ID.
+6. The NMI server is deployed to relay any pod requests, along with the Azure Resource Provider, for access tokens to Microsoft Entra ID.
 
-3. A developer deploys a pod with a managed identity that requests an access token through the NMI server.
+7. A developer deploys a pod with a managed identity that requests an access token through the NMI server.
 
-4. The token is returned to the pod and used to access Azure SQL Database.
+8. The token is returned to the pod and used to access Azure SQL Database.
