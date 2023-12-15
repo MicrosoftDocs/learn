@@ -1,16 +1,16 @@
-Azure Active Directory (Azure AD) provides several ways to manage access to resources, applications, and tasks. With Azure AD groups, you can grant access and permissions to a group of users instead of each individual user. Limiting access to Azure AD resources to only those users who need access is one of the core security principles of Zero Trust.
+Microsoft Entra ID provides several ways to manage access to resources, applications, and tasks. With Microsoft Entra ID groups, you can grant access and permissions to a group of users instead of each individual user. Limiting access to Microsoft Entra ID resources to only those users who need access is one of the core security principles of Zero Trust.
 
-Azure AD lets you use groups to manage access to applications, data, and resources. Resources can be:
+Microsoft Entra ID lets you use groups to manage access to applications, data, and resources. Resources can be:
 
- -  Part of the Azure AD organization, such as permissions to manage objects through roles in Azure AD
+ -  Part of the Microsoft Entra ID organization, such as permissions to manage objects through roles in Microsoft Entra ID
  -  External to the organization, such as for Software as a Service (SaaS) apps
  -  Azure services
  -  SharePoint sites
  -  On-premises resources
 
-Some groups can't be managed in the Azure AD portal:
+Some groups can't be managed in the Microsoft Entra ID portal:
 
- -  Groups synced from on-premises Active Directory can be managed only in on-premises Active Directory.
+ -  Groups synced from on-premises Microsoft Entra ID can be managed only in on-premises Microsoft Entra ID.
  -  Distribution lists and mail-enabled security groups are managed only in Exchange admin center or Microsoft 365 admin center. You must sign in to the Exchange admin center or Microsoft 365 admin center to manage these groups.
 
 ## What to know before creating a group

@@ -3,19 +3,19 @@ uid: learn.wwl.manage-identities-microsoft-entra-id
 metadata:
   title: Manage identities in Microsoft Entra ID
   description: "This module focuses on effectively managing identities and enhancing security in Microsoft Enterprise Identity (Entra ID), ensuring that users, groups, and external identities are protected against security threats and unauthorized access."
-  ms.date: 12/14/2023
+  ms.date: 12/15/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
   ms.prod: azure
 title: Manage identities in Microsoft Entra ID
-summary: This module focuses on effectively managing identities and enhancing security in Microsoft Enterprise Identity (Entra ID), ensuring that users, groups, and external identities are protected against security threats and unauthorized access.
+summary: This module focuses on effectively managing identities and enhancing security in Microsoft Entra ID, ensuring that users, groups, and external identities are protected against security threats and unauthorized access.
 abstract: |
-  By the end of this module, participants will be able to:
-  - Enhance security in Microsoft Entra ID to safeguard user identities and accounts.
-  - Implement security for group management in Entra ID for effective access control.
-  - Advise on the secure management of external identities in Entra ID.
-  - Utilize Microsoft Entra ID Protection for proactive threat detection and response.
+  By the end of this module, participants are able to:
+  *   Enhance security in Microsoft Entra ID to safeguard user identities and accounts.
+  *   Implement security for group management in Microsoft Entra ID for effective access control.
+  *   Advise on the secure management of external identities in Microsoft Entra ID.
+  *   Utilize Microsoft Entra ID Protection for proactive threat detection and response.
 prerequisites: |
   - None
 iconUrl: /training/achievements/generic-badge.svg
@@ -34,7 +34,7 @@ units:
 - learn.wwl.manage-identities-microsoft-entra-id.introduction
 - learn.wwl.manage-identities-microsoft-entra-id.microsoft-entra-id-users
 - learn.wwl.manage-identities-microsoft-entra-id.microsoft-entra-id-groups
-- learn.wwl.manage-identities-microsoft-entra-id.implementing-external-identities
+- learn.wwl.manage-identities-microsoft-entra-id.recommend-when-to-use-external-identities
 - learn.wwl.manage-identities-microsoft-entra-id.secure-external-microsoft-entra-identities
 - learn.wwl.manage-identities-microsoft-entra-id.microsoft-entra-identity-protection
 - learn.wwl.manage-identities-microsoft-entra-id.knowledge-check

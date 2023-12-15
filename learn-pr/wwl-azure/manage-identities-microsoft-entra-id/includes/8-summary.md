@@ -1,1 +1,1 @@
-In this module, you learned how to manage and secure user and group identities in Microsoft Enterprise Identity (Entra ID), including securing external identities, and implementing Entra ID Protection to safeguard against identity-related security threats.
+In this module, you learned to secure user identities in Microsoft Entra ID, implement group security measures, manage external identities securely, maintain confidentiality, and utilize Microsoft Entra ID Protection for proactive threat identification and response.

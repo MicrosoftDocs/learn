@@ -17,9 +17,9 @@ During each sign-in, Identity Protection runs all real-time sign-in detections g
 
 Any risks detected on an identity are tracked with reporting. Identity Protection provides three key reports for administrators to investigate risks and take action:
 
- -  **Risk detections:** Each risk detected is reported as a risk detection.
- -  **Risky sign-ins:** A risky sign-in is reported when there are one or more risk detections reported for that sign-in.
- -  **Risky users:** A Risky user is reported when either or both of the following are true:
+ -  **Risk detections**: Each risk detected is reported as a risk detection.
+ -  **Risky sign-ins**: A risky sign-in is reported when there are one or more risk detections reported for that sign-in.
+ -  **Risky users**: A Risky user is reported when either or both of the following are true:
      -  The user has one or more Risky sign-ins.
      -  One or more risk detections have been reported.
 
