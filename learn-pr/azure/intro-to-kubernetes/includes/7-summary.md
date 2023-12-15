@@ -1,4 +1,4 @@
-The goal here was to help you evaluate whether Kubernetes would be a good choice as a container-orchestration platform for your business. You built an app with Kubernetes running on a virtual machine. You evaluated Kubernete is a good fit for new projects with multiple pieces. If you plan to use Kubernetes to orchestrate your container deployments, the Azure Kubernetes Service offers built-in cloud native support to simplify your journey.
+The goal here was to help you evaluate whether Kubernetes would be a good choice as a container-orchestration platform for your business. You built an app with Kubernetes running on a virtual machine. You evaluated whether Kubernetes is a good fit for new projects with multiple pieces. If you plan to use Kubernetes to orchestrate your container deployments, the Azure Kubernetes Service offers built-in cloud native support to simplify your journey.
 
 Through this module, you saw how Kubernetes provides for:
 
