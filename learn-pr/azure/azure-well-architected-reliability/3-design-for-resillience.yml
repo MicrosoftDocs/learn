@@ -43,7 +43,7 @@ quiz:
     - content: "Enabling geo-replication for your workload's data"
       isCorrect: true
       explanation: "Correct. Enabling geo-replication for your workload's data is an example of adding redundancy by creating a secondary database that can be used as a failover instance."
-  - content: "The workload team needs to understand a DDoS attack, may affect the workload. What should the team do before any testing?"
+  - content: "The workload team needs to understand how a DDoS attack may affect the workload. What should the team do before any testing?"
     choices:
       - content: Research the Microsoft SLAs for the Azure services used by the workload.
         isCorrect: false
