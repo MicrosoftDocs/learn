@@ -2,7 +2,7 @@ You can use Virtual WAN to connect to your resources in Azure over an IPsec/IKE 
 
 Perform these high-level steps to use Virtual WAN to connect to your resources in Azure over an IPsec/IKE (IKEv1 and IKEv2) VPN connection:
 
-:::image type="content" source="../media/virtual-wan-and-secured-virtual-hub-e643468c.png":::
+:::image type="content" source="../media/virtual-wan-and-secured-virtual-hub-e643468c.png" alt-text="Diagram showing actions required to create a virtual wide area network.":::
 
 
 1. Create a virtual WAN<br>

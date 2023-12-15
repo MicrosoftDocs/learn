@@ -30,7 +30,7 @@ The system gives preference to the route with the explicit prefix when there's a
 
 To use this feature, specify a Service Tag name for the address prefix parameter in route table commands. For example, in PowerShell you can create a new route to direct traffic sent to an Azure Storage IP prefix to a virtual appliance by using:
 
-:::image type="content" source="../media/azure-powershell-b50be27d.png" alt-text="Table showing Azure PowerShell commands.":::
-**The same command for CLI is as follows:**
+:::image type="content" source="../media/azure-powershell-b50be27d.png" alt-text="Screenshot showing Azure PowerShell commands.":::
+**The same command for CLI is as follows**:
 
-:::image type="content" source="../media/azure-cli-c7293a6f.png" alt-text="Table showing Azure CLI commands.":::
+:::image type="content" source="../media/azure-syntax-28540342.png" alt-text="Screenshot showing Azure CLI commands.":::

@@ -6,7 +6,7 @@ Network Watcher consists of three major sets of tools and capabilities:<br>
  -  Network diagnostic tools
  -  Traffic
 
-:::image type="content" source="../media/network-watcher-f4b10a42.png" alt-text="Image showing Network Watcher tools and capabilities.":::
+:::image type="content" source="../media/network-watcher-f4b10a42.png" alt-text="Screenshot of how Network Watcher provides a suite of tools to monitor, diagnose, view metrics, and enable or disable logs for Azure Infrastructure-as-a-Service resources.":::
 
 
 ## Flow logs<br>
@@ -15,11 +15,11 @@ Flow logs allows you to log information about your Azure IP traffic and stores t
 
 Network security groups flow logging is a feature of Azure Network Watcher that allows you to log information about IP traffic flowing through a network security group. Flow data is sent to Azure Storage from where you can access it and export it to any visualization tool, security information and event management (SIEM) solution, or intrusion detection system (IDS) of your choice.
 
-:::image type="content" source="../media/flow-logs-18e8060b.png" alt-text="Screenshot showing NSG flows.":::
+:::image type="content" source="../media/flow-logs-18e8060b.png" alt-text="Screenshot of how Network Watcher allows you to log information about IP traffic flowing through a network security group.":::
 
 
 ## Traffic analytics<br>
 
 Traffic analytics provides rich visualizations of flow logs data.
 
-:::image type="content" source="../media/flow-log-traffic-analysis-b2e7ca6e.png":::
+:::image type="content" source="../media/flow-log-traffic-analysis-b2e7ca6e.png" alt-text="Screenshot of how traffic analytics provides rich visualizations of flow logs data.":::

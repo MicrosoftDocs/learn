@@ -10,7 +10,7 @@ One of the five essential characteristics of cloud computing is broad network ac
 
 The following figure shows how the security perimeter has evolved from a network perimeter to an identity perimeter. Security becomes less about defending your network and more about defending your data, as well as managing the security of your apps and users. The key difference is that you want to push security closer to what's important to your company.
 
-:::image type="content" source="../media/identity-perimeter-3114c16a.png" alt-text="Image showing and example of the evolving security perimeter.":::
+:::image type="content" source="../media/identity-perimeter-3114c16a.png" alt-text="Diagram showing and example of the evolving security perimeter.":::
 
 
 Initially, Azure PaaS services (for example, web roles and Azure SQL) provided little or no traditional network perimeter defenses. It was understood that the element's purpose was to be exposed to the Internet (web role) and that authentication provides the new perimeter (for example, BLOB or Azure SQL).
@@ -21,15 +21,15 @@ Principles and patterns for the network perimeter have been available for decade
 
 The following are best practices for managing the identity perimeter.<br>
 
-**Best practice:** Secure your keys and credentials to secure your PaaS deployment. Detail: Losing keys and credentials is a common problem. You can use a centralized solution where keys and secrets can be stored in hardware security modules (HSMs). Azure Key Vault safeguards your keys and secrets by encrypting authentication keys, storage account keys, data encryption keys, .pfx files, and passwords using keys that are protected by HSMs.<br>
+**Best practice**: Secure your keys and credentials to secure your PaaS deployment. Detail: Losing keys and credentials is a common problem. You can use a centralized solution where keys and secrets can be stored in hardware security modules (HSMs). Azure Key Vault safeguards your keys and secrets by encrypting authentication keys, storage account keys, data encryption keys, .pfx files, and passwords using keys that are protected by HSMs.<br>
 
-**Best practice:** Don't put credentials and other secrets in source code or GitHub. Detail: The only thing worse than losing your keys and credentials is having an unauthorized party gain access to them. Attackers can take advantage of bot technologies to find keys and secrets stored in code repositories such as GitHub. Do not put key and secrets in these public code repositories.<br>
+**Best practice**: Don't put credentials and other secrets in source code or GitHub. Detail: The only thing worse than losing your keys and credentials is having an unauthorized party gain access to them. Attackers can take advantage of bot technologies to find keys and secrets stored in code repositories such as GitHub. Do not put key and secrets in these public code repositories.<br>
 
-**Best practice:** Protect your VM management interfaces on hybrid PaaS and IaaS services by using a management interface that enables you to remote manage these VMs directly. Detail: Remote management protocols such as SSH, RDP, and PowerShell remoting can be used. In general, we recommend that you do not enable direct remote access to VMs from the internet.<br>
+**Best practice**: Protect your VM management interfaces on hybrid PaaS and IaaS services by using a management interface that enables you to remote manage these VMs directly. Detail: Remote management protocols such as SSH, RDP, and PowerShell remoting can be used. In general, we recommend that you do not enable direct remote access to VMs from the internet.<br>
 
 If possible, use alternate approaches like using virtual private networks in an Azure virtual network. If alternative approaches are not available, ensure that you use complex passphrases and two-factor authentication (such as Microsoft Entra multifactor authentication).<br>
 
-**Best practice:** Use strong authentication and authorization platforms. Detail: Use federated identities in Microsoft Entra ID instead of custom user stores. When you use federated identities, you take advantage of a platform-based approach and you delegate the management of authorized identities to your partners. A federated identity approach is especially important when employees are terminated and that information needs to be reflected through multiple identity and authorization systems.<br>
+**Best practice**: Use strong authentication and authorization platforms. Detail: Use federated identities in Microsoft Entra ID instead of custom user stores. When you use federated identities, you take advantage of a platform-based approach and you delegate the management of authorized identities to your partners. A federated identity approach is especially important when employees are terminated and that information needs to be reflected through multiple identity and authorization systems.<br>
 
 Use platform-supplied authentication and authorization mechanisms instead of custom code. The reason is that developing custom authentication code can be error prone. Most of your developers are not security experts and are unlikely to be aware of the subtleties and the latest developments in authentication and authorization. Commercial code (for example, from Microsoft) is often extensively security reviewed.<br>
 
@@ -52,15 +52,15 @@ Azure App Service is a PaaS offering that lets you create web and mobile apps fo
 
 Following are best practices for using App Service.<br>
 
-**Best practice:** Authenticate through Microsoft Entra ID. Detail: App Service provides an OAuth 2.0 service for your identity provider. OAuth 2.0 focuses on client developer simplicity while providing specific authorization flows for web applications, desktop applications, and mobile phones. Microsoft Entra ID uses OAuth 2.0 to enable you to authorize access to mobile and web applications.<br>
+**Best practice**: Authenticate through Microsoft Entra ID. Detail: App Service provides an OAuth 2.0 service for your identity provider. OAuth 2.0 focuses on client developer simplicity while providing specific authorization flows for web applications, desktop applications, and mobile phones. Microsoft Entra ID uses OAuth 2.0 to enable you to authorize access to mobile and web applications.<br>
 
-**Best practice:** Restrict access based on the need to know and least privilege security principles. Detail: Restricting access is imperative for organizations that want to enforce security policies for data access. You can use Azure RBAC to assign permissions to users, groups, and applications at a certain scope. To learn more about granting users access to applications, see Get started with access management.<br>
+**Best practice**: Restrict access based on the need to know and least privilege security principles. Detail: Restricting access is imperative for organizations that want to enforce security policies for data access. You can use Azure RBAC to assign permissions to users, groups, and applications at a certain scope. To learn more about granting users access to applications, see Get started with access management.<br>
 
-**Best practice:** Protect your keys. Detail: Azure Key Vault helps safeguard cryptographic keys and secrets that cloud applications and services use. With Key Vault, you can encrypt keys and secrets (such as authentication keys, storage account keys, data encryption keys, .PFX files, and passwords) by using keys that are protected by hardware security modules (HSMs). For added assurance, you can import or generate keys in HSMs. See Azure Key Vault to learn more. You can also use Key Vault to manage your TLS certificates with auto-renewal.<br>
+**Best practice**: Protect your keys. Detail: Azure Key Vault helps safeguard cryptographic keys and secrets that cloud applications and services use. With Key Vault, you can encrypt keys and secrets (such as authentication keys, storage account keys, data encryption keys, .PFX files, and passwords) by using keys that are protected by hardware security modules (HSMs). For added assurance, you can import or generate keys in HSMs. See Azure Key Vault to learn more. You can also use Key Vault to manage your TLS certificates with auto-renewal.<br>
 
-**Best practice:** Restrict incoming source IP addresses. Detail: App Service Environment has a virtual network integration feature that helps you restrict incoming source IP addresses through network security groups. Virtual networks enable you to place Azure resources in a non-internet, routable network that you control access to. To learn more, see Integrate your app with an Azure virtual network.<br>
+**Best practice**: Restrict incoming source IP addresses. Detail: App Service Environment has a virtual network integration feature that helps you restrict incoming source IP addresses through network security groups. Virtual networks enable you to place Azure resources in a non-internet, routable network that you control access to. To learn more, see Integrate your app with an Azure virtual network.<br>
 
-**Best practice:** Monitor the security state of your App Service environments. Detail: Use Microsoft Defender for Cloud to monitor your App Service environments. When Defender for Cloud identifies potential security vulnerabilities, it creates recommendations that guide you through the process of configuring the needed controls.<br>
+**Best practice**: Monitor the security state of your App Service environments. Detail: Use Microsoft Defender for Cloud to monitor your App Service environments. When Defender for Cloud identifies potential security vulnerabilities, it creates recommendations that guide you through the process of configuring the needed controls.<br>
 
 ## Azure Cloud Services
 

@@ -1,10 +1,10 @@
 This module is designed to provide administrators with the knowledge and skills needed to plan and implement robust security measures for Azure virtual networks, ensuring the confidentiality, integrity, and availability of network resources.
 
-# Scenario
+## Scenario
 
 Imagine you are an Azure network security specialist responsible for protecting the virtual networks in your organization's cloud environment. Your organization relies on Azure services and needs a comprehensive understanding of network security, from Network Security Groups (NSGs) to encryption over ExpressRoute.
 
-# Learning Objectives
+## Learning objectives
 
 By the end of this module, participants will be able to:
 
@@ -18,6 +18,6 @@ By the end of this module, participants will be able to:
  -  Configure firewall settings on Platform as a Service (PaaS) resources to control inbound and outbound traffic.
  -  Monitor network security effectively using Network Watcher, including NSG flow logging for threat detection and analysis.
 
-# Goals
+## Goals
 
 The module aims to equip participants with the knowledge and expertise necessary to design, implement, and maintain a highly secure virtual network environment in Azure. Participants will be able to protect sensitive data, applications, and resources from potential threats and vulnerabilities while maintaining network integrity and availability.
