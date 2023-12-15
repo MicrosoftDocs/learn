@@ -9,11 +9,11 @@ metadata:
   ms.topic: module
   ms.service: active-directory
 title: Add custom domain name to Microsoft Entra ID
-summary: Add your custom domain to Microsoft Entra ID. Add DNS information to the domain registrar. Verify your custom domain name in the Azure portal and set it as the primary.  
+summary: In this module, you'll learn to add your custom domain to Microsoft Entra ID. You'll also learn to add DNS information to the domain registrar, verify your custom domain name in the Azure portal, and set it as the primary.  
 abstract: | 
   In this module, you will:
-  - Add a custom domain name in Microsoft Entra ID
-  - Identify the common issues when verifying the custom domain name
+  - Add a custom domain name in Microsoft Entra ID.
+  - Identify the common issues when verifying the custom domain name.
 prerequisites: |
   - Familiarity with identity and access management concepts in Microsoft Entra ID
   - Basic knowledge of networking concepts like DNS
