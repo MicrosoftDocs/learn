@@ -23,7 +23,7 @@ Once the topic is generated, you can edit it.
 
 ## Check your work
 
-To validate that you have satisfied the requirements for the second exercise, test your app behavior by following these steps:
+Follow these steps to test your app and validate that you satisfied the requirements for the second exercise:
 
 1. Make sure your bot is saved.
 1. Select **Test Your Bot**.

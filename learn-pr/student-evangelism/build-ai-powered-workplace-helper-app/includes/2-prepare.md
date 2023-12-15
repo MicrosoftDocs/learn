@@ -4,17 +4,15 @@ Since you're creating a Power App and a chatbot that has Generative AI capabilit
 
 Let's discuss a more detailed project description for the use case in consideration: Build an AI Powered Workplace Helper App.
 
-## Scenario
+Your customer is Contoso, a fictitious company with several employees and offices worldwide. Due to the company's size, employees often don't know where to find the information they need to answer their questions. The local Contoso office contracted you to help make it easier for their employees to get answers to administrative questions, policy and procedure information, and emergency procedures. The app should use existing policy documents, websites, and resources that already contain the necessary information but give employees a quick and easy way to ask specific questions to get answers. Safety is important to Contoso, so they also want to help ensure that the bot provides specified local information quickly when asked for emergency contact information.
 
-Your customer is Contoso, a fictitious company with several employees and offices worldwide. Due to the company's size, employees often don't know where to find the information they need to answer their questions. The local Contoso office has contracted you to help make it easier for their employees to get answers to administrative questions, policy and procedure information, and emergency procedures. The app should use existing policy documents, websites, and resources that already contain the necessary information but give employees a quick and easy way to ask specific questions to get answers. Safety is very important to Contoso, so they also want to help ensure that the bot will provide specified local information quickly if it's asked for emergency contact information.
-
-You decide the best solution is to create a Power App for the organization with a chatbot that uses a Copilot Studio with Generative AI capabilities. The app will use the existing documents as a data source and allow you to specify responses with local emergency contact details via topic-based answers.
+You decide the best solution is to create a Power App for the organization with a chatbot in Copilot Studio by using Generative AI capabilities. The app will use the existing documents as a data source and allow you to specify responses with local emergency contact details via topic-based answers.
 
 ## Requirements
 
 - Users can ask the app free-form questions about Contoso policies and receive answers and links.
 - Users receive specified local emergency contact information if they use the words "fire", "police", "ambulance", or "emergency."
-- Generative answers are provided after the specified local emergency contact information for questions using the emergency words.
+- Generative answers are provided after the specified local emergency contact information for questions by using the emergency words.
 - On the main screen, the app has the name of the city for which the app was created.
 - Be creative with additional features to make the app or chatbot more useful.
 

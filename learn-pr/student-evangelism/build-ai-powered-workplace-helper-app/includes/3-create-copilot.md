@@ -1,6 +1,6 @@
 In this activity, you'll create a Copilot with generative answers. You'll provide the AI knowledge in the form of PDF documents and/or website addresses.
 
-You can complete this exercise either for our fictitious Contoso company or for an organization you're a part of and can access information and documents for. If you choose your organization, include an emergency evacuation document to complete the module as it is written.
+You can complete this exercise either for the fictitious Contoso company or for an organization you're a part of and can access information and documents for. If you choose your organization, include an emergency evacuation document to complete the module as it's written.
 
 ## Specifications
 
