@@ -16,20 +16,23 @@ abstract: |
   - Configure a learning loop and learning behavior
   - Import and export learning and model settings
   - Use inference explainability and run evaluations
+
+  > [!IMPORTANT]
+  > Starting fall 2023, you won't be able to create new Personalizer resources. The Personalizer service is being retired on the 1st of October, 2026.
 prerequisites: |
   - Familiarity with Azure
   - Application development experience
 iconUrl: /learn/achievements/generic-badge.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+levels: 
   - intermediate
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+roles: 
   - ai-engineer
   - developer
   - student
   - data-scientist
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+products: 
   - azure
-subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+subjects: 
   - data-ai
 units:
 - learn.make-recommendations-ai-personalizer.introduction
