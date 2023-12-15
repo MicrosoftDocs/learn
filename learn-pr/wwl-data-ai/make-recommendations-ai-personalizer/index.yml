@@ -18,7 +18,7 @@ abstract: |
   - Use inference explainability and run evaluations
 
   > [!IMPORTANT]
-  > Starting in September 2023, you aren't able to create new Personalizer resources. The Personalizer service is being retired on the October 1 2026.
+  > Starting in September 2023, you aren't able to create new Personalizer resources. The Personalizer service is being retired on October 1 2026.
 prerequisites: |
   - Familiarity with Azure
   - Application development experience
