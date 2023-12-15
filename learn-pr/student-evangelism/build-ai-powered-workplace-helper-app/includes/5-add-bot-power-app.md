@@ -15,7 +15,7 @@ Create a Power Apps app that meets the following basic functionalities and speci
 
 ## Check your work
 
-To validate that you have satisfied the requirements for the third exercise, test your app behavior by following these steps:
+Follow these steps to test your app and validate that you satisfied the requirements for the third exercise:
 
 1. Test your app in the editor by using the **Play** button.
 1. Run your published app.
