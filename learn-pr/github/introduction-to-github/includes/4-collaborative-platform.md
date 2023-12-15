@@ -35,7 +35,7 @@ The different ways to create an issue from:
 1. Select **New issue**.
 1. If your repository uses issue templates, next to the type of issue you'd like to open, select Get started.
 
-   If the type of issue you'd like to open isn't included in the available options, select Open a blank issue.
+   If the type of issue you'd like to open isn't included in the available options, select **Open a blank issue**.
 
    :::image type="content" source="../media/open-a-blank-issue.png" alt-text="A screenshot of the issue templates menu, with the Open a blank issue option highlighted." border="false":::
 
