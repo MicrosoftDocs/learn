@@ -6,7 +6,7 @@ Update the app as follows:
 
 - Add functionality to the microphone feature to capture what's being said and pass the input to Azure Blob Storage. After the blob is created, pass the Blob Storage container URL to the `AzureBatchSpeech-to-text` API to create a transcription.
 - Add a button with functionality to trigger a Power Automate flow that takes care of the text translation. This button will also store the information sent back to the app by the Power Automate flow.
-- Add functionality to the Audio feature to read out the translated text.
+- Add functionality to the audio feature to read out the translated text.
 
 Build a Power Automate flow that meets the following requirements:
 

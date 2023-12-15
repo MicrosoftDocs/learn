@@ -2,9 +2,7 @@ To build the solution, you'll create custom tables and columns in Microsoft Data
 
 ## Project specification
 
-The project specification is to build a speech translator app by using Power Apps.
-
-This section describes the project details and requirements.
+The project specification is to build a speech translator app by using Power Apps. This section describes the project details and requirements.
 
 ### Fabrikam, Inc.
 
@@ -23,7 +21,7 @@ The diversity of participants means that language barriers can affect communicat
 
 To get started, you need:
 
-- A Power Apps Developer account. If you don't have an account, create one for free at [https://powerapps.microsoft.com](https://powerapps.microsoft.com).
+- A Power Apps Developer account. If you don't have an account, create one for free at [Microsoft Power Apps](https://powerapps.microsoft.com).
 - A Microsoft Azure account.
 
 > [!NOTE]

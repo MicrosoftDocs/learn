@@ -58,7 +58,7 @@ Create a Power Apps canvas app with the following input and output controls:
 
 ## Check your work
 
-To validate that you've finished working on the requirement for this first exercise, test your app behavior by following these steps:
+To validate that you've finished working on the requirements for this first exercise, test your app behavior by following these steps:
 
 1. Run your app and start a new translation.
 2. Press the microphone control to record a speech. You should see the control working.
