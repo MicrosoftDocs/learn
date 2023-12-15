@@ -134,13 +134,11 @@ Now you add another child resource. This time, you add it as a nested resource i
 
 ### Deploy the template to Azure
 
-Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This operation can take a minute or two to complete.
+Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This operation can take a minute or two to complete, before you see a successful deployment.
 
 ```azurecli
 az deployment group create --template-file main.bicep
 ```
-
-When you see `Running...` in the terminal, your deployment is successful.
 
 ::: zone-end
 
