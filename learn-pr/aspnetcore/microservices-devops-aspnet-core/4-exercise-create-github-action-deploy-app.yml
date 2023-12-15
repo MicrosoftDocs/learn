@@ -1,16 +1,18 @@
 ### YamlMime:ModuleUnit
-uid: learn.microservices-devops-aspnet-core.6-knowledge-check
+uid: learn.microservices-devops-aspnet-core.4-exercise-create-github-action-deploy-app
 metadata:
-  title: Knowledge check
-  description: Check your knowledge of the GitHub Actions CI/CD microservices build and deployment process.
-  ms.date: 09/16/2020
+  title: Exercise - Create a GitHub action to deploy to AKS
+  description: Implement and test a GitHub action to build and deploy a Docker image to Azure Container Registry.
+  ms.date: 10/13/2023
   author: scottaddie
   ms.author: scaddie
   ms.manager: markl
-  ms.topic: unit
-title: Knowledge check
-durationInMinutes: 5
+  ms.topic: interactive-tutorial
+  ms.prod: aspnet-core
+title: Exercise - Create a GitHub action to deploy to AKS
+durationInMinutes: 10
 content: |
+  [!include[](includes/4-exercise-create-github-action-deploy-app.md)]
 quiz:
   title: Check your knowledge
   questions:
@@ -28,7 +30,7 @@ quiz:
         - content: GitHub secrets
           isCorrect: true
           explanation: "You can define secrets at the repository or the organization level. This information is encrypted and made accessible to GitHub Actions."
-    - content: "What's the purpose of creating a Microsoft Entra service principal for GitHub Actions to use?"
+    - content: "What's the purpose of creating an Azure Active Directory service principal for GitHub Actions to use?"
       choices:
         - content: "The service principal is for storing application logs."
           isCorrect: false

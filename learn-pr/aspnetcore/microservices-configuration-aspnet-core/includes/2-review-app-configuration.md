@@ -35,25 +35,7 @@ ASP.NET Core uses a [ConfigurationBinder](/dotnet/api/microsoft.extensions.confi
 
 In Docker, one abstraction to handle configuration as a key-value pairs collection is the environment variable section of a container's YAML file. The following snippet is an excerpt from the app's `docker-compose.yml` file
 
-    ```yml
-    version: '3.4'
-
-    services: 
-    
-      frontend:
-        image: storeimage
-        build:
-          context: .
-          dockerfile: DockerfileStore
-        environment: 
-          - ProductEndpoint=http://backend:8080
-          - ImagePrefix=http://localhost:32001/images
-          - ConnectionStrings:AppConfig=Endpoint=https://eshop-app-features.azconfig.io;Id=QWQy;Secret=V/4r/rhg/0tdy2L/AmMfBUcgTrYC4krRC7uFqbjRvDU=
-        ports:
-          - "32000:8080"
-        depends_on: 
-          - backend
-    ```
+:::code language="yaml" source="../code/docker-compose.txt" range="1-17" highlight="11-13":::
 
 The file snippet defines the following:
 
@@ -81,38 +63,7 @@ The library is built atop `IConfiguration`. For this reason, it's compatible wit
 
 To understand the integration of Azure App Configuration and the Feature Management library, see the following excerpt from an ASP.NET Core project's `Program.cs` file:
 
-    ```csharp
-    ...
-
-    var builder = WebApplication.CreateBuilder(args);
-
-    // Add the AddAzureAppConfiguration code
-    string connectionString = builder.Configuration.GetConnectionString("AppConfig");
-    
-    // Load configuration from Azure App Configuration
-    builder.Configuration.AddAzureAppConfiguration(options => {
-      options.Connect(connectionString)
-        .UseFeatureFlags();
-    });
-    
-    builder.Services.AddFeatureManagement();
-    
-    builder.Services.AddSingleton<ProductService>();
-    builder.Services.AddHttpClient<ProductService>(c =>
-    {
-        var url = builder.Configuration["ProductEndpoint"] ?? throw new InvalidOperationException("ProductEndpoint is not set");
-    
-        c.BaseAddress = new(url);
-    });
-    
-    // Add services to the container.
-    builder.Services.AddRazorComponents()
-        .AddInteractiveServerComponents();
-    
-    builder.Services.AddAzureAppConfiguration();
-
-    ...
-    ```
+:::code language="csharp" source="../code/program.cs" range="1-27" highlight="9-16":::
 
 In the preceding code fragment:
 

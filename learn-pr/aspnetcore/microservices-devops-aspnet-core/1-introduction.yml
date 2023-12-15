@@ -3,10 +3,9 @@ uid: learn.microservices-devops-aspnet-core.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 09/16/2020
-  author: scottaddie
-  ms.author: scaddie
-  ms.manager: markl
+  ms.date: 12/11/2023
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: unit
 title: Introduction
 durationInMinutes: 1
