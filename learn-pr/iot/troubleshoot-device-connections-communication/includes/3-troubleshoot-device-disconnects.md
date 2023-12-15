@@ -50,7 +50,9 @@ The IoT Hub resource logs **connections** category emits operations and errors h
 }
 ```
 
-The following screenshot shows a diagnostic setting to route these logs to a Log Analytics workspace:
+The following screenshot shows a diagnostic setting to route these logs to a Log Analytics workspace.
+
+:::image type="content" source="../media/create-diagnostic-setting.png" alt-text="Image showing a Log Analytics diagnostic setting.":::
 
 We recommend creating a diagnostic setting as early as possible after you create your IoT hub, because, although IoT Hub always emits resource logs, they aren't collected by Azure Monitor until you route them to a destination.
 
@@ -58,6 +60,8 @@ We recommend creating a diagnostic setting as early as possible after you create
 You can set up alerts based on the platform metrics emitted by IoT Hub. With metric alerts, you can notify individuals that a condition of interest has occurred and also trigger actions that can respond to that condition automatically.
 
 The **Connected devices** metric tells you how many devices are connected to your IoT Hub. You can create alerts to trigger if this metric drops below a threshold value.
+
+:::image type="content" source="../media/configure-alert-logic.png" alt-text="Image showing how to create an alert to trigger if a metric drops below a threshold value.":::
 
 You can use metric alert rules to monitor for device disconnect anomalies at-scale. That is, use alerts to determine when a significant number of devices unexpectedly disconnect. When this is detected, you can look at logs to help troubleshoot the issue. To monitor per-device disconnects and disconnects for critical devices in near real time, however, you must use Event Grid.
 
@@ -107,7 +111,7 @@ AzureDiagnostics
 
 The query returns both error and informational events for your target device. The following example output shows an informational **deviceConnect** event:
 
-:::image type="content" source="../media/device-connect-event.png" alt-text="Image shows output of an informational deviceConnect event.":::
+:::image type="content" source="../media/device-connect-event.png" alt-text="Image showing output of an informational deviceConnect event.":::
 
 ## MQTT device disconnect behavior with Azure IoT SDKs
 
