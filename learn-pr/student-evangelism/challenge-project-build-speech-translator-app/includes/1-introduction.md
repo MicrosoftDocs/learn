@@ -30,9 +30,9 @@ In this module, you'll demonstrate your ability to:
 - Basic knowledge of Power Fx
 - A Microsoft Azure account
 
-## _Learn_ before you _Do_
+## _Learn_ before you _do_
 
 If this module is your first time learning about Power Apps or Microsoft Azure AI services, we have some resources to help you get started:
 
-- [Learning path PL-900: Microsoft Power Platform Fundamentals](/training/paths/power-plat-fundamentals)
-- [Learning path Microsoft Azure AI Fundamentals: AI Overview](/training/paths/get-started-with-artificial-intelligence-on-azure)
+- [Learning path PL-900: Microsoft Power Platform fundamentals](/training/paths/power-plat-fundamentals)
+- [Learning path Microsoft Azure AI fundamentals: AI overview](/training/paths/get-started-with-artificial-intelligence-on-azure)
