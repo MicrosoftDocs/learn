@@ -136,7 +136,7 @@ By combining centralized and decentralized identity architectures for onboarding
 
 ## User journey: Accessing resources inside the trust boundary
 
-## :::image type="content" source="../media/user%20journey-accessing-resources-inside-the-trust-boundary-71f2730d.png" alt-text="Image showing an example of a user journey accessing resources inside the trust boundary."::: 
+## :::image type="content" source="../media/accessing-resources-inside-trust-boundary-9b4bc001.png" alt-text="Image showing an example of a user journey accessing resources inside the trust boundary."::: 
 
 As an employee, Alice is operating inside of the trust boundary of Woodgrove. Woodgrove acts as the identity provider (IDP) and maintains complete control of the identity and the configuration of the apps Alice uses to interact within the Woodgrove trust boundary. To use resources in the Microsoft Entra ID trust boundary, Alice provides potentially multiple forms of proof of identification to sign in Woodgrove’s trust boundary and access the resources inside of Woodgrove’s technology environment. Multiple proofs is a typical scenario that is well served using a centralized identity architecture.
 

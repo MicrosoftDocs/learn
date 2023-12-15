@@ -1,6 +1,6 @@
 Microsoft recommends passwordless authentication methods such as Windows Hello, FIDO2 security keys, and the Microsoft Authenticator app because they provide the most secure sign-in experience. Although a user can sign-in using other common methods such as a username and password, passwords should be replaced with more secure authentication methods.
 
-:::image type="content" source="../media/microsoft-entra-id-authentication-methods-6937395a.png" alt-text="Table showing Microsoft password recommendations.":::
+:::image type="content" source="../media/microsoft-entra-id-authentication-methods-6937395a.png" alt-text="Table showing Microsoft recommended passwordless authentication methods.":::
 
 
 Microsoft Entra multifactor authentication adds additional security over only using a password when a user signs in. The user can be prompted for additional forms of authentication, such as to respond to a push notification, enter a code from a software or hardware token, or respond to a text message or phone call.
@@ -13,5 +13,4 @@ When you deploy features like Microsoft Entra multifactor authentication in your
 
 The following table outlines the security considerations for the available authentication methods. Availability is an indication of the user being able to use the authentication method, not of the service availability in Microsoft Entra ID:
 
-:::image type="content" source="../media/microsoft-entra-id-authentication-method-strength-and-security.png-08bb8812.jpg" alt-text="Table showing authentication methods.":::
-:::image type="content" source="../media/microsoft-entra-id-authentication-method-and-security-65941b82.png":::
+:::image type="content" source="../media/authentication-method-strength-security-3b93a089.png" alt-text="Table showing authentication methods.":::
