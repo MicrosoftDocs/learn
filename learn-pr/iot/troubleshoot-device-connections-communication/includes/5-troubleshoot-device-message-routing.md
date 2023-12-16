@@ -8,7 +8,7 @@ We also recommend enabling the fallback route if you want to maintain messages t
 
 ## Top issues
 
-The following are the most common issues observed with message routing. To start troubleshooting, click on the issue for detailed steps.
+The following are the most common issues observed with message routing.
 
 * Messages from my devices aren't being routed as expected
 * I suddenly stopped getting messages at the built-in Event Hubs endpoint
