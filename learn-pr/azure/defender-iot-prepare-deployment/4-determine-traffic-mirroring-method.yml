@@ -13,7 +13,7 @@ metadata:
   ms.service: defender-for-iot
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-review-appliance-options.md)]
+  [!include[](includes/4-traffic-mirroring-method.md)]
   
 quiz:
 
