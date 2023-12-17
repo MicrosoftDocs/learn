@@ -1,7 +1,5 @@
-
-
 In this module, you've learned how to:
 
-- Work with Uniform Resource Identifiers (URIs).
-- Create and use datastores.
-- Create and use data assets.
+- Access data by using URIs.
+- Connect to cloud data sources with datastores.
+- Use data asset to access specific files or folders.
