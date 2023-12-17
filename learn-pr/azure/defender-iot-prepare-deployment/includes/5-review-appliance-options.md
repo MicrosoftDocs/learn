@@ -1,4 +1,4 @@
-In the previous unit, you determine the traffic mirroring methods to use for your site. Now you'll prepare to choose the right appliances for your system and the hardware profiles that best fit your organization's network monitoring needs.
+In the previous unit, you determine the traffic mirroring methods to use for your site. Now prepare to choose the right appliances for your system and the hardware profiles that best fit your organization's network monitoring needs.
 
 ## Appliance types
 
@@ -31,7 +31,7 @@ Microsoft partnered with Arrow Electronics to provide pre-configured physical ap
 |---------|---------|---------|---------|-------|
 | **C5600** |HPE ProLiant DL360 |**Max bandwidth:** Up to 3 Gbps</br>**Max devices**: 12K 16C[32T] CPU/32G RAM/5.6TB |**Mounting:** 1U</br>**Ports:** 15x RJ45 or 8x SFP (OPT)| Corporate environments |
 | **E1800** |HPE ProLiant DL20 Gen10 Plus (4SFF)</br>Dell PowerEdge R350 |**Max bandwidth:** Up to 1 Gbps</br>**Max devices:** 10K 4C[8T] CPU/32G RAM/1.8TB |**Mounting:** 1U</br>**Ports:** 8x RJ45 or 6x SFP (OPT)| Large enterprises |
-| **E500** |Dell Edge 5200 (Rugged MIL-STD-810G) |**Max bandwidth:** Up to 1 Gbps</br> **Max devices:** 10K 8C[8T] CPU/32G RAM/512GB |**Mounting:** Wall Mount</br>**Ports:** 3x RJ45| Large enterprises | 
+| **E500** |Dell Edge 5200 (Rugged MIL-STD-810G) |**Max bandwidth:** Up to 1 Gbps</br> **Max devices:** 10K 8C[8T] CPU/32G RAM/512GB |**Mounting:** Wall Mount</br>**Ports:** 3x RJ45| Large enterprises |
 | **L500** |HPE ProLiant DL20 Gen10 Plus (NHP 2LFF) |**Max bandwidth:** Up to 200 Mbps</br>**Max devices:** 1,000 4C[8T] CPU/8G RAM/500GB |**Mounting:** 1U</br>**Ports**: 4x RJ45|Production line |
 | **L100** |YS-Techsystems YS-FIT2 (Rugged MIL-STD-810G) |**Max bandwidth:** Up to 10 Mbps</br>**Max devices:** 100 4C[4T] CPU/8G RAM/128GB | **Mounting:** DIN/VESA</br>**Ports:** 2x RJ45 | Production lines|
 
@@ -62,8 +62,8 @@ When choosing virtual appliance components, consider the following:
 
 For all deployments, bandwidth results for virtual machines can vary based on:
 
-- distribution of protocols
-- hardware resources, including the CPU model, memory bandwidth, and IOPS
+- Distribution of protocols
+- Hardware resources, including the CPU model, memory bandwidth, and IOPS
 
 See the following table for system requirements for OT network sensors on virtual appliances:
 

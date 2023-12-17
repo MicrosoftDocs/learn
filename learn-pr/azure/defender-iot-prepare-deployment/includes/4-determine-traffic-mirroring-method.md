@@ -29,13 +29,13 @@ Choose your monitoring method based on considerations like your overall monitori
 
 In the following example of a Remote VLAN architecture, your source switches are configured with remote SPAN sessions, which distribute the data via intermediate switches to the destination switch. The destination switch monitors traffic from your OT network sensor with Defender for IoT:
 <!-- should this be switch or port? -->
-:::image type="content" source="../media/3-remote-span-vlan.jpg" alt-text="Diagram of a remote VLAN architecture" border="false":::
+:::image type="content" source="../media/4-remote-span-vlan.jpg" alt-text="Diagram of a remote VLAN architecture" border="false":::
 
 ### Active or passive aggregation (TAP)
 
 In the following example of a network TAP architecture the TAP is installed inline to the network cable and mirrors traffic to Defender for IoT:
 
-:::image type="content" source="../media/3-active-passive-tap-v2.png" alt-text="Diagram of a network TAP" border="false":::
+:::image type="content" source="../media/4-active-passive-tap-v2.png" alt-text="Diagram of a network TAP" border="false":::
 
 ### ERSPAN architecture
 
@@ -43,6 +43,6 @@ In the following example of an ERSPAN architecture, the source router encapsulat
 
 <!-- the packet or the payload?-->
 
-:::image type="content" source="../media/3-erspan-architecture.png" alt-text="Diagram of a ERSPAN network" border="false":::
+:::image type="content" source="../media/4-erspan-architecture.png" alt-text="Diagram of a ERSPAN network" border="false":::
 
 ## Knowledge check

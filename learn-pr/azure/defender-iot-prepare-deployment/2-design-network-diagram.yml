@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-prepare-deploymen.identify-devices-and-subnets
+
+title: Design your network diagram
+metadata:
+  title: Design your network diagram
+  description: "Describes the network diagram preparing process and where the OT network exists on the Purdue model."
+  ms.date: 10/11/2023
+  author: mjosephym
+  ms.author: v-mjosephy
+  ms.topic: interactive-tutorial
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
+### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
+###
+### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
+###
+### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
+### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
+### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
+  ms.prod: TODO
+  ms.service: defender-for-iot
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-design-network-diagram.md)]
+
+quiz:
+
+  questions:
+  
+  - content: "What can your network diagram help you determine?"
+    choices:
+    - content: "The most interesting traffic for security and operational risks. network segments you should monitor (subnets/VLANs)."
+      isCorrect: true
+      explanation: "The most interesting traffic is one among many things your network diagram can help you determine."
+    - content: "The most popular devices in your network."
+      isCorrect: false
+      explanation: "While you might be able to determine the most popular devices in your network, your network diagram is intended to help you figure out where to install Defender for IoT sensors."
+    - content: "The ideal temperature to run a subnet."
+      isCorrect: false
+      explanation: "Your network diagram is intended to help you determine where to implement your Defender for IoT sensors."  
+
+  - content: "Where on the Purdue model would be a likely place to place your Defender for IoT sensor?"
+    choices:
+    - content: "Between levels 4 and 5."
+      isCorrect: false
+      explanation: "Level 4 and 5 on the Purdue model represents IT resources. You want to monitor OT traffic."
+    - content: "Between levels 2 and 3."
+      isCorrect: true 
+      explanation: "You're trying to monitor OT traffic so your sensor should be placed where you can see all or most of your OT traffic."
+    - content: "Between levels 1 and 2."
+      isCorrect: false
+      explanation: "Defenders for IoT sensors are typically placed where they can collect a greater amount of interesting traffic. Placing the sensor between level 1 and 2 wouldn't allow the sensor to collect necessary interesting traffic."

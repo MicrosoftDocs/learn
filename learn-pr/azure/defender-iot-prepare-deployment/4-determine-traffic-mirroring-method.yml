@@ -24,7 +24,7 @@ quiz:
     - content: "Factors such as the sensor connection, the network configuration, and the available resources."
       isCorrect: true
       explanation: "Factors like the sensor connection, the network configuration, and the available resources influence the type of traffic monitoring methods chosen and used for your sensors."
-    - content: "Factors such as the time zone of the sensor, and the project manager's preferences."
+    - content: "Factors such as the time zone of the sensor and the project manager's preferences."
       isCorrect: false 
       explanation: "The time zone of the sensor and the project manager's preferences shouldn't determine what traffic mirroring method is chosen. Choose a traffic mirroring method that best fits the needs and resources of your organization."
     - content: "Factors such as the number of users and the brand of the network devices."

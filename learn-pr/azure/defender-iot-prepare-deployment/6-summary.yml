@@ -14,4 +14,4 @@ metadata:
   ms.service: defender-for-iot
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-summary.md)]
+  [!include[](includes/6-summary.md)]

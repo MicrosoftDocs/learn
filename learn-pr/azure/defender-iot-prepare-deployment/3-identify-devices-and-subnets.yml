@@ -23,7 +23,7 @@ metadata:
   ms.service: defender-for-iot
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-identify-devices-and-subnets.md)]
+  [!include[](includes/3-identify-devices-and-subnets.md)]
 
 quiz:
 
@@ -33,22 +33,22 @@ quiz:
     choices:
     - content: "A" 
       isCorrect: true
-      explanation: "It is recommended to place sensors to stream interesting traffic to Defender for IoT."
+      explanation: "It's recommended to place sensors to stream interesting traffic to Defender for IoT."
     - content: "B"
       isCorrect: false
-      explanation: "While it could be useful to capture traffic traveling outside of the IP segment, placing a sensor in location B would not transfer interesting traffic to Defender for IoT."
+      explanation: "While it could be useful to capture traffic traveling outside of the IP segment, placing a sensor in location B wouldn't transfer interesting traffic to Defender for IoT."
     - content: "C"
       isCorrect: false
-      explanation: "While it could be useful to capture traffic traveling outside of the IP segment, placing a sensor in location C would not transfer interesting traffic to Defender for IoT."  
+      explanation: "While it could be useful to capture traffic traveling outside of the IP segment, placing a sensor in location C wouldn't transfer interesting traffic to Defender for IoT."  
 
-  - content: "What at factors should you consider when choosing a traffic mirroring method for each sensor?"
+  - content: "Which would be an interesting traffic point to identify?"
     choices:
-    - content: "Place your sensor where you can see all or most of your OT traffic."
+    - content: "Traffic that isn't uni-directional."
       isCorrect: true
-      explanation: "Your sensor should be placed to see all or most of your OT traffic, typically between level 2 and 3 or 3 and 3.5 on the Purdue model."
-    - content: "Place your sensor where you can see all or most of your IT traffic."
+      explanation: "Traffic that travels in two directions is interesting to monitor."
+    - content: "Traffic that isn't broadcast or multicast."
       isCorrect: false 
-      explanation: "You are trying to monitor OT traffic so your sensor should be placed where you can see all or most of your OT traffic."
-    - content: "Place your sensor where you can see all or most of your OT and IT traffic."
+      explanation: "Broadcast or multicast traffic are considered interesting traffic points to monitor."
+    - content: "Traffic that doesn't pose a risk to the network."
       isCorrect: false
-      explanation: "You are trying to monitor OT traffic so your sensor should be placed where you can see all or most of your OT traffic."
+      explanation: "You're interested in monitoring traffic that could pose a risk to your network."

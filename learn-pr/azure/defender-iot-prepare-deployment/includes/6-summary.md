@@ -1,5 +1,6 @@
 In this module, you prepared your OT site for Defender for IoT implementation. Including:
 
+- Preparing a network diagram
 - Deciding what devices and subnets to monitor
 - Choosing the best traffic monitoring methods for your sensors
 - Deciding what appliances to use for your sensors
