@@ -7,8 +7,8 @@ metadata:
   ms.date: 05/05/2023
   author: lnyswonger
   ms.author: lnyswonger
-  ms.topic: interactive-tutorial
-  ms.service: operator-nexus
+  ms.topic: module
+  ms.service: azure-operator-nexus
 title: Introduction to Azure Operator Nexus
 summary: "Learn the functionalities of Azure Operator Nexus, which enables you to execute applications within a local infrastructure while offering access to Azure services within a Telco operator's data center."
 abstract: |
