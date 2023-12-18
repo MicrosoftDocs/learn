@@ -1,6 +1,6 @@
 Web Application Firewall (WAF) provides centralized protection of your web applications from common exploits and vulnerabilities. Web applications are increasingly targeted by malicious attacks that exploit commonly known vulnerabilities. SQL injection and cross-site scripting are among the most common attacks.
 
-:::image type="content" source="../media/wafoverview-ac62306b.png" alt-text="Diagram showing an example of an Azure Web Application Firewall.":::
+:::image type="content" source="../media/web-application-firewall-overview-e440c47c.png" alt-text="Diagram showing an example of a web application firewall providing centralized protection.":::
 
 
 Preventing such attacks in application code is challenging. It can require rigorous maintenance, patching, and monitoring at multiple layers of the application topology. A centralized web application firewall helps make security management much simpler. A WAF also gives application administrators better assurance of protection against threats and intrusions.

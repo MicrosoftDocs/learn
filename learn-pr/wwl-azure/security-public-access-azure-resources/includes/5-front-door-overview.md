@@ -46,4 +46,4 @@ Modernize your internet first applications on Azure with Cloud Native experience
 
 Azure Front Door and Azure CDN are both Azure services that offer global content delivery with intelligent routing and caching capabilities at the application layer. Both services can be used to optimize and accelerate your applications by providing a globally distributed network of points of presence (POP) close to your users. Both services also offer a variety of features to help you secure your applications from malicious attacks and to help you monitor your application's health and performance.
 
-:::image type="content" source="../media/azure-front-door-azure-cdn-services-architecture-2327497e.png" alt-text="Diagram showing a comparison between Azure Front Door and Azure CDN services.":::
+:::image type="content" source="../media/azure-front-door-architecture-0528514e.png" alt-text="Diagram showing a comparison between Azure Front Door and Azure CDN services.":::

@@ -2,7 +2,7 @@ Distributed denial of service (DDoS) attacks are some of the largest availabilit
 
 Azure DDoS Protection, combined with application design best practices, provides enhanced DDoS mitigation features to defend against DDoS attacks. It's automatically tuned to help protect your specific Azure resources in a virtual network. Protection is simple to enable on any new or existing virtual network, and it requires no application or resource changes.
 
-:::image type="content" source="../media/ddos-protection-overview-architecture-84e0ddf3.png" alt-text="Image showing an overview of Azure DDos Protection.":::
+:::image type="content" source="../media/distributed-denial-of-service-architecture-b3856b80.png" alt-text="Diagram showing an overview of Azure DDos Protection.":::
 
 
 ## Azure DDoS Protection: Tiers
@@ -65,12 +65,14 @@ Azure DDoS Protection drops attack traffic and forwards the remaining traffic to
 
 ## Adaptive real time tuning
 
-The complexity of attacks (for example, multi-vector DDoS attacks) and the application-specific behaviors of tenants call for per-customer, tailored protection policies. The service accomplishes this by using two insights:
+The complexity of attacks (for example, multi-vector DDoS attacks) and the application-specific behaviors of tenants call for per-customer, tailored protection policies.
 
- -  Automatic learning of per-customer (per-Public IP) traffic patterns for Layer 3 and 4.<br>
- -  Minimizing false positives, considering that the scale of Azure allows it to absorb a significant amount of traffic.
+The service accomplishes this by using two insights:
 
-:::image type="content" source="../media/ddos-protection-real-time-a3ddb050.png" alt-text="Diagram showing an example of Adaptive real time tuning.":::
+1.  Automatic learning of per-customer (per-Public IP) traffic patterns for Layer 3 and 4.
+2.  Minimizing false positives, considering that the scale of Azure allows it to absorb a significant amount of traffic.
+
+:::image type="content" source="../media/distributed-denial-of-service-protection-0606e493.png" alt-text="Diagram showing an example of Adaptive real time tuning.":::
 
 
 ## Azure DDoS Protection mitigation policies
@@ -79,7 +81,7 @@ In the Azure portal, select Monitor &gt; Metrics. In the Metrics pane, select th
 
 DDoS Protection applies three auto-tuned mitigation policies (TCP SYN, TCP, and UDP) for each public IP of the protected resource, in the virtual network that has DDoS enabled. You can view the policy thresholds by selecting the metric Inbound packets to trigger DDoS mitigation.<br>
 
-:::image type="content" source="../media/ddos-protection-mitigation-metrics-e5240f44.png" alt-text="Screenshot showing an example of an Azure DDoS Protection mitigation policy.":::
+:::image type="content" source="../media/distributed-denial-of-service-mitigation-metrics-df7ed4bb.png" alt-text="Screenshot showing an example of an Azure DDoS Protection mitigation policy.":::
 
 
 The policy thresholds are auto-configured via machine learning-based network traffic profiling. DDoS mitigation occurs for an IP address under attack only when the policy threshold is exceeded.
@@ -88,7 +90,7 @@ The policy thresholds are auto-configured via machine learning-based network tra
 
 If the public IP address is under attack, the value for the metric Under DDoS attack or not changes to 1 as DDoS Protection performs mitigation on the attack traffic.
 
-:::image type="content" source="../media/ddos-protection-ddos-attack-b2e5cf36.png" alt-text="Screenshot showing an example a Metric for an IP address under DDoS attack.":::
+:::image type="content" source="../media/distributed-denial-of-service-attack-example-3cdf04da.png" alt-text="Screenshot showing an example a Metric for an IP address under DDoS attack.":::
 
 
 We recommend configuring an alert on this metric. You'll then be notified when there’s an active DDoS mitigation performed on your public IP address.
@@ -103,6 +105,6 @@ Even web application firewalls are susceptible to volumetric and state exhaustio
 
 Planning and preparation are crucial to understand how a system will perform during a DDoS attack. Designing an incident management response plan is part of this effort.
 
-If you have DDoS Protection, make sure that it's enabled on the virtual network of internet-facing endpoints. Configuring DDoS alerts helps you constantly watch for any potential attacks on your infrastructure.<br>
+If you had DDoS Protection, make sure that it's enabled on the virtual network of internet-facing endpoints. Configuring DDoS alerts helps you constantly watch for any potential attacks on your infrastructure.<br>
 
 Monitor your applications independently. Understand the normal behavior of an application. Prepare to act if the application is not behaving as expected during a DDoS attack.
