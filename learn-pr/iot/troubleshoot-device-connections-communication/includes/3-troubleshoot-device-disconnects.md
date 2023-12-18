@@ -106,7 +106,7 @@ AzureDiagnostics
 | where ResourceProvider == "MICROSOFT.DEVICES" and ResourceType == "IOTHUBS"
 | where Category == "Connections"
 | extend DeviceId = tostring(parse_json(properties_s).deviceId)
-| where DeviceId == "test-device"c
+| where DeviceId == "test-device"
 ```
 
 The query returns both error and informational events for your target device. The following example output shows an informational **deviceConnect** event:
