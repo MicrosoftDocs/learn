@@ -16,35 +16,35 @@ quiz:
   questions:
   - content: "What is the purpose of Encryption at Rest in Microsoft Cloud Services?"
     choices:
-    - content: "To encrypt data only for Infrastructure as a Service (IaaS) customers"
+    - content: "To encrypt data only for Infrastructure as a Service (IaaS) customers."
       isCorrect: false
       explanation: "Incorrect. Encryption at Rest is available for all three cloud models: IaaS, PaaS, and SaaS."
-    - content: "To encrypt data in transit between cloud services"
+    - content: "To encrypt data in transit between cloud services."
       isCorrect: false
       explanation: "Incorrect. Encryption at Rest is not related to data in transit."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
       isCorrect: true
       explanation: "Correct. Encryption at Rest helps ensure that data is never persisted in unencrypted form, providing a more complete solution for securing data in the cloud."
   - content: "What is the purpose of integrating Microsoft Entra ID with AKS clusters?"
     choices:
-    - content: "To provide granular access control to Azure resources"
+    - content: "To provide granular access control to Azure resources."
       isCorrect: false
       explanation: "Incorrect. This is a general statement about access control in Azure, but not specific to Microsoft Entra ID integration with AKS clusters."
-    - content: "To provide identity management for Kubernetes clusters"
+    - content: "To provide identity management for Kubernetes clusters."
       isCorrect: false
       explanation: "Incorrect. This is a general statement about identity management in Kubernetes, but not specific to Microsoft Entra ID integration."
-    - content: "To centralize identity management and automatically update user account or group status in access to the AKS cluster"
+    - content: "To centralize identity management and automatically update user account or group status in access to the AKS cluster."
       isCorrect: true
       explanation: "Correct. Integrating Microsoft Entra ID with AKS clusters centralizes identity management and automatically updates user account or group status in access to the AKS cluster, making it easier to manage access to resources and services."
   - content: "What is the purpose of Azure role based access control (Azure RBAC) in Azure Container Registry?"
     choices:
-    - content: "To restrict access to Azure Container Registry only for users, not service principals"
+    - content: "To restrict access to Azure Container Registry only for users, not service principals."
       isCorrect: false
       explanation: "Incorrect. Service principals can also be assigned specific permissions using Azure RBAC."
-    - content: "To provide access to all Azure resources for a user or service principal"
+    - content: "To provide access to all Azure resources for a user or service principal."
       isCorrect: false
       explanation: "Incorrect. This would be too broad and not recommended as a best practice."
-    - content: "To assign specific permissions to users, service principals, or other identities that need to interact with a registry"
+    - content: "To assign specific permissions to users, service principals, or other identities that need to interact with a registry."
       isCorrect: true
       explanation: "Correct. Azure RBAC allows for fine-grained control over permissions for interacting with an Azure Container Registry."
   - content: "What is the purpose of Azure DevTest Labs?"

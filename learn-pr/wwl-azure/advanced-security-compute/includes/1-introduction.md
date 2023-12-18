@@ -4,7 +4,7 @@ This module is designed to provide administrators with the knowledge and skills 
 
 Imagine you are a cloud security specialist responsible for securing Azure compute resources in your organization. Your organization relies on virtual machines, container services, and APIs, and you need to ensure that these resources are protected against unauthorized access and security vulnerabilities.
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this module, participants will be able to:
 

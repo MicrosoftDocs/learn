@@ -2,7 +2,7 @@ Azure Bastion is a service you deploy that lets you connect to a virtual machine
 
 Bastion provides secure RDP and SSH connectivity to all of the VMs in the virtual network in which it is provisioned. Using Azure Bastion protects your virtual machines from exposing RDP/SSH ports to the outside world, while still providing secure access using RDP/SSH.
 
-:::image type="content" source="../media/azure-bastion-architecture-22c447d0.png" alt-text="Image showing an example of how Azure Bastion service works.":::
+:::image type="content" source="../media/azure-bastion-architecture-22c447d0.png" alt-text="Diagram showing an example of how Azure Bastion service works.":::
 
 
 ## Key benefits

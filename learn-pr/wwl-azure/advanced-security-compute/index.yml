@@ -35,7 +35,7 @@ subjects:
 - cloud-security
 units:
 - learn.wwl.advanced-security-compute.introduction
-- learn.wwl.advanced-security-compute.remote-access-public-endpoints-including-azure-bastion
+- learn.wwl.advanced-security-compute.remote-access-public-endpoints-include-azure-bastion
 - learn.wwl.advanced-security-compute.best-practices-cluster-isolation-azure-kubernetes-service
 - learn.wwl.advanced-security-compute.microsoft-defender-containers
 - learn.wwl.advanced-security-compute.best-practices-authentication-authorization
