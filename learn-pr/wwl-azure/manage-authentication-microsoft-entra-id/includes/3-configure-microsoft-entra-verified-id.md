@@ -31,7 +31,7 @@ Now make modifications to the sample app's issuer code to update it with your ve
 
 Now you are ready to present and verify your first verified credential expert card by running the sample application.
 
-**Example** : Complete the following steps to **present** and **verify** your Microsoft Entra Verified ID for a sample application:<br>
+**Example**: Complete the following steps to **present** and **verify** your Microsoft Entra Verified ID for a sample application:<br>
 
 :::image type="content" source="../media/microsoft-entra-verified-id-configuration-steps-806ee747.png" alt-text="Diagram showing how to run and test a Microsoft Entra Verified ID sample application.":::
 <br>

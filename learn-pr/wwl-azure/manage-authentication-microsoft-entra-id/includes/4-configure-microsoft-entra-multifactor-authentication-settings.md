@@ -24,7 +24,7 @@ To prevent repeated multifactor authentication attempts as part of an attack, th
 
 The following settings are available:
 
- -  Number of Multi-Factor Authentication denials that trigger an account lockout
+ -  Number of multifactor authentication denials that trigger an account lockout
  -  Minutes until the account lockout counter is reset
  -  Minutes until the account is automatically unblocked
 
@@ -74,7 +74,7 @@ To enable Report Suspicious Activity from the Authentication Methods Settings:<b
 2.  Set Report Suspicious Activity to Enabled.
 3.  Select All users or a specific group.
 
-## **View suspicious activity events.**
+## **View suspicious activity events**
 
 When a user reports a multifactor authentication prompt as suspicious, the event shows up in the Sign-ins report (**as a sign-in that was rejected by the user**), in the **Audit logs**, and in the **Risk detections** report.
 
@@ -84,7 +84,7 @@ Select **Azure Active Directory** &gt; **Sign-in logs** &gt; **Authentication De
 
 To view fraud reports in the Audit logs, select **Azure Active Directory** &gt; **Audit logs**. The fraud report appears under Activity type Fraud reported - user is blocked for multifactor authentication, or Fraud reported - no action taken based on the tenant-level settings for a fraud report.<br>
 
-## Manage suspicious activity events.
+## Manage suspicious activity events
 
 Once a user has reported a prompt as suspicious, the risk should be investigated and remediated with Identity Protection.
 
