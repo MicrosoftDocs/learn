@@ -2,7 +2,7 @@ In the last unit, you planned your network diagram. This unit explores what devi
 
 ## Identify devices and subnets to monitor
 
-Monitor and mirror traffic to Defender for IoT that's most interesting to you from a security or operational perspective. Examine your OT network diagram with your site engineers, network, and operational teams to define where to find the most relevant traffic for monitoring.
+Monitor and mirror traffic to Defender for IoT that's most interesting to you from a security or operational perspective. Examine your OT network diagram with your site engineers, network, and operational teams to define where to find the most relevant traffic for monitoring across network devices and subnets.
 
 <!-- can site engineers and network and operational teams be combined?-->
 ### Devices
@@ -39,7 +39,7 @@ Calculate the number of devices in each site to determine the right number of De
 
 ### Multi-sensor deployment
 
-For multiple network sensor deployments plan the following for:
+For multiple network sensor deployments, plan the following for:
 
 - **Physically (ethernet) connected switches**: At least one sensor for every 80 meters of distance between switches.
 
@@ -53,7 +53,7 @@ Using your list of devices to monitor, create an aggregated list of subnets that
 
 ## Identify interesting traffic points
 
-Usually the interesting traffic points to monitor, security-wise, are the interfaces that connect between the default gateway entity to the core or distribution switch. Monitoring there ensures that traffic traveling from inside to outside the IP segment is monitored. Consider possible **missing traffic** that is supposed to leave the segment, but ends up remaining inside the segment.
+Usually the interesting traffic points to monitor, security-wise, are the interfaces that connect between the default gateway entity to the core or distribution switch. Monitoring there ensures that traffic traveling from inside to outside the IP segment, is monitored. Consider possible **missing traffic** that is supposed to leave the segment, but ends up remaining inside the segment.
 
 Consider the following traffic points in your network:
 
@@ -66,7 +66,7 @@ Consider the following traffic points in your network:
 
 ## List your planned OT sensors
 
-With the information about what traffic you want to monitor to Defender for IoT from your devices and subnets, make a list of all the OT sensors to onboard.
+With the information about what traffic you want to monitor with Defender for IoT from your devices and subnets, make a list of all the OT sensors to onboard.
 
 For each sensor include:
 
