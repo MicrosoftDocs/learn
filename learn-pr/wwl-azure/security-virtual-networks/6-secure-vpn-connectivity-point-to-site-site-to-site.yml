@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.security-virtual-networks.secure-vpn-connectivity-including-point-to-site-site-to-site
+uid: learn.wwl.security-virtual-networks.secure-vpn-connectivity-point-to-site-site-to-site
 title: Secure VPN connectivity, including point-to-site and site-to-site
 metadata:
   title: Secure VPN connectivity, including point-to-site and site-to-site
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-secure-vpn-connectivity-including-point-to-site-site-to-site.md)]
+  [!include[](includes/6-secure-vpn-connectivity-point-to-site-site-to-site.md)]
