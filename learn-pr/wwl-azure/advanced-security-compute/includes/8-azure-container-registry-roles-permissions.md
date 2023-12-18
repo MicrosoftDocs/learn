@@ -1,6 +1,6 @@
 The Azure Container Registry service supports a set of built-in Azure roles that provide different levels of permissions to an Azure container registry. Use Azure role-based access control (Azure RBAC) to assign specific permissions to users, service principals, or other identities that need to interact with a registry, for example to pull or push container images. You can also define custom roles with fine-grained permissions to a registry for different operations.
 
-:::image type="content" source="../media/table-showing-azure-container-registry-roles-permissions-50daaf65.png":::
+:::image type="content" source="../media/table-showing-azure-container-registry-roles-permissions-50daaf65.png" alt-text="Screenshot showing an example of Azure container registry role and permissions.":::
 
 
 ## Assign roles
