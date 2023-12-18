@@ -31,7 +31,7 @@ quiz:
   
   - content: "What can your network diagram help you determine?"
     choices:
-    - content: "The most interesting traffic for security and operational risks. network segments you should monitor (subnets/VLANs)."
+    - content: "The most interesting traffic for security and operational risks."
       isCorrect: true
       explanation: "The most interesting traffic is one among many things your network diagram can help you determine."
     - content: "The most popular devices in your network."
