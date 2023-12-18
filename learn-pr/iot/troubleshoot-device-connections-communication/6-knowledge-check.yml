@@ -17,7 +17,7 @@ quiz:
   questions:
    - content: "Which of the following are the most common reasons that devices disconnect from IoT Hub?"
      choices:
-     - content: "Network interruption, renewed X.509 certificate, communication throttling, DDos attack."
+     - content: "Network interruption, renewed X.509 certificate, communication throttling, DDoS attack."
        isCorrect: false
        explanation: "Incorrect. The most common reasons for IoT Hub device disconnect are expired SAS token or X.509 certificate, network interruption, service interruption, service reconfiguration."
      - content: "Expired SAS token or X.509 certificate, network interruption, service interruption, service reconfiguration."
