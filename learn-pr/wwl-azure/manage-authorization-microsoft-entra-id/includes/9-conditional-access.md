@@ -2,10 +2,10 @@ The modern security perimeter extends beyond an organization's network perimeter
 
 Microsoft Entra Conditional Access brings signals together, to make decisions, and enforce organizational policies. Conditional Access is Microsoft's Zero Trust policy engine taking signals from various sources into account when enforcing policy decisions.
 
-:::image type="content" source="../media/conditional-access-signal-decision-enforcement-8a36a2ff.png" alt-text="Image showing how conditional access signal decision enforcement works.":::
+:::image type="content" source="../media/conditional-access-signal-decision-enforcement-8a36a2ff.png" alt-text="Screenshot showing how conditional access signal decision enforcement works.":::
 
 
-Conditional Access policies, at their simplest, are if-then statements; if a user wants to access a resource, they must complete an action. **Example**: A payroll manager wants to access the payroll application and is required to do multi-factor authentication to access it.
+Conditional Access policies, at their simplest, are if-then statements; if a user wants to access a resource, they must complete an action. **Example**: A payroll manager wants to access the payroll application and is required to do multifactor authentication to access it.
 
 Administrators are faced with two primary goals:
 
@@ -18,7 +18,7 @@ Use Conditional Access policies to apply the right access controls when needed t
 
 Conditional Access takes signals from various sources into account when making access decisions.
 
-:::image type="content" source="../media/conditional-access-central-policy-engine-zero-trust-bbcae403.png" alt-text="Image showing an example of common signals.":::
+:::image type="content" source="../media/conditional-access-central-policy-engine-zero-trust-bbcae403.png" alt-text="Screenshot showing an example of common signals.":::
 
 
 > [!IMPORTANT]
@@ -49,7 +49,7 @@ These signals include:
      -  Most restrictive decision
  -  Grant access
      -  The least restrictive decision can still require one or more of the following options:
-         -  Require multi-factor authentication
+         -  Require multifactor authentication
          -  Require the device to be marked as compliant
          -  Require Hybrid Azure AD joined device
          -  Require approved client app
@@ -58,10 +58,10 @@ These signals include:
 
 Many organizations have common access concerns that Conditional Access policies can help with, such as:
 
- -  Requiring multi-factor authentication for users with administrative roles
- -  Requiring multi-factor authentication for Azure management tasks
+ -  Requiring multifactor authentication for users with administrative roles
+ -  Requiring multifactor authentication for Azure management tasks
  -  Blocking sign-ins for users attempting to use legacy authentication protocols
- -  Requiring trusted locations for Azure AD Multi-Factor Authentication registration
+ -  Requiring trusted locations for Azure AD MultiFactor Authentication registration
  -  Blocking or granting access from specific locations
  -  Blocking risky sign-in behaviors
  -  Requiring organization-managed devices for specific applications

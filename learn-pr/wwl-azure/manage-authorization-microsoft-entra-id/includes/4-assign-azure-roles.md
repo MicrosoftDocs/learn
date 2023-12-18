@@ -22,7 +22,7 @@ Azure role-based access control (Azure RBAC) is the authorization system you use
 :::image type="content" source="../media/resource-groups-f49487c4.jpg" alt-text="Screenshot showing an example of a resource group.":::
 
 
-## Step 2: Open the Add role assignment page
+## Step 2: Open the Added role assignment page
 
 Access control (IAM) is the page that you typically use to assign roles to grant access to Azure resources. It's also known as identity and access management (IAM) and appears in several locations in the Azure portal.
 
@@ -38,7 +38,8 @@ Access control (IAM) is the page that you typically use to assign roles to grant
 > [!NOTE]
 > If you don't have permissions to assign roles, the Add role assignment option will be disabled.
 
-## :::image type="content" source="../media/add-role-assignment-57ec91d5.jpg" alt-text="Screenshot showing how to add role assignments."::: 
+:::image type="content" source="../media/add-role-assignment-57ec91d5.jpg" alt-text="Screenshot showing how to add role assignments.":::
+
 
 ## Step 3: Select the appropriate role
 
@@ -65,7 +66,7 @@ Privileged administrator roles are roles that grant privileged administrator acc
 
 ## Step 4: Select who needs access
 
-On the **Members** tab, select **User**, **group**, or **service principal** to assign the selected role to one or more Azure AD users, groups, or service principals (applications).
+1. On the **Members** tab, select **User**, **group**, or **service principal** to assign the selected role to one or more Azure AD users, groups, or service principals (applications).
 
 :::image type="content" source="../media/add-role-assignment-members-page-a6fbeae3.png" alt-text="Screenshot showing how to define who needs access.":::
 
@@ -92,7 +93,7 @@ On the **Members** tab, select **User**, **group**, or **service principal** to 
 
 For system-assigned managed identities, you can select managed identities by Azure service instance.
 
-:::image type="content" source="../media/select-managed-identity.jpg-45684886.png" alt-text="Screenshot showing the select managed identities page.":::
+:::image type="content" source="../media/select-managed-identity-f0fd13fb.png" alt-text="Screenshot showing the select managed identities page.":::
 <br>
 
 9. Click **Select** to add the managed identities to the Members list.
@@ -117,7 +118,7 @@ If you selected one of the following privileged roles, follow the steps in this 
 
 1. On the **Conditions** tab under **Delegation type**, select the **Constrained (recommended)** option.
 
-:::image type="content" source="../media/condition-constrained-42e0e974.jpg" alt-text="Screenshot showing the add role assignment conditions page.":::
+:::image type="content" source="../media/condition-constrained-42e0e974.jpg" alt-text="Screenshot showing the added role assignment conditions page.":::
 
 
 2. Click **Add condition** to add a condition that constrains the roles and principals this user can assign roles to.

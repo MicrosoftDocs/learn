@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-authorization-microsoft-entra-id.assign-azure-roles-using-the-azure-portal
+uid: learn.wwl.manage-authorization-microsoft-entra-id.assign-azure-roles
 title: Assign built-in roles in Azure
 metadata:
   title: Assign built-in roles in Azure
   description: "Assign built-in roles in Azure"
-  ms.date: 12/14/2023
+  ms.date: 12/18/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-assign-azure-roles-using-the-azure-portal.md)]
+  [!include[](includes/4-assign-azure-roles.md)]

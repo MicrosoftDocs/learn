@@ -6,7 +6,7 @@ There are two main steps to the role assignment process. First you'll select the
 
 1. Sign in to the **Microsoft Entra admin center** as a **Privileged Role Administrator**.
 
-2. Browse to **Identity**, **Users**, **All users**.<br>
+2. Browse to **Identity**, **Users**, **All users**.
 
 3. Search for and select the user getting the role assignment.
 
@@ -18,7 +18,7 @@ There are two main steps to the role assignment process. First you'll select the
 :::image type="content" source="../media/adding-role-assignments-2-435b509d.png" alt-text="Screenshot showing the users basic information.":::
 
 
-5. Select a role to assign from the dropdown list and select the **Next** button.
+5. Select a role to assign from the dropdown list and select the **Next** button.<br>
 
 ## Adjust the role settings
 
@@ -50,14 +50,13 @@ You can change the settings of a role assignment, for example to change an activ
 
 4. Change the settings as needed and select the **Save** button.<br>
 
-## :::image type="content" source="../media/removing-and-updating-assigned-roles-5-7283d76d.png" alt-text="Screenshot showing how to remove and update assigned roles."::: 
+:::image type="content" source="../media/removing-and-updating-assigned-roles-5-7283d76d.png" alt-text="Screenshot showing how to remove and update assigned roles.":::
+
 
 ## Remove roles<br>
 
 You can remove role assignments from the **Administrative roles** page for a selected user.
 
-Browse to **Identity**, **Users**, **All users**.<br>
-
-Search for and select the user getting the role assignment removed.<br>
-
-Go to the **Assigned roles** page and select the **Remove** link for the role that needs to be removed. Confirm the change in the pop-up message.
+1.  Browse to **Identity**, **Users**, **All users**.<br>
+2.  Search for and select the user getting the role assignment removed.<br>
+3.  Go to the **Assigned roles** page and select the **Remove** link for the role that needs to be removed. Confirm the change in the pop-up message.

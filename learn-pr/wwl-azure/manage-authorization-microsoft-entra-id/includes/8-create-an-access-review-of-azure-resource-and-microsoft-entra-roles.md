@@ -2,11 +2,11 @@ The need for access to privileged Azure resource and Microsoft Entra roles by em
 
 ## Prerequisites
 
-Using Privileged Identity Management requires licenses. For more information on licensing, see Microsoft Entra ID Governance licensing fundamentals .
+Using Privileged Identity Management requires licenses.
 
 To create access reviews for Azure resources, you must be assigned to the Owner or the User Access Administrator role for the Azure resources. To create access reviews for Microsoft Entra roles, you must be assigned to the Global Administrator or the Privileged Role Administrator role.<br>
 
-Access Reviews for Service Principals requires a Microsoft Entra Workload ID Premium plan in addition to Microsoft Entra ID P2 or Microsoft Entra ID Governance licenses.<br>
+Access Reviews for Service Principals require a Microsoft Entra Workload ID Premium plan in addition to Microsoft Entra ID P2 or Microsoft Entra ID Governance licenses.<br>
 
  -  Workload Identities Premium licensing: You can view and acquire licenses on the Workload Identities blade in the Microsoft Entra admin center.<br>
 
@@ -77,12 +77,15 @@ Access Reviews for Service Principals requires a Microsoft Entra Workload ID Pre
 
 2. If you want to automatically remove access for users that were denied, set Auto apply results to resource to Enable. If you want to manually apply the results when the review completes, set the switch to Disable.
 
-3. Use the If reviewer don't respond list to specify what happens for users that are not reviewed by the reviewer within the review period. This setting does not impact users who were reviewed by the reviewers.<br>
+3. Use the If reviewer doesn't respond list to specify what happens for users that are not reviewed by the reviewer within the review period. This setting does not impact users who were reviewed by the reviewers.<br>
 
- -  No change - Leave user's access unchanged<br>
- -  Remove access - Remove user's access
- -  Approve access - Approve user's access
- -  Take recommendations - Take the system's recommendation on denying or approving the user's continued access
+No change - Leave user's access unchanged<br>
+
+Remove access - Remove user's access
+
+Approve access - Approve user's access
+
+Take recommendations - Take the system's recommendation on denying or approving the user's continued access
 
 4. Use the Action to apply on denied guest users list to specify what happens for guest users that are denied. This setting is not editable for Microsoft Entra ID and Azure resource role reviews at this time; guest users, like all users, will always lose access to the resource if denied.
 

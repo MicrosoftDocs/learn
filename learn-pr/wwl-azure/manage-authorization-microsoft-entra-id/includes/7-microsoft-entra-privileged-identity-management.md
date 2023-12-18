@@ -3,7 +3,7 @@ Privileged Identity Management provides time-based and approval-based role activ
  -  Provide just-in-time privileged access to Microsoft Entra ID and Azure resources
  -  Assign time-bound access to resources using start and end dates
  -  Require approval to activate privileged roles
- -  Enforce multi-factor authentication to activate any role
+ -  Enforce multifactor authentication to activate any role
  -  Use justification to understand why users activate
  -  Get notifications when privileged roles are activated
  -  Conduct access reviews to ensure users still need roles
@@ -23,7 +23,7 @@ For Azure resource roles in Privileged Identity Management, only a subscription 
 
 To better understand Privileged Identity Management and its documentation, you should review the following terms.
 
-## :::image type="content" source="../media/microsoft-entra-pim-terminology-table-ca06e6bf.png" alt-text="Table showing terminology or concepts definitions."::: Role assignment overview
+## :::image type="content" source="../media/microsoft-entra-terminology-table-9e977793.png" alt-text="Table showing examples of Privileged Identity Management terminology."::: Role assignment overview
 
 The PIM role assignments give you a secure way to grant access to resources in your organization. This section describes the assignment process. It includes assign roles to members, activate assignments, approve or deny requests, extend and renew assignments.
 
@@ -47,7 +47,7 @@ The assignment process starts by assigning roles to members. To grant access to 
 
 The following screenshot shows how administrator assigns a role to members.
 
-:::image type="content" source="../media/pim-role-assignment-d689e10a.png" alt-text="Screenshot showing how to add assignment types for eligible and active Azure resources.":::
+:::image type="content" source="../media/add-assignments-f52a54b0.png" alt-text="Screenshot showing how to add assignment types for eligible and active Azure resources.":::
 
 
 ## Activate
@@ -56,8 +56,8 @@ If users have been made eligible for a role, then they must activate the role as
 
 The following screenshot shows how members activate their role to a limited time.
 
-:::image type="content" source="../media/pim-role-assignment-activation-page-3fb25d40.png" alt-text="Screenshot showing how to activate a storage blob data reader azure resource.":::
-<br>
+:::image type="content" source="../media/activate-storage-blob-data-reader-7c2476de.png" alt-text="Screenshot showing how to activate a storage blob data reader Azure resource.":::
+
 
 If the role requires approval to activate, a notification appears in the upper right corner of the user's browser informing them the request is pending approval. If an approval isn't required, the member can start using the role.
 
