@@ -1,25 +1,26 @@
 To customize the end-user experience for Microsoft Entra multifactor authentication, you can configure options for settings like account lockout thresholds or fraud alerts and notifications.<br>
 
-The following Azure AD Multi-Factor Authentication settings are available in the Azure portal:
+The following Microsoft Entra multifactor authentication settings are available in the Azure portal:
 
-| **Feature**                      | **Description**                                                                                                                                                                                                                                                                 |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Account lockout                  | Temporarily lock accounts from using Azure AD Multi-Factor Authentication if there are too many denied authentication attempts in a row. This feature applies only to users who enter a PIN to authenticate. (MFA Server only)                                                  |
-| Block/unblock users              | Block specific users from being able to receive Azure AD Multi-Factor Authentication requests. Any authentication attempts for blocked users are automatically denied. Users remain blocked for 90 days from the time that they're blocked or until they're manually unblocked. |
-| Report suspicious activity       | Configure settings that allow users to report fraudulent verification requests.                                                                                                                                                                                                 |
-| Notifications                    | Enable notifications of events from MFA Server.                                                                                                                                                                                                                                 |
-| Open Authorization (OATH) tokens | Used in cloud-based Azure AD Multi-Factor Authentication environments to manage OATH tokens for users.                                                                                                                                                                          |
-| Phone call settings              | Configure settings related to phone calls and greetings for cloud and on-premises environments.                                                                                                                                                                                 |
-| Providers                        | This will show any existing authentication providers that you've associated with your account. Adding new providers is disabled as of September 1, 2018.                                                                                                                        |
+| **Feature**                      | **Description**                                                                                                                                                                                                                                                                       |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Account lockout                  | Temporarily lock accounts from using Microsoft Entra multifactor authentication if there are too many denied authentication attempts in a row. This feature applies only to users who enter a PIN to authenticate. (MFA Server only)                                                  |
+| Block/unblock users              | Block specific users from being able to receive Microsoft Entra multifactor authentication requests. Any authentication attempts for blocked users are automatically denied. Users remain blocked for 90 days from the time that they're blocked or until they're manually unblocked. |
+| Report suspicious activity       | Configure settings that allow users to report fraudulent verification requests.                                                                                                                                                                                                       |
+| Notifications                    | Enable notifications of events from MFA Server.                                                                                                                                                                                                                                       |
+| Open Authorization (OATH) tokens | Used in cloud-based Microsoft Entra multifactor authentication environments to manage OATH tokens for users.                                                                                                                                                                          |
+| Phone call settings              | Configure settings related to phone calls and greetings for cloud and on-premises environments.                                                                                                                                                                                       |
+| Providers                        | This will show any existing authentication providers that you've associated with your account. Adding new providers is disabled as of September 1, 2018.                                                                                                                              |
 
-## :::image type="content" source="../media/multi-factor-authentication-settings-portal-9d828bf2.png" alt-text="Screenshot showing the Multi-factor Authentication settings portal."::: 
+:::image type="content" source="../media/multi-factor-authentication-settings-portal-9d828bf2.png" alt-text="Screenshot showing the multifactor authentication settings portal.":::
+
 
 ## Account lockout (Microsoft Entra multifactor authentication Server only)
 
 > [!NOTE]
 > Account lockout only affects users who sign in by using MFA Server on-premises.
 
-To prevent repeated Multi-Factor Authentication attempts as part of an attack, the account lockout settings let you specify how many failed attempts to allow before the account becomes locked out for a period of time. The account lockout settings are applied only when a PIN code is entered for the Multi-Factor Authentication prompt.
+To prevent repeated multifactor authentication attempts as part of an attack, the account lockout settings let you specify how many failed attempts to allow before the account becomes locked out for a period of time. The account lockout settings are applied only when a PIN code is entered for the multifactor authentication prompt.
 
 The following settings are available:
 
@@ -33,11 +34,12 @@ To configure account lockout settings, complete these steps:
 2.  Go to **Azure Active Directory** &gt; **Security** &gt; **Multi-factor authentication** &gt; **Account lockout**.
 3.  Enter the values for your environment, and then **select Save**.
 
-## :::image type="content" source="../media/account-lockout-settings-fd2ee95a.png" alt-text="Screenshot showing a Multi-Authentication Account lockout example."::: 
+:::image type="content" source="../media/account-lockout-settings-fd2ee95a.png" alt-text="Screenshot showing a Multi-Authentication Account lockout example.":::
+
 
 ## Block and unblock users
 
-If a user's device is lost or stolen, you can block Azure AD Multi-Factor Authentication attempts for the associated account. Any Azure AD Multi-Factor Authentication attempts for blocked users are automatically denied. Users **remain blocked for 90 days from the time that they're blocked**.
+If a user's device is lost or stolen, you can block Microsoft Entra multifactor authentication attempts for the associated account. Any Microsoft Entra multifactor authentication attempts for blocked users are automatically denied. Users **remain blocked for 90 days from the time that they're blocked**.
 
 **Block a user**<br>
 
@@ -62,9 +64,9 @@ Select **OK** to unblock the user.
 
 ## Report suspicious activity
 
-A preview of Report Suspicious Activity, the updated **Multi-factor authentication Fraud Alert feature**, is now available. When an unknown and suspicious Multi-factor authentication prompt is received, users can report the fraud attempt using Microsoft Authenticator or phone. These alerts are integrated with Identity Protection for more comprehensive coverage and capability.
+A preview of Report Suspicious Activity, the updated **Multi-factor authentication Fraud Alert feature**, is now available. When an unknown and suspicious multifactor authentication prompt is received, users can report the fraud attempt using Microsoft Authenticator or phone. These alerts are integrated with Identity Protection for more comprehensive coverage and capability.
 
-Users who report a Multi-factor authentication prompt as suspicious are set to High User Risk. Administrators can use risk-based policies to limit access for these users or enable **self-service password reset (SSPR)** for users to remediate problems on their own. If you previously used the Fraud Alert automatic blocking feature and don't have an Azure AD P2 license for risk-based policies, you can use risk detection events to identify and disable impacted users and automatically prevent their sign-in. For more information about using risk-based policies, see Risk-based access policies.<br>
+Users who report a multifactor authentication prompt as suspicious are set to High User Risk. Administrators can use risk-based policies to limit access for these users or enable **self-service password reset (SSPR)** for users to remediate problems on their own. If you previously used the Fraud Alert automatic blocking feature and don't have an Azure AD P2 license for risk-based policies, you can use risk detection events to identify and disable impacted users and automatically prevent their sign-in. For more information about using risk-based policies, see Risk-based access policies.<br>
 
 To enable Report Suspicious Activity from the Authentication Methods Settings:<br>
 
@@ -74,13 +76,13 @@ To enable Report Suspicious Activity from the Authentication Methods Settings:<b
 
 ## **View suspicious activity events.**
 
-When a user reports a Multi-factor authentication prompt as suspicious, the event shows up in the Sign-ins report (**as a sign-in that was rejected by the user**), in the **Audit logs**, and in the **Risk detections** report.
+When a user reports a multifactor authentication prompt as suspicious, the event shows up in the Sign-ins report (**as a sign-in that was rejected by the user**), in the **Audit logs**, and in the **Risk detections** report.
 
 Select Azure **Active Directory** &gt; **Security** &gt; **Identity Protection** &gt; **Risk detection** to view the risk detection report. The risk event is part of the standard Risk Detections report and will appear as Detection Type User Reported Suspicious Activity, Risk level High, Source End user reported.<br>
 
 Select **Azure Active Directory** &gt; **Sign-in logs** &gt; **Authentication Details** to view fraud reports in the Sign-in report. The fraud report is part of the standard Azure AD Sign-ins report and appears in the Result Detail as MFA denied, Fraud Code Entered.<br>
 
-To view fraud reports in the Audit logs, select **Azure Active Directory** &gt; **Audit logs**. The fraud report appears under Activity type Fraud reported - user is blocked for Multi-factor authentication, or Fraud reported - no action taken based on the tenant-level settings for a fraud report.<br>
+To view fraud reports in the Audit logs, select **Azure Active Directory** &gt; **Audit logs**. The fraud report appears under Activity type Fraud reported - user is blocked for multifactor authentication, or Fraud reported - no action taken based on the tenant-level settings for a fraud report.<br>
 
 ## Manage suspicious activity events.
 
@@ -96,7 +98,7 @@ If Fraud Alert is enabled with Automatic Blocking and Report Suspicious Activity
 
 You can configure Azure AD to send email notifications when users report fraud alerts. These notifications are typically sent to identity administrators because the user's account credentials are likely compromised. The following example shows what a fraud alert notification email looks like:
 
-## :::image type="content" source="../media/multi-factor-authentication-fraud-alert-email-4146caf9.png" alt-text="Screenshot showing a Multi-factor Authentication fraud alert example."::: 
+## :::image type="content" source="../media/multi-factor-authentication-fraud-alert-email-4146caf9.png" alt-text="Screenshot showing a multifactor authentication fraud alert example."::: 
 
 ## OATH tokens
 
@@ -108,7 +110,7 @@ Programmable OATH TOTP hardware tokens that can be reseeded can also be set up w
 
 OATH hardware tokens are supported as part of a public preview.<br>
 
-## :::image type="content" source="../media/multi-factor-authentication-oath-tokens-1662aab9.png" alt-text="Screenshot showing the Multi-factor Authentication Oath tokens page."::: 
+## :::image type="content" source="../media/multi-factor-authentication-oath-tokens-1662aab9.png" alt-text="Screenshot showing the multifactor authentication Oath tokens page."::: 
 
 After you acquire tokens, you need to upload them in a comma-separated values (CSV) file format. Include the **User Principal Name (UPN)**, **serial number**, **secret key**, **time interval**, **manufacturer**, and **model**.
 

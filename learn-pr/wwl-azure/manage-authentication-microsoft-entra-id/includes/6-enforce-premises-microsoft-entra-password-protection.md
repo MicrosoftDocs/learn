@@ -15,7 +15,7 @@ Microsoft Entra Password Protection is designed with the following principles in
 
 ## Incremental deployment
 
-Microsoft Entra Password Protection supports incremental deployment across DCs in an Microsoft Entra ID domain. It's important to understand what this really means and what the tradeoffs are.
+Microsoft Entra Password Protection supports incremental deployment across DCs in a Microsoft Entra ID domain. It's important to understand what this really means and what the tradeoffs are.
 
 The Microsoft Entra Password Protection DC agent software can only validate passwords when it's installed on a DC, and only for password changes that are sent to that DC. It's not possible to control which DCs are chosen by Windows client machines for processing user password changes. To guarantee consistent behavior and universal Microsoft Entra Password Protection security enforcement, the DC agent software must be installed on all DCs in a domain.
 

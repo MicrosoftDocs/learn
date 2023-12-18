@@ -1,6 +1,6 @@
 In today's world, our digital and physical lives are becoming increasingly intertwined with the apps, services, and devices we use. This digital revolution has opened up a world of possibilities, allowing us to connect with countless companies and individuals in ways that were once unimaginable.
 
-This increased connectivity introduces a greater risk of identity theft and data breaches. These breaches can have a devastating impact on our personal and professional lives. But there is hope. Microsoft is working with a diverse community to create a Decentralized Identity solution that puts individuals in control of their own digital identities, providing a secure and private way to manage identity data without relying on centralized authorities or intermediarie
+This increased connectivity introduces a greater risk of identity theft and data breaches. These breaches can have a devastating impact on our personal and professional lives. But there is hope. Microsoft is working with a diverse community to create a Decentralized Identity solution that puts individuals in control of their own digital identities, providing a secure and private way to manage identity data without relying on centralized authorities or intermediaries
 
 ## Why we need Decentralized Identity
 
@@ -18,7 +18,7 @@ Decentralized Identifiers (DIDs) are different. DIDs are user-generated, self-ow
 
 Microsoft’s verifiable credential solution uses decentralized credentials (DIDs) to cryptographically sign as proof that a relying party (verifier) is attesting to information proving they are the owners of a verifiable credential. A basic understanding of DIDs is recommended for anyone creating a verifiable credential solution based on the Microsoft offering.
 
-## What are Verifiable Credentials?<br>
+## What are Verifiable credentials?<br>
 
 We use IDs in our daily lives. We have drivers licenses that we use as evidence of our ability to operate a car. Universities issue diplomas that prove we attained a level of education. We use passports to prove who we are to authorities as we arrive to other countries/regions. The data model describes how we could handle these types of scenarios when working over the internet but in a secure manner that respects users' privacy.
 
@@ -108,7 +108,8 @@ These use cases demonstrate how centralized identities and decentralized identit
 
 ## User journey: Onboarding to Woodgrove
 
-## :::image type="content" source="../media/centralized-decentralized-identity-user-journey-812ed1b9.png" alt-text="Image showing an example of a user journey in a centralized and decentralized identity architecture."::: 
+:::image type="content" source="../media/centralized-decentralized-identity-user-journey-812ed1b9.png" alt-text="Diagram showing an example of a user journey in a centralized and decentralized identity architecture.":::
+
 
 **Awareness**: Alice is interested in working for Woodgrove, Inc. and visits Woodgrove’s career website.
 
@@ -136,9 +137,10 @@ By combining centralized and decentralized identity architectures for onboarding
 
 ## User journey: Accessing resources inside the trust boundary
 
-## :::image type="content" source="../media/accessing-resources-inside-trust-boundary-9b4bc001.png" alt-text="Image showing an example of a user journey accessing resources inside the trust boundary."::: 
+:::image type="content" source="../media/accessing-resources-inside-trust-boundary-9b4bc001.png" alt-text="Image showing an example of a user journey accessing resources inside the trust boundary.":::
 
-As an employee, Alice is operating inside of the trust boundary of Woodgrove. Woodgrove acts as the identity provider (IDP) and maintains complete control of the identity and the configuration of the apps Alice uses to interact within the Woodgrove trust boundary. To use resources in the Microsoft Entra ID trust boundary, Alice provides potentially multiple forms of proof of identification to sign in Woodgrove’s trust boundary and access the resources inside of Woodgrove’s technology environment. Multiple proofs is a typical scenario that is well served using a centralized identity architecture.
+
+As an employee, Alice is operating inside of the trust boundary of Woodgrove. Woodgrove acts as the identity provider (IDP) and maintains complete control of the identity and the configuration of the apps Alice uses to interact within the Woodgrove trust boundary. To use resources in the Microsoft Entra ID trust boundary, Alice provides potentially multiple forms of proof of identification to sign in Woodgrove’s trust boundary and access the resources inside of Woodgrove’s technology environment. Multiple proofs are a typical scenario that is well served using a centralized identity architecture.
 
  -  Woodgrove manages the trust boundary and using good security practices provides the least-privileged level of access to Alice based on the job performed. To maintain a strong security posture, and potentially for compliance reasons, Woodgrove must also be able to track employees’ permissions and access to resources and must be able to revoke permissions when the employment is terminated.<br>
  -  Alice only uses the credential that Woodgrove maintains to access Woodgrove resources. Alice has no need to track when the credential is used since Woodgrove is managing the credential and which is only used with Woodgrove resources. The identity is only valid inside of the Woodgrove trust boundary when access to Woodgrove resources is necessary, so Alice has no need to possess the credential.<br>
@@ -159,7 +161,7 @@ Woodgrove negotiates a product purchase discount with Proseware. All Woodgrove e
 
 With decentralized identifiers, Woodgrove can provide Alice with a verifiable credential (VC) that Alice can use to access Proseware’s website and other external resources.
 
-:::image type="content" source="../media/verifiable-credentials-accessing-external-resources-18c40357.png" alt-text="Image showing an example of a user journey accessing external resources.":::
+:::image type="content" source="../media/verifiable-credentials-access-external-resources-94d0db71.png" alt-text="Diagram showing an example of a user journey accessing external resources.":::
 
 
 By providing Alice the VC, Woodgrove is attesting that Alice is an employee. Woodgrove is a trusted VC issuer in Proseware’s validation solution. This trust in Woodgrove’s issuance process allows Proseware to electronically accept the VC as proof that Alice is a Woodgrove employee and provide Alice the discount. As part of validation of the VC Alice presents, Proseware checks the validity of the VC by using the trust system. In this solution:
@@ -174,7 +176,7 @@ By combining centralized and decentralized identity architectures for operating 
 
 Woodgrove adds new and ends current business relationships with other organizations and needs to determine when centralized and decentralized identity architectures are used.
 
-By combining centralized and decentralized identity architectures, the responsibility and effort associated with identity and proof of identity is distributed, risk is . The user doesn't risk releasing their private information as often or to as many unknown verifiers. Specifically:<br>
+By combining centralized and decentralized identity architectures, the responsibility and effort associated with identity and proof of identity is distributed, risk is. The user doesn't risk releasing their private information as often or to as many unknown verifiers. Specifically:<br>
 
 In centralized identity architectures, the IDP issues credentials and performs verification of those issued credentials. The IDP processes information about all identities. It either stores them in a directory or retrieves them from a directory. Optionally, IDPs can accept security tokens from other IDP systems, such as social sign-ins or business partners. For a relying party to use identities in the IDP trust boundary, they must be configured to accept the tokens issued by the IDP.<br>
 
@@ -218,7 +220,8 @@ In this flow, the credential holder interacts with the issuer to request a verif
 
 ### Flow 2: Verifiable credential presentation
 
-### :::image type="content" source="../media/verifiable-credential-presentation-8eed444d.png" alt-text="Diagram showing an example of a verifiable credential presentation."::: 
+:::image type="content" source="../media/verifiable-credential-presentation-8eed444d.png" alt-text="Diagram showing an example of a verifiable credential presentation.":::
+
 
 In this flow, a holder interacts with a relying party (RP) to present a VC as part of its authorization requirements.
 
@@ -249,7 +252,7 @@ Then, the wallet sends a presentation response payload to the Microsoft Entra Ve
 
 8. Upon validation, the Microsoft Entra Verified ID service calls back the RP with the result.
 
-## Key Takeaways
+## Key takeaways
 
 Decentralized architectures can be used to enhance existing solutions and provide new capabilities.
 

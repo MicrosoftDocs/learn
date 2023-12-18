@@ -19,7 +19,7 @@ Windows Hello for Business is ideal for information workers that have their own 
 
 ## Microsoft Authenticator
 
-You can also allow your employee's phone to become a passwordless authentication method. You may already be using the Authenticator app as a convenient multi-factor authentication option in addition to a password. You can also use the Authenticator App as a passwordless option.
+You can also allow your employee's phone to become a passwordless authentication method. You may already be using the Authenticator app as a convenient multifactor authentication option in addition to a password. You can also use the Authenticator App as a passwordless option.
 
 ## Fast Identity Online2 (FIDO2) security keys:
 
