@@ -1,6 +1,6 @@
 Imagine that you work as a software engineer for an online outdoor clothing retailer. You're responsible for deploying and updating the retailer's online storefront, a cloud-native, microservices-based .NET app.
 
-To fulfill project requirements and enhance your team's agile development practices, you decide to compare continuous integration and continuous deployment (CI/CD) through [GitHub Actions](https://help.github.com/actions/getting-started-with-github-actions/about-github-actions) and Azure DevOps pipelines. CI/CD pipelines use a series of automated steps to compile and deploy apps from build through all environments.
+To fulfill project requirements and enhance your team's agile development practices, you decide to compare continuous integration and continuous deployment (CI/CD) through [GitHub Actions](https://help.github.com/actions/getting-started-with-github-actions/about-github-actions) and Azure Pipelines. CI/CD pipelines use a series of automated steps to compile and deploy apps from build through all environments.
 
 Because the current web has a microservices architecture, and each microservice deploys independently, you start by setting up CI/CD for a single service.
 

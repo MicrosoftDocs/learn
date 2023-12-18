@@ -1,4 +1,4 @@
-Your manager wants you to change the CI/CD for the companies eShop app to use Azure DevOps Pipelines. You'll now create an Azure DevOps Pipeline to build and deploy your products service.
+Your manager wants you to change the CI/CD for the companies eShop app to use Azure Pipelines. You'll now create an Azure DevOps Pipeline to build and deploy your products service.
 
 ## Create an Azure DevOps Pipeline
 
@@ -25,7 +25,7 @@ Your manager wants you to change the CI/CD for the companies eShop app to use Az
 
 ## Review the pipeline YAML file
 
-Azure DevOps Pipelines uses YAML files to define the steps to build and deploy your app. The YAML file is stored in your GitHub repository and was created automatically for you, based on the information you provided.
+Azure Pipelines uses YAML files to define the steps to build and deploy your app. The YAML file is stored in your GitHub repository and was created automatically for you, based on the information you provided.
 
 Let's review the YAML file:
 
@@ -49,9 +49,9 @@ In the top right of the **Review your pipeline YAML** page, select **Save and ru
 
 ## Monitor and troubleshoot the pipeline
 
-Azure DevOps Pipelines are monitored and managed from the Azure DevOps portal. Let's look at the output of running the pipeline you just created.
+Azure Pipelines are monitored and managed from the Azure DevOps portal. Let's look at the output of running the pipeline you created.
 
-:::image type="content" source="../media/6-devops-running.png" alt-text="A screenshot showing the status of an Azure DevOps pipeline." border="true" lightbox="../media/6-devops-running.png":::
+:::image type="content" source="../media/6-devops-running.png" alt-text="A screenshot showing the status of an Azure Pipeline." border="true" lightbox="../media/6-devops-running.png":::
 
 The summary page shows you all the stages of your running pipeline. You can select a stage to view the steps in more detail. In a moment, you'll see that the pipeline has failed. Select the **Build** stage.
 
@@ -81,10 +81,10 @@ In DevOps, go back to the pipeline summary page. You're going to edit the create
 1. In the **Save** pane, select **Save**.
 1. Select **Run** then, in the **Run pipeline** pane, select **Run**.
     
-    Watch the **Build stage** complete. The **Deploy stage** will pause until you select it and permit it to run.
+    Watch the **Build stage** complete. The **Deploy stage** pauses until you select it and permit it to run.
     
     :::image type="content" source="../media/6-devops-completed.png" alt-text="A screenshot showing the completed pipeline." lightbox="../media/6-devops-completed.png" border="true":::
     
-    The pipeline has now completed successfully. Select the **Deploy** stage to view the steps.
+    The pipeline completes successfully. Select the **Deploy** stage to view the steps.
 
     :::image type="content" source="../media/6-deploy-steps.png" alt-text="A screenshot showing the Deploy stage and the successfully completed steps." lightbox="../media/6-deploy-steps.png" border="true":::
