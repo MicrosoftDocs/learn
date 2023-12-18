@@ -21,8 +21,8 @@ The diversity of participants means that language barriers can affect communicat
 
 To get started, you need:
 
-- A Power Apps Developer account. If you don't have an account, create one for free at [Microsoft Power Apps](https://powerapps.microsoft.com).
+- A Power Apps Developer account. If you don't have an account, create one for free at [Microsoft Power Apps](https://powerapps.microsoft.com?WT.mc_id=academic-114984-somelezediko).
 - A Microsoft Azure account.
 
 > [!NOTE]
-> If you're a student you can benefit from a [free Azure for Students subscription](https://azure.microsoft.com/free/students) with credit to spend on Azure services. If you're not a student, you can still sign up for a [free Azure trial](https://azure.microsoft.com/free/).
+> If you're a student you can benefit from a [free Azure for Students subscription](https://azure.microsoft.com/free/students/?WT.mc_id=academic-114984-somelezediko) with credit to spend on Azure services. If you're not a student, you can still sign up for a [free Azure trial](https://azure.microsoft.com/free/?WT.mc_id=academic-114984-somelezediko).

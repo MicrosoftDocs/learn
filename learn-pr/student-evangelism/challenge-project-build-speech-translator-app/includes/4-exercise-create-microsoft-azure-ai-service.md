@@ -18,7 +18,7 @@ Azure AI Speech is the back-end engine that completes the solution you're buildi
 Go to the [Microsoft Azure portal](https://portal.azure.com) and follow the steps to create a Speech resource. This process gives you access to your keys, locations/regions, and endpoints. You need these details before you can consume the service in Power Apps.
 
 > [!NOTE]
-> You need an active Microsoft Azure subscription to carry out this exercise. If you're a student you can benefit from a [free Azure for Students subscription](https://azure.microsoft.com/free/students). If you're not a student, you can still sign up for a [free Azure trial](https://azure.microsoft.com/free).
+> You need an active Microsoft Azure subscription to carry out this exercise. If you're a student you can benefit from a [free Azure for Students subscription](https://azure.microsoft.com/free/students/?WT.mc_id=academic-114984-somelezediko). If you're not a student, you can still sign up for a [free Azure trial](https://azure.microsoft.com/free/?WT.mc_id=academic-114984-somelezediko).
 
 ## About Microsoft Azure Blob Storage
 
@@ -42,7 +42,7 @@ To validate that your setup works, go to Power Apps and do the following tasks:
 
 1. Add `AzureBatchSpeech-to-text` to your data source and connect by using the key and region details from the Azure portal.
 1. Add Azure Blob Storage as your data source and connect by using the service name and key details from the Azure portal.
-1. Add Microsoft Translator V3 as your data source and connect by using the service name and the key details from the Azure portal.
+1. Add `Microsoft Translator V3` as your data source and connect by using the service name and the key details from the Azure portal.
 
 Congratulations on your progress so far!
 
@@ -50,5 +50,5 @@ Congratulations on your progress so far!
 
 If you need help with Azure AI Speech, you can find out more in the following resources:
 
-- [What is the Speech service?](/azure/ai-services/speech-service/overview)
-- [Quickstart: Create a multi-service resource for Azure AI services](/azure/ai-services/multi-service-resource)
+- [What is the Speech service?](/azure/ai-services/speech-service/overview/?WT.mc_id=academic-114984-somelezediko)
+- [Quickstart: Create a multi-service resource for Azure AI services](/azure/ai-services/multi-service-resource/?WT.mc_id=academic-114984-somelezediko)

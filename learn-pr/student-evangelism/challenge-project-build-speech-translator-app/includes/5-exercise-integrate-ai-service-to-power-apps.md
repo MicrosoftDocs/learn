@@ -12,7 +12,7 @@ Build a Power Automate flow that meets the following requirements:
 
 1. The flow stores the transcription text, translated text, and text-to-speech audio file in variables to send back to the app.
 2. The flow uses the transcription created and the transcription files to extract the text.
-3. The flow uses the Microsoft Translator V3 connector to translate the extracted text into the chosen language from the Power App.
+3. The flow uses the `Microsoft Translator V3` connector to translate the extracted text into the chosen language from the Power App.
 4. The flow uses the `AzureTexttoSpeech` connector to convert the translated text into a speech audio file.
 
 ## Check your work
