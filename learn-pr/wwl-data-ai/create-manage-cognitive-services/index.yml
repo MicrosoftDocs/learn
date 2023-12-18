@@ -6,8 +6,8 @@ metadata:
   ms.date: 12/07/2021
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: ai-services
+  ms.topic: module
+  ms.service: azure-ai-services
 title: Create and consume Azure AI Services 
 summary: Azure AI Services enable developers to easily add AI capabilities into their applications. Learn how to create and consume these services.
 abstract: |
