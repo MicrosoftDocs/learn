@@ -2,7 +2,7 @@ Connectivity issues for IoT devices can be difficult to troubleshoot because the
 
 * **Azure Monitor** - Azure Monitor enables you to collect, analyze, and act on telemetry from IoT Hub. To help you detect, diagnose, and troubleshoot these issues at scale, use the monitoring capabilities IoT Hub provides through Azure Monitor. This includes setting up alerts to trigger notifications and actions when disconnects occur and configuring logs that you can use to discover the conditions that caused disconnects.
 
-* **Azure Event Grid** - For critical infrastructure and per-device disconnects, use Azure Event Grid to subscribe to device connect and disconnect events emitted by IoT Hub. Azure Event Grid enables you to use any of the following event handlers:
+* **Azure Event Grid** - For critical infrastructure and per-device disconnect, use Azure Event Grid to subscribe to device connect and disconnect events emitted by IoT Hub. Azure Event Grid enables you to use any of the following event handlers:
 
   * Azure Functions
   * Logic Apps
@@ -54,7 +54,7 @@ The following screenshot shows a diagnostic setting to route these logs to a Log
 
 :::image type="content" source="../media/create-diagnostic-setting.png" alt-text="Image showing a Log Analytics diagnostic setting.":::
 
-We recommend creating a diagnostic setting as early as possible after you create your IoT hub, because, although IoT Hub always emits resource logs, they aren't collected by Azure Monitor until you route them to a destination.
+We recommend creating a diagnostic setting as early as possible after you create your IoT hub. Although IoT Hub always emits resource logs, they aren't collected by Azure Monitor until you route them to a destination.
 
 ## Azure Monitor: Set up metric alerts for device disconnects
 You can set up alerts based on the platform metrics emitted by IoT Hub. With metric alerts, you can notify individuals that a condition of interest has occurred and also trigger actions that can respond to that condition automatically.
@@ -66,7 +66,7 @@ The **Connected devices** metric tells you how many devices are connected to you
 You can use metric alert rules to monitor for device disconnect anomalies at-scale. That is, use alerts to determine when a significant number of devices unexpectedly disconnect. When this is detected, you can look at logs to help troubleshoot the issue. To monitor per-device disconnects and disconnects for critical devices in near real time, however, you must use Event Grid.
 
 ## Azure Monitor: Use logs to resolve connectivity errors
-When you detect device disconnects by using Azure Monitor metric alerts or Event Grid, you can use logs to help troubleshoot the reason. This section describes how to look for common issues in Azure Monitor Logs. The steps below assume you've already created a diagnostic setting to send IoT Hub Connections logs to a Log Analytics workspace.
+When you detect device disconnects by using Azure Monitor metric alerts or Event Grid, you can use logs to help troubleshoot the reason. This section describes how to look for common issues in Azure Monitor Logs. The following steps assume you've already created a diagnostic setting to send IoT Hub Connections logs to a Log Analytics workspace.
 
 After you've created a diagnostic setting to route IoT Hub resource logs to Azure Monitor Logs, follow these steps to view the logs in Azure portal.
 

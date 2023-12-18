@@ -11,11 +11,11 @@ If your device isn't able to connect to your Azure IoT hub, here are a few thing
 1. Review your device registry (using the Azure portal) and ensure that your device is enabled.
 1. Can you get through the firewall?
      * The easiest thing to try is to run the [iothub-diagnostics](https://github.com/azure/iothub-diagnostics) tool and see if it manages to connect to your Azure IoT hub with your devices credentials. It tries all supported protocols and WebSockets and displays its test results.
-     * If you cannot run iothub-diagnostics, you can try to run through the same steps manually:
+     * If you can't run iothub-diagnostics, you can try to run through the same steps manually:
          * Ping a known website to verify name resolution and outbound traffic works.
          * Change the transport used to instantiate the client (AMQP, AMQPWS, MQTT, MQTTWS, and HTTP).
 1. Try running the [default samples](https://github.com/Azure/azure-iot-sdk-node/tree/master/device/samples).
-     * If the samples can connect, try finding differences between how your program and the samples instantiate the client. The problem might be a simple typo.
+     * If the samples can connect, try finding differences between how your program and the samples instantiate the client. The problem might be as simple as a typo.
      * If the samples can't connect and neither can iothub-diagnostics, the problem is likely to be an issue with the credentials or your network.
 
 ## Not detecting disconnections
@@ -24,7 +24,7 @@ The hard thing about disconnections is that they often seem random. If the SDK i
 
 1. Could the retry logic be delaying things?
      * Be default the retry logic goes on for four minutes. Have you waited that long?
-     * If you do not want to wait, try disabling the retry logic by calling `client.setRetryPolicy(new NoRetry())`
+     * If you don't want to wait, try disabling the retry logic by calling `client.setRetryPolicy(new NoRetry())`
 1. Need detailed logs? The SDK uses the [debug](https://github.com/debug-js/debug) library for logging:
      * Set the `DEBUG` environment variable and run your application again. Here are a few good values for the `DEBUG` environment variable to get you started:
          * The `azure*` parameter logs SDK activity but not the underlying transport library.
