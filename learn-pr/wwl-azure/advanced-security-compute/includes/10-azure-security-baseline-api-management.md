@@ -26,7 +26,7 @@ When a feature has relevant Azure Policy Definitions, they are listed in this ba
 **Configuration Guidance**: Deploy network security groups (NSG) to your API Management subnets to restrict or monitor traffic by port, protocol, source IP address, or destination IP address. Create NSG rules to restrict your service's open ports (such as preventing management ports from being accessed from untrusted networks). Be aware that by default, NSGs deny all inbound traffic but allow traffic from virtual network and Azure Load Balancers.
 
 > [!CAUTION]
-> : When configuring an NSG on the API Management subnet, there is a set of ports that are required to be open. If any of these ports are unavailable, API Management might not operate properly and might become inaccessible.
+> When configuring an NSG on the API Management subnet, there is a set of ports that are required to be open. If any of these ports are unavailable, API Management might not operate properly and might become inaccessible.
 
 ### **NS-2**: **Secure cloud services with network controls**
 
@@ -37,7 +37,7 @@ When a feature has relevant Azure Policy Definitions, they are listed in this ba
 **Configuration Guidance**: In instances where you are unable to deploy API Management instances into a virtual network, you should instead deploy a private endpoint to establish a private access point for those resources.
 
 > [!NOTE]
-> : To enable private endpoints, the API Management instance can't already be configured with an external or internal virtual network. A private endpoint connection supports only incoming traffic to the API Management instance.
+> To enable private endpoints, the API Management instance can't already be configured with an external or internal virtual network. A private endpoint connection supports only incoming traffic to the API Management instance.
 
 **Feature**: Disable Public Network Access
 
@@ -46,7 +46,7 @@ When a feature has relevant Azure Policy Definitions, they are listed in this ba
 **Configuration Guidance**: Disable public network access either using the IP ACL filtering rule on the NSGs assigned to the service's subnets or a toggling switch for public network access.
 
 > [!NOTE]
-> : API Management supports deployments into a virtual network, as well as locking down non-network-based deployments with a private endpoint and disabling public network access.<br>
+> API Management supports deployments into a virtual network, as well as locking down non-network-based deployments with a private endpoint and disabling public network access.<br>
 
 **Feature**: Microsoft Defender for Cloud monitoring
 
@@ -137,7 +137,7 @@ Alternatively, the sign-in/sign-up process can be further customized through del
 **Configuration Guidance**: If not required for routine administrative operations, disable or restrict any local admin accounts for only emergency use.<br>
 
 > [!NOTE]
-> : API Management allows creation of local user account. Instead of creating these local accounts, enable Azure Active Directory (Azure AD) authentication only, and assign permissions to these Azure AD accounts.
+> API Management allows creation of local user account. Instead of creating these local accounts, enable Azure Active Directory (Azure AD) authentication only, and assign permissions to these Azure AD accounts.
 
 ### PA-7: Follow just enough administration (least privilege) principle
 

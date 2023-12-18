@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.advanced-security-compute.azure-data-encryption
-title: Configure disk encryption, including Azure Disk Encryption (ADE), encryption as host, and confidential disk encryption
+title: Configure disk encryption, Azure Disk Encryption (ADE), encryption as host, and confidential disk encryption
 metadata:
-  title: Configure disk encryption, including Azure Disk Encryption (ADE), encryption as host, and confidential disk encryption
-  description: "Configure disk encryption, including Azure Disk Encryption (ADE), encryption as host, and confidential disk encryption"
+  title: Configure disk encryption, Azure Disk Encryption (ADE), encryption as host, and confidential disk encryption
+  description: "Configure disk encryption, Azure Disk Encryption (ADE), encryption as host, and confidential disk encryption"
   ms.date: 12/18/2023
   author: wwlpublish
   ms.author: serlingdavis
