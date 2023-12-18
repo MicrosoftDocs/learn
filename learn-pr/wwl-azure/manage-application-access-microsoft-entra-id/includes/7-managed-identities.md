@@ -2,7 +2,7 @@ A common challenge for developers is the management of secrets, credentials, cer
 
 While developers can securely store the secrets in Azure Key Vault, services need a way to access Azure Key Vault. Managed identities provide an automatically managed identity in Microsoft Entra ID for applications to use when connecting to resources that support Microsoft Entra authentication. Applications can use managed identities to obtain Microsoft Entra tokens without having to manage any credentials.
 
-## Here are some of the benefits of using managed identities:
+## Here are some of the benefits of using managed identities
 
  -  You don't need to manage credentials. Credentials aren’t even accessible to you.<br>
  -  You can use managed identities to authenticate to any resource that supports Microsoft Entra authentication, including your own applications.
@@ -24,7 +24,7 @@ There are two types of managed identities:
 
 The following table shows the differences between the two types of managed identities:
 
-:::image type="content" source="../media/types-of-managed-identities-03220ba8.png":::
+:::image type="content" source="../media/types-of-managed-identities-03220ba8.png" alt-text="Diagram showing the differences between the two types of managed identities.":::
 
 
 ## How can I use managed identities for Azure resources?

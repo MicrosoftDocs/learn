@@ -2,7 +2,7 @@ By registering your web API and exposing it through scopes, assigning an owner a
 
 Register the web API
 
-Access to APIs require configuration of access scopes and roles. If you want to expose your resource application web APIs to client applications, configure access scopes and roles for the API. If you want a client application to access a web API, configure permissions to access the API in the app registration.
+Access to APIs requires configuration of access scopes and roles. If you want to expose your resource application web APIs to client applications, configure access scopes and roles for the API. If you want a client application to access a web API, configure permissions to access the API in the app registration.
 
 To provide scoped access to the resources in your web API, you first need to register the API with the Microsoft identity platform.<br>
 
@@ -22,7 +22,7 @@ In the new window, find and select the owner(s) that you want to assign to the a
 
 2. Next, specify the app role's attributes in the Create app role pane. For this walk-through, you can use the example values or specify your own.
 
-:::image type="content" source="../media/create-app-role-pane-descriptions-8a633207.png" alt-text="Table showing application role attributes.":::
+:::image type="content" source="../media/create-app-role-pane-descriptions-8a633207.png" alt-text="Diagram showing application role attributes.":::
 
 
 3. Select the checkbox to enable the app role.
@@ -52,8 +52,10 @@ You can use the default value of api://&lt;application-client-id&gt; or another 
 
 7. Next, specify the scope's attributes in the Add a scope pane. For this walk-through, you can use the example values or specify your own.
 
-:::image type="content" source="../media/add-a-scope-fields-descriptions-examples-b2027b9e.png" alt-text="Table showing the scope attributes.":::
- 8. Set the State to Enabled, and then select Add scope.
+:::image type="content" source="../media/add-a-scope-fields-descriptions-examples-b2027b9e.png" alt-text="Diagram showing the scope attributes.":::
+
+
+8. Set the State to Enabled, and then select Add scope.
 
 9. (Optional) To suppress prompting for consent by users of your app to the scopes you've defined, you can pre-authorize the client application to access your web API. Pre-authorize only those client applications you trust since your users won't have the opportunity to decline consent.<br>
 
@@ -69,8 +71,10 @@ Next, add another example scope named `Employees.Write.All` that only admins can
 
 To add the `Employees.Write.All` example scope, follow the steps in the **Add a scope** section and specify these values in the Add a scope pane:
 
-:::image type="content" source="../media/scope-requiring-admin-consent-5d6f0c7c.png" alt-text="Table showing attributes required to add a scope.":::
- Set the State to Enabled, and then select Add scope.
+:::image type="content" source="../media/scope-require-admin-consent-6b16b62e.png" alt-text="Diagram showing attributes required to add a scope.":::
+
+
+Set the State to Enabled, and then select Add scope.
 
 ## Verify the exposed scopes
 

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-application-access-microsoft-entra-id.configure-authentication-for-an-azure-ad-application-proxy
+uid: learn.wwl.manage-application-access-microsoft-entra-id.configure-authentication-azure-ad-application-proxy
 title: Recommend when to use and configure an Microsoft Entra Application Proxy, including authentication
 metadata:
   title: Recommend when to use and configure an Microsoft Entra Application Proxy, including authentication
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/8-configure-authentication-for-an-azure-ad-application-proxy.md)]
+  [!include[](includes/8-configure-authentication-azure-ad-application-proxy.md)]

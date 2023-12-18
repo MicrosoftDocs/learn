@@ -29,7 +29,7 @@ To access resources that are secured by a Microsoft Entra tenant, the entity tha
 
 There are three types of service principal:<br>
 
- -  Application - This type of service principal is the local representation, or application instance, of a global application object in a single tenant or directory. In this case, a service principal is a concrete instance created from the application object and inherits certain properties from that application object. A service principal is created in each tenant where the application is used and references the globally unique app object. The service principal object defines what the app can actually do in the specific tenant, who can access the app, and what resources the app can access.
+ -  **Application** \- This type of service principal is the local representation, or application instance, of a global application object in a single tenant or directory. In this case, a service principal is a concrete instance created from the application object and inherits certain properties from that application object. A service principal is created in each tenant where the application is used and references the globally unique app object. The service principal object defines what the app can actually do in the specific tenant, who can access the app, and what resources the app can access.
 
     > [!NOTE]
     > When an application is given permission to access resources in a tenant (upon registration or consent), a service principal object is created. When you register an application, a service principal is created automatically. You can also create service principal objects in a tenant using Azure PowerShell, Azure CLI, Microsoft Graph, and other tools.
@@ -39,7 +39,7 @@ There are three types of service principal:<br>
 
 The Microsoft Graph ServicePrincipal entity defines the schema for a service principal object's properties.
 
-:::image type="content" source="../media/enterprise-apps-blade-7ad4c369.png" alt-text="Screenshot showing all applications.":::
+:::image type="content" source="../media/enterprise-apps-blade-7ad4c369.png" alt-text="Screenshot of all applications.":::
 
 
 ## Relationship between application objects and service principals
@@ -69,4 +69,4 @@ Any changes that you make to your application object are also reflected in its s
 
 In this example scenario:
 
-:::image type="content" source="../media/application-object-example-scenario-70edd409.png" alt-text="Table showing an example scenario.":::
+:::image type="content" source="../media/application-object-example-scenario-70edd409.png" alt-text="Diagram showing an example scenario.":::

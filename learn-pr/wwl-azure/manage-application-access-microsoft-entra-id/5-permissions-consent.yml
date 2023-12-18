@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-application-access-microsoft-entra-id.permissions-and-consent
+uid: learn.wwl.manage-application-access-microsoft-entra-id.permissions-consent
 title: Manage app registration permission consent
 metadata:
   title: Manage app registration permission consent
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-permissions-and-consent.md)]
+  [!include[](includes/5-permissions-consent.md)]
