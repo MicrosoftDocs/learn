@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/15/2023
+  ms.date: 12/18/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -58,14 +58,14 @@ quiz:
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
       isCorrect: true
       explanation: "Correct. Azure DDoS Protection provides enhanced DDoS mitigation features to defend against DDoS attacks, making the application available to legitimate users."
-  - content: "What is the purpose of environment automation?"
+  - content: "What does Azure DDoS Protection do to provide tailored protection policies for each customer?"
     choices:
-    - content: "Automates only the creation of environments"
+    - content: "It applies the same mitigation policies for all customers."
       isCorrect: false
-      explanation: "Incorrect. Automation also includes the teardown of environments."
-    - content: "Enables manual creation and teardown of environments"
+      explanation: "Incorrect. This would not provide tailored protection policies for each customer."
+    - content: "It relies on customers to configure their own protection policies."
       isCorrect: false
-      explanation: "Incorrect. Manual processes are prone to errors and inconsistencies."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      explanation: "Incorrect. This would not provide tailored protection policies for each customer."
+    - content: "It automatically learns per customer per Public IP traffic patterns for Layer 3 and 4."
       isCorrect: true
-      explanation: "Correct. Environment automation helps ensure consistency, security, and stability in application hosting platforms."
+      explanation: "Correct. Azure DDoS Protection uses automatic learning of per customer per Public IP traffic patterns for Layer 3 and 4 to provide tailored protection policies for each customer."
