@@ -1,6 +1,6 @@
 Microsoft Defender for IoT provides comprehensive threat detection for IoT/OT networks, with multiple deployment options that include cloud-connected, fully on-premises, or hybrid environments.
 
-This module describes the steps required to onboard an cloud-connected sensor to Defender for IoT for operational technology (OT) monitoring.
+This module describes the steps required to onboard a cloud-connected sensor to Defender for IoT for operational technology (OT) monitoring.
 
 ## Example scenario
 
