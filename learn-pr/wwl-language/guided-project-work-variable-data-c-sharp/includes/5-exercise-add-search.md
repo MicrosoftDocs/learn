@@ -27,7 +27,7 @@ The tasks that you complete during this exercise are:
         break; 
     ```
 
-1. Add code to gather user input for a`dogCharacteristic` string. Gather the input requires a `while` loop that continues to prompt the user until they submit an input. The loop instructs the user to *"Enter one desired dog characteristic to search for"*. Entering an empty string repeats the loop. Place the following code following `case "2:` just before the `break;` statement as shown:
+1. Add code to gather user input for the `dogCharacteristic` string. Gather the input requires a `while` loop that continues to prompt the user until they submit an input. The loop instructs the user to *"Enter one desired dog characteristic to search for"*. Entering an empty string repeats the loop. Place the following code following `case "2:` just before the `break;` statement as shown:
 
     ```csharp
     case "2":
@@ -61,9 +61,11 @@ The tasks that you complete during this exercise are:
 
 1. Test the search term input functionality of the app by entering `2` to select Menu Option "2" searching.
 
-1. Press **"Enter"** without entering data at the *"Enter one desired dog characteristic to search for"* prompt. The program should return to the menu without error.
+1. Press **"Enter"** without entering data at the *"Enter one desired dog characteristic to search for"* prompt. The program should return to the "Enter one desired dog characteristics to search for" prompt.
 
-1. Repeat selecting Menu Option "2" and test search term entry *"golden"*. The program should return to the menu without error.
+1. The program should return to the prompt until characters are entered.
+
+1. At the prompt test search term entry *"golden"*. The program should return to the menu without error.
 
 1. At the menu, type "Exit" to exit the program.
 
