@@ -31,7 +31,7 @@ When you use Event Grid to monitor or trigger alerts on device disconnects, make
 ## Azure Monitor: Route connection events to logs
 IoT hub continuously emits resource logs for several categories of operations. To collect this log data, you need to create a diagnostic setting to route it to a destination where it can be analyzed or archived. One such destination is Azure Monitor Logs via a Log Analytics workspace, where you can analyze the data using Kusto queries.
 
-The IoT Hub resource logs **connections** category emits operations and errors having to do with device connections.
+The IoT Hub resource logs **Connections** category emits operations and errors having to do with device connections.
 
 ```json
 {
@@ -72,16 +72,16 @@ After you've created a diagnostic setting to route IoT Hub resource logs to Azur
 
 1. Navigate to your IoT hub in Azure portal.
 
-1. Under **Monitoring** on the left pane of your IoT hub, Select **Logs**.
+2. Under **Monitoring** on the left pane of your IoT hub, select **Logs**.
 
-1. To isolate connectivity error logs for IoT Hub, enter the following query in the query editor and then select **Run**:
+3. To isolate connectivity error logs for IoT Hub, enter the following query in the query editor and then select **Run**.
 
-```Kusto
-AzureDiagnostics
-| where ( ResourceType == "IOTHUBS" and Category == "Connections" and Level == "Error")
-```
+   ```Kusto
+   AzureDiagnostics
+   | where (ResourceType == "IOTHUBS" and Category == "Connections" and Level == "Error")
+   ```
 
-1. If there are results, look for `OperationName`, `ResultType` (error code), and `ResultDescription` (error message) to get more detail.
+4. If there are results, look for `OperationName`, `ResultType` (error code), and `ResultDescription` (error message) to get more detail.
 
 Use the [problem resolution guide](/azure/iot-hub/troubleshoot-error-codes) for help with the following most common errors:
 
@@ -99,7 +99,7 @@ Use the [problem resolution guide](/azure/iot-hub/troubleshoot-error-codes) for 
 
 ## Azure Monitor: Use logs to monitor connectivity for a specific device
 
-There may be situations when you want to use Azure Monitor to see connectivity errors and information for a specific device. To isolate connectivity events for a device, you can follow the same steps as in the preceding section, but enter the following query. To use the following query, replace *test-device* with the name of your device:
+There may be situations when you want to use Azure Monitor to see connectivity errors and information for a specific device. To isolate connectivity events for a device, you can follow the same steps as in the preceding section, but enter the following query. To use the following query, replace **test-device** with the name of your device:
 
 ```Kusto
 AzureDiagnostics
@@ -117,7 +117,7 @@ The query returns both error and informational events for your target device. Th
 
 Azure IoT device SDKs disconnect from IoT Hub and then reconnect when they renew SAS tokens over the MQTT (and MQTT over WebSockets) protocol. In logs, this shows up as informational device disconnect and connect events sometimes accompanied by error events.
 
-By default, the token lifespan is 60 minutes for all SDKs; however, it can be changed by developers in some of the SDKs. The following table summarizes the token lifespan, token renewal, and token renewal behavior for each of the SDKs:
+By default, the token lifespan is 60 minutes for all SDKs; however, it can be changed by developers in some of the SDKs. The following table summarizes the token lifespan, token renewal, and token renewal behavior for each of the SDKs.
 
 :::row:::
     :::column:::
@@ -196,7 +196,7 @@ The following screenshots show the token renewal behavior in Azure Monitor Logs 
     :::image type="content" source="../media/net-mqtt.png" alt-text="Image shows .NET device SDK with a 1200 second (20 minutes) token lifespan.":::
 * Java SDK with a 300 second (5 minutes) token lifespan and default 85% of lifespan renewal. Disconnects happen every 15 minutes:
    :::image type="content" source="../media/java-mqtt.png" alt-text="Image shows Java SDK with a 300 second (5 minutes) token lifespan and default 85% of lifespan renewal.":::
-* Node SDK with a 300 second (5 minutes) token lifespan and token renewal set to happen at 3 minutes. Disconnects happen on token renewal. Also, there are no errors, only informational connect/disconnect events are emitted:
+* Node SDK with a 300 second (5 minutes) token lifespan and token renewal set to happen at 3 minutes. Disconnects happen on token renewal. Also, there are no errors, only informational connect and disconnect events are emitted:
    :::image type="content" source="../media/node-mqtt.png" alt-text="Image shows Node SDK with a 300 second (5 minutes) token lifespan and token renewal set to happen at 3 minutes.":::
 
 The following query was used to collect the results. The query extracts the SDK name and version from the property bag.
@@ -210,13 +210,13 @@ AzureDiagnostics
 | distinct TimeGenerated, OperationName, Level, ResultType, ResultDescription, DeviceId, Protocol, SDKVersion
 ```
 
-As an IoT solutions developer or operator, you need to be aware of this behavior in order to interpret connect/disconnect events and related errors in logs. If you want to change the token lifespan or renewal behavior for devices, check to see whether the device implements a device twin setting or a device method that makes this possible.
+As an IoT solutions developer or operator, you need to be aware of this behavior in order to interpret connect and disconnect events and related errors in logs. If you want to change the token lifespan or renewal behavior for devices, check to see whether the device implements a device twin setting or a device method that makes this possible.
 
 If you're monitoring device connections with Event Hubs, make sure you build in a way of filtering out the periodic disconnects due to SAS token renewal. For example, don't trigger actions based on disconnects as long as the disconnect event is followed by a connect event within a certain time span.
 
 > [!NOTE]
 > IoT Hub only supports one active MQTT connection per device. Any new MQTT connection on behalf of the same device ID causes IoT Hub to drop the existing connection.
-> 400027 ConnectionForcefullyClosedOnNewConnection will be logged into IoT Hub Logs.
+> **400027 ConnectionForcefullyClosedOnNewConnection** will be logged into IoT Hub Logs.
 
 If the previous steps didn't help, try:
 

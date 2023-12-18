@@ -23,7 +23,7 @@ quiz:
      - content: "Expired SAS token or X.509 certificate, network interruption, service interruption, service reconfiguration."
        isCorrect: true
        explanation: "Correct. These are the most common reasons for device disconnections from IoT Hub."
-     - content: "Service interruption, network interruption, failed device firmware update, arguments passed to the callback of the `send` operation."
+     - content: "Service interruption, network interruption, failed device firmware update, invalid arguments passed to the callback of the `send` operation."
        isCorrect: false
        explanation: "Incorrect. The most common reasons for IoT Hub device disconnect are expired SAS token or X.509 certificate, network interruption, service interruption, service reconfiguration."
    - content: "Which of the following can provide monitoring notifications for specific devices?"
