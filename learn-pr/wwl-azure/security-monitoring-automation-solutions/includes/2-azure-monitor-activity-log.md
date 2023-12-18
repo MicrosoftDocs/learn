@@ -7,7 +7,7 @@ For more functionality, create a diagnostic setting to send the activity log to 
  -  Send to Azure Storage for cheaper, long-term archiving.
 
  -  Entries in the Activity Log are system generated and can't be changed or deleted.
- -  Entries in the Activity Log are representing control plane changes like a virtual machine restart, any non related entries should be written into Azure Resource Logs
+ -  Entries in the Activity Log are representing control plane changes like a virtual machine restart, any non related entries should be written into Azure Resource Logs.
 
 ## Retention period
 
@@ -31,13 +31,13 @@ Select **Download as CSV** to download the events in the current view.
 
 For some events, you can view the change history, which shows what changes happened during that event time. Select an event from the activity log you want to look at more deeply. Select the Change history tab to view any changes on the resource up to 30 minutes before and after the time of the operation.
 
-:::image type="content" source="../media/change-history-event-2c67d49e.png" alt-text="Screenshot showing how to create or udpdate a virtual machine.":::
+:::image type="content" source="../media/change-history-event-2c67d49e.png" alt-text="Screenshot showing how to create or update a virtual machine.":::
 
 
 If any changes are associated with the event, you'll see a list of changes that you can select. Selecting a change opens the **Change history** page. This page displays the changes to the resource. In the following example, you can see that the VM changed sizes.
 
-:::image type="content" source="../media/change-history-event-details-0d00d111.png" alt-text="Screenshot showing changed properties of a virtual machine.":::
-<br>
+:::image type="content" source="../media/change-history-event-details-9a319237.png" alt-text="Screenshot showing changed properties of a virtual machine.":::
+
 
 ### Other methods to retrieve activity log events
 
@@ -57,7 +57,7 @@ Send the activity log to a Log Analytics workspace to enable the Azure Monitor L
  -  Use log alerts with Activity entries for more complex alerting logic.
  -  Store activity log entries for longer than the activity log retention period.
  -  Incur no data ingestion or retention charges for activity log data stored in a Log Analytics workspace.
- -  The default retention period in Log Analytics is 90 days
+ -  The default retention period in Log Analytics is 90 days.
 
 Select Export Activity Logs to send the activity log to a Log Analytics workspace.
 
@@ -82,4 +82,4 @@ To retrieve all records in the administrative category, use the following query:
 
 ## Send to Azure Storage
 
-Send the activity log to an Azure Storage account if you want to retain your log data longer than 90 days for audit, static analysis, or backup. If you're required to retain your events for 90 days or less, you don't need to set up archival to a storage account. Activity log events are retained in the Azure platform for 90 days.
+Send the activity log to an Azure Storage account if you want to retain your log data longer than 90 days for audit, static analysis, or back up. If you're required to retain your events for 90 days or less, you don't need to set up archival to a storage account. Activity log events are retained in the Azure platform for 90 days.

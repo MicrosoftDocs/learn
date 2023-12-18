@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/14/2023
+  ms.date: 12/18/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -47,7 +47,7 @@ quiz:
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
       isCorrect: true
       explanation: "Correct. Playbooks enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-  - content: "What does the Incident settings section in Microsoft Sentinel allow you to do?"
+  - content: "What action does the Incident settings section in Microsoft Sentinel enable?"
     choices:
     - content: "Automatically group all alerts into a single incident"
       isCorrect: false

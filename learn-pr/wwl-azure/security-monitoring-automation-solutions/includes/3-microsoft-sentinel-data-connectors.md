@@ -73,4 +73,4 @@ Microsoft Sentinel solutions provide packages of security content, including dat
 
 Both Microsoft and other organizations author Microsoft Sentinel data connectors. Each data connector has one of these support types:
 
-:::image type="content" source="../media/data-connector-support-types-98d60d26.png" alt-text="Table showing Microsoft Sentinel data connector support types.":::
+:::image type="content" source="../media/data-connector-support-types-98d60d26.png" alt-text="Screenshot of Table showing Microsoft Sentinel data connector support types.":::
