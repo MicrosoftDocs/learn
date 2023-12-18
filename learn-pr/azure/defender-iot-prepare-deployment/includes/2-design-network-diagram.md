@@ -37,9 +37,9 @@ Use the following questions to help you prepare your network map diagram that li
 - If you want to connect a network sensor to the switch, is there physical rack space available in the switch's cabinet?
 - What's the cost/benefit of monitoring each switch?
 
-## Purdue Model
+## Purdue networking model
 
-Each device in your network falls within a layer of the Purdue Reference model. The Purdue Reference Model for Industrial Control System (ICS)/OT network segmentation, divides a network into different OT and IT and layers to better isolate IT and OT systems and enhance OT system protection. Levels one through three are OT levels and four and five are IT levels. The levels are as follows:
+Each device in your network falls within a layer of the Purdue reference model. The Purdue Reference Model for Industrial Control System (ICS)/OT network segmentation divides a network into different OT and IT and layers to better isolate IT and OT systems and enhance OT system protection. Levels one through three are OT levels and four and five are IT levels. The levels are as follows:
 
 | Name | Description |
 |---------|---------|
@@ -49,9 +49,9 @@ Each device in your network falls within a layer of the Purdue Reference model. 
 | **Levels 3 and 3.5:** </br>Site-level and industrial perimeter network| Manages the site-wide industrial automation and control functions like production scheduling, site level operations management, file server, and Active Directory. These systems communicate with the production zone and share data with Level 4 and 5 systems and applications. Levels through level 3 are considered critical to site operations. |
 | **Levels 4 and 5:** </br>Business and enterprise networks|The site or enterprise network where the centralized IT systems and functions exist. The IT organization manages them directly at these levels.|
 <!--Level 3.5, should that be added?-->
-Generally sensors are placed between levels two and three or between three and 3.5, if it's an industrial demilitarized zone (DMZ). <!-- is this 0 to 3 or 2, 3 and 3,3.5 as vashaka-->
+Generally, sensors are placed between levels two and three or between three and 3.5, if it's an industrial demilitarized zone (DMZ). <!-- is this 0 to 3 or 2, 3 and 3,3.5 as vashaka-->
 
-### Network Diagram
+### Sample network diagram
 
 The following diagram depicts how devices might be divided into the different OT and IT levels:
 
