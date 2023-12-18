@@ -29,7 +29,7 @@ Azure Pipelines uses YAML files to define the steps to build and deploy your app
 
 Let's review the YAML file:
 
-:::code language="yaml" source="../code/azure-pipelines.txt" highlight="5-9,15-17,26,47":::
+:::code language="yaml" source="../code/azure-pipelines.yml" highlight="5-9,15-17,26,47":::
 
 The **trigger** and **resources** sections define when the pipeline should run. In this case, the pipeline will run when a change is committed to the main branch of your repository.
 
