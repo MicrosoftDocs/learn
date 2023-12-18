@@ -29,4 +29,4 @@ Virtual network peering and VPN gateways both support the following connection t
 
 ## Comparison of virtual network peering and VPN Gateway
 
-:::image type="content" source="../media/virtual-network-peering-and-vpn-gateway-49da19b5.png" alt-text="Screenshot of a table showing a comparison of virtual network peering and VPN Gateway.":::
+:::image type="content" source="../media/virtual-network-peering-and-gateway-553213d3.png" alt-text="Screenshot of a table showing a comparison of virtual network peering and VPN Gateway.":::
