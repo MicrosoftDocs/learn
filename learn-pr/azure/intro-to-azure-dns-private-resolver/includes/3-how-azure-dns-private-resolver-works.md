@@ -1,4 +1,4 @@
-If you run workloads in Azure platform as a service with private endpoint, or infrastructure as a service workloads with Azure-provided DNS, these workloads use Azure private DNS zones for name resolution within Azure. In hybrid environments, when an on-premises network is required to connect these workloads through FQDN/domain name, it requires that you're able to resolve names hosted in Azure private DNS zones.
+If you run workloads in Azure platform as a service with private endpoint, or infrastructure as a service workloads with Azure-provided DNS, these workloads use Azure Private DNS zones for name resolution within Azure. In hybrid environments, when an on-premises network is required to connect these workloads through FQDN/domain name, it requires that you're able to resolve names hosted in Azure Private DNS zones.
 
 An Azure DNS Private Resolver deployed in a virtual network handles name resolution queries from on-premises to Azure and vice versa.
 
@@ -8,15 +8,15 @@ You should be aware of its capabilities, and the list of components that are par
 
 Create DNS forwarding rules to conditionally forward DNS queries, similar to how on-premises DNS forwarding works. This is a managed service that enables hybrid name resolution, used for conditional forwarding from Azure to on-premises and other target DNS servers.
 
-### Resolve Azure Private DNS Zone records with inbound endpoints
+### Resolve Azure Private DNS zone records with inbound endpoints
 
-Name resolution queries for Azure workloads from on-premises networks can be conditionally forwarded to Azure DNS Private Resolver inbound endpoints. Inbound endpoints let you perform name resolution of workloads registered on Azure Private DNS Zones from on-premises.
+Name resolution queries for Azure workloads from on-premises networks can be conditionally forwarded to Azure DNS Private Resolver inbound endpoints. Inbound endpoints let you perform name resolution of workloads registered in Azure Private DNS zones from on-premises.
 
 ### Inbound endpoints
 
 Azure DNS Private Resolver inbound endpoints can resolve name resolution requests from Azure and on-premises networks.
 
-The Azure DNS Private Resolver inbound endpoint has a private IP address that's part of a subnet in the virtual network where the endpoint is created. The IP address of the DNS private resolver inbound endpoint can be configured as a DNS server on the on-premises network so that VMs from on-premises can resolve Azure private zones. When a name resolution request (from on-premises) is received by the inbound endpoint, Azure DNS private resolver can resolve the name from Azure Private DNS zones linked to the VNet where resolver is deployed or from the public internet DNS namespace.
+The Azure DNS Private Resolver inbound endpoint has a private IP address that's part of a subnet in the virtual network where the endpoint is created. The IP address of the DNS private resolver inbound endpoint can be configured as a DNS server on the on-premises network so that VMs from on-premises can resolve Azure private zones. When a name resolution request (from on-premises) is received by the inbound endpoint, Azure DNS Private Resolver can resolve the name from Azure Private DNS zones linked to the VNet where resolver is deployed or from the public internet DNS namespace.
 
 ### Outbound endpoints
 
