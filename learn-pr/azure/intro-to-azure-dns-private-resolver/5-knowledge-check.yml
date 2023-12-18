@@ -43,6 +43,6 @@ quiz:
     - content: "It receives the name resolution request from Azure & on-premises network and resolve names."
       isCorrect: false
       explanation: "Incorrect: This is what the Inbound Endpoint does."
-    - content: The DNS resolver's outbound endpoint conditionally forwards the request to on-premises or other target DNS servers."
+    - content: "The DNS resolver's outbound endpoint conditionally forwards the request to on-premises or other target DNS servers."
       isCorrect: true
       explanation: "Correct: This is an accurate explanation of what the DNS resolver's outbound endpoint does."
