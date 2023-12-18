@@ -52,4 +52,4 @@ To troubleshoot this issue, analyze the following areas:
 
 ## Routes resource logs
 
-The [Operation names and error codes](/azure/iot-hub/troubleshoot-message-routing#operation-names) table lists informational and error messages logged in the [routes resource logs](https://review.learn.microsoft.com/en-us/azure/iot-hub/monitor-iot-hub-reference?branch=main#routes).
+The [Operation names and error codes](/azure/iot-hub/troubleshoot-message-routing#operation-names) table lists informational and error messages logged in the [routes resource logs](/azure/iot-hub/monitor-iot-hub-reference).
