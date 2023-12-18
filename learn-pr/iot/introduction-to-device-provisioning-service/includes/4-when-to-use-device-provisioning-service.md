@@ -1,8 +1,4 @@
 
-
-
-## When to use Device Provisioning Service
-
 There are many provisioning scenarios in which the Device Provisioning Service is an excellent choice for getting devices connected and configured to IoT Hub, such as:
 
  -  Zero-touch provisioning to a single IoT solution without hardcoding IoT Hub connection information at the factory (initial setup)

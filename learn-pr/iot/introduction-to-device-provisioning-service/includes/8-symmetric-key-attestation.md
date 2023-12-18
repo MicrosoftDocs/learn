@@ -1,18 +1,16 @@
-Symmetric key attestation is a simple approach to authenticating a device with a Device Provisioning Service instance. This attestation method represents a "Hello world" experience for developers who are new to device provisioning, or do not have strict security requirements. Device attestation using a TPM or an X.509 certificate is more secure, and should be used for more stringent security requirements.
+Symmetric key attestation is a simple approach to authenticating a device with a Device Provisioning Service instance. This attestation method represents a "Hello world" experience for developers who are new to device provisioning, or don't have strict security requirements. Device attestation using a TPM or an X.509 certificate is more secure, and should be used for more stringent security requirements.
 
 Symmetric key enrollments also provide a great way for legacy devices, with limited security functionality, to bootstrap to the cloud via Azure IoT.
 
 ## Symmetric key creation
 
-By default, the Device Provisioning Service creates new symmetric keys with a default length of 32 bytes when new enrollments are saved with the **Auto-generate keys** option enabled.
-
-You can also provide your own symmetric keys for enrollments by disabling this option. When specifying your own symmetric keys, your keys must have a key length between 16 bytes and 64 bytes. Also, symmetric keys must be provided in valid Base64 format.
+By default, the Device Provisioning Service creates new symmetric keys with a default length of 32 bytes when new enrollments are saved with the **Auto-generate keys** option enabled. You can also provide your own symmetric keys for enrollments by disabling this option.
 
 ## Detailed attestation process
 
-Symmetric key attestation with the Device Provisioning Service is performed using the same Security tokens supported by IoT hubs to identify devices. These security tokens are Shared Access Signature (SAS) tokens.
+Symmetric key attestation with the Device Provisioning Service is performed using the same security tokens supported by IoT hubs to identify devices. These security tokens are Shared Access Signature (SAS) tokens.
 
-SAS tokens have a hashed signature that is created using the symmetric key. The signature is recreated by the Device Provisioning Service to verify whether a security token presented during attestation is authentic or not.
+SAS tokens have a hashed signature that is created using the symmetric key. The Device Provisioning Service recreates the signature to verify whether a security token presented during attestation is authentic or not.
 
 SAS tokens have the following form:
 
