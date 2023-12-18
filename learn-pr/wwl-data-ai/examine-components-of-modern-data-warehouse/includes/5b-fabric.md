@@ -1,4 +1,4 @@
-![Microsoft Fabric logo.](../media/fabric-icon.png)
+![Screenshot of Microsoft Fabric logo.](../media/fabric-icon.png)
 
 Scalable analytics with PaaS services can be complex, fragmented, and expensive. With [Microsoft Fabric](https://www.microsoft.com/microsoft-fabric), you don't have to spend all of your time combining various services and implementing interfaces through which business users can access them. Instead, you can use a single product that is easy to understand, set up, create, and manage. Fabric is a unified software-as-a-service (SaaS) offering, with all your data stored in a single open format in OneLake.
 
