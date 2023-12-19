@@ -6,7 +6,7 @@ Azure Firewall is offered in three SKUs: Standard, Premium, and Basic.
 
 Azure Firewall Standard provides L3-L7 filtering and threat intelligence feeds directly from Microsoft Cyber Security. Threat intelligence-based filtering can alert and deny traffic from/to known malicious IP addresses and domains that are updated in real time to protect against new and emerging attacks.
 
-:::image type="content" source="../media/firewall-standard-58eb6d54.png" alt-text="Diagram showing an example of the Azure Firewall Standard.":::
+:::image type="content" source="../media/firewall-standard-feec28fb.png" alt-text="Diagram showing an example of the Azure Firewall Standard.":::
 
 
 ## Azure Firewall Premium
@@ -17,7 +17,7 @@ Azure Firewall Premium provides advanced capabilities include signature based ID
 
 Azure Firewall Basic is intended for small and medium size (SMB) customers to secure their Azure cloud. environments. It provides the essential protection SMB customers need at an affordable price point.
 
-:::image type="content" source="../media/firewall-basic-diagram-6ac715e5.png" alt-text="Diagram showing an Azure Firewall Basic.":::
+:::image type="content" source="../media/firewall-basic-77850263.png" alt-text="iagram showing an example of the Azure Firewall Basic.":::
 
 
 Azure Firewall Basic is like Firewall Standard, but has the following main limitations:
