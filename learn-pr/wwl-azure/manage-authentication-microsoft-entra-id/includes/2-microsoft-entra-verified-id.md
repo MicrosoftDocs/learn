@@ -2,7 +2,7 @@ In today's world, our digital and physical lives are becoming increasingly inter
 
 This increased connectivity introduces a greater risk of identity theft and data breaches. These breaches can have a devastating impact on our personal and professional lives. But there is hope. Microsoft is working with a diverse community to create a Decentralized Identity solution that puts individuals in control of their own digital identities, providing a secure and private way to manage identity data without relying on centralized authorities or intermediaries
 
-## Why we need Decentralized Identity
+## Why we need decentralized identity
 
 Today we use our digital identity at work, at home, and across every app, service, and device we use. It’s made up of everything we say, do, and experience in our lives—purchasing tickets for an event, checking into a hotel, or even ordering lunch. Currently, our identity and all our digital interactions are owned and controlled by other parties, in some cases, even without our knowledge.
 
@@ -18,7 +18,7 @@ Decentralized Identifiers (DIDs) are different. DIDs are user-generated, self-ow
 
 Microsoft’s verifiable credential solution uses decentralized credentials (DIDs) to cryptographically sign as proof that a relying party (verifier) is attesting to information proving they are the owners of a verifiable credential. A basic understanding of DIDs is recommended for anyone creating a verifiable credential solution based on the Microsoft offering.
 
-## What are Verifiable credentials?<br>
+## What are verifiable credentials?<br>
 
 We use IDs in our daily lives. We have drivers licenses that we use as evidence of our ability to operate a car. Universities issue diplomas that prove we attained a level of education. We use passports to prove who we are to authorities as we arrive to other countries/regions. The data model describes how we could handle these types of scenarios when working over the internet but in a secure manner that respects users' privacy.
 
@@ -106,7 +106,7 @@ As Woodgrove continues to operate its business, it must continually manage ident
 
 These use cases demonstrate how centralized identities and decentralized identities can be combined to provide a more robust and efficient identity and trust strategy and lifecycle.
 
-## User journey: Onboarding to Woodgrove
+## User journey: Onboarding to woodgrove
 
 :::image type="content" source="../media/centralized-decentralized-identity-user-journey-812ed1b9.png" alt-text="Diagram showing an example of a user journey in a centralized and decentralized identity architecture.":::
 
@@ -137,7 +137,7 @@ By combining centralized and decentralized identity architectures for onboarding
 
 ## User journey: Accessing resources inside the trust boundary
 
-:::image type="content" source="../media/accessing-resources-inside-trust-boundary-9b4bc001.png" alt-text="Diagram showing an example of a user journey accessing resources inside the trust boundary.":::
+:::image type="content" source="../media/access-resources-inside-trust-boundary-03aba5a6.png" alt-text="Diagram showing an example of a user journey accessing resources inside the trust boundary.":::
 
 
 As an employee, Alice is operating inside of the trust boundary of Woodgrove. Woodgrove acts as the identity provider (IDP) and maintains complete control of the identity and the configuration of the apps Alice uses to interact within the Woodgrove trust boundary. To use resources in the Microsoft Entra ID trust boundary, Alice provides potentially multiple forms of proof of identification to sign in Woodgrove’s trust boundary and access the resources inside of Woodgrove’s technology environment. Multiple proofs are a typical scenario that is well served using a centralized identity architecture.

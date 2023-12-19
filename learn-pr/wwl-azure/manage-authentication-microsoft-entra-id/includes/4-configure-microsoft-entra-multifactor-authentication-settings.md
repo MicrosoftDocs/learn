@@ -98,7 +98,8 @@ If Fraud Alert is enabled with Automatic Blocking and Report Suspicious Activity
 
 You can configure Azure AD to send email notifications when users report fraud alerts. These notifications are typically sent to identity administrators because the user's account credentials are likely compromised. The following example shows what a fraud alert notification email looks like:
 
-## :::image type="content" source="../media/multi-factor-authentication-fraud-alert-email-4146caf9.png" alt-text="Screenshot showing a multifactor authentication fraud alert example."::: 
+:::image type="content" source="../media/multi-factor-authentication-fraud-alert-email-4146caf9.png" alt-text="Screenshot showing a multifactor authentication fraud alert example.":::
+
 
 ## OATH tokens
 
@@ -110,7 +111,8 @@ Programmable OATH TOTP hardware tokens that can be reseeded can also be set up w
 
 OATH hardware tokens are supported as part of a public preview.<br>
 
-## :::image type="content" source="../media/multi-factor-authentication-oath-tokens-1662aab9.png" alt-text="Screenshot showing the multifactor authentication Oath tokens page."::: 
+:::image type="content" source="../media/multi-factor-authentication-oath-tokens-1662aab9.png" alt-text="Screenshot showing the multifactor authentication Oath tokens page.":::
+
 
 After you acquire tokens, you need to upload them in a comma-separated values (CSV) file format. Include the **User Principal Name (UPN)**, **serial number**, **secret key**, **time interval**, **manufacturer**, and **model**.
 
