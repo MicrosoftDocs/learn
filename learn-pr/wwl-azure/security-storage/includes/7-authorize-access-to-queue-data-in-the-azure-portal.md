@@ -30,7 +30,7 @@ Custom roles can support different combinations of the same permissions provided
 
 To view queue data in the portal, navigate to the Overview for your storage account, and click on the links for Queues. Alternatively you can navigate to the Queue service section in the menu.
 
-:::image type="content" source="../media/queue-access-portal-57b24388.png" alt-text="Screenshot showing how to navigate to the queues page in the azure portal.":::
+:::image type="content" source="../media/queue-access-portal-57b24388.png" alt-text="Screenshot showing how to navigate to the queues page in the Azure portal.":::
 
 
 ## Determine the current authentication method

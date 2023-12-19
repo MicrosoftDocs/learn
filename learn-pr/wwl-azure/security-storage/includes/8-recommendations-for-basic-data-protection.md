@@ -4,7 +4,9 @@ Azure Storage provides data protection for Blob Storage and Azure Data Lake Stor
 
 The following table summarizes the Azure Storage data protection options according to the resources they protect.
 
-## :::image type="content" source="../media/data-protection-by-resource-type-670292cc.png" alt-text="Table showing Azure Storage data protection options according to the resources they protect."::: Recover deleted or overwritten data<br>
+## :::image type="content" source="../media/data-protection-by-resource-type-670292cc.png" alt-text="Table showing Azure Storage data protection options according to the resources they protect."::: 
+
+## Recover deleted or overwritten data
 
 If you should need to recover data that has been overwritten or deleted, how you proceed depends on which data protection options you've enabled and which resource was affected. The following table describes the actions that you can take to recover data.
 
