@@ -17,7 +17,7 @@ Azure Firewall Premium provides advanced capabilities include signature based ID
 
 Azure Firewall Basic is intended for small and medium size (SMB) customers to secure their Azure cloud. environments. It provides the essential protection SMB customers need at an affordable price point.
 
-:::image type="content" source="../media/firewall-basic-77850263.png" alt-text="iagram showing an example of the Azure Firewall Basic.":::
+:::image type="content" source="../media/firewall-basic-77850263.png" alt-text="Diagram showing an example of the Azure Firewall Basic.":::
 
 
 Azure Firewall Basic is like Firewall Standard, but has the following main limitations:
