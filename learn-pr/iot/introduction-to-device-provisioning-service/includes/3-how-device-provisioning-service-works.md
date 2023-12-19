@@ -25,8 +25,8 @@ Device registration is initiated upon boot up by registration software. The soft
 In this diagram, all the manual preconfiguration steps are complete. The DPS instance is configured with enrollment lists, and the device has its registration software installed. Now, the device is waiting to be turned on the first time, and the following steps begin automatically upon initial boot up:
 
 1. The device powers on, connects to the DPS endpoint, and presents its authentication credentials.
-1. The DPS instance checks the identity of the device against its enrollment list. Once the device identity is verified, DPS assigns the device to an IoT hub and registers it in the hub.
-1. The DPS instance receives the device ID and registration information from the assigned hub and passes that information back to the device. DPS also provides the device's initial desired twin state if that was configured in the enrollment lists.
+1. The DPS instance checks the identity of the device against its enrollment list. Once the device identity is verified, DPS assigns the device to an IoT hub and registers it in the hub. DPS also passes the device's initial desired twin state to the IoT hub if that was configured in the enrollment lists.
+1. The DPS instance receives the device ID and registration information from the assigned hub and passes that information back to the device.
 1. The device uses its registration information to connect directly to its assigned IoT hub and authenticate.
 1. Once authenticated, the device and IoT hub begin communicating directly. The DPS instance has no further role as an intermediary unless the device needs to reprovision.
 

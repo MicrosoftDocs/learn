@@ -3,28 +3,28 @@ Trusted Platform Module (TPM) is a standard for securely storing keys used to au
 
 TPM attestation is based on a nonce challenge, which uses the endorsement and storage root keys to present a signed Shared Access Signature (SAS) token.
 
-The *endorsement key* (EK) is an asymmetric key contained inside the TPM, which was internally generated or injected at manufacturing time and is unique for every TPM. The endorsement key cannot be changed or removed. The private portion of the endorsement key is never released outside of the TPM, while the public portion of the endorsement key is used to recognize a genuine TPM.
+The *endorsement key* (EK) is an asymmetric key contained inside the TPM, which was internally generated or injected at manufacturing time and is unique for every TPM. The endorsement key can't be changed or removed. The private portion of the endorsement key is never released outside of the TPM, while the public portion of the endorsement key is used to recognize a genuine TPM.
 
-The *storage root key* (SRK) is stored in the TPM and is used to protect TPM keys created by applications so that these keys cannot be used without the TPM. The storage root key is generated when you take ownership of the TPM; when you clear the TPM so a new user can take ownership, a new storage root key is generated.
+The *storage root key* (SRK) is stored in the TPM and is used to protect TPM keys created by applications so that these keys can't be used without the TPM. The storage root key is generated when you take ownership of the TPM; when you clear the TPM so a new user can take ownership, a new storage root key is generated.
 
 It's like moving into a new house: taking ownership is changing the locks on the doors and removing the furniture left by the previous owners (SRK), but you can't change the address of the house (EK).
 
-Once a device has been set up and ready to use, it will have both an EK and an SRK available for use.
+Once a device has been set up and ready to use, it has both an EK and an SRK available for use.
 
 :::image type="content" source="../media/m03-l01-device-provisioning-service-trusted-platform-module-ownership-2e2f42a8.png" alt-text="Diagram that shows an overview of Trusted Platform Module attestation using endorsement keys.":::
 
 One note on taking ownership of the TPM: taking ownership of a TPM depends on many things, including TPM manufacturer, the set of TPM tools being used, and the device OS. Follow the instructions relevant to your system to take ownership.
 
-The Device Provisioning Service uses the public part of the EK (*EK\_pub*) to identify and enroll devices. The device vendor can read the EK\_pub during manufacture or final testing and upload the EK\_pub to the provisioning service so that the device will be recognized when it connects to provision. The Device Provisioning Service does not check the SRK or owner, so "clearing" the TPM erases customer data, but the EK (and other vendor data) is preserved and the device will still be recognized by the Device Provisioning Service when it connects to provision.
+The Device Provisioning Service uses the public part of the EK (*EK\_pub*) to identify and enroll devices. The device vendor can read the EK\_pub during manufacture or final testing and upload the EK\_pub to the provisioning service so that the device will be recognized when it connects to provision. The Device Provisioning Service doesn't check the SRK or owner, so "clearing" the TPM erases customer data, but the EK (and other vendor data) is preserved and the device is still recognized by the Device Provisioning Service.
 
 > [!NOTE]
 > This information is only relevant for devices using TPM 2.0 with HMAC key support and their endorsement keys and assumes you are using a discrete, firmware, or integrated TPM. Software emulated TPMs are well suited for prototyping or testing, but they do not provide the same level of security as discrete, firmware, or integrated TPMs do. We do not recommend using software TPMs in production.
 
 ## Detailed attestation process
 
-1. When a device with a TPM first connects to the provisioning service, the service checks the provided EK\_pub against the EK\_pub stored in the enrollment list. 
-   * If the EK\_pubs do not match, the device is not allowed to provision.
-   * If the EK\_pubs do match, the service then requires the device to prove ownership of the private portion of the EK via a nonce challenge, which is a secure challenge used to prove identity. 
+1. When a device with a TPM first connects to the provisioning service, the service checks the provided EK\_pub against the EK\_pub stored in the enrollment list.
+   * If the EK\_pubs don't match, the device isn't allowed to provision.
+   * If the EK\_pubs do match, the service then requires the device to prove ownership of the private portion of the EK via a nonce challenge, which is a secure challenge used to prove identity.
 1. The Device Provisioning Service generates a nonce and then encrypts it with the SRK and then the EK\_pub, both of which are provided by the device during the initial registration call. The TPM always keeps the private portion of the EK secure. This prevents counterfeiting and ensures SAS tokens are securely provisioned to authorized devices.
 
 Let's walk through the attestation process in detail.
@@ -35,13 +35,11 @@ First, the device connects to the Device Provisioning Service and requests to pr
 
 :::image type="content" source="../media/step-one-request-provisioning-78fb84b8.png" alt-text="Diagram that shows TPM attestation step 1, the device makes a provisioning request.":::
 
-
 ### Nonce challenge
 
 The device takes the nonce and uses the private portions of the EK and SRK to decrypt the nonce into the TPM; the order of nonce encryption delegates trust from the EK, which is immutable, to the SRK, which can change if a new owner takes ownership of the TPM.
 
 :::image type="content" source="../media/step-two-nonce-challenge-a87bd4ee.png" alt-text="Diagram that shows TPM attestation step 2, device completes the nonce challenge.":::
-
 
 ### Validate the nonce and receive credentials
 
