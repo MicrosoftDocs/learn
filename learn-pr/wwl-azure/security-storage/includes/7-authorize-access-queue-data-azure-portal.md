@@ -63,7 +63,7 @@ To specify that the portal will use Microsoft Entra authorization by default for
 
 2. On the Advanced tab, in the Security section, check the box next to Default to Microsoft Entra authorization in the Azure portal.
 
-:::image type="content" source="../media/default-auth-account-create-portal%20%281%29-5d2cee15.png" alt-text="Screenshot showing the default to Microsoft Entra authorization in the Azure portal.":::
+:::image type="content" source="../media/default-auth-account-create-portal-1-d4b40e10.png" alt-text="Screenshot showing the default to Microsoft Entra authorization in the Azure portal.":::
 3. Select the Review + create button to run validation and create the account.
 
 To update this setting for an existing storage account, follow these steps:<br>
