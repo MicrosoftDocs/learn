@@ -56,4 +56,4 @@ Keeping track of dependent infrastructure, services, APIs, and functions develop
 *Applying the approach and outcomes*
 
 - The workload team engages the team supporting the reference dataset and learns that the reliability target for the dataset is lower than that of flow that will use it.
-- The team adds design tasks to add a local cache of the dataset and a background job to update the cache nightly. The staleness tolerance allowed by the design will not be breached by this solution.
+- The team adds a design tasks to the backlog to add a local cache of the dataset and a background job to update the cache nightly. The staleness tolerance allowed by the design will not be breached by this solution.
