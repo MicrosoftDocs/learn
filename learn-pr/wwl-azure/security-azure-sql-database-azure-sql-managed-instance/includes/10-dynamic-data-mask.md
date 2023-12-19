@@ -14,6 +14,6 @@ You set up a dynamic data masking policy in the Azure portal by selecting the dy
  -  **Masking rules** \- A set of rules that define the designated fields to be masked and the masking function that is used. The designated fields can be defined using a database schema name, table name, and column name.
  -  **Masking functions** \- A set of methods that control the exposure of data for different scenarios.
 
-### :::image type="content" source="../media/dynamic-data-masking-3007ceef.png" alt-text="Screenshot showing an example of SQL database dynamic data masking."::: Recommended fields to mask<br>
+### Recommended fields to mask<br>
 
 The DDM recommendations engine, flags certain fields from your database as potentially sensitive fields, which may be good candidates for masking. In the Dynamic Data Masking blade in the portal, you can review the recommended columns for your database. All you need to do is click **Add Mask** for one or more columns and then **Save** to apply a mask for these fields.

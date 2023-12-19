@@ -11,7 +11,7 @@ Microsoft Purview's solutions in the governance portal provide a unified data go
  -  An Active Microsoft Purview account is already created in Azure portal
  -  The user has permissions to access the **Microsoft Purview governance portal**.
 
-:::image type="content" source="../media/microsoft-purview-governance-portal-lms-7ddb2679.png" alt-text="Screenshot showing the Microsoft Purview governance portal.":::
+:::image type="content" source="../media/microsoft-purview-governance-portal-21a8c403.png" alt-text="Screenshot showing the Microsoft Purview governance portal.":::
 
 
 Microsoft Purview's solutions in the governance portal provide a unified data governance service that helps you manage your on-premises, multicloud, and software-as-a-service (SaaS) data.<br>
