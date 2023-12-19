@@ -1,4 +1,4 @@
-The Device Provisioning Service (DPS) automates many of the manual steps that are traditionally involved in provisioning devices. This reduces the time to deploy IoT devices and lowers the risk of manual error.
+Azure IoT Hub Device Provisioning Service (DPS) automates many of the manual steps that are traditionally involved in provisioning devices. This reduces the time to deploy IoT devices and lowers the risk of manual error.
 
 ## Phases of provisioning
 
@@ -18,9 +18,9 @@ The roles listed in this section are functional roles that can be performed by t
 
 This section describes what goes on behind the scenes when a device is provisioned with DPS.
 
-Device registration is initiated upon boot up by registration software. The software establishes a connection to the provisioning service for authentication of the device, and subsequent registration in the IoT Hub. Upon successful registration, the device is provided with its IoT Hub unique device ID and connection information, allowing it to pull its initial configuration and begin the telemetry process. 
+Device registration is initiated upon boot up by registration software. The software establishes a connection to the provisioning service for authentication of the device, and subsequent registration in the IoT Hub. Upon successful registration, the device is provided with its IoT Hub unique device ID and connection information, allowing it to pull its initial configuration and begin the telemetry process.
 
-:::image type="content" source="../media/dps-provisioning-flow.png" alt-text="Diagram that shows what goes on behind the scenes to get a device provisioned.":::
+:::image type="content" source="../media/device-provisioning-flow.png" alt-text="Diagram that shows what goes on behind the scenes to get a device provisioned.":::
 
 In this diagram, all the manual preconfiguration steps are complete. The DPS instance is configured with enrollment lists, and the device has its registration software installed. Now, the device is waiting to be turned on the first time, and the following steps begin automatically upon initial boot up:
 
@@ -29,5 +29,3 @@ In this diagram, all the manual preconfiguration steps are complete. The DPS ins
 1. The DPS instance receives the device ID and registration information from the assigned hub and passes that information back to the device.
 1. The device uses its registration information to connect directly to its assigned IoT hub and authenticate.
 1. Once authenticated, the device and IoT hub begin communicating directly. The DPS instance has no further role as an intermediary unless the device needs to reprovision.
-
-
