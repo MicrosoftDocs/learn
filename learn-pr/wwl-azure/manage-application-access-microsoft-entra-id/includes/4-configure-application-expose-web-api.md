@@ -80,7 +80,7 @@ Set the State to Enabled, and then select Add scope.
 
 If you have successfully added both example scopes described in the previous sections, they'll appear in the Expose an API pane of your web API's app registration, similar to the following image:
 
-:::image type="content" source="../media/exposed-scopes-08def126.png" alt-text="Screenshot showing how to verifiy exposed scopes.":::
+:::image type="content" source="../media/exposed-scopes-08def126.png" alt-text="Screenshot showing how to verify exposed scopes.":::
 
 
 As shown in the image, a scope's full string is the concatenation of your web API's **Application ID URI** and the scope's Scope name.
