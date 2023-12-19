@@ -28,12 +28,12 @@ Service endpoints provide the following benefits:
 
     Endpoints always take service traffic directly from your virtual network to the service on the Microsoft Azure backbone network. Keeping traffic on the Azure backbone network allows you to continue auditing and monitoring outbound Internet traffic from your virtual networks, through forced-tunneling, without impacting service traffic. For more information about user-defined routes and forced-tunneling, see Azure virtual network traffic routing.<br>
 
- -  **Simple to set up with less management overhead**: You no longer need reserved, public IP addresses in your virtual networks to secure Azure resources through IP firewall. There are no Network Address Translation (NAT) or gateway devices required to set up the service endpoints. You can configure service endpoints through a single selection on a subnet. There's no extra overhead to maintaining the endpoints.<br>
+ -  **Simple to set up with less management overhead**: You no longer need reserved, public IP addresses in your virtual networks to secure Azure resources through IP firewall. There is no Network Address Translation (NAT) or gateway devices required to set up the service endpoints. You can configure service endpoints through a single selection on a subnet. There's no extra overhead to maintaining the endpoints.<br>
 
 ## Limitations
 
  -  The feature is available only to virtual networks deployed through the Azure Resource Manager deployment model.
- -  Endpoints are enabled on subnets configured in Azure virtual networks. Endpoints can't be used for traffic from your on-premises services to Azure services. For more information, see Secure Azure service access from on-premises
+ -  Endpoints are enabled on subnets configured in Azure virtual networks. Endpoints can't be used for traffic from your on-premises services to Azure services. For more information, see Secure Azure service access from on-premises.
  -  For Azure SQL, a service endpoint applies only to Azure service traffic within a virtual network's region.
  -  For Azure Data Lake Storage (ADLS) Gen 1, the VNet Integration capability is only available for virtual networks within the same region. Also note that virtual network integration for ADLS Gen1 uses the virtual network service endpoint security between your virtual network and Azure Active Directory (Azure AD) to generate extra security claims in the access token. These claims are then used to authenticate your virtual network to your Data Lake Storage Gen1 account and allow access. The Microsoft.AzureActiveDirectory tag listed under services supporting service endpoints is used only for supporting service endpoints to ADLS Gen 1. Azure AD doesn't support service endpoints natively. For more information about Azure Data Lake Store Gen 1 VNet integration, see Network security in Azure Data Lake Storage Gen1.
  -  A virtual network can be associated with up to 200 different subscriptions and regions by each supported service with active VNet rules configured.
@@ -52,7 +52,7 @@ By default, Azure service resources secured to virtual networks aren't reachable
 
 ExpressRoute: If you're using ExpressRoute for public peering or Microsoft peering from your premises, you'll need to identify the NAT IP addresses that you're using. For public peering, each ExpressRoute circuit uses two NAT IP addresses, by default, applied to Azure service traffic when the traffic enters the Microsoft Azure network backbone. For Microsoft peering, the NAT IP addresses are either customer provided or provided by the service provider. To allow access to your service resources, you must allow these public IP addresses in the resource IP firewall setting. To find your public peering ExpressRoute circuit IP addresses, open a support ticket with ExpressRoute via the Azure portal.
 
-:::image type="content" source="../media/vnet-service-endpoints-overview-fee3e8fb.png" alt-text="Screenshot showing how to secure Azure service access from on-premises.":::
+:::image type="content" source="../media/virtual-network-service-endpoints-overview-908e5762.png" alt-text="Screenshot showing how to secure Azure service access from on-premises.":::
 
 
 ## Configuration

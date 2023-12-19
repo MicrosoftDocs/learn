@@ -3,7 +3,7 @@ uid: learn.wwl.security-private-access-azure-resources
 metadata:
   title: Plan and implement security for private access to Azure resources
   description: "This module focuses on equipping administrators with the knowledge and skills required to plan and implement robust security measures for private access to Azure resources, safeguarding sensitive data and enhancing network integrity."
-  ms.date: 12/15/2023
+  ms.date: 12/19/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
@@ -34,9 +34,9 @@ units:
 - learn.wwl.security-private-access-azure-resources.virtual-network-service-endpoints
 - learn.wwl.security-private-access-azure-resources.private-endpoints
 - learn.wwl.security-private-access-azure-resources.azure-private-link-services
-- learn.wwl.security-private-access-azure-resources.integrate-your-app-with-an-azure-virtual-network
-- learn.wwl.security-private-access-azure-resources.network-security-configurations-for-an-app-service-environment
-- learn.wwl.security-private-access-azure-resources.network-security-configurations-for-an-azure-sql-managed-instance
+- learn.wwl.security-private-access-azure-resources.integrate-your-app-with-azure-virtual-network
+- learn.wwl.security-private-access-azure-resources.network-security-configurations-app-service-environment
+- learn.wwl.security-private-access-azure-resources.network-security-configurations-azure-sql-managed-instance
 - learn.wwl.security-private-access-azure-resources.knowledge-check
 - learn.wwl.security-private-access-azure-resources.summary
 badge:

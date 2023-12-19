@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/15/2023
+  ms.date: 12/19/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -18,10 +18,10 @@ quiz:
     choices:
     - content: "Enables automatic scaling of App Service instances"
       isCorrect: false
-      explanation: "Incorrect. This is not the purpose of virtual network integration."
+      explanation: "Incorrect. This isn't the purpose of virtual network integration."
     - content: "Provides additional storage for App Service apps"
       isCorrect: false
-      explanation: "Incorrect. This is not the purpose of virtual network integration."
+      explanation: "Incorrect. This isn't the purpose of virtual network integration."
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
       isCorrect: true
       explanation: "Correct. Virtual network integration enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
@@ -29,21 +29,10 @@ quiz:
     choices:
     - content: "Enables the creation of new virtual networks for each App Service plan instance"
       isCorrect: false
-      explanation: "Incorrect. Virtual network integration does not create new virtual networks for each App Service plan instance."
+      explanation: "Incorrect. Virtual network integration doesn't create new virtual networks for each App Service plan instance."
     - content: "Enables the sharing of IP addresses between App Service plan instances"
       isCorrect: false
-      explanation: "Incorrect. Virtual network integration does not enable the sharing of IP addresses between App Service plan instances."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
-      isCorrect: true
-      explanation: "Correct. Virtual network integration enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-  - content: "What does virtual network integration enable for App Service plans?"
-    choices:
-    - content: "Enables the creation of new virtual networks for each App Service plan instance"
-      isCorrect: false
-      explanation: "Incorrect. Virtual network integration does not create new virtual networks for each App Service plan instance."
-    - content: "Enables the sharing of IP addresses between App Service plan instances"
-      isCorrect: false
-      explanation: "Incorrect. Virtual network integration does not enable the sharing of IP addresses between App Service plan instances."
+      explanation: "Incorrect. Virtual network integration doesn't enable the sharing of IP addresses between App Service plan instances."
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
       isCorrect: true
       explanation: "Correct. Virtual network integration enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."

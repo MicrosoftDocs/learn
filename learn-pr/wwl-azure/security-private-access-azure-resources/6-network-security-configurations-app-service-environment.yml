@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.security-private-access-azure-resources.network-security-configurations-for-an-app-service-environment
+uid: learn.wwl.security-private-access-azure-resources.network-security-configurations-app-service-environment
 title: Plan and implement network security configurations for an App Service Environment (ASE)
 metadata:
   title: Plan and implement network security configurations for an App Service Environment (ASE)
   description: "Plan and implement network security configurations for an App Service Environment (ASE)"
-  ms.date: 12/15/2023
+  ms.date: 12/19/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-network-security-configurations-for-an-app-service-environment.md)]
+  [!include[](includes/6-network-security-configurations-app-service-environment.md)]

@@ -1,11 +1,12 @@
 Azure Private Link service is the reference to your own service that is powered by Azure Private Link. Your service that is running behind Azure Standard Load Balancer can be enabled for Private Link access so that consumers to your service can access it privately from their own VNets. Your customers can create a private endpoint inside their virtual network and map it to this service. This article explains concepts related to the service provider side.
 
-:::image type="content" source="../media/private-link-service-workflow-expanded-db4cb092.png" alt-text="Diagram showing":::
+:::image type="content" source="../media/private-link-service-workflow-expanded-db4cb092.png" alt-text="Diagram showing how a service that is running behind Azure Standard Load Balancer can be enabled for Private Link access.":::
 
 
 ## Workflow
 
-## :::image type="content" source="../media/private-link-service-workflow-1-c7853354.png" alt-text="Diagram showing an example of a workflow."::: 
+:::image type="content" source="../media/private-link-service-workflow-1-c7853354.png" alt-text="Diagram showing an example of a workflow.":::
+
 
 ## Create your Private Link Service
 
@@ -29,7 +30,7 @@ If the Private Link service is no longer in use, you can delete it. However, bef
 
 A Private Link service specifies the following properties:
 
-:::image type="content" source="../media/private-link-properties-86072e79.png" alt-text="Table showing Private Link properties.":::
+:::image type="content" source="../media/private-link-properties-86072e79.png" alt-text="Screenshot showing Private Link properties.":::
 
 
 ## Details
@@ -81,7 +82,7 @@ This information is encoded using a custom Type-Length-Value (TLV) vector as fol
 
 Custom TLV details:
 
-:::image type="content" source="../media/type-length-values-4f9ea217.png" alt-text="Table showing C=custom TLV details.":::
+:::image type="content" source="../media/type-length-values-4f9ea217.png" alt-text="Screenshot showing custom type length value vector details.":::
 
 
 > [!NOTE]

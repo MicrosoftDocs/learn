@@ -46,11 +46,13 @@ The following information lists the known limitations to the use of private endp
 
 ## Static IP address
 
-## :::image type="content" source="../media/static-ip-address-806a42a0.png"::: 
+:::image type="content" source="../media/static-ip-address-806a42a0.png" alt-text="Screenshot showing static IP address limitations and descriptions.":::
+
 
 ## Network security group
 
-## :::image type="content" source="../media/network-security-group-limitation-description-e6c6e86f.png" alt-text="Table showing network security group limitations and descriptions."::: 
+:::image type="content" source="../media/network-security-group-limitation-description-e6c6e86f.png" alt-text="Screenshot showing network security group limitations and descriptions.":::
+
 
 ## NSG more considerations
 
@@ -60,8 +62,9 @@ The following information lists the known limitations to the use of private endp
 
 ## UDR
 
-## :::image type="content" source="../media/udr-limitation-description-f71ea60b.png" alt-text="Table showing User Defiined Routes limitations and descriptions."::: 
+:::image type="content" source="../media/user-defined-route-limitation-description-92912194.png" alt-text="Screenshot showing User Defined Routes limitations and descriptions.":::
+
 
 ## Application security group
 
-## :::image type="content" source="../media/application-security-group-limitation-description-ea383e9b.png" alt-text="Table showing application security group limitations and descriptions."::: 
+:::image type="content" source="../media/application-security-group-limitation-description-ea383e9b.png" alt-text="Screenshot showing application security group limitations and descriptions.":::

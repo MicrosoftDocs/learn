@@ -4,7 +4,7 @@ This module focuses on equipping administrators with the knowledge and skills re
 
 Imagine you are an Azure security specialist responsible for securing access to Azure resources in a corporate environment. Your organization relies on Azure services for critical applications and data, and you need to ensure that access is restricted to authorized users while maintaining high levels of security.
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this module, participants will be able to:
 
