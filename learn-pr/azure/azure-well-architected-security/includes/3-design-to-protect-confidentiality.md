@@ -1,11 +1,11 @@
 | :::image type="icon" source="media/goal.svg"::: Prevent exposure to privacy, regulatory, application, and proprietary information through access restrictions and obfuscation techniques. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
-Workload data can be classified by user, usage, configuration, compliance, intellectual property, and more. That data can't be shared or accessed beyond the established trust boundaries. Efforts to protect confidentiality should focus on access controls, opacity, and keeping an audit trail of activities that pertain to data and the system.
+Workload data can be classified by user, usage, configuration, compliance, intellectual property, and more. Workload data must not be shared or accessed beyond the established trust boundaries. Efforts to protect confidentiality should focus on access controls, opacity, and keeping an audit trail of activities that pertain to data and the system.
 
 **Example scenario**
 
-Contoso Rise Up provides a multi-tenant, Software-as-a-Service offering that specializes in supporting non-profits in their fundraising and donation activities. They have been in the market for a few years now with a healthy client base. The solution is built on Azure Red Hat Openshift (ARO) and Azure Database for PostgreSQL. It offers both isolated tenants and co-located tenants as a cheaper offering. 
+Contoso Rise Up provides a multi-tenant, Software-as-a-Service offering that specializes in supporting non-profits in their fundraising and donation activities. They have been in the market for a few years now with a healthy client base. The solution is built on Azure Red Hat Openshift (ARO) and Azure Database for PostgreSQL. It offers both isolated tenants and co-located tenants as a more affordable  offering. 
 
 ## Strictly limit access
 
@@ -21,9 +21,9 @@ The workload will be protected from unauthorized access and prohibited activitie
 
 *Applying the approach and outcomes*
 
-- Contoso Rise Up now is confident that there is no standing access to customer data due to the segmentation of users into Entra ID groups and applying RBAC for those groups to the various resource groups and resources.
+- Contoso Rise Up implemented strict segmentation of users into Entra ID groups and defined RBAC for those groups to the various resource groups and resources.
 - All access to data is time limited and goes through an approval and auditing process.
-- These standards have been applied across the workload and customer support teams.
+- These standards have been applied across the workload and customer support teams. Contoso Rise Up now is confident that there is no standing access to customer data.
 
 ## Identify confidential data through classification
 

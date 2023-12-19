@@ -29,7 +29,7 @@ Isolation enables you to limit exposure of sensitive flows to only roles and ass
 
 *Applying the approach and outcomes*
 
-- Luckily, this was just an early test for the workload team on a prototype; while they are designing the new customer loyalty program system for the point-of-sale system, so no production systems were breached.
+- Luckily, the compromised environment was hosting an early test prototype of the workload; while they are designing the new customer loyalty program system for the point-of-sale system, so no production systems were breached.
 - The workload security team plans on investing time and money to design the workload to isolate systems that handle personally identifiable information (PII), such as the address and email of customers, from those components that don’t (such as the coupons for products); design access controls that are need-to-know and just-in-time (JIT) where possible; and isolate networks both within the workload to protect other components and back into Contoso to protect the organization.
 - Through segmentation, a compromise may still have an impact to aspects of the workload, but the blast radius will be contained. 
 

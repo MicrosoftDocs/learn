@@ -16,7 +16,7 @@ Adopting this approach will help ensure the system doesn't experience downtime c
 *Contoso's challenge*
 
 - The workload team and the workload's stakeholders consider the reliability of this system to be of the utmost importance because so many hotel guests depend on it for business and leisure travel. It must be up for hotels to run their business.
-- The team has invested considerable resources into testing functional and non-functional requirements to ensure reliability stays high, including a safe deployment practice to safely release application updates.
+- The team has invested considerable resources into testing functional and non-functional requirements to ensure reliability stays high, including using safe deployment practices to reliably release application updates.
 - While they have been focused so heavily on reliability, the team has been less attentive to security.  Recently, an update was released that contained a code flaw that was exploited by an attacker to bring down the whole system for many hotels. The attack overwhelmed the application servers in one region for over four hours one evening, causing many upset customers and hotel guests.
 - The attacker used the Contoso application servers to proxy requests to a regional storage account to receive pre-generated folio information. An inordinately large malicious folio was generated which caused the application servers to exhaust resources on the application server as it was being loaded into memory, and client retries spread the issue across all application servers.
 
