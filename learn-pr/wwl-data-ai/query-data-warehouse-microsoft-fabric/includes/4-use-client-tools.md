@@ -1,12 +1,12 @@
 Using SQL Server Management Studio (SSMS) to connect to a data warehouse in Fabric can facilitate your workflow, especially if you’re already familiar with the tool.
 
-If you familiar with SQL Server, this option may work better bla bla bla
-
 ## Connect to your data warehouse
 
-SSMS provides a familiar interface for those who regularly work with SQL Server.
+SQL Server Management Studio provides a familiar interface for those who regularly work with SQL Server.
 
 :::image type="content" border="false" source="../media/4-connection-string.gif" alt-text="Animated GIF showing how to generate the connection string for a data warehouse in Microsoft Fabric.":::
+
+Follow these steps to connect to data warehouse in Fabric from SSMS:
 
 1. Navigate to your Microsoft Fabric workspace. 
 1. On your warehouse asset, select more options, then select **Copy SQL connection string**.
@@ -25,7 +25,7 @@ In Microsoft Fabric, two types of authenticated users are supported through the 
 - Microsoft Entra ID (formerly Azure Active Directory) user principals, or user identities
 - Microsoft Entra ID (formerly Azure Active Directory) service principals
 
->[Important]
+> [NOTE] 
 > SQL authentication is not supported.
 
 ## Other tools
