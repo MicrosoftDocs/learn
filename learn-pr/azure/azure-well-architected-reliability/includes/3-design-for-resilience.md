@@ -53,5 +53,5 @@ Adding intermediaries prevents direct dependency between components and improves
 
 *Applying the approach and outcomes*
 
-- The team decides to take upgrade to Service Bus premium tier. By doing so, they can take advantage of that tiers Availability Zones support functionality. With this functionality, multiple copies of the data are stored across three physically separated facilities (availability zones), and the service has enough capacity reserves to instantly cope with the complete, catastrophic loss of a datacenter.
+- The team decides to upgrade to Service Bus premium tier. By doing so, they can take advantage of that tier's Availability Zones support functionality. With this functionality, multiple copies of the data are stored across three physically separated facilities (availability zones), and the service has enough capacity reserves to instantly cope with the complete, catastrophic loss of a datacenter.
 - Additionally, the team configures Azure Service Bus Geo-Disaster recovery to continuously replicate data to a secondary region that will be used in the unlikely case of a complete failure of the primary region.
