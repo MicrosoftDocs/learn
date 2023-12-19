@@ -16,4 +16,4 @@ Also, the visual query editor is user-friendly, even for those with little to no
 
 Similarly to the SQL query editor, the **Save as table** and **Save as view** options are also available. These features can be useful for reusing your queries or for creating more complex queries based on the results of previous queries.
 
-To learn more about SQL query editor, see [Query using the visual query editor](/fabric/data-warehouse/visual-query-?azure-portal=true).
+To learn more about SQL query editor, see [Query using the visual query editor](/fabric/data-warehouse/visual-query-editor?azure-portal=true).
