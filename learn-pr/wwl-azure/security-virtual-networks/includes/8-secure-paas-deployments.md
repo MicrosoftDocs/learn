@@ -43,7 +43,7 @@ The Microsoft Security Development Lifecycle specifies that teams should engage 
 
 The following table lists the STRIDE threats and gives some example mitigations that use Azure features. These mitigations won't work in every situation.
 
-:::image type="content" source="../media/stride-threats-table-53f4e3b9.png" alt-text="Table showing examples of the STRIDE threat and boundaries.":::
+:::image type="content" source="../media/stride-threats-table-53f4e3b9.png" alt-text="Screenshot of table showing examples of the STRIDE threat and boundaries.":::
 
 
 ## Develop on Azure App Service
