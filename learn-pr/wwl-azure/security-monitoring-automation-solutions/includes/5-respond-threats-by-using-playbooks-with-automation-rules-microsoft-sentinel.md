@@ -41,8 +41,9 @@ Follow these steps to create a new playbook in Microsoft Sentinel
 
 3. The drop-down menu that appears under **Create** gives you four choices for creating playbooks:
 
- -  If you're creating a **Standard** playbook (the new kind - see Logic app types), select **Blank playbook** and then follow the steps in the **Logic Apps Standard** tab below.
- -  If you're creating a **Consumption** playbook (the original, classic kind), then depending on which trigger you want to use, select either **Playbook with incident trigger, Playbook with alert trigger,** or **Playbook with entity trigger**. Then, continue following the steps in the **Logic Apps Consumption** tab below.
+If you're creating a **Standard** playbook (the new kind - see Logic app types), select **Blank playbook** and then follow the steps in the **Logic Apps Standard** tab below.
+
+If you're creating a **Consumption** playbook (the original, classic kind), then depending on which trigger you want to use, select either **Playbook with incident trigger, Playbook with alert trigger,** or **Playbook with entity trigger**. Then, continue following the steps in the **Logic Apps Consumption** tab below.
 
 1. From the **Microsoft Sentinel** navigation menu, select **Automation**.
 
@@ -50,19 +51,24 @@ Follow these steps to create a new playbook in Microsoft Sentinel
 
 3. The drop-down menu that appears under **Create** gives you four choices for creating playbooks:
 
- -  If you're creating a **Standard** playbook (the new kind - see Logic app types), select **Blank playbook** and then follow the steps in the Logic Apps Standard tab below.
- -  If you're creating a **Consumption** playbook (the original, classic kind), then depending on which trigger you want to use, select either **Playbook with incident trigger**, **Playbook with alert trigger**, or **Playbook with entity trigger**. Then, continue following the steps in the **Logic Apps Consumption** tab below.
+If you're creating a **Standard** playbook (the new kind - see Logic app types), select **Blank playbook** and then follow the steps in the Logic Apps Standard tab below.
+
+If you're creating a **Consumption** playbook (the original, classic kind), then depending on which trigger you want to use, select either **Playbook with incident trigger**, **Playbook with alert trigger**, or **Playbook with entity trigger**. Then, continue following the steps in the **Logic Apps Consumption** tab below.
 
 :::image type="content" source="../media/create-playbook-basics-3ecbebc8.png" alt-text="Screenshot showing the create playbook page.":::
 
 
 1. In the **Basics** tab:
 
- -  Select the **Subscription, Resource group,** and Region of your choosing from their respective drop-down lists. The chosen region is where your Logic App information will be stored.
- -  Enter a name for your playbook under **Playbook name**.<br>
- -  If you want to monitor this playbook's activity for diagnostic purposes, mark the **Enable diagnostics logs in Log Analytics** check box, and choose your **Log Analytics workspace** from the drop-down list.
- -  If your playbooks need access to protected resources that are inside or connected to an Azure virtual network, you may need to use an integration service environment (ISE). If so, mark the **Associate with integration service environment** check box, and select the desired ISE from the drop-down list.
- -  Select **Next :Connections**.
+Select the **Subscription, Resource group,** and Region of your choosing from their respective drop-down lists. The chosen region is where your Logic App information will be stored.
+
+Enter a name for your playbook under **Playbook name**.<br>
+
+If you want to monitor this playbook's activity for diagnostic purposes, mark the **Enable diagnostics logs in Log Analytics** check box, and choose your **Log Analytics workspace** from the drop-down list.
+
+If your playbooks need access to protected resources that are inside or connected to an Azure virtual network, you may need to use an integration service environment (ISE). If so, mark the **Associate with integration service environment** check box, and select the desired ISE from the drop-down list.
+
+Select **Next :Connections**.
 
 2. In the **Connections** tab:
 
@@ -104,10 +110,10 @@ To use a playbook to respond automatically to an **entire incident** or to an **
 
 2. The **Create new automation rule** panel opens. Enter a name for your rule.
 
-:::image type="content" source="../media/add-new-rule-7c6f082d.png" alt-text="Screenshot showing the create new automation rule panel.":::
+:::image type="content" source="../media/create-new-automation-panel-8469edd9.png":::
 
 
-3. **Trigger**: Select the appropriate trigger according to the circumstance for which you're creating the automation rule—**When incident is created**, **When incident is updated**, or **When alert is created**.
+3. **Trigger**: Select the appropriate trigger according to the circumstance for which you're creating the automation rule—**When incident is created**, **When incident is updated**, or **When alert is created**.<br>
 
 4. **Conditions**:
 
@@ -134,7 +140,7 @@ In the **Manage permissions** panel that opens up, mark the check boxes of the r
      -  In the **Settings** blade, select the **Settings** tab, then the **Playbook permissions** expander.
      -  Click the Configure permissions button to open the **Manage permissions** panel mentioned above, and continue as described there.
  -  If, in an **MSSP** scenario, you want to **run a playbook in a customer tenant** from an automation rule created while signed into the service provider tenant, you must grant Microsoft Sentinel permission to run the playbook in ***both tenants***. In the **customer** tenant, follow the instructions for the multitenant deployment in the preceding bullet point. In the **service provider** tenant, you must add the **Azure Security Insights** app in your Azure Lighthouse onboarding template:
-     -  From the Azure Portal go to **Microsoft Entra ID**.
+     -  From the Azure portal go to **Microsoft Entra ID**.
      -  Click on **Enterprise Applications**.
      -  Select **Application Type** and filter on **Microsoft Applications**.
      -  In the search box type **Azure Security Insights**.
