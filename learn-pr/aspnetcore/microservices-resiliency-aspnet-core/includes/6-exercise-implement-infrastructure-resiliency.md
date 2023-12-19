@@ -350,10 +350,10 @@ spec:
     ttl: 120s
 ```
 
-The preceding manifest is configured such that:
+The preceding manifest is configured so:
 
 * Any idempotent HTTP GET route matching the pattern `/api/Product` can be retried.
-* Retries can add no more than an extra 20 percent to the request load, plus an another 10 "free" retries per second.
+* Retries can add no more than an extra 20 percent to the request load, plus another 10 "free" retries per second.
 
 Run the following command to use the service profile in the Kubernetes cluster:
 

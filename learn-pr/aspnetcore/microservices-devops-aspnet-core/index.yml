@@ -41,13 +41,13 @@ products:
 subjects:
 - development-tools
 units:
-  - learn.microservices-devops-aspnet-core.1-introduction
-  - learn.microservices-devops-aspnet-core.2-exercise-manually-deploy-cloud-native-application
-  - learn.microservices-devops-aspnet-core.3-exercise-create-github-action-build-container-images
-  - learn.microservices-devops-aspnet-core.4-exercise-create-github-action-deploy-app
-  - learn.microservices-devops-aspnet-core.5-explore-different-approaches
-  - learn.microservices-devops-aspnet-core.6-exercise-create-azure-devops-pipeline
-  - learn.microservices-devops-aspnet-core.7-summary
+  - learn.microservices-devops-aspnet-core.introduction
+  - learn.microservices-devops-aspnet-core.exercise-manually-deploy-cloud-native-application
+  - learn.microservices-devops-aspnet-core.exercise-create-github-action-build-container-images
+  - learn.microservices-devops-aspnet-core.exercise-create-github-action-deploy-app
+  - learn.microservices-devops-aspnet-core.explore-different-approaches
+  - learn.microservices-devops-aspnet-core.exercise-create-azure-devops-pipeline
+  - learn.microservices-devops-aspnet-core.summary
 iconUrl: /training/achievements/aspnetcore/microservices-devops-aspnet-core.svg
 badge:
   uid: learn.microservices-devops-aspnet-core.badge

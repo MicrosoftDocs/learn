@@ -31197,48 +31197,28 @@
     "redirect_document_id": false
   },
   {
-    "source_path": "learn-pr/aspnetcore/microservices-devops-aspnet-core/includes/2-setup-environment.md",
-    "redirect_url": "/training/modules/aspnetcore/microservices-devops-aspnet-core",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/aspnetcore/microservices-devops-aspnet-core/includes/3-permissions-secrets.md",
-    "redirect_url": "/training/modules/aspnetcore/microservices-devops-aspnet-core",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/aspnetcore/microservices-devops-aspnet-core/includes/4-build-github-action.md",
-    "redirect_url": "/training/modules/aspnetcore/microservices-devops-aspnet-core",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/aspnetcore/microservices-devops-aspnet-core/includes/5-deploy-github-action.md",
-    "redirect_url": "/training/modules/aspnetcore/microservices-devops-aspnet-core",
-    "redirect_document_id": false
-  },
-  {
     "source_path": "learn-pr/aspnetcore/microservices-devops-aspnet-core/2-setup-environment.yml",
-    "redirect_url": "/training/modules/aspnetcore/microservices-devops-aspnet-core",
+    "redirect_url": "/training/modules/microservices-devops-aspnet-core/",
     "redirect_document_id": false
   },
   {
     "source_path": "learn-pr/aspnetcore/microservices-devops-aspnet-core/3-permissions-secrets.yml",
-    "redirect_url": "/training/modules/aspnetcore/microservices-devops-aspnet-core",
+    "redirect_url": "/training/modules/microservices-devops-aspnet-core/",
     "redirect_document_id": false
   },
   {
     "source_path": "learn-pr/aspnetcore/microservices-devops-aspnet-core/4-build-github-action.yml",
-    "redirect_url": "/training/modules/aspnetcore/microservices-devops-aspnet-core",
+    "redirect_url": "/training/modules/microservices-devops-aspnet-core/",
     "redirect_document_id": false
   },
   {
     "source_path": "learn-pr/aspnetcore/microservices-devops-aspnet-core/5-deploy-github-action.yml",
-    "redirect_url": "/training/modules/aspnetcore/microservices-devops-aspnet-core",
+    "redirect_url": "/training/modules/microservices-devops-aspnet-core/",
     "redirect_document_id": false
   },
   {
     "source_path": "learn-pr/aspnetcore/microservices-devops-aspnet-core/6-knowledge-check.yml",
-    "redirect_url": "/training/modules/aspnetcore/microservices-devops-aspnet-core",
+    "redirect_url": "/training/modules/microservices-devops-aspnet-core/",
     "redirect_document_id": false
   }
   ]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.microservices-devops-aspnet-core.4-exercise-create-github-action-deploy-app
+uid: learn.microservices-devops-aspnet-core.exercise-create-github-action-deploy-app
 metadata:
   title: Exercise - Create a GitHub action to deploy to AKS
   description: Implement and test a GitHub action to build and deploy a Docker image to Azure Container Registry.
