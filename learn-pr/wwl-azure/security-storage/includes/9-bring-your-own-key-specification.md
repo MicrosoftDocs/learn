@@ -8,7 +8,7 @@ The following are the requirements:
 ## Terminology
 
 :::image type="content" source="../media/key-specification-terminology-69996014.png" alt-text="Table showing Azure key Vault HSM terminology.":::
- **Key Exchange Key:** An HSM-backed key that customer generates in the key vault where the BYOK key will be imported. This KEK must have following properties:
+ **Key Exchange Key**: An HSM-backed key that customer generates in the key vault where the BYOK key will be imported. This KEK must have following properties:
 
  -  It’s a Rivest-Shamir-Adleman (RSA) encryption algorithm RSA-HSM key (4096-bit or 3072-bit or 2048-bit).
  -  It will have fixed key\_ops (ONLY ‘import’), that will allow it to be used ONLY during BYOK.
