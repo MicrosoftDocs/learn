@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg"::: Shift left in operations to anticipate failure conditions. |
+| :::image type="icon" source="../media/goal.svg"::: Shift left in operations to anticipate failure conditions. |
 | :----------------------------------------------------------------------------------------------------------------------------------------- |
 
 Test failures early and often in the development lifecycle, and determine the impact of performance on reliability. For the sake of root cause analysis and postmortems, you need to have shared visibility, across teams, of dependency status and ongoing failures. Insights, diagnostics, and alerts from observable systems are fundamental to effective incident management and continuous improvement.

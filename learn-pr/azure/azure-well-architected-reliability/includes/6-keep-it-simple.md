@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg"::: Avoid overengineering the architecture design, application code, and operations. |
+| :::image type="icon" source="../media/goal.svg"::: Avoid overengineering the architecture design, application code, and operations. |
 | :----------------------------------------------------------------------------------------------------------------------------------------- |
 
 It's often what you remove rather than what you add that leads to the most reliable solutions. Simplicity reduces the surface area for control, minimizing inefficiencies and potential misconfigurations or unexpected interactions. On the other hand, oversimplification can introduce single points of failure. Maintain a balanced approach.

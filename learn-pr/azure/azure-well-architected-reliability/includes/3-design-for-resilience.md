@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg"::: The workload must continue to operate with full or reduced functionality. |
+| :::image type="icon" source="../media/goal.svg"::: The workload must continue to operate with full or reduced functionality. |
 | :----------------------------------------------------------------------------------------------------------------------------------------- |
 
 You should expect that component malfunctions, platform outages, performance degradations, and other faults will occur. Build resiliency in the system so that it's fault-tolerant and can degrade gracefully.

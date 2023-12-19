@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg"::: Gather business requirements with a focus on the intended utility of the workload. |
+| :::image type="icon" source="../media/goal.svg"::: Gather business requirements with a focus on the intended utility of the workload. |
 | :----------------------------------------------------------------------------------------------------------------------------------------- |
 
 Business requirements are defined through collaborative work between business stakeholders and workload architects. Compromises must be made on each side to ensure that the agreed upon requirements are realistic and achievable while properly addressing the reliability targets that the workload must meet. Requirements must cover user experience, data, workflows, and characteristics that are unique to the workload. The outcome of the requirements process must clearly state the expectations. The goals must be achievable and negotiated with the team, given a specified investment. They must be documented to drive technological choices, implementations, and operations.
