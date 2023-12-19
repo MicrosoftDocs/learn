@@ -16,7 +16,7 @@ A customer has an on-premises client application at their business location. The
 
 A customer has a client application, hosted in Microsoft Azure (for example, in a worker role or a web role), which operates on sensitive data stored in a database hosted in Azure (SQL Database or SQL Server running in a virtual machine on Microsoft Azure). Although Always Encrypted does not provide complete isolation of data from cloud administrators, as both the data and keys are exposed to cloud administrators of the platform hosting the client tier, the customer still benefits from reducing the security attack surface area (the data is always encrypted in the database).
 
-:::image type="content" source="../media/az500-always-encrypted-02700e13.png" alt-text="Image showing an example of data flow for the Always Encrypted feature.":::
+:::image type="content" source="../media/az500-always-encrypted-02700e13.png" alt-text="Diagram showing an example of data flow for the Always Encrypted feature.":::
 
 
 ### Always Encrypted Features

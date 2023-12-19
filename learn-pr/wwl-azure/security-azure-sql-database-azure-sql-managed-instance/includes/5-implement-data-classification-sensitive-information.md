@@ -1,7 +1,7 @@
 ## Manage data sources in Microsoft Purview
 
 1.  Register
-2.  Scan and Injest
+2.  Scan and Ingest
 3.  Classify
 4.  Label (**Note**: Labeling in the Microsoft Purview Data Map is currently in **PREVIEW**.)
 
@@ -36,7 +36,7 @@ Scanning and Ingestion features in Microsoft Purview connect your Microsoft Purv
      -  Data source scans - scanned metadata is added to the Microsoft Purview Data Map.
      -  Lineage connections - transformation resources add metadata about their sources, outputs, and activities to the Microsoft Purview Data Map.
 
-:::image type="content" source="../media/purview-sources-map-view-page-54cddca9.png" alt-text="Screenhot showing an example of the Microsoft Purview Data Map.":::
+:::image type="content" source="../media/purview-sources-map-view-page-54cddca9.png" alt-text="Screenshot showing an example of the Microsoft Purview Data Map.":::
 
 
 ### Scanning
@@ -74,7 +74,7 @@ Classification is the process of organizing data into *logical categories* that 
  -  Organize and understand the variety of data classes that are important in your organization and where they're stored.
  -  Understand the risks associated with your most important data assets and then take appropriate measures to mitigate them.
 
-:::image type="content" source="../media/customer-table-in-azure-sql-database-8bf7a494.png" alt-text="Screenshot showing an example of the customer Azure SQL Table.":::
+:::image type="content" source="../media/customer-table-azure-sql-database-2f1a34f1.png" alt-text="Screenshot showing an example of the customer Azure SQL Table.":::
 
 
 ### Types of classification<br>
@@ -114,7 +114,8 @@ Microsoft Purview allows you to apply sensitivity labels to assets, enabling you
 
 ### How to apply labels to assets in the Microsoft Purview Data Map
 
-### :::image type="content" source="../media/apply-labels-to-assets-in-microsoft-purview-data-map-27fea630.png" alt-text="Image showing how to apply labels to assets in the Microsoft Purview Data Map."::: 
+:::image type="content" source="../media/apply-labels-assets-microsoft-purview-data-map-c58b3617.png" alt-text="Diagram showing how to apply labels to assets in the Microsoft Purview Data Map.":::
+
 
 Being able to apply labels to your asset in the data map requires you to perform the following steps:
 

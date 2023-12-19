@@ -28,8 +28,8 @@ Shown below is the configuration of auditing using the Azure portal.
 
 ## Summary of database auditing
 
- -  Retain an audit trail of selected events
- -  Report on database activity and analyze results
- -  Configure policies for the server or database level
- -  Configure audit log destination
- -  A new server policy applies to all existing and newly created databases
+ -  Retain an audit trail of selected events.
+ -  Report on database activity and analyze results.
+ -  Configure policies for the server or database level.
+ -  Configure audit log destination.
+ -  A new server policy applies to all existing and newly created databases.

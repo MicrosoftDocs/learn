@@ -35,7 +35,7 @@ units:
 - learn.wwl.security-azure-sql-database-azure-sql-managed-instance.authorize-database-access
 - learn.wwl.security-azure-sql-database-azure-sql-managed-instance.database-audit
 - learn.wwl.security-azure-sql-database-azure-sql-managed-instance.microsoft-purview-governance-portal-use-cases
-- learn.wwl.security-azure-sql-database-azure-sql-managed-instance.implement-data-classification-of-sensitive-information
+- learn.wwl.security-azure-sql-database-azure-sql-managed-instance.implement-data-classification-sensitive-information
 - learn.wwl.security-azure-sql-database-azure-sql-managed-instance.transparent-data-encryption
 - learn.wwl.security-azure-sql-database-azure-sql-managed-instance.always-encrypted
 - learn.wwl.security-azure-sql-database-azure-sql-managed-instance.knowledge-check

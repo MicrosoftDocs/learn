@@ -8,7 +8,7 @@ Microsoft Purview's solutions in the governance portal provide a unified data go
 
 ### Prerequisites
 
- -  An Active Microsoft Purview account is already created in Azure portal
+ -  An Active Microsoft Purview account is already created in Azure portal.
  -  The user has permissions to access the **Microsoft Purview governance portal**.
 
 :::image type="content" source="../media/microsoft-purview-governance-portal-21a8c403.png" alt-text="Screenshot showing the Microsoft Purview governance portal.":::
@@ -36,11 +36,11 @@ Microsoft Purview Data Sharing enables organizations to securely share data both
 
 Microsoft Purview Data Policy is a set of central, cloud-based experiences that help you manage access to data sources and datasets securely and at scale.
 
- -  Manage access to data sources from a single-pane of glass, cloud-based experience
- -  Enables at-scale access provisioning
- -  Introduces a new data-plane permission model that is external to data sources
+ -  Manage access to data sources from a single-pane of glass, cloud-based experience.
+ -  Enables at-scale access provisioning.
+ -  Introduces a new data-plane permission model that is external to data sources.
  -  It is seamlessly integrated with Microsoft Purview Data Map and Catalog:
      -  Search for data assets and grant access only to what is required via fine-grained policies.
      -  Path to support SaaS, on-premises, and multicloud data sources.
      -  Path to create policies that leverage any metadata associated to the data objects.
- -  Based on role definitions that are simple and abstracted (for example: **Read**, **Modify**)
+ -  Based on role definitions that are simple and abstracted (for example: **Read**, **Modify**).
