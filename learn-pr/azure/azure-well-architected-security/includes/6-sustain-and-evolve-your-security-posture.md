@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/../goal.svg":::  Incorporate continuous improvement and apply vigilance to stay ahead of attackers who are continuously evolving their attack strategies |
+| :::image type="icon" source="../media/goal.svg":::  Incorporate continuous improvement and apply vigilance to stay ahead of attackers who are continuously evolving their attack strategies |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
 Your security posture must not degrade over time. You must continually improve security operations so that new disruptions are handled more efficiently. Strive to align improvements with the phases defined by industry standards. Doing so leads to better preparedness, reduced time to incident detection, and effective containment and mitigation. Continuous improvement should be based on lessons learned from past incidents.

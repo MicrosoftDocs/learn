@@ -66,7 +66,7 @@
         "redirect_document_id": false
       },
       {
-        "source_path_from_root": "learn-pr/azure/azure-well-architected-security/2-defense-in-depth.yml",
+        "source_path_from_root": "/learn-pr/azure/azure-well-architected-security/2-defense-in-depth.yml",
         "redirect_url": "/training/modules/azure-well-architected-security/",
         "redirect_document_id": false
       },
