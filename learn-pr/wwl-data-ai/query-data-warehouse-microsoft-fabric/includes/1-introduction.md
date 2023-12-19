@@ -16,6 +16,6 @@ Think of a dimension table as the *"who, what, where, when, why”* of your data
 
 For example, if you’re running an online store, your fact table might contain the raw sales data - how many units of each product were sold. But without a dimension table, you wouldn’t know who bought those products, when they were bought, or where the buyer is located.
 
-We will explore different ways to connect and query a data warehouse, and how they can facilitate the tasks of effectively extracting information.
+We'll explore different ways to connect and query a data warehouse, and how they can facilitate the tasks of effectively extracting information.
 
-For more information, see [Understand star schema and the importance for Power BI](/power-bi/guidance/star-schema).
+For more information, see [Understand star schema and the importance for Power BI](/power-bi/guidance/star-schema?azure-portal=true).

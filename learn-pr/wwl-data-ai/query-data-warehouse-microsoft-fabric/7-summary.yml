@@ -4,11 +4,11 @@ title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 09/19/2023
+  ms.date: 12/19/2023
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.service: fabric
+  ms.topic: module
+  ms.prod: fabric
   ms.custom:
     - build-2023
     - build-2023-dataai

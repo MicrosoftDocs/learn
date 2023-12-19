@@ -1,6 +1,6 @@
 Now it's your chance to query data in a data warehouse in Microsoft Fabric.
 
-In this exercise, you’ll learn how to query data using SQL editor in Microsoft Fabric.
+In this exercise, you’ll learn how to query data using the SQL editor in Microsoft Fabric.
 
 > [!NOTE]
 > You need a Microsoft Fabric trial license with the Fabric preview enabled in your tenant. See [**Getting started with Fabric**](/fabric/get-started/fabric-trial?azure-portal=true) to enable your Fabric trial license.
