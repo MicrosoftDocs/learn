@@ -52,7 +52,7 @@ You can use the default value of api://&lt;application-client-id&gt; or another 
 
 7. Next, specify the scope's attributes in the Add a scope pane. For this walk-through, you can use the example values or specify your own.
 
-:::image type="content" source="../media/add-a-scope-fields-descriptions-examples-b2027b9e.png" alt-text="Diagram showing the scope attributes.":::
+:::image type="content" source="../media/add-scope-fields-descriptions-examples-384555a9.png" alt-text="Diagram showing the scope attributes.":::
 
 
 8. Set the State to Enabled, and then select Add scope.

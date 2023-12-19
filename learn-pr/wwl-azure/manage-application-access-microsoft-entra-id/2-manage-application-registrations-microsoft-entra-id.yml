@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-application-access-microsoft-entra-id.managing-application-registrations-in-microsoft-entra-id
+uid: learn.wwl.manage-application-access-microsoft-entra-id.manage-application-registrations-microsoft-entra-id
 title: Manage app registrations in Microsoft Entra ID
 metadata:
   title: Manage app registrations in Microsoft Entra ID
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-managing-application-registrations-in-microsoft-entra-id.md)]
+  [!include[](includes/2-manage-application-registrations-microsoft-entra-id.md)]

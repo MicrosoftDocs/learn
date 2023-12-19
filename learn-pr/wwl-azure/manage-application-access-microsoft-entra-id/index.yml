@@ -31,8 +31,7 @@ subjects:
 - cloud-security
 units:
 - learn.wwl.manage-application-access-microsoft-entra-id.introduction
-- learn.wwl.manage-application-access-microsoft-entra-id.manage-access-to-an-application
-- learn.wwl.manage-application-access-microsoft-entra-id.managing-application-registrations-in-microsoft-entra-id
+- learn.wwl.manage-application-access-microsoft-entra-id.manage-application-registrations-microsoft-entra-id
 - learn.wwl.manage-application-access-microsoft-entra-id.configure-application-expose-web-api
 - learn.wwl.manage-application-access-microsoft-entra-id.permissions-consent
 - learn.wwl.manage-application-access-microsoft-entra-id.application-service-principal-objects-microsoft-entra-id
@@ -40,5 +39,6 @@ units:
 - learn.wwl.manage-application-access-microsoft-entra-id.configure-authentication-azure-ad-application-proxy
 - learn.wwl.manage-application-access-microsoft-entra-id.knowledge-check
 - learn.wwl.manage-application-access-microsoft-entra-id.summary
+- learn.wwl.manage-application-access-microsoft-entra-id.manage-access-application
 badge:
   uid: learn.wwl.manage-application-access-microsoft-entra-id.badge

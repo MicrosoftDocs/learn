@@ -39,7 +39,7 @@ There are three types of service principal:<br>
 
 The Microsoft Graph ServicePrincipal entity defines the schema for a service principal object's properties.
 
-:::image type="content" source="../media/enterprise-apps-blade-7ad4c369.png" alt-text="Screenshot of all applications.":::
+:::image type="content" source="../media/enterprise-applications-blade-a20eb1fd.png" alt-text="Screenshot of all applications.":::
 
 
 ## Relationship between application objects and service principals
