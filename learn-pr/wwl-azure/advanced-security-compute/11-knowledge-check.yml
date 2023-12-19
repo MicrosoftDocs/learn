@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/18/2023
+  ms.date: 12/19/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -49,15 +49,15 @@ quiz:
       explanation: "Correct. Azure RBAC allows for fine-grained control over permissions for interacting with an Azure Container Registry."
   - content: "What is the purpose of Azure DevTest Labs?"
     choices:
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms. (C)"
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
       isCorrect: false
-      explanation: "This is the definition of Azure Resource Manager."
+      explanation: "Incorrect. This is the definition of Azure Resource Manager."
     - content: "A cloud-based service that provides a central location for managing keys, secrets, and certificates."
       isCorrect: false
-      explanation: "This is the definition of Azure Key Vault."
+      explanation: "Incorrect. This is the definition of Azure Key Vault."
     - content: "Provides developers and testers a self-service sandbox environment to quickly create and deploy environments for testing and experimentation."
       isCorrect: true
-      explanation: "Azure DevTest Labs is a service that provides developers and testers a self-service sandbox environment to quickly create and deploy environments for testing and experimentation."
+      explanation: "Correct. Azure DevTest Labs is a service that provides developers and testers a self-service sandbox environment to quickly create and deploy environments for testing and experimentation."
   - content: "What is the advantage of using managed mode over standard Identity assignment on the virtual machine scale set of a node pool in AKS?"
     choices:
     - content: "Managed mode requires write permissions on the virtual machine scale set used by the AKS cluster and Managed Identity Operator permission on the user assigned managed identities."
