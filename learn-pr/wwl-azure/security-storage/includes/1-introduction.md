@@ -4,7 +4,7 @@ This module is designed to provide administrators with the knowledge and skills 
 
 Imagine you are an Azure storage administrator responsible for managing storage resources in your organization's Azure environment. Your organization relies on Azure storage services for storing sensitive data, and you need to ensure that this data is protected against unauthorized access and data security threats.
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this module, participants will be able to:
 

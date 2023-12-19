@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.security-storage.authorize-access-to-queue-data-in-the-azure-portal
+uid: learn.wwl.security-storage.authorize-access-queue-data-azure-portal
 title: Select and configure an appropriate method for access to Azure Queues
 metadata:
   title: Select and configure an appropriate method for access to Azure Queues
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/7-authorize-access-to-queue-data-in-the-azure-portal.md)]
+  [!include[](includes/7-authorize-access-queue-data-azure-portal.md)]

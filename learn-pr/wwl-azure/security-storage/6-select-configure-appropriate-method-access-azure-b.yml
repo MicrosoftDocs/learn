@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.security-storage.select-and-configure-an-appropriate-method-for-access-to-azure-b
+uid: learn.wwl.security-storage.select-configure-appropriate-method-access-azure-b
 title: Select and configure an appropriate method for access to Azure Blob Storage
 metadata:
   title: Select and configure an appropriate method for access to Azure Blob Storage
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-select-and-configure-an-appropriate-method-for-access-to-azure-b.md)]
+  [!include[](includes/6-select-configure-appropriate-method-access-azure-b.md)]

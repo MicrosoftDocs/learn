@@ -3,16 +3,16 @@ A Key Vault customer would like to securely transfer a key from their on-premise
 The following are the requirements:
 
  -  The key to be transferred never exists outside an HSM in plain text form.
- -  Outside an HSM, the key to be transferred is always protected by a key held in the Azure Key Vault HSM
+ -  Outside an HSM, the key to be transferred is always protected by a key held in the Azure Key Vault HSM.
 
 ## Terminology
 
 :::image type="content" source="../media/key-specification-terminology-69996014.png" alt-text="Table showing Azure key Vault HSM terminology.":::
  **Key Exchange Key:** An HSM-backed key that customer generates in the key vault where the BYOK key will be imported. This KEK must have following properties:
 
- -  It’s an Rivest-Shamir-Adleman (RSA) encryption algorithm RSA-HSM key (4096-bit or 3072-bit or 2048-bit)
- -  It will have fixed key\_ops (ONLY ‘import’), that will allow it to be used ONLY during BYOK
- -  Must be in the same vault where the Target Key will be imported
+ -  It’s a Rivest-Shamir-Adleman (RSA) encryption algorithm RSA-HSM key (4096-bit or 3072-bit or 2048-bit).
+ -  It will have fixed key\_ops (ONLY ‘import’), that will allow it to be used ONLY during BYOK.
+ -  Must be in the same vault where the Target Key will be imported.
 
 ## User steps
 
@@ -56,9 +56,9 @@ Long term, Microsoft would like to use **Public Key Cryptography Standards (PKCS
 
 The target key plaintext depends on the key type:
 
- -  For an RSA key, the private key **Abstract Syntax Notation.1** (ASN.1) **DistinguishedEncoding Rules** (DER) encoding Request for Comments \[RFC3447\] wrapped in PKCS\#8 \[RFC5208\]
- -  For an **Elliptic Curve key-pair** (EC key), the private key ASN.1 DER encoding \[RFC5915\] wrapped in PKCS\#8 \[RFC5208\]
- -  For an octet key, the raw bytes of the key
+ -  For an RSA key, the private key **Abstract Syntax Notation.1** (ASN.1) **DistinguishedEncoding Rules** (DER) encoding Request for Comments \[RFC3447\] wrapped in PKCS\#8 \[RFC5208\].
+ -  For an **Elliptic Curve key-pair** (EC key), the private key ASN.1 DER encoding \[RFC5915\] wrapped in PKCS\#8 \[RFC5208\].
+ -  For an octet key, the raw bytes of the key.
 
 The bytes for the plaintext key are then transformed using the CKM\_RSA\_AES\_KEY\_WRAP mechanism:
 
@@ -70,4 +70,4 @@ The format of the transfer blob uses **JavaScript Object Notation** (JSON) Web E
 
 ### Upload key transfer blob to import HSM-key
 
-Customer will transfer the Key Transfer Blob (".byok" file) to an online workstation and then run a az keyvault key import command to import this blob as a new HSM-backed key into Key Vault.
+Customer will transfer the Key Transfer Blob (".byok" file) to an online workstation and then run an az keyvault key import command to import this blob as a new HSM-backed key into Key Vault.

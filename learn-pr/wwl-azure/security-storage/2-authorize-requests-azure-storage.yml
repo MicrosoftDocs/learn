@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.security-storage.authorize-requests-to-azure-storage
+uid: learn.wwl.security-storage.authorize-requests-azure-storage
 title: Configure access control for storage accounts
 metadata:
   title: Configure access control for storage accounts
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-authorize-requests-to-azure-storage.md)]
+  [!include[](includes/2-authorize-requests-azure-storage.md)]

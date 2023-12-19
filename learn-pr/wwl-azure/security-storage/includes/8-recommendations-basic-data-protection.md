@@ -4,13 +4,14 @@ Azure Storage provides data protection for Blob Storage and Azure Data Lake Stor
 
 The following table summarizes the Azure Storage data protection options according to the resources they protect.
 
-## :::image type="content" source="../media/data-protection-by-resource-type-670292cc.png" alt-text="Table showing Azure Storage data protection options according to the resources they protect."::: 
+:::image type="content" source="../media/data-protection-resource-type-7c3472b2.png" alt-text="Table showing Azure Storage data protection options according to the resources they protect.":::
+
 
 ## Recover deleted or overwritten data
 
 If you should need to recover data that has been overwritten or deleted, how you proceed depends on which data protection options you've enabled and which resource was affected. The following table describes the actions that you can take to recover data.
 
-:::image type="content" source="../media/recovering-deleted-or-overwritten-data-f50d99c6.png" alt-text="Table showing actions that you can take to recover data.":::
+:::image type="content" source="../media/recovering-deleted-overwritten-data-cc9cd938.png" alt-text="Table showing actions that you can take to recover data.":::
 
 
 ## Disaster recovery
@@ -50,7 +51,8 @@ To enable blob versioning for a storage account in the Azure portal:
 
 3. In the **Tracking** section, select **Enable versioning for blobs**, and then choose whether to keep all versions or delete them after a period of time.<br>
 
-### :::image type="content" source="../media/lock-storage-account-a56bc8e5.png" alt-text="Screenshot showing Storage account Locks."::: 
+:::image type="content" source="../media/lock-storage-account-a56bc8e5.png" alt-text="Screenshot showing Storage account Locks.":::
+
 
 ### Authorizing data operations when a ReadOnly lock is in effect
 
@@ -86,7 +88,8 @@ To enable container soft delete for your storage account by using Azure portal, 
 
 5. Save your changes.
 
-### :::image type="content" source="../media/soft-delete-container-portal-configure-b077497e.png" alt-text="Screenshot showing Storage account Data protection."::: 
+:::image type="content" source="../media/soft-delete-container-portal-configure-b077497e.png" alt-text="Screenshot showing Storage account Data protection.":::
+
 
 ### View soft-deleted containers
 
@@ -98,7 +101,8 @@ To view soft-deleted containers in the Azure portal, follow these steps:
 
 2. Toggle the Show deleted containers switch to include deleted containers in the list.
 
-### :::image type="content" source="../media/soft-delete-container-portal-list-95444ee8.png" alt-text="Screenshot showing how to view soft-deleted containers."::: 
+:::image type="content" source="../media/soft-delete-container-portal-list-95444ee8.png" alt-text="Screenshot showing how to view soft-deleted containers.":::
+
 
 ### Restore a soft-deleted container
 
@@ -108,7 +112,8 @@ You can restore a soft-deleted container and its contents within the retention p
 
 2. Display the context menu for the container you wish to restore, and choose **Undelete** from the menu.
 
-### :::image type="content" source="../media/soft-delete-container-portal-restore-915b1d90.png" alt-text="Screenshot showing how to restore a soft-deleted container."::: 
+:::image type="content" source="../media/soft-delete-container-portal-restore-915b1d90.png" alt-text="Screenshot showing how to restore a soft-deleted container.":::
+
 
 ## Save the state of a blob at regular intervals:
 

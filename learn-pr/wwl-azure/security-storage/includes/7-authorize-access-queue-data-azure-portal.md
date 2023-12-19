@@ -13,7 +13,7 @@ To access queue data with the account access key, you must have an Azure role as
  -  The Azure Resource Manager Contributor role
  -  The Azure Resource Manager Owner role
 
-When you attempt to access queue data in the Azure portal, the portal first checks whether you have been assigned a role with Microsoft.Storage/storageAccounts/listkeys/action. If you have been assigned a role with this action, then the portal uses the account key for accessing queue data. If you have not been assigned a role with this action, then the portal attempts to access data using your Microsoft Entra account.
+When you attempted to access queue data in the Azure portal, the portal first checks whether you have been assigned a role with Microsoft.Storage/storageAccounts/listkeys/action. If you have been assigned a role with this action, then the portal uses the account key for accessing queue data. If you have not been assigned a role with this action, then the portal attempts to access data using your Microsoft Entra account.
 
 ### Use your Microsoft Entra account
 
@@ -41,7 +41,7 @@ When you navigate to a queue, the Azure portal indicates whether you are current
 
 If you are authenticating using the account access key, you'll see Access Key specified as the authentication method in the portal:
 
-:::image type="content" source="../media/auth-method-access-key-fca3f084.png" alt-text="Screenshot showing the the authenticate with account access key page.":::
+:::image type="content" source="../media/auth-method-access-key-fca3f084.png" alt-text="Screenshot showing the authenticate with account access key page.":::
 
 
 To switch to using Microsoft Entra account, click the link highlighted in the image. If you have the appropriate permissions via the Azure roles that are assigned to you, you'll be able to proceed. However, if you lack the right permissions, you'll see an error message like the following one:

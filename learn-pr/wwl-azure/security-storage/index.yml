@@ -35,15 +35,15 @@ subjects:
 - information-protection-governance
 units:
 - learn.wwl.security-storage.introduction
-- learn.wwl.security-storage.authorize-requests-to-azure-storage
+- learn.wwl.security-storage.authorize-requests-azure-storage
 - learn.wwl.security-storage.manage-storage-account-access-keys
-- learn.wwl.security-storage.authorize-access-to-blobs-using-microsoft-entra-id
-- learn.wwl.security-storage.authorize-access-to-tables-using-microsoft-entra-id
-- learn.wwl.security-storage.select-and-configure-an-appropriate-method-for-access-to-azure-b
-- learn.wwl.security-storage.authorize-access-to-queue-data-in-the-azure-portal
-- learn.wwl.security-storage.recommendations-for-basic-data-protection
+- learn.wwl.security-storage.authorize-access-blobs-use-microsoft-entra-id
+- learn.wwl.security-storage.authorize-access-tables-use-microsoft-entra-id
+- learn.wwl.security-storage.select-configure-appropriate-method-access-azure-b
+- learn.wwl.security-storage.authorize-access-queue-data-azure-portal
+- learn.wwl.security-storage.recommendations-basic-data-protection
 - learn.wwl.security-storage.bring-your-own-key-specification
-- learn.wwl.security-storage.enable-infrastructure-encryption-for-double-encryption-of-data
+- learn.wwl.security-storage.enable-infrastructure-encryption-double-encryption-data
 - learn.wwl.security-storage.knowledge-check
 - learn.wwl.security-storage.summary
 badge:

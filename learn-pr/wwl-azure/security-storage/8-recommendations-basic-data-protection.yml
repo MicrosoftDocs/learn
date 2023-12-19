@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.security-storage.recommendations-for-basic-data-protection
+uid: learn.wwl.security-storage.recommendations-basic-data-protection
 title: Select and configure appropriate methods for protecting against data security threats, including soft delete, backups, versioning, and immutable storage
 metadata:
   title: Select and configure appropriate methods for protecting against data security threats, including soft delete, backups, versioning, and immutable storage
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/8-recommendations-for-basic-data-protection.md)]
+  [!include[](includes/8-recommendations-basic-data-protection.md)]

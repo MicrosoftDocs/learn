@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.security-storage.enable-infrastructure-encryption-for-double-encryption-of-data
+uid: learn.wwl.security-storage.enable-infrastructure-encryption-double-encryption-data
 title: Enable double encryption at the Azure Storage infrastructure level
 metadata:
   title: Enable double encryption at the Azure Storage infrastructure level
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/10-enable-infrastructure-encryption-for-double-encryption-of-data.md)]
+  [!include[](includes/10-enable-infrastructure-encryption-double-encryption-data.md)]

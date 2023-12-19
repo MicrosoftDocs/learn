@@ -47,7 +47,7 @@ When you provide a resource ID that is specific to a single storage account and 
 :::image type="content" source="../media/cloud-resource-id-table-74ccbded.png" alt-text="Table showing cloud and resource ID details.":::
 You can also provide a resource ID that applies to any storage account, as shown in the following table. This resource ID is the same for all public and sovereign clouds, and is used to acquire a token for authorizing requests to any storage account.
 
-:::image type="content" source="../media/public-and-sovereign-cloud-table-d40401ff.png" alt-text="Table showing public and sovereign cloud resource ID details.":::
+:::image type="content" source="../media/public-sovereign-cloud-table-507bcf7c.png" alt-text="Table showing public and sovereign cloud resource ID details.":::
 
 
 ## Assign Azure roles for access rights
@@ -66,11 +66,11 @@ Before you assign an Azure RBAC role to a security principal, determine the scop
 
 You can scope access to Azure blob resources at the following levels, beginning with the narrowest scope:
 
- -  **An individual container.** At this scope, a role assignment applies to all of the blobs in the container, and to the container properties and metadata.
- -  **The storage account.** At this scope, a role assignment applies to all containers and their blobs.
- -  **The resource group.** At this scope, a role assignment applies to all of the containers in all of the storage accounts in the resource group.
- -  **The subscription.** At this scope, a role assignment applies to all of the containers in all of the storage accounts in all of the resource groups in the subscription.
- -  **A management group.** At this scope, a role assignment applies to all of the containers in all of the storage accounts in all of the resource groups in all of the subscriptions in the management group.
+ -  **An individual container**. At this scope, a role assignment applies to all of the blobs in the container, and to the container properties and metadata.
+ -  **The storage account**. At this scope, a role assignment applies to all containers and their blobs.
+ -  **The resource group** . At this scope, a role assignment applies to all of the containers in all of the storage accounts in the resource group.
+ -  **The subscription**. At this scope, a role assignment applies to all of the containers in all of the storage accounts in all of the resource groups in the subscription.
+ -  **A management group**. At this scope, a role assignment applies to all of the containers in all of the storage accounts in all of the resource groups in all of the subscriptions in the management group.
 
 ## Azure built-in roles for blobs
 
