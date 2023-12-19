@@ -2,11 +2,11 @@ Azure role-based access control (Azure RBAC) is the authorization system you use
 
 ## Prerequisites
 
-**To assign Azure roles, you must have:**
+**To assign Azure roles, you must have**:
 
- -  `Microsoft.Authorization/roleAssignments/write permissions`, such as **User Access Administrator** or **Owner.**<br>
+ -  `Microsoft.Authorization/roleAssignments/write permissions`, such as **User Access Administrator** or **Owner**.<br>
 
-## **Step 1: Identify the needed scope**
+## **Step 1**: **Identify the needed scope**
 
 :::image type="content" source="../media/scope-levels-b64b14ec.jpg" alt-text="Diagram showing role assignment scopes.":::
 
@@ -17,7 +17,7 @@ Azure role-based access control (Azure RBAC) is the authorization system you use
 
 3. Click the specific resource for that scope.<br>
 
-**The following shows an example resource group.<br>**
+**The following shows an example resource group**.<br>
 
 :::image type="content" source="../media/resource-groups-f49487c4.jpg" alt-text="Screenshot showing an example of a resource group.":::
 
@@ -47,7 +47,7 @@ Access control (IAM) is the page that you typically use to assign roles to grant
 
 You can search for a role by name or by description. You can also filter roles by type and category.
 
-:::image type="content" source="../media/select-the-appropriate-role-f4dd9a9e.png" alt-text="Screenshot showing how to select the appropriate role.":::
+:::image type="content" source="../media/select-appropriate-role-3ac19890.png" alt-text="Screenshot showing how to select the appropriate role.":::
 
 
 2. If you want to assign a privileged administrator role, select the **Privileged administrator roles** tab to select the role.
@@ -66,9 +66,9 @@ Privileged administrator roles are roles that grant privileged administrator acc
 
 ## Step 4: Select who needs access
 
-1. On the **Members** tab, select **User**, **group**, or **service principal** to assign the selected role to one or more Azure AD users, groups, or service principals (applications).
+1. On the **Members** tab, select **User**, **group**, or **service principal** to assign the selected role to one or more Microsoft Entra ID users, groups, or service principals (applications).
 
-:::image type="content" source="../media/add-role-assignment-members-page-a6fbeae3.png" alt-text="Screenshot showing how to define who needs access.":::
+:::image type="content" source="../media/add-role-assignment-members-page-a6fbeae3.png" alt-text="Screenshot showing how to assign the selected role to one or more Microsoft Entra ID users, groups, or service principals.":::
 
 
 2. Click **Select members**.
@@ -78,7 +78,7 @@ Privileged administrator roles are roles that grant privileged administrator acc
 > [!NOTE]
 > You can type in the **Select** box to search the directory for display name or email address.<br>
 
-:::image type="content" source="../media/select-members-page-7-04bbc35b.png" alt-text="Screenshot showing the select memebers page.":::
+:::image type="content" source="../media/select-members-page-7-04bbc35b.png" alt-text="Screenshot showing the select members page that enables you to search the directory for display name or email address.":::
 
 
 4. Click Select to add the users, groups, or service principals to the Members list.
@@ -127,7 +127,7 @@ If you selected one of the following privileged roles, follow the steps in this 
 
 1. On the **Review + assign** tab, review the role assignment settings.
 
-:::image type="content" source="../media/add-role-review-and-assign-8-b3fc1a6b.png" alt-text="Screenshot showing the review and assign page.":::
+:::image type="content" source="../media/add-role-review-assign-8-5a4c0233.png" alt-text="Screenshot showing the review and assign page.":::
 
 
 2. Click **Review + assign** to assign the role.<br>

@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-authorization-microsoft-entra-id.enable-microsoft-entra-permissions-management-in-your-organization
+uid: learn.wwl.manage-authorization-microsoft-entra-id.enable-microsoft-entra-permissions-management-your-organization
 title: Implement and manage Microsoft Entra Permissions Management
 metadata:
   title: Implement and manage Microsoft Entra Permissions Management
   description: "Implement and manage Microsoft Entra Permissions Management"
-  ms.date: 12/18/2023
+  ms.date: 12/19/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-enable-microsoft-entra-permissions-management-in-your-organization.md)]
+  [!include[](includes/6-enable-microsoft-entra-permissions-management-your-organization.md)]

@@ -23,7 +23,10 @@ For Azure resource roles in Privileged Identity Management, only a subscription 
 
 To better understand Privileged Identity Management and its documentation, you should review the following terms.
 
-## :::image type="content" source="../media/microsoft-entra-terminology-table-9e977793.png" alt-text="Table showing examples of Privileged Identity Management terminology."::: Role assignment overview
+:::image type="content" source="../media/microsoft-entra-terminology-table-9e977793.png" alt-text="Table showing examples of Privileged Identity Management terminology.":::
+
+
+## Role assignment overview
 
 The PIM role assignments give you a secure way to grant access to resources in your organization. This section describes the assignment process. It includes assign roles to members, activate assignments, approve or deny requests, extend and renew assignments.
 

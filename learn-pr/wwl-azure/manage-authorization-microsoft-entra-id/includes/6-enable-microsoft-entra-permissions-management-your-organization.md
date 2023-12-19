@@ -10,13 +10,11 @@ You must be eligible for or have an active assignment to the Permissions Managem
 
 ## How to enable Permissions Management on your Microsoft Entra tenant
 
-1. In your browser:
+In your browser:
 
-Browse to the Microsoft Entra admin center and sign in to Microsoft Entra ID as a Global Administrator.
-
-If needed, activate the Permissions Management Administrator role in your Microsoft Entra tenant.
-
-In the Azure portal, select Microsoft Entra Permissions Management, then select the link to purchase a license or begin a trial.
+1.  Browse to the Microsoft Entra admin center and sign in to Microsoft Entra ID as a Global Administrator.
+2.  If needed, activate the Permissions Management Administrator role in your Microsoft Entra tenant.
+3.  In the Azure portal, select Microsoft Entra Permissions Management, then select the link to purchase a license or begin a trial.
 
 ## Activate a free trial or paid license
 
