@@ -3,11 +3,11 @@ uid: learn.personalize-remote-development-workflow
 metadata:
   title: Personalize your Remote Development workflow with VS Code
   description: Leverage features in VS Code to personalize your development experience for different remote environments.
-  ms.date: 11/28/2023            
-  author: burkeholland      
+  ms.date: 11/28/2023
+  author: burkeholland
   ms.author: buhollan
   manager: toanglin
-  ms.topic: ' module'
+  ms.topic: " module"
   ms.prod: vs-code
 
 title: Personalize your Remote Development workflow with VS Code
@@ -35,14 +35,10 @@ roles:
   - developer
 
 products:
- - vs-code
+  - vs-code
 
 subjects:
   - digital-application-innovation
 
 units:
-- learn.personalize-remote-development-workflow
-
-badge:
-  uid: learn.introduction-to-visual-studio-code.badge
-
+  - learn.personalize-remote-development-workflow
