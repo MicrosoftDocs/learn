@@ -41,4 +41,10 @@ subjects:
   - digital-application-innovation
 
 units:
-  - learn.personalize-remote-development-workflow
+  - learn.personalize-remote-development-workflow.introduction
+  - learn.personalize-remote-development-workflow.profiles
+  - learn.personalize-remote-development-workflow.exercise-profiles
+  - learn.personalize-remote-development-workflow.settings-sync
+  - learn.personalize-remote-development-workflow.exercise-settings-sync
+  - learn.personalize-remote-development-workflow.combine-remote-experiences
+  - learn.personalize-remote-development-workflow.knowledge-check
