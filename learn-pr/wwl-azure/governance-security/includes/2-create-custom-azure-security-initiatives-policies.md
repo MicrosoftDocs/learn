@@ -14,7 +14,7 @@ As discussed in the Azure Policy documentation, when you specify a location for 
 
 3. Open the **Security policy** page, and in the **Your custom initiatives** area, select **Add a custom initiative**.
 
-:::image type="content" source="../media/accessing-security-policy-page-4e445700.png" alt-text="Screenshot showing the security policy page in Defender for Cloud.":::
+:::image type="content" source="../media/access-security-policy-page-7e1d5026.png" alt-text="Screenshot showing the security policy page in Defender for Cloud.":::
 
 
 4. Review the list of custom policies already created in your organization, and select **Add** to assign a policy to your subscription.
@@ -27,7 +27,7 @@ If there isn't an initiative in the list that meets your needs, you can create o
 
 2. Enter the definition's location and custom name.<br>
 
-*Custom initiatives shouldn't have the same name as other initiatives (custom or built-in). If you create a custom initiative with the the same name, it will cause a conflict in the information displayed in the dashboard.*
+*Custom initiatives shouldn't have the same name as other initiatives (custom or built-in). If you create a custom initiative with the same name, it will cause a conflict in the information displayed in the dashboard.*
 
 3. Select the policies to include and select **Add**.
 
@@ -37,7 +37,7 @@ If there isn't an initiative in the list that meets your needs, you can create o
 
 6. In the **Add** custom initiatives page, select refresh. Your new initiative will be available.
 
-:::image type="content" source="../media/create-or-add-custom-policy-28458b72.png" alt-text="Screenshot showing the add custom initiatives page.":::
+:::image type="content" source="../media/create-add-custom-policy-c374edf8.png" alt-text="Screenshot showing the add custom initiatives page.":::
 
 
 *Creating new initiatives requires subscription owner credentials.*

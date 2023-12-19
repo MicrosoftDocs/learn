@@ -25,7 +25,7 @@ A blueprint is a package or container for composing focus-specific sets of stand
 
 A policy is a default allow and explicit deny system focused on resource properties during deployment and for already existing resources. It supports cloud governance by validating that resources within a subscription adhere to requirements and standards.
 
-Including a policy in a blueprint enables the creation of the right pattern or design during assignment of the blueprint. The policy inclusion makes sure that only approved or expected changes can be made to the environment to protect ongoing compliance to the intent of the blueprint.
+Including a policy in a blueprint enables the creation of the right pattern or design during assignment of the blueprint. The policy inclusion makes sure that only approved or expected changes can be made to the environment to protect ongoing compliance with the intent of the blueprint.
 
 A policy can be included as one of many *artifacts* in a blueprint definition. Blueprints also support using parameters with policies and initiatives.
 
@@ -33,7 +33,7 @@ A policy can be included as one of many *artifacts* in a blueprint definition. B
 
 A blueprint is composed of *artifacts*. Azure Blueprints currently supports the following resources as artifacts:
 
-:::image type="content" source="../media/azure-blueprint-definition-resource-artifacts-145cce58.png" alt-text="Table showing blueprint definitions.":::
+:::image type="content" source="../media/azure-blueprint-definition-resource-artifacts-145cce58.png" alt-text="Screenshot of table showing blueprint definitions.":::
 
 
 ## Blueprint definition locations
@@ -74,14 +74,14 @@ To delete blueprints, your account needs the following permissions:
 
 *As blueprint assignments are created on a subscription, the blueprint assign and unassign permissions must be granted on a subscription scope or be inherited onto a subscription scope.*
 
-To assign or unassign a blueprint, your account needs the following permissions:To assign or unassign a blueprint, your account needs the following permissions:
+To assign or unassign a blueprint, your account needs the following permissions: To assign or unassign a blueprint, your account needs the following permissions:
 
  -  `Microsoft.Blueprint/blueprintAssignments/write` \- Assign a blueprint
  -  `Microsoft.Blueprint/blueprintAssignments/delete` \- Unassign a blueprint
 
 The following built-in roles are available:
 
-:::image type="content" source="../media/azure-built-in-roles-for-blueprints-627df12a.png" alt-text="Table showing Azure built-in roles for blueprints.":::
+:::image type="content" source="../media/azure-built-in-roles-blueprints-405372ee.png" alt-text="Screenshot of table showing Azure built-in roles for blueprints.":::
 
 
 If these built-in roles don't fit your security needs, consider creating a custom role.

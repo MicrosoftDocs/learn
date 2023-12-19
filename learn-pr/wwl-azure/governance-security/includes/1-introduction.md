@@ -4,7 +4,7 @@ This module focuses on enabling administrators to effectively plan, implement, a
 
 Imagine you are a security administrator responsible for maintaining the security posture of your organization's Azure environment. Your organization relies on Azure for critical workloads, and you need to establish robust governance practices to protect sensitive data and maintain regulatory compliance.
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this module, participants will be able to:
 

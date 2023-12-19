@@ -33,15 +33,15 @@ subjects:
 - cloud-security
 units:
 - learn.wwl.governance-security.introduction
-- learn.wwl.governance-security.create-custom-azure-security-initiatives-and-policies
+- learn.wwl.governance-security.create-custom-azure-security-initiatives-policies
 - learn.wwl.governance-security.azure-blueprints
 - learn.wwl.governance-security.infrastructure-security-architecture
-- learn.wwl.governance-security.create-a-key-vault-using-the-azure-portal
+- learn.wwl.governance-security.create-key-vault-use-azure-portal
 - learn.wwl.governance-security.azure-dedicated-hardware-security-module
-- learn.wwl.governance-security.provide-access-to-key-vault-keys-certificates-secrets
+- learn.wwl.governance-security.provide-access-key-vault-keys-certificates-secrets
 - learn.wwl.governance-security.azure-key-vault-keys-secrets-certificates
-- learn.wwl.governance-security.configure-cryptographic-key-auto-rotation-in-azure-key-vault
-- learn.wwl.governance-security.azure-key-vault-backup-and-restore
+- learn.wwl.governance-security.configure-cryptographic-key-auto-rotation-azure-key-vault
+- learn.wwl.governance-security.azure-key-vault-backup-restore
 - learn.wwl.governance-security.knowledge-check
 - learn.wwl.governance-security.summary
 badge:

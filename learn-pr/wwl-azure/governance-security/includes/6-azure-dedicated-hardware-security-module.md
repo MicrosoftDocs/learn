@@ -8,7 +8,7 @@ After they're provisioned, HSM devices are connected directly to a customer’s 
 
 ### FIPS 140-2 Level-3 compliance
 
-Many organizations have stringent industry regulations that dictate that cryptographic keys must be stored in FIPS 140-2 Level-3 validated HSMs. Azure Dedicated HSM and a new single-tenant offering, Azure Key Vault Managed HSM, help customers from various industry segments, such as financial services industry, government agencies, and others meet FIPS 140-2 Level-3 requirements. While Microsoft’s multi-tenant Azure Key Vault service currently uses FIPS 140-2 Level-2 validated HSMs.
+Many organizations have stringent industry regulations that dictate that cryptographic keys must be stored in FIPS 140-2 Level-3 validated HSMs. Azure Dedicated HSM and a new single-tenant offering, Azure Key Vault Managed HSM, help customers from various industry segments, such as financial services industry, government agencies, and others meet FIPS 140-2 Level-3 requirements. While Microsoft’s multitenant Azure Key Vault service currently uses FIPS 140-2 Level-2 validated HSMs.
 
 ### Single-tenant devices
 
@@ -28,11 +28,11 @@ The Thales device was selected for this service for a variety of reasons. It off
 
 ### Unique cloud-based offering
 
-Microsoft recognized a specific need for a unique set of customers. It is the only cloud provider that offers new customers a dedicated HSM service that is FIPS 140-2 Level 3-validated and offers such an extent of cloud-based and on-premises application integration.
+Microsoft recognized a specific need for a unique set of customers. It's the only cloud provider that offers new customers a dedicated HSM service that is FIPS 140-2 Level 3-validated and offers such an extent of cloud-based and on-premises application integration.
 
 ## Is Azure Dedicated HSM right for you?
 
-Azure Dedicated HSM is a specialized service that addresses unique requirements for a specific type of large-scale organization. As a result, it's expected that the bulk of Azure customers will not fit the profile of use for this service. Many will find the Azure Key Vault or Azure Managed HSM service to be more appropriate and cost effective. To help you decide if it's a fit for your requirements, we've identified the following criteria.
+Azure Dedicated HSM is a specialized service that addresses unique requirements for a specific type of large-scale organization. As a result, it's expected that the bulk of Azure customers won't fit the profile of use for this service. Many will find the Azure Key Vault or Azure Managed HSM service to be more appropriate and cost effective. To help you decide if it's a fit for your requirements, we've identified the following criteria.
 
 ### Best fit
 
@@ -40,21 +40,21 @@ Azure Dedicated HSM is most suitable for “lift-and-shift” scenarios that req
 
 Migrating applications from on-premises to Azure Virtual Machines
 
-Migrating applications from Amazon AWS EC2 to virtual machines that use the AWS Cloud HSM Classic service (Amazon is not offering this service to new customers)
+Migrating applications from Amazon AWS EC2 to virtual machines that use the AWS Cloud HSM Classic service (Amazon isn't offering this service to new customers)
 
 Running shrink-wrapped software such as Apache/Ngnix SSL Offload, Oracle TDE, and ADCS in Azure Virtual Machines
 
 ### Not a fit
 
-Azure Dedicated HSM is not a good fit for the following type of scenario: Microsoft cloud services that support encryption with customer-managed keys (such as Azure Information Protection, Azure Disk Encryption, Azure Data Lake Store, Azure Storage, Azure SQL Database, and Customer Key for Office 365) that are not integrated with Azure Dedicated HSM.
+Azure Dedicated HSM isn't a good fit for the following type of scenario: Microsoft cloud services that support encryption with customer-managed keys (such as Azure Information Protection, Azure Disk Encryption, Azure Data Lake Store, Azure Storage, Azure SQL Database, and Customer Key for Office 365) that aren't integrated with Azure Dedicated HSM.
 
-Customers must have a assigned Microsoft Account Manager and meet the monetary requirement of five million ($5M) USD or greater in overall committed Azure revenue annually to qualify for onboarding and use of Azure Dedicated HSM.
+Customers must have an assigned Microsoft Account Manager and meet the monetary requirement of five million ($5M) USD or greater in overall committed Azure revenue annually to qualify for onboarding and use of Azure Dedicated HSM.
 
 ### It depends
 
-Whether Azure Dedicated HSM will work for you depends on a potentially complex mix of requirements and compromises that you can or cannot make. An example is the FIPS 140-2 Level 3 requirement. This requirement is common, and Azure Dedicated HSM and a new single-tenant offering, Azure Key Vault Managed HSM are currently the only options for meeting it. If these mandated requirements aren't relevant, then often it's a choice between Azure Key Vault and Azure Dedicated HSM. Assess your requirements before making a decision.
+Whether Azure Dedicated HSM will work for you depends on a potentially complex mix of requirements and compromises that you can or can't make. An example is the FIPS 140-2 Level 3 requirement. This requirement is common, and Azure Dedicated HSM and a new single-tenant offering, Azure Key Vault Managed HSM are currently the only options for meeting it. If these mandated requirements aren't relevant, then often it's a choice between Azure Key Vault and Azure Dedicated HSM. Assess your requirements before making a decision.
 
-Situations in which you will have to weigh your options include:
+Situations in which you'll have to weigh your options include:
 
  -  New code running in a customer’s Azure virtual machine
  -  SQL Server TDE in an Azure virtual machine

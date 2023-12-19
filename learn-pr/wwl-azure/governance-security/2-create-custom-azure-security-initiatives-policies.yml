@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.governance-security.create-custom-azure-security-initiatives-and-policies
+uid: learn.wwl.governance-security.create-custom-azure-security-initiatives-policies
 title: Create, assign, and interpret security policies and initiatives in Azure Policy
 metadata:
   title: Create, assign, and interpret security policies and initiatives in Azure Policy
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-create-custom-azure-security-initiatives-and-policies.md)]
+  [!include[](includes/2-create-custom-azure-security-initiatives-policies.md)]

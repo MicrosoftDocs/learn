@@ -12,18 +12,18 @@ When a Key Vault certificate is created, an addressable key and secret are also 
 
 The identifier and version of certificates are similar to those of keys and secrets. A specific version of an addressable key and secret created with the Key Vault certificate version is available in the Key Vault certificate response.
 
-:::image type="content" source="../media/azure-key-vault-12ba98f2.png" alt-text="Image showing an eaxmple of a composition of a certificate.":::
+:::image type="content" source="../media/azure-key-vault-12ba98f2.png" alt-text="Diagram showing an example of a composition of a certificate.":::
 
 
 ## Exportable or non-exportable key
 
 When a Key Vault certificate is created, it can be retrieved from the addressable secret with the private key in either PFX or PEM format. The policy that's used to create the certificate must indicate that the key is exportable. If the policy indicates that the key is non-exportable, then the private key isn't a part of the value when it's retrieved as a secret.
 
-The addressable key becomes more relevant with non-exportable Key Vault certificates. The addressable Key Vault key's operations are mapped from the keyusage field of the Key Vault certificate policy that's used to create the Key Vault certificate.
+The addressable key becomes more relevant with non-exportable Key Vault certificates. The addressable Key Vault key's operations are mapped from the key usage field of the Key Vault certificate policy that's used to create the Key Vault certificate.
 
 The following table lists supported key types.
 
-:::image type="content" source="../media/key-vault-key-types-ef8d6cf8.png" alt-text="Table showing Key Vault key types.":::
+:::image type="content" source="../media/key-vault-key-types-ef8d6cf8.png" alt-text="Screenshot of table showing Key Vault key types.":::
 Exportable keys are allowed only with RSA and EC. HSM keys are non-exportable.
 
 ## Certificate attributes and tags
@@ -77,13 +77,16 @@ At a high level, a certificate policy contains the following information:
 
 The following table represents the mapping of X.509 key usage policies to effective key operations of a key that's created as part of Key Vault certificate creation.
 
-## :::image type="content" source="../media/mapping-usage-to-key-operations-e8c21951.png" alt-text="Table showing mapping X.509 usage to key operations."::: Certificate issuer
+:::image type="content" source="../media/map-usage-key-operations-68f16144.png" alt-text="Screenshot of  table showing mapping X.509 usage to key operations.":::
+
+
+## Certificate issuer
 
 A Key Vault certificate object holds a configuration that's used to communicate with a selected certificate issuer provider to order X.509 certificates.
 
 Key Vault partners with the following certificate issuer providers for Transport Layer Security/Secure Sockets Layer certificates.
 
-:::image type="content" source="../media/transport-layer-security-certificates-384dd794.png" alt-text="Table showing certificate issuer providers for TLS/SSL certificates.":::
+:::image type="content" source="../media/transport-layer-security-certificates-384dd794.png" alt-text="Screenshot of table showing certificate issuer providers for TLS/SSL certificates.":::
 Before a certificate issuer can be created in a key vault, an administrator must take the following prerequisite steps:<br>
 
 1.  Onboard the organization with at least one CA provider.
