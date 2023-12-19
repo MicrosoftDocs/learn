@@ -2,8 +2,8 @@
 
 Microsoft Defender for Cloud has **two** main goals:
 
-1.  to help you **understand** your current security situation
-2.  to help you **efficiently** and **effectively** improve your security
+1.  To help you **understand** your current security situation
+2.  To help you **efficiently** and **effectively** improve your security
 
 The central feature in Defender for Cloud that enables you to achieve those goals is the secure score.
 
@@ -48,20 +48,20 @@ To get all the possible points for security control, all of your **resources mus
  -  Insights - Gives you extra details for each recommendation, such as:
     
     
-     -  :::image type="content" source="../media/preview-icon-d9b46adc.png" alt-text="Screenshot of preview icon.":::
+     -  :::image type="content" source="../media/preview-icon-d9b46adc.png" alt-text="Screenshot of the preview recommendation icon that provides extra detail.":::
          **Preview recommendation** \- This recommendation won't affect your secure score until **general availability (GA)**.
-     -  :::image type="content" source="../media/fix-icon-c7b18e7c.png" alt-text="Screenshot of fix icon.":::
+     -  :::image type="content" source="../media/fix-icon-c7b18e7c.png" alt-text="Screenshot of the fix icon that enables you to resolve issues.":::
          **Fix** \- From within the recommendation details page, you can use '**Fix**' to resolve this issue.
-     -  :::image type="content" source="../media/enforce-icon-cd64da95.png" alt-text="Screenshot of enforce icon.":::
+     -  :::image type="content" source="../media/enforce-icon-cd64da95.png" alt-text="Screenshot of the enforce icon that enables you to automatically deploy a policy to fix an issue.":::
          **Enforce** \- From within the recommendation details page, you can automatically deploy a policy to fix this issue whenever someone creates a non-compliant resource.
-     -  :::image type="content" source="../media/deny-icon-4444b813.png" alt-text="Screenshot of deny icon.":::
+     -  :::image type="content" source="../media/deny-icon-4444b813.png" alt-text="Screenshot of the deny icon that enables you to prevent new resources from being created with identified issues.":::
          **Deny** \- From within the recommendation details page, you can prevent new resources from being created with this issue.
 
 ### Which recommendations are included in the secure score calculations?
 
  -  Only built-in recommendations have an impact on the secure score.
  -  Recommendations flagged as Preview aren't included in the calculations of your secure score. They should still be remediated wherever possible so that when the preview period ends, they'll contribute towards your score.
- -  Preview recommendations are marked with: :::image type="content" source="../media/preview-icon-d9b46adc.png" alt-text="Screenshot of preview icon.":::
+ -  Preview recommendations are marked with: :::image type="content" source="../media/preview-icon-d9b46adc.png" alt-text="Screenshot of the preview recommendations icon for secure score options after General Availability.":::
     
 
 ## Improve your secure score

@@ -4,7 +4,8 @@ When you enable Defender for Cloud on an Azure subscription, the Microsoft cloud
 
 The regulatory compliance dashboard shows the status of all the assessments within your environment for your chosen standards and regulations. As you act on the recommendations and reduce risk factors in your environment, your compliance posture improves.
 
-*Compliance data from Defender for Cloud now seamlessly integrates with Microsoft Purview Compliance Manager, allowing you to centrally assess and manage compliance across your organization's entire digital estate. When you add any standard to your compliance dashboard (including compliance standards monitoring other clouds like AWS and GCP), the resource-level compliance data is automatically surfaced in Compliance Manager for the same standard. Compliance Manager thus provides improvement actions and status across your cloud infrastructure and all other digital assets in this central tool.* 
+> [!TIP]
+> *Compliance data from Defender for Cloud now seamlessly integrates with Microsoft Purview Compliance Manager, allowing you to centrally assess and manage compliance across your organization's entire digital estate. When you add any standard to your compliance dashboard (including compliance standards monitoring other clouds like AWS and GCP), the resource-level compliance data is automatically surfaced in Compliance Manager for the same standard. Compliance Manager thus provides improvement actions and status across your cloud infrastructure and all other digital assets in this central tool.*
 
 ## Assess your regulatory compliance
 
@@ -49,7 +50,8 @@ You can use the information in the regulatory compliance dashboard to investigat
 :::image type="content" source="../media/mcsb-compliance-controls-your-actions-a4a79c51.png" alt-text="Screenshot showing the Defender for Cloud Regulatory compliance Control detail for establishing network segmentation boundaries.":::
 
 
-*Assessments run approximately every 12 hours, so you will see the impact on your compliance data only after the next run of the relevant assessment.*
+> [!NOTE]
+> *Assessments run approximately every 12 hours, so you will see the impact on your compliance data only after the next run of the relevant assessment.*
 
 ## Remediate an automated assessment<br>
 
@@ -74,7 +76,7 @@ The regulatory compliance has both automated and manual assessments that might n
 
 7. In this example, when you select **Take action** from the recommendation details page, you arrive in the Azure Virtual Machine pages of the Azure portal, where you can enable encryption from the **Security** tab:
 
-:::image type="content" source="../media/mcsb-encrypting-vm-disks-6d0a30b6.png" alt-text="Screenshot showing how to enable encryption from the Security tab.":::
+:::image type="content" source="../media/mcsb-encrypt-vm-disks-6c703078.png" alt-text="Screenshot showing how to enable encryption from the Security tab.":::
 
 
 8. After you take action to resolve recommendations, you'll see the result in the compliance dashboard report because your compliance score improves.

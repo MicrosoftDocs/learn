@@ -13,11 +13,11 @@ The **Microsoft cloud security benchmark (MCSB)** provides **prescriptive best p
  -  Providing consistent user experience for monitoring and enforcing the multicloud security benchmark in Defender for Cloud
  -  Staying aligned with Industry Standards (e.g., Center for Internet Security, National Institute of Standards and Technology, Payment Card Industry)
 
-**Automated control monitoring for AWS in Microsoft Defender for Cloud:** You can use **Microsoft Defender for Cloud Regulatory Compliance Dashboard** to monitor your AWS environment against **Microsoft cloud security benchmark (MCSB)**, just like how you monitor your Azure environment. We developed approximately **180 AWS checks** for the new AWS security guidance in MCSB, allowing you to monitor your AWS environment and resources in Microsoft Defender for Cloud.
+**Automated control monitoring for AWS in Microsoft Defender for Cloud**: You can use **Microsoft Defender for Cloud Regulatory Compliance Dashboard** to monitor your AWS environment against **Microsoft cloud security benchmark (MCSB)**, just like how you monitor your Azure environment. We developed approximately **180 AWS checks** for the new AWS security guidance in MCSB, allowing you to monitor your AWS environment and resources in Microsoft Defender for Cloud.
 
-**Example:** Microsoft Defender for Cloud - Regulatory compliance dashboard
+**Example**: Microsoft Defender for Cloud - Regulatory compliance dashboard
 
-:::image type="content" source="../media/microsoft-defender-for-cloud-regulatory-compliance-dashboard-example-0888f689.png" alt-text="Screenshot showing an example of the Microsoft Defender for Cloud Regulatory compliance dashboard.":::
+:::image type="content" source="../media/defender-for-cloud-regulatory-compliance-ee57a2ca.png" alt-text="Screenshot showing an example of the Defender for Cloud regulatory compliance dashboard in the Azure portal.":::
 
 
 **Azure guidance and security principles**: Azure security guidance, security principles, features, and capabilities.
