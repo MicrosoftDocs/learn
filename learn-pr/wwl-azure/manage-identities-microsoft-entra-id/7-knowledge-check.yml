@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/15/2023
+  ms.date: 12/19/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -25,18 +25,18 @@ quiz:
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
       isCorrect: true
       explanation: "Correct. External ID allows external users to bring their own identities and use them to sign in, while you manage access to your apps with Microsoft Entra ID or Azure AD B2C to keep your resources protected."
-  - content: "What does Entra ID Automation enable?"
+  - content: "What does Microsoft Entra ID Automation enable?"
     choices:
     - content: "Enables the creation of unstable application hosting platforms."
       isCorrect: false
-      explanation: "Incorrect. Entra ID Automation enables the creation of secure and stable application hosting platforms."
+      explanation: "Incorrect. Microsoft Entra ID Automation enables the creation of secure and stable application hosting platforms."
     - content: "Enables manual creation and teardown of environments."
       isCorrect: false
-      explanation: "Incorrect. Entra ID Automation enables the automation of creation and teardown of environments."
+      explanation: "Incorrect. Microsoft Entra ID Automation enables the automation of creation and teardown of environments."
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
       isCorrect: true
-      explanation: "Correct. Entra ID Automation enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-  - content: "What is the purpose of B2B collaboration in Microsoft Entra?"
+      explanation: "Correct. Microsoft Entra ID Automation enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "What is the purpose of B2B collaboration in Microsoft Entra ID?"
     choices:
     - content: "Allows external users to have full privileges in your directory."
       isCorrect: false
@@ -47,25 +47,25 @@ quiz:
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
       isCorrect: true
       explanation: "Correct. B2B collaboration allows external users to sign in to your organization using their own credentials and access the apps and resources you want to share with them, while still having limited privileges in your directory by default."
-  - content: "What does Entra ID enable in terms of application hosting platforms?"
+  - content: "What does Microsoft Entra ID enable in terms of application hosting platforms?"
     choices:
     - content: "Enables the creation of unstable environments."
       isCorrect: false
-      explanation: "Incorrect. Entra ID enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      explanation: "Incorrect. Microsoft Entra ID enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
     - content: "Enables unauthorized access to application hosting platforms."
       isCorrect: false
-      explanation: "Incorrect. Entra ID enables secure user identities to prevent unauthorized access and protect user accounts."
+      explanation: "Incorrect. Microsoft Entra ID enables secure user identities to prevent unauthorized access and protect user accounts."
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
       isCorrect: true
-      explanation: "Correct. Entra ID enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-  - content: "What does Entra ID Automation enable?"
+      explanation: "Correct. Microsoft Entra ID enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "What does Microsoft Entra ID Automation enable?"
     choices:
     - content: "Enables the creation of user accounts."
       isCorrect: false
-      explanation: "Incorrect. Entra ID Automation is not limited to user account creation."
+      explanation: "Incorrect. Microsoft Entra ID Automation is not limited to user account creation."
     - content: "Enables the creation of groups."
       isCorrect: false
-      explanation: "Incorrect. Entra ID Automation is not limited to group creation."
+      explanation: "Incorrect. Microsoft Entra ID Automation is not limited to group creation."
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
       isCorrect: true
-      explanation: "Correct. Entra ID Automation enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      explanation: "Correct. Microsoft Entra ID Automation enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."

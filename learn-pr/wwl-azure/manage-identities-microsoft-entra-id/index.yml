@@ -2,8 +2,8 @@
 uid: learn.wwl.manage-identities-microsoft-entra-id
 metadata:
   title: Manage identities in Microsoft Entra ID
-  description: "This module focuses on effectively managing identities and enhancing security in Microsoft Enterprise Identity (Entra ID), ensuring that users, groups, and external identities are protected against security threats and unauthorized access."
-  ms.date: 12/15/2023
+  description: "This module focuses on effectively managing identities and enhancing security in Microsoft Entra ID, ensuring that users, groups, and external identities are protected against security threats and unauthorized access."
+  ms.date: 12/19/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
