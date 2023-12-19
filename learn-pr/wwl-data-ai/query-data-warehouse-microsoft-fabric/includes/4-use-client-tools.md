@@ -25,7 +25,7 @@ In Microsoft Fabric, two types of authenticated users are supported through the 
 - Microsoft Entra ID (formerly Azure Active Directory) user principals, or user identities
 - Microsoft Entra ID (formerly Azure Active Directory) service principals
 
-> [ !NOTE] 
+> [!NOTE] 
 > SQL authentication is not supported.
 
 ## Other tools
