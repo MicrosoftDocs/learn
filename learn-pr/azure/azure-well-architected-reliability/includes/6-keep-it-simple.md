@@ -38,7 +38,7 @@ Standards provide consistency and minimize human errors. Approaches like standar
 
 *Applying the approach and outcomes*
 
-- The team taking over support of the new app makes an effort to achieve greater consistency in applying coding styles, standardizing on a common set of libraries and design patterns, and formalizing the use of release gates based on automated tests.
+- The team taking over support of the new app makes an effort to achieve greater consistency by enforcing coding styles, standardizing on a common set of libraries and design patterns, and formalizing the use of release gates based on automated tests.
 - While these changes are being implemented, the workload team adhere's to their standard documentation requirements. All of the new tools, design patterns, and styles being adopted are thoroughly documented, allowing the team to understand and maintain the workload more efficiently going forward. This also allows the team to more easily identify deviations in the standards when performing code reviews.
 
 ## Minimize your operations and development burden
