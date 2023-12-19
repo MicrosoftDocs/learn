@@ -43,7 +43,7 @@ Immutable and transactionally consistent backups ensure that data can't be alter
 *Applying the approach and outcomes*
 
 - Since the databases are quite large at over 4TB each, migrating to Azure SQL Database is not achievable in the short term. So, the team migrates to Azure VMs running SQL Server 2022.
-- The team decides that they will use the Automated  Backup function for all of the databases except the critical ones, including the one used by the VMs.
+- The team decides that they will use the Automated  Backup function for all databases, including the critical ones, like the one used by the VMs.
 - For the critical databases, the team will use the Automated Backup function along with the Managed Instance link function to actively replicate the databases to an Azure SQL Managed Instance.
 
 ## Implement automated self-healing capabilities in the design
