@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg"::: Prevent or minimize system and workload downtime and degradation in the event of a security incident by using strong security controls. You must maintain data integrity during the incident and after the system recovers. |
+| :::image type="icon" source="../media/goal.svg"::: Prevent or minimize system and workload downtime and degradation in the event of a security incident by using strong security controls. You must maintain data integrity during the incident and after the system recovers. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
 You need to balance availability architecture choices with security architecture choices. The system should have availability guarantees to ensure that users have access to data and that data is reachable. From a security perspective, users should operate within the allowed access scope, and the data must be trusted. Security controls should block bad actors, but they shouldn't block legitimate users from accessing the system and data.

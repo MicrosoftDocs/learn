@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg"::: Prevent exposure to privacy, regulatory, application, and proprietary information through access restrictions and obfuscation techniques. |
+| :::image type="icon" source="../media/goal.svg"::: Prevent exposure to privacy, regulatory, application, and proprietary information through access restrictions and obfuscation techniques. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
 Workload data can be classified by user, usage, configuration, compliance, intellectual property, and more. Workload data must not be shared or accessed beyond the established trust boundaries. Efforts to protect confidentiality should focus on access controls, opacity, and keeping an audit trail of activities that pertain to data and the system.

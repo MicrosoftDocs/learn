@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg"::: Strive to adopt and implement security practices in architectural design decisions and operations with minimal friction. |
+| :::image type="icon" source="../media/goal.svg"::: Strive to adopt and implement security practices in architectural design decisions and operations with minimal friction. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
 As a workload owner, you have a shared responsibility with the organization to protect assets. Create a security readiness plan that's aligned with business priorities. It will lead to well-defined processes, adequate investments, and appropriate accountabilities. The plan should provide the workload requirements to the organization, which also shares responsibility for protecting assets. Security plans should factor into your strategy for reliability, health modeling, and self-preservation.
