@@ -23,7 +23,7 @@ prerequisites: |
   - Familiarity with basic Docker concepts and a Docker account
   - Familiarity with microservice design
   - Familiarity with developing applications in C# and .NET.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels: 
   - beginner
 roles: 
