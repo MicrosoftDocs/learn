@@ -1,4 +1,4 @@
-In the preprocessing phase, data quality issues are addressed and the data is prepared for modeling. Tools like Data Wrangler provide a graphical interface for easy exploration and preprocessing for training machine learning models.
+Learning how to query a data warehouse empowers individuals to extract, analyze, and interpret large volumes of stored data, transforming raw data into meaningful insights. These insights can drive strategic decision-making, optimize operations, and uncover hidden patterns and trends.
 
 There’s no one-size-fits-all solution for querying your data. The best approach depends on the specifics of your data warehouse and the question you’re trying to answer.
 
