@@ -7,7 +7,7 @@ metadata:
   author: burkeholland
   ms.author: buhollan
   manager: toanglin
-  ms.topic: " module"
+  ms.topic: module
   ms.prod: vs-code
 
 title: Personalize your Remote Development workflow with VS Code
@@ -48,3 +48,6 @@ units:
   - learn.personalize-remote-development-workflow.exercise-settings-sync
   - learn.personalize-remote-development-workflow.combine-remote-experiences
   - learn.personalize-remote-development-workflow.knowledge-check
+
+badge:
+  uid: learn.personalize-remote-development-workflow.badge
