@@ -4,14 +4,14 @@ It's important to know that there are different configurations available for VPN
 
 A Site-to-site (S2S) VPN gateway connection is a connection over IPsec/IKE (IKEv1 or IKEv2) VPN tunnel. S2S connections can be used for cross-premises and hybrid configurations. A S2S connection requires a VPN device located on-premises that has a public IP address assigned to it. For information about selecting a VPN device, see the VPN Gateway FAQ - VPN devices.
 
-:::image type="content" source="../media/site-to-site-virtual-private-network-6d2fffa6.png" alt-text="Diagram showing an example of a Site-to-site VPN.":::
+:::image type="content" source="../media/site-to-site-virtual-private-network-6d2fffa6.png" alt-text="Diagram showing an example of a site-to-site virtual private network.":::
 
 
 VPN Gateway can be configured in active-standby mode using one public IP or in active-active mode using two public IPs. In active-standby mode, one IPsec tunnel is active and the other tunnel is in standby. In this setup, traffic flows through the active tunnel, and if some issue happens with this tunnel, the traffic switches over to the standby tunnel. Setting up VPN Gateway in active-active mode is recommended in which both the IPsec tunnels are simultaneously active, with data flowing through both tunnels at the same time. An additional advantage of active-active mode is that customers experience higher throughputs.<br>
 
 You can create more than one VPN connection from your virtual network gateway, typically connecting to multiple on-premises sites. When working with multiple connections, you must use a RouteBased VPN type (known as a dynamic gateway when working with classic VNets). Because each virtual network can only have one VPN gateway, all connections through the gateway share the available bandwidth. This type of connection is sometimes referred to as a "multi-site" connection.
 
-:::image type="content" source="../media/internet-protocol-security-tunnel-2b8000c8.png" alt-text="Diagram showing how a VPN Gateway can be configured in active-standby mode using one public IP or in active-active mode using two public IPs.":::
+:::image type="content" source="../media/internet-protocol-security-tunnel-2b8000c8.png" alt-text="Diagram showing how a virtual private network gateway can be configured in active-standby mode using one public internet protocol address or in active-active mode using two public internet protocol addresses.":::
 
 
 ## Point-to-site VPN
@@ -20,4 +20,4 @@ A point-to-site (P2S) VPN gateway connection lets you create a secure connection
 
 Unlike S2S connections, P2S connections don't require an on-premises public-facing IP address or a VPN device. P2S connections can be used with S2S connections through the same VPN gateway, as long as all the configuration requirements for both connections are compatible.
 
-:::image type="content" source="../media/point-to-site-vpn-8139481d.png" alt-text="Diagram showing an example of a Site-to-site VPN.":::
+:::image type="content" source="../media/point-to-site-vpn-8139481d.png" alt-text="Diagram showing an example of a point-to-site virtual private network.":::
