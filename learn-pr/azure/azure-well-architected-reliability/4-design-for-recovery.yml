@@ -4,7 +4,7 @@ title: Design for recovery
 metadata:
   title: Design for recovery
   description: Learn strategies for designing your Azure workload to support recovery.
-  ms.date: 12/31/2023
+  ms.date: 12/18/2023
   author: claytonsiemens77
   ms.author: csiemens
   ms.topic: interactive-tutorial
