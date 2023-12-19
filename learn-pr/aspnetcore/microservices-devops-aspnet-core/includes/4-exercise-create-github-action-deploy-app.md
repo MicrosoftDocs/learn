@@ -138,7 +138,7 @@ You have a new product your marketing team would like to add to the catalog.
 
 Complete the following steps to verify that your app still works:
 
-1. View the deployed eShop by running this command in the terminal:
+- View the deployed eShop by running this command in the terminal:
 
     ```bash
     echo "http://$(kubectl get services --namespace ingress-nginx ingress-nginx-controller --output jsonpath='{.status.loadBalancer.ingress[0].ip}')"
