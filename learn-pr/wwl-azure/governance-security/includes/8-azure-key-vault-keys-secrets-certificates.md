@@ -46,7 +46,7 @@ A response includes these additional read-only attributes:
  -  **exp**: IntDate contains the value of the expiration date of the X.509 certificate.
  -  **nbf**: IntDate contains the value of the "not before" date of the X.509 certificate.
 
-*If a Key Vault certificate expires it can still be retrieved, but certificate may become inoperable in scenarios like TLS protection where expiration of certificate is validated.*
+*If a Key Vault certificate expires it can still be retrieved, but certificate may become inoperable in scenarios like Transport Layer Security protection where expiration of certificate is validated.*
 
 **Tags**
 
@@ -69,7 +69,7 @@ At a high level, a certificate policy contains the following information:
  -  Lifetime actions for the Key Vault certificate. Each lifetime action contains:
  -  Trigger: Specified as days before expiration or lifetime span percentage.
  -  Action: `emailContacts` or `autoRenew`.
- -  Certificates validation type: organization validated (OV-SSL) and extended validation (EV-SSL) for DigiCert and GlobalSign issuers.
+ -  Certificates validation type: organization validated (Organization Validated-Secure Socket Layer) and extended validation (Extended Validation-Secure Socket Layer) for DigiCert and GlobalSign issuers.
  -  Parameters about the certificate issuer to use for issuing X.509 certificates.
  -  Attributes associated with the policy.
 
@@ -81,13 +81,13 @@ The following table represents the mapping of X.509 key usage policies to effect
 
 A Key Vault certificate object holds a configuration that's used to communicate with a selected certificate issuer provider to order X.509 certificates.
 
-Key Vault partners with the following certificate issuer providers for TLS/SSL certificates.
+Key Vault partners with the following certificate issuer providers for Transport Layer Security/Secure Sockets Layer certificates.
 
-:::image type="content" source="../media/certificate-issuer-providers-for-tls-ssl-certificates-cc297a92.png" alt-text="le showing certificate issuer providers for TLS/SSL certificates.":::
-Before a certificate issuer can be created in a key vault, an administrator must take the following prerequisite steps:
+:::image type="content" source="../media/transport-layer-security-certificates-384dd794.png" alt-text="Table showing certificate issuer providers for TLS/SSL certificates.":::
+Before a certificate issuer can be created in a key vault, an administrator must take the following prerequisite steps:<br>
 
 1.  Onboard the organization with at least one CA provider.
-2.  Create requester credentials for Key Vault to enroll (and renew) TLS/SSL certificates. This step provides the configuration for creating an issuer object of the provider in the key vault.
+2.  Create requester credentials for Key Vault to enroll (and renew) Transport Layer Security/Secure Sockets Layer certificates. This step provides the configuration for creating an issuer object of the provider in the key vault.
 
 For more information on creating issuer objects from the certificate portal, see the Key Vault Team Blog.
 
@@ -95,7 +95,7 @@ Key Vault allows for the creation of multiple issuer objects with different issu
 
 Issuer objects are created in the vault. They can be used only with Key Vault certificates in the same vault.
 
-*Publicly trusted certificates are sent to CAs and certificate transparency (CT) logs outside the Azure boundary during enrollment. They're covered by the GDPR policies of those entities.*
+*Publicly trusted certificates are sent to CAs and certificate transparency (CT) logs outside the Azure boundary during enrollment. They're covered by the General Data Protection Regulation policies of those entities.*
 
 ## Certificate contacts
 
@@ -113,11 +113,11 @@ Users can create one or more vaults to hold certificates, to maintain scenario-a
 
 ### Secure communication and authentication
 
-TLS certificates can help encrypt communications over the internet and establish the identity of websites. This encryption makes the entry point and mode of communication more secure. Additionally, a chained certificate that's signed by a public CA can help verify that the entities holding the certificates are legitimate.
+Transport Layer Security certificates can help encrypt communications over the internet and establish the identity of websites. This encryption makes the entry point and mode of communication more secure. Additionally, a chained certificate that's signed by a public CA can help verify that the entities holding the certificates are legitimate.
 
 As an example, here are some use cases of using certificates to secure communication and enable authentication:<br>
 
- -  **Intranet/internet websites**: Protect access to your intranet site and ensure encrypted data transfer over the internet through TLS certificates.<br>
+ -  **Intranet/internet websites**: Protect access to your intranet site and ensure encrypted data transfer over the internet through Transport Layer Security certificates.<br>
  -  **IoT and networking devices**: Protect and secure your devices by using certificates for authentication and communication.
  -  **Cloud/multicloud**: Secure cloud-based applications on-premises, cross-cloud, or in your cloud provider's tenant.
 

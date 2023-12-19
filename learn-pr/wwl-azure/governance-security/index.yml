@@ -3,7 +3,7 @@ uid: learn.wwl.governance-security
 metadata:
   title: Plan, implement, and manage governance for security
   description: "This module focuses on enabling administrators to effectively plan, implement, and manage security governance in Azure, ensuring compliance with organizational policies and best practices."
-  ms.date: 12/14/2023
+  ms.date: 12/19/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
@@ -37,8 +37,8 @@ units:
 - learn.wwl.governance-security.azure-blueprints
 - learn.wwl.governance-security.infrastructure-security-architecture
 - learn.wwl.governance-security.create-a-key-vault-using-the-azure-portal
-- learn.wwl.governance-security.azure-dedicated-hsm
-- learn.wwl.governance-security.provide-access-to-key-vault-keys-certificates-secrets-with-azure-role-based-access-control
+- learn.wwl.governance-security.azure-dedicated-hardware-security-module
+- learn.wwl.governance-security.provide-access-to-key-vault-keys-certificates-secrets
 - learn.wwl.governance-security.azure-key-vault-keys-secrets-certificates
 - learn.wwl.governance-security.configure-cryptographic-key-auto-rotation-in-azure-key-vault
 - learn.wwl.governance-security.azure-key-vault-backup-and-restore

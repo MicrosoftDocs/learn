@@ -47,6 +47,6 @@ Your new initiative takes effect and you can see the results in the following tw
  -  From the Defender for Cloud menu, select **Regulatory compliance**. The compliance dashboard opens to show your new custom initiative alongside the built-in initiatives.<br>
  -  You'll begin to receive recommendations if your environment doesn't follow the policies you've define<br>
 
-8. To see the resulting recommendations for your policy, select **Recommendations** from the sidebar to open the recommendations page. The recommendations will appear with a "Custom" label and be available within approximately one hour.
+7. To see the resulting recommendations for your policy, select **Recommendations** from the sidebar to open the recommendations page. The recommendations will appear with a "Custom" label and be available within approximately one hour.
 
 :::image type="content" source="../media/custom-policy-recommendations-3c20e520.png" alt-text="Screenshot showing the recommendations page in Defender for Cloud.":::

@@ -1,10 +1,10 @@
 This module focuses on enabling administrators to effectively plan, implement, and manage security governance in Azure, ensuring compliance with organizational policies and best practices.
 
-# Scenario
+## Scenario
 
 Imagine you are a security administrator responsible for maintaining the security posture of your organization's Azure environment. Your organization relies on Azure for critical workloads, and you need to establish robust governance practices to protect sensitive data and maintain regulatory compliance.
 
-# Learning Objectives
+## Learning Objectives
 
 By the end of this module, participants will be able to:
 
@@ -18,6 +18,6 @@ By the end of this module, participants will be able to:
  -  Configure key rotation to enhance security by regularly updating cryptographic keys.
  -  Implement backup and recovery processes for certificates, secrets, and keys to ensure data resilience and availability.
 
-# Goals
+## Goals
 
 The module aims to equip participants with the knowledge and skills necessary to establish and manage governance practices for security in Azure. Participants will be able to enforce security policies, configure secure infrastructures, manage cryptographic keys securely, and implement backup and recovery measures, ultimately enhancing the security posture and compliance of their Azure environments.
