@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.custom:
     - build-2023
-  ms.prod: learning-sqlserver
+  ms.service: sql
 title: Introduction to SQL Server 2022 data virtualization
 summary: "Data virtualization and enhanced PolyBase features introduced in SQL Server 2022."
 abstract: |
