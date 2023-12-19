@@ -11,7 +11,7 @@ The following are the requirements:
  **Key Exchange Key**: An HSM-backed key that customer generates in the key vault where the BYOK key will be imported. This KEK must have following properties:
 
  -  It’s a Rivest-Shamir-Adleman (RSA) encryption algorithm RSA-HSM key (4096-bit or 3072-bit or 2048-bit).
- -  It will have fixed key\_ops (ONLY ‘import’), that will allow it to be used ONLY during BYOK.
+ -  It will have fixed key\_ops (ONLY ‘import’), that allows it to be used ONLY during BYOK.
  -  Must be in the same vault where the Target Key will be imported.
 
 ## User steps
@@ -48,7 +48,7 @@ Download the public key portion of the KEK and store it into a PEM file.
 
 ## Generate key transfer blob using HSM vendor provided BYOK tool
 
-Customer will use HSM Vendor provided BYOK tool to create a key transfer blob (stored as a ".byok" file). KEK public key as a **.Privacy-Enhanced Mail** (.pem file) will be one of the inputs to this tool.
+Customer uses HSM Vendor provided BYOK tool to create a key transfer blob (stored as a ".byok" file). KEK public key as a **.Privacy-Enhanced Mail** (.pem file) will be one of the inputs to this tool.
 
 ### Key Transfer Blob
 
@@ -70,4 +70,4 @@ The format of the transfer blob uses **JavaScript Object Notation** (JSON) Web E
 
 ### Upload key transfer blob to import HSM-key
 
-Customer will transfer the Key Transfer Blob (".byok" file) to an online workstation and then run an az keyvault key import command to import this blob as a new HSM-backed key into Key Vault.
+Customer transfers the Key Transfer Blob (".byok" file) to an online workstation and then run an az keyvault key import command to import this blob as a new HSM-backed key into Key Vault.
