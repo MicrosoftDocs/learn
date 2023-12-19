@@ -10,7 +10,7 @@ There are two main steps to the role assignment process. First you'll select the
 
 3. Search for and select the user getting the role assignment.
 
-:::image type="content" source="../media/select-the-role-to-assign-1-c662ce85.png" alt-text="Screenshot showing the users page.":::
+:::image type="content" source="../media/select-role-assign-1-4d4c9050.png" alt-text="Screenshot showing the users page.":::
 
 
 4. Select **Assigned roles** from the side menu, then select **Add assignments**.
@@ -50,7 +50,7 @@ You can change the settings of a role assignment, for example to change an activ
 
 4. Change the settings as needed and select the **Save** button.<br>
 
-:::image type="content" source="../media/removing-and-updating-assigned-roles-5-7283d76d.png" alt-text="Screenshot showing how to remove and update assigned roles.":::
+:::image type="content" source="../media/remove-update-assigned-roles-5-b2605f1d.png" alt-text="Screenshot showing how to remove and update assigned roles.":::
 
 
 ## Remove roles<br>
