@@ -33,12 +33,12 @@ products:
 subjects:
 - cloud-security
 units:
-- learn.azure-well-architected-security.1-introduction
-- learn.azure-well-architected-security.2-plan-your-security-readiness
-- learn.azure-well-architected-security.3-design-to-protect-confidentiality
-- learn.azure-well-architected-security.4-design-to-protect-integrity
-- learn.azure-well-architected-security.5-design-to-protect-availability
-- learn.azure-well-architected-security.6-sustain-and-evolve-your-security-posture
-- learn.azure-well-architected-security.7-summary
+- learn.azure-well-architected-security.introduction
+- learn.azure-well-architected-security.plan-your-security-readiness
+- learn.azure-well-architected-security.design-to-protect-confidentiality
+- learn.azure-well-architected-security.design-to-protect-integrity
+- learn.azure-well-architected-security.design-to-protect-availability
+- learn.azure-well-architected-security.sustain-and-evolve-your-security-posture
+- learn.azure-well-architected-security.summary
 badge:
   uid: learn.azure-well-architected-security.badge
