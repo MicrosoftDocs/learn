@@ -37,13 +37,13 @@ First, follow these steps to create an example scope named `Employees.Read.All:`
 
 2. If you have access to multiple tenants, use the Directories + subscriptions filter in the top menu to select the tenant containing your client app's registration.<br>
 
-3. Browse to Identity &gt; Applications &gt; App registrations, and then select your API's app registration.<br>
+3. Browse to Identity, Applications, App registrations, and then select your API's app registration.<br>
 
 4. Select Expose an API<br>
 
 5. Select Add next to Application ID URI if you haven't yet configured one.<br>
 
-You can use the default value of api://&lt;application-client-id&gt; or another supported App ID URI pattern. The App ID URI acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique.<br>
+You can use the default value of application client identity or another supported App ID URI pattern. The App ID URI acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique.<br>
 
 6. Select Add a scope:
 

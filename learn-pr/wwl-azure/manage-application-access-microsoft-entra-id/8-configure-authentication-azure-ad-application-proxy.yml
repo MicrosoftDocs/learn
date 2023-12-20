@@ -4,10 +4,10 @@ title: Recommend when to use and configure an Microsoft Entra Application Proxy,
 metadata:
   title: Recommend when to use and configure an Microsoft Entra Application Proxy, including authentication
   description: "Recommend when to use and configure an Microsoft Entra Application Proxy, including authentication"
-  ms.date: 12/19/2023
+  ms.date: 12/20/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/7-configure-authentication-azure-ad-application-proxy.md)]
+  [!include[](includes/8-configure-authentication-azure-ad-application-proxy.md)]

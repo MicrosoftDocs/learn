@@ -4,10 +4,10 @@ title: Manage app registrations in Microsoft Entra ID
 metadata:
   title: Manage app registrations in Microsoft Entra ID
   description: "Register an application with App Registration"
-  ms.date: 12/19/2023
+  ms.date: 12/20/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-manage-application-registrations-microsoft-entra-id.md)]
+  [!include[](includes/3-manage-application-registrations-microsoft-entra-id.md)]

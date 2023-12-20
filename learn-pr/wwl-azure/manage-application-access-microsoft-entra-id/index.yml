@@ -3,7 +3,7 @@ uid: learn.wwl.manage-application-access-microsoft-entra-id
 metadata:
   title: Manage application access in Microsoft Entra ID
   description: "This module focuses on effectively managing identities and enhancing security in Microsoft Enterprise Identity (Entra ID), ensuring that users, groups, and external identities are protected against security threats and unauthorized access."
-  ms.date: 12/19/2023
+  ms.date: 12/20/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
@@ -31,6 +31,7 @@ subjects:
 - cloud-security
 units:
 - learn.wwl.manage-application-access-microsoft-entra-id.introduction
+- learn.wwl.manage-application-access-microsoft-entra-id.manage-access-application
 - learn.wwl.manage-application-access-microsoft-entra-id.manage-application-registrations-microsoft-entra-id
 - learn.wwl.manage-application-access-microsoft-entra-id.configure-application-expose-web-api
 - learn.wwl.manage-application-access-microsoft-entra-id.permissions-consent
@@ -39,6 +40,5 @@ units:
 - learn.wwl.manage-application-access-microsoft-entra-id.configure-authentication-azure-ad-application-proxy
 - learn.wwl.manage-application-access-microsoft-entra-id.knowledge-check
 - learn.wwl.manage-application-access-microsoft-entra-id.summary
-- learn.wwl.manage-application-access-microsoft-entra-id.manage-access-application
 badge:
   uid: learn.wwl.manage-application-access-microsoft-entra-id.badge
