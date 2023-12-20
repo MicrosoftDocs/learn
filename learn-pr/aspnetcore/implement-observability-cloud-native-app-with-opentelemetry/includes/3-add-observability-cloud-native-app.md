@@ -27,7 +27,7 @@ You could choose to include all of the `OpenTelemetry` packages to both the **Pr
 
 Here's some example code that creates a method `AddObservability` that a microservice can call to use OpenTelemetry:
 
-:::code language="csharp" source="../code/simple-diagnostics.cs" id="DiagnosticServiceCollectionExtensions" range="7-51" highlight="9-11,16-37,40-48":::
+:::code language="csharp" source="../code/simple-diagnostics.cs" range="7-51" highlight="9-11,16-37,40-48":::
 
 The method returns an `IServiceCollection` that can be added as a service to an ASP.NET Core `WebApplicationBuilder`.
 
