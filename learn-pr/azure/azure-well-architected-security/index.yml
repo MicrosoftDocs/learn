@@ -33,7 +33,7 @@ products:
 subjects:
 - cloud-security
 units:
-- learn.azure-well-architected-security.introduction
+- learn.azure-well-architected-security.1-introduction
 - learn.azure-well-architected-security.plan-your-security-readiness
 - learn.azure-well-architected-security.design-to-protect-confidentiality
 - learn.azure-well-architected-security.design-to-protect-integrity
