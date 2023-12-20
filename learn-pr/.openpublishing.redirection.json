@@ -64,6 +64,41 @@
         "source_path_from_root": "/learn-pr/azure/introduction-to-red-hat-azure/4-when.yml",
         "redirect_url": "/training/modules/introduction-to-red-hat-azure/4-when-to-use-red-hat-on-azure",
         "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/azure-well-architected-security/2-defense-in-depth.yml",
+        "redirect_url": "/training/modules/azure-well-architected-security/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/azure-well-architected-security/3-identity-management.yml",
+        "redirect_url": "/training/modules/azure-well-architected-security/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/azure-well-architected-security/4-infrastructure-protection.yml",
+        "redirect_url": "/training/modules/azure-well-architected-security/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/azure-well-architected-security/5-encryption.yml",
+        "redirect_url": "/training/modules/azure-well-architected-security/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/azure-well-architected-security/6-network-security.yml",
+        "redirect_url": "/training/modules/azure-well-architected-security/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/azure-well-architected-security/7-application-security.yml",
+        "redirect_url": "/training/modules/azure-well-architected-security/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/azure-well-architected-security/8-summary.yml",
+        "redirect_url": "/training/modules/azure-well-architected-security/",
+        "redirect_document_id": false
       }
     ]
   }
