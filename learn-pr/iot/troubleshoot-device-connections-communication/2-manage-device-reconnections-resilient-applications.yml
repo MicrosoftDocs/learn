@@ -11,4 +11,4 @@ metadata:
   ms.topic: module-standard-task-based
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-examine-device-connection-best-practices.md)]
+  [!include[](includes/2-manage-device-reconnections-resilient-applications.md)]
