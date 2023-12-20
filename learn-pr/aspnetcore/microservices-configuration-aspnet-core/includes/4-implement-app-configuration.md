@@ -58,7 +58,7 @@ The product page needs to be updated to use the new configuration setting. Compl
 
 The product page needs to be updated to display the discounted prices. Complete the following steps:
 
-1. , replace `<td>@product.Price</td>` with this code:
+1. Replace `<td>@product.Price</td>` with this code:
 
     ```csharp
     <td>
