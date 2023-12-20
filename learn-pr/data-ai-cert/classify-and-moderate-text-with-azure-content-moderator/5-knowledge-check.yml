@@ -27,10 +27,10 @@ quiz:
     choices:
     - content: "It's the identifier of the profanity word list that was used for the check."
       isCorrect: true
-      explanation: "The `ListId`` identifies the custom term list that was used for the check."
+      explanation: "The `ListId` identifies the custom term list that was used for the check."
     - content: "It's the language ID that the list used for testing."
       isCorrect: false
-      explanation: "The `ListId`` isn't used to determine the language."
+      explanation: "The `ListId` isn't used to determine the language."
     - content: "It's the identifier of a term in a custom term list."
       isCorrect: false
       explanation: "The `Term` value identifies the specific term. The `ListId` identifies a custom term list if one is used."
