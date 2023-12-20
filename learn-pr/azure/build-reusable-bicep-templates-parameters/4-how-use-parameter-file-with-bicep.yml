@@ -6,8 +6,8 @@ metadata:
   title: Provide values using parameter files
   description: Learn about parameter files and how parameter values can be provided to Bicep deployments.
   ms.date: 01/03/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep

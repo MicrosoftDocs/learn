@@ -6,8 +6,8 @@ metadata:
   title: Introduction
   description: Introduction to testing Bicep code by using GitHub Actions.
   ms.date: 12/27/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep

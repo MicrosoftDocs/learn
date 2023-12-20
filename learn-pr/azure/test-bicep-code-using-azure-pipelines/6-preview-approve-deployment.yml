@@ -6,8 +6,8 @@ metadata:
   title: Preview and approve your deployment
   description: Learn about previewing the changes that your Bicep code will make to your Azure environment by using the what-if operation in a deployment pipeline.
   ms.date: 10/31/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep

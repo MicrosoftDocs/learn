@@ -6,8 +6,8 @@ metadata:
   title: Add parameters and outputs to modules
   description: Learn how to plan the parameters and outputs of your Bicep modules.
   ms.date: 03/27/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep

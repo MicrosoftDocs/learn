@@ -9,7 +9,6 @@ metadata:
   ms.author: franksolomon
   ms.topic: unit
   ms.reviewer: franksolomon
-  ms.prod: learning-azure
 durationInMinutes: 5
 content: |
   [!include[](includes/6-evaluate-image-language-data.md)] 

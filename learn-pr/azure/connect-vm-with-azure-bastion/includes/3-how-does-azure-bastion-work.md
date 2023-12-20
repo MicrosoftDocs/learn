@@ -1,6 +1,6 @@
 An Azure Bastion deployment is per virtual network or peered virtual network. It's not per subscription, account, or virtual machine (VM). After you provision an Azure Bastion service in your virtual network, the RDP or SSH experience is available to all your VMs in the same virtual network.
 
-The following diagram shows an overview of how Azure Bastion works:
+The following diagram shows an overview of how Azure Bastion works when connecting via the portal:
 
 :::image type="icon" source="../media/3-bastion-architecture-overview.png" border="false" alt-text="Diagram that shows the process of connecting to a VM through the Azure portal by using Azure Bastion.":::
 
@@ -59,7 +59,7 @@ If you want to use Azure PowerShell or the Azure CLI to deploy Azure Bastion, ru
 - Public IP
 - Azure Bastion resource
 
- The following sections show examples that you can use to deploy Azure Bastion.
+The following sections show examples that you can use to deploy Azure Bastion.
 
 ### Use Azure PowerShell to deploy Azure Bastion
 

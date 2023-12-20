@@ -2,7 +2,7 @@ Cloud-native applications are built from the ground up and optimized for cloud s
 
 ## Scenario
 
-Suppose you work on a team that needs to deploy cloud-native apps using Azure services. The team will begin by exploring the benefits of running containerized apps and the container service options in Azure. To better understand the solution architecture, the team will examine a reference solution that includes many of the tools they expect to use in their solution.
+Suppose you work on a team that wants to deploy cloud-native apps using Azure services. The team doesn't have a lot of experience using Azure for app deployments so they've asked you to investigate. You begin by exploring the benefits of running containerized apps and the container service options in Azure. To better understand the solution architecture, you'll examine a reference solution that includes many of the tools the team expects to use in their solution.
 
 ## Table of contents
 

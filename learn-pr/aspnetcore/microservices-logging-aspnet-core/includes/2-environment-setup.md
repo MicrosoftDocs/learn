@@ -3,7 +3,7 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
 ## Open the development environment and create the Azure resources
 
 > [!NOTE]
-> If you wish to use GitHub Codespaces, navigate to [your codespaces for the MicrosoftDocs/mslearn-aspnet-core repository](https://github.com/MicrosoftDocs/mslearn-aspnet-core/codespaces). Create a new codespace using the `main` branch, and then skip to step 3.
+> If you wish to use GitHub Codespaces, navigate to [your codespaces for the MicrosoftDocs/mslearn-aspnet-core repository](https://github.com/MicrosoftDocs/mslearn-aspnet-core/codespaces). Create a new codespace using the `main` branch, and skip to step 3.
 
 1. From a new Visual Studio Code window, press **Ctrl+Shift+P** to open the command palette, and then search for and select **Dev Containers: Clone Repository in Container Volume**.
 
@@ -11,17 +11,17 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
 
     Visual Studio Code creates your development container.
 
-1. After the project loads in the container, expand the *modules* directory, then *microservices-logging-aspnet-core*, and then finally *deploy*. Right-click on the *k8s* directory and select **Open in Integrated Terminal**. This location contains the scripts you're going to use in this module. (Note: By default, Code will display *k8s* on the same line as *deploy* because *deploy* only contains the *k8s* subdirectory.) 
+1. After the project loads in the container, expand the *modules* directory, then *microservices-logging-aspnet-core*, and then finally *deploy*. Right-click on the *k8s* directory and select **Open in Integrated Terminal**. This location contains the scripts you're going to use in this module. (Note: By default, Visual Studio Code will display *k8s* on the same line as *deploy* because *deploy* only contains the *k8s* subdirectory.)
 
     ![Screenshot of the explorer pane in Visual Studio Code. The context menu for the k8s folder is displayed, and Open in Integrated Terminal is selected.](../media/2-environment-setup/k8s-path.png)
 
-1. In the new terminal pane, sign in to the Azure CLI. If using GitHub Codespaces, include the `--use-device-code` flag. If you are using Visual Studio Code, you may optionally omit the flag.
+1. In the new terminal pane, sign in to the Azure CLI. If using GitHub Codespaces, include the `--use-device-code` flag. If you're using Visual Studio Code, you can optionally omit the flag.
 
     ```azurecli
     az login --use-device-code
     ```
 
-1. View your selected Azure subscription.
+1. View your selected Azure subscription:
 
     ```azurecli
     az account show -o table
@@ -48,6 +48,6 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
 
 The script deploys a modified version of the *:::no-loc text="eShopOnContainers":::* [reference app](https://github.com/dotnet-architecture/eshoponcontainers). The solution architecture of the app is pictured in the following diagram:
 
-:::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="eShopOnContainers solution architecture diagram." border="true" lightbox="../../media/microservices/eshop-architecture.png":::
+:::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="Diagram of the eShopOnContainers solution architecture." border="true" lightbox="../../media/microservices/eshop-architecture.png":::
 
-This module focuses on gathering telemetry for services depicted in the preceding diagram. The components to be instrumented are the HTTP aggregator and the catalog, coupon, and ordering services. The deployment script takes several minutes to complete. While the script is running, continue to the next unit to review logging and monitoring concepts.
+This module focuses on gathering telemetry for services depicted in the preceding diagram. The components to be instrumented are the HTTP aggregator and the catalog, coupon, and ordering services. The deployment script takes several minutes to complete. While the script is running, you can continue to the next unit to review logging and monitoring concepts.

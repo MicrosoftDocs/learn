@@ -6,8 +6,8 @@ metadata:
   title: Summary
   description: Summary for creating composable Bicep files by using modules.
   ms.date: 03/27/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep
