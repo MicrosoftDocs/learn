@@ -198,7 +198,7 @@ You'll now test the new observability features you've added to the app.
     docker-compose up
     ```
 
-1. Open a browser and, in a new tab, go to the Prometheus app [http://localhost:9090/](http://localhost:9090/).
+1. Open a browser and, in a new tab, go to the Prometheus app **http://localhost:9090**.
 
 1. In the top menu, select **Status**, then select **Targets**.
 
@@ -326,7 +326,7 @@ You'll now extend the tracing capabilities of the app by adding Zipkin. As you d
     docker-compose up
     ```
 
-1. In a new browser tab, go to the Zipkin app **http://localhost:9411**, 
+1. In a new browser tab, go to the Zipkin app **http://localhost:9411**.
 1. In the menu, select **Dependencies**.
 
     :::image type="content" source="../media/zipkin.png" alt-text="A screenshot of Zipkin showing the dependencies of the eShopLite app, Store sending requests to the Products service.":::
