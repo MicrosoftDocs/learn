@@ -121,7 +121,7 @@ You'll now add the metric to OpenTelemetry, so that it can be exported to your o
 
 1. Open the **:::no-loc text="eShopLite":::** app in a browser at [http://localhost:32000](http://localhost:32000).
 1. Go to the **Products** page, and change the stock amount on several products.
-1. Open the **Prometheus** dashboard at [http://localhost:9090](http://localhost:9090).
+1. Open the **Prometheus** dashboard at **http://localhost:9090**.
 1. In the search box, enter the`eshoplite_products_stock_change_total` metric, then select **Execute**. 
 
     You should see it listed in a table. 
