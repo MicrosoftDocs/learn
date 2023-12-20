@@ -5,7 +5,7 @@ Workload data can be classified by user, usage, configuration, compliance, intel
 
 **Example scenario**
 
-Contoso Rise Up provides a multi-tenant, Software-as-a-Service offering that specializes in supporting non-profits in their fundraising and donation activities. They have been in the market for a few years now with a healthy client base. The solution is built on Azure Red Hat Openshift (ARO) and Azure Database for PostgreSQL. It offers both isolated tenants and co-located tenants as a more affordable  offering. 
+Contoso Rise Up provides a multitenant, Software-as-a-Service offering that specializes in supporting nonprofits in their fundraising and donation activities. They've been in the market for a few years now with a healthy client base. The solution is built on Azure Red Hat OpenShift (ARO) and Azure Database for PostgreSQL. It offers both isolated tenants and colocated tenants as a more affordable  offering. 
 
 ## Strictly limit access
 
@@ -34,15 +34,15 @@ This evaluation helps you right-size security measures. You'll also be able to i
 *Contoso's challenge*
 
 - The donor management system stores many different types of data, ranging from information that is confidential to Contoso Rise Up (such as it’s customer list), to information that’s confidential to its customers (such as the donor list), and information that’s confidential to its customers’ donors (such as their mailing address).
-- The system also holds non-sensitive data, like stock images and document templates.
+- The system also holds nonsensitive data, like stock images and document templates.
 - The workload team has never taken the time to classify data, and has simply applied security broadly across the dataset.
 
 *Applying the approach and outcomes*
 
-- Following the taxonomy lead of the Contoso organization, workload team spends time to flag data stores, columns, storage accounts, and other storage resources with metadata that indicate what type and sensitivity of data exists there.
+- Following the taxonomy lead of the Contoso organization, the workload team spends time to flag data stores, columns, storage accounts, and other storage resources with metadata that indicate what type and sensitivity of data exists there.
 - This activity gives the team the opportunity to validate that sensitive data is treated with the level of confidentiality required throughout the entire system, including logging statements and backups.
-- The team finds that they have some relatively sensitive data in a lower security database and have some non-sensitive data in a higher security database. They will be adjusting storage locations to make sure security controls are aligned with the data they are protecting.
-- They also plan on implementing data masking on key fields to better protect the confidentiality of data, even when authorized staff are accessing the system.
+- The team finds that they have some relatively sensitive data in a lower security database and have some nonsensitive data in a higher security database. They will be adjusting storage locations to make sure security controls are aligned with the data they're protecting.
+- They also plan on implementing data masking on key fields to better protect the confidentiality of data, even when authorized staff access the system.
 
 ## Apply encryption at every step of the data lifecycle
 
