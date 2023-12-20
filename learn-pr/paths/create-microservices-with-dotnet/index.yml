@@ -34,7 +34,7 @@ modules:
 - learn.languages.dotnet-microservices
 - learn.languages.dotnet-deploy-microservices-kubernetes
 - learn.microservices-resiliency-aspnet-core
-- learn.microservices-logging-aspnet-core
+- learn.implement-observability-cloud-native-app-with-opentelemetry
 - learn.implement-compliance-cloud-native-applications
 - learn.microservices-configuration-aspnet-core
 - learn.microservices-devops-aspnet-core
