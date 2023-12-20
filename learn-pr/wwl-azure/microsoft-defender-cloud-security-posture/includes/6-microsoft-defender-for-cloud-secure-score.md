@@ -20,7 +20,7 @@ Defender for Cloud offers the following options for working with security initia
 
 **Example**: Builtin security initiative
 
-:::image type="content" source="../media/cis-microsoft-azure-cloud-security-benchmark-example-384c86d7.png" alt-text="Screenshot showing an example of the CIS Microsoft Azure Foundations Benchmark.":::
+:::image type="content" source="../media/center-for-internet-security-benchmark-example-cd4ac1a6.png" alt-text="Screenshot showing an example of the CIS Microsoft Azure Foundations Benchmark.":::
 
 
 ## What is a security policy?

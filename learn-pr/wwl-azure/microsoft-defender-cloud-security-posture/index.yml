@@ -3,7 +3,7 @@ uid: learn.wwl.microsoft-defender-cloud-security-posture
 metadata:
   title: Manage security posture by using Microsoft Defender for Cloud
   description: "This module focuses on equipping administrators with the knowledge and skills needed to manage and enhance the security posture of their cloud environment using Microsoft Defender for Cloud, ensuring proactive identification and remediation of security risks."
-  ms.date: 12/19/2023
+  ms.date: 12/20/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
@@ -33,7 +33,7 @@ units:
 - learn.wwl.microsoft-defender-cloud-security-posture.introduction
 - learn.wwl.microsoft-defender-cloud-security-posture.implement-azure-security-center
 - learn.wwl.microsoft-defender-cloud-security-posture.secure-score
-- learn.wwl.microsoft-defender-cloud-security-posture.mcsb-regulatory-compliance-dashboard
+- learn.wwl.microsoft-defender-cloud-security-posture.regulatory-compliance-dashboard
 - learn.wwl.microsoft-defender-cloud-security-posture.microsoft-cloud-security-benchmark
 - learn.wwl.microsoft-defender-cloud-security-posture.microsoft-defender-for-cloud-secure-score
 - learn.wwl.microsoft-defender-cloud-security-posture.connect-hybrid-cloud-multi-cloud-environments
