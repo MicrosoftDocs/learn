@@ -11,13 +11,19 @@ In this unit, you will:
 * Change the products page to display a sales banner.
 * Build and test the app.
      
-## Create a new GitHub Codespace
+## Open the development environment
 
-Let's start by creating a new GitHub codespace that hosts the exercise.
+You can choose to use a GitHub codespace that hosts the exercise, or complete the exercise locally in Visual Studio Code.
 
-You can setup a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-feature-flags%2Fdevcontainer.json).
+To use a **codespace** create a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-feature-flags%2Fdevcontainer.json).
 
-This takes several minutes while GitHub creates and configures the codespace. Once finished, you will see the code files for the exercise. The code used for the rest of this module is in the `/dotnet-feature-flags` directory.
+GitHub takes several minutes to create and configure the codespace. When it's finished, you see the code files for the exercise. The code that's used for the remainder of this module is in the **/dotnet-feature-flags** directory.
+
+To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your own GitHub account. Then:
+
+1. Make sure Docker is running. In a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
+1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
+1. Select your forked repository. Visual Studio Code creates your development container locally.
 
 ## Create an App Configuration instance
 
@@ -45,7 +51,7 @@ Complete the following steps to create an App Configuration instance in your Azu
     export CONFIG_NAME=eshop-app-features$SRANDOM    
     ```
 
-    You need to change the **LOCATION** to an Azure region close to you, for example **eastus**. If you'd like a different name for your resource group  or app configuration change the values above.
+    You need to change the **LOCATION** to an Azure region close to you, for example **eastus**. If you'd like a different name for your resource group or app configuration change the values above.
 
 1. Run the following command to create an App Configuration instance:
 
@@ -83,7 +89,7 @@ Complete the following steps to create an App Configuration instance in your Azu
 
 You'll now add the App Configuration connection string to the application. Complete the following steps:
 
-1. In Visual Studio Code, open the **:::no-loc text="docker-compose.yml":::** file.
+1. In Visual Studio Code, open the **:::no-loc text="/dotnet-feature-flags/docker-compose.yml":::** file.
 
 1. Add a new environment variable at line 13.
 
