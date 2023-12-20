@@ -17,7 +17,7 @@ OpenTelemetry consumes all the above telemetry, but first your cloud native app 
 |**Instrumentation**     | [OpenTelemetry.Instrumentation.AspNetCore](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Instrumentation.AspNetCore/README.md)       | Instrumentation for ASP.NET Core applications. This collects a great number of metrics about your app without you having to write any code.        |
 |**Exporter**     |  [OpenTelemetry.Exporter.Console](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.Console/README.md)       | Exporter for the console allows the app to write out telemetry to the console.  |
 
-Many more instrumentation and exporter packages are available to include in your cloud native app. For more information, see [.NET observability with OpenTelemetry](https://learn.microsoft.com/en-us/dotnet/core/diagnostics/observability-with-otel). Depending on the type of app you're building, you can add the packages that are most relevant to you.
+Many more instrumentation and exporter packages are available to include in your cloud native app. For more information, see [.NET observability with OpenTelemetry](/dotnet/core/diagnostics/observability-with-otel). Depending on the type of app you're building, you can add the packages that are most relevant to you.
 
 This module focuses on using OpenTelemetry with the **eShopLite** cloud native app. As this app is built with .NET Core and Blazor WebAssembly, it means that all the code examples are based on taking advantage of dependency injection.
 
