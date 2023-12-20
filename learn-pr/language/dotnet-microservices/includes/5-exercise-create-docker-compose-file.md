@@ -9,7 +9,7 @@ To connect to the codespace:
 1. Open a browser and go to the [eShopLite repository](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative).
 1. Select **Code**, and then select the **Codespaces** tab.
 1. Select the codespace that you created in the previous exercise. GitHub opens the codespace.
-1. Go to the */dotnet-docker* directory.
+1. Go to the **/dotnet-docker** directory.
 
 ## Create the Docker Compose file
 
@@ -27,26 +27,26 @@ Use the Docker Compose file to configure images for both the back-end and the fr
             image: storeimage
             build:
                 context: .
-                dockerfile: DockerfileStore
+                dockerfile: ./Store/Dockerfile
             environment: 
                - ProductEndpoint=http://backend:8080
                - ImagePrefix=http://localhost
             ports:
-               - "5902:8080"
+               - "32000:8080"
             depends_on: 
                - backend
         backend:
             image: productservice
             build: 
                 context: .
-                dockerfile: DockerfileProducts
+                dockerfile: ./Products/Dockerfile
             ports: 
-               - "5200:8080"
+               - "32001:8080"
     ```
 
    This code does several things:
 
-   - It creates the front-end website and names it **frontend**. The code tells Docker to build it and points to the *DockerfileStore* file.
+   - It creates the front-end website and names it **frontend**. The code tells Docker to build it and points to the Stores **Dockerfile**.
    - The code sets an environment variable for the website: `ProductEndpoint=http://backend:8080`. This code is how the front-end service finds the Products back-end service.
    - A second environment variable specifies where images for products are located.
    - The code opens a port and declares that it depends on the back-end service.
@@ -57,13 +57,13 @@ Use the Docker Compose file to configure images for both the back-end and the fr
 
    :::image type="content" source="../media/copy-backend-address.png" alt-text="Screenshot that shows how to copy the address for the back-end Products service.":::
 
-1. In the *docker-compose.yml* file, paste this URL in the `ImagePrefix` environment variable. Replace the text `http://localhost`.
+1. In the **docker-compose.yml** file, paste this URL in the `ImagePrefix` environment variable. Replace the text `http://localhost`.
 1. Append `images` to the pasted text:
 
     ```docker-compose
     environment: 
       - ProductEndpoint=http://backend:8080
-      - ImagePrefix=https://super-duper-space-broccoli-5200.app.github.dev/images
+      - ImagePrefix=https://super-duper-space-broccoli-32001.app.github.dev/images
     ```
 
 ## Build the images and run the containers
