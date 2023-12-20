@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg":::  Protect against performance degradation while the system is in use and as it evolves. |
+| :::image type="icon" source="../media/goal.svg":::  Protect against performance degradation while the system is in use and as it evolves. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
 Development isn't a one-time effort. It's an ongoing process. Expect changes in performance as features change. There's variance in user patterns and profiles, even changes from optimizations in other Azure Well-Architected pillars. Any change can strain workload resources.

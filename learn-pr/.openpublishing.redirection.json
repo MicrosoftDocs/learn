@@ -64,6 +64,26 @@
         "source_path_from_root": "/learn-pr/azure/introduction-to-red-hat-azure/4-when.yml",
         "redirect_url": "/training/modules/introduction-to-red-hat-azure/4-when-to-use-red-hat-on-azure",
         "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/azure-well-architected-performance-efficiency/2-scaling-up-and-scaling-out.yml",
+        "redirect_url": "/training/modules/azure-well-architected-performance-efficiency",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/azure-well-architected-performance-efficiency/3-optimize-network-performance.yml",
+        "redirect_url": "/training/modules/azure-well-architected-performance-efficiency",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/azure-well-architected-performance-efficiency/4-optimize-storage-performance.yml",
+        "redirect_url": "/training/modules/azure-well-architected-performance-efficiency",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/azure-well-architected-performance-efficiency/5-identify-performance-bottlenecks-in-your-application.yml",
+        "redirect_url": "/training/modules/azure-well-architected-performance-efficiency",
+        "redirect_document_id": false
       }
     ]
   }

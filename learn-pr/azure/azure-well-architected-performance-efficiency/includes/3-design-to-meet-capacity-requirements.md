@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg"::: Provide enough supply to address anticipated demand. |
+| :::image type="icon" source="../media/goal.svg"::: Provide enough supply to address anticipated demand. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
 It's important to proactively measure performance. Measuring performance involves measuring baselines and having a preliminary understanding of which components of the system are likely to pose challenges. You can achieve it without conducting a full performance test or through granular optimization. By taking these initial steps, you establish a foundation for effective performance management early in the development lifecycle.

@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg"::: The intended user experience is defined, and there's a strategy to develop a benchmark and measure targets against the pre-established business requirements. |
+| :::image type="icon" source="../media/goal.svg"::: The intended user experience is defined, and there's a strategy to develop a benchmark and measure targets against the pre-established business requirements. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
 From a performance perspective, it's ideal to have well-defined performance targets to start your design process. To set those targets, you need to have a good understanding of the business requirements and the anticipated quality of service that the workload is expected to deliver. Define the expectations in collaboration with the business stakeholders. Instead of only focusing on technical metrics, determine the acceptable effects on the user experience for the key flows.

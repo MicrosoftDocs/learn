@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg"::: Improve system efficiency within the defined performance targets to increase workload value. |
+| :::image type="icon" source="../media/goal.svg"::: Improve system efficiency within the defined performance targets to increase workload value. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
 The targets set during the initial phase are based on a reasonable level of user experience, considering various constraints. You should reassess and adjust targets to further enhance the experience. To further enhance the experience, it requires a clear understanding of how the system is used, how it has evolved, and how the platform or technology has changed over time. The cycle of monitoring, optimizing, testing, and deploying is a continuous process.
