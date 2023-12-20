@@ -9,7 +9,7 @@ The following capabilities make up External Identities:
  -  Microsoft Entra B2C - Publish modern SaaS apps or custom-developed apps (excluding Microsoft apps) to consumers and customers, while using Microsoft Entra B2C for identity and access management.
  -  Microsoft Entra multitenant organization - Collaborate with multiple tenants in a single Microsoft Entra organization via cross-tenant synchronization.
 
-Depending on how you want to interact with external organizations and the types of resources you need to share, you can use a combination of these capabilities. :::image type="content" source="../media/secure-external-identities-and-compliance-db9cb2e1.png":::
+Depending on how you want to interact with external organizations and the types of resources you need to share, you can use a combination of these capabilities. :::image type="content" source="../media/secure-external-identities-and-compliance-db9cb2e1.png" alt-text="Screenshot of table showing when to use external identities.":::
 
 
 ## B2B collaboration

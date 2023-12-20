@@ -1,8 +1,5 @@
 Add new users or delete existing users from your Microsoft Entra ID tenant. To **add** or **delete** users, you must be a **User Administrator** or **Global Administrator**.
 
-> [!NOTE]
-> For information about viewing or deleting personal data, please review Microsoft's guidance on the Windows data subject requests for the General Data Protection Regulation site. For general information about General Data Protection Regulation, see the General Data Protection Regulation section of the Microsoft Trust Center and the General Data Protection Regulation section of the Service Trust portal.
-
 ## Add a new user
 
 You can create a new user for your organization or invite an external user from the same starting point.
