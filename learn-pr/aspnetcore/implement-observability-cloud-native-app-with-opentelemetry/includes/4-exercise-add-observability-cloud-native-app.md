@@ -197,7 +197,7 @@ With the OpenTelemetry packages added, you'll now introduce the code to make use
 
 1. If you're doing this exercise in a codespace, select the **PORTS** tab at the bottom of the Visual Studio Code window. Select the **Open in browser** link next to the **Front End** service.
 
-1. If you're doing this exercise locally in Visual Studio Code, in a new browser tab, go to the app at [http://localhost:32000/](http://localhost:32000/).
+1. If you're doing this exercise locally in Visual Studio Code, in a new browser tab, go to the app at **http://localhost:32000**.
 
 1. In the app, select **Products** in the navigation bar.
 
