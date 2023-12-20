@@ -44,4 +44,4 @@ units:
 - learn.implement-observability-cloud-native-app-with-opentelemetry.summary
 iconUrl: /training/achievements/aspnetcore/microservices-logging-aspnet-core.svg
 badge:
-  uid: learn.microservices-logging-aspnet-core.badge
+  uid: learn.implement-observability-cloud-native-app-with-opentelemetry.badge
