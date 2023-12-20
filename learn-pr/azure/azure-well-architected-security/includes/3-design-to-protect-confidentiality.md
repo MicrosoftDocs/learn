@@ -21,7 +21,7 @@ The workload will be protected from unauthorized access and prohibited activitie
 
 *Applying the approach and outcomes*
 
-- Contoso Rise Up implemented strict segmentation of users into Entra ID groups and defined RBAC for those groups to the various resource groups and resources.
+- Contoso Rise Up implemented strict segmentation of users into Microsoft Entra ID groups and defined RBAC for those groups to the various resource groups and resources.
 - All access to data is time limited and goes through an approval and auditing process.
 - These standards have been applied across the workload and customer support teams. Contoso Rise Up now is confident that there's no standing access to customer data.
 
@@ -55,7 +55,7 @@ Sensitive data includes configuration information that's used to gain further ac
 *Contoso's challenge*
 
 - Contoso Rise Up takes per-tenant backups of the PostgreSQL databases using the built-in point-in-time restores. Additionally, for added assurances they make one transactionally consistent backup per day to an isolated storage account for full disaster recovery (DR) preparedness.
-- The storage account used for DR is restricted with just-in-time access and few Entra ID accounts are allowed to access it.
+- The storage account used for DR is restricted with just-in-time access and few Microsoft Entra ID accounts are allowed to access it.
 - During a recovery drill, an employee went through the process to access a backup, and accidentally copied a backup to network share in the Contoso organization.
 - This backup was discovered and reported to Contoso’s privacy team a few months later, launching an investigation into how it was accessed between the point of the incident and the time of discovery.  Luckily there was no confidentiality breach detected, and the file was deleted after the forensics and audit review was complete.
 
