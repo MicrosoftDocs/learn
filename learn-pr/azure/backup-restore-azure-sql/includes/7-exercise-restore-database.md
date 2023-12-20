@@ -8,7 +8,13 @@ Let's perform a restore from automated Azure SQL Database backups.
 
 It can take up to 15 minutes for the first successful backup to finish. We need to make sure that backups are running before we continue the exercise.
 
-1. Run the following PowerShell command in Azure Cloud Shell to validate that continuous backups are running:
+1. In Azure Cloud Shell, run the following PowerShell command to set a variable to the value of your SQL Server instance:
+
+    ```powershell
+    $sqlserver=Get-AzSqlServer
+    ```
+
+1. Validate that continuous backups are running by using this command:
 
     ```powershell
     Get-AzSqlDatabaseRestorePoint `
@@ -57,7 +63,7 @@ Let's start by simulating a mistaken database modification.
 
     You should see **No results** returned, because we deleted the **Person** table.
 
-    ![Screenshot with no results after querying for the tables in the database.](../media/7-no-results.png)
+    :::image type="content" source="../media/7-no-results.png" alt-text="Screenshot that shows no results returned after querying for the tables in the database.":::
 
 ## Run a point-in-time restore
 
@@ -67,19 +73,19 @@ The **Person** table was mistakenly deleted. Now, let's restore the database to 
 
 1. At the top of the **Overview** page, select **Restore**.
 
-1. Complete the **Basic** tab on the **Restore database** page with these values, and then select **Review + create**.
+1. Complete the **Basics** tab on the **Restore database** page with these values, and then select **Review + create**.
 
     | Setting | Value |
     | --- | --- |
-    | Select source | Point-in-time |
-    | Database name | sql-erp-db-restored |
+    | Select source | **Point-in-time** |
+    | Database name | sql-erp-db-xxxxx |
     | Restore point | Select a time 10 minutes ago, before you dropped the **Person** table |
     | Server | erpserver-xxxxx |
     | Want to use SQL elastic pool? | No |
     | Compute + storage | Default value |
-    | Backup storage redundancy | Geo-redundant backup storage |
+    | Backup storage redundancy | **Locally-redundant backup storage** |
 
-    :::image type="content" source="../media/7-restore-sql-database-pitr-2022.png" alt-text="Screenshot that shows the restore database page with the Review + create button selected.":::
+    :::image type="content" source="../media/7-restore-sql-database-pitr.png" alt-text="Screenshot that shows the restore database page with the Review + create button selected." lightbox="../media/7-restore-sql-database-pitr.png":::
 
 1. Select **Create**. The database restore takes several minutes to complete.
 
@@ -102,7 +108,7 @@ The restored database should contain the **Person** table. You can check that in
 
     The **Person** table should now be present.
 
-    ![Screenshot of results after querying for the tables in the database.](../media/7-query-after-restore-1.png)
+    :::image type="content" source="../media/7-query-after-restore-1.png" alt-text="Screenshot showing results after querying for the tables in the database.":::
 
 1. Confirm that the data is in the table by running this command:
 
@@ -112,6 +118,6 @@ The restored database should contain the **Person** table. You can check that in
 
     You should see the data that you entered previously.
 
-    ![Screenshot of confirmed results after querying for the tables in the database.](../media/7-query-after-restore-2.png)
+    :::image type="content" source="../media/7-query-after-restore-2.png" alt-text="Screenshot showing confirmed results after querying for the tables in the database.":::
 
 You've now learned how you can restore a database if something unintended happens to the data. You've familiarized yourself with the restore process. You can now assure your organization that you've properly defined the backup and restore procedures.

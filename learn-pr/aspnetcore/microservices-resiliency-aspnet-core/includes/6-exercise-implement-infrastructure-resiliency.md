@@ -350,10 +350,10 @@ spec:
     ttl: 120s
 ```
 
-The preceding manifest is configured such that:
+The preceding manifest is configured so:
 
 * Any idempotent HTTP GET route matching the pattern `/api/Product` can be retried.
-* Retries can add no more than an extra 20 percent to the request load, plus an another 10 "free" retries per second.
+* Retries can add no more than an extra 20 percent to the request load, plus another 10 "free" retries per second.
 
 Run the following command to use the service profile in the Kubernetes cluster:
 
@@ -419,7 +419,7 @@ After the redeployed containers are healthy, use the following steps to test the
     kubectl scale deployment productsbackend --replicas=0
     ```
 
-1. Navigate to the eShop web app and try to view the products. There will be a delay until the error message, "There is a problem loading our products. Please try again later."
+1. Go to the eShop web app and try to view the products. There will be a delay until the error message, "There is a problem loading our products. Please try again later."
 
 1. Restart the product service pods:
 
@@ -428,7 +428,7 @@ After the redeployed containers are healthy, use the following steps to test the
     ```
 1. The app should now display the products.
 
-Linkerd follows a different approach to resiliency than what you saw with code based resilience. Linkerd transparently retried the operation multiple times in quick succession. The app didn't need to be changed to support this behavior.
+Linkerd follows a different approach to resiliency than what you saw with code-based resilience. Linkerd transparently retried the operation multiple times in quick succession. The app didn't need to be changed to support this behavior.
 
 ## Additional information
 

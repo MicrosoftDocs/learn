@@ -28,7 +28,7 @@ products:
   - dotnet
   - aspnet-core
 prerequisites: |
-  - Familiarity with .NET 6
+  - Familiarity with .NET
   - A basic understanding of what an API is
 subjects:
 - database
