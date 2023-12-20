@@ -206,7 +206,7 @@ You'll now test the new observability features you've added to the app.
   
     You should see the **Products** and **Store** services listed as **UP**.
 
-1. Open a browser and, in a new tab, go to the Grafana app [http://localhost:3000/](http://localhost:3000/).
+1. Open a browser and, in a new tab, go to the Grafana app **http://localhost:3000**.
 
 1. Select **Create your first dashboard**.
 1. Select **Import dashboard**.
