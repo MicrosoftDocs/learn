@@ -42,11 +42,11 @@ subjects:
 - architecture
 units:
 - learn.azure-well-architected-reliability.1-introduction
-- learn.azure-well-architected-reliability.2-design-for-business-requirements
-- learn.azure-well-architected-reliability.3-design-for-resilience
-- learn.azure-well-architected-reliability.4-design-for-recovery
-- learn.azure-well-architected-reliability.5-design-for-operations
-- learn.azure-well-architected-reliability.6-keep-it-simple
-- learn.azure-well-architected-reliability.7-summary
+- learn.azure-well-architected-reliability.design-for-business-requirements
+- learn.azure-well-architected-reliability.design-for-resilience
+- learn.azure-well-architected-reliability.design-for-recovery
+- learn.azure-well-architected-reliability.design-for-operations
+- learn.azure-well-architected-reliability.keep-it-simple
+- learn.azure-well-architected-reliability.summary
 badge:
   uid: learn.azure-well-architected-reliability.badge
