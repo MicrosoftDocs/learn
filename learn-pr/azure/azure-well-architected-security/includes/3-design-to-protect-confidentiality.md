@@ -23,7 +23,7 @@ The workload will be protected from unauthorized access and prohibited activitie
 
 - Contoso Rise Up implemented strict segmentation of users into Entra ID groups and defined RBAC for those groups to the various resource groups and resources.
 - All access to data is time limited and goes through an approval and auditing process.
-- These standards have been applied across the workload and customer support teams. Contoso Rise Up now is confident that there is no standing access to customer data.
+- These standards have been applied across the workload and customer support teams. Contoso Rise Up now is confident that there's no standing access to customer data.
 
 ## Identify confidential data through classification
 
@@ -41,7 +41,7 @@ This evaluation helps you right-size security measures. You'll also be able to i
 
 - Following the taxonomy lead of the Contoso organization, the workload team spends time to flag data stores, columns, storage accounts, and other storage resources with metadata that indicate what type and sensitivity of data exists there.
 - This activity gives the team the opportunity to validate that sensitive data is treated with the level of confidentiality required throughout the entire system, including logging statements and backups.
-- The team finds that they have some relatively sensitive data in a lower security database and have some nonsensitive data in a higher security database. They will be adjusting storage locations to make sure security controls are aligned with the data they're protecting.
+- The team finds that they have some relatively sensitive data in a lower security database and have some nonsensitive data in a higher security database. They'll be adjusting storage locations to make sure security controls are aligned with the data they're protecting.
 - They also plan on implementing data masking on key fields to better protect the confidentiality of data, even when authorized staff access the system.
 
 ## Apply encryption at every step of the data lifecycle
@@ -62,5 +62,5 @@ Sensitive data includes configuration information that's used to gain further ac
 *Applying the approach and outcomes*
 
 - The team has formalized a new process dictating that all backups must be encrypted at rest and the encryption keys must be secured in Key Vault.
-- Going forward, incidents like this will have a lower chance of privacy breach, as the data contained in the backup file would be useless without the ability to decrypt.
+- Now incidents like this will have a lower chance of privacy breach, as the data contained in the backup file would be useless without the ability to decrypt.
 - Additionally, the DR plan now includes standard guidance dictating proper handling of the backups, including how and when to safely decrypt a backup.
