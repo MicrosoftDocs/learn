@@ -14,7 +14,7 @@ title: Troubleshoot device connections and communication
 summary: This module introduces you to troubleshooting device connection and communications issues, and it examines best practice approaches and troubleshooting guidelines that apply to device connections.
 abstract: |
   After you complete this module, you will be able to:
-  - Describe device connection best practices
+  - Describe device reconnection management in order to create resilient applications
   - Describe device disconnect troubleshooting using Azure Monitor and Event Grid
   - Describe the device communication troubleshooting guide
   - Describe message routing troubleshooting
@@ -34,7 +34,7 @@ subjects:
 - iot
 units:
 - learn.wwl.troubleshoot-device-connections-communication.introduction
-- learn.wwl.troubleshoot-device-connections-communication.examine-device-connection-best-practices
+- learn.wwl.troubleshoot-device-connections-communication.manage-device-reconnections-resilient-applications
 - learn.wwl.troubleshoot-device-connections-communication.troubleshoot-device-disconnects
 - learn.wwl.troubleshoot-device-connections-communication.examine-device-communications-troubleshooting-guide
 - learn.wwl.troubleshoot-device-connections-communication.troubleshoot-device-message-routing

@@ -26,7 +26,7 @@ quiz:
      - content: "Service interruption, network interruption, failed device firmware update, invalid arguments passed to the callback of the `send` operation."
        isCorrect: false
        explanation: "Incorrect. The most common reasons for IoT Hub device disconnect are expired SAS token or X.509 certificate, network interruption, service interruption, service reconfiguration."
-   - content: "Which of the following choices can provide monitoring notifications for specific devices?"
+   - content: "Which Azure service can provide monitoring notifications for specific devices?"
      choices:
      - content: "Azure Monitor"
        isCorrect: false

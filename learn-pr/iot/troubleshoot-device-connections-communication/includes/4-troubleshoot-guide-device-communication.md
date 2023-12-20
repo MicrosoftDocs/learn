@@ -10,7 +10,7 @@ If your device isn't able to connect to your Azure IoT hub, here are a few thing
      * If you're using a shared access signature, make sure the expiry is correct and that you're using the right shared access key to sign it.
 1. Review your device registry (using the Azure portal) and ensure that your device is enabled.
 1. Can you get through the firewall?
-     * The easiest thing to try is to run the [iothub-diagnostics](https://github.com/azure/iothub-diagnostics) tool and see if it manages to connect to your Azure IoT hub with your devices credentials. It tries all supported protocols and WebSockets and displays its test results.
+     * The easiest thing to try is to run the [iothub-diagnostics](https://github.com/azure/iothub-diagnostics) tool and see if it manages to connect to your Azure IoT hub with your device's credentials. It tries all supported protocols and WebSockets and displays its test results.
      * If you can't run iothub-diagnostics, you can try to run through the same steps manually:
          * Ping a known website to verify name resolution and outbound traffic works.
          * Change the transport used to instantiate the client (AMQP, AMQPWS, MQTT, MQTTWS, and HTTP).

@@ -1,6 +1,6 @@
 This page provides monitoring and troubleshooting guidance for common issues and resolution for IoT Hub message routing.
 
-## Monitoring message routing
+## Monitor message routing
 
 We recommend you monitor [IoT Hub metrics related to message routing and endpoints](/azure/iot-hub/monitor-iot-hub-reference#routing-metrics) to give you an overview of the messages sent. You can also create a diagnostic setting to send operations for [routes in IoT Hub resource logs](/azure/iot-hub/monitor-iot-hub-reference#routes) to Azure Monitor logs, Event Hubs or Azure Storage for custom processing.
 
@@ -40,7 +40,7 @@ To troubleshoot this issue, analyze the following areas:
 
     Once a route is created, data stops flowing to the built-in-endpoint, unless a route is created to that endpoint. To ensure messages continues to flow to the built-in-endpoint if a new route is added, configure a route to the events endpoint.
 
-* Was the Fallback route disabled?
+* Was the fallback route disabled?
 
     The fallback route sends all the messages that don't satisfy any of the query conditions on any of the existing routes to the [built-in-Event Hubs](/azure/iot-hub/iot-hub-devguide-messages-read-builtin) (messages and events), that is compatible with [Event Hubs](/azure/event-hubs/). If message routing is turned on, you can enable the fallback route capability. If there are no routes to the built-in endpoint and a fallback route is enabled, only messages that don't match any query conditions on routes are sent to the built-in-endpoint. Also, if all existing routes are deleted, the fallback route must be enabled to receive all data at the built-in-endpoint.
 

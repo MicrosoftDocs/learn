@@ -1,6 +1,6 @@
-The connectivity and reliable messaging features in Azure IoT device SDKs can help you to design device applications that are more resilient.
+This page provides high-level guidance to help you design resilient applications by adding a device reconnection strategy. It explains why devices disconnect and need to reconnect. And it describes specific strategies that developers can use to reconnect devices that have been disconnected.
 
-Applying proper guidance to device-side code can help you to address the following scenarios:
+The connectivity and reliable messaging features in Azure IoT device SDKs can help you to design device applications that are more resilient. Applying proper guidance to device-side code can help you to address the following scenarios:
 
 * Fixing a dropped network connection
 * Switching between different network connections
@@ -11,7 +11,7 @@ For information on IoT Hub performance and high availability, including IoT Hub 
 * [IoT Hub high availability and disaster recovery](/azure/iot-hub/iot-hub-ha-dr)
 * [Tutorial: Perform manual failover for an IoT hub](/azure/iot-hub/tutorial-manual-failover)
 
-## What causes disconnections
+## What causes disconnections?
 
 The following are the most common reasons that devices disconnect from IoT Hub:
 
@@ -25,17 +25,20 @@ The following are the most common reasons that devices disconnect from IoT Hub:
 It's important to have a strategy to reconnect devices as described in the following sections. Without a reconnection strategy, you could see a negative effect on your solution's performance, availability, and cost.
 
 ### Mass reconnection attempts could cause a DDoS
+
 A high number of connection attempts per second can cause a condition similar to a distributed denial-of-service attack (DDoS). This scenario is relevant for large fleets of devices numbering in the millions. The issue can extend beyond the tenant that owns the fleet, and affect the entire scale-unit. A DDoS could drive a large cost increase for your Azure IoT Hub resources, due to a need to scale out. A DDoS could also hurt your solution's performance due to resource starvation. In the worse case, a DDoS can cause service interruption.
 
 ### Hub failure or reconfiguration could disconnect many devices
+
 After an IoT hub experiences a failure, or after you reconfigure service settings on an IoT hub, devices might be disconnected. For proper failover, disconnected devices require reprovisioning. To learn more about failover options, see [IoT Hub high availability and disaster recovery](/azure/iot-hub/iot-hub-ha-dr).
 
-### Reprovisioning many devices could increase costs
-After devices disconnect from IoT Hub, the optimal solution is to reconnect the device rather than reprovision it. If you use IoT Hub with DPS, DPS has a per provisioning cost. If you reprovision many devices on DPS, it increases the cost of your IoT solution.
+### To reprovision many devices can increase costs
 
-## Designing for resiliency
+After devices disconnect from IoT Hub, the optimal solution is to reconnect the device rather than reprovision it. If you use IoT Hub with IoT Hub Device Provisioning Service (DPS), DPS has a per provisioning cost. If you reprovision many devices on DPS, it increases the cost of your IoT solution.
 
-IoT devices often rely on noncontinuous or unstable network connections (for example, GSM or satellite). Errors can occur when devices interact with cloud-based services because of intermittent service availability and infrastructure-level or transient faults. An application that runs on a device has to manage the mechanisms for connection, reconnection, and the retry logic for sending and receiving messages. Also, the retry strategy requirements depend heavily on the device's IoT scenario, context, capabilities.
+## Design for resiliency
+
+IoT devices often rely on noncontinuous or unstable network connections (for example, GSM or satellite). Errors can occur when devices interact with cloud-based services because of intermittent service availability and infrastructure-level or transient faults. An application that runs on a device has to manage the mechanisms for connection, reconnection, and the retry logic for sending and receiving messages. Also, the retry strategy requirements depend heavily on the device's IoT scenario, context, and capabilities.
 
 The Azure IoT Hub device SDKs aim to simplify connecting and communicating from cloud-to-device and device-to-cloud. These SDKs provide a robust way to connect to Azure IoT Hub and a comprehensive set of options for sending and receiving messages. Developers can also modify existing implementation to customize a better retry strategy for a given scenario.
 
@@ -61,11 +64,9 @@ This section gives an overview of the reconnection and retry patterns available 
 
 Connection failures can happen at many levels:
 
-* Network errors: disconnected socket and name resolution errors
-* Protocol-level errors for HTTP, AMQP, and MQTT transport: detached links or expired sessions
-* Application-level errors that result from either local mistakes: invalid credentials or service behavior (for example, exceeding the quota or throttling)
-
-The device SDKs detect errors at all three levels. OS-related errors and hardware errors aren't detected and handled by the device SDKs.
+* Network errors including disconnected socket and name resolution errors
+* Protocol-level errors for HTTP, AMQP, and MQTT transport including detached links or expired sessions
+* Application-level errors that result from either local mistakes including invalid credentials or service behavior (for example, exceeding the quota or throttling)
 
 The device SDKs detect errors at all three levels. However, device SDKs don't detect and handle OS-related errors and hardware errors. The SDK design is based on The [Transient Fault Handling Guidance](/azure/architecture/best-practices/transient-faults#general-guidelines) from the Azure Architecture Center.
 
@@ -83,7 +84,7 @@ The following steps describe the retry process when connection errors are detect
 The SDKs provide three retry policies:
 
 * **Exponential back-off with jitter**: This default retry policy tends to be aggressive at the start and slow down over time until it reaches a maximum delay. The design is based on [Retry guidance from Azure Architecture Center](/azure/architecture/best-practices/retry-service-specific).
-* **Custom retry**: For some SDK languages, you can design a custom retry policy that is better suited for your scenario and then inject it into the RetryPolicy. Custom retry isn't available on the C SDK, and it isn't currently supported on the Python SDK. The Python SDK reconnects as-needed.
+* **Custom retry**: For some SDK languages, you can design a custom retry policy that is better suited for your scenario and then inject it into the RetryPolicy. Custom retry isn't available on the C or Python SDK. The Python SDK reconnects as-needed.
 * **No retry**: You can set retry policy to "no retry," which disables the retry logic. The SDK tries to connect once and send a message once, assuming the connection is established. This policy is typically used in scenarios with bandwidth or cost concerns. If you choose this option, messages that fail to send are lost and can't be recovered.
 
 ### Retry policy APIs
@@ -204,6 +205,7 @@ IRetryPolicy retryPolicy = new ExponentialBackoff(RetryCount, TimeSpan.FromSecon
 The retry mechanism stops after DefaultOperationTimeoutInMilliseconds, which is currently set at 4 minutes.
 
 ## Hub reconnection flow
+
 If you use IoT Hub only without DPS, use the following reconnection strategy.
 
 When a device fails to connect to IoT Hub, or is disconnected from IoT Hub:
@@ -216,6 +218,7 @@ The following diagram summarizes the reconnection flow.
 :::image type="content" source="../media/connect-retry-iot-hub.png" alt-text="Diagram showing the reconnection flow.":::
 
 ## Hub with DPS reconnection flow
+
 If you use IoT Hub with DPS, use the following reconnection strategy.
 
 When a device fails to connect to IoT Hub, or is disconnected from IoT Hub, reconnect based on the following cases.

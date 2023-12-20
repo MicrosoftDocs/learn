@@ -218,7 +218,7 @@ If you're monitoring device connections with Event Hubs, make sure you build in 
 > IoT Hub only supports one active MQTT connection per device. Any new MQTT connection on behalf of the same device ID causes IoT Hub to drop the existing connection.
 > **400027 ConnectionForcefullyClosedOnNewConnection** will be logged into IoT Hub Logs.
 
-If the previous steps didn't help, try:
+If the guidance on this page didn't help, try the following:
 
 * If you have access to the problematic devices, either physically or remotely (like SSH), follow the device-side troubleshooting guide on the next unit page to continue troubleshooting.
 
