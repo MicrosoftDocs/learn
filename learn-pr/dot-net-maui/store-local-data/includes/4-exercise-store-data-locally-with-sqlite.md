@@ -58,7 +58,7 @@ In this exercise, you'll use SQLite to store information locally with an applica
 
 If using Visual Studio Code, open the terminal and these packages with the following commands:
 
-```bash
+```dotnetcli
 dotnet add package sqlite-net-pcl
 dotnet add package SQLitePCLRaw.bundle_green
 ```
