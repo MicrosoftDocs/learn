@@ -1,4 +1,4 @@
-In recent years, enterprises have been choosing to use microservices instead of monolithic architectures to meet user demand and increase scalability and availability in their large consumer applications.
+In recent years, enterprises are choosing to use microservices instead of monolithic architectures to meet user demand and increase scalability and availability in their large consumer applications.
 
 Suppose that you started a new job as a software developer at the Contoso outdoor equipment company. Business is booming, and so is Contoso's website that indicates whether items are in stock. That website is a monolith right now, but it's an ideal candidate for the microservices architecture. A team member refactored the monolith website into an ASP.NET Blazor page application and a .NET web API. Your job is to deploy the services.
 
