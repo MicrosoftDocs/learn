@@ -33,4 +33,4 @@ To use this feature, specify a Service Tag name for the address prefix parameter
 :::image type="content" source="../media/azure-powershell-b50be27d.png" alt-text="Screenshot showing Azure PowerShell commands.":::
 **The same command for CLI is as follows**:
 
-:::image type="content" source="../media/azure-syntax-28540342.png" alt-text="Screenshot showing Azure command line interace syntax for creating an azure network route table.":::
+:::image type="content" source="../media/azure-syntax-28540342.png" alt-text="Screenshot showing Azure command line interface syntax for creating an Azure network route table.":::

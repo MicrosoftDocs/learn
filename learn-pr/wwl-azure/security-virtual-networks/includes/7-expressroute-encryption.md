@@ -1,6 +1,6 @@
 Deploy Azure Virtual WAN to establish an IPsec/IKE VPN connection from your on-premises network to Azure over the private peering of an Azure ExpressRoute circuit. This technique can provide an encrypted transit between the on-premises networks and Azure virtual networks over ExpressRoute, without going over the public internet or using public IP addresses.
 
-:::image type="content" source="../media/express-route-encryption-324f8bed.png" alt-text="Diagram of how to deploy an Azure virtual wide area network over an encrypted virtual private newtork connection.":::
+:::image type="content" source="../media/express-route-encryption-324f8bed.png" alt-text="Diagram of how to deploy an Azure virtual wide area network over an encrypted virtual private network connection.":::
 
 
 ## Topology and routing
