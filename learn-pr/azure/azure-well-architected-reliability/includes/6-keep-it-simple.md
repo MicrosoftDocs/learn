@@ -21,8 +21,8 @@ Designing for business requirements can lead to a straightforward solution that'
 
 *Applying the approach and outcomes*
 
-- AS part of the initial release of the Contoso Travel-branded version of the app, the team decides to remove the website feedback component of the workload.
-- A smaller codebase lowers the cost of maintenance and operations. And, in this case, there is no impact to the business requirements.
+- As part of the initial release of the Contoso Travel-branded version of the app, the team decides to remove the website feedback component of the workload. 
+- A smaller codebase lowers the cost of maintenance and operations. And, in this case, there’s no impact to the business requirements.
 
 ## Standardize your software development lifecycle
 
@@ -32,14 +32,14 @@ Standards provide consistency and minimize human errors. Approaches like standar
 
 *Contoso's challenge*
 
-- The development team from the startup doesn’t have many development and process standards defined. There are a number of libraries being used that overlap in functionality, coding styles are not enforced, and the release pipelines lack formal release gates that use automated testing.
-- The Contoso workload team realizes the cost of maintenance of the new codebase is much higher because  of the lack of consistency in styles, and the inconsistent use libraries and design patterns.
-- There are frequent incidents after major updates in production, sometimes requiring rollbacks of the updates or mid-deployment hot-fixes. The frequency of these types of deployment issues force the team to use an all-hands-on-deck support model when releasing updates to production. To make matters worse, the frequent issues are negatively impacting Contoso's reputation through a poor user experience.
+- The development team from the startup doesn’t have many development and process standards defined. There are a number of libraries being used that overlap in functionality, coding styles aren’t enforced, and the release pipelines lack formal release gates that use automated testing.
+- The Contoso workload team realizes the cost of maintenance of the new codebase is too high because  of the lack of consistency in styles and the inconsistent use libraries and design patterns.
+- There are frequent incidents after major updates in production, sometimes requiring rollbacks of the updates or mid-deployment hot-fixes. The frequency of these types of deployment issues forces the team to use an all-hands-on-deck support model when releasing updates to production. To make matters worse, the frequent issues are negatively impacting Contoso's reputation through a poor user experience.
 
 *Applying the approach and outcomes*
 
 - The team taking over support of the new app makes an effort to achieve greater consistency by enforcing coding styles, standardizing on a common set of libraries and design patterns, and formalizing the use of release gates based on automated tests.
-- While these changes are being implemented, the workload team adhere's to their standard documentation requirements. All of the new tools, design patterns, and styles being adopted are thoroughly documented, allowing the team to understand and maintain the workload more efficiently going forward. This also allows the team to more easily identify deviations in the standards when performing code reviews.
+- While these changes are being implemented, the workload team adheres to their standard documentation requirements. All of the new tools, design patterns, and styles being adopted are thoroughly documented, allowing the team to understand and maintain the workload more efficiently going forward. The team can now more easily identify deviations in the standards when performing code reviews.
 
 ## Minimize your operations and development burden
 
@@ -49,10 +49,10 @@ This approach minimizes development time. It also enables you to rely on tried a
 
 *Contoso's challenge*
 
-- As part of the initial release under the Contoso Travel branding, the nodejs solution is going to be migrated from VMs to App Services, to take advantage of the many native features the service provides from a reliability perspective.
+- For the initial release under the Contoso Travel branding, the nodejs solution will be migrated from VMs to App Services, to take advantage of the many native reliability features the service provides. 
 - The version deployed on VMs contains a significant amount of custom code needed for instrumentation.
 
 *Applying the approach and outcomes*
 
-- During the initial migration to App Services, the team was able to remove all custom instrumentation code by implementing App Insights auto-instrumentation in App Services.
-- The team is also able to take advantage of several other native App Service functions like auto-scaling, Key Vault integration, and zonal redundancy.
+- During the initial migration to App Services, the team was able to remove all custom instrumentation code by implementing App Insights autoinstrumentation in App Services.
+- The team is also able to take advantage of several other native App Service functions like autoscaling, Key Vault integration, and zonal redundancy.
