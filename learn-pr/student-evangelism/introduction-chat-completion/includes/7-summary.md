@@ -1,6 +1,6 @@
-In this module, you learned that prompt engineering, like chat completion, is a technique for grounding generative AI models. Chat completion can be used to influence the style of an AI model's output, provide factual information, and constrain their behavior.
+In this module, you learned that prompt engineering, like chat completion, is a technique for grounding generative AI models. You learned how chat completion is used to influence the style of an AI model's output, provide factual information, and constrain their behavior.
 
-## Further reading
+## Related resources
 
 - [Apply prompt engineering with Azure OpenAI Service](/semantic-kernel/prompt-engineering/)
 - [Prompt engineering techniques](/azure/ai-services/openai/concepts/advanced-prompt-engineering)
