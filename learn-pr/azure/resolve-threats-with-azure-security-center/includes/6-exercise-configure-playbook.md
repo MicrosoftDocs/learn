@@ -101,7 +101,7 @@ In this case, in the Azure Sandbox, you likely don't have any alerts, so you can
 
     :::image type="content" source="../media/6-run-trigger-playbook.png" alt-text="Screenshot that shows the Run option in Azure Logic Apps.":::
 
-1. A new entry will show up under the **Runs history** tab in the Overview pane. You might need to select the **Refresh** button at teh top of the screen. You can select that entry to drill into details. For example, you can drill into the inputs and outputs of the run:
+1. A new entry will show up under the **Runs history** tab in the Overview pane. You might need to select the **Refresh** button at the top of the screen. You can select that entry to drill into details. For example, you can drill into the inputs and outputs of the run:
 
 ### Inputs
 
