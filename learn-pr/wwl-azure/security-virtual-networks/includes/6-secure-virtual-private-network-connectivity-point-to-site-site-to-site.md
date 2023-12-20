@@ -11,7 +11,7 @@ VPN Gateway can be configured in active-standby mode using one public IP or in a
 
 You can create more than one VPN connection from your virtual network gateway, typically connecting to multiple on-premises sites. When working with multiple connections, you must use a RouteBased VPN type (known as a dynamic gateway when working with classic VNets). Because each virtual network can only have one VPN gateway, all connections through the gateway share the available bandwidth. This type of connection is sometimes referred to as a "multi-site" connection.
 
-:::image type="content" source="../media/point-to-site-virtual-private-network-8b9dac20.png" alt-text="Diagram showing how a virtual private network gateway can be configured in active-standby mode using one public internet protocol address or in active-active mode using two public internet protocol addresses.":::
+:::image type="content" source="../media/internet-protocol-security-tunnel-2b8000c8.png" alt-text="Diagram showing how a virtual private network gateway can be configured in active-standby mode using one public internet protocol address or in active-active mode using two public internet protocol addresses.":::
 
 
 ## Point-to-site VPN
@@ -20,4 +20,4 @@ A point-to-site (P2S) VPN gateway connection lets you create a secure connection
 
 Unlike S2S connections, P2S connections don't require an on-premises public-facing IP address or a VPN device. P2S connections can be used with S2S connections through the same VPN gateway, as long as all the configuration requirements for both connections are compatible.
 
-:::image type="content" source="../media/point-to-site-vpn-8139481d.png" alt-text="Diagram showing an example of a point-to-site virtual private network.":::
+:::image type="content" source="../media/point-to-site-virtual-private-network-8b9dac20.png" alt-text="Diagram showing an example of a point-to-site virtual private network.":::

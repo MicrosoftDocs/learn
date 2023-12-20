@@ -37,7 +37,7 @@ units:
 - learn.wwl.security-virtual-networks.user-defined-routes
 - learn.wwl.security-virtual-networks.virtual-network-peering-gateways
 - learn.wwl.security-virtual-networks.virtual-wide-area-network
-- learn.wwl.security-virtual-networks.secure-vpn-connectivity-point-to-site-site-to-site
+- learn.wwl.security-virtual-networks.secure-virtual-private-network-connectivity-point-to-site-site-to-site
 - learn.wwl.security-virtual-networks.expressroute-encryption
 - learn.wwl.security-virtual-networks.secure-paas-deployments
 - learn.wwl.security-virtual-networks.flow-logging-network-security-groups
