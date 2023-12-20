@@ -21,13 +21,13 @@ quiz:
       explanation: 'Correct. By decoupling their application into smaller components, Contoso was able to minimize the blast radius of future similar attacks.'
     - content: 'They blocked access to public-facing services.'
       isCorrect: false
-      explanation: 'Incorrect. Blocking access to public-facing services would have prevented legitimate users from accessing the application.'
+      explanation: "Incorrect. Blocking access to public-facing services would've prevented legitimate users from accessing the application."
     - content: 'They invested in a third-party DDoS protection service.'
       isCorrect: false
-      explanation: 'Incorrect. The attack was not a DDoS attack and they were able to respond to the attack without the help of a third-party service.'
+      explanation: "Incorrect. The attack wasn't a DDoS attack and they were able to respond to the attack without the help of a third-party service."
     - content: 'They increased the number of virtual machines in their application.'  
       isCorrect: false
-      explanation: 'Incorrect. This measure would have increased the cost of the application without addressing the root cause of the problem.'
+      explanation: "Incorrect. This measure would've increased the cost of the application without addressing the root cause of the problem."
   - content: 'What is an example of a preventative measure that can be used to limit attack vectors?'
     choices:
     - content: "Monitoring resource health"
@@ -36,13 +36,13 @@ quiz:
     - content: 'Using an anti-malware solution'
       isCorrect: true
       explanation: 'Correct. Using anti-malware software can prevent malware from being installed on a system.'
-    - content: 'Enabling auto-scaling on virtual machines'
+    - content: 'Enabling autoscaling on virtual machines'
       isCorrect: false
-      explanation: "Incorrect. Auto-scaling is good for responding to increased requests, but does not limit attack vectors."
+      explanation: "Incorrect. Autoscaling is good for responding to increased requests, but doesn't limit attack vectors."
     - content: 'Using Azure Traffic Manager to block malicious traffic'
       isCorrect: false
       explanation: "Incorrect. Azure Traffic Manager is used to route traffic to different endpoints, but it does not block malicious traffic."
-  - content: 'True or false: when running in a recovery environment, it is OK to have a relaxed security posture in comparison to the production environment.'
+  - content: "True or false: when running in a recovery environment, it's OK to have a relaxed security posture in comparison to the production environment."
     choices:
     - content: "True"
       isCorrect: false
