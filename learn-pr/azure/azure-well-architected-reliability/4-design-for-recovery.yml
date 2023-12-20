@@ -33,7 +33,7 @@ quiz:
     choices:
     - content: "Moving cold data to archive storage"
       isCorrect: false
-      explanation: "Archive storage data is not stateful data. It is data that is rarely accessed and is stored for long periods of time."
+      explanation: "Archive storage data isn’t stateful data. It’s data that is rarely accessed and is stored for long periods of time."
     - content: "Migrating from App Service to Azure Kubernetes Service (AKS)"
       isCorrect: false
       explanation: "The application data for both services is stored in a database, so changing the compute model won't affect the stateful data stored in the database."
