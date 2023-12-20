@@ -20,7 +20,8 @@ prerequisites: |
   - Experience developing applications in C# and .NET
   - Familiarity with RESTful service concepts
   - Access to an Azure subscription with Owner privilege
-  - Ability to run development containers in GitHub Codespaces or Visual Studio CodeiconUrl: /learn/achievements/generic-badge.svg
+  - Ability to run development containers in GitHub Codespaces or Visual Studio Code
+iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - intermediate
 roles: 
