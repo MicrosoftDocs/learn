@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-security.2-plan-your-security-readiness
+uid: learn.azure-well-architected-security.plan-your-security-readiness
 title: Plan your security readiness
 metadata:
   title: Plan your security readiness
@@ -22,7 +22,7 @@ quiz:
     - content: 'Segmentation blocks all access to resources, which prevents attackers from accessing them.'
       isCorrect: false
       explanation: 'Incorrect. Segmentation blocks access only to resources that are not required, not all resources.'
-    - content: 'Segmentation forces all users to use multi-factor authentication (MFA) to access resources.'
+    - content: 'Segmentation forces all users to use multifactor authentication (MFA) to access resources.'
       isCorrect: false
       explanation: 'Incorrect. Segmentation is a strategy to limit access to resources, not a strategy to enforce MFA.'
     - content: 'Segmentation forces all users to use single sign-on (SSO) to access resources.'
