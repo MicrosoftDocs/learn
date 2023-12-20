@@ -6,7 +6,7 @@ This module describes the high-level steps required to prepare your deployment o
 
 Suppose you work for a car manufacturer with offices and production sites across the globe. You're tasked with implementing a system to monitor traffic and secure your manufacturing automation systems (Operational Technology), from the access panels to the pneumatic and packaging systems. To take the organization's operational technology security visibility to the next level, your team chooses to use Microsoft Defender for IoT.
 
-YOu chose the OT site to deploy to first, and planned your deployment including steps like dividing your network into sites and zones. Now you need to prepare your OT site and determine what devices and subnets to monitor. You'll also choose the best traffic monitoring methods for your sensors and review the appliance options available to use with your sensors.
+You chose the OT site to deploy to first, and planned your deployment including steps like dividing your network into sites and zones. Now you need to prepare your OT site and determine what devices and subnets to monitor. You'll also choose the best traffic monitoring methods for your sensors and review the appliance options available to use with your sensors.
 
 ## What will we be doing?
 

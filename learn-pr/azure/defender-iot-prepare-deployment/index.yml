@@ -35,7 +35,7 @@ units:
 - learn.defender-iot-prepare-deployment.introduction
 - learn.defender-iot-prepare-deployment.design-network-diagram
 - learn.defender-iot-prepare-deployment.identify-devices-and-subnets
-- learn.defender-iot-prepare-deploymen.determine-traffic-mirroring-method
+- learn.defender-iot-prepare-deployment.determine-traffic-mirroring-method
 - learn.defender-iot-prepare-deployment.review-appliance-options
 - learn.defender-iot-prepare-deployment.summary
 badge:

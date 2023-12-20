@@ -77,7 +77,7 @@ For each sensor include:
 
 ## Knowledge check
 
-:::image type="complex" source="../media/3-sample-network-diagram-knowledge-check.png" alt-text="Diagram of a sample network diagram" border="false":::
+:::image type="complex" source="../media/3-sample-network-diagram-knowledge-check.png" alt-text="Diagram of a sample network diagram." border="false":::
 
 Figure A shows a sample diagram of a network in a building of three floors, where each floor houses endpoints and switches. The third floor also houses firewalls, core switches, a server, and routers. A blue dotted line depicts traffic traveling outside of the IP segment, traveling throughout floor 1 and 2 and up to a server connected to a core server on floor 3. Interesting traffic is depicted in red from two switches on floor 2 to each of the firewalls on floor 3. In addition, there's a Defender for IoT sensor with the question where should the Defender for IoT sensor be connected and three choices: A- to the switch for interesting traffic between on floor 2, B- to the switch where traffic is traveling outside of the IP segment on level 2, or C- to the switch for traffic is traveling outside of the IP segment on level 1.
 :::image-end:::

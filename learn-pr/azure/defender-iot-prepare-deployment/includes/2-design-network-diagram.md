@@ -55,7 +55,7 @@ Generally, sensors are placed between levels two and three or between three and 
 
 The following diagram depicts how devices might be divided into the different OT and IT levels:
 
-:::image type="content" source="../media/2-purdue-only.png" alt-text="Purdue model diagram" border="false":::
+:::image type="content" source="../media/2-purdue-only.png" alt-text="A diagram of the Purdue model." border="false":::
 
 ## Knowledge check
 

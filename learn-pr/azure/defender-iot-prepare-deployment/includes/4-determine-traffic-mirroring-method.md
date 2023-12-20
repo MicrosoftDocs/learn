@@ -1,4 +1,4 @@
-In the previous unit, you prepared the devices and subnets in your automotive manufacturing site to monitor. Now you'll determine the traffic mirroring methods to use for your site.
+In the previous unit, you prepared the devices and subnets in your automotive manufacturing site to monitor. Now you determine the traffic mirroring methods to use for your site.
 
 ## Traffic Mirroring
 
@@ -29,20 +29,20 @@ Choose your monitoring method based on considerations like your overall monitori
 
 In the following example of a Remote VLAN architecture, your source switches are configured with remote SPAN sessions, which distribute the data via intermediate switches to the destination switch. The destination switch monitors traffic from your OT network sensor with Defender for IoT:
 <!-- should this be switch or port? -->
-:::image type="content" source="../media/4-remote-span-vlan.jpg" alt-text="Diagram of a remote VLAN architecture" border="false":::
+:::image type="content" source="../media/4-remote-span-vlan.jpg" alt-text="Diagram of a remote VLAN architecture." border="false":::
 
 ### Active or passive aggregation (TAP)
 
 In the following example of a network TAP architecture the TAP is installed inline to the network cable and mirrors traffic to Defender for IoT:
 
-:::image type="content" source="../media/4-active-passive-tap-v2.png" alt-text="Diagram of a network TAP" border="false":::
+:::image type="content" source="../media/4-active-passive-tap-v2.png" alt-text="Diagram of a network TAP." border="false":::
 
 ### ERSPAN architecture
 
-In the following example of an ERSPAN architecture, the source router encapsulates traffic and sends the packet over the OSI layer 3 network to the destination router. Then it's decapsulated and sent to the OT network sensor and on to Defender for IoT:
+In the following example of an ERSPAN architecture, the source router encapsulates traffic and sends the packet over the OSI layer 3 network to the destination router. Then decapsulates and sends it to the OT network sensor and on to Defender for IoT:
 
 <!-- the packet or the payload?-->
 
-:::image type="content" source="../media/4-erspan-architecture.png" alt-text="Diagram of a ERSPAN network" border="false":::
+:::image type="content" source="../media/4-erspan-architecture.png" alt-text="Diagram of a ERSPAN network." border="false":::
 
 ## Knowledge check
