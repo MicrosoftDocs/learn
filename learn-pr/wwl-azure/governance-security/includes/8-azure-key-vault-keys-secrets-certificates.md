@@ -98,8 +98,6 @@ Key Vault allows for the creation of multiple issuer objects with different issu
 
 Issuer objects are created in the vault. They can be used only with Key Vault certificates in the same vault.
 
-*Publicly trusted certificates are sent to CAs and certificate transparency (CT) logs outside the Azure boundary during enrollment. They're covered by the General Data Protection Regulation policies of those entities.*
-
 ## Certificate contacts
 
 Certificate contacts contain contact information for sending notifications triggered by certificate lifetime events. All the certificates in the key vault share the contact information.
