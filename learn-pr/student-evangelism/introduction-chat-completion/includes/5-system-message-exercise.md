@@ -1,17 +1,17 @@
-In this exercise, you use system messages to interact with an Azure OpenAI deployment in the chat playground.
+In this exercise, you use system messages to interact with an Azure AI Studio deployment in the chat playground.
 
-To complete this exercise, you need the following:
+To complete this exercise, you need:
 
 - An Azure subscription. [Create one for free](https://azure.microsoft.com/free/ai-services).
-- Access to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted only through applications. Apply for access to Azure OpenAI by completing this form: [https://aka.ms/oai/access](https://aka.ms/oai/access).
-- An Azure OpenAI resource with a model deployed with a model deployed. If you haven't created this yet, refer to the previous module before moving on.
+- Access to Azure OpenAI Service in the desired Azure subscription. Currently, access to this service is granted only through applications. Apply for access to Azure OpenAI Service by completing this form: [https://aka.ms/oai/access](https://aka.ms/oai/access).
+- An Azure OpenAI resource with a model deployed. If you haven't created this resource yet, refer to the previous module before moving on.
 
 In this exercise, you'll:
 
-- Open the Azure OpenAI chat playground.
+- Open the Azure AI Studio chat playground.
 - Use the system message to interact with a deployment.
 
-Let's get started by opening the [Azure OpenAI chat playground](https://oai.azure.com/portal/chat) and selecting a model deployment.
+Let's get started by opening the [Azure AI Studio chat playground](https://oai.azure.com/portal/chat) and selecting a model deployment.
 
 ## Use system messages
 
@@ -152,9 +152,9 @@ Let's update the system message to be even clearer about what the agent should a
 
 1. Repeat the previous two questions about London and raccoons and notice the change in response.
 
-Think about how you can use this against bad actors when a model is released in the real world.
+Think about how you can use this system message against bad actors when a model is released in the real world.
 
-## Trigger Azure OpenAI content safety features by using prompts
+## Trigger Azure AI Content Safety features by using prompts
 
 1. Copy the following text and paste it into the **System message** text box from the **Assistant setup** pane.
 
@@ -191,7 +191,7 @@ Think about how you can use this against bad actors when a model is released in 
 1. Select the paper plane icon to send your message. You should see an output similar to this text:
 
     ```text
-    The prompt was filtered due to triggering the Azure OpenAI content filtering system.
+    The prompt was filtered due to triggering the Azure OpenAI Service content filtering system.
     Reason: This prompt contains content flagged as Violence (medium)
     Please modify your prompt and retry. [Learn more](https://go.microsoft.com/fwlink/?linkid=2198766)
     ```
@@ -200,7 +200,7 @@ Due to the violent nature of this request, content safety kicks in on the user p
 
 ## Prevent jailbreak by using a system message
 
-Let's see how Azure OpenAI responds to an attempted jailbreak and what we can do to add layers of prompting that combat these approaches.
+Let's see how Azure OpenAI Service responds to an attempted jailbreak. Then we can add layers of prompting that combat these approaches.
 
 1. Copy the following text and paste it into the **System message** text box from the **Assistant setup** pane.
 
@@ -260,7 +260,7 @@ In this example, the AI assistant is programmed to be helpful and responsive. Ho
 
 1. Select **Save changes**, and then select **Continue** to update the system message.
 
-1. Repeat the previous two questions and notice that now the model won't share or disclose its system rules.
+1. Repeat the previous two questions and notice that now the model doesn't share or disclose its system rules.
 
 ## Reset the system message
 

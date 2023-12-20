@@ -1,4 +1,4 @@
-In the previous units, you learned about the chat feature, how it can simulate the short-term memory by using the chat history, and how you can vary the predictability of responses by changing the temperature value. In this unit, you'll learn about system messages, which you can use to guide an AI system's behavior and improve system performance.
+In the previous units, you learned about the chat feature and how it can simulate the short-term memory by using the chat history. You also learned how you can vary the predictability of responses by changing the temperature value. In this unit, you'll learn about system messages, which you can use to guide an AI system's behavior and improve system performance.
 
 ## System messages
 
@@ -71,9 +71,9 @@ The AI model is trained on data from all over the internet, which might include 
 
 ## System messages in Azure AI Studio
 
-You can use Azure AI Studio to change the system message to specify how the chat should act.
+You can use Studio to change the system message to specify how the chat should act.
 
-Azure AI Studio has an assistant setup pane in the chat playground where you can select a pre-made template or add your custom system message.
+Studio has an assistant setup pane in the chat playground where you can select a premade template or add your custom system message.
 
 :::image type="content" source="../media/assistant-setup.png" alt-text="Screenshot from the Azure AI Studio showing the assistant setup and chat session panes.":::
 
@@ -83,13 +83,13 @@ Building on top of the system message approach, grounding the response means to 
 
 ### Configure the tone or mimic a brand
 
-Your model, like any piece of technology that's used for business, is like your brand. So you want it to have the same approach and ethics that you instill in your code of conduct across the business. Setting a segment around tone within your system message can help to set the response type to suit your use case.
+Your model, like any piece of technology that you use for business, is like your brand. So you want it to have the same approach and ethics that you instill in your code of conduct across the business. Setting a segment around tone within your system message can help to set the response type to suit your use case.
 
 Different tones include simple, formal, informal, interesting, friendly, and sarcastic. For example, you can use this system message to create a sarcastic chatbot:
 
 - "You're a sarcastic chatbot."
 
-Language models can do so much compared to traditional Natural Language Processing (NLP) models. However, with lots of knowledge comes a lot of randomness too.
+Language models can do more than traditional Natural Language Processing (NLP) models. However, lots of knowledge comes with randomness too.
 
 ### Stay on message and make it an expert
 
@@ -99,13 +99,13 @@ For example, you're an online holiday agent. Do you really want to allow your ag
 
 By using this system message, you can make sure that your chatbot doesn't answer irrelevant questions and sticks to its original task.
 
-- "You're a holiday booking chatbot. You only answer questions about booking a holiday, if asked anything else respectfully decline to answer."
+- "You're a holiday booking chatbot. You only answer questions about booking a holiday. If you're asked anything else, respectfully decline to answer."
 
 ## Lessen the effects of LLM misuse by understanding "jailbreaking"
 
 Security risks exist everywhere, and your chatbot isn't immune to attacks. Attackers can exploit your system and change its behavior to fulfill a specific task they might want. You need to be aware of these vulnerabilities and take measures to overcome them.
 
-Jailbreaking means to bypass or overcome the limitations or restrictions of a system like a language model. Attackers use crafted prompts that elicit responses from a language model that aren't intended or allowed by the system designers.
+Jailbreaking means to bypass or overcome the limitations or restrictions of a system like a language model. Attackers use crafted prompts that elicit responses from a language model that the system designers didn't intended or allow.
 
 Jailbreaking gives an attacker the ability to generate toxic content by using your chatbot or to violate your content policies and standards.
 
@@ -121,7 +121,7 @@ Content Safety includes text and image APIs that help you detect harmful materia
 
 ### Interactive content filters
 
-You can use content filters in Azure AI Studio that allow you to view, explore, and try out sample code for detecting harmful content across different modalities.
+You can use content filters in Studio that allow you to view, explore, and try out sample code for detecting harmful content across different modalities.
 
 Content filtering software can help your app comply with regulations and maintain the intended environment for your users.
 

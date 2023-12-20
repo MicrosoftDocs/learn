@@ -6,7 +6,7 @@ We mentioned some benefits to interacting with an LLM by using the chat approach
 
 - **Carry out a chat.** In this approach, you interact with an LLM chat interface. You send prompts and get responses, and the responses consider past prompts and responses.
 
-- **Simulate a chat.** In this approach, the chat has already taken place, and you're sending the whole chat history to the LLM. Simulating a chat is beneficial because the customer doesn't have to spend time with the LLM to build up chat history. The LLM answers as if the chat has already taken place.
+- **Simulate a chat.** In this approach, the chat already took place, and you're sending the whole chat history to the LLM. Simulating a chat is beneficial because the customer doesn't have to spend time with the LLM to build up chat history. The LLM answers as if the chat already took place.
 
 ### Chat roles and conversing with the LLM
 
@@ -29,7 +29,7 @@ Now that we know what a chat can look like, let's briefly discuss how to simulat
 
 ### Chat history simulates memory
 
-By using the system and user roles that we just learned about, we can simulate that a conversation has taken place.
+By using the system and user roles that we just learned about, we can simulate that a conversation already happened.
 
 Let's take the previous chat conversation example:
 

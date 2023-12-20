@@ -7,7 +7,7 @@ Prompts are inputs or queries that you write to get a specific response from a l
 >
 > - An Azure subscription. [Create one for free](https://azure.microsoft.com/free/ai-services).
 > - Access to Azure OpenAI Service in the desired Azure subscription. Currently, access to this service is granted only through applications. Apply for access to Azure OpenAI Service by completing [this form](https://aka.ms/oai/access).
-> - An Azure OpenAI resource with a model deployed. If you haven't created this yet, refer to the previous module before moving on.
+> - An Azure OpenAI resource with a model deployed. If you haven't created this resource yet, refer to the previous module before moving on.
 
 In this exercise, you'll:
 

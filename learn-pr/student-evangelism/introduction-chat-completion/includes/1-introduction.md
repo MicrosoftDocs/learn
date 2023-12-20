@@ -1,4 +1,4 @@
-Large language models (LLMs) like GPT-3, GPT-3.5, and GPT-4 models from Azure OpenAI are prompt based. Users interact with prompt-based models by entering a text prompt, to which the model responds with a text completion. A text completion is a single completion that contains a prompt and a response. A chat completion is a series of prompts and completions. Chat completions allow you to simulate a conversation with an LLM, which helps the model produce more natural and accurate responses.
+Large language models (LLMs) like GPT-3, GPT-3.5, and GPT-4 models from Azure OpenAI Service are prompt based. Users interact with prompt-based models by entering a text prompt, to which the model responds with a text completion. A text completion is a single completion that contains a prompt and a response. A chat completion is a series of prompts and completions. Chat completions allow you to simulate a conversation with an LLM, which helps the model produce more natural and accurate responses.
 
 LLMs can produce unexpected or unwanted responses to prompts as a result of:
 
