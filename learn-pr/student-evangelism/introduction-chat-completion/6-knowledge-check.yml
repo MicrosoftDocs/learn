@@ -42,7 +42,7 @@ quiz:
       explanation: Incorrect. The system message can define the model's profile, capabilities, and limitations for the scenario.
     - content: Generating responses to customer inquiries based on the chatbot's personal preferences.
       isCorrect: true
-      explanation: Correct. The system message isn't used to generate responses to customer inquiries based on the chatbot's personal preferences. Rather, it guides the AI system's behavior and improve system performance.
+      explanation: Correct. The system message isn't used to generate responses to customer inquiries based on the chatbot's personal preferences. Rather, it guides the AI system's behavior and improves system performance.
     - content: Providing examples to demonstrate the intended behavior of the model.
       isCorrect: false
       explanation: Incorrect. The system message can provide examples to demonstrate the intended behavior of the model.

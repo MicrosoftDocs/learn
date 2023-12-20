@@ -105,7 +105,7 @@ By using this system message, you can make sure that your chatbot doesn't answer
 
 Security risks exist everywhere, and your chatbot isn't immune to attacks. Attackers can exploit your system and change its behavior to fulfill a specific task they might want. You need to be aware of these vulnerabilities and take measures to overcome them.
 
-Jailbreaking means to bypass or overcome the limitations or restrictions of a system like a language model. Attackers use crafted prompts that elicit responses from a language model that the system designers didn't intended or allow.
+Jailbreaking means to bypass or overcome the limitations or restrictions of a system like a language model. Attackers use crafted prompts that elicit responses from a language model that the system designers didn't intend or allow.
 
 Jailbreaking gives an attacker the ability to generate toxic content by using your chatbot or to violate your content policies and standards.
 
