@@ -76,7 +76,7 @@ The regulatory compliance has both automated and manual assessments that might n
 
 7. In this example, when you select **Take action** from the recommendation details page, you arrive in the Azure Virtual Machine pages of the Azure portal, where you can enable encryption from the **Security** tab:
 
-:::image type="content" source="../media/encrypting-virtual-machine-disks-settings-a266a0bb.png" alt-text="Screenshot showing how to enable encryption from the Security tab.":::
+:::image type="content" source="../media/encrypt-virtual-machine-disks-e4f06b3b.png" alt-text="Screenshot showing how to enable encryption from the Security tab.":::
 
 
 8. After you take action to resolve recommendations, you'll see the result in the compliance dashboard report because your compliance score improves.
