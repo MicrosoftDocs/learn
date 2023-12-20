@@ -43,6 +43,5 @@ units:
 - learn.implement-observability-cloud-native-app-with-opentelemetry.exercise-extend-telemetry
 - learn.implement-observability-cloud-native-app-with-opentelemetry.knowledge-check
 - learn.implement-observability-cloud-native-app-with-opentelemetry.summary
-iconUrl: /training/achievements/aspnetcore/microservices-logging-aspnet-core.svg
 badge:
   uid: learn.implement-observability-cloud-native-app-with-opentelemetry.badge
