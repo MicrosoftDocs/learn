@@ -18,7 +18,7 @@ You can enable the Defender for Servers plan from the Environment settings page 
 
 5. On the Defender plans page, toggle the Servers switch to **On**.
 
-:::image type="content" source="../media/enable-defender-for-servers-446178fb.png" alt-text="Screenshot showing Defender for servers plan.":::
+:::image type="content" source="../media/enable-defender-servers-65466980.png" alt-text="Screenshot showing Defender for servers plan.":::
 
 
 ## Select a Defender for Servers plan
