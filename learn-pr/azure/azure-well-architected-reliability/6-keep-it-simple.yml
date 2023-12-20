@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-reliability.6-keep-it-simple
+uid: learn.azure-well-architected-reliability.keep-it-simple
 title: Keep it simple
 metadata:
   title: Keep it simple
@@ -7,7 +7,7 @@ metadata:
   ms.date: 12/18/2023
   author: claytonsiemens77
   ms.author: csiemens
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "Minimizing the components in your workload reduces the complexity, which makes it easier to manage and troubleshoot."
       isCorrect: true
-      explanation: "Correct. The more components you have, the more complex your workload is . This makes it more difficult to manage and troubleshoot."
+      explanation: "Correct. The more components you have, the more complex your workload is. This makes it more difficult to manage and troubleshoot."
     - content: "Minimizing the number of components in your workload means you don't have to monitor the workload."
       isCorrect: false
       explanation: "Incorrect. You should always monitor your workload, regardless of how many components it has."

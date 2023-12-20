@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-reliability.2-design-for-business-requirements
+uid: learn.azure-well-architected-reliability.design-for-business-requirements
 title: Design for business requirements
 metadata:
   title: Design for business requirements
@@ -7,7 +7,7 @@ metadata:
   ms.date: 12/18/2023
   author: claytonsiemens77
   ms.author: csiemens
-  ms.topic: interactive-tutorial
+  ms.topic:  unit
   ms.prod: learning-azure
 durationInMinutes: 20
 content: |

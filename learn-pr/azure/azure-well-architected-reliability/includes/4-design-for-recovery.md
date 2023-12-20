@@ -59,5 +59,5 @@ Self-healing automation helps to reduce risks from external factors like human i
 
 *Applying the approach and outcomes*
 
-- The team decides to implement a VM Scale Set solution, which is configured to deploy the Application Health Extension to continuously monitor the health of the VM process.
-- With Automatic Instance Repair enabled, the VMSS is now able to repair the component by restarting the VM or creating a new instance based on the same image.
+- The team decides to implement an Azure Virtual Machine Scale Set solution, which is configured to deploy the Application Health Extension to continuously monitor the health of the VM process.
+- With Automatic Instance Repair enabled, the scale set is now able to repair the component by restarting the VM or creating a new instance based on the same image.

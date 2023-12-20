@@ -52,6 +52,6 @@ It's beneficial to experience failures in production so you can set realistic ex
 
 *Applying the approach and outcomes*
 
-- The team develops synthetic transaction testing that will be run in production on a monthly schedule to simulate serveral flows, including the registration flow.
+- The team develops synthetic transaction testing that will be run in production on a monthly schedule to simulate several flows, including the registration flow.
 - Alerting is configured for the synthetic transaction tests so the team will be notified will failures occur, covering the risk of expiring certificates.
 - In addition, the team has invested in building chaos testing into their SDLC, performing routine chaos testing and capturing the results to both validate self-preservation techniques and to help uncover previously unknown reliability issues. 
