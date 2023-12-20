@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg"::: Replace repetitive manual tasks with software automation that completes them quicker, with greater consistency and accuracy, and reduces risks. |
+| :::image type="icon" source="../media/goal.svg"::: Replace repetitive manual tasks with software automation that completes them quicker, with greater consistency and accuracy, and reduces risks. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
 The workload might have workflows with processes that involve team members doing mundane, repetitive, and time-consuming tasks that don't actually need human intellect. Depending on the frequency, you might spend considerable time on these efforts, investing more time as the workload grows. Also, these processes are often error-prone due to human input.

@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg"::: Reach the desired state of deployment with predictability. |
+| :::image type="icon" source="../media/goal.svg"::: Reach the desired state of deployment with predictability. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
 Build a workload supply chain that enables you to consistently reach the goal of predictability in all of your environments, across the workload's hosting platforms, applications, data, and configuration resources. The deployment mechanism must be capable of automation, testing, monitoring, and versioning. It should be modularized and ready to execute on demand. It shouldn't be represented as a monolithic end-to-end process. The supply chain isn't necessarily for faster execution, but to achieve consistency and self-documentation over multiple iterations.

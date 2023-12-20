@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg"::: Implement guardrails in the deployment process to minimize the effect of errors or unexpected conditions. |
+| :::image type="icon" source="../media/goal.svg"::: Implement guardrails in the deployment process to minimize the effect of errors or unexpected conditions. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
 During the development cycle, workload artifacts go through many changes as they get implemented and tested and as bugs are fixed.

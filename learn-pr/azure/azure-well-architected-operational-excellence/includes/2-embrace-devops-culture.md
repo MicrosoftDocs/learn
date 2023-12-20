@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg"::: Empower development and operations teams to continuously improve their system design and processes by working together with a mindset of collaboration, shared responsibility, and ownership. |
+| :::image type="icon" source="../media/goal.svg"::: Empower development and operations teams to continuously improve their system design and processes by working together with a mindset of collaboration, shared responsibility, and ownership. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
 DevOps is a community of practice where diversity of perspective and skills drives toward one mission. Teams must foster a collaborative environment of shared knowledge instead of siloed learning. Use shared functions to strive to overcome resource constraints.

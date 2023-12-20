@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg"::: Optimize productivity by standardizing development practices, enforcing quality gates, and tracking progress and success through systematic change management. |
+| :::image type="icon" source="../media/goal.svg"::: Optimize productivity by standardizing development practices, enforcing quality gates, and tracking progress and success through systematic change management. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
 The development team is responsible for addressing workload issues prior to release with minimal friction. Be mindful of developer efficiency and optimize for fast turnaround cycles, from coding to testing results. Implement effective and right-sized processes that plan and standardize technical activities and also drive consensus within the team and the stakeholders.

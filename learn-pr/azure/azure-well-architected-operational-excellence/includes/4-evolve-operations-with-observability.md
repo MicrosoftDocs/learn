@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg"::: Gain visibility into the system, derive insight, and make data-driven decisions. |
+| :::image type="icon" source="../media/goal.svg"::: Gain visibility into the system, derive insight, and make data-driven decisions. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
 Build a culture that continuously improves quality by monitoring the workload and taking all the pillars of the Azure Well-Architected Framework into consideration. Enable the team and stakeholders to make both short-term and long-term decisions across many facets by providing the necessary data, statistics, and trends. Learn from your data and drive improvements.
