@@ -32,21 +32,21 @@ quiz:
     choices:
     - content: "True"
       isCorrect: false
-      explanation: "Incorrect. Security testing should be handled by teams external to the workload team to ensure that the workload team is not biased in their testing."
+      explanation: "Incorrect. Teams external to the workload team should handle security testing to ensure that the workload team isn't biased in their testing."
     - content: 'False'
       isCorrect: true
-      explanation: 'Correct. Security testing should be handled by teams external to the workload team to ensure that the workload team is not biased in their testing.'
+      explanation: "Correct. Teams external to the workload team should handle security testing to ensure that the workload team isn't biased in their testing."
   - content: 'In what way was Contoso at risk with their old process for their Apache Spark jobs?'
     choices:
     - content: "The jobs were not being monitored for successful runs."
       isCorrect: false
-      explanation: "Incorrect. This didn't present a security risk."
+      explanation: "Incorrect. This possibility didn't present a security risk."
     - content: 'The jobs were automatically run over night when no one was able to monitor them.'
       isCorrect: false
-      explanation: "Incorrect. This didn't present a security risk."
-    - content: 'The jobs were not included in the update and patching process.'
+      explanation: "Incorrect. This possibility didn't present a security risk."
+    - content: "The jobs weren't included in the update and patching process."
       isCorrect: true
-      explanation: "Correct. The components used in the jobs were not being updated and patched, which presented a security risk."
+      explanation: "Correct. The components used in the jobs weren't being updated and patched, which presented a security risk."
     - content: 'The jobs were not being monitored for failed runs.'
       isCorrect: false
-      explanation: "Incorrect. This didn't present a security risk."
+      explanation: "Incorrect. This possibility didn't present a security risk."
