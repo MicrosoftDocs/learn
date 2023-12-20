@@ -2,12 +2,11 @@ In this exercise, you use basic prompts to interact with an Azure AI Studio depl
 
 Prompts are inputs or queries that you write to get a specific response from a large language model (LLM).
 
-> [!NOTE]
-> To complete this exercise, you need the following:
->
-> - An Azure subscription. [Create one for free](https://azure.microsoft.com/free/ai-services).
-> - Access to Azure OpenAI Service in the desired Azure subscription. Currently, access to this service is granted only through applications. Apply for access to Azure OpenAI Service by completing [this form](https://aka.ms/oai/access).
-> - An Azure OpenAI resource with a model deployed. If you haven't created this resource yet, refer to the previous module before moving on.
+To complete this exercise, you need:
+
+- An Azure subscription. [Create one for free](https://azure.microsoft.com/free/ai-services).
+- Access to Azure OpenAI Service in the desired Azure subscription. Currently, access to this service is granted only through applications. Apply for access to Azure OpenAI Service by completing [this form](https://aka.ms/oai/access).
+- An Azure OpenAI resource with a model deployed. If you haven't created this resource yet, refer to the previous module before moving on.
 
 In this exercise, you'll:
 

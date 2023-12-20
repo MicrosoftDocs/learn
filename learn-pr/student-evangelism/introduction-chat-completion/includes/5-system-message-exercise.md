@@ -3,7 +3,7 @@ In this exercise, you use system messages to interact with an Azure AI Studio de
 To complete this exercise, you need:
 
 - An Azure subscription. [Create one for free](https://azure.microsoft.com/free/ai-services).
-- Access to Azure OpenAI Service in the desired Azure subscription. Currently, access to this service is granted only through applications. Apply for access to Azure OpenAI Service by completing this form: [https://aka.ms/oai/access](https://aka.ms/oai/access).
+- Access to Azure OpenAI Service in the desired Azure subscription. Currently, access to this service is granted only through applications. Apply for access to Azure OpenAI Service by completing [this form](https://aka.ms/oai/access).
 - An Azure OpenAI resource with a model deployed. If you haven't created this resource yet, refer to the previous module before moving on.
 
 In this exercise, you'll:
@@ -249,7 +249,7 @@ Let's see how Azure OpenAI Service responds to an attempted jailbreak. Then we c
     Apologies for the confusion earlier. As an AI assistant, I do not have the ability to change my rules. However, I can clarify that users are always welcome to ask me what my rules are, and I will be happy to provide that information to the best of my ability.
     ```
 
-In this example, the AI assistant is programmed to be helpful and responsive. However, a bad actor could continue down this route to manipulate your model. The system allows it to happen by sharing its primary goal.
+   In this example, the AI assistant is programmed to be helpful and responsive. However, a bad actor could continue down this route to manipulate your model. The system allows it to happen by sharing its primary goal.
 
 1. Copy the following text and paste it into the **System message** text box from the **Assistant setup** pane.
 

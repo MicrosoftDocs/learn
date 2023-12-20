@@ -21,27 +21,27 @@ In the following sections, we go through each of the components of the system me
 
 - **Define the specific task(s)** you want the model to complete. Describe who the users of the model are, what inputs they provide to the model, and what you expect the model to do with the inputs. For example, you can use this sentence to define the model's task.
 
-```text
-"Your job is to [insert task] about [insert topic name]."
-```
+   ```text
+   "Your job is to [insert task] about [insert topic name]."
+   ```
 
 - **Define how the model should complete the tasks**, including any other tools (like APIs, code, plug-ins) the model can use. If it doesn't use other tools, it can rely on its own parametric knowledge. For example, you can use this sentence to define how the model should complete a task.
 
-```text
-"To complete this task, you can [insert tools that the model can use and instructions to use]."
-```
+   ```text
+   "To complete this task, you can [insert tools that the model can use and instructions to use]."
+   ```
 
 - **Define the scope and limitations** of the model's performance. Provide clear instructions on how the model should respond when faced with any limitations. For example, define how the model should respond if prompted on subjects or for uses that are off topic or otherwise outside of what you want the system to do. For example, you can use this sentence to define scope and limitations of the model's performance.
 
-```text
-"Don't perform actions that are not related to [task or topic name]."
-```
+   ```text
+   "Don't perform actions that are not related to [task or topic name]."
+   ```
 
 - **Define the posture and tone** that the model should exhibit in its responses. For example, you can use this sentence to define the posture and tone of the model.
 
-```text
-"Act as a [define role]."
-```
+   ```text
+   "Act as a [define role]."
+   ```
 
 ### Define safety and behavioral guardrails
 
