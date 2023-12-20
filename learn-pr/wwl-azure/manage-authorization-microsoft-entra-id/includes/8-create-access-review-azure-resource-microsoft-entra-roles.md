@@ -54,7 +54,7 @@ Access Reviews for Service Principals require a Microsoft Entra Workload ID Prem
 :::image type="content" source="../media/access-review-review-role-membership-tab-9c14ff23.png" alt-text="Screenshot showing how to review role membership.":::
 <br>
 
-13, In **assignment type**, scope the review by how the principal was assigned to the role. Choose eligible assignments only to review eligible assignments (regardless of activation status when the review is created) or active assignments only to review active assignments. Choose all active and eligible assignments to review all assignments regardless of type.<br>
+13. In **assignment type**, scope the review by how the principal was assigned to the role. Choose eligible assignments only to review eligible assignments (regardless of activation status when the review is created) or active assignments only to review active assignments. Choose all active and eligible assignments to review all assignments regardless of type.<br>
 
 :::image type="content" source="../media/access-review-assignment-type-select-29f2fcee.png" alt-text="Screenshot showing assignment types and reviewers.":::
 
@@ -98,7 +98,7 @@ Access Reviews for Service Principals require a Microsoft Entra Workload ID Prem
 
 1. To specify additional settings, expand the Advanced settings section.
 
-:::image type="content" source="../media/access-review-advanced-settings-6fa1a72e.png" alt-text="Screenshot showing the advanced settings page. page.":::
+:::image type="content" source="../media/access-review-advanced-settings-6fa1a72e.png" alt-text="Screenshot showing the advanced settings page.":::
 
 
 2. Set Show recommendations to Enable to show the reviewers the system recommendations based the user's access information. Recommendations are based on a 30-day interval period where users who have logged in the past 30 days are recommended access, while users who have not are recommended denial of access. These sign-ins are irrespective of whether they were interactive. The last sign-in of the user is also displayed along with the recommendation.

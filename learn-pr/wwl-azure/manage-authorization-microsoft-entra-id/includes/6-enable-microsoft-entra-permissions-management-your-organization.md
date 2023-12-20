@@ -4,9 +4,8 @@ Once you've enabled Permissions Management, you can connect it to your Amazon We
 
 To enable Permissions Management in your organization:
 
-You must have a Microsoft Entra tenant. If you don't already have one, create a free account.<br>
-
-You must be eligible for or have an active assignment to the Permissions Management Administrator role as a user in that tenant.
+ -  You must have a Microsoft Entra tenant. If you don't already have one, create a free account.<br>
+ -  You must be eligible for or have an active assignment to the Permissions Management Administrator role as a user in that tenant.
 
 ## How to enable Permissions Management on your Microsoft Entra tenant
 
@@ -21,9 +20,9 @@ In your browser:
 There are two ways to activate a trial or a full product license.
 
  -  The first way is to go to the Microsoft 365 admin center.<br>
-     -  Sign in as a **Global Administrator** for your tenant.
-     -  Go to Setup and sign up for a Microsoft Entra Permissions Management trial.
-     -  For self-service, Go to the Microsoft 365 portal to sign up for a 45-day free trial or to purchase licenses.
+    1.  Sign in as a **Global Administrator** for your tenant.
+    2.  Go to Setup and sign up for a Microsoft Entra Permissions Management trial.
+    3.  For self-service, Go to the Microsoft 365 portal to sign up for a 45-day free trial or to purchase licenses.
  -  The second way is through Volume Licensing or Enterprise agreements.
      -  If your organization falls under a volume license or enterprise agreement scenario, contact your Microsoft representative.
 
