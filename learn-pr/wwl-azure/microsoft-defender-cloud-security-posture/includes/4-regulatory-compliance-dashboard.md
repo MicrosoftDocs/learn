@@ -19,7 +19,7 @@ Use the regulatory compliance dashboard to help focus your attention on the gaps
 
 The dashboard provides you with an overview of your compliance status and the set of supported compliance regulations. You'll see your overall compliance score, and the number of passing vs. failing assessments associated with each standard.
 
-:::image type="content" source="../media/regulatory-compliance-controls-8e72e0b4.png" alt-text="Screenshot showing the Defender for Cloud Regulatory compliance Control details.":::
+:::image type="content" source="../media/regulatory-compliance-controls-8e72e0b4.png" alt-text="Screenshot showing the Defender for Cloud Regulatory compliance dashboard.":::
 
 
 ## Investigate regulatory compliance issues
