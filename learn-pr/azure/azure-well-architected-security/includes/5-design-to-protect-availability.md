@@ -34,7 +34,7 @@ Implement code scanners, apply the latest security patches, update software, and
 
 *Contoso's challenge*
 
-- The VMs used to host the system are Azure marketplace images with the latest Ubuntu OS. The bootstrapping processes for a VM set up a few certificates, tweaks some SSH configuration, and installs the application code, but no antimalware tools are employed.
+- The VMs used to host the system are Azure Marketplace images with the latest Ubuntu OS. The bootstrapping processes for a VM set up a few certificates, tweaks some SSH configuration, and installs the application code, but no antimalware tools are employed.
 - While Azure Application Gateway fronts the solution, it’s only used as an Internet gateway; the web application firewall (WAF) function is not enabled currently.
 - Both of these configuration choices leave the compute environment unprotected from vulnerabilities in code or through unintended installation of malware.
 
