@@ -27,7 +27,7 @@ By the end of this module, you'll understand the five principles of the Security
 - Strengthen the availability of your workload against security incidents.
 - Continuously maintain and improve your workload's security posture
 
-## Prequisites
+## Prerequisites
 
 - Experience building or operating solutions by using core infrastructure technology such as data storage, compute, and networking
 - Experience building or operating technology systems to solve business problems

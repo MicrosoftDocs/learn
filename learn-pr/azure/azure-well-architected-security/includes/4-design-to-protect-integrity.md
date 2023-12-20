@@ -17,13 +17,13 @@ Knowing the origin of software and verifying its authenticity throughout the lif
 
 - The engineering team is implementing their build and release pipelines, but haven't yet addressed the integrity of the build system.
 - They've opted to use a few open-source solutions in both the firmware and the cloud components.
-- They’ve heard how a supply chain compromise or malicious insiders can corrupt code which can then be used to disrupt systems or even exfiltrate data. If their customer's  environmental reporting were impacted in such a way that resulted in a failure to report or a misrepresentation that is found in an audit, the affect on Contoso and their customer could be catastrophic.
+- They’ve heard how a supply chain compromise or malicious insiders can corrupt code which can then be used to disrupt systems or even exfiltrate data. If their customer's  environmental reporting were impacted in such a way that resulted in a failure to report or a misrepresentation that is found in an audit, the effect on Contoso and their customer could be catastrophic.
 
 *Applying the approach and outcomes*
 
 - The team modifies their build processes for both firmware and the backend cloud systems, and now include security scanning steps to alert on known common vulnerabilities and exposures (CVEs) in dependencies. Additionally, they now include malware scanning of the code and packages as well.
 - They also look at antimalware options for running on Azure Stack HCI, such as Windows Defender Application Control.
-- These measures help increase confidence that the firmware and software that get deployed as part of this solution will not perform unexpected actions, impacting the integrity of the system or the customer’s environmental reporting requirements.
+- These measures help increase confidence that the firmware and software that get deployed as part of this solution won’t perform unexpected actions, impacting the integrity of the system or the customer’s environmental reporting requirements.
 
 ## Employ strong cryptographic mechanisms
 
@@ -52,8 +52,8 @@ By adopting this approach, you'll be able to recover data with confidence that b
 *Contoso's challenge*
 
 - Every month the Environment Protection Agency emissions report is generated, but these reports only need to be submitted three times a year.
-- The report gets generated and then stored in an Azure Storage account until it is needed to be sent. This is done as a backup in case the reporting system experiences a disaster.
-- The backup report itself is not encrypted, but is transferred over HTTPs to the storage account. 
+- The report gets generated and then stored in an Azure Storage account until it’s needed to be sent. This is done as a backup in case the reporting system experiences a disaster.
+- The backup report itself isn’t encrypted, but is transferred over HTTPs to the storage account. 
 
 *Applying the approach and outcomes*
 

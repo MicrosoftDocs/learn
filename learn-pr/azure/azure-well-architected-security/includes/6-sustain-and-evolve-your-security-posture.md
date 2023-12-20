@@ -7,7 +7,7 @@ It's important to measure your security posture, enforce policies to maintain th
 
 **Example scenario**
 
-Contoso Race Day Performance creates data capture systems for professional rally car race teams. Most of the system is embedded in the cars and provides local feedback to the driving crew, but at end of the race all telemetry is uploaded to the cloud for analytical processing. The processing combines track and environmental conditions and vehicle telemetry data into reports that can be used by the race team to evaluate their run and fine tune their strategies. The cloud system uses Azure Spark in Azure Synapse Analytics. Ancillary systems in the workload all use PaaS offerings. The system is already in use by 3 of the top 5 race teams in the world.
+Contoso Race Day Performance creates data capture systems for professional rally car race teams. Most of the system is embedded in the cars and provides local feedback to the driving crew, but at end of the race all telemetry is uploaded to the cloud for analytical processing. The processing combines track and environmental conditions and vehicle telemetry data into reports that can be used by the race team to evaluate their run and fine tune their strategies. The cloud system uses Azure Spark in Azure Synapse Analytics. Ancillary systems in the workload all use PaaS offerings. The system is already in use by three of the top five race teams in the world.
 
 Race teams are highly protective of their data, and want to know what Contoso Race Day Performance is doing to keep up to date with evolving security threats that might compromise their data.
 
@@ -15,12 +15,12 @@ Race teams are highly protective of their data, and want to know what Contoso Ra
 
 **Analyze each component of your workflow and evaluate potential threats that each component could be subject to. Classify the identified threats using an industry-standard methodology.**
 
-By adopting this approach, you can produce a report of attack vectors prioritized by their severity level. You'll be able to identify threats and vulnerabilities quickly and set up countermeasures.
+By adopting this approach, you can produce a report of attack vectors prioritized by their severity level. Additionally, you can  identify threats and vulnerabilities quickly and set up countermeasures.
 
 *Contoso's challenge*
 
-- While they haven’t had a security incident yet, the workload team doesn’t have a standardized way to evaluate if there are any threat vectors that are not adequately addressed in existing security controls.
-- The team realizes they have a blind spot with regard to the security of their workload and they are at risk of being caught off-guard in the event of a security incident.
+- While they haven’t had a security incident yet, the workload team doesn’t have a standardized way to evaluate if there are any threat vectors that aren’t adequately addressed in existing security controls.
+- The team realizes they have a blind spot with regard to the security of their workload and they are at risk of being caught off-guard if there’s a security incident.
 
 *Applying the approach and outcomes*
 
@@ -39,7 +39,7 @@ Threats can be introduced as part of your change management. Integrating scanner
 
 *Contoso's challenge*
 
-- The threat modeling exercise helped the team uncover security gaps and they are now interested in validating their controls, especially after implementing their remediation.
+- The threat modeling exercise helped the team uncover security gaps and they’re  now interested in validating their controls, especially after implementing their remediation.
 - The team has experimented with open source tools in the past to test their security, and found the exercise fun and educational. However, they and the stakeholders would like to bring in security professionals to perform thorough and rigorous testing regularly.
 
 *Applying the approach and outcomes*
@@ -47,7 +47,7 @@ Threats can be introduced as part of your change management. Integrating scanner
 - The team engages with a well-know Microsoft partner specializing in cloud security to discuss penetration testing.
 - The workload team signs a Statement of Work for quarterly penetration testing service, mixing in one white-box test per year to ensure higher confidence.
 - The consulting team also helps the dev team get antimalware installed on dev boxes and the self-hosted build agents.
-- These measures give the workload team and the stakeholders a high degree of confidence that they will be prepared for evolving threats moving forward.
+- These measures give the workload team and the stakeholders a high degree of confidence that they’ll be prepared for evolving threats moving forward. 
 
 ## Get current, and stay current
 
@@ -63,6 +63,6 @@ SDL reviews bring clarity around security features. SDL can help you maintain an
 
 *Applying the approach and outcomes*
 
-- After the workload team reviews internal processes, they see that there is a risk of unpatched components being in the workload if the process for maintaining the Spark jobs isn't addressed.
+- After the workload team reviews internal processes, they see that there’s a risk of unpatched components being in the workload if the process for maintaining the Spark jobs isn't addressed.
 - The teams adopt a new standard for the Apache jobs that requires that all technologies in use must be updated along with their regularly recurring update and patch schedules.
-- By addressing this gap in security controls, the workload as a whole is less likely to be at risk of unpatched components. Their use of PaaS and SaaS services also helps limit their exposure to this risk as they do not have to patch underlying infrastructure.
+- By addressing this gap in security controls, the workload as a whole is less likely to be at risk of unpatched components. Their use of PaaS and SaaS services also helps limit their exposure to this risk as they don’t have to patch underlying infrastructure.

@@ -11,31 +11,31 @@ Contoso Concierge runs a hotel management software system used in over 50 hotel 
 
 **Use security controls and design patterns to prevent attacks and code flaws from causing resource exhaustion and blocking access.**
 
-Adopting this approach will help ensure the system doesn't experience downtime caused by malicious actions, like distributed denial of service (DDoS) attacks.
+Adopting this approach helps ensure the system doesn't experience downtime caused by malicious actions, like distributed denial of service (DDoS) attacks.
 
 *Contoso's challenge*
 
 - The workload team and the workload's stakeholders consider the reliability of this system to be of the utmost importance because so many hotel guests depend on it for business and leisure travel. It must be up for hotels to run their business.
-- The team has invested considerable resources into testing functional and non-functional requirements to ensure reliability stays high, including using safe deployment practices to reliably release application updates.
-- While they have been focused so heavily on reliability, the team has been less attentive to security.  Recently, an update was released that contained a code flaw that was exploited by an attacker to bring down the whole system for many hotels. The attack overwhelmed the application servers in one region for over four hours one evening, causing many upset customers and hotel guests.
-- The attacker used the Contoso application servers to proxy requests to a regional storage account to receive pre-generated folio information. An inordinately large malicious folio was generated which caused the application servers to exhaust resources on the application server as it was being loaded into memory, and client retries spread the issue across all application servers.
+- The team has invested considerable resources into testing functional and nonfunctional requirements to ensure reliability stays high, including using safe deployment practices to reliably release application updates.
+- While they have been focused  heavily on reliability, the team has been less attentive to security.  Recently, an update was released that contained a code flaw that was exploited by an attacker to bring down the whole system for many hotels. The attack overwhelmed the application servers in one region for over four hours one evening, causing issues for customers and hotel guests.
+- The attacker used the Contoso application servers to proxy requests to a regional storage account to receive pregenerated folio information. An inordinately large malicious folio was generated which caused the application servers to exhaust resources on the application server as it was being loaded into memory, and client retries spread the issue across all application servers.
 
 *Applying the approach and outcomes*
 
-- The team looked into a design pattern to remove their application servers from the folio request flow, opting instead for a Valet Key approach. While this wouldn’t have prevented the problem, it would have isolated the impact.
-- They also added more input validation into the system to sanitize input which will help prevent malicious attempts like this in the future.
+- The team looked into a design pattern to remove their application servers from the folio request flow, opting instead for a Valet Key approach. While this wouldn’t have prevented the problem, it would’ve isolated the impact.
+- They also added more input validation into the system to sanitize input, which will help prevent malicious attempts like this in the future.
 - Now with input sanitization and a strengthened design, one type of risk has been mitigated.
 
 ## Proactively limit attack vectors
 
 **Implement preventative measures for attack vectors that exploit vulnerabilities in application code, networking protocols, identity systems, malware protection, and other areas.**
 
-Implement code scanners, apply the latest security patches, update software, and protect your system with effective antimalware on an ongoing basis. Doing so will help to reduce the attack surface to ensure business continuity.
+Implement code scanners, apply the latest security patches, update software, and protect your system with effective antimalware on an ongoing basis. Doing so  helps to reduce the attack surface to ensure business continuity.
 
 *Contoso's challenge*
 
-- The VMs used to host the system are Azure marketplace images with the latest Ubuntu OS. The bootstrapping processes for a VM sets up a few certificates, tweaks some SSH configuration, and installs the application code, but no antimalware tools are employed.
-- While Azure Application Gateway fronts the solution, it’s only used as a Internet gateway; the web application firewall (WAF) function is not enabled currently.
+- The VMs used to host the system are Azure marketplace images with the latest Ubuntu OS. The bootstrapping processes for a VM set up a few certificates, tweaks some SSH configuration, and installs the application code, but no antimalware tools are employed.
+- While Azure Application Gateway fronts the solution, it’s only used as an Internet gateway; the web application firewall (WAF) function is not enabled currently.
 - Both of these configuration choices leave the compute environment unprotected from vulnerabilities in code or through unintended installation of malware.
 
 *Applying the approach and outcomes*
