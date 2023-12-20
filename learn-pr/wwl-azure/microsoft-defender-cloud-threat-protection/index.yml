@@ -3,7 +3,7 @@ uid: learn.wwl.microsoft-defender-cloud-threat-protection
 metadata:
   title: Configure and manage threat protection by using Microsoft Defender for Cloud
   description: "This module focuses on configuring and managing security monitoring and automation solutions using Azure Monitor and Microsoft Sentinel, enabling organizations to proactively identify and respond to security incidents in their cloud environment."
-  ms.date: 12/14/2023
+  ms.date: 12/20/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
@@ -32,11 +32,11 @@ subjects:
 units:
 - learn.wwl.microsoft-defender-cloud-threat-protection.introduction
 - learn.wwl.microsoft-defender-cloud-threat-protection.workload-protections
-- learn.wwl.microsoft-defender-cloud-threat-protection.protect-your-servers-with-defender-for-servers
-- learn.wwl.microsoft-defender-cloud-threat-protection.protect-your-databases-with-defender-for-databases
-- learn.wwl.microsoft-defender-cloud-threat-protection.security-alerts-and-incidents
-- learn.wwl.microsoft-defender-cloud-threat-protection.automate-responses-to-microsoft-defender-for-cloud-triggers
-- learn.wwl.microsoft-defender-cloud-threat-protection.view-and-remediate-findings-from-vulnerability-assessment-solutions-on-your-vms
+- learn.wwl.microsoft-defender-cloud-threat-protection.protect-your-servers-with-defender-servers
+- learn.wwl.microsoft-defender-cloud-threat-protection.protect-your-databases-with-defender-databases
+- learn.wwl.microsoft-defender-cloud-threat-protection.security-alerts-incidents
+- learn.wwl.microsoft-defender-cloud-threat-protection.automate-responses-microsoft-defender-cloud-triggers
+- learn.wwl.microsoft-defender-cloud-threat-protection.view-remediate-findings-from-vulnerability-assessments
 - learn.wwl.microsoft-defender-cloud-threat-protection.knowledge-check
 - learn.wwl.microsoft-defender-cloud-threat-protection.summary
 badge:

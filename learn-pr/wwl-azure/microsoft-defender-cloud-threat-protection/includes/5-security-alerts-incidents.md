@@ -17,7 +17,7 @@ Alerts have a severity level assigned to help prioritize how to attend to each a
  -  The specific trigger
  -  The confidence level that there was malicious intent behind the activity that led to the alert
 
-:::image type="content" source="../media/alert-severity-6c1573f3.png" alt-text="Table showing alert severity and recommended repsonses.":::
+:::image type="content" source="../media/alert-severity-6c1573f3.png" alt-text="Screenshot of table showing alert severity and recommended responses.":::
 
 
 ## What are security incidents?
@@ -44,7 +44,7 @@ By using the information gathered for each step of an attack, Defender for Cloud
 
 To detect real threats and reduce false positives, Defender for Cloud monitors resources, collects, and analyzes data for threats, often correlating data from multiple sources.
 
-:::image type="content" source="../media/defender-for-cloud-detection-capabilities-4df9437d.png" alt-text="Image showing Defender for Cloud detection capabilities.":::
+:::image type="content" source="../media/defender-cloud-detection-capabilities-51044dec.png" alt-text="Diagram showing Defender for Cloud detection capabilities.":::
 
 
 ## Microsoft initiatives

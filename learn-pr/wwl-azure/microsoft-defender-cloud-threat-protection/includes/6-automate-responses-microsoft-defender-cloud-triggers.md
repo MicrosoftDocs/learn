@@ -2,11 +2,11 @@ Automating your organization's monitoring and incident response processes can gr
 
 To deploy your automation configurations across your organization, use the supplied Azure Policy 'DeployIfNotExist' policies described below to create and configure workflow automation procedures.<br>
 
-### To implement these policies:
+## To implement these policies:
 
 1. From the table below, select the policy you want to apply:<br>
 
-:::image type="content" source="../media/workflow-automation-table-3a2e1975.png" alt-text="Table showing workflow automation policies.":::
+:::image type="content" source="../media/workflow-automation-table-3a2e1975.png" alt-text="Screenshot showing workflow automation policies.":::
 :::image type="content" source="../media/opening-azure-policy-701b9e5c.png" alt-text="Screenshot showing how to search for an Azure policy.":::
 
 
