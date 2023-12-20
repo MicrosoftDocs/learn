@@ -18,10 +18,10 @@ quiz:
     choices:
     - content: "Debugging, logging, and tracing"
       isCorrect: false
-      explanation: "That's not correct. Debugging, logging, and tracing are not the three pillars of observability."
+      explanation: "That's not correct. Debugging, logging, and tracing aren't the three pillars of observability."
     - content: "Logs, tracking, and metrics"
       isCorrect: false
-      explanation: "That's not correct. Logs, tracking, and metrics are not the three pillars of observability."
+      explanation: "That's not correct. Logs, tracking, and metrics aren't the three pillars of observability."
     - content: "Logs, metrics, and distributed tracing"
       isCorrect: true
       explanation: "That's correct. Logs, metrics, and distributed tracing are the three pillars of observability."
