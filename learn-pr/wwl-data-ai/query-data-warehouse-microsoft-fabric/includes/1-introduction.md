@@ -10,7 +10,7 @@ In a typical data warehouse, the data is organized using a schema, often a [star
 
 Fact tables store the measurable, quantitative data about a business, while dimension tables contain descriptive attributes related to fact data.
 
-:::image type="content" border="false" source="../media/1-star-schema.png" alt-text="Screenshot of a star schema design with a fact table in the center and dimension tables forming the points of the star.":::
+:::image type="content" border="false" source="../media/1-star-schema.png" alt-text="Diagram of a star schema design with a fact table in the center and dimension tables forming the points of the star.":::
 
 Think of a dimension table as the *"who, what, where, when, why”* of your data warehouse. It’s like the descriptive backdrop that gives context to the raw numbers found in the fact tables.
 
