@@ -66,6 +66,26 @@
         "redirect_document_id": false
       },
       {
+        "source_path_from_root": "/learn-pr/azure/azure-well-architected-reliability/2-high-availability.yml",
+        "redirect_url": "/training/modules/azure-well-architected-reliability/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/azure-well-architected-reliability/3-disaster-recovery.yml",
+        "redirect_url": "/training/modules/azure-well-architected-reliability/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/azure-well-architected-reliability/4-backup-restore.yml",
+        "redirect_url": "/training/modules/azure-well-architected-reliability/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/azure-well-architected-reliability/5-summary.yml",
+        "redirect_url": "/training/modules/azure-well-architected-reliability/",
+        "redirect_document_id": false
+      },
+      {
         "source_path_from_root": "/learn-pr/azure/azure-well-architected-security/2-defense-in-depth.yml",
         "redirect_url": "/training/modules/azure-well-architected-security/",
         "redirect_document_id": false
