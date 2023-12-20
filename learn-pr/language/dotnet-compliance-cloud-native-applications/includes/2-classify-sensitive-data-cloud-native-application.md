@@ -6,7 +6,7 @@ In this unit, you'll explore some of the compliance features of .NET. Then you'l
 
 Organizations need to comply with their own internal policies and with external regulations. For example, a company might have a policy that says that customer data can't be stored in a log file. Or a government might have create regulations to enforce the appropriate handling of customers data. These policies and regulations are often referred to as *compliance requirements*.
 
-Compliance requirements are implemented by creating a set of rules that are applied to an organizations applications. Usually a compliance team is responsible for implementing compliance rules and then ensuring that they're followed.
+Compliance requirements are implemented by creating a set of rules that are applied to an organization's applications. Usually a compliance team is responsible for implementing compliance rules and then ensuring that they're followed.
 
 ## What is data classification?
 
