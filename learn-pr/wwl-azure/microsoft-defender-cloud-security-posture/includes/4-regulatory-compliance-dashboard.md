@@ -38,7 +38,7 @@ You can use the information in the regulatory compliance dashboard to investigat
 
 5. Select **Control details**.<br>
 
-:::image type="content" source="../media/control-details-7f503c71.png":::
+:::image type="content" source="../media/control-details-7f503c71.png" alt-text="Screenshot showing the Defender for Cloud Regulatory compliance Control details.":::
 
 
  -  Select Overview to see the specific information about the Control you selected.
