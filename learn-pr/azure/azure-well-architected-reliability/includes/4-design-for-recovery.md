@@ -19,7 +19,7 @@ A well-defined process leads to a quick recovery that can prevent negative impac
 
 *Contoso's challenge*
 
-- As the solution is only used internally and isn't considered mission-critical, the workload team and business stakeholders have agreed that rebuilding the solution in a secondary region is a sufficient recovery model in the unlikely event that the Azure region where it is currently deployed is lost or the entire solution becomes unavailable for some other reason.
+- The solution is only used internally and isn't considered mission-critical. So, the workload team and business stakeholders agree that rebuilding the solution in a secondary region is a sufficient recovery model in the unlikely event that the Azure region where it is deployed is lost or the entire solution becomes unavailable for some other reason.
 - The workload team has described how to build the solution in another region in their DR plan, but hasn't had the opportunity to perform a full DR drill yet.
 
 *Applying the approach and outcomes*
