@@ -10,7 +10,7 @@ Follow these steps to connect to data warehouse in Fabric from SSMS:
 
 1. Navigate to your Microsoft Fabric workspace. 
 1. On your warehouse asset, select more options, then select **Copy SQL connection string**.
-1. Launch SQL Server Management Studio, and paste the SQL connection string copied into the **Server** name box, and and provide the appropriate credentials for authentication.
+1. Launch SQL Server Management Studio, and paste the SQL connection string copied into the **Server** name box, and provide the appropriate credentials for authentication.
 
     :::image type="content" border="false" source="../media/4-ssms.png" alt-text="Screenshot showing how to connect to a warehouse using SQL Server Management Studio.":::
 
