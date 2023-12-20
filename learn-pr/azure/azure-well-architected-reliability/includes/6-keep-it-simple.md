@@ -5,7 +5,7 @@ It's often what you remove rather than what you add that leads to the most relia
 
 **Example scenario**
 
-Contoso Travel is buying and integrating a small startup company with a popular web-based travel app. The app has gone viral because of its business model of negotiating deep discounts with hotel chains and airlines, and the use of social media to do intense and highly targeted marketing campaigns.
+Contoso Travel is buying and integrating a small startup company with a popular web-based travel app. The app’s popularity is due to its business model of negotiating deep discounts with hotel chains and airlines, and the use of social media to do intense and highly targeted marketing campaigns.
 
 The existing version of the startup product was developed in nodejs, and is running on VMs that are hosted between the on-premises data center, and AWS.
 
@@ -17,7 +17,7 @@ Designing for business requirements can lead to a straightforward solution that'
 
 *Contoso's challenge*
 
-- One of the components of the newly acquired application facilitates collecting feedback from the users directly on the website, after they have made a reservation. The feature has very rarely been used since its release because most users just skip over it. There has been a strong feedback loop mechanism from users that works through the company’s social media accounts, which are heavily used for marketing user interaction. This mechanism has been used significantly more frequently than the website's feedback function.
+- One of the components of the newly acquired application facilitates collecting feedback from the users directly on the website after they’ve made a reservation. The feature is rarely used because most users just skip over it. There’s a strong feedback loop mechanism from users that works through the company’s social media accounts, which is heavily used for marketing user interaction. This mechanism is used significantly more frequently than the website's feedback function.
 
 *Applying the approach and outcomes*
 

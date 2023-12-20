@@ -20,13 +20,13 @@ A well-defined process leads to a quick recovery that can prevent negative impac
 *Contoso's challenge*
 
 - The solution is only used internally and isn't considered mission-critical. So, the workload team and business stakeholders agree that rebuilding the solution in a secondary region is a sufficient recovery model in the unlikely event that the Azure region where it is deployed is lost or the entire solution becomes unavailable for some other reason.
-- The workload team has described how to build the solution in another region in their DR plan, but hasn't had the opportunity to perform a full DR drill yet.
+- The workload team describes how to build the solution in another region in their DR plan, but hasn't had the opportunity to perform a full DR drill yet.
 
 *Applying the approach and outcomes*
 
 - After experiencing a regional outage, the DR response team is able to follow the DR plan's instructions to redeploy the analytics solution in another region.
-- The team discovers gaps in the DR plans with respect to some of the operations required to deploy the solution, and the plan is updated to make the recovery more efficient in the future.
-- The workload team and stakeholders agree to accelerate the planned DR testing to ensure that the updated plan will produce a more efficient recovery.
+- The team discovers gaps in the DR plans for some of the operations required to deploy the solution, and the plan is updated to make the recovery more efficient in the future.
+- The workload team and stakeholders agree to accelerate the planned DR testing to ensure that the updated plan enables a more efficient recovery.
 
 ## Address stateful data
 
@@ -42,9 +42,9 @@ Immutable and transactionally consistent backups ensure that data can't be alter
 
 *Applying the approach and outcomes*
 
-- Since the databases are quite large at over 4TB each, migrating to Azure SQL Database is not achievable in the short term. So, the team migrates to Azure VMs running SQL Server 2022.
-- The team decides that they will use the Automated  Backup function for all databases, including the critical ones, like the one used by the VMs.
-- For the critical databases, the team will use the Automated Backup function along with the Managed Instance link function to actively replicate the databases to an Azure SQL Managed Instance.
+- Since the databases are large at over 4 TB each, migrating to Azure SQL Database isn’t achievable in the short term. So, the team migrates to Azure VMs running SQL Server 2022.
+- The team decides to use the Automated  Backup function for all databases, including the critical ones, like the one used by the VMs.
+- For the critical databases, the team plans to use the Automated Backup function along with the Managed Instance link function to actively replicate the databases to an Azure SQL Managed Instance.
 
 ## Implement automated self-healing capabilities in the design
 
@@ -59,5 +59,5 @@ Self-healing automation helps to reduce risks from external factors like human i
 
 *Applying the approach and outcomes*
 
-- The team decides to implement a VMSS solution. VMSS is configured to deploy the Application Health Extension to continuously monitor the health of the VM process.
-- With Automatic Instance Repair enabled the VMSS is now able to repair the component by restarting the VM or creating a new instance based on the same image.
+- The team decides to implement a VM Scale Set solution, which is configured to deploy the Application Health Extension to continuously monitor the health of the VM process.
+- With Automatic Instance Repair enabled, the VMSS is now able to repair the component by restarting the VM or creating a new instance based on the same image.
