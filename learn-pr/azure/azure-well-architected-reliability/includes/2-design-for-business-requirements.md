@@ -19,13 +19,13 @@ Compliance requirements must also have predictable outcomes for in-scope flows. 
 
 *Contoso's challenge*
 
-- The workload team wants to ensure that they are optimizing how resources are spent on making the workload reliable.
+- The workload team wants to ensure that they’re optimizing how resources are spent on making the workload reliable.
 - They have decomposed the workload into flows and have rated the flows based on their criticality.
 
 *Applying the approach and outcomes*
 
 - The team determines that the Claim Submission and Approval flow will have the highest reliability requirements for the workload due to doctors' and patients' reliance on the availability of that flow.
-- The workload team identifies the components that support this flow and determine the reliability measures that achieving the targets will require.
+- The workload team identifies the components that support this flow and determine the reliability measures that achieving the targets requires.
 
 ## Understand platform commitments
 
@@ -35,15 +35,15 @@ Service-level agreements (SLAs) vary by service. Not all services and features a
 
 *Contoso's challenge*
 
-- The workload team and stakeholders have determined that the data for the app needs to have a guaranteed recovery time objective (RTO) that cannot exceed 30 seconds to support the criticality of their Claim Submission and Approval flow.
+- The workload team and stakeholders have determined that the data for the app needs to have a guaranteed recovery time objective (RTO) that can’t exceed 30 seconds to support the criticality of their Claim Submission and Approval flow.
 
 *Applying the approach and outcomes*
 
-- After reviewing Microsoft's published SLAs, the team sees that they will need to deploy the Business Critical tier with active geo-replication to achieve this RTO target.
+- After reviewing Microsoft's published SLAs, the team sees that they’ll need to deploy the Business Critical tier with active geo-replication to achieve this RTO target.
 
 ## Determine dependencies and their effect on resiliency
 
-**When decomposing your workload into components, ensure that you have documented all dependencies, whether they are internal or external to the business, and identify how malfunctions with the dependencies may effect your flows**
+**When decomposing your workload into components, ensure that you’ve documented all dependencies, whether they’re internal or external to the business, and identify how malfunctions with the dependencies may affect your flows**
 
 Keeping track of dependent infrastructure, services, APIs, and functions developed by other teams or third parties helps you determine whether the workload can operate in absence of those dependencies. It also helps you understand cascading failures and improve downstream operations. Developers can implement resilient design patterns to handle potential failures when you use external services that might be susceptible to failures.
 
@@ -56,4 +56,4 @@ Keeping track of dependent infrastructure, services, APIs, and functions develop
 *Applying the approach and outcomes*
 
 - The workload team engages the team supporting the reference dataset and learns that the reliability target for the dataset is lower than that of flow that will use it.
-- The team adds a design tasks to the backlog to add a local cache of the dataset and a background job to update the cache nightly. The staleness tolerance allowed by the design will not be breached by this solution.
+- The team adds design tasks to the backlog to add a local cache of the dataset and a background job to update the cache nightly. The staleness tolerance allowed by the design won’t be breached by this solution.

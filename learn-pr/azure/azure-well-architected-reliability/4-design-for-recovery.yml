@@ -40,9 +40,9 @@ quiz:
     - content: "Using Azure SQL Database instead of SQL Server on a VM"
       isCorrect: false
       explanation: "Changing the deployment model for your database doesn't address dealing with the recovery of stateful data."
-    - content: "Changing from a single region deployment of CosmosDB to a multi-region deployment"
+    - content: "Changing from a single region deployment of Cosmos DB to a multi-region deployment"
       isCorrect: true
-      explanation: "Correct. CosmosDB is a stateful service, so changing from a single region deployment to a multi-region deployment will replicate your data to multiple regions, which lowers your RTO and RPO."
+      explanation: "Correct. Cosmos DB is a stateful service, so changing from a single region deployment to a multi-region deployment replicates your data to multiple regions, which lowers your RTO and RPO."
   - content: "Contoso has a mission-critical line-of-business application in Azure. What is one way they could implement self-healing to improve the reliability of their application?"
     choices:
     - content: "Use Azure Monitor actions to automatically restart the application if it fails"
@@ -53,7 +53,7 @@ quiz:
       explanation: "Azure Policy is used to enforce compliance with company policies, but it can't perform self-healing actions."
     - content: "Increase the backup frequency of the application's database"
       isCorrect: false
-      explanation: "This would improve the recoverability of the application, but it introduce self-healing capabilities in the workload."
+      explanation: "This change would improve the recoverability of the application, but it introduces self-healing capabilities in the workload."
     - content: "Use Azure Advisor to identify potential performance issues with the application"
       isCorrect: false
       explanation: "Azure Advisor can be used to identify potential performance issues, but it can't perform self-healing actions."

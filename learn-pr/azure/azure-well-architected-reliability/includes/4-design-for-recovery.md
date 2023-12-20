@@ -1,7 +1,7 @@
-| :::image type="icon" source="../media/goal.svg"::: The workload must be able to anticipate and recover from most failures, of all magnitudes, with minimal disruption to the user experience and business objectives.. |
+| :::image type="icon" source="../media/goal.svg"::: The workload must be able to anticipate and recover from most failures, of all magnitudes, with minimal disruption to the user experience and business objectives. |
 | :----------------------------------------------------------------------------------------------------------------------------------------- |
 
-Even highly resilient systems need disaster preparedness approaches, in both architecture design and workload operations. On the data layer, you should have strategies that can repair workload state in case of corruption.
+Even highly resilient systems need disaster preparedness approaches, in both architecture design and workload operations. On the data layer, you should have strategies that can repair workload state if there’s corruption.
 
 **Example scenario**
 
