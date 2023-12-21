@@ -8,7 +8,6 @@ metadata:
   author: codemillmatt  
   ms.author: masoucou
   ms.topic: unit
-  ms.prod: aspnet-core
 durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise-use-opentelemetry-data-cloud-native-application.md)]
