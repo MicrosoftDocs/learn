@@ -12,7 +12,7 @@ The following Microsoft Entra multifactor authentication settings are available 
 | Phone call settings              | Configure settings related to phone calls and greetings for cloud and on-premises environments.                                                                                                                                                                                       |
 | Providers                        | This will show any existing authentication providers that you've associated with your account. Adding new providers is disabled as of September 1, 2018.                                                                                                                              |
 
-:::image type="content" source="../media/multi-factor-authentication-settings-portal-9d828bf2.png" alt-text="Screenshot showing the multifactor authentication settings portal.":::
+:::image type="content" source="../media/multifactor-authentication-settings-portal-7a8ca6f8.png" alt-text="Screenshot showing the multifactor authentication settings portal.":::
 
 
 ## Account lockout (Microsoft Entra multifactor authentication Server only)
@@ -31,7 +31,7 @@ The following settings are available:
 To configure account lockout settings, complete these steps:
 
 1.  Sign in to the Azure portal as an **administrator**.
-2.  Go to **Azure Active Directory** &gt; **Security** &gt; **Multi-factor authentication** &gt; **Account lockout**.
+2.  Go to **Azure Active Directory** &gt; **Security** &gt; **Multifactor authentication** &gt; **Account lockout**.
 3.  Enter the values for your environment, and then **select Save**.
 
 :::image type="content" source="../media/account-lockout-settings-fd2ee95a.png" alt-text="Screenshot showing a Multi-Authentication Account lockout example.":::
@@ -45,7 +45,7 @@ If a user's device is lost or stolen, you can block Microsoft Entra multifactor 
 
 To block a user, complete the following steps.
 
-1.  Browse to **Azure Active Directory** &gt; **Security** &gt; **Multi-factor authentication** &gt; **Block and unblock users**.<br>
+1.  Browse to **Azure Active Directory** &gt; **Security** &gt; **Multifactor authentication** &gt; **Block and unblock users**.<br>
 2.  Select Add to block a user.
 3.  Enter the user name for the blocked user in the format username@domain.com, and then provide a comment in the Reason box.
 4.  Select OK to block the user.
@@ -54,7 +54,7 @@ To block a user, complete the following steps.
 
 To unblock a user, complete the following steps:
 
-Go to **Azure Active Directory** &gt; **Security** &gt; **Multi-factor authentication** &gt; **Block and unblock users**.<br>
+Go to **Azure Active Directory** &gt; **Security** &gt; **Multifactor authentication** &gt; **Block and unblock users**.<br>
 
 In the Action column next to the user, **select Unblock**.
 
@@ -64,7 +64,7 @@ Select **OK** to unblock the user.
 
 ## Report suspicious activity
 
-A preview of Report Suspicious Activity, the updated **Multi-factor authentication Fraud Alert feature**, is now available. When an unknown and suspicious multifactor authentication prompt is received, users can report the fraud attempt using Microsoft Authenticator or phone. These alerts are integrated with Identity Protection for more comprehensive coverage and capability.
+A preview of Report Suspicious Activity, the updated **Multifactor authentication Fraud Alert feature**, is now available. When an unknown and suspicious multifactor authentication prompt is received, users can report the fraud attempt using Microsoft Authenticator or phone. These alerts are integrated with Identity Protection for more comprehensive coverage and capability.
 
 Users who report a multifactor authentication prompt as suspicious are set to High User Risk. Administrators can use risk-based policies to limit access for these users or enable **self-service password reset (SSPR)** for users to remediate problems on their own. If you previously used the Fraud Alert automatic blocking feature and don't have an Azure AD P2 license for risk-based policies, you can use risk detection events to identify and disable impacted users and automatically prevent their sign-in. For more information about using risk-based policies, see Risk-based access policies.<br>
 
@@ -98,7 +98,7 @@ If Fraud Alert is enabled with Automatic Blocking and Report Suspicious Activity
 
 You can configure Azure AD to send email notifications when users report fraud alerts. These notifications are typically sent to identity administrators because the user's account credentials are likely compromised. The following example shows what a fraud alert notification email looks like:
 
-:::image type="content" source="../media/multi-factor-authentication-fraud-alert-email-4146caf9.png" alt-text="Screenshot showing a multifactor authentication fraud alert example.":::
+:::image type="content" source="../media/multifactor-authentication-fraud-alert-email-a2197419.png" alt-text="Screenshot showing a multifactor authentication fraud alert example.":::
 
 
 ## OATH tokens
@@ -111,7 +111,7 @@ Programmable OATH TOTP hardware tokens that can be reseeded can also be set up w
 
 OATH hardware tokens are supported as part of a public preview.<br>
 
-:::image type="content" source="../media/multi-factor-authentication-oath-tokens-1662aab9.png" alt-text="Screenshot showing the multifactor authentication Oath tokens page.":::
+:::image type="content" source="../media/multifactor-authentication-oath-tokens-6b5b9523.png" alt-text="Screenshot showing the multifactor authentication Oath tokens page.":::
 
 
 After you acquire tokens, you need to upload them in a comma-separated values (CSV) file format. Include the **User Principal Name (UPN)**, **serial number**, **secret key**, **time interval**, **manufacturer**, and **model**.
@@ -119,13 +119,10 @@ After you acquire tokens, you need to upload them in a comma-separated values (C
 > [!NOTE]
 > Be sure to include the header row in your CSV file.
 
-An administrator can sign in to the Azure portal, go to **Azure Active Directory** &gt; **Security** &gt; **Multi-factor authentication** &gt; **OATH tokens**, and **upload the CSV file**.<br>
+An administrator can sign in to the Azure portal, go to **Azure Active Directory** &gt; **Security** &gt; **Multifactor authentication** &gt; **OATH tokens**, and **upload the CSV file**.<br>
 
 Depending on the CSV file size, it might take a few minutes to process. Select Refresh to get the status. If there are any errors in the file, you can download a CSV file that lists them. The field names in the downloaded CSV file are different from those in the uploaded version.<br>
 
 After any errors are addressed, the administrator can activate each key by selecting Activate for the token and entering the **one-time passwords (OTPs)** displayed in the token.<br>
 
-Users can have a combination of up to five OATH hardware tokens or authenticator applications, such as the Microsoft Authenticator app, configured for use at any time.<br>
-
-> [!IMPORTANT]
-> Make sure to only assign each token to a single user. In the future, support for the assignment of a single token to multiple users will stop to prevent a security risk.
+Users can have a combination of up to five OATH hardware tokens or authenticator applications, such as the Microsoft Authenticator app, configured for use at any time.

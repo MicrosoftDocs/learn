@@ -34,7 +34,7 @@ Centralized approaches still work well in many cases, such as when applications,
 
 In centralized identity systems, the identity provider (IDP) controls the lifecycle and usage of credentials.
 
-:::image type="content" source="../media/centralized-identity-systems-b1b0b05c.png" alt-text="Diagram showing an example of a centralized identity system.":::
+:::image type="content" source="../media/new-centralized-identity-systems-f2066e48.png" alt-text="Diagram showing an example of a centralized identity system.":::
 
 
 However, there are scenarios where using a decentralized architecture with verifiable credentials can provide value by augmenting key scenarios such as
@@ -49,7 +49,7 @@ In decentralized identity systems, control of the lifecycle and usage of the cre
 
 Consider the scenario in the diagram where Proseware, an e-commerce website, wants to offer Woodgrove employees corporate discounts.
 
-:::image type="content" source="../media/decentralized-identity-systems-5ba2edc9.png" alt-text="Diagram showing an example of a decentralized identity system.":::
+:::image type="content" source="../media/new-decentralized-identity-systems-84e7ace6.png" alt-text="Diagram showing an example of a decentralized identity system.":::
 
 
 Terminology for verifiable credentials (VCs) might be confusing if you're not familiar with VCs. The following definitions are from the Verifiable Credentials Data Model 1.0 terminology section. After each, we relate them to entities in the preceding diagram.
@@ -106,9 +106,9 @@ As Woodgrove continues to operate its business, it must continually manage ident
 
 These use cases demonstrate how centralized identities and decentralized identities can be combined to provide a more robust and efficient identity and trust strategy and lifecycle.
 
-## User journey: Onboarding to woodgrove
+## User journey: Onboarding to Woodgrove
 
-:::image type="content" source="../media/centralized-decentralized-identity-user-journey-812ed1b9.png" alt-text="Diagram showing an example of a user journey in a centralized and decentralized identity architecture.":::
+:::image type="content" source="../media/new-onboarding-to-woodgrove-9b262699.png" alt-text="Diagram showing an example of a user journey in a centralized and decentralized identity architecture.":::
 
 
 **Awareness**: Alice is interested in working for Woodgrove, Inc. and visits Woodgrove’s career website.
@@ -137,7 +137,7 @@ By combining centralized and decentralized identity architectures for onboarding
 
 ## User journey: Accessing resources inside the trust boundary
 
-:::image type="content" source="../media/access-resources-inside-trust-boundary-03aba5a6.png" alt-text="Diagram showing an example of a user journey accessing resources inside the trust boundary.":::
+:::image type="content" source="../media/new-accessing-resources-inside-the-trust-boundary-01309dfe.png" alt-text="Diagram showing an example of a user journey accessing resources inside the trust boundary.":::
 
 
 As an employee, Alice is operating inside of the trust boundary of Woodgrove. Woodgrove acts as the identity provider (IDP) and maintains complete control of the identity and the configuration of the apps Alice uses to interact within the Woodgrove trust boundary. To use resources in the Microsoft Entra ID trust boundary, Alice provides potentially multiple forms of proof of identification to sign in Woodgrove’s trust boundary and access the resources inside of Woodgrove’s technology environment. Multiple proofs are a typical scenario that is well served using a centralized identity architecture.
@@ -161,7 +161,7 @@ Woodgrove negotiates a product purchase discount with Proseware. All Woodgrove e
 
 With decentralized identifiers, Woodgrove can provide Alice with a verifiable credential (VC) that Alice can use to access Proseware’s website and other external resources.
 
-:::image type="content" source="../media/verifiable-credentials-access-external-resources-94d0db71.png" alt-text="Diagram showing an example of a user journey accessing external resources.":::
+:::image type="content" source="../media/new-verifiable-credentials-f914bf84.png" alt-text="Diagram showing an example of a user journey accessing external resources.":::
 
 
 By providing Alice the VC, Woodgrove is attesting that Alice is an employee. Woodgrove is a trusted VC issuer in Proseware’s validation solution. This trust in Woodgrove’s issuance process allows Proseware to electronically accept the VC as proof that Alice is a Woodgrove employee and provide Alice the discount. As part of validation of the VC Alice presents, Proseware checks the validity of the VC by using the trust system. In this solution:
@@ -186,14 +186,14 @@ In decentralized identity architectures, the issuer, user, and relying party (RP
 
 For example: When VC holders need to access a resource, they must present the VC to that relying party. They do so by using a wallet application to read the RP’s request to present a VC. As a part of reading the request, the wallet application uses the RP’s DID to find the RP’s public keys using the trust system, validating that the request to present the VC hasn't been tampered with. To prove domain ownership, the wallet also checks that the DID is being referenced in a metadata document hosted in the DNS domain of the RP.
 
-:::image type="content" source="../media/how-decentralized-identity-systems-work-86311679.png" alt-text="Diagram showing how decentralized identity systems work.":::
+:::image type="content" source="../media/new-how-decentralized-identity-systems-work-81f89d31.png" alt-text="Diagram showing how decentralized identity systems work.":::
 
 
 ### Flow 1: Verifiable credential issuance
 
 In this flow, the credential holder interacts with the issuer to request a verifiable credential as illustrated in the following diagram
 
-:::image type="content" source="../media/verifiable-credential-issuance-99e07037.png" alt-text="Diagram showing an example of a verifiable credential issuance.":::
+:::image type="content" source="../media/new-verifiable-credential-issuance-f5e4a0c8.png" alt-text="Diagram showing an example of a verifiable credential issuance.":::
 
 
 1. The holder starts the flow by using a browser or native application to access the issuer’s web frontend. There, the issuer website drives the user to collect data and executes issuer-specific logic to determine whether the credential can be issued, and its content.)
@@ -220,7 +220,7 @@ In this flow, the credential holder interacts with the issuer to request a verif
 
 ### Flow 2: Verifiable credential presentation
 
-:::image type="content" source="../media/verifiable-credential-presentation-8eed444d.png" alt-text="Diagram showing an example of a verifiable credential presentation.":::
+:::image type="content" source="../media/new-verifiable-credential-presentation-af637b5c.png" alt-text="Diagram showing an example of a verifiable credential presentation.":::
 
 
 In this flow, a holder interacts with a relying party (RP) to present a VC as part of its authorization requirements.

@@ -8,8 +8,8 @@ In a real-world scenario, where the issuer and verifier are separate organizatio
  -  .NET 5.0.
  -  Download ngrok and sign up for a free account. If you can't use ngrok in your organization, please read this FAQ.
  -  A mobile device with Microsoft Authenticator:
- -  Android version 6.2206.3973 or later installed.
- -  iOS version 6.6.2 or later installed.
+     -  Android version 6.2206.3973 or later installed.
+     -  iOS version 6.6.2 or later installed.
 
 ## Gather tenant details to set up your sample application
 

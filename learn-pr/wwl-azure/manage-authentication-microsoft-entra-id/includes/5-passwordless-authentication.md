@@ -6,9 +6,9 @@ Features like **multifactor authentication (MFA)** are a great way to secure you
 
 Each organization has different needs when it comes to authentication. Microsoft global Azure and Azure Government offer the following **three** passwordless authentication options that integrate with Azure Active Directory (Azure AD):
 
-1.  Windows Hello for Business
-2.  Microsoft Authenticator
-3.  Fast Identity Online2 (**FIDO2**) security keys
+ -  Windows Hello for Business.
+ -  Microsoft Authenticator.
+ -  Fast Identity Online2 (**FIDO2**) security keys.
 
 :::image type="content" source="../media/passwordless-convenience-security-1ba3f8c9.png" alt-text="Screenshot showing three passwordless authentication options that integrate with Azure Active Directory.":::
 
@@ -21,7 +21,7 @@ Windows Hello for Business is ideal for information workers that have their own 
 
 You can also allow your employee's phone to become a passwordless authentication method. You may already be using the Authenticator app as a convenient multifactor authentication option in addition to a password. You can also use the Authenticator App as a passwordless option.
 
-## Fast Identity Online2 (FIDO2) security keys:
+## Fast Identity Online2 (FIDO2) security keys
 
 The FIDO (Fast IDentity Online) Alliance helps to promote open authentication standards and reduce the use of passwords as a form of authentication. FIDO2 is the latest standard that incorporates the web authentication (WebAuthn) standard.
 
