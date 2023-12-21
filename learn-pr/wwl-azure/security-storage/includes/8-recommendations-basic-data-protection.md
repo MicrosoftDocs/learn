@@ -22,7 +22,7 @@ If a failure occurs in a data center, if your storage account is redundant acros
 
 Customer-managed failover isn't currently supported for storage accounts with a hierarchical namespace enabled.<br>
 
-## Configure an Azure Resource Manager lock on the storage account to protect the account from deletion or configuration changes.<br>
+## Configure an Azure Resource Manager lock on the storage account to protect the account from deletion or configuration changes<br>
 
 ### Apply an Azure Resource Manager lock to a storage account
 
@@ -64,7 +64,7 @@ Users of the Azure portal may be affected when a **ReadOnly** lock is applied, i
 
 Data in Azure Files or the Table service may become unaccessible to clients who have previously been accessing it with the account keys. As a best practice, if you must apply a **ReadOnly** lock to a storage account, then move your Azure Files and Table service workloads to a storage account that is not locked with a **ReadOnly** lock.
 
-## Enable container soft delete for the storage account to recover a deleted container and its contents.
+## Enable container soft delete for the storage account to recover a deleted container and its contents
 
 ### Enable and manage soft delete for containers
 
@@ -115,7 +115,7 @@ You can restore a soft-deleted container and its contents within the retention p
 :::image type="content" source="../media/soft-delete-container-portal-restore-915b1d90.png" alt-text="Screenshot showing how to restore a soft-deleted container.":::
 
 
-## Save the state of a blob at regular intervals:
+## Save the state of a blob at regular intervals
 
  -  For Blob Storage workloads, enable blob versioning to automatically save the state of your data each time a blob is overwritten.
 
@@ -164,13 +164,13 @@ To list a blob's versions in the Azure portal:
 
 A snapshot is a read-only version of a blob that's taken at a point in time.
 
-*Snapshots in accounts that have the hierarchical namespace feature enabled is currently in PREVIEW.* 
+Snapshots in accounts that have the hierarchical namespace feature enabled is currently in PREVIEW.
 
 A snapshot of a blob is identical to its base blob, except that the blob URI has a DateTime value appended to the blob URI to indicate the time at which the snapshot was taken. For example, if a page blob URI is `http://storagesample.core.blob.windows.net/mydrives/myvhd`, the snapshot URI is similar to `http://storagesample.core.blob.windows.net/mydrives/myvhd?snapshot=2011-03-09T01:42:34.9360000Z`.
 
 A blob can have any number of snapshots. Snapshots persist until they're explicitly deleted, either independently or as part of a Delete Blob operation for the base blob. You can enumerate the snapshots associated with the base blob to track your current snapshots.
 
-*All snapshots share the base blob's URI. The only distinction between the base blob and the snapshot is the appended DateTime value.*
+All snapshots share the base blob's URI. The only distinction between the base blob and the snapshot is the appended DateTime value.
 
 A blob can have any number of snapshots. Snapshots persist until they're explicitly deleted, either independently or as part of a Delete Blob operation for the base blob. You can enumerate the snapshots associated with the base blob to track your current snapshots.
 

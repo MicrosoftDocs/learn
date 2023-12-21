@@ -104,7 +104,7 @@ Follow these steps to assign the built-in policy to the appropriate scope in the
 
 To monitor your storage accounts for compliance with the key expiration policy, follow these steps:
 
-1. On the Azure Policy dashboard, locate the built-in policy definition for the scope that you specified in the policy assignment. You can search for *Storage account keys should not be expired* in the **Search** box to filter for the built-in policy.<br>
+1. On the Azure Policy dashboard, locate the built-in policy definition for the scope that you specified in the policy assignment. You can search for *Storage account keys, should not be expired* in the **Search** box to filter for the built-in policy.<br>
 
 2. Select the policy name with the desired scope.<br>
 

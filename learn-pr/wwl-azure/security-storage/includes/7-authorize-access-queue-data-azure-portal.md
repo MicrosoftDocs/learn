@@ -41,12 +41,12 @@ When you navigate to a queue, the Azure portal indicates whether you are current
 
 If you are authenticating using the account access key, you'll see Access Key specified as the authentication method in the portal:
 
-:::image type="content" source="../media/auth-method-access-key-fca3f084.png" alt-text="Screenshot showing the authenticate with account access key page.":::
+:::image type="content" source="../media/auth-method-access-key-fca3f084.png" alt-text="Screenshot showing authenticate with account access key page.":::
 
 
 To switch to using Microsoft Entra account, click the link highlighted in the image. If you have the appropriate permissions via the Azure roles that are assigned to you, you'll be able to proceed. However, if you lack the right permissions, you'll see an error message like the following one:
 
-:::image type="content" source="../media/auth-error-azure-ad-aeb5bf99.png" alt-text="Screenshot showing the authenticate with your Microsoft Entra account permissions page.":::
+:::image type="content" source="../media/auth-error-azure-ad-aeb5bf99.png" alt-text="Screenshot showing authenticate with your Microsoft Entra account permissions page.":::
 
 
 To switch to using the account access key, click the link highlighted in the image. If you have access to the account key, then you'll be able to proceed. However, if you lack access to the account key, the Azure portal displays an error message.

@@ -54,7 +54,7 @@ quiz:
       explanation: "Incorrect. Automatic creation and teardown without validation can lead to security vulnerabilities."
     - content: "Enables manual creation and teardown of environments"
       isCorrect: false
-      explanation: "Incorrect. Manual creation and teardown is not efficient or secure."
+      explanation: "Incorrect. Manual creation and teardown are not efficient or secure."
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
       isCorrect: true
       explanation: "Correct. Azure Files enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
