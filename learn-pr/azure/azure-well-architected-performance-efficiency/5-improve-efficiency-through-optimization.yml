@@ -36,13 +36,13 @@ quiz:
       explanation: 'Correct. New design patterns and components can boost performance in ways that may not be possible with your current design.'
     - content: 'Relax the security requirements of your workload.'
       isCorrect: false
-      explanation: 'Incorrect. Relaxing security requirements is not a good strategy to improve the efficiency of your workload, as it puts your workload at risk of a security incident.'
+      explanation: 'Incorrect. Relaxing security requirements isn't a good strategy to improve the efficiency of your workload, as it puts your workload at risk of a security incident.'
     - content: 'Add more developers to your team.'
       isCorrect: false
       explanation: "Incorrect. Adding more developers to your team doesn't address the root cause of any performance issues."
-    - content: 'Use services in public or private preview.'
+    - content: 'Use services in public preview.'
       isCorrect: false
-      explanation: "Incorrect. Using services in public or private preview isn’t recommended as they aren’t intended to be used in production systems."
+      explanation: "Incorrect. Using services in public preview isn’t recommended as they aren’t intended to be used in production systems."
   - content: 'What type of tool can help you analyze performance trends and identify execution bottlenecks?'
     choices:
     - content: 'A security information and event management tool'
