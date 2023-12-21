@@ -25,7 +25,7 @@ quiz:
     - content: "Logs, metrics, and distributed tracing"
       isCorrect: true
       explanation: "That's correct. Logs, metrics, and distributed tracing are the three pillars of observability."
-  - content: "Which of the following apps let's you view distributed tracing data?"
+  - content: "Which of the following apps lets you view distributed tracing data?"
     choices:
     - content: "Prometheus"
       isCorrect: false
