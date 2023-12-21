@@ -31,7 +31,7 @@ quiz:
       explanation: "Incorrect. Infrastructure as code is still subject to the same compliance requirements as any other infrastructure."
   - content: 'How did moving the IaC code to the same repository as the application code help the Contoso team deploy with confidence?'
     choices:
-    - content: 'It allowed them to bypass their QA testing prcesses for the IaC code.'
+    - content: 'It allowed them to bypass their QA testing processes for the IaC code.'
       isCorrect: false
       explanation: 'Incorrect. The Contoso team still had to test the IaC code, but they were able to do so in the same repository as the application code.'
     - content: 'It allowed them to remove large portions of their IaC code due to overlap with the application code.'
