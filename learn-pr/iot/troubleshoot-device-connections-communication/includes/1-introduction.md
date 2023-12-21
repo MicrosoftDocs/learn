@@ -4,7 +4,7 @@ Suppose you joined a team that is implementing an Azure IoT solution for the com
 
 In this module, you will:
 
-* Examine device connection best practices
+* Examine device reconnections management to create resilient applications
 * Examine device disconnect troubleshooting using Azure Monitor and Event Grid
 * Examine the device communication troubleshooting guide
 * Examine message routing troubleshooting
