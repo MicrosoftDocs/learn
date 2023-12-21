@@ -43,10 +43,10 @@ subjects:
 - architecture
 units:
 - learn.azure-well-architected-performance-efficiency.1-introduction
-- learn.azure-well-architected-performance-efficiency.2-negotiate-realistic-performance-targets
-- learn.azure-well-architected-performance-efficiency.3-design-to-meet-capacity-requirements
-- learn.azure-well-architected-performance-efficiency.4-achieve-and-sustain-performance
-- learn.azure-well-architected-performance-efficiency.5-improve-efficiency-through-optimization
+- learn.azure-well-architected-performance-efficiency.negotiate-realistic-performance-targets
+- learn.azure-well-architected-performance-efficiency.design-to-meet-capacity-requirements
+- learn.azure-well-architected-performance-efficiency.achieve-and-sustain-performance
+- learn.azure-well-architected-performance-efficiency.improve-efficiency-through-optimization
 - learn.azure-well-architected-performance-efficiency.6-summary
 badge:
   uid: learn.azure-well-architected-performance-efficiency.badge

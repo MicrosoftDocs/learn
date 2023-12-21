@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-performance-efficiency.2-negotiate-realistic-performance-targets
+uid: learn.azure-well-architected-performance-efficiency.negotiate-realistic-performance-targets
 title: Negotiate realistic performance targets
 metadata:
   title: Negotiate realistic performance targets
@@ -7,7 +7,7 @@ metadata:
   ms.date: 12/13/2023
   author: claytonsiemens77
   ms.author: csiemens
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
@@ -20,7 +20,7 @@ quiz:
     - content: 'The team wanted to verify that the performance targets they had already negotiated were realistic.'
       isCorrect: false
       explanation: 'Incorrect. The team needed this information to prepare for the negotiations.'
-    - content: 'The needed to deploy a proof of concept to test the performance of the platform.'
+    - content: 'They needed to deploy a proof of concept to test the performance of the platform.'
       isCorrect: false
       explanation: 'Incorrect. Before a proof of concept is designed, performance targets must be negotiated. The team needed this information to prepare for the negotiations.'
     - content: 'The team was ready to deploy the workload to production.'
@@ -28,7 +28,7 @@ quiz:
       explanation: "Incorrect. The team was preparing to negotiate performance targets with stakeholders, and needed to understand this information before they began negotiations."
     - content: 'The team needed to prepare for performance target negotiations.'
       isCorrect: true
-      explanation: "Correct. It is crucial that you are well prepared for negotiations. Understanding your platform's capabilities before you begin negotiating will help you set realistic targets that are achievable."
+      explanation: "Correct. It’s crucial that you’re  well prepared for negotiations. Understanding your platform's capabilities before you begin negotiating will help you set realistic targets that are achievable."
   - content: 'Which of the following is an example of the types of points that you should cover in a performance target negotiation?'
     choices:
     - content: 'The performance targets for each Azure resource to be deployed.'

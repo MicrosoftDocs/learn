@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-performance-efficiency.5-improve-efficiency-through-optimization
+uid: learn.azure-well-architected-performance-efficiency.improve-efficiency-through-optimization
 title: Improve efficiency through optimization
 metadata:
   title: Improve efficiency through optimization
@@ -7,7 +7,7 @@ metadata:
   ms.date: 12/13/2023
   author: claytonsiemens77
   ms.author: csiemens
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
@@ -42,7 +42,7 @@ quiz:
       explanation: "Incorrect. Adding more developers to your team doesn't address the root cause of any performance issues."
     - content: 'Use services in public or private preview.'
       isCorrect: false
-      explanation: "Incorrect. Using services in public or private preview is not recommended as they are not intended to be used in production systems."
+      explanation: "Incorrect. Using services in public or private preview isn’t recommended as they aren’t intended to be used in production systems."
   - content: 'What type of tool can help you analyze performance trends and identify execution bottlenecks?'
     choices:
     - content: 'A security information and event management tool'

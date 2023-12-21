@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-performance-efficiency.4-achieve-and-sustain-performance
+uid: learn.azure-well-architected-performance-efficiency.achieve-and-sustain-performance
 title: Achieve and sustain performance
 metadata:
   title: Achieve and sustain performance
@@ -7,7 +7,7 @@ metadata:
   ms.date: 12/13/2023
   author: claytonsiemens77
   ms.author: csiemens
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
@@ -42,13 +42,13 @@ quiz:
     choices:
     - content: 'To fix broken images in the application.'
       isCorrect: false
-      explanation: 'Incorrect. The database structure is not related to broken images in the application.'
+      explanation: 'Incorrect. The database structure isn’t related to broken images in the application.'
     - content: 'To improve security.'
       isCorrect: false
-      explanation: 'Incorrect. The team is not facing a security issue with their current database structure.'
+      explanation: 'Incorrect. The team isn’t facing a security issue with their current database structure.'
     - content: 'To handle increased load.'
       isCorrect: true
       explanation: "Correct. The team saw some inefficiencies in their database structure that could cause performance issues as the workload's usage increases."
     - content: 'To begin the process of migrating to a new database solution.'
       isCorrect: false
-      explanation: "Incorrect. The team is not planning on migrating to a new database solution."
+      explanation: "Incorrect. The team isn’t planning on migrating to a new database solution."

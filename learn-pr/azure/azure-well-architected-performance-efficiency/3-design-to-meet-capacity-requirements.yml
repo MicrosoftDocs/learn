@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-performance-efficiency.3-design-to-meet-capacity-requirements
+uid: learn.azure-well-architected-performance-efficiency.design-to-meet-capacity-requirements
 title: Design to meet capacity requirements
 metadata:
   title: Design to meet capacity requirements
@@ -7,7 +7,7 @@ metadata:
   ms.date: 12/13/2023
   author: claytonsiemens77
   ms.author: csiemens
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
@@ -54,6 +54,6 @@ quiz:
     - content: 'That they could successfully migrate their data to Azure.'
       isCorrect: false
       explanation: "Incorrect. Contoso wasn't looking at this factor for their POC."
-    - content: 'That latency to their on-premises systems might affect their compute requirements.'
+    - content: 'That latency communicating with their on-premises IOT devices might affect their compute requirements.'
       isCorrect: true
       explanation: "Correct. Contoso speculated that high latency might affect their compute requirements, so they wanted to test this hypothesis."
