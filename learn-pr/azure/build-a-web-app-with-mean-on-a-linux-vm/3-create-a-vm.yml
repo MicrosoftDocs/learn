@@ -5,7 +5,7 @@ metadata:
   title: Exercise - Create a VM to host your web application
   description: Exercise - Create a VM to host your web application
   ms.date: 06/10/2022
-  author: ericd-mst-github
+  author: ju-shim
   ms.author: erd
   ms.topic: unit
 interactive: bash

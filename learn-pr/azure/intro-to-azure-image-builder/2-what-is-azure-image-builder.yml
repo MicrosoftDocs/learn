@@ -5,7 +5,7 @@ metadata:
   title: What is Azure Image Builder?
   description: "What is Azure Image Builder?"
   ms.date: 06/05/2023
-  author: ericd-mst-github
+  author: ju-shim
   ms.author: erd
   ms.topic: unit
 azureSandbox: false
