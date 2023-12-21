@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-operational-excellence.3-establish-development-standards
+uid: learn.azure-well-architected-operational-excellence.establish-development-standards
 title: Establish development standards
 metadata:
   title: Establish development standards
@@ -7,7 +7,7 @@ metadata:
   ms.date: 12/05/2023
   author: claytonsiemens77
   ms.author: csiemens
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: 'Microsoft Excel'
       isCorrect: false
-      explanation: 'Incorrect. Microsoft Excel is not a good tool for maintaining a backlog.'
+      explanation: 'Incorrect. Microsoft Excel isn’t a good tool for maintaining a backlog.'
     - content: 'Azure DevOps Boards'
       isCorrect: true
       explanation: 'Correct. Azure DevOps Boards is an industry-standard tool for maintaining a backlog.'

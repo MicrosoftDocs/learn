@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-operational-excellence.2-embrace-devops-culture
+uid: learn.azure-well-architected-operational-excellence.embrace-devops-culture
 title: Embrace DevOps culture
 metadata:
   title: Embrace DevOps culture
@@ -7,7 +7,7 @@ metadata:
   ms.date: 12/07/2023
   author: claytonsiemens77
   ms.author: csiemens
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
@@ -20,16 +20,16 @@ quiz:
     choices:
     - content: 'Using a common toolset reduces the need for monitoring and alerting.'
       isCorrect: false
-      explanation: 'Incorrect. Using a common toolset does not reduce the need for monitoring and alerting.'
+      explanation: “Incorrect. Using a common toolset doesn’t reduce the need for monitoring and alerting.”
     - content: 'Using a common toolset can reduce collaboration and communication issues.'
       isCorrect: true
       explanation: 'Correct. Using a common toolset can make it easier to share knowledge and collaborate by reducing the number of communication and collaboration methods.'
     - content: 'Using a common toolset reduces the need for automation.'
       isCorrect: false
-      explanation: "Incorrect. Using a common toolset does not reduce the need for automation. Automation is a key component of DevOps culture and is used to reduce the amount of manual work required to deploy and manage applications."
+      explanation: "Incorrect. Using a common toolset doesn’t reduce the need for automation. Automation is a key component of DevOps culture and is used to reduce the amount of manual work required to deploy and manage applications."
     - content: 'Using a common toolset can reduce the amount of security controls required.'
       isCorrect: false
-      explanation: "Incorrect. Using a common toolset does not reduce the amount of security controls required. Security controls are a key component of DevOps culture and are used to ensure that applications are secure and compliant."
+      explanation: "Incorrect. Using a common toolset doesn’t reduce the amount of security controls required. Security controls are a key component of DevOps culture and are used to ensure that applications are secure and compliant."
   - content: 'Which of the following in an example of building a continuous learning and experimentation mindset?'
     choices:
     - content: 'Conducting blameless postmortems after incidents.' 

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-operational-excellence.6-automate-for-efficiency
+uid: learn.azure-well-architected-operational-excellence.automate-for-efficiency
 title: Automate for efficiency
 metadata:
   title: Automate for efficiency
@@ -7,7 +7,7 @@ metadata:
   ms.date: 12/11/2023
   author: claytonsiemens77
   ms.author: csiemens
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Which of the following is not an important factor to consider when evaluating your workflows and potential for automation?'
+  - content: 'Which of the following isn’t an important factor to consider when evaluating your workflows and potential for automation?'
     choices:
     - content: 'The frequency that the task is performed'
       isCorrect: false

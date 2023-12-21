@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-operational-excellence.5-deploy-with-confidence
+uid: learn.azure-well-architected-operational-excellence.deploy-with-confidence
 title: Deploy with confidence
 metadata:
   title: Deploy with confidence
@@ -7,7 +7,7 @@ metadata:
   ms.date: 12/05/2023
   author: claytonsiemens77
   ms.author: csiemens
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |

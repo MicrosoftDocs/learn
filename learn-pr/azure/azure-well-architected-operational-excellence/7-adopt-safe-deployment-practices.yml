@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-operational-excellence.7-adopt-safe-deployment-practices
+uid: learn.azure-well-architected-operational-excellence.adopt-safe-deployment-practices
 title: Adopt safe deployment practices
 metadata:
   title: Adopt safe deployment practices
@@ -7,7 +7,7 @@ metadata:
   ms.date: 12/05/2023
   author: claytonsiemens77
   ms.author: csiemens
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
