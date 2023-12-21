@@ -6,26 +6,28 @@ Custom roles can be created in the Roles and administrators page of the Microsof
 
 **Create a new custom role to grant access to manage app registrations**
 
-1.  Sign in to the **Microsoft Entra admin center** as at least a **Privileged Role Administrator**.
-2.  Browse to **Identity**, **Roles & admins**, **Roles & admins**.<br>
-3.  Select **New custom role**.<br>
+1. Sign in to the **Microsoft Entra admin center** as at least a **Privileged Role Administrator**.
 
-:::image type="content" source="../media/create-new-custom-role-microsoft-entra-admin-center-37b380d2.png" alt-text="Screenshot showing how to add a new custom role.":::
+2. Browse to **Identity**, **Roles & admins**, **Roles & admins**.
+
+3. Select **New custom role**.
+
+:::image type="content" source="../media/new-microsoft-entra-admin-center-ca574a30.png" alt-text="Screenshot showing how to create a role in the Microsoft Entra administration center.":::
 
 
 4. On the **Basics** tab, provide a name and description for the role and then click **Next**.
 
-:::image type="content" source="../media/new-custom-role-basics-tab-9d39997b.png" alt-text="Screenshot showing the new custom role basics page.":::
+:::image type="content" source="../media/new-custom-role-name-description-tab-07511526.png" alt-text="Screenshot showing the new custom role basics page.":::
 
 
 5. On the Permissions tab, select the permissions necessary to manage basic properties and credential properties of app registrations.
 
 6. First, enter "credentials" in the search bar and select the `microsoft.directory/applications/credentials/update permission`.
 
-:::image type="content" source="../media/create-new-custom-role-permissions-tab-0544cc22.png" alt-text="Screenshot showing the new custom role permissions page.":::
+:::image type="content" source="../media/new-new-custom-role-permissions-tab-a28c0c5d.png" alt-text="Screenshot showing the new custom role permissions page.":::
 
 
-7. Next, enter "**basic**" in the search bar, select the `microsoft.directory/applications/basic/update permission`, and then click **Next**.
+7. Next, enter "**basic**" in the search bar, select the **`microsoft.directory/applications/basic/update permission`**, and then click **Next**.
 
 8. On the **Review** \+ **create** tab, review the permissions and select Create.<br>
 
@@ -41,7 +43,7 @@ Like built-in roles, custom roles are assigned by default at the default organiz
 
 3. Select the app registration to which you are granting access to manage. You might have to select **All applications** to see the complete list of app registrations in your Microsoft Entra organization.
 
-:::image type="content" source="../media/assign-custom-role-scoped-resource-992b28b5.png" alt-text="Screenshot showing the applications registration page.":::
+:::image type="content" source="../media/new-application-registrations-page-9320e815.png" alt-text="Screenshot showing the applications registration page.":::
 
 
 4. In the app registration, select **Roles and administrators**. If you haven't already created one, instructions are in the preceding procedure.

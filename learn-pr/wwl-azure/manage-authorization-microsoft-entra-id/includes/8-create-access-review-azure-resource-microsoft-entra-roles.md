@@ -18,24 +18,24 @@ Access Reviews for Service Principals require a Microsoft Entra Workload ID Prem
 
 3. For Microsoft Entra roles, select Microsoft Entra roles. For Azure resources, select Azure resources.
 
-:::image type="content" source="../media/identity-governance-307d1016.png" alt-text="Screenshot showing the Identity Governance dashboard.":::
+:::image type="content" source="../media/new-identity-governance-dashboard-250deacc.png" alt-text="Screenshot showing the Identity Governance dashboard.":::
 
 
 4. For Microsoft Entra roles, select Microsoft Entra roles again under Manage. For Azure resources, select the subscription you want to manage.
 
 5. Under Manage, select Access reviews, and then select New to create a new access review.
 
-:::image type="content" source="../media/access-reviews-page-00b95635.png" alt-text="Screenshot showing the Access reviews page.":::
+:::image type="content" source="../media/new-access-reviews-page-4e272a4c.png" alt-text="Screenshot showing the Access reviews page.":::
 
 
 6. Name the access review. Optionally, give the review a description. The name and description are shown to the reviewers.
 
-:::image type="content" source="../media/access-review-name-description-d9de57e9.png" alt-text="Screenshot showing how to create an access review.":::
+:::image type="content" source="../media/new-create-access-review-name-description-fields-280444d0.png" alt-text="Screenshot showing how to create an access review.":::
 
 
 7. Set the **Start date**. By default, an access review occurs once, starts the same time it's created, and it ends in one month. You can change the start and end dates to have an access review start in the future and last however many days you want.
 
-:::image type="content" source="../media/access-review-start-end-dates-422e73f1.png" alt-text="Screenshot showing access review settings.":::
+:::image type="content" source="../media/new-create-access-review-date-frequency-duration-fields-84a9c6f0.png" alt-text="Screenshot showing access review settings.":::
 
 
 8. To make the access review recurring, change the Frequency setting from One time to Weekly, Monthly, Quarterly, Annually, or Semi-annually. Use the Duration slider or text box to define how many days each review of the recurring series will be open for input from reviewers. For example, the maximum duration that you can set for a monthly review is 27 days, to avoid overlapping reviews.
@@ -44,24 +44,24 @@ Access Reviews for Service Principals require a Microsoft Entra Workload ID Prem
 
 10. In the Users Scope section, select the scope of the review. For Microsoft Entra roles, the first scope option is Users and Groups. Directly assigned users and role-assignable groups will be included in this selection. For Azure resource roles, the first scope will be Users. Groups assigned to Azure resource roles are expanded to display transitive user assignments in the review with this selection. You may also select Service Principals to review the machine accounts with direct access to either the Azure resource or Microsoft Entra role.
 
-:::image type="content" source="../media/access-review-users-89eb1364.png" alt-text="Screenshot showing the users and scope page.":::
+:::image type="content" source="../media/new-users-scope-section-17301761.png" alt-text="Screenshot showing the users and scope page.":::
 
 
 11. Or, you can create access reviews only for inactive users (preview). In the Users scope section, set the Inactive users (on tenant level) only to true. If the toggle is set to true, the scope of the review will focus on inactive users only. Then, specify Days inactive with a number of days inactive up to 730 days (two years). Users inactive for the specified number of days will be the only users in the review.
 
 12. Under Review role membership, select the privileged Azure resource or Microsoft Entra roles to review.
 
-:::image type="content" source="../media/access-review-review-role-membership-tab-9c14ff23.png" alt-text="Screenshot showing how to review role membership.":::
-<br>
+:::image type="content" source="../media/new-review-role-membership-c16f4ff1.png" alt-text="Screenshot showing how to review role membership.":::
+
 
 13. In **assignment type**, scope the review by how the principal was assigned to the role. Choose eligible assignments only to review eligible assignments (regardless of activation status when the review is created) or active assignments only to review active assignments. Choose all active and eligible assignments to review all assignments regardless of type.<br>
 
-:::image type="content" source="../media/access-review-assignment-type-select-29f2fcee.png" alt-text="Screenshot showing assignment types and reviewers.":::
+:::image type="content" source="../media/new-all-active-and-eligible-assignments-6f5e4553.png" alt-text="Screenshot showing how to scope the review by how the principal was assigned to the role.":::
 
 
 14. In the **Reviewers** section, select one or more people to review all the users. Or you can select to have the members review their own access.
 
-:::image type="content" source="../media/access-review-reviewers-f20bd389.png" alt-text="Screenshot showing selected reviewers.":::
+:::image type="content" source="../media/new-reviewers-section-5a1702b1.png" alt-text="Screenshot showing selected reviewers.":::
 
 
  -  **Selected users** \- Use this option to designate a specific user to complete the review. This option is available regardless of the scope of the review, and the selected reviewers can review users, groups and service principals.
@@ -72,7 +72,7 @@ Access Reviews for Service Principals require a Microsoft Entra Workload ID Prem
 
 1. To specify what happens after a review completes, expand the **Upon completion settings** section.
 
-:::image type="content" source="../media/access-review-upon-completion-settings-ab9d3925.png" alt-text="Screenshot showing how to enable or disable reviewers.":::
+:::image type="content" source="../media/new-upon-completion-settings-section-6028a49b.png" alt-text="Screenshot showing how to enable or disable reviewers.":::
 
 
 2. If you want to automatically remove access for users that were denied, set Auto apply results to resource to Enable. If you want to manually apply the results when the review completes, set the switch to Disable.
@@ -86,19 +86,19 @@ Access Reviews for Service Principals require a Microsoft Entra Workload ID Prem
 
 4. Use the Action to apply on denied guest users list to specify what happens for guest users that are denied. This setting is not editable for Microsoft Entra ID and Azure resource role reviews at this time; guest users, like all users, will always lose access to the resource if denied.
 
-:::image type="content" source="../media/access-review-action-apply-denied-guest-users-f984ede7.png" alt-text="Screenshot showing the upon completion settings page.":::
+:::image type="content" source="../media/new-action-to-apply-on-denied-guest-users-d9e202eb.png" alt-text="Screenshot showing the upon completion settings page.":::
 
 
 5. You can send notifications to additional users or groups to receive review completion updates. This feature allows for stakeholders other than the review creator to be updated on the progress of the review. To use this feature, select Select User(s) or Group(s) and add an additional user or group upon you want to receive the status of completion.
 
-:::image type="content" source="../media/access-review-upon-completion-settings-additional-receivers-b67fae6d.png" alt-text="Screenshot showing how to send a notification to selected users or groups.":::
-<br>
+:::image type="content" source="../media/new-send-notifications-be501684.png" alt-text="Screenshot showing how to send a notification to selected users or groups.":::
+
 
 ## Advanced settings
 
 1. To specify additional settings, expand the Advanced settings section.
 
-:::image type="content" source="../media/access-review-advanced-settings-6fa1a72e.png" alt-text="Screenshot showing the advanced settings page.":::
+:::image type="content" source="../media/new-advanced-settings-db1d818d.png" alt-text="Screenshot showing the advanced settings page.":::
 
 
 2. Set Show recommendations to Enable to show the reviewers the system recommendations based the user's access information. Recommendations are based on a 30-day interval period where users who have logged in the past 30 days are recommended access, while users who have not are recommended denial of access. These sign-ins are irrespective of whether they were interactive. The last sign-in of the user is also displayed along with the recommendation.
@@ -111,4 +111,4 @@ Access Reviews for Service Principals require a Microsoft Entra Workload ID Prem
 
 6. The content of the email sent to reviewers is auto-generated based on the review details, such as review name, resource name, due date, etc. If you need a way to communicate additional information such as additional instructions or contact information, you can specify these details in the Additional content for reviewer email which will be included in the invitation and reminder emails sent to assigned reviewers. The highlighted section below is where this information will be displayed.<br>
 
-:::image type="content" source="../media/access-review-action-required-email-9a87a5d5.png" alt-text="Screenshot showing an example of an action required access review email notification.":::
+:::image type="content" source="../media/new-additional-content-for-reviewer-email-f31d58d9.png" alt-text="Screenshot showing an example of an action required access review email notification.":::

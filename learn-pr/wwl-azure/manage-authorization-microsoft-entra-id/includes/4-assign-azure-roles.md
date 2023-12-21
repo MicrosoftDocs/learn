@@ -8,7 +8,7 @@ Azure role-based access control (Azure RBAC) is the authorization system you use
 
 ## **Step 1**: **Identify the needed scope**
 
-:::image type="content" source="../media/scope-levels-b64b14ec.jpg" alt-text="Diagram showing role assignment scopes.":::
+:::image type="content" source="../media/new-identify-the-needed-scope-a243d799.png" alt-text="Diagram showing role assignment scopes.":::
 
 
 1. Sign in to the **Azure portal**.
@@ -19,7 +19,7 @@ Azure role-based access control (Azure RBAC) is the authorization system you use
 
 **The following shows an example resource group**.<br>
 
-:::image type="content" source="../media/resource-groups-f49487c4.jpg" alt-text="Screenshot showing an example of a resource group.":::
+:::image type="content" source="../media/new-resource-group-2b6dc7b4.png" alt-text="Screenshot showing an example of a resource group.":::
 
 
 ## Step 2: Open the Added role assignment page
@@ -28,7 +28,7 @@ Access control (IAM) is the page that you typically use to assign roles to grant
 
 1. Click **Access control (IAM)**.
 
-:::image type="content" source="../media/add-role-assignment-page-17157361.png" alt-text="Screenshot showing a resource groups identity access management controls.":::
+:::image type="content" source="../media/new-access-control-6d7b32a2.png" alt-text="Screenshot showing how to add role assignments.":::
 
 
 2. Click the **Role assignments** tab to view the role assignments at this scope.
@@ -38,7 +38,7 @@ Access control (IAM) is the page that you typically use to assign roles to grant
 > [!NOTE]
 > If you don't have permissions to assign roles, the Add role assignment option will be disabled.
 
-:::image type="content" source="../media/add-role-assignment-57ec91d5.jpg" alt-text="Screenshot showing how to add role assignments.":::
+:::image type="content" source="../media/new-add-role-assignment-page-77d394e4.png" alt-text="Screenshot showing the add role assignment options page.":::
 
 
 ## Step 3: Select the appropriate role
@@ -47,19 +47,19 @@ Access control (IAM) is the page that you typically use to assign roles to grant
 
 You can search for a role by name or by description. You can also filter roles by type and category.
 
-:::image type="content" source="../media/select-appropriate-role-3ac19890.png" alt-text="Screenshot showing how to select the appropriate role.":::
+:::image type="content" source="../media/new-select-the-appropriate-role-df0476d8.png" alt-text="Screenshot showing how to assign a privileged administrator role.":::
 
 
 2. If you want to assign a privileged administrator role, select the **Privileged administrator roles** tab to select the role.
 
 Privileged administrator roles are roles that grant privileged administrator access, such as the ability to manage Azure resources or assign roles to other users. You should avoid assigning a privileged administrator role when a job function role can be assigned instead. If you must assign a privileged administrator role, use a narrow scope, such as resource group or resource.
 
-:::image type="content" source="../media/add-role-assignment-privileged-administrator-roles-5ca40c53.png" alt-text="Screenshot showing an example of how to add a privileged administrator role assignment.":::
+:::image type="content" source="../media/new-privileged-administrator-role-assignments-15671d15.png" alt-text="Screenshot showing an example of how to add a privileged administrator role assignment.":::
 
 
 3. In the **Details** column, click **View** to get more details about a role.
 
-:::image type="content" source="../media/select-role-permissions-5e26794a.jpg" alt-text="Screenshot showing how to define who needs access.":::
+:::image type="content" source="../media/new-details-column-e508f80b.png" alt-text="Screenshot showing how to define who needs access.":::
 
 
 4. Click **Next**.
@@ -68,7 +68,7 @@ Privileged administrator roles are roles that grant privileged administrator acc
 
 1. On the **Members** tab, select **User**, **group**, or **service principal** to assign the selected role to one or more Microsoft Entra ID users, groups, or service principals (applications).
 
-:::image type="content" source="../media/add-role-assignment-members-page-a6fbeae3.png" alt-text="Screenshot showing how to assign the selected role to one or more Microsoft Entra ID users, groups, or service principals.":::
+:::image type="content" source="../media/new-select-who-needs-access-c4744a5f.png" alt-text="Screenshot showing how to assign the selected role to one or more Microsoft Entra ID users, groups, or service principals.":::
 
 
 2. Click **Select members**.
@@ -78,7 +78,7 @@ Privileged administrator roles are roles that grant privileged administrator acc
 > [!NOTE]
 > You can type in the **Select** box to search the directory for display name or email address.<br>
 
-:::image type="content" source="../media/select-members-page-7-04bbc35b.png" alt-text="Screenshot showing the select members page that enables you to search the directory for display name or email address.":::
+:::image type="content" source="../media/new-select-members-page-a4e258e0.png" alt-text="Screenshot showing the select members page that enables you to search the directory for display name or email address.":::
 
 
 4. Click Select to add the users, groups, or service principals to the Members list.
@@ -93,8 +93,8 @@ Privileged administrator roles are roles that grant privileged administrator acc
 
 For system-assigned managed identities, you can select managed identities by Azure service instance.
 
-:::image type="content" source="../media/select-managed-identity-f0fd13fb.png" alt-text="Screenshot showing the select managed identities page.":::
-<br>
+:::image type="content" source="../media/new-select-managed-identities-baba12cd.png" alt-text="Screenshot showing the select managed identities page.":::
+
 
 9. Click **Select** to add the managed identities to the Members list.
 
@@ -118,7 +118,7 @@ If you selected one of the following privileged roles, follow the steps in this 
 
 1. On the **Conditions** tab under **Delegation type**, select the **Constrained (recommended)** option.
 
-:::image type="content" source="../media/condition-constrained-42e0e974.jpg" alt-text="Screenshot showing the added role assignment conditions page.":::
+:::image type="content" source="../media/new-pay-as-you-go-access-control-4f0db08f.png" alt-text="Screenshot showing the pay as you go access control page.":::
 
 
 2. Click **Add condition** to add a condition that constrains the roles and principals this user can assign roles to.
@@ -127,14 +127,14 @@ If you selected one of the following privileged roles, follow the steps in this 
 
 1. On the **Review + assign** tab, review the role assignment settings.
 
-:::image type="content" source="../media/add-role-review-assign-8-5a4c0233.png" alt-text="Screenshot showing the review and assign page.":::
+:::image type="content" source="../media/new-assign-role-and-review-16f6702e.png" alt-text="Screenshot showing the review and assign page.":::
 
 
 2. Click **Review + assign** to assign the role.<br>
 
 After a few moments, the security principal is assigned the role at the selected scope.<br>
 
-:::image type="content" source="../media/identity-access-management-role-assignments-page-9-ffa75658.png" alt-text="Screenshot showing the number of role assignments for a subscription.":::
+:::image type="content" source="../media/new-example-group-access-control-32f8f32a.png" alt-text="Screenshot showing the number of role assignments for a subscription.":::
 
 
 3. If you don't see the description for the role assignment, click **Edit columns** to add the **Description** column.
