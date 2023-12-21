@@ -47,6 +47,6 @@ units:
 - learn.azure-well-architected-performance-efficiency.design-to-meet-capacity-requirements
 - learn.azure-well-architected-performance-efficiency.achieve-and-sustain-performance
 - learn.azure-well-architected-performance-efficiency.improve-efficiency-through-optimization
-- learn.azure-well-architected-performance-efficiency.6-summary
+- learn.azure-well-architected-performance-efficiency.summary
 badge:
   uid: learn.azure-well-architected-performance-efficiency.badge
