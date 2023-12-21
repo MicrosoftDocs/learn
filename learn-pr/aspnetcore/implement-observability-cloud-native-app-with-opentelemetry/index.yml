@@ -29,6 +29,7 @@ roles:
   - solution-architect
 products: 
   - aspnet-core
+  - dotnet
   - azure
   - azure-app-configuration
 subjects: 
