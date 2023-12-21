@@ -74,7 +74,7 @@ The device SDKs detect errors at all three levels. However, device SDKs don't de
 
 The following steps describe the retry process when connection errors are detected:
 
-1. The SDK detects the error and the associated error in the network, protocol, or application.
+1. The SDK detects the error and any associated errors in the network, protocol, or application.
 1. The SDK uses the error filter to determine the error type and decide if a retry is needed.
 1. If the SDK identifies an **unrecoverable error**, operations like connection, send, and receive are stopped. The SDK notifies the user. Examples of unrecoverable errors include an authentication error and a bad endpoint error.
 1. If the SDK identifies a **recoverable error**, it retries according to the specified retry policy until the defined timeout elapses. The SDK uses **Exponential back-off with jitter** retry policy by default.
@@ -84,7 +84,7 @@ The following steps describe the retry process when connection errors are detect
 The SDKs provide three retry policies:
 
 * **Exponential back-off with jitter**: This default retry policy tends to be aggressive at the start and slow down over time until it reaches a maximum delay. The design is based on [Retry guidance from Azure Architecture Center](/azure/architecture/best-practices/retry-service-specific).
-* **Custom retry**: For some SDK languages, you can design a custom retry policy that is better suited for your scenario and then inject it into the RetryPolicy. Custom retry isn't available on the C or Python SDK. The Python SDK reconnects as-needed.
+* **Custom retry**: For some SDK languages, you can design a custom retry policy that is better suited for your scenario and then inject it into the RetryPolicy. Custom retry isn't available in the C or Python SDK. The Python SDK reconnects as-needed.
 * **No retry**: You can set retry policy to "no retry," which disables the retry logic. The SDK tries to connect once and send a message once, assuming the connection is established. This policy is typically used in scenarios with bandwidth or cost concerns. If you choose this option, messages that fail to send are lost and can't be recovered.
 
 ### Retry policy APIs
