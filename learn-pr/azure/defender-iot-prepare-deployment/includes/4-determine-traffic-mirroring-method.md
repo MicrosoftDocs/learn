@@ -1,6 +1,6 @@
 In the previous unit, you prepared the devices and subnets in your automotive manufacturing site to monitor. Now you determine the traffic mirroring methods to use for your site.
 
-## Traffic Mirroring
+## Planning traffic mirroring for your deployment
 
 Traffic mirroring allows you to mirror network traffic to Defender for IoT to monitor and diagnose problems. Defender for IoT monitors traffic to your OT network sensor. Configure traffic mirroring on a switch or a terminal access point (TAP) with only industrial ICS and SCADA traffic. Doing so ensures that Defender for IoT monitors only traffic you want monitored.
 

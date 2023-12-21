@@ -1,4 +1,4 @@
-In the last unit, you planned your network diagram. This unit explores what devices and subnet information to collect, and how to determine interesting traffic.
+In the last unit, you created an initial network diagram, including a mapping of all the devices you want to monitor. This unit explores what devices and subnet information to collect, and how to determine interesting traffic.
 
 ## Identify devices and subnets to monitor
 
