@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-azure-storage.examine-azure-virtual-machine-disks
+title: Examine Azure virtual machine disks
+metadata:
+  title: Examine Azure virtual machine disks
+  description: "Examine Azure virtual machine disks"
+  ms.date: 12/21/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-examine-azure-virtual-machine-disks.md)]

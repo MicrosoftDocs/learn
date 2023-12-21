@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-azure-storage.examine-azure-virtual-machine-storage-considerations
+title: Examine Azure virtual machine storage considerations
+metadata:
+  title: Examine Azure virtual machine storage considerations
+  description: "Examine Azure virtual machine storage considerations"
+  ms.date: 12/21/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-examine-azure-virtual-machine-storage-considerations.md)]
