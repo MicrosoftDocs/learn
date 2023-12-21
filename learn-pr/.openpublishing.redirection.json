@@ -66,6 +66,31 @@
         "redirect_document_id": false
       },
       {
+        "source_path_from_root": "/learn-pr/azure/azure-well-architected-operational-excellence/2-design-build-orchestrate.yml",
+        "redirect_url": "/training/modules/azure-well-architected-operational-excellence/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/azure-well-architected-operational-excellence/3-use-monitoring-and-analytics-to-gain-operational-insights.yml",
+        "redirect_url": "/training/modules/azure-well-architected-operational-excellence/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/azure-well-architected-operational-excellence/4-use-automation-to-reduce-effort-and-error.yml",
+        "redirect_url": "/training/modules/azure-well-architected-operational-excellence/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/azure-well-architected-operational-excellence/5-test-strategies.yml",
+        "redirect_url": "/training/modules/azure-well-architected-operational-excellence/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/azure-well-architected-operational-excellence/6-summary.yml",
+        "redirect_url": "/training/modules/azure-well-architected-operational-excellence/",
+        "redirect_document_id": false
+      },
+      {
         "source_path_from_root": "/learn-pr/azure/azure-well-architected-reliability/2-high-availability.yml",
         "redirect_url": "/training/modules/azure-well-architected-reliability/",
         "redirect_document_id": false
