@@ -52,7 +52,7 @@ When a feature has relevant Azure Policy Definitions, they are listed in this ba
 
 Azure Policy built-in definitions - Microsoft.ApiManagement:
 
-:::image type="content" source="../media/azure-policy-built-in-definitions-550a9170.png" alt-text="Table showing Azure Policy built-in definitions.":::
+:::image type="content" source="../media/azure-policy-built-in-definitions-550a9170.png" alt-text="Screenshot of Azure Policy built-in definitions.":::
  **NS-6**: **Deploy web application firewall**
 
 **Other guidance for NS-6**: To protect critical Web/HTTP APIs configure API Management within a Virtual Network (VNET) in internal mode and configure an Azure Application Gateway. Application Gateway is a PaaS service. It acts as a reverse-proxy and provides L7 load balancing, routing, web application firewall (WAF), and other services. Learn more.

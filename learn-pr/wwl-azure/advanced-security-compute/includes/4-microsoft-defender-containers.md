@@ -15,7 +15,7 @@ Defender for Cloud continuously assesses the configurations of your clusters and
 
 You can use the resource filter to review the outstanding recommendations for your container-related resources, whether in asset inventory or the recommendations page:
 
-:::image type="content" source="../media/resource-filter-large-30eded32.png" alt-text="Screenshot showing an example of the resource filter in Microsoft Defender for Cloud.":::
+:::image type="content" source="../media/new-hardening-kubernetes-clusters-31cd8c39.png" alt-text="Screenshot showing an example of the resource filter in Microsoft Defender for Cloud.":::
 
 
 For details on the recommendations that might appear for this feature, check out the **compute section** of the recommendations reference table.
@@ -66,11 +66,9 @@ Defender for Cloud monitors the attack surface of multicloud Kubernetes deployme
 
 Defender for containers uses cloud security graph to collect in an agentless manner information about your Kubernetes clusters. This data can be queried via Cloud Security Explorer and used for:
 
-1. Kubernetes inventory: gain visibility into your Kubernetes clusters data plane components such as nodes, pods, and cron jobs.<br>
-
-2. Security insights: predefined security situations relevant to Kubernetes components, such as “exposed to the internet”. For more information, see Security insights.<br>
-
-3. Risk hunting: querying various risk cases, correlating predefined or custom security scenarios across fine-grained Kubernetes properties as well as Defender For Containers security insights.
+ -  Kubernetes inventory: gain visibility into your Kubernetes clusters data plane components such as nodes, pods, and cron jobs.<br>
+ -  Security insights: predefined security situations relevant to Kubernetes components, such as “exposed to the internet”. For more information, see Security insights.<br>
+ -  Risk hunting: querying various risk cases, correlating predefined or custom security scenarios across fine-grained Kubernetes properties as well as Defender For Containers security insights.
 
 ## Cloud security graph
 

@@ -2,19 +2,19 @@ Azure Bastion is a service you deploy that lets you connect to a virtual machine
 
 Bastion provides secure RDP and SSH connectivity to all of the VMs in the virtual network in which it is provisioned. Using Azure Bastion protects your virtual machines from exposing RDP/SSH ports to the outside world, while still providing secure access using RDP/SSH.
 
-:::image type="content" source="../media/azure-bastion-architecture-22c447d0.png" alt-text="Diagram showing an example of how Azure Bastion service works.":::
+:::image type="content" source="../media/new-azure-bastion-f0bf391b.png" alt-text="Diagram showing an example of how Azure Bastion service works.":::
 
 
 ## Key benefits
 
-:::image type="content" source="../media/azure-bastion-key-benefits-table-e58bba70.png" alt-text="Table showing benefits and descriptions.":::
+:::image type="content" source="../media/azure-bastion-key-benefits-table-e58bba70.png" alt-text="Screenshot of benefits and descriptions.":::
 
 
 ## SKUs (Stock-keeping units)
 
 Azure Bastion has two available SKUs, Basic and Standard. The following table shows features and corresponding SKUs.
 
-:::image type="content" source="../media/azure-bastion-stock-keeping-units-table-2c845988.png" alt-text="Table showing Azure Bastion available SKUs.":::
+:::image type="content" source="../media/azure-bastion-stock-keeping-units-table-2c845988.png" alt-text="Screenshot of Azure Bastion available SKUs.":::
 
 
 ## Architecture

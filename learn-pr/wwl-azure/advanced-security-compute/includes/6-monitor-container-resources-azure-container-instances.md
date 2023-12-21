@@ -34,4 +34,4 @@ In a container group that contains multiple containers, use a dimension to displ
 
 Metrics for container instances can also be gathered using the Azure CLI. First, get the ID of the container group using the following command. Replace &lt;resource-group&gt; with your resource group name and &lt;container-group&gt; with the name of your container group.
 
-:::image type="content" source="../media/azure-get-metrics-cli-command-967d82ed.png" alt-text="Table showing Azure CLI command to gather container instance metrics.":::
+:::image type="content" source="../media/azure-get-metrics-cli-command-967d82ed.png" alt-text="Screenshot showing Azure CLI command to gather container instance metrics.":::

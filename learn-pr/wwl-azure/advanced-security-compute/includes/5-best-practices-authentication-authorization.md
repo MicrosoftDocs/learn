@@ -83,23 +83,24 @@ Instead of manually defining credentials for pods, pod-managed identities reques
 
 When pods request a security token from Microsoft Entra ID to access to an Azure resource, network rules redirect the traffic to the NMI server.
 
-1. The NMI server:
+The NMI server:
 
- -  Identifies pods requesting access to Azure resources based on their remote address.
- -  Queries the Azure Resource Provider.
+1. Identifies pods requesting access to Azure resources based on their remote address.
 
-2. The Azure Resource Provider checks for Azure identity mappings in the AKS cluster.
+2. Queries the Azure Resource Provider.
 
-3. The NMI server requests an access token from Microsoft Entra ID based on the pod's identity mapping.<br>
+3. The Azure Resource Provider checks for Azure identity mappings in the AKS cluster.
 
-4. Microsoft Entra ID provides access to the NMI server, which is returned to the pod.<br>
+4. The NMI server requests an access token from Microsoft Entra ID based on the pod's identity mapping.<br>
 
- -  This access token can be used by the pod to then request access to resources in Azure.
+5. Microsoft Entra ID provides access to the NMI server, which is returned to the pod.<br>
 
-5. Cluster operator creates a service account to map identities when pods request access to resources.
+6. This access token can be used by the pod to then request access to resources in Azure.
 
-6. The NMI server is deployed to relay any pod requests, along with the Azure Resource Provider, for access tokens to Microsoft Entra ID.
+7. Cluster operator creates a service account to map identities when pods request access to resources.
 
-7. A developer deploys a pod with a managed identity that requests an access token through the NMI server.
+8. The NMI server is deployed to relay any pod requests, along with the Azure Resource Provider, for access tokens to Microsoft Entra ID.
 
-8. The token is returned to the pod and used to access Azure SQL Database.
+9. A developer deploys a pod with a managed identity that requests an access token through the NMI server.
+
+10. The token is returned to the pod and used to access Azure SQL Database.
