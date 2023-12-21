@@ -5,7 +5,7 @@ metadata:
   description: In this module, you'll use the alert capabilities of Microsoft Defender for Cloud to watch for and respond to threats.
   ms.date: 12/19/2022
   author: elazark
-  ms.author: memildin
+  ms.author: elkrieger
   ms.topic: module
   ms.service: defender-for-cloud
 title: Resolve security threats with Microsoft Defender for Cloud
