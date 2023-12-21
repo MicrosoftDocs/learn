@@ -6,7 +6,7 @@ metadata:
   description: Exercise - Create a basic web application
   ms.date: 06/10/2022
   author: ju-shim
-  ms.author: erd
+  ms.author: jushiman
   ms.topic: unit
 interactive: bash
 azureSandbox: true
