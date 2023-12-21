@@ -38,13 +38,13 @@ Avoid the situation where lack of automation in your system design promotes the 
 *Contoso's challenge*
 
 - The application has a rich and dynamic UI that uses many interactive elements and animations. The development team has never used automated UI testing tools since the application was originally developed and has only relied on manual testing.
-- Recently, the team has been working on automating their UI testing, but have been facing many challenges. Some of the UI pages are too dynamic and unpredictable, and there is no consistent way to identify some of the fields that the test cases need to interact with.
+- Recently, the team has been working on automating their UI testing, but have been facing many challenges. Some of the UI pages are too dynamic and unpredictable, and there’s no consistent way to identify some of the fields that the test cases need to interact with.
 
 *Applying the approach and outcomes*
 
-- The team has decided to improve their UI implementation to make it more testable and accessible. They will do the improvements incrementally by fixing the pages as they create the test cases.
+- The team has decided to improve their UI implementation to make it more testable and accessible. They will make the improvements incrementally by fixing the pages as they create the test cases.
 - As they tackle each page, they make sure that every field has a unique identifier that can be used by the test automation tools. They also follow accessibility guidelines and standards, such as using semantic HTML, proper labels, and keyboard navigation. This makes their UI more user-friendly and easier to test.
-- As automated tests are completed, they are incorporated into the test suite that runs during the daily build, resulting in significant reductions in the time it takes to release new builds to production, improvements in product quality, as well as savings cost savings during the development process. 
+- As automated tests are completed, they are incorporated into the test suite that runs during the daily build, resulting in significant reductions in the time it takes to release new builds to production, improvements in product quality, and cost savings during development. 
 
 ## Automation should be well-architected
 
@@ -57,7 +57,7 @@ The workload will continue to operate with a high-level guarantee if this depend
 *Contoso's challenge*
 
 - The workload has an environment dedicated to load and performance testing, with a configuration that closely mimics production. To simulate production-like conditions in the environment more closely, a fresh copy of the production database, with all user’s sensitive data anonymized and masked, is loaded into the test environment every Monday, when that environment is reset.
-- The database loading script was written by a former developer who did not document it well or follow other best practices. The script runs slowly and does not handle errors or failures gracefully.
+- The database loading script was written by a former developer who didn’t document it well or follow other best practices. The script runs slowly and doesn’t handle errors or failures gracefully.
 - Lately, as the production database grows, the script run time has gotten increasingly longer and frequently fails. These delays and failures are impacting the team’s ability to execute the test runs and are causing delays in the development schedule.
 
 *Applying the approach and outcomes*
