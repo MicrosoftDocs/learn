@@ -77,4 +77,4 @@ To configure access policies:
 
 5. **Save**.
 
-## :::image type="content" source="../media/new-configure-extra-permissions-6b371b0c.png" alt-text="Screenshot showing how to configure extra permissions on resources."::: 
+:::image type="content" source="../media/new-configure-extra-permissions-6b371b0c.png" alt-text="Screenshot showing how to configure extra permissions on resources.":::
