@@ -28,9 +28,9 @@ For each device you'd like to monitor, gather the following information:
 | **Managed by partner services?** | Whether a partner service, such as Siemens, Rockwell, or Emerson, manages the device and the management policy, if relevant. |
 | **Serial connections** |The serial communication protocol used, if relevant.|
 
-### Calculate network devices
+### Calculate the number of network devices you want to monitor
 
-Calculate the number of devices in each site to determine the right number of Defender for IoT licenses. Exclude devices that aren't individual devices for Defender for IoT like:
+Calculate the number of devices in each site to determine the right number of Defender for IoT licenses. Exclude devices that aren't individual devices for Defender for IoT, like:
 
 - Public internet IP addresses
 - Multi-cast groups
@@ -39,17 +39,17 @@ Calculate the number of devices in each site to determine the right number of De
 
 ### Multi-sensor deployment
 
-For multiple network sensor deployments, plan the following for:
+For a Defender for IoT deployment with multiple sensors, also consider the following points when planning your sensors:
 
-- **Physically (ethernet) connected switches**: At least one sensor for every 80 meters of distance between switches.
+- **Physically (ethernet) connected switches**:  Plan for at least one sensor for every 80 meters of distance between switches.
 
-- **Multiple networks without physical connectivity**: At least one sensor for each individual network.
+- **Multiple networks without physical connectivity**: Plan at least one sensor for each individual network.
 
-- **Switches with RSPAN traffic mirroring support**: At least one sensor for every eight switches, with a local SPAN port. Plan to place the sensor close enough to the switches so that you can connect them by cable.
+- **Switches with RSPAN traffic mirroring support**: Plan at least one sensor for every eight switches, with a local SPAN port. Plan to place the sensor close enough to the switches so that you can connect them by cable.
 
 ### Create a list of subnets
 
-Using your list of devices to monitor, create an aggregated list of subnets that you want to monitor. Use the subnet list, once you've deployed, to verify whether all the listed subnets are detected automatically.
+Using your list of devices to monitor, create an aggregated list of subnets that you want to monitor. Use the subnet list, once you've deployed, to verify whether all the listed subnets are detected correctly.
 
 ## Identify interesting traffic points
 
@@ -74,6 +74,15 @@ For each sensor include:
 - Whether appliances are physical or virtual
 - Assigned sensor site and zone
 - Traffic mirroring method
+
+The following table shows a sample part of a deployment plan for your car manufacturing site, with offices in Paris, Lagos, Dubai, and Tianjin.
+
+|Site | Zones | Sensor name | Cloud connected |
+|--- | ---|---|--- |
+|**Paris office** |- Ground floor (Guests)<br> - Floor 1 (Sales) <br> - Floor 2 (Executive)|paris-guests<br>paris-sales<br>paris-exec | Yes<br>Yes<br>Yes |
+|**Lagos office** |- Ground floor (Guests)<br> - Floor 1 (Sales)  |lagos-offices<br>lagos-factory |Yes <br>No |
+|**Dubai office** |- Ground floor (Convention center)<br> - Floor 1 (Sales) <br> - Floor 2 (Offices)|dubai-guests<br>dubai-sales<br>dubai-exec| Yes<br>Yes<br>Yes|
+|**Tianjin office** |- Ground floor (Offices)<br> - Floors 1-2 (Factory)| tianjin-office <br>tianjin-factory | Yes <br>No |
 
 ## Knowledge check
 
