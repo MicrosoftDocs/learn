@@ -1,22 +1,30 @@
 In this exercise, you create a microservice endpoint and containerize it by using Docker.
 
 > [!NOTE]
-> You complete this exercise in an instance of GitHub Codespaces that has [Docker](https://www.docker.com/products/docker-desktop) and the [.NET SDK](https://dotnet.microsoft.com/download) preinstalled. When you use these tools and techniques in your own development environment, make sure that you have these prerequisites installed.
+> You can complete this exercise in an instance of GitHub Codespaces that has [Docker](https://www.docker.com/products/docker-desktop) and the [.NET SDK](https://dotnet.microsoft.com/download) preinstalled. When you use these tools and techniques in your own development environment, make sure that you have these prerequisites installed.
 
-## Create a new GitHub codespace
+## Open the development environment
 
-Start by creating a new GitHub codespace that hosts the exercise.
+You can choose to use a GitHub codespace that hosts the exercise, or complete the exercise locally in Visual Studio Code.
 
-You can set up a [preconfigured GitHub codespace](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-docker%2Fdevcontainer.json).
+To use a **codespace** create a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-docker%2Fdevcontainer.json).
 
-GitHub takes several minutes to create and configure the codespace. When it's finished, you see the code files for the exercise. The code that's used for the remainder of this module is in the */dotnet-docker* directory.
+GitHub takes several minutes to create and configure the codespace. When it's finished, you see the code files for the exercise. The code that's used for the remainder of this module is in the **/dotnet-docker** directory.
+
+To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your own GitHub account. Then:
+
+1. Make sure Docker is running. In a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
+1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
+1. Select your forked repository. Visual Studio Code creates your development container locally.
 
 ## Edit the Dockerfile to configure the Products back end
 
 You can use a Dockerfile to containerize the Products web service.
 
-1. When the setup is complete, in the top-level directory, open the file named **DockerfileProducts**. This file is empty.
-2. Enter the following code:
+1. Wait for the setup is complete.
+2. In the **EXPLORER** pane, open the file named **dotnet-docker/Products/Dockerfile**. The file will be empty.
+
+3. Enter the following code:
 
     ```dockerfile
     FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
@@ -37,7 +45,7 @@ You can use a Dockerfile to containerize the Products web service.
     - Copies everything in the local *DataEntities* directory to the image.
     - Calls `dotnet publish` on the project.
 
-3. Directly below the last line, enter this code:
+4. Directly below the last line, enter this code:
 
     ```dockerfile
     WORKDIR /src
@@ -55,7 +63,7 @@ You can use a Dockerfile to containerize the Products web service.
     - Copies everything in the local *Products* directory to the image.
     - Calls `dotnet publish` on the project.
 
-4. Directly below the last line, enter this code:
+5. Directly below the last line, enter this code:
 
     ```dockerfile
     FROM mcr.microsoft.com/dotnet/aspnet:8.0
@@ -87,10 +95,10 @@ The next step is to use it to create a Docker image.
 1. To create the image for the Products back-end service, select the **Terminal** tab and run this command:
 
     ```bash
-    docker build -t productsbackend -f DockerfileProducts .
+    docker build -t productsbackend:latest -f Products/Dockerfile .
     ```
 
-    This code runs the commands that are in *DockerfileProducts* in the current directory and applies the tag `productsbackend` to the image.
+    This code runs the commands that are in *Dockerfile* in the current directory and applies the tag `productsbackend` to the image.
 
 1. After much output, the image is built. Enter `docker images` to see a list of all images in your codespace, including *productsbackend*. The other image is for the codespace itself.
 
@@ -101,7 +109,7 @@ Now you can use the image to run and host the Products service.
 1. To create and run a container from the new *productsbackend* image and expose the service on port 5200, run this command:
 
     ```bash
-    docker run -it --rm -p 5200:8080 --name productsbackendcontainer productsbackend
+    docker run -it --rm -p 32001:8080 --name productsbackendcontainer productsbackend
     ```
 
 1. To test the service, select the **Ports** tab. Then, to the right of the local address for the **Back End** port, select the globe icon. The browser opens a new tab at that address.
