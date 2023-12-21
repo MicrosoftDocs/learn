@@ -23,7 +23,7 @@ The performance targets are focused on user experience that's based on what's fe
 
 *Contoso's challenge*
 
-- In discussions about the application with business stakeholders, performance has not yet been discussed.
+- In discussions about the application with business stakeholders, performance hasn’t yet been discussed.
 - The development team is new to Azure and so they don't have familiarity with performance and scaling capabilities of the platform.
 - Without guidance from the stakeholders and practical knowledge of what is possible, the team is worried that they will have to deploy infrastructure for testing only to rebuild later.
 - The team is also worried that no one will be prepared to talk about realistic performance targets when they meet next.
@@ -45,7 +45,7 @@ Defining parameters early on helps avoid costs associated with potential solutio
 
 *Contoso's challenge*
 
-- The architecture team has a rough ideas of what might be acceptable, but no specifics yet.  The architects feel generally that they should be able to avoid rework with their choice of application platform, but they would feel more confident with a bit more specificity that what they've gotten so far.
+- The architecture team has rough ideas of what might be acceptable, but no specifics yet.  The architects feel generally that they should be able to avoid rework with their choice of application platform, but they would feel more confident with a bit more specificity than what they've gotten so far.
 - Up to this point, the performance discussions have been vague, with statements like, "The website needs to be fast."
 - Without a bit more specificity, the architects worry that they might over-engineer the design for performance, or face delays that push back the release to production.
 
@@ -66,11 +66,11 @@ It helps establish a performance baseline and drive optimization.
 
 *Contoso's challenge*
 
-- Thusfar, the technical team has worked with stakeholders to identify high-level performance targets, but hasn't focused on individual flows yet. For the design team to be able to drill deeper into the flows, like the service locator and payment flows, they will need to understand requirements for those flows.
+- Thus far, the technical team has worked with stakeholders to identify high-level performance targets, but hasn't focused on individual flows yet. For the design team to be able to drill deeper into the flows, like the service locator and payment flows, they’ll need to understand requirements for those flows.
 - Without those specific requirements, the design risks under allocating resources for key flows or over allocating resources for lower priority flows.
 
 *Applying the approach and outcomes*
 
 - After reviewing user flows with the business, the architecture team now has very specific targets documented for each flow.  The decomposition of the workload now takes into account the aspirational-to-unacceptable range per flow.
-- The architects will strives to hit aspirational targets with their design to allow room for the system to develop over time with additional features, while compromising some degree to keep cost and other non-functional requirements under control.
-- The team is able to complete the design around the targets that have been agreed upon and now the implementation team will be responsible for making sure those limits are honored and raising any concerns if they cannot be achieved with the design they are working from.
+- The architects will strive to hit aspirational targets with their design to allow room for the system to develop over time with additional features, while compromising some degree to keep cost and other non-functional requirements under control.
+- The team is able to complete the design around the targets that have been agreed upon and now the implementation team will be responsible for making sure those limits are honored and raising any concerns if they can’t be achieved with the design they’re working from.
