@@ -36,7 +36,7 @@ quiz:
       explanation: 'Correct. New design patterns and components can boost performance in ways that may not be possible with your current design.'
     - content: 'Relax the security requirements of your workload.'
       isCorrect: false
-      explanation: 'Incorrect. Relaxing security requirements isn't a good strategy to improve the efficiency of your workload, as it puts your workload at risk of a security incident.'
+      explanation: "Incorrect. Relaxing security requirements isn't a good strategy to improve the efficiency of your workload, as it puts your workload at risk of a security incident."
     - content: 'Add more developers to your team.'
       isCorrect: false
       explanation: "Incorrect. Adding more developers to your team doesn't address the root cause of any performance issues."
