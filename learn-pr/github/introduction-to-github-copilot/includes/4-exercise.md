@@ -6,6 +6,9 @@ This exercise walks you through the following steps:
 - Prompt GitHub Copilot for code suggestions
 - Accept code suggestions from GitHub Copilot
 
+>[!Note] 
+>Please be aware that when signing up for the free trial of GitHub Copilot you will be asked to submit a form of payment even though you will not be charged until the free trial is over. Ensure you cancel before the 30 days is over to avoid payment. 
+
 ## Getting started
 
 When you select the **Start the exercise on GitHub** button, you're navigated to a public GitHub template repository that prompts you to complete a series of small challenges. Before you can begin the exercise, complete the following tasks:

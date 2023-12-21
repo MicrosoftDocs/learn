@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/26/2023
+  ms.date: 12/05/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
@@ -28,9 +28,9 @@ quiz:
     - content: "Azure AI Vision"
       isCorrect: true
       explanation: "Correct. Azure AI Vision allows you to add images to the existing model to improve the image identifier model. This is a good choice for identifying the small differences between bird species."
-    - content: "Azure Cognitive Search"
+    - content: "Azure AI Search"
       isCorrect: false
-      explanation: "Incorrect. Azure Cognitive Search includes data extraction and indexing capabilities for knowledge mining. Another Azure AI service should be used to identify individual bird species."
+      explanation: "Incorrect. Azure AI Search includes data extraction and indexing capabilities for knowledge mining. Another Azure AI service should be used to identify individual bird species."
     - content: "Azure OpenAI"
       isCorrect: false
       explanation: "Incorrect. Azure OpenAI helps organizations generate content and insights. Another Azure AI service should be used to identify bird species from images."

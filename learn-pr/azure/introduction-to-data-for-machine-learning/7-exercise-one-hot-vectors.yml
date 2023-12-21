@@ -9,7 +9,6 @@ metadata:
   ms.author: franksolomon
   ms.topic: unit
   ms.reviewer: franksolomon
-  ms.prod: learning-azure
 durationInMinutes: 10
 notebook: notebooks/3-7-exercise-one-hot-vectors.ipynb
 sandbox: true

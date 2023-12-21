@@ -57,7 +57,7 @@ At this point, you have a front-end app with static data inside of the app. You 
 
 1. Use <kbd>Ctrl</kbd> + <kbd>C</kbd> to stop the mock server.
 
-## Prepare code to fetch data from .NET Core API server
+## Prepare code to fetch data from .NET API server
 
 Suppose the back-end team has now finished building the server. To use the server, you just need to fetch the code from GitHub and run it and configure CORS as well.
 
