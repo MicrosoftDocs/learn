@@ -40,14 +40,14 @@ Dashboards that are tailored to the interest of the customer make interpretation
 
 *Contoso's challenge*
 
-- The workload team aggregates telemetry data from across all solution tiers into a single Log Analytics Workspace, which can be accessed by the operation and development teams, as well as other project stakeholders. However, interacting with the data is difficult and complex, which is frustrating to team members who are trying to discern background noise from actionable data.
+- The workload team aggregates telemetry data from across all solution tiers into a single Log Analytics Workspace, which can be accessed by the operation and development teams and other project stakeholders. However, interacting with the data is difficult and complex, which is frustrating to team members who need to discern background noise from actionable data.
 
 *Applying the approach and outcomes*
 
-- The team embarks on an effort to aggregate and visualize data in custom new dashboards. Each dashboard will be tailored to a specific audience:
+- The team embarks on an effort to aggregate and visualize data using dashboards. Each dashboard will be tailored to a specific audience:
     - The solution stakeholder’s dashboards will be more business oriented, presenting a higher level overview of the overall health of the solution, along with business indicators like the number of users served, searches and reservations performed.
-    - Operational dashboards and workbooks will have more detailed and granular data for the operations team. These will have drill-down capabilities that allow the users to explore the data at different levels of granularity. The users will be able to use these dashboards and workbooks to perform troubleshooting and other incident response tasks.
-- The new dashboards will enable users to analyze trends, track business targets, and manage incidents more effectively. The data presented on each dashboard will be more relevant to its intended audience and will be driven by their interests and needs.
+    - Operational dashboards and workbooks will have more detailed and granular data for the operations team. These dashboards will have drill-down capabilities that allow the users to explore the data at different levels of granularity. The users will be able to use these dashboards and workbooks to perform troubleshooting and other incident response tasks.
+- The dashboards will enable users to analyze trends, track business targets, and manage incidents more effectively. The data presented on each dashboard will be more relevant to its intended audience and will be driven by their interests and needs.
 
 ## Design a robust alerting strategy
 
@@ -57,8 +57,8 @@ Trigger alerts only for incidents that require action and strive for proactive a
 
 *Contoso's challenge*
 
-- Azure Monitor is used to send alerts to the operations team when something goes wrong. However, the team currently receives too many alerts that are not relevant, unclear, or redundant. This causes alert fatigue and is affecting the team’s productivity and causing some important alerts to go unnoticed.
-- There have also been some situations of outages that could have been prevented or minimized if an alert is sent anticipating a failure if the team had better alerting for degradation before outages occur. For example, there have been  occasions in which slow-downs in the database queries processing time have resulted in outages. While troubleshooting the outages, the team notices that the query processing performance decreases slowly over time, getting worse and worse until it causes a full-blown outage.
+- Azure Monitor is used to send alerts to the operations team when something goes wrong. However, the team currently receives too many alerts that are irrelevant, unclear, or redundant. This causes alert  fatigue and is affecting the team’s productivity and causing some important alerts to go unnoticed.
+- There have also been some situations of outages that could’ve been prevented or minimized if an alert is sent anticipating a failure if the team had better alerting for degradation before outages occur. For example, there have been  occasions in which slow-downs in the database queries processing time have resulted in outages. While troubleshooting the outages, the team notices that the query processing performance decreases slowly over time, getting worse and worse until it causes a full-blown outage.
 
 *Applying the approach and outcomes*
 
