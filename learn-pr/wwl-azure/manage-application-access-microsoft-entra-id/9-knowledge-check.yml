@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/20/2023
+  ms.date: 12/21/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -14,47 +14,25 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the purpose of using Managed Identities in Azure?"
+  - content: "What is the purpose of a service principal object in Azure?"
     choices:
-    - content: "To decrease the security of the resources"
+    - content: "A service principal object is used to represent a managed identity."
       isCorrect: false
-      explanation: "Incorrect. Managed Identities are used to simplify the authentication process and reduce the need for credentials."
-    - content: "To increase the cost of resource management"
+      explanation: "Incorrect. A managed identity is a type of service principal object, but not the only purpose of it."
+    - content: "A service principal object is used to define the globally unique app object."
       isCorrect: false
-      explanation: "Incorrect. Managed Identities are used to simplify the authentication process and reduce the need for credentials."
+      explanation: "Incorrect. The globally unique app object is defined by the application object, not the service principal object."
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
       isCorrect: true
-      explanation: "Correct. Managed Identities are used to simplify the authentication process and reduce the need for credentials, enabling the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-  - content: "What does Microsoft Entra ID enable in terms of application hosting platforms?"
+      explanation: "Correct. The service principal object defines what the app can actually do in the specific tenant, who can access the app, and what resources the app can access. It enables automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "What is the purpose of using service principals with automated tools in Microsoft Entra ID?"
     choices:
-    - content: "Enables the creation of applications without any security measures"
+    - content: "To allow users to sign in with their personal identity"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Entra ID is designed to ensure secure and compliant application access for authorized users."
-    - content: "Enables the creation of applications with limited functionality"
+      explanation: "Incorrect. Using personal identities for automated tools is not recommended for security reasons."
+    - content: "To restrict access to resources by assigning roles to users"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Entra ID does not limit the functionality of applications, but rather governs their integration with the identity platform."
+      explanation: "Incorrect. Service principals are used to restrict access to resources by assigning roles to the app registration, not to users."
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
       isCorrect: true
-      explanation: "Correct. Microsoft Entra ID enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-  - content: "What is the purpose of environment automation?"
-    choices:
-    - content: "Enables manual creation and teardown of environments"
-      isCorrect: false
-      explanation: "Incorrect. Manual processes are prone to errors and inconsistencies."
-    - content: "Enables the creation of unstable application hosting platforms"
-      isCorrect: false
-      explanation: "Incorrect. Unstable platforms can lead to downtime and security vulnerabilities."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
-      isCorrect: true
-      explanation: "Correct. Automation helps ensure consistency, reduces errors, and improves security and stability of the platform."
-  - content: "What is the purpose of Infrastructure as Code (IaC)?"
-    choices:
-    - content: "IaC is a programming language used to create web applications."
-      isCorrect: false
-      explanation: "Incorrect. IaC is not a programming language used to create web applications."
-    - content: "IaC is a tool used to manage user authentication and authorization."
-      isCorrect: false
-      explanation: "Incorrect. IaC is not a tool used to manage user authentication and authorization."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-      isCorrect: true
-      explanation: "Correct. IaC enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      explanation: "Correct. Service principals enable the automation and validation of the creation and teardown of environments, which helps deliver secure and stable application hosting platforms."

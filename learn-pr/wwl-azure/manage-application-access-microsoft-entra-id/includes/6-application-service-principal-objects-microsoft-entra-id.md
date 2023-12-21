@@ -16,9 +16,9 @@ The application object describes three aspects of an application:<br>
  -  The resources that the application might need to access
  -  The actions that the application can take
 
-You can use the App registrations page in the Microsoft Entra admin center to list and manage the application objects in your home tenant.
+You can use the **App registrations** page in the Microsoft Entra admin center to list and manage the application objects in your home tenant.
 
-:::image type="content" source="../media/app-registrations-blade-e72e92be.png" alt-text="Screenshot showing owned application registrations.":::
+:::image type="content" source="../media/new-application-registrations-home-tenant-201c9a0a.png" alt-text="Screenshot showing the applications registrations page in the Microsoft Entra admin center.":::
 
 
 The Microsoft Graph **Application entity** defines the schema for an application object's properties.
@@ -37,9 +37,11 @@ There are three types of service principal:<br>
  -  **Managed identity** \- This type of service principal is used to represent a managed identity. Managed identities eliminate the need for developers to manage credentials. Managed identities provide an identity for applications to use when connecting to resources that support Microsoft Entra authentication. When a managed identity is enabled, a service principal representing that managed identity is created in your tenant. Service principals representing managed identities can be granted access and permissions, but can't be updated or modified directly.<br>
  -  **Legacy** \- This type of service principal represents a legacy app, which is an app created before app registrations were introduced or an app created through legacy experiences. A legacy service principal can have credentials, service principal names, reply URLs, and other properties that an authorized user can edit, but doesn't have an associated app registration. The service principal can only be used in the tenant where it was created.<br>
 
-The Microsoft Graph ServicePrincipal entity defines the schema for a service principal object's properties.
+The Microsoft Graph **ServicePrincipal entity** defines the schema for a service principal object's properties.
 
-:::image type="content" source="../media/enterprise-applications-blade-a20eb1fd.png" alt-text="Screenshot of all applications.":::
+You can use the **Enterprise applications** page in the Microsoft Entra admin center to list and manage the service principals in a tenant. You can see the service principal's permissions, user consented permissions, which users have done that consent, sign in information, and more.
+
+:::image type="content" source="../media/new-enterprise-applications-page-dc065ad4.png" alt-text="Screenshot showing owned application registrations.":::
 
 
 ## Relationship between application objects and service principals
@@ -57,15 +59,15 @@ A service principal must be created in each tenant where the application is used
 
 You can find the service principals associated with an application object.
 
-:::image type="content" source="../media/find-service-principal-410fc2d6.png" alt-text="Screenshot showing service principals associated with an app.":::
+:::image type="content" source="../media/new-managed-application-browser-bfda40f7.png" alt-text="Screenshot showing the managed application browser in the local directory.":::
 
 
 ## Consequences of modifying and deleting applications
 
 Any changes that you make to your application object are also reflected in its service principal object in the application's home tenant only (the tenant where it was registered). This means that deleting an application object will also delete its home tenant service principal object. However, restoring that application object through the app registrations UI won't restore its corresponding service principal.
 
-:::image type="content" source="../media/application-objects-relationship-88879f4a.png" alt-text="Diagram showing the consequences of modifying and deleting applications.":::
-<br>
+:::image type="content" source="../media/new-adatum-contoso-fabrikam-1d28207c.png" alt-text="Diagram showing the consequences of modifying and deleting applications.":::
+
 
 In this example scenario:
 
