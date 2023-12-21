@@ -57,11 +57,11 @@ Usually the interesting traffic points to monitor, security-wise, are the interf
 
 Consider the following traffic points in your network:
 
-- **Unique traffic types inside a segment** particularly:
-  - **Broadcast / Multicast traffic**: Traffic sent to any entity within the subnet. Broadcast and multicast traffic is typically sent to all entities in the local IP subnet, including the default gateway entity, and is therefore also covered and monitored.
-  - **Unicast traffic:** Traffic forwarded directly to the destination, without crossing the entire subnet endpoints, including the default gateway. Unicast traffic can be monitored by placing sensors directly on the access switches.
-- **Directional traffic streams:** Some vendors and products allow a traffic stream direction, which can cause a data gap. Monitor both traffic directions to get network conversation information about your subnets and better accuracy.
-- **A subnet's default gateway:** For each interesting subnet, a connection to the entity that acts as the network subnet default gateway is the interesting point.  Sometimes there's subnet traffic unmonitored by the regular interesting point. Monitoring this otherwise unmonitored type of traffic is useful, especially on sensitive subnets.
+- **Unique traffic types inside a segment** particularly:</br></br>
+  - **Broadcast / Multicast traffic**: Traffic sent to any entity within the subnet. Broadcast and multicast traffic is typically sent to all entities in the local IP subnet, including the default gateway entity, and is therefore also covered and monitored.</br></br>
+  - **Unicast traffic:** Traffic forwarded directly to the destination, without crossing the entire subnet endpoints, including the default gateway. Unicast traffic can be monitored by placing sensors directly on the access switches.</br></br>
+- **Directional traffic streams:** Some vendors and products allow a traffic stream direction, which can cause a data gap. Monitor both traffic directions to get network conversation information about your subnets and better accuracy.</br></br>
+- **A subnet's default gateway:** For each interesting subnet, a connection to the entity that acts as the network subnet default gateway is the interesting point.  Sometimes there's subnet traffic unmonitored by the regular interesting point. Monitoring this otherwise unmonitored type of traffic is useful, especially on sensitive subnets.</br></br>
 - **Atypical traffic:**   To monitor otherwise unmonitored traffic might require extra streaming points and network solutions, such as RSPAN or network tappers.
 
 ## List your planned OT sensors
