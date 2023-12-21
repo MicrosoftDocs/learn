@@ -7,7 +7,6 @@ metadata:
   author: codemillmatt  
   ms.author: masoucou
   ms.topic: module
-  ms.prod: aspnet-core
 title: Implement observability in a cloud native .NET 8 application with OpenTelemetry
 summary: "Implement observability in an existing cloud native application using OpenTelemetry. Then view the data in Azure Application Insights and third party tools."
 abstract: |
