@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.troubleshoot-device-connections-communication.manage-device-reconnections-resilient-applications
-title: Examine device reconnections to create resilient applications
+uid: learn.wwl.troubleshoot-device-connections-communication.examine-device-reconnection-management
+title: Examine device reconnection management
 metadata:
-  title: Examine device reconnections to create resilient applications
+  title: Examine device reconnection management
   description: "This page provides high-level guidance to help you design resilient applications by adding a device reconnection strategy."
   ms.date: 12/06/2023
   author: kgremban
@@ -11,4 +11,4 @@ metadata:
   ms.topic: module-standard-task-based
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-manage-device-reconnections-resilient-applications.md)]
+  [!include[](includes/2-examine-device-reconnection-management.md)]
