@@ -133,7 +133,7 @@ Microsoft is responsible for the lifecycle management of NSX-T appliances, such 
 
 ### NSX-T Configuration
 
-There are two different methods for managing AVS networking and networking services such as DNS, DHCP, and others with NSX-T. You can do configurations in NSX-T Manager or Azure Resource Manager Portal.
+There are two different methods for managing Azure VMware Solution networking and networking services such as DNS, DHCP, and others with NSX-T. You can do configurations in NSX-T Manager or Azure Resource Manager Portal.
 
 ### Backup and restoration
 
