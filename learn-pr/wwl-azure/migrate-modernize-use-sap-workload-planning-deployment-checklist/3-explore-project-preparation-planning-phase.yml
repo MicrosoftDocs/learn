@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-use-sap-workload-planning-deployment-checklist.explore-project-preparation-planning-phase
+title: Explore the project preparation and planning phase
+metadata:
+  title: Explore the project preparation and planning phase
+  description: "Explore the project preparation and planning phase"
+  ms.date: 12/21/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-explore-project-preparation-planning-phase.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-use-sap-workload-planning-deployment-checklist.examine-sap-workload-planning-deployment-checklist
+title: Examine the SAP workload planning and deployment checklist
+metadata:
+  title: Examine the SAP workload planning and deployment checklist
+  description: "Examine the SAP workload planning and deployment checklist"
+  ms.date: 12/21/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-examine-sap-workload-planning-deployment-checklist.md)]
