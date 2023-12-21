@@ -21,7 +21,7 @@ Prioritize actions based on the severity level, and understand the context given
 
 *Contoso's challenge*
 
-- Users are reporting that, after a recent update to the Contoso Real Estate application, they are occasionally seeing a blank page or a generic error message on the search page of the Web App.  The errors seem random, and the search functionality usually works if the users just refresh the page or resubmit the search.
+- Users are reporting that, after a recent update to the Contoso Real Estate application, they're occasionally seeing a blank page or a generic error message on the search page of the Web App.  The errors seem random, and the search functionality usually works if the users just refresh the page or resubmit the search.
 - Reviewing the logs on the search microservice, the team notices an increase in errors due to timeouts connecting to the Azure Database for PostgreSQL, but they currently have no way to tell whether an error they see in the search microservice logs corresponds to the error pages the users see or not.
 
 *Applying the approach and outcomes*
@@ -58,7 +58,7 @@ Trigger alerts only for incidents that require action and strive for proactive a
 *Contoso's challenge*
 
 - Azure Monitor is used to send alerts to the operations team when something goes wrong. However, the team currently receives too many alerts that are irrelevant, unclear, or redundant. This causes alert  fatigue and is affecting the team’s productivity and causing some important alerts to go unnoticed.
-- There have also been some situations of outages that could’ve been prevented or minimized if an alert is sent anticipating a failure if the team had better alerting for degradation before outages occur. For example, there have been  occasions in which slow-downs in the database queries processing time have resulted in outages. While troubleshooting the outages, the team notices that the query processing performance decreases slowly over time, getting worse and worse until it causes a full-blown outage.
+- There have also been some situations of outages that could’ve been prevented or minimized if an alert was sent anticipating a failure. If the team had better alerting for degradation before outages occur, these situation's might've been avoided. For example, there have been  occasions in which slow-downs in the database queries processing time have resulted in outages. While troubleshooting the outages, the team notices that the query processing performance decreases slowly over time, getting worse and worse until it causes a full-blown outage.
 
 *Applying the approach and outcomes*
 
