@@ -38,7 +38,7 @@ quiz:
       explanation: "Traffic that travels in two directions is interesting to monitor."
     - content: "Traffic that isn't broadcast or multicast."
       isCorrect: false 
-      explanation: "Broadcast or multicast traffic are considered interesting traffic points to monitor."
+      explanation: "Broadcast and multicast traffic are considered interesting points of traffic to monitor."
     - content: "Traffic that doesn't pose a risk to the network."
       isCorrect: false
       explanation: "You're interested in monitoring traffic that could pose a risk to your network."
