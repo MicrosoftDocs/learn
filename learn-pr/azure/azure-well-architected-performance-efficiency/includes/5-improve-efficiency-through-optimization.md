@@ -53,7 +53,7 @@ When you identify the recurring problematic areas, the team can focus where gain
 
 - The team has instrumented all functions with Azure Application Insights.
 - They mostly use Application Insights for break-fix issues and for the logging sink.
-- Historically, their approach to targeting areas for improvements have been based on feedback coming from the senior leadership team.
+- Historically, their approach to targeting areas for improvements has been based on feedback coming from the senior leadership team.
 
 *Applying the approach and outcomes*
 
