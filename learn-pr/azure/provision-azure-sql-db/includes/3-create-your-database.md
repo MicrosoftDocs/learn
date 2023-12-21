@@ -1,16 +1,13 @@
-Your transportation company wants to set itself apart from other companies without breaking the bank. You must have a good handle about how to set up the database to provide the best service while controlling costs.
+Your transportation company wants to set itself apart from other companies without breaking the bank. To provide the best service while controlling costs, you must have a good handle on how to set up the database.
 
-Here, you'll learn:
+Here, you learn what to consider when creating an Azure SQL database, including:
 
-- What considerations you need to make when creating an Azure SQL database, including:
-  - How a logical server acts as an administrative container for your databases.
-  - Differences between purchasing models.
-  - How elastic pools enable you to share processing power among databases.
-  - How collation rules affect how data is compared and sorted.
+- How a logical server acts as an administrative container for your databases.
+- The differences between purchasing models.
+- How elastic pools enable you to share processing power among databases.
+- How collation rules affect how data is compared and sorted.
 - How to bring up Azure SQL Database from the Azure portal.
 - How to add firewall rules so that your database is accessible from only trusted sources.
-
-Let's take a quick look at some things you need to consider when you create an Azure SQL database.
 
 ## One server, many databases
 
@@ -26,7 +23,7 @@ Azure SQL Database has two purchasing models: _DTU_ and _vCore_.
 
     DTU stands for _Database Transaction Unit_, and is a combined measure of compute, storage, and I/O resources. Think of the DTU model as a simple, preconfigured purchase option.
 
-    Because your logical server can hold more than one database, you might also consider eDTUs, or _elastic Database Transaction Units_. This option allows you to choose one price, but allows each database in the pool to consume fewer or more resources depending on current load.
+    Because your logical server can hold more than one database, you might also consider eDTUs, or _elastic Database Transaction Units_. This option allows you to choose one price, but allows each database in the pool to consume fewer or more resources depending on the current load.
 
 - **What are vCores?**
 
@@ -42,7 +39,7 @@ When you create your Azure SQL database, you can create a _SQL elastic pool_.
 
 SQL elastic pools relate to eDTUs. They allow you to buy a set of compute and storage resources that are shared among all the databases in the pool. Each database can use the resources they need within the limits you set, depending on current load.
 
-For your prototype, you won't need a SQL elastic pool because you need only one SQL database.
+For your prototype, you don't need a SQL elastic pool because you need only one SQL database.
 
 ## What is collation?
 
@@ -59,7 +56,7 @@ Because you don't have specific requirements for how data is sorted and compared
 
 ## Create your Azure SQL database
 
-Here, you'll set up your database, which includes creating your logical server. You'll choose settings that support your transportation-logistics application. In practice, you'd choose settings that support the kind of app you're building.
+Here, you set up your database, which includes creating your logical server, and choosing settings that support your transportation-logistics application. In practice, you choose settings that support the kind of app you're building.
 
 Over time, if you realize you need more compute power to keep up with demand, you can adjust performance options or even switch between the DTU and vCore performance models.
 
@@ -74,10 +71,12 @@ Over time, if you realize you need more compute power to keep up with demand, yo
 
    :::image type="content" source="../media/3-create-db.png" alt-text="Screenshot showing Create a resource pane with Databases in menu and SQL Database resource service highlighted.":::
 
-1. The **Create SQL Database** pane appears. On the **Basics** tab, enter the following values for each setting.
+1. The **Create SQL Database** pane appears. 
 
-> [!NOTE]
-> You may see the **Want to try Azure SQL Database for free?** banner at the top of the page if your subscription is eligible. Select the **Apply offer** to take advantage of this offer. You can use this Azure SQL Database offer, free for the life of your subscription, as part of this exercise but your subscription can only have one free offer database at a time. For more information, see [Try Azure SQL Database free of charge](/azure/azure-sql/database/free-offer).
+    > [!NOTE]
+    > You may see the **Want to try Azure SQL Database for free?** banner at the top of the page if your subscription is eligible. Select **Apply offer** to take advantage of this offer. You can use this Azure SQL Database offer, free for the life of your subscription, as part of this exercise but your subscription can only have one free offer database at a time. For more information, see [Try Azure SQL Database free of charge](/azure/azure-sql/database/free-offer).
+
+    On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     | --- | --- |
@@ -86,38 +85,34 @@ Over time, if you realize you need more compute power to keep up with demand, yo
     | Resource group | Select an existing resource group or select **Create new** |
     | **Database details** |
     | Database name | `Logistics` |
-    | Server | _[See step 5]_ |
+    | Server | *[See step 5]* |
     | Want to use SQL elastic pool? | *No* |
-    | Compute + storage | _[See step 6]_ |
+    | Compute + storage | *[See step 6]* |
     | **Backup storage redundancy** |
     | Backup storage redundancy | Geo-redundant backup storage (default) |
 
-1. Under **Server**, select **Create new**. The **Create SQL Database Server** pane appears. 
+1. Under **Server**, select **Create new**. The **Create SQL Database Server** pane appears. Enter the following values for each setting:
 
-    a. Enter the following values for each setting.
+    | Setting | Value |
+    | --- | --- |
+    | Server name | Enter a globally unique [server name](/azure/architecture/best-practices/naming-conventions) |
+    | Location | Select a region near you |
+    | Authentication Method | Use SQL Authentication. |
+    | Server admin login | Choose a unique admin login that serves as your primary administrator login ID |
+    | Password | The password of your choice must have eight or more characters from three of these categories: uppercase, lowercase, numbers, and nonalphanumeric |
 
-      | Setting | Value |
-      | --- | --- |
-      | Server name | Enter a globally unique [server name](/azure/architecture/best-practices/naming-conventions) |
-      | Location | Select a region near you |
-      | Authentication Method | Use SQL Authentication. |
-      | Server admin login | Choose a unique admin login that serves as your primary administrator login ID |
-      | Password | The password of your choice must have eight or more characters from three of these categories: uppercase, lowercase, numbers, and non-alphanumeric |
+    Select **OK**. The Server field updates with the name of the server you created.
 
-    b. Select **OK**. The Server field updates with the name of the server you created.
+1. In the **Database details** section, for **Compute + storage**, select **Configure database**. The **Configure** pane appears. Enter the following values for each setting:
 
-1. In the **Database details** section, for **Compute + storage**, select **Configure database**. The **Configure** pane appears.
+    | Setting | Value |
+    | --- | --- |
+    | **Service and compute tier** |
+    | Service tier | If you used the [free Azure SQL Database offer](/azure/azure-sql/database/free-offer), leave the default settings.<br /><br />If not, in the dropdown list, under **DTU-based purchasing model**, select **Basic**. <br /><br />You can scale up or down the service and compute tier of your database at any time in the future. |
+    | Behavior when free limit reached | If you used the [free Azure SQL Database offer](/azure/azure-sql/database/free-offer), leave this set to **Auto-pause the database until next month** for now. You can configure this setting later. |
+    | Remaining settings | Accept defaults |
 
-    a. Enter the following values for each setting.
-
-      | Setting | Value |
-      | --- | --- |
-      | **Service and compute tier** |
-      | Service tier | If you used the [free Azure SQL Database offer](/azure/azure-sql/database/free-offer), leave the default settings.<br /><br />If not, in the dropdown list, under **DTU-based purchasing model**, select **Basic**. <br /><br />You can scale up or down the service and compute tier of your database at any time in the future. |
-      | Behavior when free limit reached | If you used the [free Azure SQL Database offer](/azure/azure-sql/database/free-offer), leave this set to **Auto-pause the database until next month** for now. You can configure this setting later. |
-      | Remaining settings | Accept defaults |
-
-    b. Select **Apply**.
+    Select **Apply**.
 
 1. Select the **Additional settings** tab at the top of the screen, and enter or confirm the following values for each setting.
 
@@ -151,8 +146,8 @@ Your Azure SQL database is now up and running. There are many options that you c
 
 1. Choose **Selected networks** and then select **Add your client IP4 address**. This action automatically adds the IP address for your computer.
 
-    :::image type="content" source="../media/3-add-client-ip.png" alt-text="Screenshot of the Azure portal showing a SQL database Firewall settings pane with the Add client IP highlighted.":::
+    :::image type="content" source="../media/3-add-client-ip.png" alt-text="Screenshot of the Azure portal showing the SQL database Firewall settings pane with the Add client IP highlighted.":::
 
 1. Select **Save**.
 
-In the next unit, you'll get some hands-on practice with your new database and with Azure Cloud Shell. You'll connect to the database, create a table, add some sample data, and execute a few SQL statements.
+Now you can get some hands-on practice with your new database and with Azure Cloud Shell. In the next unit, you connect to the database, create a table, add some sample data, and execute a few SQL statements.

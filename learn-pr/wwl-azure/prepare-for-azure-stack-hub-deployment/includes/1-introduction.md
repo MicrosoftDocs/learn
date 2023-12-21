@@ -1,6 +1,6 @@
-You can deploy Azure Stack Hub using Azure Active Directory (Azure AD) or Active Directory Federation Services (AD FS) as the identity provider. Make the choice before you deploy Azure Stack Hub. In a connected scenario, you can choose Azure AD or AD FS. For a disconnected scenario, only AD FS is supported.
+You can deploy Azure Stack Hub using Microsoft Entra ID or Active Directory Federation Services (AD FS) as the identity provider. Make the choice before you deploy Azure Stack Hub. In a connected scenario, you can choose Microsoft Entra ID or AD FS. For a disconnected scenario, only AD FS is supported.
 
-Prior to deployment you will likely want to resolve DNS names for endpoints outside Azure Stack Hub (for example: [www.bing.com)](http://www.bing.com/). Provide DNS servers that Azure Stack Hub can use to forward DNS requests for which Azure Stack Hub isn't authoritative.
+Prior to deployment you will likely want to resolve DNS names for endpoints outside Azure Stack Hub (for example: [www.bing.com](https://www.bing.com/)). Provide DNS servers that Azure Stack Hub can use to forward DNS requests for which Azure Stack Hub isn't authoritative.
 
 In the context of Azure Stack Hub, a public IP address is an IP address that's accessible from outside of Azure Stack Hub. Whether that external network is public internet routable or is on an intranet and uses private address space doesn't matter for the purposes of this unit, the steps are the same.
 

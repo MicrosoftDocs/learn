@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/10/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.service: active-directory
+  ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 4
@@ -17,36 +16,36 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Which choice correctly describes Azure Active Directory?"
+  - content: "Which choice correctly describes Microsoft Entra ID?"
     choices:
-    - content: "Azure AD can be queried through LDAP."
+    - content: "Microsoft Entra ID can be queried through LDAP."
       isCorrect: false
-      explanation: "Incorrect. Because Azure AD is based on the HTTP and HTTPS protocols, it can't be queried through LDAP. Instead, Azure AD uses the REST API over HTTP and HTTPS."
-    - content: "Azure AD is primarily an identity solution."
+      explanation: "Incorrect. Because Microsoft Entra ID is based on the HTTP and HTTPS protocols, it can't be queried through LDAP. Instead, Microsoft Entra ID uses the REST API over HTTP and HTTPS."
+    - content: "Microsoft Entra ID is primarily an identity solution."
       isCorrect: true
-      explanation: "Correct. Azure AD is primarily an identity solution. It's designed for internet-based applications by using HTTP and HTTPS communications."
-    - content: "Azure AD uses organizational units (OUs) and group policy objects (GPOs)."
+      explanation: "Correct. Microsoft Entra ID is primarily an identity solution. It's designed for internet-based applications by using HTTP and HTTPS communications."
+    - content: "Microsoft Entra ID uses organizational units (OUs) and group policy objects (GPOs)."
       isCorrect: false
-      explanation: "Incorrect. Azure AD users and groups are created in a flat structure. There are no organizational units (OUs) or group policy objects (GPOs)."
-  - content: "What term defines a dedicated and trusted instance of Azure Active Directory?"
+      explanation: "Incorrect. Microsoft Entra users and groups are created in a flat structure. There are no organizational units (OUs) or group policy objects (GPOs)."
+  - content: "What term defines a dedicated and trusted instance of Microsoft Entra ID?"
     choices:
     - content: "Azure tenant"
       isCorrect: true
-      explanation: "Correct. A tenant is a dedicated and trusted instance of Azure AD. A tenant is automatically created when an organization signs up for a Microsoft cloud service subscription​."
+      explanation: "Correct. A tenant is a dedicated and trusted instance of Microsoft Entra ID. A tenant is automatically created when an organization signs up for a Microsoft cloud service subscription​."
     - content: "Identity"
       isCorrect: false
       explanation: "Incorrect. An identity is an object that can be authenticated. An identity can be a user with a username and password. Identities also include applications or other servers that might require authentication through secret keys or certificates."
-    - content: "Azure AD account"
+    - content: "Microsoft Entra account"
       isCorrect: false
-      explanation: "Incorrect. An Azure AD Account is an identity created through Azure AD or another Microsoft cloud service, such as Microsoft 365. Identities are stored in Azure AD and accessible to the organization's cloud service subscriptions. This account is also sometimes called a work or school account."
+      explanation: "Incorrect. A Microsoft Entra account is an identity created through Microsoft Entra ID or another Microsoft cloud service, such as Microsoft 365. Identities are stored in Microsoft Entra ID and accessible to the organization's cloud service subscriptions. This account is also sometimes called a work or school account."
   - content: "Your users want to sign-in to devices, apps, and services from anywhere. Users want to sign-in by using an organizational work or school account instead of a personal account. What should you do first?"
     choices:
-    - content: "Enable the device in Azure AD."
+    - content: "Enable the device in Microsoft Entra ID."
       isCorrect: false
       explanation: "Incorrect. You should first join the devices."
-    - content: "Join the device to Azure AD."
+    - content: "Join the device to Microsoft Entra ID."
       isCorrect: true
       explanation: "Correct. Joining the device provides the features you need."
-    - content: "Register the device with Azure AD."
+    - content: "Register the device with Microsoft Entra ID."
       isCorrect: false
       explanation: "Incorrect. Registering the device doesn't provide the features you need."

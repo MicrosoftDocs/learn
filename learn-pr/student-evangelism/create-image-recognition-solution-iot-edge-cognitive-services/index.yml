@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/12/2021
   author: leestott
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.service: iot-edge
 title: "Create an image recognition solution with Azure IoT Edge and Azure AI services"

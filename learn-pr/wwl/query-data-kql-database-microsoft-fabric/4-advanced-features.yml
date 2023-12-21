@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-data-kql-database-microsoft-fabric.advanced-features
+title: Advanced features
+metadata:
+  title: Advanced features
+  description: "Advanced features"
+  ms.date: 11/17/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-advanced-features.md)]

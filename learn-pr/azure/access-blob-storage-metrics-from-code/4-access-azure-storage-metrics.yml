@@ -4,13 +4,12 @@ title: Access Azure Storage Metrics in Code
 metadata:
   title: Access Azure Storage Metrics in Code
   description: In this unit, you learn how to write code that uses the Azure Monitor .NET API to access Storage metrics.
-  ms.date: 04/12/2019
+  ms.date: 10/23/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-dotnet
-  ms.prod: learning-azure
 durationInMinutes: 7
 content: |
   [!include[](includes/4-access-azure-storage-metrics.md)]

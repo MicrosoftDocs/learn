@@ -38,9 +38,9 @@ Other connection security features include:
 
 ### Secure processing and storage in the cloud
 
-Using Azure Active Directory for user authentication and authorization, Azure IoT Hub can provide a policy-based authorization model for data in the cloud, enabling easy access management that can be audited and reviewed.
+Using Microsoft Entra ID for user authentication and authorization, Azure IoT Hub can provide a policy-based authorization model for data in the cloud, enabling easy access management that can be audited and reviewed.
 
-Once data is in the cloud, it can be processed and stored in any user-defined workflow. Access to each part of the data is controlled with Azure Active Directory, depending on the storage service used.
+Once data is in the cloud, it can be processed and stored in any user-defined workflow. Access to each part of the data is controlled with Microsoft Entra ID, depending on the storage service used.
 
 All keys used by the IoT infrastructure are stored in the cloud in secure storage, with the ability to roll over in case keys need to be reprovisioned. Data can be stored in Azure Cosmos DB or in SQL databases, enabling definition of the level of security desired. Additionally, Azure provides a way to monitor and audit all access to your data to alert you of any intrusion or unauthorized access.
 

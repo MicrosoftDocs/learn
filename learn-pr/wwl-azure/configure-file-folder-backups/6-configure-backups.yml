@@ -4,11 +4,12 @@ title: Configure on-premises file and folder backups
 metadata:
   title: Configure on-premises file and folder backups
   description: "Configure on-premises file and folder backups with the MARS agent for Azure Backup."
-  ms.date: 03/06/2023
+  ms.date: 10/30/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/6-configure-backups.md)]

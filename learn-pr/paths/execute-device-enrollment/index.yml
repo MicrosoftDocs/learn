@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/14/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: MD-102 Execute device enrollment
 prerequisites: |
   - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later.
@@ -23,7 +22,7 @@ roles:
 - support-engineer
 products:
 - azure
-- azure-active-directory
+- entra-id
 - configuration-manager
 - intune
 modules:

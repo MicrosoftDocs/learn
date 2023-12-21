@@ -7,7 +7,7 @@ The following image shows the five-step connection process for Azure Virtual Des
 :::image type="content" source="../media/windows-virtual-desktop-sign-on-flow-f951e564.png" alt-text="Diagram showing the five-step connection process for Azure Virtual Desktop running in Azure.":::
 
 
-1.  **When authenticated in Azure Active Directory, a token is returned to the Remote Desktop Services client.**
+1.  **When authenticated in Microsoft Entra ID, a token is returned to the Remote Desktop Services client.**
 2.  **The gateway checks the token with the connection broker.**
 3.  **The broker queries the Azure SQL database for resources assigned to the user.**
 4.  **The gateway and the broker select the session host for the connected client.**
@@ -37,7 +37,7 @@ Upon startup of the Azure Virtual Desktop session host, the Remote Desktop Agent
 Client connection sequence described below:
 
 1.  Using supported Azure Virtual Desktop client user subscribes to the Azure Virtual Desktop Workspace.
-2.  Azure Active Directory authenticates the user and returns the token used to enumerate resources available to a user.
+2.  Microsoft Entra authenticates the user and returns the token used to enumerate resources available to a user.
 3.  Client passes token to the Azure Virtual Desktop feed subscription service.
 4.  Azure Virtual Desktop feed subscription service validates the token.
 5.  Azure Virtual Desktop feed subscription service passes the list of available desktops and RemoteApps back to the client with a digitally signed connection.

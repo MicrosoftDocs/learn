@@ -41,7 +41,7 @@ In this section, you'll create a Blob container and upload a picture.
     | **Setting**         | **Value**                      |
     | ------------------- | ------------------------------ |
     | Name                | Enter a name for the container |
-    | Public access level | Private (no anonymous access)  |
+    | Anonymous access level | Private (no anonymous access)  |
 3.  Select Create.
     
     > [!NOTE]
@@ -69,7 +69,7 @@ In this section, you'll create a Blob container and upload a picture.
 
 1.  Go back to the Azure portal.
 2.  Select Change access level.
-3.  Set the Public access level to Blob (anonymous read access for blobs only).
+3.  Set the Anonymous access level to Blob (anonymous read access for blobs only).
     
     :::image type="content" source="../media/blob-access-level-213a74e6.png" alt-text="Screenshot with Change access level highlighted.":::
     

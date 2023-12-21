@@ -8,7 +8,7 @@ As a data engineer, use the Azure Cosmos DB multimaster replication model to cre
 
 In the healthcare industry, use Azure Databricks to accelerate big-data analytics and AI solutions. Apply these technologies to genome studies or pharmacy sales forecasting at a petabyte scale. Using Databricks features, you can set up your Spark environment in minutes and autoscale quickly and easily.
 
-Using Azure, you can collaborate with data scientists on shared projects and workspaces in a wide range of languages, including SQL, R, Scala, and Python. Because of native integration with Microsoft Entra ID and other Azure services, you can build diverse solution types. For example, build a modern data warehouse or machine learning and real-time analytics solutions.
+Using Azure, you can collaborate with data scientists on shared projects and workspaces in a wide range of languages, including SQL, R, Scala, and Python. Because of native integration with Azure Active Directory and other Azure services, you can build diverse solution types. For example, build a modern data warehouse or machine learning and real-time analytics solutions.
 
 ## IoT solutions
 

@@ -7,10 +7,9 @@ metadata:
   ms.date: 10/20/2022
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
-labId: 97055
+labId: 152408
 labModal: true
 durationInMinutes: 20
 content: |

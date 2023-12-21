@@ -8,8 +8,7 @@ metadata:
   ms.date: 10/10/2023
   author: IEvangelist
   ms.author: dapine
-  ms.topic: interactive-tutorial
-  ms.prod: learning-blazor
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/4-improve-app-interactivity-lifecycle-events.md)]

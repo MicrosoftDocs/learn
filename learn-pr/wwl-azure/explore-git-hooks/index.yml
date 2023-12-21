@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/02/2023
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: learning-azure
 title: Explore Git hooks
 summary: This module describes Git hooks and their usage during the development process, implementation, and behavior.

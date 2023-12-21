@@ -7,8 +7,7 @@ metadata:
   ms.date: 02/02/2023
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 10
@@ -28,7 +27,7 @@ quiz:
     - content: "JIT virtual machine access"
       isCorrect: false
       explanation: "JIT VM access would just restrict when a user could access a VM, not validate if they should still be allowed access"
-  - content: "Identity Protection has reported that a user’s credentials have been leaked. According to policy, the user’s password must be reset. Which Azure AD role can reset the password?"
+  - content: "Identity Protection has reported that a user’s credentials have been leaked. According to policy, the user’s password must be reset. Which Microsoft Entra role can reset the password?"
     choices:
     - content: "Global Administrator"
       isCorrect: true
@@ -49,7 +48,7 @@ quiz:
       explanation: "Identity Protection can recognize logins from unexpected locations and times."
     - content: "Unregistered device"
       isCorrect: false
-      explanation: "Unregistered device is not a valid choice. Other risks classifications are Malware linked IP address, Leaked credentials, and Azure AD threat intelligence."
+      explanation: "Unregistered device is not a valid choice. Other risks classifications are Malware linked IP address, Leaked credentials, and Microsoft Entra threat intelligence."
   - content: "You have implemented Identity Protection and are reviewing the Risky users report. For each reported event you can choose any of the following actions?"
     choices:
     - content: "Confirm user compromise"
@@ -74,12 +73,12 @@ quiz:
       explanation: "It is possible to force a user, group or users, or all users to use MFA with a conditional access policy."
   - content: "Which licensing plan supports Identity Protection?"
     choices:
-    - content: "Azure Active Directory Free"
+    - content: "Microsoft Entra ID Free"
       isCorrect: false
       explanation: "You need a paid premium P2 plan."
-    - content: "Azure Active Directory Premium P1"
+    - content: "Microsoft Entra ID P1"
       isCorrect: false
       explanation: "You need to have a premium P2 license."
-    - content: "Azure Active Directory Premium P2"
+    - content: "Microsoft Entra ID P2"
       isCorrect: true
       explanation: "Identity Protection helps you configure risk-based conditional access for your applications to protect them from identity-based risks."

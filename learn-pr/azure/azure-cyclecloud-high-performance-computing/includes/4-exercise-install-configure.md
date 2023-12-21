@@ -32,6 +32,7 @@ You'll start by deploying an Azure VM hosting the Azure CycleCloud application b
     | Virtual machine name | Enter **cyclecloud-vm**. |
     | Region | Select the name of any Azure region that's close to your location where you can provision Azure VMs. |
     | Availability options | **no infrastructure redundancy required** | 
+    | Security type | **Standard** |
     | Image | Accept the default image selection which is determined by the marketplace plan you chose in the previous step. |
     | Azure Spot instance | Leave the checkbox unselected. |
     | Size | Select **See all sizes**, on the **Select a VM size** blade, select the **Standard E4s v3** entry, and then enter **Select**. |
@@ -72,8 +73,13 @@ You'll start by deploying an Azure VM hosting the Azure CycleCloud application b
     | Setting | Value |
     | --- | --- |
     | Enable basic plan for free | If present and enabled, clear the checkbox. |
-    | Boot diagnostics | Ensure that the **Enable with managed storage account (recommended)** option is selected. |
     | System assigned managed identity | Select the checkbox. |  
+
+1. Select **Next: Monitoring >**, and on the **Monitoring** tab of the **Create a virtual machine** blade, configure the following settings (leave others with their default values):
+
+    | Setting | Value |
+    | --- | --- |
+    | Boot diagnostics | Ensure that the **Enable with managed storage account (recommended)** option is selected. |
 
 1. Select **Review + Create** and configure the following settings (leave others with their default values):
 

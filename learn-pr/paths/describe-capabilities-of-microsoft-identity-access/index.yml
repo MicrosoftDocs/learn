@@ -6,8 +6,7 @@ metadata:
   ms.date: 08/08/2022
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: learning-path
 title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft Entra'
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
@@ -50,9 +49,6 @@ summary: |
     Primer: [Describe the basic concepts of cybersecurity](../describe-basic-concepts-of-cybersecurity/index.yml)
   :::column-end:::
   :::row-end:::  
-video:
-  title: "Introduction video: Describe the capabilities of Microsoft Entra"
-  url: https://www.microsoft.com/videoplayer/embed/RE4XQ3g
 iconUrl: /training/achievements/describe-capabilities-of-microsoft-identity-access-management-solutions.svg
 levels:
 - beginner
@@ -60,7 +56,7 @@ roles:
 - business-user
 - student
 products:
-- azure-active-directory
+- entra-id
 subjects:
 - compliance
 - identity-access

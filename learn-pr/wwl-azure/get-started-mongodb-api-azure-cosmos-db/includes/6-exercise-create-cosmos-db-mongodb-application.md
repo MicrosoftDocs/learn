@@ -1,4 +1,5 @@
-It's time to programmatically check out how to create our Azure Cosmos DB for MongoDB databases, collections and add some data.
+
+It's time to programmatically check-out how to create our Azure Cosmos DB for MongoDB databases, collections and add some data.
 
 This exercise can be completed using a Microsoft Learn *sandbox*, which provides a temporary Azure subscription. To activate the sandbox subscription, you must sign in using a Microsoft account. The sandbox subscription will be automatically deleted when you complete this module. After the sandbox has been activated, [sign into the Azure portal using the credentials for your sandbox subscription](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Ensure you're working in the **Microsoft Learn Sandbox** directory - indicated at the top right of the portal under your user ID. If not, select the user icon and switch directory.
 
@@ -1398,3 +1399,4 @@ This code illustrated the power of using extended commands in our code, which al
 ::: zone-end
 
 Once you've completed this exercise, continue to the knowledge check questions for this module.
+

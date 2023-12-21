@@ -25,14 +25,16 @@ Now that you have the preceding information on hand, we’ll walk through how to
 
 | **Field** | **Information needed** | **Description** |
 |---|---|---|
+| **Subscription** | Your Azure subscription | Your subscription in Azure. |
+| **Resource group** | **Create new** | Create a new resource group for the satellite registration. |
 | **Satellite name** | AQUA | The name of your satellite. |
 | **Region** | West US 2 | The Azure region you want to use. Each Azure region features datacenters within a latency-defined perimeter connected through a dedicated regional low-latency network. This design provides the best possible performance and security within each region. [Get more information on Azure regions](/azure/availability-zones/az-overview).  |
 | **NORAD ID** | 27424 | A 5-digit satellite identification number. NORAD (North American Aerospace Defense Catalog Number) IDs have been used since the first satellite was launched in 1957. |
 | **TLE title line** | AQUA | The standard format used to describe the trajectory of earth-orbiting objects. TLEs change, so they [need to be kept up to date](https://celestrak.org/NORAD/elements/active.txt). [Get more instructions on updating TLEs.](/azure/orbital/update-tle) |
-| **TLE line 1** | [Enter the TLE line 1 from Celestrak](https://celestrak.org/NORAD/elements/active.txt) | The first line of the TLE.  Example 1: 27424U 02022A   22250.53879010  .00000478  00000+0  11551-3 0  9993 |
-| **TLE line 2** | [Enter the TLE line 2 from Celestrak](https://celestrak.org/NORAD/elements/active.txt) | The second line of the TLE. Example 2: 27424  98.2510 191.6693 0001463  54.4662 357.4337 14.57372758 82148 |
+| **TLE line 1** | [Enter the TLE line 1 from Celestrak](https://celestrak.org/NORAD/elements/active.txt) | Search the page for "AQUA" and enter the entire first line of the TLE. Example: *1 27424U 02022A   22250.53879010  .00000478  00000+0  11551-3 0  9993* |
+| **TLE line 2** | [Enter the TLE line 2 from Celestrak](https://celestrak.org/NORAD/elements/active.txt) | Search the page for "AQUA" and enter the entire second line of the TLE. Example: *2 27424  98.2510 191.6693 0001463  54.4662 357.4337 14.57372758 82148* |
 
-5. Select **Next: Links** or go to the **Links** tab and select **Add new Link**.
+5. Select **Next** or go to the **Links** tab and select **Add new Link**.
 
     :::image type="content" source="../media/orbital-eos-register-links.png" alt-text="Screenshot of the Create a Spacecraft resource page on the links tab with a red box around Add a new Link. On the right side of the screen, there are blank fields that need to be filled out for the link details.":::
 
@@ -40,6 +42,7 @@ Now that you have the preceding information on hand, we’ll walk through how to
 
 | **Field** | **Information needed** | **Description** |
 |---|---|---|
+| **Name** | SatLink | Provide a name for your link. |
 | **Link Direction** | Downlink | The direction you want information to flow. You can uplink (from the ground station to the satellite) or downlink (from the satellite to the ground station) information. |
 | **Center Frequency** | 8160 | The measure of central frequency between lower and upper cutoff frequencies. Frequency is the number of times that an alternating current goes through its complete cycle in one second. Higher-frequency bands typically result in wider bandwidths, but are more susceptible to signal degradation. |
 | **Bandwidth** | 15 | The amount of data that a satellite can receive, process, and transmit. |

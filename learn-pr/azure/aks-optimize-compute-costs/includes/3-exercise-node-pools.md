@@ -2,7 +2,7 @@ Azure Kubernetes Service allows you to create different node pools to match spec
 
 Recall from the drone tracking example. Your team developed a new predictive-modeling service that processes flight-path information in extreme weather conditions and creates optimal flight routes. This service requires GPU-based virtual-machine (VM) support and runs only on specific days during the week. The team wants to make sure no VMS are used when the service doesn't run.
 
-Here, you'll create an Azure Kubernetes Service (AKS)-managed Kubernetes cluster. You'll configure the cluster to support multiple node pools and make sure the cluster allows you to scale the nodes in the node pools. Then you'll add a second node pool to support user workloads. Finally, you'll scale the node count in the second node pool to zero to reduce the cost of the node used in your AKS cluster.
+Here, you create an Azure Kubernetes Service (AKS)-managed Kubernetes cluster. Next, you configure the cluster to support multiple node pools and allows clusters to scale the nodes in the node pools. Then, you add a second node pool to support user workloads with a dynamic node count. Finally, you scale the node count to zero to reduce the cost of the nodes used in your AKS cluster.
 
 ## Create a new resource group
 
@@ -11,7 +11,9 @@ Here, you'll create an Azure Kubernetes Service (AKS)-managed Kubernetes cluster
     >[!div class="nextstepaction"]
     >[Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
 
-1. You'll reuse some values throughout the exercises in this module. For example, you need to choose a region where you want to create a resource group. Some features that you'll add in later exercises might not be available in the region you select. For this reason, we recommend that you select **East US**. If you choose a different value, remember to note that value for use with exercises throughout the module.
+1. You reuse these values throughout all the exercises in this module. Save the output for future use.
+ 
+1. Choose a region to host your resource group. Features from later exercises aren't available in all regions. For this reason, we recommend that you use **eastus** as your region. If you choose to use a different value, change the value of `REGION_NAME`.
 
     Run the following commands to register your variables:
 
@@ -25,7 +27,7 @@ Here, you'll create an Azure Kubernetes Service (AKS)-managed Kubernetes cluster
 
     You can check each value by running the `echo` command, for example, `echo $REGION_NAME`.
 
-1. Make a note of your new cluster's name. You'll use this value later when you clean up resources, and in configuration settings for the cluster.
+1. Make a note of your `AKS_CLUSTER_NAME`. Throughout the exercises, this value is used later for cleanup and configuration settings for your cluster.
 
     ```bash
     echo $AKS_CLUSTER_NAME
@@ -41,18 +43,19 @@ Here, you'll create an Azure Kubernetes Service (AKS)-managed Kubernetes cluster
 
 ## Create the AKS cluster
 
-With the resource group in place, you can now create the AKS cluster. Your first step is to get the version of the latest, non-preview version of Kubernetes in your selected region. You'll use this version in configuring the cluster.
+With the resource group created, you can create AKS clusters within the group. Your first step is to get the version of Kubernetes in your selected region. This version is set to  configure your cluster.
 
-1. To get the latest, non-preview Kubernetes version, run the `az aks get-versions` command. Store the value that the command returns in a Bash variable named `VERSION`. To retrieve and store the version number, run the following command:
+1. To get the Kubernetes version, run the `az aks get-versions` command. The query below returns a non-preview Kubernetes version. Store that value in a Bash variable named `VERSION`. To retrieve and store the version number, run the following command:
 
     ```azurecli
     VERSION=$(az aks get-versions \
         --location $REGION_NAME \
-        --query 'orchestrators[?!isPreview] | [-1].orchestratorVersion' \
+        --query "values[?isPreview==null].version | [-1]" \
         --output tsv)
+    echo $VERSION
     ```
 
-1. Run the `az aks create` command shown later in this step to create the AKS cluster. The cluster will run the latest Kubernetes version with two nodes in the system node pool. This command can take a few minutes to finish.
+1. Run the `az aks create` command shown later in this step to create the AKS cluster. The cluster runs with two nodes in the system node pool. This command can take a few minutes to finish.
 
     The `az aks create` command has several parameters that enable precise configuration of your Kubernetes cluster. There are two important parameters in configuring the correct support in your cluster for scaling and multiple node pools:
 
@@ -219,7 +222,7 @@ Here's an example of the output from the command:
 }
 ```
 
-Notice that the node pool `count` parameter value is 0 and that the `enableAutoScaling` value is set to `null` in the returned result. You'll have to increase the node count for this node pool manually when you need to schedule workloads here, because node creation won't happen automatically.
+Notice that the node pool `count` parameter value is set to 0, and that the `enableAutoScaling` value is set to `null`. To schedule workloads, you have to increase the node count for this node pool manually, because node creation doesn't happen automatically by default.
 
 ## Configure the Kubernetes context
 
@@ -241,7 +244,11 @@ In the output from the previous command, the node pool count is set to 0. You ca
     Merged "akscostsaving-17835" as current context in /home/user/.kube/config
     ```
 
-1. Run `kubectl get nodes` to list the nodes in your node pools.
+1. List the nodes in your node pools.
+
+    ```azurecli
+    kubectl get nodes
+    ```
 
     Here's an example of the command output:
 

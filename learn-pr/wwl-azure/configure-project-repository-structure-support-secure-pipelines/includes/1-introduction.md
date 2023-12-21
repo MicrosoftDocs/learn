@@ -20,7 +20,7 @@ The course is divided into several modules, each covering a specific topic relat
 
 ## Why should I take the implement security through a pipeline using Azure DevOps learning path?
 
-Completing this module helps prepare you for the **Implement security through a pipeline using Azure DevOps** assessment.
+Completing this module helps prepare you for the [**Implement security through a pipeline using Azure DevOps**](https://learn.microsoft.com/credentials/applied-skills/implement-security-through-pipeline-using-devops/) assessment.
 
 ### Learning objectives
 

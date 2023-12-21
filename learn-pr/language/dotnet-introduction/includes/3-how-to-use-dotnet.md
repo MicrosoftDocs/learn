@@ -13,9 +13,9 @@ The first decision developers make is selecting the tools they'll use to create 
 
 For developers who prefer a visual environment, Visual Studio 2022 is the best choice. As you might guess, because of the comprehensive and visual nature of Visual Studio 2022, you'll need time, bandwidth, and disk space to download and install the program. However, some beginners find it to be the easiest way to get started. Depending on the speed of your internet connection, the installation can take 15 minutes or more.
 
-The Visual Studio Installer in Visual Studio 2022 gives you options in the form of workloads. A *workload* is a collection of frameworks, libraries, and other tools that work together to build a specific app model. Based on what you learned in the previous unit, you'll want to make sure that you install the **.NET Core for cross-platform development** workload to build new applications.
+The Visual Studio Installer in Visual Studio 2022 gives you options in the form of workloads. A *workload* is a collection of frameworks, libraries, and other tools that work together to build a specific app model. Based on what you learned in the previous unit, you'll want to make sure that you install the workload to build new applications for that app model.
 
-The **.NET Core for cross-platform development** workload installs the .NET SDK. The .NET SDK contains all the libraries, tools, and templates you need to get started writing code.
+If you are just getting started, the **ASP.NET and web development** workload installs the .NET SDK and additional SDKs for web development with .NET. The .NET SDK contains all the libraries, tools, and templates you need to get started writing code.
 
 If you prefer a command-line environment, separately download and install Visual Studio Code and the .NET SDK. This choice is popular for beginners who want to get started quickly. Both tools require less bandwidth to download.
 

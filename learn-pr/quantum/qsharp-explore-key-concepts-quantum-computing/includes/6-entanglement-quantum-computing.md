@@ -27,7 +27,7 @@ Similarly, you can set up this superposition state:
 
 $$|\psi\rangle=\frac1{\sqrt2}|01\rangle+\frac1{\sqrt2}|10\rangle.$$
 
-In this case, only **$|01\rangle$** and **$|01\rangle$** are possible outcomes. Again, by measuring just one of the qubits, you already know the result of the other qubit. This correlation can be useful in algorithms.
+In this case, only **$|01\rangle$** and **$|10\rangle$** are possible outcomes. Again, by measuring just one of the qubits, you already know the result of the other qubit. This correlation can be useful in algorithms.
 
 The states we've reviewed aren't the only entangled states. In general, we say that two systems are entangled when the state of the global system can't be written as a linear combination of the subsystems. For example, consider the following two-qubit quantum state:
 

@@ -1,6 +1,6 @@
 Azure Cosmos DB exposes a built-in role-based access control (RBAC) system that lets you:
 
-- Authenticate your data requests with an Azure Active Directory (Azure AD) identity.
+- Authenticate your data requests with a Microsoft Entra identity.
 - Authorize your data requests with a fine-grained, role-based permission model.
 
 To set up these roles, we'll review the RBAC concepts for the permission model, role definitions, and role assignments in more detail. Azure portal support for role management is'not available yet.
@@ -75,7 +75,7 @@ You can define custom role definition using Azure PowerShell, Azure CLI, or Azur
 
 ## Role assignments
 
-The final component to define our data plane role base access control is our Role Assignment. Role definitions get assigned to specific Azure Active Directory identities through role assignments. This assignment also defines the scope that the role definition applies to: the account, the database, or the container. You can define role assignments using Azure PowerShell, Azure CLI, or Azure Resource Manager templates. When creating a role assignment, you need to provide:
+The final component to define our data plane role base access control is our Role Assignment. Role definitions get assigned to specific Microsoft Entra identities through role assignments. This assignment also defines the scope that the role definition applies to: the account, the database, or the container. You can define role assignments using Azure PowerShell, Azure CLI, or Azure Resource Manager templates. When creating a role assignment, you need to provide:
 
 - The name of your Azure Cosmos DB account.
 - The resource group containing your account.
@@ -88,9 +88,11 @@ The final component to define our data plane role base access control is our Rol
 
     The scope must match or be a subscope of one of the role definition's assignable scopes.
 
-## Initialize the SDK with Azure AD
+<a name='initialize-the-sdk-with-azure-ad'></a>
 
-To use Azure Cosmos DB RBAC, you'll no longer pass the primary key. You'll pass an instance of a `TokenCredential` class. This instance will provide the Azure Cosmos DB SDK the context to fetch the needed Azure Active Directory token for of the identity you'll use. Your `TokenCredential`instance must resolve to the identity (principal ID) that you've assigned your roles to. In this example, a service principal is used with a `ClientSecretCredential` instance.
+## Initialize the SDK with Microsoft Entra ID
+
+To use Azure Cosmos DB RBAC, you'll no longer pass the primary key. You'll pass an instance of a `TokenCredential` class. This instance will provide the Azure Cosmos DB SDK the context to fetch the needed Microsoft Entra token for of the identity you'll use. Your `TokenCredential`instance must resolve to the identity (principal ID) that you've assigned your roles to. In this example, a service principal is used with a `ClientSecretCredential` instance.
 
 ```C#
 TokenCredential servicePrincipal = new ClientSecretCredential(
@@ -102,13 +104,13 @@ CosmosClient client = new CosmosClient("<account-endpoint>", servicePrincipal);
 
 ## Use data explorer
 
-The data explorer on your Azure Cosmos DB pane doesn't support the Azure Cosmos DB RBAC yet. To use your Azure AD identity when exploring your data, you must use the **Azure Cosmos DB Explorer** instead. Make sure you enable the property `?feature.enableAadDataPlane=true` in the Azure Cosmos DB Explorer to be able to sign in using RBAC.
+The data explorer on your Azure Cosmos DB pane doesn't support the Azure Cosmos DB RBAC yet. To use your Microsoft Entra identity when exploring your data, you must use the **Azure Cosmos DB Explorer** instead. Make sure you enable the property `?feature.enableAadDataPlane=true` in the Azure Cosmos DB Explorer to be able to sign in using RBAC.
 
 ## Audit data requests
 
-When using the Azure Cosmos DB RBAC, diagnostic logs will now get identity and authorization information for each data operation. This information will allow you to retrieve the Azure Active Directory identity for every request sent to your Azure Cosmos DB account. 
+When using the Azure Cosmos DB RBAC, diagnostic logs will now get identity and authorization information for each data operation. This information will allow you to retrieve the Microsoft Entra identity for every request sent to your Azure Cosmos DB account. 
 
-The identity and authorization data will also be added to the DataPlaneRequest logs. You should now see the columns `aadPrincipalId_g`and `aadAppliedRoleAssignmentId_g` for the principal ID of Azure Active Directory and the role assignment used respectively.
+The identity and authorization data will also be added to the DataPlaneRequest logs. You should now see the columns `aadPrincipalId_g`and `aadAppliedRoleAssignmentId_g` for the principal ID of Microsoft Entra ID and the role assignment used respectively.
 
 ## Enforcing RBAC as the only authentication method
 
@@ -117,7 +119,6 @@ When using RBAC, you can disable the Azure Cosmos DB account primary and seconda
 ## Limits
 
 - You can create up to 100 role definitions and 2,000 role assignments per Azure Cosmos DB account.
-- You can only assign role definitions to Azure AD identities belonging to the same Azure AD tenant as your Azure Cosmos DB account.
-- Azure AD group resolution isn't currently supported for identities that belong to more than 200 groups.
-- The Azure AD token is currently passed as a header with each individual request sent to the Azure Cosmos DB service, increasing the overall payload size.
-
+- You can only assign role definitions to Microsoft Entra identities belonging to the same Microsoft Entra tenant as your Azure Cosmos DB account.
+- Microsoft Entra group resolution isn't currently supported for identities that belong to more than 200 groups.
+- The Microsoft Entra token is currently passed as a header with each individual request sent to the Azure Cosmos DB service, increasing the overall payload size.

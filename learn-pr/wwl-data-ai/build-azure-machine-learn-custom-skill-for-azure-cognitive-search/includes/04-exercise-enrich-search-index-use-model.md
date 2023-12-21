@@ -4,4 +4,4 @@ In this exercise, you'll create an Azure AI Machine Learning Studio model, then 
 
 If you're completing this exercise on your own computer, launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://github.com/MicrosoftLearning/mslearn-knowledge-mining/blob/main/Instructions/Labs/06-exercise-enrich-search-index-use-model.md) 
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-knowledge-mining/Instructions/Exercises/06-exercise-enrich-search-index-use-model.html?azure-portal=true) 

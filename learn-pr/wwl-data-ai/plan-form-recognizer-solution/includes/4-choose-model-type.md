@@ -6,7 +6,7 @@ In this unit, you'll learn about the prebuilt models available in Azure AI Docum
 
 ## Prebuilt models
 
-Document types such as invoices and receipts vary in different businesses and industry but have similar structures and key-value pairs. For example, a "Total cost" value is likely to appear on almost all invoices although it may be called "Total", "Sum", or some other name. Microsoft has provided a set of prebuilt models with Azure AI Document Intelligence to handle the most common types of documents. You don't have to train these models and you can create solutions using them very quickly.
+Document types such as invoices and receipts vary in different businesses and industry but have similar structures and key-value pairs. For example, a "Total cost" value is likely to appear on almost all invoices although it might be called "Total", "Sum", or some other name. Microsoft has provided a set of prebuilt models with Azure AI Document Intelligence to handle the most common types of documents. You don't have to train these models and you can create solutions using them very quickly.
 
 ### General document analysis models
 
@@ -25,11 +25,11 @@ Three of the prebuilt models are designed to handle general documents and extrac
     :::image type="content" source="../media/04-layout-model.png" alt-text="Screenshot showing the layout model analyzing a document in Azure AI Document Intelligence Studio." lightbox="../media/04-layout-model.png":::
 
 > [!NOTE]
-> The model screenshots above show Azure AI Document Intelligence models extracting data in Azure AI Document Intelligence Studio.
+> The model screenshots above show Document Intelligence models extracting data in Azure AI Document Intelligence Studio.
 
 ### Specific document type models
 
-The five other prebuilt models are each designed to handle, and trained on, a specific and commonly used type of document. 
+The other prebuilt models are each designed to handle, and trained on, a specific and commonly used type of document. Some examples include:
 
 - **Invoice.** Use this model to extract key information from sales invoices in English and Spanish.
 
@@ -48,9 +48,6 @@ The five other prebuilt models are each designed to handle, and trained on, a sp
 
     :::image type="content" source="../media/04-business-card-model.png" alt-text="Screenshot showing the business card model analyzing a document in Azure AI Document Intelligence Studio." lightbox="../media/04-business-card-model.png":::
 
-> [!NOTE]
-> At the time of writing, read, general document, and W-2 models are currently in preview.
-
 ## Custom models
 
 If the prebuilt models don't suit your purposes, you can create a custom model and train it to analyze the specific type of document users will send to your Azure AI Document Intelligence service. The general document analyzer prebuilt models can extract rich information from these forms and you might be able to use them if your requirements are to obtain general data. However, by using a custom model, trained on forms with similar structures and key-value pairs, you will obtain more predictable and standardized results from your unusual form types.
@@ -68,7 +65,7 @@ There are two kinds of custom model:
 
 ## Composed models
 
-A composed model is one that consists of multiple custom models. Typical scenarios where composed models help are when you don't know the submitted document type and want to classify and then analyze it. They are also useful if you have multiple variations of a form, each with a trained individual model. When a user submits a form to the composed model, Forms Analyzer automatically classifies it to determine which of the custom models should be used in its analysis. In this approach, a user doesn't have to know what kind of document it is before submission. That can be helpful when you're using lots of similar forms or when you want to publish a single endpoint for all your form types.
+A composed model is one that consists of multiple custom models. Typical scenarios where composed models help are when you don't know the submitted document type and want to classify and then analyze it. They are also useful if you have multiple variations of a form, each with a trained individual model. When a user submits a form to the composed model, Document Intelligence automatically classifies it to determine which of the custom models should be used in its analysis. In this approach, a user doesn't have to know what kind of document it is before submission. That can be helpful when you're using lots of similar forms or when you want to publish a single endpoint for all your form types.
 
 > [!IMPORTANT]
 > The results from a composed model include the `docType` property, which indicates the custom model that was chosen to analyze each form.

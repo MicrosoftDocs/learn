@@ -1,9 +1,9 @@
-An administrative unit is an Azure AD resource that can be a container for other Azure AD resources. An administrative unit can contain only users and groups. Administrative units restrict permissions in a role to any portion of your organization that you define. You could, for example, use administrative units to delegate the Helpdesk Administrator role to regional support specialists, so they can manage users only in the region that they support.
+An administrative unit is a Microsoft Entra resource that can be a container for other Microsoft Entra resources. An administrative unit can contain only users and groups. Administrative units restrict permissions in a role to any portion of your organization that you define. You could, for example, use administrative units to delegate the Helpdesk Administrator role to regional support specialists, so they can manage users only in the region that they support.
 
 > [!NOTE]
-> To use administrative units, you need an Azure Active Directory Premium license for each administrative unit admin, and Azure Active Directory Free licenses for administrative unit members.
+> To use administrative units, you need a Microsoft Entra ID P1 or P2 license for each administrative unit admin, and Microsoft Entra ID Free licenses for administrative unit members.
 
-:::image type="content" source="../media/azure-administrative-units-48a28fba.png" alt-text="Screenshot showing an example of the Azure Active Directory Administrative units page in the Azure dashboard.":::
+:::image type="content" source="../media/azure-administrative-units-48a28fba.png" alt-text="Screenshot showing an example of the Microsoft Entra Administrative units page in the Azure dashboard.":::
 
 
 ## Available roles

@@ -78,8 +78,8 @@ Related to roles and access management in Microsoft Purview, you can apply the f
 -   Define roles and responsibilities to manage Microsoft Purview in control plane and data plane:
     -   Define roles and tasks required to deploy and manage Microsoft Purview inside an Azure subscription.
     -   Define roles and task needed to perform data management and governance using Microsoft Purview.
--   Assign roles to Azure Active Directory groups instead of assigning roles to individual users.
--   Use Azure [Active Directory Entitlement Management](https://learn.microsoft.com/azure/active-directory/governance/entitlement-management-overview) to map user access to Azure AD groups using Access Packages.
+-   Assign roles to Microsoft Entra groups instead of assigning roles to individual users.
+-   Use Azure [Active Directory Entitlement Management](https://learn.microsoft.com/azure/active-directory/governance/entitlement-management-overview) to map user access to Microsoft Entra groups using Access Packages.
 -   Enforce multi-factor authentication for Microsoft Purview users, especially, for users with privileged roles such as collection admins, data source admins or data curators.
 
 ### Threat protection and preventing data exfiltration
