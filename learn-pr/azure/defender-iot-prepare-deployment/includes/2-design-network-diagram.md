@@ -45,20 +45,18 @@ Each device in your network falls within a layer of the Purdue reference model. 
 |---------|---------|
 |**Level 0**: </br>Cell and area| The wide variety of sensors, actuators, and devices involved in the basic manufacturing process. These devices perform the basic functions of the industrial automation and control system, like driving a motor or key functions like welding and bending.|
 |**Level 1:** </br>Process control| Embedded controllers that communicate with Level 0 devices and control and manipulate the manufacturing process. In discrete manufacturing, those devices are programmable logic controllers (PLCs) or remote telemetry units (RTUs). In process manufacturing, the basic controller is called a distributed control system (DCS).|
-| **Level 2:** </br>Supervisory| Includes the systems and functions connected to the runtime supervision and operation of an area of a production facility. Those systems communicate with the Level 1 controllers, and sometimes with the site or enterprise (Level 4 and 5). The systems and functions can include human-machine interfaces (HMIs), alerting systems, and control room workstations, among other systems.|
-| **Levels 3 and 3.5:** </br>Site-level and industrial perimeter network| Manages the site-wide industrial automation and control functions like production scheduling, site level operations management, file server, and Active Directory. These systems communicate with the production zone and share data with Level 4 and 5 systems and applications. Levels through level 3 are considered critical to site operations. |
+| **Level 2:** </br>Supervisory| Includes the systems and functions connected to the runtime supervision and operation of an area of a production facility. Those systems communicate with the Level 1 controllers, and sometimes with the site or enterprise (Level four and five). The systems and functions can include human-machine interfaces (HMIs), alerting systems, and control room workstations, among other systems.|
+| **Levels 3 and 3.5:** </br>Site-level and industrial perimeter network| Manages the site-wide industrial automation and control functions like production scheduling, site level operations management, file server, and Active Directory. These systems communicate with the production zone and share data with Level four and five systems and applications. Levels through level 3 are considered critical to site operations. |
 | **Levels 4 and 5:** </br>Business and enterprise networks|The site or enterprise network where the centralized IT systems and functions exist. The IT organization manages them directly at these levels.|
 <!--Level 3.5, should that be added?-->
-Generally, sensors are placed between levels two and three or between three and 3.5, if it's an industrial demilitarized zone (DMZ). <!-- is this 0 to 3 or 2, 3 and 3,3.5 as vashaka-->
+Generally, Defender for IoT sensors are placed between levels two and three or between three and 3.5, if it's an industrial demilitarized zone (DMZ). <!-- is this 0 to 3 or 2, 3 and 3,3.5 as vashaka-->
 
 ### Sample network diagram
 
-The following diagram depicts how devices might be divided into the different OT and IT levels:
+The following diagram depicts how your devices might be divided into the different OT and IT levels:
 
 :::image type="content" source="../media/2-purdue-only.png" alt-text="A diagram of the Purdue model." border="false":::
 
 ## Knowledge check
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->

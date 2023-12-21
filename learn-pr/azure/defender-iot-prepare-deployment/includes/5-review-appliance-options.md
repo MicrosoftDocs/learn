@@ -78,12 +78,6 @@ See the following table for system requirements for OT network sensors on virtua
 
 The sensor installation includes an operating system image for the virtual machine.
 
-### Self-configured
-
-If the pre-configured appliances don't meet your system needs, you can use the supplied specifications to get your own hardware.
-
 ## Knowledge check
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->

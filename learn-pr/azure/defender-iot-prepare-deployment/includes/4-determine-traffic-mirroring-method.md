@@ -10,7 +10,7 @@ To prevent rogue devices from connecting undetected to an unmonitored port, conf
 
 ## Traffic mirroring methods
 
-You'll need to determine what method to use based on your network configuration. Defender for IoT supports the following traffic mirroring methods:
+Determine what traffic mirroring methods to use based on your network configuration. Defender for IoT supports the following traffic mirroring methods:
 
 |Method  |Description  |
 |---------|---------|
@@ -43,6 +43,6 @@ In the following example of an ERSPAN architecture, the source router encapsulat
 
 <!-- the packet or the payload?-->
 
-:::image type="content" source="../media/4-erspan-architecture.png" alt-text="Diagram of a ERSPAN network." border="false":::
+:::image type="content" source="../media/4-erspan-architecture.png" alt-text="Diagram of an ERSPAN network." border="false":::
 
 ## Knowledge check

@@ -19,5 +19,3 @@ You'll perform steps involved in preparing an OT site for Microsoft Defender for
 ## What is the main goal?
 
 By the end of this session, you prepare for a deployment of Microsoft Defender for IoT to monitor your OT networks.
-
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->

@@ -9,17 +9,7 @@ metadata:
   author: mjosephym
   ms.author: v-mjosephy
   ms.topic: interactive-tutorial
-###########################################################################
-###
-### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
-### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
-###
-### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
-###
-### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
-### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
-### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
-  ms.prod: TODO
+  ms.prod:
   ms.service: defender-for-iot
 durationInMinutes: 7
 content: |
@@ -43,12 +33,12 @@ quiz:
 
   - content: "Where on the Purdue model would be a likely place to place your Defender for IoT sensor?"
     choices:
-    - content: "Between levels 4 and 5."
+    - content: "Between levels four and five."
       isCorrect: false
-      explanation: "Level 4 and 5 on the Purdue model represents IT resources. You want to monitor OT traffic."
-    - content: "Between levels 2 and 3."
+      explanation: "Level four and five on the Purdue model represents IT resources. You want to monitor OT traffic."
+    - content: "Between levels two and three."
       isCorrect: true 
       explanation: "You're trying to monitor OT traffic so your sensor should be placed where you can see all or most of your OT traffic."
-    - content: "Between levels 1 and 2."
+    - content: "Between levels one and two."
       isCorrect: false
-      explanation: "Defenders for IoT sensors are typically placed where they can collect a greater amount of interesting traffic. Placing the sensor between level 1 and 2 wouldn't allow the sensor to collect necessary interesting traffic."
+      explanation: "Defenders for IoT sensors are typically placed where they can collect a greater amount of interesting traffic. Placing the sensor between level one and two wouldn't allow the sensor to collect necessary interesting traffic."

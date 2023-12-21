@@ -19,11 +19,11 @@ For each device you'd like to monitor, gather the following information:
 | **Vendor**| The device manufacturing vendor |
 | **Device name**| A meaningful name for ongoing use and reference |
 | **Type**| The device type, such as: *Switch*, *Router*, *Firewall*, or *Access Point*. |
-| **Network layer**| The L2 or L3 devices you'll want to monitor. L2 devices are within the IP segment and L3 devices are devices outside of the IP segment and might also support L2. |
+| **Network layer**| The L2 or L3 devices to monitor. L2 devices are within the IP segment and L3 devices are devices outside of the IP segment and might also support L2. |
 | **Crossing VLANs**| The IDs of any VLANs that cross the device. |
 | **Gateway**| The VLANs that the device acts as a default gateway for. |
 | **Network details**| The device's IP address, subnet, D-GW, and DNS host. |
-| **Protocols**| Protocols used on the device. Compare your protocols against those supported by Defender for IoT out-of-the-box. |
+| **Protocols**| Protocols used on the device. Compare your protocols against those protocols supported by Defender for IoT out-of-the-box. |
 | **Supported traffic mirroring**| The traffic mirroring methods supported by the device, like SPAN, RSPAN, ERSPAN, or TAP. </br> Use this information to choose traffic mirroring methods for your OT sensors. |
 | **Managed by partner services?** | Whether a partner service, such as Siemens, Rockwell, or Emerson, manages the device and the management policy, if relevant. |
 | **Serial connections** |The serial communication protocol used, if relevant.|
@@ -79,9 +79,7 @@ For each sensor include:
 
 :::image type="complex" source="../media/3-sample-network-diagram-knowledge-check.png" alt-text="Diagram of a sample network diagram." border="false":::
 
-Figure A shows a sample diagram of a network in a building of three floors, where each floor houses endpoints and switches. The third floor also houses firewalls, core switches, a server, and routers. A blue dotted line depicts traffic traveling outside of the IP segment, traveling throughout floor 1 and 2 and up to a server connected to a core server on floor 3. Interesting traffic is depicted in red from two switches on floor 2 to each of the firewalls on floor 3. In addition, there's a Defender for IoT sensor with the question where should the Defender for IoT sensor be connected and three choices: A- to the switch for interesting traffic between on floor 2, B- to the switch where traffic is traveling outside of the IP segment on level 2, or C- to the switch for traffic is traveling outside of the IP segment on level 1.
+Figure A shows a sample diagram of a network in a building of three floors, where each floor houses both endpoints and switches. The third floor also houses firewalls, core switches, a server, and routers. A blue dotted line depicts traffic traveling outside of the IP segment, traveling throughout floor one and two and up to a server connected to a core server on floor 3. Interesting traffic is depicted in red from two switches on floor two to each of the firewalls on floor three. In addition, there's a Defender for IoT sensor with the question where should the Defender for IoT sensor be connected and three choices: A- to the switch for interesting traffic between on floor two, B- to the switch where traffic is traveling outside of the IP segment on level two, or C- to the switch for traffic is traveling outside of the IP segment on level one.
 :::image-end:::
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
