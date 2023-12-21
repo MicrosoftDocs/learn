@@ -2,7 +2,7 @@ In the last unit, you created an initial network diagram, including a mapping of
 
 ## Identify devices and subnets to monitor
 
-Monitor and mirror traffic to Defender for IoT that's most interesting to you from a security or operational perspective. Examine your OT network diagram with your site engineers, network, and operational teams to define where to find the most relevant traffic for monitoring across network devices and subnets.
+Monitor and mirror traffic to Defender for IoT that's most interesting to you from a security or operational perspective. Examine your OT network diagram with your site engineering, network, and operational teams to define where to find the most relevant traffic for monitoring across network devices and subnets.
 
 <!-- can site engineers and network and operational teams be combined?-->
 ### Devices
