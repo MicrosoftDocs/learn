@@ -11,7 +11,7 @@ A crucial aspect of monitoring is application using health modeling to help you 
 
 Contoso has developed an app for internal use called Contoso Real Estate. This web app allows new hires or existing employees that are relocating to search for and reserve short-term housing to help with their relocation. Contoso's HR department also uses the app to assist with relocations. 
 
-The app is in production and is deployed entirely in Azure. It is built on micro-services using Azure Container Apps and also uses Azure Functions, Azure Database for PostrgreSQL, Azure Blob Storage, and Azure Monitor.
+The app is in production and is deployed entirely in Azure. It’s built on micro-services using Azure Container Apps and also uses Azure Functions, Azure Database for PostrgreSQL, Azure Blob Storage, and Azure Monitor.
 
 ## Observe your workload through telemetry
 
@@ -26,7 +26,7 @@ Prioritize actions based on the severity level, and understand the context given
 
 *Applying the approach and outcomes*
 
-- The development team has decided to expand on the information they log from both the web app and the core micro-services to dig deeper into the issue. For the search scenario, they are making sure to capture the search terms along with other available transaction attributes like time, client ip, and the username associated with the search. This extra data should give them enough information to be able to correlate transactions across tiers.
+- The development team has decided to expand on the information they log from both the web app and the core micro-services to dig deeper into the issue. For the search scenario, they’re making sure to capture the search terms along with other available transaction attributes like time, client ip, and the username associated with the search. This extra data should give them enough information to be able to correlate transactions across tiers.
 - This change allowed the team to confirm that database query timeouts, which were not being properly handled in the latest update of the app, were the root cause of the failures the users were experiencing. After finding the root cause, it was straightforward for the team to implement a fix. 
 - The team is now designing a new approach, using OpenTelemetry, to implement a more comprehensive distributed tracing solution that covers all solution tiers.
 
@@ -58,7 +58,7 @@ Trigger alerts only for incidents that require action and strive for proactive a
 *Contoso's challenge*
 
 - Azure Monitor is used to send alerts to the operations team when something goes wrong. However, the team currently receives too many alerts that are irrelevant, unclear, or redundant. This causes alert  fatigue and is affecting the team’s productivity and causing some important alerts to go unnoticed.
-- There have also been some situations of outages that could’ve been prevented or minimized if an alert was sent anticipating a failure. If the team had better alerting for degradation before outages occur, these situation's might've been avoided. For example, there have been  occasions in which slow-downs in the database queries processing time have resulted in outages. While troubleshooting the outages, the team notices that the query processing performance decreases slowly over time, getting worse and worse until it causes a full-blown outage.
+- There have also been some situations of outages that could have been prevented or minimized if an alert was sent anticipating a failure. If the team had better alerting for degradation before outages occur, these situation's might have been avoided. For example, there have been  occasions in which slow-downs in the database queries processing time have resulted in outages. While troubleshooting the outages, the team notices that the query processing performance decreases slowly over time, getting worse and worse until it causes a full-blown outage.
 
 *Applying the approach and outcomes*
 
