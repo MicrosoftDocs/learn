@@ -31,7 +31,7 @@ From this tab, you can start an investigation to better understand the timeline 
 
 ## Relating security alerts together
 
-Attacks against cloud-based resources often generate large amounts of data, and picking through all the individual alerts can be a cumbersome process to identify the root cause. Defender for Cloud tracks individual security alerts, but it also uses big data and machine-learning technologies to combine different alerts into *incidents*.
+Attacks against cloud-based resources often generate large amounts of data, and picking through all the individual alerts can be a cumbersome process to identify the root cause. Defender for Cloud tracks individual security alerts, but it also uses big data and machine learning technologies to combine different alerts into *incidents*.
 
 An incident is a collection of related individual alerts. Combining related alerts into incidents is an advanced capability of Defender for Cloud and requires enhanced security features for Microsoft Defender for Cloud.
 
