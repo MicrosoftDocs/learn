@@ -16,7 +16,7 @@ In a webapp, you can use Node.js to run the server-side code. That approach enab
 
 Node.js is open-source, free to use, and runs on many operating systems, including Windows, Linux, and macOS.
 
-Node.js runs all its code asynchronously, which means that long-running requests don't block execution for other tasks. For example, if a user requests a webpage that takes a long time to render, other users can request and receive webpages while the original user is waiting.
+Node.js runs all its code asynchronously, which means that long-running requests don't block execution for other tasks. For example, if a user requests a webpage that takes a long time to render, other users can request and receive webpages during that time.
 
 ## What is Express.js?
 
