@@ -78,4 +78,4 @@ A Dockerfile is a set of instructions that create a Docker image that has the ex
 
 ## Why build microservices in .NET?
 
-Starting with .NET Core and continuing to current iterations, .NET is built to be cloud native first. It runs cross-platform, so your Docker image can be based on a flavor of Linux, and your .NET code still runs. Microsoft has already created .NET images for Docker. Also, .NET is extremely fast. The ASP.NET Kestrel web server routinely outperforms other web servers.
+Starting with .NET Core and continuing to current iterations, .NET is built to be cloud-native first. It runs cross-platform, so your Docker image can be based on a flavor of Linux, and your .NET code still runs. Microsoft has already created .NET images for Docker. Also, .NET is extremely fast. The ASP.NET Kestrel web server routinely outperforms other web servers.

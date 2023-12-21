@@ -3,7 +3,7 @@ uid: learn.implement-observability-cloud-native-app-with-opentelemetry.exercise-
 title: Exercise - Extend telemetry in .NET 8
 metadata:
   title: Exercise - Extend telemetry in .NET 8
-  description: "Exercise to add a custom metric to a cloud native application using OpenTelemetry."
+  description: "Exercise to add a custom metric to a cloud-native application using OpenTelemetry."
   ms.date: 12/20/2023
   author: codemillmatt  
   ms.author: masoucou
