@@ -33,7 +33,7 @@ quiz:
     choices:
     - content: 'The performance targets for each Azure resource to be deployed.'
       isCorrect: false
-      explanation: 'Incorrect. At this stage in the process, you have not yet defined which individual resources might be deployed, so keeping a broad perspective is recommended.'
+      explanation: "Incorrect. At this stage in the process, you haven't yet defined which individual resources might be deployed, so keeping a broad perspective is recommended."
     - content: 'The anticipated growth pattern of the workload.'
       isCorrect: true
       explanation: 'Correct. The anticipated growth pattern of the workload is an important factor to include when working on identifying performance targets.'
@@ -42,7 +42,7 @@ quiz:
       explanation: "Incorrect. This is a reliability consideration, not a performance consideration. It's important to keep these two concepts separate."
     - content: 'The operations headcount required to support the workload.'
       isCorrect: false
-      explanation: "Incorrect. While workload costs are an important consideration, this is not a performance consideration. It's important to keep these two concepts separate."
+      explanation: "Incorrect. While workload costs are an important consideration, this isn't a performance consideration. It's important to keep these two concepts separate."
   - content: 'True or false: Performance targets should be contextualized in terms of workload flows, not individual resources.'
     choices:
     - content: 'True.'
