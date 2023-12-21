@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.migrate-modernize-explore-azure-compute
+metadata:
+  title: 1-Day Explore Azure for SAP compute
+  description: "1-Day Explore Azure for SAP compute"
+  ms.date: 12/21/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: module
+title: Migrate-Modernize Explore Azure for SAP compute
+summary: This module explores the design of scalable, performant, and resilient compute components for SAP deployments in Azure.
+abstract: |
+  After completing this module, you will be able to:
+  - Plan for implementing SAP solutions.
+  - Explore Azure virtual machines.
+  - Examine constrained vCPU capable virtual machine sizes.
+  - Examine Azure virtual machine scaling considerations.
+  - Explore data flows
+prerequisites: |
+  Before taking this training, you should complete:
+  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+  - SAP HANA or NetWeaver training.
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.migrate-modernize-explore-azure-compute.introduction
+- learn.wwl.migrate-modernize-explore-azure-compute.plan-implementing-sap-solutions
+- learn.wwl.migrate-modernize-explore-azure-compute.explore-azure-virtual-machines
+- learn.wwl.migrate-modernize-explore-azure-compute.examine-constrained-vcpu-capable-virtual-machine-sizes
+- learn.wwl.migrate-modernize-explore-azure-compute.examine-azure-virtual-machine-scaling-considerations
+- learn.wwl.migrate-modernize-explore-azure-compute.explore-data-flows
+- learn.wwl.migrate-modernize-explore-azure-compute.knowledge-check
+- learn.wwl.migrate-modernize-explore-azure-compute.summary
+badge:
+  uid: learn.wwl.migrate-modernize-explore-azure-compute.badge
