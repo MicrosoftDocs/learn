@@ -3,7 +3,7 @@ uid: learn.azure.publish-express-node-app-service-vscode
 metadata:
   title: Create and publish a web application with Azure App Service and Visual Studio Code
   description: In this module, you learn how to create and publish webapps to Azure App Service from Visual Studio Code.
-  ms.date: 09/01/2022
+  ms.date: 12/21/2023
   author: msangapu-msft
   ms.author: msangapu
   ms.topic: module-standard-task-based
