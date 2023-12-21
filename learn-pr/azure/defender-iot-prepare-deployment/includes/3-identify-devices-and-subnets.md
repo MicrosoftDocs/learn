@@ -10,7 +10,7 @@ Monitor and mirror traffic to Defender for IoT that's most interesting to you fr
 Devices can be divided into:
 
 - **Endpoint devices** - A wide range of devices physically connected to a network, like servers, computers, IoT (internet of things) devices, and more.
-- **Network devices**- Hardware components that serve the infrastructure with networking services, including network switches, firewalls, routers, and access points.
+- **Network devices** - Hardware components that serve the infrastructure with networking services, including network switches, firewalls, routers, and access points.
 
 For each device you'd like to monitor, gather the following information:
 
