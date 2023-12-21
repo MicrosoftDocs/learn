@@ -21,7 +21,7 @@ Many more instrumentation and exporter packages are available to include in your
 
 This module focuses on using OpenTelemetry with the **eShopLite** cloud native app. As this app is built with .NET Core and Blazor WebAssembly, it means that all the code examples are based on taking advantage of dependency injection.
 
-:::image type="content" source="../media/eshoplite-diagram.png" alt-text="A diagram showing the different components of the eShopLite app. The components are the Product service and Store service inside a block representing the app. There's a separate box that contains all the OpenTelemetry packages: OpenTelemetry.Exporter.Prometheus.AspNetCore, OpenTelemetry.Exporter.Zipkin, OpenTelemetry.Extensions.Hosting, OpenTelemetry.Instrumentation.AspNetCore, OpenTelemetry.Instrumentation.EventCounters, OpenTelemetry.Instrumentation.Runtime, OpenTelemetry.Instrumentation.Http, and Azure.Monitor.OpenTelemetry.AspNetCore." border="false":::
+:::image type="content" source="../media/eshoplite-diagram.png" alt-text="A diagram showing the different Open Telemetry components of the app." border="false":::
 
 You could choose to include all of the `OpenTelemetry` packages to both the **Products** and **Store** services in the microservices app. However, in a real-world app you'll have many more services, and adding all these packages to each one involves unnecessary duplication. A better approach is to add a new diagnostics project to your solution that any microservice can reference to be observed.
 
