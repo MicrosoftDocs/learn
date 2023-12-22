@@ -88,6 +88,8 @@ docker login
     docker push [YOUR DOCKER USER NAME]/productservice
     ```
 
+    If you receive an authentication error you can run `docker logout` followed by `docker login` to re-authenticate.
+
 In this exercise, you used Dockerfiles and docker compose to create two Docker images and containers, and pushed those images to Docker Hub.
 
 Now, you're ready to use Kubernetes to manage Contoso's microservices deployment.
