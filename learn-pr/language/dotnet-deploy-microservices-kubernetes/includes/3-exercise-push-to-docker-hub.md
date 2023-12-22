@@ -40,7 +40,7 @@ Follow these steps to create and run Docker containers in the codespace.
 1. Switch to the **TERMINAL** tab and run the following command to go to the code root:
 
    ```cli
-   cd dotnet-docker
+   cd dotnet-kubernetes
    ```
 
 1. Run the following command to build the containers:
