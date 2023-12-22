@@ -21,7 +21,7 @@ We need to install both the **kubectl** tool and the **k3d** Kubernetes implemen
     curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.28/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
     ```
 
-		If you receive an error that the directory already exists, simply run the `curl` command separately.
+    If you receive an error that the directory already exists, simply run the `curl` command separately.
 
 1. Add the Kubernetes repository to your **apt** configuration:
 
