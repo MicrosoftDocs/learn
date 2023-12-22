@@ -6,7 +6,7 @@ metadata:
   description: Install software to run a web server on your Linux VM
   ms.date: 09/24/2018
   author: ju-shim
-  ms.author: ju-shim
+  ms.author: jushiman
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli

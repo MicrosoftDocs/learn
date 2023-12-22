@@ -6,7 +6,7 @@ metadata:
   description: Learn how to use the Azure CLI to query information about your virtual machine
   ms.date: 09/24/2018
   author: ju-shim
-  ms.author: ju-shim
+  ms.author: jushiman
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli
