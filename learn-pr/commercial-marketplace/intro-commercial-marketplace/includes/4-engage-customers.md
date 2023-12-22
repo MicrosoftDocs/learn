@@ -14,9 +14,9 @@ By default, your Microsoft AppSource and Azure Marketplace solutions are availab
 
 Regardless of the offer type you choose to publish, Microsoft sends you leads when potential customers interact with your commercial marketplace listing. When customers consent to share their information after clicking the buttons outlined, leads are routed to your Customer Relationship Management (CRM) system.
 
-![Screenshot of consent to share customer contact information with publisher for CRM.](..\media\10-consent-share-contact.png)
+:::image type="content" source="..\media\10-consent-share-contact.png" alt-text="Screenshot of consent to share customer contact information with publisher for CRM.":::
 
-If you want more information about leads, read the documentation on [customer leads from your marketplace offer](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads).
+If you want more information about leads, see [Customer leads from your marketplace offer](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads).
 
 ## Listing options
 
@@ -28,7 +28,7 @@ A simple listing of your solution is the lowest level of engagement with potenti
 
 Customers are encouraged to request outreach from your team through the **Contact Me** button on your product’s marketplace landing page. When customers agree to provide account contact information, Microsoft sends that customer’s information to your organization for follow-up. This means that your potential customers are limited in their ability to assess your solution online without first committing to an interaction with someone from your company.
 
-![Screenshot of the Contact me call to action button from marketplace.](..\media\11-contact-me-example.png)
+:::image type="content" source="..\media\11-contact-me-example.png" alt-text="Screenshot of the Contact me call to action button from marketplace.":::
 
 ### Free trial
 
@@ -36,15 +36,15 @@ A free trial of your solution provides an opportunity for enhanced engagement wi
 
 When customers select the **Free Trial** button on your product’s landing page, they're routed to your website to initiate the trial for use. As a publisher, you define the website to which customers are routed, and implement the trial within your own web solution.
 
-![Screenshot of the Free trial call to action button from marketplace.](..\media\12-free-trial-example.png)
+:::image type="content" source="..\media\12-free-trial-example.png" alt-text="Screenshot of the Free trial call to action button from marketplace.":::
 
-### Bring Your Own License (BYOL)
+### Bring your own license (BYOL)
 
-The Bring Your Own License (BYOL) functionality in Azure Marketplace allows customers to use investments in existing software subscriptions while deploying your software directly into their Azure account. These offerings are transacted outside of Microsoft’s commerce system, and publishers are responsible for validating the customer’s existing license. When you list your solution using BYOL, you can add a text description, product screenshots, supporting documents, and optional video content to your offer landing page.
+The *bring your own license* (BYOL) functionality in Azure Marketplace allows customers to use investments in existing software subscriptions while deploying your software directly into their Azure account. These offerings are transacted outside of Microsoft’s commerce system, and publishers are responsible for validating the customer’s existing license. When you list your solution using BYOL, you can add a text description, product screenshots, supporting documents, and optional video content to your offer landing page.
 
 When customers select the **Get It Now** button on your product’s landing page and agree to your terms of use and privacy policy, they’re routed to the Azure portal. Once there, customers are prompted to configure the solution before creating the resource and deploying it to their cloud subscription. As part of the configuration, your customers enter an existing license key for your software to activate the solution.
 
-![Screenshot of the Get it now call to action button from marketplace.](..\media\13-get-it-now-example.png)
+:::image type="content" source="..\media\13-get-it-now-example.png" alt-text="Screenshot of the Get it now call to action button from marketplace.":::
 
 > [!NOTE]
 > BYOL listings are only made available to customers in Azure Marketplace.
@@ -55,8 +55,8 @@ A transact offer provides optimal customer engagement and enables the most compl
 
 When customers select the **Get It Now** button on your product’s landing page and agree to your terms of use and privacy policy, they’re routed differently depending on the kind of product they’re purchasing. For all Azure Marketplace transact offers, customers are routed to the Azure portal to complete product configurations. For products purchased through Microsoft AppSource, the experience varies depending on the kind of product and the way that you configure your offer. When a customer selects **Get It Now**, Microsoft also sends you lead information about that customer who starts to deploy your product.
 
-![Screenshot of the Get it now call to action button from marketplace.](..\media\13-get-it-now-example.png)
+:::image type="content" source="..\media\13-get-it-now-example.png" alt-text="Screenshot of the Get it now call to action button from marketplace.":::
 
 Transact offers are billed against an existing Microsoft account or via a credit card transaction. For offers that require the use of Azure infrastructure in a customer’s Azure account, the associated infrastructure/software costs appear on the customer’s consolidated Microsoft invoice. This simplified acquisition process is a significant benefit for customers, as they don’t need to manage a separate invoice from your company.
 
-For more information on listing options, you can read our [documentation on listing options](/azure/marketplace/determine-your-listing-type#choose-a-listing-option).
+For more information on listing options, see [Introduction to listing options](/azure/marketplace/determine-your-listing-type#choose-a-listing-option).

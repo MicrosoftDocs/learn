@@ -16,12 +16,10 @@ The commercial marketplace has two online stores, **Microsoft AppSource** and **
 
 Between the two online stores and the in-product experiences, the commercial marketplace draws millions of active users per month, with each unique user representing a potential customer for your company. Because Microsoft products and services are used widely by organizations around the world, these monthly users represent companies of all sizes in every industry.
 
-:::image type="content" source="../media/1-commercial-market.png" alt-text="Diagram showing comparison of two storefronts commercial marketplace storefronts by audience.":::
+:::image type="content" source="../media/1-commercial-market.png" alt-text="Diagram that compares the two commercial marketplace storefronts by audience.":::
 
 ## Summary
 
 The potential to get your products in front of all these people sounds like the opportunity your executive team asked you to find, but you still need to learn more about the online stores. Your company sells solutions that were built with different customer groups in mind, and you need to understand how those solutions would fit into the commercial marketplace.
 
 To determine which online store is best suited for your solutions, you decide to reference the [commercial marketplace documentation](/azure/marketplace/overview) to learn more about **Microsoft AppSource** and **Azure Marketplace.**
-
-
