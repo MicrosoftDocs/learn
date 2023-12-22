@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: module
-  ms.service: artificial-intelligence
+  ms.service: azure-ai-vision
   ms.subservice: vision
 title: Fundamentals of Computer Vision
 summary: Azure AI Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios.
