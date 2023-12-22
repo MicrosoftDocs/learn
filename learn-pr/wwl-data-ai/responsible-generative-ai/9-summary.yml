@@ -8,7 +8,6 @@ metadata:
   author: graememalcolm
   ms.author: gmalc
   ms.topic: unit
-  ms.prod: learning-azure
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]

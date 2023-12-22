@@ -6,8 +6,8 @@ metadata:
   title: Control loop execution and nest loops
   description: Learn how to control the execution of copy loops, and how to use resource property loops and nested loops in Bicep.
   ms.date: 07/25/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep

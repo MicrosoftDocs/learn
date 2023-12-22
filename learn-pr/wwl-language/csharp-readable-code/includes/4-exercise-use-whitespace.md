@@ -1,3 +1,5 @@
+
+
 Print and web designers understand that putting too much information in a small space overwhelms the viewer. So, they strategically use whitespace, or negative space, to break up information to maximize the viewer's ability to consume the primary message of their work.
 
 Developers can use a similar strategy when writing code in an editor. By using white space to convey meaning, developers can increase the clarity of their code's intent.
@@ -86,7 +88,7 @@ The C# compiler ignores whitespace. To understand how whitespace is ignored, and
     }
     ```
 
-    Notice that this code doesn't include much whitespace. This code is used to illustrate an approach for adding whitespace to your applications. Effective whitespace should make it easier to understand what your code is doing.
+    Notice that this code doesn't include much whitespace. This code will be used to illustrate an approach for adding whitespace to your applications. Effective whitespace should make it easier to understand what your code is doing.
 
     > [!NOTE]
     > The code uses the `Random` class to help develop a simulated dice game, where the total value from three rolls is used to evaluate a "winning" score. The code awards extra points for rolling doubles or triples. You don't need to fully understand this code in order to see the benefit of including whitespace.

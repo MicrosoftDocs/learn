@@ -1,4 +1,3 @@
-
 Azure Storage provides a comprehensive set of security capabilities that together enable developers to build secure applications:
 
 * All data (including metadata) written to Azure Storage is automatically encrypted using Storage Service Encryption (SSE).

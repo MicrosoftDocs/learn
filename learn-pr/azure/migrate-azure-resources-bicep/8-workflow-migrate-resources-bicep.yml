@@ -6,8 +6,8 @@ metadata:
   title: Workflow to migrate your resources to Bicep
   description: Review the phases of the recommended workflow for migrating your Azure resources to Bicep.
   ms.date: 12/01/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep

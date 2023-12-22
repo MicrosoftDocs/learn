@@ -4,21 +4,27 @@ The current version of the app has no resiliency handling. If the `Product` serv
 
 You've been asked to add resilience to the app, so that the `Store` service retries the backend service call if it fails.
 
-In this exercise, you add resiliency to an existing cloud native app and test that your fix has worked.
+In this exercise, you add resiliency to an existing cloud-native app and test that your fix has worked.
 
-## Create a new GitHub Codespace
+## Open the development environment
 
-Let's start by create a new GitHub Codespace that hosts the exercise.
+You can choose to use a GitHub codespace that hosts the exercise, or complete the exercise locally in Visual Studio Code.
 
-You can set up a preconfigured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-resiliency%2Fdevcontainer.json).
+To use a **codespace** create a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-resiliency%2Fdevcontainer.json).
 
-This takes several minutes while GitHub creates and configures the codespace. Once finished, the code files for the exercise are shown. The code used for the rest of this module is in the `/dotnet-resiliency` directory.
+GitHub takes several minutes to create and configure the codespace. When it's finished, you see the code files for the exercise. The code that's used for the remainder of this module is in the **/dotnet-resiliency** directory.
+
+To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your own GitHub account. Then:
+
+1. Make sure Docker is running. In a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
+1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
+1. Select your forked repository. Visual Studio Code creates your development container locally.
 
 ## Update your development environment
 
 The eShopLite app needs to be updated for the Codespace you're running the app in. This allows the images to render in the front end.
 
-1. From the EXPLORER sidebar, select **docker-compose.yml**.
+1. From the **EXPLORER** sidebar, select **dotnet-resiliency/docker-compose.yml**.
 
 1. In the bottom panel, select to the **PORTS** tab, then to the right of the local address for the **Back End (32001)** port, select the **Copy** icon.
 
@@ -90,7 +96,7 @@ You'll now stop the product service to see what happens to the app.
 
     *There is a problem loading our products. Please try again later.*
 
-1. Go back to your codespace, and in the **TERMINAL** select the **docker** terminal a press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app. You should see:
+1. Go back to your codespace, and in the **TERMINAL** select the **docker** terminal and press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app. You should see:
 
     ```bash
     Gracefully stopping... (press Ctrl+C again to force)
@@ -103,7 +109,7 @@ You'll now stop the product service to see what happens to the app.
 
 ## Add resiliency to the app
 
-The first steps to make your app more resilient are to add the `Microsoft.Extensions.Http.Resilience` NuGet package to the project you can then use it in **Program.cs**.
+The first steps to make your app more resilient are to add the `Microsoft.Extensions.Http.Resilience` NuGet package to the project. You can then use it in **Program.cs**.
 
 ### Add the Microsoft.Extensions.Http.Resilience package
 
@@ -150,7 +156,7 @@ The first steps to make your app more resilient are to add the `Microsoft.Extens
 
     The above code adds a standard resilience handler to the HTTPClient. This uses all the default settings for the standard resilience strategy.
 
-    No other code changes are needed to your app, let's run the app and test the resiliency.
+    No other code changes are needed to your app. Let's run the app and test the resiliency.
 
 1. Run the following commands to rebuild the eShop app:
 
@@ -159,13 +165,13 @@ The first steps to make your app more resilient are to add the `Microsoft.Extens
     docker-compose build
     ```
 
-1. Once the build has completed, run the following command to start the app:
+1. When the build has completed, run the following command to start the app:
 
     ```bash
     docker-compose up
     ```
 
-1. Go back to the browser tab running the app and refresh product the page. You should see the list of products.
+1. Go back to the browser tab running the app and refresh the product page. You should see the list of products.
 
 1. Go back to your codespace, and in the **TERMINAL** tab select the second bash terminal.
 
@@ -175,15 +181,15 @@ The first steps to make your app more resilient are to add the `Microsoft.Extens
     docker stop <CONTAINER ID>
     ```
 
-1. Go back to the browser tab running the app and refresh product the page. This time, it should take a little longer until you see the apps error message:
+1. Go back to the browser tab running the app and refresh the product page. This time, it should take a little longer until you see the apps error message:
 
-    *There's a problem loading our products. Try again later.*
+    *There's a problem loading our products. Please try again later.*
 
     Let's check the logs to see if our resilience strategy is working.
 
 1. Go back to your codespace, and in the **TERMINAL** tab select the **docker** terminal.
 
-1. In the terminal, a press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app running.
+1. In the terminal, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app running.
 
 1. In the log messages, scroll up until you find references to **Polly**. 
 
@@ -192,7 +198,7 @@ The first steps to make your app more resilient are to add the `Microsoft.Extens
     eshoplite-frontend-1  |       Execution attempt. Source: 'ProductService-standard//Standard-Retry', Operation Key: '', Result: 'Name or service not known (backend:8080)', Handled: 'True', Attempt: '2', Execution Time: '27.2703'
     ```
 
-    You should see many messages like this, each one is a retry attempt. The above message shows the second attempt, and the time it took to execute.
+    You should see a number of messages like this; each one is a retry attempt. The above message shows the second attempt, and the time it took to execute.
 
 ### Configure a resilience strategy
 
@@ -216,21 +222,21 @@ In this example, you'd like the store service to wait a little longer, to give t
     docker-compose build
     ```
 
-1. Once the build has completed, run the following command to start the app:
+1. When the build has completed, run the following command to start the app:
 
     ```bash
     docker-compose up
     ```
 
-    Refresh the eShop you see that it takes longer to see the error message. If you check the logs though you can see that the retry strategy only retried five times. The last message from Polly is:
+    Refresh the eShop; you'll see that it takes longer to see the error message. If you check the logs though, you can see that the retry strategy only retried five times. The last message from Polly is:
 
     ```bash
     Polly.Timeout.TimeoutRejectedException: The operation didn't complete within the allowed timeout of '00:00:30'.
     ```
     
-    The above message is telling you that the total request timeout has stopped the maximum number of retries from being reached. You can fix this by increasing the total request timeout.
+    The above message tells you that the total request timeout has stopped the maximum number of retries from being reached. You can fix this by increasing the total request timeout.
 
-1. In the terminal, a press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app.
+1. In the terminal, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app.
 
 1. In the code window for Program.cs, change the code at line 13 to:
 
@@ -243,7 +249,7 @@ In this example, you'd like the store service to wait a little longer, to give t
     ```
     The above code changes the total request timeout to 260 seconds, which is now longer than the retry strategy.
 
-    With these changes you should have enough time to run the app, stop the product service, check the terminal logs for retry attempts, refresh the eShop to see the loading message, and finally restart the product service to successfully see the list products of products.
+    With these changes you should have enough time to run the app, stop the product service, check the terminal logs for retry attempts, refresh the eShop to see the loading message, and finally restart the product service to successfully see the list of products.
 
 1. Run the following command to rebuild the eShop app:
 
@@ -251,7 +257,7 @@ In this example, you'd like the store service to wait a little longer, to give t
     docker-compose build
     ```
 
-1. Once the build has completed, run the following command to start the app:
+1. When the build has completed, run the following command to start the app:
 
     ```bash
     docker-compose up
@@ -259,12 +265,12 @@ In this example, you'd like the store service to wait a little longer, to give t
 
 ### Test the new resiliency options
 
-To help test the app in your container use the Docker extension. This allows you to use a GUI to view and control the state of containers.
+To help test the app in your container, use the Docker extension. This allows you to use a GUI to view and control the state of containers.
 
 1. From the left menu select the **Docker** icon.
 1. In the **DOCKER** panel, under **CONTAINERS**, right-click the **productservice** container and select **Stop**.
 1. Go back to the browser tab running the app and refresh the product page. You'll see the **Loading...** message.
-1. Go back to your codespace, and in the **TERMINAL** tab select the **docker** terminal. Note that the resilience strategy is working.
+1. Go back to your codespace, and in the **TERMINAL** tab, select the **docker** terminal. Note that the resilience strategy is working.
 1. In the **DOCKER** panel, under **CONTAINERS**, right-click the **productservice** container and select **Start**.
 1. Go back to the browser tab running the app and refresh the product page. You'll see the app has recovered and lists the products.
 

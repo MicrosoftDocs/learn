@@ -1,21 +1,21 @@
-In this section, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure App Service environments that you'll deploy to.
+In this section, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure App Service environments that you deploy to later.
 
 To accomplish these goals, you:
 
 > [!div class="checklist"]
-> * Add a user to ensure Azure DevOps can connect to your Azure subscription.
-> * Set up an Azure DevOps project for this module.
-> * On Azure Boards, move the work item for this module to the **Doing** column.
-> * Make sure your project is set up locally so that you can push changes to the pipeline.
-> * Create the Azure App Service environments by using the Azure CLI in Azure Cloud Shell.
-> * Create pipeline variables that define the names of your App Service environments.
-> * Create a service connection that enables Azure Pipelines to securely access your Azure subscription.
+> - Add a user to ensure Azure DevOps can connect to your Azure subscription.
+> - Set up an Azure DevOps project for this module.
+> - On Azure Boards, move the work item for this module to the **Doing** column.
+> - Make sure your project is set up locally so that you can push changes to the pipeline.
+> - Create the Azure App Service environments by using the Azure CLI in Azure Cloud Shell.
+> - Create pipeline variables that define the names of your App Service environments.
+> - Create a service connection that enables Azure Pipelines to securely access your Azure subscription.
 
 ## Add a user to Azure DevOps
 
 To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You can get started with Azure for free.
 
-You don't need an Azure subscription to use Azure DevOps, but here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
+You don't need an Azure subscription to use Azure DevOps, but here you use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
 
 If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, select the **Basic** access level.
 
@@ -46,7 +46,7 @@ From the Azure DevOps Demo Generator site, to run the template, follow these ste
     If a window appears, authorize access to your GitHub account.
 
     > [!IMPORTANT]
-    > You need to select this option so the template will connect to your GitHub repository. Select it even if you've already forked the _Space Game_ website project. The template uses your existing fork.
+    > You need to select this option so the template will connect to your GitHub repository. Select it even if you've already forked the *Space Game* website project. The template uses your existing fork.
 
 1. Select **Create Project**.
 
@@ -72,7 +72,7 @@ Recall that the team settled on the following top issues for the current sprint.
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number for each work item might not match what you see here.
 
-Here you move the first item, **Create a multistage pipeline**, to the **Doing** column. Then you assign yourself to the work item. **Create a multistage pipeline** relates to defining each stage of deploying the _Space Game_ website.
+Here you move the first item, **Create a multistage pipeline**, to the **Doing** column. Then you assign yourself to the work item. **Create a multistage pipeline** relates to defining each stage of deploying the *Space Game* website.
 
 To set up the work item:
 
@@ -94,7 +94,7 @@ At the end of this module, you'll move the card to the **Done** column, after yo
 
 ## Create the Azure App Service environments
 
-Here, you create the environments that define the pipeline stages. You create one App Service instance for each stage: _Dev_, _Test_, and _Staging_.
+Here, you create the environments that define the pipeline stages. You create one App Service instance for each stage: *Dev*, *Test*, and *Staging*.
 
 In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you brought up App Service through the Azure portal. Although the portal is a great way to explore what's available on Azure or to do basic tasks, bringing up components such as App Service can be tedious.
 
@@ -115,7 +115,7 @@ In this module, you use the Azure CLI to bring up three App Service instances. Y
 
 ### Select an Azure region
 
-A _region_ is one or more Azure datacenters within a geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an App Service instance, is assigned a region.
+A *region* is one or more Azure datacenters within a geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an App Service instance, is assigned a region.
 
 To make commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region unless you specify a different region.
 
@@ -143,7 +143,7 @@ To make commands easier to run, start by selecting a default region. After you s
 
 ### Create the App Service instances
 
-Here, you create the App Service instances for the three stages you'll deploy to: _Dev_, _Test_, and _Staging_. Here's a brief overview of the process you'll follow:
+Here, you create the App Service instances for the three stages you deploy to: *Dev*, *Test*, and *Staging*. Here's a brief overview of the process you follow:
 
 1. Generate a random number that makes your web app's domain name unique.
 
@@ -156,7 +156,7 @@ Here, you create the App Service instances for the three stages you'll deploy to
 
     An App Service plan defines the CPU, memory, and storage resources for your web app. Here, you use the **B1 Basic** plan. This plan is intended for apps that have low traffic requirements. The **Standard** and **Premium** plans are for production workloads. These plans run on dedicated virtual machine instances.
 
-1. For each of the  _Dev_, _Test_, and _Staging_ environments, create an App Service instance.
+1. For each of the  *Dev*, *Test*, and *Staging* environments, create an App Service instance.
 1. Get the host name for each environment.
 1. Verify that each environment is running, and that the home page is accessible.
 
@@ -171,13 +171,13 @@ To create your App Service instances, follow these steps:
     webappsuffix=$RANDOM
     ```
 
-1. To create a resource group that's named *tailspin-space-game-rg*, run the following `az group create` command.
+1. To create a resource group named *tailspin-space-game-rg*, run the following `az group create` command.
 
     ```azurecli
     az group create --name tailspin-space-game-rg
     ```
 
-1. To create an App Service plan that's named *tailspin-space-game-asp*, run the following `az appservice plan create` command.
+1. To create the App Service plan named *tailspin-space-game-asp*, run the following `az appservice plan create` command.
 
     ```azurecli
     az appservice plan create \
@@ -192,7 +192,7 @@ To create your App Service instances, follow these steps:
     > [!IMPORTANT]
     > If the B1 SKU isn't available in your Azure subscription, [select a different plan](https://azure.microsoft.com/pricing/details/app-service/linux/?azure-portal=true), such as S1 (Standard).
 
-1. To create the three App Service instances, one for each environment (_Dev_, _Test_, and _Staging_), run the following `az webapp create` commands.
+1. To create the three App Service instances, one for each environment (*Dev*, *Test*, and *Staging*), run the following `az webapp create` commands.
 
     ```azurecli
     az webapp create \
@@ -216,9 +216,9 @@ To create your App Service instances, follow these steps:
 
     For learning purposes, here, you apply the same App Service plan, B1 Basic, to each App Service instance. In practice, you would assign a plan that matches your expected workload.
 
-    For example, for the environments that map to the _Dev_ and _Test_ stages, B1 Basic might be appropriate because you want only your team to access the environments.
+    For example, for the environments that map to the *Dev* and *Test* stages, B1 Basic might be appropriate because you want only your team to access the environments.
 
-    For the _Staging_ environment, you would select a plan that matches your production environment. That plan would likely provide greater CPU, memory, and storage resources. Under the plan, you can run performance tests, like load tests, in an environment that resembles your production environment. You can run the tests without affecting live traffic to your site.
+    For the *Staging* environment, you would select a plan that matches your production environment. That plan would likely provide greater CPU, memory, and storage resources. Under the plan, you can run performance tests, like load tests, in an environment that resembles your production environment. You can run the tests without affecting live traffic to your site.
 
 1. To list the host name and state of each App Service instance, run the following `az webapp list` command.
 
@@ -229,7 +229,7 @@ To create your App Service instances, follow these steps:
       --output table
     ```
 
-    Note the host name for each running service. You'll need the host names later when you verify your work. Here's an example:
+    Note the host name for each running service. You need these host names later when you verify your work. Here's an example:
 
     ```output
     HostName                                                 State
@@ -250,9 +250,9 @@ To create your App Service instances, follow these steps:
 
 ## Create pipeline variables in Azure Pipelines
 
-In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you added a variable to your pipeline that stores the name of your web app in App Service. Here you do the same. But this time, you add one variable for each App Service instance that corresponds to a _Dev_, _Test_, or _Staging_ stage in your pipeline.
+In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you added a variable to your pipeline that stores the name of your web app in App Service. Here you do the same. But this time, you add one variable for each App Service instance that corresponds to a *Dev*, *Test*, or *Staging* stage in your pipeline.
 
-You could hard-code these names in your pipeline configuration, but if you define them as variables, your configuration will be more reusable. Additionally, if the names of your App Service instances change, you can update the variables and trigger your pipeline without modifying your configuration.
+You could hard-code these names in your pipeline configuration, but if you define them as variables, your configuration is more reusable. Additionally, if the names of your App Service instances change, you can update the variables and trigger your pipeline without modifying your configuration.
 
 To add the variables:
 
@@ -263,8 +263,8 @@ To add the variables:
 1. Select **+ Variable group**.
 1. Under **Properties**, enter **Release** for the variable group name.
 1. Under **Variables**, select **+ Add**.
-1. For the name of your variable, enter *WebAppNameDev*. For the value, enter the name of the App Service instance that corresponds to your _Dev_ environment, such as *tailspin-space-game-web-dev-1234*.
-1. Repeat the previous two steps twice more to create variables for your _Test_ and _Staging_ environments. Here are examples:
+1. For the name of your variable, enter *WebAppNameDev*. For the value, enter the name of the App Service instance that corresponds to your *Dev* environment, such as *tailspin-space-game-web-dev-1234*.
+1. Repeat the previous two steps twice more to create variables for your *Test* and *Staging* environments. Here are examples:
 
     | Variable name         | Example value                            |
     |-----------------------|------------------------------------------|
@@ -284,7 +284,7 @@ To add the variables:
 
 ## Create the dev and test environments
 
-In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you created an environment for the **dev** environment. Here, you'll repeat the process for both the **dev** and **test** environments. Later, you'll set up the **staging** environment, which includes additional criteria.
+In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you created an environment for the **dev** environment. Here, you repeat the process for both the **dev** and **test** environments. Later, you set up the **staging** environment, which includes more criteria.
 
 To create the **dev** and **test** environments:
 
@@ -326,7 +326,7 @@ Here, you create a service connection that enables Azure Pipelines to access you
 
     During the process, you might be prompted to sign in to your Microsoft account.
 
-1. Ensure you have selected **Grant access permission to all pipelines**.
+1. Ensure that you select **Grant access permission to all pipelines**.
 
 1. Select **Save**.
 

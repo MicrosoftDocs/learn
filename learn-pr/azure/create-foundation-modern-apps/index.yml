@@ -8,7 +8,7 @@ metadata:
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: sql-database
 title: Architect modern applications using Azure SQL Database
 summary: Break down a scenario for an application and build a multi-service solution based on the microservices approach. Learn how to use modern database capabilities to build a foundation for applications.
