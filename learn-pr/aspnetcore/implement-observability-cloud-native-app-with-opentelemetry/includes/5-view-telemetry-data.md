@@ -2,7 +2,7 @@ Your app is collecting telemetry data and you now need a more comprehensive way 
 
 ## Monitoring and viewing telemetry data
 
-A common way to view telemetry data is to use Prometheus and Grafana together. Prometheus is an open-source monitoring system that collects metrics from your cloud native app. Grafana is an open-source visualization tool that you use to create dashboards to view the metrics collected by Prometheus.
+A common way to view telemetry data is to use Prometheus and Grafana together. Prometheus is an open-source monitoring system that collects metrics from your cloud-native app. Grafana is an open-source visualization tool that you use to create dashboards to view the metrics collected by Prometheus.
 
 ### Prometheus
 

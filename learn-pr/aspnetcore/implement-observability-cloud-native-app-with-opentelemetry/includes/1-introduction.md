@@ -7,9 +7,9 @@ In this module, you'll learn how to build observability into your cloud-native a
 ## Learning objectives
 
 - Describe the three pillars of observability and how they help monitor applications.
-- Create an observability cloud native application using OpenTelemetry.
-- Ensure that a cloud native application is generating observable data.
-- Use Azure Application Insights and third-party tools to monitor a cloud native application.
+- Create an observability cloud-native application using OpenTelemetry.
+- Ensure that a cloud-native application is generating observable data.
+- Use Azure Application Insights and third-party tools to monitor a cloud-native application.
 
 ## Prerequisites
 

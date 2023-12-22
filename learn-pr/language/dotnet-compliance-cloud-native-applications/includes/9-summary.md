@@ -1,4 +1,4 @@
-All applications need a way to ensure that they don't leak sensitive information in their logs or telemetry. .NET provides a simple way to classify data and redact it. By applying classifications to all the microservices in your cloud native application, you can ensure that no sensitive data is leaked.
+All applications need a way to ensure that they don't leak sensitive information in their logs or telemetry. .NET provides a simple way to classify data and redact it. By applying classifications to all the microservices in your cloud-native application, you can ensure that no sensitive data is leaked.
 
 ## References
 
