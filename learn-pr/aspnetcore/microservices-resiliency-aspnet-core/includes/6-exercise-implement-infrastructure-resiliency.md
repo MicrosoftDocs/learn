@@ -82,7 +82,7 @@ At the moment you've defined how your app runs in docker. Kubernetes uses a diff
 
     Replace the placeholder [YOUR DOCKER USER NAME] with your actual Docker username.
     
-1. Switch to the **PORTS** tab, point at the **Forwarded Address** for the **Back End (32001)** port, and then click the **Copy Local Address** icon.
+1. Switch to the **PORTS** tab, point at the **Forwarded Address** for the **Back End (32001)** port, and then select the **Copy Local Address** icon.
 
 1. Paste this URL into the `ImagePrefix` environment variable in the **frontend-deploy.yml** file, replacing the text `http://localhost`. Make sure that `/images` appears at the end of the line: 
 
@@ -399,7 +399,7 @@ Linkerd has extensions to give you additional features. You'll install the viz e
    linkerd viz dashboard
    ```
 
-   Go to the **PORTS** tab and you will see a new port that has been forwarded with a process of **linkerd viz dashboard** running. Select the **Open in Browser** to open the dashboard.
+   Go to the **PORTS** tab and you'll see a new port that's been forwarded with a process of **linkerd viz dashboard** running. Select the **Open in Browser** to open the dashboard.
    
 1. In the Linkerd dashboard, select **Namespaces**.
 1. Under HTTP Metrics, select **default**.
