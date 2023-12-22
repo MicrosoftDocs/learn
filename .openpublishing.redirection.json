@@ -31307,17 +31307,17 @@
     "redirect_document_id": false
   },
   {
-    "source_path": "/learn-pr/azure/azure-well-architected-cost-optimization/4-use-monitoring-and-analytics-to-gain-cost-insights.yml",
+    "source_path": "learn-pr/azure/azure-well-architected-cost-optimization/4-use-monitoring-and-analytics-to-gain-cost-insights.yml",
     "redirect_url": "training/modules/azure-well-architected-cost-optimization/",
     "redirect_document_id": false
   },
   {
-    "source_path": "/learn-pr/azure/azure-well-architected-cost-optimization/5-maximize-efficiency-of-cloud-spend.yml",
+    "source_path": "learn-pr/azure/azure-well-architected-cost-optimization/5-maximize-efficiency-of-cloud-spend.yml",
     "redirect_url": "training/modules/azure-well-architected-cost-optimization/",
     "redirect_document_id": false
   },
   {
-    "source_path": "/learn-pr/azure/azure-well-architected-cost-optimization/6-summary.yml",
+    "source_path": "learn-pr/azure/azure-well-architected-cost-optimization/6-summary.yml",
     "redirect_url": "training/modules/azure-well-architected-cost-optimization/",
     "redirect_document_id": false
   }
