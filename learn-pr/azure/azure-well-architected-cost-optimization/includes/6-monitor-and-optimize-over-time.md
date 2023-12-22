@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg"::: Continuously right-size investment as your workload evolves with the ecosystem. |
+| :::image type="icon" source="../media/goal.svg"::: Continuously right-size investment as your workload evolves with the ecosystem. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
 What was important yesterday might not be important today. As you learn through evaluation of production workloads, expect changes in architecture, business requirements, processes, and even team structure. Your software development lifecycle (SDLC) practices might need to evolve. External factors might also change, like the cloud platform, its resources, and your agreements.
@@ -24,8 +24,8 @@ You might also be able to save some costs by evaluating the use of your support 
 
 *Applying the approach and outcomes*
 
-- The team decides that before asking for more money, they will evaluate their current Azure and support costs to look for potential savings opportunities. They look into the per-resource, per-resource group, and per-tag breakdowns of cost in the existing cost tracking system and notice some unexpected spend.
-- The team discovers that there are VMs running in their environment that were used for a deprecated build system and are no longer needed, there is a significant amount of old data in Azure Storage that can be moved to a less expensive tier, and they are paying for a support contract with their cloud provider that includes consultative hours that they are not using.
+- The team decides that before asking for more money, they'll evaluate their current Azure and support costs to look for potential savings opportunities. They look into the per-resource, per-resource group, and per-tag breakdowns of cost in the existing cost tracking system and notice some unexpected spend.
+- The team discovers that there are VMs running in their environment that were used for a deprecated build system and are no longer needed, there's a significant amount of old data in Azure Storage that can be moved to a less expensive tier, and they're paying for a support contract with their cloud provider that includes consultative hours that they are'nt using.
 - The team optimizes their Azure costs by deleting the unused VMs and moving the old data to Archive storage. They begin working more closely with their cloud provider to make good use of their consulting services.
 - The team adds a recurring task to their backlog to perform evaluations of their workload costs going forward.
 
@@ -51,16 +51,16 @@ Regular reviews of metrics, performance data, billing reports, and feature usage
 
 You can save money by understanding that not all environments need to simulate production. Nonproduction environments can have different features, SKUs, instance counts, and even logging.
 
-You also can save costs by creating pre-production environments on-demand and removing them when you no longer need them.
+You also can save costs by creating preproduction environments on-demand and removing them when you no longer need them.
 
 *Contoso's challenge*
 
-- The workload team spends more on pre-production environments than it does on production environments. While this may be important for some scenarios, it seems excessive for this workload.
-- The pre-production environments have been built to match the production environment very closely. The workload team appreciates having a very close approximation of the production environment in the lower environments as it provides them a high degree of confidence that behaviors in production will match the lower environments.
+- The workload team spends more on preproduction environments than it does on production environments. While this may be important for some scenarios, it seems excessive for this workload.
+- The preproduction environments have been built to match the production environment very closely. The workload team appreciates having a very close approximation of the production environment in the lower environments as it provides them a high degree of confidence that behaviors in production will match the lower environments.
 
 *Applying the approach and outcomes*
 
 - After careful evaluation, the team decides that they can accept the tradeoff of a bit of additional risk to realize cost savings that come with having some dissimilarity between environments.
-- The team decides to co-locate a few of the test environments into the same infrastructure and to shutdown unused environments overnight.
+- The team decides to colocate a few of the test environments into the same infrastructure and to shut down unused environments overnight.
 - The team also finds opportunities to shift left and perform inner-loop development and testing on local developer workstations.
-- By finding ways to make small compromises in their pre-production environments and development practices, they have freed up budget that they will put to good use in automation efforts.
+- By finding ways to make small compromises in their preproduction environments and development practices, they have freed up budget that they'll put to good use in automation efforts.
