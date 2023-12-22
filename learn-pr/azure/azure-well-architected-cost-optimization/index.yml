@@ -39,6 +39,6 @@ units:
   - learn.azure-well-architected-cost-optimization.design-for-usage-optimization
   - learn.azure-well-architected-cost-optimization.design-for-rate-optimization
   - learn.azure-well-architected-cost-optimization.monitor-and-optimize-over-time
-  - learn.azure-well-architected-cost-optimization.7-summary
+  - learn.azure-well-architected-cost-optimization.6-summary
 badge:
   uid: learn.azure-well-architected-cost-optimization.badge
