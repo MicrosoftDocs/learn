@@ -9,7 +9,7 @@ Imagine you're a database administrator responsible for managing Azure SQL Datab
 By the end of this module, participants are able to:
 
  -  Plan and implement security measures for Azure SQL Database and Azure SQL Managed Instance to protect sensitive data.
- -  Enable database authentication using Microsoft Enterprise Identity (Entra ID) for secure access control.
+ -  Enable database authentication using Microsoft Entra ID for secure access control.
  -  Implement database auditing to track and monitor database activities for compliance and security.
  -  Identify use cases for the Microsoft Purview governance portal and leverage its capabilities for data governance.
  -  Implement data classification of sensitive information using the Microsoft Purview governance portal to ensure data protection and compliance.

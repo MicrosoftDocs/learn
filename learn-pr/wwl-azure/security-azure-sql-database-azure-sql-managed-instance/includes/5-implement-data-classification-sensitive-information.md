@@ -36,7 +36,7 @@ Scanning and Ingestion features in Microsoft Purview connect your Microsoft Purv
      -  Data source scans - scanned metadata is added to the Microsoft Purview Data Map.
      -  Lineage connections - transformation resources add metadata about their sources, outputs, and activities to the Microsoft Purview Data Map.
 
-:::image type="content" source="../media/purview-sources-map-view-page-54cddca9.png" alt-text="Screenshot showing an example of the Microsoft Purview Data Map.":::
+:::image type="content" source="../media/new-scans-and-injestion-c87444bf.png" alt-text="Screenshot showing an example of scans and ingestion in Microsoft Purview.":::
 
 
 ### Scanning
@@ -55,7 +55,7 @@ A scan rule set is a container for grouping a set of scan rules together so that
 
 System scan rule sets are Microsoft-defined scan rule sets that are automatically created for each Microsoft Purview catalog. Each system scan rule set is associated with a specific data source type. When you create a scan, you can associate it with a system scan rule set. Every time Microsoft makes an update to these system rule sets, you can update them in your catalog, and apply the update to all the associated scans.
 
-:::image type="content" source="../media/scan-rule-sets-b8db0b71.png" alt-text="Screenshot showing an example of the Governance Portal scan rule sets page.":::
+:::image type="content" source="../media/new-system-scan-rules-8198687b.png" alt-text="Screenshot showing an example of the Governance Portal scan rule sets page.":::
 
 
 ### Classify - Data classification in the Microsoft Purview governance portal<br>
@@ -74,7 +74,7 @@ Classification is the process of organizing data into *logical categories* that 
  -  Organize and understand the variety of data classes that are important in your organization and where they're stored.
  -  Understand the risks associated with your most important data assets and then take appropriate measures to mitigate them.
 
-:::image type="content" source="../media/customer-table-azure-sql-database-2f1a34f1.png" alt-text="Screenshot showing an example of the customer Azure SQL Table.":::
+:::image type="content" source="../media/new-use-of-classification-5e031f48.png" alt-text="Screenshot showing an example of the customer Azure SQL Table.":::
 
 
 ### Types of classification<br>
@@ -114,7 +114,7 @@ Microsoft Purview allows you to apply sensitivity labels to assets, enabling you
 
 ### How to apply labels to assets in the Microsoft Purview Data Map
 
-:::image type="content" source="../media/apply-labels-assets-microsoft-purview-data-map-c58b3617.png" alt-text="Diagram showing how to apply labels to assets in the Microsoft Purview Data Map.":::
+:::image type="content" source="../media/new-microsoft-purview-data-map-1078081d.png" alt-text="Diagram showing how to apply labels to assets in the Microsoft Purview Data Map.":::
 
 
 Being able to apply labels to your asset in the data map requires you to perform the following steps:

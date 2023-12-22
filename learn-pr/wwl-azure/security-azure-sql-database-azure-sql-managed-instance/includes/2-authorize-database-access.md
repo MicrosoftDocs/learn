@@ -24,10 +24,10 @@ When you first deploy Azure SQL, you can specify a login name and a password for
 
 To identify the **Server admin** account for a logical server, open the Azure portal, and navigate to the **Properties** tab of your server or managed instance.
 
-:::image type="content" source="../media/server-admin-1-f3339654.png" alt-text="Screenshot showing the SQL server properties page.":::
+:::image type="content" source="../media/new-sql-administrators-124cbeec.png" alt-text="Screenshot showing the SQL server properties page.":::
 
 
-:::image type="content" source="../media/server-admin-2-b4fa187f.png" alt-text="Screenshot showing the SQL managed instances properties page.":::
+:::image type="content" source="../media/new-sql-administrators-2-1102892e.png" alt-text="Screenshot showing the SQL managed instances properties page.":::
 
 
 The name of the **Server admin** account can't be changed after it has been created. To reset the password for the server admin, go to the Azure portal, click **SQL Servers**, select the server from the list, and then click **Reset Password**. To reset the password for the SQL Managed Instance, go to the **Azure portal**, click the instance, and click **Reset password**. You can also use PowerShell or the Azure CLI.
