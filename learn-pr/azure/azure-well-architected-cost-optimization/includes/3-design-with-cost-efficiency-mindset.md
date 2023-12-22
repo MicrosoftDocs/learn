@@ -7,7 +7,7 @@ Given a set of requirements, optimize and make tradeoff decisions, in relation t
 
 **Example scenario**
 
-Contoso Manufacturing (CM). CM runs a custom-built warehouse management system (WMS) to handle its four warehouses across South America and they have decided that it is time to update the solution and move it to the cloud. They are considering a lift-and-shift move of the current solution or a greenfield build with modern cloud tools. CM's senior leadership wants to control costs and has asked the workload team's leaders how they will approach the migration with a goal of maintaining cost efficiency.
+Contoso Manufacturing (CM) runs a custom-built warehouse management system (WMS) to handle its four warehouses across South America and they have decided that it's time to update the solution and move it to the cloud. They're considering a lift-and-shift move of the current solution or a green field build with modern cloud tools. CM's senior leadership wants to control costs and has asked the workload team's leaders how they'll approach the migration with a goal of maintaining cost efficiency.
 
 The WMS solution is a .NET application running on IIS and uses SQL Server for its databases.
 
@@ -20,14 +20,14 @@ Implementing a balanced approach that takes ROI into account prevents over-engin
 *Contoso's challenge*
 
 - The workload engineering team is excited to get this workload into the cloud, joining other CM teams who have already been doing cloud-native development.
-- They are aware of the technical debt in the application and expect to address it by rewriting a significant amount of application code and moving to to new cloud-native solutions for many components.
+- They're aware of the technical debt in the application and expect to address it by rewriting a significant amount of application code and moving to new cloud-native solutions for many components.
 - The engineering team hopes to take this opportunity to completely redesign the system into microservices and host it on AKS, a new but exciting technology for the team.
 
 *Applying the approach and outcomes*
 
-- While the workload team has a clear desire to do large-scale refactoring as part of the cloud migration, they realize that the workload needs to maintain it’s ROI. Maintaining the workload's ROI will likely point the team toward using solutions that don't require extensive new engineering team training, and they will be unable to make large rewrites to the workload as part of the migration.
-- The workload team takes a pragmatic approach to the design of the system, making sure it stays cost effective, and works within expected parameters, and is not over-engineered. To ensure that the ROI is maintained and the migration is performed efficiently, they decided the best approach is to go with a like-for-like solution in the cloud, such as Azure App Service.
-- During the migration, they will selectively address some technical debt that will enable them to further evolve the platform once it is on Azure, and will consider the ROI as part of the selection process.
+- While the workload team has a clear desire to do large-scale refactoring as part of the cloud migration, they realize that the workload needs to maintain it’s ROI. Maintaining the workload's ROI will likely point the team toward using solutions that don't require extensive new engineering team training, and they'll be unable to make large rewrites to the workload as part of the migration.
+- The workload team takes a pragmatic approach to the design of the system, making sure it stays cost effective, and works within expected parameters, and isn't over-engineered. To ensure that the ROI is maintained and the migration is performed efficiently, they decided the best approach is to go with a like-for-like solution in the cloud, such as Azure App Service.
+- During the migration, they'll selectively address some technical debt that will enable them to further evolve the platform once it is on Azure, and will consider the ROI as part of the selection process.
 
 ## Refine the design
 
@@ -44,7 +44,7 @@ You'll be able to explore cheaper options that might enable resource flexibility
 *Applying the approach and outcomes*
 
 - After evaluating several cloud-native options, the team decides that moving the web components to Azure App Service would provide Windows IIS application compatibility without significant changes and wouldn't require significant training.
-- The team decides to continue using GitHub Actions with self-hosted runners, but they will migrate to a virtual machine scale set with the ability to scale to zero nodes when they aren't being used.
+- The team decides to continue using GitHub Actions with self-hosted runners, but they'll migrate to a virtual machine scale set with the ability to scale to zero nodes when they aren't being used.
 
 ## Design your architecture to support cost guardrails
 
@@ -54,13 +54,13 @@ Enforcement via governance policies or built-in application design patterns can 
 
 *Contoso's challenge*
 
-- The existing system has no cost guardrails, but rarely changes so there has been little motivation to build such guardrails.
+- The existing system has no cost guardrails but rarely changes, so there's been little motivation to build such guardrails.
 - The owners of the HCI environment have set a resource limit that applies to this workload, effectively stopping the workload from consuming excess compute and storage resources.
 - The team is concerned that moving to the cloud will pose the risk of incurring unexpected costs, and are unsure of how to minimize that risk.
 
 *Applying the approach and outcomes*
 
 - The team educates themselves about Azure cost management solutions.
-- The team plans to setup scale limits for the Azure App Service plans.
-- The team plans to setup a Deny policy for certain higher priced virtual machine SKUs to disallow those SKUs from being deployed.
-- The team plans to implement automation to help control storage costs. Certain data types will automatically move from hot storage to cold or archive storage based on criteria like date of last access. This type of automation is not possible in the HCI environment.
+- The team plans to set up scale limits for the Azure App Service plans.
+- The team plans to set up a Deny policy for certain higher priced virtual machine SKUs to disallow those SKUs from being deployed.
+- The team plans to implement automation to help control storage costs. Certain data types will automatically move from hot storage to cold or archive storage based on criteria like date of last access. This type of automation isn't possible in the HCI environment.
