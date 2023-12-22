@@ -4,7 +4,7 @@ The current version of the app has no resiliency handling. If the `Product` serv
 
 You've been asked to add resilience to the app, so that the `Store` service retries the backend service call if it fails.
 
-In this exercise, you add resiliency to an existing cloud native app and test that your fix has worked.
+In this exercise, you add resiliency to an existing cloud-native app and test that your fix has worked.
 
 ## Open the development environment
 
