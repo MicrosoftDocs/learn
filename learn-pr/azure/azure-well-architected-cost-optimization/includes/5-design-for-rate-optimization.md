@@ -7,7 +7,7 @@ Take advantage of opportunities to optimize the utility and costs of your existi
 
 Contoso's business intelligence (BI) team hosts a suite of GraphQL APIs for various business units to access data stores across the organization without granting direct database access. They’ve been building these up over the years and found that versioning was important, so they have been exposing their APIs now over versioned endpoints on a single API Management gateway, using consumption billing.
 
-Behind the API Management instances are three AKS clusters that host the APIs that are exposed. One running a Windows node pool for APIs written in .NET 4.5, one Linux cluster for the APIs written in Java Spring, and one Linux they inherited from a prior team running dotnet core APIs. The clusters are now all owned by the BI team and are only used for these APIs. While managing three clusters isn’t ideal, they have been working as intended so have been left alone.
+Behind the API Management instances are three AKS clusters that host the APIs that are exposed. One running a Windows node pool for APIs written in .NET 4.5, one Linux cluster for the APIs written in Java Spring, and one Linux they inherited from a prior team running dotnet core APIs. The clusters are now all owned by the BI team and are only used for these APIs. While managing three clusters isn’t ideal, they've been working as intended so have been left alone.
 
 As a cost center in the business, the BI team is looking for ways to optimize its rates to drive down operating costs.
 
@@ -39,14 +39,14 @@ By keeping your licensing team aware of the current and predicted investment by 
 
 *Contoso's challenge*
 
-- Now that the team has consolidated onto one cluster, removing some of the excess compute and operational burden they previously absorbed, they are interested in finding additional measures to lower the cost of the cluster.
+- Now that the team has consolidated onto one cluster, removing some of the excess compute and operational burden they previously absorbed, they're interested in finding additional measures to lower the cost of the cluster.
 - Because the BI team is happy with the AKS platform, they plan on continuing to use it for the foreseeable future, and likely will even grow its usage.
 
 *Applying the approach and outcomes*
 
 - Because AKS is built on top of Virtual Machine Scale Sets, the team looks into Azure Reservations. They know the expected SKUs and scale units they need for the user nodes.
 - They purchase a three-year reservation that covers the system node pool and the minimum instance count of nodes per user node pool.
-- With this purchase, the team knows they are getting the best deal on their compute needs while allowing the workload to grow over time.
+- With this purchase, the team knows they're getting the best deal on their compute needs while allowing the workload to grow over time.
 
 ## Use fixed-price billing when practical
 
@@ -56,10 +56,10 @@ When utilization is high and predictable, the fixed-price model usually costs le
 
 *Contoso's challenge*
 
-- The API Management instances are all configured for consumption-based billing currently. After evaluating the APIs' usage patterns, they understand that the APIs are used globally and sometimes quite heavily. The team decides to analyze the cost differences between the current billing model and a fixed-price model.
+- The API Management instances are all deployed as Consumption tier SKUs currently. After evaluating the APIs' usage patterns, they understand that the APIs are used globally and sometimes quite heavily. The team decides to analyze the cost differences between the current billing model and a fixed-price model.
 
 *Applying the approach and outcomes*
 
-- After performing the cost analysis, the team finds that migrating from Consumption to Standard tier will be a bit less expensive overall given the current usage patterns. As the services grow over the next year, the cost differences will likely become more pronounced. Even though the fixed-pricing model doesn't reflect the elasticity characteristics of the requests, sometimes pre-purchased billing models are the right choice.
+- After performing the cost analysis, the team finds that migrating from Consumption to Standard tier will be a bit less expensive overall given the current usage patterns. As the services grow over the next year, the cost differences will likely become more pronounced. Even though the fixed-pricing model doesn't reflect the elasticity characteristics of the requests, sometimes prepurchased billing models are the right choice.
 - As an added bonus, using the Standard tier allows the use of a Private Endpoint for inbound connections, which the team has been eager to implement for the workload.
-- In this case switching SKUs made sense for both utilization purposes and for the added benefit of the additional network segmentation that's possible with a Private Endpoint implementation.
+- In this case, switching SKUs made sense for both utilization purposes and for the added benefit of the additional network segmentation that's possible with a Private Endpoint implementation.
