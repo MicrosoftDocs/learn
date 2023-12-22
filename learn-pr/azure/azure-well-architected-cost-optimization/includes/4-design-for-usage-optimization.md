@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg"::: Maximize the use of resources and operations. Apply them to the negotiated functional and nonfunctional requirements of the solution. |
+| :::image type="icon" source="../media/goal.svg"::: Maximize the use of resources and operations. Apply them to the negotiated functional and nonfunctional requirements of the solution. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
 Services and offerings provide various capabilities and pricing tiers. After you purchase a set of features, avoid underutilizing them. Find ways to maximize your investment in the tier. Likewise, continuously evaluate billing models to find those that better align to your usage, based on current production workloads.

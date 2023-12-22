@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg"::: Build a team culture that has awareness of budget, expenses, reporting, and cost tracking. |
+| :::image type="icon" source="../media/goal.svg"::: Build a team culture that has awareness of budget, expenses, reporting, and cost tracking. |
 | :----------------------------------------------------------------------------------------------------------------------------------------- |
 
 Cost optimization is conducted at various levels of the organization. It's important to understand how your workload is aligned with organizational goals and FinOps practices. A view into the business units, resource organization, and centralized audit policies allows you to apply a standardized financial system and approach to your workload.

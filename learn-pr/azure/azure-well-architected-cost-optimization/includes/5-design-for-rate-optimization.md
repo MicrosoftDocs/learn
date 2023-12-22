@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg"::: Increase efficiency without redesigning, renegotiating, or sacrificing functional or nonfunctional requirements. |
+| :::image type="icon" source="../media/goal.svg"::: Increase efficiency without redesigning, renegotiating, or sacrificing functional or nonfunctional requirements. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
 Take advantage of opportunities to optimize the utility and costs of your existing resources and operations. If you don't, you unnecessarily spend money without any added ROI.

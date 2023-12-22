@@ -1,4 +1,4 @@
-| :::image type="icon" source="media/goal.svg"::: Spend only on what you need to achieve the highest return on your investments. |
+| :::image type="icon" source="../media/goal.svg"::: Spend only on what you need to achieve the highest return on your investments. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
 Every architectural decision has direct and indirect financial implications. Understand the costs associated with build versus buy options, technology choices, the billing model and licensing, training, operations, and so on.
