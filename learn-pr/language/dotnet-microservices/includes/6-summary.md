@@ -16,7 +16,7 @@ Finally, .NET was built to be cloud-native first. It runs cross-platform, so you
 
 ## Cleanup Codespace
 
-You can delete the codespace on [https://github.com/codespaces](GitHub) under **By repository** where you will see **MicrosoftDocs/mslearn-dotnet-cloudnative**.
+You can delete the codespace on [https://github.com/codespaces](GitHub) under **By repository** where you see **MicrosoftDocs/mslearn-dotnet-cloudnative**.
 
 ## Related content
 

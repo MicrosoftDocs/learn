@@ -2,4 +2,4 @@ In most cloud-native applications, it's critical to generate telemetry data that
 
 ## Cleanup Codespace
 
-You can delete the codespace on [https://github.com/codespaces](GitHub) under **By repository** where you will see **MicrosoftDocs/mslearn-dotnet-cloudnative**.
+You can delete the codespace on [https://github.com/codespaces](GitHub) under **By repository** where you see **MicrosoftDocs/mslearn-dotnet-cloudnative**.
