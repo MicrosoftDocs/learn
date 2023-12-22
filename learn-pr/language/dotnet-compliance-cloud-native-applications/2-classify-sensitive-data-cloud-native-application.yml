@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.implement-compliance-cloud-native-applications.classify-sensitive-data-cloud-native-application
-title: Classify sensitive data in a cloud native application
+title: Classify sensitive data in a cloud-native application
 metadata:
-  title: Classify sensitive data in a cloud native application
+  title: Classify sensitive data in a cloud-native application
     learning-content
-  description: The first step to protecting sensitive data is to identify it. In this unit, you'll learn how to classify sensitive data in a cloud native application.
+  description: The first step to protecting sensitive data is to identify it. In this unit, you'll learn how to classify sensitive data in a cloud-native application.
   ms.date: 12/13/2023
   author: codemillmatt
   ms.author: masoucou

@@ -2,7 +2,7 @@ Before you dive into the code, let's take a step back and talk about observabili
 
 ## Why implement observability?
 
-There are several reasons why observability is a crucial aspect of developing and improving cloud native applications:
+There are several reasons why observability is a crucial aspect of developing and improving cloud-native applications:
 
 - **Understanding system behavior**: Observability provides insights into how your application is performing and where bottlenecks or errors occur.
 
@@ -12,7 +12,7 @@ There are several reasons why observability is a crucial aspect of developing an
 
 - **Proactive issue detection**: With the right observability tools in place, you can often detect issues before your users even see them.
 
-Implementing observability in cloud native applications isn't just a best practice, it's a necessity for maintaining, optimizing, and continuously improving your applications. It empowers developers to deliver reliable, high-performing applications and provides the insights needed to drive informed decision-making.
+Implementing observability in cloud-native applications isn't just a best practice, it's a necessity for maintaining, optimizing, and continuously improving your applications. It empowers developers to deliver reliable, high-performing applications and provides the insights needed to drive informed decision-making.
 
 ### The three pillars of observability
 
@@ -22,13 +22,13 @@ There are three main pillars of observability:
 
 - **Metrics**: Metrics refer to numerical measurements and counters that provide insight into a system's performance and health. Examples include request rates, response times, CPU/memory usage, error rates, and so on. In your app, you might have specific measurements that you need to track.
 
-- **Distributed tracing**: This involves tracing a request as it propagates through all the microservices in your cloud native app. Each service logs tracing data like request IDs that allow you to correlate events across services. Distributed tracing is also useful for debugging performance issues and errors in complex systems.
+- **Distributed tracing**: This involves tracing a request as it propagates through all the microservices in your cloud-native app. Each service logs tracing data like request IDs that allow you to correlate events across services. Distributed tracing is also useful for debugging performance issues and errors in complex systems.
 
 Together, these three pillars provide comprehensive observability into a system.
 
 ### Sources of data for telemetry
 
-In your company's cloud native app, there are several sources of telemetry you could choose to collect:
+In your company's cloud-native app, there are several sources of telemetry you could choose to collect:
 
 1. **Application logs**: Applications generate logs that provide detailed information about its operation and errors if they occur. Logging is a rich source of telemetry data.
 
@@ -36,7 +36,7 @@ In your company's cloud native app, there are several sources of telemetry you c
 
 3. **HTTP requests and responses**: The HTTP requests and responses between your microservices provide rich and valuable telemetry data. This includes the request and response headers, body content, status codes, and timing information.
 
-4. **Client-side performance data**: In cloud native apps with a front end, you can collect the client-side performance data. This might include page hits, load times, and UI interaction times.
+4. **Client-side performance data**: In cloud-native apps with a front end, you can collect the client-side performance data. This might include page hits, load times, and UI interaction times.
 
 5. **Infrastructure metrics**: If your application is hosted in a cloud environment, you can collect infrastructure metrics like CPU usage, memory usage, network traffic, and disk I/O operations.
 
@@ -44,7 +44,7 @@ By collecting and analyzing this telemetry data, you can gain valuable insights 
 
 ### Implementing observability
 
-To add observability to your cloud native application, you'll take these steps:
+To add observability to your cloud-native application, you'll take these steps:
 
 - Add logging.
 - Enable metrics, and define custom metrics to capture.
