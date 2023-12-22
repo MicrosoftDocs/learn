@@ -22,7 +22,7 @@ To use the Azure portal to create a storage account with infrastructure encrypti
 
 4. Select **Review + create** to finish creating the storage account.
 
-:::image type="content" source="../media/create-account-infrastructure-encryption-portal-7bb55483.png" alt-text="Screenshot showing how to create an account with infrastructure encryption enabled.":::
+:::image type="content" source="../media/new-create-account-infrastructure-encryption-portal-c99ac582.png" alt-text="Screenshot showing how to create an account with infrastructure encryption enabled.":::
 
 
 To verify that infrastructure encryption is enabled for a storage account with the Azure portal, follow these steps:
@@ -31,7 +31,7 @@ To verify that infrastructure encryption is enabled for a storage account with t
 
 2. Under **Settings**, choose **Encryption**.
 
-:::image type="content" source="../media/verify-infrastructure-encryption-portal-2318f309.png" alt-text="Screenshot showing Encryption settings.":::
+:::image type="content" source="../media/new-verify-infrastructure-encryption-portal-d8c7a031.png" alt-text="Screenshot showing Encryption settings.":::
 
 
 Azure Policy provides a built-in policy to require that infrastructure encryption be enabled for a storage account.

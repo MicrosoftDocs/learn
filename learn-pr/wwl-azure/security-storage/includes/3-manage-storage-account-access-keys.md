@@ -22,7 +22,7 @@ To view and copy your storage account access keys or connection string from the 
 
 5. Alternately, you can copy the entire connection string. Under key1, find the Connection string value. Select the Copy button to copy the connection string.<br>
 
-:::image type="content" source="../media/portal-connection-string-2199e92e.png" alt-text="Screenshot showing an example of the portal connection string.":::
+:::image type="content" source="../media/new-portal-connection-string-ff26cc85.png" alt-text="Screenshot showing an example of the portal connection string.":::
 
 
 You can use either of the two keys to access Azure Storage, but in general it's a good practice to use the first key, and reserve the use of the second key for when you are rotating keys.
@@ -71,7 +71,7 @@ To create a key expiration policy in the Azure portal:
 
 5. Select **Save**.
 
-:::image type="content" source="../media/portal-key-expiration-policy-09683017.png" alt-text="Screenshot showing an example of the key expiration policy portal.":::
+:::image type="content" source="../media/new-portal-key-expiration-policy-8041609c.png" alt-text="Screenshot showing the policy compliance portal.":::
 
 
 ## Check for key expiration policy violations
@@ -92,13 +92,13 @@ Follow these steps to assign the built-in policy to the appropriate scope in the
 
 5. For the **Policy definition** field, select the **More** button, and enter *storage account keys* in the **Search** field. Select the policy definition named **Storage account keys should not be expired**.
 
-:::image type="content" source="../media/policy-definition-select-portal-5ce55435.png" alt-text="Screenshot showing the available definitions page.":::
+:::image type="content" source="../media/new-policy-definition-select-portal-9445874b.png" alt-text="Screenshot showing the available definitions page.":::
 
 
 6. Select **Review + create** to assign the policy definition to the specified scope.
 
-:::image type="content" source="../media/policy-assignment-create-48bcd9ec.png" alt-text="Screenshot showing the assign policy specified scope page.":::
-<br>
+:::image type="content" source="../media/new-policy-assignment-create-1649194f.png" alt-text="Screenshot showing the assign policy specified scope page.":::
+
 
 ## Monitor compliance with the key expiration policy
 
@@ -110,7 +110,7 @@ To monitor your storage accounts for compliance with the key expiration policy, 
 
 3. On the **Policy assignment** page for the built-in policy, select **View compliance**. Any storage accounts in the specified subscription and resource group that do not meet the policy requirements appear in the compliance report.
 
-:::image type="content" source="../media/policy-compliance-report-portal-ddf2f791.png" alt-text="Screenshot showing the Azure policy dashboard.":::
+:::image type="content" source="../media/new-policy-compliance-report-portal-03ae9880.png" alt-text="Screenshot showing storage accounts in the specified subscription and resource group that do not meet the policy requirements.":::
 
 
 To bring a storage account into compliance, rotate the account access keys.
