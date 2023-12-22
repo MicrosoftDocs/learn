@@ -13,6 +13,21 @@ To use Visual Studio Code:
     1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
     1. Select your forked repository. Visual Studio Code creates your development container locally.
 
+
+Follow these steps to create and run Docker containers in the codespace.
+
+1. When the setup is complete, within the **dotnet-observability** directory, open the file named **docker-compose.yml**.
+1. Switch to the **PORTS** tab, point at the **Forwarded Address** for the **Back End (32001)** port, and then click the **Copy Local Address** icon.
+
+1. Paste this URL into the `ImagePrefix` environment variable in the **docker-compose.yml** file, replacing the text `http://localhost`. 
+1. Append `images` to the pasted text:
+
+    ```docker-compose
+    environment: 
+      - ProductEndpoint=http://backend:8080
+      - ImagePrefix=https://studious-fortnight-4g4rx9g47wg249w-32001.app.github.dev/images
+    ```
+
 ### Add a diagnostic project to the solution
 
 The first step to adding observability to the **:::no-loc text="eShopLite":::** app is to introduce a new diagnostic project to the solution. This project contains all the OpenTelemetry packages and configurations that you'll use to add observability to the app.
