@@ -48,12 +48,12 @@ Examples of security events that Microsoft Defenders for Containers monitors inc
 
 You can view security alerts by selecting the Security alerts tile at the top of the Defender for Cloud's overview page, or the link from the sidebar.
 
-:::image type="content" source="../media/overview-page-alerts-links-c4ad0274.png" alt-text="Screenshot showing an example of the overview page alerts links in Microsoft Defender for Cloud.":::
+:::image type="content" source="../media/new-defender-for-containers-security-alerts-0104b5b7.png" alt-text="Screenshot showing an example of the overview page alerts links in Microsoft Defender for Cloud.":::
 
 
 The security alerts page opens.
 
-:::image type="content" source="../media/view-containers-alerts-7648c638.png" alt-text="Screenshot showing the security alerts page.":::
+:::image type="content" source="../media/new-security-alerts-for-runtime-workloads-409fe8d4.png" alt-text="Screenshot showing the security alerts page.":::
 
 
 Security alerts for runtime workload in the clusters can be recognized by the K8S.NODE\_ prefix of the alert type.
@@ -61,37 +61,3 @@ Security alerts for runtime workload in the clusters can be recognized by the K8
 Defender for Containers also includes host-level threat detection with over 60 Kubernetes-aware analytics, AI, and anomaly detections based on your runtime workload.<br>
 
 Defender for Cloud monitors the attack surface of multicloud Kubernetes deployments based on the MITRE ATT&CK® matrix for Containers, a framework developed by the Center for Threat-Informed Defense in close partnership with Microsoft.
-
-## Agentless discovery for Kubernetes
-
-Defender for containers uses cloud security graph to collect in an agentless manner information about your Kubernetes clusters. This data can be queried via Cloud Security Explorer and used for:
-
- -  Kubernetes inventory: gain visibility into your Kubernetes clusters data plane components such as nodes, pods, and cron jobs.<br>
- -  Security insights: predefined security situations relevant to Kubernetes components, such as “exposed to the internet”. For more information, see Security insights.<br>
- -  Risk hunting: querying various risk cases, correlating predefined or custom security scenarios across fine-grained Kubernetes properties as well as Defender For Containers security insights.
-
-## Cloud security graph
-
-The cloud security graph is a graph-based context engine that exists within Defender for Cloud. The cloud security graph collects data from your multicloud environment and other data sources. For example, the cloud assets inventory, connections and lateral movement possibilities between resources, exposure to internet, permissions, network connections, vulnerabilities and more. The data collected is then used to build a graph representing your multicloud environment.
-
-Defender for Cloud then uses the generated graph to perform an attack path analysis and find the issues with the highest risk that exist within your environment. You can also query the graph using the cloud security explorer.
-
-:::image type="content" source="../media/security-map-9a2d0bc4.png" alt-text="Diagram showing an example of a security map.":::
-
-
-## Attack path analysis
-
-Attack path analysis is a graph-based algorithm that scans the cloud security graph. The scans expose exploitable paths that attackers might use to breach your environment to reach your high-impact assets. Attack path analysis exposes attack paths and suggests recommendations as to how best remediate issues that will break the attack path and prevent successful breach.
-
-When you take your environment's contextual information into account, attack path analysis identifies issues that might lead to a breach on your environment, and helps you to remediate the highest risk ones first. For example its exposure to the internet, permissions, lateral movement, and more.<br>
-
-:::image type="content" source="../media/attack-path-47ebcc57.png" alt-text="Diagram showing an example of an attack path.":::
-
-
-## Cloud security explorer
-
-By running graph-based queries on the cloud security graph with the cloud security explorer, you can proactively identify security risks in your multicloud environments. Your security team can use the query builder to search for and locate risks, while taking your organization's specific contextual and conventional information into account.
-
-Cloud security explorer provides you with the ability to perform proactive exploration features. You can search for security risks within your organization by running graph-based path-finding queries on top the contextual security data that is already provided by Defender for Cloud, such as cloud misconfigurations, vulnerabilities, resource context, lateral movement possibilities between resources and more.
-
-:::image type="content" source="../media/cloud-security-explorer-select-resource-extra-large-7b98b951.png" alt-text="Screenshot showing an example of the Cloud Security Explorer in Microsoft Defender for Cloud.":::

@@ -1,13 +1,18 @@
 The Azure Container Registry service supports a set of built-in Azure roles that provide different levels of permissions to an Azure container registry. Use Azure role-based access control (Azure RBAC) to assign specific permissions to users, service principals, or other identities that need to interact with a registry, for example to pull or push container images. You can also define custom roles with fine-grained permissions to a registry for different operations.
 
-:::image type="content" source="../media/table-showing-azure-container-registry-roles-permissions-50daaf65.png" alt-text="Screenshot showing an example of Azure container registry role and permissions.":::
-
+| **Role/Permission** | **Access Resource Manager** | **Create/delete registry** | **Push image** | **Pull image** | **Delete image data** | **Change policies** |  **Sign images** |
+| ------------------- | --------------------------- | -------------------------- | -------------- | -------------- | --------------------- | ------------------- | ---------------- |
+| Owner               | X                           | X                          | X              | X              | X                     | X                   |                  |
+| Contributor         | X                           | X                          | X              | X              | X                     | X                   |                  |
+| Reader              | X                           |                            |                | X              |                       |                     |                  |
+| AcrPush             |                             |                            | X              | X              |                       |                     |                  |
+| AcrPull             |                             |                            |                | X              |                       |                     |                  |
+| AcrDelete           |                             |                            |                |                | X                     |                     |                  |
+| AcrImageSigner      |                             |                            |                |                |                       |                     | X                |
 
 ## Assign roles
 
-See Steps to add a role assignment for high-level steps to add a role assignment to an existing user, group, service principal, or managed identity. You can use the Azure portal, Azure CLI, Azure PowerShell, or other Azure tools.
-
-When creating a service principal, you also configure its access and permissions to Azure resources such as a container registry.
+You can use the Azure portal, Azure CLI, Azure PowerShell, or other Azure tools. When creating a service principal, you also configure its access and permissions to Azure resources such as a container registry.
 
 ## Differentiate users and services
 
@@ -27,8 +32,7 @@ For tools like the Visual Studio Code Docker extension, additional resource prov
 
 ## Access Resource Manager
 
-:::image type="content" source="../media/azure-access-resource-manager-1e0e04df.png" alt-text="Screenshot showing how to access the Access Resource Manager using Azure CLI commands.":::
-
+## :::image type="content" source="../media/new-azure-resource-manager-requirement-641715a8.png" alt-text="Screenshot showing how to get a list of registries by using the Azure command line interface syntax."::: 
 
 ## Custom roles
 
@@ -36,14 +40,14 @@ As with other Azure resources, you can create custom roles with fine-grained per
 
 To determine which permissions to apply to a custom role, see the list of Microsoft.ContainerRegistry actions, review the permitted actions of the built-in ACR roles, or run the following command:
 
-:::image type="content" source="../media/azure-cli-custom-roles-operation-show-4acc8eb1.png" alt-text="Screenshot showing Azure CLI commands to use to determine which permissions to apply to a custom role.":::
+:::image type="content" source="../media/new-access-resource-manager-ce2407fe.png" alt-text="Screenshot showing how to access the Access Resource Manager using Azure command line interface commands.":::
 
 
 ## Example: Custom role to import images
 
-For example, the following JSON defines the minimum actions for a custom role that permits importing images to a registry.
+For example, the following Java Script Object Notation defines the minimum actions for a custom role that permits importing images to a registry.
 
-:::image type="content" source="../media/azure-json-custom-role-import-images-ce376cb9.png" alt-text="Screenshot showing how JSON defines the minimum actions for a custom role that permits importing images to a registry.":::
+:::image type="content" source="../media/new-custom-role-to-import-iamges-4d4a1105.png" alt-text="Screenshot showing how the Java Script Object Notation defines the minimum actions for a custom role that permits importing images to a registry.":::
 
 
-To create or update a custom role using the JSON description, use the Azure CLI, Azure Resource Manager template, Azure PowerShell, or other Azure tools. Add or remove role assignments for a custom role in the same way that you manage role assignments for built-in Azure roles.
+To create or update a custom role using the Java Script Object Notation description, use the Azure command line interface, Azure Resource Manager template, Azure PowerShell, or other Azure tools. Add or remove role assignments for a custom role in the same way that you manage role assignments for built-in Azure roles.

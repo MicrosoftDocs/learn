@@ -9,7 +9,10 @@ As you deploy and maintain clusters in Azure Kubernetes Service (AKS), you imple
 
 Your Kubernetes cluster developers and application owners need access to different resources. Kubernetes lacks an identity management solution for you to control the resources with which users can interact. Instead, you can integrate your cluster with an existing identity solution like Microsoft Entra ID, an enterprise-ready identity management solution.<br>
 
-With Microsoft Entra integrated clusters in AKS, you create Roles or ClusterRoles defining access permissions to resources. You then bind the roles to users or groups from Microsoft Entra ID. Learn more about these Kubernetes RBAC in the next section.
+With Microsoft Entra integrated clusters in AKS, you create Roles or ClusterRoles defining access permissions to resources. You then bind the roles to users or groups from Microsoft Entra ID.
+
+:::image type="content" source="../media/new-microsoft-entra-id-integration-ed7b0b75.png" alt-text="Diagram showing an example of a cluster level authentication flow.":::
+
 
 1. Developer authenticates with Microsoft Entra ID.
 
@@ -31,12 +34,12 @@ In Kubernetes, you provide granular access control to cluster resources. You def
 
 For example, you create a role with full access to resources in the namespace named `finance-app`, as shown in the following example YAML manifest:<br>
 
-:::image type="content" source="../media/yaml-manifest-create-role-example-ac37f805.png" alt-text="Screenshot showing an example using a YAML manifest to create a role with full access to resources.":::
+:::image type="content" source="../media/new-manifest-role-0a32b384.png" alt-text="Screenshot showing an example using a manifest to create a role with full access to resources.":::
 
 
 You then create a `RoleBinding`and bind the Microsoft Entra user developer1@contoso.com to it, as shown in the following YAML manifest:
 
-:::image type="content" source="../media/yaml-manifest-create-role-binding-example-4ab9c3e4.png" alt-text="Screenshot showing an example using a YAML manifest to create a Role Binding.":::
+:::image type="content" source="../media/new-role-binding-153eac43.png" alt-text="Screenshot showing an example using a YAML manifest to create a Role Binding.":::
 
 
 When `developer1@contoso.com` is authenticated against the AKS cluster, they have full permissions to resources in the finance-app namespace. In this way, you logically separate and control access to resources. Use Kubernetes RBAC with Microsoft Entra ID-integration.
@@ -47,60 +50,14 @@ When `developer1@contoso.com` is authenticated against the AKS cluster, they hav
 
 There are two levels of access needed to fully operate an AKS cluster:<br>
 
- -  Access the AKS resource on your Azure subscription.<br>
-     -  This access level allows you to:<br>
-         -  Control scaling or upgrading your cluster using the AKS APIs<br>
-         -  Pull your kubeconfig.
- -  Access to the Kubernetes API.<br>
-     -  This access level is controlled either by:<br>
-         -  Kubernetes RBAC (traditionally) or<br>
-         -  By integrating Azure RBAC with AKS for kubernetes authorization.
+1. This access level allows you to:<br>
 
-## Use pod-managed identities
+ -  Control scaling or upgrading your cluster using the AKS APIs<br>
+ -  Pull your kubeconfig.
+ -  Access the AKS resource on your Azure subscription.
 
-Don't use fixed credentials within pods or container images, as they are at risk of exposure or abuse. Instead, *use pod identities* to automatically request access using Microsoft Entra ID.
+2. This access level is controlled either by:<br>
 
-To access other Azure resources, like Azure Cosmos DB, Key Vault, or Blob storage, the pod needs authentication credentials. You could define authentication credentials with the container image or inject them as a Kubernetes secret. Either way, you would need to manually create and assign them. Usually, these credentials are reused across pods and aren't regularly rotated.
-
-With pod-managed identities (preview) for Azure resources, you automatically request access to services through Microsoft Entra ID. Pod-managed identities are currently in preview for AKS.<br>
-
-Microsoft Entra pod-managed identity (preview) supports two modes of operation:
-
- -  Standard mode: In this mode, the following 2 components are deployed to the AKS cluster:<br>
-     -  Managed Identity Controller(MIC): A Kubernetes controller that watches for changes to pods, AzureIdentity and AzureIdentityBinding through the Kubernetes API Server. When it detects a relevant change, the MIC adds or deletes AzureAssignedIdentity as needed. Specifically, when a pod is scheduled, the MIC assigns the managed identity on Azure to the underlying virtual machine scale set used by the node pool during the creation phase. When all pods using the identity are deleted, it removes the identity from the virtual machine scale set of the node pool, unless the same managed identity is used by other pods. The MIC takes similar actions when AzureIdentity or AzureIdentityBinding are created or deleted.<br>
-     -  Node Managed Identity (NMI): is a pod that runs as a DaemonSet on each node in the AKS cluster. NMI intercepts security token requests to the Azure Instance Metadata Service on each node. It redirects requests to itself and validates if the pod has access to the identity it's requesting a token for, and fetch the token from the Microsoft Entra tenant on behalf of the application.<br>
- -  Managed mode: In this mode, there's only NMI. The identity needs to be manually assigned and managed by the user. For more information, see Pod Identity in Managed Mode. In this mode, when you use the az aks pod-identity add command to add a pod identity to an Azure Kubernetes Service (AKS) cluster, it creates the AzureIdentity and AzureIdentityBinding in the namespace specified by the `--namespace`parameter, while the AKS resource provider assigns the managed identity specified by the `--identity-resource-id` parameter to virtual machine scale set of each node pool in the AKS cluster.<br>
-
-The `managed` mode provides the following advantages over the `standard`:
-
- -  Identity assignment on the virtual machine scale set of a node pool can take up 40-60s. With cronjobs or applications that require access to the identity and can't tolerate the assignment delay, it's best to use managed mode as the identity is pre-assigned to the virtual machine scale set of the node pool. Either manually or using the az aks pod-identity add command.<br>
- -  In`standard`mode, MIC requires write permissions on the virtual machine scale set used by the AKS cluster and `Managed Identity Operator`permission on the user-assigned managed identities. When running in managed mode, since there's no MIC, the role assignments aren't required.
-
-Instead of manually defining credentials for pods, pod-managed identities request an access token in real time, using it to access only their assigned resources. In AKS, there are two components that handle the operations to allow pods to use managed identities:
-
- -  The **Node Management Identity (NMI)** server is a pod that runs as a DaemonSet on each node in the AKS cluster. The NMI server listens for pod requests to Azure services.<br>
- -  The **Azure Resource Provider** queries the Kubernetes API server and checks for an Azure identity mapping that corresponds to a pod.
-
-When pods request a security token from Microsoft Entra ID to access to an Azure resource, network rules redirect the traffic to the NMI server.
-
-The NMI server:
-
-1. Identifies pods requesting access to Azure resources based on their remote address.
-
-2. Queries the Azure Resource Provider.
-
-3. The Azure Resource Provider checks for Azure identity mappings in the AKS cluster.
-
-4. The NMI server requests an access token from Microsoft Entra ID based on the pod's identity mapping.<br>
-
-5. Microsoft Entra ID provides access to the NMI server, which is returned to the pod.<br>
-
-6. This access token can be used by the pod to then request access to resources in Azure.
-
-7. Cluster operator creates a service account to map identities when pods request access to resources.
-
-8. The NMI server is deployed to relay any pod requests, along with the Azure Resource Provider, for access tokens to Microsoft Entra ID.
-
-9. A developer deploys a pod with a managed identity that requests an access token through the NMI server.
-
-10. The token is returned to the pod and used to access Azure SQL Database.
+ -  Kubernetes RBAC (traditionally) or<br>
+ -  By integrating Azure RBAC with AKS for kubernetes authorization.
+ -  Access to the Kubernetes API.
