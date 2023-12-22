@@ -10,9 +10,9 @@ The most simple redaction is to erase the value, and return an empty string for 
 
 For example, you may want to make it clearer in the logs that a value is redacted by replacing it with `*****`.
 
-## How to redact data in a cloud native application
+## How to redact data in a cloud-native application
 
-Your organizations cloud native app could be writing logs and creating telemetry in multiple projects. For example, it could be writing logs from the database service, the web app, or any other API's it uses. Depending on the type of logging, you'll need to add the redaction service to each one.
+Your organizations cloud-native app could be writing logs and creating telemetry in multiple projects. For example, it could be writing logs from the database service, the web app, or any other API's it uses. Depending on the type of logging, you'll need to add the redaction service to each one.
 
 There are four steps you need to take to enable redaction in your app:
 

@@ -1,4 +1,4 @@
-So far, you've seen two approaches to support CI/CD for your cloud native app. You manually deployed the app to AKS, and you used GitHub Actions to build and deploy the app. Microsoft supports a third approach, Azure Pipelines. Both the automated approaches are valid; you choose the one that best fits your needs.
+So far, you've seen two approaches to support CI/CD for your cloud-native app. You manually deployed the app to AKS, and you used GitHub Actions to build and deploy the app. Microsoft supports a third approach, Azure Pipelines. Both the automated approaches are valid; you choose the one that best fits your needs.
 
 ## How are GitHub actions and Azure Pipelines different?
 
