@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-cost-optimization.4-design-for-usage-optimization
+uid: learn.azure-well-architected-cost-optimization.design-for-usage-optimization
 title: Design for usage optimization
 metadata:
   title: Design for usage optimization
@@ -7,7 +7,7 @@ metadata:
   ms.date: 10/23/2023
   author: martinekuan
   ms.author: martinek
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.prod: learning-azure
 durationInMinutes: 12
 content: |
@@ -19,40 +19,40 @@ quiz:
       choices:
         - content: "Azure Advisor cost recommendations"
           isCorrect: false
-          explanation: "Azure Advisor cost recommendations provide recommendations about how you can reduce your Azure spend by identifying idle and underutilized resources."
+          explanation: "Incorrect.  Azure Advisor cost recommendations provide recommendations about how you can reduce your Azure spend by identifying idle and underutilized resources."
         - content: "Azure Reservations"
           isCorrect: false
-          explanation: "Azure reservations let you prepay for a one-year or three-year term to get a discount on the base compute rate. You cannot pay for only the compute that you use in this model."
+          explanation: "Incorrect. Azure reservations let you prepay for a one-year or three-year term to get a discount on the base compute rate. You can’t pay for only the compute that you use in this model."
         - content: "Azure Hybrid Benefit"
           isCorrect: false
-          explanation: "Azure Hybrid Benefit lets you use your on-premises Windows Server or SQL Server licenses with Software Assurance to pay a reduced rate on Azure Virtual Machines. It doesn't affect the cost of resources based on utilization."
+          explanation: "Incorrect.  Azure Hybrid Benefit lets you use your on-premises Windows Server or SQL Server licenses with Software Assurance to pay a reduced rate on Azure Virtual Machines. It doesn't affect the cost of resources based on utilization."
         - content: "Consumption-based billing"
           isCorrect: true
-          explanation: "Services like Azure Functions and Azure Container Instances can be configured to use consumption-based billing, which means that you pay only for the compute that you use."
+          explanation: "Correct.  Services like Azure Functions and Azure Container Instances can be configured to use consumption-based billing, which means that you pay only for the compute that you use."
 
-    - content: "Which of the following HA designs should you avoid for cost-efficiency if you have already paid for the resources?"
+    - content: "Which of the following HA designs should you avoid for cost-efficiency if you’ve already paid for the resources?"
       choices:
         - content: "Active-active"
           isCorrect: false
-          explanation: "An active-active design should be used for workloads that are accessed across regions or for workloads that require zero or near-zero downtime."
+          explanation: "Incorrect.  An active-active design should be used for workloads that are accessed across regions or for workloads that require zero or near-zero downtime."
         - content: "Active-only"
           isCorrect: false
-          explanation: "An active-only design may be sufficient for workloads with workloads with high RPO and RTO targets."
+          explanation: "Incorrect.  An active-only design may be sufficient for workloads with workloads with high RPO and RTO targets." 
         - content: "Active-passive"
           isCorrect: true
-          explanation: "An active-passive design may lead to paying for idle resources."
+          explanation: "Correct.  An active-passive design may lead to paying for idle resources."
 
     - content: "What is one way the workload team can ensure that they catch abandoned resources, like MySQL servers that are no longer used?"
       choices:
-        - content: "Review the monthly Azure bill"
+        - content: "Review the monthly Azure bill."
           isCorrect: false
-          explanation: "The Azure bill will not provide information about the utilization of a given resource"
+          explanation: "Incorrect.  The Azure bill won’t provide information about the utilization of a given resource"
         - content: "Setup Azure budget alerts"
           isCorrect: false
-          explanation: "Budget alerts only notify users when the budget is exceeded, they cannot provide any information about a given resource's utilization"
+          explanation: "Incorrect.  Budget alerts only notify users when the budget is exceeded, they can’t provide any information about a given resource's utilization"
         - content: "Review the cost analysis report for the subscription"
           isCorrect: false
-          explanation: "The cost analysis report will not provide information about the utilization of a given resource"
+          explanation: "Incorrect.  The cost analysis report won’t provide information about the utilization of a given resource"
         - content: "Review the Azure Advisor cost recommendations"
           isCorrect: true
-          explanation: "Azure Advisor cost recommendations can identify underutilized MySQL servers and will provide a recommendation when such servers are found."
+          explanation: "Correct.  Azure Advisor cost recommendations can identify underutilized MySQL servers and will provide a recommendation when such servers are found."
