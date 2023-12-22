@@ -308,15 +308,16 @@ For brevity, implement Linkerd only on the aggregator and coupon services. To im
 
 ### Modify the eShop deployments
 
-The coupon and aggregator services must be configured to use Linkerd proxy containers.
+The services must be configured to use Linkerd proxy containers.
 
-1. Add the `linkerd.io/inject: enabled` annotation to the **backend-deploy.yml** file under the kompose annotations.
+1. Add the `linkerd.io/inject: enabled` annotation to the **backend-deploy.yml** file under template metadata.
 
     ```yaml
       template:
         metadata:
           annotations:
-            linkerd.io/inject: enabled 
+            linkerd.io/inject: enabled
+          labels: 
     ```
 
 1. Add the `linkerd.io/inject: enabled` annotation to the **fromkend-deploy.yml** file in the same place.
@@ -324,7 +325,7 @@ The coupon and aggregator services must be configured to use Linkerd proxy conta
 1. Update the deployments in the Kubernetes cluster:
 
     ```bash
-    kubectl apply -f backend-deployment.yaml,frontend-deployment.yaml
+    kubectl apply -f backend-deploy.yml,frontend-deploy.yml
     ```
 
 ### Apply the Linkerd service profile for the product service
@@ -395,10 +396,11 @@ Linkerd has extensions to give you additional features. You'll install the viz e
 1. View the dashboard with this command:
 
    ```bash
-   linkerd dashboard
+   linkerd viz dashboard
    ```
 
-   Visual Studio Code will show a popup that allows you to open the dashboard in a new tab. Select **Open in Browser**.
+   Go to the **PORTS** tab and you will see a new port that has been forwarded with a process of **linkerd viz dashboard** running. Select the **Open in Browser** to open the dashboard.
+   
 1. In the Linkerd dashboard, select **Namespaces**.
 1. Under HTTP Metrics, select **default**.
 
@@ -424,7 +426,7 @@ After the redeployed containers are healthy, use the following steps to test the
 1. Restart the product service pods:
 
     ```bash
-    kubectl scale deployment backend --replicas=1
+    kubectl scale deployment productsbackend --replicas=1
     ```
 1. The app should now display the products.
 
