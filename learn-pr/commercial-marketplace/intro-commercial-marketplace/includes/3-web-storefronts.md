@@ -4,7 +4,7 @@ When Microsoft partners add their solutions to the commercial marketplace, one w
 
 As you read the documentation, you learn that Azure Marketplace is the Microsoft online store for IT solutions. It contains technical software and services that are certified to run on Microsoft Azure.
 
-Azure Marketplace has thousands of solutions that are made to extend directly into users’ Azure infrastructure. Products in this storefront include Azure building blocks, digital cloud services, finished software solutions, and consulting and managed services. Products and services are organized by category and easy to filter, making it easy for customers to find the right app or service.
+Azure Marketplace has thousands of solutions that are made to extend directly into users’ Azure infrastructure. Products in this storefront include Azure building blocks, digital cloud services, finished software solutions, and consulting and managed services. Products and services are organized by category and can be filtered, making it easy for customers to find the right app or service.
 
 Your customers can access the Azure Marketplace online store by visiting <https://azuremarketplace.microsoft.com>.
 
@@ -28,7 +28,7 @@ In addition to the cloud products and services available through both the online
 
 ## Microsoft AppSource
 
-Microsoft AppSource contains business software that extends directly into Azure, Dynamics 365, Microsoft 365, and the Power Platform. Microsoft AppSource also contains web applications, which are hosted on the cloud and accessed over the internet. Solutions are organized by category and industry and are easy to filter, making it simple for customers to find the right app or service.
+Microsoft AppSource contains business software that extends directly into Azure, Dynamics 365, Microsoft 365, and the Power Platform. Microsoft AppSource also contains web applications, which are hosted on the cloud and accessed over the internet. Solutions are organized by category and industry and can be filtered, making it simple for customers to find the right app or service.
 
 Your customers can access the Microsoft AppSource online store by visiting <https://appsource.microsoft.com>.
 
@@ -46,4 +46,4 @@ In addition to the cloud products that are available through the online store an
 
 ## Summary
 
-Now that you have a better understanding of the online stores and the applications and services they contain, you're convinced that your future customers will be able to find your solutions when you choose to join the commercial marketplace. Next, you decide to turn your attention to learning more about the different ways you can list your products in Microsoft AppSource and Azure Marketplace.
+Now that you have a better understanding of the online stores and the applications and services they contain, you're convinced that your future customers will be able to find your solutions when you choose to join the commercial marketplace. Next, you turn your attention to learning more about the different ways you can list your products in Microsoft AppSource and Azure Marketplace.

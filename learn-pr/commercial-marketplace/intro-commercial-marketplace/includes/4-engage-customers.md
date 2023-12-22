@@ -20,7 +20,7 @@ If you want more information about leads, see [Customer leads from your marketpl
 
 ## Listing options
 
-Listing options are used to define the ease at which a customer can find, try, buy, and deploy your solution online. There are four primary options:
+Listing options define how easily a customer can find, try, buy, and deploy your solution online. There are four primary options:
 
 ### Listing (Contact Me)
 
