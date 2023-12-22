@@ -7,8 +7,8 @@ metadata:
   ms.date: 10/23/2023
   author: martinekuan
   ms.author: martinek
-  ms.topic: interactive-tutorial
-  ms.prod: unit
+  ms.topic: unit
+  ms.prod: learning-azure
 durationInMinutes: 12
 content: |
   [!include[](includes/6-monitor-and-optimize-over-time.md)]

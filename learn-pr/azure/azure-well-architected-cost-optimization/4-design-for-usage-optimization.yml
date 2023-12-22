@@ -37,7 +37,7 @@ quiz:
           explanation: "Incorrect.  An active-active design should be used for workloads that are accessed across regions or for workloads that require zero or near-zero downtime."
         - content: "Active-only"
           isCorrect: false
-          explanation: "Incorrect.  An active-only design may be sufficient for workloads with workloads with high RPO and RTO targets." 
+          explanation: "Incorrect.  An active-only design may be sufficient for workloads with high RPO and RTO targets." 
         - content: "Active-passive"
           isCorrect: true
           explanation: "Correct.  An active-passive design may lead to paying for idle resources."

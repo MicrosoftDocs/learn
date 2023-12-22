@@ -60,7 +60,7 @@ Enforcement via governance policies or built-in application design patterns can 
 
 *Applying the approach and outcomes*
 
-- The team educates themselves about Azure cost management solutions.
+- The team educates themselves about Microsoft Cost Management solutions.
 - The team plans to set up scale limits for the Azure App Service plans.
 - The team plans to set up a Deny policy for certain higher priced virtual machine SKUs to disallow those SKUs from being deployed.
 - The team plans to implement automation to help control storage costs. Certain data types will automatically move from hot storage to cold or archive storage based on criteria like date of last access. This type of automation isn't possible in the HCI environment.

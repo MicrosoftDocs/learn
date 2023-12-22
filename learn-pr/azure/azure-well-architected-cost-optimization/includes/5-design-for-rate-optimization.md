@@ -5,7 +5,7 @@ Take advantage of opportunities to optimize the utility and costs of your existi
 
 **Example scenario**
 
-Contoso's business intelligence (BI) team hosts a suite of GraphQL APIs for various business units to access data stores across the organization without granting direct database access. They’ve been building these up over the years and found that versioning was important, so they have been exposing their APIs now over versioned endpoints on a single API Management gateway, using consumption billing.
+Contoso's business intelligence (BI) team hosts a suite of GraphQL APIs for various business units to access data stores across the organization without granting direct database access. They’ve been building these up over the years and found that versioning was important, so they have been exposing their APIs now over versioned endpoints on a single Consumption tier API Management gateway.
 
 Behind the API Management instances are three AKS clusters that host the APIs that are exposed. One running a Windows node pool for APIs written in .NET 4.5, one Linux cluster for the APIs written in Java Spring, and one Linux they inherited from a prior team running dotnet core APIs. The clusters are now all owned by the BI team and are only used for these APIs. While managing three clusters isn’t ideal, they've been working as intended so have been left alone.
 
