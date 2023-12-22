@@ -222,9 +222,9 @@ With the OpenTelemetry packages added, you'll now introduce the code to make use
 1. Select the **TERMINAL** tab, and scroll through the messages. Note there are messages from OpenTelemetry like:
 
     ```console
-    dotnet-observability-backend-1   | Export ec.Microsoft-AspNetCore-Server-Kestrel.connection-queue-length, Meter: OpenTelemetry.Instrumentation.EventCounters/1.5.1.1
-    dotnet-observability-backend-1   | (2023-11-09T19:55:14.8933518Z, 2023-11-09T20:04:44.8596671Z] http.request.method: PUT http.response.status_code: 200 http.route: /api/Stock/{id} network.protocol.name: http network.protocol.version: 1.1 url.scheme: http Histogram      
-    dotnet-observability-backend-1   | Value: Sum: 0.05144170000000001 Count: 4 Min: 0.0039736 Max: 0.0359739
+    backend-1   | Export ec.Microsoft-AspNetCore-Server-Kestrel.connection-queue-length, Meter: OpenTelemetry.Instrumentation.EventCounters/1.5.1.1
+    backend-1   | (2023-11-09T19:55:14.8933518Z, 2023-11-09T20:04:44.8596671Z] http.request.method: PUT http.response.status_code: 200 http.route: /api/Stock/{id} network.protocol.name: http network.protocol.version: 1.1 url.scheme: http Histogram      
+    backend-1   | Value: Sum: 0.05144170000000001 Count: 4 Min: 0.0039736 Max: 0.0359739
     ```
 
 You've successfully added OpenTelemetry to the **Products** service. In the next unit, you'll see how to make better use of the telemetry data by viewing it on tools like Prometheus and Grafana.
