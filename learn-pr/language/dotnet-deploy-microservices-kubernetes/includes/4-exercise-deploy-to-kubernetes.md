@@ -21,6 +21,8 @@ We need to install both the **kubectl** tool and the **k3d** Kubernetes implemen
     curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.28/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
     ```
 
+		If you receive an error that the directory already exists, simply run the `curl` command separately.
+
 1. Add the Kubernetes repository to your **apt** configuration:
 
     ```bash
@@ -45,7 +47,7 @@ We need to install both the **kubectl** tool and the **k3d** Kubernetes implemen
 
 You can create a file manage container deployment into Kubernetes with a YAML file. Let's create a file to deploy the backend service.
 
-1. Create a new file in the top level of the codespace named **backend-deploy.yml**.
+1. Create a new file in the **donet-kubernetes** folder of the codespace named **backend-deploy.yml**.
 2. Copy the following text into the file and then save it.
 
     ```yml
@@ -55,36 +57,36 @@ You can create a file manage container deployment into Kubernetes with a YAML fi
     metadata:
         name: productsbackend
     spec:
-        replicas: 1
-        template:
+      replicas: 1
+      template:
         metadata:
-            labels:
-                app: productsbackend
-        spec:
-            containers:
-           - name: productsbackend
-                image: [YOUR DOCKER USER NAME]/productservice:latest
-                ports:
-               - containerPort: 80
-                    env:
-                   - name: ASPNETCORE_URLS
-                    value: http://*:80
-    selector:
-        matchLabels:
+          labels:
             app: productsbackend
+        spec:
+          containers:
+          - name: productsbackend
+            image: [YOUR DOCKER USER NAME]/productservice:latest
+            ports:
+            - containerPort: 80
+            env:
+            - name: ASPNETCORE_URLS
+              value: http://*:80
+      selector:
+        matchLabels:
+          app: productsbackend
     ---
     apiVersion: v1
     kind: Service
     metadata:
-        name: productsbackend
+      name: productsbackend
     spec:
-        type: NodePort
-        ports:
-           - port: 80
-            targetPort: 80
-            nodePort: 32001
-        selector:
-            app: productsbackend
+      type: NodePort
+      ports:
+      - port: 80
+        targetPort: 80
+        nodePort: 32001
+      selector:
+        app: productsbackend
     ```
 
 3. Replace the placeholder `[YOUR DOCKER USER NAME]` with your actual Docker username.
@@ -121,7 +123,7 @@ Next, let's deploy and run the microservice.
 
 Much like the backend service, we need a deployment file for the frontend as well.
 
-1. Create a new top level file named **frontend-deploy.yml**
+1. Create a new file in the **donet-kubernetes** folder named **frontend-deploy.yml**
 2. Paste the following code into the file:
 
     ```yml
@@ -129,42 +131,42 @@ Much like the backend service, we need a deployment file for the frontend as wel
     apiVersion: apps/v1
     kind: Deployment
     metadata:
-        name: storefrontend
+      name: storefrontend
     spec:
-        replicas: 1
-        template:
-            metadata:
-                labels:
-                    app: storefrontend
-            spec:
-                containers:
-                   - name: storefrontend
-                    image: [YOUR DOCKER USER NAME]/storeimage:latest
-                    ports:
-                       - containerPort: 80
-                    env:
-                       - name: ASPNETCORE_URLS
-                            value: http://*:80
-                       - name: ProductEndpoint
-                            value: http://productsbackend
-                       - name: ImagePrefix
-                            value: http://localhost/images
-        selector:
-            matchLabels:
-                app: storefrontend
+      replicas: 1
+      template:
+        metadata:
+          labels:
+            app: storefrontend
+        spec:
+          containers:
+          - name: storefrontend
+            image: [YOUR DOCKER USER NAME]/storeimage:latest
+            ports:
+            - containerPort: 80
+            env:
+            - name: ASPNETCORE_URLS
+              value: http://*:80
+            - name: ProductEndpoint
+              value: http://productsbackend
+            - name: ImagePrefix
+              value: http://localhost/images
+      selector:
+        matchLabels:
+          app: storefrontend
     ---
     apiVersion: v1
     kind: Service
     metadata:
-        name: storefrontend
+      name: storefrontend
     spec:
-        type: NodePort
-        ports:
-       - port: 80
-            targetPort: 80
-            nodePort: 32000
-		selector:
-            app: storefrontend
+      type: NodePort
+      ports:
+      - port: 80
+        targetPort: 80
+        nodePort: 32000
+      selector:
+        app: storefrontend
     ```
 
 3. Replace the placeholder `[YOUR DOCKER USERNAME]` with your actual Docker username.
