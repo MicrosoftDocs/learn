@@ -28,7 +28,7 @@ Earlier, you created an Entra service principal that allows GitHub to authentica
 
 ## Cleanup Codespace
 
-You can delete the codespace on [https://github.com/codespaces](GitHub) under **By repository** where you see **MicrosoftDocs/mslearn-dotnet-cloudnative-devops**.
+You can delete the codespace on [GitHub](https://github.com/codespaces) under **By repository** where you see **MicrosoftDocs/mslearn-dotnet-cloudnative-devops**.
 
 ## Learn more about microservices
 
