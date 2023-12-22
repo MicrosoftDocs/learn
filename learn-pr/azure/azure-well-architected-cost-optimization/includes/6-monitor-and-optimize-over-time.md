@@ -20,7 +20,7 @@ You might also be able to save some costs by evaluating the use of your support 
 *Contoso's challenge*
 
 - The workload team has always come in under budget, so optimization for cost efficiency hasn't been a priority.
-- They are planning to improve the workload's reliability next year and know that doing so will increase their Azure costs, likely pushing the workload over their budget. They are considering asking for an increased budget for next year.
+- They're planning to improve the workload's reliability next year and know that doing so will increase their Azure costs, likely pushing the workload over their budget. They're considering asking for an increased budget for next year.
 
 *Applying the approach and outcomes*
 
