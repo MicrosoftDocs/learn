@@ -5,4 +5,8 @@ You explored the following resilience approaches in this module:
   * Using an infrastructure-based approach.
 
 
+## Cleanup Codespace
+
+You can delete the codespace on [https://github.com/codespaces](GitHub) under **By repository** where you will see **MicrosoftDocs/mslearn-dotnet-cloudnative**.
+
 

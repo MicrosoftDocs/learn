@@ -18,6 +18,10 @@ az group delete --name rg-eshop --yes
 
 The preceding command deletes the resource group that contains the Azure App Configuration instance.
 
+## Cleanup Codespace
+
+You can delete the codespace on [https://github.com/codespaces](GitHub) under **By repository** where you will see **MicrosoftDocs/mslearn-dotnet-cloudnative**.
+
 ## Learn more about Azure App Configuration
 
 * [Azure App Configuration documentation](/azure/azure-app-configuration/)

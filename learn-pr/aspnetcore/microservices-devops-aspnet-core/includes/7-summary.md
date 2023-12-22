@@ -26,6 +26,10 @@ Earlier, you created an Entra service principal that allows GitHub to authentica
 
 1. Delete the Azure resource group `rg-eshop` to delete all the resources you created in previous units.
 
+## Cleanup Codespace
+
+You can delete the codespace on [https://github.com/codespaces](GitHub) under **By repository** where you will see **MicrosoftDocs/mslearn-dotnet-cloudnative-devops**.
+
 ## Learn more about microservices
 
 - [Architecting Cloud Native .NET Applications for Azure](/dotnet/architecture/cloud-native/)

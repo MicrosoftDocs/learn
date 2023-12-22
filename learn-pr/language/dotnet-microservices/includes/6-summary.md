@@ -14,6 +14,10 @@ A Docker file is a text file that contains instructions for how to build a Docke
 
 Finally, .NET was built to be cloud-native first. It runs cross-platform, so your Docker image can be based on a flavor of Linux, and your .NET code still runs. .NET is extremely fast, and Microsoft has already created .NET images for Docker.
 
+## Cleanup Codespace
+
+You can delete the codespace on [https://github.com/codespaces](GitHub) under **By repository** where you will see **MicrosoftDocs/mslearn-dotnet-cloudnative**.
+
 ## Related content
 
 These resources can help you learn more about microservices with .NET:
