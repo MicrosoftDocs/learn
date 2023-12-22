@@ -37,7 +37,13 @@ Follow these steps to create and run Docker containers in the codespace.
       - ImagePrefix=https://studious-fortnight-4g4rx9g47wg249w-32001.app.github.dev/images
     ```
 
-1. Switch to the **TERMINAL** tab and then run the following command to build the containers:
+1. Switch to the **TERMINAL** tab and run the following command to go to the code root:
+
+   ```cli
+   cd dotnet-kubernetes
+   ```
+
+1. Run the following command to build the containers:
 
     ```bash
     docker compose build
