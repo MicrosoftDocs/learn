@@ -108,7 +108,7 @@ These use cases demonstrate how centralized identities and decentralized identit
 
 ## User journey: Onboarding to Woodgrove
 
-:::image type="content" source="../media/new-onboarding-to-woodgrove-9b262699.png" alt-text="Diagram showing an example of a user journey in a centralized and decentralized identity architecture.":::
+:::image type="content" source="../media/new-onboard-woodgrove-b145224a.png" alt-text="Diagram showing an example of a user journey in a centralized and decentralized identity architecture.":::
 
 
 **Awareness**: Alice is interested in working for Woodgrove, Inc. and visits Woodgrove’s career website.
@@ -137,7 +137,7 @@ By combining centralized and decentralized identity architectures for onboarding
 
 ## User journey: Accessing resources inside the trust boundary
 
-:::image type="content" source="../media/new-accessing-resources-inside-the-trust-boundary-01309dfe.png" alt-text="Diagram showing an example of a user journey accessing resources inside the trust boundary.":::
+:::image type="content" source="../media/new-access-resources-inside-trust-boundary-517c618c.png" alt-text="Diagram showing an example of a user journey accessing resources inside the trust boundary.":::
 
 
 As an employee, Alice is operating inside of the trust boundary of Woodgrove. Woodgrove acts as the identity provider (IDP) and maintains complete control of the identity and the configuration of the apps Alice uses to interact within the Woodgrove trust boundary. To use resources in the Microsoft Entra ID trust boundary, Alice provides potentially multiple forms of proof of identification to sign in Woodgrove’s trust boundary and access the resources inside of Woodgrove’s technology environment. Multiple proofs are a typical scenario that is well served using a centralized identity architecture.
@@ -196,27 +196,19 @@ In this flow, the credential holder interacts with the issuer to request a verif
 :::image type="content" source="../media/new-verifiable-credential-issuance-f5e4a0c8.png" alt-text="Diagram showing an example of a verifiable credential issuance.":::
 
 
-1. The holder starts the flow by using a browser or native application to access the issuer’s web frontend. There, the issuer website drives the user to collect data and executes issuer-specific logic to determine whether the credential can be issued, and its content.)
-
-2. The issuer web frontend calls the Microsoft Entra Verified ID service to generate a VC issuance request.
-
-3. The web frontend renders a link to the request as a QR code or a device-specific deep link (depending on the device).
-
-4. The holder scans the QR code or deep link from step 3 using a Wallet app such as Microsoft Authenticator
-
-5. The wallet downloads the request from the link. The request includes:
-
- -  DID of the issuer. The issuer's DID is used by the wallet app to resolve via the trust system to find the public keys and linked domains.
- -  URL with the VC manifest, which specifies the contract requirements to issue the VC. The contract requirement can include id\_token, self-attested attributes that must be provided, or the presentation of another VC.
- -  Look and feel of the VC (URL of the logo file, colors, etc.).
-
-6. The wallet validates the issuance requests and processes the contract requirements:
-
- -  Validates that the issuance request message is signed by the issuer’s keys found in the DID document resolved via the trust system. Validating the signature ensures that the message hasn't been tampered with.
- -  Validates that the issuer owns the DNS domain referenced in the issuer’s DID document.
- -  Depending on the VC contract requirements, the wallet might require the holder to collect additional information, for example asking for self-issued attributes, or navigating through an OIDC flow to obtain an id\_token.
-
-7. Submits the artifacts required by the contract to the Microsoft Entra Verified ID service. The Microsoft Entra Verified ID service returns the VC, signed with the issuer’s DID key and the wallet securely stores the VC.
+1.  The holder starts the flow by using a browser or native application to access the issuer’s web frontend. There, the issuer website drives the user to collect data and executes issuer-specific logic to determine whether the credential can be issued, and its content.)
+2.  The issuer web frontend calls the Microsoft Entra Verified ID service to generate a VC issuance request.
+3.  The web frontend renders a link to the request as a QR code or a device-specific deep link (depending on the device).
+4.  The holder scans the QR code or deep link from step 3 using a Wallet app such as Microsoft Authenticator
+5.  The wallet downloads the request from the link. The request includes:
+     -  DID of the issuer. The issuer's DID is used by the wallet app to resolve via the trust system to find the public keys and linked domains.
+     -  URL with the VC manifest, which specifies the contract requirements to issue the VC. The contract requirement can include id\_token, self-attested attributes that must be provided, or the presentation of another VC.
+     -  Look and feel of the VC (URL of the logo file, colors, etc.).
+6.  The wallet validates the issuance requests and processes the contract requirements:
+     -  Validates that the issuance request message is signed by the issuer’s keys found in the DID document resolved via the trust system. Validating the signature ensures that the message hasn't been tampered with.
+     -  Validates that the issuer owns the DNS domain referenced in the issuer’s DID document.
+     -  Depending on the VC contract requirements, the wallet might require the holder to collect additional information, for example asking for self-issued attributes, or navigating through an OIDC flow to obtain an id\_token.
+7.  Submits the artifacts required by the contract to the Microsoft Entra Verified ID service. The Microsoft Entra Verified ID service returns the VC, signed with the issuer’s DID key and the wallet securely stores the VC.
 
 ### Flow 2: Verifiable credential presentation
 
@@ -225,32 +217,23 @@ In this flow, the credential holder interacts with the issuer to request a verif
 
 In this flow, a holder interacts with a relying party (RP) to present a VC as part of its authorization requirements.
 
-1. The holder starts the flow by using a browser or native application to access the relying party’s web frontend.
-
-2. The web frontend calls the Microsoft Entra Verified ID service to generate a VC presentation request.
-
-3. The web frontend renders a link to the request as a QR code or a device-specific deep link (depending on the device).
-
-4. The holder scans the QR code or deep link from step 3 using a wallet app such as Microsoft Authenticator
-
-5. The wallet downloads the request from the link. The request includes:
-
- -  a standards based request for credentials of a schema or credential type.
- -  the DID of the RP, which the wallet looks up in the trust system.
-
-6. The wallet validates that the presentation request and finds stored VC(s) that satisfy the request. Based on the required VCs, the wallet guides the subject to select and consent to use the VCs.
-
- -  After the subject consents to use of the VC, the wallet generates a unique pairwise DID between the subject and the RP.
-
-Then, the wallet sends a presentation response payload to the Microsoft Entra Verified ID service signed by the subject. It contains:
-
- -  The VC(s) the subject consented to.
- -  The pairwise DID generated as the “subject” of the payload.
- -  The RP DID as the “audience” of the payload.
-
-7. The Microsoft Entra Verified ID service validates the response sent by the wallet. In some cases, the VC issuer can revoke the VC. To make sure the VC is still valid, the verifier needs to check with the VC issuer. This depends on how the verifier asked for the VC in step 2.
-
-8. Upon validation, the Microsoft Entra Verified ID service calls back the RP with the result.
+1.  The holder starts the flow by using a browser or native application to access the relying party’s web frontend.
+2.  The web frontend calls the Microsoft Entra Verified ID service to generate a VC presentation request.
+3.  The web frontend renders a link to the request as a QR code or a device-specific deep link (depending on the device).
+4.  The holder scans the QR code or deep link from step 3 using a wallet app such as Microsoft Authenticator
+5.  The wallet downloads the request from the link. The request includes:
+     -  A standards based request for credentials of a schema or credential type.
+6.  The wallet validates that the presentation request and finds stored VC(s) that satisfy the request. Based on the required VCs, the wallet guides the subject to select and consent to use the VCs.
+     -  After the subject consents to use of the VC, the wallet generates a unique pairwise DID between the subject and the RP.
+    
+    Then, the wallet sends a presentation response payload to the Microsoft Entra Verified ID service signed by the subject. It contains:
+    
+    
+     -  The VC(s) the subject consented to.
+     -  The pairwise DID generated as the “subject” of the payload.
+     -  The RP DID as the “audience” of the payload.
+7.  The Microsoft Entra Verified ID service validates the response sent by the wallet. In some cases, the VC issuer can revoke the VC. To make sure the VC is still valid, the verifier needs to check with the VC issuer. This depends on how the verifier asked for the VC in step 2.
+8.  Upon validation, the Microsoft Entra Verified ID service calls back the RP with the result.
 
 ## Key takeaways
 

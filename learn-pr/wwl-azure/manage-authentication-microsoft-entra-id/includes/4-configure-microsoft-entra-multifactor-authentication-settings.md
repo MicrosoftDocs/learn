@@ -54,13 +54,10 @@ To block a user, complete the following steps.
 
 To unblock a user, complete the following steps:
 
-Go to **Azure Active Directory** &gt; **Security** &gt; **Multifactor authentication** &gt; **Block and unblock users**.<br>
-
-In the Action column next to the user, **select Unblock**.
-
-Enter a comment in the Reason for the unblocking box.
-
-Select **OK** to unblock the user.
+1.  Go to **Azure Active Directory** &gt; **Security** &gt; **Multifactor authentication** &gt; **Block and unblock users**.<br>
+2.  In the Action column next to the user, **select Unblock**.
+3.  Enter a comment in the Reason for the unblocking box.
+4.  Select **OK** to unblock the user.
 
 ## Report suspicious activity
 
