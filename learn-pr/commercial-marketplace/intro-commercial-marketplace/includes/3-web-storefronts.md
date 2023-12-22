@@ -8,14 +8,14 @@ Azure Marketplace has thousands of solutions that are made to extend directly in
 
 Your customers can access the Azure Marketplace online store by visiting <https://azuremarketplace.microsoft.com>.
 
-:::image type="content" source="..\media\2-azure-marketplace-homepage.png" alt-text="Screenshot of the Azure Marketplace homepage with emphasis on "apps" and "consulting services" buttons.":::
+:::image type="content" source="..\media\2-azure-marketplace-homepage.png" alt-text="Screenshot of the Azure Marketplace homepage with emphasis on apps and consulting services buttons.":::
 
 :::image type="content" source="..\media\3-azure-marketplace-apps.png" alt-text="Screenshot of the Azure Marketplace apps landing page with emphasis on application categories and filters.":::
 <br>*Screenshots of the Azure Marketplace web storefront.*
 
 Because Azure Marketplace is a part of Azure, your customers can also access these solutions through [the Azure portal](https://portal.azure.com). Whenever Azure users select **Create a resource** on the Azure portal homepage, they’re accessing solutions from Azure Marketplace.
 
-:::image type="content" source="..\media\4-azure-portal-homepage-create-resource.png" alt-text="Screenshot of the Azure portal homepage with emphasis on the "Create a resource" button.":::
+:::image type="content" source="..\media\4-azure-portal-homepage-create-resource.png" alt-text="Screenshot of the Azure portal homepage with emphasis on the Create a resource button.":::
 
 :::image type="content" source="..\media\5-azure-marketplace-azure-portal-1.png" alt-text="Screenshot of the Azure portal new resource page with Azure Marketplace.":::
 
@@ -32,14 +32,14 @@ Microsoft AppSource contains business software that extends directly into Azure,
 
 Your customers can access the Microsoft AppSource online store by visiting <https://appsource.microsoft.com>.
 
-:::image type="content" source="..\media\7-microsoft-appsource-homepage.png" alt-text="Screenshot of Microsoft AppSource homepage with emphasis on "apps" and "consulting services" buttons.":::
+:::image type="content" source="..\media\7-microsoft-appsource-homepage.png" alt-text="Screenshot of Microsoft AppSource homepage with emphasis on apps and consulting services buttons.":::
 
 :::image type="content" source="..\media\8-microsoft-appsource-apps.png" alt-text="Screenshot of Microsoft AppSource apps landing page with emphasis on application categories and filters.":::
 <br>*Screenshots of the Microsoft AppSource online store.*
 
 AppSource apps are also available within Microsoft products by selecting **Get more apps** from the homepage in Dynamics 365, **Get apps** in Power BI, **Apps** in Teams, and **Insert\>Get Add-ins** in Microsoft 365 products (excluding Teams).
 
-:::image type="content" source="..\media\9-appsource-apps-powerbi.png" alt-text="Screenshot of Microsoft AppSource products from in-product "Get apps" page in Power BI.":::
+:::image type="content" source="..\media\9-appsource-apps-powerbi.png" alt-text="Screenshot of Microsoft AppSource products from in-product Get apps page in Power BI.":::
 <br>*Example of the Microsoft AppSource in-product experience from Power BI.*
 
 In addition to the cloud products that are available through the online store and in-product experiences, [Microsoft AppSource](https://appsource.microsoft.com) also lists consulting services provided by Microsoft partners. AppSource consulting services are organized by industry, service type, location, and Microsoft product type.
