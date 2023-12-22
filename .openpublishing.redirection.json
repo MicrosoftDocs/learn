@@ -31317,7 +31317,7 @@
     "redirect_document_id": false
   },
   {
-    "source_path": "/learn-pr/azure/azure-well-architected-cost-optimization/6-summary.yml"
+    "source_path": "/learn-pr/azure/azure-well-architected-cost-optimization/6-summary.yml",
     "redirect_url": "training/modules/azure-well-architected-cost-optimization/",
     "redirect_document_id": false
   }
