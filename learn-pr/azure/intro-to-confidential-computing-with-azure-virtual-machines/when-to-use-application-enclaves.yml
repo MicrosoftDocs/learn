@@ -5,8 +5,8 @@ metadata:
   title: When to use application enclaves versus VM-level confidentiality
   description: In this unit, you'll learn when to use application enclaves versus VM-level confidentiality.
   ms.date: 03/22/2023
-  author: cynthn
-  ms.author: cynthn
+  author: ju-shim
+  ms.author: jushiman
   ms.topic: unit
 durationInMinutes: 5
 content: |

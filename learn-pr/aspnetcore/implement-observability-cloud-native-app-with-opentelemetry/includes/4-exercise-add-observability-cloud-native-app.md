@@ -2,24 +2,38 @@ In this exercise, you'll add a new diagnostic project to your **:::no-loc text="
 
 ## Open the development environment and create the Azure resources
 
-1. In a new browser window, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your own GitHub account.
-1. To set up your development environment with a codespace, on the GitHub page for your forked repository:
+You can choose to use a GitHub codespace that hosts the exercise, or complete the exercise locally in Visual Studio Code.
 
-    - Select **Code**.
-    - Select the **Codespaces** tab.
-    - Select ... (Codespace repository configuration).
-    - Select **+ New with options**.
-    - Select the **Default project configuration** dropdown, then select **eShopLite - dotnet-observability**.
+To use a codespace create a pre-configured GitHub Codespace with this [Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-observability%2Fdevcontainer.json).
 
-1. To use Visual Studio Code:
-    - Make sure Docker is running. In a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
-    - Search for and select **Dev Containers: Clone Repository in Container Volume**.
-    - Select your forked repository. Visual Studio Code creates your development container locally.
+This takes several minutes while GitHub creates and configures the codespace. Once finished, you will see the code files for the exercise. The code used for the rest of this module is in the **/dotnet-observability** directory.
+
+To use Visual Studio Code:
+    1. Make sure Docker is running. In a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
+    1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
+    1. Select your forked repository. Visual Studio Code creates your development container locally.
+
+
+Follow these steps to create and run Docker containers in the codespace.
+
+1. When the setup is complete, within the **dotnet-observability** directory, open the file named **docker-compose.yml**.
+1. Switch to the **PORTS** tab, point at the **Forwarded Address** for the **Back End (32001)** port, and then click the **Copy Local Address** icon.
+
+1. Paste this URL into the `ImagePrefix` environment variable in the **docker-compose.yml** file, replacing the text `http://localhost`. 
+1. Append `images` to the pasted text:
+
+    ```docker-compose
+    environment: 
+      - ProductEndpoint=http://backend:8080
+      - ImagePrefix=https://studious-fortnight-4g4rx9g47wg249w-32001.app.github.dev/images
+    ```
 
 ### Add a diagnostic project to the solution
 
 The first step to adding observability to the **:::no-loc text="eShopLite":::** app is to introduce a new diagnostic project to the solution. This project contains all the OpenTelemetry packages and configurations that you'll use to add observability to the app.
 
+1. In the Visual Studio Code command palette enter **>.NET: Open Solution**
+1. Select **dotnet-observability/eShopLite/eShopLite.snl**
 1. In the **Solution Explorer**, at the bottom of the **EXPLORER** pane, right-click the **eShopLite** solution and then select **New Project**.
 1. In the **Select a template to create a new .NET project** dialog, select **Class Library (Common, Library)**.
 1. In the **Name** field, enter **Diagnostics**.
@@ -32,18 +46,18 @@ You'll now add the OpenTelemetry packages to the new diagnostic project.
 1. Using the **TERNINAL** pane at the bottom of Visual Studio Code, go to the **Diagnostics** project folder:
 
     ```bash
-    cd dotnet-observability\eShopLite\Diagnostics
+    cd dotnet-observability/eShopLite/Diagnostics
     ```
 1. Run these `dotnet add` commands:
 
     ```dotnetcli
-    dotnet add package OpenTelemetry.Exporter.Console --prerelease
-    dotnet add package OpenTelemetry.Extensions.Hosting --prerelease
-    dotnet add package OpenTelemetry.Instrumentation.AspNetCore --prerelease
+    dotnet add package OpenTelemetry.Exporter.Console
+    dotnet add package OpenTelemetry.Extensions.Hosting
+    dotnet add package OpenTelemetry.Instrumentation.AspNetCore
     dotnet add package OpenTelemetry.Instrumentation.EventCounters --prerelease
-    dotnet add package OpenTelemetry.Instrumentation.Runtime --prerelease
+    dotnet add package OpenTelemetry.Instrumentation.Runtime
     dotnet add package OpenTelemetry.Instrumentation.SqlClient --prerelease
-    dotnet add package OpenTelemetry.Instrumentation.Http --prerelease
+    dotnet add package OpenTelemetry.Instrumentation.Http
     ```
 1. In the **EXPLORER** pane, expand the **Diagnostics** folder and then select **Diagnostics.csproj**.
 1. Change the `Project Sdk` at the top to:
@@ -208,9 +222,9 @@ With the OpenTelemetry packages added, you'll now introduce the code to make use
 1. Select the **TERMINAL** tab, and scroll through the messages. Note there are messages from OpenTelemetry like:
 
     ```console
-    dotnet-observability-backend-1   | Export ec.Microsoft-AspNetCore-Server-Kestrel.connection-queue-length, Meter: OpenTelemetry.Instrumentation.EventCounters/1.5.1.1
-    dotnet-observability-backend-1   | (2023-11-09T19:55:14.8933518Z, 2023-11-09T20:04:44.8596671Z] http.request.method: PUT http.response.status_code: 200 http.route: /api/Stock/{id} network.protocol.name: http network.protocol.version: 1.1 url.scheme: http Histogram      
-    dotnet-observability-backend-1   | Value: Sum: 0.05144170000000001 Count: 4 Min: 0.0039736 Max: 0.0359739
+    backend-1   | Export ec.Microsoft-AspNetCore-Server-Kestrel.connection-queue-length, Meter: OpenTelemetry.Instrumentation.EventCounters/1.5.1.1
+    backend-1   | (2023-11-09T19:55:14.8933518Z, 2023-11-09T20:04:44.8596671Z] http.request.method: PUT http.response.status_code: 200 http.route: /api/Stock/{id} network.protocol.name: http network.protocol.version: 1.1 url.scheme: http Histogram      
+    backend-1   | Value: Sum: 0.05144170000000001 Count: 4 Min: 0.0039736 Max: 0.0359739
     ```
 
 You've successfully added OpenTelemetry to the **Products** service. In the next unit, you'll see how to make better use of the telemetry data by viewing it on tools like Prometheus and Grafana.
