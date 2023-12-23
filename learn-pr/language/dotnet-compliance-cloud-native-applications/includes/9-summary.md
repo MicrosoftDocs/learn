@@ -1,5 +1,9 @@
 All applications need a way to ensure that they don't leak sensitive information in their logs or telemetry. .NET provides a simple way to classify data and redact it. By applying classifications to all the microservices in your cloud-native application, you can ensure that no sensitive data is leaked.
 
+## Cleanup Codespace
+
+You can delete the codespace on [GitHub](https://github.com/codespaces) under **By repository** where you see **MicrosoftDocs/mslearn-dotnet-cloudnative**.
+
 ## References
 
 The following are links to the API references for the compliance features of .NET:

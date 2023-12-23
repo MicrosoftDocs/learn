@@ -14,18 +14,18 @@ OpenTelemetry provides an exporter for Prometheus. This exporter can be added to
 
 You'll add the endpoints for all the microservices in your app. For example:
 
-    ```yml
-    global:
-      scrape_interval: 1s
-    
-    scrape_configs:
-      - job_name: 'products'
-        static_configs:
-          - targets: ['backend:8080']
-      - job_name: 'store'
-        static_configs:
-          - targets: ['frontend:8080']
-    ```
+```yml
+global:
+  scrape_interval: 1s
+
+scrape_configs:
+  - job_name: 'products'
+    static_configs:
+      - targets: ['backend:8080']
+  - job_name: 'store'
+    static_configs:
+      - targets: ['frontend:8080']
+```
 
 ### Grafana
 
@@ -35,17 +35,17 @@ Grafana is an open-source visualization tool that can be used to create dashboar
 
 You'll add Prometheus as a data source to Grafana in a YAML file:
 
-    ```yml
-    apiVersion: 1
-    
-    datasources:
-    - name: Prometheus
-      type: prometheus
-      url: http://prometheus:9090 
-      isDefault: true
-      access: proxy
-      editable: true
-    ```
+```yml
+apiVersion: 1
+
+datasources:
+- name: Prometheus
+  type: prometheus
+  url: http://prometheus:9090 
+  isDefault: true
+  access: proxy
+  editable: true
+```
 
 ### Enable distributed tracing
 
