@@ -4,7 +4,6 @@ In the last unit, you created an initial network diagram, including a mapping of
 
 Monitor and mirror traffic to Defender for IoT that's most interesting to you from a security or operational perspective. Examine your OT network diagram with your site engineering, network, and operational teams to define where to find the most relevant traffic for monitoring across network devices and subnets.
 
-<!-- can site engineers and network and operational teams be combined?-->
 ### Devices
 
 Devices can be divided into:
@@ -57,11 +56,16 @@ Usually the interesting traffic points to monitor, security-wise, are the interf
 
 Consider the following traffic points in your network:
 
-- **Unique traffic types inside a segment** particularly:</br></br>
-  - **Broadcast / Multicast traffic**: Traffic sent to any entity within the subnet. Broadcast and multicast traffic is typically sent to all entities in the local IP subnet, including the default gateway entity, and is therefore also covered and monitored.</br></br>
-  - **Unicast traffic:** Traffic forwarded directly to the destination, without crossing the entire subnet endpoints, including the default gateway. Unicast traffic can be monitored by placing sensors directly on the access switches.</br></br>
-- **Directional traffic streams:** Some vendors and products allow a traffic stream direction, which can cause a data gap. Monitor both traffic directions to get network conversation information about your subnets and better accuracy.</br></br>
-- **A subnet's default gateway:** For each interesting subnet, a connection to the entity that acts as the network subnet default gateway is the interesting point.  Sometimes there's subnet traffic unmonitored by the regular interesting point. Monitoring this otherwise unmonitored type of traffic is useful, especially on sensitive subnets.</br></br>
+- **Unique traffic types inside a segment** particularly:
+
+  - **Broadcast / Multicast traffic**: Traffic sent to any entity within the subnet. Broadcast and multicast traffic is typically sent to all entities in the local IP subnet, including the default gateway entity, and is therefore also covered and monitored.
+  
+  - **Unicast traffic:** Traffic forwarded directly to the destination, without crossing the entire subnet endpoints, including the default gateway. Unicast traffic can be monitored by placing sensors directly on the access switches.
+
+- **Directional traffic streams:** Some vendors and products allow a traffic stream direction, which can cause a data gap. Monitor both traffic directions to get network conversation information about your subnets and better accuracy.
+
+- **A subnet's default gateway:** For each interesting subnet, a connection to the entity that acts as the network subnet default gateway is the interesting point.  Sometimes there's subnet traffic unmonitored by the regular interesting point. Monitoring this otherwise unmonitored type of traffic is useful, especially on sensitive subnets.
+
 - **Atypical traffic:**   To monitor otherwise unmonitored traffic might require extra streaming points and network solutions, such as RSPAN or network tappers.
 
 ## List your planned OT sensors
@@ -70,7 +74,7 @@ With the information about what traffic you want to monitor with Defender for Io
 
 For each sensor include:
 
-- Cloud connection method
+- For any cloud-connected sensors, the cloud connection method
 - Whether appliances are physical or virtual
 - Assigned sensor site and zone
 - Traffic mirroring method
@@ -85,7 +89,7 @@ The following table shows a sample part of a deployment plan for your car manufa
 |**Tianjin office** |- Ground floor (Offices)<br> - Floors 1-2 (Factory)| tianjin-office <br>tianjin-factory | Yes <br>No |
 
 ## Knowledge check
-
+<!--let's get Sagi to comment on these questions-->
 :::image type="complex" source="../media/3-sample-network-diagram-knowledge-check.png" alt-text="Diagram of a sample network diagram." border="false":::
 
 Figure 1 shows a sample diagram of a network in a building of three floors, where each floor houses both endpoints and switches. The third floor also houses firewalls, core switches, a server, and routers. A blue dotted line depicts traffic traveling outside of the IP segment, traveling throughout floor one and two and up to a server connected to a core server on floor 3. Interesting traffic is depicted in red from two switches on floor two to each of the firewalls on floor three. In addition, there's a Defender for IoT sensor with the question where should the Defender for IoT sensor be connected and three choices: A- to the switch for interesting traffic between on floor two, B- to the switch where traffic is traveling outside of the IP segment on level two, or C- to the switch for traffic is traveling outside of the IP segment on level one.

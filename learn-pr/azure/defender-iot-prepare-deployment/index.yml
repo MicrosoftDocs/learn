@@ -16,8 +16,8 @@ abstract: |
   By the end of this module, you'll be able to:
   Analyze a network diagram to identify devices and subnets to monitor with Defender for IoT. 
 
-    - Analyze a network diagram to identify where to place Defender for IoT network sensors and how they should be configured.
     - Analyze a network diagram to identify devices and subnets to monitor with Defender for IoT.
+    - Analyze a network diagram to identify where to place Defender for IoT network sensors and how they should be configured.
     - Choose a traffic mirroring method for each sensor.
     - Compare the appliance options available for use with Defender for IoT network sensors.
 prerequisites: |
