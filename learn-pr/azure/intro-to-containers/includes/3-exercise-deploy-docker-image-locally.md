@@ -27,10 +27,10 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
 
     You should see a repository named *mcr.microsoft.com/dotnet/samples* with a tag of *aspnetapp*.
 
-1. Enter the following code to start the sample app. The *-d* flag is to run it as a background, non-interactive app. The *-p* flag is to map port 80 in the container that's created to port 8080 locally. This setting is intended to avoid conflicts with any web apps already running on your computer. The command will respond with a lengthy hexadecimal identifier for the instance.
+1. Enter the following code to start the sample app. The *-d* flag is to run it as a background, non-interactive app. The *-p* flag is to map port 8080 in the container that's created to port 8080 locally. This setting is intended to avoid conflicts with any web apps already running on your computer. The command will respond with a lengthy hexadecimal identifier for the instance.
 
     ```bash
-    docker run -d -p 8080:80 mcr.microsoft.com/dotnet/samples:aspnetapp
+    docker run -d -p 8080:8080 mcr.microsoft.com/dotnet/samples:aspnetapp
     ```
 
 1. Open a web browser and enter the URL for the sample web app: `http://localhost:8080`. You should see a page that looks like the following screenshot:
@@ -52,7 +52,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
    96c851831ade   mcr.microsoft.com/dotnet/samples:aspnetapp   "dotnet aspnetapp.dll"   22 minutes ago   Up 22 minutes   0.0.0.0:8080->80/tcp   eager_montalcini
    ```
 
-   The **COMMAND** field shows the container started by running the command *dotnet aspnetapp.dll*. This command invokes the .NET Core runtime to start the code in the aspnetapp.dll (the code for the sample web app). The *PORTS* field indicates that port 80 in the image was mapped to port 8080 on your computer. The *STATUS* field shows the application is still running. Make a note of the container's *NAME*.
+   The **COMMAND** field shows the container started by running the command *dotnet aspnetapp.dll*. This command invokes the .NET Core runtime to start the code in the aspnetapp.dll (the code for the sample web app). The *PORTS* field indicates that port 8080 in the image was mapped to port 8080 on your computer. The *STATUS* field shows the application is still running. Make a note of the container's *NAME*.
 
 1. Run the following command to stop the Docker container, replacing the placeholder `<NAME>` with the output name from the previous command.
 
