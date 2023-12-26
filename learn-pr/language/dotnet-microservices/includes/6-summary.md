@@ -12,7 +12,11 @@ Using containers is a common approach to building microservices. Each applicatio
 
 A Docker file is a text file that contains instructions for how to build a Docker image. A Docker Compose file is a YAML file that groups together several Docker containers for build and deployment.
 
-Finally, .NET was built to be cloud native first. It runs cross-platform, so your Docker image can be based on a flavor of Linux, and your .NET code still runs. .NET is extremely fast, and Microsoft has already created .NET images for Docker.
+Finally, .NET was built to be cloud-native first. It runs cross-platform, so your Docker image can be based on a flavor of Linux, and your .NET code still runs. .NET is extremely fast, and Microsoft has already created .NET images for Docker.
+
+## Cleanup Codespace
+
+You can delete the codespace on [GitHub](https://github.com/codespaces) under **By repository** where you see **MicrosoftDocs/mslearn-dotnet-cloudnative**.
 
 ## Related content
 
