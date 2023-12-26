@@ -56,7 +56,7 @@ Access Reviews for Service Principals require a Microsoft Entra Workload ID Prem
 
 13. In **assignment type**, scope the review by how the principal was assigned to the role. Choose eligible assignments only to review eligible assignments (regardless of activation status when the review is created) or active assignments only to review active assignments. Choose all active and eligible assignments to review all assignments regardless of type.<br>
 
-:::image type="content" source="../media/new-all-active-and-eligible-assignments-6f5e4553.png" alt-text="Screenshot showing how to scope the review by how the principal was assigned to the role.":::
+:::image type="content" source="../media/new-all-active-eligible-assignments-2b24e9e1.png" alt-text="Screenshot showing how to scope the review by how the principal was assigned to the role.":::
 
 
 14. In the **Reviewers** section, select one or more people to review all the users. Or you can select to have the members review their own access.
@@ -86,7 +86,7 @@ Access Reviews for Service Principals require a Microsoft Entra Workload ID Prem
 
 4. Use the Action to apply on denied guest users list to specify what happens for guest users that are denied. This setting is not editable for Microsoft Entra ID and Azure resource role reviews at this time; guest users, like all users, will always lose access to the resource if denied.
 
-:::image type="content" source="../media/new-action-to-apply-on-denied-guest-users-d9e202eb.png" alt-text="Screenshot showing the upon completion settings page.":::
+:::image type="content" source="../media/new-action-apply-denied-guest-users-f3a37a2a.png" alt-text="Screenshot showing the upon completion settings page.":::
 
 
 5. You can send notifications to additional users or groups to receive review completion updates. This feature allows for stakeholders other than the review creator to be updated on the progress of the review. To use this feature, select Select User(s) or Group(s) and add an additional user or group upon you want to receive the status of completion.
@@ -111,4 +111,4 @@ Access Reviews for Service Principals require a Microsoft Entra Workload ID Prem
 
 6. The content of the email sent to reviewers is auto-generated based on the review details, such as review name, resource name, due date, etc. If you need a way to communicate additional information such as additional instructions or contact information, you can specify these details in the Additional content for reviewer email which will be included in the invitation and reminder emails sent to assigned reviewers. The highlighted section below is where this information will be displayed.<br>
 
-:::image type="content" source="../media/new-additional-content-for-reviewer-email-f31d58d9.png" alt-text="Screenshot showing an example of an action required access review email notification.":::
+:::image type="content" source="../media/new-additional-content-reviewer-email-28fef53a.png" alt-text="Screenshot showing an example of an action required access review email notification.":::

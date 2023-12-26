@@ -18,7 +18,7 @@ There are two main steps to the role assignment process. First you'll select the
 
 4. Select **Assigned roles** from the side menu, then select **Add assignments**.
 
-:::image type="content" source="../media/new-assigned-user-92b7224a.png" alt-text="creenshot showing the users basic information.":::
+:::image type="content" source="../media/new-assigned-user-92b7224a.png" alt-text="Screenshot showing the users basic information.":::
 
 
 5. Select a role to assign from the dropdown list and select the **Next** button.<br>

@@ -6,9 +6,9 @@ Azure role-based access control (Azure RBAC) is the authorization system you use
 
  -  `Microsoft.Authorization/roleAssignments/write permissions`, such as **User Access Administrator** or **Owner**.<br>
 
-## **Step 1**: **Identify the needed scope**
+## Step 1: Identify the needed scope
 
-:::image type="content" source="../media/new-identify-the-needed-scope-a243d799.png" alt-text="Diagram showing role assignment scopes.":::
+:::image type="content" source="../media/new-identify-needed-scope-a33e5d5b.png" alt-text="Diagram showing role assignment scopes.":::
 
 
 1. Sign in to the **Azure portal**.
@@ -47,7 +47,7 @@ Access control (IAM) is the page that you typically use to assign roles to grant
 
 You can search for a role by name or by description. You can also filter roles by type and category.
 
-:::image type="content" source="../media/new-select-the-appropriate-role-df0476d8.png" alt-text="Screenshot showing how to assign a privileged administrator role.":::
+:::image type="content" source="../media/new-select-appropriate-role-eb0903fd.png" alt-text="Screenshot showing how to assign a privileged administrator role.":::
 
 
 2. If you want to assign a privileged administrator role, select the **Privileged administrator roles** tab to select the role.
@@ -118,7 +118,7 @@ If you selected one of the following privileged roles, follow the steps in this 
 
 1. On the **Conditions** tab under **Delegation type**, select the **Constrained (recommended)** option.
 
-:::image type="content" source="../media/new-pay-as-you-go-access-control-4f0db08f.png" alt-text="Screenshot showing the pay as you go access control page.":::
+:::image type="content" source="../media/new-pay-you-go-access-control-4a30ad46.png" alt-text="Screenshot showing the pay as you go access control page.":::
 
 
 2. Click **Add condition** to add a condition that constrains the roles and principals this user can assign roles to.
@@ -127,7 +127,7 @@ If you selected one of the following privileged roles, follow the steps in this 
 
 1. On the **Review + assign** tab, review the role assignment settings.
 
-:::image type="content" source="../media/new-assign-role-and-review-16f6702e.png" alt-text="Screenshot showing the review and assign page.":::
+:::image type="content" source="../media/new-review-assign-195b45e7.png" alt-text="Screenshot showing the review and assign page.":::
 
 
 2. Click **Review + assign** to assign the role.<br>

@@ -24,7 +24,7 @@ Custom roles can be created in the Roles and administrators page of the Microsof
 
 6. First, enter "credentials" in the search bar and select the `microsoft.directory/applications/credentials/update permission`.
 
-:::image type="content" source="../media/new-new-custom-role-permissions-tab-a28c0c5d.png" alt-text="Screenshot showing the new custom role permissions page.":::
+:::image type="content" source="../media/new-custom-role-permissions-tab-a68d25de.png" alt-text="Screenshot showing the new custom role permissions page.":::
 
 
 7. Next, enter "**basic**" in the search bar, select the **`microsoft.directory/applications/basic/update permission`**, and then click **Next**.

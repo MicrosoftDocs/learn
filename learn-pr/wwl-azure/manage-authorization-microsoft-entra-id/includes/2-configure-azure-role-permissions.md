@@ -11,6 +11,6 @@ To assign Azure roles, you must have:
 :::image type="content" source="../media/configure-azure-role-permissions-a276efb5.png" alt-text="Diagram showing Azure role permissions.":::
 
 
-## To assign Azure roles, complete the following high-level steps:<br>
+## To assign Azure roles, complete the following high-level steps: <br>
 
 :::image type="content" source="../media/configure-azure-role-permissions-a276efb5.png" alt-text="Diagram showing high-level steps to assign Azure roles.":::

@@ -23,8 +23,15 @@ For Azure resource roles in Privileged Identity Management, only a subscription 
 
 To better understand Privileged Identity Management and its documentation, you should review the following terms.
 
-:::image type="content" source="../media/microsoft-entra-terminology-table-9e977793.png" alt-text="Table showing examples of Privileged Identity Management terminology.":::
-
+| **Term**                   | **Definition**                                                                                                                                                                                             |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| action                     | An activity a security principal can perform on an object type. Sometimes referred to as an operation.                                                                                                     |
+| permission                 | A definition that specifies the activity a security principal can perform on an object type. A permission includes one or more actions.                                                                    |
+| privileged permission      | In Microsoft Entra ID, permissions that can be used to delegate management of directory resources to other users, modify credentials, authentication or authorization policies, or access restricted data. |
+| privileged role            | A built-in or custom role that has one or more privileged permissions.                                                                                                                                     |
+| privileged role assignment | A role assignment that uses a privileged role.                                                                                                                                                             |
+| elevation of privilege     | When a security principal obtains more permissions than their assigned role initially provided by impersonating another role.                                                                              |
+| protected action           | Permissions with Conditional Access applied for added security.                                                                                                                                            |
 
 ## Role assignment overview
 

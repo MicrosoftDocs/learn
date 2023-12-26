@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-authorization-microsoft-entra-id.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 12/26/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of Privileged Identity Management?"
+    choices:
+    - content: "Allows users to manage their own access permissions"
+      isCorrect: false
+      explanation: "Incorrect. This would increase the risk of unnecessary access permissions."
+    - content: "Provides unlimited access permissions to all resources"
+      isCorrect: false
+      explanation: "Incorrect. This would increase the risk of excessive and misused access permissions."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Privileged Identity Management provides time-based and approval-based role activation to mitigate the risks of excessive, unnecessary, or misused access permissions on resources that you care about."
+  - content: "What is the purpose of Just In Time and Just Enough Access policies when assigning roles?"
+    choices:
+    - content: "To grant unlimited access to all users"
+      isCorrect: false
+      explanation: "Incorrect. Granting unlimited access to all users is not aligned with Zero Trust guiding principles."
+    - content: "To assign roles permanently without any time restrictions"
+      isCorrect: false
+      explanation: "Incorrect. Assigning roles permanently without any time restrictions is not aligned with Just In Time and Just Enough Access policies."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Just In Time and Just Enough Access policies align with Zero Trust guiding principles by granting access only when needed and for a limited time period, reducing the attack surface and minimizing the risk of unauthorized access."
