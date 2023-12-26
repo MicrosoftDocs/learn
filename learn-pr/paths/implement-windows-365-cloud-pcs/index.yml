@@ -44,7 +44,5 @@ subjects:
 modules:
 - learn.wwl.examine-windows-365
 - learn.wwl.provision-windows-365-cloud-pcs
-- learn.wwl.explore-windows-365-cloud-pc-management
-- learn.wwl.manage-apps-windows-365-cloud-pcs
 trophy:
   uid: learn.wwl.implement-windows-365-cloud-pcs.trophy
