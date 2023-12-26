@@ -3,7 +3,10 @@
 1.  Register
 2.  Scan and Ingest
 3.  Classify
-4.  Label (**Note**: Labeling in the Microsoft Purview Data Map is currently in **PREVIEW**.)
+4.  Label
+    
+    > [!NOTE]
+    > Labeling in the Microsoft Purview Data Map is currently in **PREVIEW**.
 
 ### Supplemental Terms of Use for Microsoft Azure Previews
 
@@ -13,7 +16,8 @@ Certain named Previews are subject to additional terms set forth below, if any. 
 
 ### Register a new source
 
-You'll need to be a Data Source Admin and one of the other Purview roles (for example, Data Reader or Data Share Contributor) to register a source and manage it in the Microsoft Purview governance portal.
+> [!NOTE]
+> You'll need to be a Data Source Admin and one of the other Purview roles (for example, Data Reader or Data Share Contributor) to register a source and manage it in the Microsoft Purview governance portal.
 
 In Microsoft Purview, after you register your data source, you can scan your source to capture technical metadata, extract schema, and apply classifications to your data.
 
@@ -36,7 +40,7 @@ Scanning and Ingestion features in Microsoft Purview connect your Microsoft Purv
      -  Data source scans - scanned metadata is added to the Microsoft Purview Data Map.
      -  Lineage connections - transformation resources add metadata about their sources, outputs, and activities to the Microsoft Purview Data Map.
 
-:::image type="content" source="../media/new-scans-and-injestion-c87444bf.png" alt-text="Screenshot showing an example of scans and ingestion in Microsoft Purview.":::
+:::image type="content" source="../media/new-scans-injestion-2ae96853.png" alt-text="Screenshot showing an example of scans and ingestion in Microsoft Purview.":::
 
 
 ### Scanning
@@ -74,7 +78,7 @@ Classification is the process of organizing data into *logical categories* that 
  -  Organize and understand the variety of data classes that are important in your organization and where they're stored.
  -  Understand the risks associated with your most important data assets and then take appropriate measures to mitigate them.
 
-:::image type="content" source="../media/new-use-of-classification-5e031f48.png" alt-text="Screenshot showing an example of the customer Azure SQL Table.":::
+:::image type="content" source="../media/new-use-classification-e630e050.png" alt-text="Screenshot showing an example of the customer Azure SQL Table.":::
 
 
 ### Types of classification<br>
@@ -89,11 +93,13 @@ The Microsoft Purview governance portal supports both system and custom classifi
 
     Let's say that the Employee ID column follows the EMPLOYEE\{GUID\} pattern (for example, EMPLOYEE9c55c474-9996-420c-a285-0d0fc23f1f55). You can create your own custom classification by using a regular expression, such as \\^Employee\\\[A-Za-z0-9\\\]\{8\}-\\\[A-Za-z0-9\\\]\{4\}-\\\[A-Za-z0-9\\\]\{4\}-\\\[A-Za-z0-9\\\]\{4\}-\\\[A-Za-z0-9\\\]\{12\}\\$.
 
-Sensitivity labels are different from classifications. Sensitivity labels categorize assets in the context of data security and privacy, such as *Highly Confidential*, *Restricted*, *Public*, and so on. To use sensitivity labels in the Microsoft Purview Data Map, you'll need at least one Microsoft 365 license or account within the same Microsoft Entra tenant as your Microsoft Purview Data Map.
+> [!NOTE]
+> Sensitivity labels are different from classifications. Sensitivity labels categorize assets in the context of data security and privacy, such as *Highly Confidential*, *Restricted*, *Public*, and so on. To use sensitivity labels in the Microsoft Purview Data Map, you'll need at least one Microsoft 365 license or account within the same Microsoft Entra tenant as your Microsoft Purview Data Map.<br>
 
 ### Labeling in the Microsoft Purview Data Map
 
-Labeling in the Microsoft Purview Data Map is currently in PREVIEW. The Supplemental Terms of Use for Microsoft Azure Previews include additional legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
+> [!IMPORTANT]
+> Labeling in the Microsoft Purview Data Map is currently in PREVIEW. The Supplemental Terms of Use for Microsoft Azure Previews include additional legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.<br>
 
 To get work done, people in your organization collaborate with others both inside and outside the organization. Data doesn't always stay in your cloud, and often roams everywhere, across devices, apps, and services. When your data roams, you still want it to be secure in a way that meets your organization's business and compliance policies.
 
@@ -124,7 +130,8 @@ Being able to apply labels to your asset in the data map requires you to perform
 3.  Microsoft Purview applies **classifications**: When you schedule a scan on an asset, Microsoft Purview scans the type of data in your asset and applies classifications to it in the data map. Application of classifications is done automatically by Microsoft Purview, there's no action for you.
 4.  Microsoft Purview applies **labels**: Once classifications are found on an asset, Microsoft Purview will apply labels to the assets depending on autolabeling rules. Application of labels is done automatically by Microsoft Purview, there's no action for you as long as you have created labels with autolabeling rules in step 1.
 
-**Autolabeling rules** are conditions that you specify, stating when a particular label should be applied. When these conditions are met, the label is automatically assigned to the data. When you create your labels, make sure to define autolabeling rules for both files and database columns to apply your labels automatically with each scan.
+> [!NOTE]
+> **Autolabeling rules** are conditions that you specify, stating when a particular label should be applied. When these conditions are met, the label is automatically assigned to the data. When you create your labels, make sure to define autolabeling rules for both files and database columns to apply your labels automatically with each scan.<br>
 
 ### Labeling for SQL databases
 
