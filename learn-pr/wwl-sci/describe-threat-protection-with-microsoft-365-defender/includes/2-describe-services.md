@@ -2,7 +2,7 @@ Microsoft Defender XDR is an enterprise defense suite that protects against soph
 
 This short three-minute video provides an essential overview of Microsoft Defender XDR.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IPYr]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww]
 
 Microsoft Defender XDR allows admins to assess threat signals from endpoints, applications, email, and identities to determine an attack's scope and impact. It gives greater insight into how the threat occurred, and what systems have been affected. Microsoft Defender XDR can then take automated action to prevent or stop the attack.
 
