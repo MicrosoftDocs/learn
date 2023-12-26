@@ -85,6 +85,7 @@ public static class DiagnosticServiceCollectionExtensions
     routes.MapPrometheusScrapingEndpoint();
   }
 }
+```
 
 The method returns an `IServiceCollection` that can be added as a service to an ASP.NET Core `WebApplicationBuilder`.
 
