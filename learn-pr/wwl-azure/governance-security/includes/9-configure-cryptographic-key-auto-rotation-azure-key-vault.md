@@ -14,11 +14,11 @@ There's an additional cost per scheduled key rotation.
 
 Key Vault key rotation feature requires key management permissions. You can assign a "Key Vault Crypto Officer" role to manage rotation policy and on-demand rotation.
 
-Key rotation policy
+## Key rotation policy
 
 The key rotation policy allows users to configure rotation and Event Grid notifications near expiry notification.
 
-## Key rotation policy settings:
+Key rotation policy settings:
 
  -  Expiry time: key expiration interval. It's used to set expiration date on newly rotated key. It doesn't affect a current key.
  -  Enabled/disabled: flag to enable or disable rotation for the key
@@ -28,33 +28,33 @@ The key rotation policy allows users to configure rotation and Event Grid notifi
  -  Rotation time: key rotation interval, the minimum value is seven days from creation and seven days from expiration time
  -  Notification time: key near expiry event interval for Event Grid notification. It requires 'Expiry Time' set on rotation policy and 'Expiration Date' set on the key.
 
-:::image type="content" source="../media/key-rotation-1-7ed28097.png" alt-text="Screenshot showing an example of the Rotation policy page.":::
+:::image type="content" source="../media/new-key-rotation-policy-f64c44cf.png" alt-text="Screenshot showing an example of the Rotation policy page.":::
 
 
 ## Configure key rotation policy
 
 Configure key rotation policy during key creation.
 
-:::image type="content" source="../media/key-rotation-2-3b9ea143.png" alt-text="Screenshot showing an example of the configure key rotation policy page.":::
+:::image type="content" source="../media/new-key-rotation-policy-2-67ee5fd8.png" alt-text="Screenshot showing an example of the configure key rotation policy page.":::
 
 
 Configure rotation policy on existing keys.
 
-:::image type="content" source="../media/key-rotation-3-b34e6ea5.png" alt-text="Screenshot showing an example of how to configure a rotation policy on existing keys.":::
+:::image type="content" source="../media/new-key-rotation-policy-3-b498fd2e.png" alt-text="Screenshot showing an example of how to configure rotation policy on existing keys.":::
 
 
 ## Rotation on demand
 
 Key rotation can be invoked manually.
 
-:::image type="content" source="../media/key-rotation-4-09d004a7.png" alt-text="Screenshot showing an example of how to revoke a rotation.":::
+:::image type="content" source="../media/new-key-rotation-policy-4-82a22310.png" alt-text="Screenshot showing an example of how to invoke a key rotation manually.":::
 
 
 ## Configure key near expiry notification
 
 Configuration of expiry notification for Event Grid key near expiry event. In case when automated rotation cannot be used, like when a key is imported from local HSM, you can configure near expiry notification as a reminder for manual rotation or as a trigger to custom automated rotation through integration with Event Grid. You can configure notification with days, months and years before expiry to trigger near expiry event.
 
-:::image type="content" source="../media/key-rotation-5-3a362cfa.png" alt-text="Screenshot showing an example of how to configure key near expiry notification.":::
+:::image type="content" source="../media/new-key-rotation-policy-5-c005d18e.png" alt-text="Screenshot showing an example of how to configure key near expiry notification.":::
 
 
 ## Configure key rotation policy governance
@@ -74,11 +74,13 @@ Using the Azure Policy service, you can govern the key lifecycle and ensure that
  -  Define the scope of the policy by choosing the subscription and resource group over which the policy will be enforced. Select by clicking the three-dot button at on **Scope** field.
  -  Select the name of the policy definition: "Keys should have a rotation policy ensuring that their rotation is scheduled within the specified number of days after creation. "
  -  Go to the **Parameters** tab at the top of the page.
-     -  Set **The maximum days to rotate** parameter to desired number of days for example, 730.
-     -  Define the desired effect of the policy (Audit, or Disabled).
+ -  Set **The maximum days to rotate** parameter to desired number of days for example, 730.
+ -  Define the desired effect of the policy (Audit, or Disabled).
 
 5. Fill out any additional fields. Navigate the tabs clicking on **Previous** and **Next** buttons at the bottom of the page.
 
 6. Select **Review + create**
 
 7. Select **Create**
+
+Once the built-in policy is assigned, it can take up to 24 hours to complete the scan. After the scan is completed, you can see compliance results like below.

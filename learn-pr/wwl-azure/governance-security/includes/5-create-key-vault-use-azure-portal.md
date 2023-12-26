@@ -31,7 +31,7 @@ Take note of these two properties:
 
 At this point, your Azure account is the only one authorized to perform operations on this new vault.
 
-:::image type="content" source="../media/vault-properties-1c9cf888.png" alt-text="Screenshot showing the Azure Key Vault overview page in the Azure dashboard.":::
+:::image type="content" source="../media/new-vault-properties-b86d5e10.png" alt-text="Screenshot showing the Azure Key Vault overview page in the Azure dashboard.":::
 
 
 ## Configure Azure Key Vault networking settings<br>

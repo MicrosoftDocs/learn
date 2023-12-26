@@ -33,8 +33,12 @@ A policy can be included as one of many *artifacts* in a blueprint definition. B
 
 A blueprint is composed of *artifacts*. Azure Blueprints currently supports the following resources as artifacts:
 
-:::image type="content" source="../media/azure-blueprint-definition-resource-artifacts-145cce58.png" alt-text="Screenshot of table showing blueprint definitions.":::
-
+| **Resource**                    | **Hierarchy options**        | **Description**                                                                                                                                                                                                                                                                                                              |
+| ------------------------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Resource Groups                 | Subscription                 | Create a new resource group for use by other artifacts within the blueprint. These placeholder resource groups enable you to organize resources exactly the way you want them structured and provides a scope limiter for included policy and role assignment artifacts and ARM templates.                                   |
+| Azure Resource Manager template | Subscription, Resource Group | Templates, including nested and linked templates, are used to compose complex environments. Example environments: a SharePoint farm, Azure Automation State Configuration, or a Log Analytics workspace.                                                                                                                     |
+| Policy Assignment               | Subscription, Resource Group | Allows assignment of a policy or initiative to the subscription the blueprint is assigned to. The policy or initiative must be within the scope of the blueprint definition location. If the policy or initiative has parameters, these parameters are assigned at creation of the blueprint or during blueprint assignment. |
+| Role Assignment                 | Subscription, Resource Group | Add an existing user or group to a built-in role to make sure the right people always have the right access to your resources. Role assignments can be defined for the entire subscription or nested to a specific resource group included in the blueprint.                                                                 |
 
 ## Blueprint definition locations
 
@@ -81,8 +85,12 @@ To assign or unassign a blueprint, your account needs the following permissions:
 
 The following built-in roles are available:
 
-:::image type="content" source="../media/azure-built-in-roles-blueprints-405372ee.png" alt-text="Screenshot of table showing Azure built-in roles for blueprints.":::
-
+| **Azure role**        | **Description**                                                                                                                                                                        |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Owner                 | In addition to other permissions, includes all Azure Blueprints related permissions.                                                                                                   |
+| Contributor           | In addition to other permissions, can create and delete blueprint definitions, but doesn't have blueprint assignment permissions.                                                      |
+| Blueprint Contributor | Can manage blueprint definitions, but not assign them.                                                                                                                                 |
+| Blueprint Operator    | Can assign existing published blueprints, but can't create new blueprint definitions. Blueprint assignment only works if the assignment is done with a user-assigned managed identity. |
 
 If these built-in roles don't fit your security needs, consider creating a custom role.
 

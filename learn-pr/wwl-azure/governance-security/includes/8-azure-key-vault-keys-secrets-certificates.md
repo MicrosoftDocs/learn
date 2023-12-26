@@ -12,7 +12,7 @@ When a Key Vault certificate is created, an addressable key and secret are also 
 
 The identifier and version of certificates are similar to those of keys and secrets. A specific version of an addressable key and secret created with the Key Vault certificate version is available in the Key Vault certificate response.
 
-:::image type="content" source="../media/azure-key-vault-12ba98f2.png" alt-text="Diagram showing an example of a composition of a certificate.":::
+:::image type="content" source="../media/new-azure-key-vault-ba92f519.png" alt-text="Diagram showing an example of a composition of a certificate.":::
 
 
 ## Exportable or non-exportable key
@@ -23,7 +23,14 @@ The addressable key becomes more relevant with non-exportable Key Vault certific
 
 The following table lists supported key types.
 
-:::image type="content" source="../media/key-vault-key-types-ef8d6cf8.png" alt-text="Screenshot of table showing Key Vault key types.":::
+| **Key type** | **About**                                           | **Security**           |
+| ------------ | --------------------------------------------------- | ---------------------- |
+| RSA          | Software-protected RSA key                          | FIPS 140-2 Level 1     |
+| RSA-HSM      | HSM-protected RSA key (Premium SKU only)            | FIPS 140-2 Level 2 HSM |
+| EC           | Software-protected elliptic curve key               | FIPS 140-2 Level 1     |
+| EC-HSM       | HSM-protected elliptic curve key (Premium SKU only) | FIPS 140-2 Level 2 HSM |
+| oct          | Software-protected octet key                        | FIPS 140-2 Level 1     |
+
 Exportable keys are allowed only with RSA and EC. HSM keys are non-exportable.
 
 ## Certificate attributes and tags
@@ -77,8 +84,16 @@ At a high level, a certificate policy contains the following information:
 
 The following table represents the mapping of X.509 key usage policies to effective key operations of a key that's created as part of Key Vault certificate creation.
 
-:::image type="content" source="../media/map-usage-key-operations-68f16144.png" alt-text="Screenshot of  table showing mapping X.509 usage to key operations.":::
-
+| **X.509 key usage flags** | **Key Vault key operations** | **Default behavior**                                                         |
+| ------------------------- | ---------------------------- | ---------------------------------------------------------------------------- |
+| DataEncipherment          | encrypt, decrypt             | Not applicable                                                               |
+| DecipherOnly              | decrypt                      | Not applicable                                                               |
+| DigitalSignature          | sign, verify                 | Key Vault default without a usage specification at certificate creation time |
+| EncipherOnly              | encrypt                      | Not applicable                                                               |
+| KeyCertSign               | sign, verify                 | Not applicable                                                               |
+| KeyEncipherment           | wrapKey, unwrapKey           | Key Vault default without a usage specification at certificate creation time |
+| NonRepudiation            | sign, verify                 | Not applicable                                                               |
+| crlsign                   | sign, verify                 | Not applicable                                                               |
 
 ## Certificate issuer
 
@@ -86,7 +101,11 @@ A Key Vault certificate object holds a configuration that's used to communicate 
 
 Key Vault partners with the following certificate issuer providers for Transport Layer Security/Secure Sockets Layer certificates.
 
-:::image type="content" source="../media/transport-layer-security-certificates-384dd794.png" alt-text="Screenshot of table showing certificate issuer providers for TLS/SSL certificates.":::
+| **Provider name** | **Locations**                                                                     |
+| ----------------- | --------------------------------------------------------------------------------- |
+| DigiCert          | Supported in all Key Vault service locations in public cloud and Azure Government |
+| GlobalSign        | Supported in all Key Vault service locations in public cloud and Azure Government |
+
 Before a certificate issuer can be created in a key vault, an administrator must take the following prerequisite steps:<br>
 
 1.  Onboard the organization with at least one CA provider.
