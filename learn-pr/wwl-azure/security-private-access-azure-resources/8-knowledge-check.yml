@@ -18,10 +18,10 @@ quiz:
     choices:
     - content: "To provide additional storage for virtual machines"
       isCorrect: false
-      explanation: "Incorrect. Azure App Service is not used to provide additional storage for virtual machines."
+      explanation: "Incorrect. Azure App Service isn't used to provide additional storage for virtual machines."
     - content: "To enable automatic scaling of virtual networks"
       isCorrect: false
-      explanation: "Incorrect. Azure App Service is not used to enable automatic scaling of virtual networks."
+      explanation: "Incorrect. Azure App Service isn't used to enable automatic scaling of virtual networks."
     - content: "To host web and mobile applications"
       isCorrect: true
       explanation: "Correct. Azure App Service is a fully managed platform for building, deploying, and scaling web and mobile applications."
