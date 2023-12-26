@@ -9676,6 +9676,81 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/wwl-azure/examine-device-provisioning-service-terms-concepts/index.yml",
+      "redirect_url": "/training/modules/introduction-to-device-provisioning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-device-provisioning-service-terms-concepts/1-introduction.yml",
+      "redirect_url": "/training/modules/introduction-to-device-provisioning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-device-provisioning-service-terms-concepts/2-devices-device-provisioning.yml",
+      "redirect_url": "/training/modules/introduction-to-device-provisioning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-device-provisioning-service-terms-concepts/3-device-provisioning-service.yml",
+      "redirect_url": "/training/modules/introduction-to-device-provisioning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-device-provisioning-service-terms-concepts/4-service-concepts.yml",
+      "redirect_url": "/training/modules/introduction-to-device-provisioning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-device-provisioning-service-terms-concepts/5-device-enrollment-concepts.yml",
+      "redirect_url": "/training/modules/introduction-to-device-provisioning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-device-provisioning-service-terms-concepts/6-device-enrollment.yml",
+      "redirect_url": "/training/modules/introduction-to-device-provisioning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-device-provisioning-service-terms-concepts/7-security-concepts.yml",
+      "redirect_url": "/training/modules/introduction-to-device-provisioning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-device-provisioning-service-terms-concepts/8-trusted-platform-module-attestation.yml",
+      "redirect_url": "/training/modules/introduction-to-device-provisioning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-device-provisioning-service-terms-concepts/9-symmetric-key-attestation.yml",
+      "redirect_url": "/training/modules/introduction-to-device-provisioning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-device-provisioning-service-terms-concepts/10-device-provisioning-service-behind-scenes.yml",
+      "redirect_url": "/training/modules/introduction-to-device-provisioning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-device-provisioning-service-terms-concepts/11-auto-provisioning.yml",
+      "redirect_url": "/training/modules/introduction-to-device-provisioning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-device-provisioning-service-terms-concepts/12-reprovisioning.yml",
+      "redirect_url": "/training/modules/introduction-to-device-provisioning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-device-provisioning-service-terms-concepts/13-knowledge-check.yml",
+      "redirect_url": "/training/modules/introduction-to-device-provisioning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-device-provisioning-service-terms-concepts/14-summary.yml",
+      "redirect_url": "/training/modules/introduction-to-device-provisioning-service",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/ingest-data-into-azure-digital-twins/index.md",
       "redirect_url": "/training/modules/ingest-data-into-azure-digital-twins",
       "redirect_document_id": false
@@ -31194,6 +31269,56 @@
   {
     "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/7-explore-best-practices-for-module-4.md",
     "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/aspnetcore/microservices-devops-aspnet-core/2-setup-environment.yml",
+    "redirect_url": "/training/modules/microservices-devops-aspnet-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/aspnetcore/microservices-devops-aspnet-core/3-permissions-secrets.yml",
+    "redirect_url": "/training/modules/microservices-devops-aspnet-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/aspnetcore/microservices-devops-aspnet-core/4-build-github-action.yml",
+    "redirect_url": "/training/modules/microservices-devops-aspnet-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/aspnetcore/microservices-devops-aspnet-core/5-deploy-github-action.yml",
+    "redirect_url": "/training/modules/microservices-devops-aspnet-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/aspnetcore/microservices-devops-aspnet-core/6-knowledge-check.yml",
+    "redirect_url": "/training/modules/microservices-devops-aspnet-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/azure-well-architected-cost-optimization/2-plan-estimate-costs.yml",
+    "redirect_url": "training/modules/azure-well-architected-cost-optimization/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/azure-well-architected-cost-optimization/3-provision-with-optimization.yml",
+    "redirect_url": "training/modules/azure-well-architected-cost-optimization/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/azure-well-architected-cost-optimization/4-use-monitoring-and-analytics-to-gain-cost-insights.yml",
+    "redirect_url": "training/modules/azure-well-architected-cost-optimization/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/azure-well-architected-cost-optimization/5-maximize-efficiency-of-cloud-spend.yml",
+    "redirect_url": "training/modules/azure-well-architected-cost-optimization/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/azure-well-architected-cost-optimization/6-summary.yml",
+    "redirect_url": "training/modules/azure-well-architected-cost-optimization/",
     "redirect_document_id": false
   }
   ]
