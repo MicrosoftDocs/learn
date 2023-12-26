@@ -18,7 +18,7 @@ Private endpoints provide a privately accessible IP address for the Azure servic
 
 Private endpoints support network policies. Network policies enable support for Network Security Groups (NSG), User Defined Routes (UDR), and Application Security Groups (ASG). For more information about enabling network policies for a private endpoint, see Manage network policies for private endpoints.
 
-:::image type="content" source="../media/private-link-paas-workflow-617a1bd8.png" alt-text="Diagram showing network security of private endpoints.":::
+:::image type="content" source="../media/new-private-link-platform-as-a-service-example-b53ef1fe.png" alt-text="Diagram showing network security of private endpoints.":::
 
 
 Over a private-endpoint connection, a private-link resource owner can:
@@ -46,13 +46,20 @@ The following information lists the known limitations to the use of private endp
 
 ## Static IP address
 
-:::image type="content" source="../media/static-ip-address-806a42a0.png" alt-text="Screenshot showing static IP address limitations and descriptions.":::
-
+| **Limitation**                                         | **Description**                                                                                                                            |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Static IP address configuration currently unsupported. | Azure Kubernetes Service (AKS)<br>Azure Application Gateway<br>HD Insight<br>Recovery Services Vaults<br>Third party Private Link services |
 
 ## Network security group
 
-:::image type="content" source="../media/network-security-group-limitation-description-e6c6e86f.png" alt-text="Screenshot showing network security group limitations and descriptions.":::
-
+| **Limitation**                                                                          | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Effective routes and security rules unavailable for private endpoint network interface. | Effective routes and security rules won't be displayed for the private endpoint NIC in the Azure portal.                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| NSG flow logs unsupported.                                                              | NSG flow logs unavailable for inbound traffic destined for a private endpoint.                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| No more than 50 members in an Application Security Group.                               | Fifty is the number of IP Configurations that can be tied to each respective ASG that's coupled to the NSG on the private endpoint subnet. Connection failures may occur with more than 50 members.                                                                                                                                                                                                                                                                                                                                              |
+| Destination port ranges supported up to a factor of 250 K.                              | Destination port ranges are supported as a multiplication SourceAddressPrefixes, DestinationAddressPrefixes, and DestinationPortRanges.<br><br>Example inbound rule:<br>One source \* one destination \* 4K portRanges = 4K Valid<br>10 sources \* 10 destinations \* 10 portRanges = 1 K Valid<br>50 sources \* 50 destinations \* 50 portRanges = 125 K Valid<br>50 sources \* 50 destinations \* 100 portRanges = 250 K Valid<br>100 sources \* 100 destinations \* 100 portRanges = 1M Invalid, NSG has too many sources/destinations/ports. |
+| Source port filtering is interpreted as \*                                              | Source port filtering isn't actively used as valid scenario of traffic filtering for traffic destined to a private endpoint.                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Feature unavailable in select regions.                                                  | Currently unavailable in the following regions:<br>West India<br>Australia Central 2<br>South Africa West<br>Brazil Southeast<br>All Government regions<br>All China regions                                                                                                                                                                                                                                                                                                                                                                     |
 
 ## NSG more considerations
 
@@ -62,9 +69,13 @@ The following information lists the known limitations to the use of private endp
 
 ## UDR
 
-:::image type="content" source="../media/user-defined-route-limitation-description-92912194.png" alt-text="Screenshot showing User Defined Routes limitations and descriptions.":::
-
+| **Limitation**                         | **Description**                                                                                                                                                     |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SNAT is recommended always.            | Due to the variable nature of the private endpoint data-plane, it's recommended to SNAT traffic destined to a private endpoint to ensure return traffic is honored. |
+| Feature unavailable in select regions. | Currently unavailable in the following regions:<br>West India<br>Australia Central 2<br>South Africa West<br>Brazil Southeast                                       |
 
 ## Application security group
 
-:::image type="content" source="../media/application-security-group-limitation-description-ea383e9b.png" alt-text="Screenshot showing application security group limitations and descriptions.":::
+| **Limitation**                         | **Description**                                                                                                               |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Feature unavailable in select regions. | Currently unavailable in the following regions:<br>West India<br>Australia Central 2<br>South Africa West<br>Brazil Southeast |

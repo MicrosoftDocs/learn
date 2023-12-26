@@ -52,7 +52,7 @@ By default, Azure service resources secured to virtual networks aren't reachable
 
 ExpressRoute: If you're using ExpressRoute for public peering or Microsoft peering from your premises, you'll need to identify the NAT IP addresses that you're using. For public peering, each ExpressRoute circuit uses two NAT IP addresses, by default, applied to Azure service traffic when the traffic enters the Microsoft Azure network backbone. For Microsoft peering, the NAT IP addresses are either customer provided or provided by the service provider. To allow access to your service resources, you must allow these public IP addresses in the resource IP firewall setting. To find your public peering ExpressRoute circuit IP addresses, open a support ticket with ExpressRoute via the Azure portal.
 
-:::image type="content" source="../media/virtual-network-service-endpoints-overview-908e5762.png" alt-text="Screenshot showing how to secure Azure service access from on-premises.":::
+:::image type="content" source="../media/new-virtual-network-service-end-points-c40f6cae.png" alt-text="Screenshot showing how to secure Azure service access from on-premises.":::
 
 
 ## Configuration

@@ -39,7 +39,7 @@ When you use virtual network integration, you can use the following Azure networ
 
 Apps in App Service are hosted on worker roles. Virtual network integration works by mounting virtual interfaces to the worker roles with addresses in the delegated subnet. The virtual interfaces used aren't resources customers have direct access to. Because the from address is in your virtual network, it can access most things in or through your virtual network like a VM in your virtual network would.
 
-:::image type="content" source="../media/virtual-network-integration-example-3ebcbcd5.png" alt-text="Diagram showing an example of how virtual network integration works by mounting virtual interfaces to the worker roles with addresses in the delegated subnet.":::
+:::image type="content" source="../media/new-virtual%20network%20integration-works-41ea27d1.png" alt-text="Diagram showing an example of how virtual network integration works by mounting virtual interfaces to the worker roles with addresses in the delegated subnet.":::
 
 
 When virtual network integration is enabled, your app makes outbound calls through your virtual network. The outbound addresses that are listed in the app properties portal are the addresses still used by your app. However, if your outbound call is to a virtual machine or private endpoint in the integration virtual network or peered virtual network, the outbound address is an address from the integration subnet. The private IP assigned to an instance is exposed via the environment variable, WEBSITE\_PRIVATE\_IP.
@@ -79,8 +79,11 @@ When you want your apps in your plan to reach a virtual network that's already c
 
 You must have at least the following Role-based access control permissions on the subnet or at a higher level to configure virtual network integration through Azure portal, CLI or when setting the `virtualNetworkSubnetId` site property directly:
 
-:::image type="content" source="../media/role-based-access-permissions-table-8bb0f4df.png" alt-text="Screenshot showing minimum requirements for permissions on the subnet or at a higher level to configure virtual network integration.":::
-
+| **Action**                                            | **Description**                          |
+| ----------------------------------------------------- | ---------------------------------------- |
+| Microsoft.Network/virtualNetworks/read                | Read the virtual network definition      |
+| Microsoft.Network/virtualNetworks/subnets/read        | Read a virtual network subnet definition |
+| Microsoft.Network/virtualNetworks/subnets/join/action | Joins a virtual network                  |
 
 ## Routes
 

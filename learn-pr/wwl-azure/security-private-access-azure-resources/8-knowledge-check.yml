@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/20/2023
+  ms.date: 12/26/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -14,17 +14,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the purpose of virtual network integration in Azure App Service?"
+  - content: "What is the purpose of Azure App Service?"
     choices:
-    - content: "Enables automatic scaling of App Service instances"
+    - content: "To provide additional storage for virtual machines"
       isCorrect: false
-      explanation: "Incorrect. This isn't the purpose of virtual network integration."
-    - content: "Provides additional storage for App Service apps"
+      explanation: "Incorrect. Azure App Service is not used to provide additional storage for virtual machines."
+    - content: "To enable automatic scaling of virtual networks"
       isCorrect: false
-      explanation: "Incorrect. This isn't the purpose of virtual network integration."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      explanation: "Incorrect. Azure App Service is not used to enable automatic scaling of virtual networks."
+    - content: "To host web and mobile applications"
       isCorrect: true
-      explanation: "Correct. Virtual network integration enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      explanation: "Correct. Azure App Service is a fully managed platform for building, deploying, and scaling web and mobile applications."
   - content: "What does virtual network integration enable for App Service plans?"
     choices:
     - content: "Enables the creation of new virtual networks for each App Service plan instance"
