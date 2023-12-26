@@ -11,10 +11,15 @@ When you plan your SSO deployment with your applications in Microsoft Entra ID, 
 
 Always use the role with the fewest permissions available to accomplish the required task within Microsoft Entra ID. Review the different roles that are available and choose the right one to solve your needs for each persona for the application. Some roles may need to be applied temporarily and removed after the deployment has been completed.
 
-:::image type="content" source="../media/microsoft-entra-administrative-roles-587d2423.png" alt-text="Diagram showing administrative roles.":::
+| **Persona**                | **Roles**                                                                | **Microsoft Entra role (if necessary)** |
+| -------------------------- | ------------------------------------------------------------------------ | --------------------------------------- |
+| Help desk admin            | Tier 1 support view the sign-in logs to resolve issues.                  | None                                    |
+| Identity admin             | Configure and debug when issues involve Microsoft Entra ID               | Cloud Application Administrator         |
+| Application admin          | User attestation in application, configuration on users with permissions | None                                    |
+| Infrastructure admins      | Certificate rollover owner                                               | Cloud Application Administrator         |
+| Business owner/stakeholder | User attestation in application, configuration on users with permissions | None                                    |
 
-
-## Certificates
+## Certificate
 
 When you enable federation on SAML application, Microsoft Entra ID creates a certificate that is by default valid for three years. You can customize the expiration date for that certificate if needed. Ensure that you have processes in place to renew certificates prior to their expiration.
 

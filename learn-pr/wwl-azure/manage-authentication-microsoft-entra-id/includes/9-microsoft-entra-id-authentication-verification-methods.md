@@ -13,4 +13,16 @@ When you deploy features like Microsoft Entra multifactor authentication in your
 
 The following table outlines the security considerations for the available authentication methods. Availability is an indication of the user being able to use the authentication method, not of the service availability in Microsoft Entra ID:
 
-:::image type="content" source="../media/authentication-method-strength-security-3b93a089.png" alt-text="Diagram showing authentication methods.":::
+| **Authentication method**        | **Security** | **Usability** | **Availability** |
+| -------------------------------- | ------------ | ------------- | ---------------- |
+| Windows Hello for Business       | High         | High          | High             |
+| Microsoft Authenticator          | High         | High          | High             |
+| Authenticator Lite               | High         | High          | High             |
+| FIDO2 security key               | High         | High          | High             |
+| Certificate-based authentication | High         | High          | High             |
+| OATH hardware tokens (preview)   | Medium       | Medium        | High             |
+| OATH software tokens             | Medium       | Medium        | High             |
+| Temporary Access Pass (TAP)      | Medium       | High          | High             |
+| SMS                              | Medium       | High          | Medium           |
+| Voice                            | Medium       | Medium        | Medium           |
+| Password                         | Low          | High          | High             |

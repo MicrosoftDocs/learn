@@ -12,7 +12,7 @@ The following Microsoft Entra multifactor authentication settings are available 
 | Phone call settings              | Configure settings related to phone calls and greetings for cloud and on-premises environments.                                                                                                                                                                                       |
 | Providers                        | This will show any existing authentication providers that you've associated with your account. Adding new providers is disabled as of September 1, 2018.                                                                                                                              |
 
-:::image type="content" source="../media/multifactor-authentication-settings-portal-7a8ca6f8.png" alt-text="Screenshot showing the multifactor authentication settings portal.":::
+:::image type="content" source="../media/new-multi-factor-authentication-settings-portal-6f8c167b.png" alt-text="Screenshot showing the multifactor authentication settings portal.":::
 
 
 ## Account lockout (Microsoft Entra multifactor authentication Server only)
@@ -31,7 +31,7 @@ The following settings are available:
 To configure account lockout settings, complete these steps:
 
 1.  Sign in to the Azure portal as an **administrator**.
-2.  Go to **Azure Active Directory** &gt; **Security** &gt; **Multifactor authentication** &gt; **Account lockout**.
+2.  Go to **Microsoft Entra ID**, **Security**, **Multifactor authentication**, **Account lockout**.
 3.  Enter the values for your environment, and then **select Save**.
 
 :::image type="content" source="../media/account-lockout-settings-fd2ee95a.png" alt-text="Screenshot showing a Multi-Authentication Account lockout example.":::
@@ -45,7 +45,7 @@ If a user's device is lost or stolen, you can block Microsoft Entra multifactor 
 
 To block a user, complete the following steps.
 
-1.  Browse to **Azure Active Directory** &gt; **Security** &gt; **Multifactor authentication** &gt; **Block and unblock users**.<br>
+1.  Browse to **Microsoft Entra ID**, **Security**, **Multifactor authentication**, **Block and unblock users**.<br>
 2.  Select Add to block a user.
 3.  Enter the user name for the blocked user in the format username@domain.com, and then provide a comment in the Reason box.
 4.  Select OK to block the user.
@@ -54,7 +54,7 @@ To block a user, complete the following steps.
 
 To unblock a user, complete the following steps:
 
-1.  Go to **Azure Active Directory** &gt; **Security** &gt; **Multifactor authentication** &gt; **Block and unblock users**.<br>
+1.  Go to **Microsoft Entra ID, Security**, **Multifactor authentication, Block and unblock users**.<br>
 2.  In the Action column next to the user, **select Unblock**.
 3.  Enter a comment in the Reason for the unblocking box.
 4.  Select **OK** to unblock the user.
@@ -63,11 +63,11 @@ To unblock a user, complete the following steps:
 
 A preview of Report Suspicious Activity, the updated **Multifactor authentication Fraud Alert feature**, is now available. When an unknown and suspicious multifactor authentication prompt is received, users can report the fraud attempt using Microsoft Authenticator or phone. These alerts are integrated with Identity Protection for more comprehensive coverage and capability.
 
-Users who report a multifactor authentication prompt as suspicious are set to High User Risk. Administrators can use risk-based policies to limit access for these users or enable **self-service password reset (SSPR)** for users to remediate problems on their own. If you previously used the Fraud Alert automatic blocking feature and don't have an Azure AD P2 license for risk-based policies, you can use risk detection events to identify and disable impacted users and automatically prevent their sign-in. For more information about using risk-based policies, see Risk-based access policies.<br>
+Users who report a multifactor authentication prompt as suspicious are set to High User Risk. Administrators can use risk-based policies to limit access for these users or enable **self-service password reset (SSPR)** for users to remediate problems on their own. If you previously used the Fraud Alert automatic blocking feature and don't have an **Microsoft Entra ID** P2 license for risk-based policies, you can use risk detection events to identify and disable impacted users and automatically prevent their sign-in. For more information about using risk-based policies, see Risk-based access policies.<br>
 
 To enable Report Suspicious Activity from the Authentication Methods Settings:<br>
 
-1.  In the Azure portal, click **Azure Active Directory** &gt; **Security** &gt; **Authentication Methods** &gt; **Settings**.<br>
+1.  In the Azure portal, click **Microsoft Entra ID**, **Security**, **Authentication Methods**, **Settings**.<br>
 2.  Set Report Suspicious Activity to Enabled.
 3.  Select All users or a specific group.
 
@@ -75,11 +75,11 @@ To enable Report Suspicious Activity from the Authentication Methods Settings:<b
 
 When a user reports a multifactor authentication prompt as suspicious, the event shows up in the Sign-ins report (**as a sign-in that was rejected by the user**), in the **Audit logs**, and in the **Risk detections** report.
 
-Select Azure **Active Directory** &gt; **Security** &gt; **Identity Protection** &gt; **Risk detection** to view the risk detection report. The risk event is part of the standard Risk Detections report and will appear as Detection Type User Reported Suspicious Activity, Risk level High, Source End user reported.<br>
+Select Azure **Microsoft Entra ID**, **Security, Identity Protection, Risk detection** to view the risk detection report. The risk event is part of the standard Risk Detections report and will appear as Detection Type User Reported Suspicious Activity, Risk level High, Source End user reported.<br>
 
-Select **Azure Active Directory** &gt; **Sign-in logs** &gt; **Authentication Details** to view fraud reports in the Sign-in report. The fraud report is part of the standard Azure AD Sign-ins report and appears in the Result Detail as MFA denied, Fraud Code Entered.<br>
+Select **Microsoft Entra ID**, **Sign-in logs**, **Authentication Details** to view fraud reports in the Sign-in report. The fraud report is part of the standard Microsoft Entra ID Sign-ins report and appears in the Result Detail as MFA denied, Fraud Code Entered.<br>
 
-To view fraud reports in the Audit logs, select **Azure Active Directory** &gt; **Audit logs**. The fraud report appears under Activity type Fraud reported - user is blocked for multifactor authentication, or Fraud reported - no action taken based on the tenant-level settings for a fraud report.<br>
+To view fraud reports in the Audit logs, select **Microsoft Entra ID**, **Audit logs**. The fraud report appears under Activity type Fraud reported - user is blocked for multifactor authentication, or Fraud reported - no action taken based on the tenant-level settings for a fraud report.<br>
 
 ## Manage suspicious activity events
 
@@ -93,18 +93,18 @@ If Fraud Alert is enabled with Automatic Blocking and Report Suspicious Activity
 
 ## **Notifications**
 
-You can configure Azure AD to send email notifications when users report fraud alerts. These notifications are typically sent to identity administrators because the user's account credentials are likely compromised. The following example shows what a fraud alert notification email looks like:
+You can configureMicrosoft Entra IDto send email notifications when users report fraud alerts. These notifications are typically sent to identity administrators because the user's account credentials are likely compromised. The following example shows what a fraud alert notification email looks like:
 
 :::image type="content" source="../media/multifactor-authentication-fraud-alert-email-a2197419.png" alt-text="Screenshot showing a multifactor authentication fraud alert example.":::
 
 
 ## OATH tokens
 
-Azure AD supports the use of **OATH TOTP (Time-based One Time Password)** SHA-1 tokens that refresh codes every **30** or **60** seconds. You can purchase these tokens from the vendor of your choice.
+Microsoft Entra ID supports the use of **OATH TOTP (Time-based One Time Password)** SHA-1 tokens that refresh codes every **30** or **60** seconds. You can purchase these tokens from the vendor of your choice.
 
-OATH TOTP hardware tokens typically come with a secret key, or seed, pre-programmed in the token. You need to input these keys into Azure AD as described in the following steps. Secret keys are limited to 128 characters, which might not be compatible with all tokens. The secret key can contain only the characters a-z or A-Z and digits 1-7. It must be encoded in Base32.<br>
+OATH TOTP hardware tokens typically come with a secret key, or seed, pre-programmed in the token. You need to input these keys into Microsoft Entra ID as described in the following steps. Secret keys are limited to 128 characters, which might not be compatible with all tokens. The secret key can contain only the characters a-z or A-Z and digits 1-7. It must be encoded in Base32.<br>
 
-Programmable OATH TOTP hardware tokens that can be reseeded can also be set up with Azure AD in the software token setup flow.<br>
+Programmable OATH TOTP hardware tokens that can be reseeded can also be set up with Microsoft Entra ID in the software token setup flow.<br>
 
 OATH hardware tokens are supported as part of a public preview.<br>
 
@@ -116,7 +116,7 @@ After you acquire tokens, you need to upload them in a comma-separated values (C
 > [!NOTE]
 > Be sure to include the header row in your CSV file.
 
-An administrator can sign in to the Azure portal, go to **Azure Active Directory** &gt; **Security** &gt; **Multifactor authentication** &gt; **OATH tokens**, and **upload the CSV file**.<br>
+An administrator can sign in to the Azure portal, go to **Microsoft Entra ID, Security**, **Multifactor authentication**, **OATH tokens**, and **upload the CSV file**.<br>
 
 Depending on the CSV file size, it might take a few minutes to process. Select Refresh to get the status. If there are any errors in the file, you can download a CSV file that lists them. The field names in the downloaded CSV file are different from those in the uploaded version.<br>
 
