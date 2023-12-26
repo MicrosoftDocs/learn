@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.implement-compliance-cloud-native-applications
 metadata:
-  title: Implement compliance in a cloud native .NET 8 application
-  description: Microservice applications, because of their distributed nature, can be difficult to secure. In this module, you'll learn how to classify sensitive data in a cloud native application, redact sensitive data in log files, and generate compliance reports for a cloud native application.
+  title: Implement compliance in a cloud-native .NET 8 application
+  description: Microservice applications, because of their distributed nature, can be difficult to secure. In this module, you'll learn how to classify sensitive data in a cloud-native application, redact sensitive data in log files, and generate compliance reports for a cloud-native application.
   ms.date: 11/30/2023
   author: codemillmatt
   ms.author: masoucou
@@ -12,13 +12,13 @@ metadata:
   - team=cloud_advocates
   ms.contributors:
   - masoucou-05122021
-title: Implement compliance in a cloud native .NET 8 application
-summary: Microservice applications, because of their distributed nature, can be difficult to secure. In this module, you'll learn how to classify sensitive data in a cloud native application, redact sensitive data in log files, and generate compliance reports for a cloud native application.
+title: Implement compliance in a cloud-native .NET 8 application
+summary: Microservice applications, because of their distributed nature, can be difficult to secure. In this module, you'll learn how to classify sensitive data in a cloud-native application, redact sensitive data in log files, and generate compliance reports for a cloud-native application.
 abstract: |
   In this module, you'll:
-    - Classify sensitive data in a cloud native application
+    - Classify sensitive data in a cloud-native application
     - Redact sensitive data in log files
-    - Generate compliance reports for a cloud native application
+    - Generate compliance reports for a cloud-native application
 prerequisites: |
   - Familiarity with basic Docker concepts and a Docker account
   - Familiarity with microservice design
