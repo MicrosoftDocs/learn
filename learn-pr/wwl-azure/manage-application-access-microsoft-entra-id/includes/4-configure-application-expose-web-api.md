@@ -22,10 +22,14 @@ In the new window, find and select the owner(s) that you want to assign to the a
 
 2. Next, specify the app role's attributes in the Create app role pane. For this walk-through, you can use the example values or specify your own.
 
-:::image type="content" source="../media/create-app-role-pane-descriptions-8a633207.png" alt-text="Diagram showing application role attributes.":::
+| **Field**            | **Description**                                                                    | **Example**                                    |
+| -------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------- |
+| Display name         | The name of your app role                                                          | *Employee Records*                             |
+| Allowed member types | Specifies whether the app role can be assigned to users/groups and/or applications | *Applications*                                 |
+| Value                | The value displayed in the "roles" claim of a token                                | Employee.Records                               |
+| Description          | A more detailed description of the app role                                        | *Applications have access to employee records* |
 
-
-3. Select the checkbox to enable the app role.
+3. Select the checkbox to enable the app role.<br>
 
 ## Add a scope
 
@@ -52,10 +56,16 @@ You can use the default value of application client identity or another supporte
 
 7. Next, specify the scope's attributes in the Add a scope pane. For this walk-through, you can use the example values or specify your own.
 
-:::image type="content" source="../media/add-scope-fields-descriptions-examples-384555a9.png" alt-text="Diagram showing the scope attributes.":::
+| **Field**                  | **Example value**                                                |
+| -------------------------- | ---------------------------------------------------------------- |
+| Scope name                 | Employees.Write.All                                              |
+| Who can consent            | Admins only                                                      |
+| Admin consent display name | Write access to Employee records                                 |
+| Admin consent description  | Allow the application to have write access to all Employee data. |
+| User consent display name  | *None (leave empty)*                                             |
+| User consent description   | *None (leave empty)*                                             |
 
-
-8. Set the State to Enabled, and then select Add scope.
+8. Set the State to Enabled, and then select Add scope.<br>
 
 9. (Optional) To suppress prompting for consent by users of your app to the scopes you've defined, you can pre-authorize the client application to access your web API. Pre-authorize only those client applications you trust since your users won't have the opportunity to decline consent.<br>
 
@@ -71,16 +81,22 @@ Next, add another example scope named `Employees.Write.All` that only admins can
 
 To add the `Employees.Write.All` example scope, follow the steps in the **Add a scope** section and specify these values in the Add a scope pane:
 
-:::image type="content" source="../media/scope-require-admin-consent-6b16b62e.png" alt-text="Diagram showing attributes required to add a scope.":::
+| **Field**                  | **Example value**                                                |
+| -------------------------- | ---------------------------------------------------------------- |
+| Scope name                 | Employees.Write.All                                              |
+| Who can consent            | Admins only                                                      |
+| Admin consent display name | Write access to Employee records                                 |
+| Admin consent description  | Allow the application to have write access to all Employee data. |
+| User consent display name  | *None (leave empty)*                                             |
+| User consent description   | *None (leave empty)*                                             |
 
-
-Set the State to Enabled, and then select Add scope.
+Set the State to Enabled, and then select Add scope.<br>
 
 ## Verify the exposed scopes
 
 If you have successfully added both example scopes described in the previous sections, they'll appear in the Expose an API pane of your web API's app registration, similar to the following image:
 
-:::image type="content" source="../media/exposed-scopes-08def126.png" alt-text="Screenshot showing how to verify exposed scopes.":::
+:::image type="content" source="../media/new-portal-scopes-list-53984b91.png" alt-text="Screenshot showing how to verify exposed scopes.":::
 
 
 As shown in the image, a scope's full string is the concatenation of your web API's **Application ID URI** and the scope's Scope name.
