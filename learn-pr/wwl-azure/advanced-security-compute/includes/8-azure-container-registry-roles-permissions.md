@@ -32,7 +32,8 @@ For tools like the Visual Studio Code Docker extension, additional resource prov
 
 ## Access Resource Manager
 
-## :::image type="content" source="../media/new-azure-resource-manager-requirement-641715a8.png" alt-text="Screenshot showing how to get a list of registries by using the Azure command line interface syntax."::: 
+:::image type="content" source="../media/new-azure-resource-manager-requirement-641715a8.png" alt-text="Screenshot showing how to get a list of registries by using the Azure command line interface syntax.":::
+
 
 ## Custom roles
 
@@ -45,9 +46,9 @@ To determine which permissions to apply to a custom role, see the list of Micros
 
 ## Example: Custom role to import images
 
-For example, the following Java Script Object Notation defines the minimum actions for a custom role that permits importing images to a registry.
+For example, the following JavaScript Object Notation defines the minimum actions for a custom role that permits importing images to a registry.
 
-:::image type="content" source="../media/new-custom-role-to-import-iamges-4d4a1105.png" alt-text="Screenshot showing how the Java Script Object Notation defines the minimum actions for a custom role that permits importing images to a registry.":::
+:::image type="content" source="../media/new-custom-role-import-images-9499b140.png" alt-text="Screenshot showing how the JavaScript Object Notation defines the minimum actions for a custom role that permits importing images to a registry.":::
 
 
-To create or update a custom role using the Java Script Object Notation description, use the Azure command line interface, Azure Resource Manager template, Azure PowerShell, or other Azure tools. Add or remove role assignments for a custom role in the same way that you manage role assignments for built-in Azure roles.
+To create or update a custom role using the JavaScript Object Notation description, use the Azure command line interface, Azure Resource Manager template, Azure PowerShell, or other Azure tools. Add or remove role assignments for a custom role in the same way that you manage role assignments for built-in Azure roles.

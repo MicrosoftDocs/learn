@@ -48,12 +48,12 @@ Examples of security events that Microsoft Defenders for Containers monitors inc
 
 You can view security alerts by selecting the Security alerts tile at the top of the Defender for Cloud's overview page, or the link from the sidebar.
 
-:::image type="content" source="../media/new-defender-for-containers-security-alerts-0104b5b7.png" alt-text="Screenshot showing an example of the overview page alerts links in Microsoft Defender for Cloud.":::
+:::image type="content" source="../media/new-defender-containers-security-alerts-70b5333c.png" alt-text="Screenshot showing an example of the overview page alerts links in Microsoft Defender for Cloud.":::
 
 
 The security alerts page opens.
 
-:::image type="content" source="../media/new-security-alerts-for-runtime-workloads-409fe8d4.png" alt-text="Screenshot showing the security alerts page.":::
+:::image type="content" source="../media/new-security-alerts-runtime-workloads-45916790.png" alt-text="Screenshot showing the security alerts page.":::
 
 
 Security alerts for runtime workload in the clusters can be recognized by the K8S.NODE\_ prefix of the alert type.

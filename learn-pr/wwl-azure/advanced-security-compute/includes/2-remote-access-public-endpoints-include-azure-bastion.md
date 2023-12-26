@@ -7,15 +7,40 @@ Bastion provides secure RDP and SSH connectivity to all of the VMs in the virtua
 
 ## Key benefits
 
-:::image type="content" source="../media/azure-bastion-key-benefits-table-e58bba70.png" alt-text="Screenshot of benefits and descriptions.":::
-
+| **Benefit**                                                | **Description**                                                                                                                                                                                                                                                                                                        |
+| ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| RDP and SSH through the Azure portal                       | You can get to the RDP and SSH session directly in the Azure portal using a single-click seamless experience.                                                                                                                                                                                                          |
+| Remote Session over TLS and firewall traversal for RDP/SSH | Azure Bastion uses an HTML5 based web client that is automatically streamed to your local device. Your RDP/SSH session is over TLS on port 443. This enables the traffic to traverse firewalls more securely. Bastion supports TLS 1.2 and above. Older TLS versions aren't supported.                                 |
+| No Public IP address required on the Azure VM              | Azure Bastion opens the RDP/SSH connection to your Azure VM by using the private IP address on your VM. You don't need a public IP address on your virtual machine.                                                                                                                                                    |
+| No hassle of managing Network Security Groups (NSGs)       | You don't need to apply any NSGs to the Azure Bastion subnet. Because Azure Bastion connects to your virtual machines over private IP, you can configure your NSGs to allow RDP/SSH from Azure Bastion only. This removes the hassle of managing NSGs each time you need to securely connect to your virtual machines. |
+| No need to manage a separate bastion host on a VM          | Azure Bastion is a fully managed platform PaaS service from Azure that is hardened internally to provide you secure RDP/SSH connectivity.                                                                                                                                                                              |
+| Protection against port scanning                           | Your VMs are protected against port scanning by rogue and malicious users because you don't need to expose the VMs to the internet.                                                                                                                                                                                    |
+| Hardening in one place only                                | Azure Bastion sits at the perimeter of your virtual network, so you don’t need to worry about hardening each of the VMs in your virtual network.                                                                                                                                                                       |
+| Protection against zero-day exploits                       | The Azure platform protects against zero-day exploits by keeping the Azure Bastion hardened and always up to date for you.                                                                                                                                                                                             |
 
 ## SKUs (Stock-keeping units)
 
 Azure Bastion has two available SKUs, Basic and Standard. The following table shows features and corresponding SKUs.
 
-:::image type="content" source="../media/azure-bastion-stock-keeping-units-table-2c845988.png" alt-text="Screenshot of Azure Bastion available SKUs.":::
-
+| **Feature**                                           | **Developer SKU** | **Basic SKU** | **Standard SKU** |
+| ----------------------------------------------------- | ----------------- | ------------- | ---------------- |
+| Connect to target VMs in same virtual network         | Yes               | Yes           | Yes              |
+| Connect to target VMs in peered virtual networks      | No                | Yes           | Yes              |
+| Support for concurrent connections                    | No                | Yes           | Yes              |
+| Access Linux VM Private Keys in Azure Key Vault (AKV) | No                | Yes           | Yes              |
+| Connect to Linux VM using SSH                         | Yes               | Yes           | Yes              |
+| Connect to Windows VM using RDP                       | Yes               | Yes           | Yes              |
+| Connect to Linux VM using RDP                         | No                | No            | Yes              |
+| Connect to Windows VM using SSH                       | No                | No            | Yes              |
+| Specify custom inbound port                           | No                | No            | Yes              |
+| Connect to VMs using Azure CLI                        | No                | No            | Yes              |
+| Host scaling                                          | No                | No            | Yes              |
+| Upload or download files                              | No                | No            | Yes              |
+| Kerberos authentication                               | No                | Yes           | Yes              |
+| Shareable link                                        | No                | No            | Yes              |
+| Connect to VMs via IP address                         | No                | No            | Yes              |
+| VM audio output                                       | Yes               | Yes           | Yes              |
+| Disable copy/paste (web-based clients)                | No                | No            | Yes              |
 
 ## Architecture
 
