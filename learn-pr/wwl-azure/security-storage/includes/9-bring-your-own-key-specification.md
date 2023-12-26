@@ -45,13 +45,15 @@ Existing HSM may apply constraints on key that they manage, including:
 
 The configuration of source HSM is, generally, outside the scope of this specification. Microsoft expects the HSM vendor to produce documentation accompanying their BYOK tool to include any such configuration steps.
 
-Several of these steps can be performed using other interfaces such as Azure PowerShell and Azure Portal. They can also be performed programmatically using equivalent functions in Key Vault SDK.
+> [!NOTE]
+> Several of these steps can be performed using other interfaces such as Azure PowerShell and Azure portal. They can also be performed programmatically using equivalent functions in Key Vault SDK.
 
 ## Generate KEK
 
 Use the az keyvault key create command to create KEK with key operations set to import.
 
-Services support different KEK lengths; Azure SQL, for instance, only supports key lengths of 2048 or 3072 bytes.
+> [!NOTE]
+> Services support different KEK lengths; Azure SQL, for instance, only supports key lengths of 2048 or 3072 bytes.
 
 ## Retrieve the public key of the KEK<br>
 

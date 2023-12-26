@@ -30,7 +30,7 @@ Custom roles can support different combinations of the same permissions provided
 
 To view queue data in the portal, navigate to the Overview for your storage account, and click on the links for Queues. Alternatively you can navigate to the Queue service section in the menu.
 
-:::image type="content" source="../media/new-queue-access-portal-1d1c470b.png" alt-text="Screenshot showing how to navigate to the queues page in the Azure portal.":::
+:::image type="content" source="../media/new-queue-access-portal-1d1c470b.png" alt-text="Screenshot showing how to navigate to queues in the Azure portal to view a storage account.":::
 
 
 ## Determine the current authentication method
@@ -55,7 +55,8 @@ Notice that no queues appear in the list if your Microsoft Entra ID account lack
 
 If you are authenticating using your Microsoft Entra ID account, you'll see Microsoft Entra ID user Account specified as the authentication method in the portal:
 
-## :::image type="content" source="../media/new-auth-method-78f1d785.png"::: 
+:::image type="content" source="../media/new-auth-method-78f1d785.png":::
+
 
 ## Default to Microsoft Entra ID authorization in the Azure portal
 

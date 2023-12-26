@@ -11,13 +11,10 @@ Blob storage additionally supports creating shared access signatures (SAS) that 
 
 When a security principal (a user, group, or application) attempts to access a blob resource, the request must be authorized, unless it's a blob available for anonymous access. With Microsoft Entra ID, access to a resource is a two-step process:
 
-1. First, the security principal's identity is authenticated and an OAuth 2.0 token is returned.
-
- -  The authentication step requires that an application request an OAuth 2.0 access token at runtime. If an application is running from within an Azure entity such as an Azure VM, a virtual machine scale set, or an Azure Functions app, it can use a managed identity to access blob data.
-
-2. Next, the token is passed as part of a request to the Blob service and used by the service to authorize access to the specified resource.
-
- -  The authorization step requires that one or more Azure RBAC roles be assigned to the security principal making the request.
+1.  First, the security principal's identity is authenticated and an OAuth 2.0 token is returned.
+     -  The authentication step requires that an application request an OAuth 2.0 access token at runtime. If an application is running from within an Azure entity such as an Azure VM, a virtual machine scale set, or an Azure Functions app, it can use a managed identity to access blob data.
+2.  Next, the token is passed as part of a request to the Blob service and used by the service to authorize access to the specified resource.
+     -  The authorization step requires that one or more Azure RBAC roles be assigned to the security principal making the request.
 
 ### Use a Microsoft Entra account with portal, PowerShell, or Azure CLI
 
@@ -64,7 +61,8 @@ A Microsoft Entra security principal may be a user, a group, an application serv
 
 In some cases you may need to enable fine-grained access to blob resources or to simplify permissions when you have a large number of role assignments for a storage resource. You can use Azure attribute-based access control (Azure ABAC) to configure conditions on role assignments. You can use conditions with a custom role or select built-in roles.
 
-When you create an Azure Storage account, you are not automatically assigned permissions to access data via Microsoft Entra ID. You must explicitly assign yourself an Azure role for access to Blob Storage. You can assign it at the level of your subscription, resource group, storage account, or container.
+> [!NOTE]
+> When you create an Azure Storage account, you are not automatically assigned permissions to access data via Microsoft Entra ID. You must explicitly assign yourself an Azure role for access to Blob Storage. You can assign it at the level of your subscription, resource group, storage account, or container.
 
 ## Resource scope
 
@@ -93,7 +91,8 @@ Only roles explicitly defined for data access permit a security principal to acc
 
 Access to blob data via the Azure portal, PowerShell, or Azure CLI can be authorized either by using the user's Microsoft Entra account or by using the account access keys (Shared Key authorization).
 
-Authorization with Shared Key is not recommended as it may be less secure. For optimal security, disable authorization via Shared Key for your storage account, as described in **Prevent Shared Key authorization for an Azure Storage account**.
+> [!CAUTION]
+> Authorization with Shared Key is not recommended as it may be less secure. For optimal security, disable authorization via Shared Key for your storage account, as described in **Prevent Shared Key authorization for an Azure Storage account**.
 
 Use of access keys and connection strings should be limited to initial proof of concept apps or development prototypes that don't access production or sensitive data. Otherwise, the token-based authentication classes available in the Azure SDK should always be preferred when authenticating to Azure resources.
 

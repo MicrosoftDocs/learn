@@ -14,9 +14,9 @@ Each authorization option is briefly described below:
 
 **Microsoft Entra ID**: Microsoft Entra is Microsoft's cloud-based identity and access management service. Microsoft Entra ID integration is available for the Blob, File, Queue and Table services. With Microsoft Entra ID, you can assign fine-grained access to users, groups, or applications via role-based access control (RBAC).
 
-**Microsoft Entra Domain Services authorization** for Azure Files. Azure Files supports identity-based authorization over Server Message Block (SMB) through Microsoft Entra Domain Services. You can use RBAC for fine-grained control over a client's access to Azure Files resources in a storage account.
+**Microsoft Entra Domain Services authorization** for Azure Files: Azure Files supports identity-based authorization over Server Message Block (SMB) through Microsoft Entra Domain Services. You can use RBAC for fine-grained control over a client's access to Azure Files resources in a storage account.
 
-**Microsoft Entra ID authorization** for Azure Files. Azure Files supports identity-based authorization over SMB through Microsoft Entra ID. Your Microsoft Entra domain service can be hosted on on-premises machines or in Azure VMs. SMB access to Files is supported using Microsoft Entra ID credentials from domain joined machines, either on-premises or in Azure. You can use RBAC for share level access control and New Technology File System (NTFS) Discretionary Access Control List (DACLs) for directory and file level permission enforcement.
+**Microsoft Entra ID authorization** for Azure Files: Azure Files supports identity-based authorization over SMB through Microsoft Entra ID. Your Microsoft Entra domain service can be hosted on on-premises machines or in Azure VMs. SMB access to Files is supported using Microsoft Entra ID credentials from domain joined machines, either on-premises or in Azure. You can use RBAC for share level access control and New Technology File System (NTFS) Discretionary Access Control List (DACLs) for directory and file level permission enforcement.
 
 **Shared Key**: Shared Key authorization relies on your account access keys and other parameters to produce an encrypted signature string that is passed on the request in the Authorization header.
 
@@ -24,6 +24,6 @@ Each authorization option is briefly described below:
 
 **Anonymous access to containers and blobs**: You can optionally make blob resources public at the container or blob level. A public container or blob is accessible to any user for anonymous read access. Read requests to public containers and blobs do not require authorization.
 
-Authenticating and authorizing access to blob, file, queue and table data with Microsoft Entra ID provides superior security and ease of use over other authorization options. For example, by using Microsoft Entra ID, you avoid having to store your account access key with your code, as you do with Shared Key authorization. While you can continue to use Shared Key authorization with your blob and queue applications, Microsoft recommends moving to Microsoft Entra ID where possible.<br>
+Authenticating and authorizing access to blob, file, queue and table data with Microsoft Entra ID provides superior security and ease of use over other authorization options. For example, by using Microsoft Entra ID, you avoid having to store your account access key with your code, as you do with Shared Key authorization. While you can continue to use Shared Key authorization with your blob and queue applications, Microsoft recommends moving to Microsoft Entra ID where possible.
 
 Similarly, you can continue to use shared access signatures (SAS) to grant fine-grained access to resources in your storage account, but Microsoft Entra ID offers similar capabilities without the need to manage SAS tokens or worry about revoking a compromised SAS.
