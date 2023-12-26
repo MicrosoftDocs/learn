@@ -1,6 +1,6 @@
 [!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-Project Teddybear is in full swing, and the R&D team is waiting for you to give it access to the new Azure subscription. You've created the subscription already, but before you give the team access, you need to ensure that it deploys only virtual machines that comply with the team's policies. The team has told you that it doesn't want to deploy F or G series virtual machines. 
+Project Teddybear is in full swing, and the R&D team is waiting for you to give it access to the new Azure subscription. You've created the subscription already, but before you give the team access, you need to ensure that it deploys only virtual machines that comply with the team's policies. The team has told you that it doesn't want to deploy F or G series virtual machines.
 
 In this exercise, you'll create a Bicep template that configures the subscription based on the team's policies.
 
@@ -21,8 +21,8 @@ This exercise requires that you have permission to deploy subscription-scoped re
 
 1. Create a new file called *main.bicep*.
 
-1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
- 
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling.
+
    You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
 1. Add the following content to the *main.bicep* file. You'll deploy the template soon. It's a good idea to type it in manually instead of copying and pasting, so that you can see how the tooling helps you to write your Bicep files.
@@ -55,7 +55,7 @@ This exercise requires that you have permission to deploy subscription-scoped re
 
 ## Assign the policy
 
-A policy definition has no effect until it's applied. In this step, you deploy a second subscription-scoped resource that applies the policy definition to the subscription.
+A policy definition has no effect until it's applied. In this step, you'll deploy a second subscription-scoped resource that applies the policy definition to the subscription.
 
 1. Below the `policyDefinitionName` variable definition, add the following variable definition:
 
@@ -65,7 +65,7 @@ A policy definition has no effect until it's applied. In this step, you deploy a
 
    :::code language="bicep" source="code/4-template.bicep" range="40-45" :::
 
-   Notice that you don't explicitly configure the policy assignment to apply to the whole subscription. Bicep understands this because the template will be deployed at the subscription scope.
+   Notice that you don't explicitly configure the policy assignment to apply to the whole subscription. Bicep understands this, because the template will be deployed at the subscription scope.
 
 1. Save the changes to the file.
 
