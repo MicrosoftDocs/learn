@@ -23,7 +23,7 @@ When you enable database protection, you enable all four of the Defender plans a
 
 5. On the Defender plans page, toggle the Databases plan to **On**.
 
-:::image type="content" source="../media/enable-database-plan-7420fbdf.png" alt-text="Screenshot showing Defender database plans.":::
+:::image type="content" source="../media/new-enable-the-database-plan-24e559f1.png" alt-text="Screenshot showing Defender database plans.":::
 
 
 ## Enable specific plans database protections
@@ -49,10 +49,12 @@ These plans protect all of the supported databases in your subscription.
 
 5. On the Defender plans page, locate the Databases plan and select **Select types**.
 
-:::image type="content" source="../media/enable-specific-database-plan-protection-2f1206c9.png" alt-text="Screenshot showing Defender database plan selection types.":::
+:::image type="content" source="../media/new-enable-specific-database-protection-ac3c2772.png" alt-text="Screenshot showing Defender database plan selection types.":::
+
+
 6. In the Resource types selection window, toggle the desired plans to **On** or **Off**.<br>
 
-:::image type="content" source="../media/resource-type-selection-88165217.png" alt-text="Screenshot showing Defender for database resource type selections.":::
+:::image type="content" source="../media/new-resources-types-selections-e8cb627f.png" alt-text="Screenshot showing protection for a variety of database resource types in Defender for Cloud.":::
 
 
 7. (Optional) Exclude specific database resource types by toggling them to **Off**.

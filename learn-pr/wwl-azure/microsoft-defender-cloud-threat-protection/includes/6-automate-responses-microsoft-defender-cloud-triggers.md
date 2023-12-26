@@ -4,15 +4,17 @@ To deploy your automation configurations across your organization, use the suppl
 
 ## To implement these policies:
 
-1. From the table below, select the policy you want to apply:<br>
+1. From the table below, select the policy you want to apply:
 
-:::image type="content" source="../media/workflow-automation-table-3a2e1975.png" alt-text="Screenshot showing workflow automation policies.":::
-:::image type="content" source="../media/opening-azure-policy-701b9e5c.png" alt-text="Screenshot showing how to search for an Azure policy.":::
-
+| **Goal**                                              | **Policy**                                                                        | **Policy ID**                        |
+| ----------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------ |
+| Workflow automation for security alerts               | Deploy Workflow Automation for Microsoft Defender for Cloud alerts                | f1525828-9a90-4fcf-be48-268cdd02361e |
+| Workflow automation for security recommendations      | Deploy Workflow Automation for Microsoft Defender for Cloud recommendations       | 73d6ab6c-2475-4850-afd6-43795f3492ef |
+| Workflow automation for regulatory compliance changes | Deploy Workflow Automation for Microsoft Defender for Cloud regulatory compliance | 509122b9-ddd9-47ba-a5f1-d0dac20be63c |
 
 2. From the relevant Azure Policy page, select Assign.
 
-:::image type="content" source="../media/export-policy-assign-647a5a98.png" alt-text="Screenshot showing how to assign and deploy workflow automation for Microsoft Defender for Cloud recommendations.":::
+:::image type="content" source="../media/new-deploy-workflow-automation-40a6b4be.png" alt-text="Screenshot showing how to assign and deploy workflow automation for Microsoft Defender for Cloud recommendations.":::
 
 
 3. Open each tab and set the parameters as desired:
@@ -20,7 +22,7 @@ To deploy your automation configurations across your organization, use the suppl
  -  In the **Basics** tab, set the scope for the policy. To use centralized management, assign the policy to the Management Group containing the subscriptions that will use the workflow automation configuration.
  -  In the Parameters tab, enter the required information.
 
-:::image type="content" source="../media/parameters-tab-ec3f9bcb.png" alt-text="Screenshot showing how to edit workflow automation parameters for Microsoft Defender for Cloud recommendations.":::
+:::image type="content" source="../media/new-deploy-workflow-automation-parameters-42cf07a4.png" alt-text="Screenshot showing how to edit workflow automation parameters for Microsoft Defender for Cloud recommendations.":::
 
 
  -  (Optional), Apply this assignment to an existing subscription in the Remediation tab and select the option to create a remediation task.

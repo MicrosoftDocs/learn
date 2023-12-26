@@ -17,8 +17,12 @@ Alerts have a severity level assigned to help prioritize how to attend to each a
  -  The specific trigger
  -  The confidence level that there was malicious intent behind the activity that led to the alert
 
-:::image type="content" source="../media/alert-severity-6c1573f3.png" alt-text="Screenshot of table showing alert severity and recommended responses.":::
-
+| **Severity**  | **Recommended response**                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| High          | There is a high probability that your resource is compromised. You should look into it right away. Defender for Cloud has high confidence in both the malicious intent and in the findings used to issue the alert. For example, an alert that detects the execution of a known malicious tool such as Mimikatz, a common tool used for credential theft.                                                                                                              |
+| Medium        | This is probably a suspicious activity might indicate that a resource is compromised. Defender for Cloud's confidence in the analytic or finding is medium and the confidence of the malicious intent is medium to high. These would usually be machine learning or anomaly based detections, for example a sign-in attempt from an unusual location.                                                                                                                  |
+| Low           | This might be a benign positive or a blocked attack. Defender for Cloud isn't confident enough that the intent is malicious and the activity might be innocent. For example, log clear is an action that might happen when an attacker tries to hide their tracks, but in many cases is a routine operation performed by admins. Defender for Cloud doesn't usually tell you when attacks were blocked, unless it's an interesting case that we suggest you look into. |
+| Informational | An incident is typically made up of a number of alerts, some of which might appear on their own to be only informational, but in the context of the other alerts might be worthy of a closer look.                                                                                                                                                                                                                                                                     |
 
 ## What are security incidents?
 
@@ -44,7 +48,7 @@ By using the information gathered for each step of an attack, Defender for Cloud
 
 To detect real threats and reduce false positives, Defender for Cloud monitors resources, collects, and analyzes data for threats, often correlating data from multiple sources.
 
-:::image type="content" source="../media/defender-cloud-detection-capabilities-51044dec.png" alt-text="Diagram showing Defender for Cloud detection capabilities.":::
+:::image type="content" source="../media/new-security-center-detection-capabilities-ca0cf6d1.png" alt-text="Diagram showing Defender for Cloud detection capabilities.":::
 
 
 ## Microsoft initiatives
