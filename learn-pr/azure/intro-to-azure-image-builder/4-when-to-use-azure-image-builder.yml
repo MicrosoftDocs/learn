@@ -5,8 +5,8 @@ metadata:
   title: When to use Azure Image Builder?
   description: "When to use Azure Image Builder?"
   ms.date: 06/05/2023
-  author: ericd-mst-github
-  ms.author: erd
+  author: ju-shim
+  ms.author: jushiman
   ms.topic: unit
 azureSandbox: false
 labModal: false

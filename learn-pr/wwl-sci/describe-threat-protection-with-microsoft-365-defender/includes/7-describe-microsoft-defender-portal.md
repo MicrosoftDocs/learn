@@ -1,6 +1,6 @@
 The Microsoft Defender portal combines protection, detection, investigation, and response to devices, identities, endpoints, email & collaboration, and cloud apps, in a central place. The Microsoft Defender portal is designed to meet the needs of security teams and emphasizes quick access to information, simpler layouts. Through the Microsoft Defender portal you can view the security health of your organization.
 
-:::image type="content" source="../media/microsoft-365-portal-inline.png" lightbox="../media/microsoft-365-portal-expanded.png" alt-text="A screenshot of the Microsoft Defender portal home page.":::
+:::image type="content" source="../media/microsoft-defender-portal-inline.png" lightbox="../media/microsoft-defender-portal-expanded.png" alt-text="A screenshot of the Microsoft Defender portal home page.":::
 
 The Microsoft Defender portal home page shows many of the common cards that security teams need. The composition of cards and data depends on the user role. Because the Microsoft Defender portal uses role-based access control, different roles see cards that are more meaningful to their day-to-day jobs.
 
@@ -41,10 +41,6 @@ Microsoft Secure Score, one of the tools in the Microsoft Defender portal, is a 
 Secure Score provides a breakdown of the score, the improvement actions that can boost the organization's score, and how well the organization's Secure Score compares to other similar organizations.
 
 :::image type="content" source="../media/3-secure-score-overview-3-inline.png" lightbox="../media/3-secure-score-overview-3-expanded.png" alt-text="Screenshot showing the Microsoft Secure Score page.":::
-
-To explore Microsoft Secure Score, select the following interactive guide and follow the prompts on the screen.
-
-[![Interactive guide](../media/5-m365-secure-score-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/LP03M05-Explore-Microsoft-Secure-Score/index.html?azure-portal=true)
 
 ##### Differences between secure score in Microsoft Defender XDR and Microsoft Defender for Cloud
 
