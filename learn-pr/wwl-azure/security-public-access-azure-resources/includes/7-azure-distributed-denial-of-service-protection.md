@@ -2,7 +2,7 @@ Distributed denial of service (DDoS) attacks are some of the largest availabilit
 
 Azure DDoS Protection, combined with application design best practices, provides enhanced DDoS mitigation features to defend against DDoS attacks. It's automatically tuned to help protect your specific Azure resources in a virtual network. Protection is simple to enable on any new or existing virtual network, and it requires no application or resource changes.
 
-:::image type="content" source="../media/distributed-denial-of-service-architecture-b3856b80.png" alt-text="Diagram showing an overview of Azure DDos Protection.":::
+:::image type="content" source="../media/new-distributed-denial-of-service-protection-a34aa7d4.png" alt-text="Diagram showing an overview of Azure distributed denial of service protection.":::
 
 
 ## Azure DDoS Protection: Tiers
@@ -52,10 +52,7 @@ Maximize the effectiveness of your DDoS protection strategy by following these b
 
 Azure DDoS Protection monitors actual traffic utilization and constantly compares it against the thresholds defined in the DDoS Policy. When the traffic threshold is exceeded, DDoS mitigation is initiated automatically. When traffic returns below the thresholds, the mitigation is stopped.
 
-:::image type="content" source="../media/mitigation-e8cd1a50.png" alt-text="Diagram showing an example of Always-on traffic monitoring.":::
-
-
-During mitigation, traffic sent to the protected resource is redirected by the DDoS protection service and several checks are performed, such as:
+During mitigation, traffic sent to the protected resource is redirected by the DDoS protection service and several checks are performed, such as:<br>
 
  -  Ensure packets conform to internet specifications and are not malformed.<br>
  -  Interact with the client to determine if the traffic is potentially a spoofed packet (e.g: SYN Auth or SYN Cookie or by dropping a packet for the source to retransmit it).
@@ -72,28 +69,19 @@ The service accomplishes this by using two insights:
 1.  Automatic learning of per-customer (per-Public IP) traffic patterns for Layer 3 and 4.
 2.  Minimizing false positives, considering that the scale of Azure allows it to absorb a significant amount of traffic.
 
-:::image type="content" source="../media/distributed-denial-of-service-protection-0606e493.png" alt-text="Diagram showing an example of Adaptive real time tuning.":::
-
-
 ## Azure DDoS Protection mitigation policies
 
 In the Azure portal, select Monitor &gt; Metrics. In the Metrics pane, select the resource group, select a resource type of Public IP Address, and select your Azure public IP address. DDoS metrics are visible in the Available metrics pane.
 
 DDoS Protection applies three auto-tuned mitigation policies (TCP SYN, TCP, and UDP) for each public IP of the protected resource, in the virtual network that has DDoS enabled. You can view the policy thresholds by selecting the metric Inbound packets to trigger DDoS mitigation.<br>
 
-:::image type="content" source="../media/distributed-denial-of-service-mitigation-metrics-df7ed4bb.png" alt-text="Screenshot showing an example of an Azure DDoS Protection mitigation policy.":::
-
-
-The policy thresholds are auto-configured via machine learning-based network traffic profiling. DDoS mitigation occurs for an IP address under attack only when the policy threshold is exceeded.
+The policy thresholds are auto-configured via machine learning-based network traffic profiling. DDoS mitigation occurs for an IP address under attack only when the policy threshold is exceeded.<br>
 
 ## Metric for an IP address under DDoS attack
 
 If the public IP address is under attack, the value for the metric Under DDoS attack or not changes to 1 as DDoS Protection performs mitigation on the attack traffic.
 
-:::image type="content" source="../media/distributed-denial-of-service-attack-example-3cdf04da.png" alt-text="Screenshot showing an example a Metric for an IP address under DDoS attack.":::
-
-
-We recommend configuring an alert on this metric. You'll then be notified when there’s an active DDoS mitigation performed on your public IP address.
+We recommend configuring an alert on this metric. You'll then be notified when there’s an active DDoS mitigation performed on your public IP address.<br>
 
 ## Web application firewall for resource attacks
 

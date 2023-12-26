@@ -16,10 +16,10 @@ Planning and implementing TLS encryption in Azure applications is essential for 
 
  -  Ensure public network access is disabled for Azure resources, including Azure SQL Managed Instances, to bolster security. Limit access to services via Private Endpoints or within virtual networks.<br>
 
-## 5. Centralized Identity Management with Azure AD:<br>
+## 5. Centralized Identity Management with Microsoft Entra ID:<br>
 
- -  Implement Azure Active Directory (Azure AD) authentication for data plane access, ensuring centralized identity management. Limit or avoid the use of local authentication methods, transitioning primarily to Azure AD.<br>
+ -  Implement Microsoft Entra ID authentication for data plane access, ensuring centralized identity management. Limit or avoid the use of local authentication methods, transitioning primarily to Microsoft Entra ID.<br>
 
 ## 6. Monitor with Microsoft Defender for Cloud:<br>
 
- -  Monitor configurations using Microsoft Defender for Cloud, utilizing built-in Azure Policy definitions to ensure adherence to best practices, like provisioning Azure AD<br>
+ -  Monitor configurations using Microsoft Defender for Cloud, utilizing built-in Azure Policy definitions to ensure adherence to best practices, like provisioning Microsoft Entra ID.<br>

@@ -2,7 +2,7 @@ Whether you’re delivering content and files or building global apps and APIs, 
 
 Azure Front Door is Microsoft’s modern cloud Content Delivery Network (CDN) that provides fast, reliable, and secure access between your users and your applications’ static and dynamic web content across the globe. Azure Front Door delivers your content using Microsoft’s global edge network with hundreds of global and local points of presence (PoPs) distributed around the world close to both your enterprise and consumer end users.
 
-:::image type="content" source="../media/front-door-overview-e9ad697d.png" alt-text="Diagram showing an overview example of the Azure Front Door.":::
+:::image type="content" source="../media/new-front-door-overview-445cebc8.png" alt-text="Diagram showing an overview example of the Azure Front Door.":::
 
 
 Azure Front Door enables internet-facing application to:
@@ -46,4 +46,4 @@ Modernize your internet first applications on Azure with Cloud Native experience
 
 Azure Front Door and Azure CDN are both Azure services that offer global content delivery with intelligent routing and caching capabilities at the application layer. Both services can be used to optimize and accelerate your applications by providing a globally distributed network of points of presence (POP) close to your users. Both services also offer a variety of features to help you secure your applications from malicious attacks and to help you monitor your application's health and performance.
 
-:::image type="content" source="../media/azure-front-door-architecture-0528514e.png" alt-text="Diagram showing a comparison between Azure Front Door and Azure CDN services.":::
+:::image type="content" source="../media/new-azure-front-door-and-content-delivery-network-029617be.png" alt-text="Diagram showing a comparison between Azure Front Door and Azure Content Delivery Network services.":::
