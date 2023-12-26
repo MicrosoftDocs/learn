@@ -1,7 +1,3 @@
----
-ms.custom:
-  - build-2023
----
 All of the data we've explored up to this point has been static data in files. However, many data analytics scenarios involve *streaming* data that must be processed in near real time. For example, you might need to capture readings emitted by internet-of-things (IoT) devices and store them in a table as they occur.
 
 ## Spark Structured Streaming
