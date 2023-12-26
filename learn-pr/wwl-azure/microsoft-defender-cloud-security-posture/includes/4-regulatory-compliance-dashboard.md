@@ -19,9 +19,6 @@ Use the regulatory compliance dashboard to help focus your attention on the gaps
 
 The dashboard provides you with an overview of your compliance status and the set of supported compliance regulations. You'll see your overall compliance score, and the number of passing vs. failing assessments associated with each standard.
 
-:::image type="content" source="../media/regulatory-compliance-controls-8e72e0b4.png" alt-text="Screenshot showing the Defender for Cloud Regulatory compliance dashboard.":::
-
-
 ## Investigate regulatory compliance issues
 
 You can use the information in the regulatory compliance dashboard to investigate any issues that might be affecting your compliance posture.
@@ -38,7 +35,7 @@ You can use the information in the regulatory compliance dashboard to investigat
 
 5. Select **Control details**.<br>
 
-:::image type="content" source="../media/control-details-7f503c71.png" alt-text="Screenshot showing the Defender for Cloud Regulatory compliance Control details.":::
+:::image type="content" source="../media/new-control-details-6b59bc2b.png" alt-text="Screenshot showing the Defender for Cloud Regulatory compliance Control details.":::
 
 
  -  Select Overview to see the specific information about the Control you selected.
@@ -47,7 +44,7 @@ You can use the information in the regulatory compliance dashboard to investigat
 
 6. Under **Your Actions**, you can select a down arrow to view more details and resolve the recommendation for that resource.
 
-:::image type="content" source="../media/compliance-controls-your-actions-definitions-509a944d.png" alt-text="Screenshot showing the Defender for Cloud Regulatory compliance Control detail for establishing network segmentation boundaries.":::
+:::image type="content" source="../media/new-your-actions-45615309.png" alt-text="Screenshot showing how to to view more details and resolve the recommendation for a resource.":::
 
 
 > [!NOTE]
@@ -71,12 +68,12 @@ The regulatory compliance has both automated and manual assessments that might n
 
 6. Select a particular resource to view more details and resolve the recommendation for that resource.<br>
 
-:::image type="content" source="../media/remediate-automated-assessment-a425ec10.png" alt-text="Screenshot showing take action steps from the recommendations detail page.":::
+:::image type="content" source="../media/new-sample-recommendation-example-273b7ee0.png" alt-text="Screenshot showing that disk encryption should be applied on virtual machines.":::
 
 
 7. In this example, when you select **Take action** from the recommendation details page, you arrive in the Azure Virtual Machine pages of the Azure portal, where you can enable encryption from the **Security** tab:
 
-:::image type="content" source="../media/encrypt-virtual-machine-disks-e4f06b3b.png" alt-text="Screenshot showing how to enable encryption from the Security tab.":::
+:::image type="content" source="../media/new-encrypting-virtual-machine-disks-4949d026.png" alt-text="Screenshot showing how to enable encryption from the Security tab.":::
 
 
 8. After you take action to resolve recommendations, you'll see the result in the compliance dashboard report because your compliance score improves.
