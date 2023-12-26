@@ -4,7 +4,7 @@ Built-in connectors enable connection to the broader security ecosystem for non-
 
 The Microsoft Sentinel Data connectors page shows the full list of connectors and their status for your workspace. Soon this page will only show the list of in-use data connectors.
 
-:::image type="content" source="../media/open-data-connector-page-4ecd372b.png" alt-text="Screenshot showing the Microsoft Sentinel Data connectors page.":::
+:::image type="content" source="../media/new-open-data-connector-page-2c86d90f.png" alt-text="Screenshot showing the Microsoft Sentinel Data connectors page.":::
 
 
 To add more data connectors, install the solution associated with the data connector from the **Content Hub**.
@@ -15,7 +15,10 @@ From the Data connectors page, select the active or custom connector you want to
 
 Once you fulfill all the prerequisites listed in the Instructions tab, the connector page describes how to ingest the data to Microsoft Sentinel. It may take some time for data to start arriving.<br>
 
-After you connect, you see a summary of the data in the Data received graph, and the connectivity status of the data types.<br>
+After you connect, you see a summary of the data in the Data received graph, and the connectivity status of the data types.
+
+:::image type="content" source="../media/new-azure-distributed%20denial-of-service%20attack-8f15f6c9.png" alt-text="Screenshot showing a summary of the data in the Data received graph, and the connectivity status of the data types.":::
+
 
 ### REST API integration for data connectors
 
@@ -73,4 +76,16 @@ Microsoft Sentinel solutions provide packages of security content, including dat
 
 Both Microsoft and other organizations author Microsoft Sentinel data connectors. Each data connector has one of these support types:
 
-:::image type="content" source="../media/data-connector-support-types-98d60d26.png" alt-text="Screenshot of Table showing Microsoft Sentinel data connector support types.":::
+| **Support type**    | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Microsoft supported | Applies to:Data connectors for data sources where Microsoft is the data provider and author.Some Microsoft-authored data connectors for non-Microsoft data sources.Microsoft supports and maintains data connectors in this category according to the Microsoft Azure Support Plans.Partners or the Community support data connectors that are authored by any party other than Microsoft.                                                                                                                     |
+| Partner supported   | Applies to data connectors authored by parties other than Microsoft.<br><br>The partner company provides support or maintenance for these data connectors. The partner company can be an Independent Software Vendor, a Managed Service Provider, a Systems Integrator, or any organization whose contact information is provided on the Microsoft Sentinel page for that data connector.<br><br>For any issues with a partner supported data connector, contact the specified data connector support contact. |
+| Community supported | Applies to data connectors authored by Microsoft or partner developers that don't have listed contacts for data connector support and maintenance on the specified data connector page in Microsoft Sentinel.                                                                                                                                                                                                                                                                                                  |
+
+## Find the support contact for a data connector
+
+1. In the Microsoft Sentinel Data connectors page, select the relevant connector.
+
+2. To access support and maintenance for the connector, use the support contact link in the Supported by field on the side panel for the connecter.
+
+:::image type="content" source="../media/new-connector-support-0217d65b.png" alt-text="Screenshot showing how to access support and maintenance for the data connector.":::

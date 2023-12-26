@@ -17,26 +17,26 @@ Activity log events are retained in Azure for 90 days and then deleted. There's 
 
 You can access the activity log from most menus in the Azure portal. The menu that you open it from determines its initial filter. If you open it from the Monitor menu, the only filter is on the subscription. If you open it from a resource's menu, the filter is set to that resource. You can always change the filter to view all other entries. Select Add Filter to add more properties to the filter.
 
-:::image type="content" source="../media/view-activity-log-c9032965.png" alt-text="Screenshot showing the Azure monitor activity log.":::
+:::image type="content" source="../media/new-view-activity-log-c436f259.png" alt-text="Screenshot showing the Azure monitor activity log.":::
 
 
 ## Download the activity log
 
 Select **Download as CSV** to download the events in the current view.
 
-:::image type="content" source="../media/download-activity-log-852a0265.png" alt-text="Screenshot showing how to download the Azure monitor activity log.":::
+:::image type="content" source="../media/new-download-activity-log-a5239d87.png" alt-text="Screenshot showing how to download the Azure monitor activity log.":::
 
 
 ### View change history
 
 For some events, you can view the change history, which shows what changes happened during that event time. Select an event from the activity log you want to look at more deeply. Select the Change history tab to view any changes on the resource up to 30 minutes before and after the time of the operation.
 
-:::image type="content" source="../media/change-history-event-2c67d49e.png" alt-text="Screenshot showing how to create or update a virtual machine.":::
+:::image type="content" source="../media/new-change-history-event-d33cc7c2.png" alt-text="Screenshot showing how to create or update a virtual machine.":::
 
 
 If any changes are associated with the event, you'll see a list of changes that you can select. Selecting a change opens the **Change history** page. This page displays the changes to the resource. In the following example, you can see that the VM changed sizes.
 
-:::image type="content" source="../media/change-history-event-details-9a319237.png" alt-text="Screenshot showing changed properties of a virtual machine.":::
+:::image type="content" source="../media/new-change-history-event-details-a1afa966.png" alt-text="Screenshot showing export activity logs.":::
 
 
 ### Other methods to retrieve activity log events
@@ -61,7 +61,7 @@ Send the activity log to a Log Analytics workspace to enable the Azure Monitor L
 
 Select Export Activity Logs to send the activity log to a Log Analytics workspace.
 
-:::image type="content" source="../media/diagnostic-settings-export-22466ff3.png" alt-text="Screenshot showing export activity logs.":::
+:::image type="content" source="../media/new-diagnostic-settings-export-b803e310.png" alt-text="Screenshot showing how to export activity logs to send to a Log Analytics workspace.":::
 
 
 You can send the activity log from any single subscription to up to five workspaces.
@@ -70,12 +70,12 @@ Activity log data in a Log Analytics workspace is stored in a table called Azure
 
 For example, to view a count of activity log records for each category, use the following query:
 
-:::image type="content" source="../media/kusto-query-activity-log-a5f054b7.png" alt-text="Screenshot showing how to view Kusto Azure activity log records.":::
+:::image type="content" source="../media/new-kusto-azure-activity-summarize-a347e945.png" alt-text="Screenshot showing how to view Kusto Azure activity log records.":::
 
 
 To retrieve all records in the administrative category, use the following query:
 
-:::image type="content" source="../media/kusto-query-retrieve-all-records-67b6da82.png" alt-text="Screenshot showing how to retrieve all Kusto records.":::
+:::image type="content" source="../media/new-kusto-azure-activity-where-c74d8390.png" alt-text="Screenshot showing how to retrieve all Kusto records.":::
 
 
 *In some scenarios, it's possible that values in fields of AzureActivity might have different casings from otherwise equivalent values. Take care when querying data in AzureActivity to use case-insensitive operators for string comparisons, or use a scalar function to force a field to a uniform casing before any comparisons. For example, use the tolower() function on a field to force it to always be lowercase or the =~ operator when performing a string comparison.*

@@ -8,8 +8,8 @@ From the Microsoft Sentinel navigation menu, select Analytics.
 
 In the action bar at the top, select +Create and select Scheduled query rule. This opens the Analytics rule wizard.
 
-:::image type="content" source="../media/microsoft-sentinel-analytics-page-e4b32ea4.png" alt-text="Screenshot showing the Microsoft Sentinel Analytics page.":::
-<br>
+:::image type="content" source="../media/new-create-scheduled-query-full-afab033b.png" alt-text="Microsoft Sentinel Analytics page.":::
+
 
 ## Analytics rule wizard - General tab
 
@@ -19,7 +19,7 @@ In the action bar at the top, select +Create and select Scheduled query rule. Th
  -  Set the alert Severity as appropriate.
  -  When you create the rule, its Status is Enabled by default, which means it will run immediately after you finish creating it. If you don’t want it to run immediately, select Disabled, and the rule will be added to your Active rules tab and you can enable it from there when you need it.
 
-:::image type="content" source="../media/microsoft-sentinel-analytics-wizard-924ce4e1.png" alt-text="Screenshot showing the Microsoft Sentinel Analytics rule wizard page.":::
+:::image type="content" source="../media/new-general-tab-dc41fb22.png" alt-text="Screenshot showing the Microsoft Sentinel Analytics rule wizard page.":::
 
 
 ## Define the rule query logic and configure settings
@@ -29,7 +29,7 @@ In the Set rule logic tab, you can either write a query directly in the Rule que
  -  Queries are written in Kusto Query Language (KQL).
  -  The example shown in this screenshot queries the SecurityEvent table to display a type of failed Windows logon events.
 
-## :::image type="content" source="../media/set-rule-logic-tab-1-new-d627f7e0.png" alt-text="Screenshot showing how to define rule query logic and configure settings."::: <br>
+## :::image type="content" source="../media/new-set-rule-logic-tab-1-d3590e01.png" alt-text="Screenshot showing how to define rule query logic and configure settings."::: 
 
 ### Alert enrichment
 
@@ -48,7 +48,7 @@ In the Set rule logic tab, you can either write a query directly in the Rule que
 
 In the Query scheduling section, set the following parameters:
 
-:::image type="content" source="../media/set-rule-logic-tab-2-0982929a.png" alt-text="Screenshot showing how to create a new scheduled rule.":::
+:::image type="content" source="../media/new-query-scheduling-and-alert-threshold-941de196.png" alt-text="Screenshot showing how to create a new scheduled rule.":::
 
 
  -  Set **Run query every** to control how often the query is run—as frequently as every 5 minutes or as infrequently as once every 14 days.
@@ -57,7 +57,7 @@ In the Query scheduling section, set the following parameters:
      -  Leave it set to Automatically to continue the original behavior: the rule will run for the first time immediately upon being created, and after that at the interval set in the **Run query every** setting.
      -  Toggle the switch to **At specific time** if you want to determine when the rule first runs, instead of having it run immediately. Then choose the date using the calendar picker and enter the time in the format of the example shown.
 
-:::image type="content" source="../media/advanced-scheduling-639fd185.png" alt-text="Screenshot showing how to run a scheduled run query.":::
+:::image type="content" source="../media/new-run-query-a6997d64.png" alt-text="Screenshot showing how to run a scheduled run query.":::
 
 
 Future runnings of the rule will occur at the specified interval after the first running.
@@ -79,7 +79,7 @@ Use the Alert threshold section to define the sensitivity level of the rule. For
 
 In the Incident Settings tab, you can choose whether and how Microsoft Sentinel turns alerts into actionable incidents. If this tab is left alone, Microsoft Sentinel will create a single, separate incident from each and every alert. You can choose to have no incidents created, or to group several alerts into a single incident, by changing the settings in this tab.
 
-:::image type="content" source="../media/incident-settings-tab-99dcc6b8.png" alt-text="Screenshot showing how to edit an existing rule.":::
+:::image type="content" source="../media/new-configure-the-incident-creation-settings-b3d4e6e4.png" alt-text="Screenshot showing how to edit an existing rule.":::
 
 
 ### Incident settings
@@ -96,8 +96,11 @@ In the Alert grouping section, if you want a single incident to be generated fro
  -  Limit the group to alerts created within the selected time frame: Determine the time frame within which the similar or recurring alerts will be grouped together. All of the corresponding alerts within this time frame will collectively generate an incident or a set of incidents (depending on the grouping settings below). Alerts outside this time frame will generate a separate incident or set of incidents.
  -  Group alerts triggered by this analytics rule into a single incident by: Choose the basis on which alerts will be grouped together:
 
-:::image type="content" source="../media/alert-grouping-options-descriptions-4c3abaac.png" alt-text="Screenshot of Table showing alert grouping options and descriptions.":::
-<br>
+| **Option**                                                                     | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Group alerts into a single incident if all the entities match                  | Alerts are grouped together if they share identical values for each of the mapped entities (defined in the Set rule logic tab above). This is the recommended setting.                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Group all alerts triggered by this rule into a single incident                 | All the alerts generated by this rule are grouped together even if they share no identical values.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Group alerts into a single incident if the selected entities and details match | Alerts are grouped together if they share identical values for all of the mapped entities, alert details, and custom details selected from the respective drop-down lists.<br><br>You might want to use this setting if, for example, you want to create separate incidents based on the source or target IP addresses, or if you want to group alerts that match a specific entity and severity.<br><br>Note: When you select this option, you must have at least one entity type or field selected for the rule. Otherwise, the rule validation will fail and the rule won't be created. |
 
  -  Re-open closed matching incidents: If an incident has been resolved and closed, and later on another alert is generated that should belong to that incident, set this setting to Enabled if you want the closed incident re-opened, and leave as Disabled if you want the alert to create a new incident.
 
@@ -121,7 +124,7 @@ Use automation rules to perform basic triage, assignment, workflow, and closing 
 
 Automate more complex tasks and invoke responses from remote systems to remediate threats by calling playbooks from these automation rules. You can do this for incidents as well as for individual alerts.
 
-:::image type="content" source="../media/automated-response-tab-2d26d892.png" alt-text="Screenshot showing how to automate complex tasks and invoke responses from remote systems to remediate threats.":::
+:::image type="content" source="../media/new-automated-response-8553f376.png" alt-text="Screenshot showing how to automate complex tasks and invoke responses from remote systems to remediate threats.":::
 
 
  -  Under Alert automation (classic) at the bottom of the screen, you'll see any playbooks you've configured to run automatically when an alert is generated using the old method.
@@ -130,10 +133,8 @@ Automate more complex tasks and invoke responses from remote systems to remediat
 
 Select **Review and create** to review all the settings for your new analytics rule. When the "Validation passed" message appears, select **Create**.
 
-:::image type="content" source="../media/review-create-tab-7a3ddb82.png" alt-text="Screenshot showing how to view a rule and its output.":::
-
-
-## View the rule and its output
+:::image type="content" source="../media/new-review-and-create-000860e8.png" alt-text="Screenshot showing how to view a rule and its output.":::
+ View the rule and its output
 
  -  You can find your newly created custom rule (of type "Scheduled") in the table under the Active rules tab on the main **Analytics** screen. From this list you can enable, disable, or delete each rule.
  -  To view the results of the analytics rules you create, go to the **Incidents** page, where you can triage incidents, investigate them, and remediate the threats.

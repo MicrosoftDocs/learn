@@ -32,7 +32,7 @@ Get a more complete and detailed introduction to automating threat response usin
 
 Follow these steps to create a new playbook in Microsoft Sentinel
 
-:::image type="content" source="../media/add-new-playbook-4dc2270f.png" alt-text="Screenshot showing steps to create a new playbook in Microsoft Sentinel.":::
+:::image type="content" source="../media/new-add-new-playbook-7ca92f3d.png" alt-text="Sceenshot showing steps to create a new playbook in Microsoft Sentinel.":::
 
 
 1. From the **Microsoft Sentinel** navigation menu, select **Automation**.
@@ -55,7 +55,7 @@ If you're creating a **Standard** playbook (the new kind - see Logic app types),
 
 If you're creating a **Consumption** playbook (the original, classic kind), then depending on which trigger you want to use, select either **Playbook with incident trigger**, **Playbook with alert trigger**, or **Playbook with entity trigger**. Then, continue following the steps in the **Logic Apps Consumption** tab below.
 
-:::image type="content" source="../media/create-playbook-basics-3ecbebc8.png" alt-text="Screenshot showing the create playbook page.":::
+:::image type="content" source="../media/new-create-playbook-basics-aed427db.png" alt-text="Screenshot showing the create playbook page.":::
 
 
 1. In the **Basics** tab:
@@ -82,7 +82,7 @@ Review the configuration choices you have made, and select **Create and continue
 
 4. Your playbook will take a few minutes to be created and deployed, after which you will see the message "Your deployment is complete" and you will be taken to your new playbook's Logic App Designer. The trigger you chose at the beginning will have automatically been added as the first step, and you can continue designing the workflow from there.
 
-:::image type="content" source="../media/logic-app-blank-cd86b6ad.png" alt-text="Screenshot showing the logic app designer page.":::
+:::image type="content" source="../media/new-logic-app-blank-3fb8247b.png" alt-text="Screenshot showing the logic app designer page.":::
 
 
 ## Add actions
@@ -105,12 +105,12 @@ To use a playbook to respond automatically to an **entire incident** or to an **
 
 1. From the **Automation** blade in the Microsoft Sentinel navigation menu, select **Create** from the top menu and then **Automation rule**.
 
-:::image type="content" source="../media/add-new-rule-7c6f082d.png" alt-text="Screenshot showing the automation rule panel.":::
+:::image type="content" source="../media/new-add-new-rule-fa6491dd.png" alt-text="Screenshot showing the automation rule panel.":::
 
 
 2. The **Create new automation rule** panel opens. Enter a name for your rule.
 
-:::image type="content" source="../media/create-new-automation-panel-8469edd9.png":::
+:::image type="content" source="../media/new-create-automation-rule-5d7549e0.png" alt-text="Screenshot showing the automation rule panel.":::
 
 
 3. **Trigger**: Select the appropriate trigger according to the circumstance for which you're creating the automation rule—**When incident is created**, **When incident is updated**, or **When alert is created**.<br>
@@ -131,7 +131,7 @@ To use a playbook to respond automatically to an **entire incident** or to an **
 
 In the **Manage permissions** panel that opens up, mark the check boxes of the resource groups containing the playbooks you want to run, and click **Apply**.<br>
 
-:::image type="content" source="../media/manage-permissions-420e054e.png" alt-text="Screenshot showing the manage permissions page.":::
+:::image type="content" source="../media/new-manage-permissions-b441caf1.png" alt-text="Screenshot showing the automation rule panel.":::
 
 
  -  You yourself must have **owner** permissions on any resource group to which you want to grant Microsoft Sentinel permissions, and you must have the Logic App Contributor role on any resource group containing playbooks you want to run.
@@ -145,9 +145,9 @@ In the **Manage permissions** panel that opens up, mark the check boxes of the r
      -  Select **Application Type** and filter on **Microsoft Applications**.
      -  In the search box type **Azure Security Insights**.
      -  Copy the **Object ID** field. You will need to add this additional authorization to your existing Azure Lighthouse delegation.
- -  The **Microsoft Sentinel Automation Contributor** role has a fixed GUID which is `f4c81013-99ee-4d62-a7ee-b3f1f648599a`. A sample Azure Lighthouse authorization would look like this in your parameters template:
+ -  The **Microsoft Sentinel Automation Contributor** role has a fixed GUID which is **`f4c81013-99ee-4d62-a7ee-b3f1f648599a`**. A sample Azure Lighthouse authorization would look like this in your parameters template:
 
-:::image type="content" source="../media/azure-lighthouse-authorization-parameters-template-c9a45b1a.png" alt-text="Screenshot showing what a sample Azure Lighthouse authorization would look like this in your parameters template.":::
+:::image type="content" source="../media/new-java-script-object-notation-text-based-format-563af0b3.png" alt-text="Screenshot showing what a sample Azure Lighthouse authorization would look like this in your parameters template.":::
 
 
  -  Add any other actions you want for this rule. You can change the order of execution of actions by selecting the up or down arrows to the right of any action.
