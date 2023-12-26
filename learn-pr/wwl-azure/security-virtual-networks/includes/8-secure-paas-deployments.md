@@ -10,7 +10,7 @@ One of the five essential characteristics of cloud computing is broad network ac
 
 The following figure shows how the security perimeter has evolved from a network perimeter to an identity perimeter. Security becomes less about defending your network and more about defending your data, as well as managing the security of your apps and users. The key difference is that you want to push security closer to what's important to your company.
 
-:::image type="content" source="../media/identity-perimeter-3114c16a.png" alt-text="Diagram showing and example of the evolving security perimeter.":::
+:::image type="content" source="../media/new-identity-perimeter-70ece914.png" alt-text="Screenshow showing an example of identity as the primary security perimeter.":::
 
 
 Initially, Azure PaaS services (for example, web roles and Azure SQL) provided little or no traditional network perimeter defenses. It was understood that the element's purpose was to be exposed to the Internet (web role) and that authentication provides the new perimeter (for example, BLOB or Azure SQL).
@@ -43,8 +43,14 @@ The Microsoft Security Development Lifecycle specifies that teams should engage 
 
 The following table lists the STRIDE threats and gives some example mitigations that use Azure features. These mitigations won't work in every situation.
 
-:::image type="content" source="../media/stride-threats-table-53f4e3b9.png" alt-text="Screenshot of table showing examples of the STRIDE threat and boundaries.":::
-
+| **Threat**             | **Security property** | **Potential Azure platform mitigations**                                                              |
+| ---------------------- | --------------------- | ----------------------------------------------------------------------------------------------------- |
+| Spoofing               | Authentication        | Require HTTPS connections.                                                                            |
+| Tampering              | Integrity             | Validate TLS/SSL certificates.                                                                        |
+| Repudiation            | Non-repudiation       | Enable Azure monitoring and diagnostics.                                                              |
+| Information disclosure | Confidentiality       | Encrypt sensitive data at rest by using service certificates.                                         |
+| Denial of service      | Availability          | Monitor performance metrics for potential denial-of-service conditions. Implement connection filters. |
+| Elevation of privilege | Authorization         | Use Privileged Identity Management.                                                                   |
 
 ## Develop on Azure App Service
 

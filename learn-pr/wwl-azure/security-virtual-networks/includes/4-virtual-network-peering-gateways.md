@@ -12,7 +12,7 @@ VPN gateways provide a limited bandwidth connection and are useful in scenarios 
 
 ## Gateway transit
 
-Virtual network peering and VPN Gateways can also coexist via gateway transit
+Virtual network peering and VPN Gateways can also coexist via gateway transit.
 
 Gateway transit enables you to use a peered virtual network's gateway for connecting to on-premises, instead of creating a new gateway for connectivity. As you increase your workloads in Azure, you need to scale your networks across regions and virtual networks to keep up with the growth. Gateway transit allows you to share an ExpressRoute or VPN gateway with all peered virtual networks and lets you manage the connectivity in one place. Sharing enables cost-savings and reduction in management overhead.<br>
 
@@ -29,4 +29,13 @@ Virtual network peering and VPN gateways both support the following connection t
 
 ## Comparison of virtual network peering and VPN Gateway
 
-:::image type="content" source="../media/virtual-network-peering-gateway-7de24ccb.png" alt-text="Screenshot of a table showing a comparison of virtual network peering and VPN Gateway.":::
+| **Item**                | **Virtual network peering**                                                                                                      | **VPN Gateway**                                                                                                               |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Limits                  | Up to 500 virtual network peerings per virtual network                                                                           | One VPN gateway per virtual network. The maximum number of tunnels per gateway depends on the gateway SKU.                    |
+| Pricing model           | Ingress/Egress                                                                                                                   | Hourly + Egress                                                                                                               |
+| Encryption              | Software-level encryption is recommended.                                                                                        | Custom IPsec/IKE policy can be applied to new or existing connections.                                                        |
+| Bandwidth limitations   | No bandwidth limitations.                                                                                                        | Varies based on SKU.                                                                                                          |
+| Private?                | Yes. Routed through Microsoft backbone and private. No public internet involved.                                                 | Public IP involved, but routed through Microsoft backbone if Microsoft global network is enabled.                             |
+| Transitive relationship | Peering connections are non-transitive. Transitive networking can be achieved using NVAs or gateways in the hub virtual network. | If virtual networks are connected via VPN gateways and BGP is enabled in the virtual network connections, transitivity works. |
+| Initial setup time      | Fast                                                                                                                             | ~30 minutes                                                                                                                   |
+| Typical scenarios       | Data replication, database failover, and other scenarios needing frequent backups of large data.                                 | Encryption-specific scenarios that are not latency sensitive and do not need high throughout.                                 |
