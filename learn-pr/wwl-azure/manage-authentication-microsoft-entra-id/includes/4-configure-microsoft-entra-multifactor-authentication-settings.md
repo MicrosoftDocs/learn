@@ -12,7 +12,7 @@ The following Microsoft Entra multifactor authentication settings are available 
 | Phone call settings              | Configure settings related to phone calls and greetings for cloud and on-premises environments.                                                                                                                                                                                       |
 | Providers                        | This will show any existing authentication providers that you've associated with your account. Adding new providers is disabled as of September 1, 2018.                                                                                                                              |
 
-:::image type="content" source="../media/new-multi-factor-authentication-settings-portal-6f8c167b.png" alt-text="Screenshot showing the multifactor authentication settings portal.":::
+:::image type="content" source="../media/new-multifactor-authentication-settings-portal-00fc7718.png" alt-text="Screenshot showing the multifactor authentication settings portal.":::
 
 
 ## Account lockout (Microsoft Entra multifactor authentication Server only)
