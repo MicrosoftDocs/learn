@@ -67,7 +67,7 @@ The Azure Quantum Development Kit (QDK) extension for Visual Studio Code allows 
 
 ## Create an Azure Quantum notebook
 
-The QDK extension allows you to create Azure Quantum notebooks in VS Code. Azure Quantum notebooks are Jupyter notebooks that allow you to run quantum programs on the quantum computers and simulators of the providers you selected for your Azure Quantum workspace.
+The Modern QDK allows you to create Azure Quantum notebooks in VS Code. Azure Quantum notebooks are Jupyter notebooks that allow you to run quantum programs on the quantum computers and simulators of the providers you selected for your Azure Quantum workspace.
 
 To create an Azure Quantum notebook:
 
