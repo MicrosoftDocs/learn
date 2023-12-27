@@ -64,7 +64,8 @@ To determine which permissions to apply to a custom role, see the list of Micros
 | -------------------------------------------------------------------- |
 | `az provider operation show --namespace Microsoft.ContainerRegistry` |
 
-In tenants configured with Azure Resource Manager private link, Azure Container Registry supports wildcard actions such as Microsoft.ContainerRegistry/\*/read or Microsoft.ContainerRegistry/registries/\*/write in custom roles, granting access to all matching actions. In a tenant without an ARM private link, specify all required registry actions individually in a custom role.
+> [!NOTE]
+> In tenants configured with Azure Resource Manager private link, Azure Container Registry supports wildcard actions such as Microsoft.ContainerRegistry/\*/read or Microsoft.ContainerRegistry/registries/\*/write in custom roles, granting access to all matching actions. In a tenant without an Azure Resource Manager private link, specify all required registry actions individually in a custom role.
 
 ## Example: Custom role to import images
 
