@@ -47,7 +47,7 @@ You don't need an Azure account to use the QDK extension, but if you already hav
 
 :::image type="content" source="../media/qdk-extension.png" alt-text="Screenshot of the QDK extension in Visual Studio Code.":::
 
-### Is the QDK extension the right tool for me?
+### Is the Modern QDK the right tool for me?
 
 The following table might help you decide if you want to use the QDK extension for your quantum computing development journey.
 
