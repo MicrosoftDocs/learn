@@ -4,4 +4,4 @@ You have explored the Azure Quantum website, the Azure Quantum portal, and the A
 
 - The Azure Quantum website offers AI and tutorials to learn quantum computing and quantum programming with Q#.
 - The Azure Quantum portal allows you to manage your quantum jobs and run your programs in a notebook without installing anything.
-- The QDK extension allows you to run your programs locally and offers more resources to create high-level quantum solutions.
+- The QDK extension allows you to run your programs locally and offers more resources to create high quality quantum solutions.
