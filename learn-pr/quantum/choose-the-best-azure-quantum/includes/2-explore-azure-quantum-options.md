@@ -43,7 +43,7 @@ With the QDK extension, you can create Q# programs, and take advantage of featur
 You don't need an Azure account to use the QDK extension, but if you already have an Azure account set up, you can connect directly to your Azure Quantum workspaces from VS Code. This allows you to run your Q# programs on the quantum computers and simulators of the providers you selected for your workspace.
 
 > [!TIP]
-> If you have an Azure Quantum workspace, you can benefit from **free $500 USD** in Azure Quantum Credits when you submit your Q# programs to Azure Quantum from VS Code.
+> If you have an Azure Quantum workspace, you can enjoy a free USD500 per target in Azure Quantum Credits when you submit your Q# programs to Azure Quantum from VS Code.
 
 :::image type="content" source="../media/qdk-extension.png" alt-text="Screenshot of the QDK extension in Visual Studio Code.":::
 
