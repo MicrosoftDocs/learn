@@ -19,7 +19,7 @@ quiz:
 
   - content: "If you want to start using Azure Quantum, but you don't have an Azure account, what should you do?"
     choices:
-    - content: "You can use the Azure Quantum website or install the QDK extension for Visual Studio Code without an Azure account. You can also create an Azure account and benefit from the free Azure Quantum Credits."
+    - content: "You can use the Azure Quantum website or install the Azure Quantum Development Kit (Modern QDK) extension for Visual Studio Code without an Azure account. You can also create an Azure account and benefit from the free Azure Quantum Credits."
       isCorrect: true
       explanation: "An Azure account is not required to start using Azure Quantum, but it's recommended if you want have access to all the features."
     - content: "You need to create an Azure account and have a valid subscription in order to start using Azure Quantum."
