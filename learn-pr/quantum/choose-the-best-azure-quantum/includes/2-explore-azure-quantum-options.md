@@ -36,7 +36,7 @@ The following table might help you decide if you want to use the Azure Quantum w
 The Azure Quantum Development Kit (Modern QDK) extension is a software development kit for quantum computing. It is an extension for Visual Studio Code, a free, open source code editor from Microsoft.
 
 > [!NOTE]
-> The QDK extension is availAble both in Visual Studio Code and in [VS Code for the Web](https://vscode.dev/).
+> The QDK extension is available both in Visual Studio Code and in [VS Code for the Web](https://vscode.dev/).
 
 With the QDK extension, you can create Q# programs, and take advantage of features such as improved error messaging, Q# syntax highlighting, and integrated debugging in a local development environment. You can also load the pre-installed Q# samples and run them on the built-in simulator.
 
