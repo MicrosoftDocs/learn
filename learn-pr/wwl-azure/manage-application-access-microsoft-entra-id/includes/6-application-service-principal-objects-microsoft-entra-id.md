@@ -71,4 +71,8 @@ Any changes that you make to your application object are also reflected in its s
 
 In this example scenario:
 
-:::image type="content" source="../media/application-object-example-scenario-70edd409.png" alt-text="Diagram showing an example scenario.":::
+| **Step** | **Description**                                                                                                                                                                                                                                                                                              |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1        | The process of creating the application and service principal objects in the application's home tenant.                                                                                                                                                                                                      |
+| 2        | When Contoso and Fabrikam administrators complete consent, a service principal object is created in their company's Microsoft Entra tenant and assigned the permissions that the administrator granted. Also note that the HR app could be configured/designed to allow consent by users for individual use. |
+| 3        | The consumer tenants of the HR application (Contoso and Fabrikam) each have their own service principal object. Each represents their use of an instance of the application at runtime, governed by the permissions consented by the respective administrator.                                               |

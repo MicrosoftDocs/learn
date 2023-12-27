@@ -33,14 +33,14 @@ There are other ways in which applications can be granted authorization for app-
 
 ## Comparison of delegated and application permissions
 
-|                                | **Delegated permissions**                                                                 | **Application permissions**                                       |
-| ------------------------------ | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| Types of apps                  | Web app / Mobile / Single-page app (SPA)                                                  | Web / Daemon                                                      |
-| Access context                 | Get access on behalf of a user                                                            | Get access without a user                                         |
-| Who can consent                | Users can consent for their dataAdmins can consent for all users                          | Only admin can consent                                            |
-| Other names                    | ScopesOAuth2 permissions                                                                  | App rolesApp-only permissionsDirect access permissions            |
-| Result of consent              | oAuth2PermissionGrant                                                                     | appRoleAssignment                                                 |
-| Supported signInAudience types | AzureADMyOrgAzureADMultipleOrgsAzureADandPersonalMicrosoftAccountPersonalMicrosoftAccount | AzureADMyOrgAzureADMultipleOrgsAzureADandPersonalMicrosoftAccount |
+| **Permission types**                            | **Delegated permissions**                                                                       | **Application permissions**                      |
+| ----------------------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| Types of apps                                   | Web / Mobile / single-page app (SPA)                                                            | Web / Daemon                                     |
+| Access context                                  | Get access on behalf of a user                                                                  | Get access without a user                        |
+| Who can consent                                 | Users can consent for their data<br>dmins can consent for all users                             | Only admin can consent                           |
+| Consent methods                                 | Static: configured list on app registration<br>Dynamic: request individual permissions at login | Static ONLY: configured list on app registration |
+| Other names                                     | Scopes<br>OAuth2 permission scopes                                                              | App roles<br>App only permissions                |
+| Result of consent (specific to Microsoft Graph) | OAuth2 Permission Grant                                                                         | app Role Assignment                              |
 
 ## Consent
 
