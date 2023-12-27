@@ -5,7 +5,7 @@ Two components of every secure database are authentication and authorization.
  -  **SQL authentication** \- With this authentication method, the user submits a user account name and associated password to establish a connection. This password is stored in the master database for user accounts linked to a login or stored in the database containing the user accounts not linked to a login.
  -  **Microsoft Entra authentication** \- With this authentication method, the user submits a user account name and requests that the service uses the credential information stored in Microsoft Entra ID.
 
-You can create user accounts in the master database, and grant permissions in all databases on the server, or you can create them in the database itself (called contained database users). By using contained databases, you obtain enhance portability and scalability.
+You can create user accounts in the master database, and grant permissions in all databases on the server, or you can create them in the database itself (called contained database users). By using contained databases, you obtain enhanced portability and scalability.
 
 **Logins and users**: In Azure SQL, a user account in a database can be associated with a login that is stored in the master database or can be a user name that is stored in an individual database.
 

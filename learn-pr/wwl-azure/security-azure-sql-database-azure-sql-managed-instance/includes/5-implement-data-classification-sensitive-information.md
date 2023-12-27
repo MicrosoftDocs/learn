@@ -40,7 +40,7 @@ Scanning and Ingestion features in Microsoft Purview connect your Microsoft Purv
      -  Data source scans - scanned metadata is added to the Microsoft Purview Data Map.
      -  Lineage connections - transformation resources add metadata about their sources, outputs, and activities to the Microsoft Purview Data Map.
 
-:::image type="content" source="../media/new-scans-injestion-2ae96853.png" alt-text="Screenshot showing an example of scans and ingestion in Microsoft Purview.":::
+:::image type="content" source="../media/new-scans-ingestion-db21bd94.png" alt-text="Screenshot showing an example of scans and ingestion in Microsoft Purview.":::
 
 
 ### Scanning
@@ -62,7 +62,7 @@ System scan rule sets are Microsoft-defined scan rule sets that are automaticall
 :::image type="content" source="../media/new-system-scan-rules-8198687b.png" alt-text="Screenshot showing an example of the Governance Portal scan rule sets page.":::
 
 
-### Classify - Data classification in the Microsoft Purview governance portal<br>
+### Classify - Data classification in the Microsoft Purview governance portal
 
 Data classification in the Microsoft Purview governance portal is a way of categorizing data assets by assigning unique logical tags or classes to the data assets. Classification is based on the business context of the data. For example, you might classify assets by *Passport Number*, *Driver's License Number*, *Credit Card Number*, *SWIFT Code*, *Person’s Name*, and so on.
 
@@ -81,7 +81,7 @@ Classification is the process of organizing data into *logical categories* that 
 :::image type="content" source="../media/new-use-classification-e630e050.png" alt-text="Screenshot showing an example of the customer Azure SQL Table.":::
 
 
-### Types of classification<br>
+### Types of classification
 
 The Microsoft Purview governance portal supports both system and custom classifications.
 
