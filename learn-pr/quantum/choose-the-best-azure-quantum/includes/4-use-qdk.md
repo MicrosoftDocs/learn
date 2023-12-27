@@ -51,7 +51,7 @@ The Azure Quantum Development Kit (QDK) extension for Visual Studio Code allows 
 ### Run the program locally
 
 1. To test run your program locally on the built-in simulator, select **Run Q# file** from the play icon drop-down in the top-right, or press **Ctrl+5**. Your output will appear in the debug console.
-1. To debug your program before submitting it to Azure Quantum, select **Debug Q# file** from the play icon, or **press F5**. Use the debugging controls at the top to step over, into, and out of the code. .
+1. To debug your program before submitting it to Azure Quantum, select **Debug Q# file** from the play icon, or **press F5**. Use the debugging controls at the top to step over, into, and out of the code. 
 
 ### Connect to Azure Quantum and submit your job
 
