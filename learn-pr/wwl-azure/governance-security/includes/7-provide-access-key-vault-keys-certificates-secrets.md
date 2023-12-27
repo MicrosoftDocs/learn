@@ -56,7 +56,7 @@ Changing permission model requires 'Microsoft.Authorization/roleAssignments/writ
 
 2. Enable Azure RBAC permissions on existing key vault:
 
-:::image type="content" source="../media/new-existing-vault-7e63404d.png" alt-text="Screenshot showing how to enable Azure role based access control permissions on an existing Key Vault.":::
+:::image type="content" source="../media/new-exist-vault-09ab0fbd.png" alt-text="Screenshot showing how to enable Azure role based access control permissions on an existing Key Vault.":::
 
 
 *Setting Azure RBAC permission model invalidates all access policies permissions. It can cause outages when equivalent Azure roles aren't assigned.*
