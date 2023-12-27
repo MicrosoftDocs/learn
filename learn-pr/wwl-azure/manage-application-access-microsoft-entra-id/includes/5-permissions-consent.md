@@ -17,7 +17,7 @@ For the user, the authorization relies on the privileges that the user has been 
 
 ## App-only access (Access without a user)
 
-In this access scenario, the application acts on its own with no user signed in. Application access is used in scenarios such as automation, and backup. This scenario includes apps that run as background services or daemons. It's appropriate when it's undesirable to have a specific user signed in, or when the data required can't be scoped to a single user.
+In this access scenario, the application acts on its own with no user signed in. Application access is used in scenarios such as automation, and back up. This scenario includes apps that run as background services or daemons. It's appropriate when it's undesirable to have a specific user signed in, or when the data required can't be scoped to a single user.
 
 App-only access uses app roles instead of delegated scopes. When granted through consent, app roles may also be called applications permissions. For app-only access, the client app must be granted appropriate app roles of the resource app it's calling in order to access the requested data.
 
@@ -39,7 +39,7 @@ There are other ways in which applications can be granted authorization for app-
 | Access context                                  | Get access on behalf of a user                                                                  | Get access without a user                        |
 | Who can consent                                 | Users can consent for their data<br>dmins can consent for all users                             | Only admin can consent                           |
 | Consent methods                                 | Static: configured list on app registration<br>Dynamic: request individual permissions at login | Static ONLY: configured list on app registration |
-| Other names                                     | Scopes<br>OAuth2 permission scopes                                                              | App roles<br>App only permissions                |
+| Other names                                     | Scopes<br>OAuth2 permission scopes                                                              | App roles<br>App-only permissions                |
 | Result of consent (specific to Microsoft Graph) | OAuth2 Permission Grant                                                                         | app Role Assignment                              |
 
 ## Consent

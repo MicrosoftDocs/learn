@@ -35,10 +35,7 @@ The following table shows the differences between the two types of managed ident
 
 You can use managed identities by following the steps below:
 
-1. Create a managed identity in Azure. You can choose between system-assigned managed identity or user-assigned managed identity.<br>
-
- -  When using a user-assigned managed identity, you assign the managed identity to the "source" Azure Resource, such as a Virtual Machine, Azure Logic App or an Azure Web App.
-
-2. Authorize the managed identity to have access to the "target" service.
-
-3. Use the managed identity to access a resource. In this step, you can use the Azure SDK with the Azure.Identity library. Some "source" resources offer connectors that know how to use Managed identities for the connections. In that case, you use the identity as a feature of that "source" resource.
+1.  Create a managed identity in Azure. You can choose between system-assigned managed identity or user-assigned managed identity.
+     -  When using a user-assigned managed identity, you assign the managed identity to the "source" Azure Resource, such as a Virtual Machine, Azure Logic App or an Azure Web App.
+2.  Authorize the managed identity to have access to the "target" service.
+3.  Use the managed identity to access a resource. In this step, you can use the Azure SDK with the Azure.Identity library. Some "source" resources offer connectors that know how to use Managed identities for the connections. In that case, you use the identity as a feature of that "source" resource.

@@ -55,6 +55,6 @@ quiz:
     - content: "Application permissions"
       isCorrect: false
       explanation: "Incorrect. Application permissions are used to get access without a user."
-    - content: "App only permissions"
+    - content: "App-only permissions"
       isCorrect: true
-      explanation: "Correct. App only permissions enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      explanation: "Correct. App-only permissions enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
