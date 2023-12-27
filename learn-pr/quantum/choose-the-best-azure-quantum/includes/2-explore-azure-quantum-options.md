@@ -49,7 +49,7 @@ You don't need an Azure account to use the QDK extension, but if you already hav
 
 ### Is the Modern QDK the right tool for me?
 
-The following table might help you decide if you want to use the QDK extension for your quantum computing development journey.
+You can use this table as a quick reference of the features of the Modern QDK. Typically, you'll use different Azure Quantum options together, for example write Q# in VS Code with the Modern QDK while managing your quantum workspace in the Azure Quantum portal.
 
 | Use it if you want to: | You need: | You can't: |
 | --- | --- | --- |
