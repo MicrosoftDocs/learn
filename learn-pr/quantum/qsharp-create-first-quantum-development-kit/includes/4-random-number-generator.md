@@ -51,7 +51,7 @@ open Microsoft.Quantum.Math;
 }
 ```
 
-### Define the operation
+### Define the quantum random number operation
 
 Here, you define the `GenerateRandomNumberInRange` operation. This operation repeatedly calls the `GenerateRandomBit` operation to build a string of bits.
 
@@ -89,7 +89,7 @@ Let's take a moment to review the new code.
 * The variable `bits` is a mutable variable. A mutable variable is one that can change during the computation. You use the `set` directive to change a mutable variable's value.
 * The `ResultArrayAsInt` function comes from the `Microsoft.Quantum.Convert` library. This function converts the bit string to a positive integer.
 
-## Define the entry point
+### Define the entry point
 
 Your program can now generate random numbers. Here, you define the entry point for your program.
 
