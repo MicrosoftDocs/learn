@@ -41,7 +41,7 @@ The Azure Quantum Development Kit (QDK) extension for Visual Studio Code allows 
     ```
 
 > [!TIP]
-> The QDK extension for VS Code includes a set of Q# samples that you can use to learn more about Q# and quantum computing. To view the samples, open a new Q# file and type `sample`, then select the sample you want to view from the list of options.
+> The Modern QDK includes a set of Q# samples that you can use to learn more about Q# and quantum computing. To view the samples, open a new Q# file and type `sample`, then select the sample you want to view from the list of options.
 
 ### Explore the Q# code
 
