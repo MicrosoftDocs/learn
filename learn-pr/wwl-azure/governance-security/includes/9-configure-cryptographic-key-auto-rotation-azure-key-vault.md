@@ -63,24 +63,17 @@ Using the Azure Policy service, you can govern the key lifecycle and ensure that
 
 ### Create and assign policy definition
 
-1. Navigate to Policy resource
-
-2. Select **Assignments** under **Authoring** on the left side of the Azure Policy page.
-
-3. Select **Assign policy** at the top of the page. This button opens to the Policy assignment page.
-
-4. Enter the following information:
-
- -  Define the scope of the policy by choosing the subscription and resource group over which the policy will be enforced. Select by clicking the three-dot button at on **Scope** field.
- -  Select the name of the policy definition: "Keys should have a rotation policy ensuring that their rotation is scheduled within the specified number of days after creation. "
- -  Go to the **Parameters** tab at the top of the page.
- -  Set **The maximum days to rotate** parameter to desired number of days for example, 730.
- -  Define the desired effect of the policy (Audit, or Disabled).
-
-5. Fill out any additional fields. Navigate the tabs clicking on **Previous** and **Next** buttons at the bottom of the page.
-
-6. Select **Review + create**
-
-7. Select **Create**
+1.  Navigate to Policy resource
+2.  Select **Assignments** under **Authoring** on the left side of the Azure Policy page.
+3.  Select **Assign policy** at the top of the page. This button opens to the Policy assignment page.
+4.  Enter the following information:
+     -  Define the scope of the policy by choosing the subscription and resource group over which the policy will be enforced. Select by clicking the three-dot button at on **Scope** field.
+     -  Select the name of the policy definition: "Keys should have a rotation policy ensuring that their rotation is scheduled within the specified number of days after creation. "
+     -  Go to the **Parameters** tab at the top of the page.
+         -  Set **The maximum days to rotate** parameter to desired number of days for example, 730.
+         -  Define the desired effect of the policy (Audit, or Disabled).
+5.  Fill out any additional fields. Navigate the tabs clicking on **Previous** and **Next** buttons at the bottom of the page.
+6.  Select **Review + create**.
+7.  Select **Create**.
 
 Once the built-in policy is assigned, it can take up to 24 hours to complete the scan. After the scan is completed, you can see compliance results like below.

@@ -6,23 +6,17 @@ Sign in to the Azure portal.
 
 ## Create a vault<br>
 
-1. From the Azure portal menu, or from the **Home** page, select **Create a resource**.
-
-2. In the Search box, enter **Key Vault**.
-
-3. From the results list, choose **Key Vault**.
-
-4. On the Key Vault section, choose **Create**.
-
-5. On the **Create key vault** section provide the following information:
-
- -  **Name**: A unique name is required. For this quickstart, we use **Contoso-vault2**.
- -  **Subscription**: Choose a subscription.
- -  Under **Resource Group**, choose **Create new** and enter a resource group name.
- -  In the **Location** pull-down menu, choose a location.
- -  Leave the other options to their defaults.
-
-6. Select **Create**.
+1.  From the Azure portal menu, or from the **Home** page, select **Create a resource**.
+2.  In the Search box, enter **Key Vault**.
+3.  From the results list, choose **Key Vault**.
+4.  On the Key Vault section, choose **Create**.
+5.  On the **Create key vault** section provide the following information:
+     -  **Name**: A unique name is required. For this quickstart, we use **Contoso-vault2**.
+     -  **Subscription**: Choose a subscription.
+     -  Under **Resource Group**, choose **Create new** and enter a resource group name.
+     -  In the **Location** pull-down menu, choose a location.
+     -  Leave the other options to their defaults.
+6.  Select **Create**.
 
 Take note of these two properties:
 

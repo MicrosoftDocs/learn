@@ -32,7 +32,7 @@ quiz:
       explanation: "Incorrect. Soft delete and purge protection features only protect against accidental or malicious deletion of secrets, not the entire key vault."
     - content: "Back up all secrets in the key vault"
       isCorrect: false
-      explanation: "Incorrect. Backing up secrets may introduce operational challenges and cause time out errors."
+      explanation: "Incorrect. Backing up secrets may introduce operational challenges and cause time-out errors."
     - content: "Configure soft delete and purge protection features on their key vault"
       isCorrect: true
       explanation: "Correct. Soft delete and purge protection features protect against accidental or malicious deletion of the entire key vault."
