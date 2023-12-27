@@ -29,7 +29,7 @@ quiz:
       isCorrect: false
       explanation: "To access the Azure portal and the notebooks, you need to have an Azure account."
 
-  - content: 'Although anyone can install it, select which of these users would be best suited to install the QDK extension.'
+  - content: 'Although anyone can install it, select which of these users would be best suited to install the Modern QDK extension.'
     choices:
     - content: 'A professor who wants to host a quantum hackathon for their students.'
       isCorrect: false
