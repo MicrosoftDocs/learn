@@ -9,7 +9,7 @@ metadata:
   ms.date: 12/27/2023
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
   [!include[](includes/5-knowledge-check.md)]
 
@@ -19,15 +19,15 @@ quiz:
 
   - content: 'Which of these statements is true about the random number generator that you built in this module?'
     choices:
-    - content: 'You always get truly random numbers, both in the simulator and on quantum hardware.'
+    - content: "The quantum random number generator takes the current time from the CPU's clock as seed to generate random numbers."
       isCorrect: false
-      explanation: 'A quantum computer can produce truly random numbers. Although the simulator produces pseudorandom numbers, you can use it to test and verify your algorithms.'
-    - content: 'You never get truly random numbers. You get only pseudorandom numbers.'
+      explanation: "The quantum random number generator doesn't use the CPU's clock to generate random numbers. A classical pseudo-random number generator would do that."
+    - content: "The quantum random number generator creates one qubit and the result of the measurement of that qubit is a random decimal number."
       isCorrect: false
-      explanation: 'A quantum computer can produce truly random numbers. The simulator produces pseudorandom numbers.'
-    - content: 'In the simulator, you get pseudorandom numbers. On a quantum computer, you get truly random numbers.'
+      explanation: "The result of the measurement of a qubit is a random bit, not a random decimal number. This isn't the logic behind the random number generator that you built in this module."
+    - content: "The quantum random number generator creates a bit string from the repetition of measurements of a qubit in superposition. Then, it takes the bit string and converts it to a decimal number."
       isCorrect: true
-      explanation: 'Although the simulator produces pseudorandom numbers, you can use it to test and verify your algorithms.'
+      explanation: "This is the logic behind the random number generator that you built in this module."
 
   - content: 'Which of the following structures are required in a Q# program to run successfully?'
     choices:
@@ -41,13 +41,14 @@ quiz:
       isCorrect: false
       explanation: "You can write Q# programs that don't need to perform operations on a qubit. A Q# program without a qubit allocated can run successfully."
 
-  - content: ""
+  - content: "Consider a quantum operation `A` that acts on a single qubit. If you want to write a Q# program that applies `A` to a qubit `q`, which of the following statements is true?"
     choices:
-    - content: 
+    - content: "You allocate a qubit using `q = Qubit();` and then apply `A` to `q` using `A(q);`."
       isCorrect: false
-      explanation: 
-    - content: 
+      explanation: "To allocate a qubit, you must use the `use` keyword, `use q = Qubit();`."
+    - content: "You allocate a qubit using `use q = Qubit();` and then apply `A` to `q` using `A(q);`."
       isCorrect: true
-      explanation: 
+      explanation: "You first allocate a qubit using `use` and then apply `A` to the qubit allocated using `A(q);`."
+    - content: "You allocate a qubit using `use q = Qubit();` and then apply `A` to `q` using `A[q];`."
       isCorrect: false
-      explanation: 
+      explanation: "To apply an operation to a qubit, you must use parentheses, `A(q);`."
