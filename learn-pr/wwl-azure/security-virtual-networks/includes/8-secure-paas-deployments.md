@@ -10,7 +10,7 @@ One of the five essential characteristics of cloud computing is broad network ac
 
 The following figure shows how the security perimeter has evolved from a network perimeter to an identity perimeter. Security becomes less about defending your network and more about defending your data, as well as managing the security of your apps and users. The key difference is that you want to push security closer to what's important to your company.
 
-:::image type="content" source="../media/new-identity-perimeter-70ece914.png" alt-text="Screenshow showing an example of identity as the primary security perimeter.":::
+:::image type="content" source="../media/new-identity-perimeter-70ece914.png" alt-text="Screenshot showing an example of identity as the primary security perimeter.":::
 
 
 Initially, Azure PaaS services (for example, web roles and Azure SQL) provided little or no traditional network perimeter defenses. It was understood that the element's purpose was to be exposed to the Internet (web role) and that authentication provides the new perimeter (for example, BLOB or Azure SQL).
