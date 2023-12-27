@@ -6,10 +6,9 @@ metadata:
   ms.date: 09/18/2023
   author: asudbring
   ms.author: allensu
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurecli
-  ms.prod: learning-azure
 title: Exercise - Create and manage network security groups
 durationInMinutes: 15
 sandbox: true

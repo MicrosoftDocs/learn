@@ -67,7 +67,7 @@ You'll start by adding a definition of a nodearray within the Slurm template you
 
 To be able to modify the values of template parameters with the Azure CycleCloud graphical interface, you'll apply more changes to the template.
 
-1. Within the web browser window that displays the Bash session in the **Azure Cloud Shell** pane, within the nano editor interface, scroll to the `[parameters Auto-Scaling]` section and add the following content directly before it:
+1. Within the web browser window that displays the Bash session in the **Azure Cloud Shell** pane, within the nano editor interface, scroll to the `[[parameters Auto-Scaling]]` section and add the following content directly before it:
 
     ```azurecli
 

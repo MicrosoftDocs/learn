@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-secure-data.7-security-management
 metadata:
-  title: Manage your security
-  description: Manage your security
+  title: Exercise - Manage your security
+  description: Exercise - Manage your security
   ms.date: 03/15/2023
   author: VanMSFT
   ms.author: vanto
   ms.topic: unit
-title: Manage your security
+title: Exercise - Manage your security
 durationInMinutes: 10
 content: |
   [!include[](includes/7-security-management.md)]

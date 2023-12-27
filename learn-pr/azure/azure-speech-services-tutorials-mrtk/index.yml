@@ -6,8 +6,8 @@ metadata:
   ms.date: 06/26/2023
   author: marlenaklein-msft
   ms.author: marlenaklein
-  ms.topic: interactive-tutorial
-  ms.service: cognitive-services
+  ms.topic: module
+  ms.service: azure-ai-services
 title: Add Azure AI services to your mixed reality project
 summary: Import and learn about Azure Speech Services to enhance your learning experience.
 abstract: |

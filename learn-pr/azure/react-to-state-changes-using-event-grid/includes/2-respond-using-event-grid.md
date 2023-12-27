@@ -8,19 +8,19 @@ Event Grid aggregates all your events and provides routing from any source to an
 
 Event publishers and subscribers are decoupled by using the publisher/subscriber pattern.
 
-![Event Grid publisher/subscriber model.](../media/2-eventgrid-pub-sub.svg)
+![Diagram of the Event Grid publisher/subscriber model.](../media/2-eventgrid-pub-sub.svg)
 
 ## Capabilities
 
 Event Grid doesn't require provisioning or managing. It's native to Azure, with the ability to be extended and customized. Some of the main advantages are:
 
-- **It's simple.** Point and click in the Azure portal to add and collect your events from Azure resources.
-- **It can filter events.** Thus, handlers receive only relevant events.
-- **It supports multiple subscribers.** Attach multiple handlers to a single event from a single source.
-- **It's reliable.** Take advantage of 24-hour retries to ensure events are delivered.
-- **Its throughput is high.** Handle a high volume of events, in the range of millions per second.
-- **It has built-in events.** Use built-in events to get started quickly and easily.
-- **It supports custom events.** Use Event Grid to reliably deliver events for your custom components.
+- **It's simple**: Point and click in the Azure portal to add and collect your events from Azure resources.
+- **It can filter events**: Thus, handlers receive only relevant events.
+- **It supports multiple subscribers**: Attach multiple handlers to a single event from a single source.
+- **It's reliable**: Take advantage of 24-hour retries to ensure events are delivered.
+- **It has high throughput**: Handle a high volume of events, in the range of millions per second.
+- **It has built-in events**: Use built-in events to get started quickly and easily.
+- **It supports custom events**: Use Event Grid to reliably deliver events for your custom components.
 
 ## Event sources and event handlers
 
@@ -46,10 +46,10 @@ When the topics have been defined, you can subscribe to them. Subscriptions conv
 
 ## Subscribe to events
 
-To understand how an event handler subscribes to events, you can create a subscriber. You can use the Azure Logic Apps Designer service as an example subscriber. A logic app is a way of scheduling or orchestrating tasks. It's a solution that you use to orchestrate a set of jobs when a trigger is run.
+To understand how an event handler subscribes to events, you can create a subscriber. You can use the Azure Logic Apps Designer service as an example subscriber. A logic app is a way of scheduling or orchestrating tasks. It's a solution you can use to orchestrate a set of jobs when a trigger runs.
 
 ## Configure connectors and triggers
 
-After creating an event handler that deals with an event, you can configure the connectors and triggers associated to it. Using the Logic Apps Designer, you can configure the Event Grid connector on the logic app to look for any events of a certain topic.  When an event that contains this topic is created, it will trigger the logic app through the Event Grid connector.
+After creating an event handler that deals with an event, you can configure the connectors and triggers associated to it. Using the Logic Apps Designer, you can configure the Event Grid connector on the logic app to look for any events of a certain topic. When an event that contains this topic is created, it triggers the logic app through the Event Grid connector.
 
 Let's try an exercise to trigger a logic app by using Event Grid.

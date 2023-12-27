@@ -1,92 +1,70 @@
-Suppose your company has compute workloads deployed to several regions to make sure you have a local presence to serve your distributed customer base. 
+Let's say you have compute workloads deployed to several regions. You can use Azure Container Registry to place a container registry in each region where images run. This strategy allows for network-close operations and enables fast and reliable image layer transfers.
 
-Your aim is to place a container registry in each region where images are run. This strategy will allow for network-close operations, enabling fast, reliable image layer transfers.
-
-Geo-replication enables an Azure container registry to function as a single registry, serving several regions with multi-master regional registries.
+Geo-replication enables a container registry to function as a single registry that serves several regions with multi-master regional registries.
 
 A geo-replicated registry provides the following benefits:
 
-- Single registry/image/tag names can be used across multiple regions
-- Network-close registry access from regional deployments
-- No extra egress fees, as images are pulled from a local, replicated registry in the same region as your container host
-- Single management of a registry across multiple regions
+- Use single registry/image/tag names across multiple regions.
+- Network-close registry access from regional deployments.
+- No extra egress fees, as images are pulled from a local, replicated registry in the same region as the container host.
+- Single management of a registry across multiple regions.
 
 ## Create a replicated region for an Azure Container Registry
 
-In this exercise, you'll run the `az acr replication create` Azure CLI command to replicate your registry from one region to another.
+1. Replicate your registry to another region using the `az acr replication create` command. In this example, we replicate to the `japaneast` region.
 
-1. Run the following command to replicate your registry to another region. In this example, we're replicating to the `japaneast` region. *$ACR_NAME* is the variable you defined earlier in the module to hold your container registry name.
-
-    ```azurecli
+    ```azurecli-interactive
     az acr replication create --registry $ACR_NAME --location japaneast
     ```
 
-    The output from this command should be similar to the following.
+    Your output should look similar to the following condensed example output:
 
     ```output
     {
-      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myresourcegroup/providers/Microsoft.ContainerRegistry/registries/myACR0007/replications/japaneast",
+      ...
+      resourceGroups/learn-acr-rg/providers/Microsoft.ContainerRegistry/registries/myuniqueacrname/replications/japaneast",
       "location": "japaneast",
       "name": "japaneast",
       "provisioningState": "Succeeded",
        "regionEndpointEnabled": true,
-       "resourceGroup": "myresourcegroup",
-       "status": {
-        "displayStatus": "Syncing",
-        "message": null,
-        "timestamp": "2021-11-02T18:47:31.471393+00:00"
-      },
-      "systemData": {
-        "createdAt": "2021-11-02T18:47:31.471393+00:00",
-        "createdBy": "username@microsoft.com",
-        "createdByType": "User",
-        "lastModifiedAt": "2021-11-02T18:47:31.471393+00:00",
-        "lastModifiedBy": "useremailid@microsoft.com",
-        "lastModifiedByType": "User"
-      },
-      "tags": {},
-      "type": "Microsoft.ContainerRegistry/registries/replications"
-      "zoneRedundancy": "Disabled"
+       "resourceGroup": "learn-acr-rg",
+      ...
     }
     ```
 
-1. Retrieve all container image replicas created by running the following command.
+2. View all the container image replicas using the `az acr replication list` command.
 
-    ```azurecli
+    ```azurecli-interactive
     az acr replication list --registry $ACR_NAME --output table
     ```
 
-    The output should look similar to the following example.
+    Your output should look similar to the following example output:
 
     ```output
-    NAME       LOCATION    PROVISIONING STATE    STATUS
-    ---------  ----------  --------------------  --------
-    japaneast  japaneast   Succeeded             Ready
-    westus2    westus2     Succeeded             Ready
+    NAME       LOCATION    PROVISIONING STATE    STATUS    REGION ENDPOINT ENABLED
+    ---------  ----------  -------------------   -------   ------------------------
+    japaneast  japaneast   Succeeded             Ready     True
+    eastus     eastus      Succeeded             Ready     True
     ```
 
-Keep in mind that you aren't limited to the Azure CLI to list your image replicas. In the Azure portal, select your container registry and from the container registry menu, select `Replications` to display a map that details current replications. Container images can be replicated and replicated images can be deleted by selecting an icon on the map.
+You can also use the Azure portal to view your container images by navigating to your container registry and selecting `Replications`:
 
   ![Screenshot of Azure container registry world map showing replicated and available locations.](../media/replication-map-expanded.png)
 
-## Summary
-
-In this module, you learned about the Azure Container Registry. You deployed your own registry, added a custom container, and created a container image. Finally, you saw how easy it's to replicate a container registry across Azure regions.
-
 ## Clean up resources
 
-You want to clean up the resources you created using your Azure subscription in this module so that you won't continue to be charged for them.
+Remove the resources you created in this module to avoid incurring charges. Deleting the resource group also deletes all its associated resources.
 
-1. In Azure, select **Resource groups** from the left menu.
+1. Navigate to the [Azure Cloud Shell](https://shell.azure.com/bash).
+2. Delete the resource group using the `az group delete` command.
 
-1. Find the **learn-deploy-acr-rg** resource group, or the resource group name that you used, and select it.
+    ```azurecli-interactive
+    az group delete --name learn-acr-rg --yes --no-wait 
+    ```
 
-1. In the **Overview** tab of the resource group, select **Delete resource group**.
+## Learn more
 
-1. In the confirmation dialog box, type the name of the resource group again and select **Delete** to delete all of the resources you created in this module.
+Learn more about Azure Container Registry and Docker on Azure with the following resources:
 
-## Learn More
-
-[Azure Container Registry (ACR) documentation](/azure/container-registry/)
-
-[Docker on Azure](/azure/docker/)
+- [Azure Container Registry (ACR) documentation](/azure/container-registry/)
+- [Docker on Azure](/azure/docker/)

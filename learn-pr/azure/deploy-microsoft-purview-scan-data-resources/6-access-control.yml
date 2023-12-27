@@ -8,8 +8,7 @@ metadata:
   ms.date: 04/27/2023
   author: tayganr
   ms.author: tarifat
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/6-access-control.md)]

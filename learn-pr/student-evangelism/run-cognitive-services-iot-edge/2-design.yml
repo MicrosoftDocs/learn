@@ -5,9 +5,9 @@ metadata:
   title: Design a language detection module on IoT Edge
   description: In this section, we provide the structure of detecting languages on the edge 
   ms.date: 6/22/2020
-  author: leestott
+  author: PatAltimore
   ms.author: leestott
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom: team=nextgen
   ms.service: iot-hub
 durationInMinutes: 6 # dummy number at present

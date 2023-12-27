@@ -14,3 +14,4 @@ Use these resources to discover more:
 - [Compare Active Directory Domain Service to Microsoft Entra ID](/azure/active-directory-domain-services/compare-identity-solutions)
 - [What is Identity Lifecycle Management in Microsoft Entra ID](/azure/active-directory/governance/what-is-identity-lifecycle-management)
 - [Decentralized Identity - Verifiable Credentials](/azure/active-directory/verifiable-credentials/)
+

@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/18/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: data-factory
 title: Perform code-free transformation at scale with Azure Data Factory or Azure Synapse Pipeline
 summary: In this module, you will learn how to perform common data transformation and cleansing activities within Azure Data Factory without using code.

@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/03/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: windows-server
 title: Administer and manage Windows Server IaaS Virtual Machine remotely
 summary: You’ll be able to use suitable tools and techniques to manage Windows IaaS VMs remotely. You'll also be able to restrict administrative connections to those VMs.

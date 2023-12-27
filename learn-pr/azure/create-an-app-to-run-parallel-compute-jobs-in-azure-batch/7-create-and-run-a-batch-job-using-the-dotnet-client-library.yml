@@ -6,11 +6,10 @@ metadata:
   description: Define the missing the features that need to be added to your app, and see how the client libraries will help.
   ms.date: 06/01/2019
   author: lauradolan
-  ms.author: ladolan
-  ms.topic: interactive-tutorial
+  ms.author: jushiman
+  ms.topic: unit
   ms.custom:
     - devx-track-dotnet
-  ms.prod: learning-azure
 durationInMinutes: 5
 content: |
   [!include[](includes/7-create-and-run-a-batch-job-using-the-dotnet-client-library.md)]

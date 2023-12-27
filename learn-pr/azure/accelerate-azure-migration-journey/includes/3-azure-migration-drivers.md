@@ -74,7 +74,7 @@ The growing evolution of cybersecurity threats, increased need to protect people
 #### Suite of cloud security solutions
 
 - Traditional IT solutions are incapable of keeping up with the evolving threat landscape of advanced cyber attacks, and many businesses feel more vulnerable. The cloud offers built-in security solutions, which provide comprehensive protection against advanced threats.
-- Azure is secured with a various physical, infrastructure, and operational controls that allow organizations to take actions that ensure their applications and data are protected, backed up, and compliant.
+- Azure is secured with various physical, infrastructure, and operational controls that allow organizations to take actions that ensure their applications and data are protected, backed up, and compliant.
   - [Azure Backup](https://azure.microsoft.com/products/backup) protects your environment from ransomware attacks and recovers maliciously or accidentally deleted backup data.
   - [Microsoft Defender for Cloud](https://azure.microsoft.com/products/defender-for-cloud) provides unified infrastructure security management to protect your resources.
   - [Microsoft Sentinel](https://azure.microsoft.com/products/microsoft-sentinel) provides intelligent security analytics across your entire enterprise.
@@ -89,7 +89,6 @@ These triggers include:
 - Focus on innovation
 - Faster time to market
 - Cost-optimizing applications
-- Focus on innovation
 
 ### Scale web apps and infrastructure
 

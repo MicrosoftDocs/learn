@@ -9,8 +9,7 @@ metadata:
   ms.date: 7/24/2023
   author: madiepev
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.service: machine-learning
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-statistical-techniques.md)]

@@ -8,7 +8,7 @@ metadata:
   author: csharpfritz
   ms.author: jefritz
   ms.manager: markl
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: dotnet-architecture
   ms.technology: blazor
 title: Interact with data in Blazor web apps

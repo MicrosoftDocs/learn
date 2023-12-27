@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/24/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: exchange-online
 title: Manage Exchange Online by using Windows PowerShell
 summary: This module covers managing mailboxes, resources, and admin roles in Exchange Online with PowerShell.

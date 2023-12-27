@@ -1,4 +1,3 @@
-
 With Microsoft Azure, you gain access to a global computing network with over 200 datacenters located in 61 regions around the world. The worldwide reach of the cloud can improve your business in two key ways:
 
 ## Connecting Worldwide

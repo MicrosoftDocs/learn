@@ -6,8 +6,7 @@ metadata:
   ms.date: 04/05/2023
   author: wwlpublish
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'SC-100: Design security solutions for infrastructure'
 prerequisites: |
   -   Advanced experience and knowledge in identity and access, platform protection, security operations, securing data and securing applications.

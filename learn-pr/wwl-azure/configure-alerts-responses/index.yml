@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/25/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.prod: learning-azure
 title: Configure alerts and responses
 summary: Understand how to configure and manage alerts and responses in order to proactively manage notifications about potential issues before those issues become problems for your users.

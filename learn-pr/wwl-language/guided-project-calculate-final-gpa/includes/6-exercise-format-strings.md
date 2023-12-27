@@ -47,7 +47,7 @@ In this task, you'll update your code to apply the finishing touches to the repo
 1. To add padding to the final GPA result output, update the code as follows:
 
     ```csharp
-    Console.WriteLine($"\nFinal GPA:\t\t\t{Final GPA: {leadingDigit}.{firstDigit}{secondDigit}");
+    Console.WriteLine($"\nFinal GPA:\t\t\t {leadingDigit}.{firstDigit}{secondDigit}");
 
     ```
 
@@ -109,7 +109,7 @@ In this task, you'll run the code and verify that the output is correct.
     Console.WriteLine($"{course4Name}\t{course4Grade}\t\t{course4Credit}");
     Console.WriteLine($"{course5Name}\t\t{course5Grade}\t\t{course5Credit}");
     
-    Console.WriteLine($"\nFinal GPA:\t\t\tFinal GPA: {leadingDigit}.{firstDigit}{secondDigit}");
+    Console.WriteLine($"\nFinal GPA:\t\t\t {leadingDigit}.{firstDigit}{secondDigit}");
     ```
 
 1. To run your code and display the formatted output, select **Run**.
@@ -131,3 +131,4 @@ In this task, you'll run the code and verify that the output is correct.
 
     If your code displays different results, you'll need to review your code to find your error and make updates. Run the code again to see if you've fixed the problem. Continue updating and running your code until your code produces the expected results.
     
+

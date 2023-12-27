@@ -4,12 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/09/2023
+  ms.date: 12/26/2023
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: interactive-tutorial
-  ms.prod: azure
-durationInMinutes: 3
+  ms.topic: unit
+durationInMinutes: 15
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
@@ -19,7 +18,7 @@ quiz:
     choices:
     - content: "To manage user access to Azure resources"
       isCorrect: false
-      explanation: "Incorrect. This is the role of Microsoft Entra ID and Azure role-based access control."
+      explanation: "Incorrect. This is the role of Azure Active Directory and Azure role-based access control."
     - content: "To filter network traffic and enforce access controls"
       isCorrect: true
       explanation: "Correct. A Network Security Group (NSG) in Azure is used to filter network traffic by defining inbound and outbound security rules. It helps enforce access controls and restricts network traffic to Azure resources based on source, destination, port, and protocol."

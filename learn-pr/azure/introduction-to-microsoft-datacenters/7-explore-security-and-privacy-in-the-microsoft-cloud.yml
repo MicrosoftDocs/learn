@@ -7,8 +7,7 @@ metadata:
   ms.date: 10/01/2022
   author: TBD
   ms.author: v-jenhor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 11
 content: |
   [!include[](includes/7-explore-security-and-privacy-in-the-microsoft-cloud.md)]

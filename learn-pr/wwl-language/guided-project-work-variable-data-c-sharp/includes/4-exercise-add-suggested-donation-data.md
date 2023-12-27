@@ -109,6 +109,10 @@ You need to create a new variable to hold suggested donations and expand the `ou
 
 The variable `suggestedDonation` is intended to be a numeric value, but is collected and stored as a `string`. In the future you may have to validate `suggestedDonation` represents a decimal, and that you can convert it to a decimal so it's available to use for billing calculations. To avoid an error trying to use an entry like `twenty` you need to use `TryParse` validation.
 
+> [!NOTE]
+> The code samples in this exercise are designed based on en-US culture settings, and use a period (`.`) as the decimal separator. Building and running the code with a culture setting that uses a different decimal separators (such as a comma `,`) may give unexpected results or errors. To fix this issue, replace the period decimal separators in the code samples with your local decimal separator (such as `,`).
+> Alternatively, to run a program using the en-US culture setting, add the following code to the top of your program: `using System.Globalization;` and after any other `using` statements add `CultureInfo.CurrentCulture = new CultureInfo("en-US");`.
+
 1. Before comment #5, inside the end of the code block, add the code to validate that `suggestedDonation` can be cast as a decimal.
 
     You add the following:
