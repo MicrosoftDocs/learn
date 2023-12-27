@@ -104,7 +104,17 @@
       "source_path_from_root": "/learn-pr/azure/secure-b2b-collaboration-cross-tenant-access/4-create-organizational-settings.yml",
       "redirect_url": "/training/modules/secure-b2b-collaboration-cross-tenant-access/2-design-settings",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "learn-pr/quantum/qsharp-create-first-quantum-development-kit/includes/2-install-quantum-development-kit-code.md",
+      "redirect_url": "/training/modules/qsharp-create-first-quantum-development-kit/",
+      "redirect_document_id": true
     }, 
+    {
+      "source_path_from_root": "learn-pr/quantum/qsharp-create-first-quantum-development-kit/2-install-quantum-development-kit-code.yml",
+      "redirect_url": "/training/modules/qsharp-create-first-quantum-development-kit/",
+      "redirect_document_id": true
+    },
     {
       "source_path_from_root": "/learn-pr/azure/secure-b2b-collaboration-cross-tenant-access/5-exercise-configure-organizational-settings.yml",
       "redirect_url": "/training/modules/secure-b2b-collaboration-cross-tenant-access/4-exercise-configure-organizational-settings",
