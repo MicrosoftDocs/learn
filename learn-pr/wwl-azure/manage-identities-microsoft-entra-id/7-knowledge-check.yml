@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/22/2023
+  ms.date: 12/27/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -14,58 +14,58 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the purpose of External ID in Microsoft Entra?"
+  - content: "What is the purpose of Microsoft Entra External ID in Microsoft Entra?"
     choices:
-    - content: "External ID is only used for developers creating consumer-facing apps."
+    - content: "Microsoft Entra External ID is only used for developers creating consumer-facing apps."
       isCorrect: false
-      explanation: "Incorrect. External ID can be used for B2B collaboration and B2B direct connect as well."
-    - content: "External ID is used to manage internal users' identities."
+      explanation: "Incorrect. Microsoft Entra External ID can be used for B2B collaboration and B2B direct connect as well."
+    - content: "Microsoft Entra External ID is used to manage internal users' identities."
       isCorrect: false
-      explanation: "Incorrect. External ID is used to securely interact with users outside of your organization."
+      explanation: "Incorrect. Microsoft Entra External ID is used to securely interact with users outside of your organization."
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
       isCorrect: true
-      explanation: "Correct. External ID allows external users to bring their own identities and use them to sign in, while you manage access to your apps with Microsoft Entra ID or Azure AD B2C to keep your resources protected."
-  - content: "What does Microsoft Entra ID Automation enable?"
+      explanation: "Correct. Microsoft Entra External ID allows external users to bring their own identities and use them to sign in, while you manage access to your apps with Microsoft Entra ID or Microsoft Entra B2C to keep your resources protected."
+  - content: "A company wants to collaborate with a vendor outside of their organization. Which capability of Microsoft Entra External ID should they use?"
     choices:
-    - content: "Enables the creation of unstable application hosting platforms."
+    - content: "B2C collaboration"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Entra ID Automation enables the creation of secure and stable application hosting platforms."
-    - content: "Enables manual creation and teardown of environments."
+      explanation: "Incorrect. B2C collaboration is for collaborating with customers, not vendors."
+    - content: "Internal member authentication"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Entra ID Automation enables the automation of creation and teardown of environments."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      explanation: "Incorrect. Internal member authentication is for employees of the organization, not external vendors."
+    - content: "B2B collaboration"
       isCorrect: true
-      explanation: "Correct. Microsoft Entra ID Automation enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-  - content: "What is the purpose of B2B collaboration in Microsoft Entra ID?"
+      explanation: "Correct. B2B collaboration allows external users to sign in to the organization using their own credentials and access the apps and resources shared with them."
+  - content: "An organization wants to enable automatic remediation for identity-based risks detected by Microsoft Entra ID Protection. What access controls can be required based on the detected risk level?"
     choices:
-    - content: "Allows external users to have full privileges in your directory."
+    - content: "Blocking the user's account"
       isCorrect: false
-      explanation: "Incorrect. External users have limited privileges by default."
-    - content: "Only allows internal employees to collaborate with each other."
+      explanation: "Incorrect. Blocking the user's account is not an access control that can be required based on the detected risk level."
+    - content: "Requiring the user to change their username"
       isCorrect: false
-      explanation: "Incorrect. B2B collaboration allows external users to collaborate as well."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      explanation: "Incorrect. Requiring the user to change their username is not an access control that can be required based on the detected risk level."
+    - content: "Providing a strong authentication method, performing multifactor authentication, or performing a secure password reset"
       isCorrect: true
-      explanation: "Correct. B2B collaboration allows external users to sign in to your organization using their own credentials and access the apps and resources you want to share with them, while still having limited privileges in your directory by default."
-  - content: "What does Microsoft Entra ID enable in terms of application hosting platforms?"
+      explanation: "Correct. Based on the detected risk level, risk-based Conditional Access policies can be enabled to require access controls such as providing a strong authentication method, performing multifactor authentication, or performing a secure password reset."
+  - content: "A User Administrator wants to add a new user to their Microsoft Entra ID organization. What steps should they follow?"
     choices:
-    - content: "Enables the creation of unstable environments."
+    - content: "Select Invite external user from the menu and provide the user's email address."
       isCorrect: false
-      explanation: "Incorrect. Microsoft Entra ID enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-    - content: "Enables unauthorized access to application hosting platforms."
+      explanation: "Incorrect. This is not the correct path to add a new user to a Microsoft Entra ID organization."
+    - content: "Navigate to Microsoft Office Users and select Create new user from the menu."
       isCorrect: false
-      explanation: "Incorrect. Microsoft Entra ID enables secure user identities to prevent unauthorized access and protect user accounts."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      explanation: "Incorrect. This is not the correct path to add a new user to a Microsoft Entra ID organization."
+    - content: "Sign in to the Azure portal in the User Administrator role, navigate to Microsoft Entra ID Users, and select either Create new user or Invite external user from the menu."
       isCorrect: true
-      explanation: "Correct. Microsoft Entra ID enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-  - content: "What does Microsoft Entra ID Automation enable?"
+      explanation: "Correct. The User Administrator must sign in to the Azure portal in the User Administrator role, navigate to Microsoft Entra ID Users, and select either Create new user or Invite external user from the menu to add a new user to their Microsoft Entra ID organization."
+  - content: "A security administrator needs to ensure that user accounts are protected against potential security breaches. Which of the following enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms?"
     choices:
-    - content: "Enables the creation of user accounts."
+    - content: "Multi-Factor Authentication (MFA)"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Entra ID Automation is not limited to user account creation."
-    - content: "Enables the creation of groups."
+      explanation: "Incorrect. MFA is a security mechanism that requires users to provide two or more forms of authentication to access a resource."
+    - content: "Single Sign-On (SSO)"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Entra ID Automation is not limited to group creation."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      explanation: "Incorrect. SSO is a method of authentication that allows users to access multiple applications with a single set of login credentials."
+    - content: "Azure DevOps"
       isCorrect: true
-      explanation: "Correct. Microsoft Entra ID Automation enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      explanation: "Correct. Azure DevOps enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
