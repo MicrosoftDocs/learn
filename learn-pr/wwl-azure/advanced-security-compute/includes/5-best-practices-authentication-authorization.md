@@ -32,15 +32,19 @@ With Microsoft Entra integrated clusters in AKS, you create Roles or ClusterRole
 
 In Kubernetes, you provide granular access control to cluster resources. You define permissions at the cluster level, or to specific namespaces. You determine what resources can be managed and with what permissions. You then apply these roles to users or groups with a binding. For more information about Roles, ClusterRoles, and Bindings, see Access and identity options for Azure Kubernetes Service (AKS).<br>
 
-For example, you create a role with full access to resources in the namespace named `finance-app`, as shown in the following example YAML manifest:<br>
+When `developer1@contoso.com` is authenticated against the AKS cluster, they have full permissions to resources in the finance-app namespace. In this way, you logically separate and control access to resources. Use Kubernetes RBAC with Microsoft Entra ID-integration.
 
-:::image type="content" source="../media/new-manifest-role-0a32b384.png" alt-text="Screenshot showing an example using a manifest to create a role with full access to resources.":::
+For example, you create a role with full access to resources in the namespace named finance-app, as shown in the following example YAML manifest:
 
+| YAML                                                                                                                                                                                     |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `kind: Role``apiVersion: rbac.authorization.k8s.io/v1``metadata:``name: finance-app-full-access-role``namespace: finance-app``rules:``- apiGroups: [""]``resources: ["*"]``verbs: ["*"]` |
 
-You then create a `RoleBinding`and bind the Microsoft Entra user developer1@contoso.com to it, as shown in the following YAML manifest:
+You then create a RoleBinding and bind the Microsoft Entra user developer1@contoso.com to it, as shown in the following YAML manifest:
 
-:::image type="content" source="../media/new-role-binding-153eac43.png" alt-text="Screenshot showing an example using a YAML manifest to create a Role Binding.":::
-
+| YAML                                                                                                                                                                                                                                                                                                                                    |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `kind: RoleBinding``apiVersion: rbac.authorization.k8s.io/v1``metadata:``name: finance-app-full-access-role-binding``namespace: finance-app``subjects:``- kind: User``name: developer1@contoso.com``apiGroup: rbac.authorization.k8s.io``roleRef:``kind: Role``name: finance-app-full-access-role``apiGroup: rbac.authorization.k8s.io` |
 
 When `developer1@contoso.com` is authenticated against the AKS cluster, they have full permissions to resources in the finance-app namespace. In this way, you logically separate and control access to resources. Use Kubernetes RBAC with Microsoft Entra ID-integration.
 

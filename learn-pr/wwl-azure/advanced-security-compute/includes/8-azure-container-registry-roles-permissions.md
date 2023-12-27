@@ -32,23 +32,44 @@ For tools like the Visual Studio Code Docker extension, additional resource prov
 
 ## Access Resource Manager
 
-:::image type="content" source="../media/new-azure-resource-manager-requirement-641715a8.png" alt-text="Screenshot showing how to get a list of registries by using the Azure command line interface syntax.":::
+Azure Resource Manager access is required for the Azure portal and registry management with the Azure command line interface. For example, to get a list of registries by using the az acr list command, you need this permission set.
 
+## Create and delete registry
+
+The ability to create and delete Azure container registries.
+
+## Push image
+
+The ability to docker pull a non-quarantined image, or pull another supported artifact such as a Helm chart, from a registry. Requires authentication with the registry using the authorized identity.
+
+## Delete image data
+
+The ability to delete container images, or delete other supported artifacts such as Helm charts, from a registry.
+
+## Change policies
+
+The ability to configure policies on a registry. Policies include image purging, enabling quarantine, and image signing.
+
+## Sign images
+
+The ability to sign images, usually assigned to an automated process, which would use a service principal. This permission is typically combined with push image to allow pushing a trusted image to a registry.
 
 ## Custom roles
 
-As with other Azure resources, you can create custom roles with fine-grained permissions to Azure Container Registry. Then assign the custom roles to users, service principals, or other identities that need to interact with a registry.
+As with other Azure resources, you can create custom roles with fine-grained permissions to Azure Container Registry. Then assign the custom roles to users, service principals, or other identities that need to interact with a registry.<br>
 
-To determine which permissions to apply to a custom role, see the list of Microsoft.ContainerRegistry actions, review the permitted actions of the built-in ACR roles, or run the following command:
+To determine which permissions to apply to a custom role, see the list of Microsoft.ContainerRegistry actions, review the permitted actions of the built-in ACR roles, or run the following command:<br>
 
-:::image type="content" source="../media/new-access-resource-manager-ce2407fe.png" alt-text="Screenshot showing how to access the Access Resource Manager using Azure command line interface commands.":::
+| **Azure Command Line Interface**                                     |
+| -------------------------------------------------------------------- |
+| `az provider operation show --namespace Microsoft.ContainerRegistry` |
 
+In tenants configured with Azure Resource Manager private link, Azure Container Registry supports wildcard actions such as Microsoft.ContainerRegistry/\*/read or Microsoft.ContainerRegistry/registries/\*/write in custom roles, granting access to all matching actions. In a tenant without an ARM private link, specify all required registry actions individually in a custom role.
 
 ## Example: Custom role to import images
 
-For example, the following JavaScript Object Notation defines the minimum actions for a custom role that permits importing images to a registry.
+For example, the following JavaScript Object Notation (JSON) defines the minimum actions for a custom role that permits importing images to a registry.
 
-:::image type="content" source="../media/new-custom-role-import-images-9499b140.png" alt-text="Screenshot showing how the JavaScript Object Notation defines the minimum actions for a custom role that permits importing images to a registry.":::
-
-
-To create or update a custom role using the JavaScript Object Notation description, use the Azure command line interface, Azure Resource Manager template, Azure PowerShell, or other Azure tools. Add or remove role assignments for a custom role in the same way that you manage role assignments for built-in Azure roles.
+| **JavaScript Object Notation**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `{``"assignableScopes": [``"/subscriptions/<optional, but you can limit the visibility to one or more subscriptions>"``],``"description": "Can import images to registry",``"Name": "AcrImport",``"permissions": [``{``"actions": [``"Microsoft.ContainerRegistry/registries/push/write",``"Microsoft.ContainerRegistry/registries/pull/read",``"Microsoft.ContainerRegistry/registries/read",``"Microsoft.ContainerRegistry/registries/importImage/action"``],``"dataActions": [],``"notActions": [],``"notDataActions": []``}``],``"roleType": "CustomRole"``}` |
