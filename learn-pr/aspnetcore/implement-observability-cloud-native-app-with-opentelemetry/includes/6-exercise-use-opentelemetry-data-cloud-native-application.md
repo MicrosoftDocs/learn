@@ -110,7 +110,7 @@ Now, the diagnostics project is only configured to expose metrics to the console
 1. Add the `OpenTelemetry.Exporter.Prometheus.AspNetCore` package:
 
     ```bash
-    dotnet add package OpenTelemetry.Exporter.Prometheus --prerelease
+    dotnet add package OpenTelemetry.Exporter.Prometheus.AspNetCore --prerelease
     ```
 
 1. In the **EXPLORER** pane, expand the **Diagnostics** folder, then select **DiagnosticServiceCollectionExtensions.cs**.
@@ -188,7 +188,7 @@ You'll now test the new observability features you've added to the app.
 1. In the **TERMINAL** pane at the bottom, go to the **dotnet-observability** folder.
 
     ```bash
-    cd ..\.. 
+    cd ../.. 
     ```
 
 1. Start the app with Docker:
@@ -198,7 +198,7 @@ You'll now test the new observability features you've added to the app.
     docker-compose up
     ```
 
-1. Open a browser and, in a new tab, go to the Prometheus app **http://localhost:9090**.
+1.  In the **PORTS** tab select **Open in Browser** for **Prometheus (9090)**. If you are running locally in Visual Studio Code, open a browser and, in a new tab, go to the Prometheus app **http://localhost:9090**.
 
 1. In the top menu, select **Status**, then select **Targets**.
 
@@ -206,11 +206,12 @@ You'll now test the new observability features you've added to the app.
   
     You should see the **Products** and **Store** services listed as **UP**.
 
-1. Open a browser and, in a new tab, go to the Grafana app **http://localhost:3000**.
-
+1. In the **PORTS** tab select **Open in Browser** for **Grafana (3000)**. If you are running locally in Visual Studio Code, open a browser and, in a new tab, go to the Grafana app **http://localhost:3000**.
+1. Enter username: admin
+1. Ener password: grafana
 1. Select **Create your first dashboard**.
 1. Select **Import dashboard**.
-1. In a new tab, go to GitHub and open the [ASP.NET Core.json](https://github.com/JamesNK/aspnetcore-grafana/blob/main/dashboards/ASP.NET%20Core.json) file. 
+1. In a new tab, go to [GitHub](https://aka.ms/dotnet/grafana-source) and open the [ASP.NET Core dashboard json](https://github.com/dotnet/aspire/blob/main/src/Grafana/dashboards/aspnetcore.json) file. 
 1. Copy the Raw file.
 1. Paste the JSON into the **Import via dashboard JSON model** text box.
 1. Select **Load**.
@@ -227,8 +228,25 @@ You'll now test the new observability features you've added to the app.
 
 You'll now extend the tracing capabilities of the app by adding Zipkin. As you did before, you'll add a Zipkin container to your app, and configure it to connect to the OpenTelemetry collector. Then you'll add the OpenTelemetry Zipkin exporter to your app.
 
-1. In Visual Studio Code, in the **EXPLORER** pane, select the **docker-compose.yml** file.
-1. Add environmental variables for Zipkin to the services:
+1. In Visual Studio Code, in the **EXPLORER** pane, select the **docker-compose.yml** file inside of the **dotnet-observability** folder.
+
+1. Add `prometheus` and `zipkin` in the `depends_on` for the `frontend`.
+
+    ```yml
+    depends_on: 
+      - backend
+      - prometheus
+      - zipkin 
+    ```
+
+1. Add `prometheus` in the `depends_on` for the `backend`.
+
+   ```yml
+    depends_on: 
+      - prometheus
+    ```
+    
+1. Add environmental variables for Zipkin to **BOTH** `frontend` and `backend`:
 
     ```yml
     environment: 
@@ -245,7 +263,7 @@ You'll now extend the tracing capabilities of the app by adding Zipkin. As you d
         dockerfile: ./eShopLite/Store/Dockerfile
       environment: 
         - ProductEndpoint=http://backend:8080
-        - ImagePrefix=http://localhost:32001/images
+        - ImagePrefix=http://[YOUR URL]/images
         - ZIPKIN_URL=http://zipkin:9411
       ports:
         - "32000:8080"
@@ -284,7 +302,7 @@ You'll now extend the tracing capabilities of the app by adding Zipkin. As you d
 1. In the **TERMINAL** pane, go to the **Diagnostics** folder.
 
     ```bash
-    cd .\eShopLite\Diagnostics\ 
+    cd ./eShopLite/Diagnostics/
     ```
 
 1. Add the Zipkin export packages.
@@ -316,7 +334,7 @@ You'll now extend the tracing capabilities of the app by adding Zipkin. As you d
 1. In the **TERMINAL** pane at the bottom, go to the **dotnet-observability** folder.
 
     ```bash
-    cd ..\.. 
+    cd ../.. 
     ```
 
 1. Start the app with Docker:
@@ -326,7 +344,7 @@ You'll now extend the tracing capabilities of the app by adding Zipkin. As you d
     docker-compose up
     ```
 
-1. In a new browser tab, go to the Zipkin app **http://localhost:9411**.
+1. In the **PORTS** tab select **Open in Browser** for **Prometheus (9090)**. If you are running locally in Visual Studio Code, open a new browser tab, go to the Zipkin app **http://localhost:9411**.
 1. In the menu, select **Dependencies**.
 
     :::image type="content" source="../media/zipkin.png" alt-text="A screenshot of Zipkin showing the dependencies of the eShopLite app, Store sending requests to the Products service.":::
@@ -440,8 +458,6 @@ The last step is to add Application Insights to your app.
           context: .
           dockerfile: ./eShopLite/Products/Dockerfile
         environment: 
-          - ProductEndpoint=http://backend:8080
-          - ImagePrefix=http://localhost:32001/images
           - ZIPKIN_URL=http://zipkin:9411
           - APPLICATIONINSIGHTS_CONNECTION_STRING=InstrumentationKey=b851fa75-85a2-42f7-bb6f-413725d9d8ba;IngestionEndpoint=https://eastus-2.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/
         
@@ -481,7 +497,7 @@ The last step is to add Application Insights to your app.
 1. In the **TERMINAL** pane at the bottom, go to the **dotnet-observability** folder.
 
     ```bash
-    cd ..\.. 
+    cd ../.. 
     ```
 
 1. Start the app with Docker:
