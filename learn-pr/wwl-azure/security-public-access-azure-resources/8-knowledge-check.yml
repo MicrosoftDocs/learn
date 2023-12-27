@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/26/2023
+  ms.date: 12/27/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -36,28 +36,6 @@ quiz:
     - content: "Provides fast, reliable, and secure access between users and applications' static and dynamic web content across the globe"
       isCorrect: true
       explanation: "Correct. Azure Front Door is Microsoft's modern cloud Content Delivery Network (CDN) that provides fast, reliable, and secure access between users and applications' static and dynamic web content across the globe."
-  - content: "What is the purpose of environment automation?"
-    choices:
-    - content: "Enables manual creation and teardown of environments"
-      isCorrect: false
-      explanation: "Incorrect. Manual processes are prone to errors and inconsistencies."
-    - content: "Automates only the creation of environments"
-      isCorrect: false
-      explanation: "Incorrect. Automation also includes the teardown of environments."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
-      isCorrect: true
-      explanation: "Correct. Environment automation helps ensure consistency, security, and stability in application hosting platforms."
-  - content: "What is the purpose of Azure DDoS Protection?"
-    choices:
-    - content: "Enables automatic application updates"
-      isCorrect: false
-      explanation: "Incorrect. Azure DDoS Protection does not enable automatic application updates."
-    - content: "Provides enhanced cloud storage features"
-      isCorrect: false
-      explanation: "Incorrect. Azure DDoS Protection does not provide cloud storage features."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
-      isCorrect: true
-      explanation: "Correct. Azure DDoS Protection provides enhanced DDoS mitigation features to defend against DDoS attacks, making the application available to legitimate users."
   - content: "What does Azure DDoS Protection do to provide tailored protection policies for each customer?"
     choices:
     - content: "It applies the same mitigation policies for all customers."
@@ -69,3 +47,14 @@ quiz:
     - content: "It automatically learns per customer per Public IP traffic patterns for Layer 3 and 4."
       isCorrect: true
       explanation: "Correct. Azure DDoS Protection uses automatic learning of per customer per Public IP traffic patterns for Layer 3 and 4 to provide tailored protection policies for each customer."
+  - content: "A security specialist needs to ensure that Azure resources are protected against threats while maintaining high performance. Which of the following enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms?"
+    choices:
+    - content: "Azure Front Door"
+      isCorrect: false
+      explanation: "Incorrect. Azure Front Door is a global, scalable entry-point that uses the Microsoft global edge network to create fast, secure, and widely scalable web applications."
+    - content: "Azure Firewall Manager"
+      isCorrect: false
+      explanation: "Incorrect. Azure Firewall Manager is a network security management service that provides central security policy and route management for cloud-based security perimeters."
+    - content: "Azure DevOps"
+      isCorrect: true
+      explanation: "Correct. Azure DevOps enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
