@@ -1,9 +1,7 @@
 
+Classical computers don't produce random numbers, but rather _pseudorandom_ numbers. A pseudorandom number generator generates a deterministic sequence of numbers based on some initial value, called a _seed_. To better approximate random values, this seed is often the current time from the CPU's clock.
 
-
-You're likely already familiar with the concept of a random number generator (RNG). Classical computers don't produce random numbers, but rather _pseudorandom_ numbers. A pseudorandom number generator generates a deterministic sequence of numbers based on some initial value, called a _seed_. To better approximate random values, this seed is often the current time from the CPU's clock.
-
-
+Quantum computers, on the other hand, can generate truly random numbers. This is because the measurement of a qubit in superposition is a probabilistic process. The result of the measurement is random, and there's no way to predict the outcome. This is the basic principle of quantum random number generators.
 
 You start by taking a qubit in a basis state, for example zero. The first step of the QRNG is to use an `H` operation to put the qubit into an equal superposition. The measurement of this state results in a zero or a one with 50% probability of each outcome. The value of this bit is truly random, there's no way of knowing what you will get after the measurement. But how can you use this behavior to generate larger random numbers?
 
@@ -23,13 +21,11 @@ To do so, you:
 
 > [!div class="checklist"]
 > * Create a Q# file.
-> * Add code that uses the `H` operation to put a qubit into superposition and then measure its value.
-> * Run the program.
+> * Add code that uses the `H` operation to put a qubit into superposition.
+> * Measure the qubit to get a random bit.
+> * Reset the qubit to the zero state.
 
-In the next section, you build out the second phase, which combines random bits to form a larger number.
-
-> [!NOTE]
-> Keep in mind that because you're using the simulator to run your Q# program, you still get pseudorandom results. 
+In the next unit, you build out the second phase, which combines random bits to form a larger number.
 
 ## Create a Q# program
 
@@ -78,5 +74,3 @@ In the next section, you build out the second phase, which combines random bits 
 1. Run the program again to see a different result.
 
 In the next unit, you'll implement the second phase of your quantum random number generator: combining multiple random bits to form a larger number.
-
-
