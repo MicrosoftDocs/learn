@@ -19,6 +19,8 @@ abstract: |
   During this module, you will:
   - Learn the basic structure of a Q# program.
   - Create a new Q# file.
+  - Define the logic of a problem.
+  - Combine classical and quantum operations to solve a problem.
   - Work with qubits and quantum operations to build a quantum random number generator.
   
 prerequisites: |
