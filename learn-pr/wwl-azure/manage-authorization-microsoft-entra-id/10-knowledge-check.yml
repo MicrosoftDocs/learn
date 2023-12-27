@@ -4,7 +4,7 @@ title: Knowledge Check
 metadata:
   title: Knowledge Check
   description: "Knowledge Check"
-  ms.date: 12/26/2023
+  ms.date: 12/27/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -14,25 +14,58 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the purpose of Privileged Identity Management?"
+  - content: "A Privileged Role Administrator needs to assign a role to a user. What are the two main steps in the role assignment process?"
     choices:
-    - content: "Allows users to manage their own access permissions"
+    - content: "Browse to Identity, Users, All users and select the user."
       isCorrect: false
-      explanation: "Incorrect. This would increase the risk of unnecessary access permissions."
-    - content: "Provides unlimited access permissions to all resources"
+      explanation: "Incorrect. This is only the first step in the role assignment process."
+    - content: "Select the user and adjust the role settings."
       isCorrect: false
-      explanation: "Incorrect. This would increase the risk of excessive and misused access permissions."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      explanation: "Incorrect. This is only one of the two main steps in the role assignment process."
+    - content: "Select the role to assign and adjust the role settings and duration."
       isCorrect: true
-      explanation: "Correct. Privileged Identity Management provides time-based and approval-based role activation to mitigate the risks of excessive, unnecessary, or misused access permissions on resources that you care about."
-  - content: "What is the purpose of Just In Time and Just Enough Access policies when assigning roles?"
+      explanation: "Correct. The two main steps in the role assignment process are selecting the role to assign and adjusting the role settings and duration."
+  - content: "An organization wants to regularly review access to privileged Azure resources and Microsoft Entra ID roles. What tool can they use to create access reviews for privileged access?"
     choices:
-    - content: "To grant unlimited access to all users"
+    - content: "Microsoft Advanced Threat Analytics"
       isCorrect: false
-      explanation: "Incorrect. Granting unlimited access to all users is not aligned with Zero Trust guiding principles."
-    - content: "To assign roles permanently without any time restrictions"
+      explanation: "Incorrect. Microsoft Advanced Threat Analytics is used to detect advanced security threats."
+    - content: "Microsoft Entra ID Protection"
       isCorrect: false
-      explanation: "Incorrect. Assigning roles permanently without any time restrictions is not aligned with Just In Time and Just Enough Access policies."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      explanation: "Incorrect. Microsoft Entra ID Protection is used to protect user identities and detect potential vulnerabilities."
+    - content: "Microsoft Entra Privileged Identity Management PIM"
       isCorrect: true
-      explanation: "Correct. Just In Time and Just Enough Access policies align with Zero Trust guiding principles by granting access only when needed and for a limited time period, reducing the attack surface and minimizing the risk of unauthorized access."
+      explanation: "Correct. Microsoft Entra Privileged Identity Management PIM can be used to create access reviews for privileged access to Azure resources and Microsoft Entra ID roles."
+  - content: "A team lead needs to grant access to a specific resource group in Azure. What is the first step they should take?"
+    choices:
+    - content: "Click on the Access control tab and select the role to assign."
+      isCorrect: false
+      explanation: "Incorrect. This is not the first step."
+    - content: "Select the user, group, or service principal to assign the selected role."
+      isCorrect: false
+      explanation: "Incorrect. This is not the first step."
+    - content: "Identify the needed scope by searching for the resource group in the Azure portal."
+      isCorrect: true
+      explanation: "Correct. The first step is to identify the needed scope by searching for the resource group in the Azure portal."
+  - content: "A company wants to enable Permissions Management for their organization. What is the first step they need to take?"
+    choices:
+    - content: "Activate a free trial or paid license through the Azure portal"
+      isCorrect: false
+      explanation: "Incorrect. This step comes after the first step."
+    - content: "Contact their Microsoft representative for Volume Licensing or Enterprise agreements"
+      isCorrect: false
+      explanation: "Incorrect. This step comes after the first step."
+    - content: "Ensure they have a Microsoft Entra ID tenant and are eligible for or have an active assignment to the Permissions Management Administrator role"
+      isCorrect: true
+      explanation: "Correct. The first step to enable Permissions Management is to ensure they have a Microsoft Entra ID tenant and are eligible for or have an active assignment to the Permissions Management Administrator role."
+  - content: "A security administrator needs to add a role assignment for a new user. Which step should they take to add a condition to the role assignment?"
+    choices:
+    - content: "Skip the Conditions tab and proceed to the Review assign tab."
+      isCorrect: false
+      explanation: "Incorrect. Adding a condition is optional but recommended for more fine-grained access control."
+    - content: "Select the Unconstrained option under Delegation type on the Conditions tab."
+      isCorrect: false
+      explanation: "Incorrect. This option does not provide fine-grained access control."
+    - content: "Select the Constrained recommended option under Delegation type on the Conditions tab."
+      isCorrect: true
+      explanation: "Correct. This option provides more fine-grained access control by constraining the roles and principals the user can assign roles to."
