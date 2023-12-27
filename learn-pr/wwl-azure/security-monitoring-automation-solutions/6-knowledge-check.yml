@@ -14,39 +14,6 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the purpose of data connectors in Microsoft Sentinel?"
-    choices:
-    - content: "To delete data from Microsoft Sentinel"
-      isCorrect: false
-      explanation: "Incorrect. Data connectors are used to ingest data into Microsoft Sentinel, not delete it."
-    - content: "To encrypt data in Microsoft Sentinel"
-      isCorrect: false
-      explanation: "Incorrect. Data connectors are used to ingest data into Microsoft Sentinel, not encrypt it."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
-      isCorrect: true
-      explanation: "Correct. Data connectors are used to ingest data into Microsoft Sentinel, allowing for real-time integration with various data sources, including non-Microsoft products, through APIs or agent-based mechanisms."
-  - content: "What is the purpose of creating custom analytics rules in Microsoft Sentinel?"
-    choices:
-    - content: "To delete all logs from the environment"
-      isCorrect: false
-      explanation: "Incorrect. Deleting logs is not the purpose of creating custom analytics rules."
-    - content: "To generate more false positives in the environment"
-      isCorrect: false
-      explanation: "Incorrect. Generating more false positives is not the purpose of creating custom analytics rules."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
-      isCorrect: true
-      explanation: "Correct. Custom analytics rules help discover threats and anomalous behaviors in the environment, alert you when certain event thresholds or conditions are reached, generate incidents for your SOC to triage and investigate, and respond to threats with automated tracking and remediation processes."
-  - content: "What does a playbook enable in terms of application hosting platforms?"
-    choices:
-    - content: "Enables the manual creation and teardown of environments to help deliver secure and stable application hosting platforms"
-      isCorrect: false
-      explanation: "Incorrect. Playbooks enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-    - content: "Enables the creation and teardown of environments to help deliver unstable application hosting platforms"
-      isCorrect: false
-      explanation: "Incorrect. Playbooks enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
-      isCorrect: true
-      explanation: "Correct. Playbooks enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
   - content: "What action does the Incident settings section in Microsoft Sentinel enable?"
     choices:
     - content: "Automatically group all alerts into a single incident"
@@ -58,14 +25,47 @@ quiz:
     - content: "Enable or disable the creation of incidents for alerts triggered by a specific analytics rule"
       isCorrect: true
       explanation: "Correct. The Incident settings section allows you to enable or disable the creation of incidents for alerts triggered by a specific analytics rule."
-  - content: "What is the purpose of automation in security monitoring?"
+  - content: "A security analyst needs to collect logs from a custom data source on a Linux computer. Which method should they use to collect the logs?"
     choices:
-    - content: "To reduce the number of security events detected"
+    - content: "Use the Log Analytics agent to collect the logs as files on the Linux computer."
       isCorrect: false
-      explanation: "Incorrect. Automation is meant to increase the efficiency and accuracy of incident response, not reduce the number of events detected."
-    - content: "To replace human analysts with machines"
+      explanation: "Incorrect. This method is used to collect logs as files on Windows or Linux computers, but not specifically for custom data sources."
+    - content: "Configure the Syslog daemon to forward events to the Microsoft Sentinel workspace."
       isCorrect: false
-      explanation: "Incorrect. Automation is meant to assist human analysts, not replace them."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      explanation: "Incorrect. This method is used to collect logs from the built-in Syslog daemon, not a custom data source."
+    - content: "Use the Log Analytics custom log collection agent to collect the logs as files on the Linux computer."
       isCorrect: true
-      explanation: "Correct. Automation enables swift and accurate incident response, reducing the time to detect and respond to security events."
+      explanation: "Correct. This method is used to collect logs as files on Windows or Linux computers for custom data sources."
+  - content: "A company wants to consolidate log entries from multiple Azure subscriptions and tenants into one location for analysis. They also want to perform complex analysis and gain deep insights on activity log entries. Which feature should they enable by sending the activity log to a Log Analytics workspace?"
+    choices:
+    - content: "Enabling Azure Storage account"
+      isCorrect: false
+      explanation: "Incorrect. Azure Storage account is used to retain log data longer than 90 days for audit, static analysis, or backup."
+    - content: "Exporting Activity Logs to a file"
+      isCorrect: false
+      explanation: "Incorrect. Exporting Activity Logs to a file does not enable the Azure Monitor Logs feature, which allows correlating activity log data with other monitoring data collected by Azure Monitor."
+    - content: "Sending the activity log to a Log Analytics workspace"
+      isCorrect: true
+      explanation: "Correct. Sending the activity log to a Log Analytics workspace enables the Azure Monitor Logs feature, where you can correlate activity log data with other monitoring data collected by Azure Monitor. You can also consolidate log entries from multiple Azure subscriptions and tenants into one location for analysis together. Use log queries to perform complex analysis and gain deep insights on activity log entries. Use log alerts with Activity entries for more complex alerting logic. Store activity log entries for longer than the activity log retention period. Incur no data ingestion or retention charges for activity log data stored in a Log Analytics workspace."
+  - content: "A security team needs to ensure the secure configuration of their Azure resources. They want to use a tool that can assess the security posture of their resources and provide recommendations for improvement. Which Azure service should they use?"
+    choices:
+    - content: "Microsoft Defender for Cloud"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Cloud provides recommendations for improving the security posture of Azure resources, but it does not assess the current security posture."
+    - content: "Azure Policy"
+      isCorrect: false
+      explanation: "Incorrect. Azure Policy is used to enforce compliance with organizational standards and policies, but it does not assess the current security posture."
+    - content: "Azure Advisor"
+      isCorrect: true
+      explanation: "Correct. Azure Advisor assesses the security posture of Azure resources and provides recommendations for improving security, performance, and cost optimization."
+  - content: "A company wants to ensure that their Azure resources are secure and stable. What service can they use to automate the creation and teardown of environments to achieve this goal?"
+    choices:
+    - content: "Azure Policy"
+      isCorrect: false
+      explanation: "Incorrect. Azure Policy is used to enforce compliance with organizational standards and policies, but it does not assess the current security posture."
+    - content: "Microsoft Defender for Cloud"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Cloud provides recommendations for improving the security posture of Azure resources, but it does not assess the current security posture."
+    - content: "Azure DevTest Labs"
+      isCorrect: true
+      explanation: "Correct. Azure DevTest Labs enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
