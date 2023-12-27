@@ -3,7 +3,7 @@ Defender for Cloud offers security alerts that are powered by Microsoft Threat I
 :::image type="content" source="../media/defender-cloud-workload-protection-cee788f3.png" alt-text="Diagram showing an example of Defender for Cloud protecting workloads.":::
 <br>
 
-### The Cloud workload dashboard includes the following sections:
+## The Cloud workload dashboard includes the following sections:
 
 1.  **Microsoft Defender for Cloud coverage** \- Here you can see the resources types in your subscription that are eligible for protection by Defender for Cloud. Wherever relevant, you can upgrade here as well. If you want to upgrade all possible eligible resources, select **Upgrade all**.
 2.  **Security alerts** \- When Defender for Cloud detects a threat in any area of your environment, it generates an alert. These alerts describe details of the affected resources, suggested remediation steps, and in some cases an option to **trigger a logic app** in response. Selecting anywhere in this graph opens the Security alerts page.
@@ -13,7 +13,7 @@ Defender for Cloud offers security alerts that are powered by Microsoft Threat I
 :::image type="content" source="../media/workload-protections-dashboard-defender-cloud-57c1405f.png" alt-text="Screenshot showing Workload protections in Defender for Cloud.":::
 
 
-### Protect cloud workloads
+## Protect cloud workloads
 
 Proactive security principles require that you implement security practices that protect your workloads from threats. Cloud workload protections (CWP) surface workload-specific recommendations that lead you to the right security controls to protect your workloads.
 
