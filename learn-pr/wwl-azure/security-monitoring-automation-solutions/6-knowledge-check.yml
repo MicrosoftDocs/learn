@@ -40,7 +40,7 @@ quiz:
     choices:
     - content: "Enabling Azure Storage account"
       isCorrect: false
-      explanation: "Incorrect. Azure Storage account is used to retain log data longer than 90 days for audit, static analysis, or backup."
+      explanation: "Incorrect. Azure Storage account is used to retain log data longer than 90 days for audit, static analysis, or back up."
     - content: "Exporting Activity Logs to a file"
       isCorrect: false
       explanation: "Incorrect. Exporting Activity Logs to a file does not enable the Azure Monitor Logs feature, which allows correlating activity log data with other monitoring data collected by Azure Monitor."
