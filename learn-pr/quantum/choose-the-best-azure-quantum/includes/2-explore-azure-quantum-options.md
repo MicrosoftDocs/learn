@@ -72,7 +72,7 @@ The Azure Quantum portal also allows you to run your quantum programs in an Azur
 
 ### Is the Azure Quantum portal the right tool for me?
 
-The following table might help you decide if you want to use Azure Quantum portal for your quantum computing development journey.
+Use this table as a quick reference to the features in the Azure Quantum portal.
 
 | Use it if you want to: | You need: | You can't: |
 | --- | --- | --- |
