@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/26/2023
+  ms.date: 12/27/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -60,9 +60,9 @@ quiz:
       explanation: "Correct. Azure Files enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
   - content: "What is the purpose of authorizing access to resources in Azure Storage?"
     choices:
-    - content: "To restrict access to resources only to users with Azure AD DS authorization"
+    - content: "To restrict access to resources only to users with Microsoft Entra Domain Services authorization"
       isCorrect: false
-      explanation: "Incorrect. While Azure AD DS is one option for authorization, it is not the only option and restricting access only to users with Azure AD DS authorization would limit access to resources."
+      explanation: "Incorrect. While Microsoft Entra Domain Services is one option for authorization, it is not the only option and restricting access only to users with Microsoft Entra Domain Services authorization would limit access to resources."
     - content: "To make resources public and accessible to any user"
       isCorrect: false
       explanation: "Incorrect. This would allow anonymous read access and is not a secure way to manage access to resources."

@@ -39,26 +39,17 @@ When you navigate to a queue, the Azure portal indicates whether you are current
 
 ## Authenticate with the account access key
 
-If you are authenticating using the account access key, you'll see Access Key specified as the authentication method in the portal:
+If you are authenticating using the account access key, you'll see Access Key specified as the authentication method in the portal.
 
-:::image type="content" source="../media/new-auth-method-access-key-example-baac8817.png" alt-text="Screenshot showing authenticate with account access key page.":::
+To switch to using Microsoft Entra account, click the link highlighted in the image. If you have the appropriate permissions via the Azure roles that are assigned to you, you'll be able to proceed. However, if you lack the right permissions, you'll see an error message like the following one:<br>
 
-
-To switch to using Microsoft Entra account, click the link highlighted in the image. If you have the appropriate permissions via the Azure roles that are assigned to you, you'll be able to proceed. However, if you lack the right permissions, you'll see an error message like the following one:
-
-:::image type="content" source="../media/new-auth-error-9facf9a4.png" alt-text="Screenshot showing authenticate with your Microsoft Entra account permissions page.":::
-
-
-Notice that no queues appear in the list if your Microsoft Entra ID account lacks permissions to view them. Click on the Switch to access key link to use the access key for authentication again.
+Notice that no queues appear in the list if your Microsoft Entra ID account lacks permissions to view them. Click on the Switch to access key link to use the access key for authentication again.<br>
 
 ## Authenticate with your Microsoft Entra ID account
 
-If you are authenticating using your Microsoft Entra ID account, you'll see Microsoft Entra ID user Account specified as the authentication method in the portal:
+If you are authenticating using your Microsoft Entra ID account, you'll see Microsoft Entra ID user Account specified as the authentication method in the portal.
 
-:::image type="content" source="../media/new-auth-method-78f1d785.png":::
-
-
-## Default to Microsoft Entra ID authorization in the Azure portal
+Default to Microsoft Entra ID authorization in the Azure portal<br>
 
 When you create a new storage account, you can specify that the Azure portal will default to authorization with Microsoft Entra ID when a user navigates to queue data. You can also configure this setting for an existing storage account. This setting specifies the default authorization method only, so keep in mind that a user can override this setting and choose to authorize data access with the account key.
 
@@ -79,6 +70,4 @@ To update this setting for an existing storage account, follow these steps:<br>
 
 2. Under Settings, select Configuration.<br>
 
-3. Set Default to Microsoft Entra authorization in the Azure portal to Enabled.<br>
-
-:::image type="content" source="../media/new-default-auth-account-update-portal-a8fdf286.png" alt-text="Screenshot showing the settings and configuration page in the Azure portal.":::
+3. Set Default to Microsoft Entra authorization in the Azure portal to Enabled.
