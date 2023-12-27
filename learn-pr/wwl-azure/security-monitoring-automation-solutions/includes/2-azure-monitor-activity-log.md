@@ -70,16 +70,36 @@ Activity log data in a Log Analytics workspace is stored in a table called Azure
 
 For example, to view a count of activity log records for each category, use the following query:
 
-:::image type="content" source="../media/new-kusto-azure-activity-summarize-a347e945.png" alt-text="Screenshot showing how to view Kusto Azure activity log records.":::
-
+| Kusto                                                 |
+| ----------------------------------------------------- |
+| `AzureActivity``| summarize count() by CategoryValue` |
 
 To retrieve all records in the administrative category, use the following query:
 
-:::image type="content" source="../media/new-kusto-azure-activity-where-c74d8390.png" alt-text="Screenshot showing how to retrieve all Kusto records.":::
-
+| Kusto                                                      |
+| ---------------------------------------------------------- |
+| `AzureActivity``| where CategoryValue == "Administrative"` |
 
 *In some scenarios, it's possible that values in fields of AzureActivity might have different casings from otherwise equivalent values. Take care when querying data in AzureActivity to use case-insensitive operators for string comparisons, or use a scalar function to force a field to a uniform casing before any comparisons. For example, use the tolower() function on a field to force it to always be lowercase or the =~ operator when performing a string comparison.*
 
 ## Send to Azure Storage
 
 Send the activity log to an Azure Storage account if you want to retain your log data longer than 90 days for audit, static analysis, or back up. If you're required to retain your events for 90 days or less, you don't need to set up archival to a storage account. Activity log events are retained in the Azure platform for 90 days.
+
+When you send the activity log to Azure, a storage container is created in the storage account as soon as an event occurs. The blobs in the container use the following naming convention:
+
+| `insights-activity-logs/resourceId=/SUBSCRIPTIONS/{subscription ID}/y={four-digit numeric year}/m={two-digit numeric month}/d={two-digit numeric day}/h={two-digit 24-hour clock hour}/m=00/PT1H.json` |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+
+For example, a particular blob might have a name similar to:
+
+| `insights-logs-networksecuritygrouprulecounter/resourceId=/SUBSCRIPTIONS/00000000-0000-0000-0000-000000000000/y=2020/m=06/d=08/h=18/m=00/PT1H.json` |
+| --------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+Each PT1H.json blob contains a JSON object with events from log files that were received during the hour specified in the blob URL. During the present hour, events are appended to the PT1H.json file as they are received, regardless of when they were generated. The minute value in the URL, m=00 is always 00 as blobs are created on a per hour basis.
+
+Each event is stored in the PT1H.json file with the following format. This format uses a common top-level schema but is otherwise unique for each category, as described in Activity log schema.
+
+| JavaScript Object Notation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `{ "time": "2020-06-12T13:07:46.766Z", "resourceId": "/SUBSCRIPTIONS/00000000-0000-0000-0000-000000000000/RESOURCEGROUPS/MY-RESOURCE-GROUP/PROVIDERS/MICROSOFT.COMPUTE/VIRTUALMACHINES/MV-VM-01", "correlationId": "0f0cb6b4-804b-4129-b893-70aeeb63997e", "operationName": "Microsoft.Resourcehealth/healthevent/Updated/action", "level": "Information", "resultType": "Updated", "category": "ResourceHealth", "properties": {"eventCategory":"ResourceHealth","eventProperties":{"title":"This virtual machine is starting as requested by an authorized user or process. It will be online shortly.","details":"VirtualMachineStartInitiatedByControlPlane","currentHealthStatus":"Unknown","previousHealthStatus":"Unknown","type":"Downtime","cause":"UserInitiated"}}}` |

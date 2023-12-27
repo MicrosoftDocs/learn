@@ -105,12 +105,12 @@ To use a playbook to respond automatically to an **entire incident** or to an **
 
 1. From the **Automation** blade in the Microsoft Sentinel navigation menu, select **Create** from the top menu and then **Automation rule**.
 
-:::image type="content" source="../media/new-add-new-rule-fa6491dd.png" alt-text="Screenshot showing the automation rule panel.":::
+:::image type="content" source="../media/new-add-new-rule-fa6491dd.png" alt-text="Screenshot showing the automation rule default dashboard.":::
 
 
 2. The **Create new automation rule** panel opens. Enter a name for your rule.
 
-:::image type="content" source="../media/new-create-automation-rule-5d7549e0.png" alt-text="Screenshot showing the automation rule panel.":::
+:::image type="content" source="../media/new-create-automation-rule-5d7549e0.png" alt-text="Screenshot showing the create new automation rule panel.":::
 
 
 3. **Trigger**: Select the appropriate trigger according to the circumstance for which you're creating the automation rule—**When incident is created**, **When incident is updated**, or **When alert is created**.<br>
@@ -145,12 +145,8 @@ In the **Manage permissions** panel that opens up, mark the check boxes of the r
      -  Select **Application Type** and filter on **Microsoft Applications**.
      -  In the search box type **Azure Security Insights**.
      -  Copy the **Object ID** field. You will need to add this additional authorization to your existing Azure Lighthouse delegation.
- -  The **Microsoft Sentinel Automation Contributor** role has a fixed GUID which is **`f4c81013-99ee-4d62-a7ee-b3f1f648599a`**. A sample Azure Lighthouse authorization would look like this in your parameters template:
-
-:::image type="content" source="../media/new-java-script-object-notation-text-based-format-563af0b3.png" alt-text="Screenshot showing what a sample Azure Lighthouse authorization would look like this in your parameters template.":::
-
-
- -  Add any other actions you want for this rule. You can change the order of execution of actions by selecting the up or down arrows to the right of any action.
+ -  The **Microsoft Sentinel Automation Contributor** role has a fixed GUID which is `f4c81013-99ee-4d62-a7ee-b3f1f648599a.`
+ -  Add any other actions you want for this rule. You can change the order of execution of actions by selecting the up or down arrows to the right of any action.<br>
 
 6. Set an expiration date for your automation rule if you want it to have one.
 

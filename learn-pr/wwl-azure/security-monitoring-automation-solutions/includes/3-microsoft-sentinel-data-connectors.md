@@ -17,7 +17,7 @@ Once you fulfill all the prerequisites listed in the Instructions tab, the conne
 
 After you connect, you see a summary of the data in the Data received graph, and the connectivity status of the data types.
 
-:::image type="content" source="../media/new-azure-distributed%20denial-of-service%20attack-8f15f6c9.png" alt-text="Screenshot showing a summary of the data in the Data received graph, and the connectivity status of the data types.":::
+:::image type="content" source="../media/new-distributed-denial-of-service-attack-6c55dae7.png" alt-text="Screenshot showing a summary of the data in the Data received graph, and the connectivity status of the data types.":::
 
 
 ### REST API integration for data connectors
