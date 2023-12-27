@@ -51,7 +51,7 @@ You can use the default value of application client identity or another supporte
 
 6. Select Add a scope:
 
-:::image type="content" source="../media/new-add-a-scope-4ba71756.png" alt-text="Screenshot showing how to expose an API.":::
+    :::image type="content" source="../media/new-add-a-scope-4ba71756.png" alt-text="Screenshot showing how to expose an API.":::
 
 
 7. Next, specify the scope's attributes in the Add a scope pane. For this walk-through, you can use the example values or specify your own.

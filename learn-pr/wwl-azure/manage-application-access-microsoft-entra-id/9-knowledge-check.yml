@@ -58,3 +58,14 @@ quiz:
     - content: "App-only permissions"
       isCorrect: true
       explanation: "Correct. App-only permissions enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "An organization wants to easily achieve the right access policies for their configured applications. Which Microsoft service can help them achieve this?"
+    choices:
+    - content: "Microsoft Excel"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Excel is a spreadsheet software and not a service that helps organizations achieve access policies for their configured applications."
+    - content: "Microsoft Word"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Word is a word processing software and not a service that helps organizations achieve access policies for their configured applications."
+    - content: "Microsoft Entra ID"
+      isCorrect: true
+      explanation: "Correct. Microsoft Entra ID supports extensive access management for configured applications, enabling organizations to easily achieve the right access policies ranging from automatic, attribute based assignment (ABAC) or RBAC scenarios through delegation and including administrator management. With Microsoft Entra ID, usage and assignment reporting is fully integrated, enabling administrators to easily report on assignment state, assignment errors, and even usage."
