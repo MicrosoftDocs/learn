@@ -14,7 +14,8 @@ Individual keys, secrets, and certificates permissions should be used only for s
 
 ## Azure built-in roles for Key Vault data plane operations
 
-*The Key Vault Contributor role is for management plane operations only to manage key vaults. It does not allow access to keys, secrets and certificates.*
+> [!NOTE]
+> *The Key Vault Contributor role is for management plane operations only to manage key vaults. It does not allow access to keys, secrets and certificates.*
 
 | **Built-in role**                        | **Description**                                                                                                                                                                                                                                                             | **ID**                               |
 | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
@@ -27,7 +28,8 @@ Individual keys, secrets, and certificates permissions should be used only for s
 | Key Vault Secrets Officer                | Perform any action on the secrets of a key vault, except manage permissions. Only works for key vaults that use the 'Azure role-based access control' permission model.                                                                                                     | b86a8fe4-44ce-4948-aee5-eccb2c155cd7 |
 | Key Vault Secrets User                   | Read secret contents including secret portion of a certificate with private key. Only works for key vaults that use the 'Azure role-based access control' permission model.                                                                                                 | 4633458b-17de-408a-b874-0445c86b69e6 |
 
-There is no Key Vault Certificate User because applications require secrets portion of certificate with private key. The Key Vault Secrets User role should be used for applications to retrieve certificate.
+> [!NOTE]
+> There is no Key Vault Certificate User because applications require secrets portion of certificate with private key. The Key Vault Secrets User role should be used for applications to retrieve certificate.
 
 ### Managing built-in Key Vault data plane role assignments (preview)
 
@@ -47,16 +49,17 @@ To add role assignments, you must have `Microsoft.Authorization/roleAssignments/
 
 ### Enable Azure RBAC permissions on Key Vault
 
-Changing permission model requires 'Microsoft.Authorization/roleAssignments/write' permission, which is part of **Owner** and **User Access Administrator** roles. Classic subscription administrator roles like 'Service Administrator' and 'Co-Administrator' are not supported.
+> [!NOTE]
+> Changing permission model requires 'Microsoft.Authorization/roleAssignments/write' permission, which is part of **Owner** and **User Access Administrator** roles. Classic subscription administrator roles like 'Service Administrator' and 'Co-Administrator' are not supported.
 
 1. Enable Azure RBAC permissions on new key vault:
 
-:::image type="content" source="../media/new-vault-properties-b86d5e10.png" alt-text="Screenshot showing how to enable Azure role based access control permissions on a new key vault.":::
+    :::image type="content" source="../media/new-vault-properties-b86d5e10.png" alt-text="Screenshot showing how to enable Azure role based access control permissions on a new key vault.":::
 
 
 2. Enable Azure RBAC permissions on existing key vault:
 
-:::image type="content" source="../media/new-exist-vault-09ab0fbd.png" alt-text="Screenshot showing how to enable Azure role based access control permissions on an existing Key Vault.":::
+    :::image type="content" source="../media/new-exist-vault-09ab0fbd.png" alt-text="Screenshot showing how to enable Azure role based access control permissions on an existing Key Vault.":::
 
 
 *Setting Azure RBAC permission model invalidates all access policies permissions. It can cause outages when equivalent Azure roles aren't assigned.*
