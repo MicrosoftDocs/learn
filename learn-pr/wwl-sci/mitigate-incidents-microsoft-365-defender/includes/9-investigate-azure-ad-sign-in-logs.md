@@ -1,5 +1,3 @@
-
-
 To perform a sign-in investigation including conditional access policies evaluated, you can query the following tables with KQL:
 
 
@@ -10,3 +8,4 @@ To perform a sign-in investigation including conditional access policies evaluat
 
 
 The Microsoft Entra monitoring Sign-in Logs provide access to the same information available in the SigninLogs table. To access the Sign-in Logs blade, select Microsoft Entra ID in the Azure portal, then Sign-in Logs in the Monitoring Group.  The query output will provide default columns including the Date, User, Application, Status, and Conditional Access (policy applied).  
+
