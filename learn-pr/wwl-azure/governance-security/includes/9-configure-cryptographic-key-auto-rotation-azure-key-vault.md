@@ -28,36 +28,15 @@ Key rotation policy settings:
  -  Rotation time: key rotation interval, the minimum value is seven days from creation and seven days from expiration time
  -  Notification time: key near expiry event interval for Event Grid notification. It requires 'Expiry Time' set on rotation policy and 'Expiration Date' set on the key.
 
-:::image type="content" source="../media/new-key-rotation-policy-f64c44cf.png" alt-text="Screenshot showing an example of the Rotation policy page.":::
-
-
 ## Configure key rotation policy
 
 Configure key rotation policy during key creation.
-
-:::image type="content" source="../media/new-key-rotation-policy-2-67ee5fd8.png" alt-text="Screenshot showing an example of the configure key rotation policy page.":::
-
-
-Configure rotation policy on existing keys.
-
-:::image type="content" source="../media/new-key-rotation-policy-3-b498fd2e.png" alt-text="Screenshot showing an example of how to configure rotation policy on existing keys.":::
-
-
-## Rotation on demand
-
-Key rotation can be invoked manually.
-
-:::image type="content" source="../media/new-key-rotation-policy-4-82a22310.png" alt-text="Screenshot showing an example of how to invoke a key rotation manually.":::
-
 
 ## Configure key near expiry notification
 
 Configuration of expiry notification for Event Grid key near expiry event. In case when automated rotation cannot be used, like when a key is imported from local HSM, you can configure near expiry notification as a reminder for manual rotation or as a trigger to custom automated rotation through integration with Event Grid. You can configure notification with days, months and years before expiry to trigger near expiry event.
 
-:::image type="content" source="../media/new-key-rotation-policy-5-c005d18e.png" alt-text="Screenshot showing an example of how to configure key near expiry notification.":::
-
-
-## Configure key rotation policy governance
+Configure key rotation policy governance<br>
 
 Using the Azure Policy service, you can govern the key lifecycle and ensure that all keys are configured to rotate within a specified number of days.
 

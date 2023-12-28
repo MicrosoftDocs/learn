@@ -36,22 +36,13 @@ Follow the steps in this section to back up and restore objects by using the Azu
 
 3. Go to the object (secret, key, or certificate) you want to back up.
 
-    :::image type="content" source="../media/new-backup-1-23756ba8.png" alt-text="Screenshot showing an example of how to perform a back up from the Azure portal.":::
-
-
-4. Select the object.
+4. Select the object.<br>
 
 5. Select **Download Backup**.
 
-    :::image type="content" source="../media/new-backup-2-fde8c03a.png" alt-text="Screenshot showing an example of how to download a back up from the Azure portal.":::
+6. Select **Download**.<br>
 
-
-6. Select **Download**.
-
-    :::image type="content" source="../media/new-backup-3-c96b11e5.png" alt-text="Screenshot showing how to download and store an encrypted blob in a secure location.":::
-
-
-7. Store the encrypted blob in a secure location.
+7. Store the encrypted blob in a secure location.<br>
 
 ## Restore
 
@@ -63,8 +54,6 @@ Follow the steps in this section to back up and restore objects by using the Azu
 
 4. Select **Restore Backup**.
 
-    :::image type="content" source="../media/new-backup-4-ac4e2809.png" alt-text="Screenshot showing an example of to restore a back up in the Azure portal.":::
-
-5. Go to the location where you stored the encrypted blob.
+5. Go to the location where you stored the encrypted blob.<br>
 
 6. Select **OK**.

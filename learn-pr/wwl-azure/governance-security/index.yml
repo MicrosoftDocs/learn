@@ -3,7 +3,7 @@ uid: learn.wwl.governance-security
 metadata:
   title: Plan, implement, and manage governance for security
   description: "This module focuses on enabling administrators to effectively plan, implement, and manage security governance in Azure, ensuring compliance with organizational policies and best practices."
-  ms.date: 12/27/2023
+  ms.date: 12/28/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
@@ -16,7 +16,8 @@ abstract: |
   - Streamline secure infrastructure deployment with Azure Blueprint.
   - Utilize landing zones for consistent Azure security and manage sensitive data with Azure Key Vault.
   - Enhance key security with HSM recommendations, effective access control, and regular key rotation and backup processes.
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

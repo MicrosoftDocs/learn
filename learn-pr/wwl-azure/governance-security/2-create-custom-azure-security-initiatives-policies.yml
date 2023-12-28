@@ -4,10 +4,10 @@ title: Create, assign, and interpret security policies and initiatives in Azure 
 metadata:
   title: Create, assign, and interpret security policies and initiatives in Azure Policy
   description: "Create, assign, and interpret security policies and initiatives in Azure Policy"
-  ms.date: 12/27/2023
+  ms.date: 12/28/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/2-create-custom-azure-security-initiatives-policies.md)]
