@@ -161,7 +161,7 @@ Alternatively, the sign-in/sign-up process can be further customized through del
 
 ## Data protection
 
-### DP-1: Discover, classify, and label sensitive data<br>
+### DP-1: Discover, classify, and label sensitive data
 
 **Feature**:Sensitive Data Discovery and Classification
 
@@ -238,7 +238,7 @@ Use Azure Key Vault to create and control the certificate lifecycle, including c
 
 ## Backup and recovery
 
-### BR-1: Ensure regular automated backups<br>
+### BR-1: Ensure regular automated backups
 
 **Feature**:Azure Backup
 

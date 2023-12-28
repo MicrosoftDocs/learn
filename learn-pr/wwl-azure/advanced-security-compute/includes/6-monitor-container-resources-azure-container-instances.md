@@ -4,7 +4,7 @@ Azure Monitor provides insight into the compute resources used by your container
 
 At this time, Azure Monitor metrics are only available for Linux containers.
 
-## Available metrics<br>
+## Available metrics
 
 Azure Monitor provides the following metrics for Azure Container Instances. These metrics are available for a container group and individual containers. By default, the metrics are aggregated as averages.
 

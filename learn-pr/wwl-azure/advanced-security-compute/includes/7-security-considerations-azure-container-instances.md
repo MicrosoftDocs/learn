@@ -1,4 +1,4 @@
-## Use a private registry<br>
+## Use a private registry
 
 Containers are built from images that are stored in one or more repositories. These repositories can belong to a public registry, like Docker Hub, or to a private registry. An example of a private registry is the Docker Trusted Registry, which can be installed on-premises or in a virtual private cloud. You can also use cloud-based private container registry services, including Azure Container Registry.
 
@@ -24,7 +24,7 @@ The following security measures, implemented well and managed effectively, can h
 
 By using effective vulnerability management throughout the container development lifecycle, you improve the odds that you identify and resolve security concerns before they become a more serious problem.
 
-## Scan for vulnerabilities<br>
+## Scan for vulnerabilities
 
 New vulnerabilities are discovered all the time, so scanning for and identifying vulnerabilities is a continuous process. Incorporate vulnerability scanning throughout the container lifecycle:
 
