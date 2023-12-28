@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.deploy-applications-azure-kubernetes-service.summary
+uid: learn.wwl.manage-identities-microsoft-entra-id.summary
 title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 12/28/2023
+  ms.date: 12/27/2023
   author: wwlpublish
-  ms.author: bradj
+  ms.author: serlingdavis
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/9-summary.md)]
+  [!include[](includes/8-summary.md)]

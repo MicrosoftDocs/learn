@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.deploy-applications-azure-kubernetes-service.introduction
+uid: learn.wwl.manage-identities-microsoft-entra-id.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
-  ms.date: 12/28/2023
+  ms.date: 12/27/2023
   author: wwlpublish
-  ms.author: bradj
+  ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
