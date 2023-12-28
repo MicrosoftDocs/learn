@@ -4,10 +4,10 @@ title: Select and configure an appropriate method for access to Azure Files
 metadata:
   title: Select and configure an appropriate method for access to Azure Files
   description: "Select and configure an appropriate method for access to Azure Files"
-  ms.date: 12/27/2023
+  ms.date: 12/28/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 8
 content: |
   [!include[](includes/4-authorize-access-blobs-use-microsoft-entra-id.md)]

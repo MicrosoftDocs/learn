@@ -4,10 +4,10 @@ title: Enable double encryption at the Azure Storage infrastructure level
 metadata:
   title: Enable double encryption at the Azure Storage infrastructure level
   description: "Enable double encryption at the Azure Storage infrastructure level"
-  ms.date: 12/27/2023
+  ms.date: 12/28/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 8
 content: |
   [!include[](includes/10-enable-infrastructure-encryption-double-encryption-data.md)]

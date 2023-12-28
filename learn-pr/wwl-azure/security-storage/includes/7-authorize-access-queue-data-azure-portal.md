@@ -30,9 +30,6 @@ Custom roles can support different combinations of the same permissions provided
 
 To view queue data in the portal, navigate to the Overview for your storage account, and click on the links for Queues. Alternatively you can navigate to the Queue service section in the menu.
 
-:::image type="content" source="../media/new-queue-access-portal-1d1c470b.png" alt-text="Screenshot showing how to navigate to queues in the Azure portal to view a storage account.":::
-
-
 ## Determine the current authentication method
 
 When you navigate to a queue, the Azure portal indicates whether you are currently using the account access key or your Microsoft Entra account to authenticate.
@@ -58,9 +55,6 @@ To specify that the portal will use Microsoft Entra ID authorization by default 
 1. Create a new storage account, following the instructions in Create a storage account.<br>
 
 2. On the Advanced tab, in the Security section, check the box next to Default to Microsoft Entra ID authorization in the Azure portal.
-
-:::image type="content" source="../media/new-default-auth-account-create-portal-example-de6eb1bd.png" alt-text="Screenshot showing the default to Microsoft Entra authorization in the Azure portal.":::
-
 
 3. Select the Review + create button to run validation and create the account.
 
