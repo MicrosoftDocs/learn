@@ -15,11 +15,6 @@ Defender for Cloud continuously assesses the configurations of your clusters and
 
 You can use the resource filter to review the outstanding recommendations for your container-related resources, whether in asset inventory or the recommendations page:
 
-:::image type="content" source="../media/new-hardening-kubernetes-clusters-31cd8c39.png" alt-text="Screenshot showing an example of the resource filter in Microsoft Defender for Cloud.":::
-
-
-For details on the recommendations that might appear for this feature, check out the **compute section** of the recommendations reference table.
-
 ## Kubernetes data plane hardening
 
 To protect the workloads of your Kubernetes containers with tailored recommendations, you can install the Azure Policy for Kubernetes. Learn more about monitoring components for Defender for Cloud.
@@ -45,19 +40,3 @@ Examples of security events that Microsoft Defenders for Containers monitors inc
  -  Exposed Kubernetes dashboards<br>
  -  Creation of high privileged roles
  -  Creation of sensitive mounts
-
-You can view security alerts by selecting the Security alerts tile at the top of the Defender for Cloud's overview page, or the link from the sidebar.
-
-:::image type="content" source="../media/new-defender-containers-security-alerts-70b5333c.png" alt-text="Screenshot showing an example of the overview page alerts links in Microsoft Defender for Cloud.":::
-
-
-The security alerts page opens.
-
-:::image type="content" source="../media/new-security-alerts-runtime-workloads-45916790.png" alt-text="Screenshot showing the security alerts page.":::
-
-
-Security alerts for runtime workload in the clusters can be recognized by the K8S.NODE\_ prefix of the alert type.
-
-Defender for Containers also includes host-level threat detection with over 60 Kubernetes-aware analytics, AI, and anomaly detections based on your runtime workload.<br>
-
-Defender for Cloud monitors the attack surface of multicloud Kubernetes deployments based on the MITRE ATT&CK® matrix for Containers, a framework developed by the Center for Threat-Informed Defense in close partnership with Microsoft.

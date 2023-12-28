@@ -11,10 +11,7 @@ Your Kubernetes cluster developers and application owners need access to differe
 
 With Microsoft Entra integrated clusters in AKS, you create Roles or ClusterRoles defining access permissions to resources. You then bind the roles to users or groups from Microsoft Entra ID.
 
-:::image type="content" source="../media/new-microsoft-entra-id-integration-ed7b0b75.png" alt-text="Diagram showing an example of a cluster level authentication flow.":::
-
-
-1. Developer authenticates with Microsoft Entra ID.
+1. Developer authenticates with Microsoft Entra ID.<br>
 
 2. The Microsoft Entra token issuance endpoint issues the access token.
 
