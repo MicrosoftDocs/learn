@@ -8,6 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/2-network-security-groups-application-security-groups.md)]
