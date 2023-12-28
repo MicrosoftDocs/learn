@@ -8,6 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 8
+durationInMinutes: 7
 content: |
   [!include[](includes/6-network-security-configurations-app-service-environment.md)]
