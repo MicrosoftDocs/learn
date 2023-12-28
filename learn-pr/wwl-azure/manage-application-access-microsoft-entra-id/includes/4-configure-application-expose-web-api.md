@@ -49,7 +49,7 @@ First, follow these steps to create an example scope named `Employees.Read.All:`
 
 You can use the default value of application client identity or another supported App ID URI pattern. The App ID URI acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique.<br>
 
-6. Select Add a scope:
+6. Select Add a scope
 
 7. Next, specify the scope's attributes in the Add a scope pane. For this walk-through, you can use the example values or specify your own.<br>
 

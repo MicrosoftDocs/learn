@@ -38,7 +38,7 @@ The Microsoft Graph **ServicePrincipal entity** defines the schema for a service
 
 You can use the **Enterprise applications** page in the Microsoft Entra admin center to list and manage the service principals in a tenant. You can see the service principal's permissions, user consented permissions, which users have done that consent, sign in information, and more.
 
-## Relationship between application objects and service principals<br>
+## Relationship between application objects and service principals
 
 The application object is the global representation of your application for use across all tenants, and the service principal is the local representation for use in a specific tenant. The application object serves as the template from which common and default properties are derived for use in creating corresponding service principal objects.
 
