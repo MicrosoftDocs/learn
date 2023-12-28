@@ -68,15 +68,15 @@ Defender for Cloud employs advanced security analytics, which go far beyond sign
 
 Microsoft has an immense amount of global threat intelligence. Telemetry flows in from multiple sources, such as Azure, Microsoft 365, Microsoft CRM online, Microsoft Dynamics AX, outlook.com, MSN.com, the Microsoft Digital Crimes Unit (DCU), and Microsoft Security Response Center (MSRC). Researchers also receive threat intelligence information that is shared among major cloud service providers and feeds from other third parties. Microsoft Defender for Cloud can use this information to alert you to threats from known bad actors.
 
-### Behavioral analytics<br>
+### Behavioral analytics
 
 Behavioral analytics is a technique that analyzes and compares data to a collection of known patterns. However, these patterns are not simple signatures. They are determined through complex machine learning algorithms that are applied to massive datasets. They are also determined through careful analysis of malicious behaviors by expert analysts. Microsoft Defender for Cloud can use behavioral analytics to identify compromised resources based on analysis of virtual machine logs, virtual network device logs, fabric logs, and other sources.
 
-### Anomaly detection<br>
+### Anomaly detection
 
 Defender for Cloud also uses anomaly detection to identify threats. In contrast to behavioral analytics that depends on known patterns derived from large data sets, anomaly detection is more "personalized" and focuses on baselines that are specific to your deployments. Machine learning is applied to determine normal activity for your deployments and then rules are generated to define outlier conditions that could represent a security event.
 
-### Exporting alerts<br>
+### Exporting alerts
 
 You have a range of options for viewing your alerts outside of Defender for Cloud, including:
 
