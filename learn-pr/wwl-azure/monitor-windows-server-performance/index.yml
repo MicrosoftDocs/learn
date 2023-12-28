@@ -2,7 +2,7 @@
 uid: learn.wwl.monitor-windows-server-performance
 metadata:
   title: Monitor Windows Server performance
-  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|Learn to use a range of Windows Server tools to monitor the operating system and applications on a server computer. You'll also learn to configure your system to optimize efficiency and to troubleshoot problems.</span|  </div|"
+  description: "Learn to use a range of Windows Server tools to monitor the operating system and applications on a server computer. You'll also learn to configure your system to optimize efficiency and to troubleshoot problems."
   ms.date: 12/28/2023
   author: wwlpublish
   ms.author: tonyj
