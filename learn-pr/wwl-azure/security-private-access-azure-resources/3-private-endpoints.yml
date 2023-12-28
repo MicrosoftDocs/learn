@@ -8,6 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 8
 content: |
   [!include[](includes/3-private-endpoints.md)]
