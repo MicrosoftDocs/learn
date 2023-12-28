@@ -18,9 +18,6 @@ You can enable the Defender for Servers plan from the Environment settings page 
 
 5. On the Defender plans page, toggle the Servers switch to **On**.
 
-:::image type="content" source="../media/new-enable-defender-for-servers-plan-3d6ce6a4.png" alt-text="Screenshot showing Defender for servers plan.":::
-
-
 ## Select a Defender for Servers plan
 
 When you enable the Defender for Servers plan, you're then given the option to select which plan - Plan 1 or Plan 2 - to enable. There are two plans you can choose from that offer different levels of protections for your resources.
@@ -39,14 +36,8 @@ Review what's included each plan.
 
 5. Select **Change plans**.
 
-:::image type="content" source="../media/new-select-a-plan-877da18b.png" alt-text="Screenshot showing available plans you can choose from that offer different levels of protections for your resources.":::
-
-
 6. In the popup window, select **Plan 2** or **Plan 1**.
 
-:::image type="content" source="../media/new-plan-selection-280ac861.png" alt-text="Screenshot showing Defender for servers plan selection page.":::
-<br>
-
-7. Select **Confirm**.
+7. Select **Confirm**.<br>
 
 8. Select **Save**.

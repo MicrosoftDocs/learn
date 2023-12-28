@@ -48,9 +48,6 @@ By using the information gathered for each step of an attack, Defender for Cloud
 
 To detect real threats and reduce false positives, Defender for Cloud monitors resources, collects, and analyzes data for threats, often correlating data from multiple sources.
 
-:::image type="content" source="../media/new-security-center-detection-capabilities-ca0cf6d1.png" alt-text="Diagram showing Defender for Cloud detection capabilities.":::
-
-
 ## Microsoft initiatives
 
 Microsoft Defender for Cloud benefits from having security research and data science teams throughout Microsoft who continuously monitor for changes in the threat landscape. This includes the following initiatives:
