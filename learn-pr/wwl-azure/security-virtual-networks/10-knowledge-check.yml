@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/27/2023
+  ms.date: 12/28/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -58,3 +58,14 @@ quiz:
     - content: "Virtual network peering"
       isCorrect: true
       explanation: "Correct. Virtual network peering connects two Azure virtual networks so that they appear as one for connectivity purposes. Traffic between virtual machines in the peered virtual networks is routed through the Microsoft backbone infrastructure, through private IP addresses only. No public internet is involved. This provides a low latency, high bandwidth connection and is useful in scenarios such as cross-region data replication and database failover."
+  - content: "A network security group is associated with a virtual machine's network interface. The security rules in the network security group are processed for inbound traffic. If the network security group allows port 80 inbound, which of the following will process the traffic?"
+    choices:
+    - content: "The security rules in the network security group associated with the subnet and the network interface"
+      isCorrect: false
+      explanation: "Incorrect. The security rules in the network security group associated with the network interface are processed first."
+    - content: "The security rules in the network security group associated with the subnet"
+      isCorrect: false
+      explanation: "Incorrect. The security rules in the network security group associated with the network interface are processed first."
+    - content: "The security rules in the network security group associated with the network interface"
+      isCorrect: true
+      explanation: "Correct. The security rules in the network security group associated with the network interface are processed first for inbound traffic."
