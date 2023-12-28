@@ -16,7 +16,8 @@ abstract: |
   *   Assess and align with security frameworks using Microsoft Defender for Cloud to ensure adherence to security standards and best practices.
   *   Integrate specific industry and regulatory standards into Microsoft Defender for Cloud for tailored compliance.
   *   Connect hybrid and multicloud environments to Microsoft Defender for Cloud for centralized security management, and monitor external assets to safeguard against external threats.
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

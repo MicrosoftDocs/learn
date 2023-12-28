@@ -8,6 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/5-microsoft-cloud-security-benchmark.md)]
