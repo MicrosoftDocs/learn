@@ -87,7 +87,7 @@ If Fraud Alert is enabled with Automatic Blocking and Report Suspicious Activity
 
 ## **Notifications**
 
-You can configureMicrosoft Entra IDto send email notifications when users report fraud alerts. These notifications are typically sent to identity administrators because the user's account credentials are likely compromised. The following example shows what a fraud alert notification email looks like:
+You can configure Microsoft Entra ID to send email notifications when users report fraud alerts. These notifications are typically sent to identity administrators because the user's account credentials are likely compromised. The following example shows what a fraud alert notification email looks like:
 
 ## OATH tokens
 
