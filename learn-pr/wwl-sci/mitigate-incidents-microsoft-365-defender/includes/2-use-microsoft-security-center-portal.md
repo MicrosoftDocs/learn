@@ -1,4 +1,3 @@
-
 The Microsoft Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/?azure-portal=true)) is a specialized workspace designed to meet the needs of security teams. These solutions are integrated across Microsoft 365 services and provide actionable insights to help reduce risks and safeguard your digital estate.
 
 You can investigate the alerts that affect your network, understand what they mean, and collate evidence associated with the incidents so that you can devise an effective remediation plan.
@@ -26,7 +25,7 @@ The **More resources** option in the portal provides a list of these related por
 | Portal| Description|
 | :--- | :--- |
 | Microsoft Purview compliance portal| Manage your compliance needs across Microsoft 365 services using integrated solutions for information governance, classification, case management, and more.|
-| Microsoft Entra ID| Manage your organization's identities. Set up multi-factor authentication, track user sign-ins, edit company branding, and more.|
+| Microsoft Entra ID| Manage your organization's identities. Set up multifactor authentication, track user sign-ins, edit company branding, and more.|
 | Microsoft Entra ID Protection| Detect potential vulnerabilities affecting your organization's identities. Investigate suspicious incidents related to your organization's identities and set up automated responses to resolve them.|
 | Azure Information Protection| Configure and manage the Azure Information Protection client and scanner to automatically classify and protect your organization's email and docs. Use reports to monitor label usage and identify sensitive info that should be protected.|
 | Microsoft Defender for Cloud| Protect your data centers and get advanced threat protection for your Azure and non-Azure workloads in the cloud and on premises. Secure your Azure services fast with autoprovisioned, native protection.|
