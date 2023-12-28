@@ -1,8 +1,5 @@
 ## How an application gateway accepts a request
 
-:::image type="content" source="../media/new-how-application-gateway-works-e745e8bc.png" alt-text="Diagram showing an example of how application gateway works.":::
-
-
 1.  Before a client sends a request to an application gateway, it resolves the domain name of the application gateway by using a Domain Name System (DNS) server. Azure controls the DNS entry because all application gateways are in the azure.com domain.
 2.  The Azure DNS returns the IP address to the client, which is the frontend IP address of the application gateway.<br>
 3.  The application gateway accepts incoming traffic on one or more listeners. A listener is a logical entity that checks for connection requests. It's configured with a frontend IP address, protocol, and port number for connections from clients to the application gateway.<br>

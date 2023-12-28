@@ -6,22 +6,13 @@ Azure Firewall is offered in three SKUs: Standard, Premium, and Basic.
 
 Azure Firewall Standard provides L3-L7 filtering and threat intelligence feeds directly from Microsoft Cyber Security. Threat intelligence-based filtering can alert and deny traffic from/to known malicious IP addresses and domains that are updated in real time to protect against new and emerging attacks.
 
-:::image type="content" source="../media/new-firewall-standard-30bb4e1c.png" alt-text="Diagram showing an example of the Azure Firewall Standard.":::
-
-
 ## Azure Firewall Premium
 
 Azure Firewall Premium provides advanced capabilities include signature based IDPS to allow rapid detection of attacks by looking for specific patterns. These patterns can include byte sequences in network traffic or known malicious instruction sequences used by malware. There are more than 67,000 signatures in over 50 categories that are updated in real time to protect against new and emerging exploits. The exploit categories include malware, phishing, coin mining, and Trojan attacks.
 
-:::image type="content" source="../media/new-firewall-premium-431dd002.png" alt-text="Screenshot showing an example of the Azure Firewall Premium that provides advanced capabilities.":::
-
-
 ## Azure Firewall Basic<br>
 
 Azure Firewall Basic is intended for small and medium size (SMB) customers to secure their Azure cloud. environments. It provides the essential protection SMB customers need at an affordable price point.
-
-:::image type="content" source="../media/new-firewall-basic-diagram-5f32c697.png" alt-text="Diagram showing an example of the Azure Firewall Basic.":::
-
 
 Azure Firewall Basic is like Firewall Standard, but has the following main limitations:
 
@@ -41,24 +32,21 @@ Firewall Manager can provide security management for two network architecture ty
 
  -  **Hub virtual network**<br>
 
-    This is a standard Azure virtual network that you create and manage yourself. When security policies are associated with such a hub, it is referred to as a hub virtual network. At this time, only Azure Firewall Policy is supported. You can peer spoke virtual networks that contain your workload servers and services. You can also manage firewalls in standalone virtual networks that aren't peered to any spoke.<br>
-
-:::image type="content" source="../media/new-azure-firewall-manager-ccf7d1b3.png" alt-text="Diagram showing how Azure Firewall Manager works.":::
-
+    This is a standard Azure virtual network that you create and manage yourself. When security policies are associated with such a hub, it is referred to as a hub virtual network. At this time, only Azure Firewall Policy is supported. You can peer spoke virtual networks that contain your workload servers and services. You can also manage firewalls in standalone virtual networks that aren't peered to any spoke.
 
 ## Azure Firewall Manager features
 
 Azure Firewall Manager offers the following features:
 
-## Central Azure Firewall deployment and configuration<br>
+### Central Azure Firewall deployment and configuration
 
 You can centrally deploy and configure multiple Azure Firewall instances that span different Azure regions and subscriptions.
 
-## Hierarchical policies (global and local)<br>
+### Hierarchical policies (global and local)
 
 You can use Azure Firewall Manager to centrally manage Azure Firewall policies across multiple secured virtual hubs. Your central IT teams can author global firewall policies to enforce organization wide firewall policy across teams. Locally authored firewall policies allow a DevOps self-service model for better agility.
 
-## Integrated with third-party security-as-a-service for advanced security<br>
+### Integrated with third-party security-as-a-service for advanced security
 
 In addition to Azure Firewall, you can integrate third-party security as a service (SECaaS) providers to provide additional network protection for your VNet and branch Internet connections.
 
@@ -71,7 +59,7 @@ This feature is available only with secured virtual hub deployments.<br>
 
     Leverage your Azure connectivity and global distribution to easily add third-party filtering for branch to Internet scenarios.<br>
 
-## Centralized route management<br>
+### Centralized route management
 
 Easily route traffic to your secured hub for filtering and logging without the need to manually setup User Defined Routes (UDR) on spoke virtual networks.
 

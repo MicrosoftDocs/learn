@@ -2,16 +2,13 @@ Whether you’re delivering content and files or building global apps and APIs, 
 
 Azure Front Door is Microsoft’s modern cloud Content Delivery Network (CDN) that provides fast, reliable, and secure access between your users and your applications’ static and dynamic web content across the globe. Azure Front Door delivers your content using Microsoft’s global edge network with hundreds of global and local points of presence (PoPs) distributed around the world close to both your enterprise and consumer end users.
 
-:::image type="content" source="../media/new-front-door-overview-445cebc8.png" alt-text="Diagram showing an overview example of the Azure Front Door.":::
-
-
 Azure Front Door enables internet-facing application to:
 
  -  **Build and operate modern internet-first architectures** that have dynamic, high-quality digital experiences with highly automated, secure, and reliable platforms.<br>
  -  **Accelerate and deliver your app and content globally** at scale to your users wherever they're creating opportunities for you to compete, weather change, and quickly adapt to new demand and markets.<br>
  -  **Intelligently secure your digital estate** against known and new threats with intelligent security that embrace a Zero Trust framework.<br>
 
-## Key Benefits
+## Key benefits
 
 Global delivery scale using Microsoft’s network
 
@@ -45,5 +42,3 @@ Modernize your internet first applications on Azure with Cloud Native experience
 ## Comparison between Azure Front Door and Azure CDN services
 
 Azure Front Door and Azure CDN are both Azure services that offer global content delivery with intelligent routing and caching capabilities at the application layer. Both services can be used to optimize and accelerate your applications by providing a globally distributed network of points of presence (POP) close to your users. Both services also offer a variety of features to help you secure your applications from malicious attacks and to help you monitor your application's health and performance.
-
-:::image type="content" source="../media/new-azure-front-door-content-delivery-network-77ffa4ba.png" alt-text="Diagram showing a comparison between Azure Front Door and Azure Content Delivery Network services.":::

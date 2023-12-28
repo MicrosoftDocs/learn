@@ -4,27 +4,16 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/27/2023
+  ms.date: 12/28/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 8
+durationInMinutes: 10
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the main purpose of Azure Firewall?"
-    choices:
-    - content: "Offers virtual machine backup and recovery services"
-      isCorrect: false
-      explanation: "Incorrect. Azure Firewall is a network firewall security service, not a backup and recovery service."
-    - content: "Provides cloud storage for your data"
-      isCorrect: false
-      explanation: "Incorrect. Azure Firewall is a network firewall security service, not a storage service."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
-      isCorrect: true
-      explanation: "Correct. Azure Firewall is a cloud native and intelligent network firewall security service that provides the best of breed threat protection for your cloud workloads running in Azure."
   - content: "What is the main purpose of Azure Front Door?"
     choices:
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
@@ -58,3 +47,25 @@ quiz:
     - content: "Azure DevOps"
       isCorrect: true
       explanation: "Correct. Azure DevOps enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "A company wants to ensure the security of their web applications from common exploits and vulnerabilities. Which of the following solutions can help them achieve this?"
+    choices:
+    - content: "Securing each individual web application separately"
+      isCorrect: false
+      explanation: "Incorrect. This approach can be time-consuming and may not provide centralized protection against common exploits and vulnerabilities."
+    - content: "Deploying multiple layers of security within the application code"
+      isCorrect: false
+      explanation: "Incorrect. This approach can be challenging and require rigorous maintenance, patching, and monitoring at multiple layers of the application topology."
+    - content: "Deploying a centralized Web Application Firewall (WAF)"
+      isCorrect: true
+      explanation: "Correct. A WAF provides centralized protection of web applications from common exploits and vulnerabilities, making security management simpler and giving application administrators better assurance of protection against threats and intrusions."
+  - content: "A company wants to ensure the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms. Which of the following options would enable this?"
+    choices:
+    - content: "Using a different tool that does not support automation"
+      isCorrect: false
+      explanation: "Incorrect. Using a tool that does not support automation will not enable the automation and validation of the creation and teardown of environments."
+    - content: "Using a manual process to create and teardown environments"
+      isCorrect: false
+      explanation: "Incorrect. A manual process is prone to human error and can lead to inconsistencies in the environment."
+    - content: "Using an infrastructure as code tool to automate the creation and teardown of environments"
+      isCorrect: true
+      explanation: "Correct. An infrastructure as code tool enables the automation and validation of the creation and teardown of environments, ensuring consistency and stability in the application hosting platform."
