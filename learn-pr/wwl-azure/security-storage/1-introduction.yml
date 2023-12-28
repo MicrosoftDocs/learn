@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.mitigate-incidents-microsoft-365-defender.introduction
+uid: learn.wwl.security-storage.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
   ms.date: 12/28/2023
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: serlingdavis
   ms.topic: unit
 durationInMinutes: 3
 content: |
