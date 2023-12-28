@@ -16,7 +16,7 @@ For Microsoft Entra roles in Privileged Identity Management, only a user who is 
 
 For Azure resource roles in Privileged Identity Management, only a subscription administrator, a resource Owner, or a resource User Access administrator can manage assignments for other administrators. Users who are Privileged Role Administrators, Security Administrators, or Security Readers don't by default have access to view assignments to Azure resource roles in Privileged Identity Management.<br>
 
-## Terminology<br>
+## Terminology
 
 To better understand Privileged Identity Management and its documentation, you should review the following terms.
 
@@ -38,7 +38,7 @@ PIM keeps you informed by sending you and other participants email notifications
 
 The following screenshot shows an email message sent by PIM. The email informs Patti that Alex updated a role assignment for Emily.<br>
 
-## Assign<br>
+## Assign
 
 The assignment process starts by assigning roles to members. To grant access to a resource, the administrator assigns roles to users, groups, service principals, or managed identities. The assignment includes the following data:
 
@@ -51,7 +51,7 @@ The assignment process starts by assigning roles to members. To grant access to 
 
 The following screenshot shows how administrator assigns a role to members.
 
-## Activate<br>
+## Activate
 
 If users have been made eligible for a role, then they must activate the role assignment before using the role. To activate the role, users select specific activation duration within the maximum (configured by administrators), and the reason for the activation request.
 

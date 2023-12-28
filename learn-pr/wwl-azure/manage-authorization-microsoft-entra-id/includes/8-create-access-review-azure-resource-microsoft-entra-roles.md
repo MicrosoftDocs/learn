@@ -61,7 +61,7 @@ Access Reviews for Service Principals require a Microsoft Entra Workload ID Prem
 
 5. You can send notifications to additional users or groups to receive review completion updates. This feature allows for stakeholders other than the review creator to be updated on the progress of the review. To use this feature, select Select User(s) or Group(s) and add an additional user or group upon you want to receive the status of completion.<br>
 
-## Advanced settings<br>
+## Advanced settings
 
 1. To specify additional settings, expand the Advanced settings section.
 

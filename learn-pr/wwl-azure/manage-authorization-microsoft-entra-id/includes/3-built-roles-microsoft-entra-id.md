@@ -26,7 +26,7 @@ You can assign roles as either **eligible** or **active**. Eligible roles are as
 
 Assigned roles appear in the associated section for the user, so eligible and active roles are listed separately.
 
-## Update roles<br>
+## Update roles
 
 You can change the settings of a role assignment, for example to change an active role to eligible.<br>
 
@@ -38,7 +38,7 @@ You can change the settings of a role assignment, for example to change an activ
 
 4. Change the settings as needed and select the **Save** button.
 
-## Remove roles<br>
+## Remove roles
 
 You can remove role assignments from the **Administrative roles** page for a selected user.
 
