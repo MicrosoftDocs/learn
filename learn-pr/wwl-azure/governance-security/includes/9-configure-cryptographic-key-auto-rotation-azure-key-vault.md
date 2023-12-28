@@ -36,7 +36,7 @@ Configure key rotation policy during key creation.
 
 Configuration of expiry notification for Event Grid key near expiry event. In case when automated rotation cannot be used, like when a key is imported from local HSM, you can configure near expiry notification as a reminder for manual rotation or as a trigger to custom automated rotation through integration with Event Grid. You can configure notification with days, months and years before expiry to trigger near expiry event.
 
-Configure key rotation policy governance<br>
+## Configure key rotation policy governance
 
 Using the Azure Policy service, you can govern the key lifecycle and ensure that all keys are configured to rotate within a specified number of days.
 
