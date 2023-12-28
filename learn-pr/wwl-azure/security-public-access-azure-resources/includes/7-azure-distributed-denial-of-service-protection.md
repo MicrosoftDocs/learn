@@ -12,7 +12,7 @@ Azure DDoS Network Protection, combined with application design best practices, 
 
 DDoS IP Protection is a pay-per-protected IP model. DDoS IP Protection contains the same core engineering features as DDoS Network Protection, but will differ in the following value-added services: DDoS rapid response support, cost protection, and discounts on WAF.
 
-## Azure DDoS Protection: Key Features<br>
+## Azure DDoS Protection: Key Features
 
  -  Always-on traffic monitoring: Your application traffic patterns are monitored 24 hours a day, 7 days a week, looking for indicators of DDoS attacks. Azure DDoS Protection instantly and automatically mitigates the attack, once it's detected.
  -  Adaptive real time tuning: Intelligent traffic profiling learns your application's traffic over time, and selects and updates the profile that is the most suitable for your service. The profile adjusts as traffic changes over time.<br>
@@ -27,15 +27,15 @@ DDoS IP Protection is a pay-per-protected IP model. DDoS IP Protection contains 
  -  Extensive mitigation scale: All L3/L4 attack vectors can be mitigated, with global capacity, to protect against the largest known DDoS attacks.<br>
  -  Cost guarantee: Receive data-transfer and application scale-out service credit for resource costs incurred as a result of documented DDoS attacks.<br>
 
-## Azure DDoS Protection: Architecture<br>
+## Azure DDoS Protection: Architecture
 
 Azure DDoS Protection is designed for services that are deployed in a virtual network. For other services, the default infrastructure-level DDoS protection applies, which defends against common network-layer attacks. To learn more about supported architectures, see DDoS Protection reference architectures.
 
-## Pricing<br>
+## Pricing
 
 For DDoS Network Protection, under a tenant, a single DDoS protection plan can be used across multiple subscriptions, so there's no need to create more than one DDoS protection plan. For DDoS IP Protection, there's no need to create a DDoS protection plan. Customers can enable DDoS IP protection on any public IP resource.
 
-## Best Practices for DDoS Protection<br>
+## Best Practices for DDoS Protection
 
 Maximize the effectiveness of your DDoS protection strategy by following these best practices:
 
@@ -86,7 +86,7 @@ Specific to resource attacks at the application layer, you should configure a we
 
 Even web application firewalls are susceptible to volumetric and state exhaustion attacks. We strongly recommend enabling DDoS Protection on the WAF virtual network to help protect from volumetric and protocol attacks.<br>
 
-## Protection Planning<br>
+## Protection Planning
 
 Planning and preparation are crucial to understand how a system will perform during a DDoS attack. Designing an incident management response plan is part of this effort.
 

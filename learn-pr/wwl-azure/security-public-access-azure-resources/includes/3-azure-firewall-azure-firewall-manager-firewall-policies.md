@@ -10,7 +10,7 @@ Azure Firewall Standard provides L3-L7 filtering and threat intelligence feeds d
 
 Azure Firewall Premium provides advanced capabilities include signature based IDPS to allow rapid detection of attacks by looking for specific patterns. These patterns can include byte sequences in network traffic or known malicious instruction sequences used by malware. There are more than 67,000 signatures in over 50 categories that are updated in real time to protect against new and emerging exploits. The exploit categories include malware, phishing, coin mining, and Trojan attacks.
 
-## Azure Firewall Basic<br>
+## Azure Firewall Basic
 
 Azure Firewall Basic is intended for small and medium size (SMB) customers to secure their Azure cloud. environments. It provides the essential protection SMB customers need at an affordable price point.
 
@@ -67,14 +67,14 @@ This feature is available only with secured virtual hub deployments.<br>
 
 You can use third-party providers for Branch to Internet (B2I) traffic filtering, side by side with Azure Firewall for Branch to VNet (B2V), VNet to VNet (V2V) and VNet to Internet (V2I).<br>
 
-## DDoS protection plan<br>
+## DDoS protection plan
 
 You can associate your virtual networks with a DDoS protection plan within Azure Firewall Manager. For more information, see Configure an Azure DDoS Protection Plan using Azure Firewall Manager.
 
-## Manage Web Application Firewall policies<br>
+## Manage Web Application Firewall policies
 
 You can centrally create and associate Web Application Firewall (WAF) policies for your application delivery platforms, including Azure Front Door and Azure Application Gateway. For more information, see Manage Web Application Firewall policies.
 
-## Region availability<br>
+## Region availability
 
 Azure Firewall Policies can be used across regions. For example, you can create a policy in West US, and use it in East US.
