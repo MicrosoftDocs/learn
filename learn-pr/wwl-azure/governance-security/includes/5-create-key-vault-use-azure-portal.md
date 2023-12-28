@@ -4,7 +4,7 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
 
 Sign in to the Azure portal.
 
-## Create a vault<br>
+## Create a vault
 
 1.  From the Azure portal menu, or from the **Home** page, select **Create a resource**.
 2.  In the Search box, enter **Key Vault**.
@@ -25,7 +25,7 @@ Take note of these two properties:
 
 At this point, your Azure account is the only one authorized to perform operations on this new vault.
 
-## Configure Azure Key Vault networking settings<br>
+## Configure Azure Key Vault networking settings
 
 1. Browse to the previously created key vault.
 

@@ -53,13 +53,15 @@ A response includes these additional read-only attributes:
  -  **exp**: IntDate contains the value of the expiration date of the X.509 certificate.
  -  **nbf**: IntDate contains the value of the "not before" date of the X.509 certificate.
 
-*If a Key Vault certificate expires it can still be retrieved, but certificate may become inoperable in scenarios like Transport Layer Security protection where expiration of certificate is validated.*
+> [!NOTE]
+> *If a Key Vault certificate expires it can still be retrieved, but certificate may become inoperable in scenarios like Transport Layer Security protection where expiration of certificate is validated.*<br>
 
 **Tags**
 
 Tags for certificates are a client-specified dictionary of key/value pairs, much like tags in keys and secrets.
 
-*A caller can read tags if they have the list or get permission to that object type (keys, secrets, or certificates).*
+> [!NOTE]
+> *A caller can read tags if they have the list or get permission to that object type (keys, secrets, or certificates).*<br>
 
 ## Certificate policy
 
