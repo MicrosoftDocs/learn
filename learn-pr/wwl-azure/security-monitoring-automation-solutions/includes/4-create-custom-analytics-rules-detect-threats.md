@@ -8,9 +8,6 @@ From the Microsoft Sentinel navigation menu, select Analytics.
 
 In the action bar at the top, select +Create and select Scheduled query rule. This opens the Analytics rule wizard.
 
-:::image type="content" source="../media/new-create-scheduled-query-full-afab033b.png" alt-text="Microsoft Sentinel Analytics page.":::
-
-
 ## Analytics rule wizard - General tab
 
  -  Provide a unique Name and a Description.
@@ -19,17 +16,12 @@ In the action bar at the top, select +Create and select Scheduled query rule. Th
  -  Set the alert Severity as appropriate.
  -  When you create the rule, its Status is Enabled by default, which means it will run immediately after you finish creating it. If you don’t want it to run immediately, select Disabled, and the rule will be added to your Active rules tab and you can enable it from there when you need it.
 
-:::image type="content" source="../media/new-general-tab-dc41fb22.png" alt-text="Screenshot showing the Microsoft Sentinel Analytics rule wizard page.":::
-
-
 ## Define the rule query logic and configure settings
 
 In the Set rule logic tab, you can either write a query directly in the Rule query field, or create the query in Log Analytics and then copy and paste it here.
 
  -  Queries are written in Kusto Query Language (KQL).
  -  The example shown in this screenshot queries the SecurityEvent table to display a type of failed Windows logon events.
-
-## :::image type="content" source="../media/new-set-rule-logic-tab-1-d3590e01.png" alt-text="Screenshot showing how to define rule query logic and configure settings."::: 
 
 ### Alert enrichment
 
@@ -48,19 +40,13 @@ In the Set rule logic tab, you can either write a query directly in the Rule que
 
 In the Query scheduling section, set the following parameters:
 
-:::image type="content" source="../media/new-query-scheduling-and-alert-threshold-941de196.png" alt-text="Screenshot showing how to create a new scheduled rule.":::
-
-
  -  Set **Run query every** to control how often the query is run—as frequently as every 5 minutes or as infrequently as once every 14 days.
  -  Set **Lookup data from the last** to determine the time period of the data covered by the query—for example, it can query the past 10 minutes of data, or the past 6 hours of data. The maximum is 14 days.
  -  For the new **Start running** setting (in Preview):
      -  Leave it set to Automatically to continue the original behavior: the rule will run for the first time immediately upon being created, and after that at the interval set in the **Run query every** setting.
      -  Toggle the switch to **At specific time** if you want to determine when the rule first runs, instead of having it run immediately. Then choose the date using the calendar picker and enter the time in the format of the example shown.
 
-:::image type="content" source="../media/new-run-query-a6997d64.png" alt-text="Screenshot showing how to run a scheduled run query.":::
-
-
-Future runnings of the rule will occur at the specified interval after the first running.
+Future runnings of the rule will occur at the specified interval after the first running.<br>
 
 > [!NOTE]
 > The line of text under the **Start running** setting (with the information icon at its left) summarizes the current query scheduling and lookback settings.
@@ -79,10 +65,7 @@ Use the Alert threshold section to define the sensitivity level of the rule. For
 
 In the Incident Settings tab, you can choose whether and how Microsoft Sentinel turns alerts into actionable incidents. If this tab is left alone, Microsoft Sentinel will create a single, separate incident from each and every alert. You can choose to have no incidents created, or to group several alerts into a single incident, by changing the settings in this tab.
 
-:::image type="content" source="../media/new-configure-the-incident-creation-settings-b3d4e6e4.png" alt-text="Screenshot showing how to edit an existing rule.":::
-
-
-### Incident settings
+Incident settings<br>
 
 In the Incident settings section, Create incidents from alerts triggered by this analytics rule is set by default to Enabled, meaning that Microsoft Sentinel will create a single, separate incident from each and every alert triggered by the rule.
 
@@ -124,17 +107,13 @@ Use automation rules to perform basic triage, assignment, workflow, and closing 
 
 Automate more complex tasks and invoke responses from remote systems to remediate threats by calling playbooks from these automation rules. You can do this for incidents as well as for individual alerts.
 
-:::image type="content" source="../media/new-automated-response-8553f376.png" alt-text="Screenshot showing how to automate complex tasks and invoke responses from remote systems to remediate threats.":::
-
-
  -  Under Alert automation (classic) at the bottom of the screen, you'll see any playbooks you've configured to run automatically when an alert is generated using the old method.
      -  As of June 2023, you can no longer add playbooks to this list. Playbooks already listed here will continue to run until this method is deprecated, effective March 2026.
      -  If you still have any playbooks listed here, you should instead create an automation rule based on the alert created trigger and invoke the playbook from there. After you've done that, select the ellipsis at the end of the line of the playbook listed here, and select Remove.
 
 Select **Review and create** to review all the settings for your new analytics rule. When the "Validation passed" message appears, select **Create**.
 
-:::image type="content" source="../media/new-review-and-create-000860e8.png" alt-text="Screenshot showing how to view a rule and its output.":::
- View the rule and its output
+View the rule and its output
 
  -  You can find your newly created custom rule (of type "Scheduled") in the table under the Active rules tab on the main **Analytics** screen. From this list you can enable, disable, or delete each rule.
  -  To view the results of the analytics rules you create, go to the **Incidents** page, where you can triage incidents, investigate them, and remediate the threats.

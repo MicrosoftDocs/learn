@@ -30,9 +30,6 @@ Get a more complete and detailed introduction to automating threat response usin
 
 Follow these steps to create a new playbook in Microsoft Sentinel
 
-:::image type="content" source="../media/new-add-new-playbook-7ca92f3d.png" alt-text="Sceenshot showing steps to create a new playbook in Microsoft Sentinel.":::
-
-
 1.  From the **Microsoft Sentinel** navigation menu, select **Automation**.
 2.  From the top menu, select **Create**.
 3.  The drop-down menu that appears under **Create** gives you four choices for creating playbooks:
@@ -64,9 +61,54 @@ Follow these steps to create a new playbook in Microsoft Sentinel
          -  Select **Application Type** and filter on **Microsoft Applications**.
          -  In the search box type **Azure Security Insights**.
          -  Copy the **Object ID** field. You will need to add this additional authorization to your existing Azure Lighthouse delegation.
-     -  The **Microsoft Sentinel Automation Contributor** role has a fixed GUID which is **`f4c81013-99ee-4d62-a7ee-b3f1f648599a.`**
+     -  The **Microsoft Sentinel Automation Contributor** role has a fixed GUID which is `f4c81013-99ee-4d62-a7ee-b3f1f648599a.`
      -  Add any other actions you want for this rule. You can change the order of execution of actions by selecting the up or down arrows to the right of any action.<br>
 8.  Review the configuration choices you have made, and select **Create and continue to designer**.
 
-    > [!IMPORTANT]
-    > **Microsoft Sentinel must be granted explicit permissions in order to run playbooks**, whether manually or from automation rules. If a playbook appears "grayed out" in the drop-down list, it means Sentinel does not have permission to that playbook's resource group. Click the **Manage playbook permissions** link to assign permissions.
+Your playbook will take a few minutes to be created and deployed, after which you will see the message "Your deployment is complete" and you will be taken to your new playbook's Logic App Designer. The trigger you chose at the beginning will have automatically been added as the first step, and you can continue designing the workflow from there.
+
+## Add actions
+
+Now you can define what happens when you call the playbook. You can add actions, logical conditions, loops, or switch case conditions, all by selecting **New step**. This selection opens a new frame in the designer, where you can choose a system or an application to interact with or a condition to set. Enter the name of the system or application in the search bar at the top of the frame, and then choose from the available results.
+
+In every one of these steps, clicking on any field displays a panel with two menus: **Dynamic content** and **Expression**. From the **Dynamic content** menu, you can add references to the attributes of the alert or incident that was passed to the playbook, including the values and attributes of all the mapped entities and custom details contained in the alert or incident. From the **Expression** menu, you can choose from a large library of functions to add additional logic to your steps.
+
+This screenshot shows the actions and conditions you would add in creating the playbook described in the example at the beginning of this document. Learn more about adding actions to your playbooks.
+
+## Automate threat responses<br>
+
+You've created your playbook and defined the trigger, set the conditions, and prescribed the actions that it will take and the outputs it will produce. Now you need to determine the criteria under which it will run and set up the automation mechanism that will run it when those criteria are met.
+
+### Respond to incidents and alerts
+
+To use a playbook to respond automatically to an **entire incident** or to an **individual alert**, create an automation rule that will run when the incident is created or updated, or when the alert is generated. This automation rule will include a step that calls the playbook you want to use.
+
+**To create an automation rule**:
+
+1. From the **Automation** blade in the Microsoft Sentinel navigation menu, select **Create** from the top menu and then **Automation rule**.
+
+2. The **Create new automation rule** panel opens. Enter a name for your rule.<br>
+
+3. **Trigger**: Select the appropriate trigger according to the circumstance for which you're creating the automation rule—**When incident is created**, **When incident is updated**, or **When alert is created**.<br>
+
+4. **Conditions**:
+
+ -  Incidents can have two possible sources: they can be created inside Microsoft Sentinel, and they can also be imported from—and synchronized with—Microsoft Defender XDR.
+ -  If you selected one of the incident triggers and you want the automation rule to take effect only on incidents sourced in Microsoft Sentinel, or alternatively in Microsoft Defender XDR, specify the source in the If Incident provider equals condition. (This condition will be displayed only if an incident trigger is selected.)<br>
+ -  For all trigger types, if you want the automation rule to take effect only on certain analytics rules, specify which ones by modifying the If Analytics rule name contains condition.<br>
+ -  Add any other conditions you want to determine whether this automation rule will run. Select + Add and choose conditions or condition groups from the drop-down list. The list of conditions is populated by alert detail and entity identifier fields.<br>
+
+5. **Actions**:
+
+ -  Since you're using this automation rule to run a playbook, choose the Run playbook action from the drop-down list. You'll then be prompted to choose from a second drop-down list that shows the available playbooks. An automation rule can run only those playbooks that start with the same trigger (incident or alert) as the trigger defined in the rule, so only those playbooks will appear in the list.
+
+> [!IMPORTANT]
+> **Microsoft Sentinel must be granted explicit permissions in order to run playbooks**, whether manually or from automation rules. If a playbook appears "grayed out" in the drop-down list, it means Sentinel does not have permission to that playbook's resource group. Click the **Manage playbook permissions** link to assign permissions.
+
+In the **Manage permissions** panel that opens up, mark the check boxes of the resource groups containing the playbooks you want to run, and click **Apply**.<br>
+
+6. Set an expiration date for your automation rule if you want it to have one.<br>
+
+7. Enter a number under **Order** to determine where in the sequence of automation rules this rule will run.
+
+8. Click **Apply**. You're done!

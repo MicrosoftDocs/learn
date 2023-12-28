@@ -4,9 +4,6 @@ Built-in connectors enable connection to the broader security ecosystem for non-
 
 The Microsoft Sentinel Data connectors page shows the full list of connectors and their status for your workspace. Soon this page will only show the list of in-use data connectors.
 
-:::image type="content" source="../media/new-open-data-connector-page-2c86d90f.png" alt-text="Screenshot showing the Microsoft Sentinel Data connectors page.":::
-
-
 > [!NOTE]
 > To add more data connectors, install the solution associated with the data connector from the **Content Hub**.
 
@@ -17,9 +14,6 @@ From the Data connectors page, select the active or custom connector you want to
 Once you fulfill all the prerequisites listed in the Instructions tab, the connector page describes how to ingest the data to Microsoft Sentinel. It may take some time for data to start arriving.<br>
 
 After you connect, you see a summary of the data in the Data received graph, and the connectivity status of the data types.
-
-:::image type="content" source="../media/new-distributed-denial-of-service-attack-6c55dae7.png" alt-text="Screenshot showing a summary of the data in the Data received graph, and the connectivity status of the data types.":::
-
 
 ### REST API integration for data connectors
 
@@ -88,5 +82,3 @@ Both Microsoft and other organizations author Microsoft Sentinel data connectors
 1. In the Microsoft Sentinel Data connectors page, select the relevant connector.
 
 2. To access support and maintenance for the connector, use the support contact link in the Supported by field on the side panel for the connecter.
-
-:::image type="content" source="../media/new-connector-support-0217d65b.png" alt-text="Screenshot showing how to access support and maintenance for the data connector.":::
