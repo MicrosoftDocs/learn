@@ -13,7 +13,7 @@ In this exercise, you will:
 
 2. Select **Create a resource** > **Containers** > **Container Registry**.
 
-    :::image type="content" source="../media/3-search-container-registry-annotated.png" alt-text="Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace":::
+    :::image type="content" source="../media/3-search-container-registry-annotated.png" alt-text="Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace.":::
 
 3. Specify the values in the following table for each of the properties:
 
@@ -86,7 +86,7 @@ The Docker file contains the step-by-step instructions for building a Docker ima
     |**Kubernetes cluster name** |  Choose a unique name, such as *cna-demo-aks*. |
     |**Region** | Leave as default, or select a region close to you. |
 
-    :::image type="content" source="../media/3-create-cluster.png" alt-text="Configuration form.":::
+    :::image type="content" source="../media/3-create-cluster.png" alt-text="Screenshot of the Configuration form.":::
 
 4. Select **Next** > **Next** > **Next**.
 5. On the **Integrations** tab, select the container registry you created earlier.

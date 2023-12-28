@@ -8,7 +8,7 @@ Azure Kubernetes Service (AKS) is a fully managed Kubernetes service that offloa
 
 Let's say you work for Adatum Corporation, a manufacturer of home appliances. You lead a small development team there, and you've been tasked with building an app for smart fridges.
 
-Cloud-native apps have loosely coupled functionality by nature. With AKS, we can be more agile in our design and don't need to predict future requirements. We can start by using AKS for a small fridge inventory-management app that informs businesses about what needs to be restocked..
+Cloud-native apps have loosely coupled functionality by nature. With AKS, we can be more agile in our design and don't need to predict future requirements. We can start by using AKS for a small fridge inventory-management app that informs businesses about what needs to be restocked.
 
 We start by using an AKS cluster to deploy a Node.js container, which will process messages from the fridges and send them to a management web app. Later, if needed, we can add functionality to the app, such as connecting to fridge telemetry and onboard sensors.
 
