@@ -27,10 +27,7 @@ You must have sufficient permissions to register an application with your Micros
 
 6. Select **Register**.
 
-:::image type="content" source="../media/new-register-an-application-page-1c1a83a9.png" alt-text="Screenshot showing how to register an application.":::
-
-
-You've created your Microsoft Entra application and service principal.
+You've created your Microsoft Entra application and service principal.<br>
 
 ## Assign a role to the application
 
@@ -56,10 +53,7 @@ You can set the scope at the level of the subscription, resource group, or resou
 
 9. Select the **Select** button, then select **Review + assign**.
 
-:::image type="content" source="../media/new-add-role-assignment-to-application-9e6be9d2.png" alt-text="Screenshot showing to access resources in your subscription, you must assign a role to the application.":::
-
-
-Your service principal is set up. You can start using it to run your scripts or apps. To **manage your service principal** (permissions, user consented permissions, see which users have consented, review permissions, see sign in information, and more), go to **Enterprise applications**.
+Your service principal is set up. You can start using it to run your scripts or apps. To **manage your service principal** (permissions, user consented permissions, see which users have consented, review permissions, see sign in information, and more), go to **Enterprise applications**.<br>
 
 ## Configure access policies on resources
 
@@ -76,5 +70,3 @@ To configure access policies:
 4. Select **Add** to add the access policy.
 
 5. **Save**.
-
-:::image type="content" source="../media/new-configure-extra-permissions-6b371b0c.png" alt-text="Screenshot showing how to configure extra permissions on resources.":::

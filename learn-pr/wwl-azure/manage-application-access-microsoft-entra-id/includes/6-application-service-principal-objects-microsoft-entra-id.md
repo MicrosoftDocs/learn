@@ -18,10 +18,7 @@ The application object describes three aspects of an application:<br>
 
 You can use the **App registrations** page in the Microsoft Entra admin center to list and manage the application objects in your home tenant.
 
-:::image type="content" source="../media/new-application-registrations-home-tenant-201c9a0a.png" alt-text="Screenshot showing the applications registrations page in the Microsoft Entra admin center.":::
-
-
-The Microsoft Graph **Application entity** defines the schema for an application object's properties.
+The Microsoft Graph **Application entity** defines the schema for an application object's properties.<br>
 
 ## Service principal object
 
@@ -41,10 +38,7 @@ The Microsoft Graph **ServicePrincipal entity** defines the schema for a service
 
 You can use the **Enterprise applications** page in the Microsoft Entra admin center to list and manage the service principals in a tenant. You can see the service principal's permissions, user consented permissions, which users have done that consent, sign in information, and more.
 
-:::image type="content" source="../media/new-enterprise-applications-page-dc065ad4.png" alt-text="Screenshot showing owned application registrations.":::
-
-
-## Relationship between application objects and service principals
+## Relationship between application objects and service principals<br>
 
 The application object is the global representation of your application for use across all tenants, and the service principal is the local representation for use in a specific tenant. The application object serves as the template from which common and default properties are derived for use in creating corresponding service principal objects.
 
@@ -59,17 +53,11 @@ A service principal must be created in each tenant where the application is used
 
 You can find the service principals associated with an application object.
 
-:::image type="content" source="../media/new-managed-application-browser-bfda40f7.png" alt-text="Screenshot showing the managed application browser in the local directory.":::
-
-
-## Consequences of modifying and deleting applications
+Consequences of modifying and deleting applications<br>
 
 Any changes that you make to your application object are also reflected in its service principal object in the application's home tenant only (the tenant where it was registered). This means that deleting an application object will also delete its home tenant service principal object. However, restoring that application object through the app registrations UI won't restore its corresponding service principal.
 
-:::image type="content" source="../media/new-adatum-contoso-fabrikam-1d28207c.png" alt-text="Diagram showing the consequences of modifying and deleting applications.":::
-
-
-In this example scenario:
+In this example scenario:<br>
 
 | **Step** | **Description**                                                                                                                                                                                                                                                                                              |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

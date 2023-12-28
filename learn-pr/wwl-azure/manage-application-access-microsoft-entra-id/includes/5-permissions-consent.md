@@ -4,9 +4,6 @@ To access a protected resource like email or calendar data, your application nee
 
 As an application developer, you must identify how your application will access data. The application can use delegated access, acting on behalf of a signed-in user, or app-only access, acting only as the application's own identity.
 
-:::image type="content" source="../media/new-access-scenarios-b74547b9.png" alt-text="Diagram showing access scenarios.":::
-
-
 ## Delegated access (access on behalf of a user)
 
 In this access scenario, a user has signed into a client application. The client application accesses the resource on behalf of the user. Delegated access requires delegated permissions. Both the client and the user must be authorized separately to make the request.

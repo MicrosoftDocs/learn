@@ -4,7 +4,7 @@ Application Proxy is recommended for giving remote users access to internal reso
 
 ## Plan your implementation
 
-Prerequisites
+Prerequisites:
 
 You need to meet the following prerequisites before beginning your implementation. You can see more information on setting up your environment, including these prerequisites, in this tutorial.
 
