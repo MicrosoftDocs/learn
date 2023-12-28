@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/27/2023
+  ms.date: 12/28/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -14,58 +14,58 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What does Microsoft Defender for Cloud enable in terms of application hosting platforms?"
+  - content: "A security administrator wants to enforce policies that can be used to apply security settings. Which of the following built-in security policies in Defender for Cloud uses Azure role-based access control (Azure RBAC)?"
     choices:
-    - content: "Enables the validation of environments only"
+    - content: "Defender for Cloud does not have any built-in security policies."
       isCorrect: false
-      explanation: "Incorrect. Microsoft Defender for Cloud enables both creation and teardown of environments, as well as validation."
-    - content: "Enables the creation of environments only"
+      explanation: "Incorrect. Defender for Cloud has built-in security policies that use Azure RBAC."
+    - content: "Defender for Cloud uses a third-party tool for built-in security policies."
       isCorrect: false
-      explanation: "Incorrect. Microsoft Defender for Cloud enables both creation and teardown of environments."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      explanation: "Incorrect. Defender for Cloud has built-in security policies that use Azure RBAC."
+    - content: "Defender for Cloud uses Azure role-based access control (Azure RBAC) which provides built-in roles you can assign to Azure users, groups, and services."
       isCorrect: true
-      explanation: "Correct. Microsoft Defender for Cloud enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-  - content: "What is the purpose of Microsoft Defender for Cloud?"
+      explanation: "Correct. Defender for Cloud uses Azure RBAC for built-in security policies, which allows assigning roles to Azure users, groups, and services."
+  - content: "A company wants to improve their compliance posture by resolving failing assessments directly within the dashboard. What are the steps they should follow to remediate an automated assessment?"
     choices:
-    - content: "Offers virtual machine management tools"
+    - content: "Select a particular resource to view more details and resolve the recommendation for that resource."
       isCorrect: false
-      explanation: "Incorrect. Microsoft Defender for Cloud does not offer virtual machine management tools."
-    - content: "Provides cloud storage solutions"
+      explanation: "Incorrect. This is one of the steps to remediate an automated assessment, but it is not the first step."
+    - content: "Select a manual assessment to expand it and view the details for that recommendation."
       isCorrect: false
-      explanation: "Incorrect. Microsoft Defender for Cloud does not provide cloud storage solutions."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      explanation: "Incorrect. This answer describes the steps to remediate a manual assessment, not an automated assessment."
+    - content: "Select a regulatory compliance standard, select a compliance control to expand it, select any of the failing assessments that appear in the dashboard to view the details for that recommendation, select a particular resource to view more details and resolve the recommendation for that resource."
       isCorrect: true
-      explanation: "Correct. Microsoft Defender for Cloud enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-  - content: "What is the purpose of connecting non-Azure machines to Microsoft Defender for Cloud?"
+      explanation: "Correct. These are the steps to remediate an automated assessment. The user must select the regulatory compliance standard, select a compliance control to expand it, select any of the failing assessments that appear in the dashboard to view the details for that recommendation, select a particular resource to view more details and resolve the recommendation for that resource."
+  - content: "A security analyst needs to prioritize risk and eliminate threats beyond the firewall. Which Microsoft Defender External Attack Surface Management feature provides visibility of the organization's online infrastructure?"
     choices:
-    - content: "To monitor the security posture of Azure resources only"
+    - content: "Microsoft Defender Antivirus"
       isCorrect: false
-      explanation: "Incorrect. Defender for Cloud can monitor non-Azure machines as well."
-    - content: "To limit the capabilities of Defender for Cloud to Azure resources only"
+      explanation: "Incorrect. Microsoft Defender Antivirus provides protection against malware."
+    - content: "Microsoft Defender Firewall"
       isCorrect: false
-      explanation: "Incorrect. Connecting non-Azure machines enhances the capabilities of Defender for Cloud."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      explanation: "Incorrect. Microsoft Defender Firewall provides protection against network-based attacks."
+    - content: "Microsoft Defender External Attack Surface Management"
       isCorrect: true
-      explanation: "Correct. Connecting non-Azure machines to Defender for Cloud allows for comprehensive monitoring, detection, and response to security threats across diverse IT landscapes."
-  - content: "What does Microsoft Defender for Cloud enable in terms of application hosting platforms?"
+      explanation: "Correct. Microsoft Defender External Attack Surface Management provides visibility of the organization's online infrastructure to identify unknowns, prioritize risk, eliminate threats, and extend vulnerability and exposure control beyond the firewall."
+  - content: "A company wants to ensure the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms. Which of the following solutions should they use?"
     choices:
-    - content: "Enables the validation of environments only"
+    - content: "Microsoft Defender for Cloud is a cloud workload protection platform (CWPP) with specific protections for servers, containers, storage, databases, and other workloads."
       isCorrect: false
-      explanation: "Incorrect. Defender for Cloud enables both the creation and validation of environments."
-    - content: "Enables the creation of environments only"
+      explanation: "Incorrect. Microsoft Defender for Cloud is a cloud workload protection platform (CWPP) with specific protections for servers, containers, storage, databases, and other workloads. It does not provide automation and validation of the creation and teardown of environments."
+    - content: "Microsoft Defender for Cloud is a cloud security posture management (CSPM) solution that surfaces actions that you can take to prevent breaches."
       isCorrect: false
-      explanation: "Incorrect. Defender for Cloud enables both the creation and teardown of environments."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      explanation: "Incorrect. Microsoft Defender for Cloud is a cloud security posture management (CSPM) solution that surfaces actions that you can take to prevent breaches. It does not provide automation and validation of the creation and teardown of environments."
+    - content: "Microsoft Defender for Cloud is a development security operations (DevSecOps) solution that unifies security management at the code level across multicloud and multiple pipeline environments."
       isCorrect: true
-      explanation: "Correct. Defender for Cloud enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-  - content: "What does Microsoft Defender External Attack Surface Management (Defender EASM) do?"
+      explanation: "Correct. Microsoft Defender for Cloud is a development security operations (DevSecOps) solution that unifies security management at the code level across multicloud and multiple pipeline environments. It enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "A company wants to automate the creation and teardown of environments to deliver secure and stable application hosting platforms. Which Microsoft solution should they use?"
     choices:
-    - content: "Provides internal view of online infrastructure"
+    - content: "Microsoft Defender for Cloud"
       isCorrect: false
-      explanation: "Incorrect. Defender EASM provides external view of online infrastructure."
-    - content: "Only discovers and maps known assets"
+      explanation: "Incorrect. Microsoft Defender for Cloud is a cloud workload protection platform with specific protections for servers, containers, storage, databases, and other workloads."
+    - content: "Microsoft Sentinel"
       isCorrect: false
-      explanation: "Incorrect. Defender EASM recursively searches for infrastructure with observed connections to known legitimate assets to uncover previously unknown and unmonitored properties."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      explanation: "Incorrect. Microsoft Sentinel is a cloud-native security information and event manager (SIEM) platform that uses built-in AI to analyze large volumes of data across an enterprise."
+    - content: "Azure DevOps"
       isCorrect: true
-      explanation: "Correct. Defender EASM continuously discovers and maps your digital attack surface to provide an external view of your online infrastructure. This visibility enables security and IT teams to identify unknowns, prioritize risk, eliminate threats, and extend vulnerability and exposure control beyond the firewall."
+      explanation: "Correct. Azure DevOps enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
