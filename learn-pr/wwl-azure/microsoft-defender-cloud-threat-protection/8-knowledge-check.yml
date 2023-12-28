@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/27/2023
+  ms.date: 12/28/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -36,28 +36,6 @@ quiz:
     - content: "Defender for Cloud presents the findings and related information as recommendations, including remediation steps, relevant CVEs, CVSS scores, and more."
       isCorrect: true
       explanation: "Correct. Defender for Cloud presents the findings and related information as recommendations, including remediation steps, relevant CVEs, CVSS scores, and more."
-  - content: "What does Defender for Databases in Microsoft Defender for Cloud provide?"
-    choices:
-    - content: "Protection for only Azure SQL databases"
-      isCorrect: false
-      explanation: "Incorrect. Defender for Databases provides protection for multiple types of databases."
-    - content: "Protection for only open source relational databases"
-      isCorrect: false
-      explanation: "Incorrect. Defender for Databases provides protection for multiple types of databases."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
-      isCorrect: true
-      explanation: "Correct. Defender for Databases allows you to protect your entire database estate with attack detection and threat response for the most popular database types in Azure, including Microsoft Defender for Azure SQL databases, Microsoft Defender for SQL servers on machines, Microsoft Defender for open source relational databases, and Microsoft Defender for Azure Cosmos DB."
-  - content: "What does Microsoft Defender for Cloud offer?"
-    choices:
-    - content: "A range of advanced, intelligent protections for your workloads"
-      isCorrect: false
-      explanation: "Incorrect. This is only one of the features offered by Microsoft Defender for Cloud."
-    - content: "A tool to manage your cloud resources"
-      isCorrect: false
-      explanation: "Incorrect. While Microsoft Defender for Cloud does provide some management capabilities, this is not its primary function."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
-      isCorrect: true
-      explanation: "Correct. Microsoft Defender for Cloud offers security alerts powered by Microsoft Threat Intelligence, as well as advanced threat protection capabilities for various types of resources in your subscriptions. However, its primary function is to enable automation and validation of environment creation and teardown for secure and stable application hosting platforms."
   - content: "What does Defender for Cloud use to identify threats?"
     choices:
     - content: "Behavioral analytics that depends on known patterns derived from large data sets"
@@ -69,3 +47,25 @@ quiz:
     - content: "Anomaly detection"
       isCorrect: true
       explanation: "Correct. Anomaly detection is used to identify threats by determining normal activity for your deployments and then generating rules to define outlier conditions that could represent a security event."
+  - content: "A security analyst needs to view vulnerability assessment findings for a specific virtual machine. What steps should they follow in Defender for Cloud?"
+    choices:
+    - content: "Open the Recommendations page and select the recommendation 'Machines should have all security issues resolved'."
+      isCorrect: false
+      explanation: "Incorrect. This recommendation shows all security issues for all VMs in the selected subscriptions, not just for a specific VM."
+    - content: "Create a disable rule for the specific finding."
+      isCorrect: false
+      explanation: "Incorrect. Creating a disable rule is an optional step if the organization needs to ignore a finding, rather than remediate it."
+    - content: "Open the Recommendations page, select the recommendation 'Machines should have vulnerability findings resolved', and filter the findings by the specific VM of interest."
+      isCorrect: true
+      explanation: "Correct. This will show the findings for the specific VM, ordered by severity. The details pane for each finding contains extensive information about the vulnerability, including links to relevant CVEs, remediation steps, and any additional reference pages."
+  - content: "A security analyst needs to prioritize alerts in Defender for Cloud. How are alerts classified?"
+    choices:
+    - content: "Alerts are classified based on the resource type they are triggered on."
+      isCorrect: false
+      explanation: "Incorrect. Defender for Cloud classifies alerts based on severity, not resource type."
+    - content: "Alerts are classified based on the time they were triggered."
+      isCorrect: false
+      explanation: "Incorrect. Defender for Cloud classifies alerts based on severity, not time."
+    - content: "Alerts are classified based on severity, which is determined by the specific trigger and the confidence level of malicious intent."
+      isCorrect: true
+      explanation: "Correct. Defender for Cloud assigns a severity level to each alert based on the specific trigger and the confidence level of malicious intent. This helps prioritize how to attend to each alert."
