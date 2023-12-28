@@ -4,11 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/27/2023
+  ms.date: 12/28/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/11-knowledge-check.md)]
 quiz:
@@ -58,14 +58,14 @@ quiz:
     - content: "Provides developers and testers a self-service sandbox environment to quickly create and deploy environments for testing and experimentation."
       isCorrect: true
       explanation: "Correct. Azure DevTest Labs is a service that provides developers and testers a self-service sandbox environment to quickly create and deploy environments for testing and experimentation."
-  - content: "What is the advantage of using managed mode over standard Identity assignment on the virtual machine scale set of a node pool in AKS?"
+  - content: "A DevOps engineer needs to enable automation and validation of the creation and teardown of environments to deliver secure and stable application hosting platforms. Which Azure service can be used for this purpose?"
     choices:
-    - content: "Managed mode requires write permissions on the virtual machine scale set used by the AKS cluster and Managed Identity Operator permission on the user assigned managed identities."
+    - content: "Azure Logic Apps"
       isCorrect: false
-      explanation: "Incorrect. This is a requirement for standard mode, not an advantage of managed mode."
-    - content: "Managed mode takes longer to assign the identity to the virtual machine scale set of the node pool."
+      explanation: "Incorrect. Azure Logic Apps is a cloud-based service that provides a way to schedule, automate, and orchestrate tasks, business processes, and workflows when you need to integrate apps, data, systems, and services across enterprises or organizations."
+    - content: "Azure Functions"
       isCorrect: false
-      explanation: "Incorrect. The opposite is true. Managed mode has the identity pre-assigned, while standard mode can take up to 40-60 seconds to assign the identity."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      explanation: "Incorrect. Azure Functions is a serverless compute service that enables developers to run event-triggered code without having to explicitly provision or manage infrastructure."
+    - content: "Azure Resource Manager (ARM)"
       isCorrect: true
-      explanation: "Correct. Managed mode allows for pre-assigned identities, which enables automation and validation of environment creation and teardown, leading to more secure and stable application hosting platforms."
+      explanation: "Correct. Azure Resource Manager (ARM) enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."

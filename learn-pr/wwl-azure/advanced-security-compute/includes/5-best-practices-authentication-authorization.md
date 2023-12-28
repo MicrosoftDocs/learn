@@ -34,20 +34,6 @@ In Kubernetes, you provide granular access control to cluster resources. You def
 
 When `developer1@contoso.com` is authenticated against the AKS cluster, they have full permissions to resources in the finance-app namespace. In this way, you logically separate and control access to resources. Use Kubernetes RBAC with Microsoft Entra ID-integration.
 
-For example, you create a role with full access to resources in the namespace named finance-app, as shown in the following example YAML manifest:
-
-| YAML                                                                                                                                                                                     |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `kind: Role``apiVersion: rbac.authorization.k8s.io/v1``metadata:``name: finance-app-full-access-role``namespace: finance-app``rules:``- apiGroups: [""]``resources: ["*"]``verbs: ["*"]` |
-
-You then create a RoleBinding and bind the Microsoft Entra user developer1@contoso.com to it, as shown in the following YAML manifest:
-
-| YAML                                                                                                                                                                                                                                                                                                                                    |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `kind: RoleBinding``apiVersion: rbac.authorization.k8s.io/v1``metadata:``name: finance-app-full-access-role-binding``namespace: finance-app``subjects:``- kind: User``name: developer1@contoso.com``apiGroup: rbac.authorization.k8s.io``roleRef:``kind: Role``name: finance-app-full-access-role``apiGroup: rbac.authorization.k8s.io` |
-
-When `developer1@contoso.com` is authenticated against the AKS cluster, they have full permissions to resources in the finance-app namespace. In this way, you logically separate and control access to resources. Use Kubernetes RBAC with Microsoft Entra ID-integration.
-
 ## Use Azure RBAC
 
 **Best practice guidance**: Use Azure RBAC to define the minimum required user and group permissions to AKS resources in one or more subscriptions.

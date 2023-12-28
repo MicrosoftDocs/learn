@@ -57,20 +57,3 @@ The ability to sign images, usually assigned to an automated process, which woul
 ## Custom roles
 
 As with other Azure resources, you can create custom roles with fine-grained permissions to Azure Container Registry. Then assign the custom roles to users, service principals, or other identities that need to interact with a registry.<br>
-
-To determine which permissions to apply to a custom role, see the list of Microsoft.ContainerRegistry actions, review the permitted actions of the built-in ACR roles, or run the following command:<br>
-
-| **Azure Command Line Interface**                                     |
-| -------------------------------------------------------------------- |
-| `az provider operation show --namespace Microsoft.ContainerRegistry` |
-
-> [!NOTE]
-> In tenants configured with Azure Resource Manager private link, Azure Container Registry supports wildcard actions such as Microsoft.ContainerRegistry/\*/read or Microsoft.ContainerRegistry/registries/\*/write in custom roles, granting access to all matching actions. In a tenant without an Azure Resource Manager private link, specify all required registry actions individually in a custom role.
-
-## Example: Custom role to import images
-
-For example, the following JavaScript Object Notation (JSON) defines the minimum actions for a custom role that permits importing images to a registry.
-
-| **JavaScript Object Notation**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `{``"assignableScopes": [``"/subscriptions/<optional, but you can limit the visibility to one or more subscriptions>"``],``"description": "Can import images to registry",``"Name": "AcrImport",``"permissions": [``{``"actions": [``"Microsoft.ContainerRegistry/registries/push/write",``"Microsoft.ContainerRegistry/registries/pull/read",``"Microsoft.ContainerRegistry/registries/read",``"Microsoft.ContainerRegistry/registries/importImage/action"``],``"dataActions": [],``"notActions": [],``"notDataActions": []``}``],``"roleType": "CustomRole"``}` |
