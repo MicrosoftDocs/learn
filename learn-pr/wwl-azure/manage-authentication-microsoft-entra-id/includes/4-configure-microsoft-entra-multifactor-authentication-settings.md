@@ -12,9 +12,6 @@ The following Microsoft Entra multifactor authentication settings are available 
 | Phone call settings              | Configure settings related to phone calls and greetings for cloud and on-premises environments.                                                                                                                                                                                       |
 | Providers                        | This will show any existing authentication providers that you've associated with your account. Adding new providers is disabled as of September 1, 2018.                                                                                                                              |
 
-:::image type="content" source="../media/new-multifactor-authentication-settings-portal-00fc7718.png" alt-text="Screenshot showing the multifactor authentication settings portal.":::
-
-
 ## Account lockout (Microsoft Entra multifactor authentication Server only)
 
 > [!NOTE]
@@ -34,14 +31,11 @@ To configure account lockout settings, complete these steps:
 2.  Go to **Microsoft Entra ID**, **Security**, **Multifactor authentication**, **Account lockout**.
 3.  Enter the values for your environment, and then **select Save**.
 
-:::image type="content" source="../media/account-lockout-settings-fd2ee95a.png" alt-text="Screenshot showing a Multi-Authentication Account lockout example.":::
-
-
 ## Block and unblock users
 
 If a user's device is lost or stolen, you can block Microsoft Entra multifactor authentication attempts for the associated account. Any Microsoft Entra multifactor authentication attempts for blocked users are automatically denied. Users **remain blocked for 90 days from the time that they're blocked**.
 
-**Block a user**<br>
+**Block a user**
 
 To block a user, complete the following steps.
 
@@ -95,9 +89,6 @@ If Fraud Alert is enabled with Automatic Blocking and Report Suspicious Activity
 
 You can configureMicrosoft Entra IDto send email notifications when users report fraud alerts. These notifications are typically sent to identity administrators because the user's account credentials are likely compromised. The following example shows what a fraud alert notification email looks like:
 
-:::image type="content" source="../media/multifactor-authentication-fraud-alert-email-a2197419.png" alt-text="Screenshot showing a multifactor authentication fraud alert example.":::
-
-
 ## OATH tokens
 
 Microsoft Entra ID supports the use of **OATH TOTP (Time-based One Time Password)** SHA-1 tokens that refresh codes every **30** or **60** seconds. You can purchase these tokens from the vendor of your choice.
@@ -106,10 +97,7 @@ OATH TOTP hardware tokens typically come with a secret key, or seed, pre-program
 
 Programmable OATH TOTP hardware tokens that can be reseeded can also be set up with Microsoft Entra ID in the software token setup flow.<br>
 
-OATH hardware tokens are supported as part of a public preview.<br>
-
-:::image type="content" source="../media/multifactor-authentication-oath-tokens-6b5b9523.png" alt-text="Screenshot showing the multifactor authentication Oath tokens page.":::
-
+OATH hardware tokens are supported as part of a public preview.
 
 After you acquire tokens, you need to upload them in a comma-separated values (CSV) file format. Include the **User Principal Name (UPN)**, **serial number**, **secret key**, **time interval**, **manufacturer**, and **model**.
 

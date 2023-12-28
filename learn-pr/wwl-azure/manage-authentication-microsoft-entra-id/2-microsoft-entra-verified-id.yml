@@ -4,10 +4,10 @@ title: Introduction to Microsoft Entra Verified ID
 metadata:
   title: Introduction to Microsoft Entra Verified ID
   description: "Introduction to Microsoft Entra Verified ID"
-  ms.date: 12/26/2023
+  ms.date: 12/28/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/2-microsoft-entra-verified-id.md)]
