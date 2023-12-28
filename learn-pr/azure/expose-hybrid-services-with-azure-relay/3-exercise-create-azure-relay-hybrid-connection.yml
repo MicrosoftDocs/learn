@@ -6,8 +6,7 @@ metadata:
   ms.date: 04/04/2023
   author: spelluru
   ms.author: spelluru
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Create an Azure Relay hybrid connection
 durationInMinutes: 10
 azureSandbox: true

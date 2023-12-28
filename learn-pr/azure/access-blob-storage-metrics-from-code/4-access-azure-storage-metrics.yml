@@ -7,10 +7,9 @@ metadata:
   ms.date: 10/23/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-dotnet
-  ms.prod: learning-azure
 durationInMinutes: 7
 content: |
   [!include[](includes/4-access-azure-storage-metrics.md)]

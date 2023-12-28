@@ -1,5 +1,5 @@
 
-[Azure Migrate and Modernize (formerly known as Azure Migration and Modernization program) and Azure Innovate](https://azure.microsoft.com/solutions/migration/migrate-modernize-innovate/) are two new offerings to help you simplify your journey to cloud. Both offerings provide proactive guidance and the right mix of expert help at every stage of your cloud journey.
+[Azure Migrate and Modernize (formerly known as Azure Migration and Modernization program) and Azure Innovate](https://aka.ms/azureheroofferings) are two new offerings to help you simplify your journey to cloud. Both offerings provide proactive guidance and the right mix of expert help at every stage of your cloud journey.
 
 Azure Migrate and Modernize will help you migrate and modernize applications, infrastructure, and database to the cloud. Azure Innovate is a new offering designed to help you with your advanced innovation needs such as infusing AI into your apps and experiences, advanced analytics, and building custom cloud native application.
  

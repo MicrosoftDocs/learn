@@ -6,7 +6,7 @@ metadata:
   ms.date: 12/27/2023
   author: SoniaLopezBravo
   ms.author: sonialopez
-  ms.topic: tutorial
+  ms.topic: module
   ms.service: azure-quantum
   ms.subservice: qdk
 title: Create your first Q# program by using the Quantum Development Kit

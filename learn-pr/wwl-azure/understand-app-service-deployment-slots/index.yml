@@ -6,7 +6,7 @@ metadata:
   ms.date: 04/24/2023
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: app-service 
   ms.subservice: web-apps
 title: Explore Azure App Service deployment slots

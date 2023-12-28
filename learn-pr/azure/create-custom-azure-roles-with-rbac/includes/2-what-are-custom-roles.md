@@ -16,7 +16,7 @@ Azure roles | Microsoft Entra roles
 | --- | --- |
 | Manage access to Azure resources like VMs, storage, networks, and more | Manage access to Microsoft Entra resources like user accounts and passwords|
 |Multiple scope levels (management group, subscription, resource group, resource) | Scope only at tenant level|
-|Role information accessible through Azure portal, Azure CLI, Azure PowerShell, Azure Resource Manager templates, REST API | Role information accessible in Azure admin portal, Microsoft 365 admin center, Microsoft Graph, Azure AD PowerShell|
+|Role information accessible through Azure portal, Azure CLI, Azure PowerShell, Azure Resource Manager templates, REST API | Role information accessible in Azure admin portal, Microsoft 365 admin center, Microsoft Graph, [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview)|
 
 For our scenario, we need a custom role to manage Azure VMs at the subscription scope, so we need to use custom roles in Azure RBAC.
 

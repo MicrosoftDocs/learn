@@ -11,5 +11,6 @@ Your ability to implement features of this console minigame application based on
 
 To continue learning, you can explore new Python learning resources on Microsoft Learn:
 
-- [Build real world applications with Python](/learn/paths/python-language/?WT.mc_id=academic-105496-cyzanon)
-- [Host a web application with Azure App Service](/training/modules/host-a-web-app-with-azure-app-service/?WT.mc_id=academic-105496-cyzanon)
+- [Using GitHub Copilot with JavaScript](https://learn.microsoft.com/training/modules/introduction-copilot-javascript/?WT.mc_id=academic-109090-cyzanon)
+- [Using GitHub Copilot with Python](https://learn.microsoft.com/training/modules/introduction-copilot-python/?WT.mc_id=academic-109090-cyzanon)
+- [Challenge project - Add image analysis and generation capabilities to your application](https://learn.microsoft.com/training/modules/challenge-project-add-image-analysis-generation-to-app/?WT.mc_id=academic-109090-cyzanon)

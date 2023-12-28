@@ -8,8 +8,7 @@ metadata:
   ms.date: 4/13/2022
   author: lapate
   ms.author: lapate
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[Introduction](includes/1-introduction.md)]

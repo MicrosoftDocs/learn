@@ -3,8 +3,6 @@ Microsoft Entra ID is Microsoft’s cloud-based identity and access management s
  -  External resources, such as Microsoft 365, the Azure portal, and thousands of other SaaS applications.
  -  Internal resources, such as apps on your corporate network and intranet, along with any cloud apps developed by your own organization.
 
-<a name='who-uses-azure-ad'></a>
-
 ## Who uses Microsoft Entra ID?
 
 Microsoft Entra ID is intended for:
@@ -15,51 +13,45 @@ Microsoft Entra ID is intended for:
 
 In Microsoft Entra ID, if one of your users needs permission to manage Microsoft Entra resources, you must assign them to a role that provides the permissions they need.
 
-If you're new to Azure, you may find it a little challenging to understand all the different roles in Azure. The following section helps explain the following roles and provides additional information on Azure roles and Microsoft Entra roles:
+If you're new to Azure, you might find it a little challenging to understand all the different roles in Azure. The following section helps explain the following roles and provides additional information on Azure roles and Microsoft Entra roles:
 
  -  Classic subscription administrator roles
  -  Azure roles
  -  Microsoft Entra roles
 
-<a name='azure-ad-roles'></a>
-
 ## Microsoft Entra roles
 
 Microsoft Entra roles are used to manage Microsoft Entra resources in a directory. Actions such as create or edit users are the most common. However, the need to assign administrative roles to others, reset user passwords, manage user licenses, and manage domains are common. The following table describes a few of the more important Microsoft Entra roles.
 
-| **Microsoft Entra role**     | **Permissions**                                                                                                              | **Notes**                                                                                             |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| Global Administrator  | Manage access to all administrative features in Microsoft Entra ID, and services that federate to Microsoft Entra ID | The person who signs up for the Microsoft Entra tenant becomes the first Global Administrator. |
-|                       | Assign administrator roles to others                                                                                         |                                                                                                       |
-|                       | Reset the password for any user and all other administrators                                                                 |                                                                                                       |
-| User Administrator    | Create and manage all aspects of users and groups                                                                            |                                                                                                       |
-|                       | Manage support tickets                                                                                                       |                                                                                                       |
-|                       | Monitor service health                                                                                                       |                                                                                                       |
-|                       | Change passwords for users, Helpdesk administrators, and other User Administrators                                           |                                                                                                       |
-| Billing Administrator | Make purchases                                                                                                               |                                                                                                       |
-|                       | Manage subscriptions                                                                                                         |                                                                                                       |
-|                       | Manage support tickets                                                                                                       |                                                                                                       |
-|                       | Monitors service health                                                                                                      |                                                                                                       |
+| **Microsoft Entra role** | **Permissions**                                                                                                      | **Notes**                                                                                      |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Global Administrator     | Manage access to all administrative features in Microsoft Entra ID, and services that federate to Microsoft Entra ID | The person who signs up for the Microsoft Entra tenant becomes the first Global Administrator. |
+|                          | Assign administrator roles to others                                                                                 |                                                                                                |
+|                          | Reset the password for any user and all other administrators                                                         |                                                                                                |
+| User Administrator       | Create and manage all aspects of users and groups                                                                    |                                                                                                |
+|                          | Manage support tickets                                                                                               |                                                                                                |
+|                          | Monitor service health                                                                                               |                                                                                                |
+|                          | Change passwords for users, Helpdesk administrators, and other User Administrators                                   |                                                                                                |
+| Billing Administrator    | Make purchases                                                                                                       |                                                                                                |
+|                          | Manage subscriptions                                                                                                 |                                                                                                |
+|                          | Manage support tickets                                                                                               |                                                                                                |
+|                          | Monitors service health                                                                                              |                                                                                                |
 
 In the Azure portal, you can see the list of Microsoft Entra roles on the **Roles and administrators** screen.
 
 :::image type="content" source="../media/directory-admin-roles-2034be7e.png" alt-text="Screenshot of the Microsoft Entra roles on the Roles and administrators window in Microsoft Entra ID manage menu of the Azure portal.":::
 
 
-<a name='differences-between-azure-roles-and-azure-ad-roles'></a>
-
 ## Differences between Azure roles and Microsoft Entra roles
 
 At a high level, Azure roles control permissions to manage Azure resources, while Microsoft Entra roles control permissions to manage Microsoft Entra resources. The following table compares some of the differences.
 
-| **Azure roles**                                                                                                           | **Microsoft Entra roles**                                                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Manage access to Azure resources                                                                                          | Manage access to Microsoft Entra resources                                                                                      |
-| Supports custom roles                                                                                                     | Supports custom roles                                                                                                    |
-| Scope can be specified at multiple levels (management group, subscription, resource group, resource)                      | Scope is at the tenant level or can be applied to an Administrative Unit                                                 |
-| Role information can be accessed in Azure portal, Azure CLI, Azure PowerShell, Azure Resource Manager templates, REST API | Role information can be accessed in Azure admin portal, Microsoft 365 admin center, Microsoft Graph, Azure AD PowerShell |
-
-<a name='do-azure-roles-and-azure-ad-roles-overlap'></a>
+| **Azure roles**                                                                                                           | **Microsoft Entra roles**                                                                                           |
+| ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Manage access to Azure resources                                                                                          | Manage access to Microsoft Entra resources                                                                          |
+| Supports custom roles                                                                                                     | Supports custom roles                                                                                               |
+| Scope can be specified at multiple levels (management group, subscription, resource group, resource)                      | Scope is at the tenant level or can be applied to an Administrative Unit                                            |
+| Role information can be accessed in Azure portal, Azure CLI, Azure PowerShell, Azure Resource Manager templates, REST API | Role information can be accessed in Azure admin portal, Microsoft 365 admin center, Microsoft Graph, and PowerShell |
 
 ### Do Azure roles and Microsoft Entra roles overlap?
 
@@ -67,7 +59,7 @@ By default, Azure roles and Microsoft Entra roles don't span Azure and Microsoft
 
 Several Microsoft Entra roles span Microsoft Entra ID and Microsoft 365, such as the Global Administrator and User Administrator roles. For example, if you're a member of the Global Administrator role, you have global administrator capabilities in Microsoft Entra ID and Microsoft 365, such as making changes to Microsoft Exchange and Microsoft SharePoint. However, by default, the Global Administrator doesn't have access to Azure resources.
 
-:::image type="content" source="../media/azure-office-roles-567e92bc.png" alt-text="Diagram of relationship of Azure roles to Microsoft Entra roles. Azure roles accessed in Azure tenant.  Microsoft Entra roles also accessed from Microsoft 365.":::
+:::image type="content" source="../media/azure-office-roles-567e92bc.png" alt-text="Diagram of relationship of Azure roles to Microsoft Entra roles. Azure roles accessed in Azure tenant.  Microsoft Entra roles also accessed from Microsoft Entra ID and Microsoft 365.":::
 
 
 ## Assign roles
@@ -96,18 +88,16 @@ The best method for your configuration needs can be used, but care must be taken
 A common way to assign Microsoft Entra roles to a user is on the Assigned roles page for a user. You can also configure the user eligibility to be elevated just-in-time into a role using **Privileged Identity Management (PIM)**.
 
 > [!NOTE]
-> If you have a Microsoft Entra ID P2 license plan and already use PIM, all role management tasks are performed in the Privileged Identity Management experience. This feature is currently limited to assigning only one role at a time. You can't currently select multiple roles and assign them to a user all at once.
+> If you have an Microsoft Entra ID Premium P2 license plan and already use PIM, all role management tasks are performed in the Privileged Identity Management experience. This feature is currently limited to assigning only one role at a time. You can't currently select multiple roles and assign them to a user all at once.
 
 :::image type="content" source="../media/privileged-identity-management-manages-roles-b4ad541b.png" alt-text="Screenshot of Privileged Identity Manager for users assigned Global Admin and have a Premium P2 license.":::
 
-
-<a name='create-and-assign-a-custom-role-in-azure-active-directory'></a>
 
 ## Create and assign a custom role in Microsoft Entra ID
 
 This section describes how to create new custom roles in Microsoft Entra ID. For the basics of custom roles, see the [custom roles overview](/azure/active-directory/roles/custom-overview). The role can be assigned either at the directory-level scope or an app registration resource scope only.
 
-Custom roles can be created in the [Roles and administrators](https://portal.azure.com/) tab on the Microsoft Entra overview page.
+Custom roles can be created in the [Roles and administrators](https://portal.azure.com/) tab on the Microsoft Entra ID overview page.
 
 1.  Select **Microsoft Entra ID** \- **Roles and administrators** \- **New custom role**.
     

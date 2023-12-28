@@ -7,8 +7,7 @@ metadata:
   ms.date: 11/01/2021
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-authentication.md)]

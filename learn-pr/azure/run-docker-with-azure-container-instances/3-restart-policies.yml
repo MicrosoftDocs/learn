@@ -6,8 +6,7 @@ metadata:
   ms.date: 04/28/2022
   author: v-tcassi
   ms.author: tomcassidy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Control restart behavior
 durationInMinutes: 6
 content: |

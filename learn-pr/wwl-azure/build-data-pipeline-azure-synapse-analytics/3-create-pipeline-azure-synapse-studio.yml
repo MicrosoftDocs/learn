@@ -7,8 +7,7 @@ metadata:
   ms.date: 10/06/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.service: synapse-analytics
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/3-create-pipeline-azure-synapse-studio.md)]

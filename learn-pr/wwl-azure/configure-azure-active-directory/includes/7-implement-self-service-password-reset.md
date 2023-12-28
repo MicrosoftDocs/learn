@@ -1,7 +1,5 @@
 Many helpdesk calls are requests to reset passwords for users. The Microsoft Entra **self-service password reset** (SSPR) feature lets you give users the ability to bypass helpdesk and reset their own passwords.
 
-<a name='things-to-know-about-the-azure-ad-sspr-feature'></a>
-
 ### Things to know about the Microsoft Entra SSPR feature
 
 Examine the following characteristics and requirements of the SSPR feature:
@@ -33,3 +31,4 @@ Your organization wants to implement support for SSPR in their management soluti
    - You can configure how many correctly answered security questions are required for a successful password reset.
 
 - **Consider combining methods for stronger security**. Security questions can be less secure than other authentication methods. Some users might know the answers for a particular user's questions, or the questions might be easy to solve. If you support security questions, combine this option with other authentication methods.
+

@@ -35,6 +35,7 @@ modules:
 - learn.wwl.classify-images
 - learn.wwl.detect-objects-images
 - learn.wwl.detect-analyze-recognize-faces
+- learn.wwl.read-text-images-documents-with-computer-vision-service
 - learn.wwl.analyze-video
 trophy:
   uid: learn.wwl.create-computer-vision-solutions-azure-ai.trophy

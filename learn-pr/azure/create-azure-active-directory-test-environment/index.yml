@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/24/2023
   author: rwike77
   ms.author: ryanwi
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: active-directory
 title: Set up a test environment for application testing in Microsoft Entra ID
 summary: Evaluate whether you need a dedicated test tenant for your application test environment. Create a test tenant in Microsoft Entra ID for use in a continuous integration/continuous deployment (CI/CD) pipeline or for testing applications.

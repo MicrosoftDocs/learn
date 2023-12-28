@@ -8,8 +8,7 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/5-test-db-operations.md)]

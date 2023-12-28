@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/17/2023
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: cosmos-db
   ms.subservice: nosql
 title: Implement backup and restore for Azure Cosmos DB for NoSQL
