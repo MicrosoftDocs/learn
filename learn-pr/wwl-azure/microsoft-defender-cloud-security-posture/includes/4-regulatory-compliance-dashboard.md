@@ -23,7 +23,7 @@ The dashboard provides you with an overview of your compliance status and the se
 
 You can use the information in the regulatory compliance dashboard to investigate any issues that might be affecting your compliance posture.
 
-### To investigate your compliance issues:<br>
+### To investigate your compliance issues:
 
 1. Sign in to the Azure portal.<br>
 
@@ -50,11 +50,11 @@ You can use the information in the regulatory compliance dashboard to investigat
 > [!NOTE]
 > *Assessments run approximately every 12 hours, so you will see the impact on your compliance data only after the next run of the relevant assessment.*
 
-## Remediate an automated assessment<br>
+## Remediate an automated assessment
 
 The regulatory compliance has both automated and manual assessments that might need to be remediated. Using the information in the regulatory compliance dashboard, improve your compliance posture by resolving recommendations directly within the dashboard.
 
-### To remediate an automated assessment:<br>
+### To remediate an automated assessment:
 
 1. Sign in to the Azure portal.<br>
 
@@ -82,7 +82,7 @@ The regulatory compliance has both automated and manual assessments that might n
 
 The regulatory compliance has automated and manual assessments that might need to be remediated. Manual assessments are assessments that require input from the customer to remediate them.
 
-### To remediate a manual assessment:<br>
+### To remediate a manual assessment:
 
 1. Sign in to the Azure portal.<br>
 
