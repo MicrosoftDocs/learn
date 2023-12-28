@@ -12,22 +12,13 @@ Custom roles can be created in the Roles and administrators page of the Microsof
 
 3. Select **New custom role**.
 
-:::image type="content" source="../media/new-microsoft-entra-admin-center-ca574a30.png" alt-text="Screenshot showing how to create a role in the Microsoft Entra administration center.":::
+4. On the **Basics** tab, provide a name and description for the role and then click **Next**.<br>
 
-
-4. On the **Basics** tab, provide a name and description for the role and then click **Next**.
-
-:::image type="content" source="../media/new-custom-role-name-description-tab-07511526.png" alt-text="Screenshot showing the new custom role basics page.":::
-
-
-5. On the Permissions tab, select the permissions necessary to manage basic properties and credential properties of app registrations.
+5. On the Permissions tab, select the permissions necessary to manage basic properties and credential properties of app registrations.<br>
 
 6. First, enter "credentials" in the search bar and select the `microsoft.directory/applications/credentials/update permission`.
 
-:::image type="content" source="../media/new-custom-role-permissions-tab-a68d25de.png" alt-text="Screenshot showing the new custom role permissions page.":::
-
-
-7. Next, enter "**basic**" in the search bar, select the **`microsoft.directory/applications/basic/update permission`**, and then click **Next**.
+7. Next, enter "**basic**" in the search bar, select the **`microsoft.directory/applications/basic/update permission`**, and then click **Next**.<br>
 
 8. On the **Review** \+ **create** tab, review the permissions and select Create.<br>
 
@@ -43,10 +34,7 @@ Like built-in roles, custom roles are assigned by default at the default organiz
 
 3. Select the app registration to which you are granting access to manage. You might have to select **All applications** to see the complete list of app registrations in your Microsoft Entra organization.
 
-:::image type="content" source="../media/new-application-registrations-page-9320e815.png" alt-text="Screenshot showing the applications registration page.":::
-
-
-4. In the app registration, select **Roles and administrators**. If you haven't already created one, instructions are in the preceding procedure.
+4. In the app registration, select **Roles and administrators**. If you haven't already created one, instructions are in the preceding procedure.<br>
 
 5. Select the role to open the **Assignments** page.<br>
 

@@ -12,9 +12,6 @@ Privileged Identity Management provides time-based and approval-based role activ
 
 Once you set up Privileged Identity Management, you'll see Tasks, Manage, and Activity options in the left navigation menu. As an administrator, you can choose between options such as managing Microsoft Entra roles, managing Azure resource roles, or PIM for Groups. When you choose what you want to manage, you see the appropriate set of options for that option.
 
-:::image type="content" source="../media/new-privileged-identity-management-dashboard-521f7e73.png" alt-text="Screenshot showing the Privileged Identity Management dashboard.":::
-
-
 For Microsoft Entra roles in Privileged Identity Management, only a user who is in the Privileged Role Administrator or Global Administrator role can manage assignments for other administrators. Global Administrators, Security Administrators, Global Readers, and Security Readers can also view assignments to Microsoft Entra roles in Privileged Identity Management.<br>
 
 For Azure resource roles in Privileged Identity Management, only a subscription administrator, a resource Owner, or a resource User Access administrator can manage assignments for other administrators. Users who are Privileged Role Administrators, Security Administrators, or Security Readers don't by default have access to view assignments to Azure resource roles in Privileged Identity Management.<br>
@@ -41,9 +38,6 @@ PIM keeps you informed by sending you and other participants email notifications
 
 The following screenshot shows an email message sent by PIM. The email informs Patti that Alex updated a role assignment for Emily.<br>
 
-:::image type="content" source="../media/new-role-assignment-review-f61019c6.png" alt-text="Screenshot showing a storage blob data reader assignment.":::
-
-
 ## Assign<br>
 
 The assignment process starts by assigning roles to members. To grant access to a resource, the administrator assigns roles to users, groups, service principals, or managed identities. The assignment includes the following data:
@@ -57,19 +51,13 @@ The assignment process starts by assigning roles to members. To grant access to 
 
 The following screenshot shows how administrator assigns a role to members.
 
-:::image type="content" source="../media/new-add-assignments-page-d0e8ade1.png" alt-text="Screenshot showing how to add assignment types for eligible and active Azure resources.":::
-
-
-## Activate
+## Activate<br>
 
 If users have been made eligible for a role, then they must activate the role assignment before using the role. To activate the role, users select specific activation duration within the maximum (configured by administrators), and the reason for the activation request.
 
 The following screenshot shows how members activate their role to a limited time.
 
-:::image type="content" source="../media/new-activate-page-e893a188.png" alt-text="Screenshot showing how members activate their role to a limited time.":::
-
-
-If the role requires approval to activate, a notification appears in the upper right corner of the user's browser informing them the request is pending approval. If an approval isn't required, the member can start using the role.
+If the role requires approval to activate, a notification appears in the upper right corner of the user's browser informing them the request is pending approval. If an approval isn't required, the member can start using the role.<br>
 
 ## Approve or deny
 
