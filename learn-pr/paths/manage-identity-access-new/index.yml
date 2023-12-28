@@ -1,0 +1,30 @@
+### YamlMime:LearningPath
+uid: learn.wwl.manage-identity-access-new
+metadata:
+  title: Manage identity and access
+  description: Manage identity and access
+  ms.date: 12/28/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: learning-path
+  ms.prod: learning-azure
+title: Manage identity and access
+prerequisites: |
+  - None
+summary: |
+  Master identity and access management in Microsoft Entra ID, securing users, groups, and external identities, implementing authentication and authorization controls, and managing application access and security.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- azure
+- entra-verified-id
+- entra-id
+subjects:
+- identity-access
+modules:
+- learn.wwl.manage-identities-microsoft-entra-id
+trophy:
+  uid: learn.wwl.manage-identity-access-new.trophy
