@@ -28,7 +28,7 @@ If you already know the template you want to use or you have saved templates in 
 
 ### Run templates from command line
 
-Given a template's URl, you can execute it with Azure PowerShell. For example, you could run the disk encryption template with the following PowerShell command:
+Given a template's URL, you can execute it with Azure PowerShell. For example, you could run the disk encryption template with the following PowerShell command:
 
 ```powershell
 New-AzResourceGroupDeployment `
