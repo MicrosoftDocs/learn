@@ -3,12 +3,11 @@ uid: learn.languages.csharp-convert-cast
 metadata:
   title: Convert data types using casting and conversion techniques in C#
   description: "Convert data types using casting and conversion techniques in C# to take control of the data in your applications. Learn to apply the correct technique to change data types."
-  ms.date: 10/19/2023
+  ms.date: 12/29/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.custom:
-  - N/A
+  ms.topic: module
+  ms.prod: azure
   ms.devlang: csharp
 title: Convert data types using casting and conversion techniques in C#
 summary: Take control of the data in your applications, knowing when to apply the correct technique to change data types as needed.

@@ -4,12 +4,10 @@ title: Exercise - Complete a challenge to combine string array values as strings
 metadata:
   title: Exercise - Complete a challenge to combine string array values as strings and as integers
   description: "Exercise - Complete a challenge to combine string array values as strings and as integers"
-  ms.date: 10/19/2023
+  ms.date: 12/29/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.custom:
-  - N/A
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/4-challenge.md)]
