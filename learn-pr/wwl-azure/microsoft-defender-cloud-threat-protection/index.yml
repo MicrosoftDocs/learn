@@ -3,7 +3,7 @@ uid: learn.wwl.microsoft-defender-cloud-threat-protection
 metadata:
   title: Configure and manage threat protection by using Microsoft Defender for Cloud
   description: "This module focuses on configuring and managing security monitoring and automation solutions using Azure Monitor and Microsoft Sentinel, enabling organizations to proactively identify and respond to security incidents in their cloud environment."
-  ms.date: 12/28/2023
+  ms.date: 12/29/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
@@ -16,7 +16,8 @@ abstract: |
   - Aggregate diverse security data efficiently with data connectors in Microsoft Sentinel.
   - Detect threats using customized analytics rules in Microsoft Sentinel.
   - Assess and automate incident responses in Microsoft Sentinel for enhanced security management.
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
