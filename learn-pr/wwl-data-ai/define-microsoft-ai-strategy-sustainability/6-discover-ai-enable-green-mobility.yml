@@ -4,11 +4,10 @@ title: Discover how Microsoft AI enables green mobility – A Stadtwerke Münche
 metadata:
   title: Discover how Microsoft AI enables green mobility – A Stadtwerke München success story
   description: "Discover how Microsoft AI enables green mobility – A Stadtwerke München success story"
-  ms.date: 11/28/2023
+  ms.date: 12/29/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-  ms.service: azure-ai-services
 durationInMinutes: 3
 content: |
   [!include[](includes/6-discover-ai-enable-green-mobility.md)]
