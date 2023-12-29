@@ -169,7 +169,7 @@ The nodes in a spot node pool are assigned a taint that equals `kubernetes.azure
     -f spot-node-deployment.yaml
     ```
 
-  Here's the output from the preceding command:
+      Here's the output from the preceding command:
 
     ```output
     pod/nginx created
