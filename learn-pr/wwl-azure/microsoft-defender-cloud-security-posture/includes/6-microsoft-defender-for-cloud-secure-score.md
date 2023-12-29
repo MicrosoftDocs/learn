@@ -40,8 +40,8 @@ Defender for Cloud uses **Azure role-based access control (Azure RBAC)**, which 
 
 There are two specific roles for Defender for Cloud:
 
-1.  **Security Administrator**: Has the same view rights as security reader. Can also update the security policy and dismiss alerts.
-2.  **Security reader**: Has rights to view Defender for Cloud items such as recommendations, alerts, policy, and health. Can't make changes.
+ -  **Security Administrator**: Has the same view rights as security reader. Can also update the security policy and dismiss alerts.
+ -  **Security reader**: Has rights to view Defender for Cloud items such as recommendations, alerts, policy, and health. Can't make changes.
 
 :::image type="content" source="../media/view-edit-security-policies-17d2ecb9.png" alt-text="Diagram showing which security role can view, update, and dismiss alerts.":::
 

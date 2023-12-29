@@ -2,8 +2,8 @@
 
 Microsoft Defender for Cloud has **two** main goals:
 
-1.  To help you **understand** your current security situation
-2.  To help you **efficiently** and **effectively** improve your security
+ -  To help you **understand** your current security situation
+ -  To help you **efficiently** and **effectively** improve your security
 
 The central feature in Defender for Cloud that enables you to achieve those goals is the secure score.
 
