@@ -28,5 +28,6 @@ subjects:
 - cloud-security
 modules:
 - learn.wwl.governance-security
+- learn.wwl.security-monitoring-automation-solutions
 trophy:
   uid: learn.wwl.manage-security-operations-new.trophy
