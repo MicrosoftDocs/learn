@@ -24,7 +24,7 @@ You're going to use a template that Microsoft published on GitHub that's specifi
     | Template source | Quickstart template |
     | Quickstart template (disclaimer) | Select the field, then enter *decrypt-running-windows-vm-without-aad* and select the **decrypt-running-windows-vm-without-aad** template |
 
-    :::image type="content" source="../media/6-custom-deployment.png" alt-text="Screenshot showing the Select a Template search box with auto-completion.":::
+    :::image type="content" source="../media/6-custom-deployment.png" alt-text="Screenshot showing the Select a Template search box with autocompletion.":::
 
 1. To launch the template runner, select **Select template**. The **Disable encryption on Windows VM encrypted without AAD** pane appears.
 
@@ -34,9 +34,9 @@ You're going to use a template that Microsoft published on GitHub that's specifi
     |---------|---------|
     | **Project details** |
     | Subscription |  Concierge Subscription |
-    | Resource group | Select sandbox resource group <rgn>Sandbox RG</rgn>. This will auto-select the region as well. |
+    | Resource group | Select sandbox resource group <rgn>Sandbox RG</rgn>. This autoselects the region as well. |
     | **Instance details** |
-    | Region | Auto-selected from *Resource group* selection |
+    | Region | Autoselected from *Resource group* selection |
     | Vm Name | Enter *fmdata-vm01* |
     | Volume Type | Accept default *All* |
     | Force Update Tag | Accept default |
