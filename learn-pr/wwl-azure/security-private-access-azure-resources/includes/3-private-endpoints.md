@@ -18,9 +18,6 @@ Private endpoints provide a privately accessible IP address for the Azure servic
 
 Private endpoints support network policies. Network policies enable support for Network Security Groups (NSG), User Defined Routes (UDR), and Application Security Groups (ASG). For more information about enabling network policies for a private endpoint, see Manage network policies for private endpoints.
 
-:::image type="content" source="../media/dec-private-link-platform-as-a-service-workflow-4fe4ba71.png" alt-text="Diagram showing network security of private endpoints.":::
-
-
 Over a private-endpoint connection, a private-link resource owner can:
 
  -  Review all private-endpoint connection details.<br>

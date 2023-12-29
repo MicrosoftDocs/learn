@@ -1,6 +1,6 @@
 While planning and implementing network security configurations for an Azure SQL Managed Instance, follow this baseline:
 
-## 1. Virtual Network Integration:<br>
+## 1. Virtual Network Integration:
 
  -  Incorporate the SQL Managed Instance into a customer's private Virtual Network (VNet) and rely on private IPs, avoiding public IPs unless necessary.<br>
  -  Reference: Use virtual network service endpoints and rules for servers in Azure SQL Database.

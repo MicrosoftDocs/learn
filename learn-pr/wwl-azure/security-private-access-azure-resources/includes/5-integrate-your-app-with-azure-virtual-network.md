@@ -2,8 +2,8 @@ With Azure virtual networks, you can place many of your Azure resources in a non
 
 App Service has two variations:
 
-1.  The dedicated compute pricing tiers, which include the Basic, Standard, Premium, Premium v2, and Premium v3.<br>
-2.  The App Service Environment, which deploys directly into your virtual network with dedicated supporting infrastructure and is using the Isolated and Isolated v2 pricing tiers.
+ -  The dedicated compute pricing tiers, which include the Basic, Standard, Premium, Premium v2, and Premium v3.
+ -  The App Service Environment, which deploys directly into your virtual network with dedicated supporting infrastructure and is using the Isolated and Isolated v2 pricing tiers.
 
 The virtual network integration feature is used in Azure App Service dedicated compute pricing tiers. If your app is in an App Service Environment, it's already integrated with a virtual network and doesn't require you to configure virtual network integration feature to reach resources in the same virtual network.
 
