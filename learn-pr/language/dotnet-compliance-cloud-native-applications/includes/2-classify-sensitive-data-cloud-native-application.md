@@ -1,6 +1,6 @@
-The first step to implementing compliance in a cloud native application is to classify the data. Data classification is the process of identifying data your application uses by its sensitivity. Data classification is done by assigning a label to each data type. For example, you might label a user's name as "sensitive" and a user's age as "nonsensitive".
+The first step to implementing compliance in a cloud-native application is to classify the data. Data classification is the process of identifying data your application uses by its sensitivity. Data classification is done by assigning a label to each data type. For example, you might label a user's name as "sensitive" and a user's age as "nonsensitive".
 
-In this unit, you'll explore some of the compliance features of .NET. Then you'll learn how to classify data in a cloud native application.
+In this unit, you'll explore some of the compliance features of .NET. Then you'll learn how to classify data in a cloud-native application.
 
 ## What is compliance?
 
@@ -17,7 +17,7 @@ Your company decides to implement a data classification policy. This policy clas
 - **End User Identifiable Information (EUII)** - Information that can be used to identify an individual. For example, a user's name,  address, or phone number.
 - **End User Pseudonymous Identifiers (EUPI)** - Information that can be used to identify an individual, but only if data are combined with other information. For example, a user's ID for their data in a database, or IP address.
 
-## How to classify data in a cloud native application
+## How to classify data in a cloud-native application
 
 Microsoft has added a new extension to .NET that makes it easy to implement data classification. The `Microsoft.Extensions.Compliance.Classification` extension enables you to define `DataClassification` and `DataClassificationAttribute` properties.
 
@@ -59,4 +59,4 @@ public class User
 }
 ```
 
-Let's see how to implement data classification in an example cloud native application.
+Let's see how to implement data classification in an example cloud-native application.
