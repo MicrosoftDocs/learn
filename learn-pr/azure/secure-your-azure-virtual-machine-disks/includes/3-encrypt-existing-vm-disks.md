@@ -150,7 +150,7 @@ For the Azure CLI, run the `vm encryption disable` command.
 az vm encryption disable --resource-group <resource-group> --name <vm-name>
 ```
 
-These commands disable encryption for volumes of type *all* for the specified VM. Just like the encrypt version, to decide what disks to decrypt, you can specify a `-VolumeType` parameter `[All | OS | Data]`. It defaults to `All` if not supplied.
+These commands disable encryption for volumes of type *all* for the specified VM. Just like the encryption version, to decide what disks to decrypt, you can specify a `-VolumeType` parameter `[All | OS | Data]`. It defaults to `All` if not supplied.
 
 > [!WARNING]
 > Disabling data disk encryption on Windows VM when both OS and data disks have been encrypted doesn't work as expected. You must disable encryption on all disks instead.
