@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom: references_regions
 durationInMinutes: 7
 content: |
   [!include[](includes/2-virtual-network-service-endpoints.md)]
