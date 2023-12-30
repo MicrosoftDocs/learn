@@ -1,5 +1,5 @@
 
-The Q# programming language has a well-defined structure. In this unit, you'll review the main components of a Q# program.
+The Q# quantum programming language has a well-defined structure. In this unit, you'll review the main components of a Q# program.
 
 ## Namespace
 
@@ -35,7 +35,7 @@ The Q# documentation provides complete reference documentation for each built-in
 
 ## Entry points
 
-`EntryPoint` tells the Q# compiler to begin executing the program here. Every Q# program must have at least one entry point.
+`EntryPoint` tells the Q# compiler where to begin executing the program. Every Q# program must have at least one entry point followed by an operation.
 
 ## Allocating qubits
 
@@ -73,14 +73,14 @@ In this module, you'll work with the `Result` type. A `Result` represents the re
 
 ## Measuring qubits
 
-In Q#, Pauli measurements are done by applying the `Measure` operation, which performs a joint measurement of one or more qubits in the specified Pauli bases. The Measure operation returns a `Result` type, that is either `One` or `Zero`.
+In Q#, Pauli measurements are done by applying the `Measure` operation, which performs a joint measurement of one or more qubits in the specified Pauli bases. The `Measure` operation returns a `Result` type, that is either `One` or `Zero`.
 
 > [!NOTE]
 > If the basis array and qubit array are different lengths, then the `Measure` operation will fail.
 
-To implement a measurement in the computational basis $\ket{0},\ket{1}$, you can also use the `M` operation, which performs a measurement of a single qubit in the Pauli Z basis. Therefore `M` operation is equivalent to applying `Measure([PauliZ], [qubit])`.
+To implement a measurement in the computational basis {|0〉 ,|1〉} you can also use the `M` operation, which performs a measurement of a single qubit in the Pauli Z basis. Therefore `M` operation is equivalent to applying `Measure([PauliZ], [qubit])`.
 
-A simple example is the following program, which allocates one qubit in the $\ket{0}$ state, then applies a Hadamard operation `H` to it and measures the result in the `PauliZ` basis.
+A simple example is the following program, which allocates one qubit in the |0〉 state, then applies a Hadamard operation `H` to it and measures the result in the `PauliZ` basis.
 
 ```qsharp
 @EntryPoint()
@@ -100,4 +100,4 @@ operation MeasureOneQubit() : Result {
 ```
 
 > [!NOTE]
-> The `Reset` operation is used to reset the qubit to the $\ket{0}$ state. In Q#, qubits must be in the $\ket{0}$ state by the time they are released.
+> The `Reset` operation is used to reset the qubit to the |0〉 state. In Q#, qubits must be in the |0〉 state by the time they are released.

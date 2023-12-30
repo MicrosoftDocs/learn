@@ -1,7 +1,5 @@
 In this unit, you implement the second phase of your quantum random number generator: combining multiple random bits to form a larger random number. This phase builds on the random bit generator that you already created. You'll need to write some classical code for this phase.
 
-First, let's see how classical code fits in with Q#.
-
 ## Can I write classical code in Q#?
 
 Yes, you can. Quantum computers perform specialized tasks. You don't use a quantum computer for everything because, for many tasks, classical computers work fine.
@@ -14,7 +12,7 @@ Let's see how you can use Q# features to build a complete random number generato
 
 ## Define the random number generator logic
 
-Before we continue, let's outline what the logic of a random number generator should be, provided we have a random bit generator:
+Let's outline what the logic of a random number generator should be, provided the random bit generator built in the previous unit:
 
 1. Define `max` as the maximum number you want to generate.
 1. Define the number of random bits that you need to generate. This is done by calculating how many bits, `nBits`, we need to express integers up to `max`.
@@ -22,7 +20,7 @@ Before we continue, let's outline what the logic of a random number generator sh
 1. If the bit string represents a number greater than `max`, go back to step three.
 1. Otherwise, the process is complete. Return the generated number as an integer.
 
-As an example, let's set `max` to 12. That is, 12 is the largest number you want to use as a secure password.
+As an example, let's set `max` to 12. That is, 12 is the largest number you want to get from the random number generator. 
 
 You need ${\lfloor ln(12) / ln(2) + 1 \rfloor}$, or 4 bits to represent a number between 0 and 12. (For brevity, we'll skip how to derive this equation.)
 
@@ -30,7 +28,7 @@ Let's say you generate the bit string ${1101_{\ binary}}$, which is equivalent t
 
 Next, you generate the bit string ${0110_{\ binary}}$, which is equivalent to ${6_{\ decimal}}$. Because 6 is less than 12, the process is complete.
 
-The quantum random number generator will return number 6 as your password. In practice, set a larger number as the maximum because lower numbers are easy to crack by just trying all possible passwords. In fact, to increase the difficulty of guessing or cracking your password, you could use ASCII code to convert binary to text and to generate a password by using numbers, symbols, and mixed-case letters.
+The quantum random number generator will return number 6.
 
 ## Create a complete random number generator
 
@@ -155,7 +153,6 @@ The `let` directive declares variables that don't change during the computation.
 > [!NOTE]
 > This code snippet does not currently run on any available Azure Quantum hardware targets, as the callable `ResultArrayAsInt` requires a QPU with [full computation profile](/azure/quantum/concepts-targets-in-azure-quantum#quantum-processing-units-qpu-different-profiles).
 
-
 ## Run the program
 
 Let's try out our new random number generator!
@@ -168,5 +165,3 @@ Congratulations! Now you know how to combine classical logic with Q# to create a
 ## Bonus exercise
 
 Modify the program to also require the generated random number to be greater than some minimum number, `min`, instead of zero.
-
-In the next unit, you'll learn more about the structure Q# programs in general and the basic building blocks of quantum computing.

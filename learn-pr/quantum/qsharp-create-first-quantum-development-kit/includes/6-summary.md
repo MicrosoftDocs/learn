@@ -1,6 +1,6 @@
 Congratulations! Your first Q# program gave you practice performing quantum operations.
 
-Visual Studio Code and the Modern QDK provide you with everything you need to start writing and verifying your own quantum algorithms right away.
+The Azure Quantum Development Kit (Modern QDK) provide you with everything you need to start writing and verifying your own quantum algorithms right away.
 
 In this module, we covered a lot. Here are a few key concepts to keep in mind:
 

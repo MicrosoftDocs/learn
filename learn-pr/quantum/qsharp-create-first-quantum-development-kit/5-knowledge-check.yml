@@ -22,7 +22,7 @@ quiz:
     - content: "The quantum random number generator takes the current time from the CPU's clock as seed to generate random numbers."
       isCorrect: false
       explanation: "The quantum random number generator doesn't use the CPU's clock to generate random numbers. A classical pseudo-random number generator would do that."
-    - content: "The quantum random number generator creates one qubit and the result of the measurement of that qubit is a random decimal number."
+    - content: "The quantum random number generator creates one qubit, measures it, and the result of the measurement is a random decimal number."
       isCorrect: false
       explanation: "The result of the measurement of a qubit is a random bit, not a random decimal number. This isn't the logic behind the random number generator that you built in this module."
     - content: "The quantum random number generator creates a bit string from the repetition of measurements of a qubit in superposition. Then, it takes the bit string and converts it to a decimal number."

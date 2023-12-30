@@ -3,6 +3,8 @@ Classical computers don't produce random numbers, but rather _pseudorandom_ numb
 
 Quantum computers, on the other hand, can generate truly random numbers. This is because the measurement of a qubit in superposition is a probabilistic process. The result of the measurement is random, and there's no way to predict the outcome. This is the basic principle of quantum random number generators.
 
+## Define the QRNG problem
+
 You start by taking a qubit in a basis state, for example zero. The first step of the QRNG is to use an `H` operation to put the qubit into an equal superposition. The measurement of this state results in a zero or a one with 50% probability of each outcome. The value of this bit is truly random, there's no way of knowing what you will get after the measurement. But how can you use this behavior to generate larger random numbers?
 
 Let's say you repeat the process four times, generating this sequence of binary digits:
@@ -19,13 +21,10 @@ You build out your quantum random number generator in two phases. In this unit, 
 
 To do so, you:
 
-> [!div class="checklist"]
-> * Create a Q# file.
-> * Add code that uses the `H` operation to put a qubit into superposition.
-> * Measure the qubit to get a random bit.
-> * Reset the qubit to the zero state.
-
-In the next unit, you build out the second phase, which combines random bits to form a larger number.
+1. Allocate a qubit.
+1. Apply the `H` operation to put a qubit into superposition.
+1. Measure the qubit to get a random bit.
+1. Reset the qubit to the zero state.
 
 ## Create a Q# program
 
