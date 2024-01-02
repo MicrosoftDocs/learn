@@ -8,8 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
-  ms.custom:
-  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/7-solution-2.md)]

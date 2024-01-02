@@ -7,8 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: module
-  ms.custom:
-  - N/A
   ms.prod: azure
   ms.devlang: csharp
 title: Convert data types using casting and conversion techniques in C#
