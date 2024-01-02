@@ -3,8 +3,8 @@ Code challenges reinforce what you've learned and help you gain some confidence 
 This module features two code challenges. This first challenge forces you to split up the data depending on its type and either concatenate or add the data accordingly.
 
 > [!NOTE]
-> The code samples in this exercise are designed based on US culture settings, where a period (`.`) is used as the decimal separator. Building and running the code with a non-US culture setting may give unexpected results that don't match the sample output. For culture settings where the decimal separator character is different (like a comma), some samples will not match expected output or may result in errors. Replacing the decimals using your local decimal separator (such as `,`) in the sample code samples can help the sample code run as expected.
-> If you want to run a program using the "en-US" culture setting, add the following code to the top of your program `using System.Globalization;` and after any other `using` statements add `CultureInfo.CurrentCulture = new CultureInfo("en-US");`.
+> The code samples in this exercise are designed based on en-US culture settings, and use a period (`.`) as the decimal separator. Building and running the code with a culture setting that uses a different decimal separators (such as a comma `,`) may give unexpected results or errors. To fix this issue, replace the period decimal separators in the code samples with your local decimal separator (such as `,`).
+> Alternatively, to run a program using the en-US culture setting, add the following code to the top of your program: `using System.Globalization;` and after any other `using` statements add `CultureInfo.CurrentCulture = new CultureInfo("en-US");`.
 
 1. Select and delete all code lines in the Visual Studio Code Editor. Optionally, use the line comment operator `//` to comment out all of the code from the previous step.
 
