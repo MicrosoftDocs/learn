@@ -48,7 +48,7 @@ For reference, this snippet is what it should look like:
 
 ## Using PingFederate
 
-Configure PingFederate with Microsoft Entra Connect to set up federation with the domain you want connected. The following prerequisites are required:
+Configure PingFederate with Microsoft entra Connect to set up federation with the domain you want connected. The following prerequisites are required:
 
  -  PingFederate 8.4 or later.
  -  A TLS/SSL certificate for the federation service name that you intend to use (for example, sts.contoso.com).

@@ -2,7 +2,7 @@ Microsoft Entra Connect Health provides monitoring of your on-premises identity 
 
 The information is presented in the [Microsoft Entra Connect Health portal](https://aka.ms/aadconnecthealth). Use the Microsoft Entra Connect Health portal to view alerts, performance monitoring, usage analytics, and other information. Microsoft Entra Connect Health enables the single lens of health for your key identity components in one place.
 
-:::image type="content" source="../media/azure-active-directory-connect-health-2-8d08121d.png" alt-text="Diagram of What is Azure AD Connect Health.  Shows how Azure AD Connect is maintained.":::
+:::image type="content" source="../media/azure-active-directory-connect-health-2-8d08121d.png" alt-text="Diagram of What is Azure A D Connect Health.  Shows how Azure A D Connect is maintained.":::
 
 
 Using the Microsoft Entra Connect Health feature requires a Microsoft Entra ID Premium P1 license.

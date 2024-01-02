@@ -15,4 +15,3 @@ Now that you've reviewed this module, you should be able to:
  -  [Integrate a single AD forest using password hash](/azure/active-directory/hybrid/tutorial-password-hash-sync)
  -  [Hybrid Identity documentation](/azure/active-directory/hybrid/)
  -  [Microsoft Entra Connect - Configure AD DS Connector Account permission](/azure/active-directory/hybrid/how-to-connect-configure-ad-ds-connector-account)
-
