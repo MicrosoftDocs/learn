@@ -22,13 +22,13 @@ The tool provides an option to select an existing App Service plan but for this 
 
 In a previous exercise, you opted to parameterize application configurations. Specifically, the database connection string. Because of that choice, you can now select Azure Key Vault or Kubernetes secrets for managing your application secrets.
 
-1. Select the option to **create new Azure Key Vault** and specify the name as **learnappcontainerizationkeyvault**. The tool automatically assigns the necessary permissions for managing secrets through the Key Vault.
+- Select the option to **create new Azure Key Vault** and specify the name as **learnappcontainerizationkeyvault**. The tool automatically assigns the necessary permissions for managing secrets through the Key Vault.
 
 ## **Specify Azure file share** 
 
 If you chose to add more folders and selected the Persistent Volume option, then specify the Azure file share that you want the Azure Migrate: App Containerization tool to use during the deployment process. The tool creates new directories in this Azure file share to copy over the application folders that are configured for Persistent Volume storage. During deployment, these directories are mounted to the application container.
 
-Since this application didn't have any file system dependencies that we chose to externalize, select **continue** to proceed.
+- Since this application didn't have any file system dependencies that we chose to externalize, select **continue** to proceed.
 
 ## **Application deployment configuration**
 
