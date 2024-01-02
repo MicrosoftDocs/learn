@@ -16,10 +16,10 @@ abstract: |
     - Evaluate the usage of Azure Blueprints in your governance strategy.
     - Describe how features of Azure Blueprints can help to ensure a cloud environment compliant with your business definitions.
 prerequisites: |
-  - Basic knowledge of navigating the Azure portal
+  - Basic knowledge of the Azure portal
   - Basic knowledge of Azure resources
   - Basic knowledge of Azure RBAC
-  - Basic knowledge of Azure Policies
+  - Basic knowledge of Azure Policy
 iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner

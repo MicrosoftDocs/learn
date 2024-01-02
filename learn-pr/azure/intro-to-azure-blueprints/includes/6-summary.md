@@ -1,4 +1,4 @@
-You've explored the main concepts of Azure Blueprint and discovered:
+You've explored the main concepts of Azure Blueprints, and you discovered:
 
 * The basic concepts of Azure Blueprints and how it aligns with a governance strategy.
 * How Azure Blueprints works and the artifacts you can use to deploy and implement governance as code.

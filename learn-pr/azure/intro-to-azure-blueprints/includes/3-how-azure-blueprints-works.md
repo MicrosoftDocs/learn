@@ -41,7 +41,7 @@ In addition to the change controls in place, Azure Blueprints also offers a reso
 * *Cannot Edit/Delete*
 * *Cannot Delete*
 
-These assignments can only be removed by updating the blueprint itself and changing it to a different locking mode. Unlike other resources in Azure that can have locks overridden by users with the appropriate role-based access controls, Azure Blueprints can't be overridden in this manner. This security measure protects the consistency of the defined blueprint and the environment it was designed to create from accidental or programmatic deletion or alteration.
+These assignments can only be removed by updating the blueprint itself and changing it to a different locking mode. Unlike other resources in Azure that can have locks overridden by users with the appropriate RBAC, Azure Blueprints can't be overridden in this manner. This security measure protects the consistency of the defined blueprint and the environment it was designed to create from accidental or programmatic deletion or alteration.
 
 ## How Azure Blueprints and Azure Resource Manager templates work together
 
@@ -51,7 +51,7 @@ Since you can use both features to package an environment together and deploy Az
 
 **ARM templates** are documents that don’t exist natively within Azure. These templates are normally stored locally or in a central code repository. Once these templates are deployed, there's no connection between the template and the resources that are deployed. Issues might arise such as templates not being updated in a timely manner for any changes that are required for the resource (and future resources), or templates being updated without proper documentation as to what changed.
 
-**Azure Blueprints** attempt to resolve the above issues by maintaining the connection between blueprint definition and blueprint assignment. This relationship allows for tracking and auditing of deployments, along with allowing blueprints to update multiple subscriptions at the same time.
+**Azure Blueprints** attempts to resolve the above issues by maintaining the connection between blueprint definition and blueprint assignment. This relationship allows for tracking and auditing of deployments, along with allowing blueprints to update multiple subscriptions at the same time.
 
 :::image type="content" source="../media/3-how-it-works.png" alt-text="Illustration that shows how Azure Blueprint works.":::
 
