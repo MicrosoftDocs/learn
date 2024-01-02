@@ -63,7 +63,8 @@ Methods can return a value or return "void" - meaning they return no value. Meth
 
 1. At the Terminal command prompt, to run your code, type **dotnet run** and then press Enter.
    > [!NOTE]   > If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
-      You should see the following output:
+   
+You should see the following output:
    ```Output   Measurement: 102   Measurement (w/ offset): 152   ```
 
 1. Examine the last line of code in the previous sample, `Console.WriteLine($"Measurement (w/ offset): {50 + result}");`,
