@@ -58,7 +58,7 @@ Methods can return a value or return "void" - meaning they return no value. Meth
 1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.  A Terminal panel should open, and should include a command prompt showing that the Terminal is open to your TestProject folder location.
 
 1. At the Terminal command prompt, to run your code, type **dotnet run** and then press Enter.  > [!NOTE]  > If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
-  You should see the following output:       ```Output          Measurement: 102          Measurement (w/ offset): 152          ```
+  You should see the following output:   ```Output      Measurement: 102      Measurement (w/ offset): 152      ```
 
 1. Examine the last line of code in the previous sample, `Console.WriteLine($"Measurement (w/ offset): {50 + result}");`,  Since the `result` variable is defined outside of the if statement, it can be accessed later in your code. 
 
