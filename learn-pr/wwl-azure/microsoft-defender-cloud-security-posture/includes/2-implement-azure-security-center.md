@@ -10,5 +10,3 @@ Defender for Cloud combines the capabilities of:
  -  A development security operations (DevSecOps) solution that unifies security management at the code level across multicloud and multiple-pipeline environments
  -  A cloud security posture management (CSPM) solution that surfaces actions that you can take to prevent breaches
  -  A cloud workload protection platform (CWPP) with specific protections for servers, containers, storage, databases, and other workloads
-
-:::image type="content" source="../media/defender-for-cloud-native-application-protection-platform-f2f824af.png" alt-text="Diagram showing an example of Defender for Cloud capabilities.":::
