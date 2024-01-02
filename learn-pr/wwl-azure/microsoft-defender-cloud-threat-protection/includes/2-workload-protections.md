@@ -1,8 +1,5 @@
 Defender for Cloud offers security alerts that are powered by Microsoft Threat Intelligence. It also includes a range of advanced, intelligent protections for your workloads. The workload protections are provided through Microsoft Defender plans specific to the types of resources in your subscriptions. **For example**, you can enable Microsoft Defender for Storage to get alerted about suspicious activities related to your storage resources.
 
-:::image type="content" source="../media/defender-cloud-workload-protection-cee788f3.png" alt-text="Diagram showing an example of Defender for Cloud protecting workloads.":::
-<br>
-
 ## The Cloud workload dashboard includes the following sections:
 
 1.  **Microsoft Defender for Cloud coverage** \- Here you can see the resources types in your subscription that are eligible for protection by Defender for Cloud. Wherever relevant, you can upgrade here as well. If you want to upgrade all possible eligible resources, select **Upgrade all**.
