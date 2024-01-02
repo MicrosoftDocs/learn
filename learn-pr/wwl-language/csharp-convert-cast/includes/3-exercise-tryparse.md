@@ -111,8 +111,8 @@ Lastly, look at the other scenario - where the `TryParse()` is intentionally giv
 
 1. Modify the first line of code, reinitialize the variable `value` to a different value.
 
-   ```
-   csharp   string value = "bad";
+   ```csharp
+   string value = "bad";
    ```
 
 1. Also, modify the last line of code to ensure that the result is greater than 0 before showing the second message.
