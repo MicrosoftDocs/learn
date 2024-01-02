@@ -6,7 +6,8 @@ metadata:
   ms.date: 11/02/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: github
 title: "Build and deploy applications to Azure by using GitHub Actions"
 summary: Create two deployment workflows using GitHub Actions and Microsoft Azure.
 abstract: |
