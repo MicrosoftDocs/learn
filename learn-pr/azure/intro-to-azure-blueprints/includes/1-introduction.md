@@ -1,9 +1,9 @@
-Finding a way to have your cloud environment and deployments well defined, structured, and compliant with your business definitions is challenging. Here are some of the main topics you should consider:
+It can be challenging to make your cloud environment and deployments well defined, structured, and compliant with your business definitions. Here are some of the main topics you should consider:
 
-* Composition: Compose, deploy, and update cloud environments in a repeatable manner
-* Orchestration: Orchestrate deployment of resource templates, policies, and role based access controls
-* Protection: Lock down foundational infrastructure that is shared across different subscriptions
-* Empowerment: Let app teams use Azure in a self-service manner while ensuring organizational standards
+* Composition: Compose, deploy, and update cloud environments in a repeatable manner.
+* Orchestration: Orchestrate deployment of resource templates, policies, and role-based access controls.
+* Protection: Lock down foundational infrastructure that's shared across different subscriptions.
+* Empowerment: Let app teams use Azure in a self-service manner while ensuring organizational standards.
 
 How can you bring everything together that has already been discussed in a structured way so that you can configure your environment in a consistent and automated way, at scale, in the shortest possible time?
 
@@ -16,15 +16,15 @@ What happens today is that you provide the DevOps team with a giant document con
 Here are some of the main challenges for customers when designing and configuring the governance for their subscriptions:
 
 * **Challenging to configure the basic infrastructure:** It becomes complex to create and redistribute the infrastructure.
-* **Inability to create governed subscriptions:** Absence of a centralized way of defining and ensuring that what is created, or made available in a subscription, will be applied. The client will need to use many scripts to accomplish this.
+* **Inability to create governed subscriptions:** Absence of a centralized way to define and ensure that what's created, or made available in a subscription, is applied. The client needs to use many scripts to accomplish this.
 * **Protection of critical resources:** Subscription owners can modify resources and remove policies in violation of best practices defined by cloud architects. Therefore, to address these key challenges faced by customers, Azure Blueprints was created to provide you with an automated and easy-to-deploy solution to help set up Azure subscriptions inline with a governance strategy.
 
 Azure Blueprints allow you to implement governance as code.
 
-:::image type="content" source="../media/1-azure-blueprints.png" alt-text="Depiction of how Azure Blueprints allows you to compose, manage, and scale governance.":::
+:::image type="content" source="../media/1-azure-blueprints.png" alt-text="Diagram that shows how Azure Blueprints allows you to compose, manage, and scale governance.":::
 
-## What will we be doing?
-We'll evaluate the features and capabilities of Azure Blueprints to help you understand how you can use a blueprint to compose, manage, and scale governance as code.
+## What will you do?
+You'll evaluate the features and capabilities of Azure Blueprints to help you understand how you can use a blueprint to compose, manage, and scale governance as code.
 
 ## What is the main goal?
 By the end of this session, you'll be able to evaluate how to use Azure Blueprints in your governance strategy.
