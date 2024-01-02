@@ -37,6 +37,7 @@ Methods can return a value or return "void" - meaning they return no value. Meth
 1. Delete or use the line comment operator `//` to comment out all of the code from the previous exercises.
 
 1. Update your code in the Visual Studio Code Editor as follows:
+
    ```csharp
    string value = "102";
    int result = 0;
