@@ -56,6 +56,6 @@ By Parameterizing the configuration, you make it available as a deployment time 
 
 ### Externalize file system dependencies
 
- You can add other folders that your application uses. Specify if they should be part of the container image or are to be externalized through persistent volumes on Azure file share. Using persistent volumes works great for stateful applications that store state outside the container or have other static content stored on the file system.
+You can add other folders that your application uses. Specify if they should be part of the container image or are to be externalized through persistent volumes on Azure file share. Using persistent volumes works great for stateful applications that store state outside the container or have other static content stored on the file system.
 
- This application doesn't have any file system dependencies that need to be externalized. Select **Continue** to proceed to the container image build phase.
+This application doesn't have any file system dependencies that need to be externalized. Select **Continue** to proceed to the container image build phase.

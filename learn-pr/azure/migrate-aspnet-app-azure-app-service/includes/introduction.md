@@ -2,7 +2,6 @@ Organizations preparing to digitally transform their business must determine how
 
 In this module, you learn how Azure Migrate: App Containerization can help accelerate your application modernization journey by helping you containerize and migrate your ASP.NET applications running on Windows machines to Azure App Service using a templatized process.
 
-
 ## Learning objectives
 
 By the end of this module, you're able to:
@@ -10,7 +9,6 @@ By the end of this module, you're able to:
 - Discover and containerize your ASP.NET app running on Windows machines using Azure Migrate: App Containerization.
 - Build a container image for your ASP.NET application. 
 - Deploy your containerized application to Azure App Service using Azure Migrate: App Containerization. 
-
 
 ## Prerequisites
 
