@@ -22,7 +22,7 @@ When you install Microsoft Entra Connect by using the **Express Settings** optio
 
 ## Password hash synchronization and Federal Information Processing standard<br>
 
-If your server has been locked down according to Federal Information Processing Standard (FIPS), then MD5 is disabled.
+If your server is locked down according to Federal Information Processing Standard (FIPS), then MD5 is disabled.
 
 **To enable MD5 for password hash synchronization, perform the following steps:**
 
@@ -48,7 +48,7 @@ For reference, this snippet is what it should look like:
 
 ## Using PingFederate
 
-Configure PingFederate with Microsoft entra Connect to set up federation with the domain you want connected. The following prerequisites are required:
+Configure PingFederate with Microsoft Entra Connect to set up federation with the domain you want connected. The following prerequisites are required:
 
  -  PingFederate 8.4 or later.
  -  A TLS/SSL certificate for the federation service name that you intend to use (for example, sts.contoso.com).
