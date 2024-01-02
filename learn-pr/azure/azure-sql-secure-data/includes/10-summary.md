@@ -23,8 +23,8 @@ Your networking environment and configuration can get complex quickly. You'll wa
 * [Azure SQL Database and Azure Synapse Analytics network access controls](/azure/azure-sql/database/network-access-controls-overview)
 * [Connect your application to Azure SQL Managed Instance](/azure/azure-sql/managed-instance/connect-application-instance)
 * [IP firewall rules for Azure SQL Database](/azure/azure-sql/database/firewall-configure)
-* [Data exfiltration prevention](//azure/azure-sql/database/private-endpoint-overview#data-exfiltration-prevention)  
-* [Virtual network endpoints and rules](//azure/azure-sql/database/vnet-service-endpoint-rule-overview)  
+* [Data exfiltration prevention](/azure/azure-sql/database/private-endpoint-overview#data-exfiltration-prevention)  
+* [Virtual network endpoints and rules](/azure/azure-sql/database/vnet-service-endpoint-rule-overview)  
 
 #### Authentication
 

@@ -1145,7 +1145,7 @@ achievements:
 - uid: learn.wwl.describe-endpoint-security-with-microsoft-intune.badge
   type: badge
   title: Describe endpoint security with Microsoft Intune
-  summary: Learn how Microsoft Intune provides endpoint security. Topics include security baselines, compliance policies, integration with Microsoft 365 Defender for Endpoint, more.  Also, explore the Microsoft Endpoint Manager admin portal.
+  summary: Learn how Microsoft Intune provides endpoint security. Topics include security baselines, compliance policies, integration with Microsoft Defender XDR for Endpoint, more.  Also, explore the Microsoft Endpoint Manager admin portal.
   iconUrl: /training/achievements/describe-endpoint-security-with-microsoft-intune.svg
 - uid: learn.wwl.evaluate-strategies-for-migrating-sql-databases-to-azure.badge
   type: badge
@@ -2627,3 +2627,23 @@ achievements:
   title: Implement properties within a class
   summary: This module discusses the use of properties and the concepts of read-write, read-only, and write-only properties. The concepts of declaring and passing variable by reference and by value are also introduced.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.use-classes-properties-method.badge
+  type: badge
+  title: Use classes, properties, and methods
+  summary: This lesson shows how to use a class and access the properties and the methods of that class. Aside from instantiating objects, properties and methods are the primary way one interacts with objects.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.introduction-to-microsoft-graph-powershell.badge
+  type: badge
+  title: Introduction to Microsoft Graph PowerShell
+  summary: Characterize the types of business processes that Microsoft Graph PowerShell can automate. Describe the commands and permissions needed to automate processes with Microsoft Graph PowerShell.
+  iconUrl: /training/achievements/introduction-to-microsoft-graph-powershell-learn-module.svg
+- uid: learn.enable-external-collaboration-with-b2b.badge
+  type: badge
+  title: Enable secure external collaboration for your applications with Microsoft Entra B2B
+  summary: "Collaborate securely with partners, vendors, and other external users with **Microsoft Entra B2B collaboration**. Use a simple invitation process to let partners use their own work, school, or social identities to access your resources, and add security with **multi-factor authentication**."
+  iconUrl: /training/achievements/enable-external-collaboration-with-b2b.svg
+- uid: learn.secure-collaboration-cross-tenant-access.badge
+  type: badge
+  title: Secure B2B collaboration by using cross-tenant access settings
+  summary: "Define your inbound and outbound B2B collaboration with other Microsoft Entra tenants by using cross-tenant access settings. You can decide whether to allow or block B2B collaboration with other Microsoft Entra organizations by default, and then set individual policies for specific organizations. You have granular control over who can use B2B collaboration and which applications can be accessed. You can also trust multi-factor authentication from a user’s home tenant so they don’t have to repeat the process in your tenant."
+  iconUrl: /training/achievements/generic-badge.svg 

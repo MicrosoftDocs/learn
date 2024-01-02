@@ -31,9 +31,3 @@ You can use a range of existing software configuration products to deploy the Ar
 - **Systems Center Configuration Manager**: Author, approve, and run a custom PowerShell script to a collection of devices. See [Create and run scripts - Configuration Manager](/mem/configmgr/apps/deploy-use/create-deploy-scripts).
 
 - You can also use other automation tooling like Chef, Puppet, or Ansible to deploy the script to managed servers.
-
-Additional Resources for at-scale onboarding include:
-
-- [At-scale onboarding VMware vSphere Windows Server VMs](https://github.com/microsoft/azure_arc/blob/main/docs/azure_arc_jumpstart/azure_arc_servers/scaled_deployment/vmware_scaled_powercli_win/_index.md)
-- [At-scale onboarding VMware vSphere Linux VMs](https://github.com/microsoft/azure_arc/blob/main/docs/azure_arc_jumpstart/azure_arc_servers/scaled_deployment/vmware_scaled_powercli_linux/_index.md)
-- [At-scale onboarding AWS EC2 instances using Ansible](https://github.com/microsoft/azure_arc/blob/main/docs/azure_arc_jumpstart/azure_arc_servers/scaled_deployment/aws_scaled_ansible/_index.md)

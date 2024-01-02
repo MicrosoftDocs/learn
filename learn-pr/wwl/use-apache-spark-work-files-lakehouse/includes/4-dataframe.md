@@ -96,7 +96,7 @@ The results would once again be similar to:
 
 ## Filtering and grouping dataframes
 
-You can use the methods of the Dataframe class to filter, sort, group, and otherwise manipulate the data it contains. For example, the following code example uses the **select** method to retrieve the **ProductName** and **ListPrice** columns from the **df** dataframe containing product data in the previous example:
+You can use the methods of the Dataframe class to filter, sort, group, and otherwise manipulate the data it contains. For example, the following code example uses the **select** method to retrieve the **ProductID** and **ListPrice** columns from the **df** dataframe containing product data in the previous example:
 
 ```python
 pricelist_df = df.select("ProductID", "ListPrice")

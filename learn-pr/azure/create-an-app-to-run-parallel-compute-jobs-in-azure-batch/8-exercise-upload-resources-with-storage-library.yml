@@ -6,7 +6,7 @@ metadata:
   description: In this hands-on exercise, you'll use the storage library to connect to Azure storage and upload your pet videos.
   ms.date: 06/01/2019
   author: lauradolan
-  ms.author: ladolan
+  ms.author: jushiman
   ms.topic: unit
   ms.custom:
     - devx-track-dotnet

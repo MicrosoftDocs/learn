@@ -21,7 +21,7 @@ Dataflows (Gen2) support a wide variety of data source connectors. Common source
 
 ### 2. Queries pane
 
-The Queries pane shows you the different data sources - now called *queries*. Rename, duplicate, reference, and enable load are some of the options available.
+The Queries pane shows you the different data sources - now called *queries*. Rename, duplicate, reference, and enable staging are some of the options available.
 
 ### 3. Diagram view
 
