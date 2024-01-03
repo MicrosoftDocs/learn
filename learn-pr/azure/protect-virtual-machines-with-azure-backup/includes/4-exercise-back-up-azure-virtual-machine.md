@@ -157,7 +157,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
 1. Select the **NW-APP01** virtual machine. The *NW-APP01* virtual machine pane appears.
 
-1. In the middle menu pane, scroll to **Operations**, and select **Backup**. The **Backup** pane for the *NW-APP01* virtual machine appears.
+1. In the middle menu pane, scroll to **Backup + Disaster recovery**, and select **Backup**. The **Backup** pane for the *NW-APP01* virtual machine appears.
 
     Under the **Backup status** section, the **Last backup status** field displays the current status of the backup.
 
