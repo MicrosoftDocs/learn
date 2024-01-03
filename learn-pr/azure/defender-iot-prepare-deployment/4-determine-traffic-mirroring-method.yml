@@ -31,7 +31,7 @@ quiz:
       isCorrect: false
       explanation: "The number of users shouldn't affect the type of traffic mirroring method nor should the brand of the network devices, unless there's a device interoperability issue."
 
-  - content: "Your automotive manufacturing organization wants forensic traffic monitoring to protect in-vehicle software and firmware during manufacturing. What traffic mirroring method would be ideal for you use?"
+  - content: "Your automotive manufacturing organization wants forensic traffic monitoring to protect in-vehicle software and firmware during manufacturing. What traffic mirroring method would be ideal for your use?"
     choices:
     - content: "ERSPAN" 
       isCorrect: false
