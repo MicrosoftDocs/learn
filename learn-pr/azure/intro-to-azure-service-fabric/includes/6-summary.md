@@ -7,4 +7,4 @@ You also saw how Service Fabric:
 - Provides a runtime that supports stateless and stateful microservice architectures.
 - Integrates with Azure services to streamline your solution.
 
-You can come to Azure and start working in Service Fabric or bring Service Fabric and all of its features to you on premises or on another cloud platform.
+You can come to Azure and start working in Service Fabric or you can bring Service Fabric and all of its features on premises or on another cloud platform.
