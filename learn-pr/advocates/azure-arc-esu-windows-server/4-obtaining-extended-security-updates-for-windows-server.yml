@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.using-azure-arc-to-enable-windows-server-extended-security-updates.obtaining-extended-security-updates-for-windows-server
+title: Obtaining Extended Security Updates for Windows Server
+metadata:
+  title: Obtaining Extended Security Updates for Windows Server
+  description: TBD
+  ms.date: 01/03/2024
+  author: Orin Thomas
+  ms.author: orthomas
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-obtaining-extended-security-updates-for-windows-server.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.using-azure-arc-to-enable-windows-server-extended-security-updates.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: TBD
+  ms.date: 01/03/2024
+  author: Orin Thomas
+  ms.author: orthomas
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
