@@ -1,4 +1,4 @@
-In this unit, you'll use the .NET IoT Libraries to write code that interacts with your cave monitor device. Although the .NET SDK is supported on Raspberry Pi and other IoT boards, using a computer is recommended. Using a computer enables you to use fully featured IDEs and editors like Visual Studio and Visual Studio Code.
+In this unit, you'll use the .NET IoT Libraries to write code that interacts with your cave-monitor device. Although the .NET SDK is supported on Raspberry Pi and other IoT boards, we recommend using a computer. Using a computer lets you use fully featured IDEs and editors like Visual Studio and Visual Studio Code.
 
 ## Create the app
 
@@ -152,7 +152,7 @@ Complete the following steps from a command shell on your development machine.
     - The `Bme280ReadResult` object contains `Temperature` and `Humidity` properties.
         - The `Temperature` and `Humidity` properties are both nullable, which means they might contain `null`. Accordingly, the null-conditional operator `?.` is used to access their members.
         - The properties themselves expose properties that do automatic unit conversions, such as `DegreesFahrenheit` and `Percent`.
-        - In both cases, the null-coalescing operator `??` checks the return value, and if it's `null` replaces it with `double.NaN`.
+        - In both cases, the null-coalescing operator `??` checks the return value, and if it's `null`, replaces it with `double.NaN`.
 
     > [!TIP]
     > If you need help understanding null safety, see [Null safety in C#](/training/modules/csharp-null-safety/).
@@ -167,4 +167,4 @@ dotnet build
 
 The build completes with no errors or warnings.
 
-In the next unit, you'll deploy your app to the Raspberry Pi and test.
+In the next unit, you'll deploy your app to the Raspberry Pi and test it.
