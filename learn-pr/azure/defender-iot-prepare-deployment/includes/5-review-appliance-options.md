@@ -40,7 +40,7 @@ The following table shows an example of supported hardware profiles and pre-conf
 <!--follow up with Ariel -->
 ## Virtual appliances
 
-You may want to use virtual appliances for your sensors, such as for simpler maintance and reduced costs.
+You may want to use virtual appliances for your sensors, such as for simpler maintenance and reduced costs.
 
 The *hypervisors* or virtual machine hosts supported by Defender for IoT to run guest operating systems are:
 
