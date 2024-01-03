@@ -2,24 +2,31 @@
 uid: learn.using-azure-arc-to-enable-windows-server-extended-security-updates
 metadata:
   ms.author: orthomas
-  author: Orin Thomas
+  author: Orin-Thomas
   ms.date: 01/03/2024
   title: Using Azure Arc to Enable Windows Server Extended Security Updates
-  description: TBD
-  ms.topic: interactive-tutorial
+  description: Use Azure Arc to enable Windows Server Extended Security Updates
+  ms.topic: module
 title: Using Azure Arc to Enable Windows Server Extended Security Updates
 summary: Learn how to configure extended security updates for Windows Server using Azure Arc
-abstract: TBD
-prerequisites: TBD
+abstract: |
+  After completing this module, you'll be able to:
+  - Understand the role of ESU in supporting Windows Server beyond end of extended support.
+  - Enable ESU on Windows Server with Azure Arc.
+  - Use Multiple Activation Keys to enable ESU for non Arc enabled servers.
+  - Create and allocate ESU Licenses for Arc enabled servers.
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Windows Server.
+  - Azure Arc.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
-- beginner
+- intermediate
 roles:
 - developer
 products:
-- azure
+- windows-server
 units:
-- learn.using-azure-arc-to-enable-windows-server-extended-security-updates.using-azure-arc-to-enable-windows-server-extended-security-updates
 - learn.using-azure-arc-to-enable-windows-server-extended-security-updates.introduction
 - learn.using-azure-arc-to-enable-windows-server-extended-security-updates.understanding-extended-security-updates
 - learn.using-azure-arc-to-enable-windows-server-extended-security-updates.obtaining-extended-security-updates-for-windows-server
