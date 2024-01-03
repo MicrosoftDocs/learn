@@ -5,7 +5,7 @@ title: Introduction
 metadata:
   title: Introduction to Azure Service Fabric
   description: Learn about Azure Service Fabric, a distributed systems platform for deploying and managing microservices and containers.
-  ms.date: 01/04/2024
+  ms.date: 01/03/2024
   author: tomvcassidy
   ms.author: tomcassidy
   ms.topic: unit

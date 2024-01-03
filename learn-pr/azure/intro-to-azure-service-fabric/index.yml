@@ -3,7 +3,7 @@ uid: learn.intro-to-azure-service-fabric
 metadata:
   title: Introduction to Azure Service Fabric
   description: Get acquainted with the Azure Service Fabric distributed systems management platform.
-  ms.date: 01/04/2024
+  ms.date: 01/03/2024
   author: tomvcassidy
   ms.author: tomcassidy
   ms.topic: module
