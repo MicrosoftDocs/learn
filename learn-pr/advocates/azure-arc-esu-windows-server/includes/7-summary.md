@@ -2,5 +2,5 @@ The Extended Security Update (ESU) program is a last resort option for customers
 
 References:
 
-- License provisioning guidelines for Extended Security Updates for Windows Server 2012 https://learn.microsoft.com/en-us/azure/azure-arc/servers/license-extended-security-updates
-- Deliver Extended Security Updates for Windows Server 2012 https://learn.microsoft.com/en-us/azure/azure-arc/servers/deliver-extended-security-updates
+- License provisioning guidelines for Extended Security Updates for Windows Server 2012 <https://learn.microsoft.com/en-us/azure/azure-arc/servers/license-extended-security-updates>
+- Deliver Extended Security Updates for Windows Server 2012 <https://learn.microsoft.com/en-us/azure/azure-arc/servers/deliver-extended-security-updates>
