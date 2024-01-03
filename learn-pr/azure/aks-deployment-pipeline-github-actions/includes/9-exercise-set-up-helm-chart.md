@@ -159,7 +159,7 @@ Completing these steps is all it takes to create a chart. Now, let's configure t
 
     Next, we add templates for this deployment, beginning with the `namespace` and `name` keys.
 
-1. In the `metadata` section, add a new key called `namespace` with the value `{{ default "staging" .Release.Namespace }}`.  
+1. In the main `metadata` section, add a new key called `namespace` with the value `{{ default "staging" .Release.Namespace }}`.  
 
     The metadata configuration:
 
@@ -170,11 +170,11 @@ Completing these steps is all it takes to create a chart. Now, let's configure t
     ```
 
     >[!NOTE]
-    > By default, the workflow will deploy this resource to the `staging` namespace. But, if the `helm install` command has a `namespace` option, it will overide it to use that instead.
+    > By default, the workflow deploys this resource to the `staging` namespace. But if the `helm install` command has a `Namespace` option, the workflow overrides the default to use that namespace instead.
 
-1. Under the specs for the container, update the `image` key to fetch the latest and tag versions from your AKS cluster.
+1. Under the `spec` section for `containers`, update the `image` key to fetch the `latest` and `tag` versions from your AKS cluster.
 
-    Use the templating values of `{{ .Values.image.registry }}.azurecr.io/{{ .Values.image.name }}:{{ default "latest" .Values.image.tag }}`. It's a good practice to split up the `registry`, `tag`, and `image` parts of the image name. Add three new template variables to this section of the file:
+    Use the templating values of `{{ .Values.image.registry }}.azurecr.io/{{ .Values.image.name }}:{{ default "latest" .Values.image.tag }}`. It's a good practice to split up the `registry`, `image`, and `tag` parts of the image name. Add three new template variables to this section of the file:
 
     ```yaml
     apiVersion: apps/v1
@@ -385,4 +385,4 @@ Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Value
     git push -u origin main
     ```
 
-1. When prompted, provide your GitHub username, and the PAT created previously as the password.
+1. When prompted, provide the PAT you created previously as the password.

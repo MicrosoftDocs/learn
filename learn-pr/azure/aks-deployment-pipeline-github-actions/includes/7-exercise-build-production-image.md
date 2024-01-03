@@ -16,11 +16,13 @@ In this exercise, you'll:
 
 1. To start building the pipeline, go to the fork of the sample repository in the GitHub website. Select the **Actions** tab.
 
-1. Below the header, select **set up a workflow yourself**.
+1. In the left pane, select **New workflow**.
 
-    :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Screenshot that shows the Get started with GitHub Actions page and the Set-up a workflow yourself link on the GitHub website.":::
+    :::image type="content" source="../media/new-workflow.png" alt-text="Screenshot that shows the New workflow button on the GitHub Actions page.":::
 
-    Copy and paste this basic workflow into the **Edit new file** pane:
+1. On the **Choose a workflow** page, select **set up a workflow yourself**.
+
+1. Copy and paste the followng basic workflow into the edit pane:
 
     ```yaml
     # This is a basic workflow to help you get started with Actions
@@ -58,23 +60,13 @@ In this exercise, you'll:
               echo test, and deploy your project.
     ```
 
-1. Above the **Edit new file** pane, rename the file from `main.yml` to `build-production.yml`.
+1. Above the editing pane, rename the file from `main.yml` to `build-production.yml`.
 
-    :::image type="content" source="../media/6-2-example-editor.png" alt-text="Screenshot that shows an example file being edited in the Edit new file pane on the GitHub website.":::
+1. Change the `name` key from `CI` to `Build and push the tagged build to production`.
 
-1. Change the `name` key to `Build and push the tagged build to production`.
+## Create the "on" tag trigger
 
-   Your file should look like this example:
-
-    ```yaml
-    # This is a basic workflow to help you get started with Actions
-
-    name: Build and push the tagged build to production
-    ```
-
-## Create the on tag trigger
-
-1. Change the default triggers in the `on` key.
+Change the default triggers in the `on` key.
 
 1. Remove the second trigger and leave only the `push` tags.
 
@@ -88,7 +80,8 @@ In this exercise, you'll:
         branches: [ main ]
     ```
 
-1. Remove the `branches` key and replace it with the `tags` key. This key means this workflow is only run on specific tags.
+1. Replace the `branches` key with following the `tags` key. This key means this workflow only runs on specific tags. In this case, the workflow runs only if the tag follows the `v*` pattern, which includes `v1.0.0`.
+
 
     ```yaml
     name: Build and push the tagged build to production
@@ -99,8 +92,6 @@ In this exercise, you'll:
           - 'v*'
     ```
 
-    In this case, the workflow runs only if the tag follows the `v*` pattern, which includes `v1.0.0`.
-
 ## Build and push the production image
 
 Let's work on the jobs you're going to run. In this process, you address both the build steps and the deploy steps from the diagram.
@@ -109,9 +100,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
 1. Rename the `build` key `build_push_image`.
 
-1. In the `steps` key, delete the last two commands, which are only examples from the template.
-
-   Your file should look like this example:
+1. In the `steps` key, delete the last two commands, which are only examples from the template. Keep the `checkout` option as you did when you created the staging image. Your file should look like this example:
 
     ```yaml
     name: Build and push the tagged build to production
@@ -128,8 +117,6 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
         steps:
           - uses: actions/checkout@v2
     ```
-
-    Leave the `checkout` option like you did when you created the staging image.
 
 1. Create a new step that gathers the necessary version information. You use the `::set-output` internal command to create this step. Add the following lines below the checkout action:
 
@@ -385,11 +372,11 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
 1. Select **Personal access tokens** > **Tokens (classic)** from the dropdown.
 
-1. Select **Generate new token** > **Generate new token (classic)** from the dropdown.
+1. Select **Generate a personal access token**.
 
-1. Provide a name for your PAT, such as *myPersonalAccessToken*
+1. Under **Note**, provide a name for your PAT, such as *myPersonalAccessToken*.
   
-1. Select the checkbox next to **workflow**.
+1. Under **Select scopes**, select the checkbox next to **workflow**.
 
     :::image type="content" source="../media/7-create-personal-access-token.png" alt-text="Screenshot that shows the personal access tokens page.":::
 
@@ -404,7 +391,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
 ## Trigger tag event
 
-1. Open your cloned repository in Azure Cloud Shell. Run `git pull`.
+1. In your cloned repository in Azure Cloud Shell, run `git pull`.
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
   

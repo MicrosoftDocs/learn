@@ -123,9 +123,6 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
     jobs:
       build_push_image:
         runs-on: ubuntu-20.04
-
-        steps:
-          - uses: actions/checkout@v2
     ```
 
     You already have a step that uses the `checkout` action. This action clones the repository into the job environment.
@@ -278,11 +275,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
               push: true
     ```
 
-1. Add another action between the checkout action and the login action, to set up the build engine for Docker to use. This action is called `docker/setup-buildx-action`.
-
-  > [!NOTE]
-    > Docker actions prior to version 2 had the login flow built-in. However, on versions 2 and above, these actions were separated. This is why we need two actions to set the entire workflow correctly.
-    To set this action, copy the below snippet and paste it between the checkout and the login actions.
+1. Add another action between the checkout action and the login action, to set up the build engine for Docker to use. This action is called `docker/setup-buildx-action`. To set this action, copy the following snippet and paste it between the `checkout` and `login` actions.
 
     ```yml
     - name: Set up Buildx
@@ -323,15 +316,15 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
               tags: ${{secrets.ACR_NAME}}/contoso-website:latest
     ```
 
-1. To commit the changes, select the **Start commit** button. Enter a description for the commit, and then select the **Commit new file** button:
+1. To commit the changes, select the **Commit changes** button. Enter a description for the commit, and then select the **Commit changes** button:
 
-    :::image type="content" source="../media/6-5-commit-staging.png" alt-text="Screenshot that shows the Start commit and Commit new file buttons in the Commit new file pane.":::
+    :::image type="content" source="../media/6-5-commit-staging.png" alt-text="Screenshot that shows the Commit changes button in the Commit changes pane.":::
 
-    Selecting the **Commit new file** button triggers a new build to start on the **Actions** tab. But, this build fails because you haven't set the secrets yet!
+    Selecting **Commit changes** triggers a new build to start on the **Actions** tab. But this build fails because you haven't set the secrets yet.
 
 ## Set the secrets
 
-1. On the repository start page, select the **Settings** tab. In the menu under **Security**, select **Secrets** and choose **Actions**. The **Actions Secrets** pane opens.
+1. On the repository start page, select the **Settings** tab. In the menu under **Security**, select **Secrets and variables** > **Actions**. The **Actions secrets and variables** pane opens.
 
 1. Select **New repository secret**.
 
@@ -371,16 +364,16 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     1. For **Secret**, enter the value and select **Add secret**.
 
-## Re-run the job
+## Rerun the job
 
 1. Select the **Actions** tab.
 
-1. Select the only execution in the list.
+1. Select the only execution in the list, the failed **build-staging.yml** job.
 
-1. On the right side, select **Re-run jobs**, and then select **Re-run all jobs**.
+1. At upper right, select **Re-run jobs** > **Re-run all jobs**, and on the **Re-run all jobs** screen, select **Re-run jobs**.
 
     :::image type="content" source="../media/6-7-rerun-jobs.png" alt-text="Screenshot that shows the Re-run jobs and Re-run all jobs buttons.":::
 
-1. When the build is completed, open Cloud Shell (or switch to it if it's already open), and run `az acr repository list --name <ACR_NAME> -o table` to confirm that a repository named `contoso-website` appears in the results.
+1. When the build completes, in Cloud Shell run `az acr repository list --name <ACR_NAME> -o table` to confirm that a repository named `contoso-website` appears in the results.
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)

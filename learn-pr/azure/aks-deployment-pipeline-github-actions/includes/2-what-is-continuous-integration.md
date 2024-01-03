@@ -1,18 +1,14 @@
-Before you start to deploy or change the company's infrastructure, it's essential that you understand the concepts behind what you plan to build.
+Before you change or deploy your the company's infrastructure, understand the concepts behind what you plan to build by exploring the concepts behind continuous integration (CI) and continuous delivery or deployment (CD). In this unit, you learn what a pipeline is and how to apply CI and CD to GitHub Actions.
 
-Let's explore the concepts behind CI and CD. In this unit, we learn what a pipeline is and how to apply CI and CD to GitHub Actions.
+CI and CD are operating practices that help make developer teams more productive by introducing continuous automation and monitoring into all the phases of software development, testing, and deployment. CI and CD aim to reduce problems that arise when you integrate new code into an existing code base.
 
-## What are CI and CD?
+## Continuous integration
 
-CI and CD are operating practices that help make developer teams more productive by introducing continuous automation and monitoring into all the phases of software development, testing, and deployment. CI and CD aims to reduce problems that arise when you integrate new code into an existing code base.
+CI requires that teams frequently implement and integrate the smallest changes in the code. Implementing this technique means that you constantly test, compile, deploy, and then test again in production.
 
-### Continuous integration (CI)
+One of the most critical CI principles is to merge all new changes back into the main branch as often as possible. Continually merging changes helps you avoid "integration hell" on merge day, which can occur when many developers combine their changes at once in a single day.
 
-CI dictates that teams frequently implement and integrate the smallest changes in the code. Implementing this technique means that you constantly test, compile, deploy, and then test again in production.
-
-One of the most critical CI principles is that you merge all of the newest changes back into the main branch as often as possible. Continually merging changes helps you avoid "integration hell" and merge day, which often occurs when many developers combine their changes all at once in a single day.
-
-The goal of CI is to avoid production problems caused by code changes by detecting problems before they can cause real damage to you or your customers.
+The goal of CI is to detect and avoid production problems caused by code changes before they can damage your code or your customers.
 
 ### Continuous delivery (CD)
 
