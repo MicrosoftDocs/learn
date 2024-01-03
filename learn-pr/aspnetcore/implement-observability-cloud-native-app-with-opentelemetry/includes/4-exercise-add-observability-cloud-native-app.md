@@ -9,10 +9,10 @@ To use a codespace create a pre-configured GitHub Codespace with this [Codespace
 This takes several minutes while GitHub creates and configures the codespace. Once finished, you will see the code files for the exercise. The code used for the rest of this module is in the **/dotnet-observability** directory.
 
 To use Visual Studio Code:
-    1. Make sure Docker is running. In a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
-    1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
-    1. Select your forked repository. Visual Studio Code creates your development container locally.
 
+1. Make sure Docker is running. In a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
+1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
+1. Select your forked repository. Visual Studio Code creates your development container locally.
 
 Follow these steps to create and run Docker containers in the codespace.
 
@@ -203,8 +203,7 @@ With the OpenTelemetry packages added, you'll now introduce the code to make use
 1. Run these Docker commands:
 
     ```docker
-    docker-compose build
-    docker-compose up
+    docker-compose up --build
     ```
 
     The back-end (Products service) and front-end (Store service) containers should build, and then the app starts.
