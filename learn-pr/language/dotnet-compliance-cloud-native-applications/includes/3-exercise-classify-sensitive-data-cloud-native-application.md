@@ -83,6 +83,7 @@ In this task, you'll add the code to create two new taxonomies. Then you'll anno
 
     ```csharp
     using Microsoft.Extensions.Compliance.Classification;
+    using Microsoft.Extensions.Compliance.Redaction;
     
     public static class DataClassifications
     {
