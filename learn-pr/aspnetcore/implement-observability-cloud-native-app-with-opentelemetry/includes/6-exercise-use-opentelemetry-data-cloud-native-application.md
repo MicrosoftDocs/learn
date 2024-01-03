@@ -194,11 +194,10 @@ You'll now test the new observability features you've added to the app.
 1. Start the app with Docker:
 
     ```bash
-    docker-compose build
-    docker-compose up
+    docker-compose up --build
     ```
 
-1.  In the **PORTS** tab select **Open in Browser** for **Prometheus (9090)**. If you are running locally in Visual Studio Code, open a browser and, in a new tab, go to the Prometheus app **http://localhost:9090**.
+1. In the **PORTS** tab select **Open in Browser** for **Prometheus (9090)**. If you are running locally in Visual Studio Code, open a browser and, in a new tab, go to the Prometheus app **http://localhost:9090**.
 
 1. In the top menu, select **Status**, then select **Targets**.
 
@@ -340,8 +339,7 @@ You'll now extend the tracing capabilities of the app by adding Zipkin. As you d
 1. Start the app with Docker:
 
     ```bash
-    docker-compose build
-    docker-compose up
+    docker-compose up --build
     ```
 
 1. In the **PORTS** tab select **Open in Browser** for **Prometheus (9090)**. If you are running locally in Visual Studio Code, open a new browser tab, go to the Zipkin app **http://localhost:9411**.
@@ -427,7 +425,7 @@ The last step is to add Application Insights to your app.
 
     ```yml
     environment:
-      - APPINSIGHTS_CONNECTION_STRING=InstrumentationKey=b851fa75-85a2-42f7-bb6f-413725d9d8ba;IngestionEndpoint=https://eastus-2.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/
+      - APPLICATIONINSIGHTS_CONNECTION_STRING=InstrumentationKey=b851fa75-85a2-42f7-bb6f-413725d9d8ba;IngestionEndpoint=https://eastus-2.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/
     ```
 
     Replace the above connection string with the one you copied from the Azure CLI.
@@ -503,8 +501,7 @@ The last step is to add Application Insights to your app.
 1. Start the app with Docker:
 
     ```bash
-    docker-compose build
-    docker-compose up
+    docker-compose up --build
     ```
 
 1. Sign-in to the Azure portal, with the same credentials you used to sign-in to the Azure CLI.
