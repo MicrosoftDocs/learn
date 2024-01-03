@@ -6,7 +6,7 @@ Let's use the results of the `join` operator to answer questions about sales.
 
 In our retail company scenario, your team is asking you to list the three countries/regions that have the most sales.
 
-As you begin inspecting the *SalesFact* table, you notice that the figures you need are available in the **SalesAmount** column, but the table doesn't contain any country data. Examining the other tables, you notice that the country data is available in the **RegionCountryName** column in the *Customers* table. You also notice that both tables have a **CustomerKey** column.
+As you begin inspecting the *SalesFact* table, you notice that the figures you need are available in the **SalesAmount** column, but the table doesn't contain any country/region data. Examining the other tables, you notice that the country/region data is available in the **RegionCountryName** column in the *Customers* table. You also notice that both tables have a **CustomerKey** column.
 
 Because the data is spread over two tables, you need both the customer data and the sales data to write a query that provides the requested information. To write the query, you use the `join` operator and the **CustomerKey** column to match the rows from both tables.
 

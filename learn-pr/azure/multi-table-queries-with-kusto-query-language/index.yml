@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Write multi-table queries by using Kusto Query Language
   description: Learn how to write Kusto Query Language (KQL) queries to combine and retrieve data from two or more tables by using the `lookup`, `join`, and `union` operators.
-  ms.date: 10/04/2022
+  ms.date: 01/03/2024
   author: shsagir
   ms.author: shsagir
   ms.topic: module

@@ -4,9 +4,9 @@ In this module, you learn about various ways to combine data in Kusto queries to
 
 ## Understand your data
 
-Before you start writing queries that combine information from your tables, you need to understand your data. When you work with Kusto queries, you'll want to think of tables as broadly belonging to one of two categories:
+Before you start writing queries that combine information from your tables, you need to understand your data. When you work with Kusto queries, you want to think of tables as broadly belonging to one of two categories:
 
-- **Fact tables**: Tables whose records are immutable *facts*, such as the *SalesFact* table in the retail company scenario. In these tables, records are progressively appended in a streaming fashion or in large chunks. The records stay there until they're removed, and they're never updated.
+- **Fact tables**: Tables whose records are immutable *facts*, such as the *SalesFact* table in the retail company scenario. In these tables, records are progressively appended in a streaming fashion or in large chunks. The records stay in the table until they're removed and they're never updated.
 - **Dimension tables**: Tables whose records are mutable *dimensions*, such as the *Customers* and *Products* tables in the retail company scenario. These tables hold reference data, such as lookup tables from an entity identifier to its properties. Dimension tables aren't regularly updated with new data.
 
 In our retail company scenario, you use dimension tables to enrich the *SalesFact* table with additional information or to provide more options for filtering the data for queries.
@@ -35,11 +35,11 @@ Running these queries on the fact and dimension tables in the retail company sce
 | Customers | 18,484 | - CityName (string)<br />- CompanyName (string)<br />- ContinentName (string)<br />- **CustomerKey** (long)<br />- Education (string)<br />- FirstName (string)<br />- Gender (string)<br />- LastName (string)<br />- MaritalStatus (string)<br />- Occupation (string)<br />- RegionCountryName (string)<br />- StateProvinceName (string) |
 | Products | 2,517 | - ProductName (string)<br />- Manufacturer (string)<br />- ColorName (string)<br />- ClassName (string)<br />- ProductCategoryName (string)<br />- ProductSubcategoryName (string)<br />- **ProductKey** (long) |
 
-In the table, *CustomerKey* and *ProductKey* are highlighted to indicate that they're unique identifiers used to combine records between tables.
+In the table, we highlighted the unique identifiers *CustomerKey* and *ProductKey* that are used to combine records between tables.
 
 ## Understand multi-table queries
 
-Now that you've analyzed your data, you need to understand how to combine tables to provide the information you need. Kusto queries provide several operators that you can use to combine data from multiple tables, including the `lookup`, `join`, and `union` operators.
+After analyzing your data, you need to understand how to combine tables to provide the information you need. Kusto queries provide several operators that you can use to combine data from multiple tables, including the `lookup`, `join`, and `union` operators.
 
 The `join` operator merges the rows of two tables by matching values of the specified columns from each table. The resulting table depends on the kind of join you use. For example, if you use an *inner join*, the table has the same columns as the left table (sometimes called the *outer table*), plus the columns from the right table (sometimes called the *inner table*). You learn more about join kinds in the next section. For best performance, if one table is always smaller than the other, use it as the left side of the `join` operator.
 
@@ -51,8 +51,8 @@ The `materialize()` function caches results within a query execution for subsequ
 
 - Are expensive to compute
 - Are nondeterministic
- 
-You'll learn more about the various table merging operators and the `materialize()` function, and how to use them, shortly.
+
+Shortly, you learn more about the various table merging operators and the `materialize()` function, and how to use them.
 
 ## Kinds of join
 

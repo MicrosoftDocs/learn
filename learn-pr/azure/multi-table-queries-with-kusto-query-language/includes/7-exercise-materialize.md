@@ -26,9 +26,9 @@ To provide this information, you want to break down the query into stages so tha
 
     :::image type="content" source="../media/7-materialize-1.png" alt-text="Screenshot of the `materialize` function, showing the first block of the query.":::
 
-1. Run the following query to add the province and the details about the top customers in the states to the results. You do this by joining the `USCustomerSales` subquery to the results from the previous query.
+1. Run the following query to add the province and the details about the top customers in the states to the results. You add this data by joining the `USCustomerSales` subquery to the results from the previous query.
 
-    You optimize the query by using the `materialize` function in the *USCustomerSales* table `let` statement. Doing so runs the assigned subquery only once and caches the results.
+    Now, optimize the query by using the `materialize` function in the *USCustomerSales* table `let` statement. Doing so runs the assigned subquery only once and caches the results.
 
     <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA3WQzU7DMBCE73mKvTVBHOBc5YAqcUFCiNAzWppVcWvvVpsNkKoPX9v8NqQ+WLbWM/ONPRksm0XfmQTSDmr4PR/g/ZWU4JHWTnghPZsO9xgI6hpmS3ZGLTSGRt1sXvgTpwY9JbcQp+rQuz2VBcSVB7e4snw7QNeHgBrHUfwkhn7sEB+U+XwTEkEFL8MP4x0NXzYbcQxbx23tmElPOgn/FVTzYoRZTFDkWt8IGoPbMoFMMVYZKQseVN4cryh9UnT1Itt+B5/Fx6Hj+qjr54AfkxGXcHEmJLlUeY8tpxhMdnB9lcT/mh0BN6LUufwBAAA=" target="_blank">Run the query</a>
 

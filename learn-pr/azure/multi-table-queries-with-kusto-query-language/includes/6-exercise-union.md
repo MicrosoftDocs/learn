@@ -6,7 +6,7 @@ Your sales team asks you to create a single table that combines 10 arbitrary sal
 
 Use the `let` statement to create three tabular expressions, each with 10 records from a specific country/region, in the *SalesFact* table, to represent sales data from three countries/regions. You can think of them as three separate tables.
 
-Examining these tables, you can see that they have the same columns. The only difference is the data in the `RegionCountryName` column that represents the country. Use the `union` operator to combine the sales facts tables for the United Kingdom and the United States with the sales facts table for Australia.
+Examining these tables, you can see that they have the same columns. The only difference is the data in the `RegionCountryName` column. Use the `union` operator to combine the sales facts tables for the United Kingdom and the United States with the sales facts table for Australia.
 
 1. Run the following query.
 
@@ -68,7 +68,7 @@ The next month, your sales team again asks you to create the sales data from the
 
     :::image type="content" source="../media/6-union-2.png" alt-text="Screenshot of the union operator, with tables that have different columns, query, and results.":::
 
-1. Notice that you get all the rows from the three tables and all the columns that occur in any of the tables. Cells that weren't defined by an input row are set to null. Try modifying the query to add more columns and see how their values are populated in the results.
+1. Notice that you get all the rows from the three tables and all the columns that occur in any of the tables. Cells that aren't defined by an input row are set to null. Try modifying the query to add more columns and see how their values are populated in the results.
 
 ## Use the `union` operator with tables that have different columns and return only the columns that occur in all tables
 
