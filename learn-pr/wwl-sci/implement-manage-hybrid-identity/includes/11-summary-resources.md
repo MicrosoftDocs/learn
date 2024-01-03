@@ -4,7 +4,7 @@ Now that you've reviewed this module, you should be able to:
  -  Manage Microsoft Entra Directory Connect (AADC)
  -  Manage password hash synchronization (PHS)
  -  Manage pass-through authentication (PTA)
- -  Manage seamless single-sign-on (Seamless SSO)
+ -  Manage seamless single-sign-on (SSO)
  -  Manage federation excluding manual ADFS deployments
  -  Troubleshoot synchronization errors
  -  Implement and manage Microsoft Entra Directory Connect Health
