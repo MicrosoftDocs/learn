@@ -2,7 +2,7 @@ Microsoft Entra Connect Health provides monitoring of your on-premises identity 
 
 The information is presented in the [Microsoft Entra Connect Health portal](https://aka.ms/aadconnecthealth). Use the Microsoft Entra Connect Health portal to view alerts, performance monitoring, usage analytics, and other information. Microsoft Entra Connect Health enables the single lens of health for your key identity components in one place.
 
-:::image type="content" source="../media/azure-active-directory-connect-health-2-8d08121d.png" alt-text="Diagram of Microsoft Entra Connect Health.Shows how Microsoft Entra Connect is maintained.":::
+:::image type="content" source="../media/azure-active-directory-connect-health-2-8d08121d.png" alt-text="Diagram of Microsoft Entra Connect Health. Shows how Microsoft Entra Connect is maintained.":::
 
 
 Using the Microsoft Entra Connect Health feature requires a Microsoft Entra ID Premium P1 license.
@@ -70,7 +70,7 @@ To verify that the agent was installed, look for the following services on the s
  -  Microsoft Entra Connect Health AD FS Insights Service
  -  Microsoft Entra Connect Health AD FS Monitoring Service
 
-:::image type="content" source="../media/install-5-01ef9e2e.png" alt-text="Screenshot of the Microsoft Entra Connect Health AD FS services.Deploy only the services you need.":::
+:::image type="content" source="../media/install-5-01ef9e2e.png" alt-text="Screenshot of the Microsoft Entra Connect Health AD FS services. Deploy only the services you need.":::
 
 
 ## Install the agent for Sync
