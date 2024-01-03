@@ -115,8 +115,7 @@ You'll now add the metric to OpenTelemetry, so that it can be exported to your o
 1. Start the app with Docker:
 
     ```bash
-    docker-compose build
-    docker-compose up
+    docker-compose up --build
     ```
 
 1. Open the **:::no-loc text="eShopLite":::** app in a browser at **http://localhost:32000**.

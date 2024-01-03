@@ -3,7 +3,7 @@ uid: learn.wwl.secure-networking
 metadata:
   title: Secure networking
   description: Secure networking
-  ms.date: 12/29/2023
+  ms.date: 01/03/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: learning-path
@@ -35,6 +35,7 @@ subjects:
 - information-protection-governance
 modules:
 - learn.wwl.security-virtual-networks
+- learn.wwl.security-private-access-azure-resources
 - learn.wwl.security-public-access-azure-resources
 trophy:
   uid: learn.wwl.secure-networking.trophy

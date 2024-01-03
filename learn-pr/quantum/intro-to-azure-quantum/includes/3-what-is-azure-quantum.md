@@ -5,15 +5,25 @@ With Azure Quantum, you can write code once and run it with little to no change 
 
 ## What's included on Azure Quantum?
 
-With Azure Quantum and the Quantum Development Kit, you're able to program your quantum algorithms, then apply those quantum solutions within the existing Azure platform.
+With Azure Quantum and the Azure Quantum Development Kit (Modern QDK), you're able to program your quantum algorithms, then apply those quantum solutions within the existing Azure platform.
 
-### Quantum Development Kit
+### Azure Quantum Development Kit
 
-Quantum programming is a distinct art from classical programming requiring very different tools to understand and express quantum algorithmic thinking. The Quantum Development Kit (QDK) is the software development kit required to interface with the Azure Quantum service. With the Quantum Development Kit, you can build programs that run on quantum hardware in Azure Quantum.
+Quantum programming is a distinct art from classical programming requiring very different tools to understand and express quantum algorithmic thinking. The Azure Quantum Development Kit (Modern QDK) is the software development kit required to interface with the Azure Quantum service. With the Quantum Development Kit, you can build programs that run on quantum hardware in Azure Quantum.
 
-The QDK includes Q#, a high-level **quantum programming language**. Q# is designed to address the challenges of quantum information processing; it is integrated in a software stack that enables a quantum algorithm to be compiled down to the primitive operations of a quantum computer.
+The Modern QDK includes Q#, a high-level **quantum programming language**. Q# is designed to address the challenges of quantum information processing; it is integrated in a software stack that enables a quantum algorithm to be compiled down to the primitive operations of a quantum computer.
 
-The Quantum Development Kit is designed to be used by a broad range of developers, from experienced quantum experts to developers who have never written a line of quantum code. It is built into the Azure Quantum portal, where you can develop programs using the free hosted Azure Notebooks. You can also install the QDK extension for VS Code on your computer to use your own local development environment and work both online and offline with the Azure Quantum service.
+The Modern QDK is the only development kit ready for Fault-Tolerant Quantum Computing (FTQC). With the Modern QDK, you can:
+
+- **Debug your code:** It offers a quantum computing debugger that can step through classical and quantum code. Paired with its sparse in-memory simulator it provides fast simulation of up to thousands of logical qubits.
+
+- **Choose your platform:** The Modern QDK runs in your web browser with no installation necessary, and with its VS Code extension on your PC, Mac or Linux machine.
+
+- **Write your code faster:** Syntax highlighting and intelligent code completion with IntelliSense and write entire blocks of code assisted with Copilot.
+
+- **Run on your choice of hardware:** The QDK integrates seamlessly with Azure Quantum to run your algorithms on a wide range of quantum computers and simulators.
+
+- **Design for the FTQC:** Paired with the state-of-the-art Azure Quantum Resource Estimator, it provides a language designed specifically for quantum computing, Q#, freeing you from thinking about qubit architectures, abstracting the hardware and allowing you to mix classical and quantum computation all performed by the quantum machine you are targeting.
 
 ### Hybrid quantum computing
 
