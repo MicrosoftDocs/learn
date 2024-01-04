@@ -21,4 +21,4 @@ In this module, you will:
 - A GitHub account to clone code repositories
 - Basic knowledge of the Visual Studio Code IDE
 - Basic understanding of the C# programming language
-- Familiarity with classes, abstract classes, and inheritance 
+- Familiarity with classes, abstract classes, and inheritance
