@@ -89,13 +89,13 @@ Expand the *stores* folder and each of the numbered folders inside.
 
 1. In the `./nodejs-files` subfolder, create a *index.js* file to open it in the editor.
 
-1. At the top of the file, add the following code in include the **fs** module is available to the code in the file.
+1. At the top of the file, add the following code to include the **fs** module in the file.
 
    ```javascript
    const fs = require("fs").promises;
    ```
 
-1. Next, create the `main` function is the entry point for your code. The last line of code in this file invokes the `main` method.
+1. Next, create the `main` function which is the entry point for your code. The last line of code in this file invokes the `main` method.
 
    ```javascript
    const fs = require("fs").promises;
@@ -123,7 +123,7 @@ Expand the *stores* folder and each of the numbered folders inside.
     * (2) Read the currentFolder with the `readdir` method. 
     * (3) Add a block to loop over each item returned from the `readdir` method   using the asynchronous `for...of` loop. 
     * (4) Add an `if` statement to determine if the item is a file or a directory. 
-    * (5) If the item is a directory, _resursively call the function `findSalesFiles` again, passing in the path to the item. 
+    * (5) If the item is a directory, _recursively_ call the function `findSalesFiles` again, passing in the path to the item. 
     * (6) If it's not a directory, add a check to make sure the item name matches *sales.json*.
 
    ```javascript
@@ -141,7 +141,7 @@ Expand the *stores* folder and each of the numbered folders inside.
         // (4) Add an `if` statement to determine if the item is a file or a directory. 
         if (item.isDirectory()) {
     
-          // (5) If the item is a directory, _resursively call the function `findSalesFiles` again, passing in the path to the item. 
+          // (5) If the item is a directory, recursively call the function `findSalesFiles` again, passing in the path to the item. 
           const resultsReturned = await findSalesFiles(`${folderName}/${item.name}`);
           results = results.concat(resultsReturned);
         } else {
@@ -185,7 +185,7 @@ Expand the *stores* folder and each of the numbered folders inside.
         // (4) Add an `if` statement to determine if the item is a file or a directory. 
         if (item.isDirectory()) {
     
-          // (5) If the item is a directory, _resursively call the function `findSalesFiles` again, passing in the path to the item. 
+          // (5) If the item is a directory, recursively call the function `findSalesFiles` again, passing in the path to the item. 
           const resultsReturned = await findSalesFiles(`${folderName}/${item.name}`);
           results = results.concat(resultsReturned);
         } else {
@@ -253,7 +253,7 @@ async function findSalesFiles(folderName) {
     // (4) Add an `if` statement to determine if the item is a file or a directory. 
     if (item.isDirectory()) {
 
-      // (5) If the item is a directory, _resursively call the function `findSalesFiles` again, passing in the path to the item. 
+      // (5) If the item is a directory, recursively call the function `findSalesFiles` again, passing in the path to the item. 
       const resultsReturned = await findSalesFiles(`${folderName}/${item.name}`);
       results = results.concat(resultsReturned);
     } else {

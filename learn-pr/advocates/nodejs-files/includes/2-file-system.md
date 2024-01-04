@@ -6,7 +6,7 @@ Here, you learn how to use Node.js to read the file system to discover files and
 
 Node.js provides a built-in module, **fs** (short for _file system_), for working with the file system. Because it is part of the Node.js runtime, you don't need to install it; you reference it just as you would any other dependency. 
 
-The **fs** module has a `promises` namespace that has `promise` versions of all methods. Using the `promise` namespace is the preferred way to work with the **fs** module because it allows you to use `async` to avoids the messiness of callbacks or the blocking of synchronous methods.
+The **fs** module has a `promises` namespace that has `promise` versions of all methods. Using the `promise` namespace is the preferred way to work with the **fs** module because it allows you to use `async` to avoid the messiness of callbacks or the blocking of synchronous methods.
 
 ```javascript
 const fs = require("fs").promises;
@@ -125,4 +125,4 @@ The output looks like:
 
 ## Use a predefined development environment
 
-This training module offers a development container, either in a browser or for your local computer. This container provides all the need environment so you can use this training module without having to install an IDE or Node.js. You don't need to know anything about the container to complete this training module.
+This training module offers a development container, either in a browser or for your local computer. This container provides all the needed environment so you can use this training module without having to install an IDE or Node.js. You don't need to know anything about the container to complete this training module.

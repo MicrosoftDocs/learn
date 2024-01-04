@@ -47,7 +47,7 @@ In this exercise, you complete the project by reading the `.json files`, adding 
 
 ## Call the calculateSalesTotals method
 
-1.  In the `main` function, , modify the code to: 
+1.  In the `main` function, modify the code to: 
 
     * (1) Add a call to the `calculateSalesTotals` function just above the `fs.writeFile` call.
     * (2) Modify the `fs.writeFile` block to write the value of the `salesTotal` variable to the *totals.txt* file.
@@ -148,7 +148,7 @@ async function findSalesFiles(folderName) {
     // (4) Add an `if` statement to determine if the item is a file or a directory. 
     if (item.isDirectory()) {
 
-      // (5) If the item is a directory, _resursively call the function `findSalesFiles` again, passing in the path to the item. 
+      // (5) If the item is a directory, recursively call the function `findSalesFiles` again, passing in the path to the item. 
       const resultsReturned = await findSalesFiles(path.join(folderName, item.name));
       results = results.concat(resultsReturned);
     } else {

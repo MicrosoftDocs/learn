@@ -1,4 +1,4 @@
-The Tailwind Traders application needs to read each store's sales data then calculate the total, then write the total of all the individual store sales files to a new file. 
+The Tailwind Traders application needs to read each store's sales data, then calculate the total, then write the total of all the individual store sales files to a new file. 
 
 ## Read data from files with fs.readFile
 
@@ -41,7 +41,7 @@ The output is:
 
 This data in its string format doesn't do you much good. It's still just characters, but now in a format that you can read. You want the ability to turn this string into programmatically accessible data (known as parsing data). 
 
-JavaScript includes a built-in parser for JSON files. You don't need to include anything to use it. Just use the `JSON` object. As a bonus, you don't need to convert a `Buffer` value to a string before you parse it. The `JSON.parse` method can do that. **JSON.parse** is a common method that you'll use frequently in web development when an API receives data over the internet as strings then needs to be turned into JSON objects.
+JavaScript includes a built-in parser for JSON files. You don't need to include anything to use it. Just use the `JSON` object. As a bonus, you don't need to convert a `Buffer` value to a string before you parse it. The `JSON.parse` method can do that. **JSON.parse** is a common method that you'll use frequently in web development when an API receives data (as strings) over the internet, which then needs to be turned into JSON objects.
 
 ```javascript
 // read the file as string
