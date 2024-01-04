@@ -211,17 +211,17 @@ For simplicity, you'll deploy the template spec into the same sandbox resource g
 1. Get the template spec version's resource ID by running the following Azure CLI command:
 
    ```azurecli
-   templateSpecVersionResourceId=$(az ts show \
-     --name ToyCosmosDBAccount \
-     --version 1.0 \
-     --query id \
-     --output tsv)
+   id=$(az ts show \ 
+    --name ToyCosmosDBAccount \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --version "1.0" \
+    --query "id")
    ```
 
 1. Deploy the template spec by using this Azure CLI command in the Visual Studio Code terminal:
 
    ```azurecli
-   az deployment group create --template-spec $templateSpecVersionResourceId
+   az deployment group create --template-spec $id
    ```
 
 ::: zone-end
