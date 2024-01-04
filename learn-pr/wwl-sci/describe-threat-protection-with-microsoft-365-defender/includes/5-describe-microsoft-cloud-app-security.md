@@ -50,8 +50,3 @@ Defender for Cloud Apps is also integrated directly into Microsoft Defender XDR,
 Defender for Cloud Apps closes the gap on OAuth app security, helping you protect inter-app data exchange with application governance. With Defender for Cloud Apps, you can watch for unused apps and monitor both current and expired credentials to govern the apps used in your organization and maintain app hygiene.
 
 :::image type="content" source="../media/microsoft-cloud-app-security-v2-inline.png" lightbox="../media/microsoft-cloud-app-security-v2-expanded.png" alt-text="Screenshot of Microsoft Defender for Cloud Apps dashboard.":::
-
-In this interactive guide, you’ll get an introduction to the capabilities available with Microsoft Defender for Cloud Apps. Select the image to get started and follow the prompts on the screen.
-
-[![Interactive guide](../media/5-defender-cloud-apps-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/mcas-revised-2048x1080-v2-november-2022-update/index.html?azure-portal=true)
-
