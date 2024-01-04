@@ -17402,6 +17402,106 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/quantum/qsharp-explore-key-concepts-quantum-computing/index.yml",
+      "redirect_url": "/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/qsharp-explore-key-concepts-quantum-computing/1-introduction.yml",
+      "redirect_url": "/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/qsharp-explore-key-concepts-quantum-computing/10-summary.yml",
+      "redirect_url": "/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/qsharp-explore-key-concepts-quantum-computing/2-superposition-quantum-computing.yml",
+      "redirect_url": "/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/qsharp-explore-key-concepts-quantum-computing/3-explore-superposition-qsharp.yml",
+      "redirect_url": "/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/qsharp-explore-key-concepts-quantum-computing/4-interference-quantum-computing.yml",
+      "redirect_url": "/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/qsharp-explore-key-concepts-quantum-computing/5-explore-interference-qsharp.yml",
+      "redirect_url": "/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/qsharp-explore-key-concepts-quantum-computing/6-entanglement-quantum-computing.yml",
+      "redirect_url": "/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/qsharp-explore-key-concepts-quantum-computing/7-explore-entanglement-qsharp.yml",
+      "redirect_url": "/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/qsharp-explore-key-concepts-quantum-computing/8-introduction-quantum-algorithms.yml",
+      "redirect_url": "/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/qsharp-explore-key-concepts-quantum-computing/9-knowledge-check.yml",
+      "redirect_url": "/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/use-qsharp-libraries/index.yml",
+      "redirect_url": "/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/use-qsharp-libraries/1-introduction.yml",
+      "redirect_url": "/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/use-qsharp-libraries/2-libraries-overview.yml",
+      "redirect_url": "/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/use-qsharp-libraries/3-api-documentation.yml",
+      "redirect_url": "/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/use-qsharp-libraries/4-write-oracle.yml",
+      "redirect_url": "/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/use-qsharp-libraries/5-run-full-programs.yml",
+      "redirect_url": "/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/use-qsharp-libraries/6-write-documentation.yml",
+      "redirect_url": "/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/use-qsharp-libraries/7-knowledge-check.yml",
+      "redirect_url": "/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/use-qsharp-libraries/8-summary.yml",
+      "redirect_url": "/training/paths/quantum-computing-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/implement-docker-multi-stage-builds/index.md",
       "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/",
       "redirect_document_id": false
