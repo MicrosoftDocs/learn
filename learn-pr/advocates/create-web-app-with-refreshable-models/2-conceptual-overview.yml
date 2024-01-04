@@ -5,7 +5,7 @@ metadata:
   description: Building a web app to perform inference against a local machine learning model.
   author: jlooper
   ms.date: 02/10/2020
-  ms.author: jelooper
+  ms.author: chnoring
   ms.topic: unit
   ms.custom: team=nextgen
 title: Conceptual overview
