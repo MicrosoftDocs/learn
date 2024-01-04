@@ -6,7 +6,7 @@ metadata:
   description: Exercise - Configure a Playbook for a security event
   ms.date: 09/30/2019
   author: elazark
-  ms.author: memildin
+  ms.author: elkrieger
   ms.topic: unit
 durationInMinutes: 10
 azureSandbox: true

@@ -1,8 +1,8 @@
 Azure provides Azure Virtual Machine instances that offer scalability while reducing costs, and are ideal for workloads that can be interrupted. However, these virtual machines (VMs) access unused Azure compute capacity at lower prices but still support high-performance computing scenarios.
 
-Your company's drone-tracking solution is deployed on Azure Kubernetes Service (AKS) as many containerized applications and services. One of these services is a batch-processing service that schedules drone flight paths. With a sudden growth in your customer base, the batch-processing service gets inundated with requests and builds up a backlog of deliveries. This situation is causing delays and frustrating customers.
+Your company's drone-tracking solution is deployed on Azure Kubernetes Service (AKS) as many containerized applications and services. One of these services is a batch-processing service that schedules drone flight paths. With a sudden growth in your customer base, the batch-processing service gets inundated with requests and builds up a backlog of deliveries. This situation is causing delays and customer frustration.
 
-Automatically scaling the number of batch-processing service replicas provides for the timely processing of orders. However, it also requires you to deploy more nodes to keep up with computing resource needs. Analyzing usage trends in Azure Monitor, you notice that these nodes are used only at specific times and not in a cost-effective way. The batch-processing service is stateless and doesn't save any client-session data. You realize that you can save money by:
+Automatically scaling the number of batch-processing service replicas provides for timely order processing. However, it also requires you to deploy more nodes to keep up with computing resource needs. Analyzing usage trends in Azure Monitor, you notice that these nodes are used only at specific times and not in a cost-effective way. The batch-processing service is stateless and doesn't save any client-session data. You realize that you can save money by:
 
 - Using lower-cost node instances.
 - Automatically scaling the node count in the node pool that's configured for batch processing.
@@ -21,7 +21,7 @@ A *spot virtual machine* is a VM that gives you access to unused Azure compute c
 
 ### Spot VM availability
 
-Spot VM availability depends on factors such as capacity, size, region, and time of day. Azure allocates VMs only if capacity is available. As a result, there's no service-level agreement (SLA) for these types of VMs and they offer no high-availability guarantees.
+Spot VM availability depends on factors such as capacity, size, region, and time of day. Azure allocates VMs only if capacity is available. As a result, there's no service-level agreement (SLA) for these types of VMs, and they offer no high-availability guarantees.
 
 ### Spot VM eviction policy
 
@@ -33,7 +33,7 @@ A spot virtual machine scale set is a virtual machine scale set that supports Az
 
 - **Deallocate**: The Deallocate policy functions exactly as described earlier.
 
-- **Delete**:  The Delete policy allows you to avoid the cost of disks and hitting quota limits. With the Delete eviction policy, evicted VMs are deleted together with their underlying disks. The scale set's autoscaling feature can now automatically try to compensate for the eviction of VMs by creating new VMs. Although the creation of VMs isn't guaranteed, the evicted VMs don't count toward your vCPU quota or incur costs for underlying disks.  
+- **Delete**:  The Delete policy allows you to avoid the cost of disks and hitting quota limits. With the Delete eviction policy, evicted VMs are deleted together with their underlying disks. The scale set's autoscaling feature can now automatically try to compensate for VM eviction by creating new VMs. Although the creation of VMs isn't guaranteed, the evicted VMs don't count toward your vCPU quota or incur costs for underlying disks.  
 
     A best practice is to use the autoscale feature only when you set the eviction policy to **Delete** on the scale set.
 
@@ -51,7 +51,7 @@ Use spot node pools to:
 - Define the maximum price you want to pay per hour.
 - Enable the recommended AKS Kubernetes cluster autoscaler when using spot node pools.
 
-For example, to support the batch-processing service of the drone-tracking application, you can create a spot user node pool and enable the cluster autoscaler. You then configure the horizontal pod scaler to deploy more batch-processing services to match resource demands.
+For example, to support the drone-tracking application's batch-processing service, you can create a spot user node pool and enable the cluster autoscaler. You can then configure the horizontal pod scaler to deploy more batch-processing services to match resource demands.
 
 As the demand for nodes increases, the cluster autoscaler can scale the number of nodes up and down in the spot node pool. If node evictions happen, the cluster autoscaler keeps trying to scale up the node count if extra nodes are still needed.
 
@@ -62,18 +62,17 @@ Before you decide to add a spot user node pool to your AKS cluster, consider the
 - The underlying spot scale set is deployed only to a single fault domain and offers no high-availability guarantees.
 - The AKS cluster needs multiple node-pool support to be enabled.
 - You can use spot node pools only as user node pools.
-- Spot node pools can't be upgraded.
+- You can't upgrade spot node pools.
 - The creation of spot VMs isn't guaranteed. The creation of spot nodes depends on capacity and quota availability in the cluster's deployed Azure region.
 
 Remember that spot node pools should be used only for workloads that can be interrupted.
 
 >[!IMPORTANT]
->
 >In some subscriptions, such as sponsorship subscriptions, the ability to create spot VMs and spot node pools is limited. You might not be able to create a spot node pool for your cluster.
 
 ## Add a spot node pool to an AKS cluster
 
-A spot node pool can't be a system node pool for an AKS cluster. First you need to create your cluster and then use the `az aks nodepool add` command to add a new user node pool.
+A spot node pool can't be a system node pool for an AKS cluster. First, you need to create your cluster and then use the `az aks nodepool add` command to add a new user node pool.
 
 You set several parameters for a new node pool to configure it as a spot node pool.
 
@@ -83,15 +82,15 @@ The `--priority` parameter is set to `Regular` by default for a new node pool. S
 
 ### Eviction policy
 
-A spot node pool must use a virtual machine scale set. Recall from earlier discussion that the spot node pool uses a spot scale set. Set `--eviction-policy` to `Delete` to allow the scale set to remove both the node and the underlying, allocated disk used by the node. This value can't be changed after creation.
+A spot node pool must use a virtual machine scale set. Recall from earlier that the spot node pool uses a spot scale set. Set `--eviction-policy` to `Delete` to allow the scale set to remove both the node and the underlying, allocated disk the node uses. You can't change this value after creation.
 
-You can set the eviction policy to `Deallocate`. However, when these nodes are evicted, they still count against your compute quota towards scaling or upgrading the cluster.
+You can set the eviction policy to `Deallocate`, but when these nodes are evicted, they still count against your compute quota towards scaling or upgrading the cluster.
 
 ### Maximum price for spot node
 
 Spot node pools optimize costs by capping the maximum amount that you're willing to pay per spot node per hour. To set your safe amount, use the `--spot-max-price` parameter. Newly created spot nodes are evicted when this value is reached.
 
-You can set this value to any positive amount up to five decimal places, or set it to -1. Setting the `--spot-max-price` value to -1 affects your node pool in the following ways:
+You can set this value to any positive amount up to five decimal places, or set it to `-1`. Setting the `--spot-max-price` value to `-1` affects your node pool in the following ways:
 
 - Nodes aren't be evicted based on the node's price.
 - The cost for new nodes is based on the current price for spot nodes, or the price for a standard node, using whichever is lower.
@@ -141,7 +140,7 @@ A taint is applied to a node to indicate that only specific pods can be schedule
 Toleration is a specification applied to a pod to allow, but not require, a pod to be scheduled on a node with the corresponding taint. Spot nodes are configured with a node taint set to `kubernetes.azure.com/scalesetpriority=spot:NoSchedule`.
 
 > [!NOTE]
-> Taints and tolerations don't guarantee a pod will be placed on a specific node. For example, if a node has no taint, then it's possible that the pod with the toleration may be scheduled on the untainted node. Specifying an affinity with taints and tolerations can address this issue.
+> Taints and tolerations don't guarantee a pod will be placed on a specific node. For example, if a node has no taint, then it's possible that the pod with the toleration might be scheduled on the untainted node. Specifying an affinity with taints and tolerations can address this issue.
 
 ### What is node affinity?
 
@@ -149,13 +148,13 @@ You use node affinity to describe which pods are scheduled on a node. Affinity i
 
 ## Define toleration in a pod manifest file
 
-You specify node taint toleration by creating a `tolerations` dictionary entry in your workload manifest file. In this dictionary, you set the following properties for each node taint the workload has to tolerate in this section:
+You specify node-taint toleration by creating a `tolerations` dictionary entry in your workload manifest file. In this dictionary, you set the following properties for each node taint the workload has to tolerate in this section:
 
 | Property | Description |
 | --- | --- |
 | `key` | Identifies a node taint key-value pair specified on the node. For example, on a spot node pool, the key-value pair is `kubernetes.azure.com/scalesetpriority:spot`. The key is `kubernetes.azure.com/scalesetpriority`. |
 | `operator` | Allows the toleration to match a taint. The default operator is `Equal`. You can also specify `Exists` to match toleration. However, when you use `Exists`, you don't specify the following property (`value`). |
-| `value` | Represents the value part of the node taint key-value pair that is specified on the node. For example, on a spot node pool with a key-value pair of `kubernetes.azure.com/scalesetpriority:spot`, the value is `spot`. |
+| `value` | Represents the value part of the node-taint key-value pair that's specified on the node. For example, on a spot node pool with a key-value pair of `kubernetes.azure.com/scalesetpriority:spot`, the value is `spot`. |
 | `effect` | Indicates how the scheduling of a pod is handled in the system. There are three options: `NoSchedule`, `PreferNoSchedule`, and `NoExecute`. `NoSchedule` ensures that the system can't schedule the pod. `PreferNoSchedule` allows the system to try not to schedule the pod. `NoExecute` either evicts pods that are already running on the tainted node or doesn't schedule the pod at all. |
 
 ## Define node affinity in a pod manifest file

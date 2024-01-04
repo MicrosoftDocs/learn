@@ -295,8 +295,9 @@ Most of the numeric data types have a `Parse()` method, which converts a string 
 The `Convert` class has many helper methods to convert a value from one type into another. In the following code example, you convert a couple of strings into values of type `int`.
 
 > [!NOTE]
-> Note: The code samples in this module are written based on the US culture settings, where a period (`.`) is used as the decimal separator. Building and running the code with a non-US culture setting may give unexpected results. For culture settings where the decimal separator character is different (like a comma), some samples will not match expected output or may result in errors. Replacing the decimals using `.` with your local decimal separator in the sample code samples can help the sample code run as expected.
-> If you want to run a program using the "en-US" culture setting, add the following code to the top of your program `using System.Globalization;` and after any other `using` statements add `CultureInfo.CurrentCulture = new CultureInfo("en-US");`.
+> The code samples in this exercise are designed based on en-US culture settings, and use a period (`.`) as the decimal separator. Building and running the code with a culture setting that uses a different decimal separators (such as a comma `,`) may give unexpected results or errors. To fix this issue, replace the period decimal separators in the code samples with your local decimal separator (such as `,`).
+> Alternatively, to run a program using the en-US culture setting, add the following code to the top of your program: `using System.Globalization;` and after any other `using` statements add `CultureInfo.CurrentCulture = new CultureInfo("en-US");`.
+
 
 1. Delete or use the line comment operator `//` to comment out the code from the previous exercise step, and add the following code:
 
