@@ -12,6 +12,7 @@ The Microsoft Defender portal allows admins to tailor the navigation pane to mee
 The left navigation pane provides security professionals easy access to the suite of Microsoft Defender XDR services, including Defender for Identity, Defender for Office 365, Defender for Endpoints, and Defender for Cloud Apps, which were described in the previous units.  Listed below we describe a few of the other capabilities accessible from the left navigation bar in the Microsoft Defender portal.
 
 ### Incidents and alerts
+
 Microsoft 365 services and apps create alerts when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. These alerts are automatically aggregated by Microsoft Defender XDR. It's the grouping of these related alerts that form an incident. An incident in Microsoft Defender XDR is a collection of correlated alerts and associated data that make up the story of an attack. Selecting an incident name displays a summary of the incident and provides access to tabs with additional information, including:
 
 - The full story of the attack, including all the alerts, assets, and remediation actions taken.
