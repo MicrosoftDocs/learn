@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/05/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Realize Integrated Analytical Solutions with Azure Synapse Analytics
 prerequisites: |
   Completion of Azure Data Fundamentals learning path.

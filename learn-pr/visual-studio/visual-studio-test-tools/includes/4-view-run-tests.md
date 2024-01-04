@@ -8,7 +8,7 @@ You can view a list of all your tests in Test Explorer in Visual Studio. To open
 
 :::image type="content" source="../media/test-explorer-menu.png" alt-text="Screenshot that shows selections for opening Test Explorer in Visual Studio.":::
 
-The name of each test appears in an easily browsable list. The following example shows six texts, with five passing and one failing.
+The name of each test appears in an easily browsable list. The following example shows six tests, with five passing and one failing.
 
 :::image type="content" source="../media/test-explorer.png" alt-text="Screenshot of the Test Explorer window in Visual Studio, with a list of tests.":::
 

@@ -1,6 +1,6 @@
-### Microsoft 365 Defender
+### Microsoft Defender XDR
 
-The Microsoft 365 Defender data connector provides alerts, incidents, and raw data from the Microsoft 365 Defender products including (but aren't limited to):
+The Microsoft Defender XDR data connector provides alerts, incidents, and raw data from the Microsoft Defender XDR products including (but aren't limited to):
 
 - Microsoft Defender for Endpoint
 
@@ -15,11 +15,11 @@ The Microsoft 365 Defender data connector provides alerts, incidents, and raw da
 
 The connectors for Microsoft and Azure-related services include (but aren't limited to):
 
-- Azure Active Directory 
+- Microsoft Entra ID 
 
 - Azure Activity
 
-- Azure AD Identity Protection
+- Microsoft Entra ID Protection
 
 - Azure DDoS Protection
 

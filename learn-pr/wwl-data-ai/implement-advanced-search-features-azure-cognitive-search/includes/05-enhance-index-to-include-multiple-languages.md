@@ -1,3 +1,4 @@
+
 Support for multiple languages can be added to a search index. You can add language support manually by providing all the translated text fields in all the different languages you want to support. You could also choose to use Azure AI Services to provide translated text through an enrichment pipeline. 
 
 Here, you'll see how to add fields with different languages to an index. You'll then constrain results to fields with specific languages. Finally, create a scoring profile to boost the native language of your end users.
@@ -113,7 +114,7 @@ For example, let's add Japanese and Ukrainian translations to an example retail 
 
 #### Add the new fields
 
-Add two new fields to the index with these properties, the first to store the Japanese translation and the seconded the Ukrainian:
+You add two new fields to the index with these properties, the first to store the Japanese translation and the seconded the Ukrainian:
 
 ```json
 {

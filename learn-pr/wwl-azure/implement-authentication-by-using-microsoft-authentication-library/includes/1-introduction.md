@@ -1,4 +1,3 @@
-
 The Microsoft Authentication Library (MSAL) enables developers to acquire tokens from the Microsoft identity platform in order to authenticate users and access secured web APIs.
 
 After completing this module, you'll be able to:

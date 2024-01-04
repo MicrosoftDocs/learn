@@ -6,8 +6,8 @@ metadata:
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: module
+  ms.service: azure
 title: Design a resiliency strategy for common cyberthreats like ransomware
 summary: "You'll learn about common cyberthreats like ransomware and what kinds of attack patterns an organization must be prepared for."
 abstract: |

@@ -49,10 +49,10 @@ Azure VM auto restart, or service healing, is a functionality in Azure that work
 - The server host checks the health of its guest VMs.
 - The Azure fabric controller monitors the health and availability of the server host.
 
-A health check functionality monitors the health of every VM that is hosted on an Azure server host. If a VM falls into an unhealthy state, a reboot of the VM can be initiated by the Azure host agent that checks the health of the VM. The fabric controller checks the health of the host by checking many different parameters that might indicate issues with the host hardware. It also checks on the accessibility of the host via the network. An indication of problems with the host can lead to the following events:
+A health check functionality monitors the health of every VM that's hosted on an Azure server host. If a VM falls into an unhealthy state, a reboot of the VM can be initiated by the Azure host agent that checks the health of the VM. The fabric controller checks the health of the host by checking many different parameters that might indicate issues with the host hardware. It also checks on the accessibility of the host via the network. An indication of problems with the host can lead to the following events:
 
 - If the host signals a bad health state, a reboot of the host and a restart of the VMs that were running on the host is triggered.
-- If the host isn't in a healthy state after successful reboot, a redeployment of the VMs that were originally on the now unhealthy node onto a healthy host server is initiated. In this case, the original host is marked as not healthy. It's not used for further deployments until it's cleared or replaced.
+- If the host isn't in a healthy state after successful reboot, a redeployment of the VMs that were originally on the now unhealthy node onto a healthy host server is initiated. In this case, the original host is marked as not healthy. It isn't used for further deployments until it's cleared or replaced.
 - If the unhealthy host has problems during the reboot process, an immediate restart of the VMs on a healthy host is triggered.
 
 With the host and VM monitoring provided by Azure, Azure VMs that experience host issues are automatically restarted on a healthy Azure host.

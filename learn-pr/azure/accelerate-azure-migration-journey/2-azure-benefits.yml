@@ -5,11 +5,9 @@ metadata:
   title: Benefits of moving to Azure
   description: Learn about the primary benefits of moving to Azure cloud, and how to align your business and technical goals to enjoy them.
   ms.date: 05/15/2023
-  author: jamcneil
-  ms.author: jumcn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: sgsneha
+  ms.author: sudhirsneha
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-azure-benefits.md)]
-  

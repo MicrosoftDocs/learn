@@ -1,5 +1,3 @@
-
-
 After staging dimension data, you can load it into dimension tables using SQL.
 
 ## Using a CREATE TABLE AS (CTAS) statement

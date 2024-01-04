@@ -1,4 +1,4 @@
-Your team has gained an understanding of how Azure Resource Manager works, and you've decided to use ARM templates for your resource provisioning. You understand that you can write ARM templates two different ways: by using JSON and by using Bicep. You want to learn more about Bicep templates so that you can make an informed decision about which language to use.
+Your team has gained an understanding of how Azure Resource Manager works, and you've decided to use ARM templates for your resource provisioning. You understand that you can write ARM templates in two different ways: by using JSON or by using Bicep. You want to learn more about Bicep templates so that you can make an informed decision about which language to use.
 
 In this unit, you'll learn about the Bicep template language and the benefits it provides to template authoring.
 

@@ -3,6 +3,8 @@ An API, or Application Programming Interface, is a set of rules and protocols th
 * **Simplifying development**: By using APIs, developers can access the functionality of other software without having to understand the details of how that software works. This can save time and effort when building new applications.
 * **Enabling integration**: APIs allow different software applications to work together, even if they were not originally designed to do so. This can help businesses integrate their systems and data, improving efficiency and productivity.
 
+## Learning objectives
+
 After completing this module, you'll be able to:
 
 * Describe the two model types of APIs in ASP.NET Core.

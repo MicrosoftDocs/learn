@@ -11,7 +11,7 @@ The Azure Monitor SDK is a set of .NET classes and interfaces that make it simpl
 
 Azure carefully controls access to metrics by authenticating users and authorizing them to access different resources. In unit 3, when you used **curl** to request storage metrics from Azure Monitor, you used the **az** utility to authenticate as the user you were logged into the Azure portal with. The result of this authentication was an access token, which you passed with your **curl** request to the Azure Monitor REST API.
 
-For an application that uses the Azure .NET API to call Azure services, you can create a service principal in your Azure Active Directory. This service principal includes credentials that the app can supply to prove its identity before it makes a request.
+For an application that uses the Azure .NET API to call Azure services, you can create a service principal in your Microsoft Entra ID. This service principal includes credentials that the app can supply to prove its identity before it makes a request.
 
 You must also assign a role to the service principal, which authorizes that app to access a resource. For example: if you assign the **Contributor** role to an app for a resource group, that app can read and write data to all the resources in that group, including Azure Monitor.
 
@@ -19,7 +19,11 @@ You must also assign a role to the service principal, which authorizes that app 
 
 To create a service principal in Azure:
 
-1. Go to the [Azure portal](https://portal.azure.com/). From the Azure Marketplace search box, enter **Azure Active Directory**.
+1. Go to the [Azure portal](https://portal.azure.com/).
+
+1. In the search box, enter **Microsoft Entra ID**.
+
+1. In the search results, select **Microsoft Entra ID**.
 
 1. In the left nav bar, under the **Manage** section, select **App registrations**, and then select **+ New registration**. The **Register an application** window appears.
 

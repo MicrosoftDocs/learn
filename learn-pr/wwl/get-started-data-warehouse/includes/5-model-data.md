@@ -1,13 +1,9 @@
----
-ms.custom:
-  - build-2023
----
 A *data model* defines the *relationships* between the different tables in the dataset, the rules for how data is aggregated and summarized, and the calculations or *measures* that are used to derive insights from the data. These relationships and measures are included in the dataset, which is then used to create reports in Power BI.
 
 You can easily switch between the **Data**, **Query**, and **Model** view Fabric using the menu in the bottom left corner of the screen. The **Data** view shows the tables in the dataset, the **Query** view shows the SQL queries that are used to create the dataset, and the **Model** view shows the data model.
 
 > [!TIP]
-> See [Analyze data in a relational data warehouse](https://learn.microsoft.com/training/modules/design-multidimensional-schema-to-optimize-analytical-workloads/) to learn more about data models and data warehouse schema.
+> See [Analyze data in a relational data warehouse](/training/modules/design-multidimensional-schema-to-optimize-analytical-workloads/) to learn more about data models and data warehouse schema.
 
 ### Build relationships
 
@@ -16,7 +12,7 @@ You can easily switch between the **Data**, **Query**, and **Model** view Fabric
 ![Screenshot of the model view in Fabric displaying relationships between a fact table and three dimension tables.](../media/create-relationships.png)
 
 >[!TIP]
->See [Create and manage relationships](https://learn.microsoft.com/power-bi/transform-model/desktop-create-and-manage-relationships) for detailed information on creating relationships.
+>See [Create and manage relationships](/power-bi/transform-model/desktop-create-and-manage-relationships) for detailed information on creating relationships.
 
 ### Create measures
 
@@ -27,7 +23,7 @@ You can easily switch between the **Data**, **Query**, and **Model** view Fabric
 Measures are calculated fields that are based on the data in the tables in your data warehouse using the Data Analysis Expressions (DAX) formula language.
 
 >[!NOTE]
->Fabric offers many tools to create data transformations. The creation of measures using DAX is one of many ways to create data transformations. To learn more about DAX, see [Use DAX in Power BI](https://learn.microsoft.com/training/paths/dax-power-bi/).
+>Fabric offers many tools to create data transformations. The creation of measures using DAX is one of many ways to create data transformations. To learn more about DAX, see [Use DAX in Power BI](/training/paths/dax-power-bi/).
 
 ### Hide fields
 
@@ -50,7 +46,7 @@ There's also a *default dataset* automatically created for you in Fabric. It inh
 New tables in the Lakehouse are automatically added to the default dataset. Users can also manually select tables or views from the warehouse they want included in the model for more flexibility. Objects that are in the default dataset are created as a layout in the model view.
 
 > [!NOTE]
-> Default Datasets follow the current limitations for datasets in Power BI. See [Default Power BI datasets](https://learn.microsoft.com/fabric/data-warehouse/limitations) for more information.
+> Default Datasets follow the current limitations for datasets in Power BI. See [Default Power BI datasets](/fabric/data-warehouse/limitations) for more information.
 
 ## Visualize data
 

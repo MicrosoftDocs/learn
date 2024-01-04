@@ -8,8 +8,7 @@ metadata:
   ms.date: 1/28/2022
   author: lapate
   ms.author: lapate
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[Exercise - Provision data management landing zone](includes/4-exercise-provision-data-management-landing-zone.md)]

@@ -1,12 +1,12 @@
-When a user or application requests access to a resource that's secured by an Azure Active Directory tenant, the user or app must be represented by a _security principal_. The security principal defines the access policy and permissions for the user (_user principal_) or app (_service principal_) in the Azure AD tenant. The principal supports core features like authentication for a user and app during sign-in, or authorization during resource access.
+When a user or application requests access to a resource that's secured by a Microsoft Entra tenant, the user or app must be represented by a _security principal_. The security principal defines the access policy and permissions for the user (_user principal_) or app (_service principal_) in the Microsoft Entra tenant. The principal supports core features like authentication for a user and app during sign-in, or authorization during resource access.
 
-The Tailwind Traders organization is interested in implementing service principals for its applications. As the CTO, you need to understand the two ways an app can be represented in Azure AD: as an application object, or by a service principal.
+The Tailwind Traders organization is interested in implementing service principals for its applications. As the CTO, you need to understand the two ways an app can be represented in Microsoft Entra ID: as an application object, or by a service principal.
 
 - **Application objects**: Although there are exceptions, an app object can be considered _the definition for an app_. An app object allows the service to know how to issue tokens to the app based on the object settings. The app object exists only in its home directory, even if it's a multi-tenant app that supports service principals in other directories.
 
 - **Service principals**: The service principal for an app can be considered _an instance of an app_. Service principals generally reference an app object. One app object can be referenced by multiple service principals across directories.
 
-Service principals are what govern the app connection to Azure AD and can be considered the instance of the app in your directory. 
+Service principals are what govern the app connection to Microsoft Entra ID and can be considered the instance of the app in your directory. 
 
 :::image type="content" source="../media/application-service-principals.png" alt-text="Diagram that shows how application objects and service principals are used in Azure subscriptions." border="false":::
 
@@ -18,7 +18,7 @@ There are three types of service principals that you can use for your organizati
 
    While an app object is the global representation of your app for use across all tenants, the application service principal is the local representation that's used in a _specific_ tenant. The app object serves as the template from which common and default properties are derived for use in creating corresponding service principal objects.
 
-- **Managed identity**: This type of service principal represents a managed identity, which eliminates the need to manage credentials. Managed identities provide an identity for applications to use when connecting to resources that support Azure AD authentication. When a managed identity is enabled, the service principal that represents that managed identity is created in your tenant.
+- **Managed identity**: This type of service principal represents a managed identity, which eliminates the need to manage credentials. Managed identities provide an identity for applications to use when connecting to resources that support Microsoft Entra authentication. When a managed identity is enabled, the service principal that represents that managed identity is created in your tenant.
 
    Common terms for managed identities and service principals:
 
@@ -60,7 +60,7 @@ Now you're ready to review how you can use managed identities and service princi
 
 - **Consider authentication of external apps to Azure resources**. Authenticate external apps to Azure resources by using service principals.
 
-- **Consider the best practices for requesting permissions**. (Recommended) Review these suggestions for how to build apps that use Azure AD to provide sign-in and access tokens for secured endpoints:
+- **Consider the best practices for requesting permissions**. (Recommended) Review these suggestions for how to build apps that use Microsoft Entra ID to provide sign-in and access tokens for secured endpoints:
 
    - Only ask for the permissions required for implemented app functionality. Don't request user consent for permissions that you haven't yet implemented for your application.
    - When you request permissions for app functionality, request the least-privileged access. If an app analyzes a user's email, but it takes no action on the mailbox, you shouldn't request the more permissive `Mail.ReadWrite` permission when the `Mail.Read` permission is sufficient.

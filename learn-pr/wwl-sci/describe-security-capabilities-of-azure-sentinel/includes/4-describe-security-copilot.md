@@ -4,7 +4,7 @@ The top security challenges organizations face include:
 - A talent shortage that is driving the need for automation, integration, and consolidation of security tools.
 - Visibility into security, privacy, compliance, and governance.
 
-Organizations need to act quickly to address all the security challenges they face, but working as human speed, even if there weren't a talent shortage, isn't enough.  Organizations need to work at machine speed.
+Organizations need to act quickly to address all the security challenges they face, but working at human speed, even if there weren't a talent shortage, isn't enough.  Organizations need to work at machine speed.
 
 Microsoft Security Copilot is the first and only generative AI security product to help defend organizations at machine speed and scale.  It's an AI-powered security analysis tool that enables analysts to respond to threats quickly, process signals at machine speed, and assess risk exposure in minutes.
 

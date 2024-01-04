@@ -52,7 +52,7 @@ Here's what you need to know about permission settings:
 
 **Do:**
 
-- Use Microsoft Entra ID (former Azure Active Directory), Active Directory, or Windows security groups when managing lots of users.
+- Use Microsoft Entra ID (formerly Azure Active Directory), Active Directory, or Windows security groups when managing lots of users.
 
 - When adding teams, consider what permissions you want to assign to team leads, scrum masters, and other team members who may need to create and modify area paths, iteration paths, and queries.
 

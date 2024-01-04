@@ -1,4 +1,4 @@
-﻿### YamlMime:Module
+### YamlMime:Module
 uid: learn.azure.troubleshoot-windows-containers
 title: Troubleshooting Windows Containers
 metadata: 
@@ -7,8 +7,8 @@ metadata:
   ms.date: 05/11/2023
   author: vrapolinario
   ms.author: viniap
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 summary: >
   Learn about the Windows containers platform and how to troubleshoot it. Learn various troubleshooting techniques, using Docker, Azure, Windows tools, Azure Monitor, and more.
 abstract: |

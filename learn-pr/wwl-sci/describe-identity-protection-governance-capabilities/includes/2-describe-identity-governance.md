@@ -1,4 +1,3 @@
-
 Microsoft Entra ID Governance allows you to balance your organization's need for security and employee productivity with the right processes and visibility. It provides you with capabilities to ensure that the right people have the right access to the right resources.
 
 ID Governance gives organizations the ability to do the following tasks:
@@ -28,9 +27,9 @@ The diagram that follows shows a simplified version of the identity lifecycle.
 
 For many organizations, this identity lifecycle for employees is tied to the representation of that user in a human resources (HR) system such as Workday or SuccessFactors. The HR system is authoritative for providing the current list of employees, and some of their properties, such as name or department.
 
-Microsoft Entra Premium offers integration with cloud-based HR systems.  When a new employee is added to an HR system, Microsoft Entra ID can create a corresponding user account. Similarly, when their properties, such as department or employment status, change in the HR system, synchronization of those updates to Microsoft Entra ID ensures consistency.
+Microsoft Entra ID P1 or P2 offers integration with cloud-based HR systems.  When a new employee is added to an HR system, Microsoft Entra ID can create a corresponding user account. Similarly, when their properties, such as department or employment status, change in the HR system, synchronization of those updates to Microsoft Entra ID ensures consistency.
 
-Microsoft Entra Premium also includes Microsoft Identity Manager, which can import records from on-premises HR systems such as SAP HCM, Oracle eBusiness, and Oracle PeopleSoft. For more information, see the Microsoft Identity Manager documentation that is listed in the Learn More section of the Summary and resources unit.
+Microsoft Entra ID P1 or P2 also includes Microsoft Identity Manager, which can import records from on-premises HR systems such as SAP HCM, Oracle eBusiness, and Oracle PeopleSoft. For more information, see the Microsoft Identity Manager documentation that is listed in the Learn More section of the Summary and resources unit.
 
 In general, managing the lifecycle of an identity is about updating the access that users need, whether through integration with an HR system, or through user provisioning applications.
 

@@ -7,7 +7,7 @@ metadata:
   author: Zimmergren
   ms.author: tozimmergren
   ms.service: caf
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Microsoft Cloud Adoption Framework for Azure
 summary: This module covers the basics of how to use the Cloud Adoption Framework—a set of documentation, implementation guidance, best practices, and tools that aid in aligning the strategy for business, people, and technology.
 abstract: |

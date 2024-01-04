@@ -17,7 +17,7 @@ To learn more, go through the following documents:
 
 - [Quickstart: Automatically migrate PowerShell scripts from AzureRM to the Az PowerShell module](https://aka.ms/quickstart-automatically-migrate-powershell-scripts-from-azurerm-to-the-az-powershell-module)
 
-- [Install Azure Active Directory PowerShell for Graph​](https://aka.ms/install-azure-active-directory-powershell-for-graph)
+- [Microsoft Graph PowerShell​](/powershell/microsoftgraph/overview)
 
 - [AzureAD​](https://aka.ms/azure-ad-2)
 

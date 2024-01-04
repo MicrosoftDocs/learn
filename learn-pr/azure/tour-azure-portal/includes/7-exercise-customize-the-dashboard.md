@@ -1,4 +1,4 @@
-In the last unit, you saw how dashboards are a flexible tool for managing different aspects of Azure services through the portal. They make it convenient to monitor the state of your services. Because they are shareable, they help ensure that everyone on your team sees the same data and stays aware of the state of your critical components.
+In the last unit, you saw how dashboards are a flexible tool for managing different aspects of Azure services through the portal. They make it convenient to monitor the state of your services. Because they're shareable, they help ensure that everyone on your team sees the same data and stays aware of the state of your critical components.
 
 Let's create a new dashboard and add some tiles to it.
 
@@ -41,10 +41,10 @@ Let's create a new dashboard and add some tiles to it.
 1. Continue to add the following tiles, rearranging them to fit as needed:
 
     - Help + support
-    - Azure Active Directory quick tasks
+    - Microsoft Entra quick tasks
     - Marketplace
 
-1. After you've added these tiles, select *Save**. The **Customer Dashboard** dashboard that you just created will appear as your current dashboard.
+1. After you've added these tiles, select *Save**. The **Customer Dashboard** dashboard that you created appears as your current dashboard.
 
 ## Clone a dashboard
 
@@ -52,7 +52,7 @@ You now want to create a similar dashboard for some other customers, but with a 
 
 1. Select the **Clone** button.
 
-1. Rename the dashboard from **Clone of Customer Dashboard** to **Azure AD Admin Dashboard**.
+1. Rename the dashboard from **Clone of Customer Dashboard** to **Microsoft Entra Admin Dashboard**.
 
 1. On the **Resource Groups** tile, select the trash can icon to delete this tile.
 
@@ -63,13 +63,13 @@ You now want to create a similar dashboard for some other customers, but with a 
     - Users and groups
     - User sign-in summary
 
-1. Reposition the tiles as necessary, then select **Save**. The **Azure AD Admin Dashboard** dashboard that you just created will appear as your current dashboard.
+1. Reposition the tiles as necessary, then select **Save**. The **Microsoft Entra Admin Dashboard** dashboard that you created appears as your current dashboard.
 
 ## Share a dashboard
 
-You now want to make this dashboard available to other users. In the sandbox environment, you won't be able to share a dashboard with other users. But you can see how you'd publish a shared dashboard by completing the following steps.
+You now want to make this dashboard available to other users. In the sandbox environment, you can't share a dashboard with other users. But you can see how you'd publish a shared dashboard by completing the following steps.
 
-1. From the Azure AD Admin dashboard, select the **Share** button at the top. The **Sharing + access control** appears.
+1. From the Microsoft Entra Admin dashboard, select the **Share** button at the top. The **Sharing + access control** appears.
 1. If the **Publish to the 'dashboards' resource group** checkbox is selected, uncheck the box.
 1. Select the resource group <rgn>[sandbox resource group name]</rgn> from the **Resource group** dropdown.
 1. Select **Publish**.
@@ -77,7 +77,7 @@ You now want to make this dashboard available to other users. In the sandbox env
 
 ## Delete a dashboard
 
-1. From the dashboard selection drop-down control, ensure that **Azure AD Admin Dashboard** is selected.
+1. From the dashboard selection drop-down control, ensure that **Microsoft Entra Admin Dashboard** is selected.
 
 1. Select the **Delete** button.
 
@@ -93,7 +93,7 @@ You now want to make this dashboard available to other users. In the sandbox env
 
 1. In the **Reset dashboard to default state** message box, select **Yes**.
 
-   You'll see the Customer Dashboard with the default tiles instead of the edits you made.
+   You see the Customer Dashboard with the default tiles instead of the edits you made.
 
 1. Select **Save**.
 

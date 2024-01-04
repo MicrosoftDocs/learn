@@ -6,8 +6,7 @@ metadata:
   ms.date: 04/27/2023
   author: fabianomira
   ms.author: famira
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Azure Support Engineer for Connectivity Specialty
 prerequisites: |
   - Demonstrate an understanding of the OSI model

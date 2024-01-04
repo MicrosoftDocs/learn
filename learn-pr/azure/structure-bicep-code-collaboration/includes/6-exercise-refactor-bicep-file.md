@@ -18,7 +18,7 @@ In the next sections, there are some pointers to specific parts of the template 
    What are they used for?
 
    > [!TIP]
-   > If you have a parameter that you're trying to understand, Visual Studio Code can help. Select and hold (or right-click) the name of a parameter anywhere in your file and select **Find All References**.
+   > If you have a parameter that you're trying to understand, Visual Studio Code can help. Select and hold (or right-click) a parameter name anywhere in your file and select **Find All References**.
 
    Does the template need to specify the list of allowed values for the `skuName` parameter? What resources are affected by choosing different values for these parameters? Are there better names that you can give the parameters?
 
@@ -58,7 +58,7 @@ Take a look at the symbolic names for the resources in the template. What could 
    - `storageAccount` and `webSite`, which use camelCase capitalization.
    - `roleassignment` and `sqlserver`, which use flat case capitalization.
    - `sqlserverName_databaseName` and `AppInsights_webSiteName`, which use snake case capitalization.
-   
+
    Can you fix these to use one style consistently?
 
 1. Look at this role assignment resource:
@@ -86,7 +86,7 @@ Take a look at the symbolic names for the resources in the template. What could 
 
    Managed identities used to be called _MSIs_, App Service plans used to be called _hosting plans_, and App Service apps used to be called _websites_.
 
-   Can you update these to the latest names, to avoid confusion in the future?
+   Can you update these to the latest names to avoid confusion in the future?
 
 ## Simplify the blob container definitions
 
@@ -96,7 +96,7 @@ Take a look at the symbolic names for the resources in the template. What could 
 
    One of them uses the `parent` property, and the other doesn't. Can you fix these to be consistent?
 
-1. The names of the blob containers won't change between environments. Do you think the names need to be specified by using parameters?
+1. The blob container names won't change between environments. Do you think the names need to be specified by using parameters?
 
 1. There are two blob containers. Could they be deployed by using a loop?
 
@@ -109,7 +109,7 @@ Take a look at the symbolic names for the resources in the template. What could 
    Is there another way you could do this?
 
    > [!CAUTION]
-   > Remember that resources can't be renamed. When you modify templates that are already in use, be careful when you change the way the template creates resource names. If the template is redeployed and the resource has a new name, Azure will create another resource. It might even delete the old resource if you deploy it in _Complete_ mode.
+   > Remember that resources can't be renamed once they're deployed. When you modify templates that are already in use, be careful when you change the way the template creates resource names. If the template is redeployed and the resource has a new name, Azure will create another resource. It might even delete the old resource if you deploy it in _Complete_ mode.
    >
    > You don't need to worry about this here, because it's only an example.
 
@@ -133,7 +133,7 @@ Take a look at the symbolic names for the resources in the template. What could 
 
 ## Update property values
 
-1. Take a look at the properties of the SQL database resource:
+1. Take a look at the SQL database resource properties:
 
    ::: code language="bicep" source="code/2-template.bicep" range="68-78" highlight="5, 8-9" :::
 
@@ -148,7 +148,7 @@ Take a look at the symbolic names for the resources in the template. What could 
 
 ## Order of elements
 
-1. Are you happy with the order of the elements in the file? How could you improve the readability of the file by moving the elements around?
+1. Are you happy with the order of the elements in the file? How could you improve the file's readability by moving the elements around?
 
 1. Take a look at the `databaseName` variable. Does it belong where it is now?
 
@@ -170,7 +170,7 @@ Think about anything in the template that might not be obvious, or that needs ad
 
    ::: code language="bicep" source="code/2-template.bicep" range="145-153" highlight="2" :::
 
-   The name of the resource uses the `guid()` function. Would it help to explain why?
+   The resource name uses the `guid()` function. Would it help to explain why?
 
 1. Can you add a description to the role assignment?
 

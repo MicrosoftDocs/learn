@@ -9,9 +9,10 @@ metadata:
   ms.date: 6/20/2023
   author: ivorb
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.service: azure
-  ms.subservice: openai
+  ms.topic: unit
 durationInMinutes: 25
+azureSandbox: false
+labId: 152390
+labModal: true
 content: |
   [!include[](includes/5-exercise.md)]

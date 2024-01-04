@@ -4,11 +4,10 @@ title: Explore SAP HANA alerts
 metadata:
   title: Explore SAP HANA alerts
   description: "Explore SAP HANA alerts"
-  ms.date: 04/20/2023
+  ms.date: 10/17/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 7
 content: |
   [!include[](includes/7-explore-sap-hana-alerts.md)]

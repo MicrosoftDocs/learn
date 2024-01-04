@@ -8,8 +8,7 @@ metadata:
   ms.date: 11/09/2022
   author: mattwojo
   ms.author: mattwoj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  ms.topic: unit
 durationInMinutes: 3
 ###########################################################################
 ###
@@ -38,7 +37,7 @@ quiz:
       explanation: WSL 1 is a translation layer, whereas WSL 2 is running an actual Linux kernel. Neither WSL 1, nor WSL 2, stores files on the same file system. Windows and Linux file systems are separate and utilize different file system types (NTFS for Windows and ext4 for Linux.)
     - content: A tool that enables any Linux distribution to be run on Windows using a lightweight, behind-the-scenes virtual machine. WSL utilizes both a Linux and Windows file system and enables switching seamlessly between Windows and Linux tools and GUI applications.
       isCorrect: true
-      explanation: WSL does use a lightweight virtual machine, but set up is handled automatically and requires few resources, so it's hard to even notice it's running. WSL does utilize separate Windows and Linux file systems, but enables switching seamlessly between the two to run your preferred Windows or Linux command line tools and GUI applications.
+      explanation: WSL does use a lightweight virtual machine, but setup is handled automatically and requires few resources, so it's hard to even notice it's running. WSL does utilize separate Windows and Linux file systems, but enables switching seamlessly between the two to run your preferred Windows or Linux command-line tools and GUI applications.
   - content: Which command + directory path will allow you to switch between Windows and Linux file systems?
     choices:
     - content: cd /mnt/c/Users
@@ -58,6 +57,6 @@ quiz:
     - content: The distribution is widely supported by the Linux development community.
       isCorrect: false
       explanation: A Linux distribution doesn't have to be supported at all in order to install and use it with WSL. You can completely build your own custom distribution to use if you prefer.
-    - content: The distribution is packaged so that it can be imported."
+    - content: The distribution is packaged so that it can be imported.
       isCorrect: true
       explanation: Any Linux distribution can be imported with WSL. You can even build your own custom distribution. It just needs to be packaged in a tar file with all of the Linux binaries so that it can be imported (or side-loaded).

@@ -6,8 +6,7 @@ metadata:
   ms.date: 04/20/2021
   author: micrum
   ms.author: micrum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Introduction to Secure Application Delivery with Azure network security
 prerequisites: |
   - Beginner-level knowledge of cloud computing, including scalability and availability.

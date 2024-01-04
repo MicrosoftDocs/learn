@@ -1,4 +1,4 @@
-Now we'll discuss how to determine which Azure Front Door SKU is the best choice for your needs. Your organization wants to provide efficient, reliable, and optimized access to application content that's hosted in Azure. We'll review the following criteria:
+Now we discuss how to determine which Azure Front Door SKU is the best choice for your needs. Your organization wants to provide efficient, reliable, and optimized access to application content that's hosted in Azure. We review the following criteria:
 
 - Scalability
 - Security
@@ -21,7 +21,7 @@ The decision you make depends on whether you require the other features that Azu
 
 | **Criteria** | **Analysis**|
 | --- | --- |
-| **Scalability** | Does your organization scale out content? Organizations that host scalable content will benefit more from using Azure Front Door. |
+| **Scalability** | Does your organization scale-out content? Organizations that host scalable content benefits more from using Azure Front Door. |
 | **Pricing** | Does your organization prefer a monthly charge for each policy or hourly billing? Do you want to pay extra charges for custom rules? Review the pricing considerations in the *Pricing* section later in this unit. |
 | **Content delivery** | Do you require content optimization, without extensive security capabilities? Azure Front Door Standard is a good choice in this case. |
 | **Security** | Do you have enhanced security requirements? Azure Front Door Premium is your best option. |

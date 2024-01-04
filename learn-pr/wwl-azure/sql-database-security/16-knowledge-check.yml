@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/06/2023
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   zone_pivot_groups: None
 durationInMinutes: 5
 content: |
@@ -49,14 +48,14 @@ quiz:
     - content: "Dynamic Data Masking"
       isCorrect: false
       explanation: "Data masking only blocks seeing all the data values of certain data types, not encrypt data."
-  - content: "An App Service web application uses an SQL database. Users need to authenticate to the database with their Azure AD credentials. Which of the following configuration tasks would enable this?"
+  - content: "An App Service web application uses an SQL database. Users need to authenticate to the database with their Microsoft Entra credentials. Which of the following configuration tasks would enable this?"
     choices:
     - content: "Create an SQL Database Administrator"
       isCorrect: false
       explanation: "The SQL Database Admin account would offer too much access the users."
-    - content: "Create an Azure AD Database Administrator"
+    - content: "Create a Microsoft Entra Database Administrator"
       isCorrect: false
-      explanation: "An Azure AD Database admin could only configure and manage the database."
+      explanation: "A Microsoft Entra Database admin could only configure and manage the database."
     - content: "Create users in each database"
       isCorrect: true
       explanation: "Don't create users in the Master db. Instead, contained users should be created on each database."

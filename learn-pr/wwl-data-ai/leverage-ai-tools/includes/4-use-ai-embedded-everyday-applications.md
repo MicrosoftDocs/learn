@@ -47,12 +47,10 @@ When you're not speaking in person, some nuances are missing and misunderstandin
 
 Nowadays, workers' routines are too often interrupted by distractions, calls, and multitasking. AI can also help cope with this problem and enable employees to focus their time and attention on what matters most.
 
-For instance, the Briefing email from Cortana compiles valuable information about upcoming meetings and outstanding tasks in Outlook. It also enables employees to set aside daily “focus time” to work uninterrupted with notifications silenced. In Outlook mobile, employees can use natural language to ask Cortana to read out their new emails and share any changes to their schedule—so they can catch up even when their hands are busy with other things.
-
 > [!NOTE] 
 > 68 percent of workers complain of their lack of uninterrupted focus time during their working routines.<sup>1</sup>
 
-Copilot adds more features for focus to make sure users don't forget any important issues. In OneNote, for example, it identifies unanswered questions all across existing notes and grouping them in one centralized location. In Teams, Copilot can extract action points from the conversation in real time.
+For instance, Microsoft 365 Copilot includes features for focus to make sure users don't forget any important issues. In OneNote, for example, it identifies unanswered questions all across existing notes and grouping them in one centralized location. In Teams, Copilot can extract action points from the conversation in real time.
 
 ### Everyday AI for productivity
 

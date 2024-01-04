@@ -7,8 +7,7 @@ metadata:
   ms.date: 11/29/2022
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.service: learning-private-5g-core
+  ms.topic: unit
 durationInMinutes: 6
 content: |
 quiz:

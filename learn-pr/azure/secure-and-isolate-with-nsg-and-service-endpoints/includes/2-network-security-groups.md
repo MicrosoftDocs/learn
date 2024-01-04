@@ -1,4 +1,4 @@
-As part of the project to move your ERP system to Azure, you must ensure that servers have proper isolation so that only allowed systems can make network connections. For example, you have database servers that store data for your ERP app. You want to block prohibited systems from communicating with the servers over the network, while allowing app servers to communicate with the database servers.
+As part of the project to move your ERP system to Azure, you must ensure that servers have proper isolation so that only allowed systems can make network connections. For example, you have database servers that store data for your ERP app. You want to block prohibited systems from communicating with the servers over the network while allowing app servers to communicate with the database servers.
 
 ## Network security groups
 
@@ -16,23 +16,23 @@ Applying a network security group to a subnet instead of individual network inte
 
 Each subnet and network interface can have one network security group applied to it. Network security groups support TCP, UDP, and ICMP, and operate at Layer 4 of the OSI model.
 
-In this manufacturing company scenario, network security groups can help you secure the network. You can control which computers can connect to your app servers. You configure the network security group so that only a specific range of IP addresses can connect to the servers. You can lock this down even more by only allowing access to or from specific ports, or from individual IP addresses. These rules can be applied to devices that are connecting remotely from on-premises networks, or between resources within Azure.
+In this manufacturing-company scenario, network security groups can help you secure the network. You can control which computers can connect to your app servers. You can configure the network security group so that only a specific range of IP addresses can connect to the servers. You can lock this down even more by only allowing access to or from specific ports, or from individual IP addresses. You can apply these rules to devices that are connecting remotely from on-premises networks, or between resources within Azure.
 
 ## Security rules
 
-A network security group contains one or more security rules. Configure security rules to either allow or deny traffic.
+A network security group contains one or more security rules. You can configure security rules to either allow or deny traffic.
 
 Rules have several properties:
 
 |Property  |Explanation  |
 |---------|---------|
-|Name|A unique name within the network security group.|
-|Priority | A number between 100 and 4096. |
-|Source and destination| Any, or an individual IP address, classless inter-domain routing (CIDR) block (10.0.0.0/24, for example), service tag, or app security group. |
-|Protocol     | TCP, UDP, or Any. |
-|Direction| Whether the rule applies to inbound or outbound traffic.|
-|Port range     | An individual port or range of ports.  |
-|Action     | Allow or deny the traffic.      |
+|Name|A unique name within the network security group|
+|Priority | A number between 100 and 4096 |
+|Source and destination| Any, or an individual IP address, classless inter-domain routing (CIDR) block (10.0.0.0/24, for example), service tag, or app security group |
+|Protocol     | TCP, UDP, or Any|
+|Direction| Whether the rule applies to inbound or outbound traffic|
+|Port range     | An individual port or range of ports  |
+|Action     | Allow or deny the traffic      |
 
 Network security group security rules are evaluated by priority, using the 5-tuple information (source, source port, destination, destination port, and protocol) to allow or deny the traffic. When the conditions for a rule match the device configuration, rule processing stops.
 
@@ -44,28 +44,27 @@ Regarding the ERP system, the web servers for the ERP app connect to database se
 
 ### Default security rules
 
-When you create a network security group, Azure creates several default rules. These default rules can't be changed, but you can override them with your own rules. These default rules allow connectivity within a virtual network and from Azure load balancers. They also allow outbound communication to the internet, and deny inbound traffic from the internet.
- 
-The default rules for inbound traffic are:
+When you create a network security group, Azure creates several default rules. These default rules can't be changed, but you can override them with your own rules. These default rules allow connectivity within a virtual network and from Azure load balancers. They also allow outbound communication to the internet and deny inbound traffic from the internet.
 
+The default rules for inbound traffic are:
 
 | Priority | Rule name  | Description  |
 |----------|------------|--------------|
-| 65000 | AllowVnetInbound | Allow inbound coming from any VM to any VM within the subnet. |
-| 65001 | AllowAzureLoadBalancerInbound | Allow traffic from the default load balancer to any VM within the subnet. |
-| 65500 | DenyAllInBound | Deny traffic from any external source to any of the VMs. |
+| 65000 | AllowVnetInbound | Allow inbound coming from any VM to any VM within the virtual network |
+| 65001 | AllowAzureLoadBalancerInbound | Allow traffic from the default load balancer to any VM within the subnet |
+| 65500 | DenyAllInBound | Deny traffic from any external source to any of the VMs |
 
 The default rules for outbound traffic are:
 
 | Priority | Rule name  | Description  |
 |----------|------------|--------------|
-| 65000 | AllowVnetOutbound |  Allow outbound going from any VM to any VM within the subnet. |
-| 65001 | AllowInternetOutbound | Allow outbound traffic going to the internet from any VM. |
-| 65500 | DenyAllOutBound | Deny traffic from any internal VM to a system outside the virtual network. |
+| 65000 | AllowVnetOutbound |  Allow outbound going from any VM to any VM within the virtual network |
+| 65001 | AllowInternetOutbound | Allow outbound traffic going to the internet from any VM |
+| 65500 | DenyAllOutBound | Deny traffic from any internal VM to a system outside the virtual network |
 
 ### Augmented security rules
 
-You can use augmented security rules for network security groups to simplify the management of large numbers of rules. Augmented security rules also help when you need to implement more complex network sets of rules. Augmented rules let you add the following options into a single security rule:
+You can use augmented security rules for network security groups to simplify managing large numbers of rules. Augmented security rules also help when you need to implement more complex network sets of rules. Augmented rules let you add the following options into a single security rule:
 
 - Multiple IP addresses
 - Multiple ports
@@ -82,19 +81,19 @@ Service tags simplify security for VMs and Azure virtual networks by allowing yo
 
 You can restrict access to many services. Microsoft manages the service tags, meaning you can't create your own. Some examples of the tags are:
 
-- **VirtualNetwork** - Represents all virtual network addresses anywhere in Azure, and in your on-premises network if you're using hybrid connectivity.
-- **AzureLoadBalancer** - Denotes Azure's infrastructure load balancer. The tag translates to the virtual IP address of the host (168.63.129.16) where Azure health probes originate.
-- **Internet** - Represents anything outside the virtual network address that is publicly reachable, including resources that have public IP addresses. One such resource is the Web Apps feature of Azure App Service.
-- **AzureTrafficManager** - Represents the IP address for Azure Traffic Manager.
-- **Storage** - Represents the IP address space for Azure Storage. You can specify whether traffic is allowed or denied. You can also specify if access is allowed only to a specific region, but you can't select individual storage accounts.
-- **SQL** - Represents the address for Azure SQL Database, Azure Database for MySQL, Azure Database for PostgreSQL, and Azure Synapse Analytics services. You can specify whether traffic is allowed or denied, and you can limit to a specific region.
-- **AppService** - Represents address prefixes for Azure App Service.
+- **VirtualNetwork**: Represents all virtual network addresses anywhere in Azure, and in your on-premises network if you're using hybrid connectivity.
+- **AzureLoadBalancer**: Denotes Azure's infrastructure load balancer. The tag translates to the virtual IP address of the host (168.63.129.16) where Azure health probes originate.
+- **Internet**: Represents anything outside the virtual network address that's publicly reachable, including resources that have public IP addresses. One such resource is the Web Apps feature of Azure App Service.
+- **AzureTrafficManager**: Represents the IP address for Azure Traffic Manager.
+- **Storage**: Represents the IP address space for Azure Storage. You can specify whether traffic is allowed or denied. You can also specify if access is allowed only to a specific region, but you can't select individual storage accounts.
+- **SQL**: Represents the address for Azure SQL Database, Azure Database for MySQL, Azure Database for PostgreSQL, and Azure Synapse Analytics services. You can specify whether traffic is allowed or denied, and you can limit to a specific region.
+- **AppService**: Represents address prefixes for Azure App Service.
 
 ## App security groups
 
 App security groups let you configure network security for resources used by specific apps. You can group VMs logically, no matter what their IP address or subnet assignment.
 
-Use app security groups within a network security group to apply a security rule to a group of resources. It's easier to deploy and scale up specific app workloads. You just add a new VM deployment to one or more app security groups, and that VM automatically picks up your security rules for that workload.
+You can use app security groups within a network security group to apply a security rule to a group of resources. It's easier to deploy and scale up specific app workloads; just add a new VM deployment to one or more app security groups, and that VM automatically picks up your security rules for that workload.
 
 An app security group lets you group network interfaces together. You can then use that app security group as a source or destination rule within a network security group.
 

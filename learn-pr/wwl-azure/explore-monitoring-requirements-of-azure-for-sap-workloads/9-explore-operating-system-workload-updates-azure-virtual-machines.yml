@@ -4,11 +4,10 @@ title: Explore operating system and workload updates for Azure virtual machines
 metadata:
   title: Explore operating system and workload updates for Azure virtual machines
   description: "Explore operating system and workload updates for Azure virtual machines"
-  ms.date: 04/20/2023
+  ms.date: 10/17/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 4
 content: |
   [!include[](includes/9-explore-operating-system-workload-updates-azure-virtual-machines.md)]
