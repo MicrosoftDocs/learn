@@ -6,8 +6,7 @@ metadata:
   ms.date: 09/12/2023
   author: madiepev
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Work with generative artificial intelligence (AI) models in Azure Machine Learning
 prerequisites: |
   Familiarity with Azure and the Azure portal.

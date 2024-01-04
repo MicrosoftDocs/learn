@@ -4,8 +4,8 @@ metadata:
   title: Automate the installation and configuration of software in your Virtual Machines
   description: Learn how to automate the installation and configuration of software in your Azure Virtual Machines.
   ms.date: 05/15/2020
-  author: cynthn
-  ms.author: cynthn
+  author: ju-shim
+  ms.author: jushiman
   ms.topic: module
   ms.service: virtual-machines
 title: Automate the installation and configuration of software in your Virtual Machines

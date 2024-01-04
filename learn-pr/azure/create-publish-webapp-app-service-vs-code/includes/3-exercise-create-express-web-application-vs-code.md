@@ -1,20 +1,20 @@
 ::: zone pivot="nodeexpress"
 
-With Node.js and Express.js, you can create a webapp very quickly.
+With Node.js and Express.js, you can create a webapp quickly.
 
-Suppose you've been asked to start building the website to promote the new video game launch. You've decided to use Node.js to run server-side code and, to make the development as quick as possible, you're going to use the Express.js framework for webapps. You want to create a quick, proof-of-concept webapp that displays a countdown to the launch date.
+Suppose you're asked to start building the website to promote the new video game launch. You decide to use Node.js to run server-side code and, to make the development as quick as possible, you're going to use the Express.js framework for webapps. You want to create a quick, proof-of-concept webapp that displays a countdown to the launch date.
 
-Here, you'll install the necessary software and then use Visual Studio Code to create and test a website.
+Here, you install the necessary software and then use Visual Studio Code to create and test a website.
 
 > [!NOTE]
 > You must have [Visual Studio Code](https://code.visualstudio.com) and [Node.js](https://nodejs.org) installed on your computer before you begin this exercise.
 
 ## Create an app folder
 
-You can use Visual Studio Code to run all the commands and edit all the code for your webapp. Here, you'll use its integrated terminal to set up a folder with Express.js installed:
+You can use Visual Studio Code to run all the commands and edit all the code for your webapp. Here, you use its integrated terminal to set up a folder with Express.js installed:
 
 1. Start Visual Studio Code.
-1. On the **View** menu, click **Terminal**.
+1. On the **View** menu, select **Terminal**.
 1. To create a new folder, type the following commands:
 
     ```console
@@ -30,14 +30,14 @@ You can use Visual Studio Code to run all the commands and edit all the code for
 You can use the Express Generator tool to create all the components of an Express.js boiler-plate webapp:
 
 1. In the Visual Studio Code Explorer window, notice that the **countdownExpressApp** folder is empty.
-1. If the integrated terminal is not visible, on the **View** menu, click **Terminal**.
+1. If the integrated terminal isn't visible, on the **View** menu, select **Terminal**.
 1. To run the Express Generator, execute this command in the terminal:
 
     ```console
     npx express-generator
     ```
 
-1. Examine the contents of the Explorer window to see the files the generator has created.
+1. Examine the contents of the Explorer window to see the files the generator creates.
 
     :::image type="content" source="../media/3-express-generator-files.png" alt-text="Express generated files." loc-scope="vs-code":::
 
@@ -46,10 +46,10 @@ You can use the Express Generator tool to create all the components of an Expres
 You now have a functional webapp that Node.js can run. Let's modify its code to display the countdown:
 
 1. In the Visual Studio Code Explorer window, expand **routes**, and then select **index.js**. This JavaScript file defines routes for the app's homepage. We can add our code to calculate the countdown here.
-1. Add the following code, immediately after the `var router = express.Router();` line. In the first line of the inserted code, specify your own date around a month in the future, in `MM/DD/YYYY HH:MM` format (this example uses `12/29/2022 10:00`):
+1. Add the following code, immediately after the `var router = express.Router();` line. In the inserted code, specify your own date around a month in the future, in `MM/DD/YYYY HH:MM` format (this example uses `01/20/2024 10:00`):
 
     ```JavaScript
-    let launchTime = new Date("12/29/2022 10:00").getTime();
+    let launchTime = new Date("01/20/2024 10:00").getTime();
     ```
 
 1. Locate this line of code:
@@ -100,7 +100,7 @@ Now, modify the default homepage for the webapp to display the countdown:
 
 Now the app is complete, let's run it on your local computer and see if it shows the countdown:
 
-1. The Express Generator creates a webapp that depends on several other Node.js packages. You must ensure these are installed before you can run the webapp. In the Code integrated terminal, to install the webapp's dependencies, run this command:
+1. The Express Generator creates a webapp that depends on several other Node.js packages. You must ensure these packages are installed before you can run the webapp. In the Code integrated terminal, to install the webapp's dependencies, run this command:
 
     ```console
     npm install
@@ -115,7 +115,7 @@ Now the app is complete, let's run it on your local computer and see if it shows
     npm start
     ```
 
-    This command tells `npm` to run the command in the package's `scripts.start` property. The Express Generator sets this property to start Node.js in the /bin/www folder. This starts the webapp locally.
+    This command tells `npm` to run the command in the package's `scripts.start` property. The Express Generator sets this property to start Node.js in the /bin/www folder and starts the webapp locally.
 
 1. Open a web browser and navigate to the address `http://localhost:3000`.
 
@@ -127,21 +127,21 @@ Now the app is complete, let's run it on your local computer and see if it shows
 
 ::: zone pivot="pythonflask"
 
-As you'll see, using Python and the py utility to install Flask, you can create a webapp very quickly.
+When you use Python and the `py` utility to install Flask, you can create a webapp quickly.
 
-Suppose you've been asked to start building the website to promote the new video game launch. You've decided to use Flask to run server-side code and, to make the development as quick as possible, you're going to use the default Jinja templating engine. You want to create a quick, proof-of-concept webapp that displays a countdown to the launch date.
+Suppose you're asked to start building the website to promote the new video game launch. You decide to use Flask to run server-side code and, to make the development as quick as possible, you're going to use the default Jinja templating engine. You want to create a quick, proof-of-concept webapp that displays a countdown to the launch date.
 
-Here, you'll install the necessary software and then use Visual Studio Code to create and test a website.
+Here, you install the necessary software and then use Visual Studio Code to create and test a website.
 
 > [!NOTE]
 > You must have [Visual Studio Code](https://code.visualstudio.com) and [Python](https://www.python.org) installed on your computer before you begin this exercise.
 
 ## Create an app folder
 
-You can use Visual Studio Code to run all the commands and edit all the code for your webapp. Here, you'll use its integrated terminal to set up a folder for your project:
+You can use Visual Studio Code to run all the commands and edit all the code for your webapp. Here, you use its integrated terminal to set up a folder for your project:
 
 1. Start Visual Studio Code.
-1. On the **View** menu, click **Terminal**.
+1. On the **View** menu, select **Terminal**.
 1. To create a new folder, type the following commands:
 
     ```console
@@ -155,23 +155,24 @@ You can use Visual Studio Code to run all the commands and edit all the code for
 
 Using a virtual environment avoids installing Flask into a global Python environment and gives you exact control over the libraries used in an application.
 
-1. If the integrated terminal is not visible, on the **View** menu, click **Terminal**.
-1. To create a virtual environment named `env`, in Windows type the following command into the terminal:
+1. If the integrated terminal isn't visible, on the **View** menu, select **Terminal**.
+1. To create a virtual environment named `env` in Windows, type the following command into the terminal:
 
     ```console
     py -m venv env
     ```
+
     Or, in macOS, type the following command into the terminal:
 
     ```console
     python3 -m venv env
     ```
 
-    You will not see a success message or any other feedback.
+    After you enter this command, there isn't a success message or any other feedback.
 
 1. Open the Command Palette using <kbd>Ctrl+Shift+P</kbd> on Windows and Linux (or <kbd>Command+Shift+P</kbd> on macOS) and execute the **Python: Select Interpreter** command.
 
-    Visual Studio Code displays a list of available global environments, including the virtual environment you just created.  You should see the virtual environment named `env` in the list.  Use the arrow keys to select the `env` entry and select <kbd>Enter</kbd> (or <kbd>return</kbd> on macOS).
+    Visual Studio Code displays a list of available global environments, including the virtual environment you created. You should see the virtual environment named `env` in the list. Use the arrow keys to select the `env` entry and select <kbd>Enter</kbd> (or <kbd>return</kbd> on macOS).
 
    :::image type="content" source="../media/3-python-select-interpreter.png" alt-text="Screenshot of selecting Python interpreter in Visual Studio Code.":::
 
@@ -189,18 +190,18 @@ Using a virtual environment avoids installing Flask into a global Python environ
     > [!IMPORTANT]
     > On Windows, if your default terminal type is PowerShell, you may see an error that it cannot run activate.ps1 because running scripts is disabled on the system. The error provides a link for information on how to allow scripts. Otherwise, use **Terminal: Select Default Shell** to set "Command Prompt" or "Git Bash" as your default instead.
 
-    Once you have created and activated the virtual environment, you're ready to install Flask inside of your virtual environment.
+    Once you create and activate the virtual environment, you're ready to install Flask inside of your virtual environment.
 
 ## Install Flask into the virtual environment
 
-1. If the integrated terminal is not visible, on the **View** menu, click **Terminal**.
+1. If the integrated terminal isn't visible, on the **View** menu, select **Terminal**.
 1. To install Flask in the virtual environment, ensure the command line is prefaced with `(env)`, execute this command in the terminal:
 
     ```console
     pip3 install flask
     ```
 
-    Once the pip3 utility has finished, you should see a success message similar to the following:
+    Once the pip3 utility finishes, you should see a success message similar to the following example:
 
     ```output
     Successfully installed Jinja2-3.1.2 MarkupSafe-2.1.1 Werkzeug-2.2.2 click-8.1.3 colorama-0.4.5 flask-2.2.2 itsdangerous-2.1.2
@@ -208,21 +209,21 @@ Using a virtual environment avoids installing Flask into a global Python environ
 
 ## Add code files
 
-1. In the Visual Studio Code Explorer view, use the **New file** icon to create a new file named `app.py`.  This will be where we write our Python code to create a Flask app, create a function to handle incoming requests, and perform the logic for our app.
+1. In the Visual Studio Code Explorer view, use the **New file** icon to create a new file named `app.py`. This file is where we write our Python code to create a Flask app, create a function to handle incoming requests, and perform the logic for our app.
 
 1. Use the **New folder** icon to a new folder called `templates`.
 
-1. Select the `templates` folder, the use the **New file** icon to add a new file called `countdown.html`.
+1. Select the `templates` folder, then use the **New file** icon to add a new file called `countdown.html`.
 
 ## Add logic to calculate the countdown
 
 Now that we have the file structure in place, we can focus on the application logic.
 
-Our aim here is to:
+Our aim is to:
 
-- Add `import` statements to pull in the various packages we'll need to support our web app.
+- Add `import` statements to pull in the various packages we need to support our web app.
 - Create an instance of the Flask object that essentially starts the web app.
-- Define a function that will handle the default route.  Since this is a simple app, we'll do all our business logic (i.e., our date time math) and send the number of milliseconds to our Jinja template.
+- Define a function that handles the default route. In this simple app, we do all our business logic (that is, our date time math) and send the number of milliseconds to our Jinja template.
 
 1. In the Visual Studio Code Explorer window, select **app.py** and add the following code:
 
@@ -232,7 +233,7 @@ Our aim here is to:
     from datetime import datetime
     ```
 
-    These first lines of code just import the Flask library.  The `render_template` package provides the Jinja templating support.  Finally, we'll need `datetime` package to work with dates and times.
+    These first lines of code just import the Flask library. The `render_template` package provides the Jinja templating support. Finally, we need `datetime` package to work with dates and times.
 
 1. Next, create an instance of the Flask object by adding the following code to the **app.py** file:
 
@@ -240,7 +241,7 @@ Our aim here is to:
     app = Flask(__name__)
     ```
 
-1. Finally, create a function that will handle the default route.
+1. Finally, create a function that handles the default route.
 
     ```JavaScript
     @app.route("/")
@@ -259,15 +260,15 @@ Our aim here is to:
 
     There's quite a bit to unpack in this function.
 
-    Above the function's definition, we use `@app.route()` to adorn the function with the route attribute to tell Flask which URL pattern to route to this function.  In this case, we're only handling the route for the root of the site.
+    Above the function's definition, we use `@app.route()` to adorn the function with the route attribute to tell Flask which URL pattern to route to this function. In this case, we're only handling the route for the root of the site.
 
     First, you create two variables, `launchTime` and `currentTime`, to hold the future date and the current date, respectively.
 
-    Next, you create the `diff` variable to hold the difference between the two dates.  This will return the value in microseconds, so you will need to multiply that value by 1000.  Then, to eliminate any fractions of milliseconds, you convert the floating number to an integer using the `int()` function.  You store that value in a new variable named `numberOfMilliseconds`.
+    Next, you create the `diff` variable to hold the difference between the two dates. This returns the value in microseconds, so you  need to multiply that value by 1000.Then, to eliminate any fractions of milliseconds, you convert the floating number to an integer using the `int()` function. You store that value in a new variable named `numberOfMilliseconds`.
 
-    Finally, you call the `render_template()` function passing in the name of the template in the templates folder, and the value you want to inject into the template.  Soon we'll create the template and will use the template replacement code named `time` in the template, so here we set `time` to the value stored in `numberOfMilliseconds`.
+    Finally, you call the `render_template()` function passing in the name of the template in the templates folder, and the value you want to inject into the template. Soon, we create the template and use the template replacement code named `time` in the template, so for now we set `time` to the value stored in `numberOfMilliseconds`.
 
-    The entire app.py file should match the following code listing:
+    The entire app.py file should match the following code:
 
     ```python
     from flask import Flask
@@ -297,7 +298,7 @@ Our aim here is to:
 
 ## Render the countdown
 
-Now, we'll build the template to display the countdown:
+Now, we build the template to display the countdown:
 
 1. In the Visual Studio Code Explorer window, expand **templates**, and then select **countdown.html**. This file defines a Jinja template for the app's homepage. We can add code to display the countdown here.
 
@@ -337,13 +338,13 @@ Now, we'll build the template to display the countdown:
     <p>Countdown: {{ time }} milliseconds</p>
     ```
 
-    Here we use the `{{ }}` replacement syntax, and the replacement code `time` that we referenced in the previous section.  You'll recall, we called `render_template()` and set `time` to the value we set in the variable `numberOfMilliseconds`.  At runtime, Flask will dynamically replace `{{ time }}` with a long numeric value.
+    In this line, we used the `{{ }}` replacement syntax, and the replacement code `time` that we referenced in the previous section. As you recall, we called `render_template()` and set `time` to the value we set in the variable `numberOfMilliseconds`. At runtime, Flask dynamically replaces `{{ time }}` with a long numeric value.
 
 1. On the **File** menu, select **Save** and then close the **countdown.html** file.
 
 ## Run the webapp
 
-Now the app is complete, let's run it on your local computer and see if it shows the countdown:
+Now that the app is complete, run it on your local computer and see if it shows the countdown:
 
 1. In the Visual Studio Code Terminal on Windows, run the following command:
 
