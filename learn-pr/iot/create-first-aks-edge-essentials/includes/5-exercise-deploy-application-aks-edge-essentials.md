@@ -1,3 +1,29 @@
+
+1. Confirm that the deployment was successful by running the following command:
+
+    ```powershell
+    kubectl get nodes -o wide
+    kubectl get pods -A -o wide
+    ```
+
+    The following example output shows the Linux and Windows nodes are ready and the pods are running:
+
+    ```output
+    PS C:\Users\azureuser> kubectl get nodes -o wide
+    NAME         STATUS   ROLES                       AGE   VERSION        INTERNAL-IP   EXTERNAL-IP   OS-IMAGE                         KERNEL-VERSION     CONTAINER-RUNTIME
+    myvm-ledge   Ready    control-plane,etcd,master   46m   v1.26.6+k3s-   192.168.0.2   <none>        CBL-Mariner/Linux                5.15.133.1-1.cm2   containerd://1.7.1-k3s1
+    myvm-wedge   Ready    <none>                      33m   v1.26.6+k3s-   192.168.0.3   <none>        Windows Server 2022 Datacenter   10.0.20348.2031    containerd://1.7.1-k3s1
+    
+    PS C:\Users\azureuser> kubectl get pods -A -o wide
+    NAMESPACE     NAME                               READY   STATUS    RESTARTS      AGE   IP            NODE         NOMINATED NODE   READINESS GATES
+    kube-system   coredns-866448bdfb-8s26b           1/1     Running   0             47m   10.42.0.3     myvm-ledge   <none>           <none>
+    kube-system   kube-vip-cloud-provider-ds-n8l6t   1/1     Running   0             46m   10.42.0.2     myvm-ledge   <none>           <none>
+    kube-system   kube-vip-ds-rjl8v                  1/1     Running   2 (43m ago)   46m   192.168.0.2   myvm-ledge   <none>           <none>
+    ``````
+
+    :::image type="content" source="../media/3-aks-ee-deploysuccess-inline.png" alt-text="Screenshot of Windows VM with powershell commands output demonstrating a successful deployment of AKS Edge Essentials." lightbox="../media/3-aks-ee-deploysuccess-expanded.png":::
+
+
 <!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
 
     Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
