@@ -164,4 +164,4 @@ The deployment can take a minute or two to finish.
 
 1. Select **Deployment details** to expand it. Notice that the resources for Azure Cosmos DB role-based access control have been deployed.
 
-   :::image type="content" source="../media/7-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with the Azure Cosmos D B resources listed." border="true":::
+   :::image type="content" source="../media/7-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with the Azure Cosmos DB resources listed." border="true":::
