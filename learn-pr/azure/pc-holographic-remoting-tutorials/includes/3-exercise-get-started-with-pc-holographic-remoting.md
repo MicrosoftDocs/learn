@@ -14,8 +14,6 @@ Go to the [Hololens 2 fundamentals](/training/paths/beginner-hololens-2-tutorial
 4. Imported the Mixed Reality Toolkit and configured the Unity project.
 5. Created and set the scene and gave it a suitable name--for example, *PC Holographic Remoting*.
 
-Go to the [MRTK2 profile configuration guide](/windows/mixed-reality/mrtk-unity/mrtk2/configuration/mixed-reality-configuration-guide) article and follow the instructions in the *Spatial Awareness Settings* section to change the MRTK configuration profile for your scene to the **DefaultHoloLens2ConfigurationProfile**. Change the display options for the spatial awareness mesh to **Occlusion**.
-
 ## Import the tutorial assets
 
 [!INCLUDE[](includes/import-package.md)]
