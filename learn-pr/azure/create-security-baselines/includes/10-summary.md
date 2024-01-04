@@ -15,7 +15,7 @@ We've covered many things in this module to create a baseline security checklist
 
 - **Install a web application firewall**. A web application firewall (WAF) is a feature of Azure Application Gateway that provides centralized protection of your web applications from common exploits and vulnerabilities. Third parties also offered Azure-supported WAFs.
 
-- **Enforce multifactor verification for users, especially for your administrator accounts**. Multifactor authentication for Azure AD users helps administrators protect their organizations and users by requiring more than one authentication method.
+- **Enforce multifactor verification for users, especially for your administrator accounts**. Multifactor authentication for Microsoft Entra users helps administrators protect their organizations and users by requiring more than one authentication method.
 
 - **Encrypt your virtual hard disk files**. Encryption helps protect your boot volume and data volumes at rest in storage, along with your encryption keys and secrets.
 

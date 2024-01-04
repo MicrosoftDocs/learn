@@ -17,6 +17,6 @@ In this module, you'll:
 
 ## Prerequisites
 
-- Familiarity with Azure Active Directory (Azure AD) concepts
+- Familiarity with Microsoft Entra concepts
 - Familiarity with general concepts of authorization and authentication
 - Experience with developing and deploying infrastructure as a service (IaaS) applications

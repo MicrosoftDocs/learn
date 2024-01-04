@@ -4,7 +4,7 @@ In your polling company, you want to create a composed model that will categoriz
 
 Here, you'll learn how to create composed models.
 
-## Create a composed model in Form Analyzer Studio
+## Create a composed model in Document Intelligence Studio
 
 Before you start creating a composed model, you'll need:
 

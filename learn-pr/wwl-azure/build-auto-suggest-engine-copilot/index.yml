@@ -3,10 +3,12 @@ uid: learn.wwl.build-auto-suggest-engine-copilot
 metadata:
   title: Guided project - Build auto suggest engine with Copilot
   description: "Use GitHub Copilot to interpret, debug, and extend project code for a Trie data structure that supports autocomplete and spelling suggestion features."
-  ms.date: 09/22/2023
+  ms.date: 10/26/2023
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: artificial-intelligence
   ms.devlang: csharp
 title: Guided project - Build auto suggest engine with Copilot

@@ -20,7 +20,7 @@ Microsoft Sentinel comes with solutions and standalone content that includes out
 
 - Microsoft Defender for Cloud
 - Microsoft 365 sources, including Office 365
-- Azure Active Directory (Azure AD)
+- Microsoft Entra ID
 - Microsoft Defender for Cloud Apps
 - Partner solutions
 - Amazon Web Services

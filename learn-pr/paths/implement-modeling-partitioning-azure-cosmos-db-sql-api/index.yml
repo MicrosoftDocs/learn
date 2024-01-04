@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Implement a data modeling and partitioning strategy for Azure Cosmos DB for NoSQL
 prerequisites: |
   Before starting this learning path, you should already have:

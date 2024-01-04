@@ -49,7 +49,7 @@ Your team wants a unique query that returns all *products* within the container 
 
 ## Paginate LINQ query results
 
-Because we're querying across multiple logical partitions, we need to make sure that we return all results even if a logical partition doesn't have any matching results. For example, the *helmets* category doesn't have any matching products. If we didn't return all possible pages, our application may inadvertently halt when it sees an empty page of results for the *helmets* category. Here, you again use a *while* and *foreach* loop in C# to iterate over *all* result pages. The code should be similar to how you used a feed iterator previously.
+Because we're querying across multiple logical partitions, we need to make sure that we return all results even if a logical partition doesn't have any matching results. For example, the *helmets* category doesn't have any matching products. If we didn't return all possible pages, our application could inadvertently halt when it sees an empty page of results for the *helmets* category. Here, you again use a *while* and *foreach* loop in C# to iterate over *all* result pages. The code should be similar to how you used a feed iterator previously.
 
 1. In *Program.cs*, create a *while* loop that iterates until the feed iterator doesn't have any more pages.
 

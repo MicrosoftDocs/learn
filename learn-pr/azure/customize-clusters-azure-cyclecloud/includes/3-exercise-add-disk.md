@@ -8,7 +8,7 @@ Recall that you wanted to test the process of implementing a cluster by using a 
 >    - at least 4 vCPU cores of the DSv3 series
 >    - at least 100 vCPU cores of the FSv2 series
 >    - at least 48 vCPU cores of the NC series
-> - Have a Microsoft account or an Azure AD account with the Owner or Contributor role in the Azure subscription.
+> - Have a Microsoft account or a Microsoft Entra account with the Owner or Contributor role in the Azure subscription.
 > - Deploy an Azure CycleCloud application to an Azure VM accessible with a public IP address associated with its network interface.
 > - Configure the Azure CycleCloud application with the Owner or Contributor role-level access to the Azure subscription.
 > - Have an Azure CycleCloud application user account with the Administrator role.
@@ -38,7 +38,7 @@ Most management tasks in this and subsequent exercises require the use of Azure 
 > [!NOTE]
 > Alternatively, you can login to the Azure VM hosted the Azure CycleCloud application, where the Azure CycleCloud CLI is already installed.
 
-1. From your computer, start any Azure portal-compatible web browser, navigate to [the Azure portal](https://portal.azure.com), and when prompted, authenticate with a Microsoft account or an Azure Active Directory (Azure AD) account that has the Contributor or Owner role in the Azure subscription you'll be using in this module.
+1. From your computer, start any Azure portal-compatible web browser, navigate to [the Azure portal](https://portal.azure.com), and when prompted, authenticate with a Microsoft account or a Microsoft Entra account that has the Contributor or Owner role in the Azure subscription you'll be using in this module.
 
     > [!NOTE]
     > The Azure portal supports the most common modern web browsers, including the current versions of Microsoft Edge, Google Chrome, Mozilla Firefox, and Apple Safari.
@@ -136,11 +136,10 @@ Now, you'll download and modify the sample Azure CycleCloud template that's comp
     cd ~/cyclecloud-slurm/templates
     ```
 
-1. Run the following commands to download the intended version of the cluster template:
+1. Run the following commands to create a backup of the original cluster template:
 
     ```azurecli
-    mv slurm.txt slurm.bak.txt
-    curl -O https://raw.githubusercontent.com/Azure/cyclecloud-slurm/2.4.1/templates/slurm.txt
+    cp slurm.txt slurm.bak.txt
     ```
 
 1. Run the following command to open the downloaded template in the nano editor:

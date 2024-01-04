@@ -14,7 +14,7 @@ Azure Monitor collects data automatically from a range of components. For exampl
 - **Operating-system data**: Data from the Windows or Linux virtual machines that host your application.
 - **Azure resource data**: Data that relates to the operations of an Azure resource, such as a web app or a load balancer.
 - **Azure subscription data**: Data that relates to your subscription. It includes data about Azure health and availability.
-- **Azure tenant data**: Data about your Azure organization-level services, such as Azure Active Directory.
+- **Azure tenant data**: Data about your Azure organization-level services, such as Microsoft Entra ID.
 
 Because Azure Monitor is an automatic system, it begins to collect data from these sources as soon as you create Azure resources like virtual machines and web apps. You can extend the data that Azure Monitor collects by:
 

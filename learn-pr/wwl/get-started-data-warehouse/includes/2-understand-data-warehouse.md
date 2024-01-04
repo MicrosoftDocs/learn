@@ -1,7 +1,3 @@
----
-ms.custom:
-  - build-2023
----
 The process of building a modern data warehouse typically consists of:
 
 - Data ingestion - moving data from source systems into a data warehouse.
@@ -55,7 +51,7 @@ Often, a data warehouse is organized as a *star schema*, in which a fact table i
 You can use the attributes of something to group together numbers in the fact table at different levels. For example, you could find the total sales revenue for a whole region or just for one customer. The information for each level can be stored in the same dimension table.
 
 > [!TIP]
-> See [What is a star schema?](https://learn.microsoft.com/power-bi/guidance/star-schema) for more information on designing star schemas for Fabric.
+> See [What is a star schema?](/power-bi/guidance/star-schema) for more information on designing star schemas for Fabric.
 
 If there are lots of levels or some information is shared by different things, it might make sense to use a *snowflake schema* instead. Here's an example:
 

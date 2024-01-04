@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/02/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: microsoft-sentinel
 title: Connect data to Microsoft Sentinel using data connectors
 summary: The primary approach to connect log data is using the Microsoft Sentinel provided data connectors.  This module provides an overview of the available data connectors.

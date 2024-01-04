@@ -6,8 +6,8 @@ metadata:
   ms.date: 10/06/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Guided Project – Deploy and configure Azure Monitor
 summary: Understand how to configure monitoring of various workloads and infrastructure services using Azure Monitor.
 abstract: |
@@ -17,7 +17,7 @@ abstract: |
   - Configure alerts.
 prerequisites: ""
 iconUrl: /training/achievements/generic-badge.svg
-hidden: true
+hidden: false
 levels:
 - intermediate
 roles:

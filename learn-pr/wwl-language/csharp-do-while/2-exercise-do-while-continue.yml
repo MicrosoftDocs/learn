@@ -4,10 +4,10 @@ title: Exercise - Create do and while iteration loops
 metadata:
   title: Exercise - Create do and while iteration loops
   description: "Exercise - Create do and while iteration loops"
-  ms.date: 09/18/2023
+  ms.date: 12/06/2023
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-exercise-do-while-continue.md)]
@@ -21,7 +21,7 @@ quiz:
       explanation: "Incorrect. A `do-while` statement iterates through a code block at least once because the expression is evaluated at the end of the code block."
     - content: "A `while` statement executes a code block at least once."
       isCorrect: false
-      explanation: "Incorrect. The expression for a `while` statement is evaluated before the code block and therefore the code block may not be executed even once."
+      explanation: "Incorrect. The expression for a `while` statement is evaluated before the code block and therefore the code block might not be executed even once."
     - content: "A `do-while` statement executes a code block at least once."
       isCorrect: true
       explanation: "Correct! The `do-while` will iterate through a code block at least one time. Code execution will exit the iteration loop once the `while` expression at the end of the code block evaluates to `true`."

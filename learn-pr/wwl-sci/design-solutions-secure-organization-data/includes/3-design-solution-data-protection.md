@@ -85,7 +85,7 @@ Virtual machines use virtual disk files as storage volumes and exist in a cloud 
 
 ### Use identity-based storage access controls
 
-There are many ways to control access to data: shared keys, shared signatures, anonymous access, identity provider-based. Use Azure Active Directory (Azure AD) and role-based access control (RBAC) to grant access. For more information, see [Identity and access management considerations](https://learn.microsoft.com/azure/architecture/framework/security/design-identity).
+There are many ways to control access to data: shared keys, shared signatures, anonymous access, identity provider-based. Use Microsoft Entra ID and role-based access control (RBAC) to grant access. For more information, see [Identity and access management considerations](https://learn.microsoft.com/azure/architecture/framework/security/design-identity).
 
 ### Use an additional Key Encryption Key (KEK)
 

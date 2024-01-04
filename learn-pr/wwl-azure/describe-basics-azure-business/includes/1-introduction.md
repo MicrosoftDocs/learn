@@ -1,4 +1,3 @@
-
 Welcome to the **Get to know Microsoft Azure cloud platform: An overview for business professionals** learning path!
 
 This learning path consists of three modules designed for business decision makers looking to learn more about the cloud and Microsoft Azure.

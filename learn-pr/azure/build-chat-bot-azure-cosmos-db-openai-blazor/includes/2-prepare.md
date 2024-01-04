@@ -27,7 +27,7 @@ This project uses the [azure-samples/cosmosdb-chatgpt](https://github.com/Azure-
 > [!TIP]
 > This "zero-touch" Bicep template also includes the final application running in Azure App Service. You can always check this out if you want to see a fully working solution.
 
-1. Create a new shell variable named **resourceGroupName** with the name of the Azure resource group that you will create (`mslearn-cosmos-openai`).
+1. Create a new shell variable named **resourceGroupName** with the name of the Azure resource group that you create (`mslearn-cosmos-openai`).
 
     ```azurecli
     resourceGroupName="mslearn-cosmos-openai"
@@ -36,7 +36,7 @@ This project uses the [azure-samples/cosmosdb-chatgpt](https://github.com/Azure-
 1. Create a resource group using [`az group create`](/cli/azure/group#az-group-create()).
 
     ```azurecli
-    az deployment group create \
+    az group create \
       --name $resourceGroupName \
       --location "eastus"
     ```
@@ -169,9 +169,9 @@ A [development container](https://containers.dev/) environment is available with
 > [!IMPORTANT]
 > All GitHub accounts can use Codespaces for up to 60 hours free each month with 2 core instances. For more information, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
 
-1. Start the process to create a new GitHub Codespace on the `start` branch of the [`azure-samples/cosmosdb-chatgpt`](https://github.com/azure-samples/cosmosdb-chatgpt) GitHub repository:
+1. Start the process to create a new GitHub Codespace on the `start` branch of the [`azure-samples/cosmosdb-chatgpt`](https://github.com/Azure-Samples/cosmosdb-chatgpt/tree/start) GitHub repository:
 
-    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Azure-Samples/cosmosdb-chatgpt/tree/start?quickstart=1)
+    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Azure-Samples/cosmosdb-chatgpt/tree/start?template=false&quickstart=1)
 
 1. On the **Create codespace** page, review the codespace configuration settings and then select **Create new codespace**
 

@@ -1,10 +1,10 @@
-The administrator for the marketing department's Azure subscription recently left the organization. As Global Administrator, you don't have access to this subscription. You now need to grant administrator access for the subscription to another person in the marketing department.
+The marketing department's Azure subscription administrator recently left the organization. As Global Administrator, you don't have access to this subscription. You now need to grant administrator access for the subscription to another person in the marketing department.
 
 In this unit, you'll explore when you might need to elevate your own access.
 
 ## When to elevate access
 
-By default, a Global Administrator doesn't have access to Azure resources. The Global Administrator for Azure Active Directory (Azure AD) can temporarily elevate their permissions to the Azure role of User Access Administrator. This action grants the Azure role-based access control (Azure RBAC) permissions that are needed to manage Azure resources. The User Access Administrator is assigned at the scope of root. The role can view all resources in, and assign access to, any subscription or management group in that Azure AD organization.
+By default, a Global Administrator doesn't have access to Azure resources. The Global Administrator for Microsoft Entra ID can temporarily elevate their permissions to the Azure role of User Access Administrator. This action grants the Azure role-based access control (Azure RBAC) permissions they need to manage Azure resources. The User Access Administrator is assigned at the scope of root. The role can view all resources in and assign access to any subscription or management group in that Microsoft Entra organization.
 
 The following diagram shows what resources the Global Administrator can view when their permissions are elevated to User Access Administrator.
 
@@ -23,7 +23,7 @@ After the Global Administrator elevates their permissions to User Access Adminis
 
 To assign a user administrative access to a subscription, you must have `Microsoft.Authorization/roleAssignments/write` and `Microsoft.Authorization/roleAssignments/delete` permissions at the subscription scope. Users with the subscription Owner or User Access Administrator role have these permissions.
 
-In the next unit, you'll see how to assign a role by using the Azure portal after you've elevated your permissions to User Access Administrator. However, you can also assign roles by using Azure PowerShell, the Azure CLI, or the REST API.
+In the next unit, you'll learn how to assign a role by using the Azure portal after you've elevated your permissions to User Access Administrator. However, you can also assign roles by using Azure PowerShell, the Azure CLI, or the REST API.
 
 In the following sections, let's briefly review the commands you would use to assign the Owner role in Azure PowerShell or the Azure CLI.
 

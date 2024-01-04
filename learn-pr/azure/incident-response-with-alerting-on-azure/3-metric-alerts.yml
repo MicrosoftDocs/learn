@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/10/2019
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Use metric alerts for alerts about performance issues in your Azure environment
 durationInMinutes: 4
 content: |

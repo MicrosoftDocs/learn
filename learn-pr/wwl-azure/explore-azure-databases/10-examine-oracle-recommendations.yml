@@ -4,11 +4,10 @@ title: Examine Oracle recommendations
 metadata:
   title: Examine Oracle recommendations
   description: "Examine Oracle recommendations"
-  ms.date: 04/23/2023
+  ms.date: 10/18/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 4
 content: |
   [!include[](includes/10-examine-oracle-recommendations.md)]

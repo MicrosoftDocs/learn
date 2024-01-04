@@ -30,11 +30,9 @@ In this task, you complete a walkthrough of the Starter project code. The Progra
 
 1. Open the Program.cs file in the Visual Studio Code Editor.
 
-1. After a few seconds, notice that a dialog box is displayed asking if you want to load the assets required for building and debugging.
+1. On the View menu, select **Command Palette**.
 
-    Visual Studio Code recognizes the C# file extension, `.cs`, and recognizes that your "Starter" project is missing the required assets.
-
-1. To load the required assets, select **Yes**.
+1. At the command prompt, enter **.net: g** and then select **.NET: Generate Assets for Build and Debug**.
 
 1. At the **Select the project to launch** prompt, select the **Starter** project.
 

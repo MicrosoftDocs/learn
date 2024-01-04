@@ -25,7 +25,7 @@ quiz:
     - content: "Monitor non-Azure resources"
       isCorrect: true
       explanation: "Monitor non-Azure resources. The Microsoft Defender for Cloud free tier doesn't support monitoring external cloud or non-Azure resources, JIT VM access, compliance reports, adaptive network hardening, and several other features."
-  - content: "An organization compliance group requires client authentication using Azure AD and Key Vault diagnostic logs. What is the easiest way to implement the requirement for client authentication?"
+  - content: "An organization compliance group requires client authentication using Microsoft Entra ID and Key Vault diagnostic logs. What is the easiest way to implement the requirement for client authentication?"
     choices:
     - content: "Configure management groups"
       isCorrect: false

@@ -2,11 +2,11 @@ A subscription key is one way to restrict access to an API.
 
 In the shoe company example, NorthWind Shoes are working with a supplier and want them to directly access the Inventory API. Partner access must be restricted using a subscription key for all calls to the API.
 
-Here, you'll obtain a subscription key for your API. You'll then test access to the API with and without the subscription key.
+Here, you obtain a subscription key for your API. Then, you test access to the API with and without the subscription key.
 
 ## Obtain subscription key
 
-Partners are given their key as part of an onboarding process. In this exercise, you'll add a subscription specifically for the NorthWindShoes API. Once you've got a key, you follow a standard process for using the key in API calls.
+Partners are given their key as part of an onboarding process. In this exercise, you add a subscription specifically for the NorthWindShoes API. Once you've got a key, you follow a standard process for using the key in API calls.
 
 1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your API Management instance.
 
@@ -36,9 +36,9 @@ The next step is to use the subscription key to test developer access to your pu
    curl https://<apim gateway>.azure-api.net/api/Products
    ```
 
-   You'll get a **401, Access denied due to missing subscription key** message.
+   You get a **401, Access denied due to missing subscription key** message.
 
-1. You'll now repeat your curl request, this time including your subscription key.
+1. Now repeat your curl request, this time including your subscription key.
 
 1. Run the following command in Cloud Shell, replacing `<primary key>` with the key you saved earlier, and replacing `<apim gateway>` with the name of your gateway.
 

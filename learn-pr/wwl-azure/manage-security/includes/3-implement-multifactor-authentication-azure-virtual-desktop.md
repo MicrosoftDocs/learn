@@ -2,7 +2,7 @@
 
 The Windows client for Azure Virtual Desktop integrates Azure Virtual Desktop with your local machine. However, when you configure your Azure Virtual Desktop account into the Windows client, there are certain actions you'll need to take to keep your users safe.
 
-When you first sign in, the client asks for your username and password. The next time you sign in, the client will remember your token from your Azure Active Directory (AD) Enterprise Application. When they select **Remember me** on the prompt for credentials for the session host, your users can sign in after restarting the client without needing to reenter their credentials.
+When you first sign in, the client asks for your username and password. The next time you sign in, the client will remember your token from your Microsoft Entra Enterprise Application. When they select **Remember me** on the prompt for credentials for the session host, your users can sign in after restarting the client without needing to reenter their credentials.
 
 :::image type="content" source="../media/multifactor-conditional-access-1-1674d6c8.png" alt-text="Diagram showing how conditional access is enforced.":::
 
@@ -13,8 +13,8 @@ This unit shows you how to configure the Conditional Access policy for Azure Vir
 
 Here's what you'll need:
 
- -  Assign users a license that includes Azure Active Directory Premium P1 or P2.
- -  An Azure Active Directory group with your users assigned as group members.
+ -  Assign users a license that includes Microsoft Entra ID P1 or P2.
+ -  A Microsoft Entra group with your users assigned as group members.
  -  Enable multifactor authentication for all your users.
 
 ## Create a Conditional Access policy
@@ -22,7 +22,7 @@ Here's what you'll need:
 Here's how to create a Conditional Access policy that requires multifactor authentication when connecting to Azure Virtual Desktop:
 
 1.  Sign in to the **Azure portal** as a global administrator, security administrator, or Conditional Access administrator.
-2.  Browse to **Azure Active Directory &gt; Security &gt; Conditional Access**.
+2.  Browse to **Microsoft Entra ID** > **Security** > **Conditional Access**.
 3.  Select **New policy**.
 4.  Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
 5.  Under **Assignments**, select **Users and groups**.

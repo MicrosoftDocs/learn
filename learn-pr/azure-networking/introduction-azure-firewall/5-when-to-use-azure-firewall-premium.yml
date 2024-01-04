@@ -4,11 +4,10 @@ title: When to use Azure Firewall Premium
 metadata:
   title: When to use Azure Firewall Premium
   description: Evaluate whether Azure Firewall Premium is the right solution for your company.
-  ms.date: 09/08/2022
+  ms.date: 11/06/2023
   author: vhorne
   ms.author: victorh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/5-when-to-use-azure-firewall-premium.md)]

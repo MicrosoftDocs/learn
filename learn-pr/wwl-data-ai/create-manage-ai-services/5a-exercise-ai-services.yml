@@ -9,10 +9,8 @@ metadata:
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure-ai-services
-azureSandbox: false
-sandbox: false
-labId: 99867
+durationInMinutes: 25
+labId: 152386
 labModal: true
-durationInMinutes: 30
 content: |
   [!include[](includes/5a-exercise-ai-services.md)]

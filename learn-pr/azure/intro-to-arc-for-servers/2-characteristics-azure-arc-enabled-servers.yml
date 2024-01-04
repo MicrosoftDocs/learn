@@ -4,11 +4,10 @@ title: What are the characteristics of Azure Arc-enabled servers?
 metadata:
   title: What are the characteristics of Azure Arc-enabled servers?
   description: What are the characteristics of Azure Arc-enabled servers?
-  ms.date: 01/04/2023
+  ms.date: 11/13/2023
   author: johnmarco
   ms.author: johnmarc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: e2e-hybrid
 durationInMinutes: 5
 content: |

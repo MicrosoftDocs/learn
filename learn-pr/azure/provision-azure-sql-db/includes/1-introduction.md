@@ -8,13 +8,13 @@ The transportation industry requires tight coordination among everyone involved:
 
 Your current process involves piles of paper forms and hours on the phone to coordinate shipments. You find that paperwork is often missing signatures and dispatchers are frequently unavailable. These holdups leave drivers sitting idle; as a result, some important shipments arrive late.
 
-Customer satisfaction and repeat business are crucial to your bottom line, so your team decides to move from paper forms and phone calls to digital documents and online communication. Going digital will enable everyone to coordinate and track shipment times through their web browser or mobile app.
+Customer satisfaction and repeat business are crucial to your bottom line, so your team decides to move from paper forms and phone calls to digital documents and online communication. Going digital enables everyone to coordinate and track shipment times through their web browser or mobile app.
 
-You want to quickly prototype something to share with your team. Your prototype will include a database to hold driver, customer, and order information. Your prototype will be the basis for your production app, so the technology choices you make now should carry over to what your team delivers.
+You want to quickly prototype something to share with your team. Your prototype includes a database to hold driver, customer, and order information. Your prototype is the basis for your production app, so the technology choices you make now should carry over to what your team delivers.
 
 ## Learning objectives
 
-In this module, you'll learn:
+In this module, you learn:
 
 - Why Azure SQL Database is a good choice for running your relational database.
 - Which configuration and pricing options are available for your Azure SQL database.

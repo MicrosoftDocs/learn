@@ -7,8 +7,7 @@ metadata:
   ms.date: 03/24/2023
   author: rwike77
   ms.author: ryanwi
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 5
 ###########################################################################
 ###
@@ -38,14 +37,14 @@ quiz:
     - content: "There are no policies (for example multi-factor authentication) enabled in their production tenant that require user interaction during authentication."
       isCorrect: false
       explanation: "Try again. Not having policies that require user interaction during authentication would be a reason for using the production tenant for testing.  Other factors should be considered to make sure they have the right level of isolation between test and production resources before using a production tenant for testing."
-  - content: "When creating a separate test tenant in Azure AD, what is a good reason for joining the Microsoft 365 Developer Program instead of manually creating a tenant?"
+  - content: "When creating a separate test tenant in Microsoft Entra ID, what is a good reason for joining the Microsoft 365 Developer Program instead of manually creating a tenant?"
     choices:
     - content: "Microsoft 365 Developer Program is free and they can have test user accounts and sample data packs automatically added to the tenant."
       isCorrect: true
       explanation: "Correct. The Microsoft 365 Developer Program provides many benefits that make it easier and faster to set up a test environment."
-    - content: "They can only get a free trial of Azure AD Premium1 or Premium 2 licenses through the Microsoft 365 Developer Program."
+    - content: "They can only get a free trial of Microsoft Entra Premium1 or Premium 2 licenses through the Microsoft 365 Developer Program."
       isCorrect: false
-      explanation: "Try again. They can also get a free trial of Azure AD Premium1 or Premium 2 licenses when they manually create a tenant."
+      explanation: "Try again. They can also get a free trial of Microsoft Entra Premium1 or Premium 2 licenses when they manually create a tenant."
     - content: "The Microsoft 365 Developer Program doesn't include a Microsoft 365 E5 developer subscription, which can be used to create their own sandbox and develop solutions independent of their production environment."
       isCorrect: false
       explanation: "Try again. The Microsoft 365 Developer Program does include a Microsoft 365 E5 developer subscription as well as many other benefits that make it easier and faster to set up a test environment."

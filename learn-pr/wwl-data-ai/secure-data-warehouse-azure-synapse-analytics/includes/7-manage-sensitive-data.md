@@ -14,7 +14,7 @@ In Azure Synapse Analytics, you can find Dynamic Data Masking here;
 
 * **SQL users excluded from Dynamic Data Masking Policies** 
 
-    The following SQL users or Azure AD identities can get unmasked data in the SQL query results. 
+    The following SQL users or Microsoft Entra identities can get unmasked data in the SQL query results. 
     Users with administrator privileges are always excluded from masking, and will see the original data without any mask.
 
 * **Masking rules** - Masking rules are a set of rules that define the designated fields to be masked including the masking function that is used. The designated fields can be defined using a database schema name, table name, and column name.

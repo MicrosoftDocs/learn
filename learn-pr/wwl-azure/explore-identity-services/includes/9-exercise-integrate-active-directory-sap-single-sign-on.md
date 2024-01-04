@@ -1,5 +1,3 @@
-
-
 Active Directory can be integrated with SAP single sign-on by configuring your SAP system with SNC (Secure Network Communication). The primary purpose of SNC is to secure connections between the NetWeaver ABAP application server and external applications, including SAP GUI. SNC provides an interface for external security products that can be used to enable single sign-on.
 
 ## Integrate SAP SSO with Active Directory

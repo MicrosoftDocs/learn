@@ -10,7 +10,7 @@
 
 ### Setup Azure AI services
 
-Create an Azure AI services resource that will consume the Text Analytics API.
+Create an Azure AI services resource that consumes the Text Analytics API.
 
 ### Deploy a module to the edge device
 
@@ -23,7 +23,7 @@ Create an Azure AI services resource that will consume the Text Analytics API.
 - **Resource group:** a collection of resources for a solution.
 - **IoT hub:** allows communication between your IoT solution and the devices it manages. It connects to the devices with per-device authentication.
 - **Device identity:** lives in the cloud. When you create a device identity in the IoT hub, the hub generates a unique device connection string to associate with the physical device.
-- **Virtual device as an IoT Edge device**: The runtime can be deployed on devices as small as a Raspberry Pi or as large as an industrial server. Once a device is configured with the IoT Edge runtime, you can start deploying business logic to it from the cloud. In this module, you'll create a virtual device on the cloud. It will act as an IoT Edge device.
+- **Virtual device as an IoT Edge device**: The runtime can be deployed on devices as small as a Raspberry Pi or as large as an industrial server. Once a device is configured with the IoT Edge runtime, you can start deploying business logic to it from the cloud. In this module, you'll create a virtual device on the cloud. It acts as an IoT Edge device.
 
 ## Detailed steps
 

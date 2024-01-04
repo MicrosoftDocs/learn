@@ -10,7 +10,7 @@ In this case, you'll focus on a 911 dispatch system. High performance is require
 
 The 911 dispatch system coordinators are concerned about protecting sensitive data (like health history and personally identifiable information) while allowing database analysts (DBAs) to perform their jobs. In this scenario, DBAs must not be able to see sensitive data stored in specific columns, and all access to tables that contain sensitive data must be monitored. 
 
-At the same time, DBAs need to be able to troubleshoot performance by using the Azure portal, SQL Server Management Studio, and Azure Data Studio. They also need the ability to create new contained database users who must be mapped to Azure AD principals.  
+At the same time, DBAs need to be able to troubleshoot performance by using the Azure portal, SQL Server Management Studio, and Azure Data Studio. They also need the ability to create new contained database users who must be mapped to Microsoft Entra principals.  
 
 ### Scenario guidance
 

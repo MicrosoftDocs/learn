@@ -5,40 +5,44 @@ Identity and access management (IAM) is key to granting access and to the securi
 The following sections describe the IAM recommendations that are in CIS Microsoft Azure Foundations Security Benchmark v. 1.3.0. Included with each recommendation are the basic steps to complete in the Azure portal. You should complete these steps for your own subscription and by using your own resources to validate each security recommendation. Keep in mind that **Level 2** options might restrict some features or activities, so carefully consider which security options you decide to enforce.
 
 > [!IMPORTANT]
-> You must be an administrator for the Azure Active Directory (Azure AD) instance to complete some of these steps.
+> You must be an administrator for the Microsoft Entra instance to complete some of these steps.
 
-### Restrict access to the Azure AD administration portal - Level 1
+<a name='restrict-access-to-the-azure-ad-administration-portal---level-1'></a>
 
-Users who aren't administrators shouldn't have access to the Azure AD administration portal because the data is sensitive and under the rules of least privilege.
+### Restrict access to the Microsoft Entra administration portal - Level 1
 
-1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Azure Active Directory**.
+Users who aren't administrators shouldn't have access to the Microsoft Entra administration portal because the data is sensitive and under the rules of least privilege.
+
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Microsoft Entra ID**.
 
 1. In the left menu under **Manage**, select **Users**.
 
 1. In the left menu, select **User settings**.
 
-1. In **User settings**, under **Administration portal**, ensure that **Restrict access to Azure AD administration portal** is set to **Yes**. Setting this value to **Yes** prevents all non-administrators from accessing any data in the Azure AD administration portal. The setting doesn't restrict access to using PowerShell or another client, such as Visual Studio.
+1. In **User settings**, under **Administration portal**, ensure that **Restrict access to Microsoft Entra administration portal** is set to **Yes**. Setting this value to **Yes** prevents all non-administrators from accessing any data in the Microsoft Entra administration portal. The setting doesn't restrict access to using PowerShell or another client, such as Visual Studio.
 
 1. If you change any settings, in the menu bar, select **Save**.
 
-:::image type="content" source="../media/identity-access-management-azure-active-directory/restrict-access-admin-portal.png" alt-text="Screenshot of the Azure portal that shows the Restrict access to Azure AD administration portal option set to Yes.":::
+:::image type="content" source="../media/identity-access-management-azure-active-directory/restrict-access-admin-portal.png" alt-text="Screenshot of the Azure portal that shows the Restrict access to Microsoft Entra administration portal option set to Yes.":::
 
-### Enable multifactor authentication for Azure AD users
+<a name='enable-multifactor-authentication-for-azure-ad-users'></a>
 
-- **Enable multifactor authentication for Azure AD privileged users - Level 1**
-- **Enable multifactor authentication for Azure AD non-privileged users - Level 2**
+### Enable multifactor authentication for Microsoft Entra users
 
-Enable multifactor authentication for all Azure AD users.
+- **Enable multifactor authentication for Microsoft Entra ID privileged users - Level 1**
+- **Enable multifactor authentication for Microsoft Entra non-privileged users - Level 2**
 
-1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Azure Active Directory**.
+Enable multifactor authentication for all Microsoft Entra users.
+
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Microsoft Entra ID**.
 
 1. In the left menu under **Manage**, select **Users**.
 
 1. In the **All users** menu bar, select **Per-user MFA**.
 
-    :::image type="content" source="../media/identity-access-management-azure-active-directory/multifactor-authentication-option-azure-portal.png" alt-text="Screenshot that shows the multifactor authentication option in the Azure AD pane of the Azure portal.":::
+    :::image type="content" source="../media/identity-access-management-azure-active-directory/multifactor-authentication-option-azure-portal.png" alt-text="Screenshot that shows the multifactor authentication option in the Microsoft Entra pane of the Azure portal.":::
 
-1. In the **multi-factor authentication** window, ensure that **Multi-Factor Auth Status** is set to **Enabled** for all users. To enable multifactor authentication, select a user. Under **quick steps**, select **Enable** > **enable multi-factor auth**.
+1. In the **multifactor authentication** window, ensure that **multifactor authentication Status** is set to **Enabled** for all users. To enable multifactor authentication, select a user. Under **quick steps**, select **Enable** > **enable multifactor authentication**.
 
    :::image type="content" source="../media/identity-access-management-azure-active-directory/multifactor-authentication-window-enable.png" alt-text="Screenshot that shows how to turn on multifactor authentication for a user by using the quick steps link.":::
 
@@ -48,17 +52,17 @@ Remembering the multifactor authentication feature for devices and browsers that
 
 If an account or device is compromised, remembering multifactor authentication for trusted devices can negatively affect security. A security recommendation is to turn off remembering multifactor authentication for trusted devices.
 
-1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Azure Active Directory**.
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Microsoft Entra ID**.
 
 1. In the left menu under **Manage**, select **Users**.
 
 1. In the **All users** menu bar, select **Per-user MFA**.
 
-1. In the **multi-factor authentication** window, select a user. Under **quick steps**, select **Manage user settings**.
+1. In the **multifactor authentication** window, select a user. Under **quick steps**, select **Manage user settings**.
 
-    :::image type="content" source="../media/identity-access-management-azure-active-directory/multifactor-authentication-window.png" alt-text="Screenshot that shows the Azure A D multifactor authentication users window and the manage user settings link.":::
+    :::image type="content" source="../media/identity-access-management-azure-active-directory/multifactor-authentication-window.png" alt-text="Screenshot that shows the Microsoft Entra multifactor authentication users window and the manage user settings link.":::
 
-1. Select the **Restore multi-factor authentication on all remembered devices** checkbox, and then select **Save**.
+1. Select the **Restore multifactor authentication on all remembered devices** checkbox, and then select **Save**.
 
     :::image type="content" source="../media/identity-access-management-azure-active-directory/multifactor-authentication-user-settings.png" alt-text="Screenshot that shows the Restore multifactor authentication on all remembered devices option selected.":::
 
@@ -66,7 +70,7 @@ If an account or device is compromised, remembering multifactor authentication f
 
 Ensure that no guest users exist, or alternatively, if the business requires guest users, ensure that guest permissions are limited.
 
-1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Azure Active Directory**.
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Microsoft Entra ID**.
 
 1. In the left menu under **Manage**, select **Users**.
 
@@ -74,7 +78,7 @@ Ensure that no guest users exist, or alternatively, if the business requires gue
 
 1. For **Filters**, select **User type**. For **Value**, select **Guest**. Select **Apply** to verify that no guest users exist.
 
-    :::image type="content" source="../media/identity-access-management-azure-active-directory/guest-users-verification.png" alt-text="Screenshot of the Azure portal that shows Azure A D filtering for guest users.":::
+    :::image type="content" source="../media/identity-access-management-azure-active-directory/guest-users-verification.png" alt-text="Screenshot of the Azure portal that shows Microsoft Entra ID filtering for guest users.":::
 
 1. If you change any settings, in the menu bar, select **Save**.
 
@@ -86,7 +90,7 @@ Ensure that no guest users exist, or alternatively, if the business requires gue
 
 With multifactor authentication set, an attacker would have to compromise both identity authentication forms before they could maliciously reset a user's password. Ensure that password reset requires two forms of identity authentication.
 
-1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Azure Active Directory**.
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Microsoft Entra ID**.
 
 1. In the left menu under **Manage**, select **Users**.
 
@@ -98,13 +102,13 @@ With multifactor authentication set, an attacker would have to compromise both i
 
 1. If you change any settings, In the menu bar, select **Save**.
 
-:::image type="content" source="../media/identity-access-management-azure-active-directory/require-two-authentication-methods.png" alt-text="Screenshot of the Azure portal that shows the Azure AD password reset authentication methods pane with number of methods required to reset set to 2.":::
+:::image type="content" source="../media/identity-access-management-azure-active-directory/require-two-authentication-methods.png" alt-text="Screenshot of the Azure portal that shows the Microsoft Entra password reset authentication methods pane with number of methods required to reset set to 2.":::
 
 ### Establish an interval for reconfirming user authentication methods - Level 1
 
 If authentication reconfirmation is turned off, registered users aren't prompted to reconfirm their authentication information. The more secure option is to turn on authentication reconfirmation for a set interval.
 
-1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Azure Active Directory**.
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Microsoft Entra ID**.
 
 1. In the left menu under **Manage**, select **Users**.
 
@@ -122,7 +126,7 @@ If authentication reconfirmation is turned off, registered users aren't prompted
 
 Only administrators should be able to invite guest users. Restricting invitations to administrators ensures that only authorized accounts have access to Azure resources.
 
-1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Azure Active Directory**.
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Microsoft Entra ID**.
 
 1. In the left menu under **Manage**, select **Users**.
 
@@ -138,9 +142,9 @@ Only administrators should be able to invite guest users. Restricting invitation
 
 ### Users can create and manage security groups - Level 2
 
-When this feature is enabled, all users in Azure AD can create new security groups. Security group creation should be restricted to administrators.
+When this feature is enabled, all users in Microsoft Entra ID can create new security groups. Security group creation should be restricted to administrators.
 
-1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Azure Active Directory**.
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Microsoft Entra ID**.
 
 1. In the left menu under **Manage**, select **Groups**.
 
@@ -156,7 +160,7 @@ When this feature is enabled, all users in Azure AD can create new security grou
 
 Unless your business requires delegating self-service group management to various users, a safety recommendation is to disable this feature.
 
-1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Azure Active Directory**.
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Microsoft Entra ID**.
 
 1. In the left menu under **Manage**, select **Groups**.
 
@@ -166,13 +170,13 @@ Unless your business requires delegating self-service group management to variou
 
 1. If you change any settings, in the menu bar, select **Save**.
 
-:::image type="content" source="../media/identity-access-management-azure-active-directory/self-service-groups.png" alt-text="Screenshot that shows Azure Active Directory self-service group options set to No.":::
+:::image type="content" source="../media/identity-access-management-azure-active-directory/self-service-groups.png" alt-text="Screenshot that shows Microsoft Entra self-service group options set to No.":::
 
 ### Application options - Allow users to register apps - Level 2
 
 Require administrators to register custom applications.
 
-1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Azure Active Directory**.
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Microsoft Entra ID**.
 
 1. In the left menu under **Manage**, select **Users**.
 
@@ -182,4 +186,4 @@ Require administrators to register custom applications.
 
 1. If you change any settings, in the menu bar, select **Save**.
 
-:::image type="content" source="../media/identity-access-management-azure-active-directory/app-registrations.png" alt-text="Screenshot that shows Azure Active Directory users with app registrations set to No.":::
+:::image type="content" source="../media/identity-access-management-azure-active-directory/app-registrations.png" alt-text="Screenshot that shows Microsoft Entra users with app registrations set to No.":::
