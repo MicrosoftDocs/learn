@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-modernize-explore-identity-services
 metadata:
-  title: 1-Day Explore identity services for SAP on Azure
-  description: "1-Day Explore identity services for SAP on Azure"
-  ms.date: 12/21/2023
+  title: Migrate-Modernize Explore identity services for SAP on Azure
+  description: "Migrate-Modernize Explore identity services for SAP on Azure"
+  ms.date: 01/04/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
