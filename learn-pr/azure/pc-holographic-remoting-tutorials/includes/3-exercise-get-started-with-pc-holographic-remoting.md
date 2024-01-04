@@ -6,7 +6,7 @@ To complete this tutorial successfully, you should have some basic knowledge of 
 
 In this section, you'll create a new Unity project and get it ready for MRTK development.
 
-Go to the [Hololens 2 fundamentals](/training/paths/beginner-hololens-2-tutorials/) path and complete the modules there, but stop when you reach the HoloLens 2 modules. As a result of completing those instructions, you'll have done the following:
+Go to the [HoloLens 2 fundamentals](/training/paths/beginner-hololens-2-tutorials/) path and complete the modules there, but stop when you reach the HoloLens 2 modules. As a result of completing those instructions, you'll have done the following:
 
 1. Created the Unity project and gave it a suitable name; for example, *PC Holographic Remoting*.
 2. Switched the build platform.
