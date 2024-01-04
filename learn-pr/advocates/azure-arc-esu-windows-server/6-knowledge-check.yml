@@ -5,10 +5,11 @@ metadata:
   title: Knowledge Check
   description: Answer the questions to determine what you learned in the module.
   ms.date: 01/03/2024
-  author: Orin Thomas
+  author: Orin-Thomas
   ms.author: orthomas
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.prod: windows-server
+  ms.custom: team=cloud_advocates
 durationInMinutes: 5
 content: Choose the best response for each question. Then select **Check your answers**.
 quiz:

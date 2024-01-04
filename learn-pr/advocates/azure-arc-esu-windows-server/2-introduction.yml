@@ -5,10 +5,11 @@ metadata:
   title: Introduction
   description: TBD
   ms.date: 01/03/2024
-  author: Orin Thomas
+  author: Orin-Thomas
   ms.author: orthomas
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.prod: windows-server
+  ms.custom: team=cloud_advocates
 durationInMinutes: 2
 content: |
   [!include[](includes/2-introduction.md)]
