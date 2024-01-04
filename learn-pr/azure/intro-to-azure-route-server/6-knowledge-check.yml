@@ -1,4 +1,4 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-azure-route-server.6-knowledge-check
 title: Knowledge check
 metadata:
@@ -8,8 +8,7 @@ metadata:
   ms.date: 12/08/2023
   author: halkazwini
   ms.author: halkazwini
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
 quiz:

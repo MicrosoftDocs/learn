@@ -23,7 +23,7 @@ In this module, you created billed resources on your Azure subscription. The fol
 
 1. On the **Overview** tab of the resource group, select **Delete resource group**.
 
-1. Enter the name of the resource group to confirm. Select **Delete** to delete all of the resources you created in this module.
+1. Enter the name of the resource group to confirm. Select **Delete** to delete all of the resources you created in this module. Select **Delete** again to confirm the deletion.
 
 1. Finally, run the `kubectl config delete-context` command to remove the deleted cluster's context. Here's an example of the complete command. Remember to replace the name of the cluster with your cluster's name.
 
@@ -61,7 +61,7 @@ In this module, you also registered service providers within Azure to access the
 
 To learn more about each of the concepts covered in this module, visit these articles and sites:
 
-- [Create and manage multiple node pools for a cluster in Azure Kubernetes Service (AKS)](/azure/aks/use-multiple-node-pools)
+- [Create node pools for a cluster in Azure Kubernetes Service (AKS)](/azure/aks/create-node-pools)
 
 - [Add a spot node pool to an Azure Kubernetes Service (AKS) cluster](/azure/aks/spot-node-pool)
 
@@ -69,8 +69,8 @@ To learn more about each of the concepts covered in this module, visit these art
 
 - [Understand Azure Policy for Kubernetes clusters](/azure/governance/policy/concepts/policy-for-kubernetes)
 
-- [Taint and Toleration](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/)
+- [Taints and Tolerations](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/)
 
 - [Best practices for advanced scheduler features in Azure Kubernetes Service (AKS)](/azure/aks/operator-best-practices-advanced-scheduler)
 
-- [Azure Kubernetes Service (AKS) Production Baseline, Cost Optimization](/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks#cost-optimization)
+- [Baseline architecture for an Azure Kubernetes Service (AKS) cluster](/azure/architecture/reference-architectures/containers/aks/baseline-aks)

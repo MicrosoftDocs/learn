@@ -8,7 +8,7 @@ metadata:
   author: LBN-commits   
   ms.author: allensu         
   ms.topic: module
-  ms.prod: learning-azure
+  ms.service: azure
 title: Introduction to Azure NAT Gateway
 summary: Describe the Microsoft Azure NAT Gateway service, discuss scenarios of usage, learn how it works, and explore basic steps for its deployment and configuration.
 abstract: |
