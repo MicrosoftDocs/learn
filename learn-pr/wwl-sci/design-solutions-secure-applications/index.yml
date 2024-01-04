@@ -6,8 +6,8 @@ metadata:
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: module
+  ms.service: azure
 title: Design solutions for securing applications
 summary: "You learn how to secure applications, APIs and the development process using techniques like posture management, threat modeling, and secure access for workload identities."
 abstract: |
