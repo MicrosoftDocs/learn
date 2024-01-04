@@ -77,9 +77,7 @@ Now that you've created an external state to store all the data from the ship ma
         --node-count 3 \
         --generate-ssh-keys \
         --node-vm-size Standard_B2s \
-        --enable-managed-identity \
-        --location eastus \
-        --enable-addons http_application_routing
+        --enable-app-routing
     ```
 
     The creation process can take a few moments to complete.
