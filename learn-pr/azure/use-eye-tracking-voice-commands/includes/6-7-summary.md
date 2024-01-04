@@ -1,4 +1,4 @@
-In this module, you've learned how to add eye tracking to objects to trigger actions when the user looks at the objects. You also learned how to create speech commands and how to control them globally. Including voice commands and eye tracking can benefit some applications and some users, reducing the movement required for interactions.
+In this module, you learned how to add eye tracking to objects to trigger actions when the user looks at the objects. You also learned how to create speech commands and how to control them globally. Including voice commands and eye tracking can benefit some applications and some users, reducing the movement required for interactions.
 
 ## Next steps
 
