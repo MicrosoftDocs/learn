@@ -11,6 +11,8 @@ Let's create a new Node.js application to illustrate the concept.
 
 ## Open project in development container
 
+This training module offers a development container, either in a browser or for your local computer. This container provides all the need environment so you can use this training module without having to install an IDE or Node.js. You don't need to know anything about the container to complete this training module.
+
 #### [Remote development (browser)](#tab/github-codespaces)
 
 1. Start the process to create a new GitHub Codespace on the `main` branch of the [`MicrosoftDocs/node-essentials`](https://github.com/MicrosoftDocs/node-essentials) GitHub repository.
@@ -18,7 +20,7 @@ Let's create a new Node.js application to illustrate the concept.
     > [!div class="nextstepaction"]
     > [Open this project in GitHub Codespaces](https://github.com/codespaces/new?azure-portal=true&hide_repo_select=true&ref=main&repo=278117471)
 
-1. On the **Create codespace** page, review the codespace configuration settings and then select **Create new codespace**
+1. On the **Create codespace** page, review the codespace configuration settings and then select **Create codespace**
 
     :::image type="content" source="../media/codespaces/codespace-configuration.png" alt-text="Screenshot of the confirmation screen before creating a new codespace.":::
 
@@ -86,7 +88,7 @@ Let's create a new Node.js application to illustrate the concept.
 
 Before we dive into the exercise, we first have to prepare the code and environment.
 
-1. Open the `./nodejs-debug` subfolder, then create a new JavaScript file named `fibonacci.js`. 
+1. Open the `./nodejs-debug` subfolder, then create a new JavaScript file named `myfibonacci.js`. The file which already exists in the folder is a solution to the exercise, with the fix needed to the bug found during debugging. 
 
 1. Paste this code into the file:
 
@@ -108,9 +110,9 @@ Before we dive into the exercise, we first have to prepare the code and environm
     const result = fibonacci(5);
     console.log(result);
     ```
-1. Right-click the `./nodejs-debug` subfolder and select `Open in integrated terminal.`
 
-1. Save the file, <kbd>CTRL</kbd> + <kbd>S</kbd>, and run the program by using the following command:
+1. Save the file, <kbd>CTRL</kbd> + <kbd>S</kbd>.
+1. Right-click the `./nodejs-debug` subfolder and select `Open in integrated terminal ` and run the program by using the following command:
 
     ```bash
     node fibonacci.js
@@ -125,7 +127,8 @@ The Node.js built-in debugger comes with a set of commands that you can use to c
 | Command | Description |
 |---------|-------------|
 | `c` | Continue. Continues the execution until the next breakpoint or the end of your program. |
-| `s` | Step in. Same as `next`, except that if the next line of code is a function call, go to the first line of this function's code. |
+| `next` | Step over. This command is similar to the `step` command, except that if the next line of code is a function call, it executes the function without stepping into it. |
+| `s` | Step in. This command is similar to the`next` command, except that if the next line of code is a function call, go to the first line of this function's code. |
 | `sb()` | Add a breakpoint on the current line. |
 | `exec <EXPR>` | Evaluate an expression within the current execution context. This command is useful to help you get information about the current state. For example, you can get the value of a variable named `i` by using `exec i`. |
 | <kbd>Ctrl</kbd> + <kbd>D</kbd> | Stop the debugger. |

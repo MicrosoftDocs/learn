@@ -2,27 +2,21 @@ In the previous exercise, you learned the importance of being able to run your c
 
 Let's discover how you can configure the Visual Studio Code debugger to use it with Node.js.
 
-## Set up Visual Studio Code for Node.js debugging
+## How to use Visual Studio Code for Node.js debugging
 
-In Visual Studio Code, select the **Run** tab to access the debugger tool.
+In Visual Studio Code, the debugger is accessed from the **Run** tab.
 
 :::image source="../media/run-tab.png" alt-text="Screenshot of Visual Studio Code debug tab.":::
 
-You have three different ways to activate the debugger:
-
-* **Current file**: If you have a `.js` file open in the editor window, select **Run and Debug**. Then, select **Node.js** to directly debug this JavaScript file.
+* If you have a `.js` file open in the editor window, you can select **Run and Debug** and then select **Node.js** to directly debug the open JavaScript file.
 
     :::image source="../media/select-environment.png" alt-text="Screenshot of Node.js environment selection drop-down list in Visual Studio Code.":::
 
-* **From the terminal**: You can also choose to open a **Node.js debug terminal**. Selecting this button opens a special terminal window where you can run your program from the command line. For example, you can enter the command `node myscript.js` in the terminal, and your app will start with the debugger enabled automatically. You won't have to use the `--inspect` option.
+There are several other ways to start debugging in Visual Studio Code. For the next exercise, we’ll use a launch.json file. Development teams often use a launch.json file to customize the run configuration. With the configuration specified in a .json file, you can check it into source control. From source control, you can share the configuration across your team.
 
-    :::image source="../media/terminal.png" alt-text="Screenshot of debug terminal window in Visual Studio Code.":::
+### Control the flow by adding breakpoints
 
-* **Launch.json**:  You can select **create a launch.json file** to further customize your run configuration, then check it into source control to share it with your team. We'll review this option later.
-
-### Add breakpoints
-
-Unlike the built-in Node.js command-line debugger, the Visual Studio Code debugger immediately starts executing your code. If your program ends quickly, you might not have the chance to interact with the debugger. That's why you might want to add breakpoints before you run the code.
+Unlike the built-in Node.js command-line debugger, the Visual Studio Code debugger immediately starts executing your code. If your program ends quickly, you might not have the chance to interact with the debugger. That's why you might want to add breakpoints before you run the code. We’ll add and remove a few breakpoints in the next exercise.
 
 To add a breakpoint in your code, find the line of code in your JavaScript (`.js`) file where you want to add a break. Next to the line number for the code statement, select in the left margin. When the breakpoint is added, you'll see a red circle next to the line number. To remove the breakpoint, select the red circle.
 
@@ -82,7 +76,7 @@ Possible actions include:
 
 * Unfold scopes: You can unfold scopes and variables by selecting the arrow. When you unfold objects, you can see all the properties defined in this object.
 * Change variable value: It's possible to change the value of a variable on the fly by double-clicking the variable.
-* Peek at a varaible: By hovering over a function parameter or a variable directly in the editor window, you can also peek at its value.
+* Peek at a variable: By hovering over a function parameter or a variable directly in the editor window, you can also peek at its value.
 
     :::image source="../media/variable-hover.png" alt-text="Screenshot of variable hover during debugging.":::
 
@@ -161,12 +155,10 @@ This way, you can quickly check a variable value, test a function with different
 
 #### Add logpoints instead of console.log
 
-If you want to follow the execution of your program by using logs, there's an alternative to using `console.log` to do that. You can use *logpoints*.
+Linters will flag `console.log` statements as errors. In order to get the same effect as `console.log` statements, use Visual Studio Code logpoints instead, which print out to the Debug console.
 
-By right-clicking in the same area that you used to add a breakpoint, you can select **Add logpoint**.
+Add a logpoint by right-clicking in the same area that you used to add a breakpoint, then select **Add logpoint**. Enter a message to display at that point in your code.
 
 :::image source="../media/logpoint.png" alt-text="Screenshot of adding a logpoint in Visual Studio Code.":::
-
-Enter a message to display at that point in your code. It's even possible to print expressions by enclosing them in brackets by using `{<EXPRESSION>}`.
 
 Like breakpoints, logpoints don't alter your code in any way, and are used only during debugging. You don't have an excuse anymore to let that forgotten `console.log('here')` slip to production.
