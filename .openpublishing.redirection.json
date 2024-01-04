@@ -17417,7 +17417,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/quantum/qsharp-explore-key-concepts-quantum-computing/2-superposition-quantum-computing.yml",
+      "source_path": "learn-pr/quantum/qsharp-explore-key-concepts-quantum-computing/2-superpostion-quantum-computing.yml",
       "redirect_url": "/training/paths/quantum-computing-fundamentals/",
       "redirect_document_id": false
     },
@@ -17482,7 +17482,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/quantum/use-qsharp-libraries/5-run-full-programs.yml",
+      "source_path": "learn-pr/quantum/use-qsharp-libraries/5-run-full-program.yml",
       "redirect_url": "/training/paths/quantum-computing-fundamentals/",
       "redirect_document_id": false
     },
