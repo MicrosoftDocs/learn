@@ -6,9 +6,9 @@ metadata:
   ms.date: 10/27/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.service: artificial-intelligence
-  ms.subservice: face-api
+  ms.topic: module
+  ms.service: azure-ai-vision
+  ms.subservice: azure-ai-face
 title: Fundamentals of Facial Recognition
 summary: Face detection, analysis, and recognition are important capabilities for artificial intelligence (AI) solutions. Azure AI Face service in Azure makes it easy integrate these capabilities into your applications.
 abstract: |

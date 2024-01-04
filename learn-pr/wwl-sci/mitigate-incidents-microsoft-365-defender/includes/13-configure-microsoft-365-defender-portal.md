@@ -8,7 +8,7 @@ When you set up email notifications, you can choose from two types, as described
 | Notification type	| Description|
 | :--- | :--- |
 | Incidents | When new Incidents are created|
-| Threat Analytics| When new Threat Analytic reports area created|
+| Threat Analytics| When new Threat Analytic reports are created|
 
 
 ### Manage Incident email notifications

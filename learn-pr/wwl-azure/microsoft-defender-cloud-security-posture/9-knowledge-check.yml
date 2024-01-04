@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-security-posture.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/02/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A security administrator wants to enforce policies that can be used to apply security settings. Which of the following built-in security policies in Defender for Cloud uses Azure role-based access control (Azure RBAC)?"
+    choices:
+    - content: "Defender for Cloud does not have any built-in security policies."
+      isCorrect: false
+      explanation: "Incorrect. Defender for Cloud has built-in security policies that use Azure RBAC."
+    - content: "Defender for Cloud uses a third-party tool for built-in security policies."
+      isCorrect: false
+      explanation: "Incorrect. Defender for Cloud has built-in security policies that use Azure RBAC."
+    - content: "Defender for Cloud uses Azure role-based access control (Azure RBAC) which provides built-in roles you can assign to Azure users, groups, and services."
+      isCorrect: true
+      explanation: "Correct. Defender for Cloud uses Azure RBAC for built-in security policies, which allows assigning roles to Azure users, groups, and services."
+  - content: "A company wants to improve their compliance posture by resolving failing assessments directly within the dashboard. What are the steps they should follow to remediate an automated assessment?"
+    choices:
+    - content: "Select a particular resource to view more details and resolve the recommendation for that resource."
+      isCorrect: false
+      explanation: "Incorrect. This is one of the steps to remediate an automated assessment, but it is not the first step."
+    - content: "Select a manual assessment to expand it and view the details for that recommendation."
+      isCorrect: false
+      explanation: "Incorrect. This answer describes the steps to remediate a manual assessment, not an automated assessment."
+    - content: "Select a regulatory compliance standard, select a compliance control to expand it, select any of the failing assessments that appear in the dashboard to view the details for that recommendation, select a particular resource to view more details and resolve the recommendation for that resource."
+      isCorrect: true
+      explanation: "Correct. These are the steps to remediate an automated assessment. The user must select the regulatory compliance standard, select a compliance control to expand it, select any of the failing assessments that appear in the dashboard to view the details for that recommendation, select a particular resource to view more details and resolve the recommendation for that resource."
+  - content: "A security analyst needs to prioritize risk and eliminate threats beyond the firewall. Which Microsoft Defender External Attack Surface Management feature provides visibility of the organization's online infrastructure?"
+    choices:
+    - content: "Microsoft Defender Antivirus"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender Antivirus provides protection against malware."
+    - content: "Microsoft Defender Firewall"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender Firewall provides protection against network-based attacks."
+    - content: "Microsoft Defender External Attack Surface Management"
+      isCorrect: true
+      explanation: "Correct. Microsoft Defender External Attack Surface Management provides visibility of the organization's online infrastructure to identify unknowns, prioritize risk, eliminate threats, and extend vulnerability and exposure control beyond the firewall."
+  - content: "A company wants to ensure the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms. Which of the following solutions should they use?"
+    choices:
+    - content: "Microsoft Defender for Cloud is a cloud workload protection platform (CWPP) with specific protections for servers, containers, storage, databases, and other workloads."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Cloud is a cloud workload protection platform (CWPP) with specific protections for servers, containers, storage, databases, and other workloads. It does not provide automation and validation of the creation and teardown of environments."
+    - content: "Microsoft Defender for Cloud is a cloud security posture management (CSPM) solution that surfaces actions that you can take to prevent breaches."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Cloud is a cloud security posture management (CSPM) solution that surfaces actions that you can take to prevent breaches. It does not provide automation and validation of the creation and teardown of environments."
+    - content: "Microsoft Defender for Cloud is a development security operations (DevSecOps) solution that unifies security management at the code level across multicloud and multiple pipeline environments."
+      isCorrect: true
+      explanation: "Correct. Microsoft Defender for Cloud is a development security operations (DevSecOps) solution that unifies security management at the code level across multicloud and multiple pipeline environments. It enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "A company wants to automate the creation and teardown of environments to deliver secure and stable application hosting platforms. Which Microsoft solution should they use?"
+    choices:
+    - content: "Microsoft Defender for Cloud"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Cloud is a cloud workload protection platform with specific protections for servers, containers, storage, databases, and other workloads."
+    - content: "Microsoft Sentinel"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Sentinel is a cloud-native security information and event manager (SIEM) platform that uses built-in AI to analyze large volumes of data across an enterprise."
+    - content: "Azure DevOps"
+      isCorrect: true
+      explanation: "Correct. Azure DevOps enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."

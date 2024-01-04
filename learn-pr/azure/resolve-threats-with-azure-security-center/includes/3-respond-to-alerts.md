@@ -1,4 +1,4 @@
-Once you have a set of alerts, you can select a security alert to learn more about the events that triggered it. Then you can see what steps, if any, you need to take to repel an attack. Security alerts are grouped by type and date. Selecting **Security alert** opens a view containing a list of alerts, as the following figure depicts.
+Once you have a set of alerts, you can select a security alert to learn more about the events that triggered it. Then you can see what steps, if any, you need to take to repel an attack. Security alerts are grouped by type and date. Selecting a **Security alert** opens a view containing a list of alerts, as the following figure depicts:
 
 :::image type="content" source="../media/3-defender-for-cloud-alert-details-pane.png" alt-text="Screenshot that shows the security alert details pane.":::
 
@@ -27,12 +27,12 @@ The **Alert details** area has more details about this event. These details offe
 
 The remediation steps suggested by Defender for Cloud vary according to the security alert. In some cases, you might have to use other Azure capabilities to implement the recommended remediation. Select the **Take action** tab to see remediation recommendations. For example, the remediation for this attack is to enforce strong passwords or use just-in-time (JIT) access on the resource.
 
-From this tab, you can start an investigation to better understand the timeline of the attack, how the attack took place, and which systems were potentially compromised. You can also see which credentials were used, and get a graphical representation of the entire attack chain.
+From this tab, you can start an investigation to better understand the timeline of the attack, how the attack took place, and which systems were potentially compromised. You can also see which credentials were used and get a graphical representation of the entire attack chain.
 
 ## Relating security alerts together
 
 Attacks against cloud-based resources often generate large amounts of data, and picking through all the individual alerts can be a cumbersome process to identify the root cause. Defender for Cloud tracks individual security alerts, but it also uses big data and machine learning technologies to combine different alerts into *incidents*.
 
-An incident is a collection of related individual alerts. Combining of related alerts into incidents is an advanced capability of Defender for Cloud and requires enhanced security features for Microsoft Defender for Cloud.
+An incident is a collection of related individual alerts. Combining related alerts into incidents is an advanced capability of Defender for Cloud and requires enhanced security features for Microsoft Defender for Cloud.
 
 By presenting related alerts together, a security engineer can quickly see the "big picture" of what's happening and start the process of blocking the attack.

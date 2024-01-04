@@ -8,8 +8,7 @@ metadata:
   ms.date: 12/08/2023
   author: halkazwini
   ms.author: halkazwini
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/4-how-azure-route-server-works.md)]
