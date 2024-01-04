@@ -6,8 +6,8 @@ metadata:
   ms.date: 03/15/2023
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Build Connect Four game with Blazor
 summary: In this module, you learn the fundamentals of Blazor while building a "Connect Four" game.
 abstract: |
