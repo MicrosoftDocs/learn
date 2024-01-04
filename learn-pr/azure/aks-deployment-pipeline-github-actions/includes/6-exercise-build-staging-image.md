@@ -324,45 +324,48 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
 ## Set the secrets
 
-1. On the repository start page, select the **Settings** tab. In the menu under **Security**, select **Secrets and variables** > **Actions**. The **Actions secrets and variables** pane opens.
+On your GitHub repository page, select the **Settings** tab, and then select **Secrets and variables** > **Actions** from the left menu. Define the following secrets that use the values from preceding steps.
+
+For each secret:
 
 1. Select **New repository secret**.
+1. For **Name**, enter the secret name.
+1. For **Secret**, enter the value you saved from the setup script, or run a Cloud Shell query to get the value.
+1. Select **Add secret**.
 
-1. Create the `ACR_NAME` secret:
+|Name|Value|
+|----|-----|
+|`ACR_NAME`| The `ACR_Name` value returned by the setup script|
+|`ACR_LOGIN`| The `ACR Login Username` value returned by the setup script |
+|`ACR_PASSWORD`| The `ACR Login Password` value returned by the setup script |
+|`RESOURCE_GROUP`| The `Resource Group Name` value returned by the setup script |
+|`CLUSTER_NAME`| *contoso-video* |
 
-    1. For **Name**, enter **ACR_NAME**.
+If you don't have the values the setup script returned, run the following commands in Cloud Shell to get the information:
 
-    1. Run the following command in Cloud Shell to get the sign-in information of the Container Registry instance you created earlier:
+- `ACR_NAME`:
 
-       ```azurecli-interactive
-       az acr list --query "[?contains(resourceGroup, 'mslearn-gh-pipelines')].loginServer" -o table
-       ```
+  ```azurecli-interactive
+  az acr list --query "[?contains(resourceGroup, 'mslearn-gh-pipelines')].loginServer" -o table
+  ```
 
-    1. For **Secret**, enter the value returned by the Cloud Shell command and select **Add secret**.
+- `ACR_LOGIN`:
 
-1. Select **New repository secret** and create the `ACR_LOGIN` secret:
+  ```azurecli-interactive
+  az acr credential show --name <ACR_NAME> --query "username" -o table
+  ```
 
-    1. For **Name**, enter **ACR_LOGIN**.
+- `ACR_PASSWORD`:
 
-    1. If you saved the values that were shown at the end of the setup script, copy the **ACR Login Username** value. If you didn't save the values, run the following command in Cloud Shell to get the sign-in information of the Container Registry instance you created earlier:
+  ```azurecli-interactive
+  az acr credential show --name <ACR_NAME> --query "passwords[0].value" -o table
+  ```
 
-       ```azurecli-interactive
-       az acr credential show --name <ACR_NAME> --query "username" -o table
-       ```
+- `RESOURCE_GROUP`:
 
-    1. For **Secret**, enter the value and select **Add secret**.
-
-1. Select **New repository secret** and create the `ACR_PASSWORD` secret:
-
-    1. For **Name**, enter **ACR_PASSWORD**.
-
-    1. Copy the **ACR Login Password** value or run the following command in Cloud Shell to get the sign-in information of the Container Registry instance you created earlier:
-
-       ```azurecli-interactive
-       az acr credential show --name <ACR_NAME> --query "passwords[0].value" -o table
-       ```
-
-    1. For **Secret**, enter the value and select **Add secret**.
+  ```azurecli-interactive
+  az aks list -o tsv --query "[?name=='contoso-video'].resourceGroup"
+  ```
 
 ## Rerun the job
 
@@ -375,5 +378,3 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
     :::image type="content" source="../media/6-7-rerun-jobs.png" alt-text="Screenshot that shows the Re-run jobs and Re-run all jobs buttons.":::
 
 1. When the build completes, in Cloud Shell run `az acr repository list --name <ACR_NAME> -o table` to confirm that a repository named `contoso-website` appears in the results.
-    > [!div class="nextstepaction"]
-    > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)

@@ -1,10 +1,8 @@
-With a good understanding of the concepts behind CI and CD, let's plan our pipeline to support the needs of our project.
+In this unit, you plan your CI/CD pipeline to support the needs of your project.
 
-Contoso wants a website to be published in AKS after each successful tagged push to the main branch. This design makes it easier to check the version of each deployment that went to production. You use tags for routing when you push container images to an image registry.
+You want the Contoso Video website to be published in AKS after each successful tagged push to the main branch. This design makes it easy to check the version of each deployment that goes to production. You use version tags for routing when you push container images to Azure Container Registry.
 
-The project leads also wants to test the website in a staging environment at every successful push to the main branch, regardless of whether the push is tagged.
-
-Let's design this pipeline.
+You also want to test the website in a staging environment after every successful push to the main branch, regardless of whether the push is tagged to release to production.
 
 ## Design the pipeline
 

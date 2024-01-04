@@ -381,7 +381,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
     :::image type="content" source="../media/7-create-personal-access-token.png" alt-text="Screenshot that shows the personal access tokens page.":::
 
     > [!NOTE]
-    > The Workflow scope grants admin repo access to the Github actions. You need this to push your tags in the next step and run the deploy script in a future unit.
+    > The Workflow scope grants admin repo access to the Github actions. You need this access to push your tags in the next step and run the deploy script in a future unit.
 
 1. Select **Generate token** at the bottom of the page.
 
@@ -414,10 +414,9 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
 1. Select the **Actions** tab and check the running process.
 
-1. When the process is completed, in Azure Cloud Shell, run the following command to confirm that two tags are listed in the results:
+1. When the process is completed, in Azure Cloud Shell, run the following command to confirm that two tags are listed in the results. Replace ACR_NAME with your ACR_NAME.
 
-    ```bash
+    ```azurecli
     az acr repository show-tags --repository contoso-website --name <ACR_NAME> -o table
     ```
 
-    Replace ACR_NAME with your ACR_NAME.

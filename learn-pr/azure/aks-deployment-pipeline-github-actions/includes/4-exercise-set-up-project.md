@@ -3,7 +3,7 @@ Now that you understand the design, create your resources and publish your pipel
 > [!IMPORTANT]
 > To run this exercise, you need:
 >
-> - Your own GitHub account. If you don't already have a GitHub account, create a [free account](https://github.com?azure-portal=true) before you begin.
+> - A GitHub account. If you don't already have a GitHub account, create a [free account](https://github.com?azure-portal=true) before you begin.
 > - Your own Azure subscription. You might incur charges. If you don't already have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 ## Set up the project
@@ -34,32 +34,38 @@ Now that you understand the design, create your resources and publish your pipel
     cd mslearn-aks-deployment-pipeline-github-actions
     ```
 
-1. Execute the **init.sh** file that's located in the root of the project with the following command:
+1. Execute the *init.sh* file that's located in the root of the project with the following command:
 
     ```bash
     bash init.sh
     ```
 
-    The init.sh file does the following tasks:
+    The *init.sh* file does the following tasks:
 
     - Creates a new resource group.
     - Creates a new AKS cluster and sets up Kubectl to access it.
     - Creates a new Container Registry repository and links it to your AKS cluster.
     - Sets up the environment variables `AKS_NAME`, `DNS_NAME`, `RESOURCE_GROUP_NAME`, and `ACR_NAME`.
 
-   When the script finishes running, it displays a list of variables. *Copy and store the variables names*. We need those variables for the exercises.
+1. When the script finishes running, it displays a list of values for the following variables. *Copy and store the values* to use in future exercises.
+
+   - Resource Group Name
+   - ACR Name
+   - ACR Login Username
+   - ACR Password
+   - AKS DNS Zone Name
 
 ## Check the results
 
-Confirm that all the resources were created when the init.sh script ran:
+Confirm that all the resources were created when the *init.sh* script ran.
 
-1. Run the following command and check whether the resource group shown in the script output is listed:
+1. Run the following command to check whether the resource group shown in the script output is listed.
 
     ```bash
     az group list -o table
     ```
 
-1. Run the following command and check whether the Container Registry instance shown in the script output is listed:
+1. Run the following command to check whether the Container Registry instance shown in the script output is listed.
 
     ```bash
     az acr list -o table
