@@ -13,7 +13,7 @@ content: Choose the best response for each question. Then select Check your answ
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which of the following option enables simulated eye-tracking for the Unity editor?"
+    - content: "Which of the following option enables simulated eye tracking for the Unity editor?"
       choices:
       - content: "Enable eye tracking simulation on the scene's MRTK Input Simulator game object."
         isCorrect: true
