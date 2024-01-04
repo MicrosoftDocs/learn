@@ -244,4 +244,4 @@ The deployment can take a minute or two to finish.
 
 1. Select **Deployment details** to expand it. Notice that an Azure Cosmos DB account has been deployed.
 
-   :::image type="content" source="../media/5-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with three Azure Cosmos D B resources listed." border="true":::
+   :::image type="content" source="../media/5-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with three Azure Cosmos DB resources listed." border="true":::
