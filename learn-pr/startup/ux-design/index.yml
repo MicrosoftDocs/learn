@@ -3,7 +3,7 @@ uid: learn.startup.ux-design
 metadata:
   title: Foundations of user experience and design thinking
   description: This Microsoft Learn module provides a foundation for User Experience (UX) and design thinking. Your product ultimately exists to serve your end user, and by starting with their experience and the design that supports it, we can start with a strong foundation.
-  ms.date: 04/19/2023
+  ms.date: 12/22/2023
   author: Obi-Akpuda
   ms.author: obiakpuda
   ms.topic: module
@@ -16,8 +16,8 @@ abstract: |
   - Recognize which factors contribute to ensuring that you are generating quality UX.
   - Define the five stages of design thinking principles.
 prerequisites: | 
-  - Must have basic knowledge of what prototyping is.
-  - Must have a basic familiarity what product market fit is.
+  - Must have basic knowledge of prototyping 
+  - Must have a basic familiarity with product market fit
 iconUrl: /training/achievements/ux-design.svg
 ratingEnabled: false
 levels:

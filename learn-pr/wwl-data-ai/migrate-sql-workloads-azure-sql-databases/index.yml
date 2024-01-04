@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.prod: learning-azure
+  ms.service: azure
 title: Migrate SQL Server workloads to Azure SQL Database
 summary: You will explore different migration tools and migrate SQL Server databases to Azure SQL Database.
 abstract: |
