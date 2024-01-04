@@ -6,7 +6,7 @@ In this exercise, you'll create your resource group and an Azure SQL Database si
 
 1. In the left menu pane, select **Databases**, and then select **SQL Database**. The **Create SQL Database** pane appears.
 
-    ![Screenshot of the SQL Database create page.](../media/create-sql-database.png)
+    :::image type="content" source="../media/create-sql-database.png" alt-text="Screenshot of the SQL Database create page.":::
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -14,12 +14,13 @@ In this exercise, you'll create your resource group and an Azure SQL Database si
     | ------------ | ----- |
     | **Project details** |
     | Subscription | Concierge Subscription |
-    | Resource group |  Use the existing group <rgn>[sandbox resource group name]</rgn> |
+    | Resource group | Use the existing group <rgn>[sandbox resource group name]</rgn> |
     | **Database details** |
     | Database name | Enter *LearnDataPolicy* |
     | Server | Under the dropdown list, select **Create new** link. The **Create SQL Database Server** pane appears. |
-    | Server name | A globally unique [server name](/azure/architecture/best-practices/naming-conventions). |
-    | Location | Any valid location from the following list. |
+    | Server name | Enter a globally unique [server name](/azure/architecture/best-practices/naming-conventions). |
+    | Location | Select any valid location from the following list. |
+    | Authentication method | Select **Use SQL authentication** |
     | Server admin login | A [database identifier](/sql/relational-databases/databases/database-identifiers) that serves as your primary administrator login name. |
     | Password | Any valid password that has at least eight characters and contains characters from three of these categories: uppercase characters, lowercase characters, numbers, and non-alphanumeric characters. |
 
@@ -32,7 +33,7 @@ In this exercise, you'll create your resource group and an Azure SQL Database si
     | Setting      | Value |
     | ------------ | ----- |
     | **Database details** |
-    | Want to use SQL elastic pool? | No |
+    | Want to use SQL elastic pool? | Select **No** |
 
 1. Select the **Security** tab near the top of the window.
 
@@ -63,7 +64,7 @@ It will take a few minutes to deploy the server with sample data. Once it's comp
 SQL IP brings a set of advanced services and SQL capabilities, forming a new information-protection paradigm in SQL aimed at protecting the data, not just the database:
 
 * **Azure SQL Auditing**: Azure SQL Auditing tracks database events and writes them to an audit log in your Azure storage account, Log Analytics workspace or Event Hubs.
-* **Data Discovery & Classifications**: Data Discovery & Classifications is built into Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics. It provides advanced capabilities for discovering, classifying, labeling, and reporting the sensitive data in your databases.
+* **Data discovery & classification**: Data discovery & classification is built into Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics. It provides advanced capabilities for discovering, classifying, labeling, and reporting the sensitive data in your databases.
 * **Dynamic data masking**: Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics support dynamic data masking. Dynamic data masking limits sensitive data exposure by masking it to non-privileged users.
 * **Microsoft Defender for Cloud**: Scans your database and makes recommendations to improve security. Also allows you to set up and monitor **Security Alerts**.
 * **Transparent data encryption**: Transparent data encryption encrypts your databases, backups, and logs at rest without any changes to your application. To enable encryption, go to each database.
@@ -82,25 +83,27 @@ Let's classify the data in this sample Azure SQL database. On your SQL database 
 
 1. The initial state has 15 columns with classification recommendations. Select that link to review the recommendations.  If you have not yet run the check, do so now.
 
-    ‎![Screenshot of the Data discovery and classification pane, Overview tab with the previously mentioned items displaying.](../media/M4_01_02_02.png)
+    :::image type="content" source="../media/M4-01-02-02.png" alt-text="Screenshot of the Data discovery and classification pane, Overview tab with the previously mentioned items displaying." lightbox="../media/M4-01-02-02.png":::
 
 1. Select all the columns and then **Accept selected recommendations**.
+
+    :::image type="content" source="../media/select-all-columns.png" alt-text="Screenshot that shows all the columns selected." lightbox="../media/select-all-columns.png":::
 
 1. In the top menu bar, select **Save** to save the recommendations, and then switch back to the **Data Discovery & Classification** pane.
 
 1. Review the **Data Discovery & Classification**. Notice that it includes a summary of the current classification state of the database, including a detailed list of all classified columns. You can also filter this view to only see specific schema parts, information types, and labels.
 
-    ‎![Screenshot of the Data discovery and classification pane, Overview tab with the previously mentioned items now displaying with 15 columns.](../media/M4_01_02_021.png)
+    :::image type="content" source="../media/M4-01-02-021.png" alt-text="Screenshot of the Data discovery and classification pane, Overview tab with the previously mentioned items now displaying with 15 columns." lightbox="../media/M4-01-02-021.png":::
 
 1. On the **Overview** tab, in the top menu bar, select **Export** to download a report in Excel format. Select **Download**.
 
-    ![Screenshot of the Data discovery and classification pane with Export selected.](../media/M4_01_02_03.png)
+    :::image type="content" source="../media/M4-01-02-03.png" alt-text="Screenshot of the Data discovery and classification pane with Export selected.":::
 
 ### Customize the classification
 
 The **Classification** tab lists the columns and how the data is classified.
 
-:::image type="content" source="../media/M4_01_02_04.png" alt-text="Screenshot of the Classification tab.":::
+:::image type="content" source="../media/M4-01-02-04.png" alt-text="Screenshot of the Classification tab.":::
 
 As you saw earlier, the classification engine scans your database for columns containing potentially sensitive data and provides a list of recommended column classifications.
 
@@ -108,7 +111,7 @@ You can either take the suggested classifications as we did earlier, or manually
 
 1. In the top menu bar, select **Add classification**. The **Add classification** pane appears.
 
-    ![Screenshot of the Data discovery and classification pane with Add classification selected.](../media/M4_01_02_06.png)
+    :::image type="content" source="../media/M4-01-02-06.png" alt-text="Screenshot of the Data discovery and classification pane with Add classification selected.":::
 
 1. Configure the five fields:
    * Schema name
@@ -117,7 +120,7 @@ You can either take the suggested classifications as we did earlier, or manually
    * Information type
    * Sensitivity label
 
-    ![In the Add classification pane, the previously mentioned fields are called out.](../media/M4_01_02_07.png)
+    :::image type="content" source="../media/M4-01-02-07.png" alt-text="Screenshot of the Add classification pane, with the previously mentioned fields called out.":::
 
 1. Select **Add classification**.
 
@@ -131,8 +134,8 @@ You can either take the suggested classifications as we did earlier, or manually
 
 ## Monitor access to sensitive data
 
-An important aspect of the IP paradigm is the ability to monitor access to sensitive data. [Azure SQL Database Auditing](/azure/sql-database/sql-database-auditing) has been enhanced to include a new field in the audit log. The data_sensitivity_information field logs the sensitivity classifications (labels) of the actual data that was returned by the query.
+An important aspect of the IP paradigm is the ability to monitor access to sensitive data. [Azure SQL Database Auditing](/azure/sql-database/sql-database-auditing) has been enhanced to include a new field in the audit log. The **data_sensitivity_information** field logs the sensitivity classifications (labels) of the actual data that was returned by the query.
 
-![Screenshot of field logs, with data sensitivity categorizations of Confidential, and Confidential GDPR called out.](../media/M4_01_02_08.png)
+:::image type="content" source="../media/M4-01-02-08.png" alt-text="Screenshot of field logs, with data sensitivity categorizations of Confidential, and Confidential GDPR called out.":::
 
 Consider configuring Azure SQL Database Auditing for monitoring and auditing access to your classified sensitive data.

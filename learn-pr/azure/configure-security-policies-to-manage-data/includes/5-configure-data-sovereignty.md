@@ -1,4 +1,4 @@
-Digital information is always subject to the laws of the country/region where it's stored. This concept is known as *data sovereignty*. Many of the concerns that surround data sovereignty relate to enforcing privacy regulations and preventing data stored in a foreign country/region from being subpoenaed by the host country/region's government.
+Digital information is always subject to the laws of the country or region where it's stored. This concept is known as *data sovereignty*. Many of the concerns that surround data sovereignty relate to enforcing privacy regulations and preventing data stored in a foreign country/region from being subpoenaed by the host country/region's government.
 
 In Azure, customer data can be replicated within a geographic area for enhanced data durability if there's a significant data center disaster.
 
@@ -7,19 +7,19 @@ In Azure, customer data can be replicated within a geographic area for enhanced 
 
 ### Paired regions
 
-Azure operates in multiple geographies around the world. Azure geography is a defined area of the world that contains at least one **Azure Region**. An Azure region is an area containing one or more data centers.
+Azure operates in multiple geographies around the world. Azure geography is a defined area of the world that contains at least one **Azure region**. An Azure region is an area containing one or more data centers.
 
-Each Azure region is paired with another region within the same geography, forming a *region pair*. The exception is Brazil South, which is paired with a region outside its geography. Across the region pairs, Azure serializes platform updates (or planned maintenance) so that only one region is updated at a time. If an outage affecting multiple regions occurs, one region in each pair will be prioritized for recovery.
+Each Azure region is paired with another region within the same geography, forming a *region pair*. The exception is Brazil South, which is paired with a region outside its geography. Across the region pairs, Azure serializes platform updates (or planned maintenance) so that only one region is updated at a time. If an outage affecting multiple regions occurs, one region in each pair is prioritized for recovery.
 
-![A Geography box contains a regional pair box, which in turn contains two region boxes, each with a box in it labeled datacenter.](../media/M4_01_04_01.png)
+:::image type="content" source="../media/M4-01-04-01.png" alt-text="Diagram of a regional pair box, which contains two region boxes, each with a box in it labeled datacenter.":::
 
-We recommend that you configure business continuity and disaster recovery (BCDR) across regional pairs to benefit from Azure's isolation and VM policies. For apps that support multiple active regions, we recommend using both regions in a region pair, where possible. This approach will ensure optimal availability for apps and minimized recovery time in the event of a disaster.
+We recommend that you configure business continuity and disaster recovery (BCDR) across regional pairs to benefit from Azure's isolation and VM policies. For apps that support multiple active regions, we recommend using both regions in a region pair, where possible. This approach ensures optimal availability for apps and minimized recovery time in the event of a disaster.
 
 ### An example of paired regions
 
-The following illustration shows a hypothetical app that uses a regional pair for DR. The arrows highlight the cross-region activities of three Azure services (Azure Compute, Azure Storage, and Azure Database), and how they are configured to replicate across regions.
+The following illustration shows a hypothetical app that uses a regional pair for disaster recovery. The arrows highlight the cross-region activities of three Azure services (Azure Compute, Azure Storage, and Azure Database), and how they are configured to replicate across regions.
 
-![In this geography diagram, two regions - a primary region and a secondary region - each contain compute, storage, database, and management services sections. MISSING: Lines connecting sections are numbered, and are described in the following cross-region activities number key text.](../media/M4_01_04_02.png)
+:::image type="content" source="../media/M4-01-04-02.png" alt-text="Diagram of a primary region and a secondary region, each containing compute, storage, database, and management services sections.":::
 
 ### Cross-region activities number key
 
