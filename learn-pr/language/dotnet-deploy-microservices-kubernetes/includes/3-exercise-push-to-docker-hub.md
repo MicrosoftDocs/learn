@@ -37,7 +37,13 @@ Follow these steps to create and run Docker containers in the codespace.
       - ImagePrefix=https://studious-fortnight-4g4rx9g47wg249w-32001.app.github.dev/images
     ```
 
-1. Switch to the **TERMINAL** tab and then run the following command to build the containers:
+1. Switch to the **TERMINAL** tab and run the following command to go to the code root:
+
+   ```cli
+   cd dotnet-kubernetes
+   ```
+
+1. Run the following command to build the containers:
 
     ```bash
     docker compose build
@@ -81,6 +87,8 @@ docker login
     docker push [YOUR DOCKER USER NAME]/storeimage
     docker push [YOUR DOCKER USER NAME]/productservice
     ```
+
+    If you receive an authentication error you can run `docker logout` followed by `docker login` to re-authenticate.
 
 In this exercise, you used Dockerfiles and docker compose to create two Docker images and containers, and pushed those images to Docker Hub.
 

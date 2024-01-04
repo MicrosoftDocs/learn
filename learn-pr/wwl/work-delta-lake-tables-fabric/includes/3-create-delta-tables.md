@@ -1,7 +1,3 @@
----
-ms.custom:
-  - build-2023
----
 When you create a table in a Microsoft Fabric lakehouse, a delta table is defined in the metastore for the lakehouse and the data for the table is stored in the underlying Parquet files for the table.
 
 With most interactive tools in the Microsoft Fabric environment, the details of mapping the table definition in the metastore to the underlying files are abstracted. However, when working with Apache Spark in a lakehouse, you have greater control of the creation and management of delta tables.

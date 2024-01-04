@@ -8,8 +8,8 @@ metadata:
   author: alexwolfmsft
   ms.author: alexwolf
   ms.topic: module
-  ms.prod: learning-azure
   ms.custom: engagement-fy23
+  ms.service: azure
 title: Build your first Azure Developer CLI template
 summary: "Learn how to build your own Azure Developer CLI templates."
 abstract: |

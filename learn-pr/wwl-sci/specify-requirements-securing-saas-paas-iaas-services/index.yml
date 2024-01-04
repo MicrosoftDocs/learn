@@ -6,8 +6,8 @@ metadata:
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: module
+  ms.service: azure
 title: Specify requirements for securing SaaS, PaaS, and IaaS services
 summary: "You learn how to analyze security requirements for different cloud offerings (SaaS, PaaS, and IaaS), IoT workloads, web workloads and containers."
 abstract: |
