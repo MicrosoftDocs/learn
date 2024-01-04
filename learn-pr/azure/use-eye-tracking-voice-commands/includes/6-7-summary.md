@@ -2,7 +2,7 @@ In this module, you learned how to add eye tracking to objects to trigger action
 
 ## Next steps
 
-You can continue to add eye tracking and voice commands to your applications. Consider trying following interactions:
+You can continue to add eye tracking and voice commands to your applications. Consider trying the following interactions:
 
 * Use eye gaze to select an object and move with your hands.
 * Change the color of an object by saying "Change color".
