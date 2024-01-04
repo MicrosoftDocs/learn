@@ -36,7 +36,7 @@ Select **Next: Node pools**.
 
 6.  On the **Access** page, leave the default options and then select **Next: Networking**.
     
-    :::image type="content" source="../media/access-configure-kubernetes-service-e6884808.png" alt-text="Screenshot of the Networking configuration settings.":::
+    :::image type="content" source="../media/access-config-kubernetes-service-e6884808.png" alt-text="Screenshot of the Networking configuration settings.":::
     
 
 7.  On the **Networking** page, select or create a new virtual network.

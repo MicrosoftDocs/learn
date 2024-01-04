@@ -3,13 +3,12 @@ uid: learn.intro-commercial-marketplace.6-knowledge-check
 title: Check your knowledge
 metadata:
   title: Microsoft commercial marketplace knowledge check
-  description: Review concepts from introduction to the Microsoft commercial marketplace and check your knowledge
-  ms.date: 4/21/2020
+  description: Check what you learned about the Microsoft commercial marketplace.
+  ms.date: 12/20/2023
   author: marleva
   ms.author: maevan
   manager: jasonh
-  ms.topic: interactive-tutorial
-  ms.service: marketplace
+  ms.topic: unit
 durationInMinutes: 5
 quiz:
   title: 'Knowledge check'
@@ -39,7 +38,7 @@ quiz:
     - content: 'True'
       isCorrect: true
     - content: 'False'
-      explanation: 'There is no sign up fee to join the commercial marketplace and list your solution.'
+      explanation: 'There is no sign up fee to join the commercial marketplace or to list your solution.'
       isCorrect: false  
   - content: 'Microsoft partners with active commercial marketplace offers get customer leads when potential customers interact with their listings, regardless of offer type'
     choices:

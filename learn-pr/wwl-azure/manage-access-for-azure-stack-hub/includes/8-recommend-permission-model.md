@@ -1,4 +1,4 @@
-Azure Stack Hub uses a single-tenant topolog. When choosing an identity provider to use with Azure Stack Hub, you should understand the important differences between the options of Azure Active Directory (Azure AD) and Active Directory Federation Services (AD FS).
+Azure Stack Hub uses a single-tenant topolog. When choosing an identity provider to use with Azure Stack Hub, you should understand the important differences between the options of Microsoft Entra ID and Active Directory Federation Services (AD FS).
 
 ## Capabilities and limitations
 
@@ -9,7 +9,7 @@ The identity provider that you choose can limit your options, including support 
     **Capability or scenario**
   :::column-end:::
   :::column:::
-    **Azure AD**
+    **Microsoft Entra ID**
   :::column-end:::
   :::column:::
     **AD FS**
@@ -142,9 +142,11 @@ The identity provider that you choose can limit your options, including support 
 
 The following sections discuss the different identity topologies that you can use.
 
-### Azure AD: single-tenant topology
+<a name='azure-ad-single-tenant-topology'></a>
 
-By default, when you install Azure Stack Hub and use Azure AD, Azure Stack Hub uses a single-tenant topology.
+### Microsoft Entra ID: single-tenant topology
+
+By default, when you install Azure Stack Hub and use Microsoft Entra ID, Azure Stack Hub uses a single-tenant topology.
 
 A single-tenant topology is useful when:
 
@@ -156,12 +158,14 @@ A single-tenant topology is useful when:
 
 This topology features the following characteristics:
 
- -  Azure Stack Hub registers all apps and services to the same Azure AD tenant directory.
+ -  Azure Stack Hub registers all apps and services to the same Microsoft Entra tenant directory.
  -  Azure Stack Hub authenticates only the users and apps from that directory, including tokens.
  -  Identities for administrators (cloud operators) and tenant users are in the same directory tenant.
  -  To enable a user from another directory to access this Azure Stack Hub environment, you must invite the user as a guest to the tenant directory.
 
-### Azure AD: multi-tenant topology
+<a name='azure-ad-multi-tenant-topology'></a>
+
+### Microsoft Entra ID: multi-tenant topology
 
 Cloud operators can configure Azure Stack Hub to allow access to apps by tenants from one or more organizations. Users access apps through the Azure Stack Hub user portal. In this configuration, the administrator portal (used by the cloud operator) is limited to users from a single directory.
 

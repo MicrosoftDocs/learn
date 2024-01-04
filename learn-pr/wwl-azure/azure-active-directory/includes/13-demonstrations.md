@@ -1,10 +1,12 @@
-## Task 1: Review Azure AD
+<a name='task-1-review-azure-ad'></a>
 
-In this task, we'll review Azure Active Directory licensing and tenants.
+## Task 1: Review Microsoft Entra ID
 
-1.  In the **Portal**, search for and select **Azure Active Directory**.
+In this task, we'll review Microsoft Entra ID licensing and tenants.
+
+1.  In the **Portal**, search for and select **Microsoft Entra ID**.
 2.  On the **Overview** page, locate the license information.
-3.  Go to the [Azure AD pricing page](https://azure.microsoft.com/pricing/details/active-directory/) and review the features and pricing for each edition.
+3.  Go to the [Microsoft Entra pricing page](https://azure.microsoft.com/pricing/details/active-directory/) and review the features and pricing for each edition.
 
 ## Task 2: Manage users and groups
 
@@ -14,12 +16,12 @@ In this task, we'll review Azure Active Directory licensing and tenants.
 In this task, we'll create users and groups.
 
 1.  Under the **Manage** blade, click **Users**.
-2.  Review the different **Sources** such as **Windows Server AD**, **Invited User**, **Microsoft Account**, and **External Azure Active Directory**.
+2.  Review the different **Sources** such as **Windows Server AD**, **Invited User**, **Microsoft Account**, and **External Microsoft Entra ID**.
 3.  Notice the choice for **New guest user**.
 4.  Click **New user**.
 5.  Review the two ways to create a user: **Create user** and **Invite user**.
 6.  Create a new user. Review **Identity**, **Groups and roles**, **Settings**, and **Job Info**.
-7.  Navigate to Azure AD, under **Manage** click **Groups**.
+7.  Navigate to Microsoft Entra ID, under **Manage** click **Groups**.
 8.  Review the **Group types**: **Security** and **Microsoft 365**.
 9.  Create a new group by clicking "New Group" with the **Membership type** as **Assigned**.
 10. Add a user to the same group.
@@ -37,7 +39,7 @@ In this demonstration, we will configure and test MFA.
 
 In this task, we'll enable MFA for a user.
 
-1.  In the **Portal**, search for and select **Azure Active Directory**.
+1.  In the **Portal**, search for and select **Microsoft Entra ID**.
 2.  Under **Manage** select **Security**.
 3.  Under **Manage** select **MFA**.
 4.  In the center pane, under **Configure** select **Additional cloud-based MFA settings**.

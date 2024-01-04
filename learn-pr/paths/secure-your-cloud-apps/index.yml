@@ -7,8 +7,7 @@ metadata:
   ms.date: 10/1/2019
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Secure your cloud applications in Azure
 summary: |
   Learn how to secure your Azure apps and associated data with encryption, certificates, and policy. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer).
@@ -26,7 +25,7 @@ products:
 - azure
 - azure-policy
 - azure-key-vault
-- azure-active-directory
+- entra-id
 - azure-api-management
 subjects:
 - cloud-security

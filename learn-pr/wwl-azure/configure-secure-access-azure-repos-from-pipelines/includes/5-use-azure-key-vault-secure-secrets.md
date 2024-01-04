@@ -10,7 +10,7 @@ The first step in securing access to credential secrets is to store them in Azur
 
 1. To create an Azure Key Vault, go to the Azure portal and click on the "Create a resource" button.
 2. Search and select the "Key Vault" option, click create and then fill out the required information to create a new vault.
-3. Create a new Service Principal in Azure Active Directory to grant access to the Key Vault.
+3. Create a new Service Principal in Microsoft Entra ID to grant access to the Key Vault.
 
     > [!NOTE]
     > Follow [this guide](https://learn.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal) to create your service principal.

@@ -1,4 +1,3 @@
-
 Windows uses containers to isolate sensitive system services and data, enabling them to remain secure even when the operating system has been compromised. Windows uses a container type called Windows Defender System Guard to protect critical resources, such as the Windows authentication stack, single sign-on tokens, the Windows Hello biometric stack, and the Virtual Trusted Platform Module.
 
 Windows Defender System Guard reorganizes the existing Windows system integrity features in one system and sets up the next set of investments in Windows security. It's designed to:

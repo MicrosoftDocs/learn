@@ -24,7 +24,7 @@ The System for Cross-Domain Identity Management (SCIM) standard uses the Rest AP
 
 The following identity providers are compatible with the GitHub SCIM API for organizations:
 
-- Azure AD
+- Microsoft Entra ID
 - Okta
 - OneLogin
 

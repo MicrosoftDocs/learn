@@ -1,4 +1,4 @@
-Suppose your company is looking for a strong identity solution. It's your job to decide whether Azure Active Directory or Active Directory Domain Services (AD DS) is the optimal choice. If you choose Azure AD, you need to select the edition that best supports your organization's needs and determine which features to implement. 
+Suppose your company is looking for a strong identity solution. It's your job to decide whether Microsoft Entra ID or Active Directory Domain Services (AD DS) is the optimal choice. If you choose Microsoft Entra ID, you need to select the edition that best supports your organization's needs and determine which features to implement. 
 
 Here are some requirements for your design:
 
@@ -10,4 +10,4 @@ Here are some requirements for your design:
 
 ### Answer the following questions
 
-Choose the best response for each of the questions below. Then select **Check your answers**.
+Choose the best response for each of the questions. Then select **Check your answers**.

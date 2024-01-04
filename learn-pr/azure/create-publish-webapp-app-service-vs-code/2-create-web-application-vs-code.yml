@@ -7,11 +7,10 @@ metadata:
   ms.date: 04/23/2020
   author: msangapu-msft
   ms.author: msangapu
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-js
     - devx-track-python
-  ms.prod: learning-azure
   zone_pivot_groups: dev-lang-nodeexpress-pythonflask
 durationInMinutes: 4
 content: |

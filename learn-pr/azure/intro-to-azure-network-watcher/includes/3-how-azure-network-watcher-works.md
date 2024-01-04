@@ -1,6 +1,6 @@
-Network Watcher's tools become automatically available when you create a virtual network in an Azure subscription. You can access Network Watcher directly in the Azure portal by typing **Network Watcher** in the **Search** bar.
+Network Watcher becomes automatically available when you create a virtual network in an Azure region in your subscription. You can access Network Watcher directly in the Azure portal by typing **Network Watcher** in the **Search** bar.
 
-:::image type="content" source="../images/search-portal.png" alt-text="Screenshot that shows how to search for Network Watcher in the portal resource menu.":::
+:::image type="content" source="../images/portal-search.png" alt-text="Screenshot that shows how to search for Network Watcher in the Azure portal.":::
 
 ## Network Watcher Topology tool
 
@@ -46,7 +46,7 @@ Traffic from an IaaS VM is sent to a destination based on the effective routes a
 
 ## Effective security rules
 
-NSGs filter packets based on their source and destination IP address and port numbers. More than one NSG can apply to an IaaS resource on an Azure virtual network. The Effective Security Rules tool allows you to determine why some traffic might be denied or allowed because it takes into account all rules that are applied across all NSGs that apply to the resource.  
+Network security groups (NSGs) filter packets based on their source and destination IP address and port numbers. More than one NSG can apply to an IaaS resource on an Azure virtual network. The Effective Security Rules tool allows you to determine why some traffic might be denied or allowed because it takes into account all rules that are applied across all NSGs that apply to the resource.  
 
 ## Packet capture
 

@@ -5,11 +5,10 @@ metadata:
   unitType: learning-content
   title: How does Azure NAT Gateway work?
   description: This unit describes the key features of the Azure NAT Gateway service works and provides an overview of how it works.
-  ms.date: 04/21/2023
+  ms.date: 10/20/2023
   author: LBN-commits
   ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/4-how-azure-nat-gateway-works.md)]

@@ -10,7 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: azure-ai-language
 azureSandbox: false
-labModal: false
-durationInMinutes: 45
+labModal: true
+labId: 152402
+durationInMinutes: 35
 content: |
   [!include[](includes/5-exercise-extract-custom-entities.md)]

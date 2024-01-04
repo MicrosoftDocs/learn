@@ -1,6 +1,6 @@
 Investigations help you understand how you can improve your identity security posture. They make it possible for you to respond to risks better, and help you avoid risks in the future.
 
-In your retail company, you've configured Azure AD Identity Protection policies and risks are being detected. Your manager has asked you to investigate and remediate all the risks detected and share a report with the project manager. The team uses it to understand the company's identity-based risks better.
+In your retail company, you've configured Microsoft Entra ID Protection policies and risks are being detected. Your manager has asked you to investigate and remediate all the risks detected and share a report with the project manager. The team uses it to understand the company's identity-based risks better.
 
 In this unit, you learn how to investigate risks by using reports. You also see how to remediate different types of risks and deal with any user accounts that might be blocked.
 

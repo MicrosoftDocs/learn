@@ -7,7 +7,7 @@ The Microsoft Graph API offers a single endpoint, https://graph.microsoft.com (e
 Microsoft Graph exposes REST APIs and client libraries to access data on the following Microsoft cloud services:
 
  - Microsoft 365 core services: Bookings, Calendar, Delve, Excel, Microsoft Purview eDiscovery, Microsoft Search, OneDrive, OneNote, Outlook/Exchange, People (Outlook contacts), Planner, SharePoint, Teams, To Do, Viva Insights
- - Enterprise Mobility + Security services: *Advanced Threat Analytics*, *Advanced Threat Protection*, Azure Active Directory, Identity Manager, and Intune
+ - Enterprise Mobility + Security services: *Advanced Threat Analytics*, *Advanced Threat Protection*, Microsoft Entra ID, Identity Manager, and Intune
  - Windows services: activities, devices, notifications, Universal Print
  - Dynamics 365 Business Central services
 
@@ -37,7 +37,7 @@ The beta version provides new or enhanced APIs that are still in preview status.
 
 For Security Operations Analysts, both Microsoft Graph API versions support advanced hunting using the **runHuntingQuery** method. This method includes a query in Kusto Query Language (KQL).
 
- - Advanced hunting example in Microsoft 365 Defender: 
+ - Advanced hunting example in Microsoft Defender XDR: 
 
     ```html    
     POST https://graph.microsoft.com/v1.0/security/runHuntingQuery

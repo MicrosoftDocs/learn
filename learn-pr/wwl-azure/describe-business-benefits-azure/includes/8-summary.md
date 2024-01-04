@@ -1,4 +1,3 @@
-
 In this module, you explored the various benefits of Microsoft Azure, and how it can both improve a company’s baseline operations and enable exciting innovation and expansion.
 
 ## Learning Objectives

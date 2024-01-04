@@ -1,27 +1,12 @@
-
-
-
-Your goal is to develop a Python console minigame application using GitHub Copilot. As you're working in a Codespace, you need to install the GitHub Copilot extension by updating the dev container configuration file.
-
-## What is a Dev Container?
-
-Development containers, or dev containers, are Docker containers that are configured to provide a fully featured development environment.
-Whenever you work in a codespace, you're using a dev container on a virtual machine.
-
-You can configure the dev container for a repository and Codespaces can create a tailored development environment, having all the tools and runtimes you need to work on a specific project.
-
-This diagram from the official [Visual Studio Code docs](https://code.visualstudio.com/docs/remote/containers) illustrates this functionality.
-
-![A diagram showing a development environment in a local computer and comparing with a development environment in the cloud (Dev Container).](./media/dev-container.png)
+Your goal is to develop a minigame in Python using GitHub Copilot. You have already learned a bit about GitHub Codespaces and GitHub Copilot and how they work. In this challenge exercise, you need to install the GitHub Copilot extension using the dev configuration file under `.devcontainer/devcontainer.json`.
 
 ## Specification
 
-In this challenge exercise, you need to open the `devcontainer` folder and update the `devcontainer.json` JSON file to add the GitHub Copilot extension.
+- GitHub Codespaces identifies the required extensions using their Visual Studio Code marketplace ID.
+- Visit the GitHub Copilot extension on the Visual Studio Marketplace and find the ID.
+- Analyze the `.devcontainer/devcontainer.json` file and add the extension.
 
-- Codespaces identifies the extensions required using their Visual Studio Code marketplace `id`.
-- The GitHub Copilot extension identification is `GitHub.copilot`.
-
-By adding the GitHub Copilot extension to this file, you're ensuring that it's installed in the development container and available for use in the Codespace.
+By adding the GitHub Copilot extension to this file, you ensure that it's installed in the development container and available for use in the Codespace. With each configuration change, Codespaces displays a pop-up with a message indicating that an update has been detected, providing the option to rebuild.
 
 ## Check your work
 

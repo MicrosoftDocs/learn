@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/05/2022
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -44,6 +43,6 @@ quiz:
     - content: "In Networking properties, add your client IP address to the Firewall allowed list."
       isCorrect: true
       explanation: "Correct. The public IP address for your computer can be allowed access in the Firewall settings."
-    - content: "In Access control, add your Azure Active Directory user account to a role."
+    - content: "In Access control, add your Microsoft Entra user account to a role."
       isCorrect: false
       explanation: "Incorrect. The Access control sets access for viewing or managing the service, not the network access."

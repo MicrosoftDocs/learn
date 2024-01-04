@@ -11,7 +11,7 @@ To leverage a hybrid data platform for SQL Server, you have the flexibility to c
 * Azure SQL Managed Instance Link
 * Azure Arc-enabled SQL Server 
 * Azure Synapse Link for SQL Server
-* Azure Active Directory (Azure AD) authentication
+* Microsoft Entra authentication
 * Microsoft Purview
 
 A cloud connected service can also be adopted in mixed ways, such as storing SQL Server data files on Azure Storage, or used to replace on-premises services such as failing over SQL Server to Azure during a disaster recovery or migration scenario.
@@ -36,11 +36,11 @@ Security solutions should provide visibility and control over the network, as we
 
 For this reason, it is essential to have a security solution that adheres to industry standards and regulations in hybrid cloud environments to ensure data security, confidentiality, and integrity. 
 
-Azure Active Directory authentication for SQL Server 2022 is a central authentication repository that supports advanced authentication methods like Azure Active Directory Universal with Multi-Factor Authentication and Azure Active Directory access token where a company can add an extra layer of security to their authentication process. 
+Microsoft Entra authentication for SQL Server 2022 is a central authentication repository that supports advanced authentication methods like Microsoft Entra multifactor authentication and Microsoft Entra access token where a company can add an extra layer of security to their authentication process. 
 
-With a cloud-based central authentication authority like Azure Active Directory, you can take advantage of the latest SQL Server security features, while also reducing the risk of security breaches caused by weak or reused passwords.
+With a cloud-based central authentication authority like Microsoft Entra ID, you can take advantage of the latest SQL Server security features, while also reducing the risk of security breaches caused by weak or reused passwords.
 
-In SQL Server 2022, Microsoft Purview can be used to manage data access policies at scale, simplifying access management and ensuring consistent policies across an organization. Access policies include Data and DevOps types, allowing Azure AD accounts to log into SQL Server and have access to read data or perform specific tasks. Access policies can be deleted or applied across multiple instances for central governance.
+In SQL Server 2022, Microsoft Purview can be used to manage data access policies at scale, simplifying access management and ensuring consistent policies across an organization. Access policies include Data and DevOps types, allowing Microsoft Entra accounts to log into SQL Server and have access to read data or perform specific tasks. Access policies can be deleted or applied across multiple instances for central governance.
 
 **Watch this video** to see the cloud connected capabilities of SQL Server 2022:
 
@@ -54,7 +54,7 @@ At the end of this module, you will be able to:
 - Describe how Azure Arc-enabled SQL Server works
 - Discover best practices for disaster recovery using Azure SQL Managed Instance
 - Understand how to implement near real time analytics with Azure Synapse Link for SQL Server
-- Explain cloud connected technologies that support security with Azure Active Directory (Azure AD) authentication
+- Explain cloud connected technologies that support security with Microsoft Entra authentication
 - Explore Microsoft Purview access policies for SQL Server
 
 ## Prerequisites

@@ -7,9 +7,7 @@ metadata:
   ms.date: 6/27/2023
   author: sherzyang
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.service: azure
-  ms.subservice: openai
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-language-models.md)]

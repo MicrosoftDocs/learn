@@ -4,9 +4,11 @@ Your security team members are worried about a repeat of a recent breach. They w
 
 In this unit, you'll see two approaches to monitoring user behavior. The first approach focuses on user sign-in details, which are stored in *sign-in* log files. The second approach looks at user activity while signed in. These activities are stored in *audit* files.
 
-## Azure Active Directory logs
+<a name='azure-active-directory-logs'></a>
 
-Azure Active Directory captures log information for your entire Azure tenant. You can use the information in analysis and reporting. When you assess user behavior, you want to look at the activity logs and security logs that are collected for your tenant.  
+## Microsoft Entra logs
+
+Microsoft Entra ID captures log information for your entire Azure tenant. You can use the information in analysis and reporting. When you assess user behavior, you want to look at the activity logs and security logs that are collected for your tenant.  
 
 Activity logs cover all of a user's behaviors and interactions with your network and its assets. You want to pay particular attention to two types of log files:
 
@@ -34,12 +36,12 @@ You can use sign-in log files to identify:
 
 Because of the sensitive nature of log data that's captured by sign-in logs, access to the logs is reserved and limited. To use the sign-in log files, you must have:
 
-- An Azure Active Directory Premium 1 or Premium 2 subscription.
+- A Microsoft Entra ID P1 or P2 or Premium 2 subscription.
 - At least one user who has a Global Administrator, Report Reader, Security Reader, or Security Administrator role.
 
 ### Sign-in logs view
 
-Azure captures a wide range of data about user activity, from access periods to the application that made a sign-in request, and more. You access the sign-in log file in your Azure Active Directory instance in the Azure portal. The first time the sign-in logging service is enabled, you might not see data for up to an hour.
+Azure captures a wide range of data about user activity, from access periods to the application that made a sign-in request, and more. You access the sign-in log file in your Microsoft Entra instance in the Azure portal. The first time the sign-in logging service is enabled, you might not see data for up to an hour.
 
 To see the sign-in logs for your tenant, in the left menu under **Monitoring**, select **Sign-in logs**. The following example displays a typical view of the sign-in table data:
 
@@ -108,7 +110,7 @@ In the summary unit of this module, you'll find a link to a complete list of err
 
 ## Audit log files
 
-Audit files provide a history of every activity in your Azure Active Directory tenant. Audit logs are maintained for compliance and they keep records of all your system activities. Recent activities might not be included in results for up to an hour after they occur.
+Audit files provide a history of every activity in your Microsoft Entra tenant. Audit logs are maintained for compliance and they keep records of all your system activities. Recent activities might not be included in results for up to an hour after they occur.
 
 ### Audit logs prerequisites
 
@@ -116,7 +118,7 @@ To access the audit log files, at least one user in your tenant must have a Glob
 
 ### Audit logs view
 
-Access the audit logs through your Azure Active Directory instance in the Azure portal. In the left menu under **Monitoring**, select **Audit logs**.
+Access the audit logs through your Microsoft Entra instance in the Azure portal. In the left menu under **Monitoring**, select **Audit logs**.
 
 Like sign-in logs, you can modify audit logs to meet your specific needs. The default audit log view displays the following columns:
 
@@ -158,10 +160,10 @@ Like with sign-in logs, select a format to use for the data, CSV or JSON, and th
 
 ## Access logs through users, groups, and enterprise applications
 
-You can access sign-in logs and audit logs that are collected for your Azure Active Directory instance through users, groups, and enterprise applications. The data is prefiltered according to the access point that's being used. If you access the logs through the users menu, you see only log data that's related to users. The same applies to groups and enterprise applications.
+You can access sign-in logs and audit logs that are collected for your Microsoft Entra instance through users, groups, and enterprise applications. The data is prefiltered according to the access point that's being used. If you access the logs through the users menu, you see only log data that's related to users. The same applies to groups and enterprise applications.
 
-To access user sign-in logs or user audit logs from your Azure Active Directory instance, in the left menu under **Manage**, select **Users**. Then, under **Activity**, select the type of log you want to view.
+To access user sign-in logs or user audit logs from your Microsoft Entra instance, in the left menu under **Manage**, select **Users**. Then, under **Activity**, select the type of log you want to view.
 
 :::image type="content" source="../media/audit-logs-users-concept.png" alt-text="Screenshot of the logs you can select through the Users menu.":::
 
-To access a group's audit logs from your Azure Active Directory instance, select **Groups** in the left menu.
+To access a group's audit logs from your Microsoft Entra instance, select **Groups** in the left menu.

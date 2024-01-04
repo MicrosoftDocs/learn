@@ -1,6 +1,6 @@
  Now that you've set up a gateway, you're ready to import and publish an API so that partners can access inventory and product information.
 
-Here, you'll import your web API that exposes an OpenAPI endpoint. You'll test the imported API using visualization, and then publish the API.
+Here, you import your web API that exposes an OpenAPI endpoint. Then, you test the imported API using visualization. Finally, you publish the API.
 
  > [!NOTE]
  > This exercise uses the resources that you set up in the previous exercise.
@@ -18,7 +18,7 @@ The first part of the exercise is to import the NorthWind Shoes API into an API 
    ![Add a new API.](../media/5-import-open-api.png)
 
 1. In the OpenAPI specification window, complete the following settings:
- 
+
     | Setting | Value |
     | --- | --- |
     | OpenAPI specification | Paste the Swagger JSON URL that you saved from the previous exercise. |

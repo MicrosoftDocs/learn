@@ -32,7 +32,7 @@ The image that follows shows the settings for a sensitivity label named Confiden
 After sensitivity labels are created, they need to be published to make them available to people and services in the organization. Sensitivity labels are published to users or groups through label policies. Sensitivity labels will then appear in Office apps for those users and groups. The sensitivity labels can be applied to documents and emails.
 Label policies enable admins to:
 
-- **Choose the users and groups that can see labels**.  Labels can be published to specific users, distribution groups, Microsoft 365 groups in Azure Active Directory, and more.
+- **Choose the users and groups that can see labels**.  Labels can be published to specific users, distribution groups, Microsoft 365 groups in Microsoft Entra ID, and more.
 - **Apply a default label** to all new emails and documents that the specified users and groups create. Users can always change the default label if they believe the document or email has been mislabeled.
 - **Require justifications for label changes**. If a user wants to remove a label or replace it, admins can require the user to provide a valid justification to complete the action. The user will be prompted to provide an explanation for why the label should be changed.
 - **Require users to apply a label (mandatory labeling)**. It ensures a label is applied before users can save their documents, send emails, or create new sites or groups.

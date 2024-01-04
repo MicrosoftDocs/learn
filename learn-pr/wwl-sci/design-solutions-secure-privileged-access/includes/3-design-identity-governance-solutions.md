@@ -7,13 +7,13 @@ This unit discusses the following identity governance solutions:
 
 ## Privileged Identity Management (PIM)
 
-Privileged Identity Management (PIM) is a service in Azure Active Directory (Azure AD) that enables you to manage, control, and monitor access to important resources in your organization. These resources include resources in Azure AD, Azure, and other Microsoft Online Services such as Microsoft 365 or Microsoft Intune.
+Privileged Identity Management (PIM) is a service in Microsoft Entra ID that enables you to manage, control, and monitor access to important resources in your organization. These resources include resources in Microsoft Entra ID, Azure, and other Microsoft Online Services such as Microsoft 365 or Microsoft Intune.
 
 ### What does it do?
 
 Privileged Identity Management provides time-based and approval-based role activation to mitigate the risks of excessive, unnecessary, or misused access permissions on resources that you care about. Here are some of the key features of Privileged Identity Management:
 
--   Provide **just-in-time** privileged access to Azure AD and Azure resources
+-   Provide **just-in-time** privileged access to Microsoft Entra ID and Azure resources
 -   Assign **time-bound** access to resources using start and end dates
 -   Require **approval** to activate privileged roles
 -   Enforce **multi-factor authentication** to activate any role
@@ -81,15 +81,15 @@ Microsoft Purview Privileged Access Management allows granular access control ov
 
 ### PAM vs PIM
 
-Privileged access management complements other data and access feature protections within the Microsoft 365 security architecture. Including privileged access management as part of an integrated and layered approach to security provides a security model that maximizes protection of sensitive information and Microsoft 365 configuration settings. As shown in the diagram, privileged access management builds on the protection provided with native encryption of Microsoft 365 data and the role-based access control security model of Microsoft 365 services. When used with [Azure AD Privileged Identity Management](https://learn.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure), these two features provide access control with just-in-time access at different scopes.
+Privileged access management complements other data and access feature protections within the Microsoft 365 security architecture. Including privileged access management as part of an integrated and layered approach to security provides a security model that maximizes protection of sensitive information and Microsoft 365 configuration settings. As shown in the diagram, privileged access management builds on the protection provided with native encryption of Microsoft 365 data and the role-based access control security model of Microsoft 365 services. When used with [Microsoft Entra Privileged Identity Management](https://learn.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure), these two features provide access control with just-in-time access at different scopes.
 
 ![Diagram that shows layered protection in Microsoft 365.](../media/layered-protection.png)
 
-Privileged access management is defined and scoped at the **task** level, while Azure AD Privileged Identity Management applies protection at the **role** level with the ability to execute multiple tasks. Azure AD Privileged Identity Management primarily allows managing accesses for AD roles and role groups, while Microsoft Purview Privileged Access Management applies only at the task level.
+Privileged access management is defined and scoped at the **task** level, while Microsoft Entra Privileged Identity Management applies protection at the **role** level with the ability to execute multiple tasks. Microsoft Entra Privileged Identity Management primarily allows managing accesses for AD roles and role groups, while Microsoft Purview Privileged Access Management applies only at the task level.
 
--   **Enabling privileged access management while already using Azure AD Privileged Identity Management:** Adding privileged access management provides another granular layer of protection and audit capabilities for privileged access to Microsoft 365 data.
+-   **Enabling privileged access management while already using Microsoft Entra Privileged Identity Management:** Adding privileged access management provides another granular layer of protection and audit capabilities for privileged access to Microsoft 365 data.
     
--   **Enabling Azure AD Privileged Identity Management while already using Microsoft Purview Privileged Access Management:** Adding Azure AD Privileged Identity Management to Microsoft Purview Privileged Access Management can extend privileged access to data outside of Microsoft 365 that's primarily defined by user roles or identity.
+-   **Enabling Microsoft Entra Privileged Identity Management while already using Microsoft Purview Privileged Access Management:** Adding Microsoft Entra Privileged Identity Management to Microsoft Purview Privileged Access Management can extend privileged access to data outside of Microsoft 365 that's primarily defined by user roles or identity.
 
 <!--
 END()
@@ -126,11 +126,11 @@ END()
 
 ## Access Reviews
 
-Access reviews in Azure Active Directory (Azure AD), part of Microsoft Entra, enable organizations to efficiently manage group memberships, access to enterprise applications, and role assignments. User's access can be reviewed regularly to make sure only the right people have continued access.
+Access reviews in Microsoft Entra ID, part of Microsoft Entra, enable organizations to efficiently manage group memberships, access to enterprise applications, and role assignments. User's access can be reviewed regularly to make sure only the right people have continued access.
 
 ### Why are access reviews important?
 
-Azure AD enables you to collaborate with users from inside your organization and with external users. Users can join groups, invite guests, connect to cloud apps, and work remotely from their work or personal devices. The convenience of using self-service has led to a need for better access management capabilities.
+Microsoft Entra ID enables you to collaborate with users from inside your organization and with external users. Users can join groups, invite guests, connect to cloud apps, and work remotely from their work or personal devices. The convenience of using self-service has led to a need for better access management capabilities.
 
 -   As new employees join, how do you ensure they have the access they need to be productive?
 -   As people move teams or leave the company, how do you make sure that their old access is removed?
@@ -144,9 +144,9 @@ Azure AD enables you to collaborate with users from inside your organization and
 
 A few of the scenarios when access reviews may be useful are the following:
 
--   **Too many users in privileged roles:** It's a good idea to check how many users have administrative access, how many of them are Global Administrators, and if there are any invited guests or partners that haven't been removed after being assigned to do an administrative task. You can recertify the role assignment users in Azure AD roles such as Global Administrators, or Azure resources roles such as User Access Administrator in the Microsoft Entra Privileged Identity Management (PIM) experience.
--   **When automation is not possible:** You can create rules for dynamic membership on security groups or Microsoft 365 Groups, but what if the HR data isn't in Azure AD or if users still need access after leaving the group to train their replacement? You can then create a review on that group to ensure those who still need access should have continued access.
--   **When a group is used for a new purpose:** If you have a group that is going to be synced to Azure AD, or if you plan to enable the application Salesforce for everyone in the Sales team group, it would be useful to ask the group owner to review the group membership prior to the group being used in a different risk content.
+-   **Too many users in privileged roles:** It's a good idea to check how many users have administrative access, how many of them are Global Administrators, and if there are any invited guests or partners that haven't been removed after being assigned to do an administrative task. You can recertify the role assignment users in Microsoft Entra roles such as Global Administrators, or Azure resources roles such as User Access Administrator in the Microsoft Entra Privileged Identity Management (PIM) experience.
+-   **When automation is not possible:** You can create rules for dynamic membership on security groups or Microsoft 365 Groups, but what if the HR data isn't in Microsoft Entra ID or if users still need access after leaving the group to train their replacement? You can then create a review on that group to ensure those who still need access should have continued access.
+-   **When a group is used for a new purpose:** If you have a group that is going to be synced to Microsoft Entra ID, or if you plan to enable the application Salesforce for everyone in the Sales team group, it would be useful to ask the group owner to review the group membership prior to the group being used in a different risk content.
 
 ## Best practices for privileged access management
 
@@ -156,13 +156,13 @@ Securing privileged access is a critical first step to protecting business asset
 
 Privileged accounts are accounts that administer and manage IT systems. Cyber attackers target these accounts to gain access to an organization’s data and systems. To secure privileged access, you should isolate the accounts and systems from the risk of being exposed to a malicious user.
 
-The following are a few of the best practices found in [Securing privileged access for hybrid and cloud deployments in Azure AD](/azure/active-directory/roles/security-planning):
+The following are a few of the best practices found in [Securing privileged access for hybrid and cloud deployments in Microsoft Entra ID](/azure/active-directory/roles/security-planning):
 
 **Best practice**: Manage, control, and monitor access to privileged accounts.   
 
-**Detail**: Turn on Azure AD Privileged Identity Management. After you turn on Privileged Identity Management, you’ll receive notification email messages for privileged access role changes. These notifications provide early warning when other users are added to highly privileged roles in your directory.
+**Detail**: Turn on Microsoft Entra Privileged Identity Management. After you turn on Privileged Identity Management, you’ll receive notification email messages for privileged access role changes. These notifications provide early warning when other users are added to highly privileged roles in your directory.
 
-**Best practice**: Ensure all critical admin accounts are managed Azure AD accounts.
+**Best practice**: Ensure all critical admin accounts are managed Microsoft Entra accounts.
 
 **Detail**: Remove any consumer accounts from critical admin roles (for example, Microsoft accounts like hotmail.com, live.com, and outlook.com).
 
@@ -172,7 +172,7 @@ The following are a few of the best practices found in [Securing privileged acce
 
 **Best practice**: Identify and categorize accounts that are in highly privileged roles.   
 
-**Detail**: After turning on Azure AD Privileged Identity Management, view the users who are in the global administrator, privileged role administrator, and other highly privileged roles. Remove any accounts that are no longer needed in those roles, and categorize the remaining accounts that are assigned to admin roles:
+**Detail**: After turning on Microsoft Entra Privileged Identity Management, view the users who are in the global administrator, privileged role administrator, and other highly privileged roles. Remove any accounts that are no longer needed in those roles, and categorize the remaining accounts that are assigned to admin roles:
 
 * Individually assigned to administrative users, and can be used for nonadministrative purposes (for example, personal email)
 * Individually assigned to administrative users and designated for administrative purposes only
@@ -182,4 +182,4 @@ The following are a few of the best practices found in [Securing privileged acce
 * For external users
 
 **Best practice**: Implement “just in time” (JIT) access to further lower the exposure time of privileges and increase your visibility into the use of privileged accounts.   
-**Detail**: Azure AD Privileged Identity Management provides this capability.
+**Detail**: Microsoft Entra Privileged Identity Management provides this capability.

@@ -8,7 +8,7 @@ metadata:
   ms.manager: markl
   ms.date: 08/17/2023
   ms.prod: aspnet-core
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Use managed data stores in a cloud-native ASP.NET Core microservices app
 summary: Modify a cloud-native ASP.NET Core microservices app to use managed data stores in Azure.
 abstract: |

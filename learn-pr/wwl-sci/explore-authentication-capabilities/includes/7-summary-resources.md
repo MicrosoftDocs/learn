@@ -11,7 +11,7 @@ Now that you've completed this module, you can:
 
 ## Learn more
 
-- [What is Microsoft Entra ID Authentication?](/azure/active-directory/authentication/overview-authentication)
+- [What is Microsoft Entra authentication?](/azure/active-directory/authentication/overview-authentication)
 - [What authentication and verification methods are available in Microsoft Entra ID?](/azure/active-directory/authentication/concept-authentication-methods)
 - [Authentication methods in Microsoft Entra ID - Microsoft Authenticator app](/azure/active-directory/authentication/concept-authentication-authenticator-app)
 - [Authentication methods in Microsoft Entra ID - OATH tokens](/azure/active-directory/authentication/concept-authentication-oath-tokens)
@@ -19,7 +19,7 @@ Now that you've completed this module, you can:
 - [Authentication methods in Microsoft Entra ID - phone options](/azure/active-directory/authentication/concept-authentication-phone-options)
 - [FIDO2 security keys](/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys)
 - [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-overview)
-- [How it works: Microsoft Entra ID multifactor authentication](/azure/active-directory/authentication/concept-mfa-howitworks)
+- [How it works: Microsoft Entra multifactor authentication](/azure/active-directory/authentication/concept-mfa-howitworks)
 - [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
-- [Enable users to unlock their account or reset passwords using Microsoft Entra ID self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr)
-- [Eliminate bad passwords using Microsoft Entra ID Password Protection](/azure/active-directory/authentication/concept-password-ban-bad)
+- [Enable users to unlock their account or reset passwords using Microsoft Entra self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr)
+- [Eliminate bad passwords using Microsoft Entra Password Protection](/azure/active-directory/authentication/concept-password-ban-bad)

@@ -9,8 +9,8 @@ metadata:
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure-ai-services
-labId: 99870
+durationInMinutes: 30
+labId: 152412
 labModal: true
-durationInMinutes: 35
 content: |
   [!include[](includes/4-exercise-use-container.md)]

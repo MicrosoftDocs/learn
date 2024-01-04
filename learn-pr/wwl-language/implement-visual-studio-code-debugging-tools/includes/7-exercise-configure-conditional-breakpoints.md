@@ -115,7 +115,7 @@ Suppose you're debugging an application that processes product information in a 
 
     The VARIABLES section of the RUN AND DEBUG view displays the value assigned to `i`.
 
-    Notice that `Process1` and `Process2` display messages to the DEBUG CONSOLE panel. A real application may require user interactions as data is being processed. Some interactions may be dependent on the data being processed.
+    Notice that `Process1` and `Process2` display messages to the DEBUG CONSOLE panel. A real application might require user interactions as data is being processed. Some interactions might be dependent on the data being processed.
 
 1. Use the **Stop** button to stop code execution.
 
@@ -153,7 +153,7 @@ A standard breakpoint is great for walking through a data processing application
 
 1. Take a moment to consider the advantage that conditional breakpoints offer.
 
-    In this simulated data processing scenario, there is about a 1% chance that a product is `new`. If you're using a standard breakpoint to debug the issue, you'ld need to walk through the analysis of about 100 products to find one of the `new` products that you're interested in.
+    In this simulated data processing scenario, there is about a 1% chance that a product is `new`. If you're using a standard breakpoint to debug the issue, you'd need to walk through the analysis of about 100 products to find one of the `new` products that you're interested in.
 
     Conditional breakpoints can save you lots of time when you're debugging an application.
 

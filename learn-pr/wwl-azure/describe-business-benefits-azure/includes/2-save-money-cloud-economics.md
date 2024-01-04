@@ -1,4 +1,3 @@
-
 Working in the cloud is typically more cost-efficient than traditional IT. Watch this video to learn more about cloud economics, and find out what makes the cloud so cost-efficient:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14LBc]
