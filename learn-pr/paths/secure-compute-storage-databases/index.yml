@@ -3,7 +3,7 @@ uid: learn.wwl.secure-compute-storage-databases
 metadata:
   title: Secure compute, storage, and databases
   description: Secure compute, storage, and databases
-  ms.date: 12/28/2023
+  ms.date: 01/03/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: learning-path
@@ -33,6 +33,8 @@ products:
 subjects:
 - cloud-security
 modules:
+- learn.wwl.advanced-security-compute
+- learn.wwl.security-storage
 - learn.wwl.security-azure-sql-database-azure-sql-managed-instance
 trophy:
   uid: learn.wwl.secure-compute-storage-databases.trophy

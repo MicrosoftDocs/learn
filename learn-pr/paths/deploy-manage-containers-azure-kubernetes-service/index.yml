@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/12/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Deploy containers by using Azure Kubernetes Service (AKS)
 prerequisites: |
   * Experience using the Azure portal to create resources.
