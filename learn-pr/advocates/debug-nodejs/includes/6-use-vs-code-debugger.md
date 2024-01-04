@@ -397,9 +397,9 @@ Deleting the GitHub Codespaces environment ensures that you can maximize the amo
 
 1. Sign into the GitHub Codespaces dashboard (<https://github.com/codespaces>).
 
-1. Locate your currently running codespaces sourced from the [`MicrosoftDocs/node-essentials`](https://github.com/MicrosoftDocs/node-essentials) GitHub repository.
+1. Locate your currently running Codespaces sourced from the [`MicrosoftDocs/node-essentials`](https://github.com/MicrosoftDocs/node-essentials) GitHub repository.
 
-    :::image type="content" source="../media/codespaces/codespace-dashboard.png" alt-text="Screenshot of all the running codespaces including their status and templates.":::
+    :::image type="content" source="../media/codespaces/codespace-dashboard.png" alt-text="Screenshot of all the running Codespaces including their status and templates.":::
 
 1. Open the context menu for the codespace and select **Delete**.
 

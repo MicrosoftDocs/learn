@@ -21,5 +21,5 @@ Ultimately, you'll be able to find bugs effectively in your Node.js programs, an
 ## Prerequisites
 
 A development environment using one of the following: 
-* A browser-based environment which relies on a GitHub account and CodeSpaces. 
+* A browser-based environment which relies on a GitHub account and Codespaces. 
 * A local computer setup with Visual Studio Code and Docker (Community edition) installed.
