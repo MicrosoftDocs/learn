@@ -1,8 +1,8 @@
 Spot user node pools allow you to access unused Azure compute capacity at lower prices with support for high-performance computing scenarios.
 
-In the previous exercise, you created a standard user node pool, used the cluster autoscaler to manage the creation of nodes, and scaled the node count manually.
+In the previous exercise, you created a standard user node pool, used the cluster autoscaler to manage node creation, and scaled the node count manually.
 
-The next step is for you to add a spot user node pool with automatic scaling to reduce your cluster's operational costs. Clusters usage varies based on resources needed and isn't predictable, so you set up rules to capture the spikes and dips. The workload is deployed with node affinity enabled so that the pod is scheduled on nodes in the spot node pool.
+The next step is for you to add a spot user node pool with automatic scaling to reduce your cluster's operational costs. Cluster usage varies based on resources needed and isn't predictable, so you set up rules to capture the spikes and dips. The workload is deployed with node affinity enabled so that the pod is scheduled on nodes in the spot node pool.
 
 ## Create a spot node pool
 
@@ -102,11 +102,13 @@ You need to create a separate node pool that supports the batch-processing servi
 
 ## Configure a namespace
 
-1. Run the `kubectl create namespace` command to create a namespace called `costsavings` for the application. You use this namespace to make it easier to select your workloads.
+1. Run the `kubectl create namespace` command to create a namespace called `costsavings` for the application. You'll use this namespace to make it easier to select your workloads.
 
     ```bash
     kubectl create namespace costsavings
     ```
+
+    Here's the output from the preceding command:
 
     ```output
     namespace/costsavings created
@@ -157,7 +159,7 @@ The nodes in a spot node pool are assigned a taint that equals `kubernetes.azure
                 - "spot"
     ```
 
-1. Press <kbd>Ctrl+S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to close the editor.
+1. Press <kbd>Ctrl+S</kbd> to save the file, then press <kbd>Ctrl+Q</kbd> to close the editor.
 
 1. Run the `kubectl apply` command to apply the configuration and deploy the application in the `costsavings` namespace:
 
@@ -166,6 +168,8 @@ The nodes in a spot node pool are assigned a taint that equals `kubernetes.azure
     --namespace costsavings \
     -f spot-node-deployment.yaml
     ```
+
+      Here's the output from the preceding command:
 
     ```output
     pod/nginx created
@@ -176,6 +180,8 @@ The nodes in a spot node pool are assigned a taint that equals `kubernetes.azure
     ```bash
     kubectl get pods --namespace costsavings -o wide
     ```
+
+    The output should resemble the following:
 
     ```output
     NAME    READY   STATUS    RESTARTS   AGE   IP           NODE                                   NOMINATED NODE   READINESS GATES
