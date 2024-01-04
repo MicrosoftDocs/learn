@@ -11,8 +11,8 @@ Now you've completed this module, you'll be able to:
 To find out more about any of the topics covered in this module, visit these links:
 
 - [What is Microsoft Defender XDR?](/microsoft-365/security/defender/microsoft-365-defender)
-- [Microsoft Defender for Collaboration security product overview](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview)
-- [Why do I need Microsoft Defender for Collaboration?](/microsoft-365/security/office-365-security/why-do-i-need-microsoft-defender-for-office-365)
+- [Microsoft Defender for Office 365 security product overview](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview)
+- [Why do I need Microsoft Defender for Office 365?](/microsoft-365/security/office-365-security/why-do-i-need-microsoft-defender-for-office-365)
 - [Microsoft Defender for Identity](/defender-for-identity/what-is)
 - [Compare Microsoft endpoint security plans](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
