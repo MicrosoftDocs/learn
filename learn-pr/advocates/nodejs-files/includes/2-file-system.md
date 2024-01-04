@@ -4,19 +4,19 @@ Here, you learn how to use Node.js to read the file system to discover files and
 
 ## Include the fs module
 
-Node.js provides a built-in module, ***fs*** (short for _file system_), for working with the file system. Because it is part of the Node.js runtime, you don't need to install it; you reference it just as you would any other dependency. 
+Node.js provides a built-in module, **fs** (short for _file system_), for working with the file system. Because it is part of the Node.js runtime, you don't need to install it; you reference it just as you would any other dependency. 
 
-The ***fs*** module has a `promises` namespace that has promise versions of all methods. Using the promise namespace is the preferred way to work with the ***fs*** module because it allows you to use `async` to avoids the messiness of callbacks or the blocking of synchronous methods.
+The **fs** module has a `promises` namespace that has `promise` versions of all methods. Using the `promise` namespace is the preferred way to work with the **fs** module because it allows you to use `async` to avoids the messiness of callbacks or the blocking of synchronous methods.
 
 ```javascript
 const fs = require("fs").promises;
 ```
 
-You can use the ***fs*** module to do various operations on files and directories. It has several methods to pick from. For now, we're going to focus on what you need to know to work with directories.
+You can use the **fs** module to do various operations on files and directories. It has several methods to pick from. For now, we're going to focus on what you need to know to work with directories.
 
 ## List contents in a directory with fs.readdir
 
-One task that you often do with the ***fs*** module is list out or *enumerate* the contents in a directory. For instance, Tailwind Traders, has a root folder called *stores*. In that folder are subfolders organized by store number. Inside those folders, are the sales-total files. The structure looks like this:
+One task that you often do with the **fs** module is list out or *enumerate* the contents in a directory. For instance, Tailwind Traders, has a root folder called *stores*. In that folder are subfolders organized by store number. Inside those folders, are the sales-total files. The structure looks like this:
 
 ```
 📂 stores
@@ -26,7 +26,7 @@ One task that you often do with the ***fs*** module is list out or *enumerate* t
     📂 202
 ```
 
-To read through the contents of the folder, you can use the async `readdir` method. Most operations on the ***fs*** module have both synchronous (postpended with `Sync`) and asynchronous options. The results are returned in alphabetical order.
+To read through the contents of the folder, you can use the async `readdir` method. Most operations on the **fs** module have both synchronous (postpended with `Sync`) and asynchronous options. The results are returned in alphanumeric order.
 
 ```javascript
 const fs = require("fs").promises;
@@ -38,7 +38,7 @@ async function main() {
 main();
 ```
 
-The alphanum-sorted list of items looks like this:
+The alphanumeric-sorted list of items looks like this:
 
 ```console
 [ '201', '202', '203', '204' ]
@@ -61,7 +61,7 @@ async function main() {
 main();
 ```
 
-The alphanum-sorted list of items looks like this:
+The alphanumeric-sorted list of items looks like this:
 
 ```console
 201: folder
