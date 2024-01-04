@@ -3,7 +3,7 @@ Conditional Access is a feature of Microsoft Entra ID that provides an extra lay
 
 :::image type="content" source="../media/2-conditional-access-policies.png" alt-text="Image showing Conditional Access policy flow.  Signals are used to decide whether to allow or block access to apps and data.":::
 
-Conditional Access policies at their simplest are if-then statements.  For example, a Conditional Access policy might state that *if* a user belongs to a certain group, then they're required to provide multi-factor authentication to sign in to an application.
+Conditional Access policies at their simplest are if-then statements.  For example, a Conditional Access policy might state that *if* a user belongs to a certain group, then they're required to provide multifactor authentication to sign in to an application.
 
 > [!IMPORTANT]
 > Conditional Access policies are enforced after first-factor authentication is completed. Conditional Access isn't intended to be an organization's first line of defense for scenarios like denial-of-service (DoS) attacks, but it can use signals from these events to determine access.
@@ -27,6 +27,8 @@ When creating a conditional access policy, admins can determine which signals to
   - **Client apps**.  Clients apps, the software the user is employing to access the cloud app, including browsers, mobile apps, desktop clients, can also be used in access policy decision.
   - **Filters for devices**.  Organizations can enforce policies based on device properties, by using the filters for devices option.  As an example, this option may be used to target policies to specific devices like privileged access workstations.
 
+In essence, the assignments portion controls the who, what, and where of the Conditional Access policy.
+
 #### Access controls
 
 When the Conditional Access policy has been applied, an informed decision is reached on whether to block access, grant access, grant access with extra verification, or apply a session control to enable a limited experience. The decision is referred to as the access controls portion of the Conditional Access policy and defines how a policy is enforced. Common decisions are:
@@ -35,8 +37,4 @@ When the Conditional Access policy has been applied, an informed decision is rea
 - **Grant access**. Administrators can grant access without any additional control, or they can choose to enforce one or more controls when granting access. Examples of controls used to grant access include requiring users to perform multifactor authentication, requiring specific authentication methods to access a resource, requiring devices to meet specific compliance policy requirements, require a password change, and more. For a complete list, refer to [Grant controls in Conditional Access policy](/azure/active-directory/conditional-access/concept-conditional-access-grant).
 - **Session**.  Within a Conditional Access policy, an administrator can make use of session controls to enable limited experiences within specific cloud applications. As an example, Conditional Access App Control uses signals from Microsoft Defender for Cloud Apps to block the download, cut, copy, and print capabilities for sensitive documents, or to require labeling of sensitive files. Other session controls include sign-in frequency and application enforced restrictions that, for selected applications, use the device information to provide users with a limited or full experience, depending on the device state. For a complete list, refer [Session controls in Conditional Access policy](/azure/active-directory/conditional-access/concept-conditional-access-session).
 
-### Interactive Guide
-
-In this interactive guide, you'll walk through the different assignments and access controls for a conditional access policy and then create a Conditional Access policy for a group of users.
-
-[![Interactive guide](../media/2-conditional-access-interactive.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/LP02M04-Create-a-Conditional-Access-Policy/index.html?azure-portal=true)
+In summary, the assignments portion controls the who, what, and where of the Conditional Access policy while the access controls portion controls how a policy is enforced.
