@@ -5,8 +5,8 @@ metadata:
   title: Introduction to Azure Virtual Machines
   description: Introduction to Azure Virtual Machines
   ms.date: 09/13/2022
-  author: cynthn
-  ms.author: cynthn
+  author: ju-shim
+  ms.author: jushiman
   ms.topic: unit
 durationInMinutes: 2
 content: |

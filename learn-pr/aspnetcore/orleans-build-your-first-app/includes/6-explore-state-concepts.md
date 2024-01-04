@@ -1,6 +1,6 @@
 ## Persist data using grains
 
-When working with grains, you'll often need to persist state to ensure your data is safe between application restarts, grain deactivations, and other situations. Orleans is designed for cloud native applications that are durable and fault tolerant.
+When working with grains, you'll often need to persist state to ensure your data is safe between application restarts, grain deactivations, and other situations. Orleans is designed for cloud-native applications that are durable and fault tolerant.
 
 Grains can define named data objects to persist in state in a storage provider of your choosing. Examples of storage providers include traditional SQL databases, various Azure services such as Blob Storage, and other cloud resources such as Amazon DynamoDb. These providers are made available through various NuGet packages. Orleans also provides extensibility points to add your own storage providers.
 
