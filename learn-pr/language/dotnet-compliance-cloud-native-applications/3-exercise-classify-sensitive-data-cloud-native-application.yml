@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.implement-compliance-cloud-native-applications.exercise-classify-sensitive-data-cloud-native-application
-title: Exercise - Classify sensitive data in a cloud native application
+title: Exercise - Classify sensitive data in a cloud-native application
 metadata:
-  title: Exercise - Classify sensitive data in a cloud native application
-  description: Learn how to classify sensitive data in a cloud native application.
+  title: Exercise - Classify sensitive data in a cloud-native application
+  description: Learn how to classify sensitive data in a cloud-native application.
   ms.date: 11/30/2023
   author: codemillmatt
   ms.author: masoucou
