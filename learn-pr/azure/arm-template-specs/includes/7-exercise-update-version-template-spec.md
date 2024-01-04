@@ -131,25 +131,19 @@ Publish the template spec by using this Azure CLI command in the Visual Studio C
 1. Get the template spec version's resource ID by running the following Azure CLI command:
 
    ```azurecli
-   templateSpecVersionResourceId=$(az ts show \
-     --name ToyCosmosDBAccount \
-     --version 2.0 \
-     --query id \
-     --output tsv)
-   ```
-
-1. Your template spec version has a parameter for the user principal ID. Use the following commands to get your own user account's principal ID:
-
-   ```azurecli
-   userObjectId=$(az ad signed-in-user show --query id --output tsv)
+   id=$(az ts show \
+    --name ToyCosmosDBAccount \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --version 2.0 \
+    --query "id")
    ```
 
 1. Deploy the template spec by using this Azure CLI command in the Visual Studio Code terminal:
 
    ```azurecli
    az deployment group create \
-     --template-spec $templateSpecVersionResourceId \
-     --parameters roleAssignmentPrincipalId=$userObjectId
+    --template-spec $id \
+    --parameters roleAssignmentPrincipalId="d68d19b3-d7ef-4ae9-9ee4-90695a4e417d"
    ```
 
 ::: zone-end
@@ -170,4 +164,4 @@ The deployment can take a minute or two to finish.
 
 1. Select **Deployment details** to expand it. Notice that the resources for Azure Cosmos DB role-based access control have been deployed.
 
-   :::image type="content" source="../media/7-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with the Azure Cosmos D B resources listed." border="true":::
+   :::image type="content" source="../media/7-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with the Azure Cosmos DB resources listed." border="true":::
