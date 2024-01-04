@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-public-access-azure-resources.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/28/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the main purpose of Azure Front Door?"
+    choices:
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: false
+      explanation: "Incorrect. This describes the purpose of Azure DevOps."
+    - content: "A cloud-based database service that enables the creation, management, and scaling of NoSQL databases"
+      isCorrect: false
+      explanation: "Incorrect. This describes the purpose of Azure Cosmos DB."
+    - content: "Provides fast, reliable, and secure access between users and applications' static and dynamic web content across the globe"
+      isCorrect: true
+      explanation: "Correct. Azure Front Door is Microsoft's modern cloud Content Delivery Network (CDN) that provides fast, reliable, and secure access between users and applications' static and dynamic web content across the globe."
+  - content: "What does Azure DDoS Protection do to provide tailored protection policies for each customer?"
+    choices:
+    - content: "It applies the same mitigation policies for all customers."
+      isCorrect: false
+      explanation: "Incorrect. This would not provide tailored protection policies for each customer."
+    - content: "It relies on customers to configure their own protection policies."
+      isCorrect: false
+      explanation: "Incorrect. This would not provide tailored protection policies for each customer."
+    - content: "It automatically learns per customer per Public IP traffic patterns for Layer 3 and 4."
+      isCorrect: true
+      explanation: "Correct. Azure DDoS Protection uses automatic learning of per customer per Public IP traffic patterns for Layer 3 and 4 to provide tailored protection policies for each customer."
+  - content: "A security specialist needs to ensure that Azure resources are protected against threats while maintaining high performance. Which of the following enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms?"
+    choices:
+    - content: "Azure Front Door"
+      isCorrect: false
+      explanation: "Incorrect. Azure Front Door is a global, scalable entry-point that uses the Microsoft global edge network to create fast, secure, and widely scalable web applications."
+    - content: "Azure Firewall Manager"
+      isCorrect: false
+      explanation: "Incorrect. Azure Firewall Manager is a network security management service that provides central security policy and route management for cloud-based security perimeters."
+    - content: "Azure DevOps"
+      isCorrect: true
+      explanation: "Correct. Azure DevOps enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "A company wants to ensure the security of their web applications from common exploits and vulnerabilities. Which of the following solutions can help them achieve this?"
+    choices:
+    - content: "Securing each individual web application separately"
+      isCorrect: false
+      explanation: "Incorrect. This approach can be time-consuming and may not provide centralized protection against common exploits and vulnerabilities."
+    - content: "Deploying multiple layers of security within the application code"
+      isCorrect: false
+      explanation: "Incorrect. This approach can be challenging and require rigorous maintenance, patching, and monitoring at multiple layers of the application topology."
+    - content: "Deploying a centralized Web Application Firewall (WAF)"
+      isCorrect: true
+      explanation: "Correct. A WAF provides centralized protection of web applications from common exploits and vulnerabilities, making security management simpler and giving application administrators better assurance of protection against threats and intrusions."
+  - content: "A company wants to ensure the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms. Which of the following options would enable this?"
+    choices:
+    - content: "Using a different tool that does not support automation"
+      isCorrect: false
+      explanation: "Incorrect. Using a tool that does not support automation will not enable the automation and validation of the creation and teardown of environments."
+    - content: "Using a manual process to create and teardown environments"
+      isCorrect: false
+      explanation: "Incorrect. A manual process is prone to human error and can lead to inconsistencies in the environment."
+    - content: "Using an infrastructure as code tool to automate the creation and teardown of environments"
+      isCorrect: true
+      explanation: "Correct. An infrastructure as code tool enables the automation and validation of the creation and teardown of environments, ensuring consistency and stability in the application hosting platform."

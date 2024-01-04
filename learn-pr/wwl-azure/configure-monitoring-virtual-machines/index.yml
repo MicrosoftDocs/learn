@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
-  ms.prod: learning-azure
+  ms.service: azure
 title: Configure monitoring for virtual machines
 summary: Understand how to deploy and configure Azure Monitor Agent on IaaS VMs and how to enable VM Insights and Data Collection Rules to monitor performance and application telemetry.
 abstract: |
