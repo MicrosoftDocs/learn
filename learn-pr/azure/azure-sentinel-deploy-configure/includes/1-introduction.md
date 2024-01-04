@@ -4,11 +4,11 @@ Deploy Microsoft Sentinel and connect it to data sources to provide real-time an
 Suppose you work for a midsize financial services company in London with a branch office in New York City. Your organization has the following products and services in their environment:
 
 - Microsoft 365
-- Azure Active Directory (Azure AD)
-- Azure AD Identity Protection
+- Microsoft Entra ID
+- Microsoft Entra ID Protection
 - Microsoft Defender for Cloud Apps
 - Microsoft Defender for Cloud
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 - Microsoft Purview Information Protection
 - Microsoft Intune
 

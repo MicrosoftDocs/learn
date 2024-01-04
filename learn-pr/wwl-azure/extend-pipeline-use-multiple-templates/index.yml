@@ -6,8 +6,8 @@ metadata:
   ms.date: 1/25/2023
   author: LuizMacedo
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Extend a pipeline to use multiple templates
 summary: "This module is designed to help learners understand the importance of extending a pipeline to multiple templates and how to do it using Azure DevOps. The module covers fundamental concepts and best practices for creating nested templates, rewriting the main deployment pipeline, configuring the pipeline and the application to use tokenization, removing plain text secrets, restricting agent logging, and identifying and conditionally removing script tasks."
 abstract: |

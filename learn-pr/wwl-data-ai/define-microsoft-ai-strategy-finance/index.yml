@@ -3,10 +3,10 @@ uid: learn.wwl.define-microsoft-ai-strategy-finance
 metadata:
   title: Define a Microsoft AI strategy to create business value in finance
   description: "Discover AI use cases and scenarios for FSI. Get familiar with Microsoft AI tools and services for finance. Learn from real success stories."
-  ms.date: 10/06/2023
+  ms.date: 10/09/2023
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-ai-services
 title: Define a Microsoft AI strategy to create business value in finance
 summary: This module is designed to help finance professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
@@ -18,7 +18,6 @@ prerequisites: |
   * Basic understanding of AI concepts.
   * Basic understanding of finance concepts.
 iconUrl: /training/achievements/generic-badge.svg
-hidden: true
 levels:
 - intermediate
 roles:

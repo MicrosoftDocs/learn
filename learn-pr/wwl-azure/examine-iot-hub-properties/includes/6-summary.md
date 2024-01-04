@@ -1,1 +1,0 @@
-Your team will be working on an IoT solution. The team will be responsible for ensuring that the company's business requirements are met. You have learned about the IoT Hub properties that affect scaling, downstream communication, and security. This new knowledge will help to ensure that IoT Hub is configured correctly.

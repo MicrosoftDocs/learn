@@ -6,7 +6,7 @@ As a GitHub administrator, your goal is to keep everything working smoothly for 
 
 In GitHub, each user is an organization member that you can add to a team. You can create teams in your organization with cascading access permissions and mentions to reflect your company or group's structure. Teams are useful for refining repository permissions on a more granular level and enabling communication and notification between team members.
 
-Additionally, GitHub allows you to sync your teams with identity provider (IdP) groups such as Azure Active Directory (Azure AD). When you synchronize a GitHub team with Azure AD, you can replicate changes to GitHub automatically, which reduces the need for manual updates and custom scripts. You can use Azure AD with team synchronization to manage administrative tasks such as onboarding new members, granting new permissions, and removing member access to the organization.
+Additionally, GitHub allows you to sync your teams with identity provider (IdP) groups such as Microsoft Entra ID. When you synchronize a GitHub team with Microsoft Entra ID, you can replicate changes to GitHub automatically, which reduces the need for manual updates and custom scripts. You can use Microsoft Entra ID with team synchronization to manage administrative tasks such as onboarding new members, granting new permissions, and removing member access to the organization.
 
 Members of a team with *team maintainer* or repository *admin* permissions can:
 
@@ -65,4 +65,3 @@ At the enterprise level, members of an enterprise with the *owner* permissions c
 ## Learn more
 
 Read more about [nested teams](https://docs.github.com/organizations/organizing-members-into-teams/about-teams#nested-teams)in GitHub Docs.
-

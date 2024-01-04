@@ -6,8 +6,8 @@ metadata:
   ms.date: 1/25/2023
   author: LuizMacedo
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Configure secure access to Azure Repos from pipelines
 summary: "This module is designed to help learners understand the importance of securing access to Azure Repos from pipelines and how to do it using Azure DevOps. The module covers fundamental concepts and best practices for securing access to packages, credential secrets, secrets for services, and Azure Key Vault."
 abstract: |

@@ -1,4 +1,3 @@
-
 In this module, you’ll explore the various ways that Microsoft Azure on the cloud can transform your business.
 
 Microsoft’s cloud is a global network of powerful computer datacenters. With Azure, your business can tap into these datacenters via the Internet and apply their power and reach for your business. This empowers your business to operate faster, more efficiently, and with cutting-edge security, while opening the door to exciting new opportunities and complete business transformation.

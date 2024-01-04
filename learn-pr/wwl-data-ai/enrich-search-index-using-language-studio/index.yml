@@ -2,13 +2,14 @@
 uid: learn.wwl.enrich-search-index-using-language-studio
 metadata:
   title: Enrich a search index using Language Studio
-  description: "Azure Cognitive Service for language gives you the power of Natural Language Processing (NLP) to automatically understand and analyze text. You can use that power to enhance your search solutions."
-  ms.date: 09/21/2022
+  description: "Azure AI Language gives you the power of Natural Language Processing (NLP) to automatically understand and analyze text. You can use that power to enhance your search solutions."
+  ms.date: 09/27/2023
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
+  ms.author: berryivor
+  ms.topic: module
+  ms.service: cognitive-search
 title: Enrich a search index using Language Studio
-summary: Azure Cognitive Service for language gives you the power of Natural Language Processing (NLP) to automatically understand and analyze text. You can use that power to enhance your search solutions.
+summary: Azure AI Language gives you the power of Natural Language Processing (NLP) to automatically understand and analyze text. You can use that power to enhance your search solutions.
 abstract: |
   In this module, you'll learn how to:
   - Use Language Studio to enrich Azure Cognitive Search indexes

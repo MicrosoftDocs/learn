@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-application-access-microsoft-entra-id.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/28/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A DevOps engineer is tasked with ensuring the stability and security of application hosting platforms. Which of the following enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms?"
+    choices:
+    - content: "Continuous Delivery"
+      isCorrect: false
+      explanation: "Incorrect. Continuous Delivery is a software development practice where code changes are automatically built, tested, and prepared for release to production."
+    - content: "Continuous Integration"
+      isCorrect: false
+      explanation: "Incorrect. Continuous Integration is a software development practice where developers regularly merge their code changes into a central repository, after which automated builds and tests are run."
+    - content: "Infrastructure as Code"
+      isCorrect: true
+      explanation: "Correct. Infrastructure as Code enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "A developer wants to provide permissions-based access to their web API's resources to authorized users and client apps. What is the first step they need to take?"
+    choices:
+    - content: "Configure permissions for the client application to access the API in the app registration"
+      isCorrect: false
+      explanation: "Incorrect. This step comes after registering the API with the Microsoft identity platform."
+    - content: "Create an app role in the app registration"
+      isCorrect: false
+      explanation: "Incorrect. This step comes after assigning an owner to the application."
+    - content: "Register the web API with the Microsoft identity platform"
+      isCorrect: true
+      explanation: "Correct. To provide scoped access to the resources in your web API, you first need to register the API with the Microsoft identity platform."
+  - content: "A company wants to ensure secure and stable application hosting platforms. Which of the following enables the automation and validation of the creation and teardown of environments to help deliver this?"
+    choices:
+    - content: "Providing access to all users"
+      isCorrect: false
+      explanation: "Incorrect. Providing access to all users does not ensure secure and stable application hosting platforms."
+    - content: "Limiting access to only a few users"
+      isCorrect: false
+      explanation: "Incorrect. Limiting access to only a few users does not enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+    - content: "Configuration management"
+      isCorrect: true
+      explanation: "Correct. Configuration management enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "A company wants to automate the creation and teardown of environments to deliver secure and stable application hosting platforms. Which permission type enables this?"
+    choices:
+    - content: "Delegated permissions"
+      isCorrect: false
+      explanation: "Incorrect. Delegated permissions are used to get access on behalf of a user."
+    - content: "Application permissions"
+      isCorrect: false
+      explanation: "Incorrect. Application permissions are used to get access without a user."
+    - content: "App-only permissions"
+      isCorrect: true
+      explanation: "Correct. App-only permissions enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "An organization wants to easily achieve the right access policies for their configured applications. Which Microsoft service can help them achieve this?"
+    choices:
+    - content: "Microsoft Excel"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Excel is a spreadsheet software and not a service that helps organizations achieve access policies for their configured applications."
+    - content: "Microsoft Word"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Word is a word processing software and not a service that helps organizations achieve access policies for their configured applications."
+    - content: "Microsoft Entra ID"
+      isCorrect: true
+      explanation: "Correct. Microsoft Entra ID supports extensive access management for configured applications, enabling organizations to easily achieve the right access policies ranging from automatic, attribute based assignment (ABAC) or RBAC scenarios through delegation and including administrator management. With Microsoft Entra ID, usage and assignment reporting is fully integrated, enabling administrators to easily report on assignment state, assignment errors, and even usage."

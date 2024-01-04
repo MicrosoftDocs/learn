@@ -7,8 +7,7 @@ metadata:
   ms.date: 02/07/2023
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -26,7 +25,7 @@ quiz:
     - content: "Require strong passwords for all identities."
       isCorrect: false
       explanation: "Incorrect. Although strong passwords improve security, they're not as secure multifactor authentication."
-  - content: "Which of the following additional forms of verification can be used with Microsoft Entra Multifactor Authentication?"
+  - content: "Which of the following additional forms of verification can be used with Microsoft Entra multifactor authentication?"
     choices:
     - content: "Microsoft Authenticator app, SMS, Voice call, FIDO2, and Windows Hello for Business"
       isCorrect: true

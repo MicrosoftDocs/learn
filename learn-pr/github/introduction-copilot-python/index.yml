@@ -6,10 +6,9 @@ metadata:
   ms.date: 8/23/2023
   author: bethanyjep
   ms.author: bethanycheum
-  ms.topic: interactive-tutorial
-  ms.prod: github
-title: |
-  Using GitHub Copilot with Python
+  ms.topic: module
+  ms.service: github-copilot
+title: Using GitHub Copilot with Python
 summary: "Use GitHub Copilot, an AI pair programmer that offers autocomplete-style suggestions as you code, to work with Python"
 abstract: |
   By the end of this module, you'll be able to:

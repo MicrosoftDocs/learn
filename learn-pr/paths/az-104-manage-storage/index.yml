@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/12/2022
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'AZ-104: Implement and manage storage in Azure'
 prerequisites: |
   - [Microsoft Azure Fundamentals: Describe cloud concepts](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)

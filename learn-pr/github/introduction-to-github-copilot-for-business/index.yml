@@ -1,4 +1,4 @@
-﻿### YamlMime:Module
+### YamlMime:Module
 uid: learn.github.introduction-to-github-copilot-for-business
 title: Introduction to GitHub Copilot for Business
 metadata:
@@ -7,8 +7,8 @@ metadata:
   ms.date: 09/13/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-github
+  ms.topic: module
+  ms.service: github-copilot
 summary: > 
   Learn about the difference between GitHub Copilot for Business versus GitHub Copilot for Individuals, specific use cases and customer stories for GitHub Copilot for Business, and how to enable it. 
 abstract: |

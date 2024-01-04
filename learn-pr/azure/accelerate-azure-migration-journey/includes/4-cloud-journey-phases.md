@@ -135,7 +135,7 @@ Putting the proper foundation down for moving to the cloud is critical. However,
 
 #### Security
 
-Once workloads have been moved into the cloud, Microsoft Defender for Cloud can help manage security for these applications. This protection can be provided at the network level using Azure Firewall, the identity level in Azure Active Directory, or by sending alerts of particular activities with Microsoft Sentinel.
+Once workloads have been moved into the cloud, Microsoft Defender for Cloud can help manage security for these applications. This protection can be provided at the network level using Azure Firewall, the identity level in Microsoft Entra ID, or by sending alerts of particular activities with Microsoft Sentinel.
 
 :::image type="content" source="../media/manage-security.png" alt-text="Diagram showing Microsoft Defender for Cloud features.":::
 

@@ -2,19 +2,21 @@ Sometimes, built-in roles don't grant the precise level of access you need. Cust
 
 In this unit, you'll learn about custom roles in Azure role-based access control (RBAC).
 
-## Azure Active Directory and Azure roles
+<a name='azure-active-directory-and-azure-roles'></a>
 
-Azure Active Directory (Azure AD) roles and Azure roles are often confused when you first work with Azure. Azure AD roles provide the mechanism for managing permissions to AD resources, like user accounts and passwords. Azure roles provide a wealth of capabilities for managing Azure resources like virtual machines (VMs) at a granular level.
+## Microsoft Entra and Azure roles
 
-![Diagram that shows relationship of Azure roles and Azure AD roles.](../media/2-azure-office-roles.svg)
+Microsoft Entra roles and Azure roles are often confused when you first work with Azure. Microsoft Entra roles provide the mechanism for managing permissions to Microsoft Entra resources, like user accounts and passwords. Azure roles provide a wealth of capabilities for managing Azure resources like virtual machines (VMs) at a granular level.
+
+![Diagram that shows relationship of Azure roles and Microsoft Entra roles.](../media/2-azure-office-roles.svg)
 
 The following table shows the subtle differences between how you can set up and manage the two:
 
-Azure roles | Azure AD roles
+Azure roles | Microsoft Entra roles
 | --- | --- |
-| Manage access to Azure resources like VMs, storage, networks, and more | Manage access to Azure Active Directory resources like user accounts and passwords|
+| Manage access to Azure resources like VMs, storage, networks, and more | Manage access to Microsoft Entra resources like user accounts and passwords|
 |Multiple scope levels (management group, subscription, resource group, resource) | Scope only at tenant level|
-|Role information accessible through Azure portal, Azure CLI, Azure PowerShell, Azure Resource Manager templates, REST API | Role information accessible in Azure admin portal, Microsoft 365 admin center, Microsoft Graph, Azure AD PowerShell|
+|Role information accessible through Azure portal, Azure CLI, Azure PowerShell, Azure Resource Manager templates, REST API | Role information accessible in Azure admin portal, Microsoft 365 admin center, Microsoft Graph, [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview)|
 
 For our scenario, we need a custom role to manage Azure VMs at the subscription scope, so we need to use custom roles in Azure RBAC.
 
@@ -26,10 +28,10 @@ You can assign custom roles to:
 
 Security principal | Summary
 --- | ---
-**User** | An individual who has a profile in Azure Active Directory
-**Group** | A set of users created in Azure Active Directory
+**User** | An individual who has a profile in Microsoft Entra ID
+**Group** | A set of users created in Microsoft Entra ID
 **Service principals** | A security identity used by applications or services to access specific Azure resources
-**Managed identity** | An identity in Azure Active Directory that is automatically managed by Azure
+**Managed identity** | An identity in Microsoft Entra ID that is automatically managed by Azure
 
 You can scope the assignment and related permissions to different levels within Azure. The different scopes are:
 

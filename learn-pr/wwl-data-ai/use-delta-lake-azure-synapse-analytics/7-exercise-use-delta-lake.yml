@@ -4,12 +4,12 @@ title: Exercise - Use Delta Lake in Azure Synapse Analytics
 metadata:
   title: Exercise - Use Delta Lake in Azure Synapse Analytics
   description: "Exercise - Use Delta Lake in Azure Synapse Analytics"
-  ms.date: 08/29/2023
+  ms.date: 10/11/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 40
 content: |
   [!include[](includes/7-exercise-use-delta-lake.md)]

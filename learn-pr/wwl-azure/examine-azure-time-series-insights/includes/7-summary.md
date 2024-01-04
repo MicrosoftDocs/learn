@@ -1,1 +1,0 @@
-Your team will be supporting downstream business integrations and the company's efforts to generate insights from IoT data. Understanding the benefits provided by Azure Time Series Insights and the resource configuration and integration requirements will help to ensure the team's success when implementing the service.

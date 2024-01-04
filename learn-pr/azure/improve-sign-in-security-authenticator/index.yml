@@ -3,7 +3,7 @@ uid: learn.improve-sign-in-security-authenticator
 metadata:
   moduleType: standard
   title: Improve sign-in security with Microsoft Authenticator
-  description: "Improve Azure AD sign-in security by running a registration campaign to nudge users to set up Microsoft Authenticator push notifications as their default sign-in method."
+  description: "Improve Microsoft Entra sign-in security by running a registration campaign to nudge users to set up Microsoft Authenticator push notifications as their default sign-in method."
   ms.date: 7/27/2022
   author: Justinha
   ms.author: Justinha
@@ -16,8 +16,8 @@ abstract: |
     - Create a policy to help users register Microsoft Authenticator.
     - Confirm Microsoft Authenticator is the default sign-in method for users.
 prerequisites: |
-  - Experience using the Azure AD portal.
-  - Knowledge of Azure Active Directory (Azure AD) fundamentals, including multifactor authentication (MFA).
+  - Experience using the Microsoft Entra admin center.
+  - Knowledge of Microsoft Entra fundamentals, including multifactor authentication (MFA).
 iconUrl: /training/achievements/generic-badge.svg
 levels: 
   - beginner

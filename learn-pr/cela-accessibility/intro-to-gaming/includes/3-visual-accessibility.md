@@ -14,7 +14,7 @@ Creating truly accessible experiences requires effort beyond the implementation 
 
 In the following video, learn how to identify common visual elements that can present inaccessible experiences to players.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPhu1]
+> [!VIDEO 5d95dab6-7df1-49c3-9b26-b072d8b18a52]
 
 ## Vision and disability
 

@@ -1,6 +1,6 @@
 In an e-commerce system, it's important to avoid exposing the keys that the warehouse web app uses to connect to the SQL Server database. Failure here could lead to the database being compromised and its valuable information being corrupted or amended in an unauthorized manner.
 
-In this unit, you store the SQL Server connection string in your Azure key vault. The key vault is a secure repository that uses Azure Active Directory (Azure AD) to authenticate and authorize users. To make the connection string available only to the web app, you specify that a client attempting to retrieve the string must be running with the service principal of the web app. Finally, you deploy the warehouse web app to the Azure App Service web app that you created earlier, and verify that it still functions correctly.
+In this unit, you store the SQL Server connection string in your Azure key vault. The key vault is a secure repository that uses Microsoft Entra ID to authenticate and authorize users. To make the connection string available only to the web app, you specify that a client attempting to retrieve the string must be running with the service principal of the web app. Finally, you deploy the warehouse web app to the Azure App Service web app that you created earlier, and verify that it still functions correctly.
 
 ## Create an Azure key vault and store the connection string
 
@@ -63,7 +63,7 @@ In this unit, you store the SQL Server connection string in your Azure key vault
     > [!NOTE]
     > A secure string is a string object that can be held only once in memory. It can't be copied elsewhere in memory. This feature helps to reduce the vulnerability of the information in the string to attacks that attempt to examine and copy blocks of memory, looking for passwords and other sensitive information.
 
-1. Find the object ID of your account in Azure AD.
+1. Find the object ID of your account in Microsoft Entra ID.
 
     ```PowerShell
     $objectId = az ad signed-in-user show `
@@ -222,4 +222,3 @@ In this unit, you store the SQL Server connection string in your Azure key vault
 
     > [!div class="mx-imgBorder"]
     > ![Image of the web app running by using Azure App Service.](..\media\4-web-app.png)
-

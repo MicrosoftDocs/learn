@@ -4,13 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/18/2023
+  ms.date: 11/02/2023
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -36,9 +33,9 @@ quiz:
     - content: "Azure Monitor alerts"
       isCorrect: false
       explanation: "Incorrect. Azure alerts can be used to send notifications about activity log events, but they don't log user sign-in activity."
-    - content: "Azure Active Directory audit logs"
+    - content: "Microsoft Entra audit logs"
       isCorrect: true
-      explanation: "Correct. Azure AD audit logs contain the history of sign-in activity. The logs also have an audit trail of tenant changes."
+      explanation: "Correct. Microsoft Entra audit logs contain the history of sign-in activity. The logs also have an audit trail of tenant changes."
   - content: "What monitoring tool should be used to measure user experience and analyze user behavior for all external facing applications?"
     choices:
     - content: "Azure Application Insights"

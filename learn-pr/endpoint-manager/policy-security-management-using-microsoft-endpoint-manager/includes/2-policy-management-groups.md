@@ -3,7 +3,7 @@ You can manage assignments of devices, apps, and policies based on groups of use
 You can add the following types of groups:
 
 - **Assigned groups**: Manually add users or devices into a static group.
-- **Dynamic groups** (Requires Azure AD Premium): Automatically add users or devices to user groups or device groups based on an expression you create.
+- **Dynamic groups** (Requires Microsoft Entra ID P1 or P2): Automatically add users or devices to user groups or device groups based on an expression you create.
 
 ## Devices
 
@@ -66,7 +66,7 @@ Profile settings applied to user groups always go with the user, and go with the
 For example:
 
 - You want to put a Help Desk icon for all users on all their devices. In this scenario, put these users in a user group and assign your Help Desk icon profile to this user group.
-- A user receives a new organization-owned device. The user signs in to the device with their domain account. The device is automatically registered in Azure AD, and automatically managed by Intune. This profile is a good scenario to assign to a user group.
+- A user receives a new organization-owned device. The user signs in to the device with their domain account. The device is automatically registered in Microsoft Entra ID, and automatically managed by Intune. This profile is a good scenario to assign to a user group.
 - Whenever a user signs in to a device, you want to control features in apps, such as OneDrive or Office. In this scenario, assign your OneDrive or Office profile settings to a user group.
 
   For example, you want to block untrusted ActiveX controls in your Office apps. You can create an Administrative Template in Intune, configure this setting, and assign this profile to a user group.

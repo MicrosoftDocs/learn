@@ -8,8 +8,7 @@ metadata:
   ms.date: 2/14/2022
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/3-enable-github-advanced-security.md)]

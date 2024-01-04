@@ -15,7 +15,7 @@ As the Enterprise Administrator, you're responsible for the authorization of use
 You need to configure SAML SSO for a GitHub organization with the IdP you're using. If you have specific questions on how to implement SAML SSO with your chosen IdP, you can find details in the documentation for each supported IdP. Below is a list of the SAML IdPs that GitHub currently supports:
 
 - Active Directory Federation Services (AD FS)
-- Azure Active Directory (Azure AD)
+- Microsoft Entra ID
 - Okta
 - OneLogin
 - PingOne

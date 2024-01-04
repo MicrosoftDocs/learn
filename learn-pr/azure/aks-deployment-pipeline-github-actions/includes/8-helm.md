@@ -1,8 +1,8 @@
-You have successfully built and pushed both your staging and production images to your Container Registry instance. It's time to automate all the steps and make the machine work for you.
+You've successfully built and pushed both your staging and production images to your Container Registry instance. It's time to automate all the steps and make the machine work for you.
 
 But, there's a problem. Your workloads aren't generic enough, so you can't deploy them automatically. Instead, you must manually change the files every time. 
 
-As a solution, you'll create and use a Helm chart.
+As a solution, you use a Helm chart to manage your builds.
 
 ## Helm charts
 
@@ -25,7 +25,7 @@ The following table describes each file and directory that's included in a Kuber
 |templates     |Directory         |Contains all manifest files.         |
 |values.yaml     |File         |Contains all default values for Helm templates.         |
 
-Another feature that makes Helm stand out as a tool is the feature that you'll need the most for this exercise—the ability to create and manage templates.
+Another feature that makes Helm stand out as a tool is the ability to create and manage templates to perform automated deployments.
 
 ## Helm templates
 
@@ -62,15 +62,15 @@ spec:
               name: http
 ```
 
-The `!IMAGE!` placeholder is where you put your repository and image name. In a manual replacement, you'd do something like this example:
+The `!IMAGE!` placeholder is where you put your repository and image name. In a manual replacement, you'd run this command:
 
 ```bash
 $ sed 's+!IMAGE!+'"$ACR_NAME"'/contoso-website+g' kubernetes/deployment.yaml
 ```
 
-The code replaces `!IMAGE!` in the file with the name of your Container Registry instance and the name of your image. Then, it prints out the result. You can pipe this command to `kubectl apply -f -` and create the workloads.
+The code replaces `!IMAGE!` in the file with the name of your Container Registry instance and the name of your image. Then, it prints the result. To run it manually, pipe this command to `kubectl apply -f -` and create the workloads.
 
-However, this solution isn't elegant or efficient. Helm comes with native templating that allows you to replace `!IMAGE!` by using `{{.Values.containerImage}}`:
+However, this manual solution isn't elegant or efficient. Helm adds native templating that allows you to replace `!IMAGE!` by using `{{.Values.containerImage}}` instead:
 
 ```yaml
 apiVersion: apps/v1
@@ -101,13 +101,13 @@ spec:
               name: http
 ```
 
-Then, you just need to run the Helm command to install the workload and pass this argument:
+Then, you run helm install to point to your image and pass your charts folder:
 
 ```bash
 $ helm install contoso-website ./chart-location \
  --set containerImage="$ACR_NAME/contoso-website"
 ```
 
-In addition to this simple feature, Helm offers template functions. You can use template functions for more complex logic, for example, to include default and required values.
+In addition to this simple feature, Helm offers template functions for more complex logic. For example, to include default and required values into your environment.
 
-To make your CI pipeline more efficient, let's build the Helm chart for the company's website.
+To make your CI pipeline more efficient, let's build a Helm chart for Contoso.

@@ -21,7 +21,7 @@ This may not seem useful at first, however it's useful in three situations:
 
 ## Prepare your coding environment
 
-This module includes hands-on activities that guide you through the process of building and running sample code. You are encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities will help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
+This module includes exercises that guide you through the process of building and running sample code. You are encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities will help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
 
 1. Open Visual Studio Code.
 

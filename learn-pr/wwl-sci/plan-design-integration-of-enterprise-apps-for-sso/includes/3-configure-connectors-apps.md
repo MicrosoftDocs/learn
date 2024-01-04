@@ -9,10 +9,10 @@ Defender for Cloud Apps supports multiple instances of the same connected app. F
 Defender for Cloud Apps is deployed with system admin privileges to allow full access to all objects in your environment. The App Connector flow is as follows:
 
 1.  Defender for Cloud Apps scans and saves authentication permissions.
-2.  Defender for Cloud Apps requests the user list. The first time the request is done, it may take some time until the scan completes.
+2.  Defender for Cloud Apps requests the user list. The first time the request is done, it might take some time until the scan completes.
 3.  After completion of the user request, Defender for Cloud Apps periodically scans users, groups, activities, and files. All activities will be available after the first full scan.
 
-Connections may take some time depending on the size of the tenant, the number of users, and the size and number of files that need to be scanned. Depending on the app to which you're connecting, API connection enables the following items:
+Connections might take some time depending on the size of the tenant, the number of users, and the size and number of files that need to be scanned. Depending on the app to which you're connecting, API connection enables the following items:
 
  -  **Account information** \- Visibility into users, accounts, profile information, status (suspended, active, disabled) groups, and privileges.
  -  **Audit trail** \- Visibility into user activities, admin activities, sign-in activities.

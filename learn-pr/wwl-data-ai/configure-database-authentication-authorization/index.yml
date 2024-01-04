@@ -8,7 +8,7 @@ metadata:
   ms.author: jupadrao
   ms.topic: interactive-tutorial
 title: Configure database authentication and authorization
-summary: Contrast authentication using Azure Active Directory, Windows Active Directory, and SQL Server authentication. Implement various security principals and configure permissions.
+summary: Contrast authentication using Microsoft Entra ID, Windows Active Directory, and SQL Server authentication. Implement various security principals and configure permissions.
 abstract: |
   After completing this module, you will be able to:
   - Learn about authentication options for Azure SQL Database

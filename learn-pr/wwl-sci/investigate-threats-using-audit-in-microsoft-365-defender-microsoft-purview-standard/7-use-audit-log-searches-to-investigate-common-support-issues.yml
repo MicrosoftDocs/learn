@@ -7,8 +7,7 @@ metadata:
   ms.date: 3/20/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/7-use-audit-log-searches-to-investigate-common-support-issues.md)]
@@ -17,7 +16,7 @@ quiz:
   questions:
   - content: "As the Enterprise Admin for Lucerne Publishing, Patti Fernandez noticed that mailbox audit events for some users weren't found in audit log searches. This situation occurred when Lucerne's compliance team used either the Microsoft Purview compliance portal or the Office 365 Management Activity API to run the search. What was the probable cause of this situation?"
     choices:
-    - content: "The missing events were administrator activity for Azure AD-related events"
+    - content: "The missing events were administrator activity for Microsoft Entra ID-related events"
       isCorrect: false
       explanation: "Incorrect. These events still show up in the search results; however, the IP address field displays a null value."
     - content: "The compliance team should have used the Search-UnifiedAuditLog cmdlet to run the search"

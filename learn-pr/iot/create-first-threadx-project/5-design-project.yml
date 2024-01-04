@@ -8,8 +8,7 @@ metadata:
   author: timlt
   ms.author: timlt
   manager: lizross
-  ms.topic: interactive-tutorial
-  ms.service: rtos
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/5-design-project.md)]

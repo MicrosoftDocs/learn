@@ -29,7 +29,7 @@ The following tables compare the storage solutions Azure Storage offers for Azur
 | Access                             | Cloud, on-premises and hybrid (Azure file sync)                    | Cloud, on-premises (via ExpressRoute)                              | Cloud, on-premises                                                             |
 | Backup                             | Azure backup snapshot integration                                  | Azure NetApp Files snapshots                                       | Azure backup snapshot integration                                              |
 | Security and compliance            | All Azure supported certificates                                   | ISO completed                                                      | All Azure supported certificates                                               |
-| Azure Active Directory integration | Native Active Directory and Azure Active Directory Domain Services | Azure Active Directory Domain Services and Native Active Directory | Native Active Directory or Azure Active Directory Domain Services support only |
+| Microsoft Entra integration | Native Active Directory and Microsoft Entra Domain Services | Microsoft Entra Domain Services and Native Active Directory | Native Active Directory or Microsoft Entra Domain Services support only |
 
 ## Azure Files tiers
 

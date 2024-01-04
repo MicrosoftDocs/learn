@@ -1,7 +1,5 @@
-
-
 > [!NOTE]
-> *Azure Monitoring Extension*, *Enhanced Monitoring*, and *Azure Extension for SAP* describe one and the same item. It describes a VM extension that needs to be deployed by you to provide some basic data about the Azure infrastructure to the SAP Host Agent. SAP Notes might refer to it as *Monitoring Extension* or *Enhanced monitoring*. In Azure, we are referring to it as *Azure Extension for SAP.*
+> *Azure Monitoring Extension*, *Enhanced Monitoring*, and *Azure Extension for SAP* describe one and the same item. It describes a VM extension that needs to be deployed by you to provide some basic data about the Azure infrastructure to the SAP Host Agent. SAP Notes might refer to it as *Monitoring Extension* or *Enhanced monitoring*. In Azure, we're referring to it as *Azure Extension for SAP.*
 
 When you've deployed the VM, the Azure VM Agent is automatically installed within the guest OS. The agent is required in order to install the Azure Extension for SAP, which is available in the Azure Extension Repository. Installation of the extension can be performed by using PowerShell or Azure CLI.
 

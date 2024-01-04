@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/25/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 title: Exercise - Hunt for threats by using Microsoft Sentinel
 durationInMinutes: 20
 content: |

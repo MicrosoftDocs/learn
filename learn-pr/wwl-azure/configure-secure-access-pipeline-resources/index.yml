@@ -6,8 +6,8 @@ metadata:
   ms.date: 1/25/2023
   author: LuizMacedo
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Configure secure access to pipeline resources
 summary: "This module is designed to help learners understand the importance of pipeline security and how to secure pipeline resources using Azure DevOps. The module covers fundamental concepts and best practices for secure agent pools, secret variables, files and storage, service connections, environments, and repositories."
 abstract: |

@@ -7,24 +7,23 @@ metadata:
   ms.date: 01/05/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "You want to enable integration with Azure Active Directory, what option should you select when you create an HDInsight cluster?"
+  - content: "You want to enable integration with Microsoft Entra ID, what option should you select when you create an HDInsight cluster?"
     choices:
     - content: "You should define a cluster login and password on the basic tab of the Cluster creation screen"
       isCorrect: false
-      explanation: "Defining a cluster or SSH login and password on the basic tab of the Cluster creation screen does not enable integration with Azure Active Directory."
+      explanation: "Defining a cluster or SSH login and password on the basic tab of the Cluster creation screen does not enable integration with Microsoft Entra ID."
     - content: "You should enable Enterprise security package on the Security and network tab of the Cluster creation screen"
       isCorrect: true
-      explanation: "Enabling Enterprise Security Package on the Security and network tab of the Cluster creation screen does enable integration with Azure Active Directory."
+      explanation: "Enabling Enterprise Security Package on the Security and network tab of the Cluster creation screen does enable integration with Microsoft Entra ID."
     - content: "You should define a SSH login and password on the basic tab of the Cluster creation screen"
       isCorrect: false
-      explanation: "Defining a cluster or SSH login and password on the basic tab of the Cluster creation screen does not enable integration with Azure Active Directory."
+      explanation: "Defining a cluster or SSH login and password on the basic tab of the Cluster creation screen does not enable integration with Microsoft Entra ID."
   - content: "What open source software can you use to monitor an HDInsight cluster?"
     choices:
     - content: "Apache Hive"

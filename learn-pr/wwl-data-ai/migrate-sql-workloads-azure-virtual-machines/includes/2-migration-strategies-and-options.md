@@ -61,7 +61,7 @@ You can save time by using the AKV integration feature. When this feature is ena
 
 ### Virtual machine sizing
 
-To get started, you can choose a SQL Server virtual machine image with your required version, edition, and operating system. SQL Server 2008 R2 SP3 is the earliest supported version, and you can configure the number of CPUs and memory to the size that is appropriate for your workloads.
+To get started, you can choose a SQL Server virtual machine image with your required version, edition, and operating system. Also, you can configure the number of CPUs and memory to the size that is appropriate for your workloads.
 
 Many of the database performance tuning options you use to ensure your SQL Server performs well for your on-premises workloads still apply to SQL Server running on an Azure VM. There are other considerations that you need to be mindful of including the size of VM and the configuration of the disks. Use the following checklist as a guide to ensure you have the optimal performance set up for a SQL Server running on Azure Virtual Machine.
 

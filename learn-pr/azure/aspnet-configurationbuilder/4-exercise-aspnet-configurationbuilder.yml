@@ -8,10 +8,9 @@ metadata:
   author: coderandhiker
   ms.author: chrisrt
   ms.manager: markl
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurepowershell
-  ms.prod: learning-azure
 durationInMinutes: 10
 interactive: powershell
 azureSandbox: true

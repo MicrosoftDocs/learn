@@ -4,11 +4,10 @@ title: Use Azure Document Intelligence models
 metadata:
   title: Use Azure Document Intelligence models
   description: "Use Azure Document Intelligence models"
-  ms.date: 05/17/2022
+  ms.date: 10/18/2023
   author: wwlpublish
-  ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 4
