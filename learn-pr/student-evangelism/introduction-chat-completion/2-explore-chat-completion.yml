@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.chat-completions.explore-chat-completion
+title: "Explore chat completion"
+metadata:
+  title: "Explore chat completion"
+  description: Learn about chat completions and how they work.
+  ms.date: 12/11/2023
+  author: softchris
+  ms.author: chnoring
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-explore-chat-completion.md)]

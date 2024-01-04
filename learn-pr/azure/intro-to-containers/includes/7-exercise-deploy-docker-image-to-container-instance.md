@@ -41,7 +41,7 @@ In this exercise, you'll learn how to rebuild the image for the web app and uplo
 1. Make a note of the **Registry name**, **Login server**, **Username**, and **passwords** for your container registry.
 
     > [!NOTE]
-    > In this exercise, we enable the admin account access so that we can upload images and test the registry. In a production environment, it's important to disable the **Admin user** account access and use Azure Active Directory Identity Protection as soon as you're satisfied that the registry is operating as expected.
+    > In this exercise, we enable the admin account access so that we can upload images and test the registry. In a production environment, it's important to disable the **Admin user** account access and use Microsoft Entra ID Protection as soon as you're satisfied that the registry is operating as expected.
 
     :::image type="content" source="../media/7-access-keys.png" alt-text="Screenshot of the Access keys details.":::
 
@@ -74,7 +74,7 @@ In this exercise, you'll learn how to rebuild the image for the web app and uplo
     ```
 
     >[!NOTE]
-    >You might receive an error response from a daemon that your application is not registered with AAD (Azure Active Directory). As noted earlier in this exercise, you've enabled **Admin user** access key to test our deployment.
+    >You might receive an error response from a daemon that your application is not registered with Microsoft Entra ID. As noted earlier in this exercise, you've enabled **Admin user** access key to test our deployment.
 
 1. Enter the following command, replacing `<registry-name>` with your own registry name to upload the image to your registry in Azure Container Registry:
 

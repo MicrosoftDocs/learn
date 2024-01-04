@@ -8,7 +8,7 @@ At your toy company, you've created lots of reusable templates, including:
 
 | Template name | Description |
 |-|-|
-| Storage account |  Deploys a storage account and enforces Azure Active Directory (Azure AD) authentication. |
+| Storage account |  Deploys a storage account and enforces Microsoft Entra authentication. |
 | Cosmos DB account | Deploys an Azure Cosmos DB account with continuous backup enabled. |
 | Virtual network | Deploys a virtual network that has the right configuration to peer with the main hub network. |
 | Product launch website | Deploys an Azure App Service plan, app, and storage account for websites that feature product launches of new toys. |

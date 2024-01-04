@@ -1,6 +1,6 @@
 You can use a Kusto query to explore datasets and gain insights. Recall that you have an unfamiliar meteorological dataset and want to explore what you can learn from this data. 
 
-Here, you'll look at the structure of the data to understand what kinds of questions you can ask about these storm events.
+Here, you'll look at the data's structure to understand what kinds of questions you can ask about these storm events.
 
 ## Write your first query
 
@@ -16,13 +16,13 @@ The `take` operator is perfect for this task, because it returns a specific numb
     StormEvents
     | take 5
     ```
-    
+
 1. Paste the query into the query editor that you set up earlier.
 1. Notice that the query begins with a reference to the data table, **StormEvents**. This data is piped into the first and only operator, which then selects five arbitrary rows.
 
 1. Run the query by either selecting the **Run** button above the query window or selecting **Shift** + **Enter** on the keyboard.
 
-1. Check that your results are similar to the following example. The actual data in the rows might differ because the rows are selected arbitrarily.
+1. Check that your results are similar to the following example. The actual data in the rows might differ, because the rows are selected arbitrarily.
 
     :::image type="content" source="../media/3-take-5.png" alt-text="Screenshot of query output with five arbitrary rows.":::
 

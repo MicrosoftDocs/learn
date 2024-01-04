@@ -24,4 +24,4 @@ For additional information about Microsoft Intune, see the following resources:
 - [Microsoft Intune documentation](/mem/?azure-portal=true)
 - [Conditional access with Intune](/mem/intune/protect/conditional-access)
 - [Conditional Access with co-management](/mem/configmgr/comanage/quickstart-conditional-access)
-- [Azure AD Conditional Access documentation](/azure/active-directory/conditional-access/)
+- [Microsoft Entra Conditional Access documentation](/azure/active-directory/conditional-access/)

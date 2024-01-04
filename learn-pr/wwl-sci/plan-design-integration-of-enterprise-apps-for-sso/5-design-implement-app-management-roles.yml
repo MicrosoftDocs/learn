@@ -4,13 +4,11 @@ title: Design and implement app management roles
 metadata:
   title: Design and implement app management roles
   description: "Design and implement app management roles"
-  ms.date: 05/15/2023
+  ms.date: 10/26/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 8
+  ms.topic: unit
+  ms.prod: identity-and-access
+durationInMinutes: 7
 content: |
   [!include[](includes/5-design-implement-app-management-roles.md)]

@@ -14,5 +14,5 @@ You learned how to:
 - [Microsoft-hosted agents.](https://learn.microsoft.com/azure/devops/pipelines/agents/hosted/)
 - [Create and manage agent pools.](https://learn.microsoft.com/azure/devops/pipelines/agents/pools-queues/)
 - [Manage service connections.](https://learn.microsoft.com/azure/devops/pipelines/library/service-endpoints/)
-- [Use Azure Active Directory service principals & managed identities.](https://learn.microsoft.com/azure/devops/integrate/get-started/authentication/service-principal-managed-identity/)
+- [Use Microsoft Entra service principals & managed identities.](https://learn.microsoft.com/azure/devops/integrate/get-started/authentication/service-principal-managed-identity/)
 - [Connect to Microsoft Azure.](https://learn.microsoft.com/azure/devops/pipelines/library/connect-to-azure/)

@@ -2,7 +2,7 @@ You can use the SFTP protocol to access, transfer, and manage files on remote sy
 
 ### SFTP support for Azure Blob Storage
 
-The SFTP protocol transfers data using an SSH connection. For authentication, you can use public-key authentication with certificates, or Azure-generated passwords.
+The SFTP protocol transfers data using an SSH connection. For authentication, you can use public-key authentication with certificates or Azure-generated passwords.
 
 Blob Storage supports the SFTP protocol on storage accounts enabled with a hierarchical namespace, such as a Data Lake Storage Gen2 account. You can use SFTP clients such as OpenSSH or PuTTY to connect securely from anywhere and to interact with Azure Blob Storage account as a file system.
 
@@ -12,12 +12,12 @@ Blob Storage supports the SFTP protocol on storage accounts enabled with a hiera
 With an SFTP-enabled storage account, you can create local users and grant them access to multiple root containers. You can specify Read, Write, Create, List, and Delete permissions for each container. The SFTP clients use these local users for authentication purposes. You can also configure a user's home directory so the SFTP client can connect to that directory.
 
 > [!NOTE]
-> SFTP clients can't use Azure Active Directory (Azure AD) authentication or Shared Access Signature (SAS).
+> SFTP clients can't use Microsoft Entra authentication or Shared Access Signature (SAS).
 
 Use the following procedure to enable support for SFTP and create local users and then configure their container permissions:
 
 1. In the Azure portal, navigate to your storage account (you can also enable SFTP in the account-creation process).
-2. Under **Settings**, select **SFTP**, then select **enable SFTP.**
+2. Under **Settings**, select **SFTP**, then select **Enable SFTP.**
 
     :::image type="content" source="../media/5-azure-blob-storage-sftp-settings.png" alt-text="Screenshot displaying the SFTP settings. The Enable SFTP option is selected.":::
 
@@ -26,9 +26,9 @@ Use the following procedure to enable support for SFTP and create local users an
 
     :::image type="content" source="../media/5-azure-blob-storage-add-local-user.png" alt-text="Screenshot of the Add local user dialog. The Secure with a password and Secure with SSH public key options are selected.":::
 
-5. Select **Next** to open the **Container permissions** tab of the configuration pane.
+5. Select **Next** to open the **Container permissions** tab.
 
-6. On the **Container permissions** tab, select the containers that you want to make available to this local user. Then, select the types of operations that you want to enable this local user to perform.
+6. On the **Container permissions** tab, select the containers that you want to make available to this local user, then select the types of operations that you want to enable this local user to perform.
 
 7. In the **Home directory** edit box, enter the name of the container or the directory path (including the container name) that will be the default location associated with this local user.
 

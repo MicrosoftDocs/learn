@@ -7,8 +7,7 @@ metadata:
   ms.date: 2/8/2023
   author: kjo-msft
   ms.author: karinjohnson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  ms.topic: unit
 durationInMinutes: 10
 content: |
     [!include[](includes/3-html-basics.md)]

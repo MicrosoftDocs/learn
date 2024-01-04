@@ -11,8 +11,7 @@ metadata:
     - team=nextgen
     - devx-track-dotnet
   ms.date: 07/19/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-visual-studio
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

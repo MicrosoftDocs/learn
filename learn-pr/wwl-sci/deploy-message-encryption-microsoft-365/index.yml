@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/28/2022
   author: wwlpublish
   ms.author: riswinto
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: purview
 title: Deploy Microsoft Purview Message Encryption
 summary: Learn about the different encryption methods Microsoft Purview provides to protect messages.

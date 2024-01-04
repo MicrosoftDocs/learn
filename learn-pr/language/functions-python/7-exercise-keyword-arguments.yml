@@ -11,8 +11,7 @@ metadata:
   ms.custom:
     - team=nextgen
     - devx-track-python
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 sandbox: true
 notebook: notebooks/7-exercise-keyword-arguments.ipynb

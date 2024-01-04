@@ -7,8 +7,7 @@ metadata:
   ms.date: 03/15/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Automate administrative tasks by using PowerShell
 summary: PowerShell can be used to automate tasks such as user management, CI/CD, managing cloud resources and much more. You'll learn to run commands, how to learn more about PowerShell and additionally to create and run script files. 
 prerequisites: |

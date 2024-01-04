@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-manage-identities.exercise-change-group-license-assignments
+title: Exercise - change group license assignments
+metadata:
+  title: Exercise - change group license assignments
+  description: "Exercise - change group license assignments"
+  ms.date: 10/20/2023
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-exercise-change-group-license-assignments.md)]

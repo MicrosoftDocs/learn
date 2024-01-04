@@ -33,7 +33,7 @@ HDInsight provides several benefits for organizations that are working with big 
 
   - Azure Virtual Network
   - Azure encryption technologies
-  - Azure Active Directory
+  - Microsoft Entra ID
 
 - **Compliant**: Meets popular industry and government compliance standards.
 - **Monitored**: Integrates with Azure Monitor logs to provide a single interface. Monitor all clusters by using the single interface.

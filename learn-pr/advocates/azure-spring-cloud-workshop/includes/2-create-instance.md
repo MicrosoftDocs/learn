@@ -1,4 +1,7 @@
-An Azure Spring Apps cluster can be created either using [the Azure portal](https://portal.azure.com/?WT.mc_id=azurespringcloud-mslearn-judubois) or [the Azure CLI](/cli/azure/install-azure-cli?WT.mc_id=azurespringcloud-mslearn-judubois). In this first module, we'll configure the necessary tools, and create our first cluster.
+An Azure Spring Apps cluster can be created by using either [the Azure portal](https://portal.azure.com/?WT.mc_id=azurespringcloud-mslearn-judubois) or [the Azure CLI](/cli/azure/install-azure-cli?WT.mc_id=azurespringcloud-mslearn-judubois). In this first module, we'll configure the necessary tools, and create our first cluster.
+
+> [!IMPORTANT]
+> To avoid unnecessary charges in your Azure subscription, remember to deprovision your Azure resources when you finish this module.
 
 ## Set up the Azure CLI
 
@@ -15,7 +18,7 @@ az login # Sign into an azure account
 az account show # See the currently signed-in account.
 ```
 
-Ensure your default subscription is the one you intend to use for this lab, and if not, set the subscription using:
+Ensure that your default subscription is the one you intend to use for this lab. If not, set the subscription using:
 
 ```bash
 az account set --subscription <SUBSCRIPTION_ID>
@@ -31,17 +34,17 @@ az extension add -n spring -y
 
 ## Create an Azure Spring Apps instance
 
-In this section, we'll create our Azure Spring Apps instance using Azure CLI. It's possible to do exactly the same configuration using the Azure portal.
+In this section, we create our Azure Spring Apps instance using Azure CLI. It's possible to do exactly the same configuration using the Azure portal.
 
-First, you'll need to come up with a name for your Azure Spring Apps instance.
+First, you need to come up with a name for your Azure Spring Apps instance.
 
 - __The name must be unique among all Azure Spring Apps instances across all of Azure__. Consider using your username as part of the name.
-- The name can contain only lowercase letters, numbers and hyphens. The first character must be a letter. The last character must be a letter or number. The value must be between 4 and 32 characters long.
+- The name can contain only lowercase letters, numbers, and hyphens. The first character must be a letter. The last character must be a letter or number. The value must be between 4 and 32 characters long.
 
 To limit typing, set the variable `RESOURCE_GROUP_NAME` to the name of the resource group created in the previous section. Set the variable `SPRING_CLOUD_NAME` to the name of the Azure Spring Apps instance to be created:
 
 > [!NOTE]
-> Be sure to substitute your own values for `RESOURCE_GROUP_NAME` and `SPRING_CLOUD_NAME` as described above. __`SPRING_CLOUD_NAME` must be globally unique.__
+> Be sure to substitute your own values for `RESOURCE_GROUP_NAME` and `SPRING_CLOUD_NAME` as described above. `SPRING_CLOUD_NAME` __must be globally unique.__
 
 ```bash
 RESOURCE_GROUP_NAME=spring-cloud-workshop
@@ -67,7 +70,7 @@ az spring create \
 
 This command takes time to complete, you can continue reading while it completes.
 
-For the remainder of this workshop, we'll be running Azure CLI commands referencing the same resource group and Azure Spring Apps instance. So let's set them as defaults, so we don't have to specify them again:
+For the remainder of this workshop, we'll run Azure CLI commands referencing the same resource group and Azure Spring Apps instance. So let's set them as defaults, so we don't have to specify them again:
 
 ```bash
 az configure --defaults group=${RESOURCE_GROUP_NAME}

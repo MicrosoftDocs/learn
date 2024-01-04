@@ -7,8 +7,7 @@ metadata:
   ms.date: 02/10/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -17,11 +16,11 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is used with Azure AD Connect to configure a hybrid environment using an on-premises Active Directory Federation Services (AD FS) infrastructure?"
+  - content: "What is used with Microsoft Entra Connect to configure a hybrid environment using an on-premises Active Directory Federation Services (AD FS) infrastructure?"
     choices:
     - content: "Federation integration"
       isCorrect: true
-      explanation: "That's correct. Federation integration is an option in Azure AD Connect used to configure a hybrid environment using on-premises Active Directory Federation Services (AD FS). It also provides AD FS management capabilities such as certificate renewal and additional AD FS server deployments."
+      explanation: "That's correct. Federation integration is an option in Microsoft Entra Connect used to configure a hybrid environment using on-premises Active Directory Federation Services (AD FS). It also provides AD FS management capabilities such as certificate renewal and additional AD FS server deployments."
     - content: "Azure Synchronization Manager"
       isCorrect: false
       explanation: "That's incorrect. The Synchronization Service Manager is used to configure more advanced aspects of the sync engine and to see the operational aspects of the service"

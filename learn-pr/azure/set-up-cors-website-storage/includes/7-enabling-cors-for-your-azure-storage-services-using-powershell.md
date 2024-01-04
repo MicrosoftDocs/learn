@@ -1,4 +1,4 @@
-Using the REST API or the Azure CLI to configure CORS for Azure storage are two ways to configure CORS for your storage resources. However, in the utilities company scenario, one of your IT teams has extensive experience using PowerShell to manage their assets. With that in mind, you decide to examine how to enable CORS using PowerShell.
+Using the REST API or the Azure CLI to configure CORS for Azure storage are two ways to configure CORS for your storage resources. However, in the utilities-company scenario, one of your IT teams has extensive experience using PowerShell to manage their assets. With that in mind, you decide to examine how to enable CORS using PowerShell.
 
 In this unit, you'll learn how to use PowerShell to enable CORS for Azure storage.
 
@@ -21,15 +21,15 @@ Set-AzureStorageCORSRule
    [<CommonParameters>]
 ```
 
-The important parameters for this command are listed in :
+The important parameters for this command are listed in the following table:
 
 | Parameter | Description |
 |---|---|
 | `-Context` | This parameter specifies an Azure Storage context. To obtain a context, use the `New-AzureStorageContext` cmdlet. |
-| `-CorsRules` | This parameter specifies  an array of CORS rules to apply to the storage account. You can retrieve the existing rules using the `Get-AzureStorageCORSRule` cmdlet. |
+| `-CorsRules` | This parameter specifies an array of CORS rules to apply to the storage account. You can retrieve the existing rules using the `Get-AzureStorageCORSRule` cmdlet. |
 | `-ServiceType` | This parameter specifies the Azure Storage service type for which this cmdlet assigns rules. The acceptable values for this parameter are: <ul><li>Blob</li><li>Table</li><li>Queue</li><li>File</li></ul> |
 
-The example below enables CORS for the blob storage account specified by *&lt;account-name&gt;*. The CORS rule permits HTTP GET and PUT requests from the `www.fabrikam.com` and `www.contoso.com` domains.
+The following example enables CORS for the blob storage account specified by *&lt;account-name&gt;*. The CORS rule permits HTTP GET and PUT requests from the `www.fabrikam.com` and `www.contoso.com` domains.
 
 ```PowerShell
 $context = New-AzureStorageContext -StorageAccountName <account-name> -StorageAccountKey <key>
@@ -68,7 +68,7 @@ Remove-AzureStorageCORSRule
    [<CommonParameters>]
 ```
 
-The important parameters for this command are listed in :
+The important parameters for this command are listed in the following table:
 
 | Parameter | Description |
 |---|---|

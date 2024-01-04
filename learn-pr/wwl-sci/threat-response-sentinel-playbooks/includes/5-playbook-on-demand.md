@@ -15,7 +15,7 @@ Consider the scenario where suspicious users are prevented from accessing corpor
 
 
 
-You can use a playbook that can automatically dismiss this risky user property in Azure AD.
+You can use a playbook that can automatically dismiss this risky user property in Microsoft Entra ID.
 
 
 

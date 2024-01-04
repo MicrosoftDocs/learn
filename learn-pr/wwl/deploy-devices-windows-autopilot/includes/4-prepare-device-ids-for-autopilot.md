@@ -66,7 +66,7 @@ To complete this process using Intune, use the following procedure:
 
 ### Import a device hash directly into Intune
 
-In certain circumstances, it may be beneficial to directly import the device hash into Microsoft Intune rather than generating the file as shown above. This is often useful in testing scenarios or perhaps could be useful if you have a batch of machines that are being built by onsite technicians ready for users.
+In certain circumstances, it might be beneficial to directly import the device hash into Microsoft Intune rather than generating the file as shown above. This is often useful in testing scenarios or perhaps could be useful if you have a batch of machines that are being built by onsite technicians ready for users.
 
 The following example imports the device directly into Intune along with assigning a Dynamic variable tag (Autopilot-Devices) to an Azure AD group to ensure the device ends up in a specific group:
 

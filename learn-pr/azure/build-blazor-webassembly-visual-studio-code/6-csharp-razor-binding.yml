@@ -8,8 +8,7 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/6-csharp-razor-binding.md)]

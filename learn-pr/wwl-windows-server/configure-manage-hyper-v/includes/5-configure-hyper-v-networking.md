@@ -60,7 +60,7 @@ The main steps in the process are:
     1. In **Virtual Switch Manager**, select **Internal**, and then select **Create Virtual Switch**.
     1. In **Virtual Switch Properties**, enter the following details, and then select **OK**:
         - Name: **internal switch 1**
-        - External network: **Internal network**
+        - Connection type: **Internal network**
     1. In **Virtual Switch Manager**, verify the presence of the switch you created. You can now add the switch to VMs as required.
 
 1. Create a Hyper-V Virtual Switch in WAC:

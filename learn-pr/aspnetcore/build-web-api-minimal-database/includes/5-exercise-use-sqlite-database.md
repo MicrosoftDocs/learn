@@ -13,7 +13,7 @@ In the terminal, install the following packages:
 1. [SQLite EF Core Database Provider](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Sqlite/6.0.0?azure-portal=true): Can access many different databases through plug-in libraries called [database providers](/ef/core/providers/?tabs=dotnet-core-cli?azure-portal=true). The following package is the SQLite database provider for Entity Framework (EF) Core.
 
     ```dotnetcli
-    dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 6.0
+    dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 8.0
     ```
 
 1. [EF Core tools](/ef/core/cli/dotnet?azure-portal=true): Tools for EF Core perform design-time development tasks. For example, they create migrations, apply migrations, and generate code for a model based on an existing database.
@@ -25,7 +25,7 @@ In the terminal, install the following packages:
 1. [Microsoft.EntityFrameworkCore.Design](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/6.0.0?azure-portal=true): Contains all the design-time logic for EF Core to create your database.
 
     ```dotnetcli
-    dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0
+    dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.0
     ```
 
 ## Enable database creation

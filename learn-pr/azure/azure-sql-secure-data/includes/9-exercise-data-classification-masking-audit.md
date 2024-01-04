@@ -1,4 +1,4 @@
-In this exercise, you'll combine your learnings from the module to walk through a scenario. You'll learn how to add new data classifications and dynamic data masks, and then you'll see various methods for auditing users who try to view columns that were marked for data classification. This exercise combines several of the things you've already learned about in the module about managing security.
+In this exercise, you'll combine your learnings from the module to walk through a scenario. You'll learn how to add new data classifications and dynamic data masks, and then you'll see various methods for auditing users who try to view columns that were marked for data classification. This exercise combines several of the concepts you've already learned about in the module about managing security.
 
 ## Configure data classification and masking
 
@@ -9,7 +9,7 @@ In this exercise, you'll combine your learnings from the module to walk through 
 
 1. On the left pane, under **Security**, select **Data Discovery & Classification**.  
 
-1. Select the **Classification** tab, and then select **Add classification**.  
+1. Select the **Classification** tab, then select **Add classification**.  
 
     :::image type="content" source="../media/9-add-classification.png" alt-text="Screenshot of how to add a new classification.":::  
 
@@ -29,9 +29,9 @@ In this exercise, you'll combine your learnings from the module to walk through 
 
    In the next steps, you'll mask the `FirstName`, `MiddleName`, and `LastName` columns, which you reviewed in the previous step.  
 
-1. In the Azure portal, go to your Azure SQL Database. On the left pane, under **Security**, select **Dynamic Data Masking**, and then select **Add mask**.  
+1. In the Azure portal, go to your Azure SQL Database. On the left pane, under **Security**, select **Dynamic Data Masking**, then select **Add mask**.  
 
-1. In the drop-down lists, select the **SalesLT** schema, **Customer** table, and **FirstName** column. You can review the options for masking, but the default option is good for this scenario. Select **Add** to add the masking rule.  
+1. In the dropdown lists, select the **SalesLT** schema, **Customer** table, and **FirstName** column. You can review the options for masking, but the default option is good for this scenario. Select **Add** to add the masking rule.  
 
     :::image type="content" source="../media/9-add-mask-2.png" alt-text="Screenshot of how to add First Name mask.":::  
 
@@ -47,13 +47,13 @@ In this exercise, you'll combine your learnings from the module to walk through 
 
 ## Retrieve data that is classified and masked
 
-Next, you simulate someone querying the classified columns and explore Dynamic Data Masking in action.
+Next, you'll simulate someone querying the classified columns and explore Dynamic Data Masking in action.
 
 1. Go to SQL Server Management Studio (SSMS),
 
-1. To create a new query in your AdventureWorks database, right-click the database, and then select **New Query**.  
+1. To create a new query in your AdventureWorks database, right-click the database, then select **New Query**.  
 
-1. Run the following query to return the classified data and, in some cases, columns marked for masked data.  
+1. Run the following query to return the classified data and, in some cases, columns marked for masked data. Select **Execute** to run the query.
 
     ```sql
     SELECT TOP 10 FirstName, MiddleName, LastName
@@ -64,9 +64,9 @@ Next, you simulate someone querying the classified columns and explore Dynamic D
 
     :::image type="content" source="../media/9-names.png" alt-text="Screenshot of SQL query results with no mask.":::  
 
-1. In the following query, you create a new user and run the preceding query as that user. You also use `EXECUTE AS` to impersonate `Bob`. When an `EXECUTE AS` statement is run, the execution context of the session is switched to the login or user. This means that the permissions are checked against the login or user instead of the person executing the `EXECUTE AS` command (in this case, you). `REVERT` is then used to stop impersonating the login or user.  
+1. In the following query, you'll create a new user and run the preceding query as that user. You'll also use `EXECUTE AS` to impersonate `Bob`. When an `EXECUTE AS` statement is run, the session's execution context is switched to the login or user. This means that the permissions are checked against the login or user instead of the person executing the `EXECUTE AS` command (in this case, you). `REVERT` is then used to stop impersonating the login or user.  
 
-    You might recognize the first few parts of the commands that follow, because they're a repeat from a previous exercise. Run them, and observe the results.  
+    You might recognize the first few parts of the commands that follow, because they're a repeat from a previous exercise. Create a new query with the following commands, then select **Execute** to run the query and observe the results.
 
     ```sql
     -- Create a new SQL user and give them a password
@@ -91,7 +91,7 @@ Next, you simulate someone querying the classified columns and explore Dynamic D
 
     You can update excluded users from masking in the Azure portal by going to the **Dynamic Data Masking** pane, under **Security**, but you can also do it by using T-SQL.
 
-1. Use the following query to allow Bob to query the names results without masking.  
+1. Right-click the **AdventureWorks** database and select **New Query**, then enter the following query to allow Bob to query the names results without masking. Select **Execute** to run the query.
 
     ```sql
     GRANT UNMASK TO Bob;  
@@ -105,7 +105,7 @@ Next, you simulate someone querying the classified columns and explore Dynamic D
 
     :::image type="content" source="../media/9-names.png" alt-text="Screenshot of SQL query results with no mask.":::  
 
-1. You can also take away a user's unmasking privileges and confirm that action by running the following T-SQL commands:  
+1. You can also take away a user's unmasking privileges and confirm that action by running the following T-SQL commands in a new query:  
 
     ```sql
     -- Remove unmasking privilege
@@ -132,9 +132,9 @@ As an admin, you might want to review and audit who is accessing the databases a
 
 1. Select **Add**.  
 
-    :::image type="content" source="../media/9-file-audit-add.png" alt-text="Add a new file.":::  
+    :::image type="content" source="../media/9-file-audit-add.png" alt-text="Screenshot of how to add a new file.":::  
 
-1. Select **Add from Azure Blob storage**, and then select **Connect**.  
+1. Select **Add from Azure Blob storage**, then select **Connect**.  
 
     :::image type="content" source="../media/9-file-audit-connect.png" alt-text="Screenshot of how to add from Azure Blob storage.":::  
 
@@ -142,21 +142,21 @@ As an admin, you might want to review and audit who is accessing the databases a
 
     :::image type="content" source="../media/9-file-audit-signin.png" alt-text="Screenshot of how to sign in to Azure.":::  
 
-1. Select the subscription, storage account, and blob container you configured the audit logs to go to. The storage account should start with `sqlva`. The container will be called `sqldbauditlogs`. If there's no container with that name, you created a different storage account for auditing, use that instead.
+1. Select the subscription, storage account, and blob container you configured the audit logs to go to. The storage account should start with `sql`. The container will be called `sqldbauditlogs`. If there's no container with that name, you created a different storage account for auditing; use that instead.
 
 1. Select your Azure SQL Database logical server and your `AdventureWorks` database. Make sure the *From* time is earlier than when you started the exercises. Select **OK**.
 
 1. The confirmation window lets you know how many files are being downloaded and merged. Select **OK**.  
 
-1. Review the files, and then select **OK** one last time.  
+1. Review the files, then select **OK** one last time.  
 
    All the audit logs are now displayed. Look for where you were testing with masking with Bob. The listing should be near the bottom.
 
-1. Select the statement, and then review the information on the details pane. For example, for one of the queries where Bob tries to view classified data, under the `data_sensitivity_information` field, you can see the data that's classified.
+1. Select the statement, then review the information on the details pane. For example, for one of the queries where Bob tries to view classified data, under the `data_sensitivity_information` field, you can see the data that's classified.
 
 1. Double-click the value of the **data_sensitivity_information** on the **Details** pane. A pop-up window opens so that you can more easily read the data.
 
-    An example of what you might see under `data_sensitivity_information` is shown here:  
+    Here's an example of what you might see under `data_sensitivity_information`:  
 
     ```cxel
     <sensitivity_attributes max_rank="20" max_rank_desc="Medium"><sensitivity_attribute label="Confidential - GDPR" label_id="bf91e08c-f4f0-478a-b016-23422b2a65ff" information_type="Name" information_type_id="57845286-7598-22f5-3422-15b24aeb125e" rank="20" rank_desc="Medium"/></sensitivity_attributes>
@@ -168,7 +168,7 @@ As an admin, you might want to review and audit who is accessing the databases a
 
 Analyzing your audit logs will depend on your preference. In this section, you'll be exposed to querying security logs in the Azure portal with Log Analytics.  
 
-1. In the Azure portal, go to your `AdventureWorks` database. On the left pane, under **Security**, select **Auditing** > **View audit logs**.  
+1. In the Azure portal, go to your `AdventureWorks` database. On the left pane, under **Security**, select **Auditing**, then select the **View audit logs** button in the task bar.  
 
     You should now be able to see a query of your event records, options to run in Query Editor (run T-SQL queries through the portal), options for Log Analytics, View dashboard, and more.  
 
@@ -176,7 +176,7 @@ Analyzing your audit logs will depend on your preference. In this section, you'l
 
     Feel free to look around to understand what some of the options are.  
 
-1. Select **Log Analytics**. If you see a *Get Started* screen, select **OK**. This takes you to a query editor, but it's not a T-SQL editor. In this view, you can query logs by using the Kusto Query Language (KQL), which is meant for SQL professionals to easily use and understand.  
+1. Select **Log Analytics**. You might need select **Refresh** to access the **Log Analytics** button. If you see a *Get Started* screen, select **OK**. This takes you to a query editor, but it's not a T-SQL editor. In this view, you can query logs by using the Kusto Query Language (KQL), which is meant for SQL professionals to easily use and understand.  
 
     The default query is querying the category `SQLSecurityAuditEvents`. Although you might use this category now to view security-related incidents, this tool can also be used for querying other Azure logs and categories in Log Analytics. For this step, you can look for the statements where Bob tried to access sensitive information. To get the same information that you saw in SSMS, expand the row details by selecting the **`>`** button.  
 
@@ -190,7 +190,7 @@ Analyzing your audit logs will depend on your preference. In this section, you'l
 
     :::image type="content" source="../media/9-view-db.png" alt-text="Screenshot of the log analytics dashboard.":::  
 
-   An overview dashboard is displayed
+   An overview dashboard is displayed.
 
 1. Select **Azure SQL - Access to Sensitive Data** to view more detail.  
 
@@ -203,7 +203,7 @@ Analyzing your audit logs will depend on your preference. In this section, you'l
     - Which principals are accessing sensitive data.
     - Which IPs are accessing sensitive data.  
 
-    Review what's available here, and how you can audit usage with this tool. You can even select into each of these and see the related logs in Log Analytics.  
+    Review what's available here, and how you can audit usage with this tool. You can even select each of these and see the related logs in Log Analytics.  
 
 1. When you're done, close the **Azure SQL - Access to Sensitive Data** pane by selecting the **X** at the upper right.  
 

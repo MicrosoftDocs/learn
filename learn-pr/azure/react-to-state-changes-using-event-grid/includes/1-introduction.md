@@ -8,8 +8,8 @@ By the end of this module, you'll be able to use Event Grid to manage and route 
 
 In this module, you'll:
 
-- Describe the capabilities and use cases for Event Grid
-- Create an application that handles events with Event Grid and Logic Apps
+- Describe the capabilities and use cases for Event Grid.
+- Create an application that handles events with Event Grid and Logic Apps.
 
 ## Prerequisites
 
