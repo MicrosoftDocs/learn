@@ -1,4 +1,4 @@
-You've successfully built and pushed both your staging and production images to your Container Registry instance. It's time to automate all the steps and make the machine work for you.
+You've successfully built and pushed both your staging and production images to your Azure Container Registry instance. It's time to automate all the steps and make the pipeline work for you.
 
 But, there's a problem. Your workloads aren't generic enough, so you can't deploy them automatically. Instead, you must manually change the files every time. 
 
