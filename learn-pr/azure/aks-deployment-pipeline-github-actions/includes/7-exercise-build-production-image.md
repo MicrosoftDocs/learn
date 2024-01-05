@@ -232,7 +232,7 @@ This time, the production action doesn't trigger, because you didn't push a new 
 
 1. Select the copy icon to copy your PAT. Save the PAT for later steps.
 
-    :::image type="content" source="../media/7-copy-personal-access-token.png" alt-text="Screenshot that shows the personal access token after it has been created.":::
+    :::image type="content" source="../media/7-copy-personal-access-token.png" alt-text="Screenshot that shows the personal access token after it's created.":::
 
 ## Trigger the tag event
 

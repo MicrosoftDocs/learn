@@ -159,7 +159,7 @@ This file should have the same structure as the file you use to call variables. 
     ```
 
     
-    These are the *default* values if you don't pass a different value as a parameter by using the `--set` option of the Helm CLI.
+    These values are the default if you don't pass a different value as a parameter by using the `--set` option of the Helm CLI.
 
 1. Save the file.
 

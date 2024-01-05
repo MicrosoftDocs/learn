@@ -11,9 +11,9 @@ To design the pipeline, consider the tasks and triggers.
 Your pipeline needs to trigger on two different events:
 
 - A tagged push to the main branch
-- A non-tagged push to the main branch
+- A nontagged push to the main branch
 
-You split the two events into two separate triggers because the actions for a tagged push compared to a non-tagged push are different. A tagged push deploys to production, while a non-tagged push deploys to the staging environment. The following diagram shows the two triggers for the pipeline:
+You split the two events into two separate triggers because the actions for a tagged push compared to a nontagged push are different. A tagged push deploys to production, while a nontagged push deploys to the staging environment. The following diagram shows the two triggers for the pipeline:
 
 :::image type="content" source="../media/3-pipeline-1-trigger.png" alt-text="Diagram that shows two types of pipeline triggers.":::
 
@@ -21,7 +21,7 @@ After you define the triggers, plan the pipeline flow itself.
 
 ### Step 1: Clone the repo
 
-The first steps are called the *build steps*, because you have to prepare a configuration and build the image before you push it to the AKS instance. In the build steps, you set up all the information that's needed for the deploy step. In this case, the first build step after receiving the trigger signal is the same for both triggers, to clone the repository.
+The first steps are called the *build steps*, because you have to prepare a configuration and build the image before you push it to the AKS instance. In the build steps, you set up all the information needed for the deploy step. In this case, the first build step after receiving the trigger signal is the same for both triggers, to clone the repository.
 
 :::image type="content" source="../media/3-pipeline-2-build.png" alt-text="Diagram that shows the procession from triggers to the first build step in a pipeline.":::
 
@@ -29,7 +29,7 @@ The first steps are called the *build steps*, because you have to prepare a conf
 
 The next logical step is to build an image. Your website must be a Docker image in order to run in the AKS environment. You need to build the new image by using a Dockerfile that's in the root of the repository. Here's where you account for different triggers.
 
-For the *tagged* commit pipeline, you build the image and then tag it by using the same tag as the push. For example, if the commit is tagged with `v1.0.0`, you build the image as `contoso/website:v1.0.0`. If you have a *non-tagged* commit in the main branch, you build the image with the `latest` tag.
+For the *tagged* commit pipeline, you build the image and then tag it by using the same tag as the push. For example, if the commit is tagged with `v1.0.0`, you build the image as `contoso/website:v1.0.0`. If you have a *nontagged* commit in the main branch, you build the image with the `latest` tag.
 
 :::image type="content" source="../media/3-pipeline-3-build-docker.png" alt-text="Diagram that shows the procession from triggers to the first and second build steps in a pipeline.":::
 
@@ -43,8 +43,8 @@ At this point, the pipeline converges into a single step. Your Container Registr
 
 ### Step 4: Deploy the application
 
-The final *deploy step* deploys the website to the correct location. If a tagged commit triggered the pipeline, you deploy the website to the `production` namespace of the AKS cluster. If the pipeline was triggered with a non-tagged commit, you push to the `staging` namespace of the same cluster.
+The final *deploy step* deploys the website to the correct location. If a tagged commit triggered the pipeline, you deploy the website to the `production` namespace of the AKS cluster. If the pipeline was triggered with a nontagged commit, you push to the `staging` namespace of the same cluster.
 
 :::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that shows the procession from triggers, through three build steps, to the deploy steps in a pipeline.":::
 
-Now that you've designed the workflow pipeline, proceed to the following units to set up your project environment and create GitHub Actions to clone, build, push, and deploy on AKS clusters.
+Now that you designed the workflow pipeline, proceed to the following units to set up your project environment and create GitHub Actions to clone, build, push, and deploy on AKS clusters.

@@ -18,7 +18,7 @@ In this unit, you create your resources for the Contoso Video website. Make sure
     cd mslearn-aks-deployment-pipeline-github-actions
     ```
 
-1. Run the following command to execute the *init.sh* file that's located in the root of the project:
+1. Run the following command to execute the *init.sh* file located in the root of the project:
 
     ```bash
     bash init.sh

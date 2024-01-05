@@ -29,8 +29,8 @@ quiz:
       choices:
         - content: "A file that contains instructions for running automated tasks."
           isCorrect: false
-          explanation: "The CI pipeline is composed of files with instructions, but is not itself a single file."
-        - content: "A specific set of tasks that you can run when you check in code changes."
+          explanation: "The CI pipeline is composed of files with instructions, but isn't itself a single file."
+        - content: "A specific set of tasks you can run when you check in code changes."
           isCorrect: false
           explanation: "A CI pipeline is a specific set of tasks, but it runs automatically when a new code change is detected."
         - content: "The set of processes that run when a new code change is detected."

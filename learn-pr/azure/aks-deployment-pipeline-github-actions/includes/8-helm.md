@@ -1,6 +1,6 @@
-You've successfully built and pushed both your staging and production images to your Azure Container Registry instance. It's time to automate all the steps and make the pipeline work for you.
+You successfully built and pushed both your staging and production images to your Azure Container Registry instance. It's time to automate all the steps and make the pipeline work for you.
 
-Currently, you must manually change files every time you run the pipeline, so you can't deploy automatically. To solve this, you can use a Helm chart to manage your builds. In this unit, you learn about Helm charts and templates.
+Currently, you must manually change files every time you run the pipeline, so you can't deploy automatically. To solve this issue, you can use a Helm chart to manage your builds. In this unit, you learn about Helm charts and templates.
 
 ## Helm charts
 
@@ -8,7 +8,7 @@ Helm is an open-source packaging tool, similar to Linux package managers like AP
 
 You can use Helm to manage Kubernetes charts, which are groups of one or more workloads packaged with configuration files and a chart description file. When packaged in a chart, the files can easily be deployed as a unit to a Kubernetes cluster.
 
-One of the advantages of using Helm is not having to deploy files individually. You can issue a single command to deploy the chart. You can even deploy multiple dependent charts, with an automatic dependency resolution.
+One of the advantages of using Helm is to not have to deploy files individually. You can issue a single command to deploy the chart. You can even deploy multiple dependent charts, with an automatic dependency resolution.
 
 Here's the structure of a typical Helm chart directory:
 

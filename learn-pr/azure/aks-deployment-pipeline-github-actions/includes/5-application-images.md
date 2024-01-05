@@ -19,9 +19,9 @@ For example, if you want the Node.js image in a repository to start from Node 12
 
 Building a container image uses the same technique as creating a GitHub repository. Docker container paths are usually something like *repository/image-name*, but you can build multiple versions of the same image that use tags to distinguish them.
 
-In this module, you use tags to label release versions. You create a tag for each production version by using `v*.*.*` semantic versioning rules, such as `v1.0.0` for version 1.0.0. Every tagged push to the main branch generates a new image tag with the same name as the tag on that push. Non-tagged pushes generate only the `latest` tag.
+In this module, you use tags to label release versions. You create a tag for each production version by using `v*.*.*` semantic versioning rules, such as `v1.0.0` for version 1.0.0. Every tagged push to the main branch generates a new image tag with the same name as the tag on that push. nontagged pushes generate only the `latest` tag.
 
-All pushes, tagged and non-tagged, update the `latest` image with the most recent code and deploy it to staging. The images that are tagged with `v*` are also deployed to production. Only official tagged images should go to production, while both staging and production should always have the `latest` image.
+All pushes, tagged and nontagged, update the `latest` image with the most recent code and deploy it to staging. The images that are tagged with `v*` are also deployed to production. Only official tagged images should go to production, while both staging and production should always have the `latest` image.
 
 ## Container registries
 

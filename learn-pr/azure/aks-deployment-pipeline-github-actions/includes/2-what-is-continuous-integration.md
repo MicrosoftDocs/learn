@@ -10,7 +10,7 @@ One of the most significant challenges software developers faced was merge day. 
 
 One of the most critical CI principles is to merge all new changes back into the main branch as often as possible. Continually merging changes helps avoid the merge day "integration hell" that occurred when many developers combined their changes at once.
 
-CI requires that teams frequently implement and integrate the smallest changes in the code. Implementing CI means that teams can constantly test, compile, deploy, and then test again in production. The goal of CI is to detect and avoid production problems caused by code changes before they can affect the main code branch or be deployed to customers.
+CI requires that teams frequently implement and integrate the smallest changes in the code. Implementing CI means that teams can constantly test, compile, deploy, and then test again in production. The goal of CI is to detect and avoid production problems caused by code changes before they can affect the main code branch or deploy to customers.
 
 ## Continuous delivery and deployment
 
