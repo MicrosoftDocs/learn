@@ -6,10 +6,9 @@ metadata:
   title: Knowledge check
   description: "Knowledge check for intro to Azure Service Health."
   ms.date: 9/1/2021
-  author: ricmmartins
-  ms.author: ricmart
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 5
 content: |
 quiz:

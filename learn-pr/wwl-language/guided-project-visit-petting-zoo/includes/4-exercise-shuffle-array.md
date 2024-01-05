@@ -1,6 +1,3 @@
-
-
-
 In this step, you'll develop the code to complete your first subtask, which is to randomize the petting zoo animals. Recall that you referenced a method `RandomizeAnimals()` in your pseudo-code. Let's get started!
 
 ## Shuffle an array

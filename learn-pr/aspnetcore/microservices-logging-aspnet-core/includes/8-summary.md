@@ -14,4 +14,4 @@ In this module, you:
 ## Learn more about Azure Monitor
 
 - [Azure Monitor documentation](/azure/azure-monitor/)
-- [Azure Monitor Application Insights documentation](/azure/azure-monitor/azure-monitor-app-hub)
+- [Azure Monitor Application Insights documentation](/azure/azure-monitor/app/app-insights-overview)

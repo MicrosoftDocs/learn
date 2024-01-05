@@ -7,7 +7,6 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
 title: Migrate your CI/CD pipelines to GitHub with GitHub Actions Importer
 summary: Learn about GitHub Actions Importer and how it can help facilitate migrations from your current CI/CD tool to GitHub Actions.
 abstract: |

@@ -2,15 +2,17 @@
 uid: learn.azure.debug-nodejs
 metadata:
   title: Interactively debug Node.js JavaScript apps with the built-in and Visual Studio Code debuggers
-  description: Learn how to efficiently debug your Node.js JavaScript app by using Visual Studio Code to fix your bugs quickly. Use the interactive debugger within Visual Studio Code to analyze and fix your JavaScript applications.
+  description: Learn how to efficiently debug your Node.js JavaScript CommonJS app by using Visual Studio Code to fix your bugs quickly. Use the interactive debugger within Visual Studio Code to analyze and fix your JavaScript applications.
   author: GitHubber17
   ms.author: chnoring
-  ms.date: 04/22/2022
+  ms.date: 06/01/2023
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: vs-code
   ms.custom: team=nextgen
+  ms.devlang: nodejs, javascript
+  devlang: nodejs, javascript  
 title: Interactively debug Node.js apps with the built-in and Visual Studio Code debuggers
-summary: Learn how to efficiently debug your Node.js app by using Visual Studio Code to fix your bugs quickly.
+summary: Learn how to efficiently debug your Node.js app by using Visual Studio Code to fix your bugs quickly. This module uses JavaScript CommonJS in the Node.js runtime.
 abstract: |
   By the end of this module, you'll be able to:
   - Use the Visual Studio Code debugger with a Node.js program.

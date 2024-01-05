@@ -1,15 +1,16 @@
-In the preceding exercise, you built the staging workflow for building and publishing the image. Let's recap the production workflow:
+In the previous exercise, you built the staging workflow for building and publishing the image. Now, let's build the production workflow:
 
 :::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that shows the procession from triggers, through three build steps, to the deploy steps in a pipeline.":::
 
-You'll build the tagged version by using a different workflow.
+You'll build the tagged version trigger with a different workflow.
 
 In this exercise, you'll:
 
 - Build the Actions workflow
-- Create the trigger
-- Build and push the image
-- Check the results
+- Create the on tag trigger
+- Build and push the production image
+- Generate a personal access token (PAT)
+- Trigger tag event
 
 ## Build the Actions workflow
 
@@ -71,7 +72,7 @@ In this exercise, you'll:
     name: Build and push the tagged build to production
     ```
 
-## Create the trigger
+## Create the on tag trigger
 
 1. Change the default triggers in the `on` key.
 
@@ -87,7 +88,7 @@ In this exercise, you'll:
         branches: [ main ]
     ```
 
-1. Remove the `branches` key and replace it with the `tags` key. This tag says that you'll run this workflow only on specific tags.
+1. Remove the `branches` key and replace it with the `tags` key. This key means this workflow is only run on specific tags.
 
     ```yaml
     name: Build and push the tagged build to production
@@ -98,9 +99,9 @@ In this exercise, you'll:
           - 'v*'
     ```
 
-    In this case, you'll run the workflow only if the tag follows the `v*` pattern, which includes `v1.0.0`.
+    In this case, the workflow runs only if the tag follows the `v*` pattern, which includes `v1.0.0`.
 
-## Build and push the image
+## Build and push the production image
 
 Let's work on the jobs you're going to run. In this process, you address both the build steps and the deploy steps from the diagram.
 
@@ -130,7 +131,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     Leave the `checkout` option like you did when you created the staging image.
 
-1. Create a new step that will gather the necessary version information. You'll use the `::set-output` internal command to create this step. Add the following lines below the checkout action:
+1. Create a new step that gathers the necessary version information. You use the `::set-output` internal command to create this step. Add the following lines below the checkout action:
 
     ```yaml
     - name: Fetch latest version
@@ -197,9 +198,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
             run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
 
           - name: Docker Login
-            # You may pin to the exact commit or the version.
-            # uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
-            uses: docker/login-action@v2.1.0
+            uses: docker/login-action@v3.0.0
             with:
               # Server address of Docker registry. If not set then will default to Docker Hub
               registry: # optional
@@ -245,9 +244,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
             run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
 
           - name: Docker Login
-            # You may pin to the exact commit or the version.
-            # uses: docker/login-action@f3364599c6aa293cdc2b8391b1b56d0c30e45c8a
-            uses: docker/login-action@v1
+            uses: docker/login-action@v3.0.0
             with:
               # Server address of Docker registry. If not set then will default to Docker Hub
               registry: # optional
@@ -259,11 +256,12 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
               logout: # optional, default is true
 
           - name: Build and push Docker images
-            # You may pin to the exact commit or the version.
-            # uses: docker/build-push-action@c56af957549030174b10d6867f20e78cfd7debc5
-            uses: docker/build-push-action@v3.2.0
+            uses: docker/build-push-action@v5.0.0
             with:
               # Here you can set the parameters
+              context: 
+              tags:
+              push:
     ```
 
     > [!IMPORTANT]
@@ -273,21 +271,21 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
 1. Rename the `name` key `Build and push production images`.
 
-1. You'll use only a handful of the parameters that are available for these actions.
+1. You use only a handful of the parameters that are available for these actions.
 
     Add the values according to the following table:
 
-    |Key name     | Used on action |Value                                           |
-    |-------------|--------|------------------------------------------------|
-    |registry     |`docker/login`|`${{ secrets.ACR_NAME }}`                       |
-    |username     |`docker/login`|`${{ secrets.ACR_LOGIN }}`                      |
-    |password     |`docker/login`|`${{ secrets.ACR_PASSWORD }}`                   |
-    |repository   |`docker/build-and-push`|contoso-website                                 |
-    |context      |`docker/build-and-push`|`.`                                    |
-    |push         |`docker/build-and-push`|`true`                                 |
-    |tags         |`docker/build-and-push`|The version number obtained by the `fetch_version` step (as shown in following example). |
+    |Key name     |Used on action         |Value                                         |
+    |-------------|-----------------------|----------------------------------------------|
+    |registry     |`docker/login`         |`${{ secrets.ACR_NAME }}`                     |
+    |username     |`docker/login`         |`${{ secrets.ACR_LOGIN }}`                    |
+    |password     |`docker/login`         |`${{ secrets.ACR_PASSWORD }}`                 |
+    |repository   |`docker/build-and-push`|contoso-website                               |
+    |context      |`docker/build-and-push`|`.`                                           |
+    |push         |`docker/build-and-push`|`true`                                        |
+    |tags         |`docker/build-and-push`|`${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${{ steps.fetch_version.outputs.TAG }}` |
 
-    You can delete all the other keys because we won't use them in this exercise.
+    You can delete all the other keys because they aren't used in this exercise.
 
     Your file should look like this example:
 
@@ -311,29 +309,29 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
             run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
 
           - name: Docker Login
-            uses: docker/login-action@v1
+            uses: docker/login-action@v3.0.0
             with:
               registry: ${{ secrets.ACR_NAME }}
               username: ${{ secrets.ACR_LOGIN }}
               password: ${{ secrets.ACR_PASSWORD }}
 
           - name: Build and push production images
-            uses: docker/build-push-action@v2
+            uses: docker/build-push-action@v5.0.0
             with:
               context: .
-              push: true
               tags: ${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${{ steps.fetch_version.outputs.TAG }}
+              push: true
     ```
 
     Using `steps.` in the YAML is a common practice to refer to previous steps in the pipeline. When we used `set-output` in the `fetch_version` step, we set the output of the step to the value of the `GITHUB_REF` variable. This output is now available in the pipeline inside the `steps` object.
 
-1. Before you save the file, we'll also add another action between the checkout action and the login action, to set up the build engine for Docker to use. This action is called `docker/setup-buildx-action` and you'll use `v1`.
+1. Before you save the file, add another action between the checkout action and the login action, to set up the build engine for Docker to use. This action is called `docker/setup-buildx-action` and we use `v1`.
 
     To set this action, copy the snippet from this example and paste it between the `Fetch latest version` and the `Docker Login` actions.
 
     ```yaml
     - name: Set up Buildx
-      uses: docker/setup-buildx-action@v1
+      uses: docker/setup-buildx-action@v3.0.0
     ```
 
     Your final file should be like this:
@@ -358,17 +356,17 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
             run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
 
           - name: Set up Buildx
-            uses: docker/setup-buildx-action@v1
+            uses: docker/setup-buildx-action@v3.0.0
 
           - name: Docker Login
-            uses: docker/login-action@v1
+            uses: docker/login-action@v3.0.0
             with:
               registry: ${{ secrets.ACR_NAME }}
               username: ${{ secrets.ACR_LOGIN }}
               password: ${{ secrets.ACR_PASSWORD }}
 
           - name: Build and push production images
-            uses: docker/build-push-action@v2
+            uses: docker/build-push-action@v5.0.0
             with:
               context: .
               tags: ${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${{ steps.fetch_version.outputs.TAG }}
@@ -377,31 +375,34 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
 1. To commit the changes, select the green **Start commit** button at the top right. Enter a description for the commit, and then select the **Commit new file** button.
 
-    This time, the action won't be triggered because you didn't push a new tag. But our earlier action triggers and builds a new `latest` image.
+    This time, the production action doesn't trigger because you didn't push a new tag. But, our earlier staging action triggers and builds a new `latest` image.
 
-## Create a personal access token (PAT)
+## Generate a personal access token (PAT)
 
 1. Go to the fork of the sample repository in the GitHub website. On the top right hand corner, select your profile photo, then select **Settings**.
 
 1. Select **Developer settings** at the bottom of the left menu.
 
-1. Select **Personal access tokens**.
+1. Select **Personal access tokens** > **Tokens (classic)** from the dropdown.
 
-1. Select **Generate new token**.
+1. Select **Generate new token** > **Generate new token (classic)** from the dropdown.
 
 1. Provide a name for your PAT, such as *myPersonalAccessToken*
   
-1. Select the checkbox next to **public_repo**.
+1. Select the checkbox next to **workflow**.
 
     :::image type="content" source="../media/7-create-personal-access-token.png" alt-text="Screenshot that shows the personal access tokens page.":::
 
+    > [!NOTE]
+    > The Workflow scope grants admin repo access to the Github actions. You need this to push your tags in the next step and run the deploy script in a future unit.
+
 1. Select **Generate token** at the bottom of the page.
 
-1. Select the copy icon to copy your PAT. Make note of the PAT, as it will be used in later steps.
+1. Select the copy icon to copy your PAT. Make note of the PAT for later steps.
 
     :::image type="content" source="../media/7-copy-personal-access-token.png" alt-text="Screenshot that shows the personal access token after it has been created.":::
 
-## Check the results
+## Trigger tag event
 
 1. Open your cloned repository in Azure Cloud Shell. Run `git pull`.
     > [!div class="nextstepaction"]
@@ -410,7 +411,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 1. Run the following command:
 
     ```bash
-    git tag -a v2.0.0 -m 'First tag'
+    git tag -a v2.0.0 -m 'My first tag'
     ```
 
 1. Run the following command:
@@ -418,6 +419,9 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
     ```bash
     git push --tags
     ```
+
+    > [!IMPORTANT]
+    > When you push the tag, the original repo uses v1.0.0, so your tag must be different as duplicates cannot exist.
 
 1. When prompted, provide your GitHub username, and the PAT created previously as the password.
 
@@ -428,3 +432,5 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
     ```bash
     az acr repository show-tags --repository contoso-website --name <ACR_NAME> -o table
     ```
+
+    Replace ACR_NAME with your ACR_NAME.

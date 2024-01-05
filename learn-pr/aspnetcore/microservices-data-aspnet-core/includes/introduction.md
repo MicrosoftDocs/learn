@@ -1,6 +1,6 @@
-Imagine you're a software developer for an online retailer. Your company uses an app named *:::no-loc text="eShopOnContainers":::* as its online storefront. The storefront is a cloud-native, microservices-based ASP.NET Core app. The product owner has requested you migrate some data services from your AKS cluster to managed services to reduce operational costs.
+Imagine you're a software developer for an online retailer. Your company uses an app named *:::no-loc text="eShopOnContainers":::* as its online storefront. The storefront is a cloud-native, microservices-based ASP.NET Core app. The product owner has requested that you migrate some data services from your AKS cluster to managed services to reduce operational costs.
 
-This module guides you through implementing managed data services in a microservices app. You'll begin with a simplified, revamped version of [:::no-loc text="eShopOnContainers":::](https://github.com/dotnet-architecture/eShopOnContainers)&mdash;the companion reference app for the guide [.NET Microservices: Architecture for Containerized .NET Applications](/dotnet/architecture/microservices). After validating the app deployment using data services within the AKS cluster, you'll modify the app's basket service to use Azure Cache for Redis. Following that, you'll reconfigure the app's coupon service to use Azure Cosmos DB.
+This module guides you through implementing managed data services in a microservices app. You'll begin with a simplified, revamped version of [:::no-loc text="eShopOnContainers":::](https://github.com/dotnet-architecture/eShopOnContainers), the companion reference app for the guide [.NET Microservices: Architecture for Containerized .NET Applications](/dotnet/architecture/microservices). After validating the app deployment using data services within the AKS cluster, you'll modify the app's basket service to use Azure Cache for Redis. Following that, you'll reconfigure the app's coupon service to use Azure Cosmos DB.
 
 [!INCLUDE[Use your own Azure subscription](../../includes/microservices/your-own-az-subscription.md)]
 
@@ -15,10 +15,10 @@ In this module, you will:
 
 ## Learning objectives
 
-- Review fully managed data service offerings in Azure.
-- Provision an Azure Cache for Redis instance.
-- Provision an Azure Cosmos DB instance using the MongoDB API.
-- Modify an existing microservices app to use the managed data services.
+- Review fully managed data service offerings in Azure
+- Provision an Azure Cache for Redis instance
+- Provision an Azure Cosmos DB instance using the MongoDB API
+- Modify an existing microservices app to use the managed data services
 
 ## Prerequisites
 

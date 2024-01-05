@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.troubleshoot-windows-containers.troubleshooting-docker
+title: Troubleshooting Windows containers on Docker
+metadata:
+  title: Troubleshooting Windows containers on Docker
+  description: This content is part of the "Troubleshooting Windows Containers" module.
+  ms.date: 05/11/2023
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-troubleshooting-containers-docker.md)]

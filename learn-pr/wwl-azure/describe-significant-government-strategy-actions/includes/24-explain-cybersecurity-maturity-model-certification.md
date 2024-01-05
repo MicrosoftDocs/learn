@@ -21,7 +21,7 @@ CMMC 2.0 focuses on three key features.
 
 ### Tiered model
 
-The CMMC framework uses a tiered model. When a company is provided access to national security information, the type and sensitivity of the information determines the level at which the company must be certified. The intent of this tiering is to provide for information to flow to subcontractors.
+The CMMC framework uses a tiered model. When a company is provided access to national/regional security information, the type and sensitivity of the information determines the level at which the company must be certified. The intent of this tiering is to provide for information to flow to subcontractors.
 
 ### CMMC assessments
 

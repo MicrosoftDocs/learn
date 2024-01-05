@@ -10,5 +10,5 @@ You should be able to:
 
 Microsoft Learn provides a large number of self-paced learning paths. For this lesson, we recommend the following modules. You may search and find other modules that are of interest to you.
 
- -  [Protect identity and access with Microsoft 365](/training/paths/m365-identity/)
+ -  [Protect identity and access with Microsoft 365](/learn/paths/m365-identity/)
  -  [PIM Documentation](/azure/active-directory/privileged-identity-management/)

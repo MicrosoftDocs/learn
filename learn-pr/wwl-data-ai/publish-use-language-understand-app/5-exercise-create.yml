@@ -1,17 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.publish-use-language-understand-app.exercise-create
-title: Exercise - Create a Language Understanding app
+title: Exercise - Create an Azure AI Language Understanding app
 metadata:
-  title: Exercise - Create a Language Understanding app
-  description: "Exercise - Create a Language Understanding app"
-  ms.date: 10/12/2022
+  title: Exercise - Create an Azure AI Language Understanding app
+  description: "Exercise - Create an Azure AI Language Understanding app"
+  ms.date: 11/7/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labId: 126702
-labModal: true
-durationInMinutes: 40
+  ms.topic: unit
+durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-create.md)]

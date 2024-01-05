@@ -1,4 +1,5 @@
-Your organization has decided to use Azure DNS to manage the custom domain for a new company website. You're working on the implementation plan for the DNS zones, DNS delegation, and DNS record sets. A few teams have submitted questions and configuration requests for your input.
+
+Your organization wants to use Azure DNS to manage the custom domain for a new company website. You're working on the implementation plan for the DNS zones, DNS delegation, and DNS record sets. 
 
 - The IT team wants to know if there are advantages to using Azure Private DNS.
 

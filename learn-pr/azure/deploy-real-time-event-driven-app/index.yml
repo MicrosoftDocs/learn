@@ -6,10 +6,10 @@ metadata:
   ms.date: 02/01/2021
   author: SandraAhlgrimm
   ms.author: sakriema
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: sakriema-03012021
+  ms.service: azure
 title: Build a real-time event-driven Java solution in Azure
 summary: Send event-based telemetric data in real time to Azure Cosmos DB by using Azure Functions and an event hub.
 abstract: |

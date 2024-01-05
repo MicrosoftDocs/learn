@@ -1,4 +1,4 @@
-In the previous unit, you learned the difference between authentication and authorization. You also learned how claims are used by policies for authorization. In this unit, you'll use Identity to store claims and apply policies for conditional access.
+In the previous unit, you learned the difference between authentication and authorization. You also learned how claims are used by policies for authorization. In this unit, you use Identity to store claims and apply policies for conditional access.
 
 ## Secure the pizza list
 
@@ -9,7 +9,7 @@ You've received a new requirement that the Pizza List page should be visible onl
 
         [!code-csharp[](../code/pages/pizza.cshtml.cs?range=2-3&highlight=1)]
 
-        The attribute describes user authorization requirements for the page. In this case, there are no requirements beyond the user being authenticated. Anonymous users aren't allowed to view the page and are redirected to the login page.
+        The attribute describes user authorization requirements for the page. In this case, there are no requirements beyond the user being authenticated. Anonymous users aren't allowed to view the page and are redirected to the sign-in page.
 
     1. Resolve the reference to `Authorize` by adding the following line to the `using` directives at the top of the file:
 
@@ -31,11 +31,11 @@ You've received a new requirement that the Pizza List page should be visible onl
 
 1. In *Pages/Pizza.cshtml*, add checks to hide administrator UI elements from non-administrators:
 
-    ***New pizza* form**
+    Hide **New pizza** form
 
     [!code-cshtml[](../code/pages/pizza.cshtml?name=snippet_create&highlight=2-3,20)]
 
-    ***Delete pizza* button**
+    Hide **Delete pizza** button
 
     [!code-cshtml[](../code/pages/pizza.cshtml?name=snippet_delete&highlight=8-9,11,21-22,28)]
 
@@ -45,7 +45,7 @@ You've received a new requirement that the Pizza List page should be visible onl
 
 There's one more thing you should lock down. There's a page that should be accessible only to administrators, conveniently named *Pages/AdminsOnly.cshtml*. Let's create a policy to check the `IsAdmin=True` claim.
 
-1. In the *Program.cs*, make the following changes:
+1. In *Program.cs*, make the following changes:
     1. Incorporate the following highlighted code:
 
         [!code-csharp[](../code/program-after-customization.cs?range=14-23&highlight=5-8)]
@@ -78,7 +78,7 @@ In order to determine which users should get the `IsAdmin=True` claim, your app 
 
     [!code-json[](../code/appsettings.json?range=1-3&highlight=2)]
 
-    This will be the confirmed email address that gets the claim assigned.
+    This is the confirmed email address that gets the claim assigned.
 
 1. In *Areas/Identity/Pages/Account/ConfirmEmail.cshtml.cs*, make the following changes:
     1. Incorporate the following highlighted code:
@@ -94,7 +94,7 @@ In order to determine which users should get the `IsAdmin=True` claim, your app 
         In the preceding code:
 
         * The `AdminEmail` string is read from the `Configuration` property and assigned to `adminEmail`.
-        * The null-coalescing operator `??` is used to ensure `adminEmail` is set to `string.Empty` if there is no corresponding value in *appsettings.json*.
+        * The null-coalescing operator `??` is used to ensure `adminEmail` is set to `string.Empty` if there's no corresponding value in *appsettings.json*.
         * If the user's email is successfully confirmed:
             * The user's address is compared to `adminEmail`. `string.Compare()` is used for case-insensitive comparison.
             * The `UserManager` class's `AddClaimAsync` method is invoked to save an `IsAdmin` claim in the `AspNetUserClaims` table.
@@ -111,19 +111,19 @@ Let's do one last test to verify the new administrator functionality.
 
 1. Make sure you've saved all your changes.
 1. Run the app with `dotnet run`.
-1. Navigate to your app and log in with an existing user (if not already logged in). Select **Pizza List** from the header. Notice the user isn't presented UI elements to delete or create pizzas.
+1. Navigate to your app and sign in with an existing user, if you're not already signed in. Select **Pizza List** from the header. Notice the user isn't presented UI elements to delete or create pizzas.
 1. There's no **Admins** link in the header. In the browser's address bar, navigate directly to the **AdminsOnly** page. Replace `/Pizza` in the URL with `/AdminsOnly`.
 
     The user is forbidden from navigating to the page. An **Access denied** message is displayed.
 
 1. Select **Logout**.
 1. Register a new user with the address `admin@contosopizza.com`.
-1. As before, confirm the new user's email address and log in.
-1. Once logged in with the new administrative user, click the **Pizza List** link in the header.
+1. As before, confirm the new user's email address and sign in.
+1. Once signed in with the new administrative user, select the **Pizza List** link in the header.
 
     The administrative user can create and delete pizzas.
 
-1. Click the **Admins** link in the header.
+1. Select the **Admins** link in the header.
 
     The **AdminsOnly** page appears.
 

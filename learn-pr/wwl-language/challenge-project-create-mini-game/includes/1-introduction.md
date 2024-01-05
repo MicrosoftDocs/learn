@@ -1,5 +1,6 @@
 
 
+
 Creating your own game is an exciting way to practice your programming skills. Games rely heavily on processing user input to make dynamic decisions. Every game must also have a set of defined rules that determine actions and events in the game.
 
 Suppose you want to create your own game. You might not be ready to develop a fully featured game, so you decide to start as small as possible. You want to move a character across the screen and make it consume an object. The object consume can affect the state of the player. To keep the game going, you want to regenerate the object in a new location once it has been consumed. You decide that you'll need to use methods to keep your game code organized.

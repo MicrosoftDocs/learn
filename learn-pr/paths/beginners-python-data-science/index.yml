@@ -7,8 +7,7 @@ metadata:
   ms.date: 05/19/2020
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-reactors
+  ms.topic: learning-path
 title: Beginners data science for Python developers
 summary: |
   Welcome to the *Beginners data science for Python developers* learning path. The content in this learning path pairs with in-person workshops that run in Microsoft Reactors and are stand-alone learning resources. You don't have to come to a workshop to benefit from these modules.
@@ -16,7 +15,7 @@ summary: |
   
   In this learning path, you'll:
     - Learn about machine learning models for data science operations.
-    - Use Azure Cognitive Services APIs to test data.
+    - Use Azure AI Services APIs to test data.
     - Clean and manipulate data to prepare for analysis.
     - Work with your data in Visual Studio Code with Jupyter Notebooks.
     
@@ -41,6 +40,6 @@ modules:
 # learn.reactors.data-manipulate-clean
 - learn.reactors.introduction-machine-learning-models 
 - learn.reactors.simple-cloud-based-machine-learning
-- learn.reactors.test-azure-cognitive-services
+# learn.reactors.test-azure-cognitive-services
 trophy:
   uid: learn.reactors.beginners-python-data-science.trophy

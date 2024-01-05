@@ -1,4 +1,4 @@
-Visualizations, such as charts and graphs, can help you analyze your monitoring data to drill down on issues and identify patterns. Depending on the tool you use, you may also be able to share these visualizations with other users inside and outside of your organization.
+Visualizations such as charts and graphs can help you analyze your monitoring data to drill down on issues and identify patterns. Depending on the tool you use, you might also be able to share these visualizations with other users inside and outside of your organization.
 
 In this unit, you explore some of the ways you can build a monitoring and status dashboard for your application. You'll look at:
 
@@ -11,7 +11,7 @@ In this unit, you explore some of the ways you can build a monitoring and status
 
 ## What are Azure dashboards?
 
-[Dashboards](/azure/azure-portal/azure-portal-dashboards?azure-portal=true) enable you to create a focused and organized view in the Azure portal of your cloud resources. They provide a "single pane of glass" over your Azure infrastructure and services, enabling you to identify important issues more quickly.
+[Dashboards](/azure/azure-portal/azure-portal-dashboards?azure-portal=true) allow you to create a focused and organized view in the Azure portal of your cloud resources. They provide a "single pane of glass" over your Azure infrastructure and services, helping you to identify important issues more quickly.
 
 Here's an example dashboard:
 
@@ -35,7 +35,7 @@ Azure dashboards provide:
 
 ### Limitations of Azure dashboards
 
-Azure dashboards do not provide:
+Azure dashboards don't provide:
 
 * Full control over log visualizations.
 * Custom parameters support for log charts.
@@ -45,7 +45,7 @@ Azure dashboards do not provide:
 
 ## What are Azure Monitor workbooks?
 
-[Views in Azure Monitor](/azure/azure-monitor/platform/view-designer?azure-portal=true) enable you to create custom visualizations with log data. They are used by monitoring solutions to present the data they collect.
+[Views in Azure Monitor](/azure/azure-monitor/visualize/view-designer?azure-portal=true) enable you to create custom visualizations with log data. Monitoring solutions use them to present the data they collect.
 
 :::image type="content" source="../media/3-azure-monitor-views.png" alt-text="A screenshot showing Azure Monitor workbooks.":::
 
@@ -56,15 +56,15 @@ Azure Monitor workbooks provide:
 * Rich visualizations for log data.
 * Export and import views to transfer them to other resource groups and subscriptions.
 * Integration with Log Analytic management model with workspaces and monitoring solutions.
-* [Filters](/azure/azure-monitor/platform/view-designer-filters?azure-portal=true) for custom parameters.
+* [Filters](/azure/azure-monitor/visualize/view-designer-filters?azure-portal=true) for custom parameters.
 * Interactive views that can drill down into other views.
 
 ### Limitations of Azure Monitor workbooks
 
-Azure Monitor workbooks do not:
+Azure Monitor workbooks don't:
 
 * Support metrics data.
-* Provide personal views. Rather, views are available to all users with access to the workspace.
+* Provide personal views; rather, views are available to all users with access to the workspace.
 * Refresh data automatically.
 * Provide full layout options.
 * Provide support for querying across multiple workspaces or Application Insights applications.
@@ -72,9 +72,9 @@ Azure Monitor workbooks do not:
 
 ## What are Application Insights workbooks?
 
-[Workbooks](/azure/application-insights/app-insights-usage-workbooks?azure-portal=true) are interactive documents that provide deep insights into your data, investigation, and collaboration inside the team. Workbooks can serve as a troubleshooting guide or to capture details from an incident postmortem.
+[Workbooks](/azure/azure-monitor/visualize/workbooks-overview?azure-portal=true) are interactive documents that provide deep insights into your data, investigation, and collaboration inside the team. Workbooks can serve as a troubleshooting guide or to capture details from an incident postmortem.
 
-Here's a diagram to give you a sense of what a workbook looks like.
+Here's a diagram to give you a sense of what a workbook looks like:
 
 :::image type="content" source="../media/3-application-insights-workbooks.png" alt-text="A composite screenshot of an example Workbook showing pages for Analysis of Page Views, Usage, and Time Spent on Page.":::
 
@@ -83,7 +83,7 @@ Here's a diagram to give you a sense of what a workbook looks like.
 Application Insights workbooks:
 
 * Support both metrics and logs.
-* Support parameters that enable you to build interactive reports.
+* Support parameters that allow you to build interactive reports.
 
     For example, you might select an element in a table to dynamically update other charts and visualizations.
 * Provide a document-like flow.
@@ -92,14 +92,14 @@ Application Insights workbooks:
 
 ### Limitations of Application Insights workbooks
 
-Application Insights workbooks do not:
+Application Insights workbooks don't:
 
 * Refresh data automatically.
-* Provide a dense layout like dashboards provide. This makes workbooks less useful as a "single pane of glass".
+* Provide a dense layout like dashboards provide. This makes workbooks less useful as a "single pane of glass."
 
 ## What is Power BI?
 
-[Power BI](https://powerbi.microsoft.com/documentation/powerbi-service-get-started/?azure-portal=true) enables you to create business-centric dashboards and reports, as well as reports analyzing long-term KPI trends. You can [import the results of a log query](/azure/log-analytics/log-analytics-powerbi?azure-portal=true) into a Power BI dataset so you can combine data from different sources and share reports on the web and on mobile devices.
+[Power BI](/power-bi/fundamentals/service-get-started) allows you to create business-centric dashboards and reports, as well as reports analyzing long-term KPI trends. You can [import the results of a log query](/azure/azure-monitor/logs/log-powerbi?azure-portal=true) into a Power BI dataset so you can combine data from different sources and share reports on the web and on mobile devices.
 
 Here's what Power BI looks like:
 
@@ -117,15 +117,15 @@ Power BI provides:
 
 ### Limitations of Power BI
 
-Power BI does not:
+Power BI doesn't:
 
 * Support log data.
-* Integrate with Azure services. For example, you can't manage dashboards or models through Azure Resource Manager.
+* Integrate with Azure services; for example, you can't manage dashboards or models through Azure Resource Manager.
 * Refresh data more than eight times per day.
 
 ## Grafana
 
-[Grafana](https://grafana.com/?azure-portal=true) is an open platform that provides operational dashboards. It helps you detect, isolate, and triage operational incidents. You can add the [Grafana Azure Monitor data source plugin](/azure/azure-monitor/platform/grafana-plugin?azure-portal=true) to your Azure subscription to visualize your Azure metrics data.
+[Grafana](https://grafana.com/?azure-portal=true) is an open platform that provides operational dashboards. It helps you detect, isolate, and triage operational incidents. You can add the [Grafana Azure Monitor data source plugin](/azure/azure-monitor/visualize/grafana-plugin?azure-portal=true) to your Azure subscription to visualize your Azure metrics data.
 
 Here's what Grafana looks like:
 
@@ -141,14 +141,14 @@ Grafana provides:
 
 ### Limitations of Grafana
 
-Grafana does not:
+Grafana doesn't:
 
 * Support metrics data.
-* Integrate with Azure services. For example, you can't manage dashboards or models through Azure Resource Manager.
+* Integrate with Azure services; for example, you can't manage dashboards or models through Azure Resource Manager.
 
 ## Build your own custom application
 
-You can access log and metric data in Azure Monitor through its API by using REST calls. This feature enables you to build your own custom websites and applications.
+You can access log and metric data in Azure Monitor through its API by using REST calls. This feature lets you build your own custom websites and applications.
 
 ### Advantages of building your own custom application
 

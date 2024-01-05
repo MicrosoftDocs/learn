@@ -4,11 +4,11 @@ What if you also want your program to run a piece of code when your test express
 
 You know that when you use an `if` statement, the body of the program will run only if the test expression is `True`. To add more code that will run when your test expression is `False`, you need to add an `else` statement.
 
-Let's go back to the example from the previous section:
+Let's adapt an example from the previous section:
 
 ```python
-a = 93
-b = 27
+a = 27
+b = 93
 if a >= b:
     print(a)
 ```
@@ -16,13 +16,15 @@ if a >= b:
 In this example, if `a` isn't greater than or equal to `b`, nothing happens. Let's say you want to instead print `b` if the test expression is `False`:
 
 ```python
-a = 93
-b = 27
+a = 27
+b = 93
 if a >= b:
     print(a)
 else:
     print(b)
 ```
+
+Output: `93`
 
 If the test expression is `False`, the code in the body of the `if` statement is skipped, and the program continues running from the `else` statement. The syntax of an `if/else` statement is always:
 
@@ -38,15 +40,17 @@ else:
 In Python, the keyword `elif` is short for *else if*. Using `elif` statements enables you to add multiple test expressions to your program. These statements run in the order in which they're written, so your program will enter an `elif` statement only if the first `if` statement is `False`. For example:
 
 ```python
-a = 93
-b = 27
-if a >= b:
-    print("a is greater than or equal to b")
+a = 27
+b = 93
+if a <= b:
+    print("a is less than or equal to b")
 elif a == b:
     print("a is equal to b")
 ```
 
-The `elif` statement in this block of code won't run, because the `if` statement is `True`.
+Output: `a is less than or equal to b`
+
+In this variation, the `elif` statement in the block of code won't run, because the `if` statement is `True`.
 
 The syntax of an `if/elif` statement is:
 
@@ -61,15 +65,15 @@ elif test_expression:
 
 You can combine `if`, `elif`, and `else` statements to create programs with complex conditional logic. Remember that an `elif` statement is run only when the `if` condition is `false`.  Also note that an `if` block can have only one `else` block, but it can have multiple `elif` blocks.
 
-Let's look at the example again with an added `elif` statement:
+Let's look at an example with an `if`, an `elif` and an `else` statement:
 
 ```python
-a = 93
-b = 27
-if a > b:
-    print("a is greater than b")
-elif a < b:
+a = 27
+b = 93
+if a < b:
     print("a is less than b")
+elif a > b:
+    print("a is greater than b")
 else: 
     print ("a is equal to b")    
 ```

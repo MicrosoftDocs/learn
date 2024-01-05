@@ -3,9 +3,9 @@ uid: learn.azure.spatial-audio-tutorials-mrtk
 metadata:
   title: Activate spatial audio for your HoloLens 2 application
   description: Activate spatial audio for your HoloLens 2 application
-  ms.date: 09/13/2021
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
+  ms.date: 06/26/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 title: Activate spatial audio for your HoloLens 2 application
@@ -30,10 +30,10 @@ products:
 - azure
 - mrtk
 prerequisites: |
-  - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/develop/install-the-tools)
+  - A Windows 10 or 11 PC configured with [the correct tools](/windows/mixed-reality/develop/install-the-tools)
   - Windows 10 SDK 10.0.18362.0 or later
   - (Optional) A HoloLens 2 device configured for development
-  - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
+  - Unity Hub with Unity 2021.3 or later installed and the Universal Windows Platform Build Support module added
   - [Set up a mixed reality project in Unity module](/training/modules/mixed-reality-toolkit-project-unity)
   - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
   - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene

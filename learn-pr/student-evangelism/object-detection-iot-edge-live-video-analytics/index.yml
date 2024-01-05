@@ -7,8 +7,8 @@ metadata:
   author: leestott
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
   ms.custom: team=nextgen
+  ms.service: iot-edge
 title: "Object detection on Edge devices with Live Video Analytics using YOLO model"
 summary: "Use a Live Video Analytics module to deploy a machine learning solution to an IoT Edge device. The solution will process a video feed from cameras and detect objects at the edge using a YOLO model to perform inferencing operations. Check that the solution is successfully deployed and test your solution from a web application."
 abstract: |
@@ -19,7 +19,7 @@ abstract: |
     - Bring an AI model of your choice into the video analytics solution
     - Test a solution that will detect a person at the edge from a web application
 
-    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+    "***Produced in partnership with the University of Oxford – Ajit Jaokar, Artificial Intelligence: Cloud and Edge Implementations course.***"
 prerequisites: |
     - An Azure subscription
     - Ability to use Azure Cloud Shell

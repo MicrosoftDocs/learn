@@ -1,12 +1,13 @@
+
 Azure Cognitive Search uses the BM25 similarity ranking algorithm. The algorithm scores documents based on the search terms used.
 
 Here, you'll see how to add scoring profiles to alter the scores for documents based on your own criteria.
 
 ### How search scores are calculated
 
-Scoring is the last phase of processing a search query. 
+Scoring is the last phase of processing a search query.
 
-:::image type="content" source="../media/score-phase.png" alt-text="A diagram showing the score phase of search highlighted." border="false":::
+:::image type="content" source="../media/score-phase-small.png" alt-text="A diagram showing the score phase of search highlighted." lightbox="../media/score-phase.png"border="false":::
 
 The search engine scores the documents returned from the first three phases. The score is a function of the number of times identified search terms appear in a document, the document's size, and the rarity of each of the terms. By default, the search results are ordered by their search score, highest first. If two documents have an identical search score, you can break the tie by adding an `$orderby` clause.
 
@@ -30,11 +31,10 @@ You can add up to 100 scoring profiles to a search index. The simplest way to cr
 1. Select **Indexes**, then select the index to add a scoring profile to.
 1. Select **Scoring profiles**.
 1. Select **+ Add scoring profile**.
-1. In **Profile name**, enter a unique name, then select **Add scoring profile**.
-1. Select **Add weights**, in *Field name*, then select a field.
-1. In **Weight**, enter a weight value.
-1. To set the scoring profile as a default to be applied to all searches, select the more menu **...**
-1. Select **Set as default profile**.
+1. In **Profile name**, enter a unique name.
+1. To set the scoring profile as a default to be applied to all searches select **Set as default profile**.
+1. In **Field name**, select a field. Then for **Weight**, enter a weight value.
+1. Select **Save**.
 
 :::image type="content" source="../media/azure-portal-scoring-profiles.png" alt-text="A screenshot of the Azure portal scoring profiles pane.":::
 

@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Get started with data concepts
 summary: Businesses rely on data. Understanding data is key to many business operations. This module covers what data is, when to sort and filter data, and when to calculate derived values from data.
 abstract: |

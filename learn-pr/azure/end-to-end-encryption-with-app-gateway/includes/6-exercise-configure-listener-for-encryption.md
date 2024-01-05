@@ -1,6 +1,6 @@
-Now that you've configured the certificates for Azure Application Gateway and the backend pool, you can create a listener to handle incoming requests. The listener will wait for messages, decrypt them by using the private key, then route these messages to the backend pool.
+Now that you've configured the certificates for Azure Application Gateway and the backend pool, you can create a listener to handle incoming requests. The listener waits for messages, decrypt them by using the private key, then route these messages to the backend pool.
 
-In this unit, you'll set up the listener with port 443 and with the SSL certificate that you created in the first exercise. The following image highlights the elements you'll set up in this exercise.
+In this unit, you set up the listener with port 443 and with the SSL certificate that you created in the first exercise. The following image highlights the elements you set up in this exercise.
 
 ![Diagram that highlights the elements (frontend port, SSL certificate for Application Gateway, listener, and rule) created in this exercise.](../media/6-exercise-elements.svg)
 
@@ -13,7 +13,7 @@ In this unit, you'll set up the listener with port 443 and with the SSL certific
       --resource-group $rgName \
       --gateway-name gw-shipping \
       --name https-port \
-      --port 443
+      --port 8443
     ```
 
 1. Upload the SSL certificate for Application Gateway. The setup script generated this certificate in the previous exercise. The certificate is stored in the *appgateway.pfx* file in the *server-config* folder.
@@ -51,6 +51,7 @@ In this unit, you'll set up the listener with port 443 and with the SSL certific
         --http-listener https-listener \
         --http-settings https-settings \
         --rule-type Basic
+        --priority 102
     ```
 
 ## Test the application gateway

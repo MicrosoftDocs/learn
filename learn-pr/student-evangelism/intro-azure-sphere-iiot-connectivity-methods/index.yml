@@ -7,8 +7,8 @@ metadata:
   author: leestott
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
   ms.custom: team=nextgen
+  ms.service: azure-sphere
 title: "Introduction to Azure Sphere for industrial IoT connectivity"
 summary: "Characterize the types of connectivity options available to the Azure Sphere in an Industrial IoT scenario. Describe the functionality of each of the connectivity options and show how they can be combined to solve complex industrial IoT problems. "
 abstract: |
@@ -17,7 +17,7 @@ abstract: |
     - Determine the pros and cons of each connectivity method
     - Provide a framework for the selection of the correct connectivity methods for Enterprise and Industrial IoT scenarios
 
-    ***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***
+    ***Produced in partnership with the University of Oxford – Ajit Jaokar, Artificial Intelligence: Cloud and Edge Implementations course.***
 prerequisites: |
     - Basic knowledge of IoT
     - Basic knowledge of Azure Sphere

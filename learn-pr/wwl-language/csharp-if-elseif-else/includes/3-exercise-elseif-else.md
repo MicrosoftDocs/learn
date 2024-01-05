@@ -1,4 +1,3 @@
-
 In the previous unit, you used multiple `if` statements to implement the rules of a game. However, at the end of the unit, you noticed that more expressive `if` statements are needed to fix a subtle bug in your code.
 
 In this exercise, you'll use `if`, `else`, and `else if` statements to improve the branching options in your code and fix a logic bug.

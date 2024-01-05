@@ -1,9 +1,10 @@
 
+
 A very important part of Windows Defender is a firewall. You can access firewall settings from Windows Security center or you can find these options in Control Panel, in the Network and Sharing Center and System and Security items. In System and Security, you can configure basic Windows Defender Firewall settings and access the Action Center to view notifications for firewall alerts. In the Network and Sharing Center, you can configure all types of network connections, such as changing the network location profile. You also can configure basic Windows Defender Firewall settings in the Windows Security Center.
 
 You cannot configure all Windows Defender Firewall settings in the Windows Security Center. Some links in the Windows Security Center open the Windows Defender Firewall page in Control Panel.
 
-For Windows computers enrolled in Intune or joined to Azure AD, you can use Microsoft Intune to manage settings for Windows Firewall. These settings are part of the Endpoint protection device configuration profile. When you choose to create a new device configuration profile in Intune and select Endpoint protection, you will be presented with settings available for Windows Firewall. You can manage all features discussed later in this unit by using Microsoft Intune. For computers in Azure AD, this is the recommended way to manage firewall settings.
+For Windows computers enrolled in Intune or joined to Microsoft Entra ID, you can use Microsoft Intune to manage settings for Windows Firewall. These settings are part of the Endpoint protection device configuration profile. When you choose to create a new device configuration profile in Intune and select Endpoint protection, you will be presented with settings available for Windows Firewall. You can manage all features discussed later in this unit by using Microsoft Intune. For computers in Microsoft Entra ID, this is the recommended way to manage firewall settings.
 
 :::image type="content" source="../media/intune-defender-firewall-38526165.png" alt-text="Screenshot of Windows Defender Firewall.":::
 

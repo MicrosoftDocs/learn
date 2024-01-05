@@ -1,4 +1,4 @@
-Some applications place greater demands on data storage than others. Apps such as Dynamics CRM, Exchange Server, SAP Business Suite, SQL Server, Oracle, and SharePoint require constant high performance and low latency to run at their best.
+Some applications place greater demands on storage than others. Apps such as Dynamics CRM, Exchange Server, SAP Business Suite, SQL Server, Oracle, and SharePoint require constant high performance and low latency to run at their best.
 
 When creating your VMs or adding new disks, you have a few choices that will have a dramatic impact on disk performance, starting with the *type* of storage you choose.
 
@@ -6,11 +6,17 @@ When creating your VMs or adding new disks, you have a few choices that will hav
 
 Azure Disks are designed for 99.999% availability. 
 
-There are four performance tiers for storage that you can choose from when creating your disks: Ultra disks, Premium SSD Disks, Standard SSD, and Standard HDD storage. Depending on the VM size, you can mix and match these disk types.
+There are five types of disks you can choose when creating a managed disk: Ultra disks, Premium SSD v2,  Premium SSD, Standard SSD, and Standard HDD storage. Depending on the VM size, you can mix and match these disk types.
 
 ### Ultra Disk
 
-Azure Ultra Disks deliver high throughput, high IOPS, and consistent low-latency disk storage for Azure IaaS VMs. Ultra Disks include the ability to dynamically change the performance of the disk without the need to restart your virtual machines (VM). Ultra disks are suited for data-intensive workloads such as SAP HANA, top tier databases, and transaction-heavy workloads. You can only use Ultra disks as data disks. We recommend using premium SSDs as OS disks.
+Azure Ultra Disks deliver high throughput, high IOPS, and consistent low-latency disk storage for Azure IaaS VMs. Ultra Disks include the ability to dynamically change the performance of the disk without the need to restart your virtual machines (VM). Ultra disks are suited for data-intensive workloads such as SAP HANA, top tier databases, and transaction-heavy workloads. You can only use Ultra disks as data disks. We recommend using Premium SSDs as OS disks.
+
+### Premium SSD v2
+
+Premium SSD v2 offers higher performance than Premium SSDs while also generally being less costly. You can individually tweak the performance (capacity, throughput, and IOPS) of Premium SSD v2 disks at any time, allowing workloads to be cost efficient while meeting shifting performance needs. For example, a transaction-intensive database may need a large amount of IOPS at a small size, or a gaming application may need a large amount of IOPS but only during peak hours. Because of this, for most general purpose workloads, Premium SSD v2 can provide the best price performance. Premium SSD v2 is suited for a broad range of workloads such as SQL server, Oracle, MariaDB, SAP, Cassandra, Mongo DB, big data/analytics, and gaming, on virtual machines or stateful containers.
+
+You can only use Premium SSD v2 as data disks, we recommend using Premium SSDs as OS disks.
 
 ### Premium SSD
 
@@ -28,58 +34,33 @@ You can use standard SSDs with any VM size, including VM sizes that don't suppor
 
 Standard HDD disks are backed by traditional hard disk drives (HDDs). Standard HDD disks are billed at a lower rate than the Premium disks. You can use Standard HDD disks with any VM size.
 
-### Unmanaged versus managed disks
-
-When you create VMs or VHDs, you have the choice to use **unmanaged** or **managed** disks.
-
-With unmanaged disks, you are responsible for the storage accounts used to hold the VHDs that correspond to your VM disks. You pay the storage account rates for the amount of space you use. A single storage account has a fixed rate limit of 20,000 I/O operations/sec. This means that a single storage account is capable of supporting 40 standard virtual hard disks at full throttle. If you need to scale out, then you need more than one storage account, which can get complicated.
-
-Managed disks are the newer and **recommended disk storage model**. They elegantly solve this complexity by putting the burden of managing the storage accounts onto Azure. You specify the disk type and the size of the disk, and Azure creates and manages both the disk *and* the storage it uses. You don't have to worry about storage-account limits, which makes them easier to scale out. Here are some of the benefits you get over the older unmanaged disks:
-
-- **Increased reliability**: Azure ensures that VHDs associated with high-reliability VMs will be placed in different parts of Azure storage to provide similar levels of resilience.
-- **Better security**: Managed disks are managed resources in the resource group. This means they can use role-based access control to restrict who can work with the VHD data.
-- **Snapshot support**: You can use snapshots to create a read-only copy of a VHD. You have to shut down the owning VM, but creating the snapshot only takes a few seconds. Once it's done, you can power on the VM and use the snapshot to create a duplicate VM to troubleshoot a production issue or roll back the VM to the point in time that the snapshot was taken.
-- **Backup support**: Managed disks can be automatically backed up to different regions for disaster recovery with Azure Backup all without affecting the service of the VM.
-
-With all the additional benefits, including the guaranteed performance characteristics, you should always choose managed disks for new VMs.
-
 ### Disk comparison
 
 The following table provides a comparison of Ultra disk, Premium SSD, Standard SSD, and Standard HDD to help you decide what to use.
 
-| | Ultra Disk   | Premium SSD   | Standard SSD   | Standard HDD   |
-|---------|---------|---------|---------|---------|
-| **Disk type** |SSD   |SSD   |SSD   |HDD   |
-| **Scenario** |IO-intensive workloads such as SAP HANA, top tier databases (for example, SQL, Oracle), and other transaction-heavy workloads.   |Production and performance sensitive workloads   |Web servers, lightly used enterprise applications and dev/test   |Backup, non-critical, infrequent access   |
-| **Max disk size** |65,536 gibibyte (GiB)    |32,767 GiB    |32,767 GiB   |32,767 GiB   |
-| **Max throughput** |2,000 MiB/s    |900 MiB/s   |750 MiB/s   |500 MiB/s   |
-| **Max IOPS** |160,000    |20,000   |6,000   |2,000   |
+
+|         | Ultra disk | Premium SSD v2 | Premium SSD | Standard SSD | <nobr>Standard HDD</nobr> |
+| ------- | ---------- | ----------- | ------------ | ------------ | ------------ |
+| **Disk type** | SSD | SSD |SSD | SSD | HDD |
+| **Scenario**  | IO-intensive workloads such as [SAP HANA](/azure/sap/workloads/hana-vm-operations-storage), top tier databases (for example, SQL, Oracle), and other transaction-heavy workloads. | Production and performance-sensitive workloads that consistently require low latency and high IOPS and throughput | Production and performance sensitive workloads | Web servers, lightly used enterprise applications and dev/test | Backup, non-critical, infrequent access |
+| **Max disk size** | 65,536 GiB | 65,536 GiB |32,767 GiB | 32,767 GiB | 32,767 GiB |
+| **Max throughput** | 4,000 MB/s | 1,200 MB/s | 900 MB/s | 750 MB/s | 500 MB/s |
+| **Max IOPS** | 160,000 | 80,000 | 20,000 | 6,000 | 2,000, 3,000* |
+| **Usable as OS Disk?** | No | No | Yes | Yes | Yes |
 
 Next, we'll go into more detail on disk performance.
 
 ## Data replication
 
-The data in your Microsoft Azure storage account is automatically replicated to ensure durability and high availability. Azure Storage replication copies your data so that it's protected from planned and unplanned events like transient hardware failures, network or power outages, natural disasters, and so on. You can choose to replicate your data within the same data center, across zonal data centers within the same region, and even across regions.
+The data in your managed disk is automatically replicated to ensure durability and high availability. Azure Storage replication copies your data so that it's protected from planned and unplanned events like transient hardware failures, network or power outages, natural disasters, and so on. You can choose to replicate your data within the same data center, across zonal data centers within the same region, and even across regions.
 
 There are several types of replication:
 
 - **Locally redundant storage (LRS)**: Azure replicates the data within the same Azure data center. The data remains available if a node fails. However, if an entire data center fails, data may be unavailable.
-- **Geo-redundant storage (GRS)**: Azure replicates your data to a second region that is hundreds of miles away from the primary region. If your storage account has GRS enabled, then your data is durable even if there's a complete regional outage or a disaster in which the primary region isn't recoverable.
 - **Zone-redundant storage (ZRS)**: Azure replicates your data synchronously across three storage clusters in a single region. Each storage cluster is physically separated from the others and resides in its own availability zone (AZ). With this type of replication, you can still access and manage your data in the event that a zone becomes unavailable.
-- **Geo-zone-redundant storage (GZRS)**: Azure replicates your data synchronously across three availability zones in one region. Data is also replicated three times to another secondary region that's paired with it.
-
-Standard storage accounts support all replication types, but premium storage accounts only support locally redundant storage (LRS). Since VMs themselves run in a single region, this restriction isn't usually an issue for VHD storage.
 
 ## Disk performance
 
-The performance of your disks depends on the type of disk you chose. Each disk is rated to a specific number of I/O operations per second, or IOPS (pronounced "eye-ops"). In addition, each drive has a throughput rating, which determines how much data you can read or write in a second. The combination of these two determines how fast the disk is.
+For most disks, the performance of a disk is determined by its performance tier, which is determined by the capacity of the disk. However, Ultra Disks and Premium SSD v2 offer the ability to set individual performance characteristics independently of the size of the disk. 
 
-For example, with standard storage, you get a maximum of **500 IOPS and 60 MB/second** throughput per disk (even on SSDs). With premium storage, the IOPS depend on the premium disks you choose and the VM size.
-
-|  | P4 | P6 | P10 | P15 | P20 | P30 | P40 | P50 | P60 | P70 | P80 |
-|--|----|----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| **Disk Size** | 32 GiB | 64 GiB | 128 GiB | 256 Gib | 512 GiB | 1 TiB | 2 TiB | 4 TiB | 8 TiB | 16 TiB | 32 TiB |
-| **Max IOPS per disk** | 120 | 240 | 500 | 1,100 | 2300 | 5000 | 7500 | 7500 | 16,000 | 18,000 | 20,000 |
-| **Max Throughput per disk** | 25 MB/sec | 50 MB/sec | 100 MB/sec | 125 MB/sec | 150 MB/sec| 200 MB/sec | 250 MB/sec | 250 MB/sec | 500 MB/sec | 750 MB/sec | 900 MB/sec |
-
-As you can see, you can go from **25 MB/sec** and **120 IOPS** to **900 MB/sec** and **20,000 IOPS**.
+There are a few other ways to alter the performance of your disk. You can change the performance tier of a Premium SSD, independent of the size of the disk. Both Premium SSD and Standard SSD offer disk bursting, as well.

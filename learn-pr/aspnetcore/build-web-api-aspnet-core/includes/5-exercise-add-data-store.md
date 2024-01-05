@@ -18,7 +18,7 @@ In this unit, that data store is a simple local in-memory caching service. In a 
 
     The project root now contains a *:::no-loc text="Models":::* directory with an empty *:::no-loc text="Pizza.cs":::* file. The directory name *:::no-loc text="Models":::* is a convention. The directory name comes from the *model*-view-controller architecture that the web API uses.
 
-1. Add the following code to *:::no-loc text="Models/Pizza.cs":::* to define a pizza. Save your changes.
+1. Add the following code to *:::no-loc text="Models/Pizza.cs":::* and save your changes. This class defines a pizza.
 
     ```csharp
     namespace ContosoPizza.Models;
@@ -43,7 +43,7 @@ In this unit, that data store is a simple local in-memory caching service. In a 
 
     ![Screenshot of Visual Studio Code that shows adding a new file to the Services folder.](../media/add-pizza-service-file.png)
 
-1. Add the following code to *:::no-loc text="Services/PizzaService.cs":::* to create an in-memory pizza data service. Save your changes.
+1. Add the following code to *:::no-loc text="Services/PizzaService.cs":::* and save your changes. This code creates an in-memory pizza data service.
 
     ```csharp
     using ContosoPizza.Models;
@@ -93,7 +93,7 @@ In this unit, that data store is a simple local in-memory caching service. In a 
     }
     ```
 
-    This service provides a simple in-memory data caching service with two pizzas by default. Our web API will use that service for demo purposes. When you stop and start the web API, the in-memory data cache will be reset to the two default pizzas from the constructor of `PizzaService`.
+    This service provides a simple in-memory data caching service with two pizzas by default. Our web API uses that service for demo purposes. When you stop and start the web API, the in-memory data cache is reset to the two default pizzas from the constructor of `PizzaService`.
 
 ## Build the web API project
 

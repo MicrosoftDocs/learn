@@ -89,11 +89,11 @@ Add more units as needed for your content
     Clean up your Azure resources
 
     1. Clean up Azure AD resources
-    
+
 ## Notes
 
 Note any additional information that may be beneficial to this content such as links, reference material, and so on.
 
 ## Learn more
 
- You can also learn about App Service in the [Deploy a website to Azure with Azure App Service](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service/) learning path.
+ You can also learn about App Service in the [Deploy a website to Azure with Azure App Service](https://learn.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service/) learning path.

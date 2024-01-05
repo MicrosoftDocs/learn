@@ -38,11 +38,11 @@ To address this new world of computing, Microsoft highly recommends the Zero Tru
  -  **Use least privilege access** \- Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
  -  **Assume breach** \- Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses.
 
-## Microsoft's Zero Trust architecture
+## Microsoft's Zero Trust architecture<br>
 
-Below is a simplified reference architecture for our approach to implementing Zero Trust. The primary components of this process are Intune for device management and device security policy configuration, Azure AD conditional access for device health validation, and Azure AD for user and device inventory.
+Below is a simplified reference architecture for our approach to implementing Zero Trust. The primary components of this process are Intune for device management and device security policy configuration, Microsoft Entra Conditional Access for device health validation, and Microsoft Entra ID for user and device inventory.
 
-The system works with Intune, pushing device configuration requirements to the managed devices. The device then generates a statement of health, which is stored in Azure AD. When the device user requests access to a resource, the device health state is verified as part of the authentication exchange with Azure AD.
+The system works with Intune, pushing device configuration requirements to the managed devices. The device then generates a statement of health, which is stored in Microsoft Entra ID. When the device user requests access to a resource, the device health state is verified as part of the authentication exchange with Microsoft Entra ID.
 
 :::image type="content" source="../media/az500-zero-trust-architecture-d7277787.png" alt-text="MFA is used to ensure conditions are met before accessing resources.":::
 

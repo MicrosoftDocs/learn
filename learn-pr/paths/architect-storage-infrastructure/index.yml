@@ -7,8 +7,7 @@ metadata:
   ms.date: 10/23/2019
   author: tamram
   ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Architect storage infrastructure in Azure
 summary: Learn how to architect storage solutions for your applications in Azure.
 prerequisites: None

@@ -8,7 +8,7 @@ This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/), [
 
 ## Create a new Blazor app
 
-To set up a Blazor project to work with, we'll use Visual Studio Code. Visual Studio Code includes an integrated terminal, which makes creating a new project easy. If you don't want to use another code editor, you can run the commands in this module in a terminal.
+To set up a Blazor project to work with, we use Visual Studio Code. Visual Studio Code includes an integrated terminal, which makes creating a new project easy. If you don't want to use another code editor, you can run the commands in this module in a terminal.
 
 1. In Visual Studio Code, select **File** > **Open Folder**.
 
@@ -65,7 +65,7 @@ To set up a Blazor project to work with, we'll use Visual Studio Code. Visual St
     dotnet watch run
     ```
 
-    This will build and start the app, then rebuild and restart the app whenever you make code changes. The app should automatically open in your default browser. Your browser might warn you that the site isn't secure; it's safe to proceed.
+    This command builds and starts the app, then rebuilds and restarts the app whenever you make code changes. The app should automatically open in your default browser. Your browser might warn you that the site isn't secure; it's safe to proceed.
 
     ![Screenshot showing the default Blazor app running in a browser.](../media/hello-blazor.png)
 
@@ -75,7 +75,7 @@ To set up a Blazor project to work with, we'll use Visual Studio Code. Visual St
 
 ## Create a new Blazor app
 
-To set up a Blazor project to work with, we'll use Visual Studio 2022. Visual Studio Code includes integrated templates and compiler, which makes creating and building a new project easy.
+To set up a Blazor project to work with, we use Visual Studio 2022. Visual Studio Code includes integrated templates and compiler, which makes creating and building a new project easy.
 
 1. In Visual Studio 2022, select **File** > **New Project**.
 
@@ -91,7 +91,7 @@ To set up a Blazor project to work with, we'll use Visual Studio 2022. Visual St
 
 1. This command creates a basic Blazor server project with all required files and pages.
 
-  You should now have access to these files and your solution explorer in Visual Studio 2022 will look similar to the following:
+  You should now have access to these files. Your Solution Explorer in Visual Studio 2022 looks similar to the following screenshot:
 
   ![Screenshot of Visual Studio 2022 Solution Explorer with a list of the files in a default Blazor Server project.](../media/visual-studio-2022-solution-explorer.png)
 
@@ -99,10 +99,10 @@ To set up a Blazor project to work with, we'll use Visual Studio 2022. Visual St
 
 1. In Visual Studio, select **Debug** > **Start Debugging**
 
-    This will build and start the app, then rebuild and restart the app whenever you make code changes. The app should automatically open in your default browser. Your browser might warn you that the site isn't secure; it's safe to proceed.
+    This command builds and starts the app, then rebuilds and restarts the app whenever you make code changes. The app should automatically open in your default browser. Your browser might warn you that the site isn't secure; it's safe to proceed.
 
     ![Screenshot showing the default Blazor app running in a browser.](../media/hello-blazor.png)
 
 ::: zone-end
 
-You'll use this Blazor app in the following exercises.
+Use this Blazor app in the following exercises.

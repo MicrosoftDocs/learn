@@ -6,7 +6,7 @@ There are volumes of literature extolling the virtues of GitHub. It's beyond the
 
 ### Version control
 
-GitHub exclusively uses **Git**, arguably the best version-control system around. However, Git is incredibly sophisticated, and can present some complex scenarios for working with code that your team may not be experienced with. *Branches* and *pull requests* are a fundamental part of day-to-day life for developers using Git, so understanding when and how to use them effectively is necessary to be successful on GitHub. It's worthwhile for your team to first be familiar with [the GitHub flow](https://guides.github.com/introduction/flow/?azure-portal=true) so you can hit the ground running.
+GitHub exclusively uses **Git**, arguably the best version-control system around. However, Git is incredibly sophisticated and can present some complex scenarios for working with code with which your team might not be experienced. *Branches* and *pull requests* are a fundamental part of day-to-day life for developers using Git, so understanding when and how to use them effectively is necessary to being successful on GitHub. It's worthwhile for your team to first become familiar with [the GitHub flow](https://guides.github.com/introduction/flow/?azure-portal=true) so you can hit the ground running.
 
 ### Keep your code in the cloud
 
@@ -17,7 +17,7 @@ A large amount of project code is still stored in legacy version-control systems
 
 ### Collaboration
 
-GitHub offers excellent support for team collaboration through features like issues, pull requests, and code reviews. However, the GitHub flow may differ from the practices to which your team is currently accustomed. It's a good idea to consider whether the team will adapt to GitHub, retain its given process, or meet somewhere in the middle before completing the migration.
+GitHub offers excellent support for team collaboration through features like issues, pull requests, and code reviews. However, the GitHub flow might differ from the practices to which your team is currently accustomed. It's a good idea to consider whether the team will adapt to GitHub, retain its given process, or meet somewhere in the middle before completing the migration.
 
 If your project is an open-source project that allows outside contributors, there's no better option than GitHub for maximizing the benefits.
 
@@ -29,21 +29,21 @@ The most important consideration before executing your migration to GitHub is wh
 
 However, if you want to retain version-control history, you'll need to import using the **GitHub Migrator tool**. For more information about the import support for different version-control platforms, check out [Importing data from third-party version control systems](https://docs.github.com/enterprise-server@3.7/admin/user-management/migrating-data-to-and-from-your-enterprise/importing-data-from-third-party-version-control-systems).
 
-Beyond Git data, you may also have a desire to retain issues, pull requests, or other data. Support for these items will vary by platform, and is generally available from community projects. This module does not cover migrating non-Git data.
+Beyond Git data, you might also want to retain issues, pull requests, or other data. Support for these items varies by platform, and is generally available from community projects. This module doesn't cover migrating non-Git data.
 
 ### Handling binary files currently stored in your project
 
-As a best practice, GitHub repositories should be limited to the files necessary for building projects. Avoid committing large binary files such as build artifacts. Binary files like spreadsheets and presentations are better suited to be tracked on portals that understand how to serve and version them properly. If you have a need to version large binary files, consider using the [Git LFS](https://git-lfs.github.com/?azure-portal=true) (Large File Storage) Git extension.
+As a best practice, GitHub repositories should be limited to the files necessary for building projects. Avoid committing large binary files such as build artifacts. Binary files like spreadsheets and presentations are better suited to be tracked on portals that understand how to serve and version them properly. If you need to version large binary files, consider using the [Git LFS](https://git-lfs.github.com/?azure-portal=true) (Large File Storage) Git extension.
 
 ### Creating important Git files like .gitignore
 
-Git supports `.gitignore` files to help enforce version-control file policies. These files define the search patterns used to exclude files and folders from source-control tracking. The following simple example recursively excludes **any** folders called *Bin* or *bin*, as well as their contents, from source-control tracking.
+Git supports `.gitignore` files to help enforce version-control file policies. These files define the search patterns used to exclude files and folders from source-control tracking. The following simple example recursively excludes **any** folders called *Bin* or *bin*, as well as their contents, from source-control tracking:
 
 ```.gitignore
 [Bb]in/
 ```
 
-Learn more about [Ignoring files](https://docs.github.com/get-started/getting-started-with-git/ignoring-files). Also check out the collection of starter `.gitignore` files offered for various platforms in the [gitignore repository](https://github.com/github/gitignore?azure-portal=true).
+You can learn more about [Ignoring files](https://docs.github.com/get-started/getting-started-with-git/ignoring-files). You can also check out the collection of starter `.gitignore` files offered for various platforms in the [gitignore repository](https://github.com/github/gitignore?azure-portal=true).
 
 There are several other files commonly used in GitHub projects to explain different policies to repository consumers and contributors. Even if your project is private and restricted to a limited audience, it can still be useful to explicitly articulate these policies. While none of these files are required, we've listed a few of the common ones here.
 

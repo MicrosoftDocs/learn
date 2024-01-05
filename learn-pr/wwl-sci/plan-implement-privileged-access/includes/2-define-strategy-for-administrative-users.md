@@ -1,15 +1,15 @@
 ## What is Privileged identity management (PIM)?
 
-PIM is a service in Azure Active Directory (Azure AD), part of Entra, for managing access to privileged resources. PIM enables you to manage, control, and monitor access to important resources in your organization. Such resources include those in Azure AD, Azure, and other Microsoft Online Services, such as Microsoft 365 or Microsoft Intune.
+PIM is a service in Microsoft Entra ID, for managing access to privileged resources. PIM enables you to manage, control, and monitor access to important resources in your organization. Such resources include those in Microsoft Entra ID, Azure, and other Microsoft Online Services, such as Microsoft 365 or Microsoft Intune.
 
 ## What does PIM do?
 
 PIM provides time-based and approval-based role activation to access resources. This helps to mitigate the risks of excessive, unnecessary, or misused access permissions on resources that you care about. Key features of PIM include:
 
- -  Provide just-in-time privileged access to Azure AD and Azure resources
+ -  Provide just-in-time privileged access to Microsoft Entra ID and Azure resources
  -  Assign time-bound access to resources using start and end dates
  -  Require approval to activate privileged roles
- -  Enforce Azure AD Multi-Factor Authentication to activate any role
+ -  Enforce Azure Multifactor Authentication to activate any role
  -  Use justification to understand why users activate
  -  Get notifications when privileged roles are activated
  -  Conduct access reviews to ensure users still need roles
@@ -22,7 +22,7 @@ Before you deploy PIM in your organization, follow the instructions and understa
 
 ## Identify your stakeholders
 
-The following section helps you identify all the stakeholders who are involved in the project. You'll look at who needs to approve, review, or stay informed. It includes separate tables for deploying PIM for Azure AD roles and PIM for Azure roles. Add stakeholders to the following table as appropriate for your organization.
+The following section helps you identify all the stakeholders who are involved in the project. You'll look at who needs to approve, review, or stay informed. It includes separate tables for deploying PIM for Microsoft Entra roles and PIM for Azure roles. Add stakeholders to the following table as appropriate for your organization.
 
 SO = Approval on this project
 
@@ -30,7 +30,7 @@ R = Review this project and provide input
 
 I = Informed of this project
 
-### Stakeholders: Privileged Identity Management for Azure AD roles
+### Stakeholders: Privileged Identity Management for Microsoft Entra roles
 
 | **Name**                       | **Role**                                                                                                                                                                                                                         | **Action** |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
@@ -57,25 +57,25 @@ If your goal is to deploy PIM for Azure resources, follow our "Discover Azure re
 
 ## Enforce principle of least privilege
 
-It's important to make sure that you've enforced the principle of least privilege in your organization for both your Azure AD and your Azure roles.
+It's important to make sure that you've enforced the principle of least privilege in your organization for both your Microsoft Entra D and your Azure roles.
 
 ### Plan least privilege delegation
 
-For Azure AD roles, it's common for organizations to assign the Global Administrator role to a number of administrators when most administrators only need one or two specific and less-powerful administrator roles. With a large number of Global Administrators or other high-privilege roles, it's hard to track your privileged role assignments closely enough.
+For Microsoft Entra roles, it's common for organizations to assign the Global Administrator role to a number of administrators when most administrators only need one or two specific and less-powerful administrator roles. With a large number of Global Administrators or other high-privilege roles, it's hard to track your privileged role assignments closely enough.
 
-Follow these steps to implement the principle of least privilege for your Azure AD roles.
+Follow these steps to implement the principle of least privilege for your Microsoft Entra roles.
 
-1. Understand the granularity of the roles by reading and understanding the available Azure AD administrator roles. You and your team should also reference administrator roles by identity task in Azure AD, which explains the least privileged role for specific tasks.
-1. List who has privileged roles in your organization. You can use the PIM Discovery and insights (preview) to reduce your exposure.
+1.  Understand the granularity of the roles by reading and understanding the available Microsoft Entra administrator roles. You and your team should also reference administrator roles by identity task in Microsoft Entra ID, which explains the least privileged role for specific tasks.
+2.  List who has privileged roles in your organization. You can use the PIM Discovery and insights (preview) to reduce your exposure.
     
     :::image type="content" source="../media/new-preview-page-6eed0acb.png" alt-text="Screenshot of the Discovery and insights page to reduce exposure via privileged roles.":::
     
-1. For all Global Administrators in your organization, find out why they need the role. Then remove them from the Global Administrator role and assign built-in roles or custom roles with lower privilege inside Azure AD. FYI, Microsoft currently only has about 10 administrators with the Global Administrator role.
-1. For all other Azure AD roles, review the list of assignments, identify administrators who no longer need the role, and remove them from their assignments.
+3.  For all Global Administrators in your organization, find out why they need the role. Then remove them from the Global Administrator role and assign built-in roles or custom roles with lower privilege inside Microsoft Entra ID. FYI, Microsoft currently only has about 10 administrators with the Global Administrator role.
+4.  For all other Microsoft Entra roles, review the list of assignments, identify administrators who no longer need the role, and remove them from their assignments.
 
-To automate the last two steps, you can use access reviews in PIM. Following the steps in "Start an access review for Azure AD roles in Privileged Identity Management," you can set up an access review for every Azure AD role that has one or more members.
+To automate the last two steps, you can use access reviews in PIM. Following the steps in "Start an access review for Microsoft Entra roles in Privileged Identity Management," you can set up an access review for every Microsoft Entra ID role that has one or more members.
 
-:::image type="content" source="../media/create-access-review-e113cf95.jpg" alt-text="Screenshot of the Create an access review pane for Azure AD roles, within Privileged Identity Manager.":::
+:::image type="content" source="../media/create-access-review-ed0391c1.png" alt-text="Screenshot of the Create an access review pane for Microsoft Entra roles, within Privileged Identity Manager.":::
 
 
 Set the reviewers to **Members (self)**. All users in the role will receive an email asking them to confirm that they need the access. Also, turn on **Require reason on approval** in the advanced settings so that users must state why they need the role. Based on this information, you can remove users from unnecessary roles or delegate them to more granular administrator roles.
@@ -88,19 +88,19 @@ For Azure subscriptions and resources, you can set up a similar Access review pr
 
 If you're in the Global Administrator role trying to deploy PIM for Azure roles in your organization, you can elevate access to manage all Azure subscriptions, to get access to each subscription. You can then find each subscription owner and work with them to remove unnecessary assignments and minimize owner role assignment.
 
-Users with the Owner role for an Azure subscription can also use access reviews for Azure resources to audit and remove unnecessary role assignments similar to the process described earlier for Azure AD roles.
+Users with the Owner role for an Azure subscription can also use access reviews for Azure resources to audit and remove unnecessary role assignments similar to the process described earlier for Microsoft Entra roles.
 
 ## Decide which role assignments should be protected by Privileged Identity Management
 
 After cleaning up privileged role assignments in your organization, you'll need to decide which roles to protect with PIM.
 
-If a role is protected by PIM, eligible users assigned to it must elevate to use the privileges granted by the role. The elevation process might also include obtaining approval, using Azure AD Multi-Factor Authentication, and providing the reason they're activating. PIM can also track elevations through notifications and the PIM and Azure AD audit event logs.
+If a role is protected by PIM, eligible users assigned to it must elevate to use the privileges granted by the role. The elevation process might also include obtaining approval, using Azure Multifactor Authentication, and providing the reason they're activating. PIM can also track elevations through notifications and the PIM and Microsoft Entra audit event logs.
 
-Choosing which roles to protect with PIM can be difficult and will be different for each organization. This section provides our best practices for Azure AD and Azure roles.
+Choosing which roles to protect with PIM can be difficult and will be different for each organization. This section provides our best practices for Microsoft Entra roles and Azure roles.
 
-### Azure AD roles
+### Microsoft Entra roles
 
-It's important to prioritize protecting Azure AD roles that have the most permissions. Based on usage patterns among all PIM customers, the top 10 Azure AD roles managed by PIM are:
+It's important to prioritize protecting Microsoft Entra roles that have the most permissions. Based on usage patterns among all PIM customers, the top 10 Microsoft Entra roles managed by PIM are:
 
  -  Global Administrator
  -  Security Administrator
@@ -116,7 +116,7 @@ It's important to prioritize protecting Azure AD roles that have the most permis
     > [!TIP]
     > Microsoft recommends you manage all your Global Administrators and Security Administrators using PIM as a first step, because they are the users who can do the most harm when compromised.
 
-It's important to consider the most sensitive data and permissions for your organization. As an example, some organizations may want to protect their Power BI Administrator role or their Teams Administrator role using PIM, since they can access data and change core workflows.
+It's important to consider the most sensitive data and permissions for your organization. As an example, some organizations want to protect their Power BI Administrator role or their Teams Administrator role using PIM, since they can access data and change core workflows.
 
 If there are any roles with guest users assigned, they're vulnerable to attack.
 
@@ -157,16 +157,16 @@ Manually keeping track of who is assigned to a role and managing their assignmen
 
 ### You want to delegate assigning the role
 
-A group owner can manage membership for a group. For Azure AD role-assignable groups, only the Privileged Role Administrator, the Global Administrator, and the group owners can manage group membership. When an admin adds new members to the group, the member gets access to the roles to which the group is assigned whether the assignment is eligible or active. Use group owners to delegate the management of group membership for an assigned role to reduce the breadth of privilege required.
+A group owner can manage membership for a group. For Microsoft Entra ID role-assignable groups, only the Privileged Role Administrator, the Global Administrator, and the group owners can manage group membership. When an admin adds new members to the group, the member gets access to the roles to which the group is assigned whether the assignment is eligible or active. Use group owners to delegate the management of group membership for an assigned role to reduce the breadth of privilege required.
 
 > [!TIP]
-> Microsoft recommends that you bring Azure AD role-assignable groups under management by PIM. After a role-assignable group is brought under management by PIM, it's called a privileged access group. Use PIM to require group owners to activate their Owner role assignment before they can manage group membership.
+> Microsoft recommends that you bring Microsoft Entra ID role-assignable groups under management by PIM. After a role-assignable group is brought under management by PIM, it's called a privileged access group. Use PIM to require group owners to activate their Owner role assignment before they can manage group membership.
 
 ## Decide which role assignments should be permanent or eligible
 
-Once you've decided the list of roles to be managed by PIM, you must decide which users should get the eligible role versus the permanently active role. **Permanently active roles are the normal roles assigned through Azure AD and Azure resources, while eligible roles can only be assigned in PIM.**
+Once you've decided the list of roles to be managed by PIM, you must decide which users should get the eligible role versus the permanently active role. **Permanently active roles are the normal roles assigned through Microsoft Entra ID and Azure resources, while eligible roles can only be assigned in PIM.**
 
-Microsoft recommends you've zero permanently active assignments for both Azure AD roles and Azure roles other than the recommended two break-glass emergency access accounts, which should have the permanent Global Administrator role.
+Microsoft recommends you've zero permanently active assignments for both Microsoft Entra roles and Azure roles other than the recommended two break-glass emergency access accounts, which should have the permanent Global Administrator role.
 
 Even though we recommend zero standing-administrators, it's sometimes difficult for organizations to achieve this right away. Things to consider when making this decision include:
 
@@ -180,7 +180,7 @@ Even though we recommend zero standing-administrators, it's sometimes difficult 
 
 Before you implement your PIM solution, it's good practice to draft your PIM settings for every privileged role your organization uses. This section has some examples of PIM settings for particular roles; they are for reference only and might be different for your organization. Each of these settings is explained in detail with Microsoft’s recommendations after the tables.
 
-### Privileged Identity Management settings for Azure AD roles
+### Privileged Identity Management settings for Microsoft Entra roles
 
 | **Setting**                        | **Global Administrator**    | **Exchange Administrator** | **Helpdesk Administrator** |
 | ---------------------------------- | --------------------------- | -------------------------- | -------------------------- |
@@ -218,11 +218,11 @@ The following table describes each of the settings.
 | Require approval                   | Whether the eligible user needs to get approval to activate the role.                                                                                                                                                                                                                                      |
 |                                    | **Microsoft recommends** that you set up approval for roles with the most permission. Based on usage patterns of all PIM customers, Global Administrator, User Administrator, Exchange Administrator, Security Administrator, and Password Administrator are the most common roles with approval required. |
 | Approver                           | If approval is required to activate the eligible role, list the people who should approve the request. By default, PIM sets the approver to be all users who are privileged role administrators whether they are permanent or eligible.                                                                    |
-|                                    | If a user is both eligible for an Azure AD role and an approver of the role, they will not be able to approve themselves.                                                                                                                                                                                  |
+|                                    | If a user is both eligible for a Microsoft Entra role and an approver of the role, they will not be able to approve themselves.                                                                                                                                                                            |
 |                                    | **Microsoft recommends** that you choose approvers to be users who are most knowledgeable about the role and its frequent users rather than a Global Administrator.                                                                                                                                        |
 | Activation duration                | The length of time a user will be activated in the role before it will expire.                                                                                                                                                                                                                             |
 | Permanent admin                    | List of users who will be a permanent administrator for the role (never have to activate).                                                                                                                                                                                                                 |
 |                                    | **Microsoft recommends** you have zero standing administrator for all roles except for Global Administrators.                                                                                                                                                                                              |
-| Active admin                       | For Azure resources, active administrator is the list of users who will never have to activate to use the role. This list is not referred to as permanent administrator like in Azure AD roles because you can set an expiration time for when the user will lose this role.                               |
+| Active admin                       | For Azure resources, active administrator is the list of users who will never have to activate to use the role. This list is not referred to as permanent administrator like in Microsoft Entra roles because you can set an expiration time for when the user will lose this role.                        |
 | Active expiration                  | Active role assignments for Azure roles expire after the configured duration. You can choose from 15 days, 1 month, 3 months, 6 months, 1 year or permanently active.                                                                                                                                      |
 | Eligible expiration                | Eligible role assignments for Azure roles expire after this duration. You can choose from 15 days, 1 month, 3 months, 6 months, 1 year or permanently eligible.                                                                                                                                            |

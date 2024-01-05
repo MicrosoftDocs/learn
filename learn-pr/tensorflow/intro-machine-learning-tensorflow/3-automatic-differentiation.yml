@@ -3,12 +3,11 @@ uid: learn.tensorflow.intro-machine-learning-tensorflow.automatic-differentiatio
 title: Automatic differentiation
 metadata:
   title: Automatic differentiation
-  description: Learn about GradientTape and other TensorFlow automatic differentiation features 
-  ms.date: 07/07/2021
+  description: Learn about GradientTape and other TensorFlow automatic differentiation features.
+  ms.date: 07/24/2023
   author: bstollnitz
   ms.author: bstollnitz
   ms.topic: interactive-tutorial
-  ms.prod: learning-tensorflow
   ms.product: learning-tensorflow
   ms.contributors: bstollnitz-08202021
   ms.custom: team=cloud_advocates
@@ -18,12 +17,12 @@ notebook: notebooks/3-automatic-differentiation.ipynb
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What does the `GradientTape` enable us to do?"
+  - content: "What does the `GradientTape` allow us to do?"
     choices:
-    - content: "It enables us to record operations so that we can play them back later."
+    - content: "It allows us to record operations so that we can play them back later."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "It enables us to calculate derivatives of functions with respect to their input tensors."
+    - content: "It allows us to calculate derivatives of functions with respect to their input tensors."
       isCorrect: true
       explanation: "Correct!"
     - content: "It speeds up execution."

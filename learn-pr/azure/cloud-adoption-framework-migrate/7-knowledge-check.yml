@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 04/18/2023
-  author: jamcneil
-  ms.author: jumcn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/30/2023
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: salean-03082021
 durationInMinutes: 3

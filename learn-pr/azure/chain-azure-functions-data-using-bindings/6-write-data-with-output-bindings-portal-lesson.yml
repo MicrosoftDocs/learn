@@ -6,8 +6,7 @@ metadata:
   ms.date: 09/24/2018
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Write data with output bindings
 durationInMinutes: 3
 content: |

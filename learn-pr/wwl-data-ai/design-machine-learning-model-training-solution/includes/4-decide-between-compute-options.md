@@ -38,6 +38,6 @@ When you create a Spark cluster, you’ll have to choose whether you want to use
 
 ## Monitor the compute utilization 
 
-Configuring your compute resources for training a machine learning a model is an iterative process. When you know how much data you have and how you want to train your model, you’ll have an idea of which compute options may best suit training your model.
+Configuring your compute resources for training a machine learning model is an iterative process. When you know how much data you have and how you want to train your model, you’ll have an idea of which compute options may best suit training your model.
  
 Every time you train a model, you should monitor how long it takes to train the model and how much compute is used to execute your code. By monitoring the compute utilization, you’ll know whether to scale your compute up or down. If training your model takes too long, even with the largest compute size, you may want to use GPUs instead of CPUs. Alternatively, you can choose to distribute model training by using Spark compute which may require you to rewrite your training scripts.

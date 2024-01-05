@@ -1,22 +1,18 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.get-started-with-artificial-intelligence-on-azure
 metadata:
-  title: 'Microsoft Azure AI Fundamentals: Get started with artificial intelligence'
-  description: 'Microsoft Azure AI Fundamentals: Get started with artificial intelligence'
-  ms.date: 11/08/2021
+  title: 'Microsoft Azure AI Fundamentals: AI Overview'
+  description: 'Microsoft Azure AI Fundamentals: AI Overview'
+  ms.date: 10/30/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: 'Microsoft Azure AI Fundamentals: Get started with artificial intelligence'
+  ms.topic: learning-path
+title: 'Microsoft Azure AI Fundamentals: AI Overview'
 prerequisites: |
   None
-video:
-  title: "Get started with artificial intelligence"
-  url: https://www.microsoft.com/videoplayer/embed/RWxMm6
 summary: |
   Artificial Intelligence (AI) empowers amazing new solutions and experiences; and Microsoft Azure provides easy to use services to help you get started.
-iconUrl: /training/achievements/get-started-with-artificial-intelligence-on-azure.svg
+iconUrl: /learn/achievements/get-started-with-artificial-intelligence-on-azure.svg
 levels:
 - beginner
 roles:
@@ -26,12 +22,12 @@ roles:
 - student
 products:
 - azure-bot-service
-- azure-cognitive-services
 - azure-machine-learning
 subjects:
 - artificial-intelligence
 modules:
 - learn.wwl.get-started-ai-fundamentals
-- learn.wwl.explore-azure-openai
+- learn.wwl.fundamentals-machine-learning
+- learn.wwl.fundamentals-azure-ai-services
 trophy:
   uid: learn.wwl.get-started-with-artificial-intelligence-on-azure.trophy

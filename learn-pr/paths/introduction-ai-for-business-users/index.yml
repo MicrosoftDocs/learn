@@ -6,8 +6,7 @@ metadata:
   ms.date: 08/05/2020
   author: wwlpublish
   ms.author: japerena
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Introduction to AI for business users
 prerequisites: |
   None
@@ -24,12 +23,7 @@ products:
 subjects:
 - artificial-intelligence
 modules:
-- learn.wwl.enable-business-users-with-key-ai-uses-cases
 - learn-bizapps.wwl.introduction-power-bi
 - learn-bizapps.wwl.introduction-power-platform
-- learn-wwl.ai-strategy-to-create-business-value
-- learn-wwl.build-an-ai-ready-culture
-- learn-wwl.responsible-ai-guiding-principles
-- learn-wwl.intro-to-ai-technology
 trophy:
   uid: learn.wwl.introduction-ai-for-business-users.trophy

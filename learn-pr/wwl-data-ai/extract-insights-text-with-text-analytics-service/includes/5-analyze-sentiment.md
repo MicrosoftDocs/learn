@@ -3,7 +3,7 @@ Sentiment analysis is used to evaluate how positive or negative a text document 
 - Evaluating a movie, book, or product by quantifying sentiment based on reviews.
 - Prioritizing customer service responses to correspondence received through email or social media messaging.
 
-When using the Language service to evaluate sentiment, the response includes overall document sentiment and individual sentence sentiment for each document submitted to the service.
+When using the Azure AI Language service to evaluate sentiment, the response includes overall document sentiment and individual sentence sentiment for each document submitted to the service.
 
 For example, you could submit a single document for sentiment analysis like this:
 

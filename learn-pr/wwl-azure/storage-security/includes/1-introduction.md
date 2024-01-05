@@ -18,8 +18,8 @@ Secure data and applications (20-25%)
  -  Configure security for storage
      -  configure access control for storage accounts
      -  configure key management for storage accounts
-     -  configure Azure AD authentication for Azure Storage
-     -  configure Azure AD Domain Services authentication for Azure Files
+     -  configure Microsoft Entra authentication for Azure Storage
+     -  configure Microsoft Entra Domain Services authentication for Azure Files
      -  create and manage Shared Access Signatures (SAS)
      -  configure Storage Service Encryption
      -  configure Microsoft Defender for Cloud for Storage

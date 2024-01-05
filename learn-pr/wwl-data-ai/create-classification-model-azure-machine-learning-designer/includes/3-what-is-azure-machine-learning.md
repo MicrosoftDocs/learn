@@ -6,7 +6,7 @@ Most importantly, Azure Machine Learning helps data scientists increase their ef
 
 To use Azure Machine Learning, you first create a *workspace* resource in your Azure subscription. You can then use this workspace to manage data, compute resources, code, models, and other artifacts related to your machine learning workloads.
 
-After you have created an Azure Machine Learning workspace, you can develop solutions with the Azure machine learning service either with developer tools or the Azure Machine Learning studio web portal.
+After you have created an Azure Machine Learning workspace, you can develop solutions with the Azure Machine Learning Service either with developer tools or the Azure Machine Learning studio web portal.
 
 ## Azure Machine Learning studio 
 
@@ -21,6 +21,6 @@ At its core, Azure Machine Learning is a service for training and managing machi
 In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), you can manage the compute targets for your data science activities. There are four kinds of compute resource you can create:
 - **Compute Instances**: Development workstations that data scientists can use to work with data and models.
 - **Compute Clusters**: Scalable clusters of virtual machines for on-demand processing of experiment code.
-- **Inference Clusters**: Deployment targets for predictive services that use your trained models.
+- **Kubernetes Clusters**: Deployment targets for predictive services that use your trained models.  You can access previous versions of "inference clusters" here. 
 - **Attached Compute**: Links to existing Azure compute resources, such as Virtual Machines or Azure Databricks clusters.
 

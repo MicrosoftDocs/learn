@@ -7,7 +7,8 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.service: xamarin
+  ms.subservice: xamarin-android
 title: Introduction to Xamarin.Android
 summary: "Create fully native Android apps to take advantage of the power, features, and performance of the Android platform."
 abstract: |
@@ -20,6 +21,7 @@ abstract: |
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
 iconUrl: /training/achievements/xamarin/introduction-to-xamarin-android-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

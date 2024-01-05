@@ -3,10 +3,8 @@ OpenAI makes its AI models available to developers to build powerful software ap
 Let's identify where OpenAI models fit into the AI landscape.
 
 - **Artificial Intelligence** imitates human behavior by relying on machines to learn and execute tasks without explicit directions on what to output. 
-- **Machine learning** models take in data like weather conditions and fit the data to an algorithm, to make predictions like how much money a store might make in a given day.
-- **Deep learning** models use layers of algorithms in the form of artificial neural networks to return results for more complex use cases. Azure AI services are built on deep learning models. You can check out this article to learn more about the [difference between machine learning and deep learning.](/azure/machine-learning/concept-deep-learning-vs-machine-learning?azure-portal=true)
-- **Generative AI** models are a subset of deep learning models that can produce new content based on what is described in the input. The OpenAI models are a collection of generative AI models that can produce language, code, and images. 
-
-![Illustration of generative AI's place within machine learning.](../media/generative-ai.png)
+- **Machine learning** algorithms take in data like weather conditions and fit models to the data, to make predictions like how much money a store might make in a given day.
+- **Deep learning** models use layers of algorithms in the form of artificial neural networks to return results for more complex use cases. Many Azure AI services are built on deep learning models. You can check out this article to learn more about the [difference between machine learning and deep learning.](/azure/machine-learning/concept-deep-learning-vs-machine-learning?azure-portal=true)
+- **Generative AI** models can produce new content based on what is described in the input. The OpenAI models are a collection of generative AI models that can produce language, code, and images. 
 
 Next you'll learn how Azure OpenAI gives users the ability to combine Azure's enterprise-grade solutions with many of OpenAI's same generative AI models.

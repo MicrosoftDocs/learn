@@ -2,12 +2,11 @@
 uid: learn.wwl.describe-authentication-authorization-cybersecurity
 metadata:
   title: Describe authentication and authorization in cybersecurity
-  description: "Describe authentication and authorization in cybersecurity"
-  ms.date: 02/08/2022
+  description: "<div|Describe authentication and authorization in cybersecurity  </div|"
+  ms.date: 08/29/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Describe authentication and authorization in cybersecurity
 summary: Secure authentication and authorization are a cornerstone of protecting against cybersecurity threats. Learn about common identity-based attacks, different authentication methods, and ways to protect against unauthorized access.
 abstract: |
@@ -15,7 +14,8 @@ abstract: |
   *   Define authentication
   *   Describe common authentication-based attacks
   *   Describe authorization security techniques
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/cybersecurity-authentication-authorization.svg
 levels:
 - beginner

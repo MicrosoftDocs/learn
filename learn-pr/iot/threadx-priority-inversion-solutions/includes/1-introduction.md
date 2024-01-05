@@ -1,6 +1,6 @@
 ## Overview
 
-You've created seven ThreadX projects, you've used a mutex, a counting semaphore, an event flags group, and a message queue in several projects. Would you like to know more about priority inversion? Are you concerned about the possibility of priority inversion causing your system to crash? Would you like to know about techniques that can help you avoid this problem? If so, this module is one you should investigate.
+You've created seven ThreadX projects, you've used a mutex, a counting semaphore, an event flags group, and a message queue in several projects. Would you like to know more about priority inversion? Are you concerned about the possibility of priority inversion causing your system to crash? Would you like to know about techniques that can help you avoid this problem? If so, this module is the one you should investigate.
 
 ## Learning objectives
 
@@ -13,10 +13,10 @@ In this module, you will:
 - Design and debug a ThreadX solution using a hands-on approach with GitHub Codespace or Visual Studio.
 - Study the priority inversion problem, and compare the priority inheritance and preemption threshold solutions.
 
-After you complete this module, you'll be well on your way to becoming a master of ThreadX.
+After you complete this module, you'll be well on your way to mastering ThreadX.
 
 ## Prerequisites
 
 - [Set up your environment](/training/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true)
 - Working knowledge of C or C++, GitHub and Visual Studio
-- Previous modules in this [learning path](/training/paths/azure-rtos-threadx/?azure-portal=true)
+- Previous modules in the [Azure RTOS ThreadX learning path](/training/paths/azure-rtos-threadx/?azure-portal=true)

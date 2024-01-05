@@ -97,7 +97,7 @@ Consider the following STRIDE definitions:
     Replacing device or part of the device with some other device. How do you know you are talking to the right device?
   :::column-end:::
   :::column:::
-    Authenticating the device, using Transport Layer Security (TLS) or IPSec. Infrastructure should support using pre-shared key (PSK) on those devices that cannot handle full asymmetric cryptography. Use Azure AD or OAuth.
+    Authenticating the device, using Transport Layer Security (TLS) or IPSec. Infrastructure should support using pre-shared key (PSK) on those devices that cannot handle full asymmetric cryptography. Use Microsoft Entra ID or OAuth.
   :::column-end:::
 :::row-end:::
 :::row:::

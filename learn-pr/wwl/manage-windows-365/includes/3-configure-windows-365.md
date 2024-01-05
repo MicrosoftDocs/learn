@@ -1,11 +1,12 @@
 
-Setting up Windows 365 is primarily done in the Endpoint Manager admin center. The following is a general summary of the basic steps needed to set up your system to provision on-demand Cloud PCs to your users.
+
+The primary setup process for Windows 365 takes place within the Microsoft Intune admin center. Here's a general overview of the fundamental steps required to configure your system for provisioning on-demand Cloud PCs to your users.
 
 ### Assign licenses to users
 
-Before a user can use a Cloud PC, you must assign a Windows 365 license to that user. You can assign the licenses to users or groups using one of the administrative portals or PowerShell. To assign licenses using the Azure AD admin center, perform the following.
+In order for a user to utilize a Cloud PC, it's necessary to allocate a Windows 365 license to that particular user. You can allocate licenses to either individual users or groups by utilizing administrative portals or PowerShell. To assign licenses using the Microsoft Entra admin center, follow these steps.
 
-1.  Sign in to the Azure AD admin center with a license administrator account.
+1.  Sign in to the Microsoft Entra admin center with a license administrator account.
 2.  Select **Licenses** to open a page where you can see and manage all licensable products in the organization.
 3.  Select a user or group, and then use the **Select** button at the bottom of the page to confirm your selection.
 4.  Under All products, select **Windows 365** Select **Assign** at the top of the page.
@@ -14,11 +15,11 @@ Before a user can use a Cloud PC, you must assign a Windows 365 license to that 
 
 ### Create an Azure network connection
 
-An Azure network connection (ANC) is required so that Cloud PCs can join the organization's domain and access on-premises resources. You'll be connecting to a virtual network configured in Azure that has been set up for connectivity with the on-premises domain controller and network. Work with your organization's Azure administrator to identify this.
+To enable Cloud PCs to join the organization's domain and access on-premises resources, it's essential to establish an Azure network connection (ANC). This involves connecting to a virtual network in Azure that has been configured to facilitate connectivity with the on-premises domain controller and network. To identify and set up this connectivity, collaborate with your organization's Azure administrator.
 
 To create an Azure network connection:
 
-1.  Sign in to the **Microsoft Endpoint Manager admin center** with an account that is an Intune Administrator in Azure AD and has owner permissions to the virtual network in the Azure subscription.
+1.  Sign in to the **Microsoft Endpoint Manager admin center** with an account that is an Intune Administrator in Microsoft Entra ID and has owner permissions to the virtual network in the Azure subscription.
 2.  Select **Devices** > **Windows 365** (under **Provisioning**) > **Azure network connection** > **Create connection**.
 3.  On the **Network details** page, enter a **Name** for the new connection. The connection name must be unique within the customer tenant.
     
@@ -38,8 +39,8 @@ To create an Azure network connection:
 
 Windows 365 provides a built-in gallery of Windows Enterprise images accessible through the provisioning policy creation flow. These images are updated monthly with the latest security updates so that end users have a secure and seamless experience.
 
- -  Images with pre-installed Microsoft 365 Apps: Microsoft 365 Apps and Teams optimizations are already installed.
- -  Images with OS optimizations: These are Windows Enterprise images optimized for improved performance on virtualized environments and on lower end hardware configurations.
+ -  Images with preinstalled Microsoft 365 Apps: Microsoft 365 Apps and Teams optimizations are already installed.
+ -  Images with OS optimizations: Windows Enterprise images that have been optimized for enhanced performance on virtualized environments and lower-end hardware configurations.
 
 As most device configurations are applied through configuration policies, these base images should be sufficient for many organizations. However, if a custom image is needed, you can create and upload up to 20 custom generalized images. The custom image must be added to your Azure subscription before it can be used with Windows 365. Once that's done, sign in to the Microsoft Endpoint Manager admin center, select **Devices** > **Windows 365** > **Device images** > **Add**. Select an image from the available list, and select **Add**.
 ### Learn More
@@ -47,7 +48,7 @@ As most device configurations are applied through configuration policies, these 
 
 ### Create provisioning policies
 
-Cloud PCs are created and assigned to users based on provisioning policies. After provisioning policies are created and assigned to the Azure AD user security groups or Microsoft 365 Groups, the Windows 365 service checks for appropriate licensing for each user and configures the Cloud PCs accordingly.
+Cloud PCs are created and assigned to users based on provisioning policies. After provisioning policies are created and assigned to the Microsoft Entra user security groups or Microsoft 365 Groups, the Windows 365 service checks for appropriate licensing for each user and configures the Cloud PCs accordingly.
 
 Creating a provisioning policy requires the following steps:
 
@@ -69,7 +70,7 @@ Creating a provisioning policy requires the following steps:
 -   [Create provisioning policies](/windows-365/enterprise/create-provisioning-policy?azure-portal=true)
 
 > [!NOTE]
-> It can take up to 60 minutes for the policy creation process to complete, depending on when the Azure AD connect sync last happened.
+> It can take up to 60 minutes for the policy creation process to complete, depending on when the Microsoft Entra Connect Sync last happened.
 
 ### Configure and apply device and app configuration profiles
 
