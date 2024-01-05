@@ -1,7 +1,7 @@
 In the previous exercise, we performed the following tasks using the Azure portal:
 
 - View the OS disk cache status.
-- Change the cache settings of the OS dis.k
+- Change the cache settings of the OS disk.
 - Add a data disk to the VM.
 - Change the caching type on a new data disk.
 
