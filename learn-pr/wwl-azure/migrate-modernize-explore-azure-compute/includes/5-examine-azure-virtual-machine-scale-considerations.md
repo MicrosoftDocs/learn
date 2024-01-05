@@ -1,7 +1,5 @@
 SAP application servers and the Central Services clusters can scale up/down or scale out by adding more instances. The AnyDB database can scale up/down but doesn't scale out. The SAP database container for AnyDB doesn't support sharding.
 
-## SAP HANA scale-out
-
 Microsoft offers the M-Series VM SKU, certified for an SAP HANA scale-out configuration. The VM type M128s got certified for a scale-out of up to 16 nodes. Of the 16-node scale-out certification:
 
 - One node is the leading node
