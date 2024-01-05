@@ -16,11 +16,11 @@ There are three main disk roles in Azure: the data disk, the OS disk, and the te
 
 You can add data disks to a virtual machine at any time by attaching them to the VM. Attaching a disk associates the disk with the VM.
 
-However, while a disk is attached to a VM you can't delete it. You must detach the disk from the VM before deleting it.
+A disk can't be deleted while attached to a VM. You must detach the disk from the VM before deleting it.
 
 ### Attach an existing data disk to an Azure VM
 
-You might already have a VHD that stores the data you want to use in your Azure VM. In our law firm scenario, for example, perhaps you already converted your physical disks to VHDs locally. In this case, you can upload your VHD directly to a managed disk. The recommended way to do this upload is to use the PowerShell `Add-AzVhd` cmdlet. This cmdlet is optimized for transferring VHD files, and can complete the upload faster than other methods. The transfer is completed by using multiple threads for best performance. Once the VHD is uploaded, attach it to an existing VM as a data disk. This approach is an excellent way to deploy data of all types to Azure VMs. The data is automatically present in the VM, and there's no need to partition or format the new disk.
+You might already have a VHD that stores the data you want to use in your Azure VM. In our law firm scenario, for example, perhaps you already converted your physical disks to VHDs locally. In this case, you can upload your VHD directly to a managed disk. Generally, you should upload a disk by using the PowerShell `Add-AzVhd` cmdlet. This cmdlet is optimized for transferring VHD files, and can complete the upload faster than other methods. The transfer is completed by using multiple threads for best performance. Once the VHD is uploaded, attach it to an existing VM as a data disk. This approach is an excellent way to deploy data of all types to Azure VMs. The data is automatically present in the VM, and there's no need to partition or format the new disk.
 
 ### Attach a new data disk to an Azure VM
 

@@ -41,7 +41,7 @@ To resize a disk, you need the ID or name of the disk. In this case, you already
     az vm start --name support-web-vm01
     ```
 
-    But we aren't finished yet. The operating system on the VM can't use the extra space yet. We take care of this situation in the next section.
+    But we aren't finished yet. The operating system on the VM can't use the extra space yet. We handle this situation in the next section.
 
 ## Expand the disk partition
 

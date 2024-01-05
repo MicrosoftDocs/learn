@@ -1,6 +1,6 @@
 When you create the VM, it chooses a size for the OS disk. The specific size is based on the image you select. On Linux, it's often around 30 GB, and on Windows about 127 GB.
 
-You can add data disks to provide for more storage space, but you might also wish to expand an existing disk. Perhaps, a legacy application can't split its data across drives, or you're migrating a physical PC's drive to Azure and need a larger OS drive.
+For more storage space, you can add data disks, but you might also want to expand an existing disk. Perhaps, a legacy application can't split its data across drives, or you're migrating a physical PC's drive to Azure and need a larger OS drive.
 
 > [!NOTE]
 > Shrinking managed disks isn't supported. You can only resize a disk to a larger size.
