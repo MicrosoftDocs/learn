@@ -1,4 +1,4 @@
-In this exercise, you'll create your resource group and an Azure SQL Database single database containing the AdventureWorksLT sample data.
+In this exercise, you'll create your resource group and an Azure SQL Database single database containing the *AdventureWorksLT* sample data.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you used to activate the Azure Sandbox. Make sure you are in the Microsoft Learn Sandbox directory.
 
@@ -16,13 +16,13 @@ In this exercise, you'll create your resource group and an Azure SQL Database si
     | Subscription | Concierge Subscription |
     | Resource group | Use the existing group <rgn>[sandbox resource group name]</rgn> |
     | **Database details** |
-    | Database name | Enter *LearnDataPolicy* |
+    | Database name | Enter *LearnDataPolicy*. |
     | Server | Under the dropdown list, select **Create new** link. The **Create SQL Database Server** pane appears. |
     | Server name | Enter a globally unique [server name](/azure/architecture/best-practices/naming-conventions). |
     | Location | Select any valid location from the following list. |
-    | Authentication method | Select **Use SQL authentication** |
+    | Authentication method | Select **Use SQL authentication**. |
     | Server admin login | A [database identifier](/sql/relational-databases/databases/database-identifiers) that serves as your primary administrator login name. |
-    | Password | Any valid password that has at least eight characters and contains characters from three of these categories: uppercase characters, lowercase characters, numbers, and non-alphanumeric characters. |
+    | Password | Enter a valid password that has at least eight characters and contains characters from three of these categories: uppercase characters, lowercase characters, numbers, and non-alphanumeric characters. |
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
@@ -33,7 +33,7 @@ In this exercise, you'll create your resource group and an Azure SQL Database si
     | Setting      | Value |
     | ------------ | ----- |
     | **Database details** |
-    | Want to use SQL elastic pool? | Select **No** |
+    | Want to use SQL elastic pool? | Select **No**. |
 
 1. Select the **Security** tab near the top of the window.
 
@@ -41,8 +41,7 @@ In this exercise, you'll create your resource group and an Azure SQL Database si
 
     | Setting      | Value |
     | ------------ | ----- |
-    | **Microsoft Defender for SQL** |
-    | Enable Microsoft Defender for SQL, verify **Start free trial** is selected. |
+    | **Microsoft Defender for SQL** | Enable Microsoft Defender for SQL, verify **Start free trial** is selected. |
 
 1. Select the **Additional settings** tab near the top of the window.
 
@@ -51,20 +50,20 @@ In this exercise, you'll create your resource group and an Azure SQL Database si
     | Setting      | Value |
     | ------------ | ----- |
     | **Data source** |
-    | Use existing data | Select **Sample** |
+    | Use existing data | Select **Sample**. |
 
 1. Leave the rest of the values as default and select **Review + create** at the bottom of the screen.
 
 1. Review the final settings, and select **Create** at the bottom of the screen.
 
-It will take a few minutes to deploy the server with sample data. Once it's complete, select **Go to resource** to go to the Overview pane of your new SQL database.
+It takes a few minutes to deploy the server with sample data. Once it's complete, select **Go to resource** to go to the Overview pane of your new SQL database.
 
 ## SQL Information Protection (SQL IP)
 
 SQL IP brings a set of advanced services and SQL capabilities, forming a new information-protection paradigm in SQL aimed at protecting the data, not just the database:
 
 * **Azure SQL Auditing**: Azure SQL Auditing tracks database events and writes them to an audit log in your Azure storage account, Log Analytics workspace or Event Hubs.
-* **Data discovery & classification**: Data discovery & classification is built into Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics. It provides advanced capabilities for discovering, classifying, labeling, and reporting the sensitive data in your databases.
+* **Data Discovery & Classification**: Data Discovery & Classification is built into Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics. It provides advanced capabilities for discovering, classifying, labeling, and reporting the sensitive data in your databases.
 * **Dynamic data masking**: Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics support dynamic data masking. Dynamic data masking limits sensitive data exposure by masking it to non-privileged users.
 * **Microsoft Defender for Cloud**: Scans your database and makes recommendations to improve security. Also allows you to set up and monitor **Security Alerts**.
 * **Transparent data encryption**: Transparent data encryption encrypts your databases, backups, and logs at rest without any changes to your application. To enable encryption, go to each database.
@@ -77,7 +76,7 @@ Let's classify the data in this sample Azure SQL database. On your SQL database 
 
 1. If *Microsoft Defender for SQL* isn't enabled, select the **(Configure)** link. The **Server settings** pane appears.
 
-1. Ensure that *Microsoft Defender for SQL* is turned on, and then select **Save**. As noted in the previous instructions, you can turn this on as part of the DB creation. This will take a minute to activate.
+1. Ensure that *Microsoft Defender for SQL* is turned on, and then select **Save**. As noted in the previous instructions, you can turn this on as part of the DB creation. This takes a minute to activate.
 
 1. In the left menu pane, under **Security**, select **Data Discovery & Classification**. The **Data Discovery & Classification** pane appears.
 
