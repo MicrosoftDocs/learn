@@ -14,7 +14,7 @@ Running through *all* your code step by step might be extremely inefficient if y
 
 Using breakpoints, you can make your program run normally up until you reach the critical portion of code where you suspect the error is located. Then you can switch to running step by step.
 
-There are multiple ways of defining breakpoints in your code based on your debugger and code editor. There's one universal way to force any JavaScript debugger to pause at a given point. 
+There are multiple ways of defining breakpoints in your code based on your debugger and code editor. 
 
 ## Node.js inspect mode
 
