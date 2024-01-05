@@ -2651,4 +2651,9 @@ achievements:
   type: badge
   title: Secure B2B collaboration by using cross-tenant access settings
   summary: "Define your inbound and outbound B2B collaboration with other Microsoft Entra tenants by using cross-tenant access settings. You can decide whether to allow or block B2B collaboration with other Microsoft Entra organizations by default, and then set individual policies for specific organizations. You have granular control over who can use B2B collaboration and which applications can be accessed. You can also trust multi-factor authentication from a user’s home tenant so they don’t have to repeat the process in your tenant."
-  iconUrl: /training/achievements/generic-badge.svg 
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.create-no-code-predictive-models-with-azure-machine-learning.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Explore visual tools for machine learning'
+  summary: Machine learning is at the core of artificial intelligence, and many modern applications and services depend on predictive machine learning models. Learn how to use Azure Machine Learning to create and publish models without writing code.
+  iconUrl: /training/achievements/create-no-code-predictive-models-with-azure-machine-learning.svg
