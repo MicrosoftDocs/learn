@@ -118,7 +118,7 @@ To create the application, you need to create the YAML files to deploy to Kubern
 
 ### Deploy the back-end API
 
-1. Get your Azure CosmosDB database connection string using the `az cosmosdb keys list` command.
+1. Get your Azure Cosmos DB database connection string using the `az cosmosdb keys list` command.
 
     ```azurecli-interactive
     az cosmosdb keys list --type connection-strings -g $RESOURCE_GROUP -n $COSMOSDB_ACCOUNT_NAME --query "connectionStrings[0].connectionString" -o tsv
