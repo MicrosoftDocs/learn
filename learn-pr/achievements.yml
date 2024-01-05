@@ -20,6 +20,16 @@ achievements:
   title: Scale and size Virtual Machines in Azure
   summary: Scale and size Virtual Machines in Azure
   iconUrl: /training/achievements/scale-and-size-virtual-machines.svg
+- uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.badge
+  type: badge
+  title: Explore the key concepts of quantum computing by using Q#
+  summary: Explore the key concepts of quantum computing by using Q#
+  iconUrl: /training/achievements/quantum/qsharp-explore-key-concepts-quantum-computing.svg
+- uid: learn.quantum.use-qsharp-libraries.badge
+  type: badge
+  title: Use the Q# libraries
+  summary: Use the Q# libraries
+  iconUrl: /training/achievements/quantum/use-quantum-libraries.svg
 - uid: learn.authenticate-browser-based-apps-with-azure-app-services.badge
   type: badge
   title: Authenticate browser-based apps with Azure App Services

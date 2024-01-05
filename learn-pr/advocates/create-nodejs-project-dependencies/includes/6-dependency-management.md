@@ -36,9 +36,15 @@ The update process depends on two factors:
 * **Manifest File Entry**: The `package.json` file contains rules for updating dependencies. For example, `"dependencyName": "1.1.x"` means npm will fetch the version that matches this pattern.
 
 
-## Understand versioning between package.json and package-lock.json
+## Understand versioning 
 
-The `package-lock.json` file, created when you install a package, should be committed to your repository. It ensures exact installations, which are crucial for addressing runtime issues or discrepancies between development and production environments. In the `package.json` file, you define patterns for installations, such as patches, minor versions, or major versions. However, these patterns aren't exact. For instance, with a `1.x` pattern, you won't know if you installed version 1.4 or 1.5.
+Three files control the versioning of dependencies:
+
+* `package.json`: This file defines the version of the package you want to use. It's the manifest file for your project. It contains the metadata for your project, including the dependencies.
+* `package-lock.json`: This file describes the exact tree that was generated, such that subsequent installs are able to generate identical trees, regardless of intermediate dependency updates. This file is intended to be committed into source repositories.
+* `shrinkwrap.json`: This file is created by the `npm shrinkwrap` CLI command and is similar to `package-lock.json`. The major difference between the commands is that the package versions specified in `npm-shrinkwrap.json` cannot be overridden by users. In addition, the `npm-shrinkwrap.json` file is compatible with older versions of npm (versions 2-4), whereas `package-lock.json` is compatible with npm version 5 and later. Therefore, you may find `npm-shrinkwrap.json` when maintaining legacy codebases. Most developers will use `package-lock.json` instead of `npm-shrinkwrap.json`. One exception where `npm-shrinkwrap.json` is preferred is for global installs of daemons and command-line tools where developers want to ensure the exact versions of the packages specified are installed.
+
+## Example determination of package version
 
 Consider a scenario where you're using version 1.2 in your code, and then version 1.4 is released, breaking your code. If someone installs your app at this point, they'll get a nonfunctioning app. But, if there's a `package-lock.json` file specifying version 1.2, then that version will be installed.
 

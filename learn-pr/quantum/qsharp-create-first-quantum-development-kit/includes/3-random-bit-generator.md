@@ -2,7 +2,7 @@ Before using quantum computers to solve important problems, your first task is t
 
 You're likely already familiar with the concept of a random number generator (RNG). Classical computers don't produce random numbers, but rather _pseudorandom_ numbers. A pseudorandom number generator generates a deterministic sequence of numbers based on some initial value, called a _seed_. To better approximate random values, this seed is often the current time from the CPU's clock.
 
-You would like to use truly random numbers so no galactic hacker can find out the sequence of random numbers used to generate passwords and thus jeopardize space fleet security. To do so, you need to build a quantum random number generator (QRNG). With a quantum random number generator, passwords will be truly random and more secure.
+You would like to use truly random numbers so that no galactic hacker can jeopardize space fleet security by finding out the sequence of random numbers used to generate passwords. To do so, you need to build a quantum random number generator (QRNG). With a quantum random number generator, passwords are truly random and more secure.
 
 A QRNG is a perfect introduction to quantum computing because it illustrates quantum behavior and requires only a few lines of code.
 
@@ -34,7 +34,7 @@ In the next section, you build out the second phase, which combines random bits 
 
 ## Create the Q# project
 
-To begin with, you create a Q# project just like you did earlier.
+To begin with, create a Q# project just like you did earlier.
 
 1. On the **View** menu, select **Command Palette**.
 1. Enter **Q#: Create New Project**.
@@ -89,6 +89,6 @@ Let's try out your random bit generator. To do so:
     One
     ```
 
-Next, you'll implement the second phase of your quantum random number generator: combining multiple random bits to form a larger number.
+Next, you implement the second phase of your quantum random number generator: combining multiple random bits to form a larger number.
 
 Leave your project open in Visual Studio Code for the next part.
