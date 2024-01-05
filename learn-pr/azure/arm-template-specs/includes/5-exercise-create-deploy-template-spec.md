@@ -211,17 +211,17 @@ For simplicity, you'll deploy the template spec into the same sandbox resource g
 1. Get the template spec version's resource ID by running the following Azure CLI command:
 
    ```azurecli
-   templateSpecVersionResourceId=$(az ts show \
-     --name ToyCosmosDBAccount \
-     --version 1.0 \
-     --query id \
-     --output tsv)
+   id=$(az ts show \ 
+    --name ToyCosmosDBAccount \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --version "1.0" \
+    --query "id")
    ```
 
 1. Deploy the template spec by using this Azure CLI command in the Visual Studio Code terminal:
 
    ```azurecli
-   az deployment group create --template-spec $templateSpecVersionResourceId
+   az deployment group create --template-spec $id
    ```
 
 ::: zone-end
@@ -244,4 +244,4 @@ The deployment can take a minute or two to finish.
 
 1. Select **Deployment details** to expand it. Notice that an Azure Cosmos DB account has been deployed.
 
-   :::image type="content" source="../media/5-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with three Azure Cosmos D B resources listed." border="true":::
+   :::image type="content" source="../media/5-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with three Azure Cosmos DB resources listed." border="true":::
