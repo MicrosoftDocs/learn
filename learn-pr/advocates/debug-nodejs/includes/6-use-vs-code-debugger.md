@@ -5,7 +5,7 @@ It's time to put into practice your newly acquired debugging knowledge. It turns
 
 For this exercise, you need a JavaScript file to practice debugging. To use the debugger launch controls, the JavaScript file must be in a Visual Studio workspace.
 
-The goal of the program is to set the exchange rate between three currencies, USD, EUR, and JPY. Then, we want to display how much value `10 EUR` is in the other currencies by using two digits after the decimal point. For every currency added, the exchange rate for all other currencies should be calculated.
+The goal of the application is to set the exchange rate between three currencies, USD, EUR, and JPY. Then, we want to display how much value `10 EUR` is in the other currencies by using two digits after the decimal point. For every currency added, the exchange rate for all other currencies should be calculated.
 
 1. In Visual Studio Code, create a file named  `mycurrency.js` at the `./nodejs-debug/` subfolder.
 
@@ -59,7 +59,7 @@ The goal of the program is to set the exchange rate between three currencies, US
 
 We're going to use the debugger a lot, so let's create a launch configuration for your app.
 
-1. On the **Run** tab in Visual Studio Code, select **Add Configuration**. 
+1. On the **Run** tab in Visual Studio Code, select **Create a launch.json file** and select the Node.js debugger. 
 
    Visual Studio Code creates the `.vscode/launch.json` configuration file at the root of the workspace and opens the launch file for editing.
 
@@ -152,7 +152,7 @@ We'll start by fixing the first bug. Because you didn't write this code and ther
 
 ### Use breakpoints and step-by-step execution
 
-To add a breakpoint, click in the left margin at line **39**, on `printForeignValues(10, 'EUR');`.
+To add a breakpoint, select in the left margin at line **39**, on `printForeignValues(10, 'EUR');`.
 
 :::image source="../media/add-breakpoint.png" alt-text="Screenshot of the breakpoint location in the code.":::
 
@@ -397,9 +397,9 @@ Deleting the GitHub Codespaces environment ensures that you can maximize the amo
 
 1. Sign into the GitHub Codespaces dashboard (<https://github.com/codespaces>).
 
-1. Locate your currently running codespaces sourced from the [`MicrosoftDocs/node-essentials`](https://github.com/MicrosoftDocs/node-essentials) GitHub repository.
+1. Locate your currently running Codespaces sourced from the [`MicrosoftDocs/node-essentials`](https://github.com/MicrosoftDocs/node-essentials) GitHub repository.
 
-    :::image type="content" source="../media/codespaces/codespace-dashboard.png" alt-text="Screenshot of all the running codespaces including their status and templates.":::
+    :::image type="content" source="../media/codespaces/codespace-dashboard.png" alt-text="Screenshot of all the running Codespaces including their status and templates.":::
 
 1. Open the context menu for the codespace and select **Delete**.
 
