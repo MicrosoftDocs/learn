@@ -12,7 +12,7 @@ In this module, you will:
 
 - Understand the difference between abstract classes and interfaces
 - Learn how to combine multiple interfaces
-- Understand how polymorphism and interfaces
+- Understand how polymorphism applies to interfaces
 - Use interfaces as a type
 
 ## Prerequisites
