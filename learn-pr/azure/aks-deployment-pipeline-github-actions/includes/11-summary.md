@@ -1,10 +1,10 @@
-By using CI/CD with GitHub Actions, you're able to automate image building and application deployment. You created a workflow that triggers when a developer on your team pushes a code change to the main branch. The workflow builds and pushes the application image to the company's Azure Container Registry instance.
+By using CI/CD with GitHub Actions, you're able to automate application image building and deployment. You created a workflow that triggers when a developer on your team pushes a code change to the main branch. The workflow builds and pushes the application image to the company's Azure Container Registry instance.
 
-Then, when someone on your team creates a release from that push, a new pipeline triggers and deploys the application to the AKS cluster without manual effort. This solution prevents your team from losing time by manually building and deploying application images for every new feature on the Contoso Video website.
+Then, when someone on your team creates a release from that push, a new pipeline triggers and deploys the application to the Azure Kubernetes Service (AKS) cluster without manual effort. This solution means your team doesn't spend time and effort on manually building and deploying application images for every new feature on the Contoso Video website.
 
 ## Clean up resources
 
-In this module, you created resources in your Azure subscription. Use the following to clean up these resources so there's no continued charge against your account.
+In this module, you created resources in your Azure subscription. Use the following procedures to clean up these resources so there's no continued charge against your account.
 
 ### Azure resources
 
@@ -14,7 +14,7 @@ In this module, you created resources in your Azure subscription. Use the follow
 
 1. To confirm the deletion and delete all the resources you created in this module, enter the name of the resource group, and select **Delete**.
 
-1. Repeat the preceding steps for the resource group name that starts with **MC_mslearn-gh-pipelines**.
+1. Repeat the preceding steps for the corresponding resource group that starts with **MC_mslearn-gh-pipelines**.
 
 1. Go to [App registrations](https://ms.portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) and select your app from the list.
 

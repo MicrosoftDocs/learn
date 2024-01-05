@@ -1,4 +1,4 @@
-With the Helm charts, you have all the tools you need to deploy the application to AKS by using GitHub Actions. In this unit, you finish the CI/CD pipeline by completing the final deployment steps.
+With the Helm charts created, you now have all the tools you need to deploy the application to AKS by using GitHub Actions. In this unit, you finish the CI/CD pipeline by completing the final deployment steps.
 
 :::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that shows the procession from triggers, through three build steps, to the deploy step in a pipeline.":::
 
