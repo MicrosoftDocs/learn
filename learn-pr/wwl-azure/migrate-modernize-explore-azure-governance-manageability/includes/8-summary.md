@@ -5,7 +5,7 @@ Now you have:
 - Explored Azure Policy.
 - Explored security and compliance services.
 
-## Learn more
+Learn more:
 
 - [What is Azure Resource Manager?](/azure/azure-resource-manager/management/overview)
 - [What is Azure role-based access control (Azure RBAC)?](/azure/role-based-access-control/overview)

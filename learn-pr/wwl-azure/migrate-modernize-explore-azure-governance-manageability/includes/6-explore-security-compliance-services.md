@@ -42,7 +42,7 @@ Defender for Cloud fills three vital needs as you manage the security of your re
 
 ## Posture management and workload protection
 
-Microsoft Defender for Cloud features cover the two broad pillars of cloud security: cloud security posture management and cloud workload protection.
+Microsoft Defender for Cloud features covers the two broad pillars of cloud security: cloud security posture management and cloud workload protection.
 
 ### Cloud security posture management (CSPM)
 

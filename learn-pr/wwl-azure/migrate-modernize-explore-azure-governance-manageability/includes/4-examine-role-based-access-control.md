@@ -2,7 +2,7 @@ Managing access to resources in Azure is a critical part of an organization’s 
 
 :::image type="content" source="../media/rbac-concepts-23272ff7.png" alt-text="Diagram showing architecture of role-based access control across subscription, resource groups, and resources.":::
 
-## Optional demos
+Optional demos:
 
 - [Demonstration: Explore Active Directory users and groups](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-explore-active-directory-users-groups.md)
 - [Demonstration: Explore role assignments and role-based access control](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-explore-role-assignments-role-based-access-control.md)

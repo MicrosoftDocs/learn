@@ -17,6 +17,6 @@ Azure compliance monitoring tools for Azure Policy include [Azure Policy Regulat
 
 For more information on Azure Policy, see [Azure Policy Documentation](/azure/azure-policy/).
 
-## Optional demo
+Optional demo:
 
 - [Demonstration: Create an Azure Policy](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-create-azure-policy.md)
