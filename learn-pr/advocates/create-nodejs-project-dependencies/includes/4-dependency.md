@@ -34,7 +34,7 @@ To install a package, use the **npm CLI** installed with Node.js. You can add a 
 npm install <name of package>
 ```
 
-When you run the `install` command, the command-line tool connects to a global registry, fetches the code, and places it in a `node_modules` folder for your project. 
+When you run the `install` command, the command-line tool connects to a global registry, fetches the code, and places it in a `node_modules` folder at the root of your project. 
 
 Some **common switches** for the install command include: 
 * For development-only packages, use `--save-dev`. This switch saves into the `devDependencies` property of `package.json`. These dependencies are usually format, lint, build, transpile, and test tools.
