@@ -2,13 +2,13 @@ We've described the most typical deployment types for Java applications. Let's n
 
 ## Azure Container Apps
 
-Azure Container Apps is a managed service that runs Docker containers, with specific support for running Java applications.
+Azure Container Apps is a managed service that runs Docker containers.
 
-Azure Container Apps can run any Java application, whether they are packaged as standard Java JAR files (which is the easiest option) or as Docker images (which gives you more control).
+Azure Container Apps can run any Java application, when packaged as a Docker image (including Tomcat, Spring Boot and Quarkus applications). Building and managing those images is your responsibility (for example, by using GitHub Actions): this gives you a lot of flexibility, but also requires some maintenance.
 
 It's a cost-effective and scalable solution, which makes it a great option for small and medium workloads.
 
-For running a simple Java monolithic application, Azure Container Apps is therefore the best option.
+For running a container-based Java monolithic application, Azure Container Apps is therefore the best option.
 
 ## Azure App Service
 
