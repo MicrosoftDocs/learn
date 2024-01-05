@@ -107,7 +107,7 @@ With Azure premium SSDs, you can define disk caching modes. For the striped set 
 
 SAP HANA requires specific Linux kernel settings. These kernel settings aren't part of the standard Azure Marketplace images and must be set manually. Depending on whether you use SUSE or Red Hat, the parameters might be different.
 
-SLES for SAP Applications 12 general availability and SLES for SAP Applications 12 SP1 have a new tool, tuned-adm, that replaces the old sapconf tool. A special SAP HANA profile is available for tuned-adm. To tune the system for SAP HANA, set the following profile as a root user:
+SLES for SAP Applications 12 general availability and SLES for SAP Applications 12 SP1 have a new tool, tuned-adm that replaces the old sapconf tool. A special SAP HANA profile is available for tuned-adm. To tune the system for SAP HANA, set the following profile as a root user:
 
 `tuned-adm profile sap-hana`
 

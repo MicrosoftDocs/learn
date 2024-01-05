@@ -1,7 +1,7 @@
-This section lists the key steps for a manual, single-instance SAP HANA installation when you use SAP HDBLCM to perform a distributed SAP NetWeaver 7.5 installation.
+This section lists the key steps for a manual, single-instance SAP HANA installation when you use SAP HANA database lifecycle management (HLM) to perform a distributed SAP NetWeaver 7.5 installation.
 
 1. Create an Azure virtual network.
-2. Deploy two Azure VMs using the Azure Resource Manager deployment model. This example uses SUSE Linux Enterprise Server for SAP Applications 12 SP3.
+2. Deploy two Azure VMs using Azure Resource Manager deployment model. This example uses SUSE Linux Enterprise Server for SAP Applications 12 SP3.
 3. Attach Standard or Premium data disks to the application server VM.
 4. Attach Premium data disks to the HANA DB server VM.
 5. Create striped volumes using the attached disk. Use either logical volume management (LVM) or a multiple-devices administration (mdadm) tool at the OS level inside the VM.

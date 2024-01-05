@@ -1,4 +1,4 @@
-## Deployment via the Azure portal
+Deployment via the Azure portal:
 
 The Azure portal offers an intuitive interface for performing most common administrative tasks manually.
 
@@ -27,8 +27,8 @@ The GitHub repository [SAP on Azure Deployment Automation Framework](https://git
 
 The supported scenarios include the full deployment of:
 
-- HANA single-node instance
+- HANA single-node instance.
 - HANA high-availability pair, consisting of:
 
-  - Single-node HANA instance, two-tier HSR (primary/secondary)
-  - Pacemaker high-availability cluster, fully configured with SBD and SAP/Azure resource agents
+  - Single-node HANA instance, two-tier HSR (primary/secondary).
+  - Pacemaker high-availability cluster, fully configured with SBD and SAP/Azure resource agents.
