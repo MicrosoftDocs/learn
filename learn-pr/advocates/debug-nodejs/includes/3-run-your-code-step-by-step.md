@@ -20,7 +20,7 @@ There are multiple ways of defining breakpoints in your code based on your debug
 
 Because a debugger has full access to the execution environment, a malicious actor could also use it to inject arbitrary code in your Node.js application. That's why, by default, Node.js doesn't allow you to debug a running program. You have to enable a special mode called *inspector* mode to allow debugging.
 
-You need to start your application with the `--inspect` option to allow a debugger _client_ to attach itself to the application application and take control of your application execution.
+You need to start your application with the `--inspect` option to allow a debugger _client_ to attach itself to the application and take control of your application execution.
 
 By default, when Node.js is started with the `--inspect` option, it listens on host `127.0.0.1` on port `9229`. You can also specify a custom host and port by using the syntax `--inspect=<HOST>:<PORT>`.
 
