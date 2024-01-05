@@ -3,7 +3,7 @@ Now you have:
 - Identified deployment options for SAP solutions on Azure.
 - Discovered supported Azure virtual machine types for SAP products on Windows and Linux.
 
-## Learn more
+**Learn more**:
 
 - [What SAP software is supported for Azure deployments](/azure/virtual-machines/workloads/sap/sap-supported-product-on-azure)
 - [SAP solutions on Azure](https://azure.microsoft.com/solutions/sap/azure-solutions/)
