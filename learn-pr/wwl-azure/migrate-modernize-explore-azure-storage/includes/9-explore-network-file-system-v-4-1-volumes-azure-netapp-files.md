@@ -3,11 +3,9 @@ Azure NetApp Files provides native Network File System (NFS) shares that can be 
 > [!IMPORTANT]
 > The NFS v3 protocol implemented on Azure NetApp Files is **not** supported to be used for **/hana/data** and **/hana/log**. The usage of the NFS 4.1 is mandatory for **/hana/data** and **/hana/log** volumes from a functional point of view. Whereas for the **/hana/shared** volume the NFS v3 or the NFS v4.1 protocol can be used from a functional point of view.
 
-:::image type="content" source="../media/highly-available-nfs-share-overview-558f42ac.png" alt-text="Overview diagram of highly available N F S share.":::
+:::image type="content" source="../media/highly-available-network-file-system-share-overview-558f42ac.png" alt-text="Diagram showing overview of highly available N F S share.":::
 
-## Important considerations
-
-When considering Azure NetApp Files for the SAP Netweaver and SAP HANA, be aware of the following important considerations:
+When considering Azure NetApp Files for the SAP Netweaver and SAP HANA, be aware of the following **important considerations**:
 
 - The minimum capacity pool is 4 TiB.
 - The minimum volume size is 100 GiB.

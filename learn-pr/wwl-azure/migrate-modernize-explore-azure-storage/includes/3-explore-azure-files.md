@@ -15,6 +15,6 @@ There are three options for authorizing access to data objects in Azure Storage:
 - **Using your storage account keys** to authorize access to the entire content of the corresponding storage account.
 - **Using Shared Access Signatures** to grant controlled permissions to specific data objects or containers of objects for a specific amount of time in a target storage account.
 
-## Optional demo
+**Optional demo**:
 
 - [Demonstration: Create and manage file shares and snapshots](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-create-manage-file-shares-snapshots.md)

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/04/2024
+  ms.date: 01/05/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -33,7 +33,7 @@ quiz:
     - content: "Standard and Premium"
       isCorrect: true
       explanation: "Correct. Azure Files offers two performance tiers. Standard file shares are backed by reliable rotational hard disk drives (HDDs). Premium file shares use high-performance, low-latency solid-state disks (SSDs)."
-    - content: "Basic, Standard, and Premium"
+    - content: "Basic, Standard and Premium"
       isCorrect: false
       explanation: "Incorrect. Azure Files offers two performance tiers. Standard file shares are backed by reliable rotational hard disk drives (HDDs). Premium file shares use high-performance, low-latency solid-state disks (SSDs)."
   - content: "What is the maximum size of a data disk attached to an Azure VM?"
