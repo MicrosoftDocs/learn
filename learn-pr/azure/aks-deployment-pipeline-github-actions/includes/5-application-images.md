@@ -1,27 +1,27 @@
-The containerized image is an essential part of a distributed application that uses Azure Kubernetes Service (AKS). You can use tags to create the container images you need, store your images in a container registry, and deploy a particular image by using its tag. In this unit, you learn about how your CI/CD pipeline uses tagged application images.
+A containerized image is an essential part of any distributed application that uses Azure Kubernetes Service (AKS). You can use tags to create the container images you need, store your images in a container registry, and deploy a particular tagged image. In this unit, you learn how your CI/CD pipeline uses tagged application images.
 
 ## Container images
 
-A container image is an executable software bundle that encapsulates an application and all its software dependencies. In this module, you use a Docker container image to build your application. The Docker image contains the application code and any dependencies needed to create a fully executable image of your application. The container image is configured by a Dockerfile that has a set of instructions for the container runtime.
+A container image is an executable software bundle that encapsulates an application and all its software dependencies. This module uses a Docker container image to build the Contoso website application. The Docker image contains the application code and any dependencies needed to create a fully executable image of the application. The container image is configured by a Dockerfile that has a set of instructions for the container runtime.
 
 If you look at the Dockerfile in the root of your fork, you see that the image starts by using another *nginx* image as its base. Instead of starting from scratch, it's common to start with other images that have the files you need.
 
 You build an image from a Dockerfile by using the `docker build` command.
 
 > [!IMPORTANT]
-> The Docker `build` command doesn't work within the Cloud Shell environment because [the use of Docker inside a running container is disallowed](/azure/cloud-shell/troubleshooting#bash-troubleshooting). If you want to test the `docker build .` command, clone the repository locally and run the command by using your own Docker installation.
+> The `docker build` command doesn't work within the Cloud Shell environment, because [the use of Docker inside a running container is disallowed](/azure/cloud-shell/troubleshooting#bash-troubleshooting). If you want to test the `docker build .` command, clone the repository locally and run the command by using your own Docker installation.
 
 ## Image tags
 
-Tags are an important aspect of working with container images. Tags can tell you the type of image and can differentiate between multiple images that have the same name.
-
-For example, if you want the Node.js image in a repository to start from Node 12, you can include the tag `FROM node:12` in the Dockerfile. If you want to start from the latest stable version, you can use the tag `FROM node:current`. The tags indicate the type of image and what it's expected to do.
+Tags are an important aspect of working with container images. Tags can tell you the type of image and differentiate between multiple images that have the same name.
 
 Building a container image uses the same technique as creating a GitHub repository. Docker container paths are usually something like *repository/image-name*, but you can build multiple versions of the same image that use tags to distinguish them.
 
-In this module, you use tags to label release versions. You create a tag for each production version by using `v*.*.*` semantic versioning rules, such as `v1.0.0` for version 1.0.0. Every tagged push to the main branch generates a new image tag with the same name as the tag on that push. nontagged pushes generate only the `latest` tag.
+For example, if you want the Node.js image in a repository to start from Node 12, you can include the tag `FROM node:12` in the Dockerfile. If you want to start from the latest stable version, you can use the tag `FROM node:current`. Tags indicate the type of image and what it's expected to do.
 
-All pushes, tagged and nontagged, update the `latest` image with the most recent code and deploy it to staging. The images that are tagged with `v*` are also deployed to production. Only official tagged images should go to production, while both staging and production should always have the `latest` image.
+In this module, you use tags to label release versions. You create a tag for each production version by using `v*.*.*` semantic versioning rules, such as `v1.0.0` for version 1.0.0. Every tagged push to the main branch generates a new image tag with the same name as the tag on that push. Nontagged pushes generate only the `latest` tag.
+
+All pushes, tagged and nontagged, update the `latest` image with the most recent code and deploy it to staging. The images that are tagged with `v*` are also deployed to production. Only official tagged images should deploy to production, while both staging and production environments always have the `latest` image.
 
 ## Container registries
 

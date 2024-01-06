@@ -1,4 +1,4 @@
-In this unit, you use GitHub Actions to deploy a Helm chart to Azure Kubernetes Service (AKS). To deploy the Helm chart, you complete the following tasks:
+In this unit, you create a Helm chart to deploy to Azure Kubernetes Service (AKS) by using GitHub Actions. To create the Helm chart, you complete the following tasks:
 
 - Check the Helm installation.
 - Create a chart.
@@ -12,9 +12,7 @@ In this unit, you use GitHub Actions to deploy a Helm chart to Azure Kubernetes 
 
 ## Check the Helm installation and update the repo
 
-The Helm CLI is already installed in Azure Cloud Shell.
-
-1. If you don't already have Cloud Shell open, sign in to [Cloud Shell](https://shell.azure.com/?azure-portal=true) by using the Azure account you want to deploy resources to, and make sure **Bash** is set as the Cloud Shell terminal.
+The Helm CLI is already installed in Azure Cloud Shell. If you don't already have Cloud Shell open, sign in to [Cloud Shell](https://shell.azure.com/?azure-portal=true) and make sure **Bash** is set as the Cloud Shell terminal.
 
 1. Run `helm version` to make sure the displayed Helm version is greater than **3**.
 
@@ -26,7 +24,7 @@ The Helm CLI is already installed in Azure Cloud Shell.
 
 Generate a boilerplate Helm template in the *kubernetes* directory of your repository.
 
-1. Switch to the *kubernetes* directory:
+1. In Cloud Shell, switch to the *kubernetes* directory:
 
    ```bash
    cd kubernetes
@@ -102,7 +100,7 @@ Add templates for this deployment.
 1. Under the `template`/`spec`/`containers` section, update `!IMAGE!` to fetch the `latest` and `tag` versions from your AKS cluster. It's good practice to split up the `registry`, `image`, and `tag` parts of the image name to work with them more easily. Add three new template variables using the values of `{{ .Values.image.registry }}.azurecr.io/{{ .Values.image.name }}:{{ default "latest" .Values.image.tag }}`.
 
     ```yaml
-            - image: {{ .Values.image.registry }}.azurecr.io/{{ .Values.image.name }}:{{ default "latest" .Values.image.tag }}
+    - image: {{ .Values.image.registry }}.azurecr.io/{{ .Values.image.name }}:{{ default "latest" .Values.image.tag }}
     ```
     
     Your *deployment.yaml* file should look similar to the following example:
@@ -202,19 +200,19 @@ This file should have the same structure as the file you use to call variables. 
 
 1. Go to the `host` key. You create separate hosts for staging and production deployments, so users can't access the `staging` namespace by using production URLs. Concatenate the namespace in the host name. The HTTP application routing add-on in the AKS cluster handles name resolution.
 
-   ```yaml
+    ```yaml
            - host: contoso-{{ default "staging" .Release.Namespace }}.!DNS!
-```
+    ```
 
 1. Add a new template variable for your DNS zone name
 
-   ```yaml
+    ```yaml
            - host: contoso-{{ default "staging" .Release.Namespace }}.{{ .Values.dns.name }}
-   ```
+    ```
 
-   Your final *ingress.yaml* file should look like the following example:
+    Your final *ingress.yaml* file should look like the following example:
 
-   ```yaml
+    ```yaml
     apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
@@ -247,7 +245,7 @@ This file should have the same structure as the file you use to call variables. 
       registry: contosocontainerregistry00000
       name: contoso-website
       tag: latest
-
+    
     dns:
       name: <your-dns-zone-name>
     ```
@@ -264,16 +262,18 @@ az aks show -g <resource-group-name> -n contoso-website -o tsv --query addonProf
 
 To push all the changes to your fork, run the following commands in order:
 
-    ```bash
-    git add .
-    ```
+```bash
+git add .
+```
 
-    ```bash
-    git commit -m "Add helm"
-    ```
+```bash
+git commit -m "Add helm"
+```
 
-    ```bash
-    git push -u origin main
-    ```
+```bash
+git push -u origin main
+```
 
 When prompted, provide the PAT you created earlier as the password.
+
+Proceed to the next unit to deploy your Helm chart and application to AKS by using GitHub Actions.

@@ -1,6 +1,6 @@
 You successfully built and pushed both your staging and production images to your Azure Container Registry instance. It's time to automate all the steps and make the pipeline work for you.
 
-Currently, you must manually change files every time you run the pipeline, so you can't deploy automatically. To solve this issue, you can use a Helm chart to manage your builds. In this unit, you learn about Helm charts and templates.
+Currently, you must manually change files every time you run the pipeline, so you can't deploy automatically. To solve this issue, you can use a Helm chart to manage your deployments. In this unit, you learn about Helm charts and templates.
 
 ## Helm charts
 
@@ -17,9 +17,9 @@ Here's the structure of a typical Helm chart directory:
 - The *Chart.yaml* file contains the name, description, and version of the chart.
 - The *charts* directory includes dependent charts.
 - The *templates* directory contains all manifest files.
-- The *values.yaml* file contains all default values for the Helm templates.
+- The *values.yaml* file contains the default values for the Helm templates.
 
-Another feature that makes Helm stand out as a tool is the ability to create and manage templates to perform automated deployments.
+A feature that distinguishes Helm as a tool is the ability to create and manage templates to perform automated deployments.
 
 ## Helm templates
 
@@ -54,13 +54,13 @@ spec:
               name: http
 ```
 
-You replace the `!IMAGE!` placeholder with your Container Registry instance and image name. In a manual workflow, you can run the following command to replace the `!IMAGE!` placeholder with your repository and image name and then print the result. To run the code manually, you can pipe the command to `kubectl apply -f -` and create the workloads.
+In your workflow, you replace the `!IMAGE!` placeholder with your Container Registry instance and image name. In a manual workflow, you can run the following command to replace the `!IMAGE!` placeholder and then print the result. To run the code manually, you can pipe the command to `kubectl apply -f -` and create the workloads.
 
 ```bash
 $ sed 's+!IMAGE!+'"$ACR_NAME"'/contoso-website+g' kubernetes/deployment.yaml
 ```
 
-However, this manual solution isn't elegant or efficient. With Helm native templating, you can replace `!IMAGE!` by using `{{.Values.containerImage}}` instead.
+However, this manual solution isn't elegant or efficient. With Helm native templating, you can replace `!IMAGE!` by using the `{{.Values.containerImage}}` variable instead.
 
 ```yaml
 ...

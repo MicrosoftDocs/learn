@@ -1,4 +1,4 @@
-Before you change or deploy your company's infrastructure, understand what you plan to build by exploring the concepts behind continuous integration (CI) and continuous delivery or deployment (CD). In this unit, you learn about CI/CD pipelines and how to apply CI and CD to GitHub Actions.
+Before you change or deploy your company's infrastructure, understand what you plan to build by exploring the concepts behind continuous integration (CI) and continuous delivery or deployment (CD). In this unit, you learn about CI/CD pipelines and how to apply CI and CD with GitHub Actions.
 
 CI and CD are operating practices that introduce continuous automation and monitoring into all the phases of software development, testing, and deployment. Developer teams use CI and CD to be more productive and help reduce problems that can arise when integrating new code into an existing code base.
 
@@ -6,9 +6,9 @@ CI and CD are operating practices that introduce continuous automation and monit
 
 Before the development of CI/CD tools, the entire develop-test-deploy-test process was manual. Automated test suites were available, but they had to be run manually or at scheduled times by expert teams.
 
-One of the most significant challenges software developers faced was merge day. Merge day happened because most software development teams worked on the same code in different branches with minimal tests. On merge day, all code changes were integrated back into the main branch. As a result, an entire day had to be dedicated to solving integration issues as the team members' branches merged and intersected in the main branch.
+One of the most significant challenges software developers faced was merge day. Merge day happened because most software development teams worked on the same code in different source control branches with minimal tests. On merge day, all code changes were integrated back into the main branch. As a result, an entire day had to be dedicated to solving integration issues as the team members' branches merged and intersected in the main branch.
 
-One of the most critical CI principles is to merge all new changes back into the main branch as often as possible. Continually merging changes helps avoid the merge day "integration hell" that occurred when many developers combined their changes at once.
+A critical CI principle is to merge all new changes back into the main branch as often as possible. Continually merging changes helps avoid the merge day "integration hell" that occurred when many developers combined their changes at once.
 
 CI requires that teams frequently implement and integrate the smallest changes in the code. Implementing CI means that teams can constantly test, compile, deploy, and then test again in production. The goal of CI is to detect and avoid production problems caused by code changes before they can affect the main code branch or deploy to customers.
 
@@ -28,11 +28,11 @@ Every time a code change triggers a CI/CD run, all steps in the pipeline execute
 
 ## GitHub Actions
 
-You can use GitHub Actions to seamlessly integrate all your GitHub hosted code with an automation workflow. The workflow handles multiple tasks to integrate the code across several environments.
+GitHub Actions supports all GitHub related events and automates the CI/CD pipeline in this module. In GitHub Actions, each step defines actions either in JavaScript or by using a Docker container. Actions are easy to create, and form the building blocks of the pipeline steps.
 
-GitHub Actions support all GitHub related events and are the most important part of the CI/CD pipeline in this module. In GitHub Actions, each step defines actions either in JavaScript or by using a Docker container. Actions are easy to create, and form the building blocks of the pipeline steps.
+You can use GitHub Actions to seamlessly integrate all your GitHub hosted code with an automation workflow. The workflow handles multiple tasks to integrate the code across several environments.
 
 GitHub Actions is a popular provider for CI/CD pipelines because of its open-source model. Because workflows are open-source, they're stored in repositories available to anyone on the platform. GitHub users may use each other's actions or create their own custom actions without installing or configuring anything else.
 
-The ability to share actions among users means that you don't need to rewrite repeated code or stages but can use or customize others' actions. In the next units, you use GitHub Actions in a Docker container to define a CI/CD pipeline that implements continuous deployment of an application.
+The ability to share actions among users means that you don't need to rewrite repeated code or stages, but can use or customize others' actions. In the next units, you use GitHub Actions in a Docker container to define a CI/CD pipeline that implements continuous deployment of an application.
 

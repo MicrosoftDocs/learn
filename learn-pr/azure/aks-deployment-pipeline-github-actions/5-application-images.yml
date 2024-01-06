@@ -19,14 +19,14 @@ quiz:
         - content: "A zipped directory with code you can download and run on any platform or computer by using Docker."
           isCorrect: false
           explanation: "Docker images are composed of more than just application code."
-        - content: "A standalone, lightweight package that includes all you need to run the application in a container."
+        - content: "A standalone, lightweight package that includes all you need to build and run an application in a container."
           isCorrect: true
           explanation: "An application image is the template that Docker uses to create containers that hold your application."
         - content: "A snapshot of your current working directory hosted in the cloud."
           isCorrect: false
           explanation: "Although an image contains everything needed to build and run an application, it isn't a snapshot of the state of your computer."
 
-    - content: "How does a CI/CD pipeline use Docker container image tags?"
+    - content: "How can a CI/CD pipeline use image tags?"
       choices:
         - content: "To identify different components of the application image."
           isCorrect: false

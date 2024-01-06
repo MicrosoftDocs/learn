@@ -20,7 +20,7 @@ In this exercise, you:
 
 1. On the **Choose a workflow** page, select **set up a workflow yourself**.
 
-1. Copy and paste the followng basic workflow into the editing pane:
+1. Copy and paste the basic workflow into the editing pane:
 
     ```yaml
     # This is a basic workflow to help you get started with Actions
@@ -211,6 +211,8 @@ This time, the production action doesn't trigger, because you didn't push a new 
 
 ## Generate a personal access token (PAT)
 
+You need a PAT to push your tags in the next step and to run the deploy script in a later unit.
+
 1. Go to the fork of the sample repository in the GitHub website. On the top right hand corner, select your profile photo, then select **Settings**.
 
 1. Select **Developer settings** at the bottom of the left menu.
@@ -230,7 +232,7 @@ This time, the production action doesn't trigger, because you didn't push a new 
 
 1. Select **Generate token** at the bottom of the page.
 
-1. Select the copy icon to copy your PAT. Save the PAT for later steps.
+1. Select the copy icon to copy your PAT. Save the PAT to use in later steps.
 
     :::image type="content" source="../media/7-copy-personal-access-token.png" alt-text="Screenshot that shows the personal access token after it's created.":::
 

@@ -1,10 +1,10 @@
-In this unit, you plan your CI/CD pipeline to support the needs of your project. You want the Contoso Video website to be published in Azure Kubernetes Service (AKS) after each successful push to the main branch that's tagged for release to production. You use the version tags for routing when you push the container images to Azure Container Registry.
+In this unit, you design a CI/CD pipeline to support the needs of your project. You want the Contoso Video website to be published in Azure Kubernetes Service (AKS) after each successful push to the main branch that's tagged for release to production. You also use the tags for routing when you push the container images to Azure Container Registry.
 
-This design makes it easy to check the version of each deployment that goes to production. You also want to test the website in a staging environment after every successful push to the main branch, regardless of whether the push is tagged for release to production.
+This design makes it easy to check the version of each deployment that goes to production. You also want to deploy the website to a staging environment for testing after every push to the main branch, regardless of whether the push is tagged for release to production.
 
 ## Design the pipeline
 
-To design the pipeline, consider the tasks and triggers.
+To design the pipeline, you consider the tasks and triggers.
 
 ### Triggers
 
@@ -13,7 +13,7 @@ Your pipeline needs to trigger on two different events:
 - A tagged push to the main branch
 - A nontagged push to the main branch
 
-You split the two events into two separate triggers because the actions for a tagged push compared to a nontagged push are different. A tagged push deploys to production, while a nontagged push deploys to the staging environment. The following diagram shows the two triggers for the pipeline:
+You split the two events into two separate triggers because the actions for a tagged push are different from the actions for a nontagged push . A tagged push deploys to production, while a nontagged push deploys to the staging environment. The following diagram shows the two triggers for the pipeline:
 
 :::image type="content" source="../media/3-pipeline-1-trigger.png" alt-text="Diagram that shows two types of pipeline triggers.":::
 

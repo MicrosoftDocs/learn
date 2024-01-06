@@ -86,7 +86,7 @@ Use OIDC to authenticate GitHub Actions to access AKS.
               client-id: ${{ secrets.AZURE_CLIENT_ID }}
               tenant-id: ${{ secrets.AZURE_TENANT_ID }}
               subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-```
+    ```
 
 1. In the right panel, search for *set context*, and select **Azure Kubernetes set context** published by **Azure**.
 

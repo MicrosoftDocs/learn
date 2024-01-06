@@ -33,6 +33,6 @@ quiz:
         - content: "A specific set of tasks you can run when you check in code changes."
           isCorrect: false
           explanation: "A CI pipeline is a specific set of tasks, but it runs automatically when a new code change is detected."
-        - content: "The set of processes that run when a new code change is detected."
+        - content: "A set of processes that runs automatically when a new code change is detected."
           isCorrect: true
-          explanation: "The set of processes that are triggered by a code change is called a CI pipeline."
+          explanation: "The set of processes that are automatically triggered by a code change is called a CI pipeline."

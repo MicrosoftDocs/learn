@@ -16,7 +16,9 @@ In this exercise, you create the staging pipeline by doing the following steps:
 
 GitHub workflows are divided into jobs, and jobs are divided into steps. Each step can have multiple commands and use multiple actions to execute.
 
-1. To start building your pipeline, go to your fork of the sample repository in the GitHub website. Select the **Actions** tab.
+To start building your pipeline, go to your fork of the sample repository in the GitHub website.
+
+1. Select the **Actions** tab.
 
 1. Select the link to **set up a workflow yourself**.
 
@@ -81,13 +83,13 @@ The basic workflow template comes with two triggers:
 
 You don't need the pipeline to run on a pull request, so modify it to keep only the push trigger by changing the triggers in the `on` key. Remove the second trigger and leave only the `push` tags.
 
-    ```yaml
-    name: Build and push the latest build to staging
+```yaml
+name: Build and push the latest build to staging
 
-    on:
-      push:
-        branches: [ main ]
-    ```
+on:
+  push:
+    branches: [ main ]
+```
 
 ### Configure the checkout step
 
@@ -97,7 +99,7 @@ Next, start working on the job steps. In this process, you implement both the bu
 
 1. You want this workflow to run on Ubuntu 20.04, so change the `runs-on` key from `ubuntu-latest` to `ubuntu-20.04`.
 
-1. Delete the last two commands in the `steps` key, which are only examples from the template.
+1. Delete the last two commands in the `steps` key, which are just examples for the template.
 
     Your file, without the comments, should look like this example:
 
@@ -116,13 +118,13 @@ Next, start working on the job steps. In this process, you implement both the bu
           - uses: actions/checkout@v2
     ```
 
-You now have a step that uses the `checkout` action. This action clones the repository into the job environment. This step is equivalent to the first action, clone repo, in the pipeline design diagram.
+You now have a step that uses the `checkout` action. This action clones the repository into the job environment. This step is equivalent to the first action, **Clone repo**, in the pipeline design diagram.
 
 ### Add Docker steps
 
 Next, add actions to build your Docker image. You can adjust usage for these actions. This example uses only a few of the parameters available. For more information, see the [GitHub build-push-action documentation](https://github.com/docker/build-push-action/tree/v2?azure-portal=true).
 
-1. In the **Marketplace** tab in the right panel, search for *docker login*, and select the first result published by **Docker**.
+1. In the **Marketplace** tab in the right panel, search for *docker login*, and select the first result published by **docker**.
   
     :::image type="content" source="../media/6-3-docker-login.png" alt-text="Screenshot showing the search results listing Docker Login.":::
 
@@ -140,15 +142,15 @@ Next, add actions to build your Docker image. You can adjust usage for these act
 
 1. Add the following values to the `registry`, `username`, and `password` keys:
 
-    |Key name     |Value                                         |
-    |-------------|----------------------------------------------|
-    |`registry`     |`${{ secrets.ACR_NAME }}`                     |
-    |`username`     |`${{ secrets.ACR_LOGIN }}`                    |
-    |`password`     |`${{ secrets.ACR_PASSWORD }}`                 |
+    |Key name     |Value |
+    |-------------|----------------------------|
+    |`registry`     |`${{ secrets.ACR_NAME }}` |
+    |`username`     |`${{ secrets.ACR_LOGIN }}` |
+    |`password`     |`${{ secrets.ACR_PASSWORD }}` |
 
 1. Delete the other keys, because they aren't used in this exercise.
 
-1. In the right panel under **Marketplace**, search for *build and push docker images*, and select the first result published by **Docker**.
+1. In the right panel under **Marketplace**, search for *build and push docker images*, and select the first result published by **docker**.
 
     :::image type="content" source="../media/6-3-docker-action.png" alt-text="Screenshot that shows the search results that list Build and push Docker images.":::
 
@@ -219,13 +221,6 @@ Selecting **Commit changes** triggers a new build, but this build fails because 
 
 ## Set the secrets
 
-On your GitHub repository page, select the **Settings** tab, and then select **Secrets and variables** > **Actions** from the left menu. To define each secret:
-
-1. Select **New repository secret**.
-1. For **Name**, enter the secret name.
-1. For **Secret**, enter the corresponding value you saved from the setup script, or run a Cloud Shell query to get the value.
-1. Select **Add secret**.
-
 Define the following secrets that your workflow uses.
 
 |Name|Value|
@@ -235,6 +230,13 @@ Define the following secrets that your workflow uses.
 |`ACR_PASSWORD`| The `ACR Login Password` value returned by the setup script |
 |`RESOURCE_GROUP`| The `Resource Group Name` value returned by the setup script |
 |`CLUSTER_NAME`| *contoso-video* |
+
+To set the secrets, on your GitHub repository page, select the **Settings** tab, and then select **Secrets and variables** > **Actions** from the left menu. To define each secret:
+
+1. Select **New repository secret**.
+1. For **Name**, enter the secret name.
+1. For **Secret**, enter the value you saved from the setup script, or run a Cloud Shell query to get the value.
+1. Select **Add secret**.
 
 ### Run queries to get the secrets values
 
