@@ -1,6 +1,6 @@
-By using CI/CD with GitHub Actions, you're able to automate application image building and deployment. You created a workflow that triggers when a developer on your team pushes a code change to the main branch. The workflow builds and pushes the application image to the company's Azure Container Registry instance.
+By using CI/CD with GitHub Actions, you're now able to automate application image building and deployment. You created a workflow that triggers when a developer on your team pushes a code change to the main branch. The workflow builds and pushes the application image to Contoso's Azure Container Registry instance.
 
-Then, when someone on your team creates a release from that push, a new pipeline triggers and deploys the application to the Azure Kubernetes Service (AKS) cluster without manual effort. This solution means your team doesn't spend time and effort on manually building and deploying application images for every new feature on the Contoso Video website.
+Then, when someone on your development team creates a release from that push, a new pipeline triggers and deploys the application to the Azure Kubernetes Service (AKS) cluster without manual effort. This solution means your team doesn't spend time and effort on manually building and deploying application images for every new feature on the Contoso Video website.
 
 ## Clean up resources
 
@@ -30,7 +30,7 @@ In this module, you created resources in your Azure subscription. Use the follow
 
 1. Scroll down and select the red **Delete this repository** button. To confirm the deletion, enter the full name of the repository.
 
-1. To delete the PAT created previously, select your profile photo, then select **Settings**.
+1. To delete the PAT you created, select your profile photo, then select **Settings**.
 
 1. Select **Developer settings**.
 
