@@ -29,7 +29,7 @@ quiz:
       isCorrect: true
       explanation: "This is the logic behind the random number generator that you built in this module."
 
-  - content: 'Which of the following structures are required in a Q# program to run successfully?'
+  - content: 'Which of the following structures are required for a Q# program to run successfully?'
     choices:
     - content: 'A Q# program must have a namespace, an operation, and a function.'
       isCorrect: false
