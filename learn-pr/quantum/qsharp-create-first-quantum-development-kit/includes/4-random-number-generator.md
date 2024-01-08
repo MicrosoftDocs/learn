@@ -28,7 +28,7 @@ Let's say you generate the bit string ${1101_{\ binary}}$, which is equivalent t
 
 Next, you generate the bit string ${0110_{\ binary}}$, which is equivalent to ${6_{\ decimal}}$. Because 6 is less than 12, the process is complete.
 
-The quantum random number generator will return number 6.
+The quantum random number generator returns the number 6.
 
 ## Create a complete random number generator
 
