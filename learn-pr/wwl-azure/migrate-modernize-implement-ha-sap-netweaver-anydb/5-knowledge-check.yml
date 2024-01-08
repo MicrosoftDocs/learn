@@ -25,7 +25,7 @@ quiz:
     - content: "All of the IP addresses are dynamic by default, and need to be changed to static."
       isCorrect: true
       explanation: "Correct. All IP addresses of the network cards and Azure internal load balancers are dynamic by default. They must be changed to static IP addresses."
-  - content: "You are using a 3-tier SAP Azure Resource Manager template to deploy a single SID 3-tier SAP NetWeaver high availability AnyDB. To prepare a highly available scenario, what extra step should you take when deploying the templates?"
+  - content: "The deployment of a new SAP landscape will use a 3-tier SAP Azure Resource Manager template to deploy a single SID 3-tier SAP NetWeaver high availability AnyDB. To prepare a highly available scenario, what extra step should you take when deploying the templates?"
     choices:
     - content: "Change all Azure internal load balancer IP addresses to dynamic"
       isCorrect: false
