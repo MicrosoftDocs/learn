@@ -20,7 +20,9 @@ Hashicorp Terraform is an open-source tool for provisioning and managing cloud i
 
 Terraform is a popular tool choice for multicloud scenarios, where similar infrastructure is deployed to Azure and other cloud providers or on-premises datacenters. It enables developers to use the same tools and configuration files to manage infrastructure on multiple cloud providers.
 
-The GitHub repository [SAP on Azure Deployment Automation Framework](https://github.com/Azure/sap-automation) contains a set of highly customizable templates that can be used to automatically deploy complex SAP landscapes in the Azure Cloud. The templates are split into:
+The GitHub repository [SAP on Azure Deployment Automation Framework](https://github.com/Azure/sap-automation) contains a set of highly customizable templates that can be used to automatically deploy complex SAP landscapes in the Azure Cloud. 
+
+The templates are split into:
 
 - Terraform modules, which deploy the infrastructure components (such as VMs, network, storage) in Azure and then call the:
 - Ansible playbooks that run different roles to install and configure SAP HANA and required applications on the already deployed infrastructure.
