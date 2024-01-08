@@ -157,7 +157,7 @@ The `let` directive declares variables that don't change during the computation.
 
 Let's try out our new random number generator!
 
-1. To test run your program locally on the built-in simulator, select **Run Q# file** from the play icon drop-down in the top-right, or press **Ctrl+5**. Your output will appear in the debug console.
+1. To test run your program locally on the built-in simulator, select **Run Q# File** from the play icon drop-down in the top-right, or press **Ctrl+F5**. Your output will appear in the debug console.
 1. Run the program again to see a different result.
 
 Congratulations! Now you know how to combine classical logic with Q# to create a quantum random number generator.
