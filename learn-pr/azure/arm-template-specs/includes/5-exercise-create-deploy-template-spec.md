@@ -232,7 +232,7 @@ The deployment can take a minute or two to finish.
 
 1. In your browser, go back to the Azure portal. Go to your resource group.
 
-1. Next to **Deployments**, select **1 Succeeded** to see the details of the deployment.
+1. Next to **Deployments**, select the **1 Succeeded** link to see the details of the deployment.
 
    :::image type="content" source="../media/5-deployment-succeeded.png" alt-text="Screenshot of the Azure portal interface for the resource group overview, with the deployments section showing that one succeeded." border="true":::
 
