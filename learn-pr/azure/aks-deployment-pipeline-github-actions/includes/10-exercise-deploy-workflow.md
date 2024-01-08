@@ -30,10 +30,10 @@ The deployment steps include:
     ```yaml
           deploy:
             runs-on: ubuntu-20.04
-            needs: build_push_image # Will wait for the execution of the previous job
+            needs: build_push_image
             permissions:
-              id-token: write # This is required for requesting the JWT
-              contents: read  # This is required for actions/checkout
+              id-token: write
+              contents: read
         
             steps:
               - uses: actions/checkout@v2
@@ -203,7 +203,7 @@ Create federated certificates to authorize GitHub Actions to access the applicat
 
 1. Search for and select the application that matches the `displayName` value returned in the previous `az ad sp create-for-rbac` step. By default, the application name uses the timestamp of the service principal creation.
 
-   Verify the values of the **appID (Client ID)**, **Object ID (Application Object ID)**, and **Directory ID (Tenant ID)**.
+1. Verify that the values of the **appID (Client ID)**, **Object ID (Application Object ID)**, and **Directory ID (Tenant ID)** match the previous JSON output.
 
 1. In the left navigation, select **Certificates & secrets**.
 
@@ -222,7 +222,7 @@ Create federated certificates to authorize GitHub Actions to access the applicat
 
 1. Select **Add**.
 
-:::image type="content" source="../media/add-credential.png" alt-text="Screenshot of the Add credential screen for the GitHub Actions staging credential.":::
+   :::image type="content" source="../media/add-credential.png" alt-text="Screenshot of the Add credential screen for the GitHub Actions staging credential.":::
 
 1. To add the production credential, select **Add credential** again, and on the **Add a credential** screen, enter all the same values as for the previous credential except:
    - **Entity type**: Select **Tag**.
@@ -366,7 +366,7 @@ Now that you configured Helm and granted access to your cluster, you're ready to
 1. In a new browser tab, go to your fork of the repository, select the **Settings** tab, and then select **Secrets and variables** > **Actions** from the left menu.
 1. Select **New repository secret**.
 1. For **Name**, enter `DNS_NAME`.
-1. For **Secret**, enter the `AKS DNS Zone Name` value from the original setup script output.
+1. For **Secret**, enter the **AKS DNS Zone Name** value from your original setup script output.
 
     If you don't have this value, run the following command in Cloud Shell, substituting your values for `<resource-group-name>` and `<aks-cluster-name>`:
 
@@ -396,7 +396,9 @@ The next step is to create the production workflow.
 
 1. At the end of the Helm command, add a new parameter, `--set image.tag=${GITHUB_REF##*/}`.
 
-    Here, you use a Bash feature called *parameter expansion*. The expansion `${ENV##<wildcard><character>}` returns the last occurrence of the string after `character`. In this case, you want to get only the tag name, which is represented as the GitHub Actions runtime, `GITHUB_REF`.  Branches are `refs/heads/<branch>`, while tags are `refs/tags/<tag>`.
+    Here, you use a Bash feature called *parameter expansion*. The expansion `${ENV##<wildcard><character>}` returns the last occurrence of the string after `character`.
+
+    In this case, you want to get only the tag name, which is represented as the GitHub Actions runtime, `GITHUB_REF`.  Branches are `refs/heads/<branch>`, while tags are `refs/tags/<tag>`. 
 
     You want to remove `refs/tags/` to get only the tag name, so you pass `${GITHUB_REF##*/}` to return everything after the last `/` in the `GITHUB_REF` environment variable.
 
@@ -486,7 +488,7 @@ The next step is to create the production workflow.
 
 ### Production changes
 
-Every time you run the production workflow, you need to update the federated certificate with the corresponding tag version.
+Every time you run the production workflow, you need to update the federated certificate with the corresponding tag version, as follows:
 
 1. In the Azure portal, go to your application page and select **Certificates & secrets** in the left navigation.
 
@@ -498,7 +500,7 @@ Every time you run the production workflow, you need to update the federated cer
 
 1. Select **Update**.
 
-1. In Cloud Shell, run `git pull` to fetch the latest changes. Then, run the following command to tag and push the changes, substituting your new version tag for the placeholder:
+1. In [Cloud Shell](https://shell.azure.com/?azure-portal=true), run `git pull` to fetch the latest changes. Then, run the following command to tag and push the changes, substituting your new version tag for the placeholder:
 
     ```bash
     git tag -a v<new version tag> -m 'Create new production deployment' && git push --tags

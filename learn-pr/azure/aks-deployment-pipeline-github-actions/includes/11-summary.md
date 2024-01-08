@@ -1,6 +1,6 @@
 You're now able to automate application image building and deployment by using CI/CD with GitHub Actions. You created a workflow that triggers when a developer on your team pushes a code change to the main branch. The workflow builds and pushes the application image to the Contoso Azure Container Registry instance.
 
-Then, when someone on your development team creates a release from that push, a new pipeline triggers and deploys the application to your Azure Kubernetes Service (AKS) cluster without manual effort. This solution means your team doesn't spend time and effort on manually building and deploying application images for every new feature on the Contoso Video website.
+Then, when someone on your development team creates a release from that push, a new pipeline triggers and deploys the application to your Azure Kubernetes Service (AKS) cluster without manual effort. This solution means your team doesn't have to spend time and effort on manually building and deploying application images for every new feature on the Contoso Video website.
 
 ## Clean up resources
 

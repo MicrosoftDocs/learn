@@ -203,7 +203,7 @@ Same as for the staging workflow, add the `Docker Login` and `Build and push Doc
 
 To commit your changes, select the **Commit changes** button at upper right. Enter a description for the commit, and then select **Commit changes**.
 
-This time, the production action doesn't trigger, because you didn't push a new tag. But the earlier staging action triggers and builds a new `latest` image.
+This time, the production action doesn't trigger, because you didn't push a new tag, but the earlier staging action triggers and builds a new `latest` image.
 
 ## Generate a personal access token (PAT)
 
@@ -217,7 +217,7 @@ You need a PAT to push your tags in the next step and to run the deploy script i
 
 1. Select **Generate a personal access token**.
 
-1. Under **Note**, provide a name for your PAT, such as *myPersonalAccessToken*.
+1. Under **Note**, provide a name for your PAT, such as *myPersonalAccessTokenLM*.
   
 1. Under **Select scopes**, select the checkbox next to **workflow**.
 
@@ -253,7 +253,7 @@ You need a PAT to push your tags in the next step and to run the deploy script i
 
 1. Select the **Actions** tab and check the running process.
 
-1. When the process completes, run the following command in Cloud Shell, replacing `<ACR_NAME>` with your `ACR_NAME` from the setup script, to confirm that two tags are listed in the results.
+1. When the process completes, run the following command in Cloud Shell, replacing `<ACR_NAME>` with your `ACR_NAME`, to confirm that two tags are listed in the results.
 
     ```azurecli
     az acr repository show-tags --repository contoso-website --name <ACR_NAME> -o table

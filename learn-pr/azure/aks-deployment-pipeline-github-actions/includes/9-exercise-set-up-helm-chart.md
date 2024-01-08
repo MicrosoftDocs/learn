@@ -97,7 +97,7 @@ Add templates for this deployment.
 
    By default, the workflow deploys this resource to the `staging` namespace, but if the `helm install` command has a `Namespace` option, the workflow uses that namespace instead.
 
-1. Under the `template`/`spec`/`containers` section, update `!IMAGE!` to fetch the `latest` and `tag` versions from your AKS cluster.
+1. Under the `template`/`spec`/`containers` section, replace `!IMAGE!` with the `latest` or `tag` versions from your AKS cluster.
 
     It's good practice to split up the `registry`, `image`, and `tag` parts of the image name to work with them more easily. Add three new template variables that use the values of `Values.image.registry`, `Values.image.name`, and `Values.image.tag`.
 
@@ -159,7 +159,7 @@ This file should have the same structure as the file you use to call the variabl
     ```
 
     
-    These values are the default if you don't pass a different value as a parameter by using the `--set` option of the Helm CLI.
+    These values are the default if you don't pass a different value as a parameter by using the `--set` option of the Helm command.
 
 1. Save the file.
 
@@ -170,7 +170,7 @@ This file should have the same structure as the file you use to call the variabl
 1. In the `metadata` section of the file, add a new key called `namespace` that uses the same value that you used in the *deployment.yaml* file.
 
    ```yaml
-        namespace: {{ default "staging" .Release.Namespace }}
+      namespace: {{ default "staging" .Release.Namespace }}
    ```
 
     Your *service.yaml* file should look like the following example:
@@ -240,7 +240,7 @@ This file should have the same structure as the file you use to call the variabl
 
 ### Add a DNS zone name value
 
-1. Open the *values.yaml* file and add a `dns.name` key after the `image` key. Replace `<ACR-NAME>` with your Container Registry name and `<DNS-NAME>` with your AKS DNS Zone Name from the setup script output. Your file should look like the following example:
+1. Open the *values.yaml* file and add a `dns.name` key after the `image` key. Replace `<ACR-NAME>` with your Container Registry name and `<DNS-NAME>` with your **AKS DNS Zone Name** from the setup script output. Your file should look like the following example:
 
     ```yaml
     image:
@@ -252,13 +252,14 @@ This file should have the same structure as the file you use to call the variabl
       name: <DNS-NAME>
     ```
 
+    If you don't have your DNS zone name from the original setup script output, run the following Azure CLI query in a different Cloud Shell window to get it, replacing the `<resource-group-name>` placeholder with your resource group name.
+    
+    ```azurecli-interactive
+    az aks show -g <resource-group-name> -n contoso-website -o tsv --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
+    ```
+
 1. Save the file.
 
-If you don't have your DNS zone name from the original setup script output, run the following Azure CLI query in a different Cloud Shell window to get it, replacing the `<resource-group-name>` placeholder with your resource group name.
-
-```azurecli-interactive
-az aks show -g <resource-group-name> -n contoso-website -o tsv --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
-```
 
 ## Push your changes
 

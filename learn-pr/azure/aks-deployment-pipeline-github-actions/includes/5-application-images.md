@@ -23,13 +23,13 @@ You build an image from a Dockerfile by using the `docker build` command.
 
 Tags are an important aspect of working with container images. Tags can tell you the type of image and differentiate between multiple images that have the same name.
 
-Building a container image uses the same technique as creating a GitHub repository, and the Docker container path is usually something like *repository/image-name*. You can build multiple versions of the same image that use tags to distinguish them.
-
 For example, if you want the Node.js image in a repository to start from Node 12, you can include the tag `FROM node:12` in the Dockerfile. If you want to start from the latest stable version, you can use the tag `FROM node:current`. Tags indicate the type of image and what it's expected to do.
+
+Building a container image uses the same technique as creating a GitHub repository, and the Docker container path is usually something like *repository/image-name*. But you can build multiple versions of the same image that use tags to distinguish them.
 
 In this module, you use tags to label release versions. You create a tag for each production version by using `v*.*.*` semantic versioning rules, such as `v1.0.0` for version 1.0.0. Every tagged push to the main branch generates a new image tag with the same name as the tag on that push. Nontagged pushes generate only the `latest` tag.
 
-All pushes, tagged and nontagged, update the `latest` image with the most recent code and deploy it to staging. The images that are tagged with `v*` are also deployed to production. Only official tagged images should deploy to production, while both staging and production environments always have the `latest` staged image.
+All pushes, tagged and nontagged, update the `latest` image with the most recent code and deploy it to staging. The images that are tagged with `v*` are also deployed to production. Only official tagged images deploy to production, while both the staging and production environments always have the `latest` staged image.
 
 ## Container registries
 

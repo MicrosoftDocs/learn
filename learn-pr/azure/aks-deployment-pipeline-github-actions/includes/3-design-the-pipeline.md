@@ -1,4 +1,4 @@
-In this unit, you design a CI/CD pipeline to support the needs of your project. You want the Contoso Video website to be published in Azure Kubernetes Service (AKS) after each successful push to the main branch that's tagged for release to production. This design makes it easy to check the version of each deployment that goes to production.
+In this unit, you design a CI/CD pipeline to support the needs of your project. You want the Contoso Video website to be published in Azure Kubernetes Service (AKS) after each successful push to the main branch that's tagged for release to production. The tagging design makes it easy to check the version of each deployment that goes to production.
 
 You also want to deploy the website to a staging environment for testing after every push to the main branch, regardless of whether the push is tagged for release to production. You can use tags for routing different container images when you push them to Azure Container Registry.
 
@@ -21,13 +21,13 @@ After you define the triggers, plan the pipeline flow itself.
 
 ### Step 1: Clone the repo
 
-The first steps are the *build steps*, where you prepare a configuration and build the image before you push it to the AKS instance. In the build steps, you set up all the information needed for the deploy step. In this case, the first build step after receiving the trigger signal is the same for both triggers, to clone the repository.
+The first steps are the *build steps*, where you prepare a configuration and build the image before you push it to the AKS cluster. In the build steps, you set up all the information needed for the deploy step. In this case, the first build step after receiving the trigger signal is the same for both triggers, to clone the repository.
 
 :::image type="content" source="../media/3-pipeline-2-build.png" alt-text="Diagram that shows the procession from triggers to the first build step in a pipeline.":::
 
 ### Step 2: Build the image
 
-The next logical step is to build an image. In order to run in the AKS environment, the website must be a Docker image. You need to build the new image by using a Dockerfile that's in the root of the repository. Here's where you account for different triggers.
+The next logical step is to build an image. In order to run in the AKS environment, the website must be a Docker image. You need to build the new image by using the Dockerfile that's in the root of the repository. Here's where you account for different triggers.
 
 For the *tagged* commit pipeline, you build the image and then tag it by using the same tag as the push. For example, if the commit is tagged with `v1.0.0`, you build the image as `contoso/website:v1.0.0`. If you have a *nontagged* commit in the main branch, you build the image with the `latest` tag.
 
@@ -47,4 +47,4 @@ The final *deploy step* deploys the website to the correct location. If a tagged
 
 :::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that shows the procession from triggers, through three build steps, to the deploy steps in a pipeline.":::
 
-Now that you designed the workflow pipeline, proceed to the following units to set up your project environment and create GitHub Actions to clone, build, push, and deploy on AKS clusters.
+Now that you designed the workflow pipeline, proceed to the following units to set up your project environment and create GitHub Actions to clone, build, push, and deploy on the AKS cluster.

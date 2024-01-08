@@ -36,4 +36,4 @@ quiz:
           explanation: "Container Registry can use tags to store and retrieve particular images, but it doesn't use the tags for access."
         - content: "To create and deploy different versions of application images that have the same name."
           isCorrect: true
-          explanation: "Correct. You can use tags to differentiate between multiple images that have the same name."
+          explanation: "You can use tags to differentiate between multiple images that have the same name."

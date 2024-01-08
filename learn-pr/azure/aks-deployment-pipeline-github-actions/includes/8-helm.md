@@ -54,7 +54,7 @@ spec:
               name: http
 ```
 
-Your workflow replaces the `!IMAGE!` placeholder with your Container Registry instance and image name. In a manual workflow, you can run the following command to replace the `!IMAGE!` placeholder and then print the result. To run the code manually, you can pipe the command to `kubectl apply -f -` and create the workloads:
+Your workflow replaces the `!IMAGE!` placeholder with your Container Registry instance and image name. In a manual workflow, you can run the following command to replace the `!IMAGE!` placeholder and then print the result. To run the code manually, you can pipe the command to `kubectl apply -f -` to create the workloads:
 
 ```bash
 $ sed 's+!IMAGE!+'"$ACR_NAME"'/contoso-website+g' kubernetes/deployment.yaml

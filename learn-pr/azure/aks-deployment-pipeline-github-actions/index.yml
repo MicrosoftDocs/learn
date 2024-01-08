@@ -23,7 +23,7 @@ prerequisites: |
     - Git and GitHub
 iconUrl: /training/achievements/aks-deployment-pipeline-github-actions.svg
 levels:
-  - beginner
+  - intermediate
 roles:
   - solution-architect
   - developer

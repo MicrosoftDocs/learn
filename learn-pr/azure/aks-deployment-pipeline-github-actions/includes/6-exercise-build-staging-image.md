@@ -228,7 +228,7 @@ To set the secrets, on your GitHub repository page, select the **Settings** tab,
 To define each secret:
 
 1. Select **New repository secret**.
-1. For **Name**, enter the secret name from the following list.
+1. For **Name**, enter the secret name from the preceding list.
 1. For **Secret**, enter the value you saved from the setup script, or run a Cloud Shell query to get the value.
 1. Select **Add secret**.
 
@@ -270,6 +270,6 @@ If you don't have the values the setup script returned, you can run the followin
 
     :::image type="content" source="../media/6-7-rerun-jobs.png" alt-text="Screenshot that shows the Re-run jobs and Re-run all jobs buttons.":::
 
-1. When the build completes, run `az acr repository list --name <ACR_NAME> -o table` in [Cloud Shell](https://shell.azure.com/) to confirm that a Container Registry repository named `contoso-website` appears in the results.
+1. When the build completes, run `az acr repository list --name <ACR_NAME> -o table` in [Cloud Shell](https://shell.azure.com/) to confirm that the `contoso-website` Container Registry repository appears in the results.
 
 Continue to the next unit to build your production workflow.
