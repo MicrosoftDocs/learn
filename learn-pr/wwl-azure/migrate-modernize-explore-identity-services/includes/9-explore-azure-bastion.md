@@ -9,6 +9,6 @@ The typical connection process in Azure Bastion is as follows:
 3. Azure Bastion initiates a connection to the target VM.
 4. The RDP or SSH session opens in the browser on the administrator console. Azure Bastion streams the session information through custom packages. These packages are protected by TLS.
 
-**Optional demo**:
+## Optional demo
 
 - [Demonstration: Create an SSH connection to a Linux VM using Azure Bastion](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-create-ssh-connection-linux-vm-azure-bastion.md)

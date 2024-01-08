@@ -6,7 +6,7 @@ You need to prepare the specifications to use the identity services component to
 - Microsoft Entra ID
 - Microsoft Entra Domain Services (Microsoft Entra Domain Services)
 
-Learning objectives:
+## Learning objectives
 
 - Explore Azure virtual machine authentication, authorization, and access control.
 - Explore Microsoft Entra ID.

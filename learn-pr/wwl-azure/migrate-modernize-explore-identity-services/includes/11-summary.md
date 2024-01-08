@@ -1,4 +1,4 @@
-**Now you have**:
+Now you have:
 
 - Explored Azure virtual machine authentication, authorization, and access control.
 - Explored Microsoft Entra ID.
@@ -10,7 +10,7 @@
 - Discovered Microsoft Entra Domain Services.
 - Explored Azure Bastion.
 
-**Learn more**:
+## Learn more
 
 - [What is Microsoft Entra Domain Services?](/azure/active-directory-domain-services/overview)
 - [Compare self-managed Active Directory Domain Services, Microsoft Entra ID, and managed Microsoft Entra Domain Services](/azure/active-directory-domain-services/compare-identity-solutions)
