@@ -31425,6 +31425,11 @@
       "source_path": "learn-pr/paths/create-no-code-predictive-models-azure-machine-learning/index.md",
       "redirect_url": "/training/paths/get-started-with-artificial-intelligence-on-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-machine-learning/5-binary-classification",
+      "redirect_document_id": false
     }
   ]
 }
