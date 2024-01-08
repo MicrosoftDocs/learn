@@ -20,8 +20,6 @@ Microsoft Entra integration within SAP HANA allows you to implement:
 
 To configure the integration of SAP HANA into Microsoft Entra ID, first add SAP HANA from the gallery to your list of managed SaaS apps.
 
-<a name='configure-azure-ad-single-sign-on'></a>
-
 ## Configure Microsoft Entra single sign-on
 
 To configure Microsoft Entra single sign-on with SAP HANA, complete the following steps:
@@ -30,8 +28,6 @@ To configure Microsoft Entra single sign-on with SAP HANA, complete the followin
 2. Configure SAP HANA single sign-on to configure the single sign-on settings on application side.
 3. Assign Microsoft Entra users to allow them to use Microsoft Entra single sign-on.
 4. Create SAP HANA users to provision counterpart accounts in SAP HANA linked to the corresponding Microsoft Entra user accounts.
-
-<a name='configure-azure-ad-single-sign-on-in-the-portal'></a>
 
 ### Configure Microsoft Entra single sign-on in the portal
 
@@ -67,8 +63,6 @@ To configure Microsoft Entra single sign-on with SAP HANA, complete the followin
     > The name of the SAML IDP is mandatory and must be unique. It appears in the list of available SAML IDPs that's displayed when you select SAML as the authentication method for SAP HANA XS applications to use. For example, you can do this in the Authentication screen area of the XS Artifact Administration tool.
 6. Select **Save** to save the details of the SAML identity provider and to add the new SAML IDP to the list of known SAML IDPs.
 7. In HANA Studio, within the system properties of the **Configuration** tab, filter the settings by **saml**. Then adjust the **assertion\_timeout** from 10 sec to 120 sec.
-
-<a name='assign-azure-ad-users'></a>
 
 ### Assign Microsoft Entra users
 

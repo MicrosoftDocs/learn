@@ -8,8 +8,6 @@ Integrating SAP Cloud Platform Identity Authentication with Microsoft Entra ID g
 
 To configure the integration of SAP Cloud Platform Identity Authentication into Microsoft Entra ID, first add SAP Cloud Platform Identity Authentication from the Microsoft Entra application gallery to your list of managed SaaS apps.
 
-<a name='configure-and-test-azure-active-directory-based-single-sign-on'></a>
-
 ## Configure and test Microsoft Entra ID-based single sign-on
 
 Next, you need to configure and test Microsoft Entra ID-based SSO by using the following sequence of steps:
@@ -17,8 +15,6 @@ Next, you need to configure and test Microsoft Entra ID-based SSO by using the f
 1. Configure Microsoft Entra single sign-on - to enable your users to use this feature.
 2. Configure SAP Cloud Platform Identity Authentication single sign-on - to configure the single sign-on settings on application side.
 3. Assign Microsoft Entra users to SAP Cloud Platform Identity Authentication.
-
-<a name='configure-azure-ad-single-sign-on'></a>
 
 ### Configure Microsoft Entra single sign-on
 
@@ -44,8 +40,6 @@ Upload Microsoft Entra metadata XML file or configure manually the following fie
 - **Single Sign-On Endpoint URL**: The URL of the identity provider single sign-on endpoint that receives authentication requests. For Binding, choose the one that corresponds to a respective single sign-on endpoint.
 - **Single Logout Endpoint URL**: The URL of the identity provider's single logout endpoint that receives logout messages. For Binding, choose the one that corresponds to respective single logout endpoint.
 - **Signing Certificate**: The base64-encoded certificate used by the identity provider to digitally sign SAML protocol messages sent to Identity Authentication.
-
-<a name='assign-azure-ad-users'></a>
 
 ### Assign Microsoft Entra users
 
