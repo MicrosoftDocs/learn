@@ -19,7 +19,7 @@ quiz:
 
   - content: 'Which of these statements is true about the random number generator that you built in this module?'
     choices:
-    - content: "The quantum random number generator takes the current time from the CPU's clock as seed to generate random numbers."
+    - content: "The quantum random number generator takes the current time from the CPU's clock as a seed to generate random numbers."
       isCorrect: false
       explanation: "The quantum random number generator doesn't use the CPU's clock to generate random numbers. A classical pseudo-random number generator would do that."
     - content: "The quantum random number generator creates one qubit, measures it, and the result of the measurement is a random decimal number."
