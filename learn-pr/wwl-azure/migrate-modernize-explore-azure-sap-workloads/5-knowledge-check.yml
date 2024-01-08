@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/05/2024
+  ms.date: 01/08/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -19,12 +19,12 @@ quiz:
     - content: "Hyper-V snapshot support"
       isCorrect: false
       explanation: "Incorrect. Hyper-V snapshot support isn't one of the benefits of running SAP applications on Azure."
-    - content: "Guaranteed 100% uptime"
+    - content: "Guaranteed 100 percent uptime"
       isCorrect: false
-      explanation: "Incorrect. Running SAP applications on Azure doesn't guarantee 100% uptime."
+      explanation: "Incorrect. Running SAP applications on Azure doesn't guarantee 100 percent uptime."
     - content: "Lower TCO"
       isCorrect: true
-      explanation: "Correct. Azure provides for a 60% cost reduction when compared to traditional, on-premises storage systems. By using SAP technologies on Azure, customers can realize 40-75% TCO cost savings in Dev and Test environments."
+      explanation: "Correct. Azure provides for a 60 percent cost reduction when compared to traditional, on-premises storage systems. By using SAP technologies on Azure, customers can realize 40-75 percent TCO cost savings in Dev and Test environments."
   - content: "Which of the following terms is defined as \"One or more SAP components logically grouped to perform a business function, such as development, quality assurance, training, disaster recovery, or production\"?"
     choices:
     - content: "Landscape"
