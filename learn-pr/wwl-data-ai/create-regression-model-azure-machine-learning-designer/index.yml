@@ -27,7 +27,6 @@ subjects:
 units:
 - learn.wwl.create-regression-model-azure-machine-learning-designer.introduction
 - learn.wwl.create-regression-model-azure-machine-learning-designer.regression-scenarios
-- learn.wwl.create-regression-model-azure-machine-learning-designer.create-compute
 - learn.wwl.create-regression-model-azure-machine-learning-designer.what-is-azure-designer
 - learn.wwl.create-regression-model-azure-machine-learning-designer.create-training-pipeline
 - learn.wwl.create-regression-model-azure-machine-learning-designer.evaluate-model
