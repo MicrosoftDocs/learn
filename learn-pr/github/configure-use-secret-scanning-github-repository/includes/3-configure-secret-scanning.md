@@ -31,7 +31,7 @@ Follow the steps below to enable secret scanning for an organization:
 
 ## Exclude files from being scanned
 
-In some cases, you may not want secret scanning to scan certain files in your repositories. For example, test files or files that contain randomly generated content, can generate false alerts. You can create a `.github/secret_scanning.yml` file in your repository, that excludes some directories from being scanned.
+In some cases, you may not want secret scanning to scan certain files in your repositories. For example, test files or files that contain randomly generated content, can generate false alerts. You can create a `.github/secret_scanning.yml` file in your repository that excludes some directories from being scanned.
 
 In the file, use `paths-ignore` followed by the paths you want to exclude from secret scanning:
 
