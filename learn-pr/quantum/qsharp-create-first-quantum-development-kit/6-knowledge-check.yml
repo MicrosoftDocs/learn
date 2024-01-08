@@ -7,8 +7,7 @@ metadata:
   author: SoniaLopezBravo
   ms.author: sonialopez
   ms.date: 05/19/2020
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -48,7 +47,7 @@ quiz:
       explanation: 'Are there tools that you can use to eliminate the guesswork?'
     - content: 'Combine the simulator with the resource estimator to understand the resources that your code would require.'
       isCorrect: true
-      explanation: "Using these tools together helps you understand the features of a quantum computer that you'd need in order to run your program, such as the types of quantum gates you use, the number of operations performed, or the number of qubits you need."
+      explanation: "Using these tools together helps you understand the features of a quantum computer that are needed to run your program. Features such as the types of quantum gates you use, the number of operations performed, or the number of qubits you need."
     - content: "There isn't a need to choose. All quantum hardware uses resources in the exact same way."
       isCorrect: false
       explanation: "Different workloads can require different hardware capabilities. Azure Quantum provides tools that help you understand the resources that your code would require."

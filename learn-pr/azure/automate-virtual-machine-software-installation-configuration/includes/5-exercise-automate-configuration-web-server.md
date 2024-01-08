@@ -170,7 +170,7 @@ az vm create \
     --name my-linux-vm \
     --availability-set my-availability-set \
     --nics my-nic \
-    --image UbuntuLTS \
+    --image Ubuntu2204 \
     --admin-username azureuser \
     --generate-ssh-keys \
     --custom-data cloud-init.yaml \

@@ -65,9 +65,10 @@ When the custom role is created, you can assign it to a user or group. To make t
     echo $USER
     ```
 
-1. Run the following command to assign the custom role to yourself:
+1. Run the following command to assign the custom role to yourself, replacing "your subscription id" with the subscription ID you coped previously:
 
     ```azurecli
-    az role assignment create --assignee $USER --role "Virtual Machine Operator"  --scope /subscriptions/"your subscription id"/resourceGroups/"your resource group name"
+    az role assignment create --assignee $USER --role "Virtual Machine Operator"  --scope /subscriptions/"your subscription id"
     ```
+
 1. Close Cloud Shell.

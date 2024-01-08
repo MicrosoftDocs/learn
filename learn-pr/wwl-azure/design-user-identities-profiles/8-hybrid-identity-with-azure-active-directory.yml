@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-for-user-identities-profiles.hybrid-identity-azure-active-directory
-title: Hybrid Identity with Azure Active Directory
+title: Hybrid Identity with Microsoft Entra ID
 metadata:
-  title: Hybrid Identity with Azure Active Directory
-  description: "Hybrid Identity with Azure Active Directory"
+  title: Hybrid Identity with Microsoft Entra ID
+  description: "Hybrid Identity with Microsoft Entra ID"
   ms.date: 02/10/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

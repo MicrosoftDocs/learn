@@ -11,7 +11,7 @@ A security engineer uses enterprise governance tools and policies to manage and 
 
 ## Skills measured
 
-Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/certifications/exams/az-500).
+Microsoft Entra ID is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/certifications/exams/az-500).
 
 Manage identity and access (30-35%)
 

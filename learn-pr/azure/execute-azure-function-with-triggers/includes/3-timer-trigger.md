@@ -1,4 +1,4 @@
-It's common to execute a piece of logic at a set interval. Imagine you're a blog owner and you notice that your subscribers aren't reading your most recent posts. You decide that the best action is to send an email once a week to remind them to check your blog. You implement this logic using an Azure function app with a _timer trigger_ to invoke your function weekly.
+It's common to execute a piece of logic at a set interval. Imagine you're a blog owner, and you notice that your subscribers aren't reading your most recent posts. You decide that the best action is to send an email once a week to remind them to check your blog. You implement this logic by creating a function app in Azure with a *timer trigger* to invoke your function weekly.
 
 ## What is a timer trigger?
 
@@ -15,7 +15,7 @@ The order of the six fields in Azure is: `{second} {minute} {hour} {day} {month}
 
 For example, a CRON expression to create a trigger that executes every five minutes looks like: `0 */5 * * * *`
 
-At first, this string may look confusing. We'll come back and break down these concepts when we have a deeper look at CRON expressions.
+At first, this string might look confusing. We'll come back and break down these concepts when we have a deeper look at CRON expressions.
 
 To build a CRON expression, you need to have a basic understanding of some of the special characters.
 
@@ -36,14 +36,14 @@ The **first field** represents seconds. This field supports the values 0-59. Bec
 
 The **second field** represents minutes. The value "*/5" contains two special characters. First, the asterisk (\*) means "select every value within the field." Because this field represents minutes, the possible values are 0-59. The second special character is the slash (/), which represents an increment. When you combine these characters together, it means for all values 0-59, select every fifth value. An easier way to say that is simply "every five minutes."
 
-The **remaining four fields** represent the hour, day, month, and weekday of the week. An asterisk for these fields means to select every possible value. In this example, we select "every hour of every day of every month."
+The **remaining four fields** numerically represent the hour in a 24-hour day, day in the month, month in a 12-month year, and day of the 7-day week. An asterisk for these fields means to select every possible value. In this example, we select "every hour of every day of every month."
 
 When you put all the fields together, the expression is read as "the first second of every fifth minute of every hour, of every day, of every month".
 
 ## How to create a timer trigger
 
-You can create a timer trigger in the Azure portal. In your Azure function app, select **timer trigger** from the list of trigger templates. Enter the logic that you want to execute. Supply a **Timestamp parameter name** and the **CRON expression**.
+You can create a timer trigger in the Azure portal. In your function app, select **timer trigger** from the list of trigger templates. Enter the logic that you want to execute. Supply a **Timestamp parameter name** and the **CRON expression**.
 
-In this module, we'll focus on creating triggers in the portal but you can also create triggers programmatically using Core Tools, Visual Studio or Visual Studio Code.
+In this module, we'll focus on creating triggers in the portal, but you can also create triggers programmatically using Core Tools, Visual Studio or Visual Studio Code.
 
-A timer trigger invokes an Azure function app on a consistent schedule. To define the schedule for a timer trigger, we build a CRON expression, which is a string that represents a set of times.
+A timer trigger invokes the function code on a consistent schedule. To define the schedule for a timer trigger, we build a CRON expression, which is a string that represents a set of times.

@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/14/2022
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Train models in Azure Machine Learning with the CLI (v2)
 prerequisites: |
   This learning path assumes that you have experience training machine learning models with Python and open-source frameworks like Scikit-Learn. Some familiarity with the main concepts of Azure Machine Learning is also expected.

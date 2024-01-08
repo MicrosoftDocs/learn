@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-azure-compute-networking-services.containers
-title: Describe Azure Containers
+title: Describe Azure containers
 metadata:
-  title: Describe Azure Containers
-  description: "Describe Azure Containers"
-  ms.date: 12/12/2022
+  title: Describe Azure containers
+  description: "Describe Azure containers"
+  ms.date: 09/13/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/5-containers.md)]

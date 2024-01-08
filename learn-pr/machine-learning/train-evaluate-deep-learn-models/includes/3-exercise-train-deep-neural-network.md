@@ -20,9 +20,9 @@ If you don't already have an Azure Machine Learning workspace in your Azure subs
 
 1. On the Azure **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the *Search services and marketplace* search box, search for and select *Machine Learning*. The **Machine Learning** pane appears.
+1. In the *Search services and marketplace* search box, search for and select *Machine Learning*. The **Azure Machine Learning** pane appears.
 
-1. Select **Create**. The **Machine learning** pane appears.
+1. Select **Create**. The **Azure Machine Learning** pane appears.
 
 1. On the **Basics** tab, Enter the following values to each setting.
 
@@ -32,7 +32,7 @@ If you don't already have an Azure Machine Learning workspace in your Azure subs
     | Subscription | Select the Azure subscription you'd like to use for this exercise. |
     | Resource group | Select the **Create new** link, and name the new resource group with a unique name, and select **OK**. |
     | **Workspace details** |
-    | Workspace name | Enter a unique name for your app. For example, you could use *\<yourname\>;machinelearn*. |
+    | Workspace name | Enter a unique name for your app. For example, you could use *\<yourname\>-machinelearn*. |
     | Region | From the dropdown list, select any available location. |
 
 1. Accept the remaining defaults, and select **Review + create**.
@@ -71,7 +71,7 @@ The files used in this module, and other related modules, are published in the *
 
 1. Select **Workspaces** in the left-hand menu of Azure Machine Learning studio, then select the workspace you created in the list.
 
-1. Under the **Author** column on the left, select the **Notebooks** link to open Jupyter Notebooks. The **Notebooks** pane appears.
+1. Under the **Authoring** heading on the left, select the **Notebooks** link to open Jupyter Notebooks. The **Notebooks** pane appears.
 
 1. Select the **Terminal** button on the right. A terminal shell appears.
 

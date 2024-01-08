@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: sallybre
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-devops
 title: Characterize DevOps Continuous Collaboration and Continuous Improvement
 summary: Explore two capabilities in the DevOps taxonomy, Continuous Collaboration and Continuous Improvement.
 abstract: |

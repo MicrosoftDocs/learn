@@ -4,18 +4,20 @@ Once you’ve registered a spacecraft, created a contact profile, and allowed en
 
 Once your spacecraft has been authorized and your contact profile has been created, you’re ready to schedule a contact. Because you’ve already input all necessary information, you don’t need any more information on hand before continuing.
 
-The exact same portal is used to access any ground station provided through Microsoft and our ground station partners: KSAT, USEI, and Viasat. When downlinking data, you have unmatched contact opportunities thanks to the global Azure Orbital Ground Station network. And, you only pay for the time when your spacecraft and ground stations are in contact.
+The same portal is used to access any ground station provided through Microsoft and our ground station partners: KSAT, USEI, and Viasat. When downlinking data, you have unmatched contact opportunities thanks to the global Azure Orbital Ground Station network, and you only pay for the time when your spacecraft and ground stations are in contact.
 
-Scheduling a contact is simple, but once it’s scheduled, you have to wait for your data to appear in your endpoint, since the satellite needs to be in range of the ground station for the contact to be made and the data to be downlinked.
+Scheduling a contact is simple, but once it’s scheduled, you have to wait for your data to appear in your endpoint, because the satellite needs to be in range of the ground station for the contact to be made and the data to be downlinked.
 
 ## Schedule a contact
 
-Now you’re ready to schedule a contact. If you established an endpoint when creating the contact profile, continue to follow along in your account in the Azure portal.
+Now, you’re ready to schedule a contact. If you established an endpoint when creating the contact profile, continue to follow along in your account in the Azure portal.
 
 1. First, go to the Azure Orbital homepage and select schedule a contact.
 
-    :::image type="content" source="../media/AO-homepage.png" alt-text="Screenshot of the main Azure Orbital window, showing icons for register a space craft, create a contact profile, and schedule a contact." border="true":::
-2.  Once you're taken to your spacecrafts, select the AQUA satellite that you registered for this contact.
+    :::image type="content" source="../media/AO-homepage.png" alt-text="Screenshot of the main Azure Orbital window, showing icons for Register a Spacecraft, Create a Contact Profile, and Schedule a Contact." border="true":::
+
+2. Once you're taken to your spacecrafts, select the AQUA satellite that you registered for this contact.
+
 3. Then, you’ll see the following screen. Use the drop-downs to select a contact profile, ground station, and start and end times for the contact.
 
     :::image type="content" source="../media/orbital-eos-schedule-search.png" alt-text="Screenshot of the Schedule contact page. There's a red box around the place where you can select the contact profile, ground station, start time, and end time." border="true":::
@@ -28,7 +30,7 @@ Now you’re ready to schedule a contact. If you established an endpoint when cr
 
     :::image type="content" source="../media/orbital-eos-view-scheduled-contacts.png" alt-text="Screenshot of the scheduled contacts page. There are two contacts scheduled." border="true":::
 
-6. Wait until AQUA can make contact with the ground station. The below visual illustrates what is happening in space when the ground station and satellite make contact.
+6. Wait until AQUA can make contact with the ground station. The following visual illustrates what's happening in space when the ground station and satellite make contact.
 
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE57q2P]
 

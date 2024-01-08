@@ -3,12 +3,11 @@ uid: learn.azure.access-blob-storage-metrics-from-code.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: The Azure Portal provides a wealth of metrics that developers can use to monitor their Azure Blob Storage accounts. This module will show you how to write apps that access your Azure Blob Storage metrics programmatically.
-  ms.date: 04/12/2019
+  description: The Azure portal provides a wealth of metrics that developers can use to monitor their Azure Blob Storage accounts. This module will show you how to write apps that access your Azure Blob Storage metrics programmatically.
+  ms.date: 10/23/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

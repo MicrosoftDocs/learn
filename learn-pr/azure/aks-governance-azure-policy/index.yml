@@ -6,8 +6,8 @@ metadata:
   ms.date: 10/13/2021
   author: mosabami
   ms.author: aayodeji
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-kubernetes-service
 title: Azure Kubernetes Services Governance with Azure Policy
 summary: >
   To improve operational governance of your Azure Kubernetes Service (AKS) cluster, you can apply and enforce built-in policies on your cluster using Azure Policy. Learn how to govern your AKS clusters using Azure Policy for Kubernetes.

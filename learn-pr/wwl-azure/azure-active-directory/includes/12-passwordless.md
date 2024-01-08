@@ -1,17 +1,16 @@
-
 Features like **multifactor authentication (MFA)** are a great way to secure your organization. Still, users often get frustrated with the additional security layer on top of having to remember their passwords. Passwordless authentication methods are more convenient because the password is removed and replaced with something you have, plus something you are or something you know.
 
 | **Authentication** | **Something you have**                    | **Something you are or know** |
 | ------------------ | ----------------------------------------- | ----------------------------- |
 | Passwordless       | Windows 10 Device, phone, or security key | Biometric or PIN              |
 
-Each organization has different needs when it comes to authentication. Microsoft global Azure and Azure Government offer the following **three** passwordless authentication options that integrate with Azure Active Directory (Azure AD):
+Each organization has different needs when it comes to authentication. Microsoft global Azure and Azure Government offer the following **three** passwordless authentication options that integrate with Microsoft Entra ID:
 
 1.  Windows Hello for Business
 2.  Microsoft Authenticator
 3.  Fast Identity Online2 (**FIDO2**) security keys
 
-:::image type="content" source="../media/passwordless-convenience-security-1ba3f8c9.png" alt-text="Screenshot showing three passwordless authentication options that integrate with Azure Active Directory.":::
+:::image type="content" source="../media/passwordless-convenience-security-1ba3f8c9.png" alt-text="Screenshot showing three passwordless authentication options that integrate with Microsoft Entra ID.":::
 
 
 ## Windows Hello for Business
@@ -30,4 +29,4 @@ FIDO2 security keys are an unphishable standards-based passwordless authenticati
 
 Users can register and then select a FIDO2 security key at the sign-in interface as their main means of authentication. These FIDO2 security keys are typically USB devices but could also use Bluetooth or Near-Field Communication (NFC). With a hardware device that handles the authentication, the security of an account is increased as there's no password that could be exposed or guessed.
 
-FIDO2 security keys can be used to sign into their Azure AD or hybrid Azure AD joined Windows 10 devices and get single-sign-on to their cloud and on-premises resources. Users can also sign in to supported browsers. FIDO2 security keys are a great option for enterprises that are very security sensitive or have scenarios or employees who aren't willing or able to use their phone as a second factor.
+FIDO2 security keys can be used to sign into their Microsoft Entra ID or Microsoft Entra hybrid joined Windows 10 devices and get single-sign-on to their cloud and on-premises resources. Users can also sign in to supported browsers. FIDO2 security keys are a great option for enterprises that are very security sensitive or have scenarios or employees who aren't willing or able to use their phone as a second factor.

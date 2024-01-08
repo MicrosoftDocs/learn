@@ -4,9 +4,9 @@ Microsoft Defender for Cloud provides a feature called *Workflow Automation* to 
 
 ## What is Workflow Automation in Microsoft Defender for Cloud?
 
-A workflow automation is a collection of grouped procedures that the security response team can execute with a single click. These procedures are executed in Defender for Cloud when a specific alert is detected. These actions *aren't* automatically triggered - they require human interaction to run.
+A workflow automation is a collection of grouped procedures that the security response team can execute with a single click. These procedures are executed in Defender for Cloud when a specific alert is detected. These actions *aren't* automatically triggered; they require human interaction to run.
 
-Workflow automations are built on **Azure Logic Apps**. You can easily customize the logic and workflow using the visual workflow designer. You can start with an existing Logic App or create a new Logic App. Then you can use Defender for Cloud to trigger it when an alert is generated.
+Workflow automations are built on **Azure Logic Apps**. You can easily customize the logic and workflow using the visual workflow designer. You can start with an existing Logic App or create a new Logic App. You can then use Defender for Cloud to trigger it when an alert is generated.
 
 Some of the pre-built actions are:
 
@@ -14,6 +14,6 @@ Some of the pre-built actions are:
 - Email a distribution group with details about the active alert(s)
 - Send a notification to a Teams or Slack channel
 
-However, because Logic Apps can integrate Azure Functions and webhooks, the possible actions are endless. Imagine a case where a client is misusing your service, and it's generating an alert in Defender for Cloud. We can create a custom Azure Function to take the source IP address from the alert and create a rule in our firewall to block all inbound traffic from that address. A visual representation of this function might look something like this:
+However, because Logic Apps can integrate Azure Functions and webhooks, the possible actions are endless. Imagine a case where a client is misusing your service, and it's generating an alert in Defender for Cloud. You can create a custom Azure Function to take the source IP address from the alert and create a rule in your firewall to block all inbound traffic from that address. A visual representation of this function might look something like this:
 
 ![Diagram showing an architecture using an Azure Function in a workflow automation.](../media/5-azure-functions-playbook.png)

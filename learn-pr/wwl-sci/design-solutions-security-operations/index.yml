@@ -6,8 +6,8 @@ metadata:
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: module
+  ms.service: azure
 title: Design solutions for security operations
 summary: "You learn techniques to design security operations capabilities including logging, auditing, Security Event Management (SIEM), Security Orchestration and Automated Response (SOAR), and security workflows."
 abstract: |
@@ -22,7 +22,7 @@ abstract: |
 prerequisites: |
   - Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
   - Experience with hybrid and cloud implementations.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/design-solutions-security-operations.svg
 levels:
 - advanced
 roles:

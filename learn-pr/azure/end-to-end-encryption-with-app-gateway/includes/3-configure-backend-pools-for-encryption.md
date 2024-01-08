@@ -1,6 +1,6 @@
 The back-end pool contains the servers that implement the application. Azure Application Gateway routes requests to these servers, and can load balance the traffic across these servers.
 
-In the shipping portal, the application servers in the back-end pool must use SSL to encrypt the data that passes between Application Gateway and the servers in the back-end pool. Application Gateway uses an SSL certificate with a public key to encrypt the data. The servers use the corresponding private key to decrypt the data as it's received. In this unit, you'll see how to create the back-end pool and install the necessary certificates in Application Gateway. These certificates help protect the messages sent to and from the back-end pool.
+In the shipping portal, the application servers in the back-end pool must use SSL to encrypt the data that passes between Application Gateway and the servers in the back-end pool. Application Gateway uses an SSL certificate with a public key to encrypt the data. The servers use the corresponding private key to decrypt the data as it's received. In this unit, you see how to create the back-end pool and install the necessary certificates in Application Gateway. These certificates help protect the messages sent to and from the back-end pool.
 
 ## Encryption from Application Gateway to the back-end pool
 

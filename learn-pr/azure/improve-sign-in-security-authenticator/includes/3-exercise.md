@@ -8,7 +8,7 @@
 
     [Exercise introduction guidance](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
 -->
-Prepare your Azure AD environment by completing prerequisites. 
+Prepare your Microsoft Entra environment by completing prerequisites. 
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -34,7 +34,7 @@ Enable remote employees for Microsoft Authenticator and enable a registration ca
 
     Optional: a video that shows the end-state
 -->
-When you are finished, you'll be ready to validate the user experience. You'll create an Azure AD account for testing and add the account to the remote employees group. Then you'll sign in and perform MFA. After MFA completes, you'll set up Microsoft Authenticator as the default sign-in method. 
+When you are finished, you'll be ready to validate the user experience. You'll create a Microsoft Entra account for testing and add the account to the remote employees group. Then you'll sign in and perform MFA. After MFA completes, you'll set up Microsoft Authenticator as the default sign-in method. 
 
 <!-- 4. Chunked steps -------------------------------------------------------------------------------------
 
@@ -61,18 +61,20 @@ When you are finished, you'll be ready to validate the user experience. You'll c
 
 Before enabling a registration campaign, make sure prerequisites are complete. The users need to be enabled to use Microsoft Authenticator for authentication, and the Authentication mode must be set to **Any** or **Push**. 
 
-1. In the Azure AD portal, click **Security** > **Authentication methods** > **Policies**. 
+1. In the Microsoft Entra admin center, click **Security** > **Authentication methods** > **Policies**. 
 1. Click **Microsoft Authenticator**, click **Enabled**, select **Remote employees**.
 1. In the contextual menu, click **Configure**, set **Authentication mode** to **Any** or **Push**, and click **Done**. 
 1. Click **Save**.
 
-## Exercise: Enable the registration campaign using the Azure AD portal
+<a name='exercise-enable-the-registration-campaign-using-the-azure-ad-portal'></a>
 
-The easiest way to create the registration campaign is to use the Azure AD portal. You can also use Microsoft Graph API if you want to include the task of registering users for Microsoft Authenticator in any automation you use for adding new employees. 
+## Exercise: Enable the registration campaign using the Microsoft Entra admin center
+
+The easiest way to create the registration campaign is to use the Microsoft Entra admin center. You can also use Microsoft Graph API if you want to include the task of registering users for Microsoft Authenticator in any automation you use for adding new employees. 
 
 Your company is concerned about sign-ins from users in your **Remote employees** security group. Let's use the portal to enable a registration campaign for that group. You'll want to nudge remote employees to set up Microsoft Authenticator every time they sign in, set the snooze to 0.
 
-1. In the Azure AD portal, sign in as either authentication policy administrator or global administrator.
+1. In the Microsoft Entra admin center, sign in as either authentication policy administrator or global administrator.
 1. Click **Security** > **Authentication methods** > **Registration campaign**.
 1. Change **State** to **Enabled**.
 1. For **Day allowed to snooze**, select **0 days**. Remote employees will be prompted to set up Microsoft Authenticator every time they sign in. 
@@ -104,7 +106,7 @@ Your company is concerned about sign-ins from users in your **Remote employees**
 
 The next unit will help you walk through the user experience in more detail. 
 
-1. Create an Azure AD user account for testing and add it to the remote employees group.
+1. Create a Microsoft Entra user account for testing and add it to the remote employees group.
 1. Enable the test user for Microsoft Authenticator. 
 1. Sign in as the test user, perform MFA, and follow the steps to set up Microsoft Authenticator.
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->

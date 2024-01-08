@@ -4,11 +4,10 @@ title: Troubleshoot point-to-site VPN gateways
 metadata:
   title: Troubleshoot point-to-site VPN gateways
   description: "Troubleshoot point-to-site VPN gateways"
-  ms.date: 03/22/2023
-  author: wwlpublish
-  ms.author: lauraalv
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/27/2023
+  author: fabianomira
+  ms.author: famira
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/4-troubleshoot-point-to-site.md)]

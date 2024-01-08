@@ -2,14 +2,14 @@ Ideally, your employees would understand the importance of information protectio
 
 ## What is sensitive data?
 
-Before learning how to help protect data, you must identify the data that requires protection. Not all data actually needs it. Nor does all data that needs it require the same level of protection. You might want to:
+Before learning how to help protect data, you must identify the data that requires protection. Not all data actually needs it. Nor does all data that needs it, require the same level of protection. You might want to:
 
 - Implement strong protection methods for financial data.
 - Not protect marketing materials.
 - Help protect personal data so only you can access it.
 - Help protect important financial data so only authorized people can access it.
 
-The specific definition of *sensitive data* will differ for different scenarios. However, sensitive data is essentially information that needs protection from unauthorized access. Help achieve protection by implementing appropriate data security and information protection technologies. However, in some cases, you also might need to include physical security. An example is sensitive data in paper form. There are several useful technologies and methods to help protect sensitive data from unauthorized access or leakage.
+The specific definition of *sensitive data* differs for different scenarios. However, sensitive data is essentially information that needs protection from unauthorized access. You can achieve this protection by implementing appropriate data security and information protection technologies. However, in some cases, you might also need to include physical security. An example is sensitive data in paper form. There are several useful technologies and methods to help protect sensitive data from unauthorized access or leakage.
 
 Reasons to protect sensitive data include:
 
@@ -18,7 +18,7 @@ Reasons to protect sensitive data include:
 - Intellectual-property privacy
 - Ethical or legal requirements
 
-Consider the General Data Protection Regulation (GDPR). It primarily helps protects personal data and considers the following personal data sensitive:
+Consider the General Data Protection Regulation (GDPR). It primarily helps protect personal data and considers the following personal data sensitive:
 
 - Personal information that reveals racial or ethnic origin, political opinions, and religious or philosophical beliefs.
 - Trade-union memberships.
@@ -28,7 +28,7 @@ Consider the General Data Protection Regulation (GDPR). It primarily helps prote
 
 ## Discover and protect sensitive data
 
-If your organization is incorporating sensitive data protection, there are several steps you must take. It's not enough to simply choose a technology to help protect data. You must properly identify sensitive data so the technology you select can actually help. Also, a consistent process for classifying data (both sensitive and non-sensitive) is imperative. Otherwise, you can't efficiently implement protection technology. Data monitoring is another important consideration. You must monitor sensitive data through its lifecycle. Otherwise, protection might not be efficient, because you won't know if it's working properly.
+If your organization is incorporating sensitive data protection, there are several steps you must take. It's not enough to just choose a technology to help protect data. You must properly identify sensitive data so the technology you select can actually help. Also, a consistent process for classifying data (both sensitive and nonsensitive) is imperative. Otherwise, you can't efficiently implement protection technology. Data monitoring is another important consideration. You must monitor sensitive data through its lifecycle. Otherwise, protection might not be efficient, because you don't know if it's working properly.
 
 Data location is also important. Today, data is everywhere&#8212;on mobile devices, cloud-storage services, and local file servers. You must consider all possible locations of sensitive data. And don't forget the network paths along which it potentially travels.
 

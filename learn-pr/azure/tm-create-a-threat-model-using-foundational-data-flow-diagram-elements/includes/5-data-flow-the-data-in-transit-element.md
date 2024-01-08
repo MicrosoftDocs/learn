@@ -1,21 +1,21 @@
 ![Rendering of two diagonal arrows representing the Data-Flow Element.](../media/data-flow.png)
 
-Data movement between elements is represented by directional arrows to indicate communication between data source and destination.
+The **data-flow element** is depicted as directional arrows. This element represents data movement between elements. The directional arrows indicate communication between the data source and destination.
 
 Examples include:
 
-- Credentials submitted by a user to access your service
-- Request from a process to add an entry to your data store
+- Credentials submitted by a user to access your service.
+- A request from a process to add an entry to your data store.
 
 ## When to use the data-flow element
 
-- Between each element interaction
-- Call out the data type being transmitted and include how you're transmitting it
-- In most cases, include responses to each request
+- Between each element interaction.
+- To call out the data type being transmitted, and include how you're transmitting it.
+- In most cases, include responses to each request.
 
 ## Include context
 
-Include the following context to each data-flow element:
+Include the following context with each data-flow element:
 
 |Context|Questions|
 |-------|---------|
@@ -24,5 +24,5 @@ Include the following context to each data-flow element:
 |Flow sequence|Is the data flow enumerated to make it easier to follow the flow sequence?|
 |Type|What type of data is in the data flow? Cookies? XML? SOAP payload? REST payload? JSON payload?|
 |Additional controls|Does the data flow have forgery protection enabled? Other security flags enabled?|
-|Authentication|Does the process rely on Azure Active Directory for authentication? If not, on what does it rely?|
+|Authentication|Does the process rely on Microsoft Entra ID for authentication? If not, on what does it rely?|
 |Authorization|Does it rely on Access Control Lists (ACL) for authorization? If not, on what does it rely?|

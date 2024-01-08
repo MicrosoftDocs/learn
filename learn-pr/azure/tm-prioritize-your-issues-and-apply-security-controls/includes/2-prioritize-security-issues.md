@@ -4,7 +4,7 @@ Generate the list of threats with ways to reduce or eliminate risk, then work wi
 
 The prioritization exercise should follow the internal security bug bar created by your organization.
 
-For reference purposes, the internal bug bar that engineers at Microsoft use looks similar to the following table:
+For reference purposes, the internal bug bar used by engineers at Microsoft is similar to the following table:
 
 |Icon|Severity|Description|
 |----|--------|-----------|

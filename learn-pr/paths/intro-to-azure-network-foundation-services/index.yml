@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/01/2022
   author: duongau
   ms.author: duau
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Introduction to Azure network foundation services
 summary: |
   In this learning path, you'll learn how to manage and diagnose a network with Azure network foundation services.

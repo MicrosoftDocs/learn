@@ -4,11 +4,11 @@ Suppose you've chosen Azure PowerShell as your automation solution. Your adminis
 
 We'll go through the actual installation instructions in the next unit, but let's look at the two components that make up Azure PowerShell.
 
-- **The base PowerShell product** This comes in two variants: Windows PowerShell and PowerShell 7.x, which can be installed on Windows, macOS, and Linux.
-- **The Azure Az PowerShell module** This extra module must be installed to add the Azure-specific commands to PowerShell.
+- **The base PowerShell product**: This comes in two variants: Windows PowerShell and PowerShell 7.x, which you can install on Windows, macOS, and Linux.
+- **The Azure Az PowerShell module**: You need to install this extra module to add the Azure-specific commands to PowerShell.
 
 > [!TIP]
-> PowerShell 7.0.6 LTS, PowerShell 7.1.3, or higher is the recommended version of PowerShell for use with the Azure Az PowerShell module on all platforms.
+> PowerShell 7.0.6 LTS, PowerShell 7.1.3, or higher is the version of PowerShell we recommend for use with the Azure Az PowerShell module on all platforms.
 
 Once you've installed the base product, you'll then add the Azure PowerShell module to your installation.
 
@@ -32,6 +32,6 @@ On Linux, the package manager will change based on the Linux distribution you ch
 
 ### Mac
 
-On macOS, you'll use `Homebrew` to install PowerShell.
+On macOS, use `Homebrew` to install PowerShell.
 
-In the next section, you'll go through the detailed installation steps for some common platforms.
+In the next section, we'll go through the detailed installation steps for some common platforms.

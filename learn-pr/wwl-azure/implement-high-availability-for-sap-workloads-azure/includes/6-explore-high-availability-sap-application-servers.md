@@ -1,6 +1,3 @@
-
-
-
 A specific high availability solution isn't needed for your SAP Application Servers. You can achieve high availability by redundancy. To implement it, you can install individual application servers on separate Azure VMs. You should have at least two SAP application instances installed in two instances of Azure VMs. Additionally, place all virtual machines that host SAP Application Server instances in the same Azure availability set. An Azure availability set ensures that:
 
 - **Each Azure VM belongs to a different upgrade domain**: ensures that the Hyper-V hosts for these virtual machines aren't updated at the same time during planned maintenance events that require a temporary downtime.

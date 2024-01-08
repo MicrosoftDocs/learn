@@ -5,10 +5,9 @@ metadata:
   description: Learn to design conceptual architecture for data classifications using data residency for Microsoft 365 and Dynamics 365 services while utilizing Azure regions and Customer lockbox. Manage breach notifications in Service Trust Portal and Microsoft Defender for Cloud. And encrypt data throughout its lifecycle.
   brand: azure
   ms.date: 04/23/2021
-  author: Adriamen
-  ms.author: micrum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: learning-path
 title: Protect public sector data in Azure
 summary: In this learning path, you’ll learn how Azure provides options to encrypt data throughout its lifecycle to protect sensitive data while following local regulations. Explore public multi-tenant, private, and hybrid cloud options to understand the cloud’s flexibility while differentiating between residency and encryption requirements. Implement and configure data breach notifications and response management options.
 prerequisites: |
@@ -25,16 +24,16 @@ products:
 - azure-iot-hub
 - azure-stack-hub
 - azure-stack-edge
-- azure-farmbeats
-- azure-active-directory
+- data-manager-for-agri
+- entra-id
 - azure-key-vault
-- azure-security-center
+- defender-for-cloud
 - azure-monitor
 - azure-policy
 - azure-firewall
 - azure-network-watcher
 - azure-ddos-protection
-- azure-sentinel
+- microsoft-sentinel
 - azure-advisor
 subjects:
 - security

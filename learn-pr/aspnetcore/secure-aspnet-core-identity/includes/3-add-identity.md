@@ -1,9 +1,9 @@
-Identity works out-of-the-box without any customization. In this unit, Identity will be added to an existing ASP.NET Core Razor Pages project.
+Identity works out-of-the-box without any customization. In this unit, Identity is added to an existing ASP.NET Core Razor Pages project.
 
 ## Obtain and open the starter project
 
 > [!NOTE]
-> If you wish to use the `.devcontainer` in GitHub Codespaces, navigate to [your codespaces for the repository](https://github.com/MicrosoftDocs/mslearn-secure-aspnet-core-identity/codespaces). Create a new codespace using the `main` branch, and then skip to step 3.
+> If you wish to use the *.devcontainer* in GitHub Codespaces, navigate to [your codespaces for the MicrosoftDocs/mslearn-secure-aspnet-core-identity](https://github.com/MicrosoftDocs/mslearn-secure-aspnet-core-identity/codespaces) repository. Create a new codespace using the `main` branch, and then skip to step 3.
 
 1. In a terminal window, run the following command to obtain the starter project:
 
@@ -21,9 +21,10 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
     Visual Studio Code opens. Accept any prompts to install recommended extensions, or select **Reopen in Container** if you wish to use the *.devcontainer*.
 
     > [!TIP]
-    > If you miss the prompt to reopen in container, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette, and then search for and select **Remote-Containers: Reopen in Container**.
+    > If you miss the prompt to reopen in container, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette, and then search for and select **Dev Containers: Reopen in Container**.
 
 1. After the project loads (either locally or in the container), press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd> to open a new terminal pane.
+
 1. In the new terminal pane, set your location to the *RazorPagesPizza* directory:
 
     ```bash
@@ -42,7 +43,8 @@ Let's run the app to get a quick introduction.
     dotnet run
     ```
 
-1. Note the HTTPS URL displayed in the terminal output, e.g. `https://localhost:7192`.
+1. Note the URL displayed in the terminal output. For example, `https://localhost:7192`.
+
 1. Open the app in your browser by selecting the URL with <kbd>Ctrl</kbd>+*click*.
 
     > [!IMPORTANT]
@@ -50,7 +52,7 @@ Let's run the app to get a quick introduction.
     >
     > * Ignore the certificate error. If using Microsoft Edge, select **Advanced** and **Continue to localhost (not recommended)**. Details vary by browser.
     > * Save the certificate and add it to your trusted certificate authorities.
-    > * Import an existing development certificate inside the container. For more details, see the generated comments in *./devcontainer/devcontainter.json*.
+    > * Import an existing development certificate inside the container. For more information, see the generated comments in *./devcontainer/devcontainter.json*.
     >
     > If you choose to import an existing development certificate inside the container, the container path */root/.aspnet/* is exposed as *.devcontainer/persisted-data/.aspnet* outside the container. This is for your convenience.
     >
@@ -60,7 +62,7 @@ Let's run the app to get a quick introduction.
     1. Navigate to **Pizza List**
     1. Navigate back **Home**
 
-    Notice that you are not required to authenticate.
+    Notice that you aren't required to authenticate.
 
 1. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal pane to stop the app.
 
@@ -74,11 +76,11 @@ The default Identity implementation can be added with `dotnet` command-line tool
     dotnet tool install dotnet-aspnet-codegenerator --version 6.0.2 --global
     ```
 
-    The scaffolder is a .NET Core tool that will:
+    The scaffolder is a .NET Core tool that:
 
-    * Be used to add the default Identity components to the project.
-    * Enable customization of Identity UI components in the next unit.
-    * Be invoked via `dotnet aspnet-codegenerator` in this module.
+    * Is used to add the default Identity components to the project.
+    * Enables customization of Identity UI components in the next unit.
+    * Is invoked via `dotnet aspnet-codegenerator` in this module.
 
 1. Add the following NuGet packages to the project:
 
@@ -107,7 +109,7 @@ The default Identity implementation can be added with `dotnet` command-line tool
     In the preceding command:
 
     * The generator identified as `identity` is used to add the Identity framework to the project.
-    * The `--useDefaultUI` option indicates that a Razor class library (RCL) containing the default UI elements will be used. Bootstrap will be used to style the components.
+    * The `--useDefaultUI` option indicates that a Razor class library (RCL) containing the default UI elements is used. Bootstrap is used to style the components.
     * The `--dbContext` option specifies the name of an EF Core database context class to generate.
 
     The following *:::no-loc text="Areas":::* directory structure appears in the *RazorPagesPizza* directory:
@@ -125,7 +127,7 @@ The default Identity implementation can be added with `dotnet` command-line tool
 
     Areas provide a way to partition an ASP.NET Core web app into smaller functional groups.
 
-    The scaffolder also made changes to *Program.cs* as highlighted below (reformatted for readability):
+    The scaffolder also made the following highlighted changes to *Program.cs*, reformatted for readability:
 
     [!code-csharp[](../code/program.cs?highlight=1-3,5-8,27)]
 
@@ -149,7 +151,7 @@ The `ConnectionStrings` section in *:::no-loc text="appsettings.json":::* should
 }
 ```
 
-This connection string points to an instance of SQL Server Express LocalDB by default. **If you are using the *.devcontainer*, you must change the connection string as follows!** Save your changes.
+This connection string points to an instance of SQL Server Express LocalDB by default. **If you're using the *.devcontainer*, you must change the connection string as follows!** Save your changes.
 
 ```json
 "ConnectionStrings": {
@@ -170,11 +172,11 @@ Now that you've verified the connection string, you can generate and run a migra
     dotnet tool install dotnet-ef --version 6.0.3 --global
     ```
 
-    The migration tool is a .NET tool that will:
+    The migration tool is a .NET tool that:
 
-    * Generate code called a migration to create and update the database that supports the Identity entity model.
-    * Execute migrations against an existing database.
-    * Be invoked via `dotnet ef` in this module.
+    * Generates code called a migration to create and update the database that supports the Identity entity model.
+    * Executes migrations against an existing database.
+    * Is invoked via `dotnet ef` in this module.
 
 1. Create and run an EF Core migration to update the database:
 
@@ -209,19 +211,20 @@ Now that you've verified the connection string, you can generate and run a migra
     ```
 
     > [!TIP]
-    > Did the `ef` command throw an error about LocalDb not being supported? Make sure you've set your connection string as described above!
+    > Did the `ef` command throw an error about LocalDb not being supported? Make sure you've set your connection string, as described in the "Configure the database connection" section!
 
-1. The SQL Server extension was added to Visual Studio Code (if needed) when you accepted the recommended extensions. Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>D</kbd> to switch to the SQL Server pane.
+1. The SQL Server extension was added to Visual Studio Code, if needed, when you accepted the recommended extensions. Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>D</kbd> to switch to the SQL Server pane.
+
 1. Expand the nodes under the existing database connection. Expand the **Databases** node, the **RazorPagesPizza** node, and finally the **Tables** node. Note the list of tables. This confirms the migration succeeded.
 
     :::image type="content" source="../media/sql-server-successful-migration.png" alt-text="The RazorPagesPizza database with the newly created tables." lightbox="../media/sql-server-successful-migration.png":::
 
     > [!NOTE]
-    > The image above shows an example using SQL Server Express LocalDB. When using the *.devcontainer*, the connection is named **mssql-container**.
+    > The preceding image shows an example using SQL Server Express LocalDB. When using the *.devcontainer*, the connection is named **mssql-container**.
 
-## Add the login and registration links
+## Add the sign-in and registration links
 
-In *:::no-loc text="Pages/Shared/_Layout.cshtml":::*, replace the `@* Add the _LoginPartial partial view *@` comment with the following.
+Navigate back to the **Explorer** pane. In *:::no-loc text="Pages/Shared/_Layout.cshtml":::*, replace the `@* Add the _LoginPartial partial view *@` comment with the following.
 
 ```cshtml
 <partial name="_LoginPartial" />
@@ -241,20 +244,20 @@ That's everything required to add the default Identity implementation. It's time
     ```
 
 1. Navigate to the app in your browser as before.
-1. Click the **Register** link in the app's header. Complete the form to create a new account.
+1. Select the **Register** link in the app's header. Complete the form to create a new account.
 
     The **Register confirmation** page is displayed. Since the app hasn't yet been configured to send confirmation emails, the confirmation link is provided on this page.
 
-1. Click the confirmation link. A confirmation message is displayed.
-1. Click the **Login** link in the app's header and log in.
+1. Select the confirmation link. A confirmation message is displayed.
+1. Select the **Login** link in the app's header and sign in.
 
-    After a successful login:
+    After a successful sign in:
 
     * You're redirected to the homepage.
-    * The app's header displays **Hello [Email address]!** and a **Logout** link.
+    * The app's header displays **Hello [email address]!** and a **Logout** link.
     * A cookie named *:::no-loc text=".AspNetCore.Identity.Application":::* is created. Identity preserves user sessions with cookie-based authentication.
 
-1. Click the **Logout** link in the app's header.
+1. Select the **Logout** link in the app's header.
 
     After successfully logging out, the *:::no-loc text=".AspNetCore.Identity.Application":::* cookie is deleted to terminate the user session.
 

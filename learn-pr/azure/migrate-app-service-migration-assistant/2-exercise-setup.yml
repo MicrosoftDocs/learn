@@ -5,10 +5,9 @@ metadata:
   title: Exercise - Set up the environment
   description: Launch the Azure sandbox to prepare for the exercises in this module.
   ms.date: 05/21/2020
-  author: v-ksreedevan
-  ms.author: v-ksreedevan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 2
 azureSandbox: true
 interactive: bash

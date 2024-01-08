@@ -1,62 +1,93 @@
-Contoso Pizza has two services that they'd like to group together to build and deploy as a single unit. They've decided that Docker Compose is the tool they'll use.
+The Contoso outdoor equipment company has two services that they'd like to group together to build and deploy as a single unit. The company decides to use Docker Compose to build the services together.
 
-In this exercise, you'll create a Docker Compose YAML file, then use the Docker Compose utility to both build the Docker container images and run them.
+In this exercise, you create a Docker Compose YAML file. Then you use the Docker Compose utility to both build the Docker container images and run them.
 
-## Create the docker-compose file
+## Connect to the codespace
 
-1. Use Visual Studio Code to open the **mslearn-dotnetmicroservices** folder you cloned.
-1. In the topmost folder (the same folder with README.md), open the file named **docker-compose.yml**. This file will be empty.
-1. Add the following code to the **docker-compose.yml** file:
+To connect to the codespace:
+
+1. Open a browser and go to the [eShopLite repository](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative).
+1. Select **Code**, and then select the **Codespaces** tab.
+1. Select the codespace that you created in the previous exercise. GitHub opens the codespace.
+1. Go to the **/dotnet-docker** directory.
+
+## Create the Docker Compose file
+
+Use the Docker Compose file to configure images for both the back-end and the front-end services.
+
+1. In the top folder of the codespace (the folder that contains *README.md*), open the file named *docker-compose.yml*.
+1. Add the following code to the file:
 
     ```yml
     version: '3.4'
 
     services: 
-    
-      frontend:
-        image: pizzafrontend
-        build:
-          context: frontend
-          dockerfile: Dockerfile
-        environment: 
-          - backendUrl=http://backend
-        ports:
-          - "5902:80"
-        depends_on: 
-          - backend
-      backend:
-        image: pizzabackend
-        build: 
-          context: backend
-          dockerfile: Dockerfile
-        ports: 
-          - "5000:80"
 
+        frontend:
+            image: storeimage
+            build:
+                context: .
+                dockerfile: ./Store/Dockerfile
+            environment: 
+               - ProductEndpoint=http://backend:8080
+               - ImagePrefix=http://localhost
+            ports:
+               - "32000:8080"
+            depends_on: 
+               - backend
+        backend:
+            image: productservice
+            build: 
+                context: .
+                dockerfile: ./Products/Dockerfile
+            ports: 
+               - "32001:8080"
     ```
 
-    This code does several things:
+   This code does several things:
 
-    - First, it creates the frontend website, naming it **pizzafrontend**. The code tells Docker to build it, pointing to the Dockerfile found in the **frontend** folder. Then the code sets an environment variable for the website: `backendUrl=http://backend`. Finally, this code opens a port and declares it depends on the backend service.
-    - The backend service gets created next. It's named **pizzabackend**. It's built from the same Dockerfile you created in the previous exercise. The last command specifies which port to open.
+   - It creates the front-end website and names it **frontend**. The code tells Docker to build it and points to the Stores **Dockerfile**.
+   - The code sets an environment variable for the website: `ProductEndpoint=http://backend:8080`. This code is how the front-end service finds the Products back-end service.
+   - A second environment variable specifies where images for products are located.
+   - The code opens a port and declares that it depends on the back-end service.
 
-1. To build the container images, open a command prompt, navigate to the directory with the **docker-compose.yml** file, and run the following command:
+    The back-end service named **backend** is created next. The same Dockerfile that you created in the previous exercise builds it. The last command specifies which port to open.
+
+1. Select the **Ports** tab. To the right of the local address for the **Back End** port, select the **Copy** icon.
+
+   :::image type="content" source="../media/copy-backend-address.png" alt-text="Screenshot that shows how to copy the address for the back-end Products service.":::
+
+1. In the **docker-compose.yml** file, paste this URL in the `ImagePrefix` environment variable. Replace the text `http://localhost`.
+1. Append `images` to the pasted text:
+
+    ```docker-compose
+    environment: 
+      - ProductEndpoint=http://backend:8080
+      - ImagePrefix=https://super-duper-space-broccoli-32001.app.github.dev/images
+    ```
+
+## Build the images and run the containers
+
+Now, use Docker Compose to build and start both front-end and back-end components.
+
+1. To build the container images, select the **Terminal** tab, and then run the following command:
 
     ```bash
-    docker-compose build
+    docker compose build
     ```
 
-1. Then, to start both the website and the web API, run this command:
+1. To start both the front-end website and the back-end web API, run this command:
 
     ```bash
-    docker-compose up
+    docker compose up
     ```
 
-1. After a bit of output, the website and web API will be running. You should see something similar to the following output:
+1. Some output appears, and then the website and web API are running. You should see output that's similar to this example:
 
-    ```bash
-    Attaching to docker-aspnet-pizza_backend_1, docker-aspnet-pizza_frontend_1
+    ```output
+    Attaching to docker-aspnet-products_backend_1, docker-aspnet-products_frontend_1
     ```
 
-1. You can browse to: http://localhost:5902 to see the Contoso Pizza menu.
+1. To test the front-end service, select the **Ports** tab. Then, to the right of the local address for the **Front End** port, select the globe icon. The browser displays the home page.
 
-In this exercise, you learned how to create and write a Docker Compose file, build the services contained within, and run those services.
+1. Select **Products**. The catalog shows Contoso's merchandise.

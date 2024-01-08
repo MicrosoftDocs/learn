@@ -7,8 +7,9 @@ metadata:
   author: seesharprun
   ms.author: sidandrews
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
 title: Summary
 durationInMinutes: 3
 content: |

@@ -6,8 +6,8 @@ metadata:
   ms.date: 10/27/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: postgresql
 title: Explore PostgreSQL architecture
 summary: PostgreSQL is an open-source relational database system that is available as an Azure service. In this module you will learn about the PostgreSQL architecture, and how to manage different aspects of Azure Database for PostgreSQL.
 abstract: |

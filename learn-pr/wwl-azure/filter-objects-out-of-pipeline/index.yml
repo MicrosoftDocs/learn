@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Filter objects out of the pipeline
 summary: This module explains how to filter objects out of the pipeline by using the Where-Object cmdlet to specify various criteria.
 abstract: |
@@ -29,7 +28,7 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-powershell
 - azure-virtual-machines

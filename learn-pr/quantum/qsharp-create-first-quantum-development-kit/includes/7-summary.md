@@ -11,9 +11,7 @@ In this module, we covered a lot. Here are a few key concepts to keep in mind:
 
 ## Learn more
 
-If you're interested in learning more, the [Solve optimization problems by using quantum-inspired optimization](/training/modules/solve-quantum-inspired-optimization-problems/?azure-portal=true) module is a great next step. There you'll see how you can apply algorithms inspired by quantum physics to solve difficult optimization problems.
-
-Also, be sure to explore the [Azure Quantum documentation](/quantum/?azure-portal=true). There you'll find comprehensive reference material, including:
+Explore the [Azure Quantum documentation](/quantum/?azure-portal=true). There you find comprehensive reference material, including:
 
 * Fundamental concepts around quantum computing.
 * Quickstarts and tutorials.
@@ -23,5 +21,3 @@ Also, be sure to explore the [Azure Quantum documentation](/quantum/?azure-porta
 Once you're ready to dive deeper, you can [browse code samples](/samples/browse/?languages=qsharp&azure-portal=true) or [learn quantum computing with the Quantum Katas](/azure/quantum/tutorial-qdk-intro-to-katas?azure-portal=true).
 
 To learn about real-world usage of the QDK, check out this blog post on Microsoft Quantum's collaboration with Pacific Northwest National Laboratory (PNNL), [Simulating nature with the new Microsoft Quantum Development Kit chemistry library](https://cloudblogs.microsoft.com/quantum/2018/12/04/simulating-nature-with-the-new-microsoft-quantum-development-kit-chemistry-library/?azure-portal=true).
-
-Be sure to [join the quantum community](/quantum/overview/understanding-quantum-computing) if you have questions or want to contribute to Microsoft's many open-source projects.

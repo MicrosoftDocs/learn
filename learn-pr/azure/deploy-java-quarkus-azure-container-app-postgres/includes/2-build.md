@@ -12,13 +12,13 @@ You want to create a Quarkus application that hosts its logic in Azure Container
 
 ## Introduction to Quarkus
 
-[Quarkus](https://quarkus.io) is A Kubernetes Native Java stack tailored for OpenJDK HotSpot & GraalVM, crafted from the best of breed Java libraries and standards. In practice, Quarkus is an Open Source stack for writing Java applications. So Quarkus isn't limited to microservices, even though it's highly suited for it.
+[Quarkus](https://quarkus.io) is A Kubernetes Native Java stack tailored for OpenJDK HotSpot & GraalVM, crafted from the best of breed Java libraries and standards. In practice, Quarkus is an Open Source stack for writing Java applications. So Quarkus isn't limited to microservices, even though it's highly suited for them.
 
-From a developer's point of view, Quarkus proposes a nice developer experience: it gives you fast live reload, unified configuration and hides the complexity of GraalVM, allowing you to easily generate native executables. All this without reinventing the wheel by proposing a new programming model. Quarkus uses your experience in standard libraries that you already know (for example, CDI, JPA, Bean Validation or JAX-RS) and many popular frameworks (such as Eclipse Vert.x or Apache Camel).
+From a developer's point of view, Quarkus proposes a nice developer experience: it gives you fast live reload, unified configuration and hides the complexity of GraalVM, allowing you to easily generate native executables. All without reinventing the wheel by proposing a new programming model. Quarkus uses your experience in standard libraries that you already know (for example, CDI, JPA, Bean Validation or JAX-RS) and many popular frameworks (such as Eclipse Vert.x or Apache Camel).
 
 ## Develop your Quarkus application
 
-Quarkus is a great framework to execute your applications. You just wire certain Quarkus extensions and the runtime does everything for you. Thanks to [Dev Services](https://quarkus.io/guides/dev-services), you don't need to install a PostgreSQL database locally on your machine. Dev Services use Docker to download a PostgreSQL database, configure it and start it.
+Quarkus is a great framework to execute your applications. You just wire certain Quarkus extensions and the runtime does everything for you. Thanks to [Dev Services](https://quarkus.io/guides/dev-services), you don't need to install a PostgreSQL database locally on your machine. Dev Services uses Docker to download a PostgreSQL database, configure it and start it.
 
 You've decided to use Quarkus. This framework is self-hosted, and it provides support services to run your application.
 

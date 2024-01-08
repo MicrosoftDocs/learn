@@ -8,12 +8,12 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
 
 ## How the extension works
 
-The Dev Containers extension lets you grab a dev container with the specific technology stack or dependencies already set up for you, open a project, and find that your code just works without downloading anything on your local machine. Dev Containers works by connecting Visual Studio Code to a running container. Workspace files are mounted from the local file system, or they're copied or cloned into the container.
+The Dev Containers extension lets you grab a dev container with the specific technology stack or dependencies already set up for you, open a project, and find that your code just works without downloading anything on your local machine. The Dev Containers extension works by connecting Visual Studio Code to a running container. Workspace files are mounted from the local file system, or they're copied or cloned into the container.
 
-Visual Studio Code extensions are installed and run inside the container. There, they have full access to the tools, platform, and file system. To you, the developer, the experience is the same as if you had opened the project normally in Visual Studio Code.
+Visual Studio Code extensions are installed and run inside the container. There, they have full access to the tools, platform, and file system. To you—the developer—the experience is the same as if you'd opened the project normally in Visual Studio Code.
 
 You can seamlessly switch your entire development environment just by connecting to a different container. The extension handles all of the setup based on a few configuration files contained in a folder called **'.devcontainer'**.
 
 :::image type="content" source="../media/2-architecture-containers.png" alt-text="Diagram that explains the split architecture of the Dev Containers extension.":::
 
-In the next section, you'll add a dev container to a Python project and run it on your own machine - even if you don't have Python installed.
+In the next section, you'll add a dev container to a Python project and run it on your own machine, even if you don't have Python installed.

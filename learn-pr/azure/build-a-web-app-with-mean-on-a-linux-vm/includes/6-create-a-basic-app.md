@@ -1,6 +1,6 @@
 So far, you have MongoDB and Node.js installed on your Ubuntu VM. Now it's time to create a basic web application to see things in action. Along the way, you'll see how AngularJS and Express fit in.
 
-A great way to learn is by example. The web application you'll build implements a basic book database. The web application enables you to list information about books, add new books, and delete existing books.
+A great way to learn is by example. The web application you'll build implements a basic book database. The web application lets you list information about books, add new books, and delete existing books.
 
 The web application you'll see here demonstrates many concepts that apply to most MEAN stack web applications. Based on your needs and interests, you can explore the features you need to build your own MEAN stack applications.
 
@@ -16,7 +16,7 @@ Here's how each component of the MEAN stack fits in.
 * Node.js hosts the server-side application.
 
 > [!IMPORTANT]
-> For learning purposes, here you're building a basic web application. Its purpose is to test out your MEAN stack and give you a sense of how it works. The application is not sufficiently secure or ready for production use.
+> For learning purposes, here you're building a basic web application. Its purpose is to test out your MEAN stack and give you a sense of how it works. The application isn't sufficiently secure or ready for production use.
 
 ## What about Express?
 
@@ -24,23 +24,23 @@ So far, you've installed MongoDB and Node.js on your VM. What about Express.js, 
 
 Express.js is a web server framework that's built for Node.js that simplifies the process for building web applications.
 
-The main purpose of Express is to handle request routing. _Routing_ refers to how the application responds to a request to a specific endpoint. An endpoint is made up of a path, or URI, and a request method, such as GET or POST. For example, you might respond to a GET request to the `/book` endpoint by providing the list of all books in the database. You might respond to a POST request to the same endpoint by adding an entry to the database based on fields the user entered into a web form.
+The main purpose of Express is to handle request routing. _Routing_ refers to how the application responds to a request to a specific endpoint. An endpoint is made up of a path, or URI, and a request method such as GET or POST. For example, you might respond to a GET request to the `/book` endpoint by providing the list of all books in the database. You might respond to a POST request to the same endpoint by adding an entry to the database based on fields the user entered into a web form.
 
 In the web application you'll build shortly, you'll use Express to route HTTP requests and to return web content to your user. Express can also help your web applications work with HTTP cookies and process query strings.
 
-Express is a Node.js package. You use the **npm** utility, which comes with Node.js, to install and manage Node.js packages. Later in this part, you'll create a file named `package.json` to define Express and other dependencies and then run the `npm install` command to install these dependencies.
+Express is a Node.js package. You use the **npm** utility, which comes with Node.js, to install and manage Node.js packages. Later in this unit, you'll create a file named `package.json` to define Express and other dependencies, then run the `npm install` command to install these dependencies.
 
 ## What about AngularJS?
 
 Like Express, you haven't yet installed AngularJS, the **A** in the MEAN acronym.
 
-AngularJS makes web applications easier to write and test because it enables you to better separate the _appearance_ of your web page, your HTML code, from how your web page behaves. If you're familiar with the model–view–controller (MVC) pattern or the concept of data binding, AngularJS will be familiar to you.
+AngularJS makes web applications easier to write and test because it allows you to better separate the _appearance_ of your web page—your HTML code—from how your web page behaves. If you're familiar with the model–view–controller (MVC) pattern or the concept of data binding, AngularJS will be familiar to you.
 
 AngularJS is what's called a front-end JavaScript framework, which means it needs to only be available on the client that accesses the application. In other words, AngularJS runs in your user's web browser, not on your web server. And because AngularJS is JavaScript, you can use it to easily fetch data from your web server to show on the page.
 
-You don't really _install_ AngularJS. Instead, you add a reference to the JavaScript file in your HTML page, just as you do with other JavaScript libraries. There are several ways to include AngularJS in your web pages. Here you'll load AngularJS from a content delivery network, or CDN. A CDN is a way to distribute images, video, and other content geographically to improve download speeds.
+You don't really _install_ AngularJS. Instead, you add a reference to the JavaScript file in your HTML page, just as you do with other JavaScript libraries. There are several ways to include AngularJS in your web pages. Here, you'll load AngularJS from a content delivery network, or CDN. A CDN is a way to distribute images, video, and other content geographically to improve download speeds.
 
-Don't add this code quite yet, but here's an example that loads AngularJS from a CDN. You would typically add this code to the `<head>` section of your HTML page.
+Don't add this code quite yet, but here's an example that loads AngularJS from a CDN. You'd typically add this code to the `<head>` section of your HTML page.
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
@@ -51,13 +51,13 @@ Don't add this code quite yet, but here's an example that loads AngularJS from a
 
 ## How will I build the application?
 
-Here, you'll use a basic process. You'll write application code from the Cloud Shell and then use SCP, or secure copy protocol, to copy the files to your VM. Then you'll start the Node.js application and see the results in your browser.
+Here, you'll use a basic process. You'll write application code from the Cloud Shell and then use SCP, or secure copy protocol, to copy the files to your VM. Then, you'll start the Node.js application and see the results in your browser.
 
-In practice, you would typically write and test your web application in a more local environment, such as from your laptop or from a virtual machine you run locally. You might then store your code in a version control system such as Git and use a continuous integration and continuous delivery, or CI/CD, system such as Azure DevOps to test your changes and upload them to your VM. We'll point you to more resources at the end of this module.
+In practice, you'd typically write and test your web application in a more local environment, such as from your laptop or from a virtual machine you run locally. You might then store your code in a version-control system such as Git and use a continuous integration and continuous delivery—or CI/CD— system such as Azure DevOps to test your changes and upload them to your VM. We'll point you to more resources at the end of this module.
 
 ## Create the Books web application
 
-Here you'll create all the code, script, and HTML files that make up your web application. For brevity, we'll highlight the important parts of each file but won't go into complete details.
+Here, you'll create all the code, script, and HTML files that make up your web application. For brevity, we'll highlight the important parts of each file but won't go into complete details.
 
 If you're still connected to your VM over SSH, run `exit` to leave the SSH session and return to the Cloud Shell.
 
@@ -69,7 +69,7 @@ You're now back at your Cloud Shell session.
 
 ### Create the files
 
-1. From the Cloud Shell, run these commands to create the folders and files for your web application.
+1. From the Cloud Shell, run these commands to create the folders and files for your web application:
 
     ```bash
     cd ~
@@ -86,13 +86,13 @@ You're now back at your Cloud Shell session.
 
     Here's what's included:
 
-    * `Books` &ndash; the project's root directory.
+    * `Books` is the project's root directory.
       * `server.js` defines the entry point to the web application. It loads the required Node.js packages, specifies the port to listen on, and begins listening for incoming HTTP traffic.
       * `package.json` provides information about your application, including its name, description, and what Node.js packages your application needs to run.
-    * `Books/app` &ndash; contains code that runs on the server.
+    * `Books/app` contains code that runs on the server.
       * `model.js` defines the database connection and schema. Think of it as the data model for your application.
       * `routes.js` handles request routing. For example, it defines GET requests to the `/book` endpoint by providing the list of all books in the database.
-    * `Books/public` &ndash; contains files that are served directly to the client's browser.
+    * `Books/public` contains files that are served directly to the client's browser.
       * `index.html` contains the index page. It contains a web form that enables the user to submit information about books. It also displays all books in the database and enables you to delete entries from the database.
       * `script.js` contains JavaScript code that runs in your user's browser. It can send requests to the server to list books, add books to the database, and delete books from the database.
 
@@ -104,7 +104,7 @@ You're now back at your Cloud Shell session.
 
 ### Create the data model
 
-1. From the editor, open `app/model.js` and add the following.
+1. From the editor, open `app/model.js` and add the following:
 
     ```javascript
     var mongoose = require('mongoose');
@@ -128,7 +128,7 @@ You're now back at your Cloud Shell session.
     This code uses Mongoose to simplify the process of transferring data in and out of MongoDB. Mongoose is a schema-based system for modeling data. The code defines a database document called "Book" with the provided schema. The schema defines four fields that describe a single book:
 
     * The book's name, or title
-    * Its International Standard Book Number, or ISBN, which uniquely identifies the book
+    * Its International Standard Book Number—or ISBN—which uniquely identifies the book
     * Its author
     * The number of pages it contains
 
@@ -136,7 +136,7 @@ You're now back at your Cloud Shell session.
 
 ### Create the Express.js routes that handle HTTP requests
 
-1. From the editor, open `app/routes.js` and add the following code.
+1. From the editor, open `app/routes.js` and add the following code:
 
     ```javascript
     var path = require('path');
@@ -188,7 +188,7 @@ You're now back at your Cloud Shell session.
     | DELETE | `/book/:isbn` | Deletes the book as identified by its ISBN from the database. |
     | GET | `*` | Returns the index page when no other route is matched. |
 
-    Express.js can serve up HTTP responses directly in the route handling code or it can serve up static content from files. This code shows both. The first three routes return JSON data for book API requests. The fourth route (the default case) returns the contents of the index file, `index.html`.
+    Express.js can serve up HTTP responses directly in the route-handling code, or it can serve up static content from files. This code shows both. The first three routes return JSON data for book API requests. The fourth route (the default case) returns the contents of the index file, `index.html`.
 
 ### Create the client-side JavaScript application
 
@@ -243,9 +243,9 @@ You're now back at your Cloud Shell session.
 
     Earlier, you created four routes that handle various GET, POST, and DELETE operations on the server. This code resembles those same operations, but from the client side (the user's web browser).
 
-    The `getData` function, for example, sends a GET request to the `/book` endpoint. Recall that the server handles this request by retrieving information about all books from the database and returning that information as JSON data. Notice how the resulting JSON data is assigned to the `$scope.books` variable. You'll see how this affects what the user sees on the web page in the next step.
+    The `getData` function, for example, sends a GET request to the `/book` endpoint. Recall that the server handles this request by retrieving information about all books from the database and returning that information as JSON data. Notice how the resulting JSON data is assigned to the `$scope.books` variable. You'll learn how this affects what the user sees on the web page in the next step.
 
-    This code calls the `getData` function when the page loads. You can examine the `del_book` and `add_book` functions to get a sense for how they work. You don't need client-side code to match the server's default handler because the default handler returns the index page and not JSON data.
+    This code calls the `getData` function when the page loads. You can examine the `del_book` and `add_book` functions to get a sense for how they work. You don't need client-side code to match the server's default handler, because the default handler returns the index page and not JSON data.
 
 ### Create the user interface
 
@@ -302,7 +302,7 @@ You're now back at your Cloud Shell session.
     </html>
     ```
 
-    This code creates a basic HTML form with four fields to submit book data and a table that displays all the books stored in the database.
+    This code creates a basic HTML form, with four fields to submit book data and a table that displays all the books stored in the database.
 
     Although this is standard HTML code, the `ng-` HTML attributes may be unfamiliar to you. These HTML attributes wire up the AngularJS code to the user interface. For example, when you select **Add**, AngularJS calls the `add_book` function, which sends the form data to the server.
 
@@ -310,7 +310,7 @@ You're now back at your Cloud Shell session.
 
 ### Create the Express.js server to host the application
 
-1. From the editor, open `server.js` and add this code.
+1. From the editor, open `server.js` and add this code:
 
     ```javascript
     var express = require('express');
@@ -325,13 +325,13 @@ You're now back at your Cloud Shell session.
     });
     ```
 
-    This code creates the web application itself. It serves static files from the `public` directory and uses the routes you defined in previously to handle requests.
+    This code creates the web application itself. It serves static files from the `public` directory and uses the routes you defined previously to handle requests.
 
 ### Define package information and dependencies
 
 Recall that `package.json` provides information about your application, including its name, description, and what Node.js packages your application needs to run.
 
-1. From the editor, open `package.json` and add this code.
+1. From the editor, open `package.json` and add this code:
 
     ```json
     {
@@ -355,11 +355,11 @@ You see information, or metadata, about your application including its name, des
 
 The `repository` field specifies where the code is maintained. For reference, you can later review the code on GitHub at the URL shown here.
 
-The `main` field defines the application's entry point. It's provided here for completeness but it's not important because you're not planning to publish your application as a Node.js package for others to download and use.
+The `main` field defines the application's entry point. It's provided here for completeness, but it's not important because you're not planning to publish your application as a Node.js package for others to download and use.
 
 The `dependencies` field is important. It defines the Node.js packages your application needs. Shortly, you'll connect to your VM a second time and run the `npm install` command to install these packages.
 
-Node packages typically use the [Semantic Versioning](https://semver.org?azure-portal=true) versioning scheme. The version number contains three components: major version, minor version, and patch. The tilde `~` notation here tells npm to install the latest patch version under the provided major and minor versions. The versions you see here are the latest this module was tested with. In practice, you can increment the version over time as you update and test your application to use the latest features each dependent package provides.
+Node packages typically use the [Semantic Versioning](https://semver.org?azure-portal=true) versioning scheme. The version number contains three components: major version, minor version, and patch. The tilde `~` notation here tells npm to install the latest patch version under the provided major and minor versions. The versions you see here are the latest with which this module was tested. In practice, you can increment the version over time as you update and test your application to use the latest features each dependent package provides.
 
 ### Copy the files to your VM
 
@@ -380,9 +380,9 @@ echo $ipaddress
 
 1. You're all done editing files. Make sure that you saved changes to each file and then close the editor.
 
-    To close the editor, select the ellipses in the corner, then select **Close Editor**.
+    To close the editor, select the ellipses in the top-right corner, then select **Close Editor**.
 
-1. Run the following `scp` command to copy the contents of the `~/Books` directory in your Cloud Shell session to the same directory name on your VM.
+1. Run the following `scp` command to copy the contents of the `~/Books` directory in your Cloud Shell session to the same directory name on your VM:
 
     ```bash
     scp -r ~/Books azureuser@$ipaddress:~/Books
@@ -404,31 +404,31 @@ Let's connect to your VM and install the packages you specified in `package.json
 
 1. Before you connect to your VM, make sure you have your VM's IP address handy. If you don't have it, run the Cloud Shell commands in the previous section to retrieve it.
 
-1. Like you did earlier, create an SSH connection to your VM.
+1. Like you did earlier, create an SSH connection to your VM:
 
     ```bash
     ssh azureuser@$ipaddress
     ```
 
-1. Move to the `Books` directory under the home directory.
+1. Move to the `Books` directory under the home directory:
 
     ```bash
     cd ~/Books
     ```
 
-1. Run `npm install` to install the dependent packages.
+1. Run `npm install` to install the dependent packages:
 
     ```bash
     sudo apt install npm -y && npm install
     ```
 
-Keep your SSH connection open for the next part.
+Keep your SSH connection open for the next section.
 
 ## Test the application
 
 You're now ready to test out your Node.js web application!
 
-1. From the `~/Books` directory, run this command to start the web application.
+1. From the `~/Books` directory, run this command to start the web application:
 
     ```bash
     sudo nodejs server.js

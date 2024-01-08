@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-introduction-products.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is part of the "Introduction to GitHub's products" module.
+  ms.date: 08/21/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: training-unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

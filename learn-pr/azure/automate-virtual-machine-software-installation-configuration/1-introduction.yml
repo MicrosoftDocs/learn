@@ -5,10 +5,9 @@ metadata:
   title: Introduction
   description: Automate the installation and configuration of software in your Azure Virtual Machines.
   ms.date: 05/15/2020
-  author: cynthn
-  ms.author: cynthn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: ju-shim
+  ms.author: jushiman
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

@@ -6,8 +6,9 @@ metadata:
   ms.date: 02/06/2023
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: cosmos-db
+  ms.subservice: mongodb
 title: Migrate a MongoDB database to Azure Cosmos DB
 summary: In this module we will learn several ways to migrate existing MongoDB databases to Azure Cosmos DB for MongoDB.
 abstract: |

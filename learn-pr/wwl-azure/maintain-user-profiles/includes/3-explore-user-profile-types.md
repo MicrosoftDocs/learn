@@ -1,4 +1,5 @@
 
+
 Windows has different types of user profiles for the various different scenarios in how user configurations might be applied. The four common different types of user profiles are:
 
  -  **Local User Profile:** This type is available on a single computer only.

@@ -1,12 +1,11 @@
-
 Conditional access is a feature of Enterprise Mobility + Security (EMS). It provides granular access control to organizational data while allowing users to work from essentially any device and location. Conditional access helps to protect your company’s email and data from the security risks posed by devices that are noncompliant.
 
-Intune and Azure AD work together to enable conditional access for mobile devices. Intune provides information about device compliance with Azure AD. When Azure AD receives a request to access resources, it compares this information to conditional access policies.
+Intune and Microsoft Entra ID work together to enable conditional access for mobile devices. Intune provides information about device compliance with Microsoft Entra ID. When Microsoft Entra ID receives a request to access resources, it compares this information to conditional access policies.
 
  -  If the conditional access policy says that noncompliant devices can't access a resource, the access request is denied.
  -  If access is denied, the user is prompted to enroll the device and fix the compliance problems.
 
-You can also set policies in Azure AD that allow only domain-joined or Intune-enrolled devices to access resources.
+You can also set policies in Microsoft Entra ID that allow only domain-joined or Intune-enrolled devices to access resources.
 
 A conditional access policy is a definition of an access scenario using the **When this happens**: **Then do this** pattern.
 
@@ -17,7 +16,7 @@ A conditional access policy is a definition of an access scenario using the **Wh
 
 These two conditions are mandatory in a conditional access policy. In addition to the two mandatory conditions, you can also include other conditions that describe how the access attempt is performed. Common examples are using mobile devices or locations that are outside your company network.
 
- -  **Then do this**. Defines the response of the policy. With a conditional access policy, you control how authorized users (users that have been granted access to a cloud app) can access cloud apps under specific conditions. In your response, you enforce other requirements such as multi-factor authentication, a managed device, and others. In the context of conditional access, the requirements the policy enforces are called access controls. In the most restrictive form, your policy can block access.
+ -  **Then do this**. Defines the response of the policy. With a conditional access policy, you control how authorized users (users that have been granted access to a cloud app) can access cloud apps under specific conditions. In your response, you enforce other requirements such as multifactor authentication, a managed device, and others. In the context of conditional access, the requirements the policy enforces are called access controls. In the most restrictive form, your policy can block access.
 
 Conditional access is especially beneficial in certain scenarios.
 

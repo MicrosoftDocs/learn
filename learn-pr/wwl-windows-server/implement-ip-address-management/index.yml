@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
 title: Implement IP Address Management
 summary: Learn to implement IPAM to help manage your organization’s DHCP and DNS servers and to manage IP address space.
 abstract: |

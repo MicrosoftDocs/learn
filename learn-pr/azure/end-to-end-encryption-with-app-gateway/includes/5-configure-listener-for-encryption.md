@@ -6,9 +6,9 @@ Application Gateway receives requests through one or more ports. If you're commu
 
 ```azurecli
 az network application-gateway frontend-port create \
-    --resource-group <resource group name> \
-    --gateway-name <application gateway name>  \
-    --name <port name> \
+    --resource-group $rgName \
+    --gateway-name gw-shipping  \
+    --name my-https-port \
     --port 443
 ```
 
@@ -20,10 +20,10 @@ You can add the certificate by using the `az network application-gateway ssl-cer
 
  ```azurecli
 az network application-gateway ssl-cert create \
-    --resource-group <resource group name> \
-    --gateway-name <application gateway name> \
-    --name <ssl certificate name> \
-    --cert-file <SSL certificate file (PFX)> \
+    --resource-group $rgName \
+    --gateway-name gw-shipping \
+    --name shipping-ssl.crt \
+    --cert-file shippingportal/server-config/shipping-ssl.pfx \
     --cert-password <password for certificate file>
 ```
 
@@ -31,11 +31,11 @@ You can then create the listener that receives requests from the frontend port a
 
 ```azurecli
 az network application-gateway http-listener create \
-    --resource-group <resource group name> \
-    --gateway-name <application gateway name> \
-    --name <listener name> \
-    --frontend-port <frontend port name> \
-    --ssl-cert <ssl certificate name>
+    --resource-group $rgName \
+    --gateway-name gw-shipping \
+    --name http-listener \
+    --frontend-port my-https-port \
+    --ssl-cert shipping-ssl.crt
 ```
 
 ## Define a rule to send HTTPS requests to the servers
@@ -46,13 +46,14 @@ The following example shows how to use the `az network application-gateway rule 
 
 ```azurecli
 az network application-gateway rule create \
-    --resource-group <resource group name> \
-    --gateway-name <application gateway name> \
-    --name <rule name> \
-    --address-pool <backend pool> \
-    --http-listener <listener name> \
-    --http-settings <HTTPS settings name> \
+    --resource-group $rgName \
+    --gateway-name gw-shipping \
+    --name app-gw-rule \
+    --address-pool ap-backend \
+    --http-listener http-listener \
+    --http-settings https-settings \
     --rule-type Basic
+    --priority 101
 ```
 
 You should now have complete end-to-end encryption for messages routed through Application Gateway. Clients use the SSL certificate for Application Gateway to send messages. Application Gateway decrypts these messages by using this SSL certificate. It then re-encrypts the messages by using the certificate for the servers in the backend pool.

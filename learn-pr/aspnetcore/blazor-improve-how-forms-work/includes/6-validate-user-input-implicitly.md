@@ -6,22 +6,22 @@ In this unit, you'll learn how to annotate models so that Blazor knows what data
 
 When you collect information from a website user, it's important to check that it makes sense and is in the right form:
 
-- **For business reasons:** Customer information such as a telephone number or order details must be correct to give good service to users. For example, if your webpage can spot a malformed telephone number as soon as the user enters it, you can prevent costly delays later.
-- **For technical reasons:** If your code uses form input for calculations or other processing, incorrect input can cause errors and exceptions.
-- **For security reasons:** Malicious users may try to inject code by exploiting input fields that are not checked.
+- **For business reasons**: Customer information such as a telephone number or order details must be correct to give good service to users. For example, if your webpage can spot a malformed telephone number as soon as the user enters it, you can prevent costly delays later.
+- **For technical reasons**: If your code uses form input for calculations or other processing, incorrect input can cause errors and exceptions.
+- **For security reasons**: Malicious users might try to inject code by exploiting input fields that are not checked.
 
-Website users are familiar with validation rules that check for the presence and correct format of the details they enter. Required fields are often marked with an asterisk or a **Required** label. If they omit a value or enter a poorly formatted value, they see a validation message that instructs them on how to put the problem right. The validation message may appear when the user tabs out of a field or when they click the **Submit** button.
+Website users are familiar with validation rules that check for the presence and correct format of the details they enter. Required fields are often marked with an asterisk or a **Required** label. If they omit a value or enter a poorly formatted value, they see a validation message that instructs them on how to put the problem right. The validation message might appear when the user tabs out of a field or when they click the **Submit** button.
 
 Here's an example form where the user has submitted invalid data. In this case, there are validation messages at the bottom of the form and invalid fields are highlighted in red. You'll build this form in the next exercise:
 
 :::image type="content" source="../media/7-show-validation-errors.png" alt-text="Screenshot of an example form displaying feedback for the user about invalid data.":::
 
-It's a good idea to make validation messages as helpful as possible. Don't assume any knowledge from the user: For example, not everyone knows the format of a valid email address.
+It's a good idea to make validation messages as helpful as possible. Don't assume any knowledge from the user; for example, not everyone knows the format of a valid email address.
 
 When you use the `EditForm` component in Blazor, you have versatile validation options available without writing complex code:
 
 - In your model, you can use **data annotations** against each property to tell Blazor when values are required and what format they should be in.
-- Within your `EditForm` component, add the **DataAnnotationsValidator** component, which will check the model annotations against the user's entered values.
+- Within your `EditForm` component, add the **DataAnnotationsValidator** component, which checks the model annotations against the user's entered values.
 - Use the **ValidationSummary** component when you want to display a summary of all the validation messages in a submitted form.
 - Use the **ValidationMessage** component when you want to display the validation message for a specific model property.
 
@@ -54,20 +54,20 @@ We'll use this model in a form that enables Blazing Pizza personnel to add new p
 
 Other annotations that you can use in a model include:
 
-- `[ValidationNever]`. Use this annotation when you want to ensure that the field is never included in validation.
-- `[CreditCard]`. Use this annotation when you want to record a valid credit card number from the user.
-- `[Compare]`. Use this annotation when you want to ensure that two properties in the model match.
-- `[Phone]`. Use this annotation when you want to record a valid telephone number from the user.
-- `[RegularExpression]`. Use this annotation to check the format of a value by comparing it to a regular expression.
-- `[StringLength]`. Use this annotation to check that the length of a string value doesn't exceed a maximum length.
-- `[Url]`. Use this annotation when you want to record a valid URL from the user.
+- `[ValidationNever]`: Use this annotation when you want to ensure that the field is never included in validation.
+- `[CreditCard]`: Use this annotation when you want to record a valid credit card number from the user.
+- `[Compare]`: Use this annotation when you want to ensure that two properties in the model match.
+- `[Phone]`: Use this annotation when you want to record a valid telephone number from the user.
+- `[RegularExpression]`: Use this annotation to check the format of a value by comparing it to a regular expression.
+- `[StringLength]`: Use this annotation to check that the length of a string value doesn't exceed a maximum length.
+- `[Url]`: Use this annotation when you want to record a valid URL from the user.
 
 > [!NOTE]
-> Regular expressions are widely used to compare strings against patterns and also to modify strings. You can use them to define custom formats that form values must conform to. To learn more about regular expressions in .NET, see [.NET regular expressions](/dotnet/standard/base-types/regular-expressions)
+> Regular expressions are widely used to compare strings against patterns and also to modify strings. You can use them to define custom formats that form values must conform to. To learn more about regular expressions in .NET, see [.NET regular expressions](/dotnet/standard/base-types/regular-expressions).
 
 ## Add validation components to the form
 
-To configure your form to use data annotation validation, first make sure you've bound the input control to the properties of the model. Then, add the **DataAnnotationsValidator** component somewhere within the `EditForm` component. To display the messages that validation generates, use the **ValidationSummary** component, which shows all the validation messages for all controls in the form. If you prefer to show validation messages next to each control, use multiple **ValidationMessage** components. Remember to tie each **ValidationMessage** control to a specific property of the model, by using the `For` attribute:
+To configure your form to use data-annotation validation, first make sure you've bound the input control to the model properties. Then, add the **DataAnnotationsValidator** component somewhere within the `EditForm` component. To display the messages that validation generates, use the **ValidationSummary** component, which shows all the validation messages for all controls in the form. If you prefer to show validation messages next to each control, use multiple **ValidationMessage** components. Remember to tie each **ValidationMessage** control to a specific property of the model, by using the `For` attribute:
 
 ```razor
 @page "/admin/createpizza"
@@ -123,7 +123,7 @@ public class Pizza
 }
 ```
 
-The built-in validation attributes are versatile and you can use regular expressions to check against many kinds of text patterns. However, if you have specific or unusual requirements for validation, you may be unable to satisfy them precisely with built-in attributes. In these circumstances, you can create a custom validation attribute. Start by creating a class that inherits from the **ValidationAttribute** class and overrides the **IsValid** method:
+The built-in validation attributes are versatile, and you can use regular expressions to check against many kinds of text patterns. However, if you have specific or unusual requirements for validation, you might be unable to satisfy them precisely with built-in attributes. In these circumstances, you can create a custom validation attribute. Start by creating a class that inherits from the **ValidationAttribute** class and overrides the **IsValid** method:
 
 ```csharp
 public class PizzaBase : ValidationAttribute
@@ -176,7 +176,7 @@ When you use an `EditForm` component, three events are available for responding 
 - `OnValidSubmit`: This event fires when the user submits a form and their input passes validation.
 - `OnInvalidSubmit`: This event fires when the user submits a form and their input fails validation.
 
-If you use `OnSubmit`, the other two events will not fire. Instead you can use the `EditContext` parameter to check whether to process the input data or not. Use this event when you want to write your own logic to handle form submission:
+If you use `OnSubmit`, the other two events won't fire. Instead, you can use the `EditContext` parameter to check whether to process the input data or not. Use this event when you want to write your own logic to handle form submission:
 
 ```razor
 @page "/admin/createpizza"
@@ -213,7 +213,7 @@ If you use `OnSubmit`, the other two events will not fire. Instead you can use t
 }
 ```
 
-If you use `OnValidSubmit` and `OnInvalidSubmit` instead, you don't have to check the validation state, within each event handler:
+If you use `OnValidSubmit` and `OnInvalidSubmit` instead, you don't have to check the validation state within each event handler:
 
 ```razor
 @page "/admin/createpizza"

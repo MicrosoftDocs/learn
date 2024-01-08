@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.introduction-to-azure-iot
+metadata:
+  title: Introduction to Azure IoT
+  description: "Evaluate whether the Azure IoT services are appropriate to your IoT scenario."
+  ms.date: 8/14/2023
+  author: dominicbetts
+  ms.author: dobett
+  ms.topic: module-intro-to-product
+  ms.service: iot
+title: Introduction to Azure IoT
+summary: "Characterize the types of business processes that Azure IoT can add value to. Survey Azure IoT services such as IoT Hub and IoT Central that help you build IoT solutions."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Evaluate whether the Azure IoT services are appropriate to your IoT scenario.
+    - Describe how features of the Azure IoT services work to implement your IoT scenario.
+prerequisites: |
+  - Basic familiarity with IoT terms and concepts
+  - Familiarity with Azure cloud concepts such as services, security, and communications protocols
+iconUrl: /learn/achievements/introduction-to-azure-iot.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- business-owner
+products:
+- azure-iot
+subjects:
+- digital-application-innovation
+- iot
+units:
+- learn.introduction-to-azure-iot.introduction
+- learn.introduction-to-azure-iot.what-is-azure-iot
+- learn.introduction-to-azure-iot.how-azure-iot-works
+- learn.introduction-to-azure-iot.when-to-use-iot
+- learn.introduction-to-azure-iot.knowledge-check
+- learn.introduction-to-azure-iot.summary
+badge:
+  uid: learn.introduction-to-iot.badge

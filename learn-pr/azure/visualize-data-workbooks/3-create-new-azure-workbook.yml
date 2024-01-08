@@ -7,8 +7,9 @@ metadata:
   ms.date: 10/27/2022
   author: AbbyMSFT
   ms.author: abbyweisberg
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
   sandbox: true
   interactive: bash
 durationInMinutes: 8

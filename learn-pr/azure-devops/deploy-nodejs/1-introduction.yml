@@ -7,8 +7,9 @@ metadata:
   ms.date: 11/09/2022
   author: juliakm
   ms.author: jukullam
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-js
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

@@ -1,6 +1,6 @@
-Blockchain is a record-keeping and contract-enforcement technology that uses cryptography to make it extremely difficult to change previous history. It allows participants to share workstreams by tracking changes on a shared ledger.
+Blockchain is a record-keeping and contract-enforcement technology that uses cryptography to make it difficult to change previous history. It allows participants to share workstreams by tracking changes on a shared ledger.
 
-In the ice cream scenario, how do we discover there is a food quality or safety issue caused by improper temperature storage during shipment? We need to track the responsible party and the temperature and keep a log of changes.
+In the ice cream scenario, how do we discover if there's a food quality or safety issue caused by improper temperature storage during shipment? We need to track the responsible party and the temperature and keep a log of changes.
 
 ## Why not use a centralized database?
 
@@ -8,7 +8,7 @@ We could use a centralized database that all participants use to track shipments
 
 ![A farm, factory, shipper, and a shop use a single centralized database.](../media/centralized-database.png)
 
-The advantage of a centralized database is that it's easy to control access and consistency. Everyone is using the same database and there's a trusted authority controlling access. Because there is only one database, all participants are using the same set of data. All participants need to trust the database is correct, and by extension they need to trust the owner of the database not to modify historical data for any reason.
+The advantage of a centralized database is that it's easy to control access and consistency. Everyone is using the same database and there's a trusted authority controlling access. Because there's only one database, all participants are using the same set of data. All participants need to trust the database is correct, and by extension they need to trust the owner of the database not to modify historical data for any reason.
 
 What if our scenario doesn't allow for a trusted central authority? What if no one company wants to be responsible for hosting a centralized database? Perhaps the requirements for system integration with each participant system can't be met.
 

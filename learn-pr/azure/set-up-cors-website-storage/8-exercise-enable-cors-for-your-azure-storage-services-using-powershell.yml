@@ -7,8 +7,9 @@ metadata:
   ms.date: 04/23/2019
   author: tamram
   ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurepowershell
 durationInMinutes: 10
 interactive: powershell
 azureSandbox: true

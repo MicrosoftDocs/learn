@@ -8,8 +8,7 @@ metadata:
   ms.date: 08/19/2022
   author: ramiMSFT
   ms.author: rabououn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/4-set-up-environment.md)]

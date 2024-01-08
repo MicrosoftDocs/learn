@@ -10,10 +10,9 @@ Let's explore the Azure portal first - it's the easiest way to start with Azure.
 
 The **Azure portal** provides an easy-to-use browser-based user interface that enables you to create and manage all your Azure resources. For example, you can set up a new database, increase the compute power of your virtual machines, and monitor your monthly costs. It's also a great learning tool, because you can survey all available resources and use guided wizards to create the ones you need.
 
-
 ### Create an Azure VM with the Azure portal
 
-Let's assume you want to create a VM running a web server on Ubuntu. Setting up a site isn't difficult, but there are a couple of things to keep in mind. You need to install and configure an operating system, configure a website, install a database, and worry about things like firewalls. We're going to cover creating VMs in the next few modules, but let's create one here to see how easy it is. We won't go through all the options - check out one of the **Create a VM** modules to get complete details on each option.
+Let's assume you want to create a VM running a web server on Ubuntu. Setting up a site isn't difficult, but there are a couple of things to keep in mind. You need to install and configure an operating system, configure a website, install a database, and worry about things like firewalls. We're going to cover creating VMs in the next few modules, but let's create one here to see how easy it is. We don't go through all the options - check out one of the **Create a VM** modules to get complete details on each option.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
@@ -21,7 +20,7 @@ Let's assume you want to create a VM running a web server on Ubuntu. Setting up 
 
     ![Screenshot that shows the Create a resource page.](../media/3-create-new-resource.png)
 
-1.  We want to create a VM, so select **Virtual machine**.
+1. We want to create a VM, so select **Virtual machine**.
 
 1. The **Create virtual machine** pane appears.
 
@@ -56,15 +55,15 @@ You need to configure the basic parameters of your virtual machine. If some of t
 
 1. There are several other tabs you can explore to see the settings you can influence during the VM creation. After you're finished exploring, select **Review + create** to review and validate the settings.
 
-1. Azure validates your configuration settings for a resource before it creates it. You may need to supply some additional information based on the requirements of the image creator built into Azure. This is simple; just open the tab that has an error. Verify all the settings are set the way you want, and then select **Create** to deploy and create the VM.
+1. Azure validates your configuration settings for a resource before it creates it. You might need to supply some additional information based on the requirements of the image creator built into Azure. It's simple; just open the tab that has an error. Verify all the settings are set the way you want, and then select **Create** to deploy and create the VM.
 
-1. The **Generate new key pair** window will open. Select **Download private key and create resource**.
+1. The **Generate new key pair** window opens. Select **Download private key and create resource**.
 
 1. You can monitor the deployment in the **Deployment details** on the **Overview** pane or through the **Notifications** pane. Select the notifications icon in the top right toolbar to show or hide the Notifications pane.
 
     :::image type="content" source="../media/3-notifications.png" alt-text="Screenshot showing the notifications icon on toolbar and part of the notifications pane.":::
 
-    The VM deployment process takes a few minutes to complete. You'll receive a notification informing you that the deployment succeeded.
+    The VM deployment process takes a few minutes to complete. You receive a notification informing you that the deployment succeeded.
 
 1. Select **Go to resource**. The **Overview** page of your VM appears.
 

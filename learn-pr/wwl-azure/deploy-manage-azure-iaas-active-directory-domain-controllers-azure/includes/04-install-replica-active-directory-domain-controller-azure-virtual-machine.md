@@ -53,7 +53,6 @@ To create and provision an ExpressRoute circuit, perform the following high-leve
 
 ## Create a storage account
 
-You need a storage account in which to place the Azure virtual hard disk for the VM operating system and data disks. This data disk is for the Active Directory database, log files, and SYSVOL.
 
 Use the following procedure to create a storage account:
 
@@ -67,7 +66,7 @@ Use the following procedure to create a storage account:
 8. Choose whether to enable secure transfer.
 9. Select **Review + Create**.
 
-![A screenshot of the Azure AD portal. The administrator is creating a storage account. The resource group is ContosoResourceGroup, the storage account name is contosostorage4, and the Access tier is set to hot.](../media/m9-storage.png)
+![A screenshot of the Microsoft Entra admin center. The administrator is creating a storage account. The resource group is ContosoResourceGroup, the storage account name is contosostorage4, and the Access tier is set to hot.](../media/m9-storage.png)
 
 The following table describes the configurable options when creating a storage account.
 

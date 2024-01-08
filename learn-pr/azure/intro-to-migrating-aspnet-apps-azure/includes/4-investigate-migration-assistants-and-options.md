@@ -24,7 +24,7 @@ The app will use other resources as well, such as:
 
 - Networking resources to provide access to the web application through the standard port 80 or HTTPS port 443. Networking also provides options for DNS and public IP addressing configurations.
 - Monitoring and logging options for the service.
-- Access control through Azure Active Directory (Azure AD) and role-based access control (RBAC).
+- Access control through Microsoft Entra ID and role-based access control (RBAC).
 - Other options that are available, depending on your required configuration for the specific application such as database access and the scaling and availability options.
 - A storage option for various files needed to host the application.
 
@@ -158,7 +158,7 @@ In an ASP.NET application scenario, where the app needs to access a data store, 
 
 - Get an isolated and highly secure environment for your applications
 
-You might also access applications running on-premises using Active Directory for authentication and identity management. Azure AD Connect enables you to integrate your on-premises directories with Azure AD. This means that employees won’t be required to have multiple sets of credentials for authentication.
+You might also access applications running on-premises using Active Directory for authentication and identity management. Microsoft Entra Connect enables you to integrate your on-premises directories with Microsoft Entra ID. This means that employees won’t be required to have multiple sets of credentials for authentication.
 
 Similar to taking an inventory of your on-premises environment for apps and hardware, you should also map out your existing security requirements and implementation so that you can perform a proper security assessment for the migration scenario. You want to ensure that a cloud-hosted environment will still meet your organization's security needs.
 

@@ -7,8 +7,8 @@ metadata:
   ms.date: 10/26/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -16,17 +16,17 @@ content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   questions:
-  - content: "Which cmdlet should you use to authenticate to Azure AD to create user accounts?"
+  - content: "Which cmdlet should you use to authenticate to Microsoft Entra ID to create user accounts?"
     choices:
     - content: "`Connect-SPOTenant`"
       isCorrect: false
-      explanation: "Incorrect. After you install the Azure Active Directory Module for Windows PowerShell module, you can use `Connect-MSOnline` to connect to Azure AD to manage users, groups, and licensing. Alternatively, you can use `Connect-AzureAD` if you installed the Azure AD PowerShell for Graph module instead."
+      explanation: "Incorrect. After you install the Azure Active Directory module for Windows PowerShell module, you can use `Connect-MSOnline` to connect to Microsoft Entra ID to manage users, groups, and licensing. Alternatively, you can use `Connect-AzureAD` if you installed the Azure AD PowerShell for Graph module instead."
     - content: "`Connect-MSOnline`"
       isCorrect: true
-      explanation: "Correct. After you install the Azure Active Directory Module for Windows PowerShell module, you can use `Connect-MSOnline` to connect to Azure AD to manage users, groups, and licensing. Alternatively, you can use `Connect-AzureAD` if you installed the Azure AD PowerShell for Graph module instead."
+      explanation: "Correct. After you install the Azure Active Directory module for Windows PowerShell module, you can use `Connect-MSOnline` to connect to Microsoft Entra ID to manage users, groups, and licensing. Alternatively, you can use `Connect-AzureAD` if you installed the Azure AD PowerShell for Graph module instead."
     - content: "`Connect-ExchangeOnline`"
       isCorrect: false
-      explanation: "Incorrect. After you install the Azure Active Directory Module for Windows PowerShell module, you can use `Connect-MSOnline` to connect to Azure AD to manage users, groups, and licensing. Alternatively, you can use `Connect-AzureAD` if you installed the Azure AD PowerShell for Graph module instead."
+      explanation: "Incorrect. After you install the Azure Active Directory module for Windows PowerShell module, you can use `Connect-MSOnline` to connect to Microsoft Entra ID to manage users, groups, and licensing. Alternatively, you can use `Connect-AzureAD` if you installed the Azure AD PowerShell for Graph module instead."
   - content: "Which role should be assigned to a user to manage all services in Microsoft 365?"
     choices:
     - content: "Global Administrator"

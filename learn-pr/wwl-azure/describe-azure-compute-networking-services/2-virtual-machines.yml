@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-azure-compute-networking-services.virtual-machines
-title: Describe Azure Virtual Machines
+title: Describe Azure virtual machines
 metadata:
-  title: Describe Azure Virtual Machines
-  description: "Describe Azure Virtual Machines"
-  ms.date: 12/12/2022
+  title: Describe Azure virtual machines
+  description: "Describe Azure virtual machines"
+  ms.date: 09/13/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/2-virtual-machines.md)]

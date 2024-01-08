@@ -4,11 +4,10 @@ title: Exercise - Track dependencies using Delivery Plans
 metadata:
   title: Exercise - Track dependencies using Delivery Plans
   description: Track dependencies, identify dependencies with issues, and resolve dependency issues using Delivery Plans.
-  ms.date: 06/16/2022
+  ms.date: 10/06/2023
   author: chcomley
   ms.author: chcomley
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/6-track-dependencies-delivery-plans.md)]

@@ -130,7 +130,7 @@ With this asynchronous function, you'll have a scene that has a camera, lights, 
 
 ## Add physics with a physics engine
 
-Next, we need to add some physics to our world. Plug-ins for four physics engines are available for use with Babylon.js: Cannon.js, Oimo.js, Energy.js, and Ammo.js. We'll use Cannon.js for this example, but you can read more about the engines on the [Babylon.js site](https://doc.babylonjs.com/divingDeeper/physics/usingPhysicsEngine?azure-portal=true). 
+Next, we need to add some physics to our world. Plug-ins for four physics engines are available for use with Babylon.js: Cannon.js, Oimo.js, Energy.js, and Ammo.js. We'll use Cannon.js for this example, but you can read more about the engines on the [Babylon.js site](https://doc.babylonjs.com/features/featuresDeepDive/physics/usingPhysicsEngine). 
 
 Cannon.js is a physics engine written completely in JavaScript. If you aren't familiar with what physics engines are, they provide an approximate simulation of physical systems like mass, gravity, friction, and restitution.
 

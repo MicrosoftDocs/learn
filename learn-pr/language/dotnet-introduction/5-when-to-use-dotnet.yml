@@ -4,11 +4,13 @@ title: When to use .NET
 metadata:
   title: When to use .NET
   description: Determine when it makes sense to .NET. Understand its strengths and how developers use it.
-  ms.date: 10/12/2020
+  ms.date: 10/12/2023
   author: camsoper
   ms.author: casoper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 4
 azureSandbox: false
 content: |

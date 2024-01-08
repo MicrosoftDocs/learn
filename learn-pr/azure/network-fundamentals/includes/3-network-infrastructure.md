@@ -1,6 +1,6 @@
 A network can't exist unless each of the devices has the means of communicating with another. This fact applies whether it's your organization's network or more extensive networks, like the web. All networks are built on the same principles.
 
-In this unit, you'll learn about the term *network standards* and explore the hardware that forms the backbone of any network.
+In this unit, you learn about the term *network standards* and explore the hardware that forms the backbone of any network.
 
 ## Network standards
 
@@ -74,7 +74,7 @@ A hub acts as a multiport repeater on a network. Hubs are used to connect more t
 ### Types of hubs
 
 - **Fast Ethernet**: This hub is used for 100-Mbps networks, and comes as Class I and Class II type hubs. The primary difference between the two is the amount of delay in data transmission. A Class I hub introduces a signal delay of up to 140-bit times. A Class II hub has a delay of up to 96-bit times. The delay allows for the transcoding of data between different base types. Only two Class II hubs can be used in a hub-based network. Class II hubs increase the likelihood of packet collisions because of their higher speeds.
-- **Dual speed**: With a traditional hub network, the speed of the network was governed by the slowest network device attached. For example, if you had 10-Mbps and 100-Mbps devices connected to a network, the speed of the whole network was only 10 Mbps. Dual-speed hubs solve the problem by acting as a bridge between the two different-speed devices.
+- **Dual speed**: With a traditional hub network, the slowest attached device governs the speed of the network. For example, if you had 10-Mbps and 100-Mbps devices connected to a network, the speed of the whole network was only 10 Mbps. Dual-speed hubs solve the problem by acting as a bridge between the two different-speed devices.
 
 Hubs are used for small ad-hoc networks of a few devices, but they're rarely used at an enterprise level.
 
@@ -108,8 +108,8 @@ Here's a list of the more commonly available options to configure on a managed s
 - **Virtual LANs**: Create logical groups of devices in their own virtual LAN. Traffic in one virtual LAN doesn't cross over into another virtual LAN. This logical group of devices can improve the security and performance of the network.
 - **Spanning Tree Protocol (STP)**: Build resilience into your network by defining alternative network routes in case a cable or device fails.
 - **Port mirroring**: Use with a network analyzer to diagnose network issues and problems. During setup, the switch exports a copy of the network traffic to a single port.
-- **Bandwidth rate-limiting**: Allow fine control of the bandwidth used by specific ports, such as high bandwidth for ports handling database or VoIP and lower bandwidths for email.
-- **MAC address filtering**: Provide the ability to control which network devices can be used or have access through the switch.
+- **Bandwidth rate-limiting**: Allow fine control of the bandwidth used by specific ports. For example, allowing a high bandwidth for ports handling database or VoIP, and lower bandwidths for email.
+- **MAC address filtering**: Control which network devices can be used or have access through the switch.
 - **SNMP client**: Set up and configure SNMP with your network monitoring tools.
 
 There are two subtypes of managed switches:
@@ -119,7 +119,7 @@ There are two subtypes of managed switches:
 
 ## Router
 
-Routers link networks with different ranged addresses together. They can interpret and filter data packets, and then forward them to the correct network. Routers use the network device's IP address information to route the data package to its destination. Most routers can now detect issues with data traffic that flows to any attached network and route or reroute it around the issue. A router is also called a gateway. When you configure network devices, you'll usually configure them with a default gateway IP address.
+Routers link networks with different ranged addresses together. They can interpret and filter data packets, and then forward them to the correct network. Routers use the network device's IP address information to route the data package to its destination. Most routers can now detect issues with data traffic that flows to any attached network and route or reroute it around the issue. A router is also called a gateway. When you configure network devices, you usually configure them with a default gateway IP address.
 
 ### Interconnectivity
 
@@ -127,20 +127,20 @@ Routers in an interconnected network maintain a routing table that lists the pre
 
 ### Types
 
-The majority of routers use the BGP to share routing information. The type of information shared depends on the usage of the router and the functions they use.
+Most routers use the BGP to share routing information. The type of information shared depends on the usage of the router and the functions they use.
 
 There are several distinct classifications or types of routers available to service different network needs.
 
-- **Access routers**: Typically used in a home or small satellite offices, these routers tend to be low-cost devices with a simple routing need.
+- **Access routers**: These routers tend to be low-cost devices with a simple routing need. They're typically used in a home or small satellite offices.
 - **Distribution routers**: These routers compile traffic routing data from multiple routers. Distribution routers come with more significant memory and processing power. This type of router is designed to hold vast quantities of routing information. It's often used to manage and control the quality of service across a WAN.
 - **Edge routers**: An edge router operates at the boundary between your network and other networks; for example, your local network and the internet. They act as gateways to filter traffic and route it internally or forward it based on the packet header. An edge router often comes with access control or firewalls to improve the security. It might also handle DHCP and DNS services.
 - **Core routers**: Sometimes called enterprise routers, these routers are designed for higher bandwidths. They're used to connect different buildings or geographic locations together. Core routers tend to have fewer features than edge routers because their primary focus is on minimizing packet loss and preventing congestion. They tend to do packet forwarding to edge routers.
 
 ## Wireless router
 
-This network device provides all the routing capabilities of a regular access router, but it also offers wireless access point functions. A wireless router or wireless access point is designed to provide a non-wired connection to your network. Any provision to access the internet or other networks is handled by an edge router associated with your network. A wireless router lets you build a different type of network called a wireless local area network.
+This network device provides all the routing capabilities of a regular access router, but it also offers wireless access point functions. A wireless router or wireless access point is designed to provide a nonwired connection to your network. An edge router associated with your network handles any provision to access the internet or other networks. A wireless router lets you build a different type of network called a wireless local area network.
 
-A wireless router shouldn't be confused with a wireless modem. A wireless modem is what you receive from your ISP for your home or office, and is the device that converts the signal from the ISP into one that's usable on a computer network. Wireless modems are typically combined with routers to allow you to create a private home or office network.
+A wireless router shouldn't be confused with a wireless modem. A wireless modem is what you receive from your ISP for your home or office. It's the device that converts the signal from the ISP into one that's usable on a computer network. Wireless modems are typically combined with routers to allow you to create a private home or office network.
 
 ## Azure options
 
@@ -148,8 +148,8 @@ Two Azure options can help with routing and managing network traffic.
 
 ### Azure hub-spoke
 
-Azure hub-spoke is a reference architecture. The hub is usually an Azure virtual network that acts as the central connection point between the cloud and an on-premises network. Each spoke is also an Azure virtual network, usually connected to the hub via a peer network. Connections between the cloud and the on-premises network can be made through a VPN gateway or Azure ExpressRoute.
+Azure hub-spoke is a reference architecture. The hub is usually an Azure virtual network that acts as the central connection point between the cloud and an on-premises network. Each spoke is also an Azure virtual network, connected to the hub via a peer network. Connections between the cloud and the on-premises network can be made through a VPN gateway or Azure ExpressRoute.
 
 ### Azure ExpressRoute
 
-An ExpressRoute connection is a dedicated circuit between an on-premises network and the cloud that uses a much higher bandwidth than a regular VPN gateway connection. An ExpressRoute circuit is hosted by a connectivity partner and provides a super-resilient connection.
+An ExpressRoute connection is a dedicated circuit between an on-premises network and the cloud that uses a higher bandwidth than a regular VPN gateway connection. A connectivity partner hosts an ExpressRoute circuit and provides a super-resilient connection.

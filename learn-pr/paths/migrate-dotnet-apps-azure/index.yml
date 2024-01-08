@@ -6,8 +6,7 @@ metadata:
   author: msangapu-msft
   ms.date: 07/06/2020
   ms.author: msangapu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Migrate ASP.NET Apps to Azure
 prerequisites: |
   - Some familiarity in working with virtual machines, Windows Server, and IIS
@@ -37,8 +36,8 @@ modules:
 - learn.azure.intro-to-migrating-aspnet-apps-azure
 - learn.host-a-web-application-with-azure-web-apps
 - learn.provision-azure-sql-db
-- learn.azure.migrate-app-service-migration-assistant
+# - learn.azure.migrate-app-service-migration-assistant
 - learn-wwl.migrate-sql-workloads-azure-sql-databases
-- learn.azure.deploy-aspnet-apps-azure-app-service-pipelines
+# - learn.azure.deploy-aspnet-apps-azure-app-service-pipelines
 trophy:
   uid: learn.azure.migrate-dotnet-apps-azure.trophy

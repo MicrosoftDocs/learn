@@ -12,7 +12,7 @@ Some features require significant development effort. Consider the cost of this 
 
 ### Services
 
-Implementing functionality like speech input and language diversity makes bots responsible. But you need access to resources like Azure Cognitive Services. Look into the availability and cost of these services when deciding which ones to use.
+Implementing functionality like speech input and language diversity makes bots responsible. But you need access to resources like Azure AI services. Look into the availability and cost of these services when deciding which ones to use.
 
 ### Scheduling constraints
 
@@ -26,7 +26,7 @@ The availability of resources in each area determines the approach you can take 
 |---|---|---|
 | Conversational style | Determine the best conversational style to use by detecting user sentiment. Select an appropriate response from multiple alternatives. | Add chit-chat capabilities so that your bot can greet users and end conversations gracefully. |
 | Help feature | In your bot's help feature, fully document all your bot's functionality and provide examples and resources with more information. | Provide usage examples that help users get started with your bot by demonstrating basic interactions. |
-| Language diversity | Use Azure Cognitive Services to determine the user's language. Then provide output messages in that language. You could use a translation service. Or you could implement responses in multiple languages. | Program the bot to hand off to a human operator when it comes across phrases that it can't understand. |
+| Language diversity | Use Azure AI services to determine the user's language. Then provide output messages in that language. You could use a translation service. Or you could implement responses in multiple languages. | Program the bot to hand off to a human operator when it comes across phrases that it can't understand. |
 | User input | Support different formats for user input, including speech from a microphone. | Support input from a keypad, mouse, or touch-screen. |
 
 ## Geography bot options

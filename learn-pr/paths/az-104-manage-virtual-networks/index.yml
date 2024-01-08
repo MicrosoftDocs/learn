@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/12/2022
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'AZ-104: Configure and manage virtual networks for Azure administrators'
 prerequisites: |
   - [Microsoft Azure Fundamentals: Describe cloud concepts](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
@@ -78,11 +77,8 @@ subjects:
 modules:
 - learn.wwl.configure-virtual-networks
 - learn.wwl.configure-network-security-groups
-- learn.wwl.configure-azure-firewall
 - learn.wwl.configure-azure-dns
 - learn.wwl.configure-vnet-peering
-- learn.wwl.configure-vpn-gateway
-- learn.wwl.configure-expressroute-virtual-wan
 - learn.wwl.configure-network-routing-endpoints
 - learn.wwl.configure-azure-load-balancer
 - learn.wwl.configure-azure-application-gateway

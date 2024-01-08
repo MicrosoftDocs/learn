@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.edge.integrate-with-pwabuilder.generate-app-manifest
+title: Exercise - Generate the app manifest and service worker
+metadata:
+  title: Exercise - Generate the app manifest and service worker
+  description: This content is part of the "Integrate your project with PWABuilder" module.
+  ms.date: 07/11/2023
+  author: beth-panx
+  ms.author: xupa
+  ms.topic: module-standard-task-based
+  ms.prod: microsoft-edge
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-generate-app-manifest-service-worker.md)]

@@ -7,8 +7,8 @@ metadata:
   author: acomfort248
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.service: azure-maps
 title: Track global air quality with Azure Maps
 summary: This module shows how to track global air quality by using the Azure Maps web SDK and pollution data from a third-party air quality API.
 abstract: |

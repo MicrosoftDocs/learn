@@ -1,7 +1,8 @@
 
+
 ## Exercise: Threat detection with Microsoft Sentinel Analytics
 
-As a security engineer working for Contoso, you recently noticed that a significant number of VMs has been deleted from your Azure subscription. You want to analyze this  occurrence and be alerted when a similar activity occurs in the future. You decide to implement an analytics rule to create an incident when someone deletes an existing VM.
+As a security engineer working for Contoso, you recently noticed that a significant number of VMs have been deleted from your Azure subscription. You want to analyze this  occurrence and be alerted when a similar activity occurs in the future. You decide to implement an analytics rule to create an incident when someone deletes an existing VM.
 
 In this exercise, you'll explore a Microsoft Sentinel analytics rule and perform the following tasks:
 
@@ -32,17 +33,15 @@ In this exercise, you'll explore a Microsoft Sentinel analytics rule and perform
 
     ```kusto
     AzureActivity
-    | where OperationName == 'Delete Virtual Machine'
-    | where ActivityStatus == 'Accepted'
-    | extend AccountCustomEntity = Caller
-    | extend IPCustomEntity = CallerIpAddress
+    | where OperationName == "MICROSOFT.COMPUTE/VIRTUALMACHINES/DELETE"
+    | where ActivityStatus == "Success"    
     ```
 
 1. In the **Results simulation** pane, select **Test with current data**, and then observe the results.
 
-    :::image type="content" source="../media/07-rule-logic.png" alt-text="Screenshot Analytics Rule Logic." border="true":::
+    :::image type="content" source="../media/07-set-rule-logic-page.png" alt-text="Screenshot of Analytics Rule Set Logic tab." lightbox="../media/07-set-rule-logic-page.png" border="true":::
 
-1. In the **Alert enrichment (Preview)** section under **Entity Mapping**, map the entities that are returned as part of the query rule and that you can use to perform in-depth analysis.
+1. In the **Alert enhancement** section under **Entity Mapping**, map the entities that are returned as part of the query rule and that you can use to perform in-depth analysis.
 1. In the **Query Scheduling** section, configure how often the query should run, and how far in history to search. Select query to run on every 5 minutes, and accept the default history of 5 hours.
 1. In the **Alert threshold** section, specify the number of positive results that can be returned for the rule before an alert gets generated. Accept the default values.
 1. In the **Event grouping** section, accept the default **Group all events into a single alert.**
@@ -56,7 +55,7 @@ In this exercise, you'll explore a Microsoft Sentinel analytics rule and perform
 
 1. In the **Automated response**  pane, select a playbook to run automatically when the alert is generated. Only the playbooks that contain Logic App Microsoft Sentinel connector are displayed.
 1. Select **Next: Review**.
-1. In the **Review and create** page, verify that the validation was successful, and then select **Create**.
+1. In the **Review and create** page, verify that the validation was successful, and then select **Save**.
 
 ### Task 2: Invoke an incident and review the associated actions
 

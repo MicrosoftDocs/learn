@@ -56,7 +56,7 @@ You can obtain the index by updating the `v-for` declaration, as shown in the fo
 
 ```html
 <ul id="demo">
-    <li v-for="(name, index) in names" :key="index">{{ name }}</div>
+    <li v-for="(name, index) in names" :key="index">{{ name }}</li>
 </ul>
 ```
 

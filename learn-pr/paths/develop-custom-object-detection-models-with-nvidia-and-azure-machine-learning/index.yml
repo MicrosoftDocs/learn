@@ -7,15 +7,14 @@ metadata:
   ms.date: 03/14/2022
   author: toolboc
   ms.author: pdecarlo
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Develop Custom Object Detection Models with NVIDIA and Azure Machine Learning
 prerequisites: |
   - [Azure Free Trial Account](https://azure.microsoft.com/free/)
 summary: |
   Azure Machine Learning studio is a GUI-based integrated development environment for constructing and operationalizing Machine Learning workflow on Azure.  Learn how to develop custom object detection models using this service with NVIDIA GPU accelerated virtual machines.
 
-iconUrl: /training/achievements/develop-custom-object-detection-models-with-nvidia-and-azure-machine-learning.svg
+iconUrl: /training/achievements/nvidia-deepstream-development-with-microsoft-azure-social.png
 levels:
 - intermediate
 roles:

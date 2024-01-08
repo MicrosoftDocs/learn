@@ -1,4 +1,4 @@
-The open-source [Citus extension](https://github.com/citusdata/citus) for PostgreSQL is used to provide the distributed functionality in Azure Cosmos DB for PostgreSQL. It uses the standard PostgreSQL SQL constructs, so most queries are supported, even when they combine data across the network from multiple database nodes. This support includes transactional semantics across nodes. Currently, all SQL is supported except:
+You can use the open-source [Citus extension](https://github.com/citusdata/citus) for PostgreSQL to provide the distributed functionality in Azure Cosmos DB for PostgreSQL. It uses the standard PostgreSQL SQL constructs, so most queries are supported, even when they combine data across the network from multiple database nodes. This support includes transactional semantics across nodes. Currently, all SQL is supported except:
 
 - Correlated subqueries
 - Recursive CTEs
@@ -14,7 +14,7 @@ EXPLAIN SELECT * FROM payment_events WHERE user_id = 87;
 
 The output shows a task count of 1 against `shardid` 102235, the shard on which the data for `user_id` 87 resides.
 
-```sql
+```output
 Custom Scan (Citus Adaptive)  (cost=0.00..0.00 rows=0 width=0)
    Task Count: 1
    Tasks Shown: All
@@ -37,7 +37,7 @@ For example, Woodgrove Bank would like to add a `UNIQUE` constraint between even
 ALTER TABLE payment_events ADD CONSTRAINT event_merchant UNIQUE (event_id, merchant_id);
 ```
 
-```sql
+```output
 ERROR:  cannot create constraint on "payment_events"
 DETAIL:  Distributed relations cannot have UNIQUE, EXCLUDE, or PRIMARY KEY constraints that do not include the partition column (with an equality operator if EXCLUDE).
 ```

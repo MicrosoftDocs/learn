@@ -4,11 +4,10 @@ title: Explore Azure virtual networking
 metadata:
   title: Explore Azure virtual networking
   description: Explore Azure virtual networking
-  ms.date: 09/24/2018
-  author: KumudD
-  ms.author: kumud
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/01/2023
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-describe-azure-virtual-networking.md)]

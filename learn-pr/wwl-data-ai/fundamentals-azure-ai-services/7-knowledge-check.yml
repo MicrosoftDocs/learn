@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-azure-ai-services.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/05/2023
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "An application requires three separate AI services. To see the cost for each separately, what type of resource(s) should be created?"
+    choices:
+    - content: "A multi-service resource that includes all the AI services"
+      isCorrect: false
+      explanation: "Incorrect. A multi-service resource bills the costs all together."
+    - content: "A single-service resource for each AI service"
+      isCorrect: true
+      explanation: "Correct. Create a single-service resource for each AI service to see costs separately for each resource."
+    - content: "It's not possible to see costs for individual AI services"
+      isCorrect: false
+      explanation: "Incorrect. It's possible to see costs separately for each AI service resource."
+  - content: "After logging into one of the Azure studios, what is one task to complete to begin using the studio?"
+    choices:
+    - content: "Input a key and endpoint into the studio"
+      isCorrect: false
+      explanation: "Incorrect. It's not necessary to authenticate the studio."
+    - content: "Customize the API request."
+      isCorrect: false
+      explanation: "Incorrect. You don't need to customize an API request to use the studio."
+    - content: "Associate a resource with the studio"
+      isCorrect: true
+      explanation: "Correct. To explore the capabilities of the service in the studio, you must first associate the resource with the studio."
+  - content: "What is an Azure AI services resource?"
+    choices:
+    - content: "A bundle of several AI services in one resource"
+      isCorrect: true
+      explanation: "Correct. An Azure AI services resource is a bundle of several AI services in one resource."
+    - content: "An AI service to recognize faces"
+      isCorrect: false
+      explanation: "Incorrect. The Azure AI Face resource is one of many Azure AI services."
+    - content: "A single-service resource for Azure AI Search"
+      isCorrect: false
+      explanation: "Incorrect. Azure AI Search is the single-service resource for Azure AI Search."

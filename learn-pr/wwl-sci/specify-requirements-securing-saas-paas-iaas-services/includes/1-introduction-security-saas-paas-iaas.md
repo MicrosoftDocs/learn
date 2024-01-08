@@ -1,7 +1,6 @@
 In this module, you'll learn how to:
 
 * Specify security baselines for SaaS, PaaS, and IaaS services
-* Specify security requirements for IoT workloads
 * Specify security requirements for web workloads
 * Specify security requirements for containers and container orchestration
 

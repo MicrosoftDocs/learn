@@ -1,10 +1,10 @@
-In this exercise, you'll use nested `StackLayout` containers to arrange the views in your User Interface (UI). The first screenshot shows the layout implemented by the starter project, and the second one shows the layout for the completed project. Your job is to use `StackLayout` containers and `LayoutOptions` to turn the starter project into the completed version.
+In this exercise, you use nested `StackLayout` containers to arrange the views in your User Interface (UI). The first screenshot shows the layout implemented by the starter project, and the second one shows the layout for the completed project. Your job is to use `StackLayout` containers and `LayoutOptions` to turn the starter project into the completed version.
 
-:::image type="content" source="../media/5-starter-complete.png" alt-text="Screenshot showing the starter solution, with all the labels placed vertically in close proximity, and the completed solution, with controls aligned and positioned in a more intuitive manner.":::
+:::image type="content" source="../media/5-starter-complete.png" alt-text="Screenshot showing the starter solution with all of the labels placed vertically in close proximity. Next to it, is the completed solution with controls aligned and positioned in a more intuitive manner.":::
 
 ## Explore the starter solution
 
-The starter solution contains a fully functional tip calculator app. You'll start by exploring the  UI to understand what the app does.
+The starter solution contains a fully functional tip calculator app. Start by exploring the UI to understand what the app does.
 
 1. Using Visual Studio, open the starter solution in the **exercise2/TipCalculator** folder in the repo that you cloned at the start of the previous exercise.
 
@@ -14,7 +14,7 @@ The starter solution contains a fully functional tip calculator app. You'll star
 
 1. Experiment with the tip amount buttons and the slider.
 
-1. When you've finished, close the app.
+1. When you're finished, close the app.
 
 1. Open **MainPage.xaml**. Notice that all the views are placed into one `VerticalStackLayout`, as shown by the following XAML markup:
 
@@ -50,7 +50,7 @@ The starter solution contains a fully functional tip calculator app. You'll star
 
 ## Fix the UI
 
-Now that you've seen the app run, you can make it look better by adding `HorizontalStackLayout` containers. The goal is to make the app look like the screenshot at the start of the lab.
+Now that you saw the app run, you can make it look better by adding `HorizontalStackLayout` containers. The goal is to make the app look like the screenshot at the start of the lab.
 
 1. Open the **MainPage.xaml** file.
 
@@ -62,7 +62,7 @@ Now that you've seen the app run, you can make it look better by adding `Horizon
 
 1. Add a `HorizontalStackLayout` to group the `Label` that says **Bill** with the `Entry` field below it. Set the `Spacing` property to `10`.
 
-1. Set the `WidthRequest` of the **Bill** `Label` to `100` and the `VerticalOptions` property to `Center`. This will ensure that the label is aligned vertically with the `Entry` field.
+1. Set the `WidthRequest` of the **Bill** `Label` to `100` and the `VerticalOptions` property to `Center`. These changes ensure that the label is aligned vertically with the `Entry` field.
 
     ```xml
     <HorizontalStackLayout Spacing="10">
@@ -182,6 +182,6 @@ The complete XAML markup for the content page should look like this:
 
 ## Examine the results
 
-Run the app again and look at the differences in the UI. Verify that the controls are aligned correctly, and properly sized and spaced.
+Run the app again and look at the differences in the UI. Verify that the controls are aligned correctly, and are properly sized and spaced.
 
 You used `VerticalStackLayout` and `HorizontalStackLayout` containers to improve the aesthetics of an existing UI. These layouts are the simplest layout panels, but are powerful enough to produce a reasonable UI.

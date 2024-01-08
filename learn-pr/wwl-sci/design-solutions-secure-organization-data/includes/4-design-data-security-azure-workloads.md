@@ -20,25 +20,29 @@ IP firewall rules grant access to databases based on the originating IP address 
 
 ### Authentication
 
-Authentication is the process of proving the user is who they claim to be. Azure SQL Database and SQL Managed Instance support SQL authentication and Azure AD authentication. SQL Managed instance additionally supports Windows Authentication for Azure AD principals.
+Authentication is the process of proving the user is who they claim to be. Azure SQL Database and SQL Managed Instance support SQL authentication and Microsoft Entra authentication. SQL Managed instance additionally supports Windows Authentication for Microsoft Entra principals.
 
 #### SQL authentication
     
 SQL authentication refers to the authentication of a user when connecting to Azure SQL Database or Azure SQL Managed Instance using username and password. A **server admin** sign-in with a username and password must be specified when the server is being created. Using these credentials, a **server admin** can authenticate to any database on that server or instance as the database owner. After that, other SQL logins and users can be created by the server admin, which enable users to connect using username and password.
     
-#### Azure Active Directory authentication
-    
-Azure Active Directory authentication is a mechanism of connecting to [Azure SQL Database](https://learn.microsoft.com/azure/azure-sql/database/sql-database-paas-overview?view=azuresql), [Azure SQL Managed Instance](https://learn.microsoft.com/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql) and [Azure Synapse Analytics](https://learn.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-what-is) by using identities in Azure Active Directory (Azure AD). Azure AD authentication allows administrators to centrally manage the identities and permissions of database users along with other Azure services in one central location. This includes the minimization of password storage and enables centralized password rotation policies.
-    
-A server admin called the **Active Directory administrator** must be created to use Azure AD authentication with SQL Database. For more information, see [Connecting to SQL Database By Using Azure Active Directory Authentication](https://learn.microsoft.com/azure/azure-sql/database/authentication-aad-overview?view=azuresql). Azure AD authentication supports both managed and federated accounts. The federated accounts support Windows users and groups for a customer domain federated with Azure AD.
-    
-Additional Azure AD authentication options available are [Active Directory Universal Authentication for SQL Server Management Studio](https://learn.microsoft.com/azure/azure-sql/database/authentication-mfa-ssms-overview?view=azuresql) connections including [multi-factor authentication](https://learn.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks) and [Conditional Access](https://learn.microsoft.com/azure/azure-sql/database/conditional-access-configure?view=azuresql).
-    
-#### Windows Authentication for Azure AD Principals
-    
-[Kerberos authentication for Azure AD Principals](https://learn.microsoft.com/azure/azure-sql/managed-instance/winauth-azuread-overview?view=azuresql) enables Windows Authentication for Azure SQL Managed Instance. Windows Authentication for managed instances empowers customers to move existing services to the cloud while maintaining a seamless user experience and provides the basis for infrastructure modernization.
+<a name='azure-active-directory-authentication'></a>
 
-To enable Windows Authentication for Azure Active Directory (Azure AD) principals, you'll turn your Azure AD tenant into an independent Kerberos realm and create an incoming trust in the customer domain. Learn [how Windows Authentication for Azure SQL Managed Instance is implemented with Azure Active Directory and Kerberos](https://learn.microsoft.com/azure/azure-sql/managed-instance/winauth-implementation-aad-kerberos?view=azuresql).
+#### Microsoft Entra authentication
+    
+Microsoft Entra authentication is a mechanism of connecting to [Azure SQL Database](https://learn.microsoft.com/azure/azure-sql/database/sql-database-paas-overview?view=azuresql), [Azure SQL Managed Instance](https://learn.microsoft.com/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql) and [Azure Synapse Analytics](https://learn.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-what-is) by using identities in Microsoft Entra ID. Microsoft Entra authentication allows administrators to centrally manage the identities and permissions of database users along with other Azure services in one central location. This includes the minimization of password storage and enables centralized password rotation policies.
+    
+A server admin called the **Active Directory administrator** must be created to use Microsoft Entra authentication with SQL Database. For more information, see [Connecting to SQL Database By Using Microsoft Entra authentication](https://learn.microsoft.com/azure/azure-sql/database/authentication-aad-overview?view=azuresql). Microsoft Entra authentication supports both managed and federated accounts. The federated accounts support Windows users and groups for a customer domain federated with Microsoft Entra ID.
+    
+Additional Microsoft Entra authentication options available are [Active Directory Universal Authentication for SQL Server Management Studio](https://learn.microsoft.com/azure/azure-sql/database/authentication-mfa-ssms-overview?view=azuresql) connections including [multi-factor authentication](https://learn.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks) and [Conditional Access](https://learn.microsoft.com/azure/azure-sql/database/conditional-access-configure?view=azuresql).
+    
+<a name='windows-authentication-for-azure-ad-principals'></a>
+
+#### Windows Authentication for Microsoft Entra Principals
+    
+[Kerberos authentication for Microsoft Entra Principals](https://learn.microsoft.com/azure/azure-sql/managed-instance/winauth-azuread-overview?view=azuresql) enables Windows Authentication for Azure SQL Managed Instance. Windows Authentication for managed instances empowers customers to move existing services to the cloud while maintaining a seamless user experience and provides the basis for infrastructure modernization.
+
+To enable Windows Authentication for Microsoft Entra principals, you'll turn your Microsoft Entra tenant into an independent Kerberos realm and create an incoming trust in the customer domain. Learn [how Windows Authentication for Azure SQL Managed Instance is implemented with Microsoft Entra ID and Kerberos](https://learn.microsoft.com/azure/azure-sql/managed-instance/winauth-implementation-aad-kerberos?view=azuresql).
     
 ### Authorization
 
@@ -92,7 +96,7 @@ In Azure, all newly created databases are encrypted by default and the database 
 
 ![Diagram showing the basics of the Always Encrypted feature. An SQL database with a lock is only accessed by an app containing a key.](../media/azure-database-always-encrypted.png)
 
-[Always Encrypted](https://learn.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine) is a feature designed to protect sensitive data stored in specific database columns from access (for example, credit card numbers, national identification numbers, or data on a _need to know_ basis). This includes database administrators or other privileged users who are authorized to access the database to perform management tasks, but have no business need to access the particular data in the encrypted columns. The data is always encrypted, which means the encrypted data is decrypted only for processing by client applications with access to the encryption key. The encryption key is never exposed to SQL Database or SQL Managed Instance and can be stored either in the [Windows Certificate Store](https://learn.microsoft.com/azure/azure-sql/database/always-encrypted-certificate-store-configure?view=azuresql) or in [Azure Key Vault](https://learn.microsoft.com/azure/azure-sql/database/always-encrypted-azure-key-vault-configure?view=azuresql).
+[Always Encrypted](https://learn.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine) is a feature designed to protect sensitive data stored in specific database columns from access (for example, credit card numbers, national/regional identification numbers, or data on a _need to know_ basis). This includes database administrators or other privileged users who are authorized to access the database to perform management tasks, but have no business need to access the particular data in the encrypted columns. The data is always encrypted, which means the encrypted data is decrypted only for processing by client applications with access to the encryption key. The encryption key is never exposed to SQL Database or SQL Managed Instance and can be stored either in the [Windows Certificate Store](https://learn.microsoft.com/azure/azure-sql/database/always-encrypted-certificate-store-configure?view=azuresql) or in [Azure Key Vault](https://learn.microsoft.com/azure/azure-sql/database/always-encrypted-azure-key-vault-configure?view=azuresql).
 
 ### Dynamic data masking
 

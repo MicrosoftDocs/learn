@@ -4,13 +4,10 @@ title: Design for Azure Monitor data sources
 metadata:
   title: Design for Azure Monitor data sources
   description: "Design for Azure Monitor data sources"
-  ms.date: 01/18/2023
+  ms.date: 11/02/2023
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-design-for-azure-monitor-data-sources.md)]

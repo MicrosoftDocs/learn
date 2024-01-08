@@ -6,10 +6,13 @@ metadata:
   title: Deploy Bicep files by using a pipeline
   description: Learn how to deploy a Bicep infrastructure as code template by using Azure Pipelines and how to use variables to make your pipeline code reusable.
   ms.date: 01/30/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-azurepowershell
+    - devx-track-bicep
 durationInMinutes: 7
 content: |
   [!include[](includes/4-deploy-bicep-files-pipeline.md)]
