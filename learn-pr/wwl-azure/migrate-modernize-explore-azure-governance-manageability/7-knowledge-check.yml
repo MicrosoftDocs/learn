@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/05/2024
+  ms.date: 01/08/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -40,7 +40,7 @@ quiz:
     choices:
     - content: "Secure score"
       isCorrect: true
-      explanation: "Correct. Defender for Cloud continually assesses esources, subscriptions, and organization for security issues. It then aggregates all the findings into a single \"secure score\" of a security situation: the higher the score, the lower the identified risk level."
+      explanation: "Correct. Defender for Cloud continually assesses resources, subscriptions, and organization for security issues. It then aggregates all the findings into a single \"secure score\" of a security situation: the higher the score, the lower the identified risk level."
     - content: "Security recommendations"
       isCorrect: false
       explanation: "Incorrect. Defender for Cloud continually assesses resources, subscriptions, and organization for security issues. It then aggregates all the findings into a single \"secure score\" of a security situation: the higher the score, the lower the identified risk level."
