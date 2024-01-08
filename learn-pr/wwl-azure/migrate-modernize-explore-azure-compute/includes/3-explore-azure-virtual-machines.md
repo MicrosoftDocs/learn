@@ -27,7 +27,7 @@ A limit also exists on the throughput and input/output operations per second (IO
 > [!NOTE]
 > At the time of writing, any virtual disks that you intend to attach to Azure VMs must be in the .vhd format. There's also no support for Generation 2 Hyper V virtual machines in Azure. Also, no support exists for dynamically expanding or differencing virtual disks—they all must be fixed.
 
-Optional demos:
+## Optional demos:
 
 - [Demonstration: Explore the Azure portal](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-explore-azure-portal.md)
 - [Demonstration: Create a virtual machine in the portal](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-create-virtual-machine-portal.md)
