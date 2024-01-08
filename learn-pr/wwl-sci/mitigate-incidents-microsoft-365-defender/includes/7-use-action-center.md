@@ -93,7 +93,7 @@ The Action center includes an Action source column that tells you where each act
 
 |Action source value|Description|
 | :--- | :--- |
-|Action source value |A manual action taken on a device. Examples include device isolation or file quarantine. |
+|Manual device action |A manual action taken on a device. Examples include device isolation or file quarantine. |
 |Manual email action |A manual action taken on email. An example includes soft-deleting email messages or remediating an email message. |
 |Automated device action |An automated action taken on an entity, such as a file or process. Examples of automated actions include sending a file to quarantine, stopping a process, and removing a registry key. |
 |Automated email action |An automated action taken on email content, such as an email message, attachment, or URL. Examples of automated actions include soft-deleting email messages, blocking URLs, and turning off external mail forwarding. |
