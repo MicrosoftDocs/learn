@@ -14,13 +14,13 @@ Running through *all* your code step by step might be extremely inefficient if y
 
 Using breakpoints, you can make your program run normally up until you reach the critical portion of code where you suspect the error is located. Then you can switch to running step by step.
 
-There are multiple ways of defining breakpoints in your code based on your debugger and code editor. There's one universal way to force any JavaScript debugger to pause at a given point. 
+There are multiple ways of defining breakpoints in your code based on your debugger and code editor. 
 
 ## Node.js inspect mode
 
 Because a debugger has full access to the execution environment, a malicious actor could also use it to inject arbitrary code in your Node.js application. That's why, by default, Node.js doesn't allow you to debug a running program. You have to enable a special mode called *inspector* mode to allow debugging.
 
-You need to start your application with the `--inspect` option to allow a debugger _client_ to attach itself to the application application and take control of your application execution.
+You need to start your application with the `--inspect` option to allow a debugger _client_ to attach itself to the application and take control of your application execution.
 
 By default, when Node.js is started with the `--inspect` option, it listens on host `127.0.0.1` on port `9229`. You can also specify a custom host and port by using the syntax `--inspect=<HOST>:<PORT>`.
 
