@@ -26,7 +26,6 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.create-classification-model-with-azure-machine-learning-designer.introduction
-- learn.wwl.create-classification-model-with-azure-machine-learning-designer.create-compute
 - learn.wwl.create-classification-model-with-azure-machine-learning-designer.explore-data
 - learn.wwl.create-classification-model-with-azure-machine-learning-designer.create-training-pipeline
 - learn.wwl.create-classification-model-with-azure-machine-learning-designer.evaluate-model
