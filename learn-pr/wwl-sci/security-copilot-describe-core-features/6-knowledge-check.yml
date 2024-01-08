@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-describe-core-features.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Describe the core features of Microsoft Security Copilot."
+  ms.date: 11/18/2023
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: security
+  ms.service: security-copilot
+durationInMinutes: 2
+
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+
+quiz:
+  questions:
+  - content: "What is the Security Copilot landing page?"
+    choices:
+    - content: "The portal to the platform where users can access key landmarks such as the prompt bar, plugins, and help."
+      isCorrect: true
+      explanation: "The Security Copilot landing page is the portal to the platform where users can access key landmarks such as the prompt bar, plugins, and help."
+    - content: "A page where users can only access the prompt bar."
+      isCorrect: false
+      explanation: "The landing page includes more than just the prompt bar."
+    - content: "A page that lists all the plugins available in Security Copilot."
+      isCorrect: false
+      explanation: "The landing page includes more than just the plugins."
+  - content: "What are plugins in Microsoft Security Copilot?"
+    choices:
+    - content: "Extensions that give Security Copilot access to information and capabilities from within your organization's Microsoft products."
+      isCorrect: true
+      explanation: "Plugins extend Security Copilot’s capabilities by giving it access to information and capabilities from within your organization's Microsoft products."
+    - content: "Open-source intelligence feeds that provide guidance specific to your organization."
+      isCorrect: false
+      explanation: "Open-source intelligence feeds are not the only source of plugins."
+    - content: "Third-party vendors that provide guidance specific to your organization."
+      isCorrect: false
+      explanation: "Third-party vendors are not the only source of plugins."
+  - content: "What is the embedded experience in Security Copilot?"
+    choices:
+    - content: "Security Copilot accessible directly from some Microsoft security products"
+      isCorrect: true
+      explanation: "With the embedded experience, Security Copilot is accessible directly from some Microsoft security products."
+    - content: "A mechanism to provide feedback on the accuracy of the AI generated response."
+      isCorrect: false
+      explanation: "This is a feature available in both the standalone and embedded experience."
+    - content: "A capability to analyze scripts and codes using external tools."
+      isCorrect: false
+      explanation: "The script analysis capability of Security Copilot in Microsoft Defender XDR provides security teams added capacity to inspect scripts and code without using external tools."
+  

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-describe-core-features.summary
+title: Summary and resources
+metadata:
+  title: Summary and resources
+  description: "Describe the core features of Microsoft Security Copilot."
+  ms.date: 11/18/2023
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: security
+  ms.service: security-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]
