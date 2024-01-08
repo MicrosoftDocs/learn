@@ -31445,6 +31445,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/5-classification-steps.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-machine-learning/5-binary-classification",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/6-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-machine-learning/5-binary-classification",
+      "redirect_document_id": false
     }
   ]
 }
