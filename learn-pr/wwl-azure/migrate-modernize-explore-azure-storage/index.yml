@@ -37,11 +37,11 @@ units:
 - learn.wwl.migrate-modernize-explore-azure-storage.introduction
 - learn.wwl.migrate-modernize-explore-azure-storage.explore-azure-storage-types
 - learn.wwl.migrate-modernize-explore-azure-storage.explore-azure-files
-- learn.wwl.migrate-modernize-explore-azure-storage.examine-azure-virtual-machine-disks
+- learn.wwl.migrate-modernize-explore-azure-storage.examine-azure-virtual-machines-disks
 - learn.wwl.migrate-modernize-explore-azure-storage.explore-managed-unmanaged-disks
-- learn.wwl.migrate-modernize-explore-azure-storage.examine-azure-virtual-machine-storage-considerations
+- learn.wwl.migrate-modernize-explore-azure-storage.examine-azure-virtual-machines-storage-considerations
 - learn.wwl.migrate-modernize-explore-azure-storage.explore-azure-virtual-machine-network-file-system-storage
-- learn.wwl.migrate-modernize-explore-azure-storage.examine-sap-hana-azure-virtual-machine-storage-configurations
+- learn.wwl.migrate-modernize-explore-azure-storage.examine-sap-hana-azure-virtual-machines-storage-configurations
 - learn.wwl.migrate-modernize-explore-azure-storage.explore-network-file-system-v-4-1-volumes-azure-netapp-files
 - learn.wwl.migrate-modernize-explore-azure-storage.knowledge-check
 - learn.wwl.migrate-modernize-explore-azure-storage.summary

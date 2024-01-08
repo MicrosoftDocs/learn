@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.migrate-modernize-explore-azure-storage.examine-sap-hana-azure-virtual-machine-storage-configurations
+uid: learn.wwl.migrate-modernize-explore-azure-storage.examine-sap-hana-azure-virtual-machines-storage-configurations
 title: Examine SAP HANA Azure virtual machine storage configurations
 metadata:
   title: Examine SAP HANA Azure virtual machine storage configurations
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/8-examine-sap-hana-azure-virtual-machine-storage-configurations.md)]
+  [!include[](includes/8-examine-sap-hana-azure-virtual-machines-storage-configurations.md)]
