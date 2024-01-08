@@ -7,7 +7,7 @@ Security Copilot is embedded in Microsoft Defender XDR for security teams to eff
 
 To immediately understand an incident, you can tap Security Copilot in Microsoft Defender XDR to summarize an incident for you. Security Copilot creates an overview of the attack containing essential information for you to understand what transpired in the attack, what assets are involved, and the timeline of the attack. Security Copilot automatically creates a summary when you navigate to an incident's page.
 
-:::image type="content" source="../media/xdr-incident-summary-v3.png" lightbox="../media/xdr-incident-summary-v3.png" alt-text="Screen capture of the Security Copilot embedded experience in Microsoft Defender XDR, showing an incident summary.":::
+:::image type="content" source="../media/xdr-incident-summary-v5.png" lightbox="../media/xdr-incident-summary-v3.png" alt-text="Screen capture of the Security Copilot embedded experience in Microsoft Defender XDR, showing an incident summary.":::
 
 Incidents containing up to 100 alerts can be summarized into one incident summary. An incident summary, depending on the availability of the data, includes the following:
 
@@ -35,7 +35,7 @@ Guided responses recommend actions in the following categories:
 
 Each card contains information about the recommended action, including why the action is recommended, similar incidents, and more. For example, the View similar incidents action becomes available when there are other incidents within the organization that are similar to the current incident.  Incident response teams can also view user information for remediation actions such as resetting passwords.  
 
-:::image type="content" source="../media/xdr-guided-responses.png" lightbox="../media/xdr-guided-responses.png" alt-text="Screen capture showing the information included in a guided response.":::
+:::image type="content" source="../media/xdr-guided-responses-v2.png" lightbox="../media/xdr-guided-responses.png" alt-text="Screen capture showing the information included in a guided response.":::
 
 As with the incident summary capability, users can move to the standalone experience by selecting the ellipses for the guided response card and selecting the option to Open in Security Copilot.
 

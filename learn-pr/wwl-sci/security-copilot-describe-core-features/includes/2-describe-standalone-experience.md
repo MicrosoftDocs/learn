@@ -22,7 +22,7 @@ From the home page, the user can navigate as follows:
 
     :::image type="content" source="../media/preferences-and-privacy.png" lightbox="../media/preferences-and-privacy.png" alt-text="Screen capture showing the options available on the settings page, which include tabs for preferences and data and privacy.":::
 
-- The tenant for which Security Copilot is provisioned. The tenant, which is provisioned for Security Copilot doesn't need to be the tenant your security analyst logs in from.  In the screenshot that follows, security analyst Angus MacGregor uses a Fabrikam account to login. Security Copilot is provisioned in the Contoso tenant.  By selecting the down arrow, Angus MacGregor is able to select the Contoso tenant.
+- The tenant for which Security Copilot is provisioned. The tenant, which is provisioned for Security Copilot doesn't need to be the tenant your security analyst logs in from.  In the screenshot that follows, security analyst Angus MacGregor uses a Fabrikam account to log in. Security Copilot is provisioned in the Contoso tenant.  By selecting the down arrow, Angus MacGregor is able to select the Contoso tenant.
 
     :::image type="content" source="../media/tenant-switcher-v3.png" lightbox="../media/tenant-switcher-v3.png" alt-text="Screen capture showing the tenant switching window, with multiple tenants listed.":::
 

@@ -8,8 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: TODO
-  ms.service: TODO
+  ms.prod: security
+  ms.service: security-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
