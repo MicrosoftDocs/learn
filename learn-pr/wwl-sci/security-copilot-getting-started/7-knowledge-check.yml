@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.security-copilot-getting-started.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Security Copilot knowledge check"
+  ms.date: 10/31/2023
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+  ms.prod: security
+  ms.service: security-copilot
+durationInMinutes: 2
+
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: What is Microsoft Security Copilot and what use cases does it support?
+    choices:
+    - content: Microsoft Security Copilot is a cloud-based security analysis tool that only supports security posture management.
+      isCorrect: false
+      explanation: Incorrect. Microsoft Security Copilot also supports incident response and security reporting.
+    - content: Microsoft Security Copilot is an AI-powered, cloud-based security analysis tool that enables analysts to respond to threats quickly, process signals at machine speed, and assess risk exposure more quickly than may otherwise be possible. It supports security posture management, incident response, and security reporting.
+      isCorrect: true
+      explanation: Correct. This is the definition of Microsoft Security Copilot and the use cases it supports according to the training material.
+    - content: Microsoft Security Copilot is a standalone experience that cannot be embedded within other Microsoft security products.
+      isCorrect: false
+      explanation: Incorrect. Microsoft Security Copilot can be embedded within other Microsoft security products, such as Microsoft 365 Defender.
+  - content: What are the top security challenges that organizations face, according to the content?
+    choices:
+    - content: A decrease in the number and sophistication of attacks.
+      isCorrect: false
+      explanation: Incorrect. Organizations face an increase in the number and sophistication of attacks.
+    - content: A surplus of talent that is driving the need for automation, integration, and consolidation of security tools.
+      isCorrect: false
+      explanation: Incorrect. There is a talent shortage that is driving the need for automation, integration, and consolidation of security tools.
+    - content: Visibility into security, privacy, compliance, and governance.
+      isCorrect: true
+      explanation: Correct. The content states that organizations face a need for visibility into security, privacy, compliance, and governance.
+  - content: What is the purpose of Security Copilot's natural language processing (NLP)?
+    choices:
+    - content: To replace existing security tools and processes.
+      isCorrect: false
+      explanation: Incorrect. The purpose of Security Copilot's NLP is to integrate with existing security tools and processes.
+    - content: To enable users to interact with it using natural language.
+      isCorrect: true
+      explanation: Correct. The purpose of Security Copilot's NLP is to enable users to interact with it using natural language.
+    - content: To make it harder for organizations to improve their overall security posture.
+      isCorrect: false
+      explanation: Incorrect. The purpose of Security Copilot's NLP is to make it easier for organizations to improve their overall security posture.
+  - content: What is the orchestrator in Microsoft Security Copilot?
+    choices:
+    - content: Security Copilot’s system for composing capabilities (skills) together to answer a user’s prompt.
+      isCorrect: true
+      explanation: Correct. The orchestrator is Security Copilot’s system for composing capabilities (skills) together to answer a user’s prompt.
+    - content: A collection of skills by a particular resource.
+      isCorrect: false
+      explanation: Incorrect. A plugin/skillset is a collection of skills by a particular resource.
+    - content: A tool used to generate customizable reports.
+      isCorrect: false
+      explanation: Incorrect. The orchestrator is not a tool used to generate customizable reports.
+  - content: What are the minimal licensing requirements to start using Microsoft Security Copilot?
+    choices:
+    - content: Microsoft Security Copilot licensing and Microsoft Intune licensing.
+      isCorrect: false
+      explanation: Incorrect. The minimal licensing requirements include Microsoft Security Copilot licensing and Microsoft Entra Premium 1.
+    - content: Microsoft Security Copilot licensing and Microsoft Sentinel licensing.
+      isCorrect: false
+      explanation: Incorrect. The minimal licensing requirements include Microsoft Security Copilot licensing and Microsoft Entra Premium 1.
+    - content: Microsoft Security Copilot licensing and Microsoft Entra Premium 1.
+      isCorrect: true
+      explanation: Correct. The minimal licensing requirements include Microsoft Security Copilot licensing and Microsoft Entra Premium 1.
