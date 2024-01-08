@@ -2,7 +2,7 @@ SAP systems moved onto the Azure cloud now commonly include large multinational 
 
 Very Large Databases (VLDB) are now commonly moved to Azure. Database sizes over 20 TB require extra techniques and procedures to achieve a migration from on-premises to Azure within an acceptable downtime and with low risk.
 
-## High-level overview
+High-level overview:
 
 A fully optimized very large database migration should achieve around 2 TB per hour migration throughput per hour or possibly more. This means the data transfer component of a 20-TB migration can be done in approximately 10 hours. Various postprocess and validation steps would need to be done. In general, with adequate time for preparation and testing almost any customer system of any size can be moved to Azure.
 

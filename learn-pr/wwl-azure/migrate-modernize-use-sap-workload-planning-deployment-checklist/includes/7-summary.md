@@ -5,7 +5,7 @@ In this module you:
 - Explored the production preparation phase.
 - Explored very large database migration.
 
-## Learn more
+Learn more:
 
 - [Considerations for Azure Virtual Machines DBMS deployment for SAP workload](/azure/virtual-machines/workloads/sap/dbms_guide_general)
 - [Set up disaster recovery for a multi-tier SAP NetWeaver app deployment](/azure/site-recovery/site-recovery-sap)
