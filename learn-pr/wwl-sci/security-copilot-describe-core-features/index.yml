@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
-  ms.prod: security
   ms.service: security-copilot
 title: Describe the core features of Microsoft Security Copilot
 summary: |
@@ -40,10 +39,10 @@ subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribu
   - security
 units:
 - learn.security-copilot-describe-core-features.introduction
-- learn.security-copilot-describe-core-feature.describe-standalone-experience
-- learn.security-copilot-describe-core-feature.describe-microsoft-plugins
-- learn.security-copilot-describe-core-feature.describe-non-microsoft-plugins
-- learn.security-copilot-describe-core-feature.describe-embedded-experience
+- learn.security-copilot-describe-core-features.describe-standalone-experience
+- learn.security-copilot-describe-core-features.describe-microsoft-plugins
+- learn.security-copilot-describe-core-features.describe-non-microsoft-plugins
+- learn.security-copilot-describe-core-features.describe-embedded-experience
 - learn.security-copilot-describe-core-features.knowledge-check
 - learn.security-copilot-describe-core-features.summary
 badge:
