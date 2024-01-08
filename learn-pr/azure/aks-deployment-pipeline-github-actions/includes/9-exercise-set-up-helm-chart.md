@@ -97,13 +97,15 @@ Add templates for this deployment.
 
    By default, the workflow deploys this resource to the `staging` namespace, but if the `helm install` command has a `Namespace` option, the workflow uses that namespace instead.
 
-1. Under the `template`/`spec`/`containers` section, update `!IMAGE!` to fetch the `latest` and `tag` versions from your AKS cluster. It's good practice to split up the `registry`, `image`, and `tag` parts of the image name to work with them more easily. Add three new template variables using the values of `{{ .Values.image.registry }}.azurecr.io/{{ .Values.image.name }}:{{ default "latest" .Values.image.tag }}`.
+1. Under the `template`/`spec`/`containers` section, update `!IMAGE!` to fetch the `latest` and `tag` versions from your AKS cluster.
+
+    It's good practice to split up the `registry`, `image`, and `tag` parts of the image name to work with them more easily. Add three new template variables that use the values of `Values.image.registry`, `Values.image.name`, and `Values.image.tag`.
 
     ```yaml
     - image: {{ .Values.image.registry }}.azurecr.io/{{ .Values.image.name }}:{{ default "latest" .Values.image.tag }}
     ```
     
-    Your *deployment.yaml* file should look similar to the following example:
+    Your *deployment.yaml* file should look like the following example:
 
     ```yaml
     apiVersion: apps/v1
@@ -137,21 +139,21 @@ Add templates for this deployment.
 
 1. Save the file.
 
-### Add contents to the values.yaml file
+### Add content to the values.yaml file
 
-Earlier, you used `{{ .Release.Namespace }}`, so `Release` is a *variable scope*. Each variable scope has different default values and variables. Helm uses the *values.yaml* file to retrieve all the template values that start with `{{ .Values }}`. The *values.yaml* file is another variable scope.
+Earlier, you used `{{ .Release.Namespace }}`, so `Release` is a *variable scope*. Each variable scope has different default values and variables. The *values.yaml* file is another variable scope. Helm uses the *values.yaml* file to retrieve all the template values that start with `{{ .Values }}`.
 
-This file should have the same structure as the file you use to call variables. Take a quick look at your edited *deployment.yaml* file to see the structure. Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Values.image.tag` in the *deployment.yaml* file.
+This file should have the same structure as the file you use to call the variables. Take a quick look at your edited *deployment.yaml* file to see the structure. Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Values.image.tag` in the *deployment.yaml* file.
 
 1. In the root of the *contoso-website* directory, open the *values.yaml* file.
 
 1. Delete all contents in the file, so you have an empty YAML file.
 
-1. Add the following content to the empty file, replacing the `<your-acr-name>` placeholder with your Container Registry name.
+1. Add the following content to the empty file, replacing the `<ACR-NAME>` placeholder with your Azure Container Registry name.
 
     ```yaml
     image:
-      registry: <your-acr-name>
+      registry: <ACR-NAME>
       name: contoso-website
       tag: latest
     ```
@@ -163,7 +165,7 @@ This file should have the same structure as the file you use to call variables. 
 
 ### Create a service
 
-1. Find and open the *service.yaml* file in the *templates* folder.
+1. Open the *service.yaml* file in the *templates* folder.
 
 1. In the `metadata` section of the file, add a new key called `namespace` that uses the same value that you used in the *deployment.yaml* file.
 
@@ -171,7 +173,7 @@ This file should have the same structure as the file you use to call variables. 
         namespace: {{ default "staging" .Release.Namespace }}
    ```
 
-    Your *service.yaml* file should look similar to the following example:
+    Your *service.yaml* file should look like the following example:
 
     ```yaml
     apiVersion: v1
@@ -194,7 +196,7 @@ This file should have the same structure as the file you use to call variables. 
 
 ### Create an ingress
 
-1. Find and open the *ingress.yaml* file.
+1. Open the *ingress.yaml* file.
 
 1. In the `metadata` section of the file, again add the `namespace` value that you used in the *deployment.yaml* file. 
 
@@ -204,7 +206,7 @@ This file should have the same structure as the file you use to call variables. 
            - host: contoso-{{ default "staging" .Release.Namespace }}.!DNS!
     ```
 
-1. Add a new template variable for your DNS zone name
+1. Replace `!DNS!` with a new template variable for your DNS zone name.
 
     ```yaml
            - host: contoso-{{ default "staging" .Release.Namespace }}.{{ .Values.dns.name }}
@@ -236,23 +238,23 @@ This file should have the same structure as the file you use to call variables. 
 
 1. Save the file.
 
-### Create a DNS zone name
+### Add a DNS zone name value
 
-1. Open the *values.yaml* file and add a `dns.name` key after the `image` key, replacing `<your-dns-zone-name>` with your DNS zone name, so the file looks similar to the following example:
+1. Open the *values.yaml* file and add a `dns.name` key after the `image` key. Replace `<ACR-NAME>` with your Container Registry name and `<DNS-NAME>` with your AKS DNS Zone Name from the setup script output. Your file should look like the following example:
 
     ```yaml
     image:
-      registry: contosocontainerregistry00000
+      registry: <ACR-NAME>
       name: contoso-website
       tag: latest
     
     dns:
-      name: <your-dns-zone-name>
+      name: <DNS-NAME>
     ```
 
 1. Save the file.
 
-If you don't have your DNS zone name from your original setup script output, run the following Azure CLI query to get it, replacing the `<resource-group-name>` placeholder with your resource group name.
+If you don't have your DNS zone name from the original setup script output, run the following Azure CLI query in a different Cloud Shell window to get it, replacing the `<resource-group-name>` placeholder with your resource group name.
 
 ```azurecli-interactive
 az aks show -g <resource-group-name> -n contoso-website -o tsv --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
@@ -260,7 +262,9 @@ az aks show -g <resource-group-name> -n contoso-website -o tsv --query addonProf
 
 ## Push your changes
 
-To push all the changes to your fork, run the following commands in order:
+Close the Cloud Shell Editor by selecting the upper right corner of the editor toolbar and then selecting **Close Editor**.
+
+To push all the changes to your fork, run the following commands in Cloud Shell in order:
 
 ```bash
 git add .

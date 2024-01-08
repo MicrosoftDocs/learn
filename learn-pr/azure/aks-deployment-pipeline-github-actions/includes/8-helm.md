@@ -4,9 +4,9 @@ Currently, you must manually change files every time you run the pipeline, so yo
 
 ## Helm charts
 
-Helm is an open-source packaging tool, similar to Linux package managers like APT and Yum. Helm can help you install and manage the lifecycle of Kubernetes applications.
+Helm is an open-source packaging tool similar to Linux package managers like APT and Yum. Helm can help you install and manage the lifecycle of Kubernetes applications.
 
-You can use Helm to manage Kubernetes charts, which are groups of one or more workloads packaged with configuration files and a chart description file. When packaged in a chart, the files can easily be deployed as a unit to a Kubernetes cluster.
+You use Helm to manage Kubernetes charts, which are groups of one or more workloads packaged with configuration files and a chart description file. When packaged in a chart, the files can easily be deployed as a unit to a Kubernetes cluster.
 
 One of the advantages of using Helm is to not have to deploy files individually. You can issue a single command to deploy the chart. You can even deploy multiple dependent charts, with an automatic dependency resolution.
 
@@ -19,11 +19,11 @@ Here's the structure of a typical Helm chart directory:
 - The *templates* directory contains all manifest files.
 - The *values.yaml* file contains the default values for the Helm templates.
 
-A feature that distinguishes Helm as a tool is the ability to create and manage templates to perform automated deployments.
-
 ## Helm templates
 
-Templates make it possible for manifest files to be automated and added to a CI/CD pipeline. A template file is a manifest file that contains placeholders for variable values. Look at the following example of the *deployment.yaml* file inside the *kubernetes* directory of your website fork:
+A distinguishing feature of the Helm tool is its ability to create and manage templates to perform automated deployments. Templates make it possible for manifest files to be automated and added to a CI/CD pipeline. A template file is a manifest file that contains placeholders for variable values.
+
+Look at the following example of the *deployment.yaml* file in the *kubernetes* directory of your website fork:
 
 ```yaml
 apiVersion: apps/v1
@@ -54,7 +54,7 @@ spec:
               name: http
 ```
 
-In your workflow, you replace the `!IMAGE!` placeholder with your Container Registry instance and image name. In a manual workflow, you can run the following command to replace the `!IMAGE!` placeholder and then print the result. To run the code manually, you can pipe the command to `kubectl apply -f -` and create the workloads.
+Your workflow replaces the `!IMAGE!` placeholder with your Container Registry instance and image name. In a manual workflow, you can run the following command to replace the `!IMAGE!` placeholder and then print the result. To run the code manually, you can pipe the command to `kubectl apply -f -` and create the workloads:
 
 ```bash
 $ sed 's+!IMAGE!+'"$ACR_NAME"'/contoso-website+g' kubernetes/deployment.yaml

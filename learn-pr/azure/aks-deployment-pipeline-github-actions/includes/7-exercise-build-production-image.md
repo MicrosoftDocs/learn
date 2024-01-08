@@ -1,4 +1,4 @@
-In the previous exercise, you built the staging workflow for building and publishing the application image. In this unit, you build a different, production workflow that uses the tagged version trigger.
+In the previous exercise, you built the staging workflow for building and publishing the application image. In this unit, you build a production workflow that uses the tagged version trigger.
 
 :::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that shows the procession from triggers, through three build steps, to the deploy steps in a pipeline.":::
 
@@ -129,11 +129,9 @@ Same as for the staging workflow, add the `Docker Login` and `Build and push Doc
 
 1. Add the following values to the `registry`, `username`, and `password` keys:
 
-    |Key name     |Value                                         |
-    |-------------|----------------------------------------------|
-    |`registry`     |`${{ secrets.ACR_NAME }}`                     |
-    |`username`     |`${{ secrets.ACR_LOGIN }}`                    |
-    |`password`     |`${{ secrets.ACR_PASSWORD }}`                 |
+   - `registry`: `${{ secrets.ACR_NAME }}`
+   - `username`: `${{ secrets.ACR_LOGIN }}`
+   - `password`: `${{ secrets.ACR_PASSWORD }}`
 
 1. Delete the other keys, because they aren't used in this exercise.
 
@@ -147,11 +145,9 @@ Same as for the staging workflow, add the `Docker Login` and `Build and push Doc
 
 1. Add the following values to the `context`, `push`, and `tags` keys:
 
-    |Key name     |Value                                         |
-    |-------------|----------------------------------------------|
-    |`context`      |`.`                                           |
-    |`push`         |`true`                                        |
-    |`tags`         |`${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${{ steps.fetch_version.outputs.TAG }}`|
+   - `context`: `.`
+   - `push`: `true`
+   - `tags`: `${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${{ steps.fetch_version.outputs.TAG }}`
 
     Notice how the value of the `tags` key differs from the staging workflow. Using `steps.` in the YAML is a common practice to refer to previous steps in the pipeline. When you used `set-output` in the `fetch_version` step, you set the output of the step to the value of the `GITHUB_REF` variable. This output is now available in the pipeline inside the `steps` object.
 
@@ -257,7 +253,7 @@ You need a PAT to push your tags in the next step and to run the deploy script i
 
 1. Select the **Actions** tab and check the running process.
 
-1. When the process completes, run the following command in Azure Cloud Shell, replacing `<ACR_NAME>` with your `ACR_NAME` from the setup script, to confirm that two tags are listed in the results.
+1. When the process completes, run the following command in Cloud Shell, replacing `<ACR_NAME>` with your `ACR_NAME` from the setup script, to confirm that two tags are listed in the results.
 
     ```azurecli
     az acr repository show-tags --repository contoso-website --name <ACR_NAME> -o table

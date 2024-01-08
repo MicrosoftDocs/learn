@@ -77,7 +77,7 @@ Use OIDC to authenticate GitHub Actions to access AKS.
 
 1. Change the step name from `Azure Login` to `Sign in to Azure with OIDC`.
 
-1. `Azure Login` requires three parameters to authenticate: `client-id`, `tenant-id`, and `subscription-id`. Fill these parameters with placeholders to set later.
+1. `Azure Login` requires three parameters to authenticate: `client-id`, `tenant-id`, and `subscription-id`. Fill these parameters with placeholders for secrets you set later.
 
     ```yaml
           - name: Sign in to Azure with OIDC
@@ -92,7 +92,7 @@ Use OIDC to authenticate GitHub Actions to access AKS.
 
     :::image type="content" source="../media/10-azure-kubernetes-set-context.png" alt-text="Screenshot that shows the results for a Set Context search.":::
 
-1. Select the copy icon to copy the usage YAML, and paste it below the `Sign in to Azure with OIDC` step in *build-staging.yml*.
+1. Select the copy icon to copy the usage YAML, and paste it below the `Sign in to Azure with OIDC` step in *build-staging.yml*. Fill the `resource-group` and `cluster-name` parameters with placeholders for the secrets you set in an earlier unit.
 
     ```yaml
           - name: Azure Kubernetes set context
@@ -102,7 +102,7 @@ Use OIDC to authenticate GitHub Actions to access AKS.
               cluster-name: ${{ secrets.CLUSTER_NAME }}
     ```
 
-Your *build-staging.yml* file should look like the following example:
+    Your *build-staging.yml* file should look like the following example:
 
     ```yaml
     name: Build and push the latest build to staging
@@ -174,7 +174,7 @@ Assign values to your secrets by creating a service principal and certificates t
 
 1. Create a service principal by running the following command, substituting the `id` value from the previous command for `$SUBSCRIPTION_ID`:
 
-    ```azurecli-interactive
+    ```azurecli
     az ad sp create-for-rbac --scopes /subscriptions/$SUBSCRIPTION_ID --role Contributor 
     ```
 
@@ -182,13 +182,11 @@ Assign values to your secrets by creating a service principal and certificates t
 
 ### Set the secrets
 
-On your GitHub repository page, select the **Settings** tab, and then select **Secrets and variables** > **Actions** from the left menu. Define three new secrets that use the output from the preceding steps.
+On your GitHub repository page, select the **Settings** tab, and then select **Secrets and variables** > **Actions** from the left menu. Define the following three new secrets that use the output from the preceding steps.
 
-|Name|Value|
-|----|-----|
-|`AZURE_CLIENT_ID`|`"appId"` value from `az ad sp create-for-rbac` output|
-|`AZURE_TENANT_ID`|`"tenant"` value from `az ad sp create-for-rbac` output|
-|`AZURE_SUBSCRIPTION_ID`|`id` value from `az account show` output|
+- `AZURE_CLIENT_ID`: The `"appId"` value from `az ad sp create-for-rbac` output
+- `AZURE_TENANT_ID`: The `"tenant"` value from `az ad sp create-for-rbac` output
+- `AZURE_SUBSCRIPTION_ID`: The `id` value from `az account show` output
 
 For each secret:
 
@@ -201,17 +199,19 @@ For each secret:
 
 Create federated certificates to authorize GitHub Actions to access the application.
 
-1. In the Azure portal, go to [App registrations](https://ms.portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
+1. In the Azure portal, go to [App registrations](https://ms.portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade?azure-portal=true).
 
-1. Search for and select the application that matches the `displayName` value returned in the `az ad sp create-for-rbac` step. By default, the application name uses the timestamp of the service principal creation. Verify the values of the **appID (Client ID)**, **Object ID (Application Object ID)**, and **Directory ID (Tenant ID)**.
+1. Search for and select the application that matches the `displayName` value returned in the previous `az ad sp create-for-rbac` step. By default, the application name uses the timestamp of the service principal creation.
+
+   Verify the values of the **appID (Client ID)**, **Object ID (Application Object ID)**, and **Directory ID (Tenant ID)**.
 
 1. In the left navigation, select **Certificates & secrets**.
 
-1. Select the **Federated credentials** tab.
+1. On the **Certificates & secrets** screen, select the **Federated credentials** tab.
 
 1. Select **Add credential**.
 
-1. On the **Add a credential** screen, select or enter the following information:
+1. To add the staging credential, on the **Add a credential** screen, select or enter the following information:
    - **Federated credential scenario**: Select **GitHub Actions deploying Azure resources**.
    - **Organization**: Enter your GitHub user name.
    - **Repository**: Enter *mslearn-aks-deployment-pipeline-github-actions*.
@@ -222,9 +222,11 @@ Create federated certificates to authorize GitHub Actions to access the applicat
 
 1. Select **Add**.
 
-1. Select **Add credential** again, and on the **Add a credential** screen, enter all the same values as for the previous credential except:
+:::image type="content" source="../media/add-credential.png" alt-text="Screenshot of the Add credential screen for the GitHub Actions staging credential.":::
+
+1. To add the production credential, select **Add credential** again, and on the **Add a credential** screen, enter all the same values as for the previous credential except:
    - **Entity type**: Select **Tag**.
-   - **GitHub tag name**: Enter *v2.0.0* because in the next step, you deploy version 2.
+   - **GitHub tag name**: Enter *v2.0.0*, because in the next step you deploy version 2.
    - **Name**: Enter *prod-cred*.
 
 1. Select **Add**.
@@ -364,11 +366,14 @@ Now that you configured Helm and granted access to your cluster, you're ready to
 1. In a new browser tab, go to your fork of the repository, select the **Settings** tab, and then select **Secrets and variables** > **Actions** from the left menu.
 1. Select **New repository secret**.
 1. For **Name**, enter `DNS_NAME`.
-1. For **Secret**, enter the `AKS DNS Zone Name` value from the original setup script output. If you don't have this value, you can get it by running the following command in Cloud Shell:
+1. For **Secret**, enter the `AKS DNS Zone Name` value from the original setup script output.
+
+    If you don't have this value, run the following command in Cloud Shell, substituting your values for `<resource-group-name>` and `<aks-cluster-name>`:
 
     ```azurecli-interactive
-    az aks show -g {resource-group-name} -n {aks-cluster-name} -o tsv --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
+    az aks show -g <resource-group-name> -n <aks-cluster-name> -o tsv --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
     ```
+
 1. Select **Add secret**.
 
 ### Commit the changes and test the staging deployment
@@ -377,7 +382,7 @@ Now that you configured Helm and granted access to your cluster, you're ready to
 
 1. Select the **Actions** tab to see the build running.
 
-1. In your browser, go to `contoso-staging.<aks-dns-zone-name>` to confirm that the website appears.
+1. After the build succeeds, in your browser go to `contoso-staging.<aks-dns-zone-name>` to confirm that the website appears.
 
 ## Run the deployment on production
 
@@ -496,11 +501,13 @@ Every time you run the production workflow, you need to update the federated cer
 1. In Cloud Shell, run `git pull` to fetch the latest changes. Then, run the following command to tag and push the changes, substituting your new version tag for the placeholder:
 
     ```bash
-    git tag -a v.<new version tag> -m 'Create new production deployment' && git push --tags
+    git tag -a v<new version tag> -m 'Create new production deployment' && git push --tags
     ```
 
 1. When prompted, provide the PAT from previous exercises as the password.
 
 1. In GitHub, open the **Actions** tab and see the running process.
 
-1. To test the production deployment, go to `contoso-production.<aks-dns-zone-name>` in your browser and confirm that the website appears.
+1. After the workflow succeeds, to test the production deployment, go to `contoso-production.<aks-dns-zone-name>` in your browser and confirm that the website appears.
+
+Continue to the next unit to delete your resources so they don't continue to incur charges.

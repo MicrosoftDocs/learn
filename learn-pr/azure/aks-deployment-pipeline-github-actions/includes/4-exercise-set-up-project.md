@@ -1,4 +1,4 @@
-In this unit, you create your resources for the Contoso Video website. Make sure you have all the prerequisites listed in the Introduction to this module.
+In this unit, you create your resources for the Contoso Video website. Make sure you have all the prerequisites listed in the introduction to this module.
 
 ## Set up the project
 
@@ -45,13 +45,13 @@ Confirm that the *init.sh* script created all the resources.
 
 1. Run the following Azure CLI command to check whether the resource group shown in the script output is listed.
 
-    ```bash
+    ```azurecli
     az group list -o table
     ```
 
 1. Run the following command to check whether the Container Registry instance shown in the script output is listed.
 
-    ```bash
+    ```azurecli
     az acr list -o table
     ```
 

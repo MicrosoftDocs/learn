@@ -3,7 +3,7 @@ uid: learn.aks-deployment-pipeline-github-actions
 metadata:
   title: Azure Kubernetes Service deployment pipeline with GitHub Actions
   description: Learn how to use GitHub Actions to create an automated Azure Kubernetes Service (AKS) deployment pipeline.
-  ms.date: 01/05/2023
+  ms.date: 01/08/2023
   author: nickomang
   ms.author: nickoman
   ms.topic: module

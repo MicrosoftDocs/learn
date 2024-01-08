@@ -78,8 +78,8 @@ To start building your pipeline, go to your fork of the sample repository in the
 
 The basic workflow template comes with two triggers:
 
-- Any push to the main branch
-- Any pull request on the main branch
+- Any push to the main branch.
+- Any pull request on the main branch.
 
 You don't need the pipeline to run on a pull request, so modify it to keep only the push trigger by changing the triggers in the `on` key. Remove the second trigger and leave only the `push` tags.
 
@@ -142,11 +142,9 @@ Next, add actions to build your Docker image. You can adjust usage for these act
 
 1. Add the following values to the `registry`, `username`, and `password` keys:
 
-    |Key name     |Value |
-    |-------------|----------------------------|
-    |`registry`     |`${{ secrets.ACR_NAME }}` |
-    |`username`     |`${{ secrets.ACR_LOGIN }}` |
-    |`password`     |`${{ secrets.ACR_PASSWORD }}` |
+   - `registry`: `${{ secrets.ACR_NAME }}`
+   - `username`: `${{ secrets.ACR_LOGIN }}`
+   - `password`: `${{ secrets.ACR_PASSWORD }}`
 
 1. Delete the other keys, because they aren't used in this exercise.
 
@@ -162,11 +160,9 @@ Next, add actions to build your Docker image. You can adjust usage for these act
 
 1. Add the following values to the `context`, `push`, and `tags` keys:
 
-    |Key name     |Value                                         |
-    |-------------|----------------------------------------------|
-    |`context`      |`.`                                           |
-    |`push`         |`true`                                        |
-    |`tags`         |`${{secrets.ACR_NAME}}/contoso-website:latest`|
+   - `context`: `.`
+   - `push`: `true`
+   - `tags`: `${{secrets.ACR_NAME}}/contoso-website:latest`
 
 1. Delete the other keys, because they aren't used in this exercise.
 
@@ -213,7 +209,7 @@ Next, add actions to build your Docker image. You can adjust usage for these act
 
 ### Commit the changes
 
-To commit your changes, select the **Commit changes** button at upper right. Enter a description for the commit, and then select **Commit changes**.
+To commit your changes, select the **Commit changes** button at upper right. On the **Commit changes** screen, enter a description for the commit, and then select **Commit changes**.
 
 :::image type="content" source="../media/6-5-commit-staging.png" alt-text="Screenshot that shows the Commit changes button in the Commit changes pane.":::
 
@@ -221,26 +217,24 @@ Selecting **Commit changes** triggers a new build, but this build fails because 
 
 ## Set the secrets
 
-Define the following secrets that your workflow uses.
+To set the secrets, on your GitHub repository page, select the **Settings** tab, and then select **Secrets and variables** > **Actions** from the left menu. Define the following secrets that your workflow uses:
 
-|Name|Value|
-|----|-----|
-|`ACR_NAME`| The `ACR_Name` value returned by the setup script|
-|`ACR_LOGIN`| The `ACR Login Username` value returned by the setup script |
-|`ACR_PASSWORD`| The `ACR Login Password` value returned by the setup script |
-|`RESOURCE_GROUP`| The `Resource Group Name` value returned by the setup script |
-|`CLUSTER_NAME`| *contoso-video* |
+- `ACR_NAME`: The `ACR_Name` value returned by the setup script
+- `ACR_LOGIN`: The `ACR Login Username` value returned by the setup script
+- `ACR_PASSWORD`: The `ACR Login Password` value returned by the setup script
+- `RESOURCE_GROUP`: The `Resource Group Name` value returned by the setup script
+- `CLUSTER_NAME`: *contoso-video*
 
-To set the secrets, on your GitHub repository page, select the **Settings** tab, and then select **Secrets and variables** > **Actions** from the left menu. To define each secret:
+To define each secret:
 
 1. Select **New repository secret**.
-1. For **Name**, enter the secret name.
+1. For **Name**, enter the secret name from the following list.
 1. For **Secret**, enter the value you saved from the setup script, or run a Cloud Shell query to get the value.
 1. Select **Add secret**.
 
-### Run queries to get the secrets values
+### Run optional queries to get the secrets values
 
-If you don't have the values the setup script returned, run the following commands in Cloud Shell to get the information:
+If you don't have the values the setup script returned, you can run the following commands in Azure Cloud Shell to get the information:
 
 - `ACR_NAME`:
 
