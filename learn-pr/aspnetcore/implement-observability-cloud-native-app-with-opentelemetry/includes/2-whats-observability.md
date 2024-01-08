@@ -41,7 +41,7 @@ To add observability to your cloud-native application, you take these steps:
 - Enable metrics and define custom metrics to capture.
 - Enable distributed tracing with OpenTelemetry and Zipkin.
 - Instrument your app, again with OpenTelemetry and by adding telemetry to your code.
-- Analyze the telemetry data with Prometheus, Grafana, or in Azure Application Insights.
+- Analyze the telemetry data with Prometheus, Grafana, or Application Insights.
 
 ### Introduction to OpenTelemetry
 

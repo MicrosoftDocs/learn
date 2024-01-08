@@ -2,14 +2,14 @@ Because of the distributed nature of cloud-native applications, they should be c
 
 Imagine you work for an online outdoor clothing retailer that has a microservice-based web app it uses for stock management. While testing the cloud-native app, you're asked to ensure that its behavior can be monitored. You want to see how .NET supports observability.
 
-In this module, you learn how to build observability into your cloud-native application by including OpenTelemetry packages and analyzing the data in Azure Application Insights or third-party tools.
+In this module, you learn how to build observability into your cloud-native application by including OpenTelemetry packages and analyzing the data in Application Insights or third-party tools.
 
 ## Learning objectives
 
 - Describe the three pillars of observability and how they help monitor applications.
 - Create an observability cloud-native application by using OpenTelemetry.
 - Ensure that a cloud-native application is generating observable data.
-- Use Azure Application Insights and third-party tools to monitor a cloud-native application.
+- Use Application Insights and third-party tools to monitor a cloud-native application.
 
 ## Prerequisites
 
