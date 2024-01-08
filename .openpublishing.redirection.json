@@ -31480,6 +31480,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-regression-model-azure-machine-learning-designer/3-what-is-azure-machine-learning.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-machine-learning/4-regression",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-regression-model-azure-machine-learning-designer/5-regression-steps.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-machine-learning/4-regression",
+      "redirect_document_id": false
     }
   ]
 }
