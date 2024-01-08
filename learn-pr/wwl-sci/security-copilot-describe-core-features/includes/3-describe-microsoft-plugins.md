@@ -142,7 +142,7 @@ To view these promptbooks, in the prompt bar, enter * and scroll down.
 Some sample prompts include:
 
 - Show me the latest threat articles.
-- Get threat articles associated with the finance industry..
+- Get threat articles associated with the finance industry.
 - Share the technologies that are susceptible to the vulnerability - CVE-2021-44228.
 - Summarize the vulnerability CVE-2021-44228.
 
