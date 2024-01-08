@@ -40,7 +40,6 @@ units:
 - learn.wwl.configure-web-app-settings.enable-diagnostic-logging
 - learn.wwl.configure-web-app-settings.configure-security-certificates
 - learn.wwl.configure-web-app-settings.knowledge-check
-- learn.wwl.configure-web-app-settings.knowledge-check
 - learn.wwl.configure-web-app-settings.summary
 badge:
   uid: learn.wwl.configure-web-app-settings.badge
