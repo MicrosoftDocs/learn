@@ -30,7 +30,7 @@ To do so, you:
 
 1. Open Visual Studio Code and select **File > New Text File** to create a new file.
 1. Save the file as `RandomNumberGenerator.qs`. This file will contain the Q# code for your program.
-1. Copy the following code in the `RandomNumberGenerator.qs` file.
+1. Copy the following code into the `RandomNumberGenerator.qs` file.
 
     ```qsharp
     namespace QuantumRandomNumberGenerator {
