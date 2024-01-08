@@ -5,7 +5,7 @@ Microsoft Security Copilot integrates with various sources, including Microsoft'
 
 Microsoft or 1st party plugins give Security Copilot access to information and capabilities from within your organization's Microsoft products.
 
-:::image type="content" source="../media/manage-plugins-microsoft.png" lightbox="../media/manage-plugins-microsoft.png" alt-text="Screen capture of of the manage plugins window that shows the Microsoft services.":::
+:::image type="content" source="../media/manage-plugins-microsoft.png" lightbox="../media/manage-plugins-microsoft.png" alt-text="Screen capture of the manage plugins window that shows the Microsoft services.":::
 
 For first party plugins, Security Copilot leverages the OBO (on behalf of) model – meaning that Security Copilot knows that a customer has licenses to specific products and is automatically signed into those products.  Security Copilot can then access the specific products when the plugin is enabled and, where applicable, parameters are configured.
 
@@ -108,7 +108,7 @@ The prompts for many of these capabilities are made readily available in the Mic
 
 :::image type="content" source="../media/defender-xdr-promptbook.png" lightbox="../media/defender-xdr-promptbook.png" alt-text="Screen capture of the Defender XDR promptbook that can be run in the standalone experience.":::
 
-:::image type="content" source="../media/defender-xdr-promptbook-prompts.png" lightbox="../media/defender-xdr-promptbook-prompts.png" alt-text="Screen capture of the Defender XDR promptbook promtps that can be run in the standalone experience.":::
+:::image type="content" source="../media/defender-xdr-promptbook-prompts.png" lightbox="../media/defender-xdr-promptbook-prompts.png" alt-text="Screen capture of the Defender XDR promptbook prompts that can be run in the standalone experience.":::
 
 ***NL2KQLDefender plugin***
 
@@ -167,7 +167,7 @@ The Sentinel plugin also requires the user to configure the Sentinel workspace, 
 
 :::image type="content" source="../media/sentinel-plugin-settings-v2.png" lightbox="../media/sentinel-plugin-settings-v2.png" alt-text="Screen capture of the Sentinel plugin settings page.":::
 
-The Sentinel plugin capabilities are focused on incidents and workspaces. Additionally, Security Copilot includes a promptbook for Microsoft Sentinal incident investigation.  This promptbook includes prompts for getting a report about a specific incident, along with related alerts, reputation scores, users, and devices.
+The Sentinel plugin capabilities are focused on incidents and workspaces. Additionally, Security Copilot includes a promptbook for Microsoft Sentinel incident investigation.  This promptbook includes prompts for getting a report about a specific incident, along with related alerts, reputation scores, users, and devices.
 
 :::image type="content" source="../media/sentinel-promptbook.png" lightbox="../media/sentinel-promptbook.png" alt-text="Screen capture of the Sentinel promptbook that can be run in the standalone experience.":::
 
