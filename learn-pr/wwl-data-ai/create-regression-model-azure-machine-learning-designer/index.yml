@@ -25,6 +25,5 @@ products:
 subjects:
 - machine-learning
 units:
-- learn.wwl.create-regression-model-azure-machine-learning-designer.what-is-azure-designer
 badge:
   uid: learn.wwl.create-regression-model-azure-machine-learning-designer.badge
