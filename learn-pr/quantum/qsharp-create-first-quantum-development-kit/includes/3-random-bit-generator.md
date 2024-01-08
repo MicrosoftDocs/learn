@@ -60,7 +60,7 @@ To do so, you:
     ```
 
 > [!TIP]
-> The Modern QDK includes a set of Q# samples that you can use to learn more about Q# and quantum computing. To view the samples, open a new Q# file and type `sample`, then select the sample you want to view from the list of options.
+> The Modern QDK includes a set of built-in Q# samples that you can use to learn more about Q# and quantum computing. To view the samples, open a new Q# file and type `sample`, then select the sample you want to view from the list of options. You can find the Q# code in this unit under "Random Bit sample".
 
 ## Explore the Q# code
 
