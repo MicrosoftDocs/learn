@@ -4,7 +4,7 @@ SAP and Microsoft have a long history of working together in a strong partnershi
 
 You understand and communicate risks, and suggest solutions using Azure to automate workloads. You connect SAP HANA to Power Platform and other Microsoft components to respond quickly and cost effectively to urgent business analysis needs.
 
-**Learning objectives**:
+## Learning objectives:
 
 - Discover the SAP and Microsoft partnership.
 - Explore your options with SAP on Azure.

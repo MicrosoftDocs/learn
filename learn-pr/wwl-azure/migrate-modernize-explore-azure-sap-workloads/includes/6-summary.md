@@ -1,6 +1,6 @@
 You discovered the SAP and Microsoft partnership, explored your options with SAP on Azure, and discovered common terms and meanings.
 
-**Learn more**:
+## Learn more
 
 - [Azure Marketplace search](https://azuremarketplace.microsoft.com/marketplace/apps/?search=sap)
 - [AZ-120 Certification Areas](https://www.microsoft.com/learning/exam-AZ-120.aspx)
