@@ -11,20 +11,27 @@ The commands create the following resources to deploy an updated version of the 
 > Make sure you've completed the **prerequisites** before you begin.
 
 ## Open the development environment
-
 You can choose to use a GitHub codespace that hosts the exercise, or complete the exercise locally in Visual Studio Code.
 
-To use a **codespace** create a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative-devops).
+## GitHub Codespaces Setup
+Fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops/fork) repository to your own GitHub account. Then on your new fork:
 
-GitHub takes several minutes to create and configure the codespace. When it's finished, you see the code files for the exercise.
+1. Select **Code**
+2. Select the **Codespaces** tab
+3. Select the **+** icon to create your codespace.
 
-To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops) repository to your own GitHub account. Then:
+GitHub takes several minutes to create and configure the codespace. When it's finished, you see the code files for the exercise. 
+
+## Optional: Visual Studio Code Setup
+To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops/fork) repository to your own GitHub account. Then:
 
 1. Make sure Docker is running. In a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
 1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
 1. Select your forked repository. Visual Studio Code creates your development container locally.
 
-1. In the terminal pane, run this docker command:
+## Build containers
+
+In the terminal pane, run this docker command:
 
     ```console
     docker-compose build
@@ -46,6 +53,14 @@ To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslear
 
    If the wrong subscription is selected, use the [az account set](/cli/azure/account#az-account-set) command to select the correct one.
 
+1. Run the following Azure CLI command to get a list of Azure regions and the Name associated with it:
+
+   ```azurecli
+   az account list-locations -o table
+   ```
+
+   Locate a region closest to you and use it in the next step to replace `[Closest Azure region]`
+
 1. Run these bash statements:
 
     ```bash
@@ -64,6 +79,8 @@ To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslear
     az acr create --resource-group $RESOURCE_GROUP --name $ACR_NAME --sku Basic
     az acr login --name $ACR_NAME
     ```
+
+    If you receive an authentication error when `az acr login --name $ACR_Name` is run, you may need to turn on **Admin user** in the newly created **container register** in Azure under **Settings - Access Keys**. It will prompt you to enter these credentials to continue.
 
     These commands create a resource group to contain the Azure resources, an ACR for your images, and then logins into the ACR. It can take a few minutes until you see this output:
 
@@ -233,7 +250,7 @@ GitHub Actions can publish container images to an Azure Container Registry. The 
    export SUBS=$(az account show --query 'id' --output tsv)
    ```
 
-1. Run the following command to create an Azure AD service principal to allow access from GitHub. Replace the `<subscription-id>` placeholder with your Subscription ID:
+1. Run the following command to create an Azure AD service principal to allow access from GitHub:
 
     ```azurecli
     az ad sp create-for-rbac --name "eShop" --role contributor --scopes /subscriptions/$SUBS/resourceGroups/$RESOURCE_GROUP --json-auth
