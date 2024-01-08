@@ -1,4 +1,4 @@
-**Now you have**:
+Now you have:
 
 - Explored deployment methodologies.
 - Prepared Azure virtual machines for a manual installation of SAP HANA.
@@ -6,7 +6,7 @@
 - Discovered key steps for SAP HANA installation using HDBLCM.
 - Implemented SAP HANA scale-out.
 
-**Learn more**:
+## Learn more
 
 - [Installation of SAP HANA on Azure virtual machines](/azure/virtual-machines/workloads/sap/hana-get-started)
 - [Deploy resources with Azure Resource Manager templates and Azure portal](/azure/azure-resource-manager/templates/deploy-portal)
