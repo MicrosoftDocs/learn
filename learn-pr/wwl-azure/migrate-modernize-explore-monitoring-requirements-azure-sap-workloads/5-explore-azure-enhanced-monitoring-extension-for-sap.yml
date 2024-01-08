@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads.explore-azure-enhanced-monitoring-extension-for-sap
+title: Explore the Azure Enhanced Monitoring Extension for SAP
+metadata:
+  title: Explore the Azure Enhanced Monitoring Extension for SAP
+  description: "Explore the Azure Enhanced Monitoring Extension for SAP"
+  ms.date: 01/08/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-explore-azure-enhanced-monitoring-extension-for-sap.md)]
