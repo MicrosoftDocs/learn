@@ -37,10 +37,10 @@ products:
 units:
 - learn.wwl.migrate-modernize-explore-identity-services.introduction
 - learn.wwl.migrate-modernize-explore-identity-services.explore-azure-virtual-machine-auth-access-control
-- learn.wwl.migrate-modernize-explore-identity-services.explore-azure-active-directory
+- learn.wwl.migrate-modernize-explore-identity-services.explore-microsoft-entra-id
 - learn.wwl.migrate-modernize-explore-identity-services.explore-sap-cloud-platform-identity-authentication
-- learn.wwl.migrate-modernize-explore-identity-services.exercise-azure-active-directory-sap-cloud-platform-identity-authentication
-- learn.wwl.migrate-modernize-explore-identity-services.exercise-integrate-azure-active-directory-sap-hana
+- learn.wwl.migrate-modernize-explore-identity-services.exercise-microsoft-entra-id-sap-cloud-platform-identity-authentication
+- learn.wwl.migrate-modernize-explore-identity-services.exercise-integrate-microsoft-entra-id-sap-hana
 - learn.wwl.migrate-modernize-explore-identity-services.exercise-integrate-active-directory-sap-single-sign-on
 - learn.wwl.migrate-modernize-explore-identity-services.integrate-linux-active-directory-domain-services
 - learn.wwl.migrate-modernize-explore-identity-services.explore-azure-bastion
