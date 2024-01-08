@@ -206,7 +206,7 @@ Azure Center for SAP solutions enables you to analyze important SAP infrastructu
 1. On the page for the VIS, select the VIS from the table.
 1. On the overview page for the VIS, select the **Monitoring** tab.
 
-    :::image type="content" source="../media/virtual-instance-sap-overview-monitoring.png" lightbox="../media/virtual-instance-sap-overview-monitoring.png" alt-text="Screenshot of the Monitoring tab for a V I S resource in the Azure portal, showing monitoring charts for C P U utilization and I O P S.":::
+    :::image type="content" source="../media/monitor-virtual-instance-sap-overview.png" lightbox="../media/monitor-virtual-instance-sap-overview.png" alt-text="Screenshot of the Monitoring tab for a V I S resource in the Azure portal, showing monitoring charts for C P U utilization and I O P S.":::
 
 1. Review the monitoring charts, which include:
 
@@ -227,6 +227,6 @@ You can also set up or register Azure Monitor for SAP solutions to monitor SAP p
 1. In the sidebar menu for the VIS, under **Monitoring**, select **Azure Monitor for SAP solutions**.
 1. Select whether you want to create a new Azure Monitor for SAP solutions instance, or register an existing Azure Monitor for SAP solutions instance. If you don't see this option, you've already configured this setting.
 
-    :::image type="content" source="../media/monitoring-setup.png" lightbox="../media/monitoring-setup.png" alt-text="Screenshot of the A C S S page inside a V I S resource in the Azure portal, showing the option to create or register a new instance.":::
+    :::image type="content" source="../media/monitor-setup.png" lightbox="../media/monitor-setup.png" alt-text="Screenshot of the A C S S page inside a V I S resource in the Azure portal, showing the option to create or register a new instance.":::
 
 1. After you create or register your Azure Monitor for SAP solutions instance, you're redirected to the Azure Monitor for SAP solutions instance.
