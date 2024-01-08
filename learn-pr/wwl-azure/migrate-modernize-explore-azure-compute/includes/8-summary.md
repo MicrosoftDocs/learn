@@ -6,7 +6,7 @@ Now you have:
 - Examined Azure virtual machine scaling considerations.
 - Explored data flows.
 
-Learn more:
+## Learn more:
 
 - [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes)
 - [Constrained vCPU capable VM sizes](/azure/virtual-machines/constrained-vcpu)

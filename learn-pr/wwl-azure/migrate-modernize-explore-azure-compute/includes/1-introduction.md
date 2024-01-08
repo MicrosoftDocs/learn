@@ -2,7 +2,7 @@ You're the SAP solutions architect for your company, responsible for the Azure I
 
 You need to prepare the specifications to apply the compute component to design scalable, performant, and resilient SAP deployments in Azure.
 
-**Learning objectives**:
+## Learning objectives:
 
 - Plan for implementing SAP solutions.
 - Explore Azure virtual machines.

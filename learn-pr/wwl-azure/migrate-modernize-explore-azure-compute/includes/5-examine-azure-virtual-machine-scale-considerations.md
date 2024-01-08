@@ -19,58 +19,16 @@ The basic configuration of a SUSE Linux VM node for SAP HANA scale-out has the f
 
 Sizing the volumes for the nodes is the same as for scale-up, except **/hana/shared**. For the M128s VM SKU, the suggested sizes and types look like:
 
-:::row:::
-  :::column:::
-    **VM SKU**
-  :::column-end:::
-  :::column:::
-    **RAM**
-  :::column-end:::
-  :::column:::
-    **Max. VM I/O Throughput**
-  :::column-end:::
-  :::column:::
-    **/hana/data**
-  :::column-end:::
-  :::column:::
-    **/hana/log**
-  :::column-end:::
-  :::column:::
-    **/root** volume
-  :::column-end:::
-  :::column:::
-    **/usr/sap**
-  :::column-end:::
-  :::column:::
-    **hana/backup**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    M128s
-  :::column-end:::
-  :::column:::
-    2000 GiB
-  :::column-end:::
-  :::column:::
-    2000 MB/s
-  :::column-end:::
-  :::column:::
-    3 x P30
-  :::column-end:::
-  :::column:::
-    2 x P20
-  :::column-end:::
-  :::column:::
-    1 x P6
-  :::column-end:::
-  :::column:::
-    1 x P6
-  :::column-end:::
-  :::column:::
-    2 x P40
-  :::column-end:::
-:::row-end:::
+| Configuration              | Suggestion |
+|----------------------------|------------|
+| **VM SKU**                 | M128s      |
+| **RAM**                    | 2000 GiB   |
+| **Max. VM I/O Throughput** | 2000 MB/s  |
+| **/hana/data**             | 3 x P30    |
+| **/hana/log**              | 2 x P20    |
+| **/root** volume           | 1 x P6     |
+| **/usr/sap**               | 1 x P6     |
+| **hana/backup**            | 2 x P40    |
 
 Make sure that the storage throughput for HANA-specific volumes meets the requirements of the workload that you want to run. If the workload requires higher volumes for **/hana/data** and **/hana/log**, you need to increase the number of Azure Premium Storage disks. Adding disks increases the IOPS and I/O throughput within the limits imposed by the Azure VM size. In addition, ensure to enable Azure Write Accelerator on the disks that form the **/hana/log** volume.
 
