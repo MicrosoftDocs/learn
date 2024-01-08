@@ -5,7 +5,7 @@ Azure Storage is a service that you can use to store unstructured and partially 
 - **Queues**: These are temporary storage for messages that Azure services commonly use to asynchronously communicate with each other. In distributed applications, a source component sends a message by placing it in a queue. The destination component works through the messages in the queue one at a time.
 - **Files**: Similar to blobs, these provide storage for unstructured files, but they offer support for file sharing via the Server Message Block (SMB) protocol in the same manner as traditional on-premises Windows file shares.
 
-## Optional demos:
+## Optional demos
 
 - [Demonstration: Create storage accounts](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-create-storage-accounts.md)
 - [Demonstration: Explore Azure Blob Storage](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-explore-azure-blob-storage.md)
