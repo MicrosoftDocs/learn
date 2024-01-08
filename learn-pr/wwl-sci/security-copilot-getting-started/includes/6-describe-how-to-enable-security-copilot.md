@@ -47,7 +47,7 @@ When an organization onboards to Security Copilot, the admin (global administrat
 
 :::image type="content" source="../media/secruity-copilot-geo-location.png" alt-text="A screen capture of the Microsoft Security Copilot setting for geographic location where data is stored.":::
 
-### Opt-in our opt-out of data sharing
+### Opt-in or opt-out of data sharing
 
 Lastly, the admin (global administrator or security administrator) must also opt-in or opt-out of sharing their customer data with Microsoft. Turn the toggles on or off for any of the following options:
 
