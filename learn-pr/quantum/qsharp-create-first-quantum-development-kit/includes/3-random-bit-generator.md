@@ -15,7 +15,7 @@ If you concatenate, or combine, these bits into a bit string, you can form a lar
 
 $${0110_{\ binary} \equiv 6_{\ decimal}}$$
 
-If you repeat this process many times, you can combine multiple bits to form any large number. Now you can provide your superior with that number as a secure password, since you can be sure that no space hacker could determine the results of the sequence of measurements.
+If you repeat this process many times, you can combine multiple bits to form any large number.
 
 You build out your quantum random number generator in two phases. In this unit, you build out the first phase, which is to generate a single random bit.
 
