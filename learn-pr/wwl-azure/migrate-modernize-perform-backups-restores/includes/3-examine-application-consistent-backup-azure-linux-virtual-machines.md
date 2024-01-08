@@ -4,7 +4,7 @@ The framework provides an option to run custom pre-scripts and post-scripts whil
 
 Pre-scripts invoke native application APIs, which quiesce the IOs, and flush in-memory content to the disk. These actions ensure the snapshot is application-consistent. Post-scripts use native application APIs to thaw the IOs, which enable the application to resume normal operations after the VM snapshot.
 
-Configure pre-script and post-script:
+## Configure pre-script and post-script
 
 1. Sign in as the root user to the Linux VM that you want to back up.
 2. Download [VMSnapshotScriptPluginConfig.json](https://github.com/MicrosoftAzureBackup/VMSnapshotPluginConfig) from GitHub, and copy it to the **/etc/azure** directory of all VMs you want to back up. If the /etc/azure directory doesn't exist, create it.
@@ -15,7 +15,7 @@ Configure pre-script and post-script:
 
    - **Pre-script file**: Permission “700.”  For example, only “root” user should have “read”, “write”, and “execute” permissions to this file. The file is expected to be a shell script but theoretically this script can internally spawn or refer to other scripts like a Python script.
 
-   - **Post-script** Permission “700.” For example, only “root” user should have “read”, “write”, and “execute” permissions to this file. The file is expected to be a shell script but theoretically this script can internally spawn or refer to other scripts like a Python script.
+   - **Post-script**: Permission “700.” For example, only “root” user should have “read”, “write”, and “execute” permissions to this file. The file is expected to be a shell script but theoretically this script can internally spawn or refer to other scripts like a Python script.
 
    > [!IMPORTANT]
    > The framework gives users a lot of power. Secure the framework, and ensure only “root” user has access to critical JSON and script files.
