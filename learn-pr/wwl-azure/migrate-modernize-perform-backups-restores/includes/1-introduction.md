@@ -2,8 +2,6 @@ You have started planning for backup and data recovery for the SAP on Azure depl
 
 ## Learning objectives
 
-You'll:
-
 - Explore backup and restore of Azure virtual machines.
 - Examine application-consistent backup of Azure Linux virtual machines.
 - Explore application backup.

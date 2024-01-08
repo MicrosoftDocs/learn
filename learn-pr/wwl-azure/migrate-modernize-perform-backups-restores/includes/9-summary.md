@@ -23,7 +23,7 @@ Now you have:
 - [Recover files from Azure virtual machine backup](/azure/backup/backup-azure-restore-files-from-vm)
 - [Automated Backup for SQL Server 2014 Virtual Machines (Resource Manager)](/azure/azure-sql/virtual-machines/windows/automated-backup-sql-2014)
 - [Automated Backup v2 for Azure Virtual Machines (Resource Manager)](/azure/azure-sql/virtual-machines/windows/automated-backup)
-- [BACKUP DATA CLOSE SNAPSHOT Statement (Backup and Recovery)](https://help.sap.com/viewer/4fe29514fd584807ac9f2a04f6754767/2.0.04/en-US/c39739966f7f4bd5818769ad4ce6a7f8.html)
+- [BACKUP DATA CLOSE SNAPSHOT Statement (Backup and Recovery)](https://help.sap.com/docs/SAP_HANA_PLATFORM/4fe29514fd584807ac9f2a04f6754767/c39739966f7f4bd5818769ad4ce6a7f8.html)
 - [SAP Note \#2039883](https://me.sap.com/notes/2039883)
 - [SAP Note \#1642148](https://me.sap.com/notes/1642148)
 - [SAP Note \#1820529](https://me.sap.com/notes/1820529)

@@ -8,7 +8,7 @@ The process works as follows:
 
 The snapshot then also appears in the backup catalog in SAP HANA Studio. On disk, the snapshot shows up in the SAP HANA data directory. It's necessary to ensure that the file system consistency is also guaranteed before running the storage snapshot while SAP HANA is in the snapshot preparation mode.
 
-Once the storage snapshot is done, it's critical to confirm the SAP HANA snapshot. There is a corresponding SQL statement to run: BACKUP DATA CLOSE SNAPSHOT (see [BACKUP DATA CLOSE SNAPSHOT Statement (Backup and Recovery)](https://help.sap.com/viewer/4fe29514fd584807ac9f2a04f6754767/2.0.04/en-US/c39739966f7f4bd5818769ad4ce6a7f8.html)).
+Once the storage snapshot is done, it's critical to confirm the SAP HANA snapshot. There is a corresponding SQL statement to run: BACKUP DATA CLOSE SNAPSHOT (see [BACKUP DATA CLOSE SNAPSHOT Statement (Backup and Recovery)](https://help.sap.com/docs/SAP_HANA_PLATFORM/4fe29514fd584807ac9f2a04f6754767/c39739966f7f4bd5818769ad4ce6a7f8.html)).
 
 > [!IMPORTANT]
 > Make sure to confirm the HANA snapshot. Due to "Copy-on-Write," SAP HANA might require extra disk space in snapshot-prepare mode, and it's not possible to start new backups until the SAP HANA snapshot is confirmed.
