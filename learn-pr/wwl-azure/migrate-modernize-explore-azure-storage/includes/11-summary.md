@@ -1,4 +1,4 @@
-**Now you have**:
+Now you have:
 
 - Explored Azure Storage types.
 - Explored Azure Files.
@@ -9,7 +9,7 @@
 - Examined SAP HANA Azure virtual machine storage configurations.
 - Explored NFS v4.1 volumes on Azure NetApp Files.
 
-**Learn more**:
+## Learn more:
 
 - [Storage account overview](/azure/storage/common/storage-account-overview)
 - [Frequently asked questions (FAQ) about Azure Files](/azure/storage/files/storage-files-faq)

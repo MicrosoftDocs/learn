@@ -2,7 +2,7 @@ You're the SAP solutions architect for your company, responsible for the Azure I
 
 Storage options for SAP workloads in Azure include Azure VM disks, Azure VM NFS storage, and Azure VM SMB storage. You need to prepare the specifications to use the storage component to design scalable, performant, and resilient SAP deployments in Azure.
 
-**Learning objectives**:
+## Learning objectives:
 
 - Explore Azure Storage types.
 - Explore Azure Files.
