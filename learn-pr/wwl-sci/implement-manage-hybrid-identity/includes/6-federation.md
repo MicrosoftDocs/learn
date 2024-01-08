@@ -1,9 +1,9 @@
 Federation can use a new or existing on-premises Active Directory farm in Windows Server 2012 R2 (or later), and Microsoft Entra Connect enable users to log into Microsoft Entra resources using their on-premises password.
 
-:::image type="content" source="../media/sc300-federation-flow-diagram-8eb4c413.png" alt-text="Diagram of federation between on-premises and Azure A D. Shows users able log into both on-premises and cloud resources with a single shared login.":::
+:::image type="content" source="../media/sc300-federation-flow-diagram-8eb4c413.png" alt-text="Diagram of federation between on-premises and Microsoft Entra ID. Shows users able log into both on-premises and cloud resources with a single shared login.":::
 
 
-Federation is a collection of domains that have established trust. The level of trust might vary, but typically includes authentication and almost always includes authorization. A typical federation might include a number of organizations that have established trust for shared access to a set of resources.
+Federation is a collection of domains that have established trust. The level of trust varies, but typically includes authentication and almost always includes authorization. A typical federation might include a number of organizations that have established trust for shared access to a set of resources.
 
 You can federate your on-premises environment with Microsoft Entra ID and use this federation for authentication and authorization. This sign-in method ensures that all user authentication occurs on-premises. This method allows administrators to implement more rigorous levels of access control. Federation with AD FS and PingFederate is available.
 
@@ -35,11 +35,11 @@ Deploying to an AD FS farm, you need:
 
 ## Microsoft Entra Connect tools to manage your federation
 
-You can complete various AD FS-related tasks in Microsoft Entra Connect with minimal user intervention by using the Microsoft Entra Connect wizard. Even after you've finished installing Microsoft Entra Connect by running the wizard, you can run the wizard again to do other tasks. For example, you can use the wizard to repair the trust with Microsoft 365, federate with Microsoft Entra ID using alternate login ID, and add an AD FS Web Application Proxy (WAP) server.
+You can complete various AD FS-related tasks in Microsoft Entra Connect with minimal user intervention by using the Microsoft Entra Connect wizard. Even after you've finished installing Microsoft Entra Connect by running the wizard, you can run the wizard again to do other tasks. For example, you can use the wizard to repair the trust with Microsoft 365, federate with Microsoft Entra ID using alternate sign in ID, and add an AD FS Web Application Proxy (WAP) server.
 
 **Repair the trust** You can use Microsoft Entra Connect to check the current health of the AD FS and Microsoft Entra ID trust and take appropriate actions to repair the trust.
 
-**Federate with Microsoft Entra ID using AlternateID** It is recommended that the on-premises User Principal Name(UPN) and the cloud User Principal Name are kept the same. If the on-premises UPN uses a non-routable domain (ex. Contoso.local) or cannot be changed due to local application dependencies, we recommend setting up alternate login ID. Alternate login ID allows you to configure a sign-in experience where users can sign in with an attribute other than their UPN, such as mail. The choice for User Principal Name in Microsoft Entra ID Connect defaults to the userPrincipalName attribute in Active Directory. If you choose any other attribute for User Principal Name and are federating using AD FS, then Microsoft Entra Connect will configure AD FS for alternate login ID.
+**Federate with Microsoft Entra ID using AlternateID** It is recommended that the on-premises User Principal Name(UPN) and the cloud User Principal Name are kept the same. If the on-premises UPN uses a non-routable domain (ex. Contoso.local) or cannot be changed due to local application dependencies, we recommend setting up alternate sign in ID. Alternate sign in ID allows you to configure a sign-in experience where users can sign in with an attribute other than their UPN, such as mail. The choice for User Principal Name in Microsoft Entra ID Connect defaults to the userPrincipalName attribute in Active Directory. If you choose any other attribute for User Principal Name and are federating using AD FS, then Microsoft Entra Connect will configure AD FS for alternate sign in ID.
 
 **Add a federated domain** It's easy to add a domain to be federated with Microsoft Entra ID by using Microsoft Entra Connect. Microsoft Entra Connect adds the domain for federation and modifies the claim rules to correctly reflect the issuer when you have multiple domains federated with Microsoft Entra ID.
 

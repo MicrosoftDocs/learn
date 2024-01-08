@@ -11,7 +11,7 @@ In Azure App Configuration, now create a new key-value pair to store the sales d
 1. In another browser tab, sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account and directory as the Azure CLI.
 1. Use the search box to find and open the App Configuration resource prefixed with **:::no-loc text="eshop-app-features":::**.
 1. In the **Operations** section, select **Configuration explorer**.
-1. In the top menu, select **+ Create**.
+1. In the top menu, select **+ Create** and select **Key-value**.
 1. In the **Key** text box, enter **eShopLite__Store__DiscountPercent**.
 1. In the **Value** text box, enter **0.8**.
 1. Select **Apply**.
@@ -58,7 +58,7 @@ The product page needs to be updated to use the new configuration setting. Compl
 
 The product page needs to be updated to display the discounted prices. Complete the following steps:
 
-1. , replace `<td>@product.Price</td>` with this code:
+1. Replace `<td>@product.Price</td>` with this code:
 
     ```csharp
     <td>

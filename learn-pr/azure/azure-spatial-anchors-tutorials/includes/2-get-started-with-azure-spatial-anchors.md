@@ -10,7 +10,7 @@ Use cases for Azure Spatial Anchors include:
 
 ## AR Foundation
 
-In Unity, AR Foundation lets you work with augmented reality systems across several platforms. This package provides an interface for Unity developers but doesn't include any augmented reality functionality. On a target device, you'll also need separate packages for Unity's officially supported target platforms:
+In Unity, AR Foundation lets you work with augmented-reality systems across several platforms. This package provides an interface for Unity developers, but doesn't include any augmented-reality functionality. On a target device, you'll also need separate packages for Unity's officially supported target platforms:
 
 * Google ARCore XR Plug-in on Android
 * Apple ARKit XR Plug-in on iOS
@@ -21,7 +21,7 @@ In Unity, AR Foundation lets you work with augmented reality systems across seve
 
 A point in space that you want the devices to track is called an *anchor*. For each anchor, the Anchor Manager creates GameObjects. The device typically performs more work to update the anchor's position and orientation throughout its lifetime.
 
-The `anchorPrefab` field in the `ARAnchorManager` class isn't intended for content. Instead, AR Foundation will build a new GameObject to represent an anchor by using a means other than `AddComponent`, such as loading an `ARWorldMap` object with anchors. 
+The `anchorPrefab` field in the `ARAnchorManager` class isn't intended for content. Instead, AR Foundation builds a new GameObject to represent an anchor by using a means other than `AddComponent`, such as loading an `ARWorldMap` object with anchors.
 
 The prefab field can extend the default behavior of anchors. We suggest that you don't use it to deploy content in the world.
 

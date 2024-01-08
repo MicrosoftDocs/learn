@@ -11,7 +11,7 @@ In this module, we covered a lot. Here are a few key concepts to keep in mind:
 
 ## Learn more
 
-Explore the [Azure Quantum documentation](/quantum/?azure-portal=true). There you'll find comprehensive reference material, including:
+Explore the [Azure Quantum documentation](/quantum/?azure-portal=true). There you find comprehensive reference material, including:
 
 * Fundamental concepts around quantum computing.
 * Quickstarts and tutorials.

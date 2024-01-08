@@ -27,15 +27,56 @@ However, if you're building a web server, you should always use the **asynchrono
 
 In your work as a developer at TailWind Traders, you'll need to understand the difference between synchronous and asynchronous operations and when to use each.
 
-## Performance
+## Performance through asynchronous operations
 
 Node.js takes advantage of the unique event-driven nature of JavaScript that makes composing server tasks fast and high-performing. JavaScript, when used _correctly_ with asynchronous techniques, can produce the same performance results as low-level languages like **C** because of performance boosts made possible by the V8 engine. 
 
 The asynchronous techniques come in 3 styles, which you need to be able to recognize in your work: 
 
+* **Async/await** (recommended): The newest asynchronous technique that uses the `async` and `await` keywords to receive the results of an asynchronous operation. Async/await is used across many programming languages. Generally, new projects with newer dependencies will use this style of asynchronous code.
 * **Callbacks**: The original asynchronous technique that uses a callback function to receive the results of an asynchronous operation. You'll see this in older code bases and in older Node.js APIs.
 * **Promises**: A newer asynchronous technique that uses a promise object to receive the results of an asynchronous operation. You'll see this in newer code bases and in newer Node.js APIs. You might have to write promise-based code in your work to wrap older APIs that won't be updated. By using promises for this wrapping, you allow the code to be used in a larger range of Node.js versioned projects than in the newer async/await style of code.
-* **Async/await**: The newest asynchronous technique that uses the `async` and `await` keywords to receive the results of an asynchronous operation. Async/await is used across many programming languages. Generally, new projects with newer dependencies will use this style of asynchronous code.
+
+### Async/await 
+
+Async/await is a newest way to handle asynchronous programming. Async/await is syntactic sugar on top of promises and makes asynchronous code look more like synchronous code. It is also easier to read and maintain.
+
+The same example using async/await looks like this:
+
+:::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro/3-how-nodejs-works/async-await.js":::
+
+When async/await was released in ES2017, the keywords could only be used in functions with the top-level function being a promise. While the promise didn't have to have `then` and `catch` sections, it was still required to have `promise` syntax to run. 
+
+An `async` function always returns a promise, even if it doesn't have an `await` call inside of it. The promise will resolve with the value returned by the function. If the function throws an error, the promise will be rejected with the thrown value. 
+
+### Promises
+
+Because nested callbacks can be difficult to read and manage, Node.js added support for promises. A promise is an object that represents the eventual completion (or failure) of an asynchronous operation. 
+
+A promise function has the format of: 
+
+:::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro/3-how-nodejs-works/promise-create-basic.js":::
+
+The `then` method is called when the promise is fulfilled and the `catch` method is called when the promise is rejected.
+
+To read a file asynchronously with promises, the code is: 
+
+:::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro/3-how-nodejs-works/promises.js":::
+
+### Top-level async/await
+
+The most recent versions of Node.js added top-level async/await for ES6 modules. You need to add a property named `type` in the **package.json** with a value of `module` to use this feature. 
+
+```json
+{
+    "type": "module"
+}
+```
+
+Then you can use the `await` keyword at the top level of your code
+
+:::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro/3-how-nodejs-works/async-await-top-level.js":::
+
 
 ### Callbacks
 
@@ -90,43 +131,6 @@ Because you might need to call a subsequent async callback and then another, the
 
 :::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro/3-how-nodejs-works/nested-callback.js":::
 
-### Promises
-
-Because nested callbacks can be difficult to read and manage, Node.js added support for promises. A promise is an object that represents the eventual completion (or failure) of an asynchronous operation. 
-
-A promise function has the format of: 
-
-:::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro/3-how-nodejs-works/promise-create-basic.js":::
-
-The `then` method is called when the promise is fulfilled and the `catch` method is called when the promise is rejected.
-
-To read a file asynchronously with promises, the code is: 
-
-:::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro/3-how-nodejs-works/promises.js":::
-
-### Async/await 
-
-Async/await is a newer way to handle asynchronous programming. Async/await is syntactic sugar on top of promises and makes asynchronous code look more like synchronous code.
-
-The same example using async/await looks like this:
-
-:::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro/3-how-nodejs-works/async-await.js":::
-
-When async/await was released, the keywords could only be used in functions with the top-level function being a promise. While the promise didn't have to have then and catch functions, it was still a return to promise syntax. 
-
-### Top-level async/await
-
-The most recent versions of Node.js added top-level async/await for ES6 modules. You need to add a property named `type` in the **package.json** with a value of `module` to use this feature. 
-
-```json
-{
-    "type": "module"
-}
-```
-
-Then you can use the `await` keyword at the top level of your code
-
-:::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro/3-how-nodejs-works/async-await-top-level.js":::
 
 ## Synchronous APIs
 
