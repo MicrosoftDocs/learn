@@ -64,7 +64,7 @@ To do so, you:
 
 ## Explore the Q# code
 
-1. Hover over `H` operation to see a short summary of the definition.
+1. Hover over the `H` operation to see a short summary of the definition.
 1. Place your cursor in front of the `H` operation, right-click and select **Go to Definition**.  This opens a read-only view of the standard library code for the function.
 
 ## Run the program locally
