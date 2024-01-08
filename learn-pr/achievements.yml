@@ -2662,3 +2662,8 @@ achievements:
   title: 'Microsoft Azure AI Fundamentals: Explore visual tools for machine learning'
   summary: Machine learning is at the core of artificial intelligence, and many modern applications and services depend on predictive machine learning models. Learn how to use Azure Machine Learning to create and publish models without writing code.
   iconUrl: /training/achievements/create-no-code-predictive-models-with-azure-machine-learning.svg
+- uid: learn.wwl.create-classification-model-with-azure-machine-learning-designer.badge
+  type: badge
+  title: Create a classification model with Azure Machine Learning designer
+  summary: Classification is a supervised machine learning technique used to predict categories or *classes*. Learn how to create classification models using Azure Machine Learning designer.
+  iconUrl: /training/achievements/create-classification-model-azure-machine-learning-designer.svg
