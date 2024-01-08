@@ -129,7 +129,7 @@ namespace QuantumRandomNumberGenerator {
         // Allocate a qubit.
         use q = Qubit();
 
-        // Set the qubit into superposition of 0 and 1 using the Hadamard 
+        // Set the qubit into superposition of 0 and 1 using the Hadamard operation
         H(q);
 
         // At this point the qubit `q` has 50% chance of being measured in the
