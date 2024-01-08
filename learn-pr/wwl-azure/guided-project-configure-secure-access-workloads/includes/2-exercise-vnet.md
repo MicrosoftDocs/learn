@@ -16,4 +16,4 @@ Launch the exercise and follow the instructions. When you're done, be sure to re
 > [!NOTE]
 > To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://github.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/blob/main/Instructions/Labs/LAB_01_virtual_networks.html)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://github.com/MicrosoftLearning/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/blob/main/Instructions/Labs/LAB_01_virtual_networks.md)
