@@ -3,7 +3,7 @@ Now you have:
 - Explored Azure Resource Manager and Azure Resource Manager templates.
 - Examinedrole-based access control.
 - Explored Azure Policy.
-- Explored security and compliance services.
+- Explored security and compliance services. 
 
 ## Learn more
 
