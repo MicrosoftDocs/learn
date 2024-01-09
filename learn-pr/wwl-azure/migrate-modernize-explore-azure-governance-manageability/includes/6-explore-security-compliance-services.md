@@ -7,38 +7,11 @@ Defender for Cloud provides the tools needed to harden your resources, track you
 
 Defender for Cloud fills three vital needs as you manage the security of your resources and workloads in the cloud and on-premises:
 
-:::row:::
-  :::column:::
-    **Security requirement**
-  :::column-end:::
-  :::column:::
-    **Defender for Cloud solution**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Continuous assessment** \- Understand your current security posture.
-  :::column-end:::
-  :::column:::
-    Secure score - A single score so that you can tell, at a glance, your current security situation: the higher the score, the lower the identified risk level.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Secure** \- Harden all connected resources and services.
-  :::column-end:::
-  :::column:::
-    Security recommendations - Customized and prioritized hardening tasks to improve your posture. You implement a recommendation by following the detailed remediation steps provided in the recommendation. For many recommendations, Defender for Cloud offers a "Fix" button for automated implementation!
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Defend** \- Detect and resolve threats to those resources and services.
-  :::column-end:::
-  :::column:::
-    Security alerts - With the enhanced security features enabled, Defender for Cloud detects threats to your resources and workloads. These alerts appear in the Azure portal and Defender for Cloud can also send them by email to the relevant personnel in your organization. Alerts can also be streamed to SIEM, SOAR, or IT Service Management solutions as required.
-  :::column-end:::
-:::row-end:::
+| Security requirement | Defender for Cloud solution |
+|---|---|
+| **Continuous assessment** \- Understand your current security posture. | **Secure score** \- A single score so that you can tell, at a glance, your current security situation: the higher the score, the lower the identified risk level. |
+| **Secure** \- Harden all connected resources and services. | **Security recommendations** \- Customized and prioritized hardening tasks to improve your posture. You implement a recommendation by following the detailed remediation steps provided in the recommendation. For many recommendations, Defender for Cloud offers a "Fix" button for automated implementation! |
+| **Defend** \- Detect and resolve threats to those resources and services. | **Security alerts** \- With the enhanced security features enabled, Defender for Cloud detects threats to your resources and workloads. These alerts appear in the Azure portal and Defender for Cloud can also send them by email to the relevant personnel in your organization. Alerts can also be streamed to SIEM, SOAR, or IT Service Management solutions as required. |
 
 ## Posture management and workload protection
 
