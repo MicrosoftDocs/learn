@@ -44,4 +44,4 @@ Pre-scripts invoke native application APIs, which quiesce the IOs, and flush in-
 
     - **ScriptsExecutionPollTimeSeconds**: Set the time the extension has to sleep between each poll to the script execution. For example, if the value is 2, the extension checks whether the pre/post script execution completed every 2 seconds. The minimum and maximum value it can take is 1 and 5 respectively. The value should be strictly an integer.
 
-6. The script framework is now configured. If the VM backup is already configured, the next backup invokes the scripts and triggers application-consistent backup. If the VM backup isn't configured, configure it by using [Back up Azure virtual machines to Recovery Services vaults.](./azure/backup/backup-azure-arm-vms-prepare)
+6. The script framework is now configured. If the VM backup is already configured, the next backup invokes the scripts and triggers application-consistent backup. If the VM backup isn't configured, configure it by using [Back up Azure virtual machines to Recovery Services vaults.](/azure/backup/backup-azure-arm-vms-prepare)
