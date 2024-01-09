@@ -7,7 +7,7 @@ You need to prepare for the migration of several of your company's SAP workloads
 
 In addition, you must ensure the availability solutions are compatible with the solutions for disaster recovery of the SAP on Azure workloads in your company.
 
-## Learning objectives:
+## Learning objectives
 
 - Explore high availability and disaster recovery support of Azure for SAP workloads.
 - Explore high availability of SAP workloads.
