@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-describe-core-features.describe-non-microsoft-plugins
+title: Describe the non-Microsoft plugins supported by Security Copilot
+metadata:
+  title: Describe the non-Microsoft plugins supported by Security Copilot
+  description: "Describe the non-Microsoft plugins supported by Security Copilot."
+  ms.date: 11/18/2023
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+  ms.service: security-copilot
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-describe-non-microsoft-plugins.md)]
