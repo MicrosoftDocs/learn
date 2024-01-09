@@ -5,7 +5,7 @@ Now you have:
 You also completed labs where you:
 
 - Implemented SAP architecture on Azure VMs running Linux.
-- Implemented SAP architecture on Azure VMs running Windows.
+- Implemented SAP architecture on Azure VMs running Windows. 
 
 ## Learn more
 
