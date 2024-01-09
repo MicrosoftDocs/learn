@@ -7,7 +7,7 @@ You also completed labs where you:
 - Implemented SAP architecture on Azure VMs running Linux.
 - Implemented SAP architecture on Azure VMs running Windows.
 
-## Learn more:
+## Learn more
 
 - [Azure Virtual Machines deployment for SAP NetWeaver](/azure/virtual-machines/workloads/sap/deployment-guide)
 - [High availability for SAP NetWeaver on Azure VMs](/azure/virtual-machines/workloads/sap/high-availability-guide)
