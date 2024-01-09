@@ -25,7 +25,7 @@ Now you have:
 - [VPN Gateway documentation](/azure/vpn-gateway/)
 - [What is Azure Front Door?](/azure/frontdoor/front-door-overview)
 - [The virtual datacenter: A network perspective](/azure/cloud-adoption-framework/reference/networking-vdc)
-- [Azure Monitor multi-dimensional metrics](/azure/load-balancer/load-balancer-standard-diagnostics)
+- [Azure Monitor multidimensional metrics](/azure/load-balancer/load-balancer-standard-diagnostics)
 - [Azure Monitor logs](/azure/load-balancer/load-balancer-monitor-log)
 - [Available for Internal load balancer](/azure/load-balancer/load-balancer-ha-ports-overview)
 - [Declarative outbound NAT configuration](/azure/load-balancer/load-balancer-outbound-connections#outboundrules)

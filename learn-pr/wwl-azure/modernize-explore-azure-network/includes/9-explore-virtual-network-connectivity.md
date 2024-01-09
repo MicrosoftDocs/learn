@@ -48,50 +48,11 @@ While FastPath supports most configurations, it doesn't support the following fe
 
 **IP address limits**
 
-:::row:::
-  :::column:::
-    **ExpressRoute SKU**
-  :::column-end:::
-  :::column:::
-    **Bandwidth**
-  :::column-end:::
-  :::column:::
-    **FastPath IP limit**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    ExpressRoute Direct Port
-  :::column-end:::
-  :::column:::
-    100-Gbps
-  :::column-end:::
-  :::column:::
-    200,000
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    ExpressRoute Direct Port
-  :::column-end:::
-  :::column:::
-    10-Gbps
-  :::column-end:::
-  :::column:::
-    100,000
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    ExpressRoute provider circuit
-  :::column-end:::
-  :::column:::
-    10-Gbps and lower
-  :::column-end:::
-  :::column:::
-    25,000
-  :::column-end:::
-:::row-end:::
+| ExpressRoute SKU | Bandwidth | FastPath IP limit |
+|---|---|---|
+| ExpressRoute Direct Port | 100-Gbps | 200,000 |
+| ExpressRoute Direct Port | 10-Gbps | 100,000 |
+| ExpressRoute provider circuit | 10-Gbps and lower | 25,000 |
 
 > [!NOTE]
 > - ExpressRoute Direct has a cumulative limit at the port level.
