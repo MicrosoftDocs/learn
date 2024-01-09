@@ -14,7 +14,7 @@ In this example, you run the Resource Estimator using the `qubit_gate_us_e3` qub
 1. Select **View -> Command Palette**, or press **Ctrl+Shift+P**, and type “resource” which should bring up the `Q#: Calculate Resource Estimates` option. Select this option to open the Resource Estimator window.
 1. You can select one or more **Qubit parameter + Error Correction code** types to estimate the resources for. For this example, select **qubit_gate_us_e3** and click **OK**.
 1. Specify the **Error budget** or accept the default value 0.001. For this example, leave the default value and press **Enter**.
-1. Press **Enter** to accept the input file, in this case, **ShorRE.qs**.
+1. Press **Enter** to accept the default filename, in this case, **ShorRE.qs**.
 
 ## View the results
 
@@ -30,7 +30,7 @@ In this example, you run the Resource Estimator using the `qubit_gate_us_e3` qub
 
     :::image type="content" source="../media/resource-estimator-local-diagram.png" alt-text="Screen shot showing the space diagram of the Resource Estimator .":::
 
-1. Finally, the **Resource Estimates** tab displays the full list of output data for the Resource Estimator. You can inspect cost details by collapsing the groups, which have more information. For example, collapse the **Logical qubit parameters** group.
+1. Finally, the **Resource Estimates** tab displays the full list of output data for the Resource Estimator. You can inspect cost details by collapsing the groups, which have more information. For example, try to collapse the **Logical qubit parameters** group.
 
     |Logical qubit parameter| Value |
     |----|---|
@@ -47,7 +47,3 @@ In this example, you run the Resource Estimator using the `qubit_gate_us_e3` qub
     > [!TIP]
     > Click **Show detailed rows** to display the description of each output of the report data. 
 
-
-
-
-Using this qubit technology and architecture, with an error budget of 10, you would need 4,620 physical qubits. This resource estimation shows that fewer physical qubits are needed if a higher error rate is acceptable. But if accuracy is important, then you need more physical qubits to account for error correction.

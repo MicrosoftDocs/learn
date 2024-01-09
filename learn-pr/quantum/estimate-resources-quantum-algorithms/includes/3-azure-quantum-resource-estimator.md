@@ -1,10 +1,8 @@
 
-The Azure Quantum Resource Estimator in the Azure Quantum service is a resource estimation tool that computes and then displays the resources that are required for a quantum algorithm, assuming that it's executed on a fault-tolerant, error-corrected quantum computer. You can use the estimator to assess architectural decisions, compare qubit technologies, and determine the resources that you need to execute a specific quantum algorithm. You can see the total number of physical qubits, wall clock time, the computational resources that are required, and the details of the formulas and values that are used for each estimate. 
+The Azure Quantum Resource Estimator in the Azure Quantum service is a resource estimation tool that computes and then displays the resources that are required for a quantum algorithm, assuming that it's executed on a fault-tolerant, error-corrected quantum computer. 
 
-> [!NOTE]
-> Currently, the quantum computers that are available aren't fault-tolerant, error-correcting quantum computers. Currently, quantum computers are defined as *noisy intermediate-scale quantum* (NISQ) computers. The Azure Quantum Resource Estimator assumes execution on a fault-tolerant quantum computer, so you can't use the estimator for NISQ computers.
+You can use the estimator to assess architectural decisions, compare qubit technologies, and determine the resources that you need to execute a specific quantum algorithm. You can see the total number of physical qubits, wall clock time, the computational resources that are required, and the details of the formulas and values that are used for each estimate. 
 
-The Azure Quantum Resource Estimator takes a [quantum intermediate representation (QIR)](/azure/quantum/concepts-qir) program as input. It supports any language that translates to QIR, such as Q# and Qiskit.
 
 ## How does the Azure Quantum Resource Estimator work?
 
@@ -21,9 +19,7 @@ The Resource Estimator also takes some optional parameters:
 
 ### Physical qubit models
 
-The `qubitParams` parameter sets qubit parameters. When physical qubit assumptions are modeled, two physical instruction sets are used to operate the qubits. The physical instruction set can be either *gate-based* or *Majorana*. A gate-based instruction set provides single-qubit measurement, single-qubit gates (including *T gates*), and two-qubit gates. A Majorana instruction set provides a physical T gate, single-qubit measurement, and two-qubit joint measurement operations.
-
-You can choose from six predefined qubit parameters. Four of the parameters have gate-based instruction sets, and two parameters have Majorana instruction sets. These predefined qubit parameters represent different qubit architectures like ions or superconductors, which are defined in published research articles. The qubit models cover a range of operation times and error rates, so you can use them to explore the resource costs that are required for practical quantum applications.
+You can choose from six predefined qubit parameters. Four of the parameters have *gate-based* instruction sets, and two parameters have *Majorana* instruction sets. These predefined qubit parameters represent different qubit architectures like ions or superconductors, which are defined in published research articles. The qubit models cover a range of operation times and error rates, so you can use them to explore the resource costs that are required for practical quantum applications.
 
 | Predefined qubit parameters | Instruction set type |
 |------------------------------|-----------------|
@@ -54,7 +50,6 @@ For more information, see [QEC in the Azure Quantum Resource Estimator](/azure/q
 
 The total error budget sets the overall allowed error for the algorithm. The allowed error is the number of times the algorithm is allowed to fail. The value of the error budget must be between 0 and 1, and the default value is 0.001. The default value corresponds to 0.1 percent and means that the algorithm is allowed to fail once in 1,000 executions. This parameter is highly specific to the application. For example, if you're running Shor’s algorithm for factoring integers, a large value for the error budget can be tolerated because you can check that the output is indeed the prime factors of the input. On the other hand, a smaller error budget might be needed for an algorithm that solves a problem that has a solution that can't be efficiently verified.
 
-
 For more information, see [Error budget in the Azure Quantum Resource Estimator](/azure/quantum/overview-resources-estimator#error-budget).
 
 ## What is the result of the Azure Quantum Resource Estimator?
@@ -63,6 +58,6 @@ The Azure Quantum Resource Estimator takes the target parameters `{qubitParams, 
 
 The resource estimator computes the logical and physical estimation of the algorithm. It calculates the QEC code distance, and from this value, the number of physical qubits needed to encode one logical qubit. It calculates the number of logical qubits, T gates, rotation gates, control gates, measurements, T factory physical values, and total runtime, among other values.
 
-The result of the resource estimation job is printed in groups in [a report data](/azure/quantum/overview-resources-estimator-output-data): physical qubits, breakdown, logical qubit parameters, T factory parameters, pre-layout logical resources, and assumed error budget.
+The result of the resource estimation job is printed in groups: physical qubits, breakdown, logical qubit parameters, T factory parameters, pre-layout logical resources, and assumed error budget.
 
-YoUu can also visualize the results in a [space diagram](/azure/quantum/overview-resources-estimator-space-diagram)
+You can also inspect the distribution of physical qubits used for the algorithm and the T factories using the space-time diagrams. The space diagram shows the proportion of these two. Note that the number of T factory copies contributes to the number of physical qubits for T factories.

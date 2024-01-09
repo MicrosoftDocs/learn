@@ -6,11 +6,11 @@ You can use the Azure Quantum Resource Estimator to analyze the impact of variou
 
 ## Learning objectives
 
-After you complete this module, you'll be able to:
+By the end of this module, you will be able to:
 
-- Identify what resource estimation is and why it's important.
-- Use the Azure Quantum Resource Estimator.
-- Estimate the resources of an algorithm for practical quantum advantage.
+- Explain what the Azure Quantum Resource Estimator is.
+- Define the target parameters of the Azure Quantum Resource Estimator.
+- Estimate the resources of a quantum algorithm using the Azure Quantum Resource Estimator.
 
 ## Prerequisites
 
@@ -18,4 +18,3 @@ After you complete this module, you'll be able to:
 - The latest version of the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension.
 - A Python environment with [Python and Pip](https://apps.microsoft.com/detail/9NRWMJP3717K) installed.
 - VS Code with [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python), and [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) extensions installed.
-
