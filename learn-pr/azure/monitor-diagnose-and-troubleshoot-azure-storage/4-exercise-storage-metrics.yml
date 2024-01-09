@@ -9,7 +9,6 @@ metadata:
   ms.topic: unit
 title: Exercise - Enabling storage metrics and view metric data
 durationInMinutes: 10
-interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/4-exercise-storage-metrics.md)]

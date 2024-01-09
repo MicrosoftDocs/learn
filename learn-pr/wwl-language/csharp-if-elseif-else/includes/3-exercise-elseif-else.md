@@ -250,6 +250,8 @@ To make the game more fun, you can change the game from "win-or-lose" to awardin
             Console.WriteLine("You rolled doubles!  +2 bonus to total!");
             total += 2;
         }
+    
+        Console.WriteLine($"Your total including the bonus: {total}");
     }
     
     if (total >= 16)

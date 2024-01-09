@@ -5,9 +5,9 @@ metadata:
   description: Find out about the Azure Batch capabilities designed to help you efficiently run large-scale parallel and high-performance computing applications in the cloud.
   ms.date: 11/18/2022
   author: lauradolan
-  ms.author: ladolan
+  ms.author: jushiman
   ms.topic: module
-  ms.service: batch 
+  ms.service: batch
 title: Run parallel tasks in Azure Batch with the Azure CLI
 summary: Azure Batch is an Azure service that enables you to run large-scale parallel and high-performance computing (HPC) applications efficiently in the cloud. There's no need to manage or configure infrastructure. Just schedule the job, allocate the resources you need, and let Batch take care of the rest.
 abstract: | 
