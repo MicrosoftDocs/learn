@@ -16,94 +16,15 @@ Azure Center for SAP solutions supports the following SAP software versions:
 
 The following operating system (OS) software versions are compatible with these SAP software versions:
 
-:::row:::
-  :::column:::
-    **Publisher**
-  :::column-end:::
-  :::column:::
-    **Image and Image Version**
-  :::column-end:::
-  :::column:::
-    **Supported SAP Software Version**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Red Hat
-  :::column-end:::
-  :::column:::
-    Red Hat Enterprise Linux 8.6 for SAP Applications - x64 Gen2 latest
-  :::column-end:::
-  :::column:::
-    S/4HANA 1909 SPS 03, S/4HANA 2020 SPS 03, S/4HANA 2021 ISS 00, S/4HANA 2022 ISS 00
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Red Hat
-  :::column-end:::
-  :::column:::
-    Red Hat Enterprise Linux 8.4 for SAP Applications - x64 Gen2 latest
-  :::column-end:::
-  :::column:::
-    S/4HANA 1909 SPS 03, S/4HANA 2020 SPS 03, S/4HANA 2021 ISS 00, S/4HANA 2022 ISS 00
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Red Hat
-  :::column-end:::
-  :::column:::
-    Red Hat Enterprise Linux 8.2 for SAP Applications - x64 Gen2 latest
-  :::column-end:::
-  :::column:::
-    S/4HANA 1909 SPS 03, S/4HANA 2020 SPS 03, S/4HANA 2021 ISS 00, S/4HANA 2022 ISS 00
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    SUSE
-  :::column-end:::
-  :::column:::
-    SUSE Linux Enterprise Server (SLES) for SAP Applications 15 SP4 - x64 Gen2 latest
-  :::column-end:::
-  :::column:::
-    S/4HANA 1909 SPS 03, S/4HANA 2020 SPS 03, S/4HANA 2021 ISS 00, S/4HANA 2022 ISS 00
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    SUSE
-  :::column-end:::
-  :::column:::
-    SUSE Linux Enterprise Server (SLES) for SAP Applications 15 SP3 - x64 Gen2 latest
-  :::column-end:::
-  :::column:::
-    S/4HANA 1909 SPS 03, S/4HANA 2020 SPS 03, S/4HANA 2021 ISS 00, S/4HANA 2022 ISS 00
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    SUSE
-  :::column-end:::
-  :::column:::
-    SUSE Linux Enterprise Server (SLES) for SAP Applications 12 SP5 - x64 Gen2 latest
-  :::column-end:::
-  :::column:::
-    S/4HANA 1909 SPS 03
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    SUSE
-  :::column-end:::
-  :::column:::
-    SUSE Linux Enterprise Server (SLES) for SAP Applications 12 SP4 - x64 Gen2 latest
-  :::column-end:::
-  :::column:::
-    S/4HANA 1909 SPS 03
-  :::column-end:::
-:::row-end:::
+| Publisher | Image and Image Version | Supported SAP Software Version |
+|---|---|---|
+| Red Hat | Red Hat Enterprise Linux 8.6 for SAP Applications - x64 Gen2 latest | S/4HANA 1909 SPS 03, S/4HANA 2020 SPS 03, S/4HANA 2021 ISS 00, S/4HANA 2022 ISS 00 |
+| Red Hat | Red Hat Enterprise Linux 8.4 for SAP Applications - x64 Gen2 latest | S/4HANA 1909 SPS 03, S/4HANA 2020 SPS 03, S/4HANA 2021 ISS 00, S/4HANA 2022 ISS 00 |
+| Red Hat | Red Hat Enterprise Linux 8.2 for SAP Applications - x64 Gen2 latest | S/4HANA 1909 SPS 03, S/4HANA 2020 SPS 03, S/4HANA 2021 ISS 00, S/4HANA 2022 ISS 00 |
+| SUSE | SUSE Linux Enterprise Server (SLES) for SAP Applications 15 SP4 - x64 Gen2 latest | S/4HANA 1909 SPS 03, S/4HANA 2020 SPS 03, S/4HANA 2021 ISS 00, S/4HANA 2022 ISS 00 |
+| SUSE | SUSE Linux Enterprise Server (SLES) for SAP Applications 15 SP3 - x64 Gen2 latest | S/4HANA 1909 SPS 03, S/4HANA 2020 SPS 03, S/4HANA 2021 ISS 00, S/4HANA 2022 ISS 00 |
+| SUSE | SUSE Linux Enterprise Server (SLES) for SAP Applications 12 SP5 - x64 Gen2 latest | S/4HANA 1909 SPS 03 |
+| SUSE | SUSE Linux Enterprise Server (SLES) for SAP Applications 12 SP4 - x64 Gen2 latest | S/4HANA 1909 SPS 03 |
 
 You can use `latest` if you want to use the latest image and not a specific older version. If the *latest* image version is newly released in marketplace and has an unforeseen issue, the deployment can fail. If you're using Portal for deployment, we recommend choosing a different image *sku train* (for example, 12-SP4 instead of 15-SP3) until the issues are resolved. However, if deploying via API/CLI, you can provide any other *image version* that is available. To view and select the available image versions from a publisher, use the following commands:
 
