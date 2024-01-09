@@ -127,11 +127,13 @@ It can take some time to fully deploy Kubernetes clusters and access them. You c
 
 1. Navigate to the [Azure portal](https://portal.azure.com/) and select your AKS cluster.
 
-2. Under **Settings**, select **Networking**.
+1. Under **Settings**, select **Networking**.
 
-3. Under **Application Gateway ingress control**, check **Enable ingress controller**.
+1. Under **Traffic routing**, check the box for **Enable HTTP application routing**.
 
-4. Select **Apply**.
+1. Under **Application Gateway ingress control**, check **Enable ingress controller**.
+
+1. Select **Apply**.
 
 ### Review the service manifest
 
