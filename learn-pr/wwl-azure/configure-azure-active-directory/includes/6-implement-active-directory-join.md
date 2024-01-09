@@ -1,8 +1,4 @@
-Microsoft Entra ID enables single sign-on (SSO) to devices, applications, and services from anywhere. To support SSO, IT admins must ensure corporate assets are protected, and devices meet standards for security and compliance.
-
-:::image type="content" source="../media/azure-joined-devices-27a1fc5f.png" alt-text="Diagram that shows a device connecting to Microsoft Entra ID. Microsoft Entra ID is shown connecting with on-premises AD." border="false":::
-
-The Microsoft Entra join feature works with SSO to provide access to organizational apps and resources, and to simplify Windows deployments of work-owned devices.
+Microsoft Entra ID enables single sign-on (SSO) to devices, applications, and services from anywhere. To support SSO, IT admins must ensure corporate assets are protected, and devices meet standards for security and compliance. The Microsoft Entra join feature works with SSO to provide access to organizational apps and resources, and to simplify Windows deployments of work-owned devices.
 
 ### Things to know about the Microsoft Entra join feature
 
