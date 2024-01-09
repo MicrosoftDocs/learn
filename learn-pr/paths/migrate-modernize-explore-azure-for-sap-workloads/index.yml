@@ -14,6 +14,7 @@ prerequisites: |
 summary: |
   Experienced SAP professions need to understand the SAP and Microsoft partnership and terminology, along with the architecture, options, and benefits of SAP solutions on Azure explored in these modules.
 iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
 levels:
 - advanced
 roles:
