@@ -1,8 +1,8 @@
-You've been tasked with creating a simple API using the framework Express. The online retailer wants to evaluate Express to see if it's easy to work with. As part of that evaluation, they want you to build a web application that serves different routes. 
-
-
+Tailwind Traders has tasked you with creating a simple API using the Express framework. The online retailer wants to evaluate Express to see if it's easy to work with. As part of that evaluation, they want you to build a web application that serves different routes. 
 
 ## Open project in development container
+
+Use the provided development container to complete the exercises in this module. The development container is preconfigured with the tools you need to complete the exercises.
 
 #### [Remote development (browser)](#tab/github-codespaces)
 
@@ -81,14 +81,13 @@ You've been tasked with creating a simple API using the framework Express. The o
 Create a basic application that handles requests.
 
 1. Open a terminal in the dev container.
-1. Create a new folder named `my-express-app`, and enter the following commands:
+1. Use the following commands to create a new Node.js project and install the Express framework:
 
    ```bash
    mkdir my-express-app
    cd my-express-app
    npm init -y
    npm install express
-
    ```
    
    The `init` command creates a default **package.json** file for your Node.js project. The `install` command installs the Express framework.
@@ -100,9 +99,11 @@ Create a basic application that handles requests.
    ```bash
    "dependencies": {
      "express": "^4.18.1"
+     ...
+   }   
    ```
   
-   This entry indicates the Express framework is installed.
+   This entry indicates the Express framework is installed. This sample code uses version 4 of the Express framework.
 
 1. In a code editor in the `my-express-app` folder, create a file named **app.js**, and add the following code:
 
@@ -116,7 +117,7 @@ Create a basic application that handles requests.
    app.listen(port, () => console.log(`Example app listening on port ${port}! http://localhost:${port}/`));
    ```
 
-   The code creates an instance of an Express application by invoking the `express()` method.
+   The code creates an instance of an Express application by invoking the `express()` method. This is the top-level function exported by the Express module. All further configuration and functionality is added via the `app` variable.
   
    Notice how the code sets up a route to slash `/`, the root, with the syntax:
    
@@ -137,7 +138,7 @@ Create a basic application that handles requests.
 
    You should see the following output:
 
-   ```output
+   ```console
    Example app listening at http://localhost:3000
    ```
 
@@ -145,7 +146,7 @@ Create a basic application that handles requests.
 
 1. You can right-click and select the URL in the terminal or you can open the browser when Visual Studio Code pops up a notification asking if you want to **Open in browser**. You should see the following output:
    
-   ```output
+   ```console
    Hello World!
    ```
 
@@ -156,7 +157,8 @@ Create a basic application that handles requests.
 
 Use the same app.js file to add a new route.
 
-1. In a code editor, open the app.js file. Add the following code after the existing `app.get` syntax after the code for the first route, `/`:
+1. In a code editor, open the app.js file. 
+1. Add the following code after the existing `app.get` syntax after the code for the first route, `/`:
 
    ```javascript
    app.get("/products", (req,res) => {
@@ -221,13 +223,13 @@ Use the same app.js file to add a new route.
 
    You should see the following output:
 
-   ```output
+   ```console
    Example app listening at http://localhost:3000
    ```
 
-1. In a browser, return to the tab from the previous step and add the new route, `/products`, to the end of the URL. You should see the following output:
+1. In a browser, return to the tab from the previous step and add the new route, `/products`, to the end of the URL. You should see the following JSON output:
 
-   ```output
+   ```console
    [{"id":1,"name":"hammer"},{"id":2,"name":"screwdriver"},{"id":3,"name":"wrench"}]
    ```
 
