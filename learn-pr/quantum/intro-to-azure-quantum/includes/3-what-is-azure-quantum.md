@@ -10,7 +10,7 @@ With Azure Quantum and the Azure Quantum Development Kit (Modern QDK), you're ab
 
 Quantum programming is a distinct art from classical programming that requires different tools to understand and express quantum algorithmic thinking. The Azure Quantum Development Kit (Modern QDK) is the software development kit required to interface with the Azure Quantum service. With the Quantum Development Kit, you can build programs that run on quantum hardware in Azure Quantum.
 
-The Modern QDK includes Q#, a high-level **quantum programming language**. Q# is designed to address the challenges of quantum information processing. The language is integrated in a software stack that enables a quantum algorithm to be compiled down to the primitive operations of a quantum computer.
+The Modern QDK includes Q#, a high-level **quantum programming language**. Q# is designed to address the challenges of quantum information processing. The Q# language is integrated in a software stack that enables a quantum algorithm to be compiled down to the primitive operations of a quantum computer.
 
 The Modern QDK is the only development kit ready for Fault-Tolerant Quantum Computing (FTQC). With the Modern QDK, you can:
 
