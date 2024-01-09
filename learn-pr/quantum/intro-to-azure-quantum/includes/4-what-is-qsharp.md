@@ -52,7 +52,7 @@ The Q# language doesn’t specify whether the qubits in the program are logical 
 
 ### Compiler-generated controlled and adjoint specializations
 
-Q# can automatically make operations reversible and controlled. capability  makes writing algorithms easier and allows for compiler driven optimization of quantum code.
+Q# can automatically make operations reversible and controlled. This capability makes writing algorithms easier and allows for compiler driven optimization of quantum code.
 
 ### First-class operations
 

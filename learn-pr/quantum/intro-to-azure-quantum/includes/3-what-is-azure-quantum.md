@@ -10,11 +10,11 @@ With Azure Quantum and the Azure Quantum Development Kit (Modern QDK), you're ab
 
 Quantum programming is a distinct art from classical programming that requires different tools to understand and express quantum algorithmic thinking. The Azure Quantum Development Kit (Modern QDK) is the software development kit required to interface with the Azure Quantum service. With the Quantum Development Kit, you can build programs that run on quantum hardware in Azure Quantum.
 
-The Modern QDK includes Q#, a high-level **quantum programming language**. Q# is designed to address the challenges of quantum information processing. Q# is integrated in a software stack that enables a quantum algorithm to be compiled down to the primitive operations of a quantum computer.
+The Modern QDK includes Q#, a high-level **quantum programming language**. Q# is designed to address the challenges of quantum information processing. The language is integrated in a software stack that enables a quantum algorithm to be compiled down to the primitive operations of a quantum computer.
 
 The Modern QDK is the only development kit ready for Fault-Tolerant Quantum Computing (FTQC). With the Modern QDK, you can:
 
-- **Debug your code:** It offers a quantum computing debugger that can step through classical and quantum code. The quantum computing debugger paired with its sparse in-memory simulator, provides fast simulation of up to thousands of logical qubits.
+- **Debug your code:** It offers a quantum computing debugger that can step through classical and quantum code. This debugger paired with its sparse in-memory simulator, provides fast simulation of up to thousands of logical qubits.
 
 - **Choose your platform:** The Modern QDK runs in your web browser with no installation necessary, and with its VS Code extension, it runs on your PC, Mac or Linux machine.
 
@@ -22,7 +22,7 @@ The Modern QDK is the only development kit ready for Fault-Tolerant Quantum Comp
 
 - **Run on your choice of hardware:** The QDK integrates seamlessly with Azure Quantum to run your algorithms on a wide range of quantum computers and simulators.
 
-- **Design for FTQC:** The Modern QDK pairs with the state-of-the-art Azure Quantum Resource Estimator to provide a language designed specifically for quantum computing. Q# frees you from thinking about qubit architectures, by abstracting the hardware and allowing you to mix classical and quantum computation all performed by the quantum machine you're targeting.
+- **Design for FTQC:** The Modern QDK pairs with the state-of-the-art Azure Quantum Resource Estimator to provide a language designed specifically for quantum computing. Q# frees you from thinking about qubit architectures. It abstracts the hardware and allows you to mix classical and quantum computation, all performed by the quantum machine you're targeting.
 
 ### Hybrid quantum computing
 
@@ -36,7 +36,7 @@ In quantum computing, resource estimation is the ability to understand the resou
 
 Azure Quantum provides a tool for estimating the resources of your quantum program. The Azure Quantum Resource Estimator allows you to assess architectural decisions, compare qubit technologies, and determine the resources needed to execute a given quantum algorithm. You can choose from predefined fault-tolerant protocols and specify assumptions of the underlying physical qubit model.
 
-The Azure Quantum Resource Estimator takes a set of inputs such as qubit architecture, a quantum error correction (QEC) code, an error budget, and other parameters into account, and computes post-layout physical resource estimation.
+The Azure Quantum Resource Estimator takes a set of inputs such as qubit architecture, a quantum error correction (QEC) code, an error budget, and other parameters into account, and computes a post-layout physical resource estimation.
 
 If you want to know more, check out the module [Estimate physical resources for quantum algorithms by using the Azure Quantum Resource Estimator](/training/modules/estimate-resources-quantum-algorithms).
 
@@ -44,7 +44,7 @@ If you want to know more, check out the module [Estimate physical resources for 
 
 In Azure Quantum, you can find various quantum hardware providers to help you get ready for the future of scaled quantum machines. Unlike other solutions, you're not siloed to a single hardware technology, and you benefit from a full stack approach protecting your long-term investments.
 
-- **IonQ:** Dynamically reconfigurable trapped-ion quantum computers for up to 11 fully connected qubits. Lets you run a two-qubit gate between any pair.
+- **IonQ:** Dynamically reconfigurable trapped-ion quantum computers for up to 11 fully connected qubits. IonQ lets you run a two-qubit gate between any pair.
 - **PASQAL**: Neutral atom-based quantum processors operating at room temperature, with long coherence times and impressive qubit connectivity.
 - **Quantinuum:** Trapped-ion systems with high-fidelity, fully connected qubits, low error rates, qubit reuse, and the ability to perform mid-circuit measurements.
 - **Rigetti:** Gate-based superconducting processors based on tunable qubits. Their latest Aspen-M family processor is based on proprietary scalable multi-chip technology, enabling low latency and parallel execution.

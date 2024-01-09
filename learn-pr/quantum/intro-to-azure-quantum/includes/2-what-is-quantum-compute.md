@@ -52,4 +52,4 @@ A good quantum computer should have these five features:
 
 These five criteria are often known as the Di Vincenzo criteria for quantum computation.
 
-The engineering challenge of  building devices that meet these five criteria, is one of the most demanding ever faced by humankind. Microsoft is partnering with some of the best-in-class quantum-computer manufacturers around the world to give you access to the latest quantum computing solutions through Azure Quantum.
+The engineering challenge of building devices that meet these five criteria is one of the most demanding ever faced by humankind. Microsoft is partnering with some of the best-in-class quantum-computer manufacturers around the world to give you access to the latest quantum computing solutions through Azure Quantum.
