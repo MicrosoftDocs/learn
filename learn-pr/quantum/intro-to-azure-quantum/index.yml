@@ -3,7 +3,7 @@ uid: learn.quantum.intro-to-azure-quantum
 metadata:
   title: Introduction to quantum computing with Azure Quantum
   description: Get started with quantum computing and the Azure Quantum service.
-  ms.date: 01/08/2024
+  ms.date: 01/09/2024
   author: SoniaLopezBravo
   ms.author: sonialopez
   ms.topic: interactive-tutorial
