@@ -3,7 +3,7 @@ uid: learn.wwl.migrate-modernize-implement-disaster-recovery-sap-workloads-azure
 metadata:
   title: Modernize and implement disaster recovery for SAP workloads in Azure
   description: "Explore disaster recovery support of Azure for SAP workloads, including deployments within single and multiple Azure regions, multi-tier SAP NetWeaver. Prepare for AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud."
-  ms.date: 01/08/2024
+  ms.date: 01/09/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
