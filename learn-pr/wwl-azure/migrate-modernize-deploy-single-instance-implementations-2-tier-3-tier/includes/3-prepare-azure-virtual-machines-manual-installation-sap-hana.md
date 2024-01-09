@@ -53,46 +53,9 @@ The root file system in a Linux VM on Azure has a size limitation. You need to a
 
 Based on the SAP HANA TDI storage requirements, the following Azure premium storage configuration is suggested:
 
-:::row:::
-  :::column:::
-    **VM SKU**
-  :::column-end:::
-  :::column:::
-    **RAM**
-  :::column-end:::
-  :::column:::
-    **/hana/data and /hana/log striped with LVM or mdadm**
-  :::column-end:::
-  :::column:::
-    **/hana/shared**
-  :::column-end:::
-  :::column:::
-    **/root volume**
-  :::column-end:::
-  :::column:::
-    **/usr/sap**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    GS5
-  :::column-end:::
-  :::column:::
-    448 GB
-  :::column-end:::
-  :::column:::
-    2 x P30
-  :::column-end:::
-  :::column:::
-    1 x P20
-  :::column-end:::
-  :::column:::
-    1 x P10
-  :::column-end:::
-  :::column:::
-    1 x P10
-  :::column-end:::
-:::row-end:::
+| VM SKU | RAM | /hana/data and /hana/log striped with LVM or mdadm | /hana/shared | /root volume | /usr/sap |
+|---|---|---|---|---|---|
+| GS5 | 448 GB | 2 x P30 | 1 x P20 | 1 x P10 | 1 x P10 |
 
 In the suggested disk configuration, the HANA data volume and log volume are placed on the same set of premium storage disks that are striped with LVM or mdadm. It isn't necessary to define any RAID redundancy level because Azure premium storage provides sufficient level of redundancy.
 

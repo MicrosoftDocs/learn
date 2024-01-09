@@ -24,7 +24,7 @@ The GitHub repository [SAP on Azure Deployment Automation Framework](https://git
 
 The templates are split into:
 
-- Terraform modules, which deploy the infrastructure components (such as VMs, network, storage) in Azure and then call the:
+- Terraform modules, which deploy the infrastructure components (such as VMs, network, storage) in Azure and then call the Ansible playbooks.
 - Ansible playbooks that run different roles to install and configure SAP HANA and required applications on the already deployed infrastructure.
 
 The supported scenarios include the full deployment of:
