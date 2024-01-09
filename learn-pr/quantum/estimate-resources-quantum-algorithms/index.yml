@@ -3,7 +3,7 @@ uid: learn.quantum.estimate-resources-quantum-algorithms
 metadata:
   title: Estimate physical resources for quantum algorithms by using the Azure Quantum Resource Estimator
   description: Learn how to get started with Azure Quantum Resource Estimator.
-  ms.date: 02/08/2023
+  ms.date: 01/04/2024
   author: SoniaLopezBravo
   ms.author: sonialopez
   ms.topic: module
@@ -15,7 +15,9 @@ abstract: |
   - Learn what resource estimation is and why it's important.
   - Explore the Azure Quantum Resource Estimator.
   - Estimate the resources of an algorithm for practical quantum advantage.
-prerequisites: To use the Azure Quantum service, you need an active Azure subscription. For more information about creating an Azure account and subscription, see the module [Create an Azure account](/training/modules/create-an-azure-account/).
+prerequisites: |
+  - The latest version of [Visual Studio Code](https://code.visualstudio.com/download) or open [VS Code on the Web](https://vscode.dev/).
+  - The latest version of the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension. 
 iconUrl: /training/achievements/quantum/azure-quantum-resource-estimator.svg
 ratingEnabled: true
 levels:
