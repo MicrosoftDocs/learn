@@ -1,21 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.mitigate-incidents-microsoft-365-defender
 metadata:
-  title: Mitigate incidents using Microsoft Defender XDR
-  description: "Mitigate incidents using Microsoft Defender XDR"
-  ms.date: 02/27/2023
+  title: Mitigate incidents using Microsoft 365 Defender
+  description: "Mitigate incidents using Microsoft 365 Defender"
+  ms.date: 12/28/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: module
+  ms.prod: azure
   ms.service: microsoft-365-security
   ms.subservice: m365d
-title: Mitigate incidents using Microsoft Defender XDR
-summary: Learn how the Microsoft Defender portal provides a unified view of incidents from the Microsoft Defender XDR family of products.
+title: Mitigate incidents using Microsoft 365 Defender
+summary: Learn how the Microsoft 365 Defender portal provides a unified view of incidents from the Microsoft 365 Defender family of products.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Manage incidents in Microsoft Defender XDR
-  - Investigate incidents in Microsoft Defender XDR
-  - Conduct advanced hunting in Microsoft Defender XDR
+  - Manage incidents in Microsoft 365 Defender
+  - Investigate incidents in Microsoft 365 Defender
+  - Conduct advanced hunting in Microsoft 365 Defender
 prerequisites: |
   Intermediate understanding of Microsoft 365.
 iconUrl: /training/achievements/mitigate-incidents-in-microsoft-365-defender.svg

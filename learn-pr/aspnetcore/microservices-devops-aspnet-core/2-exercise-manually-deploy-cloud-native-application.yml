@@ -8,6 +8,7 @@ metadata:
   ms.author: scaddie
   ms.manager: markl
   ms.topic: unit
+  ms.custom: devx-track-azurecli
 title: Manually deploy your cloud-native app to Azure Kubernetes Service
 durationInMinutes: 8
 content: |

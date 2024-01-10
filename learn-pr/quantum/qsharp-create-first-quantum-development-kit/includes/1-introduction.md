@@ -1,11 +1,11 @@
 
-In this module, you'll write your first Q# quantum program locally on your computer by using the Azure Quantum Development Kit (Modern QDK). The Modern QDK enables you to write your quantum programs, then test them with a simulator, and finally run them on real quantum hardware.
+In this module, you'll write your first quantum program by using the Azure Quantum Development Kit (Modern QDK). The Modern QDK enables you to write your quantum programs, then test them with a simulator, and finally run them on real quantum hardware.
 
-You'll write a quantum program to generate random numbers. A quantum random number generator is a perfect introduction to quantum computing because it illustrates quantum behavior and requires only a few lines of code. You will also review the basic structure of a Q# program.
+You write a quantum program to generate random numbers. A quantum random number generator is a perfect introduction to quantum computing because it illustrates quantum behavior and requires only a few lines of code. You will also review the basic structure of a Q# program.
 
 ## Learning objectives
 
-By the end of this module, you'll be able to:
+After completing this module, you're able to:
 
 - Allocate qubits and apply quantum operations to them.
 - Create and run Q# programs in Visual Studio Code.

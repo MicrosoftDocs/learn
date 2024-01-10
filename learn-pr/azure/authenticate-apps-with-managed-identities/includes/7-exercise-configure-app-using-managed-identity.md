@@ -15,7 +15,7 @@ In this exercise, you'll edit your app to use the new key vault. Then, you'll gr
     ```
 
     > [!NOTE]
-    > If the environment variable `publicIP` isn't set, reset it by running the following command.
+    > If the environment variable `publicIP` isn't set, reset it by running the following command:
     >
     > ```azurecli
     > export publicIP=$(az vm show \
@@ -183,4 +183,6 @@ In this exercise, you'll edit your app to use the new key vault. Then, you'll gr
 
     This time, the application should retrieve the secret from Key Vault and display its value.
 
-    `Database connection string:: Server=tcp:prodserverSQL.database.windows.net,1433;Database=myDataBase;User ID=mylogin@myserver;Password=examplePassword;Trusted_Connection=False;Encrypt=True;`
+    ```output
+    Database connection string:: Server=tcp:prodserverSQL.database.windows.net,1433;Database=myDataBase;User ID=mylogin@myserver;Password=examplePassword;Trusted_Connection=False;Encrypt=True;
+    ```
