@@ -3,12 +3,12 @@
 
 Setting up your environment and deploying some resources to start with is an important step in building full stack applications.
 
-Recall in the catching the bus sample, you'll use resources, including Azure SQL Database, Azure Functions, and Azure Logic Apps. Here, you'll deploy Azure SQL Database with the required configurations.
+Recall in the catching the bus example, you'll use resources including Azure SQL Database, Azure Functions, and Azure Logic Apps. Here, you'll deploy Azure SQL Database with the required configurations.
 
 > [!NOTE]
-> If you completed the previous module of this learning path, you built the foundation of the architecture with Azure SQL Database, and you're redeploying that here. If you did not complete the previous module, everything you need will be completed during this exercise.
+> If you completed the previous module of this learning path, you built the foundation of the architecture with Azure SQL Database, and you're redeploying that here. If you didn't complete the previous module, you'll complete everything you need during this exercise.
 
-You'll then deploy an empty Azure Function app and configure its yaml file and GitHub secrets for continuous integration and continuous delivery (CI/CD). Setting up CI/CD with GitHub will automate the build process as you make changes in future exercises. Later in the module, you'll complete, publish, and monitor the Azure Function in action.
+You'll then deploy an empty Azure Function app and configure its yaml file and GitHub secrets for continuous integration and continuous delivery (CI/CD). Setting up CI/CD with GitHub automates the build process as you make changes in future exercises. Later in the module, you'll complete, publish, and monitor the Azure Function in action.
 
 ## Configure your environment for development using Visual Studio Code
 
@@ -52,7 +52,7 @@ In order to set up the database for the bus-catching scenario, you'll first need
 
 These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, and region, because they won't be shown again.
 
-1. Start by obtaining your local public IP address. Ensure that you're disconnected from any VPN service, and open a local PowerShell terminal on your device. Run the following command, and note the resulting IP address.
+1. Start by obtaining your local public IP address. Ensure that you're disconnected from any VPN service and open a local PowerShell terminal on your device. Run the following command, and note the resulting IP address.
 
     ```powershell
     (Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content
@@ -78,12 +78,12 @@ These scripts should take three to five minutes to complete. Be sure to note you
     >
     > - 8 characters minimum and 16 characters maximum
     > - Requires 3 out of 4 of the following:
-    >    - Lowercase characters
-    >    - Uppercase characters
-    >    - Numbers ( 0-9 )
-    >    - Symbols ( @ # $ % ^ & * - _  + = [ ] { } | \ : ‘ , . ? / ` ~ “ ( ) ; )
+    >   - Lowercase characters
+    >   - Uppercase characters
+    >   - Numbers ( 0-9 )
+    >   - Symbols ( @ # $ % ^ & * - _  + = [ ] { } | \ : ‘ , . ? / ` ~ “ ( ) ; )
 
-1. Output and store the information you'll need throughout the module by running the following code in Cloud Shell. You'll likely need to press Enter after you paste the code, because the last line won't be run by default.
+1. Output and store the information you'll need throughout the module by running the following code in Cloud Shell. You'll likely need to press <kbd>Enter</kbd> after you paste the code, because the last line won't be run by default.
 
     ```powershell
     # Get resource group and location and random string
@@ -150,7 +150,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. In the repository toolbar, select **Settings**.
 
-1. In the Settings page navigation pane, select **Secrets**, then select **Actions**. On the Action Secrets pane, select **New repository secret**, and then enter the following items:
+1. In the Settings page navigation pane, select **Secrets and variables**, then select **Actions**. On the Action Secrets pane, select **New repository secret**, and then enter the following items:
     1. *Name*: **AZURE_SQL_CONNECTION_STRING**
     1. *Value*: **Connection string from prior step**
 
@@ -162,12 +162,12 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. Select the **Source Control** icon on the left-hand taskbar.
 
-1. In the *Message* box, enter "Enable database yaml" or some other message and select the **checkmark**.
+1. In the *Message* box, enter "Enable database yaml" or some other message and select **Commit**.
 
     > [!TIP]
     > If the Source Control list of items is empty, you can choose to create an empty commit to push and kick off GitHub actions.
 
-1. Select the ellipsis in the toolbar and then select **Push**, which will kick off a build. Confirm it builds successfully by opening your GitHub repository, and selecting **Actions** on the toolbar. What you've done is enable the GitHub SQL Action, which takes care of deploying the appropriate schema that is required by the database.
+1. Select the ellipsis in the toolbar and then select **Push**, which will kick off a build. Confirm it builds successfully by opening your GitHub repository and selecting **Actions** on the toolbar. What you've done is enable the GitHub SQL Action, which takes care of deploying the appropriate schema that is required by the database.
 
 1. By this point, the script in the Azure Cloud Shell to the right should be complete. Run the following code to start a bash session. The final step is to load in the route reference data.
 
@@ -175,7 +175,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     bash
     ```
 
-1. Copy the following code to a text file, update \<server-name\> with your server name and \<password\> with password. Then enter this in the Cloud Shell. This will start a sqlcmd session.
+1. Copy the following code to a text file, update \<server-name\> with your server name and \<password\> with password, then enter the completed code in the Cloud Shell. This will start a sqlcmd session.
 
     ```bash
     TERM=dumb
