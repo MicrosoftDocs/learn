@@ -13,73 +13,73 @@ durationInMinutes: 10
 quiz:
   title: Check your knowledge
   questions:
-  - content: "On which versions of SQL Server can you use the Query Store?"
+  - content: "Which versions of SQL Server support the Query Store?"
     choices:
     - content: "Any version after SQL Server 2005."
       isCorrect: false
-      explanation: "The Query Store was introduced in SQL Server 2016. Any SQL Server can use the Query Store, regardless of database compatibility levels."
+      explanation: "The Query Store wasn't introduced until SQL Server 2016, so it isn't present in earlier server versions."
     - content: "Any version after SQL Server 2016."
       isCorrect: true
-      explanation: "The Query Store was introduced in SQL Server 2016. Any SQL Server 2016 or later instance can use the Query Store, regardless of database compatibility levels."
-    - content: "Any version after SQL Server 2016, with databases that have compatibility levels of 130 or higher."
+      explanation: "Any database running on a SQL Server 2016 or later server instance can use the Query Store, regardless of the database compatibility level."
+    - content: "Only SQL Server 2022."
       isCorrect: false
-      explanation: "The Query Store was introduced in SQL Server 2016. Any SQL Server 2016 or later instance can use the Query Store, regardless of database compatibility levels."
+      explanation: "The Query Store was introduced in SQL Server 2016, so any SQL Server 2016 or later instance can use the Query Store."
   - content: "Which of the following tools predicts how many rows a query is likely to return?"
     choices:
     - content: "The cardinality estimator"
       isCorrect: true
-      explanation: "The database version determines the cardinality estimator, which predicts how many rows a query is likely to return."
+      explanation: "The cardinality estimator predicts how many rows a query is likely to return, so a cost-based query optimizer can select the lowest-cost query plan."
     - content: "The Query Tuning Assistant"
       isCorrect: false
-      explanation: "The QTA compares query statistics, but doesn't predict how many rows a query is likely to return."
-    - content: "Automatic plan correction"
+      explanation: "The QTA experiments with query plans, but doesn't predict how many rows a query is likely to return."
+    - content: "The Query Store"
       isCorrect: false
-      explanation: "Automatic plan correction autotunes queries and applies the last good plan, but doesn't predict how many rows a query is likely to return."
+      explanation: "The Query Store collects query statistics, but doesn't predict how many rows a query is likely to return."
   - content: "Which of the following statements about automatic plan correction is true?"
     choices:
     - content: "Is set at the server level."
       isCorrect: false
-      explanation: "Automatic plan correction is set at the database level, and instructs SQL Server to use the last good query plan."
+      explanation: "Automatic plan correction is set at the database level."
     - content: "Can mean rolling back to an earlier cardinality estimator."
       isCorrect: true 
       explanation: "Automatic plan correction instructs SQL Server to use the last good plan if regression is found, and can mean rolling back to an earlier cardinality estimator."
-    - content: "Always uses the current cardinality estimator that's mapped to the compatibility level."
+    - content: "Always uses the current cardinality estimator mapped to the compatibility level."
       isCorrect: false
-      explanation: "Automatic plan correction instructs SQL Server to use the last good plan if regression is found, and can mean rolling back to an earlier cardinality estimator."
-  - content: "What does the Query Tuning Assistant do?"
+      explanation: "Unlike the QTA, automatic plan correction can mean rolling back to an earlier cardinality estimator."
+  - content: "What does the QTA do?"
     choices:
     - content: "Collects data to monitor queries or measure the effects of a single change."
       isCorrect: false
-      explanation: "The Query Store collects data to monitor queries or measure the effects of a single change."
+      explanation: "The Query Store collects data, which the QTA can then use to identify and help fix regressing queries."
     - content: "Predicts the outcome of queries based on database compatibility level."
       isCorrect: false
       explanation: "The cardinality estimator, not the QTA, predicts how many rows a query is likely to return based on compatibility level."
     - content: "Finds queries that are beginning to regress and automatically experiments to find solutions."
       isCorrect: true
-      explanation: "The QTA uses Query Store data to find underperforming queries and automatically seeks solutions to speed them up."
+      explanation: "The QTA uses Query Store data to find underperforming queries and automatically seek solutions to speed them up."
   - content: "How long should the Query Store run to gather sufficient workload information on a database?"
     choices:
     - content: "Long enough for the Query Store to capture a typical cycle of business activity."
       isCorrect: true
-      explanation: "Let the Query Store capture a typical cycle of business activity, including regular business hours, nightly processing, maintenance windows, and other scheduled or periodic activity."
+      explanation: "Let the Query Store capture a typical cycle of business activity, including business hours, nightly processing, maintenance windows, and other activities."
     - content: "One week."
       isCorrect: false
-      explanation: "For many businesses, a week's activity is sufficient, but a typical business cycle can be much shorter or longer."
+      explanation: "For many businesses, a week's activity is sufficient, but for some businesses the cycle is shorter or longer."
     - content: "It depends on the Query Store version."
       isCorrect: false
-      explanation: "You can enable Query Store on all SQL Server versions starting with SQL Server 2016, but the SQL Server version has no relation to the amount of data needed."
-  - content: "What's the correct order of steps to use QTA to evaluate the effects on query performance of upgrading a database compatibility level from 110 to 160?"
+      explanation: "The Query Store is available on all SQL Server versions starting with SQL Server 2016, but the SQL Server version has no relation to the amount of data collected."
+  - content: "What are the correct steps to use the QTA for evaluating query regressions caused by upgrading a database from SQL Server 2012 to SQL Server 2022?"
     choices:
-    - content: "Migrate the database to SQL Server 2022. Upgrade the compatibility level. Collect Query Store statistics on the database after the upgrade. Use the QTA to find regressing queries."
+    - content: "Migrate the database to SQL Server 2022 and upgrade the compatibility level. Enable the Query Store and collect statistics on the database after the upgrade, then use the QTA to investigate regressing queries."
       isCorrect: false
-      explanation: "For the QTA to function correctly, you must collect baseline Query Store data before you upgrade the database compatibility level."
-    - content: "Enable the Query Store on the database and collect baseline query statistics. Migrate the database to SQL Server 2022. Upgrade the compatibility level. Collect Query Store statistics after the upgrade. Use the QTA to find regressing queries."
+      explanation: "For the QTA to function correctly, you must collect baseline Query Store statistics before you upgrade the compatibility level, and compare them to results after the upgrade."
+    - content: "Enable the Query Store and collect baseline query statistics. Migrate the database to SQL Server 2022 and upgrade the compatibility level. Collect Query Store statistics after the upgrade, and use the QTA to investigate regressing queries."
       isCorrect: false
-      explanation: "The Query Store was implemented in SQL Server 2016, so you must have at least a SQL Server 2016 (130) database to enable the Query Store and collect baseline statistics."
-    - content: "Migrate the database to SQL Server 2022. Enable the Query Store on the database and collect baseline query statistics. Upgrade the compatibility level. Collect Query Store statistics after the upgrade. Use the QTA to find regressing queries."
+      explanation: "The Query Store wasn't introduced until SQL Server 2016, so you must migrate the database to at least a SQL Server 2016 instance before you can enable the Query Store and collect baseline statistics."
+    - content: "Migrate the database to SQL Server 2022. Enable the Query Store on the database and collect baseline statistics. Upgrade the compatibility level, continue to collect Query Store statistics, and use the QTA to investigate regressing queries."
       isCorrect: true
-      explanation: "For the QTA to function correctly, you should migrate the database to SQL Server 2022, collect baseline Query Store statistics, upgrade the compatibility level, collect more Query Store statistics, and then use the QTA to find regressing queries."
-  - content: "Which of the following isn't a valid setting for Query Store in SQL Server 2022?"
+      explanation: "For the QTA to function correctly, you should collect Query Store statistics both before and after upgrading the compatibility level. Then use the QTA to compare the two sets of statistics and investigate regressing queries."
+  - content: "Which of the following choices isn't a valid setting for Query Store in SQL Server 2022?"
     choices:
     - content: "Off"
       isCorrect: false

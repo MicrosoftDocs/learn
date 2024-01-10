@@ -3,7 +3,7 @@ uid: learn-sqlserver.use-sql-server-query-tuning-assistant
 metadata:
   title: Use the SQL Server Query Tuning Assistant 
   description: Learn how the Query Tuning Assistant (QTA) works alongside the Query Store to compare query performance statistics and find queries that are regressing due to changing compatibility levels.
-  ms.date: 01/08/2024
+  ms.date: 01/10/2024
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
@@ -14,14 +14,14 @@ summary: Learn how the Query Tuning Assistant (QTA) works alongside the Query St
 
 abstract: |
   In this module, you:
-  - Decide if the QTA is the right solution for you.
-  - Use the Query Store to assess query performance.
-  - Understand how the QTA works to find regressing queries.
-  - Tune queries after migration to maintain performance
+  - Evaluate query tuning solutions like the QTA and automatic plan correction.
+  - Learn how to use the Query Store to assess query performance.
+  - Understand how the QTA works to address regressing queries.
+  - Learn how to use the QTA to maintain query performance after database upgrade.
 prerequisites: | 
-  - Experience with query tuning and performance
-  - Knowledge of database properties and options
-  - Understanding of query plans
+  - Knowledge of SQL Server database properties and options
+  - Experience with using SQL Server Management Studio (SSMS) or executing SQL queries
+  - Understanding of query plans, query tuning, and performance optimization
 iconUrl: /training/achievements/sqlserver/using-the-sql-server-query-tuning-assistant.svg
 levels:
 - beginner

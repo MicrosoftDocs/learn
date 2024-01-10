@@ -8,24 +8,24 @@ System performance is crucial to the operation of the company's stores. There's 
 
 You need to monitor the databases for any drop in performance following the upgrade, and to find the best method for identifying and mitigating regressed queries. To accomplish this objective, you can:
 
-- Migrate the databases to the new SQL Server 2022 instance and use Query Store to gather baseline query statistics.
-- Upgrade the migrated databases' compatibility levels and continue to gather query statistics.
-- Use the Query Tuning Assistant (QTA) to compare operational performance metrics between the compatibility level versions.
-- Use the comparison to find queries that are beginning to regress.
+1. Migrate the databases to the new SQL Server 2022 instance and use Query Store to gather baseline query statistics.
+1. Upgrade the migrated databases' compatibility levels and continue to gather query statistics.
+1. Use the Query Tuning Assistant (QTA) to compare operational performance metrics between the compatibility level versions.
+1. Use the comparison to find queries that are beginning to regress.
 
-In this module, you learn how to determine the right tools to find regressing queries in databases upgraded to SQL Server 2022 from SQL Server 2012 and earlier versions.
+In this module, you learn how to determine and use the right tools to find regressing queries in databases upgraded to SQL Server 2022 from SQL Server 2012 and earlier versions.
 
 ## Learning objectives
 
-In this module, you:  
+In this module, you:
 
-- Decide if the Query Tuning Assistant (QTA) is the right solution for you.
+- Evaluate query tuning solutions like the QTA and automatic plan correction.
 - Learn how to use the Query Store to assess query performance.
-- Understand how the QTA works to find regressing queries.
-- Tune queries after migration to maintain performance.
+- Understand how the QTA works to address regressing queries.
+- Learn how to use the QTA to maintain query performance after database upgrade.
 
 ## Prerequisites
 
-- Experience with query tuning and performance
-- Knowledge of database properties and options
-- Understanding of query plans
+- Knowledge of SQL Server database properties and options
+- Experience with using SQL Server Management Studio (SSMS) or executing SQL queries
+- Understanding of query plans, query tuning, and performance optimization
