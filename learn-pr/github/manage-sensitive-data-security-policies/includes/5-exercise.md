@@ -27,4 +27,4 @@ When you've finished the exercise in GitHub, return here for:
 
 
 > [!div class="nextstepaction"]
-> [Start the exercise on GitHub](https://github.com/skills/secure-code-game)
+> [Start the exercise on GitHub]()
