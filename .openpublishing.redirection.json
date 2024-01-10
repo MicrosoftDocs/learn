@@ -31535,6 +31535,206 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-active-directory/9-summary-resources.md",
       "redirect_url": "/training/modules/configure-azure-active-directory/8-summary-resources",
       "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/2-environment-setup.yml",
+    "redirect_url": "/training/paths/create-microservices-with-dotnet",
+    "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/3-review-logging-monitoring.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/4-implement-app-insights.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/4-implement-app-insights.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/4-implement-app-insights.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/4-implement-app-insights.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/8-summary.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/index.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/media/2-environment-setup/k8s-path.png",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/media/3-logging-monitoring/ai-diagram.png",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/media/3-logging-monitoring/azure-monitor.png",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/media/3-logging-monitoring/structured-logging-visualization.png",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/media/4-implement-app-insights/health-check.png",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/media/5-monitor-app-insights/end-to-end-transaction-details.png",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/media/5-monitor-app-insights/end-to-end-transaction-timeline.png",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/media/5-monitor-app-insights/event-types-trace.png",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/media/5-monitor-app-insights/givemefreestuff-search-results.png",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/media/5-monitor-app-insights/givemefreestuff-trace-search-results.png",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/media/5-monitor-app-insights/webshoppingagg-detail-app-map.png",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/media/5-monitor-app-insights/webshoppingagg-initial-app-map.png",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/media/5-monitor-app-insights/webshoppingagg-live-metrics.png",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/media/5-monitor-app-insights/webshoppingagg-request-summary.png",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/media/6-azure-monitor-containers/active-pod-count.png",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/media/6-azure-monitor-containers/expanded-log.png",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/includes/1-introduction.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/includes/2-environment-setup.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/includes/3-review-logging-monitoring.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/includes/4-implement-app-insights.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/includes/5-monitor-app-insights.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/includes/6-azure-monitor-containers.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/includes/8-summary.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/code/deploy/k8s/helm-simple/catalog/templates/configmap.yaml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/code/deploy/k8s/helm-simple/catalog/templates/deployment.yaml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/code/src/apigateways/aggregators/web.shopping.httpaggregator/controllers/couponcontroller.cs",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/code/src/apigateways/aggregators/web.shopping.httpaggregator/services/couponservice.cs",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/code/src/services/catalog/catalog.api/controllers/couponcontroller.cs",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/code/src/services/catalog/catalog.api/extensions/servicecollectionextensions.cs",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/code/src/services/catalog/catalog.api/program.cs",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/code/src/services/catalog/catalog.api/startup.cs",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
     }
   ]
 }
