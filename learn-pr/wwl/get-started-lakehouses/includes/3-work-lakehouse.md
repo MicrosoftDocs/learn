@@ -15,6 +15,8 @@ You can work with the data in the lakehouse in two modes:
 - **Lakehouse** enables you to add and interact with tables, files, and folders in the Lakehouse.
 - **SQL Endpoint** enables you to use SQL to query the tables in the lakehouse and manage its relational data model.
 
+![Screenshot of the two Lakehouse Explorer modes.](../media/explorer-modes.png)
+
 ## Ingest data into a lakehouse
 
 There are many ways to load data into a Fabric lakehouse, including:
