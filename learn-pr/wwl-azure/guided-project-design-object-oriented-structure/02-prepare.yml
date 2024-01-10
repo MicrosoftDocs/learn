@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.guided-project-inheritance-abstraction-polymorphism.prepare
+uid: learn.wwl.guided-project-design-object-oriented-structure.prepare
 title: Prepare for guided project
 metadata:
   title: Prepare for guided project
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-prepare.md)]
+  [!include[](includes/02-prepare.md)]
