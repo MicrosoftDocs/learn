@@ -11,7 +11,7 @@ When an exception occurs, you can manage it by logging an error message, display
 In this module, you'll practice how to:
 
 - Create and exception class.
-- Use a Try/Catch block.
+- Use a Try...Catch block.
 - Throw an exception.
 - Implement exception handling in your code.
 
