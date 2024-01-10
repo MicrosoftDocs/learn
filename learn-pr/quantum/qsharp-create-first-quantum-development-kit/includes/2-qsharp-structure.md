@@ -78,7 +78,7 @@ In Q#, Pauli measurements are done by applying the `Measure` operation, which pe
 > [!NOTE]
 > If the basis array and qubit array are different lengths, then the `Measure` operation will fail.
 
-To implement a measurement in the computational basis {|0〉 ,|1〉} you can also use the `M` operation, which performs a measurement of a single qubit in the Pauli Z basis. Therefore `M` operation is equivalent to applying `Measure([PauliZ], [qubit])`.
+To implement a measurement in the computational basis {|0〉 ,|1〉} you can also use the `M` operation, which performs a measurement of a single qubit in the Pauli Z basis. Therefore the `M` operation is equivalent to applying `Measure([PauliZ], [qubit])`.
 
 A simple example is the following program, which allocates one qubit in the |0〉 state, then applies a Hadamard operation `H` to it and measures the result in the `PauliZ` basis.
 

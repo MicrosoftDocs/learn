@@ -28,7 +28,7 @@ Let's say you generate the bit string ${1101_{\ binary}}$, which is equivalent t
 
 Next, you generate the bit string ${0110_{\ binary}}$, which is equivalent to ${6_{\ decimal}}$. Because 6 is less than 12, the process is complete.
 
-The quantum random number generator returns number 6.
+The quantum random number generator returns the number 6.
 
 ## Create a complete random number generator
 
@@ -83,7 +83,7 @@ namespace QuantumRandomNumberGenerator {
 Let's take a moment to review the new code.
 
 * You need to calculate the number of bits needed to express integers up to `max`. The `BitSizeI` function from the `Microsoft.Quantum.Math` library converts an integer to the number of bits needed to represent it.
-* The `SampleRandomNumberInRange` operation uses a `for` loop to generate random numbers until it generates one that's equal to or less than `max`. The `for` loop works exactly the same as a `for` loop in other programming languages.
+* The `GenerateRandomNumberInRange` operation uses a `for` loop to generate random numbers until it generates one that's equal to or less than `max`. The `for` loop works exactly the same as a `for` loop in other programming languages.
 * The variable `bits` is a mutable variable. A mutable variable is one that can change during the computation. You use the `set` directive to change a mutable variable's value.
 * The `ResultArrayAsInt` function comes from the `Microsoft.Quantum.Convert` library. This function converts the bit string to a positive integer.
 
@@ -129,7 +129,7 @@ namespace QuantumRandomNumberGenerator {
         // Allocate a qubit.
         use q = Qubit();
 
-        // Set the qubit into superposition of 0 and 1 using the Hadamard 
+        // Set the qubit into superposition of 0 and 1 using the Hadamard operation
         H(q);
 
         // At this point the qubit `q` has 50% chance of being measured in the
@@ -157,8 +157,12 @@ The `let` directive declares variables that don't change during the computation.
 
 Let's try out our new random number generator!
 
-1. To test run your program locally on the built-in simulator, select **Run Q# file** from the play icon drop-down in the top-right, or press **Ctrl+5**. Your output will appear in the debug console.
+1. Before running the program, you need to set the target profile to **Unrestricted**. Select **View -> Command Palette**, search for QIR, select **Q#: Set the Azure Quantum QIR target profile**, and then select **Q#: unrestricted**. 
+1. To test run your program locally on the built-in simulator, select **Run Q# File** from the play icon drop-down in the top-right, or press **Ctrl+F5**. Your output will appear in the debug console.
 1. Run the program again to see a different result.
+
+> [!NOTE]
+> If the target profile is not set to **Unrestricted**, you will get an error when you run the program.
 
 Congratulations! Now you know how to combine classical logic with Q# to create a quantum random number generator.
 

@@ -15,7 +15,7 @@ If you concatenate, or combine, these bits into a bit string, you can form a lar
 
 $${0110_{\ binary} \equiv 6_{\ decimal}}$$
 
-If you repeat this process many times, you can combine multiple bits to form any large number. Now you can provide your superior with that number as a secure password, since you can be sure that no space hacker could determine the results of the sequence of measurements.
+If you repeat this process many times, you can combine multiple bits to form any large number.
 
 You build out your quantum random number generator in two phases. In this unit, you build out the first phase, which is to generate a single random bit.
 
@@ -30,7 +30,7 @@ To do so, you:
 
 1. Open Visual Studio Code and select **File > New Text File** to create a new file.
 1. Save the file as `RandomNumberGenerator.qs`. This file will contain the Q# code for your program.
-1. Copy the following code in the `RandomNumberGenerator.qs` file.
+1. Copy the following code into the `RandomNumberGenerator.qs` file.
 
     ```qsharp
     namespace QuantumRandomNumberGenerator {
@@ -60,16 +60,16 @@ To do so, you:
     ```
 
 > [!TIP]
-> The Modern QDK includes a set of Q# samples that you can use to learn more about Q# and quantum computing. To view the samples, open a new Q# file and type `sample`, then select the sample you want to view from the list of options.
+> The Modern QDK includes a set of built-in Q# samples that you can use to learn more about Q# and quantum computing. To view the samples, open a new Q# file and type `sample`, then select the sample you want to view from the list of options. You can find the Q# code in this unit under "Random Bit sample".
 
 ## Explore the Q# code
 
-1. Hover over `H` operation to see a short summary of the definition.
+1. Hover over the `H` operation to see a short summary of the definition.
 1. Place your cursor in front of the `H` operation, right-click and select **Go to Definition**.  This opens a read-only view of the standard library code for the function.
 
 ## Run the program locally
 
-1. To test run your program locally on the built-in simulator, select **Run Q# file** from the play icon drop-down in the top-right, or press **Ctrl+5**. Your output will appear in the debug console.
+1. To test run your program locally on the built-in simulator, select **Run Q# File** from the play icon drop-down in the top-right, or press **Ctrl+F5**. Your output will appear in the debug console.
 1. Run the program again to see a different result.
 
 In the next unit, you'll implement the second phase of your quantum random number generator: combining multiple random bits to form a larger number.

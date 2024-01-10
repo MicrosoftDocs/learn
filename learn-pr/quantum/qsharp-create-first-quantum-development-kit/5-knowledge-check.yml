@@ -19,7 +19,7 @@ quiz:
 
   - content: 'Which of these statements is true about the random number generator that you built in this module?'
     choices:
-    - content: "The quantum random number generator takes the current time from the CPU's clock as seed to generate random numbers."
+    - content: "The quantum random number generator takes the current time from the CPU's clock as a seed to generate random numbers."
       isCorrect: false
       explanation: "The quantum random number generator doesn't use the CPU's clock to generate random numbers. A classical pseudo-random number generator would do that."
     - content: "The quantum random number generator creates one qubit, measures it, and the result of the measurement is a random decimal number."
@@ -29,7 +29,7 @@ quiz:
       isCorrect: true
       explanation: "This is the logic behind the random number generator that you built in this module."
 
-  - content: 'Which of the following structures are required in a Q# program to run successfully?'
+  - content: 'Which of the following structures are required for a Q# program to run successfully?'
     choices:
     - content: 'A Q# program must have a namespace, an operation, and a function.'
       isCorrect: false
