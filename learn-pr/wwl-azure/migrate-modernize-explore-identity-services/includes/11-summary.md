@@ -1,6 +1,6 @@
 Now you have:
 
-- Explored Azure virtual machine authentication, authorization, and access control.
+- Explored Azure Virtual Machine authentication, authorization, and access control.
 - Explored Microsoft Entra ID.
 - Explored SAP Cloud Platform Identity authentication.
 - Added SAP Cloud Platform Identity Authentication from the gallery.
@@ -18,5 +18,5 @@ Now you have:
 - [Tutorial: Microsoft Entra single sign-on (SSO) integration with SAP Fiori](/azure/active-directory/saas-apps/sap-fiori-tutorial)
 - [Tutorial: Microsoft Entra integration with SAP HANA](/azure/active-directory/saas-apps/saphana-tutorial)
 - [Tutorial: Microsoft Entra Single sign-on (SSO) integration with SAP NetWeaver](/azure/active-directory/saas-apps/sap-netweaver-tutorial)
-- [Login to a Linux virtual machine in Azure with Microsoft Entra ID using openSSH certificate-based authentication](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-linux)
+- [Login to a Linux Virtual Machine in Azure with Microsoft Entra ID using openSSH certificate-based authentication](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-linux)
 - [SAP Cloud Platform Identity Authentication Client support team](https://cloudplatform.sap.com/capabilities/security/trustcenter.html)

@@ -8,7 +8,7 @@ You need to prepare the specifications to use the identity services component to
 
 ## Learning objectives
 
-- Explore Azure virtual machine authentication, authorization, and access control.
+- Explore Azure Virtual Machine authentication, authorization, and access control.
 - Explore Microsoft Entra ID.
 - Explore SAP Cloud Platform Identity authentication.
 - Add SAP Cloud Platform Identity Authentication from the gallery.
