@@ -3,7 +3,7 @@ uid: learn.wwl.migrate-modernize-explore-azure-for-sap-workloads
 metadata:
   title: Migrate Modernize Explore Azure for SAP workloads
   description: Modernize and explore Azure for SAP workloads
-  ms.date: 01/09/2024
+  ms.date: 01/10/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: learning-path
@@ -24,6 +24,7 @@ products:
 - azure
 modules:
 - learn.wwl.migrate-modernize-explore-azure-sap-workloads
+- learn.wwl.migrate-modernize-identify-sap-certified-configurations
 - learn.wwl.migrate-modernize-examine-sap-s4hana-azure-virtual-machines
 trophy:
   uid: learn.wwl.migrate-modernize-explore-azure-for-sap-workloads.trophy

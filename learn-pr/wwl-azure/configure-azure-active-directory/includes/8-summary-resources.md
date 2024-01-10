@@ -23,4 +23,4 @@ The main takeaways from this module are:
 
 - [Explore Microsoft Entra ID](/training/modules/explore-azure-active-directory). This training module introduces you Microsoft Entra ID.
 
-- [Allow users to reset their password with Microsoft Entra self-service password reset](/training/modules/allow-users-reset-their-password). This training module discusses SSPR and how it's implemented. 
+- [Allow users to reset their password with Microsoft Entra self-service password reset](/training/modules/allow-users-reset-their-password). This training module discusses SSPR and how it's implemented.  
