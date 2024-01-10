@@ -67,7 +67,7 @@ http.get(
     headers: {},
   },
   (res) => {
-    console.log("connected");
+    console.log(`connected - statusCode: ${res.statusCode}`);
     res.on("data", (chunk) => {
       console.log("chunk", "" + chunk);
     });
@@ -100,14 +100,14 @@ Now you're ready to try the Express program with a client application.
   
 1. Open a second terminal and start the client application:
 
-       ```bash
-       node client.js
-       ```
+    ```bash
+    node client.js
+    ```
 
    In the second terminal, you should see the following output from the client:
 
    ```output
-   connected
+   connected - statusCode: 200
    chunk [{"id":1,"name":"User Userson"}]
    No more data
    Closing connection
@@ -183,7 +183,7 @@ Try the client application again with the updated server program.
    In the second terminal, you should see the following output:
 
    ```output
-   connected
+   connected - statusCode: 401
    chunk Not permitted
    No more data
    Closing connection
@@ -231,7 +231,7 @@ Try the client again with an `authorization` header.
    In the second terminal, you should now see the following output:
 
    ```output
-   connected
+   connected - statusCode: 200
    chunk [{"id":1,"name":"User Userson"}]
    No more data
    Closing connection
