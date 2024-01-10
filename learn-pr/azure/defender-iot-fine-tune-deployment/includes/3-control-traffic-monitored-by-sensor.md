@@ -1,78 +1,51 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+To complete the fine tuning and calibration of the sensors, Microsoft Defender for IoT now enters a *Learning* mode. You build a baseline of alerts to help Defender for IoT learn which type of alerts are important or critical and which are less. Over a limit time period Defender for IoT learns to automatically recognize alerts that can affect the security of your devices. At the end of this period, Defender for IoT then enters the regular *operational* mode.
 
-    Goal: briefly summarize the key skill this unit will teach
+## OT sensor deployment path
 
-    Heading: none
+The following diagram shows the complete OT deployment path, with the team responsible for each phase:
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+:::image type="content" source="../media/2-ot-deploy.png" alt-text="Diagram of the complete OT deployment process" border="false":::
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+This module describes the sixth phase in the deployment: *Baseline learning ends*. In a real-life scenario, the deployment and connectivity teams ensure that the sensor is already onboarded, activated and sending data to Defender for IoT.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+The OT baseline learning is the phase where Defender for IoT enters the Learning mode. Defender for IoT learns which types of alerts are important and critical ones, and which are lower level alerts that can be filtered out. You review the alerts after Defender for IoT generates them and adjust their status when needed. After a limited period Defender for IoT moves from *Learning* mode and into *operational* mode.  
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+During this time Defender for IoT analyzes the flows of data and generates different types of alerts to warn of security problems. You must look over these alerts and confirm or dismiss them appropriately. As Defender for IoT processes more alerts and applies your input, it learns which are proper alerts and which are either less important or aren't actually alerts at all. Over a period of weeks Defender for IoT reaches a mature stage and doesn't need regular assessment, and then ends the *Learning* phase and moves to that *operational* mode.  
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+## The Learning mode
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+The *learning* mode is the important, initial stage for Defender for IoT to understand which activities are normal and regular and which aren't. During this period, your OT sensor learns to identify normal network activity, including the devices and protocols in your network and the regular file transfers that occur between specific devices. At the same time the sensor is producing a set of alerts for suspicious traffic. These alerts form the baseline of OT alerts for tracking activity when the system moves to the *operation* mode.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+As alerts arrive, you check that they're correctly assigned. In some cases during this phase, the alerts will be incorrect and you'll need to change the automatic settings so that the sensor learns that future traffic like this is safe.
 
-    Goal: State concisely what's covered in this unit
+In the early stages, you need to spend more time checking the alerts. Depending on the size and complexity of the system the learning mode could last from 2-6 weeks, and automatically turn offs when the sensor detects a decrease in newly detected alerts. However, you can also manually turn off the learning mode if you think that alerts produced accurately represent the network activity.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Even in the *operation* mode, new inaccurate alerts might be generated, and you can assign these alerts to a learning status to teach the sensor that they need to be added to the existing baseline alerts.
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+## Creating the alerts baseline
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+The best way to create the alert baseline is following the triage process. <!-- not sure about this, is there a better way to describe this? I think that the following is the triage process, even though I am not sure it is properly spelt out as a process in the article "how to view alerts" I suggest listing the steps of triage, and then numbering the heading to make the process clear to the reader -->
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+This process is:
 
-    Heading: none
--->
-TODO: add a visual element
+1. Filter the alerts - by time, severity or other parameter.
+1. Group alerts - a different filter option based on the groups created in the device map or inventory sections. (Although we haven't mentioned this properly)
+1. Choose an alert, open the alert details pane, analyze the displayed information to decide if this alert needs to be adjusted.
+1. You might also want to check the raw data files, called PCAP files. These can be downloaded and assessed and then changes to the alerts made accordingly.
+1. Add comments to alerts to communicate between team members and make decisions.
+1. save any changes you have made, such as authorizing an alert.
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+<!-- rewrite above in sentences or leave as is? -->
+<!--at num3  https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-view-alerts#view-details-and-remediate-a-specific-alert this starts with 1. sign into the OT sensor. I suggest removing this line, we are already there, as mentioned above. Why would we add this here?  -->
+<!-- at end! https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-view-alerts#manage-alert-status-and-triage-alerts the first sentence is confusing. Does this mena save any changes i have made to the alert? Or something else. If it does then I would put it near the end of the entire section of article. but not at the begining, or it is it at the beginning that it is clear it relates to actions for when you have finished your work-->
+Could list alert status options - but I think they're better to be added to the exercise stage.
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+## Outcome of this process
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+When you complete the triage process and the operational mode is enabled, your deployment of the OT sensor to Defender for IoT is complete. The sensor now has a verified baseline of alerts and understands the types of traffic that is considered safe and secure. In the future any network traffic that doesn't match this triggers a new alert. You're able to set these to be learnt by the sensor as well, and are added to create a new and improved baseline.  
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+## Managing OT alerts in a hybrid environment
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+Your organization might also have access to the OT sensor from a virtual machine, <!-- from the sensor itself (Im not sure baout this , this could be on prem) --> or through Defender for IoT. This multo access set up is called a hybrid environment. In this set up, changes made on one system synchronize across the other systems, so that updates or changes made only on one system aren't lost. When you return to the other system you see the changes already displayed in the relevant information.
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+<!--> So in the second link above, managing OT hybrid, do we need to mention the different status names? differences across platforms? Dont mention On Prem and the associated name issues. -->
