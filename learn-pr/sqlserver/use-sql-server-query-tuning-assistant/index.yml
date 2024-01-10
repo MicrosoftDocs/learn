@@ -13,11 +13,11 @@ title: Use the SQL Server Query Tuning Assistant
 summary: Learn how the Query Tuning Assistant (QTA) works alongside the Query Store to compare query performance statistics and find queries that are regressing due to changing compatibility levels.
 
 abstract: |
- In this module, you:
- - Decide if the QTA is the right solution for you.
- - Use the Query Store to assess query performance.
- - Understand how the QTA works to find regressing queries.
- - Tune queries after migration to maintain performance
+  In this module, you:
+  - Decide if the QTA is the right solution for you.
+  - Use the Query Store to assess query performance.
+  - Understand how the QTA works to find regressing queries.
+  - Tune queries after migration to maintain performance
 prerequisites: | 
   - Experience with query tuning and performance
   - Knowledge of database properties and options
