@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.guided-project-inheritance-abstraction-polymorphism.summary
+uid: learn.wwl.guided-project-design-object-oriented-structure.summary
 title: Summary
 metadata:
   title: Summary
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/08-summary.md)]
