@@ -25,7 +25,8 @@ abstract: |
 prerequisites: |
   - Basic knowledge of cloud computing and Azure ecosystem is recommended. No prior knowledge of quantum computing is required.
   - Azure subscription. If you don't have one, you can create a [free account](https://azure.microsoft.com/free/?WT.mc_id=academic-15963-cxa).
-  - Install [Visual Studio Code](https://code.visualstudio.com/).
+  - The latest version of [Visual Studio Code](https://code.visualstudio.com/download) or open [VS Code on the Web](https://vscode.dev/).
+  - The latest version of the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension.
 iconUrl: ../../achievements/quantum/choose-the-best-azure-quantum-service.svg
 ratingEnabled: true
 levels:
