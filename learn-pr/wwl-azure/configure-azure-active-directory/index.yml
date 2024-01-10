@@ -3,7 +3,7 @@ uid: learn.wwl.configure-azure-active-directory
 metadata:
   title: Configure Microsoft Entra ID
   description: "Learn how to configure Microsoft Entra ID, including features like Microsoft Entra join and self-service password reset."
-  ms.date: 01/09/2024
+  ms.date: 01/10/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
@@ -16,12 +16,11 @@ summary: |
   [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   In this module, you learn how to:
-    - Define Microsoft Entra concepts, including identities, accounts, and tenants.
-    - Describe Microsoft Entra features to support different configurations.
-    - Understand differences between Microsoft Entra ID and Active Directory Domain Services (AD DS).
-    - Choose between supported editions of Microsoft Entra ID.
-    - Implement the Microsoft Entra join feature.
-    - Use the Microsoft Entra self-service password reset feature.
+  - Define Microsoft Entra concepts, including identities, accounts, and tenants.
+  - Describe Microsoft Entra features to support different configurations.
+  - Understand differences between Microsoft Entra ID and Active Directory Domain Services (AD DS).
+  - Choose between supported editions of Microsoft Entra ID.
+  - Use the Microsoft Entra self-service password reset feature.
 prerequisites: |
   None
 iconUrl: /training/achievements/azure-active-directory.svg
@@ -39,7 +38,6 @@ units:
 - learn.wwl.configure-azure-active-directory.describe-azure-ad-concepts
 - learn.wwl.configure-azure-active-directory.compare-ad-ds-to
 - learn.wwl.configure-azure-active-directory.select-editions
-- learn.wwl.configure-azure-active-directory.implement-ad-join
 - learn.wwl.configure-azure-active-directory.implement-self-service-password-reset
 - learn.wwl.configure-azure-active-directory.knowledge-check
 - learn.wwl.configure-azure-active-directory.summary-resources
