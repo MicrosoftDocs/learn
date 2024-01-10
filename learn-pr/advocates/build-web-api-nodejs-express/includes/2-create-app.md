@@ -55,6 +55,11 @@ This example configures the web application with the following steps:
 1. **server**: The `createServer()` method is defined with the request handler. Because there is only one request handler, the server will always respond with the same response. In a real-world application, you would have multiple request handlers to handle different types of requests and different routes. This will be covered in more detail later.
 1. **server.listen**: The `listen()` method is invoked with a specified port. After the call to the `listen()` method, the server is ready to accept client requests. When run locally, the app will be available on `http://localhost:3000`. The console.log statement is executed to let the developer know that the server is ready to use.
 
+This Express.js code example uses multiple styles of functions: 
+
+* callback in `server.listen(PORT string, callback_function)`
+* [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) in `requestHandler = (req, res) => {}` which has different scope rules than a regular function
+
 ## Express.js framework
 
 So far you've learned about the capabilities of the HTTP module in Node.js. It's a perfectly valid choice for smaller web applications. If an application becomes large, a framework such as Express can help you build your architecture in a scalable way.  
