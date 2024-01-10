@@ -7,7 +7,7 @@ metadata:
   author: LuizMacedo
   ms.author: lumac
   ms.topic: module
-  ms.prod: learning-azure
+  ms.service: azure
 title: Manage identity for projects, pipelines, and agents
 summary: "This module is designed to help learners understand the importance of managing identity for projects, pipelines, and agents in Azure DevOps. The module covers fundamental concepts and best practices for configuring a Microsoft-hosted pool, configuring agents for projects, configuring agent identities, configuring the scope of a service connection, and converting to a managed identity."
 abstract: |

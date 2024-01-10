@@ -83,6 +83,7 @@ In this task, you'll add the code to create two new taxonomies. Then you'll anno
 
     ```csharp
     using Microsoft.Extensions.Compliance.Classification;
+    using Microsoft.Extensions.Compliance.Redaction;
     
     public static class DataClassifications
     {
@@ -170,8 +171,9 @@ Use these taxonomies and attributes to classify the data types in the **:::no-lo
     docker-compose up --build
     ```
 
-1. If you closed the tab in your browser, select the **PORTS** tab, then select the **Open in Browser** icon for the **Front End (32000)** port. 
-1. Note the **:::no-loc text="eShopLite":::** app is unchanged. 
+1. If you closed the tab in your browser, select the **PORTS** tab, then select the **Open in Browser** icon for the **Front End (32000)** port.
+1. Note the **:::no-loc text="eShopLite":::** app is unchanged.
 1. Try adding some products to the basket, then select **Buy Basket**.
-1. In the **TERMINAL** tab, look through the log messages, nothing is redacted.
 1. In the **TERMINAL** window, press <kbd>CTRL</kbd>+<kbd>C</kbd> to stop the app.
+
+You'll add redacted logging in the next exercise.

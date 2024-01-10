@@ -9,7 +9,7 @@ The following capabilities make up External Identities:
 
  -  **Business to business (B2B) collaboration** \- Collaborate with external users by letting them use their preferred identity to sign-in to your Microsoft applications or other enterprise applications (SaaS apps, custom-developed apps, etc.). B2B collaboration users are represented in your directory, typically as guest users.
  -  **B2B direct connect** \- Establish a mutual, two-way trust with another Microsoft Entra organization for seamless collaboration. B2B direct connect currently supports Teams shared channels, enabling external users to access your resources from within their home instances of Teams. B2B direct connect users aren't represented in your directory, but they're visible from within the Teams shared channel and can be monitored in Teams admin center reports.
- -  **Microsoft Entra business to customer (B2C)** \- Publish modern SaaS apps or custom-developed apps (excluding Microsoft apps) to consumers and customers, while using Azure AD B2C for identity and access management.
+ -  **Microsoft Azure Active Directory business to customer (B2C)** \- Publish modern SaaS apps or custom-developed apps (excluding Microsoft apps) to consumers and customers, while using Azure AD B2C for identity and access management.
 
 Depending on how you want to interact with external organizations and the types of resources you need to share, you can use a combination of these capabilities.
 
