@@ -64,13 +64,13 @@ app.get(
  })
 ```
 
-The order of middleware functions in Express.js is crucial because they are executed sequentially, in the order they are defined in the code. This means that if a middleware function is placed after a route handler, it will not be executed for that route.
+The order of middleware functions in Express.js is crucial because they're executed sequentially, in the order they're defined in the code. This means that if a middleware function is placed after a route handler, it will not be executed for that route.
 
 ## Route management best practices
 
 Here are some best practices to manage the order of middleware functions:
 
-* Place global middleware at the top: Middleware functions that apply to all routes should be placed at the top of your code, before any route handlers. This ensures they are executed for every request.
+* Place global middleware at the top: Middleware functions that apply to all routes should be placed at the top of your code, before any route handlers. This ensures they're executed for every request.
 
 * Order middleware by specificity: More specific middleware functions should be placed after more general ones. This way, the general middleware functions can handle common tasks for all routes, and the specific ones can handle tasks for specific routes.
 
