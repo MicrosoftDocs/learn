@@ -31620,6 +31620,96 @@
         "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/code/deploy/k8s/helm-simple/catalog/templates/deployment.yaml",
         "redirect_url": "/training/paths/create-microservices-with-dotnet",
         "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/1-introduction.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/2-solution-architecture.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/3-deploy-application.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/4-review-code-verify-deployment.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/5-coupon-service-design.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/6-add-coupon-service.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/7-update-aks-deployment.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/8-knowledge-check.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/9-summary.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/index.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/includes/1-introduction.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/includes/2-solution-architecture.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/includes/3-deploy-application.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/includes/4-review-code-verify-deployment.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/includes/5-coupon-service-design.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/includes/6-add-coupon-service.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/includes/7-update-aks-deployment.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/includes/9-summary.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
     }
   ]
 }
