@@ -1,8 +1,8 @@
-Serving video files to global users benefit from Content Delivery Networks (CDN). Here, learn how to create a CDN endpoint and profile. Then see how to configure the endpoint to cache content from a static website.
+Serving video files to your global users can benefit from a Content Delivery Network (CDN). In this unit, you learn how to create a CDN endpoint and profile. Then, you see how to configure the endpoint to cache content from a static website.
 
 ## Create a Content Delivery Network
 
-Now, create a CDN and connect that CDN to the website that you've created from your storage account.
+First, create a CDN and connect that CDN to the website that you created from your storage account.
 
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
@@ -32,11 +32,11 @@ Now, create a CDN and connect that CDN to the website that you've created from y
 
 1. Select **Review and Create**, then select **Create** to deploy the CDN profile.
 
-1. Once the profile has been created, select **Go to resource** to display the CDN profile pane.
+1. Once the profile is created, select **Go to resource** to display the CDN profile pane.
 
 ## Create a CDN Endpoint
 
-You now need to create a CDN profile that connects to the source web server in the storage account. Take the following steps:
+Now, create a CDN profile that connects to the source web server in the storage account. Take the following steps:
 
 1. In the CDN Profile pane, select **+ Endpoint**.
 
@@ -61,4 +61,4 @@ You now need to create a CDN profile that connects to the source web server in t
 
 1. Select **Add** to create the endpoint. Note the message that it can take up to 10 minutes for the settings to reach every CDN POP.
 
-1. After 10 minutes has elapsed, select the **Endpoint hostname** link. The web site should display.
+1. After 10 minutes elapses, select the **Endpoint hostname** link. The web site should display.
