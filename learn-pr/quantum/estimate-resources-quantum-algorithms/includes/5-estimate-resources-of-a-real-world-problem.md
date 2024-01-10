@@ -399,7 +399,7 @@ result = qsharp.estimate("RunProgram()")
 result
 ```
 
-The `qsharp.estimate` function creates a result object, which can be used to display a table with the overall physical resource counts. You can inspect cost details by collapsing the groups, which have more information. For more information, see [the full report data of the Resource Estimator](xref:microsoft.quantum.overview.resources-estimator-output.data#report-data).
+The `qsharp.estimate` function creates a result object, which can be used to display a table with the overall physical resource counts. You can inspect cost details by collapsing the groups, which have more information. 
 
 For example, collapse the **Logical qubit parameters** group to see that the code distance is 21 and the number of physical qubits is 882.
 
@@ -427,13 +427,13 @@ from qsharp_widgets import SpaceChart
 SpaceChart(result)
 ```
 
-In this example, the number of physical qubits required to run the algorithm are 829766, 196686 of which are algorithm qubits and 633080 of which are T factory qubits. For more information, see [Space-time diagrams](xref:microsoft.quantum.overview.resources-estimator-output.data#space-time-diagrams).
+In this example, the number of physical qubits required to run the algorithm are 829766, 196686 of which are algorithm qubits and 633080 of which are T factory qubits.
 
 :::image type="content" source="../media/resource-estimator-diagram-jupyter.png" alt-text="Screen shot showing the space diagram of the Resource Estimator.":::
 
 ## Compare the resource estimates for different qubit technologies
 
-The Azure Quantum Resource Estimator allows you to run multiple configuration of target parameters, and compare the results. This is useful when you want to compare the cost of different qubit models, QEC schemes, or error budgets. For more information, see [How to run multiple configurations as a single job](xref:microsoft.quantum.work-with-resource-estimator#how-to-run-multiple-configurations-as-a-single-job).
+The Azure Quantum Resource Estimator allows you to run multiple configuration of target parameters, and compare the results. This is useful when you want to compare the cost of different qubit models, QEC schemes, or error budgets. 
 
 You can also construct a list of estimation parameters using the `EstimatorParams` object.
 

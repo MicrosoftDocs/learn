@@ -21,7 +21,7 @@ In this example, you run the Resource Estimator using the `qubit_gate_us_e3` qub
 1. The result of the resource estimation is displayed in the **Q# Estimate** window.
 1. The **Results** tab displays a summary of the resource estimation. **Click the icon** next to the first row to select the columns you want to display. You can select from run name, qubit type, qec scheme, error budget, logical qubits, logical depth, code distance, T states, T factories, T factory fraction, runtime, rQOPS, and physical qubits.
 
-    :::image type="content" source="../media/resources-estimator-local-tab-1.png" alt-text="Screen shot showing how to display the menu to select the resource estimate outputs of your choice.":::
+    :::image type="content" source="../media/resource-estimator-local-tab-1.png" alt-text="Screen shot showing how to display the menu to select the resource estimate outputs of your choice.":::
 
     > [!NOTE]
     > If you select more than one qubit parameters and error correction codes in the configuration, the results are displayed in different rows in the **Results** tab. Clicking on a result from the table brings up the corresponding space diagram and report data.
