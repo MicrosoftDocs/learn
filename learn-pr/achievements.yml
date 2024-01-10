@@ -20,6 +20,16 @@ achievements:
   title: Scale and size Virtual Machines in Azure
   summary: Scale and size Virtual Machines in Azure
   iconUrl: /training/achievements/scale-and-size-virtual-machines.svg
+- uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.badge
+  type: badge
+  title: Explore the key concepts of quantum computing by using Q#
+  summary: Explore the key concepts of quantum computing by using Q#
+  iconUrl: /training/achievements/quantum/qsharp-explore-key-concepts-quantum-computing.svg
+- uid: learn.quantum.use-qsharp-libraries.badge
+  type: badge
+  title: Use the Q# libraries
+  summary: Use the Q# libraries
+  iconUrl: /training/achievements/quantum/use-quantum-libraries.svg
 - uid: learn.authenticate-browser-based-apps-with-azure-app-services.badge
   type: badge
   title: Authenticate browser-based apps with Azure App Services
@@ -2646,4 +2656,19 @@ achievements:
   type: badge
   title: Secure B2B collaboration by using cross-tenant access settings
   summary: "Define your inbound and outbound B2B collaboration with other Microsoft Entra tenants by using cross-tenant access settings. You can decide whether to allow or block B2B collaboration with other Microsoft Entra organizations by default, and then set individual policies for specific organizations. You have granular control over who can use B2B collaboration and which applications can be accessed. You can also trust multi-factor authentication from a user’s home tenant so they don’t have to repeat the process in your tenant."
-  iconUrl: /training/achievements/generic-badge.svg 
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.create-no-code-predictive-models-with-azure-machine-learning.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Explore visual tools for machine learning'
+  summary: Machine learning is at the core of artificial intelligence, and many modern applications and services depend on predictive machine learning models. Learn how to use Azure Machine Learning to create and publish models without writing code.
+  iconUrl: /training/achievements/create-no-code-predictive-models-with-azure-machine-learning.svg
+- uid: learn.wwl.create-classification-model-with-azure-machine-learning-designer.badge
+  type: badge
+  title: Create a classification model with Azure Machine Learning designer
+  summary: Classification is a supervised machine learning technique used to predict categories or *classes*. Learn how to create classification models using Azure Machine Learning designer.
+  iconUrl: /training/achievements/create-classification-model-azure-machine-learning-designer.svg
+- uid: learn.wwl.create-regression-model-azure-machine-learning-designer.badge
+  type: badge
+  title: Create a regression model with Azure Machine Learning designer
+  summary: Regression is a supervised machine learning technique used to predict numeric values. Learn how to create regression models using Azure Machine Learning designer.
+  iconUrl: /training/achievements/create-regression-model-azure-machine-learning-designer.svg

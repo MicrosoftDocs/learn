@@ -4,7 +4,7 @@ The current version of the app has no resiliency handling. If the `Product` serv
 
 You've been asked to add resilience to the app, so that the `Store` service retries the backend service call if it fails.
 
-In this exercise, you add resiliency to an existing cloud native app and test that your fix has worked.
+In this exercise, you add resiliency to an existing cloud-native app and test that your fix has worked.
 
 ## Open the development environment
 
@@ -40,7 +40,13 @@ The eShopLite app needs to be updated for the Codespace you're running the app i
 
 ### Build and run the app
 
-1. In the bottom panel, select to the **TERMINAL** tab and run the following command to build the eShop app:
+1. In the bottom panel, select to the **TERMINAL** tab and run the following command go to the code root:
+
+    ```cli
+    cd dotnet-resiliency
+    ```
+
+1.  Run the following command to build the eShop app:
 
     ```bash
     docker-compose build
@@ -122,7 +128,7 @@ The first steps to make your app more resilient are to add the `Microsoft.Extens
 1. Run the following command to add the resiliency NuGet package:
 
     ```bash
-    dotnet add package Microsoft.Extensions.Http.Resilience --prerelease
+    dotnet add package Microsoft.Extensions.Http.Resilience
     ```
 
     Running this command from the terminal in the apps project folder will add the package reference to the **Store.csproj** project file.
@@ -211,8 +217,8 @@ In this example, you'd like the store service to wait a little longer, to give t
     ```csharp
     .AddStandardResilienceHandler(options =>
     {
-        options.RetryOptions.MaxRetryAttempts = 7;
-    })
+        options.Retry.MaxRetryAttempts = 7;
+    });
     ```
     The above code changes the retry strategy defaults to have a maximum number of retires to seven. Remember this is an exponential backoff, so the total time is around 5 minutes.
 
@@ -228,7 +234,7 @@ In this example, you'd like the store service to wait a little longer, to give t
     docker-compose up
     ```
 
-    Refresh the eShop; you'll see that it takes longer to see the error message. If you check the logs though, you can see that the retry strategy only retried five times. The last message from Polly is:
+    Stop the backend service conainer in the bash terminal and refresh the eShop; you'll see that it takes longer to see the error message. If you check the logs though, you can see that the retry strategy only retried five times. The last message from Polly is:
 
     ```bash
     Polly.Timeout.TimeoutRejectedException: The operation didn't complete within the allowed timeout of '00:00:30'.
@@ -243,9 +249,12 @@ In this example, you'd like the store service to wait a little longer, to give t
     ```csharp
     .AddStandardResilienceHandler(options =>
     {
-        options.RetryOptions.RetryCount = 7;
-        options.TotalRequestTimeoutOptions.Timeout = TimeSpan.FromMinutes(5);
-    })
+        options.Retry.RetryCount = 7;
+        options.TotalRequestTimeout = new HttpTimeoutStrategyOptions
+        {
+            Timeout = TimeSpan.FromMinutes(5)
+        };
+    });
     ```
     The above code changes the total request timeout to 260 seconds, which is now longer than the retry strategy.
 
