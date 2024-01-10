@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-identity-services.explore-microsoft-entra-id
+title: Explore Microsoft Entra ID
+metadata:
+  title: Explore Microsoft Entra ID
+  description: "Explore Microsoft Entra ID"
+  ms.date: 01/10/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-explore-microsoft-entra-id.md)]
