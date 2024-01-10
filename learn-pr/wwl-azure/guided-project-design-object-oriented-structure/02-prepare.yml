@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-design-object-oriented-structure.prepare
+title: Prepare for guided project
+metadata:
+  title: Prepare for guided project
+  description: "Prepare for guided project"
+  ms.date: 01/10/2024
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/02-prepare.md)]
