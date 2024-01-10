@@ -31710,6 +31710,86 @@
         "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/includes/9-summary.md",
         "redirect_url": "/training/paths/create-microservices-with-dotnet",
         "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/environment-setup.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/implement-azure-cache.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/implement-cosmos-db.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/index.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/introduction.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/knowledge-check.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/managed-data-stores.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/managed-data-stores.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/verify-deployment.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/includes/environment-setup.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/includes/implement-azure-cache.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/includes/implement-cosmos-db.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/includes/introduction.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/includes/managed-data-stores.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/includes/summary.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/includes/verify-deployment.md",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
     }
   ]
 }
