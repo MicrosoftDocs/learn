@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-implement-events.exercise-review-events
+title: Exercise - Review Events
+metadata:
+  title: Exercise - Review Events
+  description: "The purpose of this lesson is to review the use of events."
+  ms.date: 01/11/2024
+  author: wwlpublish
+  ms.author: Gregor Fisher
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-exercise-review-events.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-implement-events.exercise-implement-handler-stubs
+title: Exercise - Implement Handler Stubs
+metadata:
+  title: Exercise - Implement Handler Stubs
+  description: "The purpose of this lesson is to demonstrate how to use handler stubs"
+  ms.date: 01/11/2024
+  author: wwlpublish
+  ms.author: Gregor Fisher
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-exercise-implement-handler-stubs.md)]
