@@ -1,4 +1,4 @@
-Currently the code doesn't check for ants that leave the game field. In this exercise, you updeate the code to delete ants from the Game's Ant collection when they leave the field. You also handle the situation where all ants leave the field.
+Currently the code doesn't check for ants that leave the game field. In this exercise, you update the code to delete ants from the Game's Ant collection when they leave the field. You also handle the situation where all ants leave the field.
 
 ## Change Ants property type from array to list
 

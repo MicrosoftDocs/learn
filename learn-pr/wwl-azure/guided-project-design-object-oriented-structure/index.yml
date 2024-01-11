@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: module
-  ms.prod: dotnet-csharp
+  ms.service: dotnet-csharp
 title: 'Guided project: Design object-oriented structures'
 summary: |
   In this guided project, you modify your Langton's Ant code to include exception handling. You learn how to throw and how to handle exceptions in your game buffer code.
