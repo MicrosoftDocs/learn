@@ -33,8 +33,8 @@ In this exercise, you'll explore a Microsoft Sentinel analytics rule and perform
 
     ```kusto
     AzureActivity
-    | where OperationName == "MICROSOFT.COMPUTE/VIRTUALMACHINES/DELETE"
-    | where ActivityStatus == "Success"    
+    | where OperationNameValue has "MICROSOFT.COMPUTE/VIRTUALMACHINES/DELETE"
+    | where ActivityStatusValue == "Success"  
     ```
 
 1. In the **Results simulation** pane, select **Test with current data**, and then observe the results.
@@ -47,7 +47,7 @@ In this exercise, you'll explore a Microsoft Sentinel analytics rule and perform
 1. In the **Event grouping** section, accept the default **Group all events into a single alert.**
 1. In the **Suppression** section, set **Stop running the Query after the alert is generated** to  **On**.
 1. Accept the default values of 5 hours and then select **Next: Incident setting (Preview)**.
-1. In the **Incident setting (Preview)** tab, ensure that **Enabled** is selected for creation of incidents from alerts triggered by this analytics rule.
+1. In the **Incident setting** tab, ensure that **Enabled** is selected for creation of incidents from alerts triggered by this analytics rule.
 1. In the **Alert grouping** section, select **Enabled** to group related alerts into incidents, and ensure that **Grouping alerts into a single incident if all the entities match (recommended)** is selected.
 1. Ensure that **Reopen closed matching incidents** is **Disabled**, and then select **Next: Automated response**.
 
