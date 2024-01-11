@@ -27,7 +27,7 @@ First, create a CDN and connect that CDN to the website that you created from yo
     | Subscription | Select the sandbox environment subscription. |
     | Resource group | Select the existing Resource Group ("**<rgn>[sandbox resource group name]</rgn>**") from the drop-down list. |
     | Name | Enter a name for the CDN profile. |
-    | Pricing tier | Select **Microsoft CDN (classic). |
+    | Pricing tier | Select **Microsoft CDN (classic)**. |
     | Create a new CDN endpoint | Leave this option unchecked. |
 
 1. Select **Review and Create**, then select **Create** to deploy the CDN profile.
@@ -51,7 +51,7 @@ Now, create a CDN profile that connects to the source web server in the storage 
     | Name | Enter a unique name for the endpoint. |
     | Origin type | Select **Custom origin**. |
     | Origin hostname | Enter the URL from when you created the web site. Remove the **https://** and the final trailing slash character. |
-    | Origin Path | Leave blank. |
+    | Origin Path | Leave as default. |
     | Origin host header | Leave as default. This value is the same as the Origin hostname. |
     | HTTP port | Leave default as port **80**. |
     | HTTPS port | Leave default as port **443**. |
