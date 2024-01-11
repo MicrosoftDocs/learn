@@ -31735,26 +31735,6 @@
         "source_path": "learn-pr/aspnetcore/microservices-apigateway-aspnet-core/verify-deployment.yml",
         "redirect_url": "/training/paths/create-microservices-with-dotnet",
         "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/achievements/learn.microservices-apigateway-aspnet-core.badge.yml",
-      "redirect_url": "/training/paths/create-microservices-with-dotnet",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/achievements/learn.microservices-aspnet-core.badge.yml",
-      "redirect_url": "/training/paths/create-microservices-with-dotnet",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/achievements/learn.microservices-data-aspnet-core.badge.yml",
-      "redirect_url": "/training/paths/create-microservices-with-dotnet",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/achievements/learn.microservices-logging-aspnet-core.badge.yml",
-      "redirect_url": "/training/paths/create-microservices-with-dotnet",
-      "redirect_document_id": false
     }
   ]
 }
