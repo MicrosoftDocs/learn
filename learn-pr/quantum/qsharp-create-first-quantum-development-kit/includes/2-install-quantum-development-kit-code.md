@@ -1,4 +1,4 @@
-As a new member of the space crew, you first need to learn the tools you'll use.
+As a new member of the space crew, you first need to learn about the tools you're going to use.
 
 In this part, you prepare your development environment so you can begin writing quantum programs.
 
@@ -20,7 +20,7 @@ But first, let's take a quick look at what you get with the Quantum Development 
 
 The QDK gives you everything you need to start writing quantum programs. Included in the QDK is the Q# programming language.
 
-Q# is a *domain-specific programming language* (DSL). A DSL is a computer language that's built for a specific type of application, just like how HTML is built for web pages. Q# enables you to focus on your quantum algorithms without having to worry about many of the underlying details, such as the physical layout of a quantum computer.
+Q# is a *domain-specific programming language* (DSL). A DSL is a computer language built for a specific type of application, just like how HTML is built for web pages. Q# enables you to focus on your quantum algorithms without having to worry about many of the underlying details, such as the physical layout of a quantum computer.
 
 The QDK also includes:
 
@@ -29,7 +29,7 @@ The QDK also includes:
 
     Targets include resource estimators and simulators for larger quantum programs, and a quantum simulator, which behaves much like a quantum computer would.
 
-    The simulator is useful for trying out new ideas, debugging programs, and learning about quantum computing, but it's only suitable for programs that require relatively few qubits. (Don't worry, we'll explain what a qubit is later in the module.)
+    The simulator is useful for trying out new ideas, debugging programs, and learning about quantum computing, but it's only suitable for programs that require relatively few qubits. (Don't worry, we explain what a qubit is later in the module.)
 
     The simulator enables you to run quantum programs locally, on computers you use to write software. You can also target your programs to run on quantum hardware by using Azure Quantum. (See this [module](/training/modules/get-started-azure-quantum?azure-portal=true) to learn more on Azure Quantum.)
 * Tools that help you integrate quantum programs with classical programs, including support for C#, F#, and Python. (Classical code enables you to work with the results from quantum computations.)
@@ -77,7 +77,7 @@ Project templates enable you to quickly create Q# applications, libraries, and u
 
     You see two files: *QuantumHello.csproj* and *Program.qs*.
 
-    The *.csproj* file defines project settings. *Program.qs* contains a basic Q# program that prints a message to the console.
+    The *QuantumHello.csproj* file defines your project settings. *Program.qs* contains a basic Q# program that prints a message to the console.
 
     ```qsharp
     namespace QuantumHello {
@@ -112,7 +112,7 @@ Now let's run the program to verify that everything is set up correctly. You use
 
 Great work. You just ran your first Q# program!
 
-You likely noticed that this basic program doesn't involve any quantum computations. Next, you'll use quantum computation to create a random number generator.
+You likely noticed that this basic program doesn't involve any quantum computations. Next, you use quantum computation to create a random number generator.
 
 > [!NOTE]
 > If you run into any issues with the installation of the QDK, take a look at the [QDK documentation](/azure/quantum/install-command-line-qdk?tabs=tabid-vscode%3fazure-portal%3dtrue) for additional information, or you can report an issue on [GitHub](https://github.com/MicrosoftDocs/quantum-docs/issues).

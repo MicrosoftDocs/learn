@@ -1,5 +1,3 @@
-
-
 On the surface, the `for` statement is another iteration statement that allows you to iterate through a code block and thereby change the flow of execution of your code. However, once we examine how each works, we can better identify the nuances of each iteration statement and when to use them.
 
 ## What is the `for` statement?
@@ -275,7 +273,7 @@ A common usage for the `for` statement is to iterate through an array of element
     Alex
     ```
 
-    > [!NOTE] 
+    > [!NOTE]
     > We could have iterated forward through the array elements by constructing the `for` statement as follows: `for (int i = 0; i < names.Length; i++)`.
 
 ### Examine the limitation of the foreach statement
@@ -330,14 +328,16 @@ Let's try using a `for` statement to modify the contents of an array inside the 
     
     for (int i = 0; i < names.Length; i++)
     {
-        if (names[i] == "David") names[i] = "Sammy";
+        if (names[i] == "David")
+        {
+            names[i] = "Sammy";
+        }
     }
-    
     
     foreach (var name in names)
     {
         Console.WriteLine(name);
-    }        
+    }
     ```
 
 1. Save your code file, and then use Visual Studio Code to run your code.
