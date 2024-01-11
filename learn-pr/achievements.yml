@@ -2690,5 +2690,5 @@ achievements:
 - uid: learn.microservices-apigateway-aspnet-core.badge
   type: badge
   title: Understand API gateways in a cloud-native ASP.NET Core microservices app
-  summary: Modify a cloud-native ASP.NET Core microservices app to understand API gateways in Azure.
+  summary: Learn to modify cloud-native ASP.NET Core microservices app to understand API gateways in Azure.
   iconUrl: /training/achievements/aspnetcore/microservices-apigateway-aspnet-core-social.png
