@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.implement-observability-cloud-native-app-with-opentelemetry.exercise-use-opentelemetry-data-cloud-native-application
-title: Exercise - Using OpenTelemetry data in a cloud-native application
+title: Exercise - Use OpenTelemetry data in a cloud-native application
 metadata:
-  title: Exercise - Using OpenTelemetry data in a cloud-native application
+  title: Exercise - Use OpenTelemetry data in a cloud-native application
   description: "Exercise to add Prometheus, Grafana, Zipkin, and Application Insights to a cloud-native application to view telemetry data."
   ms.date: 12/20/2023
   author: codemillmatt  
