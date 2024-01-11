@@ -14,14 +14,14 @@ durationInMinutes: 5
 content: Choose the best response for each question. Then select **Check your answers**.
 quiz:
   questions:
-    - content: "You want to delegate the task of creating and assigning ESUs to Azure Arc endabled Windows Server 2012 computers to your subordinate. You want to follow the principle of least privilege. Which Azure RBAC role should you assign to the subordinate so the are able to create and assign ESUs to these Arc enabled servers?"
+    - content: "You want to delegate the task of creating and assigning ESUs to Azure Arc enabled Windows Server 2012 computers to your subordinate. You want to follow the principle of least privilege. Which Azure RBAC role should you assign to the subordinate so the are able to create and assign ESUs to these Arc enabled servers?"
       choices:
         - content: "Contributor role"
           isCorrect: true
-          explanation: "To create and assign ESUs to Arc-enabled servers you'll need the Contributor Azure RBAC role."
+          explanation: "To create and assign ESUs to Arc-enabled servers, you'll need the Contributor Azure RBAC role."
         - content: "Reader role"
           isCorrect: false
-          explanation: "To create and assign ESUs to Arc-enabled servers you'll need the Contributor Azure RBAC role. The Reader role does not have the required permissions."
+          explanation: "To create and assign ESUs to Arc-enabled servers, you'll need the Contributor Azure RBAC role. The Reader role doesn't have the required permissions."
         - content: "Owner role"
           isCorrect: false
           explanation: "Whilst you could use the Owner role to create and assign ESUs to Arc-enabled servers, this role includes more permissions than is necessary. The most appropriate role to use is the Contributor Azure RBAC role."
