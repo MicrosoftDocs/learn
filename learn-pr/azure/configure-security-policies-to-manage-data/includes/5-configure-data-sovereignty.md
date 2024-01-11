@@ -11,7 +11,7 @@ Azure operates in multiple geographies around the world. Azure geography is a de
 
 Each Azure region is paired with another region within the same geography, forming a *region pair*. The exception is Brazil South, which is paired with a region outside its geography. Across the region pairs, Azure serializes platform updates (or planned maintenance) so that only one region is updated at a time. If an outage affecting multiple regions occurs, one region in each pair is prioritized for recovery.
 
-:::image type="content" source="../media/M4-01-04-01.png" alt-text="Diagram of a regional pair box, which contains two region boxes, each with a box in it labeled datacenter.":::
+:::image type="content" source="../media/regional-pair.png" alt-text="Diagram of a regional pair box, which contains two region boxes, each with a box in it labeled datacenter.":::
 
 We recommend that you configure business continuity and disaster recovery (BCDR) across regional pairs to benefit from Azure's isolation and VM policies. For apps that support multiple active regions, we recommend using both regions in a region pair, where possible. This approach ensures optimal availability for apps and minimized recovery time in the event of a disaster.
 
@@ -19,7 +19,7 @@ We recommend that you configure business continuity and disaster recovery (BCDR)
 
 The following illustration shows a hypothetical app that uses a regional pair for disaster recovery. The arrows highlight the cross-region activities of three Azure services (Azure Compute, Azure Storage, and Azure Database), and how they are configured to replicate across regions.
 
-:::image type="content" source="../media/M4-01-04-02.png" alt-text="Diagram of a primary region and a secondary region, each containing compute, storage, database, and management services sections.":::
+:::image type="content" source="../media/primary-secondary-region.png" alt-text="Diagram of a primary region and a secondary region, each containing compute, storage, database, and management services sections.":::
 
 ### Cross-region activities number key
 

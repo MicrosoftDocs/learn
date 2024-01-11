@@ -82,7 +82,7 @@ Let's classify the data in this sample Azure SQL database. On your SQL database 
 
 1. The initial state has 15 columns with classification recommendations. Select that link to review the recommendations.  If you have not yet run the check, do so now.
 
-    :::image type="content" source="../media/M4-01-02-02.png" alt-text="Screenshot of the Data discovery and classification pane, Overview tab with the previously mentioned items displaying." lightbox="../media/M4-01-02-02.png":::
+    :::image type="content" source="../media/data-discovery-overview.png" alt-text="Screenshot of the Data discovery and classification pane, Overview tab with the previously mentioned items displaying." lightbox="../media/data-discovery-overview.png":::
 
 1. Select all the columns and then **Accept selected recommendations**.
 
@@ -92,17 +92,17 @@ Let's classify the data in this sample Azure SQL database. On your SQL database 
 
 1. Review the **Data Discovery & Classification**. Notice that it includes a summary of the current classification state of the database, including a detailed list of all classified columns. You can also filter this view to only see specific schema parts, information types, and labels.
 
-    :::image type="content" source="../media/M4-01-02-021.png" alt-text="Screenshot of the Data discovery and classification pane, Overview tab with the previously mentioned items now displaying with 15 columns." lightbox="../media/M4-01-02-021.png":::
+    :::image type="content" source="../media/data-discovery-columns.png" alt-text="Screenshot of the Data discovery and classification pane, Overview tab with the previously mentioned items now displaying with 15 columns." lightbox="../media/data-discovery-columns.png":::
 
 1. On the **Overview** tab, in the top menu bar, select **Export** to download a report in Excel format. Select **Download**.
 
-    :::image type="content" source="../media/M4-01-02-03.png" alt-text="Screenshot of the Data discovery and classification pane with Export selected.":::
+    :::image type="content" source="../media/data-discovery-export.png" alt-text="Screenshot of the Data discovery and classification pane with Export selected.":::
 
 ### Customize the classification
 
 The **Classification** tab lists the columns and how the data is classified.
 
-:::image type="content" source="../media/M4-01-02-04.png" alt-text="Screenshot of the Classification tab.":::
+:::image type="content" source="../media/data-discovery-classification.png" alt-text="Screenshot of the Classification tab.":::
 
 As you saw earlier, the classification engine scans your database for columns containing potentially sensitive data and provides a list of recommended column classifications.
 
@@ -110,7 +110,7 @@ You can either take the suggested classifications as we did earlier, or manually
 
 1. In the top menu bar, select **Add classification**. The **Add classification** pane appears.
 
-    :::image type="content" source="../media/M4-01-02-06.png" alt-text="Screenshot of the Data discovery and classification pane with Add classification selected.":::
+    :::image type="content" source="../media/data-discovery-add-classification.png" alt-text="Screenshot of the Data discovery and classification pane with Add classification selected.":::
 
 1. Configure the five fields:
    * Schema name
@@ -119,7 +119,7 @@ You can either take the suggested classifications as we did earlier, or manually
    * Information type
    * Sensitivity label
 
-    :::image type="content" source="../media/M4-01-02-07.png" alt-text="Screenshot of the Add classification pane, with the previously mentioned fields called out.":::
+    :::image type="content" source="../media/add-classification.png" alt-text="Screenshot of the Add classification pane, with the previously mentioned fields called out.":::
 
 1. Select **Add classification**.
 
@@ -135,6 +135,6 @@ You can either take the suggested classifications as we did earlier, or manually
 
 An important aspect of the IP paradigm is the ability to monitor access to sensitive data. [Azure SQL Database Auditing](/azure/sql-database/sql-database-auditing) has been enhanced to include a new field in the audit log. The **data_sensitivity_information** field logs the sensitivity classifications (labels) of the actual data that was returned by the query.
 
-:::image type="content" source="../media/M4-01-02-08.png" alt-text="Screenshot of field logs, with data sensitivity categorizations of Confidential, and Confidential GDPR called out.":::
+:::image type="content" source="../media/data-confidential.png" alt-text="Screenshot of field logs, with data sensitivity categorizations of Confidential.":::
 
 Consider configuring Azure SQL Database Auditing for monitoring and auditing access to your classified sensitive data.
