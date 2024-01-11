@@ -31,7 +31,7 @@ If the data is present on the POP, the data is retrieved.
 
 If the data isn't present, the POP requests it from the origin server, return the data to the user and store local copy. Follow-on requests for the data are then local to the POP.
 
-The following types of CDN available in Azure:
+The following CDN types are available in Azure:
 
 - Standard Microsoft
 - Standard Edgio
