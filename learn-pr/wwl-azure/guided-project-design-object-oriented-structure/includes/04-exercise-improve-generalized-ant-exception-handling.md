@@ -1,6 +1,6 @@
 In this exercise, we will "generalize" our Langton's Ant implementation even further so that it can support more than two colors.
 
-## Change GeneralizedAnt rule property to "normal"
+## Change the `GeneralizedAnt` rule property to "normal"
 
 1. Open WPF\Game\GeneralizedAnt.cs
 
@@ -121,7 +121,7 @@ Now we actually have up to 14 colors with corresponding values from 0 to 13. The
     }
     ```
 
-## Rotate colors in Act method, instead of switching between two colors
+## Rotate colors in the Act method
 
 The Act method is currently outdated. It only works with Rule strings with a length of 2, and it switches color values between two colors. Update the Act method so that it:
 

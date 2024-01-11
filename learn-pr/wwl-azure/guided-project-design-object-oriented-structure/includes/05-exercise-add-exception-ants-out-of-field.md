@@ -1,4 +1,4 @@
-Currently you don't check for ants that leave the game field. In this exercise, you delete ants from the Game's Ant collection when they leave the field. You also handle the situation where all ants leave the field.
+Currently the code doesn't check for ants that leave the game field. In this exercise, you updeate the code to delete ants from the Game's Ant collection when they leave the field. You also handle the situation where all ants leave the field.
 
 ## Change Ants property type from array to list
 
@@ -62,9 +62,9 @@ Update Game class and `IGame` interface, changing `IAnt[]` type to `IList<IAnt>`
     }
     ```
 
-## Add an exception class for Game Over case
+## Add an exception class for the Game Over case
 
-You'll throw an exception when there are no ants left on the field. To begin, you'll create a new file `GameOverException.cs` in the `WPF\Game` folder. In the new file, you define a `GameOverException` exception class.
+The code will throw an exception when there are no ants left on the field. To begin, you'll create a new file `GameOverException.cs` in the `WPF\Game` folder. In the new file, you define a `GameOverException` exception class.
 
 1. Navigate to the `WPF\Game` folder.
 
@@ -84,7 +84,7 @@ You'll throw an exception when there are no ants left on the field. To begin, yo
     }
     ```
 
-## Throw GameOverException when there are no ants left
+## Throw a GameOverException when there are no ants left
 
 1. Open the `Game.cs` file in the Game folder.
 

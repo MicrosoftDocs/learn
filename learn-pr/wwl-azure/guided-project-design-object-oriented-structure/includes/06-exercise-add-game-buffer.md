@@ -1,6 +1,6 @@
-In this exercise, you'll write code that enables an ant to move to the next generation. You'll use a pre-created `GameBuffer` class and implement it by creating two Clone methods. One method will buffer an ant `IAnt`, and the other will buffer the game, `IGame`. Lastly, make the `IAnt` clone method virtual so that you can override it in `GeneralizedAnt` and use it.
+In this exercise, you'll write code that enables an ant to move to the next generation. You'll use a pre-created `GameBuffer` class and implement it by creating two Clone methods. One method will buffer an ant `IAnt`, and the other will buffer the game, `IGame`. Lastly, you'll make the `IAnt` clone method virtual so that you can override it in `GeneralizedAnt` and use it.
 
-## Copy GameBuffer.cs to project
+## Copy GameBuffer.cs to the project
 
 1. Copy resources\GameBuffer.cs to WPF\Game folder.
     1. Open [Starter Files](https://github.com/MicrosoftLearning/Challenge-Project-design-object-oriented-structures/tree/main/Starter).
