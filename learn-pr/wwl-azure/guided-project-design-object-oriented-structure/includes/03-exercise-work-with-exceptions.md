@@ -93,7 +93,7 @@ The `GameJSONSerializer` class is a utility class, meaning that it performs spec
 
 Notice that both the `ToJson` and `FromJson` methods contain a Try…Catch block. Indeed, when serializing the `IGame` object, an exception can occur. When you deserialize the `Game` object in the `FromJson` method, an error can also occur. By using a Try…Catch block in these situations, you can catch any possible serialization exceptions.
 
-## Add exception handling when loading Game
+## Add exception handling when loading the game
 
 Knowing when to throw an exception, such as `JSONSerializationException` or `IOException`, allows you to catch and handle specific exceptions. In your exception handling code, you'll handle a `JSONSerializationException` and `IOException` and show an appropriate message to the user.
 
@@ -153,7 +153,7 @@ Knowing when to throw an exception, such as `JSONSerializationException` or `IOE
     }
     ```
 
-## Add exception handling when saving a Game
+## Add exception handling when saving a game
 
 1. Locate the `btnSave_Click` method in the `MainWindow.xaml.cs` file.
 
@@ -211,9 +211,9 @@ Knowing when to throw an exception, such as `JSONSerializationException` or `IOE
 
 ## Check your work
 
-1. Open a terminal window. From the View menu, select Terminal.
+1. From the view menu in VS Code, select Terminal to open a terminal window.
 
-1. Change directories to the Starter/WPF directory by entering `cd Starter/WPF` and pressing enter, if you are not already in it.
+1. If you’re not already in the WPF directory, Enter cd starter\wpf  to change directories to WPF.
 
 1. Enter `dotnet build` to verify the code still builds successfully.
 
@@ -237,4 +237,4 @@ Knowing when to throw an exception, such as `JSONSerializationException` or `IOE
 
 1. Enter `dotnet build` to make sure the code builds.
 
-1. Run the code once more and verify the game loads and is working correctly, enter `dotnet run` and press Enter.
+1. Enter `dotnet run` to run the code once more and verify the game loads and is working correctly.
