@@ -2,15 +2,15 @@ Welcome aboard your spaceship!
 
 ![Figure of the crew spaceship.](../media/spaceship-core.svg)
 
-In this module, you'll write your first quantum program by using the Quantum Development Kit (QDK). The QDK enables you to write and test your quantum programs locally, with a simulator, on standard hardware. You can, when it's generally available, run the same quantum program on quantum hardware through the Azure Quantum service.
+In this module, you write your first quantum program by using the Quantum Development Kit (QDK). The QDK enables you to write and test your quantum programs locally, with a simulator, on standard hardware. You can, when it's generally available, run the same quantum program on quantum hardware through the Azure Quantum service.
 
-The first thing you'll do before using your quantum computer is to sign in to the system. You want to generate a truly random password so no galactic hacker can jeopardize space fleet security.
+The first thing to do before using your quantum computer is to sign in to the system. You want to generate a truly random password so no galactic hacker can jeopardize space fleet security.
 
-In this module, you'll write a quantum program to generate random numbers. A random number generator isn't only easy to write, but it will help you understand the basics of quantum computing.
+In this module, you write a quantum program to generate random numbers. A random number generator isn't only easy to write, but it helps you understand the basics of quantum computing.
 
 ## Learning objectives
 
-After completing this module, you'll be able to:
+After completing this module, you're able to:
 
 - Prepare your development environment for writing quantum programs in Q#.
 - Understand how Q# programs are structured.

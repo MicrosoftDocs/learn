@@ -22,7 +22,7 @@ When you install Microsoft Entra Connect by using the **Express Settings** optio
 
 ## Password hash synchronization and Federal Information Processing standard<br>
 
-If your server has been locked down according to Federal Information Processing Standard (FIPS), then MD5 is disabled.
+If your server is locked down according to Federal Information Processing Standard (FIPS), then MD5 is disabled.
 
 **To enable MD5 for password hash synchronization, perform the following steps:**
 

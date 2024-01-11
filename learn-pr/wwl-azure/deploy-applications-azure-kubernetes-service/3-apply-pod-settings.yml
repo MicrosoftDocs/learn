@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
+  ms.custom: devx-track-azurecli
 durationInMinutes: 8
 content: |
   [!include[](includes/3-apply-pod-settings.md)]

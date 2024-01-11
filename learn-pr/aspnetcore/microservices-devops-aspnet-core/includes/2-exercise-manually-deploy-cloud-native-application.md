@@ -11,24 +11,31 @@ The commands create the following resources to deploy an updated version of the 
 > Make sure you've completed the **prerequisites** before you begin.
 
 ## Open the development environment
-
 You can choose to use a GitHub codespace that hosts the exercise, or complete the exercise locally in Visual Studio Code.
 
-To use a **codespace** create a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative-devops).
+## GitHub Codespaces Setup
+Fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops/fork) repository to your own GitHub account. Then on your new fork:
 
-GitHub takes several minutes to create and configure the codespace. When it's finished, you see the code files for the exercise.
+1. Select **Code**
+2. Select the **Codespaces** tab
+3. Select the **+** icon to create your codespace.
 
-To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops) repository to your own GitHub account. Then:
+GitHub takes several minutes to create and configure the codespace. When it's finished, you see the code files for the exercise. 
+
+## Optional: Visual Studio Code Setup
+To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops/fork) repository to your own GitHub account. Then:
 
 1. Make sure Docker is running. In a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
 1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
 1. Select your forked repository. Visual Studio Code creates your development container locally.
 
-1. In the terminal pane, run this docker command:
+## Build containers
 
-    ```console
-    docker-compose build
-    ```
+In the terminal pane, run this docker command:
+
+```console
+docker-compose build
+```
 
 ## Create the Azure resources
 
@@ -46,6 +53,14 @@ To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslear
 
    If the wrong subscription is selected, use the [az account set](/cli/azure/account#az-account-set) command to select the correct one.
 
+1. Run the following Azure CLI command to get a list of Azure regions and the Name associated with it:
+
+   ```azurecli
+   az account list-locations -o table
+   ```
+
+   Locate a region closest to you and use it in the next step to replace `[Closest Azure region]`
+
 1. Run these bash statements:
 
     ```bash
@@ -55,7 +70,7 @@ To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslear
     export ACR_NAME=acseshop$SRANDOM
     ```
 
-    The steps above create environment variables that you'll use in the next Azure CLI commands. You need to change the **LOCATION** to an Azure region close to you; for example, **eastus**. If you'd like a different name for your resource group, AKS cluster, or ACR, change the values above.
+    The steps above create environment variables that you'll use in the next Azure CLI commands. You need to change the **LOCATION** to an Azure region close to you; for example, **eastus**. If you'd like a different name for your resource group, AKS cluster, or ACR, change the values above. To view your new repositories in the Azure Portal please assign yourself as **App Compliance Automation Administrator** in the **Access control (IAM)** of the container registry.
 
 1. Run these Azure CLI commands:
 
@@ -65,6 +80,8 @@ To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslear
     az acr login --name $ACR_NAME
     ```
 
+    If you receive an authentication error when `az acr login --name $ACR_Name` is run, you may need to turn on **Admin user** in the newly created **container register** in Azure under **Settings - Access Keys**. It will prompt you to enter these credentials to continue. You may also need to authenticate again with `az login --use-device-code`.
+
     These commands create a resource group to contain the Azure resources, an ACR for your images, and then logins into the ACR. It can take a few minutes until you see this output:
 
     ```console
@@ -73,10 +90,10 @@ To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslear
       "status": null,
       "systemData": {
         "createdAt": "2023-10-19T09:11:51.389157+00:00",
-        "createdBy": "fiqejx1q@duck.com",
+        "createdBy": "",
         "createdByType": "User",
         "lastModifiedAt": "2023-10-19T09:11:51.389157+00:00",
-        "lastModifiedBy": "fiqejx1q@duck.com",
+        "lastModifiedBy": "",
         "lastModifiedByType": "User"
       },
       "tags": {},
@@ -197,7 +214,16 @@ Now you've pushed the eShop images to the ACR, you need to update the AKS deploy
     kubectl apply -f deployment.yml
     ```
 
-    This `kubectl` command deploys the eShop app, a front-end Blazor web app and back-end REST API product service, and an ingress rule to route traffic to the correct services to your AKS cluster.
+    This `kubectl` command deploys the eShop app, a front-end Blazor web app and back-end REST API product service, and an ingress rule to route traffic to the correct services to your AKS cluster. Rerun this command if you receive any error on deployments.
+
+   You should see oupout similar to this:
+   ```console
+   deployment.apps/storeimage created
+   service/eshop-website created
+   deployment.apps/productservice created
+   service/eshop-backend created
+   ingress.networking.k8s.io/eshop-ingress created
+   ```
 
 1. Check the two microservices have been deployed with this command:
 
@@ -208,9 +234,12 @@ Now you've pushed the eShop images to the ACR, you need to update the AKS deploy
     You should see output similar to this:
 
     ```console
-    NAME                              READY   STATUS    RESTARTS   AGE
-    productservice-66986957db-bbqmg   1/1     Running   0          18s
-    storeimage-66869d7b85-72g9f       1/1     Running   0          18s
+    NAMESPACE       NAME                                        READY   STATUS      RESTARTS   AGE
+    default         productservice-7569b8c64-vfbfz              1/1     Running     0          3m56s
+    default         storeimage-6c7c999d7c-zsnxd                 1/1     Running     0          3m56s
+    ingress-nginx   ingress-nginx-admission-create-szb8l        0/1     Completed   0          4m4s
+    ingress-nginx   ingress-nginx-admission-patch-czdbv         0/1     Completed   0          4m4s
+    ingress-nginx   ingress-nginx-controller-58bf5bf7dc-nwtsr   1/1     Running     0          4m4s
     ```
 
 1. View the deployed eShop with this command:
@@ -233,7 +262,7 @@ GitHub Actions can publish container images to an Azure Container Registry. The 
    export SUBS=$(az account show --query 'id' --output tsv)
    ```
 
-1. Run the following command to create an Azure AD service principal to allow access from GitHub. Replace the `<subscription-id>` placeholder with your Subscription ID:
+1. Run the following command to create an Azure AD service principal to allow access from GitHub:
 
     ```azurecli
     az ad sp create-for-rbac --name "eShop" --role contributor --scopes /subscriptions/$SUBS/resourceGroups/$RESOURCE_GROUP --json-auth

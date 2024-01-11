@@ -1,17 +1,17 @@
 Quantum computing is based on quantum mechanics, which describes how objects at atomic and subatomic scale behave and interact with one another.
 
-Although there are more formal methods for learning the mathematics and theory behind quantum computing, here we'll define a few basic terms and walk through the structure of a basic Q# program. You'll apply these concepts later as you build your quantum random number generator.
+Although there are more formal methods for learning the mathematics and theory behind quantum computing, we want to define a few basic terms in this unit, and walk through the structure of a basic Q# program. Earlier, you applied these concepts as you built your quantum random number generator.
 
 > [!TIP]
-> As you explore quantum computing, you'll need to understand the concepts at the mathematical level. You'll find resources to help you understand more of the theory behind quantum computing at the end of this module. If you already have a background in quantum computing, here you'll learn how Q# applies the concepts.
+> As you explore quantum computing, you need to understand the concepts at the mathematical level. You'll find resources to help you understand more of the theory behind quantum computing at the end of this module. If you already have a background in quantum computing, here you learn how Q# applies the concepts.
 
 ## What are qubits and superposition?
 
-Even if you're new to quantum computing, you may have heard the terms _qubit_ and _superposition_. These concepts are fundamental to quantum computing, but what do they mean?
+Even if you're new to quantum computing, you might be familiar with the terms *qubit* and *superposition*. These concepts are fundamental to quantum computing, but what do they mean?
 
-A _qubit_ (quantum bit) is a basic unit of quantum information, analogous to a bit in classical computing.
+A *qubit* (quantum bit) is a basic unit of quantum information, analogous to a bit in classical computing.
 
-While a bit (binary digit) can have a value of either zero or one, a qubit is in a state of _superposition_ of both the zero and one states, with some probability of being zero and some probability of being one when measured. The act of measuring a qubit changes the qubit's state. In other words, when measured, a qubit goes from being in superposition to one of the classical states.
+While a bit (binary digit) can have a value of either zero or one, a qubit is in a state of *superposition* of both the zero and one states. When the qubit is measured, it has some probability of being zero and some probability of being one. The act of measuring a qubit changes the qubit's state. In other words, when measured, a qubit goes from being in superposition to one of the classical states.
 
 ## What's in a Q# program?
 
@@ -97,13 +97,13 @@ operation HelloQ() : Unit {
 
 Here, `HelloQ` is the name of the operation. It takes zero arguments as its input and returns type `Unit`, which means that the operation returns no information.
 
-Q# libraries also provide operations that you can use in your programs. One operation you'll use later is the `H` operation. Think of the `H` operation as a way of putting a qubit into an *even* superposition. Once in superposition, a qubit has a 50% chance of being measured as zero or one.
+Q# libraries also provide operations that you can use in your programs. One operation that you used earlier, was the `H` operation. Think of the `H` operation as a way of putting a qubit into an *even* superposition. Once in superposition, a qubit has a 50% chance of being measured as zero or one.
 
 ### Types
 
 Q# provides many built-in types you're already familiar with, including `Int`, `Double`, `Bool`, and `String`, along with types that are specific to quantum computing. Q# also provides types that define ranges, arrays, and tuples. You can even define your own custom types.
 
-In this module, you'll work with the `Result` type. A `Result` represents the result of a qubit measurement and can have one of two possible values: `One` and `Zero`.
+In this module, you work with the `Result` type. A `Result` represents the result of a qubit measurement and can have one of two possible values: `One` and `Zero`.
 
 ### Allocating qubits
 
