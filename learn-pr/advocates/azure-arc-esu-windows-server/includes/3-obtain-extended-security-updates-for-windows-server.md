@@ -1,9 +1,5 @@
 How you get ESUs depends on where your server is hosted. You can get access to ESUs through the following options:
 
-<!-- NOTE: To improve readability, I bolded the initial terms in each of the following bulleted items to keep them from getting lost is the sea of supporting text; feel free to delete if you think this detracts from your verbiage. -->
-
-<!-- NOTE: I also added a blank line between each bulleted item to split the large blocks of text into easily distinguishable, separate blocks; you can add/remove those blank lines and view the results in Visual Studio Code's preview window to see if you approve of the change. -->
-
 - **Azure virtual machines**. Virtual machines (VMs) hosted in Azure or on Azure Stack HCI running versions of Windows Server where ESUs are available are automatically enabled for ESUs. These updates are provided free of charge, there's no need to deploy a Multiple Activation Key (MAK) or take any other action. Extended Security Updates are also free of charge in other Azure products such as Azure Dedicated Host, Azure VMware Solution, Azure Nutanix Solution, and Windows Server VMs hosted on Azure Stack (Hub, Edge, and HCI). Customers in these environments should contact Microsoft Support for assistance.
 
 - **Azure Arc-enabled servers**. If your servers are on-premises or in a hosted environment, you can enroll your Windows Server 2012 and 2012 R2 or SQL Server 2012 machines for Extended Security Updates via the Azure portal, connect through Azure Arc, and you're billed monthly via your Azure subscription. You can also enroll programmatically at scale through Azure CLI, ARM APIs, or Azure Policy.
@@ -17,10 +13,6 @@ ESUs are automatically delivered to Azure Arc-enabled servers if they're connect
 ## Using Multiple Activation Key for non Arc enabled servers
 
 Customers who can't connect to Azure Arc to apply ESUs can use Multiple Activation Keys (MAK) through Microsoft 365 Admin Center. To do this, perform the following steps:
-
-<!-- NOTE: Do you have a URL for the Microsoft 365 Admin Center? If so, can you link the text in first step to that URL? -->
-
-<!-- NOTE: In a few of the following steps I bolded some of the text that describe UI elements that a users will click on, which is a documentation convention. I also put one of your commands within single ticks to create an inline code block. -->
 
 1. Sign in to the Microsoft 365 Admin Center.
 
@@ -39,10 +31,6 @@ ESU updates can be delivered through Update Manager, Windows Server Update Servi
 ## Enabling Updates with Azure Stack HCI
 
 Windows Server 2012 and 2012 R2 Extended Security Updates are available at no additional charge on Azure Stack HCI. Windows Server 2012 and 2012 R2 servers running on Azure Stack HCI can be enrolled in Extended Security Updates using PowerShell by the following steps:
-
-<!-- NOTE: I indented the supporting text and command blocks underneath each ordered step three spaces so they'll be properly indented when rendered as HTML. -->
-
-<!-- NOTE: Are your code blocks actually "powershell?" Or should they be "azurecli?" -->
 
 1. **Turn on legacy OS support for Azure VM verification.**
 
