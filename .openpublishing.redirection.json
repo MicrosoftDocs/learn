@@ -31537,9 +31537,9 @@
       "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/2-environment-setup.yml",
-    "redirect_url": "/training/paths/create-microservices-with-dotnet",
-    "redirect_document_id": false
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/2-environment-setup.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
     },
     {
         "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/3-review-logging-monitoring.yml",
@@ -31577,45 +31577,10 @@
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/includes/1-introduction.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/includes/2-environment-setup.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/includes/3-review-logging-monitoring.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/includes/4-implement-app-insights.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
         "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/1-introduction.yml",
         "redirect_url": "/training/paths/create-microservices-with-dotnet",
         "redirect_document_id": false
     },    
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/includes/5-monitor-app-insights.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/includes/6-azure-monitor-containers.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/includes/8-summary.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
     {
         "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/code/deploy/k8s/helm-simple/catalog/templates/configmap.yaml",
         "redirect_url": "/training/paths/create-microservices-with-dotnet",
@@ -31677,46 +31642,6 @@
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/includes/1-introduction.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/includes/2-solution-architecture.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/includes/3-deploy-application.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/includes/4-review-code-verify-deployment.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/includes/5-coupon-service-design.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/includes/6-add-coupon-service.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/includes/7-update-aks-deployment.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/includes/9-summary.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
         "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/environment-setup.yml",
         "redirect_url": "/training/paths/create-microservices-with-dotnet",
         "redirect_document_id": false
@@ -31758,41 +31683,6 @@
     },
     {
         "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/verify-deployment.yml",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/includes/environment-setup.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/includes/implement-azure-cache.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/includes/implement-cosmos-db.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/includes/introduction.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/includes/managed-data-stores.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/includes/summary.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-data-aspnet-core/includes/verify-deployment.md",
         "redirect_url": "/training/paths/create-microservices-with-dotnet",
         "redirect_document_id": false
     },
@@ -31843,46 +31733,6 @@
     },
     {
         "source_path": "learn-pr/aspnetcore/microservices-apigateway-aspnet-core/verify-deployment.yml",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-apigateway-aspnet-core/includes/environment-setup.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-apigateway-aspnet-core/includes/implement-azure-application-gateway.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-apigateway-aspnet-core/includes/implement-bff.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-apigateway-aspnet-core/includes/introduction.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-apigateway-aspnet-core/includes/review-api-gateway-bff.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-apigateway-aspnet-core/includes/review-kubernetes-ingress-controller-concepts.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-apigateway-aspnet-core/includes/summary.md",
-        "redirect_url": "/training/paths/create-microservices-with-dotnet",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/aspnetcore/microservices-apigateway-aspnet-core/includes/verify-deployment.md",
         "redirect_url": "/training/paths/create-microservices-with-dotnet",
         "redirect_document_id": false
     },
