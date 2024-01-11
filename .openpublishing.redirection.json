@@ -31597,6 +31597,11 @@
         "redirect_document_id": false
     },
     {
+        "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/1-introduction.yml",
+        "redirect_url": "/training/paths/create-microservices-with-dotnet",
+        "redirect_document_id": false
+    },    
+    {
         "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/includes/5-monitor-app-insights.md",
         "redirect_url": "/training/paths/create-microservices-with-dotnet",
         "redirect_document_id": false
