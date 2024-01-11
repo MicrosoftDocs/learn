@@ -31,10 +31,9 @@ If the data is present on the POP, the data is retrieved.
 
 If the data isn't present, the POP requests it from the origin server, return the data to the user and store local copy. Follow-on requests for the data are then local to the POP.
 
-There are four types of CDN available in Azure:
+The following types of CDN available in Azure:
 
 - Standard Microsoft
-- Standard Akamai
 - Standard Edgio
 - Premium Edgio
 
@@ -109,4 +108,3 @@ Propagation times between POPs vary, according to which CDN profile and pricing 
 
 - Azure CDN Microsoft Standard profile typically propagates in 10 minutes.
 - Azure CDN Edgio Standard and Azure CDN Edgio Premium profile typically complete in 10 minutes.
-- Azure CDN Akamai Standard profile usually propagates in 1 minute.

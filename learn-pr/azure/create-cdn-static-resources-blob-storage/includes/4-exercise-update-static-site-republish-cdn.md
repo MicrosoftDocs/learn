@@ -40,7 +40,7 @@ Open the URLs for the origin server and the link to the CDN-published version in
 
 1. Save (Ctrl + S) and close (Ctrl + Q) the editor.
 
-1. Upload the changed `index.html` file to the `$web`` blob storage container.
+1. Upload the changed `index.html` file to the `$web` blob storage container.
 
     ```azurecli
     az storage blob upload-batch -s . -d \$web --account-name $STORAGE_ACCOUNT_NAME --overwrite

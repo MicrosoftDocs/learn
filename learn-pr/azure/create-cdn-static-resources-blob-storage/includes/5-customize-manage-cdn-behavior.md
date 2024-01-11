@@ -46,7 +46,7 @@ Azure CDN can improve performance by compressing the files before they're delive
 
 Azure CDN passes along the compressed files unaltered if you enable compression on files hosted on your origin server. Azure CDN dynamically compresses uncompressed files on the origin server that are of a type that can be compressed. It then stores the compressed files on the POP. This process improves the client experience and site performance.
 
-Compression in Azure CDN Standard from Microsoft is on by default. You can't configure other file types to compress or delete existing file types. However, you can add and modify the file types to compress in the Akamai Standard and Edgio profiles.
+Compression in Azure CDN Standard from Microsoft is on by default. You can't configure other file types to compress or delete existing file types. However, you can add and modify the file types to compress in the Edgio profile.
 
 ## Controlling caching behavior
 
@@ -99,7 +99,7 @@ For more information about content expiration, see the Further Reading section i
 
 ## Geo-filtering
 
-Geo-filtering enables you to allow or block content in specific countries/regions, based on the country/region code. In the Azure CDN Standard for Microsoft Tier, you can only allow or block the entire site. With the Edgio and Akamai tiers, you can also set up restrictions on directory paths. For more information, see the further reading section in the Summary unit.
+Geo-filtering enables you to allow or block content in specific countries/regions, based on the country/region code. In the Azure CDN Standard for Microsoft Tier, you can only allow or block the entire site. With the Edgio tier, you can also set up restrictions on directory paths. For more information, see the further reading section in the Summary unit.
 
 To configure geo-filtering, in the properties of the respective endpoint, select Geo-filtering. On the Geo-filtering panel, select either allow or block, then in the country/region codes list, select which countries/regions you want to allow or block.
 
