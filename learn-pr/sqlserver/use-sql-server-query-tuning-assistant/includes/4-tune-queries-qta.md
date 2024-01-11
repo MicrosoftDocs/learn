@@ -12,18 +12,21 @@ For QTA to work correctly, you need to apply the following steps in order.
 1. Migrate the database to SQL Server 2022.
 1. Leave the compatibility level unchanged at the previous SQL Server version.
 1. Enable the Query Store on the database.
-1. Let the Query Store can gather enough realistic baseline metrics on the queries.
+1. Let the Query Store can gather sufficient realistic baseline metrics on the queries.
 1. Upgrade the compatibility level to SQL Server 2022 (160).
-1. Let the Query Store continue to gather enough realistic metrics on the queries.
-1. Use the QTA to compare the performance of queries before and after the database compatibility level change, find regressing queries, and suggest fixes.
+1. Again let the Query Store gather sufficient realistic metrics on the queries.
+1. Use the QTA to compare the performance of queries before and after the database compatibility level change and find fixes for regressing queries.
 
 ## Migrate the database
 
-When you're ready to move to SQL Server 2022, start by migrating your database to the new instance. There are several ways to do this migration. For example, you could use a straightforward backup and restore, use database mirroring, or use a bulkload. The most appropriate choice depends on the configuration of your current environment and the version of SQL Server you're migrating from. The Microsoft Database Migration Assistant (DMA) is a good solution, because it supports databases from SQL Server 2005 onwards.
+When you're ready to move to SQL Server 2022, start by migrating your database to the new instance. There are several ways to do this migration. For example, you could use a straightforward backup and restore, use database mirroring, or use a bulkload. The most appropriate choice depends on the configuration of your current environment and the version of SQL Server you're migrating from. The Microsoft Data Migration Assistant (DMA) is a good solution, because it supports databases from SQL Server 2005 onwards.
+
+>[!NOTE]
+>The DMA doesn't support database migrations to Azure SQL Managed Instance. Use the [Azure SQL migration extension for Azure Data Studio] instead.
 
 ## Leave compatibility level unchanged
 
-After you migrate the database, leave the compatibility level unchanged. Until you move the compatibility level to SQL Server 2014 (120) or higher, SQL Server uses the legacy cardinality estimator. SQL Server 2014 introduced an upgraded cardinality estimator that benefits most queries, but can rarely have a negative performance impact. This step is critical, because you want the baseline to be measured using the current database configuration.
+After you migrate the database, leave the compatibility level unchanged. This step is critical, because you want the baseline to be measured using the current database configuration. Until you move the compatibility level to SQL Server 2014 (120) or higher, SQL Server uses the legacy cardinality estimator. SQL Server 2014 introduced an upgraded cardinality estimator that benefits most queries, but can rarely have a negative performance impact.
 
 ## Enable Query Store
 
@@ -34,7 +37,7 @@ Although the database compatibility level remains at the previous version, you c
 1. Set **Operation Mode (Requested)** to **Read only** or **Read write**.
 1. Select **OK**.
 
-Alternatively, you can run the following statement:
+Alternatively, you can run the following statement to enable the Query Store in the default `READ WRITE` mode:
 
 ```sql
 ALTER DATABASE <database-name> SET QUERY_STORE = ON
@@ -66,7 +69,7 @@ ALTER DATABASE <database-name> SET COMPATIBILITY_LEVEL = 160
 
 After your database is upgraded and applications resume, the Query Store continues to run in the background to gather metrics for the queries. The queries are now exposed to potential problems because of the new cardinality estimator the query optimizer uses.
 
-Continue to run the Query Store and allow it to gather data for the same duration as before the upgrade. However, query regression might show up right away and allow you to take action to remediate any performance issues immediately.
+Continue to run the Query Store and allow it to gather data for the same duration as before the upgrade. However, query regression might show up right away so you can take action to remediate any performance issues immediately.
 
 ## Run the QTA
 

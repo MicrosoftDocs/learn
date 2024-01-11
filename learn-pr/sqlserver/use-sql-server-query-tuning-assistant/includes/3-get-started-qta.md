@@ -1,8 +1,8 @@
 You plan to migrate two production databases from SQL Server 2012 to a new SQL Server 2022 instance. Because the databases are in use, you want to initially leave the compatibility levels at the original settings and repoint the applications. The cardinality estimator has changed since SQL Server 2014, and you want to measure query performance before you change the compatibility level of the databases to SQL Server 2022 (160).
 
-You need to find and fix any queries that regress when you move the compatibility level and apply the new cardinality estimator algorithm. Using this approach measures a baseline for performance to compare against after you upgrade the compatibility level. Enabling the Query Store gathers the metrics you need to find regressing queries, and using the Query Tuning Assistant (QTA) guides you through fixing the regressing queries.
+You need to find and fix any queries that regress when you move the compatibility level and apply the new cardinality estimator algorithm. Using this approach measures a baseline for performance to compare against after you upgrade the compatibility level.
 
-This unit provides an overview of the Query Store and the QTA.
+Enabling the Query Store gathers the metrics you need to find regressing queries, and using the Query Tuning Assistant (QTA) guides you through fixing the regressing queries. This unit provides an overview of the Query Store and the QTA.
 
 ## Query Store overview
 
@@ -37,7 +37,7 @@ The QTA uses the data the Query Store captures to find queries that are beginnin
 
 You can use the Query Store and the QTA to monitor and optimize database performance after upgrading. After migrating a database to SQL Server 2016 or higher, you leave the compatibility level of the database unchanged, and enable the Query Store to collect baseline query performance statistics.
 
-After you change the compatibility level, you continue to use Query Store data to measure the performance statistics of your queries. You can compare the statistics to find out if each query is doing better, the same, or worse than before the upgrade.
+You then change the compatibility level, and continue to use Query Store data to measure the performance statistics of your queries. You can compare the statistics to find out if each query is doing better, the same, or worse than before the upgrade.
 
 When you change the compatibility level to upgrade the database, SQL Server changes the version of the cardinality estimator it uses. The QTA finds possible patterns of query regression because of the change in the cardinality estimator, and experiments to find performance improvements. You can then create plan guides for queries that show improvement.
 
@@ -45,4 +45,4 @@ When you change the compatibility level to upgrade the database, SQL Server chan
 
 The Query Store continuously measures the performance statistics of your queries, just as an aircraft's flight-data recorder captures activity. You can enable the Query Store on any database on SQL Server 2016 or higher, regardless of compatibility level. Use the Query Store to continuously monitor query performance, and to measure the effects of a single change.
 
-When you upgrade a database to SQL Server 2014 or higher, changes to the cardinality estimator might slow queries that were fast in the previous version of SQL Server. Ideally, you want to find and fix any regressions before they affect users. Enabling the Query Store on your databases means that statistics are continuously gathered on the queries. You can then use the QTA to identify and fix regressing queries before they become a problem.
+When you upgrade a database to SQL Server 2014 or higher, changes to the cardinality estimator might slow queries that were fast in the previous SQL Server version. Ideally, you want to find and fix any regressions before they affect users. Enabling the Query Store on your databases means that statistics are continuously gathered on the queries. You can then use the QTA to identify and fix regressing queries before they become a problem.

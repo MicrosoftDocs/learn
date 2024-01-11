@@ -11,13 +11,15 @@ The compatibility level of the database determines its version, which in turn de
 To measure performance impact, the Query Store reports regressed queries and queries that consume the most system resources. The QTA compares the Query Store query performance data before and after database upgrade, and experiments on the queries to improve performance.
 
 >[!NOTE]
->The QTA doesn't work on Azure SQL Database or SQL Managed Instance databases. For these databases, consider using the [Azure SQL migration extension for Azure Data Studio](/sql/azure-data-studio/extensions/azure-sql-migration-extension).
+>The QTA isn't available for Azure SQL Database or SQL Managed Instance databases. For these databases, consider using the [Azure SQL migration extension for Azure Data Studio](/sql/azure-data-studio/extensions/azure-sql-migration-extension).
 
 ## The QTA and automatic plan correction
 
 When SQL Server runs a Transact-SQL (T-SQL) query, it analyzes possible plans that can execute the query. SQL Server caches plans for queries that successfully execute and reuses them when the queries are executed again.
 
-SQL Server picks the optimal plan for a query and uses it until a circumstance forces it to pick a new one. These circumstances can include the database engine recompiling the plan, an index being added or removed, or statistics being changed. It's not always the case that the new plan is an improvement on the old one. You can run the following command to look for queries that have a regressed plan.
+SQL Server picks the optimal plan for a query and uses it until a circumstance forces it to pick a new one. These circumstances can include the database engine recompiling the plan, an index being added or removed, or statistics being changed.
+
+It's not always the case that the new plan is an improvement on the old one. You can run the following command to look for queries that have a regressed plan.
 
 ```sql
 SELECT * FROM sys.dm_db_tuning_recommendations
@@ -35,7 +37,7 @@ The `sp_force_plan` procedure is a manual process that's potentially tedious if 
 ALTER DATABASE <database-name> SET AUTOMATIC_TUNING (FORCE_LAST_GOOD_PLAN = ON)
 ```
 
-When set at a database level, automatic plan correction instructs SQL Server to use the last good plan. SQL Server continues to monitor the current plan to find regressions while the plan is executing and to ensure it delivers optimal performance.
+When set at a database level, automatic plan correction instructs SQL Server to use the last good query plan. SQL Server continues to monitor the plan to find regressions while the plan is executing and to ensure it delivers optimal performance.
 
 Automatic plan correction works differently from the QTA. Using the last good plan can mean rolling back to an earlier cardinality estimator. Conversely, the QTA does its experiments using the version of the cardinality estimator that's mapped to the target database compatibility level.
 

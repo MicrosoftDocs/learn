@@ -17,33 +17,33 @@ quiz:
     choices:
     - content: "Any version after SQL Server 2005."
       isCorrect: false
-      explanation: "The Query Store wasn't introduced until SQL Server 2016, so it isn't present in earlier server versions."
-    - content: "Any version after SQL Server 2016."
+      explanation: "The Query Store wasn't introduced until SQL Server 2016, so it isn't available in earlier server versions."
+    - content: "SQL Server 2016 and later."
       isCorrect: true
-      explanation: "Any database running on a SQL Server 2016 or later server instance can use the Query Store, regardless of the database compatibility level."
+      explanation: "Any database running on SQL Server 2016 or later can use the Query Store, regardless of the database compatibility level."
     - content: "Only SQL Server 2022."
       isCorrect: false
       explanation: "The Query Store was introduced in SQL Server 2016, so any SQL Server 2016 or later instance can use the Query Store."
   - content: "Which of the following tools predicts how many rows a query is likely to return?"
     choices:
-    - content: "The cardinality estimator"
+    - content: "The cardinality estimator."
       isCorrect: true
-      explanation: "The cardinality estimator predicts how many rows a query is likely to return, so a cost-based query optimizer can select the lowest-cost query plan."
-    - content: "The Query Tuning Assistant"
+      explanation: "The cardinality estimator predicts how many rows a query is likely to return, so a cost-based query optimizer can select the best query plan."
+    - content: "The Query Tuning Assistant."
       isCorrect: false
-      explanation: "The QTA experiments with query plans, but doesn't predict how many rows a query is likely to return."
-    - content: "The Query Store"
+      explanation: "The QTA experiments with different query plans, but doesn't predict how many rows a query is likely to return."
+    - content: "The Query Store."
       isCorrect: false
       explanation: "The Query Store collects query statistics, but doesn't predict how many rows a query is likely to return."
   - content: "Which of the following statements about automatic plan correction is true?"
     choices:
-    - content: "Is set at the server level."
+    - content: "It's set at the server level."
       isCorrect: false
       explanation: "Automatic plan correction is set at the database level."
-    - content: "Can mean rolling back to an earlier cardinality estimator."
+    - content: "It can mean rolling back to an earlier cardinality estimator."
       isCorrect: true 
       explanation: "Automatic plan correction instructs SQL Server to use the last good plan if regression is found, and can mean rolling back to an earlier cardinality estimator."
-    - content: "Always uses the current cardinality estimator mapped to the compatibility level."
+    - content: "It always uses the cardinality estimator that's mapped to the target compatibility level."
       isCorrect: false
       explanation: "Unlike the QTA, automatic plan correction can mean rolling back to an earlier cardinality estimator."
   - content: "What does the QTA do?"
@@ -51,10 +51,10 @@ quiz:
     - content: "Collects data to monitor queries or measure the effects of a single change."
       isCorrect: false
       explanation: "The Query Store collects data, which the QTA can then use to identify and help fix regressing queries."
-    - content: "Predicts the outcome of queries based on database compatibility level."
+    - content: "Predicts how many rows a query is likely to return."
       isCorrect: false
       explanation: "The cardinality estimator, not the QTA, predicts how many rows a query is likely to return based on compatibility level."
-    - content: "Finds queries that are beginning to regress and automatically experiments to find solutions."
+    - content: "Finds queries that are beginning to regress and experiments to find solutions."
       isCorrect: true
       explanation: "The QTA uses Query Store data to find underperforming queries and automatically seek solutions to speed them up."
   - content: "How long should the Query Store run to gather sufficient workload information on a database?"
@@ -68,9 +68,9 @@ quiz:
     - content: "It depends on the Query Store version."
       isCorrect: false
       explanation: "The Query Store is available on all SQL Server versions starting with SQL Server 2016, but the SQL Server version has no relation to the amount of data collected."
-  - content: "What are the correct steps to use the QTA for evaluating query regressions caused by upgrading a database from SQL Server 2012 to SQL Server 2022?"
+  - content: "What's the correct order of steps for using the QTA to evaluate query regressions caused by upgrading a database from SQL Server 2012 to SQL Server 2022?"
     choices:
-    - content: "Migrate the database to SQL Server 2022 and upgrade the compatibility level. Enable the Query Store and collect statistics on the database after the upgrade, then use the QTA to investigate regressing queries."
+    - content: "Migrate the database to SQL Server 2022 and upgrade the compatibility level. Enable the Query Store and collect statistics on the database after the upgrade, and use the QTA to investigate regressing queries."
       isCorrect: false
       explanation: "For the QTA to function correctly, you must collect baseline Query Store statistics before you upgrade the compatibility level, and compare them to results after the upgrade."
     - content: "Enable the Query Store and collect baseline query statistics. Migrate the database to SQL Server 2022 and upgrade the compatibility level. Collect Query Store statistics after the upgrade, and use the QTA to investigate regressing queries."

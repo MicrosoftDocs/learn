@@ -11,7 +11,7 @@ You need to monitor the databases for any drop in performance following the upgr
 1. Migrate the databases to the new SQL Server 2022 instance and use Query Store to gather baseline query statistics.
 1. Upgrade the migrated databases' compatibility levels and continue to gather query statistics.
 1. Use the Query Tuning Assistant (QTA) to compare operational performance metrics between the compatibility level versions.
-1. Use the comparison to find queries that are beginning to regress.
+1. Use the comparison to address queries that are beginning to regress.
 
 In this module, you learn how to determine and use the right tools to find regressing queries in databases upgraded to SQL Server 2022 from SQL Server 2012 and earlier versions.
 
