@@ -11,23 +11,27 @@ metadata:
 title: Migrate SQL workloads to Azure Managed Instances
 summary: Learners will be able to demonstrate the benefits and processes for moving a SQL Server database to an Azure SQL Database Managed Instance.
 abstract: |
-  By the end of this module, you'll be able to:
-  * Evaluate migration scenarios to Azure SQL Database Managed Instance
-  * Migrate to Azure SQL Database Managed Instance
-  * Load and move data to Azure SQL Database Managed Instance
+  In this module, you'll:
+  - Explore the advantages, capabilities, and migration possibilities offered by Azure SQL Managed Instance.
+  - Learn how Log Replay Service works to migrate to Azure SQL Managed Instance.
+  - Understand how Managed Instance link feature works in a migration scenario.
+  - Load and move data to and from Azure SQL Managed Instance.
+  - Explore several other methods for migrating SQL Server databases to Azure SQL Database.
 prerequisites: |
   The following prerequisites should be completed:
-  * Understand SQL Server Database file administration
-  * Successfully log in to the Azure portal
-  * Understand the Azure storage options
-  * Understand the Azure compute options
+  - Experience in administering SQL Server databases.
+  - Knowledge of SQL Server editions and versions.
+  - Knowledge of basic T-SQL.
 iconUrl: /training/achievements/migrate-sql-workloads-to-azure-managed-instances.svg
 levels:
 - intermediate
 roles:
+- administrator
 - data-engineer
+- database-administrator
+- developer
+- solution-architect
 products:
-- azure-sql-database
 - azure-sql-managed-instance
 - sql-server
 subjects:
