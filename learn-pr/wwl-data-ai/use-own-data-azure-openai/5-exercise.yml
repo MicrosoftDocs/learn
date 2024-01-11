@@ -1,7 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-own-data-azure-openai.exercise
-title: |
-  Exercise: Use your own data with Azure OpenAI Service
+title: Exercise Use your own data with Azure OpenAI Service
 metadata:
   title: |
     Exercise: Use your own data with Azure OpenAI Service
