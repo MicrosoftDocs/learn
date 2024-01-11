@@ -5,7 +5,7 @@ metadata:
   description: "This guided project demonstrates working with events and delegates."
   ms.date: 01/11/2024
   author: wwlpublish
-  ms.author: Gregor Fisher
+  ms.author: gregorfisher
   ms.topic: module-intro-to-product
   ms.service: dotnet-csharp
   ms.devlang: csharp

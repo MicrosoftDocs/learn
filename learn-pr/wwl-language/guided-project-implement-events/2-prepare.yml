@@ -6,9 +6,8 @@ metadata:
   description: "Prepare"
   ms.date: 01/11/2024
   author: wwlpublish
-  ms.author: Gregor Fisher
+  ms.author: gregorfisher
   ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/2-prepare.md)]
-interactive: csharp
