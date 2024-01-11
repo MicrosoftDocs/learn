@@ -11,7 +11,7 @@ metadata:
   ms.devlang: csharp
 title: 'Guided project: Implement events'
 summary: |
-  In this module you learn about events and delegates are and how they are used. You will to implement event handler stub code for handling events.
+  In this module you learn about events and delegates are and how they're used. You'll implement event handler stub code for handling events.
   [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   - Understand how events and delegates are used.
