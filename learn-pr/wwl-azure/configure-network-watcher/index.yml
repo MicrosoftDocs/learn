@@ -3,10 +3,11 @@ uid: learn.wwl.configure-network-watcher
 metadata:
   title: Configure Network Watcher
   description: "You'll learn how to configure Network Watcher and troubleshoot common networking problems."
-  ms.date: 11/06/2023
+  ms.date: 01/11/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
+  ms.service: network-watcher
 title: Configure Network Watcher
 summary: |
   You learn how to configure Network Watcher and troubleshoot common networking problems.
