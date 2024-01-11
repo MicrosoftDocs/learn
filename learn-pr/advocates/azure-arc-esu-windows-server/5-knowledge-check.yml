@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.using-azure-arc-to-enable-windows-server-extended-security-updates.knowledge-check
+uid: learn.enable-windows-server-extended-security-updates-using-azure-arc.knowledge-check
 title: Knowledge Check
 metadata:
   title: Knowledge Check
@@ -29,13 +29,10 @@ quiz:
       choices:
         - content: "Windows Deployment Services"
           isCorrect: false
-          explanation: "You cannot use Windows Deployment Services to deploy software updates."
+          explanation: "You can't use Windows Deployment Services to deploy software updates."
         - content: "Windows Server Update Services"
           isCorrect: false
-          explanation: ""
-        - content: ""
-          isCorrect: false
-          explanation: "Whilst Windows Server Update Services can be used to deploy software updates, you cannot use Windows Server Update Services to activate ESUs."
+          explanation: "Whilst Windows Server Update Services can be used to deploy software updates, you can't use Windows Server Update Services to activate ESUs."
         - content: "Volume Activation Management Tool"
           isCorrect: true
           explanation: "For computers that are unable to directly communicate with the Internet, you can activate ESUs using the Volume Activation Management Tool (VAMT) in conjunction with the VAMT ESU configuration file."
@@ -56,4 +53,4 @@ quiz:
         - content: "2 cores"
           isCorrect: false
           explanation: "If you choose to license based on physical cores, the licensing requires a minimum of 16 physical cores per license. If you choose to license based on virtual cores, the licensing requires a minimum of eight virtual cores per Virtual Machine."
-    
+ 
