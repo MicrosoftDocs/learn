@@ -6,11 +6,11 @@ How you get ESUs depends on where your server is hosted. You can get access to E
 
 - **Non-Azure physical and virtual machines**. If you can't connect using Azure Arc, use Extended Security Updates on non-Azure VMs, by using a special Multiple Activation Key (MAK) and applying it to the relevant servers. This special MAK key lets the Windows Update servers know that you can continue to receive security updates.
 
-## Enabling Updates with Azure Arc
+## Enabling updates with Azure Arc
 
 ESUs are automatically delivered to Azure Arc-enabled servers if they're connected and enrolled for ESUs through Azure Arc. You can enroll in ESUs at scale by using Azure Policy or Azure portal. Once enabled, you're billed monthly via your Azure subscription. When you use this method, there is no need to activate special product keys.
 
-## Using Multiple Activation Key for non Arc enabled servers
+## Using Multiple Activation Key (MAK) for non Arc enabled servers
 
 Customers who can't connect to Azure Arc to apply ESUs can use Multiple Activation Keys (MAK) through Microsoft 365 Admin Center. To do this, perform the following steps:
 
@@ -28,7 +28,7 @@ Activation occurs over the Internet. For computers that are unable to directly c
 
 ESU updates can be delivered through Update Manager, Windows Server Update Services, Microsoft Updates, Microsoft Endpoint Configuration Manager or third party patch management solutions.
 
-## Enabling Updates with Azure Stack HCI
+## Enabling updates with Azure Stack HCI
 
 Windows Server 2012 and 2012 R2 Extended Security Updates are available at no additional charge on Azure Stack HCI. Windows Server 2012 and 2012 R2 servers running on Azure Stack HCI can be enrolled in Extended Security Updates using PowerShell by the following steps:
 

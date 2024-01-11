@@ -10,7 +10,7 @@ To prepare for activating Windows Server 2012 and 2012R2 ESUs on your Arc-enable
 
 You use the Extended Security Updates section of the Azure Arc page of the Azure portal to create ESU licenses that you can then assign to Arc Enabled Servers. The Licenses tab of this page is shown in the exhibit.
 
-![An image showing the Licenses tab of the Extended Security Updates section of the Azure Arc page of the Azure Portal.](../media/esu-license-page.png)
+![Screenshot of the Licenses tab of the Extended Security Updates section of the Azure Arc page of the Azure Portal.](../media/extended-security-update-license-page.png)
 
 To provision an ESU license, you select the Create ESU license option on this page. When performing this step, specify:
 
@@ -28,11 +28,11 @@ You have the option of provisioning Extended Security Update licenses in a deact
 
 To link an existing ESU license to an Arc-enabled server, select the Eligible Resources tab in the Extended Security Updates section of the Azure Arc page in the Azure portal. This page is shown in the next exhibit.
 
-![An image showing the dialog to link an ESU license to an Arc-enabled server.](../media/link-esu.png)
+![Screenshot of the dialog to link an ESU license to an Arc-enabled server.](../media/link-extended-security-update.png)
 
 Select the computers for which you wish to enable ESUs and then choose Enable ESUs. On the Enable Extended Security Updates page, shown in the next exhibit, choose the ESU license that you wish to allocate to each computer. If you haven't already created the ESU licenses, you can also create a new ESU license when performing this step.
 
-![An image showing the dialog to create ESU license.](../media/create-esu.png)
+![Screenshot of the dialog to create ESU license.](../media/create-extended-security-update.png)
 
 ## Leverage additional Azure Services enabled by Azure Arc
 
@@ -44,4 +44,4 @@ Beyond access to Windows Server 2012 and 2012 R2 Extended Security Updates, Azur
 
 These capabilities make it possible to assess and schedule patches, deliver security baselines and auditing, and inventory the software on your Azure Arc-enabled servers.
 
-Azure Arc also provides customers with access to paid Azure management services like Microsoft Defender for Cloud for Cloud Security Posture Management, Azure Monitor for Virtual Machine insights and performance metrics, and Microsoft Sentinel for Security Information Event Management. These services can help you improve the security and monitoring posture of End of Support infrastructure.
+Azure Arc also provides customers with access to paid Azure management services like Microsoft Defender for Cloud Security Posture Management, Azure Monitor for Virtual Machine insights and performance metrics, and Microsoft Sentinel for Security Information Event Management. These services can help you improve the security and monitoring posture of End of Support infrastructure.
