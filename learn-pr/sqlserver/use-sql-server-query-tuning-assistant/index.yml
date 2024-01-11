@@ -8,7 +8,7 @@ metadata:
   ms.author: wiassaf
   manager: jroth
   ms.topic: module
-  ms.prod: sql
+  ms.service: sql
 title: Use the SQL Server Query Tuning Assistant
 summary: Learn how the Query Tuning Assistant (QTA) works alongside the Query Store to compare query performance statistics and find queries that are regressing due to changing compatibility levels.
 
