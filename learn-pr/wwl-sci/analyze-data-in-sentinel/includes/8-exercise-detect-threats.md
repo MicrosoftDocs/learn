@@ -33,7 +33,7 @@ In this exercise, you'll explore a Microsoft Sentinel analytics rule and perform
 
     ```kusto
     AzureActivity
-    | where OperationNameValue has "MICROSOFT.COMPUTE/VIRTUALMACHINES/DELETE"
+    | where OperationNameValue == "MICROSOFT.COMPUTE/VIRTUALMACHINES/DELETE"
     | where ActivityStatusValue == "Success"  
     ```
 
