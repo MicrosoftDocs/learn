@@ -50,7 +50,7 @@ In the [Custom Vision](https://www.customvision.ai/projects) dashboard, open the
 
 - **Resource Base Endpoint** : Use the Endpoint from the **Resources** section. This should match the endpoint under **Keys and Endpoint** in the Custom Vision resource.
 - **Api Key**: Use the Key from the **Resources** section. This should match the key under **Keys and Endpoint** in the Custom Vision resource.
-- **Project id**: Use the Project Id from the **General** section.
+- **Project Id**: Use the Project Id from the **General** section.
 
 1. Now, with the **ObjectDetectionManager (script)** set up correctly, find the **SceneController** object in your scene Hierarchy and select it.
 
