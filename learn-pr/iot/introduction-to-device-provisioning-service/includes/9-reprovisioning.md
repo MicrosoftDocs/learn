@@ -13,11 +13,11 @@ Device state data includes the device twin and device capabilities. This data is
 
 When you create an enrollment in DPS, you can provide the initial device state data. The device state data is passed to the assigned IoT hub once a device connects to DPS and is registered to its IoT hub. At the time of initial registration, both DPS and the assigned IoT hub have the same device state data. We'll call that *v1*.
 
-:::image type="content" source="../media/m03-l01-device-provisioning-service-reprovisioning-state-1-0f06266f.png" alt-text="Diagram that shows device state data stored by the Device Provisioning Service instance and the IoT hub that a device is assigned to.":::
+:::image type="content" source="../media/reprovisioning-state-1.svg" alt-text="Diagram that shows device state data stored by the Device Provisioning Service instance and the IoT hub that a device is assigned to.":::
 
 Over time, the device state data on the IoT hub might be updated by device operations and back-end operations. Now IoT hub has a new version of the device state data, *v2*. The initial device state information stored in the Device Provisioning Service instance, v1, stays untouched. This untouched device state data is the initial configuration.
 
-:::image type="content" source="../media/m03-l01-device-provisioning-service-reprovisioning-state-2-ccaf3d23.png" alt-text="Diagram that shows the device state data being updated on the IoT hub and the initial configuration being retained by DPS.":::
+:::image type="content" source="../media/reprovisioning-state-2.svg" alt-text="Diagram that shows the device state data being updated on the IoT hub and the initial configuration being retained by DPS.":::
 
 Throughout the lifecycle of a device, it might be reprovisioned to new hubs. When that happens, you can choose to migrate device state updated on the previous IoT hub over to the new IoT hub, or you can restore the device to its initial configuration. This behavior is determined by the reprovisioning policies in the Device Provisioning Service.
 
@@ -27,13 +27,13 @@ There are several reasons why an already provisioned device would make a provisi
 
 * **Reprovision and migrate data**: The default policy for new enrollment entries. If the device is assigned to its current IoT hub, no action is taken. If the device is reassigned to a different IoT hub during a reprovisioning request, DPS removes the device registration from the current IoT hub. The updated device state information (v2) from the current IoT hub is migrated to the new IoT hub without changing the initial device state (v1) maintained by DPS.
 
-  :::image type="content" source="../media/m03-l01-device-provisioning-service-reprovisioning-state-3-499f65e7.png" alt-text="Diagram that shows the device state during a reprovisioning process when device state data is migrated to the new IoT hub.":::
+  :::image type="content" source="../media/reprovisioning-state-3.svg" alt-text="Diagram that shows the device state during a reprovisioning process when device state data is migrated to the new IoT hub.":::
 
 * **Reprovision and reset to initial config**: Regardless of whether the device is assigned to its current IoT hub or reassigned to another, the device registration with the initial IoT hub is removed. The initial configuration data that the provisioning service instance received when the device was provisioned is provided to the current or new IoT hub.
 
   This policy can be used for a factory reset without changing IoT hubs.
 
-  :::image type="content" source="../media/m03-l01-device-provisioning-service-reprovisioning-state-4-bb4ef6ea.png" alt-text="Diagram that shows the device state during a reprovisioning process when device state data is reset to the initial configuration.":::
+  :::image type="content" source="../media/reprovisioning-state-4.svg" alt-text="Diagram that shows the device state during a reprovisioning process when device state data is reset to the initial configuration.":::
 
 * **Never reprovision**: The device is never reassigned to a different hub. This policy is provided for managing backwards compatibility.
 
@@ -50,4 +50,4 @@ This compatibility makes sure that previously deployed devices experience the sa
 
 The following flow chart helps to show when the behavior is present:
 
-:::image type="content" source="../media/m03-l01-device-provisioning-service-reprovisioning-compatibility-flow-b979c95a.png" alt-text="Diagram that shows backwards compatibility for solutions that rely on old provisioning service behavior.":::
+:::image type="content" source="../media/reprovisioning-compatibility-flow.svg" alt-text="Diagram that shows backwards compatibility for solutions that rely on old provisioning service behavior.":::

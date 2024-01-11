@@ -14,6 +14,7 @@ prerequisites: |
 summary: |
   SAP professionals a variety of SAP on-premises solutions that need to be migrated to the cloud. These modules explore migration of SAP workloads to Azure, including very large databases over 20 TB.
 iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
 levels:
 - advanced
 roles:
