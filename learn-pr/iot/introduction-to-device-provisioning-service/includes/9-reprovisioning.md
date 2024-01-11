@@ -27,7 +27,7 @@ There are several reasons why an already provisioned device would make a provisi
 
 * **Reprovision and migrate data**: The default policy for new enrollment entries. If the device is assigned to its current IoT hub, no action is taken. If the device is reassigned to a different IoT hub during a reprovisioning request, DPS removes the device registration from the current IoT hub. The updated device state information (v2) from the current IoT hub is migrated to the new IoT hub without changing the initial device state (v1) maintained by DPS.
 
-  :::image type="content" source="../media/reprovisioning-state-3-.svg" alt-text="Diagram that shows the device state during a reprovisioning process when device state data is migrated to the new IoT hub.":::
+  :::image type="content" source="../media/reprovisioning-state-3.svg" alt-text="Diagram that shows the device state during a reprovisioning process when device state data is migrated to the new IoT hub.":::
 
 * **Reprovision and reset to initial config**: Regardless of whether the device is assigned to its current IoT hub or reassigned to another, the device registration with the initial IoT hub is removed. The initial configuration data that the provisioning service instance received when the device was provisioned is provided to the current or new IoT hub.
 
