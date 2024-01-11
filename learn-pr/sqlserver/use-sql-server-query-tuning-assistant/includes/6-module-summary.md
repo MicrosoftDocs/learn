@@ -6,6 +6,7 @@ The combination of the Query Store and QTA is ideal for monitoring database perf
 
 For more information about using the Query Store and the QTA, see the following articles:
 
+- [Monitor performance by using the Query Store](/sql/relational-databases/performance/monitoring-performance-by-using-the-query-store)
 - [Upgrade databases using the Query Tuning Assistant](/sql/relational-databases/performance/upgrade-dbcompat-using-qta)
 - [Change the database compatibility level and use the Query Store](/sql/database-engine/install-windows/change-the-database-compatibility-mode-and-use-the-query-store)
 - [Cardinality Estimation (SQL Server)](/sql/relational-databases/performance/cardinality-estimation-sql-server)
