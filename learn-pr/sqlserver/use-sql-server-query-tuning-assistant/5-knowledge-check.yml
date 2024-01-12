@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn-sqlserver.use-sql-server-query-tuning-assistant.5-knowledge-check
-title: Knowledge check - Use the SQL Server Query Tuning Assistant
+title: Knowledge check - Use the SQL Server Query Tuning Assistant (QTA)
 metadata:
-  title: Knowledge check - Use the SQL Server Query Tuning Assistant
-  description: Knowledge check - Use the SQL Server Query Tuning Assistant
+  title: Knowledge check - Use the SQL Server Query Tuning Assistant (QTA)
+  description: Knowledge check - Use the SQL Server Query Tuning Assistant (QTA).
   ms.date: 01/12/2024
   author: WilliamDAssafMSFT
   ms.author: wiassaf
@@ -24,12 +24,12 @@ quiz:
     - content: "Only SQL Server 2022."
       isCorrect: false
       explanation: "The Query Store was introduced in SQL Server 2016, so any SQL Server 2016 or later instance can use the Query Store."
-  - content: "Which of the following tools predicts how many rows a query is likely to return?"
+  - content: "Which of the following components predicts how many rows a query is likely to return?"
     choices:
     - content: "The cardinality estimator."
       isCorrect: true
       explanation: "The cardinality estimator predicts how many rows a query is likely to return, so a cost-based query optimizer can select the best query plan."
-    - content: "The Query Tuning Assistant."
+    - content: "The Query Tuning Assistant (QTA)."
       isCorrect: false
       explanation: "The QTA experiments with different query plans, but doesn't predict how many rows a query is likely to return."
     - content: "The Query Store."
@@ -40,13 +40,13 @@ quiz:
     - content: "It's set at the server level."
       isCorrect: false
       explanation: "Automatic plan correction is set at the database level."
-    - content: "It can mean rolling back to an earlier cardinality estimator."
+    - content: "It can change the execution plan of an individual query to use an earlier cardinality estimator."
       isCorrect: true 
       explanation: "Automatic plan correction instructs SQL Server to use the last good plan if regression is found, and can mean rolling back to an earlier cardinality estimator."
     - content: "It always uses the cardinality estimator that's mapped to the target compatibility level."
       isCorrect: false
       explanation: "Unlike the QTA, automatic plan correction can mean rolling back to an earlier cardinality estimator."
-  - content: "What does the QTA do?"
+  - content: "What does the Query Tuning Assistant (QTA) do?"
     choices:
     - content: "Collects data to monitor queries or measure the effects of a single change."
       isCorrect: false

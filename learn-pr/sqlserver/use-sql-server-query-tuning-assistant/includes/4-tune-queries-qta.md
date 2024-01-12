@@ -2,7 +2,7 @@ You decide to use the Query Store to monitor database performance before migrati
 
 Because your database applications are critical systems that underpin the operations of the business, you need to have an action plan and contingency plan for the upgrade. Upgrade core production databases one at a time. Determine a test plan for the upgraded databases to make sure each database is back in production without any problems before you upgrade any others. 
 
-You can use the Query Store to continuously monitor the performance of queries or to measure the effects of a change such as a database upgrade. The QTA provides automatic support after an upgrade to find and fix regressed queries based on the data captured in the Query Store.
+You can use the Query Store to continuously monitor the performance of queries, and for A/B testing to measure the effects of a change such as a database upgrade. The QTA provides automatic support after an upgrade to find and fix regressed queries based on the data captured in the Query Store.
 
 For QTA to work correctly, you need to apply the following steps in order.
 
@@ -12,10 +12,10 @@ For QTA to work correctly, you need to apply the following steps in order.
 1. Migrate the database to SQL Server 2022.
 1. Leave the compatibility level unchanged at the previous SQL Server version.
 1. Enable the Query Store on the database.
-1. Let the Query Store can gather sufficient realistic baseline metrics on the queries.
+1. Let the Query Store gather baseline metrics on the queries based on sufficient realistic user activity.
 1. Upgrade the compatibility level to SQL Server 2022 (160).
-1. Again let the Query Store gather sufficient realistic metrics on the queries.
-1. Use the QTA to compare the performance of queries before and after the database compatibility level change and find fixes for regressing queries.
+1. Again let the Query Store gather data on the queries based on sufficient realistic user activity.
+1. Use the QTA to compare the performance of queries before and after the database compatibility level change. If regressed queries are found, identify fixes.
 
 ## Migrate the database
 
@@ -28,7 +28,7 @@ When you're ready to move to SQL Server 2022, start by migrating your database t
 
 After you migrate the database, leave the compatibility level unchanged. This step is critical, because you want the baseline to be measured using the current database configuration. Until you move the compatibility level to SQL Server 2014 (120) or higher, SQL Server uses the legacy cardinality estimator. SQL Server 2014 introduced an upgraded cardinality estimator that benefits most queries, but can rarely have a negative performance impact.
 
-## Enable Query Store
+## Enable the Query Store
 
 Although the database compatibility level remains at the previous version, you can enable the Query Store on the database, because Query Store is a server-level feature. To enable the Query Store:
 
@@ -43,11 +43,13 @@ Alternatively, you can run the following statement to enable the Query Store in 
 ALTER DATABASE <database-name> SET QUERY_STORE = ON
 ```
 
-## Let Query Store gather data
+## Let the Query Store gather data
 
 Put your migrated database back into production and switch over any database connections from applications or reports. The database starts receiving queries from production applications. Allow the Query Store to run long enough to gather a realistic workload on the database.
 
-The Query Store should capture a typical cycle of business activity, including business hours, nightly processing, maintenance windows, and other activity. For many businesses, a week's activity is sufficient, but for some businesses this period may be shorter or longer. For a grocery store, the weekly inventory arrival and restocking cycles cover most database activity.
+The Query Store should capture a typical cycle of business activity, including business hours, nightly processing, maintenance windows, and other activity. For many businesses, a week's activity is sufficient, but for some businesses this period may be shorter or longer.
+
+Many businesses have major business cycles, and therefore unique activity, for biweekly payroll or month-end processing. You should be aware of the timing of business cycles your databases experience. For a grocery store, the weekly inventory arrival and restocking cycles cover most database activity.
 
 You can see the collected data by browsing the Query Store tabs. To see the tabs, in SSMS **Object Explorer**, expand the database tree to display **Query Store**. Once you're satisfied that enough data is gathered, you can schedule the upgrade.
 
@@ -65,13 +67,13 @@ Alternatively, you can run the following statement:
 ALTER DATABASE <database-name> SET COMPATIBILITY_LEVEL = 160
 ```
 
-## Let Query Store continue to gather data
+## Let the Query Store continue to gather data
 
 After your database is upgraded and applications resume, the Query Store continues to run in the background to gather metrics for the queries. The queries are now exposed to potential problems because of the new cardinality estimator the query optimizer uses.
 
 Continue to run the Query Store and allow it to gather data for the same duration as before the upgrade. However, query regression might show up right away so you can take action to remediate any performance issues immediately.
 
-## Run the QTA
+## Run the Query Tuning Assistant
 
 Run the QTA to address any regressing queries. To configure the QTA:
 

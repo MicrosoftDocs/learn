@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn-sqlserver.use-sql-server-query-tuning-assistant.2-decide-qta-right
-title: Decide if the QTA is right for you
+title: Decide if the Query Tuning Assistant (QTA) is right for you
 metadata:
-  title: Decide if the QTA is right for you
-  description: Decide if the QTA is right for you.
+  title: Decide if the Query Tuning Assistant (QTA) is right for you
+  description: Decide if the Query Tuning Assistant (QTA) is right for you.
   ms.date: 01/12/2024
   author: WilliamDAssafMSFT
   ms.author: wiassaf

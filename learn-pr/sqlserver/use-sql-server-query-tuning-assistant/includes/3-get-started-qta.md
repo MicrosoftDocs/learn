@@ -12,7 +12,7 @@ Starting with SQL Server 2022, and in Azure SQL Database and SQL Managed Instanc
 
 Query Store can work on databases with earlier compatibility levels than the SQL Server instance. For example, if you migrate a database from SQL Server 2012 to SQL Server 2022 and leave the compatibility level at 110, Query Store can still operate on the database.
 
-However, many features of Intelligent Query Processing and other automatic performance improvements are enabled only for newer database compatibility levels. Therefore, you should try to test your application performance on SQL Server 2022 (160) database compatibility level. The Query Store and QTA can assist with this performance testing.
+However, many features of Intelligent Query Processing and other automatic performance improvements are enabled only for newer database compatibility levels. Therefore, you should try to test your application performance on the latest SQL Server database compatibility level. The Query Store and QTA can assist with this performance testing.
 
 When enabled on a database, Query Store gathers and reports the following statistics for your queries:
 
@@ -30,11 +30,11 @@ Before Query Store, SQL Server provided no insight into the cause of regressions
 
 It's common for a few out of possibly thousands of queries to consume the most system resource. The Query Store identifies which queries have the highest consumption, either because of regression or because of poor tuning. Depending on the configuration, you can filter results by duration, CPU, memory, I/O, or number of executions.
 
-You can use the Query Store to monitor ongoing performance and to compare performance before and after applying a single change. For example, you can performance tune a query by adding an index to a table that the query references, so the join lookup is faster. Comparing the statistics in the Query Store before and after you add the index tells you whether the index affects performance. You might also compare statistics after adding new hardware or updating an application.
+You can use the Query Store to monitor ongoing performance and for A/B testing to compare performance before and after applying a single change. For example, you can performance tune a query by adding an index to a table that the query references, so the join lookup is faster. Comparing the statistics in the Query Store before and after you add the index tells you whether the index affects performance. You might also compare statistics after adding new hardware or updating an application.
 
-## QTA overview
+## Query Tuning Assistant overview
 
-The QTA uses the data the Query Store captures to find queries that are beginning to regress. The QTA automatically experiments to find a solution that speeds up the query, before the query underperforms to the point of affecting users.
+The Query Tuning Assistant (QTA) uses data from the Query Store to find queries that are beginning to regress. The QTA automatically experiments to find a solution that speeds up the query, before the query underperforms to the point of affecting users.
 
 You can use the Query Store and the QTA to monitor and optimize database performance after upgrading. After migrating a database to SQL Server 2016 or higher, you leave the compatibility level of the database unchanged, and enable the Query Store to collect baseline query performance statistics.
 
@@ -44,6 +44,6 @@ When you change the compatibility level to upgrade the database, SQL Server chan
 
 ## Summary
 
-The Query Store continuously measures the performance statistics of your queries, just as an aircraft's flight-data recorder captures activity. You can enable the Query Store on any database on SQL Server 2016 or higher, regardless of compatibility level. Use the Query Store to continuously monitor query performance, and to measure the effects of a single change.
+The Query Store continuously measures the performance statistics of your queries, just as an aircraft's flight-data recorder captures activity. You can enable the Query Store on any database on SQL Server 2016 or higher, regardless of compatibility level. Use the Query Store to continuously monitor query performance, and for A/B testing to measure the effects of a single change.
 
 When you upgrade a database to SQL Server 2014 or higher, changes to the cardinality estimator might slow queries that were fast in the previous SQL Server version. Ideally, you want to find and fix any regressions before they affect users. Enabling the Query Store on your databases means that statistics are continuously gathered on the queries. You can then use the QTA to identify and fix regressing queries before they become a problem.

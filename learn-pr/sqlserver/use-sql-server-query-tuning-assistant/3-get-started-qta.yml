@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn-sqlserver.use-sql-server-query-tuning-assistant.3-get-started-qta
-title: Get started with the QTA
+title: Get started with the Query Tuning Assistant (QTA)
 metadata:
-  title: Get started with the QTA
-  description: Get started with the QTA.
+  title: Get started with the Query Tuning Assistant (QTA)
+  description: Get started with the Query Tuning Assistant (QTA).
   ms.date: 01/12/2024
   author: WilliamDAssafMSFT
   ms.author: wiassaf
