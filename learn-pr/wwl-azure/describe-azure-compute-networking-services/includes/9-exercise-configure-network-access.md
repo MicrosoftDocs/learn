@@ -7,6 +7,12 @@ To verify the VM you created previously is still running, use the following comm
 
 ```azurecli
 az vm list
+
+
+
+
+
+
 ```
 
 If you receive an empty response `[]`, you need to complete the first exercise in this module again. If the result lists your current VM and its settings, you may continue.
@@ -26,11 +32,23 @@ In this procedure, you get the IP address for your VM and attempt to access your
       --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
       --output tsv)"
     
+    
+    
+    
+    
+    
+    
     ```
 2.  Run the following `curl` command to download the home page:
     
     ```bash
     curl --connect-timeout 5 http://$IPADDRESS
+    
+    
+    
+    
+    
+    
     
     ```
     
@@ -39,22 +57,34 @@ In this procedure, you get the IP address for your VM and attempt to access your
     ```output
     curl: (28) Connection timed out after 5001 milliseconds
     
+    
+    
+    
+    
+    
+    
     ```
     
     This message means that the VM was not accessible within the timeout period.
 3.  As an optional step, try to access the web server from a browser:
+    
+    
     1.  Run the following to print your VM's IP address to the console:
         
         ```bash
         echo $IPADDRESS
         
+        
+        
+        
+        
+        
+        
         ```
         
         You see an IP address, for example, *23.102.42.235*.
     2.  Copy the IP address that you see to the clipboard.
-    3.  Open a new browser tab and go to your web server. After a few moments, you see that the connection isn't happening.
-        
-        If you wait for the browser to time out, you'll see something like this:
+    3.  Open a new browser tab and go to your web server. After a few moments, you see that the connection isn't happening. If you wait for the browser to time out, you'll see something like this:
         
         :::image type="content" source="../media/browser-request-timeout-d7cc0e02.png" alt-text="Screenshot of a web browser showing an error message that says the connection timed out.":::
         
@@ -72,12 +102,24 @@ Your web server wasn't accessible. To find out why, let's examine your current N
       --query '[].name' \
       --output tsv
     
+    
+    
+    
+    
+    
+    
     ```
     
     You see this:
     
     ```output
     my-vmNSG
+    
+    
+    
+    
+    
+    
     
     ```
     
@@ -88,6 +130,12 @@ Your web server wasn't accessible. To find out why, let's examine your current N
     az network nsg rule list \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --nsg-name my-vmNSG
+    
+    
+    
+    
+    
+    
     
     ```
     
@@ -101,6 +149,12 @@ Your web server wasn't accessible. To find out why, let's examine your current N
       --query '[].{Name:name, Priority:priority, Port:destinationPortRange, Access:access}' \
       --output table
     
+    
+    
+    
+    
+    
+    
     ```
     
     You see this:
@@ -109,6 +163,12 @@ Your web server wasn't accessible. To find out why, let's examine your current N
     Name              Priority    Port    Access
     -----------------  ----------  ------  --------
     default-allow-ssh  1000        22      Allow
+    
+    
+    
+    
+    
+    
     
     ```
     
@@ -132,6 +192,12 @@ Here, you create a network security rule that allows inbound access on port 80 (
       --destination-port-range 80 \
       --access Allow
     
+    
+    
+    
+    
+    
+    
     ```
     
     For learning purposes, here you set the priority to 100. In this case, the priority doesn't matter. You would need to consider the priority if you had overlapping port ranges.
@@ -144,6 +210,12 @@ Here, you create a network security rule that allows inbound access on port 80 (
       --query '[].{Name:name, Priority:priority, Port:destinationPortRange, Access:access}' \
       --output table
     
+    
+    
+    
+    
+    
+    
     ```
     
     You see this both the *default-allow-ssh* rule and your new rule, *allow-http*:
@@ -153,6 +225,12 @@ Here, you create a network security rule that allows inbound access on port 80 (
     -----------------  ----------  ------  --------
     default-allow-ssh  1000        22      Allow
     allow-http        100        80      Allow
+    
+    
+    
+    
+    
+    
     
     ```
 
@@ -167,6 +245,12 @@ Now that you've configured network access to port 80, let's try to access the we
     
     ```bash
     curl --connect-timeout 5 http://$IPADDRESS
+    
+    
+    
+    
+    
+    
     ```
     
     You see this:
@@ -174,10 +258,14 @@ Now that you've configured network access to port 80, let's try to access the we
     ```html
     <html><body><h2>Welcome to Azure! My name is my-vm.</h2></body></html>
     
-    ```
-2.  As an optional step, refresh your browser tab that points to your web server.
     
-    You see this:
+    
+    
+    
+    
+    
+    ```
+2.  As an optional step, refresh your browser tab that points to your web server. You see this:
     
     :::image type="content" source="../media/browser-request-successful-df21c6f1.png" alt-text="A screenshot of a web browser showing the home page from the web server. The home page displays a welcome message.":::
     

@@ -8,6 +8,9 @@ In this instance, you're going to use the Azure CLI.
 
 Use the following Azure CLI commands to create a Linux VM and install Nginx. After your VM is created, you'll use the Custom Script Extension to install Nginx. The Custom Script Extension is an easy way to download and run scripts on your Azure VMs. It's just one of the many ways you can configure the system after your VM is up and running.
 
+> [!WARNING]
+> The script should update to display the actual resource group once the sandbox is fully loaded. If the command line interface is available and the resource group below still shows \\\[sandbox resource group name\\\], go to the previous unit and come back to this unit. The resource group name should update and the script should work.
+
 1.  From Cloud Shell, run the following `az vm create` command to create a Linux VM:
     
     ```azurecli
@@ -18,6 +21,13 @@ Use the following Azure CLI commands to create a Linux VM and install Nginx. Aft
       --image Ubuntu2204 \
       --admin-username azureuser \
       --generate-ssh-keys
+    
+    
+    
+    
+    
+    
+    
     
     ```
     
@@ -34,9 +44,18 @@ Use the following Azure CLI commands to create a Linux VM and install Nginx. Aft
       --settings '{"fileUris":["https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh"]}' \
       --protected-settings '{"commandToExecute": "./configure-nginx.sh"}'
     
+    
+    
+    
+    
+    
+    
+    
     ```
     
     This command uses the Custom Script Extension to run a Bash script on your VM. The script is stored on GitHub. While the command runs, you can choose to [examine the Bash script](https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh?azure-portal=true) from a separate browser tab. To summarize, the script:
+    
+    
     1.  Runs `apt-get update` to download the latest package information from the internet. This step helps ensure that the next command can locate the latest version of the Nginx package.
     2.  Installs Nginx.
     3.  Sets the home page, */var/www/html/index.html*, to print a welcome message that includes your VM's host name.
