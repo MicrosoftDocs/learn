@@ -55,13 +55,13 @@ The file `MainWindow.xaml`, typically called a `xaml` file (pronounced "zaml"), 
 
 ## Open the "code-behind" file WPF\MainWindow.xaml.cs and review handler code
 
-1. Examine the *handler* for the Play button in code-behind file WPF\MainWindow.xaml.cs.
+Examine the *handler* for the Play button in code-behind file WPF\MainWindow.xaml.cs.
 
-    ```csharp
-    private void btnPlay_Click(object sender, RoutedEventArgs e)
-    {
-        PlayUIState = PlayUIMode.Playing;
-    }
-    ```
+```csharp
+private void btnPlay_Click(object sender, RoutedEventArgs e)
+{
+    PlayUIState = PlayUIMode.Playing;
+}
+```
 
 Every UI element that does something when an event occurs has a code-behind handler code for that event. An event in this case can be a Click as shown here, a MouseDragEvent, or a CollectionChangedEvent, among many others. The concept of UI controls and attaching events to them is important. While not a core concept when it comes to programming, understanding how to manipulate controls in this way gives you a common and robust way of handling events.

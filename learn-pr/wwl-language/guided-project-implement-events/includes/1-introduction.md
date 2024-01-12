@@ -4,4 +4,4 @@ Suppose you want something to occur every time a specific event occurs in your p
 
 You can make that "thing" occur by associating an event with a delegate. In this arrangement, a "listener" listens for an event. When the event occurs, the event calls the associated delegate and executes the method it contains.
 
-In this module, you'll focus on reviewing how to create and use events and how to connect them to the new UI elements, as you continue to build the Langtons Ant code.
+In this module, you'll focus on reviewing how to create and use events and how to connect them to the new UI elements, as you continue to build the Langton's Ant code.
