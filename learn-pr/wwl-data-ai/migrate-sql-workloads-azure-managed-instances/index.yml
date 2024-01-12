@@ -8,7 +8,7 @@ metadata:
   ms.author: jupadrao
   ms.topic: module
   ms.service: sql-managed-instance 
-title: Migrate SQL Server workloads to Azure SQLManaged Instance
+title: Migrate SQL Server workloads to Azure SQL Managed Instance
 summary: You'll explore different migration tools and migrate SQL Server databases to Azure SQL Managed Instance.
 abstract: |
   In this module, you'll:
