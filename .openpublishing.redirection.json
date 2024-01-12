@@ -31735,6 +31735,36 @@
         "source_path": "learn-pr/aspnetcore/microservices-apigateway-aspnet-core/verify-deployment.yml",
         "redirect_url": "/training/paths/create-microservices-with-dotnet",
         "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/create-azure-active-directory-test-environment/1-introduction.yml",
+        "redirect_url": "https://learn.microsoft.com/entra/identity-platform/test-setup-environment",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/create-azure-active-directory-test-environment/2-plan-your-azure-active-directory-test-environment.yml",
+        "redirect_url": "https://learn.microsoft.com/entra/identity-platform/test-setup-environment",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/create-azure-active-directory-test-environment/3-exercise-set-up-azure-active-directory-test-environment.yml",
+        "redirect_url": "https://learn.microsoft.com/entra/identity-platform/test-setup-environment",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/create-azure-active-directory-test-environment/4-knowledge-check.yml",
+        "redirect_url": "https://learn.microsoft.com/entra/identity-platform/test-setup-environment",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/create-azure-active-directory-test-environment/5-summary.yml",
+        "redirect_url": "https://learn.microsoft.com/entra/identity-platform/test-setup-environment",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/create-azure-active-directory-test-environment/index.yml",
+        "redirect_url": "https://learn.microsoft.com/entra/identity-platform/test-setup-environment",
+        "redirect_document_id": false
     }
   ]
 }
