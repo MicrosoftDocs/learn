@@ -12802,6 +12802,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-managed-instances/3-migrate-managed-instance.yml",
+      "redirect_url": "/training/modules/migrate-sql-workloads-azure-managed-instances/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-managed-instances/4-synchronize-data.yml",
+      "redirect_url": "/training/modules/migrate-sql-workloads-azure-managed-instances/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-managed-instances/5-summary.yml",
+      "redirect_url": "/training/modules/migrate-sql-workloads-azure-managed-instances/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/intro-to-cybersecurity/index.md",
       "redirect_url": "/training/paths/describe-basic-concepts-of-cybersecurity/",
       "redirect_document_id": false
