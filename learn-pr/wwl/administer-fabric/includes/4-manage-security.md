@@ -12,7 +12,7 @@ Managing licenses allows administrators to monitor and control costs by ensuring
 
 Having the appropriate procedures in place to assign and manage licenses helps to control access to data and analytics, ensure compliance with regulations, and optimize costs.
 
-License management for Fabric is handled in the Microsoft 365 admin center. For more information about managing licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
+License management for Fabric is handled in the Microsoft 365 admin center. For more information about managing licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ## Manage items and sharing
 
