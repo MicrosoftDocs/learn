@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.enable-windows-server-extended-security-updates-using-azure-ar.activate-esus-for-arc-enabled-servers
-title: Activate ESUs for Arc Enabled Servers
+title: Activate ESUs for Arc enabled servers
 metadata:
-  title: Activate ESUs for Arc Enabled Servers
+  title: Activate ESUs for Arc enabled servers
   description: Learn how to activate ESUs for Arc Enabled Servers.
   ms.date: 01/03/2024
   author: Orin-Thomas
@@ -12,4 +12,4 @@ metadata:
   ms.custom: team=cloud_advocates
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-activate-esus-for-arc-enabled-servers.md)]
+  [!include[](includes/4-activate-updates-for-arc-enabled-servers.md)]
