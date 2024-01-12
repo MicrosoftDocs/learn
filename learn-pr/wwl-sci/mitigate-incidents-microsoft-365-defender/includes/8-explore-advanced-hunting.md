@@ -153,13 +153,18 @@ When saved, a new custom detection rule immediately runs and checks for matches 
 
 - Every 24 hours—runs every 24 hours, checking data from the past 30 days
 
-- Every 12 hours—runs every 12 hours, checking data from the past 24 hours
+- Every 12 hours—runs every 12 hours, checking data from the past 48 hours
 
-- Every 3 hours—runs every 3 hours, checking data from the past 6 hours
+- Every 3 hours—runs every 3 hours, checking data from the past 12 hours
 
-- Every hour—runs hourly, checking data from the past 2 hours
+- Every hour—runs hourly, checking data from the past 4 hours
+
+- Continuous (NRT)—runs continuously, checking data from events as they are collected and processed in near real-time   (NRT)
 
 Select the frequency that matches how closely you want to monitor detections, and consider your organization's capacity to respond to the alerts.
+
+> [!NOTE]
+> Setting a custom detection to run in Continuous (NRT) frequency allows you to increase your organization's ability to identify threats faster.
 
 **4. Choose the impacted entities.**
 
