@@ -22,7 +22,7 @@ For QTA to work correctly, you need to apply the following steps in order.
 When you're ready to move to SQL Server 2022, start by migrating your database to the new instance. There are several ways to do this migration. For example, you could use a straightforward backup and restore, use database mirroring, or use a bulkload. The most appropriate choice depends on the configuration of your current environment and the version of SQL Server you're migrating from. The Microsoft Data Migration Assistant (DMA) is a good solution, because it supports databases from SQL Server 2005 onwards.
 
 >[!NOTE]
->The DMA doesn't support database migrations to Azure SQL Managed Instance. Use the [Azure SQL migration extension for Azure Data Studio] instead.
+>The DMA doesn't support database migrations to Azure SQL Managed Instance. Use the [Azure SQL migration extension for Azure Data Studio]((/sql/azure-data-studio/extensions/azure-sql-migration-extension) instead.
 
 ## Leave compatibility level unchanged
 

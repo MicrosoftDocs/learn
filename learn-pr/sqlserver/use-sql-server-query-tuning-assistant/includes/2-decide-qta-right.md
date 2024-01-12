@@ -1,6 +1,6 @@
 You're aware of potential query plan regression and performance loss following database version upgrades. To help maintain performance after database upgrades, you need to find the best method for identifying and mitigating regressed queries. This unit describes how you can use the Query Store and Query Tuning Assistant (QTA) to help ensure that reduced performance isn't an issue after the upgrades.
 
-## Get started with the Query Store and QTA
+## Get started with the Query Store and Query Tuning Assistant
 
 The QTA depends on Query Store data to find queries that regress after an upgrade. The Query Store lets you collect metrics on the older database version before you upgrade.
 
