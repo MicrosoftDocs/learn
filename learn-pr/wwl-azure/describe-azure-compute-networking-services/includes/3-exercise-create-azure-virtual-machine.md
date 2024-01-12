@@ -9,7 +9,7 @@ In this instance, you're going to use the Azure CLI.
 Use the following Azure CLI commands to create a Linux VM and install Nginx. After your VM is created, you'll use the Custom Script Extension to install Nginx. The Custom Script Extension is an easy way to download and run scripts on your Azure VMs. It's just one of the many ways you can configure the system after your VM is up and running.
 
 > [!WARNING]
-> The script should update to display the actual resource group once the sandbox is fully loaded. If the command line interface is available and the resource group below still shows \\\[sandbox resource group name\\\], go to the previous unit and come back to this unit. The resource group name should update and the script should work.
+> The script should update to display the actual resource group once the sandbox is fully loaded. If the command line interface is available and the resource group below still shows \\\\\\\[sandbox resource group name\\\\\\\], go to the previous unit and come back to this unit. The resource group name should update and the script should work.
 
 1.  From Cloud Shell, run the following `az vm create` command to create a Linux VM:
     
@@ -21,6 +21,7 @@ Use the following Azure CLI commands to create a Linux VM and install Nginx. Aft
       --image Ubuntu2204 \
       --admin-username azureuser \
       --generate-ssh-keys
+    
     
     
     
@@ -43,6 +44,7 @@ Use the following Azure CLI commands to create a Linux VM and install Nginx. Aft
       --version 2.1 \
       --settings '{"fileUris":["https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh"]}' \
       --protected-settings '{"commandToExecute": "./configure-nginx.sh"}'
+    
     
     
     
