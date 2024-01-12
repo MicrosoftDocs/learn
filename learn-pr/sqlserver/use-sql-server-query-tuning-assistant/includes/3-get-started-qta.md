@@ -8,7 +8,7 @@ Enabling the Query Store gathers the metrics you need to find regressing queries
 
 The Query Store feature was introduced in SQL Server 2016 to continuously collect information about the execution and performance of queries within a database. The Query Store operates like a flight-data recorder to gather runtime information on queries and plans. If you save this runtime data, you can track performance over time. If something goes wrong, there's a history of information to discover the cause of the problem.
 
-Starting with SQL Server 2022, and in Azure SQL Database and SQL Managed Instance, the Query Store is enabled for new databases by default. In SQL Server 2016, SQL Server 2017, and SQL Server 2019, the Query Store isn't enabled by default, but any database on an instance of SQL Server 2016 or higher can enable, disable, and configure the Query Store.
+Starting with SQL Server 2022, and in Azure SQL Database and SQL Managed Instance, the Query Store is enabled for new databases by default. In SQL Server 2016, SQL Server 2017, and SQL Server 2019, the Query Store isn't enabled by default, but any database on an instance of SQL Server 2016 or higher can enable, disable, and configure the Query Store. See the next unit for instructions on how to enable Query Store or confirm its configuration on a database.
 
 Query Store can work on databases with earlier compatibility levels than the SQL Server instance. For example, if you migrate a database from SQL Server 2012 to SQL Server 2022 and leave the compatibility level at 110, Query Store can still operate on the database.
 
@@ -21,6 +21,7 @@ When enabled on a database, Query Store gathers and reports the following statis
 - Top Resource Consuming Queries
 - Queries With Forced Plans
 - Queries With High Variation
+- Query Wait Statistics
 - Tracked Queries
 
 A regressed query occurs when the query optimizer uses a new query plan that causes performance to degrade. Regression can happen after important changes like adding, dropping, or altering an index, updating statistics, or changing data cardinality.

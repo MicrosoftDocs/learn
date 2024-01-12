@@ -4,7 +4,7 @@ title: Knowledge check - Use the SQL Server Query Tuning Assistant
 metadata:
   title: Knowledge check - Use the SQL Server Query Tuning Assistant
   description: Knowledge check - Use the SQL Server Query Tuning Assistant
-  ms.date: 01/31/2019
+  ms.date: 01/12/2024
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
@@ -61,10 +61,10 @@ quiz:
     choices:
     - content: "Long enough for the Query Store to capture a typical cycle of business activity."
       isCorrect: true
-      explanation: "Let the Query Store capture a typical cycle of business activity, including business hours, nightly processing, maintenance windows, and other activities."
+      explanation: "Let the Query Store capture a typical cycle of business activity, including business hours, nightly processing, maintenance windows, and other activities. You should seek to understand the user usage patterns and capture an entire cycle of activity."
     - content: "One week."
       isCorrect: false
-      explanation: "For many businesses, a week's activity is sufficient, but for some businesses the cycle is shorter or longer."
+      explanation: "The Query Store should capture a typical business cycle of actual user activity before making significant changes. A typical business cycle of reporting, user interaction, and bulk operations may be daily, biweekly, monthly, or even quarterly."
     - content: "It depends on the Query Store version."
       isCorrect: false
       explanation: "The Query Store is available on all SQL Server versions starting with SQL Server 2016, but the SQL Server version has no relation to the amount of data collected."

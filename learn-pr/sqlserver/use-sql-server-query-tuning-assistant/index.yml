@@ -3,7 +3,7 @@ uid: learn-sqlserver.use-sql-server-query-tuning-assistant
 metadata:
   title: Use the SQL Server Query Tuning Assistant 
   description: Learn how the Query Tuning Assistant (QTA) works alongside the Query Store to compare query performance statistics and find queries that are regressing due to changing compatibility levels.
-  ms.date: 01/10/2024
+  ms.date: 01/12/2024
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
