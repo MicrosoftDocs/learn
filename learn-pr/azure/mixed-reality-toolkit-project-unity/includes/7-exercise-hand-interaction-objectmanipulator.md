@@ -105,4 +105,4 @@ For performance purposes, we recommend using MRTK materials instead of the defau
 
     :::image type="content" source="../media/035-far-pointer-touches-cube.png" alt-text="Screenshot of the far pointer touching the cube.":::
 
-1. Click the left mouse button (this makes the hand close, taking on what we call the "pinch gesture"),then drag the cube around the scene.
+1. Click the left mouse button (this makes the hand close, taking on what we call the "pinch gesture"), then drag the cube around the scene.
