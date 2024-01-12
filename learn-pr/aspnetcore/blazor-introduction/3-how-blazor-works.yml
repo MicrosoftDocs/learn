@@ -3,8 +3,8 @@ uid: learn.intro-to-blazor.what-is-blazor
 title: What is Blazor?
 metadata:
   unitType: learning-content
-  title: What is Blazor?
-  description: "Blazor is a modern frontend web framework based on HTML and C# that helps you build web apps faster."
+  title: How Blazor works
+  description: "Blazor supports full stack web UI development with components that can be rendered from the server or client via WebAssembly."
   ms.date: 1/19/2024
   author: danroth27
   ms.author: daroth
@@ -14,4 +14,4 @@ metadata:
     - devx-track-dotnet
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-what-is-blazor.md)]
+  [!include[](includes/3-how-blazor-works.md)]
