@@ -12,4 +12,3 @@ For additional reading, you can refer to the following URLs:
 - [What is Azure SQL Managed Instance?](/azure/sql-database/sql-database-managed-instance?azure-portal=true)
 - [Migrate SQL Server workloads to Azure SQL Database](/training/modules/migrate-sql-workloads-azure-sql-databases/?azure-portal=true)
 - [Tutorial: Migrate SQL Server to an Azure SQL Managed Instance online using DMS (classic)](/azure/dms/tutorial-sql-server-managed-instance-online?azure-portal=true)
-- [Differences between Compatibility Level 140 and Level 150](/sql/t-sql/statements/alter-database-transact-sql-compatibility-level?view=sql-server-2017#differences-between-compatibility-levels)
