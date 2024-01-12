@@ -2667,3 +2667,23 @@ achievements:
   title: Create a regression model with Azure Machine Learning designer
   summary: Regression is a supervised machine learning technique used to predict numeric values. Learn how to create regression models using Azure Machine Learning designer.
   iconUrl: /training/achievements/create-regression-model-azure-machine-learning-designer.svg
+- uid: learn.microservices-logging-aspnet-core.badge
+  type: badge
+  title: Instrument a cloud-native ASP.NET Core microservice
+  summary: Learn how to instrument your cloud-native ASP.NET Core microservices app to diagnose problems and monitor performance.
+  iconUrl: /training/achievements/aspnetcore/microservices-logging-aspnet-core-social.png
+- uid: learn.microservices-data-aspnet-core.badge
+  type: badge
+  title: Use managed data stores in a cloud-native ASP.NET Core microservices app
+  summary: Modify a cloud-native ASP.NET Core microservices app to use managed data stores in Azure.
+  iconUrl: /training/achievements/aspnetcore/microservices-data-aspnet-core-social.png
+- uid: learn.microservices-aspnet-core.badge
+  type: badge
+  title: Create and deploy a cloud-native ASP.NET Core microservice
+  summary: Create and deploy an ASP.NET Core microservice to AKS.
+  iconUrl: /training/achievements/aspnetcore/microservices-aspnet-core-social.png
+- uid: learn.microservices-apigateway-aspnet-core.badge
+  type: badge
+  title: Understand API gateways in a cloud-native ASP.NET Core microservices app
+  summary: Learn to modify cloud-native ASP.NET Core microservices app to understand API gateways in Azure.
+  iconUrl: /training/achievements/aspnetcore/microservices-apigateway-aspnet-core-social.png
