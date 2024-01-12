@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: module
-  ms.prod: azure
+  ms.service: azure
 title: Register an MLflow model in Azure Machine Learning
 summary: Learn how to log and register an MLflow model in Azure Machine Learning.
 abstract: |
