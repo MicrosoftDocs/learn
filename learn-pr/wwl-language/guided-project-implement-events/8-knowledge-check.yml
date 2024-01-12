@@ -21,7 +21,7 @@ quiz:
       explanation: "Correct. This is the correct syntax for defining the event handler in WPF and linking it to the C# code-behind method."
     - content: "Click=\"Button_Click\""
       isCorrect: false
-      explanation: "Incorrect. This is the correct syntax for defining the event handler in WPF, but it is missing the event handler method in the C# code-behind."
+      explanation: "Incorrect. This is the correct syntax for defining the event handler in WPF, but it's missing the event handler method in the C# code-behind."
     - content: "OnClick=\"Button_Click\""
       isCorrect: false
       explanation: "Incorrect. This is the syntax used in Windows Forms applications, not WPF."
@@ -32,7 +32,7 @@ quiz:
       explanation: "Correct. This is the correct syntax for defining the event handler in WPF and linking it to the C# code-behind method."
     - content: "ValueChanged=\"Slider_ValueChanged\""
       isCorrect: false
-      explanation: "Incorrect. This is the correct syntax for defining the event handler in WPF, but it is missing the event handler method in the C# code-behind."
+      explanation: "Incorrect. This is the correct syntax for defining the event handler in WPF, but it's missing the event handler method in the C# code-behind."
     - content: "OnValueChanged=\"Slider_ValueChanged\""
       isCorrect: false
       explanation: "Incorrect. This is the syntax used in Windows Forms applications, not WPF."
@@ -40,10 +40,10 @@ quiz:
     choices:
     - content: "onSubmit"
       isCorrect: false
-      explanation: "Incorrect. onSubmit is not a valid attribute for connecting events in C# using XAML."
+      explanation: "Incorrect. onSubmit isn't a valid attribute for connecting events in C# using XAML."
     - content: "onChange"
       isCorrect: false
-      explanation: "Incorrect. onChange is not a valid attribute for connecting events in C# using XAML."
+      explanation: "Incorrect. onChange isn't a valid attribute for connecting events in C# using XAML."
     - content: "TextChanged"
       isCorrect: true
       explanation: "Correct. The TextChanged attribute is used to connect a text box change event to a method in C# using XAML."
