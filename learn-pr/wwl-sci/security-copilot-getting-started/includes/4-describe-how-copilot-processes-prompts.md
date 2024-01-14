@@ -11,7 +11,7 @@ When a user submits a prompt, Security Copilot processes that prompt to generate
 
 1. Copilot bundles the user prompt and a full list of Copilot capabilities for the enabled plugins and then sends it to OpenAI with the request to make a plan for fulfilling the user’s request
 
-1. OpenAI uses its advanced LLM to match the prompt with the available capabilities (skills) a creates a plan (set of steps) for fulfilling the user’s request.  That plan is sent back to the orchestrator.
+1. OpenAI uses its advanced LLM to match the prompt with the available capabilities (skills) and creates a plan (set of steps) for fulfilling the user’s request.  That plan is sent back to the orchestrator.
     1. If no capability is matched, the response to the user’s prompt is generated based on OpenAI GPT-4 LLM, and conceptually the process would jump to step 7.
     1. The OpenAI GPT-4 LLM is good at general knowledge and problem solving but is not uniquely focused on security so there's a greater chance that the response provided is not accurate.  For this reason, it's very beneficial to enable plugins to bring a collection of resource specific capabilities to Security Copilot.  
 
