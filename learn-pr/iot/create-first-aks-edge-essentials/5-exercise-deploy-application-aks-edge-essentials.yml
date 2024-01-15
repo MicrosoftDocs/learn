@@ -2,7 +2,7 @@
 uid: learn.create-first-aks-edge-essential.exercise-deploy-application-aks-edge-essentials
 title: Exercise - Deploy a sample Linux and Windows application to AKS Edge Essentials cluster
 sandbox: true
-interactive: powershell
+interactive: bash
 metadata:
   title: Exercise - Deploy a sample Linux and Windows application to AKS Edge Essentials cluster
   description: This content is a part of Create your first Azure Kubernetes Service (AKS) Edge Essentials single machine cluster.
