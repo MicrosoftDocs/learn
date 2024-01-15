@@ -7723,7 +7723,7 @@
     {
       "source_path": "learn-pr/quantum/qsharp-create-first-quantum-development-kit/3-qsharp-structure.md",
       "redirect_url": "/training/modules/qsharp-create-first-quantum-development-kit/2-qsharp-structure",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/quantum/qsharp-create-first-quantum-development-kit/4-random-bit-generator.md",
@@ -7748,7 +7748,7 @@
     {
       "source_path": "learn-pr/quantum/qsharp-create-first-quantum-development-kit/7-knowledge-check.md",
       "redirect_url": "/training/modules/qsharp-create-first-quantum-development-kit/5-knowledge-check",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/quantum/qsharp-create-first-quantum-development-kit/7-summary.md",
@@ -7758,7 +7758,7 @@
     {
       "source_path": "learn-pr/quantum/qsharp-create-first-quantum-development-kit/8-summary.md",
       "redirect_url": "/training/modules/qsharp-create-first-quantum-development-kit/6-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/9-exercise-export-data.md",
