@@ -429,11 +429,11 @@ SpaceChart(result)
 
 In this example, the number of physical qubits required to run the algorithm are 829766, 196686 of which are algorithm qubits and 633080 of which are T factory qubits.
 
-:::image type="content" source="../media/resource-estimator-diagram-jupyter.png" alt-text="Screen shot showing the space diagram of the Resource Estimator.":::
+:::image type="content" source="../media/resource-estimator-diagram-jupyter.png" alt-text="Screenshot showing the space diagram of the Resource Estimator.":::
 
 ## Compare the resource estimates for different qubit technologies
 
-The Azure Quantum Resource Estimator allows you to run multiple configuration of target parameters, and compare the results. This is useful when you want to compare the cost of different qubit models, QEC schemes, or error budgets. 
+The Azure Quantum Resource Estimator allows you to run multiple configurations of target parameters, and compare the results. This is useful when you want to compare the cost of different qubit models, QEC schemes, or error budgets.
 
 You can also construct a list of estimation parameters using the `EstimatorParams` object.
 
