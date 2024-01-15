@@ -13,7 +13,7 @@ metadata:
   ms.service: defender-for-iot
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-review-appliance-options.md)]
+  [!include[](includes/6-review-appliance-options.md)]
 
 quiz:
 

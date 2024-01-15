@@ -1,10 +1,10 @@
-In the last unit, you created an initial network diagram, including a mapping of all the devices you want to monitor. This unit explores what devices and subnet information to collect, and how to determine interesting traffic.
+In the last unit, you examined your network diagram, to note all the devices you want to monitor in your car manufacturer organization. You're preparing your OT site and determining what devices and subnets to monitor. This unit explores what devices and subnet information to collect and how to determine interesting traffic to determine the sensors to onboard.
 
 ## Identify devices and subnets to monitor
 
 Monitor and mirror traffic to Defender for IoT that's most interesting to you from a security or operational perspective. Examine your OT network diagram with your site engineering, network, and operational teams to define where to find the most relevant traffic for monitoring across network devices and subnets.
 
-### Devices
+### Gather Device information
 
 Devices can be divided into:
 
@@ -36,7 +36,7 @@ Calculate the number of devices in each site to determine the right number of De
 - Broadcast groups
 - Devices that are inactive for more than 60 days
 
-### Multi-sensor deployment
+### Plan for multi-sensor deployment
 
 For a Defender for IoT deployment with multiple sensors, also consider the following points when planning your sensors:
 
@@ -79,7 +79,7 @@ For each sensor include:
 - Assigned sensor site and zone
 - Traffic mirroring method
 
-The following table shows a sample part of a deployment plan for your car manufacturing site, with offices in Paris, Lagos, Dubai, and Tianjin.
+Recall that your car manufacturing organization has offices and production sites across the globe.  The following table shows a sample OT sensor deployment plan for your car manufacturing site, with offices in Paris, Lagos, Dubai, and Tianjin.
 
 |Site | Zones | Sensor name | Cloud connected |
 |--- | ---|---|--- |
@@ -88,9 +88,11 @@ The following table shows a sample part of a deployment plan for your car manufa
 |**Dubai office** |- Ground floor (Convention center)<br> - Floor 1 (Sales) <br> - Floor 2 (Offices)|dubai-guests<br>dubai-sales<br>dubai-exec| Yes<br>Yes<br>Yes|
 |**Tianjin office** |- Ground floor (Offices)<br> - Floors 1-2 (Factory)| tianjin-office <br>tianjin-factory | Yes <br>No |
 
+In this unit you've identified the devices and subnets and their interesting traffic that you'd like to monitor, and created a OT sensor deployment list for your car manufacturer. In the next unit you'll determine the traffic mirroring methods to use for your site.
+  
 ## Knowledge check
 <!--let's get Sagi to comment on these questions-->
-:::image type="complex" source="../media/3-sample-network-diagram-knowledge-check.png" alt-text="Diagram of a sample network diagram." border="false":::
+:::image type="complex" source="../media/4-sample-network-diagram-knowledge-check.png" alt-text="Diagram of a sample network diagram." border="false":::
 
 Figure 1 shows a sample diagram of a network in a building of three floors, where each floor houses both endpoints and switches. The third floor also houses firewalls, core switches, a server, and routers. A blue dotted line depicts traffic traveling outside of the IP segment, traveling throughout floor one and two and up to a server connected to a core server on floor 3. Interesting traffic is depicted in red from two switches on floor two to each of the firewalls on floor three. In addition, there's a Defender for IoT sensor with the question where should the Defender for IoT sensor be connected and three choices: A- to the switch for interesting traffic between on floor two, B- to the switch where traffic is traveling outside of the IP segment on level two, or C- to the switch for traffic is traveling outside of the IP segment on level one.
 :::image-end:::

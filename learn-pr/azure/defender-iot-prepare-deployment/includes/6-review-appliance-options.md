@@ -65,5 +65,3 @@ Bandwidth results for virtual machines can vary based on your protocol distribut
 The sensor installation includes an operating system image for the virtual machine.
 
 ## Knowledge check
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->

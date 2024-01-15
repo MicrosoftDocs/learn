@@ -12,7 +12,7 @@ You chose the OT site to deploy to first, and planned your deployment including 
 
 You'll perform steps involved in preparing an OT site for Microsoft Defender for Iot deployment. You prepare for deploying an OT monitoring system, through actions such as:
 
-- **Network traffic diagram analysis**- Design a network traffic diagram and identify devices and subnets to monitor with Defender for IoT
+- **Network traffic diagram analysis**- Examine a network traffic diagram and identify devices and subnets to monitor with Defender for IoT
 - **Traffic monitoring** -Decide which traffic monitoring methods to use for the sensor types
 - **Appliance comparison** - Decide on which appliance to use based on the sensor specification
 

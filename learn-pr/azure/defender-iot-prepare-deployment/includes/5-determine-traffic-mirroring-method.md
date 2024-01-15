@@ -1,11 +1,8 @@
-In the previous unit, you prepared the devices and subnets in your automotive manufacturing site to monitor. Now you determine the traffic mirroring methods to use for your site.
-
-## Planning traffic mirroring for your deployment
+In the previous unit, you identified the devices and subnets in your automotive manufacturing site to monitor. Now you determine the traffic mirroring methods to use for your site.
 
 Traffic mirroring with Defender for IoT allows you to mirror network traffic to your sensors, where you can monitor and diagnose risks and threats in your network.
 
-### Mirroring port scope
-
+<!--### Prevent undetected port connections /Mirror port scope seems this should be removed or move to the bottom-->
 To prevent rogue devices from connecting undetected to an unmonitored port, configure traffic mirroring from all of your switch's ports. For OT networks that use broadcast or multicast messaging, configure traffic mirroring only for RX (*Receive*) transmissions to prevent unnecessary bandwidth use.
 
 ## Traffic mirroring methods
@@ -24,18 +21,19 @@ Determine what traffic mirroring methods to use based on your network configurat
 Choose your monitoring method based on considerations like your overall monitoring needs, network configuration, sensor connection, and available resources.
 
 ## Example scenarios
+The following examples visual possible traffic mirroring methods that you might choose to use in your car manufacturing organization based on your network configuration:
 
 ### Remote VLAN architecture
 
 In the following example of a Remote VLAN architecture, your source switches are configured with remote SPAN sessions, which distribute the data via intermediate switches to the destination switch. The destination switch monitors traffic from your OT network sensor with Defender for IoT:
 <!-- should this be switch or port? -->
-:::image type="content" source="../media/4-remote-span-vlan.jpg" alt-text="Diagram of a remote VLAN architecture." border="false":::
+:::image type="content" source="../media/5-remote-span-vlan.jpg" alt-text="Diagram of a remote VLAN architecture." border="false":::
 
 ### Active or passive aggregation (TAP)
 
 In the following example of a network TAP architecture the TAP is installed inline to the network cable and mirrors traffic to Defender for IoT:
 
-:::image type="content" source="../media/4-active-passive-tap-v2.png" alt-text="Diagram of a network TAP." border="false":::
+:::image type="content" source="../media/5-active-passive-tap-v2.png" alt-text="Diagram of a network TAP." border="false":::
 
 ### ERSPAN architecture
 
@@ -43,6 +41,6 @@ In the following example of an ERSPAN architecture, the source router encapsulat
 
 <!-- the packet or the payload?-->
 
-:::image type="content" source="../media/4-erspan-architecture.png" alt-text="Diagram of an ERSPAN network." border="false":::
+:::image type="content" source="../media/5-erspan-architecture.png" alt-text="Diagram of an ERSPAN network." border="false":::
 
 ## Knowledge check

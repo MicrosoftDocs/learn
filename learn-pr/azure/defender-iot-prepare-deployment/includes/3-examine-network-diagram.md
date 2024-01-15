@@ -7,9 +7,9 @@ Using the diagram you can determine:
 - What devices there are and how they communicate
 - The security and operational risks and the most interesting traffic for those risks
 
-## Create a network diagram
+## Examine your network diagram
 
-Use the following questions to help you prepare your network map diagram that lists all the devices in your network.
+Using your existing network map diagram use the following questions to help you identify and take note of what you want to monitor.
 
 ### General questions
 
@@ -48,15 +48,17 @@ Each device in your network falls within a layer of the Purdue reference model. 
 | **Level 2:** </br>Supervisory| Includes the systems and functions connected to the runtime supervision and operation of an area of a production facility. Those systems communicate with the Level 1 controllers, and sometimes with the site or enterprise (Level four and five). The systems and functions can include human-machine interfaces (HMIs), alerting systems, and control room workstations, among other systems.|
 | **Levels 3 and 3.5:** </br>Site-level and industrial perimeter network| Manages the site-wide industrial automation and control functions like production scheduling, site level operations management, file server, and Active Directory. These systems communicate with the production zone and share data with Level four and five systems and applications. Levels through level 3 are considered critical to site operations. |
 | **Levels 4 and 5:** </br>Business and enterprise networks|The site or enterprise network where the centralized IT systems and functions exist. The IT organization manages them directly at these levels.|
-<!--Level 3.5, should that be added?-->
-Generally, Defender for IoT sensors are placed between levels two and three or between three and 3.5, if it's an industrial demilitarized zone (DMZ). <!-- is this 0 to 3 or 2, 3 and 3,3.5 as vashaka-->
+
+Generally, Defender for IoT sensors are placed between levels two and three or between three and 3.5, if it's an industrial demilitarized zone (DMZ). 
 
 ### Sample network diagram
 
 The following diagram depicts how your devices might be divided into the different OT and IT levels:
 
-:::image type="content" source="../media/2-purdue-only.png" alt-text="A diagram of the Purdue model." border="false":::
+:::image type="content" source="../media/3-purdue-only.png" alt-text="A diagram of the Purdue model." border="false":::
 
 ## Knowledge check
+:::image type="complex" source="../media/3-industrial-network-diagram-knowledge-check.png" alt-text="Diagram of a sample network diagram." border="false":::
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+Figure 1 shows a sample network diagram divided into Cloud, Enterprise (IoT), and OT areas. The cloud area includes Microsoft Azure and a data center/SOC/MSSP area and is seperated from the Enterprise area with a firewall. The Enterprise/IoT area includes the corporate network and is set off from the OT area by a firewall. In the OT area are three defined areas spanning the production floor, SCADA/DCS, and Industrial DMZ. The first is labeled  IDMZ and includes Historian, Security update server, and Domain controller on the SCADA/DCS level and a switch on the IDMZ level. The other two areas are labeled Zone 1 and Zone 2, respectively and include production floor resources, PLCs / RTUs and HMIs on the SCADA/DCS level, and and a switch each on the IDMZ level. Each switch has an arrow pointing upward. The IDMZ area has a line leading up to the firewall, labeled "A". It additionally has a line leading from the arrow to the corporate network (labeled "B"), and to the Data center area (labeled "C").  Zone 1 and Zone 2 each have lines leading up from their zones (labeled "D" and "F" respectively) that connect together and then lead up to the corporate network (labeled "E"). 
+:::image-end:::

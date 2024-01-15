@@ -12,7 +12,7 @@ metadata:
   ms.service: defender-for-iot
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-identify-devices-and-subnets.md)]
+  [!include[](includes/4-identify-devices-and-subnets.md)]
 
 quiz:
 
