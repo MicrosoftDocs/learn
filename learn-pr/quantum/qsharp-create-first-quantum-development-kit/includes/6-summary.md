@@ -13,5 +13,4 @@ In this module, we covered a lot. Here are a few key concepts to keep in mind:
 ## Learn more
 
 * Explore the [Azure Quantum documentation](/quantum/?azure-portal=true).
-* You can [browse code samples](/samples/browse/?languages=qsharp&azure-portal=true).
 * Learn quantum computing with the [Quantum Katas](/azure/quantum/tutorial-qdk-intro-to-katas?azure-portal=true).
