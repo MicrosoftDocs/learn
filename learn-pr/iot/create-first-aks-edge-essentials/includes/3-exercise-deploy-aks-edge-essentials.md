@@ -214,60 +214,38 @@ Now that the VM is created and the install files downloaded, let's run the `AksE
       - Installs required host OS features (`Install-AksEdgeHostFeatures`).
       - Deploys a single machine K3S cluster with a Linux and Windows node.
 
-    The following example with the last lines of the output, shows the download and installation of AKS Edge Essentials K3s distribution was successful:
+    The following example with the last lines of the output, shows the download and installation of AKS Edge Essentials K3s distribution was successful. You can also access the log file at `C:\akseeLearn\aksedgedlog-yymmdd-hhmm.txt`
 
-    <!-- TODO: NEED TO CHANGE THIS WITH EXAMPLE FROM THE VM using ```powershell``` -->
+    ```powersell
+    ...
+    [01/04/2024 15:29:34]
+    Waiting for Windows node IP address...
+    
+    [01/04/2024 15:29:34]
+    Testing Windows node control channel...
+    
+    [01/04/2024 15:29:37]
+    ...successfully connected to the Windows node
+    
+    [01/04/2024 15:31:39]
+    Waiting for Windows node to transition to ready state (796 seconds remaining)
+    - Waiting for Kubernetes node (myvm-wedge) to reach condition Ready, time remaining = 796 seconds
+    - Kubernetes node (myvm-wedge) reached condition Ready
+    
+    [01/04/2024 15:31:57]
+    AksEdge - copying Kubeconfig into the host.
+    
+    [01/04/2024 15:32:02]
+    AksEdge - new deployment successfully created.
 
-    ```output
-    ExecutionState   : Succeeded
-    ExecutionMessage : RunCommand script execution completed
-    ExitCode         : 0
-    Output           : ...                      
-                       [11/16/2023 13:30:10] Initializing kubernetes runtime in Linux node.
-                       
-                        - Waiting for Kubernetes node (myvm-ledge) to reach condition Ready, time remaining = 300 seconds
-                        - Kubernetes node (myvm-ledge) reached condition Ready
-                       
-                       [11/16/2023 13:32:09] Querying IP and MAC addresses from virtual machine (myvm-ledge)
-                       
-                        - Virtual machine MAC: 00:15:5d:0b:cd:35
-                        - Virtual machine IP : 192.168.0.2 retrieved directly from virtual machine
-                       
-                       [11/16/2023 13:32:12] Retrieving local Linux node's k3s cluster join data.
-                       [11/16/2023 13:32:18] Extracting Windows Vhdx
-                       [11/16/2023 13:37:32] Deploying Windows Worker Node
-                       
-                        - Verifying expected Windows VM image
-                        - Creating storage vhd (file: AksEdgeWindowsImage)
-                        - Creating the storage vhdx... 9 retries remaining
-                        - Creating the storage vhdx... 8 retries remaining
-                       
-                       [11/16/2023 13:43:41] Removing Intermediate Windows Vhdx
-                       
-                        - Creating vnic (name: eth0)
-                       
-                       [11/16/2023 13:44:40] Done
-                       [11/16/2023 13:44:40] Waiting for Windows node IP address...
-                       [11/16/2023 13:44:40] Testing Windows node control channel...
-                       [11/16/2023 13:45:21] ...successfully connected to the Windows node
-                       [11/16/2023 13:47:09] Waiting for Windows node to transition to ready state (796 seconds remaining)
-                       
-                        - Waiting for Kubernetes node (myvm-wedge) to reach condition Ready, time remaining = 796 seconds
-                        - Kubernetes node (myvm-wedge) reached condition Ready
-                       
-                       [11/16/2023 13:47:34] AksEdge - copying Kubeconfig into the host.
-                       [11/16/2023 13:47:39] AksEdge - new deployment successfully created.
-                       
-                       * AksEdge VM deployment successfull.
-                       Deployment Successful. 
-                       Step 4: Connect to Arc
-                       >> skipping step 4
-                       Duration: 0 hrs 31 mins 26 seconds
-    Error            : 
-    StartTime        : 11/16/2023 1:16:10 PM
-    EndTime          : 11/16/2023 1:47:44 PM
-    Statuses         : 
+    * AksEdge VM deployment successfull.
+    Deployment Successful.
+    Step 4: Connect to Arc
+    >> skipping step 4
+    Duration: 0 hrs 23 mins 13 seconds
     ```
+
+    :::image type="content" source="../media/3-aks-ee-installsuccess-inline.png" alt-text="Screenshot of Windows VM with powershell commands output demonstrating a successful download and installation of AKS Edge Essentials K3s distribution." lightbox="../media/3-aks-ee-installsuccess-expanded.png":::
 
 > [!TIP]
 > Since the installation process takes around 30 minutes to complete, you can continue to the next learning unit, we will get back to this later.
