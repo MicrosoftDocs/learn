@@ -49,7 +49,7 @@ python -m pip install --upgrade qsharp qsharp-widgets
     
     
     // In this sample we concentrate on costing the `EstimateFrequency`
-    // operation, which is the core quantum operation in Shor's algorithm, and
+    // operation, which is the core quantum operation in Shors algorithm, and
     // we omit the classical pre- and post-processing.
     
     /// # Summary
@@ -112,7 +112,7 @@ python -m pip install --upgrade qsharp qsharp-widgets
             }
         }
     
-        // Return all the qubits used for oracle's eigenstate back to 0 state
+        // Return all the qubits used for oracles eigenstate back to 0 state
         // using Microsoft.Quantum.Intrinsic.ResetAll.
         ResetAll(eigenstateRegister);
     
@@ -252,7 +252,7 @@ python -m pip install --upgrade qsharp qsharp-widgets
     
         if c != 0 {
             // If c has j trailing zeroes than the j least significant bits
-            // of y won't be affected by the addition and can therefore be
+            // of y will not be affected by the addition and can therefore be
             // ignored by applying the addition only to the other qubits and
             // shifting c accordingly.
             let j = NTrailingZeroes(c);
@@ -418,7 +418,7 @@ For example, collapse the **Logical qubit parameters** group to see that the cod
 > [!TIP]
 > For a more compact version of the output table, you can use `result.summary`.
 
-### Space-time diagrams
+### Space diagram
 
 The distribution of physical qubits used for the algorithm and the T factories is a factor which may impact the design of your algorithm. You can use the `qsharp-widgets` package to visualize this distribution to better understand the estimated space requirements for the algorithm.
 

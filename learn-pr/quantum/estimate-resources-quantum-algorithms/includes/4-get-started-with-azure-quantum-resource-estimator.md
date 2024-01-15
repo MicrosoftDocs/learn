@@ -2,7 +2,7 @@ Let's get some practice with the Azure Quantum Resource Estimator. In the follow
 
 ## Load a Q# sample program
 
-1. In VS Code, select **File > New Text File** and save the file as **ShorRE.qs**. 
+1. In VS Code, select **File > New File** and save the file as **ShorRE.qs**. 
 1. Open **ShorRE.qs** and type `sample`, then select **Shor sample** and save the file.
 
 ## Run the Resource Estimator
