@@ -1,6 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.defender-iot-prepare-deployment.describe-process-to-prepare
 title: Describe the process to prepare to deploy Microsoft Defender for IoT for operational technology (OT) monitoring
+
 metadata:
   title: Describe the process to prepare to deploy Microsoft Defender for IoT for operational technology (OT) monitoring
   description: "Describe where the preparing process fits in the overall deployment of Microsoft Defender for IoT for operational technology monitoring."

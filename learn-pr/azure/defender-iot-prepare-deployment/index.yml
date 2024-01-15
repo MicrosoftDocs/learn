@@ -9,8 +9,7 @@ metadata:
   ms.author: cwatson
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: defender-for-iot
-title: |
-  Prepare to deploy Microsoft Defender for IoT
+title: Prepare to deploy Microsoft Defender for IoT
 summary: To prepare for the deployment of Microsoft Defender for IoT, identify what to monitor, choose a traffic mirroring method, and review the appliance options.
 abstract: |
   By the end of this module, you'll be able to:
@@ -25,14 +24,6 @@ prerequisites: |
   - Knowledge of operational technology (OT) networks and networking concepts at an intermediate level
   - Familiarity with the Purdue networking model like the device types that are included in each networking level
 iconUrl: /learn/achievements/generic-badge.svg
-levels: 
-  - intermediate
-roles: 
-  - solution-architect
-products: 
-  - defender-for-iot
-subjects:
-  - security
 units:
 - learn.defender-iot-prepare-deployment.introduction
 - learn.defender-iot-prepare-deployment.describe-process-to-prepare

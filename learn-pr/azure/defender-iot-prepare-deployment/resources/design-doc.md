@@ -89,7 +89,7 @@ Add more units as needed for your content
 
 1. Review appliance options
    - List the “general” appliance options available for use with Defender for IoT network sensors
-     Will need to summarize key points in these article to fit into a unit:
+     Will need to summarize key points in these articles to fit into a unit:
 	[Supported hardware profiles](https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-appliance-sizing)
 o	[Pre-configured appliances](https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-pre-configured-appliances)
 o	[Virtual appliance support](https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-virtual-appliances) 
@@ -97,9 +97,9 @@ o	[Virtual appliance support](https://learn.microsoft.com/azure/defender-for-iot
    - Per Vishakha Gosh: this is most commonly used hardware profile and purchased applicance: https://learn.microsoft.com/azure/defender-for-iot/organizations/appliance-catalog/hpe-proliant-dl20-plus-enterprise
    **Knowledge check**
 
-    What types of questions will test the learning objective? [(Knowledge check guidance)](https://review.learn.microsoft.com/help/learn/id-guidance-knowledge-check)
+    What types of questions test the learning objective? [(Knowledge check guidance)](https://review.learn.microsoft.com/help/learn/id-guidance-knowledge-check)
    
-    For a given scenario (sensor, bandwidth that sensor needs, etc), which appliance would you use? Why would you pick option > over option B? (We’d likely need to provide a list of options as we can’t list all in the training module.)
+    For a given scenario (sensor, bandwidth that sensor needs, etc.), which appliance would you use? Why would you pick option > over option B? (We’d likely need to provide a list of options as we can’t list all in the training module.)
 
 
 1. Summary

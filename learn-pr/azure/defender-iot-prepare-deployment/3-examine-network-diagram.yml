@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.defender-iot-prepare-deployment.examine-network-diagram
-
 title: Examine your network diagram
+
 metadata:
   title: Examine your network diagram
   description: "Describes the network diagram preparing process and where the OT network exists on the Purdue model."

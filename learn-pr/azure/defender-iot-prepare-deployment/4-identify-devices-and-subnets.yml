@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.defender-iot-prepare-deployment.identify-devices-and-subnets
-
 title: Identify devices and subnets to monitor with Defender for IoT
+
 metadata:
   title: Identify devices and subnets to monitor with Defender for IoT
   description: "Describes the planning process for Defender for IoT, to identify devices and subnets to monitor."
