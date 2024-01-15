@@ -2,9 +2,6 @@ In the previous unit, you identified the devices and subnets in your automotive 
 
 Traffic mirroring with Defender for IoT allows you to mirror network traffic to your sensors, where you can monitor and diagnose risks and threats in your network.
 
-<!--### Prevent undetected port connections /Mirror port scope seems this should be removed or move to the bottom-->
-To prevent rogue devices from connecting undetected to an unmonitored port, configure traffic mirroring from all of your switch's ports. For OT networks that use broadcast or multicast messaging, configure traffic mirroring only for RX (*Receive*) transmissions to prevent unnecessary bandwidth use.
-
 ## Traffic mirroring methods
 
 Determine what traffic mirroring methods to use based on your network configuration. Defender for IoT supports the following traffic mirroring methods:
@@ -42,5 +39,9 @@ In the following example of an ERSPAN architecture, the source router encapsulat
 <!-- the packet or the payload?-->
 
 :::image type="content" source="../media/5-erspan-architecture.png" alt-text="Diagram of an ERSPAN network." border="false":::
+
+## Prevent undetected port connections
+
+To prevent rogue devices from connecting undetected to an unmonitored port, configure traffic mirroring from all of your switch's ports. For OT networks that use broadcast or multicast messaging, configure traffic mirroring only for RX (*Receive*) transmissions to prevent unnecessary bandwidth use.
 
 ## Knowledge check
