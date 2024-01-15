@@ -1,4 +1,4 @@
- To deploy Defender for IoT for OT monitoring in your car manufacturer across global locations requires preparation in addition to planning. Preparation is part of the first stage of your OT monitoring deployment path. 
+ To deploy Defender for IoT for OT monitoring in your car manufacturer across global locations, requires preparation in addition to planning. Preparation is part of the first stage of your OT monitoring deployment path. 
 
 ## Defender for IoT for OT deployment path
 
@@ -17,6 +17,6 @@ At the end of your deployment, baseline learning ends with a set of learned netw
 
 ## OT site deployment preparation phase
 
-This module describes the prepare phase, which is part of the *plan and prepare* phase of deployment. You'd already have completed your deployment plan, including how you'll segment your network into sites and zones, the sensor connection methods you'll use, and the types of users and roles you'll want for each sensor.
+This module describes the prepare phase, which is part of the *plan and prepare* phase of deployment. You already completed your deployment plan. Including how you'll segment your network into sites and zones, the sensor connection methods to use, and the types of users and roles you'll want for each sensor.
 
-In the planning phase you'll be examining your network diagram to determine which subnets and devices to monitor for traffic, in order to create a list of the OT sensors you need where. You'll prepare the traffic mirroring method you'll use for each OT sensor, and prepare to choose the appliances you'll need for your sensor choices. The next units will cover these preparation steps.
+In the planning phase, you examine your network diagram to determine which subnets and devices to monitor for traffic. You use this information in order to create a list of the OT sensors you need and where. You prepare the traffic mirroring method to use for each OT sensor, and prepare to choose the appliances you'll need for your sensor choices. The next units will cover these preparation steps.
