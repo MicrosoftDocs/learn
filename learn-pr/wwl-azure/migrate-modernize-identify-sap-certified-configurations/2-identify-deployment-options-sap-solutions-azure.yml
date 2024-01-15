@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-identify-sap-certified-configurations.identify-deployment-options-sap-solutions-azure
+title: Identify deployment options for SAP solutions on Azure
+metadata:
+  title: Identify deployment options for SAP solutions on Azure
+  description: "Identify deployment options for SAP solutions on Azure"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-identify-deployment-options-sap-solutions-azure.md)]
