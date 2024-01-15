@@ -22,13 +22,13 @@ A deployment represents one or more identical pods, managed by the Kubernetes De
 
 ### Manifest files
 
-A Kubernetes manifest file allows you to describe your workloads in the YAML format declaratively and simplify Kubernetes object management. For example you can use a manifest file to ensure your pods get scheduled on nodes with the corresponding OS by adding `nodeSelector` to your deployment files. See [linux-sample.yaml](https://github.com/Azure/AKS-Edge/blob/main/samples/others/linux-sample.yaml) in the GitHub repo package for the deployment manifest. Note that in the YAML we specified a `nodeSelector` tag as **Linux**.
+A Kubernetes manifest file allows you to describe your workloads in the YAML format declaratively and simplify Kubernetes object management. For example you can use a manifest file to ensure your pods get scheduled on nodes with the corresponding OS by adding `nodeSelector` to your deployment files. See [linux-sample.yaml](https://github.com/Azure/AKS-Edge/blob/main/samples/others/linux-sample.yaml) in the GitHub repo package for an example of a deployment manifest. Note that in the YAML we specified a `nodeSelector` tag as **Linux**.
 
 ### Deploy the application
 
 To deploy your application locally, you use the [kubectl apply](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply) command. This command parses the manifest file and creates the defined Kubernetes objects. This is how you would deploy a linux application in AKS Edge Essentials:
 
-```bash
+```powershell
 kubectl apply -f  https://raw.githubusercontent.com/Azure/AKS-Edge/main/samples/others/linux-sample.yaml
 ```
 
@@ -46,7 +46,7 @@ To establish a communication channel between the Windows host OS and the Linux a
 
 ## Specialized devices with Windows IoT Enterprise
 
-In the industrial factory scenario, we are looking for creating a specialized device that don’t need functionality and feature updates as frequently as other general purpose devices in the organization.
+In the industrial factory scenario, we are looking for creating a specialized device that don’t need functionality and feature updates as frequently as other general purpose devices in the organization. We need our application to run on a device that is built for a specific purpose and is not intended to be changed or upgraded.
 
 Windows powers many ATM machines, point-of-sale terminals, industrial automation systems, thin clients, medical devices, digital signage, kiosks, and other fixed purpose devices like the ones in our industrial factory scenario. Windows IoT Enterprise allows you to build these fixed purpose devices with specific allowances and restrictions in the license agreement.
 
