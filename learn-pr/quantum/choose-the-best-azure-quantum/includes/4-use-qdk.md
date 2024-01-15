@@ -2,9 +2,9 @@ The Azure Quantum Development Kit (QDK) extension for Visual Studio Code allows 
 
 ## Prerequisites
 
-- Install [Visual Studio Code](https://code.visualstudio.com/) or open [VS Code for the Web](https://vscode.dev/).
-- Install the [Azure Quantum Developer Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) (Modern QDK) VS Code extension.
-- If you want to run your programs on real hardware:
+- Install [Visual Studio Code](https://code.visualstudio.com/) or open [VS Code for the Web](https://vscode.dev/quantum).
+- Install the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) (Modern QDK) VS Code extension.
+- If you want to run your programs on real hardware, you also need:
 
     - An Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=academic-15963-cxa) before you begin.
     - An Azure Quantum workspace.
@@ -56,6 +56,8 @@ The Azure Quantum Development Kit (QDK) extension for Visual Studio Code allows 
 
 ### Connect to Azure Quantum and submit your job
 
+If you have an Azure Quantum workspace, you can connect to it from VS Code and submit your Q# programs to Azure Quantum. For this example, you submit the `RandomNum.qs` program to the Rigetti simulator.
+
 1. Open the **QUANTUM WORKSPACES** section in the **Explorer** view of the VS Code sidebar.
 1. Select **Add an existing workspace** and follow the prompts to connect to your preferred directory, subscription, and workspace. 
 1. Once you are connected, expand your workspace and expand the **Rigetti** provider.
@@ -66,7 +68,7 @@ The Azure Quantum Development Kit (QDK) extension for Visual Studio Code allows 
 1. Expand **Jobs** and hover over your job, which displays the times and status of your job. 
 1. To view the results, select the cloud icon next to the job name to download the results from your workspace storage and display it in VS Code.
 
-## Create an Azure Quantum notebook
+## Extra - Create an Azure Quantum notebook
 
 The Modern QDK allows you to create Azure Quantum notebooks in VS Code. Azure Quantum notebooks are Jupyter notebooks that allow you to run quantum programs on the quantum computers and simulators of the providers you selected for your Azure Quantum workspace.
 
