@@ -98,7 +98,7 @@ app.post('/products', (req, res) => {
 })
 ```
 
-The HTTP verb `get` means that a user wants to read data. The HTTP verb `post` means that they want to write data. Dividing up your app so that different route and verb pairings execute different pieces of code is command. This concept will be covered in more detail later.
+The HTTP verb `get` means that a user wants to read data. The HTTP verb `post` means that they want to write data. Dividing up your app so that different route and verb pairings execute different pieces of code is common. This concept will be covered in more detail later.
 
 ## Serve different content types
 
