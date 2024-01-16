@@ -26,7 +26,7 @@ A Kubernetes manifest file allows you to describe your workloads in the YAML for
 
 ### Deploy the application
 
-To deploy your application locally, you use the [kubectl apply](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply) command. This command parses the manifest file and creates the defined Kubernetes objects. This is how you would deploy a linux application in AKS Edge Essentials:
+To deploy your application, you use the [kubectl apply](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply) command. This command parses the manifest file and creates the defined Kubernetes objects. This is how you would deploy a linux application in AKS Edge Essentials:
 
 ```powershell
 kubectl apply -f  https://raw.githubusercontent.com/Azure/AKS-Edge/main/samples/others/linux-sample.yaml

@@ -1,4 +1,4 @@
-In this exerciste we will deploy a containerized Linux and Windows application on the AKS Edge Essentials cluster.
+In this exercise we will deploy a containerized Linux and Windows application on the AKS Edge Essentials cluster.
 
 ## Verify AKS Edge Essentials deployment
 
@@ -12,41 +12,121 @@ In this exerciste we will deploy a containerized Linux and Windows application o
     kubectl get pods -A -o wide
     ```
 
-    The following example output shows the Linux and Windows nodes are ready and the pods are running:
-
-    ```output
-    PS C:\Users\azureuser> kubectl get nodes -o wide
-    NAME         STATUS   ROLES                       AGE   VERSION        INTERNAL-IP   EXTERNAL-IP   OS-IMAGE                         KERNEL-VERSION     CONTAINER-RUNTIME
-    myvm-ledge   Ready    control-plane,etcd,master   46m   v1.26.6+k3s-   192.168.0.2   <none>        CBL-Mariner/Linux                5.15.133.1-1.cm2   containerd://1.7.1-k3s1
-    myvm-wedge   Ready    <none>                      33m   v1.26.6+k3s-   192.168.0.3   <none>        Windows Server 2022 Datacenter   10.0.20348.2031    containerd://1.7.1-k3s1
-    
-    PS C:\Users\azureuser> kubectl get pods -A -o wide
-    NAMESPACE     NAME                               READY   STATUS    RESTARTS      AGE   IP            NODE         NOMINATED NODE   READINESS GATES
-    kube-system   coredns-866448bdfb-8s26b           1/1     Running   0             47m   10.42.0.3     myvm-ledge   <none>           <none>
-    kube-system   kube-vip-cloud-provider-ds-n8l6t   1/1     Running   0             46m   10.42.0.2     myvm-ledge   <none>           <none>
-    kube-system   kube-vip-ds-rjl8v                  1/1     Running   2 (43m ago)   46m   192.168.0.2   myvm-ledge   <none>           <none>
-    ``````
+    The following example screenshot shows the Linux and Windows nodes are ready and the pods are running:
 
     :::image type="content" source="../media/5-aks-ee-deploysuccess-inline.png" alt-text="Screenshot of Windows VM with powershell commands output demonstrating a successful deployment of AKS Edge Essentials." lightbox="../media/5-aks-ee-deploysuccess-expanded.png":::
 
 ## Deploy a Linux application
 
-We will deploy a [sample application](https://github.com/Azure-Samples/azure-voting-app-redis) that is a simple voting app, consisting of a front and back end, which is based on Microsoft's **azure-vote-front** image. The container image for this application is hosted on Azure Container Registry (ACR). See [linux-sample.yaml](https://github.com/Azure/AKS-Edge/blob/main/samples/others/linux-sample.yaml) in the GitHub repo package for the deployment manifest. Note that in the YAML we specified a `nodeSelector` tag as **Linux**.
+We will deploy a [sample application](https://github.com/Azure-Samples/azure-voting-app-redis) that is a simple voting app, consisting of a front and back end, which is based on Microsoft's **azure-vote-front** image. The container image for this application is hosted on Azure Container Registry (ACR). See [linux-sample.yaml](https://github.com/Azure/AKS-Edge/blob/main/samples/others/linux-sample.yaml) in the GitHub repo package for the deployment manifest. Note that in the YAML we specified a `nodeSelector` tag as **linux**.
 
-1. Deploy the application
+1. To deploy your application, use the [kubectl apply](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply) command. This command parses the manifest file and creates the defined Kubernetes objects. Specify the YAML manifest file, as shown in the following example:
+    
+    ```powershell
+    kubectl apply -f  https://raw.githubusercontent.com/Azure/AKS-Edge/main/samples/others/linux-sample.yaml
+    ```
 
-To deploy your application, use the [kubectl apply][kubectl-apply] command. This command parses the manifest file and creates the defined Kubernetes objects. Specify the YAML manifest file, as shown in the following example:
+1. Wait a few minutes for the pods to be in the **running** state:
+    
+    ```powershell
+    kubectl get pods -o wide
+    ```
+    
+    The following example output shows the application pods are running:
 
-```powershell
-kubectl apply -f  https://raw.githubusercontent.com/Azure/AKS-Edge/main/samples/others/linux-sample.yaml
-```
+    ```output
+    PS C:\Users\azureuser> kubectl get pods -o wide
+    NAME                                READY   STATUS    RESTARTS   AGE   IP          NODE         NOMINATED NODE   READINESS GATES
+    azure-vote-back-66c88ccc8-fjwfq     1/1     Running   0          46s   10.42.0.6   myvm-ledge   <none>           <none>
+    azure-vote-front-85dc674b97-xp8d8   1/1     Running   0          46s   10.42.0.7   myvm-ledge   <none>           <none>
+    ```
 
-### Step 3: verify the pods
+1. To monitor progress, use the [kubectl get services](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#get) command with the `--watch` parameter:
 
-Wait a few minutes for the pods to be in the **running** state:
+    ```powershell
+    kubectl get services --watch
+    ```
+    
+    Initially, the `EXTERNAL-IP` for the `azure-vote-front` service is shown as `pending`. When the `EXTERNAL-IP` address changes from `pending` to an actual public IP address, you can use the IP address assigned to the service.
 
-```powershell
-kubectl get pods -o wide
-```
+    ```output
+    PS C:\Users\azureuser> kubectl get services --watch
+    NAME               TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
+    azure-vote-back    ClusterIP      10.43.208.68   <none>        6379/TCP       4m52s
+    azure-vote-front   LoadBalancer   10.43.125.83   192.168.0.4   80:31032/TCP   4m52s
+    kubernetes         ClusterIP      10.43.0.1      <none>        443/TCP        16m
+    ```
 
-<!-- TODO: ADD IMAGE of Running PODS  -->
+    To stop watching press <kbd>CTRL + C</kbd>.
+
+1. To view the application, open a browser and navigate to the IP address and port assigned to the `azure-vote-front` service. In the previous example, the IP address and port assigned to the service is **192.168.0.4:31032**.
+
+    :::image type="content" source="../media/5-aks-ee-linuxapp-inline.png" alt-text="Screenshot of Windows VM with linux sample application running in the browser." lightbox="../media/5-aks-ee-linuxapp-expanded.png":::
+
+## Deploy a Windows application
+
+We will now deploy a sample ASP.NET Core application based on [Microsoft's sample image](https://hub.docker.com/_/microsoft-dotnet-samples/). See [win-sample-aspnetcore.yaml](https://github.com/Azure/AKS-Edge/blob/main/samples/others/win-sample-aspnetcore.yaml) in the GitHub repo package for the deployment manifest. Note that in the YAML we specified a `nodeSelector` tag as **windows**.
+
+1. Use the (kubectl apply)(https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply) command to deploy the application:
+
+    ```powershell
+    kubectl apply -f https://raw.githubusercontent.com/Azure/AKS-Edge/main/samples/others/win-sample-aspnetcore.yaml
+    ```
+
+1. Wait a few minutes for the pod to be in the **running** state:
+    
+    ```powershell
+    kubectl get pods -o wide
+    ```
+    
+    The following example output shows the application `sample-aspnetcore-786fb44bb-k449c` pod is running:
+
+    ```output
+    PS C:\Users\azureuser> kubectl get pods -o wide
+    NAME                                READY   STATUS    RESTARTS   AGE     IP          NODE         NOMINATED NODE   READINESS GATES
+    azure-vote-back-66c88ccc8-fjwfq     1/1     Running   0          8m      10.42.0.6   myvm-ledge   <none>           <none>
+    azure-vote-front-85dc674b97-xp8d8   1/1     Running   0          8m      10.42.0.7   myvm-ledge   <none>           <none>
+    sample-aspnetcore-786fb44bb-k449c   1/1     Running   0          2m56s   10.42.1.3   myvm-wedge   <none>           <none>
+    ```
+
+1. Verify that the sample service is running
+    
+    ```powershell
+    kubectl get services
+    ```
+
+    Then take a note of the `PORT` for the `sample-aspnetcore` service. In this example it is **31767**.
+    
+    ```output
+    PS C:\Users\azureuser> kubectl get services
+    NAME               TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)         AGE
+    azure-vote-back    ClusterIP      10.43.208.68   <none>        6379/TCP        10m52s
+    azure-vote-front   LoadBalancer   10.43.125.83   192.168.0.4   80:31032/TCP    10m52s
+    kubernetes         ClusterIP      10.43.0.1      <none>        443/TCP         26m
+    sample-aspnetcore  NodePort       10.43.237.30   <none>        8080:31767/TCP  6m40s
+    ```
+
+1. Retrive the IP address of the Kubernetes node on which the application is running to append the port of the **NodePort**.
+
+    ```powershell
+    Get-AksEdgeNodeAddr -NodeType Windows
+    ```
+    
+    ```output
+    PS C:\Users\azureuser> Get-AksEdgeNodeAddr -NodeType Windows
+
+    [01/16/2024 14:44:22] Querying IP and MAC addresses from virtual machine (myvm-wedge)
+    
+     - Virtual machine MAC: 00:15:5d:02:7c:eb
+     - Virtual machine IP : 192.168.0.3 retrieved directly from virtual machine
+    
+    Name                           Value
+    ----                           -----
+    IpAddress                      192.168.0.3
+    MacAddress                     00:15:5d:02:7c:eb
+    ```
+    
+1. To view the application, open a browser and navigate to the IP address and port assigned to the `sample-aspnetcore` service. In the previous example, the IP address and port assigned to the service is **192.168.0.3:31767**.
+
+    :::image type="content" source="../media/5-aks-ee-windowsapp-inline.png" alt-text="Screenshot of Windows VM with windows sample application running in the browser." lightbox="../media/5-aks-ee-windowsapp-expanded.png":::
+
