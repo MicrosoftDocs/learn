@@ -24227,6 +24227,86 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure-devops/deploy-nodejs/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/evolve-your-devops-practices/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-nodejs/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/evolve-your-devops-practices/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-nodejs/2-azure-support-nodejs.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/evolve-your-devops-practices/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-nodejs/3-get-sample-application.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/evolve-your-devops-practices/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-nodejs/4-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/evolve-your-devops-practices/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-nodejs/5-deploy-nodejs.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/evolve-your-devops-practices/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-nodejs/6-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/evolve-your-devops-practices/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-nodejs/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/evolve-your-devops-practices/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-nodejs/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/evolve-your-devops-practices/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-java-containers/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/evolve-your-devops-practices/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-java-containers/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/evolve-your-devops-practices/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-java-containers/2-azure-support-java.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/evolve-your-devops-practices/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-java-containers/3-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/evolve-your-devops-practices/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-java-containers/4-deploy-java-container.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/evolve-your-devops-practices/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-java-containers/5-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/evolve-your-devops-practices/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-java-containers/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/evolve-your-devops-practices/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/deploy-aspnet-apps-azure-app-service-pipelines/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
       "redirect_document_id": false
