@@ -1,6 +1,6 @@
 [!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-Your toy company has acquired a competitor that created a popular toy truck. The toys connect to a virtual machine hosted in Azure to receive firmware updates. All the resources for the virtual machine were created manually by using the Azure portal. In this unit, you'll begin the process of migrating the resources to a Bicep file.
+Your toy company has acquired a competitor that created a popular toy truck. The toys connect to a virtual machine that's hosted in Azure to receive firmware updates. All the resources for the virtual machine were created manually by using the Azure portal. In this unit, you'll begin the process of migrating the resources to a Bicep file.
 
 During the process, you'll do the following tasks:
 
@@ -21,28 +21,28 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 1. On the Azure home page, under **Azure services**, select **Create a resource**.
 
-   :::image type="content" source="../media/3-create-resource.png" alt-text="Screenshot of the Azure portal, with the Create a resource option highlighted.":::
+   :::image type="content" source="../media/3-create-resource.png" alt-text="Screenshot that shows the Azure portal. The Create a resource option is highlighted.":::
 
    Azure Marketplace appears in the **Create a resource** pane.
 
 1. Under **Ubuntu Server 20.04 LTS**, select **Create**.
 
-   :::image type="content" source="../media/3-create-ubuntu.png" alt-text="Screenshot that shows Azure Marketplace, with the Create link highlighted under the words Ubuntu Server 20.04 LTS.":::
+   :::image type="content" source="../media/3-create-ubuntu.png" alt-text="Screenshot that shows Azure Marketplace. The Create link under Ubuntu Server 20.04 LTS is highlighted.":::
 
    > [!IMPORTANT]
-   > If you don't see the **Ubuntu Server 20.04 LTS** item, go directly to [Ubuntu Server 20.04 LTS](https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-focal20_04-lts-ARM) in Azure Marketplace.
+   > If you don't see **Ubuntu Server 20.04 LTS**, go directly to [Ubuntu Server 20.04 LTS](https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-focal20_04-lts-ARM) in Azure Marketplace.
 
-1. On the **Basics** tab, enter the following values for each setting.
+1. On the **Basics** tab, enter the following values for each setting. Use the defaults for all other settings. 
 
     | Setting | Value  |
     | ------ | ------- |
-    | **Project Details**  |
+    | **Project details**  |
     | Resource group | Select **Create new** and enter **ToyTruck**. |
-    | **Instance Details** |
+    | **Instance details** |
     | Virtual machine name  | ToyTruckServer |
     | Region | (US) West US 3 |
     | Availability options  | No infrastructure redundancy required |
-    | Image | Ubuntu Server 20.04 LTS - Gen2 |
+    | Image | Ubuntu Server 20.04 LTS - x64 Gen2 |
     | Size | Standard_D2s_v3 |
     | **Administrator account** |
     | Authentication type | Password |
@@ -61,7 +61,7 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 1. When the deployment is finished, select the resource group name to open the resource group.
 
-   :::image type="content" source="../media/3-deployment-completed.png" alt-text="Screenshot of the Azure portal that shows the deployment, with the resource group name highlighted.":::
+   :::image type="content" source="../media/3-deployment-completed.png" alt-text="Screenshot of the Azure portal that shows the deployment. The resource group name is highlighted.":::
 
    The resource group now contains the virtual machine and its dependencies:
 
