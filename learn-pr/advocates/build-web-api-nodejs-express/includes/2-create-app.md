@@ -2,7 +2,7 @@ Companies often store a large amount of data in file systems and databases. They
 
 ## Web servers and web applications
 
-A web server is a piece of software that responds to requests from clients. A web application sits on top of the web server. Some languages, like Node.js, provide both the web server and the web application in a framework. In this module, the web server is provided by the `HTTP` module. The web application is provided by the Express.js framework and includes the web server.
+A web server is a piece of software that responds to requests from clients. A web application sits on top of the web server. Some languages, like Node.js, provide both the web server and the web application in a framework. In this example scenario, the web server is provided by the `HTTP` module. The web application is provided by the Express.js framework and includes the web server.
 
 URL routing is a mechanism that allows you to configure an application to accept request URLs that do not map to physical files1. A request URL is simply the URL a user enters into their browser to find a page on your web site. You use routing to define URLs that are semantically meaningful to users and that can help with search-engine optimization (SEO)1. Routing is a mapping between a URL and the functionality of a web server2. In Django, URL routing allows you to declare all the routes (links) common to your web application by mapping a URL to the code (view) that creates a web page3.
 Learn more:
