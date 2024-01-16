@@ -4,7 +4,7 @@ title: Exercise - Deploy a virtual machine to test connectivity privately and se
 metadata:
   title: Exercise - Deploy a virtual machine to test connectivity privately and securely to the SQL server across the private endpoint
   description: "Exercise - Deploy a virtual machine to test connectivity privately and securely to the SQL server across the private endpoint"
-  ms.date: 01/04/2024
+  ms.date: 01/16/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
