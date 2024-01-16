@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: defender-for-iot
 title: Deploy a sensor to Microsoft Defender for IoT for operational technology network monitoring
-summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
+summary: "Using the activation file and list of endpoints from the onboarding phase, deploy an OT sensor to Microsoft Defender for IoT. Install monitoring software on the sensor, set up the interface settings, and activate the sensor."
 abstract: |
   By the end of this module, you'll be able to:
     - Deploy Defender for IoT software to a virtual appliance
