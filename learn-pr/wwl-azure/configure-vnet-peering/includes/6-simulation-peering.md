@@ -15,7 +15,7 @@ Your organization has three datacenters connected with a mesh wide-area network.
 > [!NOTE]
 > This simulation focuses on the connectivity of the offices, and not creating the individual Azure resources. 
 
-+ **Task 1**: Create the infrastructure environment. In this task, you'll deploy three virtual machines. Virtual machines will be deployed in different regions and virtual networks. 
++ **Task 1**: Create the infrastructure environment. In this task, you deploy three virtual machines. Virtual machines are deployed in different regions and virtual networks. 
     + Use a template to create the virtual networks and virtual machines in the different regions. You can review the [lab template](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Allfiles/Labs/05/az104-05-vnetvm-loop-template.json).
     + Use Azure PowerShell to deploy the template. 
 + **Task 2**: Configure local and global virtual network peering. 

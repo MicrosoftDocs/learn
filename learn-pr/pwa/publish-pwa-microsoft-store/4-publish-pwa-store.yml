@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.edge.publish-pwa-to-msft-store.publish-pwa-to-store
+title: Publish PWA to Microsoft Store
+metadata:
+  title: Publish PWA to Microsoft Store
+  description: This content is part of the "Test and publish Progressive Web Apps (PWAs) for Microsoft Store" module.
+  ms.date: 07/13/2023
+  author: beth-panx
+  ms.author: xupa
+  ms.topic: module-standard-task-based
+  ms.prod: microsoft-edge
+durationInMinutes : 6
+content: |
+  [!include[](includes/4-publish-pwa-store.md)]

@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.enterprise-scale-organizational-design-principles.2-enterprise-enrollment-azure-ad-tenants
 metadata:
-  title: Enterprise enrollment and Azure AD tenants
-  description: Enterprise enrollment and Azure AD tenants
+  title: Enterprise enrollment and Microsoft Entra tenants
+  description: Enterprise enrollment and Microsoft Entra tenants
   ms.date: 09/21/2020
-  author: kristopherjturner
-  ms.author: krturner
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Enterprise enrollment and Azure AD tenants
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+title: Enterprise enrollment and Microsoft Entra tenants
 durationInMinutes: 10
 content: |
   [!include[](./includes/2-enterprise-enrollment-azure-ad-tenants.md)]
@@ -28,14 +27,14 @@ quiz:
       isCorrect: false
       explanation: "GitHub accounts can't be used for enterprise enrollment."
 
-  - content: An Azure AD tenant provides identity and access management. When designing your solution, which of the following are valid design considerations or recommendations?
+  - content: A Microsoft Entra tenant provides identity and access management. When designing your solution, which of the following are valid design considerations or recommendations?
     choices:
     - content: Multifactor authentication provides another layer of security and a second barrier of authentication.
       isCorrect: true
       explanation: Enforce multifactor authentication and Conditional Access policies for all privileged accounts for greater security.
-    - content: Multiple Azure AD tenants can't function in the same enrollment.
+    - content: Multiple Microsoft Entra tenants can't function in the same enrollment.
       isCorrect: false
-      explanation: Multiple Azure AD tenants can function in the same enrollment.
-    - content: Start by implementing an Azure AD-only identity deployment if your organization already has an identity infrastructure.
+      explanation: Multiple Microsoft Entra tenants can function in the same enrollment.
+    - content: Start by implementing a Microsoft Entra-only identity deployment if your organization already has an identity infrastructure.
       isCorrect: false
-      explanation: If your organization doesn't have an identity infrastructure, start by implementing an Azure AD-only identity deployment. Such a deployment with Azure AD Domain Services and Microsoft Enterprise Mobility + Security provides end-to-end protection for software as a service (SaaS) applications, enterprise applications, and devices.
+      explanation: If your organization doesn't have an identity infrastructure, start by implementing a Microsoft Entra-only identity deployment. Such a deployment with Microsoft Entra Domain Services and Microsoft Enterprise Mobility + Security provides end-to-end protection for software as a service (SaaS) applications, enterprise applications, and devices.

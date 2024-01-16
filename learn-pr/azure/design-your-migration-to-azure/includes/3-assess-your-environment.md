@@ -1,12 +1,12 @@
 You can perform an agentless environment discovery or use agents to perform a dependency analysis. The Azure portal helps you assess your current on-premises workloads. After the assessment, Azure Migrate makes recommendations for the size of VM you'll need to provision.
 
-In your role, you've been asked to plan the migration of the business's on-premises environment to Azure. Because the server workloads are based primarily on VMware, you want to begin with those machines. You want to assess readiness for the move to Azure. You also want to identify estimated costs for the resources that those machines will consume, so the management team can set the budgets.
+In your role, you've been asked to plan the migration of the business's on-premises environment to Azure. Because the server workloads are based primarily on VMware, you want to begin with those machines. You want to assess readiness for the move to Azure. You also want to estimate the costs for the resources the machines are going to consume on Azure, so the management team can set the budgets.
 
-In this unit, you'll look at Azure Migrate, a service you use to assess readiness and assist with migration to Azure from an on-premises environment.
+In this unit, we look at Azure Migrate, a service you use to assess readiness and assist with migration to Azure from an on-premises environment.
 
 ## What is Azure Migrate?
 
-Azure Migrate is a free service provided by Microsoft that discovers, assesses, and migrates on-premises systems to Azure. The service helps with performance-based sizing calculations (virtual machine sizing, compute/storage) for the machines that you'll migrate, and helps estimate the ongoing cost of running these machines in Azure. Azure Migrate can assess both Hyper-V and VMware-based virtual machines, as well as physical servers. Azure Migrate also supports the visualization of dependencies for those machines. It helps you create groups of machines that can be assessed together and ultimately migrated to Azure at the same time. Understanding the dependencies gives you confidence that nothing will be left behind.
+Azure Migrate is a free service provided by Microsoft that discovers, assesses, and migrates on-premises systems to Azure. The service helps with performance-based sizing calculations (virtual machine sizing, compute/storage) for the machines that you migrate, and helps estimate the ongoing cost of running these machines in Azure. Azure Migrate can assess both Hyper-V and VMware-based virtual machines, and physical servers. Azure Migrate also supports the visualization of dependencies for those machines. It helps you create groups of machines that can be assessed together and ultimately migrated to Azure at the same time. Understanding the dependencies gives you confidence that nothing is left behind when the migration is complete.
 
 ## Work with Azure Migrate
 
@@ -29,7 +29,7 @@ For VMware environments, you can visualize the process as follows:
 
 ![Diagram of the Azure Migrate Architecture.](../media/3-azure-migrate-architecture.svg)
 
-If your company wants details about how the VMs are related to each other (via a visualization of dependencies), you can install agents to collect that data. Azure Migrate will prompt you to install the Microsoft Monitoring Agent and Dependency Agent on each VM. The agents are available for both Windows and Linux.
+If your company wants details about how the VMs are related to each other (via a visualization of dependencies), you can install agents to collect that data. Azure Migrate prompts you to install the Microsoft Monitoring Agent and Dependency Agent on each VM. The agents are available for both Windows and Linux.
 
 ![Screenshot of the Azure Migrate assessment showing missing agents.](../media/3-machines-no-agent.png)
 

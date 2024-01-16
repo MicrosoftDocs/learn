@@ -7,8 +7,7 @@ metadata:
   ms.date: 06/26/2020
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 10 # dummy number at present
 content: |

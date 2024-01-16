@@ -21,9 +21,6 @@ A common approach for uploading blobs to your Azure storage account is to use Az
 | Upload tool | Description |
 | --- | --- |
 | **AzCopy** | An easy-to-use command-line tool for Windows and Linux. You can copy data to and from Blob Storage, across containers, and across storage accounts. |
-| **Azure Storage Data Movement library**| A .NET library for moving data between Azure Storage services. The AzCopy utility is built with the Data Movement library. |
-| **Azure Data Factory** | You can copy data to and from Blob Storage by using the account key, shared access signature, service principal, or managed identities for Azure resources authentications. |
-| **blobfuse** | A virtual file system driver for Azure Blob Storage. You can use blobfuse to access your existing block blob data in your storage account through the Linux file system. |
 | **Azure Data Box Disk** | A service for transferring on-premises data to Blob Storage when large datasets or network constraints make uploading data over the wire unrealistic. You can use Azure Data Box Disk to request solid-state disks (SSDs) from Microsoft. You can copy your data to those disks and ship them back to Microsoft to be uploaded into Blob Storage. |
 | **Azure Import/Export** | A service that helps you export large amounts of data from your storage account to hard drives that you provide and that Microsoft then ships back to you with your data. |
 
@@ -32,3 +29,11 @@ A common approach for uploading blobs to your Azure storage account is to use Az
 The following example shows how to upload blob data in Azure Storage Explorer. After you identify the files to upload, you choose the blob type and block size, and the container folder. You also set the authentication method and encryption scope.
 
 :::image type="content" source="../media/upload-blobs-7ad73d30.png" alt-text="Screenshot of the Upload Blob page that shows the Authentication type, blob types, and block size.":::
+
+### How to use Blob versioning
+
+You can enable Blob storage versioning to automatically maintain previous versions of an object. When blob versioning is enabled, you can access earlier versions of a blob to recover your data if it's modified or deleted.
+
+#### <!-- Video -->
+
+<iframe width="854" height="480" src="https://www.youtube.com/embed/bjKmJKAKyp4" title="How to use Blob versioning in Azure Storage | Azure Tips and Tricks" allowfullscreen></iframe>

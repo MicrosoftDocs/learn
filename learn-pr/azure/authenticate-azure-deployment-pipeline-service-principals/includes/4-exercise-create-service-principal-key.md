@@ -9,7 +9,7 @@ During the process, you'll:
 > * Securely handle the key.
 > * Verify that the service principal works by signing in to Azure by using its credentials.
 
-This exercise requires that you have permission to create applications and service principals in your Azure Active Directory (Azure AD) directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant. Alternatively, you can skip this exercise.
+This exercise requires that you have permission to create applications and service principals in your Microsoft Entra directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant. Alternatively, you can skip this exercise.
 
 ## Sign in to Azure
 
@@ -62,10 +62,10 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
    [!INCLUDE [](../../includes/azure-template-bicep-exercise-cli-unique-display-name.md)]
 
 1. Look at the JSON output from the previous command. It includes the following properties:
- 
-   - `appId`: The service principal's application ID.
-   - `password`: The service principal's key.
-   - `tenant`: Your Azure AD tenant ID.
+
+   * `appId`: The service principal's application ID.
+   * `password`: The service principal's key.
+   * `tenant`: Your Microsoft Entra tenant ID.
 
    Copy these values somewhere safe. You'll use them soon. 
 
@@ -82,10 +82,10 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
    $servicePrincipalKey = $servicePrincipal.PasswordCredentials.SecretText
    ```
 
-1. Run the following command to show the service principal's application ID, the key, and your Azure AD tenant ID:
+1. Run the following command to show the service principal's application ID, the key, and your Microsoft Entra tenant ID:
 
    ```azurepowershell
-   Write-Output "Service principal application ID: $($servicePrincipal.ApplicationId)"
+   Write-Output "Service principal application ID: $($servicePrincipal.AppId)"
    Write-Output "Service principal key: $servicePrincipalKey"
    Write-Output "Your Azure AD tenant ID: $((Get-AzContext).Tenant.Id)"
    ```

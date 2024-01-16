@@ -1,3 +1,4 @@
+
 When using Azure Resource Manager templates, it's best to modularize them by breaking them into individual components.
 
 The primary methodology to use is by using linked templates.

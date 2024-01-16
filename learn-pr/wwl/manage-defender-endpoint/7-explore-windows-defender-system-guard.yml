@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-defender-endpoint.explore-windows-defender-system-guard
+title: Explore Windows Defender System Guard
+metadata:
+  title: Explore Windows Defender System Guard
+  description: "Explore Windows Defender System Guard"
+  ms.date: 10/09/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-explore-windows-defender-system-guard.md)]

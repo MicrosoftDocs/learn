@@ -1,10 +1,10 @@
-This unit addresses when to use Azure HPC Cache. Evaluate whether HPC Cache is appropriate to accelerate storage for an HPC workload.
+This unit addresses when to use Azure HPC Cache, to help you evaluate whether HPC Cache is appropriate to accelerate storage for an HPC workload.
 
-Here, we'll discuss what workflow elements are best for HPC Cache.
+Here, we discuss what workflow elements are best for HPC Cache.
 
 ## When to use HPC Cache
 
-Ideal workloads are read-heavy workloads, which means 90 percent or more NFS read operations. Similarly, 10 percent or less of the storage operations are NFS write operations.
+Ideal workloads for HPC Cache are read-heavy workloads, which means 90 percent or more NFS read operations. Similarly, 10 percent or less of the storage operations are NFS write operations.
 
 Workloads should also involve dozens or hundreds of clients. The more clients you have reading from the same dataset, the greater the benefit of caching.
 

@@ -1,11 +1,10 @@
+You can use the Azure CDN Library for .NET to automate creation and management of CDN profiles and endpoints. Install the `Microsoft.Azure.Management.Cdn` directly from the Visual Studio Package Manager console or with the .NET CLI.
 
-You can use the Azure CDN Library for .NET to automate creation and management of CDN profiles and endpoints. Install the [Microsoft.Azure.Management.Cdn.Fluent](https://www.nuget.org/packages/Microsoft.Azure.Management.Cdn.Fluent) directly from the Visual Studio Package Manager console or with the .NET Core CLI.
-
-In this unit you will see code examples illustrating common actions.
+In this unit, you see code examples illustrating common actions.
 
 ## Create a CDN client
 
-The example below shows creating a client by using the `CdnManagementClient` class.
+The following example shows creating a client by using the `CdnManagementClient` class.
 
 ```csharp
 static void Main(string[] args)
@@ -18,7 +17,7 @@ static void Main(string[] args)
 
 ## List CDN profiles and endpoints
 
-The first thing the method below does is list all the profiles and endpoints in our resource group, and if it finds a match for the profile and endpoint names specified in our constants, makes a note of that for later so we don't try to create duplicates.
+The following method lists all the profiles and endpoints in our resource group. If it finds a match for the profile and endpoint names specified in our constants it notes it for later so we don't try to create duplicates.
 
 ```csharp
 private static void ListProfilesAndEndpoints(CdnManagementClient cdn)
@@ -53,18 +52,18 @@ private static void ListProfilesAndEndpoints(CdnManagementClient cdn)
 
 ## Create CDN profiles and endpoints
 
-The example below shows creating an Azure CDN profile.
+The following example shows creating an Azure CDN profile.
 
 ```csharp
 private static void CreateCdnProfile(CdnManagementClient cdn)
 {
     if (profileAlreadyExists)
     {
-        //Check to see if the profile already exists
+        Console.WriteLine("Profile {0} already exists.", profileName);
     }
     else
     {
-        //Create the new profile
+        Console.WriteLine("Creating profile {0}.", profileName);
         ProfileCreateParameters profileParms =
             new ProfileCreateParameters() { Location = resourceLocation, Sku = new Sku(SkuName.StandardVerizon) };
         cdn.Profiles.Create(profileName, profileParms, resourceGroupName);
@@ -72,18 +71,18 @@ private static void CreateCdnProfile(CdnManagementClient cdn)
 }
 ```
 
-Once the profile is created, we'll create an endpoint.
+Once the profile is created, we create an endpoint.
 
 ```csharp
 private static void CreateCdnEndpoint(CdnManagementClient cdn)
 {
     if (endpointAlreadyExists)
     {
-        //Check to see if the endpoint already exists
+        Console.WriteLine("Profile {0} already exists.", profileName);
     }
     else
     {
-        //Create the new endpoint
+        Console.WriteLine("Creating endpoint {0} on profile {1}.", endpointName, profileName);
         EndpointCreateParameters endpointParms =
             new EndpointCreateParameters()
             {
@@ -113,4 +112,5 @@ private static void PromptPurgeCdnEndpoint(CdnManagementClient cdn)
     }
 }
 ```
+
 

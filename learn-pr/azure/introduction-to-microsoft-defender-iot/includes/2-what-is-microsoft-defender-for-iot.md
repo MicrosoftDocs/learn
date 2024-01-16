@@ -1,4 +1,4 @@
-Microsoft Defender for IoT provides passive and agentless monitoring, with asset discovery and security monitoring across business-critical network environments. Defender for IoT is a network detection and response solution that's purpose-built for discovering and securing IoT/OT devices.
+Microsoft Defender for IoT provides passive and agentless monitoring with asset discovery and security monitoring across business-critical network environments. Defender for IoT is a network-detection and response solution that's purpose-built for discovering and securing IoT/OT devices.
 
 Defender for IoT uses IoT/OT-aware behavioral analytics and threat intelligence. It goes beyond signature-based solutions to catch modern threats. For example, zero-day malware and living-off-the-land tactics might be missed by static indicators of compromise, but caught by Defender for IoT.
 
@@ -44,11 +44,11 @@ You can keep current with the latest OT/IoT threats by keeping a Defender for Io
 
 While you can deploy Defender for IoT in a purely air-gapped, on-premises environment, you can also onboard on-premises device sensors from the cloud by using the Azure portal. You can use the **Getting started** page to register your sensors to a specific Azure subscription and resource. Deploying from the portal is helpful if you want to lower operational and maintenance requirements on your management systems, and if you have other Microsoft and Azure services deployed.
 
-Onboarded sensors are visible on the Defender for IoT **Sites and sensors** page in the Azure portal. This page will look familiar to experienced Azure users, and it displays details for each site and sensor. You can use the **Sites and sensors** page to view each sensor's zone, connection status, and threat intelligence update status. You can also use it to add more sensors to your deployment.
+Onboarded sensors are visible on the Defender for IoT **Sites and sensors** page in the Azure portal. This page will look familiar to experienced Azure users, and it displays details for each site and sensor. You can use the **Sites and sensors** page to view each sensor's zone, connection status, and threat-intelligence update status. You can also use it to add more sensors to your deployment.
 
 :::image type="content" source="../media/2-onboard-sensor.png" alt-text="Screenshot that shows the Sites and sensors page in the Azure portal." lightbox="../media/2-onboard-sensor.png":::
 
-After you have sites and sensors onboarded to Defender for IoT, you can use operational alerts to monitor the events that occur in your network. Operational alerts are helpful if you have malfunctioning or misconfigured equipment. For example, with Defender for IoT constantly scanning your network, you can identify a misconfigured engineering workspace and quickly address the root causes for your issues.
+After you've onboarded sites and sensors to Defender for IoT, you can use operational alerts to monitor the events that occur in your network. Operational alerts are helpful if you have malfunctioning or misconfigured equipment. For example, with Defender for IoT constantly scanning your network, you can identify a misconfigured engineering workspace and quickly address the root causes for your issues.
 
 :::image type="content" source="../media/sensor-alerts.png" alt-text="Screenshot that shows the Alerts page in the sensor console." lightbox="../media/sensor-alerts.png":::
 
@@ -60,13 +60,13 @@ For example, you can integrate Defender for IoT directly with Microsoft Sentinel
 
 Integrate Defender for IoT with other services to:
 
-- Break down silos that slow communication between IT and OT teams, and provide a common language across systems to help resolve issues quickly.
+- Break down silos that slow communication between IT and OT teams and provide a common language across systems to help resolve issues quickly.
 - Help you quickly address attacks that cross IT/OT boundaries, like TRITON.
 - Use the workflows, training, and tools you've spent years building for your SOC team and apply them to IoT/OT security.
 
 ### Integrate with Microsoft Sentinel
 
-Integrating Defender for IoT and Microsoft Sentinel helps SOC teams to detect and respond faster during the entire attack timeline. Defender for IoT and Microsoft Sentinel integration can enhance the communication, processes, and response time for security analysts and OT personnel. Microsoft Sentinel workbooks, analytics rules, and security operation and response playbooks help you monitor and respond to OT threats detected in Defender for IoT.
+Integrating Defender for IoT and Microsoft Sentinel helps SOC teams to detect and respond faster during the entire attack timeline. Integrating Defender for IoT and Microsoft Sentinel can enhance the communication, processes, and response time for security analysts and OT personnel. Microsoft Sentinel workbooks, analytics rules, and security operation and response playbooks help you monitor and respond to OT threats detected in Defender for IoT.
 
 Install the Defender for IoT data connector in your Microsoft Sentinel workspace. The Defender for IoT data connector comes with the following built-in content:
 

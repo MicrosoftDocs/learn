@@ -4,11 +4,10 @@ title: Exercise - Deploy an MLflow model to an online endpoint
 metadata:
   title: Exercise - Deploy an MLflow model to an online endpoint
   description: "Exercise - Deploy an MLflow model to an online endpoint"
-  ms.date: 11/17/2022
+  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-deploy-mlflow-model-online-endpoint.md)]

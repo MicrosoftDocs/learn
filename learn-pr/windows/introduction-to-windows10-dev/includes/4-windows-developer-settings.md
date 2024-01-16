@@ -43,6 +43,6 @@ If you want to submit apps or add-ins to the Microsoft Store, you need a develop
 > [!NOTE]
 > A developer account is necessary only if you want to distribute your apps in official Microsoft platforms. You can develop Windows apps without one.
 
-To register for a developer account, go to the [registration page](https://developer.microsoft.com/store/register) and select **Sign up.** You're prompted to log in to your Microsoft account (or to create a new one), which you use to sign in to your developer account. Follow the steps to choose your country/region, account type, public publisher display name, and contact information.
+To register for a developer account, go to the [registration page](https://developer.microsoft.com/microsoft-store/register/) and select **Sign up.** You're prompted to log in to your Microsoft account (or to create a new one), which you use to sign in to your developer account. Follow the steps to choose your country/region, account type, public publisher display name, and contact information.
 
 For a step-by-step walkthrough of the developer account process and in-depth information about the specific account settings, see [Open a developer account](/windows/uwp/publish/opening-a-developer-account).

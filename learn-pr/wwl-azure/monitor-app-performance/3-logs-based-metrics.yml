@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-app-performance.discover-log-based-metrics
+title: Discover log-based metrics
+metadata:
+  title: Discover log-based metrics
+  description: "Discover log-based metrics"
+  ms.date: 04/24/2023
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-logs-based-metrics.md)]

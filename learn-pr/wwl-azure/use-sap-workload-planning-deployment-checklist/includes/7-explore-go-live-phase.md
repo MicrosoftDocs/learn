@@ -1,3 +1,5 @@
+
+
 During the Go Live phase, ensure to follow the playbooks you developed in earlier phases. Execute the steps that you tested and trained. Don't accept last-minute changes in configurations and process. In addition, apply the following measures:
 
 1. Verify that monitoring is operational. Recommended monitoring approach includes Azure portal, Azure Monitor as well as Perfmon for Windows and SAR for Linux. Monitor the following counters:

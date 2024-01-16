@@ -14,7 +14,7 @@ Azure Database for PostgreSQL is available in two deployment modes, with each de
 
 Data is automatically encrypted and backed up. Options such as Advanced Threat Protection make it simple to address potential threats without the need to be a security expert or manage advanced security monitoring systems.
 
-The example of a contactless payment app having a simple and reliable way to back up your database means you can focus on developing your app. Also, Advanced Threat Protection means it will be easier for you to mitigate threats if they arise during a trial, without having to rely on expert security personnel.
+The example of a contactless payment app having a simple and reliable way to back up your database means you can focus on developing your app. Also, Advanced Threat Protection means it's easier for you to mitigate threats if they arise during a trial, without having to rely on expert security personnel.
 
 ### Lower administrative complexity and cost
 

@@ -2,7 +2,7 @@ Azure provides many data platform technologies to meet the needs of common data 
 
 ## Structured data
 
-In relational database systems like Microsoft SQL Server, Azure SQL Database, and Azure SQL Data Warehouse, data structure is defined at design time. Data structure is designed in the form of tables. This means it's designed before any information is loaded into the system. The data structure includes the relational model, table structure, column width, and data types.
+In relational database systems like Microsoft SQL Server, Azure SQL Database, and Azure SQL Data Warehouse, data structure is defined at design time. Data structure is designed in the form of tables and is designed before any information is loaded into the system. The data structure includes the relational model, table structure, column width, and data types.
 
 Relational systems react slowly to changes in data requirements because the structural database needs to change every time a data requirement changes. When new columns are added, you might need to bulk-update all existing records to populate the new column throughout the table. 
 
@@ -17,6 +17,6 @@ The open-source world offers four types of NoSQL databases:
 1. **Key-value store**: Stores key-value pairs of data in a table structure.
 1. **Document database**: Stores documents that are tagged with metadata to aid document searches.
 1. **Graph database**: Finds relationships between data points by using a structure that's composed of vertices and edges.
-1. **Column database**: Stores data based on columns rather than rows. Columns can be defined at the query's runtime, allowing flexibility in the data that's returned performantly.
+1. **Column database**: Stores data based on columns rather than rows. Columns can be defined at the query's runtime, allowing for flexible and performant data.
 
 Now that we've reviewed data types, let's look at common data platform technologies that facilitate the storage, processing, and querying of these data types.

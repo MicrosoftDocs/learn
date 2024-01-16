@@ -1,3 +1,4 @@
+
 Administrators use network routes to control the flow of traffic through a network. Azure virtual networking provides capabilities to help you customize your network routes, establish service endpoints, and access private links.
 
 In this module, suppose your company recently suffered a security incident that exposed customer personal information. This security incident has resulted in the loss of customers' confidential data and confidence. To address this scenario, the IT team has recommended implementing network virtual appliances (NVAs). You need to ensure traffic is properly routed through the virtual appliances. You're exploring other security options like service endpoints and private links.

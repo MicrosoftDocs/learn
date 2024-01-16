@@ -1,5 +1,3 @@
-Estimated time: 90 minutes
-
 All tasks in this lab are performed from the Azure portal (including the Bash Cloud Shell session).
 
 > [!NOTE]
@@ -9,11 +7,11 @@ Lab files: none
 
 ## Scenario
 
-In preparation for deployment of SAP HANA on Azure, Adatum Corporation wants to explore the process of implementing clustering on Azure VMs running the SUSE distribution of Linux.
+In preparation for deployment of SAP HANA on Azure, Adatum Corporation wants to explore implementing clustering on Azure VMs running the SUSE distribution of Linux.
 
 ## Objectives
 
-After completing this lab, you will be able to:
+After completing this lab, you'll be able to:
 
 - Provision Azure compute resources necessary to support highly available SAP HANA deployments.
 - Configure operating system of Azure VMs running Linux to support a highly available SAP HANA installation.
@@ -26,7 +24,7 @@ After completing this lab, you will be able to:
 
 ## Exercises
 
-During this lab ([full instructions on GitHub](https://microsoftlearning.github.io/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/Instructions/AZ-120_Lab01a-Azure_VM_Linux_Clustering.html)) you will complete the following exercises:
+During this lab ([full instructions on GitHub](https://aka.ms/az-120-lab-01a)) you'll complete the following exercises:
 
 - Exercise 1: Provision Azure compute resources necessary to support highly available SAP HANA deployments
 - Exercise 2: Configure operating system of Azure VMs running Linux to support a highly available SAP HANA installation

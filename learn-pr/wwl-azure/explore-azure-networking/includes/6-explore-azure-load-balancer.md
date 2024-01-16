@@ -17,13 +17,35 @@ Azure load balancer is available in two SKUs: Basic and Standard.
 :::row-end:::
 :::row:::
   :::column:::
-    **[Backend pool size](/azure/azure-resource-manager/management/azure-subscription-service-limits#load-balancer)**
+    **Scenario**
   :::column-end:::
   :::column:::
-    Supports up to 1000 instances.
+    Equipped for load-balancing network layer traffic when high performance and ultra-low latency is needed. Routes traffic within and across regions, and to availability zones for high resiliency.
   :::column-end:::
   :::column:::
-    Supports up to 300 instances.
+    Equipped for small-scale applications that don't need high availability or redundancy. Not compatible with availability zones.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    **Backend type**
+  :::column-end:::
+  :::column:::
+    IP based, NIC based
+  :::column-end:::
+  :::column:::
+    NIC based
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    **Protocol**
+  :::column-end:::
+  :::column:::
+    TCP, UDP
+  :::column-end:::
+  :::column:::
+    TCP, UDP
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -78,7 +100,7 @@ Azure load balancer is available in two SKUs: Basic and Standard.
     [Azure Monitor multi-dimensional metrics](/azure/load-balancer/load-balancer-standard-diagnostics)
   :::column-end:::
   :::column:::
-    [Azure Monitor logs](/azure/load-balancer/load-balancer-monitor-log)
+    Not supported
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -156,6 +178,50 @@ Azure load balancer is available in two SKUs: Basic and Standard.
   :::column-end:::
   :::column:::
     Not available
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    **Global VNet Peering Support**
+  :::column-end:::
+  :::column:::
+    Standard ILB is supported via Global VNet Peering
+  :::column-end:::
+  :::column:::
+    Not supported
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    **[NAT Gateway Support](/azure/virtual-network/nat-gateway/nat-overview)**
+  :::column-end:::
+  :::column:::
+    Both Standard ILB and Standard Public LB are supported via Nat Gateway
+  :::column-end:::
+  :::column:::
+    Not supported
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    **[Private Link Support](/azure/private-link/private-link-overview)**
+  :::column-end:::
+  :::column:::
+    Standard ILB is supported via Private Link
+  :::column-end:::
+  :::column:::
+    Not supported
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    **[Global tier (Preview)](/azure/load-balancer/cross-region-overview)**
+  :::column-end:::
+  :::column:::
+    Standard LB supports the Global tier for Public LBs enabling cross-region load balancing
+  :::column-end:::
+  :::column:::
+    Not supported
   :::column-end:::
 :::row-end:::
 

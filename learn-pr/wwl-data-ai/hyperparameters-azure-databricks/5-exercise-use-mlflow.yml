@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.hyperparameters-azure-databricks.exercise-use-mlflow
+title: Exercise - Optimize hyperparameters for machine learning in Azure Databricks
+metadata:
+  title: Exercise - Optimize hyperparameters for machine learning in Azure Databricks
+  description: "Exercise - Optimize hyperparameters for machine learning in Azure Databricks"
+  ms.date: 08/29/2023
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 45
+content: |
+  [!include[](includes/5-exercise-use-mlflow.md)]

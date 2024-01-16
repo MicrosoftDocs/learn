@@ -6,7 +6,7 @@ Multiple servers are virtualized and consolidated onto fewer physical hosts to i
 
 To see why server utilization is important, let us discuss power consumption when a server is idle (the CPUs are not doing anything, but the HDDs are spinning, and RAM and I/O devices still consume power) versus when the server is at maximum load (when all CPUs are at 100% utilization).
 
-Use the following formula to estimate the power consumption $ P $ at a specific utilization (<small>**n**</small> %):
+Use the following formula to estimate the power consumption $ P $ at a specific utilization (**n** %):
 
 $$ P_{n} = \left( P_{max} - P_{idle} \right) \times \frac{n}{100} + P_{idle} $$
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-devices-windows-autopilot.examine-autopilot-scenarios
+title: Examine Autopilot scenarios
+metadata:
+  title: Examine Autopilot scenarios
+  description: "Examine Autopilot scenarios"
+  ms.date: 11/08/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: module
+  ms.prod: azure
+durationInMinutes: 11
+content: |
+  [!include[](includes/6-examine-autopilot-scenarios.md)]

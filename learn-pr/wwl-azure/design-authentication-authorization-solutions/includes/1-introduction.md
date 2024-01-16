@@ -8,7 +8,7 @@ Authentication and authorization work together to help you manage your corporate
 
 - Store corporate passwords and secrets in a secure manner.
 
-- Integrate your identity solution for users and applications into Azure AD.
+- Integrate your identity solution for users and applications into Microsoft Entra ID.
 
 ## Meet Tailwind Traders
 
@@ -32,9 +32,9 @@ In this module, you learn how to:
 
 - Design for identity and access management.
 
-- Design for Azure Active Directory (Azure AD). 
+- Design for Microsoft Entra ID. 
 
-- Design for Azure Active Directory business-to-business (Azure AD B2B).
+- Design for Microsoft Entra business-to-business (Microsoft Entra B2B).
 
 - Design for Azure Active Directory B2C (Azure AD B2C, business-to-customer).
 
@@ -68,7 +68,7 @@ Design identities and access for applications
 
 - Recommend solutions to allow applications to access Azure resources
 
-- Recommend a solution for integrating applications into Azure AD
+- Recommend a solution for integrating applications into Microsoft Entra ID
 
 - Recommend a user consent solution for applications
 

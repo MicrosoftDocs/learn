@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.hyperparameters-azure-databricks.hyperopt
+title: Optimize hyperparameters with Hyperopt
+metadata:
+  title: Optimize hyperparameters with Hyperopt
+  description: "Optimize hyperparameters with Hyperopt"
+  ms.date: 08/29/2023
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-hyperopt.md)]

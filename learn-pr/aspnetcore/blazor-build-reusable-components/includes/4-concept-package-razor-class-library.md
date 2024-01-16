@@ -41,11 +41,12 @@ When you're building the project, you can also configure it to generate a NuGet 
 ```
 
 You can configure many optional project properties, including:
+
 * A `Description` that's appropriate for display in the NuGet repository
 * A copyright notice
 * Licensing information
 * Icons
-* Project URLs 
+* Project URLs
 
 For a full list of properties, check the Microsoft documentation on the [MSBuild pack target](/nuget/reference/msbuild-targets#pack-target).
 

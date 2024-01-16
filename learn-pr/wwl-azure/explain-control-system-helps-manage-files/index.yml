@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.explain-control-system-helps-manage-files
+metadata:
+  title: Explain how a source control system helps manage files
+  description: "Introduction to source control as a concept and integrated development environments as they relate to source control."
+  ms.date: 06/06/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+title: Explain how a source control system helps manage files
+summary: '**Explain how a source control system helps manage files** goes over the purpose of a source control system, the benefits of using a source control system, between version control and source control, and how software can help you interact with a source control system.'
+abstract: |
+  After you complete this module, you'll be able to:
+  - Describe version control and source control.
+  - Explain the benefits of using a source control system.
+  - Describe how software helps interact with source control systems.
+prerequisites: |
+  A personal computer running Windows, macOS, or Linux.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+subjects:
+- development-tools
+units:
+- learn.wwl.explain-control-system-helps-manage-files.introduction
+- learn.wwl.explain-control-system-helps-manage-files.describe-version-control-source-control
+- learn.wwl.explain-control-system-helps-manage-files.explain-benefits-use-source-control-system
+- learn.wwl.explain-control-system-helps-manage-files.describe-how-software-helps-interact-source-control-systems
+- learn.wwl.explain-control-system-helps-manage-files.knowledge-check
+- learn.wwl.explain-control-system-helps-manage-files.summary
+badge:
+  uid: learn.wwl.explain-control-system-helps-manage-files.badge

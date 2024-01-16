@@ -1,14 +1,13 @@
 ### YamlMime:Module
 uid: learn.wwl.azure-ad-privileged-identity-management
 metadata:
-  title: Configure Azure AD privileged identity management
+  title: Configure Microsoft Entra Privileged Identity Management
   description: "Ensure that your privileged identities have extra protection and are accessed only with the least amount of access needed to do the job."
-  ms.date: 02/02/2023
+  ms.date: 08/28/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Configure Azure AD privileged identity management
+title: Configure Microsoft Entra Privileged Identity Management
 summary: Ensure that your privileged identities have extra protection and are accessed only with the least amount of access needed to do the job.
 abstract: |
   By the end of this module, you'll be able to:
@@ -25,8 +24,8 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-active-directory
-- azure-active-directory-priviledged-identity-management
+- entra-id
+- entra
 subjects:
 - identity-access
 units:

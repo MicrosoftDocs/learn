@@ -1,6 +1,6 @@
 An integral part of adopting InnerSource within your team is establishing goals, milestones, and then creating a checklist of items that need to be accomplished within your team to meet those goals.
 
-The following guide will provide you with a getting started and expanded checklist of items to include in your GitHub repositories for the following categories:
+The following guide provides you with a getting started and expanded checklist of items to include in your GitHub repositories for the following categories:
 
 - Team
 - Repository

@@ -6,7 +6,7 @@ PetDash is an online pet food delivery company that provides store-to-door servi
 
 In this module, you will:
 
-- Explore proper usage of Azure Key Vault
-- Manage access to an Azure Key Vault
-- Explore certificate management with Azure Key Vault
-- Configure a Hardware Security Module Key-generation solution
+- Explore proper usage of Azure Key Vault.
+- Manage access to an Azure Key Vault.
+- Explore certificate management with Azure Key Vault.
+- Configure a Hardware Security Module Key-generation solution.

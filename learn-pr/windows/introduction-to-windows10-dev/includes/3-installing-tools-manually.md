@@ -35,7 +35,7 @@ By default, new installations of the Universal Windows Platform development work
 
 ![Screenshot showing the list of Windows 10 SDKs in Visual Studio Installer.](../media/uwp-sdk-standalone.png)
 
-Alternatively, you can [download the latest version of the SDK online](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+Alternatively, you can [download the latest version of the SDK online](https://developer.microsoft.com/windows/downloads/windows-sdk/).
 
 We recommend upgrading to the latest SDK version whenever possible. By developing with the latest SDK, you're using the latest Windows app development features. You can also develop apps for previous versions of Windows 10.
 

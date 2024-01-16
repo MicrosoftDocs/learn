@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-ad-identity-protection.conditional-access
-title: Implement Azure AD conditional access
+title: Implement Microsoft Entra Conditional Access
 metadata:
-  title: Implement Azure AD conditional access
-  description: "Implement Azure AD conditional access"
+  title: Implement Microsoft Entra Conditional Access
+  description: "Implement Microsoft Entra Conditional Access"
   ms.date: 02/02/2023
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

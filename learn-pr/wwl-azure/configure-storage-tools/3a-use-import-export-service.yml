@@ -4,11 +4,10 @@ title: Use the Azure Import/Export service
 metadata:
   title: Use the Azure Import/Export service
   description: "Use the Azure Import/Export service"
-  ms.date: 02/07/2023
+  ms.date: 04/06/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

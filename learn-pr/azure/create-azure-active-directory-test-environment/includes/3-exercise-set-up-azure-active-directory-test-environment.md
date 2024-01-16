@@ -8,7 +8,7 @@
 
     [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
 -->
-When setting up your application's Azure Active Directory (Azure AD) test environment, you need to decide between using a dedicated test tenant or your production Azure AD tenant.  Using a production tenant can make some aspects of application testing easier, but it requires the right level of isolation between test and production resources. Isolation is especially important for high-privilege scenarios. If you can't safely constrain your test app in your production tenant, create a separate tenant for development and testing purposes.
+When setting up your application's Microsoft Entra test environment, you need to decide between using a dedicated test tenant or your production Microsoft Entra tenant.  Using a production tenant can make some aspects of application testing easier, but it requires the right level of isolation between test and production resources. Isolation is especially important for high-privilege scenarios. If you can't safely constrain your test app in your production tenant, create a separate tenant for development and testing purposes.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -20,12 +20,7 @@ When setting up your application's Azure Active Directory (Azure AD) test enviro
 
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
-Recall that in the sales team dashboard example, your development team chose to set up a test environment in a separate Azure AD tenant.  Here are some of the key factors the team reviewed while making this decision:
 
-- You want to set up a CI/CD pipeline that automates building, testing, and deploying the web app.  Creating test users and test app registrations in the production tenant are high-privilege operations, since they require admin permissions.
-- The administrators reviewed your request for automatically creating test users and test data in the production tenant and didn't approve.
-- Multi-factor authentication is required for all users in the production tenant.  Automating sign-ins for integration testing won't be possible.
-- After some investigation, your team decided that the integration tests need to use a non-interactive flow, called Resource Owner Password Credential Grant (ROPC), to automatically sign in users for testing. Microsoft recommends that you *don't* use the ROPC flow in a production environment.
 
 <!-- TODO: add your scenario image -->
 
@@ -39,7 +34,7 @@ Recall that in the sales team dashboard example, your development team chose to 
 
     Optional: a video that shows the end-state
 -->
-In this exercise, you will set up your test environment in Azure AD by creating a separate test tenant, adding a test user, and creating an app registration.  If you have access to the production tenant, it's also recommended that you populate the test tenant with policies that are in your production tenant. 
+In this exercise, you will set up your test environment in Microsoft Entra ID by creating a separate test tenant, adding a test user, and creating an app registration.  If you have access to the production tenant, it's also recommended that you populate the test tenant with policies that are in your production tenant. 
 
 <!-- 4. Chunked steps -------------------------------------------------------------------------------------
 
@@ -64,16 +59,16 @@ In this exercise, you will set up your test environment in Azure AD by creating 
 
 ## Get a test tenant
 
-If you don't already have a dedicated test tenant in Azure AD, you can create one for free.  You can [manually create a new tenant](/azure/active-directory/develop/quickstart-create-new-tenant), which will be empty upon creation and will have to be configured with test data and test users.  Microsoft recommends you join the Microsoft 365 Developer Program, which is free and can be used to easily set up an Azure AD tenant.  The Microsoft 365 Developer Program also includes a Microsoft 365 E5 developer subscription that you can use to create your own sandbox and develop solutions independent of your production environment. You can build Microsoft Teams apps, Office Add-ins for Word, Excel, PowerPoint, or Outlook, or SharePoint Add-ins, using Microsoft Graph, the SharePoint Framework, Power Apps, and more.
+If you don't already have a dedicated test tenant in Microsoft Entra ID, you can create one for free.  You can [manually create a new tenant](/azure/active-directory/develop/quickstart-create-new-tenant), which will be empty upon creation and will have to be configured with test data and test users.  Microsoft recommends you join the Microsoft 365 Developer Program, which is free and can be used to easily set up a Microsoft Entra tenant.  The Microsoft 365 Developer Program also includes a Microsoft 365 E5 developer subscription that you can use to create your own sandbox and develop solutions independent of your production environment. You can build Microsoft Teams apps, Office Add-ins for Word, Excel, PowerPoint, or Outlook, or SharePoint Add-ins, using Microsoft Graph, the SharePoint Framework, Power Apps, and more.
 
-1. Go to the [Join the Microsoft 365 Developer Program](/office/developer-program/microsoft-365-developer-program#join-the-microsoft-365-developer-program) page.
+1. Go to the [Join the Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program) page.
 1. Select the **Join now** button on the screen.
 1. Sign in with a new Microsoft Account or use an existing (work) account you already have.
 1. On the sign-up page select your region, enter a company name and accept the terms and conditions of the program before you select **Next**.
 1. Select **Set Up Subscription**. Specify the region where you want to create your new tenant, create a username, domain, and enter a password. This will create a new tenant and the first administrator of the tenant.
 1. Enter the security information, which is needed to protect the administrator account of your new tenant. This will set up multi-factor authentication for the account.
 
-When you're finished setting up your subscription, you can optionally set up your Microsoft 365 E5 sandbox, which includes an Azure AD tenant, fictitious test users, a Microsoft Teams sample data pack, and data for Microsoft Graph, Sharepoint, and Office Add-ins development.
+When you're finished setting up your subscription, you can optionally set up your Microsoft 365 E5 sandbox, which includes a Microsoft Entra tenant, fictitious test users, a Microsoft Teams sample data pack, and data for Microsoft Graph, Sharepoint, and Office Add-ins development.
 
 ## Populate your tenant with users
 
@@ -116,7 +111,7 @@ How you configure your application depends on the type of app you're building.  
 
 The following script creates an app registration for a single tenant web app.  The signed-in user is given User.Read delegated permissions in Microsoft Graph. The web application can request an ID token using the OAuth 2.0 implicit flow.  To create an app registration, the account running the code needs Global Administrator or Application Administrator role in the directory.  
 
-To find the tenant ID, sign into the [Azure portal](https://portal.azure.com) and select **Azure Active Directory**.  On your test tenant's **Overview** page, find the **tenant ID** value.
+To find the tenant ID, sign into the [Azure portal](https://portal.azure.com) and select **Microsoft Entra ID**.  On your test tenant's **Overview** page, find the **tenant ID** value.
 
 ```azurecli-interactive
 WEBAPPNAMETEST="mytestwebapp444"
@@ -157,11 +152,13 @@ clientsecret=$(az ad app credential reset --id $appIdTest --append --display-nam
 echo $clientsecret
 ```
 
-## Get Azure AD premium features
+<a name='get-microsoft-entra-id-premium-features'></a>
 
-If you want to fully test Azure AD premium features on your application, you'll need to sign up your tenant for a [Premium P1 or Premium P2 license](https://azure.microsoft.com/pricing/details/active-directory/).
+## Get Microsoft Entra ID P1 or P2 features
 
-If you signed up using the Microsoft 365 Developer program, your test tenant will come with Azure AD P2 licenses. If not, you can still enable a [free trial of Azure AD premium](https://azure.microsoft.com/free/active-directory/).
+If you want to fully test Microsoft Entra ID P1 or P2 features on your application, you'll need to sign up your tenant for a [P1 or P2 license](https://www.microsoft.com/security/business/microsoft-entra-pricing).
+
+If you signed up using the Microsoft 365 Developer program, your test tenant will come with Microsoft Entra ID P2 licenses. If not, you can still enable a [free trial of Microsoft Entra ID P1 or P2](https://azure.microsoft.com/free/active-directory/).
 
 ## Populate your tenant with policies (recommended)
 
@@ -174,7 +171,7 @@ Replicating conditional access policies ensures you don't encounter unexpected b
 Viewing your production tenant conditional access policies may need to be performed by a company administrator.
 
 1. Sign into the [Azure portal](https://portal.azure.com) using your production tenant Conditional Access Administrator, Security Administrator, or Global Administrator account.
-1. Go to **Azure Active Directory** > **Enterprise applications** > **Conditional Access**.
+1. Go to **Microsoft Entra ID** > **Enterprise applications** > **Conditional Access**.
 1. View the list of policies in your tenant. Select the first policy.
 
    :::image type="content" source="../media/conditional-access-policies.png" alt-text="Screenshot of the 'Conditional Access policies' pane.":::
@@ -187,7 +184,7 @@ Viewing your production tenant conditional access policies may need to be perfor
 In a new tab or browser session, sign into the [Azure portal](https://portal.azure.com) using your test tenant Conditional Access Administrator, Security Administrator, or Global Administrator account.
 
 1. Sign in to the Azure portal as a Conditional Access Administrator, Security Administrator, or Global Administrator.
-1. Browse to **Azure Active Directory** > **Security** > **Conditional Access**.
+1. Browse to **Microsoft Entra ID** > **Security** > **Conditional Access**.
 Select **New policy**.
 1. Copy the settings from the production tenant policy, identified through the previous steps, and create the new policy.
 
@@ -196,14 +193,14 @@ Select **New policy**.
 Replicating permission grant policies ensures you don't encounter unexpected prompts for admin consent when moving to production.  To configure user consent settings, you need to sign in as a user with Global Administrator or Privileged Administrator roles.
 
 1. Sign into the [Azure portal](https://portal.azure.com) using your production tenant Global Administrator account.
-1. Select **Azure Active Directory** > **Enterprise applications** > **Consent and permissions** > **User consent settings**.
+1. Select **Microsoft Entra ID** > **Enterprise applications** > **Consent and permissions** > **User consent settings**.
 1. Under User **consent for applications**, view the consent settings for all users.
 
    :::image type="content" source="../media/setting-for-all-users.png" alt-text="Screenshot of the 'User consent settings' pane.":::
 
 1. Make note of the settings you want to replicate to users of your test tenant.
 1. Sign into the Azure portal using your test tenant Global Administrator account.
-1. Select **Azure Active Directory** > **Enterprise applications** > **Consent and permissions** > **User consent settings**.
+1. Select **Microsoft Entra ID** > **Enterprise applications** > **Consent and permissions** > **User consent settings**.
 1. Under **User consent for applications**, select which consent setting you want to configure for all users.
 1. Select **Save** to save your settings.
 
@@ -229,13 +226,13 @@ Replicating permission grant policies ensures you don't encounter unexpected pro
 
 ## Check your work
 
-At this point, you should have set up a separate tenant in Azure AD for application testing.  You should also have a test user created and an app registration you can use for testing a web app.  To verify:
+At this point, you should have set up a separate tenant in Microsoft Entra ID for application testing.  You should also have a test user created and an app registration you can use for testing a web app.  To verify:
 
-1. In the Azure portal, select **Azure Active Directory** from the list of services.
+1. In the Azure portal, select **Microsoft Entra ID** from the list of services.
 1. Select **Users** from the left nav.
 1. In the list of users, verify that the guest users you invited and any other test users you created appear in the list.
 1. Close the **Users** view.
-1. Select **App registrations** from the left nav.
+1. Select **App registrations** from the left navigation pane.
 1. Select the **All applications** tab.
 1. Verify that the app registration you created appears in the list.
 

@@ -9,4 +9,4 @@ In order to develop R visuals, you'll need a supported version of R installed fi
 
 ## Python visuals
 
-There are no prerequisites for creating custom Python visuals - just bring the visual onto the canvas, and start writing your Python script.
+To develop Python visuals, you need to have Python installed on your machine. Many Python packages are supported in Power BI, but not all. See [Learn which Python packages are supported in Power BI](https://learn.microsoft.com/power-bi/connect-data/service-python-packages-support) for a complete list of supported packages and Python visual limitations.

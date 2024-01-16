@@ -1,7 +1,7 @@
 name: pr-closed
 concurrency: ${{ github.event.number }}
 
-on: 
+on:
   pull_request:
     types: [closed]
 
@@ -24,7 +24,7 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       - uses: Azure/cli@v1
         name: Delete resource group
-        with: 
+        with:
           inlineScript: |
             az group delete \
               --name ${{ env.resourceGroupName }} \

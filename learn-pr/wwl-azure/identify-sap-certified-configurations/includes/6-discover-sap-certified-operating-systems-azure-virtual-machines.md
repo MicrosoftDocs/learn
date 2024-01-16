@@ -15,4 +15,4 @@ When running SAP products on Linux, you should also review the following SAP Not
 - [SAP Note \#2694118 - Red Hat Enterprise Linux HA Add-On on Azure](https://launchpad.support.sap.com/#/notes/2694118)
 
 > [!NOTE]
-> Using multi-SID cluster configurations for SAP Central Services is supported with Windows Server as guest operating system on Azure VMs, but it is not supported with any of the Linux distributions.
+> Using multi-SID cluster configurations for SAP Central Services is supported with Windows Server as guest operating system on Azure VMs, but it's not supported with any of the Linux distributions.

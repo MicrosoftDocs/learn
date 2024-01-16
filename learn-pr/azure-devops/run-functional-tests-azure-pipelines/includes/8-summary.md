@@ -16,7 +16,7 @@ In this module, you worked with NUnit tests. If you're interested in unit-testin
 
 * [NUnit.org](https://nunit.org?azure-portal=true)
 * [Unit test tools and tasks](/visualstudio/test/unit-test-your-code?azure-portal=true)
-* [Unit testing C# by using NUnit and .NET Core](/dotnet/core/testing/unit-testing-with-nunit)
+* [Unit testing C# with NUnit and .NET Core](/dotnet/core/testing/unit-testing-with-nunit)
 
 ### Learn about parallel jobs
 
@@ -29,9 +29,9 @@ If you're interested in testing UI by using Selenium, check out these resources 
 
 * [SeleniumHQ.org](https://www.seleniumhq.org?azure-portal=true)
 * [Selenium IDE](https://www.seleniumhq.org/selenium-ide?azure-portal=true)
-* [UI testing by using Selenium](/azure/devops/pipelines/test/continuous-test-selenium?azure-portal=true)
+* [UI test with Selenium](/azure/devops/pipelines/test/continuous-test-selenium?azure-portal=true)
 * [UI testing considerations](/azure/devops/pipelines/test/ui-testing-considerations?azure-portal=true&tabs=mstest)
-* [Use WebDriver (Chromium) for test automation](/microsoft-edge/webdriver-chromium?azure-portal=true)
+* [Use WebDriver to automate Microsoft Edge](/microsoft-edge/webdriver-chromium?azure-portal=true)
 
 ## Improve code quality by using Azure Test Plans
 

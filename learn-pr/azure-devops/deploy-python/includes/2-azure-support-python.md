@@ -1,19 +1,19 @@
 In this part, you learn some of the ways Azure and Azure DevOps support Python applications.
 
-**Python** is an interpreted programming language that's designed to be easy to use and understand. Python includes strong native support for object-oriented programming, which enables you to write applications that scale in size and complexity, which makes it an ideal candidate for modern applications. Learn more at [python.org](https://www.python.org/?azure-portal=true).
+**Python** is an interpreted programming language that's designed to be easy to use and understand. Python includes strong native support for object-oriented programming, which allows you to write applications that scale in size and complexity, making it an ideal candidate for modern applications. Learn more at [python.org](https://www.python.org/?azure-portal=true).
 
 ## What is Django?
 
 **Django** helps make the development of web applications in Python more practical. It provides a collection of modules and conventions that enable Python developers to efficiently build and maintain web applications by using a variety of development tools and deployment targets. Learn more at [djangoproject.com](https://www.djangoproject.com/?azure-portal=true).
 
 > [!NOTE]
-> This module is based on a Python project that makes use of Django, although the concepts apply to just about any Python application that may use other frameworks (or none at all).
+> This module is based on a Python project that makes use of Django, although the concepts apply to just about any Python application that might use other frameworks (or none at all).
 
 ## Python and Azure
 
-Azure provides first-class support for Python. This means that you can take your existing codebase and, in most cases, deploy it directly to Azure without making modifications. On Azure, hosting a Python application is similar to hosting a .NET application, assuming that the proper dependencies are configured. Azure also enables you to configure environment variables for application settings, which means you can continue to load settings and secrets using standard methods for Python.
+Azure provides first-class support for Python. This means that you can take your existing codebase and, in most cases, deploy it directly to Azure without making modifications. On Azure, hosting a Python application is similar to hosting a .NET application, assuming that the proper dependencies are configured. Azure also allows you to configure environment variables for application settings, which means you can continue to load settings and secrets using standard methods for Python.
 
-Once deployed to Azure, a Python application can connect to resources within Azure, across VPN connections, and anywhere else accessible via the internet. This includes consuming databases, document stores, and all the other resources and services Python developers rely on.
+Once deployed to Azure, a Python application can connect to resources within Azure, across VPN connections, and anywhere else accessible via the internet. This includes consuming databases, document stores, and all the other resources and services on which Python developers rely.
 
 ## Python and Azure DevOps
 

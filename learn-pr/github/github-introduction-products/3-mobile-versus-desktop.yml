@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-introduction-products.how-licensing-works
+title: GitHub Mobile and GitHub Desktop
+metadata:
+  title: GitHub Mobile and GitHub Desktop
+  description: This content is part of the "Introduction to GitHub's products" module.
+  ms.date: 08/21/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: training-unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-mobile-versus-desktop.md)]

@@ -62,13 +62,11 @@ _Figure 17: Volcano risk map_
 
 _Figure 18: Wildfire risk map_
 
-Natural disaster threat maps for regions in the United States are available online in the [Global data vault](http://www.globaldatavault.com/natural-disaster-threat-maps.htm). Click a map figure to see an enlarged view.
-
 As a cloud user or cloud provider, you can benefit from having two (or more) geographically distinct datacenters for your services to mitigate risks of natural disaster—excluding large asteroid impacts, of course.
 
 ## Connectivity
 
-As broadband adoption among consumers continues to grow, the effectiveness of cloud computing will increase. You can find trending graphs and current broadband adoption at [Akamai](http://www.akamai.com/html/technology/dataviz5.html).
+As broadband adoption among consumers continues to grow, the effectiveness of cloud computing will increase. You can find trending graphs and current broadband adoption at [Akamai](http://www.akamai.com).
 
 The internet relies on fiber optics to send and receive data over long distances. Figure 19 shows the relationship between multiple tiers of the internet. Tier 1 providers own the actual fiber cables, the network equipment, and the buildings they are housed in. Tier 2 providers own large networks as well and peer with (have connections to) other tier 2 providers but also have to lease some connections from tier 1 providers in order to reach the whole internet. Tier 3 providers are only resellers, which provide connections to end users. A single corporate entity, such as Verizon in the United States, may provide services at all tiers.
 

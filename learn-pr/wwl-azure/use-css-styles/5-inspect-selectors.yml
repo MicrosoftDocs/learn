@@ -4,11 +4,10 @@ title: Inspect selectors
 metadata:
   title: Inspect selectors
   description: "Inspect selectors"
-  ms.date: 03/03/2023
+  ms.date: 04/21/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

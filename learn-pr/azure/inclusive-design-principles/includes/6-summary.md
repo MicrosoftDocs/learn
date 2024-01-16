@@ -6,15 +6,15 @@ This approach is guided by using the following three simple design principles to
 - Solve for one, extend to many
 - Learn from diversity
 
-Being inclusive begins with changing our perception. The benefits of designing through these practices pays off in many ways including: 
+Being inclusive begins with changing our perception. The benefits of designing through these practices pays off in many ways, including:
 
-- Increased access 
-- Reduced friction 
+- Increased access
+- Reduced friction
 - More emotional context
 
 Traditional user-centered design has many techniques to clarify human needs, from personas to scenarios, to usability testing. But we also need tools that reintroduce diversity back into our design process. We need ways to check, balance, and measure the inclusivity of our designs.
 
-The impact of inclusive design is more than just the products that people use. It’s also a shift in our mindset, methods, and behaviors. Measuring the benefits includes measuring the shift in our culture and ourselves. This illustrates that what we design is a by-product of how we design.
+The impact of inclusive design is more than just the products that people use. It's also a shift in our mindset, methods, and behaviors. Measuring the benefits includes measuring the shift in our culture and ourselves. This illustrates that what we design is a by-product of how we design.
 
 > [!div class="mx-imgBorder"]
 > ![Image depicting the elements of inclusivity.](../media/6-inclusivity.png)

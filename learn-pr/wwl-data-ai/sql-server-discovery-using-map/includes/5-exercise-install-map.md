@@ -1,4 +1,4 @@
-Suppose you're a new database administrator for a law firm with branch offices across the country/region. You're going to use the **Microsoft Assessment and Planning (MAP)** toolkit to create an inventory of all the SQL Server instances in the organization. First, you'll install the toolkit on a test machine, and configure it to use a sample MAP database.
+Suppose you're a new database administrator for a law firm with branch offices across the country/region. You're going to use the **Microsoft Assessment and Planning (MAP)** toolkit to create an inventory of all the SQL Server instances in the organization. First, you'll install the toolkit on a test machine and configure it to use a sample MAP database.
 
 In this exercise, you'll install the MAP toolkit on a test computer, then restore the sample backup database.
 
@@ -8,7 +8,7 @@ In this exercise, you'll install the MAP toolkit on a test computer, then restor
 ## Download the RDP connection file from Azure
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account with which you activated the sandbox.
-1. In the portal menu, select **Virtual Machines**.
+1. In the search box, search for and select **Virtual Machines**.
 1. In the list, select **ReportingServer**.
 1. On the **Overview** page, at the top, select **Connect**.
 1. In the drop-down, select **RDP**.
@@ -18,7 +18,7 @@ In this exercise, you'll install the MAP toolkit on a test computer, then restor
 
 1. In the **Remote Desktop Connection** dialog box, select **Connect**.
 1. In the **Windows Security** dialog box, select **More choices**, and then select **Use a different account**.
-1. Sign in with the username **azureadmin**, and the admin password you used when you created the original virtual machine.
+1. Sign in with the username **azureadmin**, and the admin password you used when you created the original virtual machine. Select **OK**.
     > [!NOTE]
     > You can use the **echo $PASSWORD** command to show you the password.
 1. In the **Remote Desktop Connection** dialog box, select **Yes** to continue.
@@ -26,14 +26,14 @@ In this exercise, you'll install the MAP toolkit on a test computer, then restor
 
 ## Download the Microsoft Assessment and Planning (MAP) toolkit
 
-1. On the Start menu, select **Microsoft Edge**.
-1. Go to [https://www.microsoft.com/download/details.aspx?id=7826](https://www.microsoft.com/download/details.aspx?id=7826).
+1. On the VM's Start menu, select **Microsoft Edge**.
+1. If you're downloading MAP outside of this exercise, you'd go to [https://www.microsoft.com/download/details.aspx?id=7826](https://www.microsoft.com/download/details.aspx?id=7826). However, this exercise has the following limitation:
 
-> [!IMPORTANT]
-> Due to sandbox restrictions you need to download a backed up version of the MAP toolkit form this git repo instead.
-> Go to [https://github.com/MicrosoftDocs/mslearn-sql-server-discovery-using-map/blob/master/MAPSetup.exe](https://github.com/MicrosoftDocs/mslearn-sql-server-discovery-using-map/blob/master/MAPSetup.exe) and click the **Download** link.
+    > [!IMPORTANT]
+    > Due to sandbox restrictions, you need to download a backed up version of the MAP toolkit from this Git repo instead.
+    > Go to [https://github.com/MicrosoftDocs/mslearn-sql-server-discovery-using-map/blob/master/MAPSetup.exe](https://github.com/MicrosoftDocs/mslearn-sql-server-discovery-using-map/blob/master/MAPSetup.exe) and select the **Download** button.
 
-1. On the **Microsoft Assessment and Planning Toolkit** page, select **Download**.
+1. Outside of this exercise, select **Download** on the **Microsoft Assessment and Planning Toolkit** page.
 1. In the pop-up, select **Save**.
 
 ## Install the MAP toolkit
@@ -52,7 +52,7 @@ Start by using the installer to set up the MAP toolkit.
 ## Download the sample MAP database
 
 1. Use **Microsoft Edge** to go to [https://github.com/MicrosoftDocs/mslearn-sql-server-discovery-using-map/blob/master/MAP_updatedDB.bak](https://github.com/MicrosoftDocs/mslearn-sql-server-discovery-using-map/blob/master/MAP_updatedDB.bak).
-1. Select **Download**, and in the pop-up select **Save**.
+1. Select **Download**.
 
 ## Connect to the sample MAP database
 

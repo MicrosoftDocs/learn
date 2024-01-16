@@ -38,7 +38,7 @@ Let's explore the folders and files in the starter project:
     - **React** for React
     - **ReactDOM** to mount our application inside the browser
   - Scripts:
-    - **dev** to run the development server from Snowpack: 
+    - **start** to run the development server from Snowpack: 
       - It virtually builds all JavaScript and HTML files.
       - It hosts and automatically restarts the server as files are changed.
     - **build** to generate production files for deployment

@@ -7,7 +7,6 @@ metadata:
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Work with models and data in Django
 summary: Django is focused on data-driven applications, so it provides its own object-relational mapper (ORM). We'll explore ORM concepts and how the Django ORM works. We'll create our own models and set up the database.

@@ -2,18 +2,18 @@ You have started planning for backup and data recovery for the SAP on Azure depl
 
 ## Learning objectives
 
-You will:
+You'll:
 
- -  Explore backup and restore of Azure virtual machines.
- -  Examine application-consistent backup of Azure Linux virtual machines.
- -  Explore application backup.
- -  Explore database backup.
- -  Explore SAP HANA backup.
- -  Implement SAP HANA backup scheduling strategy.
- -  Explore SAP HANA file-level backups.
- -  Create SAP HANA snapshot-based backups.
- -  Explore SQL Server Backup to URL (Azure Storage).
- -  Explore SQL Server file-snapshot backups.
- -  Explore Oracle backup.
- -  Explore SQL Server backups.
- -  Set up disaster recovery for SQL Server.
+- Explore backup and restore of Azure virtual machines.
+- Examine application-consistent backup of Azure Linux virtual machines.
+- Explore application backup.
+- Explore database backup.
+- Explore SAP HANA backup.
+- Implement SAP HANA backup scheduling strategy.
+- Explore SAP HANA file-level backups.
+- Create SAP HANA snapshot-based backups.
+- Explore SQL Server Backup to URL (Azure Storage).
+- Explore SQL Server file-snapshot backups.
+- Explore Oracle backup.
+- Explore SQL Server backups.
+- Set up disaster recovery for SQL Server.

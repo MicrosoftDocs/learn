@@ -1,6 +1,6 @@
 ## SQL Server disaster recovery
 
-To facilitate disaster recovery when using SQL Server, you can configure Always On availability group on Azure VMs in different regions, as described at [Configure a SQL Server Always On availability group across different Azure regions](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-dr). Another commonly used configuration that provides disaster recovery capabilities is log shipping.
+To facilitate disaster recovery when using SQL Server, you can configure Always On availability group on Azure VMs in different regions, as described at [Configure a SQL Server Always On availability group across different Azure regions](/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-multiple-regions?view=azuresql). Another commonly used configuration that provides disaster recovery capabilities is log shipping.
 
 ## Oracle disaster recovery
 
@@ -8,7 +8,7 @@ Oracle Data Guard is supported for disaster recovery purposes. To achieve automa
 
 ## Azure Site Recovery
 
-Azure Site Recovery Services is a comprehensive Disaster Recovery suite that orchestrates Disaster Recovery (DR) failover and failback of on-premise resources. Azure Site Recovery can orchestrate Enterprise-2-Enterprise (E2E) scenarios and Enterprise-2-Cloud (E2C) scenarios. Site Recovery exceeds the capabilities of most on-premises disaster recovery solutions, and at a lower total cost of ownership (TCO) than competing solutions.
+Azure Site Recovery Services is a comprehensive Disaster Recovery suite that orchestrates Disaster Recovery (DR) failover and failback of on-premises resources. Azure Site Recovery can orchestrate Enterprise-2-Enterprise (E2E) scenarios and Enterprise-2-Cloud (E2C) scenarios. Site Recovery exceeds the capabilities of most on-premises disaster recovery solutions, and at a lower total cost of ownership (TCO) than competing solutions.
 
 You can use Site Recovery to implement a disaster recovery solution in the following scenarios:
 
@@ -67,15 +67,15 @@ The following mechanisms should be implemented to protect individual tiers of th
     Active Directory virtual machines
   :::column-end:::
   :::column:::
-    Active Directory replication
+    Use Active Directory replication
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    SQL Server databases
+    SQL Database servers
   :::column-end:::
   :::column:::
-    SQL Always On replication
+    Use SQL Always On replication
   :::column-end:::
 :::row-end:::
 
@@ -83,7 +83,7 @@ To use Azure Site Recovery to automatically build out a fully replicated product
 
 - **SAP Web Dispatcher pool**: The Web Dispatcher component is used as a load balancer for SAP traffic among the SAP application servers. To achieve high availability for the Web Dispatcher component, Azure load balancer is used to implement the parallel Web Dispatcher setup in a round-robin configuration for HTTP(S) traffic distribution among the available Web Dispatchers in the balancer pool. Effectively, VMs will be replicated using Azure Site Recovery(ASR) and automation scripts will be used to configure load balancer on the disaster recovery region.
 - **SAP Application servers pool**: To manage logon groups for ABAP application servers, the SMLG transaction is used. It uses the load balancing function within the message server of the Central Services to distribute workload among SAP application servers pool for SAPGUIs and RFC traffic. Effectively, VMs will be replicated using Azure Site Recovery without the need for provisioning of a load balancer
-- **SAP Central Services cluster**: Central Services runs on VMs in the application tier. The Central Services is a potential single point of failure (SPOF) when deployed to a single VM. To implement a high availability solution, either a shared disk cluster or a file share cluster can be used to configure VMs for a shared disk cluster, use Windows Server Failover Cluster. Cloud Witness is recommended as a quorum witness. Azure Site Recovery does not replicate the cloud witness therefore it is recommended to deploy the cloud witness in the disaster recovery region. To support the failover cluster environment, SIOS DataKeeper Cluster Edition performs the cluster shared volume function by replicating independent disks owned by the cluster nodes. Azure does not natively support shared disks and therefore requires solutions provided by SIOS. Another way to handle clustering is to implement a file share cluster. SAP recently modified the Central Services deployment pattern to access the **/sapmnt** global directories via a UNC path. However, it is still recommended to ensure that the **/sapmnt** UNC share is highly available. This can be done on the Central Services instance by using Windows Server Failover Cluster with Scale Out File Server (SOFS) and the Storage Spaces Direct (S2D) feature in Windows Server 2016. Currently, Azure Site Recovery support only crash consistent point replication of virtual machines using storage spaces direct and Passive node of SIOS DataKeeper.
+- **SAP Central Services cluster**: Central Services runs on VMs in the application tier. The Central Services is a potential single point of failure (SPOF) when deployed to a single VM. To implement a high availability solution, either a shared disk cluster or a file share cluster can be used to configure VMs for a shared disk cluster, use Windows Server Failover Cluster. Cloud Witness is recommended as a quorum witness. Azure Site Recovery does not replicate the cloud witness therefore it's recommended to deploy the cloud witness in the disaster recovery region. To support the failover cluster environment, SIOS DataKeeper Cluster Edition performs the cluster shared volume function by replicating independent disks owned by the cluster nodes. Azure does not natively support shared disks and therefore requires solutions provided by SIOS. Another way to handle clustering is to implement a file share cluster. SAP recently modified the Central Services deployment pattern to access the **/sapmnt** global directories via a UNC path. However, it's still recommended to ensure that the **/sapmnt** UNC share is highly available. This can be done on the Central Services instance by using Windows Server Failover Cluster with Scale Out File Server (SOFS) and the Storage Spaces Direct (S2D) feature in Windows Server 2016. Currently, Azure Site Recovery support only crash consistent point replication of virtual machines using storage spaces direct and Passive node of SIOS DataKeeper.
 
 When relying on Azure Site Recovery to implement disaster recovery for SAP deployments across Azure regions, use the following sequence of steps:
 

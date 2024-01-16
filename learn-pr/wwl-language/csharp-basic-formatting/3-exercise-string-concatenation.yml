@@ -4,12 +4,13 @@ title: Exercise - Combine strings using string concatenation
 metadata:
   title: Exercise - Combine strings using string concatenation
   description: "Exercise - Combine strings using string concatenation"
-  ms.date: 02/24/2023
+  ms.date: 11/17/2023
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-interactive: csharp
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-string-concatenation.md)]
+interactive: csharp

@@ -5,11 +5,9 @@ metadata:
   title: Create a Twilio account and launch Visual Studio
   description: Create a Twilio account and launch Visual Studio
   ms.date: 05/06/2022
-  #TODO: Update with real author name.
-  author: acomfort248
-  ms.author: adsteven
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: softchris
+  ms.author: chnoring
+  ms.topic: unit
   ms.custom: team=nextgen
 #labId: 46464
 durationInMinutes: 5

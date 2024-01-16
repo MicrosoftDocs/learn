@@ -1,5 +1,3 @@
-
-
 In this first step of the development process, you review the code provided in the Starter project folder.
 
 ## Review the contents of the Program.cs file
@@ -38,11 +36,14 @@ The Program.cs file contains a preliminary version of the application that you'r
 
     First, you see a comment (comment #1) followed by a list of variables. These variables, `animalSpecies` through `animalNickname`, used to hold the values of the pet characteristics within a multidimensional string array named `ourAnimals`, and initialized to contain a zero length string `""`. The `ourAnimals` array declaration is a little further down in the code.
 
-    The next group of variables (under comment #2) arw a mix of `string` and `int` variables used to help generate sample data, read user input, and establish exit criteria for the main program loop. Notice the code line `string? readResult;`. You use the `?` character to transform a normally non-nullable variable type (int, string, bool,...) with support for the nullable type. When reading user entered values with the `Console.ReadLine()` method, it's best to enable a nullable type string using `string?` to avoid the code compiler generating a warning when you build the project.
+    The next group of variables (under comment #2) are a mix of `string` and `int` variables used to help generate sample data, read user input, and establish exit criteria for the main program loop. Notice the code line `string? readResult;`. You use the `?` character to transform a normally non-nullable variable type (int, string, bool,...) with support for the nullable type.
+
+    > [!NOTE]
+    > When reading user entered values with the `Console.ReadLine()` method, it's best to enable a nullable type string using `string?` to avoid the code compiler generating a warning when you build the project.
 
     The final variable (under comment #3) is the two-dimensional string array named `ourAnimals`.  You initialized the number of rows, defined by maxPets, to 8. The number of characteristics that you're storing initially is six. The six characteristics match the number of string variables that you examined in the sample code, but the number of characteristics needs to expand to add a field for `suggestedDonation`.
 
-1. Scroll down the Program.cs file to examine the `for` loop that contains a `switch` selection construct within its code block. 
+1. Scroll down the Program.cs file to examine the `for` loop that contains a `switch` selection construct within its code block.
 
     The code sample is a shortened version to save space.
 
@@ -164,12 +165,13 @@ The Program.cs file contains a preliminary version of the application that you'r
 
     The code using the `Console.ReadLine()` method, has the value set to the nullable string `readResult` to avoid the code compiler generating a warning when you build the project.
 
-    
-
 ## Check your work
 
 1. Test the starter code console app, at the TERMINAL command prompt build & run your project code with one command by entering: `dotnet run`.
 
+    > [!NOTE]
+    > The TERMINAL prompt has to be opened in the start folder and the TERMINAL should look similar to `..\ArrayGuidedProject\starter>`
+    
     When the code runs, two menu items are displayed.
     - Enter "`1`" to test the "List all of our current pet information" output
     - Enter "`2`" to test the placeholder message "under construction" message

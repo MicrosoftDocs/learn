@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.plan-your-linux-environment-in-azure
+metadata:
+  ms.author: chasecrum
+  author: chasecrum
+  ms.date: 10/16/2023
+  title: Plan your Linux environment in Azure
+  description: Learn about standards and practices for planning, deploying, managing, and optimizing Linux VMs in Azure.
+  ms.topic: interactive-tutorial
+title: Plan your Linux environment in Azure
+summary: Learn about standards and practices for planning, deploying, managing, and optimizing Linux VMs in Azure.
+abstract: |
+  - Plan the network environment and sizing of Microsoft Azure virtual machines (VMs) running Linux.
+  - Apply established best practices for deploying and configuring Linux on Azure VMs.
+  - Optimize your Linux environment on Azure VMs for performance and functionality.
+prerequisites: |
+  - Familiarity with Linux server configuration and administration.
+  - Access to a Microsoft Azure subscription with at least **Contributor** permissions.
+  - Experience with Azure portal navigation.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.plan-your-linux-environment-in-azure.introduction
+- learn.plan-your-linux-environment-in-azure.plan-for-sizing-and-networking-of-azure-vms-running-linux
+- learn.plan-your-linux-environment-in-azure.implement-best-practices-for-managing-linux-on-azure-vms
+- learn.plan-your-linux-environment-in-azure.optimize-linux-on-azure-vms-for-performance-and-functionality
+- learn.plan-your-linux-environment-in-azure.knowledge-check
+- learn.plan-your-linux-environment-in-azure.summary
+badge:
+  uid: learn.plan-your-linux-environment-in-azure-badge

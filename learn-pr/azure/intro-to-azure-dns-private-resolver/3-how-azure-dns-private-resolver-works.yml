@@ -4,12 +4,11 @@ title: How Azure DNS Private Resolver works
 metadata:
   unitType: learning-content
   title: How Azure DNS Private Resolver works
-  description: In this module you will discover how Azure DNS Private Resolver works, and get details about the main features"
-  ms.date: 4/26/2022
-  author: ricmmartins
-  ms.author: ricmart
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  description: Discover how Azure DNS Private Resolver works, and get details about the main features.
+  ms.date: 12/15/2023
+  author: greg-lindsay
+  ms.author: greglin
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/3-how-azure-dns-private-resolver-works.md)]

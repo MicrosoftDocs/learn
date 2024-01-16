@@ -4,11 +4,13 @@ title: Build your first app by using Try .NET
 metadata:
   title: Build your first app by using Try .NET
   description: 'Write a C# program by using a web-based environment. See how various parts of .NET work together.'
-  ms.date: 10/12/2020
+  ms.date: 10/12/2023
   author: camsoper
   ms.author: casoper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 6
 azureSandbox: false
 interactive: csharp

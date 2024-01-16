@@ -1,14 +1,14 @@
-Now that we know the basics of Azure Cosmos DB, let's see what resources and information is required to start working with an account. This information should help you decide whether Azure Cosmos DB for NoSQL will work for your data set and how much, if any, extra configuration is necessary.
+Now that we know the basics of Azure Cosmos DB, let's see what resources and information are required to start working with an account. This information should help you decide whether Azure Cosmos DB for NoSQL works for your data set. Also, it should help you decide how much, if any, extra configuration is necessary.
 
 ## What are the components of Azure Cosmos DB for NoSQL?
 
-To begin using Azure Cosmos DB, you will need to create various resources in Azure such as accounts, databases, containers, and items.
+To begin using Azure Cosmos DB, you first create various resources in Azure such as accounts, databases, containers, and items.
 
 ![Diagram showing how an Azure Cosmos DB for NoSQL account is the parent resource to a database, which is itself a parent resource to a container](../media/3-resource-hierarchy.png)
 
 ### Accounts
 
-**Accounts** are the fundamental units of distribution and high availability. At the account level, you can configure the region\[s\] for your data in Azure Cosmos DB for NoSQL. Accounts also contain the globally unique DNS name used for API requests. You can also set the default consistency level for requests at the account. You can manage or create accounts using the Azure portal, Azure Resource Manager templates, the Azure CLI, or Azure PowerShell.
+**Accounts** are the fundamental units of distribution and high availability. At the account level, you can configure the region\[s\] for your data in Azure Cosmos DB for NoSQL. Accounts also contain the globally unique DNS name used for API requests. You can also set the default consistency level for requests at the account level. You can manage or create accounts using the Azure portal, Azure Resource Manager templates, the Azure CLI, or Azure PowerShell.
 
 ### Databases
 
@@ -62,7 +62,7 @@ Every Azure Cosmos DB for NoSQL container is required to specify a **partition k
 }
 ```
 
-If your container specifies a partition key **path** of ``/department/name``, then the partition key **value** of this document would be ``information-technology``. Behind the scenes, Azure Cosmos DB for NoSQL automatically manages the physical resources necessary to support your data workload.
+If your container specifies a partition key **path** of `/department/name`, then the partition key **value** of this document would be `information-technology`. Behind the scenes, Azure Cosmos DB for NoSQL automatically manages the physical resources necessary to support your data workload.
 
 Selecting a partition key path for a container can be one of the most important design decisions for a new workload. Review the [choosing a partition key][azure/cosmos-db/partitioning-overview#choose-partitionkey] documentation for a deeper technical explanation and best practices.
 

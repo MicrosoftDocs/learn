@@ -4,11 +4,12 @@ title: Exercise - Complete a challenge to apply string interpolation to a form l
 metadata:
   title: Exercise - Complete a challenge to apply string interpolation to a form letter
   description: "Exercise - Complete a challenge to apply string interpolation to a form letter"
-  ms.date: 02/25/2023
+  ms.date: 11/21/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/5-challenge.md)]

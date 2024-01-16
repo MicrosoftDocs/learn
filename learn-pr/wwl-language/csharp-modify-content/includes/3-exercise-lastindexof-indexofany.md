@@ -1,6 +1,4 @@
-
-
-In this exercise, you use the `IndexOfAny()` method to find the first location of any of the `string` from selected array. You'll also, use `LastIndexOf()` to find the final location of a string within another string.
+In this exercise, you use the `IndexOfAny()` method to find the first location of any of the `string` from selected array. You also use `LastIndexOf()` to find the final location of a string within another string.
 
 ### Retrieve the last occurrence of a sub string
 
@@ -30,7 +28,7 @@ You increase the complexity of the `message` variable by adding many sets of par
 
 ### Retrieve all instances of substrings inside parentheses
 
-This time, you update the `message` to have three sets of parentheses, and you write code to extract any text inside of them. You're able to reuse portions of the previous work, but will need to add a `while` statement to iterate through the string until all sets of parentheses are discovered, extracted, and displayed.
+This time, you update the `message` to have three sets of parentheses, and you write code to extract any text inside of the parentheses. You're able to reuse portions of the previous work, but need to add a `while` statement to iterate through the string until all sets of parentheses are discovered, extracted, and displayed.
 
 1. Update your code in the Visual Studio Code Editor as follows:
 
@@ -96,7 +94,7 @@ You update the `message` string, adding different types of symbols like square `
     Console.WriteLine($"Found WITHOUT using startPosition: {message.Substring(openingPosition)}");
     
     openingPosition = message.IndexOfAny(openSymbols, startPosition);
-    Console.WriteLine($"Found WITH using startPosition: {message.Substring(openingPosition)}");
+    Console.WriteLine($"Found WITH using startPosition {startPosition}: {message.Substring(openingPosition)}");
     ```
 
 1. Save your code file, and then use Visual Studio Code to run your code. 
@@ -178,13 +176,13 @@ You update the `message` string, adding different types of symbols like square `
     closingPosition = message.IndexOf(matchingSymbol, openingPosition);
     ```
 
-    The variable `closingPosition` is used in the `Substring()` method, but is also used to find the next `openingPosition` value:
+    The variable closingPosition is used to find the length passed into the Substring() method, but it is also used to find the next openingPosition value:
 
     ```csharp
     int openingPosition = message.IndexOfAny(openSymbols, closingPosition);
     ```
 
-    This is why the `closingPosition` variable is defined outside of the `while` loop scope and initialized to `0` for the first iteration.
+    For this reason, the `closingPosition` variable is defined outside of the `while` loop scope and initialized to `0` for the first iteration.
 
 1. Save your code file, and then use Visual Studio Code to run your code. You should see the following output:
 

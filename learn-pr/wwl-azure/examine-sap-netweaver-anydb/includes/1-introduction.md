@@ -4,7 +4,7 @@ As part of planning your company's SAP NetWeaver deployment on Azure, you must c
 
 ## Learning objectives
 
-You will:
+You'll:
 
 - Explore SAP NetWeaver with AnyDB on Azure virtual machines.
 - Learn to recognize the architecture's components.

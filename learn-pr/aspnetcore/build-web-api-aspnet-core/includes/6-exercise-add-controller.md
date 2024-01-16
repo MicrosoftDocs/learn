@@ -6,7 +6,7 @@ A *controller* is a public class with one or more public methods known as *actio
 
     ![Screenshot of Visual Studio Code that shows adding a new file to the Controllers folder.](../media/add-pizza-controller-file.png)
 
-    An empty class file named *PizzaController.cs* is created in the *Controllers* directory. The directory name *Controllers* is a convention. The directory name comes from the model-view-*controller* architecture that the web API uses.
+    An empty class file named *PizzaController.cs* is created in the *Controllers* directory. The *Controllers* directory name  is a convention. The directory name comes from the model-view-*controller* architecture that the web API uses.
 
     > [!NOTE]
     > By convention, controller class names are suffixed with *Controller*.
@@ -44,7 +44,7 @@ A *controller* is a public class with one or more public methods known as *actio
 
 ## Get all pizzas
 
-The first REST verb that you need to implement is `GET`, where a client can get all pizzas from the API. You can use the built-in `[HttpGet]` attribute to define a method that will return the pizzas from our service.
+The first REST verb that you need to implement is `GET`, where a client can get all pizzas from the API. You can use the built-in `[HttpGet]` attribute to define a method that returns the pizzas from our service.
 
 Replace the `// GET all action` comment in *Controllers/PizzaController.cs* with the following code:
 
@@ -62,7 +62,7 @@ The preceding action:
 
 ## Retrieve a single pizza
 
-The client might also want to request information about a specific pizza instead of the entire list. You can implement another `GET` action that requires an `id` parameter. You can use the built-in `[HttpGet("{id}")]` attribute to define a method that will return the pizzas from our service. The routing logic registers `[HttpGet]` (without `id`) and `[HttpGet("{id}")]` (with `id`) as two different routes. You can then write a separate action to retrieve a single item.
+The client might also want to request information about a specific pizza instead of the entire list. You can implement another `GET` action that requires an `id` parameter. You can use the built-in `[HttpGet("{id}")]` attribute to define a method that returns the pizzas from our service. The routing logic registers `[HttpGet]` (without `id`) and `[HttpGet("{id}")]` (with `id`) as two different routes. You can then write a separate action to retrieve a single item.
 
 Replace the `// GET by Id action` comment in *Controllers/PizzaController.cs* with the following code:
 

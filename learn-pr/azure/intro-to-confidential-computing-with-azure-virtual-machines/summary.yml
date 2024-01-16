@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-confidential-computing-with-azure-virtual-machines.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 03/22/2023
+  author: ju-shim
+  ms.author: jushiman
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/summary.md)]

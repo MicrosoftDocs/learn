@@ -10,7 +10,7 @@ Review the following requirements for creating a virtual network.
 
    - The address space for the network can be either on-premises or in the cloud, but not both.
 
-   - You can't redefine the IP address space for a network after it's created. If you plan your address space for cloud-only virtual networks, you might later decide to connect an on-premises site. 
+   - Once you create the IP address space, it can't be changed. If you plan your address space for cloud-only virtual networks, you might later decide to connect an on-premises site. 
 
 - To create a virtual network, you need to define at least one subnet.
 
@@ -20,7 +20,7 @@ Review the following requirements for creating a virtual network.
 
    - The range for one subnet can't overlap with other subnet IP address ranges in the same virtual network.
 
-- You can create a virtual network in the Azure portal. Provide the Azure storage subscription, resource group, virtual network name, and service region for the network.
+- You can create a virtual network in the Azure portal. Provide the Azure subscription, resource group, virtual network name, and service region for the network.
 
    :::image type="content" source="../media/create-virtual-networks-b4f1fd40.png" alt-text="Screenshot that shows how to create a virtual network in the Azure portal.":::
 

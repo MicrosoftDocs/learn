@@ -1,5 +1,4 @@
-
-Decision logic is used to establish alternative pathways through your code, where the decision about which path to follow is based on the evaluation of an expression. For example, you may write some code that executes one of two paths based on a user's input. If the user enters the letter "a", your code will execute one code block. If they enter the letter "b", your code will execute a different code block. In this example, you're controlling the execution path based on the value assigned to a string. Your code selects an execution path based on an expression, how that expression is evaluated, and the underlying logic used to define the paths.
+Decision logic is used to establish alternative pathways through your code, where the decision about which path to follow is based on the evaluation of an expression. For example, you might write some code that executes one of two paths based on a user's input. If the user enters the letter "a", your code will execute one code block. If they enter the letter "b", your code will execute a different code block. In this example, you're controlling the execution path based on the value assigned to a string. Your code selects an execution path based on an expression, how that expression is evaluated, and the underlying logic used to define the paths.
 
 Examining how to construct and evaluate an expression is a good place to start.
 
@@ -11,7 +10,7 @@ An expression is any combination of values (literal or variable), operators, and
 if (myName == "Luiz")
 ```
 
-You may have been thinking that the value returned by an expression would be a number or maybe a string. It's true that application developers use different types of expressions for different purposes. In this case, when you're developing an `if` selection statement, you'll be using an expression that returns either `true` or `false`. Developers refer to this type of expression as a Boolean expression. When your code includes a Boolean expression, return value is always a single `true` or `false` value.
+You might have been thinking that the value returned by an expression would be a number or maybe a string. It's true that application developers use different types of expressions for different purposes. In this case, when you're developing an `if` selection statement, you'll be using an expression that returns either `true` or `false`. Developers refer to this type of expression as a Boolean expression. When your code includes a Boolean expression, return value is always a single `true` or `false` value.
 
 Boolean expressions are important because your code can use these expressions to decide which block of code to execute.
 
@@ -21,9 +20,9 @@ There are many different types of operators that you can use within a Boolean ex
 
 One of the most common code evaluations is a check to see whether two values are equal. When checking for equality, you'll locate the equality operator `==` between the two values being checked. If the values on either side of the equality operator are equivalent, then the expression will return `true`. Otherwise, it will return `false`.
 
-Conversely, you may also need to check whether two values aren't equal. To check for inequality, you'll use the inequality operator `!=` between the two values.
+Conversely, you might also need to check whether two values aren't equal. To check for inequality, you'll use the inequality operator `!=` between the two values.
 
-You may wonder why you need both equality and inequality operators. The reason will become clearer as you learn how to create branching statements and begin to write real world code. Two operators that perform opposite tasks allow you to be more expressive and compact.
+You might wonder why you need both equality and inequality operators. The reason will become clearer as you learn how to create branching statements and begin to write real world code. Two operators that perform opposite tasks allow you to be more expressive and compact.
 
 Now it's time to prepare your coding environment and begin writing code that evaluates Boolean expressions.
 
@@ -33,42 +32,42 @@ This module includes hands-on activities that guide you through the process of b
 
 1. Open Visual Studio Code.
 
-    You can use the Windows Start menu (or equivalent resource for another OS) to open Visual Studio Code.
+   You can use the Windows Start menu (or equivalent resource for another OS) to open Visual Studio Code.
 
 1. On the Visual Studio Code **File** menu, select **Open Folder**.
 
 1. In the **Open Folder** dialog, navigate to the Windows Desktop folder.
 
-    If you have a different folder location where you keep code projects, you can use that folder location instead. For this training, the important thing is to have a location that’s easy to locate and remember.
+   If you have a different folder location where you keep code projects, you can use that folder location instead. For this training, the important thing is to have a location that’s easy to locate and remember.
 
 1. In the **Open Folder** dialog, select **Select Folder**.
 
-    If you see a security dialog asking if you trust the authors, select **Yes**.
+   If you see a security dialog asking if you trust the authors, select **Yes**.
 
 1. On the Visual Studio Code **Terminal** menu, select **New Terminal**.
+   
+   Notice that a command prompt in the Terminal panel displays the folder path for the current folder. For example:  
 
-    Notice that a command prompt in the Terminal panel displays the folder path for the current folder. For example:  
+   ```dos   
+   C:\Users\someuser\Desktop>   
+   ```
 
-    ```dos
-    C:\Users\someuser\Desktop>
-    ```
-
-    > [!NOTE]
-    > If you are working on your own PC rather than in a sandbox or hosted environment and you have completed other Microsoft Learn modules in this C# series, you may have already created a project folder for code samples. If that's the case, you can skip over the next step, which is used to create a console app in the TestProject folder.
+   > [!NOTE]
+   > If you are working on your own PC rather than in a sandbox or hosted environment and you have completed other Microsoft Learn modules in this C# series, you may have already created a project folder for code samples. If that's the case, you can skip over the next step, which is used to create a console app in the TestProject folder.
 
 1. At the Terminal command prompt, to create a new console application in a specified folder, type **dotnet new console -o ./CsharpProjects/TestProject** and then press Enter.
 
-    This .NET CLI command uses a .NET program template to create a new C# console application project in the specified folder location. The command creates the CsharpProjects and TestProject folders for you, and uses TestProject as the name of your `.csproj` file.
+   This .NET CLI command uses a .NET program template to create a new C# console application project in the specified folder location. The command creates the CsharpProjects and TestProject folders for you, and uses TestProject as the name of your `.csproj` file.
 
 1. In the EXPLORER panel, expand the **CsharpProjects** folder.
 
-    You should see the TestProject folder and two files, a C# program file named Program.cs and a C# project file named TestProject.csproj.
+   You should see the TestProject folder and two files, a C# program file named Program.cs and a C# project file named TestProject.csproj.
 
 1. In the EXPLORER panel, to view your code file in the Editor panel, select **Program.cs**.
 
 1. Delete the existing code lines.
 
-    You'll be using this C# console project to create, build, and run code samples during this module.
+   You'll be using this C# console project to create, build, and run code samples during this module.
 
 1. Close the Terminal panel.
 
@@ -76,45 +75,46 @@ This module includes hands-on activities that guide you through the process of b
 
 1. Ensure that you have Visual Studio Code open and Program.cs displayed in the Editor panel.
 
-    > [!NOTE]
-    > Program.cs should be empty. If it isn't, select and delete all code lines.
+   > [!NOTE]
+   > Program.cs should be empty. If it isn't, select and delete all code lines.
 
 1. Type the following code into the Visual Studio Code Editor.
 
-    ```c#
-    Console.WriteLine("a" == "a");
-    Console.WriteLine("a" == "A");
-    Console.WriteLine(1 == 2);
-    
-    string myValue = "a";
-    Console.WriteLine(myValue == "a");
-    ```
+   ```c#
+   Console.WriteLine("a" == "a");
+   Console.WriteLine("a" == "A");
+   Console.WriteLine(1 == 2);
+   
+   string myValue = "a";
+   Console.WriteLine(myValue == "a");
+   ```
 
 1. On the Visual Studio Code **File** menu, select **Save**.
 
-    The Program.cs file must be saved before building or running the code.
+   The Program.cs file must be saved before building or running the code.
 
 1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
 
-    A Terminal panel will open. The Terminal should include a command prompt showing that the Terminal is open to your TestProject folder location.
+   A Terminal panel will open. The Terminal should include a command prompt showing that the Terminal is open to your TestProject folder location.
 
 1. At the Terminal command prompt, to run your code, type **dotnet run** and then press Enter.
 
-    > [!NOTE]
-    > If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
+   > [!NOTE]
+   > If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
 
-    You should see the following output.
 
-    ```output
-    True
-    False
-    False
-    True
-    ```
+   You should see the following output.
+
+   ```output
+   True
+   False
+   False
+   True
+   ```
 
 ### Improve the check for string equality using the string's built-in helper methods
 
-You may be surprised that the line `Console.WriteLine("a" == "A");` outputs `false`. When comparing strings, case matters.
+You might be surprised that the line `Console.WriteLine("a" == "A");` outputs `false`. When comparing strings, case matters.
 
 Also, consider this line of code:
 
@@ -137,11 +137,11 @@ You can improve the previous equality check by chaining these two helper methods
 
 1. Replace the code in the Visual Studio Code Editor with the following code:
 
-    ```c#
-    string value1 = " a";
-    string value2 = "A ";
-    Console.WriteLine(value1.Trim().ToLower() == value2.Trim().ToLower());
-    ```
+   ```c#
+   string value1 = " a";
+   string value2 = "A ";
+   Console.WriteLine(value1.Trim().ToLower() == value2.Trim().ToLower());
+   ```
 
 1. Save your code file, and then use Visual Studio Code to run your code.
 
@@ -153,31 +153,31 @@ You can improve the previous equality check by chaining these two helper methods
 
 1. Type the following code into the Visual Studio Code Editor.
 
-    ```c#
-    Console.WriteLine("a" != "a");
-    Console.WriteLine("a" != "A");
-    Console.WriteLine(1 != 2);
-    
-    string myValue = "a";
-    Console.WriteLine(myValue != "a");
-    ````
+   ```c#
+   Console.WriteLine("a" != "a");
+   Console.WriteLine("a" != "A");
+   Console.WriteLine(1 != 2);
+
+   string myValue = "a";
+   Console.WriteLine(myValue != "a");
+   ````
 
 1. Save your code file, and then use Visual Studio Code to run your code.
 
-    You should see the following output.
+   You should see the following output.
 
-    ```output
-    False
-    True
-    True
-    False
-    ```
+   ```output
+   False
+   True
+   True
+   False
+   ```
 
 As you would expect, the result when using the inequality operator is the opposite of what you saw when using the equality operator. That means that your code will branch in the opposite manner as well, which can be exactly what you want.
 
 ## Evaluating comparisons
 
-When working with numeric data types, you may want to determine if a value is larger or smaller than another value. Use the following operators to perform these types of comparisons:
+When working with numeric data types, you might want to determine if a value is larger or smaller than another value. Use the following operators to perform these types of comparisons:
 
 - Greater than `>`
 - Less than `<`
@@ -192,23 +192,23 @@ Naturally, the `==` and `!=` operators that you used to compare string values ab
 
 1. Type the following code into the Visual Studio Code Editor.
 
-    ```c#
-    Console.WriteLine(1 > 2);
-    Console.WriteLine(1 < 2);
-    Console.WriteLine(1 >= 1);
-    Console.WriteLine(1 <= 1);
-    ```
+     ```c#
+     Console.WriteLine(1 > 2);
+     Console.WriteLine(1 < 2);
+     Console.WriteLine(1 >= 1);
+     Console.WriteLine(1 <= 1);
+     ```
 
 1. Save your code file, and then use Visual Studio Code to build and run your code.
 
-    You should see the following output:
+      You should see the following output:
 
-    ```output
-    False
-    True
-    True
-    True
-    ```
+      ```output
+      False
+      True
+      True
+      True
+      ```
 
 ## Methods that return a Boolean value
 
@@ -223,26 +223,26 @@ Some methods return a Boolean value (`true` or `false`). In the following exerci
 
 1. Type the following code into the Visual Studio Code Editor.
 
-    ```c#
-    string pangram = "The quick brown fox jumps over the lazy dog.";
-    Console.WriteLine(pangram.Contains("fox"));
-    Console.WriteLine(pangram.Contains("cow"));
-    ```
+   ```c#
+   string pangram = "The quick brown fox jumps over the lazy dog.";
+   Console.WriteLine(pangram.Contains("fox"));
+   Console.WriteLine(pangram.Contains("cow"));
+   ```
 
 1. Save your code file, and then use Visual Studio Code to build and run your code.
 
-    You should see the following output.
+   You should see the following output.
 
-    ```output
-    True
-    False
-    ```
+   ```output
+   True
+   False
+   ```
 
 ## What is logical negation?
 
-The term "Logical Negation" refers to the `!` operator. Some people call this operator the "not operator". When you place the `!` operator before a conditional expression (or any code that's evaluated to either `true` or `false`), it forces your code to ensure that the expression is false.
+The term "Logical Negation" refers to the unary negation operator `!`. Some people call this operator the "not operator". When you place the `!` operator before a conditional expression (or any code that's evaluated to either `true` or `false`), it forces your code to reverse its evaluation of the operand. When logical negation is applied, the evaluation produces `true` , if the operand evaluates to `false` , and `false` , if the operand evaluates to `true`.
 
-Here is an example that may help you to see the connection between these ideas. The following two lines of code produce the same result. The second line is more compact.
+Here is an example that might help you to see the connection between these ideas. The following two lines of code produce the same result. The second line is more compact.
 
 ```c#
 // These two lines of code will create the same output
@@ -256,21 +256,36 @@ Console.WriteLine(!pangram.Contains("fox"));
 1. Use the line comment operator `//` to comment out all of the code from the previous step.
 
 1. Type the following code into the Visual Studio Code Editor.
-
-    ```c#
-    string pangram = "The quick brown fox jumps over the lazy dog.";
-    Console.WriteLine(!pangram.Contains("fox"));
-    Console.WriteLine(!pangram.Contains("cow"));
-    ```
+  
+   ```c#
+   string pangram = "The quick brown fox jumps over the lazy dog.";
+   Console.WriteLine(!pangram.Contains("fox"));
+   Console.WriteLine(!pangram.Contains("cow"));
+   ```
 
 1. Save your code file, and then use Visual Studio Code to build and run your code.
 
-    You should see the following output.
+   You should see the following output.
 
-    ```output
-    False
-    True
-    ```
+   ```output
+   False
+   True
+   ```
+
+### Inequality operator versus logical negation
+
+The inequality operator `!=` includes a `!` character, but should not be confused with logical negation. The inequality operator returns `true` if its operands aren't equal, and returns `false` if the operands are equal. For the operands of the built-in types, the expression `x != y` produces the same result as the expression `!(x == y)` (an example of logical negation).
+
+The following code sample demonstrates the use of the `!=` operator:
+
+```csharp
+int a = 7;
+int b = 6;
+Console.WriteLine(a != b); // output: True
+string s1 = "Hello";
+string s2 = "Hello";
+Console.WriteLine(s1 != s2); // output: False
+```
 
 ## Recap
 

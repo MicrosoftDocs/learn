@@ -1,6 +1,6 @@
 Organizations often need to run web apps in isolated environments to test them before deployment. They also need to deploy quickly and without affecting users. 
 
-Suppose you're trying to decide whether to use slots as a streamlined way to deploy a web app in your social media system. You want to find out if deployment slots will reduce downtime during deployments if they'll ease rollbacks, and if you can set them up in Azure.
+Suppose you're trying to decide whether to use slots as a streamlined way to deploy a web app in your social media system. You want to find out if deployment slots will reduce downtime during deployments, if they'll ease rollbacks, and if you can set them up in Azure.
 
 Here, you'll learn how deployment slots ease the testing and rollout of new code.
 
@@ -35,9 +35,9 @@ Deployment slots are available only when your web app uses an App Service plan i
 
 ## Avoid a cold start during swaps
 
-Many of the technologies that developers use to create web apps require final compilation and other actions on the server before they deliver a page to a user. Many of these tasks are completed when the app starts up and receives a request. For example, if you use ASP.NET to build your app, code is compiled and views are completed when the first user requests a page. Subsequent requests for that page receive a faster response because the code is already compiled.
+Many of the technologies that developers use to create web apps require final compilation and other actions on the server before they deliver a page to a user. Many of these tasks are completed when the app starts up and receives a request. For example, if you use ASP.NET to build your app, code is compiled and views are completed when the first user requests a page. Subsequent requests for that page receive a faster response, because the code is already compiled.
 
-The initial delay is called a *cold start*. You can avoid a cold start by using slot swaps to deploy to production. When you swap a slot into production, you "warm-up" the app because your action sends a request to the root of the site. The warm-up request ensures that all compilation and caching tasks finish. After the swap, the site responds as fast as if it had been deployed for days.
+The initial delay is called a *cold start*. You can avoid a cold start by using slot swaps to deploy to production. When you swap a slot into production, you "warm up" the app because your action sends a request to the root of the site. The warm-up request ensures that all compilation and caching tasks finish. After the swap, the site responds as quickly as if it had been deployed for days.
 
 ## Create a deployment slot
 
@@ -53,23 +53,23 @@ Before you create a slot, make sure your web app is running in the Standard, Pre
 
 1. Choose whether to clone settings from another slot. If you choose to clone, settings are copied to your new slot from the slot you specify.
 
-    ![Name a new deployment slot and choose whether to clone settings.](../media/2-add-a-slot.png)
+    ![Screenshot of naming a new deployment slot and choosing whether to clone settings in the Azure portal.](../media/2-add-a-slot.png)
 
 > [!NOTE]
-> Although you can clone settings to a new slot, you can't clone content. New slots always begin with no content. You must deploy content by using git or another deployment strategy. The clone operation copies the configuration to the new slot. After you clone the settings, the configuration of the two slots can be changed independently.
+> Although you can clone settings to a new slot, you can't clone content. New slots always begin with no content. You must deploy content by using Git or another deployment strategy. The clone operation copies the configuration to the new slot. After you clone the settings, the configuration of the two slots can be changed independently.
 
-Select **Add** to create the new slot. You now see the new slot in the list on the **Deployment Slots** page. Select the slot to view its management pane.
+Select **Add** to create the new slot. You now have the new slot in the list on the **Deployment Slots** page. Select the slot to view its management pane.
 
-![The list of deployment slots for a web app.](../media/2-list-of-slots.png)
+![Screenshot of the list of deployment slots for a web app.](../media/2-list-of-slots.png)
 
 ## Access a slot
 
-The new slot's hostname is derived from the web app name and the name of the slot. You see this hostname when you select the slot on the **Deployment Slots** page:
+The new slot's hostname is derived from the web app name and the name of the slot. You get this hostname when you select the slot on the **Deployment Slots** page:
 
-![Finding the URL for a new slot.](../media/2-finding-slot-url.png)
+![Screenshot of finding the URL for a new slot in the Azure portal.](../media/2-finding-slot-url.png)
 
 You can deploy your code to the new slot the same way you deploy it for the production slot. Just substitute the new slot's name or URL in the configuration of the deployment tool you use. If you use FTP to deploy, you'll see the FTP hostname and username just under the slot's URL.
 
-The new slot is effectively a separate web app with a different hostname. That's why anyone on the internet can access it if they know that hostname. Unless you register the slot with a search engine or link to it from a crawled page, the slot won't appear in search engine indexes. It will remain obscure to the general internet user. 
+The new slot is effectively a separate web app with a different hostname. That's why anyone on the internet can access it if they know that hostname. Unless you register the slot with a search engine or link to it from a crawled page, the slot won't appear in search-engine indexes. It will remain obscure to the general internet user.
 
 You can control access to a slot by using IP address restrictions. Create a list of IP address ranges that you'll allow accessing the slot or a list of ranges that you'll deny access to the slot. These lists are like the allow ranges and deny ranges that you can set up on a firewall. Use this list to permit access only to computers that belong to your company or development team.

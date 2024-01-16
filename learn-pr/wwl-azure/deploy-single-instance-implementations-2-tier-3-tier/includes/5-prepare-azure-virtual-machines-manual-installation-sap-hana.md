@@ -1,4 +1,4 @@
-This section covers the following topics:
+This section covers the following:
 
 - OS updates
 - Disk setup
@@ -22,22 +22,24 @@ Here's an example of how to check for available patches for SUSE Linux by using 
 
 `sudo zypper list-patches`
 
-Depending on the kind of issue, patches are classified by category and severity. Commonly used values for category are:
+Depending on the kind of issue, patches are classified by category and severity.
 
-- Security
-- Recommended
-- Optional
-- Feature
-- Document
-- Yast
+Commonly used values for **category** are:
 
-Commonly used values for severity are:
+- `security`
+- `recommended`
+- `optional`
+- `feature`
+- `document`
+- `yast`
 
-- Critical
-- Important
-- Moderate
-- Low
-- Unspecified
+Commonly used values for **severity** are:
+
+- `critical`
+- `important`
+- `moderate`
+- `low`
+- `unspecified`
 
 The zypper command looks only for the updates that your installed packages need. For example, you can use this command:
 
@@ -115,13 +117,13 @@ To make the SAP HANA kernel settings permanent, use grub2 on SLES 12. Another op
 
 The following screenshot shows two file systems that were created on the SAP app server VM on top of the two attached Azure standard storage disks. Both file systems are of the type XFS and are mounted to /sapdata and /sapsoftware.
 
-:::image type="content" source="../media/two-file-systems-sap-app-server-728cdf09.png" alt-text="Two file systems that were created on the S A P app server virtual machine on top of the two attached Azure standard storage disks.":::
+:::image type="content" source="../media/two-file-systems-sap-app-server-728cdf09.png" alt-text="Screenshot of output values for two file systems that were created on the S A P app server virtual machine on top of the two attached Azure standard storage disks.":::
 
 It isn't mandatory to structure your file systems this way. You have other options for how to structure the disk space. The most important consideration is to prevent the root file system from running out of free space.
 
 For the SAP HANA DB VM, during a database installation, when you use SAPinst with SWPM and the typical installation option, everything is installed under **/hana** and **/usr/sap**. The default location for the SAP HANA log backup is under **/usr/sap**. Again, it's important to prevent the root file system from running out of storage space. Make sure that there's enough free space under **/hana** and **/usr/sap** before you install SAP HANA by using SWPM.
 
-If during installation you receive a message that there is no sufficient swap space, you can manually configure a swap file by using dd, mkswap, and swapon. Another option is to configure swap space by using the Linux VM agent as described earlier.
+If during installation you receive a message that  there isn't sufficient swap space, you can manually configure a swap file by using dd, mkswap, and swapon. Another option is to configure swap space by using the Linux VM agent as described earlier.
 
 ## The **/etc/hosts** file
 

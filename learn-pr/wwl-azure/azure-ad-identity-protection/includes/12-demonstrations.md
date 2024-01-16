@@ -9,7 +9,7 @@ This task will review conditional access policy settings and create a policy tha
 
 ### Configure the policy
 
-1.  In the **Portal,** search for and select **Azure Active Directory**.
+1.  In the **Portal,** search for and select **Microsoft Entra ID**.
 2.  Under **Manage,** select **Security**.
 3.  Under **Protect,** select **Conditional access**.
 4.  Click **New Policy**.
@@ -88,7 +88,7 @@ In this task, we will review the access review results.
 
 In this task, we will apply the review results.
 
-1.  In the **Portal**, search for and select **Azure Active Directory**.
+1.  In the **Portal**, search for and select **Microsoft Entra ID**.
 2.  Under **Manage,** select **Groups**.
 3.  Locate the **AZ500Admins** group.
 4.  Review the members of the group.

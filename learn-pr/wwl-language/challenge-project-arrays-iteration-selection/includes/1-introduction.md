@@ -20,11 +20,11 @@ By the end of this module, you'll have an updated version of the Student Grading
 
 In this module, you'll demonstrate your ability to:
 
-- Revise a C# console application that uses nested foreach loops to access array data based on an updated feature specification.
-- Update the variables and if statements in a C# console application to create the code branches and calculations required to satisfy an updated feature specification.
+- Use Visual Studio Code to revise a C# console application based on an updated feature specification.
+- Update the variables and `if` statements in a C# console application to create the code branches and calculations required to satisfy an updated feature specification.
 
 ## Prerequisites
 
 - Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes.
-- Experience using if statements in C# to evaluate an expression and branch code accordingly.
-- Experience using a foreach loop to access elements of array variables.
+- Experience using `if` statements in C# application to evaluate expressions and branch code accordingly.
+- Experience using a `foreach` loop to access elements of array variables.

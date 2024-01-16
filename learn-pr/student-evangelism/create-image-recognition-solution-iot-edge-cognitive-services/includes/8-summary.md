@@ -1,4 +1,4 @@
-Consider the example of the self-cashouts that use Azure Cognitive Services and IoT Edge to recognize fruit images and covert the name of the fruit to the speech. 
+Consider the example of the self-cashouts that use Azure AI services and IoT Edge to recognize fruit images and covert the name of the fruit to the speech. 
 
 Custom Vision service let you build a pretrained model and export it for offline use. Speech service let you convert the text into the speech and IoT Edge can enable you to run modules securely on edge devices. 
 

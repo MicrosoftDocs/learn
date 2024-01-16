@@ -1,6 +1,6 @@
 One of the primary ways that Intune provides mobile app security is through policies. App protection policies allow you to do the following actions:
 
-- Use Azure AD identity to isolate organization data from personal data. So personal information is isolated from organizational IT awareness. Data accessed using organization credentials are given extra security protection.
+- Use Microsoft Entra identity to isolate organization data from personal data so that personal information is isolated from organizational IT awareness. Data accessed using organization credentials are given extra security protection.
 - Help secure access on personal devices by restricting actions users can take with organizational data, such as copy-and-paste, save, and view.
 - Create and deploy on devices that are enrolled in Intune, enrolled in another mobile device management (MDM) service, or not enrolled in any MDM service.
 
@@ -13,12 +13,12 @@ On enrolled devices that use an MDM service, app protection policies can add an 
 
 The following illustration shows the layers of protection that an MDM service and app protection policies offer together:
 
-![Devices using app protection policies with enrollment - Microsoft Endpoint Manager.](../media/intro-to-endpoint-manager-21.png)
+![Devices using app protection policies with enrollment - Microsoft Intune.](../media/intro-to-endpoint-manager-21.png)
 
 ## App protection policies without enrollment 
 
 There are other benefits to using an MDM service with app protection policies, and companies can use app protection policies with and without MDM at the same time. For example, consider an employee that uses both a tablet issued by the company, and their own personal phone. The company tablet is enrolled in MDM and protected by app protection policies while their personal phone is protected by app protection policies only.
 
-![Devices using app protection policies without enrollment - Microsoft Endpoint Manager.](../media/intro-to-endpoint-manager-22.png)
+![Devices using app protection policies without enrollment - Microsoft Intune.](../media/intro-to-endpoint-manager-22.png)
 
 For more information about app protection in Intune, see [App protection policies overview](/mem/intune/apps/app-protection-policy?azure-portal=true).

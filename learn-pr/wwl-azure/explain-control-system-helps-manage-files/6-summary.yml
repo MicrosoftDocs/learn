@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explain-control-system-helps-manage-files.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 06/06/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]
+interactive: bash

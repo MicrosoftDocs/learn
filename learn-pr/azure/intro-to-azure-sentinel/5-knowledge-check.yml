@@ -7,8 +7,7 @@ metadata:
   ms.date: 09/21/2020
   author: deanobalino
   ms.author: deanbryen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: debryen-11292021
 durationInMinutes: 4
@@ -53,15 +52,3 @@ quiz:
     - content: 'Azure Monitor'
       isCorrect: false
       explanation: 'Log Analytics is the underlying service that stores the log data for Microsoft Sentinel.'
-
-  - content: 'Within Microsoft Sentinel, which Azure product is used to run automated playbooks in response to alerts?'
-    choices:
-    - content: 'Log Analytics'
-      isCorrect: false
-      explanation: 'Log Analytics is the underlying system that stores log data within Microsoft Sentinel.'
-    - content: 'Azure Monitor'
-      isCorrect: false
-      explanation: 'Azure Monitor is used for performance management for infrastructure and applications.'
-    - content: 'Azure Logic Apps'
-      isCorrect: true
-      explanation: 'Azure Logic Apps is a serverless, no-code solution for automating workflows. It integrates with hundreds of other services, making it a powerful solution for security orchestration, automation, and response (SOAR).'

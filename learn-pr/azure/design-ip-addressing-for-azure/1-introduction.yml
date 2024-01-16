@@ -3,11 +3,10 @@ uid: learn.design-ip-addressing-for-azure.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 03/01/2022
-  author: asudbring
-  ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/28/2023
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
 title: Introduction
 durationInMinutes: 2
 content: |

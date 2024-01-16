@@ -1,7 +1,6 @@
-
 The .NET software development kit (SDK) includes a command-line interface (CLI) that can be accessed from Visual Studio Code's integrated Terminal. During this training, you use .NET CLI commands to create new console applications, build your project code, and run your applications.
 
-For example, the following .NET CLI command to create a new console application in the specified folder location:
+For example, the following .NET CLI command will create a new console application in the specified folder location:
 
 ```dotnetcli
 dotnet new console -o ./CsharpProjects/TestProject
@@ -14,7 +13,7 @@ The structure of a CLI command consists of the following three parts:
 - The command arguments: `-o ./CsharpProjects/TestProject` in this example.
 
 > [!NOTE]
-> Command arguments are optional parameters that can be used to provide additional information. The previous command could be run without specifying the optional folder location: `dotnet new console`. In this case, the new console application would be created at the folder location specified by the command prompt.
+> Command arguments are optional parameters that can be used to provide additional information. The previous command could be run without specifying the optional folder location. For example: `dotnet new console`. In this case, the new console application would be created at the current folder location.
 
 In this exercise, you use Visual Studio Code to create a new project folder, create a new console application using a CLI command, customize the application in the Visual Studio Code Editor, and then build and run your app.
 
@@ -51,7 +50,11 @@ To begin, you create a console application in a folder location that's easy to f
     C:\Users\someuser\Desktop>
     ```
 
-1. At the Terminal command prompt, to create a new console application in a specified folder, type **dotnet new console -o ./CsharpProjects/TestProject** and then press Enter.
+1. At the Terminal command prompt, to create a new console application in a specified folder, enter the following command:
+
+    ```dotnetcli
+    dotnet new console -o ./CsharpProjects/TestProject
+    ```
 
     ![Screenshot showing a command being entered in the Visual Studio Code terminal panel.](../media/visual-studio-code-terminal-command.png)
 
@@ -59,7 +62,7 @@ To begin, you create a console application in a folder location that's easy to f
 
 1. In the EXPLORER panel, expand the **CsharpProjects** folder.
 
-    You should see the TestProject folder and two files, a C# program file named Program.cs and a C# project file named TestProject.csproj. The CLI command uses the folder name when it creates to project file (TestProject.csproj). The Program.cs file is the file containing your C# code.
+    You should see the TestProject folder and two files, a C# program file named Program.cs and a C# project file named TestProject.csproj. The CLI command uses the folder name when it creates the project file (TestProject.csproj). The Program.cs file is the file containing your C# code.
 
 1. In the EXPLORER panel, to view the C# code in the Editor panel, select **Program.cs**.
 
@@ -74,14 +77,20 @@ To begin, you create a console application in a folder location that's easy to f
 
 ## Update, build, and run your application
 
-In this task, you use the EXPLORER view to open your code project folder, customize your "Hello" message", and then run your application.
+In this task, you use the EXPLORER view to open your code project folder, customize your "Hello" message, and then run your application.
 
-1. In the Visual Studio Code EXPLORER view, right-click **TestProject**, and then select **Open in integrated Terminal**.
+1. In the Visual Studio Code EXPLORER view, right-click the **TestProject** folder, and then select **Open in integrated Terminal**.
 
     ![Screenshot showing a command being entered in the Visual Studio Code integrated terminal panel.](../media/visual-studio-code-explorer-view-open-in-integrated-terminal.png)
 
     > [!IMPORTANT]
     > The command prompt in the integrated Terminal panel shows the folder location where the command will run. Before running a `build` or `run` command, you must ensure that the Terminal is open to your project folder.
+
+1. Verify that the command prompt in the Terminal panel displays the following folder path:
+
+    ```output
+    C:\Users\someuser\Desktop\CsharpProjects\TestProject>
+    ```
 
 1. In the Visual Studio Code Editor, update the `Console.WriteLine()` method as follows:
 
@@ -97,7 +106,7 @@ In this task, you use the EXPLORER view to open your code project folder, custom
 
 1. To compile a build of your application, enter the following command at the Terminal command prompt:
 
-    ```C#
+    ```dotnetcli
     dotnet build
     ```
 
@@ -105,14 +114,14 @@ In this task, you use the EXPLORER view to open your code project folder, custom
 
     The `dotnet build` command builds the project and its dependencies into a set of binaries. The binaries include the project's code in Intermediate Language (IL) files with a .dll extension. Depending on the project type and settings, other files may also be included. If you're curious, you can find the TestProject.dll file in the EXPLORER panel at a folder location that's similar to the following path:
 
-    `C:\Users\someuser\Desktop\CsharpProjects\TestProject\bin\Debug\net6.0\`
+    `C:\Users\someuser\Desktop\CsharpProjects\TestProject\bin\Debug\net7.0\`
 
     > [!NOTE]
     > Your folder path will reflect your account and the folder path to your TestProject folder.
 
 1. To run your application, enter the following command at the Terminal command prompt:
 
-    ```C#
+    ```dotnetcli
     dotnet run
     ```
 
@@ -120,6 +129,6 @@ In this task, you use the EXPLORER view to open your code project folder, custom
 
 1. Notice that **Hello C#** is displayed in the Terminal panel on the line below the `dotnet run` command.
 
-    If you see "Hello World!" displayed, ensure that you've saved your code changes.
+    If you see "Hello, World!" displayed, ensure that you've saved your code changes.
 
 Congratulations, you have completed setting up Visual Studio Code and building and running a simple line of code!

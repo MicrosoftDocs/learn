@@ -1,3 +1,4 @@
+
 Azure Synapse Analytics is a platform for cloud-scale analytics workloads that process data in multiple sources; including:
 
 - Relational databases in serverless and dedicated SQL pools

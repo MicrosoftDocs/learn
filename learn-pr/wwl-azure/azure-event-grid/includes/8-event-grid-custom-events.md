@@ -1,5 +1,6 @@
 
-In this exercise you will learn how to:
+
+In this exercise you learn how to:
 
 * Enable an Event Grid resource provider
 * Create a custom topic
@@ -13,13 +14,13 @@ In this exercise you will learn how to:
 
 ## Create a resource group
 
-In this section you will open your terminal and create some variables that will be used throughout the rest of the exercise to make command entry, and unique resource name creation, a bit easier.
+In this section, you open your terminal and create some variables that are used throughout the rest of the exercise to make command entry, and unique resource name creation, a bit easier.
 
 1. Launch the Cloud Shell: [https://shell.azure.com](https://shell.azure.com) 
 
 1. Select **Bash** as the shell.
 
-1. Run the commands below to create the variables. Replace `<myLocation>` with a region near you.
+1. Run the following commands to create the variables. Replace `<myLocation>` with a region near you.
 
     ```bash
     let rNum=$RANDOM*$RANDOM
@@ -29,7 +30,7 @@ In this section you will open your terminal and create some variables that will 
     mySiteURL="https://${mySiteName}.azurewebsites.net"
     ```
 
-1. Create a resource group for the new resources you will be creating.
+1. Create a resource group for the new resources you're creating.
 
     ```bash
     az group create --name az204-evgrid-rg --location $myLocation
@@ -46,7 +47,7 @@ Register the Event Grid resource provider by using the `az provider register` co
 az provider register --namespace Microsoft.EventGrid
 ```
 
-It can take a few minutes for the registration to complete. To check the status run the command below.
+It can take a few minutes for the registration to complete. To check the status run the following command.
 
 ```bash
 az provider show --namespace Microsoft.EventGrid --query "registrationState"
@@ -54,7 +55,7 @@ az provider show --namespace Microsoft.EventGrid --query "registrationState"
 
 ## Create a custom topic
 
-Create a custom topic by using the `az eventgrid topic create` command. The name must be unique because it is part of the DNS entry.  
+Create a custom topic by using the `az eventgrid topic create` command. The name must be unique because it's part of the DNS entry.  
 
 ```bash
 az eventgrid topic create --name $myTopicName \
@@ -64,7 +65,7 @@ az eventgrid topic create --name $myTopicName \
 
 ## Create a message endpoint
 
-Before subscribing to the custom topic, we need to create the endpoint for the event message. Typically, the endpoint takes actions based on the event data. The script below uses a pre-built web app that displays the event messages. The deployed solution includes an App Service plan, an App Service web app, and source code from GitHub. It also generates a unique name for the site.
+Before subscribing to the custom topic, we need to create the endpoint for the event message. Typically, the endpoint takes actions based on the event data. The following script uses a prebuilt web app that displays the event messages. The deployed solution includes an App Service plan, an App Service web app, and source code from GitHub. It also generates a unique name for the site.
 
 1. Create a message endpoint. The deployment may take a few minutes to complete.
 
@@ -80,16 +81,16 @@ Before subscribing to the custom topic, we need to create the endpoint for the e
     > [!NOTE]
     > This command may take a few minutes to complete.
 
-1. In a new tab navigate to the URL generated at the end of the script above to ensure the web app is running. You should see the site with no messages currently displayed.
+1. In a new tab, navigate to the URL generated at the end of the previous script to ensure the web app is running. You should see the site with no messages currently displayed.
 
     > [!TIP]
     > Leave the browser running, it is used to show updates.
 
 ## Subscribe to a custom topic
 
-You subscribe to an event grid topic to tell Event Grid which events you want to track and where to send those events. 
+You subscribe to an Event Grid topic to tell Event Grid which events you want to track and where to send those events. 
 
-1. Subscribe to a custom topic by using the `az eventgrid event-subscription create` command. The script below will grab the needed subscription ID from your account and use in the creation of the event subscription.
+1. Subscribe to a custom topic by using the `az eventgrid event-subscription create` command. The following script grabs the needed subscription ID from your account and use in the creation of the event subscription.
 
     ```bash
     endpoint="${mySiteURL}/api/updates"

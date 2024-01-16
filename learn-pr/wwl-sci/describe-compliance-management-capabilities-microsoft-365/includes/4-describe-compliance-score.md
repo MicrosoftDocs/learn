@@ -1,12 +1,8 @@
-
-> [!NOTE]
-> Microsoft 365 compliance is now called Microsoft Purview and the solutions within the compliance area have been rebranded. Microsoft Compliance Manager is now Microsoft Purview Compliance Manager. For more information about Microsoft Purview, see the [blog announcement](https://www.microsoft.com/security/blog/2022/04/19/the-future-of-compliance-and-data-governance-is-here-introducing-microsoft-purview/)
-
 Compliance score measures progress in completing recommended improvement actions within controls. The score can help an organization to understand its current compliance posture. It also helps organizations to prioritize actions based on their potential to reduce risk.
 
 Admins can get a breakdown of the compliance score in the Compliance Manager overview pane.
 
-:::image type="content" source="../media/5-compliance-score-home-page-inline.png" lightbox="../media/5-compliance-score-home-page-expanded.png" alt-text="A breakdown of compliance score":::
+:::image type="content" source="../media/compliance-score-breakdown-inline.png" lightbox="../media/compliance-score-breakdown-expanded.png" alt-text="Screenshot of the breakdown of the organization's compliance score.":::
 
 ### How to understand the compliance score
 
@@ -28,7 +24,7 @@ The following are subcategories of actions that can be classified as mandatory o
 
 Organizations accumulate points for every action completed. And the compliance score is shown as a percentage representing all the actions completed, compared with the ones outstanding.
 
-:::image type="content" source="../media/5-compliance-score-details-inline.png" lightbox="../media/5-compliance-score-details-expanded.png" alt-text="Example of a compliance score":::
+:::image type="content" source="../media/compliance-score-details-inline.png" lightbox="../media/compliance-score-details-expanded.png" alt-text="Screenshot of an organization's compliance score, including the impact that improvement actions have on the compliance score.":::
 
 ### What is the difference between Compliance Manager and compliance score?
 

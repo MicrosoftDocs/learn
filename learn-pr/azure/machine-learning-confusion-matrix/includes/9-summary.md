@@ -1,4 +1,4 @@
-We’ve spent some time looking at how to improve complex classification models, both with balance data and with imbalanced data. We have explored that we identify issues and improve our models by:
+We’ve spent some time looking at how to improve complex classification models, both with balanced data and with imbalanced data. We've learned that we identify issues and improve our models by:
 
 * Better assessing the kinds of mistakes model is making.
 * Rebalancing our data or altering the way our model is assessed.

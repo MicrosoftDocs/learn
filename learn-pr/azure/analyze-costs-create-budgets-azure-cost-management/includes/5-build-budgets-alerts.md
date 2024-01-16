@@ -12,7 +12,7 @@ Let's create a budget. Select **Add**.
 
 In the **Create budget** window, make sure that the scope shown is correct. Select any filters that you want to add. Filters allow you to create budgets on specific costs, such as resource groups in a subscription or a service like virtual machines. You can apply any filter you can use in cost analysis to a budget.
 
-After you've identified your scope and filters, enter a budget name, then select a monthly, quarterly, or annual budget reset period. This reset period determines the time window that the budget will analyze. The cost evaluated by the budget starts at zero at the beginning of each new period. When you create a quarterly budget, it works in the same way as a monthly budget. The difference is that the budget amount for the quarter is evenly divided among the three months of the quarter. An annual budget amount is evenly divided among all twelve months of the calendar year.
+After you've identified your scope and filters, enter a budget name, then select a monthly, quarterly, or annual budget reset period. This reset period determines the time window that the budget analyzes. The cost evaluated by the budget starts at zero at the beginning of each new period. When you create a quarterly budget, it works in the same way as a monthly budget. The difference is that the budget amount for the quarter is evenly divided among the three months of the quarter. An annual budget amount is evenly divided among all 12 months of the calendar year.
 
 If you have a Pay-As-You-Go, MSDN, or Visual Studio subscription, your invoice billing period might not align to the calendar month. For those subscription types and resource groups, you can create a budget that's aligned to your invoice period or to calendar months. To create a budget aligned to your invoice period, select a reset period of **Billing month**, **Billing quarter**, or **Billing year**. To create a budget aligned to the calendar month, select a reset period of  **Monthly**, **Quarterly**, or **Annually**.
 
@@ -36,7 +36,7 @@ In the preceding example, you created a budget for a subscription. However, you 
 
 ## Action groups for budgets
 
-When you create or edit a budget for a subscription or resource group scope, you can configure it to call an action group. The action group can perform a variety of different actions when your budget threshold is met. In this module's summary, there's a link for more information about action groups for budgets.
+When you create or edit a budget for a subscription or resource group scope, you can configure it to call an action group. The action group can perform various different actions when your budget threshold is met. In this module's summary, there's a link for more information about action groups for budgets.
 
 ## Cost alerts
 
@@ -50,7 +50,7 @@ Previously, you created a budget alert by setting an alert condition for the bud
 
 Budget alerts notify you when spending, based on usage or cost, reaches or exceeds the amount defined in the alert condition of the budget. You can create Cost Management budgets by using the Azure portal or the Azure Consumption API.
 
-In the Azure portal, budgets are defined by cost. Using the Azure Consumption API, budgets are defined by cost or by consumption usage. Budget alerts support both cost-based and usage-based budgets. Budget alerts are generated automatically whenever the budget alert conditions are met. You can view all cost alerts in the Azure portal. Whenever an alert is generated, it appears in cost alerts. An alert email is also sent to the people in the alert recipients list of the budget.
+In the Azure portal, you define your budgets by cost. When Using the Azure Consumption API, you define your budgets by cost or by consumption usage. Budget alerts support both cost-based and usage-based budgets. Budget alerts are generated automatically whenever the budget alert conditions are met. You can view all cost alerts in the Azure portal. Whenever an alert is generated, it appears in cost alerts. An alert email is also sent to the people in the alert recipients list of the budget.
 
 ### Credit alerts
 
@@ -62,7 +62,7 @@ Department spending quota alerts notify you when department spending reaches a f
 
 ### Supported alert features by offer categories
 
-Support for alert types depends on the type of Azure account that you have (Microsoft offer). The following table shows the alert features that are supported by various Microsoft offers.
+Support for alert types depends on the type of Azure account that you have (Microsoft offer). The following table shows the alert features supported by various Microsoft offers.
 
 | **Alert type** | **Enterprise Agreement** | **Microsoft Customer Agreement** | **Web direct/Pay-As-You-Go** |
 | --- | --- | --- | --- |

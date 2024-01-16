@@ -1,6 +1,6 @@
 Let's start with an overview of Azure Data Factory. This should help you determine whether it's a good choice for organizing your data to create business insights.
 
-Azure Data Factory is a cloud-based ETL and data integration service that enables you to create data-driven workflows to:
+Azure Data Factory is a cloud-based ETL and data-integration service that helps you to create data-driven workflows to:
 
 - Orchestrate data movement.
 - Transform data at scale.
@@ -8,7 +8,7 @@ Azure Data Factory is a cloud-based ETL and data integration service that enable
 > [!NOTE]
 > *Data-driven workflows* are also known as pipelines.
 
-By using Azure Data Factory, you can reorganize raw data into meaningful data stores and data lakes. This enables you to make better business decisions.
+By using Azure Data Factory, you can reorganize raw data into meaningful data stores and data lakes. This allows you to make better business decisions.
 
 ## What is data analytics?
 
@@ -28,11 +28,11 @@ Azure provides several technologies that you can implement to help with your org
 - Azure Databricks
 - Azure Machine Learning
 
-You can use some or all of these services, as needed, to analyze your organization's data. However, none of these services addresses data integration. *Data integration* enables you to collect data from multiple sources, and then load this combined data to a location suitable for data analysis. If necessary, you can transform the data during this process. Although you can perform these tasks manually, you could consider using Azure Data Factory.
+You can use some or all of these services, as needed, to analyze your organization's data. However, none of these services addresses data integration. *Data integration* allows you to collect data from multiple sources, then load this combined data to a location suitable for data analysis. If necessary, you can transform the data during this process. Although you can perform these tasks manually, you could consider using Azure Data Factory.
 
 ## Azure Data Factory definition
 
-Azure Data Factory is a cloud-based data integration service that's designed to address the needs of two specific communities, as described in the following table.
+Azure Data Factory is a cloud-based data-integration service that's designed to address the needs of two specific communities, as described in the following table:
 
 | Community                             | Description of community needs                               |
 | ------------------------------------- | ------------------------------------------------------------ |
@@ -62,7 +62,7 @@ By using Azure Data Factory, you can:
 
 In the following graphic, external data sources are connected to Azure Data Factory. A storage blob is used to ingest the data, while Azure Synapse Analytics is used as storage. These elements provide the orchestration. The analysis and visualization components, Azure Analysis Service, and Power BI are also connected to Azure Data Factory.
 
-:::image type="content" source="../media/adf-overview.png" alt-text="A graphic depicting a possible architecture for using Azure Data Factory.":::
+:::image type="content" source="../media/adf-overview.png" alt-text="Graphic depicting a possible architecture for using Azure Data Factory.":::
 
 > [!TIP]
-> Azure Data Factory provides ninety built-in, maintenance-free connectors.
+> Azure Data Factory provides more than 90 built-in, maintenance-free connectors.

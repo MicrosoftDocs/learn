@@ -7,20 +7,20 @@ Use Microsoft Sentinel if you want to:
 
 Security operations could include:
 
-- Visualization of log data.
-- Anomaly detection.
-- Threat hunting.
+- Visualization of log data
+- Anomaly detection
+- Threat hunting
 - Security incident investigation
-- Automated response to alerts and incidents.
+- Automated response to alerts and incidents
 
 Microsoft Sentinel offers other capabilities that could help you decide whether it's the right fit for you:
 
-- Cloud-native SIEM. There are no servers to provision, so scaling is effortless.
-- Integration with the Azure Logic Apps service and its hundreds of connectors.
-- Benefits of Microsoft research and machine learning.
-- Key log sources provided for free.
-- Support for hybrid cloud and on-premises environments.
-- SIEM and a data lake all in one.
+- Cloud-native SIEM: with no servers to provision, scaling is effortless
+- Integration with the Azure Logic Apps service and its hundreds of connectors
+- Benefits of Microsoft research and machine learning
+- Key log sources provided for free
+- Support for hybrid cloud and on-premises environments
+- SIEM and a data lake all in one
 
 When you began investigating Microsoft Sentinel, your organization had some clear requirements:
 

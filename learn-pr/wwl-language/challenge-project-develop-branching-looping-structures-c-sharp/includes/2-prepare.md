@@ -1,5 +1,7 @@
 
 
+
+
 In this challenge project, you'll use Visual Studio Code to develop portions of a C# console application. You'll use boolean expressions, selection statements, and iteration statements to implement the features of a design specification. As you develop the application, you'll need to scope variables at the appropriate level.
 
 ## Project specification
@@ -16,7 +18,7 @@ The Starter code project for this module includes a Program.cs file with the fol
     - A description of the pet's personality.
     - The pet's nickname.
 
-- The code uses a for loop around a select-case construct to populate elements of the ourAnimals array.
+- The code uses a for loop around a switch-case construct to populate elements of the ourAnimals array.
 - The code includes a loop around a main menu that terminates when the user enters "exit". The main menu includes:
 
     1. List all of our current pet information.
@@ -41,15 +43,15 @@ Your goal in this challenge is to create the app features aligned with menu opti
 
 To ensure that animal ages and physical descriptions are complete, your code must:
 
-    - Assign a valid numeric value to petAge for any animal that has been assigned data in the ourAnimals array but has not been assigned an age.
-    - Assign a valid string to petPhysicalDescription for any animal that has been assigned data in the ourAnimals array but has not been assigned a physical description.
-    - Verify that physical descriptions have an assigned value. Assigned values cannot have zero characters. Any further requirement is up to you.
+- Assign a valid numeric value to petAge for any animal that has been assigned data in the ourAnimals array but has not been assigned an age.
+- Assign a valid string to petPhysicalDescription for any animal that has been assigned data in the ourAnimals array but has not been assigned a physical description.
+- Verify that physical descriptions have an assigned value. Assigned values cannot have zero characters. Any further requirement is up to you.
 
 To ensure that animal nicknames and personality descriptions are complete, your code must:
 
-    - Assign a valid string to petNickname for any animal that has been assigned data in the ourAnimals array but has not been assigned a nickname.
-    - Assign a valid string to petPersonalityDescription for any animal that has been assigned data in the ourAnimals array but has not been assigned a personality description.
-    - Verify that nicknames and personality descriptions have an assigned value. Assigned values cannot have zero characters. Any further requirement is up to you.
+- Assign a valid string to petNickname for any animal that has been assigned data in the ourAnimals array but has not been assigned a nickname.
+- Assign a valid string to petPersonalityDescription for any animal that has been assigned data in the ourAnimals array but has not been assigned a personality description.
+- Verify that nicknames and personality descriptions have an assigned value. Assigned values cannot have zero characters. Any further requirement is up to you.
 
 ## Setup
 

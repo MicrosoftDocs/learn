@@ -3,13 +3,17 @@ uid: learn.wwl.configure-azure-load-balancer
 metadata:
   title: Configure Azure Load Balancer
   description: "Configure Azure Load Balancer"
-  ms.date: 02/24/2023
+  ms.date: 11/20/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: load-balancer
 title: Configure Azure Load Balancer
-summary: Learn how to configure an internal or public load balancer.
+summary: |
+  Learn how to configure an internal or public load balancer.
+  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   In this module, you learn how to:
   - Identify features and usage cases for Azure Load Balancer.
@@ -17,7 +21,8 @@ abstract: |
   - Compare features of load balancer SKUs and configuration differences.
   - Configure back-end pools, load-balancing rules, session persistence, and health probes.
 prerequisites: |
-  None
+  - Basic knowledge of virtual networks and routing.
+  - Familiarity with the Azure portal so you can configure the load balancer.
 iconUrl: /training/achievements/azure-load-balancer-configure.svg
 levels:
 - intermediate

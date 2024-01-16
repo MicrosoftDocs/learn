@@ -1,10 +1,10 @@
 Activity log alerts allow you to be notified when a specific event happens on some Azure resource. For example, you can be notified when someone creates a new VM in a subscription. 
 
-An activity log can also include alerts for Azure service health. A company can be notified when service issues or planned maintenance happens on the Azure platform.
+An activity log can also include alerts for Azure service health. A company can get notifications when service issues or planned maintenance happens on the Azure platform.
 
-As an Azure solution architect, you want to explore the capability to monitor selected Azure resources within your subscription. You'll understand how the resources can be used to improve your team's responsiveness and the stability of your systems.
+As an Azure solution architect, you want to explore the capability to monitor selected Azure resources within your subscription. You'll understand how you can use the resources to improve your team's responsiveness and the stability of your systems.
 
-In this unit, you'll explore the two different kinds of activity log alerts. Now that you've seen all the different kinds of alerts you can use in Azure Monitor, you'll see how you can trigger actions for your alerts. Actions might include sending an email, or creating an IT Service Management (ITSM) support ticket.
+In this unit, you'll explore the two different kinds of activity log alerts. Now that you've seen all the different kinds of alerts you can use in Azure Monitor, you'll see how you can trigger actions for your alerts. Actions might include sending an email or creating an IT Service Management (ITSM) support ticket.
 
 ## When to use activity log alerts
 
@@ -32,7 +32,7 @@ Like the previous alerts, activity log alerts have their own attributes:
 - **Operation name**: Operation name
 - **Level**: Verbose, informational, warning, error, or critical
 - **Status**: Started, failed, or succeeded
-- **Event initiated by**: Email address or Azure Active Directory identifier (known as the "caller") for the user
+- **Event initiated by**: Email address or Microsoft Entra identifier (known as the "caller") for the user
 
 ### Create a resource-specific log alert
 
@@ -49,25 +49,3 @@ Service health alerts aren't like all the other alert types you've seen so far i
 :::image type="content" source="../media/6-service-health-alerts.png" alt-text="Screenshot that shows how to create a new service health alert.":::
 
 The only difference is that you no longer need to select a resource, because the alert is for a whole region in Azure. What you can select is the kind of health event on which you want to be alerted. You can select service issues, planned maintenance, health advisories, or choose all of the events. The remaining steps of performing actions and naming the alerts are the same.
-
-## Perform actions when an alert happens
-
-![Screenshot of the robot icon used to represent actions when you're creating an alert.](../media/6-actions.png)
-
-When any event is triggered, you can create an associated action in an action group. Action groups allow you to define actions that will be run. You can run one or more actions for each triggered alert.
-
-The available actions are:
-
-- Send an email
-- Send an SMS message
-- Create an Azure app push notification
-- Make a voice call to a number
-- Call an Azure function
-- Trigger a logic app
-- Send a notification to a webhook
-- Create an ITSM ticket
-- Use a runbook (to restart a VM, or scale a VM up or down)
-
-You can also reuse action groups on multiple alerts after you've created them. For example, after you've created an action to email your company's operations team, you can add that action group to all the service health events.
-
-You can add or create action groups at the same time that you create your alert. You can also edit an existing alert to add an action group after you've created it.

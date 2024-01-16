@@ -6,8 +6,7 @@ metadata:
   ms.date: 12/07/2021
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'AZ-204: Develop solutions that use Blob storage'
 prerequisites: |
   * At least one year of experience developing scalable solutions through all phases of software development.

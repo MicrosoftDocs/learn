@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.machine-learning-azure-databricks.prepare-data-for-machine-learning
+title: Prepare data for machine learning
+metadata:
+  title: Prepare data for machine learning
+  description: "Prepare data for machine learning"
+  ms.date: 08/29/2023
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-prepare-data-for-machine-learning.md)]

@@ -2,9 +2,9 @@ Following successful Arc-enablement of Wide World Importers' thousands of server
 
 ## Organize Azure Arc-enabled servers
 
-Ensure machines are tagged and associated with Log Analytics workspaces to ensure organized within Azure. 
+You need to make sure machines are tagged and associated with Log Analytics workspaces to ensure they're organized within Azure.
 
-As Azure resources, Arc-enabled servers can be tagged for organization. Evaluate and develop an IT-aligned tagging strategy that can help reduce the complexity of managing your Azure Arc-enabled servers and simplify making management decisions.
+As Azure resources, Arc-enabled servers can be tagged for organization. You should evaluate and develop an IT-aligned tagging strategy that can help reduce the complexity of managing your Azure Arc-enabled servers and simplify making management decisions.
 
 Arc-enabled servers can be monitored through Azure Monitor or Log Analytics. Evaluate design and deployment considerations to determine if your organization should use an existing or implement another Log Analytics workspace to store collected log data from hybrid servers and machines. Consider setting up workspaces tied to Microsoft Sentinel for security and threat intelligence applications.
 
@@ -20,9 +20,9 @@ Create a Resource Health alert to alert when an Arc-enabled Server is no longer 
 
 ## Manage the Connected Machine agent
 
-After initial deployment of the Azure Arc-enabled servers Connected Machine agent for Windows or Linux, you may need to reconfigure the agent, upgrade it, or remove it from the computer. You can easily manage these routine maintenance tasks manually or through automation, which reduces both operational error and expenses.
+After initial deployment of the Azure Arc-enabled servers Connected Machine agent for Windows or Linux, you might need to reconfigure the agent, upgrade it, or remove it from the computer. You can easily manage these routine maintenance tasks manually or through automation, which reduces both operational error and expense.
 
-For the best experience and most recent security and bug fixes, we recommend keeping the Azure Arc-enabled servers' agent up to date. Out-of-date agents will be identified with an Azure Advisor alert. Specify the following setting when configuring the alert:
+For the best experience and most recent security and bug fixes, we recommend keeping the Azure Arc-enabled servers' agent up to date. Out-of-date agents are identified with an Azure Advisor alert. Specify the following setting when configuring the alert:
 
 - **Recommendation type = Upgrade to the latest version of the Azure Connected Machine agent**
 
@@ -32,6 +32,6 @@ As a foundation for managing Azure Arc-enabled servers, we recommend organizing 
 
 | Recommendation | Description |
 |---|---|
-| Apply tags to help organize machines | Evaluate and develop an IT-aligned tagging strategy that can help reduce the complexity of managing your Azure Arc-enabled servers and simplify making management decisions.	
-| Design and deploy Azure Monitor Logs | 	Evaluate design and deployment considerations to determine if your organization should use an existing or implement another Log Analytics workspace to store collected log data from hybrid servers and machines.
-| Develop an Azure Policy governance plan	 | Determine how you'll implement governance of hybrid servers and machines at the subscription or resource group scope with Azure Policy.
+| Apply tags to help organize machines | Evaluate and develop an IT-aligned tagging strategy that can help reduce the complexity of managing your Azure Arc-enabled servers and simplify making management decisions. |
+| Design and deploy Azure Monitor Logs | Evaluate design and deployment considerations to determine if your organization should use an existing or implement another Log Analytics workspace to store collected log data from hybrid servers and machines. |
+| Develop an Azure Policy governance plan | Determine how you'll implement governance of hybrid servers and machines at the subscription or resource group scope with Azure Policy. |

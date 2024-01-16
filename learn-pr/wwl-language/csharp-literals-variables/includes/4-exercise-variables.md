@@ -1,5 +1,6 @@
 
 
+
 Because variables are temporary storage containers for data, they're meant to be *written to* and *read from*. You'll get a chance to do both in the following exercise.
 
 ## Exercise - Working with variables
@@ -19,7 +20,8 @@ In this exercise, you'll declare a variable, assign it a value, retrieve its val
 
 To declare a variable, you enter the data type you want to use followed by a name for the variable. To assign a value to a variable, you use the *assignment operator*, which is a single equals character `=`.
 
-Assigning a value is also referred to as "setting the variable", or simply, a "set" operation.
+> [!NOTE]
+> Assigning a value is also referred to as "setting the variable", or simply, a "set" operation.
 
 ### Improperly assign a value to a variable
 

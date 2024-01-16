@@ -1,6 +1,6 @@
-You examined methods to create chat bots on your company's website and social-networking sites. These chat bots can help increase customer engagement and more effectively support your company’s customers. 
+In this module, you examined methods to create chat bots on your company's website and social-networking sites. These chat bots can help increase customer engagement and more effectively support your company’s customers. 
 
-You learned about the components and capabilities of the Azure Bot Service. You also discovered how the Azure Bot Service components work together to provide bot functionality in Azure. When to use Bot Framework Composer and Bot Framework SDK was another learning point. After considering the options, you believe Azure Bot Service and Azure Bot Framework Composer are the tools your company should use to create automated bots.
+You learned about the components and capabilities of the Azure Bot Service. You also discovered how the Azure Bot Service components work together to provide bot functionality in Azure, and when to use Bot Framework Composer and Bot Framework SDK was another learning point. After considering the options, you believe Azure Bot Service and Azure Bot Framework Composer are the tools your company should use to create automated bots.
 
 ## Further learning links
 

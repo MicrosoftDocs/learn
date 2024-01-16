@@ -58,7 +58,7 @@ Entities are data you want to pull from utterances, such as names, dates, produc
 
 ## Use LUIS in a chat bot
 
-After you define the entities and intents with sample utterances in your LUIS app, you can train a language model to predict intents and entities from user input, even if it doesn't match the sample utterances exactly. You can then train the model and publish it to the LUIS natural language processing endpoint API so that a client application can use it to retrieve predictions and respond appropriately whenever a request is made by the user. Learn more about the [LUIS API](https://go.microsoft.com/fwlink/?linkid=2092356).
+After you define the entities and intents with sample utterances in your LUIS app, you can train a language model to predict intents and entities from user input, even if it doesn't match the sample utterances exactly. You can then train the model and publish it to the LUIS natural language processing endpoint API. A client application can then use it to retrieve predictions and respond appropriately whenever a request is made by the user. Learn more about the [LUIS API](https://go.microsoft.com/fwlink/?linkid=2092356).
 
 A common client application for LUIS is a health bot. The LUIS app provides intelligence so that the client application can make smart choices. LUIS doesn't provide those choices.
 

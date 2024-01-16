@@ -21,7 +21,7 @@ Let's examine the configuration details and functionality of the IP flow verify 
 
 ### Things to consider when using IP flow verify
 
-The IP flow verify feature is ideal for helping to ensure correction application of your security rules. 
+The IP flow verify feature is ideal for helping to ensure correct application of your security rules. 
 
 When you deploy a virtual machine, Azure applies several default security rules to your machine. The security rules allow or deny traffic to or from your virtual machine. You can override Azure's default rules or create other rules.
 

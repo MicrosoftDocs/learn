@@ -3,12 +3,13 @@ You've been tasked with adding a content delivery network, or CDN, to your compa
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Add a module for your application.
-> * Create a Bicep template that uses the module.
-> * Add another module for the CDN.
-> * Add the CDN module to your template, while making it optional.
-> * Deploy the template to Azure.
-> * Review the deployment history.
+>
+> - Add a module for your application.
+> - Create a Bicep template that uses the module.
+> - Add another module for the CDN.
+> - Add the CDN module to your template, while making it optional.
+> - Deploy the template to Azure.
+> - Review the deployment history.
 
 [!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
@@ -16,17 +17,17 @@ During the process, you'll:
 
 1. Open Visual Studio Code.
 
-1. Create a new file called *main.bicep*.
+1. Create a new file called _main.bicep_.
 
-1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
- 
-   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> on Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you save the file. For example, you might want to create a *templates* folder to save it in.
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling.
+
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> on Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you save the file. For example, you might want to create a _templates_ folder to save it in.
 
 ## Create a module for your application
 
-1. Create a new folder called *modules* in the same folder where you created your *main.bicep* file. In the *modules* folder, create a file called *app.bicep*. Save the file.
+1. Create a new folder called _modules_ in the same folder where you created your _main.bicep_ file. In the _modules_ folder, create a file called _app.bicep_. Save the file.
 
-1. Add the following content into the *app.bicep* file:
+1. Add the following content into the _app.bicep_ file:
 
    :::code language="bicep" source="code/4-app.bicep" :::
 
@@ -36,9 +37,9 @@ During the process, you'll:
 
 ## Add the module to your Bicep template
 
-Here, you add the *app* module to your Bicep template as a starting point.
+Here, you add the _app_ module to your Bicep template as a starting point.
 
-1. Open the *main.bicep* file.
+1. Open the _main.bicep_ file.
 
 1. Add the following parameters and variable to the file:
 
@@ -52,7 +53,7 @@ Here, you add the *app* module to your Bicep template as a starting point.
 
    :::code language="bicep" source="code/4-template-1.bicep" range="12" :::
 
-   As you type, notice that the Bicep extension for Visual Studio Code helps you to scaffold the module declaration. When you type the path to your module and type the `=` character, a pop-up menu appears with several options.
+   As you type, notice that the Bicep extension for Visual Studio Code helps you to scaffold the module declaration. When you type the path to your module and type the equals (`=`) character, a pop-up menu appears with several options.
 
 1. Select **Required properties** from the pop-up menu:
 
@@ -70,9 +71,9 @@ Here, you add the *app* module to your Bicep template as a starting point.
 
 ## Create a module for the content delivery network
 
-1. In the *modules* folder, create a file called *cdn.bicep*. Save the file.
+1. In the _modules_ folder, create a file called _cdn.bicep_. Save the file.
 
-1. Add the following content into the *cdn.bicep* file:
+1. Add the following content into the _cdn.bicep_ file:
 
    :::code language="bicep" source="code/4-cdn.bicep" :::
 
@@ -82,7 +83,7 @@ Here, you add the *app* module to your Bicep template as a starting point.
 
 ## Add the modules to the main Bicep template
 
-1. Open the *main.bicep* file.
+1. Open the _main.bicep_ file.
 
 1. Below the `appServicePlanSkuName` parameter, add the following parameter:
 
@@ -134,9 +135,9 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
 ## Review the deployment history
 
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription:
+1. Go to the [Azure portal](https://portal.azure.com) and make sure you're in the sandbox subscription:
 
-   1. Select your avatar in the upper-right corner of the page. 
+   1. Select your avatar in the upper-right corner of the page.
    1. Select **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
 
 1. On the left-side panel, select **Resource groups**.
@@ -167,7 +168,7 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
 1. Select the copy button for the `appServiceAppHostName` output.
 
-1. On a new browser tab, try to go to the address that you copied in the previous step.
+1. On a new browser tab, try to go to the address that you copied in the previous step. The address should begin with `https://`.
 
    :::image type="content" source="../media/4-web-app.png" alt-text="Screenshot of the web app's welcome page, with the address bar showing the App Service host name." :::
 
@@ -179,7 +180,7 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
 1. On a new browser tab, try to go to the host name that you copied in the previous step. Add `https://` to the start of the address.
 
-   CDN endpoints take a few minutes to become active. If you get a "Page not found" error, wait a few minutes and try pasting the link again. Also, ensure that you added `https://` to the start of the URL so that you're using HTTPS.
+   CDN endpoints take a few minutes to become active. If you get a _Page not found_ error, wait a few minutes and try pasting the link again. Also, ensure that you added `https://` to the start of the URL so that you're using HTTPS.
 
    When the CDN endpoint is active, you'll get the same App Service welcome page. This time, it has been served through the Azure Content Delivery Network service, which helps improve the website's performance.
 

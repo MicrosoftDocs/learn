@@ -2,14 +2,15 @@
 uid: learn.cloud-adoption-framework-strategy
 metadata:
   title: Prepare for successful cloud adoption with a well-defined strategy
-  description: Success in cloud adoption depends on having a clear strategy that helps a team understand executive direction and regularly measure progress. This module will help you capture the cloud adoption strategy you need to drive your success.
-  ms.date: 04/25/2022
-  author: BrianBlanchard
-  ms.author: brblanch
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Success in cloud adoption depends on having a clear strategy that helps a team understand executive direction and regularly measure progress. This module helps you capture the cloud adoption strategy you need to drive your success.
+  ms.date: 10/10/2023
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: module
+  ms.service: caf
+  ms.subservice: caf-methodology-strategy
 title: Prepare for successful cloud adoption with a well-defined strategy
-summary: All great efforts start with a simple question&#58; <i>Why?</i> Digital transformation is disrupting entire industries. Some organizations embrace transformation and reshape their futures. Others use transformation to improve margins and hold onto existing market share. Success in cloud adoption depends on having a clear strategy that helps a team understand executive direction and regularly measure progress. This module will help you capture the cloud adoption strategy you need to drive your success.
+summary: Success in cloud adoption depends on having a clear strategy that helps a team understand executive direction and regularly measure progress. This module helps you capture the cloud adoption strategy you need to drive your success.
 abstract: |
   In this module, you will:
   - Create clarity for a corporate strategy to ensure that all team members are working toward common goals. 
@@ -19,7 +20,7 @@ abstract: |
   - Evaluate technical considerations to help the team prepare for successful cloud adoption projects.
 prerequisites: | 
   - Foundational understanding of cloud adoption.
-  - Willingness to pursue more learning about the business and financial terminology you'll be introduced to in this module.  
+  - Willingness to pursue more learning about the business and financial terminology you're introduced to in this module.  
 iconUrl: /training/achievements/cloud-adoption-framework-strategy.svg
 ratingEnabled: true
 levels:

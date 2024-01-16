@@ -1,3 +1,4 @@
+
 Before you can start synchronizing files with Azure File Sync, there are several high-level steps that need to be completed.
 
 :::image type="content" source="../media/file-sync-steps-b6fa9fd9.png" alt-text="Flowchart that shows the steps to complete before you start synchronizing files with Azure File Sync." border="false":::
@@ -19,7 +20,7 @@ After you deploy the Storage Sync Service, you configure each Windows Server or 
 When the Windows Server configuration is complete, you're ready to install the Azure File Sync agent. The agent is a downloadable package that enables Windows Server to be synced with an Azure Files share. The Azure File Sync agent installation package should install relatively quickly.
 
 > [!Note]
-> For the agent installation, Microsoft recommends using the default installation path. Also enable Microsoft Update to ensure your severs are running the latest version of Azure File Sync.
+> For the agent installation, Microsoft recommends using the default installation path. Also enable Microsoft Update to ensure your servers are running the latest version of Azure File Sync.
 
 ### Step 4: Register each Windows Server with the Storage Sync Service
 

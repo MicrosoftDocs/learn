@@ -4,11 +4,10 @@ title: Use the WAImportExport tool
 metadata:
   title: Use the WAImportExport tool
   description: "Use the WAImportExport tool"
-  ms.date: 02/07/2023
+  ms.date: 04/06/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 2

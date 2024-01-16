@@ -2,7 +2,7 @@ Now we have a smart contract. We've successfully deployed it to our development 
 
 ## Exercise overview
 
-For this tutorial, we'll deploy to Ropsten by using MetaMask with test ether. The deployment process requires setting up an [Infura](http://www.infura.io/?azure-portal=true) account to connect and deploy to the Ropsten testnet. After we deploy, we can use [Ropsten Testnet Explorer](https://ropsten.etherscan.io/?azure-portal=true) to inspect the blocks that have been deployed to the testnet.
+For this tutorial, we'll deploy to Ropsten by using MetaMask with test ether. The deployment process requires setting up an [Infura](http://www.infura.io/?azure-portal=true) account to connect and deploy to the Ropsten testnet. After we deploy, we can use Ropsten Testnet Explorer to inspect the blocks that have been deployed to the testnet.
 
 ## Exercise setup
 
@@ -17,7 +17,7 @@ If you haven't done so already, [install and set up MetaMask](https://metamask.i
 
 ### Add ether to the MetaMask Ropsten test network
 
-Use your MetaMask account to connect to the Ropsten test network. Begin by getting test ether from the [Ropsten Test Faucet](https://faucet.ropsten.be?azure-portal=true):
+Use your MetaMask account to connect to the Ropsten test network. Begin by getting test ether from the Ropsten Test Faucet:
 
 1. Open MetaMask.
 1. Connect to Ropsten.
@@ -25,7 +25,7 @@ Use your MetaMask account to connect to the Ropsten test network. Begin by getti
 
     :::image type="content" source="../media/metamask-0-ether-connect.png" alt-text="Screenshot showing the MetaMask browser extension where you can copy the account address.":::
 
-1. Open a browser window or tab, and go to the [Ropsten faucet](https://faucet.ropsten.be/?azure-portal=true).
+1. Open a browser window or tab, and go to the Ropsten faucet.
 1. To request ether, enter your testnet account address and then select **Send me test Ether**.
 
     :::image type="content" source="../media/ropsten-test-faucet-request-ether.png" alt-text="Screenshot showing how to request test ether on the Ropsten faucet.":::
@@ -214,7 +214,7 @@ Check MetaMask to verify that ether was used to deploy the contract.
 
 ### Verify in Ropsten Etherscan
 
-In [Ropsten Etherscan](https://ropsten.etherscan.io?azure-portal=true), enter the contract address. Then inspect your contract.
+In Ropsten Etherscan, enter the contract address. Then inspect your contract.
 
 :::image type="content" source="../media/ropsten-etherscan-with-deployed-contract.png" alt-text="Screenshot showing the contract deployed in Etherscan.":::
 

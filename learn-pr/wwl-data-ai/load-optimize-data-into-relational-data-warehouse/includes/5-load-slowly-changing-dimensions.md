@@ -1,5 +1,3 @@
-
-
 In most relational data warehouses, you need to handle updates to dimension data and support what are commonly referred to as *slowly changing dimensions* (SCDs).
 
 ## Types of slowly changing dimension
@@ -59,7 +57,7 @@ SELECT stg.*
 FROM dbo.StageCustomers AS stg
 JOIN dbo.DimCustomer AS dim
 ON stg.CustNo = dim.CustomerAltKey
-AND stg.StreeetAddress <> dim.StreetAddress;
+AND stg.StreetAddress <> dim.StreetAddress;
 
 ```
 

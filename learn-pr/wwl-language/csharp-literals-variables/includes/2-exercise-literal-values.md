@@ -1,5 +1,6 @@
 
 
+
 In this exercise, you'll print messages containing other types of data and learn why data types are so important in C#.
 
 ## What is a literal value?

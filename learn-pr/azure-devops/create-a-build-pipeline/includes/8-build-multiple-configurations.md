@@ -2,6 +2,9 @@ In the previous exercises, you implemented a pipeline that builds the *Space Gam
 
 In this exercise, you'll use a template to define build tasks that can build any configuration defined in the project file. Templates let you define your logic one time and then reuse it several times. Templates combine the content of multiple YAML files into a single pipeline.
 
+> [!TIP]
+> This step in the module is optional. If you don't want to learn about templates at this time, proceed to the next step, [Clean up your Azure DevOps environment](../9-clean-up-environment.yml). For more information about templates, see [Template types & usage](/azure/devops/pipelines/process/templates).
+
 Let's begin by checking in with Mara and Amita.
 
 ## The demo
@@ -71,17 +74,22 @@ You'll now call the template that you just built from the pipeline. You'll do so
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* as you see here:
 
-    [!code-yml[](code/8-azure-pipelines.yml?highlight=41-43, 45-47)]
+    ::: zone pivot="ms-hosted-agents"
+    [!code-yml[](code/8-azure-pipelines.yml?highlight=39-45)]
+    ::: zone-end
 
-    This file looks like the original, except that it replaces the build and publishes tasks with calls to the template that does the same tasks.
+    ::: zone pivot="github-codespaces-agent"
+    [!code-yml[](code/8-codespaces-azure-pipelines.yml?highlight=39-45)]
+    ::: zone-end
+
+    This file looks like the original, except that it replaces the build and publish tasks with calls to the template that does the same tasks.
 
     You'll see that the template is called one time for each configuration. To pass the configuration name to the template, each `template` task uses the `parameters` argument.
-
 ## Run the pipeline
 
 You'll now push your changes to GitHub and see the pipeline run.
 
-1. From the integrated terminal, add *azure-pipelines.yml* and **templates/build.yml** to the index, commit the changes, and push the changes up to GitHub.
+1. From the integrated terminal, add **azure-pipelines.yml** and **templates/build.yml** to the index, commit the changes, and push the changes up to GitHub.
 
     ```bash
     git add azure-pipelines.yml templates/build.yml

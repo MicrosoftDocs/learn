@@ -6,7 +6,7 @@ Selecting the appropriate disk type and performance-scaling option can significa
 
 To learn more, see the following articles:
 
-- [What disk types are available in Azure?](/azure/virtual-machines/disks-types)
+- [Azure managed disk types](/azure/virtual-machines/disks-types)
 - [Virtual machine and disk performance](/azure/virtual-machines/disks-performance)
 - [Managed disk bursting](/azure/virtual-machines/disk-bursting)
 - [Performance tiers for Azure managed disks](/azure/virtual-machines/disks-change-performance)

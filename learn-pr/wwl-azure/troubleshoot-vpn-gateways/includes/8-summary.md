@@ -1,3 +1,4 @@
+
 Having completed this module, you now have a better understanding of how Log Analytics and alerts can help highlight issues before they become a problem. You know about the different gateways, and when to reset them. Also, you understand the tools available, and why some key issues can cause problems with certificate-based VPN connections.
 
 Now you’ve completed this module, you should be able to:
@@ -46,6 +47,6 @@ Use these resources to discover more about the topics covered.
 
 [Troubleshoot Point-to-Site connections: macOS X clients - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/vpn-gateway-troubleshoot-point-to-site-osx-ikev2)
 
-[Troubleshoot Point-to-Site VPN clients - Azure AD authentication - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/troubleshoot-ad-vpn-client)
+[Troubleshoot Point-to-Site VPN clients - Microsoft Entra authentication - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/troubleshoot-ad-vpn-client)
 
 [Troubleshoot Azure point-to-site connection problems - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/vpn-gateway-troubleshoot-vpn-point-to-site-connection-problems)

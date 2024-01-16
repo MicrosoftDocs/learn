@@ -39,7 +39,7 @@ In its simplest structure, a template has the following elements:
 If you're using Visual Studio Code with the Azure Resource Manager tools extension, use the latest version for resource group deployments:
 `https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#`
 
-Other editors (including Visual Studio) may not be able to process this schema. For those editors, use:
+Other editors (including Visual Studio) might not be able to process this schema. For those editors, use:
 `https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#`
 
 For subscription deployments, use:
@@ -71,15 +71,17 @@ For tenant deployments, use:
     No
   :::column-end:::
   :::column:::
-    An API version that serves as a collection of API versions for resource types. Use this value to avoid having to specify API versions for each resource in the template. When you specify an API profile version and don't specify an API version for the resource type, Resource Manager uses the API version for that resource type that is defined in the profile.
+    An API version that serves as a collection of API versions for resource types. Use this value to avoid having to specify API versions for each resource in the template. When you specify an API profile version and don't specify an API version for the resource type, Resource Manager uses the API version for that resource type that's defined in the profile.
 
 The API profile property is especially helpful when deploying a template to different environments, such as Azure Stack and global Azure. Use the API profile version to make sure your template automatically uses versions that are supported in both environments. For a list of the current API profile versions and the resources API versions defined in the profile, see [API Profile](https://github.com/Azure/azure-rest-api-specs/tree/master/profile).
+
+For more information, see [Track versions using API profiles](/azure/azure-resource-manager/templates/template-cloud-consistency#track-versions-using-api-profiles).
 
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    parameters
+    [parameters](/azure/azure-resource-manager/templates/syntax#parameters)
   :::column-end:::
   :::column:::
     No
@@ -90,7 +92,7 @@ The API profile property is especially helpful when deploying a template to diff
 :::row-end:::
 :::row:::
   :::column:::
-    variables
+    [variables](/azure/azure-resource-manager/templates/syntax#variables)
   :::column-end:::
   :::column:::
     No
@@ -101,7 +103,7 @@ The API profile property is especially helpful when deploying a template to diff
 :::row-end:::
 :::row:::
   :::column:::
-    functions
+    [functions](/azure/azure-resource-manager/templates/syntax#functions)
   :::column-end:::
   :::column:::
     No
@@ -112,7 +114,7 @@ The API profile property is especially helpful when deploying a template to diff
 :::row-end:::
 :::row:::
   :::column:::
-    resources
+    [resources](/azure/azure-resource-manager/templates/syntax#resources)
   :::column-end:::
   :::column:::
     Yes
@@ -123,7 +125,7 @@ The API profile property is especially helpful when deploying a template to diff
 :::row-end:::
 :::row:::
   :::column:::
-    outputs
+    [outputs](/azure/azure-resource-manager/templates/syntax#outputs)
   :::column-end:::
   :::column:::
     No
@@ -136,3 +138,4 @@ The API profile property is especially helpful when deploying a template to diff
 ## Optional demo
 
 - [Demonstration: Explore QuickStart templates](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-explore-quickstart-templates.md)
+

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware.security-updates
+title: Security updates
+metadata:
+  title: Security updates
+  description: "Learn how to design solutions for security updates."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-security-updates.md)]

@@ -5,10 +5,9 @@ metadata:
   title: What is Azure File Sync?
   description: Explore what Azure File Sync is, how it works, and what you need to do to support it.
   ms.date: 05/18/2020
-  author: roygara
-  ms.author: rogarana
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: khdownie
+  ms.author: kendownie
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/2-azure-file-sync.md)]

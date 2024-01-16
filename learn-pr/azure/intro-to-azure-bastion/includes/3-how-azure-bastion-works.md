@@ -1,4 +1,4 @@
-RDP and SSH are often the primary means used to connect to remote IaaS VMs, but exposing these management ports to the internet poses significant security risks. In this unit, we'll describe how you can connect securely with these protocols by deploying Azure Bastion at the public side of your perimeter network. In this unit, you'll learn about:
+RDP and SSH are often the primary means used to connect to remote IaaS VMs, but exposing these management ports to the internet poses significant security risks. In this unit, we describe how you can connect securely with these protocols by deploying Azure Bastion at the public side of your perimeter network. In this unit, you learn about:
 
 - The Azure Bastion architecture.
 - How Azure Bastion provides secure RDP/SSH connections to hosted VMs.
@@ -11,7 +11,7 @@ The following diagram depicts the architecture of a typical Azure Bastion deploy
 - Azure Bastion is deployed in a virtual network that contains several Azure VMs.
 - NSGs protect the subnets in the virtual network.
 - The NSG protecting the VM subnet allows RDP and SSH traffic from the Azure Bastion subnet.
-- Azure Bastion supports communications only through TCP port **443** from the Azure portal.
+- Azure Bastion supports communications only through TCP port **443** from the Azure portal or via native client (not shown).
 
 :::image type="content" source="../media/bastion-architecture.png" alt-text="The architecture of Azure Bastion, as described in the preceding text.":::
 

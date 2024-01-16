@@ -6,7 +6,7 @@ One of those useful tools is called a *notebook*. A notebook is an interactive e
 
 Suppose you are a crew member on a spaceship. Your mission is to deliver some important equipment to the International Space Station (ISS). If you're not familiar with some of the many buttons on the spaceship's console, it's better not to learn by the trial-and-error method, mid-flight! Instead, you might consult the ship's documentation to learn what buttons to push to perform various tasks. But what if the manual is incomplete?
 
-Your job is to improve the ship's log by creating interactive explanations of the ship's controls. By working with a notebook, you can more easily explain the uses of the various parts of the console.
+Your job is to improve the ship's manual by creating interactive explanations of the ship's controls. By working with a notebook, you can more easily explain the uses of the various parts of the console.
 
 ## What will you learn?
 

@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-aspnet-core-identity.introduction
+uid: learn.secure-aspnet-core-identity.1-introduction
 metadata:
   title: Introduction
-  description: Introduction
-  ms.date: 03/16/2022
+  description: Learn how to use ASP.NET Core Identity to support authentication and authorization in an ASP.NET Core Razor Pages web app.
+  ms.date: 05/19/2023
   author: camsoper
   ms.author: casoper
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.manager: markl
+  ms.topic: unit
 title: Introduction
 durationInMinutes: 1
 content: |

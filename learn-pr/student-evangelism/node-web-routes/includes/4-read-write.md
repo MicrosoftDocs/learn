@@ -1,4 +1,4 @@
-So far, you've seen examples of requests made toward a web application when the client wants to read data. However, you'll likely want to write data too. 
+So far, you've seen examples of requests made toward a web application when the client wants to read data. However, you likely want to write data too. 
 
 To write data, use an HTTP verb that matches your intention. Because incoming data can have various forms, configure your Express application to match how the data arrives to your app:
 

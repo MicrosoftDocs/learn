@@ -62,7 +62,7 @@ The name of the function app that you create in Azure Functions must be unique a
       --runtime python \
       --name $FUNCTION_APP_NAME \
       --storage-account $STORAGE_ACCOUNT_NAME \
-      --functions-version 3
+      --functions-version 4
     ```
 
     > [!NOTE]

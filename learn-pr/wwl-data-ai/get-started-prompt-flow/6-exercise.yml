@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.get-started-prompt-flow.exercise
+title: Exercise - Explore LLM apps with prompt flow
+metadata:
+  title: Exercise - Explore LLM apps with prompt flow
+  description: "Exercise to explore large language model (LLM) apps with Azure Machine Learning's prompt flow."
+  ms.date: 11/30/2023
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise.md)]

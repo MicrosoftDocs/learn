@@ -8,7 +8,7 @@ The following considerations apply:
 - When you use this architecture, you need to monitor the status closely, and try to keep the active DBMS and SAP Central Services instances in the same zone as your deployed application layer. If there's a failover of SAP Central Service or the DBMS instance, you want to make sure that you can manually fail back into the zone with the SAP application layer deployed as quickly as possible.
 - You should have production application instances pre-installed in the VMs that run the active QA application instances.
 - If there's a zone failure, shut down the QA application instances and start the production instances instead. You need to use virtual names for the application instances to make this work.
-- For the load balancers of the failover clusters of SAP Central Services and the DBMS layer, you need to use the Standard SKU Azure load balancer. The Basic load balancer won't work across zones.
+- For the load balancers of the failover clusters of SAP Central Services and the DBMS layer, you need to use the Standard SKU Azure load balancer. The Basic load balancer doesn't work across zones.
 - The Azure virtual network that you deployed to host the SAP system, together with its subnets, is stretched across zones. You don't need separate virtual networks for each zone.
 - For all virtual machines you deploy, you need to use Azure Managed Disks. Unmanaged disks aren't supported for zonal deployments.
 - Azure Premium Storage and Ultra SSD storage don't support any type of storage replication across zones. The application (DBMS or SAP Central Services) must replicate important data.

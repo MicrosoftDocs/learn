@@ -6,8 +6,8 @@ metadata:
   ms.date: 08/01/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: virtual-desktop
 title: Design the Azure Virtual Desktop architecture
 summary: Azure Virtual Desktop design requires that you assess network capacity and speed requirements,  select a load-balancing method for your Azure Virtual Desktop deployment, and choose the right Windows Desktop client.
 abstract: |

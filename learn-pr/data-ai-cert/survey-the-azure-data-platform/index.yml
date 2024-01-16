@@ -3,11 +3,10 @@ uid: learn.data-ai.survey-the-azure-data-platform
 metadata:
   title: Survey the services on the Microsoft Intelligent Data Platform
   description: "Explore the broad array of Azure technologies that analyze text or images and relational, nonrelational, or streaming data."
-  ms.date: 11/10/2022
+  ms.date: 04/19/2023
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Survey the services on the Microsoft Intelligent Data Platform
 summary: Learn about Azure technologies that analyze text and images and relational, nonrelational, or streaming data. See how data engineers can choose the technologies that meet their business needs and scale to meet demand securely.
 abstract: |

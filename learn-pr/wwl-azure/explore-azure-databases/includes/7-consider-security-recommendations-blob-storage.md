@@ -11,15 +11,15 @@
 
 ## Identity and access management
 
-- Use Azure Active Directory (Azure AD) to authorize access to blob data.
-- Keep in mind the principle of least privilege when assigning permissions to an Azure AD security principle via Azure RBAC.
+- Use Microsoft Entra ID to authorize access to blob data.
+- Keep in mind the principle of least privilege when assigning permissions to a Microsoft Entra security principle via Azure RBAC.
 - Use a user delegation SAS to grant limited access to blob data to clients.
 - Secure your account access keys with Azure Key Vault.
 - Regenerate your account keys periodically.
 - Disallow Shared Key authorization.
-- Keep in mind the principal of least privilege when assigning permissions to a SAS.
+- Keep in mind the principle of least privilege when assigning permissions to a SAS.
 - Have a revocation plan in place for any SAS that you issue to clients.
-- If a service SAS is not associated with a stored access policy, then set the expiry time to one hour or less.
+- If a service SAS isn't associated with a stored access policy, then set the expiry time to one hour or less.
 - Disable anonymous public read access to containers and blobs.
 
 ## Networking

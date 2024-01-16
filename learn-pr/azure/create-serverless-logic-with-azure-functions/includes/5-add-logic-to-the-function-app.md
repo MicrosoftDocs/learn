@@ -10,21 +10,19 @@ First, we need to define some requirements for our logic:
 
 ## Add a function to your function app
 
-As we described in the preceding unit, Azure provides templates that help you build functions. In this unit, we'll use the `HttpTrigger` template to implement the temperature service.
+As we described in the preceding unit, Azure provides templates that help you build functions. In this unit, you use the `HttpTrigger` template to implement the temperature service.
 
 1. In the previous exercise, you deployed your function app and opened it. If it isn't already open, you can open it from the Home page by selecting **All resources**, and then selecting your function app, named something like **escalator-functions-xxx**.
 
-1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears. This lists any functions you defined for your function app.
-
-1. In the command bar, select **Create**. The **Create function** pane appears.
+1. On the Function App screen under the **Functions** tab, select **Create in Azure portal**. The **Create function** pane appears.
 
 1. Under **Select a template**, select *HTTP trigger*.
 
 ::: zone pivot="javascript"
 
-5. Select **Create**. The **HttpTrigger1** is created and displays in the **HttpTrigger1** Function pane.
+4. Select **Create**. The **HttpTrigger1** is created and displays in the **HttpTrigger1** Function pane.
 
-1. In the Developer menu on the left, select **Code + Test**. The code editor opens, displaying the contents of the *index.js* code file for your function. The default code that the HTTP template generated appears in the following snippet.
+5. In the Developer menu on the left, select **Code + Test**. The code editor opens, displaying the contents of the *index.js* code file for your function. The default code that the HTTP template generated appears in the following snippet.
 
     ```javascript
     module.exports = async function (context, req) {
@@ -68,15 +66,15 @@ As we described in the preceding unit, Azure provides templates that help you bu
     }
     ```
 
-    This configuration file declares that the function runs when it receives an HTTP request. The output binding declares that the response will be sent as an HTTP response.
+    This configuration file declares that the function runs when it receives an HTTP request. The output binding declares that the response is sent as an HTTP response.
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-5. In the **Template details** section, in the **New Function** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and then select **Create** to create the function. The Overview pane for your *DriveGearTemperatureService* Function appears.
+4. In the **Template details** section, in the **New Function** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and then select **Create** to create the function. The Overview pane for your *DriveGearTemperatureService* Function appears.
 
-1. In the Function menu, select **Code + Test**. The code editor opens with the contents of the *run.ps1* code file. The default code that the template generated for us is listed in the following snippet.
+5. In the Function menu, select **Code + Test**. The code editor opens with the contents of the *run.ps1* code file. The default code that the template generated for us is listed in the following snippet.
 
     ```powershell
     using namespace System.Net
@@ -108,7 +106,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
     Our function expects a name to be passed in either through the HTTP request query string, or as part of the request body. HTTP functions must generate a response by writing to their output binding, which is accomplished in PowerShell Functions with the `Push-OutputBinding` cmdlet. This function returns the message **Hello, $name**, echoing back the name that was sent in the request.
 
-1. From the source dropdown list, select **function.json** to view the configuration of the function, which should look like the following.
+6. From the source dropdown list, select **function.json** to view the configuration of the function, which should look like the following.
 
     ```json
     {
@@ -132,7 +130,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
     }
     ```
 
-    This configuration declares that the function runs when it receives an HTTP request. The output binding declares that the response will be sent as an HTTP response.
+    This configuration declares that the function runs when it receives an HTTP request. The output binding declares that the response is sent as an HTTP response.
 
 ::: zone-end
 
@@ -152,27 +150,49 @@ To test the function, you can send an HTTP request to the function URL using cUR
 
     :::image type="content" source="../media/5-get-function-url.png" alt-text="Screenshot of the Azure portal showing the function editor, with the Get function URL button highlighted." lightbox="../media/5-get-function-url.png":::
 
+1. Open a command prompt and run cURL to send an HTTP request to the function URL. Keep in mind to use the URL that you copied in the previous step.
+
+    ```bash
+    curl "<your-https-url>"
+    ```
+
+    > [!TIP]
+    > You might need to wrap the URL in quotes to avoid issues with special characters in the URL.  
+    > If you're on Windows, run `cURL` from the command prompt. PowerShell has a *curl* command, but it's an alias for Invoke-WebRequest, which isn't the same as `cURL`.
+
+    The response should look like the following.
+
+    ```bash
+    This HTTP triggered function executed successfully. Pass a name on the query string or in the request body for a personalized response.
+    ```
+
+    Now pass a name in the request. To do that, you need to add a query string parameter named `name` to the URL. The following example adds the query string parameter `name=Azure`.
+
+    ```bash
+    curl "<your-https-url>&name=Azure"
+    ```
+
+    The response should look like the following.
+
+    ```bash
+    Hello, Azure. This HTTP triggered function executed successfully.
+    ```
+
+    The function executed successfully and returned the name that you passed in the request.
+
 ### Secure HTTP triggers
 
-HTTP triggers let you use API keys to block unknown callers by requiring a key as part of the request. When you create a function, you select the _authorization level_. By default, it's set to *Function*, which requires a function-specific API key, but it can also be set to *Admin* to use a global "master" key, or *Anonymous* to indicate that no key is required. You can also change the authorization level through the function properties after creation.
+HTTP triggers let you use API keys to block unknown callers by requiring a key as part of the request. When you create a function, you select the *authorization level*. By default, it's set to *Function*, which requires a function-specific API key. It can also be set to *Admin* to use a global "master" key, or *Anonymous* to indicate that no key is required. You can also change the authorization level through the function properties after creation.
 
-Because you specified *Function* when you created this function, you need to supply the key when you send the HTTP request. You can send it as a query string parameter named `code`, or as an HTTP header (preferred) named `x-functions-key`.
+Because you specified *Function* when you created this function, you need to supply the key when you send the HTTP request. You can send it as a query string parameter named `code`. Or, use the preferred method and pass it as an HTTP header named `x-functions-key`.
 
 1. To find the function and master keys, in the Function App menu, under **Developer**, select **Function Keys**. The Function Keys pane for your function opens.
 
-1. By default the function key value is hidden. Show the default function key value by selecting *Hidden value. Click to show value* in the **Value**. Copy the value to the clipboard, and then store this key in Notepad or a similar app for later use.
+1. By default the function key value is hidden. Show the default function key value by selecting **Show value**. Copy the contents of the **Value** field to the clipboard, and then store this key in Notepad or a similar app for later use.
 
     :::image type="content" source="../media/5-get-function-key.png" alt-text="Screenshot showing the Function Keys pane with the revealed function key highlighted." lightbox="../media/5-get-function-key.png" :::
 
-1. At the bottom of the screen, scroll to the left, and select your function. At the top, under the **Get Function Url** section, copy your **URL** by selecting the *Copy to clipboard* icon at the end of the URL. Store this link in Notepad or a similar app for later use.
-
-1. Next, scroll to the left, and from the Function App menu, under **Functions**, select **Functions**, and then select **HttpTrigger1** (or **DriveGearTemperatureService** for PowerShell). The **HttpTrigger1** (or **DriveGearTemperatureService** for PowerShell) Function pane appears.
-
-1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your *HttpTrigger1* (or *DriveGearTemperatureService* for PowerShell) function.
-
-1. On the command bar, select **Test/Run**. A pane showing the input parameters for running a test.
-
-1. In the **Body** text box, overwrite the embedded code by replacing line 2 in the **Body** with the cURL command below, replacing `<your-function-key>` with the function key value you saved, and replacing `<your-https-url>` with the URL of your function.
+1. To test the function with the function key, open a command prompt and run cURL to send an HTTP request to the function URL. Replace `<your-function-key>` with the function key value you saved, and replace `<your-https-url>` with the URL of your function.
 
     ```bash
     curl --header "Content-Type: application/json" --header "x-functions-key: <your-function-key>" --request POST --data "{\"name\": \"Azure Function\"}" <your-https-url>
@@ -185,9 +205,10 @@ Because you specified *Function* when you created this function, you need to sup
     - Used a `POST` request.
     - Passed the Azure Function with the URL for your function.
 
-1. Select **Run**.
+1. Check the logs.
 
-    The **Code + Test** pane should open a session displaying log file output (ensure **Filesystem Logs** is selected in the drop-down at the top of the **Logs** pane). The log file updates with the status of your request, which should look something like this for JavaScript:
+    The **Code + Test** pane should open a session displaying log file output (ensure **Filesystem Logs** is selected in the drop-down at the top of the **Logs** pane). The log file updates with the status of your request, which should look something like this:
+::: zone pivot="javascript"
 
     ```output
     2022-02-16T22:34:10.473 [Information] Executing 'Functions.HttpTrigger1' (Reason='This function was programmatically called via the host APIs.', Id=4f503b35-b944-455e-ba02-5205f9e8b47a)
@@ -195,20 +216,15 @@ Because you specified *Function* when you created this function, you need to sup
     2022-02-16T22:34:10.562 [Information] Executed 'Functions.HttpTrigger1' (Succeeded, Id=4f503b35-b944-455e-ba02-5205f9e8b47a, Duration=114ms)
     ```
 
-    and something like this for PowerShell:
+::: zone-end
+::: zone pivot="powershell"
 
     ```output
     2022-02-16T21:07:11.340 [Information] INFORMATION: PowerShell HTTP trigger function processed a request.
     2022-02-16T21:07:11.449 [Information] Executed 'Functions.DriveGearTemperatureService' (Succeeded, Id=25e2edc3-542f-4629-a152-cf9ed99680d8, Duration=1164ms)
     ```
 
-    Under the **Output** pane, for **HTTP response code**, the function responds with the text `200 OK`.
-
-    > [!CAUTION]
-    > If you are on Windows, run `cURL` from the command prompt. PowerShell has a *curl* command, but it's an alias for Invoke-WebRequest, and is not the same as `cURL`.
-
-    > [!NOTE]
-    > The **Code/Test** function may open an *Input/Output* pane in a different configuration, with the log file appearing on the side of a selected function. If so, you won't be able to verify the function key system is working, as it is not required. Add the appropriate header and parameter values in the Test interface, and select **Run** to see the test output.
+::: zone-end
 
 ## Add business logic to the function
 
@@ -279,7 +295,7 @@ module.exports = function (context, req) {
 
 The logic we added is straightforward. We iterate through the array and set the status as **OK**, **CAUTION**, or **DANGER** based on the value of the temperature field. We then send back the array of readings with a status field added to each entry.
 
-Notice the `Log` statements when you expand **Logs** at the bottom of the pane. When the function runs, these statements will add messages in the Logs window.
+Notice the `Log` statements when you expand **Logs** at the bottom of the pane. When the function runs, these statements add messages in the Logs window.
 
 ::: zone-end
 
@@ -326,7 +342,7 @@ Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
 
 The logic we added is straightforward. We iterate through the array and set the status as **OK**, **CAUTION**, or **DANGER** based on the value of the temperature field. We then send back the array of readings with a status field added to each entry.
 
-Note the calls to the `Write-Host` cmdlet. When the function runs, these statements will add messages in the Logs window.
+Note the calls to the `Write-Host` cmdlet. When the function runs, these statements add messages in the Logs window.
 
 ::: zone-end
 
@@ -358,7 +374,7 @@ We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to te
     }
     ```
 
-1. Select **Run**. The **Output** tab displays the HTTP response code and content. To see log messages, open the **Logs** tab in the bottom flyout of the pane (if it is not already open). The following image shows an example response in the output pane and messages in the **Logs** pane.
+1. Select **Run**. The **Output** tab displays the HTTP response code and content. To see log messages, open the **Logs** tab in the bottom flyout of the pane (if it isn't already open). The following image shows an example response in the output pane and messages in the **Logs** pane.
 
    :::image type="content" source="../media/5-portal-testing.png" alt-text="Screenshot of the Azure function editor, with the Test and Logs tabs showing." lightbox="../media/5-portal-testing.png":::  
 
@@ -366,8 +382,4 @@ We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to te
 
 1. In the Developer menu on the left, select **Monitor** to see that the request has been logged to Application Insights. The **Monitor** pane appears for your function.
 
-1. Select **Configure**. The **Application Insights** pane appears for your trigger function. Select **Turn on Application Insights**.
-
-1. In the **New resource name** field, select your function app, and in the **Location** field, select the region you initially associated with your function app.
-
-1. Select **Apply**, then select **Yes**.
+   The **Invocations Tab** of the pane displays **Invocation Traces** for each of your function invocations. Select the **Date(UTC)** value for one of the invocations and view the detail about the execution of your function.

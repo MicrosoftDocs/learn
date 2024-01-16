@@ -7,8 +7,9 @@ metadata:
   ms.date: 05/01/2021
   author: mijacobs
   ms.author: mijacobs
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 12
 content: |
   [!include[](includes/2-prepare-lab-environment.md)]

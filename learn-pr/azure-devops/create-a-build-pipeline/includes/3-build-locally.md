@@ -1,10 +1,168 @@
-Get ready to start building a CI pipeline with Microsoft Azure Pipelines. The first step is to build and run the *Space Game* web app on your local machine. Understanding how to build software locally will prepare you to repeat the process in the pipeline.
+Get ready to start building a CI pipeline with Microsoft Azure Pipelines. The first step is to build and run the *Space Game* web app. Understanding how to build software manually, prepares you to repeat the process in the pipeline.
 
-Mara is going to do exactly that, and by following the procedures, you can do the same thing. Everyone on the team, including Mara, uses Visual Studio Code to build and run apps. But the team uses a centralized version control system for its code, and Mara is more comfortable with GitHub, so she's going to use that. If you've never used GitHub, don't worry. Just follow along for now. All will be explained here and in later modules.
+Mara is going to do exactly that, and by following the procedures, you can do the same thing.
+
+::: zone pivot="github-codespaces-agent"  
+
+### Create an Azure DevOps personal access token
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```). If you don't already have an Azure DevOps organization, create a [free organization](/azure/devops/pipelines/get-started/pipelines-sign-up) before you begin. After you sign in, if you have more than one organization, choose **Azure DevOps** and go to the organization that you plan to use to complete this module. In this example, the name of the organization is `fabrikam`.
+
+    :::image type="content" source="../media/3-choose-organization.png" alt-text="Screenshot of choosing your Azure DevOps organization.":::
+  
+1. From your home page, open user settings :::image type="icon" source="../media/3-user-settings-gear.png" border="false"::: and select **Personal access tokens**.
+
+1. Select **+ New Token**.
+
+1. Name your token using any name that you prefer. The token is used when the Codespace registers its agent with your Azure DevOps organization, so you can keep the default expiration.
+
+1. Choose **Custom defined** and choose **Show all scopes**.
+
+    :::image type="content" source="../media/3-show-all-scopes.png" alt-text="Screenshot of viewing all scopes for a personal access token.":::
+
+1. Select the following scope: **Agent Pools (Read & manage)**, and choose **Create**.
+
+    :::image type="content" source="../media/3-agent-pools-read-and-manage.png" alt-text="Screenshot of selecting agent pool permissions for a personal access token.":::
+
+1. When you're done, copy the token and store it in a secure location. For your security, it isn't be shown again.
+
+> [!WARNING]
+> Treat and use a PAT like your password and keep it a secret.
+
+### Create a fork
+
+The first step to using a project in Git is to create a fork so you can work with and modify the source files. A *fork* is a copy of a GitHub repository. The copy exists in your account and lets you make any changes you want without affecting the original project.
+
+Although you can propose changes to the original project, in this lesson, you work with the *Space Game* web project as though it was the original project owned by Mara and the team.
+
+> [!NOTE]
+> If you have previously forked this repository, for example if you have previously completed this module or another Tailspin Toys training module, we recommend that you [delete your fork](https://docs.github.com/repositories/creating-and-managing-repositories/deleting-a-repository) and create a new fork using the following steps. If you don't want to delete your fork, ensure that you [sync your fork](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork).
+
+Let's fork the *Space Game* web project into your GitHub account:
+
+1. In a web browser, go to [GitHub](https://github.com?azure-portal=true), and sign in.
+
+1. Go to the [Space Game](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web?azure-portal=true) web project.
+
+1. Select **Fork**:
+
+    :::image type="content" source="../media/3-github-fork-button.png" alt-text="Screenshot of GitHub showing the location of the Fork button.":::
+
+1. To fork the repository into your account, follow the instructions.
+
+## Set up secrets for self-hosted agent
+
+Before you create your Codespace, you create several secrets that help your self-hosted Azure DevOps agent run. In production, you wouldn't want to use a self-hosted agent in GitHub Codespaces. However, since your team is using Codespaces for testing, it's a good temporary solution to use it when you're building your pipelines.  
+
+1. Go to your forked GitHub repository and select **Settings** > **Secrets and variables** > **Codespaces**.
+
+    :::image type="content" source="../media/3-add-codespaces-secret.png" alt-text="Screenshot of GitHub Codespaces secrets. ":::
+
+1. Create the following Codespaces Repository secrets.
+
+    |Name  |Value  |
+    |---------|---------|
+    |ADO_ORG     |   Name of the Azure DevOps organization you're using to complete this module. In this example, `fabrikam` is the name of the organization. This organization name must be the same one you used when you created your PAT in the previous step.   |
+    |ADO_PAT     |   The Personal Access Token that you created in the previous step.     |
+
+    > [!TIP]
+    > In this training module, your agent is assigned to the `Default` agent pool. If don't want to run your agent in the `Default` pool (for example you are running this training module using your production Azure DevOps environment and you have other agents in the `Default` pool), you can create a secret named `ADO_POOL_NAME` and specify the name of the [agent pool to use](/azure/devops/pipelines/agents/pools-queues). If this secret isn't specified, the `Default` pool is used.
+
+## Set up Codespaces
+
+Next, you set up Codespaces so that you can build the website, work with source files, and run your pipeline using a self-hosted agent.
+
+1. In your forked GitHub repository, select **Code**, select **Code** again, choose the **Codespaces** tab, and choose **+** to create a new Codespace.
+
+    :::image type="content" source="../media/3-create-new-options-codespaces.png" alt-text="Screenshot of create a new Codespace with options. ":::
+
+1. Wait for your Codespace to build. This build can take a few moments but you only have to do it once in this step of the training module. When the build completes, you're redirected to an online version of Visual Studio Code. Your Codespace comes with a fresh installation of Visual Studio Code, similar to a fresh installation of Visual Studio Code on your local machine. When the Codespace first starts, Visual Studio Code online might prompt you to provide certain configuration or ask you about preferences. You can choose the preferences that suit your Visual Studio Code usage style.
+
+### Set the upstream remote
+
+A *remote* is a Git repository where team members collaborate (similar to a repository on GitHub). Let's list your remotes and add a remote that points to Microsoft's copy of the repository so you can get the latest sample code.
+
+1. In the Visual Studio Code online editor, go to the terminal window, and choose **bash** from the right-hand side.
+
+    :::image type="content" source="../media/3-terminal-window.png" alt-text="Screenshot of terminal window in Visual Studio Code online editor. ":::
+
+1. To list your remotes, run the `git remote` command:
+
+    ```bash
+    git remote -v
+    ```
+
+    You have both fetch (download) and push (upload) access to your repository:
+
+    ```output
+    origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (fetch)
+    origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (push)
+    ```
+
+    *Origin* specifies your repository on GitHub. When you fork code from another repository, it's common to name the original remote (the one you forked from) *upstream*.
+
+1. To create a remote named *upstream* that points to the Microsoft repository, run this `git remote add` command:
+
+    ```bash
+    git remote add upstream https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.git
+    ```
+
+1. Run `git remote` a second time to see the changes:
+
+    ```bash
+    git remote -v
+    ```
+
+    You see that you still have both fetch (download) and push (upload) access to your repository. You also now have fetch and push access to the Microsoft repository:
+
+    ```output
+    origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (fetch)
+    origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (push)
+    upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.git (fetch)
+    upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.git (push)
+    ```
+
+## Build and run the web app
+
+1. In the Visual Studio Code online editor, navigate to the terminal window, and to build the app, run this `dotnet build` command:
+
+    ```dotnetcli
+    dotnet build --configuration Release
+    ```
+
+1. From the terminal window, to run the app, run this `dotnet run` command:
+
+    ```dotnetcli
+    dotnet run --configuration Release --no-build --project Tailspin.SpaceGame.Web
+    ```
+
+    .NET solution files can contain more than one project. The `--project` argument specifies the project for the *Space Game* web app.
+
+## Verify the application is running
+
+In development mode, the *Space Game* website is configured to run on port 5000.
+
+You see a new message in the Visual Studio editor. Your application running on port 5000 is available. Select **Open in Browser** to go to the running app.
+
+:::image type="content" source="../media/3-port-forwarding-message.png" alt-text="Screenshot of port forwarding Codespaces message. ":::
+
+In the new browser window, you should see the Space Game web site:
+
+:::image type="content" source="../media/3-space-game-top.png" alt-text="Screenshot of a web browser showing the Space Game web site.":::
+
+You can interact with the page, including the leaderboard. When you select a player's name, you see details about that player:
+
+:::image type="content" source="../media/3-space-game-leaderboard-profile.png" alt-text="Screenshot of a web browser showing the Space Game leaderboard.":::
+
+When you're finished, return to the terminal window, and to stop the running app, select Ctrl+C.
+
+::: zone-end  
+
+::: zone pivot="ms-hosted-agents"
 
 ## Prepare Visual Studio Code
 
-First, you'll set up Visual Studio Code so you can build the website locally and work with source files.
+First, set up Visual Studio Code so you can build the website locally and work with source files.
 
 Visual Studio Code comes with an integrated terminal, so you can edit files and work from the command line all in one place.
 
@@ -14,9 +172,9 @@ Visual Studio Code comes with an integrated terminal, so you can edit files and 
 
     :::image type="content" source="../../shared/media/vscode-terminal-bash.png" alt-text="Screenshot of selecting the Bash shell in Visual Studio Code.":::
 
-    The terminal window lets you select any shell that's installed on your system, like Bash, Zsh, and PowerShell.
+    The terminal window lets you select any shell installed on your system, like Bash, Zsh, and PowerShell.
 
-    Here, you'll use Bash. Git for Windows provides Git Bash, which makes it easy to run Git commands.
+    Here, you use Bash. Git for Windows provides Git Bash, which makes it easy to run Git commands.
 
     [!include[](../../shared/includes/troubleshoot-code-terminal.md)]
 
@@ -28,11 +186,11 @@ Visual Studio Code comes with an integrated terminal, so you can edit files and 
 
 ## Configure Git
 
-If you're new to Git and GitHub, to associate your identity with Git and authenticate with GitHub, you'll first need to run a few commands.
+If you're new to Git and GitHub, you first need to run a few commands to associate your identity with Git and authenticate with GitHub.
 
 [Set up Git](https://help.github.com/articles/set-up-git?azure-portal=true) explains the process in greater detail.
 
-At a minimum, you'll need to complete the following steps. From the Visual Studio Code integrated terminal, run these commands.
+At a minimum, you need to complete the following steps. From the Visual Studio Code integrated terminal, run these commands.
 
 1. [Set your username](https://help.github.com/articles/setting-your-username-in-git?azure-portal=true).
 1. [Set your commit email address](https://help.github.com/articles/setting-your-commit-email-address-in-git?azure-portal=true).
@@ -45,13 +203,13 @@ At a minimum, you'll need to complete the following steps. From the Visual Studi
 
 ## Get the source code
 
-Now, you'll get the source code from GitHub and set up Visual Studio Code so that you can run the app and work with source code files.
+Now, you get the source code from GitHub and set up Visual Studio Code so that you can run the app and work with source code files.
 
 ### Create a fork
 
 The first step to using a project in Git is to create a fork so you can work with and modify the source files. A *fork* is a copy of a GitHub repository. The copy exists in your account and lets you make any changes you want without affecting the original project.
 
-Although you can propose changes to the original project, in this lesson, you'll work with the *Space Game* web project as though it was the original project owned by Mara and her team.
+Although you can propose changes to the original project, in this lesson, you work with the *Space Game* web project as though it was the original project owned by Mara and the team.
 
 Let's fork the *Space Game* web project into your GitHub account:
 
@@ -69,7 +227,7 @@ Let's fork the *Space Game* web project into your GitHub account:
 
 Now that you have a copy of the *Space Game* web project in your GitHub account, you can download, or *clone*, a copy to your computer so you can work with it locally.
 
-A clone, like a fork, is a copy of a repository. When you clone a repository, you can make changes, verify they work as you expect, and then upload those changes back to GitHub. You can also synchronize your local copy with changes other authenticated users have made to GitHub's copy of your repository.
+A clone, like a fork, is a copy of a repository. When you clone a repository, you can make changes, verify they work as you expect, and then upload those changes back to GitHub. You can also synchronize your local copy with changes made by other authenticated users to GitHub's copy of your repository.
 
 To clone the *Space Game* web project to your computer:
 
@@ -85,7 +243,7 @@ To clone the *Space Game* web project to your computer:
     git clone https://github.com/username/mslearn-tailspin-spacegame-web.git
     ```
 
-1. After the `Cloning 'mslearn-tailspin-spacegame-web'...` operation completes, enter the following command to change to the `mslearn-tailspin-spacegame-web`directory. This is the root directory of your repository.
+1. After the `Cloning 'mslearn-tailspin-spacegame-web'...` operation completes, enter the following command to change to the `mslearn-tailspin-spacegame-web`directory. The root directory of your repository.
 
     ```bash
     cd mslearn-tailspin-spacegame-web
@@ -122,12 +280,13 @@ A *remote* is a Git repository where team members collaborate (similar to a repo
     git remote -v
     ```
 
-    You see that you still have both fetch (download) and push (upload) access to your repository. You also now have fetch access from the Microsoft repository:
+    You see that you still have both fetch (download) and push (upload) access to your repository. You also now have fetch and push access to the Microsoft repository:
 
     ```output
     origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (fetch)
     origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (push)
     upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.git (fetch)
+    upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.git (push)
     ```
 
 ### Open the project in the file explorer
@@ -141,7 +300,7 @@ In Visual Studio Code, your terminal window points to the root directory of the 
     ```
 
     You see the directory and file tree in the file explorer.
-    
+
 1. Reopen the integrated terminal. The terminal places you at the root of your web project.
 
 If the `code` command fails, you need to add Visual Studio Code to your system PATH. To do so:
@@ -179,9 +338,7 @@ Now that you have the web app, you can build and run it locally.
 
 In development mode, the *Space Game* website is configured to run on port 5000.
 
-From a new browser tab, to see the running app, navigate to `http://localhost:5000`.
-
-You see this:
+From a new browser tab, navigate to `http://localhost:5000` to see the running app:
 
 :::image type="content" source="../media/3-space-game-top.png" alt-text="Screenshot of a web browser showing the Space Game web site.":::
 
@@ -197,3 +354,5 @@ You can interact with the page, including the leaderboard. When you select a pla
 :::image type="content" source="../media/3-space-game-leaderboard-profile.png" alt-text="Screenshot of a web browser showing the Space Game leaderboard.":::
 
 When you're finished, return to the terminal window, and to stop the running app, select Ctrl+C.
+
+::: zone-end

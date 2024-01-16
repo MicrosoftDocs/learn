@@ -1,9 +1,9 @@
-:::image type="content" source="../media/custom-security-attributes-2ef80fb3.png" alt-text="Screenshot of the Azure A D new feature Custom Security Attributes.  You get to the feature in the base menu of Azure A D.  You have the ability to create new security attributes of type String, Integer, or Boolean.":::
+:::image type="content" source="../media/custom-security-attributes-2ef80fb3.png" alt-text="Screenshot of the Microsoft Entra ID new feature Custom Security Attributes.  You get to the feature in the base menu of Microsoft Entra ID.  You have the ability to create new security attributes of type String, Integer, or Boolean.":::
 
 
 ## What is a custom security attribute?
 
-Custom security attributes in Azure Active Directory (Azure AD) are business-specific attributes (key-value pairs) that you can define and assign to Azure AD objects. These attributes can be used to store information, categorize objects, or enforce fine-grained access control over specific Azure resources.
+Custom security attributes in Microsoft Entra ID are business-specific attributes (key-value pairs) that you can define and assign to Microsoft Entra objects. These attributes can be used to store information, categorize objects, or enforce fine-grained access control over specific Azure resources.
 
 ### Why use custom security attributes?
 
@@ -15,8 +15,8 @@ Custom security attributes in Azure Active Directory (Azure AD) are business-spe
 ### What can I do with custom security attributes?
 
  -  Define business-specific information (attributes) for your tenant.
- -  Add a set of custom security attributes on users, applications, Azure AD resources, or Azure resources.
- -  Manage Azure AD objects using custom security attributes with queries and filters.
+ -  Add a set of custom security attributes on users, applications, Microsoft Entra resources, or Azure resources.
+ -  Manage Microsoft Entra objects using custom security attributes with queries and filters.
  -  Provide attribute governance so attributes determine who can get access.
 
 ### Features of custom security attributes

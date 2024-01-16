@@ -1,17 +1,18 @@
 
-Azure Event Grid is an eventing backplane that enables event-driven, reactive programming. It uses the publish-subscribe model. Publishers emit events, but have no expectation about how the events are handled. Subscribers decide on which events they want to handle.
+
+Azure Event Grid is a serverless event broker that you can use to integrate applications using events. Events are delivered by Event Grid to subscriber destinations such as applications, Azure services, or any endpoint to which Event Grid has network access. The source of those events can be other applications, SaaS services and Azure services. Publishers emit events, but have no expectation about how the events are handled. Subscribers decide on which events they want to handle.
 
 Event Grid allows you to easily build applications with event-based architectures. Event Grid has built-in support for events coming from Azure services, like storage blobs and resource groups. Event Grid also has support for your own events, using custom topics.
 
 You can use filters to route specific events to different endpoints, multicast to multiple endpoints, and make sure your events are reliably delivered.
 
-This image below shows how Event Grid connects sources and handlers, and isn't a comprehensive list of supported integrations.
+The following image shows how Event Grid connects sources and handlers, and isn't a comprehensive list of supported integrations.
 
 :::image type="content" source="../media/functional-model.png" alt-text="Image showing the Event Grid model of sources and handlers":::
 
 ## Concepts in Azure Event Grid
 
-There are five concepts in Azure Event Grid you need to understand to help you get started, and are described in more detail below:
+There are five concepts in Azure Event Grid you need to understand to help you get started:
 
 * **Events** - What happened.
 * **Event sources** - Where the event took place.
@@ -31,7 +32,7 @@ An event source is where the event happens. Each event source is related to one 
 
 ## Topics
 
-The event grid topic provides an endpoint where the source sends events. The publisher creates the event grid topic, and decides whether an event source needs one topic or more than one topic. A topic is used for a collection of related events. To respond to certain types of events, subscribers decide which topics to subscribe to.
+The Event Grid topic provides an endpoint where the source sends events. The publisher creates the Event Grid topic, and decides whether an event source needs one topic or more than one topic. A topic is used for a collection of related events. To respond to certain types of events, subscribers decide which topics to subscribe to.
 
 **System topics** are built-in topics provided by Azure services. You don't see system topics in your Azure subscription because the publisher owns the topics, but you can subscribe to them. To subscribe, you provide information about the resource you want to receive events from. As long as you have access to the resource, you can subscribe to its events.
 

@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: OWASP and Dynamic Analyzers
 summary: This module explores OWASP and Dynamic Analyzers for penetration testing, results, and bugs.
 abstract: |

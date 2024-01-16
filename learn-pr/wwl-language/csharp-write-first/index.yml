@@ -3,11 +3,11 @@ uid: learn.languages.csharp-write-first
 metadata:
   title: Write your first C# code
   description: "Write your first C# code"
-  ms.date: 02/24/2023
+  ms.date: 04/13/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Write your first C# code
 summary: Get started by writing code examples to learn the basics of the C# syntax!
 abstract: |
@@ -24,7 +24,6 @@ roles:
 - developer
 products:
 - dotnet
-- vs-code
 subjects:
 - development-tools
 units:

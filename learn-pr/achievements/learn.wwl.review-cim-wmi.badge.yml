@@ -2,4 +2,5 @@
 achievementUid: learn.wwl.review-cim-wmi.badge
 metadata:
   title: 'Microsoft Badge: Review CIM and WMI was issued by Microsoft'
-socialImageUrl: /training/achievements/generic-badge-social.png
+socialImageUrl: >-
+  /training/achievements/review-common-information-model-windows-management-instrumentation-social.png

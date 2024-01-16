@@ -9,7 +9,7 @@ Installing the Mosquitto MQTT broker on Linux is the easiest option because most
 > [!NOTE]
 > To minimize costs, the MQTT broker can be run on a *General purpose B1 SKU* virtual machine that can be stopped when it's not in use.
 
-The following blog post from K21 Academy is a great guide to installing an Ubuntu server on Azure: [Create and Connect an Ubuntu Virtual Machine in Azure](https://k21academy.com/microsoft-azure/az-104/az-104-create-and-connect-an-ubuntu-virtual-machine-in-azure?azure-portal=true).
+The following blog post from K21 Academy is a great guide to installing an Ubuntu server on Azure: [Create and Connect an Ubuntu Virtual Machine in Azure](https://k21academy.com/microsoft-azure/admin/how-to-create-and-connect-an-ubuntu-virtual-machine-in-azure/).
 
 ## Create an Ubuntu virtual server
 
@@ -133,7 +133,7 @@ The following steps set up certificates to help secure the communications betwee
 
 The following instructions walk you through installing the Certbot ACME client on the Ubuntu server. Let's Encrypt-issued certificates expire after six months. The Certbot client ensures that the certificates are updated before they expire.
 
-For more information, see the [instructions on the Certbot site](https://certbot.eff.org/lets-encrypt/ubuntufocal-other?azure-portal=true).
+For more information, see the [instructions on the Certbot site](https://certbot.eff.org/lets-encrypt).
 
 1. Copy and paste the following block of commands into the SSH session and then select the **Enter** key:
 

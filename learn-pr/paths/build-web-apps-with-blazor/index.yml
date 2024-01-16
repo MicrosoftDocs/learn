@@ -8,8 +8,10 @@ metadata:
   ms.date: 09/03/2021
   author: csharpfritz
   ms.author: jefritz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-blazor
+  ms.topic: learning-path
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 prerequisites: None
 iconUrl: /training/achievements/build-blazor-webapps.svg
 levels:
@@ -31,5 +33,6 @@ modules:
 - learn.use-forms-in-blazor-web-apps
 - learn.build-interactive-components-blazor-web-apps
 - learn.blazor-build-reusable-components
+- learn.gh-dotnet-connectfour
 trophy:
   uid: learn.aspnet.build-blazor-webapps.trophy

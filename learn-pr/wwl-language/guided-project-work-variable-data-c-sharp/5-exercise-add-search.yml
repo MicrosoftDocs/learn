@@ -4,11 +4,10 @@ title: Exercise - Add dog search
 metadata:
   title: Exercise - Add dog search
   description: "Exercise - Add dog search"
-  ms.date: 02/24/2023
+  ms.date: 12/15/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise-add-search.md)]

@@ -11,7 +11,6 @@ You've now increased your team's confidence in your Bicep development process an
   - [Trunk-based development](https://trunkbaseddevelopment.com/)
   - [Gitflow](https://nvie.com/posts/a-successful-git-branching-model/)
   - [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow)
-  - [GitLab flow](https://docs.gitlab.com/ee/topics/gitlab_flow.html)
   - [Patterns for Managing Source Code Branches](https://martinfowler.com/articles/branching-patterns.html)
 - Pull requests on Microsoft Learn
   - [Manage repository changes by using pull requests on GitHub](xref:learn.github.manage-changes-pull-requests-github)

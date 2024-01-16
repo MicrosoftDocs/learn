@@ -22,7 +22,7 @@ Here are a few built-in commands that Health Bot supports.
 
 ### Help
 
-If the user is unsure what actions the bot can perform, they can enter the **help** command to see a helpful summary. The help summary is a configurable list of commands that are understood by the bot. By default, the summary includes system commands available to all bot instances.
+If the user is unsure what actions the bot can perform, they can enter the **help** command to see a helpful summary. The help summary is a configurable list of commands that the bot understands. By default, the summary includes system commands available to all bot instances.
 
 :::image type="content" source="../media/2-help-command.png" alt-text="Screenshot that shows the Help command.":::
 

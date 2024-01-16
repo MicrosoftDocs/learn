@@ -4,10 +4,9 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 02/22/2021
-  author: BrianBlanchard
-  ms.author: brblanch
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 title: Knowledge check
 durationInMinutes: 10
 quiz:
@@ -39,7 +38,7 @@ quiz:
     choices:
     - content: The most common time/value metric is impact per hour.
       isCorrect: true
-      explanation: A time/value metric measures operating revenue losses per hour of outage.
+      explanation: A time/value metric measures operating revenue loss per hour of outage.
     - content: The most common time/value metric is impact per workload.
       isCorrect: false
       explanation: In this scenario, impact measurement is for the business, not for a workload or platform.

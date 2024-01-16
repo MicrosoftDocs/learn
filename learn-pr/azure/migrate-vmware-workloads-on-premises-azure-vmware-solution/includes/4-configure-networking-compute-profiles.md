@@ -33,12 +33,13 @@ The first step involves creating a *site pair*. A site pair provides network con
 
 1. For the connection to work, HCX Connector needs to route to the HCX Cloud Manager IP over port 443. Use Azure ExpressRoute, which you deployed on-premises.
 
-1. You see a screen showing that HCX Cloud Manager in Azure VMware Solution and the on-premises VMware HCX Connector are connected, or paired.
+1. You get a screen showing that HCX Cloud Manager in Azure VMware Solution and the on-premises VMware HCX Connector are connected, or paired.
 
     :::image type="content" source="../media/4-site-pairing-complete.png" alt-text="Screenshot when site pairing is complete in the on-premises VMware environment.":::
 
 ## Create network profiles
-VMware HCX Connector on-premises deploys a set of automated virtual appliances that require multiple IP segments. You need to first configure network profiles. These network profiles will be created for each network intended for use with HCX. When you create network profiles, you'll use the IP segments identified during the HCX deployment planning phase.
+
+VMware HCX Connector on-premises deploys a set of automated virtual appliances that require multiple IP segments. You need to first configure network profiles. You'll create these network profiles for each network intended for use with HCX. When you create network profiles, you'll use the IP segments identified during the HCX deployment planning phase.
 
 1. Sign in to the on-premises HCX Connector.
 
@@ -65,19 +66,19 @@ After the network profiles are created, you'll need to create a compute profile.
 
     :::image type="content" source="../media/4-create-compute-profile.png" alt-text="Screenshot of where to create an HCX compute profile in HCX Connector on-premises.":::
 
-1. Enter a name for the profile, and select **Continue**.
+1. Enter a name for the profile and select **Continue**.
 
     :::image type="content" source="../media/4-name-compute-profile.png" alt-text="Screenshot that shows the entry of a compute profile name and the Continue button in HCX Connector on-premises.":::
 
-1. On the next screen, you see services set for activation. Recall that HCX Advanced deploys with Azure VMware Solution. If you need HCX Enterprise, you must open a ticket with support.
+1. On the next screen, you have services set for activation. Recall that HCX Advanced deploys with Azure VMware Solution. If you need HCX Enterprise, you must open a ticket with support.
 
-1. Leave all default services checked that can be enabled with the HCX Advanced key, and select **Continue**.
+1. Leave all default services checked that can be enabled with the HCX Advanced key and select **Continue**.
 
     :::image type="content" source="../media/4-select-services-activated.png" alt-text="Screenshot of the services selected for activation with HCX Connector on-premises.":::
 
 1. In **Select Service Resources**, select one or more service resources (clusters) to enable the selected VMware HCX services.
 
-1. When you see the clusters in your on-premises datacenter, select **Continue**.
+1. When you have the clusters in your on-premises datacenter, select **Continue**.
 
     :::image type="content" source="../media/4-select-service-resource.png" alt-text="Screenshot that shows selected service resources and the Continue button in HCX Connector on-premises.":::
 
@@ -85,23 +86,23 @@ After the network profiles are created, you'll need to create a compute profile.
 
     :::image type="content" source="../media/4-deployment-resources-and-reservations.png" alt-text="Screenshot that shows a selected data storage resource and the continue button in the on-premises HCX Connector.":::
 
-1. On the **Select Management Network Profile** pane, select the management network profile that you created in previous steps. Then select **Continue**.
+1. On the **Select Management Network Profile** pane, select the management network profile that you created in previous steps, then select **Continue**.
 
     :::image type="content" source="../media/4-select-management-network-profile.png" alt-text="Screenshot that shows the selection of a management network profile and the Continue button in the on-premises HCX Connector.":::
 
-1. On the **Select Uplink Network Profile** pane, select the uplink network profile you created in the prior steps. Then select **Continue**.
+1. On the **Select Uplink Network Profile** pane, select the uplink network profile you created in the prior steps, then select **Continue**.
 
     :::image type="content" source="../media/4-select-uplink-network-profile.png" alt-text="Screenshot that shows the selection of an uplink network profile and the Continue button in the on-premises HCX Connector.":::
 
-1. On the **Select vMotion Network Profile** pane, select the vMotion network profile that you created in prior steps. Then select **Continue**.
+1. On the **Select vMotion Network Profile** pane, select the vMotion network profile that you created in prior steps, then select **Continue**.
 
     :::image type="content" source="../media/4-select-vmotion-network-profile.png" alt-text="Screenshot that shows the selection of a vMotion network profile and the Continue button in the on-premises HCX Connector.":::
 
-1. On the **Select vSphere Replication Network Profile** pane, select the replication network profile that you created in prior steps. Then select **Continue**.
+1. On the **Select vSphere Replication Network Profile** pane, select the replication network profile that you created in prior steps, then select **Continue**.
 
     :::image type="content" source="../media/4-select-replication-network-profile.png" alt-text="Screenshot that shows the selection of a replication network profile and the Continue button in the on-premises HCX Connector.":::
 
-1. Review the connection rules, and select **Continue**.
+1. Review the connection rules and select **Continue**.
 
     :::image type="content" source="../media/4-review-connection-rules.png" alt-text="Screenshot that shows the connection rules and the Continue button in the on-premises HCX Connector.":::
 

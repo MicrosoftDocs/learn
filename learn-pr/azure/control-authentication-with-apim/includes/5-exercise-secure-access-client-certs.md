@@ -10,6 +10,9 @@ In this unit, you'll:
 - Edit the inbound policy to allow only clients with the specified certificate in their request
 - Call the API Management gateway and pass the certificate by using `curl`
 
+> [!NOTE]
+> This exercise uses the resources that you set up in the previous exercise.
+
 ## Create self-signed certificate
 
 First, use Cloud Shell to create a self-signed certificate, which you'll then use for authentication between the client and the API Management gateway.

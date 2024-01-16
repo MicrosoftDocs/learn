@@ -1,12 +1,12 @@
-This module is about making a bot available on Microsoft Teams. You'll also learn how to build a basic app in Teams so you can share it within your organization. You'll make the bot you created in previous modules available on Microsoft Teams and wrap it into a Teams application.
+This module is about making a bot available on Microsoft Teams. Learn how to build a basic app in Teams so that you can share it within your organization. Then make the bot you created in previous modules available on Microsoft Teams and wrap it into a Teams application.
 
 ## Learning objectives
 
-In this module, you'll:
+In this module, you:
 
-- Learn about the channels available on the Microsoft Azure Health Bot platform
-- Learn how to make a bot available on Teams
-- Build a basic Teams app for the healthcare bot 
+- Learn about the channels available on the Microsoft Azure Health Bot platform.
+- Learn how to make a bot available on Teams.
+- Build a basic Teams app for the healthcare bot.
 
 ## Prerequisite modules
 

@@ -1,23 +1,21 @@
-In a cloud environment, it is easy to create resources, explore features and try everything that is offered. In the same way, it becomes easy to create these environments without taking into consideration some important best practices.
+In a cloud environment, it's easy to create resources, explore features, and try everything that's offered. In the same way, it becomes easy to create these environments without taking into consideration some important best practices.
 
-So how can you track your environment and ensure your cloud usage employs a correct approach over major pillars like cost effectiveness, security, reliability, operational excellence, and performance?
+The [Azure Well-Architected Framework](/azure/architecture/framework/index) describes five pillars of architectural excellence: reliability, security, cost optimization, operational excellence, and performance efficiency. Azure Advisor is a tool that can give you proactive, actionable, and personalized recommendations to help you track your cloud environment and usage, and follow best practices for the five pillars.
 
-To address this, Azure Advisor is a tool that can give you proactive, actionable, personalized recommendations that help you follow best practices over the previously listed pillars of cloud usage.
-
-:::image type="content" source="../media/1-intro-advisor.png" alt-text="A screenshot of the Azure portal displaying the entry representing Azure Advisor.":::
+:::image type="content" source="../media/1-advisor-overview.png" alt-text="Screenshot of the Azure portal showing the overview of cost, security, reliability, operational excellence and performance in Azure Advisor." lightbox="../media/1-advisor-overview.png":::
 
 ## Example scenario
 
-Assume that you are running a critical workload composed by different types of Infrastructure as a Service (IaaS) resources. The resources may include virtual machines and/or database servers. You may also have Platform as a Service (PaaS) resources like storage accounts, bastion hosts, DNS, or application gateways. The following illustration shows an example of this architecture:
+Imagine you're running a critical workload composed of different types of Infrastructure as a Service (IaaS) resources. The resources might include virtual machines and/or database servers. You might also have Platform as a Service (PaaS) resources like storage accounts, bastion hosts, DNS, or application gateways. The following diagram illustrates such an architecture:
 
-:::image type="content" source="../media/1-arch-iaas.png" alt-text="A graphic representing an Azure reference architecture that includes DNS, a virtual network hosting a web tier, application gateway, and data tier, along with a storage account.":::
+:::image type="content" source="../media/1-arch-iaas.png" alt-text="Diagram of an Azure reference architecture with DNS, storage account, and a virtual network hosting a web tier, data tier, and application gateway." border="false":::
 
 ## What will we be doing?
 
-As you are running a workload consisting of a mixed set of resources, you want to ensure that you are using the best approach around performance and cost. The tasks aren't always easy. It will require deep knowledge on the most diverse type of resources, coupled with good cloud skills expertise.
+As you're running a workload consisting of a mixed set of resources, you want to ensure that you're using the best approach around performance and cost. The tasks aren't always easy. You need deep knowledge on a diverse range of resources, along with good cloud skills expertise.
 
-Here we will learn how a tool, called Azure Advisor, can help accomplish the management tasks in a smart and efficient way.
+In the units that follow, you'll learn how Azure Advisor can help you accomplish these management tasks in a smart and efficient way.
 
-## What is the main goal?
+## What's the main goal?
 
-By the end of this session, you'll be able to check and validate the recommendations and understand how to customize alerts around these actions and recommendations.
+By the end of this module, you'll be able to check and validate the recommendations from Azure Advisor and understand how to customize alerts around these actions and recommendations.

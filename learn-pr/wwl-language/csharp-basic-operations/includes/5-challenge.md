@@ -1,5 +1,6 @@
 
 
+
 In this challenge, you'll write code that will use a formula to convert a temperature from degrees Fahrenheit to Celsius. You'll print the result in a formatted message to the user.
 
 ### Challenge: Calculate Celsius given the current temperature in Fahrenheit

@@ -1,6 +1,6 @@
-You can build and deploy Azure-based web apps by using Docker containers. This approach enables you to roll out a web app quickly. Support for continuous delivery ensures that users see the latest build of the app while minimizing administrative overhead.
+You can build and deploy Azure-based web apps by using Docker containers. This approach allows you to roll out a web app quickly. Support for continuous delivery ensures that users see the latest build of the app while minimizing administrative overhead.
 
-Suppose that you work for an already-successful company that's testing a new software as a service (SaaS) product. The small team working on it's moving quickly. When they began, they weren’t sure where they were going to host the app. So, they chose to package the app into a Docker container to improve the efficiency of their development process and maximize their options for deployment. They’re ready to deploy the first version, and they expect to be iterating quickly.
+Suppose that you work for an already-successful company that's testing a new software as a service (SaaS) product. The small team working on it is moving quickly. When they began, they weren’t sure where they were going to host the app. So, they chose to package the app into a Docker container to improve the efficiency of their development process and maximize their options for deployment. They’re ready to deploy the first version, and they expect to be iterating quickly.
 
 The team decided to deploy the new app as a web app that uses Azure App Service, a platform for hosting web apps. The code for a web app running in App Service can be supplied as a Docker image.
 
@@ -18,5 +18,5 @@ In this module, you will:
 
 ## Prerequisites
 
-- Basic experience with Docker, including the use of Docker commands to store and retrieve Docker images.
-- Experience with creating web apps by using App Service.
+- Basic experience with Docker, including the use of Docker commands to store and retrieve Docker images
+- Experience with creating web apps by using App Service

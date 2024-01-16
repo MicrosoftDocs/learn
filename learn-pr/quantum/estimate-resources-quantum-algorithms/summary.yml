@@ -3,12 +3,11 @@ uid: learn.quantum.estimate-resources-quantum-algorithms.summary
 title: Summary
 metadata:
   title: Summary
-  description: Summary
+  description: Summary.
   ms.date: 01/20/2023
   author: SoniaLopezBravo
   ms.author: sonialopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   show_latex: true
 durationInMinutes: 1
 content: |

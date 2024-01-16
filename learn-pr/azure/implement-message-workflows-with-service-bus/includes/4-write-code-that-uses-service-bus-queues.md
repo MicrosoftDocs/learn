@@ -1,23 +1,23 @@
 Distributed applications use Service Bus queues as temporary storage locations for messages that are awaiting delivery to a destination component. To send and receive messages through a queue, you must write code in both the source and destination components.
 
-Consider the Contoso Bicycles application. The customer can place an order through a website or mobile app. Because websites and mobile apps run on customer devices, there really is no limit to how many orders can be made at the same time. By having the mobile app and website deposit the orders in a Service Bus queue, the back-end component (a web app) is able to process orders from that queue at its own pace.
+Consider the Contoso Bicycles application. The customer can place an order through a website or mobile app. Because websites and mobile apps run on customer devices, there's really no limit to how many orders can be made at the same time. By having the mobile app and website deposit the orders in a Service Bus queue, the back-end component (a web app) is able to process orders from that queue at its own pace.
 
-The Contoso Bicycles application actually has several steps to handle a new order. All the steps are dependent on first authorizing payment, so you decide to use a queue. The receiving component's first job will be processing the payment.
+The Contoso Bicycles application actually has several steps to handle a new order. All the steps are dependent on first authorizing payment, so you decide to use a queue. The receiving component's first job is processing the payment.
 
-In the mobile app and website, Contoso needs to write code that adds a message to the queue. In the back-end web app, Contoso will write code that picks up messages from the queue.
+In the mobile app and website, Contoso needs to write code that adds a message to the queue. In the back-end web app, Contoso writes code that picks up messages from the queue.
 
 Here, you'll look at the process and considerations in writing code to send and receive messages by using a Service Bus queue.
 
 ## Azure.Messaging.ServiceBus NuGet package
 
-To make it easy to write code that sends and receives messages through Service Bus, Microsoft provides a library of .NET classes that you can use in any .NET language to interact with a Service Bus queue or topic. You can include this library in your application by adding the **Azure.Messaging.ServiceBus** NuGet package.
+To make it easy to write code that sends and receives messages through Service Bus, Microsoft provides a library of .NET classes. You can use in any .NET language to interact with a Service Bus queue or topic. You can include this library in your application by adding the **Azure.Messaging.ServiceBus** NuGet package.
 
 ## Connection strings and keys
 
 Source components and destination components both need two pieces of information to connect to a queue in a Service Bus namespace:
 
-- The location of the Service Bus namespace, also known as an *endpoint*. The location is specified as a fully qualified domain name within the **servicebus.windows.net** domain. For example: **bicycleService.servicebus.windows.net**.
-- An access key. Service Bus restricts access to queues or topics by requiring a valid access key.
+- **The Service Bus namespace location, also known as an *endpoint***: The location is specified as a fully qualified domain name within the **servicebus.windows.net** domain. For example: **bicycleService.servicebus.windows.net**.
+- **An access key**: Service Bus restricts access to queues or topics by requiring a valid access key.
 
 Both these pieces of information are provided to the [ServiceBusClient](/dotnet/api/azure.messaging.servicebus.servicebusclient) object in the form of a connection string. You can get the correct connection string for your namespace from the Azure portal.
 

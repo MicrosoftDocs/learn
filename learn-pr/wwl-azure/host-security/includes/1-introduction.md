@@ -1,3 +1,4 @@
+
 Once you have your network and perimeter secure, you need to lock down the host machines where your applications run. Installing updates, using jump boxes to only access servers, and following Microsoft Defender for Cloud recommendations are great tools to keep your hosts secure.
 
 ## Scenario
@@ -10,7 +11,7 @@ A security engineer uses host security tools like privilege access workstation a
 
 ## Skills measured
 
-Securing the Azure platform your cloud solutions run on is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
+Securing the Azure platform your cloud solutions run on is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/certifications/exams/az-500).
 
 Implement platform protection (15-20%)
 

@@ -4,14 +4,14 @@ At this point, you know about virtual environments and how to install a package.
 
 You've seen how to use the command `pip freeze` to list the packages that are installed in your virtual environment. This command has more than one use, though. 
 
-Imagine that you want to collaborate on a project with other developers. A good way to collaborate is to, for example, use GitHub. You don't want to check in all the files you have, but only the application code and a list of packages that you depend on for the program to function. Why check in only a list of packages and not the packages themselves? A list takes a lot less space than checking in the packages. 
+Imagine that you want to collaborate on a project with other developers. A good way to collaborate is to, for example, use [GitHub](https://github.com/about?azure-portal=true). You don't want to check in all the files you have, but only the application code and a list of packages that you depend on for the program to function. Why check in only a list of packages and not the packages themselves? A list takes a lot less space than checking in the packages. 
 
 > [!NOTE]
 > Thanks to `pip`, all you need is a list.
 
 ### Share a project
 
-To share your project so that others can work on it, take the following steps:
+To share your project in GitHub so that others can work on it, you would take the following steps:
 
 1. Call `pip freeze > requirements.txt`. This command creates a _requirements.txt_ file with all the packages that the program needs.
 1. Create a _.gitignore_ file, and check in your application code and _requirements.txt_.
@@ -19,7 +19,7 @@ To share your project so that others can work on it, take the following steps:
 
 ### Consume a project
 
-To consume a project as a contributor (a fellow developer), take the following steps:
+To consume a project as a contributor (a fellow developer), you would take the following steps:
 
 1. Fetch the project from GitHub.
 1. Create a virtual environment and place yourself in it.
@@ -45,10 +45,10 @@ You can check for the latest available version of a package and install that as 
 > [!IMPORTANT]
 > Check that any new version is compatible with other dependencies that you might be using.
 
-To install a specific version, use `===` between the package name and the version number. Here's an example command:
+To install a specific version, use `==` between the package name and the version number. Here's an example command:
 
-```bash
-pip install python-dateutil===1.4
+```console
+pip install python-dateutil==1.4
 ```
 
 The preceding command would install version 1.4, if it's available.
@@ -56,32 +56,37 @@ The preceding command would install version 1.4, if it's available.
 
 There are many ways to find out what versions are available. One way is to specify a version that you know *doesn't* exist. The resulting error will tell you what version does exist. Here's an example command that uses the nonsense string `randomwords`:
 
-```bash
-pip install python-dateutil===randomwords
+```console
+pip install python-dateutil==randomwords
 ```
 
 Here's the resulting output, with a list of existing versions:
 
 ```output
-ERROR: Could not find a version that satisfies the requirement python-dateutil===randomwords (from versions: 1.4, 1.4.1, 1.5, 2.1, 2.2, 2.3, 2.4.0, 2.4.1, 2.4.1.post1, 2.4.2, 2.5.0, 2.5.1, 2.5.2, 2.5.3, 2.6.0, 2.6.1, 2.7.0, 2.7.1, 2.7.2, 2.7.3, 2.7.4, 2.7.5, 2.8.0, 2.8.1, 2.8.2)
-ERROR: No matching distribution found for python-dateutil===randomwords
+ERROR: Could not find a version that satisfies the requirement python-dateutil==randomwords (from versions: 1.4, 1.4.1, 1.5, 2.1, 2.2, 2.3, 2.4.0, 2.4.1, 2.4.1.post1, 2.4.2, 2.5.0, 2.5.1, 2.5.2, 2.5.3, 2.6.0, 2.6.1, 2.7.0, 2.7.1, 2.7.2, 2.7.3, 2.7.4, 2.7.5, 2.8.0, 2.8.1, 2.8.2)
+ERROR: No matching distribution found for python-dateutil==randomwords
 ```
 
-Another way is to call `pip freeze`. The output shows what specific versions it already installed for us, when we gave it only the package name as argument:
+Another way is to call `pip freeze`: 
+
+``` console
+pip freeze python-dateutil
+```
+
+The output shows what specific versions it already installed for us, when we gave it only the package name as argument:
 
 ```output
-pip-autoremove==0.10.0
 python-dateutil==2.8.2
 six==1.16.0
 ```
 
-The preceding example shows that version 2.8.2 is installed. If you want to change that to an earlier version (because another package that you have requires it), you can use a command like this example: `pip install python-dateutil===2.8.0`.
+The preceding example shows that version 2.8.2 is installed. If you want to change that to an earlier version (because another package that you have requires it), you can use a command like this example: `pip install python-dateutil==2.8.0`.
 
 ### Upgrade a package
 
 Packages change over time, as previously stated. You can upgrade to the latest package without specifying what the exact version number is. Use this command:
 
-```bash
+```console
 pip install <name of package> --upgrade
 ```
 
@@ -99,7 +104,7 @@ Packages use something called *semantic versioning*. This means that if you look
 
 Why does all this matter for upgrading your package? It has to do with how careful you need to be. Sometimes, you're in a situation where you can't (or aren't allowed to) change the major and minor values, but you welcome bug fixes. You can specify this as part of the upgrade command:
 
-```bash
+```console
 pip install "python-dateutil==2.7.*" --upgrade
 ```
 
@@ -109,29 +114,29 @@ In the preceding example, you specify that you want to upgrade only if there are
 
 Sometimes, you might realize that you no longer need a certain Python package and you want to remove it. For such a case, you can use `pip uninstall`:
 
-```bash
+```console
 pip uninstall python-dateutil
 ```
 
-However, if you run `pip freeze`, you see how the preceding command removed only the `python-dateutil` library. This can be problematic, because your project now might contain many unused libraries that take up space. To clear out everything that this package depended on, you can use both commands like this:
+However, if you run `pip freeze`, you see how the preceding command removed only the `python-dateutil` library. 
 
-```python
+```output
+six==1.16.0
+```
+
+
+This can be problematic, because your project now might contain many unused libraries that take up space. To clear out everything that this package depended on, you can write all installed packages to a *requirements.txt* list, like this:
+
+```console
 pip freeze > requirements.txt
+```
+
+Then remove all the packages in that list, like this:
+
+```console
 pip uninstall -r requirements.txt -y
 ```
 
 > [!WARNING]
-> The preceding commands would remove all installed packages, by first writing them to a _requirements.txt_ list and then removing all packages in that list.
+> The preceding commands would remove all installed packages, by first writing them to a _requirements.txt_ list and then removing all packages in that list. 
 
-A better approach is to use the `autoremove` command:
-
-```bash
-pip install pip-autoremove
-pip-autoremove python-dateutil -y
-```
-
-Now if you run `pip freeze`, you see that it contains only the following output:
-
-```output
-pip-autoremove==0.10.0
-```

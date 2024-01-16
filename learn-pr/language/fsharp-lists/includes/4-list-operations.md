@@ -1,4 +1,4 @@
-When you store many items in a list, you'll often carry out operations on either part or all of the list. The list module contains many useful operations that let you do just that.
+When you store many items in a list, you often carry out operations on either part or all of the list. The list module contains many useful operations that let you do just that.
 
 ## List module functions
 

@@ -1,8 +1,8 @@
-One of the first decisions you'll make when you implement certification is whether you'll use a course-level or a program-level approach. If you're at the beginning of your institution’s certification journey, you might prefer to take smaller steps before moving toward deeper integration with your school’s programs, like offering academic credit for certification. 
+One of the first decisions you'll make when you implement certification is whether you'll use a course-level or a program-level approach. If you're at the beginning of your institution’s certification journey, you might prefer to take smaller steps before moving toward deeper integration with your school’s programs, like offering academic credit for certification.
 
-This unit describes the approaches you can use when you implement certification at the course level. It draws from the [ACM Paper Cloud Computing Curriculum: Developing Exemplar Modules for General Course Inclusion](https://dl.acm.org/doi/10.1145/3437800.3439206?azure-portal=true). 
+This unit describes the approaches you can use when you implement certification at the course level. It draws from the [ACM Paper Cloud Computing Curriculum: Developing Exemplar Modules for General Course Inclusion](https://dl.acm.org/doi/10.1145/3437800.3439206?azure-portal=true).
 
-To prepare you for delivering cutting-edge technical instruction in your classes, [Microsoft Learn Educators](https://aka.ms/MSLELearn?azure-portal=true) will provide access to online learning paths, technical training sessions, and our live and on-demand Virtual Educator Prep Sessions. These training opportunities will provide you with valuable information to ensure you successfully deliver your courses incorporating Microsoft curriculum. Later units in this module focus on tasks and processes that are part of a program-level approach to implementing certification.
+To prepare you for delivering cutting-edge technical instruction in your classes, [Microsoft Learn Educators](https://aka.ms/MSLELearn?azure-portal=true) provides access to online learning paths, technical training sessions, and our live and on-demand Virtual Educator Prep Sessions. These training opportunities provide you with valuable information to ensure you successfully deliver your courses incorporating Microsoft curriculum. Later units in this module focus on tasks and processes that are part of a program-level approach to implementing certification.
 
 ## Certification implementation at the University of Lincoln
 
@@ -12,7 +12,7 @@ The University of Lincoln began offering certification to students as an extracu
 - **Intermediate stage**: Certification courses align with the outcomes of existing academic courses.
 - **Advanced stage**: Certification is integrated inside an academic course, with credit for the certification exam.
 
-If you pursue a similar approach, initially focusing on implementing certifications at the course level, the Course Implementation Guide can help walk you through the process in detail. 
+If you pursue a similar approach, initially focusing on implementing certifications at the course level, the Course Implementation Guide can help walk you through the process in detail.
 
 > [!NOTE]
 > You can access the Course Implementation Guide through the [Microsoft Learn for Educators Program](https://aka.ms/MSLEProgram?azure-portal=true).

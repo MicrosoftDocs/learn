@@ -34,17 +34,17 @@ As CTO for Tailwind Traders, you'd like to know how Azure Key Vault can enhance 
 
 You're on your last step in planning how to implement authentication and authorization for Tailwind Traders. Consider how Azure Key Vault can be used to manage user passwords, certificates, API keys, and other secrets.
 
-- **Consider shared access signatures for clients**. Implement shared access signatures to provide secure delegated access to resources in your Tailwind Traders storage account. With Key Vault shared access signatures, you have granular control over how clients can access your data:
-   - Determine which resources the client can access.
-   - Define the client's permissions for those resources.
-   - Specify how long the client's shared access signature is valid. 
+- **Consider using separate key vaults**. Key vaults define security boundaries for stored secrets. Grouping secrets into the same vault increases the *blast radius* of a security event. Consider what secrets a specific application should have access to, and then separate your key vaults based on this delineation. Separating key vaults by application is the most common boundary. 
 
-- **Consider clients who don't have permissions to your resources**. Use shared access signatures to give secure access to resources in your storage account to any Tailwind Traders client who doesn't otherwise have permissions to those resources.
+- **Consider access to the key vault**. Secure access to your key vaults by allowing only authorized applications and users. Here are some suggestions. 
 
-- **Consider user read and write access to your storage account**. Enable users to read and write their own data to your Tailwind Traders storage account by using shared access signatures in Key Vault. In a scenario where a storage account stores user data, there are two typical design patterns:
+   - Create access policies for every vault.
+   - Use the principle of least privilege access to grant access.
+   - Turn on firewall and virtual network service endpoints.
 
-   - Clients upload and download data via a front-end proxy service that performs authentication. The front-end proxy service allows the validation of business rules. For large amounts of data, or high-volume transactions, creating a service that can scale to match demand might be expensive or difficult.
 
-   - A lightweight service authenticates the client as needed and then generates a shared access signature. After the client app receives the signature, the client can access storage account resources directly. Access permissions are defined by the signature and for the interval allowed by the signature. The signature mitigates the need to route all data through the front-end proxy service.
+- **Consider data protection for your key vault**. Turn on [soft delete and purge protection](/azure/key-vault/general/key-vault-recovery?tabs=azure-portal#what-are-soft-delete-and-purge-protection) to protect your key vault data.
 
-- **Consider a hybrid approach**. Many real-world services can benefit from a hybrid approach for secure access. Some data might be processed and validated via the front-end proxy. Other data might be saved and read directly by using shared access signatures. Review your options to see if a hybrid approach is the best fit for Tailwind Traders.
+   - **Soft delete** is designed to prevent accidental deletion of your key vault and keys, secrets, and certificates stored inside key vault. Think of soft-delete like a recycle bin. 
+   - **Purge protection** Purge protection is designed to prevent the deletion of your key vault, keys, secrets, and certificates by a malicious insider. Think of this as a recycle bin with a time based lock. You can recover items at any point during the configurable retention period. 
+

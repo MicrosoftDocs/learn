@@ -4,11 +4,13 @@ title: Exercise - Install packages
 metadata:
   title: Exercise - Install packages
   description: Exercise on how to add and remove packages in your .NET project.
-  ms.date: 10/28/2020
+  ms.date: 10/12/2023
   author: jamesmontemagno
   ms.author: jamont
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 4
 content: |
   [!include[](includes/3-exercise-dependency.md)]

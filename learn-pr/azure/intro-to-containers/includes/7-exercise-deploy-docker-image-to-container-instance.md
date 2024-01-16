@@ -41,19 +41,19 @@ In this exercise, you'll learn how to rebuild the image for the web app and uplo
 1. Make a note of the **Registry name**, **Login server**, **Username**, and **passwords** for your container registry.
 
     > [!NOTE]
-    > In this exercise, we enable the admin account access so that we can upload images and test the registry. In a production environment, it's important to disable the **Admin user** account access and use Azure Active Directory Identity Protection as soon as you're satisfied that the registry is operating as expected.
+    > In this exercise, we enable the admin account access so that we can upload images and test the registry. In a production environment, it's important to disable the **Admin user** account access and use Microsoft Entra ID Protection as soon as you're satisfied that the registry is operating as expected.
 
     :::image type="content" source="../media/7-access-keys.png" alt-text="Screenshot of the Access keys details.":::
 
 ## Upload the image for the hotel reservation system app to Azure Container Registry
 
-1. In your local command prompt, run the following command, replacing `<registry-name>` with the name of your container registry, to tag the current `reservationsystem` image with the name of your registry.
+1. In your local command prompt, run the following command, replacing `<registry-name>` with the name of your container registry to tag the current `reservationsystem` image with the name of your registry:
 
     ```bash
     docker tag reservationsystem:latest <registry-name>.azurecr.io/reservationsystem:latest
     ```
  
-1. Run the `docker image ls` command to verify that the image has been tagged correctly.
+1. Run the `docker image ls` command to verify that the image has been tagged correctly:
 
     ```bash
     docker image ls
@@ -72,12 +72,11 @@ In this exercise, you'll learn how to rebuild the image for the web app and uplo
     ```bash
     docker login <login-server>
     ```
-   
+
     >[!NOTE]
-    >You may receive an error response from a daemon that your application is not registered with AAD (Azure Active Directory). As noted earlier in this exercise, you've enabled **Admin user** access key to test our deployment.
+    >You might receive an error response from a daemon that your application is not registered with Microsoft Entra ID. As noted earlier in this exercise, you've enabled **Admin user** access key to test our deployment.
 
-
-1. Enter the following command, replacing `<registry-name>` with your own registry name to upload the image to your registry in Azure Container Registry.
+1. Enter the following command, replacing `<registry-name>` with your own registry name to upload the image to your registry in Azure Container Registry:
 
     ```bash
     docker push <registry-name>.azurecr.io/reservationsystem:latest
@@ -165,7 +164,7 @@ For the remainder of the exercise, you'll return to the Azure portal.
     ```output
     http://hotel.southcentralus.azurecontainer.io/api/reservations/1
     ```
-    
+
     The web app should respond with a JSON object containing the details for reservation 1.
 
 Congratulations! You uploaded the Docker image to Azure Container Registry, and you ran the image using the Azure Container Instance service.

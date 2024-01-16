@@ -11,9 +11,8 @@ Defender for Endpoint RBAC is designed to support your tier or role-based model 
 
 - Control who can see information on a specific device group or groups
 
-  - Create device groups by specific criteria such as names, tags, domains, and others, then grant role access to them using a specific Azure Active Directory (Azure AD) user group.
+  - Create device groups by specific criteria such as names, tags, domains, and others, then grant role access to them using a specific Microsoft Entra user group.
 
-To implement role-based access, you'll need to define admin roles, assign corresponding permissions, and assign Azure AD user groups assigned to the roles.
+To implement role-based access, you'll need to define admin roles, assign corresponding permissions, and assign Microsoft Entra user groups assigned to the roles.
 
-Before using RBAC, you should understand the roles that can grant permissions and the consequences of turning on RBAC. On your first sign-in to Microsoft 365 Defender you're granted either full access or read-only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. Read-only access is granted to users with a Security Reader role in Azure AD. Someone with a Defender for Endpoint Global administrator role has unrestricted access to all devices, regardless of their device group association and the Azure AD user groups assignments
-
+Before using RBAC, you should understand the roles that can grant permissions and the consequences of turning on RBAC. On your first sign-in to Microsoft Defender XDR you're granted either full access or read-only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Microsoft Entra ID. Read-only access is granted to users with a Security Reader role in Microsoft Entra ID. Someone with a Defender for Endpoint Global administrator role has unrestricted access to all devices, regardless of their device group association and the Microsoft Entra user groups assignments

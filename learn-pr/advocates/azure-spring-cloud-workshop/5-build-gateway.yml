@@ -3,12 +3,11 @@ uid: learn.azure-spring-cloud-workshop.5-build-gateway
 title: Build a Spring Cloud Gateway
 metadata:
   title: Build a Spring Cloud Gateway
-  description: Build a Spring Cloud Gateway
+  description: Learn how to build a Spring Cloud Gateway.
   author: judubois
   ms.author: judubois
-  ms.date: 03/04/2020
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/10/2023
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: judubois-03302020
 durationInMinutes: 7

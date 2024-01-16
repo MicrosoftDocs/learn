@@ -1,6 +1,6 @@
 After looking at the options for moving data, you decide that Azure Data Box Disk is the best choice. You don't want to dedicate your entire network bandwidth to the task of importing your data to Azure. As the administrator for your organization, you need to better understand the overall workflow involved in getting the data into Azure.
 
-In this unit, you'll learn how to use Azure Data Box Disk and the other devices in the Azure Data Box family to import data to Azure.
+In this unit, you learn how to use Azure Data Box Disk and the other devices in the Azure Data Box family to import data to Azure.
 
 ## Import data by using Azure Data Box family
 
@@ -16,9 +16,9 @@ For clarity, let's break out these workflow stages into discrete steps:
 1. Ship the device to Azure.
 1. Verify the data in Azure storage.
 
-If you plan to order Data Box Heavy, make sure that it will fit through the entrance of your premises, and that you have at least two people to handle it. It's a massive device that weighs around 500 lbs and arrives on wheels.
+If you plan to order Data Box Heavy, make sure that it can fit through the entrance of your premises, and that you have at least two people to handle it. It's a massive device that weighs around 500 lbs and arrives on wheels.
 
-We'll cover the specific steps to use Azure Data Box Disk later in this unit.
+We cover the specific steps to use Azure Data Box Disk later in this unit.
 
 ### Copy data using standard tools
 
@@ -53,7 +53,7 @@ For your vehicle data, you'd follow these steps to order a Data Box Disk to impo
    - When you receive the disks, sign in to the Azure portal and go to the **Device Details** page for Data Box Disk. Get the passkey. Download the right version of the Data Box Disk unlocker tool for your operating system.
 
 1. **Set up and copy data to the device**
-   - For the autonomous-vehicle scenario, you'll connect the disks directly to the onboard Linux or Windows computer in the car. With Azure Data Box Disk, you can connect multiple disks simultaneously and run multiple copy jobs in parallel.
+   - For the autonomous-vehicle scenario, you connect the disks directly to the onboard Linux or Windows computer in the car. With Azure Data Box Disk, you can connect multiple disks simultaneously and run multiple copy jobs in parallel.
    - Azure Data Box Disk supports Azure block blob, Azure page blob, Azure Files, and Azure Managed Disks storage types for upload to Azure. The disks come with a predefined folder structure based on the storage type. Copy data into the appropriate folder for your storage type: PageBlob, BlockBlob, AzureFile, or ManagedDisk.
    - Validate the files by running DataBoxDiskValidation.cmd, which is provided in the DataBoxDiskImport folder. Select option 1 to validate the files. If you have time, we recommend that you generate checksums by selecting option 2. Generating a checksum may take some time, depending on the data size.
    - The first three days are billed as a single day, as a grace period, plus one-off shipping and order-processing fees. After the first three days, there's a per-day cost for each SSD.
@@ -68,17 +68,17 @@ For your vehicle data, you'd follow these steps to order a Data Box Disk to impo
 
 ## Clone a Data Box order
 
-Because you'll need to periodically ship telemetry data from the autonomous vehicles, you'll need an easy way to repeat the process described here. The best way is to clone the previous Azure Data Box Disk order in the portal. When you select **Clone** within an order, all the details of the previous order remain the same, and the name becomes the original order name but appended with **-Clone**.
+Because you need to periodically ship telemetry data from the autonomous vehicles, you need an easy way to repeat the process described here. The best way is to clone the previous Azure Data Box Disk order in the portal. When you select **Clone** within an order, all the details of the previous order remain the same, and the name becomes the original order name but appended with **-Clone**.
 
 ## Export data by using Data Box
 
 You can export data from Azure by using Data Box. Data Box Disk and Data Box Heavy don't support exporting data from Azure.
 
-Though we won't need to export data from Azure for our scenario, you should be aware of the workflow. The steps to order and use Data Box to export data is similar to the import workflow. At a high level, the workflow typically includes the following steps:
+Though we don't need to export data from Azure for our scenario, you should be aware of the workflow. The steps to order and use Data Box to export data is similar to the import workflow. At a high level, the workflow typically includes the following steps:
 
 1. Create an order in the Azure portal.
 
-1. Receive the device from the Azure datacenter. Connect to and unlock the device. The device will have data that the Azure datacenter copied from your Azure storage account.
+1. Receive the device from the Azure datacenter. Connect to and unlock the device. The device has data that the Azure datacenter copied from your Azure storage account.
 
 1. Copy data from the device.
 

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals.explore-objective-domains
+title: Explore objective domains
+metadata:
+  title: Explore objective domains
+  description: "Explore objective domains"
+  ms.date: 12/14/2023
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-explore-objective-domains.md)]

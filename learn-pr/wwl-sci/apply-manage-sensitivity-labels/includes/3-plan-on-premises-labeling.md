@@ -59,7 +59,7 @@ The following requirements must be fulfilled before installing the Unified Label
 
 - One of the following roles: Compliance administrator or Compliance data administrator or Security administrator permissions or Global administrator.
 
-- A configured Azure AD token.
+- A configured Microsoft Entra token.
 
 - Any Windows Server 2016 to Windows Server 2019 with UI.
 
@@ -77,4 +77,4 @@ For the installation and to run the scanner the following service accounts are n
 
 ## Learn more
 
-[Understanding the Azure Information Protection unified labeling scanner](/azure/information-protection/deploy-aip-scanner?azure-portal=true)
+[Learn about the information protection scanner](/microsoft-365/compliance/deploy-scanner?azure-portal=true)

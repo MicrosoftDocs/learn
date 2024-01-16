@@ -7,7 +7,7 @@ You know what Private Link is and how it works. Now you need some criteria to he
 * Lowering the risk of data exfiltration
 * Offering customers private access to company-created Azure services
 
-As part of your Azure Private Link evaluation, you know that Contoso has several of these goals. Read the corresponding sections below for more details.
+As part of your Azure Private Link evaluation, you know that Contoso has several of these goals. Read the corresponding sections for more details.
 
 ## Bringing Azure PaaS services into your virtual network
 
@@ -43,11 +43,11 @@ Without Private Link, these networks must create their own connections to a spec
 
 Suppose a virtual machine in your network is connected to an Azure service. It's often possible for a user on the virtual machine to access multiple resources in the Azure service. For example, if the service is Azure Storage, a user could access multiple blobs, tables, files, and so on.
 
-Now suppose that the user is a malicious infiltrator who has taken control of the virtual machine. In that scenario, the user could move data from one resource to another one that's controlled by the attacker.
+Now suppose that the user is a malicious infiltrator who has taken control of the virtual machine. In that scenario, the user could move data from one resource to another one that they control.
 
 This scenario is an example of *data exfiltration*. Private Link lowers the risk of data exfiltration by  mapping a Private Endpoint to a single instance of an Azure resource. An attacker might still be able view the data, but has no way to copy or move it to another resource.
 
-:::image type="content" source="../media/4-using-private-link.png" alt-text="Network diagram of an Azure virtual network accessing a single instance of an Azure SQL database via a private IP address mapped by Private Endpoint and not allowing access to other instances of Azure SQL Database." border="false":::
+:::image type="content" source="../media/4-using-private-link.png" alt-text="Network diagram of an Azure virtual network accessing a single instance of an Azure SQL database. Access is via a private IP address mapped by Private Endpoint. The Private Endpoint doesn't allow access to other instances of Azure SQL Database." border="false":::
 
 ## Offering customers private access to company-created Azure services
 
@@ -61,6 +61,6 @@ You can say that each consumer in the above list is a *customer* of your service
 
 There's an excellent chance that the data accessed and created by those customers is every bit as important as your company's data. So your customer's data deserves the same level of privacy and security as your company data.
 
-If you believe that Private Link is the right choice for securing your company data, then you'll want to extend that security model to your custom Azure services. By putting your custom services behind Azure Standard Load Balancer, you can use Private Link Service to enable customers to access your service using Private Endpoint.
+If you believe that Private Link is the right choice for securing your company data, then you want to extend that security model to your custom Azure services. By putting your custom services behind Azure Standard Load Balancer, you can use Private Link Service to enable customers to access your service using Private Endpoint.
 
 Imagine the satisfaction of your marketing department when you tell them they can now offer customers private and secure access to your custom Azure services.

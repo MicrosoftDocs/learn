@@ -1,4 +1,4 @@
-Your company is looking at ways to deploy your cloud-based video rendering service. You've chosen Azure Kubernetes Service (AKS) as your cloud-native development platform. With the cluster configured, you're ready to deploy one of the components in your video rendering application. You decide to deploy a static version of your company's website to explore the Kubernetes deployment process.
+Your company is looking at ways to deploy your cloud-based video rendering service. You chose Azure Kubernetes Service (AKS) as your cloud-native development platform. With the cluster configured, you're ready to deploy one of the components in your video rendering application. You decide to deploy a static version of your company's website to explore the Kubernetes deployment process.
 
 Before we discuss the Kubernetes way of deployment, let's review some of the steps you'd take to deploy a similar application to a non-Kubernetes environment.
 
@@ -9,13 +9,13 @@ Assume you're using an Azure virtual machine (VM) as your target platform. The f
 - Install and configure the web server software.
 - Deploy the web application.
 
-You'll repeat this process for each new VM when you decide to scale the website out to handle an increase in demand from customers.
+Repeat this process for each new VM when you decide to scale the website out to handle an increase in demand from customers.
 
-An alternative approach is to run the website on a container-based platform like Azure Container Instances. You don't need to worry about the underlying server technology, but you'll have to configure and manage several containers to use this strategy manually.
+An alternative approach is to run the website on a container-based platform like Azure Container Instances. You don't need to worry about the underlying server technology, but you have to configure and manage several containers to use this strategy manually.
 
 Kubernetes and AKS help you orchestrate containers. The Kubernetes container orchestration features make it easy to manage workloads on the cluster. You deploy workloads by using containers built from container images to run your applications within an AKS cluster.
 
-Here you'll explore how to create workloads in your AKS cluster.
+Here you can explore how to create workloads in your AKS cluster.
 
 ## What is a container registry?
 
@@ -25,9 +25,9 @@ For example, you might have the image `contoso-website:latest`, which would be a
 
 :::image type="content" source="../media/4-1-container-registry-diagram.png" alt-text="A diagram that shows how container images are downloaded from a container registry to a Kubernetes cluster by using a manifest file.":::
 
-Container registries might be public or private. Private registries require credentials to access and download images and will be the strategy you'll follow when you store container images.
+Container registries might be public or private. Private registries require credentials to access and download images and is the strategy you follow when you store container images.
 
-Kubernetes only allows you to deploy images hosted in a container registry. Creating a private container registry will normally be part of your standard AKS deployment strategy.
+Kubernetes only allows you to deploy images hosted in a container registry. Creating a private container registry is normally part of your standard AKS deployment strategy.
 
 ## What is a Kubernetes pod?
 
@@ -41,7 +41,7 @@ For example, if you wanted to search all workloads related to the `contoso-websi
 
 A Kubernetes deployment is an evolution of pods. A deployment wraps the pods into an intelligent object that allows them to _scale out_. You can easily duplicate and scale your application to support more load without the need to configure complex networking rules.
 
-Deployments allow users to update applications just by changing the image tag without downtime. When you update a deployment, instead of deleting all apps and creating new ones, the deployment turns off the online apps one by one and replaces them with the newest version. This aspect means any deployment can update the pods inside it with no visible effect in availability.
+Deployments allow users to update applications just by changing the image tag without downtime. When you update a deployment, instead of deleting all apps, the deployment turns off the online apps one by one. Then, it replaces them with the newest version. This aspect means any deployment can update the pods inside it with no visible effect in availability.
 
 ## Kubernetes manifest files
 
@@ -49,7 +49,7 @@ A Kubernetes manifest file allows you to describe your workloads in the YAML for
 
 Imagine you have to deploy a workload by hand. You need to think about and manage several aspects. You'd need to create a container, select a specific node, wrap it in a pod, run the pod, monitor execution, and so on.
 
-Manifest files contain all the information that's needed to create and manage the described workload.
+Manifest files contain all the information that you need to create and manage the described workload.
 
 ## What is a Kubernetes label?
 
@@ -66,9 +66,9 @@ apiVersion: apps/v1 # Where in the API it resides
 kind: Deployment # The kind of workload we're creating
 ```
 
-The `apiVersion` key defines the API server endpoint that manages the object you'll deploy.
+The `apiVersion` key defines the API server endpoint that manages the object you deploy.
 
-The `kind` key defines the workload this deployment will create.
+The `kind` key defines the workload this deployment creates.
 
 Other common keys for all the files are the `metadata` and `name` keys. All Kubernetes resources *must* have a name. This name goes inside the `metadata` key.
 

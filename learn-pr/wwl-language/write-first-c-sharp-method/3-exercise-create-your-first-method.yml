@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-first-c-sharp-method.exercise-create-your-first-method
+title: Exercise - Create your first method
+metadata:
+  title: Exercise - Create your first method
+  description: "Exercise - Create your first method"
+  ms.date: 10/26/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-create-your-first-method.md)]

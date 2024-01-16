@@ -10,9 +10,9 @@ Launch service providers provide the carrier rocket, assembly, payload integrati
 
 ## Satellite operators
 
-Satellite operators are a broad category that includes government, commercial, and private entities that own the ~4,800 satellites in orbit, both for satellite communication and observation. Operators focused on communication are referred to as SATCOM operators, with communications satellites used to relay signals across the globe. Operators focused on observation are referred to as Earth Observation (EO) operators, with low earth orbit (LEO) satellites that collect data from earth.
+Satellite operators are a broad category that includes the government, commercial, and private entities that own the ~4,800 satellites in orbit, both for satellite communication and observation. Operators focused on communication are referred to as SATCOM operators, with communications satellites used to relay signals across the globe. Operators focused on observation are referred to as Earth Observation (EO) operators, with low earth orbit (LEO) satellites that collect data from earth.
 
-## Data analytics Independent Software Vendors (ISVs)
+## Data analytics independent software vendors (ISVs)
 
 Data analytics independent software vendors aggregate and analyze insights based on satellite data. These companies use proprietary data analysis and Artificial Intelligence (AI) offerings to help customers unlock insights from the data collected by earth observation satellites.
 
@@ -22,6 +22,6 @@ Ground station providers provide antennas to contact satellites in orbit, enabli
 
 ## Enterprises
 
-In this context, enterprises refer to non-satellite-operating businesses that need to harness the data and communication capabilities of satellites. These enterprises can be found across industries and represent an important end customer for space solutions. Examples of non-satellite-operating businesses include: agricultural companies looking to perform more precise monitoring of crop health, government and financial firms who need to automate risk analysis, and logistics companies looking to identify supply chain issues more quickly.
+In this context, enterprises refer to non-satellite-operating businesses that need to harness the data and communication capabilities of satellites. These enterprises can be found across industries and represent an important end customer for space solutions. Examples of non-satellite-operating businesses include: agricultural companies looking to perform more precise monitoring of crop health, government and financial firms who need to automate risk analysis, and logistics companies looking to identify supply-chain issues more quickly.
 
 While Azure Space products will be relevant to all key players within the industry, the portfolio is focused primarily on providing value for two: Satellite Operators and Enterprises. In the next unit, we'll examine the value propositions for them.

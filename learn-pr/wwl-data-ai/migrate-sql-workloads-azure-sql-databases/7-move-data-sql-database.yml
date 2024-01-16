@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.migrate-sql-workloads-azure-sql-databases.move-data-sql-database
+title: Move data to Azure SQL Database
+metadata:
+  title: Move data to Azure SQL Database
+  description: "Learn how to move or transfer data partially from an existing database or source to Azure SQL Database."
+  ms.date: 10/31/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-move-data-sql-database.md)]

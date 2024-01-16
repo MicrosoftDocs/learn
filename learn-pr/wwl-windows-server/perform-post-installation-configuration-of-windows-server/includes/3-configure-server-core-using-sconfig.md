@@ -29,6 +29,7 @@ Sconfig provides several options, which are described in the following table.
 |Restart Server|Restarts the server|
 |Shut Down Server|Shuts down the server|
 |Exit to Command Line|Returns to the command prompt|
+|Remote Desktop|Enable Remote Desktop|
 
 ## Demonstration
 

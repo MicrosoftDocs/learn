@@ -1,8 +1,8 @@
-To support governments in their responsibilities to protect sensitive data and follow local regulations, Azure provides many options to encrypt data throughout its lifecycle. Data is protected at rest, in transit, and in use, though various encryption technologies. Customers have the power and flexibility to choose their own options for data encryption, including control of encryption keys.
+To support governments in their responsibilities to protect sensitive data and follow local regulations, Azure provides many options to encrypt data throughout its lifecycle. Data is protected at rest, in transit, and in use, through various encryption technologies. Customers have the power and flexibility to choose their own options for data encryption, including control of encryption keys.
 
 ## Learning objectives
 
-In this module, you will learn to:
+In this module, you learn how to:
 
 * Describe the options for key management in Azure.
 * Identify various scenarios in which encryption is used to protect data throughout its lifecycle.

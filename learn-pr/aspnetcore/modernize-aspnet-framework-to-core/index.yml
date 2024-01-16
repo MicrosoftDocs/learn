@@ -6,7 +6,8 @@ metadata:
   ms.date: 01/06/2023
   author: jongalloway
   ms.author: jogallow
-  ms.topic: interactive-tutorial
+  ms.manager: markl
+  ms.topic: module
   ms.prod: aspnet-core
 title: Modernize ASP.NET Framework to ASP.NET Core with the .NET Upgrade Assistant
 summary: In this module, you'll learn to modernize an ASP.NET Framework app to ASP.NET Core using the Upgrade Assistant.
@@ -18,8 +19,9 @@ abstract: |
   - Update an existing ASP.NET application running on .NET Framework to ASP.NET Core.
 prerequisites: |
  - Local installation of [.NET SDK](https://dotnet.microsoft.com/download)
- - A local installation of Visual Studio 2019 or Visual Studio 2022 on Windows
- - Experience using the command line
+ - A local installation of Visual Studio 2022 on Windows with the following components installed:
+   - ASP.NET and web development workload
+   - .NET Framework 4.8.1 targeting pack
 levels:
 - beginner
 roles:

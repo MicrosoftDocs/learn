@@ -3,11 +3,12 @@ uid: learn.azure.migrate-java-app-azure-kubernetes-service.exercise-setup-host-e
 metadata:
   title: Exercise - Set up host environment
   description: Describes the steps to prepare Azure subscription and source application to be containerized.
-  ms.date: 09/01/2021
-  author: rahug1190
-  ms.author: rahugup
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/10/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
 title: Exercise - Set up host environment
 durationInMinutes: 7
 content: |

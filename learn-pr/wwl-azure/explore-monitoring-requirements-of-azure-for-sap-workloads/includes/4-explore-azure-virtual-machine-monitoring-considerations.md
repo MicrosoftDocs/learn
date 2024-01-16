@@ -19,7 +19,6 @@ Azure Monitor for SAP Solutions has been released (in preview at the time of aut
 ### Supported infrastructure
 
 - Azure virtual machine
-- Azure Large Instance
 
 ### Supported provider types
 

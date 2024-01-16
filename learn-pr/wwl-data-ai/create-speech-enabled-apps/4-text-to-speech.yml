@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-speech-enabled-apps.text-to-speech
+title: Use the text to speech API
+metadata:
+  title: Use the text to speech API
+  description: "Use the text to speech API"
+  ms.date: 08/31/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure-ai-speech
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-text-to-speech.md)]

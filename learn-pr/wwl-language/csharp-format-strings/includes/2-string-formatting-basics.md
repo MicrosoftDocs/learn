@@ -1,5 +1,3 @@
-
-
 In this unit, you learn methods to format strings for efficient display, especially for cases using multiple variables.
 
 ### Prepare your coding environment
@@ -167,11 +165,11 @@ For example:
 
 The culture affects the writing system, the calendar that's used, the sort order of strings, and formatting for dates and numbers (like formatting currency).
 
-Unfortunately, making sure your code works correctly on all computers regardless of the country/region or the end user's language is challenging. This process is known as *localization* (or *globalization*). Localization depends on many factors not discussed in this module, but simply, the string formatting syntax may use a different format depending on the user's culture.
+Unfortunately, making sure your code works correctly on all computers regardless of the country/region or the end user's language is challenging. This process is known as *localization* (or *globalization*). Localization depends on many factors not discussed in this module, but simply, the string formatting syntax might use a different format depending on the user's culture.
 
 ### Formatting numbers
 
-When working with numeric data, you may want to format the number for readability by including commas to delineate thousands, millions, billions, and so on.
+When working with numeric data, you might want to format the number for readability by including commas to delineate thousands, millions, billions, and so on.
 
 The `N` numeric format specifier makes numbers more readable. Update your code as follows:
 
@@ -208,6 +206,11 @@ Use the `P` format specifier to format percentages. Add a number afterwards to c
 ```csharp
 decimal tax = .36785m;
 Console.WriteLine($"Tax rate: {tax:P2}");
+```
+
+If you're viewing this from the `en-US` culture, you observe the following output.
+
+```Output
 Tax rate: 36.79 %
 ```
 
@@ -265,4 +268,4 @@ Here are most important takeaways from this unit about string formatting:
 - Format currency using a `:C` specifier.
 - Format numbers using a `:N` specifier. Control the precision (number of values after the decimal point) using a number after the `:N` like `{myNumber:N3}`.
 - Format percentages using the `:P` format specifier.
-- Formatting currency and numbers depends on the end user's culture, a five character code that includes the user's country/region and language (per the settings on their computer).
+- Formatting currency and numbers depend on the end user's culture, a five character code that includes the user's country/region and language (per the settings on their computer).

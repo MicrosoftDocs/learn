@@ -6,9 +6,9 @@ In this course, you found out what makes a bot responsible. A responsible bot:
 
 You also saw why it's important for bots to be responsible. Then you learned about specific technologies that can make bots responsible:
 
-- [Azure Cognitive Services][CogServ] provides services that support AI functionality.
+- [Azure AI services][CogServ] provides services that support AI functionality.
 - [LUIS][Language Understanding (LUIS) documentation] adds language understanding capabilities.
-- Azure Cognitive Services [Translator Text API][TranslatorAPI] supports multiple languages. This API offers:
+- [Azure AI Translator Text API][TranslatorAPI] supports multiple languages. This API offers:
 
   - [Language detection][LangDetection]
   - [Translation services][Translation]

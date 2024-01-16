@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.find-best-classification-model-automated-machine-learning.exercise
-title: Exercise - Find the best classification model
+title: Exercise - Find the best classification model with Automated Machine Learning
 metadata:
-  title: Exercise - Find the best classification model
+  title: Exercise - Find the best classification model with Automated Machine Learning
   description: "Explore how to find the best classification model with automated machine learning using the Python SDK (v2) for Azure Machine Learning through hands-on exercises."
-  ms.date: 01/20/2023
+  ms.date: 06/06/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.custom:
+    - devx-track-python
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise.md)]

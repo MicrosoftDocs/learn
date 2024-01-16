@@ -44,8 +44,10 @@ You can read values inside a dictionary. Dictionary objects have a `get` method 
 
 ```python
 print(planet.get('name'))
+```
 
-# Displays Earth
+```Output
+Earth
 ```
 
 As you might suspect, accessing values in a dictionary is a common operation. Fortunately, there's a shortcut. You can also pass the key into square bracket notation (`[ ]`). This method uses less code than `get`, and most programmers use this syntax instead. You could rewrite the preceding example by using the following:
@@ -53,8 +55,10 @@ As you might suspect, accessing values in a dictionary is a common operation. Fo
 ```python
 # planet['name'] is identical to using planet.get('name')
 print(planet['name'])
+```
 
-# Displays Earth
+```Output
+Earth
 ```
 
 Although the behavior of `get` and the square brackets (`[ ]`) is generally the same for retrieving items, there's one key difference. If a key isn't available, `get` returns `None`, and `[ ]` raises a `KeyError`.
@@ -71,7 +75,7 @@ You can also modify values inside a dictionary object, by using the `update` met
 ```python
 planet.update({'name': 'Makemake'})
 
-# name is now set to Makemake
+# No output: name is now set to Makemake.
 ```
 
 Similar to using the square brackets (`[ ]`) shortcut to read values, you can use the same shortcut to modify values. The key difference in syntax is that you use `=` (sometimes called the *assignment* operator) to provide a new value. To rewrite the preceding example to change the name, you can use the following:
@@ -79,21 +83,25 @@ Similar to using the square brackets (`[ ]`) shortcut to read values, you can us
 ```python
 planet['name'] = 'Makemake'
 
-# name is now set to Makemake
+# No output: name is now set to Makemake.
 ```
 
 The key advantage to using `update` is the ability to modify multiple values in one operation. The next two examples are logically the same, but the syntax is different. You're free to use whichever syntax you feel is most appropriate. Most developers choose square brackets to update individual values.
 
 The following example makes the same edits to our `planet` variable, updating the name and moons. Notice that by using `update`, you're making a single call to the function, whereas using square brackets involves two calls.
 
+Using update:
+
 ```python
-# Using update
 planet.update({
     'name': 'Jupiter',
     'moons': 79
 })
+```
 
-# Using square brackets
+Using square brackets:
+
+```python
 planet['name'] = 'Jupiter'
 planet['moons'] = 79
 ```
@@ -153,6 +161,8 @@ To retrieve values in a nested dictionary, you chain together square brackets, o
 
 ```python
 print(f'{planet["name"]} polar diameter: {planet["diameter (km)"]["polar"]}')
+```
 
-# Output: Jupiter polar diameter: 133709
+```Output
+Jupiter polar diameter: 133709
 ```

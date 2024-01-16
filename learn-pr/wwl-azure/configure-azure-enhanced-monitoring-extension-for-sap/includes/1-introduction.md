@@ -4,7 +4,7 @@ After the monitoring requirements are gathered for your company's SAP on Azure d
 
 ## Learning objectives
 
-You will:
+You'll:
 
 - Explore the Azure Extension for SAP.
 - Configure the Azure Extension for SAP.

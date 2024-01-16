@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-device-compliance.deploy-policy
+title: Deploy a device compliance policy
+metadata:
+  title: Deploy a device compliance policy
+  description: "Deploy a device compliance policy"
+  ms.date: 10/09/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-deploy-policy.md)]

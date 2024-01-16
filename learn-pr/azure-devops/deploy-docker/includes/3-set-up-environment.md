@@ -1,28 +1,27 @@
-In this section, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure App Service environment that you'll deploy to.
+In this section, you'll lean how to set up your Azure DevOps organization and create the Azure App Service environment that you'll deploy to.
 
-To accomplish these goals, you:
+You'll learn how to:
 
 > [!div class="checklist"]
-> * Add a user to ensure Azure DevOps can connect to your Azure subscription.
-> * Set up an Azure DevOps project for this module.
-> * On Azure Boards, move the work item for this module to the **Doing** column.
-> * Create an Azure Container Registry and an Azure App Service Web App using the Azure CLI in Azure Cloud Shell.
-> * Create pipeline variables that define the names of your Azure resources.
-> * Create a service connection that enables Azure Pipelines to securely access your Azure subscription.
+> * Set up your Azure DevOps project.
+> * Manage your work items with Azure Boards.
+> * Create your Azure App Service environment.
+> * Create pipeline variables in Azure Pipelines.
+> * Create a service connection to authenticate with your Azure subscription.
 
 ## Add a user to Azure DevOps
 
 To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You can get started with Azure for free.
 
-You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
+You don't need an Azure subscription to work with Azure DevOps, but in this module you'll use Azure DevOps to deploy to Azure resources. To simplify the process, use the same Microsoft account to sign in to both Azure and Azure DevOps.
 
-If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
+If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user with **Basic** access level to your DevOps organization under the Microsoft account that you use to sign in to Azure. See [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser) for more details.
 
-Then sign out of Azure DevOps and sign in. Use the Microsoft account that you use to sign in to your Azure subscription.
+Then, sign out of Azure DevOps and sign back in using the same account you used to sign in to your Azure subscription.
 
 ## Get the Azure DevOps project
 
-Here you ensure that your Azure DevOps organization is set up to complete the rest of this module. To do so, you run a template that creates a project in Azure DevOps.
+Here, you'll ensure that your Azure DevOps organization is set up to complete the rest of this module. To do so, you'll run a template that creates a project in Azure DevOps.
 
 The modules in this learning path form a progression. You follow the Tailspin web team through their DevOps journey. For learning purposes, each module has its own Azure DevOps project.
 
@@ -36,20 +35,17 @@ Run a template that sets up your Azure DevOps organization:
 From the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. Select **Sign In** and accept the usage terms.
+
 1. On the **Create New Project** page, select your Azure DevOps organization. Enter a project name such as *Space Game - web - Docker*.
 
     :::image type="content" source="../media/3-create-new-project.png" alt-text="Screenshot of creating a project through Azure DevOps Demo Generator.":::
 
-1. Select **Yes, I want to fork this repository** > **Authorize**.
-
-    If a window appears, authorize access to your GitHub account.
+1. Select **Yes, I want to fork this repository** > **Authorize**. If prompted, authorize access to your GitHub account.
 
     > [!IMPORTANT]
-    > You need to select this option so the template will connect to your GitHub repository. Select it even if you've already forked the _Space Game_ website project. The template uses your existing fork.
+    > You need to select this option so the template can connect to your GitHub repository. Make sure to select the checkbox even if you've already forked the *Space Game* repository. The template will use your existing fork.
 
 1. Select **Create Project**.
-
-    The template takes a few moments to run.
 
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 
@@ -60,11 +56,11 @@ From the Azure DevOps Demo Generator site, follow these steps to run the templat
 
 ## Move the work item to Doing
 
-Here you assign a work item to yourself on Azure Boards. You also move the work item to the **Doing** state. In practice, you and your team would create work items at the start of each *sprint*, or work iteration.
+Here, you'll assign a work item to yourself on Azure Boards. You'll also move the work item to the **Doing** state. In practice, you and your team would create work items at the start of each *sprint*, or work iteration.
 
 This work assignment gives you a checklist to work from. It gives other team members visibility into what you're working on and how much work is left. The work item also helps enforce work-in-progress (WIP) limits so that the team doesn't take on too much work at one time.
 
-Here you move the first item, **Create container version of web site using Docker**, to the **Doing** column. Then you assign yourself to the work item.
+Here, you'll move the first item, **Create container version of web site using Docker**, to the **Doing** column, then assign yourself to the work item.
 
 To set up the work item:
 
@@ -72,7 +68,7 @@ To set up the work item:
 
     :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="Screenshot of Azure DevOps showing the location of the Boards menu.":::
 
-1. In the **Create container version of web site using Docker** work item, select the down arrow at the bottom of the card. Then assign the work item to yourself.
+1. In the **Create container version of web site using Docker** work item, select the down arrow at the bottom of the card, then assign the work item to yourself.
 
     :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="Screenshot of Azure Boards showing the location of the down arrow.":::
 
@@ -84,19 +80,18 @@ At the end of this module, you'll move the card to the **Done** column after you
 
 ## Create the Azure App Service environment
 
-Here you create the App Service required to deploy the new container version of the site.
+In the [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true) module, you created an App Service instance using Azure portal. Although the portal is an excellent tool for exploring Azure's offerings, setting up components like App Service can become cumbersome.
 
-In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you brought up App Service through the Azure portal. Although the portal is a great way to explore what's available on Azure or to do basic tasks, bringing up components such as App Service can be tedious.
-
-In this module, you use the Azure CLI to bring up the resources needed to deploy and run an App Service instance. You can access the Azure CLI from a terminal or through Visual Studio Code. Here you access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
+In this module, you'll employ the Azure CLI to launch the resources necessary for deploying and running an App Service instance. You can access the Azure CLI from a terminal or through Visual Studio Code.
 
 > [!IMPORTANT]
-> You need your own Azure subscription to complete the exercises in this module.
+> You must have your own Azure subscription to complete the exercises in this module.
 
-### Bring up Cloud Shell through the Azure portal
+### Launch Cloud Shell inn Azure portal
 
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
-1. From the menu, select **Cloud Shell**. When prompted, select the **Bash** experience.
+1. Navigate to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
+
+1. Select the **Cloud Shell** from the menu bar, and then select the **Bash** experience.
 
     :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="Screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
@@ -105,11 +100,11 @@ In this module, you use the Azure CLI to bring up the resources needed to deploy
 
 ### Select an Azure region
 
-A _region_ is one or more Azure datacenters within a geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an App Service instance, is assigned a region.
+A *region* is one or more Azure datacenters located within a particular geographic location. East US, West US, and North Europe are a few examples of regions. Each Azure resource, such as an App Service instance, is allocated to a specific region.
 
-To make commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region unless you specify a different region.
+To simplify the process of running commands, begin by selecting a default region. Once the default region is specified, subsequent commands will use that region by default unless a different region is explicitly specified.
 
-1. From Cloud Shell, run the following `az account list-locations` command to list the regions that are available from your Azure subscription.
+1. Run the following command to list the available regions for your Azure subscription.
 
     ```azurecli
     az account list-locations \
@@ -117,15 +112,15 @@ To make commands easier to run, start by selecting a default region. After you s
       --output table
     ```
 
-1. From the `Name` column in the output, choose a region that's close to you. For example, choose `eastasia` or `westus2`.
+1. Select a region that is in proximity to your location from the *Name* column in the output. For example, you can choose *eastasia* or *westus2*.
 
-1. Run `az configure` to set your default region. Replace `<REGION>` with the name of the region you chose.
+1. Run the following command to set your default region. Replace the placeholder with the name of the region you've selected.
 
     ```azurecli
     az configure --defaults location=<REGION>
     ```
 
-    This example sets `westus2` as the default region:
+    This example sets *westus2* as the default region:
 
     ```azurecli
     az configure --defaults location=westus2
@@ -133,7 +128,7 @@ To make commands easier to run, start by selecting a default region. After you s
 
 ### Create Bash variables
 
-Create Bash variables to make the setup process more convenient and less error-prone. Using variables for shared text strings helps avoid accidental typos.
+In this section, you'll create Bash variables to make the setup process more convenient and less error-prone. Using variables for shared text strings helps avoid accidental typos.
 
 1. From Cloud Shell, generate a random number. This will make it easier to create globally unique names for certain services in the next step.
 
@@ -141,14 +136,14 @@ Create Bash variables to make the setup process more convenient and less error-p
     resourceSuffix=$RANDOM
     ```
 
-1. Create globally unique names for your App Service Web App and Azure Container Registry. Note that these commands use double quotes, which instructs Bash to interpolate the variables using the inline syntax.
+1. Create globally unique names for your App Service Web App and Azure Container Registry. Using double quotes in these commands prompts Bash to interpolate the variables using the inline syntax.
 
     ```bash
     webName="tailspin-space-game-web-${resourceSuffix}"
     registryName="tailspinspacegame${resourceSuffix}"
     ```
 
-1. Create two more Bash variables to store the names of your resource group and App Service plan. 
+1. Create two more Bash variables to store the names of your resource group and App Service plan.
 
     ```bash
     rgName='tailspin-space-game-rg'
@@ -157,10 +152,8 @@ Create Bash variables to make the setup process more convenient and less error-p
 
 ### Create the Azure resources
 
-This solution requires several Azure resources for deployment, which you create now.
-
    > [!NOTE]
-   > For learning purposes, here you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not internet routable and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
+   > For learning purposes, you'll the default network settings here. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not internet routable and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
 
 1. Run the following `az group create` command to create a resource group using the name defined earlier.
 
@@ -241,9 +234,9 @@ This solution requires several Azure resources for deployment, which you create 
 
 ## Create pipeline variables in Azure Pipelines
 
-In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you added a variable to your pipeline that stores the name of your web app in App Service. Here you do the same. In addition, you'll add the name of your Azure Container Registry.
+In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you added a variable to your pipeline that stores the name of your web app in App Service. You'll do the same thing here. In addition, you'll add the name of your Azure Container Registry.
 
-You could hard-code these names in your pipeline configuration, but if you define them as variables, your configuration will be more reusable. Plus, if the names of your instances change, you can update the variables and trigger your pipeline without modifying your configuration.
+You could hard-code these names in your pipeline configuration, but if you define them as variables, your configuration will be more reusable. Plus, if your instance names change, you can update the variables and trigger your pipeline without modifying your configuration.
 
 To add the variables:
 
@@ -274,7 +267,7 @@ To add the variables:
 
 ## Create required service connections
 
-Here you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the previous module. You'll also create a Docker Registry connection to publish your container to the Azure Container Registry.
+Here, you'll create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the previous module. You'll also create a Docker Registry connection to publish your container to the Azure Container Registry.
 
 > [!IMPORTANT]
 > Ensure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
@@ -288,9 +281,9 @@ Here you create a service connection that enables Azure Pipelines to access your
 
     | Field                   | Value                                      |
     |-------------------------|--------------------------------------------|
-    | Scope level             | **Subscription**                           |
+    | Scope level             | Subscription                               |
     | Subscription            | Your Azure subscription                    |
-    | Resource Group          | **tailspin-space-game-rg**                 |
+    | Resource Group          | *tailspin-space-game-rg*                   |
     | Service connection name | *Resource Manager - Tailspin - Space Game* |
 
     During the process, you might be prompted to sign in to your Microsoft account.
@@ -305,12 +298,12 @@ Here you create a service connection that enables Azure Pipelines to access your
 1. Near the top of the page, select **Azure Container Registry**.
 1. Fill in these fields:
 
-    | Field               | Value                                        |
-    |---------------------|----------------------------------------------|
-    | Subscription    | Your Azure subscription                          |
-    | Azure container registry  | **Select the one you created earlier** |
-    | Service connection name | *Container Registry Connection*          |
+    | Field                     | Value                                        |
+    |---------------------------|----------------------------------------------|
+    | Subscription              | Your Azure subscription                      |
+    | Azure container registry  | Select the one you created earlier           |
+    | Service connection name   | *Container Registry Connection*              |
 
 1. Ensure that **Grant access permission to all pipelines** is selected.
 
-1. Select **Save**.
+1. Select **Save** when you're done.

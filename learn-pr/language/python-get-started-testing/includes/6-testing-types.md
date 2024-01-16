@@ -1,6 +1,6 @@
 When you're developing a testing strategy, the different types of testing can cause some confusion. Knowing what these types of testing are and how they're different from each other is a solid way to implement a robust testing strategy.
 
-> [!NOTE] 
+> [!NOTE]
 > The difference between unit, integration, and functional testing can be controversial. These descriptions are meant as guidelines. The most important thing is to be consistent with the project and other developers.
 
 ## Unit testing
@@ -62,7 +62,7 @@ For example, if a developer wants to merge changes to the main branch, it's idea
 ### Running on a schedule
 
 As already mentioned, automation is a crucial part of a CI process. Usually, with the setup of any test type, dependencies must be installed in order for tests to work. Using a schedule for a test run (for example a nightly run) ensures that a project builds correctly even when dependencies change.
- 
+
 A recurrent scheduled test run can also be helpful when running tests that take a long time to complete. If a software project has functional tests that take a few hours to complete, it would be more efficient to run those tests at night. so the team can work on failures first thing in the morning.
 
 ### Manual triggering

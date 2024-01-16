@@ -1,6 +1,6 @@
 There are various ways to connect to databases within the Azure SQL Database service from an application. For .NET apps, you can use the `System.Data.SqlClient` library.
 
-The web app for the university must fetch and display the data that you uploaded to your SQL database. In this unit, you'll learn how to connect to a database from a web app and use the `System.Data.SqlClient` library to process data.
+The web app for the university must fetch and display the data that you uploaded to your SQL database. In this unit, you learn how to connect to a database from a web app and use the `System.Data.SqlClient` library to process data.
 
 ## System.Data.SqlClient library overview
 
@@ -55,7 +55,7 @@ using (SqlConnection con = new SqlConnection(connectionString))
 
 ## Define a T-SQL command or query
 
-Create an `SqlCommand` object to specify an T-SQL command or query to run. The following example shows a T-SQL `DELETE` statement that removes rows for a given customer from the `dbo.Orders` table. You can parameterize commands. This example uses a parameter that's named *CustID* for the `CustomerID` value. The line that sets the `CommandType` property of the `SqlCommand` object to `Text` indicates that the command is a T-SQL statement. You can also run a stored procedure rather than a T-SQL statement. In that case, you set the `CommandType` to `StoredProcedure`.
+Create an `SqlCommand` object to specify a T-SQL command or query to run. The following example shows a T-SQL `DELETE` statement that removes rows for a given customer from the `dbo.Orders` table. You can parameterize commands. This example uses a parameter that's named *CustID* for the `CustomerID` value. The line that sets the `CommandType` property of the `SqlCommand` object to `Text` indicates that the command is a T-SQL statement. You can also run a stored procedure rather than a T-SQL statement. In that case, you set the `CommandType` to `StoredProcedure`.
 
 ```C#
 SqlCommand deleteOrdersForCustomer = new SqlCommand("DELETE FROM Orders WHERE CustomerID = @custID", con);
@@ -78,7 +78,7 @@ queryCmd.CommandType = CommandType.Text;
 
 ## Run a command
 
-If your `SqlCommand` object references a T-SQL statement that doesn't return a result set, run the command by using the `ExecuteNonQuery` method. If the command succeeds, it returns the number of rows that are affected by the operation. The next example shows how to run the `deleteOrdersForCustomer` command that was shown earlier.
+If your `SqlCommand` object references a T-SQL statement that doesn't return a result set, run the command by using the `ExecuteNonQuery` method. If the command succeeds, it returns the number of rows affected by the operation. The next example shows how to run the `deleteOrdersForCustomer` command that was shown earlier.
 
 ```C#
 int numDeleted = deleteOrdersForCustomer.ExecuteNonQuery();
@@ -109,7 +109,7 @@ while (rdr.Read())
 
 Exceptions and errors can occur for various reasons when you're using a database. For example, you might try to access a table that no longer exists. You can catch T-SQL errors by using the `SqlException` type.
 
-An exception might be triggered by various events or problems in the database. An `SqlException` object has a property `Errors` that contains a collection of `SqlError` objects. These objects provide the details for each error. The following example shows how to catch an `SqlException` and process the errors that it contains.
+Various events or problems in the database might trigger an exception. An `SqlException` object has a property `Errors` that contains a collection of `SqlError` objects. These objects provide the details for each error. The following example shows how to catch an `SqlException` and process the errors that it contains.
 
 ```C#
 ...

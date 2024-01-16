@@ -10,16 +10,16 @@ In the [Run quality tests in your build pipeline using Azure Pipelines](/trainin
 
 After completing this module, you'll be able to:
 
-- Define the role of functional tests and identify some popular kinds of tests you can run
-- Map manual testing steps to automated test cases
-- Run automated UI tests locally and in the pipeline using Selenium
+- Define the role of functional tests and identify some popular kinds of tests you can run.
+- Map manual testing steps to automated test cases.
+- Run automated UI tests locally and in the pipeline using Selenium.
 
 ## Prerequisites
 
 The modules in this learning path form a progression. To follow the progression from the beginning, complete these learning paths first:
 
-* [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
-* [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
+- [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
+- [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
 
 We also recommend that you start at the beginning of the [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true) learning path.
 

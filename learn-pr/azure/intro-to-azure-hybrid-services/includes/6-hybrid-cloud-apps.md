@@ -7,7 +7,7 @@ In this unit, you'll learn about the technologies that allow Tailwind Traders to
 
 ## What is Azure Relay?
 
-Azure Relay, previously called Service Bus Relay, is a service that you can use to securely expose workloads that run on your organization's internal network to the public cloud. The service enables you to do this without opening an inbound port on a perimeter network firewall.
+Azure Relay is a service that you can use to securely expose workloads that run on your organization's internal network to the public cloud. The service enables you to do this without opening an inbound port on a perimeter network firewall.
 
 Azure Relay supports the following scenarios between on-premises services and applications running in Azure:
 
@@ -20,7 +20,7 @@ Azure Relay has the following features:
 - **Hybrid Connections**. This feature uses open-standard web sockets and can be used in multiplatform architectures. It supports .NET Core, .NET Framework, JavaScript/Node.js, standards-based open protocols, and remote procedure call (RPC) programming models.
 - **WCF Relay**. This feature uses Windows Communication Foundation (WCF) to enable remote procedure calls. It's option that many customers use with their WCF programs. It also supports the .NET Framework.
 
-Azure Relay allows Tailwind Traders to publish some applications that run on the internal network to clients on the internet without requiring a VPN connection. The company should use Azure Relay instead of Azure App Service Hybrid Connections when there is no front-end web app running in Azure. Azure Relay should be used instead of Azure Active Directory (Azure AD) Application Proxy when the application doesn't require Azure AD authentication.
+Azure Relay allows Tailwind Traders to publish some applications that run on the internal network to clients on the internet without requiring a VPN connection. The company should use Azure Relay instead of Azure App Service Hybrid Connections when there is no front-end web app running in Azure. Azure Relay should be used instead of Microsoft Entra application proxy when the application doesn't require Microsoft Entra authentication.
 
 ## What is App Service Hybrid Connections?
 
@@ -32,7 +32,7 @@ Hybrid Connections uses a relay agent that you deploy in a location where the ag
 
 The following image shows a hybrid connection between a web app running in Azure and a database endpoint running on-premises.
 
-:::image type="content" source="../media/image12.png" alt-text="Hybrid connection between a web app in Azure and a database endpoint on-premises." lightbox="../media/image12.png":::
+:::image type="content" source="../media/6-connection.png" alt-text="Diagram that shows hybrid connection between a web app in Azure and a database endpoint on-premises." border="false" lightbox="../media/6-connection.png":::
 
 Hybrid Connections has the following functionality:
 
@@ -50,9 +50,11 @@ Hybrid Connections has the following limitations:
 
 For Tailwind Traders, Hybrid Connections will enable the retirement of several applications that currently have their front ends running on the Tailwind Traders perimeter network. These apps can be migrated to Azure. Hybrid Connections will then provide a secure connection to protected networks that host the app's back-end components.
 
-## What is Azure AD Application Proxy?
+<a name='what-is-azure-ad-application-proxy'></a>
 
-Azure AD Application Proxy allows you to provide secure remote access to a web application that's running in an on-premises environment through an external URL. You can configure Application Proxy to allow remote access and single sign-on to SharePoint, Microsoft Teams, IIS web applications, and Remote Desktop. Application Proxy can be implemented as a replacement for VPNs to internal networks or reverse proxies.
+## What is Microsoft Entra application proxy?
+
+Microsoft Entra application proxy allows you to provide secure remote access to a web application that's running in an on-premises environment through an external URL. You can configure Application Proxy to allow remote access and single sign-on to SharePoint, Microsoft Teams, IIS web applications, and Remote Desktop. Application Proxy can be implemented as a replacement for VPNs to internal networks or reverse proxies.
 
 Application Proxy functions with the following applications:
 
@@ -62,7 +64,7 @@ Application Proxy functions with the following applications:
 
 Application Proxy functions in the following way:
 
-1. The user connects to the application through a publicly available endpoint and then performs an Azure AD sign-on.
+1. The user connects to the application through a publicly available endpoint and then performs a Microsoft Entra sign-on.
 2. A token is forwarded to the user's device after the sign-in is complete.
 3. The client device forwards the token to the Application Proxy service, which returns the user principal name (UPN) and security principal name (SPN) from the token. Application Proxy then forwards the request to the Application Proxy connector.
 4. If single sign-on has been enabled, the Application Proxy connector performs additional authentication.
@@ -71,8 +73,8 @@ Application Proxy functions in the following way:
 
 The following image shows this process:
 
-:::image type="content" source="../media/image13.png" alt-text=" Application Proxy functionality with the user outside the organizational network making a connection through Application Proxy to an on-premises application." lightbox="../media/image13.png":::
+:::image type="content" source="../media/6-application-proxy-process-diagram.png" alt-text="Diagram that shows Application Proxy functionality with the user outside the organizational network making a connection through Application Proxy to an on-premises application." border="false" lightbox="../media/6-application-proxy-process-diagram.png":::
 
 Users of internal networks that allow direct connection to applications should avoid using Application Proxy.
 
-Tailwind Traders can use Azure AD Application Proxy to give external users access to internal applications that use Active Directory authentication.
+Tailwind Traders can use Microsoft Entra application proxy to give external users access to internal applications that use Active Directory authentication.

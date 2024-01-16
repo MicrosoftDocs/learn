@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-identity-access-management.introduction
+title: Introduction to Identity and Access Management
+metadata:
+  title: Introduction to Identity and Access Management
+  description: "SC-100 preparatory unit on the topic: introduction to identity and access management."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
