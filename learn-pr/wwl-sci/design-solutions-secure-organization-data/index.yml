@@ -9,7 +9,9 @@ metadata:
   ms.topic: module
   ms.service: azure
 title: Design solutions for securing an organization's data
-summary: "You learn about designing solutions that secure an organization's data using capabilities like Microsoft Purview, Defender for SQL, Defender for Storage."
+summary: |
+  You learn about designing solutions that secure an organization's data using capabilities like Microsoft Purview, Defender for SQL, Defender for Storage.
+  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   By the end of this module, you are able to:
   - Design a solution for data discovery and classification using Microsoft Purview
