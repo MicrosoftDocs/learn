@@ -1,6 +1,6 @@
 [!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-Before you create the deployment pipeline for your toy company's website, you need to create a service principal and grant it access to your Azure environment. In this exercise, you'll create the service principal that you'll use for your deployment pipeline.
+Before you create the deployment pipeline for your toy company's website, you'll need to create a service principal and grant it access to your Azure environment. In this exercise, you'll create the service principal that you'll use for your deployment pipeline.
 
 During the process, you'll:
 
@@ -78,14 +78,17 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
    ```azurepowershell
    $servicePrincipal = New-AzADServicePrincipal `
      -DisplayName ToyWebsitePipeline
+   ```
+1. Run the following command to get the service principal's key:
 
-   $servicePrincipalKey = $servicePrincipal.PasswordCredentials.SecretText
+   ```azurepowershell 
+   $servicePrincipalKey = ConvertFrom-SecureString -SecureString $servicePrincipal.Secret -AsPlainText
    ```
 
 1. Run the following command to show the service principal's application ID, the key, and your Microsoft Entra tenant ID:
 
    ```azurepowershell
-   Write-Output "Service principal application ID: $($servicePrincipal.AppId)"
+   Write-Output "Service principal application ID: $($servicePrincipal.ApplicationId)"
    Write-Output "Service principal key: $servicePrincipalKey"
    Write-Output "Your Azure AD tenant ID: $((Get-AzContext).Tenant.Id)"
    ```
@@ -99,7 +102,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 ## Test the service principal
 
-Now that the service principal has been created, you sign in by using its credentials to verify that it was created successfully.
+Now that the service principal has been created, you can sign in by using its credentials to verify that it was created successfully.
 
 ::: zone pivot="cli"
 
@@ -133,7 +136,7 @@ Now that the service principal has been created, you sign in by using its creden
    $credential = Get-Credential
    ```
 
-1. Run this Azure PowerShell command in the Visual Studio Code terminal to sign in by using the service principal's credentials. Replace the placeholders with the values that you copied in the previous step.
+1. Run this Azure PowerShell command in the Visual Studio Code terminal to sign in by using the service principal's credentials.
 
    ```azurepowershell
    Connect-AzAccount -ServicePrincipal `
