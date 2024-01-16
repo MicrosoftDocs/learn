@@ -9,7 +9,9 @@ metadata:
   ms.topic: module
   ms.service: azure
 title: Design a resiliency strategy for common cyberthreats like ransomware
-summary: "You'll learn about common cyberthreats like ransomware and what kinds of attack patterns an organization must be prepared for."
+summary: |
+  You'll learn about common cyberthreats like ransomware and what kinds of attack patterns an organization must be prepared for."
+  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   By the end of this module, you'll be able to:
     - Understand common cyberthreats like ransomware.
