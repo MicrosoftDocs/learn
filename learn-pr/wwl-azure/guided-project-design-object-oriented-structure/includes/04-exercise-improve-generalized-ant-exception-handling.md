@@ -1,6 +1,8 @@
 In this exercise, we will "generalize" our Langton's Ant implementation even further so that it can support more than two colors.
 
-## Change the `GeneralizedAnt` rule property to "normal"
+## Change the `GeneralizedAnt` rule property to a typical get-set property
+
+Properties can either be `auto` properties that mask the details of a property, or they can be regular `get-set` properties that show the getter and setter methods and the variable for storing the property, as shown here.
 
 1. Open WPF\Game\GeneralizedAnt.cs
 
@@ -10,7 +12,7 @@ In this exercise, we will "generalize" our Langton's Ant implementation even fur
     public string Rule { get; set; } = "RL";
     ```
 
-    Properties can either be `auto` properties that mask the details of a property, or they can be regular `get-set` properties that show the getter and setter methods and the variable for storing the property, as shown here.
+1. Modify the property to show the details, as shown here.
 
     ```csharp
     protected string rule = "LR";
@@ -31,7 +33,9 @@ In this exercise, we will "generalize" our Langton's Ant implementation even fur
 
 ## Add value validation when setting the Rule property
 
-1. Modify the setter for the Rule property as shown. It should validate that the values it sets are from 2-14 characters long and contain only `L` or `R` characters.
+Your setter should validate that the values being passed in are valid. It should validate that the values it sets are from 2-14 characters long and contain only `L` or `R` characters.
+
+1. Modify the setter for the Rule property as shown.
 
     ```csharp
     protected string rule = "LR";

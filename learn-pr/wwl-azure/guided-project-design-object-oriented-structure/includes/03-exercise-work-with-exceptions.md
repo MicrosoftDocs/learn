@@ -7,6 +7,9 @@ Finally, you'll create a custom exception and use it in a Try…Catch block in y
 
 ## Review a custom exception
 
+All C# exception objects inherit from `System.Exception`. You create this inheritance relationship so that you can throw an exception for the class you create. In this case, a `JSONSerializationException` exception is being created, inheriting from
+`System.Exception`.
+
 1. Select the WPF --> JSON folder
 
 1. Open the `JSONSerializationException.cs` file.
@@ -26,6 +29,8 @@ Finally, you'll create a custom exception and use it in a Try…Catch block in y
 The custom class JSONSerializationException is created by inheriting from the .NET Exception class and passing a message and innerException information to the base class. This is how you create a basic custom exception: by creating a class that inherits from the .NET Exception class and passing information about the exception to the constructor of the derived class. Let’s see how to use a custom exception in a Try…Catch block.
 
 ## Review a custom exception used in a Try...Catch block
+
+Typically, you use exceptions in a Try...Catch block. In the Try block, you surround the code that can potentially cause an error, as shown here. In the header of the Catch block, you include your exception type, along with the name of the exception variable.
 
 1. Select the `GameJSONSerializer.cs` file in the WPF --> JSON folder.
 
@@ -154,6 +159,8 @@ Knowing when to throw an exception, such as `JSONSerializationException` or `IOE
     ```
 
 ## Add exception handling when saving a game
+
+In this example, you surround your serialization functionality when saving a game with a Try...Catch block.
 
 1. Locate the `btnSave_Click` method in the `MainWindow.xaml.cs` file.
 
