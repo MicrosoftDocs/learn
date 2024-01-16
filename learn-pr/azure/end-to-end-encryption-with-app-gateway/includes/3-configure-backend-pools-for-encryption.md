@@ -1,6 +1,6 @@
 The back-end pool contains the servers that implement the application. Azure Application Gateway routes requests to these servers, and can load balance the traffic across these servers.
 
-In the shipping portal, the application servers in the back-end pool must use SSL to encrypt the data that passes between Application Gateway and the servers in the back-end pool. Application Gateway uses an SSL certificate with a public key to encrypt the data. The servers use the corresponding private key to decrypt the data as it's received. In this unit, you see how to create the back-end pool and install the necessary certificates in Application Gateway. These certificates help protect the messages sent to and from the back-end pool.
+In the shipping portal, the application servers in the back-end pool must use SSL to encrypt the data that passes between Application Gateway and the servers in the back-end pool. Application Gateway uses an SSL certificate with a public key to encrypt the data. The servers use the corresponding private key to decrypt the data as it's received. In this unit, you'll see how to create the back-end pool and install the necessary certificates in Application Gateway. These certificates help protect the messages sent to and from the back-end pool.
 
 ## Encryption from Application Gateway to the back-end pool
 
@@ -10,7 +10,7 @@ A back-end pool can reference individual virtual machines, a virtual machine sca
 
 If the traffic directed to the back-end pool is protected through SSL, each server in the back-end pool must provide a suitable certificate. For testing purposes, you can create a self-signed certificate. In a production environment, you should always generate or purchase a certificate that a certificate authority (CA) can authenticate.
 
-There are currently two versions of Application Gateway: v1 and v2. They have similar capabilities but have slightly different implementation details. The v2 version provides more features and performance improvements.
+There are currently two versions of Application Gateway: v1 and v2. They have similar capabilities, but have slightly different implementation details. The v2 version provides more features and performance improvements.
 
 ### Certificate configuration in Application Gateway v1
 
@@ -29,7 +29,7 @@ az network application-gateway auth-cert create \
 Application Gateway provides other commands you can use to list and manage authentication certificates. For example:
 
 * The `az network application-gateway auth-cert list` command shows the certificates that have been installed.
-* The `az network application-gateway auth-cert update` command can be used to change the certificate.
+* You can use the `az network application-gateway auth-cert update` command to change the certificate.
 * The `az network application-gateway auth-cert delete` command removes a certificate.
 
 ### Certificate configuration in Application Gateway v2
@@ -55,7 +55,7 @@ Application Gateway uses a *rule* to specify how to direct the messages it recei
 
 You define this configuration information by using an *HTTP setting*.
 
-Define an HTTP setting by using the `az network application-gateway http-settings create` command in the Azure CLI. The following example shows the syntax for creating a setting that routes traffic by using the HTTPS protocol to port 443 on the servers in the back-end pool. If you're using Application Gateway v1, the `--auth-certs` parameter is the name of the authentication certificate that you added to Application Gateway previously.
+You can define an HTTP setting by using the `az network application-gateway http-settings create` command in the Azure CLI. The following example shows the syntax for creating a setting that routes traffic by using the HTTPS protocol to port 443 on the servers in the back-end pool. If you're using Application Gateway v1, the `--auth-certs` parameter is the name of the authentication certificate that you added to Application Gateway previously.
 
 ```azurecli
 az network application-gateway http-settings create \
