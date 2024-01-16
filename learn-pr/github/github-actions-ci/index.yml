@@ -6,7 +6,8 @@ metadata:
   ms.date: 11/12/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: github
 title: "Build continuous integration (CI) workflows by using GitHub Actions"
 summary: Learn how to create workflows that enable you to use Continuous Integration (CI) for your projects.
 abstract: |
