@@ -41,11 +41,11 @@ subjects:
 - development-tools
 - cloud-computing
 units:
-- learn.quantum.qsharp-create-first-quantum-development-kit.introduction
+- learn.quantum.qsharp-create-first-quantum-development-kit.1-introduction
 - learn.quantum.qsharp-create-first-quantum-development-kit.qsharp-structure
-- learn.quantum.qsharp-create-first-quantum-development-kit.random-bit-generator
-- learn.quantum.qsharp-create-first-quantum-development-kit.random-number-generator
+- learn.quantum.qsharp-create-first-quantum-development-kit.4-random-bit-generator
+- learn.quantum.qsharp-create-first-quantum-development-kit.5-random-number-generator
 - learn.quantum.qsharp-create-first-quantum-development-kit.knowledge-check
-- learn.quantum.qsharp-create-first-quantum-development-kit.summary
+- learn.quantum.qsharp-create-first-quantum-development-kit.8-summary
 badge:
   uid: learn.quantum.qsharp-create-first-quantum-development-kit.badge
