@@ -5,15 +5,15 @@ Build a culture that continuously improves quality by monitoring the workload an
 
 Operations built for the purposes of observability are key in proactive maintenance of the application, quality and security assurance, capacity planning, and product management.
 
-A crucial aspect of monitoring is application using health modeling to help you anticipate issues before they become incidents and affect customer experience. Efficient monitoring reduces reactive cycles spent on incident management.
+A crucial aspect of application monitoring is using health modeling to help you anticipate issues before they become incidents and affect customer experience. Efficient monitoring reduces reactive cycles spent on incident management.
 
-**Example scenario**
+## Example scenario
 
 Contoso has developed an app for internal use called Contoso Real Estate. This web app allows new hires or existing employees that are relocating to search for and reserve short-term housing to help with their relocation. Contoso's HR department also uses the app to assist with relocations. 
 
 The app is in production and is deployed entirely in Azure. It’s built on micro-services using Azure Container Apps and also uses Azure Functions, Azure Database for PostrgreSQL, Azure Blob Storage, and Azure Monitor.
 
-## Observe your workload through telemetry
+### Observe your workload through telemetry
 
 **Emit telemetry from application code that correlates the key points of the execution flow and gives an end-to-end view at different levels of granularity.**
 
@@ -30,7 +30,7 @@ Prioritize actions based on the severity level, and understand the context given
 - This change allowed the team to confirm that database query timeouts, which were not being properly handled in the latest update of the app, were the root cause of the failures the users were experiencing. After finding the root cause, it was straightforward for the team to implement a fix. 
 - The team is now designing a new approach, using OpenTelemetry, to implement a more comprehensive distributed tracing solution that covers all solution tiers.
 
-## Visualize monitoring data in dashboards
+### Visualize monitoring data in dashboards
 
 **Aggregate and visualize data in dashboards to present monitoring data that's catered to audiences and keeps the business context in mind. Use situational dashboards for surfacing data to drive awareness among the stakeholders. Use operational dashboards and workbooks with drill-down capabilities for operator activities like incident response. Frequently refresh the dashboards and provide granular data.**
 
@@ -49,7 +49,7 @@ Dashboards that are tailored to the interest of the customer make interpretation
     - Operational dashboards and workbooks will have more detailed and granular data for the operations team. These dashboards will have drill-down capabilities that allow the users to explore the data at different levels of granularity. The users will be able to use these dashboards and workbooks to perform troubleshooting and other incident response tasks.
 - The dashboards will enable users to analyze trends, track business targets, and manage incidents more effectively. The data presented on each dashboard will be more relevant to its intended audience and will be driven by their interests and needs.
 
-## Design a robust alerting strategy
+### Design a robust alerting strategy
 
 **Make alerts actionable by notifying the accountable roles with standardized descriptions and severity levels. Provide information that's collated from various sources and track deviations from business targets.**
 
