@@ -2,6 +2,8 @@ In this exercise, you'll write code that enables an ant to move to the next gene
 
 ## Copy GameBuffer.cs to the project
 
+To get started, copy `GameBuffer.cs` to your project. 
+
 1. Copy resources\GameBuffer.cs to WPF\Game folder.
     1. Open [Starter Files](https://github.com/MicrosoftLearning/Challenge-Project-design-object-oriented-structures/tree/main/Starter).
     1. Open the `resources` folder.
