@@ -2692,3 +2692,13 @@ achievements:
   title: Understand API gateways in a cloud-native ASP.NET Core microservices app
   summary: Learn to modify cloud-native ASP.NET Core microservices app to understand API gateways in Azure.
   iconUrl: /training/achievements/aspnetcore/microservices-apigateway-aspnet-core-social.png
+- uid: learn.azdo.deploy-java-containers.badge
+  type: badge
+  title: Automate Java container deployments with Azure Pipelines
+  summary: Implement an Azure Pipelines continuous integration and continuous deployment (CI/CD) pipeline for Java containers.
+  iconUrl: /training/achievements/azure-devops/deploy-java-containers.svg
+- uid: learn.azdo.deploy-nodejs.badge
+  type: badge
+  title: Guided project - Automate Node.js deployments with Azure Pipelines
+  summary: Implement CI/CD pipeline for Node.js applications. Automate deployment of Vue, React, Angular or Webpack apps with Azure Pipelines.
+  iconUrl: /training/achievements/azure-devops/deploy-nodejs.svg
