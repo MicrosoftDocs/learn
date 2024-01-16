@@ -27,16 +27,16 @@ quiz:
       explanation: "Incorrect. A list of user accounts isn't included in a catalog."
   - content: "How long are deleted users retained by Microsoft Entra ID by default?"
     choices:
-    - content: "Fourteen (14) days"
+    - content: "14 days"
       isCorrect: false
       explanation: "Incorrect. Microsoft Entra deleted user account retention can be changed. By default a deleted user is in a deleted state for 30 days. During which time an administrator can restore the account."
-    - content: "Thirty (30) days"
+    - content: "30 days"
       isCorrect: true
       explanation: "Correct. By default with Microsoft Entra ID, a deleted user is in a deleted state for 30 days. During which time an administrator can restore the account."
-    - content: "Sixty (60) days"
+    - content: "60 days"
       isCorrect: false
       explanation: "Incorrect. Microsoft Entra deleted user account retention can be changed. By default a deleted user is in a deleted state for 30 days. During which time an administrator can restore the account."
-  - content: "What is the most common scenario an access packages is used?"
+  - content: "What is the most common scenario an access package is used?"
     choices:
     - content: "To allow one organization access when collaborating on a project."
       isCorrect: false
