@@ -3,6 +3,8 @@ Now that you know what Azure VMware Solution is and what it can do, let's see ho
 ## Shared support
 On-premises VMware environments require the customer to support all the hardware and software for running the platform. Azure VMware Solution does not. Microsoft maintains the platform for the customer. Let's take a look what the customer manages and what Microsoft manages.
 
+For the following table: Microsoft manages = **Blue**, Customer manages = **Grey**
+
 :::image type="icon" source="../media/3-azure-vmware-solution-responsibility-matrix.png" border="false" alt-text="Diagram that shows the shared support matrix for Azure VMware Solution.":::
 
 In partnership with VMware, Microsoft covers the life-cycle management of VMware software (ESXi, vCenter, and vSAN). Microsoft also works with VMware for the life-cycle management of NSX-T appliances and bootstrapping the network configuration, such as creating the Tier 0 gateway and enabling north/south routing. 
