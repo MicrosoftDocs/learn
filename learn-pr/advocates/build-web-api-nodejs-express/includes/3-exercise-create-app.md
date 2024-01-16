@@ -125,7 +125,7 @@ Create a basic application that handles requests.
 
    After setting up the route, the code starts the web application by invoking the `listen()` method:
 
-   > `app.listen(port, () => console.log(`Example app listening on port ${port}!`));`
+   > `app.listen(port, () => console.log('Example app listening on port ${port}!'));`
 
 1. Open a terminal for this subfolder by right-clicking the subfolder name and selecting **Open in integrated terminal**.
 1. In the terminal, run the following command to start the Express web application:
