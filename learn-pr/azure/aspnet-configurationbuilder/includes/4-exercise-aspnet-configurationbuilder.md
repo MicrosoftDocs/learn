@@ -40,7 +40,8 @@ In this unit, you store the SQL Server connection string in your Azure key vault
         -VaultName $vaultname `
         -ResourceGroupName $resourcegroupname `
         -ObjectId $appId `
-        -PermissionsToSecrets Get
+        -PermissionsToSecrets Get `
+        -BypassObjectIdValidation
     ```
 
 1. Generate the connection string for the SQL Server database by using the PowerShell variables that you created earlier.
