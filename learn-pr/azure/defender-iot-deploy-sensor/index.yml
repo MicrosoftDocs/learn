@@ -41,7 +41,7 @@ units:
 - learn.defender-iot-deploy-sensor.introduction
 - learn.defender-iot-deploy-sensor.describe-the-deployment-phase
 - learn.defender-iot-deploy-sensor.plan-to-deploy-sensor
-- learn.defender-iot-deploy-senso.onboard-a-virtual-ot-sensor
+- learn.defender-iot-deploy-sensor.exercise-onboard-virtual-sensor
 - learn.defender-iot-deploy-sensor.knowledge-check
 - learn.defender-iot-deploy-sensor.summary
 badge:
