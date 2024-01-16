@@ -29,7 +29,7 @@ To set up a Blazor project to work with, we use Visual Studio Code and the C# De
     dotnet new blazor
     ```
 
-Regardless if you created the Blazor app with Visual Studio Code or the CLI it creates a basic Blazor project with all required files and pages, along with a C# project file named **BlazorApp.csproj**.
+Whether you created the Blazor app with Visual Studio Code or the CLI it creates a basic Blazor project with all required files and pages, along with a C# project file named **BlazorApp.csproj**.
 
     You should now have access to these files.
 

@@ -3,7 +3,7 @@ uid: learn.build-web-app-blazor-webassembly-vscode.2-understand-blazor-webassemb
 title: What is Blazor?
 metadata:
   title: What is Blazor?
-  description: Learn how Blazor can help ou build full stack web apps and how can you leverage both Server and WebAssembly technology.
+  description: Learn how Blazor can help you build full stack web apps and how can you leverage both Server and WebAssembly technology.
   ms.date: 01/05/2024
   author: csharpfritz
   ms.author: jefritz
