@@ -129,7 +129,7 @@ Comparing the two code examples, you can see that Express saves a few lines of t
 
 To start developing a Node.js application using the Express framework, you need to install it as a dependency. It's also recommended that you first initialize a Node.js project so that any downloaded dependencies end up in the **package.json** file. It's a general recommendation for any apps developed for the Node.js runtime. The benefits of doing so come when pushing the code to a repository like GitHub. Anyone fetching the code from GitHub can easily use the code you write by first installing its dependencies.  
 
-Too create a web application with the Express framework, typical steps include:
+To create a web application with the Express framework, typical steps include:
 
 1. **Create the web app**: Create a web application instance. At this point, the web server can't be run, but you have something you can extend.
 1. **Define routes and route handlers**: Define what routes the application should listen to. Typical route management includes:
