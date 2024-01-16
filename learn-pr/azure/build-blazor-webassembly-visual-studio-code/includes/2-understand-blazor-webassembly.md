@@ -58,4 +58,4 @@ The connection Blazor Server uses to communicate with the browser is also used t
 
 You can build Blazor apps by using the latest version of Visual Studio 2022, [Visual Studio Code (with the .NET SDK and C# Dev Kit extension)](https://code.visualstudio.com/docs/csharp/get-started#_install), or the .NET CLI. In this module, we'll be using Visual Studio 2022 or Visual Studio Code to build our Blazor application.
 
-Whatever your development environment, you need to install the **ASP.NET and web development* workload to ensure the .NET 8.0 SDK and tools are available in Visual Studio.  After installation, you'll have everything you need to start building Blazor apps. You'll build your first Blazor app in the next exercise.
+Whatever your development environment, you need to install the **ASP.NET and web development** workload to ensure the .NET 8.0 SDK and tools are available in Visual Studio.  After installation, you'll have everything you need to start building Blazor apps. You'll build your first Blazor app in the next exercise.
