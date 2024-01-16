@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.defender-iot-deploy-sensor.plan-to-deploy-sensor
-
-title: Plan to deploy and OT sensor
-
+title: Plan to deploy an OT sensor
 metadata:
-  title: learning-content
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: Plan to deploy an OT sensor
+  description: "Plan to deploy an OT sensor"
   ms.date: 1/16/2024
   author: limwainstein
   ms.author: lwainstein
