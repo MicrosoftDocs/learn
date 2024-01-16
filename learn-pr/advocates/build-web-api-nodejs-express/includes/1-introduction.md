@@ -7,17 +7,3 @@ While the HTTP module in Node.js is capable of using HTTP, it operates at a low 
 There are several web frameworks available for Node.js, including Hapi, Fastify, Koa, and Express. Express is widely used due to its longevity, well-designed APIs, and prompt security patches.
 
 In this module, you'll learn how to handle HTTP requests with Node.js using the Express framework, a tool that simplifies the process of building websites and HTTP APIs.
-
-## Learning objectives
-
-By the end of this module, you'll be able to:
-
-- Use a dev container for your development environment
-- Describe the core concepts of the web framework Express.js.
-- Configure middleware to control how a request is handled.
-
-## Prerequisites
-
-- Familiarity with editing text and code files in any text editor
-- Basic familiarity with HTTP
-- Experience using the command line, including Git operations
