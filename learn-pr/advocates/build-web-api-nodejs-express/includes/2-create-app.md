@@ -53,7 +53,7 @@ This example configures the web application with the following steps:
 
 1. **requestHandler**: The function reads the request (`req`) and determines what response (`res`) to send. 
 1. **server**: The `createServer()` method is defined with the request handler. Because there is only one request handler, the server will always respond with the same response. In a real-world application, you would have multiple request handlers to handle different types of requests and different routes. This will be covered in more detail later.
-1. **server.listen**: The `listen()` method is invoked with a specified port. After the call to the `listen()` method, the server is ready to accept client requests. When run locally, the app will be available on `http://localhost:3000`. The console.log statement is executed to let the developer know that the server is ready to use.
+1. **server.listen**: The `listen()` method is invoked with a specified port. After the call to the `listen()` method, the server is ready to accept client requests. When run locally, the app will be available on `http://localhost:3000`. The `console.log` statement is executed to let the developer know that the server is ready to use.
 
 This Express.js code example uses multiple styles of functions: 
 
