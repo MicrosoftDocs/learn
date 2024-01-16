@@ -23,7 +23,7 @@ quiz:
       explanation: "An Azure account is not required to start using Azure Quantum, but it's recommended if you want have access to all the features."
     - content: "You need to create an Azure account and have a valid subscription in order to start using Azure Quantum."
       isCorrect: false
-      explanation: "Without an Azure account you can go to the Azure Quantum website and run your programs in the Copilot, or install the QDK extension for Visual Studio Code. An Azure account is not required to start using Azure Quantum, but it's recommended if you want have access to all the features."
+      explanation: "Without an Azure account you can go to the Azure Quantum website and run your programs in the Copilot, or install the QDK extension for Visual Studio Code. An Azure account is not required to start using Azure Quantum, but it's recommended if you want to have access to all the features."
     - content: "If you don't have an account, you can still use the notebooks in Azure portal to run your programs."
       isCorrect: false
       explanation: "To access the Azure portal and the notebooks, you need to have an Azure account."
@@ -33,7 +33,7 @@ quiz:
     - content: 'A professor who wants to host a quantum hackathon for their students.'
       isCorrect: false
       explanation: 'To host a hackathon, the professor should use the Azure portal. With the Azure portal, they can grant their students access to a Quantum workspace and the notebooks, and manage the credits usage.'
-    - content: 'A developer who wants expand their programming skills and learn to write quantum programs locally.'
+    - content: 'A developer who wants to expand their programming skills and learn to write quantum programs locally.'
       isCorrect: true
       explanation: "This user may benefit from installing the QDK, as they're familiar with local development, debugging and testing."
     - content: 'A physics student who wants to learn the basic concepts of quantum computing.'

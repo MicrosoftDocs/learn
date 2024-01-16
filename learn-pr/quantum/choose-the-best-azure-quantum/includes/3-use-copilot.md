@@ -60,7 +60,7 @@ To run your program again using a different simulator:
 1. Select the number of shots (currently limited to 20) and select **Run**.
 
     - The job status is displayed at the top of the code window.
-    - A histogram of the results is displayed below the code window. Results for each shot is not currently available with the Quantinuum H-Series Emulator.
+    - A histogram of the results is displayed below the code window. Results for each shot aren't currently available with the Quantinuum H-Series Emulator.
 
 ## Ask the Copilot
 
@@ -75,8 +75,6 @@ You can prompt the Copilot in Azure Quantum for almost anything quantum related.
 
 To explore the sample code further, you can open the code in [VS Code for the Web](https://vscode.dev) and take advantage of features such as improved error messaging, Q# syntax highlighting, and integrated debugging. If you already have an Azure account set up, you can connect directly to your Azure Quantum workspaces from VS Code.
 
-To open your code in VS Code for the Web:
-
-1. Select the VS Code icon on the bottom of the code window.
+To open your code in VS Code for the Web, select the VS Code icon on the bottom of the code window.
   
-    :::image type="content" source="../media/launch-vs-code.png" alt-text="Screenshot of the icon to launch VS Code.":::
+:::image type="content" source="../media/launch-vs-code.png" alt-text="Screenshot of the icon to launch VS Code.":::
