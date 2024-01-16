@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/23/2023
+  ms.date: 01/16/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
-  ms.prod: azure
 durationInMinutes: 2
 content: |
   [!include[](includes/9-knowledge-check.md)]
@@ -37,7 +36,7 @@ quiz:
     - content: "Sixty (60) days"
       isCorrect: false
       explanation: "Incorrect. Microsoft Entra deleted user account retention can be changed. By default a deleted user is in a deleted state for 30 days. During which time an administrator can restore the account."
-  - content: "When should access packages be used?"
+  - content: "What is the most common scenario an access packages is used?"
     choices:
     - content: "To allow one organization access when collaborating on a project."
       isCorrect: false
