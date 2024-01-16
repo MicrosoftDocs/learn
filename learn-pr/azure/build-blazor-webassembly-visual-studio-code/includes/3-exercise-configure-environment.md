@@ -23,7 +23,7 @@ To set up a Blazor project to work with, we use Visual Studio Code and the C# De
 
 ## Optional: Create a new Blazor app with the .NET CLI
 
-- If you are using the integrated **Terminal** to create the project you can run the following command:
+If you are using the integrated **Terminal** to create the project, you can run the following command:
 
     ```dotnetcli
     dotnet new blazor
@@ -61,9 +61,9 @@ Whether you created the Blazor app with Visual Studio Code or the CLI it creates
     -| Program.cs
     ```
 
-1. If Visual Studio Code prompts you to install required assets, select **Yes**.
+If Visual Studio Code prompts you to install required assets, select **Yes**.
 
-    ![Screenshot showing Visual Studio Code prompting to install assets required to build and debug.](../media/missing-assets-visual-studio-code.png)
+   ![Screenshot showing Visual Studio Code prompting to install assets required to build and debug.](../media/missing-assets-visual-studio-code.png)
 
 
 ## Run the app with the integrated debugger
@@ -111,15 +111,15 @@ To set up a Blazor project to work with, we use Visual Studio 2022. Visual Studi
    ![Screenshot of Visual Studio 2022 'Configure Your Project' screen and recommended settings from step 3.](../media/visual-studio-2022-configure-project.png)  
 
 1. On the *Additional Information* screen select the following options, which should be the defaults:
-  - Framework:  **.NET 8.0 (Long-term support)**
-  - Authentication type: **None**
-  - Configure for HTTPS: **Checked**
-  - Interactive render mode: **Server**
-  - Interactivity location: **Per page/component** 
-  - Include sample pages: **Checked**
-  - Do not use top-level statements: **NOT Checked**
+   - Framework:  **.NET 8.0 (Long-term support)**
+   - Authentication type: **None**
+   - Configure for HTTPS: **Checked**
+   - Interactive render mode: **Server**
+   - Interactivity location: **Per page/component** 
+   - Include sample pages: **Checked**
+   - Do not use top-level statements: **NOT Checked**
 
-  ![Screenshot of Visual Studio 2022 additional information screen for the Blazor project.](../media/visual-studio-2022-additional-information.png)
+   ![Screenshot of Visual Studio 2022 additional information screen for the Blazor project.](../media/visual-studio-2022-additional-information.png)
 
 1. Select **Create**, this command creates a basic Blazor project with all required files and pages.
 
