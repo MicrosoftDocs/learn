@@ -31,7 +31,7 @@ The method passed into the `use()` method has the following parameters:
 
 ## Request pipeline
 
-If you have routes that benefit from having pre or post processing middleware, set it the functions in the source code file so that:
+If you have routes that benefit from having pre or post processing middleware, set up the functions in the source code file so that:
 
 - Middleware that needs to run before the request (preprocessing) is defined before the actual request.
 - Middleware that needs to run after the request (postprocessing) is defined after the actual request.
