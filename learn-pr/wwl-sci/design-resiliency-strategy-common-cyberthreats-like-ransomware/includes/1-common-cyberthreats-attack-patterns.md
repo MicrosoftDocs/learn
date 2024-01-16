@@ -63,23 +63,11 @@ Security breaches come in different forms, including the following:
 
 A data breach is when an attacker successfully gains access or control of data. Using the intruder example, this would be similar to that person getting access to, or stealing, vital documents and information inside the building:
 
-![Diagram that shows a thief running from an office building.](https://learn.microsoft.com/training/wwl-sci/describe-basic-cybersecurity-threats-attacks-mitigations/media/data-breach-v3.png)
-
 When an attacker achieves a security breach, they'll often want to target data, because it represents vital information. Poor data security can lead to an attacker gaining access and control of data. This can lead to serious consequences for the victim, whether that is a person, organization, or even a government. This is because the victim's data could be abused in many ways. For example, it can be held as ransom or used to cause financial or reputational harm.
 
 ## Attack chain modeling
 
 An attack chain describes the typical chain of events during an attack that leads to organizational damage. This includes technical and nontechnical steps taken by adversaries or insiders during the attack. It's important to note that there's no single linear path for either insider risk or external attacks. There are many common elements across attacks, but each one can take a unique path.
-
-The MCRA includes an attack chain diagram that depicts common techniques related to both external attacks and insider risks, as shown below.
-
-![Diagram of an attack chain M C R A depicting both external attacks and insider risks.](../media/microsoft-cybersecurity-reference-architecture-attack-chain.png)
-
-The top portion of this diagram represents common steps seen in many
-external attacks and the Microsoft capabilities that map to each step.
-The bottom portion shows the insider risk leading indicators and how
-Microsoft Purview Insider Risk Management helps quickly identify,
-triage, and act on risky user activity.
 
 Most external attacks include common steps and follow common patterns that are depicted in the diagram above. Most of the variation in external attacks comes from the use of different entry points. Attacks also differ based on the different objectives of the attackers like stealing data, encrypting data, or disrupting business.
 
@@ -87,13 +75,12 @@ Most external attacks that result in a major incident include some form of privi
 
 Lockheed Martin created one of the first adaptations of the 'kill chain' military concept to cybersecurity. This concept of a cybersecurity attack chain it helped mature how organizations understand attacks and plan security controls by viewing attacks as a sequential chain of events. Many organizations use the MITRE ATT&CK framework today for detailed control planning like threat detection coverage.
 
-The diagram below describes how these relate to each other and to a simple
-Prepare-Enter-Traverse-Execute (PETE) model that Microsoft developed to
-improve communications with business leaders and nonsecurity
-professionals.
+The diagram below describes how Microsoft uses three ways of modeling attack chains:
 
-![Diagram of how MITRE ATT&CK, PETE, and Lockheed Martin kill chain map to each other.](../media/mitre-attack-pete-lockheed-kill-chains.png)
+* **Lockheed Kill Chain (Legacy)** – This venerable model pioneered the application of the ‘kill chain’ concept from military doctrine to cybersecurity attacks. This is now a legacy model because it was never updated to keep up with modern multi-stage attacks that heavily involve lateral traversal. 
+* **MITRE ATT&CK Framework** – This is a well-respected, well-maintained, and popular model that guides technical planning and is particularly useful for technical professionals to assess the organization’s detection coverage against known attack techniques. 
+* **PETE (Prepare, Enter, Traverse, Execute Objectives)** Model – This is a simple model suitable for high level strategy discussions with non-security and non-technical leaders that simply and accurately describes attack stages. Attackers can choose different techniques to achieve each goal of prepare, enter, traverse, and execute objectives. Attackers may also use a combination of techniques or the same technique over and over again iteratively to achieve their objectives.
 
-Attackers can choose different techniques to achieve each goal of prepare, enter, traverse, and execute objectives. Attackers may also use a combination of techniques or the same technique over and over again iteratively to achieve their objectives.
+![Diagram of how MITRE ATT&CK, PETE, and Lockheed Martin kill chain map to each other.](../media/attack-chains-2023-mcra.png)
 
 All of the security best practices in the MCRA and MCSB are intended to reduce risk of attackers succeeding. Several MCRA best practices focus directly on the security operations aspects of external attacks - detect, respond, recover.
