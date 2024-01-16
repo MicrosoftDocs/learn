@@ -108,7 +108,7 @@ You can use Azure storage services in workloads that are running in your private
 :::image type="icon" source="../media/3-storage-overview.png" border="false" alt-text="Diagram that shows Azure VMware Solution and the available Azure Storage services, including Azure Blob Storage, Azure Files, Azure File Sync, and Azure NetApp Files.":::
 
 ## Security and compliance
-Azure VMware Solution private clouds use vSphere role-based access control for access and security. You can configure Users and Groups in Active Directory with the CLoudAdmin Role using LDAP or LDAPS 
+Azure VMware Solution private clouds use vSphere role-based access control for access and security. You can configure Users and Groups in Active Directory with the CLoudAdmin Role using LDAP or LDAPS. 
 
 In Azure VMware Solution, vCenter has a built-in local user called cloudadmin that's assigned to the cloudAdmin role. The cloudAdmin role has vCenter privileges that differ from the privileges in other VMware cloud solutions:
 
