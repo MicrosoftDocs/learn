@@ -13,7 +13,7 @@ To set up a .NET project to work with the web API, we use Visual Studio Code. Vi
 1. In the terminal window, copy and paste the following command:
 
     ```dotnetcli
-    dotnet new webapi -conrollers -f net8.0
+    dotnet new webapi -controllers -f net8.0
     ```
 
     This command creates the files for a basic web API project that uses controllers, along with a C# project file named *ContosoPizza.csproj* that returns a list of weather forecasts. If you get an error, ensure that you have the [.NET 8 SDK](https://dotnet.microsoft.com/download) installed.
