@@ -138,7 +138,7 @@ Next, we'll add a completed stylesheet for the game to the `Board` component.
         pointer-events: none;
         border-left: 10px solid var(--board-bg);
     }
-   
+    
     span.container {
         width: 4em;
         height: 4em;
