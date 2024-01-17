@@ -1,10 +1,10 @@
-In this exercise we will deploy AKS Edge Essentials in a single machine K3S cluster with a Linux and Windows node. We will use the Azure Cloud Shell to create an Azure virtual machine (VM) with Windows 11 Enterprise and run a PowerShell script for easy deployment of AKS Edge Essentials.
+In this exercise, we deploy AKS Edge Essentials in a single machine K3S cluster with a Linux and Windows node. We use the Azure Cloud Shell to create an Azure virtual machine (VM) with Windows 11 Enterprise and run a PowerShell script for easy deployment of AKS Edge Essentials.
 
 ## Create an Azure VM with Windows 11 Enterprise
 
 Let's create the Azure VM with Windows 11 Enterprise using Azure Cloud Shell.
 
-1. Start by **activating the Azure sandbox above**.
+1. Start by **activating the Azure sandbox**.
 
 1. Execute the following command in the Azure Cloud Shell to set the variables for creating the Azure VM:
 
@@ -55,7 +55,7 @@ Let's create the Azure VM with Windows 11 Enterprise using Azure Cloud Shell.
 
 Let's download the K3s installer and Windows node files to [Azure file share](/azure/storage/files/storage-how-to-use-files-windows) and then mount it in the VM so we can access it using the drive with letter *Z*.
 
-1. Take a note of the storage account name, key and the Azure file share name. You will need it later.
+1. Take a note of the storage account name, key and the Azure file share name. You need it later.
 
     ```azurecli
     storageAccountName=$(az storage account list --resource-group $resourcegroup --query '[0].name' -o tsv)
@@ -128,7 +128,7 @@ Now that the VM is created and the install files downloaded, let's run the `AksE
     Push-Location "C:\akseeLearn"
     ```
 
-1. Set the parameters to create a single machine K3S cluster with a Linux and Windows node. The `aideuser-config.json` and `aksedge-config.json` files will be used to run the `AksEdgeQuickStart-v2.ps1` PowerShell script.
+1. Set the parameters to create a single machine K3S cluster with a Linux and Windows node. The `aideuser-config.json` and `aksedge-config.json` files are used to run the `AksEdgeQuickStart-v2.ps1` PowerShell script.
 
     ```powershell
     $aideuserConfig = @"
@@ -245,7 +245,7 @@ Now that the VM is created and the install files downloaded, let's run the `AksE
     Duration: 0 hrs 23 mins 13 seconds
     ```
 
-    :::image type="content" source="../media/3-aks-ee-installsuccess-inline.png" alt-text="Screenshot of Windows VM with powershell commands output demonstrating a successful download and installation of AKS Edge Essentials K3s distribution." lightbox="../media/3-aks-ee-installsuccess-expanded.png":::
+    :::image type="content" source="../media/3-aks-ee-install-success-inline.png" alt-text="Screenshot of Windows VM with powershell commands output demonstrating a successful download and installation of AKS Edge Essentials K3s distribution." lightbox="../media/3-aks-ee-install-success-expanded.png":::
 
 > [!TIP]
 > Since the installation process takes around 30 minutes to complete, you can continue to the next learning unit, we will get back to this later.

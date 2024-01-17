@@ -14,11 +14,11 @@ In this exercise, we deploy a containerized Linux and Windows application on the
 
     The following example screenshot shows the Linux and Windows nodes are ready and the pods are running:
 
-    :::image type="content" source="../media/5-aks-ee-deploysuccess-inline.png" alt-text="Screenshot of Windows VM with powershell commands output demonstrating a successful deployment of AKS Edge Essentials." lightbox="../media/5-aks-ee-deploysuccess-expanded.png":::
+    :::image type="content" source="../media/5-aks-ee-deploy-success-inline.png" alt-text="Screenshot of Windows VM with powershell commands output demonstrating a successful deployment of AKS Edge Essentials." lightbox="../media/5-aks-ee-deploy-success-expanded.png":::
 
 ## Deploy a Linux application
 
-We'll deploy a [sample application](https://github.com/Azure-Samples/azure-voting-app-redis) that is a simple voting app, consisting of a front and back end, which is based on Microsoft's **azure-vote-front** image. The container image for this application is hosted on Azure Container Registry (ACR). See [linux-sample.yaml](https://github.com/Azure/AKS-Edge/blob/main/samples/others/linux-sample.yaml) in the GitHub repo package for the deployment manifest. In the YAML, we specified a `nodeSelector` tag as **linux**.
+Deploy a [sample application](https://github.com/Azure-Samples/azure-voting-app-redis) that is a simple voting app, consisting of a front and back end, which is based on Microsoft's **azure-vote-front** image. The container image for this application is hosted on Azure Container Registry (ACR). See [linux-sample.yaml](https://github.com/Azure/AKS-Edge/blob/main/samples/others/linux-sample.yaml) in the GitHub repo package for the deployment manifest. In the YAML, we specified a `nodeSelector` tag as **linux**.
 
 1. To deploy your application, use the [kubectl apply](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply) command. This command parses the manifest file and creates the defined Kubernetes objects. Specify the YAML manifest file, as shown in the following example:
     
@@ -61,11 +61,11 @@ We'll deploy a [sample application](https://github.com/Azure-Samples/azure-votin
 
 1. To view the application, open a browser and navigate to the IP address and port assigned to the `azure-vote-front` service. In the previous example, the IP address and port assigned to the service is **192.168.0.4:31032**.
 
-    :::image type="content" source="../media/5-aks-ee-linuxapp-inline.png" alt-text="Screenshot of Windows VM with linux sample application running in the browser." lightbox="../media/5-aks-ee-linuxapp-expanded.png":::
+    :::image type="content" source="../media/5-aks-ee-linux-app-inline.png" alt-text="Screenshot of Windows VM with linux sample application running in the browser." lightbox="../media/5-aks-ee-linux-app-expanded.png":::
 
 ## Deploy a Windows application
 
-We'll now deploy a sample ASP.NET Core application based on [Microsoft's sample image](https://hub.docker.com/_/microsoft-dotnet-samples/). See [win-sample-aspnetcore.yaml](https://github.com/Azure/AKS-Edge/blob/main/samples/others/win-sample-aspnetcore.yaml) in the GitHub repo package for the deployment manifest. In the YAML, we specified a `nodeSelector` tag as **windows**.
+Deploy a sample ASP.NET Core application based on [Microsoft's sample image](https://hub.docker.com/_/microsoft-dotnet-samples/). See [win-sample-aspnetcore.yaml](https://github.com/Azure/AKS-Edge/blob/main/samples/others/win-sample-aspnetcore.yaml) in the GitHub repo package for the deployment manifest. In the YAML, we specified a `nodeSelector` tag as **windows**.
 
 1. Use the (kubectl apply)(https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply) command to deploy the application:
 
@@ -128,5 +128,5 @@ We'll now deploy a sample ASP.NET Core application based on [Microsoft's sample 
     
 1. To view the application, open a browser and navigate to the IP address and port assigned to the `sample-aspnetcore` service. In the previous example, the IP address and port assigned to the service is **192.168.0.3:31767**.
 
-    :::image type="content" source="../media/5-aks-ee-windowsapp-inline.png" alt-text="Screenshot of Windows VM with windows sample application running in the browser." lightbox="../media/5-aks-ee-windowsapp-expanded.png":::
+    :::image type="content" source="../media/5-aks-ee-windows-app-inline.png" alt-text="Screenshot of Windows VM with windows sample application running in the browser." lightbox="../media/5-aks-ee-windows-app-expanded.png":::
 
