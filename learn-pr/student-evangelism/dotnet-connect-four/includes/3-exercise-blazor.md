@@ -164,7 +164,7 @@ Next, we'll add a completed stylesheet for the game to the `Board` component.
     }
     ```
 
-The browser should update for you (if not you can manually refresh the browser with F5), and you should be greeted with a proper yellow Connect Four board:
+The browser should update for you (if not, you can manually refresh the browser with F5), and you should be greeted with a proper yellow Connect Four board:
 
 :::image type="content" source="../media/2-board-step-2.png" alt-text="Screenshot of Yellow connect four board.":::
 
