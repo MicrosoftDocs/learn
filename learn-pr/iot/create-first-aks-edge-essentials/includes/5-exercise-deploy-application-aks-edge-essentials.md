@@ -1,4 +1,4 @@
-In this exercise we will deploy a containerized Linux and Windows application on the AKS Edge Essentials cluster.
+In this exercise, we deploy a containerized Linux and Windows application on the AKS Edge Essentials cluster.
 
 ## Verify AKS Edge Essentials deployment
 
@@ -18,7 +18,7 @@ In this exercise we will deploy a containerized Linux and Windows application on
 
 ## Deploy a Linux application
 
-We will deploy a [sample application](https://github.com/Azure-Samples/azure-voting-app-redis) that is a simple voting app, consisting of a front and back end, which is based on Microsoft's **azure-vote-front** image. The container image for this application is hosted on Azure Container Registry (ACR). See [linux-sample.yaml](https://github.com/Azure/AKS-Edge/blob/main/samples/others/linux-sample.yaml) in the GitHub repo package for the deployment manifest. Note that in the YAML we specified a `nodeSelector` tag as **linux**.
+We'll deploy a [sample application](https://github.com/Azure-Samples/azure-voting-app-redis) that is a simple voting app, consisting of a front and back end, which is based on Microsoft's **azure-vote-front** image. The container image for this application is hosted on Azure Container Registry (ACR). See [linux-sample.yaml](https://github.com/Azure/AKS-Edge/blob/main/samples/others/linux-sample.yaml) in the GitHub repo package for the deployment manifest. In the YAML, we specified a `nodeSelector` tag as **linux**.
 
 1. To deploy your application, use the [kubectl apply](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply) command. This command parses the manifest file and creates the defined Kubernetes objects. Specify the YAML manifest file, as shown in the following example:
     
@@ -65,7 +65,7 @@ We will deploy a [sample application](https://github.com/Azure-Samples/azure-vot
 
 ## Deploy a Windows application
 
-We will now deploy a sample ASP.NET Core application based on [Microsoft's sample image](https://hub.docker.com/_/microsoft-dotnet-samples/). See [win-sample-aspnetcore.yaml](https://github.com/Azure/AKS-Edge/blob/main/samples/others/win-sample-aspnetcore.yaml) in the GitHub repo package for the deployment manifest. Note that in the YAML we specified a `nodeSelector` tag as **windows**.
+We'll now deploy a sample ASP.NET Core application based on [Microsoft's sample image](https://hub.docker.com/_/microsoft-dotnet-samples/). See [win-sample-aspnetcore.yaml](https://github.com/Azure/AKS-Edge/blob/main/samples/others/win-sample-aspnetcore.yaml) in the GitHub repo package for the deployment manifest. In the YAML, we specified a `nodeSelector` tag as **windows**.
 
 1. Use the (kubectl apply)(https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply) command to deploy the application:
 
@@ -95,7 +95,7 @@ We will now deploy a sample ASP.NET Core application based on [Microsoft's sampl
     kubectl get services
     ```
 
-    Then take a note of the `PORT` for the `sample-aspnetcore` service. In this example it is **31767**.
+    Then take a note of the `PORT` for the `sample-aspnetcore` service. In this example, it's **31767**.
     
     ```output
     PS C:\Users\azureuser> kubectl get services
