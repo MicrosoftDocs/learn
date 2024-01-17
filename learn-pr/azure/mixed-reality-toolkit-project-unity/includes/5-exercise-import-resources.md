@@ -58,7 +58,7 @@ To import the Mixed Reality Toolkit into your project, you'll use the Mixed Real
 
     :::image type="content" source="../media/unity-method-updates.png" alt-text="Screenshot of updating methods in the XR InteractionLayerMask.":::
 
-<!-- 1. On the menu bar, select **Mixed Reality** > **Project** > **Apply recommended project settings for HoloLens 2**. -->
+   <!-- 1. On the menu bar, select **Mixed Reality** > **Project** > **Apply recommended project settings for HoloLens 2**. -->
 1. On the menu bar, select **Edit** > **Project Settings**. Select **XR Plugin-in Management**. Ensure that **Initialize XR on Startup** is selected, and then select the checkbox for **Open XR** under **Plug-in Providers**.
 
     :::image type="content" source="../media/unity-xr-on-startup-option.png" alt-text="Screenshot of Initialize XR on Startup.":::
