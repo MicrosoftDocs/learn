@@ -19,7 +19,7 @@ To group a set of issues and pull requests by priority, you'll need to first cre
 1. In the drop-down menu, select the **Single select** option. This allows you to create your own classification for your new field.
 
    :::image type="complex" border="false" source="../media/4-new-field-drop-down.png" alt-text="Screenshot of the drop-down menu for a New Field.":::
-    Screenshot of the drop down menu for a New Field that contains Text, Number, Date, Single select, and Iteration with the Single Select option highlighted.
+    Screenshot of the drop-down menu for a New Field that contains Text, Number, Date, Single select, and Iteration with the Single Select option highlighted.
    :::image-end:::
 
 1. In the **Options** text box, start to add your different priority levels. You can label them as **Urgent**, **High**, **Medium**, and **Low**.
