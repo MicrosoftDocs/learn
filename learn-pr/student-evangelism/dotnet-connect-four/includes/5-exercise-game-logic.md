@@ -253,7 +253,7 @@ Let's add some error handling and indicators to our board to make the current st
 
 ## Summary
 
-We've learned a lot about Blazor and built a neat little game. Here are some of the skills we learned: 
+We've learned a lot about Blazor and built a neat little game. Here are some of the skills we learned:
 
 - Created a component
 - Added that component to our home page
