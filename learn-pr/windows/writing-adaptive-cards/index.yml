@@ -7,7 +7,7 @@ metadata:
   author: alvinashcraft
   ms.author: aashcraft
   ms.topic: module
-  ms.prod: adaptive-cards
+  ms.service: adaptive-cards
   manager: jken
 title: Creating Adaptive Cards
 summary: Learn the full range of capabilities (layout, inputs, and actions) of Adaptive Cards.
