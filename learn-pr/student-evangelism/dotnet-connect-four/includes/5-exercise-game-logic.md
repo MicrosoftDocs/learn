@@ -110,7 +110,7 @@ If you look in the supplied *Board.razor.css*, you'll find the CSS classes match
 
 The resultant effect is that the game piece is placed in the column and animated to drop into the bottom-most row when this method is called.
 
-### Choosing a column
+## Choosing a column
 
 We next need to place some controls that allow players to choose a column and call our new `PlayPiece` method. We'll use the "🔽" character to indicate that you can drop a piece in this column.
 
