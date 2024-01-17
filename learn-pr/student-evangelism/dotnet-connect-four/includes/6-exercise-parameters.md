@@ -26,7 +26,7 @@ Parameters in Blazor are properties on a component that have been decorated with
 1. Add a `@using` directive to the top of the *Board.razor* file to indicate we're using content from the `System.Drawing` namespace.
 
     ```razor
-    @using System. Drawing
+    @using System.Drawing
     ```
 
 1. Use the parameters in the CSS block at the top of *Board.razor* to set the values of the CSS variables.
