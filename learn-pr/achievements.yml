@@ -2692,6 +2692,11 @@ achievements:
   title: Understand API gateways in a cloud-native ASP.NET Core microservices app
   summary: Learn to modify cloud-native ASP.NET Core microservices app to understand API gateways in Azure.
   iconUrl: /training/achievements/aspnetcore/microservices-apigateway-aspnet-core-social.png
+- uid: learn.azure.deploy-elastic-cloud-kubernetes-azure.badge
+  type: badge
+  title: Deploy Elastic Cloud on Kubernetes on Azure Kubernetes Service
+  summary: Learn how to deploy Elastic Cloud on Kubernetes on Azure Kubernetes Service (AKS).
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.azdo.deploy-java-containers.badge
   type: badge
   title: Automate Java container deployments with Azure Pipelines
