@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/16/2024
+  ms.date: 01/17/2024
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: unit
@@ -12,14 +12,14 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Why do you use a boolean flag to know when a thread has started?"
+  - content: "Why do you use a boolean flag to know when a Task has started?"
     choices:
-    - content: "A boolean flag provides a simple and efficient way to signal the state of the thread to other parts of the code."
+    - content: "A boolean flag provides a simple and efficient way to signal the state of the Task to other parts of the code."
       isCorrect: true
-      explanation: "Correct. A boolean flag provides an efficient way that tells you if a thread is running."
-    - content: "A boolean flag is used to pause a thread."
+      explanation: "Correct. A boolean flag provides an efficient way that tells you if a Task is running."
+    - content: "A boolean flag is used to pause a Task."
       isCorrect: false
-      explanation: "Incorrect. A boolean flag is not used to pause a thread."
+      explanation: "Incorrect. A boolean flag is not used to pause a Task."
     - content: "To enclose code that may throw an exception."
       isCorrect: false
       explanation: "Incorrect. A boolean flag is not used to enclose code that might throw an exeption."

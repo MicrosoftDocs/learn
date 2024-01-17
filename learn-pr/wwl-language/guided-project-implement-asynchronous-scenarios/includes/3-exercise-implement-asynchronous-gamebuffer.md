@@ -2,7 +2,7 @@
 
 In this exercise, you'll learn about how to create a thread. You'll do so using C#'s implementation of threads that uses something called a Task. The syntax for creating a Task uses a Lambda expression. In C#, a Lambda expression is a short block of code that accepts parameters and returns a value. It's defined as an anonymous function (function without a name).
 
-You begin by creating a boolean flag called `calculating` to tell you if a thread is already running or not. You then use it in an `if` statement, along with the `gameOver` and `IsMinNextReached`, to determine if it should create a new thread. If no Task is running, you create a Task in the form of a Lambda expression to calculate the new and generation. Let's get started.
+You begin by creating a boolean flag called `calculating` to tell you if a thread is already running or not. You then use it in an `if` statement, along with the `gameOver` and `IsMinNextReached`, to determine if it should create a new thread. If no Task is running, you create a Task in the form of a Lambda expression to calculate the new ant generation. Let's get started.
 
 ## Implement a boolean flag to start calculation in another thread
 
@@ -30,16 +30,16 @@ The first thing to do is to create the boolean variable called `calculating`.
 
 1. Add `calculating` to this `if` statement.
 
-```csharp
-// before
-`if(!gameOver && IsMinNextReached())`
-
-// after
-`if(!calculating && !gameOver && IsMinNextReached())`.
-```
+    ```csharp
+    // before
+    if(!gameOver && IsMinNextReached())
+    
+    // after
+    if(!calculating && !gameOver && IsMinNextReached())
+    ```
 
 > [!NOTE]
-Be sure to precede your `calculating` variable with an exclamation point (`!`), indication the `not` condition. You dont want to execute a new Task if there is already a Task running.
+Be sure to precede your `calculating` variable with an exclamation point (`!`), indicating the `not` condition. You dont want to execute a new Task if there is already a Task running.
 
 ## Calculate the new ant generation in another thread
 

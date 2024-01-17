@@ -1,14 +1,14 @@
 
 
-In this exercise, you modify the `btnSave_Click` in your `WPF/MainWindow.xaml.cs` file to use C#'s `async` and `await` functionality. `Async` and `await` are keywords in C# that allow developers to write asynchronous code that is easier to read and write than traditional asynchronous code.
+In this exercise, you modify the `btnSave_Click` method in your `WPF/MainWindow.xaml.cs` file to use C#'s `async` and `await` functionality. `Async` and `await` are keywords in C# that allow developers to write asynchronous code that is easier to read and write than traditional asynchronous code.
 
-In the discussion of threads and Tasks, to avoid UI freezes, you put your UI code in a separate thread using C# Tasks. Unlike a Task, however, an `async` method runs synchronously. When an `async` method reaches its first `await` expression, it suspends the method until the awaited task is complete.
+In the discussion of threads and Tasks, to avoid UI freezes, you made your UI code asynchronous using C# Tasks. Unlike a Task, however, an `async` method runs synchronously. When an `async` method reaches its first `await` expression, it suspends the method until the awaited task is complete.
 
-The `await` keyword pauses the execution of the rest of the method until the asynchronous operation is complete. In the meantime, control returns to the caller of the method, allowing execution your code to continue.
+The `await` keyword pauses the execution of the rest of the method until the asynchronous operation is complete. In the meantime, control returns to the caller of the method, allowing execution of your code to continue.
 
 ## Implement async I/O for saving and loading a game
 
-To begin, update the Game save and load functionality, making file I/O operations asynchronous. Doing so will free the UI thread to render updates and avoid freezes.
+To begin, update the Game save and load functionality, making file I/O operations asynchronous. Doing so will free the UI to render updates and avoid freezes.
 
 1. Open `WPF/MainWindow.xaml.cs`
 
@@ -59,7 +59,7 @@ To begin, update the Game save and load functionality, making file I/O operation
 
 ## Check your work
 
-Compile the solution and launch the application. Make sure that saving and loading game works.
+Compile the solution and launch the application. Make sure that saving and loading a game works.
 
 1. Open a terminal window by selecting View --> Terminal.
 
