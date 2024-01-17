@@ -29,7 +29,7 @@ roles:
 products:
   - azure
 prerequisites: |
-  - A web brower to use the Codespace dev contain
+  - A web browser to use the Codespace dev contain
   - Familiarity with editing text and code files in any text editor
   - Basic familiarity with the HTTP protocol
   - Experience using the command line, including Git operations
