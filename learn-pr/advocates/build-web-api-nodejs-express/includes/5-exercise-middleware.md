@@ -6,7 +6,7 @@ Most applications have parts that anyone can access. But, some parts need to be 
 
 ## Create a web server
 
-In this exercise, continue to use the dev container. A sample project that has product files and starter application code is provided for you. You'll fill in the missing parts of the project to complete the app updates for the customer.
+In this exercise, continue to use the [dev container](https://code.visualstudio.com/docs/devcontainers/containers). A sample project that has product files and starter application code is provided for you. You'll fill in the missing parts of the project to complete the app updates for the customer.
 
 1. Open the **node-essentials/nodejs-http/exercise-express-middleware** folder in a terminal by right-clicking the folder name and selecting **Open in integrated terminal**.:
 

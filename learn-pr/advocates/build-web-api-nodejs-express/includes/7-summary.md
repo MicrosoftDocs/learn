@@ -8,4 +8,9 @@ You became familiar with most of the concepts in a series of exercises. You shou
 
 At this point, you should have a good foundation to build web applications with Express. You also understand that there's more to learn about how to create and work with APIs, especially in securing your API.
 
+## Additional resources
 
+Visual Studio Code tools to help with REST API calls:
+
+* [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+* [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)

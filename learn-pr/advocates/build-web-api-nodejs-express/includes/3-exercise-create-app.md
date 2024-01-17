@@ -103,7 +103,7 @@ Create a basic application that handles requests.
    }   
    ```
   
-   This entry indicates the Express framework is installed. This sample code uses version 4 of the Express framework.
+   This entry indicates the Express framework is installed. Your version may be more recent. This sample code uses version 4 of the Express framework.
 
 1. In a code editor in the `my-express-app` folder, create a file named **app.js**, and add the following code:
 
@@ -155,7 +155,7 @@ Create a basic application that handles requests.
 
 Use the same app.js file to add a new route.
 
-1. In a code editor, open the app.js file. 
+1. In a code editor, open the `app.js` file. 
 1. Add the following code after the existing `app.get` syntax after the code for the first route, `/`:
 
    ```javascript
