@@ -2697,3 +2697,13 @@ achievements:
   title: Deploy Elastic Cloud on Kubernetes on Azure Kubernetes Service
   summary: Learn how to deploy Elastic Cloud on Kubernetes on Azure Kubernetes Service (AKS).
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azdo.deploy-java-containers.badge
+  type: badge
+  title: Automate Java container deployments with Azure Pipelines
+  summary: Implement an Azure Pipelines continuous integration and continuous deployment (CI/CD) pipeline for Java containers.
+  iconUrl: /training/achievements/azure-devops/deploy-java-containers.svg
+- uid: learn.azdo.deploy-nodejs.badge
+  type: badge
+  title: Guided project - Automate Node.js deployments with Azure Pipelines
+  summary: Implement CI/CD pipeline for Node.js applications. Automate deployment of Vue, React, Angular or Webpack apps with Azure Pipelines.
+  iconUrl: /training/achievements/azure-devops/deploy-nodejs.svg
