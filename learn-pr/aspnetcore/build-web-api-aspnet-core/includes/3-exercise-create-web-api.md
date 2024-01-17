@@ -118,7 +118,7 @@ Included in the project is **ContosoPizza.http**, a file that is used to test AP
 
     This file has been pre-configured with the **@ContosoPizza_HostAddress** variables and a **GET** command calling **/weatherforecast/** that accepts **application/json**.
 
-1. Select the **Sent Request** command above the **GET** which will send a reques to the running service.
+1. Select the **Sent Request** command above the **GET** which will send a request to the running service.
 
     Calling this command will open a response window with output similar to what we saw in the browser:
 

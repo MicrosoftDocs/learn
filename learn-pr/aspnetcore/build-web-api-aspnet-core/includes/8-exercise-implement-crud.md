@@ -277,7 +277,7 @@ You've now finished implementing and testing a newly created web API built with 
     post -c "{"name":"Hawaii", "isGlutenFree":false}"
     ```
 
-    The preceding command return the newly created pizza:
+    The preceding command returns the newly created pizza:
 
     ```output
     HTTP/1.1 201 Created

@@ -193,7 +193,7 @@ Build and start the web API by running the following command:
 
 You've now finished implementing the `GET` verbs. In the next unit, you can add more actions to `PizzaController` to support CRUD operations on pizza data.
 
-### Opional: Test the controller with Command Line HTTP REPL
+### Optional: Test the controller with Command Line HTTP REPL
 
 1. Open the existing `httprepl` terminal, or open a new integrated terminal from Visual Studio Code by selecting **Terminal** > **New Terminal** from the main menu.
 
