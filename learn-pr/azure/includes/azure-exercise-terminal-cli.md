@@ -1,9 +1,9 @@
 ---
-author: mumian
+author: davidsmatlak
 ms.prod: learning-azure
 ms.topic: include
 ms.date: 04/20/2022
-ms.author: jgao
+ms.author: davidsmatlak
 ---
 1. In the **Terminal** menu, select **New Terminal**. The terminal window usually opens in the lower half of your screen.
 
@@ -11,10 +11,8 @@ ms.author: jgao
 
     :::image type="content" source="media/bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the bash option shown.":::
 
-1. If a shell other than **bash** appears, select the shell dropdown, and then select **Git Bash (Default)**.
+1. If a shell other than **bash** appears, select the shell dropdown, and then select **Git Bash**.
 
-    :::image type="content" source="media/select-shell-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the terminal shell dropdown shown and Git Bash Default selected.":::
+    :::image type="content" source="media/select-shell-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the terminal shell dropdown shown and Git Bash selected.":::
 
-1. In the list of terminal shells, select **bash**, and then select the plus sign to open a new terminal that uses the **bash** shell.
-
-   :::image type="content" source="media/select-bash-plus.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the bash terminal and the plus sign selected.":::
+1. A new shell opens.
