@@ -1,0 +1,51 @@
+### YamlMime:LearningPath
+uid: learn.wwl.devops-foundations-core-principles-practices
+metadata:
+  title: "DevOps Foundations: The Core Principles and Practices"
+  description: 'DevOps Foundations: The Core Principles and Practices'
+  ms.date: 01/17/2024
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: learning-path
+title: 'DevOps Foundations: The Core Principles and Practices'
+summary: |
+  This learning path...
+  > [!NOTE]
+  > [!INCLUDE [](../../includes/azure-subscription-prerequisite.md)]
+prerequisites: |
+  - An Azure Subscription. You need to bring your own subscription.
+  - Basic familiarity with IT terms and concepts.
+iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
+levels:
+  - beginner
+roles:
+  - administrator
+  - developer
+  - devops-engineer
+  - security-engineer
+  - security-operations-analyst
+  - solution-architect
+  - student
+  - support-engineer
+products:
+  - github
+  - azure
+  - azure-cloud-services
+  - azure-devops
+subjects:
+  - devops
+  - cloud-computing
+  - cloud-security
+  - key-management
+  - information-protection-governance
+  - identity-access
+  - compliance
+modules:
+  - learn.wwl.discover-devops
+  - learn.wwl.plan-with-devops
+  - learn.wwl.develop-with-devops
+  - learn.wwl.deliver-with-devops
+  - learn.wwl.operate-with-devops
+trophy:
+  uid: learn.wwl.devops-foundations-core-principles-practices.trophy
