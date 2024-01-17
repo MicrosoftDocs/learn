@@ -24,7 +24,7 @@ Let's add the `GameState` class to your project and then make it available to co
 
     We can now start connecting our `Board` component to the state of the game.
 
-### Reset state
+## Reset state
 
 Let's begin by resetting the state of the game when the `Board` component is first painted on screen. We'll add some code to reset the state of the game when the component is initialized.
 
