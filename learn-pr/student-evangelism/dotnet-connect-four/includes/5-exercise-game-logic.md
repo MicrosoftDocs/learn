@@ -6,7 +6,7 @@ To help keep this tutorial on-topic with teaching about Blazor, we're providing 
 
 Let's add the `GameState` class to your project and then make it available to components as a singleton service through dependency injection.
 
-1. Copy the [GameState.cs](https://raw.githubusercontent.com/dotnet/intro-to-dotnet-web-dev/main/5-blazor/1-complete/ConnectFour/Shared/GameState.cs) file into the root of your project.
+1. Copy the [GameState.cs](https://raw.githubusercontent.com/dotnet/intro-to-dotnet-web-dev/main/5-blazor/1-complete/ConnectFour/GameState.cs) file into the root of your project.
 
 1. Open the *Program.cs* file at the root of the project and add this statement to configure `GameState` as a singleton service in your app:
 
