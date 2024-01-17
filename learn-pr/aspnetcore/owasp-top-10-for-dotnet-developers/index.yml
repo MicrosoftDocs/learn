@@ -38,7 +38,6 @@ roles:
 products:
 - azure
 - aspnet
-- aspnet-web-api
 - dotnet
 - blazor
 
