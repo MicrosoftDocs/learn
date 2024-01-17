@@ -2696,4 +2696,4 @@ achievements:
   type: badge
   title: Deploy Elastic Cloud on Kubernetes on Azure Kubernetes Service
   summary: Learn how to deploy Elastic Cloud on Kubernetes on Azure Kubernetes Service (AKS).
-  iconUrl: /training/achievements/deploy-elastic-cloud-kubernetes-azure.svg
+  iconUrl: /training/achievements/generic-badge.svg
