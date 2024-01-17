@@ -98,13 +98,14 @@ class State
     // other code omitted
     Piece [] pieces;
 
-    State() {
-        this.pieces = new Piece[25]; // 5x5 board
+    State()
+    {
+        pieces = new Piece[25]; // 5x5 board
     }
 
     void PlayPiece(int position)
     {
-        this.pieces[position] = true; // true = occupied
+        pieces[position] = true; // true = occupied
     }
 }
 ```
