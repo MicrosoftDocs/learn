@@ -45,7 +45,7 @@ Let's begin by resetting the state of the game when the `Board` component is fir
 
 Next, let's allocate the possible 42 game pieces that could be played. We can represent the game pieces as an array referenced by 42 HTML elements on the board. We can move and place those pieces by assigning a set of CSS classes with column and row positions.
 
-1. Define an string array field in the code block to hold our game pieces:
+1. Define a string array field in the code block to hold our game pieces:
 
     ```razor
     private string[] pieces = new string[42];

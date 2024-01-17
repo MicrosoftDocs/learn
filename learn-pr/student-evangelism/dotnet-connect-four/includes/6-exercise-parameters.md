@@ -8,7 +8,7 @@ Let's add some parameters for the colors on the board, and pass in some groovy c
 
 Parameters in Blazor are properties on a component that have been decorated with the `Parameter` attribute.
 
-1. In *Board.razor*, let's define three properties for the board color, and each player's color. Before the `OnInitialized`` method, add these lines of code:
+1. In *Board.razor*, let's define three properties for the board color, and each player's color. Before the `OnInitialized` method, add these lines of code:
 
     ```csharp
     [Parameter]
