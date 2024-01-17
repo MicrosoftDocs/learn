@@ -14,7 +14,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What do catalogs contain?"
+  - content: "What items contained within the catalogs of Microsoft Entra entitlements?"
     choices:
     - content: "Device registrations"
       isCorrect: false
@@ -25,7 +25,7 @@ quiz:
     - content: "User lists"
       isCorrect: false
       explanation: "Incorrect. A list of user accounts isn't included in a catalog."
-  - content: "How long are deleted users retained by Microsoft Entra ID by default?"
+  - content: "What is the default retention period for deleted users in Microsoft Entra ID?"
     choices:
     - content: "14 days"
       isCorrect: false
@@ -36,7 +36,7 @@ quiz:
     - content: "60 days"
       isCorrect: false
       explanation: "Incorrect. Microsoft Entra deleted user account retention can be changed. By default a deleted user is in a deleted state for 30 days. During which time an administrator can restore the account."
-  - content: "What is the most common scenario an access package is used?"
+  - content: "Your company intends to utilize entitlements for resource access control. What is the most typical use case for an access package in this context?"
     choices:
     - content: "To allow one organization access when collaborating on a project."
       isCorrect: false
