@@ -3,8 +3,8 @@ uid: learn.wwl.guided-project-implement-asynchronous-scenarios.exercise-implemen
 title: Implement an Asynchronous GameBuffer
 metadata:
   title: Implement an Asynchronous GameBuffer
-  description: "The purpose of this lesson is to learn how to implement an asynchronous GameBuffer in C#"
-  ms.date: 01/17/2024
+  description: "The purpose of this lesson is to learn how to implement an asynchronous GameBuffer in C#."
+  ms.date: 01/18/2024
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: unit

@@ -69,6 +69,6 @@ Compile the solution and launch the application. Make sure that saving and loadi
 
 1. Enter `dotnet run` and press Enter.
 
-1. Try saving, then loading a game.
+1. Try saving and then loading a game.
 
 Congratulations on making it this far!

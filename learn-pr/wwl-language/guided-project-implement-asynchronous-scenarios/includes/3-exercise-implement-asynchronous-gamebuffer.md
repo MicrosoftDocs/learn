@@ -39,7 +39,7 @@ The first thing to do is to create the boolean variable called `calculating`.
     ```
 
 > [!NOTE]
-Be sure to precede your `calculating` variable with an exclamation point (`!`), indicating the `not` condition. You dont want to execute a new Task if there is already a Task running.
+> Be sure to precede your `calculating` variable with an exclamation point (`!`), indicating the `not` condition. You dont want to execute a new Task if there is already a Task running.
 
 ## Calculate the new ant generation in another thread
 

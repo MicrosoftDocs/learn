@@ -17,5 +17,5 @@ In this module, you'll learn how to:
 
 - Installation of Visual Studio Code configured for C# application development, including C# Dev Kit.
 - Experience with the VS Code editor.
-- Ability to develop C# console applications that implements business logic using loops, if statements, properties, and methods.
+- Ability to develop C# console applications that implement business logic using loops, if statements, properties, and methods.
 - Experience with basic C# syntax rules.
