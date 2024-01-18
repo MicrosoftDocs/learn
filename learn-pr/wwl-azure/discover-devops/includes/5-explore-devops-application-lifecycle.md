@@ -1,8 +1,5 @@
 While, as we established, DevOps practices have a vast scope, their primary target is optimizing application lifecycle management. As such, they affect every phase of that lifecycle, from planning, through development and delivery, to operations. These phases can be identified in the sample scenario introduced earlier in this module. A request for new functionality from customers of our fictitious company is translated into a set of features of an existing or a new application. Their development, delivery, and ongoing support follow. This sequence of steps applies regardless of the level of DevOps maturity within an organization. However, following DevOps principles can significantly alter how each phase is implemented. In this unit, we will step through a high-level overview of these implementations.
 
-> [!NOTE]
-> The remaining modules of this course will cover each of these phases in detail.
-
 ## Application Lifecycle phases
 
 Application lifecycle phases include planning, development, delivery, and operations.

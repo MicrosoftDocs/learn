@@ -17,5 +17,4 @@ It's important to note that DevOps benefits extend beyond the lifecycle of tradi
 
 *Infrastructure as Code*, commonly abbreviated as *IaC*, involves managing and provisioning compute, networking, and storage infrastructure via programming methods, rather than by relying on configuring physical hardware or using interactive administrative tools. IaC allows developers and operations teams to define and manage infrastructure elements such as servers, network devices, and databases using code. This code is typically written in a high-level, human-readable scripting language. The scripts are then executed to automate the provisioning and configuration of infrastructure, making it more efficient, consistent, and easily scalable.
 
-> [!NOTE]
-> You will learn more about IaC in the next module of this course.
+
