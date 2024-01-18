@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: learning-path
-  ms.prod: learning-azure
 title: Manage identity and access
 prerequisites: |
   - None
