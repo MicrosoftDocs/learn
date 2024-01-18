@@ -6,7 +6,7 @@ The main focus of these two phases is to prepare a new Bicep file before you lat
 
 ## Convert phase
 
-In the _convert_ phase of migrating your resources to Bicep, the goal is to capture an initial representation of your Azure resources. The Bicep file you create in this phase isn't complete, and it's not ready to be used. However, the file gives you a starting point for your migration.
+The goal of the _convert_ phase of migrating your resources to Bicep is to capture an initial representation of your Azure resources. The Bicep file you create in this phase isn't complete, and it's not ready to be used. However, the file gives you a starting point for your migration.
 
 The convert phase consists of two possible steps, which you complete in sequence:
 

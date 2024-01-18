@@ -187,12 +187,12 @@ The export process adds redundant properties to many resources. Use these steps 
 
 1. In the `networkSecurityGroup` resource, remove `properties` because the `securityRules` property is empty.
 
-1. In the `publicIPAddress` resource remove the following properties:
+1. In the `publicIPAddress` resource, remove the following properties:
 
    - `ipAddress` property because it's automatically set by Azure.
    - `ipTags` property because it's empty.
 
-1. In the `virtualMachine` resource remove the following properties:
+1. In the `virtualMachine` resource, remove the following properties:
 
    - `storageProfile.osDisk.managedDisk.id` property because Azure automatically determines this property when the virtual machine is deployed.
 
@@ -203,27 +203,27 @@ The export process adds redundant properties to many resources. Use these steps 
    - `osProfile.secrets` property because it's empty.
    - `osProfile.requireGuestProvisionSignal` property because Azure sets this property automatically.
 
-1. In the `virtualNetwork` resource remove the following properties:
+1. In the `virtualNetwork` resource, remove the following properties:
 
    - `delegations` and `virtualNetworkPeerings` properties because they're empty.
    - The line for `type: 'Microsoft.Network/virtualNetworks/subnets'`.
 
-1. In the `networkInterface` resource remove the following properties:
+1. In the `networkInterface` resource, remove the following properties:
 
-   - The `kind` property.
-   - From `ipConfigurations` the `id`, `etag`, and `type`.
+   - The `kind` property
+   - From `ipConfigurations`: `id`, `etag`, `type`, and`privateIPAddress` because it's automatically set by Azure and the allocation method is _Dynamic_
    - From `ipConfigurations.properties`:
-     - `provisioningState`.
-     - `privateIPAddress` property because it's automatically set by Azure and the allocation method is _Dynamic_.
-   - From `publicIPAddress` remove `name`, `properties`, `type`, and `sku`.
-   - `dnsSettings` because the `dnsServers` property is empty.
+     - `provisioningState`
+     
+   - From `publicIPAddress`, `name`, `properties`, `type`, and `sku`
+   - `dnsSettings` because the `dnsServers` property is empty
 
 > [!TIP]
-> When you work with your own templates, you'll need to determine whether there are any properties that should be removed like you've done here.
+> When you work with your own templates, you need to determine whether there are any properties that should be removed as you did here.
 >
-> In Visual Studio Code, the Bicep extension helps you set the minimum properties for a resource. After you select the <kbd>=</kbd> key in the resource definition, Visual Studio Code prompts you to select **required-properties**:
+> In Visual Studio Code, the Bicep extension helps you set the minimum properties for a resource. When you add a space after the equal sign in the resource definition, Visual Studio Code prompts you to select **required-properties**:
 >
-> :::image type="content" source="../media/5-visual-studio-code-required-properties.png" alt-text="Screenshot of Visual Studio Code that shows the required properties selection when defining a new Bicep resource.":::
+> :::image type="content" source="../media/5-visual-studio-code-required-properties.png" alt-text="Screenshot of Visual Studio Code that shows the required-properties option.":::
 >
 > When you select **required-properties**, Visual Studio Code populates the resource definition with the properties that are mandatory. You can refer to **required-properties** to determine whether the properties in your converted template all need to be present.
 >
@@ -241,7 +241,7 @@ Your parameters currently are defined as default values in your template. To mak
 
 1. Update the values for the `virtualNetworkAddressPrefix` and `virtualNetworkDefaultSubnetAddressPrefix` parameters to match the IP address ranges that are specified in your reference template's virtual network resource.
 
-   For example, here's how the values are specified in a reference template. Your IP addresses might be different from IP addresses that are used in this example:
+   For example, here's how the values are specified in a reference template. Your IP addresses might be different from IP addresses that are used in this example.
 
    :::code language="bicep" source="code/3-main-migrated.bicep" range="93-118" highlight="7, 15":::
 
