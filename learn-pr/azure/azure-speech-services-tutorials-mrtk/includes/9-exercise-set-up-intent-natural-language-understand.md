@@ -160,7 +160,7 @@ Using the same user account you used when creating the Azure resource in the pre
 
 1. Select the word **go** and then on the word **ahead**, then select **Action (Simple)** from the contextual popup menu to label **go ahead** as an **Action** entity value.
 
-    :::image type="content" source="../media/label-action.png" alt-text="Screenshot of labelling go ahead as an action entity value." lightbox="../media/label-action.png":::
+    :::image type="content" source="../media/label-action.png" alt-text="Screenshot of labeling go ahead as an action entity value." lightbox="../media/label-action.png":::
 
 2. The **go ahead** phrase is now defined as an **Action** entity value. There's now an action entity value under the words "go ahead".
 
