@@ -94,14 +94,14 @@ Here, you'll create an Azure virtual machine to act as a session host for the ho
 
 1. Run the following command to create a public IP address to use to connect to the virtual machine:
 
-```azurepowershell
-New-AzPublicIpAddress `
-  -Name 'myPublicIP' `
-  -ResourceGroupName $resourceGroup `
-  -Location 'eastus' `
-  -AllocationMethod Static `
-  -Sku Standard
-```
+   ```azurepowershell
+   New-AzPublicIpAddress `
+     -Name 'myPublicIP' `
+     -ResourceGroupName $resourceGroup `
+     -Location 'eastus' `
+     -AllocationMethod Static `
+     -Sku Standard
+   ```
 
 1. Run the following command to create the virtual machine by using a Windows 11 Enterprise multiple session image:
 
