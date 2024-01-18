@@ -33,20 +33,20 @@ Regardless of how your Azure resources are created, Resource Manager makes infor
 
 Resource Manager provides multiple ways to export Azure resources to a template. You can use the Azure portal, Azure CLI, and Azure PowerShell cmdlets to export single resources, multiple resources, and entire resource groups.
 
-The export process is a control plane operation, which means that it exports only the configuration of the Azure resources. For example, when you export a virtual machine, the data on the virtual machine's hard drive isn't part of the export process. And when you export a storage account, the blobs and other contents of the storage account aren't included in the export process.
+The export process is a control plane operation, which means that it exports only the configuration of the Azure resources. For example, when you export a virtual machine, the data on the virtual machine's hard drive isn't exported. And when you export a storage account, the blobs and other contents of the storage account aren't included in the export process.
 
 You need to consider a few things when you export existing resources:
 
 - The exported resource definition is a snapshot of that resource's current state. It includes all changes made to the resource since its initial deployment.
 - The exported template might include some default resource properties that are normally omitted from a Bicep definition. For example, the export process might add read-only properties that Azure sets automatically. It doesn't make sense to include these properties because they're read-only. Consider removing these properties from the resource definitions when you migrate to Bicep to keep your Bicep files free of unnecessary code that might cause confusion.
-- The exported template probably won't include all the parameters you'll need to make the template reusable. When you export a template, many of the properties will be hard-coded into the template. You'll see how to add parameters later in the module.
+- The exported template probably won't include all the parameters you'll need to make the template reusable. When you export a template, many of the properties will be hard-coded into the template. You'll see how to add parameters later in this module.
 - Some resources can't be exported by using this approach, and you need to define them manually in your Bicep file. You'll learn how to re-create these resources later in this unit.
 
 ### Save deployments to a JSON template
 
-If you've ever deployed a resource manually from the Azure portal, you might have noticed the option to **Download a template for automation** in the **Review + create** pane. This option saves a JSON ARM template that's based on the names and properties you set while creating the resource in the portal.
+If you've ever deployed a resource manually from the Azure portal, you might have noticed the option to **Download a template for automation** on the **Review + create** tab. This option saves a JSON ARM template that's based on the names and properties you set while creating the resource in the portal.
 
-Resource Manager also tracks resource _deployments_. Deployment operations include changes submitted by the Azure portal resource creation experience and any ARM template deployments. Changes to existing resources made by using the Azure portal, Azure PowerShell cmdlets, Azure CLI, or other tools usually don't create deployments.
+Resource Manager also tracks resource deployments. Deployment operations include changes submitted by the Azure portal resource creation experience and any ARM template deployments. Changes to existing resources made by using the Azure portal, Azure PowerShell cmdlets, Azure CLI, or other tools usually don't create deployments.
 
 If the deployments were created by using a compatible tool, you can access the deployment template from the resource group's deployment history. You can use the Azure portal, Azure CLI, or Azure PowerShell to save deployments.
 
@@ -59,7 +59,7 @@ You need to consider a few things when you save your templates by using this met
 - The template probably doesn't include extraneous properties, but you should still check that the template includes everything that you expect and remove any unneeded properties.
 
 > [!NOTE]
-> However you export resources, either by exporting existing resources or by saving deployments, treat the exported file as a starting point, and don't use it directly. Instead, use it as inspiration for your final template.
+> However you export resources, either by exporting existing resources or by saving deployments, treat the exported file as a starting point, and don't use it directly. Instead, use it as a starting point for your final template.
 
 ### Insert existing resources to Bicep
 
@@ -71,13 +71,13 @@ You can insert a resource by opening the Visual Studio Code command palette. Use
 
 The second step in migrating your Azure resources to Bicep is to convert your JSON ARM templates and Azure resources to Bicep templates. The Bicep tooling includes the `decompile` command to convert templates. You can invoke the `decompile` command from either Azure CLI or the Bicep CLI.
 
-The decompilation process doesn't guarantee a full mapping from JSON to Bicep. You might need to revise the generated Bicep file to meet your template best practices before you use the file to deploy resources. Consider it the starting point for your migration. Later in this module, you'll learn how to fix any issues you encounter during the decompilation process.
+The decompilation process doesn't guarantee a full mapping from JSON to Bicep. You might need to revise the generated Bicep file to meet your template best practices before you use the file to deploy resources. Consider it the starting point for your migration. Later in this module, you'll learn how to fix any problems that you encounter during the decompilation process.
 
-After you decompile your template, you've completed the convert phase. You now have a valid Bicep file to start from, but the file you created isn't ready to use yet. The initial Bicep file is only a reference point.
+After you decompile your template, you've completed the convert phase. You now have a valid Bicep file to start from.
 
 ## Migrate phase
 
-The goal of the _migrate_ phase of migrating your resources to Bicep is to create the first draft of your deployable Bicep file, and to ensure that it defines all the Azure resources that are in scope for the migration.
+The goal of the _migrate_ phase of migrating your resources to Bicep is to create the first draft of your deployable Bicep file and to ensure that it defines all the Azure resources that are in scope for the migration.
 
 The migrate phase consists of three steps, which you complete in sequence:
 
@@ -163,6 +163,6 @@ The [Azure Quickstart Templates](/samples/browse/?expanded=azure&products=azure-
 
 Suppose you want to find a template that builds an Azure App Service plan and app. Each quickstart template gives you the option to deploy the template directly to Azure or to view the template on GitHub.
 
-:::image type="content" source="../media/2-azure-quickstart-template.png" alt-text="Screenshot that shows an Azure quickstart template that deploys a basic Linux web app.":::
+:::image type="content" source="../media/2-azure-quickstart-template.png" alt-text="Screenshot that shows an Azure Quickstart Template that deploys a basic Linux web app.":::
 
-Keep in mind that the Azure quickstart templates are community contributions. Some of the examples might be out of date because features are regularly added to Azure services. The examples also might include resources and properties that you don't need for your use of the template. However, the repository of quickstart templates is a useful resource to help you understand how you can deploy your resources by using ARM templates.
+Keep in mind that the Azure Quickstart Templates are community contributions. Some of the examples might be out of date because features are regularly added to Azure services. The examples also might include resources and properties that you don't need for your use of the template. However, the repository of quickstart templates is a useful resource to help you understand how you can deploy your resources by using ARM templates.

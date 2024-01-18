@@ -67,7 +67,7 @@ The parameters in the template don't need to be parameters. You'll now rename th
 
 1. Repeat the process for each parameter. Rename the parameters as shown in the following table.
 
-   Notice that the value of the `networkInterfaceName` includes a three-digit number. The number is different between deployments. Ensure that you copy the variable's value from your reference template.
+   Notice that the value of the `networkInterfaceName` includes a three-digit number. The number is different for different deployments. Ensure that you copy the variable's value from your reference template.
 
    | Current parameter name | New variable name |
    | ---- | ---- |
@@ -141,7 +141,7 @@ Your template has some hard-coded values where parameters or variables would be 
 
    :::code language="bicep" source="code/5-main-refactored.bicep" range="38":::
 
-   The value of the `virtualMachineOSDiskName` is unique. The value is different between deployments. Ensure that you copy the variable's value from your reference template.
+   The value of the `virtualMachineOSDiskName` is unique. The value is different for each deployment. Ensure that you copy the variable's value from your reference template.
 
    > [!WARNING]
    > Ensure that you copy the correct values for the `virtualMachineOSDiskName` and `networkInterfaceName` variables. Otherwise, Azure won't detect that you're declaring existing resources and might try to create new resources.
@@ -150,7 +150,7 @@ Your template has some hard-coded values where parameters or variables would be 
 
    :::code language="bicep" source="code/5-main-refactored.bicep" range="26-38" highlight="3, 6, 7-12, 13" :::
 
-1. Update the `publicIPAddress` resource to refer to a parameter.
+1. Update the `publicIPAddress` resource to refer to a parameter:
 
    | Property | Parameter |
    | ---- | ---- |
@@ -161,7 +161,7 @@ Your template has some hard-coded values where parameters or variables would be 
    | Property | Parameter or variable |
    | ---- | ---- |
    | `hardwareProfile.vmSize` | `virtualMachineSizeName` |
-   | `storageProfile.imageReference` | `virtualMachineImageReference` <br> Use the variable name to replace the object's values including the curly braces. |
+   | `storageProfile.imageReference` | `virtualMachineImageReference` <br> Use the variable name to replace the object's values, including the curly braces. |
    | `storageProfile.osDisk.name` | `virtualMachineOSDiskName` |
    | `storageProfile.osDisk.managedDisk.storageAccountType` | `virtualMachineManagedDiskStorageAccountType` |
    | `osProfile.adminUsername` | `virtualMachineAdminUsername` |
@@ -175,7 +175,7 @@ Your template has some hard-coded values where parameters or variables would be 
    | `subnets.name` | `virtualNetworkDefaultSubnetName` |
    | `subnets.addressPrefix` | `virtualNetworkDefaultSubnetAddressPrefix` |
 
-1. Update the `virtualNetwork` resource's nested resource `defaultSubnet`.
+1. Update the `virtualNetwork` resource's nested resource `defaultSubnet`:
 
    | Property | Variable |
    | ---- | ---- |
@@ -189,24 +189,24 @@ The export process adds redundant properties to many resources. Use these steps 
 
 1. In the `publicIPAddress` resource, remove the following properties:
 
-   - `ipAddress` property because it's automatically set by Azure.
-   - `ipTags` property because it's empty.
+   - `ipAddress` property because it's automatically set by Azure
+   - `ipTags` property because it's empty
 
 1. In the `virtualMachine` resource, remove the following properties:
 
-   - `storageProfile.osDisk.managedDisk.id` property because Azure automatically determines this property when the virtual machine is deployed.
+   - `storageProfile.osDisk.managedDisk.id` property because Azure automatically determines this property when the virtual machine is deployed
 
      > [!IMPORTANT]
      > If you don't remove this property, your template won't deploy correctly.
 
-   - `storageProfile.dataDisks` property because it's empty.
-   - `osProfile.secrets` property because it's empty.
-   - `osProfile.requireGuestProvisionSignal` property because Azure sets this property automatically.
+   - `storageProfile.dataDisks` property because it's empty
+   - `osProfile.secrets` property because it's empty
+   - `osProfile.requireGuestProvisionSignal` property because Azure sets this property automatically
 
 1. In the `virtualNetwork` resource, remove the following properties:
 
    - `delegations` and `virtualNetworkPeerings` properties because they're empty.
-   - The line for `type: 'Microsoft.Network/virtualNetworks/subnets'`.
+   - The line for `type: 'Microsoft.Network/virtualNetworks/subnets'`
 
 1. In the `networkInterface` resource, remove the following properties:
 
@@ -231,17 +231,17 @@ The export process adds redundant properties to many resources. Use these steps 
 
 ## Create a parameter file
 
-Your parameters currently are defined as default values in your template. To make your template work well across environments, it's a good idea to create a parameter file, and to remove default values for parameters that need to change for each environment.
+Your parameters are currently defined as default values in your template. To make your template work well across environments, it's a good idea to create a parameter file, and to remove default values for parameters that need to change for each environment.
 
 1. Create a new file named _main.parameters.production.json_.
 
-1. Paste the following JSON into the _main.parameters.production.json_ file.
+1. Paste the following JSON into the _main.parameters.production.json_ file:
 
    :::code language="json" source="code/5-parameters.json" :::
 
 1. Update the values for the `virtualNetworkAddressPrefix` and `virtualNetworkDefaultSubnetAddressPrefix` parameters to match the IP address ranges that are specified in your reference template's virtual network resource.
 
-   For example, here's how the values are specified in a reference template. Your IP addresses might be different from IP addresses that are used in this example.
+   For example, here's how the values are specified in a reference template. Your IP addresses might be different from the IP addresses that are used in this example.
 
    :::code language="bicep" source="code/3-main-migrated.bicep" range="93-118" highlight="7, 15":::
 
@@ -251,7 +251,7 @@ Your parameters currently are defined as default values in your template. To mak
    - `virtualMachineManagedDiskStorageAccountType`
    - `virtualMachineAdminUsername`
 
-  Don't change the default values for `location` and `publicIPAddressSkuName` parameters because those values are likely the same for all your environments.
+  Don't change the default values for the `location` and `publicIPAddressSkuName` parameters because those values are probably the same for all your environments.
 
 ## Verify your template
 

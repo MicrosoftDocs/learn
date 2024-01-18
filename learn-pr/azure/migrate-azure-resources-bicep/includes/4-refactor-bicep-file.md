@@ -2,7 +2,7 @@ After the convert and migrate phases of converting your template to Bicep, you n
 
 :::image type="content" source="../media/4-refactor-phase.png" alt-text="Diagram that shows the refactor phase of the recommended workflow for migrating Azure resources to Bicep." border="false":::
 
-The main focus of the _refactor_ phase is to improve the quality of your Bicep code. Improvements can include changes like adding code comments that align the template with your template standards.
+The main focus of the refactor phase is to improve the quality of your Bicep code. Improvements can include changes like adding code comments that align the template with your template standards.
 
 The refactor phase consists of eight steps, which you can do in any order:
 
@@ -94,6 +94,6 @@ Make sure that your Bicep file follows standard recommendations. Review [Bicep b
 
 ## The converted template
 
-After you make the appropriate improvements, review the final template before you deploy it. The updated template includes revised names, API version, descriptions, and added comments:
+After you make the appropriate improvements, review the final template before you deploy it. The updated template includes revised names, API versions, descriptions, and added comments:
 
 :::code language="bicep" source="code/4-app-service-plan-updated.bicep" :::

@@ -6,9 +6,9 @@ The main focus of these two phases is to test your Bicep file by using the avail
 
 ## Test phase
 
-During the test phase of migrating your resources to Bicep, the goal is to verify the integrity of your migrated templates and to do a test deployment.
+The goals of the test phase of migrating your resources to Bicep are to verify the integrity of your migrated templates and to do a test deployment.
 
-The test phase consists of two steps that you complete in sequence:
+The test phase consists of two steps that you complete in this order:
 
 1. Run the ARM template deployment what-if operation.
 1. Do a test deployment.
@@ -21,27 +21,27 @@ The what-if operation provides a preview of the changes that will be made when y
 
 When you deploy new resources or modify existing resources, it's possible to introduce breaking changes to your environments. Your deployment might modify or delete existing resources, create incorrectly configured new resources, or affect the overall functionality of your application.
 
-The [ARM template deployment what-if operation](/azure/azure-resource-manager/templates/deploy-what-if?tabs=azure-powershell) can help you verify your converted templates before you deploy them. It compares the current state of your environment with the intended state that's defined in the template. The tool outputs the list of changes that will occur without applying the changes to your environment. This process can help increase your confidence level in your deployments. You can use what-if with both incremental and complete mode deployments. Even if you plan to deploy your template by using incremental mode, it's a good idea to run your what-if operation in complete mode. Running the what-if operation helps you identify any resources you might have accidentally left out of your template.
+The [ARM template deployment what-if operation](/azure/azure-resource-manager/templates/deploy-what-if) can help you verify your converted templates before you deploy them. It compares the current state of your environment with the intended state that's defined in the template. The tool outputs the list of changes that will occur without applying the changes to your environment. This process can increase your confidence level in your deployments. You can use what-if with both incremental and complete mode deployments. Even if you plan to deploy your template by using incremental mode, it's a good idea to run your what-if operation in complete mode. Running the what-if operation helps you identify any resources you might have accidentally left out of your template.
 
 > [!NOTE]
 > The what-if operation might list some resource properties as deleted when they actually won't change. Those results are considered _noise_.
 
 ### Test deployment
 
-Before you introduce your converted Bicep template to production, consider running multiple test deployments. If you have multiple environments (production, dev, test), you might first want to try deploying your template to one of your non-production environments. After the deployment, compare the original resources with the new resource deployments for consistency.
+Before you introduce your converted Bicep template to production, consider running multiple test deployments. If you have multiple environments (production, dev, test), you might first want to try deploying your template to one of your non-production environments. After the deployment, compare the original resources for consistency with the new resource deployments.
 
 > [!TIP]
 > If you don't have access to a non-production environment to test your deployment, deploy your Bicep template to a new environment instead.
 
 ## Deploy phase
 
-During the deploy phase of migrating your resources to Bicep, the goal is to deploy your final Bicep file to production. Before the production deployment, you should consider a few things.
+The goal of the deploy phase of migrating your resources to Bicep is to deploy your final Bicep file to production. Before the production deployment, you should consider a few things.
 
-The deploy phase consists of four steps, which you complete in sequence:
+The deploy phase consists of four steps, which you complete in this order:
 
 1. Prepare a rollback plan.
 1. Run the what-if operation against production.
-1. Deploy manually.
+1. Deploy the Bicep file manually.
 1. Run smoke tests.
 
 These steps help you prepare for any possible problems with production deployments.

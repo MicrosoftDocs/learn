@@ -9,7 +9,7 @@ During the process, you'll do the following tasks:
 > - Deploy a new virtual machine by using the Azure portal.
 > - Export the virtual machine resources to a JSON template.
 > - Decompile the JSON template to Bicep.
-> - Create a new Bicep file and migrate the resources from the decompiled template.
+> - Create a new Bicep file and move the resources from the decompiled template.
 
 [!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
@@ -37,7 +37,7 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
     | Setting | Value  |
     | ------ | ------- |
     | **Project details**  |
-    | Resource group | Select **Create new** and enter **ToyTruck**. |
+    | Resource group | Select **Create new** and enter **ToyTruck** |
     | **Instance details** |
     | Virtual machine name  | ToyTruckServer |
     | Region | (US) West US 3 |
@@ -69,7 +69,7 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 ## Export the resource group contents to a JSON template
 
-1. In the left menu, under **Automation** select **Export template**:
+1. In the left menu, under **Automation**, select **Export template**:
 
    :::image type="content" source="../media/3-export-template-menu.png" alt-text="Screenshot of the Azure portal that shows the Export template menu item in the resource group pane.":::
 
@@ -151,7 +151,7 @@ You'll fix these problems throughout the rest of this module.
 
    You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> in macOS).
 
-1. Split the editor so that you can see both files at the same time. The _template.bicep_ file in the left pane and the _main.bicep_ file in the right pane.
+1. Split the editor so that you can see both files at the same time (the _template.bicep_ file in the left pane and the _main.bicep_ file in the right pane).
 
    1. Select the **main.bicep** tab.
    1. Select **View** > **Editor Layout** > **Split Right** to open the **main.bicep** tab in the right pane.
@@ -185,7 +185,7 @@ You'll fix these problems throughout the rest of this module.
    As you copy each resource, inspect its properties. Later in this module, you'll update each resource's properties and configuration to conform to Bicep best practices.
 
    > [!TIP]
-   > When you convert or export your own templates, you can update the resources to follow best practices as you copy them cross. In this module, we do this separately to make it easier to understand each phase of the migration process.
+   > When you convert or export your own templates, you can update the resources to follow best practices as you copy them. In this module, we update the resources separately to make it easier to understand each phase of the migration process.
 
 ## Check for missing resources
 
