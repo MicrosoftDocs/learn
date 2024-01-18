@@ -10,7 +10,7 @@ You learned that a single template spec can have multiple versions. A template s
 
 The Azure CLI and Azure PowerShell make it easy to work with multiple versions. In fact, you already worked with versions when you deployed the template spec in the previous exercise.
 
-It's a good idea to carefully plan how you'll version your template specs. Two key decisions that you need to make are the *versioning scheme* and the *versioning policy* to use.
+It's a good idea to carefully plan how you'll version your template specs. Two key decisions to make are the *versioning scheme* and the *versioning policy* to use.
 
 ### Versioning schemes
 
@@ -20,7 +20,7 @@ Your versioning scheme determines how you generate version numbers. Common versi
 - *Dates* also make good version numbers. For example, if you publish the first version of your template spec on January 16, 2021, you might name the version `2021-01-16` (using *yyyy-mm-dd* format). When you publish another version on March 3, you could name it `2021-03-03`.
 - *Semantic versioning* is a versioning system often used in software, where a single version number contains multiple parts. Each part signals different information about the nature of the change.
 
-Although you can use any versioning scheme you like, it's a good idea to choose something that can be sorted into a meaningful order. That's why numbers and dates are often good choices.
+Although you can use any versioning scheme you like, it's a good idea to choose something that can be sorted into a meaningful order such as numbers and dates.
 
 > [!NOTE]
 > Azure stores the date that each version is created. Even if you don't use date-based versioning, you can still see this information.
@@ -29,11 +29,11 @@ Although you can use any versioning scheme you like, it's a good idea to choose 
 
 Template specs give you the flexibility to choose when to create new versions or to update an existing version. For example, you can effectively opt out of versioning by creating and publishing a single version named `latest`. Whenever you need to change your template spec, you simply update that version. Although this policy works, it's not a good practice.
 
-Conversely, if you make a small change to an existing template that doesn't affect how it's used, creating a new version is probably not a good idea. You would need to communicate the new version number to anyone who uses the template spec.
+Conversely, if you make a small change to an existing template that doesn't affect its use, creating a new version is probably not a good idea. You would need to communicate the new version number to anyone who uses the template spec.
 
 Here's a versioning policy that often works well:
 
-- Whenever you make significant changes to a template spec, create a new version. Significant changes include anything that might make a difference to the user who deploys your template spec. Examples include adding another resource to the template or changing a resource's properties.
+- Whenever you make significant changes to a template spec, create a new version. Significant changes to your template spec include anything that might make a difference to the user who deploys it. Examples include adding another resource to the template or changing a resource's properties.
 - Whenever you make small changes to a template spec, which are sometimes called a *hotfix*, update the existing template spec version.
 - Delete old versions when they're no longer relevant or when you don't want anyone to use them.
 
@@ -42,9 +42,9 @@ Here's a versioning policy that often works well:
 
 ### Version descriptions
 
-When you create a new version of a template spec, you can optionally give it a version description. Although it's not required, it's a good practice. The version description summarizes the changes that you made, to help anyone who uses your template spec to select the version that best fits their needs.
+When you create a new version of a template spec, you can optionally give it a version description. Providing a version description is good practice, even if it isn't required. The version description summarizes the changes that you made, to help anyone who uses your template spec to select the version that best fits their needs.
 
-## View, update, and delete a template spec
+## Making changes to a template spec
 
 Template specs are Azure resources, so you can manage them like any other resource. This means you can view the details of a template spec, update it, and delete it, just like normal.
 
