@@ -74,7 +74,7 @@ Let's download the K3s installer and Windows node files to [Azure file share](/a
     curl -L -o ~/clouddrive/AksEdgeWindows-Learn.zip "https://aka.ms/aks-edge/windows-node-zip" &
     ```
 
-1. Run the Powershell [Get-AzRemoteDesktopFile](/powershell/module/az.compute/get-azremotedesktopfile) cmdlet to get the RDP file to connect to the VM:
+1. Run the PowerShell [Get-AzRemoteDesktopFile](/powershell/module/az.compute/get-azremotedesktopfile) cmdlet to get the RDP file to connect to the VM:
 
     ```azurecli
     publicIp=$(az vm show -d -g $resourcegroup -n $vmname --query publicIps -o tsv)
