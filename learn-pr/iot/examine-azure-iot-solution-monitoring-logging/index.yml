@@ -1,23 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.examine-azure-iot-solution-monitoring-logging
 metadata:
-  title: Examine Azure IoT solution monitoring and logging
-  description: "Examine Azure IoT solution monitoring and logging"
-  ms.date: 11/05/2023
+  title: Examine Azure IoT monitoring and diagnostics
+  description: "Examine Azure IoT monitoring and diagnostics"
+  ms.date: 01/08/2024
   author: kgremban
   ms.author: kgremban
   manager: lizross
-  ms.custom: engagement-fy23
   ms.topic: module-standard-task-based
   ms.service: iot-hub
-title: Examine Azure IoT solution monitoring and logging
-summary: This module describes Azure Monitor and how to configure monitoring and logging of events using IoT Hub metrics, and it examines the relationship between IoT Hub service limits and device lifecycle events.
+title: Examine Azure IoT monitoring and diagnostics
+summary: This module describes Azure Monitor and other Azure tools used to monitor, log, and analyze IoT Hub data.
 abstract: |
   After you complete this module, you'll be able to:
-  - Describe Azure Monitor support.
-  - Describe IoT Hub metrics and resource logs.
-  - Describe IoT device connection state monitoring and lifecycle events.
-  - Describe IoT Hub service limits and their impact on monitoring.
+  - Describe Azure Monitor support for Azure IoT Hub.
+  - Describe metrics for Azure IoT Hub.
+  - Describe diagnostic settings for Azure IoT Hub.
+  - Describe log analytics for Azure IoT Hub.
+  - Describe alerts for Azure IoT Hub.
+  - Describe Service Health monitoring for Azure IoT Hub.
+  - Describe device monitoring for Azure IoT Hub.
+
 prerequisites: |
   Ability to:
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
@@ -35,10 +38,12 @@ subjects:
 units:
 - learn.wwl.examine-azure-iot-solution-monitoring-logging.introduction
 - learn.wwl.examine-azure-iot-solution-monitoring-logging.monitor-support
-- learn.wwl.examine-azure-iot-solution-monitoring-logging.examine-iot-hub-metrics
-- learn.wwl.examine-azure-iot-solution-monitoring-logging.examine-resource-log-contents-monitoring
-- learn.wwl.examine-azure-iot-solution-monitoring-logging.examine-device-connection-state-lifecycle-notifications
-- learn.wwl.examine-azure-iot-solution-monitoring-logging.review-iot-hub-service-limits
+- learn.wwl.examine-azure-iot-solution-monitoring-logging.metrics
+- learn.wwl.examine-azure-iot-solution-monitoring-logging.diagnostic-settings
+- learn.wwl.examine-azure-iot-solution-monitoring-logging.log-analytics
+- learn.wwl.examine-azure-iot-solution-monitoring-logging.alerts
+- learn.wwl.examine-azure-iot-solution-monitoring-logging.service-health
+- learn.wwl.examine-azure-iot-solution-monitoring-logging.device-monitor
 - learn.wwl.examine-azure-iot-solution-monitoring-logging.knowledge-check
 - learn.wwl.examine-azure-iot-solution-monitoring-logging.summary
 badge:
