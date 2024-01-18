@@ -21,8 +21,8 @@ At the end of this module, you should be able to:
 
 ## Prerequisites  
 
-- Experience working with, maintaining, and developing with SQL Server or Azure SQL.
-- Experience with Azure, such as deploying and managing resources.
+- Experience working with, maintaining, and developing with SQL Server or Azure SQL
+- Experience with Azure, such as deploying and managing resources
 
 For the exercises, a sandbox environment is provided for Azure resources. However, to complete the exercises, you need to set up a few things on your local machine:  
 

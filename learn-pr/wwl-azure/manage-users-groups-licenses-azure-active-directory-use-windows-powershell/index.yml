@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/26/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: active-directory
 title: Manage users, groups, and licenses in Microsoft Entra ID by using Windows PowerShell
 summary: This module covers how to give access to the services in Microsoft 365, so that you can create user accounts and then assign licenses that provide access to the services.
@@ -34,7 +34,7 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-powershell
 - azure-virtual-machines

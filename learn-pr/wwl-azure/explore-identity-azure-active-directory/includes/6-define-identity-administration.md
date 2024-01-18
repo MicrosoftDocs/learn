@@ -1,8 +1,7 @@
-
 **Identity administration** is how identity objects are managed over the lifetime of the identity’s existence. This administration can be manual or automated.  However, it has to be done.  Here's a simple example of what happens without governance and administration of your identities.
 
 #### Story - the life of an identity
-You have a user by the name of Juan.  Juan is given an account in your company and works for several years.  Over that time, the user is given admin access to deploy an application.  Later Juan leaves the company in good regard; however, the account is never removed from the system. A manager forgot to submit the paperwork to close the account. There's no governance system in place to notice the account is unused and that Juan is no longer listed in the HR systems.  A year later, Juan falls victim of a phishing email and has his personal username and password stolen.  Being like many people, Juan used a similar password for his personal life and his work accounts.  Guess what, you now have a scenario where your systems could be broken into. And the attack will come from what appears to be a valid account!
+You have a user by the name of Juan.  Juan is given an account in your company and works for several years.  Over that time, the user is given admin access to deploy an application.  Later Juan leaves the company in good regard; however, the account is never removed from the system. A manager forgot to submit the paperwork to close the account. There's no governance system in place to notice the account is unused and that Juan is no longer listed in the HR systems.  A year later, Juan falls victim of a phishing email and has his personal username and password stolen.  Being like many people, Juan used a similar password for his personal life and his work accounts.  Guess what, you now have a scenario where your systems could be broken into. And the attack comes from what appears to be a valid account!
 
 :::image type="content" source="../media/identity-lifecycle.png" alt-text="Diagram of life of an identity. Start, no access. Then job with access and identity created. Leave the company, then back to no access.":::
 
@@ -37,7 +36,7 @@ There are many common tasks performed during identity administration.
 
 | Azure PowerShell | CLI (command line interface) |
 | :--------------- | :--------------------------- |
-| Cross-platform PowerShell module, runs on Windows, macOS, Linux | Cross-platform command-line interface, installable on Windows, macOS, Linux |
+| Cross-platform PowerShell module runs on Windows, macOS, Linux | Cross-platform command-line interface, installable on Windows, macOS, Linux |
 | Requires Windows PowerShell or PowerShell | Runs in Windows PowerShell, Command prompt, or Bash and other Unix shells |
 
 > [!Note]

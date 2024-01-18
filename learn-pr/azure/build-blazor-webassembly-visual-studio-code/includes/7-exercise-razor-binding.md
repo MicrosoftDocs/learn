@@ -6,29 +6,33 @@ In this exercise, create a basic to-do list component inside our Blazor app.
 
    ::: zone pivot="vscode"
 
-   With Visual Studio Code and other text editors, you can create the razor component at the command line with this statement:
+   With Visual Studio Code inside the **Solution Explorer**, right click on the `Pages` folder under `Components` and select **Add new file...** and then select **Razor Component**. Name the component `Todo`.
+   
+   
+   In other text editors, you can create the razor component at the command line with this statement:
 
    ```dotnetcli
-   dotnet new razorcomponent -n Todo -o Pages
+   dotnet new razorcomponent -n Todo -o Components/Pages
    ```
 
-   The `-n|--name` option in the preceding command specifies the name of the new Razor component. The new component is created in the project's `Pages` folder with the `-o|--output` option.
+   The `-n|--name` option in the preceding command specifies the name of the new Razor component. The new component is created in the project's `Components/Pages` folder with the `-o|--output` option.
 
    ::: zone-end
 
    ::: zone pivot="vstudio"
 
-   In Visual Studio, you can right-click the `Pages` folder in **Solution Explorer**, then choose **Add** > **Razor Component...** and name the component `Todo.razor`
+   In Visual Studio, you can right-click the `Pages` folder under the `Components` folder in **Solution Explorer**, then choose **Add** > **Razor Component...** and name the component `Todo.razor`
 
    ::: zone-end
 
    > [!IMPORTANT]
    > Razor component file names require a capitalized first letter. Open the `Pages` folder and confirm that the `Todo` component file name starts with a capital letter `T`. The file name should be `Todo.razor`.
 
-2. Open the `Todo` component and add an `@page` Razor directive to the top of the file with a relative URL of `/todo`.
+2. Open the `Todo` component and add an `@page` Razor directive to the top of the file with a relative URL of `/todo` and set the `rendermode`.
 
     ```cshtml
     @page "/todo"
+    @rendermode InteractiveServer
 
     <h3>Todo</h3>
 
@@ -37,7 +41,7 @@ In this exercise, create a basic to-do list component inside our Blazor app.
     }
     ```
 
-3. Save the `Pages/Todo.razor` file.
+3. Save the `Components/Pages/Todo.razor` file.
 
 ## Add the Todo component to the navigation bar
 
@@ -45,24 +49,49 @@ The `NavMenu` component is used in the app's layout. Layouts are components that
 
 In the `<nav>...</nav>` section of the NavMenu component, add the following new `<div>...</div>` and `NavLink` component for the `Todo` component.
 
-In `Shared/NavMenu.razor`:
+In `Components/Layout/NavMenu.razor` add a Todo `nav-item` under the `weather` item:
 
 ```razor
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-    <nav class="flex-column">
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">BlazorApp</a>
+    </div>
+</div>
 
-        ...
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="counter">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="weather">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
+            </NavLink>
+        </div>
 
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="todo">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Todo
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Todo
             </NavLink>
         </div>
     </nav>
 </div>
+
+
 ```
 
-Save the `Shared/NavMenu.razor` file. The browser should refresh automatically and now have the Todo entry on the navigation bar:
+Save the `Components/Layout/NavMenu.razor` file. The browser should refresh automatically and now have the Todo entry on the navigation bar or you may need to relaunch the app:
 
 ![Added Todo navigation element.](../media/todo-nav.png)
 
@@ -73,6 +102,8 @@ Create a new file in the root of the project (the `BlazorApp` folder) named `Tod
 Use the following C# code for the `TodoItem` class. Declare the `Title` as a nullable string by using `?`.
 
 ```csharp
+namespace BlazorApp;
+
 public class TodoItem
 {
     public string? Title { get; set; }
@@ -82,7 +113,7 @@ public class TodoItem
 
 ::: zone pivot="vscode"
 
-You may need to stop and restart the `dotnet watch run` process if it doesn't detect the new `TodoItem` file and rebuild your project.
+You may need to stop and restart the debugger or the `dotnet watch run` process if it doesn't detect the new `TodoItem` file and rebuild your project.
 
 ::: zone-end
 
@@ -95,6 +126,7 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. T
 
 ```cshtml
 @page "/todo"
+@rendermode InteractiveServer
 
 <h3>Todo</h3>
 
@@ -116,6 +148,7 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. T
 
     ```razor
     @page "/todo"
+    @rendermode InteractiveServer
     
     <h3>Todo</h3>
     
@@ -173,6 +206,7 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. T
 
     ```razor
     @page "/todo"
+    @rendermode InteractiveServer
     
     <h3>Todo</h3>
     

@@ -8,8 +8,7 @@ metadata:
   ms.date: 10/21/2022  
   author: sreekzz
   ms.author: v-sreiyer  
-  ms.topic: interactive-tutorial 
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-what-is-azure-hdinsight.md)]

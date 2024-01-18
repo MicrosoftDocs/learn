@@ -6,8 +6,8 @@ metadata:
   ms.date: 10/09/2023
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Review the principles of code debugging and exception handling
 summary: Examine the code debugging process and the benefits provided by code debuggers, and learn what an exception is and how exceptions are used in an application.
 abstract: |

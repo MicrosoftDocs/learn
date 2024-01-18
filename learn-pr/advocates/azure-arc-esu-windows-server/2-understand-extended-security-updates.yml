@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.enable-windows-server-extended-security-updates-using-azure-ar.understand-extended-security-updates
+title: Understand Extended Security Updates
+metadata:
+  title: Understand Extended Security Updates
+  description: Understand the functionality of Extended Security Updates.
+  ms.date: 01/03/2024
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ms.service: windows-server
+  ms.custom: team=cloud_advocates
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-understand-extended-security-updates.md)]

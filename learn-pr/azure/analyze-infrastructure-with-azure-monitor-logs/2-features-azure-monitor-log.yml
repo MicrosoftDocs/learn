@@ -6,8 +6,7 @@ metadata:
   ms.date: 09/06/2019
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Features of Azure Monitor logs
 durationInMinutes: 10
 content: |

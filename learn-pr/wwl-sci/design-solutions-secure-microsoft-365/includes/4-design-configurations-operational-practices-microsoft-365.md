@@ -46,15 +46,15 @@ Return to [**_Common identity and device access policies_**](https://learn.micr
 
 :::image type="content" source="../media/identity-access-enterprise-tier.png" alt-text="Diagram showing the Zero Trust identity and access policies — Enterprise (recommended) tier." lightbox="../media/identity-access-enterprise-tier.png":::
 
-## Step 4: Evaluate, pilot, and deploy Microsoft 365 Defender
+## Step 4: Evaluate, pilot, and deploy Microsoft Defender XDR
 
-Microsoft 365 Defender is an extended detection and response (XDR) solution that automatically collects, correlates, and analyzes signal, threat, and alert data from across your Microsoft 365 environment, including endpoint, email, applications, and identities.
+Microsoft Defender XDR is an extended detection and response (XDR) solution that automatically collects, correlates, and analyzes signal, threat, and alert data from across your Microsoft 365 environment, including endpoint, email, applications, and identities.
 
-:::image type="content" source="../media/microsoft-365-zero-trust-architecture-defender.png" alt-text="Diagram showing the process of adding Microsoft 365 Defender to the Zero Trust architecture." lightbox="../media/microsoft-365-zero-trust-architecture-defender.png":::
+:::image type="content" source="../media/microsoft-365-zero-trust-architecture-defender.png" alt-text="Diagram showing the process of adding Microsoft Defender XDR to the Zero Trust architecture." lightbox="../media/microsoft-365-zero-trust-architecture-defender.png":::
 
-Go to [**_Evaluate and pilot Microsoft 365 Defender_**](https://learn.microsoft.com/microsoft-365/security/defender/eval-overview?view=o365-worldwide) for a methodical guide to piloting and deploying Microsoft 365 Defender components.
+Go to [**_Evaluate and pilot Microsoft Defender XDR_**](https://learn.microsoft.com/microsoft-365/security/defender/eval-overview?view=o365-worldwide) for a methodical guide to piloting and deploying Microsoft Defender XDR components.
 
-See the guidance to read about the architecture requirements for each component of Microsoft 365 Defender.
+See the guidance to read about the architecture requirements for each component of Microsoft Defender XDR.
 
 ## Step 5: Protect and govern sensitive data
 

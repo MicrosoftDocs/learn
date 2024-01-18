@@ -7,9 +7,8 @@ metadata:
   ms.date: 10/12/2023
   author: duongau
   ms.author: duau
-  ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: true
+  ms.topic: unit
+azureSandbox: True
 interactive: bash
 durationInMinutes: 6
 content: |

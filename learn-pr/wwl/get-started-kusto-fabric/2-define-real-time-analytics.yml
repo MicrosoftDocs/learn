@@ -4,11 +4,10 @@ title: What is Synapse Real-Time Analytics?
 metadata:
   title: What is Synapse Real-Time Analytics?
   description: "What is Synapse Real-Time Analytics?"
-  ms.date: 08/30/2023
+  ms.date: 01/09/2024
   author: wwlpublish
   ms.author: shlindsay
-  ms.topic: interactive-tutorial
-  ms.service: fabric
+  ms.topic: unit
   ms.custom:
   - build-2023
   - build-2023-dataai

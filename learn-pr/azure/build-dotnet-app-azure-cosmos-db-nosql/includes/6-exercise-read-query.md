@@ -8,7 +8,7 @@ There are three key requirements at this time:
 
 :::image type="content" source="../media/project-visual-query.svg" alt-text="Illustration of icons indicating data being queried using a query." border="false":::
 
-After you complete this exercise, your application will almost be ready. You'll have queries that can read the category and product items you previously created.
+After you complete this exercise, your application will almost be ready. You have queries that can read the category and product items you previously created.
 
 ## Point read an item
 
@@ -47,7 +47,7 @@ The simplest way to retrieve an item in Azure Cosmos DB is to perform a point re
 
 ## Execute a query
 
-In situations where you need multiple items, you can use a query to find and retrieve those items. Recall that we used the **categoryId** partition key property to group our items into specific categories. If we include that property in a query, we effectively build a query that's scoped to a single logical partition. Now, you use a query to find all of the items in the *tents* category.
+In situations where you need multiple items, you can use a query to find and retrieve those items. Recall that we used the **categoryId** partition key property to group our items into specific categories. If we include that property in a query, we effectively build a query scoped to a single logical partition. Now, you use a query to find all of the items in the *tents* category.
 
 1. In *Program.cs*, create a new string for the query `SELECT * FROM products p WHERE p.categoryId = 'gear-camp-tents'`. However, use a parameter named `@partitionKey` for the **categoryId** filter.
 

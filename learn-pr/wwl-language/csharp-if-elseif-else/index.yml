@@ -3,10 +3,11 @@ uid: learn.languages.csharp-if-elseif-else
 metadata:
   title: Add decision logic to your code using `if`, `else`, and `else if` statements in C#
   description: "Add decision logic to your code using `if`, `else`, and `else if` statements in C#"
-  ms.date: 08/30/2023
+  ms.date: 01/05/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.prod: dotnet-csharp
   ms.devlang: csharp
 title: Add decision logic to your code using `if`, `else`, and `else if` statements in C#
 summary: Learn to branch your code's execution path by evaluating Boolean expressions.
@@ -20,7 +21,7 @@ prerequisites: |
   - Experience declaring, initializing, setting, and retrieving variables by using the int data type.
   - Experience printing messages to output by using Console.WriteLine().
   - Experience with string interpolation to combine variables into literal strings.
-  - Experience working with the System.Random class to generate random numbers.
+  - Experience working with the System. Random class to generate random numbers.
 iconUrl: /training/achievements/csharp-if-elseif-else.svg
 levels:
 - beginner

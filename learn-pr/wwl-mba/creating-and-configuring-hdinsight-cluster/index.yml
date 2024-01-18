@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/05/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: hdinsight
 title: Creating and configuring a HDInsight cluster
 summary: In this module, you will learn how to create a HDInsight Cluster, monitor a cluster and be aware of common provisioning issues.

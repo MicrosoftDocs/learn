@@ -4,14 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/20/2023
+  ms.date: 10/23/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.prod: azure
+durationInMinutes: 10
 content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
@@ -28,7 +26,7 @@ quiz:
     - content: "App gallery directory"
       isCorrect: true
       explanation: "Correct. The two directories that Microsoft maintains are the App gallery directory and the Microsoft services directory."
-  - content: "Which one of the following is a best practice for building multi-tenant apps?"
+  - content: "Which one of the following is a best practice for building multitenant apps?"
     choices:
     - content: "Follow the principle of least user access to ensure that your app only requests permissions it actually needs."
       isCorrect: true

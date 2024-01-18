@@ -1,1 +1,0 @@
-Your team will be responsible for managing thousands of devices that have been deployed as part of the company's IoT solution. The experience that you have gained using IoT Hub automatic device management in a test environment will help to ensure that the team is prepared for device management at scale.

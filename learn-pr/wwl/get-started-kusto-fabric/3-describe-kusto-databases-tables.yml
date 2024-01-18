@@ -4,11 +4,10 @@ title: Understand KQL database and tables
 metadata:
   title: Understand KQL database and tables
   description: "Understand KQL database and tables"
-  ms.date: 08/30/2023
+  ms.date: 01/09/2024
   author: wwlpublish
   ms.author: shlindsay
-  ms.topic: interactive-tutorial
-  ms.service: fabric
+  ms.topic: unit
   ms.custom:
   - build-2023
   - build-2023-dataai

@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.wwl.deploy-cloud-native-applications-to-azure-container-apps
+metadata:
+  title: Deploy cloud-native apps using Azure Container Apps
+  description: Learn how to build, deploy, scale, and manage containerized cloud-native apps using Azure Container Apps, Azure Container Registry, and Azure Pipelines.
+  ms.date: 11/22/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: learning-path
+title: Deploy cloud-native apps using Azure Container Apps
+prerequisites: |
+  - Basic understanding of cloud computing concepts: Familiarity with cloud computing fundamentals, such as virtualization, scalability, and on-demand resource provisioning.
+  - Knowledge of containers: Understanding the concept of containers, their benefits, and how they differ from traditional apps and virtual machines.
+  - Familiarity with container orchestration: Basic understanding of container orchestration platforms like Kubernetes and their role in managing containerized applications.
+  - Experience with Azure: Some familiarity with Microsoft Azure and its core container services, such as Azure Container Registry, Azure Kubernetes Service, and Azure Container Apps.
+  - Experience with deployments: Some familiarity with Azure DevOps or similar CI/CD tools for application deployment.
+  - Experience with networks: Some familiarity with networking concepts and Azure Virtual Networks.
+summary: |
+  Develop the skills necessary to configure a secure deployment solution for cloud-native apps. Learn how to build, deploy, scale, and manage containerized cloud-native apps using Azure Container Apps, Azure Container Registry, and Azure Pipelines.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- devops-engineer
+products:
+- azure-container-registry
+- azure-pipelines
+- azure-container-apps
+subjects:
+- devops
+modules:
+- learn.wwl.get-started-cloud-native-apps-containerized-deployments
+- learn.wwl.configure-azure-container-registry-container-app-deployments
+- learn.wwl.configure-container-app-azure-container-apps
+- learn.wwl.configure-continuous-deployment-container-apps
+- learn.wwl.scale-manage-deployed-container-apps
+- learn.wwl.deploy-manage-container-app-using-azure-container-apps
+trophy:
+  uid: learn.wwl.deploy-cloud-native-applications-to-azure-container-apps.trophy

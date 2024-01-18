@@ -6,7 +6,8 @@ metadata:
   ms.date: 05/25/2022
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: github
 title: Leverage GitHub Actions to publish to GitHub Packages
 summary: Publish automatically and securely your code libraries or Docker images with GitHub Packages. You'll also run Docker images published into GitHub Packages locally.
 abstract: |

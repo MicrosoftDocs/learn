@@ -7,8 +7,7 @@ metadata:
   ms.date: 05/31/2021
   author: juliakm
   ms.author: jukullam
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 25
 content: |
   [!include[](includes/5-exercise-provision-cloud-native-app-using-github.md)]

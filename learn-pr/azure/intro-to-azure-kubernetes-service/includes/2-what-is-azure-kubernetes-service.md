@@ -34,9 +34,9 @@ The container concept gives us three major benefits:
 
 1. **Smaller Size** - A container is similar to a VM, but without the kernel for each machine. Instead, they share a host kernel. VMs use a large image file to store both the OS and the application you want to run. In contrast, a container doesn't need an OS, only the application.
 
-1. **Lightweight** - The container always relies on the host installed OS for kernel-specific services. The lightweight property makes containers less resource-intensive, so multiple containers installation is possible within the same compute environment.
+1. **Lightweight** - The container always relies on the host installed OS for kernel-specific services. The lightweight property makes containers less resource-intensive, so installing multiple containers is possible within the same compute environment.
 
-1. **Startup is fast** - Containers start up in few seconds instead of minutes, unlike a VM.
+1. **Startup is fast** - Containers start up in few seconds, unlike VMs, which can take minutes to start.
 
 The above benefits make containers a popular choice for developers and IT operations alike, and why many have switched from VMs.
 
@@ -44,11 +44,9 @@ The above benefits make containers a popular choice for developers and IT operat
 
 ![Diagram that shows replicated servers as multiple containers in the cloud.](../media/2-deploy-mutile-containers.png)
 
-Even though functionally, containers are similar to VMs, their purposes vary. A container has a distinct life cycle that exists as a temporary machine. Its state passes through the stages of pending, running, and terminated. This life cycle makes containers more disposable and impacts how developers and IT operations think about the management of large interconnected applications.
+Even though functionally, containers are similar to VMs, their purposes vary. A container has a distinct life cycle that exists as a temporary machine. Its state passes through the stages of pending, running, and terminated. This life cycle makes containers more disposable and impacts how developers and IT operations think about the management of large interconnected applications. Container management involves deploying, upgrading, monitoring, and removing containers.
 
-Management involves a process of deploying, upgrading, monitoring, and removing containers introduces many challenges.
-
-You find that during at noon there's more site traffic, so you need more instances of the site's caching service to manage performance. You plan to solve this problem by adding more caching service containers.
+For example, suppose that you discover that at noon there's more site traffic, so you need more instances of the site's caching service to manage performance. You plan to solve this problem by adding more caching service containers.
 
 Now it's time to roll out a new version of your caching service. How do you update all the containers? How do you remove all the older versions?
 
@@ -56,13 +54,13 @@ These types of load balancing questions require a system to manage your containe
 
 ## What is Kubernetes?
 
-Kubernetes is a portable, extensible open-source platform for automating deployment, scaling, and the management of containerized workloads. Kubernetes abstracts away complex container management and provides us with declarative configuration to orchestrate containers in different compute environments. This orchestration platform gives us the same ease of use and flexibility as with Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) offerings.
+Kubernetes is a portable, extensible open-source platform for automating deployment, scaling, and the management of containerized workloads. Kubernetes abstracts away complex container management and provides us with a declarative configuration to orchestrate containers in different compute environments. This orchestration platform gives us the same ease of use and flexibility as with Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) offerings.
 
 ![Diagram that shows replicated servers as multiple containers in a Kubernetes cluster.](../media/2-deploy-mutile-containers-k8s.png)
 
 Kubernetes allows you to view your data center as one large computer. We don't worry about how and where we deploy our containers, only about deploying and scaling our applications as needed.
 
-However, this view might be slightly misleading as there are a few aspects to keep in mind:
+Here are some additional aspects to keep in mind about Kubernetes:
 
 - Kubernetes isn't a full PaaS offering. It operates at the container level and offers only a common set of PaaS features.
 
@@ -70,9 +68,9 @@ However, this view might be slightly misleading as there are a few aspects to ke
 
 - Kubernetes doesn't limit the types of applications to run. If your application can run in a container, it runs on Kubernetes.
 
-- Your developers need to understand concepts such as microservices architecture, to make optimal use of container solutions.
+- Your developers need to understand concepts such as microservices architecture to make optimal use of container solutions.
 
-- Kubernetes doesn't provide middleware, data-processing frameworks, databases, caches, nor cluster storage systems. All these items are run as containers or as part of another service offering.
+- Kubernetes doesn't provide middleware, data-processing frameworks, databases, caches, or cluster storage systems. All these items are run as containers or as part of another service offering.
 
 - A Kubernetes deployment is configured as a cluster. A cluster consists of at least one primary machine or control plane,  and one or more worker machines. For production deployments, the preferred configuration is a high availability deployment with three to five replicated control plane machines. These worker machines are also called nodes or agent nodes.
 
@@ -87,6 +85,6 @@ With all the benefits you receive with Kubernetes, you're responsible for findin
 
 AKS manages your hosted Kubernetes environment and makes it simple to deploy and manage containerized applications in Azure. Your AKS environment is enabled with features such as automated updates, self-healing, and easy scaling. Azure manages the control plane of your Kubernetes cluster for free. You manage the agent nodes in the cluster and only pay for the VMs on which your nodes run.
 
-You either create your cluster in the Azure portal or use the Azure CLI to use AKS. When you create the cluster, there are Resource Manager templates to automate cluster creation. With these templates, you have access to features such as advanced networking options, Microsoft Entra Identity, and resource monitoring. Then, you can set up triggers and events to automate the cluster deployment for multiple scenarios.
+You can create and manage your cluster in the Azure portal or with the Azure CLI. When you create the cluster, there are Resource Manager templates to automate cluster creation. With these templates, you have access to features such as advanced networking options, Microsoft Entra Identity, and resource monitoring. Then, you can set up triggers and events to automate the cluster deployment for multiple scenarios.
 
-With AKS, you get the benefits of open-source Kubernetes without the added complexity or operational overhead from using only Kubernetes.
+With AKS, you get the benefits of open-source Kubernetes without the added complexity or operational overhead that using only Kubernetes can entail.

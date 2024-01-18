@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/22/2023
   author: aurnovcy
   ms.author: aurnovc
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-arc
   ms.subservice: azure-arc-servers
 title: Plan and deploy Azure Arc-enabled servers at scale 

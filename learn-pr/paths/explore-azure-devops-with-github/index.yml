@@ -8,11 +8,12 @@ metadata:
   author: kjo-msft
   ms.author: karinjohnson
   ms.service: azure-devops
+  ms.topic: learning-path
 summary: |
   Learn how to use GitHub Actions, Azure DevOps, and Azure Pipelines to build, test, and deploy applications.
 prerequisites: |
   - A [GitHub account](https://github.com/join)
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/explore-azure-devops-with-github.svg
 levels:
   - advanced
 roles:

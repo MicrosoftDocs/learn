@@ -4,11 +4,10 @@ title: Configure access to Log Analytics workspaces
 metadata:
   title: Configure access to Log Analytics workspaces
   description: "Configure access to Log Analytics workspaces"
-  ms.date: 10/09/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/3-configure-access-log-analytics-workspace.md)]

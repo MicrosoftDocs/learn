@@ -4,10 +4,10 @@ title: Exercise - Explore Clear() and Resize()
 metadata:
   title: Exercise - Explore Clear() and Resize()
   description: "Exercise - Explore Clear() and Resize()"
-  ms.date: 09/13/2023
+  ms.date: 12/12/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-clear-resize.md)]

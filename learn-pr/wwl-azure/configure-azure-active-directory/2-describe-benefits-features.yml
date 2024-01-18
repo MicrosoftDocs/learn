@@ -4,11 +4,10 @@ title: Describe Microsoft Entra ID benefits and features
 metadata:
   title: Describe Microsoft Entra ID benefits and features
   description: "Describe Microsoft Entra ID benefits and features"
-  ms.date: 10/10/2023
+  ms.date: 01/10/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.service: active-directory
+  ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 3

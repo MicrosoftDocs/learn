@@ -17,7 +17,7 @@ In the Azure Bastion resource, you can add diagnostic settings under **Monitorin
 
    :::image type="content" source="../media/5-bastion-diagnostics-settings.png" alt-text="Screenshot that shows the Add diagnostic settings link within the Diagnostics settings page.":::
 1. Enter a name for **Diagnostic setting name**.
-1. Under **log**, select **BastionAuditLogs**.
+1. Under **Logs**, check the box for **Bastion Audit Logs**.
 1. Under **Destination details**, select **Send to Log Analytics** and **Archive to storage account**.
 1. The location, subscription, and a storage account are autopopulated. Make sure the storage account is in the same region as the Azure Bastion resource.
 

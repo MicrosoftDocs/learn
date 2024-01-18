@@ -226,11 +226,6 @@ Because you specified *Function* when you created this function, you need to sup
 
 ::: zone-end
 
-    Under the **Output** pane, for **HTTP response code**, the function responds with the text `200 OK`.
-
-    > [!NOTE]
-    > The **Code/Test** function may open an *Input/Output* pane in a different configuration, with the log file appearing on the side of a selected function. If so, you won't be able to verify the function key system is working, as it is not required. Add the appropriate header and parameter values in the Test interface, and select **Run** to see the test output.
-
 ## Add business logic to the function
 
 Let's add the logic to the function, to check temperature readings that it receives, and set a status for each temperature reading.
@@ -387,8 +382,4 @@ We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to te
 
 1. In the Developer menu on the left, select **Monitor** to see that the request has been logged to Application Insights. The **Monitor** pane appears for your function.
 
-1. Select **Configure**. The **Application Insights** pane appears for your trigger function. Select **Turn on Application Insights**.
-
-1. In the **New resource name** field, select your function app, and in the **Location** field, select the region you initially associated with your function app.
-
-1. Select **Apply**, then select **Yes**.
+   The **Invocations Tab** of the pane displays **Invocation Traces** for each of your function invocations. Select the **Date(UTC)** value for one of the invocations and view the detail about the execution of your function.

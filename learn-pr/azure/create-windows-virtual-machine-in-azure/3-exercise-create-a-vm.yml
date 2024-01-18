@@ -5,10 +5,9 @@ metadata:
   title: Exercise - Create a Windows virtual machine
   description: Exercise - Create a Windows virtual machine
   ms.date: 09/24/2018
-  author: cynthn
-  ms.author: cynthn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: ju-shim
+  ms.author: jushiman
+  ms.topic: unit
 durationInMinutes: 10
 azureSandbox: true
 content: |

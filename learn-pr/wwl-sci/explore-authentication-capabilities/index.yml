@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/07/2023
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: active-directory
 title: Describe the authentication capabilities of Microsoft Entra ID
 summary: Learn about the authentication capabilities of Microsoft Entra ID, including multifactor authentication, and how they improve security. You'll also learn about self-service password reset (SSPR) and the password protection and management capabilities.

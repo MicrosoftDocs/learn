@@ -1,6 +1,6 @@
 ## What is an access review?
 
-An **Access Review** as the name implies, is a planned review of the access needs, rights, and history of user access. Access Reviews help users ensure that the right people have the right access to the right resources. They mitigate access risk by protecting, monitoring, and auditing access to critical assets—while ensuring employee and business partner productivity. Finally, the access review is performed in Microsoft Entra ID, part of Microsoft Entra, Identity Governance. A Microsoft Entra ID P2 license is required.
+An **Access Review** as the name implies, is a planned review of the access needs, rights, and history of user access. Access Reviews help users ensure that the right people have the right access to the right resources. They mitigate access risk by protecting, monitoring, and auditing access to critical assets—while ensuring employee and business partner productivity. Finally, the access review is performed in Microsoft Entra ID Governance. A Microsoft Entra ID premium P2 license is required.
 
 Consider your organizational needs to determine the strategy for deploying access reviews in your environment.
 
@@ -14,13 +14,11 @@ When technology projects fail, they typically do so due to mismatched expectatio
  -  **Corporate governance** ensures that the organization is following internal policy and complying with regulations.
     
     > [!NOTE]
-    > For reviews requiring manual evaluations, be sure to plan for adequate reviewers and review cycles that meet your policy and compliance needs. If review cycles are too frequent, or there are too few reviewers, quality may be lost and too many or too few people may have access.
-
-<a name='what-is-azure-ad-identity-governance'></a>
+    > For reviews requiring manual evaluations, be sure to plan for adequate reviewers and review cycles that meet your policy and compliance needs. If review cycles are too frequent, or there are too few reviewers, quality is lost and too many or too few people have access.
 
 ## What is Microsoft Entra ID Governance?
 
-Microsoft Entra ID Governance enables you to balance your organization's need for security and employee productivity with the right processes and visibility. It provides you with capabilities to ensure that the right people have the right access to the right resources. These and related Microsoft Entra ID and Enterprise Mobility + Security features allows you to mitigate access risk by protecting, monitoring, and auditing access to critical assets—while ensuring employee and business partner productivity.
+Microsoft Entra Identity Governance enables you to balance your organization's need for security and employee productivity with the right processes and visibility. It provides you with capabilities to ensure that the right people have the right access to the right resources. These and related Microsoft Entra ID and Enterprise Mobility + Security features allows you to mitigate access risk by protecting, monitoring, and auditing access to critical assets—while ensuring employee and business partner productivity.
 
 Identity Governance gives organizations the ability to complete tasks across employees, business partners and vendors, and across services and applications both on-premises and in clouds. Specifically, it is intended to help organizations address these four key questions:
 
@@ -55,31 +53,31 @@ Typical targets for review include:
 
 The administrative role required to create, manage, or read an Access Review depends on the type of resource being reviewed.
 
-| **Resource type**    | **Create and manage access reviews (Creators)**                                 | **Read Access Review results**    |
-| -------------------- | ------------------------------------------------------------------------------- | --------------------------------- |
-| Group or application | Global Administrator                                                            | Global administrator              |
-|                      | User Administrator                                                              | Global reader                     |
-|                      | Identity Governance administrator                                               | User administrator                |
+| **Resource type**    | **Create and manage access reviews (Creators)**                                        | **Read Access Review results**    |
+| -------------------- | -------------------------------------------------------------------------------------- | --------------------------------- |
+| Group or application | Global Administrator                                                                   | Global administrator              |
+|                      | User Administrator                                                                     | Global reader                     |
+|                      | Identity Governance administrator                                                      | User administrator                |
 |                      | Privileged Role administrator (only does review for Microsoft Entra assignable groups) | Identity Governance Administrator |
-|                      | Group owner                                                                     | Privileged Role Administrator     |
-|                      |                                                                                 | Security reader                   |
-|                      |                                                                                 | Group owner                       |
-| Microsoft Entra role        | Global Administrator                                                            |                                   |
-|                      | Privileged Role Administrator                                                   | Global administrator              |
-|                      |                                                                                 | Global reader                     |
-|                      |                                                                                 | User administrator                |
-|                      |                                                                                 | Privileged Role Administrator     |
-|                      |                                                                                 | Security reader                   |
-| Azure resource roles | Global Administrator                                                            | Global Administrator              |
-|                      | User Access Administrator                                                       | User Access Administrator         |
-|                      | Resource Owner                                                                  | Resource owner                    |
-|                      |                                                                                 | Reader (for the resource)         |
-| Access package       | Global Administrator                                                            | Global Administrator              |
-|                      | User Administrator                                                              |                                   |
-|                      | Identity Governance Administrator                                               | Global reader                     |
-|                      |                                                                                 | User administrator                |
-|                      |                                                                                 | Identity Governance administrator |
-|                      |                                                                                 | Security reader                   |
+|                      | Group owner                                                                            | Privileged Role Administrator     |
+|                      |                                                                                        | Security reader                   |
+|                      |                                                                                        | Group owner                       |
+| Microsoft Entra role | Global Administrator                                                                   |                                   |
+|                      | Privileged Role Administrator                                                          | Global administrator              |
+|                      |                                                                                        | Global reader                     |
+|                      |                                                                                        | User administrator                |
+|                      |                                                                                        | Privileged Role Administrator     |
+|                      |                                                                                        | Security reader                   |
+| Azure resource roles | Global Administrator                                                                   | Global Administrator              |
+|                      | User Access Administrator                                                              | User Access Administrator         |
+|                      | Resource Owner                                                                         | Resource owner                    |
+|                      |                                                                                        | Reader (for the resource)         |
+| Access package       | Global Administrator                                                                   | Global Administrator              |
+|                      | User Administrator                                                                     |                                   |
+|                      | Identity Governance Administrator                                                      | Global reader                     |
+|                      |                                                                                        | User administrator                |
+|                      |                                                                                        | Identity Governance administrator |
+|                      |                                                                                        | Security reader                   |
 
 ### Who will review the access to the resource?
 
@@ -120,12 +118,12 @@ To create an access review policy, you must have the following information.
 | Timeline            | 48 hours from notification                                                                                                                 |
 | Automatic actions   | Remove access from any account that has no interactive sign-in within 90 days by removing the user from the security group dynamics-access |
 |                     | *Perform actions if not reviewed within timeline*                                                                                          |
-| Manual actions      | Reviewers may perform removals approval prior to automated action if desired                                                               |
+| Manual actions      | Reviewers perform removals approval prior to automated action if desired                                                                   |
 | Communications      | Send internal (member) users who are removed an email explaining they are removed and how to regain access                                 |
 
 ## Plan access reviews for access packages
 
-Access packages can vastly simplify your governance and Access Review strategy. An Access Package is a bundle of all the resources with the access a user needs to work on a project or perform their task. For example, you may want to create an Access Package that includes all the applications that developers in your organization need, or all applications to which external users should have access. An administrator or delegated Access Package manager then groups the resources (groups or apps) and the roles the users need for those resources.
+Access packages can vastly simplify your governance and Access Review strategy. An Access Package is a bundle of all the resources with the access a user needs to work on a project or perform their task. For example, you might want to create an Access Package that includes all the applications that developers in your organization need, or all applications to which external users should have access. An administrator or delegated Access Package manager then groups the resources (groups or apps) and the roles the users need for those resources.
 
 When creating an Access Package, you can create one or more access policies that set conditions for which users can request an Access Package, what the approval process looks like, and how often a person would have to re-request access. Access reviews are configured while creating or editing an Access Package policy.
 
@@ -147,7 +145,7 @@ Group membership can be reviewed by:
 We recommend that group owners review membership, as they're best situated to know who needs access. Ownership of groups differs with the type of group.
 
  -  Groups that are created in Microsoft 365 and Microsoft Entra ID have one or more well-defined owners. In most cases, these owners make perfect reviewers for their own groups as they know who should have access. For example, Microsoft Teams uses Microsoft 365 Groups as the underlying authorization model to grant users access to resources that are in SharePoint, Exchange, OneNote, or other Microsoft 365 services. The creator of the team automatically becomes an owner and should be responsible for attesting to the membership of that group.
- -  Groups created manually in the Microsoft Entra admin center or via scripting through Microsoft Graph may not necessarily have owners defined. We recommend that you define them either through the Microsoft Entra admin center in the group’s “Owners” section or via Graph.
+ -  Groups created manually in the Microsoft Entra admin center portal or via scripting through Microsoft Graph might not necessarily have owners defined. We recommend that you define them either through the admin portal in the group’s “Owners” section or via Graph.
  -  Groups that are synchronized from on-premises Active Directory cannot have an owner in Microsoft Entra ID. When creating an Access Review for them, you should select individuals who are best suited to decide on membership in them.
     
     > [!NOTE]
@@ -155,11 +153,11 @@ We recommend that group owners review membership, as they're best situated to kn
 
 ### Review membership of exclusion groups in CA policies
 
-There are times when Conditional Access policies designed to keep your network secure shouldn't apply to all users. For example, a CA policy that only allows users to sign in while on the corporate network may not apply to the sales team, which travels extensively. In that case, the sales team members would be put into a group and that group would be excluded from the CA policy.
+There are times when Conditional Access policies designed to keep your network secure shouldn't apply to all users. For example, a CA policy that only allows users to sign in while on the corporate network might not apply to the sales team, which travels extensively. In that case, the sales team members would be put into a group and that group would be excluded from the CA policy.
 
 ### Review external users' group memberships
 
-To minimize manual work and associated potential errors, consider using Dynamic Groups to assign group membership based on a user’s attributes. You may want to create one or more Dynamic Groups for external users. The internal sponsor can act as a reviewer for membership in the group.
+To minimize manual work and associated potential errors, consider using Dynamic Groups to assign group membership based on a user’s attributes. You want to create one or more Dynamic Groups for external users. The internal sponsor can act as a reviewer for membership in the group.
 
 ### Review access to on-premises groups
 
@@ -179,8 +177,6 @@ We recommend you plan reviews for applications in the following scenarios:
 ### Reviewers for an application
 
 Access reviews can be for the members of a group or for users who were assigned to an application. Applications in Microsoft Entra ID don't necessarily have an owner, which is why the option for selecting the application owner as a reviewer isn't possible. You can further scope a review to review only guest users assigned to the application, rather than reviewing all access.
-
-<a name='plan-review-of-azure-ad-and-azure-resource-roles'></a>
 
 ## Plan review of Microsoft Entra ID and Azure resource roles
 
@@ -209,8 +205,6 @@ Employees' and guests' access needs to groups and applications likely change ove
 
 You can create access reviews for group members or application access, perform access reviews for members of a group or users with access to an application, allow members to review their own access to a group or an application, view access reviews, and take action for on-premises groups with PowerShell.
 
-<a name='review-azure-ad-roles'></a>
-
 ### Review Microsoft Entra roles
 
 To reduce the risk associated with stale role assignments, you should regularly review access of privileged Microsoft Entra roles.
@@ -237,7 +231,7 @@ Popular access reviews tasks to automate using the Graph API for access reviews 
 
 ## Monitor access reviews
 
-Access reviews activities are recorded and available from the Microsoft Entra ID’s audit logs. You can filter the audit data on the category, activity type, and date range. Here is a sample query:
+Access reviews activities are recorded and available from the Microsoft Entra audit logs. You can filter the audit data on the category, activity type, and date range. Here is a sample query:
 
 | **Category**  | **Policy**           |
 | ------------- | -------------------- |
@@ -251,7 +245,7 @@ Access reviews activities are recorded and available from the Microsoft Entra ID
 |               | Apply decision       |
 | Date range    | Seven days           |
 
-For more advanced queries and analysis of access reviews, and to track changes and completion of reviews, we recommend you export your Microsoft Entra audit logs to Azure Log Analytics or Azure Event Hubs. When logs are stored in Azure Log Analytics, you can use the powerful analytics language and build your own dashboards.
+For more advanced queries and analysis of access reviews, and to track changes and completion of reviews, we recommend you export your Microsoft Entra Audit Logs to Azure Log Analytics or Azure Event Hubs. When logs are stored in Azure Log Analytics, you can use the powerful analytics language and build your own dashboards.
 
 ## Plan communications
 
@@ -275,18 +269,18 @@ Upon selecting Start review, reviewers will be directed to the MyAccess portal f
 
 ## How many licenses must you have?
 
-Your directory needs at least as many Microsoft Entra ID P2 licenses as the number of employees who will be performing the following tasks:
+Your directory needs at least as many Microsoft Entra ID Premium P2 licenses as the number of employees who will be performing the following tasks:
 
  -  Member users who are assigned as reviewers
  -  Member users who perform a self-review
  -  Member users as group owners who perform an access review
  -  Member users as application owners who perform an access review
 
-For guest users, licensing needs will depend on the licensing model you’re using. However, the below guest users’ activities are considered Microsoft Entra ID P2 usage:
+For guest users, licensing needs will depend on the licensing model you’re using. However, the below guest users’ activities are considered Microsoft Entra ID Premium P2 usage:
 
  -  Guest users who are assigned as reviewers
  -  Guest users who perform a self-review
  -  Guest users as group owners who perform an access review
  -  Guest users as application owners who perform an access review
 
-Microsoft Entra ID P2 licenses are not required for users with the Global Administrator or User Administrator roles who set up access reviews, configure settings, or apply the decisions from the reviews.
+Microsoft Entra ID Premium P2 licenses are not required for users with the Global Administrator or User Administrator roles who set up access reviews, configure settings, or apply the decisions from the reviews.

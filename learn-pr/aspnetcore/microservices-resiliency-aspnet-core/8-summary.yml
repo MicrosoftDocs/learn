@@ -3,12 +3,10 @@ uid: learn.microservices-resiliency-aspnet-core.8-summary
 metadata:
   title: Summary
   description: Review what you learned in the tutorial, and deprovision the Azure resources that you used.
-  author: scottaddie
-  ms.author: scaddie
-  ms.manager: markl
-  ms.date: 05/09/2023
-  ms.prod: aspnet-core
-  ms.topic: interactive-tutorial
+  author: codemillmatt
+  ms.author: masoucou
+  ms.date: 11/06/2023
+  ms.topic: unit
   ms.custom:
     - devx-track-dotnet
 title: Summary

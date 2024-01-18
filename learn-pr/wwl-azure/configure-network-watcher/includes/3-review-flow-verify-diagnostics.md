@@ -1,4 +1,3 @@
-
 The **IP flow verify** feature in Azure Network Watcher checks connectivity from or to the internet, and from or to your on-premises environment. This feature helps you identify if a security rule is blocking traffic to or from your virtual machine or the internet.
 
 :::image type="content" source="../media/flow-verify-d136d78d.png" alt-text="Screenshot of the IP flow verify feature in the Azure portal." border="false":::

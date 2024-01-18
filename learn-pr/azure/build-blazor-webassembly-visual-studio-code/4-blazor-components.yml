@@ -3,13 +3,12 @@ uid: learn.build-web-app-blazor-webassembly-vscode.4-blazor-components
 title: Razor components
 metadata:
   title: Razor components
-  description: Build your first web app with Blazor, Visual Studio Code, and C#.
-  ms.date: 05/13/2021
+  description: Learn what razor components are and how they can be shared across projects.
+  ms.date: 01/05/2024
   author: csharpfritz
   ms.author: jefritz
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/4-blazor-components.md)]
@@ -20,13 +19,13 @@ quiz:
     choices:
     - content: "The runtime provided by the browser"
       isCorrect: false
-      explanation: "Blazor apps run in the browser or on the server on the .NET 5 runtime"
+      explanation: "Blazor apps run in the browser or on the server on the .NET 8 runtime"
     - content: "The .NET runtime deployed with your web app"
       isCorrect: true
-      explanation: "Blazor apps run in the browser or on the server on the .NET 5 runtime"
+      explanation: "Blazor apps run in the browser or on the server on the .NET 8 runtime"
     - content: "The JavaScript runtime deployed with your web app"
       isCorrect: false
-      explanation: "Blazor apps run in the browser or on the server on the .NET 5 runtime"
+      explanation: "Blazor apps run in the browser or on the server on the .NET 8 runtime"
   - content: "How is Blazor UI defined?"
     choices:
     - content: "As Razor pages with a mix of HTML and C#"

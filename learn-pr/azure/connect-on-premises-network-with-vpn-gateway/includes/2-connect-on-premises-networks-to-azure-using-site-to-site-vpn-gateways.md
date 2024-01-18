@@ -10,7 +10,7 @@ A VPN gateway is a type of Virtual Network Gateway. VPN gateways are deployed in
 - Connect individual devices to Azure virtual networks through a *point-to-site* connection.
 - Connect Azure virtual networks to other Azure virtual networks through a *network-to-network* connection.
 
-![Visualization of a VPN connection to Azure.](../media/2-vpngateway-site-to-site-connection-diagram.svg)
+:::image type="content" source="../media/2-vpngateway-site-to-site-connection-diagram.svg" alt-text="Diagram visualization of a VPN connection to Azure.":::
 
 All transferred data is encrypted in a private tunnel as it crosses the internet. You can deploy only one VPN gateway in each virtual network, but you can use one gateway to connect to multiple locations, including other Azure virtual networks or on-premises datacenters.
 
@@ -43,28 +43,26 @@ Both types of VPN gateways (route-based and policy-based) in Azure use preshared
 
 ## VPN gateway sizes
 
-The SKU or size that you deploy, determines the capabilities of your VPN gateway. This table shows an example of gateway SKUs. The numbers do change. For the latest information, see [Gateway SKUs](/azure/vpn-gateway/vpn-gateway-about-vpngateways#benchmark.md) in the Azure VPN Gateway documentation.
+The SKU or size that you deploy, determines the capabilities of your VPN gateway. This table shows an example of some of the gateway SKUs. The numbers in this table are subject to change at any time. For the latest information, see [Gateway SKUs](/azure/vpn-gateway/about-gateway-skus) in the Azure VPN Gateway documentation. The Basic gateway SKU should only be used for Dev/Test workloads. In addition, it's unsupported to migrate from Basic to any VpnGw#/Az sku at a later time without having to remove the gateway and redeploy.
 
-|**VPN<br>Gateway<br>Generation** |**SKU**   | **S2S/VNet-to-VNet<br>Tunnels** |  **Aggregate<br>Throughput Benchmark** | **BGP** | **Zone-redundant** |
-|---            |---         | ---       | ---       | ---          | ---|
-|**Generation1**|**Basic**   | Max. 10   |  100 Mbps | Not Supported| No |
-|**Generation1**|**VpnGw1**  | Max. 30   | 650 Mbps  | Supported    | No |
-|**Generation1**|**VpnGw2**  | Max. 30   | 1 Gbps    | Supported    | No |
-|**Generation1**|**VpnGw3**  | Max. 30   | 1.25 Gbps | Supported    | No |
-|**Generation1**|**VpnGw1AZ**| Max. 30   |  650 Mbps | Supported    | Yes |
-|**Generation1**|**VpnGw2AZ**| Max. 30   |  1 Gbps   | Supported    | Yes |
-|**Generation1**|**VpnGw3AZ**| Max. 30   | 1.25 Gbps | Supported    | Yes |
-|               |            |           |           |              |     |
-|**Generation2**|**VpnGw2**  | Max. 30   | 1.25 Gbps | Supported    | No  |
-|**Generation2**|**VpnGw3**  | Max. 30   | 2.5 Gbps  | Supported    | No  |
-|**Generation2**|**VpnGw4**  | Max. 100* | 5 Gbps    | Supported    | No  |
-|**Generation2**|**VpnGw5**  | Max. 100* | 10 Gbps   | Supported    | No  |
-|**Generation2**|**VpnGw2AZ**| Max. 30   | 1.25 Gbps | Supported    | Yes |
-|**Generation2**|**VpnGw3AZ**| Max. 30   | 2.5 Gbps  | Supported    | Yes |
-|**Generation2**|**VpnGw4AZ**| Max. 100* | 5 Gbps    | Supported    | Yes |
-|**Generation2**|**VpnGw5AZ**| Max. 100* | 10 Gbps   | Supported    | Yes |
-
-The Basic gateway SKU should only be used for Dev/Test workloads. In addition, it's unsupported to migrate from Basic to any VpnGw#/Az sku at a later time without having to remove the gateway and redeploy.
+|**VPN<br>Gateway<br>Generation** |**SKU**   | **S2S/VNet-to-VNet<br>Tunnels** | **P2S<br> SSTP Connections** | **P2S<br> IKEv2/OpenVPN Connections** | **Aggregate<br>Throughput Benchmark** | **BGP** | **Zone-redundant** | **Supported Number of VMs in the Virtual Network** |
+|---            |---         | ---        | ---       | ---            | ---       | ---       | ---  |---|
+|**Generation1**|**Basic**   | Max. 10    | Max. 128  | Not Supported  | 100 Mbps  | Not Supported| No | 200 |
+|**Generation1**|**VpnGw1**  | Max. 30   | Max. 128  | Max. 250       | 650 Mbps  | Supported | No | 450 |
+|**Generation1**|**VpnGw2**  | Max. 30   | Max. 128  | Max. 500       | 1 Gbps    | Supported | No | 1300 |
+|**Generation1**|**VpnGw3**  | Max. 30   | Max. 128  | Max. 1000      | 1.25 Gbps | Supported | No | 4000 |
+|**Generation1**|**VpnGw1AZ**| Max. 30   | Max. 128  | Max. 250       | 650 Mbps  | Supported | Yes | 1000 |
+|**Generation1**|**VpnGw2AZ**| Max. 30   | Max. 128  | Max. 500       | 1 Gbps    | Supported | Yes | 2000 |
+|**Generation1**|**VpnGw3AZ**| Max. 30   | Max. 128  | Max. 1000      | 1.25 Gbps | Supported | Yes | 5000 |
+|        |            |            |           |                |           |           |     |      |
+|**Generation2**|**VpnGw2**  | Max. 30   | Max. 128  | Max. 500       | 1.25 Gbps | Supported | No | 685 |
+|**Generation2**|**VpnGw3**  | Max. 30   | Max. 128  | Max. 1000      | 2.5 Gbps  | Supported | No | 2240 |
+|**Generation2**|**VpnGw4**  | Max. 100*   | Max. 128  | Max. 5000      | 5 Gbps    | Supported | No | 5300 |
+|**Generation2**|**VpnGw5**  | Max. 100*   | Max. 128  | Max. 10000      | 10 Gbps   | Supported | No | 6700 |
+|**Generation2**|**VpnGw2AZ**| Max. 30   | Max. 128  | Max. 500       | 1.25 Gbps | Supported | Yes | 2000 |
+|**Generation2**|**VpnGw3AZ**| Max. 30   | Max. 128  | Max. 1000      | 2.5 Gbps  | Supported | Yes | 3300 |
+|**Generation2**|**VpnGw4AZ**| Max. 100*   | Max. 128  | Max. 5000      | 5 Gbps    | Supported | Yes | 4400 |
+|**Generation2**|**VpnGw5AZ**| Max. 100*   | Max. 128  | Max. 10000      | 10 Gbps   | Supported | Yes | 9000 |
 
 ## Deploy VPN gateways
 

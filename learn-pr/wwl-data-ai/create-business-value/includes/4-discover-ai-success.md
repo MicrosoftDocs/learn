@@ -1,7 +1,19 @@
-Now that you've learned about the basics of an AI-centric organization, it's important to understand the current maturity of your organization to determine where to start the transformation.
+Now that you've learned about the basics of an AI-centric organization, it's important to understand that AI adoption is a journey. In their collaboration and discussion with business leaders, Microsoft is discovering insights on how organizations can achieve **AI success**.
 
 > [!NOTE] 
 > For this purpose, Microsoft has developed a [leader's guide to build a foundation for AI success](https://aka.ms/AI-Success-Whitepaper).
+
+This model is based on six pillars that drive organizations to AI success:
+
+* Business strategy.
+* Technology strategy.
+* AI strategy and experience.
+* Organization and culture.
+* AI governance.
+
+In the following video, Jessica Hawk, Corporate Vice President of Azure Data, AI and Digital Applications and Innovation Product Marketing, explains in detail this model and its six pillars.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e9c94a64-1dd4-4bc7-ad37-2c892d5fcded]
 
 This whitepaper includes a model of the **stages of AI success**. This five-tiered chart is a tool to help organizations take AI to the next level and evaluates their AI maturity.
 

@@ -8,10 +8,9 @@ metadata:
   ms.date: 10/20/2023
   author: LBN-commits
   ms.author: allensu
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-arm-template
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/5-deploy-configure-azure-nat-gateway.md)]

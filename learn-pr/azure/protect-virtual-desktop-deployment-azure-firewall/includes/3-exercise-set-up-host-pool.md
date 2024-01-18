@@ -6,19 +6,18 @@ In this unit, you'll create a host pool and add a VM that will act as a session 
 
 ## Create a host pool for Azure Virtual Desktop
 
-Let's create a host pool that will contain the VM you'll create later in this exercise.
+Let's create a host pool to contain the VM you'll create later in this exercise.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 1. Search for and select **Azure Virtual Desktop**.
 1. Select **Create a host pool**.
-:::image type="content" source="../media/3-create-host-pool.png" alt-text="Screenshot showing the information to enter for the host pool creation.":::
 1. Enter the following information into the **Basics** tab:
 
    |Field  |Value  |
    |---------|---------|
    |Subscription     |  Your subscription      |
-   |Resource group     | Create a new resource group named learn-firewall-rg    |
-   |Host pool name     | learn-host-pool      |
+   |Resource group     | Create a new resource group named *learn-firewall-rg*    |
+   |Host pool name     | *learn-host-pool*      |
    |Location    | Region near you       |
    |Validation environment |  No |
    |Preferred app group type |  Desktop |
@@ -26,12 +25,16 @@ Let's create a host pool that will contain the VM you'll create later in this ex
    |Load balancing algorithm    | Breadth-first |
    |Max session limit    |2|
 
+    :::image type="content" source="../media/3-create-host-pool.png" alt-text="Screenshot showing the information to enter for the host pool creation.":::
+
 1. Select **Review + create** and wait for validation to pass.
 1. Select **Create**.
 
 ## Create a registration token for the host pool
 
-Create a registration token to authorize a session host to join the host pool.
+Next, you'll create a registration token to authorize a session host to join the host pool.
+
+1. Select the **Cloud Shell** icon at the top of the screen, then choose **PowerShell** in the Cloud Shell drop-down.
 
 1. In Cloud Shell, run the following command to create a registration token that will expire in 4 hours:
 
@@ -113,7 +116,7 @@ Use a remote desktop session to sign into the VM you created in the previous sec
 
 1. In the Azure portal, search for and select **Virtual machines**.
 1. Select **learn-host-vm**.
-1. Select **Connect** > **RDP**.
+1. Select **Connect** > **Connect**.
 1. Select **Download RDP File** > **Open file** > **Connect**.
 1. In the **Windows Security** window, select **More choices** > **Use a different account**.
 1. Enter the user name and the password you used when you created the VM, and then select **OK**.
@@ -130,7 +133,7 @@ In your remote desktop session on the VM, install the Azure Virtual Desktop agen
 1. Copy the following link to the Azure Virtual Desktop agent: `https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv`
 1. On the VM, open Microsoft Edge to start a web browser session.
 1. Paste the link into a web browser.
-1. At the bottom of the web browser window, select **Open file** to install the Azure Virtual Desktop agent.
+1. Once the file downloads, select **Open file** to install the Azure Virtual Desktop agent.
 1. When the installer asks you for the registration token, paste in the value you got after you created the token.
 1. If you no longer have the token value, go back to your Cloud Shell session and run the following command:
 
@@ -148,7 +151,7 @@ In your remote desktop session on the VM, install the Azure Virtual Desktop boot
 
 1. Copy the following link to the Azure Virtual Desktop boot loader: `https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH`
 1. Paste the link into a web browser session in the VM.
-1. At the bottom of the web browser window, select **Open file** to install the Azure Virtual Desktop boot loader.
+1. When the download finishes, select **Open file** to install the Azure Virtual Desktop boot loader.
 1. Complete the installation.
 1. Close the remote desktop session.
 
@@ -165,5 +168,5 @@ At this point, the virtual machine should be registered as a session host for th
 1. If you get a **Not found** error, wait a few minutes and try again.
 1. Under **Status**, select **ViewDetails**.
 :::image type="content" source="../media/3-host-pool-status.png" alt-text="Screenshot that shows the status of the host pool and the link to view status details.":::
-1. The health check `DomainJoinedCheck` failed because we didn't join the VM to a domain. But the rest of the health checks succeeded.
+1. The `DomainJoinedCheck` health check failed because we didn't join the VM to a domain, but the rest of the health checks succeeded.
 :::image type="content" source="../media/3-session-host-status-detail.png" alt-text="Screenshot of the session host status details that show that the check for domain-join failed, but the rest of the checks succeeded.":::

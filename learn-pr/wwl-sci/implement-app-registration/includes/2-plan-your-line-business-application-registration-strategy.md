@@ -1,4 +1,4 @@
-This unit looks at why applications integrate with Microsoft Entra ID, part of Microsoft Entra. Add applications to Microsoft Entra ID to apply one or more of the services it provides, including:
+This unit looks at why applications integrate with Microsoft Entra ID. Add applications to Microsoft Entra ID to apply one or more of the services it provides, including:
 
  -  Application authentication and authorization.
  -  User authentication and authorization.
@@ -13,7 +13,7 @@ There are two representations of applications in Microsoft Entra ID: [applicatio
 
 ## What are application objects and where do they come from?
 
-You can manage application objects in the Azure portal through the App Registrations experience. Application objects define and describe the application to Microsoft Entra ID, enabling Microsoft Entra ID to know how to issue tokens to the application based on its settings. The application object will only exist in its home directory, even if it's a multi-tenant application supporting service principals in other directories. The application object may include any of the following (as well as additional information not mentioned here):
+You can manage application objects in the Azure portal through the App Registrations experience. Application objects define and describe the application to Microsoft Entra ID, enabling your identity provider to know how to issue tokens to the application based on its settings. The application object will only exist in its home directory, even if it's a multitenant application supporting service principals in other directories. The application object includes any of the following (as well as additional information not mentioned here):
 
  -  Name, logo, and publisher
  -  Redirect URIs
@@ -66,7 +66,7 @@ Like application objects, service principals can be created through multiple pat
      -  When you subscribe to Microsoft 365 or begin a trial, one or more service principals are created in the directory representing the various services that are used to deliver all of the functionality associated with Microsoft 365.
      -  Some Microsoft 365 services, like SharePoint, create service principals on an ongoing basis to allow secure communication between components, including workflows.
  -  When an admin adds an application from the app gallery (this will also create an underlying app object).
- -  Add an application to use the Microsoft Entra application proxy.
+ -  Add an application to use the Microsoft Entra Application Proxy.
  -  Connect an application for SSO using SAML or password SSO.
  -  Programmatically via the Microsoft Graph API or PowerShell.
 
@@ -80,7 +80,7 @@ An application has one application object in its home directory that's reference
 In the preceding diagram, Microsoft maintains two directories internally (shown on the left) that it uses to publish applications:
 
  -  One for Microsoft Apps (Microsoft services directory).
- -  One for pre-integrated third-party applications (App gallery directory).
+ -  One for preintegrated third-party applications (App gallery directory).
 
 Application publishers/vendors who integrate with Microsoft Entra ID are required to have a publishing directory (shown on the right as "Some SaaS directory").
 
@@ -88,11 +88,11 @@ Applications that you add (represented as "App (yours)" in the diagram) include:
 
  -  Apps you developed (integrated with Microsoft Entra ID).
  -  Apps you connected for SSO.
- -  Apps you published using the Microsoft Entra application proxy.
+ -  Apps you published using the Microsoft Entra Application Proxy.
 
 ### Notes and exceptions to service principals
 
-Not all service principals point back to an application object. When Microsoft Entra ID was originally built, the services provided to applications were more limited, and the service principal was sufficient for establishing an application identity. The original service principal was closer in shape to the Windows Server Active Directory service account. For this reason, it's still possible to create service principals through different pathways, such as using Azure AD PowerShell, without first creating an application object. The Microsoft Graph API requires an application object before creating a service principal.
+Not all service principals point back to an application object. When Microsoft Entra ID was originally built, the services provided to applications were more limited, and the service principal was sufficient for establishing an application identity. The original service principal was closer in shape to the Windows Server Active Directory service account. For this reason, it's still possible to create service principals through different pathways, such as using PowerShell, without first creating an application object. The Microsoft Graph API requires an application object before creating a service principal.
 
 Not all of the information described above is currently exposed programmatically. The following are only available in the UI:
 
@@ -116,8 +116,6 @@ For more detailed information on the service principal and application objects, 
 3.  User consents to have the application registration.
 4.  Service is created from the application
 5.  Token returned to the user.
-
-<a name='who-has-permission-to-add-applications-to-my-azure-ad-instance'></a>
 
 ## Who has permission to add applications to my Microsoft Entra instance?
 
@@ -147,32 +145,30 @@ To prevent users from registering their own applications:
  -  In the Azure portal, go to the User settings section under Microsoft Entra ID.
  -  Change **Users can register applications** to **No**.
 
-<a name='tenancy-in-azure-active-directory'></a>
-
 ## Tenancy in Microsoft Entra ID
 
-Microsoft Entra ID organizes objects like users and apps into groups called *tenants*. Tenants enable an administrator to set policies on the users within the organization and the apps that the organization owns to meet their security and operational policies.
+Microsoft Entra organizes objects like users and apps into groups called *tenants*. Tenants enable an administrator to set policies on the users within the organization and the apps that the organization owns to meet their security and operational policies.
 
 ### Who can access your app?
 
-When it comes to developing apps, developers can choose to configure their app to be either single-tenant or multi-tenant during app registration in the Azure portal.
+When it comes to developing apps, developers can choose to configure their app to be either single-tenant or multitenant during app registration in the Azure portal.
 
  -  Single-tenant apps are only available in the tenant they were registered in, also known as their home tenant.
- -  Multi-tenant apps are available to users in both their home tenant and other tenants.
+ -  Multitenant apps are available to users in both their home tenant and other tenants.
 
-In the Azure portal, you can configure your app to be single-tenant or multi-tenant by setting the audience as follows:
+In the Azure portal, you can configure your app to be single-tenant or multitenant by setting the audience as follows:
 
 \***Specific app access**
 
-| **Audience**                                                                                          | **Single/multi-tenant** | **Who can sign in**                                                                                                                                                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------- | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Accounts in this directory only                                                                       | Single tenant           | All user and guest accounts in your directory can use your application or API. *Use this option if your target audience is internal to your organization*.                                                                                                                                                        |
-| Accounts in any Microsoft Entra directory                                                                    | Multi-tenant            | All users and guests with a work or school account from Microsoft can use your application or API. This includes schools and businesses that use Microsoft 365. *Use this option if your target audience is business or educational customers.*                                                                   |
-| Accounts in any Microsoft Entra directory and personal Microsoft accounts (such as Skype, Xbox, Outlook.com) | Multi-tenant            | All users with a work, school, or personal Microsoft account can use your application or API. It includes schools and businesses that use Microsoft 365, as well as personal accounts that are used to sign in to services like Xbox and Skype. *Use this option to target the widest set of Microsoft accounts.* |
+| **Audience**                                                                                                 | **Single/multitenant** | **Who can sign in**                                                                                                                                                                                                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------ | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Accounts in this directory only                                                                              | Single tenant          | All user and guest accounts in your directory can use your application or API. *Use this option if your target audience is internal to your organization*.                                                                                                                                                        |
+| Accounts in any Microsoft Entra directory                                                                    | Multitenant            | All users and guests with a work or school account from Microsoft can use your application or API. This includes schools and businesses that use Microsoft 365. *Use this option if your target audience is business or educational customers.*                                                                   |
+| Accounts in any Microsoft Entra directory and personal Microsoft accounts (such as Skype, Xbox, Outlook.com) | Multitenant            | All users with a work, school, or personal Microsoft account can use your application or API. It includes schools and businesses that use Microsoft 365, as well as personal accounts that are used to sign in to services like Xbox and Skype. *Use this option to target the widest set of Microsoft accounts.* |
 
-### Best practices for multi-tenant apps
+### Best practices for multitenant apps
 
-Building great multi-tenant apps can be challenging because of the number of different policies that IT administrators can set in their tenants. If you choose to build a multi-tenant app, follow these best practices:
+Building great multitenant apps can be challenging because of the number of different policies that IT administrators can set in their tenants. If you choose to build a multitenant app, follow these best practices:
 
  -  Test your app in a tenant that has configured Conditional Access policies.
  -  Follow the principle of least user access to ensure that your app only requests permissions it actually needs.

@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/07/2023
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: active-directory
 title: Describe the function and identity types of Microsoft Entra ID
 summary: Microsoft Entra ID is Microsoft’s cloud-based identity and access management solution that connects people to their apps, devices, and data. Learn about the functions and identity types supported by Microsoft Entra ID.

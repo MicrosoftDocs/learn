@@ -1,4 +1,3 @@
-
 The Microsoft Graph SDKs are designed to simplify building high-quality, efficient, and resilient applications that access Microsoft Graph. The SDKs include two components: a service library and a core library.
 
 The service library contains models and request builders that are generated from Microsoft Graph metadata to provide a rich, strongly typed, and discoverable experience when working with the many datasets available in Microsoft Graph.
@@ -58,7 +57,6 @@ To read information from Microsoft Graph, you first need to create a request obj
 // GET https://graph.microsoft.com/v1.0/me
 
 var user = await graphClient.Me
-    .Request()
     .GetAsync();
 ```
 
@@ -113,3 +111,4 @@ var newCalendar = await graphClient.Me.Calendars
 ## Other resources
 
 * [Microsoft Graph REST API v1.0 reference](/graph/api/overview)
+

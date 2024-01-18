@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.plan-implement-entitlement-management.manage-lifecycle-of-external-users-with-azure-ad-identity-governance
-title: Exercise manage the lifecycle of external users with Microsoft Entra ID Governance
+title: Exercise manage the lifecycle of external users with Microsoft Entra identity governance
 metadata:
-  title: Exercise manage the lifecycle of external users with Microsoft Entra ID Governance
-  description: "Exercise manage the lifecycle of external users with Microsoft Entra ID Governance"
-  ms.date: 02/07/2023
+  title: Exercise manage the lifecycle of external users with Microsoft Entra identity governance
+  description: "Exercise manage the lifecycle of external users with Microsoft Entra identity governance"
+  ms.date: 10/23/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.prod: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/6-manage-lifecycle-of-external-users.md)]
