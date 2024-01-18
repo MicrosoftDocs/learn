@@ -14,11 +14,11 @@ During the refactoring process, you'll:
 
 1. Select the symbolic name for the network security group resource, which is `networkSecurityGroups_ToyTruckServer_nsg_name_resource` or a similar name.
 
-   Rename the symbolic name. You can select <kbd>F2</kbd> or select and hold (or right-click), and then select **Rename Symbol**.
+   Rename the symbolic name. You can select <kbd>F2</kbd> or right-click and then select **Rename Symbol**.
 
-   Enter the name `networkSecurityGroup` and press <kbd>Enter</kbd>. Visual Studio Code updates the name and all references inside the file.
+   Enter the name `networkSecurityGroup` and press <kbd>Enter</kbd>. Visual Studio Code updates the name and all references in the file.
 
-1. Repeat this process for each resource. Rename the resources as shown in the following table:
+1. Repeat this process for each resource. Rename the resources as shown in the following table.
 
    > [!NOTE]
    > The names of the resources in your deployment will be a little different from the names in the table. Find the resources that have names that are close to these names.
@@ -33,15 +33,15 @@ During the refactoring process, you'll:
 
 ## Remove the redundant subnet resource
 
-The virtual network's subnet currently is defined twice. It's defined once in the `virtualNetwork` resource, and again as its own child resource named `defaultSubnet`. It doesn't make sense to define the subnet twice.
+The virtual network's subnet is currently defined twice. It's defined once in the `virtualNetwork` resource and again as its own child resource named `defaultSubnet`. It doesn't make sense to define the subnet twice.
 
 1. Delete the `defaultSubnet` resource.
 
    Notice that the `networkInterface` resource now displays a problem, because it refers to the default subnet's resource ID:
 
-   :::image type="content" source="../media/5-network-interface-subnet-problem.png" alt-text="Screenshot of Visual Studio Code that shows the network interface resource definition, with the error highlighted.":::
+   :::image type="content" source="../media/5-network-interface-subnet-problem.png" alt-text="Screenshot of Visual Studio Code that shows the network interface resource definition. The error is highlighted.":::
 
-1. Update the `virtualNetwork` resource to include an `existing` reference to the subnet. By adding the `existing` reference, you can refer to the subnet again within your Bicep code without defining it again:
+1. Update the `virtualNetwork` resource to include an `existing` reference to the subnet. If you add the `existing` reference, you can refer to the subnet again in your Bicep code without defining it again:
 
    :::code language="bicep" source="code/5-virtual-network-nsg-fixed.bicep" highlight="25-27" :::
 
@@ -55,7 +55,7 @@ The virtual network's subnet currently is defined twice. It's defined once in th
 
 ## Change the parameters to variables
 
-The parameters in the template don't need to be parameters. You'll rename the parameters to more meaningful names and convert them to variables.
+The parameters in the template don't need to be parameters. You'll now rename the parameters to more meaningful names and convert them to variables.
 
 1. Select the symbolic name for the `virtualNetworks_ToyTruck_vnet_name` parameter. Rename it to `virtualNetworkName`.
 
@@ -82,9 +82,9 @@ The parameters in the template don't need to be parameters. You'll rename the pa
 
 ## Update the resource locations
 
-All the resources currently use a hard-coded location. You'll add a parameter so that the template becomes more reusable.
+All the resources currently use a hard-coded location. You'll now add a parameter so that the template becomes more reusable.
 
-1. At the top of the file, add a new parameter and a description decorator to clarify the parameter's purpose.
+1. At the top of the file, add a new parameter and a description decorator to clarify the parameter's purpose:
 
    ```bicep
    @description('The location where resources are deployed.')
@@ -95,7 +95,7 @@ All the resources currently use a hard-coded location. You'll add a parameter so
 
 ## Add parameters and variables
 
-Your template has some hard-coded values where parameters or variables would be more appropriate. Here, you'll add parameters for properties that might change between deployments and variables for values that won't.
+Your template has some hard-coded values where parameters or variables would be more appropriate. You'll now add parameters for properties that might change between deployments and variables for values that won't.
 
 1. At the top of the _main.bicep_ file, below the `location` parameter, add the following parameters:
 
@@ -125,7 +125,7 @@ Your template has some hard-coded values where parameters or variables would be 
 
    Some of the parameters have default values and others don't. Later, you'll create a parameter file to set most of these values.
 
-1. Add the following new variable declarations below the `networkSecurityGroupName` variable.
+1. Add the following new variable declarations below the `networkSecurityGroupName` variable:
 
    ```bicep
    var virtualNetworkDefaultSubnetName = 'default'
@@ -137,7 +137,7 @@ Your template has some hard-coded values where parameters or variables would be 
    }
    ```
 
-1. Add the following variable declaration. Replace the values with the OS disk name from your own reference template:
+1. Add the following variable declaration. Replace the value with the OS disk name from your own reference template.
 
    :::code language="bicep" source="code/5-main-refactored.bicep" range="38":::
 
@@ -197,7 +197,7 @@ The export process adds redundant properties to many resources. Use these steps 
    - `storageProfile.osDisk.managedDisk.id` property because Azure automatically determines this property when the virtual machine is deployed.
 
      > [!IMPORTANT]
-     > It's important to remove this property or your template won't deploy correctly.
+     > If you don't remove this property, your template won't deploy correctly.
 
    - `storageProfile.dataDisks` property because it's empty.
    - `osProfile.secrets` property because it's empty.

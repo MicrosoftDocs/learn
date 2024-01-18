@@ -19,13 +19,13 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. On the Azure home page, under **Azure services**, select **Create a resource**.
+1. On the Azure home page, under **Azure services**, select **Create a resource**:
 
    :::image type="content" source="../media/3-create-resource.png" alt-text="Screenshot that shows the Azure portal. The Create a resource option is highlighted.":::
 
    Azure Marketplace appears in the **Create a resource** pane.
 
-1. Under **Ubuntu Server 20.04 LTS**, select **Create**.
+1. Under **Ubuntu Server 20.04 LTS**, select **Create**:
 
    :::image type="content" source="../media/3-create-ubuntu.png" alt-text="Screenshot that shows Azure Marketplace. The Create link under Ubuntu Server 20.04 LTS is highlighted.":::
 
@@ -59,7 +59,7 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
    The Azure portal shows the deployment while it's in progress.
 
-1. When the deployment is finished, select the resource group name to open the resource group.
+1. When the deployment is finished, select the resource group name to open the resource group:
 
    :::image type="content" source="../media/3-deployment-completed.png" alt-text="Screenshot of the Azure portal that shows the deployment. The resource group name is highlighted.":::
 
@@ -69,17 +69,17 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 ## Export the resource group contents to a JSON template
 
-1. In the left menu, under **Automation** select **Export template**.
+1. In the left menu, under **Automation** select **Export template**:
 
    :::image type="content" source="../media/3-export-template-menu.png" alt-text="Screenshot of the Azure portal that shows the Export template menu item in the resource group pane.":::
 
    A JSON template is generated. It might take a minute or two for the process to finish.
 
-1. Select the **Download** button.
+1. Select the **Download** button:
 
    :::image type="content" source="../media/3-export-template.png" alt-text="Screenshot of the Azure portal that shows the exported resource group JSON template, with the Download button highlighted.":::
 
-   The JSON template and parameters file are downloaded to your computer as a _.zip_ file.
+   The JSON template and parameters file are downloaded to your computer as a *.zip* file.
 
 1. Unzip the file to a folder that you can access easily, like your desktop.
 
@@ -107,13 +107,13 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 ::: zone pivot="cli"
 
-Use the `decompile` command to create a Bicep file from the template.
+Use the `decompile` command to create a Bicep file from the template:
 
 ```azurecli
 az bicep decompile --file template.json
 ```
 
-The decompile operation shows warnings similar to the following example:
+The decompile operation generates a warning similar to this one:
 
 :::code language="output" source="code/3-decompile-output.txt" :::
 
@@ -121,13 +121,13 @@ The decompile operation shows warnings similar to the following example:
 
 ::: zone pivot="powershell"
 
-Use the `decompile` command to create a Bicep file from the template.
+Use the `decompile` command to create a Bicep file from the template:
 
 ```powershell
 bicep decompile template.json
 ```
 
-The decompile operation shows warnings similar to the following example:
+The decompile operation generates a warning similar to this one:
 
 :::code language="output" source="code/3-decompile-output.txt" :::
 
@@ -135,7 +135,7 @@ The decompile operation shows warnings similar to the following example:
 
 ## Inspect the decompiled Bicep file
 
-Open the _template.bicep_ file and read through it. Notice that it's a valid Bicep file, but it has a few issues, including:
+Open the _template.bicep_ file in Visual Studio Code and read through it. Notice that it's a valid Bicep file, but it has a few problems, including:
 
 - The symbolic names that are given to parameters and resources include underscores and aren't easy to understand.
 - The `location` property is hard-coded in all the resource definitions.
@@ -145,11 +145,11 @@ You'll fix these problems throughout the rest of this module.
 
 ## Create a new Bicep file
 
-1. Create a new file called _main.bicep_.
+1. In Visual Studio Code, create a new file called _main.bicep_.
 
 1. Save the empty file so that Visual Studio Code loads the Bicep tooling.
 
-   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS).
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> in macOS).
 
 1. Split the editor so that you can see both files at the same time. The _template.bicep_ file in the left pane and the _main.bicep_ file in the right pane.
 
@@ -191,7 +191,7 @@ You'll fix these problems throughout the rest of this module.
 
 1. In the Azure portal, open the **ToyTruck** resource group.
 
-1. Review the list of resources and compare it against the list of resources in your Bicep file. Notice that the resource group contains a **Disk** resource that isn't defined as a `resource` in your Bicep file.
+1. Review the list of resources and compare it against the list of resources in your Bicep file. Notice that the resource group contains a **Disk** resource that isn't defined as a `resource` in your Bicep file:
 
    :::image type="content" source="../media/3-resource-group-missing-disk.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the disk resource highlighted.":::
 
@@ -204,7 +204,7 @@ At the end of the migrate phase, your _main.bicep_ file should look similar to t
    :::code language="bicep" source="code/3-main-migrated.bicep" :::
 
    > [!NOTE]
-   > A few things might be different in your template, including some of the symbolic names, API versions, and the IP addresses. That's OK. Some of this will be resolved later in the module.
+   > A few things might be different in your template, including some of the symbolic names, API versions, and the IP addresses. That's OK. You'll resolve some of these discrepancies later in the module.
 
 You've created an initial Bicep file to represent your resources. The Bicep file isn't well structured and it doesn't follow best practices. In the next unit, you'll learn how to improve the quality of the migrated template.
 
