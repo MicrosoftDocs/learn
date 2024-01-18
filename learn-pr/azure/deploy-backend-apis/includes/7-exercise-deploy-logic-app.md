@@ -1,6 +1,6 @@
 Azure Logic Apps simplifies how you design and build scalable solutions for various purposes.
 
-Recall in the bus-catching scenario, the goal is to ultimately send notifications to application users when their monitored bus route has a bus entering the geofence. Azure SQL Database and Azure Functions are helping track and trigger this, but Logic Apps can actually be used to send the notifications once triggered.
+Recall that in the bus-catching scenario, the goal is to ultimately send notifications to application users when their monitored bus route has a bus entering the geofence. Azure SQL Database and Azure Functions are helping track and trigger this, but we can actually use Logic Apps to send the notifications once triggered.
 
 Here, you'll deploy a pre-configured Azure Logic App, which sends an email containing the bus route and status when triggered by an Azure Function. This exercise uses Outlook for notifications, but you could easily plug in an alternative such as Gmail.
 
@@ -8,11 +8,11 @@ Here, you'll deploy a pre-configured Azure Logic App, which sends an email conta
 
 The first step is to deploy the Azure Logic App using a combination of Azure PowerShell and Azure Resource Manager (ARM) templates. You'll need to first gather some information from GitHub to access the ARM template from the Azure Cloud Shell.
 
-<!--1. In your GitHub account settings, near the bottom left, select **Developer settings** > **Personal access tokens** > **Generate new token** > **check all boxes** and generate the token. Make a note of the token as you'll need it shortly.-->
+1. In your GitHub account settings, near the bottom left, select **Developer settings** > **Personal access tokens** > **Generate new token** > **check all boxes** and generate the token. Make a note of the token as you'll need it shortly.
 
 1. Make note of your GitHub repository (for example, `https://github.com/[username]/serverless-full-stack-apps-azure-sql`).
 
-1. The following script clones the repository and deploys an Azure Logic App according to an ARM template. ARM templates won't be discussed in this module, but you can think of them like a recipe for how to build an Azure service. This one is built to include the Outlook connector.
+1. The following script clones the repository and deploys an Azure Logic App according to an ARM template. We won't discuss ARM templates in this module, but you can think of them like a recipe for how to build an Azure service. This one is built to include the Outlook connector.
 
     ```powershell
     # Resource group name and resource group
@@ -45,7 +45,7 @@ The next step is to configure the Logic App to connect to your email address and
 
 1. You'll notice there's an error for the Outlook.com connection. Select **Add new**.
 
-1. Sign in to an Outlook account that you have access to.
+1. Sign in to an Outlook account to which you have access.
 
 1. Once successfully connected, you'll see the email and its contents. In the *To* field, enter the email address where you'd like to receive notifications.
 
@@ -74,4 +74,4 @@ Now that everything is updated, it's time to monitor the results (and your inbox
 1. When a bus activates a geofence, what do you see? Did you receive an email? The answers to these questions should help you understand if your application is working properly.
 
 > [!WARNING]
-> Depending on what time you are testing this out and current bus activity, you may have to wait for some time for a bus to enter a geofence.
+> Depending on what time you are testing this out and current bus activity, you might have to wait for some time for a bus to enter a geofence.
