@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-remote-application-aks-edge-essentials.md)]
+  [!include[](includes/4-remote-application-aks-edge-essentials.md)]

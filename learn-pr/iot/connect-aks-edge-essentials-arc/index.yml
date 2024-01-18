@@ -37,7 +37,6 @@ subjects:
 - container
 units:
 - learn.connect-aks-edge-essentials-arc.introduction
-- learn.connect-aks-edge-essentials-ar.exercise-deploy-aks-edge-essentials
 - learn.connect-aks-edge-essentials-ar.arc-enable-aks-edge-essentials
 - learn.connect-aks-edge-essentials-ar.exercise-arc-enable-aks-edge-essentials
 - learn.connect-aks-edge-essentials-arc.remote-application-aks-edge-essentials
