@@ -3,8 +3,8 @@ uid: learn.build-web-app-blazor-webassembly-vscode.7-exercise-razor-binding
 title: Exercise - Data binding and events
 metadata:
   title: Exercise - Data binding and events
-  description: Build your first web app with Blazor, Visual Studio Code, and C#.
-  ms.date: 05/13/2021
+  description: Create a to-do list component with interactive controls that are updated through razor binding.
+  ms.date: 01/05/2024
   author: csharpfritz
   ms.author: jefritz
   ms.manager: markl

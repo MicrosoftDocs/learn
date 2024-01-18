@@ -2,7 +2,7 @@ You can create complex and flexible setups in Azure that connect many virtual ma
 
 Suppose you're the Azure architect for an engineering company. You've deployed a VM in Azure, and the VM has network connectivity issues. You want to learn how to troubleshoot and fix the problem so you can help your colleagues to do the same if they face similar issues in the future.
 
-In this module, you'll learn about the core Network Watcher features. Engineers use Network Watcher to monitor, diagnose, and gain insight into their network health and performance with metrics. You can break down the elements into four areas: monitoring, network diagnostic tools, metrics, and logs.
+In this module, you'll learn about core Network Watcher features. Engineers use Network Watcher to monitor, diagnose, and gain insight into their network health and performance with metrics. You can break down the elements into four areas: monitoring, network diagnostic tools, metrics, and logs.
 
 By the end of this module, you'll be able to troubleshoot connectivity problems by using Network Watcher so that you can fix them.
 

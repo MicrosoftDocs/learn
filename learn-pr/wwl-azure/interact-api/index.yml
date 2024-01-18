@@ -30,7 +30,7 @@ roles:
 products:
 - aspnet-core
 - dotnet
-- aspnet-web-api
+- aspnet
 subjects:
 - development-tools
 units:
