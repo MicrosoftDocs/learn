@@ -106,7 +106,7 @@ Deploy a sample ASP.NET Core application based on [Microsoft's sample image](htt
     sample-aspnetcore  NodePort       10.43.237.30   <none>        8080:31767/TCP  6m40s
     ```
 
-1. Retrive the IP address of the Kubernetes node on which the application is running to append the port of the **NodePort**.
+1. Retrieve the IP address of the Kubernetes node on which the application is running to append the port of the **NodePort**.
 
     ```powershell
     Get-AksEdgeNodeAddr -NodeType Windows
