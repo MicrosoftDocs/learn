@@ -9,7 +9,7 @@ metadata:
   ms.author: lwainstein
   ms.topic: interactive-tutorial
   ms.service: defender-for-iot
-durationInMinutes: 1
+durationInMinutes: 5
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
@@ -25,60 +25,69 @@ durationInMinutes: 1
 ###
 ###########################################################################
 content: |
+
 quiz:
+
   questions:
-  - content: ""
+  
+  - content: "What of these is performed first when deploying a sensor?"
     choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
+    - content: "Uploading a signed security certificate"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect, the first action is to upload the monitor software"
+    - content: "Upload the monitor software"
+      isCorrect: true 
+      explanation: "Correct, the first action is to upload the monitor software"
+    - content: "Activate the sensor"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect, the first action is to upload the monitor software"
+
+  - content: "The monitoring software file can be downloaded from where?"
     choices:
-    - content: ""
+    - content: "The sensor Set Up page after sensor onboarding" 
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct, a Security Reader user presumably has read-only access to sensor data in Azure, which isn't enough to onboard OT sensors"
+    - content: "It's automatically downloaded after the onboarding process"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "A Security Admin user has sensor onboarding permissions but still has permission limits"
+    - content: "It's available in the Set up after the security certificate is uploaded"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "An Owner user presumably has all permissions and can create users. Creating users exceeds the permissions needed by the onboarding users"
+
+
+  - content: "In the management tab new sensor networking details must be set. Why is this important?"
     choices:
-    - content: ""
+    - content: "Setting unique details adds security to the connections"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. To ensure the highest level of security, do not use the default settings"
+    - content: "The default settings do not actually work, but any new ones will"
+      isCorrect: false 
+      explanation: "Incorrect, new settings will ensure a higher level of security"
+    - content: "The sensor will only start tracking once it has been reset and not before"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect, new settings will ensure a higher level of security"
+
+  - content: "What is the best type of security certificate to be added to the sensor deployment?"
     choices:
-    - content: ""
+    - content: "S/MIME protocol certificate" 
+      isCorrect: false
+      explanation: "This certificate is issued for email transfers and wouldn't provide the correct level of security"
+    - content: "Self-signed certificate"
+      isCorrect: false
+      explanation: "This certificate is issued from an individual user and wouldn't provide the correct level of security"
+    - content: "CA-signed certificate"
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "This certificate is issued from an authority that checks the user and provides the correct level of security"
+
+
+  - content: "By choosing *Enable* in the Interface configurations tab, what will now work?"
     choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
+    - content: "The sensor will now be able to send monitoring data to the Azure portal"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. The Security Reader role is the right level of access for a team member who only needs read-access to sensor data."
+    - content: "The IP address for the sensor"
+      isCorrect: true 
+      explanation: "Incorrect, this enables the individual sensor interface"
+    - content: "An specific endpoint interface on the sensor"
       isCorrect: false
-      explanation: ""
+      explanation: "Correct, the individual sensor interface is set to enable and will send data to display in Defender for IoT "

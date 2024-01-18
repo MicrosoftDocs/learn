@@ -1,65 +1,45 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
 
-    Goal: briefly summarize the key skill this unit will teach
+Your car manufacturing organization has offices and production sites across the globe, with a network linking them together. A sensor was onboarded to Defender for IoT and the site networking is set up. Now your task is to deploy the sensor by installing the OT monitoring software and activating the sensor to send data to the Azure portal.
 
-    Heading: none
+## Your organization's OT sensor deployment plan
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+The OT sensor deployment plan is shown in the following diagram:
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+:::image type="content" source="../media/3-deploy-sensors.png" alt-text="Diagram of the sensor deployment path" border="false":::
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+You download the OT monitoring software installation file from the Defender for IoT setup page, and then install it on the OT sensor appliance. In this case, the appliance is a virtual machine. You will need the details of two network adapters, one to connect the sensor to the Azure portal for could management. The second, connects the sensor to a traffic mirroring port. This information should be found in the virtual machine software documentation. <!-- as per /ot-deploy/install-software-ot-sensor does this seem correct? I think so.-->
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+Run the installation file on the virtual machine, and follow the stages in the wizard to install the software. When the installation is completed the default network details are displayed. In a real life scenario, configured sensors can be bought and this step is skipped.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Next, configure the sensor in a browser, which requires the sensor administrator username and password. The browser displays the **Defender for IoT | Overview** page, which leads you through the four stages of setting up the sensor, each stage is displayed in its own tab. They are:
+<!-- where can we see a proper screen shot of this? check the titles of each section and how best to write these items based on that - add screenshot of the oiverview screen -->
+1. The Management tab interface where you define the network details that connect the sensor to Defender for IoT. You will need to have the following details:
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+    |Name  |Description  |
+    |---------|---------|
+    |**Management interface**     |  Select the interface you want to use as the management interface to connect to the Azure portal. |
+    |**IP Address**     |  Enter the IP address for the sensor, which you use to connect to the sensor via the browser. |
+    |**Subnet Mask**     | Enter the address you want to use as the sensor's subnet mask.        |
+    |**Default Gateway**     | Enter the address you want to use as the sensor's default gateway.        |
+    |**DNS**     |   Enter the sensor's DNS server IP address.      |
+    |**Hostname**     |  Enter the hostname you want to assign to the sensor. Make sure that you use the same hostname as is defined in the DNS server.       |
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+1. The Interface tab configuration shows each interface on the sensor, this should match the list of endpoints in the network diagram. Each interface is set up individually.
 
-    Goal: State concisely what's covered in this unit
+    Select and enable each interface to be monitored. If you're unsure which interface to use, select the :::image type="icon" source="../media/3-blink-interface.png" alt-text="blink interface icon"::: Blink physical interface LED button to have the selected port blink on your machine. Select any of the interfaces that you've connected to your switch. <!--is this only if you are close to the sensor? How would this work for a cloud sensor?-->
+    There are optional, advanced options that can be set for each interface, as follows:
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+     |Name  |Description  |
+     |---------|---------|
+     |**Mode**| Select one of the following: </br>- SPAN Traffic (no encapsulation) to use the default SPAN port mirroring.</br> - ERSPAN if you're using ERSPAN mirroring.|
+     |**Description**| Enter an optional description for the interface. These descriptions may be helpful in understanding the purpose of each interface.|
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+1. The Activation tab upload the activation file, downloaded after onboarding the sensor, to activate the sensor.
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+1. Finally, define the SSL/TLS certificate settings. It's best practice to use a CA-signed certificate that is more secure, however in our test environment the self-signed certificate is secure enough.  <!-- should there be any more added about how to make a certificate or is this enough? There is this section /defender-for-iot/organizations/how-to-manage-individual-sensors?branch=main&tabs=self-signed#manage-ssltls-certificates , but it seems a lot to add that in here, what is the expectation that they will have these? -->
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+The sensor is now deployed and can send data to the Azure portal. Open Defender for IoT in the Azure portal and you should already see data appear there.
 
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
 Strong lead sentence; remainder of paragraph.
 Visual (image, table, list)
 ### H3 heading
