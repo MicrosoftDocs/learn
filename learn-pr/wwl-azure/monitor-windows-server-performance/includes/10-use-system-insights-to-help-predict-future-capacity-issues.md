@@ -32,7 +32,7 @@ After you've added and enabled the capabilities, you can use them to gain insigh
 
 ## What are the capability outputs?
 
-To use a capability to gain insights, you must invoke it. When you invoke a capability, it provides a output that identifies the result of its analysis. These outputs are:
+To use a capability to gain insights, you must invoke it. When you invoke a capability, it provides an output that identifies the result of its analysis. These outputs are:
 
 - Ok. The selected capability looks fine. No action is required.
 

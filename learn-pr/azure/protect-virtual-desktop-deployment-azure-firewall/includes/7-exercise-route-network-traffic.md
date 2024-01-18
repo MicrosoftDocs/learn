@@ -2,7 +2,7 @@ In the previous exercise, you deployed Azure Firewall. Now you need to route all
 
 ## Route all traffic through the firewall
 
-For the subnet used by the host pool, configure the outbound default route to go through the firewall. You'll complete the following three steps:
+For the subnet the host pool uses, configure the outbound default route to go through the firewall. You'll complete the following three steps:
 
 1. Create a route table in the same resource group as your host pool VMs and firewall.
 1. Associate the route table to the subnet that your host pool VMs use.
@@ -16,7 +16,6 @@ First, you'll create a route table named *firewall-route*.
 
 1. In the [Azure portal](https://portal.azure.com?azure-portal=true), search for and select **Route tables**.
 1. Select **+ Create**.
-:::image type="content" source="../media/7-create-route-table.png" alt-text="Screenshot that shows the information to include when creating a route table.":::
 1. Use the following values:
 
     |Field |Value |
@@ -25,6 +24,8 @@ First, you'll create a route table named *firewall-route*.
     |Resource group    |   learn-firewall-rg    |
     |Region  |   Select the same location that you used previously.   |
     |Name |   firewall-route   |
+
+    :::image type="content" source="../media/7-create-route-table.png" alt-text="Screenshot that shows the information to include when creating a route table.":::
 
 1. Select **Review + create** > **Create**.
 
@@ -44,7 +45,7 @@ Now, you'll associate *firewall-route* to the host pool's subnet.
     |Virtual network    |  hostVNet      |
     |Subnet |  hostSubnet      |
 
-1. Select **OK** and wait until associate is added.
+1. Select **OK** and wait until the association is added.
 
 ### Add route to route table
 
@@ -54,8 +55,6 @@ The last step is to add a route to Azure Firewall on the route table. After you 
 
     :::image type="content" source="../media/7-firewall-route-routes.png" alt-text="Screenshot that shows the routes option under settings on the firewall route table.":::
 1. Select **+ Add**.
-
-    :::image type="content" source="../media/7-add-route.png" alt-text="Screenshot that shows the information to include when adding a route.":::
 1. Enter the following values:
 
     |Field |Value  |
@@ -66,7 +65,9 @@ The last step is to add a route to Azure Firewall on the route table. After you 
     |Next hop type   |  Virtual appliance     |
     |Next hop address   |  Paste in the **Firewall private IP address** from the previous exercise unit. This can be found under your Firewall page, listed as Firewall private IP.    |
 
-1. Select **OK**.
+    :::image type="content" source="../media/7-add-route.png" alt-text="Screenshot that shows the information to include when adding a route.":::
+
+1. Select **Add**.
 
 ## Create application rule collection
 

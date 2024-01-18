@@ -6,7 +6,8 @@ metadata:
   ms.date: 12/06/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: github
 title: "Search and organize repository history by using GitHub"
 summary: "Learn to search and organize repository history by using filters, blame, and cross-linking on GitHub."
 abstract: |

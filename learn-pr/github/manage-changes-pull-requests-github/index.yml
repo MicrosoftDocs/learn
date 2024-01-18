@@ -6,7 +6,8 @@ metadata:
   ms.date: 11/21/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: github
 title: "Manage repository changes by using pull requests on GitHub"
 summary: Learn how to manage changes to your repository source by using pull requests.
 abstract: |
