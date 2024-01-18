@@ -30,7 +30,7 @@ quiz:
 
   questions:
   
-  - content: "What of these is performed first when deploying a sensor?"
+  - content: "Which of these actions is performed first when deploying a sensor?"
     choices:
     - content: "Uploading a signed security certificate"
       isCorrect: false
@@ -47,7 +47,7 @@ quiz:
     - content: "The sensor Set Up page after sensor onboarding" 
       isCorrect: true
       explanation: "Correct, a Security Reader user presumably has read-only access to sensor data in Azure, which isn't enough to onboard OT sensors"
-    - content: "It's automatically downloaded after the onboarding process"
+    - content: "It automatically downloads after the onboarding process"
       isCorrect: false
       explanation: "A Security Admin user has sensor onboarding permissions but still has permission limits"
     - content: "It's available in the Set up after the security certificate is uploaded"
@@ -59,35 +59,35 @@ quiz:
     choices:
     - content: "Setting unique details adds security to the connections"
       isCorrect: true
-      explanation: "Correct. To ensure the highest level of security, do not use the default settings"
-    - content: "The default settings do not actually work, but any new ones will"
+      explanation: "Correct. To ensure the highest level of security, don't use the default settings"
+    - content: "The default settings don't actually work, but any new ones will"
       isCorrect: false 
-      explanation: "Incorrect, new settings will ensure a higher level of security"
-    - content: "The sensor will only start tracking once it has been reset and not before"
+      explanation: "Incorrect, new settings ensure a higher level of security"
+    - content: "The sensor only starts tracking once it's reset and not before"
       isCorrect: false
-      explanation: "Incorrect, new settings will ensure a higher level of security"
+      explanation: "Incorrect, new settings ensure a higher level of security"
 
   - content: "What is the best type of security certificate to be added to the sensor deployment?"
     choices:
     - content: "S/MIME protocol certificate" 
       isCorrect: false
-      explanation: "This certificate is issued for email transfers and wouldn't provide the correct level of security"
+      explanation: "The S/MIME certificate is issued for email transfers and wouldn't provide the correct level of security"
     - content: "Self-signed certificate"
       isCorrect: false
-      explanation: "This certificate is issued from an individual user and wouldn't provide the correct level of security"
+      explanation: "The self-signed certificate is issued from an individual user and wouldn't provide the correct level of security"
     - content: "CA-signed certificate"
       isCorrect: true
       explanation: "This certificate is issued from an authority that checks the user and provides the correct level of security"
 
 
-  - content: "By choosing *Enable* in the Interface configurations tab, what will now work?"
+  - content: "By choosing *Enable* in the Interface configurations tab, what starts to work?"
     choices:
-    - content: "The sensor will now be able to send monitoring data to the Azure portal"
+    - content: "The sensor is now able to send monitoring data to the Azure portal"
       isCorrect: false
       explanation: "Incorrect. The Security Reader role is the right level of access for a team member who only needs read-access to sensor data."
     - content: "The IP address for the sensor"
       isCorrect: true 
       explanation: "Incorrect, this enables the individual sensor interface"
-    - content: "An specific endpoint interface on the sensor"
+    - content: "A specific endpoint interface on the sensor"
       isCorrect: false
-      explanation: "Correct, the individual sensor interface is set to enable and will send data to display in Defender for IoT "
+      explanation: "Correct, the individual sensor interface is set to enable and sends data to display in Defender for IoT "

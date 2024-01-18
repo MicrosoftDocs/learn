@@ -11,4 +11,4 @@ metadata:
   ms.service: defender-for-iot
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-exercise-deploy-software-to-appliance.md)]
+  [!include[](includes/4-exercise-deploy-software-to-appliance.md)]

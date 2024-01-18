@@ -2,7 +2,7 @@
 uid: learn.defender-iot-deploy-sensor
 metadata:
   title: Deploy a sensor to Microsoft Defender for IoT for operational technology network monitoring
-  description: "Learn how to plan your deployment of Microsoft Defender for IoT to monitor your OT network."
+  description: "Learn how to deploy an OT sensor to Microsoft Defender for IoT"
   ms.date: 1/16/2024
   author: limwainstein
   ms.author: lwainstein
