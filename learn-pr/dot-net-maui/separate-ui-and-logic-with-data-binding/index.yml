@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.dotnet-maui.separate-ui-and-logic-with-data-binding
+metadata:
+  title: Create a UI that uses data binding in .NET MAUI.
+  description: Create a UI with data binding. Your UI automatically updates based on the latest data, while the data updates in response to changes in the UI.
+  ms.date: 11/22/2023
+  author: adegeo
+  ms.author: adegeo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet-maui
+title: reate a UI that uses data binding in .NET MAUI.
+summary: |
+  Create a UI with data binding. Your UI automatically updates based on the latest data, while the data updates in response to changes in the UI.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Compare an event-driven UI to a data-bound UI.
+  - Create data objects usable with data binding.
+  - Design a UI that's driven by data binding.
+prerequisites: |
+  - Visual Studio 2022 with the **.NET Multi-platform App UI development** workload installed. 
+  - Familiarity with intermediate programming concepts like interfaces, classes, and attributes.
+  - Ability to write XAML code.
+iconUrl: //TODO
+levels:
+- intermediate
+roles:
+- developer
+products:
+- dotnet-maui
+- dotnet
+- vs
+units:
+- learn.dotnet-maui.separate-ui-and-logic-with-data-binding.1-introduction
+- learn.dotnet-maui.separate-ui-and-logic-with-data-binding.2-compare-event-and-data-driven
+badge:
+  uid: //TODO
