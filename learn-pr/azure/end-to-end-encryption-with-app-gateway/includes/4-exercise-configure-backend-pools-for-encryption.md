@@ -1,10 +1,10 @@
 You want to implement end-to-end encryption for the shipping-portal application. Encrypting all data between users and servers helps ensure that no unauthorized user can intercept and read the data.
 
-In this unit, you'll set up the web application and the application gateway. Next, you'll create some self-signed SSL certificates and enable encryption in your back-end pool to help secure the traffic from the application gateway to your servers.
+In this unit, you'll set up the web application and the application gateway. Next, you'll create some self-signed SSL certificates and enable encryption in your backend pool to help secure the traffic from the application gateway to your servers.
 
 The following image highlights the elements you configure in this exercise. You're setting up an application gateway by using Azure Application Gateway v2.
 
-:::image type="content" source="../media/4-exercise-elements.svg" alt-text="Diagram that highlights the elements (back-end pool, SSL certificate, and HTTP settings) created in this exercise.":::
+:::image type="content" source="../media/4-exercise-elements.svg" alt-text="Diagram that highlights the elements (backend pool, SSL certificate, and HTTP settings) created in this exercise.":::
 
 ## Deploy a virtual machine and an application gateway
 
@@ -67,7 +67,7 @@ The following image highlights the elements you configure in this exercise. You'
 
     :::image type="content" source="../media/4-shippingportal.png" alt-text="Screenshot of the shipping portal home page Microsoft Edge." loc-scope="other"::: <!-- no-loc -->
 
-## Configure the back-end pool for encryption
+## Configure the backend pool for encryption
 
 1. Run the following command to get the private IP address of the virtual machine that's acting as the web server.
 
@@ -86,7 +86,7 @@ The following image highlights the elements you configure in this exercise. You'
 
     ```
 
-1. Set up the back-end pool for Application Gateway by using the virtual machine's private IP address.
+1. Set up the backend pool for Application Gateway by using the virtual machine's private IP address.
 
     ```azurecli
     az network application-gateway address-pool create \
@@ -96,7 +96,7 @@ The following image highlights the elements you configure in this exercise. You'
       --servers $privateip
     ```
 
-1. Upload the VM certificate in the back-end pool to Application Gateway as a trusted root certificate. The setup script generated this certificate and stored it in the *shipping-ssl.crt* file.
+1. Upload the VM certificate in the backend pool to Application Gateway as a trusted root certificate. The setup script generated this certificate and stored it in the *shipping-ssl.crt* file.
 
     ```azurecli
     az network application-gateway root-cert create \
@@ -118,7 +118,7 @@ The following image highlights the elements you configure in this exercise. You'
       --host-name $privateip
     ```
 
-1. Run the following commands to set the trusted certificate for the back-end pool to the certificate installed on the back-end VM:
+1. Run the following commands to set the trusted certificate for the backend pool to the certificate installed on the backend VM:
 
     ```azurecli
     export rgID="$(az group show --name $rgName --query id --output tsv)"
