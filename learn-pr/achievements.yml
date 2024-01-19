@@ -2716,4 +2716,4 @@ achievements:
   type: badge
   title: Challenge project - Develop foreach and if-elseif-else structures to process array data in C#
   summary: Demonstrate your ability to update a console app that implements arrays, foreach loops, and if statements in response to a user requested feature update.
-  iconUrl: /training/achievements/challenge-project-create-rock-paper-scissors-game-with-github-copilot.svg
+  iconUrl: /training/achievements/generic-badge.svg
