@@ -31865,6 +31865,11 @@
       "source_path": "learn-pr/student-evangelism/challenge-project-create-rock-paper-scissors-game-with-github-copilot/3-exercise-update-output.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/challenge-project-create-mini-game-with-copilot/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/challenge-project-create-rock-paper-scissors-game-with-github-copilot/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/challenge-project-create-mini-game-with-copilot/",
+      "redirect_document_id": false
     }
   ]
 }
