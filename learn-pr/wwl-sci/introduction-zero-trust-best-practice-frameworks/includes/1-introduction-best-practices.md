@@ -70,7 +70,9 @@ Cybersecurity architects help integrate security best practices and make them ac
 
 **Adapt but don't over-customize** - Best practices are general guidance that work across most organizations. You may need to adapt best practices to the unique circumstances of your organization. You should be careful not to customize them to the point where the original value is lost. An example of this is adopting passwordless and multi-factor authentication, but making exceptions for the highest impact business and IT accounts that attackers value most.
 
-Adopting best practices will reduce common mistakes and improve overall security effectiveness and efficiency.
+Adopting best practices will reduce common mistakes and improve overall security effectiveness and efficiency. The following diagram summarizes important antipatterns and best practices.
+
+![Diagram of common antipatterns and important best practices.](../media/antipatterns-best-practices-diagram.png)
 
 ## Which framework should I choose?
 <!--
