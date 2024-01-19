@@ -58,4 +58,4 @@ quiz:
       explanation: "The ARM template what-if operation shows you how resources will change if you deploy a template."
     - content: "You access the ARM template what-if operation in the Azure portal, and you use it to deploy templates to management groups."
       isCorrect: false
-      explanation: "You use the ARM template what-if operation at the command line and not in the Azure portal."
+      explanation: "You use the ARM template what-if operation at the command line, not in the Azure portal."

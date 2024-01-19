@@ -138,7 +138,7 @@ You know that your Bicep file is valid, and the what-if operation indicates that
 
    The deployment succeeded:
 
-   :::image type="content" source="../media/7-deployment-list.png" alt-text="Screenshot of the Azure portal that shows the resource group deployments, with the successful deployment highlighted.":::
+   :::image type="content" source="../media/7-deployment-list.png" alt-text="Screenshot of the Azure portal that shows the resource group deployments. The successful deployment is highlighted.":::
 
 ::: zone-end
 
@@ -157,13 +157,13 @@ You know that your Bicep file is valid, and the what-if operation indicates that
 
    Within a few seconds, the deployment finishes successfully.
 
-1. In the Azure portal, open the resource group. Select the **2 Succeeded** link to view the list of deployments.
+1. In the Azure portal, open the resource group. Select the **2 Succeeded** link to view the list of deployments:
 
-   :::image type="content" source="../media/7-resource-group.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the two successful deployment links highlighted.":::
+   :::image type="content" source="../media/7-resource-group.png" alt-text="Screenshot of the Azure portal that shows the resource group. The 2 Succeeded link is highlighted.":::
 
    The deployment succeeded:
 
-   :::image type="content" source="../media/7-deployment-list.png" alt-text="Screenshot of the Azure portal that shows the resource group deployments, with the successful deployment highlighted.":::
+   :::image type="content" source="../media/7-deployment-list.png" alt-text="Screenshot of the Azure portal that shows the resource group deployments. The successful deployment is highlighted.":::
 
 ::: zone-end
 
@@ -172,7 +172,7 @@ You know that your Bicep file is valid, and the what-if operation indicates that
 
 ## Clean up the resources
 
-Now that you've completed the exercise, you can remove the resources so you aren't billed for them.
+Now that you've completed the exercise, you can remove the resources so that you aren't billed for them.
 
 In the Visual Studio Code terminal, run the following command:
 

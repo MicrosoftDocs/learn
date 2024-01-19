@@ -19,7 +19,7 @@ The migrate phase consists of three steps:
 
 1. Create a new empty Bicep file.
 1. Copy each resource from your decompiled template.
-1. Identify and recreate any missing resources.
+1. Identify and re-create any missing resources.
 
 ## Phase 3: Refactor
 
