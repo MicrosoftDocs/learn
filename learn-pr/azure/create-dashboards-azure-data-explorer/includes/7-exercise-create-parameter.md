@@ -1,4 +1,4 @@
-In this unit, you'll create a parameter to filter dashboard visualizations. 
+In this unit, you create a parameter to filter dashboard visualizations. 
 
 ## Create a parameter
 
@@ -32,11 +32,11 @@ You need to create a list of possible values for this parameter. The parameter y
 1. In the **Query results** field, select **Add query**.
 1. In **Data source**, select the *Samples* database.
 1. Select **Add query**.
-    
+
     :::image type="content" source="../media/9-add-query.png" alt-text="Screenshot of source to add query.":::
 
 1. Copy/paste the following query into the editor:
-    
+
     ```kusto
     StormEvents
     | distinct (State)

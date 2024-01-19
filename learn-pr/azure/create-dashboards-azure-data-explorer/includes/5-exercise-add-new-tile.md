@@ -1,4 +1,4 @@
-You've created a dashboard directly from a query in the Azure Data Explorer web UI. In this unit, you'll add a new tile to an existing dashboard.
+You created a dashboard directly from a query in the Azure Data Explorer web UI. In this unit, you add a new tile to an existing dashboard.
 
 ## Add a new tile
 
@@ -36,5 +36,4 @@ Now, let's add another tile to this dashboard. First, you need to switch from vi
 
 1. Save the entire dashboard by selecting the **Save** icon in the upper right corner.
 
-Congratulations! You have created a dashboard of insights.
-
+Congratulations! You created a dashboard of insights.
