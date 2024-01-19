@@ -6,6 +6,3 @@ The main takeaways from this module are:
 
 - Implement asynchronous programming in C# to create a new Task and prevent UI freezes during calculations.
 - Implement asynchronous IO operations using the `async` and `await` keywords in C# to make file IO operations asynchronous and prevent UI freezes.
-
-Extra reading:
-- Asynchronous Programming in C#: https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/
