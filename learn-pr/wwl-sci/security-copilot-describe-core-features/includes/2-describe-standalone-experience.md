@@ -3,15 +3,20 @@ Microsoft Security Copilot can be accessed through the dedicated site https://se
 
 There are some key landmarks on the Security Copilot landing page (portal) to which the user can navigate.
 
+- Home menu
+- Manage plugins
+- Prompt bar
+- Help
+
 :::image type="content" source="../media/landing-page-landmarks.png" lightbox="../media/landing-page-landmarks.png" alt-text="Screen capture of the landing page for the standalone experience of Microsoft Security Copilot.":::
 
-### Home page
+### Home menu
 
-The home page is accessed by selecting the home icon located on the top left corner of the Security Copilot landing page.
+The home menu is accessed by selecting the home icon located on the top left corner of the Security Copilot landing page.
 
-:::image type="content" source="../media/home-icon-home-page-v2.png" lightbox="../media/home-icon-home-page-v2.png" alt-text="Screen capture of home menu icon and a screen capture of the home page.":::
+:::image type="content" source="../media/home-icon-home-page-v2.png" lightbox="../media/home-icon-home-page-v2.png" alt-text="Screen capture of home menu icon and a the page it opens when selected.":::
 
-From the home page, the user can navigate as follows:
+From the home menu, the user can navigate as follows:
 
 - Back to the landing page by selecting the Home icon.
 - My sessions, which lists past sessions created. The user can manage past sessions with search and filter options along with the ability to rename, duplicate, or delete sessions as needed.
@@ -28,19 +33,19 @@ From the home page, the user can navigate as follows:
 
 ### Plugins
 
-The manage plugins icon is located on the bottom left corner of the home page. To extend the capabilities of Security Copilot, Microsoft has preinstalled a group of plugins - for Microsoft security services and other commonly used services and websites that you can use. You can also add your own custom plugins.  The subsequent unit provides more details on plugins.
+The manage plugins icon is located on the bottom left corner of the Security Copilot landing page. Selecting this icon opens the Manage plugins menu that lists preinstalled plugins for Microsoft security services and other commonly used services and websites that you can use. You can also add your own custom plugins.  The subsequent unit provides more details on plugins.
 
 :::image type="content" source="../media/plugin-icon-plugin-list.png" lightbox="../media/plugin-icon-plugin-list.png" alt-text="Screen capture showing the plugin icon and the plugin window showing a subset of the plugins.":::
 
 ### Help
 
-The help icon on the bottom right of the home page.  From the help page, users can link to documentation, frequently access questions (FAQs), an interactive tour to review key features, and more.
+The help icon is located on the bottom right of the Security Copilot landing page.  By selecting the help icon, users can link to documentation, frequently access questions (FAQs), an interactive tour to review key features, and more.
 
 :::image type="content" source="../media/help-to-help-list.png" lightbox="../media/help-to-help-list.png" alt-text="Screen capture showing the help icon and the help window.":::
 
 ### Prompt bar
 
-The prompt bar is on the bottom center of the home page. You use the prompt bar to tell Security Copilot what insights you want from your security data, in natural language, then select the run (the icon at the far right of the prompt bar). For those that are relatively new to the security analyst role and engaging with AI, effective prompting may take some practice. For this reason, Security Copilot provides suggestions for prompts and promptbooks that provide a series of preselected prompts.
+The prompt bar is on the bottom center of the Security Copilot landing page. You use the prompt bar to tell Security Copilot what insights you want from your security data, in natural language, then select the run (the icon at the far right of the prompt bar). For those that are relatively new to the security analyst role and engaging with AI, effective prompting may take some practice. For this reason, Security Copilot provides suggestions for prompts and promptbooks that provide a series of preselected prompts.
 
 :::image type="content" source="../media/prompt-bar.png" lightbox="../media/prompt-bar.png" alt-text="Screen capture showing the prompt bar.":::
 
@@ -66,9 +71,9 @@ You can find the different promptbooks by typing an asterisk (the "*" symbol) at
 
 #### Feedback
 
-Whether you use promptbooks, prompt suggestions, or your own prompt, providing feedback about your satisfaction with the generated response can help Microsoft in improving Security Copilot. You can find the feedback buttons at the left-hand side of the bottom of every response.
+Whether you use promptbooks, prompt suggestions, or your own prompt, providing feedback about your satisfaction with the generated response can help Microsoft in improving Security Copilot. You can find the feedback buttons on the left-hand side at the bottom of every response.
 
-Users can select:
+You can select:
 
 - Looks right
 - Needs improvement
@@ -80,13 +85,13 @@ For each option, the user can enter additional information.  The image that foll
 
 #### Process log
 
-Once a prompt is executed, the process log appears that provides information for the steps completed. For example, the process log can provide information on what skill (capability) was selected. This is important because it enables the user to determine whether the response has been generated from a trusted source.
+Once a prompt is executed, the process log appears that provides information for the steps completed. For example, the process log can provide information on what skill (capability) was selected. This information is important because you can use it to determine whether the response has been generated from a trusted source.
 
 :::image type="content" source="../media/process-log-v2b.png" lightbox="../media/process-log-v2b.png" alt-text="Screen capture showing process log, which shows the selected skill and that a safety check was run on the composed message.":::
 
 #### Pin board
 
-The pin board enables users to keep track of important responses in a session. Users can pin individual or multiple prompt-response pairs.  To select one or more individual items, the user selects the check box next to the item then selects the pin icon. To select all the prompt-response pairs in the session, the user selects checkbox at the top of the session window then selects the pin icon. Upon selecting the pin icon, the pin board window opens in a split view with the session.  The pin board includes a summary tab that summarizes the session and a pinned items tab that lists the prompt and a collapsed view of the response that users can expand.  Users can also edit the title of the session on the pin board.
+The pin board enables you to keep track of important responses in a session. You can pin individual or multiple prompt-response pairs.  To select one or more individual items, select the check box next to the item then select the pin icon. To select all the prompt-response pairs in the session, select the checkbox at the top of the session window then select the pin icon. Upon selecting the pin icon, the pin board window opens in a split view with the session.  The pin board includes a summary tab that summarizes the session and a pinned items tab that lists the prompt and a collapsed view of the response that users can expand.  You can also edit the title of the session on the pin board.
 
 :::image type="content" source="../media/pin-mapping-to-pin-board.png" lightbox="../media/pin-mapping-to-pin-board.png" alt-text="Screen capture showing the pin icon.  When a prompt response is selected along with the pin icon opens the pin board.":::
 
