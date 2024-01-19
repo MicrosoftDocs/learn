@@ -1,15 +1,14 @@
-The online retailer needs their application to have some basic security. The web Express app should differentiate between registered customers who have access, and other users who shouldn't have access. Other features, like role management, might be added at a later date.
+Tailwind Traders needs their application to have some basic security. The Express app should differentiate between registered customers who have access, and other users who shouldn't have access. Other features, like role management, might be added at a later date.
 
 ## Add basic authorization to an Express framework
 
 Most applications have parts that anyone can access. But, some parts need to be protected. There are different ways to protect an application. In this exercise, you'll implement a simple protection system to understand how the mechanism of *middleware* works in the Express framework.
 
+## Create a web server
 
-## Use the dev container sample project
+In this exercise, continue to use the [dev container](https://code.visualstudio.com/docs/devcontainers/containers). A sample project that has product files and starter application code is provided for you. You'll fill in the missing parts of the project to complete the app updates for the customer.
 
-In this exercise, you'll use an example project that has product files and starter application code. You'll fill in the missing parts of the project to complete the app updates for the customer.
-
-1. Open the **node-essentials/nodejs-http/exercise-express-middleware** folder in a terminal by right-clicking the folder name and selecting **Open in integrated terminal**.:
+1. Open the **node-essentials/nodejs-http/exercise-express-middleware** folder in a terminal by right-clicking the folder name and selecting **Open in integrated terminal**.
 
    This folder has three files: **app.js**, **client.js**, and **package.json**.
 
@@ -53,37 +52,38 @@ In this exercise, you'll use an example project that has product files and start
 
    The code contains a functioning Express application with three routes: slash `/`, `/users`, and `/products`.
 
-1. In a code editor, open the **client.js** application file and inspect the contents:
+## Create a client application
 
-   ```javascript
-   const http = require("http");
+In a code editor, open the **client.js** application file and inspect the contents:
 
-   http.get(
-     {
-       port: 3000,
-       hostname: "localhost",
-       path: "/users",
-       headers: {},
-     },
-     (res) => {
-       console.log("connected");
-       res.on("data", (chunk) => {
-         console.log("chunk", "" + chunk);
-       });
-       res.on("end", () => {
-         console.log("No more data");
-       });
-       res.on("close", () => {
-         console.log("Closing connection");
-       });
-     }
-   );
-   ```
+```javascript
+const http = require("http");
 
-   The client application code connects to the address `http://localhost:3000/users` for the `/users` route. The client listens for three events: `data`, `end`, and `close`.
+http.get(
+  {
+    port: 3000,
+    hostname: "localhost",
+    path: "/users",
+    headers: {},
+  },
+  (res) => {
+    console.log(`connected - statusCode: ${res.statusCode}`);
+    res.on("data", (chunk) => {
+      console.log("chunk", "" + chunk);
+    });
+    res.on("end", () => {
+      console.log("No more data");
+    });
+    res.on("close", () => {
+      console.log("Closing connection");
+    });
+  }
+);
+```
 
-   - Close the client.js file.
+This code is a simple HTTP client that connects to the Express application. It's not a web browser. It doesn't render HTML. It just connects to the server and reads the data that's returned. It is a good example of using the HTTP module from Node.js.
 
+The client application code connects to the address `http://localhost:3000/users` for the `/users` route. The client listens for three events: `data`, `end`, and `close`. When emitting an event, all of the functions attached to that specific event are called _synchronously_. This ensures the proper sequencing of events and helps avoid race conditions and logic errors. When appropriate, listener functions can switch to an asynchronous mode of operation using the `setImmediate()` or `process.nextTick()` methods. This is not covered in this module. 
 
 ## Run the Express program 
 
@@ -100,22 +100,22 @@ Now you're ready to try the Express program with a client application.
   
 1. Open a second terminal and start the client application:
 
-       ```bash
-       node client.js
-       ```
+    ```bash
+    node client.js
+    ```
 
    In the second terminal, you should see the following output from the client:
 
    ```output
-   connected
+   connected - statusCode: 200
    chunk [{"id":1,"name":"User Userson"}]
    No more data
    Closing connection
    ```
 
-   The Express program responds with some user data, `chunk [{"id":1,"name":"User Userson"}]`. All the parts of the application work. 
+   The Express server responds with some user data, `chunk [{"id":1,"name":"User Userson"}]`. All the parts of the application work. 
 
-   The client program ends after it displays the output.
+   The client application ends after it displays the output.
    
 1. In the first terminal (the Express server), press Ctrl + C to stop the program.
 
@@ -151,7 +151,7 @@ To protect this route, we'll add some code to the Express application.
    });
    ```
 
-1. Replace this section with the following code:
+1. Replace this section with the following code so that the `isAuthorized` middleware is the second argument:
 
    ```javascript
    app.get("/users", isAuthorized, (req, res) => {
@@ -164,11 +164,9 @@ To protect this route, we'll add some code to the Express application.
    });
    ```
 
-   In the updated code, the `isAuthorized` middleware is added as the second argument.
-
 ## Run the Express program and invoke the middleware 
 
-Try the client again with the updated server program.
+Try the client application again with the updated server program.
 
 1. In the first terminal, run the following command to restart the Express program:
 
@@ -185,7 +183,7 @@ Try the client again with the updated server program.
    In the second terminal, you should see the following output:
 
    ```output
-   connected
+   connected - statusCode: 401
    chunk Not permitted
    No more data
    Closing connection
@@ -233,7 +231,7 @@ Try the client again with an `authorization` header.
    In the second terminal, you should now see the following output:
 
    ```output
-   connected
+   connected - statusCode: 200
    chunk [{"id":1,"name":"User Userson"}]
    No more data
    Closing connection
