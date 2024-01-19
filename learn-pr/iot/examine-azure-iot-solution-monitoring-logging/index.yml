@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.examine-azure-iot-solution-monitoring-logging
 metadata:
-  title: Examine Azure IoT monitoring and diagnostics
-  description: "Examine Azure IoT monitoring and diagnostics"
+  title: Examine Azure IoT Hub monitoring and logging
+  description: "Examine Azure IoT Hub monitoring and logging"
   ms.date: 01/08/2024
   author: kgremban
   ms.author: kgremban
   manager: lizross
   ms.topic: module-standard-task-based
   ms.service: iot-hub
-title: Examine Azure IoT monitoring and diagnostics
+title: Examine Azure IoT Hub monitoring and logging
 summary: This module describes Azure Monitor and other Azure tools used to monitor, log, and analyze IoT Hub data.
 abstract: |
   After you complete this module, you'll be able to:
