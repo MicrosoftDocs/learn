@@ -1,3 +1,8 @@
+<!-- TODO: !!!!!!!!!!!!!!!!!I NEED TO ADD A SECTION TO DELETE ALL RESOURCES USED AT THE END!!!!!!!!!!!!!!!! -->
+
+
+
+
 <!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
 
     Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
