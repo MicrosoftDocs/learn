@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/20/2023
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
+  ms.topic: learning-path
   ms.prod: aspnet-core
 title: Develop an ASP.NET Core web app that consumes an API
 prerequisites: |
