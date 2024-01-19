@@ -7,6 +7,9 @@ Finally, you'll create a custom exception and use it in a Try…Catch block in y
 
 ## Review a custom exception
 
+All C# exception objects inherit from `System.Exception`. You create this inheritance relationship so that you can throw an exception for the class you create. In this case, a `JSONSerializationException` exception is being created, inheriting from
+`System.Exception`.
+
 1. Select the WPF --> JSON folder
 
 1. Open the `JSONSerializationException.cs` file.
@@ -26,6 +29,8 @@ Finally, you'll create a custom exception and use it in a Try…Catch block in y
 The custom class JSONSerializationException is created by inheriting from the .NET Exception class and passing a message and innerException information to the base class. This is how you create a basic custom exception: by creating a class that inherits from the .NET Exception class and passing information about the exception to the constructor of the derived class. Let’s see how to use a custom exception in a Try…Catch block.
 
 ## Review a custom exception used in a Try...Catch block
+
+Typically, you use exceptions in a Try...Catch block. In the Try block, you surround the code that can potentially cause an error, as shown here. In the header of the Catch block, you include your exception type, along with the name of the exception variable.
 
 1. Select the `GameJSONSerializer.cs` file in the WPF --> JSON folder.
 
@@ -93,7 +98,7 @@ The `GameJSONSerializer` class is a utility class, meaning that it performs spec
 
 Notice that both the `ToJson` and `FromJson` methods contain a Try…Catch block. Indeed, when serializing the `IGame` object, an exception can occur. When you deserialize the `Game` object in the `FromJson` method, an error can also occur. By using a Try…Catch block in these situations, you can catch any possible serialization exceptions.
 
-## Add exception handling when loading Game
+## Add exception handling when loading the game
 
 Knowing when to throw an exception, such as `JSONSerializationException` or `IOException`, allows you to catch and handle specific exceptions. In your exception handling code, you'll handle a `JSONSerializationException` and `IOException` and show an appropriate message to the user.
 
@@ -153,7 +158,9 @@ Knowing when to throw an exception, such as `JSONSerializationException` or `IOE
     }
     ```
 
-## Add exception handling when saving a Game
+## Add exception handling when saving a game
+
+In this example, you surround your serialization functionality when saving a game with a Try...Catch block.
 
 1. Locate the `btnSave_Click` method in the `MainWindow.xaml.cs` file.
 
@@ -211,9 +218,9 @@ Knowing when to throw an exception, such as `JSONSerializationException` or `IOE
 
 ## Check your work
 
-1. Open a terminal window. From the View menu, select Terminal.
+1. From the view menu in VS Code, select Terminal to open a terminal window.
 
-1. Change directories to the Starter/WPF directory by entering `cd Starter/WPF` and pressing enter, if you are not already in it.
+1. If you’re not already in the WPF directory, Enter cd starter\wpf  to change directories to WPF.
 
 1. Enter `dotnet build` to verify the code still builds successfully.
 
@@ -237,4 +244,4 @@ Knowing when to throw an exception, such as `JSONSerializationException` or `IOE
 
 1. Enter `dotnet build` to make sure the code builds.
 
-1. Run the code once more and verify the game loads and is working correctly, enter `dotnet run` and press Enter.
+1. Enter `dotnet run` to run the code once more and verify the game loads and is working correctly.

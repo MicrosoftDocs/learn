@@ -1,4 +1,4 @@
-You'll be using the VS Code Editor as your code development environment. You'll be writing code that uses inheritance for code reuse and optimization.
+You'll be using the Visual Studio Code (VS Code)  editor as your code development environment. You'll be writing code that uses inheritance for code reuse and optimization.
 
 ## Project overview
 
@@ -16,9 +16,11 @@ Use the following steps to prepare for the Guided Project exercises:
 
     1. On your local machine, navigate to your downloads folder in File Explorer.
 
-    1. Right-click **MicrosoftLearning-Challenge-Project-design-object-oriented-structures**, and then select **Extract all**.
+    1. Right-click **MicrosoftLearning-Challenge-Project-design-object-oriented-structures**.
 
-    1. Select **Show extracted files when complete**, and then select **Extract**.
+    1. Select **Extract all**.
+
+    1. Select **Show extracted files when complete**, then select **Extract**.
 
     1. Open the **MicrosoftLearning-Challenge-Project-design-object-oriented-structures** folder.
 
@@ -38,7 +40,7 @@ Use the following steps to prepare for the Guided Project exercises:
 
 1. Start working on the exercises using the Starter code.
 
-    1. Select View --> Terminal from the menu.
+    1. In VS Code, select View --> Terminal from the menu.
 
     1. Enter `cd Starter\WPF` = to change the current directory to the Starter code where your WPF project resides.
 
@@ -49,4 +51,4 @@ Use the following steps to prepare for the Guided Project exercises:
 If you're able to run the code successfully, you're now ready to begin the Guided Project exercises. Good luck!
 
 > [!NOTE]
-> If you were unable to build and run the Starter code, make sure you went through steps 1-5 correctly and that you are in the Terminal window directory for the Starter\WPF code. Remember, to build and run this code you will need to be in the Starter\WPF directory.
+> If you were unable to build and run the Starter code, make sure you went through steps 1-5 correctly and that you are in the Terminal window directory for the Starter\WPF code.

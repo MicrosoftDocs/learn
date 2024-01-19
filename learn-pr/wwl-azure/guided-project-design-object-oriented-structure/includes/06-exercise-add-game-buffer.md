@@ -1,6 +1,8 @@
-In this exercise, you'll write code that enables an ant to move to the next generation. You'll use a pre-created `GameBuffer` class and implement it by creating two Clone methods. One method will buffer an ant `IAnt`, and the other will buffer the game, `IGame`. Lastly, make the `IAnt` clone method virtual so that you can override it in `GeneralizedAnt` and use it.
+In this exercise, you'll write code that enables an ant to move to the next generation. You use a pre-created `GameBuffer` class and implement it by creating two Clone methods. One method will buffer an ant `IAnt`, and the other will buffer the game, `IGame`. Lastly, you make the `IAnt` clone method virtual so that you can override it in `GeneralizedAnt` and use it.
 
-## Copy GameBuffer.cs to project
+## Copy GameBuffer.cs to the project
+
+To get started, copy `GameBuffer.cs` to your project. 
 
 1. Copy resources\GameBuffer.cs to WPF\Game folder.
     1. Open [Starter Files](https://github.com/MicrosoftLearning/Challenge-Project-design-object-oriented-structures/tree/main/Starter).
@@ -122,7 +124,7 @@ In this exercise, you'll write code that enables an ant to move to the next gene
 
 ## Define a utility function to create GameBuffer in a consistent way
 
-You'll create a `GameBuffer` utility method so that you can easily create game buffers. It will take the initial state (as an optional field), the number of ants it will hold, and the initial rule as parameters.
+You create a `GameBuffer` utility method so that you can easily create game buffers. It takes the initial state (as an optional field), the number of ants it holds, and the initial rule as parameters.
 
 1. Open the `MainWindow.xaml.cs` file in the WPF folder.
 
@@ -218,7 +220,7 @@ You need to have your code start using your game buffer and the utility method y
     }
     ```
 
-1. Modify the old code that checks to see if there is a game. It should now check the buffer, before throwing an exception if there is no current game, as shown here.
+1. Modify the old code that checks to see if there's a game. It should now check the buffer, before throwing an exception if there's no current game, as shown here.
 
     ```csharp
     private void btnSave_Click(object sender, RoutedEventArgs e)
@@ -322,7 +324,7 @@ In both the `btnStepForward_Click` and `btnStepBackward_Click` UI methods, first
 
 The last step in this exercise is to update the `btnSave_Click` and `btnLoad_Click` UI methods to use the buffer you created.
 
-Starting with `btnSave_Click` you'll check to see if a game is `null` by replacing `if (game == null)` with `if (buffer.Current == null)`, then throwing an `InvalidOperationException` exception if the game is null.
+Starting with `btnSave_Click` you check to see if a game is `null` by replacing `if (game == null)` with `if (buffer.Current == null)`, then throwing an `InvalidOperationException` exception if the game is null.
 
 1. Locate the `btnSave_Click` method.
 

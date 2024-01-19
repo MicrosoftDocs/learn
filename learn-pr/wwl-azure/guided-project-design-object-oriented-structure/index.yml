@@ -1,29 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-design-object-oriented-structure
 metadata:
-  title: Guided project - Design object oriented structure
+  title: 'Guided project: Design object-oriented structures'
   description: "This is a guided project about exception handling."
-  ms.date: 01/10/2024
+  ms.date: 01/16/2024
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: module
-  ms.prod: dotnet-csharp
-title: Guided project - Design object oriented structure
+  ms.service: dotnet-csharp
+title: 'Guided project: Design object-oriented structures'
 summary: |
-  In this guided project, you modified your Langton's Ant code to include exception handling.
-  You learned how to:
-  - Create and exception class.
-  - Use a Try/Catch block.
-  - Throw an exception.
-  - Implement exception handling in your code.
+  In this guided project, you modify your Langton's Ant code to include exception handling. You learn how to throw and how to handle exceptions in your game buffer code.
   [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
+  By the end of this module, you should be able to:
   - Create and exception class.
-  - Use a Try/Catch block.
+  - Use a Try...Catch block.
   - Throw an exception.
   - Implement exception handling in your code.
 prerequisites: |
-  - Installation of Visual Studio Code that's configured for C# application development, including C# Dev Kit.
+  - Installation of VS Code configured for C# application development, including C# Dev Kit.
   - Experience with the VS Code editor.
   - Ability to develop C# console applications that implement business logic using loops, if statements, properties, and methods.
   - Experience with basic C# syntax rules.

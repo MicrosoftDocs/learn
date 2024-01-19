@@ -39,6 +39,7 @@ subjects:
 - cloud-computing
 modules:
 - learn.quantum.intro-to-azure-quantum
+- learn.quantum.choose-the-best-azure-quantum
 - learn.quantum.qsharp-create-first-quantum-development-kit
 - learn.quantum.estimate-resources-quantum-algorithms
 trophy:
