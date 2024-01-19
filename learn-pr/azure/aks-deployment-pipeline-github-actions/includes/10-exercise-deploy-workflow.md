@@ -69,7 +69,7 @@ Use a GitHub action to download and install Helm version `v3.3.1`.
 
 Use OIDC to authenticate GitHub Actions to access AKS.
 
-1. In the right panel, search for *azure login*, and select **Azure Login** published by **Azure**.
+1. In the right panel, search for *Azure login*, and select **Azure Login** published by **Azure**.
 
     :::image type="content" source="../media/10-azure-login.png" alt-text="Screenshot that shows results for the Azure Login search.":::
 

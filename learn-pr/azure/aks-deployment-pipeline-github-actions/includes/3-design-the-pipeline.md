@@ -13,7 +13,7 @@ Your pipeline needs to trigger on two different events:
 - A tagged push to the main branch.
 - A nontagged push to the main branch.
 
-You split the two events into two separate triggers, because the actions for a tagged push are different from the actions for a nontagged push . A tagged push deploys to production, while a nontagged push deploys to the staging environment. The following diagram shows the two triggers for the pipeline:
+You split the two events into two separate triggers, because the actions for a tagged push are different from the actions for a nontagged push. A tagged push deploys to production, while a nontagged push deploys to the staging environment. The following diagram shows the two triggers for the pipeline:
 
 :::image type="content" source="../media/3-pipeline-1-trigger.png" alt-text="Diagram that shows two types of pipeline triggers.":::
 
