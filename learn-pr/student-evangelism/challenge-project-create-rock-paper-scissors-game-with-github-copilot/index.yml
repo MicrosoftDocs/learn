@@ -33,7 +33,6 @@ subjects:
 - development-tools
 units:
 - learn.wwl.challenge-project-create-rock-paper-scissors-game-with-github-copilot.prepare
-- learn.wwl.challenge-project-create-rock-paper-scissors-game-with-github-copilot.knowledge-check
 - learn.wwl.challenge-project-create-rock-paper-scissors-game-with-github-copilot.summary
 badge:
   uid: learn.wwl.challenge-project-create-rock-paper-scissors-game-with-github-copilot.badge
