@@ -1,6 +1,8 @@
 In the evolving landscape of software development, the ability to efficiently edit and debug code is paramount. VS Code when combined with WSL offers a versatile and powerful environment for developers.  
 
-## Installing the Python Extension 
+## Installing the Python Extension
+
+:::image type="content" source="../media/8-install-python-extension.png" alt-text="Screenshot of the prompt to install Python extension in Visual Studio Code.":::
 
 When you open hello.py, you will receive a prompt to install the Microsoft Python extension for VS Code. It enhances the Python coding experience in VS Code. It provides advanced editing features like syntax highlighting and intelligent code completion, making coding more efficient and less error prone. The extension also offers debugging tools and simplifies the management of Python environments.  
 
@@ -10,6 +12,8 @@ When you open hello.py, you will receive a prompt to install the Microsoft Pytho
 
 ## Debugging Your Code 
 
+:::image type="content" source="../media/9-debug-python.png" alt-text="Screenshot of debugging Python code in the Visual Studio Code.":::
+
 
 1. Set a Breakpoint: In hello.py, set a breakpoint on line 1 by clicking in the gutter next to the line number or pressing F9. 
 
@@ -17,7 +21,7 @@ When you open hello.py, you will receive a prompt to install the Microsoft Pytho
 
     - The application will start and hit the breakpoint. Here, you can inspect variables, create watches, and explore the call stack. 
 
-3. Press F10 to step through the code. You'll observe the output of the print statement in the debug console. 
+3. You'll observe the output of the print statement in the debug console. 
 
 ## Ending Your WSL Session 
 

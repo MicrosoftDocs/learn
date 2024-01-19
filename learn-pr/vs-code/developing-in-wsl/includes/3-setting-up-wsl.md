@@ -1,10 +1,15 @@
-Installing WSL can be accomplished in just a few steps. We’ll be using the wsl –install command. This command will enable the features necessary to run WSL and install the Ubuntu distribution of Linux. A Linux distribution (distro) is a customized version of the Linux operating system with a specific set of software packages and configurations tailored for different purposes or user preferences. Ubuntu is a popular Linux distro known for its user-friendly interface and extensive software ecosystem, making it an accessible choice for many users. 
+Installing WSL can be accomplished in just a few steps. We’ll be using the `wsl –install command`. This command will enable the features necessary to run WSL and install the Ubuntu distribution of Linux. 
+
+> [!NOTE]
+> You must make sure that you're running Windows 11 or Windows 10 version 2004+ (Build 19041 and higher) to run the WSL install command.
 
 We'll also be creating a Python project to later use in VS Code.
 
 Another thing to note, though this module is focused on how we can leverage WSL and VS Code, WSL install is independent of VS Code, and you can use WSL anywhere and on its own. 
 
 ## Installing WSL and a Linux Distribution 
+
+:::image type="content" source="../media/3-wsl-install.png" alt-text="Screenshot of the Windows terminal and the wsl install command.":::
 
 ### Enable the Windows Subsystem for Linux: 
 
@@ -15,6 +20,8 @@ Another thing to note, though this module is focused on how we can leverage WSL 
 2. Restart Your Computer: A restart is required to complete the installation and apply changes. 
 
 ### Set Up Your Linux Distribution: 
+
+A Linux distribution (distro) is a customized version of the Linux operating system with a specific set of software packages and configurations tailored for different purposes or user preferences. Ubuntu is a popular Linux distro known for its user-friendly interface and extensive software ecosystem, making it an accessible choice for many users. 
 
 1. Upon restart, open the newly installed Linux distribution from the Start menu. 
 

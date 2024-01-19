@@ -3,6 +3,8 @@ Windows Subsystem for Linux (WSL) is a feature from Microsoft that allows develo
 
 The primary purpose of WSL is to enable developers who need to run a Linux-based computing environment alongside their Windows applications and tools. It's particularly useful for those who develop, build, test, or run applications that are designed for Linux systems. 
 
+:::image type="content" source="../media/1-wsl-intro.png" alt-text="Illustration of a laptop running Windows with the Linux penguin named Tux sitting next to it.":::
+
 ## Benefits of Using WSL for Developers 
 
 WSL brings several benefits to developers:
@@ -19,11 +21,14 @@ WSL brings several benefits to developers:
 
 ### Brief History and Versions of WSL 
 
+:::image type="content" source="../media/2-wsl-versions.png" alt-text="Illustration of a laptop running with divisions for both Windows and Linux.":::
+
+
 - **WSL 1:** The first iteration of WSL, introduced in 2016, was groundbreaking in its approach to running Linux binaries on Windows. It translated Linux system calls to Windows system calls in real-time. However, it had some performance limitations, particularly with file system operations. 
 
 - **WSL 2:** Launched in 2019, WSL 2 represents a significant leap forward. It uses a real Linux kernel through a lightweight virtual machine (VM), which drastically improves performance. This change means better compatibility with Linux applications and more efficient use of system resources. WSL 2 also introduced full system call compatibility, enhancing the range of Linux applications that could run on Windows. 
 
-### Summary
 
 In summary, WSL has evolved to become an indispensable tool for developers who require a Linux environment alongside their Windows workflow. Its development from WSL 1 to WSL 2 shows Microsoft's commitment to supporting cross-platform development, making it a versatile choice for modern software development needs. 
 
+Let's now look at how we can setup WSL on our Windows machine. 

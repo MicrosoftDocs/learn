@@ -6,7 +6,9 @@ This integration allows developers to utilize the full range of Linux tools and 
 
 - **Unified Development Experience:** With VS Code and the WSL extension combined, VS Code’s UI runs on Windows, and all your commands, extensions, and even the terminal, run on Linux. You get the full VS Code experience, including autocomplete and debugging, powered by the tools and compilers installed on Linux. 
 
-## Installing the VS Code WSL Extension 
+## Installing the VS Code WSL Extension
+
+:::image type="content" source="../media/4-wsl-extension.png" alt-text="Screenshot of the Visual Studio Code Extensions tab with WSL extension showing.":::
 
 In VS Code, go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window. 
 
@@ -17,15 +19,21 @@ In VS Code, go to the Extensions view by clicking on the Extensions icon in the 
 
 ## Connecting to WSL in VS Code 
 
+:::image type="content" source="../media/5-connect-to-wsl.png" alt-text="Screenshot of the Visual Studio Code WSL connect to WSL command.":::
+
 1. In VS Code, open your command pallet (Ctrl/CMD+Shift+P) and type in WSL: Connect to WSL 
     - Your VS Code will reload and connect to WSL 
     - Notice the remote indicator on the bottom right corner displays that VS Code is connected to WSL:Ubuntu 
 
 4. Open a new terminal (Ctrl/CMD+`) and notive the path corresponds to a file path in WSL 
 
+:::image type="content" source="../media/6-open-folder-wsl.png" alt-text="Screenshot of the Visual Studio Code WSL terminal.":::
+
 5. In the terminal type in the command `uname`, the output should be Linux. 
 
 ## Opening our Python Project from WSL in Visual Studio Code 
+
+:::image type="content" source="../media/7-python-in-wsl.png" alt-text="Screenshot of a Python Project open in Visual Studio Code with WSL.":::
 
 1. Open your command pallet (Ctrl/CMD+Shift+P) and type in WSL: Open folder in WSL 
 

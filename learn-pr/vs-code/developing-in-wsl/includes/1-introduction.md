@@ -10,15 +10,17 @@ Visual Studio Code (VS Code), a versatile and widely used code editor, enhances 
 
 ## What will you learn?
 
-- Understand WSL: We'll start with the basics of what WSL is and why it's a significant development in cross-platform coding. 
+- **Understand WSL:** We'll start with the basics of what WSL is and why it's a significant development in cross-platform coding. 
 
-- Set Up Your Environment: Step-by-step guidance on installing WSL and setting up a Linux distribution on your Windows machine. 
+- **Set Up Your Environment:** Step-by-step guidance on installing WSL and setting up a Linux distribution on your Windows machine. 
 
-- Integrate with VS Code: Learn how to integrate your Linux setup with VS Code using the WSL extension and understand the benefits this integration brings. 
+- **Integrate with VS Code:** Learn how to integrate your Linux setup with VS Code using the WSL extension and understand the benefits this integration brings. 
 
-- Practical Development Skills: We'll dive into practical skills, such as running and debugging Python code, and using WSL and VS Code. 
+- **Practical Development Skills:** We'll dive into practical skills, such as running and debugging Python code, and using WSL and VS Code. 
 
 
 ## What is the main goal?
 
 By the end of this module, you'll have a solid foundation for using Linux tools and applications on your Windows system, all within the familiar and powerful interface of Visual Studio Code. Let's get started on this journey to enhance your development skills and workflow! 
+
+Let's now learn a little more about what the Windows Subsystem for Linux (WSL) is.

@@ -6,12 +6,7 @@ This module has laid the foundation for you to harness the full potential of Lin
 
 ## References
 
-- Detailed WSL Installation Guides: To get started with WSL, these guides provide step-by-step instructions: Install WSL on Windows 10. Install WSL | Microsoft Learn 
-
-- Introductory WSL Tutorial: Enhance your understanding of WSL with this beginner-friendly tutorial: Get started with Windows Subsystem for Linux. Training – Introduction to Windows Subsystem for Linux (WSL) - Training | Microsoft Learn 
-
-- Usage and Tips: For more topics and in-depth usage of WSL and VS Code, explore:  
-
-- Developing in the Windows Subsystem for Linux with Visual Studio Code 
-
-- Remote development in WSL 
+- [How to install Linux on Windows with WSL](https://learn.microsoft.com/windows/wsl/install)
+- [Introduction to Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/training/modules/wsl-introduction/)
+- [Developing in WSL](https://code.visualstudio.com/docs/remote/wsl) 
+- [Remote development in WSL](https://code.visualstudio.com/docs/remote/wsl-tutorial)
