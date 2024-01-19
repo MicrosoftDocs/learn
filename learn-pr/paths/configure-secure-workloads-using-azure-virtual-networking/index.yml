@@ -7,9 +7,10 @@ metadata:
   author: wwlpublish
   ms.author: jileary
   ms.topic: learning-path
-  ms.prod: learning-azure
+  ms.service: azure
 title: Configure secure access to your workloads using Azure virtual networking
-prerequisites: ""
+prerequisites: |
+  - None
 summary: |
   In this learning path, you practice configuring secure access to workloads using Azure networking.
   [!INCLUDE [](../../includes/wwl/azure-subscription-prerequisite.md)]
