@@ -106,7 +106,7 @@ These and additional capabilities are covered in more detail in the unit titled,
 
 With the Defender XDR plugin enabled, users can take advantage of the Microsoft Defender XDR incident investigation promptbook available through the standalone experience.
 
-:::image type="content" source="../media/defender-xdr-promptbook.png" lightbox="../media/defender-xdr-promptbook.png" alt-text="Screen capture of the Defender XDR promptbook prompts that can be run in the standalone experience.":::
+:::image type="content" source="../media/defender-xdr-promptbook.png" lightbox="../media/defender-xdr-promptbook.png" alt-text="Screen capture that lists the promptbook named Microsoft Defender XDR Incident investigation.":::
 
 :::image type="content" source="../media/defender-xdr-promptbook-prompts.png" lightbox="../media/defender-xdr-promptbook-prompts.png" alt-text="Screen capture of the Defender XDR promptbook prompts that can be run in the standalone experience.":::
 
