@@ -31850,6 +31850,11 @@
         "source_path": "learn-pr/aspnetcore/microservices-apigateway-aspnet-core/verify-deployment.yml",
         "redirect_url": "/training/paths/create-microservices-with-dotnet",
         "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/challenge-project-create-rock-paper-scissors-game-with-github-copilot/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/challenge-project-create-mini-game-with-copilot/",
+      "redirect_document_id": false
     }
   ]
 }
