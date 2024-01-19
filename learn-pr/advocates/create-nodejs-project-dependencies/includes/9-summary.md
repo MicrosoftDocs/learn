@@ -1,4 +1,4 @@
-You started by learning how to install dependencies that your app can use. Using dependencies in your application allows you to create the application faster because the code is already written. Also, it's a good idea to rely on tried-and-tested libraries rather than writing something yourself. Using these libraries is an especially good idea when you're adding authentication and authorization to your app.
+You started by learning how to install dependencies that your app can use. Using dependencies in your application allows you to create the application faster because the code is already written. Also, it's a good idea to rely on tried-and-tested packages rather than writing something yourself. Using these packages is an especially good idea when you're adding authentication and authorization to your app.
 
 You were then introduced to various ways to install a dependency: local, global, and via the npm tool. Usually, you'll install dependencies locally.
 
@@ -11,3 +11,26 @@ Finally, in the last unit of the module, you learned about the package.json file
 - Review the official Node.js [docs](https://nodejs.org/en/docs/)
 - Check out a great community site for [Node.js](https://nodejs.dev/en/learn)
 - Try [Visual Studio Code](https://code.visualstudio.com) for editing text and code files
+
+## Node.js resources
+
+* [Node.js cli](https://nodejs.org/api/cli.html)
+
+## npm CLI
+
+* [npm init](https://docs.npmjs.com/cli/commands/npm-init)
+* [npm install](https://docs.npmjs.com/cli/commands/npm-install)
+* [npm audit](https://docs.npmjs.com/cli/commands/npm-audit)
+* [npm outdated](https://docs.npmjs.com/cli/commands/npm-outdated)
+* [npm update](https://docs.npmjs.com/cli/commands/npm-update)
+* [npm run](https://docs.npmjs.com/cli/commands/npm-run-script)
+* [npm start](https://docs.npmjs.com/cli/commands/npm-start)
+
+## npm packages
+
+* [Search for a package](https://www.npmjs.com/search)
+
+## testing
+
+* [Jest](https://jestjs.io/)
+* [Playwright](https://playwright.dev/)

@@ -3,12 +3,12 @@ uid: learn.build-web-app-blazor-webassembly-vscode.2-understand-blazor-webassemb
 title: What is Blazor?
 metadata:
   title: What is Blazor?
-  description: Build your first web app with Blazor, Visual Studio Code, and C#.
-  ms.date: 05/13/2021
+  description: Learn how Blazor can help you build full stack web apps and how can you leverage both Server and WebAssembly technology.
+  ms.date: 01/05/2024
   author: csharpfritz
   ms.author: jefritz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/2-understand-blazor-webassembly.md)]

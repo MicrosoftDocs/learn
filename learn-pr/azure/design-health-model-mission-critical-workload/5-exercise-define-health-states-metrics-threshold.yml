@@ -7,8 +7,7 @@ metadata:
   ms.date: 01/12/2022
   author: msimecek
   ms.author: prwilk
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/5-exercise-define-health-states-metrics-threshold.md)]

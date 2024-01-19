@@ -4,13 +4,10 @@ title: Configure entitlement management
 metadata:
   title: Configure entitlement management
   description: "Configure entitlement management"
-  ms.date: 02/07/2023
+  ms.date: 01/18/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/4-configure-entitlement-management.md)]

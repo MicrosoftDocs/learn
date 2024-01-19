@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.generate-code-azure-openai
+metadata:
+  title: Generate code with Azure OpenAI Service
+  description: Learn how to use the Azure OpenAI Service to generate and improve code.
+  ms.date: 6/20/2023
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: azure
+  ms.subservice: openai
+title: Generate code with Azure OpenAI Service
+summary: This module shows engineers how to use the Azure OpenAI Service to generate and improve code.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Use natural language prompts to write code
+  - Build unit tests and understand complex code with AI models
+  - Generate comments and documentation for existing code
+prerequisites: |
+  - Familiarity with Azure and the Azure portal.
+  - An understanding of generative AI. You can learn more with [Introduction to Azure OpenAI Service](/training/modules/explore-azure-openai/).
+  - Experience programming with C# or Python. If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
+  - Before starting this module, we recommend you complete the previous modules in the [Develop AI solutions with Azure OpenAI](/training/paths/develop-ai-solutions-azure-openai/) learning path.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - ai-engineer
+  - developer
+  - solution-architect
+  - student
+products: 
+  - azure-openai
+  - azure
+subjects: 
+  - cloud-computing
+  - data-ai
+units:
+- learn.wwl.generate-code-azure-openai.introduction
+- learn.wwl.generate-code-azure-openai.construct-code-natural-language
+- learn.wwl.generate-code-azure-openai.complete-code-assist-development
+- learn.wwl.generate-code-azure-openai.fix-bugs-improve-code
+- learn.wwl.generate-code-azure-openai.exercise
+- learn.wwl.generate-code-azure-openai.knowledge-check
+- learn.wwl.generate-code-azure-openai.summary
+badge:
+  uid: |
+    learn.wwl.generate-code-azure-openai.badge

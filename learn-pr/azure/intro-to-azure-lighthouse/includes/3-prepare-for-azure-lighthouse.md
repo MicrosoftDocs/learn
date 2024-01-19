@@ -40,14 +40,14 @@ When applying these roles to your service offer, you don't use the Identity and 
 
 If you're thinking about users and roles, especially for  Azure delegated resource management, there are guidelines you should try to adhere to:
 
-- Avoid assigning an individual Contoso user to a role. It's better to appoint an Azure AD user group or a service principal. It mitigates the need to update the offer each time your Contoso staff change.
+- Avoid assigning an individual Contoso user to a role. It's better to appoint a Microsoft Entra user group or a service principal. It mitigates the need to update the offer each time your Contoso staff change.
 - Ensure that at least one Contoso user is granted the **Managed Services Registration Assignment Delete** role. It allows you to remove the delegated access at the completion of your service contract, otherwise the customer has to remove it from their Azure tenant.
 - You can't use custom role definitions or the Owner role. For a list of the current built-in roles and their IDs, visit [Azure built-in roles](/azure/role-based-access-control/built-in-roles).
 - You also need to avoid using any built-in roles that have **DataAction** permissions.
 
 ## Permission structures
 
-Contoso already uses Azure AD user groups and roles to control access to its own Azure resources. To simplify the authorizations you'll assign to your managed service offers, you've decided to create a dedicated suite of Azure AD user groups and associated roles in your tenant.
+Contoso already uses Microsoft Entra user groups and roles to control access to its own Azure resources. To simplify the authorizations you'll assign to your managed service offers, you've decided to create a dedicated suite of Microsoft Entra user groups and associated roles in your tenant.
 
 | **Group name**                     | **Type**   | **Role definition**                             |
 | ---------------------------------- | ---------- | ----------------------------------------------- |
@@ -56,13 +56,13 @@ Contoso already uses Azure AD user groups and roles to control access to its own
 | Customer_Subscription_Management   | User group | Contributor                                     |
 
 > [!NOTE]
-> When you create each of these user groups in your Contoso Azure Active Directory, make a note of their Object ID. You'll need that for the onboarding process.
+> When you create each of these user groups in your Contoso Microsoft Entra ID, make a note of their Object ID. You'll need that for the onboarding process.
 
 With your permission structure defined, you need to assign users to these groups. Remember, Contoso staff in these groups will have access to all customers where this group has been used in an authorization. If you have a customer with a specific security requirement where you need to limit access to only certain Contoso staff (for example, people who have done certain accredited training), consider creating groups just for this customer and using only those groups in their authorization.
 
 ## Security considerations
 
-Security is a constant consideration for any Azure Active Directory environment. When you introduce Azure delegated resource management into your tenant, you should also consider the security of your customers. Considerations should include:
+Security is a constant consideration for any Microsoft Entra environment. When you introduce Azure delegated resource management into your tenant, you should also consider the security of your customers. Considerations should include:
 
-- Implementing Azure AD Multi-Factor Authentication for all users in your Contoso tenant, including any users with responsibility for managing customers with Azure Lighthouse. This authentication method reduces the likelihood of attackers gaining access to your customers' resources via your Contoso Azure AD tenant.
+- Implementing Microsoft Entra multifactor authentication for all users in your Contoso tenant, including any users with responsibility for managing customers with Azure Lighthouse. This authentication method reduces the likelihood of attackers gaining access to your customers' resources via your Contoso Microsoft Entra tenant.
 - Apply the **principle of least privilege** when giving permissions to your users - Contoso users should have enough permissions to do their job and no more.

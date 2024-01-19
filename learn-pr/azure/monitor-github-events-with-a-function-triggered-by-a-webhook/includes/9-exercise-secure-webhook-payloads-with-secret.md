@@ -1,8 +1,8 @@
-In this exercise, you'll protect your webhook payload with a secret, and learn how to validate payloads from GitHub inside an Azure Function.
+In this exercise, you'll protect your webhook payload with a secret, and learn how to validate that payloads are actually from GitHub by using your Azure Function.
 
 ## Get a key for your Azure Function
 
-1. In the Azure portal, return to your Function App that you created from the first exercise in the module.
+1. In the Azure portal, return to the Function App that you created in the first exercise in the module.
 
 1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your *Function App*.
 
@@ -20,7 +20,7 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 
 1. In the left menu pane, under **Developer**, select **Function Keys**. The **Function Keys** pane appears for your *Function*.
 
-1. Under the **Value** column, select the **Hidden value. Click to show value** link.
+1. Under the **Value** column, select the **Show value** link.
 
 1. Select the **Copy to clipboard** icon, and save this key for use in the next step.
 
@@ -138,7 +138,7 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 
 1. Select **Redeliver**. In the **Redeliver payload?** dialog box that appears, select **Yes, redeliver this payload**.
 
-    This action simulates you changing your Wiki page again.
+    This action simulates you editing your Wiki page again.
 
 1. Select the latest (top) delivery entry by selecting the ellipsis (**...**) button.
 

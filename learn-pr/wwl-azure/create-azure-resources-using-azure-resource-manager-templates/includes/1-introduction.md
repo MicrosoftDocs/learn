@@ -1,3 +1,4 @@
+
 This module explores Azure Resource Manager templates and their components and details dependencies and modularized templates with secrets.
 
 ## Learning objectives

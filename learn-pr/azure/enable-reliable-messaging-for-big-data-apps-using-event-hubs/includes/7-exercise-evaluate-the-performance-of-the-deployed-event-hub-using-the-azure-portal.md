@@ -1,4 +1,4 @@
-In this unit, you'll use the Azure portal to verify your Event Hubs instance is working according to expectations. You'll also test how Event Hubs messaging works when it's temporarily unavailable, and use Event Hubs metrics to check the performance of your Event Hubs instance.
+In this unit, you use the Azure portal to verify your Event Hubs instance is working according to expectations. You also test how Event Hubs messaging works when it's temporarily unavailable, and use Event Hubs metrics to check the performance of your Event Hubs instance.
 
 ## View Event Hubs activity
 
@@ -10,7 +10,7 @@ In this unit, you'll use the Azure portal to verify your Event Hubs instance is 
 
     ![Screenshot of the Azure portal displaying the Event Hubs namespace with message counts.](../media/6-view-messages.png)
 
-1. The SimpleSend and EventProcessorSample applications are configured to send/receive 100 messages. You'll notice that Event Hubs has processed 100 messages from the SimpleSend application and has transmitted 100 messages to the EventProcessorSample application.
+1. The SimpleSend and EventProcessorSample applications are configured to send/receive 100 messages. Notice that Event Hubs processed 100 messages from the SimpleSend application and transmitted 100 messages to the EventProcessorSample application.
 
 ## Test Event Hubs resilience
 
@@ -26,9 +26,9 @@ Perform the following steps to find out what happens when an application sends m
 
 1. When you get the **Send Complete** message, press <kbd>Enter</kbd>.
 
-1. Return to the Azure portal. On the **Overview** page of your **Event Hubs Namespace** pane, select your Event Hubs instance from the list at the bottom. This will show details specific to the Event Hubs instance. You can also get to this pane with the **Event Hubs** entry from the namespace page. The **Event Hubs Instance** pane appears.
+1. Return to the Azure portal. On the **Overview** page of your **Event Hubs Namespace** pane, select your Event Hubs instance from the list at the bottom. This shows details specific to the Event Hubs instance. You can also get to this pane with the **Event Hubs** entry from the namespace page. The **Event Hubs Instance** pane appears.
 
-1. In the left menu pane, under **Settings**, select **Properties**. The **Properties** pane appears for your Event Hubs instance.
+1. In the left menu pane, under **Settings**, select **Configuration**. The **Configuration** pane appears for your Event Hubs instance.
 
 1. Under **EVENT HUB STATUS**, select **Disabled**, and in the top menu bar, select **Save changes**.
 
@@ -61,7 +61,7 @@ Perform the following steps to find out what happens when an application sends m
 
 1. At the top right of the chart, select **Last 24 hours (Automatic)**, and in the dialog box that appears, change the time period to **Last 30 minutes** to expand the data graph. Select **Apply**.
 
-You'll notice that though the messages were sent before the Event Hubs instance was taken offline for a period, all 100 messages were successfully transmitted.
+Notice that even though the messages were sent before the Event Hubs instance was taken offline for a period, all 100 messages were successfully transmitted.
 
 ## Summary
 

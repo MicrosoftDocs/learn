@@ -7,7 +7,6 @@ metadata:
   author: chrispyles
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Advanced PyBryt for Classroom Auto-assessment
 summary: Learn advanced patterns in PyBryt, an open-source auto-assessment tool for creating assignments with targeted feedback and generalizable grading.
 abstract: |

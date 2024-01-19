@@ -5,10 +5,11 @@ metadata:
   title: Introduction to Azure Cache for Redis
   description: Evaluate how Azure Cache for Redis can improve the performance and scalability of your apps. Describe how Redis provides a critical low-latency and high-throughput data storage solution to modern apps.
   ms.date: 04/09/2021  
-  author: tchristiani
-  ms.author: terrychr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: flang-msft
+  ms.author: franlanglois
+  ms.topic: module-intro-to-product
+  ms.service: cache
+  manager: mcleans
 title: Introduction to Azure Cache for Redis
 summary: Microsoft Azure Cache for Redis brings a critical low-latency and high-throughput data storage solution to modern applications. This can help improve the performance and scalability of your apps that rely heavily on backend data stores.
 abstract: |

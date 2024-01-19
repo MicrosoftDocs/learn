@@ -1,6 +1,6 @@
 So far, your Bicep template has deployed a single Azure SQL logical server, with auditing settings included for your production environment. You now need to deploy multiple logical servers, one for each region where your company is launching its new smart teddy bear. 
 
-In this exercise you'll extend the Bicep code that you created previously so that you can deploy instances of your databases to multiple Azure regions.
+In this exercise, you'll extend the Bicep code that you created previously so that you can deploy instances of your databases to multiple Azure regions.
 
 During the process, you'll:
 
@@ -69,13 +69,13 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 ::: zone-end
 
 > [!CAUTION]
-> Be sure to use the same login and password that you used previously, or else the deployment won't finish successfully.
+> Be sure to use the same login and password that you used previously, or the deployment won't finish successfully.
 
 Wait for the deployment to finish.
 
 ## Verify the deployment
 
-After the deployment is finished, you want to verify that new logical server and database are deployed and that they're located in the correct Azure regions.
+After the deployment is finished, you want to verify that the new logical server and database are deployed and that they're located in the correct Azure regions.
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), and make sure that you're in the sandbox subscription.
 
@@ -124,7 +124,7 @@ The teddy bear toy team is about to launch again, this time into Asia. The team 
 ::: zone-end
 
 > [!CAUTION]
-> Be sure to use the same login and password that you used previously, or else the deployment won't finish successfully.
+> Be sure to use the same login and password that you used previously, or the deployment won't finish successfully.
 
 Wait for the deployment to finish.
 

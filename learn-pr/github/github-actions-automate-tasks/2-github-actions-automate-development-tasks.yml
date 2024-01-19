@@ -7,8 +7,7 @@ metadata:
   ms.date: 05/19/2020
   author: juliakm
   ms.author: jukullam
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-github-actions-automate-development-tasks.md)]

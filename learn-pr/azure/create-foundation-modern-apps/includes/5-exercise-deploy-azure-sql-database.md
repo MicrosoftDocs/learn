@@ -1,12 +1,12 @@
 Azure SQL Database is a great choice for operational, transactional, and hybrid analytical workloads.
 
-In the bus catching scenario, Azure SQL Database was selected due to it being an enterprise database with modern capabilities, like JSON and geospatial support.
+In the bus-catching scenario, we selected Azure SQL Database due to it being an enterprise database with modern capabilities, like JSON and geospatial support.
 
 Here, you'll deploy Azure SQL Database using scripts, connect to it in Azure Data Studio, and set up the database for the scenario using T-SQL. You'll then explore the JSON and geospatial support as relates to catching the bus.
 
 ## Deploy Azure SQL Database using PowerShell
 
-In order to set up the database for the bus catching scenario, you'll first need to deploy a database to work with. To do this piece, you'll use Azure Cloud Shell, which is on the right side of this page. Cloud Shell is also available through the Azure portal, and it allows you to create and manage Azure resources. It comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll use Azure PowerShell, but you can accomplish the same tasks with the Azure CLI. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
+In order to set up the database for the bus-catching scenario, you first need to deploy a database to work with. To do this, you'll use Azure Cloud Shell on the right side of this page. Cloud Shell is also available through the Azure portal, and it allows you to create and manage Azure resources. It comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll use Azure PowerShell, but you can accomplish the same tasks with the Azure CLI. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
 
 These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, and region, because they won't be shown again.
 
@@ -17,7 +17,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     ```
 
     > [!TIP]
-    > If you are not on a Windows device, you need to locate your IP address with another method. In your terminal, you can run `curl ifconfig.co`.
+    > If you're not on a Windows device, you need to locate your IP address with another method. In your terminal, you can run `curl ifconfig.co`.
 
 1. Run the following commands in Cloud Shell. Enter a **complex password** and, at the prompt, enter your local public IP address, which you obtained in the preceding step.
 
@@ -91,9 +91,10 @@ These scripts should take three to five minutes to complete. Be sure to note you
     Write-Host "Database deployed."
     ```
 
-    The script will take several minutes to complete. There are four main commands above, let's break them down. The first command creates an Azure SQL Database logical server, which serves as the instance to connect to and as a way for grouping metadata and policy settings for all databases assigned to that server. The next two commands create two firewall rules: one to allow your IP address to connect and one to allow other Azure services to connect. This setting will be especially useful when you set up CI/CD pipelines using Azure DevOps and/or GitHub Actions.
+    The script will take several minutes to complete. There are four main commands in the preceding block; let's break them down. The first command creates an Azure SQL Database logical server, which serves as the instance to connect to and as a way for grouping metadata and policy settings for all databases assigned to that server. The next two commands create two firewall rules: one to allow your IP address to connect and one to allow other Azure services to connect. This setting will be especially useful when you set up CI/CD pipelines using Azure DevOps and/or GitHub Actions.
 
-    The final command deploys a database into that logical server. From the commands, you can tell the database is a General Purpose, Serverless database with a range of virtual cores between 0.5 and 4. Serverless is meant for intermittent, unpredictable usage with lower average compute utilization over time. Serverless provides automatic compute scaling to simplify performance management and is billed only for the amount of compute used. Serverless also supports automatic pausing and resuming to help further price optimize. When your database is paused, you pay only for storage. Serverless is a great solution for the bus catching scenario as it's in development phase (not utilized 24/7) and it's unknown how popular it will be when you launch (how much compute it will need).
+    The final command deploys a database into that logical server. From the commands, you can tell the database is a General Purpose, Serverless database with a range of virtual cores between 0.5 and 4. Serverless is meant for intermittent, unpredictable usage with lower average compute utilization over time. Serverless provides automatic compute scaling to simplify performance management and is billed only for the amount of compute used. Serverless also supports automatic pausing and resuming to help further price optimize. When your database is paused, you pay only for storage. Serverless is a great solution for the bus catching scenario as it's in development phase (not used
+ 24/7) and it's unknown how popular it will be when you launch (how much compute it will need).
 
     If you have any issues or want to confirm the resources were deployed, you can review in the Azure portal.
 
@@ -121,6 +122,8 @@ Once your database is deployed, there are many ways that you can connect and int
     *Server group*: **Default**  
     *Name (optional)*: **leave-blank**  
 
+1. Select **Connect**.
+
 1. Once a successful connection is made, you should be able to navigate the database's contents in the Connections pane.
 
 ## Set up the database's schema with T-SQL
@@ -131,7 +134,7 @@ Once you're connected to any database, you'll usually need to deploy the databas
 
 1. Under the folder `database\notebooks`, open **`01-set-up-database.ipynb`**.
 
-1. Follow the steps in the SQL notebook to complete the exercise, and then return here.
+1. Follow the steps in the SQL notebook to complete the exercise, then return here.
 
 ## Process bus data with Azure SQL Database
 
@@ -141,4 +144,4 @@ Now that your database is configured, it's time to dive deeper into how Azure SQ
 
 1. Under the folder `database\notebooks`, open **`02-json-geospatial-sql-db.ipynb`**.
 
-1. Follow the steps in the SQL notebook to complete the exercise, and then return here.
+1. Follow the steps in the SQL notebook to complete the exercise, then return here.

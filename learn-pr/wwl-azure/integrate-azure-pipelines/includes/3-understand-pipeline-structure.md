@@ -1,3 +1,4 @@
+
 A pipeline is one or more stages that describe a CI/CD process.
 
 Stages are the primary divisions in a pipeline. The stages "Build this app," "Run these tests," and "Deploy to preproduction" are good examples.
@@ -83,6 +84,7 @@ stages:
 
     - script: echo Building!
 - stage: Test
+  dependsOn: Build
   jobs:
 
   - job: TestOnWindows
@@ -94,6 +96,7 @@ stages:
 
     - script: echo Testing on Linux!
 - stage: Deploy
+  dependsOn: Test
   jobs:
 
   - job: Deploy

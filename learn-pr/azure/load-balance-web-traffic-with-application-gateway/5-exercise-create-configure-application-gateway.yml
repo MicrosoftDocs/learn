@@ -6,8 +6,9 @@ metadata:
   ms.date: 05/02/2019
   author: vhorne
   ms.author: victorh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 title: Exercise - Create and configure an Application Gateway
 durationInMinutes: 45
 content: |

@@ -7,8 +7,8 @@ metadata:
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.devlang: typescript
 title: 'Declare and instantiate classes in TypeScript'
 summary: Classes in TypeScript extend the ES6 functionality by adding TypeScript-specific features like type annotations for class members, access modifiers, and the ability to specify required or optional parameters. Another benefit of using TypeScript is that you can use it to develop with classes and then compile them down to JavaScript that works across all major browsers and platforms, as needed.
 abstract:  | 

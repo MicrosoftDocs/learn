@@ -1,52 +1,48 @@
-While your Azure Cache for Redis installation is being created, let's have a look at what Redis is and what its recommended use cases are.
+While your Azure Cache for Redis instance deploys, read the following sections to learn more about the following technologies:
 
-## What is Redis?
+- Redis and Azure Cache for Redis.
+- Redis with Java and Spring Boot applications.
+- Spring Data Redis distributed cache.
 
-[Redis](https://redis.io/) is an open-source (BSD licensed) data store. It's a distributed, in-memory key-value database that you can use as cache and as a message broker. It has optional durability.
+## Redis and Azure Cache for Redis
 
-Redis is often ranked as the most popular key-value database. Its ease of use, performance, and scalability make it an excellent choice for many application developers.
+[Redis](https://redis.io/) is a BSD-licensed, open-source distributed in-memory data store with optional durability that acts as a cache and message broker. Redis is one of the most popular key-value databases, with ease of use, performance, and scalability that make it an excellent choice for application developers.
 
-## What is Azure Cache for Redis?
+[Azure Cache for Redis](https://azure.microsoft.com/services/cache) is a managed version of Redis that Azure maintains and operates in the cloud. Azure Cache for Redis offers all the benefits of Redis, including high throughput and performance to handle millions of requests per second. Azure also provides the advantages of a managed cloud service, like automatic patches, updates, scaling, and provisioning.
 
-[Azure Cache for Redis](https://azure.microsoft.com/services/cache/?WT.mc_id=java-11981-judubois) is a managed version of Redis that's maintained and operated by Azure.
+Azure Cache for Redis offers several service tiers. The advanced tiers provide clustering, geo-replication, and high availability for the most critical workloads.
 
-Azure Cache for Redis provides all the benefits or Redis: excellent throughput and performance to handle millions of requests per second. Because Azure manages it, you benefit from all the advantages of a cloud service, like automatic patches, updates, scaling, and provisioning.
+## Azure Cache for Redis use cases
 
-Several tiers are available. The most advanced ones can provide clustering, replication, and high availability. You can rely on those advanced tiers for critical workloads.
+Redis and Azure Cache for Redis provide the following main use cases:
 
-## Recommended use cases
+- A *distributed cache* speeds up applications that rely on SQL databases. Redis can lower the cost of an application, because scaling a Redis cluster is cheaper than scaling a database.
+- An *HTTP session data store* stores session data, which allows scaling of session-based applications. Applications that use JavaServer Faces (JSF) or that store security data in the user session typically use this mechanism.
+- A *message broker* solution implements publish/subscribe or queue architectures.
 
-Azure Cache for Redis has the following main use cases:
+## Use Redis with Java
 
-- As a *distributed cache*, it speeds up applications that rely on a SQL database. It can also lower the cost of an application, because scaling a Redis cluster is cheaper than scaling a database.
-- As an *HTTP session data store*, it enables the scaling of session-based applications. This mechanism is typically useful for applications that use JSF (JavaServer Faces), or applications that store security data in the user's session.
-- As a *message broker*, Azure Cache for Redis is a solution for implementing publish/subscribe or queue architectures.
+Redis doesn't provide an official library for Java developers, but there are several open-source libraries. One of your main decisions as a Java developer is to select the library that best fits your needs. The most popular are the following libraries.
 
-## Using Redis in Java and with Spring Boot
+- [Jedis](https://github.com/redis/jedis) is the most used library, and is simple and easy to use.
+- [Lettuce](https://github.com/lettuce-io/lettuce-core) is the library this module uses, because it comes bundled with Spring Data for Redis. Lettuce has great asynchronous support, which is important if you want to create a reactive Spring application.
+- [Redisson](https://github.com/redisson/redisson) is the most advanced Redis client. You can use Redisson as a Hibernate second-level cache if you need that feature.
 
-For Java developers, Redis doesn't provide an official library. In fact, developers from various organizations have made several open-source libraries. Choice is good, and one of your main decisions is to select the one that fits your needs best.
+## Use Spring Data Redis to create a distributed cache
 
-Here are the three most popular ones:
+To create a distributed cache by using Redis with Spring Boot, typically with [Spring Initializr](https://start.spring.io/), you do three main tasks:
 
-- [Jedis](https://github.com/redis/jedis) is the most used library, and it's simple and easy to use.
-- [Lettuce](https://github.com/lettuce-io/lettuce-core) is the library we'll use in this module, because it comes bundled with Spring Data for Redis. It has great asynchronous support, which is important if you want to create a reactive Spring application.
-- [Redisson](https://github.com/redisson/redisson) is the most advanced Redis client. You can also use it as a Hibernate second-level cache if you need that feature.
+1. Add the Spring Data Redis library to your application.
+1. Configure your *application.yml* file to connect to your Azure Cache for Redis instance.
+1. Code business logic by using Spring Data Redis to store and retrieve data from the cache.
 
-## Creating and configuring a distributed cache by using Spring Data Redis
+The current module uses the Lettuce library, but you don't need to use the library directly unless you need advanced configuration. Spring Data handles the data access code by using a mechanism that most Spring developers should be familiar with. You can also use Spring Data to access SQL databases by using the Java Persistence API (JPA), and to access NoSQL databases like MongoDB.
 
-Let's focus on the first recommended use case that we listed earlier: creating a distributed cache by using Redis.
+Spring Data requires you to create the following classes:
 
-Using Spring Boot, typically with [Spring Initializr](https://start.spring.io/), you'll have three main tasks to achieve:
+- A Java bean to hold your data. You annotate the class with the `@RedisHash` Java annotation to store and retrieve Redis data through a specific key.
+- A Spring repository. This repository is a specific Java class that can do database create, retrieve, update, delete (CRUD) operations on the Java bean that stores the data. For example, this class can store one instance of the bean or retrieve a list of beans.
 
-- Add the Spring Data Redis library to your application.
-- Configure your `application.yml` file to connect to your Azure Cache for Redis instance.
-- Code some business logic by using Spring Data Redis to store and retrieve data from the cache.
+  You can inject this Spring repository into any standard Spring bean. For instance, you can inject the repository into a Spring MVC REST controller, which stores and accesses the repository data.
 
-This setup will use the [Lettuce](https://github.com/lettuce-io/lettuce-core) library underneath. But you won't need to use that library directly unless you require some advanced configuration. Spring Data handles all the data access code, by using a mechanism that most Spring developers should be familiar with. Spring Data is also used for accessing SQL databases (by using JPA) and NoSQL databases (like MongoDB).
-
-Spring Data requires you to create two classes:
-
-- A Java bean that will hold your data. You should annotate it with the `@RedisHash` Java annotation. This annotation is used to store and retrieve data in Redis through a specific key.
-- A Spring repository. This repository is a specific Java class that can do database operations (create, retrieve, update, delete) on the Java bean that stores the data. For example, it can store one instance of the bean or retrieve a list of beans.
-
-Then, you can inject this Spring repository into any standard Spring bean. For instance, you can inject it inside a Spring MVC REST controller, which will be used to store and access that data. It's what we're going to achieve in the next unit's exercise.
+Proceed to the next unit to create a Spring Boot application with a distributed cache that uses Spring Data Redis. You can create the application while you wait for your Azure Cache for Redis cache to finish deploying.

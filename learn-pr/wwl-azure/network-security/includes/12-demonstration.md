@@ -1,122 +1,252 @@
 Use this short Try-This exercises to get some hands-on experience with using Azure. An individual Azure subscription is required to perform the exercise tasks. To subscribe, browse to https://www.azure.microsoft.com/free.
 
-## Task 1 - Network security groups
+In this demonstration, we'll configure a network security group to filter inbound and outbound network traffic to and from Azure resources in an Azure virtual network. Network security groups contain security rules that filter network traffic by IP address, port, and protocol. When a network security group is associated with a subnet, security rules are applied to resources deployed in that subnet.
 
-This task requires a Windows virtual machine associated with a network security group. The NSG should have an inbound security rule that allows RDP. The virtual machine should be in a running state and have a public IP address.
+## Task 1 - Create a virtual network
 
-In this task, we will review networking rules, confirm the public IP page does not display, configure an inbound NSG rule, and confirm the public IP page now displays.
+1. From the Azure portal menu, select + Create a resource &gt; Networking &gt; Virtual network, or search for *Virtual Network* in the portal search box.
 
-**Review networking rules**
+2. Select Create.
 
-1. In the **Portal**, navigate to your virtual machine.
-1. Under **Settings**, click **Networking**.
-1. Discuss the default inbound and outbound rules.
-1. Review the inbound rules and ensure RDP is allowed.
-1. Make a note of the public IP address.
+3. On the Basics tab of Create virtual network, enter or select this information:
 
-**Connect to the virtual machine and test the public IP address**
+| Setting          | Value                                                  |
+| ---------------- | ------------------------------------------------------ |
+| Project details  |                                                        |
+| Subscription     | Select your subscription.                              |
+| Resource group   | Select Create new. Enter *myResourceGroup*. Select OK. |
+| Instance details |                                                        |
+| Name             | Enter *myVNet*.                                        |
+| Region           | Select East US.                                        |
 
-1. From the **Overview** blade, click **Connect** and RDP into the virtual machine.
-1. On the **virtual machine**, open a **browser**.
-1. Test the default localhost IIS HTML page: `http://localhost/default.htm`. This page should appear.
-1. Test the default public IP IIS HTML page: `http://public_IP_address/default.htm`. This page should not display.
+4. Select the Review + create tab, or select the blue Review + create button at the bottom of the page.
 
-**Configure an inbound rule to allow public access on port 80**
+5. Select Create.
 
-1. Return to the **Portal** and the **Networking** blade.
-1. Make a note of the virtual machine's **private IP** address.
-1. On the **Inbound port rules** tab, click **Add inbound port rule**. This rule will only allow certain IP addresses on port 80. As you go through the configuration settings, be sure to discuss each one.
-     -  Source: **Service Tag**
-     -  Source service tag: **Internet**
-     -  Destination: **IP addresses**
-     -  Destination IP addresses/CIDR range: **private\_IP\_address/32**
-     -  Destination port range: **80**
-     -  Protocol: **TCP**
-     -  Action: **Allow**
-     -  Name: **Allow\_Port\_80**
-     -  Click **Add**
-1. Wait for your new inbound rule to be added.
+## Task 2 - Create an application security group
 
-**Retest the public IP address**
+> [!NOTE]
+> An application security group (ASG) enables you to group together servers with similar functions, such as web servers.
 
-1. On the **virtual machine,,** return to the **browser**.
-1. Refresh the default public IP IIS HTML page: `http://public_IP_address/default.htm`. This page should now display.
+1. From the Azure portal menu, select + Create a resource &gt; Networking &gt; Application security group, or search for Application security group in the portal search box.
 
-## Task 2 - Application service groups
+2. Select Create.
 
-This task requires a Windows virtual machine with IIS installed. These steps use VM1. Your machine name may be different.
+3. On the Basics tab of Create an application security group, enter or select this information:
 
-In this task, we will connect to a virtual machine, create an inbound deny rule, configure an application security group, and test connectivity.
+| Setting          | Value                     |
+| ---------------- | ------------------------- |
+| Project details  |                           |
+| Subscription     | Select your subscription. |
+| Resource group   | Select myResourceGroup.   |
+| Instance details |                           |
+| Name             | Enter *myAsgWebServers*.  |
+| Region           | Select (US) East US.      |
 
-**Connect to the virtual machine**
+4. Select the Review + create tab, or select the blue Review + create button at the bottom of the page.
 
-1. In the **Portal**, navigate to **VM1**.
-1. On the **Networking** blade, make a note of the private IP address.
-1. Ensure there is an **Inbound port rule** that allows **RDP**.
-1. From the **Overview** blade, ensure VM1 is **running**.
-1. Click **Connect** and RDP into the VM1.
-1. On **VM1**, open a browser.
-1. Ensure the default IIS page display for the private IP address: `http://private_IP_address/default.htm`.
+5. Select Create.
 
-**Add an inbound deny rule and test the rule**
+> [!NOTE]
+> Repeat the previous steps, specifying the following values:
 
-1. Continue in the **Portal** from the **Networking** blade.
-1. On the **Inbound port rules** tab, click **Add inbound port rule**. Add a rule that denies all inbound traffic.
-     -  Destination port ranges: \*
-     -  Action: **Deny**
-     -  Name: **Deny\_All**
-     -  Click **Add**
-1. Wait for your new inbound rule to be added.
-1. On **VM1**, refresh the browser page: **`http://private_IP_address/default.htm`**.
-1. Verify that the page does not display.
+| Setting          | Value                     |
+| ---------------- | ------------------------- |
+| Project details  |                           |
+| Subscription     | Select your subscription. |
+| Resource group   | Select myResourceGroup.   |
+| Instance details |                           |
+| Name             | Enter *myAsgMgmtServers*. |
+| Region           | Select (US) East US.      |
 
-**Configure an application security group**
+6. Select the Review + create tab, or select the blue Review + create button at the bottom of the page.
 
-1. In the **Portal**, search for and select **Application security groups**.
-1. Create a new Application security group.
-1. Provide the required information: subscription, resource group, name, and region.
-1. Wait for the ASG to deploy.
-1. In the **Portal**, return to **VM1**.
-1. On the **Networking** blade, select the **Application security groups** tab.
-1. Click **Configure the application security groups**.
-1. Select your new application security group, and **Save** your changes.
-1. From the **Inbound port rules** tab, click **Add inbound rule**. This will allow the ASG.
-     -  Source: **Application security group**
-     -  Source application security group: **your\_ASG**
-     -  Destination: **IP addresses**
-     -  Destination IP addresses: **private\_IP\_address/32**
-     -  Destination port range: **80**
-     -  Priority: **250**
-     -  Name: **Allow\_ASG**
-     -  Click **Add**
-1. Wait for your new inbound rule to be added.
+7. Select Create.
 
-**Test the application security group**
+## Task 3 - Create a network security group
 
-1. On **VM1**, refresh the browser page: `http://private_IP_address/default.htm`.
-1. Verify that the page now displays.
+1. From the Azure portal menu, select + Create a resource &gt; Networking &gt; Network security group, or search for *Network security group* in the portal search box.
 
-## Task 3 - Storage endpoints (you could do this in the storage lesson)
+2. Select Create.
 
-This task requires a storage account and virtual network with a subnet. Storage Explorer is also required.
+3. On the Basics tab of Create network security group, enter or select this information:
 
-In this task, we will secure a storage endpoint.
+| Setting          | Value                     |
+| ---------------- | ------------------------- |
+| Project details  |                           |
+| Subscription     | Select your subscription. |
+| Resource group   | Select myResourceGroup.   |
+| Instance details |                           |
+| Name             | Enter *myNSG*.            |
+| Location         | Select (US) East US.      |
 
-1. In the **Portal**.
-1. Locate your storage account.
-1. Create a **file share**, and **upload** a file.
-1. Use the **Shared Access Signature** blade to **Generate SAS and connection string**.
-1. Use Storage Explorer and the connection string to access the file share.
-1. Ensure you can view your uploaded file.
-1. Locate your virtual network, and then select a subnet in the virtual network.
-1. Under **Service Endpoints**, view the **Services** drop-down and the different services that can be secured with an endpoint.
-1. Check the **Microsoft.Storage** option.
-1. **Save** your changes.
-1. Return to your storage account.
-1. Select **Firewalls and virtual networks**.
-1. Change to **Selected networks**.
-1. Add your virtual network and verify your subnet with the new service endpoint is listed.
-1. **Save** your changes.
-1. Return to the Storage Explorer.
-1. **Refresh** the storage account.
-1. Verify you can no longer access the file share.
+4. Select the Review + create tab, or select the blue Review + create button at the bottom of the page.
+
+5. Select Create.
+
+## Task 4 - Associate network security group to subnet
+
+1. Search for *myNsg* in the portal search box.
+
+2. Select Subnets from the Settings section of myNSG.
+
+3. In the Subnets page, select + Associate:
+
+4. Under Associate subnet, select myVNet for Virtual network.
+
+5. Select default for Subnet, and then select OK.
+
+## Task 5 - Create security rules
+
+1. Select Inbound security rules from the Settings section of myNSG.
+
+2. In Inbound security rules page, select + Add:
+
+3. Create a security rule that allows ports 80 and 443 to the myAsgWebServers application security group. In Add inbound security rule page, enter or select this information:
+
+| Setting                                 | Value                              |
+| --------------------------------------- | ---------------------------------- |
+| Source                                  | Leave the default of Any.          |
+| Source port ranges                      | Leave the default of (\*).         |
+| Destination                             | Select Application security group. |
+| Destination application security groups | Select myAsgWebServers.            |
+| Service                                 | Leave the default of Custom.       |
+| Destination port ranges                 | Enter *80,443*.                    |
+| Protocol                                | Select TCP.                        |
+| Action                                  | Leave the default of Allow.        |
+| Priority                                | Leave the default of 100.          |
+| Name                                    | Enter *Allow-Web-All*.             |
+
+4. Select Add.
+
+5. Complete steps 3-4 again using this information:
+
+| Setting                                | Value                              |
+| -------------------------------------- | ---------------------------------- |
+| Source                                 | Leave the default of Any.          |
+| Source port ranges                     | Leave the default of (\*).         |
+| Destination                            | Select Application security group. |
+| Destination application security group | Select myAsgMgmtServers.           |
+| Service                                | Leave the default of Custom.       |
+| Destination port ranges                | Enter *3389*.                      |
+| Protocol                               | Select Any.                        |
+| Action                                 | Leave the default of Allow.        |
+| Priority                               | Leave the default of 110.          |
+| Name                                   | Enter *Allow-RDP-All*.             |
+
+6. Select Add.
+
+> [!CAUTION]
+> Remote Desktop Protocol (port 3389) is exposed to the internet for the VM that is assigned to the myAsgMgmtServers application security group. For production environments, instead of exposing port 3389 to the internet, it's recommended that you connect to Azure resources that you want to manage using a VPN, private network connection, or Azure Bastion.
+
+## Task 6 - Create virtual machines
+
+1. From the Azure portal menu, select + Create a resource &gt; Compute &gt; Virtual machine, or search for Virtual machine in the portal search box.
+
+2. In Create a virtual machine, enter or select this information in the Basics tab:
+
+| Setting               | Value                                                       |
+| --------------------- | ----------------------------------------------------------- |
+| Project details       |                                                             |
+| Subscription          | Select your subscription.                                   |
+| Resource group        | Select myResourceGroup.                                     |
+| Instance details      |                                                             |
+| Virtual machine name  | Enter *myVMWeb*.                                            |
+| Region                | Select (US) East US.                                        |
+| Availability options  | Leave the default of No infrastructure redundancy required. |
+| Security type         | Leave the default of Standard.                              |
+| Image                 | Select Windows Server 2019 Datacenter - Gen2.               |
+| Azure Spot instance   | Leave the default of unchecked.                             |
+| Size                  | Select Standard\_D2s\_V3.                                   |
+| Administrator account |                                                             |
+| Username              | Enter a username.                                           |
+| Password              | Enter a password.                                           |
+| Confirm password      | Reenter password.                                           |
+| Inbound port rules    |                                                             |
+| Select inbound ports  | Select None.                                                |
+
+3. Select the Networking tab.
+
+4. In the Networking tab, enter or select the following information:
+
+| Setting                    | Value                                 |
+| -------------------------- | ------------------------------------- |
+| Network interface          |                                       |
+| Virtual network            | Select myVNet.                        |
+| Subnet                     | Select default (10.0.0.0/24).         |
+| Public IP                  | Leave the default of a new public IP. |
+| NIC network security group | Select None.                          |
+
+5. Select the Review + create tab, or select the blue Review + create button at the bottom of the page.
+
+6. Select Create. The VM may take a few minutes to deploy.
+
+Create the second virtual machine
+
+> [!NOTE]
+> Complete steps 1-6 again, but in step 2, enter *myVMMgmt* for Virtual machine name. Wait for the VMs to complete deployment before advancing to the next section.
+
+Associate network interfaces to an Application Security Group
+
+> [!NOTE]
+> When you created the VMs, Azure created a network interface for each VM, and attached it to the VM.
+
+Add the network interface of each VM to one of the application security groups you created previously:
+
+1. Search for myVMWeb in the portal search box.
+
+2. Select Networking from the Settings section of myVMWeb VM.
+
+3. Select the Application security groups tab, then select Configure the application security groups.
+
+4. In Configure the application security groups, select myAsgWebServers. Select Save.
+
+> [!NOTE]
+> Complete steps 1 and 2 again, searching for the myVMMgmt virtual machine and selecting the myAsgMgmtServers ASG.
+
+## Task 7 - Test traffic filters
+
+1. Search for myVMMgmt in the portal search box.
+
+2. On the Overview page, select the Connect button and then select RDP.
+
+3. Select Download RDP file.
+
+4. Open the downloaded rdp file and select Connect. Enter the username and password you specified when creating the VM.
+
+5. Select OK.
+
+6. You may receive a certificate warning during the connection process. If you receive the warning, select Yes or Continue, to continue with the connection.
+
+7. The connection succeeds, because inbound traffic from the internet to the myAsgMgmtServers application security group is allowed through port 3389.
+
+> [!NOTE]
+> The network interface for myVMMgmt is associated with the myAsgMgmtServers application security group and allows the connection.
+
+8. Open a PowerShell session on myVMMgmt. Connect to myVMWeb using the following:
+
+```powershell
+mstsc /v:myVmWeb
+```
+
+> [!IMPORTANT]
+> The RDP connection from myVMMgmt to myVMWeb succeeds because virtual machines in the same network can communicate with each other over any port by default. You can't create an RDP connection to the myVMWeb virtual machine from the internet. The security rule for the myAsgWebServers prevents connections to port 3389 inbound from the internet. Inbound traffic from the Internet is denied to all resources by default.
+
+9. To install Microsoft Internet Information Services (IIS) on the myVMWeb virtual machine, enter the following command from a PowerShell session on the myVMWeb virtual mfferent:
+
+```powershell
+Install-WindowsFeature -name Web-Server -IncludeManagementTools
+```
+
+10. After the Internet Information Services (IIS) installation is complete, disconnect from the myVMWeb virtual machine, which leaves you in the myVMMgmt virtual machine remote desktop connection.
+
+11. Disconnect from the myVMMgmt VM.
+
+12. Search for *myVMWeb* in the portal search box.
+
+13. On the Overview page of myVMWeb, note the Public IP address for your VM.
+
+14. To confirm that you can access the myVMWeb web server from the internet, open an internet browser on your computer and browse to http://&lt;public-ip-address-from-previous-step&gt;.
+
+> [!NOTE]
+> You see the Internet Information Services (IIS) default page, because inbound traffic from the internet to the myAsgWebServers application security group is allowed through port 80. The network interface attached for myVMWeb is associated with the myAsgWebServers application security group and allows the connection.

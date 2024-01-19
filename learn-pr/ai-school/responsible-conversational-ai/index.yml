@@ -7,7 +7,6 @@ metadata:
   author: Adriamen
   ms.author: japerena
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   #ms.learn-contact: barlan
 title: Discover Microsoft guidelines for responsible conversational AI development
 summary: Learn Microsoft guidelines for the development of responsible conversational AI, such as chat bots and voice-controlled systems.

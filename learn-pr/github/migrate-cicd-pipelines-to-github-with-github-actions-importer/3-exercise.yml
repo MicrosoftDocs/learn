@@ -7,8 +7,9 @@ metadata:
   ms.date: 3/21/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
+  ms.custom:
+    - devx-track-jenkins
 durationInMinutes: 30
 content: |
   [!include[](includes/3-exercise.md)]

@@ -4,36 +4,21 @@ The online retailer is impressed with your first web application. Now it wants y
 
 It's common to construct an API with many resources. Each resource can have several operations available on it to read and write. Organizing by resource and by operations like read/write is called *create*, *read*, *update*, *delete* (CRUD). Implement the CRUD API on the `products` resource:
 
-1. Clone the [node-essentials repo](https://github.com/MicrosoftDocs/node-essentials) by running the following command.
+This starter project at `nodejs-http/exercise-express-routing/reading-writing` contains the product files and some starter application code. All you need to do is to fill in the missing parts.
 
-   > [!NOTE]
-   > If you completed this step in the earlier exercise, you don't need to do it again.
+1. The `nodejs-http/exercise-express-routing/reading-writing` folder contains:
 
-   ```bash
-   git clone https://github.com/MicrosoftDocs/node-essentials
-   ```
+   - app.js
+   - client-get.js
+   - client-post.js
+   - client-put.js
+   - client-delete.js
+   - client-delete-route.js
+   - package.json
+   - package-lock.json
 
-   This starter project contains the product files and some starter application code. All you need to do is to fill in the missing parts.
-
-1. To inspect the repo that you cloned and go to the files that you need, run this command:
-
-   ```bash
-   cd node-essentials/nodejs-http/exercise-express-routing/reading-writing
-   ```
-
-   The outline of the directory should look like this:
-
-   ```bash
-   -| app.js
-   -| client-get.js
-   -| client-post.js
-   -| client-put.js
-   -| client-delete.js
-   -| client-delete-route.js
-   -| package.json
-   ```
-
-1. The *package.json* file contains an `express` dependency. In the terminal, run the following command to install it:
+1. Right-click the **reading-writing** folder name and select **Open in integrated terminal**. 
+1. In the terminal, run the following command to install it:
 
    ```bash
    npm install
@@ -41,43 +26,47 @@ It's common to construct an API with many resources. Each resource can have seve
 
    `npm` reads from the `dependencies` section in *package.json*.
 
+   > [!NOTE]
+   > If you see a warning about an old version of `npm`, follow the instructions to fix the issue before you move to the next step.
+
 1. Open *app.js* to inspect it. The file should look like this:
 
    ```javascript
-   const express = require('express')
-   const app = express()
-   const port = 3000
-
-   let bodyParser = require('body-parser');
-   app.use(bodyParser.json());
-
-   let products = [];
-
-   app.post('/products', function(req, res) {
-     // implement
-   });
-
-   app.put('/products', function(req, res) {
-     // implement
-   });
-
-   app.delete('/products/:id', function(req, res) {
-     // implement
-   });
-
-   app.get('/products', (req, res) => {
-     // implement
-   })
-   app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+    const express = require('express')
+    const app = express()
+    const port = 3000
+    
+    let bodyParser = require('body-parser');
+    app.use(bodyParser.json());
+    
+    let products = [];
+    
+    app.post('/products', function (req, res) {
+      // implement
+    });
+    
+    app.put('/products', function (req, res) {
+      // implement
+    });
+    
+    app.delete('/products/:id', function (req, res) {
+      // implement
+    });
+    
+    app.get('/products', (req, res) => {
+      // implement
+    })
+    
+    app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
    ```
 
    The *app.js* file shows a skeleton of a program. Your next job is to implement the routes.
 
 ## Implement routes
 
-To implement routes, add a little code and then test it. Do this method by method until you have a fully functional API.
+To implement routes, the process is to add a little code and then test it. Continue adding each route's method until you have a fully functional API. Make your changes in the *app.js* file in the *reading-writing* directory.
 
-1. Support reading from the API. Locate the part of the code that looks like this:
+1. To support reading from the API, locate the part of the code that looks like this:
 
    ```javascript
    app.get('/products', (req, res) => {
@@ -99,7 +88,7 @@ To implement routes, add a little code and then test it. Do this method by metho
    node app.js
    ```
 
-1. In a separate terminal, run this command:
+1. In a separate terminal for the same folder, **reading-writing**, run this command:
 
    ```javascript
    node client-get.js
@@ -112,6 +101,9 @@ To implement routes, add a little code and then test it. Do this method by metho
    Connection closed
    ```
 
+1. In the terminal, and select Ctrl+C to stop the application.
+
+
 The API responds with an empty array because you haven't written any data to it yet. Let's change that next.
 
 ## Implement writing
@@ -119,8 +111,8 @@ The API responds with an empty array because you haven't written any data to it 
 1. To implement writing, locate this code:
 
    ```javascript
-   app.post('/products', function(req, res) {
-     // implement
+   app.post('/products', function (req, res) {
+      // implement
    });
    ```
 
@@ -168,14 +160,22 @@ The API responds with an empty array because you haven't written any data to it 
    Connection closed
    ```
 
-   The response tells you that when you ran *client-post.js*, you wrote data to the API. Also, you ran *client-get.js* to query the API for data. The API responded with the data that you just wrote to it.
+    Your requests so far:
+    
+    * **client-post.js**: The response tells you that when you ran *client-post.js*, you wrote data to the API. 
+    * **client-get.js**: You ran *client-get.js* to query the API for data. The API responded with the data that you just wrote to it.
+
+1. In the terminal, and select Ctrl+C to stop the application.
+
 
 ## Implement the ability to update data
 
 1. To implement the ability to update your data, locate the code that looks like this:
 
    ```javascript
-   app.put('/products', function(req, res) {});
+   app.put('/products', function (req, res) {
+     // implement
+   });
    ```
 
    Replace it with this code:
@@ -234,12 +234,17 @@ The API responds with an empty array because you haven't written any data to it 
    Connection closed
    ```
 
+1. In the terminal, and select Ctrl+C to stop the application.
+
+
 ## Implement deleting
 
 1. To implement deleting, locate the code that looks like this:
 
    ```javascript
-   app.delete('/products/:id', function(req, res) {});
+   app.delete('/products/:id', function (req, res) {
+     // implement
+   });
    ```
 
    Replace it with this code:
@@ -275,8 +280,8 @@ The API responds with an empty array because you haven't written any data to it 
    You should see the following output:
 
    ```output
-   Received data {"name":"product","id":1}
-   Connection closed
+   response {"name":"product","id":1}
+   Closed connection
    ```
   
 1. To check the code, run this command:
@@ -293,6 +298,9 @@ The API responds with an empty array because you haven't written any data to it 
    ```
 
    Congratulations! You've implemented a `products` resource by using a full CRUD.
+
+1. In the terminal, and select Ctrl+C to stop the application.
+
 
 ## Implement CRUD
 
@@ -370,6 +378,43 @@ Implementing CRUD for a resource is a common task. Express has a `route()` metho
    Connection closed
    ```
 
+1. In the terminal, and select Ctrl+C to stop the application.
+
+
 You used *client-delete-route.js* instead of *client-delete.js* in the previous exercise. The difference lies in how the route is implemented. The first version of *app.js* relies on deletions being done toward a route like `/products/<id>`, with the unique identifier being sent as a route parameter.
 
 When you use the `route()` method, it implements the deletion route differently. It wants you to send unique identifier through the body instead of as a route parameter. There's no right or wrong way to implement a deletion route.
+
+## Cleanup development container
+
+After completing the project, you may wish to clean up your development environment or return it to its typical state.
+
+### [Remote development (browser)](#tab/github-codespaces)
+
+Deleting the GitHub Codespaces environment ensures that you can maximize the amount of free per-core hours entitlement you get for your account.
+
+> [!IMPORTANT]
+> For more information about your GitHub account's entitlements, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
+
+1. Sign into the GitHub Codespaces dashboard (<https://github.com/codespaces>).
+
+1. Locate your currently running codespaces sourced from the [`MicrosoftDocs/node-essentials`](https://github.com/MicrosoftDocs/node-essentials) GitHub repository.
+
+    :::image type="content" source="../media/codespaces/codespace-dashboard.png" alt-text="Screenshot of all the running codespaces including their status and templates.":::
+
+1. Open the context menu for the codespace and select **Delete**.
+
+    :::image type="content" source="../media/codespaces/codespace-delete.png" alt-text="Screenshot of the context menu for a single codespace with the delete option highlighted.":::
+
+#### [Local development (Docker)](#tab/visual-studio-code)
+
+You aren't necessarily required to clean up your local environment, but you can stop the running development container and return to running Visual Studio Code in the context of a local workspace.
+
+1. Open the **Command Palette**, search for the **Dev Containers** commands, and then select **Dev Containers: Reopen Folder Locally**.
+
+    :::image type="content" source="../media/codespaces/reopen-local-command-palette.png" alt-text="Screenshot of the Command Palette option to reopen the current folder within your local environment.":::
+
+> [!TIP]
+> Visual Studio Code will stop the running development container, but the container still exists in Docker in a stopped state. You always have the option to deleting the container instance, container image, and volumes from Docker to free up more space on your local machine.
+
+---

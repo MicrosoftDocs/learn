@@ -4,39 +4,27 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/26/2022
+  ms.date: 08/29/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "You plan to create an Azure Databricks workspace and use the SQL persona view in the Azure Databricks portal. Which of the following pricing tiers can you select?"
+  - content: "You plan to create an Azure Databricks workspace and use it to work with a SQL Warehouse. Which of the following pricing tiers can you select?"
     choices:
     - content: "Enterprise"
       isCorrect: false
       explanation: "Incorrect. There is no Enterprise tier for Azure Databricks."
     - content: "Standard"
       isCorrect: false
-      explanation: "Incorrect. The SQL persona is not supported in Standard tier."
+      explanation: "Incorrect. SQL Warehouses are not supported in Standard tier."
     - content: "Premium"
       isCorrect: true
-      explanation: "Correct. Premium tier is required for the SQL persona."
-  - content: "You need to use Spark to process data in files, preparing it for analysis. Which persona view should you use in the Azure Databricks portal?"
-    choices:
-    - content: "Data Science and Engineering"
-      isCorrect: true
-      explanation: "Correct. The Data Science and Engineering persona is optimized to help with data engineering tasks such as data processing."
-    - content: "Machine Learning"
-      isCorrect: false
-      explanation: "Incorrect. The Machine Learning persona view is optimized for predictive model training and management."
-    - content: "SQL"
-      isCorrect: false
-      explanation: "Incorrect. The SQL persona view is optimized for querying and visualizing relational data."
-  - content: "You've created an Azure Databricks workspace in which you plan to use code in notebooks to process data. What must you create in the workspace?"
+      explanation: "Correct. Premium tier is required for SQL Warehouses."
+  - content: "You've created an Azure Databricks workspace in which you plan to use code to process data files. What must you create in the workspace?"
     choices:
     - content: "A SQL Warehouse"
       isCorrect: false
@@ -47,3 +35,14 @@ quiz:
     - content: "A Windows Server virtual machine"
       isCorrect: false
       explanation: "Incorrect. You cannot create a Windows Server virtual machine in an Azure Databricks workspace."
+  - content: "You want to use Python code to interactively explore data in a text file that you've uploaded to your Azure Databricks workspace. What should you create?"
+    choices:
+    - content: "A SQL query"
+      isCorrect: false
+      explanation: "Incorrect. A SQL query is used to query data in tables."
+    - content: "An Azure function"
+      isCorrect: false
+      explanation: "Incorrect. An Azure function is not used for interactive data exploration in Azure Databricks."
+    - content: "A Notebook"
+      isCorrect: true
+      explanation: "Correct. A notebook is used to interactively explore data."

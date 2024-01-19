@@ -63,10 +63,15 @@ Start by creating an empty folder for your project, and then initialize a Git re
 
 1. Now, initialize your new repository and set the name of the default branch to `main`:
 
-    If you're running Git version 2.28.0 or later, use the following commands:
+    If you're running Git version 2.28.0 or later, use the following command:
 
     ```bash
     git init --initial-branch=main
+    ```
+
+    Or use the following command:
+
+    ```bash
     git init -b main
 
     ```

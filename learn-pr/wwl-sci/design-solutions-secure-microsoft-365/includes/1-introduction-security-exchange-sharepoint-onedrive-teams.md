@@ -1,7 +1,7 @@
 In this module, you learn how to:
 
 - Evaluate security posture for collaboration and productivity workloads
-- Design a Microsoft Defender 365 solution
+- Design a Microsoft Defender XDR solution
 - Design configurations and operational practices for Microsoft 365
 
 The content in the module helps you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
@@ -76,4 +76,4 @@ Gains with **Defender for Office 365, Plan 2** (to date):
 
 So, Microsoft Defender for Office 365 P2 expands on the ***investigation and response*** side of the house, and adds a new hunting strength. Automation.
 
-In Microsoft Defender for Office 365 P2, the primary hunting tool is called **Threat Explorer** rather than Real-time detections. If you see Threat Explorer when you navigate to the Microsoft 365 Defender portal, you're in Microsoft Defender for Office 365 P2.
+In Microsoft Defender for Office 365 P2, the primary hunting tool is called **Threat Explorer** rather than Real-time detections. If you see Threat Explorer when you navigate to the Microsoft Defender portal, you're in Microsoft Defender for Office 365 P2.

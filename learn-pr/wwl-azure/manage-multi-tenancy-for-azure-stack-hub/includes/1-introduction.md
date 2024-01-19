@@ -1,4 +1,4 @@
-Azure Active Directory (Azure AD) is Microsoft’s multi-tenant cloud-based directory and identity management service. You configure Azure Stack Hub to support users from multiple Azure Active Directory (Azure AD) tenants, allowing them to use services in Azure Stack Hub. In this module, you will learn how to you configure Azure Stack Hub to allow sign-ins from Azure AD directory tenants.
+Microsoft Entra ID is Microsoft’s multi-tenant cloud-based directory and identity management service. You configure Azure Stack Hub to support users from multiple Microsoft Entra tenants, allowing them to use services in Azure Stack Hub. In this module, you will learn how to you configure Azure Stack Hub to allow sign-ins from Microsoft Entra directory tenants.
 
 This module aligns with the exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
 

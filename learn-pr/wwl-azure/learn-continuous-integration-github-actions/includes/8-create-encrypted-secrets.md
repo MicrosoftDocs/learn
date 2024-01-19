@@ -1,3 +1,4 @@
+
 Actions often can use secrets within pipelines. Common examples are passwords or keys.
 
 In GitHub actions, It's called **Secrets**.

@@ -4,10 +4,9 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 05/30/2020
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 title: Summary
 durationInMinutes: 2
 content: |

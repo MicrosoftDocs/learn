@@ -22,7 +22,7 @@ The following table describes the core concepts of Azure RBAC.
 | --- | --- | --- |
 | **Security&nbsp;principal** | An object that represents something that requests access to resources. | User, group, service principal, managed identity |
 | **Role&nbsp;definition** | A set of permissions that lists the allowed operations. Azure RBAC comes with built-in role definitions, but you can also create your own custom role definitions. | Some built-in role definitions: _Reader_, _Contributor_, _Owner_, _User Access Administrator_ |
-| **Scope** | The boundary for the requested _level_ of access, or "how much" access is granted. | Root, management group, subscription, resource group, resource |
+| **Scope** | The boundary for the requested _level_ of access, or "how much" access is granted. | Management group, subscription, resource group, resource |
 | **Assignment** | An **assignment** attaches a **role definition** to a **security principal** at a particular **scope**. Users can grant the access described in a role definition by creating (attaching) an assignment for the role. | - Assign the _User Access Administrator_ role to an admin group scoped to a management group <br> - Assign the _Contributor_ role to a user scoped to a subscription |
 
 ### Things to consider when using Azure RBAC

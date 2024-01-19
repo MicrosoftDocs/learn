@@ -94,7 +94,7 @@ A multisite connection is similar to a site-to-site connection, but with a sligh
 
 #### Point-to-site
 
-A point-to-site connection is suited to a remote individual client device that connects to your network. You must authenticate the client device either through Azure Active Directory or by using Azure certificate authentication. This model suits home working scenarios.
+A point-to-site connection is suited to a remote individual client device that connects to your network. You must authenticate the client device either through Microsoft Entra ID or by using Azure certificate authentication. This model suits home working scenarios.
 
 #### Network-to-network
 

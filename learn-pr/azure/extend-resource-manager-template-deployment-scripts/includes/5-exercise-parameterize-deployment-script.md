@@ -2,7 +2,7 @@ Now that you've used a deployment script to migrate some manual work into your A
 
 The team's process has similar requirements, but the team needs to deploy multiple files to its storage account. The team has a PowerShell script that can take a list of files as a parameter and upload them, similar to the script that you were already using in your template.
 
-In this exercise, you'll take your previous template as a starting point, and update the PowerShell script to use the one from your partner team. Then, you'll add a way to enable the person who's deploying the template to specify what configuration files to deploy (one or more).
+In this exercise, you'll take your previous template as a starting point and update the PowerShell script to use the one from your partner team. Then, you'll add a way to enable the person who's deploying the template to specify what configuration files to deploy (one or more).
 
 During the process, you'll:
 
@@ -63,7 +63,7 @@ Edit `scriptContent` in the `properties` section to include the script that your
 
 ::: zone pivot="jsoncli,jsonpowershell"
 
-The script you've adopted requires some environment variables. You can specify them directly in the template, but it will be more flexible to use template functions to get some of the values.
+The script you've adopted requires some environment variables. You can specify them directly in the template, but it'll be more flexible to use template functions to get some of the values.
 
 1. Add an `environmentVariables` property to the `properties` section of the deployment script.
 
@@ -88,7 +88,7 @@ The script you've adopted requires some environment variables. You can specify t
 
 ::: zone pivot="bicepcli,biceppowershell"
 
-The script you've adopted requires some environment variables. You can specify them directly in the template, but it will be more flexible to use Bicep variables to get some of the values.
+The script you've adopted requires some environment variables. You can specify them directly in the template, but it'll be more flexible to use Bicep variables to get some of the values.
 
 1. Add an `environmentVariables` property to the `properties` section of the deployment script.
 
@@ -118,7 +118,7 @@ Add a parameter to the template to take an array of filenames.
 
 :::code language="json" source="code/5-template-with-deploymentscript-parameters.json" range="5-7, 9-13" :::
 
-As a bonus, you can supply a default value so the template will continue to work for your team with no changes to the deployment process. Although not required, entering a new default value can help you understand the pattern of making it easier for teams to adopt new versions of templates if they continue to behave as previously done, with the new functionality being the reward. In other words, this step shows you how to maintain the existing behavior while making the changes to support future work.
+As a bonus, you can supply a default value so the template will continue to work for your team with no changes to the deployment process. Although not required, entering a new default value can help you understand the pattern of making it easier for teams to adopt new versions of templates if they continue to behave as they've previously done, with the new functionality being the reward. In other words, this step shows you how to maintain the existing behavior while making the changes to support future work.
 
 ::: zone-end
 
@@ -131,7 +131,7 @@ Add a parameter to the template to take an array of filenames.
 param filesToCopy array
 ```
 
-As a bonus, you can supply a default value so the template will continue to work for your team with no changes to the deployment process. Although not required, entering a new default value can help you understand the pattern of making it easier for teams to adopt new versions of templates if they continue to behave as previously done, with the new functionality being the reward. In other words, this step shows you how to maintain the existing behavior while making the changes to support future work.
+As a bonus, you can supply a default value so the template will continue to work for your team with no changes to the deployment process. Although not required, entering a new default value can help you understand the pattern of making it easier for teams to adopt new versions of templates if they continue to behave as they've previously done, with the new functionality being the reward. In other words, this step shows you how to maintain the existing behavior while making the changes to support future work.
 
 ::: zone-end
 
@@ -170,15 +170,15 @@ Next, you can take the parameter that you just defined and pass it in to the dep
 
 Next, you can take the parameter that you just defined and pass it in to the deployment script. Passing command-line arguments can be tricky, because the strings are evaluated at multiple levels. Properly escaping quotes and picking the right quotes for the job are essential for success.
 
-Add an `arguments` property to the deployment script. The PowerShell script takes a parameter named `File`, which is a string of filenames that should come from the `filesToCopy` template parameter. 
+Add an `arguments` property to the deployment script. The PowerShell script takes a parameter named `File`, which is a string of filenames that should come from the `filesToCopy` template parameter.
 
 :::code language="bicep" source="code/5-template-with-deploymentscript-parameters.bicep" range="74" :::
 
 Notice this uses several Bicep features:
 
-- String interpolation, to combine the strings
-- The `\` escape character is used to allow us to include a single quote character (`'`) inside the string,since a single quote is normally a reserved character in Bicep.
-- The `string()` function is used to convert the `filesToCopy` array to a string.
+* String interpolation, to combine the strings.
+* We use the `\` escape character to allow us to include a single quote character (`'`) inside the string, because a single quote is normally a reserved character in Bicep.
+* We use the `string()` function to convert the `filesToCopy` array to a string.
 
 ::: zone-end
 
@@ -375,7 +375,7 @@ After the deployment is complete, you can validate that both files were copied t
     az storage blob list --account-name $storageAccountName --container-name config --query '[].name'
     ```
 
-    The command returns the following code.
+    The command returns the following code:
 
     ```json
     [
@@ -403,7 +403,7 @@ After the deployment is complete, you can validate that both files were copied t
         Select-Object Name
     ```
 
-    The command returns the following code.
+    The command returns the following code:
 
     ```
     Name

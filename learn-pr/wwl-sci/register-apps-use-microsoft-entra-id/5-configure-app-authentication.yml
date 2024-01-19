@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.register-apps-use-microsoft-entra-id.configure-app-authentication
+title: Configure app authentication
+metadata:
+  title: Configure app authentication
+  description: "Configure the authentications settings needed to protect the app and data, while offering the needed access."
+  ms.date: 10/02/2023
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: module-standard-task-based
+  ms.prod: identity-and-access
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-configure-app-authentication.md)]

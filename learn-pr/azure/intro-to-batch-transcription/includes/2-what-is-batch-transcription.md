@@ -1,4 +1,4 @@
-Batch Transcription is a Cognitive Service that allows you to transcribe large amounts of audio data from a storage container asynchronously. Batch Transcription is part of Azure’s *Speech Service*, but has its own set of extra features.
+Batch Transcription is a Cognitive Service that allows you to transcribe large amounts of audio data from a storage container asynchronously. Batch Transcription is a feature of Azure AI Speech.
 
 ## Using audio data efficiently
 
@@ -10,19 +10,19 @@ While having an audio record of a conversation is nice, searching through audio 
 
 Manually transcribing audio into text is a labor-intensive process. It requires trained and trust-worthy staff and even then can still be prone to errors, resulting in the need for labor-intensive reviews.
 
-Batch Transcription provides automated transcription using AI. Batch Transcription is a powerful, high-quality service that can process hundreds or thousands of audio recordings into text, acting like an in-house team of professional transcribers. It also has optional configurations not available with real-time Speech-To-Text such as profanity filters and timestamps, along with standard services like speaker separation.
+Batch Transcription provides automated transcription using AI. Batch Transcription is a powerful, high-quality service that can process hundreds or thousands of audio recordings into text, acting like an in-house team of professional transcribers. It also has optional configurations not available with real-time speech to text such as profanity filters and timestamps, along with standard services like speaker separation.
 
 ## Our call-center scenario
 
-Let’s think back to our call-center scenario. You’ve been looking into Batch Transcription and have found it might be the solution you need. It can quickly and accurately transcribe huge amounts of audio data without poor audio quality or the variety of accents and dialects being a problem.
+Let's think back to our call-center scenario. You've been looking into Batch Transcription and have found it might be the solution you need. It can quickly and accurately transcribe huge amounts of audio data without poor audio quality or the variety of accents and regional languages being a problem.
 
-You’ve also found that Batch Transcription can be integrated with other Azure services to enable analysis of your audio data. This information can then be used to improve business practices in a deeper way than simple transcription is designed to achieve.
+You've also found that Batch Transcription can be integrated with other Azure services to enable analysis of your audio data. This information can then be used to improve business practices in a deeper way than simple transcription is designed to achieve.
 
 ## Using Batch Transcription
 
-The Batch Transcription service is implemented as set of REST API operations. A request can be made to transcribe audio files from an Azure storage blob through a POST operation, like so:
+The Batch Transcription service is implemented as set of REST API operations. A request can be made to transcribe audio files from an Azure Storage blob through a POST operation, like so:
 
-```HTTP request
+```httprequest
 POST https://eastus2.api.cognitive.microsoft.com/speechtotext/v3.0/transcriptions HTTP/1.1
 Host: eastus2.api.cognitive.microsoft.com
 Content-Type: application/json

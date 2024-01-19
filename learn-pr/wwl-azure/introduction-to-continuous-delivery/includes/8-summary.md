@@ -9,7 +9,7 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [What is continuous delivery?](/devops/deliver/what-is-continuous-delivery).
+ -  [What is Continuous Delivery? - Azure DevOps \| Microsoft Docs](/devops/deliver/what-is-continuous-delivery).
  -  [Continuous Delivery vs. Continuous Deployment \| Microsoft Azure](https://azure.microsoft.com/overview/continuous-delivery-vs-continuous-deployment).
- -  [Release pipelines](/azure/devops/pipelines/release/?view=azure-devops).
- -  [Define your Classic pipeline](/azure/devops/pipelines/release/define-multistage-release-process).
+ -  [Release pipelines - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/release/?view=azure-devops).
+ -  [Define a Classic release pipeline - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/release/define-multistage-release-process).

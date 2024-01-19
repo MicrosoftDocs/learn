@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.edge.integrate-with-pwabuilder.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is part of the "Integrate your project with PWABuilder" module.
+  ms.date: 07/11/2023
+  author: beth-panx
+  ms.author: xupa
+  ms.topic: module-standard-task-based
+  ms.prod: microsoft-edge
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-summary.md)]

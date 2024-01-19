@@ -1,14 +1,13 @@
-
 If you have applications and services that need access to traditional authentication mechanisms such as Kerberos or NTLM, there are **two ways** to provide Active Directory Domain Services in the cloud:
 
- -  A ***managed domain*** that you create using Azure Active Directory Domain Services (Azure AD DS). Microsoft creates and manages the required resources.
+ -  A ***managed domain*** that you create using Microsoft Entra Domain Services (Microsoft Entra Domain Services). Microsoft creates and manages the required resources.
  -  A ***self-managed*** domain that you create and configure using traditional resources such as virtual machines (VMs), Windows Server guest OS, and Active Directory Domain Services (AD DS). You then continue to administer these resources.
 
-With Azure AD DS, the core service components are deployed and maintained for you by Microsoft as a ***managed*** domain experience. You don't deploy, manage, patch, and secure the AD DS infrastructure for components like the VMs, Windows Server OS, or domain controllers (DCs).
+With Microsoft Entra Domain Services, the core service components are deployed and maintained for you by Microsoft as a ***managed*** domain experience. You don't deploy, manage, patch, and secure the AD DS infrastructure for components like the VMs, Windows Server OS, or domain controllers (DCs).
 
-Azure AD DS provides a smaller subset of features to traditional self-managed AD DS environment, which reduces some of the design and management complexity. For example, there are no AD forests, domains, sites, and replication links to design and maintain.
+Microsoft Entra Domain Services provides a smaller subset of features to traditional self-managed AD DS environment, which reduces some of the design and management complexity. For example, there are no AD forests, domains, sites, and replication links to design and maintain.
 
-For applications and services that run in the cloud and need access to traditional authentication mechanisms such as Kerberos or NTLM, Azure AD DS provides a managed domain experience with a minimal amount of administrative overhead.
+For applications and services that run in the cloud and need access to traditional authentication mechanisms such as Kerberos or NTLM, Microsoft Entra Domain Services provides a managed domain experience with a minimal amount of administrative overhead.
 
 When you deploy and run a self-managed AD DS environment, you must maintain all of the associated infrastructure and directory components. There's additional maintenance overhead with a self-managed AD DS environment, but you're then able to do additional tasks, such as extending the schema or create forest trusts.
 
@@ -19,9 +18,9 @@ Common deployment models for a self-managed AD DS environment that provides iden
  -  **Extend on-premises domain to Azure** \- An Azure virtual network connects to an on-premises network using a VPN / ExpressRoute connection. Azure VMs connect to this Azure virtual network, which lets them domain-join to the on-premises AD DS environment.
      -  An alternative is to create Azure VMs and promote them as replica domain controllers from the on-premises AD DS domain. These domain controllers replicate over a VPN / ExpressRoute connection to the on-premises AD DS environment. The on-premises AD DS domain is effectively extended into Azure.
 
-The following table outlines some of the features you may need for your organization and the differences between a managed Azure AD DS domain or a self-managed AD DS domain:
+The following table outlines some of the features you may need for your organization and the differences between a managed Microsoft Entra Domain Services domain or a self-managed AD DS domain:
 
-| **Feature**                                                                | **Azure Active Directory Services (Azure AD DS)** | **Self-managed AD DS**                     |
+| **Feature**                                                                | **Microsoft Entra services (Microsoft Entra Domain Services)** | **Self-managed AD DS**                     |
 | -------------------------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------ |
 | Managed service                                                            | ✓                                                 | ✕                                          |
 | Secure deployments                                                         | ✓                                                 | The administrator secures the deployment   |

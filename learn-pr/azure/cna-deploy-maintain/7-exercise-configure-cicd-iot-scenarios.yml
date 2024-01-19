@@ -5,10 +5,9 @@ metadata:
   title: Exercise - Configure CI/CD for IoT Edge applications
   description: Exercise - Configure CI/CD for IoT Edge applications
   ms.date: 05/31/2021
-  author: mpolicht
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: juliakm
+  ms.author: jukullam
+  ms.topic: unit
 durationInMinutes: 25
 content: |
   [!include[](includes/7-exercise-configure-cicd-iot-scenarios.md)]

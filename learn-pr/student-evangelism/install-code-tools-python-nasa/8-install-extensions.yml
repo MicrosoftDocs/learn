@@ -6,9 +6,11 @@ metadata:
   ms.date: 03/28/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen, devdivchpfy22 
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devdivchpfy22
+    - devx-track-python
 title: Exercise - Install Visual Studio Code extensions needed for data exploration
 durationInMinutes: 4
 content: |

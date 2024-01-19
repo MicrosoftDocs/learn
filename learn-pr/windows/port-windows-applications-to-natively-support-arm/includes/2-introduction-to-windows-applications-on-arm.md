@@ -1,0 +1,11 @@
+Windows operating system has traditionally been run on devices supported by Intel-based processors, with most Windows apps built to support an x86 or x64-based architecture. 
+
+We're seeing Arm-based devices become increasingly popular, however, due to their power-frugal nature, long battery life, and impressive processing power via CPU and GPU processors. Arm-based devices are also known for best-in-class data connectivity with Wi-Fi and mobile capabilities, with many of the newer Windows on Arm devices supporting Neural Processing Units (NPU) tuned for the increasingly popular AI and machine learning workloads.
+
+Windows has been supporting Arm-based devices for the past few years, but has also been growing the level of support offered. Windows 10 on Arm supports running x86-based applications using emulation, requiring no modi faction to the app. Windows 11 expanded this support to include running x64-based apps using emulation with no modification required. This emulation means that developers can be confident that existing x86 and x64 applications run on Arm-based devices without any updates to the underlying source code.
+
+The ability to emulate x64 and x86 apps on Arm devices is a significant step forward. However, developers must provide an Arm-native version of their Windows applications to get the best performance from an Arm-based device. Emulation inherently introduces processing overhead that impacts performance.
+
+Adding an ARM build configuration to your Windows app can be done in just a few steps and can result in significant performance improvements when running on Arm-based devices. Note that Windows on Arm does **not** support Arm32 app configurations any longer. Any Arm32 apps should be updated to Arm64. This change only impacts the small number of Universal Windows Platform (UWP) apps that may have targeted AArch32 (Arm32).
+
+When installing applications from the Microsoft Store, Windows will automatically select the most optimal version of the application based on the builds provided and the device's current processor architecture. Therefore, if you provide builds for both x64 and Arm64 for your application, Windows 11 for Arm will automatically install the Arm64 build, whereas an Intel-based Windows 11 device will install the x64 build.

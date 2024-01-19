@@ -1,5 +1,3 @@
-
-
 ## Scenario
 
 You need to run an SAP S/4HANA test migration for your company. The administrator for the on-premises SAP S/4HANA implementation being migrated has questions on achieving maximum scalability and performance in the cloud.
@@ -8,7 +6,7 @@ You review the architecture options available when deploying SAP S/4HANA on Azur
 
 ## Learning objectives
 
-You will:
+You'll:
 
 - Explore SAP S/4HANA on Azure virtual machines.
 - Learn to recognize the architecture's components.

@@ -1,6 +1,4 @@
-
-
-Windows and Oracle Linux are the only operating systems that are supported by Oracle and Azure for SAP workloads. The widely used SLES and RHEL Linux distributions aren't supported for deploying Oracle components in Azure. Oracle components include the Oracle Database client, which is used by SAP applications to connect against the Oracle DBMS.
+Windows and Oracle Linux are the only operating systems supported by Oracle and Azure for SAP workloads. The widely used SLES and RHEL Linux distributions aren't supported for deploying Oracle components in Azure. Oracle components include the Oracle Database client, which is used by SAP applications to connect against the Oracle DBMS.
 
 Exceptions, according to [SAP Note \#2039619](https://launchpad.support.sap.com/#/notes/2039619), are SAP components that don't use the Oracle Database client. Such SAP components are SAP's stand-alone enqueue, message server, Enqueue replication services, WebDispatcher, and SAP Gateway.
 
@@ -17,4 +15,4 @@ Data Guard offers advantages over storage-level replication:
 - As the replication is database-aware, only relevant traffic is replicated.
 - Certain workloads can generate high input/output on temporary tablespaces, which aren't required on standby and so aren't replicated.
 - Validation on the replicated blocks occurs at the standby database, so physical corruptions on the primary database aren't replicated to the standby database.
-- Prevents logical intra-block corruptions and lost-write corruptions. It also eliminates the risk of mistakes made by storage administrators from replicating to the standby. Redo can be delayed for a pre-determined period, so user errors aren't immediately replicated to the standby.
+- Prevents logical intra-block corruptions and lost-write corruptions. It also eliminates the risk of mistakes made by storage administrators from replicating to the standby. Redo can be delayed for a predetermined period, so user errors aren't immediately replicated to the standby.

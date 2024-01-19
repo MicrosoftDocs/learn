@@ -40,11 +40,11 @@ Built-in features of IoT Central you can use to extract business value include:
 
   - To learn more about dashboards, see [Create and manage dashboards](/azure/iot-central/core/howto-manage-dashboards).
 
-  - Like we saw on previous exercise, when the coffee machine connects to the IoT Central application it is assigned to a device template. You can create and customize the available views for each device type.
+  - Like we saw on previous exercise, when the coffee machine connects to the IoT Central application it's assigned to a device template. You can create and customize the available views for each device type.
 
 - Use built-in rules and analytics:
 
-  You can add rules to an IoT Central application that run customizable actions. Rules evaluate conditions, based on data coming from a device, to determine when to run an action. In the next exercise we will create a rule to send an email when the coffee machine is outside the optimal temperature. To learn more about rules, see:
+  You can add rules to an IoT Central application that run customizable actions. Rules evaluate conditions, based on data coming from a device, to determine when to run an action. In the next exercise, we'll create a rule to send an email when the coffee machine is outside the optimal temperature. To learn more about rules, see:
   
   - [Configure rules](/azure/iot-central/core/howto-configure-rules)
   

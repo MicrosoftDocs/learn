@@ -7,7 +7,6 @@ metadata:
   author: JKirsch1
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-advocates
   ms.custom: team=nextgen
 title: Create a chatbot to help students learn geography
 summary: Learn how to build a basic bot called **GeoFriend** that helps students with geography facts. This module covers the basics of bot development and the main principles of responsible conversational AI. See how to create a helpful bot that a user can trust and enjoy speaking to. Our bot will make it fun for school children to improve geography skills.

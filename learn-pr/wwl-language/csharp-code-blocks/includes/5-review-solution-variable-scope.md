@@ -1,9 +1,6 @@
-
 The following code is one possible solution for the challenge from the previous unit:
 
 ```c#
-using System;
-
 int[] numbers = { 4, 8, 15, 16, 23, 42 };
 int total = 0;
 bool found = false;

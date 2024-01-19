@@ -1,8 +1,7 @@
-You've chosen to support your company's move to Azure by implementing a hub-spoke architecture.
+Based on your research, you chose to implement a hub-spoke network architecture for your company's migration to Azure. As a lead architect on the project, you're managing the production of a virtual networking design by using Azure ExpressRoute for your headquarters' connectivity. You also must decide how to connect your company's satellite offices to the new hub-spoke network.
 
-As a lead architect on the project, you're managing the production of a virtual networking design by using Azure ExpressRoute for your headquarters' connectivity. You also must decide how to connect your company's satellite offices to the new hub-spoke network.
 
-In this unit, you'll explore virtual networking in the Azure platform, design considerations, and how to implement ExpressRoute for connectivity to on-premises networks.
+In this unit, you explore virtual networking in the Azure platform, design considerations, and how to implement ExpressRoute for connectivity to on-premises networks.
 
 ![Architectural diagram showing hub and spokes connecting to the on-premises resources.](../media/3-plannning-hub.svg)
 

@@ -24,7 +24,7 @@ These measures can help you enhance security and meet regulatory requirements. A
 | Active traffic monitoring & always  on detection   |   Yes      |     Yes       |    Yes       |
 | Automatic attack mitigation                        |   Yes      |     Yes       |    Yes       |
 | Availability guarantee                             |   No       |     Yes       |    Yes       |
-| Cost Protection                                    |   No       |     Yes       |    Yes       |
+| Cost Protection                                    |   No       |     Yes       |    No        |
 | Mitigation policies tuned to customer  application |   No       |     Yes       |    Yes       |
 | Metrics & Alerts                                   |   No       |     Yes       |    Yes       |
 | Mitigation Reports                                 |   No       |     Yes       |    Yes       |

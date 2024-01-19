@@ -7,8 +7,9 @@ metadata:
   ms.date: 02/10/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
