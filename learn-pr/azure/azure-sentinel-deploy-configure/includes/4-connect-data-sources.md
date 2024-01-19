@@ -16,7 +16,7 @@ Microsoft Sentinel natively interoperates with many Azure and non-Azure services
 - Microsoft Defender for Cloud Apps
 - Windows DNS
 - Office 365
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 - Azure Web Application Firewall
 - Windows Defender Firewall
 - Windows security events

@@ -1,17 +1,24 @@
-In the utilities company scenario, several members of your development are familiar with using Azure CLI to manage their resources. In order to leverage their expertise, you decide to examine how to enable CORS using the Azure CLI.
+In the utilities-company scenario, several members of your development are familiar with using Azure CLI to manage their resources. In order to leverage their expertise, you decide to examine how to enable CORS using the Azure CLI.
 
 In this exercise, you'll learn how to use the Azure CLI to enable CORS for Azure storage.
 
 ## Enable CORS using the Azure CLI
 
-1. Run the following command in the Cloud Shell to set environment variables that you will use in later commands; these variables specify the name of Azure storage account and account key for your storage account.
+1. First, create a new storage account. Replace `<account-name>` with a unique name of your choosing:
+
+    ```bash
+    storage=utilitystorage$RANDOM
+    az storage account create --name $storage --kind StorageV2 -g <rgn>[sandbox resource group name]</rgn>
+    ```
+
+1. Run the following command in the Cloud Shell to set environment variables that you'll use in later commands; these variables specify your Azure storage account's name and account key.
 
    ```bash
-   export AZURE_STORAGE_ACCOUNT=<account name from previous exercise>
+   export AZURE_STORAGE_ACCOUNT=$storage
    export AZURE_STORAGE_KEY=`az storage account keys list --account-name $AZURE_STORAGE_ACCOUNT --query [0].value | tr -d \"`
    ```
 
-1. Run the following command to add a CORS rule to your blob service.
+1. Run the following command to add a CORS rule to your blob service:
 
    ```azurecli
    az storage cors add \
@@ -22,7 +29,7 @@ In this exercise, you'll learn how to use the Azure CLI to enable CORS for Azure
       --account-key "$AZURE_STORAGE_KEY"
    ```
 
-1. Run the following command to verify that your CORS rule has been added to your blob service.
+1. Run the following command to verify that your CORS rule has been added to your blob service:
 
    ```azurecli
    az storage cors list \
@@ -30,7 +37,9 @@ In this exercise, you'll learn how to use the Azure CLI to enable CORS for Azure
       --account-name "$AZURE_STORAGE_ACCOUNT" \
       --account-key "$AZURE_STORAGE_KEY"
    ```
-   You should see a response that resembles the following JSON output.
+
+   Your response should resemble the following JSON output:
+
    ```json
    [
       {
@@ -45,9 +54,9 @@ In this exercise, you'll learn how to use the Azure CLI to enable CORS for Azure
    ]
    ```
 
-## Clear your CORS rules using the Azure CLI 
+## Clear your CORS rules using the Azure CLI
 
-1. Run the following command to list your existing CORS rules; you should see the rule that you added in the previous section of this exercise.
+1. Run the following command to list your existing CORS rules; you should see the rule that you added in the previous section:
 
    ```azurecli
    az storage cors list \
@@ -73,7 +82,9 @@ In this exercise, you'll learn how to use the Azure CLI to enable CORS for Azure
       --account-name "$AZURE_STORAGE_ACCOUNT" \
       --account-key "$AZURE_STORAGE_KEY"
    ```
-   You should see an empty JSON response like the following example.
+
+   You should see an empty JSON response, like the following example:
+
    ```json
    []
    ```

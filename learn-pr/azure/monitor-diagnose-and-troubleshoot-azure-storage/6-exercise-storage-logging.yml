@@ -9,7 +9,6 @@ metadata:
   ms.topic: unit
 title: Exercise - Route resource logs to Log Analytics and then view log data
 durationInMinutes: 8
-interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/6-exercise-storage-logging.md)]

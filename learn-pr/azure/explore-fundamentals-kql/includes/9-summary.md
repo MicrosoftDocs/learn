@@ -12,4 +12,4 @@ You also gained some experience running basic queries in various services, inclu
 * [Log queries in Azure Monitor](/azure/azure-monitor/logs/log-query-overview)
 * [KQL in Microsoft Sentinel](/azure/sentinel/kusto-overview)
 * [Understanding the Azure Resource Graph query language](/azure/governance/resource-graph/concepts/query-language)
-* [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview)
+* [Proactively hunt for threats with advanced hunting in Microsoft Defender XDR](/microsoft-365/security/defender/advanced-hunting-overview)

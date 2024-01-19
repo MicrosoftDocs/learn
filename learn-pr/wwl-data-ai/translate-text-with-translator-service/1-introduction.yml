@@ -4,13 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
-  ms.date: 08/31/2023
+  ms.date: 12/05/2023
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
-  ms.service: azure-ai-translator
-azureSandbox: false
-labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

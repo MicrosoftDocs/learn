@@ -8,7 +8,7 @@ metadata:
   ms.author: eur
   manager: nitinme
   ms.topic: module
-  ms.service: cognitive-services
+  ms.service: azure-ai-speech
 title: Create your first Azure AI speech to text application
 summary: Microsoft's Azure AI services provide developers with APIs to create applications that take advantage of Azure's speech to text features. In this module, you'll learn how to use Azure AI services to create a speech to text application that converts a sample WAVE file into text.
 abstract: |

@@ -1,4 +1,3 @@
-
 Identity Protection is a tool that allows organizations to accomplish three key tasks:
 
 - Automate the detection and remediation of identity-based risks.
@@ -28,7 +27,7 @@ A user risk represents the probability that a given identity or account is compr
 - Microsoft Entra threat intelligence. This risk detection type indicates user activity that is unusual for the given user or is consistent with known attack patterns based on Microsoft's internal and external threat intelligence sources.
 
 Identity Protection only generates risk detections when correct credentials are used in the authentication request. If a user uses incorrect credentials, it will not be flagged by Identity Protection since there isn't a risk of credential compromise unless a bad actor uses the correct credentials.
-Risk detections can then trigger actions such as requiring users to provide multi-factor authentication, reset their password, or block access until an administrator takes action.
+Risk detections can then trigger actions such as requiring users to provide multifactor authentication, reset their password, or block access until an administrator takes action.
 
 ### Investigate risks
 
@@ -46,7 +45,7 @@ Identity Protection provides organizations with three reports that they can use 
 
 After completing an investigation, admins will want to take action to remediate the risk or unblock users. Organizations can enable automated remediation using their risk policies.  For example, risk-based conditional access policies can be enabled to require access controls such as providing a strong authentication method, perform multifactor authentication, or perform a secure password reset based on the detected risk level. If the user successfully completes the access control, the risk is automatically remediated.
 
-When automated remediation isn't enabled, an administrator must manually review the identified risks in the reports through the portal, through the API, or in Microsoft 365 Defender. Administrators can perform manual actions to dismiss, confirm safe, or confirm compromise on the risks.
+When automated remediation isn't enabled, an administrator must manually review the identified risks in the reports through the portal, through the API, or in Microsoft Defender XDR. Administrators can perform manual actions to dismiss, confirm safe, or confirm compromise on the risks.
 
 ### Export
 

@@ -1,4 +1,3 @@
-
 The Conditional Access feature in Microsoft Entra ID offers one of several ways that you can use to secure your app and protect a service. Conditional Access enables developers and enterprise customers to protect services in a multitude of ways including:
 
 * [Multifactor authentication](/azure/active-directory/authentication/concept-mfa-howitworks)

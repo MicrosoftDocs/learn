@@ -56,7 +56,7 @@ quiz:
           isCorrect: false
           explanation: "Azure Monitor is focused on collecting data from Azure resources, logging systems, and other sources, not monitoring social media or web-based threats."
 
-    - content: "What is XDR in Microsoft 365 Defender?"
+    - content: "What is XDR in Microsoft Defender XDR?"
       choices:
         - content: "An AI-powered malware scanner that detects and removes malicious files."
           isCorrect: false
