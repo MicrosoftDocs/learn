@@ -86,9 +86,11 @@ The code will throw an exception when there are no ants left on the field. To be
 
 ## Throw a GameOverException when there are no ants left
 
+The game needs to throw an exception when there are no more ants in the Ants list. You create this functionality by including `Ants.Count == 0` in the `if` header.
+
 1. Open the `Game.cs` file in the Game folder.
 
-1. Throw a `GameOverException`, if there are no more ants, by adding an `if` statement that checks if `Ants.Count = 0`. Add the `if` statement below `newField` in the `CalcNextgeneration` method.
+1. Throw a `GameOverException`, if there are no more ants, by adding an `if` statement that checks if `Ants.Count = 0`. Add the `if` statement after `newField` in the `CalcNextgeneration` method.
 
     ```csharp
     namespace LangtonsAnt
@@ -112,7 +114,7 @@ The code will throw an exception when there are no ants left on the field. To be
 
 ## Remove ants from Ants collection when they leave the field
 
-Add an `if` statement to remove an ant if it goes off of the game field. The `if` statement checks to see that each ant's horizontal and vertical axis coordinates (x, y) are within the grid. This means that both `I` and `J` are greater than `0` and within the size of the grid.
+Add an `if` statement to remove an ant if it goes off of the game field. The `if` statement checks to see that each ant's horizontal and vertical axis coordinates (x, y) are within the grid. If they are within the grid, it means that both `I` and `J` are greater than `0` and within the size of the grid.
 
 1. Locate the `CalcNextGeneration` method in `Game.cs` file.
 
@@ -149,6 +151,8 @@ namespace LangtonsAnt
 
 ## Check namespaces
 
+As the functionality of your application is largely dependent .NET namespaces you're using, it can be helpful to make sure that your code has the right ones. In this case, your code needs the `System.Collections` and the `System.Collections.Generic` namespaces for your collection of ants.
+
 1. Verify that `Game.cs` has the following namespaces at the top of the file.
 
 ```csharp
@@ -163,7 +167,7 @@ namespace LangtonsAnt
 
 ## Check your work
 
-Build the solution, launch the application, and optionally ensure that the exception is thrown when the last ant leaves the field.
+Build the solution, launch the application, and optionally ensure that it throws th exception when the last ant leaves the field.
 
 1. Open a terminal console by selecting View --> Terminal from the menu.
 

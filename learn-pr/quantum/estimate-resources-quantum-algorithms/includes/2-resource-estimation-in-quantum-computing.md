@@ -10,12 +10,4 @@ Understanding the impact of architecture design choices and QEC schemes for spec
 
 Estimating the running time, the number of qubits, and other resources that will be used in realistic models of quantum computers is the first step to reducing these resource requirements. Resource estimation allows you to understand the differences between qubit technologies so that you can prepare and refine your quantum solutions to run on scaled quantum machines in the future.
 
-## Resource estimation for practical quantum applications
-
-To achieve practical quantum advantage, quantum computers require an underlying qubit technology that at scale is:
-
-- **Controllable**: QEC requires reliable control of more than 1 million well-connected qubits, with parallel operations that fail in under one part in a thousand.
-- **Fast**: To achieve a practical runtime of one month or less, while targeting around 1 million physical qubits, operations need to be performed in under a microsecond.
-- **Small**: Scaling to 1 million and more qubits constrains the size of the qubit to tens of microns in diameter.
-
 Next, learn about the Azure Quantum tool that you can use to estimate the resources of a quantum algorithm.
