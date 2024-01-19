@@ -24,7 +24,7 @@ quiz:
     - content: "Only SQL Server 2022."
       isCorrect: false
       explanation: "The Query Store was introduced in SQL Server 2016, so any SQL Server 2016 or later instance can use the Query Store."
-  - content: "Which of the following components predicts how many rows a query is likely to return?"
+  - content: "Which feature predicts how many rows a query is likely to return?"
     choices:
     - content: "The cardinality estimator."
       isCorrect: true
@@ -67,7 +67,7 @@ quiz:
       explanation: "The Query Store should capture a typical business cycle of actual user activity before making significant changes. A typical business cycle of reporting, user interaction, and bulk operations may be daily, biweekly, monthly, or even quarterly."
     - content: "It depends on the Query Store version."
       isCorrect: false
-      explanation: "The Query Store is available on all SQL Server versions starting with SQL Server 2016, but the SQL Server version has no relation to the amount of data collected."
+      explanation: "The Query Store should capture a typical business cycle of actual user activity before making significant changes. A typical business cycle of reporting, user interaction, and bulk operations may be daily, biweekly, monthly, or even quarterly."
   - content: "What's the correct order of steps for using the QTA to evaluate query regressions caused by upgrading a database from SQL Server 2012 to SQL Server 2022?"
     choices:
     - content: "Migrate the database to SQL Server 2022 and upgrade the compatibility level. Enable the Query Store and collect statistics on the database after the upgrade, and use the QTA to investigate regressing queries."
