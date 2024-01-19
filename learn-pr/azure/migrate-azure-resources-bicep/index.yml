@@ -22,12 +22,12 @@ prerequisites: |
   - The what-if operation.
   - Refactoring Bicep files to align with best practices.
 
-  Before you begin to follow the exercises in the module, you'll need the following items:
+  Before you start the exercises in the module, you'll need the following items:
 
   - An Azure account, with the ability to create resource groups. If you can't meet these requirements with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/) and create a new Azure subscription and tenant.
   - Local installations of the following software:
     - [Visual Studio Code](https://code.visualstudio.com)
-    - [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).
+    - [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
     - The latest version of one of the following command-line interface applications:
       - [Azure CLI](/cli/azure/install-azure-cli/)
       - [Azure PowerShell](/powershell/azure/install-az-ps/)
