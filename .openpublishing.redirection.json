@@ -19997,6 +19997,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/responsible-bots/index.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/5-secure-access-azure-iam-authentication.md",
       "redirect_url": "/azure/databricks/security/",
       "redirect_document_id": false
