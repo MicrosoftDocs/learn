@@ -9,7 +9,6 @@ metadata:
   ms.author: eric
   ms.topic: module
   ms.custom: devx-track-ansible
-  ms.prod: azure
 durationInMinutes: 9
 content: |
   [!include[](includes/5-explore-ansible-for-sap.md)]
