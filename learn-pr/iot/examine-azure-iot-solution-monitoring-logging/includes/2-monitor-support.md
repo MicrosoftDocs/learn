@@ -68,7 +68,7 @@ You can use diagnostic settings to route metrics and logs to the following locat
 * Azure Storage for archiving and offline analysis.
 * An Event Hubs endpoint where they can be read by external applications, for example, third-party security information and event management (SIEM) tools.
 
-Metric and log routing is described in more detail in [Examine diagnostic settings for Azure IoT Hub](4-diagnostic-settings.md).
+Metric and log routing is described in more detail in [Examine diagnostic settings for Azure IoT Hub](./4-diagnostic-settings.md).
 
 ## Data consumption
 
@@ -77,8 +77,8 @@ Metric and log routing is described in more detail in [Examine diagnostic settin
 You can analyze Azure Monitor data using the following built-in features:
 
 * IoT Hub overview page - The IoT Hub overview page includes a Monitor section with charts that show recent critical metrics. You can use this page to quickly assess the performance of the resource.
-* Metrics Explorer - You can use Metrics Explorer to interactively work with metric data and create metric alerts. You need minimal training to use Metrics Explorer, but you must be familiar with the metrics you want to analyze. Metrics Explorer and IoT Hub metrics are described further in [Examine Azure Monitor metrics for Azure IoT Hub](3-metrics.md).
-* Log Analytics - With Log Analytics, you can create log queries to interactively work with log data and create log query alerts. Log Analytics are described further in [Examine Log Analytics for Azure IoT Hub](5-log-analytics.md)
+* Metrics Explorer - You can use Metrics Explorer to interactively work with metric data and create metric alerts. You need minimal training to use Metrics Explorer, but you must be familiar with the metrics you want to analyze. Metrics Explorer and IoT Hub metrics are described further in [Examine Azure Monitor metrics for Azure IoT Hub](./3-metrics.md).
+* Log Analytics - With Log Analytics, you can create log queries to interactively work with log data and create log query alerts. Log Analytics are described further in [Examine Log Analytics for Azure IoT Hub](./5-log-analytics.md)
 
 ### Visualization tools
 
