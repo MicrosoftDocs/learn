@@ -13,13 +13,13 @@ title: Examine Azure IoT Hub monitoring and logging
 summary: This module describes Azure Monitor and other Azure tools used to monitor, log, and analyze IoT Hub data.
 abstract: |
   After you complete this module, you'll be able to:
-  - Describe Azure Monitor support for Azure IoT Hub.
-  - Describe metrics for Azure IoT Hub.
-  - Describe diagnostic settings for Azure IoT Hub.
-  - Describe log analytics for Azure IoT Hub.
-  - Describe alerts for Azure IoT Hub.
-  - Describe Service Health monitoring for Azure IoT Hub.
-  - Describe device monitoring for Azure IoT Hub.
+  - Describe Azure Monitor support for Azure IoT Hub
+  - Describe metrics for Azure IoT Hub
+  - Describe diagnostic settings for Azure IoT Hub
+  - Describe log analytics for Azure IoT Hub
+  - Describe alerts for Azure IoT Hub
+  - Describe Service Health monitoring for Azure IoT Hub
+  - Describe device monitoring for Azure IoT Hub
 
 prerequisites: |
   Ability to:

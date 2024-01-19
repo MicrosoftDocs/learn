@@ -1,4 +1,4 @@
-This module introduces IoT Hub monitoring using Azure Monitor, Event Grid, Azure Service Health, and other methods.
+This module introduces Azure IoT Hub monitoring and logging using Azure Monitor, Event Grid, Azure Service Health, and other methods.
 
 Suppose you joined a team that is implementing an Azure IoT-based solution for the company. The company needs your team to configure IoT Hub monitoring. Understanding how Azure Monitor and other monitoring methods work, especially to monitor IoT Hub, helps prepare the team to support the company's monitoring requirement. You decide to examine Azure's support for IoT Hub monitoring.
 
