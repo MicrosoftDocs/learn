@@ -109,38 +109,19 @@ In this task, you validate that the volume mount was successful.
     ```azurecli
     kubectl exec -i nginx -- sh -c "ls /mnt/azure"
     ```
-
-3.  To create a file named *hello* containing a single line of text '*Hello world*', run the following command:
-    
-    ```azurecli
-    kubectl exec -i nginx -- sh -c "echo 'Hello world' > /mnt/azure/hello"
-    ```
-
-4.  To list the content of the /mnt/azure directory (this time including the newly created *hello* file, run the following command:
-    
-    ```azurecli
-    kubectl exec -i nginx -- sh -c "echo 'Hello world' > /mnt/azure/hello"
-    ```
-
-5.  To list the content of the /mnt/azure directory (this time including the newly created *hello* file, run the following command:
-    
-    ```azurecli
-    kubectl exec -i nginx -- sh -c "ls /mnt/azure"
-    ```
-
-6.  To delete the nginx pod, run the following command:
+3.  To delete the nginx pod, run the following command:
     
     ```azurecli
     kubectl delete pod nginx
     ```
 
-7.  Now, re-create the nginx pod by running the following command:
+4.  Now, re-create the nginx pod by running the following command:
     
     ```azurecli
     kubectl apply -f pod-with-storage-mount.yaml
     ```
 
-8.  Finally, verify that the content of the mount is intact by running the following command:
+5.  Finally, verify that the content of the mount is intact by running the following command:
     
     ```azurecli
     kubectl exec -i nginx -- sh -c "ls /mnt/azure"
