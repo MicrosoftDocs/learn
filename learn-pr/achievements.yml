@@ -1997,6 +1997,11 @@ achievements:
   title: 'SC-100: Design a strategy for data and applications'
   summary: Learn how to design a cybersecurity strategy for data and applications.
   iconUrl: /training/achievements/sc-100-design-a-strategy-for-data-and-applications.svg
+- uid: learn.responsible-bots.trophy
+  type: trophy
+  title: Responsible bots
+  summary: Responsible chatbots imitate human behavior but are also useful, reliable, unbiased, and culturally aware. They respect privacy and welcome diverse users.
+  iconUrl: /training/achievements/responsible-bots.svg  
 - uid: learn.wwl.sc-100-design-security-for-infrastructure.trophy
   type: trophy
   title: 'SC-100: Design security for infrastructure'
