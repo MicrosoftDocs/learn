@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: rstearman
   ms.topic: module
-  ms.prod: azure
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

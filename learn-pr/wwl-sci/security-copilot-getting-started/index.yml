@@ -36,6 +36,10 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
   - microsoft-defender
   - microsoft-sentinel
   - defender-xdr
+  - intune
+  - defender-for-threat-intelligence
+  - mdeasm
+  - copilot
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - cloud-security
   - threat-protection
