@@ -44,7 +44,7 @@ The latest .NET 8 release has improved support for containerization. You can use
 
     The command has read the solution file, determined it contains three projects, built them, and created images for the store and products projects. The images are named after the projects and published into the local docker registry.
 
-1. Check the images are available in in docker:
+1. Check the images are available in docker:
 
     ```bash
     docker images
