@@ -26,7 +26,7 @@ Now, let's add another tile to this dashboard. First, you need to switch from vi
 
     :::image type="content" source="../media/8-add-visual.png" alt-text="Screenshot of results of query and adding visual to dashboard.":::
 
-1. The **Visual formatting** pane opens. Select **Visual type** > **Bar chart**.
+1. The **Visual formatting** pane opens. Select **Visual type** > **Bar chart** and change the **Tile name** to *Event count by state*.
 
     :::image type="content" source="../media/8-visual-formatting.png" alt-text="Screenshot of visual formatting options.":::
 

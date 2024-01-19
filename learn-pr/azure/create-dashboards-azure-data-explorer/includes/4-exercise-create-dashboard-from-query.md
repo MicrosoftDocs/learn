@@ -16,11 +16,11 @@ Start with a query that you want to pin to the dashboard. In this case, you shar
     | render timechart
     ```
 
-1. At the top right corner of the query editor, select **Share** > **Pin to dashboard**.
+1. At the top of the query editor or in the **help.Samples** pane, select **Pin to dashboard**.
 
     :::image type="content" source="../media/8-pin-query.png" alt-text="Screenshot of pin query to dashboard.":::
 
-1. In the **Pin to dashboard** pane that opens, fill in the following fields:
+1. In the **Pin to dashboard** pane that opens, set **Hide tile name** to off and fill in the following fields:
 
     :::image type="content" source="../media/8-pin-to-dashboard.png" alt-text="Screenshot of pin to dashboard options.":::
 
@@ -38,6 +38,6 @@ Start with a query that you want to pin to the dashboard. In this case, you shar
 
 ## Return to your dashboard
 
-If you exit the dashboard itself, you can return to the dashboard menu by selecting **Dashboards (Preview)** from the left pane, and then selecting the specific dashboard you wish to view.
+If you exit the dashboard itself, you can return to the dashboard menu by selecting **Dashboards** from the left pane, and then selecting the specific dashboard you wish to view.
 
 :::image type="content" source="../media/4-dashboards-access.png" alt-text="Screenshot of dashboards menu in left pane and list of dashboards.":::
