@@ -14,7 +14,7 @@ There are some key landmarks on the Security Copilot landing page (portal) to wh
 
 The home menu is accessed by selecting the home icon located on the top left corner of the Security Copilot landing page.
 
-:::image type="content" source="../media/home-icon-home-page-v2.png" lightbox="../media/home-icon-home-page-v2.png" alt-text="Screen capture of home menu icon and a the page it opens when selected.":::
+:::image type="content" source="../media/home-icon-home-page-v2.png" lightbox="../media/home-icon-home-page-v2.png" alt-text="Screen capture of the home menu icon and the page it opens when selected.":::
 
 From the home menu, the user can navigate as follows:
 
@@ -27,7 +27,7 @@ From the home menu, the user can navigate as follows:
 
     :::image type="content" source="../media/preferences-and-privacy.png" lightbox="../media/preferences-and-privacy.png" alt-text="Screen capture showing the options available on the settings page, which include tabs for preferences and data and privacy.":::
 
-- The tenant for which Security Copilot is provisioned. The tenant, which is provisioned for Security Copilot doesn't need to be the tenant your security analyst logs in from.  In the screenshot that follows, security analyst Angus MacGregor uses a Fabrikam account to log in. Security Copilot is provisioned in the Contoso tenant.  By selecting the down arrow, Angus MacGregor is able to select the Contoso tenant.
+- The tenant for which Security Copilot is provisioned. The tenant, which is provisioned for Security Copilot doesn't need to be the tenant your security analyst logs in from.  In the screenshot that follows, security analyst Angus MacGregor uses a Fabrikam account to sign in. Security Copilot is provisioned in the Contoso tenant.  By selecting the down arrow, Angus MacGregor is able to select the Contoso tenant.
 
     :::image type="content" source="../media/tenant-switcher-v3.png" lightbox="../media/tenant-switcher-v3.png" alt-text="Screen capture showing the tenant switching window, with multiple tenants listed.":::
 

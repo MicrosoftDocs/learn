@@ -88,7 +88,7 @@ Microsoft Defender XDR (previously known as Microsoft 365 Defender) is a unified
 There are two separate plugins in Security Copilot that relate to Microsoft Defender XDR (the user interface may still show Microsoft 365 Defender):
 
 - Microsoft 365 Defender
-- Natural language to Defender 365 KQL (NL2KQLDefender)
+- Natural language to Defender 365 KQL
 
 The role permission that grants the user access to Security Copilot determines the level of access to Microsoft Defender XDR data. There are no additional role permissions required to use the Microsoft Defender XDR plugin or the Natural language to Defender XDR KQL plugin.
 
@@ -112,13 +112,13 @@ With the Defender XDR plugin enabled, users can take advantage of the Microsoft 
 
 ***Natural language to KQL Defender plugin***
 
-The NL2KQLDefender (Natural language to Defender KQL) plugin enables query assistant functionality that converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. The query assistant saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst’s needs.
+The natural language to Defender KQL (NL2KQLDefender) plugin enables query assistant functionality that converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. The query assistant saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst’s needs.
 
 #### Microsoft Defender Threat Intelligence
 
 Microsoft Defender Threat Intelligence (Defender TI) is a platform that streamlines triage, incident response, threat hunting, vulnerability management, and cyber threat intelligence analyst workflows when conducting threat infrastructure analysis and gathering threat intelligence.
 
-Security Copilot integrates with Microsoft Defender TI. With the Defender TI plugin enabled, Security Copilot delivers information about threat activity groups, indicators of compromise (IOCs), and tools, as well as contextual threat intelligence. You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about your organization's or the global threat landscape. 
+Security Copilot integrates with Microsoft Defender TI. With the Defender TI plugin enabled, Security Copilot delivers information about threat activity groups, indicators of compromise (IOCs), tools, and contextual threat intelligence. You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about your organization's or the global threat landscape. 
 
 Defender TI is included in Security Copilot at no additional cost.
 
@@ -151,7 +151,7 @@ Microsoft Sentinel delivers intelligent security analytics and threat intelligen
 There are two separate plugins in Security Copilot that relate to Sentinel:
 
 - Sentinel
-- Natural language to Sentinel KQL (NL2KQLSentinel)  
+- Natural language to Sentinel KQL  
 
 :::image type="content" source="../media/sentinel-capabilities.png" lightbox="../media/sentinel-capabilities.png" alt-text="Screen capture of the Sentinel and NL2KQK in Sentinel plugin.":::
 
@@ -171,7 +171,7 @@ The Sentinel plugin capabilities are focused on incidents and workspaces. Additi
 
 ***Natural language to Sentinel KQL plugin***
 
-The NL2KQLSentinel (natural language to Sentinel KQL) plugin converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. This saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst’s needs.
+The natural language to Sentinel KQL (NL2KQLSentinel) plugin converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. This saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst’s needs.
 
 Selecting the prompt suggestion to generate and run Sentinel Hunting Queries, provides the user detailed guidance on how to craft the prompt and the type of information to include.  The more detailed information provided in the prompt to generate the hunting query the better the response.
 
