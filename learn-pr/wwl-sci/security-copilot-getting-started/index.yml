@@ -1,8 +1,7 @@
 ### YamlMime:Module
 uid: learn-wwl.security-copilot-getting-started
 metadata:
-  title: |
-    Get started with Microsoft Security Copilot
+  title: Get started with Microsoft Security Copilot
   description: "Get started with Microsoft Security Copilot"
   ms.date: 10/31/2023
   author: ceperezb

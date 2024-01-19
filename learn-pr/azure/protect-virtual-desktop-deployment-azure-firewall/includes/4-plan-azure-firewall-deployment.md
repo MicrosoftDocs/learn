@@ -7,7 +7,7 @@ Recall that Azure Firewall is best deployed by using a hub-and-spoke network top
 - A virtual network that acts as the central connectivity point. This network is the hub virtual network.
 - One or more virtual networks that are peered to the hub. These peers are the spoke virtual networks and are used to provision workload servers.
 
-You deploy the firewall instance in a subnet of the hub virtual network, and then configure all inbound and outbound traffic to go through the firewall. You'll use this configuration when you deploy Azure Firewall to protect the host pool for Azure Virtual Desktop.
+You can deploy the firewall instance in a subnet of the hub virtual network, then configure all inbound and outbound traffic to go through the firewall. You'll use this configuration when you deploy Azure Firewall to protect the host pool for Azure Virtual Desktop.
 
 ## Azure Firewall rules
 
@@ -25,13 +25,13 @@ Azure Firewall applies rules in priority order. Rules based on threat intelligen
 
 ## Deployment options
 
-Recall that Azure Firewall offers many features designed to make it easier to create and manage rules. The following table summarizes these features. To allow network traffic for Azure Virtual Desktop, you'll use FQDN tags, but you might also use these other options in your environment.
+Recall that Azure Firewall offers many features designed to make it easier to create and manage rules. The following table summarizes these features. To allow network traffic for Azure Virtual Desktop, you'll use FQDN tags, but you could also use these other options in your environment.
 
 |Feature  |Description  |
 |---------|---------|
-|FQDN     |A domain name of a host, or one or more IP addresses. Adding an FQDN to an application rule allows access to that domain. When you use an FQDN in an application rule, you can use wildcards, such as *.google.com.        |
-|FQDN tag     |A group of well-known Microsoft FQDNs. Adding an FQDN tag to an application rule allows outbound access to the tag's FQDNs. For example, there are FQDN tags for Windows Update, Azure Virtual Desktop, Windows diagnostics, and Azure Backup. FQDN tags are managed by Microsoft and can't be modified or created.       |
-|Service tag     |A group of IP address prefixes related to a specific Azure service. Adding a service tag to a network rule allows access to the service represented by the tag. There are service tags for dozens of Azure services, including Azure Backup, Azure Cosmos DB, and Azure Logic Apps. Service tags are managed by Microsoft and can't be modified or created.        |
+|FQDN     |A domain name of a host, or one or more IP addresses. Adding an FQDN to an application rule allows access to that domain. When you use an FQDN in an application rule, you can use wildcards, such as **.google.com*.        |
+|FQDN tag     |A group of well-known Microsoft FQDNs. Adding an FQDN tag to an application rule allows outbound access to the tag's FQDNs. For example, there are FQDN tags for Windows Update, Azure Virtual Desktop, Windows diagnostics, and Azure Backup. Microsoft manages FQDN tags, and you can't modify or create them.       |
+|Service tag     |A group of IP address prefixes related to a specific Azure service. Adding a service tag to a network rule allows access to the service represented by the tag. There are service tags for dozens of Azure services, including Azure Backup, Azure Cosmos DB, and Azure Logic Apps. Microsoft manages service tags, and you can't modify or create them.        |
 |IP groups     |A group of IP addresses, such as 10.2.0.0/16 or 10.1.0.0-10.1.0.31. You can use an IP group as the source address in a NAT or application rule, or as the source or destination address in a network rule.        |
 |Custom DNS     |A custom DNS server that resolves domain names to IP addresses. If you use a custom DNS server rather than Azure DNS, you must also configure Azure Firewall as a DNS proxy.        |
 |DNS proxy     |You can configure Azure Firewall to act as a DNS proxy, which means that all client DNS requests go through the firewall before going to the DNS server.        |
@@ -40,16 +40,16 @@ Recall that Azure Firewall offers many features designed to make it easier to cr
 
 In the previous exercise, you created a host pool and virtual network with a subnet. You deployed a session host VM into that subnet and registered it with the host pool. In the next exercises, you'll complete the following steps to deploy Azure Firewall to protect the host pool.
 
-1. Set up the network.
+1. Set up the network:
 
     - Create a hub virtual network that includes a subnet for the firewall deployment.
     - Peer the hub and spoke networks. In the next exercise, you'll peer the hub virtual network with the virtual network used by the host pool of Azure Virtual Desktop.  
 
-1. Deploy Azure Firewall.
+1. Deploy Azure Firewall:
 
     - Deploy Azure Firewall to a subnet in the hub virtual network.
     - For outbound traffic, create a default route that sends traffic from all subnets to the firewall's private IP address.
 
-1. Create Azure Firewall rules.
+1. Create Azure Firewall rules:
 
     - Configure the firewall with rules to filter inbound and outbound traffic.
