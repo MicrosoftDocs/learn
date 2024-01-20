@@ -1,10 +1,10 @@
-Blazor is a fully-featured web UI framework designed to handle the needs of most modern web apps. But whether Blazor is the right framework for you depends on a number of factors.
+Blazor is a fully featured web UI framework designed to handle the needs of most modern web apps. But whether Blazor is the right framework for you depends on many factors.
 
 You should consider using Blazor for web development if:
 
-- You're looking for a highly-productive full stack web development solution.
+- You're looking for a highly productive full stack web development solution.
 - You need to deliver web experiences quickly without the need for a separate frontend development team.
-- You're already using .NET, and you want to leverage your existing .NET skills and resources on the web.
+- You're already using .NET, and you want to apply your existing .NET skills and resources on the web.
 - You need a high-performance and highly scalable backend to power your web app.
 
 Blazor may not be a good fit if:
