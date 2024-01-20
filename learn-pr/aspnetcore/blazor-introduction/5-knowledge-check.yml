@@ -64,7 +64,7 @@ quiz:
         - content: "Minimal download size."
           isCorrect: true
           explanation: "While server-based Blazor apps can load quickly, running .NET code on the client requires downloading a small .NET runtime with the app."
-    - content: "Which of the following is valid reason to not use Blazor?"
+    - content: "Which of the following reasons is valid reason to not use Blazor?"
       choices:
         - content: "You need to use an existing React component in your web app."
           isCorrect: false
