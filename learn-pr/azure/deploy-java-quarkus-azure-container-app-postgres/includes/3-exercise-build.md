@@ -1,18 +1,18 @@
 In this unit, you create a basic Quarkus application. You use Maven to bootstrap the application and an integrated development environment (IDE) of your choice to edit the code. Use a terminal of your choice to run the code. You use Docker to start a local PostgreSQL database so you can run and test your to-do application locally.
 
-## Generate the Quarkus application using Maven
+## Generate the Quarkus application by using Maven
 
-There are different ways to generate a Quarkus project structure for you. You can use the [Quarkus web interface](https://code.quarkus.io), an IDE plugin, or the Quarkus Maven plugin. Let's use the Maven plugin to generate the project structure.
+There are different ways to generate a Quarkus project structure. You can use the [Quarkus web interface](https://code.quarkus.io), an IDE plugin, or the Quarkus Maven plugin. Let's use the Maven plugin to generate the project structure.
 
 You generate your application with several dependencies:
 
-* the `resteasy` dependency to expose a REST endpoint,
-* the `jackson` dependency to serialize and deserialize JSON,
-* the `hibernate` dependency to interact with the database,
-* the `postgresql` dependency to connect to the PostgreSQL database,
-* and the `docker` dependency to build a Docker image.
+* The `resteasy` dependency to expose a REST endpoint
+* The `jackson` dependency to serialize and deserialize JSON
+* The `hibernate` dependency to interact with the database
+* The `postgresql` dependency to connect to the PostgreSQL database
+* The `docker` dependency to build a Docker image
 
-You don't need to specify Azure dependencies because you run your application locally first, and then deploy a containerized version of the application to Azure Container Apps.
+You don't need to specify Azure dependencies because you run your application locally first and then deploy a containerized version of it to Azure Container Apps.
 
 At a command prompt, generate the to-do application:
 
