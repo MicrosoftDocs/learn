@@ -33,7 +33,7 @@ Below is an example of a simple Blazor counter component implemented in Razor. M
 
 ## Server and client-side rendering
 
-Blazor supports both server and client-side rendering of components to handle a variety of web UI architectures. Components rendered from the server can access server resources, like databases and backend services. By default, Blazor components are rendered statically from the server, generating HTML in response to requests.
+Blazor supports both server and client-side rendering of components to handle various web UI architectures. Components rendered from the server can access server resources, like databases and backend services. By default, Blazor components are rendered statically from the server, generating HTML in response to requests.
 
 You can also configure server components to be interactive, so they can handle arbitrary UI events, maintain state across interactions, and render updates dynamically. Interactive server components handle UI interactions and updates over a WebSocket connection with the browser.
 
