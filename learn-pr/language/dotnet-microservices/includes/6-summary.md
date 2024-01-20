@@ -22,6 +22,7 @@ You can delete the codespace on [GitHub](https://github.com/codespaces) under **
 
 These resources can help you learn more about microservices with .NET:
 
+- [Containers with .NET and Docker for Beginners](https://aka.ms/dotnet/beginnervideos/youtube/containers)
 - [Microservices explained | Build your first microservice with .NET (Video)](https://youtu.be/DFDbh1c9zyE)
 - [.NET microservices: Architecture for containerized .NET applications](/dotnet/architecture/microservices/)
 - [Create and deploy a cloud-native ASP.NET Core microservice](/training/modules/microservices-aspnet-core/)
