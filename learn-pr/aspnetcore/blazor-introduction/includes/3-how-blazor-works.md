@@ -6,7 +6,7 @@ Blazor apps are built from components. A Blazor component is a reusable piece of
 
 ## Use standard web technologies
 
-You author Blazor components using Razor syntax, a convenient mixture of HTML, CSS, and C#. A Razor file contains plain HTML and then C# to define any rendering logic, like for conditionals, control flow, and expression evaluation. Razor files are then compiled into C# classes that encapsulate the component's rendering logic. Because a Blazor components authored in Razor are just C# classes, you can call arbirary .NET code from your components.
+You author Blazor components using Razor syntax, a convenient mixture of HTML, CSS, and C#. A Razor file contains plain HTML and then C# to define any rendering logic, like for conditionals, control flow, and expression evaluation. Razor files are then compiled into C# classes that encapsulate the component's rendering logic. Because Blazor components authored in Razor are just C# classes, you can call arbitrary .NET code from your components.
 
 ## UI event handling and data binding
 
@@ -47,4 +47,4 @@ You can choose to render different components from the server or the client with
 
 ## Using Blazor to build a pizza shop
 
-The UI of the pizza shop app breaks down into many reusable components: a page layout with a navbar, individual pages, a pizza catalog and editor, an order component, and so on. Blazor provides build-in support for many of these components, like components for forms and validation. Many of the pages in the app can be handled from the server using static server-side rendering so that the site is mostly stateless and ready to scale. Where more interactivity is needed, the components are made interactive by applying an interactive render mode. To offload work form the server, interactive components are rendered on the client via WebAssembly. By building the entire app with a single web development stack, the app comes together quickly and soon the pizza orders are flowing in.
+The UI of the pizza shop app breaks down into many reusable components: a page layout with a navbar, individual pages, a pizza catalog and editor, an order component, and so on. Blazor provides build-in support for many of these components, like components for forms and validation. Many of the pages in the app can be handled from the server using static server-side rendering so that the site is mostly stateless and ready to scale. Where more interactivity is needed, the components are made interactive by applying an interactive render mode. To offload work from the server, interactive components are rendered on the client via WebAssembly. By building the entire app with a single web development stack, the app comes together quickly and soon the pizza orders are flowing in.
