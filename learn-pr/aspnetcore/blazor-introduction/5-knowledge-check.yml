@@ -21,7 +21,7 @@ quiz:
           explanation: "Blazor supports running your components on WebAssembly, but it can do much more! Blazor is a complete web UI framework that supports both server and client-side rendering."
         - content: "A native UI framework for building Windows desktop apps."
           isCorrect: false
-          explanation: "Blazor is a web UI framework, not a native UI framework, although you can use Blazor components to buid native apps using a hybrid of web UI and native functionality."
+          explanation: "Blazor is a web UI framework, not a native UI framework, although you can use Blazor components to build native apps using a hybrid of web UI and native functionality."
         - content: "A modern frontend web framework based on HTML, CSS, and C#"
           isCorrect: true
           explanation: "Blazor is a modern frontend web framework based on HTML, CSS, and C#."
@@ -50,31 +50,31 @@ quiz:
         - content: "False"
           isCorrect: false
           explanation: "Blazor supports JavaScript interop, which lets you call JavaScript libraries and APIs from your Blazor apps."
-    - content: "Which of the following is not a benefit of using Blazor?"
+    - content: "Which of the following benefits is not a benefit of using Blazor?"
       choices:
         - content: "Build web UI fast with reusable components."
           isCorrect: false
           explanation: "Reusable Blazor components make it easy to assemble a web app quickly."
         - content: "Support for server and client-side rendering"
           isCorrect: false
-          explanation: "The ability to render Blazor components both from the server and the client enables building a variety of web app architectures and optmizing the user experience."
+          explanation: "The ability to render Blazor components both from the server and the client enables building various web app architectures and optimizing the user experience."
         - content: "Build the frontend and backend with one development stack."
           isCorrect: false
-          explanation: "Building both the frontend and backend with .NET leverages a common skillset, enables code sharing, and reduces complexity."
+          explanation: "Building both the frontend and backend with .NET uses a common skillset, enables code sharing, and reduces complexity."
         - content: "Minimal download size."
           isCorrect: true
-          explanation: "While server-based Blazor apps can load very quickly, running .NET code on the client requires downloading a small .NET runtime with the app."
+          explanation: "While server-based Blazor apps can load quickly, running .NET code on the client requires downloading a small .NET runtime with the app."
     - content: "Which of the following is valid reason to not use Blazor?"
       choices:
         - content: "You need to use an existing React component in your web app."
           isCorrect: false
-          explanation: "You can typically use components from other frontend frameworks in Blazor as HTML custom elements. However, if you need to use a lot of components from other frameworks, then Blazor may not be the best choice."
+          explanation: "You can typically use components from other frontend frameworks in Blazor as HTML custom elements. However, if you need to use many components from other frameworks, then Blazor may not be the best choice."
         - content: "You need to host our web app on a cheap static site host, like GitHub Pages."
           isCorrect: false
           explanation: "Blazor apps be configured to run fully on the client via WebAssembly and can be deployed as static sites."
         - content: "You don't know C#."
           isCorrect: false
-          explanation: "Learning C# is well worth the investment! With C# in your developer toolbelt you can use .NET to build virtually any type of app, including web apps, native mobile & desktop apps, games, and much more!"
+          explanation: "Learning C# is worth the investment! With C# in your developer toolbelt you can use .NET to build virtually any type of app, including web apps, native mobile & desktop apps, games, and much more!"
         - content: "You need to support older browsers."
           isCorrect: true
           explanation: "Blazor supports all modern browsers, but if you need to support older browsers that don't support modern web platform features, then Blazor may not be the best choice."
