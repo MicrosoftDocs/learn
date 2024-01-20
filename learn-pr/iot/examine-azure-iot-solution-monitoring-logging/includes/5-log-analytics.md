@@ -4,7 +4,7 @@ Data in Azure Monitor Logs is stored in tables where each table has its own set 
 
 To route data to Azure Monitor Logs, you must create a diagnostic setting to send resource logs or platform metrics to a Log Analytics workspace.
 
-Log Analytics queries use the [Kusto](/azure/data-explorer/kusto/query/) programming language. You might write a simple query that returns a set of records and then use features of Log Analytics to sort, filter, and analyze them. Or you might write a more advanced query to perform statistical analysis and visualize the results in a chart to identify a particular trend.
+Log Analytics queries use the [Kusto](/azure/data-explorer/kusto/query/) programming language. You might write a query that returns a set of records and then use features of Log Analytics to sort, filter, and analyze them. Or you might write a more advanced query to perform statistical analysis and visualize the results in a chart to identify a particular trend.
 
 Whether you work with the results of your queries interactively or use them with other Azure Monitor features, such as log query alerts or workbooks, Log Analytics is the tool that you'll use to write and test them.
 
@@ -14,7 +14,7 @@ To perform Log Analytics, navigate to the Azure portal and open your IoT hub, th
 
 :::image type="content" source="../media/log-analytics-main.png" alt-text="Image of the Log Analytics main page.":::
 
-Use the Log Analytics editor to edit or create queries. Use the **Run** button to execute a query.
+Use the Log Analytics editor to edit or create queries. Then select **Run** to execute a query.
 
 :::image type="content" source="../media/log-analytics-editor.png" alt-text="Image of the Log Analytics editor.":::
 
@@ -22,7 +22,7 @@ For a list of IoT Hub tables used by Azure Monitor Logs and queryable by Log Ana
 
 ### Sample Kusto queries
 
-IoT Hub Log Analytics includes the following Kusto queries to help monitor your IoT Hub. To see a query Kusto definition for these queries, see [Sample Kusto queries](/azure/iot-hub/monitor-iot-hub#sample-kusto-queries).
+IoT Hub Log Analytics includes the following Kusto queries to help monitor your IoT Hub. To view a Kusto query definition for the following queries, see [Sample Kusto queries](/azure/iot-hub/monitor-iot-hub#sample-kusto-queries).
 
 * **Connectivity Errors**: Identify device connection errors.
 * **Throttling Errors**: Identify devices that made the most requests resulting in throttling errors.
@@ -34,7 +34,7 @@ IoT Hub Log Analytics includes the following Kusto queries to help monitor your 
 
 For more information about Log Analytics, see [Overview of Log Analytics in Azure Monitor](/azure/azure-monitor/logs/log-analytics-overview).
 
-### Analyse Activity Logs
+### Analyze Activity Logs
 
 The Activity log is a platform login Azure that provides insight into subscription-level events. You can view it independently or route it to Azure Monitor Logs, where you can do more complex queries using Log Analytics.
 

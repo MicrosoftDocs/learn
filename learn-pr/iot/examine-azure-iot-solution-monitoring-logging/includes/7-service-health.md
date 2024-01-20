@@ -8,9 +8,13 @@ Azure Resource Health is part of Azure Service Health and tracks the health of i
 
 To see status and status history of your IoT hub using the portal, follow these steps:
 
-1. In the Azure portal, go to your IoT hub.
+1. In the Azure portal, navigate to your IoT hub.
 
-1. On the left pane, under **Support + troubleshooting**, select **Resource Health**.
+1. On the left pane, under **Help**, select **Resource Health**.
+
+1. From the **Subscription** drop-down menu, select your subscription.
+
+1. From the **Resource type** drop-down menu, select **IoT Hub**.
 
 To learn more about Azure Resource Health and how to interpret health data, see [Resource Health overview](/azure/service-health/resource-health-overview) in the Azure Service Health documentation.
 
@@ -20,13 +24,15 @@ You can also select **Add resource health alert** to configure alerts to trigger
 
 With Azure Service Health, you can check the health status of all IoT hubs in your subscription.
 
-Sign in to the Azure portal.
+1. In your Azure portal search bar, enter **Service health**.
 
-Navigate to **Service Health**, then select **Resource health**.
+1. Select **Service Health** from the results list.
 
-From the drop-down menus, select your subscription then **IoT Hub** as the resource type.
+1. From the **Subscription** drop-down menu, select your subscription.
 
-You see a list all IoT hubs in your subscription.
+1. From the **Service** drop-down menu, select **Azure IoT Hub**.
+
+1. You see a list all IoT hubs in your subscription.
 
 To learn more about Azure Service Health and how to interpret health data, see [Service Health overview](/azure/service-health/service-health-overview) in the Azure Service Health documentation.
 

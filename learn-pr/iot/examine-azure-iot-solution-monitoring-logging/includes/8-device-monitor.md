@@ -1,4 +1,4 @@
-Azure IoT Hub supports several methods for monitoring the status of your devices. While Azure Monitor is the preferred agregate device monitoring solution, typically for large numbers of devices, this unit presents device monitoring methods better suited to respond to individual device outages. It provides guidance to help you choose the best option for your IoT solution.
+Azure IoT Hub supports several methods for monitoring the status of your devices. While Azure Monitor is the preferred aggregate device monitoring solution, typically for large numbers of devices, this unit presents device monitoring methods better suited to respond to individual device outages. It provides guidance to help you choose the best option for your IoT solution.
 
 The following table introduces three ways to monitor your device connection status:
 
@@ -8,7 +8,7 @@ The following table introduces three ways to monitor your device connection stat
 | Event Grid | 60 seconds | Low | Low |
 | Custom device heartbeat pattern | Custom | High | High |
 
-Because of its reliability, low cost, and ease of use we recommend [Event Grid](/azure/event-grid/overview) as the preferred individual device monitoring solution for most customers.
+Because of its reliability, low cost, and ease of use, we recommend [Event Grid](/azure/event-grid/overview) as the preferred individual device monitoring solution for most customers.
 
 However, there are certain limitations to monitoring with Event Grid that may disqualify it for some IoT solutions. This unit discusses the benefits and limitations of each option.
 
@@ -24,6 +24,8 @@ The connection state property has several limitations:
 For these reasons, we recommend that you only use the **connectionState** field during development and debugging. IoT solutions shouldn't query the field at run time. For example, don't query the **connectionState** field to check if a device is connected before you send a cloud-to-device message or an SMS.
 
 ## Event Grid
+
+[Azure Event Grid](/azure/event-grid/overview) is a fully managed event routing service that uses a publish-subscribe model. Event Grid has built-in support for Azure services like Azure Functions and Azure Logic Apps, and can deliver event alerts to non-Azure services using webhooks. For a complete list of the event handlers that Event Grid supports, see [Event Handlers](/azure/event-grid/overview#event-handlers)
 
 Subscribe to the **deviceConnected** and **deviceDisconnected** events on Event Grid to get alerts and monitor the device connection state.
 
@@ -42,7 +44,7 @@ For devices connecting using the Azure IoT SDKs for .NET or C, connection state 
 
 Outside of the Azure IoT SDKs, in MQTT these operations equate to SUBSCRIBE or PUBLISH operations on the appropriate messaging topics. Over AMQP these operations equate to attaching or transferring a message on the appropriate link paths.
 
-## Event Grid limitations
+### Event Grid limitations
 
 Using Event Grid to monitor your device status comes with the following limitations:
 
@@ -56,11 +58,11 @@ If any of these limitations affect your ability to use Event Grid for device sta
 
 If you need to know the connection state of your devices but the limitations of Event Grid are too restricting for your solution, you can implement the *heartbeat pattern*. In the heartbeat pattern, the device sends device-to-cloud messages at least once every fixed amount of time (for example, at least once every hour). Even if a device doesn't have any data to send, it still sends an empty device-to-cloud message, usually with a property that identifies it as a heartbeat message. On the service side, the solution maintains a map with the last heartbeat received for each device. If the solution doesn't receive a heartbeat message within the expected time from the device, it assumes that there's a problem with the device.
 
-## Device heartbeat limitations
+### Device heartbeat limitations
 
 Since heartbeat messages are implemented as device-to-cloud messages, they count against your [IoT Hub message quota and throttling limits](/azure/iot-hub/iot-hub-devguide-quotas-throttling).
 
-## Short expiry time pattern
+### Short expiry time pattern
 
 If an IoT solution uses the connection state solely to determine whether to send cloud-to-device messages to a device, and messages aren't broadcast to large sets of devices, consider using the *short expiry time pattern* as a simpler alternative to the heartbeat pattern. The short expiry time pattern is a way to determine whether to send cloud-to-device messages by sending messages with a short message expiration time and requesting message acknowledgments from the devices.
 

@@ -1,5 +1,9 @@
 Azure Monitor alerts proactively notify you when important conditions are found in your monitoring data. They allow you to identify and address issues in your system before your customers notice them.
 
+You can access alerts from your IoT Hub menu by selecting **Alerts** from within the **Monitoring** section.
+
+## How alerts work
+
 The following diagram shows an overview of how alerts work.
 
 :::image type="content" source="../media/alerts-overview.png" alt-text="Diagram that explains Azure Monitor alerts.":::
@@ -16,9 +20,11 @@ An **alert** is triggered if the conditions of the alert rule are met. The alert
 
 Alerts are stored for 30 days and are deleted after the 30-day retention period. You can see all alert instances for all of your Azure resources on the Alerts page in the Azure portal.
 
+## Elements of alerts
+
 Alerts consist of:
 
-* **Action groups**: These groups can trigger notifications or an automated workflow to let users know that an alert has been triggered. Action groups can include:
+* **Action groups**: These groups can trigger notifications or an automated workflow to let users know that an alert is triggered. Action groups can include:
 
   * Notification methods, such as email, SMS, and push notifications.
   * Automation runbooks.

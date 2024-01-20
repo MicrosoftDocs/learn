@@ -1,4 +1,4 @@
-You can configure, monitor, troubleshoot, and analyze Azure IoT Hub communications and data using Azure Monitor metrics, alerts, diagnostic settings, and log analytics. This unit provides an overview of the elements of Azure Monitor, how data flows through Azure Monitor, and a high-level overview of how Azure Iot Hub connects to Azure Monitor. Subsequent units provider more detail about Azure Monitor diagnostic settings, alerts, and log analytics.
+You can configure, monitor, troubleshoot, and analyze Azure IoT Hub communications and data using Azure Monitor metrics, alerts, diagnostic settings, and log analytics. This unit provides an overview of the elements of Azure Monitor, how data flows through Azure Monitor, and a high-level overview of how Azure Iot Hub connects to Azure Monitor. Subsequent units of this module provider more detail about Azure Monitor diagnostic settings, alerts, and log analytics.
 
 ## Overview
 
@@ -21,13 +21,13 @@ The following diagram shows a high-level view of Azure Monitor system components
 
 * The **Data Sources** section of the diagram shows the types of data that can be collected from each monitored resource. Azure Monitor **collects** data from the data sources and routes the data to the data platform.
 * The **Data Platform** section of the diagram shows the categorized monitoring data. Azure Monitor's core data platform has stores for metrics, logs, traces, and changes.
-* The **Consumption** section of the diagram shows the components that use data from the data platform. Azure Monitor's core consumption methods include tools to provide **insights**, **visualize**, **analyze**, and **respond** to data. The visualization tools build on the analysis tools and the insights build on top of both the visualization and analysis tools. Azure IoT Hub includes support for Metric Explorer, Log Analytics, and Alerts.
+* The **Consumption** section of the diagram shows the components that use data from the data platform. Azure Monitor's core consumption methods include tools to provide **insights**, **visualize**, **analyze**, and **respond** to data. The visualization tools build on the analysis tools and the insights build on top of both the visualization and analysis tools. Azure IoT Hub includes consumption support for Metric Explorer, Log Analytics, and Alerts.
 
 The following sections provide more detail regarding data storage, collection, and consumption.
 
 ## Data collection
 
-Azure Monitor automatically collects for each resource in your configuration.
+Azure Monitor automatically collects data for each resource in your configuration.
 
 Azure Monitor collects data from each of the following tiers:
 
@@ -68,27 +68,27 @@ You can use diagnostic settings to route metrics and logs to the following locat
 * Azure Storage for archiving and offline analysis.
 * An Event Hubs endpoint where they can be read by external applications, for example, third-party security information and event management (SIEM) tools.
 
-Metric and log routing is described in more detail in [Examine diagnostic settings for Azure IoT Hub](./4-diagnostic-settings.md).
+Metric and log routing is described in more detail in the Examine diagnostic settings for Azure IoT Hub unit page.
 
 ## Data consumption
 
-### Analysis features
+### Azure IoT Hub Analysis features
 
-You can analyze Azure Monitor data using the following built-in features:
+You can analyze Azure IoT Hub monitor data using the following built-in Azure IoT Hub features:
 
-* IoT Hub overview page - The IoT Hub overview page includes a Monitor section with charts that show recent critical metrics. You can use this page to quickly assess the performance of the resource.
-* Metrics Explorer - You can use Metrics Explorer to interactively work with metric data and create metric alerts. You need minimal training to use Metrics Explorer, but you must be familiar with the metrics you want to analyze. Metrics Explorer and IoT Hub metrics are described further in [Examine Azure Monitor metrics for Azure IoT Hub](./3-metrics.md).
-* Log Analytics - With Log Analytics, you can create log queries to interactively work with log data and create log query alerts. Log Analytics are described further in [Examine Log Analytics for Azure IoT Hub](./5-log-analytics.md)
+* IoT Hub **Overview** page - The IoT Hub overview page includes charts that show recent critical metrics. You can use this page to quickly assess the performance of the resource.
+* **Metrics Explorer** - You can use Metrics Explorer to interactively work with metric data and create metric alerts. You need minimal training to use Metrics Explorer, but you must be familiar with the metrics you want to analyze. Metrics Explorer and IoT Hub metrics are described further in the Examine metrics for Azure IoT Hub unit page.
+* **Log Analytics** - With Log Analytics, you can create log queries to interactively work with log data and create log query alerts. Log Analytics is described further in the Examine Log Analytics for Azure IoT Hub unit page.
 
 ### Visualization tools
 
-You can visualize Azure Monitor data using the following built-in visualization tools:
+You can visualize Azure Monitor data using the following built-in tools:
 
-* Azure workbooks - Provide a flexible canvas for data analysis and the creation of rich visual reports. You can use workbooks to tap into multiple data sources from across Azure and combine them into unified interactive experiences. They're especially useful to prepare end-to-end monitoring views across multiple Azure resources. Insights use prebuilt workbooks to present you with critical health and performance information for a particular service.
-* Azure Dashboards - Are useful in providing a "single pane of glass" of your Azure infrastructure and services. While a workbook provides richer functionality, a dashboard can combine Azure Monitor data with data from other Azure services.
-* Grafana - an open platform that excels in operational dashboards. It's useful for:
+* **Workbooks** - Provide a flexible canvas for data analysis and the creation of rich visual reports. You can use workbooks to tap into multiple data sources from across Azure and combine them into unified interactive experiences. They're especially useful to prepare end-to-end monitoring views across multiple Azure resources. Insights use prebuilt workbooks to present you with critical health and performance information for a particular service.
+* **Dashboards** - Are useful in providing a "single pane of glass" of your Azure infrastructure and services. While a workbook provides richer functionality, a dashboard can combine Azure Monitor data with data from other Azure services.
+* **Grafana** - an open platform that excels in operational dashboards. It's useful for:
   * Detecting, isolating, and triaging operational incidents.
   * Combining visualizations of Azure and non-Azure data sources. These sources include on-premises, third-party tools, and data stores in other clouds.
-* Power BI - Power BI is useful for creating business-centric dashboards and reports, along with reports that analyze long-term KPI trends. You can import the results of a log query into a Power BI dataset. Then you can take advantage of its features, such as combining data from different sources and sharing reports on the web and mobile devices.
+* **Power BI** - Power BI is useful for creating business-centric dashboards and reports, along with reports that analyze long-term KPI trends. You can import the results of a log query into a Power BI dataset. Then you can take advantage of its features, such as combining data from different sources and sharing reports on the web and mobile devices.
 
 For more information about built-in visualization tools, see [Built-in visualization tools](/azure/azure-monitor/best-practices-analysis#built-in-visualization-tools).

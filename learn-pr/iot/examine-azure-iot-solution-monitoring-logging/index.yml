@@ -10,7 +10,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.service: iot-hub
 title: Examine Azure IoT Hub monitoring and logging
-summary: This module describes Azure Monitor and other Azure tools used to monitor, log, and analyze IoT Hub data.
+summary: This module describes Azure Monitor and other Azure tools that can be used to monitor, log, and analyze Azure IoT Hub data.
 abstract: |
   After you complete this module, you'll be able to:
   - Describe Azure Monitor support for Azure IoT Hub
