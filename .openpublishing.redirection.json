@@ -31657,17 +31657,17 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/aspnetcore/aspnetcore/blazor-introduction/3-when-to-use-blazor.yml",
+      "source_path": "learn-pr/aspnetcore/blazor-introduction/3-when-to-use-blazor.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/blazor-introduction/4-when-to-use-blazor",
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/aspnetcore/aspnetcore/blazor-introduction/4-knowledge-check.yml",
+      "source_path": "learn-pr/aspnetcore/blazor-introduction/4-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/blazor-introduction/5-knowledge-check",
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/aspnetcore/aspnetcore/blazor-introduction/5-summary.yml",
+      "source_path": "learn-pr/aspnetcore/blazor-introduction/5-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/blazor-introduction/6-summary",
       "redirect_document_id": true
     },
