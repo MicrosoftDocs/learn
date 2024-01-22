@@ -28,9 +28,9 @@ mvn -U io.quarkus:quarkus-maven-plugin:2.15.1.Final:create \
 ```
 
 > [!NOTE]
-> By default the project is generated using Java 17. We use the `javaVersion` parameter to override the default value and use Java 11.
+> By default, the project is generated with Java 17. The preceding command uses the `DjavaVersion` parameter to override the default value and use Java 11.
 
-This command creates a new Quarkus project. Despite generating a Maven directory structure (`src/main/java` for code source and `src/test/java` for tests), it has created some Java classes, some tests and some Dockerfiles. It has also generated a `pom.xml` file with all the needed dependencies (Hibernate, RestEasy, Jackson, PostgreSQL and Docker).  
+This command creates a new Quarkus project. It generates a Maven directory structure (`src/main/java` for code source and `src/test/java` for tests). It creates some Java classes, some tests, and some Dockerfiles. It also generates a `pom.xml` file with all the needed dependencies (Hibernate, RESTEasy, Jackson, PostgreSQL, and Docker).
 
 ```xml
   <dependencies>
@@ -72,15 +72,15 @@ This command creates a new Quarkus project. Despite generating a Maven directory
 ```
 
 > [!NOTE]
-> All the dependencies in the `pom.xml` are defined in the Quarkus BOM (Bill of Materials) `io.quarkus.platform:quarkus-bom`.
+> All the dependencies in the `pom.xml` are defined in the Quarkus BOM (bill of materials) `io.quarkus.platform:quarkus-bom`.
 
 ## Code the application
 
 Next, create a new `Todo` Java class and add the following Java code. It uses Java Persistence API (`javax.persistence.Entity` package) to store and retrieve data from your PostgreSQL server. It also uses [Hibernate ORM with Panache](https://quarkus.io/guides/hibernate-orm-panache) (inheriting from `io.quarkus.hibernate.orm.panache.PanacheEntity`) to simplify the persistence layer.
 
-You use a JPA entity (`@Entity`) to map the Java `Todo` object directly to the PostgreSQL `Todo` table. Then, the `TodoResource` REST endpoint creates a new `Todo` entity class and persist it. This class is a domain model that's mapped on the `Todo` table. The table will be automatically created by JPA.
+You use a JPA entity (`@Entity`) to map the Java `Todo` object directly to the PostgreSQL `Todo` table. The `TodoResource` REST endpoint then creates a new `Todo` entity class and persists it. This class is a domain model that's mapped on the `Todo` table. The table is automatically created by JPA.
 
-By extending `PanacheEntity`, you get a bunch of generic create, read, update, and delete (CRUD) methods for your type. So you can do things like saving and deleting `Todo` objects in just one line of Java code.
+Extending `PanacheEntity` gets you a number of generic create, read, update, and delete (CRUD) methods for your type. So you can do things like saving and deleting `Todo` objects in just one line of Java code.
 
 Add the following code to the `Todo` entity:
 
