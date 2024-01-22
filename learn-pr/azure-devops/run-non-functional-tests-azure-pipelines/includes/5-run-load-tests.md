@@ -79,7 +79,7 @@ Let's add the pipeline variables now, before you update your pipeline configurat
     > [!NOTE]
     > This is the version of JMeter that we last used to test this module. To get the latest version, see [Download Apache JMeter](https://jmeter.apache.org/download_jmeter.cgi?azure-portal=true).
 
-1. To save your variable to the pipeline,  select **Save**near the top of the page.
+1. To save your variable to the pipeline,  select **Save** near the top of the page.
 
     Your variable group resembles the one shown in the following image:
 
