@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to build an AI-powered workplace helper app using Microsoft Azure."
   ms.date: 12/12/2023
   author: reneenoble
-  ms.author: v-rdowner
+  ms.author: reneenoble
   ms.topic: unit
 durationInMinutes: 2
 content: |
