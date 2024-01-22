@@ -4,7 +4,7 @@ In this exercise, you create a Docker Compose YAML file. Then you use the Docker
 
 ## Connect to the codespace
 
-To connect to the codespace:
+If you have disconnected from the codespace you used in the previous exercise, reconnect now:
 
 1. Open a browser and go to the [eShopLite repository](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative).
 1. Select **Code**, and then select the **Codespaces** tab.
@@ -13,10 +13,10 @@ To connect to the codespace:
 
 ## Create the Docker Compose file
 
-Use the Docker Compose file to configure images for both the back-end and the front-end services.
+Use the docker-compose file to configure images for both the back-end and front-end services:
 
-1. In the top folder of the codespace (the folder that contains *README.md*), open the file named *docker-compose.yml*.
-1. Add the following code to the file:
+1. In the dotnet-docker folder of the codespace (the same folder with README.md), open the file named ./dotnet-docker/docker-compose.yml. This file will be empty.
+1. Add the following code to the docker-compose.yml file:
 
     ```yml
     version: '3.4'
@@ -50,8 +50,33 @@ Use the Docker Compose file to configure images for both the back-end and the fr
    - The code sets an environment variable for the website: `ProductEndpoint=http://backend:8080`. This code is how the front-end service finds the Products back-end service.
    - A second environment variable specifies where images for products are located.
    - The code opens a port and declares that it depends on the back-end service.
+   - The back-end service named **backend** is created next. The same Dockerfile that you created in the previous exercise builds it.
+   - The last command specifies which port to open.
 
-    The back-end service named **backend** is created next. The same Dockerfile that you created in the previous exercise builds it. The last command specifies which port to open.
+1. In comparison, the **docker-compose.yml** file you can use for the images created by `dotnet publish`:
+
+    ```yml
+  	version: '3.4'
+  
+  	services: 
+  
+  		frontend:
+  			image: store
+  			environment: 
+  				- ProductEndpoint=http://backend:8080
+  				- ImagePrefix=http://localhost/images
+  			ports:
+  				- "32000:8080"
+  			depends_on: 
+  				- backend
+  
+  		backend:
+  			image: products
+  			ports: 
+  				- "32001:8080"
+    ```
+
+    The code is almost identical. The only difference is you no longer need the build phases as the images are created by `dotnet publish`.
 
 1. Select the **Ports** tab. To the right of the local address for the **Back End** port, select the **Copy** icon.
 
@@ -75,6 +100,9 @@ Now, use Docker Compose to build and start both front-end and back-end component
     ```bash
     docker compose build
     ```
+
+    > [!NOTE]
+    > This step isn't required for the `dotnet publish` version of the **docker-compose.yml** file.
 
 1. To start both the front-end website and the back-end web API, run this command:
 
