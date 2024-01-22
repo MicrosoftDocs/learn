@@ -13,7 +13,7 @@ Configure your Copilot as follows:
 - If you're completing this exercise for your own organization, you can add further training data by providing web addresses.
 
 > [!NOTE]
-> To create the chatbot for the Contoso example, you can download the PDFs at [TODO URL] to use as your organizational knowledge resources.
+> To create the chatbot for the Contoso example, you can download the [example PDFs here](https://aka.ms/helper-app-demo-texts) to use as your organizational knowledge resources.
 
 ## Check your work
 
