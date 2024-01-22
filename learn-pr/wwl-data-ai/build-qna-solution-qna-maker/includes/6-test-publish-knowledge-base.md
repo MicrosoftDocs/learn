@@ -1,4 +1,3 @@
-
 After you have defined a knowledge base, you can train its natural language model, and test it before publishing it for use in an application or bot.
 
 ## Testing a knowledge base
