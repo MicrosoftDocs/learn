@@ -11,4 +11,4 @@ Blazor may not be a good fit if:
 
 - You need to fully optimize download size and load time of client-side assets.
 - You need to integrate heavily with a different frontend framework ecosystem.
-- You need to support older web browsers.
+- You need to support older web browsers that don't support the modern web platform.
