@@ -1,8 +1,8 @@
-In Azure Monitor, metrics are a series of measured values and counts that are collected and stored over time. Metrics can be standard (also called platform) or custom. IoT Hub includes standard metrics. These metrics reflect the health and usage statistics of your Azure resources.
+In Azure Monitor, metrics are a series of measured values and counts that are collected and stored over time. Metrics can be standard (also called platform) or custom. IoT Hub includes over 80 **IoT Hub standard metrics** that you can use to analyze your IoT Hub data. These metrics reflect the health and usage statistics of your Azure resources.
 
 ## IoT Hub overview page
 
-For many Azure resources, you can view data collected by Azure Monitor in the following charts included on IoT Hub overview page:
+For many Azure resources, you can view data collected by Azure Monitor in the following standard charts which are included on the IoT Hub **Overview** page:
 
 * Connected Devices
 * Device to cloud messages
@@ -13,9 +13,9 @@ Click on any of the graphs to open the data in metrics explorer in the Azure por
 
 ## Metrics Explorer
 
-Metrics explorer is a component of the IoT Hub blade that helps you plot charts, visually correlate trends, and investigate spikes and dips in metrics values. You can use metrics explorer to investigate the health and utilization of your resources. Use metrics explorer to combine information from multiple metrics to paint a bigger picture of the state of your IoT hub.
+Metrics explorer is a component of the Azure portal IoT Hub blade that helps you plot charts, visually correlate trends, and investigate spikes and dips in metrics values. You can use metrics explorer to investigate the health and utilization of your resources. Use metrics explorer to combine information from multiple metrics to paint a bigger picture of the state of your IoT hub.
 
-To open metrics explorer, navigate to the Azure portal and open your IoT hub, then select **Metrics** under **Monitoring**. This explorer is scoped, by default, to the platform metrics emitted by your IoT hub.
+To open metrics explorer, navigate to the Azure portal and open your IoT hub, then in the menu **Monitoring** section, select **Metrics**. This explorer is scoped, by default, to the platform metrics emitted by your IoT hub.
 
 :::image type="content" source="../media/metrics-settings.png" alt-text="Image of Metrics Explorer settings.":::
 

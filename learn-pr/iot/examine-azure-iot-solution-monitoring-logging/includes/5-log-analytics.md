@@ -4,7 +4,7 @@ Data in Azure Monitor Logs is stored in tables where each table has its own set 
 
 To route data to Azure Monitor Logs, you must create a diagnostic setting to send resource logs or platform metrics to a Log Analytics workspace.
 
-Log Analytics queries use the [Kusto](/azure/data-explorer/kusto/query/) programming language. You might write a query that returns a set of records and then use features of Log Analytics to sort, filter, and analyze them. Or you might write a more advanced query to perform statistical analysis and visualize the results in a chart to identify a particular trend.
+Log Analytics queries use the [Kusto](/azure/data-explorer/kusto/query/) programming language. For example, you could write a query that returns a set of records and then use features of Log Analytics to sort, filter, and analyze them. Or you might write a more advanced query to perform statistical analysis and visualize the results in a chart to identify a particular trend.
 
 Whether you work with the results of your queries interactively or use them with other Azure Monitor features, such as log query alerts or workbooks, Log Analytics is the tool that you'll use to write and test them.
 
@@ -14,7 +14,7 @@ To perform Log Analytics, navigate to the Azure portal and open your IoT hub, th
 
 :::image type="content" source="../media/log-analytics-main.png" alt-text="Image of the Log Analytics main page.":::
 
-Use the Log Analytics editor to edit or create queries. Then select **Run** to execute a query.
+Use the Log Analytics editor to edit or create queries. Select **Run** to execute a query.
 
 :::image type="content" source="../media/log-analytics-editor.png" alt-text="Image of the Log Analytics editor.":::
 
@@ -36,7 +36,7 @@ For more information about Log Analytics, see [Overview of Log Analytics in Azur
 
 ### Analyze Activity Logs
 
-The Activity log is a platform login Azure that provides insight into subscription-level events. You can view it independently or route it to Azure Monitor Logs, where you can do more complex queries using Log Analytics.
+The Activity log is a platform login Azure that provides insight into subscription-level events. You can view it independently or route it to Azure Monitor Logs, where you can perform more complex queries using Log Analytics.
 
 When routing IoT Hub platform metrics to Azure Monitor Logs:
 

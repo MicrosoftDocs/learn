@@ -1,4 +1,4 @@
-You can configure, monitor, troubleshoot, and analyze Azure IoT Hub communications and data using Azure Monitor metrics, alerts, diagnostic settings, and log analytics. This unit provides an overview of the elements of Azure Monitor, how data flows through Azure Monitor, and a high-level overview of how Azure Iot Hub connects to Azure Monitor. Subsequent units of this module provider more detail about Azure Monitor diagnostic settings, alerts, and log analytics.
+You can configure, monitor, troubleshoot, respond to, and analyze Azure IoT Hub communications and data using Azure Monitor. This unit provides an overview of the elements of Azure Monitor, how data flows through Azure Monitor, and a high-level overview of how Azure Iot Hub connects to Azure Monitor. Subsequent units of this module provider more detail about Azure Monitor diagnostic settings, alerts, and log analytics.
 
 ## Overview
 
@@ -13,9 +13,9 @@ While resources from different Azure services have different monitoring requirem
 
 The following diagram shows a high-level view of Azure Monitor system components. In this diagram, Azure Monitor follows a data flow pattern of:
 
-1. **Collect** data from data sources
-1. **Store** the collected data in the data platform
-1. Authorized users **consume** the data using insight, visualize, analysis, and response tools
+1. **Collect** data from data sources.
+1. **Store** the collected data in the data platform.
+1. Authorized users **consume** the Azure Monitor platform data using insight, visualize, analysis, and response tools.
 
 :::image type="content" source="../media/azure-monitor-overview.png" alt-text="Diagram that shows the different functions that Azure Monitor performs.":::
 
@@ -68,7 +68,7 @@ You can use diagnostic settings to route metrics and logs to the following locat
 * Azure Storage for archiving and offline analysis.
 * An Event Hubs endpoint where they can be read by external applications, for example, third-party security information and event management (SIEM) tools.
 
-Metric and log routing is described in more detail in the Examine diagnostic settings for Azure IoT Hub unit page.
+Metric and log routing is described in more detail in the **Examine diagnostic settings for Azure IoT Hub** unit page.
 
 ## Data consumption
 
@@ -78,7 +78,7 @@ You can analyze Azure IoT Hub monitor data using the following built-in Azure Io
 
 * IoT Hub **Overview** page - The IoT Hub overview page includes charts that show recent critical metrics. You can use this page to quickly assess the performance of the resource.
 * **Metrics Explorer** - You can use Metrics Explorer to interactively work with metric data and create metric alerts. You need minimal training to use Metrics Explorer, but you must be familiar with the metrics you want to analyze. Metrics Explorer and IoT Hub metrics are described further in the Examine metrics for Azure IoT Hub unit page.
-* **Log Analytics** - With Log Analytics, you can create log queries to interactively work with log data and create log query alerts. Log Analytics is described further in the Examine Log Analytics for Azure IoT Hub unit page.
+* **Log Analytics** - With Log Analytics, you can create log queries to interactively work with log data and create log query alerts. Log Analytics is described further in the **Examine Log Analytics for Azure IoT Hub** unit page.
 
 ### Visualization tools
 

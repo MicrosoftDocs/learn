@@ -2,24 +2,24 @@ An Azure Monitor diagnostic setting specifies a list of categories of platform l
 
 You can access Azure IoT Hub diagnostic settings by selecting **Diagnostic Settings** in the **Monitoring** section of your IoT Hub menu.
 
-Each Azure resource requires its own diagnostic setting, which defines the following criteria:
+Each Azure resource, including Azure IoT Hub, requires its own diagnostic setting, which defines the following criteria:
 
 * **Sources** - The type of metric and log data to send to the destinations defined in the setting. The available types vary by resource type.
 * **Destinations** - One or more destinations to send to.
 
-The following image shows an example diagnostic setting configuration that includes multiple **categories** that feed into a Log Analytics workspace **destination**.
+The following image shows an example Azure IoT Hub diagnostic setting configuration that includes multiple **categories** that feed into a Log Analytics workspace **destination**.
 
 :::image type="content" source="../media/diagnostic-settings.png" alt-text="Diagram that shows example Azure Monitor diagnostic settings.":::
 
-A single diagnostic setting can define no more than one of each of the destinations. If you want to send data to more than one of a particular destination type (for example, two different Log Analytics workspaces), create multiple settings. Each resource can have up to five diagnostic settings.
+A single diagnostic setting can define no more than one of each of the destinations. If you want to send data to more than one of a particular destination type (for example, two different Log Analytics workspaces), create multiple settings. Each Azure IoT Hub resource can have up to five diagnostic settings.
 
 ## Sources
 
 There are three sources for diagnostic information:
 
-* Metrics - The **AllMetrics** setting routes a resource's platform metrics to selected destinations. This option might not be present for all resource providers.
+* Metrics - Metrics route a resource's platform metrics to selected destinations. This option might not be present for all resource providers.
 * Resource logs - With resource logs, you can select the log categories you want to route individually or choose a category group. Log category groups are described in the next header section.
-* Activity logs - The activity log uses a diagnostic setting, but has its own user interface because it applies to the whole subscription rather than individual resources. The destination information listed here still applies. For more information, see [Azure activity log](/azure/azure-monitor/essentials/activity-log?tabs=powershell).
+* Activity logs - The activity log uses a diagnostic setting, but has its own user interface because it applies to the whole subscription rather than individual resources. The destination information listed here still applies. For more information, see [Azure Monitor activity log](/azure/azure-monitor/essentials/activity-log?tabs=powershell).
 
 Platform **metrics** are sent automatically to Azure Monitor Metrics by default and without configuration.
 
@@ -28,7 +28,7 @@ Platform **logs** provide detailed diagnostic and auditing information for Azure
 * **Resource logs** aren't collected until they're routed to a destination.
 * **Activity logs** exist on their own but can be routed to other locations.
 
-### Log category groups
+### Resource log category groups
 
 You can use category groups to dynamically collect resource logs based on predefined groupings instead of selecting individual log categories. Microsoft defines the groupings to help monitor specific use cases across all Azure services.
 
@@ -46,7 +46,7 @@ Currently, there are two log category groups:
 
 The "audit" category is a subset of "allLogs", but the Azure portal and REST API consider them separate settings. Selecting "allLogs" collects all audit logs regardless of if the "audit" category is also selected.
 
-### Categories
+### Resource log categories
 
 For a description of each resource log category setting, see [Resource logs](/azure/iot-hub/monitor-iot-hub-reference#resource-logs).
 
@@ -55,7 +55,7 @@ For a description of each resource log category setting, see [Resource logs](/az
 Platform logs and metrics can be sent to the following destinations. To ensure the security of data in transit, all destination endpoints are configured to support TLS 1.2.
 
 * [Log Analytics workspace](/azure/azure-monitor/logs/workspace-design) - Metrics are converted to log form. This option might not be available for all resource types. Sending them to the Azure Monitor Logs store (which is searchable via Log Analytics) helps you to integrate them into queries, alerts, and visualizations with existing log data.
-* [Azure Storage account](/azure/storage/blobs/) - Archiving logs and metrics to a Storage account is useful for audit, static analysis, or back up. Compared to using Azure Monitor Logs or a Log Analytics workspace, storage is less expensive, and logs can be kept there indefinitely.
+* [Azure Storage account](/azure/storage/blobs/) - Archiving logs and metrics to a storage account is useful for audit, static analysis, or back up. Compared to using Azure Monitor Logs or a Log Analytics workspace, storage is less expensive, and logs can be kept there indefinitely.
 * [Azure Event Hubs](/azure/event-hubs/) - When you send logs and metrics to Event Hubs, you can stream data to external systems such as third-party SIEMs and other Log Analytics solutions.
 * [Azure Monitor partner integrations](/azure/partner-solutions/overview) - Specialized integrations can be made between Azure Monitor and other non-Microsoft monitoring platforms. Integration is useful when you're already using one of the partners.
 
