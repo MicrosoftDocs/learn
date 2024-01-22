@@ -5,7 +5,7 @@ Security Copilot is embedded in Microsoft Defender XDR for security teams to eff
 
 #### Summarize Incidents
 
-To immediately understand an incident, you can tap Security Copilot in Microsoft Defender XDR to summarize an incident for you. Security Copilot creates an overview of the attack containing essential information for you to understand what transpired in the attack, what assets are involved, and the timeline of the attack. Security Copilot automatically creates a summary when you navigate to an incident's page.
+To immediately understand an incident, you can use Security Copilot in Microsoft Defender XDR to summarize an incident for you. Security Copilot creates an overview of the attack containing essential information for you to understand what transpired in the attack, what assets are involved, and the timeline of the attack. Security Copilot automatically creates a summary when you navigate to an incident's page.
 
 :::image type="content" source="../media/xdr-incident-summary-v5.png" lightbox="../media/xdr-incident-summary-v5.png" alt-text="Screen capture of the Security Copilot embedded experience in Microsoft Defender XDR, showing an incident summary.":::
 
@@ -18,7 +18,7 @@ Incidents containing up to 100 alerts can be summarized into one incident summar
 - Indicators of compromise (IOCs).
 - Names of threat actors involved.
 
-Users can choose to continue their investigation in the standalone experience where they can access interface directly with the prompt bar, use prompt suggestions, use promptbooks, and use additional plugins. To move to the standalone experience, the user selects the ellipses within the incident summary window then choosing Open in Security Copilot.
+You can choose to continue your investigation in the standalone experience where you can interface directly with the prompt bar, use prompt suggestions, promptbooks, and additional plugins. To move to the standalone experience, select the ellipses within the incident summary window then choose Open in Security Copilot.
 
 :::image type="content" source="../media/xdr-incident-summary-ellipses-v2.png" lightbox="../media/xdr-incident-summary-ellipses-v2.png" alt-text="Screen capture showing the option to open in Security Copilot, which is available by selecting the ellipses in the incident summary window.":::
 
