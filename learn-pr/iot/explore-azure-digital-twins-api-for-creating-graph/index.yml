@@ -17,6 +17,7 @@ abstract: |
   - Identify key Azure Digital Twins actions that can be performed with the APIs.
   - Construct Azure Digital Twins API requests for import jobs, models, twins, queries, endpoints, and event routes.
 prerequisites: |
+  - An Azure subscription, and permission to manage access to Azure resources in the subscription
   - Understanding of how models, twins, and relationships are used in an Azure Digital Twins solution
   - Knowledge of HTTP, REST services, and APIs at the beginner level
   - Access to the [Postman REST client](https://www.postman.com/) (either in the browser or downloaded to your local machine)
