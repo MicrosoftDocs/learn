@@ -1857,6 +1857,11 @@ achievements:
   title: Work with data in Azure Databricks
   summary: To work with data in Azure Databricks, you can use the *dataframe* object.
   iconUrl: /training/achievements/work-with-data-in-azure-databricks.svg
+- uid: learn.advocates.deploy-responsible-bot.badge
+  type: badge
+  title: Deploy a customer service bot
+  summary: Learn how to deploy a bot that can collect user input. Improve customer service by making the bot responsible.
+  iconUrl: /training/achievements/deploy-responsible-bot.svg
 - uid: learn.wwl.train-machine-learning-model-azure-databricks.badge
   type: badge
   title: Train a machine learning model with Azure Databricks
