@@ -72,7 +72,7 @@ quiz:
         - content: "You need to host our web app on a cheap static site host, like GitHub Pages."
           isCorrect: false
           explanation: "Blazor apps be configured to run fully on the client via WebAssembly and can be deployed as static sites."
-        - content: "You don't know C#."
+        - content: "You're not a C# expert."
           isCorrect: false
           explanation: "Learning C# is worth the investment! With C# in your developer toolbelt you can use .NET to build virtually any type of app, including web apps, native mobile & desktop apps, games, and much more!"
         - content: "You need to support older browsers."
