@@ -42,7 +42,7 @@ az network application-gateway http-listener create \
 
 The final step is to create a rule that directs the messages received through the listener to the servers in the backend pool. The messages received from the frontend port are decrypted through the SSL certificate specified for the listener. You need to re-encrypt these messages by using the client-side certificate for the servers in the backend pool. You define this information in the rule.
 
-The following example shows how to use the `az network application-gateway rule create` command to create a rule that connects a listener to a backend pool. The `--http-settings` parameter specified the HTTP settings that reference the client-side certificate for the servers. You created these settings in the previous unit.
+The following example shows how to use the `az network application-gateway rule create` command to create a rule that connects a listener to a backend pool. The `--http-settings` parameter specifies the HTTP settings that reference the client-side certificate for the servers. You created these settings in the previous unit.
 
 ```azurecli
 az network application-gateway rule create \
