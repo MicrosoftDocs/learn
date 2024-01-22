@@ -31,7 +31,7 @@ quiz:
     - content: Windows Forms
       isCorrect: true
       explanation: Correct. Windows Forms is the best choice for this project as it supports rapid development and is frequently used to build Windows utilities.
-    - content: WinUI
+    - content: WinUI and Windows App SDK
       isCorrect: false
       explanation: Incorrect. WinUI is a good choice for applications that require modern UI features and are built on the latest version of .NET.
   - content: A software startup is creating a consumer-facing app that needs to implement the Fluent design system and wants to make it available on the Microsoft Store. Which Windows UI framework is the best option for this requirement?
@@ -39,7 +39,7 @@ quiz:
     - content: WPF
       isCorrect: false
       explanation: Incorrect. WPF doesn't implement the Fluent design system by default.
-    - content: WinUI 3
+    - content: WinUI and Windows App SDK
       isCorrect: true
       explanation: Correct. WinUI 3 implements the latest Fluent design system and can be easily deployed via the Microsoft Store.
     - content: Windows Forms
