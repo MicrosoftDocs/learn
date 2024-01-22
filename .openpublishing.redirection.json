@@ -9991,6 +9991,61 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/index.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/1-introduction.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/2-responsible-bot-principles.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/3-create-sample-bot.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/4-run-bot-locally.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/5-deploy-bot.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/6-test-bot.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/7-connect-communication-channels.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/8-knowledge-check.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/9-summary.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.advocates.deploy-responsible-bot.badge.yml",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/examine-components-iot-solution/index.md",
       "redirect_url": "/training/browse/?products=azure&terms=iot",
       "redirect_document_id": false
