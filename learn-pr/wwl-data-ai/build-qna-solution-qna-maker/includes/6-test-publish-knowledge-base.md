@@ -8,4 +8,4 @@ You can test your knowledge base interactively in Azure AI Language Studio, subm
 
 ## Deploying a knowledge base
 
-When you are happy with the performance of your knowledge base, you can deploy it to a REST endpoint that client applications can use to submit questions and receive answers.
+When you're happy with the performance of your knowledge base, you can deploy it to a REST endpoint that client applications can use to submit questions and receive answers.
