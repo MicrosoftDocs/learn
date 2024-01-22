@@ -16,7 +16,7 @@ The first step with any Azure Function project is to get your function running l
 
 5. Rename **`local.settings.json.template`** to **`local.settings.json`**.
 
-6. In **`local.settings.json`** update the Azure SQL connection string value to reference your server name and password.
+6. In **`local.settings.json`**, update the Azure SQL connection string value to reference your server name and password.
 
 7. **Save** the file.
 
@@ -35,7 +35,7 @@ The first step with any Azure Function project is to get your function running l
 
 5. Rename **`local.settings.json.template`** to **`local.settings.json`**.
 
-6. In **`local.settings.json`** update the Azure SQL connection string value to reference your server name and password.
+6. In **`local.settings.json`**, update the Azure SQL connection string value to reference your server name and password.
 
 7. **Save** the file.
 
@@ -54,7 +54,7 @@ The first step with any Azure Function project is to get your function running l
 
 5. Rename **`local.settings.json.template`** to **`local.settings.json`**.
 
-6. In **`local.settings.json`** update the Azure SQL connection string value to reference your server name and password.
+6. In **`local.settings.json`**, update the Azure SQL connection string value to reference your server name and password.
 
 7. **Save** the file.
 
@@ -100,9 +100,9 @@ Next, in order to publish the function to the Azure Function app you deployed in
 
 8. In the **Overview** tab, select **Get publish profile** to download the publish profile for your function.
 
-9. Navigate to your GitHub repository for this sample and select **Settings** > **Secrets** > **Actions** > **New repository secret**.
+9. Navigate to your GitHub repository for this sample and select **Settings** > **Secrets and variables** > **Actions** > **New repository secret**.
 
-10. Name the secret **AZURE_FUNCTIONAPP_PUBLISH_PROFILE** and for the *Value*, copy and paste the contents from the publish profile you downloaded.
+10. Name the secret **AZURE_FUNCTIONAPP_PUBLISH_PROFILE** and for the **Value**, copy and paste the contents from the publish profile you downloaded.
 
 11. Select **Add secret** to store it.
 
@@ -126,7 +126,7 @@ Next, in order to publish the function to the Azure Function app you deployed in
 
 13. Select **Source Control** and add a commit message of **`enable function workflow`**.
 
-14. Select the **checkmark**, and then select the **...** > **Push** to kick off the workflow.
+14. Select **Commit**, and then select the **...** > **Push** to kick off the workflow.
 
 15. Navigate to your GitHub repository for this sample and select **Actions** to monitor the deployment of your Azure Function App action.
 
@@ -139,7 +139,7 @@ Now that everything is deployed, it's time to monitor the results in the Azure p
     > [!div class="nextstepaction"]
     > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-1. Select **Functions** under *Functions* > **GetBusData** > **Monitor**.
+1. Select **Functions** > **GetBusData** > **Monitor**.
 
 1. Review the results under the **Invocations** and **Logs** tabs. They should be similar to what you saw in the terminal when you ran the function locally.
 

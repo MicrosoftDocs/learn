@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: module
-  ms.prod: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/7-secure-network-flow.md)]

@@ -3,11 +3,11 @@ Microsoft Security Copilot integrates with various sources, including Microsoft'
 
 ### Microsoft plugins
 
-Microsoft or 1st party plugins give Security Copilot access to information and capabilities from within your organization's Microsoft products.
+Microsoft or first party plugins give Security Copilot access to information and capabilities from within your organization's Microsoft products.
 
 :::image type="content" source="../media/manage-plugins-microsoft.png" lightbox="../media/manage-plugins-microsoft.png" alt-text="Screen capture of the manage plugins window that shows the Microsoft services.":::
 
-For first party plugins, Security Copilot leverages the OBO (on behalf of) model – meaning that Security Copilot knows that a customer has licenses to specific products and is automatically signed into those products.  Security Copilot can then access the specific products when the plugin is enabled and, where applicable, parameters are configured.
+For first party plugins, Security Copilot leverages the OBO (on behalf of) authentication – meaning that Security Copilot knows that a customer has licenses to specific products and is automatically signed into those products.  Security Copilot can then access the specific products when the plugin is enabled and, where applicable, parameters are configured.
 
 To view the system capabilities supported by the enabled plugins, a user enters the '/' in the prompt bar, for a list of suggestions, and then selects "See all system capabilities.
 
@@ -32,8 +32,8 @@ Capabilities supported by the Defender EASM plugin enable a user to:
 Some example prompts include:
 
 - Is my external attack surface impacted by CVE-2023-21709?
-- Get assets affected by high priority CVSS's in my attack surface.
-- How many assets have critical CVSS's for my organization?
+- Get assets affected by high priority CVSSs in my attack surface.
+- How many assets have critical CVSSs for my organization?
 
 The screen capture that follows shows only a subset of the capabilities supported by the EASM plugin.
 
@@ -85,44 +85,40 @@ For more information, visit [Microsoft Security Copilot and Intune](/mem/intune/
 
 Microsoft Defender XDR (previously known as Microsoft 365 Defender) is a unified pre- and post-breach enterprise defense suite that natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
 
-There are two separate plugins in Security Copilot that relate to Microsoft Defender XDR:
+There are two separate plugins in Security Copilot that relate to Microsoft Defender XDR (the user interface may still show Microsoft 365 Defender):
 
-- M365
-- NL2KQLDefender
-
-:::image type="content" source="../media/defender-xdr-capabilities.png" lightbox="../media/defender-xdr-capabilities.png" alt-text="Screen capture of the Defender XDR capabilities that can be run in the standalone experience.":::
-
-***M365 plugin***
-
-The M365 (Microsoft 365) plugin is focused on incident and alert related capabilities.  This plugin includes capabilities that enable users to:
-
-- Summarize incidents quickly
-- Take action on incidents through guided responses. Guided responses recommend actions in the following categories:
-  - Triage - includes a recommendation to classify incidents as informational, true positive, or false positive
-  - Containment - includes recommended actions to contain an incident
-  - Investigation - includes recommended actions for further investigation
-  - Remediation - includes recommended response actions to apply to specific entities involved in an incident
-- Quickly analyze scripts and code.
-
-The prompts for many of these capabilities are made readily available in the Microsoft Defender XDR incident investigation promptbook.
-
-:::image type="content" source="../media/defender-xdr-promptbook.png" lightbox="../media/defender-xdr-promptbook.png" alt-text="Screen capture of the Defender XDR promptbook that can be run in the standalone experience.":::
-
-:::image type="content" source="../media/defender-xdr-promptbook-prompts.png" lightbox="../media/defender-xdr-promptbook-prompts.png" alt-text="Screen capture of the Defender XDR promptbook prompts that can be run in the standalone experience.":::
-
-***NL2KQLDefender plugin***
-
-The NL2KQLDefender (Natural language to Defender KQL) plugin enables query assistant functionality that converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. The query assistant saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst’s needs.
+- Microsoft 365 Defender
+- Natural language to Defender 365 KQL
 
 The role permission that grants the user access to Security Copilot determines the level of access to Microsoft Defender XDR data. There are no additional role permissions required to use the Microsoft Defender XDR plugin or the Natural language to Defender XDR KQL plugin.
 
-For more information, visit [Microsoft Security Copilot in Microsoft Defender XDR](/microsoft-365/security/defender/security-copilot-in-microsoft-365-defender).
+***Microsoft Defender XDR plugin***
+
+The Microsoft Defender XDR plugin includes capabilities that enable users to:
+
+- Summarize incidents quickly
+- Take action on incidents through guided responses.
+- Create incident reports
+
+:::image type="content" source="../media/defender-xdr-capabilities.png" lightbox="../media/defender-xdr-capabilities.png" alt-text="Screen capture of the Defender XDR capabilities that can be run in the standalone experience.":::
+
+These and additional capabilities are covered in more detail in the unit titled, "Describe the Security Copilot embedded experience of Microsoft Defender XDR."
+
+With the Defender XDR plugin enabled, users can take advantage of the Microsoft Defender XDR incident investigation promptbook available through the standalone experience.
+
+:::image type="content" source="../media/defender-xdr-promptbook.png" lightbox="../media/defender-xdr-promptbook.png" alt-text="Screen capture that lists the promptbook named Microsoft Defender XDR Incident investigation.":::
+
+:::image type="content" source="../media/defender-xdr-promptbook-prompts.png" lightbox="../media/defender-xdr-promptbook-prompts.png" alt-text="Screen capture of the Defender XDR promptbook prompts that can be run in the standalone experience.":::
+
+***Natural language to KQL Defender plugin***
+
+The natural language to Defender KQL (NL2KQLDefender) plugin enables query assistant functionality that converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. The query assistant saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst’s needs.
 
 #### Microsoft Defender Threat Intelligence
 
 Microsoft Defender Threat Intelligence (Defender TI) is a platform that streamlines triage, incident response, threat hunting, vulnerability management, and cyber threat intelligence analyst workflows when conducting threat infrastructure analysis and gathering threat intelligence.
 
-Security Copilot integrates with Microsoft Defender TI. With the Defender TI plugin enabled, Security Copilot delivers information about threat activity groups, indicators of compromise (IOCs), and tools, as well as contextual threat intelligence. You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about your organization's or the global threat landscape. 
+Security Copilot integrates with Microsoft Defender TI. With the Defender TI plugin enabled, Security Copilot delivers information about threat activity groups, indicators of compromise (IOCs), tools, and contextual threat intelligence. You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about your organization's or the global threat landscape. 
 
 Defender TI is included in Security Copilot at no additional cost.
 
@@ -155,7 +151,7 @@ Microsoft Sentinel delivers intelligent security analytics and threat intelligen
 There are two separate plugins in Security Copilot that relate to Sentinel:
 
 - Sentinel
-- NL2KQLSentinel  
+- Natural language to Sentinel KQL  
 
 :::image type="content" source="../media/sentinel-capabilities.png" lightbox="../media/sentinel-capabilities.png" alt-text="Screen capture of the Sentinel and NL2KQK in Sentinel plugin.":::
 
@@ -173,9 +169,9 @@ The Sentinel plugin capabilities are focused on incidents and workspaces. Additi
 
 :::image type="content" source="../media/sentinel-promptbook-incident-investigation.png" lightbox="../media/sentinel-promptbook-incident-investigation.png" alt-text="Screen capture of the Sentinel promptbook prompts.":::
 
-***NL2KQLSentinel plugin***
+***Natural language to Sentinel KQL plugin***
 
-The NL2KQLSentinel (natural language to Sentinel KQL) plugin converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. This saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst’s needs.
+The natural language to Sentinel KQL (NL2KQLSentinel) plugin converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. This saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst’s needs.
 
 Selecting the prompt suggestion to generate and run Sentinel Hunting Queries, provides the user detailed guidance on how to craft the prompt and the type of information to include.  The more detailed information provided in the prompt to generate the hunting query the better the response.
 

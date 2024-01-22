@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: rstearman
   ms.topic: module
-  ms.prod: azure
 durationInMinutes: 11
 content: |
   [!include[](includes/6-examine-autopilot-scenarios.md)]
