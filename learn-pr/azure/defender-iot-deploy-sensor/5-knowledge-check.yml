@@ -42,24 +42,24 @@ quiz:
       isCorrect: false
       explanation: "Incorrect, the first action is to upload the monitor software"
 
-  - content: "The monitoring software file can be downloaded from where?"
+  - content: "Where can the monitoring software file can be downloaded from?"
     choices:
     - content: "The sensor Set Up page after sensor onboarding" 
       isCorrect: true
-      explanation: "Correct, a Security Reader user presumably has read-only access to sensor data in Azure, which isn't enough to onboard OT sensors"
+      explanation: "Correct, the sensor Set Up page "
     - content: "It automatically downloads after the onboarding process"
       isCorrect: false
-      explanation: "A Security Admin user has sensor onboarding permissions but still has permission limits"
-    - content: "It's available in the Set up after the security certificate is uploaded"
+      explanation: "Incorrect, it is found on the sensor Set Up page"
+    - content: "It's available in the Set Up after the security certificate is uploaded"
       isCorrect: false
-      explanation: "An Owner user presumably has all permissions and can create users. Creating users exceeds the permissions needed by the onboarding users"
+      explanation: "Incorrect, it is found on the sensor Set Up page"
 
 
   - content: "In the management tab new sensor networking details must be set. Why is this important?"
     choices:
     - content: "Setting unique details adds security to the connections"
       isCorrect: true
-      explanation: "Correct. To ensure the highest level of security, don't use the default settings"
+      explanation: "Correct, to ensure the highest level of security, don't use the default settings"
     - content: "The default settings don't actually work, but any new ones will"
       isCorrect: false 
       explanation: "Incorrect, new settings ensure a higher level of security"
@@ -71,13 +71,13 @@ quiz:
     choices:
     - content: "S/MIME protocol certificate" 
       isCorrect: false
-      explanation: "The S/MIME certificate is issued for email transfers and wouldn't provide the correct level of security"
+      explanation: "Incorrect, the S/MIME certificate is issued for email transfers and wouldn't provide the correct level of security"
     - content: "Self-signed certificate"
       isCorrect: false
-      explanation: "The self-signed certificate is issued from an individual user and wouldn't provide the correct level of security"
+      explanation: "Incorrect, the self-signed certificate is issued from an individual user and wouldn't provide the correct level of security"
     - content: "CA-signed certificate"
       isCorrect: true
-      explanation: "This certificate is issued from an authority that checks the user and provides the correct level of security"
+      explanation: "Correct, this certificate is issued from an authority that checks the user and provides the correct level of security"
 
 
   - content: "By choosing *Enable* in the Interface configurations tab, what starts to work?"
@@ -86,8 +86,8 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. The Security Reader role is the right level of access for a team member who only needs read-access to sensor data."
     - content: "The IP address for the sensor"
-      isCorrect: true 
+      isCorrect: false
       explanation: "Incorrect, this enables the individual sensor interface"
     - content: "A specific endpoint interface on the sensor"
-      isCorrect: false
+      isCorrect: true
       explanation: "Correct, the individual sensor interface is set to enable and sends data to display in Defender for IoT "
