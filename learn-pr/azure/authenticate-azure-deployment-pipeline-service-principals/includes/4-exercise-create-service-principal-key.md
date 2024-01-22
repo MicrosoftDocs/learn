@@ -15,7 +15,7 @@ This exercise requires that you have permission to create applications and servi
 
 ::: zone pivot="cli"
 
-To work with service principals in Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli) tools.
+To work with service principals in Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. 
 
 [!include[](../../includes/azure-exercise-terminal-cli.md)]
 
@@ -33,7 +33,7 @@ To work with service principals in Azure, you need to sign in to your Azure acco
 
 ::: zone pivot="powershell"
 
-To deploy this template to Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps), and sign in to the same account that activated the sandbox.
+To deploy this template to Azure, sign in to your Azure account from the Visual Studio Code terminal. 
 
 [!include[](../../includes/azure-exercise-terminal-powershell.md)]
 
@@ -82,13 +82,13 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 1. Run the following command to get the service principal's key:
 
    ```azurepowershell 
-   $servicePrincipalKey = ConvertFrom-SecureString -SecureString $servicePrincipal.Secret -AsPlainText
+   $servicePrincipalKey = $servicePrincipal.PasswordCredentials.SecretText
    ```
 
 1. Run the following command to show the service principal's application ID, the key, and your Microsoft Entra tenant ID:
 
    ```azurepowershell
-   Write-Output "Service principal application ID: $($servicePrincipal.ApplicationId)"
+   Write-Output "Service principal application ID: $($servicePrincipal.AppId)"
    Write-Output "Service principal key: $servicePrincipalKey"
    Write-Output "Your Azure AD tenant ID: $((Get-AzContext).Tenant.Id)"
    ```
@@ -111,7 +111,7 @@ Now that the service principal has been created, you can sign in by using its cr
    ```azurecli
    az login --service-principal \
      --username APPLICATION_ID \
-     --password SERVICE_PRINCIPAL_KEY \
+     --password PASSWORD \
      --tenant TENANT_ID \
      --allow-no-subscriptions
    ```

@@ -126,10 +126,10 @@ Service principals don't expire, but their keys do. When you create a key, you c
 To reset a key for a service principal, use the `az ad sp` command with the application ID, as in this example:
 
 ```azurecli
-az ad sp credential reset --name "b585b740-942d-44e9-9126-f1181c95d497"
+az ad sp credential reset --id APPLICATION_ID
 ```
 
-You can also remove and re-create the service principal's key in two separate steps by using the `az ad sp credential delete` and `az ad sp credential reset --append` commands.
+You can also remove and re-create the service principal's key in two separate steps by using the `az ad sp credential delete` and then the `az ad sp credential reset --append` commands.
 
 ::: zone-end
 
@@ -138,10 +138,11 @@ You can also remove and re-create the service principal's key in two separate st
 To reset a key for a service principal, first use the `Remove-AzADServicePrincipalCredential` cmdlet to remove the existing credential. Then use the `New-AzADServicePrincipalCredential` cmdlet to add a new credential. These cmdlets both use the service principal's object ID to identify it. Before you use the cmdlets, you need to obtain this ID from the application ID:
 
 ```azurepowershell
-$applicationId = 'b585b740-942d-44e9-9126-f1181c95d497'
+$applicationId = APPLICATION_ID
 $servicePrincipalObjectId = (Get-AzADServicePrincipal -ApplicationId $applicationId).Id
 
 Remove-AzADServicePrincipalCredential -ObjectId $servicePrincipalObjectId
+
 $newCredential = New-AzADServicePrincipalCredential -ObjectId $servicePrincipalObjectId
 $newKey = $newCredential.SecretText
 ```
