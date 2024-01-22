@@ -1,6 +1,6 @@
 Solving real-world problems with Power Platform is a great way to demonstrate your understanding of problem specifications and your ability to create tangible solutions to those problems. 
 
-In this module, you'll develop a Power App by using Copilot Studio with Generative AI and topic-based answers that helps the employees of an organization quickly access company policies, procedures, and websites.
+In this module, you'll build a workplace helper app, combining Power Apps and use Copilot Studio. The solution will use Generative AI and topic-based answers to help the employees of an organization quickly access company policies, procedures, websites, and relevant emergency information.
 
 ## About the challenge
 
