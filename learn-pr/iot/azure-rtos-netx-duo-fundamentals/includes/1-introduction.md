@@ -21,7 +21,7 @@ This unit provides instructions for how to set up your development environment s
 
 Codespaces is the preferred environment because you won't need to install the toolchain on your PC. Here is how you get started with Codespaces:
 
-1. Fork the [azure-rtos-learn-samples](https://github.com/Azure-Samples/azure-rtos-learn-samples) GitHub repo to your own GitHub account. Codespaces requires read/write access which is why a fork is necessary.
+1. Fork the [Eclipse ThreadX Learning Samples](https://github.com/eclipse-threadx/threadx-learn-samples) GitHub repo to your own GitHub account. Codespaces requires read/write access which is why a fork is necessary.
 
 1. From the forked repo page, create a new codespace. Wait until the codespace is set up.
 
