@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows.windows-best-app-framework.use-winui
+title: Choose the best UI framework for a Shopping List app
+metadata:
+  title: Choose the best UI framework for a Shopping List app
+  description: Discuss the benefits and challenges of using different UI frameworks to build a consumer-facing shopping list application.
+  ms.date: 01/17/2024
+  author: alvinashcraft
+  ms.author: aashcraft
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-use-winui.md)]
