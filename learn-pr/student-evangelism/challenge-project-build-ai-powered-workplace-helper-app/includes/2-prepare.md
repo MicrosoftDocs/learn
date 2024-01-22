@@ -25,6 +25,3 @@ To complete this exercise, you need the following:
 - Access to AI Builder to use Generative Answers in Copilot Studio. [Create a 30-day free trial](https://powerapps.microsoft.com/ai-builder/).
 - Power Platform environment with access to AI text generation technology. If you are outside the US, **create a new environment** in the Power Platform Admin Center and **set the region to United States**.
   - For more information on the release of different AI technologies, see [AI Builder regional availability](/ai-builder/availability-region).
-
-> [!NOTE]
-> For a step-by-step guide on how to get free access to Power Platform and AI Builder, follow this guide [TODO URL]. You only need a personal Microsoft email account *(Outlook, Hotmail, etc)*.
