@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.windows.windows-best-app-framework.identify-windows-app-dev-options
+uid: learn.windows.windows-best-app-framework.identify-windows-app-development-options
 title: Identify Windows app development options
 metadata:
   title: Identify Windows app development options
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-identify-windows-app-dev-options.md)]
+  [!include[](includes/2-identify-windows-app-development-options.md)]

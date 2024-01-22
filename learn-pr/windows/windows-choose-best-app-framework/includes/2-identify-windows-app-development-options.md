@@ -12,7 +12,7 @@ WPF is a time-tested framework for building enterprise applications. It's a matu
 
 Users interact with WPF applications through windows, and its windowing system is advanced. WPF windows can be modal or modeless, and can be hosted in other applications. WPF also supports multiple windows. While WPF doesn't currently support Fluent design out of the box, there are third-party libraries that enable you to incorporate various design options into your WPF applications. WPF apps can be distributed through the Microsoft Store, installed via stand-alone packages, or deployed with enterprise software management systems.
 
-![A picture visualizing WPF application development.](../media/create-wpf-app.jpg)
+![A picture visualizing WPF application development.](../media/create-windows-presentation-foundation-app.jpg)
 
 ## Windows Forms applications
 
@@ -22,7 +22,7 @@ Windows Forms is part of .NET, so you can build applications that incorporate ot
 
 Windows Forms is popular choice for system utility apps or line-of-business applications. Windows Forms is a mature framework that has a large ecosystem of third-party libraries and controls. Unlike XAML-based UI frameworks, Windows Forms is not well-suited for apps that require animations or rich graphics. Like WPF apps, Windows Forms applications can be distributed through the Microsoft Store, installed via stand-alone packages, or deployed with enterprise software management systems.
 
-![A picture visualizing Windows Forms application development.](../media/create-winforms-app.jpg)
+![A picture visualizing Windows Forms application development.](../media/create-windows-forms-app.jpg)
 
 ## WinUI applications with Windows App SDK
 
@@ -34,4 +34,4 @@ The Fluent design principles aren't just a set of styles and themes. They also i
 
 WinUI applications can be distributed through the Microsoft Store, installed via stand-alone packages, or deployed with enterprise software management systems.
 
-![A picture visualizing WinUI application development.](../media/create-winui-app.jpg)
+![A picture visualizing WinUI application development.](../media/create-windows-ui-app.jpg)

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.windows.windows-best-app-framework.use-winui
+uid: learn.windows.windows-best-app-framework.use-windows-ui
 title: Choose the best UI framework for a Shopping List app
 metadata:
   title: Choose the best UI framework for a Shopping List app
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-use-winui.md)]
+  [!include[](includes/6-use-windows-ui.md)]

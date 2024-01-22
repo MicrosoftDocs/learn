@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.windows.windows-best-app-framework.use-wpf
+uid: learn.windows.windows-best-app-framework.use-windows-presentation-foundation
 title: Choose the best UI framework for a new line-of-business application
 metadata:
   title: Choose the best UI framework for a new line-of-business application
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-use-wpf.md)]
+  [!include[](includes/4-use-windows-presentation-foundation.md)]

@@ -44,7 +44,7 @@ WPF is a good choice for this requirement. WPF applications built with .NET Fram
 
 This application must be deployed via a custom installer. It's deployed to enterprise customers on desktop PCs running Windows 10 and Windows 11. The application should be easy to update with new features and bug fixes.
 
-WPF and Windows Forms applications can be deployed using Microsoft Store (with MSIX), ClickOnce, Windows Installer, or third-party installer solutions. They can be deployed to all currently supported versions of Windows. WinUI applications can't be deployed to all versions of WIndows 10. WinUI is only available on Windows 11 and Windows 10, version 1809 and later. WinUI applications can be deployed using Microsoft Store (with MSIX), ClickOnce, or third-party installer solutions.
+WPF and Windows Forms applications can be deployed using Microsoft Store (with MSIX), ClickOnce, Windows Installer, or third-party installer solutions. They can be deployed to all currently supported versions of Windows. WinUI applications can't be deployed to all versions of Windows 10. WinUI is only available on Windows 11 and Windows 10, version 1809 and later. WinUI applications can be deployed using Microsoft Store (with MSIX), ClickOnce, or third-party installer solutions.
 
 ## Choosing the framework
 
