@@ -1,4 +1,4 @@
-Building web apps can be is a complex effort. Choosing the right web framework for your web development project is an important first step. Blazor is a complete frontend web framework based on the solid foundation of .NET that makes building web apps easier and more productive.
+Building web apps can be a complex effort. Choosing the right web framework for your web development project is an important first step. Blazor is a complete frontend web framework based on the solid foundation of .NET that makes building web apps easier and more productive.
 
 In this module you'll learn what Blazor is and how its flexible component model makes it easy to build web apps that are fast and richly interactive.
 
