@@ -390,9 +390,7 @@ It's time to see your application running locally against the Azure Functions AP
 
 ::: zone-end
 
-    You built your application, and now it's running locally making HTTP GET requests to your API.
-
-2. Now, stop your running app and API by pressing <kbd>Ctrl-C</kbd> in the terminals.
+2. You built your application, and now it's running locally making HTTP GET requests to your API. Now, stop your running app and API by pressing <kbd>Ctrl-C</kbd> in the terminals.
 
 ## Next steps
 
