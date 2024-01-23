@@ -1,4 +1,4 @@
-You can configure, monitor, troubleshoot, respond to, and analyze Azure IoT Hub communications and data using Azure Monitor. This unit provides an overview of the elements of Azure Monitor, how data flows through Azure Monitor, and a high-level overview of how Azure Iot Hub connects to Azure Monitor. Subsequent units of this module provider more detail about Azure Monitor metrics, diagnostic settings, alerts, and log analytics.
+You can configure, monitor, troubleshoot, respond to, and analyze Azure IoT Hub communications and other data using Azure Monitor. This unit provides an overview of the elements of Azure Monitor, how data flows through Azure Monitor, and a high-level overview of how Azure Iot Hub connects to Azure Monitor. Subsequent units of this module provider more detail about Azure Monitor metrics, diagnostic settings, alerts, and log analytics.
 
 ## Overview
 

@@ -13,7 +13,7 @@ Click on any of the graphs to open the data in metrics explorer in the Azure por
 
 ## Metrics Explorer
 
-Metrics explorer is a component of the Azure portal IoT Hub blade that you can use to plot charts, visually correlate trends, and investigate spikes and dips in metrics values. You can use metrics explorer to investigate the health and utilization of your resources. Use metrics explorer to combine information from multiple metrics to paint a bigger picture of the state of your Azure IoT hub.
+Metrics explorer is a component of the portal Azure IoT Hub blade that you can use to plot charts, visually correlate trends, and investigate spikes and dips in metrics values. You can use metrics explorer to investigate the health and utilization of your resources. Use metrics explorer to combine information from multiple metrics to paint a bigger picture of the state of your Azure IoT hub.
 
 To open metrics explorer, navigate to the Azure portal and open your IoT hub, then in the menu **Monitoring** section, select **Metrics**. This explorer is scoped, by default, to the platform metrics emitted by your Azure IoT hub.
 

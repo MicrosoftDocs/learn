@@ -68,6 +68,7 @@ If you want to store diagnostic logs in a Log Analytics workspace, there are two
 These steps are necessary because Application Insights accesses telemetry across Application Insight resources, including Log Analytics workspaces, to provide complete end-to-end transaction operations and accurate application maps. Because diagnostic logs use the same table names, duplicate telemetry can be displayed if the user has access to multiple resources that contain the same data.
 
 ## Time before telemetry gets to destination
+
 After you set up a diagnostic setting, data should start flowing to your selected destination(s) within 90 minutes. If you get no information within 24 hours, then you might be experiencing one of the following issues:
 
 * No logs are being generated.
