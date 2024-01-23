@@ -8,16 +8,17 @@ Determine what traffic mirroring methods to use based on your network configurat
 
 |Method  |Description  |
 |---------|---------|
-|**Switch SPAN port**     |  Mirrors local traffic from interfaces on the switch to a different interface on the same switch.</br> |  
-|**Remote SPAN (RSPAN) port**     |  Mirrors traffic from multiple, distributed source ports into a dedicated remote virtual local area network (VLAN). </br>The VLAN data is delivered through trunked ports, across multiple switches to a specified switch containing the physical destination port. </br>|
-|**Active or passive aggregation (TAP)** |  Installs an active/passive aggregation terminal access point (TAP) inline to your network cable. The TAP duplicates *Receive* and *Transmit* traffic to the OT network sensor. </br>The TAP hardware device allows network traffic to flow between ports without interruption and without compromising network integrity. </br>The advantages of TAPs include that they're hardware based, pass all messages, including damaged ones, and aren't processor-sensitive. </br>They're recommended for forensic monitoring. |
-|**Encapsulated remote switched port analyzer (ERSPAN)**  | Secures remote networks by  mirroring input interfaces over an IP network to your OT sensor's monitoring promiscuous interface. Traffic payloads are encapsulated by generic routing encapsulation (GRE) tunnel encapsulation and are analyzed by the sensor. </br>ERSPAN is good for when traffic needs to be routed across OSI Layer 3 networks. It can include sources like ethernet ports, VLANs, fabric port channels, and satellite ports.|
-|**ESXi vSwitch** |  Uses a virtual switch and *Promiscuous mode* as a workaround for configuring a monitoring port, since virtual switches don't have mirroring capabilities. </br>Any traffic that goes through the virtual switch is visible to other network interfaces in the same port group. |
-|**Hyper-V vSwitch** | Uses a virtual switch and *Promiscuous mode* as a workaround for configuring a monitoring port, since virtual switches don't have mirroring capabilities. </br>Any traffic that goes through the virtual switch is visible to other network interfaces in the same port group. |
+|**Switch SPAN port**     |  Mirrors local traffic from interfaces on the switch to a different interface on the same switch.</br></br> |  
+|**Remote SPAN (RSPAN) port**     |  Mirrors traffic from multiple, distributed source ports into a dedicated remote virtual local area network (VLAN). </br></br>The VLAN data is delivered through trunked ports, across multiple switches to a specified switch containing the physical destination port.</br></br>|
+|**Active or passive aggregation (TAP)** |  Installs an active/passive aggregation terminal access point (TAP) inline to your network cable. The TAP duplicates *Receive* and *Transmit* traffic to the OT network sensor. </br></br>The TAP hardware device allows network traffic to flow between ports without interruption and without compromising network integrity. </br></br>The advantages of TAPs include that they're hardware based, pass all messages, including damaged ones, and aren't processor-sensitive. </br></br>TAPs are recommended for forensic monitoring. </br></br>|
+|**Encapsulated remote switched port analyzer (ERSPAN)**  | Secures remote networks by  mirroring input interfaces over an IP network to your OT sensor's monitoring promiscuous interface. Traffic payloads are encapsulated by generic routing encapsulation (GRE) tunnel encapsulation and are analyzed by the sensor. </br></br>ERSPAN is good for when traffic needs to be routed across OSI Layer 3 networks. It can include sources like ethernet ports, VLANs, fabric port channels, and satellite ports.</br></br>|
+|**ESXi vSwitch** |  Uses a virtual switch and *Promiscuous mode* as a workaround for configuring a monitoring port, since virtual switches don't have mirroring capabilities. </br></br>Any traffic that goes through the virtual switch is visible to other network interfaces in the same port group. </br></br>|
+|**Hyper-V vSwitch** | Uses a virtual switch and *Promiscuous mode* as a workaround for configuring a monitoring port, since virtual switches don't have mirroring capabilities. </br></br>Any traffic that goes through the virtual switch is visible to other network interfaces in the same port group. </br></br>|
 
 Choose your monitoring method based on considerations like your overall monitoring needs, network configuration, sensor connection, and available resources.
 
 ## Example scenarios
+
 The following examples visual possible traffic mirroring methods that you might choose to use in your car manufacturing organization based on your network configuration:
 
 ### Remote VLAN architecture

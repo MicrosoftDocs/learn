@@ -3,21 +3,19 @@ Your network diagram allows you to determine the devices and subnets to monitor 
 Using the diagram you can determine:
 
 - The network segments you should monitor (subnets/VLANs)
-- Where to connect
 - What devices there are and how they communicate
 - The security and operational risks and the most interesting traffic for those risks
-
-## Examine your network diagram
+- Where to connect your sensors
 
 Using your existing network map diagram, use the following questions to help you identify and take note of what you want to monitor.
 
-### General questions
+## General questions
 
 - What are your overall monitoring goals?
 - Do you have any redundant networks or areas that can be disregarded for monitoring?
 - Where are your network security and operational risks?
 
-### Network questions
+## Network questions
 
 - Which protocols are active on monitored networks?
 - Are VLANs configured in the network design?
@@ -28,18 +26,18 @@ Using your existing network map diagram, use the following questions to help you
 - What's the physical distance between your switches and the enterprise firewall?
 - Is OT system maintenance done with fixed or transient devices?
 
-### Switch questions
+## Switch questions
 
 - Can you monitor the traffic from an unmanaged switch from a higher-level switch?
 - Can unmanaged switches be replaced with managed switches, or is the use of network TAPs an option?
 - Can you monitor the switch's VLAN, or is the VLAN visible in another switch that you can monitor?
-- If you connect a network sensor to the switch, will it mirror the communication between the HMI and PLCs?
+- If you connect a network sensor to the switch, does it mirror the communication between the HMI and PLCs?
 - If you want to connect a network sensor to the switch, is there physical rack space available in the switch's cabinet?
 - What's the cost/benefit of monitoring each switch?
 
 ## Purdue networking model
 
-Each device in your network falls within a layer of the Purdue reference model. The Purdue Reference Model for Industrial Control System (ICS)/OT network segmentation divides a network into different OT and IT and layers to better isolate IT and OT systems and enhance OT system protection. Levels one through three are OT levels and four and five are IT levels. The levels are as follows:
+Each device in your network falls within a layer of the Purdue reference model. The Purdue Reference Model for Industrial Control System (ICS)/OT network segmentation divides a network into different OT and IT layers to better isolate IT and OT systems and enhance OT system protection. Levels one through three are OT levels and four and five are IT levels. The levels are as follows:
 
 | Name | Description |
 |---------|---------|
@@ -49,16 +47,17 @@ Each device in your network falls within a layer of the Purdue reference model. 
 | **Levels 3 and 3.5:** </br>Site-level and industrial perimeter network| Manages the site-wide industrial automation and control functions like production scheduling, site level operations management, file server, and Active Directory. These systems communicate with the production zone and share data with Level four and five systems and applications. Levels through level 3 are considered critical to site operations. |
 | **Levels 4 and 5:** </br>Business and enterprise networks|The site or enterprise network where the centralized IT systems and functions exist. The IT organization manages them directly at these levels.|
 
-Generally, Defenders for IoT sensors are placed between levels two and three or between three and 3.5, if it's an industrial demilitarized zone (DMZ). 
+Generally, Defenders for IoT sensors are placed between levels two and three or between three and 3.5, if it's an industrial perimeter network (also known as a demilitarized zone (DMZ)).
 
-### Sample network diagram
+## Sample network diagram
 
 The following diagram depicts how your devices might be divided into the different OT and IT levels:
 
-:::image type="content" source="../media/3-purdue-only.png" alt-text="A diagram of the Purdue model." border="false":::
+:::image type="content" source="../media/3-purdue-only.png" alt-text="A diagram of the Purdue model example dividing devices into OT and IT layers and specific levels within those layers." border="false":::
 
 ## Knowledge check
-:::image type="complex" source="../media/3-industrial-network-diagram-knowledge-check.png" alt-text="Diagram of a sample network diagram." border="false":::
 
-Figure 1 shows a sample network diagram divided into Cloud, Enterprise (IoT), and OT areas. The cloud area includes Microsoft Azure and a data center/SOC/MSSP area and is separated from the Enterprise area with a firewall. The Enterprise/IoT area includes the corporate network and is set off from the OT area by a firewall. In the OT area are three defined areas spanning the production floor, SCADA/DCS, and Industrial DMZ. The first is labeled  IDMZ and includes Historian, Security update server, and Domain controller on the SCADA/DCS level and a switch on the IDMZ level. The other two areas are labeled Zone 1 and Zone 2, respectively and include production floor resources, PLCs / RTUs and HMIs on the SCADA/DCS level, and a switch each on the IDMZ level. Each switch has an arrow pointing upward. The IDMZ area has a line leading up to the firewall, labeled "A". It additionally has a line leading from the arrow to the corporate network (labeled "B"), and to the Data center area (labeled "C").  Zone 1 and Zone 2 each have lines leading up from their zones (labeled "D" and "F" respectively) that connect together and then lead up to the corporate network (labeled "E"). 
+:::image type="complex" source="../media/3-industrial-network-diagram-knowledge-check.png" alt-text="Diagram of a sample network diagram. Figure one for the knowledge check question." border="false":::
+
+Figure 1 shows a sample network diagram divided into Cloud, Enterprise (IoT), and OT areas. The cloud area includes Microsoft Azure and a data center/SOC/MSSP area and is separated from the Enterprise area with a firewall. The Enterprise/IoT area includes the corporate network and is set off from the OT area by a firewall. In the OT area are three defined areas spanning the production floor, SCADA/DCS, and Industrial DMZ. The first is labeled IDMZ and includes Historian, Security update server, and Domain controller on the SCADA/DCS level and a switch on the IDMZ level. The other two areas are labeled Zone one and Zone two, respectively and include production floor resources, PLCs / RTUs and HMIs on the SCADA/DCS level, and a switch each on the IDMZ level. Each switch has an arrow pointing upward. The IDMZ area has a line leading up to the firewall, labeled "A". It additionally has a line leading from the arrow to the corporate network (labeled "B"), and to the Data center area (labeled "C").  Zone one and Zone two each have lines leading up from their zones (labeled "D" and "F" respectively) that connect together and then lead up to the corporate network (labeled "E").
 :::image-end:::

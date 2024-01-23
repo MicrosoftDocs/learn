@@ -53,10 +53,10 @@ Use the following considerations when choosing virtual appliance components:
 
 |Specification  |Considerations  |
 |---------|---------|
-|**CPU**     |   Assign dedicated CPU cores with at least 2.4 GHz, which aren't dynamically allocated. The appliance continuously records and analyzes network traffic so CPU usage is high. CPU performance is critical to capturing and analyzing network traffic. Any slowdown could lead to packet drops and performance degradation.   |
-|**Memory**     | Allocate RAM statically for the required capacity, not dynamically. Sensors have high RAM usage due to the sensor's constant network traffic recording and analytics.        |
-|**Network interfaces**  |  Physical mapping provides best performance, lowest latency, and efficient CPU usage. Physically map Network Interface Cards (NIC)s to the virtual machines with Single Root Input/Output Virtualization (SR-IOV) or a dedicated NIC. Given the high traffic monitoring levels, expect high network utilization. </br>Set the promiscuous mode on your vSwitch to **Accept**, which allows all traffic to reach the virtual machine. Some vSwitch implementations might block certain protocols they aren't configured correctly.|
-|**Storage**     | Make sure to allocate enough read and write IOPs and throughput to match the performance of the virtual appliances. Expect high storage usage due to the large traffic monitoring volumes.      |
+|**CPU**     |   Assign dedicated CPU cores with at least 2.4 GHz, which aren't dynamically allocated. The appliance continuously records and analyzes network traffic so CPU usage is high. CPU performance is critical to capturing and analyzing network traffic. Any slowdown could lead to packet drops and performance degradation.</br></br>   |
+|**Memory**     | Allocate RAM statically for the required capacity, not dynamically. Sensors have high RAM usage due to the sensor's constant network traffic recording and analytics. </br></br>|
+|**Network interfaces**  |  Physical mapping provides best performance, lowest latency, and efficient CPU usage. Physically map Network Interface Cards (NIC)s to the virtual machines with Single Root Input/Output Virtualization (SR-IOV) or a dedicated NIC. Given the high traffic monitoring levels, expect high network utilization. </br></br>Set the promiscuous mode on your vSwitch to **Accept**, which allows all traffic to reach the virtual machine. Some vSwitch implementations might block certain protocols they aren't configured correctly.</br></br>|
+|**Storage**     | Make sure to allocate enough read and write IOPs and throughput to match the performance of the virtual appliances. Expect high storage usage due to the large traffic monitoring volumes.   </br>   |
 
 ### Requirements
 

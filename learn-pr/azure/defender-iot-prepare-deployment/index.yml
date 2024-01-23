@@ -13,8 +13,6 @@ title: Prepare to deploy Microsoft Defender for IoT
 summary: To prepare for the deployment of Microsoft Defender for IoT, identify what to monitor, choose a traffic mirroring method, and review the appliance options.
 abstract: |
   By the end of this module, you'll be able to:
-  Analyze a network diagram to identify devices and subnets to monitor with Defender for IoT. 
-
     - Analyze a network diagram to identify devices and subnets to monitor with Defender for IoT.
     - Analyze a network diagram to identify where to place Defender for IoT network sensors and how they should be configured.
     - Choose a traffic mirroring method for each sensor.
@@ -23,6 +21,7 @@ prerequisites: |
   - Knowledge of what Defender for IoT is and how it works at a beginner level
   - Knowledge of operational technology (OT) networks and networking concepts at an intermediate level
   - Familiarity with the Purdue networking model like the device types that are included in each networking level
+  - A network diagram
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - intermediate

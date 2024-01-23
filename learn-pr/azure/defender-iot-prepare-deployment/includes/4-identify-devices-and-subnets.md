@@ -1,14 +1,12 @@
-In the last unit, you examined your network diagram, to note all the devices you want to monitor in your car manufacturer organization. You're preparing your OT site and determining what devices and subnets to monitor. This unit explores what devices and subnet information to collect and how to determine interesting traffic to determine the sensors to onboard.
-
-## Identify devices and subnets to monitor
+In the last unit, you examined your network diagram to note all the devices you want to monitor in your car manufacturer organization. You're preparing your OT site and determining what devices and subnets to monitor. This unit explores what devices and subnet information to collect and how to determine interesting traffic to determine the sensors to onboard.
 
 Monitor and mirror traffic to Defender for IoT that's most interesting to you from a security or operational perspective. Examine your OT network diagram with your site engineering, network, and operational teams to define where to find the most relevant traffic for monitoring across network devices and subnets.
 
-### Gather Device information
+## Gather device information
 
 Devices can be divided into:
 
-- **Endpoint devices** - A wide range of devices physically connected to a network, like servers, computers, IoT (internet of things) devices, and more.
+- **Endpoint devices** - A wide range of devices physically connected to a network, like servers, computers, IoT devices, and more.
 - **Network devices** - Hardware components that serve the infrastructure with networking services, including network switches, firewalls, routers, and access points.
 
 For each device you'd like to monitor, gather the following information:
@@ -27,16 +25,16 @@ For each device you'd like to monitor, gather the following information:
 | **Managed by partner services?** | Whether a partner service, such as Siemens, Rockwell, or Emerson, manages the device and the management policy, if relevant. |
 | **Serial connections** |The serial communication protocol used, if relevant.|
 
-### Calculate the number of network devices you want to monitor
+## Calculate the number of network devices you want to monitor
 
-Calculate the number of devices in each site to determine the right number of Defender for IoT licenses. Exclude devices that aren't individual devices for Defender for IoT, like:
+Calculate the number of devices in each site to determine the right number of Defender for IoT licenses you need. Exclude devices that aren't counted as individual devices for Defender for IoT, like:
 
 - Public internet IP addresses
 - Multi-cast groups
 - Broadcast groups
 - Devices that are inactive for more than 60 days
 
-### Plan for multi-sensor deployment
+## Plan for multi-sensor deployment
 
 For a Defender for IoT deployment with multiple sensors, also consider the following points when planning your sensors:
 
@@ -46,13 +44,13 @@ For a Defender for IoT deployment with multiple sensors, also consider the follo
 
 - **Switches with RSPAN traffic mirroring support**: Plan at least one sensor for every eight switches, with a local SPAN port. Plan to place the sensor close enough to the switches so that you can connect them by cable.
 
-### Create a list of subnets
+## Create a list of subnets
 
 Using your list of devices to monitor, create an aggregated list of subnets that you want to monitor. Use the subnet list, once you've deployed, to verify whether all the listed subnets are detected correctly.
 
 ## Identify interesting traffic points
 
-Usually the interesting traffic points to monitor, security-wise, are the interfaces that connect between the default gateway entity to the core or distribution switch. Monitoring there ensures that traffic traveling from inside to outside the IP segment, is monitored. Consider possible **missing traffic** that is supposed to leave the segment, but ends up remaining inside the segment.
+Usually, the interesting traffic points to monitor, security-wise, are the interfaces that connect between the default gateway entity to the core or distribution switch. Monitoring there ensures that traffic traveling from inside to outside the IP segment is monitored. Consider possible **missing traffic** that is supposed to leave the segment but ends up remaining inside the segment.
 
 Consider the following traffic points in your network:
 
@@ -66,7 +64,7 @@ Consider the following traffic points in your network:
 
 - **A subnet's default gateway:** For each interesting subnet, a connection to the entity that acts as the network subnet default gateway is the interesting point.  Sometimes there's subnet traffic unmonitored by the regular interesting point. Monitoring this otherwise unmonitored type of traffic is useful, especially on sensitive subnets.
 
-- **Atypical traffic:**   To monitor otherwise unmonitored traffic might require extra streaming points and network solutions, such as RSPAN or network tappers.
+- **Atypical traffic:**   Monitoring otherwise unmonitored traffic might require extra streaming points and network solutions, such as RSPAN or network tappers.
 
 ## List your planned OT sensors
 
@@ -75,9 +73,7 @@ With the information about what traffic you want to monitor with Defender for Io
 For each sensor include:
 
 - For any cloud-connected sensors, the cloud connection method
-- Whether appliances are physical or virtual
 - Assigned sensor site and zone
-- Traffic mirroring method
 
 Recall that your car manufacturing organization has offices and production sites across the globe.  The following table shows a sample OT sensor deployment plan for your car manufacturing site, with offices in Paris, Lagos, Dubai, and Tianjin.
 
@@ -88,7 +84,7 @@ Recall that your car manufacturing organization has offices and production sites
 |**Dubai office** |- Ground floor (Convention center)<br> - Floor 1 (Sales) <br> - Floor 2 (Offices)|dubai-guests<br>dubai-sales<br>dubai-exec| Yes<br>Yes<br>Yes|
 |**Tianjin office** |- Ground floor (Offices)<br> - Floors 1-2 (Factory)| tianjin-office <br>tianjin-factory | Yes <br>No |
 
-In this unit you've identified the devices and subnets and their interesting traffic that you'd like to monitor, and created an OT sensor deployment list for your car manufacturer. In the next unit, you'll determine the traffic mirroring methods to use for your site.
+In this unit you've learned how to identify the devices and subnets and their interesting traffic to monitor, and created an OT sensor deployment list for your car manufacturer. In the next unit, you'll learn how to determine the traffic mirroring methods to use for your site.
   
 ## Knowledge check
 <!--let's get Sagi to comment on these questions-->

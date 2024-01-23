@@ -64,11 +64,11 @@ Add more units as needed for your content
 
     **Knowledge check**
 
-    What types of questions test the learning objective? [(Knowledge check guidance)](https://review.learn.microsoft.com/help/learn/id-guidance-knowledge-check)
+    What types of questions will test the learning objective? [(Knowledge check guidance)](https://review.learn.microsoft.com/help/learn/id-guidance-knowledge-check)
 
     For a given scenario and network diagram (with interesting traffic hinted at or mentioned?):
 •	- List the devices and subnets to monitor
-•	- List which to filter out that aren't in focus
+•	- List which to filter out that are not in focus
 
 
 1. Determine traffic mirroring methods to use
@@ -83,13 +83,13 @@ Add more units as needed for your content
     What types of questions will test the learning objective? [(Knowledge check guidance)](https://review.learn.microsoft.com/help/learn/id-guidance-knowledge-check)
 
      Types of questions: For a given scenario or scenarios, which traffic mirroring method would you use for each of these types of sensors? I got this long winded Q&A from Azure AI but this in the vein of what I'm thinking but shorter: "Here's a scenario question to test that students have acquired the ability to choose a traffic mirroring method for each sensor based on the key learning points:
-     Scenario: You're the security administrator for a large organization that has multiple sensors deployed across your network. You want to monitor the network traffic from each sensor to detect any security threats. You have decided to use traffic mirroring to accomplish this.
+     Scenario: You are the security administrator for a large organization that has multiple sensors deployed across your network. You want to monitor the network traffic from each sensor to detect any security threats. You have decided to use traffic mirroring to accomplish this.
      Question: What factors should you consider when choosing a traffic mirroring method for each sensor? Provide an example of a sensor and the traffic mirroring method you would choose for it based on these factors.
      Answer: When choosing a traffic mirroring method for each sensor, you should consider factors such as the type of sensor, the network topology, and the available resources. For example, if you have a sensor that is connected to a switch, you could use port mirroring to mirror the traffic from that sensor to a monitoring device. On the other hand, if you have a sensor that is connected to a hub or a span port, you could use a network tap to mirror the traffic. Another factor to consider is the available resources, such as the number of available ports on the switch or the amount of bandwidth required for the traffic mirroring. For example, if you have limited resources, you may need to use a network tap instead of port mirroring. Based on these factors, you could choose a traffic mirroring method such as port mirroring or a network tap for each sensor to monitor the network traffic and detect any security threats."
 
 1. Review appliance options
    - List the “general” appliance options available for use with Defender for IoT network sensors
-     Will need to summarize key points in these articles to fit into a unit:
+     Will need to summarize key points in these article to fit into a unit:
 	[Supported hardware profiles](https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-appliance-sizing)
 o	[Pre-configured appliances](https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-pre-configured-appliances)
 o	[Virtual appliance support](https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-virtual-appliances) 
@@ -97,9 +97,9 @@ o	[Virtual appliance support](https://learn.microsoft.com/azure/defender-for-iot
    - Per Vishakha Gosh: this is most commonly used hardware profile and purchased applicance: https://learn.microsoft.com/azure/defender-for-iot/organizations/appliance-catalog/hpe-proliant-dl20-plus-enterprise
    **Knowledge check**
 
-    What types of questions test the learning objective? [(Knowledge check guidance)](https://review.learn.microsoft.com/help/learn/id-guidance-knowledge-check)
+    What types of questions will test the learning objective? [(Knowledge check guidance)](https://review.learn.microsoft.com/help/learn/id-guidance-knowledge-check)
    
-    For a given scenario (sensor, bandwidth that sensor needs, etc.), which appliance would you use? Why would you pick option > over option B? (We’d likely need to provide a list of options as we can’t list all in the training module.)
+    For a given scenario (sensor, bandwidth that sensor needs, etc), which appliance would you use? Why would you pick option > over option B? (We’d likely need to provide a list of options as we can’t list all in the training module.)
 
 
 1. Summary
