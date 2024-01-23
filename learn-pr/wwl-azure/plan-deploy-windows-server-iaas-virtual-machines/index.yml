@@ -43,7 +43,6 @@ products:
 - azure-portal
 - azure-storage
 - azure-virtual-machines
-- azure-automanage
 subjects:
 - virtual-machine
 - development-tools
