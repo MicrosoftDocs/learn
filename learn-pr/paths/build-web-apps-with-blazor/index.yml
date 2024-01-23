@@ -27,7 +27,7 @@ subjects:
 - development-tools
 modules:
 - learn.intro-to-blazor
-- learn.build-web-app-blazor-webassembly-vscode
+- learn.build-your-first-blazor-web-app
 - learn.interact-with-data-blazor-web-apps
 - learn.use-pages-routing-layouts-improve-blazor-navigation
 - learn.use-forms-in-blazor-web-apps
