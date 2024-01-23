@@ -12507,6 +12507,101 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/advocates/responsible-bots-introduction/index.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots-introduction/1-introduction.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots-introduction/2-what-is-responsible-bot.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots-introduction/3-how-responsible-bot-works.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots-introduction/4-when-to-use-responsible-bot.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots-introduction/5-knowledge-check.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots-introduction/6-summary.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/index.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/1-introduction.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/2-bot-framework-responsible-principles.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/3-install-visual-studio.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/4-create-bot.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/5-run-bot.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/6-add-dictionary.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/7-edit-welcome-message.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/8-knowledge-check.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/9-summary.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.advocates.responsible-bots.badge.yml",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.advocates.responsible-bots-introduction.badge.yml",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/build-chat-bot-azure-portal/index.md",
       "redirect_url": "/training/modules/create-bot-with-bot-framework-composer/",
       "redirect_document_id": false
