@@ -2,7 +2,7 @@ One of the consulting company's largest clients wants to build a line-of-busines
 
 In this scenario, we discuss the requirements of the application and decide which Windows framework is the best option for the development team.
 
-![A picture visualizing a team selecting frameworks for a healthcare app project.](../media/windows-healthcare-app-req.jpg)
+<!--![A picture visualizing a team selecting frameworks for a healthcare app project.](../media/windows-healthcare-app-req.jpg)-->
 
 ## Building the healthcare application
 

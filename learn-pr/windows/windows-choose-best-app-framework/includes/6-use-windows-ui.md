@@ -4,7 +4,7 @@ In this scenario, we discuss how each Windows UI framework can be used to create
 
 In this unit, you learn the benefits and limitations of the frameworks and how they may work with the requirements for the Shopping List app.
 
-![A picture visualizing a team selecting frameworks for a shopping list app project.](../media/windows-shopping-list-req.jpg)
+<!--![A picture visualizing a team selecting frameworks for a shopping list app project.](../media/windows-shopping-list-req.jpg)-->
 
 ## Building the shopping list application
 

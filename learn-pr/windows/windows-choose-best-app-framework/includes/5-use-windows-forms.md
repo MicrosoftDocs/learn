@@ -4,7 +4,7 @@ In this scenario, we discuss the requirements of the utility and decide which Wi
 
 In this unit, you learn the benefits and limitations the frameworks and how they may work with the requirements for the log reader application.
 
-![A picture visualizing a team selecting frameworks for a Windows utility app project.](../media/windows-utility-app-req.jpg)
+<!--![A picture visualizing a team selecting frameworks for a Windows utility app project.](../media/windows-utility-app-req.jpg)-->
 
 ## Building the log reader utility
 
