@@ -46,7 +46,7 @@ The starter code includes the four apps and the starting point for an API that y
 
 ```files
 ├ angular-app  👈 The Angular client app
-├ api-starter  👈 The API starter app. You use this later
+├ api-starter  👈 The API starter app. You use this later.
 ├ react-app    👈 The React client app
 ├ svelte-app   👈 The Svelte client app
 └ vue-app      👈 The Vue client app
