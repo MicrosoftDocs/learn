@@ -11,19 +11,19 @@ In Container Apps, the applications need to be packaged into a Docker container.
 Container Apps provides the following features.
 
 * _Revisions_: Automatic versioning that helps you manage the application lifecycle of your container apps.
-* _Traffic control_: Split incoming HTTP traffic across multiple revisions for blue/green deployments and A/B testing.
-* _Ingress_: Simple HTTPS ingress configuration. You don't need to worry about DNS and certificates.
-* _Autoscaling_: Use all KEDA-supported scale triggers (to scale your app based on external metrics).
-* _Secrets_: Deploy secrets that are securely shared between containers, scale rules and Dapr sidecars.
-* _Monitoring_: The standard output and error streams are automatically written to Log Analytics.
-* _Dapr_: Through a simple flag, you can enable native Dapr integration for your Container Apps.
+* _Traffic control_: The ability to split incoming HTTP traffic across multiple revisions for blue/green deployments and A/B testing.
+* _Ingress_: Simple HTTPS ingress configuration. You don't need to worry about DNS or certificates.
+* _Autoscaling_: KEDA-supported scale triggers to scale your app based on external metrics.
+* _Secrets_: Secrets that are shared among containers, scale rules, and Dapr sidecars.
+* _Monitoring_: Standard output and error streams that are automatically written to Log Analytics.
+* _Dapr_: Dapr integration for your container apps. Enable this integration by using a simple flag.
 
-Azure Container Apps introduces the following concepts:
+In the next exercise, you'll be introduced to the following concepts.
 
-* _Environment_: a secure boundary around a group of Container Apps. They're deployed in the same virtual network, these apps can easily intercommunicate with each other and they write logs to the same Log Analytics workspace. An environment can be compared with a Kubernetes namespace.
-* _Container App_: a group of containers (pod) that is deployed and scale together. They share the same disk space and network.
-* _Revision_: an immutable snapshot of a Container App. New revisions are automatically created and are valuable for HTTP traffic redirection strategies, such as A/B testing.
+* _Environment_: An enhanced-security boundary around a group of container apps. The apps are deployed in a singe virtual network, they can easily intercommunicate with each other, and they write logs to a single Log Analytics workspace. An environment can be compared with a Kubernetes namespace.
+* _Container app_: A group of containers (a pod) that's deployed and scales together. They share a single disk space and network.
+* _Revision_: An immutable snapshot of a container app. New revisions are created automatically and are valuable for HTTP traffic redirection strategies like A/B testing.
 
-![Screenshot showing the Azure Container Apps Concepts.](../media/azure-container-apps-environment.png)
+![Screenshot that illustrates the Container Apps concepts.](../media/azure-container-apps-environment.png)
 
 Let's see all these concepts in action by creating a Container App environment.
