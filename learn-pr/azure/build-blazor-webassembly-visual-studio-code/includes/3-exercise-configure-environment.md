@@ -20,7 +20,6 @@ To set up a Blazor project to work with, we use Visual Studio Code and the C# De
 
 5. In Visual Studio Code with the C# Dev Kit the **Solution Explorer** will load showing you a project view of the new Blazor app.
 
-
 ## Optional: Create a new Blazor app with the .NET CLI
 
 If you are using the integrated **Terminal** to create the project, you can run the following command:
@@ -65,7 +64,6 @@ If Visual Studio Code prompts you to install required assets, select **Yes**.
 
    ![Screenshot showing Visual Studio Code prompting to install assets required to build and debug.](../media/missing-assets-visual-studio-code.png)
 
-
 ## Run the app with the integrated debugger
 
 1. In Visual Studio Code, select **Run** from the menu.
@@ -89,8 +87,6 @@ If Visual Studio Code prompts you to install required assets, select **Yes**.
     ```
 
     This command builds and starts the app, then rebuilds and restarts the app whenever you make code changes. The app should automatically open in your default browser. Your browser might warn you that the site isn't secure; it's safe to proceed.
-
-   
 
 ::: zone-end
 
