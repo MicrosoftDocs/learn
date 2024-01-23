@@ -126,7 +126,7 @@ Service principals don't expire, but their keys do. When you create a key, you c
 To reset a key for a service principal, use the `az ad sp` command with the application ID, as in this example:
 
 ```azurecli
-az ad sp credential reset --id APPLICATION_ID
+az ad sp credential reset --id "b585b740-942d-44e9-9126-f1181c95d497"
 ```
 
 You can also remove and re-create the service principal's key in two separate steps by using the `az ad sp credential delete` and then the `az ad sp credential reset --append` commands.
