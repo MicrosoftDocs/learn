@@ -1,8 +1,10 @@
-VS Code profiles provide a way to organize and isolate customizations within the editor. A profile represents a specific set of configurations that can be easily activated or deactivated. By using profiles, YOU can maintain separate configurations for different projects or teams, ensuring a seamless transition between different development environments.
+VS Code profiles provide a way to organize and isolate customizations within the editor. A profile represents a specific set of configurations that can be easily activated or deactivated. With profiles, users can maintain separate configurations for different projects or teams, ensuring a seamless transition between different development environments.
 
 ## What's in a Profile?
 
 Each profile in VS Code can include settings, extensions, keybindings, snippets, and tasks. Profiles can be created based on existing profiles, templates, or as empty profiles without any customizations.
+
+Keeping track of all of the info included in a profile can be hugely beneficial. For example, when you start working on a new machine, you'll be immediately productive if your usual keybindings, snippets and more are instantly available instead of you spending time recreating that on the new machine.
 
 ## Creating and Managing Profiles
 
@@ -18,13 +20,13 @@ These changes are stored within the active profile, ensuring that the customizat
 
 ## Switching between profiles
 
-You can use the "Switch Profile" command in the Command Palette or the dropdown menu accessible through the Manage gear button or File > Preferences > Profiles. Additionally, keyboard shortcuts can be assigned to quickly switch between different profiles.
+You can use the "Switch Profile" command in the Command Palette or the dropdown menu accessible through the Manage gear button or File > Preferences > Profiles. Additionally, keyboard shortcuts can be assigned to quickly switch between different profiles. This feature can be valuable if you need different profile settings for different projects. Let's say for a Vue.js project you need certain keybindings, snippets and even tasks, but for working on a Node.js backend you need completely different profile settings.
 
 :::image type="content" source="../media/2-switch-profile.png" alt-text="Screenshot of VS Code custom profile icon.":::
 
-## Best Practices
+This feature can be valuable if you need different profile settings for different projects. Let's say for a Vue.js project you need certain keybindings, snippets and even tasks, but for working on a Node.js backend you need completely different profile settings.
 
-To effectively manage profiles in VS Code, it is important to follow certain best practices and utilize useful tips:
+To effectively manage profiles in VS Code, it's important to follow certain best practices and utilize useful tips:
 
 * Experiment with different configurations: Profiles offer an opportunity to experiment with different settings, extensions, and UI layouts. Don't be afraid to try out new configurations and workflows to find the setup that best suits your needs.
 * Organize profiles: Use meaningful names for profiles and group them based on projects, teams, or workflows. This helps in quickly identifying and activating the desired profile.
@@ -32,12 +34,10 @@ To effectively manage profiles in VS Code, it is important to follow certain bes
 
 ## Advanced Features and Customizations
 
-In addition to the basic profile management features, VS Code offers advanced capabilities and customizations:
+- You can associate profiles with specific workspaces to automatically activate the corresponding profile when opening the workspace.
+- You can associate profiles with specific workspaces to automatically activate the corresponding profile when opening the workspace.
+- When used with Settings Sync, profiles can be synchronized across multiple devices. This feature ensures that developers have consistent configurations regardless of the machine they are working on. You'll be diving into Settings Sync more later in this module.
+- You can associate profiles with specific workspaces to automatically activate the corresponding profile when opening the workspace.
+- When used with Settings Sync, profiles can be synchronized across multiple devices. This ensures that developers have consistent configurations regardless of the machine they are working on. You'll be diving into Settings Sync more later in this module.
 
-1. You can associate profiles with specific workspaces to automatically activate the corresponding profile when opening the workspace.
-1. When used with Settings Sync, profiles can be synchronized across multiple devices. This ensures that developers have consistent configurations regardless of the machine they are working on. You'll be diving into Settings Sync more later in this module.
-
-> [!IMPORTANT]
-> While profiles offer great flexibility and customization options, it is important to note that machine-specific settings are not exported when exporting profiles. This ensures that settings applicable to a specific machine, such as local paths, are not inadvertently shared and cause conflicts.
-
-In the next exercise, you'll create, customize and manage profiles in VS Code.
+In the upcoming exercise, you'll create, customize and manage profiles in VS Code.

@@ -3,7 +3,9 @@ Settings Sync lets you share your VS Code configurations such as settings, keybi
 
 ## How does Settings Sync work?
 
-Settings Sync requires a sign-in with either your Microsoft or GitHub accounts. Once you have signed in, you can choose which settings you want to sync across your machines.You can choose to synchronize all of them or only a few of them.
+Settings Sync requires a sign-in with either your Microsoft or GitHub accounts. Once you have signed in, you can choose which settings you want to sync across your machines. You can choose to synchronize all of them or only a few of them. Once you have enabled Settings Sync, your settings will be uploaded to the cloud and kept in sync whenever you make any changes to them. There is no need to manually sync or save any setting when using Settings Sync.
+
+Here are the settings that Settings Sync feature will automatically sync for you:
 
 :::image type="content" source="../media/1-enable-settings-sync.png" alt-text="Screenshot of VS Code Settings Sync sign-in interface.":::
 
@@ -21,7 +23,7 @@ Settings Sync requires a sign-in with either your Microsoft or GitHub accounts. 
 
 * Profiles - Any profiles that you have created in VS Code. These profiles can be found by choosing "Profiles: Switch Profile" from the Command Palette.
 
-### How do I see the status of Settings Sync?
+It can be helpful to see exactly what settings have been synced, the last time your settings were synced, etc. 
 
 Once Settings Sync is enabled, the Settings Sync explorer view will be avaialble in VS Code. You can access it by navigating to the Command Palette and choosing "Settings Sync: Show Synced Data". 
 

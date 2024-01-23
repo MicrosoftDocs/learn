@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.personalize-remote-development-workflow
 metadata:
-  title: Personalize your Remote Development workflow with VS Code
+  title: Personalize your VS Code Remote Development workflow
   description: Leverage features in VS Code to personalize your development experience for different remote environments.
   ms.date: 11/28/2023
   author: burkeholland
@@ -18,13 +18,13 @@ summary: |
 
 abstract: |
   By the end of this module, you'll be able to:
-    - Enable and configure Settings Sync in Visual Studio Code Code.
+    - Enable and configure Settings Sync in Visual Studio Code.
     - Load a personalized version of Visual Studio Code both locally and on the web.
     - Create different profiles tailored for different projects and remote environments.
+    - Combine multiple remote development enviornments for a customized development experience.
 
 prerequisites: |
-  - Basic familiarity with the Visual Studio Code editor interface.
-  - Basic understanding of Remote Development concepts in Visual Studio Code, including Remote Containers, Remote WSL, Remote SSH and GitHub Codespaces.
+  - Basic understanding of Remote Development concepts in Visual Studio Code, including Dev Containers, WSL, Remote - SSH, and GitHub Codespaces.
 
 iconUrl: /learn/achievements/introduction-to-visual-studio-code.svg
 
