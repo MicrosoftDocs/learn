@@ -23,13 +23,13 @@ Use the following articles to learn how to integrate device connected and discon
 * [React to IoT Hub events by using Event Grid to trigger actions](/azure/iot-hub/iot-hub-event-grid)
 * [Order device connection events by using Cosmos DB](/azure/iot-hub/iot-hub-how-to-order-connection-state-events)
 
-Device connection state events are available for devices connecting using either the MQTT or AMQP protocol, or using either of these protocols over WebSockets. Requests made only with HTTPS won't trigger device connection state notifications.
+Device connection state events are available for devices that connect using either the MQTT or AMQP protocol, or using either of these protocols over WebSockets. Requests made only with HTTPS don't trigger device connection state notifications.
 
-* For devices connecting using the Azure IoT SDKs for Java, Node, or Python:
+* For devices that connect using the Azure IoT SDKs for Java, Node, or Python:
   * MQTT: connection state events are sent automatically.
   * AMQP: a [cloud-to-device link](/azure/iot-hub/iot-hub-amqp-support#invoke-cloud-to-device-messages-service-client) should be created to reduce delays in reporting connection states.
 
-For devices connecting using the Azure IoT SDKs for .NET or C, connection state events won't be reported until an initial device-to-cloud message is sent or a cloud-to-device message is received.
+For devices that connect using the Azure IoT SDKs for .NET or C, connection state events are not reported until an initial device-to-cloud message is sent or a cloud-to-device message is received.
 
 Outside of the Azure IoT SDKs, in MQTT these operations equate to SUBSCRIBE or PUBLISH operations on the appropriate messaging topics. Over AMQP these operations equate to attaching or transferring a message on the appropriate link paths.
 

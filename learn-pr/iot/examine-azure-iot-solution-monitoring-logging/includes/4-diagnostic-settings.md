@@ -44,7 +44,7 @@ Currently, there are two log category groups:
 * **allLogs** - Every resource log offered by the resource.
 * **audit**- All resource logs that record customer interactions with data or the settings of the service. Audit logs are an attempt by each resource provider to provide the most relevant audit data, but might not be considered sufficient from an auditing standards perspective.
 
-The "audit" category is a subset of "allLogs", but the Azure portal and REST API consider them separate settings. Selecting "allLogs" collects all audit logs regardless of if the "audit" category is also selected.
+The **audit** category is a subset of **allLogs**, but the Azure portal and REST API consider them separate settings. Selecting **allLogs** collects all audit logs regardless of if the **audit** category is also selected.
 
 ### Resource log categories
 
@@ -96,7 +96,7 @@ For pricing information, see [Azure Monitor pricing](https://azure.microsoft.com
 
 ## Read logs from an Azure Event Hub
 
-After you set up event logging through diagnostics settings, you can create applications that read out the logs so that you can take action based on the information in them. This sample code retrieves logs from an Event Hub.
+After you set up event logging through diagnostics settings, you can create applications that read out the logs so that you can take action based on the information in them. This sample code retrieves logs from Event Hubs.
 
 ```csharp
 

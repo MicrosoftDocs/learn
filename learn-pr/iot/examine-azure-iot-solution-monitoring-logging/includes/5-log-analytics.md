@@ -6,7 +6,7 @@ To route data to Azure Monitor Logs, you must create a diagnostic setting to sen
 
 Log Analytics queries use the [Kusto](/azure/data-explorer/kusto/query/) programming language. For example, you could write a query that returns a set of records and then use features of Log Analytics to sort, filter, and analyze them. Or you might write a more advanced query to perform statistical analysis and visualize the results in a chart to identify a particular trend.
 
-Whether you work with the results of your queries interactively or use them with other Azure Monitor features, such as log query alerts or workbooks, Log Analytics is the tool that you'll use to write and test them.
+Whether you work with the results of your queries interactively or use them with other Azure Monitor features, such as log query alerts or workbooks, Log Analytics is the tool that you use to write and test them.
 
 ## Use Log Analytics
 

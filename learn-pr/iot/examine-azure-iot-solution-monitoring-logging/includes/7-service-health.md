@@ -41,4 +41,4 @@ To learn how to set up alerts with Azure Service Health, see [Create activity lo
 
 ## Check health of the IoT Hub service by region on Azure status page
 
-To check the status of IoT Hub and other services by region worldwide, view the [Azure status page](https://azure.status.microsoft/status). For more information about the Azure status page, see [Azure status overview](azure/service-health/azure-status-overview) in the Azure Service Health documentation.
+To check the status of IoT Hub and other services by region worldwide, view the [Azure status page](https://azure.status.microsoft/status). For more information about the Azure status page, see [Azure status overview](/azure/service-health/azure-status-overview) in the Azure Service Health documentation.
