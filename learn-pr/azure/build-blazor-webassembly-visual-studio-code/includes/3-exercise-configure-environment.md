@@ -1,6 +1,6 @@
 Let's start by creating our first Blazor web app.
 
-This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/), [Visual Studio Code](https://code.visualstudio.com), and [Visual Studio 2022](https://visualstudio.com) for local development. If you are developing with Visual Studio Code, be sure to install the [C# Dev Kit](https://code.visualstudio.com/docs/csharp/get-started#_install), which we will use in this module.
+This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/), [Visual Studio Code](https://code.visualstudio.com), and [Visual Studio 2022](https://visualstudio.com) for local development. If you're developing with Visual Studio Code, be sure to install the [C# Dev Kit](https://code.visualstudio.com/docs/csharp/get-started#_install), which we'll use in this module.
 
 ::: zone pivot="vscode"
 
@@ -22,7 +22,7 @@ To set up a Blazor project to work with, we use Visual Studio Code and the C# De
 
 ## Optional: Create a new Blazor app with the .NET CLI
 
-If you are using the integrated **Terminal** to create the project, you can run the following command:
+If you're using the integrated **Terminal** to create the project, you can run the following command:
 
     ```dotnetcli
     dotnet new blazor
