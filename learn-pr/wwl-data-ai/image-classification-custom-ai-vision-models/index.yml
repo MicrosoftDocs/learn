@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.image-classification-custom-ai-vision-model
+metadata:
+  title: Image classification with custom Azure AI Vision models
+  description: "Classify images with custom Azure AI Vision models"
+  ms.date: 1/4/2024
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: module-standard-task-based 
+  ms.service: azure-ai-vision
+title: Image classification with custom Azure AI Vision models
+summary: "Classify images by training a custom model with Azure AI Vision."
+abstract: |
+  By the end of this module, you'll be able to:
+    - "TODO learning objective 1"
+    - "TODO learning objective 2"
+    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+prerequisites: |
+  - "TODO prerequisite 1"
+  - "TODO prerequisite 2"
+  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - ai-engineer
+products: 
+  - ai-vision
+subjects:
+  - data-ai
+units:
+- learn.wwl.image-classification-custom-ai-vision-model.introduction
+- learn.wwl.image-classification-custom-ai-vision-model.learning-content
+- learn.wwl.image-classification-custom-ai-vision-model.exercise
+- learn.wwl.image-classification-custom-ai-vision-model.learning-content
+- learn.wwl.image-classification-custom-ai-vision-model.exercise
+- learn.wwl.image-classification-custom-ai-vision-model.knowledge-check
+- learn.wwl.image-classification-custom-ai-vision-model.summary
+badge:
+  uid: learn.wwl.image-classification-custom-ai-vision-model.badge
