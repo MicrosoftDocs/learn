@@ -76,6 +76,24 @@ You can customize an image by starting a container with a base image, and then m
 
 A Dockerfile is a set of instructions that create a Docker image that has the exact software that you need in it to run your application, including the application itself.
 
+
+## .NET SDK container publishing
+
+In .NET 7, the .NET SDK gained the ability to create container images via the `dotnet publish`` command. The tools to do this do a bunch of inference based on the properties of your project and its outputs, and then create the same image that a simple Dockerfile would create. It can take a few as wo commands to create a new application and publish it as an image:
+
+```donetcli
+dotnet new webapi
+dotnet publish --os linux --arch x64 /t:PublishContainer -c Release
+```
+
+The preceding .NET CLI commands create a new web API and publishes the app as a container:
+
+* Targeting Linux as the OS (--os linux).
+* Specifying an x64 architecture (--arch x64).
+* Using the release configuration (-c Release).
+
+You can control many aspects of the generated container through MSBuild properties. In general, if you can use a command in a _Dockerfile_ to set some configuration, you can do the same via MSBuild.
+
 ## Why build microservices in .NET?
 
 Starting with .NET Core and continuing to current iterations, .NET is built to be cloud-native first. It runs cross-platform, so your Docker image can be based on a flavor of Linux, and your .NET code still runs. Microsoft has already created .NET images for Docker. Also, .NET is extremely fast. The ASP.NET Kestrel web server routinely outperforms other web servers.
