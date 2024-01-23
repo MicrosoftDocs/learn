@@ -14,7 +14,7 @@ To set up a Blazor project to work with, we use Visual Studio Code and the C# De
 
 2. Select **Blazor Web App** in the dropdown list.
 
-3. Create a new folder in the pop up names **BlazorApp** and select **Select Folder**.
+3. Create a new folder in the pop-up named **BlazorApp** and select **Select Folder**.
 
 4. Name the project **BlazorApp** and press **Enter** to confirm.
 
