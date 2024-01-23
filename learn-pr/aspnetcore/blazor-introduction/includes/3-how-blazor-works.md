@@ -37,11 +37,11 @@ Blazor supports both server and client-side rendering of components to handle va
 
 You can also configure server components to be interactive, so they can handle arbitrary UI events, maintain state across interactions, and render updates dynamically. Interactive server components handle UI interactions and updates over a WebSocket connection with the browser.
 
-![Blazor interactive server rendering](../media/interactive-server.png)
+![Diagram of Blazor interactive server rendering.](../media/interactive-server.png)
 
 Alternatively, Blazor components can be rendered interactively from the client. The component is downloaded to the client and run from the browser via WebAssembly. Interactive WebAssembly components can access client resources through the web platform, like local storage and hardware, and can even function offline once downloaded.
 
-![Blazor interactive WebAssembly rendering](../media/interactive-wasm.png)
+![Diagram of Blazor interactive WebAssembly rendering.](../media/interactive-wasm.png)
 
 You can choose to render different components from the server or the client within the same app. Many of the pages in your app might not require any interactivity at all, and can be rendered statically from the server, while other more interactive parts of your app can be handled from the server or client. You can decide which component render mode to use at design time or runtime. With Blazor, you have the flexibility to build the web app architecture that's right for your scenario.
 
