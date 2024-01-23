@@ -21,7 +21,7 @@ quiz:
     choices:
     - content: "Point C"
       isCorrect: false
-      explanation: "Point C is a good place to mirror IDMZ data, not PLC and HMI information."
+      explanation: "Point C is a good place to mirror industrial perimeter network data, not PLC and HMI information."
     - content: "Point D"
       isCorrect: false
       explanation: "While you can mirror PLC and HMI information from point D, point E allows you to mirror PLC and HMI information from both zones at once."
