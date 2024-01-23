@@ -1,6 +1,6 @@
 Let's start by creating our first Blazor web app.
 
-This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/), [Visual Studio Code](https://code.visualstudio.com), and [Visual Studio 2022](https://visualstudio.com) for local development. If you are developing with Visual Studio Code, be sure to install the [C# Dev Kit](https://code.visualstudio.com/docs/csharp/get-started#_install), which we will use in this module.
+This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/), [Visual Studio Code](https://code.visualstudio.com), and [Visual Studio 2022](https://visualstudio.com) for local development. If you're developing with Visual Studio Code, be sure to install the [C# Dev Kit](https://code.visualstudio.com/docs/csharp/get-started#_install), which we'll use in this module.
 
 ::: zone pivot="vscode"
 
@@ -14,24 +14,21 @@ To set up a Blazor project to work with, we use Visual Studio Code and the C# De
 
 2. Select **Blazor Web App** in the dropdown list.
 
-3. Create a new folder in the pop up names **BlazorApp** and select **Select Folder**.
+3. Create a new folder in the pop-up named **BlazorApp** and select **Select Folder**.
 
 4. Name the project **BlazorApp** and press **Enter** to confirm.
 
 5. In Visual Studio Code with the C# Dev Kit the **Solution Explorer** will load showing you a project view of the new Blazor app.
 
-
 ## Optional: Create a new Blazor app with the .NET CLI
 
-If you are using the integrated **Terminal** to create the project, you can run the following command:
+If you're using the integrated **Terminal** to create the project, you can run the following command:
 
     ```dotnetcli
     dotnet new blazor
     ```
 
-Whether you created the Blazor app with Visual Studio Code or the CLI it creates a basic Blazor project with all required files and pages, along with a C# project file named **BlazorApp.csproj**.
-
-    You should now have access to these files.
+Whether you created the Blazor app with Visual Studio Code or the CLI it creates a basic Blazor project with all required files and pages, along with a C# project file named **BlazorApp.csproj**. You should now have access to these files:
 
     ```bash
     -| bin
@@ -65,7 +62,6 @@ If Visual Studio Code prompts you to install required assets, select **Yes**.
 
    ![Screenshot showing Visual Studio Code prompting to install assets required to build and debug.](../media/missing-assets-visual-studio-code.png)
 
-
 ## Run the app with the integrated debugger
 
 1. In Visual Studio Code, select **Run** from the menu.
@@ -89,8 +85,6 @@ If Visual Studio Code prompts you to install required assets, select **Yes**.
     ```
 
     This command builds and starts the app, then rebuilds and restarts the app whenever you make code changes. The app should automatically open in your default browser. Your browser might warn you that the site isn't secure; it's safe to proceed.
-
-   
 
 ::: zone-end
 
