@@ -9,7 +9,7 @@ This unit describes how to download the OT monitoring software from the Defender
 
 ## Install Defender for IoT software
 
-To start the software installation open your virtual machine.
+To start the software installation, open your virtual machine.
 
 ### Configure the virtual machine
 
@@ -62,7 +62,7 @@ To start the software installation open your virtual machine.
 
     Define a new password for the admin user, containing lowercase and uppercase alphabetic characters, numbers and symbols.<!-- not sure we really need this? Although it is important , it isnt the direct part of the process? What do you think?-->
 <!-- what login credentials are to be used? -->
-## Activate and intial setup
+## Activate and initial setup
 
     The **Defender for IoT | Overview** page opens to the **Management interface** tab.
     <!-- add screenshot of the Overview page here -->

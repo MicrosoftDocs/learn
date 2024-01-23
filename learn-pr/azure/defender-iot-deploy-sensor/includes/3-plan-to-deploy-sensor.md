@@ -17,16 +17,16 @@ Download the OT monitoring software installation file from the Defender for IoT 
 
 This information should be found in the virtual machine software documentation. <!-- as per /ot-deploy/install-software-ot-sensor does this seem correct? I think so.-->
 
-Run the installation file on the virtual machine, and follow the stages in the wizard to install the software. When the installation is completed the default network details are displayed. In a real life scenario, configured sensors can be bought and this step is skipped.
+Run the installation file on the virtual machine, and follow the stages in the wizard to install the software. Once the installation is completed the default network details are displayed. In a real life scenario, configured sensors can be bought and this step is skipped.
 
-## Activate and intial setup
+## Activate and initial setup
 
 Next, configure the sensor in a browser, which requires the sensor administrator username and password. The browser displays the **Defender for IoT | Overview** page, which leads you through the four stages of setting up the sensor, each stage is displayed in its own tab.
 <!-- where can we see a proper screen shot of this? check the titles of each section and how best to write these items based on that - add screenshot of the oiverview screen -->
 
-### Management iinterface tab
+### Management interface tab
 <!-- again not sure about the heading, should we also indent this? -->
-In the **Management interface** tab you define the network details that connect the sensor to Defender for IoT. You need to have the following details:
+In the **Management interface** tab, you define the network details that connect the sensor to Defender for IoT. You need to have the following details:
 
     |Name  |Description  |
     |---------|---------|
@@ -39,7 +39,7 @@ In the **Management interface** tab you define the network details that connect 
 
 ### Interface configurations tab
 
-The **Interface configurations** tab shows each interface on the sensor, this should match the list of endpoints in the network diagram.<!-- not sure if this is needed here? but it is important and should be checked surely?--> Each interface is set up individually.
+The **Interface configurations** tab shows each interface on the sensor, which should match the list of endpoints in the network diagram.<!-- not sure if this is needed here? but it is important and should be checked surely?--> Each interface is set up individually.
 
     Select and enable each interface to be monitored. If you're unsure which interface to use, select the :::image type="icon" source="../media/3-blink-interface.png" alt-text="blink interface icon"::: Blink physical interface LED button to have the selected port blink on your machine. 
     Select any of the interfaces that you've connected to your switch. 
@@ -57,7 +57,7 @@ In the **Activation** tab upload the activation file, provided by the deployment
 
 ### Certificates tab
 
-In the **Certificates** tab define<!--upload?--> the SSL/TLS certificate settings. It's best practice to use a CA-signed certificate that is more secure, however in our test environment the self-signed certificate is secure enough.
+In the **Certificates** tab, define<!--upload?--> the SSL/TLS certificate settings. It's best practice to use a CA-signed certificate that is more secure, however in our test environment the self-signed certificate is secure enough.
 <!-- should there be any more added about how to make a certificate or is this enough? There is this section / For more information on creating a certificate see defender-for-iot/organizations/how-to-manage-individual-sensors?branch=main&tabs=self-signed#manage-ssltls-certificates , but it seems a lot to add that in here, what is the expectation that they will have these? we also dont link to outside pages, so this shouldnt be linked to. -->
 <!-- is this uploaded here, what is the procedure? -->
 <!-- so really i presume that the certificate should be provided and mentioned in the intro? or is this user supposed to make one? -->
@@ -65,6 +65,6 @@ In the **Certificates** tab define<!--upload?--> the SSL/TLS certificate setting
 ## Configure optional settings
 <!-- should i just remove this from the image as we won't be doing it because it is preformed in the Site networking setup (which isnt part of these learn modules)? -->
 
-In a real world scenario, the optional settings are configured at the site networking setup stage, which is not part of this learn module.
+In a real world scenario, the optional settings are configured at the site networking setup stage, which isn't part of this learn module.
 
-Once these tasks have been performed the sensor deployment process has been completed and it can send data to the Azure portal.
+Once these tasks are performed the sensor deployment process is complete and it can send data to the Azure portal.
