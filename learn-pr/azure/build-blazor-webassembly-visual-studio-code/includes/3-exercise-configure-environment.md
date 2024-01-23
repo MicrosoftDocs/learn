@@ -28,9 +28,7 @@ If you're using the integrated **Terminal** to create the project, you can run t
     dotnet new blazor
     ```
 
-Whether you created the Blazor app with Visual Studio Code or the CLI it creates a basic Blazor project with all required files and pages, along with a C# project file named **BlazorApp.csproj**.
-
-    You should now have access to these files.
+Whether you created the Blazor app with Visual Studio Code or the CLI it creates a basic Blazor project with all required files and pages, along with a C# project file named **BlazorApp.csproj**. You should now have access to these files:
 
     ```bash
     -| bin
