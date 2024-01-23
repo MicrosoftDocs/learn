@@ -30,7 +30,7 @@ mvn -U io.quarkus:quarkus-maven-plugin:2.15.1.Final:create \
 > [!NOTE]
 > By default, the project is generated with Java 17. The preceding command uses the `DjavaVersion` parameter to override the default value and use Java 11.
 
-This command creates a new Quarkus project. It generates a Maven directory structure (`src/main/java` for code source and `src/test/java` for tests). It creates some Java classes, some tests, and some Dockerfiles. It also generates a `pom.xml` file with all the needed dependencies (Hibernate, RESTEasy, Jackson, PostgreSQL, and Docker).
+This command creates a new Quarkus project. It generates a Maven directory structure (`src/main/java` for source code and `src/test/java` for tests). It creates some Java classes, some tests, and some Dockerfiles. It also generates a `pom.xml` file with all the needed dependencies (Hibernate, RESTEasy, Jackson, PostgreSQL, and Docker).
 
 ```xml
   <dependencies>
@@ -163,18 +163,18 @@ public class TodoResource {
 }
 ```
 
-## Execute the application
+## Run the application
 
-To execute the application in development mode, you need Docker to be up and running. That's because Quarkus detects that you need a PostgreSQL database (thanks to the PostgreSQL dependency `quarkus-jdbc-postgresql` in the `pom.xml`), downloads the PostgreSQL Docker image, and starts a container with the database. Then, it automatically creates the `Todo` table in the database.
+When you run the application in development mode, Docker needs to be running. That's because Quarkus detects that you need a PostgreSQL database (because of the PostgreSQL dependency `quarkus-jdbc-postgresql` in `pom.xml`), downloads the PostgreSQL Docker image, and starts a container with the database. It then automatically creates the `Todo` table in the database.
 
-Make sure Docker is running locally on your machine and execute the to-do application by using the following command:
+Make sure Docker is running locally on your machine and run the to-do application by using this command:
 
 ```bash
 cd todo
 ./mvnw quarkus:dev
 ```
 
-The Quarkus application should start and connect to your database. You should have the following output:
+The Quarkus application should start and connect to your database. You should see the following output:
 
 ```shell
 [io.qua.dat.dep.dev.DevServicesDatasourceProcessor] Dev Services for the default datasource (postgresql) started.
@@ -214,7 +214,7 @@ This command should return the created item (with an identifier):
 {"id":1,"description":"Take Quarkus MS Learn","details":"Take the MS Learn on deploying Quarkus to Azure Container Apps","done":true,"createdAt":"2022-12-30T15:17:20.280203Z"}
 ```
 
-Create a second to-do with the following `cURL` command:
+Create a second to-do by using the following `cURL` command:
 
 ```bash
 curl --header "Content-Type: application/json" \
@@ -240,7 +240,7 @@ This command returns the list of to-do items, including the items you created:
 
 ## Test the application
 
-To test the application, you can use the existing `TodoResourceTest` class. It needs to test the REST endpoint and for that it uses [RESTAssured](https://rest-assured.io/). Replace code in the `TodoResourceTest` class with the following code:
+To test the application, you can use the existing `TodoResourceTest` class. It needs to test the REST endpoint. To test the endpoint, it uses [RESTAssured](https://rest-assured.io/). Replace code in the `TodoResourceTest` class with the following code:
 
 ```java
 package com.example.demo;
@@ -279,7 +279,7 @@ class TodoResourceTest {
 }
 ```
 
-To test the application, you also need Docker Desktop to be up and running because Quarkus detects that it needs the PostgreSQL database for testing. Test the application by using the following command:
+When you test the application, Docker Desktop needs to be running because Quarkus detects that it needs the PostgreSQL database for testing. Test the application by using this command:
 
 ```bash
 ./mvnw clean test
