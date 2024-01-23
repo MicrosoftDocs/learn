@@ -23,7 +23,7 @@ The following diagram shows a high-level view of Azure Monitor system components
 * The **Data Platform** section of the diagram shows the categorized monitoring data. Azure Monitor's core data platform has stores for metrics, logs, traces, and changes.
 * The **Consumption** section of the diagram shows the components that use data from the data platform. Azure Monitor's core consumption elements include tools to provide **insights**, **visualize**, **analyze**, and **respond** to data. The visualization tools build on the analysis tools and the insights build on top of both the visualization and analysis tools. Azure IoT Hub includes data metric, log, and alert consumption and response support using Metric Explorer, Log Analytics, and Alerts respectively.
 
-The following sections provide more detail regarding data storage, collection, and consumption.
+The following sections provide more detail regarding data collection, storage, routing, and consumption.
 
 ## Data collection
 
@@ -60,7 +60,7 @@ All data collected by Azure Monitor is stored in two fundamental types: **Metric
 
   Use Log Analytics to analyze data from Azure Monitor Logs.
 
-## Data Routing
+## Data routing
 
 You can use diagnostic settings to route metrics and logs to the following locations:
 
@@ -72,7 +72,7 @@ Metric and log routing is described in more detail in the **Examine diagnostic s
 
 ## Data consumption
 
-### Azure IoT Hub Analysis features
+### Azure IoT Hub analysis features
 
 You can analyze Azure IoT Hub monitor data using the following built-in Azure IoT Hub features:
 
