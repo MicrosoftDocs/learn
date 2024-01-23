@@ -31,7 +31,7 @@ To create an Azure Bastion resource:
 
 ## Create an Azure VM to use as a jump host
 
-After Azure VMware Solution and the Azure Bastion resource are deployed, create a jump host to access to the private cloud. The jump host must be located in the same virtual network and subscription as Azure VMware Solution and the Azure Bastion resource. The jump host can be either a desktop or server version of Windows. The jump host will be deployed behind the Azure Bastion resource. You'll use Azure Bastion to access to the jump host via Remote Desktop in the Azure portal over Transport Layer Secutiry (TLS).
+After Azure VMware Solution and the Azure Bastion resource are deployed, create a jump host to access to the private cloud. The jump host must be located in the same virtual network and subscription as Azure VMware Solution and the Azure Bastion resource. The jump host can be either a desktop or server version of Windows. The jump host will be deployed behind the Azure Bastion resource. You'll use Azure Bastion to access to the jump host via Remote Desktop in the Azure portal over Transport Layer Security (TLS).
 
 ## Use Azure Bastion and sign in to vCenter and NSX-T Manager
 
