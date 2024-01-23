@@ -1,23 +1,9 @@
-Blazor lets C# developers use their skills to build web apps with C# and Microsoft .NET.
+Get ready to build your first Blazor web app! If you're looking to get started with web development using the using the power and flexibility of the .NET platform, then you've come to the right place. Blazor is a modern frontend web framework based on HTML, CSS, and C# that helps you build web apps *fast*.
 
-Imagine you're building a client-side web app and already have a team of .NET developers. Also, imagine you want to deploy your app as a progressive web application. Users could then download the app and use it offline.
+To get started building with Blazor, you'll first need to set up your development environment by installing the .NET SDK and a preferred code editor. You can then create your first Blazor web app project and start to learn the fundamentals of working with Blazor components.
 
-With Blazor, developers can build front-end and back-end logic for web apps with common languages, frameworks, and tools.
+In this module you'll learn everything you need to know to set up your .NET development environment and get your first Blazor created and running in just a few minutes. You'll learn how to create and use components, how to turn a component into a page by assigning it routes, and how to do basic event handling and data binding. You'll then use everything you've learned together to build a simple to do list app.
 
-Using the same language for front-end and back-end code can:
+By the end of this module you should have a working Blazor development environment, a basic understanding of Blazor components, and a running Blazor web app that you built yourself.
 
-- Accelerate app development.
-- Reduce the complexity of the build pipeline.
-- Simplify maintenance.
-- Let developers understand and work on both client-side and server-side code.
-
-## Learning objectives
-
-In this module, you'll:
-
-- Configure your local environment for Blazor development with Visual Studio Code.
-- Create a new Blazor project.
-- Add a Component to a Blazor Page.
-- Update logic in a Blazor web app.
-- Learn about event handling and data binding in Blazor components.
-- Use routing in a Blazor app.
+Let's get started!

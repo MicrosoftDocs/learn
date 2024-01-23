@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-web-app-blazor-webassembly-vscode.1-introduction
+uid: learn.build-your-first-blazor-web-app.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Build your first web app with Blazor, Visual Studio Code, and C#.
+  description: Build your first web app with Blazor.
   ms.date: 01/05/2024
   author: csharpfritz
   ms.author: jefritz
   ms.manager: markl
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

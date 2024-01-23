@@ -1,35 +1,117 @@
-You've defined the UI for your web app. Now, let's explore how to add logic to the app. In a Blazor app, you can add C# code in separate .cs files or inline in your Razor components.
+You've learned the basics of creating and using Blazor components in Razor files. Now let's explore how define component rendering logic and handle UI events.
 
-## C# code-behind in separate files
+## Render C# expression values
 
-In Blazor, you can add C# files directly to your app project, as with other .NET projects. This technique is commonly called *code-behind*, and it uses separate code files to store app logic. Separate files are a great strategy when your business logic is complex, long, or has multiple classes.
+When you want to render the value of a C# expression in Razor you simply add a leading `@` character. That's how the `Counter` component renders the `currentCount` value:
 
-For simple logic, you don't always need to create new .cs files.
+```razor
+<p role="status">Current count: @currentCount</p>
+```
 
-## C# inline in components
+Razor is pretty good at recognizing when the C# expression ends and you've transitioned back to writing HTML. But you can also be explicit about the beginning and ending of the expression using parens:
 
-It's a common practice to mix HTML and C# in a single Razor component file. For simple components with lighter code requirements, this approach works well. To add code into a Razor file, you use directives.
+```razor
+<p role="status">Current count: @(currentCount)</p>
+```
 
-## What are Razor directives?
+## Add control flow
 
-Razor directives are component markup used to add C# inline with HTML. With directives, developers can define single statements, methods, or larger code blocks.
+You can add control flow to your component rendering logic using normal C# statements. For example, you can conditionally render some content using like this:
 
-### Code directives
+```razor
+@if (currentCount > 3)
+{
+    <p>You win!</p>
+}
+```
 
-Code directives should be familiar to developers who have used Razor in MVC or Pages.
+You can also use C# to loop over data to render a list of items:
 
-You can use `@()` to add a C# statement inline with HTML. If you require more code, use the `@code` directive to add multiple statements, enclosed by curly brackets.
+```razor
+<ul>
+    @foreach (var item in items)
+    {
+        <li>@item.Name</li>
+    }
+</ul>
+```
 
-You can also add an `@functions` section to the template for methods and properties. They're added to the top of the generated class, where the document can reference them.
+## Handle events
 
-### Page directive
+We've already seen one example of an event handler in the `Counter` component. The `Counter` button has an `@onclick` event handler that points to the `IncrementCount` method:
 
-The `@page` directive is special markup that identifies a component as a page. You can use this directive to specify a route. The route maps to an attribute route that the Blazor engine recognizes to register and access the page.
+```razor
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+```
 
-## Razor data binding
+You can specify C# event handlers for other HTML events too, like `@onchange`, `@oninput`, and so on. Event handling methods can be synchronous or asynchronous. You can also define event handlers inline using C# lambda expressions:
 
-Within Razor components, you can data bind HTML elements to C# fields, properties, and Razor expression values. Data binding allows two-way synchronization between HTML and Microsoft .NET.
+```razor
+<button class="btn btn-primary" @onclick="() => currentCount++">Click me</button>
+```
 
-Data is pushed from HTML to .NET when a component is rendered. Components render themselves after event-handler code executes, which is why property updates are reflected in the UI immediately after an event handler is triggered.
+Event handler methods can optionally take an event argument with information about the event. For example, you can access the value of an input element that has changed like this:
 
-You can use `@bind` markup to bind a C# variable to an HTML object. You define the C# variable by name as a string in the HTML. You can see an example of data binding in the following exercise.
+```razor
+<input @onchange="InputChanged" />
+<p>@message</p>
+
+@code {
+    string message = "";
+
+    void InputChanged(ChangeEventArgs e)
+    {
+        message = (string)e.Value;
+    }
+}
+```
+
+After an event handler runs, Blazor will automatically render the component with its new state, so the message is displayed after the input is changed.
+
+## Data binding
+
+Often you want the value of a UI element to be bound to a particular value in code. When the value of the UI element changes, the code value should change, and when the code value changes the UI element should display the new value. Blazor's data binding support makes it easy to set up this sort of two-way data binding.
+
+You bind a UI element to a particular value in code using the `@bind` attribute. For example:
+
+```razor
+<input @bind="text" />
+<button @onclick="() => text = string.Empty">Clear</button>
+<p>@text</p>
+
+@code {
+    string text = "";
+}
+```
+
+When you change the value of the input, the `text` field is updated with the new value. And when you change the value of the `text` field by clicking the Clear button, the value of the input is also cleared.
+
+## Razor directives
+
+Razor directives are reserved keywords in Razor syntax that influence how a Razor file is compiled. Razor directives always begin with the `@` character. Some Razor directives appear at the begining of a new line, like `@page` and `@code`, while other are attributes that can be applied to elements as attributes, like `@bind`. You can find a full list of the Razor directives in the [Razor syntax reference](/aspnet/core/mvc/views/razor).
+
+## Enable interactivity
+
+To handle UI events from a component and to use data binding, the component must be *interactive*. By default, Blazor components render statically from the server, which means they generate HTML in response to requests and are otherwise unable to handle UI events. You make a component interactive by applying an interactive render mode using the `@rendermode` directive.
+
+You can apply the `@rendermode` directive to a component definiton:
+
+```razor
+@rendermode InteractiveServer
+```
+
+Or to a component instance:
+
+```razor
+<Counter @rendermode="InteractiveServer" />
+```
+
+The `Counter` component is currently the only interactive component in our app, and it uses interactive server rendering. Interactive server rendering handles UI events from the server over a WebSocket connection with the browser. Blazor sends UI events to the server over this connection so they can be handled by the app's components. Blazor then handles updating the browser DOM with the rendered updates.
+
+![Diagram of Blazor interactive server rendering](../media/interactive-server.png)
+
+Alternatively, Blazor components can use the `InteractiveWebAssembly` render mode to render interactively from the client. In this mode, the component code is downloaded to the browser and run client-side using a WebAssembly-based .NET runtime.
+
+![Diagram of Blazor interactive WebAssembly rendering](../media/interactive-wasm.png)
+
+Which interactive render mode you choose to use will depend on your app's requirements. Currently our Blazor project is only set up for server-based rendering, so for this module we'll stick with static and interactive server rendering.
