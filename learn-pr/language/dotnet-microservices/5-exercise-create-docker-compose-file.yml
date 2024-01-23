@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.dotnet-microservices.exercise-create-docker-compose-file
-title: Exercise - Create a Docker Compose file
+title: Exercise - Create a Docker Compose file for orchestration
 metadata:
-  title: Exercise - Create a Docker Compose file
-  description: Learn how to group several microservices together in a single application by using Docker Compose.
-  ms.date: 11/06/2023
+  title: Exercise - Create a Docker Compose file for orchestration
+  description: Learn how to group several microservices together in a single application by using Docker Compose file.
+  ms.date: 01/22/2024
   author: codemillmatt
   ms.author: masoucou
   ms.topic: unit
