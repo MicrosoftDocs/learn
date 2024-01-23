@@ -21,7 +21,6 @@ prerequisites: |
   - Basic knowledge of Azure DevOps to manage projects and repositories.
   - Basic knowledge of security concepts for project repositories.
 iconUrl: /training/achievements/generic-trophy.svg
-hidden: true
 levels:
   - intermediate
 roles:
