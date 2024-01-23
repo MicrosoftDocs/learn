@@ -1,0 +1,24 @@
+{
+  "redirections": [
+    {
+      "source_path": "learn-pr/paths/prepare-for-ai-engineering/index.md",
+      "redirect_url": "/training/modules/get-started-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/provision-manage-azure-cognitive-services/index.md",
+      "redirect_url": "/training/modules/get-started-azure-ai/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/paths/process-translate-speech-azure-cognitive-speech-services/index.md",
+      "redirect_url": "/training/modules/get-started-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/process-translate-text-azure-cognitive-services/index.md",
+      "redirect_url": "/training/modules/get-started-azure-ai/",
+      "redirect_document_id": false
+    }
+  ]
+}
