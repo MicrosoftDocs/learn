@@ -1,4 +1,4 @@
-Azure IoT Hub supports several methods for monitoring the status of your devices. While Azure Monitor is the preferred *aggregate* device monitoring solution, typically for large numbers of devices, this unit presents device monitoring methods better suited to respond to individual device outages. It provides guidance to help you choose the best option for your IoT solution.
+Azure IoT Hub supports several methods for monitoring the status of your devices. While Azure Monitor is the preferred *aggregate* device monitoring solution, typically for large numbers of devices, this unit presents device monitoring methods better suited to respond to individual device outages. It provides guidance to help you choose the best option for your Azure IoT Hub solution.
 
 The following table introduces three ways to monitor your device connection status:
 
@@ -10,7 +10,7 @@ The following table introduces three ways to monitor your device connection stat
 
 Because of its reliability, low cost, and ease of use, we recommend [Event Grid](/azure/event-grid/overview) as the preferred individual device monitoring solution for most customers.
 
-However, there are certain limitations to monitoring with Event Grid that may disqualify it for some IoT solutions. This unit discusses the benefits and limitations of each option.
+However, there are certain limitations to monitoring with Event Grid that may disqualify it for some Azure IoT Hub-based solutions. This unit discusses the benefits and limitations of each option.
 
 ## Event Grid
 
@@ -18,7 +18,7 @@ However, there are certain limitations to monitoring with Event Grid that may di
 
 Subscribe to the **deviceConnected** and **deviceDisconnected** events on Event Grid to get alerts and monitor the device connection state.
 
-Use the following articles to learn how to integrate device connected and disconnected events in your IoT Hub solution:
+Use the following articles to learn how to integrate device connected and disconnected events in your Azure IoT Hub solution:
 
 * [React to IoT Hub events by using Event Grid to trigger actions](/azure/iot-hub/iot-hub-event-grid)
 * [Order device connection events by using Cosmos DB](/azure/iot-hub/iot-hub-how-to-order-connection-state-events)
@@ -45,7 +45,7 @@ If any of these limitations affect your ability to use Event Grid for device sta
 
 ## Device twin connectionState
 
-Every IoT Hub device identity contains a property called **connectionState** that reports either connected or disconnected. This property represents IoT Hub's understanding of a device's connection status.
+Every Azure IoT Hub device identity contains a property called **connectionState** that reports either connected or disconnected. This property represents Azure IoT Hub's understanding of a device's connection status.
 
 The connection state property has several limitations:
 

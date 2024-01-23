@@ -1,8 +1,8 @@
 An Azure Monitor diagnostic setting specifies a list of categories of platform logs and/or metrics that you want to collect from a resource, and one or more destinations that you would stream them to. Normal usage charges for the destination will occur.
 
-You can access Azure IoT Hub diagnostic settings by selecting **Diagnostic Settings** in the **Monitoring** section of your IoT Hub menu.
+You can access Azure IoT Hub diagnostic settings by selecting **Diagnostic Settings** in the **Monitoring** section of your Azure IoT Hub menu.
 
-Each Azure resource, including Azure IoT Hub, requires its own diagnostic setting, which defines the following criteria:
+A diagnostic setting defines the following criteria:
 
 * **Sources** - The type of metric and log data to send to the destinations defined in the setting. The available types vary by resource type.
 * **Destinations** - One or more destinations to send to.
@@ -18,7 +18,7 @@ A single diagnostic setting can define no more than one of each of the destinati
 There are three sources for diagnostic information:
 
 * Metrics - Metrics route a resource's platform metrics to selected destinations. This option might not be present for all resource providers.
-* Resource logs - With resource logs, you can select the log categories you want to route individually or choose a category group. Log category groups are described in the next header section.
+* Resource logs - With resource logs, you can select the log categories you want to route individually or choose a category group.
 * Activity logs - The activity log uses a diagnostic setting, but has its own user interface because it applies to the whole subscription rather than individual resources. The destination information listed here still applies. For more information, see [Azure Monitor activity log](/azure/azure-monitor/essentials/activity-log?tabs=powershell).
 
 Platform **metrics** are sent automatically to Azure Monitor Metrics by default and without configuration.
@@ -85,6 +85,8 @@ Select-AzSubscription -SubscriptionName <subscription that includes your IoT Hub
 Set-AzDiagnosticSetting -ResourceId <your resource Id> -Enabled $true
 
 ```
+
+You can also user PowerShell to enable and disable individual metrics and log categories. For more information, see [Set-AzDiagnosticSetting](https://learn.microsoft.com/en-us/powershell/module/az.monitor/set-azdiagnosticsetting?view=azps-0.10.0).
 
 ## Controlling costs
 

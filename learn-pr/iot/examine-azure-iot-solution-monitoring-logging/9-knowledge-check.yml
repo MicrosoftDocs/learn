@@ -15,7 +15,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What are the three built-in Azure portal IoT Hub forms that you can use to analyze Azure IoT Hub data?"
+  - content: "What are the three built-in Azure portal IoT Hub features that you can use to analyze Azure IoT Hub data?"
     choices:
     - content: "Workbooks, Devices, and Alerts."
       isCorrect: false
@@ -45,7 +45,7 @@ quiz:
     - content: "plot charts, visually correlate trends, and investigate spikes and dips in metrics values."
       isCorrect: true
       explanation: "Correct. Metrics Explorer a chart-based environment used to analyze metrics data."
-  - content: "Which of the following tools can you use to check the health status of all IoT hubs in your subscription?"
+  - content: "Which of the following tools can you use to quickly check the health status of all IoT hubs in your subscription?"
     choices:
     - content: "Event Grid."
       isCorrect: false

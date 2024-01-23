@@ -1,6 +1,6 @@
 Azure Monitor alerts proactively notify you when important conditions are found in your monitoring data. They allow you to identify and address issues in your system before your customers notice them.
 
-You can access alerts from your IoT Hub menu by selecting **Alerts** from within the Azure portal IoT Hub **Monitoring** section.
+You can access alerts by selecting **Alerts** from within the Azure portal IoT Hub **Monitoring** section.
 
 ## How alerts work
 
@@ -38,8 +38,8 @@ Alerts consist of:
 * **User response**: The response is set by the user and doesn't change until the user changes it.
 * **Alert processing rules**: You can use alert processing rules to make modifications to triggered alerts as they're being fired. You can use alert processing rules to add or suppress action groups, apply filters, or have the rule processed on a predefined schedule.
 
-## Types of IoT Hub alerts
+## Types of Azure IoT Hub alerts
 
-You can set alerts on IoT Hub metrics, logs, and the activity log. Different types of alerts have benefits and drawbacks. For more information about each alert type and how to choose which alert type best suits your needs, see [Choosing the right type of alert rule](/azure/azure-monitor/alerts/alerts-types).
+You can set alerts on Azure IoT Hub metrics, logs, and the activity log. Different types of alerts have benefits and drawbacks. For more information about each alert type and how to choose which alert type best suits your needs, see [Choosing the right type of alert rule](/azure/azure-monitor/alerts/alerts-types).
 
 When you create an alert rule based on platform metrics (collected in units of count), some aggregations may not be available or usable. For more information, see [Supported aggregations](/azure/iot-hub/monitor-iot-hub-reference#supported-aggregations) in Monitoring Azure IoT Hub data reference.

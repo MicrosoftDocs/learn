@@ -1,13 +1,13 @@
-Azure IoT Hub integrates with [Azure Service Health](/azure/service-health/overview) to enable service-level health monitoring of the IoT Hub service and individual IoT hubs. Azure Service Health helps you monitor service-level events like outages and upgrades that may affect the availability of the IoT Hub service and your individual IoT hubs. You can also set up alerts to be notified when the status of the IoT Hub service or an IoT hub (instance) changes.
+Azure IoT Hub integrates with [Azure Service Health](/azure/service-health/overview) to enable service-level health monitoring of the Azure IoT Hub service and individual IoT hubs. Azure Service Health helps you monitor service-level events like outages and upgrades that may affect the availability of the Azure IoT Hub service and your individual IoT hubs. You can also set up alerts to be notified when the status of the Azure IoT Hub service or an Azure IoT hub (instance) changes.
 
 Azure Service Health is a combination of three smaller services:
 * Azure Resource Health
 * Azure Service Health
 * Azure status page
 
-The sections in this unit describe each service and its relationship to IoT Hub.
+The sections in this unit describe each service and its relationship to Azure IoT Hub.
 
-## Check IoT hub health with Azure Resource Health
+## Check Azure IoT hub health with Azure Resource Health
 
 Azure Resource Health is part of Azure Service Health and tracks the health of individual resources. You can check the health status of your IoT hub directly from the portal.
 
@@ -19,7 +19,7 @@ To see status and status history of your IoT hub using the portal, follow these 
 
 To learn more about Azure Resource Health and how to interpret health data, see [Resource Health overview](/azure/service-health/resource-health-overview) in the Azure Service Health documentation.
 
-You can also select **Add resource health alert** to configure alerts to trigger when the health status of your IoT hub changes. To learn more, see [Configure alerts for service health events](/azure/service-health/alerts-activity-log-service-notifications-portal) and related topics in the Azure Service Health documentation.
+You can also select **Add resource health alert** to configure alerts to trigger when the health status of your IoT hub changes. To learn more, see [Create activity log alerts on service notifications using the Azure portal](/azure/service-health/alerts-activity-log-service-notifications-portal) and related topics in the Azure Service Health documentation.
 
 ## Check all IoT hubs' health with Azure Service Health
 
@@ -41,4 +41,4 @@ To learn how to set up alerts with Azure Service Health, see [Create activity lo
 
 ## Check health of the IoT Hub service by region on Azure status page
 
-To check the status of IoT Hub and other services by region worldwide, view the [Azure status page](https://azure.status.microsoft/status). For more information about the Azure status page, see [Azure status overview](/azure/service-health/azure-status-overview) in the Azure Service Health documentation.
+To check the status of Azure IoT Hub and other services by region worldwide, view the [Azure status page](https://azure.status.microsoft/status). For more information about the Azure status page, see [Azure status overview](/azure/service-health/azure-status-overview) in the Azure Service Health documentation.

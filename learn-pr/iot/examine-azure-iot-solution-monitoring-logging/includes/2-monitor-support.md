@@ -1,4 +1,4 @@
-You can configure, monitor, troubleshoot, respond to, and analyze Azure IoT Hub communications and data using Azure Monitor. This unit provides an overview of the elements of Azure Monitor, how data flows through Azure Monitor, and a high-level overview of how Azure Iot Hub connects to Azure Monitor. Subsequent units of this module provider more detail about Azure Monitor diagnostic settings, alerts, and log analytics.
+You can configure, monitor, troubleshoot, respond to, and analyze Azure IoT Hub communications and data using Azure Monitor. This unit provides an overview of the elements of Azure Monitor, how data flows through Azure Monitor, and a high-level overview of how Azure Iot Hub connects to Azure Monitor. Subsequent units of this module provider more detail about Azure Monitor metrics, diagnostic settings, alerts, and log analytics.
 
 ## Overview
 
@@ -19,9 +19,9 @@ The following diagram shows a high-level view of Azure Monitor system components
 
 :::image type="content" source="../media/azure-monitor-overview.png" alt-text="Diagram that shows the different functions that Azure Monitor performs.":::
 
-* The **Data Sources** section of the diagram shows the types of data that can be collected from each monitored resource. Azure Monitor **collects** data from the data sources and routes the data to the data platform.
+* The **Data Sources** section of the diagram shows the types of data that can be collected from each monitored resource. Azure Monitor **collects** data from the data sources and stores the data in the data platform.
 * The **Data Platform** section of the diagram shows the categorized monitoring data. Azure Monitor's core data platform has stores for metrics, logs, traces, and changes.
-* The **Consumption** section of the diagram shows the components that use data from the data platform. Azure Monitor's core consumption methods include tools to provide **insights**, **visualize**, **analyze**, and **respond** to data. The visualization tools build on the analysis tools and the insights build on top of both the visualization and analysis tools. Azure IoT Hub includes consumption support for Metric Explorer, Log Analytics, and Alerts.
+* The **Consumption** section of the diagram shows the components that use data from the data platform. Azure Monitor's core consumption elements include tools to provide **insights**, **visualize**, **analyze**, and **respond** to data. The visualization tools build on the analysis tools and the insights build on top of both the visualization and analysis tools. Azure IoT Hub includes data metric, log, and alert consumption and response support using Metric Explorer, Log Analytics, and Alerts respectively.
 
 The following sections provide more detail regarding data storage, collection, and consumption.
 
@@ -31,18 +31,18 @@ Azure Monitor automatically collects data for each resource in your configuratio
 
 Azure Monitor collects data from each of the following tiers:
 
-* **Application monitoring data**: Data about the performance and functionality of the code you write, regardless of its platform.
-* **Guest OS monitoring data**: Data about the operating system on which your application is running. This OS could be running in Azure, another cloud, or on-premises.
-* **Azure resource monitoring data**: Data about the operation of an Azure resource.
-* **Azure subscription monitoring data**: Data about the operation and management of an Azure subscription, as well as data about the health and operation of Azure itself.
-* **Azure tenant monitoring data**: Data about the operation of tenant-level Azure services, such as Microsoft Entra ID.
+* **Application monitoring data** - Data about the performance and functionality of the code you write, regardless of its platform.
+* **Guest OS monitoring data** - Data about the operating system on which your application is running. This OS could be running in Azure, another cloud, or on-premises.
+* **Azure resource monitoring data** - Data about the operation of an Azure resource.
+* **Azure subscription monitoring data** - Data about the operation and management of an Azure subscription, as well as data about the health and operation of Azure itself.
+* **Azure tenant monitoring data** - Data about the operation of tenant-level Azure services, such as Microsoft Entra ID.
 
 Data from platform metrics, the activity log, and resource logs have unique collection, storage, and routing specifications:
 
-* **Activity log**: Subscription-level events that track operations for each Azure resource, for example, creating a new resource or starting a virtual machine. Activity log events are automatically generated and collected for viewing in the Azure portal. You can create a diagnostic setting to send the activity log to other destinations by using diagnostic settings.
-* **Platform metrics**: Numerical values that are automatically collected at regular intervals and describe some aspect of a resource at a particular time. Platform metrics are automatically generated and collected in Azure Monitor Metrics.
-* **Resource logs**: Provide insight into operations that were performed by an Azure resource. Examples of operation might be getting a secret from a key vault or making a request to a database. Resource logs are generated automatically, but you must create a diagnostic setting to send them to Azure Monitor Logs.
-* **Virtual machine guest metrics and logs**: Performance and log data from the guest operating system of Azure virtual machines. You must install an agent on the virtual machine to collect this data and send it to Azure Monitor Metrics and Azure Monitor Logs.
+* **Activity log** - Subscription-level events that track operations for each Azure resource, for example, creating a new resource or starting a virtual machine. Activity log events are automatically generated and collected for viewing in the Azure portal. You can create a diagnostic setting to send the activity log to other destinations by using diagnostic settings.
+* **Platform metrics** - Numerical values that are automatically collected at regular intervals and describe some aspect of a resource at a particular time. Platform metrics are automatically generated and collected in Azure Monitor Metrics.
+* **Resource logs** - Provide insight into operations that were performed by an Azure resource. Examples of operation might be getting a secret from a key vault or making a request to a database. Resource logs are generated automatically, but you must create a diagnostic setting to send them to Azure Monitor Logs.
+* **Virtual machine guest metrics and logs** - Performance and log data from the guest operating system of Azure virtual machines. You must install an agent on the virtual machine to collect this data and send it to Azure Monitor Metrics and Azure Monitor Logs.
 
 For more information about Azure Monitor data sources, see [Sources of monitoring data for Azure Monitor](/azure/azure-monitor/data-sources).
 
@@ -76,8 +76,8 @@ Metric and log routing is described in more detail in the **Examine diagnostic s
 
 You can analyze Azure IoT Hub monitor data using the following built-in Azure IoT Hub features:
 
-* IoT Hub **Overview** page - The IoT Hub overview page includes charts that show recent critical metrics. You can use this page to quickly assess the performance of the resource.
-* **Metrics Explorer** - You can use Metrics Explorer to interactively work with metric data and create metric alerts. You need minimal training to use Metrics Explorer, but you must be familiar with the metrics you want to analyze. Metrics Explorer and IoT Hub metrics are described further in the Examine metrics for Azure IoT Hub unit page.
+* IoT Hub **Overview** page - The Azure IoT Hub overview page includes charts that show recent critical metrics. You can use this page to quickly assess the performance of the resource.
+* **Metrics Explorer** - You can use Metrics Explorer to interactively work with metric data and create metric alerts. You need minimal training to use Metrics Explorer, but you must be familiar with the metrics you want to analyze. Metrics Explorer and Azure IoT Hub metrics are described further in the **Examine metrics for Azure IoT Hub** unit page.
 * **Log Analytics** - With Log Analytics, you can create log queries to interactively work with log data and create log query alerts. Log Analytics is described further in the **Examine Log Analytics for Azure IoT Hub** unit page.
 
 ### Visualization tools
