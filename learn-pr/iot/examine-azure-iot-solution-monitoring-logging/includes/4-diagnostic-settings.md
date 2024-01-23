@@ -86,7 +86,7 @@ Set-AzDiagnosticSetting -ResourceId <your resource Id> -Enabled $true
 
 ```
 
-You can also user PowerShell to enable and disable individual metrics and log categories. For more information, see [Set-AzDiagnosticSetting](https://learn.microsoft.com/en-us/powershell/module/az.monitor/set-azdiagnosticsetting?view=azps-0.10.0).
+You can also user PowerShell to enable and disable individual metrics and log categories. For more information, see [Set-AzDiagnosticSetting](https://learn.microsoft.com/powershell/module/az.monitor/set-azdiagnosticsetting).
 
 ## Controlling costs
 
