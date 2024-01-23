@@ -17,6 +17,7 @@ abstract: |
     - Connect AKS Edge Essentials cluster to Azure Arc.
     - Deploy containerized applications to AKS Edge Essentials cluster with GitOps and Flux.
 prerequisites: |
+  - An Azure subscription with the **Owner** role (a [free subscription](https://azure.microsoft.com/free/) is sufficient)
   - Knowledge about [Kubernetes core concepts for AKS](/azure/aks/hybrid/kubernetes-concepts)
   - Ability to execute scripts with PowerShell
 iconUrl: /training/achievements/iot/connect-your-azure-kubernetes-service-edge-essentials-cluster-to-azure-arc.svg

@@ -1,11 +1,11 @@
-In this exercise, we deploy AKS Edge Essentials in a single machine K3S cluster with a Linux node and Arc-enable it. We use the Azure Cloud Shell to create an Azure virtual machine (VM) with Windows 11 Enterprise and run a PowerShell script for easy deployment of AKS Edge Essentials and connect it to Azure Arc.
+In this exercise, we deploy AKS Edge Essentials in a single machine K3S cluster with a Linux node and Arc-enable it. We use the Azure Cloud Shell to create an Azure virtual machine (VM) with Windows 11 Enterprise and run a PowerShell script for easy deployment of AKS Edge Essentials and then connect it to Azure Arc.
 
 ## Create necessary resources in your Azure subscription
 
 This unit provides Azure CLI commands that you can run with an Azure subscription. If you don't have an Azure subscription already, [create one for free now](https://azure.microsoft.com/free).
 
 > [!IMPORTANT]
-> You need an Azure subscription with either the **Owner** role or a combination of **Contributor** and **User Access Administrator** roles. You can check your access level by navigating to your subscription on the Azure portal, selecting **Access control (IAM)** on the left-hand side of the Azure portal, and then selecting **View my access**. See [the Azure documentation](/azure/azure-resource-manager/management/manage-resource-groups-portal) for more information about managing resource groups.
+> You need an Azure subscription with either the **Owner** role or a combination of **Contributor** and **User Access Administrator** roles. You can check your access level by navigating to your subscription on the Azure portal, selecting **Access control (IAM)** on the left-hand side of the Azure portal, and then selecting **View my access**. For more information see how to [manage Azure resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal).
 
 1. In another browser tab, navigate to the [Azure Cloud Shell](https://ms.portal.azure.com/#cloudshell/).
 
@@ -16,7 +16,7 @@ This unit provides Azure CLI commands that you can run with an Azure subscriptio
     az account set --subscription "<your-Azure-subscription-ID>"
     az group create --name $resourcegroup --location westus3
     ```
-<!-- TODO: Try with: az ad sp create-for-rbac --name $serviceprincipalname --role " Microsoft.Kubernetes connected cluster role" --scopes /subscriptions/$(az account show --query id -o tsv)/resourceGroups/$resourcegroup -->
+<!-- TODO: Try with: az ad sp create-for-rbac --name $serviceprincipalname --role "Microsoft.Kubernetes connected cluster role" --scopes /subscriptions/$(az account show --query id -o tsv)/resourceGroups/$resourcegroup -->
 1. Create a new Service Principal with the built-in **Owner** role and restricted to the resource group scope. This service principal is used to connect to Azure Arc.
 
     ```azurecli
@@ -209,15 +209,10 @@ Now that the VM is created, let's run the `AksEdgeQuickStart-v2.ps1` PowerShell 
     This script automates the following steps:
 
     - In the VM working folder `C:\aksedgeLearn`, the script downloads the GitHub archive of [Azure/AKS-Edge](https://github.com/Azure/AKS-Edge) and unzips to a folder **AKS-Edge-main**.
-    - Uses the [AksEdgeAzureSetup script](https://github.com/Azure/AKS-Edge/blob/main/tools/scripts/AksEdgeAzureSetup/AksEdgeAzureSetup.ps1) to prompt the user to sign in to the Azure portal using their Azure credentials and performs the following tasks:
-      - Installs [Azure CLI](/cli/azure/).
-      - Registers the resource providers **Microsoft.HybridCompute**, **Microsoft.GuestConfiguration**, **Microsoft.HybridConnectivity**,
-        **Microsoft.Kubernetes**, **Microsoft.KubernetesConfiguration**, and **Microsoft.ExtendedLocation**.
     - Invokes the `Start-AideWorkflow` function that performs the following tasks:
-      - Unzips Windows install files.
       - Installs the AKS Edge Essentials MSI.
       - Installs required host OS features (`Install-AksEdgeHostFeatures`).
-      - Deploys a single machine K3S cluster with a Linux and Windows node.
+      - Deploys a single machine K3S cluster with a Linux node.
     - Invokes the `Connect-AideArc` function that performs the following tasks:
       - Installs the Azure Connected Machine Agent and connects the host machine to Arc for Servers.
       - Connects the deployed cluster to Arc for connected Kubernetes.
@@ -259,4 +254,31 @@ Now that the VM is created, let's run the `AksEdgeQuickStart-v2.ps1` PowerShell 
 > [!TIP]
 > Since the installation process takes around 30 minutes to complete, you can continue to the next learning unit, we will get back to this later.
 
-<!-- TODO: Add the steps to check Azure ARC in Azure Portal below -->
+1. Confirm that the deployment was successful by running the following command:
+
+    ```powershell
+    kubectl get nodes -o wide
+    kubectl get pods -A -o wide
+    ```
+
+    The following example screenshot shows the Linux node is ready and the pods are running:
+
+    <!-- TODO: Add new screenshot here -->
+
+## View your cluster in Azure Portal
+
+1. You can view your cluster in the Azure portal if you navigate to `aksedge-training` resource group and then select the `myVM-k3s` **Kubernetes - Azure Arc** resource.
+
+1. On the left panel, select the **Namespaces** option, under **Kubernetes resources (preview)**:
+
+    :::image type="content" source="../media/3-aks-edge-kubernetes-azure-arc-resource-inline.png" alt-text="Screenshot of AKS Edge Essentials Kubernetes Azure Arc resource in Azure Portal." lightbox="../media/3-aks-edge-kubernetes-azure-arc-resource-expanded.png":::
+
+1. You will need to sign in using a bearer token to view the Kubernetes resources. To get the token, run the following command in the PowerShell command line of the VM:
+
+    ```powershell
+    Get-AksEdgeManagedServiceToken
+    ```
+
+1. Now you can view resources on your cluster. The **Workloads** shows the pods running on your cluster.
+
+    :::image type="content" source="../media/3-aks-edge-kubernetes-azure-arc-workloads-inline.png" alt-text="Screenshot of AKS Edge Essentials Kubernetes Azure Arc workloads in Azure Portal." lightbox="../media/3-aks-edge-kubernetes-azure-arc-workloads-expanded.png":::
