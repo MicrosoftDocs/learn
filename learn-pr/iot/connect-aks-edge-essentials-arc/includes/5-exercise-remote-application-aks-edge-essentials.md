@@ -1,109 +1,163 @@
-<!-- TODO: !!!!!!!!!!!!!!!!!I NEED TO ADD A SECTION TO DELETE ALL RESOURCES USED AT THE END!!!!!!!!!!!!!!!! -->
 
+In this exercise, we deploy a containerized Linux application to your Arc-enabled AKS Edge Essentials cluster using GitOps and Flux.
 
+## Fork the demo application GitHub repository
 
+If you don't have a GitHub account already, [create one now](https://docs.github.com/en/get-started/quickstart/creating-an-account-on-github).
 
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+1. Navigate to the [Azure Arc Jumpstart Apps repository](https://github.com/microsoft/azure-arc-jumpstart-apps) and fork it to your own GitHub account by selecting **Fork** and then **Create fork**.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+    :::image type="content" source="../media/5-fork-azure-arc-jumpstart-apps-inline.png" alt-text="Screenshot of Azure Arc Jumpstart Apps repository." lightbox="../media/5-fork-azure-arc-jumpstart-apps-expanded.png":::
 
-    Heading: none
+1. Confirm that the fork was successfully created by navigating to your account repositories and selecting the **azure-arc-jumpstart-apps** repository. The repository url should look like:
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+    ```output
+    https://github.com/<your-github-username>/azure-arc-jumpstart-apps
+    ```
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+## Deploy the application
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+In the Azure portal, navigate to your Arc-enabled AKS Edge Essentials cluster and select **GitOps** under **Settings**. We will create a cluster-level configuration and a namespace-level configuration.
 
-    Goal: Describe the part of the scenario covered in this exercise
+:::image type="content" source="../media/5-aks-edge-kubernetes-azure-arc-resource-gitops-inline.png" alt-text="Screenshot of AKS Edge Essentials Kubernetes Azure Arc resource in Azure Portal." lightbox="../media/5-aks-edge-kubernetes-azure-arc-resource-gitops-expanded.png":::
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+1. Select **Create** and use the following values for the cluster-level configuration.
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+    | Attribute | Input |
+    | --- | --- |
+    | **Basics** | |
+    | Configuration name | `config-nginx` |
+    | Namespace | `ingress-nginx` |
+    | Scope | Cluster |
+    | Type | Flux v2 |
+    | **Source** | |
+    | Source kind | Git repository |
+    | Repository URL | \<URL of your fork\>|
+    | Reference type | Branch |
+    | Branch | main |
+    | Repository type | Public |
+    | Sync interval | 1 |
+    | Sync timeout | 10 |
+    | **Kustomizations** | |
+    | Kustomizations | Select **Create** |
+    | Instance name | `nginx` |
+    | Path | `./nginx/release` |
+    | Sync interval | 10 |
+    | Sync timeout | 10 |
+    | Prune | Enabled |
+    | Force | Not enabled |
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+    > [!NOTE]
+    > Wait until the `config-nginx` has successfully been created and visible on your Azure portal GitOps before creating the namespace-level configuration (you can move on to creating the next configuration if the compliance is in a pending state).
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+1. Select **Create** and use the following values for the namespace-level configuration.
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+    | Attribute | Input |
+    | --- | --- |
+    | **Basics** | |
+    | Configuration name | `config-helloarc` |
+    | Namespace | `hello-arc` |
+    | Scope | Namespace |
+    | Type | Flux v2 |
+    | **Source** | |
+    | Source kind | Git repository |
+    | Repository URL | \<URL of your fork\>|
+    | Reference type | Branch |
+    | Branch | main |
+    | Repository type | Public |
+    | Sync interval | 1 |
+    | Sync timeout | 10 |
+    | **Kustomizations** | |
+    | Kustomizations | Select **Create** |
+    | Instance name | `app` |
+    | Path | `./hello-arc/releases/app` |
+    | Sync interval | 10 |
+    | Sync timeout | 10 |
+    | Prune | Enabled |
+    | Force | Not enabled |
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+1. Refresh your configuration table and wait for the configurations to be installed and compliant.
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+    :::image type="content" source="../media/5-cluster-and-namespace-configurations-inline.png" alt-text="Screenshot of cluster-level and namespace-level configurations in Azure Portal." lightbox="../media/5-cluster-and-namespace-configurations-expanded.png":::
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+1. In your VM, use `kubectl` to check that the service is running:
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+    ```powershell
+    kubectl get svc -n ingress-nginx
+    kubectl get pods -n hello-arc
+    ```
 
-    Goal: List the steps they'll do to complete the exercise.
+    The following example output shows the service is running:
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+    ```output
+    PS C:\akseeLearn> kubectl get svc -n ingress-nginx
+    NAME                                 TYPE           CLUSTER-IP      EXTERNAL-IP   PORT(S)                      AGE
+    ingress-nginx-controller             LoadBalancer   10.43.136.240   192.168.0.4   80:31838/TCP,443:30386/TCP   18m
+    ingress-nginx-controller-admission   ClusterIP      10.43.11.51     <none>        443/TCP                      18m
+    PS C:\akseeLearn> kubectl get pods -n hello-arc
+    NAME                         READY   STATUS    RESTARTS   AGE
+    hello-arc-7c66864f8d-662b7   1/1     Running   0          12m
+    hello-arc-7c66864f8d-fdbkc   1/1     Running   0          12m
+    hello-arc-7c66864f8d-prb2v   1/1     Running   0          12m
+    ```
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+1. To view the application, open a browser and navigate to the EXTERNAL-IP address assigned to the `ingress-nginx-controller` service. In the previous example, the IP address assigned to the service is **192.168.0.4**.
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+    :::image type="content" source="../media/5-aks-ee-linux-arc-app-inline.png" alt-text="Screenshot of Windows VM with linux sample application running in the browser." lightbox="../media/5-aks-ee-linux-arc-app-expanded.png":::
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Update the application
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+We have configured GitOps and Flux to watch for changes in the *main* branch of your forked repository. Let's make a change to the application and see how GitOps responds.
 
-<!-- 5. Validation -------------------------------------------------------------------------------------------
+1. In your fork of the *azure-arc-jumpstart-apps* repository, navigate to **hello-arc > releases > app > hello-arc.yaml**.
 
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. Feedback like this is critical for learning.
+1. Make a change to this YAML file by selecting **Edit**. Change the **replicaCount** to *5*. Change the **value** to *Deploying to AKS Edge Essentials Gitops!*.
 
-    Structure:
-        1. A heading of "## Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
+1. Commit the change by selecting **Commit changes...** and then **Commit changes**.
 
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
+    :::image type="content" source="../media/5-update-application-github-inline.png" alt-text="Screenshot of application changes in the Github repository." lightbox="../media/5-update-application-github-expanded.png":::
 
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+1. Use `kubectl` to see the old pods terminating and new pods coming online:
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    ```powershell
+    kubectl get pods -n hello-arc -w
+    ```
 
-<!-- Do not add a unit summary or references/links -->
+    The following example output shows the old pods terminating and new pods coming online:
+
+    ```output
+    PS C:\akseeLearn> kubectl get pods -n hello-arc -w
+    NAME                         READY   STATUS    RESTARTS   AGE
+    hello-arc-699dff9888-5mcjs   1/1     Running   0          19m
+    hello-arc-699dff9888-qrsfw   1/1     Running   0          19m
+    hello-arc-699dff9888-xm82r   1/1     Running   0          19m
+    hello-arc-699dff9888-mpdxt   0/1     Pending   0          0s
+    hello-arc-699dff9888-mpdxt   0/1     Pending   0          0s
+    hello-arc-699dff9888-cvkgf   0/1     Pending   0          0s
+    hello-arc-699dff9888-cvkgf   0/1     Pending   0          0s
+    hello-arc-699dff9888-mpdxt   0/1     ContainerCreating   0          0s
+    hello-arc-699dff9888-cvkgf   0/1     ContainerCreating   0          0s
+    hello-arc-699dff9888-cvkgf   0/1     Running             0          1s
+    hello-arc-699dff9888-mpdxt   0/1     Running             0          1s
+    hello-arc-699dff9888-mpdxt   1/1     Running             0          2s
+    hello-arc-699dff9888-cvkgf   1/1     Running             0          2s
+    ```
+
+    > [!NOTE]
+    > Because we set the **sync interval** to **1 min** when creating the configuration, Flux pulls down changes from GitHub every minute.
+
+1. Refresh your application to see this change reflected as a rolling update:
+
+    :::image type="content" source="../media/5-aks-ee-linux-arc-app-updated-inline.png" alt-text="Screenshot of Windows VM with linux sample application running in the browser." lightbox="../media/5-aks-ee-linux-arc-app-updated-expanded.png":::
+
+## Clean up your Azure resources
+
+In the course of this module, you created Azure resources. If you don't expect to need these resources in the future, delete the resource group and Service Principal by running [az group delete](/cli/azure/group#az-group-delete) and [az ad sp delete](/cli/azure/ad/sp#az-ad-sp-delete) commands in Azure Cloud Shell:
+
+```azurecli
+az group delete --name aksedge-training --force-deletion-types Microsoft.Compute/virtualMachines
+az ad sp delete --id aksedge-sp
+```
+
+> [!IMPORTANT]
+> To avoid accruing unwanted charges, you must remove the Azure resources and Service Principal that you used in this module.

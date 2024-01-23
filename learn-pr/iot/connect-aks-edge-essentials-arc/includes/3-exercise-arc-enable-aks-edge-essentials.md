@@ -17,7 +17,7 @@ This unit provides Azure CLI commands that you can run with an Azure subscriptio
     az group create --name $resourcegroup --location westus3
     ```
 <!-- TODO: Try with: az ad sp create-for-rbac --name $serviceprincipalname --role "Microsoft.Kubernetes connected cluster role" --scopes /subscriptions/$(az account show --query id -o tsv)/resourceGroups/$resourcegroup -->
-1. Create a new Service Principal with the built-in **Owner** role and restricted to the resource group scope. This service principal is used to connect to Azure Arc.
+1. Create a new Service Principal with the built-in **Owner** role and restricted to the resource group scope. This service principal is used to connect to Azure Arc. Use the [az ad sp create-for-rbac](/cli/azure/ad/sp#az-ad-sp-create-for-rbac) command:
 
     ```azurecli
     resourcegroup="aksedge-training"
@@ -28,7 +28,7 @@ This unit provides Azure CLI commands that you can run with an Azure subscriptio
     > [!NOTE]
     > Take a note of the `Service Principal ID` and `Service Principal Password`. You will need it later.
 
-1. Enable all required resource providers in the Azure subscription, including **Microsoft.HybridCompute**, **Microsoft.GuestConfiguration**, **Microsoft.HybridConnectivity**, **Microsoft.Kubernetes**, **Microsoft.KubernetesConfiguration** and **Microsoft.ExtendedLocation**.
+1. Enable all required resource providers in the Azure subscription using the [az provider register](/cli/azure/provider#az-provider-register) command:
 
     ```azurecli
     az provider register --namespace Microsoft.HybridCompute
@@ -63,7 +63,7 @@ Let's create the Azure VM with Windows 11 Enterprise using Azure Cloud Shell.
     > [!NOTE]
     > Take a note of the `Admin Password`, `Subscription Name`, `Subscription ID`, `Tenant ID` and `Resource Group Name`. You will need it later.
 
-1. Create the Azure VM with Windows 11 Enterprise using the [az vm create](/cli/azure/vm#az-vm-create) command.
+1. Create the Azure VM with Windows 11 Enterprise using the [az vm create](/cli/azure/vm#az-vm-create) command:
 
     ```azurecli
     az vm create \
