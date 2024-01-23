@@ -3,7 +3,7 @@ uid: learn.azure.introduction-to-app-provisioning
 metadata:
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to application provisioning          # Do not edit: title must be "Introduction to (product)"
-  description: By the end of this module, you'll be able to describe how application provisioning works to automatically provision users and evaluate whether application provisioning is appropriate in your organization.
+  description: By the end of this module, you are able to describe how application provisioning works to automatically provision users and evaluate whether application provisioning is appropriate in your organization.
   ms.date: 01/23/2024             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: kenwith     # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: kenwith           # Alias     of the Microsoft employee either authoring or project-managing this content
@@ -17,7 +17,7 @@ title: Introduction to application provisioning
 summary: "Application provisioning is used to automatically create and manage user identities in your cloud apps. After completing this module, you should be able to describe the function of Application Provisioning and determine if you can use it to provision users."
 
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you are able to:
     - Describe how application provisioning works to automatically provision users.
     - Evaluate whether application provisioning is appropriate in your organization.
 
