@@ -892,6 +892,16 @@ achievements:
   title: Explore the Azure portal
   summary: This module introduces you to features of the Azure portal and provides you with experience configuring, navigating, and customizing the Azure portal UI.
   iconUrl: /training/achievements/azure-portal-explore.svg
+- uid: learn.advocates.responsible-bots.badge
+  type: badge
+  title: Create a chatbot to help students learn geography
+  summary: Learn how to build a basic bot that helps students with geography facts.
+  iconUrl: /training/achievements/advocates/responsible-bots.svg
+- uid: learn.advocates.responsible-bots-introduction.badge
+  type: badge
+  title: Introduction to responsible bots
+  summary: Find out how to make a bot responsible. Learn about responsible conversational AI. Discover Azure AI services tools that help make bots engaging and trustworthy.
+  iconUrl: /training/achievements/responsible-bots-introduction.svg
 - uid: learn.wwl.explore-azure-iot-services.badge
   type: badge
   title: Explore Azure IoT services
