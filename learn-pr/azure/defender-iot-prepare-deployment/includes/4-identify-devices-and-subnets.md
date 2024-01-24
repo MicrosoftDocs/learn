@@ -64,7 +64,7 @@ Consider the following traffic points in your network:
 
 - **A subnet's default gateway:** For each interesting subnet, a connection to the entity that acts as the network subnet default gateway is the interesting point.  Sometimes there's subnet traffic unmonitored by the regular interesting point. Monitoring this otherwise unmonitored type of traffic is useful, especially on sensitive subnets.
 
-- **Atypical traffic:**   Monitoring otherwise unmonitored traffic might require extra streaming points and network solutions, such as RSPAN or network tappers.
+- **Atypical traffic:** Monitoring otherwise unmonitored traffic might require extra streaming points and network solutions, such as RSPAN or network tappers.
 
 ## List your planned OT sensors
 
@@ -87,7 +87,7 @@ Recall that your car manufacturing organization has offices and production sites
 In this unit you've learned how to identify the devices and subnets and their interesting traffic to monitor, and created an OT sensor deployment list for your car manufacturer. In the next unit, you'll learn how to determine the traffic mirroring methods to use for your site.
   
 ## Knowledge check
-<!--let's get Sagi to comment on these questions-->
+
 :::image type="complex" source="../media/4-sample-network-diagram-knowledge-check.png" alt-text="Diagram of a sample network diagram." border="false":::
 
 Figure 1 shows a sample diagram of a network in a building of three floors, where each floor houses both endpoints and switches. The third floor also houses firewalls, core switches, a server, and routers. A blue dotted line depicts traffic traveling outside of the IP segment, traveling throughout floor one and two and up to a server connected to a core server on floor 3. Interesting traffic is depicted in red from two switches on floor two to each of the firewalls on floor three. In addition, there's a Defender for IoT sensor with the question where should the Defender for IoT sensor be connected and three choices: A- to the switch for interesting traffic between on floor two, B- to the switch where traffic is traveling outside of the IP segment on level two, or C- to the switch for traffic is traveling outside of the IP segment on level one.

@@ -1,4 +1,4 @@
- To deploy Defender for IoT in your car manufacturer across global locations for OT monitoring, requires preparation in addition to planning. Preparation is part of the first stage of your OT monitoring deployment path. 
+ To deploy Defender for IoT across global locations in your car manufacturer for OT monitoring, requires preparation in addition to planning. Preparation is part of the first stage of your OT monitoring deployment path. 
 
 ## Defender for IoT for OT deployment path
 

@@ -37,7 +37,6 @@ The following table shows an example of supported hardware profiles and pre-conf
 | **L500** |HPE ProLiant DL20 Gen10 Plus (NHP 2LFF) |**Max bandwidth:** Up to 200 Mbps</br>**Max devices:** 1,000 4C[8T] CPU/8G RAM/500GB | Production line |
 | **L100** |YS-Techsystems YS-FIT2 (Rugged MIL-STD-810G) |**Max bandwidth:** Up to 10 Mbps</br>**Max devices:** 100 4C[4T] CPU/8G RAM/128GB | Production lines|
 
-<!--follow up with Ariel -->
 ## Virtual appliances
 
 You may want to use virtual appliances for your sensors, such as for simpler maintenance and reduced costs.
