@@ -73,6 +73,6 @@ Define a parameter on the `Counter` component to specify how much it increments 
 
     The `Home` component now has its own counter that increments by 10 each time the **Click me** button is selected, as shown in the following image.
 
-    ![Screenshot of the Home page with the Counter update.](../media/counter-homepage-modify.png)
+    ![Screenshot of the Home page with the Counter update.](../media/counter-homepage-modified.png)
 
     The `Counter` component at `/counter` continues to increment by one.

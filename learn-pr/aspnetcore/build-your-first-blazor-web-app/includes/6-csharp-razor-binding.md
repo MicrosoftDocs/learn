@@ -112,6 +112,6 @@ The `Counter` component is currently the only interactive component in our app, 
 
 Alternatively, Blazor components can use the `InteractiveWebAssembly` render mode to render interactively from the client. In this mode, the component code is downloaded to the browser and run client-side using a WebAssembly-based .NET runtime.
 
-![Diagram of Blazor interactive WebAssembly rendering.](../media/interactive-wasm.png)
+![Diagram of Blazor interactive WebAssembly rendering.](../media/interactive-webassembly.png)
 
 Which interactive render mode you choose to use depends on your app's requirements. Currently our Blazor project is only set up for server-based rendering, so for this module we'll stick with static and interactive server rendering.
