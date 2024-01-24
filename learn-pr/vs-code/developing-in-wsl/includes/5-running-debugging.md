@@ -4,11 +4,11 @@ In the evolving landscape of software development, the ability to efficiently ed
 
 :::image type="content" source="../media/8-install-python-extension.png" alt-text="Screenshot of the prompt to install Python extension in Visual Studio Code.":::
 
-When you open hello.py, you will receive a prompt to install the Microsoft Python extension for VS Code. It enhances the Python coding experience in VS Code. It provides advanced editing features like syntax highlighting and intelligent code completion, making coding more efficient and less error prone. The extension also offers debugging tools and simplifies the management of Python environments.  
+When you open hello.py, you will be prompted to install the Microsoft Python extension for VS Code. It enhances the Python coding experience in VS Code. It provides advanced editing features like syntax highlighting and intelligent code completion, making coding more efficient and less error prone. The extension also offers debugging tools and simplifies the management of Python environments.  
 
 1. Click on hello.py to open it for editing in VS Code. 
 
-2. You will receive a prompt to install the Microsoft Python extension. Select Install. 
+2. On the prompt to install the Microsoft Python extension. Select Install. 
 
 ## Debugging Your Code 
 
@@ -21,11 +21,11 @@ When you open hello.py, you will receive a prompt to install the Microsoft Pytho
 
     - The application will start and hit the breakpoint. Here, you can inspect variables, create watches, and explore the call stack. 
 
-3. You'll observe the output of the print statement in the debug console. 
+3. Review the output of the print statement in the debug console. 
 
 ## Ending Your WSL Session 
 
-To disconnect from WSL, from your command pallette (Ctrl/CMD+Shift+P), type Remote: Close Remote Connection 
+To disconnect from WSL, from your command palette (Ctrl/CMD+Shift+P), type Remote: Close Remote Connection 
 
 VS Code will now disconnect from WSL and reload. 
 

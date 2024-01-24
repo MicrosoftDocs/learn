@@ -1,7 +1,7 @@
 
 Windows Subsystem for Linux (WSL) is a feature from Microsoft that allows developers to run a GNU/Linux environment directly on Windows, without the need for a traditional virtual machine or dual-boot setup. Essentially, WSL provides a layer for running Linux binary executables natively on Windows. 
 
-The primary purpose of WSL is to enable developers who need to run a Linux-based computing environment alongside their Windows applications and tools. It's particularly useful for those who develop, build, test, or run applications that are designed for Linux systems. 
+The primary purpose of WSL is to enable developers who need to run a Linux-based computing environment alongside their Windows applications and tools. It's useful for those developers who code, build, test, or run applications that are designed for Linux systems. 
 
 :::image type="content" source="../media/1-wsl-intro.png" alt-text="Illustration of a laptop running Windows with the Linux penguin named Tux sitting next to it.":::
 
@@ -11,7 +11,7 @@ WSL brings several benefits to developers:
 
 - **Seamless Integration:** WSL integrates with Windows to provide a near-native Linux experience. This means developers can use Windows apps and Linux tools on the same set of files, enhancing productivity. 
 
-- **Access to Linux Tools:** It opens a whole new world of Linux tools and utilities for Windows users, which is especially beneficial for scripting, programming, and running applications that are more suited to a Linux environment. 
+- **Access to Linux Tools:** It opens a whole new world of Linux tools and utilities for Windows users. These are especially beneficial for scripting, programming, and running applications that are more suited to a Linux environment.
 
 - **Resource Efficiency:** Unlike running a full virtual machine, WSL is lightweight and resource-efficient, ensuring that your system's performance remains smooth. 
 
@@ -31,4 +31,4 @@ WSL brings several benefits to developers:
 
 In summary, WSL has evolved to become an indispensable tool for developers who require a Linux environment alongside their Windows workflow. Its development from WSL 1 to WSL 2 shows Microsoft's commitment to supporting cross-platform development, making it a versatile choice for modern software development needs. 
 
-Let's now look at how we can setup WSL on our Windows machine. 
+Let's now look at how we can set up WSL on our Windows machine. 

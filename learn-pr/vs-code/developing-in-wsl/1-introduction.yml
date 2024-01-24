@@ -3,7 +3,7 @@ uid: learn.developing-in-wsl.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction the Windows Subsystem for Linux and example it's benefits with using alongside Visual Studio Code."
+  description: "Introduction to the Windows Subsystem for Linux and example its benefits with using alongside Visual Studio Code."
   ms.date: 11/28/2023
   author: gpena
   ms.author: gpena

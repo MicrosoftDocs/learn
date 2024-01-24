@@ -23,9 +23,9 @@ In VS Code, go to the Extensions view by clicking on the Extensions icon in the 
 
 1. In VS Code, open your command pallet (Ctrl/CMD+Shift+P) and type in WSL: Connect to WSL 
     - Your VS Code will reload and connect to WSL 
-    - Notice the remote indicator on the bottom right corner displays that VS Code is connected to WSL:Ubuntu 
+    - Notice the remote indicator on the bottom right corner displays that VS Code is connected to WSL: Ubuntu 
 
-4. Open a new terminal (Ctrl/CMD+`) and notive the path corresponds to a file path in WSL 
+4. Open a new terminal (Ctrl/CMD+`) and notice the path corresponds to a file path in WSL 
 
 :::image type="content" source="../media/6-open-folder-wsl.png" alt-text="Screenshot of the Visual Studio Code WSL terminal.":::
 

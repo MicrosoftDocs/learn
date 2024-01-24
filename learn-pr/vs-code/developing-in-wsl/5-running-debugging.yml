@@ -3,7 +3,7 @@ uid: learn.developing-in-wsl.running-debugging
 title: Running and Debugging Code in WSL via VS Code
 metadata:
   title: Running and Debugging Code in WSL via VS Code
-  description: "Learn how to leverage breakpoints to debug Python code in WSL via VS Code."
+  description: "Learn how to use breakpoints to debug Python code in WSL via VS Code."
   ms.date: 11/28/2023
   author: gpena
   ms.author: gpena
