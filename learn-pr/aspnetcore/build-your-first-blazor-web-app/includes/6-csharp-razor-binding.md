@@ -108,10 +108,10 @@ Or to a component instance:
 
 The `Counter` component is currently the only interactive component in our app, and it uses interactive server rendering. Interactive server rendering handles UI events from the server over a WebSocket connection with the browser. Blazor sends UI events to the server over this connection so they can be handled by the app's components. Blazor then handles updating the browser DOM with the rendered updates.
 
-![Diagram of Blazor interactive server rendering](../media/interactive-server.png)
+![Diagram of Blazor interactive server rendering.](../media/interactive-server.png)
 
 Alternatively, Blazor components can use the `InteractiveWebAssembly` render mode to render interactively from the client. In this mode, the component code is downloaded to the browser and run client-side using a WebAssembly-based .NET runtime.
 
-![Diagram of Blazor interactive WebAssembly rendering](../media/interactive-wasm.png)
+![Diagram of Blazor interactive WebAssembly rendering.](../media/interactive-wasm.png)
 
 Which interactive render mode you choose to use depends on your app's requirements. Currently our Blazor project is only set up for server-based rendering, so for this module we'll stick with static and interactive server rendering.

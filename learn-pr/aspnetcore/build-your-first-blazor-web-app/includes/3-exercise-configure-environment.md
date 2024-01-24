@@ -75,7 +75,7 @@ Visual Studio is a fully featured IDE for .NET development that makes creating B
 
 To use Visual Studio create and work with Blazor web apps, be sure to install the "ASP.NET and web development" workload using the Visual Studio installer.
 
-![Screenshot of selecting the ASP.NET and web development workload in the Visual Studio installer](../media/vs-installer.png)
+![Screenshot of selecting the ASP.NET and web development workload in the Visual Studio installer.](../media/visual-studio-installer.png)
 
 To create a new Blazor web app using Visual Studio:
 

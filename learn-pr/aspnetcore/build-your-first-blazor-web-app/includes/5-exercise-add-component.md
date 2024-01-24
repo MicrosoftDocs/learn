@@ -20,7 +20,7 @@ In this exercise, you add a Razor component to the home page of your app.
 
 1. Apply the change by restarting the app or using hot reload. The `Counter` component shows up on the home page.
 
-    ![Counter component on Home page.](../media/counter-homepage.png)
+    ![Screenshot of the Counter component on the Home page.](../media/counter-homepage.png)
 
 ## Modify a component
 
@@ -73,6 +73,6 @@ Define a parameter on the `Counter` component to specify how much it increments 
 
     The `Home` component now has its own counter that increments by 10 each time the **Click me** button is selected, as shown in the following image.
 
-    ![Home page with Counter update.](../media/counter-homepage-modify.png)
+    ![Screenshot of the Home page with the Counter update.](../media/counter-homepage-modify.png)
 
     The `Counter` component at `/counter` continues to increment by one.

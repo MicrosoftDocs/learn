@@ -52,7 +52,7 @@ The new to-do list page doesn't yet appear in the nav menu with the other existi
 
     After applying this change, you should now see the Todo page show up in the nav menu.
 
-    ![Added Todo navigation element.](../media/todo-nav.png)
+    ![Screenshot of the added Todo navigation element.](../media/todo-nav.png)
 
 ## Build a list of to-do items
 
@@ -161,6 +161,6 @@ We need a way to mark to-do items as completed, to edit existing to-do items, an
 
 1. After applying the changes to the app, try adding items, editing items, and marking todo items done to test the component.
 
-   ![Completed Todo Page.](../media/todo-complete.png)
+   ![Screenshot of the completed Todo page.](../media/todo-complete.png)
 
 Your Blazor to-do list is now done ✅.

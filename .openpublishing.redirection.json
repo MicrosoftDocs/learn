@@ -31832,7 +31832,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/3-exercise-configure-enviromnent.yml",
+      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/3-exercise-configure-environment.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/3-exercise-configure-enviromnent",
       "redirect_document_id": true
     },
