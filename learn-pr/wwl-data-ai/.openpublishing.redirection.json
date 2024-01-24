@@ -36,32 +36,32 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/paths/create-manage-cognitive-services/3-keys.yml",
+      "source_path": "create-manage-cognitive-services/3-keys.yml",
       "redirect_url": "/training/modules/create-manage-ai-services/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/paths/create-manage-cognitive-services/4-use-rest.yml",
+      "source_path": "create-manage-cognitive-services/4-use-rest.yml",
       "redirect_url": "/training/modules/create-manage-ai-services/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/paths/create-manage-cognitive-services/5-use-sdk.yml",
+      "source_path": "create-manage-cognitive-services/5-use-sdk.yml",
       "redirect_url": "/training/modules/create-manage-ai-services/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/paths/create-manage-cognitive-services/5a-exercise-cognitive-services.yml",
+      "source_path": "create-manage-cognitive-services/5a-exercise-cognitive-services.yml",
       "redirect_url": "/training/modules/create-manage-ai-services/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/paths/create-manage-cognitive-services/6-knowledge-check.yml",
+      "source_path": "create-manage-cognitive-services/6-knowledge-check.yml",
       "redirect_url": "/training/modules/create-manage-ai-services/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/paths/create-manage-cognitive-services/7-summary.yml",
+      "source_path": "create-manage-cognitive-services/7-summary.yml",
       "redirect_url": "/training/modules/create-manage-ai-services/",
       "redirect_document_id": false
     },
