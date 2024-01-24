@@ -12,8 +12,8 @@ The OT sensor deployment plan is shown in the following diagram:
 
 Download the OT monitoring software installation file from the Defender for IoT setup page, and then install it on the OT sensor appliance. For our scenario, the appliance is a virtual machine. You need the details of two network adapters:
 
-    - One to connect the sensor to the Azure portal for cloud management.
-    - The second network adaptor connects the sensor to a traffic mirroring port.
+- One to connect the sensor to the Azure portal for cloud management.
+- The second network adaptor connects the sensor to a traffic mirroring port.
 
 This information should be found in the virtual machine software documentation. <!-- as per /ot-deploy/install-software-ot-sensor does this seem correct? I think so.-->
 
@@ -28,28 +28,28 @@ Next, configure the sensor in a browser, which requires the sensor administrator
 <!-- again not sure about the heading, should we also indent this? -->
 In the **Management interface** tab, you define the network details that connect the sensor to Defender for IoT. You need to have the following details:
 
-    |Name  |Description  |
-    |---------|---------|
-    |**Management interface**     |  Select the interface you want to use as the management interface to connect to the Azure portal. |
-    |**IP Address**     |  Enter the IP address for the sensor, which you use to connect to the sensor via the browser. |
-    |**Subnet Mask**     | Enter the address you want to use as the sensor's subnet mask.        |
-    |**Default Gateway**     | Enter the address you want to use as the sensor's default gateway.        |
-    |**DNS**     |   Enter the sensor's DNS server IP address.      |
-    |**Hostname**     |  Enter the hostname you want to assign to the sensor. Make sure that you use the same hostname as is defined in the DNS server.       |
+|Name  |Description  |
+|---------|---------|
+|**Management interface**     |  Select the interface you want to use as the management interface to connect to the Azure portal. |
+|**IP Address**     |  Enter the IP address for the sensor, which you use to connect to the sensor via the browser. |
+|**Subnet Mask**     | Enter the address you want to use as the sensor's subnet mask.        |
+|**Default Gateway**     | Enter the address you want to use as the sensor's default gateway.        |
+|**DNS**     |   Enter the sensor's DNS server IP address.      |
+|**Hostname**     |  Enter the hostname you want to assign to the sensor. Make sure that you use the same hostname as is defined in the DNS server.       |
 
 ### Interface configurations tab
 
 The **Interface configurations** tab shows each interface on the sensor, which should match the list of endpoints in the network diagram.<!-- not sure if this is needed here? but it is important and should be checked surely?--> Each interface is set up individually.
 
-    Select and enable each interface to be monitored. If you're unsure which interface to use, select the :::image type="icon" source="../media/3-blink-interface.png" alt-text="blink interface icon"::: Blink physical interface LED button to have the selected port blink on your machine. 
-    Select any of the interfaces that you've connected to your switch. 
+Select and enable each interface to be monitored. If you're unsure which interface to use, select the :::image type="icon" source="../media/3-blink-interface.png" alt-text="blink interface icon"::: Blink physical interface LED button to have the selected port blink on your machine. 
+Select any of the interfaces that you've connected to your switch. 
 <!--is this only if you are close to the sensor? How would this work for a cloud sensor?-->
-    There are optional, advanced settings for each interface, as follows:
+There are optional, advanced settings for each interface, as follows:
 
-     |Name  |Description  |
-     |---------|---------|
-     |**Mode**| Select one of the following: </br>- SPAN Traffic (no encapsulation) to use the default SPAN port mirroring.</br> - ERSPAN if you're using ERSPAN mirroring.|
-     |**Description**| Enter an optional description for the interface. These descriptions may be helpful in understanding the purpose of each interface.|
+    |Name  |Description  |
+    |---------|---------|
+    |**Mode**| Select one of the following: </br>- SPAN Traffic (no encapsulation) to use the default SPAN port mirroring.</br> - ERSPAN if you're using ERSPAN mirroring.|
+    |**Description**| Enter an optional description for the interface. These descriptions may be helpful in understanding the purpose of each interface.|
 
 ### Activation tab
 
