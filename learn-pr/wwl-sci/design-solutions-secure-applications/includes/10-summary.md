@@ -15,7 +15,7 @@ You've learned how to:
 - [Application lifecycle management in Azure Container Apps](/azure/container-apps/application-lifecycle-management)
 - [Workload identities - Microsoft Entra](/azure/active-directory/workload-identities/workload-identities-overview)
 - [Azure API Management - Overview and key concepts](/azure/api-management/api-management-key-concepts)
-- [Azure security baseline for API Management](https://learn.microsoft.com/security/benchmark/azure/baselines/api-management-security-baseline)
+- [Azure security baseline for API Management](/security/benchmark/azure/baselines/api-management-security-baseline)
 - [Introduction to Azure Web Application Firewall](/azure/web-application-firewall/overview)
 - [What is Azure Web Application Firewall on Azure Application Gateway? - Azure Web Application Firewall](/azure/web-application-firewall/ag/ag-overview)
 - [What is Azure web application firewall on Azure Front Door?](/azure/web-application-firewall/afds/afds-overview)

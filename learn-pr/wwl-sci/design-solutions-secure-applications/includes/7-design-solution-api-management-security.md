@@ -66,7 +66,7 @@ Microsoft cloud security benchmark's API security baseline outlines a number of 
 * important features which support that control
 * configuration guidance for those features
 
-We have omitted controls from the baseline where the feature was not supported to secure the service at this time and there was no configuration guidance. For the full specification, see [Azure security baseline for API Management](https://learn.microsoft.com/security/benchmark/azure/baselines/api-management-security-baseline).
+We have omitted controls from the baseline where the feature was not supported to secure the service at this time and there was no configuration guidance. For the full specification, see [Azure security baseline for API Management](/security/benchmark/azure/baselines/api-management-security-baseline).
 
 ### Network security
 

@@ -44,7 +44,7 @@ Because some approaches to threat modeling can be time-consuming and skill-inten
 
 The following simple questions methods will get you started:
 
--   [Simple questions method from Microsoft](https://learn.microsoft.com/security/compass/applications-services#simple-questions-method): This method asks specific technical questions designed to surface common security design mistakes.
+-   [Simple questions method from Microsoft](/security/compass/applications-services#simple-questions-method): This method asks specific technical questions designed to surface common security design mistakes.
 -   [OWASP threat modeling](https://owasp.org/www-community/Threat_Modeling): This method focuses on asking simple, non-technical questions to get the threat modeling process started.
 
 You can use one or both of these approaches, depending on what works better for your team.

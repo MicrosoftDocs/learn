@@ -7,7 +7,7 @@ This unit will discuss solutions for the following types of security workflows:
 
 ## Microsoft cloud security benchmark controls for incident response
 
-The following table summarizes the control recommendations for incident response from the Microsoft cloud security benchmark. For a complete discussion of these controls, as well as guidance for specific cloud platforms, see [Microsoft cloud security benchmark - Incident Response](https://learn.microsoft.com/security/benchmark/azure/mcsb-incident-response)
+The following table summarizes the control recommendations for incident response from the Microsoft cloud security benchmark. For a complete discussion of these controls, as well as guidance for specific cloud platforms, see [Microsoft cloud security benchmark - Incident Response](/security/benchmark/azure/mcsb-incident-response)
 
 Please refer to [Introduction to Microsoft Cybersecurity Reference Architecture and cloud security benchmark](/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/1-introduction-reference-architecture-benchmark) for more background on Microsoft Cloud Security Benchmark. 
 
