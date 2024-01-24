@@ -27,7 +27,6 @@ levels:
 roles:
 - developer
 products:
-- azure
 - aspnet-core
 - blazor
 - dotnet
