@@ -8,7 +8,7 @@ There are a few changes that need to be made to your function application before
 
 1. Determine the region for your sandbox resource group:
 
-    1. Use the name of the resource group that was automatically created for you when you activated the the sandbox to retrieve the region where the resource group is located:
+    1. Use the name of the resource group that was automatically created for you when you activated the sandbox to retrieve the region where the resource group is located:
 
         ```bash
         az group show --name "<rgn>[sandbox resource group name]</rgn>" | jq -r '.location'
@@ -148,4 +148,4 @@ Now that you deployed your function to Azure, all that is necessary to test your
     Hello, Bob
     ```
 
-You have now successfully deployed and tested your function in Azure!
+Congratulations, you successfully deployed and tested your function in Azure!

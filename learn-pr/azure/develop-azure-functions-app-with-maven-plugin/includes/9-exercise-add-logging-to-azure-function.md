@@ -1,14 +1,14 @@
-In the previous unit, you learned about a few of the benefits for incorporating Application Insights into your function application, and you also learned about some of the other logging features that are available to your team of developers.
+In the previous unit, you learned about a few of the benefits for incorporating Application Insights into your function application. You also learned about some of the other logging features that are available to your team of developers.
 
-At this stage in your project research, your function application has been deployed to Azure using Maven, and you have tested your function application in production. Your next task is to add tracking and logging functionality to your application.
+At this stage in your project research, you deployed your function application to Azure using Maven, and you tested your function application in production. Your next task is to add tracking and logging functionality to your application.
 
-In this exercise, you'll update your function project configuration files to support both log streaming and Application Insights. You'll also learn how to add custom tracking and Application Insight event triggers to your project code.
+In this exercise, you update your function project configuration files to support both log streaming and Application Insights. You also learn how to add custom tracking and Application Insight event triggers to your project code.
 
 ## Stream logs in real time
 
-Now you have your Function app deployed and running on Azure. In case for troubleshoot, you can use the simple Azure CLI command to get real time log streaming from the app.
+Now that your Function app is deployed and running on Azure, you can troubleshoot it by using the simple Azure CLI command to get real time log streaming from the app.
 
-1. Copy paste the value for your `functionAppName` and `resourceGroup` from *pom.xml*.
+1. Copy and paste the value for your `functionAppName` and `resourceGroup` from *pom.xml*.
 
     ```bash
     code pom.xml
@@ -24,9 +24,9 @@ Now you have your Function app deployed and running on Azure. In case for troubl
 
 ## Adding instrumentation to your Java project for Application Insights
 
-Now that you have enabled Application Insights for your application, your next task to enable it in your application. To enable application logging and Application Insights, you'll need to modify the configuration files to include the requisite libraries and other dependencies.
+Now that Application Insights is enabled for your application, your next task to enable it in your application. To enable application logging and Application Insights, you need to modify the configuration files to include the requisite libraries and other dependencies.
 
-There are two configuration files that you'll need to update: *pom.xml* and *host.json*.
+There are two configuration files you need to update: *pom.xml* and *host.json*.
 
 ### Modifying your *pom.xml* file
 
@@ -42,7 +42,7 @@ There are two configuration files that you'll need to update: *pom.xml* and *hos
     code pom.xml
     ```
 
-1. Add the following elements to the standalone `<dependencies>` section, which will enable Application Insights for your application:
+1. Add the following elements to the standalone `<dependencies>` section to enables Application Insights for your application:
 
     ```xml
     <dependency>
@@ -96,11 +96,11 @@ There are two configuration files that you'll need to update: *pom.xml* and *hos
 
 ## Adding logging and Application Insights tracking to your project code
 
-To improve the usefulness of the data collected by Application Insights, and also for the data that will show up in your log files, you'll need to add a few data logging commands to your application code.
+To improve the usefulness of the data collected by Application Insights that appears in your log files, you need to add a few data logging commands to your application code.
 
 ### Adding logging to your *Function.java* file
 
-To add general logging to your function, you can add code like the following example at key points in your application code, where you'll replace the `[LOG MESSAGE]` string with a message you want to see in your application's log files.
+To add general logging to your function, you can add code like the following example at key points in your application code, where you replace the `[LOG MESSAGE]` string with a message you want to see in your application's log files.
 
 ```java
 context.getLogger().info("[LOG MESSAGE]");
@@ -114,7 +114,7 @@ To add logging to your application, use the following steps.
     code ~/event-reporting/src/main/java/com/contoso/functions/Function.java
     ```
 
-    If you examine the existing code, you'll notice that there is an existing `context.getLogger()` command; it's the first instruction after the definition of the `run()` function.
+    If you examine the existing code, you'll notice that there's an existing `context.getLogger()` command; it's the first instruction after the definition of the `run()` function.
 
 1. Locate the following section of code, which tests for an empty GET query string or empty POST request:
 
@@ -138,7 +138,7 @@ To add logging to your application, use the following steps.
     }
     ```
 
-1. Press <kbd>Ctrl+S</kbd> to save your *Function.java* file, but do not close the editor; you will continue to add code to your application in the next section of this exercise.
+1. Press <kbd>Ctrl+S</kbd> to save your *Function.java* file, but don't close the editor; you're going to add code to your application in the next section of this exercise.
 
 ### Adding Application Insights tracking to your *Function.java* file
 
@@ -195,13 +195,13 @@ To add logging to your application, use the following steps.
     ```
 -->
 
-You've now successfully added logging and Application Insights data collection to your function.
+Logging and Application Insights data collection is now added to your function.
 
 ## Using Application Insights to monitor your Azure Function
 
 Your application is now updated to support fine grained logging with both the system logger and Application Insights. 
 
-1. To generate some sample HTTP traffic, copy the URL that you used to test your application in a web browser in the previous exercise, and use that URL with cURL to create a loop in the Azure Cloud Shell; for example:
+1. To generate some sample HTTP traffic, copy the URL that you used to test your application in a web browser in the previous exercise. Use that URL with cURL to create a loop in the Azure Cloud Shell; for example:
 
     ```bash
     while :; do curl https://event-reporting-20200102030405006.azurewebsites.net/api/HttpExample?name=Bob; sleep 1; done
@@ -217,11 +217,11 @@ Your application is now updated to support fine grained logging with both the sy
 
     1. On the **Overview page**, select **Platform features**.
 
-    1. In the **Monitoring** section, click **Log streaming**.
-    
+    1. In the **Monitoring** section, select **Log streaming**.
+
         ![Image showing where to find Log Streaming.](../media/8-log-streaming.png)
 
-    1. You'll see a series of log entries that are being generated by your sample traffic.
+    1. Notice that your sample traffic generates a series of log entries.
 
         ![Image showing Platform Features and Log Streaming.](../media/9-log-streaming.png)
 
@@ -229,12 +229,12 @@ Your application is now updated to support fine grained logging with both the sy
 
     1. Select **All resources** from the menu on the left.
 
-    1. Select your Application Insights resource from the list; for this exercise, your Application Insights resource will match the name of your Azure Function. For example: *event-reporting-20200102030405006*.
+    1. Select your Application Insights resource from the list; for this exercise, your Application Insights resource matches the name of your Azure Function. For example: *event-reporting-20200102030405006*.
 
-    1. Click **Live Metrics**. You'll see the results that are being generated by your sample traffic.
+    1. Select **Live Metrics**. Now you can see that your sample traffic generates Application Insights and Live Metrics results.
 
         ![Image showing Application Insights and Live Metrics highlights.](../media/9-live-metrics.png)
 
-You have successfully configured your Azure Function for detailed logging.
+Congratulations, you successfully configured your Azure Function for detailed logging.
 
 Before continuing, switch back to the Cloud Shell and press <kbd>Ctrl+C</kbd> to close the command loop.

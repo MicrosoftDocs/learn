@@ -2,7 +2,7 @@ In the previous exercise, you created an Azure Function project using an Azure M
 
 In this unit, you learn about the Azure Functions Core Tools, which help you run and test your functions locally. You also learn how to open an HTTP port for testing, how to run your function in the Cloud Shell, and how to test your function in a web browser.
 
-## What are the Azure Functions Core Tools?
+## About Azure Functions Core Tools
 
 Azure Functions Core Tools are a suite of utilities for building and testing Azure Functions locally using a terminal emulator or command prompt. Even though the Azure Functions you create are running locally, they can access live Azure services during your testing. When you complete your testing and your function is ready to publish, you can deploy your function application to your Azure subscription.
 
