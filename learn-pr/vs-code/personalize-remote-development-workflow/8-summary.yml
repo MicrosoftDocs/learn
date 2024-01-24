@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.personalize-remote-development-workflow.combine-remote-experiences
+uid: learn.personalize-remote-development-workflow.summary
 title: Summary
 metadata:
   title: Summary
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-combine-remote-experiences.md)]
+  [!include[](includes/8-summary.md)]
