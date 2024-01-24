@@ -1,6 +1,6 @@
 Let's set up our .NET development environment and create our first Blazor web app.
 
-This module gives you the option to use the [.NET CLI](/dotnet/core/tools/), [Visual Studio Code](https://code.visualstudio.com), or [Visual Studio 2022](https://visualstudio.com) for local development. If you're developing with Visual Studio Code, be sure to install the [C# Dev Kit](https://code.visualstudio.com/docs/csharp/get-started#_install) extension, which we'll use in this module.
+This module gives you the option to use the [.NET CLI](/dotnet/core/tools/), [Visual Studio Code](https://code.visualstudio.com), or [Visual Studio 2022](https://visualstudio.com) for local development. If you're developing with Visual Studio Code, be sure to install the [C# Dev Kit](https://code.visualstudio.com/docs/csharp/get-started#_install) extension, which we use in this module.
 
 ::: zone pivot="vscode"
 
@@ -20,7 +20,7 @@ To create a new Blazor web app project in Visual Studio Code with the C# Dev Kit
 
 1. Name the project **BlazorApp** and press **Enter** to confirm.
 
-1. In Visual Studio Code with the C# Dev Kit the **Solution Explorer** will load showing you a project view of the new Blazor app.
+1. In Visual Studio Code with the C# Dev Kit, the **Solution Explorer** loads with a project view of the new Blazor app.
 
 ## Optional: Create a new Blazor app with the .NET CLI
 
@@ -128,7 +128,7 @@ You can stop the app at any time by clicking on the **Stop** button in the top t
 
 ![Screenshot of the Debug Toolbar in Visual Studio with the Stop Debugging button highlighted.](../media/stop-debug.png)
 
-The first time you run a web app in Visual Studio, it will set up a development certificate for hosting the app over HTTPS and then prompt you to trust the certificate. We recommend agreeing to trust the certificate. The certificate will only be used for local development, and without it most browsers will complain about the security of the website.
+The first time you run a web app in Visual Studio, it will set up a development certificate for hosting the app over HTTPS and then prompt you to trust the certificate. We recommend agreeing to trust the certificate. The certificate is only used for local development, and without it most browsers complain about the security of the website.
 
 Wait for the app to launch in the browser. Once you get to the following page, you've successfully run your first Blazor app!
 

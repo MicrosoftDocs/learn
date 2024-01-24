@@ -1,4 +1,4 @@
-In this exercise, we'll add a basic to-do list page to our Blazor app.
+In this exercise, we add a basic to-do list page to our Blazor app.
 
 ## Create the to-do list page
 

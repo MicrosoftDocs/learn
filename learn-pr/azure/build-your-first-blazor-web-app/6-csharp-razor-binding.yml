@@ -3,10 +3,10 @@ uid: learn.build-your-first-blazor-web-app.6-csharp-razor-binding
 title: Data binding and events
 metadata:
   title: Data binding and events
-  description: Learn how Blazor leverage razor binding systems to display data and trigger events.
-  ms.date: 01/05/2024
-  author: csharpfritz
-  ms.author: jefritz
+  description: Learn how to handle events and use data binding from Blazor components.
+  ms.date: 01/23/2024
+  author: danroth27
+  ms.author: daroth
   ms.manager: markl
   ms.topic: unit
 durationInMinutes: 6

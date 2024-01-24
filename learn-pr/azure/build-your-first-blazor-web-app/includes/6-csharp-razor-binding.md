@@ -1,14 +1,14 @@
-You've learned the basics of creating and using Blazor components in Razor files. Now let's explore how define component rendering logic and handle UI events.
+You now know the basics of creating and using Blazor components in Razor files. Next let's explore how to define component rendering logic and handle UI events.
 
 ## Render C# expression values
 
-When you want to render the value of a C# expression in Razor you simply add a leading `@` character. That's how the `Counter` component renders the `currentCount` value:
+When you want to render the value of a C# expression in Razor, you use a leading `@` character. That's how the `Counter` component renders the `currentCount` value:
 
 ```razor
 <p role="status">Current count: @currentCount</p>
 ```
 
-Razor is pretty good at recognizing when the C# expression ends and you've transitioned back to writing HTML. But you can also be explicit about the beginning and ending of the expression using parens:
+Razor can typically figure out when a C# expression ends and you've transitioned back to writing HTML. But you can also be explicit about the beginning and ending of the expression using parens:
 
 ```razor
 <p role="status">Current count: @(currentCount)</p>
@@ -88,7 +88,7 @@ When you change the value of the input, the `text` field is updated with the new
 
 ## Razor directives
 
-Razor directives are reserved keywords in Razor syntax that influence how a Razor file is compiled. Razor directives always begin with the `@` character. Some Razor directives appear at the begining of a new line, like `@page` and `@code`, while other are attributes that can be applied to elements as attributes, like `@bind`. You can find a full list of the Razor directives in the [Razor syntax reference](/aspnet/core/mvc/views/razor).
+Razor directives are reserved keywords in Razor syntax that influence how a Razor file is compiled. Razor directives always begin with the `@` character. Some Razor directives appear at the beginning of a new line, like `@page` and `@code`, while other are attributes that can be applied to elements as attributes, like `@bind`. You can find a full list of the Razor directives in the [Razor syntax reference](/aspnet/core/mvc/views/razor).
 
 ## Enable interactivity
 
@@ -114,4 +114,4 @@ Alternatively, Blazor components can use the `InteractiveWebAssembly` render mod
 
 ![Diagram of Blazor interactive WebAssembly rendering](../media/interactive-wasm.png)
 
-Which interactive render mode you choose to use will depend on your app's requirements. Currently our Blazor project is only set up for server-based rendering, so for this module we'll stick with static and interactive server rendering.
+Which interactive render mode you choose to use depends on your app's requirements. Currently our Blazor project is only set up for server-based rendering, so for this module we'll stick with static and interactive server rendering.

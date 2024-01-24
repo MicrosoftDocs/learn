@@ -3,10 +3,10 @@ uid: learn.build-your-first-blazor-web-app.7-exercise-razor-binding
 title: Exercise - Data binding and events
 metadata:
   title: Exercise - Data binding and events
-  description: Create a to-do list component with interactive controls that are updated through razor binding.
-  ms.date: 01/05/2024
-  author: csharpfritz
-  ms.author: jefritz
+  description: Create a to-do list component with interactive controls and data binding.
+  ms.date: 01/23/2024
+  author: danroth27
+  ms.author: daroth
   ms.manager: markl
   ms.topic: unit
   zone_pivot_groups: vsandcode

@@ -3,9 +3,9 @@ uid: learn.build-your-first-blazor-web-app
 metadata:
   title: Build a web app with Blazor
   description: Learn how to build your first web app with Blazor.
-  ms.date: 01/22/2024
-  author: csharpfritz
-  ms.author: jefritz
+  ms.date: 01/23/2024
+  author: danroth27
+  ms.author: daroth
   ms.manager: markl
   ms.topic: module
   ms.service: aspnet-core
@@ -41,6 +41,7 @@ units:
 - learn.build-your-first-blazor-web-app.5-exercise-add-component
 - learn.build-your-first-blazor-web-app.6-csharp-razor-binding
 - learn.build-your-first-blazor-web-app.7-exercise-razor-binding
-- learn.build-your-first-blazor-web-app.8-summary
+- learn.build-your-first-blazor-web-app.8-knowledge-check
+- learn.build-your-first-blazor-web-app.9-summary
 badge:
   uid: learn.build-your-first-blazor-web-app.badge

@@ -1,4 +1,4 @@
-In this exercise, you'll add a Razor component to the home page of your app.
+In this exercise, you add a Razor component to the home page of your app.
 
 ## Add the Counter component to the Home page
 
@@ -18,7 +18,7 @@ In this exercise, you'll add a Razor component to the home page of your app.
     <Counter />
     ```
 
-1. Apply the change by restarting the app or using hot reload. The `Counter` component will then show up on the home page.
+1. Apply the change by restarting the app or using hot reload. The `Counter` component shows up on the home page.
 
     ![Counter component on Home page.](../media/counter-homepage.png)
 

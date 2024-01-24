@@ -2,7 +2,7 @@ Now that you have your development environment set up, let's explore the structu
 
 ## The Home page
 
-The home page for the app is defined by the *Home.razor* file located inside the *Components/Pages* directory. This is what its contents look like:
+The home page for the app is defined by the *Home.razor* file located inside the *Components/Pages* directory. *Home.razor* contains the following code:
 
 ```razor
 @page "/"
@@ -22,7 +22,7 @@ Razor is a markup syntax based on HTML and C#. A Razor file (.razor) contains pl
 
 ## What are Razor components?
 
-If you explore the Blazor project you just created, you can see that most of the files that make up the project are .razor files. In Blazor, a Razor file defines a reusable component that make up a portion of the app UI. Components define what HTML to render and how to handle user events.
+If you explore the files in the Blazor project, you can see that most of the files that make up the project are *.razor* files. In Blazor, a Razor file defines a reusable component that makes up a portion of the app UI. Components define what HTML to render and how to handle user events.
 
 At compile time, each Razor component is built into a C# class. The class can include common UI elements like state, rendering logic, lifecycle methods, and event handlers. Because Blazor components authored in Razor are just C# classes, you can use arbitrary .NET code from your components.
 
@@ -32,7 +32,7 @@ To use a component from another component, you add an HTML-style tag with a name
 
 ## Component parameters
 
-Components can also have parameters, which allow you to pass data to the component when it is used. Component parameters are defined by adding a public C# property to the component that also has a `[Parameter]` attribute. You can then specify a value for a component parameter using an HTML-style attribute that matches the property name. The value of the parameter can be any C# expression.
+Components can also have parameters, which allow you to pass data to the component when it's used. Component parameters are defined by adding a public C# property to the component that also has a `[Parameter]` attribute. You can then specify a value for a component parameter using an HTML-style attribute that matches the property name. The value of the parameter can be any C# expression.
 
 ## The @code block
 

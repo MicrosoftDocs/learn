@@ -3,10 +3,10 @@ uid: learn.build-your-first-blazor-web-app.5-exercise-add-component
 title: Exercise - Add a component
 metadata:
   title: Exercise - Add a component
-  description: Re-use components across pages of a Blazor web app and pass parameters in to modify behavior.
-  ms.date: 01/05/2024
-  author: csharpfritz
-  ms.author: jefritz
+  description: Reuse components across pages of a Blazor web app and pass parameters in to modify behavior.
+  ms.date: 01/23/2024
+  author: danroth27
+  ms.author: daroth
   ms.manager: markl
   ms.topic: unit
 durationInMinutes: 4

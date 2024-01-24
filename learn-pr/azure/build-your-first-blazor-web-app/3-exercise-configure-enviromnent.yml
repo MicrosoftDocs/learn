@@ -3,10 +3,10 @@ uid: learn.build-your-first-blazor-web-app.3-exercise-configure-environment
 title: Exercise - Create and run a Blazor web app
 metadata:
   title: Exercise - Create and run a Blazor web app
-  description: Build your first web app with Blazor, Visual Studio Code, and C#.
-  ms.date: 01/05/2024
-  author: csharpfritz
-  ms.author: jefritz
+  description: LSet up your environment for Blazor development and build your first Blazor web app.
+  ms.date: 01/23/2024
+  author: danroth27
+  ms.author: daroth
   ms.manager: markl
   ms.topic: unit
   ms.custom:
