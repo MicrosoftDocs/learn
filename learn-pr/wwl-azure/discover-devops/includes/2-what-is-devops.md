@@ -1,4 +1,4 @@
-DevOps is a commonly misunderstood and mischaracterized term. Before we explore more nuanced aspects of DevOps, it is essential to understand its meaning. To help with this task, let's consider a traditional organization with an internal IT department that includes a development and operational team. We'll review challenges associated with this scenario and examine the meaning of DevOps in this context.
+DevOps is a commonly misunderstood and mischaracterized term. Before you explore more nuanced aspects of DevOps, it is essential that you understand its meaning. To help with this task, let's consider the traditional organization in the software development company example in which the development team and the operations team work in silos. You'll review challenges associated with this scenario and examine the meaning of DevOps in this context and how it can help.
 
 ## What challenges are associated with a traditional application lifecycle?
 

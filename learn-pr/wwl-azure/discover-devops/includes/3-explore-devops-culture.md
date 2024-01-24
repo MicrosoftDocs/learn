@@ -1,4 +1,4 @@
-DevOps extends beyond technology, tools, and processes, forming an organizational culture. This can be exemplified by revisiting our original scenario and focusing on less tangible components of organizational life, such as team collaboration, shared responsibility, empowerment, continuous learning, and agile mindset. We'll use this context to examine DevOps culture and its key elements.
+DevOps extends beyond technology, tools, and processes, forming an organizational culture. In the software-development company example, it becomes crucial to start by focusing on less tangible components of organizational life, such as team collaboration, shared responsibility, empowerment, continuous learning, and agile mindset. Here, you'll use this context to examine DevOps culture and its key elements.
 
 ## What is DevOps culture?
 
