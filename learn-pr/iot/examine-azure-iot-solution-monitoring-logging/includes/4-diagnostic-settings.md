@@ -30,7 +30,7 @@ Platform **logs** provide detailed diagnostic and auditing information for Azure
 
 ### Resource log category groups
 
-You can use category groups to dynamically collect resource logs based on predefined groupings instead of selecting individual log categories. Microsoft defines the groupings to help monitor specific use cases across all Azure services.
+Use **Category groups** to dynamically collect resource logs based on predefined groupings instead of selecting individual log categories. Microsoft defines the groupings to help monitor specific use cases across all Azure services.
 
 Over time, the categories in the group might be updated as new logs are rolled out or as assessments change. When log categories are added or removed from a category group, your log collection is modified automatically without you having to update your diagnostic settings.
 
@@ -48,13 +48,13 @@ The **audit** category is a subset of **allLogs**, but the Azure portal and REST
 
 ### Resource log categories
 
-For a description of each resource log category setting, see [Resource logs](/azure/iot-hub/monitor-iot-hub-reference#resource-logs).
+Select one or more check boxes in the **Categories** section to select resource log collection categories. For a description of each resource log category setting, see [Resource logs](/azure/iot-hub/monitor-iot-hub-reference#resource-logs).
 
 ## Destinations
 
-Platform logs and metrics can be sent to the following destinations. To ensure the security of data in transit, all destination endpoints are configured to support TLS 1.2.
+Platform logs and metrics can be sent to the following destinations. To ensure the security of data in transit, all destination endpoints support TLS 1.2.
 
-* [Log Analytics workspace](/azure/azure-monitor/logs/workspace-design) - Metrics are converted to log form. This option might not be available for all resource types. Sending them to the Azure Monitor Logs store (which is searchable via Log Analytics) helps you to integrate them into queries, alerts, and visualizations with existing log data.
+* [Log Analytics workspace](/azure/azure-monitor/logs/workspace-design) - Metrics are converted to log form. This option might not be available for all resource types. Sending metrics to the Azure Monitor Logs store (which is searchable via Log Analytics) helps you to integrate them into queries, alerts, and visualizations with existing log data.
 * [Azure Storage account](/azure/storage/blobs/) - Archiving logs and metrics to a storage account is useful for audit, static analysis, or back up. Compared to using Azure Monitor Logs or a Log Analytics workspace, storage is less expensive, and logs can be kept there indefinitely.
 * [Azure Event Hubs](/azure/event-hubs/) - When you send logs and metrics to Event Hubs, you can stream data to external systems such as third-party SIEMs and other Log Analytics solutions.
 * [Azure Monitor partner integrations](/azure/partner-solutions/overview) - Specialized integrations can be made between Azure Monitor and other non-Microsoft monitoring platforms. Integration is useful when you're already using one of the partners.
@@ -63,7 +63,7 @@ If you want to store diagnostic logs in a Log Analytics workspace, there are two
 
 * The destination can't be the same Log Analytics workspace that your Application Insights resource is based on.
 
-* The Application Insights user can't have access to both workspaces. Set the Log Analytics access control mode to Requires workspace permissions. Through Azure role-based access control, ensure the user only has access to the Log Analytics workspace the Application Insights resource is based on.
+* The Application Insights user can't have access to both workspaces. Set the Log Analytics access control mode to **Requires workspace permissions**. Through Azure role-based access control, ensure that the user only has access to the Log Analytics workspace the Application Insights resource is based on.
 
 These steps are necessary because Application Insights accesses telemetry across Application Insight resources, including Log Analytics workspaces, to provide complete end-to-end transaction operations and accurate application maps. Because diagnostic logs use the same table names, duplicate telemetry can be displayed if the user has access to multiple resources that contain the same data.
 
@@ -89,11 +89,11 @@ Set-AzDiagnosticSetting -ResourceId <your resource Id> -Enabled $true
 
 You can also user PowerShell to enable and disable individual metrics and log categories. For more information, see [Set-AzDiagnosticSetting](/powershell/module/az.monitor/set-azdiagnosticsetting).
 
-## Controlling costs
+## Control costs
 
 There's a cost for collecting data in a Log Analytics workspace, so only collect the categories you require for each service. The data volume for resource logs varies significantly between services.
 
-You might also not want to collect platform metrics from Azure resources because this data is already being collected automatically in Metrics. Only configure your diagnostic data to collect metrics if you need metric data in the workspace for more complex analysis with log queries. Diagnostic settings don't allow granular filtering of resource logs.
+You might not want to collect platform metrics from Azure resources because this data is already being collected automatically in Metrics. Only configure your diagnostic data to collect metrics if you need metric data in the workspace for more complex analysis with log queries. Diagnostic settings don't allow granular filtering of resource logs.
 
 For pricing information, see [Azure Monitor pricing](https://azure.microsoft.com/pricing/details/monitor/).
 

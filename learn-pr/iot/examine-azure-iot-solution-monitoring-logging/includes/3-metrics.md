@@ -4,12 +4,12 @@ In Azure Monitor, metrics are a series of measured values and counts that are co
 
 For many Azure resources, you can view data collected by Azure Monitor in the following standard charts that are included on the Azure IoT Hub **Overview** page:
 
-* Connected Devices
+* Connected devices
 * Device to cloud messages
 * Number of messages used
-* Total IoT Devices
+* Total IoT devices
 
-Click on any of the graphs to open the data in metrics explorer in the Azure portal, which allows you to chart the values of multiple metrics over time. You can view the charts interactively or pin them to a dashboard to view them with other visualizations.
+Select any of the graphs to open the data in metrics explorer in the Azure portal, which allows you to chart the values of multiple metrics over time. You can view the charts interactively or pin them to a dashboard to view them with other visualizations.
 
 ## Metrics Explorer
 

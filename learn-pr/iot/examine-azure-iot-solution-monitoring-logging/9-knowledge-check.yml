@@ -26,7 +26,7 @@ quiz:
     - content: "Resource Health, device heartbeat, and Diagnostic Settings."
       isCorrect: false
       explanation: "Incorrect. Resource health and device heartbeat can tell you if a resource is running as expected, but it's not use for data analysis. Diagnostic settings are used to set up routing of data from source to destination."
-  - content: "Are you required to configure a diagnostic setting to use with a Log Analytics workspace?"
+  - content: "Are you required to configure a diagnostic setting in order to use a Log Analytics workspace?"
     choices:
     - content: "Yes."
       isCorrect: true
