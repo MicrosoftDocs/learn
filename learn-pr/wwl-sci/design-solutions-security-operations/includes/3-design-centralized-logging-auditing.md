@@ -1,6 +1,6 @@
 ## Logging and auditing in Microsoft cloud security benchmark
 
-Microsoft cloud security benchmark provides guidance on designing logging capabilities, which is summarized in the following table. For more complete information about these controls, see [Microsoft cloud security benchmark - Logging and threat detection](https://learn.microsoft.com/security/benchmark/azure/mcsb-logging-threat-detection)
+Microsoft cloud security benchmark provides guidance on designing logging capabilities, which is summarized in the following table. For more complete information about these controls, see [Microsoft cloud security benchmark - Logging and threat detection](/security/benchmark/azure/mcsb-logging-threat-detection)
 
 Please refer to [Introduction to Microsoft Cybersecurity Reference Architecture and cloud security benchmark](/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/1-introduction-reference-architecture-benchmark) for more background on Microsoft Cloud Security Benchmark. 
 
