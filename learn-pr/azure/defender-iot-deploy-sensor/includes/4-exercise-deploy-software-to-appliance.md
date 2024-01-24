@@ -47,7 +47,7 @@ Select **Install iot-sensor_23.1.1.75399077**. The installation process takes 20
     UID: 91F14D56-C1E4-966F-726F-006A527C61D
     ```
 
-    The IP address is needed to access the sensor for initial setup and activation.
+The IP address is needed to access the sensor for initial setup and activation.
 
 ### Define network settings
 
@@ -105,8 +105,8 @@ Finally, select **Finish** to complete the initial setup and open the sensor.
 
 Verify that your sensor is connected to Azure by checking its connectivity status in Defender for IoT.
 
-1. Open Defender for IoT in the Azure portal. 
-1. Select the **Sites and sensors** section. 
+1. Open Defender for IoT in the Azure portal.
+1. Select the **Sites and sensors** section.
 1. Check that your sensor is listed and the status is *connected*.
 1. Check that data appears in Defender for IoT by opening the sensor and selecting an interface.
 <!-- is this last point correct?-->
