@@ -2732,3 +2732,8 @@ achievements:
   title: Challenge project - Develop foreach and if-elseif-else structures to process array data in C#
   summary: Demonstrate your ability to update a console app that implements arrays, foreach loops, and if statements in response to a user requested feature update.
   iconUrl: /training/achievements/generic-badge.svg
+-	uid:: learn.create-azure-active-directory-test-environment.badge
+  type: badge
+  title:: Set up a test environment for application testing in Microsoft Entra ID
+  summary: Evaluate whether you need a dedicated test tenant for your application test environment. Create a test tenant in Microsoft Entra ID for use in a continuous integration/continuous deployment (CI/CD) pipeline or for testing applications.
+  iconUrl:: /learn/achievements/generic-badge.svg
