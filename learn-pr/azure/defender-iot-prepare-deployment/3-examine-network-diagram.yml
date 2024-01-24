@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.defender-iot-prepare-deployment.design-network-diagram
+uid: learn.defender-iot-prepare-deployment.examine-network-diagram
+title: Examine your network diagram
 
-title: Design your network diagram
 metadata:
-  title: Design your network diagram
+  title: Examine your network diagram
   description: "Describes the network diagram preparing process and where the OT network exists on the Purdue model."
   ms.date: 10/11/2023
   author: mjosephym
@@ -12,12 +12,23 @@ metadata:
   ms.service: defender-for-iot
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-design-network-diagram.md)]
+  [!include[](includes/3-examine-network-diagram.md)]
 
 quiz:
 
   questions:
-  
+  - content: "Figure one depicts a sample network diagram. Where might you place a sensor to mirror communication from PLCs and HMIs?"
+    choices:
+    - content: "Point C"
+      isCorrect: false
+      explanation: "Point C is a good place to mirror industrial perimeter network data, not PLC and HMI information."
+    - content: "Point D"
+      isCorrect: false
+      explanation: "While you can mirror PLC and HMI information from point D, point E allows you to mirror PLC and HMI information from both zones at once."
+    - content: "Point E"
+      isCorrect: true
+      explanation: "Point E allows you to mirror PLC and HMI information from both Zone 1 and Zone 2 rather than just one of the two zones."  
+
   - content: "What can your network diagram help you determine?"
     choices:
     - content: "The most interesting traffic for security and operational risks."
