@@ -1,5 +1,5 @@
 <!-- where should this unit go, here or after the fine tune exercise?-->
-<!-- also re read and make adjustments, also where will the items needed in thee xercise unit be explained? THey should be here somewhere in the doc. -->
+<!-- also re read and make adjustments, also where will the items needed in the exercise unit be explained? THey should be here somewhere in the doc. -->
 
 To complete the fine tuning and calibration of the sensors, Microsoft Defender for IoT now enters a *Learning* mode. Defender for IoT builds a baseline of alerts to help it learn which type of alerts are important or critical and which are less. Over a limited time period, Defender for IoT learns to automatically recognize alerts that can affect the security of your devices. At the end of this period, Defender for IoT enters the regular *operational* mode.
 
@@ -29,7 +29,7 @@ Even in the *operation* mode, new inaccurate alerts might be generated, and you 
 
 The best way to create the alert baseline is following the triage process. <!-- not sure about this, is there a better way to describe this? I think that the following is the triage process, even though I am not sure it is properly spelt out as a process in the article "how to view alerts" I suggest listing the steps of triage, and then numbering the heading to make the process clear to the reader -->
 
-This process is:
+The process is:
 
 1. Filter the alerts - by time, severity or other parameter.
 1. Group alerts - a different filter option based on the groups created in the device map or inventory sections. (Although we haven't mentioned this properly)

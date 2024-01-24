@@ -1,9 +1,7 @@
-Your sensor can now send data to Microsoft Defender for IoT, but you need to make some final checks to make sure that the system runs as it was originally planned. You need to check that all the planned devices are correctly listed and that they're configured properly in the system. 
+Your sensor can now send data to Microsoft Defender for IoT, but you need to make some final checks to ensure that the system runs as it was originally planned. You need to check that all the planned devices are correctly listed and that they're configured properly in the system. 
 
 <!--You need to check that the devices listed match the ones listed in your network plan. Then check the settings of each device and ensure that they're configured properly.
-
 When Defender for IoT first receives data from each device it automatically defines their settings, sometimes these settings might be incorrect. You must check each device and in some cases you have to adjust and correct the settings. -->
-
 Once these checks are complete, you have a full and accurate list of devices that are set up correctly and can now securely process data.
 
 ## OT sensor deployment path
@@ -24,7 +22,7 @@ Using Defender for IoT, compare the list of devices displayed for each sensor wi
 
 ### Fine-tune your sensor subnets
 
-Once you know that all of the devices are properly connected to Defender for IoT, you must check that the settings for each device are assigned correctly. Defender for IoT initially, automatically, assigns settings for each device. Most of the time these are correct, however, they must all be checked and in some cases you need to update and change these settings. These checks ensure that data is processed correctly, and the proper alerts are created. If the settings are left incorrect, this results in false alerts being sent, and could leave other vulnerabilities on your devices unsecured, which could compromise your most critical assets. Devices are also set to different safety or importance levels, which affect attack vector and risk assessment reports.
+Once you know that all of the devices are properly connected to Defender for IoT, you must check that the settings for each device are assigned correctly. Defender for IoT automatically assigns settings for each device. Most of the time these settings are correct, however, they must all be checked and in some cases you need to update and change them. These checks ensure that data is processed correctly, and the proper alerts are created. If the settings are left incorrect, this results in false alerts being sent, and could leave other vulnerabilities on your devices unsecured, which could compromise your most critical assets. Devices are also set to different safety or importance levels, which affect attack vector and risk assessment reports.
 
 <!-- What are managed and unmanaged devices?  check that all the assigned settings are correct. -->
 
