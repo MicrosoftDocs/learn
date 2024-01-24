@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-identities-microsoft-entra-id.what-is-microsoft-entra-id
+title: What is Microsoft Entra ID?
+metadata:
+  title: What is Microsoft Entra ID?
+  description: "What is Microsoft Entra ID?"
+  ms.date: 01/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-what-is-microsoft-entra-id.md)]

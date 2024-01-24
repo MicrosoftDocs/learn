@@ -4,10 +4,10 @@ title: Secure groups in Microsoft Entra ID
 metadata:
   title: Secure groups in Microsoft Entra ID
   description: "Manage users with Azure AD groups"
-  ms.date: 12/27/2023
+  ms.date: 01/24/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-microsoft-entra-id-groups.md)]
+  [!include[](includes/4-microsoft-entra-id-groups.md)]

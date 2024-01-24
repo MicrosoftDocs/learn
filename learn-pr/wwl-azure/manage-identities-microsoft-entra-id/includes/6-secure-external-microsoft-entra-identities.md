@@ -37,10 +37,10 @@ Currently, B2B direct connect enables the Teams Connect shared channels feature,
 
 You use cross-tenant access settings to manage trust relationships with other Microsoft Entra organizations and define inbound and outbound policies for B2B direct connect.
 
-## Azure AD B2C
+## Microsoft Entra B2C
 
-Azure AD B2C is a Customer Identity and Access Management (CIAM) solution that lets you build user journeys for consumer- and customer-facing apps. If you're a business or individual developer creating customer-facing apps, you can scale to millions of consumers, customers, or citizens by using Microsoft Entra B2C. Developers can use Microsoft Entra B2C as the full-featured CIAM system for their applications.
+Microsoft Entra B2C is a Customer Identity and Access Management (CIAM) solution that lets you build user journeys for consumer- and customer-facing apps. If you're a business or individual developer creating customer-facing apps, you can scale to millions of consumers, customers, or citizens by using Microsoft Entra B2C. Developers can use Microsoft Entra B2C as the full-featured CIAM system for their applications.
 
-With Microsoft Entra B2C, customers can sign in with an identity they've already established (like Facebook or Gmail). You can completely customize and control how customers sign up, sign in, and manage their profiles when using your applications.<br>
+With Microsoft Entra B2C, customers can sign in with an identity they've already established (like Social Networks or Public Cloud Platforms). You can completely customize and control how customers sign up, sign in, and manage their profiles when using your applications.<br>
 
 Although Microsoft Entra B2C is built on the same technology as Microsoft Entra External ID, it's a separate service with some feature differences.
