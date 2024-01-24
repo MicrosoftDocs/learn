@@ -28,7 +28,7 @@ Define a parameter on the `Counter` component to specify how much it increments 
 
 1. Add a public property for `IncrementAmount` with a `[Parameter]` attribute.
 
-1. Change the `IncrementCount` method to use the `IncrementAmount` when incrementing the value of `currentCount`.
+1. Change the `IncrementCount` method to use the `IncrementAmount` value when incrementing the value of `currentCount`.
 
     The updated code in *Counter.razor* should look like this:
 
@@ -57,7 +57,7 @@ Define a parameter on the `Counter` component to specify how much it increments 
     }
     ```
 
-1. In `Home.razor`, update the `<Counter>` element to add an `IncrementAmount` attribute that changes the increment amount to 10, as shown by the last line in the following code:
+1. In `Home.razor`, update the `<Counter />` element to add an `IncrementAmount` attribute that changes the increment amount to 10, as shown by the last line in the following code:
 
     ```razor
     @page "/"
@@ -75,4 +75,4 @@ Define a parameter on the `Counter` component to specify how much it increments 
 
     ![Home page with Counter update.](../media/counter-homepage-modify.png)
 
-    The `Counter` component (`Counter.razor`) at `/counter` continues to increment by one.
+    The `Counter` component at `/counter` continues to increment by one.

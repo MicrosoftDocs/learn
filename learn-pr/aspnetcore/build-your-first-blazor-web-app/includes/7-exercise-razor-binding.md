@@ -1,4 +1,4 @@
-In this exercise, we add a basic to-do list page to our Blazor app.
+In this exercise, we use everything we've learned so far to add a basic to-do list page to our Blazor app.
 
 ## Create the to-do list page
 
@@ -15,9 +15,9 @@ In this exercise, we add a basic to-do list page to our Blazor app.
     The `-n|--name` option in the preceding command specifies the name of the new Razor component. The new component is created in the project's `Components/Pages` folder with the `-o|--output` option.
 
     > [!IMPORTANT]
-    > Razor component file names require a capitalized first letter so they can easily be distinguished from other HTML elements.
+    > Razor component file names should have a capitalized first letter so they can easily be distinguished from other HTML elements.
 
-1. Open the `Todo` component and add an `@page` Razor directive to the top of the file with a relative URL of `/todo` and set the render mode to `InteractiveServer`.
+1. Open the `Todo` component and add an `@page` Razor directive to the top of the file with a relative URL of `/todo`, and set the render mode to `InteractiveServer` so the component can handle UI events.
 
     ```cshtml
     @page "/todo"
@@ -34,7 +34,7 @@ In this exercise, we add a basic to-do list page to our Blazor app.
 
 ## Add the Todo page to the nav menu
 
-The new to-do list page should appear in the nav menu with the other existing pages. The nav menu is defined in the `NavMenu` component, which is part of the app's layout.
+The new to-do list page doesn't yet appear in the nav menu with the other existing pages. The nav menu is defined in the `NavMenu` component, which is part of the app's layout. Let's update the `NavMenu` component to add a link to the to-do list page.
 
 1. Open *Components/Layout/NavMenu.razor*.
 
@@ -56,7 +56,7 @@ The new to-do list page should appear in the nav menu with the other existing pa
 
 ## Build a list of to-do items
 
-1. Create a new `TodoItem.cs` in the root of the project with the following C# class.
+1. Create a new `TodoItem.cs` file at the root of the project with the following C# class.
 
     ```csharp
     namespace BlazorApp;
@@ -91,7 +91,7 @@ The new to-do list page should appear in the nav menu with the other existing pa
 
 ## Add to-do items
 
-Let's add some UI elements to add to-do items to our list.
+Let's add some UI elements for adding to-do items to our list.
 
 1. In *Todo.razor* add an `input` tag and a `button` below the unordered list.
 
@@ -133,7 +133,7 @@ Let's add some UI elements to add to-do items to our list.
     }
     ```
 
-1. Check that you can now add to-do items and they show up in the list.
+1. Check that you can now add to-do items and they show up in the list. The `input` value should also reset after adding each to-do item.
 
 ## Add checkboxes and count incomplete to-do items
 

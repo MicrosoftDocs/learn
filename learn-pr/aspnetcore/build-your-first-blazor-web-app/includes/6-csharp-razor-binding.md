@@ -2,13 +2,13 @@ You now know the basics of creating and using Blazor components in Razor files. 
 
 ## Render C# expression values
 
-When you want to render the value of a C# expression in Razor, you use a leading `@` character. That's how the `Counter` component renders the `currentCount` value:
+When you want to render the value of a C# expression in Razor, you use a leading `@` character. That's how the `Counter` component renders the `currentCount` value.
 
 ```razor
 <p role="status">Current count: @currentCount</p>
 ```
 
-Razor can typically figure out when a C# expression ends and you've transitioned back to writing HTML. But you can also be explicit about the beginning and ending of the expression using parens:
+Razor can typically figure out when a C# expression ends and you've transitioned back to writing HTML. But you can also be explicit about the beginning and ending of the expression using parens.
 
 ```razor
 <p role="status">Current count: @(currentCount)</p>
@@ -16,7 +16,7 @@ Razor can typically figure out when a C# expression ends and you've transitioned
 
 ## Add control flow
 
-You can add control flow to your component rendering logic using normal C# statements. For example, you can conditionally render some content using like this:
+You can add control flow to your component rendering logic using normal C# statements. For example, you can conditionally render some content using a C# if-statement, like this:
 
 ```razor
 @if (currentCount > 3)
@@ -25,7 +25,7 @@ You can add control flow to your component rendering logic using normal C# state
 }
 ```
 
-You can also use C# to loop over data to render a list of items:
+You can also use C# to loop over data and render a list of items:
 
 ```razor
 <ul>
@@ -38,7 +38,7 @@ You can also use C# to loop over data to render a list of items:
 
 ## Handle events
 
-We've already seen one example of an event handler in the `Counter` component. The `Counter` button has an `@onclick` event handler that points to the `IncrementCount` method:
+Blazor components often handle UI events. We've already seen one example of an event handler in the `Counter` component. The `Counter` button has an `@onclick` event handler that points to the `IncrementCount` method:
 
 ```razor
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
@@ -66,7 +66,7 @@ Event handler methods can optionally take an event argument with information abo
 }
 ```
 
-After an event handler runs, Blazor will automatically render the component with its new state, so the message is displayed after the input is changed.
+After an event handler runs, Blazor will automatically render the component with its new state, so the message is displayed after the input changes.
 
 ## Data binding
 

@@ -20,7 +20,7 @@ To create a new Blazor web app project in Visual Studio Code with the C# Dev Kit
 
 1. Name the project **BlazorApp** and press **Enter** to confirm.
 
-1. In Visual Studio Code with the C# Dev Kit, the **Solution Explorer** loads with a project view of the new Blazor app.
+1. View your new Blazor app project in the **Solution Explorer**.
 
 ## Optional: Create a new Blazor app with the .NET CLI
 
@@ -63,6 +63,8 @@ Whether you created the Blazor app with Visual Studio Code or the .NET CLI, the 
 
     This command builds and starts the app, and then applies any code changes to the running app. The app should automatically open in your default browser. Your browser might warn you that the site doesn't yet have a valid certificate; it's safe to proceed.
 
+You've successfully run your first Blazor app!
+
 ::: zone-end
 
 ::: zone pivot="vstudio"
@@ -98,8 +100,6 @@ To create a new Blazor web app using Visual Studio:
     - Interactivity location: Per page/component
 
    ![Screenshot of Visual Studio 2022 additional information screen for the Blazor project.](../media/visual-studio-2022-additional-information.png)
-
-1. Select **Create** to create a basic Blazor project with all required files and pages.
 
 Your project is created and loaded in Visual Studio. Take a look at the contents of your project using **Solution Explorer**.
 
