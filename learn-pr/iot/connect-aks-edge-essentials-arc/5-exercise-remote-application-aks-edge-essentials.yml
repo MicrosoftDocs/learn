@@ -1,7 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.connect-aks-edge-essentials-arc.exercise-remote-application-aks-edge-essentials
 title: Exercise - Deploy a sample application to the cluster with GitOps and Flux
-sandbox: true
 metadata:
   title: Exercise - Deploy a sample application to the cluster with GitOps and Flux
   description: This content is a part of Connect your Azure Kubernetes Service (AKS) Edge Essentials cluster to Azure Arc.

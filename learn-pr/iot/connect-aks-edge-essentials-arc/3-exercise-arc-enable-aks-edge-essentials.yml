@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.connect-aks-edge-essentials-ar.exercise-arc-enable-aks-edge-essentials
 title: Exercise - Arc-Enable AKS Edge Essentials cluster
-sandbox: true
-interactive: bash
 metadata:
   title: Exercise - Arc-Enable AKS Edge Essentials cluster
   description: This content is a part of Connect your Azure Kubernetes Service (AKS) Edge Essentials cluster to Azure Arc.
