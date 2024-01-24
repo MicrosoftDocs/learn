@@ -11,7 +11,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path_from_root": "/learn-pr/process-translate-speech-azure-cognitive-speech-services/index.md",
+      "source_path_from_root": "/learn-pr/paths/process-translate-speech-azure-cognitive-speech-services/index.md",
       "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
       "redirect_document_id": false
     },
@@ -63,16 +63,6 @@
     {
       "source_path": "create-manage-cognitive-services/7-summary.yml",
       "redirect_url": "/training/modules/create-manage-ai-services/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/paths/provision-manage-azure-cognitive-services/index.md",
-      "redirect_url": "/training/paths/get-started-azure-ai/",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "learn-pr/paths/process-translate-speech-azure-cognitive-speech-services/index.md",
-      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
       "redirect_document_id": false
     }
   ]
