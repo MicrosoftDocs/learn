@@ -1,0 +1,79 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/learn-pr/paths/prepare-for-ai-engineering/index.md",
+      "redirect_url": "/training/paths/get-started-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/provision-manage-azure-cognitive-services/index.md",
+      "redirect_url": "/training/paths/get-started-azure-ai/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/process-translate-speech-azure-cognitive-speech-services/index.md",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/process-translate-text-azure-cognitive-services/index.md",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "create-manage-cognitive-services/index.md",
+      "redirect_url": "/training/modules/create-manage-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "create-manage-cognitive-services/1-introduction.yml",
+      "redirect_url": "/training/modules/create-manage-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "create-manage-cognitive-services/2-create-cognitive-service-resource.yml",
+      "redirect_url": "/training/modules/create-manage-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/create-manage-cognitive-services/3-keys.yml",
+      "redirect_url": "/training/modules/create-manage-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/create-manage-cognitive-services/4-use-rest.yml",
+      "redirect_url": "/training/modules/create-manage-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/create-manage-cognitive-services/5-use-sdk.yml",
+      "redirect_url": "/training/modules/create-manage-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/create-manage-cognitive-services/5a-exercise-cognitive-services.yml",
+      "redirect_url": "/training/modules/create-manage-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/create-manage-cognitive-services/6-knowledge-check.yml",
+      "redirect_url": "/training/modules/create-manage-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/create-manage-cognitive-services/7-summary.yml",
+      "redirect_url": "/training/modules/create-manage-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/provision-manage-azure-cognitive-services/index.md",
+      "redirect_url": "/training/paths/get-started-azure-ai/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/paths/process-translate-speech-azure-cognitive-speech-services/index.md",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    }
+  ]
+}
