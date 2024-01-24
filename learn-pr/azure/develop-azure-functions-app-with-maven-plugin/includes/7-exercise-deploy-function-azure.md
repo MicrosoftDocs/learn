@@ -1,10 +1,10 @@
-Now that you've learned how to create and deploy functions to Azure, it's time to put the theory into practice.
+Now that you learned how to create and deploy functions to Azure, it's time to put the theory into practice.
 
-In this exercise, you'll learn how to configure your function for deployment to Azure Functions. Then you'll use Maven to deploy your function, and then you'll test your function in the cloud.
+In this exercise, you learn how to configure your function for deployment to Azure Functions. Then you use Maven to deploy your function, and test your function in the cloud.
 
 ## Configure your function project for deployment
 
-There are a few changes that need to be made to your function application before it can be deployed to Azure, and the following steps will walk you updating your project for deployment.
+There are a few changes that need to be made to your function application before it can be deployed to Azure. The following steps walk you through updating your project for deployment.
 
 1. Determine the region for your sandbox resource group:
 
@@ -14,8 +14,8 @@ There are a few changes that need to be made to your function application before
         az group show --name "<rgn>[sandbox resource group name]</rgn>" | jq -r '.location'
         ```
 
-    1. Copy the name of the region that is displayed; you will use that region in the following steps.
-    
+    1. Copy the name of the region that is displayed for use in the following steps.
+
 1. Edit your *pom.xml* file to update the settings:
 
     1. In the Azure Cloud Shell, change to the root folder for your application. For example:
@@ -29,7 +29,7 @@ There are a few changes that need to be made to your function application before
         ```bash
         code pom.xml
         ```
-    
+
     1. Locate the following artifact ID:
 
         ```xml
@@ -52,7 +52,7 @@ There are a few changes that need to be made to your function application before
 
 ## Deploy your Azure Function
 
-Now that you have configured your function for deployment, your next step is to deploy it to Azure Functions.
+Now that your function is configured for deployment, your next step is to deploy it to Azure Functions.
 
 1. In the Azure Cloud Shell, change to the root folder for your application. For example:
 
@@ -66,7 +66,7 @@ Now that you have configured your function for deployment, your next step is to 
     mvn clean package azure-functions:deploy
     ```
 
-    Maven will display a running status of the deployment. For example:
+    Maven displays a running status of the deployment. For example:
 
     ```output
     [INFO] Scanning for projects...
@@ -96,7 +96,7 @@ Now that you have configured your function for deployment, your next step is to 
 
 ## Retrieving your Azure Function URL using the portal
 
-You will recall from the exercise that you completed in a previous unit, you were required to create the URL to test your function in a web browser. However, there is a much easier method to retrieve the URL for your Azure Function by using the Azure portal. To do so, use the following steps.
+Recall that in the exercise you completed in a previous unit, you were required to create the URL to test your function in a web browser. However, there's an easier method to retrieve the URL for your Azure Function by using the Azure portal. To do so, use the following steps.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account that you used to activate the sandbox.
 
@@ -108,21 +108,21 @@ You will recall from the exercise that you completed in a previous unit, you wer
     event-reporting-20200102030405006
     ```
 
-   Note that this is the same `function app` name that was reported in the deployment response earlier in this exercise.
+   This `function app` name is the same one that was reported in the deployment response earlier in this exercise.
 
-1. Expand the **Functions** list, the select your **HttpExample** function. This will show you the *function.json* file for you function.
+1. Expand the **Functions** list, and select your **HttpExample** function. This shows you the *function.json* file for your function.
 
-1. At the top of the function page, select **</> Get function URL**. This will allow you to copy the fully-constructed URL of your function. For example:
+1. At the top of the function page, select **</> Get function URL**. This menu option allows you to copy the fully constructed URL of your function. For example:
 
     ```
     https://event-reporting-20200102030405006.azurewebsites.net/api/HttpExample
     ```
 
-    You'll use this URL in the next section of this exercise.
+    You use this URL in the next section of this exercise.
 
 ## Test your Azure Function in the portal
 
-Now that you have deployed your function to Azure, all that is necessary to test your function in a web browser is to append a query string to the end of the URL as you have done in previous exercises.
+Now that you deployed your function to Azure, all that is necessary to test your function in a web browser is to append a query string to the end of the URL as you did in previous exercises.
 
 1. Construct the URL for your function's API:
 
@@ -138,11 +138,11 @@ Now that you have deployed your function to Azure, all that is necessary to test
         https://event-reporting-20200102030405006.azurewebsites.net/api/HttpExample?name=Bob
         ```
 
-    1. Copy this fully-constructed URL for use in the following steps.
+    1. Copy this fully constructed URL for use in the following steps.
 
-1. Open a new tab in your web browser, and paste the fully-constructed URL from the previous steps into the address field.
+1. Open a new tab in your web browser, and paste the fully constructed URL from the previous steps into the address field.
 
-1. When you instruct your web browser to request the URL, you will see a plaintext message returned to your web browser that is personalized for the name you passed in the query string. For example:
+1. When you instruct your web browser to request the URL, you see a plaintext message returned to your web browser that is personalized for the name you passed in the query string. For example:
 
     ```output
     Hello, Bob
