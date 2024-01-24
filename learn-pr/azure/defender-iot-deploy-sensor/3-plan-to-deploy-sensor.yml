@@ -9,6 +9,6 @@ metadata:
   ms.author: lwainstein
   ms.topic: interactive-tutorial
   ms.service: defender-for-iot
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/3-plan-to-deploy-sensor.md)]
