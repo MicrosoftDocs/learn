@@ -31832,8 +31832,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/3-exercise-configure-environment.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/3-exercise-configure-enviromnent",
+      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/3-exercise-configure-enviromnent.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/3-exercise-configure-environment",
       "redirect_document_id": true
     },
     {
@@ -31848,12 +31848,12 @@
     },
     {
       "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/6-csharp-razor-binding.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/6-csharp-razor-binding",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/6-data-binding",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/7-exercise-razor-binding.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/7-exercise-razor-binding",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/7-exercise-data-binding",
       "redirect_document_id": true
     },
     {
