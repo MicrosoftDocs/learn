@@ -46,10 +46,10 @@ Select any of the interfaces that you've connected to your switch.
 <!--is this only if you are close to the sensor? How would this work for a cloud sensor?-->
 There are optional, advanced settings for each interface, as follows:
 
-    |Name  |Description  |
-    |---------|---------|
-    |**Mode**| Select one of the following: </br>- SPAN Traffic (no encapsulation) to use the default SPAN port mirroring.</br> - ERSPAN if you're using ERSPAN mirroring.|
-    |**Description**| Enter an optional description for the interface. These descriptions may be helpful in understanding the purpose of each interface.|
+|Name  |Description  |
+|---------|---------|
+|**Mode**| Select one of the following: </br>- SPAN Traffic (no encapsulation) to use the default SPAN port mirroring.</br> - ERSPAN if you're using ERSPAN mirroring.|
+|**Description**| Enter an optional description for the interface. These descriptions may be helpful in understanding the purpose of each interface.|
 
 ### Activation tab
 
@@ -58,7 +58,7 @@ In the **Activation** tab upload the activation file, provided by the deployment
 ### Certificates tab
 
 In the **Certificates** tab, define<!--upload?--> the SSL/TLS certificate settings. It's best practice to use a CA-signed certificate that is more secure, however in our test environment the self-signed certificate is secure enough.
-<!-- should there be any more added about how to make a certificate or is this enough? There is this section / For more information on creating a certificate see defender-for-iot/organizations/how-to-manage-individual-sensors?branch=main&tabs=self-signed#manage-ssltls-certificates , but it seems a lot to add that in here, what is the expectation that they will have these? we also dont link to outside pages, so this shouldnt be linked to. -->
+<!-- should there be any more added about how to make a certificate or is this enough? There is this section / For more information on creating a certificate see defender-for-iot/organizations/how-to-manage-individual-sensors?branch=main&tabs=self-signed#manage-ssltls-certificates , but it seems a lot to add that in here, what is the expectation that they will have these? we also dont link to outside pages, so this shouldnt be linked to? -->
 <!-- is this uploaded here, what is the procedure? -->
 <!-- so really i presume that the certificate should be provided and mentioned in the intro? or is this user supposed to make one? -->
 

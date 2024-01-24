@@ -1,10 +1,10 @@
 This unit describes how to download the OT monitoring software from the Defender for IoT site. Then upload the software to a virtual machine and start the application on the sensor. Afterwards, configure the network settings so that the sensor can connect with the Azure portal. Finally, assign the end point interfaces, activate the sensor and set up the security certificates.
 
-1. **Configure firewall so that the sensor can connect to Azure**
+## Configure firewall to allow the sensor to connect to Azure
 
-    <!--previous module add after download activation file - save list of endpoints-->
+<!--previous module add after download activation file - save a list of all the endpoints-->
 
-    Configure your firewall rules so that your sensor can access the cloud on port 443, and connect to each of the listed endpoints in the downloaded list.
+Configure your firewall rules so that your sensor can access the cloud on port 443, and connect to each of the listed endpoints in the downloaded list.
 <!-- Cat has said to use H2 headings as we did in unit 3. But I used numbering as we did in LM3, as per Batami (i think), I have changed it but I am not sure how this applies to uniformity between modules? THe other difference is there are more steps here? -->
 
 ## Install Defender for IoT software
@@ -13,32 +13,36 @@ To start the software installation, open your virtual machine.
 
 ### Configure the virtual machine
 
-    The virtual machine must have two network adapters configured, one that connects to the Azure portal, and the other to the traffic mirroring ports on the sensor.
+The virtual machine must have two network adapters configured, one that connects to the Azure portal, and the other to the traffic mirroring ports on the sensor.
 
-    On your virtual machine:
+On your virtual machine:
 
-        1. Open the VM settings
-        1. Add two new network adaptors, give each a significant name so they're easily identifiable, such as:
-            - **Azure network adapter** - to connect to the Azure portal
-            - **Mirroring port adapter** - to connect to the sensor mirroring port
+1. Open the VM settings
+1. Add two new network adaptors, give each a significant name so they're easily identifiable, such as:
+    - **Azure network adapter** - to connect to the Azure portal
+    - **Mirroring port adapter** - to connect to the sensor mirroring port
 
 ### Download the monitoring software file
 
-In Defender for IoT select **Getting started > Sensor**, then select the software version 
-<!-- what are the software names - can i copy a name from the Jenkins list of software? --> and select **Download**.
+In Defender for IoT select **Getting started > Sensor**, then select the software version and select **Download**.
+<!-- what are the software names - can i copy a name from the Jenkins list of software? -->
 
-Save the ISO file to a safe location on your computer, so that it can be uploaded to the virtual machine. 
+Save the ISO file to a safe location on your computer, so that it can be uploaded to the virtual machine.
 <!-- [Is this correct? can it be saved directly to the virtual machine?]-->
 
 ### Install the monitoring software on the virtual machine
 
-On the virtual machine, use the system specific application for mounting the ISO file onto the machine. In this scenario, we're using the iLO for HPE machines. <!-- is this written correctly? -->
+On your virtual machine:
 
-The installation boots and a wizard opens, for example:
+1. Mount the ISO file onto the virtual machine using the system specific application. In this scenario, we're using the iLO for HPE machines. <!-- is this written correctly? -->
 
-:::image type="content" source="../media/4-iot-iso-boot.png" alt-text="Screenshot of the installation wizard for mounting the ISO file on the OT sensor virtual machine":::
+    The installation boots and a wizard opens, for example:
 
-Select **Install iot-sensor_23.1.1.75399077**. The installation process takes 20-30 minutes. When completed the default network details are shown. While the default IP, subnet, and gateway addresses are identical with each installation, the UID is unique for each appliance. For example:
+    :::image type="content" source="../media/4-iot-iso-boot.png" alt-text="Screenshot of the installation wizard for mounting the ISO file on the OT sensor virtual machine":::
+
+1. Select **Install iot-sensor_23.1.1.75399077**.
+
+    The installation process takes 20-30 minutes. When completed the default network details are shown. While the default IP, subnet, and gateway addresses are identical with each installation, the UID is unique for each appliance. For example:
   
     ```bash
     IP: 192.168.0.101, 
@@ -47,21 +51,22 @@ Select **Install iot-sensor_23.1.1.75399077**. The installation process takes 20
     UID: 91F14D56-C1E4-966F-726F-006A527C61D
     ```
 
-The IP address is needed to access the sensor for initial setup and activation.
+    The IP address is needed to access the sensor for initial setup and activation.
 
 ### Define network settings
 
-Open a browser in the virtual machine, enter the IP address given at the end of the sensor installation, ```192.168.0.101```. The initial sign-in page appears, for example:
+Open a browser in the virtual machine.
 
-:::image type="content" source="../media/4-console-sign-in-page.png" alt-text="Screenshot of sensor console sign in":::
+1. Enter the IP address given at the end of the sensor installation, ```192.168.0.101```. The initial sign-in page appears, for example:
 
-    Enter the following credentials and select Login:
+    :::image type="content" source="../media/4-console-sign-in-page.png" alt-text="Screenshot of sensor console sign in":::
+1. Enter the following credentials:
 
     Username: ```admin```
     Password: ```admin```
+1. Select Login.
+1. Define a new password for the admin user, containing lowercase and uppercase alphabetic characters, numbers and symbols.<!-- not sure we really need this? Although it is important , it isnt the direct part of the process? What do you think?-->
 
-    Define a new password for the admin user, containing lowercase and uppercase alphabetic characters, numbers and symbols.<!-- not sure we really need this? Although it is important , it isnt the direct part of the process? What do you think?-->
-<!-- what login credentials are to be used? -->
 ## Activate and initial setup
 
 The **Defender for IoT | Overview** page opens to the **Management interface** tab.
@@ -85,21 +90,32 @@ When you're done, select **Next: Interface configurations** to continue.
 
 ### Interface configurations tab
 <!-- should the content of the next 3 sections be numbered as a procedure or are they too short?-->
-The Interface configurations tab shows all of the interfaces detected by the sensor. In the **Interface Configurations** tab, choose the interface to be monitored by setting the toggle button to **Enable**.
+The Interface configurations tab shows all of the interfaces detected by the sensor.
 
-Select **Save** to save your changes.
+In the **Interface Configurations** tab:
 
-Select **Next: Reboot >** to continue, and then **Start reboot** to reboot your sensor machine.
+1. Choose the interface to be monitored by setting the toggle button to **Enable**.
+1. Select **Save** to save your changes.
+1. Select **Next: Reboot >** to continue.
+1. Select **Start reboot** to reboot your sensor machine.
 
 ### Activation tab
 
-After rebooting, the virtual machine opens to the **Defender for IoT | Overview** page. In the **Activation** tab, select **Upload** and add the activation file. Select the **Terms and Condition** option and then select **Next:Certificates**.
+The activation tab is the section to upload the activation file recieved from the Deployment team.
+
+After rebooting, the virtual machine opens to the **Defender for IoT | Overview** page. In the **Activation** tab:
+
+1. Select **Upload** and add the activation file.
+1. Select the **Terms and Condition** option.
+1. Select **Next:Certificates**.
 
 ### Certificates tab
 
-In the **Certificates** tab, select **Use Locally generated self-signed certificate (Not recommended)**, and then select the **Confirm** option.
+In the **Certificates** tab:
 
-Finally, select **Finish** to complete the initial setup and open the sensor.
+1. Select **Use Locally generated self-signed certificate (Not recommended)**.
+1. Select the **Confirm** option.
+1. Finally, select **Finish** to complete the initial setup and open the sensor.
 
 ## Check your work
 
