@@ -11,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-csharp-razor-binding.md)]
+  [!include[](includes/6-data-binding.md)]

@@ -11,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/7-exercise-razor-binding.md)]
+  [!include[](includes/7-exercise-data-binding.md)]
