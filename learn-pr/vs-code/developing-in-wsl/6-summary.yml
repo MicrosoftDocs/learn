@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: "Recap of purpose and benefits of integrating WSL with VS Code."
   ms.date: 11/28/2023
-  author: gpena
-  ms.author: gpena
+  author: gwynethp
+  ms.author: gwynethp
   ms.topic: unit
 durationInMinutes: 1
 content: |

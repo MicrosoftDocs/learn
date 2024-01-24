@@ -5,8 +5,8 @@ metadata:
   title: Setting up the WSL Extension for Visual Studio Code
   description: "Install the WSL Extension for Visual Studio Code and understand its basic usage."
   ms.date: 11/28/2023
-  author: gpena
-  ms.author: gpena
+  author: gwynethp
+  ms.author: gwynethp
   ms.topic: unit
 durationInMinutes: 5
 content: |

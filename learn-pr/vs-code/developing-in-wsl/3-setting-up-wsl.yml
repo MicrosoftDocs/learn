@@ -5,8 +5,8 @@ metadata:
   title: Setting up WSL
   description: "Learn how to install the Windows Subsystem for Linux on your Windows machine."
   ms.date: 11/28/2023
-  author: gpena
-  ms.author: gpena
+  author: gwynethp
+  ms.author: gwynethp
   ms.topic: unit
 durationInMinutes: 5
 content: |

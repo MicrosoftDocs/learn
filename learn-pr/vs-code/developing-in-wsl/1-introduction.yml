@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: "Introduction to the Windows Subsystem for Linux and example its benefits with using alongside Visual Studio Code."
   ms.date: 11/28/2023
-  author: gpena
-  ms.author: gpena
+  author: gwynethp
+  ms.author: gwynethp
   ms.topic: unit
 durationInMinutes: 2
 content: |

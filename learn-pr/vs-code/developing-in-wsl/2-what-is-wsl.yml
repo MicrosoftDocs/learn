@@ -5,8 +5,8 @@ metadata:
   title: What is the Windows Subsystem for Linux
   description: "The definition and purpose of the Windows Subsystem for Linux."
   ms.date: 11/28/2023
-  author: gpena
-  ms.author: gpena
+  author: gwynethp
+  ms.author: gwynethp
   ms.topic: unit
 durationInMinutes: 3
 content: |
