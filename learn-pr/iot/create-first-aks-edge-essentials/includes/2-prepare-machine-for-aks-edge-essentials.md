@@ -15,7 +15,7 @@ Here, you will learn how to prepare your machine and define the amount of CPU an
 
 For developer and training use cases, you can run AKS Edge Essentials in an Azure Virtual Machine (VM). You can create a Windows VM with either Windows 10/11 IoT Enterprise/Enterprise/Pro or (Server / Server IoT) 2019/2022, on a VM image that supports nested virtualization.
 
-In our example scenario, we will use a Windows 11 Enterprise [Dsv3-series](/azure/virtual-machines/dv3-dsv3-series) Azure VM.
+In our example scenario, we will use a Windows 11 Enterprise [Dsv5-series](/azure/virtual-machines/dv5-dsv5-series) Azure VM.
 
 ## Clusters and nodes
 
