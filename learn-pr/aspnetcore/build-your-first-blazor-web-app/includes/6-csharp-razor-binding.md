@@ -94,7 +94,7 @@ Razor directives are reserved keywords in Razor syntax that influence how a Razo
 
 To handle UI events from a component and to use data binding, the component must be *interactive*. By default, Blazor components render statically from the server, which means they generate HTML in response to requests and are otherwise unable to handle UI events. You make a component interactive by applying an interactive render mode using the `@rendermode` directive.
 
-You can apply the `@rendermode` directive to a component definiton:
+You can apply the `@rendermode` directive to a component definition:
 
 ```razor
 @rendermode InteractiveServer

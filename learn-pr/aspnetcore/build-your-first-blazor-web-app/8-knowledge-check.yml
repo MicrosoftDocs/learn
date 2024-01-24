@@ -54,7 +54,7 @@ quiz:
     - content: "A C# property"
       isCorrect: false
       explanation: "Razor files are compiled into C# classes, not C# properties."
-  - content: "How are Blazor component parameters are defined?"
+  - content: "How are Blazor component parameters defined?"
     choices:
     - content: "Using constructor parameters."
       isCorrect: false
@@ -81,12 +81,12 @@ quiz:
       explanation: "The @page Razor directive is used to add routes to a component."
     - content: "@currentCount"
       isCorrect: true
-      explanation: "There is no @currentCount Razor directive - it's a rendered C# expression."
+      explanation: "There's no @currentCount Razor directive - it's a rendered C# expression."
   - content: "True or False: Blazor components are interactive (can handle UI events) by default?"
     choices:
     - content: "True"
       isCorrect: false
-      explanation: "Blazor components are statically rendered by default and are not interactive until you apply an interactive render mode using the @rendermode Razor directive." 
+      explanation: "Blazor components are statically rendered by default and aren't interactive until you apply an interactive render mode using the @rendermode Razor directive." 
     - content: "False"
       isCorrect: true
-      explanation: "Blazor components are statically rendered by default and are not interactive until you apply an interactive render mode using the @rendermode Razor directive."
+      explanation: "Blazor components are statically rendered by default and aren't interactive until you apply an interactive render mode using the @rendermode Razor directive."
