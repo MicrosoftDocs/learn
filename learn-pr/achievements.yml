@@ -2307,6 +2307,16 @@ achievements:
   title: Choose the best AI service for your needs
   summary: Examine Azure's AI services, and choose the right one for your company.
   iconUrl: /training/achievements/ai-machine-learning-fundamentals.svg
+- uid: learn.wwl.prepare-for-ai-engineering.trophy
+  type: trophy
+  title: Prepare for AI engineering
+  summary: AI Engineers design and develop intelligent solutions that encapsulate artificial intelligence (AI) capabilities. As an aspiring Azure AI Engineer, it's important to understand some of the key foundational concepts on which AI is based, and the various services in Microsoft Azure that you can use to build AI solutions.
+  iconUrl: /training/achievements/ai-prepare-for-engineering.svg
+- uid: learn.wwl.process-translate-speech-azure-cognitive-speech-services.trophy
+  type: trophy
+  title: Process and Translate Speech with Azure AI Speech Services
+  summary: Learn how to develop speech-enabled applications by using the Speech service.
+  iconUrl: /training/achievements/process-translate-speech-azure-cognitive-speech-services.svg
 - uid: learn.azure.azure-devops-devtest-labs.badge
   type: badge
   title: Choose the best tools to help organizations build better solutions
