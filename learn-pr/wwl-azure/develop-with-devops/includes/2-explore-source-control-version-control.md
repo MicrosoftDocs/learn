@@ -2,7 +2,7 @@ The use of source and version control is a fundamental DevOps practice. It is al
 
 ## Source control and version control
 
-The terms *source control* and *version control* are often used interchangeably, and in many contexts, they refer to the same concept. In general, both of them are associated with the practice of managing changes to code in a shared development environment. However, you might encounter more nuanced scenarios in which their meaning is slightly different. In these scenarios, *source control* designates a system that manages changes to source code files while *version control* includes change management of any file type for purposes that extend beyond source code alone. Going forward, for the consistency's sake, we'll be using the term *version control* to represent Git-based collaborative software repositories available in GitHub and Azure DevOps.
+The terms *source control* and *version control* are often used interchangeably, and in many contexts, they refer to the same concept. In general, both of them are associated with the practice of managing changes to code in a shared development environment. However, you might encounter more nuanced scenarios in which their meaning is slightly different. In these scenarios, *source control* designates a system that manages changes to source code files while *version control* includes change management of any file type for purposes that extend beyond source code alone. Going forward, for the sake of consistency, we'll be using the term *version control* to represent Git-based collaborative software repositories available in GitHub and Azure DevOps.
 
 ## What are the benefits of version control?
 
