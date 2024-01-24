@@ -58,7 +58,7 @@ quiz:
     choices:
     - content: "Using constructor parameters."
       isCorrect: false
-      explanation: "Blazor component parameters are defined using public properties and the [Parameter] attribute, not using constructor parameters." 
+      explanation: "Blazor component parameters are defined using public properties and the [Parameter] attribute, not using constructor parameters."
     - content: "Using the @param Razor directive."
       isCorrect: false
       explanation: "Blazor component parameters are defined using public properties and the [Parameter] attribute, not using a Razor directive."
@@ -86,7 +86,7 @@ quiz:
     choices:
     - content: "True"
       isCorrect: false
-      explanation: "Blazor components are statically rendered by default and aren't interactive until you apply an interactive render mode using the @rendermode Razor directive." 
+      explanation: "Blazor components are statically rendered by default and aren't interactive until you apply an interactive render mode using the @rendermode Razor directive."
     - content: "False"
       isCorrect: true
       explanation: "Blazor components are statically rendered by default and aren't interactive until you apply an interactive render mode using the @rendermode Razor directive."

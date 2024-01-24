@@ -1,4 +1,4 @@
-Get ready to build your first Blazor web app! If you're looking to get started with web development using the power and flexibility of the .NET platform, then you're at to the right place. Blazor is a modern frontend web framework based on HTML, CSS, and C# that helps you build web apps *fast*.
+Get ready to build your first Blazor web app! If you're looking to get started with web development using the power and flexibility of the .NET platform, then you're at the right place. Blazor is a modern frontend web framework based on HTML, CSS, and C# that helps you build web apps *fast*.
 
 To get started building with Blazor, you first need to set up your development environment by installing the .NET SDK and a preferred code editor. You can then create your first Blazor web app project and start to learn the fundamentals of working with Blazor components.
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>NA/build-a-web-app-with-blazor-webassembly-and-vs-code</title>
+    <title>NA/build-your-first-blazor-web-app</title>
     <defs>
         <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
         <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
@@ -28,7 +28,7 @@
     </defs>
     <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="N/A-18" transform="translate(-159.000000, -509.000000)">
-            <g id="NA/build-a-web-app-with-blazor-webassembly-and-vs-code" transform="translate(160.000000, 510.000000)">
+            <g id="NA/build-your-first-blazor-web-app" transform="translate(160.000000, 510.000000)">
                 <g id="Badge-Plates/Circle">
                     <g id="BG" transform="translate(2.830189, 2.830189)">
                         <mask id="mask-2" fill="white">
