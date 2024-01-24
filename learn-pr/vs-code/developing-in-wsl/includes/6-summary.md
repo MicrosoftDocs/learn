@@ -6,7 +6,6 @@ This module lays the foundation for you to harness the full potential of Linux d
 
 ## References
 
-- [How to install Linux on Windows with WSL](https://learn.microsoft.com/windows/wsl/install)
-- [Introduction to Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/training/modules/wsl-introduction/)
+- [Introduction to Windows Subsystem for Linux (WSL)](windows/wsl-introduction)
 - [Developing in WSL](https://code.visualstudio.com/docs/remote/wsl) 
 - [Remote development in WSL](https://code.visualstudio.com/docs/remote/wsl-tutorial)

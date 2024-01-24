@@ -37,7 +37,7 @@ In VS Code, go to the Extensions view by clicking on the Extensions icon in the 
 
 1. Open your command pallet (Ctrl/CMD+Shift+P) and type in WSL: Open folder in WSL 
 
-2. Select the helloWorld folder, if you don’t see it in the drop-down, you can type in the path /home/<your-username>/helloWorld/ 
+2. Select the helloWorld folder, if you don’t see it in the drop-down, you can type in the path /home/your-username/helloWorld/ 
 
 3. Select OK. VS Code will reload and open your folder. 
 

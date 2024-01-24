@@ -8,14 +8,14 @@ metadata:
   ms.author: gwynethp
   manager: abartolo
   ms.topic: module
-  ms.prod: vs-code
+  ms.service: vs-code
 
 title: Developing in the Windows Subsystem for Linux with Visual Studio Code
 
 summary: |
   In this module, you learn how to use the Windows Subsystem for Linux (WSL) with Visual Studio Code (VS Code). We explore the installation process and the basics of using WSL. Additionally, we install and utilize the WSL Extension for Visual Studio Code. Finally, we demonstrate how to debug and run Python code in VS Code within our WSL environment.
   > [!NOTE]
-  > This module contains a primer on the Windows Subsystem for Linux (WSL). For a more in depth module on WSL checkout [Introduction to Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/training/modules/wsl-introduction/).
+  > This module contains a primer on the Windows Subsystem for Linux (WSL). For a more in depth module on WSL checkout [Introduction to Windows Subsystem for Linux (WSL)](windows/wsl-introduction).
 
 abstract: |
   By the end of this module, you're able to:
