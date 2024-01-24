@@ -7,8 +7,8 @@ The **IP flow verify** feature in Azure Network Watcher checks connectivity from
 Let's examine the configuration details and functionality of the IP flow verify feature in Azure Network Watcher.
 
 - You configure the IP flow verify feature with the following properties in the Azure portal:
-   - Your subscription and resource group
-   - Local (source) IP address, and local port number
+   - Virtual machine and network interface
+   - Local (source) port number
    - Remote (destination) IP address, and remote port number
    - Communication protocol (TCP or UDP)
    - Traffic direction (Inbound or Outbound)
