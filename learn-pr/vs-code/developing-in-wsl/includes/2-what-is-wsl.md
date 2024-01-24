@@ -29,6 +29,6 @@ WSL brings several benefits to developers:
 - **WSL 2:** Launched in 2019, WSL 2 represents a significant leap forward. It uses a real Linux kernel through a lightweight virtual machine (VM), which drastically improves performance. This change means better compatibility with Linux applications and more efficient use of system resources. WSL 2 also introduced full system call compatibility, enhancing the range of Linux applications that could run on Windows. 
 
 
-In summary, WSL has evolved to become an indispensable tool for developers who require a Linux environment alongside their Windows workflow. Its development from WSL 1 to WSL 2 shows Microsoft's commitment to supporting cross-platform development, making it a versatile choice for modern software development needs. 
+In summary, WSL evolved into an essential tool for developers who need a Linux environment along with their Windows workflow. Its development from WSL 1 to WSL 2 shows Microsoft's commitment to supporting cross-platform development, making it a versatile choice for modern software development needs. 
 
 Let's now look at how we can set up WSL on our Windows machine. 
