@@ -10,7 +10,7 @@ Keeping track of all of the info included in a profile can be beneficial. For ex
 
 To create a new profile, you can use the "Create Profile" command available in the File > Preferences > Profiles menu, or access the Profile menu within the gear icon. Profiles can be based on existing profiles or templates, or they can be created as empty profiles.
 
-:::image type="content" source="../media/2-create-profile.png" alt-text="Screenshot of VS Code custom profile icon.":::
+:::image type="content" source="../media/2-create-profile.png" alt-text="Screenshot of VS Code create profile menu option.":::
 
 Once a profile is created, you can configure it by modifying settings, installing or uninstalling extensions, and adjusting the UI layout to suit your preferences. You can even change the icon for the profile to make it clear which profile is active. 
 
@@ -22,7 +22,7 @@ These changes are stored within the active profile, ensuring that the customizat
 
 You can use the "Switch Profile" command in the Command Palette or the dropdown menu accessible through the Manage gear button or File > Preferences > Profiles. Additionally, keyboard shortcuts can be assigned to quickly switch between different profiles. This feature can be valuable if you need different profile settings for different projects. Let's say for a Vue.js project you need certain key bindings, snippets and even tasks, but for working on a Node.js backend you need different profile settings.
 
-:::image type="content" source="../media/2-switch-profile.png" alt-text="Screenshot of VS Code custom profile icon.":::
+:::image type="content" source="../media/2-switch-profile.png" alt-text="Screenshot of VS Code switch profile menu option.":::
 
 This feature can be valuable if you need different profile settings for different projects. Let's say for a Vue.js project you need certain key bindings, snippets and even tasks, but for working on a Node.js backend you need different profile settings.
 
