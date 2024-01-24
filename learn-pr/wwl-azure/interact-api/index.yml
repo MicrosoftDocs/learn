@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.prod: aspnet-core
+  ms.service: aspnet-core
 title: Interact with an ASP.NET Core minimal API
 summary: |
   Learn how APIs are implemented in ASP.NET Core, and how to use API documentation to learn the APIs requirements.
