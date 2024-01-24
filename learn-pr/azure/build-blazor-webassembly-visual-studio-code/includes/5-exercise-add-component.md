@@ -10,7 +10,7 @@ Within Visual Studio or Visual Studio Code, open the folder that contains the Bl
 
 1. Select the **Home.razor** file to open it.
 
-1. Add a `Counter` component to the page by adding a `<Counter />` element at the end of the `Index.razor` file.
+1. Add a `Counter` component to the page by adding a `<Counter />` element at the end of the `Home.razor` file.
 
    ```razor
    @page "/"
