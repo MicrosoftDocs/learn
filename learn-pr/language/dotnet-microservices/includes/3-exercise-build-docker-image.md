@@ -1,4 +1,4 @@
-In this exercise, you create a microservice endpoint and containerize it by using Docker.
+In this exercise, you create a microservice endpoint and containerize it by using the .NET SDK and Docker.
 
 > [!NOTE]
 > You can complete this exercise in an instance of GitHub Codespaces that has [Docker](https://www.docker.com/products/docker-desktop) and the [.NET SDK](https://dotnet.microsoft.com/download) preinstalled. When you use these tools and techniques in your own development environment, make sure that you have these prerequisites installed.

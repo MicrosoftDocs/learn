@@ -24,7 +24,7 @@ Customers who can't connect to Azure Arc to apply ESUs can use Multiple Activati
 
 With some versions of Windows Server, you may need to install the Servicing stack update and Extended Security Updates (ESU) Licensing Preparation Package that are available from the Microsoft Download Center before they can be enabled for ESUs.
 
-Activation occurs over the Internet. For computers that are unable to directly communicate with the Internet, you can activate ESUs suing the Volume Activation Management Tool (VAMT) in conjunction with the VAMT ESU configuration file.
+Activation occurs over the Internet. For computers that are unable to directly communicate with the Internet, you can activate ESUs using the Volume Activation Management Tool (VAMT) in conjunction with the VAMT ESU configuration file.
 
 ESU updates can be delivered through Update Manager, Windows Server Update Services, Microsoft Updates, Microsoft Endpoint Configuration Manager or third party patch management solutions.
 

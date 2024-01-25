@@ -1,6 +1,6 @@
-You want to implement end-to-end encryption for the shipping portal application. Encrypting all data between users and servers help ensure that no unauthorized user can intercept and read the data.
+You want to implement end-to-end encryption for the shipping-portal application. Encrypting all data between users and servers helps ensure that no unauthorized user can intercept and read the data.
 
-In this unit, you set up the web application and the application gateway. Next, you create some self-signed SSL certificates and enable encryption in your backend pool to help secure the traffic from the application gateway to your servers.
+In this unit, you'll set up the web application and the application gateway. Next, you'll create some self-signed SSL certificates and enable encryption in your backend pool to help secure the traffic from the application gateway to your servers.
 
 The following image highlights the elements you configure in this exercise. You're setting up an application gateway by using Azure Application Gateway v2.
 
@@ -8,7 +8,7 @@ The following image highlights the elements you configure in this exercise. You'
 
 ## Deploy a virtual machine and an application gateway
 
-1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and sign in to the directory with access to the subscription in which you want to create resources. We use the Bash shell environment for this exercise.
+1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser and sign in to the directory with access to the subscription in which you want to create resources. We'll use the Bash shell environment for this exercise.
 
 1. Run the following command in the Cloud Shell to create a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region in which you'd like to deploy your resources.
 
@@ -16,26 +16,26 @@ The following image highlights the elements you configure in this exercise. You'
     az group create --resource-group <resource group name> --location <location>
     ```
 
-1. Run the following command in the Cloud Shell to create a variable to store your resource group name.
+1. Run the following command in the Cloud Shell to create a variable to store your resource group name:
 
     ```bash
     export rgName=<resource group name>
 
     ```
 
-1. In Azure Cloud Shell, run the following command to download the source code for the shipping portal.
+1. In Azure Cloud Shell, run the following command to download the source code for the shipping portal:
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-end-to-end-encryption-with-app-gateway shippingportal
     ```
 
-1. Move to the *shippingportal* folder.
+1. Move to the *shippingportal* folder:
 
     ```bash
     cd shippingportal
     ```
 
-1. Run the following setup script to create the virtual machine, certificates, and application gateway.
+1. Run the following setup script to create the virtual machine, certificates, and application gateway:
 
     ```bash
     bash setup-infra.sh
@@ -57,15 +57,15 @@ The following image highlights the elements you configure in this exercise. You'
       --output tsv)"
     ```
 
-1. Copy and paste the URL into your web browser, and go to the URL.
+1. Copy and paste the URL into your web browser and go to the URL.
   
    Your browser will most likely display a warning message similar to the following image. The exact content in the warning message can vary, depending on your browser. The example image is from Microsoft Edge.
 
-   ![Warning about an unauthenticated server in Microsoft Edge.](../media/4-warning.png)
+   ![Screenshot of a warning about an unauthenticated server in Microsoft Edge.](../media/4-warning.png)
 
-    This warning occurs because the web server is configured through a self-signed certificate that can't be authenticated. On this warning page, look for and select the link to proceed to the website; for example select **Go on to the webpage** or  select **Advanced** and then **Proceed**, or the equivalent. The result takes you to the home page for the shipping portal, as shown below. It's a sample app to test that the server is configured correctly.
+    This warning occurs because the web server is configured through a self-signed certificate that can't be authenticated. On this warning page, look for and select the link to proceed to the website; for example, select **Go on to the webpage** or select **Advanced** and then **Proceed**, or the equivalent. The result takes you to the shipping portal home page, as shown in the following image. It's a sample app to test that the server is configured correctly.
 
-    :::image type="content" source="../media/4-shippingportal.png" alt-text="Home page for the shipping portal in Microsoft Edge." loc-scope="other"::: <!-- no-loc -->
+    :::image type="content" source="../media/4-shippingportal.png" alt-text="Screenshot of the shipping portal home page Microsoft Edge." loc-scope="other"::: <!-- no-loc -->
 
 ## Configure the backend pool for encryption
 
@@ -79,14 +79,14 @@ The following image highlights the elements you configure in this exercise. You'
       --output tsv)"
     ```
 
-1. Create a variable to store your private IP address.
+1. Create a variable to store your private IP address. Replace `<privateIP>` with the IP address from the previous step.
 
     ```bash
     export privateip=<privateIP>
 
     ```
 
-1. Set up the backend pool for Application Gateway by using the private IP address of the virtual machine.
+1. Set up the backend pool for Application Gateway by using the virtual machine's private IP address.
 
     ```azurecli
     az network application-gateway address-pool create \
@@ -96,7 +96,7 @@ The following image highlights the elements you configure in this exercise. You'
       --servers $privateip
     ```
 
-1. Upload the certificate for the VM in the backend pool to Application Gateway, as a trusted root certificate. This certificate was generated by the setup script and is stored in the *shipping-ssl.crt* file.
+1. Upload the VM certificate in the backend pool to Application Gateway as a trusted root certificate. The setup script generated this certificate and stored it in the *shipping-ssl.crt* file.
 
     ```azurecli
     az network application-gateway root-cert create \
@@ -106,7 +106,7 @@ The following image highlights the elements you configure in this exercise. You'
       --cert-file server-config/shipping-ssl.crt
     ```
 
-1. Configure the HTTP settings to use the certificate.
+1. Configure the HTTP settings to use the certificate:
 
     ```azurecli
     az network application-gateway http-settings create \
@@ -118,7 +118,7 @@ The following image highlights the elements you configure in this exercise. You'
       --host-name $privateip
     ```
 
-1. Run the following commands to set the trusted certificate for the backend pool to the certificate installed on the backend VM.
+1. Run the following commands to set the trusted certificate for the backend pool to the certificate installed on the backend VM:
 
     ```azurecli
     export rgID="$(az group show --name $rgName --query id --output tsv)"
