@@ -59,7 +59,7 @@ Both user-initiated actions require an approval from a Global Administrator or P
 
 ### PAM in AD DS
 <!--
-BEGIN(https://learn.microsoft.com/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services)
+BEGIN(/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services)
 -->
 MIM Privileged Access Management (PAM) is a solution that helps organizations restrict privileged access within an existing and isolated Active Directory environment.
 
@@ -75,7 +75,7 @@ END()
 ### PAM in Office 365
 
 <!--
-BEGIN(https://learn.microsoft.com/microsoft-365/compliance/privileged-access-management?view=o365-worldwide)
+BEGIN(/microsoft-365/compliance/privileged-access-management?view=o365-worldwide)
 -->
 Microsoft Purview Privileged Access Management allows granular access control over privileged admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. Privileged access management requires users to request just-in-time access to complete elevated and privileged tasks through a highly scoped and time-bounded approval workflow. This configuration gives users just-enough-access to perform the task at hand, without risking exposure of sensitive data or critical configuration settings. Enabling privileged access management allows your organization to operate with zero standing privileges and provide a layer of defense against standing administrative access vulnerabilities.
 

@@ -43,7 +43,7 @@ Following are security best practices for using Key Vault.
 
 Use Azure RBAC to control what users have access to. For example, if you want to grant an application access to use keys in a key vault, you only need to grant data plane access permissions by using key vault access policies, and no management plane access is needed for this application. Conversely, if you want a user to be able to read vault properties and tags but not have any access to keys, secrets, or certificates, you can grant this user read access by using Azure RBAC, and no access to the data plane is required.
 
-**Best practice**: Store certificates in your key vault. Your certificates are of high value. In the wrong hands, your application's security or the security of your data can be compromised. **Detail**: Azure Resource Manager can securely deploy certificates stored in Azure Key Vault to Azure VMs when the VMs are deployed. By setting appropriate access policies for the key vault, you also control who gets access to your certificate. Another benefit is that you manage all your certificates in one place in Azure Key Vault. See [Deploy Certificates to VMs from customer-managed Key Vault](https://learn.microsoft.com/archive/blogs/kv/updated-deploy-certificates-to-vms-from-customer-managed-key-vault) for more information.
+**Best practice**: Store certificates in your key vault. Your certificates are of high value. In the wrong hands, your application's security or the security of your data can be compromised. **Detail**: Azure Resource Manager can securely deploy certificates stored in Azure Key Vault to Azure VMs when the VMs are deployed. By setting appropriate access policies for the key vault, you also control who gets access to your certificate. Another benefit is that you manage all your certificates in one place in Azure Key Vault. See [Deploy Certificates to VMs from customer-managed Key Vault](/archive/blogs/kv/updated-deploy-certificates-to-vms-from-customer-managed-key-vault) for more information.
 
 **Best practice**: Ensure that you can recover a deletion of key vaults or key vault objects. **Detail**: Deletion of key vaults or key vault objects can be inadvertent or malicious. Enable the soft delete and purge protection features of Key Vault, particularly for keys that are used to encrypt data at rest. Deletion of these keys is equivalent to data loss, so you can recover deleted vaults and vault objects if needed. Practice Key Vault recovery operations on a regular basis.
 
@@ -81,9 +81,9 @@ Following are best practices specific to using Azure VPN Gateway, SSL/TLS, and H
 
 **Best practice**: Move larger data sets over a dedicated high-speed WAN link. **Detail**: Use [ExpressRoute](/azure/expressroute/expressroute-introduction). If you choose to use ExpressRoute, you can also encrypt the data at the application level by using SSL/TLS or other protocols for added protection.
 
-**Best practice**: Interact with Azure Storage through the Azure portal. **Detail**: All transactions occur via HTTPS. You can also use [Storage REST API](https://learn.microsoft.com/rest/api/storageservices/) over HTTPS to interact with [Azure Storage](/azure/storage/common/storage-introduction).
+**Best practice**: Interact with Azure Storage through the Azure portal. **Detail**: All transactions occur via HTTPS. You can also use [Storage REST API](/rest/api/storageservices/) over HTTPS to interact with [Azure Storage](/azure/storage/common/storage-introduction).
 
-Organizations that fail to protect data in transit are more susceptible to [man-in-the-middle attacks](https://learn.microsoft.com/previous-versions/office/skype-server-2010/gg195821(v=ocs.14)), [eavesdropping](https://learn.microsoft.com/previous-versions/office/skype-server-2010/gg195641(v=ocs.14)), and session hijacking. These attacks can be the first step in gaining access to confidential data.
+Organizations that fail to protect data in transit are more susceptible to [man-in-the-middle attacks](/previous-versions/office/skype-server-2010/gg195821(v=ocs.14)), [eavesdropping](/previous-versions/office/skype-server-2010/gg195641(v=ocs.14)), and session hijacking. These attacks can be the first step in gaining access to confidential data.
 
 ### Secure email, documents, and sensitive data
 
@@ -97,7 +97,7 @@ This information protection solution keeps you in control of your data, even whe
 
 We recommend that you:
 
--   [Deploy Microsoft Purview Information Protection](https://learn.microsoft.com/purview/information-protection) for your organization.
+-   [Deploy Microsoft Purview Information Protection](/purview/information-protection) for your organization.
 -   Apply labels that reflect your business requirements. For example: Apply a label named "highly confidential" to all documents and emails that contain top-secret data, to classify and protect this data. Then, only authorized users can access this data, with any restrictions that you specify.
 -   Configure [usage logging for Azure RMS](/azure/information-protection/log-analyze-usage) so that you can monitor how your organization is using the protection service.
 
