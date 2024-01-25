@@ -7,7 +7,7 @@ In this module, you learn about building and running a TCP echo client. You lear
 ## Prerequisites
 
 - Completion of the Azure RTOS NetX UDP echo server project module.
-- If you haven't done so already, set up [GitHub Codespaces](https://github.com/Azure-Samples/azure-rtos-learn-samples/codespaces) so that you can build and run your projects in this learning path.
+- If you haven't done so already, set up [GitHub Codespaces](https://github.com/eclipse-threadx/threadx-learn-samples/codespaces) so that you can build and run your projects in this learning path.
 
 ## Introduction
 

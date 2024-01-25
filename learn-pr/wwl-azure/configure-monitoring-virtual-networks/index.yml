@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - references_regions
-  ms.prod: learning-azure
+  ms.service: azure
 title: Configure monitoring for virtual networks
 summary: Understand how to use Azure Network Watcher Connection Monitor, flow logs, NSG diagnostics, and packet capture to monitor connectivity across your Azure IaaS network resources.
 abstract: |

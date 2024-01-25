@@ -3,13 +3,19 @@ In order for Kubernetes to create a container image, it needs a place from which
 > [!NOTE]
 > You will complete this exercise in a GitHub Codespace that has [Docker](https://www.docker.com/products/docker-desktop) and the [.NET SDK](https://dotnet.microsoft.com/download) pre-installed. When you use these techniques in your own development environment, make sure you have these prerequisites installed.
 
-## Create a new GitHub Codespace
+## Open the development environment
 
-Let's start by creating a new GitHub codespace that hosts the exercise.
+You can choose to use a GitHub codespace that hosts the exercise, or complete the exercise locally in Visual Studio Code.
 
-You can setup a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-kubernetes%2Fdevcontainer.json).
+To use a **codespace** create a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-kubernetes%2Fdevcontainer.json).
 
-This takes several minutes while GitHub creates and configures the codespace. Once finished, you will see the code files for the exercise. The code used for the rest of this module is in the `/dotnet-kubernetes` directory.
+This takes several minutes while GitHub creates and configures the codespace. Once finished, you will see the code files for the exercise. The code used for the rest of this module is in the **/dotnet-kubernetes** directory.
+
+To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your own GitHub account. Then open the folder in Visual Studio Code:
+
+1. Make sure Docker is running. In a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
+1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
+1. Select your forked repository. Visual Studio Code creates your development container locally.
 
 ### Verify the Docker images by creating containers in the codespace
 
@@ -17,7 +23,7 @@ There are two containers in the Contoso Shop project. Before pushing the images 
 
 Follow these steps to create and run Docker containers in the codespace.
 
-1. When the setup is complete, within the dotnet-kubernetes directory, open the file named **docker-compose.yml**.
+1. When the setup is complete, within the **dotnet-kubernetes** directory, open the file named **docker-compose.yml**.
 1. Switch to the **PORTS** tab, point at the **Forwarded Address** for the **Back End (32001)** port, and then click the **Copy Local Address** icon.
 
     ![Screenshot showing how to copy the forwarded port for the backend service.](../media/copy-forwarded-port.png)
@@ -31,7 +37,13 @@ Follow these steps to create and run Docker containers in the codespace.
       - ImagePrefix=https://studious-fortnight-4g4rx9g47wg249w-32001.app.github.dev/images
     ```
 
-1. Switch to the **TERMINAL** tab and the run the following command to build the containers:
+1. Switch to the **TERMINAL** tab and run the following command to go to the code root:
+
+   ```cli
+   cd dotnet-kubernetes
+   ```
+
+1. Run the following command to build the containers:
 
     ```bash
     docker compose build
@@ -75,6 +87,8 @@ docker login
     docker push [YOUR DOCKER USER NAME]/storeimage
     docker push [YOUR DOCKER USER NAME]/productservice
     ```
+
+    If you receive an authentication error you can run `docker logout` followed by `docker login` to re-authenticate.
 
 In this exercise, you used Dockerfiles and docker compose to create two Docker images and containers, and pushed those images to Docker Hub.
 

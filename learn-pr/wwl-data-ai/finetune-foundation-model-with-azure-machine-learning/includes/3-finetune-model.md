@@ -5,7 +5,7 @@ To fine-tune a foundation model from the model catalog in Azure Machine Learning
 Before you can fine-tune a foundation model to improve model performance, you need to prepare your training data and create a GPU compute cluster.
 
 > [!Tip]
-> When you create a GPU compute cluster in Azure Machine Learning, GPU optimized virtual machine will be created for you. Learn more about the [GPU virtual machine sizes available in Azure](https://learn.microsoft.com/azure/virtual-machines/sizes-gpu?azure-portal=true).
+> When you create a GPU compute cluster in Azure Machine Learning, GPU optimized virtual machine will be created for you. Learn more about the [GPU virtual machine sizes available in Azure](/azure/virtual-machines/sizes-gpu?azure-portal=true).
 
 The training data can be in JSON Lines (JSONL), CSV, or TSV format. The requirements of your data vary based on the specific task you intend to fine-tune your model for.
 
