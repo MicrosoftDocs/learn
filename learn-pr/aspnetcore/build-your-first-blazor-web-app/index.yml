@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.build-web-app-blazor-webassembly-vscode
 metadata:
-  title: Build a web app with Blazor
+  title: Build your first web app with Blazor
   description: Learn how to build your first web app with Blazor.
   ms.date: 01/23/2024
   author: danroth27

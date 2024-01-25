@@ -29,11 +29,11 @@ Organizations should not develop and maintain their own encryption algorithms. A
 
 Secure standards already exist on the market and should be preferred. If custom implementation is required, developers should use well-established cryptographic algorithms and secure standards. Use Advanced Encryption Standard (AES) as a symmetric block cipher, AES-128, AES-192, and AES-256 are acceptable.
 
-Developers should use cryptography APIs built into operating systems instead of non-platform cryptography libraries. For .NET, follow the [.NET Cryptography Model](https://learn.microsoft.com/dotnet/standard/security/cryptography-model).
+Developers should use cryptography APIs built into operating systems instead of non-platform cryptography libraries. For .NET, follow the [.NET Cryptography Model](/dotnet/standard/security/cryptography-model).
 
 We advise using standard and recommended encryption algorithms.
 
-For more information, refer to [Choose an algorithm](https://learn.microsoft.com/dotnet/standard/security/cryptography-model#choose-an-algorithm).
+For more information, refer to [Choose an algorithm](/dotnet/standard/security/cryptography-model#choose-an-algorithm).
 
 ### Modern hashing functions
 
