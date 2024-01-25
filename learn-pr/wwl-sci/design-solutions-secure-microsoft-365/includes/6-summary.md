@@ -12,8 +12,8 @@ You learned how to:
 
 ## Learn more with reference architectures
 
-- [Integrate Azure and Microsoft Defender XDR security services - Azure Architecture Center](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/microsoft-365-defender-security-integrate-azure)
-- [Build the second layer of defense with Microsoft Defender XDR Security services - Azure Architecture Center](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/microsoft-365-defender-build-second-layer-defense)
+- [Integrate Azure and Microsoft Defender XDR security services - Azure Architecture Center](/azure/architecture/solution-ideas/articles/microsoft-365-defender-security-integrate-azure)
+- [Build the second layer of defense with Microsoft Defender XDR Security services - Azure Architecture Center](/azure/architecture/solution-ideas/articles/microsoft-365-defender-build-second-layer-defense)
 
 > [!NOTE]
 > This module contains AI-generated content.

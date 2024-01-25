@@ -5,7 +5,7 @@ metadata:
   description: "Secure Azure AI Services"
   ms.date: 04/05/2022
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: berryivor
   ms.topic: module
   ms.service: cognitive-services
 title: Secure Azure AI Services
