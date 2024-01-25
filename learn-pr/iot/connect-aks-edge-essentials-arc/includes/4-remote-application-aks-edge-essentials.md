@@ -1,104 +1,28 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+You can easily deploy containerized applications to an Arc-enabled AKS Edge Essentials cluster using GitOps and Flux.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+In the retail chain scenario, we need to optimize the customer experience by deploying a smart shelf application that tracks inventory and analyzes interactions. We need a solution for managing sensors, securing data, and enabling remote oversight.
 
-    Heading: none
+Here, you learn how to use GitOps and Flux to deploy applications to an Arc-Enabled AKS Edge Essentials cluster.
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+:::image type="content" source="../media/4-arc-enabled-gitops-flux-inline.png" alt-text="Diagram showing the process of applying GitOps-based configuration to Azure Arc-enabled clusters." lightbox="../media/4-arc-enabled-gitops-flux-expanded.png":::
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+## GitOps for Arc-enabled Kubernetes
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+A primary benefit of Azure Arc is to facilitate implementation of DevOps principles, which apply established development practices to operations. DevOps increases agility without jeopardizing the stability of the IT environment. Azure Arc-enabled Kubernetes supports GitOps, a DevOps practice that streamlines application releases by reducing manual deployment effort.
 
-    Goal: Describe the part of the scenario covered in this exercise
+GitOps makes it easier to standardize Kubernetes configurations across your organization, including Arc-enabled Kubernetes. A repository or other file source hosts configuration files that represent the expected state of a resource.
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+An agent running on the Kubernetes cluster monitors the state of the repository. When there's a configuration change, the agent pulls the updated files to the cluster and applies the new configuration, ensuring that the cluster remains in the desired state.
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+Azure Arc-enabled Kubernetes clusters rely on Flux, a popular open-source GitOps deployment operator that automates configuration deployments to the cluster. Flux supports common file sources like Git repositories, Helm repositories, and Buckets, and supports YAML, Helm, and Kustomize configuration template types.
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+## GitOps configurations to push applications to AKS Edge Essentials
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+After AKS Edge Essentials is connected to Azure Arc and GitOps is enabled, you can deploy applications to your AKS Edge Essentials cluster using GitOps and Flux. For that you will create a cluster-level configuration and a namespace-level configuration. On our example you will leverage the following Helm configurations:
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+- [Nginx Ingress Controller](https://github.com/microsoft/azure-arc-jumpstart-apps/blob/main/nginx/release/nginx-ingress.yaml)
+- [Hello Arc Application](https://github.com/microsoft/azure-arc-jumpstart-apps/blob/main/hello-arc/releases/app/hello-arc.yaml)
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+## Commit changes to GitHub application repository for automatic updates
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
-
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
-
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
-
-    Goal: List the steps they'll do to complete the exercise.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
-
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation -------------------------------------------------------------------------------------------
-
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. Feedback like this is critical for learning.
-
-    Structure:
-        1. A heading of "## Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
-
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+On our example we will configure Flux to automatically update the application when changes are committed to the GitHub repository *main* branch. For example, if we set the **sync interval** to **1 min** when creating the namespace-level configuration, Flux pulls down changes from GitHub every minute.
