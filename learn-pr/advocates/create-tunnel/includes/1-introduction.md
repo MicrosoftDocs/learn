@@ -1,51 +1,22 @@
-How to write an introduction
+Introduction
 
-[this Link](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
--------
-
-FAKE Data: At this point, you've created small programs that used the libraries that come with the installation of Python. They work well. But as you build more advanced programs, you need to ask yourself a question: how much of this new functionality do I write, and how much is already written that I can use in my own programs? 
-
-> [!TIP]
-> Optional information to help a user be more successful
-  
-:::image type="content" source="../media/burke.png" alt-text="Burke Is Mad":::
-
-As a developer, you're likely to build many programs on one machine. Those programs might also be used on other machines. However, some of these machines might have versions of Python installed that aren't what you expect. Or, they might have libraries installed that are of lower or higher version than your program needs. 
+It’s quite common these days that people work remotely, from their home, a coffee shop or a similar establishment. Regardless of where you work, you want a secure connection from your machine to your company’s resources. It’s important that these connections are secure, which has come to mean encrypted to protect your company. Additionally, it’s advantageous to use tools that make setting up and configuring such connections so that more time can be spent to deliver business value. 
 
 
-|Command  |Description  |
-|---------|-------------|
-|Row1     |  data      |
-|Row2     |         |
-|Row3     |         |
+## Scenario: Accessing company resources from home 
 
-  
-
-So what do you do? You need to find a way for your program to work in isolation, so it doesn't disturb what's installed on the target machine. You also want to make sure that a machine doesn't disable your program because it has the wrong Python version or library version installed. 
-
-  
-
-## Scenario: Let's build a program 
-
-As your skills grow and you begin building more advanced programs, you always want to start with a good approach. You want to think of the program that you build as more of a project, with the code spread out over many files. If possible, you also want to use libraries that others have written, to speed up development time. 
+Your company has hired their first workers that’s hired to work remotely. It’s important these new hires can access company resources from their chosen place of work and can do so safely and securely. You also want to ensure that these employees can use best-in-class tools.  
 
 
-## What will you learn? 
+## What will I learn? 
 
-By the end of this module, you'll be able to: 
+By the end of this module, you will be able to: 
 
-- Explain what is tunneling & how remote tunnels securely transmit data  
-- Use Remote-Tunnels extension 
+- Explain tunneling and the features of VS Code Remote Tunnel extension. 
+- Use the VS Code Tunnel extension to tunnel into a remote host. 
+- Configure remote tunnel access via VS Code UI and CLI. 
 
 ## What is the main objective? 
 
-Use libraries and plan your project to create Python programs that are more advanced. 
+Leverage tunneling to connect to remote hosts.  
 
- ```python
-code
-
-/env
-  /bin
-  /include
-  /lib
-```
