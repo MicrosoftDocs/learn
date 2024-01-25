@@ -81,7 +81,7 @@ Following are best practices specific to using Azure VPN Gateway, SSL/TLS, and H
 
 **Best practice**: Move larger data sets over a dedicated high-speed WAN link. **Detail**: Use [ExpressRoute](/azure/expressroute/expressroute-introduction). If you choose to use ExpressRoute, you can also encrypt the data at the application level by using SSL/TLS or other protocols for added protection.
 
-**Best practice**: Interact with Azure Storage through the Azure portal. **Detail**: All transactions occur via HTTPS. You can also use [Storage REST API](/rest/api/storageservices/) over HTTPS to interact with [Azure Storage](/azure/storage/common/storage-introduction).
+**Best practice**: Interact with Azure Storage through the Azure portal. **Detail**: All transactions occur via HTTPS. You can also use [Storage REST API](https://learn.microsoft.com/rest/api/storageservices/) over HTTPS to interact with [Azure Storage](/azure/storage/common/storage-introduction).
 
 Organizations that fail to protect data in transit are more susceptible to [man-in-the-middle attacks](/previous-versions/office/skype-server-2010/gg195821(v=ocs.14)), [eavesdropping](/previous-versions/office/skype-server-2010/gg195641(v=ocs.14)), and session hijacking. These attacks can be the first step in gaining access to confidential data.
 
