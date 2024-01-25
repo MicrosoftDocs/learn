@@ -50,7 +50,7 @@ Currently, B2B direct connect enables the Teams Connect shared channels feature,
 
 You use [cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-collaboration) to manage trust relationships with other Microsoft Entra organizations and define inbound and outbound policies for B2B direct connect.
 
-For details about the resources, files, and applications, that are available to the B2B direct connect user via the Teams shared channel, refer to [Chat, teams, channels, & apps in Microsoft Teams](https://learn.microsoft.com/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page).
+For details about the resources, files, and applications, that are available to the B2B direct connect user via the Teams shared channel, refer to [Chat, teams, channels, & apps in Microsoft Teams](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page).
 
 <!--[](/azure/active-directory/external-identities/external-identities-overview#azure-ad-b2c)-->
 
