@@ -31222,6 +31222,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/examine-azure-iot-solution-monitoring-logging/2-azure-monitor-alerts-log-analytics.md",
+      "redirect_url": "/training/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-iot-solution-monitoring-logging/3-iot-hub-metrics.md",
+      "redirect_url": "/training/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-iot-solution-monitoring-logging/4-set-up-resource-logs.md",
+      "redirect_url": "/training/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-iot-solution-monitoring-logging/5-device-connection-state-lifecycle-notifications.md",
+      "redirect_url": "/training/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-iot-solution-monitoring-logging/6-quotas-throttling.md",
+      "redirect_url": "/training/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-iot-solution-monitoring-logging/7-knowledge-check.md",
+      "redirect_url": "/training/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-iot-solution-monitoring-logging/8-summary.md",
+      "redirect_url": "/training/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/challenge-project-classes-methods-properties/index.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/guided-project-classes-methods-properties/",
       "redirect_document_id": false
