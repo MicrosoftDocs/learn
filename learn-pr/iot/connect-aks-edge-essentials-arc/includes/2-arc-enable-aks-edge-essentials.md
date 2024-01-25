@@ -1,78 +1,67 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Once your AKS Edge Essentials cluster is connected to Azure Arc, it extends the Azure platform to the edge with core services such as governance, monitoring, application, ML, and data services.
 
-    Goal: briefly summarize the key skill this unit will teach
+In the retail chain scenario, we connect AKS Edge Essentials to Azure Arc, which provides a centralized management console for Kubernetes clusters running anywhere, scalability, and robust security that helps optimize the retail chain's customer experience strategies.
 
-    Heading: none
+Here, you learn how to Arc-Enable your AKS Edge Essentials cluster and manage it using the Azure portal.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+:::image type="content" source="../media/2-aks-edge-kubernetes-azure-arc-resource-inline.png" alt-text="Screenshot of AKS Edge Essentials Kubernetes Azure Arc resource in Azure portal." lightbox="../media/2-aks-edge-kubernetes-azure-arc-resource-expanded.png":::
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+## What is Azure Arc-enabled Kubernetes?
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+Using Azure Arc, you can connect Kubernetes clusters located anywhere to Azure. You can then manage these connected clusters in a consistent way, just as you would in Azure. Azure Arc-enabled Kubernetes lets you control the cluster configuration and workloads at scale, using your Git repositories as the source of truth. This connection to Azure provides management capabilities such as inventory, monitoring, policy compliance, security, user access, and more.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+Azure Arc-enabled Kubernetes works with any Cloud Native Computing Foundation (CNCF) certified Kubernetes clusters, including AKS Edge Essentials.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+## What can you do with Azure Arc-enabled Kubernetes?
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+You can use Azure Arc-enabled Kubernetes to address many requirements in your organization.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+With Azure Arc-enabled Kubernetes, you can create a shared application and infrastructure environment. This approach enables you to implement:
 
-    Goal: State concisely what's covered in this unit
+- Consistent management of your resources using the Azure portal and APIs across:
+  - Your datacenters
+  - Edge locations
+  - Multiple hosting providers
+- Clear roles and responsibilities for your IT and engineering staff, providing role separation while still maintaining visibility and access to resources, wherever their location.
+- Ability to organize your clusters with standardized and custom tags.
+- Querying across clusters with Azure Resource Graph.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Once your Kubernetes clusters are connected to Azure, at scale you can:
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+- Configure clusters and deploy applications using GitOps-based configuration management.
+- View and monitor your clusters using Azure Monitor for containers.
+- Enforce threat protection using Microsoft Defender for Kubernetes.
+- Ensure governance through applying policies with Azure Policy for Kubernetes.
+- Grant access and connect to your Kubernetes clusters from anywhere, and manage access by using Azure role-based access control (RBAC) on your cluster.
+- Deploy machine learning workloads using Azure Machine Learning for Kubernetes clusters.
+- Deploy services that allow you to take advantage of specific hardware, comply with data residency requirements, or enable new scenarios.
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+## How to connect AKS Edge Essentials to Azure Arc
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+ You must deploy agents to your Kubernetes clusters in order to connect them. These agents are responsible for connecting to Azure, collecting Azure Arc logs and metrics, and managing configuration requests. Once your AKS Edge Essentials is deployed, you can easily connect it to Azure Arc by running the `Connect-AksEdgeArc` PowerShell command. This command deploys the Azure Arc agent to your cluster and connects it to Azure Arc:
 
-    Heading: none
--->
-TODO: add a visual element
+```powershell
+# Connect Arc-enabled kubernetes
+Connect-AksEdgeArc -JsonConfigFilePath .\aksedge-config.json
+```
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+Provide details of your Azure subscription in the [aksedge-config.json](https://github.com/Azure/AKS-Edge/blob/main/tools/aksedge-config.json) file under the `Arc` section as described in the following table. To successfully connect to Azure using Azure Arc-enabled kubernetes, you need a service principal with the built-in `Microsoft.Kubernetes connected cluster` role in order to access resources on Azure.
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+| Attribute | Value type      |  Description |
+| :------------ |:-----------|:--------|
+|`ClusterName` | string | Provide a name for your cluster. The default value is `hostname_cluster`. |
+|`Location` | string | The location of your resource group. Choose the location closest to your deployment. |
+|`SubscriptionId` | GUID | Your subscription ID. |
+|`TenantId` | GUID | Your tenant ID. |
+|`ResourceGroupName` | string | The name of the Azure resource group to host your Azure resources for AKS Edge Essentials. |
+|`ClientId` | GUID | Provide the application ID of the Azure service principal to use as credentials. AKS Edge Essentials uses this service principal to connect your cluster to Arc. You can use the **App Registrations** page in the Microsoft Entra resource page on the Azure portal, to list and manage the service principals in a tenant.|
+|`ClientSecret` | string | Provide the password for the service principal. |
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+## How to disconnect AKS Edge Essentials from Azure Arc
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+You can disconnect your AKS Edge Essentials cluster from Azure Arc by running the `Disconnect-AksEdgeArc` PowerShell command. This command removes the Azure Arc agent from your cluster and disconnects it from Azure Arc:
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+```powershell
+# Disconnect Arc-enabled kubernetes
+Disconnect-AksEdgeArc -JsonConfigFilePath .\aksedge-config.json
+```

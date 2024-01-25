@@ -19,7 +19,7 @@ If you don't have a GitHub account already, [create one now](https://docs.github
 
 In the Azure portal, navigate to your Arc-enabled AKS Edge Essentials cluster and select **GitOps** under **Settings**. We will create a cluster-level configuration and a namespace-level configuration.
 
-:::image type="content" source="../media/5-aks-edge-kubernetes-azure-arc-resource-gitops-inline.png" alt-text="Screenshot of AKS Edge Essentials Kubernetes Azure Arc resource in Azure Portal." lightbox="../media/5-aks-edge-kubernetes-azure-arc-resource-gitops-expanded.png":::
+:::image type="content" source="../media/5-aks-edge-kubernetes-azure-arc-resource-gitops-inline.png" alt-text="Screenshot of AKS Edge Essentials Kubernetes Azure Arc resource in Azure Portal, with gitops highlight." lightbox="../media/5-aks-edge-kubernetes-azure-arc-resource-gitops-expanded.png":::
 
 1. Select **Create** and use the following values for the cluster-level configuration.
 

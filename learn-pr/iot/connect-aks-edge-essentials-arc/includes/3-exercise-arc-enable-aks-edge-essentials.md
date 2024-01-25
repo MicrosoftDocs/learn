@@ -271,7 +271,7 @@ Now that the VM is created, let's run the `AksEdgeQuickStart-v2.ps1` PowerShell 
 
 1. On the left panel, select the **Namespaces** option, under **Kubernetes resources (preview)**:
 
-    :::image type="content" source="../media/3-aks-edge-kubernetes-azure-arc-resource-inline.png" alt-text="Screenshot of AKS Edge Essentials Kubernetes Azure Arc resource in Azure Portal." lightbox="../media/3-aks-edge-kubernetes-azure-arc-resource-expanded.png":::
+    :::image type="content" source="../media/3-aks-edge-kubernetes-azure-arc-resource-namespaces-inline.png" alt-text="Screenshot of AKS Edge Essentials Kubernetes Azure Arc resource in Azure Portal with namespaces highlight." lightbox="../media/3-aks-edge-kubernetes-azure-arc-resource-namespaces-expanded.png":::
 
 1. You will need to sign in using a bearer token to view the Kubernetes resources. To get the token, run the following command in the PowerShell command line of the VM:
 
