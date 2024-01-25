@@ -9,6 +9,6 @@ metadata:
   ms.author: andreapark
   ms.topic: module-standard-task-based
   ms.service: artificial-intelligence
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/11-summary.md)]
