@@ -28,4 +28,4 @@ The Spark open source ecosystem includes a wide selection of code libraries for 
 By default, Spark clusters in Microsoft Fabric include many of the most commonly used libraries, but if you need to install other libraries, you can do so on the **Library management** page in the workspace settings.
 
 > [!TIP]
-> For more information about library management, see [Manage Apache Spark libraries in Microsoft Fabric](https://learn.microsoft.com/fabric/data-engineering/library-management) in the Microsoft Fabric documentation.
+> For more information about library management, see [Manage Apache Spark libraries in Microsoft Fabric](/fabric/data-engineering/library-management) in the Microsoft Fabric documentation.
