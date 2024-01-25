@@ -2,7 +2,7 @@ Both GitHub and Azure DevOps support a range of DevOps planning capabilities. Co
 
 ## What are GitHub Projects?
 
-GitHub Projects is a feature hosted by the GitHub platform providing the ability to organize, track and manage work in a collaborative and visual manner. The feature is particularly suitable for managing software development lifecycle, although it can be used in practically any scenario that involves project-related work. It closely integrates with other GitHub components such as repositories, issues, and pull requests. It provides a way to plan, track progress, and coordinate tasks within a repository and across repositories.
+GitHub Projects is a feature hosted by the GitHub platform providing the ability to organize, track and manage work in a collaborative and visual manner. This feature is particularly suitable for managing software development lifecycle, although it can be used in practically any scenario that involves project-related work. It closely integrates with other GitHub components such as repositories, issues, and pull requests. It provides a way to plan, track progress, and coordinate tasks within a repository and across repositories.
 
 Each project is automatically accessible in the table, board, and roadmap layout. You also have the option of creating views by filtering, grouping, and sorting components included in the project, generating configurable charts, and adding custom fields based on your individual preferences or needs.
 
@@ -27,5 +27,4 @@ In addition, consider using the default labels included in every repository or c
 
 When creating a project, you can either start from scratch or leverage a number of project templates with predefined board structures targeting the most common use cases, including, for example, *Team planning*, *Feature release*, *Kanban*, *Iterative development*, or *Bug tracker*.
 
-> [!NOTE]
-> You will have a chance to implement a GitHub Projects board in the lab included in this module.
+
