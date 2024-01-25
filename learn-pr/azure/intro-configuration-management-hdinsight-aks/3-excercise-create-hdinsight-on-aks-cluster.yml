@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-configuration-management-hdinsight-aks.3-excercise-create-hdinsight-on-aks-cluster  
+title: Exercise - Create HDInsight on AKS Cluster
+metadata:
+  unitType: learning-content  
+  title: Exercise - Create HDInsight on AKS Cluster
+  description: Exercise - Create HDInsight on AKS Cluster
+  ms.date: 01/24/2024  
+  author: yeturisairam
+  ms.author: yeturisairam
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-excercise-create-hdinsight-on-aks-cluster.md)]
