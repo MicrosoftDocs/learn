@@ -92,9 +92,9 @@ Also, try to create a YAML pipeline that includes a parameter with an incorrect 
 
 For more information about variables and parameters, see:
 
-- [Securing Azure Pipelines.](https://learn.microsoft.com/azure/devops/pipelines/security/overview/)
-- [How to securely use variables and parameters in your pipeline.](https://learn.microsoft.com/azure/devops/pipelines/security/inputs/)
-- [Recommendations to secure shared infrastructure in Azure Pipelines.](https://learn.microsoft.com/azure/devops/pipelines/security/infrastructure/)
-- [Runtime parameters.](https://learn.microsoft.com/azure/devops/pipelines/process/runtime-parameters/)
-- [Use a variable group's secret and nonsecret variables in an Azure Pipeline.](https://learn.microsoft.com/azure/devops/pipelines/scripts/cli/pipeline-variable-group-secret-nonsecret-variables)
-- [Define variables.](https://learn.microsoft.com/azure/devops/pipelines/process/variables/)
+- [Securing Azure Pipelines.](/azure/devops/pipelines/security/overview/)
+- [How to securely use variables and parameters in your pipeline.](/azure/devops/pipelines/security/inputs/)
+- [Recommendations to secure shared infrastructure in Azure Pipelines.](/azure/devops/pipelines/security/infrastructure/)
+- [Runtime parameters.](/azure/devops/pipelines/process/runtime-parameters/)
+- [Use a variable group's secret and nonsecret variables in an Azure Pipeline.](/azure/devops/pipelines/scripts/cli/pipeline-variable-group-secret-nonsecret-variables)
+- [Define variables.](/azure/devops/pipelines/process/variables/)

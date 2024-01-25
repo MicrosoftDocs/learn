@@ -7,7 +7,7 @@ Here's a list of the different Microsoft Defender XDR products and solutions tha
 -   [**Microsoft Defender for Identity**](https://learn.microsoft.com/defender-for-identity/what-is)
 -   [**Microsoft Defender for Cloud Apps**](https://learn.microsoft.com/defender-cloud-apps/what-is-defender-for-cloud-apps)
 -   [**Microsoft Defender Vulnerability Management**](https://learn.microsoft.com/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management?view=o365-worldwide)
--   [**Microsoft Entra ID Protection**](https://learn.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+-   [**Microsoft Entra ID Protection**](/azure/active-directory/identity-protection/overview-identity-protection)
 -   [**Microsoft Data Loss Prevention**](https://learn.microsoft.com/microsoft-365/compliance/dlp-learn-about-dlp)
 -   [**App Governance**](https://learn.microsoft.com/defender-cloud-apps/app-governance-manage-app-governance)
 
