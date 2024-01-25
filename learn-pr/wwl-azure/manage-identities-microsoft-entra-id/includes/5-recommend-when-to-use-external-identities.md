@@ -31,11 +31,12 @@ As an administrator, you can easily add guest users to your organization in the 
  -  Assign guest users to apps or groups.
  -  Send an invitation email that contains a redemption link, or send a direct link to an app you want to share.
 
-## :::image type="content" source="../media/invite-external-user-1b53c66b.png" alt-text="Screenshot showing the Microsoft Entra admin center for inviting an external user."::: 
+:::image type="content" source="../media/invite-external-user-1b53c66b.png" alt-text="Screenshot showing the Microsoft Entra admin center for inviting an external user.":::
+
 
  -  Guest users follow a few simple redemption steps to sign in.
 
-:::image type="content" source="../media/review-permissions-f0a7a68d.png":::
+:::image type="content" source="../media/review-permissions-f0a7a68d.png" alt-text="Screenshot showing the review permissions template that is used to invite guest users.":::
 
 
 ## Allow self-service sign-up
@@ -79,7 +80,7 @@ Bring your external partners on board in ways customized to your organization's 
 
 Microsoft Entra External ID supports external identity providers like social media and social networking services, Microsoft accounts, Cloud providers, or enterprise identity providers. You can set up federation with identity providers. This way your external users can sign in with their existing social or enterprise accounts instead of creating a new account just for your application.
 
-:::image type="content" source="../media/integrate-with-identity-providers-49ba1fd1.png":::
+:::image type="content" source="../media/integrate-with-identity-providers-49ba1fd1.png" alt-text="Screenshot showing the external identities configuration and settings page in the Azure dashboard.":::
 
 
 ## Integrate with SharePoint and OneDrive
