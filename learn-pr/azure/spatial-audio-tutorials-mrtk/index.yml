@@ -6,8 +6,7 @@ metadata:
   ms.date: 06/26/2023
   author: marlenaklein-msft
   ms.author: marlenaklein
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.topic: module
 title: Activate spatial audio for your HoloLens 2 application
 summary: Learn about spatial audio to enhance your learning experience. Explores the use of spatial audio by integrating it to a HoloLens 2 application.
 abstract: |
