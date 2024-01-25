@@ -8,7 +8,7 @@ metadata:
   ms.author: casoper
   ms.manager: markl
   ms.topic: module
-  ms.prod: .net
+  ms.service: dotnet
 title: Introduction to .NET
 summary: Start learning about .NET. Understand what .NET is and how it works, and quickly build a small app in a web-based .NET environment.
 abstract: |

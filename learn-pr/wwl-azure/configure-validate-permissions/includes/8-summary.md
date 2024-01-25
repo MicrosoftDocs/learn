@@ -9,8 +9,8 @@ You learned how to:
 
 ## Learn more
 
-- [Azure DevOps permissions](https://learn.microsoft.com/azure/devops/organizations/security/permissions)
-- [Securing Azure Pipelines](https://learn.microsoft.com/azure/devops/pipelines/security/overview)
-- [Security best practices](https://learn.microsoft.com/azure/devops/organizations/security/security-best-practices)
-- [Add organization users and manage access](https://learn.microsoft.com/azure/devops/organizations/accounts/add-organization-users)
-- [Grant or restrict access using permissions](https://learn.microsoft.com/azure/devops/organizations/security/restrict-access)
+- [Azure DevOps permissions](/azure/devops/organizations/security/permissions)
+- [Securing Azure Pipelines](/azure/devops/pipelines/security/overview)
+- [Security best practices](/azure/devops/organizations/security/security-best-practices)
+- [Add organization users and manage access](/azure/devops/organizations/accounts/add-organization-users)
+- [Grant or restrict access using permissions](/azure/devops/organizations/security/restrict-access)

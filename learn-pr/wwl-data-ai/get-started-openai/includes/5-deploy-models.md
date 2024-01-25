@@ -12,20 +12,21 @@ From the *Deployments* page in the Studio, you can also view information about a
 
 You can also deploy a model using the console. Using this example, replace the following variables with your own resource values:
 
-- myResourceGroupName: *replace with your resource group name*
-- myResourceName: *replace with your resource name*
+- OAIResourceGroup: *replace with your resource group name*
+- MyOpenAIResource: *replace with your resource name*
 - MyModel: *replace with a unique name for your model*
 - gpt-35-turbo: *replace with the base model you wish to deploy*
 
 ```dotnetcli
 az cognitiveservices account deployment create \
-   -g myResourceGroupName \
-   -n myResourceName \
+   -g OAIResourceGroup \
+   -n MyOpenAIResource \
    --deployment-name MyModel \
    --model-name gpt-35-turbo \
    --model-version "0301"  \
    --model-format OpenAI \
-   --scale-settings-scale-type "Standard"
+   --sku-name "Standard" \
+   --sku-capacity 1
 ```
 
 ## Deploy using the REST API

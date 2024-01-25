@@ -42,7 +42,7 @@ Func<DeviceCodeInfo, CancellationToken, Task> callback = (code, cancellation) =>
     return Task.FromResult(0);
 };
 
-// https://learn.microsoft.com/dotnet/api/azure.identity.devicecodecredential
+// /dotnet/api/azure.identity.devicecodecredential
 var deviceCodeCredential = new DeviceCodeCredential(
     callback, tenantId, clientId, options);
 
