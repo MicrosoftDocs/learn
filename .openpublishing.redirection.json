@@ -31822,6 +31822,56 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/2-understand-blazor-webassembly.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/2-configure-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/3-exercise-configure-enviromnent.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/3-exercise-configure-environment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/4-blazor-components.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/4-blazor-components",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/5-exercise-add-component.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/5-exercise-add-component",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/6-csharp-razor-binding.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/6-data-binding",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/7-exercise-razor-binding.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/7-exercise-data-binding",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/9-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.build-web-app-blazor-webassembly-vscode.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/achievements/learn.build-your-first-blazor-web-app.badge",
+      "redirect_document_id": true
+    },
+    {
         "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/2-environment-setup.yml",
         "redirect_url": "/training/paths/create-microservices-with-dotnet",
         "redirect_document_id": false
