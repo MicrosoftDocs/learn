@@ -9,6 +9,6 @@ metadata:
   ms.author: andreapark
   ms.topic: module-standard-task-based
   ms.service: artificial-intelligence
-durationInMinutes: 2
+durationInMinutes: 4
 content: |
   [!include[](includes/2-what-is-artificial-intelligence.md)]
