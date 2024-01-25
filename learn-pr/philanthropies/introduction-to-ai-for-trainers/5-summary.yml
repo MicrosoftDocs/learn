@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.introduction-to-ai-for-trainers.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This module explores fundamental concepts in artificial intelligence (AI) and machine learning.
+  ms.date: 01/24/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: module-standard-task-based
+  ms.service: artificial-intelligence
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-summary.md)]
