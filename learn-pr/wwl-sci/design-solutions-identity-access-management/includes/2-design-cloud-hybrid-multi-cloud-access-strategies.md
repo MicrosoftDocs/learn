@@ -1,8 +1,8 @@
-This unit summarized design recommendations related to identity and access management in a cloud environment, based on the [Azure identity and access management design area of the Cloud Adoption Framework](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access). For more detailed discussion of all relevant design discussions, see the following articles:
+This unit summarized design recommendations related to identity and access management in a cloud environment, based on the [Azure identity and access management design area of the Cloud Adoption Framework](/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access). For more detailed discussion of all relevant design discussions, see the following articles:
 
-- [Microsoft Entra ID and Hybrid Identity](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-active-directory-hybrid-identity)
-- [Platform access](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-platform-access)
-- [Prerequisites for a landing zone](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-landing-zones)
+- [Microsoft Entra ID and Hybrid Identity](/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-active-directory-hybrid-identity)
+- [Platform access](/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-platform-access)
+- [Prerequisites for a landing zone](/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-landing-zones)
 
 ## Comparing identity solutions
 
@@ -34,7 +34,7 @@ Although the three Active Directory-based identity solutions share a common name
 * **Microsoft Entra Domain Services (Microsoft Entra Domain Services)** - Provides managed domain services with a subset of fully compatible traditional AD DS features such as domain join, group policy, LDAP, and Kerberos / NTLM authentication.
     * Microsoft Entra Domain Services integrates with Microsoft Entra ID, which itself can synchronize with an on-premises AD DS environment. This ability extends central identity use cases to traditional web applications that run in Azure as part of a lift-and-shift strategy.
 
-For a more extensive discussion comparing these three options, see [Compare self-managed Active Directory Domain Services, Microsoft Entra ID, and managed Microsoft Entra Domain Services](https://learn.microsoft.com/azure/active-directory-domain-services/compare-identity-solutions).
+For a more extensive discussion comparing these three options, see [Compare self-managed Active Directory Domain Services, Microsoft Entra ID, and managed Microsoft Entra Domain Services](/azure/active-directory-domain-services/compare-identity-solutions).
 
 ## Cross cutting Design recommendations
 

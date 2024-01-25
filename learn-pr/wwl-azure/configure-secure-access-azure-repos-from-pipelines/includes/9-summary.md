@@ -9,9 +9,9 @@ You learned how to:
 
 ## Learn more
 
-- [Configure permissions.](https://learn.microsoft.com/azure/devops/artifacts/feeds/feed-permissions)
-- [Set pipeline permissions.](https://learn.microsoft.com/azure/devops/pipelines/policies/permissions)
-- [Set secret variables](https://learn.microsoft.com/azure/devops/pipelines/process/set-secret-variables)
-- [Publish and download pipeline Artifacts](https://learn.microsoft.com/azure/devops/pipelines/artifacts/pipeline-artifacts)
-- [Use Azure Key Vault secrets in Azure Pipelines](https://learn.microsoft.com/azure/devops/pipelines/release/azure-key-vault)
-- [Review logs to diagnose pipeline issues](https://learn.microsoft.com/azure/devops/pipelines/troubleshooting/review-logs)
+- [Configure permissions.](/azure/devops/artifacts/feeds/feed-permissions)
+- [Set pipeline permissions.](/azure/devops/pipelines/policies/permissions)
+- [Set secret variables](/azure/devops/pipelines/process/set-secret-variables)
+- [Publish and download pipeline Artifacts](/azure/devops/pipelines/artifacts/pipeline-artifacts)
+- [Use Azure Key Vault secrets in Azure Pipelines](/azure/devops/pipelines/release/azure-key-vault)
+- [Review logs to diagnose pipeline issues](/azure/devops/pipelines/troubleshooting/review-logs)

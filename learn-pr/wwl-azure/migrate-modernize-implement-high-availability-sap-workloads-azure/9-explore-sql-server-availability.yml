@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.explore-sql-server-availability
+title: Explore SQL Server high availability for SAP in Azure
+metadata:
+  title: Explore SQL Server high availability for SAP in Azure
+  description: "Explore SQL Server high availability for SAP in Azure"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/9-explore-sql-server-availability.md)]

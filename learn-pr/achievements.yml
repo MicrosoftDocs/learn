@@ -897,6 +897,16 @@ achievements:
   title: Explore the Azure portal
   summary: This module introduces you to features of the Azure portal and provides you with experience configuring, navigating, and customizing the Azure portal UI.
   iconUrl: /training/achievements/azure-portal-explore.svg
+- uid: learn.advocates.responsible-bots.badge
+  type: badge
+  title: Create a chatbot to help students learn geography
+  summary: Learn how to build a basic bot that helps students with geography facts.
+  iconUrl: /training/achievements/advocates/responsible-bots.svg
+- uid: learn.advocates.responsible-bots-introduction.badge
+  type: badge
+  title: Introduction to responsible bots
+  summary: Find out how to make a bot responsible. Learn about responsible conversational AI. Discover Azure AI services tools that help make bots engaging and trustworthy.
+  iconUrl: /training/achievements/responsible-bots-introduction.svg
 - uid: learn.wwl.explore-azure-iot-services.badge
   type: badge
   title: Explore Azure IoT services
@@ -1862,6 +1872,11 @@ achievements:
   title: Work with data in Azure Databricks
   summary: To work with data in Azure Databricks, you can use the *dataframe* object.
   iconUrl: /training/achievements/work-with-data-in-azure-databricks.svg
+- uid: learn.advocates.deploy-responsible-bot.badge
+  type: badge
+  title: Deploy a customer service bot
+  summary: Learn how to deploy a bot that can collect user input. Improve customer service by making the bot responsible.
+  iconUrl: /training/achievements/deploy-responsible-bot.svg
 - uid: learn.wwl.train-machine-learning-model-azure-databricks.badge
   type: badge
   title: Train a machine learning model with Azure Databricks
@@ -1997,6 +2012,11 @@ achievements:
   title: 'SC-100: Design a strategy for data and applications'
   summary: Learn how to design a cybersecurity strategy for data and applications.
   iconUrl: /training/achievements/sc-100-design-a-strategy-for-data-and-applications.svg
+- uid: learn.responsible-bots.trophy
+  type: trophy
+  title: Responsible bots
+  summary: Responsible chatbots imitate human behavior but are also useful, reliable, unbiased, and culturally aware. They respect privacy and welcome diverse users.
+  iconUrl: /training/achievements/responsible-bots.svg  
 - uid: learn.wwl.sc-100-design-security-for-infrastructure.trophy
   type: trophy
   title: 'SC-100: Design security for infrastructure'
@@ -2287,6 +2307,31 @@ achievements:
   title: Choose the best AI service for your needs
   summary: Examine Azure's AI services, and choose the right one for your company.
   iconUrl: /training/achievements/ai-machine-learning-fundamentals.svg
+- uid: learn.wwl.prepare-for-ai-engineering.trophy
+  type: trophy
+  title: Prepare for AI engineering
+  summary: AI Engineers design and develop intelligent solutions that encapsulate artificial intelligence (AI) capabilities. As an aspiring Azure AI Engineer, it's important to understand some of the key foundational concepts on which AI is based, and the various services in Microsoft Azure that you can use to build AI solutions.
+  iconUrl: /training/achievements/ai-prepare-for-engineering.svg
+- uid: learn.wwl.process-translate-speech-azure-cognitive-speech-services.trophy
+  type: trophy
+  title: Process and Translate Speech with Azure AI Speech Services
+  summary: Learn how to develop speech-enabled applications by using the Speech service.
+  iconUrl: /training/achievements/process-translate-speech-azure-cognitive-speech-services.svg
+- uid: learn.wwl.provision-manage-azure-cognitive-services.trophy
+  type: trophy
+  title: Provision and manage Azure AI Services
+  summary: Azure AI Services are building blocks of AI functionality that you can integrate into your applications. In this learning path, you'll learn how to provision, secure. monitor, and deploy Azure AI Services resources and use them to build intelligent solutions.
+  iconUrl: /training/achievements/provision-and-manage-azure-cognitive-services.svg
+- uid: learn.wwl.process-translate-text-azure-cognitive-services.trophy
+  type: trophy
+  title: Process and translate text with Azure AI Services
+  summary: A large volume of the data that applications need to process is in text format. Using Azure AI Services, you can create apps that extract semantic meaning from text and translate it between languages.
+  iconUrl: /training/achievements/process-and-translate-text-with-azure-cognitive-services.svg
+- uid: learn.wwl.create-manage-cognitive-services.badge
+  type: badge
+  title: Create and consume Azure AI Services
+  summary: Azure AI Services enable developers to easily add AI capabilities into their applications. Learn how to create and consume these services.
+  iconUrl: /training/achievements/create-and-manage-cognitive-services.svg
 - uid: learn.azure.azure-devops-devtest-labs.badge
   type: badge
   title: Choose the best tools to help organizations build better solutions
@@ -2672,3 +2717,43 @@ achievements:
   title: Create a regression model with Azure Machine Learning designer
   summary: Regression is a supervised machine learning technique used to predict numeric values. Learn how to create regression models using Azure Machine Learning designer.
   iconUrl: /training/achievements/create-regression-model-azure-machine-learning-designer.svg
+- uid: learn.microservices-logging-aspnet-core.badge
+  type: badge
+  title: Instrument a cloud-native ASP.NET Core microservice
+  summary: Learn how to instrument your cloud-native ASP.NET Core microservices app to diagnose problems and monitor performance.
+  iconUrl: /training/achievements/aspnetcore/microservices-logging-aspnet-core-social.png
+- uid: learn.microservices-data-aspnet-core.badge
+  type: badge
+  title: Use managed data stores in a cloud-native ASP.NET Core microservices app
+  summary: Modify a cloud-native ASP.NET Core microservices app to use managed data stores in Azure.
+  iconUrl: /training/achievements/aspnetcore/microservices-data-aspnet-core-social.png
+- uid: learn.microservices-aspnet-core.badge
+  type: badge
+  title: Create and deploy a cloud-native ASP.NET Core microservice
+  summary: Create and deploy an ASP.NET Core microservice to AKS.
+  iconUrl: /training/achievements/aspnetcore/microservices-aspnet-core-social.png
+- uid: learn.microservices-apigateway-aspnet-core.badge
+  type: badge
+  title: Understand API gateways in a cloud-native ASP.NET Core microservices app
+  summary: Learn to modify cloud-native ASP.NET Core microservices app to understand API gateways in Azure.
+  iconUrl: /training/achievements/aspnetcore/microservices-apigateway-aspnet-core-social.png
+- uid: learn.azure.deploy-elastic-cloud-kubernetes-azure.badge
+  type: badge
+  title: Deploy Elastic Cloud on Kubernetes on Azure Kubernetes Service
+  summary: Learn how to deploy Elastic Cloud on Kubernetes on Azure Kubernetes Service (AKS).
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azdo.deploy-java-containers.badge
+  type: badge
+  title: Automate Java container deployments with Azure Pipelines
+  summary: Implement an Azure Pipelines continuous integration and continuous deployment (CI/CD) pipeline for Java containers.
+  iconUrl: /training/achievements/azure-devops/deploy-java-containers.svg
+- uid: learn.azdo.deploy-nodejs.badge
+  type: badge
+  title: Guided project - Automate Node.js deployments with Azure Pipelines
+  summary: Implement CI/CD pipeline for Node.js applications. Automate deployment of Vue, React, Angular or Webpack apps with Azure Pipelines.
+  iconUrl: /training/achievements/azure-devops/deploy-nodejs.svg
+- uid: learn.wwl.challenge-project-create-rock-paper-scissors-game-with-github-copilot.badge
+  type: badge
+  title: Challenge project - Develop foreach and if-elseif-else structures to process array data in C#
+  summary: Demonstrate your ability to update a console app that implements arrays, foreach loops, and if statements in response to a user requested feature update.
+  iconUrl: /training/achievements/generic-badge.svg

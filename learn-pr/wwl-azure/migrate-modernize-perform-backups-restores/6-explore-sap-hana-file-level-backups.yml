@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-perform-backups-restores.explore-sap-hana-file-level-backups
+title: Explore SAP HANA file-level backups
+metadata:
+  title: Explore SAP HANA file-level backups
+  description: "Explore SAP HANA file-level backups"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-explore-sap-hana-file-level-backups.md)]
