@@ -7,7 +7,7 @@ More specifically, you need to verify that the data types of the input columns a
 To apply a model on new data in Microsoft Fabric, you should store the new data as a **Delta table** in a lakehouse.
 
 > [!Tip]
-> Learn more about how to [ingest data into a Microsoft Fabric lakehouse](https://learn.microsoft.com/training/modules/ingest-data-with-spark-fabric-notebooks/?azure-portal=true).
+> Learn more about how to [ingest data into a Microsoft Fabric lakehouse](/training/modules/ingest-data-with-spark-fabric-notebooks/?azure-portal=true).
 
 You can store a PySpark dataframe `df` as a Delta lake `new_table` in a lakehouse by using the following code:
 

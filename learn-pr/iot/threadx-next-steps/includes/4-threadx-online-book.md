@@ -26,7 +26,7 @@ The online book was designed to be read in sequence, starting with Chapter 1. Ho
 
 ## Sample book chapter
 
-You should download the [ThreadX online book](https://github.com/Azure-Samples/azure-rtos-learn-samples/releases/download/book/Real-Time_Embedded_Multithreading_with_ThreadX_4th_Edition.pdf), which is a PDF with hyperlinks. After you've downloaded the book, navigate to Chapter 4 in the Table of Contents. All the entries in the Table of Contents are hyperlinks, which permits you to access any part of the book. Following are the topics in Chapter 4, which are also hyperlinks.
+You should download the [ThreadX online book](https://github.com/eclipse-threadx/threadx-learn-samples/releases/tag/book), which is a PDF with hyperlinks. After you've downloaded the book, navigate to Chapter 4 in the Table of Contents. All the entries in the Table of Contents are hyperlinks, which permits you to access any part of the book. Following are the topics in Chapter 4, which are also hyperlinks.
 
 - Chapter 4 RTOS Building Blocks for System Development
 - Introduction

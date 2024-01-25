@@ -10,7 +10,7 @@ We provide two ways for setting up your environment:
 
 ## Use GitHub Codespace
 
-1. Fork the [azure-rtos-learn-samples](https://github.com/Azure-Samples/azure-rtos-learn-samples) GitHub repo to your own GitHub account. Codespaces requires read/write access which is why a fork is necessary.
+1. Fork the [Eclipse ThreadX Learning Samples](https://github.com/eclipse-threadx/threadx-learn-samples) GitHub repo to your own GitHub account. Codespaces requires read/write access which is why a fork is necessary.
 
 1. From the forked repo page, create a new codespace. Wait until the codespace is set up.
 
@@ -27,7 +27,7 @@ We provide two ways for setting up your environment:
 
 1. Download and install latest [Visual Studio](https://visualstudio.microsoft.com/) with the **Desktop development with C++** workload. You can use the Community version, which is free of charge.
 
-1. Download and unzip latest [sample projects for Visual Studio](https://github.com/Azure-Samples/azure-rtos-learn-samples/releases/tag/vs).
+1. Download and unzip latest [sample projects for Visual Studio](https://github.com/eclipse-threadx/threadx-learn-samples/releases/tag/vs).
 
 1. Open `training_projects\azure_rtos_threadx_training.sln` in Visual Studio and follow the instructions of the unit to build and run the project.
 
@@ -37,6 +37,6 @@ We provide two ways for setting up your environment:
 
 ## Reference documentation
 
-- [Azure RTOS ThreadX documentation](/azure/rtos/threadx)
-- [Azure RTOS ThreadX User Guide](/azure/rtos/threadx/about-this-guide)
-- [Azure RTOS GitHub repositories](https://github.com/azure-rtos)
+- [Eclipse ThreadX documentation](https://github.com/eclipse-threadx/rtos-docs)
+- [Eclipse ThreadX User Guide](https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/threadx/about-this-guide.md)
+- [Eclipse ThreadX GitHub repositories](https://github.com/eclipse-threadx)

@@ -9991,6 +9991,61 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/index.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/1-introduction.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/2-responsible-bot-principles.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/3-create-sample-bot.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/4-run-bot-locally.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/5-deploy-bot.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/6-test-bot.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/7-connect-communication-channels.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/8-knowledge-check.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/9-summary.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.advocates.deploy-responsible-bot.badge.yml",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/examine-components-iot-solution/index.md",
       "redirect_url": "/training/browse/?products=azure&terms=iot",
       "redirect_document_id": false
@@ -12449,6 +12504,101 @@
     {
       "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/8-summary.yml",
       "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots-introduction/index.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots-introduction/1-introduction.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots-introduction/2-what-is-responsible-bot.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots-introduction/3-how-responsible-bot-works.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots-introduction/4-when-to-use-responsible-bot.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots-introduction/5-knowledge-check.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots-introduction/6-summary.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/index.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/1-introduction.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/2-bot-framework-responsible-principles.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/3-install-visual-studio.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/4-create-bot.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/5-run-bot.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/6-add-dictionary.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/7-edit-welcome-message.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/8-knowledge-check.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/9-summary.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.advocates.responsible-bots.badge.yml",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.advocates.responsible-bots-introduction.badge.yml",
+      "redirect_url": "/training/paths/copilot-solutions/",
       "redirect_document_id": false
     },
     {
@@ -19994,6 +20144,11 @@
     {
       "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/3-perform.md",
       "redirect_url": "/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/responsible-bots/index.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
       "redirect_document_id": false
     },
     {
@@ -31717,6 +31872,71 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/aspnetcore/blazor-introduction/3-when-to-use-blazor.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/blazor-introduction/4-when-to-use-blazor",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/blazor-introduction/4-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/blazor-introduction/5-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/blazor-introduction/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/blazor-introduction/6-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/2-understand-blazor-webassembly.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/2-configure-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/3-exercise-configure-enviromnent.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/3-exercise-configure-environment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/4-blazor-components.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/4-blazor-components",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/5-exercise-add-component.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/5-exercise-add-component",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/6-csharp-razor-binding.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/6-data-binding",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/7-exercise-razor-binding.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/7-exercise-data-binding",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/9-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.build-web-app-blazor-webassembly-vscode.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/achievements/learn.build-your-first-blazor-web-app.badge",
+      "redirect_document_id": true
+    },
+    {
         "source_path": "learn-pr/aspnetcore/microservices-logging-aspnet-core/2-environment-setup.yml",
         "redirect_url": "/training/paths/create-microservices-with-dotnet",
         "redirect_document_id": false
@@ -31915,6 +32135,41 @@
         "source_path": "learn-pr/aspnetcore/microservices-apigateway-aspnet-core/verify-deployment.yml",
         "redirect_url": "/training/paths/create-microservices-with-dotnet",
         "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/challenge-project-create-rock-paper-scissors-game-with-github-copilot/index.md",
+      "redirect_url": "/training/modules/challenge-project-create-mini-game-with-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/challenge-project-create-rock-paper-scissors-game-with-github-copilot/4-exercise-update-calculations.md",
+      "redirect_url": "/training/modules/challenge-project-create-mini-game-with-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/challenge-project-create-rock-paper-scissors-game-with-github-copilot/3-exercise-update-output.md",
+      "redirect_url": "/training/modules/challenge-project-create-mini-game-with-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/challenge-project-create-rock-paper-scissors-game-with-github-copilot/1-introduction.md",
+      "redirect_url": "/training/modules/challenge-project-create-mini-game-with-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/challenge-project-create-rock-paper-scissors-game-with-github-copilot/5-knowledge-check.md",
+      "redirect_url": "/training/modules/challenge-project-create-mini-game-with-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/challenge-project-create-rock-paper-scissors-game-with-github-copilot/2-prepare.md",
+      "redirect_url": "/training/modules/challenge-project-create-mini-game-with-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/challenge-project-create-rock-paper-scissors-game-with-github-copilot/6-summary.md",
+      "redirect_url": "/training/modules/challenge-project-create-mini-game-with-copilot/",
+      "redirect_document_id": false
     }
   ]
 }
