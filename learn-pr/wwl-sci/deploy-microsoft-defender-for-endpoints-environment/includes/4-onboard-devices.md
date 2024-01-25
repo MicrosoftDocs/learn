@@ -1,9 +1,9 @@
 
 ## Configure Device discovery
 
-When accessing your Microsoft 365 Defender portal settings for Endpoints for the first time, the first step is to configure Device discovery. You must be a global administrator or security administrator for the tenant.
+When accessing your Microsoft Defender portal settings for Endpoints for the first time, the first step is to configure Device discovery. You must be a global administrator or security administrator for the tenant.
 
-1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Settings** from the left.
+1. On the **Microsoft Defender XDR** portal, from the navigation menu, select **Settings** from the left.
 
 1. In the Settings menu page, select Device discovery.
 
@@ -21,13 +21,13 @@ When accessing your Microsoft 365 Defender portal settings for Endpoints for the
 ## Onboard devices
 
 
-You need to go to the onboarding section of the Microsoft 365 Defender portal to onboard any of the supported devices.  Depending on the device, you are guided with appropriate steps and provided management and deployment tool options suitable for the device.
+You need to go to the onboarding section of the Microsoft Defender portal to onboard any of the supported devices.  Depending on the device, you are guided with appropriate steps and provided management and deployment tool options suitable for the device.
 
 In general, to onboard devices to the service:
 
 - Verify that the device fulfills the minimum requirements
 
-- Depending on the device, follow the configuration steps provided in the onboarding section of the Microsoft 365 Defender portal
+- Depending on the device, follow the configuration steps provided in the onboarding section of the Microsoft Defender portal
 
 - Use the appropriate management tool and deployment method for your devices
 

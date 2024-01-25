@@ -9,19 +9,19 @@ You've learned how to:
 
 ## Learn more with security documentation
 
-- [Azure identity and access management design area - Cloud Adoption Framework](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access)
-- [External Identities in Microsoft Entra ID - Microsoft Entra](https://learn.microsoft.com/azure/active-directory/external-identities/external-identities-overview)
-- [Continuous access evaluation in Microsoft Entra ID - Microsoft Entra](https://learn.microsoft.com/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
-- [Conditional Access design principles and dependencies - Azure Architecture Center](https://learn.microsoft.com/azure/architecture/guide/security/conditional-access-design)
-- [Deploy AD DS in an Azure virtual network - Azure Architecture Center](https://learn.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain)
-- [Secure Microsoft Entra Domain Services](https://learn.microsoft.com/azure/active-directory-domain-services/secure-your-domain)
-- [Overview of Key Management in Azure](https://learn.microsoft.com/azure/security/fundamentals/key-management)
-- [Best practices for using Azure Key Vault](https://learn.microsoft.com/azure/key-vault/general/best-practices)
-- [What is Azure Key Vault?](https://learn.microsoft.com/azure/key-vault/general/basic-concepts)
+- [Azure identity and access management design area - Cloud Adoption Framework](/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access)
+- [External Identities in Microsoft Entra ID - Microsoft Entra](/azure/active-directory/external-identities/external-identities-overview)
+- [Continuous access evaluation in Microsoft Entra ID - Microsoft Entra](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
+- [Conditional Access design principles and dependencies - Azure Architecture Center](/azure/architecture/guide/security/conditional-access-design)
+- [Deploy AD DS in an Azure virtual network - Azure Architecture Center](/azure/architecture/reference-architectures/identity/adds-extend-domain)
+- [Secure Microsoft Entra Domain Services](/azure/active-directory-domain-services/secure-your-domain)
+- [Overview of Key Management in Azure](/azure/security/fundamentals/key-management)
+- [Best practices for using Azure Key Vault](/azure/key-vault/general/best-practices)
+- [What is Azure Key Vault?](/azure/key-vault/general/basic-concepts)
 
 ## Learn more with reference architectures
 
-- [Microsoft Entra security for AWS - Azure Architecture Center](https://learn.microsoft.com/azure/architecture/reference-architectures/aws/aws-azure-ad-security)
+- [Microsoft Entra security for AWS - Azure Architecture Center](/azure/architecture/reference-architectures/aws/aws-azure-ad-security)
 
 > [!NOTE]
 > This modules contains AI-generated content.

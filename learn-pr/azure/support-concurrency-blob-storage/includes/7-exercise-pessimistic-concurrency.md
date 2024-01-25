@@ -1,4 +1,4 @@
-﻿Now that you have seen optimistic concurrency, you decide to implement a pessimistic approach to concurrency. In this example, you use a lease to lock the blob in Azure Blob storage while the reporter writes their story. 
+﻿Now that you've seen optimistic concurrency, you decide to implement a pessimistic approach to concurrency. In this example, you'll use a lease to lock the blob in Azure Blob storage while the reporter writes their story. 
 
 In this exercise you'll:
 
@@ -7,7 +7,7 @@ In this exercise you'll:
 
 ## Add pessimistic concurrency to the existing code
 
-1. Open the Program.cs file.
+1. Open the Program.cs file:
 
     ```bash
     code Program.cs
@@ -76,7 +76,7 @@ In this exercise you'll:
 
     This code modifies the simulated news editor app to acquire a lease on the blob before the reporter starts writing their story. The first reporter to perform this action acquires the lease. Other users who attempt to acquire a lease while the blob is locked will receive an error.
 
-1. Save your changes with CTRL+S.
+1. Save your changes with <kbd>CTRL+S</kbd>.
 
 ## Test the changes
 
@@ -110,4 +110,4 @@ In this exercise you'll:
     This time, Reporter B is unable to acquire a lease on the blob, and the news editor application prevents them from continuing.
 
 > [!TIP]
-> If you have been unable to complete this unit, you can find a fully working version in the PessimisticNewsEditor directory. After adding your storage account connection string, you run the app with `dotnet run`.
+> If you've been unable to complete this unit, you can find a fully working version in the *PessimisticNewsEditor* directory. After adding your storage account connection string, you run the app with `dotnet run`.

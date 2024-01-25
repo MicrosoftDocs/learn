@@ -3,12 +3,11 @@ uid: learn.wwl.guided-project-classes-methods-properties.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "The purpose of this lesson is to begin building the LangtonsAnts project using classes and methods."
-  ms.date: 11/24/2023
+  description: "The purpose of this lesson is to begin building the Langton's Ant project using classes and methods."
+  ms.date: 01/11/2024
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: unit
-  ms.technology: (empty)
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

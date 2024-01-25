@@ -1,5 +1,3 @@
-
-
 Your goal was to gain additional control over the iteration process by implementing the `for` statement in your code.
 
 Modifying the *initializer*, *condition*, and *iterator* of a `for` statement provides precise control over the iteration logic.

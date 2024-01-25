@@ -72,7 +72,7 @@ modules:
 - learn.design-monitoring-strategy-on-azure
 - learn.azure.monitor-azure-vm-using-diagnostic-data
 - learn.analyze-infrastructure-with-azure-monitor-logs
-- learn.monitor-vm-performance-using-azure-monitor-for-vms
+- learn.azure.monitor-azure-vm-using-diagnostic-data
 - learn.incident-response-with-alerting-on-azure
 # - learn.capture-page-load-times-application-insights
 - learn.protect-virtual-machines-with-azure-backup

@@ -8,7 +8,7 @@ Now that you've finished this module, you should be able to:
 
 ## References
 
-- [Enabling and setting up GitHub Copilot for Business](https://docs.github.com/copilot/managing-copilot-for-business/enabling-and-setting-up-github-copilot-for-business)
+- [Enabling and setting up GitHub Copilot for Business](https://docs.github.com/en/copilot/managing-copilot-business/enabling-and-setting-up-github-copilot-business)
 - [About GitHub Copilot for Business](https://docs.github.com/copilot/overview-of-github-copilot/about-github-copilot-for-business)
 - [Coyote Logistics saves countless developer hours with GitHub's cutting-edge offerings](https://github.com/customer-stories/coyote-logistics)
 - [Duolingo empowers its engineers to be force multipliers for expertise with GitHub Copilot, Codespaces](https://github.com/customer-stories/duolingo)

@@ -4,11 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 11/24/2023
+  ms.date: 01/11/2024
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: unit
-  ms.technology: (empty)
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

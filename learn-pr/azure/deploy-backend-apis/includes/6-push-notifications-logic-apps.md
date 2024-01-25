@@ -16,7 +16,7 @@ Azure Logic Apps supports hundreds of connectors with services like Salesforce, 
 
 ### Manipulate and retrieve data with Azure SQL and SQL Server connectors for Azure Logic Apps
 
-Azure Logic Apps supports rich capabilities to integrate with SQL Server and Azure SQL. Since the connection is made similar to how you would make with tools including SQL Server Management Studio (SSMS) and Azure Data Studio (ADS), the connectors work for on-premises installations of SQL Server as well as all deployment options of Azure SQL (SQL Database, SQL Managed Instance, and SQL Server in Azure VM). Azure Logic Apps has connectors for **Triggers**, which means that when something happens in SQL Server/Azure SQL it could trigger the Logic App. The list of triggers includes:
+Azure Logic Apps supports rich capabilities to integrate with SQL Server and Azure SQL. Because the connection is made similar to how you would make with tools including SQL Server Management Studio (SSMS) and Azure Data Studio (ADS), the connectors work for on-premises installations of SQL Server as well as all deployment options of Azure SQL (SQL Database, SQL Managed Instance, and SQL Server in Azure VM). Azure Logic Apps has connectors for **Triggers**, which means that when something happens in SQL Server/Azure SQL it could trigger the Logic App. The list of triggers includes:
 
 * When an item is created
 * When an item is modified
@@ -34,8 +34,8 @@ Azure Logic Apps also has connectors for **Actions**, which means that once a Lo
 * Update row
 
 > [!TIP]
-> While Azure Functions is used for this solution, you might be wondering if Azure Logic Apps could be used instead. It is possible, and we challenge you to try it out if you want to work more with Azure Logic Apps and low-code/no-code environments.
+> While we use Azure Functions for this solution, you might be wondering if you could use Azure Logic Apps. It's possible, and we challenge you to try it out if you want to work more with Azure Logic Apps and low-code/no-code environments.
 
 ### Send emails using the Outlook connector for Azure Logic Apps
 
-Azure Logic Apps also supports various connectors for Outlook around sending and receiving as well as tasks. In the bus-catching scenario, the Outlook connector will be used to create a connection to an email account and be able to send email notifications when a bus enters or exits a geofence. In the exercise, you'll get to see how this connection is created, configured, and triggered.
+Azure Logic Apps also supports various connectors for Outlook around sending and receiving as well as tasks. In the bus-catching scenario, we'll use the Outlook connector to create a connection to an email account and be able to send email notifications when a bus enters or exits a geofence. In the next exercise, you'll get to see you can create, configure, and trigger this connection.

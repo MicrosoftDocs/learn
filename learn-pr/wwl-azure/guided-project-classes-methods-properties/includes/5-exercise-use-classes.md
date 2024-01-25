@@ -6,10 +6,10 @@ In your Program.cs file, you begin by modifying the 'for' loops you created earl
 
 1. Delete the `Console.Write($"{game.Field[i, j]}  ")` in your inner loop and replace it with the following line 'char fieldChar = '░';'.
 
-1. Now check to see if an ant exists in your collection at the current location by adding the following line, 'Ant? ant = game.Ants.FirstOrDefault(a => (i == a.I) && (j == a.J))'.
+1. Now check to see if an ant exists in your collection at the current location by adding the following line, 'Ant? ant = game.Ants.FirstOrDefault(a => (i == a.i) && (j == a.j))'.
 
     ```csharp
-    using LangtonsAnts;
+    using LangtonsAnt;
 
     void Print(Game game)
     {
@@ -20,7 +20,7 @@ In your Program.cs file, you begin by modifying the 'for' loops you created earl
                 char fieldChar = '░'; 
 
                 // Check for an ant in your collection
-                Ant? ant = game.Ants.FirstOrDefault(a => (i == a.I) && (j == a.J));
+                Ant? ant = game.Ants.FirstOrDefault(a => (i == a.i) && (j == a.j));
             }     
             Console.WriteLine();
         }
@@ -34,7 +34,7 @@ In your Program.cs file, you begin by modifying the 'for' loops you created earl
 1. If there's an ant, print the symbol for its direction, as shown in the 'if' and Switch statements.
 
     ```csharp
-    using LangtonsAnts;
+    using LangtonsAnt;
 
     void Print(Game game)
     {
@@ -45,7 +45,7 @@ In your Program.cs file, you begin by modifying the 'for' loops you created earl
                 char fieldChar = '░'; 
 
                 // If ant is at the cell, display ant direction instead of color value
-                Ant? ant = game.Ants.FirstOrDefault(a => (i == a.I) && (j == a.J));
+                Ant? ant = game.Ants.FirstOrDefault(a => (i == a.i) && (j == a.j));
 
                 if (ant != null)
                 {
@@ -79,7 +79,7 @@ In your Program.cs file, you begin by modifying the 'for' loops you created earl
 4. Add an 'else' clause to the 'if' statement as shown.
 
     ```csharp
-    using LangtonsAnts;
+    using LangtonsAnt;
 
     void Print(Game game)
     {
@@ -90,7 +90,7 @@ In your Program.cs file, you begin by modifying the 'for' loops you created earl
                 char fieldChar = '░'; 
 
                 // If ant is at the cell, display ant direction instead of color value
-                Ant? ant = game.Ants.FirstOrDefault(a => (i == a.I) && (j == a.J));
+                Ant? ant = game.Ants.FirstOrDefault(a => (i == a.i) && (j == a.j));
 
                 if (ant != null)
                 {
@@ -126,7 +126,7 @@ In your Program.cs file, you begin by modifying the 'for' loops you created earl
 1. Finally, change the 'Console.WriteLine() after the 'else' clause to print the 'fieldChar' variable with the new grid character.
 
     ```csharp
-    using LangtonsAnts;
+    using LangtonsAnt;
     
     void Print(Game game)
     {
@@ -137,7 +137,7 @@ In your Program.cs file, you begin by modifying the 'for' loops you created earl
                 char fieldChar = '░'; 
     
                 // If the ant is at the cell, display ant direction instead of color value
-                Ant? ant = game.Ants.FirstOrDefault(a => (i == a.I) && (j == a.J));
+                Ant? ant = game.Ants.FirstOrDefault(a => (i == a.i) && (j == a.j));
     
                 if (ant != null)
                 {
@@ -177,7 +177,7 @@ As you have substantially modified this method, you must rearrange the Console.W
 Your code should look like this.
 
 ```csharp
-using LangtonsAnts;
+using LangtonsAnt;
 
 void Print(Game game)
 {
@@ -188,7 +188,7 @@ void Print(Game game)
             char fieldChar = '░'; 
 
             // If the ant is at the cell, display ant direction instead of color value
-            Ant? ant = game.Ants.FirstOrDefault(a => (i == a.I) && (j == a.J));
+            Ant? ant = game.Ants.FirstOrDefault(a => (i == a.i) && (j == a.j));
 
             if (ant != null)
             {
@@ -220,11 +220,11 @@ void Print(Game game)
 }
 ```
 
-## Housekeeping
+## Housekeeping tasks
 
 The last thing you need to do is delete the testing code you created. In your testing code, you create a Game object, make calls to the Print method where you pass in the Game object, call the NextGeneration method and, finally, print the state of the game. You can delete this code.
 
-You now need to create an instance of the game below the 'using LangtonsAnts' statement. You can put your call into the Print method just below it.
+You now need to create an instance of the game below the 'using LangtonsAnt' statement. You can put your call into the Print method just below it.
 
 1. Delete the following lines at the bottom of your Program.cs file.
 
@@ -242,7 +242,7 @@ You now need to create an instance of the game below the 'using LangtonsAnts' st
 1. At the top of your Program.cs, create a Game object and pass it to your Print method as shown.
 
     ```csharp
-    using LangtonsAnts;
+    using LangtonsAnt;
     
     Game game = new Game(16);
     Print(game);
@@ -378,8 +378,7 @@ In this task, you save build and run the code to verify the output is correct.
 
 1. Type __dotnet run__ and press Enter.
 
-Your output should look like this.
-
-![Screenshot showing VS Code output.](../media/guided-proj-3.jpg)
+    Your output should look like this.
+    ![Screenshot showing VS Code output.](../media/guided-proj-3.jpg)
 
 Now that you have added code to read user input, you should be able to press Enter to create and display new instances of the game.

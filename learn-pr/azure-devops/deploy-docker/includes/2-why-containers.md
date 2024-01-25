@@ -1,14 +1,14 @@
-In this part, you follow the Tailspin team as they discuss some much-needed improvements to their DevOps process. In this scenario, the team uses Docker to containerize their web application. The team then updates their CI/CD pipeline to support it.
+In this unit, you'll follow the Tailspin team as they discuss some much-needed improvements to their DevOps process. In this scenario, the team uses Docker to containerize their web application. The team then updates their CI/CD pipeline to support it.
 
 ## It's been a few rough weeks
 
-The past few weeks have been a challenging time at Tailspin. Teams struggle to meet deadlines for a number of reasons, and there has been concern over productivity across the company. Andy has called some key stakeholders from the Space Game website team together to gather feedback for an upcoming presentation to management.
+The past few weeks have been a challenging time at Tailspin. Teams struggle to meet deadlines for a number of reasons, and there's been concern over productivity across the company. Andy has called some key stakeholders from the Space Game website team together to gather feedback for an upcoming presentation to management.
 
 **Andy:** Thanks for stopping by. I know the last few weeks have been rough for everyone, but I have some good news. Management is holding an offsite tomorrow to hear proposals on changes we can make to improve performance. They've invited me to present a case study on our DevOps successes and said they're also open to any other ideas we might have. I was hoping we could use this meeting as an opportunity to brainstorm. Who wants to go first?
 
 *Everyone looks at Amita. She has been especially frustrated lately.*
 
-**Amita:** I'll go first. As you know, I test for multiple teams, and it can be challenging since each team uses their own technology stack. And even when they use the same underlying platforms, like .NET or Java, they often target different versions. I feel like I sometimes spend half of my day simply getting test environments in a state where they can run the code I need to test. When something doesn't work, it's hard to tell whether there's a bug in the code or if I accidentally configured version 4.2.3 instead of 4.3.2.
+**Amita:** I'll go first. As you know, I test for multiple teams, and it can be challenging because each team uses their own technology stack. Even when they use the same underlying platforms, like .NET or Java, they often target different versions. I feel like I sometimes spend half of my day simply getting test environments in a state where they can run the code I need to test. When something doesn't work, it's hard to tell whether there's a bug in the code or if I accidentally configured version 4.2.3 instead of 4.3.2.
 
 *Andy writes "Dependency versioning challenges for QA" on the whiteboard.*
 
@@ -22,9 +22,9 @@ The past few weeks have been a challenging time at Tailspin. Teams struggle to m
 
 **Andy:** I think this conversation is a good start. Let me research these issues and see what I can come up with. Here are the concerns that I heard:
 
-- Dependency versioning challenges for QA.
-- Overhead due to solving app isolation with VMs.
-- Configuration inconsistencies between deployment stages.
+- Dependency versioning challenges for QA
+- Overhead due to solving app isolation with VMs
+- Configuration inconsistencies between deployment stages
 
 ## Putting it all together (in one container)
 
@@ -46,7 +46,7 @@ The next morning, Andy calls a meeting to present a new idea to the team.
 
 **Mara:** How hard is it to develop a container application? Do we have to make significant changes to our existing code?
 
-**Andy:** Containers are more of a packaging and deployment technology. They don't impact the fundamental software we're writing. We can just instruct our tools to produce a Docker container at the end of the build. Then, when we debug, the application will run out of that local container instead of our local web server. In fact, tools like Visual Studio even let you switch between debug environments like Docker and IIS Express to give us the flexibility we need. I actually forked our web site project last night and converted it to build as a Docker container to test out the process. I only needed to add some basic container configuration; I didn't need to change any of our existing code.
+**Andy:** Containers are more of a packaging and deployment technology. They don't impact the fundamental software we're writing. We can just instruct our tools to produce a Docker container at the end of the build. Then, when we debug, the application runs out of that local container instead of our local web server. In fact, tools like Visual Studio even let you switch between debug environments like Docker and IIS Express to give us the flexibility we need. I actually forked our web site project last night and converted it to build as a Docker container to test out the process. I only needed to add some basic container configuration; I didn't need to change any of our existing code.
 
 **Mara:** That's great to know. I bet we can even update the release pipeline in Azure Pipelines from your fork to build and deploy the Docker version.
 
@@ -54,14 +54,14 @@ The next morning, Andy calls a meeting to present a new idea to the team.
 
 ## What is Docker?
 
-Docker is a technology for automating the packaging and deployment of portable, self-sufficient containers. Docker containers can be run anywhere a Docker host is found, whether on a development machine, a departmental server, an enterprise datacenter, or in the cloud. Azure provides multiple ways to run container-based applications, including App Service or as part of clusters managed with orchestration technologies like Kubernetes.
+Docker is a technology for automating the packaging and deployment of portable, self-sufficient containers. Docker containers can run anywhere a Docker host is found, whether on a development machine, a departmental server, an enterprise datacenter, or in the cloud. Azure provides multiple ways to run container-based applications, including App Service or as part of clusters managed with orchestration technologies like Kubernetes.
 
 The Tailspin team selected Docker containers for this scenario because it met all their needs:
 
-- Dependency versioning challenges for QA: applications are packaged as containers that bring the correct versions of their dependencies with them.
+- **Dependency versioning challenges for QA**: Applications are packaged as containers that bring the correct versions of their dependencies with them.
 
-- Overhead due to solving app isolation with VMs: many isolated containers can be run on the same host with benefits over virtual machines including faster startup time to greater resource efficiency.
+- **Overhead due to solving app isolation with VMs**: Many isolated containers can run on the same host with benefits over virtual machines including faster startup time to greater resource efficiency.
 
-- Configuration inconsistencies between DevOps stages: containers ship with manifests that automate configuration requirements, such as which ports need to be exposed.
+- **Configuration inconsistencies between DevOps stages**: Containers ship with manifests that automate configuration requirements, such as which ports need to be exposed.
 
 Adopting Docker containers can be a key step towards a microservices architecture. We'll discuss more about that later on.

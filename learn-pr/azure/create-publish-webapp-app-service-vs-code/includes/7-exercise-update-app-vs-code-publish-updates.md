@@ -4,14 +4,14 @@ When you have changes to deploy to the webapp, you can use the same tools in Vis
 
 Suppose you want to make an improvement to the proof-of-concept website: Instead of displaying the count down in milliseconds, you want to display it in days. You want to make this change and deploy it to Azure before you display the page to stakeholders.
 
-In this unit, you'll modify the code and redeploy the website.
+In this unit, you modify the code and redeploy the website.
 
 ## Modify the code to calculate the countdown in days
 
 Let's start by modifying the code, so that it calculates a whole number of days:
 
-1. Start Visual Studio Code if it is not already running.
-1. If the **countdownExpressApp** folder is not already open, then on the **File** menu, select **Open Folder...** and then browse to the folder.
+1. Start Visual Studio Code if it isn't already running.
+1. If the **countdownExpressApp** folder isn't already open, then on the **File** menu, select **Open Folder...** and then browse to the folder.
 1. In the Visual Studio Code Explorer window, expand **routes**, and then select **index.js**.
 1. Locate this line of code:
 
@@ -77,20 +77,21 @@ When you have changes to deploy to the webapp, you can use the same tools in Vis
 
 Suppose you want to make an improvement to the proof-of-concept website: Instead of displaying the count down in milliseconds, you want to display it in days. You want to make this change and deploy it to Azure before you display the page to stakeholders.
 
-In this unit, you'll modify the code and redeploy the website.
+In this unit, you modify the code and redeploy the website.
 
 ## Modify the code to calculate the countdown in days
 
 Let's start by modifying the code, so that it calculates a whole number of days:
 
-1. Start Visual Studio Code if it is not already running.
-1. If the **countdownFlaskApp** folder is not already open, then in Windows on the **File** menu, select **Open Folder...** and then browse to the folder and select **Select Folder**.  Or in macOS, on the **File** menu, select **Open...** and browse to the folder, then select **Open**.
+1. Start Visual Studio Code if it isn't already running.
+1. If the **countdownFlaskApp** folder isn't already open, then in Windows on the **File** menu, select **Open Folder...** and then browse to the folder and select **Select Folder**.  Or in macOS, on the **File** menu, select **Open...** and browse to the folder, then select **Open**.
 1. In the Visual Studio Code Explorer window, select **app.py**.
 1. Locate this line of code:
 
     ```python
     numberOfMilliseconds = int(diff.total_seconds() * 1000)
     ```
+
 1. Replace that line with this line of code:
 
     ```JavaScript
@@ -136,21 +137,21 @@ You must also alter the view slightly:
     ```
 
 1. On the **File** menu, select **Save**, then close the **countdown.html** file.
-1. Re-test your changes by selecting **Terminal** and then **New Terminal**.
-1. Make sure the prompt is prefixed with `(env)`, then start the development server.  In Windows, type the following at the command prompt:
+1. Retest your changes by selecting **Terminal** and then **New Terminal**.
+1. Make sure the prompt is prefixed with `(env)`, then start the development server. In Windows, type the following command at the command prompt:
 
    ```command
    py -m flask run
    ```
 
-   In macOS, type the following at the command prompt:
+   In macOS, type the following command at the command prompt:
 
    ```command
    python3 -m flask run
    ```
 
 1. Open a web browser to http://127.0.0.1:5000 and confirm that the changes function correctly.
-1. In the Visual Studio Code Terminal, in Windows and Linux select <kbd>Ctrl+C</kbd> to quit the development server.  On macOS, select <kbd>Command+C</kbd> to quit the development server.
+1. In the Visual Studio Code Terminal, in Windows and Linux select <kbd>Ctrl+C</kbd> to quit the development server. On macOS, select <kbd>Command+C</kbd> to quit the development server.
 
 ## Publish the new version
 

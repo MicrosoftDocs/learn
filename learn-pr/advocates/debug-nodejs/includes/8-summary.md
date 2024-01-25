@@ -12,5 +12,3 @@ In this module, you learned how to:
 Continue learning more about Node.js debugging with:
 
 - [Visual Studio Code debugging](https://code.visualstudio.com/docs/editor/debugging)
-
-[!include[](../../../includes/azure-sandbox-cleanup.md)]

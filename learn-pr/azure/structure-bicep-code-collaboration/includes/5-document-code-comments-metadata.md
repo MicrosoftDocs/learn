@@ -1,12 +1,12 @@
-Good Bicep code is _self-documenting_. This means that it uses clear naming and a good structure, so that when colleagues read your code they can quickly understand what's happening. If they need to make changes, they can be confident they're modifying the right places. 
+Good Bicep code is _self-documenting_. This means that it uses clear naming and a good structure so that when colleagues read your code, they can quickly understand what's happening. If they need to make changes, they can be confident they're modifying the right places.
 
 In some situations, though, you might need to clarify certain code by adding extra documentation to your Bicep files. Also, after your template is deployed and resources have been created in Azure, it's important that anyone who looks at your Azure environment understands what each resource is and what it's for.
 
-In this unit, you'll learn how to add comments to your Bicep files and how to use resource tags to add metadata to your Azure resources. This additional documentation gives your colleagues insights into what your code does, the logic that was used to write the code, and the purpose of your Azure resources.
+In this unit, you'll learn how to add comments to your Bicep files and how to use resource tags to add metadata to your Azure resources. This additional documentation gives your colleagues insights into what your code does, the logic you used to write the code, and the purpose of your Azure resources.
 
 ## Add comments to your code
 
-Bicep enables you to add _comments_ to your code. Comments are human-readable text that documents your code but is ignored when the file is deployed to Azure.
+Bicep allows you to add _comments_ to your code. Comments are human-readable text that documents your code but is ignored when the file is deployed to Azure.
 
 Bicep supports two types of comments:
 
@@ -34,7 +34,7 @@ You can also use Bicep comments to add a structured multi-line block at the begi
 
 ### Add comments to parameter files
 
-Parameter files enable you to create a JSON file to specify a set of parameter values for your deployment. The parameter values need to match the parameters that are declared in the Bicep template.
+Parameter files allow you to create a JSON file to specify a set of parameter values for your deployment. The parameter values need to match the parameters that are declared in the Bicep template.
 
 The values that you specify in parameter files also often benefit from being documented. It's a good practice to add comments to parameter files when you work with parameter values that might not be immediately clear to someone reading the file.
 
@@ -43,7 +43,7 @@ For example, your website's Bicep template might include a parameter for the URL
 ::: code language="json" source="code/5-parameters.jsonc" highlight="6" :::
 
 > [!TIP]
-> When you work with parameter files and other JSON files that include comments, you usually need to use the *.jsonc* file extension instead of *.json*. This helps Visual Studio Code and other tools understand that comments are allowed.
+> When you work with parameter files and other JSON files that include comments, you usually need to use the _.jsonc_ file extension instead of _.json_. This helps Visual Studio Code and other tools understand that comments are allowed.
 
 ## Add descriptions to parameters, variables, and outputs
 
@@ -72,7 +72,7 @@ Comments in your Bicep file don't appear anywhere in your deployed resources. Th
 - Recording the name of the team or person who's responsible for management of the resource.
 - Tracking the name of the environment that the resource relates to, such as production or development.
 
-Resource _tags_ enable you to store important metadata about resources. You define resource tags in your Bicep code, and Azure stores the information with the resource when it's deployed:
+Resource _tags_ allow you to store important metadata about resources. You define resource tags in your Bicep code, and Azure stores the information with the resource when it's deployed:
 
 ::: code language="bicep" source="code/5-tags.bicep" range="5-21" highlight="4-9" :::
 
