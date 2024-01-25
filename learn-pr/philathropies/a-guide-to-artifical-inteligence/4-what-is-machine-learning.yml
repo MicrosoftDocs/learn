@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philathropies.a-guide-to-artifical-inteligence.what-is-machine-learning
+title: What is machine learning?
+metadata:
+  title: What is machine learning?
+  description: This module explores fundamental concepts in artificial intelligence (AI) and machine learning.
+  ms.date: 01/23/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: module-standard-task-based
+  ms.service: artificial-intelligence
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-what-is-machine-learning.md)]
