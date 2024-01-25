@@ -4,10 +4,10 @@ Azure CLI commands can be used to accomplish many of the tasks associated with t
 
 Azure CLI Commands for DPS are available in the following categories:
 
- -  DPS Service.
- -  Access Policy.
- -  Certificates.
- -  Linked Hub.
+* DPS Service
+* Access Policy
+* Certificates
+* Linked Hub
 
 The commands available in each of these categories are shown in the tables below.
 
@@ -250,7 +250,6 @@ The commands available in each of these categories are shown in the tables below
   :::column-end:::
 :::row-end:::
 
-
 ## Using the DPS service commands
 
 As noted previously, Azure CLI commands can be used to manage DPS at the service level.
@@ -362,7 +361,6 @@ This command takes the following arguments:
     Name of resource group.
   :::column-end:::
 :::row-end:::
-
 
 For example, the following command can be used to delete an Azure IoT Hub device provisioning service named 'MyDps':
 

@@ -4,8 +4,8 @@ Suppose you have joined a team that is implementing an Azure IoT solution for th
 
 In this module, you will:
 
- -  Examine the Azure CLI support for the Device Provisioning Service.
- -  Examine the SDKs associated with the Device Provisioning Service.
- -  Examine user permissions and how to control access to DPS.
+* Examine the Azure CLI support for the Device Provisioning Service.
+* Examine the SDKs associated with the Device Provisioning Service.
+* Examine user permissions and how to control access to DPS.
 
 By the end of this module, you will be able to describe the coding tool options that can be used to deploy devices at scale using the Azure IoT Hub Device Provisioning Service.

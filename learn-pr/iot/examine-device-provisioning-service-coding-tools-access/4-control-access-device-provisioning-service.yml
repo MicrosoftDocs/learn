@@ -4,12 +4,11 @@ title: Examine how to control access to DPS
 metadata:
   title: Examine how to control access to DPS
   description: "Examine how to control access to DPS"
-  ms.date: 07/18/2022
-  author: wwlpublish
-  ms.author: cahowd
-  ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.date: 01/08/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: module-standard-task-based
+  ms.service: iot-hub
 durationInMinutes: 8
 content: |
   [!include[](includes/4-control-access-device-provisioning-service.md)]

@@ -4,16 +4,16 @@ A set of Azure IoT Provisioning Service SDKs is provided so that developers can 
 
 The Device Provisioning Service SDKs support the following dev languages:
 
- -  C\#
- -  C
- -  Java
- -  Node.js
- -  Python
+* C\#
+* C
+* Java
+* Node.js
+* Python
 
 The Azure Provisioning device and service SDKs for C\# can be downloaded from NuGet as follows:
 
- -  Provisioning Device Client SDK
- -  Provisioning Service Client SDK
+* Provisioning Device Client SDK
+* Provisioning Service Client SDK
 
 ### Features of the Provisioning Device SDK
 
@@ -52,7 +52,6 @@ The Provisioning Device SDK supports the following protocols: MQTT, MQTT-WS, AMQ
   :::column-end:::
 :::row-end:::
 
-
 > [!NOTE]
 > WebSocket support for MQTT/AMQP is limited to .NET Framework 4.x.
 
@@ -73,7 +72,7 @@ The Provisioning Service SDK can be used to programmatically enroll devices.
     CRUD Operation with TPM Individual Enrollment
   :::column-end:::
   :::column:::
-    ️Programmatically manage device enrollment using TPM with the service SDK.
+    Programmatically manage device enrollment using TPM with the service SDK.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -109,7 +108,6 @@ The Provisioning Service SDK can be used to programmatically enroll devices.
   :::column-end:::
 :::row-end:::
 
-
 ## Additional tool support
 
 In addition to the sample code included with the SDKs that can be used for reference, Microsoft provides some additional tooling that may be useful during testing.
@@ -123,21 +121,21 @@ TPM can refer to a standard for securely storing keys to authenticate the platfo
 
 Steps for using the TPM simulator are:
 
-1.  Prepare the development environment and clone the GitHub repository: `git clone https://github.com/Azure/azure-iot-sdk-java.git`
-2.  Navigate to the TPM simulator folder under `azure-iot-sdk-java/provisioning/provisioning-tool/tpm-simulator/`.
-3.  Run Simulator.exe prior to running any client application for provisioning device.
-4.  Let the simulator run in the background throughout the provisioning process to obtain registration ID and Endorsement Key. Both values are only valid for one instance of the run.
+1. Prepare the development environment and clone the GitHub repository: `git clone https://github.com/Azure/azure-iot-sdk-java.git`
+2. Navigate to the TPM simulator folder under `azure-iot-sdk-java/provisioning/provisioning-tool/tpm-simulator/`.
+3. Run Simulator.exe prior to running any client application for provisioning device.
+4. Let the simulator run in the background throughout the provisioning process to obtain registration ID and Endorsement Key. Both values are only valid for one instance of the run.
 
 ### X.509 certificate generator
 
 X.509 certificates can be used as an attestation mechanism to scale production and simplify device provisioning. There are several ways to obtain an X.509 certificate:
 
- -  For production environment, we recommend purchasing an X.509 CA certificate from a public root certificate authority.
- -  For testing environment, you can generate an X.509 root certificate or X.509 certificate chain using:
-     -  OpenSSL: You can use scripts for certificate generation:
-         -  Node.js
-         -  PowerShell or Bash
-     -  Device Identity Composition Engine (DICE) Emulator: DICE can be used for cryptographic device identity and attestation based on TLS protocol and X.509 client certificates.
+* For production environment, we recommend purchasing an X.509 CA certificate from a public root certificate authority.
+* For testing environment, you can generate an X.509 root certificate or X.509 certificate chain using:
+  * OpenSSL: You can use scripts for certificate generation:
+    * Node.js
+    * PowerShell or Bash
+  * Device Identity Composition Engine (DICE) Emulator: DICE can be used for cryptographic device identity and attestation based on TLS protocol and X.509 client certificates.
 
 #### Using X.509 certificate generator with DICE emulator
 
@@ -147,20 +145,21 @@ Currently, while the DICE Emulator outputs a root certificate, an intermediate c
 
 To generate X.509 certificate using this generator:
 
-1.  Prepare the development environment and clone the GitHub repository: `git clone https://github.com/Azure/azure-iot-sdk-java.git`
-2.  Change the root to azure-iot-sdk-java.
-3.  Run `mvn install -DskipTests=true` to download all required packages and compile the SDK.
-4.  Navigate to the root for X.509 Certificate Generator in `azure-iot-sdk-java/provisioning/provisioning-tools/provisioning-x509-cert-generator`.
-5.  Build with `mvn clean install`
-6.  Run the tool using the following commands:
-    
-    ```
+1. Prepare the development environment and clone the GitHub repository:   `git clone https://github.com/Azure/azure-iot-sdk-java.git`
+2. Change the root to azure-iot-sdk-java.
+3. Run `mvn install -DskipTests=true` to download all required packages and compile the SDK.
+4. Navigate to the root for X.509 Certificate Generator in `azure-iot-sdk-java/provisioning/provisioning-tools/provisioning-x509-cert-generator`.
+5. Build with `mvn clean install`
+6. Run the tool using the following commands:
+
+   ```azurecli
     cd target
     java -jar ./provisioning-x509-cert-generator-{version}-with-deps.jar
     
-    ```
-7.  When prompted, you may optionally enter a Common Name for your certificates.
-8.  The tool locally generates a Client Cert, the Client Cert Private Key, Intermediate Cert, and the Root Cert.
+   ```
+
+7. When prompted, you may optionally enter a Common Name for your certificates.
+8. The tool locally generates a Client Cert, the Client Cert Private Key, Intermediate Cert, and the Root Cert.
 
 Client Cert is the leaf certificate on the device. Client Cert and the associated Client Cert Private Key are needed in device client. Depending on what language you choose, the mechanism to put this in the client application may be different.
 

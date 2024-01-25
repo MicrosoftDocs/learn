@@ -4,8 +4,8 @@ The Azure IoT Device Provisioning Service uses permissions to grant access to ea
 
 You can grant permissions in the following ways:
 
- -  Shared access authorization policies. Shared access policies can grant any combination of permissions. You can define policies in the Azure portal, or programmatically by using the Device Provisioning Service REST APIs. A newly created provisioning service has the following default policy:
- -  provisioningserviceowner: Policy with all permissions.
+* Shared access authorization policies. Shared access policies can grant any combination of permissions. You can define policies in the Azure portal, or programmatically by using the Device Provisioning Service REST APIs. A newly created provisioning service has the following default policy:
+* provisioningserviceowner: Policy with all permissions.
 
 ## Authentication
 
@@ -159,13 +159,12 @@ Here are the functions exposed on the endpoints:
   :::column-end:::
 :::row-end:::
 
-
 As an example, a service generated using a pre-created shared access policy named **enrollmentread** would create a token with the following parameters:
 
- -  resource URI: `{mydps}.azure-devices-provisioning.net`,
- -  signing key: one of the keys of the `enrollmentread` policy,
- -  policy name: `enrollmentread`,
- -  an expiration time
+* resource URI: `{mydps}.azure-devices-provisioning.net`,
+* signing key: one of the keys of the `enrollmentread` policy,
+* policy name: `enrollmentread`,
+* an expiration time
 
 ```javascript
 var endpoint ="mydps.azure-devices-provisioning.net";
@@ -178,7 +177,7 @@ var token = generateSasToken(endpoint, policyKey, policyName, 60);
 
 The result, which would grant access to read all enrollment records, would be:
 
-```
+```azurecli
 SharedAccessSignature sr=mydps.azure-devices-
 provisioning.net&sig=JdyscqTpXdEJs49elIUCcohw2DlFDR3zfH5KqGJo4r4%3D&se=1456973447&skn=enrollmentread
 
