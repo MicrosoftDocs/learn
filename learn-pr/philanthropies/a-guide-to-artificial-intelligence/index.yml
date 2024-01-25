@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.philathropies.a-guide-to-artifical-inteligence
+uid: learn.philanthropies.a-guide-to-artifical-intelligence
 
 metadata:
   title: A guide to artificial intelligence
@@ -35,16 +35,16 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn.philathropies.a-guide-to-artifical-inteligence.introduction
-- learn.philathropies.a-guide-to-artifical-inteligence.what-is-artificial-intelligence
-- learn.philathropies.a-guide-to-artifical-inteligence.foundational-concepts-of-ai
-- learn.philathropies.a-guide-to-artifical-inteligence.what-is-machine-learning
-- learn.philathropies.a-guide-to-artifical-inteligence.types-of-machine-learning
-- learn.philathropies.a-guide-to-artifical-inteligence.an-application-of-machine-learning
-- learn.philathropies.a-guide-to-artifical-inteligence.how-are-ai-and-machine-learning-connected
-- learn.philathropies.a-guide-to-artifical-inteligence.what-is-deep-learning
-- learn.philathropies.a-guide-to-artifical-inteligence.how-are-machine-learning-and-neural-networks-connected
-- learn.philathropies.a-guide-to-artifical-inteligence.knowledge-check
-- learn.philathropies.a-guide-to-artifical-inteligence.summary
+- learn.philanthropies.a-guide-to-artifical-intelligence.introduction
+- learn.philanthropies.a-guide-to-artifical-intelligence.what-is-artificial-intelligence
+- learn.philanthropies.a-guide-to-artifical-intelligence.foundational-concepts-of-ai
+- learn.philanthropies.a-guide-to-artifical-intelligence.what-is-machine-learning
+- learn.philanthropies.a-guide-to-artifical-intelligence.types-of-machine-learning
+- learn.philanthropies.a-guide-to-artifical-intelligence.an-application-of-machine-learning
+- learn.philanthropies.a-guide-to-artifical-intelligence.how-are-ai-and-machine-learning-connected
+- learn.philanthropies.a-guide-to-artifical-intelligence.what-is-deep-learning
+- learn.philanthropies.a-guide-to-artifical-intelligence.how-are-machine-learning-and-neural-networks-connected
+- learn.philanthropies.a-guide-to-artifical-intelligence.knowledge-check
+- learn.philanthropies.a-guide-to-artifical-intelligence.summary
 badge:
-  uid: learn.philathropies.a-guide-to-artifical-inteligence.badge
+  uid: learn.philanthropies.a-guide-to-artifical-intelligence.badge
