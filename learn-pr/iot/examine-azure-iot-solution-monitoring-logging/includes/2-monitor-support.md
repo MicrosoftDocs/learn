@@ -30,7 +30,7 @@ The following sections provide more detail regarding data collection, storage, r
 
 Azure Monitor can collect [data from multiple sources](/azure/azure-monitor/data-sources).
 
-Azure Monitor collects data from each of the following source:
+Azure Monitor collects data from each of the following sources:
 
 * **Application monitoring data** - Data about the performance and functionality of the code you write, regardless of its platform.
 * **Guest OS monitoring data** - Data about the operating system on which your application is running. This OS could be running in Azure, another cloud, or on-premises.

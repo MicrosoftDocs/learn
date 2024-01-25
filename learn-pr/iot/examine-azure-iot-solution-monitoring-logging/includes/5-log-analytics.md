@@ -16,6 +16,8 @@ To use Log Analytics, navigate to the Azure portal and open your Azure IoT hub, 
 
 Use the Log Analytics editor to edit or create queries. Select **Run** to execute a query.
 
+In this example, the **Dead Endpoints** query has been selected from the sample Kusto queries menu.
+
 :::image type="content" source="../media/log-analytics-editor.png" alt-text="Image of the Log Analytics editor.":::
 
 For a list of IoT Hub tables used by Azure Monitor Logs and queryable by Log Analytics, see [Azure Monitor Logs tables in the Monitoring Azure IoT Hub data reference](/azure/iot-hub/monitor-iot-hub-reference#azure-monitor-logs-tables).

@@ -4,7 +4,7 @@ You can access Azure IoT Hub diagnostic settings by selecting **Diagnostic Setti
 
 A diagnostic setting defines the following criteria:
 
-* **Sources** - The type of metric and log data to send to the destinations defined in the setting. The available types vary by resource type.
+* **Sources** - The type of metric and log data to send to the destinations defined in the setting.
 * **Destinations** - One or more destinations to send to.
 
 The following image shows an example Azure IoT Hub diagnostic setting configuration that includes multiple **categories** that feed into a Log Analytics workspace **destination**.

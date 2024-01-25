@@ -12,9 +12,9 @@ An alert rule monitors your data and captures a signal that indicates something 
 
 An **alert rule** combines:
 
-* The resources to be monitored.
-* The signal or data from the resource.
-* Conditions.
+* The resources to be monitored
+* The signal or data from the resource
+* Conditions
 
 An **alert** is triggered if the conditions of the alert rule are met. The alert initiates the associated action group and updates the state of the alert. If you're monitoring more than one resource, the alert rule condition is evaluated separately for each of the resources, and alerts are fired for each resource separately.
 
@@ -26,14 +26,14 @@ Alerts consist of:
 
 * **Action groups**: These groups can trigger notifications or an automated workflow to let users know that an alert is triggered. Action groups can include:
 
-  * Notification methods, such as email, SMS, and push notifications.
-  * Automation runbooks.
-  * Azure functions.
-  * ITSM incidents.
-  * Logic apps.
-  * Secure webhooks.
-  * Webhooks.
-  * Event hubs.
+  * Notification methods, such as email, SMS, and push notifications
+  * Automation runbooks
+  * Azure functions
+  * ITSM incidents
+  * Logic apps
+  * Secure webhooks
+  * Webhooks
+  * Event hubs
 * **Alert conditions**: These conditions are set by the system. When an alert fires, the alert condition is set to **fired**. After the underlying condition that caused the alert to fire clears, the alert condition is set to **resolved**.
 * **User response**: The response is set by the user and doesn't change until the user changes it.
 * **Alert processing rules**: You can use alert processing rules to make modifications to triggered alerts as they're being fired. You can use alert processing rules to add or suppress action groups, apply filters, or have the rule processed on a predefined schedule.
