@@ -27,5 +27,5 @@ Now that you have learned how to limit queue time variables, try to apply this c
 
 For more information about queue time variables, see:
 
-- [Define variables.](https://learn.microsoft.com/azure/devops/pipelines/process/variables)
-- [How to securely use variables and parameters in your pipeline](https://learn.microsoft.com/azure/devops/pipelines/security/inputs)
+- [Define variables.](/azure/devops/pipelines/process/variables)
+- [How to securely use variables and parameters in your pipeline](/azure/devops/pipelines/security/inputs)
