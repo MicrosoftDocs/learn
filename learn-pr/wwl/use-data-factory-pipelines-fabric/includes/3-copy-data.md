@@ -25,4 +25,4 @@ Use the **Copy Data** activity when you need to copy data directly between a sup
 If you need to apply transformations to the data as it is ingested, or merge data from multiple sources, consider using a **Data Flow** activity to run a dataflow (Gen2). You can use the Power Query user interface to define a dataflow (Gen2) that includes multiple transformation steps, and include it in a pipeline.
 
 > [!TIP]
-> To learn more about Dataflow (Gen2) in Microsoft Fabric to ingest data, consider completing the [Ingest Data with Dataflows Gen2 in Microsoft Fabric](https://learn.microsoft.com/training/modules/use-dataflow-gen-2-fabric) module. 
+> To learn more about Dataflow (Gen2) in Microsoft Fabric to ingest data, consider completing the [Ingest Data with Dataflows Gen2 in Microsoft Fabric](/training/modules/use-dataflow-gen-2-fabric) module. 
