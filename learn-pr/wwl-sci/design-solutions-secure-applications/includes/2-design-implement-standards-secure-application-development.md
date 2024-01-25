@@ -157,7 +157,7 @@ Azure capabilities let organizations create security standards from environments
 
 One of the ways DevOps can bring developers and operations in step with each other is to support converting the existing infrastructure into an infrastructure-as-code approach.
 
-Infrastructure as code (IaC) is the management of infrastructure (networks, virtual machines, load balancers, and connection topology) in a descriptive model. IaC uses the same versioning model as the DevOps team uses for source code. Like the principle of the same source code generates the same binary, an IaC model generates the same environment every time it's applied. IaC is a key DevOps practice that's used with [continuous delivery](https://learn.microsoft.com/devops/deliver/what-is-continuous-delivery).
+Infrastructure as code (IaC) is the management of infrastructure (networks, virtual machines, load balancers, and connection topology) in a descriptive model. IaC uses the same versioning model as the DevOps team uses for source code. Like the principle of the same source code generates the same binary, an IaC model generates the same environment every time it's applied. IaC is a key DevOps practice that's used with [continuous delivery](/devops/deliver/what-is-continuous-delivery).
 
 DevSecOps shifts security left and shows that security isn't just about application security but infrastructure security as well. One of the ways DevSecOps supports infrastructure security is to include security scanning before the infrastructure deploys in the cloud. As infrastructure became code, you'd then apply the same security actions to the infrastructure as the application security. There are security tools available to run infrastructure security scanning based on your chosen IaC strategy.
 
