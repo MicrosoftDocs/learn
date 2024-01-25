@@ -46,7 +46,7 @@ Here is an example:
 
 _Tenant management_ is the planning, deployment, and ongoing operation of your Microsoft 365 tenants.
 <!-- 
-[](https://learn.microsoft.com/microsoft-365/solutions/tenant-management-overview?view=o365-worldwide#attributes-of-a-well-designed-and-operating-tenant)
+[](/microsoft-365/solutions/tenant-management-overview?view=o365-worldwide#attributes-of-a-well-designed-and-operating-tenant)
 -->
 ### Attributes of a well-designed and operating tenant
 

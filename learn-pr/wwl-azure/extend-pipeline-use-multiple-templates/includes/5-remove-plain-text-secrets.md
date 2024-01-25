@@ -39,7 +39,7 @@ To import the repository to your Azure DevOps organization, follow these steps:
 5. Click on Import and wait for your repository to be ready.
 
 > [!NOTE]
-> For more information about how to import a git repository, see: [Import a Git repo](https://learn.microsoft.com/azure/devops/repos/git/import-git-repository/)
+> For more information about how to import a git repository, see: [Import a Git repo](/azure/devops/repos/git/import-git-repository/)
 
 ## Create tokens for database connections or variables
 
@@ -161,7 +161,7 @@ The last step is to run your release pipeline to build your application and repl
 
 For more information about file transformation and variables substitution in YAML pipelines, see:
 
-- [File transforms and variable substitution reference.](https://learn.microsoft.com/azure/devops/pipelines/tasks/transforms-variable-substitution)
-- [FileTransform@1 - File transform v1 task.](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/file-transform-v1)
-- [YAML schema reference for Azure Pipelines.](https://learn.microsoft.com/azure/devops/pipelines/yaml-schema/)
-- [Customize your pipeline.](https://learn.microsoft.com/azure/devops/pipelines/customize-pipeline)
+- [File transforms and variable substitution reference.](/azure/devops/pipelines/tasks/transforms-variable-substitution)
+- [FileTransform@1 - File transform v1 task.](/azure/devops/pipelines/tasks/reference/file-transform-v1)
+- [YAML schema reference for Azure Pipelines.](/azure/devops/pipelines/yaml-schema/)
+- [Customize your pipeline.](/azure/devops/pipelines/customize-pipeline)

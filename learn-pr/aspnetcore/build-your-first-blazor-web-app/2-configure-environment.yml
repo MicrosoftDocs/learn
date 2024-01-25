@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-your-first-blazor-web-app.configure-environment
-title: What is Blazor?
+title: Configure your development environment
 metadata:
   title: Configure your development environment
   description: Learn how to set up your environment for Blazor development.
