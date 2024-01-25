@@ -9,7 +9,7 @@ This unit teaches you how to configure pipeline access to specific agent pools i
 - Agent pools created and configured in Azure DevOps.
 
 > [!NOTE]
-> For more information about Agent Pools, see: [Create and manage agent pools.](https://learn.microsoft.com/azure/devops/pipelines/agents/pools-queues)
+> For more information about Agent Pools, see: [Create and manage agent pools.](/azure/devops/pipelines/agents/pools-queues)
 
 ## Pipeline permissions
 
@@ -42,4 +42,4 @@ By configuring pipeline access to agent pools, you can ensure that your pipeline
 
 Your pipeline is ready to run from the agent you select.
 
-For more information about Agents and Pools, see: [Manage Azure Pipeline agents and pools.](https://learn.microsoft.com/training/modules/manage-azure-pipeline-agents-pools/)
+For more information about Agents and Pools, see: [Manage Azure Pipeline agents and pools.](/training/modules/manage-azure-pipeline-agents-pools/)
