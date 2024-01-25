@@ -7776,6 +7776,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/visual-studio/visual-studio-intro/index.md",
+      "redirect_url": "https://learn.microsoft.com/visualstudio/get-started/visual-studio-ide?view=vs-2022",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/visual-studio/visual-studio-intro/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/visualstudio/get-started/visual-studio-ide?view=vs-2022",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/visual-studio/visual-studio-intro/2-what-is-visual-studio.md",
+      "redirect_url": "https://learn.microsoft.com/visualstudio/get-started/visual-studio-ide?view=vs-2022",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/visual-studio/visual-studio-intro/3-whats-in-visual-studio.md",
+      "redirect_url": "https://learn.microsoft.com/visualstudio/get-started/visual-studio-ide?view=vs-2022",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/visual-studio/visual-studio-intro/4-when-to-use-visual-studio.md",
+      "redirect_url": "https://learn.microsoft.com/visualstudio/get-started/visual-studio-ide?view=vs-2022",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/visual-studio/visual-studio-intro/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/visualstudio/get-started/visual-studio-ide?view=vs-2022",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/visual-studio/visual-studio-intro/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/visualstudio/get-started/visual-studio-ide?view=vs-2022",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.visual-studio.visual-studio-intro.badge.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/visualstudio/get-started/visual-studio-ide?view=vs-2022",
+      "redirect_document_id": false
+    },    
+    {
       "source_path": "learn-pr/paths/explore-data-science-tools-in-azure/index.md",
       "redirect_url": "/training/modules/get-started-ai-fundamentals",
       "redirect_document_id": false
