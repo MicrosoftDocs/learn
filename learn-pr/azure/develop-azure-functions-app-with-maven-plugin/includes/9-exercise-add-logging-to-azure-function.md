@@ -8,19 +8,23 @@ In this exercise, you update your function project configuration files to suppor
 
 Now that your Function app is deployed and running on Azure, you can troubleshoot it by using the simple Azure CLI command to get real time log streaming from the app.
 
-1. Copy and paste the value for your `functionAppName` and `resourceGroup` from *pom.xml*.
+1. In the Azure poftal, on the **Overview** page for your **HttpExample** function. Use the **Copy to clipboard** icon to copy the value of your **Resource group** and **Function app**.
 
-    ```bash
-    code pom.xml
-    ```
-
-1. Use the `az webapp log tail -n <functionAppName> -g <resourceGroup>` command to stream logs, for example:  
+1. In the Azure Cloud Shell window, enter the `az webapp log tail -n <functionAppName> -g <resourceGroup>` command to stream logs. Replace `<functionAppName>` and `<resourceGroup>` with the values that you saved in the previous step. For example:  
 
     ```azcli
-    az webapp log tail -n functest-20210201081801273 -g learn-f0af729c-0493-4b45-a5b8-d6b4783b03da
-    ```
+    az webapp log tail -n event-reporting-20240125192009873 -g learn-f0af729c-0493-4b45-a5b8-d6b4783b03da
 
-1. Access your function app to generate some logs.
+1. You should see output like the following message.
+
+    ```output
+    2024-01-25T20:44:58  Welcome, you are now connected to log-streaming service. The default timeout is 2 hours. Change the timeout with the App Setting SCM_LOGSTREAM_TIMEOUT (in seconds). 
+    2024-01-25T20:45:58  No new trace in the past 1 min(s).
+     ```
+
+1. Open a new tab in your web browser, and paste the fully constructed URL from the previous exercise to access your function app to generate some logs.
+
+1. When you are done testing, press <kbd>Ctrl+C</kbd> in your Cloud Shell to close the log stream.
 
 ## Adding instrumentation to your Java project for Application Insights
 

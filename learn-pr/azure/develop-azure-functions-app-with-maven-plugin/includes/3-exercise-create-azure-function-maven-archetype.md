@@ -44,20 +44,24 @@ Now, you're going to create an Azure Function using Maven. This exercise uses th
     [INFO] Parameter: version, Value: 1.0-SNAPSHOT
     [INFO] Parameter: package, Value: com.contoso.functions
     [INFO] Parameter: packageInPathFormat, Value: com/contoso/functions
-    [INFO] Parameter: package, Value: com.contoso.functions
-    [INFO] Parameter: version, Value: 1.0-SNAPSHOT
+    [INFO] Parameter: resourceGroup, Value: java-functions-group
+    [INFO] Parameter: appName, Value: $(artifactId)-$(timestamp)
+    [INFO] Parameter: javaVersion, Value: 8
     [INFO] Parameter: groupId, Value: com.contoso.functions
-    [INFO] Parameter: docker, Value: false
     [INFO] Parameter: artifactId, Value: event-reporting
+    [INFO] Parameter: appServicePlanName, Value: java-functions-app-service-plan
+    [INFO] Parameter: trigger, Value: HttpTrigger
+    [INFO] Parameter: appRegion, Value: westus
+    [INFO] Parameter: version, Value: 1.0-SNAPSHOT
+    [INFO] Parameter: docker, Value: false
     [INFO] Executing META-INF/archetype-post-generate.groovy post-generation script
     [INFO] Project created from Archetype in dir: /home/user/event-reporting
     [INFO] ------------------------------------------------------------------------
     [INFO] BUILD SUCCESS
     [INFO] ------------------------------------------------------------------------
-    [INFO] Total time: 03:49 min
-    [INFO] Finished at: 2020-01-11T01:10:10+00:00
-    [INFO] Final Memory: 23M/142M
+    [INFO] Total time:  02:28 min
+    [INFO] Finished at: 2024-01-25T19:20:10Z
     [INFO] ------------------------------------------------------------------------
     ```
 
-Congratulations! You created your Azure Function.
+Congratulations! Your Azure Function is created.

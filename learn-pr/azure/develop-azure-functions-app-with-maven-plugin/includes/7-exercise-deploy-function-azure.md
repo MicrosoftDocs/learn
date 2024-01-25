@@ -80,17 +80,20 @@ Now that your function is configured for deployment, your next step is to deploy
     [INFO] Subscription : Concierge Subscription(12345678-1234-1234-1234-123456789abc)
     [INFO] The specified function app does not exist. Creating a new function app...
     [INFO] Set function worker runtime to java.
-    [INFO] Successfully created the function app: event-reporting-20200102030405006.
+    [INFO] Successfully created the function app: event-reporting-20240125192009873.
     [INFO] Trying to deploy the function app...
-    [INFO] Trying to deploy artifact to event-reporting-20200102030405006...
-    [INFO] Successfully deployed the artifact to https://event-reporting-20200102030405006.azurewebsites.net
-    [INFO] Successfully deployed the function app at https://event-reporting-20200102030405006.azurewebsites.net.
+    [INFO] Trying to deploy artifact to event-reporting-20240125192009873...
+    [INFO] Successfully deployed the artifact to https://event-reporting-20240125192009873.azurewebsites.net
+    [INFO] Deployment done, you may access your resource through event-reporting-20240125192009873.azurewebsites.net
+    [INFO] Syncing triggers and fetching function information
+    [INFO] Querying triggers...
+    [INFO] HTTP Trigger Urls:
+    [INFO]   HttpExample : https://event-reporting-20240125192009873.azurewebsites.net/api/httpexample
     [INFO] ------------------------------------------------------------------------
     [INFO] BUILD SUCCESS
     [INFO] ------------------------------------------------------------------------
-    [INFO] Total time: 01:42 min
-    [INFO] Finished at: 2020-01-01T09:26:45+00:00
-    [INFO] Final Memory: 64M/320M
+    [INFO] Total time:  01:01 min
+    [INFO] Finished at: 2024-01-25T20:12:04Z
     [INFO] ------------------------------------------------------------------------
     ```
 
@@ -102,20 +105,20 @@ Recall that in the exercise you completed in a previous unit, you were required 
 
 1. Select **All resources** from the menu on the left.
 
-1. Select your function from the list of resources; for this exercise, your function's name begins with *event-reporting*. For example:
+1. Select your function app from the list of resources; for this exercise, your function app's name begins with *event-reporting*. For example:
 
-    ```
-    event-reporting-20200102030405006
+    ```output
+    event-reporting-20240125192009873
     ```
 
    This `function app` name is the same one that was reported in the deployment response earlier in this exercise.
 
-1. Expand the **Functions** list, and select your **HttpExample** function. This shows you the *function.json* file for your function.
+1. On the **Overview** page for your function app, in the **Functions** tab, select your **HttpExample** function. This shows you the **Overview** page for your function.
 
-1. At the top of the function page, select **</> Get function URL**. This menu option allows you to copy the fully constructed URL of your function. For example:
+1. At the top of the function page, select **Get function Url**. Copy the fully constructed URL of your function. For example:
 
-    ```
-    https://event-reporting-20200102030405006.azurewebsites.net/api/HttpExample
+    ```output
+    https://event-reporting-20240125192009873.azurewebsites.net/api/HttpExample
     ```
 
     You use this URL in the next section of this exercise.
@@ -128,14 +131,14 @@ Now that you deployed your function to Azure, all that is necessary to test your
 
     1. Retrieve the URL that you copied in the preceding **Retrieving your Azure Function URL using the portal** section of this exercise; for example:
 
-        ```
-        https://event-reporting-20200102030405006.azurewebsites.net/api/HttpExample
+        ```output
+        https://event-reporting-20240125192009873.azurewebsites.net/api/HttpExample
         ```
 
     1. Append a query string that passes a name to the API URL; for example:
 
-        ```
-        https://event-reporting-20200102030405006.azurewebsites.net/api/HttpExample?name=Bob
+        ```output
+        https://event-reporting-20240125192009873.azurewebsites.net/api/HttpExample?name=Bob
         ```
 
     1. Copy this fully constructed URL for use in the following steps.
