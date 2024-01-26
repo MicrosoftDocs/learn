@@ -16,6 +16,6 @@ You can seamlessly switch your entire development environment just by connecting
 
 :::image type="content" source="../media/2-architecture-containers.png" alt-text="Diagram that explains the split architecture of the Dev Containers extension.":::
 
-The Dev Containers extension is powered by the [dev container CLI](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli). The CLI ingests the  `.devcontainer/devcontainer.json` configuration file and creates and configures a dev container from it. The dev container CLI is a reference implementation for the [Development Containers Specification](https://containers.dev/implementors/spec/), which enables individual users and other tools to read in `devcontainer.json` metadata and create dev containers from it.
+The Dev Containers extension is powered by the [dev container CLI](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli). The CLI ingests the  `.devcontainer/devcontainer.json` configuration file and creates and configures a dev container from it. The Dev Container CLI is a reference implementation for the [Development Containers Specification](https://containers.dev/implementors/spec/), which enables individual users and other tools to read in `devcontainer.json` metadata and create dev containers from it.
 
 In the next section, you'll add a dev container to a Python project and run it on your own machine, even if you don't have Python installed.
