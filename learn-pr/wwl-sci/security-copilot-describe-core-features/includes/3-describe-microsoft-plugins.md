@@ -5,7 +5,7 @@ Microsoft Security Copilot integrates with various sources, including Microsoft'
 
 Microsoft plugins give Security Copilot access to information and capabilities from within your organization's Microsoft products.
 
-:::image type="content" source="../media/manage-plugins-microsoft.png" lightbox="../media/manage-plugins-microsoft.png" alt-text="Screen capture of the manage plugins window that shows the Microsoft services.":::
+:::image type="content" source="../media/manage-plugins-microsoft.png" lightbox="../media/manage-plugins-microsoft.png" alt-text="Screen capture of the Manage plugins window that shows the Microsoft services.":::
 
 For Microsoft plugins, Security Copilot leverages the OBO (on behalf of) model – meaning that Security Copilot knows that a customer has licenses to specific products and is automatically signed into those products.  Security Copilot can then access the specific products when the plugin is enabled and, where applicable, parameters are configured.
 
@@ -106,13 +106,17 @@ The Microsoft Defender XDR plugin includes capabilities that enable users to:
 
 :::image type="content" source="../media/defender-xdr-capabilities.png" lightbox="../media/defender-xdr-capabilities.png" alt-text="Screen capture of the Defender XDR capabilities that can be run in the standalone experience.":::
 
-These and additional capabilities are covered in more detail in the unit titled, "Describe Microsoft Copilot in Microsoft Defender XDR, which describes Copilot's embedded capabilities in Defender XDR"
+With the plugin enabled, Security Copilot integration with Defender XDR can be experienced through the standalone or embedded experiences.
 
-With the Defender XDR plugin enabled, users can take advantage of the Microsoft Defender XDR incident investigation promptbook available through the standalone experience.
+In the standalone experience you can take advantage of the Microsoft Defender XDR incident investigation promptbook.
 
 :::image type="content" source="../media/defender-xdr-promptbook.png" lightbox="../media/defender-xdr-promptbook.png" alt-text="Screen capture that lists the promptbook named Microsoft Defender XDR Incident investigation.":::
 
 :::image type="content" source="../media/defender-xdr-promptbook-prompts.png" lightbox="../media/defender-xdr-promptbook-prompts.png" alt-text="Screen capture of the Defender XDR promptbook prompts that can be run in the standalone experience.":::
+
+You can also take the capabilities available through the plugin as individual prompt suggestions that you run in the prompt bar.
+
+Security Copilot capabilities can also be experienced directly from within Microsoft Defender XDR, through the embedded experience.  The scenarios supported through the embedded experience are described in more detail in the module titled, "Describe Microsoft Copilot in Microsoft Defender XDR."
 
 ***Natural language to KQL Defender plugin***
 
