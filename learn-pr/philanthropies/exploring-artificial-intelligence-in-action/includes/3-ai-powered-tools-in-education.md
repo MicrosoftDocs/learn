@@ -6,7 +6,7 @@ Here are some examples of how you can use AI-powered tools to personalize learni
 
 - AI tutors can provide real-time answers to queries at any time of day. A personalized AI tutor can adapt to each learner's level of knowledge and learning speed. AI tutors can alleviate workloads and ensure learners receive timely support, fostering a more supportive learning environment.
 
-- You can expand your teaching with mixed reality, allowing learners to immerse themselves in experiential learning and dive deeper into each subject.2 HoloLens VR dissection enables learners to practice complex surgeries in a risk-free virtual environment. Virtual field trips take learners to museums, archaeological sites, and various geographical locations. These are only two examples of how learning can incorporate mixed reality.
+- You can expand your teaching with mixed reality, allowing learners to immerse themselves in experiential learning and dive deeper into each subject. HoloLens VR dissection enables learners to practice complex surgeries in a risk-free virtual environment. Virtual field trips take learners to museums, archaeological sites, and various geographical locations. These are only two examples of how learning can incorporate mixed reality.
 
 - Interactive smartboards provide a place for you and your learners to collaboratively develop ideas in impromptu or formal way, whether you're teaching remotely, in person, or in a hybrid format. You can keep your learners focused on the right things by annotating for special emphasis. You can also lock your learners' view so that they only see what you see.
 
