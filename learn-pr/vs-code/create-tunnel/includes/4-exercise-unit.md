@@ -40,11 +40,11 @@ This above command downloads and starts the VS Code Server on this machine and t
 
 2. Accept license terms by logging into GitHub and submitting provided code like below (yours will be different):
 
-:::image type="content" source="../media/1. signIn.png"{width=50% height=50%} alt-text="Device Activation":::
+:::image type="content" source="../media/1. signIn.png" alt-text="Device Activation":::
 
 Next, click the authorize button.
 
-:::image type="content" source="../media/2. auth.png" alt-text="Download Page":::
+:::image type="content" source="../media/2. auth.png" alt-text="Authentication Page":::
 
 You should see a congratualtions message like below:
 :::image type="content" source="../media/3. congrats.png" alt-text="Confirmation":::
