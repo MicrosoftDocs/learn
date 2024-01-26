@@ -8,7 +8,6 @@ metadata:
   ms.author: gmalc
   ms.topic: module
   ms.service: azure
-  ms.subservice: azure-ai-qna-maker
 title: Build a question answering solution
 summary: The question answering capability of the Language service makes it easy to build applications in which users ask questions using natural language and receive appropriate answers.
 abstract: |
