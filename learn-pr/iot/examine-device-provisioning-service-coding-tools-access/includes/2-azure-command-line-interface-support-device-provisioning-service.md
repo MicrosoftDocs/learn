@@ -9,7 +9,7 @@ Azure CLI Commands for DPS are available in the following categories:
 * Certificates
 * Linked Hub
 
-The commands available in each of these categories are shown in the tables below.
+The commands available in each of these categories are shown in these tables.
 
 :::row:::
   :::column:::
