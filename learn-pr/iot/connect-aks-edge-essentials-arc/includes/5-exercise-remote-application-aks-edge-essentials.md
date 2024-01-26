@@ -148,7 +148,7 @@ We have configured GitOps and Flux to watch for changes in the *main* branch of 
 
 1. Refresh your application to see this change reflected as a rolling update:
 
-    :::image type="content" source="../media/5-aks-ee-linux-arc-app-updated-inline.png" alt-text="Screenshot of Windows VM with linux sample application running in the browser." lightbox="../media/5-aks-ee-linux-arc-app-updated-expanded.png":::
+    :::image type="content" source="../media/5-aks-ee-linux-arc-app-updated-inline.png" alt-text="Screenshot of Windows VM with updated linux sample application running in the browser." lightbox="../media/5-aks-ee-linux-arc-app-updated-expanded.png":::
 
 ## Clean up your Azure resources
 
@@ -156,7 +156,7 @@ In the course of this module, you created Azure resources. If you don't expect t
 
 ```azurecli
 az group delete --name aksedge-training --force-deletion-types Microsoft.Compute/virtualMachines
-az ad sp delete --id aksedge-sp
+az ad sp delete --id <your-service-principal-ID>
 ```
 
 > [!IMPORTANT]

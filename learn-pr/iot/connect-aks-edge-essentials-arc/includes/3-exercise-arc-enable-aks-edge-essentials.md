@@ -13,20 +13,25 @@ This unit provides Azure CLI commands that you can run with an Azure subscriptio
 
     ```azurecli
     resourcegroup="aksedge-training"
-    az account set --subscription "<your-Azure-subscription-ID>"
-    az group create --name $resourcegroup --location westus3
+    location="westus3"
+    subscriptionid="<your-Azure-subscription-ID>"
+
+    az account set --subscription $subscriptionid
+    az group create --name $resourcegroup --location $location
     ```
-<!-- TODO: Try with: az ad sp create-for-rbac --name $serviceprincipalname --role "Microsoft.Kubernetes connected cluster role" --scopes /subscriptions/$(az account show --query id -o tsv)/resourceGroups/$resourcegroup -->
-1. Create a new Service Principal with the built-in **Owner** role and restricted to the resource group scope. This service principal is used to connect to Azure Arc. Use the [az ad sp create-for-rbac](/cli/azure/ad/sp#az-ad-sp-create-for-rbac) command:
+
+1. Create a new Service Principal with the built-in **Owner** and restricted to the resource group scope. This service principal is used to connect to Azure Arc. Use the [az ad sp create-for-rbac](/cli/azure/ad/sp#az-ad-sp-create-for-rbac) command:
 
     ```azurecli
     resourcegroup="aksedge-training"
     serviceprincipalname="aksedge-sp"
-    az ad sp create-for-rbac --name $serviceprincipalname --role "Owner" --scopes /subscriptions/$(az account show --query id -o tsv)/resourceGroups/$resourcegroup
+    subscriptionid=$(az account show --query id -o tsv)
+
+    az ad sp create-for-rbac --name $serviceprincipalname --role "Owner" --scopes /subscriptions/$subscriptionid/resourceGroups/$resourcegroup
     ```
 
     > [!NOTE]
-    > Take a note of the `Service Principal ID` and `Service Principal Password`. You will need it later.
+    > Take a note of the `Service Principal appId` and `Service Principal password`. You will need it later.
 
 1. Enable all required resource providers in the Azure subscription using the [az provider register](/cli/azure/provider#az-provider-register) command:
 
@@ -43,7 +48,7 @@ This unit provides Azure CLI commands that you can run with an Azure subscriptio
 
 Let's create the Azure VM with Windows 11 Enterprise using Azure Cloud Shell.
 
-1. Execute the following command in the Cloud Shell to set the variables for creating the Azure VM:
+1. Execute the following command in the Cloud Shell to set the variables for creating the Azure VM and run the `AksEdgeQuickStart-v2.ps1` PowerShell script:
 
     ```azurecli
     resourcegroup="aksedge-training"
@@ -52,11 +57,14 @@ Let's create the Azure VM with Windows 11 Enterprise using Azure Cloud Shell.
     username="azureuser"
     let "randomIdentifier=$RANDOM*$RANDOM"
     adminpassword="Admin-$randomIdentifier-Password!"
+    subscriptionname=$(az account show --query name -o tsv)
+    subscriptionid=$(az account show --query id -o tsv)
+    tenantid=$(az account show --query tenantId -o tsv)
 
     echo Admin Password: $adminpassword
-    echo Subscription Name: $(az account show --query name -o tsv)
-    echo Subscription ID: $(az account show --query id -o tsv)
-    echo Tenant ID: $(az account show --query tenantId -o tsv)
+    echo Subscription Name: $subscriptionname
+    echo Subscription ID: $subscriptionid
+    echo Tenant ID: $tenantid
     echo Resource Group Name: $resourcegroup
     ```
 
@@ -68,6 +76,7 @@ Let's create the Azure VM with Windows 11 Enterprise using Azure Cloud Shell.
     ```azurecli
     az vm create \
         --resource-group $resourcegroup \
+        --location $location \
         --name $vmname \
         --image MicrosoftVisualStudio:windowsplustools:base-win11-gen2:latest \
         --public-ip-sku Standard \
@@ -82,13 +91,13 @@ Let's create the Azure VM with Windows 11 Enterprise using Azure Cloud Shell.
     ```output
     {
         "fqdns": "",
-        "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-rg-0000/providers/Microsoft.Compute/virtualMachines/myVM",
-        "location": "westus",
+        "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/aksedge-training/providers/Microsoft.Compute/virtualMachines/myVM",
+        "location": "westus3",
         "macAddress": "00-00-00-00-00-00",
         "powerState": "VM running",
         "privateIpAddress": "10.0.0.4",
-        "publicIpAddress": "104.40.70.15",
-        "resourceGroup": "learn-rg-0000",
+        "publicIpAddress": "00.000.000.000",
+        "resourceGroup": "aksedge-training",
         "zones": ""
     }
 
@@ -129,7 +138,7 @@ Now that the VM is created, let's run the `AksEdgeQuickStart-v2.ps1` PowerShell 
 
 1. Download Aks Edge Essentials K3s installer.
 
-    ```azurecli
+    ```powershell
     curl -L -o AksEdge-Learn.msi "https://aka.ms/aks-edge/k3s-msi"
     ```
 
@@ -202,9 +211,9 @@ Now that the VM is created, let's run the `AksEdgeQuickStart-v2.ps1` PowerShell 
 
     .\AksEdgeQuickStart-v2.ps1 -AideUserConfigFilePath .\aideuser-config.json -AksEdgeConfigFilePath .\aksedge-config.json
     ```
-    <!-- TODO: How many minutes it takes? -->
+
     > [!NOTE]
-    > The installation process takes around 30 minutes to complete.
+    > The installation process takes around 10 minutes to complete.
 
     This script automates the following steps:
 
@@ -218,41 +227,38 @@ Now that the VM is created, let's run the `AksEdgeQuickStart-v2.ps1` PowerShell 
       - Connects the deployed cluster to Arc for connected Kubernetes.
 
     The following example with the last lines of the output, shows the download and installation of AKS Edge Essentials K3s distribution was successful. You can also access the log file at `C:\aksedgeLearn\aksedgedlog-yymmdd-hhmm.txt`
-    <!-- TODO: CHeck the output. With Arc Enable it may be different -->
-    ```powersell
-    ...
-    [01/04/2024 15:29:34]
-    Waiting for Windows node IP address...
-    
-    [01/04/2024 15:29:34]
-    Testing Windows node control channel...
-    
-    [01/04/2024 15:29:37]
-    ...successfully connected to the Windows node
-    
-    [01/04/2024 15:31:39]
-    Waiting for Windows node to transition to ready state (796 seconds remaining)
-    - Waiting for Kubernetes node (myvm-wedge) to reach condition Ready, time remaining = 796 seconds
-    - Kubernetes node (myvm-wedge) reached condition Ready
-    
-    [01/04/2024 15:31:57]
-    AksEdge - copying Kubeconfig into the host.
-    
-    [01/04/2024 15:32:02]
-    AksEdge - new deployment successfully created.
 
-    * AksEdge VM deployment successfull.
-    Deployment Successful.
-    Step 4: Connect to Arc
-    >> skipping step 4
-    Duration: 0 hrs 23 mins 13 seconds
+    ```output
+    ...
+    [01/26/2024 16:20:23] AksEdge - Connecting cluster to Azure Arc
+    
+     - Checking Az PS module dependencies
+     - Checking for NuGet
+     - NuGet found
+     - Az.Resources module with version 6.4.1 is found
+     - Az.Accounts module with version 2.11.2 is found
+     - Az.ConnectedKubernetes module with version 0.9.0 is found
+     - Connecting to Azure Account
+     - Verifying Azure Account connection ...
+     - Verifying the Azure resource providers Microsoft.Kubernetes, Microsoft.KubernetesConfiguration, Microsoft.ExtendedLocation are registered
+     - Resource provider Microsoft.Kubernetes is registered.
+     - Resource provider Microsoft.KubernetesConfiguration is registered.
+     - Resource provider Microsoft.ExtendedLocation is registered.
+     - Checking whether cluster 'myVM-k3s' is connected to Azure Arc...
+     - All checks succeeded. Connecting cluster to Azure Arc.
+     - Populating tags for AKS-EE Cluster
+    -- Connection succeeded.
+    Connecting Azure Arc-enabled Server..
+    Disabling WindowsAzureGuestAgent
+    VERBOSE: Performing the operation "Set-Service" on target "Windows Azure Guest Agent (WindowsAzureGuestAgent)".
+    VERBOSE: Performing the operation "Stop-Service" on target "Windows Azure Guest Agent (WindowsAzureGuestAgent)".
+    WARNING: Waiting for service 'Windows Azure Guest Agent (WindowsAzureGuestAgent)' to stop...
+    -- Connection succeeded.
+    Azure Arc connections successful.
+    Duration: 0 hrs 8 mins 29 seconds
     ```
 
-<!-- TODO: Add new screenshot here -->
-
-<!-- TODO: Will we wait and check ARC or continue? -->
-> [!TIP]
-> Since the installation process takes around 30 minutes to complete, you can continue to the next learning unit, we will get back to this later.
+    :::image type="content" source="../media/3-aks-ee-arc-enabled-success-inline.png" alt-text="Screenshot of Windows VM with powershell commands output demonstrating a successful deployment of AKS Edge Essentials and connected with Azure Arc." lightbox="../media/3-aks-ee-arc-enabled-success-expanded.png":::
 
 1. Confirm that the deployment was successful by running the following command:
 
@@ -263,7 +269,7 @@ Now that the VM is created, let's run the `AksEdgeQuickStart-v2.ps1` PowerShell 
 
     The following example screenshot shows the Linux node is ready and the pods are running:
 
-    <!-- TODO: Add new screenshot here -->
+    :::image type="content" source="../media/3-aks-ee-deploy-success-inline.png" alt-text="Screenshot of Windows VM with powershell commands output demonstrating a successful deployment of AKS Edge Essentials." lightbox="../media/3-aks-ee-deploy-success-expanded.png":::
 
 ## View your cluster in Azure Portal
 
