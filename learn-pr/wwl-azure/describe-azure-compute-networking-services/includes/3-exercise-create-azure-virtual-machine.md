@@ -15,7 +15,7 @@ Use the following Azure CLI commands to create a Linux VM and install Nginx. Aft
     
     ```azurecli
     az vm create \
-      --resource-group <rgn>'"[sandbox resource group name]"'</rgn> \
+      --resource-group <rgn>"[sandbox resource group name]"</rgn> \
       --name my-vm \
       --public-ip-sku Standard \
       --image Ubuntu2204 \
