@@ -1,22 +1,23 @@
-Microsoft Security Copilot supports non-Microsoft plugins, including third party plugins from vendors including ServiceNow and Splunk, plugins that give Security Copilot access to industry information from the public web, and custom plugins that give Security Copilot access to information and capabilities that you develop or that use OpenAI’s API.
+Microsoft Security Copilot supports non-Microsoft plugins to extend Security Copilot's capabilities.  These plugins are categorized as:
+- Other
+- Websites
+- Custom
 
 :::image type="content" source="../media/non-microsoft-plugins-resized.png" lightbox="../media/non-microsoft-plugins-resized.png" alt-text="Screen capture of the non-Microsoft plugins.":::
 
 
-#### Third party  plugins
+#### Other plugins
 
-Third party integration - Give Security Copilot access to information and capabilities from services beyond Microsoft that your organization uses. Currently supported third party plugins include:
+Other plugins give Security Copilot access to information and capabilities from services beyond Microsoft that your organization uses. Other plugins currently supported include:
 
 - ServiceNow
 - Splunk
 
-Access to these plugins requires additional setup that includes authentication.  The type of authentication required is determined by the plugin provided.  For example, the ServiceNow plugin gives users the option to select from a Basic sign-in or OAuth authorization.
+Access to these plugins assumes an account and license to the specific service and a setup that includes authentication.  The type of authentication required is determined by the plugin provided.  For example, the ServiceNow plugin gives you the option to select from a Basic sign-in or OAuth authorization.
 
 :::image type="content" source="../media/service-now-plugin-authentication.png" lightbox="../media/service-now-plugin-authentication.png" alt-text="Screen capture of the authentication options for the ServiceNow plugin.":::
 
 :::image type="content" source="../media/service-now-oauth.png" lightbox="../media/service-now-oauth.png" alt-text="Screen capture of the authentication settings for the ServiceNow plugin when using oauth authentication.":::
-
-For third party products, the flow is that customers will need to provide their credentials when they set up those plugins, which indicate that they need to have an account and license to be integrating those plugins in.
 
 #### Websites
 
@@ -33,7 +34,7 @@ The Security Copilot platform enables developers and users to write their own pl
 
 Regardless of the approach, every Security Copilot plugin requires a YAML or JSON formatted manifest file (for example: plugin.yaml or plugin.json) which describes metadata about the skill set and how to invoke the skills.
 
-:::image type="content" source="../media/custom-plugin-v2.png" lightbox="../media/custom-plugin-v2.png" alt-text="Screen capture of the manage plugins window, highlighting the custom plugins.":::
+:::image type="content" source="../media/custom-plugin-v2.png" lightbox="../media/custom-plugin-v2.png" alt-text="Screen capture of the manage plugins menu, highlighting the custom plugins.":::
 
 :::image type="content" source="../media/custom-plugin-options.png" lightbox="../media/custom-plugin-v2.png" alt-text="Screen capture showing the two types of custom plugins.":::
 

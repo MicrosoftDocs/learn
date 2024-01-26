@@ -9991,6 +9991,61 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/index.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/1-introduction.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/2-responsible-bot-principles.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/3-create-sample-bot.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/4-run-bot-locally.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/5-deploy-bot.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/6-test-bot.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/7-connect-communication-channels.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/8-knowledge-check.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/deploy-responsible-bot/9-summary.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.advocates.deploy-responsible-bot.badge.yml",
+      "redirect_url": "/training/paths/copilot-solutions/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/examine-components-iot-solution/index.md",
       "redirect_url": "/training/browse/?products=azure&terms=iot",
       "redirect_document_id": false
@@ -19994,6 +20049,11 @@
     {
       "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/3-perform.md",
       "redirect_url": "/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/responsible-bots/index.md",
+      "redirect_url": "/training/paths/copilot-solutions/",
       "redirect_document_id": false
     },
     {
@@ -31850,6 +31910,41 @@
         "source_path": "learn-pr/aspnetcore/microservices-apigateway-aspnet-core/verify-deployment.yml",
         "redirect_url": "/training/paths/create-microservices-with-dotnet",
         "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/challenge-project-create-rock-paper-scissors-game-with-github-copilot/index.md",
+      "redirect_url": "/training/modules/challenge-project-create-mini-game-with-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/challenge-project-create-rock-paper-scissors-game-with-github-copilot/4-exercise-update-calculations.md",
+      "redirect_url": "/training/modules/challenge-project-create-mini-game-with-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/challenge-project-create-rock-paper-scissors-game-with-github-copilot/3-exercise-update-output.md",
+      "redirect_url": "/training/modules/challenge-project-create-mini-game-with-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/challenge-project-create-rock-paper-scissors-game-with-github-copilot/1-introduction.md",
+      "redirect_url": "/training/modules/challenge-project-create-mini-game-with-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/challenge-project-create-rock-paper-scissors-game-with-github-copilot/5-knowledge-check.md",
+      "redirect_url": "/training/modules/challenge-project-create-mini-game-with-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/challenge-project-create-rock-paper-scissors-game-with-github-copilot/2-prepare.md",
+      "redirect_url": "/training/modules/challenge-project-create-mini-game-with-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/challenge-project-create-rock-paper-scissors-game-with-github-copilot/6-summary.md",
+      "redirect_url": "/training/modules/challenge-project-create-mini-game-with-copilot/",
+      "redirect_document_id": false
     }
   ]
 }

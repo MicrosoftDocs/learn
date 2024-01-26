@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/23/2023
+  ms.date: 01/19/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
@@ -36,14 +36,3 @@ quiz:
     - content: "To safeguard cryptographic keys and secrets used by cloud applications and services"
       isCorrect: true
       explanation: "Correct. Azure Key Vault is a cloud service that safeguards cryptographic keys and secrets used by cloud applications and services. It provides secure access to sensitive information and helps meet compliance requirements."
-  - content: "What is the purpose of automation and validation in application hosting platforms?"
-    choices:
-    - content: "Enables manual creation and teardown of environments"
-      isCorrect: false
-      explanation: "Incorrect. Manual processes are prone to errors and inconsistencies."
-    - content: "Increases the time required for creating and tearing down environments"
-      isCorrect: false
-      explanation: "Incorrect. Automation reduces the time required for these processes."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
-      isCorrect: true
-      explanation: "Correct. Automation and validation ensure consistency, reduce errors, and improve security and stability of application hosting platforms."
