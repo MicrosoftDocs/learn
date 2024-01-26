@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.introduction-to-ai-for-trainers.integrating-artificial-intelligence-in-education
+uid: learn.philanthropies.introduction-to-ai-for-trainers.integrate-artificial-intelligence-education
 title: Integrating artificial intelligence in education
 metadata:
   title: Integrating artificial intelligence in education
@@ -11,4 +11,4 @@ metadata:
   ms.service: artificial-intelligence
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-integrating-artificial-intelligence-in-education.md)]
+  [!include[](includes/2-integrate-artificial-intelligence-education.md)]
