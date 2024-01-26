@@ -1,19 +1,19 @@
 
-## Tunnels and tooling
+## What are tunnels?
+Tunnels are a networking concept that involves creating a secure and direct connection between two separate networks or devices, allowing data to be transmitted privately across different networks or the internet. There are several issues that led to the need for this technology but let's discuss a scenario and why tunnels are useful for that case.
+
+### The problems
+
 In a scenario where a software development team is distributed across various locations and needs to interact with a remote server containing essential resources and applications, secure and efficient access becomes a critical requirement. The server, housed within the company's data center, contains vital development tools and databases necessary for the team's work. However, due to stringent security policies, direct access to this server from external networks is heavily restricted. Traditional solutions, such as VPNs, are often cumbersome, leading to slow connections and hindering productivity. Furthermore, these solutions can be complex and resource-intensive to set up and maintain, posing additional challenges for developers. 
-
-## Tunnels 
-
-Tunnels are a networking concept that involves creating a secure and direct connection between two separate networks or devices, allowing data to be transmitted privately across different networks or the internet. 
 
 ### Use cases for tunnels 
 
-The use of Tunnels offers a streamlined solution to many challenges. In the scenario mentioned earlier, a developer needs to work on an application that depends on services and databases located on the company's internal network. Rather than navigating the complexities of VPNs or exposing sensitive services to the internet, the developer can utilize Tunnels to establish a secure and direct connection from their local environment to the remote server. This approach enables seamless access to files, databases, and services as if the developer were physically connected to the remote server. Tunnels facilitate a more efficient workflow by allowing developers to edit code, perform debugging, and execute tasks directly on the remote server, all within their preferred development environment.  
+In the scenario mentioned earlier, a developer needs to work on an application that depends on services and databases located on the company's internal network. Rather than navigating the complexities of VPNs or exposing sensitive services to the internet, the developer can utilize Tunnels to establish a secure and direct connection from their local environment to the remote server. This approach enables seamless access to files, databases, and services as if the developer were physically connected to the remote server. Tunnels facilitate a more efficient workflow by allowing developers to edit code, perform debugging, and execute tasks directly on the remote server, all within their preferred development environment.  
 
 ## VS Code Remote-Tunnels extension 
 ### Why use it? 
 
-The VS Code Remote-Tunnels extension can eliminate the need for source code to be on your VS Code client machine since the extension runs commands and other extensions directly on the remote machine.  
+The use of Tunnels offers a streamlined solution to many challenges so it should be no surpise tools and extensions have become availble for dev tool like VS Code. The VS Code Remote-Tunnels extension can eliminate the need for source code to be on your VS Code client machine since the extension runs commands and other extensions directly on the remote machine.  
 
 ### Scenario – working from home 
 

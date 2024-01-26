@@ -4,9 +4,9 @@ Firstly, it lets you connect to a remote machine, like a desktop PC or virtual m
 
 For continued learning, below are few topics/resources worth exploring that relate to VS Code Remote-Tunnels extension 
 
-- [Microsoft Dev Tunnels](https://learn.microsoft.com/en-us/azure/developer/dev-tunnels/overview) - Article diving deeper into what dev tunnels are and how they function under the hood? 
+- [Microsoft Dev Tunnels](https://learn.microsoft.com/en-us/azure/developer/dev-tunnels/overview){target="_blank"} - Article diving deeper into what dev tunnels are and how they function under the hood? 
 
-- [vscode.dev](https://vscode.dev/) - A detailed article about vscode.dev as it relates to cloud tools, extensions, GitHub, customization & more.  
+- <a href="http://vscode.dev" target="_blank">vscode.dev</a>- A detailed article about vscode.dev as it relates to cloud tools, extensions, GitHub, customization & more.  
 
-- [Command Line Interface](https://code.visualstudio.com/docs/editor/command-line) - Overview of the powerful command-line interface built-in VS Code that lets you control how you launch the editor, open files, install extensions, change the display language, and output diagnostics through command-line options. 
+- [Command Line Interface](https://code.visualstudio.com/docs/editor/command-line){target="_blank"} - Overview of the powerful command-line interface built-in VS Code that lets you control how you launch the editor, open files, install extensions, change the display language, and output diagnostics through command-line options. 
 

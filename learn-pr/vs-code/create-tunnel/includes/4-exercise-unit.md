@@ -36,22 +36,24 @@ tar -xf vscode_cli.tar.gz
 ```bash
 code tunnel
 ```
+This above command downloads and starts the VS Code Server on this machine and then creates a tunnel to it. 
 
-2. Accept license terms by logging into GitHub and submitting provided code
+2. Accept license terms by logging into GitHub and submitting provided code like below (yours will be different):
 
-:::image type="content" source="../media/1. signIn.png" alt-text="Device Activation":::
+:::image type="content" source="../media/1. signIn.png"{width=50% height=50%} alt-text="Device Activation":::
+
+Next, click the authorize button.
 
 :::image type="content" source="../media/2. auth.png" alt-text="Download Page":::
 
+You should see a congratualtions message like below:
 :::image type="content" source="../media/3. congrats.png" alt-text="Confirmation":::
 
-:::image type="content" source="../media/4. link.png" alt-text="Provided link":::
-
-This command downloads and starts the VS Code Server on this machine and then creates a tunnel to it. 
 
 This CLI will output a vscode.dev URL tied to this remote machine, such as 
 
 ```https://vscode.dev/tunnel/<machine_name>/<folder_name>``` 
+:::image type="content" source="../media/4. link.png" alt-text="Provided link":::
 
 3. Open this URL on a client of your choosing. 
 1. Log into your GitHub

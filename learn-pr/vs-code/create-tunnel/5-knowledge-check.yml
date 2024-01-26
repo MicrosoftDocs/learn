@@ -18,20 +18,20 @@ quiz:
     - content: What’s the command to create a secure tunnel with the tunnel command? 
       choices:
         - content: tunnel code 
-          isCorrect: true
+          isCorrect: false
           explanation: Correct. This is the right command. The others will cause an error.
         - content: code tunnel 
-          isCorrect: false
+          isCorrect: true
         - content: code –t 
           isCorrect: false
     - content: What format seems correct for a vscode.dev URL tied to a remote machine & folder? 
       choices:
-        - content: first choice
+        - content: https://vscode.dev/tunnel/<folder_name>/<machine_name>
           isCorrect: true
           explanation: Correct. This is the right format. The others will not work.
-        - content: second choice
+        - content: https://vscode.dev/tunnel/<machine_name_folder_name> 
           isCorrect: false
-        - content: third choice
+        - content: https://vscode.dev/tunnel/<machine_name>/<folder_name>
           isCorrect: false
     - content: Which statement is most true?
       choices:

@@ -1,5 +1,3 @@
-Introduction
-
 It’s quite common these days that people work remotely, from their home, a coffee shop or a similar establishment. Regardless of where you work, you want a secure connection from your machine to your company’s resources. It’s important that these connections are secure, which has come to mean encrypted to protect your company. Additionally, it’s advantageous to use tools that make setting up and configuring such connections so that more time can be spent to deliver business value. 
 
 
