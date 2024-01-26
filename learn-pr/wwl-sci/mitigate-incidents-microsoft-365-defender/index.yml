@@ -8,7 +8,6 @@ metadata:
   ms.author: kelawson
   ms.topic: module
   ms.service: azure
-  ms.subservice: m365d
 title: Mitigate incidents using Microsoft 365 Defender
 summary: Learn how the Microsoft 365 Defender portal provides a unified view of incidents from the Microsoft 365 Defender family of products.
 abstract: |
