@@ -23,7 +23,7 @@ In this procedure, you get the IP address for your VM and attempt to access your
     
     ```azurecli
     IPADDRESS="$(az vm list-ip-addresses \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
       --name my-vm \
       --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
       --output tsv)"    
@@ -66,7 +66,7 @@ Your web server wasn't accessible. To find out why, let's examine your current N
     
     ```azurecli
     az network nsg list \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
       --query '[].name' \
       --output tsv    
     ```
@@ -84,7 +84,7 @@ Your web server wasn't accessible. To find out why, let's examine your current N
     
     ```azurecli
     az network nsg rule list \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
       --nsg-name my-vmNSG    
     ```
     
@@ -93,7 +93,7 @@ Your web server wasn't accessible. To find out why, let's examine your current N
     
     ```azurecli
     az network nsg rule list \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
       --nsg-name my-vmNSG \
       --query '[].{Name:name, Priority:priority, Port:destinationPortRange, Access:access}' \
       --output table    
@@ -120,7 +120,7 @@ Here, you create a network security rule that allows inbound access on port 80 (
     
     ```azurecli
     az network nsg rule create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
       --nsg-name my-vmNSG \
       --name allow-http \
       --protocol tcp \
@@ -134,7 +134,7 @@ Here, you create a network security rule that allows inbound access on port 80 (
     
     ```azurecli
     az network nsg rule list \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
       --nsg-name my-vmNSG \
       --query '[].{Name:name, Priority:priority, Port:destinationPortRange, Access:access}' \
       --output table    
