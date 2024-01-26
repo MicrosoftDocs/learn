@@ -11,7 +11,7 @@ For Microsoft plugins, Security Copilot leverages the OBO (on behalf of) model â
 
 To view the system capabilities supported by the enabled plugins, you enter the '/' in the prompt bar, for a list of prompt suggestions, and then select "See all system capabilities".  The list displayed is the list of all the available system capabilities available to you, based on the plugins you have enabled.
 
-:::image type="content" source="../media/prompt-suggestions-see-all-capabilities.png" lightbox="../media/prompt-suggestions-sell-all-capabilities.png" alt-text="Screen capture of the prompt suggestions that can be run in the standalone experience.":::
+:::image type="content" source="../media/prompt-suggestions-see-all-capabilities.png" lightbox="../media/prompt-suggestions-see-all-capabilities.png" alt-text="Screen capture of the prompt suggestions that can be run in the standalone experience.":::
 
 As described in the previous unit, each system capability is itself a prompt suggestion.
 

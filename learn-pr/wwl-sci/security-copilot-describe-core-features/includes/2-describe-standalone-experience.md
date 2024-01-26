@@ -55,7 +55,7 @@ Even though the prompt bar is at the bottom of the landing page, it really is th
 
 Prompt suggestions are specific, single prompts that you can use in Security Copilot. The available prompt suggestions is displayed by typing the forward slash (the "/" symbol) at the prompt bar. The list displayed is a small subset of all the available system capabilities available to you, based on the plugins you have enabled. To view all the system capabilities available to you, select See all system capabilities. Each system capability is itself a prompt suggestion that you can run in the standalone experience.  
 
-:::image type="content" source="../media/prompt-suggestions-see-all-capabilities.png" lightbox="../media/prompt-suggestions-sell-all-capabilities.png" alt-text="Screen capture of the prompt suggestions that can be run in the standalone experience.":::
+:::image type="content" source="../media/prompt-suggestions-see-all-capabilities.png" lightbox="../media/prompt-suggestions-see-all-capabilities.png" alt-text="Screen capture of the prompt suggestions that can be run in the standalone experience.":::
 
 Selecting a prompt suggestion (a system capability) typically requires more input to get a useful response, but Security Copilot provides that guidance.  As an example, the image that follows shows the information that the user should include for the “GetDefenderIncidents” prompt suggestion.
 
