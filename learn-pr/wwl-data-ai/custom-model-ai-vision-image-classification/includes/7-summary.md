@@ -1,4 +1,4 @@
-Custom models in Azure AI Vision enable you to create and train an AI model to classify images or detect objects in images that you provide an label. These custom models allow you to classify or detect exactly what your use case requires.
+Custom models in Azure AI Vision enable you to create and train an AI model to classify images or detect objects in images that you provide and label. These custom models allow you to classify or detect exactly what your use case requires.
 
 In this module, you learned how to:
 
@@ -7,6 +7,6 @@ In this module, you learned how to:
 - Understand object detection
 - Label and train an image classifier in Vision Studio
 
-Additional Reading:
+More reading:
 - [Create a custom Image Analysis model](/ai-services/computer-vision/how-to/model-customization?azure-portal=true)
 - [Azure AI Vision documentation](/azure/ai-services/computer-vision/overview?azure-portal=true)

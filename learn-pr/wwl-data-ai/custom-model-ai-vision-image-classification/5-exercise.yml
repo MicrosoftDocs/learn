@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.custom-model-ai-vision-image-classification.exercise
-title: Exercise - Classify images with a Azure AI Vision custom model
+title: Exercise - Classify images with an Azure AI Vision custom model
 metadata:
-  title: Exercise - Classify images with a Azure AI Vision custom model
+  title: Exercise - Classify images with an Azure AI Vision custom model
   description: "Create an Azure AI Vision custom model to classify images, image classification"
   ms.date: 1/25/2024
   author: ivorb

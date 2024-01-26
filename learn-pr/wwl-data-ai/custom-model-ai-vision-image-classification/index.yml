@@ -11,7 +11,7 @@ metadata:
 title: Image classification with custom Azure AI Vision models
 summary: "Classify images by training a custom model with Azure AI Vision."
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Create a custom Azure AI Vision classification model
   - Understand image classification
   - Understand object detection
