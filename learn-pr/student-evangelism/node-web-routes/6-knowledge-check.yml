@@ -18,7 +18,7 @@ quiz:
         - content: Use `app.get(‘/’, () => {})`.
           isCorrect: false
           explanation: Incorrect. That's how you would set up a default route for ‘/’. 
-        - content: Use `app.use({} => {})`.
+        - content: Use `app.use(() => {})`.
           isCorrect: true
           explanation: Correct. Using `use()` is the correct way to set up middleware.
         - content: Use `app.middleware() => {})`.
