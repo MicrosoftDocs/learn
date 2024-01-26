@@ -8,5 +8,6 @@ metadata:
   author: kgremban
   ms.author: kgremban
   ms.topic: unit
+durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
