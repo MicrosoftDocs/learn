@@ -2,9 +2,9 @@ Once you upload your images to blob storage and created your dataset, the next s
 
 ## Labeling your training images
 
-Labeling your training images is done in Azure Machine Learning Studio, using the Data Labeling Project. Having complete and accurate labels for your training images greatly improves the performance of your trained model. When you label your images be sure to accurately assign labels and completely label all instances of each class.
+Labeling your training images is done in Azure Machine Learning studio, using the Data Labeling Project. Having complete and accurate labels for your training images greatly improves the performance of your trained model. When you label your images, be sure to accurately assign labels and completely label all instances of each class.
 
-In your dataset within Vision Studio, create a new Azure Machine Learning Data Labeling project or connect to an existing project if you created one in Azure Machine Learning Studio.
+In your dataset within Vision Studio, create a new Azure Machine Learning Data Labeling project or connect to an existing project if you created one in Azure Machine Learning studio.
 
 ![Screenshot of a new dataset in Vision Studio custom model project.](../media/new-dataset.png)
 
