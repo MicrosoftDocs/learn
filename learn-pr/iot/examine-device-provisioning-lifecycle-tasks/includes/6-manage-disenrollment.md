@@ -10,21 +10,21 @@ Individual enrollments apply to a single device and can use either X.509 certifi
 
 To temporarily blocklist the device by disabling its enrollment entry:
 
-1.  Sign in to the Azure portal and select All resources from the left menu.
-2.  In the list of resources, select the provisioning service that you want to blocklist your device from.
-3.  In your provisioning service, select Manage enrollments, and then select the Individual Enrollments tab.
-4.  Select the enrollment entry for the device that you want to blocklist.
-5.  On your enrollment page, scroll to the bottom, and select Disable for the Enable entry switch, and then select Save.
+1. Sign in to the Azure portal and select All resources from the left menu.
+1. In the list of resources, select the provisioning service that you want to blocklist your device from.
+1. In your provisioning service, select Manage enrollments, and then select the Individual Enrollments tab.
+1. Select the enrollment entry for the device that you want to blocklist.
+1. On your enrollment page, scroll to the bottom, and select Disable for the Enable entry switch, and then select Save.
 
 ### Permanently blocklist a device
 
 To permanently blocklist the device by deleting its enrollment entry:
 
-1.  Sign in to the Azure portal and select All resources from the left menu.
-2.  In the list of resources, select the provisioning service that you want to blocklist your device from.
-3.  In your provisioning service, select Manage enrollments, and then select the Individual Enrollments tab.
-4.  Select the check box next to the enrollment entry for the device that you want to blocklist.
-5.  Select Delete at the top of the window, and then select Yes to confirm that you want to remove the enrollment.
+1. Sign in to the Azure portal and select All resources from the left menu.
+1. In the list of resources, select the provisioning service that you want to blocklist your device from.
+1. In your provisioning service, select Manage enrollments, and then select the Individual Enrollments tab.
+1. Select the check box next to the enrollment entry for the device that you want to blocklist.
+1. Select Delete at the top of the window, and then select Yes to confirm that you want to remove the enrollment.
 
 After you finish the procedure, you should see your entry removed from the list of individual enrollments.
 

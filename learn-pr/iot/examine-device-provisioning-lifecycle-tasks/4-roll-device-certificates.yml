@@ -4,12 +4,10 @@ title: Examine how to roll device certificates
 metadata:
   title: Examine how to roll device certificates
   description: "Examine how to roll device certificates"
-  ms.date: 07/18/2022
-  author: wwlpublish
-  ms.author: cahowd
+  ms.date: 01/08/2024
+  author: kgremban
+  ms.author: kgremban
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/4-roll-device-certificates.md)]

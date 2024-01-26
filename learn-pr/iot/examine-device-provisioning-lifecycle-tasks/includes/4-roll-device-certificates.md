@@ -24,9 +24,9 @@ If you're managing your own device certificates, you'll have to build your own p
 
 The device certificate can be manually added to an IoT hub. The certificate can also be automated using a Device Provisioning service instance. We will focus on this second case, where a Device Provisioning service instance is being used to support autoprovisioning.
 
-When a device is initially provisioned through autoprovisioning, it boots-up, and contacts the provisioning service. The provisioning service responds by performing an identity check before creating a device identity in an IoT hub using the device’s leaf certificate as the credential. The provisioning service then tells the device which IoT hub it's assigned to, and the device then uses its leaf certificate to authenticate and connect to the IoT hub.
+When a device is initially provisioned through autoprovisioning, it boots-up, and contacts the provisioning service. The provisioning service responds by performing an identity check before creating a device identity in an IoT hub using the device's leaf certificate as the credential. The provisioning service then tells the device which IoT hub it's assigned to, and the device then uses its leaf certificate to authenticate and connect to the IoT hub.
 
-Once a new leaf certificate has been rolled to the device, it can no longer connect to the IoT hub because it’s using a new certificate to connect. The IoT hub only recognizes the device with the old certificate. The result of the device's connection attempt will be an "unauthorized" connection error. To resolve this error, you must update the enrollment entry for the device to account for the device's new leaf certificate. Then the provisioning service can update the IoT Hub device registry information as needed when the device is reprovisioned.
+Once a new leaf certificate has been rolled to the device, it can no longer connect to the IoT hub because it's using a new certificate to connect. The IoT hub only recognizes the device with the old certificate. The result of the device's connection attempt will be an "unauthorized" connection error. To resolve this error, you must update the enrollment entry for the device to account for the device's new leaf certificate. Then the provisioning service can update the IoT Hub device registry information as needed when the device is reprovisioned.
 
 One possible exception to this connection failure would be a scenario where you've created an Enrollment Group for your device in the provisioning service. In this case, if you aren't rolling the root or intermediate certificates in the device's certificate chain of trust, then the device will be recognized if the new certificate is part of the chain of trust defined in the enrollment group. If this scenario arises as a reaction to a security breach, you should at least blocklist the specific device certificates in the group that are considered to be breached.
 
@@ -38,13 +38,12 @@ If you're rolling certificates to handle certificate expirations, you should use
 
 Later when the secondary certificate also nears expiration, and needs to be rolled, you can rotate to using the primary configuration. Rotating between the primary and secondary certificates in this way reduces downtime for devices attempting to provision.
 
-1.  Open the Manage enrollments page of the Device Provisioning Service instance that has the enrollment entry for your device.
-2.  Select Individual Enrollments, and then select the registration ID entry in the list.
-3.  Select Secondary Certificate and then, select the folder icon to choose the new certificate to be uploaded for the enrollment entry.
-4.  Select Save.
+1. Open the Manage enrollments page of the Device Provisioning Service instance that has the enrollment entry for your device.
+1. Select Individual Enrollments, and then select the registration ID entry in the list.
+1. Select Secondary Certificate and then, select the folder icon to choose the new certificate to be uploaded for the enrollment entry.
+1. Select Save.
 
 :::image type="content" source="../media/m03-l03-manage-individual-enrollments-secondary-portal-b23afe8f.png" alt-text="Screenshot that shows where to configure secondary certificates when rolling certificates for a device.":::
-
 
 ### Enrollment groups and certificate expiration
 
