@@ -11,9 +11,11 @@ For Microsoft plugins, Security Copilot leverages the OBO (on behalf of) model â
 
 To view the system capabilities supported by the enabled plugins, you enter the '/' in the prompt bar, for a list of prompt suggestions, and then select "See all system capabilities".  The list displayed is the list of all the available system capabilities available to you, based on the plugins you have enabled.
 
-:::image type="content" source="../media/prompt-suggestions-sell-all-capabilities.png" lightbox="../media/prompt-suggestions-sell-all-capabilities.png" alt-text="Screen capture of the prompt suggestions that can be run in the standalone experience.":::
+:::image type="content" source="../media/prompt-suggestions-see-all-capabilities.png" lightbox="../media/prompt-suggestions-sell-all-capabilities.png" alt-text="Screen capture of the prompt suggestions that can be run in the standalone experience.":::
 
-As described in the previous unit, each system capability is itself a prompt suggestion. Also, the list is extensive and includes capabilities tied to specific plugins as well capabilities for which there's no corresponding plugin on the Manage plugins menu. These capabilities are available by default and are grouped by their descriptor, such as Generic capabilities and Fusion capabilities.
+As described in the previous unit, each system capability is itself a prompt suggestion.
+
+Also, the list is extensive and includes some capabilities that are not associated with any of the plugins listed on the Manage plugins menu. These capabilities are available by default and are grouped by their descriptor, such as Generic capabilities and Fusion capabilities.
 
 #### Defender External Attack Surface Management (Defender EASM)
 
@@ -104,7 +106,7 @@ The Microsoft Defender XDR plugin includes capabilities that enable users to:
 
 :::image type="content" source="../media/defender-xdr-capabilities.png" lightbox="../media/defender-xdr-capabilities.png" alt-text="Screen capture of the Defender XDR capabilities that can be run in the standalone experience.":::
 
-These and additional capabilities are covered in more detail in the unit titled, "Describe the Security Copilot embedded experience of Microsoft Defender XDR."
+These and additional capabilities are covered in more detail in the unit titled, "Describe Microsoft Copilot in Microsoft Defender XDR, which describes Copilot's embedded capabilities in Defender XDR"
 
 With the Defender XDR plugin enabled, users can take advantage of the Microsoft Defender XDR incident investigation promptbook available through the standalone experience.
 
@@ -189,9 +191,9 @@ The screen capture that follows shows only a subset of the capabilities supporte
 
 :::image type="content" source="../media/purview-plugin-capabilities.png" lightbox="../media/purview-plugin-capabilities.png" alt-text="Screen capture of the Purview capabilities..":::
 
-With the plugin enabled, Purview integration with Security Copilot can be experienced through the standalone or embedded experiences.  In either case and because Microsoft Security Copilot assumes the permissions of the user when it tries to access the data to answer the queries, you need to have the required permissions to access the data.  Also, your organization must be licensed and onboarded to the applicable Microsoft Purview solutions.  
+With the plugin enabled, Security Copilot integration with Purview can be experienced through the standalone or embedded experiences.  In either case and because Microsoft Security Copilot assumes the permissions of the user when it tries to access the data to answer the queries, you need to have the required permissions to access the data.  Also, your organization must be licensed and onboarded to the applicable Microsoft Purview solutions.  
 
-In the standalone experience, use cases you can explore include:
+In the standalone experience, the capabilities enabled by the Purview plugin can be run as prompt suggestions.  You can also explore scenarios that:
 
 - Use data from Microsoft Purview Data Loss Protection to quickly gain context on the data at risk in a security incident. Some sample prompts include:
   - Which Purview Data Loss Prevention alerts should I prioritize today?
@@ -203,4 +205,4 @@ In the standalone experience, use cases you can explore include:
   - What is the risk level of this user?
   - What information does Purview have about the risk associated with this user?
 
-You can also access Security Copilot capabilities directly from Purview solutions, through the embedded experience. The use cases supported in the embedded experience are described in more detail in the module titled, "Describe Microsoft Copilot in Microsoft Purview."
+Security Copilot capabilities can also be experienced directly from within Purview solutions, through the embedded experience.  The scenarios supported through the embedded experience are described in more detail in the module titled, "Describe Microsoft Copilot in Microsoft Purview."
