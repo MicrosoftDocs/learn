@@ -17,9 +17,9 @@ If you don't have a GitHub account already, [create one now](https://docs.github
 
 ## Deploy the application
 
-In the Azure portal, navigate to your Arc-enabled AKS Edge Essentials cluster and select **GitOps** under **Settings**. We will create a cluster-level configuration and a namespace-level configuration.
+In the Azure portal, navigate to your Arc-enabled AKS Edge Essentials cluster and select **GitOps** under **Settings**. We create a cluster-level configuration and a namespace-level configuration.
 
-:::image type="content" source="../media/5-aks-edge-kubernetes-azure-arc-resource-gitops-inline.png" alt-text="Screenshot of AKS Edge Essentials Kubernetes Azure Arc resource in Azure Portal, with gitops highlight." lightbox="../media/5-aks-edge-kubernetes-azure-arc-resource-gitops-expanded.png":::
+:::image type="content" source="../media/5-aks-edge-kubernetes-azure-arc-resource-gitops-inline.png" alt-text="Screenshot of AKS Edge Essentials Kubernetes Azure Arc resource in Azure portal, with GitOps highlight." lightbox="../media/5-aks-edge-kubernetes-azure-arc-resource-gitops-expanded.png":::
 
 1. Select **Create** and use the following values for the cluster-level configuration.
 
@@ -78,7 +78,7 @@ In the Azure portal, navigate to your Arc-enabled AKS Edge Essentials cluster an
 
 1. Refresh your configuration table and wait for the configurations to be installed and compliant.
 
-    :::image type="content" source="../media/5-cluster-and-namespace-configurations-inline.png" alt-text="Screenshot of cluster-level and namespace-level configurations in Azure Portal." lightbox="../media/5-cluster-and-namespace-configurations-expanded.png":::
+    :::image type="content" source="../media/5-cluster-and-namespace-configurations-inline.png" alt-text="Screenshot of cluster-level and namespace-level configurations in Azure portal." lightbox="../media/5-cluster-and-namespace-configurations-expanded.png":::
 
 1. In your VM, use `kubectl` to check that the service is running:
 
@@ -107,15 +107,15 @@ In the Azure portal, navigate to your Arc-enabled AKS Edge Essentials cluster an
 
 ## Update the application
 
-We have configured GitOps and Flux to watch for changes in the *main* branch of your forked repository. Let's make a change to the application and see how GitOps responds.
+We configured GitOps and Flux to watch for changes in the *main* branch of your forked repository. Let's make a change to the application and see how GitOps responds.
 
 1. In your fork of the *azure-arc-jumpstart-apps* repository, navigate to **hello-arc > releases > app > hello-arc.yaml**.
 
-1. Make a change to this YAML file by selecting **Edit**. Change the **replicaCount** to *5*. Change the **value** to *Deploying to AKS Edge Essentials Gitops!*.
+1. Make a change to this YAML file by selecting **Edit**. Change the **replicaCount** to *5*. Change the **value** to *Deploying to AKS Edge Essentials GitOps!*.
 
 1. Commit the change by selecting **Commit changes...** and then **Commit changes**.
 
-    :::image type="content" source="../media/5-update-application-github-inline.png" alt-text="Screenshot of application changes in the Github repository." lightbox="../media/5-update-application-github-expanded.png":::
+    :::image type="content" source="../media/5-update-application-github-inline.png" alt-text="Screenshot of application changes in the GitHub repository." lightbox="../media/5-update-application-github-expanded.png":::
 
 1. Use `kubectl` to see the old pods terminating and new pods coming online:
 

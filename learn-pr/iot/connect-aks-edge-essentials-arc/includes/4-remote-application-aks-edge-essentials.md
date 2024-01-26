@@ -18,11 +18,11 @@ Azure Arc-enabled Kubernetes clusters rely on Flux, a popular open-source GitOps
 
 ## GitOps configurations to push applications to AKS Edge Essentials
 
-After AKS Edge Essentials is connected to Azure Arc and GitOps is enabled, you can deploy applications to your AKS Edge Essentials cluster using GitOps and Flux. For that you will create a cluster-level configuration and a namespace-level configuration. On our example you will leverage the following Helm configurations:
+After AKS Edge Essentials is connected to Azure Arc and GitOps is enabled, you can deploy applications to your AKS Edge Essentials cluster using GitOps and Flux. For that you create a cluster-level configuration and a namespace-level configuration. On our example, you use the following Helm configurations:
 
 - [Nginx Ingress Controller](https://github.com/microsoft/azure-arc-jumpstart-apps/blob/main/nginx/release/nginx-ingress.yaml)
 - [Hello Arc Application](https://github.com/microsoft/azure-arc-jumpstart-apps/blob/main/hello-arc/releases/app/hello-arc.yaml)
 
 ## Commit changes to GitHub application repository for automatic updates
 
-On our example we will configure Flux to automatically update the application when changes are committed to the GitHub repository *main* branch. For example, if we set the **sync interval** to **1 min** when creating the namespace-level configuration, Flux pulls down changes from GitHub every minute.
+On our example, we configure Flux to automatically update the application when changes are committed to the GitHub repository *main* branch. For example, if we set the **sync interval** to **1 min** when creating the namespace-level configuration, Flux pulls down changes from GitHub every minute.

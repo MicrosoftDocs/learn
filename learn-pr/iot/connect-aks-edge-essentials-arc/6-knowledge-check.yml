@@ -27,10 +27,10 @@ quiz:
     choices:
     - content: "GitOps is used to monitor the performance of the application."
       isCorrect: false
-      explanation: "GitOps is not used to monitor the performance of the application, but rather to deploy and manage applications on a Kubernetes cluster."
+      explanation: "GitOps isn't used to monitor the performance of the application, but rather to deploy and manage applications on a Kubernetes cluster."
     - content: "GitOps is used to create a Kubernetes cluster."
       isCorrect: false
-      explanation: "GitOps is not used to create a Kubernetes cluster, but rather to deploy and manage applications on a Kubernetes cluster."
+      explanation: "GitOps isn't used to create a Kubernetes cluster, but rather to deploy and manage applications on a Kubernetes cluster."
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
       isCorrect: true
       explanation: "GitOps enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms by using a Git repository as the source of truth for declarative infrastructure and application code."
