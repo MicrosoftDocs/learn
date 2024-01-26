@@ -777,6 +777,11 @@ achievements:
   title: Java on Azure
   summary: Start here and learn how you can build, migrate, and scale Java applications on Azure using Azure services. Use tools and frameworks that you know and love - Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
   iconUrl: /training/achievements/java-on-azure.svg
+- uid: learn.visual-studio.visual-studio-intro.badge
+  type: badge
+  title: Introduction to Visual Studio
+  summary: Evaluate what Visual Studio can add to your development experience with tools like the advanced editor, debugger, code-sharing, and publishing tools.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.develop-solutions-with-azure-iot-central.trophy
   type: trophy
   title: Develop IoT solutions with Azure IoT Central
