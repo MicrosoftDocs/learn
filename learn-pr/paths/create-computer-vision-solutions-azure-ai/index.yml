@@ -32,7 +32,7 @@ subjects:
 - artificial-intelligence
 modules:
 - learn.wwl.analyze-images
-- learn.wwl.image-classification-custom-ai-vision-model
+- learn.wwl.custom-model-ai-vision-image-classification
 - learn.wwl.detect-analyze-recognize-faces
 - learn.wwl.read-text-images-documents-with-computer-vision-service
 - learn.wwl.analyze-video
