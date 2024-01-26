@@ -44,6 +44,6 @@ To get the best from Application Insights, you need to update your function proj
 
 The recommended method for using Application Insights in your function applications is to fine-tune your application's monitoring and reporting. However, you can also retrieve data about the operation of your applications from the built-in logs that Azure provides you.
 
-For example, **Log streaming** is available from the **Platform features** tab from the top-level page of your functions App Service.
+For example, **Log streaming** is available by selecting **Log stream** on the **Function App** menu. Then choose **Filesystem Logs** or **App Insights Logs**.
 
 ![Image showing where to find Log Streaming.](../media/8-log-streaming.png)

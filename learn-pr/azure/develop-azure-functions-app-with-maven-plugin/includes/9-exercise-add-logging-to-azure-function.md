@@ -8,7 +8,7 @@ In this exercise, you update your function project configuration files to suppor
 
 Now that your Function app is deployed and running on Azure, you can troubleshoot it by using the simple Azure CLI command to get real time log streaming from the app.
 
-1. In the Azure poftal, on the **Overview** page for your **HttpExample** function. Use the **Copy to clipboard** icon to copy the value of your **Resource group** and **Function app**.
+1. In the Azure portal, on the **Overview** page for your **HttpExample** function. Use the **Copy to clipboard** icon to copy the value of your **Resource group** and **Function app**.
 
 1. In the Azure Cloud Shell window, enter the `az webapp log tail -n <functionAppName> -g <resourceGroup>` command to stream logs. Replace `<functionAppName>` and `<resourceGroup>` with the values that you saved in the previous step. For example:  
 
@@ -24,7 +24,7 @@ Now that your Function app is deployed and running on Azure, you can troubleshoo
 
 1. Open a new tab in your web browser, and paste the fully constructed URL from the previous exercise to access your function app to generate some logs.
 
-1. When you are done testing, press <kbd>Ctrl+C</kbd> in your Cloud Shell to close the log stream.
+1. When you're done testing, press <kbd>Ctrl+C</kbd> in your Cloud Shell to close the log stream.
 
 ## Adding instrumentation to your Java project for Application Insights
 
@@ -213,29 +213,27 @@ Your application is now updated to support fine grained logging with both the sy
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account that you used to activate the sandbox.
 
+1. Select **All resources** from the menu on the left.
+
+1. Select your function from the list of resources; for this exercise, your function's name begins with *event-reporting*. For example: *event-reporting-20200102030405006*.
+
 1. View your **Log Streaming** activity:
 
-    1. Select **All resources** from the menu on the left.
+    1. Select **Log stream** on the **Function App** menu.
 
-    1. Select your function from the list of resources; for this exercise, your function's name begins with *event-reporting*. For example: *event-reporting-20200102030405006*.
-
-    1. On the **Overview page**, select **Platform features**.
-
-    1. In the **Monitoring** section, select **Log streaming**.
+    1. Open the **App Insights Logs** dropdown, and select **Filesystem Logs**.
 
         ![Image showing where to find Log Streaming.](../media/8-log-streaming.png)
 
     1. Notice that your sample traffic generates a series of log entries.
 
-        ![Image showing Platform Features and Log Streaming.](../media/9-log-streaming.png)
+        ![Image showing Log Streaming.](../media/9-log-streaming.png)
 
 1. View your **Live Metrics** activity:
 
-    1. Select **All resources** from the menu on the left.
+    1. Select the **Filesystem Logs** dropdown and select **App Insights Logs**.
 
-    1. Select your Application Insights resource from the list; for this exercise, your Application Insights resource matches the name of your Azure Function. For example: *event-reporting-20200102030405006*.
-
-    1. Select **Live Metrics**. Now you can see that your sample traffic generates Application Insights and Live Metrics results.
+    1. Select **Open in Live Metrics**. Now you can see that your sample traffic generates Application Insights and Live Metrics results.
 
         ![Image showing Application Insights and Live Metrics highlights.](../media/9-live-metrics.png)
 

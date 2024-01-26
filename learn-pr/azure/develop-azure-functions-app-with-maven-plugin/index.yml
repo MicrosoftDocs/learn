@@ -3,7 +3,7 @@ uid: learn.develop-azure-functions-app-with-maven-plugin
 metadata:
   title: Develop Java serverless Functions on Azure using Maven
   description: Use the Maven Plugin for Azure Functions to create a cloud-based function. The function is triggered when certain values are passed in an HTTP request, and it outputs a log entry to track the activity.
-  ms.date: 01/24/2024
+  ms.date: 01/26/2024
   author: ggailey777
   ms.author: glenga
   ms.topic: module-standard-task-based
