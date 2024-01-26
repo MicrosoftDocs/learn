@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.create-tunnel
+metadata:
+  title: Introduction to
+  description: Learn how to enable remote tunnels with VS Code
+  ms.date: 12/15/2023
+  author: theReynald
+  ms.author: radolphe
+  ms.topic: interactive-tutorial
+  ms.prod: learning-tunnels
+title: Introduction to
+summary: Enable Remote Tunnel Access with VS Code
+abstract: |
+  In this module you will:
+  - Explain what is tunneling & how remote tunnels securely transmit data  
+  - Use Remote-Tunnels extension 
+
+iconUrl: /learn/achievements/create-tunnel.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - vs
+prerequisites: |
+ - Familiarity with the terminal. 
+ - Knowledge of how to run commands from the terminal. 
+ - VS Code installed on your machine. 
+ - Experience with writing a program or two. 
+units:
+  - learn.create-tunnel.1-introduction
+  - learn.create-tunnel.2-unit
+  - learn.create-tunnel.3-exercise-unit
+  - learn.create-tunnel.4-exercise-unit
+  - learn.create-tunnel.5-knowledge-check
+  - learn.create-tunnel.6-summary
+badge:
+  uid: learn.create-tunnel.badge

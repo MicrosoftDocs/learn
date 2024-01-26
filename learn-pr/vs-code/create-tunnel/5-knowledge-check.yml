@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.create-tunnel.5-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Four multiple-choice questions
+  ms.date: 12/15/2023
+  author: theReynald
+  ms.author: radolphe
+  ms.topic: interactive-tutorial
+  ms.prod: learning-tunnels
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: What’s the command to create a secure tunnel with the tunnel command? 
+      choices:
+        - content: tunnel code 
+          isCorrect: true
+          explanation: Correct. This is the right command. The others will cause an error.
+        - content: code tunnel 
+          isCorrect: false
+        - content: code –t 
+          isCorrect: false
+    - content: What format seems correct for a vscode.dev URL tied to a remote machine & folder? 
+      choices:
+        - content: first choice
+          isCorrect: true
+          explanation: Correct. This is the right format. The others will not work.
+        - content: second choice
+          isCorrect: false
+        - content: third choice
+          isCorrect: false
+    - content: Which statement is most true?
+      choices:
+        - content: The Remote - Tunnels extension lets you connect to a remote machine, like a desktop PC or virtual machine (VM), via a secure tunnel. You can connect to that machine from a VS Code client anywhere, without the requirement of SSH. 
+          isCorrect: true
+          explanation: Correct. ...like a desktop PC or virtual machine (VM).
+        - content: The Remote - Tunnels extension lets you connect to a remote machine, like a desktop PC excluding a virtual machine (VM), via a secure tunnel. You can connect to that machine from a VS Code client anywhere, without the requirement of SSH. 
+          isCorrect: false
+        - content: The Remote - Tunnels extension lets you connect to a remote machine, like a desktop PC excluding a virtual machine (VM), via a secure tunnel. You can connect to that machine from a VS Code client anywhere, but SSH is always required. 
+          isCorrect: false
+
