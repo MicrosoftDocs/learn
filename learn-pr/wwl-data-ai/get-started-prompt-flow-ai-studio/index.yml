@@ -3,7 +3,7 @@ uid: learn.get-started-prompt-flow-ai-studio
 metadata:
   title: Get started with prompt flow in Azure AI Studio (preview)
   description: Get started with prompt flow to develop language model apps in the Azure AI Studio (preview).
-  ms.date: 11/30/2023
+  ms.date: 01/25/2024
   author: madiepev
   ms.author: madiepev
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
