@@ -7,7 +7,7 @@ metadata:
   author: theReynald
   ms.author: radolphe
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-tunnels
 title: Introduction to
 summary: Learn how to
 abstract: |
@@ -31,7 +31,8 @@ units:
   - learn.create-tunnel.1-introduction
   - learn.create-tunnel.2-unit
   - learn.create-tunnel.3-exercise-unit
-  - learn.create-tunnel.4-knowledge-check
-  - learn.create-tunnel.5-summary
+  - learn.create-tunnel.4-exercise-unit
+  - learn.create-tunnel.5-knowledge-check
+  - learn.create-tunnel.6-summary
 badge:
   uid: learn.create-tunnel.badge

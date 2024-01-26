@@ -8,7 +8,7 @@ metadata:
   ms.author: radolphe
   ms.date: 12/15/2023
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-tunnels
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
