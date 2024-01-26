@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.get-started-prompt-flow-ai-studio.connections-runtimes
+title: Explore connections and runtimes
+metadata:
+  title: Explore connections and runtimes
+  description: "Learn about the core components connections and runtimes to work with prompt flow."
+  ms.date: 01/25/2024
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-connections-runtimes.md)]
