@@ -51,19 +51,23 @@ The prompt bar is on the bottom center of the Security Copilot landing page. You
 
 Even though the prompt bar is at the bottom of the landing page, it really is the center piece of Security Copilot. This is where the user spends their time.  Prompts are the primary input Security Copilot needs to generate answers that can help users in their security-related tasks.  Good prompting is key to getting good results.  To help, Security Copilot provides suggestions and promptbooks.
 
-#### Prompt suggestions
+#### Prompt suggestions and system capabilities
 
-Prompt suggestions are specific, single prompts that you can use in Security Copilot. You can see the available prompt suggestions by typing  forward slash (the "/" symbol) at the prompt bar. The prompt suggestions that are available are determined by the plugins that are enabled.
+Prompt suggestions are specific, single prompts that you can use in Security Copilot. The available prompt suggestions is displayed by typing the forward slash (the "/" symbol) at the prompt bar. The list displayed is a small subset of all the available system capabilities available to you, based on the plugins you have enabled. To view all the system capabilities available to you, select See all system capabilities. Each system capability is itself a prompt suggestion that you can run in the standalone experience.  
 
-:::image type="content" source="../media/prompt-suggestions.png" lightbox="../media/prompt-suggestions.png" alt-text="Screen capture showing the available prompt suggestions.":::
+:::image type="content" source="../media/prompt-suggestions-see-all-capabilities.png" lightbox="../media/prompt-suggestions-see-all-capabilities.png" alt-text="Screen capture of the prompt suggestions that can be run in the standalone experience.":::
 
-Prompt suggestions typically require more input to get a useful response, but Security Copilot will provide that guidance.  As an example, the image that follows shows the information that the user should include for the “GetDefenderIncidents” prompt suggestion.
+Selecting a prompt suggestion (a system capability) typically requires more input to get a useful response, but Security Copilot provides that guidance.  As an example, the image that follows shows the information that the user should include for the “GetDefenderIncidents” prompt suggestion.
 
 :::image type="content" source="../media/get-defender-incidents-prompt-suggestion.png" lightbox="../media/get-defender-incidents-prompt-suggestion.png" alt-text="Screen capture showing the required inputs for the Get Defender incident prompt suggestions.":::
 
+When you select the option to see all system capabilities. You'll note that the list is extensive and includes some capabilities that are not associated with any of the plugins listed on the Manage plugins menu. These capabilities are available by default and are grouped by their descriptor, such as Generic capabilities and Fusion capabilities.
+
+:::image type="content" source="../media/generic-skills.png" lightbox="../media/generic-skills.png" alt-text="Screen capture showing a subset of the generic system capabilities.":::
+
 #### Promptbooks
 
-Promptbooks are a collection of prompts that have been put together to accomplish specific security-related tasks. Each promptbook requires a specific input (for example, a code snippet or a threat actor name) and then runs a series of prompts in sequence, with one prompt building on the one before it.
+Promptbooks are a collection of prompts designed to accomplish specific security-related tasks. Each promptbook requires a specific input (for example, a code snippet or a threat actor name) and then runs a series of prompts in sequence, with one prompt building on the one before it.
 
 You can find the different promptbooks by typing an asterisk (the "*" symbol) at the prompt bar. Then, select a promptbook to open it.
 
@@ -85,7 +89,7 @@ For each option, the user can enter additional information.  The image that foll
 
 #### Process log
 
-Once a prompt is executed, the process log appears that provides information for the steps completed. For example, the process log can provide information on what skill (capability) was selected. This information is important because you can use it to determine whether the response has been generated from a trusted source.
+Once a prompt is executed, the process log appears that provides information for the steps completed. For example, the process log can provide information on what skill (capability) was selected. This information is important because you can use it to determine if the generated response is from a trusted source.
 
 :::image type="content" source="../media/process-log-v2b.png" lightbox="../media/process-log-v2b.png" alt-text="Screen capture showing process log, which shows the selected skill and that a safety check was run on the composed message.":::
 
