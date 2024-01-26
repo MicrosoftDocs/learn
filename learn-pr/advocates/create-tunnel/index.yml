@@ -2,14 +2,14 @@
 uid: learn.create-tunnel
 metadata:
   title: Introduction to
-  description: Learn how to
+  description: Learn how to enable remote tunnels with VS Code
   ms.date: 12/15/2023
   author: theReynald
   ms.author: radolphe
   ms.topic: interactive-tutorial
   ms.prod: learning-tunnels
 title: Introduction to
-summary: Learn how to
+summary: Enable Remote Tunnel Access with VS Code
 abstract: |
   In this module you will:
   - Explain what is tunneling & how remote tunnels securely transmit data  
