@@ -29,7 +29,7 @@ roles:
 - student
 products:
 - azure
-- azure-kubernetes-service
+- aks-edge-essentials
 - windows-iot
 subjects:
 - iot

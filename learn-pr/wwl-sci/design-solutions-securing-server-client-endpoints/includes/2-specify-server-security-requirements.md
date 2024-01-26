@@ -1,14 +1,14 @@
-This unit summarizes the [Azure security baseline for Windows Virtual Machines](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline) by providing the first five controls in each of the following nine areas:
+This unit summarizes the [Azure security baseline for Windows Virtual Machines](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline) by providing the first five controls in each of the following nine areas:
 
--   [Network Security](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#network-security)
--   [Logging and Monitoring](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#logging-and-monitoring)
--   [Identity and Access Control](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#identity-and-access-control)
--   [Data Protection](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#data-protection)
--   [Vulnerability Management](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#vulnerability-management)
--   [Inventory and Asset Management](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#inventory-and-asset-management)
--   [Secure Configuration](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#secure-configuration)
--   [Malware Defense](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#malware-defense)
--   [Data Recovery](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#data-recovery)
+-   [Network Security](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#network-security)
+-   [Logging and Monitoring](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#logging-and-monitoring)
+-   [Identity and Access Control](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#identity-and-access-control)
+-   [Data Protection](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#data-protection)
+-   [Vulnerability Management](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#vulnerability-management)
+-   [Inventory and Asset Management](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#inventory-and-asset-management)
+-   [Secure Configuration](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#secure-configuration)
+-   [Malware Defense](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#malware-defense)
+-   [Data Recovery](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#data-recovery)
 
 ## Network Security
 
