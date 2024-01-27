@@ -12,3 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-data-binding.md)]
+  

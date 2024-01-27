@@ -38,7 +38,7 @@ You can also use C# to loop over data and render a list of items:
 
 ## Handle events
 
-Blazor components often handle UI events. To specify an event callback for an event from a UI element, you use an attribute that starts with `@on` and ends with the event name. For example, you can specify the `IncrementCount` method as a handler for a button click event like this:
+Blazor components often handle UI events. To specify an event callback for an event from a UI element, you use an attribute that starts with `@on` and ends with the event name. For example, you can specify the `IncrementCount` method as a handler for a button click event using the `@onclick` attribute, like this:
 
 ```razor
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
