@@ -22,10 +22,10 @@ quiz:
       explanation: "A Blazor component must use an interactive render mode to handle UI event."
     - content: "Assign the component a route using the @page directive."
       isCorrect: false
-      explanation: "Applying a route to a Blazor component does not make it interactive."
+      explanation: "Applying a route to a Blazor component doesn't make it interactive."
     - content: "Add an event handler to the component, like @onclick."
       isCorrect: false
-      explanation: "If a Blazor component doesn't use an interactive render mode, then event handlers will just be ignored."
+      explanation: "If a Blazor component doesn't use an interactive render mode, then event handlers are ignored."
     - content: "Add a code block to the component using @code"
       isCorrect: false
       explanation: "You need to apply an interactive render mode to the component using @rendermode to make it interactive."
@@ -44,14 +44,14 @@ quiz:
     choices:
     - content: "To persist the state of a component to a database."
       isCorrect: false
-      explanation: "Data binding is use to bind the value of a UI element to a value in code, not to persist component state."
+      explanation: "Data binding is used to bind the value of a UI element to a value in code, not to persist component state."
     - content: "To bind the value of a UI element to a value in code."
       isCorrect: true
-      explanation: "Data binding is use to bind the value of a UI element to a value in code."
+      explanation: "Data binding is used to bind the value of a UI element to a value in code."
     - content: "To bind request data to a model object."
       isCorrect: false
-      explanation: "Data binding is use to bind the value of a UI element to a value in code, not to handle request data."
-  - content: "Which of the following is not a valid Razor directive?"
+      explanation: "Data binding is used to bind the value of a UI element to a value in code, not to handle request data."
+  - content: "Which of the following examples isn't a valid Razor directive?"
     choices:
     - content: "@bind"
       isCorrect: false
