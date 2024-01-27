@@ -6,9 +6,9 @@ metadata:
   ms.date: 06/30/2022
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: sap-on-azure 
-  ms.subservice: azure-large-instances
+  ms.subservice: sap-large-instances
 title: Implement and deploy SAP HANA on Azure (Large Instances)
 summary: Deploy, validate, and install SAP HANA on Azure (Large Instances).
 abstract: |

@@ -8,7 +8,7 @@ metadata:
   ms.author: eric
   ms.topic: module
   ms.service: sap-on-azure
-  ms.subservice: azure-large-instances
+  ms.subservice: sap-large-instances
 title: Manage SAP HANA on Azure (Large Instances)
 summary: Explore methods to connect to and manage SAP HANA on Azure (Large Instances).
 abstract: |
