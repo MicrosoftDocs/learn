@@ -31894,7 +31894,7 @@
     {
       "source_path": "learn-pr/azure/build-your-first-blazor-web-app/6-data-binding.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/build-blazor-todo-list/2-data-binding",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/7-exercise-razor-binding.yml",
@@ -31904,7 +31904,7 @@
     {
       "source_path": "learn-pr/azure/build-your-first-blazor-web-app/7-exercise-data-binding.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/build-blazor-todo-list/3-exercise-data-binding",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/build-your-first-blazor-web-app/8-knowledge-check.yml",
