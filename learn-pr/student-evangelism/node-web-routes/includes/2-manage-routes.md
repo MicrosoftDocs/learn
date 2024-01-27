@@ -13,17 +13,11 @@ This unit describes what a URL is in order to create an API.
 
 A URL is an address that a user enters into a client, like a browser, to locate a specific server and a specific functionality. Knowing how the URL works helps you organize your app around it. 
 
-Here's a typical URL:
-
-```bash
-http://localhost:8000/product/1?page=1&pageSize=20
-```
+Here's a typical URL: `http://localhost:8000/product/1?page=1&pageSize=20`
 
 The URL conforms to a syntax that looks like this:
 
-```bash
-scheme:[//authority]path[?query][#fragment]
-```
+`scheme:[//authority]path[?query][#fragment]`
 
 Let's explain the parts.
 

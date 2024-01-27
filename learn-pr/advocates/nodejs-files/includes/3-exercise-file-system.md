@@ -2,7 +2,6 @@ Tailwind Traders has many physical stores all over the world. Each night, these 
 
 In this exercise, you write a Node.js program that can search for files called *sales.json* in a folder.
 
-
 ## Open project in development container
 
 #### [Remote development (browser)](#tab/github-codespaces)
