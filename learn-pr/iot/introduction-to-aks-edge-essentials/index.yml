@@ -6,6 +6,7 @@ metadata:
   ms.date: 11/3/2023
   author: asergaz
   ms.author: sergaz
+  manager: lizross
   ms.topic: module-intro-to-product
   ms.service: aks-edge-essentials
 title: Introduction to Azure Kubernetes Service (AKS) Edge Essentials
