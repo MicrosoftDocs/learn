@@ -8,7 +8,7 @@ metadata:
   ms.author: sergaz
   manager: lizross
   ms.topic: module-intro-to-product
-  ms.service: aks-edge-essentials
+  ms.service: azure-kubernetes-service
 title: Introduction to Azure Kubernetes Service (AKS) Edge Essentials
 summary: |
   Determine when to use AKS Edge Essentials to automate and run your containerized applications. 
