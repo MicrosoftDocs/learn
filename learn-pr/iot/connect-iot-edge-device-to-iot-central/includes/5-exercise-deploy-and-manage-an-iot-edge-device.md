@@ -4,7 +4,7 @@ Recall that to test the solution before deploying it to your stores, you'll run 
 
 Here, you'll deploy the IoT Edge runtime to a Linux VM to test the behavior of your modules with your IoT Central application.
 
-[!INCLUDE [learn-pr/includes/azure-optional-exercise-subscription-note](../../includes/learn-pr/learn-pr/includes/azure-optional-exercise-subscription-note.md)]
+[!INCLUDE [learn-pr/includes/azure-optional-exercise-subscription-note](../../includes/azure-optional-exercise-subscription-note.md)]
 
 ## Configure and deploy the IoT Edge device
 
