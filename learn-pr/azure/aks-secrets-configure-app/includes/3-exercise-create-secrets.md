@@ -105,7 +105,7 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
     kubectl get secret ship-manager-database
     ```
 
-    You should get an output similar to the following:
+    You should get an output similar to the following example:
 
     ```output
     NAME                    TYPE     DATA   AGE
@@ -114,7 +114,7 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
 
 ## Create the application
 
-1. Get the DNS zone that has been made available with the HTTP application routing add-on using the `az aks show` command and save the output value for later use.
+1. Get the DNS zone that is made available by the HTTP application routing add-on using the `az aks show` command and save the output value for later use.
 
     ```azurecli-interactive
     az aks show \
@@ -190,7 +190,7 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
       name: ship-manager-backend
       namespace: default
       annotations:
-        kubernetes.io/ingress.class: addon-http-application-routing
+        spec.ingressClassName: addon-http-application-routing
     spec:
       rules:
         - host: ship-manager-backend.<paste the DNS ZONE here>

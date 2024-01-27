@@ -19,7 +19,7 @@ You deployed the application back end, and now you need to deploy the applicatio
 
 ## Create a ConfigMap
 
-1. Get the DNS zone that has been made available with the HTTP application routing add-on using the `az aks show` command and save the output for later use. You can also use the same value from the previous Ingress you created for the application back end.
+1. Get the DNS zone that is made available by the HTTP application routing add-on using the `az aks show` command and save the output for later use. You can also use the same value from the previous Ingress you created for the application back end.
 
     ```azurecli-interactive
     az aks show \
@@ -121,7 +121,7 @@ You deployed the application back end, and now you need to deploy the applicatio
       name: contoso-ship-manager-frontend
       namespace: default
       annotations:
-        kubernetes.io/ingress.class: addon-http-application-routing
+        spec.ingressClassName: addon-http-application-routing
     spec:
       rules:
         - host: contoso-ship-manager.{your-dns-zone}.aksapp.io
@@ -144,13 +144,13 @@ You deployed the application back end, and now you need to deploy the applicatio
     kubectl apply -f frontend.yaml
     ```
 
-6. Check the result by querying the for the Kubernetes API using the `kubectl get deployment` command.
+6. Check the result by querying the Kubernetes API using the `kubectl get deployment` command.
 
     ```azurecli-interactive
     kubectl get deployment contoso-ship-manager-frontend
     ```
 
-    When the API is available, you should get an output similar to the following:
+    When the API is available, you should get an output similar to the following example:
 
     ```output
     NAME                           READY   UP-TO-DATE   AVAILABLE   AGE
