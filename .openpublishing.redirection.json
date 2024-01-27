@@ -31888,17 +31888,17 @@
     },
     {
       "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/6-csharp-razor-binding.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/6-data-binding",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-blazor-todo-list/2-data-binding",
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/azure/build-your-first-blazor-web-app/6-data-binding",
+      "source_path": "learn-pr/azure/build-your-first-blazor-web-app/6-data-binding.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/build-blazor-todo-list/2-data-binding",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/7-exercise-razor-binding.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/7-exercise-data-binding",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-blazor-todo-list/3-exercise-data-binding",
       "redirect_document_id": true
     },
     {
