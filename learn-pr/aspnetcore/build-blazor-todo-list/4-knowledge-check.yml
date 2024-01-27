@@ -15,48 +15,6 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following examples is not a valid way to specify an event handler in Blazor?"
-    choices:
-    - content: "@onclick=\"() => currentCount++\""
-      isCorrect: false
-      explanation: "Blazor event handlers can be lambda expressions"
-    - content: "@onclick=\"IncrementCount\""
-      isCorrect: false
-      explanation: "A Blazor event handler can point to a synchronous method by name."
-    - content: "@oninput=\"e => text = (string)e.Value\""
-      isCorrect: false
-      explanation: "A Blazor event handler can be a lambda expression and can take an option event argument."
-    - content: "@onclick=\"currentCount++\""
-      isCorrect: true
-      explanation: "A Blazor event handler must be a method or delegate, not an arbitrary C# expression."
-  - content: "What event will trigger a data binding on an input element by default?"
-    choices:
-    - content: "onclick"
-      isCorrect: false
-      explanation: "A data binding on an input element will trigger on the onchange event by default, not the onclick event."
-    - content: "oninput"
-      isCorrect: false
-      explanation: "A data binding on an input element will trigger on the onchange event by default, not the oninput event."
-    - content: "onchange"
-      isCorrect: true
-      explanation: "By default, a data binding on an input element will trigger on the onchange event."
-    - content: "onsubmit"
-      isCorrect: false
-      explanation: "A data binding on an input element will trigger on the onchange event by default, not the onclick event."
-  - content: "How do you change the event used by a data binding to the oninput event?"
-    choices:
-    - content: "@bind:event=\"oninput\""
-      isCorrect: true
-      explanation: "You change the event used by a data binding using the @bind:event attribute."
-    - content: "@bind-event=\"oninput\""
-      isCorrect: false
-      explanation: "You change the event used by a data binding using the @bind:event attribute."
-    - content: "@event=\"oninput\""
-      isCorrect: false
-      explanation: "You change the event used by a data binding using the @bind:event attribute."
-    - content: "@oninput:bind=\"true\""
-      isCorrect: false
-      explanation: "You change the event used by a data binding using the @bind:event attribute."
   - content: "How do you make a Blazor component interactive so that it can handle UI events?"
     choices:
     - content: "Appy an interactive render mode using the @rendermode directive."
@@ -71,15 +29,29 @@ quiz:
     - content: "Add a code block to the component using @code"
       isCorrect: false
       explanation: "You need to apply an interactive render mode to the component using @rendermode to make it interactive."
-  - content: "True or False: To make a Blazor component interactive, it needs to run from the browser on WebAssembly."
+  - content: "What happens to a component immediately after it handles a UI event?"
     choices:
-    - content: "True"
-      isCorrect: false
-      explanation: "You can also make Blazor components interactive from the server and handle UI interactions over a WebSocket connection."
-    - content: "False"
+    - content: "The component is rendered."
       isCorrect: true
-      explanation: "You can make Blazor components interactive from both the server and the client."
-  - content: "Which of the following is not a Razor directive?"
+      explanation: "A component that handles a UI event is automatically rendered."
+    - content: "The component is disposed."
+      isCorrect: false
+      explanation: "Components aren't disposed after handling events."
+    - content: "The component updates all data bindings."
+      isCorrect: false
+      explanation: "Each data binding is only updated based on a specific event from the UI element it's applied to."
+  - content: "What is data binding used for in Blazor?"
+    choices:
+    - content: "To persist the state of a component to a database."
+      isCorrect: false
+      explanation: "Data binding is use to bind the value of a UI element to a value in code, not to persist component state."
+    - content: "To bind the value of a UI element to a value in code."
+      isCorrect: true
+      explanation: "Data binding is use to bind the value of a UI element to a value in code."
+    - content: "To bind request data to a model object."
+      isCorrect: false
+      explanation: "Data binding is use to bind the value of a UI element to a value in code, not to handle request data."
+  - content: "Which of the following is not a valid Razor directive?"
     choices:
     - content: "@bind"
       isCorrect: false
