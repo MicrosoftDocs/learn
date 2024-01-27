@@ -4,7 +4,7 @@ Recall that you want to minimize the amount of data sent from each store. To red
 
 Here, you'll use Azure Functions running on the IoT Edge device to implement a filter. The filter ensures that the device only sends telemetry when the ambient temperature is above 21&deg;C.
 
-[!INCLUDE [learn-pr/includes/azure-optional-exercise-subscription-note](../../includes/learn-pr/learn-pr/includes/azure-optional-exercise-subscription-note.md)]
+[!INCLUDE [learn-pr/includes/azure-optional-exercise-subscription-note](../../includes/azure-optional-exercise-subscription-note.md)]
 
 ## Configure a container registry
 
