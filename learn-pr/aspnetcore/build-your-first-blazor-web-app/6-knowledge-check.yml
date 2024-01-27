@@ -68,25 +68,3 @@ quiz:
     - content: "Using HTML attributes."
       isCorrect: false
       explanation: "Blazor component parameters are defined using public properties and the [Parameter] attribute, not by HTML attributes."
-  - content: "Which of the following is not a Razor directive?"
-    choices:
-    - content: "@bind"
-      isCorrect: false
-      explanation: "The @bind Razor directive is used for two-way data binding." 
-    - content: "@code"
-      isCorrect: false
-      explanation: "The @code Razor directive is used to add C# members to a component."
-    - content: "@page"
-      isCorrect: false
-      explanation: "The @page Razor directive is used to add routes to a component."
-    - content: "@currentCount"
-      isCorrect: true
-      explanation: "There's no @currentCount Razor directive - it's a rendered C# expression."
-  - content: "True or False: Blazor components are interactive (can handle UI events) by default?"
-    choices:
-    - content: "True"
-      isCorrect: false
-      explanation: "Blazor components are statically rendered by default and aren't interactive until you apply an interactive render mode using the @rendermode Razor directive."
-    - content: "False"
-      isCorrect: true
-      explanation: "Blazor components are statically rendered by default and aren't interactive until you apply an interactive render mode using the @rendermode Razor directive."

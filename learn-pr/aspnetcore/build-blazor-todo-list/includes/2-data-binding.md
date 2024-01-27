@@ -1,8 +1,8 @@
-You now know the basics of creating and using Blazor components in Razor files. Next let's explore how to define component rendering logic and handle UI events.
+Let's explore how to define component rendering logic and handle UI events.
 
 ## Render C# expression values
 
-When you want to render the value of a C# expression in Razor, you use a leading `@` character. That's how the `Counter` component renders the `currentCount` value.
+When you want to render the value of a C# expression in Razor, you use a leading `@` character. For example, a `Counter` component can render the value of its `currentCount` field like this:
 
 ```razor
 <p role="status">Current count: @currentCount</p>
@@ -38,7 +38,7 @@ You can also use C# to loop over data and render a list of items:
 
 ## Handle events
 
-Blazor components often handle UI events. We've already seen one example of an event handler in the `Counter` component. The `Counter` button has an `@onclick` event handler that points to the `IncrementCount` method:
+Blazor components often handle UI events. To specify an event callback for an event from a UI element, you use an attribute that starts with `@on` and ends with the event name. For example, you can specify the `IncrementCount` method as a handler for a button click event like this:
 
 ```razor
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
