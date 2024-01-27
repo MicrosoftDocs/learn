@@ -14,7 +14,7 @@ quiz:
   questions:
   - content: "In the retail chain scenario, what is the benefit of using GitOps and Flux on an Arc-enabled AKS Edge Essentials cluster?"
     choices:
-    - content: "To facilitate implementation of DevOps principles and streamline application releases by reducing manual deployment effort."
+    - content: "To reduce manual deployment effort."
       isCorrect: true
       explanation: "GitOps is a DevOps practice that streamlines application releases by reducing manual deployment effort. By using GitOps and Flux to deploy applications to an Arc-enabled AKS Edge Essentials cluster, organizations can increase agility without jeopardizing the stability of the IT environment."
     - content: "To track inventory and analyze interactions."
@@ -31,7 +31,7 @@ quiz:
     - content: "GitOps is used to create a Kubernetes cluster."
       isCorrect: false
       explanation: "GitOps isn't used to create a Kubernetes cluster, but rather to deploy and manage applications on a Kubernetes cluster."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+    - content: "Gitops is used to automate and validate the creation and teardown of environments."
       isCorrect: true
       explanation: "GitOps enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms by using a Git repository as the source of truth for declarative infrastructure and application code."
   - content: "What is the purpose of Azure Arc-enabled Kubernetes?"
