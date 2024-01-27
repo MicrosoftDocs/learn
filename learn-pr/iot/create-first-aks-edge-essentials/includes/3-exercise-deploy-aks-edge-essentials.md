@@ -27,6 +27,7 @@ Let's create the Azure VM with Windows 11 Enterprise using Azure Cloud Shell.
     ```azurecli
     az vm create \
         --resource-group $resourcegroup \
+        --location $location \
         --name $vmname \
         --image MicrosoftVisualStudio:windowsplustools:base-win11-gen2:latest \
         --public-ip-sku Standard \
@@ -42,11 +43,11 @@ Let's create the Azure VM with Windows 11 Enterprise using Azure Cloud Shell.
     {
         "fqdns": "",
         "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-rg-0000/providers/Microsoft.Compute/virtualMachines/myVM",
-        "location": "westus",
+        "location": "westus3",
         "macAddress": "00-00-00-00-00-00",
         "powerState": "VM running",
         "privateIpAddress": "10.0.0.4",
-        "publicIpAddress": "104.40.70.15",
+        "publicIpAddress": "00.000.000.000",
         "resourceGroup": "learn-rg-0000",
         "zones": ""
     }
@@ -67,11 +68,13 @@ Let's download the K3s installer and Windows node files to [Azure file share](/a
     echo Storage Account File: $storageAccountFile
     ```
 
-1. Download K3s installer and Windows node files to the Azure file share.
+1. Download K3s installer, Windows node files and certificates to the Azure file share.
 
     ```azurecli
     curl -L -o ~/clouddrive/AksEdge-Learn.msi "https://aka.ms/aks-edge/k3s-msi" &
     curl -L -o ~/clouddrive/AksEdgeWindows-Learn.zip "https://aka.ms/aks-edge/windows-node-zip" &
+    curl -L -o ~/clouddrive/MicrosoftRootCertificateAuthority2011.cer "https://download.microsoft.com/download/2/4/8/248D8A62-FCCD-475C-85E7-6ED59520FC0F/MicrosoftRootCertificateAuthority2011.cer" &
+    curl -L -o ~/clouddrive/MicCodSigPCA2011.crt "https://www.microsoft.com/pkiops/certs/MicCodSigPCA2011_2011-07-08.crt" &
     ```
 
 1. Run the PowerShell [Get-AzRemoteDesktopFile](/powershell/module/az.compute/get-azremotedesktopfile) cmdlet to get the RDP file to connect to the VM:
@@ -119,13 +122,20 @@ Now that the VM is created and the install files downloaded, let's run the `AksE
 > [!NOTE]
 > The following commands are executed in the PowerShell command line of the VM.
 
-1. Open the PowerShell command line by clicking on the **Start** menu and typing **PowerShell**. Then run the following command to change the working directory to `C:\akseeLearn`.
+1. Open the PowerShell command line by clicking on the **Start** menu and typing **PowerShell**. Then run the following command to change the working directory to `C:\aksedgeLearn`.
 
     ```powershell
-    if (!(Test-Path -Path "C:\akseeLearn")) {
-        New-Item -ItemType Directory -Path "C:\akseeLearn" | Out-Null
+    if (!(Test-Path -Path "C:\aksedgeLearn")) {
+        New-Item -ItemType Directory -Path "C:\aksedgeLearn" | Out-Null
     }
-    Push-Location "C:\akseeLearn"
+    Push-Location "C:\aksedgeLearn"
+    ```
+
+1. Install Windows certificates
+
+    ```powershell
+    certutil.exe -addstore -f "AuthRoot" "Z:\\MicrosoftRootCertificateAuthority2011.cer"
+    certutil.exe -addstore -f "CA" "Z:\\MicCodSigPCA2011.crt"
     ```
 
 1. Set the parameters to create a single machine K3S cluster with a Linux and Windows node. The `aideuser-config.json` and `aksedge-config.json` files are used to run the `AksEdgeQuickStart-v2.ps1` PowerShell script.
@@ -207,16 +217,16 @@ Now that the VM is created and the install files downloaded, let's run the `AksE
 
     This script automates the following steps:
 
-    - In the VM working folder `C:\akseeLearn`, the script downloads the GitHub archive of [Azure/AKS-Edge](https://github.com/Azure/AKS-Edge) and unzips to a folder **AKS-Edge-main**.
+    - In the VM working folder `C:\aksedgeLearn`, the script downloads the GitHub archive of [Azure/AKS-Edge](https://github.com/Azure/AKS-Edge) and unzips to a folder **AKS-Edge-main**.
     - Invokes the `Start-AideWorkflow` function that performs the following tasks:
       - Unzips Windows install files.
       - Installs the AKS Edge Essentials MSI.
       - Installs required host OS features (`Install-AksEdgeHostFeatures`).
       - Deploys a single machine K3S cluster with a Linux and Windows node.
 
-    The following example with the last lines of the output, shows the download and installation of AKS Edge Essentials K3s distribution was successful. You can also access the log file at `C:\akseeLearn\aksedgedlog-yymmdd-hhmm.txt`
+    The following example with the last lines of the output, shows the download and installation of AKS Edge Essentials K3s distribution was successful. You can also access the log file at `C:\aksedgeLearn\aksedgedlog-yymmdd-hhmm.txt`
 
-    ```powersell
+    ```output
     ...
     [01/04/2024 15:29:34]
     Waiting for Windows node IP address...
