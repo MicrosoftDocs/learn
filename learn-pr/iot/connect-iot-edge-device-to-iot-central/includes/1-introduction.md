@@ -8,4 +8,4 @@ In this module, you'll configure an IoT Central application with a device templa
 
 After you complete this module, you'll be able to implement an IoT application pattern that includes edge devices to manage local devices and filter data.
 
-[!INCLUDE [azure-optional-exercise-subscription-prerequisite](../../includes/learn-pr/includes/azure-optional-exercise-subscription-prerequisite.md)]
+[!INCLUDE [azure-optional-exercise-subscription-prerequisite](../../includes/azure-optional-exercise-subscription-prerequisite.md)]
