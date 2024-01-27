@@ -2,11 +2,11 @@ In this module, we embark on an exciting journey to bridge the gap between Linux
 
 ## Embracing the Best of Both Worlds 
 
-The integration of Linux into the Windows ecosystem is a game-changer for developers. With the advent of the [Windows Subsystem for Linux (WSL)](/windows/wsl-introduction), it's now possible to run a Linux environment directly on Windows, without the overhead of traditional virtual machines or dual-boot setups. This module guides you through using this powerful feature in your development workflow. 
+The integration of Linux into the Windows ecosystem is a game-changer for developers. With the advent of the [Windows Subsystem for Linux (WSL)](/windows/wsl-introduction), it's now possible to run a Linux environment directly on Windows, without the overhead of traditional virtual machines (VMs) or dual-boot setups. This module guides you through using this powerful feature in your development workflow. 
 
 ## Why Visual Studio Code?
 
-Visual Studio Code (VS Code), a versatile and widely used code editor, enhances this integration. It offers an array of features that streamline the development process, making it a preferred choice for many developers. The [WSL Extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) provides developers with the capability to use a genuine Linux command-line interface (CLI), access Linux file systems, and execute Linux-specific software and scripts, all from within the VS Code environment. In this module, we explore how VS Code, when combined with WSL, creates a seamless and efficient development environment, allowing you to use Linux-based tools and utilities directly on your Windows machine. 
+Visual Studio Code (VS Code), a versatile and widely used code editor, enhances this integration. It offers an array of features that streamline the development process, making it a preferred choice for many developers. The [VS Code WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) provides developers with the capability to use a genuine Linux command-line interface (CLI), access Linux file systems, and execute Linux-specific software and scripts, all from within the VS Code environment. In this module, we explore how VS Code, when combined with WSL, creates a seamless and efficient development environment, allowing you to use Linux-based tools and utilities directly on your Windows machine. 
 
 ## What will you learn?
 
@@ -21,6 +21,6 @@ Visual Studio Code (VS Code), a versatile and widely used code editor, enhances 
 
 ## What is the main goal?
 
-By the end of this module, you have a solid foundation for using Linux tools and applications on your Windows system, all within the familiar and powerful interface of Visual Studio Code. Let's get started on this journey to enhance your development skills and workflow! 
+By the end of this module, you have a solid foundation for using Linux tools and applications on your Windows system, all within the familiar and powerful interface of VS Code. Let's get started on this journey to enhance your development skills and workflow! 
 
 Let's now learn a little more about what the Windows Subsystem for Linux (WSL) is.

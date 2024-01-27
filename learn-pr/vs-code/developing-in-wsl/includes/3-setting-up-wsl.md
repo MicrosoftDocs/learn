@@ -21,11 +21,11 @@ This module is focused on how we can use WSL and VS Code, but WSL install is ind
 
 ### Set Up Your Linux Distribution: 
 
-A Linux distro is a version of the Linux operating system that's tailored with certain software and settings for various needs or preferences. Ubuntu is a popular Linux distro known for its user-friendly interface and extensive software ecosystem, making it an accessible choice for many users. 
+A Linux distribution (distro) is a version of the Linux operating system that's tailored with certain software and settings for various needs or preferences. Ubuntu is a popular Linux distro known for its user-friendly interface and extensive software ecosystem, making it an accessible choice for many users. 
 
-1. Upon restart, open the newly installed Linux distribution from the Start menu. 
+1. Upon restart, open the newly installed Linux distro from the Windows Start menu. 
 
-2. Follow the prompts to create a user account and password for your Linux distribution. 
+2. Follow the prompts to create a user account and password for your Linux distro. 
 
 ## Creating a Python Project
 
@@ -38,7 +38,7 @@ Python should be installed by default on your WSL distro. To verify, run: `pytho
 1. `sudo apt update`
 2. `sudo apt install python3 python3-pip` 
 
-### The WSL Filesystem 
+### The WSL File System 
 
 Now we need to create a folder for our project. When working in WSL, files are stored in the WSL file system. Both your Windows and Linux files are stored on the same physical hard drive. However, they exist in separate file systems: 
 
@@ -62,4 +62,4 @@ WSL allows access to Windows files, but for development, especially with tools l
 
 5. **Execute the Program:** To run your new program, use the command: `python3 hello.py`
 
-Great, now we have a Python project to continue working with. Let's look at how we can set up the WSL Extension for Visual Studio Code.
+Great, now we have a Python project to continue working with. Let's look at how we can set up the VS Code WSL extension.

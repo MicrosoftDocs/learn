@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.developing-in-wsl.setting-up-wsl-extension
-title: Setting up the WSL Extension for Visual Studio Code
+title: Setting up the Visual Studio Code WSL extension
 metadata:
-  title: Setting up the WSL Extension for Visual Studio Code
-  description: "Install the WSL Extension for Visual Studio Code and understand its basic usage."
+  title: Setting up the Visual Studio Code WSL extension
+  description: "Install the Visual Studio Code WSL extension and understand its basic usage."
   ms.date: 11/28/2023
   author: gwynethp
   ms.author: gwynethp

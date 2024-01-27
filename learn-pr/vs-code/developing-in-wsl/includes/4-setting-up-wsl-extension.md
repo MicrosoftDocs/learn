@@ -1,4 +1,4 @@
-The VS Code WSL extension lets you use VS Code on Windows to build Linux applications that run on the Windows Subsystem for Linux (WSL). You get all the productivity of Windows while developing with Linux-based tools, runtimes, and utilities.  
+The VS Code WSL extension lets you use the Windows Subsystem for Linux (WSL) as your full-time development environment right from VS Code. You get all the productivity of Windows while developing with Linux-based tools, runtimes, and utilities.  
 
 This integration allows developers to utilize the full range of Linux tools and utilities while benefiting from the rich features of VS Code. 
 
@@ -21,7 +21,7 @@ In VS Code, go to the Extensions view by clicking on the Extensions icon in the 
 
 :::image type="content" source="../media/5-connect-to-wsl.png" alt-text="Screenshot of the Visual Studio Code WSL connect to WSL command.":::
 
-1. In VS Code, open your command pallet (Ctrl/CMD+Shift+P) and type in WSL: Connect to WSL 
+1. In VS Code, open your Command Palette (Ctrl/CMD+Shift+P) and type in WSL: Connect to WSL 
     - Your VS Code will reload and connect to WSL 
     - Notice the remote indicator on the bottom right corner displays that VS Code is connected to WSL: Ubuntu 
 
@@ -31,17 +31,17 @@ In VS Code, go to the Extensions view by clicking on the Extensions icon in the 
 
 5. In the terminal type in the command `uname`, the output should be Linux. 
 
-## Opening our Python Project from WSL in Visual Studio Code 
+## Opening our Python Project from WSL in VS Code 
 
 :::image type="content" source="../media/7-python-in-wsl.png" alt-text="Screenshot of a Python Project open in Visual Studio Code with WSL.":::
 
-1. Open your command pallet (Ctrl/CMD+Shift+P) and type in WSL: Open folder in WSL 
+1. Open your Command Palette (Ctrl/CMD+Shift+P) and type in WSL: Open folder in WSL 
 
 2. Select the helloWorld folder, if you don’t see it in the drop-down, you can type in the path /home/your-username/helloWorld/ 
 
 3. Select OK. VS Code will reload and open your folder. 
 
-4. In Explorer (Ctrl/CMD+Shift+E), verify you see your hello.py file. 
+4. In the Explorer (Ctrl/CMD+Shift+E), verify you see your hello.py file. 
     - Also notice that your terminal (Ctrl/CMD+`) displays that you are in the helloWorld folder. 
 
 We now have our project open and ready to work with. 
