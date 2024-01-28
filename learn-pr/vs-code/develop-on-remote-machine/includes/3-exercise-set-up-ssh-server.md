@@ -40,7 +40,7 @@ Now, you must set the SSH configuration and finalize creation of your VM so that
 
 1. You may receive a validation error on the Networking tab – if so, click on that error, and Create a new virtual network. Click Review + create again.
 
-    :::image type="content" source="../media/3-vnet-validation.png" alt-text="Screenshot showing the validation step to create a new virtual network for the VM.":::
+    :::image type="content" source="../media/3-virtual-network-validation.png" alt-text="Screenshot showing the validation step to create a new virtual network for the VM.":::
 
 1. After reviewing the details, select Create, and Azure will deploy your VM. This process may take a few minutes.
 

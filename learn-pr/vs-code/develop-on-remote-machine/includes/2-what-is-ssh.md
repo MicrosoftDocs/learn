@@ -4,7 +4,7 @@ To connect using SSH, you must have a running SSH server. Most commonly, the con
  
 :::image type="content" source="../media/2-ssh-key-authentication.png" alt-text="Diagram showing how SSH authentication works.":::
 
-## Using SSH for Development
+## Using SSH for development
 
 You want to explore setting up a remote machine for each application that your agency works on. Each machine is its own remote development environment that you can access, without needing any application files on your local machine. You see the following ways that connecting to a remote machine using SSH can benefit your agency:
 - Securely connect to the remote machine that has the same operating system where your application is deployed.

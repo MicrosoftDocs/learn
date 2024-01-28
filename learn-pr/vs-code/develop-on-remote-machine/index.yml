@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.develop-on-remote-machine
 metadata:
-  title: Develop on a Remote Machine using SSH with Visual Studio Code
+  title: Develop on a remote machine using SSH with Visual Studio Code
   description: "In this module, you'll learn how to seamlessly develop on a remote machine using the Visual Studio Code Remote - SSH extension. We'll explore how to run and debug code located on a remote machine, while locally using Visual Studio Code's full feature set."             
   ms.date: 01/22/2024           
   author: olguzzar    
@@ -10,7 +10,7 @@ metadata:
   ms.topic: module
   ms.service: vs-code
 
-title: Develop on a Remote Machine using SSH in Visual Studio Code
+title: Develop on a remote machine using SSH in Visual Studio Code
 
 summary: |
 

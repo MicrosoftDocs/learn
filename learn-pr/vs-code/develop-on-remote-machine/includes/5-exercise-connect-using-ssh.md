@@ -6,7 +6,7 @@ In this exercise, you'll install the [VS Code Remote – SSH extension](https://
 
 Your local machine must have a supported SSH client to enable SSH connections to the remote machine.
 
-1. Install a [supported SSH client](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client) for your local operating system.
+- Install a [supported SSH client](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client) for your local operating system.
 
 ## Install the Remote – SSH extension
 
@@ -24,7 +24,7 @@ The VS Code Remote – SSH extension must be installed to connect to your SSH se
 
 1. The Remote - SSH extension will install, and you'll have access to the commands that it adds to Visual Studio Code.
 
-## Set Up New SSH Host
+## Set up new SSH host
 
 Now, you can use the Remote - SSH commands in VS Code to set up your SSH host configuration.
 
@@ -50,10 +50,7 @@ Now, you can use the Remote - SSH commands in VS Code to set up your SSH host co
 
 Now that the host is configured, you can connect to the remote machine.
 
-1. Run the "Remote-SSH: Connect to Host…" command again. You can now select your newly added host in the list.
-
-    :::image type="content" source="../media/5-connect-to-configured-host.png" alt-text="Screenshot showing the configured SSH host that you can connect to in the Command Palette.":::
-
+1. Run the "Remote-SSH: Connect to Host…" command again. You can now see your newly added host listed by its IP address. Select the host.
 1. Once you select the host, VS Code will now open a new window. You'll see a notification that the "VS Code Server" is initializing on the SSH Host.
 
     :::image type="content" source="../media/5-initializing-vs-code-server.png" alt-text="Screenshot showing the Initializing VS Code Server notification when connecting to the SSH host.":::
