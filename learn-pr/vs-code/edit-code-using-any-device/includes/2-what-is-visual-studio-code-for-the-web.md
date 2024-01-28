@@ -8,7 +8,7 @@ The VS Code for the Web experience has many similarities with VS Code Desktop, i
 
 To get started, go to https://vscode.dev in your browser.
 
-## Extensions and Custom URLs
+## Extensions and custom URLs
 
 You can customize VS Code for the Web by installing extensions. Extensions let you add languages, debuggers, and tools to your editor to support your development workflow.
 

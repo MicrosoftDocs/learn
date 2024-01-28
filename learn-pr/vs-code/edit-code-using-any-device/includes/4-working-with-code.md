@@ -1,6 +1,6 @@
 Now that you're familiar with the basics of VS Code for the Web, let's take a look at how developers at your startup can benefit from these features. At the startup, things move quickly, and you need to be able to browse and make lightweight code changes wherever you are. You can use VS Code for the Web to perform these tasks from any browser-compatible device.
 
-## Browsing Repositories
+## Browsing repositories
 
 When you want to quickly browse or make lightweight changes, you don't want to wait to locally clone the source code repository. With VS Code for the Web, you can remotely browse and edit a repository from within the editor, without needing to pull code onto your local machine. This functionality is made possible through the [Remote Repositories](https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-repositories&ssr=false#overview) extension, which integrates with the GitHub Repositories and Azure Repositories extensions. The Remote Repositories extension is available to install in VS Code Desktop and enabled by default in the VS Code for the Web experience.
 
