@@ -17,7 +17,7 @@ quiz:
   questions:
   - content: "How do you make a Blazor component interactive so that it can handle UI events?"
     choices:
-    - content: "Appy an interactive render mode using the @rendermode directive."
+    - content: "Apply an interactive render mode using the @rendermode directive."
       isCorrect: true
       explanation: "A Blazor component must use an interactive render mode to handle UI event."
     - content: "Assign the component a route using the @page directive."
