@@ -5,8 +5,9 @@ metadata:
   title: When to use Device Provisioning Service
   description: "When to use Device Provisioning Service"
   ms.date: 12/15/2023
-  author: wwlpublish
-  ms.author: cahowd
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
   ms.topic: unit
 azureSandbox: false
 labModal: false
