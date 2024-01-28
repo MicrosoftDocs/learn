@@ -44,7 +44,8 @@ updating the subnets listed, where do they find this data? There are several way
 ## View detected devices
 <!-- carry on watching this https://youtu.be/FbLhJZN1LdQ?si=xMBscEGQxGspzMSR&t=4635-->
 
-All of the devices detected by Defender for IoT will appear in teh Device inventory. You can made changes to the device details and it is important to review the data for the Name, Class, Type, and Subtype, Authorization, Scanner device, and Programming device columns.
+All of the devices detected by Defender for IoT will appear in the Device inventory. You can made changes to the device details by selecting a specific item and then selecting **Edit**. Or select a group of items to edit at the same time, select **Add field types** and make your changes. It is important to review the data for the Name, Class, Type, and Subtype, Authorization, Scanner device, and Programming device columns.
+<!-- Does this categorization of devices occur now, who does it, manually or automatically? <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/device-inventory#supported-devices> Where do we find the information for this stage? Is it in the network map?  -->
 
 ## Update selected details
 
@@ -53,21 +54,3 @@ You can also customize other parts of the data , such as the names assigned to t
 In some cases a device might be listed more than once, this can happen when a device has two or more similar connectors, for example a laptop with both Wifi and a physical network card. In this case you will need to merge them together, using the **Merge** option. This will make a new device listing, that will contain all of the data from the merged devices.
 
 Needs more review and help from a PM or someone.
-
-Note: For exercise - Prepare your environment â€“ Create a sensor with sample data. Speak to Vishakha about how we can use the hands on lab. We might still have to instruct them on how to set up a VM to deploy this. (this basically skips the install/activate steps)
-fine tune
--Microsoft-Defender-for-IoT/Hands on Lab Documents at main Â· Azure/-Microsoft-Defender-for-IoT Â· GitHub
-<https://learn.microsoft.com/azure/defender-for-iot/organizations/how-to-control-what-traffic-is-monitored#define-ot-and-iot-subnets>
-<https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-deploy/update-device-inventory#merge-duplicate-devices>
-
-alerts
-<https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-deploy/create-learned-baseline#understand-learning-mode>
-<https://learn.microsoft.com/azure/defender-for-iot/organizations/alerts#managing-ot-alerts-in-a-hybrid-environment>
-<https://learn.microsoft.com/azure/defender-for-iot/organizations/alerts#alert-statuses-and-triaging-options>
-
-Exercises
-<https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-deploy/update-device-inventory>
-
-<https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-deploy/create-learned-baseline>
-
-<https://learn.microsoft.com/azure/defender-for-iot/organizations/how-to-view-alerts>

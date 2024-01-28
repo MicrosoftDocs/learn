@@ -25,7 +25,7 @@ Using Defender for IoT, compare the list of devices displayed for each sensor wi
 Once you know that all of the devices are properly connected to Defender for IoT, you must check that the settings for each device are assigned correctly. Defender for IoT automatically assigns settings for each device. Most of the time these settings are correct, however, they must all be checked and in some cases you need to update and change them. These checks ensure that data is processed correctly, and the proper alerts are created. If the settings are left incorrect, this results in false alerts being sent, and could leave other vulnerabilities on your devices unsecured, which could compromise your most critical assets. Devices are also set to different safety or importance levels, which affect attack vector and risk assessment reports.
 
 <!-- What are managed and unmanaged devices?  check that all the assigned settings are correct. -->
-
+<!-- When does this categorization of devices occur, who does it? <https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/device-inventory#supported-devices>-->
 ## Outcome
 
 Once these steps are properly completed, Defender for IoT is set up to monitor all of the devices passing data to the Azure portal. Defender for IoT now has an accurate list of all the sensors, devices, and their subnets, and the correct status for each one so that they're tracked for vulnerabilities and compromises. This device list should match the original network diagram produced at the beginning of the process.

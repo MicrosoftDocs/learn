@@ -32,15 +32,3 @@ What happens during learning mode?
 
 How long should learning mode last?
 <https://learn.microsoft.com/azure/defender-for-iot/organizations/ot-deploy/create-learned-baseline#learn-mode-timeline>
-
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
-
-    Heading: none
-
-    Example: "A storage account represents a collection of settings that implement a business policy."
-
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
