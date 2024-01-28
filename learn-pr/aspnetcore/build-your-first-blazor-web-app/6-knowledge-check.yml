@@ -2,7 +2,6 @@
 uid: learn.build-your-first-blazor-web-app.knowledge-check
 title: Knowledge check
 metadata:
-  unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge about building and using Blazor components.
   ms.date: 1/23/2024

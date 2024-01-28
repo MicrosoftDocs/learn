@@ -2,7 +2,6 @@
 uid: learn.build-blazor-todo-list.knowledge-check
 title: Knowledge check
 metadata:
-  unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge about event handling and data binding in Blazor.
   ms.date: 1/26/2024
