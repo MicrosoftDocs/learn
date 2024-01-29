@@ -1,4 +1,4 @@
-There are various methods for creating an HDInsight on AKS cluster, this can range from using the Azure portal for an easy user interface, to scripted setups that can help with automated deployments. The following table shows the different methods you can use to setup an HDInsight on AKS  cluster. 
+There are various methods for creating an HDInsight on AKS cluster, this can range from using the Azure portal for an easy user interface, to scripted setups that can help with automated deployments. The following table shows the different methods you can use to set up an HDInsight on AKS  cluster. 
 
  |	Create Clusters with 	|	Web browser 	|	Command line 	|	REST API 	|	SDK 	|
  | --- | --- | --- | --- | --- |
@@ -34,7 +34,7 @@ Once you are in HDInsight on AKS create cluster page, create the cluster by prov
 
 You can opt for “use advanced configuration” in case you want to customize and see more options. 
 
-1. Select the existing cluster pool or if don’t have cluster pool, you can create one by using quick link “Create new”  
+1. Select the existing cluster pool or if don’t have a cluster pool, you can create one by using quick link “Create new”  
 
 1. Select cluster type – “Spark” and update the cluster name – “mycluster” 
 
