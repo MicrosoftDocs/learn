@@ -34,7 +34,7 @@ Once you are in HDInsight on AKS create cluster page, create the cluster by prov
 
 You can opt for “use advanced configuration” in case you want to customize and see more options. 
 
-1. Select the existing cluster pool or if don’t have a cluster pool, you can create one by using quick link “Create new”  
+1. Select the existing cluster pool, or if you don’t have a cluster pool, you can create one by using quick link “Create new”  
 
 1. Select cluster type – “Spark” and update the cluster name – “mycluster” 
 
