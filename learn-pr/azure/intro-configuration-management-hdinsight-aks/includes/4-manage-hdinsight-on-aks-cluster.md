@@ -9,7 +9,7 @@ Let’s see how you can manage a cluster using Azure portal.
  
 1.	Select your cluster name (mycluster) from the list page.
 
-   :::image type="content" source="../media/picture-7.png" alt-text="Screenshot shows select cluster name." lightbox="../media/picture-7.png":::
+       :::image type="content" source="../media/picture-7.png" alt-text="Screenshot shows select cluster name." lightbox="../media/picture-7.png":::
  
 ### View cluster details
 
@@ -48,8 +48,8 @@ Learn how to [manage access to your cluster](/azure/hdinsight-aks/hdinsight-on-a
 
 Secure shell (SSH) allows you to submit jobs and queries to your cluster directly. You can enable or disable SSH using "Secure shell (SSH)" blade in the Azure portal.
 
->[!Note:]
->Enabling SSH will create additional VMs in the cluster. The maximum allowed secure shell nodes are 5.
+> [!Note]
+> Enabling SSH will create additional VMs in the cluster. The maximum allowed secure shell nodes are 5.
 
 :::image type="content" source="../media/picture-10.png" alt-text="Screenshot shows secure shell (SSH) allows you to submit jobs and queries to your cluster directly." lightbox="../media/picture-10.png":::
   
