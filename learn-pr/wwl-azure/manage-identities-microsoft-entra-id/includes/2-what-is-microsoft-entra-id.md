@@ -4,9 +4,7 @@ Microsoft Entra ID also helps them access internal resources like apps on your c
 
 ## Who uses Microsoft Entra ID?<br>
 
-Who uses Microsoft Entra ID?
-
-Microsoft Entra ID provides different benefits to members of your organization based on their role:
+Microsoft Entra ID provides different benefits to members of your organization based on their role:<br>
 
  -  IT admins use Microsoft Entra ID to control access to apps and app resources, based on business requirements. For example, as an IT admin, you can use Microsoft Entra ID to require multifactor authentication when accessing important organizational resources. You could also use Microsoft Entra ID to automate user provisioning between your existing Windows Server and your cloud apps, including Microsoft 365. Finally, Microsoft Entra ID gives you powerful tools to automatically help protect user identities and credentials and to meet your access governance requirements. To get started, sign up for a free 30-day Microsoft Entra ID P1 or P2 trial.<br>
  -  App developers can use Microsoft Entra ID as a standards-based authentication provider that helps them add single sign-on (SSO) to apps that works with a user's existing credentials. Developers can also use Microsoft Entra APIs to build personalized experiences using organizational data. To get started, sign up for a free 30-day Microsoft Entra ID P1 or P2 trial. For more information, you can also see Microsoft Entra ID for developers.<br>

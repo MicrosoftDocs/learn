@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/25/2024
+  ms.date: 01/29/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -14,17 +14,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the purpose of Microsoft Entra External ID in Microsoft Entra?"
+  - content: "A company wants to ensure that their application hosting platforms are secure and stable. Which of the following enables the automation and validation of the creation and teardown of environments to help deliver this?"
     choices:
-    - content: "Microsoft Entra External ID is only used for developers creating consumer-facing apps."
+    - content: "Microsoft Entra B2C"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Entra External ID can be used for B2B collaboration and B2B direct connect as well."
-    - content: "Microsoft Entra External ID is used to manage internal users' identities."
+      explanation: "Incorrect. Microsoft Entra B2C is a service that allows customers to sign in with an identity they've already established."
+    - content: "Microsoft Entra External ID"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Entra External ID is used to securely interact with users outside of your organization."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      explanation: "Incorrect. Microsoft Entra External ID is built on the same technology as Microsoft Entra B2C, but it's a separate service with some feature differences."
+    - content: "Infrastructure as Code"
       isCorrect: true
-      explanation: "Correct. Microsoft Entra External ID allows external users to bring their own identities and use them to sign in, while you manage access to your apps with Microsoft Entra ID or Microsoft Entra B2C to keep your resources protected."
+      explanation: "Correct. Infrastructure as Code enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
   - content: "A company wants to collaborate with a vendor outside of their organization. Which capability of Microsoft Entra External ID should they use?"
     choices:
     - content: "B2C collaboration"
@@ -58,14 +58,14 @@ quiz:
     - content: "Sign in to the Azure portal in the User Administrator role, navigate to Microsoft Entra ID Users, and select either Create new user or Invite external user from the menu."
       isCorrect: true
       explanation: "Correct. The User Administrator must sign in to the Azure portal in the User Administrator role, navigate to Microsoft Entra ID Users, and select either Create new user or Invite external user from the menu to add a new user to their Microsoft Entra ID organization."
-  - content: "A security administrator needs to ensure that user accounts are protected against potential security breaches. Which of the following enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms?"
+  - content: "A company wants to manage identity and access for external users at scale by automating access request workflows, access assignments, reviews, and expiration. Which feature should they use?"
     choices:
-    - content: "Multifactor authentication (MFA)"
+    - content: "B2B direct connect"
       isCorrect: false
-      explanation: "Incorrect. MFA is a security mechanism that requires users to provide two or more forms of authentication to access a resource."
-    - content: "Single sign-On (SSO)"
+      explanation: "Incorrect. B2B direct connect is a new way to collaborate with other Microsoft Entra organizations."
+    - content: "Microsoft Entra B2C"
       isCorrect: false
-      explanation: "Incorrect. SSO is a method of authentication that allows users to access multiple applications with a single set of login credentials."
-    - content: "Azure DevOps"
+      explanation: "Incorrect. Microsoft Entra B2C is a Customer Identity and Access Management (CIAM) solution that lets you build user journeys for consumer and customer-facing apps."
+    - content: "Microsoft Entra entitlement management"
       isCorrect: true
-      explanation: "Correct. Azure DevOps enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      explanation: "Correct. Microsoft Entra entitlement management is an identity governance feature that lets you manage identity and access for external users at scale by automating access request workflows, access assignments, reviews, and expiration."

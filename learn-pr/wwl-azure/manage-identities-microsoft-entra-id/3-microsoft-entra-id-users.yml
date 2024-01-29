@@ -3,8 +3,8 @@ uid: learn.wwl.manage-identities-microsoft-entra-id.microsoft-entra-id-users
 title: Secure users in Microsoft Entra ID
 metadata:
   title: Secure users in Microsoft Entra ID
-  description: "Create and manage Azure AD users"
-  ms.date: 01/25/2024
+  description: "Create and manage Microsoft Entra ID users"
+  ms.date: 01/29/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

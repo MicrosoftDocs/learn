@@ -3,8 +3,8 @@ uid: learn.wwl.manage-identities-microsoft-entra-id.microsoft-entra-id-groups
 title: Secure groups in Microsoft Entra ID
 metadata:
   title: Secure groups in Microsoft Entra ID
-  description: "Manage users with Azure AD groups"
-  ms.date: 01/25/2024
+  description: "Manage users with Microsoft Entra ID groups"
+  ms.date: 01/29/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
