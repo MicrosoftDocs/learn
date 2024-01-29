@@ -17,7 +17,7 @@ Note: When you update a configuration, the corresponding service is restarted in
  
 1. Go to the “Configuration management" blade in the left menu.
 
-   :::image type="content" source="../media/Picture14.png" alt-text="Screenshot shows go to the “Configuration management"." lightbox="../media/Picture14.png":::
+   :::image type="content" source="../media/Picture14.png" alt-text="Screenshot shows go to the Configuration management." lightbox="../media/Picture14.png":::
 
 
 ### Modifying the existing configuration
