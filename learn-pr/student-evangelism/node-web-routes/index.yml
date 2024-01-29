@@ -24,11 +24,10 @@ roles:
 products:
   - azure
 prerequisites: |
-  - [Git](https://git-scm.com/?azure-portal=true) and [Node.js](https://nodejs.org/en/?azure-portal=true) installed
-  on your computer
+  - Have a free [GitHub account](https://github.com/login)
   - Familiarity with editing text and code files in any text editor
-  - Basic familiarity with the HTTP protocol
-  - Experience using the command line, including Git operations
+  - Beginner-level experience writing JavaScript code
+  - Experience using the command line
 subjects:
 - development-tools
 units:

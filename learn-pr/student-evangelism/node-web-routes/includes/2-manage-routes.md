@@ -19,42 +19,21 @@ The URL conforms to a syntax that looks like this:
 
 `scheme:[//authority]path[?query][#fragment]`
 
-Let's explain the parts.
+Let's explain the parts for the example URL: `https://tailwindtraders.com/products/1?page=1&pageSize=20#sort=asc`.
 
-| URL Component | Description |
-| --- | --- |
-| Scheme | The protocol used, such as `http`, `https`, `ftp`, `irc`, or `file`. |
-| Authority | Consists of optional user info and a host, which is usually a domain name. |
-| Path | Zero to many segments separated by a slash (`/`), specifying the resources you're interested in. |
-| Query | Optional part defined after the `?` character, consisting of parameter/value pairs to filter data further. |
-| Fragment | Helps you be even more specific, such as sorting the data in a particular order. |
+| URL Component | Example | Description |
+| --- | --- | --- |
+| Scheme | `https` |The protocol used, such as `http`, `https`, `ftp`, `irc`, or `file`. |
+| Authority | `tailwindtraders.com` |Consists of optional user info and a host, which is usually a domain name. |
+| Path | `/products/1` |Zero to many segments separated by a slash (`/`), specifying the resources you're interested in. |
+| Query | `page=1&pageSize=20` |Optional part defined after the `?` character, consisting of parameter/value pairs to filter data further. |
+| Fragment | `sort=asc` |Helps you be even more specific, such as sorting the data in a particular order. |
 
-An example is: `https://tailwindtraders.com/products/1?page=1&pageSize=20#sort=asc`. This URL has the following components:
-
-| URL Component | Value |
-| --- | --- |
-| Scheme | `https` |
-| Authority | `tailwindtraders.com` |
-| Path | `/products/1` |
-| Query | `page=1&pageSize=20` |
-| Fragment | `sort=asc` |
-
-Each route can have actions such as create, read, update, and delete (known as CRUD). The action is indicated by the route method, and combined with additional information send in the HTTP headers and body. 
-
-The following table shows the connection between the crud action and the HTTP method.
-
-| CRUD Action | HTTP Method |
-| --- | --- |
-| Create | POST |
-| Read | GET |
-| Update | PUT |
-| Delete | DELETE |
-
-Other HTTP methods exist, but these are the most common.
+Each route can have actions such as create, read, update, and delete (known as CRUD). The action is indicated by the route method, and combined with additional information sent in the HTTP headers and body. 
 
 ## HTTP handlers
 
-Express is a web framework that helps you create HTTP APIs. It's a library that you can use to create routes that handle HTTP requests.
+Express is a web framework that helps you create HTTP APIs. Use it to create routes that handle HTTP requests.
 
 Write code to match the table for `/products/114`, like this:
 
@@ -64,9 +43,9 @@ app.get('/products/:id', (req, res) => {
 })
 ```
 
-The format of the handler is `app.<method>(<route>, <callback>)`. When a GET request is made to `/products/114`, run the code in the callback function*. The callback function has two parameters, `req` and `res`. The `req` parameter is the request object, and the `res` parameter is the response object. 
+The format of the handler is `app.<method>(<route>, <callback>)`. The request for the route `/products/114` with the GET method runs the code in the function which has access to the incoming request (`req`) and returns the response (`res`). 
 
-A simplified version of this code can show the different parts of the method, route, and route handler:
+This code can be rewritten to make it easier to read:
 
 ```javascript
 const routeHandler = (incomingRequest, outgoingResponse) => {
@@ -75,6 +54,8 @@ const routeHandler = (incomingRequest, outgoingResponse) => {
 
 app.get('/products/:id', routeHandler)
 ```
+
+In your work at Tailwind Traders, you may have to work in Express apps with either style of code.
 
 ## Incoming data
 
