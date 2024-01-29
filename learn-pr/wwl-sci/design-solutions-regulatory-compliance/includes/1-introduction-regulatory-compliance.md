@@ -15,7 +15,7 @@ The content in the module helps you prepare for the certification exam SC-100: M
 
 ## Overview of regulatory compliance
 
-This article provides an introduction to regulatory compliance, and therefore is not intended for implementing a compliance strategy. More detailed information about [Azure compliance offerings](https://learn.microsoft.com/compliance/regulatory/offering-home) is available at the [Microsoft Trust Center](https://www.microsoft.com/trust-center). Moreover, all downloadable documentation is available to certain Azure customers from the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/).
+This article provides an introduction to regulatory compliance, and therefore is not intended for implementing a compliance strategy. More detailed information about [Azure compliance offerings](/compliance/regulatory/offering-home) is available at the [Microsoft Trust Center](https://www.microsoft.com/trust-center). Moreover, all downloadable documentation is available to certain Azure customers from the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/).
 
 Regulatory compliance refers to the discipline and process of ensuring that a company follows the laws enforced by governing bodies in their geography or rules required by voluntarily adopted industry standards. For IT regulatory compliance, people and processes monitor corporate systems to detect and prevent violations of policies and procedures established by these governing laws, regulations, and standards. This in turn applies to a wide array of monitoring and enforcement processes. Depending on the industry and geography, these processes can become lengthy and complex.
 
