@@ -16,7 +16,7 @@ Let’s see how you can manage a cluster using Azure portal.
 You can view the cluster details in the "Overview" blade of your cluster. It provides general information and easy access to the tools that are part of the cluster.
 
 |	Property	|	Description	|
-|		|		|
+|	--	|	--	|
 |	Resource group	|	The resource group in which cluster is created.	|
 |	Cluster pool name	|	Cluster pool name inside which the cluster is created.	|
 |	Cluster type	|	The type of the cluster such as Spark, Trino, or Flink.	|
