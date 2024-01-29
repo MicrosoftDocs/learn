@@ -28,7 +28,7 @@ There are three ways to create an Azure HDInsight on AKS cluster from the Azure 
  
 :::image type="content" source="../media/picture-3.png" alt-text="Screenshot shows create cluster.":::
 
-Let’s create the cluster using option 2.  
+**Let’s create the cluster using option 2**
  
 Once you are in HDInsight on AKS create cluster page, create the cluster by providing minimum number of inputs. This option prefills the prerequisite configuration fields with smart defaults and auto-creates mandatory resources. 
 
