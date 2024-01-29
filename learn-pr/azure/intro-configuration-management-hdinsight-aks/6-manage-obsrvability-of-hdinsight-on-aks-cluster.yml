@@ -6,8 +6,8 @@ metadata:
   title: Manage observability of HDInsight on AKS cluster
   description: Manage observability of HDInsight on AKS cluster
   ms.date: 01/24/2024  
-  author: sreekzz
-  ms.author: v-sreiyer
+  author: sairamyeturi
+  ms.author: sairamyeturi
   ms.topic: unit
 durationInMinutes: 5
 content: |
