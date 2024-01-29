@@ -38,7 +38,7 @@ You can opt for “use advanced configuration” in case you want to customize a
 
 1. Select cluster type – “Spark” and update the cluster name – “mycluster” 
 
-   :::image type="content" source="../media/picture-4.png" alt-text="Screenshot shows select cluster type":::
+   :::image type="content" source="../media/picture-4.png" alt-text="Screenshot shows select cluster type.":::
  
 
    1. Virtual Machine SKU size is prefilled with the least costing recommended SKU. In the absence of any recommended SKU, it is prefilled with the SKU with the least vCores and maximum quota available at the time of cluster creation. The cluster would be created with a default constant number of five nodes. Flink and Trino clusters would have two head nodes while Spark clusters would have three head nodes. 
