@@ -1989,7 +1989,7 @@ achievements:
   iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.azure.publish-express-node-app-service-vscode.badge
   type: badge
-  title: reate and publish a web application with Azure App Service and Visual Studio Code
+  title: Create and publish a web application with Azure App Service and Visual Studio Code
   summary: Create a web application with Visual Studio Code and publish it to Azure App Service.
   iconUrl: /training/achievements/publish-express-node-app-service-vscode.svg
 
