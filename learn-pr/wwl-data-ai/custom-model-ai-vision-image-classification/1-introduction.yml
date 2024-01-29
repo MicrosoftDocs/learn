@@ -2,9 +2,9 @@
 uid: learn.wwl.custom-model-ai-vision-image-classification.introduction
 title: Introduction
 metadata:
-  title: introduction
-  description: "Intro to creating custom vision models."
-  ms.date: 1/25/2024
+  title: Introduction
+  description: "Introduction to creating custom vision models."
+  ms.date: 1/29/2024
   author: ivorb
   ms.author: berryivor
   ms.topic: interactive-tutorial

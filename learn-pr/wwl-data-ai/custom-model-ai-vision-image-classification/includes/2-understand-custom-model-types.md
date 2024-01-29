@@ -1,4 +1,4 @@
-Custom Azure AI Vision models have different functionality based on the *type*. The types of custom models include **Image classification**, **Object detection**, and **Product recognition**
+Custom Azure AI Vision models have different functionality based on the *type*. The types of custom models include **Image classification**, **Object detection**, and **Product recognition**.
 
 ## Image classification
 

@@ -3,7 +3,7 @@ uid: learn.wwl.custom-model-ai-vision-image-classification
 metadata:
   title: Image classification with custom Azure AI Vision models
   description: "Classify images with custom Azure AI Vision models"
-  ms.date: 1/25/2024
+  ms.date: 1/29/2024
   author: ivorb
   ms.author: berryivor
   ms.topic: module-standard-task-based 
