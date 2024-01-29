@@ -39,7 +39,7 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
   - intune
   - defender-for-threat-intelligence
   - mdeasm
-  - copilot
+  - ms-copilot
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - cloud-security
   - threat-protection
