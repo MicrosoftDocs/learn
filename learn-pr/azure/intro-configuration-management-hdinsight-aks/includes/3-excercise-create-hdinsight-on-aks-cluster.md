@@ -16,17 +16,17 @@ There are three ways to create an Azure HDInsight on AKS cluster from the Azure 
  
 **Option 1**: Search and create “Azure HDInsight on AKS cluster” from the marketplace. 
 
-:::image type="content" source="../media/Picture1.png" alt-text="Screenshot shows Search and create “Azure HDInsight on AKS cluster” from the marketplace." lightbox="../media/Picture1.png":::
+:::image type="content" source="../media/Picture1.png" alt-text="Screenshot shows Search and create “Azure HDInsight on AKS cluster” from the marketplace.":::
  
 **Option 2**: Search and select “Azure HDInsight on AKS clusters” in the Azure portal to create cluster from the page listing all HDInsight on AKS clusters. 
 
 
-:::image type="content" source="../media/Picture2.png" alt-text="Screenshot shows Search and select “Azure HDInsight on AKS clusters” in the Azure portal." lightbox="../media/Picture2.png":::
+:::image type="content" source="../media/Picture2.png" alt-text="Screenshot shows search and select Azure HDInsight on AKS clusters in the Azure portal.":::
  
 
 **Option 3**: Create cluster by selecting New in the Overview page of an existing cluster pool.  
  
-:::image type="content" source="../media/Picture3.png" alt-text="Screenshot shows create cluster." lightbox="../media/Picture3.png":::
+:::image type="content" source="../media/Picture3.png" alt-text="Screenshot shows create cluster.":::
 
 Let’s create the cluster using option 2.  
  
@@ -38,7 +38,7 @@ You can opt for “use advanced configuration” in case you want to customize a
 
 1. Select cluster type – “Spark” and update the cluster name – “mycluster” 
 
-   :::image type="content" source="../media/Picture4.png" alt-text="Screenshot shows select cluster type" lightbox="../media/Picture4.png":::
+   :::image type="content" source="../media/Picture4.png" alt-text="Screenshot shows select cluster type":::
  
 
    1. Virtual Machine SKU size is prefilled with the least costing recommended SKU. In the absence of any recommended SKU, it is prefilled with the SKU with the least vCores and maximum quota available at the time of cluster creation. The cluster would be created with a default constant number of five nodes. Flink and Trino clusters would have two head nodes while Spark clusters would have three head nodes. 
@@ -49,7 +49,7 @@ You can opt for “use advanced configuration” in case you want to customize a
 
 A message that "Your deployment is complete" would be displayed once the cluster is fully deployed and ready for use.  
 
-:::image type="content" source="../media/Picture5.png" alt-text="Screenshot shows configurations of the cluster." lightbox="../media/Picture5.png":::
+:::image type="content" source="../media/Picture5.png" alt-text="Screenshot shows configurations of the cluster.":::
 
 Your Spark cluster “mycluster” is now ready to use. 
 
