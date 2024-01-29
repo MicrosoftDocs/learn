@@ -28,5 +28,20 @@ quiz:
       - content: CPU clock speed
         isCorrect: false
         explanation: Incorrect. CPU clock speed is not the primary consideration for size and scale.
+  - content: In HDInsight on AKS, what is the significance of enabling autoscaling for adjusting the number of worker nodes based on workload demands?
+    choices:
+      - content: Reducing storage costs
+        isCorrect: false
+        explanation: Incorrect. Autoscaling is not primarily for reducing storage costs.
+      - content: Automatically adjusting cluster size
+        isCorrect: true
+        explanation: Correct. Autoscaling adjusts the cluster size based on workload demands.
+      - content: Enhancing network security
+        isCorrect: false
+        explanation: Incorrect. Autoscaling is not primarily for enhancing network security.
+      - content: Improving query performance
+        isCorrect: false
+        explanation: Incorrect. Autoscaling is not primarily for improving query performance.
+      
 
   
