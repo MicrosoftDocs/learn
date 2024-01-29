@@ -1,6 +1,8 @@
-In this exercise, we use everything we've learned so far to add a basic to-do list page to our Blazor app.
+In this exercise, you'll use everything you learned so far to add a basic to-do list page to your Blazor app.
 
 ## Create the to-do list page
+
+1. Create a new Blazor Web App project.
 
 1. Add a *Todo.razor* file to the *Components/Pages* folder
 
@@ -32,7 +34,7 @@ In this exercise, we use everything we've learned so far to add a basic to-do li
 
 1. Apply the changes to the app and try browsing to "/todo" to see your new page.
 
-## Add the Todo page to the nav menu
+## Add the to-do page to the nav menu
 
 The new to-do list page doesn't yet appear in the nav menu with the other existing pages. The nav menu is defined in the `NavMenu` component, which is part of the app's layout. Let's update the `NavMenu` component to add a link to the to-do list page.
 
@@ -87,7 +89,7 @@ The new to-do list page doesn't yet appear in the nav menu with the other existi
     </ul>
     ```
 
-    You won't see anything rendered for the to-do list yet, because the list is empty. We need a way to add some to-do items.
+    You won't see anything rendered for the to-do list yet, because the list is empty. You need a way to add some to-do items.
 
 ## Add to-do items
 
@@ -137,7 +139,7 @@ Let's add some UI elements for adding to-do items to our list.
 
 ## Add checkboxes and count incomplete to-do items
 
-We need a way to mark to-do items as completed, to edit existing to-do items, and to count how many to-do items are yet to be done.
+You need a way to mark to-do items as completed, to edit existing to-do items, and to count how many to-do items are yet to be done.
 
 1. Update the contents of the `li` element to render an `input` of type `checkbox` that is bound to `todo.IsDone` and a text `input` that is bound to `todo.Title`.
 
