@@ -29,7 +29,7 @@ quiz:
           isCorrect: false
           explanation: Incorrect. CPU clock speed is not the primary consideration for size and scale.
 
-    - content: In HDInsight on AKS, what is the significance of enabling autoscaling for adjusting the number of worker nodes based on workload demands?
+  - content: In HDInsight on AKS, what is the significance of enabling autoscaling for adjusting the number of worker nodes based on workload demands?
       choices:
         - content: Reducing storage costs
           isCorrect: false
@@ -44,7 +44,7 @@ quiz:
           isCorrect: false
           explanation: Incorrect. Autoscaling is not primarily for improving query performance.
 
-    - content: What is the purpose of enabling Azure Log Analytics and Azure managed Prometheus in HDInsight on AKS?
+   - content: What is the purpose of enabling Azure Log Analytics and Azure managed Prometheus in HDInsight on AKS?
       choices:
         - content: Real-time data streaming
           isCorrect: false
@@ -58,7 +58,7 @@ quiz:
         - content: Optimizing storage performance
           isCorrect: false
           explanation: Incorrect. Optimizing storage performance is not the primary purpose of Log Analytics and managed Prometheus.
-   - content: How can alerts and notifications be configured in HDInsight on AKS for monitoring cluster health?
+  - content: How can alerts and notifications be configured in HDInsight on AKS for monitoring cluster health?
       choices:
         - content: Using Azure CLI commands
           isCorrect: false
@@ -73,7 +73,7 @@ quiz:
           isCorrect: false
           explanation: Incorrect. Custom scripts are not the primary method for configuring alerts and notifications.
 
-    - content: How can resource utilization be monitored in HDInsight on AKS, and what action can be taken based on the monitoring results?
+   - content: How can resource utilization be monitored in HDInsight on AKS, and what action can be taken based on the monitoring results?
       choices:
         - content: Using Azure portal only; manually adjusting cluster size
           isCorrect: false
@@ -88,7 +88,7 @@ quiz:
           isCorrect: false
           explanation: Incorrect. Custom Grafana dashboards are not the primary method for monitoring resource utilization.
 
-    - content: What actions can be performed using the "Configuration management" blade in the Azure portal for HDInsight on AKS?
+   - content: What actions can be performed using the "Configuration management" blade in the Azure portal for HDInsight on AKS?
       choices:
         - content: Only exporting service configurations
           isCorrect: false
@@ -103,7 +103,7 @@ quiz:
           isCorrect: false
           explanation: Incorrect. Updating and adding configurations can be done using the "Configuration management" blade.
 
-    - content: How does Azure Managed Prometheus contribute to monitoring an HDInsight on AKS cluster?
+   - content: How does Azure Managed Prometheus contribute to monitoring an HDInsight on AKS cluster?
       choices:
         - content: Collects and analyzes cluster metrics
           isCorrect: true
@@ -118,7 +118,7 @@ quiz:
           isCorrect: false
           explanation: Incorrect. Managed Prometheus is a separate service and does not integrate with Log Analytics.
 
-    - content: Once Log Analytics is configured at the cluster pool level, how can it be enabled for individual clusters within the same pool?
+   - content: Once Log Analytics is configured at the cluster pool level, how can it be enabled for individual clusters within the same pool?
       choices:
         - content: By exporting configuration settings
           isCorrect: false
