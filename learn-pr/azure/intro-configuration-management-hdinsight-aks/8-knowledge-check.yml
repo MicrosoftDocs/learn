@@ -11,7 +11,7 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-knowledge-check.md)]
+  [!include[](includes/8-knowledge-check.md)]
 quiz:
   questions:
   - content: "Which Hadoop component is used to manage resources on a Hadoop system?"
