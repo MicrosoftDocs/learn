@@ -7,7 +7,7 @@ metadata:
   author: clarkio
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.devlang: nodejs, javascript
+  ms.devlang: nodejs
   devlang: nodejs, javascript
   ms.service: azure-javascript
 title: Introduction to route management in Node.js with JavaScript
