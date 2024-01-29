@@ -5,11 +5,11 @@ Let’s see how you can manage a cluster using Azure portal.
 
 1.	In the Azure portal search bar, type “HDInsight on AKS clusters” and select “Azure HDInsight on AKS clusters” from the drop-down list.
 
-  :::image type="content" source="./media/Picture6.png" alt-text="Screenshot showing the stages during cluster creation for script action." lightbox="./media/Picture6.png":::
+    :::image type="content" source="./media/Picture6.png" alt-text="Screenshot shows Azure portal search bar." lightbox="./media/Picture6.png":::
  
 1.	Select your cluster name (mycluster) from the list page.
 
-  :::image type="content" source="./media/Picture7.png" alt-text="Screenshot showing the stages during cluster creation for script action." lightbox="./media/Picture7.png":::
+   :::image type="content" source="./media/Picture7.png" alt-text="Screenshot shows select cluster name." lightbox="./media/Picture7.png":::
  
 ### View cluster details
 
@@ -27,7 +27,7 @@ You can view the cluster details in the "Overview" blade of your cluster. It pro
 |	Location	|	The region in which the cluster is deployed.	|
 |	Cluster size details	|	Node size, node type, and number of nodes.	|
 
-:::image type="content" source="./media/Picture8.png" alt-text="Screenshot showing the stages during cluster creation for script action." lightbox="./media/Picture8.png":::
+:::image type="content" source="./media/Picture8.png" alt-text="Screenshot shows view the cluster details." lightbox="./media/Picture8.png":::
 
 ### Manage cluster size
 
@@ -36,7 +36,7 @@ You can check and modify the number of worker nodes for your cluster using "Clus
 1. Manual scale
 2. Auto scale
   
-:::image type="content" source="./media/Picture9.png" alt-text="Screenshot showing the stages during cluster creation for script action." lightbox="./media/Picture9.png":::
+:::image type="content" source="./media/Picture9.png" alt-text="Screenshot shows check and modify the number of worker nodes." lightbox="./media/Picture9.png":::
 
 ### Manage cluster access
 
@@ -51,7 +51,7 @@ Secure shell (SSH) allows you to submit jobs and queries to your cluster directl
 >[!Note:]
 >Enabling SSH will create additional VMs in the cluster. The maximum allowed secure shell nodes are 5.
 
-:::image type="content" source="./media/Picture10.png" alt-text="Screenshot showing the stages during cluster creation for script action." lightbox="./media/Picture10.png":::
+:::image type="content" source="./media/Picture10.png" alt-text="Screenshot shows secure shell (SSH) allows you to submit jobs and queries to your cluster directly." lightbox="./media/Picture10.png":::
   
 
 ### Manage cluster configuration
@@ -64,7 +64,7 @@ You can do the following actions:
 
 Learn how to manage the [cluster configuration](/azure/hdinsight-aks/service-configuration).
 
-:::image type="content" source="./media/Picture11.png" alt-text="Screenshot showing the stages during cluster creation for script action." lightbox="./media/Picture11.png":::
+:::image type="content" source="./media/Picture11.png" alt-text="Screenshot shows configuration properties." lightbox="./media/Picture11.png":::
 
 ### View service details
 
@@ -72,6 +72,6 @@ In the Azure portal, use "Services" blade in your cluster to check the health of
 
 Learn how to check [service health](/azure/hdinsight-aks/service-health).
 
-:::image type="content" source="./media/Picture12.png" alt-text="Screenshot showing the stages during cluster creation for script action." lightbox="./media/Picture12.png":::
+:::image type="content" source="./media/Picture12.png" alt-text="Screenshot shows health of the services running in your cluster." lightbox="./media/Picture12.png":::
   
 
