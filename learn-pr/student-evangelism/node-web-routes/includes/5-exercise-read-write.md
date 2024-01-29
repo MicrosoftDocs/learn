@@ -374,7 +374,7 @@ After completing the project, you may wish to clean up your development environm
 
 ### [Remote development (browser)](#tab/github-codespaces)
 
-Deleting the GitHub Codespaces environment ensures that you can maximize the amount of free per-core hours entitlement you get for your account.
+Deleting the GitHub Codespaces environment ensures that you can maximize the amount of free core hours entitlement you get for your account.
 
 > [!IMPORTANT]
 > For more information about your GitHub account's entitlements, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
