@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.philanthropies
+metadata:
+  title: A guide to artificial intelligence
+  description: This module explores fundamental concepts in artificial intelligence (AI) and machine learning.
+  ms.date: 01/23/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: module-standard-task-based
+  ms.service: artificial-intelligence
+title: A guide to artificial intelligence
+summary: This module explores fundamental concepts in artificial intelligence (AI) and machine learning.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- k-12-educator
+- higher-ed-educator
+- business-user
+- data-engineer
+- school-leader
+products:
+- ai-services
+- azure-machine-learning
+- azure-machine-learning-designer
+- m365-apps
+subjects:
+- artificial-intelligence
+modules:
+- learn.philanthropies.a-guide-to-artifical-intelligence
+- learn.philanthropies.introduction-to-ai-for-trainers
+trophy:
+  uid: learn.philanthropies.powershell.trophy
