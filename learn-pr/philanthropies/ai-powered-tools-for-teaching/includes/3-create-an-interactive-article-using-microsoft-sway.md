@@ -1,6 +1,7 @@
 AI helps revamp the workplace by automating repetitive tasks and processes. This enhances efficiency and productivity, while maintaining the accuracy and precision of these tasks. AI is customizing products and services, introducing new job roles and opportunities, and increasing flexibility in the workplace. AI solutions have the potential to revitalize work approaches and ensure organizations stay competitive in an increasingly digital world.
 
 **Write an interactive article with AI-powered technology**
+
 You’ve learned the fundamentals of AI, machine learning, and AI systems. Now you will create an interactive article using Microsoft Sway. With Microsoft Sway, you can create interactive and visually appealing content even if you don’t have design skills. Microsoft Sway can create various kinds of content, such as presentations, reports, stories, newsletters, and portfolios. Furthermore, Microsoft Sway can facilitate cross-collaboration with others across any device.
 
 **Time**: 30 minutes
@@ -22,6 +23,7 @@ You’ve learned the fundamentals of AI, machine learning, and AI systems. Now y
    - How do you think AI will change the way you work and live?
 
 **Additional resources**
+
 To continue your learning journey, go to
 
 - [Digital storytelling with Microsoft Sway](/training/modules/digital-storytelling-with-microsoft-sway/)
