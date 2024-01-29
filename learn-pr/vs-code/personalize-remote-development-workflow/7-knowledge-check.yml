@@ -17,7 +17,7 @@ quiz:
     - content: "Dev Containers Extension"
       isCorrect: false
       explanation: "The Dev Containers Extension is required, but you'll need more than that."
-    - content: "Dev Containers Extension and Docker Installed on the VM"
+    - content: "Dev Containers Extension and Docker installed on the VM"
       isCorrect: true
       explanation: "You can work in a Docker container on a remote VM using the Remote - SSH extension and the Dev Containers extension. You'll also need Docker installed on the VM."
     - content: "Docker installed on the VM"
