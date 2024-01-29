@@ -121,7 +121,7 @@ You deployed the application back end, and now you need to deploy the applicatio
       name: contoso-ship-manager-frontend
       namespace: default
       annotations:
-        spec.ingressClassName: addon-http-application-routing
+        spec.ingressClassName: webapprouting.kubernetes.azure.com
     spec:
       rules:
         - host: contoso-ship-manager.{your-dns-zone}.aksapp.io
