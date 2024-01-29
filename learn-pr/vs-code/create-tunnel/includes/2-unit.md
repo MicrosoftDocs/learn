@@ -1,5 +1,6 @@
 
 ## What are tunnels?
+
 Tunnels are a networking concept that involve creating a secure and direct connection between two separate networks or devices, allowing data to be transmitted privately across different networks or the internet. There are several issues that led to the need for this technology but let's discuss a scenario and why tunnels are useful for that case.
 
 ### The problems
