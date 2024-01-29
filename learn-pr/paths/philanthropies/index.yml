@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.philanthropies.intro-to-ai-for trainers
+uid: learn.philanthropies.intro-to-ai-for-trainers
 metadata:
   title: Introduction to artificial intelligence for trainers
   description: Gain the foundational knowledge about the principles of artificial intelligence (AI) and how it is used in educational settings.
@@ -32,4 +32,4 @@ modules:
 - learn.philanthropies.a-guide-to-artifical-intelligence
 - learn.philanthropies.introduction-to-ai-for-trainers
 trophy:
-  uid: learn.philanthropies.powershell.trophy
+  uid: learn.philanthropies.intro-to-ai-for-trainers.trophy
