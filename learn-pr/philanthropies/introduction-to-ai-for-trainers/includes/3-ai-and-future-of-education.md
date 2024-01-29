@@ -12,5 +12,5 @@ Below are some examples of how various educational entities have used AI to enha
 
 **Additional resources**<br>
 To continue your learning journey, go to
-- [https://learn.microsoft.com/en-us/training/modules/empower-educators-explore-potential-artificial-intelligence/](/training/modules/empower-educators-explore-potential-artificial-intelligence/) 
-- [https://learn.microsoft.com/en-us/training/modules/enhance-teaching-learning-bing-chat/](/training/modules/enhance-teaching-learning-bing-chat/)
+- [Empower educators to explore the potential of artificial intelligence](/training/modules/empower-educators-explore-potential-artificial-intelligence/) 
+- [Enhance teaching and learning with Microsoft Copilot](/training/modules/enhance-teaching-learning-bing-chat/)
