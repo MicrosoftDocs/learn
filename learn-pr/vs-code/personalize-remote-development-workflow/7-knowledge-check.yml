@@ -41,7 +41,7 @@ quiz:
     choices:
     - content: "You create a new Profile and use the same profile everywhere."
       isCorrect: false
-      explanation: "Profiles can be shared and even synced, but they are not synced by default and therefor are not available everywhere you use VS Code."
+      explanation: "Profiles can be shared and even synced, but they are not synced by default and therefore are not available everywhere you use VS Code."
     - content: "VS Code installations are separate and must all be manually kept in sync."
       isCorrect: false
       explanation: "VS Code installations are separate, but they can all be kept in sync automatically."
