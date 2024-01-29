@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: What’s the command to create a secure tunnel with the tunnel command? 
+    - content: What’s the command to create a secure tunnel? 
       choices:
         - content: code tunnel
           isCorrect: true
@@ -37,9 +37,11 @@ quiz:
       choices:
         - content: The Remote - Tunnels extension lets you connect to a remote machine, like a desktop PC or virtual machine (VM), via a secure tunnel. You can connect to that machine from a VS Code client anywhere, without the requirement of SSH. 
           isCorrect: true
-          explanation: Correct. The extension lets you connect like a desktop PC or virtual machine(VM).
-        - content: The Remote - Tunnels extension lets you connect to a remote machine, like a desktop PC excluding a virtual machine (VM), via a secure tunnel. You can connect to that machine from a VS Code client anywhere, without the requirement of SSH. 
+          explanation: Correct. The tunnels extension connects to either a remote desktop PC or remote virtual machine (VM)
+        - content: The Remote - Tunnels extension lets you connect to a desktop PC but not a virtual machine (VM), via a secure tunnel. 
           isCorrect: false
-        - content: The Remote - Tunnels extension lets you connect to a remote machine, like a desktop PC excluding a virtual machine (VM), via a secure tunnel. You can connect to that machine from a VS Code client anywhere, but SSH is always required. 
+          explanation: Incorrect. Tunnels extension lets you connect to both either remote machine, desktop PC or virtual. 
+        - content: The Remote - Tunnels extension lets you connect to a virtual machine but not a desktop PC, via a secure tunnel.  
           isCorrect: false
+          explanation: Incorrect. Tunnels extension lets you connect to both either remote machine, desktop PC or virtual. 
 

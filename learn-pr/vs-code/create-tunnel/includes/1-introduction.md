@@ -1,9 +1,9 @@
-It’s quite common these days that people work remotely, from their home, a coffee shop or a similar establishment. Regardless of where you work, you want a secure connection from your machine to your company’s resources. It’s important that these connections are secure, which has come to mean encrypted to protect your company. Additionally, it’s advantageous to use tools that make setting up and configuring such connections so that more time can be spent to deliver business value. 
+It’s quite common these days that people work remotely, from their home, a coffee shop or a similar establishment. Regardless of where you work, you want a secure connection from your machine to your company’s resources. It’s important that these connections are secure, which has come to mean encrypted to protect your company. Additionally, it’s advantageous to use tools that make setting up and configuring such connections easier.
 
 
 ## Scenario: Accessing company resources from home 
 
-Your company has hired their first workers that’s hired to work remotely. It’s important these new hires can access company resources from their chosen place of work and can do so safely and securely. You also want to ensure that these employees can use best-in-class tools.  
+Your company has hired their first workers to work remotely. It’s important these new hires can access company resources from their chosen place of work and can do so safely and securely. You also want to ensure that these employees can use best-in-class tools.  
 
 
 ## What will I learn? 

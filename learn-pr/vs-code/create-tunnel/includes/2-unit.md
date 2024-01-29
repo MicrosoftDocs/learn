@@ -1,6 +1,6 @@
 
 ## What are tunnels?
-Tunnels are a networking concept that involves creating a secure and direct connection between two separate networks or devices, allowing data to be transmitted privately across different networks or the internet. There are several issues that led to the need for this technology but let's discuss a scenario and why tunnels are useful for that case.
+Tunnels are a networking concept that involve creating a secure and direct connection between two separate networks or devices, allowing data to be transmitted privately across different networks or the internet. There are several issues that led to the need for this technology but let's discuss a scenario and why tunnels are useful for that case.
 
 ### The problems
 
@@ -13,7 +13,7 @@ In the scenario mentioned earlier, a developer needs to work on an application t
 ## VS Code Remote-Tunnels extension 
 ### Why use it? 
 
-The use of Tunnels offers a streamlined solution to many challenges so it should be no surpise tools and extensions have become availble for dev tool like VS Code. The VS Code Remote-Tunnels extension can eliminate the need for source code to be on your VS Code client machine since the extension runs commands and other extensions directly on the remote machine.  
+The use of Tunnels offers a streamlined solution to many challenges so it should be no surpise tools and extensions have become availble for dev tool like VS Code. The VS Code Remote-Tunnels extension can eliminate the need for source code to be on your VS Code client machine since the extension runs commands and other extensions directly on the remote machine. This is possible because of the <a href="https://code.visualstudio.com/docs/remote/vscode-server" target="_blank">VS Code Server</a> which is a service that can run on a remote development machine, like your desktop PC or a virtual machine (VM). It allows you to securely connect to that remote machine from anywhere through a local VS Code client, without the requirement of SSH.
 
 ### Scenario – working from home 
 
