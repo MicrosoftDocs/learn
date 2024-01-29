@@ -6,8 +6,8 @@ metadata:
   title: Introduction
   description: In this section, we will provide an overview of the key concepts, goals, and prerequisites for successfully setting up and handling HDInsight within the AKS environment.
   ms.date: 01/24/2024  
-  author: yeturisairam
-  ms.author: yeturisairam
+  author: sairamyeturi
+  ms.author: sairamyeturi
   ms.topic: unit
 durationInMinutes: 3
 content: |
