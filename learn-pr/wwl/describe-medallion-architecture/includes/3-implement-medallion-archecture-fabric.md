@@ -6,7 +6,7 @@ Now that you have a solid understanding of the medallion architecture, let's exp
     |  Question  | Bronze | Silver | Gold |
     | --- | --- | --- | --- |
     | What happens in that layer? | Ingest raw data | Cleanse and validate data | Additional transformations and modeling |
-    | What tool is used? | Pipelines, dataflows, notebooks | Dataflows or notebooks | SQL Endpoint or dataset |
+    | What tool is used? | Pipelines, dataflows, notebooks | Dataflows or notebooks | SQL Endpoint or semantic model |
 
 - **Ingest data into bronze**: Determine how you'll ingest data into your bronze layer. You can do this using pipelines, dataflows, or notebooks.
 - **Transform data and load to silver**: Determine how you'll transform data in your silver layer. You can do this using dataflows or notebooks. Transformations at the silver level should be focused on data quality and consistency, not on data modeling.

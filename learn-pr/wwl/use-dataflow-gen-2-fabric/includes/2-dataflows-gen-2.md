@@ -20,9 +20,9 @@ If you only choose to use a Data Pipeline, you copy data, then use your preferre
 
 Adding a data destination to your dataflow is optional, and the dataflow preserves all transformation steps. To perform other tasks or load data to a different destination after transformation, create a Data Pipeline and add the Dataflow (Gen2) activity to your orchestration.
 
-Another option might be to use a Data Pipeline and Dataflow (Gen2) for ELT *(Extract, Load, Transform)* process. For this order, you'd use a Pipeline to extract and load the data into your preferred destination, such as the Lakehouse. Then you'd create a Dataflow (Gen2) to connect to Lakehouse data to cleanse and transform data. In this case, you'd offer the Dataflow as a curated dataset for data analysts to develop reports.
+Another option might be to use a Data Pipeline and Dataflow (Gen2) for ELT *(Extract, Load, Transform)* process. For this order, you'd use a Pipeline to extract and load the data into your preferred destination, such as the Lakehouse. Then you'd create a Dataflow (Gen2) to connect to Lakehouse data to cleanse and transform data. In this case, you'd offer the Dataflow as a curated semantic model for data analysts to develop reports.
 
-Dataflows can be horizontally partitioned as well. Once you create a global dataflow, data analysts can use dataflows to create specialized datasets for specific needs.
+Dataflows can be horizontally partitioned as well. Once you create a global dataflow, data analysts can use dataflows to create specialized semantic models for specific needs.
 
 Dataflows allow you to promote reusable ETL logic that prevents the need to create more connections to your data source. Dataflows offer a wide variety of transformations, and can be run manually, on a refresh schedule, or as part of a Data Pipeline orchestration.
 

@@ -44,4 +44,4 @@ In the Query settings pane, you can see a **Data Destination** field where you c
 > [!TIP]
 > If made available, data analysts can also connect to the dataflow through Power BI Desktop.
 >
-> ![Screenshot of Power BI Desktop Get Data Connectors window with Power Platform selected including Power BI datasets, Lakehouses, Dataflows, and more.](../media/power-bi-desktop-dataflow-connectors.png)
+> ![Screenshot of Power BI Desktop Get Data Connectors window with Power Platform selected including Power BI semantic models, Lakehouses, Dataflows, and more.](../media/power-bi-desktop-dataflow-connectors.png)

@@ -27,7 +27,7 @@ quiz:
     choices:
     - content: "Dataflows (Gen2)"
       isCorrect: false
-      explanation: "Incorrect. Dataflows (Gen2) are effective for smaller datasets."
+      explanation: "Incorrect. Dataflows (Gen2) are effective for smaller semantic models."
     - content: "Pipelines"
       isCorrect: false
       explanation: "Incorrect. Pipelines are primarily used for data orchestration, moving data between different layers and processes within the medallion architecture."
