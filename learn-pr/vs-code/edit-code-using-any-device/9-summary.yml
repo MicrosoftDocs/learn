@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.edit-code-using-any-device.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Recap of the benefits of using Visual Studio Code for the Web and when you would use Visual Studio Code Desktop instead."
+  ms.date: 01/22/2024
+  author: olguzzar
+  ms.author: olguzzar
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]
