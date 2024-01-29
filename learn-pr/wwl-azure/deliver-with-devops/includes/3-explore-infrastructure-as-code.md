@@ -1,4 +1,4 @@
-Infrastructure as Code is an integral components of modern software development and operations practices. It involves the use of programming methods to provision and manage infrastructure services. IaC is particularly beneficial in cloud-based environments, such as the one described in our sample scenario. However any organization that relies on computing assets for its revenue can take advantage of its capabilities. In this unit, you will learn about the main principles of IaC and the most common techniques of implementing these principles.
+Infrastructure as Code is an integral component of modern software development and operations practices. It involves the use of programming methods to provision and manage infrastructure services. IaC is particularly beneficial in cloud-based environments, such as the one described in the sample scenario. However, any organization that relies on computing assets for its revenue can take advantage of its capabilities. In this unit, you'll learn about the main principles of IaC and the most common techniques of implementing these principles.
 
 ## What are the main principles of IaC?
 
