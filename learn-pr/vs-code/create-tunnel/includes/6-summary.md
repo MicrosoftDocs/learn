@@ -2,7 +2,7 @@ In this module, we’ve learned some important information relative to the VS Co
 
 Firstly, it lets you connect to a remote machine, like a desktop PC or virtual machine (VM), via a secure tunnel.  Next, it eliminates the need for source code to be on your VS Code client machine since the extension runs commands and other extensions directly on the remote machine. Lastly, we covered how to configure and use the extension by using the VS Code UI as well as from the CLI. 
 
-For continued learning, below are few topics/resources worth exploring that relate to VS Code Remote-Tunnels extension 
+For continued learning, below are a few topics/resources worth exploring that relate to the VS Code Remote - Tunnels extension: 
 
 - <a href="https://learn.microsoft.com/en-us/azure/developer/dev-tunnels/overview" target="_blank">Microsoft Dev Tunnels</a> - Article diving deeper into what dev tunnels are and how they function under the hood? 
 
