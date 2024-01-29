@@ -43,7 +43,7 @@ In this step, to download file system logs to your computer, use the Kudu consol
 
 1. In the **App Services** list, select **contosofashions\<_your-number_\>**. The **contosofashions\<_your-number_\>** App Service pane appears.
 
-1. In the middle menu pane, under**Development Tools**, select **Advanced Tools**.  The **Advanced Tools** pane appears.
+1. In the middle menu pane, under **Development Tools**, select **Advanced Tools**.  The **Advanced Tools** pane appears.
 
 1. Select **Go**. The *Kudu Services* window appears.
 
