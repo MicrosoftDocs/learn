@@ -25,22 +25,22 @@ For this exercise, *create LA workspace - mycontosoLA*
 
 Cluster pool for this exercise – “contosopool”
 
-  :::image type="content" source="../media/Picture20.png" alt-text="Screenshot showing the stages during cluster creation for script action." lightbox="../media/Picture20.png":::
+  :::image type="content" source="../media/Picture20.png" alt-text="Screenshot shows select your cluster pool." lightbox="../media/Picture20.png":::
 
-  :::image type="content" source="../media/Picture21.png" alt-text="Screenshot showing the stages during cluster creation for script action." lightbox="../media/Picture21.png":::
+  :::image type="content" source="../media/Picture21.png" alt-text="Screenshot show cluster pool." lightbox="../media/Picture21.png":::
 
 2.	Navigate to the "Monitor settings" blade on the left side menu and click on "Configure" to enable Log Analytics.
 
-  :::image type="content" source="../media/Picture22.png" alt-text="Screenshot showing the stages during cluster creation for script action." lightbox="../media/Picture22.png":::
+  :::image type="content" source="../media/Picture22.png" alt-text="Screenshot shows enable Log Analytics." lightbox="../media/Picture22.png":::
 
  
 3. Select the Log Analytics workspace created at the beginning (mycontosoLA) and click Ok.
 
-  :::image type="content" source="../media/Picture23.png" alt-text="Screenshot showing the stages during cluster creation for script action." lightbox="../media/Picture23.png":::
+  :::image type="content" source="../media/Picture23.png" alt-text="Screenshot shows Select the Log Analytics workspace." lightbox="../media/Picture23.png":::
  
 4. Once configured, you can check the monitoring setting. It should have LA status as enabled
 
-  :::image type="content" source="../media/Picture24.png" alt-text="Screenshot showing the stages during cluster creation for script action." lightbox="../media/Picture24.png":::
+  :::image type="content" source="../media/Picture24.png" alt-text="Screenshot shows check the monitoring setting." lightbox="../media/Picture24.png":::
 
 Now, LA is configured at the cluster pool. Let’s proceed to enable it for the Spark cluster created as part of this Lab
 
@@ -50,27 +50,27 @@ Now, LA is configured at the cluster pool. Let’s proceed to enable it for the 
 
 1.	Navigate to the "Monitor settings" blade, select Enable Log Analytics. Choose one or more types of logs you would like to collect and click Save.
 
-  :::image type="content" source="../media/Picture25.png" alt-text="Screenshot showing the stages during cluster creation for script action." lightbox="../media/Picture25.png":::
+  :::image type="content" source="../media/Picture25.png" alt-text="Screenshot shows navigation to the **Monitor settings** blade." lightbox="../media/Picture25.png":::
 
-  :::image type="content" source="../media/Picture26.png" alt-text="Screenshot showing the stages during cluster creation for script action." lightbox="../media/Picture26.png":::
+  :::image type="content" source="../media/Picture26.png" alt-text="Screenshot shows Navigate to the Monitor settings." lightbox="../media/Picture26.png":::
  
 
 ### Access the log and run queries
 
 1.	Navigate to the Monitoring section and select the Logs blade to query and analyze the collected data.
 
-  :::image type="content" source="../media/Picture27.png" alt-text="Screenshot showing the stages during cluster creation for script action." lightbox="../media/Picture27.png":::
+  :::image type="content" source="../media/Picture27.png" alt-text="Screenshot shows select the Logs blade." lightbox="../media/Picture27.png":::
 
 2.	A list of commonly used query templates is provided to choose from to simplify the process or you can write your own query using the provided console.
 
-  :::image type="content" source="../media/Picture28.png" alt-text="Screenshot showing the stages during cluster creation for script action." lightbox="../media/Picture28.png":::
+  :::image type="content" source="../media/Picture28.png" alt-text="Screenshot shows list of commonly used query templates." lightbox="../media/Picture28.png":::
 
-  :::image type="content" source="../media/Picture29.png" alt-text="Screenshot showing the stages during cluster creation for script action." lightbox="../media/Picture29.png":::
+  :::image type="content" source="../media/Picture29.png" alt-text="Screenshot shows list of commonly used query." lightbox="../media/Picture29.png":::
  
 
   Example 
 
-  :::image type="content" source="../media/Picture30.png" alt-text="Screenshot showing the stages during cluster creation for script action." lightbox="../media/Picture30.png":::
+  :::image type="content" source="../media/Picture30.png" alt-text="Screenshot shows Example." lightbox="../media/Picture30.png":::
 
 
 
