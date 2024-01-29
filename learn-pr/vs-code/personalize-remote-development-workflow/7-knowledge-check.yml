@@ -30,7 +30,7 @@ quiz:
         explanation: "While this would work, it's not the best approach. You would need to share the entire .vscode folder, which may contain other settings that you don't want to share."
       - content: "Configure the desired extensions and settings, then enable Settings Sync and share the URL with others."
         isCorrect: false
-        explanation: "There is no publically available URL for your Settings Sync configuration. You could share your configuration with others, but you'll need to do so manually."
+        explanation: "There is no publicly available URL for your Settings Sync configuration. You could share your configuration with others, but you'll need to do so manually."
       - content: "Directly share your User Settings file with others as JSON."
         isCorrect: false
         explanation: "You can share your User Settings file with others, but you'll need to do so manually."
