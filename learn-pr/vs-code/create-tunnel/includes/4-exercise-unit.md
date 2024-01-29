@@ -46,7 +46,7 @@ Next, click the authorize button.
 
 :::image type="content" source="../media/2. auth.png" alt-text="Authentication Page":::
 
-You should see a congratualtions message like below:
+You should see a congratulations message like below:
 :::image type="content" source="../media/3. congrats.png" alt-text="Confirmation":::
 
 
