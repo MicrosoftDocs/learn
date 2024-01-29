@@ -9,8 +9,8 @@ Here are some key considerations and steps for configuring and managing resource
   - Consider [enabling autoscaling](/azure/hdinsight-aks/hdinsight-on-aks-autoscale-clusters?branch=main) to automatically adjust the number of worker nodes based on workload demands. 
 
  - Storage Configuration 
-  - Choose [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction) as the default storage for your cluster, and configure the container name. 
-  - Configure the storage account access key or [managed identity](/azure/hdinsight-aks/cluster-storage?branch=main#managed-identities-for-secure-file-access) for accessing the storage resources. 
+   - Choose [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction) as the default storage for your cluster, and configure the container name. 
+   - Configure the storage account access key or [managed identity](/azure/hdinsight-aks/cluster-storage?branch=main#managed-identities-for-secure-file-access) for accessing the storage resources. 
 
 - Networking Configuration 
   - Bring your own Vnet - Configure your Virtual network based on your enterprise requirements.  
