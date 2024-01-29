@@ -1987,6 +1987,12 @@ achievements:
   title: Deploy Node.js server with MongoDB database to Azure App Service
   summary: Learn how to create, configure and deploy an Node.js (Express.js) server app with a MongoDB database to Azure App Service.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.publish-express-node-app-service-vscode.badge
+  type: badge
+  title: Create and publish a web application with Azure App Service and Visual Studio Code
+  summary: Create a web application with Visual Studio Code and publish it to Azure App Service.
+  iconUrl: /training/achievements/publish-express-node-app-service-vscode.svg
+
 - uid: learn.azure.intro-to-azure-linux.badge
   type: badge
   title: Introduction to Linux on Azure

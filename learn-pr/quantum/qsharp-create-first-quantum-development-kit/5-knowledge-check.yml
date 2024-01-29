@@ -6,6 +6,7 @@ metadata:
   description: Check your understanding so far.
   author: SoniaLopezBravo
   ms.author: sonialopez
+  manager: tedhudek
   ms.date: 12/27/2023
   ms.topic: interactive-tutorial
 durationInMinutes: 7

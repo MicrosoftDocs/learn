@@ -2,7 +2,6 @@
 uid: learn.intro-to-blazor.knowledge-check
 title: Knowledge check
 metadata:
-  unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge about what Blazor is and when you should use it to build your apps.
   ms.date: 1/19/2024

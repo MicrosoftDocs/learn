@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.edit-code-using-any-device.exercise-use-visual-studio-code-for-the-web
+title: Exercise - Use Visual Studio Code for the Web
+metadata:
+  title: Exercise - Use Visual Studio Code for the Web
+  description: "Learn how to navigate to Visual Studio Code for the Web via vscode.dev and install an extension."
+  ms.date: 01/22/2024
+  author: olguzzar
+  ms.author: olguzzar
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-exercise-use-visual-studio-code-for-the-web.md)]
