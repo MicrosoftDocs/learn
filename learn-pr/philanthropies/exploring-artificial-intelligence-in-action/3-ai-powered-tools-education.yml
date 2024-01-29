@@ -3,7 +3,7 @@ uid: learn.philanthropies.exploring-artificial-intelligence-in-action.ai-powered
 title: AI-powered tools in education
 metadata:
   title: AI-powered tools in education
-  description: This module explores various subsets within artificial intelligence (AI) such as natural language processing (NLP), computer vision, and recommendation systems and discuss the integration of AI-powered tools into a learning environment.
+  description: AI-powered tools can personalize learning by creating individualized plans, providing real-time feedback, and enhancing the engagement and understanding of your learners.
   ms.date: 01/25/2024
   author: yoosunee
   ms.author: andreapark
@@ -11,4 +11,4 @@ metadata:
   ms.service: artificial-intelligence
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-ai-powered-tools-in-education.md)]
+  [!include[](includes/3-ai-powered-tools-education.md)]
