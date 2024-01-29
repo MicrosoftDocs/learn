@@ -1,21 +1,27 @@
-So far, you've seen examples of requests made toward a web application when the client wants to read data. However, you likely want to write data too. 
+So far, you've developed routes to read data for the Tailwind Traders products API. However, you need to add products too. 
 
-To write data, use an HTTP verb that matches your intention. Because incoming data can have various forms, configure your Express application to match how the data arrives to your app:
+## Write data to the API
 
-```javascript
-app.get('/<path>', (req, res) => {
-  // handling the request
-})
-```
+To write data, use an HTTP method to indicate if the data is new or and update to existing data. 
+
+Common HTTP methods are:
+
+| Method | Description |
+| --- | --- |
+| POST | Create a new resource. |
+| PUT | Update an existing resource. |
+| PATCH | Update part of an existing resource. |
+
+Put and Patch are similar. The difference is that Put replaces the entire resource. Patch replaces only the properties that are specified in the request body.
 
 ## Configure your app to receive data
 
-To handle a client sending data to the web application, configure Express differently depending on the format of the incoming data. For example, data might be in HTML or JSON format. These are common steps, regardless of the data format.
+To receive data in your web application, configure Express based on the format of the incoming data such as HTML or JSON format. These are common steps, regardless of the data format.
 
 > [!NOTE]
 > Data is sent through the body of the request.
 
-1. **Import a body parser**. You need to convert the incoming data into a format that's readable. Import the `body-parser` library that's installed with Express:
+1. **Import a body parser**. To convert the incoming data into a format that's readable, import the `body-parser` library that's installed with Express:
 
    ```javascript
    let bodyParser = require('body-parser');
@@ -27,14 +33,77 @@ To handle a client sending data to the web application, configure Express differ
    app.use(bodyParser.json({ extended: false }));
    ```
 
-The data that a client sends is now available on the `body` property on the `req` request object. You can now read this data and talk to a data source. You can then either create a resource from that data or update a resource, depending on whether the request uses a POST or a PUT verb.
+The data sent from the client is available from `req.body`. You can read the data and insert it into the database.
 
-## Handle the request data
-
-To handle an incoming request, use either the `post()` or the `put()` method on the Express instance. Both methods work, but `post()` tells Express that you want to create a resource. The `put()` method is used to convey that a resource should be updated using the incoming data. Here's an example:
+## Insert a new product
 
 ```javascript
-app.post('/<path>', (req, res) => {
-  console.log('req.body', req.body) // contains incoming data
-})
+// Insert a new product
+app.post('/products', (req, res) => {
+  const newProduct = req.body;
+  newProduct.id = products.length + 1;
+  products.push(newProduct);
+  res.status(201).json(newProduct);
+});
+```
+
+Call this API with a POST request to `/products` with a JSON body to insert a new product. For example:
+
+```json
+{
+  "name": "The Hobbit",
+  "author": "J.R.R. Tolkien"
+}
+```
+
+
+## Update entire product
+
+```javascript
+app.put('/products/:id', (req, res) => {
+  const id = parseInt(req.params.id);
+  const updatedProduct = req.body;
+  const index = products.findIndex(product => product.id === id);
+  if (index !== -1) {
+    products[index] = updatedProduct;
+    res.json(updatedProduct);
+  } else {
+    res.status(404).send('Product not found');
+  }
+});
+```
+
+Call this API with a PUT request to `/products/:id` with a JSON body to update a product. For example:
+
+```json
+{
+  "id": 1,
+  "name": "The Hobbit",
+  "author": "J.R.R. Tolkien"
+}
+```
+
+## Update part of a product
+
+```javascript
+app.patch('/products/:id', (req, res) => {
+  const id = parseInt(req.params.id);
+  const updates = req.body;
+  const index = products.findIndex(product => product.id === id);
+  if (index !== -1) {
+    // overwrite existing properties with updates
+    products[index] = {...products[index], ...updates};
+    res.json(products[index]);
+  } else {
+    res.status(404).send('Product not found');
+  }
+});
+```
+
+Call this API with a PATCH request to `/producs/:id` with a JSON body to update a product. For example:
+
+```json
+{
+  "author": "J.R.R. Tolkien"
+}
 ```

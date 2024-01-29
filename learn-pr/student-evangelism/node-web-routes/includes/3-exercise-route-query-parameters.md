@@ -115,14 +115,14 @@ This exercise teaches both techniques.
 
    app.get('/', (req, res) => res.send('Hello API!'));
 
-   app.get("/product/:id", (req, res) => {});
+   app.get("/products/:id", (req, res) => {});
 
    app.get('/products', (req, res) => {});
 
    app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
    ```
 
-    This JavaScript code creates a basic Express.js server. It defines an array of `products` and sets up three routes: root (`/`), `/product/:id`, and `/products`. The server listens on port 3000. The routes `/product/:id` and `/products` are placeholders with no functionality yet.
+    This JavaScript code creates a basic Express.js server. It defines an array of `products` and sets up three routes: root (`/`), `/products/:id`, and `/products`. The server listens on port 3000. The routes `/products/:id` and `/products` are placeholders with no functionality yet.
 
     The data is hardcoded to simplify the exercise. In a real-world scenario, the data would come from a database or other storage.
 
@@ -133,16 +133,16 @@ The code contains an Express application. The next step is to implement two rout
 - `/products/:id`: This route should return a single product.
 - `/products`: This route should return all products, or as many products that query parameters ask for.
 
-1. To implement the route `/product/:id`, locate the following code in the *app.js* file in the *parameters* directory:
+1. To implement the route `/products/:id`, locate the following code in the *app.js* file in the *parameters* directory:
 
    ```javascript
-   app.get("/product/:id", (req, res) => {});
+   app.get("/products/:id", (req, res) => {});
    ```
 
    Replace it with this code:
 
    ```javascript
-   app.get("/product/:id", (req, res) => {
+   app.get("/products/:id", (req, res) => {
      res.json(products.find(p => p.id === +req.params.id));
    });
    ```
@@ -243,6 +243,6 @@ The code contains an Express application. The next step is to implement two rout
 
 Because the code contains only three records, the second page should contain only one record. 
 
-1. In the terminal, and select Ctrl+C to stop the application.
+1. In the terminal, select Ctrl+C to stop the application.
 
 You've now successfully applied query parameters to limit the response.
