@@ -19987,6 +19987,51 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/create-publish-webapp-app-service-vs-code/index.md",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-publish-webapp-app-service-vs-code/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-publish-webapp-app-service-vs-code/2-create-web-application-vs-code.md",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-publish-webapp-app-service-vs-code/3-exercise-create-web-application-vs-code.md",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-publish-webapp-app-service-vs-code/4-publish-app-azure-app-service-vs-code.md",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-publish-webapp-app-service-vs-code/5-exercise-publish-app-azure-app-service-vs-code.md",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-publish-webapp-app-service-vs-code/6-update-app-vs-code-publish-updates.md",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-publish-webapp-app-service-vs-code/7-exercise-update-app-vs-code-publish-updates.md",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-publish-webapp-app-service-vs-code/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode",
+      "redirect_document_id": false
+    },    
+    {
       "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/index.md",
       "redirect_url": "/training/modules/use-apache-spark-azure-databricks/",
       "redirect_document_id": false
