@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.service: azure
 durationInMinutes: 3
 content: |
   [!include[](includes/7-plan-configure-privileged-access-groups.md)]

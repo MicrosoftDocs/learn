@@ -6,6 +6,7 @@ metadata:
   description: Check your understanding so far.
   author: SoniaLopezBravo
   ms.author: sonialopez
+  manager: tedhudek
   ms.date: 10/19/2023
   ms.topic: interactive-tutorial
   ms.prod: learning-quantum

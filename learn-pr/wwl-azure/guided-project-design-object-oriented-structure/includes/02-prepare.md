@@ -10,19 +10,18 @@ Use the following steps to prepare for the Guided Project exercises:
 
 1. Create a working directory with File Explorer in your Desktop folder called **LangtonsAnts**.
 
-1. Download the zip file containing the Starter project code by selecting the following link: [Starter Files](https://github.com/grfisher-ms/Challenge-Project-design-object-oriented-structures/zipball/main).
-
+1. Download the zip file containing the Starter project code by selecting the following link: [Starter Files](https://codeload.github.com/MicrosoftLearning/Guided-Project-design-object-oriented-structures/zip/refs/heads/main).
 1. Unzip the download files to your working directory.
 
     1. On your local machine, navigate to your downloads folder in File Explorer.
 
-    1. Right-click **MicrosoftLearning-Challenge-Project-design-object-oriented-structures**.
+    1. Right-click **MicrosoftLearning-Guided-Project-design-object-oriented-structures**.
 
     1. Select **Extract all**.
 
     1. Select **Show extracted files when complete**, then select **Extract**.
 
-    1. Open the **MicrosoftLearning-Challenge-Project-design-object-oriented-structures** folder.
+    1. Open the **MicrosoftLearning-Guided-Project-design-object-oriented-structures** folder.
 
     1. Type Ctrl-A to select all of the files in the folder.
 

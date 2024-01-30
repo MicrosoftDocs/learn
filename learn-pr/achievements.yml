@@ -1987,6 +1987,12 @@ achievements:
   title: Deploy Node.js server with MongoDB database to Azure App Service
   summary: Learn how to create, configure and deploy an Node.js (Express.js) server app with a MongoDB database to Azure App Service.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.publish-express-node-app-service-vscode.badge
+  type: badge
+  title: Create and publish a web application with Azure App Service and Visual Studio Code
+  summary: Create a web application with Visual Studio Code and publish it to Azure App Service.
+  iconUrl: /training/achievements/publish-express-node-app-service-vscode.svg
+
 - uid: learn.azure.intro-to-azure-linux.badge
   type: badge
   title: Introduction to Linux on Azure
@@ -2762,3 +2768,13 @@ achievements:
   title: Challenge project - Develop foreach and if-elseif-else structures to process array data in C#
   summary: Demonstrate your ability to update a console app that implements arrays, foreach loops, and if statements in response to a user requested feature update.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.create-azure-active-directory-test-environment.badge
+  type: badge
+  title: Set up a test environment for application testing in Microsoft Entra ID
+  summary: Evaluate whether you need a dedicated test tenant for your application test environment. Create a test tenant in Microsoft Entra ID for use in a continuous integration/continuous deployment (CI/CD) pipeline or for testing applications.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure.set-up-cors-website-storage.badge
+  type: badge
+  title: Core Cloud Services - Set up CORS for your website and storage assets
+  summary: In this module, you'll set up Cross-Origin Resource Sharing (CORS) for your Azure website and storage assets in order to allow cross-domain access to your resources.
+  iconUrl: /training/achievements/setup-cors-for-your-website-and-storage-assets.svg
