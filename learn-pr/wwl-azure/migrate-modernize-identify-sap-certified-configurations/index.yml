@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: module
-  ms.prod: azure
+  ms.service: azure
 title: Modernize and identify SAP-certified configurations
 summary: Learn to identify prerequisites, deployment options, and SAP-certified configurations that are available to you when deploying SAP products in Microsoft Azure.
 abstract: |
