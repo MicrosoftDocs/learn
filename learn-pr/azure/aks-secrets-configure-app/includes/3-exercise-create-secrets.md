@@ -17,16 +17,23 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
 
 [!INCLUDE [azure-optional-exercise-subscription-note](../../../includes/azure-optional-exercise-subscription-note.md)]
 
-1. Create environment variables for your resource group, cluster, and location. Make sure you update the LOCATION variable with the region closest to you, for example, `eastus`.
+1. Create environment variables for your resource group, cluster, DNS zone, and location. Make sure you update the LOCATION variable with the region closest to you, for example, `eastus`.
 
     ```azurecli-interactive
     export RESOURCE_GROUP=rg-ship-manager
     export CLUSTER_NAME=ship-manager-cluster
+    export ZONE_NAME=ship-$RANDOM.com
     export LOCATION={location}
     ```
 
-    > [!IMPORTANT]
-    > Make a note of the `RESOURCE_GROUP` and `CLUSTER_NAME` variables for later use.
+1. Run the following command to view the values of your environment variables and make a note of them for later use.
+
+    ```azurecli-interactive
+    echo "RESOURCE_GROUP:" $RESOURCE_GROUP
+    echo "CLUSTER_NAME:"$CLUSTER_NAME
+    echo "ZONE_NAME:" $ZONE_NAME
+    echo "LOCATION:"$LOCATION
+    ```
 
 1. Create a resource group using the `az group create` command.
 
@@ -43,7 +50,7 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
      --location $LOCATION \
      --node-count 1 \
      --node-vm-size Standard_B2s \
-     --generate-ssh-keys \
+     --generate-ssh-keys
     ```
 
 1. Enable the application routing add-on with the following command.
@@ -52,19 +59,23 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
    az aks approuting enable -g $RESOURCE_GROUP -n $CLUSTER_NAME
    ```
 
-1. Add a step for creating a DNS zone, as the new add-on does not create one like the HTTP application routing did.
+> [!NOTE]
+> If you see a message asking you to install the **aks-preview** extension, enter `Y` to install it and continue.
+
+1. Create a DNS zone using the `az network dns zone create` command.
 
    ```azurecli-interactive
-   export ZONE_NAME=www.mysite.com
+   az network dns zone create -g $RESOURCE_GROUP -n $ZONE_NAME
+   ```
 
-   az network dns zone create -g $RESOURCE_GROUP  -n $ZONE_NAME
+1. Retrieve the ID of your DNS zone and use it as part of the command to add the zone to your cluster for app routing.
 
+   ```azurecli-interactive
    ZONEID=$(az network dns zone show -g $RESOURCE_GROUP -n $ZONE_NAME --query "id" --output tsv)
-
    az aks approuting zone add -g $RESOURCE_GROUP -n $CLUSTER_NAME --ids=${ZONEID} --attach-zones
    ```
 
-1. After your cluster is created, get the credentials for the cluster using the `az aks get-credentials` command.
+1. Get the credentials for your cluster using the `az aks get-credentials` command.
 
     ```azurecli-interactive
     az aks get-credentials -n $CLUSTER_NAME -g $RESOURCE_GROUP
@@ -131,16 +142,6 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
     ```
 
 ## Create the application
-
-1. Get the DNS zone that is made available by the Application routing add-on using the `az aks show` command and save the output value for later use.
-
-    ```azurecli-interactive
-    az aks show \
-      -g $RESOURCE_GROUP \
-      -n $CLUSTER_NAME \
-      -o tsv \
-      --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
-    ```
 
 1. Create a new YAML file named `backend-application.yaml` and paste in the following code to create the Deployment spec.
   
@@ -211,7 +212,7 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
         spec.ingressClassName: webapprouting.kubernetes.azure.com
     spec:
       rules:
-        - host: ship-manager-backend.<paste the DNS ZONE here>
+        - host: ship-manager-backend.<paste the ZONE_NAME here>
           http:
             paths:
               - path: /
@@ -223,7 +224,7 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
                       name: http
     ```
 
-1. Change the DNS zone in the `host:` to match the DNS you copied earlier.
+1. Change the DNS zone in the `host:` to match the name of your DNS zone. Use the value of the ZONE_NAME variable you created earlier.
 
 1. Save and close the file.
 
