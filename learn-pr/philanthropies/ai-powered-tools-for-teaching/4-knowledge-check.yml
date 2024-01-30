@@ -19,7 +19,7 @@ quiz:
       choices:
         - content: "It allows you to create slides in seconds."
           isCorrect: false
-          explanation: "Incorrect. This the main benefit for Microsoft Designer, not Speaker Coach."
+          explanation: "Incorrect. The main benefit is for Microsoft Designer, not Speaker Coach."
         - content: "It gives you rehearsal feedback to improve your presentation skills."
           isCorrect: true
           explanation: "Correct. Speaker Coach provides feedback to improve your presentation skills."
@@ -39,12 +39,12 @@ quiz:
           explanation: "Incorrect. This example is a main feature available in Speaker Coach."
     - content: "How can you access the rehearsal report after using Speaker Coach?"
       choices:
-        - content: "By clicking the “Rehearse Again” button in the report."
+        - content: "By clicking the 'Rehearse Again' button in the report."
           isCorrect: false
-          explanation: "Incorrect. This step only allows you to redo the practice, not access the report."
+          explanation: "Incorrect. This step only allows you to redo the practice, but not to access the report."
         - content: "By double-clicking the screen to stop the recording."
           isCorrect: true
           explanation: "Correct. This triggers the preview of rehearsal report, as stated in the context."
-        - content: "By selecting “Rehearse with Coach” from the Rehearse group."
+        - content: "By selecting 'Rehearse with Coach' from the 'Rehearse' group."
           isCorrect: false
-          explanation: "Incorrect. This step of selecting “Rehearse with Coach” only starts the rehearsal, it doesn’t access the report."
+          explanation: "Incorrect. This step of selecting 'Rehearse with Coach' only starts the rehearsal, it doesn’t access the report."
