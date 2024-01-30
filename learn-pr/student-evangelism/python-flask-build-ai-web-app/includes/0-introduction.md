@@ -19,4 +19,4 @@ In this module, you'll build a website using Flask and Azure AI services to tran
 - An Azure account. [Create Your Azure Free Account](https://azure.microsoft.com/free/).
 - Visual Studio Code installed on your computer. [Download Visual Studio Code](https://code.visualstudio.com/Download)
 - Python 3.6 or later installed on your computer. [Instructions for installing Python](https://code.visualstudio.com/docs/python/python-tutorial#_install-a-python-interpreter)
-- The Python extension for Visual Studio Code installed on your computer. [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python)
+- The Python extension for Visual Studio Code installed on your computer. [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
