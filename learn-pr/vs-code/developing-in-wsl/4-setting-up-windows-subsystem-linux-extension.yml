@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.developing-in-wsl.setting-up-wsl-extension
+uid: learn.developing-in-wsl.setting-up-windows-subsystem-linux-extension
 title: Setting up the Visual Studio Code WSL extension
 metadata:
   title: Setting up the Visual Studio Code WSL extension
