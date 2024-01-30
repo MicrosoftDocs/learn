@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.personalize-remote-development-workflow
 metadata:
-  title: Personalize your VS Code Remote Development workflow
+  title: Personalize your Visual Studio Code Remote Development workflow
   description: Leverage features in VS Code to personalize your development experience for different remote environments.
   ms.date: 11/28/2023
   author: burkeholland
@@ -10,7 +10,7 @@ metadata:
   ms.topic: module
   ms.service: vs-code
 
-title: Personalize your Remote Development workflow with VS Code
+title: Personalize your Remote Development workflow with Visual Studio Code
 
 summary: |
 
