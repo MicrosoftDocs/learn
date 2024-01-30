@@ -1,9 +1,8 @@
-In this unit, you create the Azure Resource Group that contains all our resources, and set up the PostgreSQL database using the Azure CLI.
-Then, you configure the Quarkus application to access the remote PostgreSQL database. Use a terminal of your choice to run the commands.
+In this unit, you create an Azure resource group that contains the resources for the application. You then set up the PostgreSQL database by using the Azure CLI. Finally, you configure the Quarkus application to access the remote PostgreSQL database. Use a terminal of your choice to run the commands.
 
 ## Prepare the working environment
 
-We need to set up some environment variables:
+You need to set up some environment variables:
 
 ```bash
 export AZ_PROJECT="azure-deploy-quarkus"
