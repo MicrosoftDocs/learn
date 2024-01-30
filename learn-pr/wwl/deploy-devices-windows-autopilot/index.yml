@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: rstearman
   ms.topic: module
-  ms.prod: azure
+  ms.service: azure
 title: Deploy Devices using Windows Autopilot
 summary: Use Autopilot to deploy new hardware or refreshing an existing hardware with the organization’s desired configuration, without using the traditional imaging process.
 abstract: |
