@@ -19,13 +19,13 @@ quiz:
       choices:
         - content: "It allows you to create slides in seconds."
           isCorrect: false
-          explanation: "Incorrect. This is a main feature for Microsoft Designer, not Speaker Coach."
+          explanation: "Incorrect. This the main benefit for Microsoft Designer, not Speaker Coach."
         - content: "It gives you rehearsal feedback to improve your presentation skills."
           isCorrect: true
           explanation: "Correct. Speaker Coach provides feedback to improve your presentation skills."
         - content: "It analyzes data and gives feedback to improve your presentation."
           isCorrect: false
-          explanation: "Incorrect. Speaker coach does not analyze data."
+          explanation: "Incorrect. Speaker coach doesn’t analyze data."
     - content: "What is the main purpose of writing an interactive article with Microsoft Sway?"
       choices:
         - content: "To create interactive and visually appealing stories that can be shared online."
@@ -33,18 +33,18 @@ quiz:
           explanation: "Correct. AI enhances efficiency and productivity, not reduces them."
         - content: "To refine writing pieces by checking documents for spelling, grammar, and punctuation."
           isCorrect: false
-          explanation: "Incorrect. This is the main function of Microsoft Editor."
+          explanation: "Incorrect. This example details the main functionality of Microsoft Editor."
         - content: "To prepare a presentation and receive rehearsal feedback."
           isCorrect: false
-          explanation: "Incorrect. This is the main function of Speaker Coach."
+          explanation: "Incorrect. This example is a main feature available in Speaker Coach."
     - content: "How can you access the rehearsal report after using Speaker Coach?"
       choices:
         - content: "By clicking the “Rehearse Again” button in the report."
           isCorrect: false
-          explanation: "Incorrect. This is the step that allows you to redo the practice, not access the report."
+          explanation: "Incorrect. This step only allows you to redo the practice, not access the report."
         - content: "By double-clicking the screen to stop the recording."
           isCorrect: true
           explanation: "Correct. This triggers the preview of rehearsal report, as stated in the context."
         - content: "By selecting “Rehearse with Coach” from the Rehearse group."
           isCorrect: false
-          explanation: "Incorrect. This step starts the rehearsal, not access the report."
+          explanation: "Incorrect. This step of selecting “Rehearse with Coach” only starts the rehearsal, it doesn’t access the report."
