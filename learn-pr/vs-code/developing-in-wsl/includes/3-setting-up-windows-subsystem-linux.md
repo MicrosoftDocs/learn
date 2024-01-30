@@ -9,7 +9,7 @@ This module is focused on how we can use WSL and VS Code, but WSL install is ind
 
 ## Installing WSL and a Linux distribution 
 
-:::image type="content" source="../media/3-wsl-install.png" alt-text="Screenshot of the Windows terminal and the WSL install command.":::
+:::image type="content" source="../media/3-windows-subsystem-linux-install.png" alt-text="Screenshot of the Windows terminal and the WSL install command.":::
 
 ### Enable the Windows Subsystem for Linux: 
 

@@ -8,7 +8,7 @@ This integration allows developers to utilize the full range of Linux tools and 
 
 ## Installing the VS Code WSL extension
 
-:::image type="content" source="../media/4-wsl-extension.png" alt-text="Screenshot of the Visual Studio Code Extensions tab with WSL extension showing.":::
+:::image type="content" source="../media/4-windows-subsystem-linux-extension.png" alt-text="Screenshot of the Visual Studio Code Extensions tab with WSL extension showing.":::
 
 In VS Code, go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window. 
 
@@ -19,7 +19,7 @@ In VS Code, go to the Extensions view by clicking on the Extensions icon in the 
 
 ## Connecting to WSL in VS Code 
 
-:::image type="content" source="../media/5-connect-to-wsl.png" alt-text="Screenshot of the Visual Studio Code WSL connect to WSL command.":::
+:::image type="content" source="../media/5-connect-to-windows-subsystem-linux.png" alt-text="Screenshot of the Visual Studio Code WSL connect to WSL command.":::
 
 1. In VS Code, open your Command Palette (Ctrl/CMD+Shift+P) and type in WSL: Connect to WSL 
     - Your VS Code will reload and connect to WSL 
