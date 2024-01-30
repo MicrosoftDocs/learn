@@ -26,9 +26,9 @@ quiz:
         explanation: Incorrect. Middleware is not related to cookies.  
     - content: What is a way to set up middleware? 
       choices:
-      - content: Use `app.get(‘/’, () => {})`.
+      - content: Use `app.get('/', () => {})`.
         isCorrect: false
-        explanation: Incorrect. That's how you would set up a default route for ‘/’. 
+        explanation: Incorrect. That's how you would set up a default route for `'/'`. 
       - content: Use `app.use(() => {})`.
         isCorrect: true
         explanation: Correct. Using `use()` is the correct way to set up middleware.
