@@ -40,7 +40,7 @@ The process is:
 
 <!-- rewrite above in sentences or leave as is? -->
 <!--at num3  https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-view-alerts#view-details-and-remediate-a-specific-alert this starts with 1. sign into the OT sensor. I suggest removing this line, we are already there, as mentioned above. Why would we add this here?  -->
-<!-- at end! https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-view-alerts#manage-alert-status-and-triage-alerts the first sentence is confusing. Does this mena save any changes i have made to the alert? Or something else. If it does then I would put it near the end of the entire section of article. but not at the begining, or it is it at the beginning that it is clear it relates to actions for when you have finished your work-->
+<!-- at end! https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-view-alerts#manage-alert-status-and-triage-alerts the first sentence is confusing. Does this mean save any changes i have made to the alert? Or something else. If it does then I would put it near the end of the entire section of article. but not at the beginning, or it is it at the beginning that it is clear it relates to actions for when you have finished your work-->
 Could list alert status options - but I think they're better to be added to the exercise stage.
 
 ## Outcome of this process
@@ -49,6 +49,6 @@ When you complete the triage process and the operational mode is enabled, your d
 
 ## Managing OT alerts in a hybrid environment
 
-Your organization might also have access to the OT sensor from a virtual machine, <!-- from the sensor itself (Im not sure baout this , this could be on prem) --> or through Defender for IoT. This multo access set up is called a hybrid environment. In this set up, changes made on one system synchronize across the other systems, so that updates or changes made only on one system aren't lost. When you return to the other system you see the changes already displayed in the relevant information.
+Your organization might also have access to the OT sensor from a virtual machine, <!-- from the sensor itself (Im not sure about this , this could be on prem) --> or through Defender for IoT. This multi access set up is called a hybrid environment. In this set up, changes made on one system synchronize across the other systems, so that updates or changes made only on one system aren't lost. When you return to the other system you see the changes already displayed in the relevant information.
 
 <!--> So in the second link above, managing OT hybrid, do we need to mention the different status names? differences across platforms? Dont mention On Prem and the associated name issues. -->
