@@ -59,8 +59,8 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
    az aks approuting enable -g $RESOURCE_GROUP -n $CLUSTER_NAME
    ```
 
-> [!NOTE]
-> If you see a message asking you to install the **aks-preview** extension, enter `Y` to install it and continue.
+   > [!NOTE]
+   > If you see a message asking you to install the **aks-preview** extension, enter `Y` to install it and continue.
 
 1. Create a DNS zone using the `az network dns zone create` command.
 
