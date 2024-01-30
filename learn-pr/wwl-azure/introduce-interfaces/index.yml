@@ -3,7 +3,7 @@ uid: learn.wwl.introduce-interfaces
 metadata:
   title: Introduce interfaces
   description: "This module introduces the basics of interfaces in C# and how to use them."
-  ms.date: 12/08/2023
+  ms.date: 01/29/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
@@ -21,6 +21,7 @@ prerequisites: |
   - Basic understanding of the C# programming language
   - Familiarity with classes, abstract classes, and inheritance
 iconUrl: /training/achievements/introduce-interfaces.svg
+hidden: true
 levels:
 - beginner
 roles:

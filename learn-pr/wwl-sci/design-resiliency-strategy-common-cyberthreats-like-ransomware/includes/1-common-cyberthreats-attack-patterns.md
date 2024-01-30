@@ -63,7 +63,7 @@ Security breaches come in different forms, including the following:
 
 A data breach is when an attacker successfully gains access or control of data. Using the intruder example, this would be similar to that person getting access to, or stealing, vital documents and information inside the building:
 
-![Diagram that shows a thief running from an office building.](https://learn.microsoft.com/training/wwl-sci/describe-basic-cybersecurity-threats-attacks-mitigations/media/data-breach-v3.png)
+![Diagram that shows a thief running from an office building.](/training/wwl-sci/describe-basic-cybersecurity-threats-attacks-mitigations/media/data-breach-v3.png)
 
 When an attacker achieves a security breach, they'll often want to target data, because it represents vital information. Poor data security can lead to an attacker gaining access and control of data. This can lead to serious consequences for the victim, whether that is a person, organization, or even a government. This is because the victim's data could be abused in many ways. For example, it can be held as ransom or used to cause financial or reputational harm.
 

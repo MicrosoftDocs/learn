@@ -6,6 +6,7 @@ metadata:
   description: Check your understanding so far.
   author: SoniaLopezBravo
   ms.author: sonialopez
+  manager: tedhudek
   ms.date: 01/25/2023
   ms.topic: unit
   show_latex: true

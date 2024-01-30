@@ -4,12 +4,10 @@ title: Exercise - Create a question answering solution
 metadata:
   title: Exercise - Create a question answering solution
   description: "Exercise - Create a question answering solution"
-  ms.date: 07/19/2023
+  ms.date: 01/22/2024
   author: wwlpublish
-  ms.author: berryivor
+  ms.author: gmalc
   ms.topic: unit
-  ms.service: azure-ai-language
-  ms.subservice: azure-ai-qna-maker
 labId: 100989
 labModal: true
 durationInMinutes: 20

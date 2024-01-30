@@ -38,5 +38,5 @@ Finally, review the roles assigned to the service principal and ensure that it h
 
 For more information about service connections, see:
 
-- [Manage service connections.](https://learn.microsoft.com/azure/devops/pipelines/library/service-endpoints)
-- [Use Microsoft Entra service principals & managed identities](https://learn.microsoft.com/azure/devops/integrate/get-started/authentication/service-principal-managed-identity)
+- [Manage service connections.](/azure/devops/pipelines/library/service-endpoints)
+- [Use Microsoft Entra service principals & managed identities](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity)

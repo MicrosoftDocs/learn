@@ -115,7 +115,7 @@ Suppose you're debugging an application that processes product information in a 
 
     The VARIABLES section of the RUN AND DEBUG view displays the value assigned to `i`.
 
-    Notice that `Process1` and `Process2` display messages to the DEBUG CONSOLE panel. A real application might require user interactions as data is being processed. Some interactions might be dependent on the data being processed.
+    Notice that `Process1` and `Process2` display messages to the DEBUG CONSOLE panel. A real application may require user interactions as data is being processed. Some interactions may be dependent on the data being processed.
 
 1. Use the **Stop** button to stop code execution.
 

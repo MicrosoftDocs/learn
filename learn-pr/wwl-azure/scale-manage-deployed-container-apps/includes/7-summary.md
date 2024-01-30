@@ -4,16 +4,16 @@ The main takeaways from this module are that revisions in Azure Container Apps h
 
 Detailed resources:
 
-- Revisions in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/revisions](/azure/container-apps/revisions)
+- Revisions in Azure Container Apps | Microsoft Learn [/azure/container-apps/revisions](/azure/container-apps/revisions)
 
-- Manage revisions in Azure Container Apps [https://learn.microsoft.com/azure/container-apps/revisions-manage](/azure/container-apps/revisions-manage)
+- Manage revisions in Azure Container Apps [/azure/container-apps/revisions-manage](/azure/container-apps/revisions-manage)
 
-- Application lifecycle management in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/application-lifecycle-management](/azure/container-apps/application-lifecycle-management)
+- Application lifecycle management in Azure Container Apps | Microsoft Learn [/azure/container-apps/application-lifecycle-management](/azure/container-apps/application-lifecycle-management)
 
-- Scaling in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/scale-app](/azure/container-apps/scale-app)
+- Scaling in Azure Container Apps | Microsoft Learn [/azure/container-apps/scale-app](/azure/container-apps/scale-app)
 
-- Ingress in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/ingress-overview](/azure/container-apps/ingress-overview)
+- Ingress in Azure Container Apps | Microsoft Learn [/azure/container-apps/ingress-overview](/azure/container-apps/ingress-overview)
 
-- Traffic splitting in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/traffic-splitting](/azure/container-apps/traffic-splitting)
+- Traffic splitting in Azure Container Apps | Microsoft Learn [/azure/container-apps/traffic-splitting](/azure/container-apps/traffic-splitting)
 
-- Blue-Green Deployment in Azure Container Apps | Microsoft Learn [https://learn.microsoft.com/azure/container-apps/blue-green-deployment](/azure/container-apps/blue-green-deployment)
+- Blue-Green Deployment in Azure Container Apps | Microsoft Learn [/azure/container-apps/blue-green-deployment](/azure/container-apps/blue-green-deployment)

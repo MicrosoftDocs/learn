@@ -4,7 +4,7 @@ title: Implement Asynchronous IO Operations
 metadata:
   title: Implement Asynchronous IO Operations
   description: "The purpose of this lesson is to learn how to implement asynchronous IO operations in C#."
-  ms.date: 01/19/2024
+  ms.date: 01/29/2024
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: unit
