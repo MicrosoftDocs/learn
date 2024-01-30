@@ -6,7 +6,7 @@ Image classification is a computer vision feature where a model is trained to pr
 
 For example, the following images are classified based on the type of fruit they contain.
 
-![Images of fruit, classified as Apple, Banana, and Orange](../media/classified-fruit.png)
+![Diagram with three labeled photographs of fruit, classified as Apple, Banana, and Orange.](../media/classified-fruit.png)
 
 Models can be trained for multi-class classification (where there are multiple classes, but each image can belong to only one class) or multi-label classification (where an image might be associated with multiple labels).
 
@@ -14,7 +14,7 @@ Models can be trained for multi-class classification (where there are multiple c
 
 Object detection is a form of computer vision in which a model is trained to detect the presence and location of one or more classes of object in an image. For example, an AI enabled checkout system in a grocery store might need to identify the type and location of items being purchased.
 
-![An image with the location and type of fruits detected](../media/object-detection.png)
+![A photograph of fruit with the location and type of fruits detected.](../media/object-detection.png)
 
 There are two components to object detection:
 

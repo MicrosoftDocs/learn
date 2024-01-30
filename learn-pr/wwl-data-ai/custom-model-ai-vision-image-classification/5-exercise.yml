@@ -4,11 +4,10 @@ title: Exercise - Classify images with an Azure AI Vision custom model
 metadata:
   title: Exercise - Classify images with an Azure AI Vision custom model
   description: "Create an Azure AI Vision custom model to classify images, image classification"
-  ms.date: 1/29/2024
+  ms.date: 01/29/2024
   author: ivorb
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.service: azure-ai-vision
+  ms.topic: unit
 labId: 152410
 labModal: true
 durationInMinutes: 20
