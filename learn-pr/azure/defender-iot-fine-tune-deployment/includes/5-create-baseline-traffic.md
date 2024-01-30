@@ -39,10 +39,17 @@ Alerts can either be analyzed in a map view of the event timeline view.
 
 The Map View shows the source and destination devices for an alert as well as other devices connected to your sensor (check this out, is the source a device or sensor??). For example:
 
-<!-- add image here of map view -->
+:::image type="content" source="../media/5-map-view.png" alt-text="Screenshot of the Map View tab on an alert details page":::
 
-THe Event Timeline shows the alert event together in a list, with other recent activity. ( How is this useful? What do I learn from seeing the other events?). For example:
+The Event Timeline View shows the alert event together in a list with other recent activity. This allows you to get a better insight into what the network was doing before and after this alert occurred. .....( How is this useful? What do I learn from seeing the other events?). For example:
 
-<!-- add image here of event timeline view-->
+:::image type="content" source="../media/5-event-timeline-alert-sensor.png" alt-text="Screenshot of an event timeline on an alert details page":::
 
-triage the alert......
+Triage the alert to check, update or ocnfirm the status of the alert. Alerts can have 5 different statuses. - /organizations/alerts#alert-statuses-and-triaging-options
+Do we go voer ther rules first or the alerts??
+
+Baseline - creates an environmental baseline for the normal communication behaviour of devices in your network is known. going forward, anything that is unseen traffic will create an alert to be followed up with.
+
+<!-- from videos i have watched, they make a report first and then use that to go through alerts, but in our documentation it just goes through alerts which should be triaged. So just wondering about that difference!! Ask Theo when he is in touch today . I will write based on the internal documentation, not MSFT videos, etc. -->
+
+<!-- generally I find that links go to various places, all over documentation, and are hard to know where or why you are now in a different section -->
