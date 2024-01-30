@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
-  ms.prod: azure
+  ms.service: azure
 title: Plan and implement security for public access to Azure resources
 summary: This module empowers admins to plan and implement strong security for Azure resources, ensuring app/service confidentiality, integrity, and availability.
 abstract: |

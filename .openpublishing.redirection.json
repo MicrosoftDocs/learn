@@ -19977,6 +19977,51 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/create-publish-webapp-app-service-vs-code/index.md",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-publish-webapp-app-service-vs-code/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-publish-webapp-app-service-vs-code/2-create-web-application-vs-code.md",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-publish-webapp-app-service-vs-code/3-exercise-create-web-application-vs-code.md",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-publish-webapp-app-service-vs-code/4-publish-app-azure-app-service-vs-code.md",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-publish-webapp-app-service-vs-code/5-exercise-publish-app-azure-app-service-vs-code.md",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-publish-webapp-app-service-vs-code/6-update-app-vs-code-publish-updates.md",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-publish-webapp-app-service-vs-code/7-exercise-update-app-vs-code-publish-updates.md",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-publish-webapp-app-service-vs-code/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode",
+      "redirect_document_id": false
+    },    
+    {
       "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/index.md",
       "redirect_url": "/training/modules/use-apache-spark-azure-databricks/",
       "redirect_document_id": false
@@ -31878,17 +31923,37 @@
     },
     {
       "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/6-csharp-razor-binding.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/6-data-binding",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-blazor-todo-list/2-data-binding",
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/azure/build-your-first-blazor-web-app/6-data-binding.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-blazor-todo-list/2-data-binding",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/7-exercise-razor-binding.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/7-exercise-data-binding",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-blazor-todo-list/3-exercise-data-binding",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-your-first-blazor-web-app/7-exercise-data-binding.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-blazor-todo-list/3-exercise-data-binding",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-your-first-blazor-web-app/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/6-knowledge-check",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/azure/build-blazor-webassembly-visual-studio-code/8-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/9-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-your-first-blazor-web-app/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-your-first-blazor-web-app/7-summary",
       "redirect_document_id": true
     },
     {
@@ -32102,6 +32167,36 @@
         "redirect_document_id": false
     },
     {
+        "source_path": "learn-pr/azure/create-azure-active-directory-test-environment/1-introduction.yml",
+        "redirect_url": "https://learn.microsoft.com/entra/identity-platform/test-setup-environment",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/create-azure-active-directory-test-environment/2-plan-your-azure-active-directory-test-environment.yml",
+        "redirect_url": "https://learn.microsoft.com/entra/identity-platform/test-setup-environment",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/create-azure-active-directory-test-environment/3-exercise-set-up-azure-active-directory-test-environment.yml",
+        "redirect_url": "https://learn.microsoft.com/entra/identity-platform/test-setup-environment",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/create-azure-active-directory-test-environment/4-knowledge-check.yml",
+        "redirect_url": "https://learn.microsoft.com/entra/identity-platform/test-setup-environment",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/create-azure-active-directory-test-environment/5-summary.yml",
+        "redirect_url": "https://learn.microsoft.com/entra/identity-platform/test-setup-environment",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/create-azure-active-directory-test-environment/index.yml",
+        "redirect_url": "https://learn.microsoft.com/entra/identity-platform/test-setup-environment",
+        "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/student-evangelism/challenge-project-create-rock-paper-scissors-game-with-github-copilot/index.md",
       "redirect_url": "/training/modules/challenge-project-create-mini-game-with-copilot/",
       "redirect_document_id": false
@@ -32134,6 +32229,136 @@
     {
       "source_path": "learn-pr/student-evangelism/challenge-project-create-rock-paper-scissors-game-with-github-copilot/6-summary.md",
       "redirect_url": "/training/modules/challenge-project-create-mini-game-with-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/2-microsoft-entra-id-users.md",
+      "redirect_url": "/training/modules/manage-identities-microsoft-entra-id/3-microsoft-entra-id-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/3-microsoft-entra-id-groups.md",
+      "redirect_url": "/training/modules/manage-identities-microsoft-entra-id/4-microsoft-entra-id-groups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/4-recommend-when-to-use-external-identities.md",
+      "redirect_url": "/training/modules/manage-identities-microsoft-entra-id/5-recommend-when-to-use-external-identities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/5-secure-external-microsoft-entra-identities.md",
+      "redirect_url": "/training/modules/manage-identities-microsoft-entra-id/6-secure-external-microsoft-entra-identities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/6-microsoft-entra-identity-protection.md",
+      "redirect_url": "/training/modules/manage-identities-microsoft-entra-id/7-microsoft-entra-identity-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/7-knowledge-check.md",
+      "redirect_url": "/training/modules/manage-identities-microsoft-entra-id/8-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/8-summary.md",
+      "redirect_url": "/training/modules/manage-identities-microsoft-entra-id/9-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/set-up-cors-website-storage/index.yml",
+      "redirect_url": "/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/set-up-cors-website-storage/1-introduction.yml",
+      "redirect_url": "/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/set-up-cors-website-storage/2-determine-whether-you-need-cors-on-your-azure-storage-services.yml",
+      "redirect_url": "/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/set-up-cors-website-storage/5-enabling-cors-for-your-azure-storage-services-using-the-azure-cli.yml",
+      "redirect_url": "/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/set-up-cors-website-storage/6-exercise-enable-cors-for-your-azure-storage-services-using-the-azure-cli.yml",
+      "redirect_url": "/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/set-up-cors-website-storage/7-enabling-cors-for-your-azure-storage-services-using-powershell.yml",
+      "redirect_url": "/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/set-up-cors-website-storage/8-exercise-enable-cors-for-your-azure-storage-services-using-powershell.yml",
+      "redirect_url": "/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/set-up-cors-website-storage/9-knowledge-check.yml",
+      "redirect_url": "/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/set-up-cors-website-storage/10-summary.yml",
+      "redirect_url": "/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/10-knowledge-check.md",
+      "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/11-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/11-summary.md",
+      "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/12-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/2-microsoft-entra-verified-id.md",
+      "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/4-microsoft-entra-verified-id",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/3-configure-microsoft-entra-verified-id.md",
+      "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/5-configure-microsoft-entra-verified-id",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/4-configure-microsoft-entra-multifactor-authentication-settings.md",
+      "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/3-configure-microsoft-entra-multifactor-authentication-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/5-passwordless-authentication.md",
+      "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/6-passwordless-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/6-enforce-premises-microsoft-entra-password-protection.md",
+      "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/7-enforce-premises-microsoft-entra-password-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/7-configure-microsoft-entra-single-sign-on.md",
+      "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/8-configure-microsoft-entra-single-sign-on",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/8-integrate-applications-with-microsoft-entra-id.md",
+      "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/9-integrate-applications-with-microsoft-entra-id",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/9-microsoft-entra-id-authentication-verification-methods.md",
+      "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/10-microsoft-entra-id-authentication-verification-methods",
       "redirect_document_id": false
     }
   ]
