@@ -5,7 +5,7 @@ The primary purpose of WSL is to enable developers who need to run a Linux-based
 
 :::image type="content" source="../media/1-wsl-intro.png" alt-text="Illustration of a laptop running Windows with the Linux penguin named Tux sitting next to it.":::
 
-## Benefits of Using WSL for Developers 
+## Benefits of wsing WSL for developers 
 
 WSL brings several benefits to developers:
 
@@ -19,7 +19,7 @@ WSL brings several benefits to developers:
 
 - **Enhanced Development Environment:** With support for popular programming languages and frameworks, WSL is an excellent environment for development, especially when combined with powerful editors like Visual Studio Code. 
 
-### Brief History and Versions of WSL 
+### Brief history and versions of WSL 
 
 :::image type="content" source="../media/2-wsl-versions.png" alt-text="Illustration of a laptop running with divisions for both Windows and Linux.":::
 

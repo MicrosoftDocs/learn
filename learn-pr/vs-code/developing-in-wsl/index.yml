@@ -45,9 +45,9 @@ subjects:
 
 units:
 - learn.developing-in-wsl.introduction
-- learn.developing-in-wsl.what-is-wsl
-- learn.developing-in-wsl.setting-up-wsl
-- learn.developing-in-wsl.setting-up-wsl-extension
+- learn.developing-in-wsl.what-is-windows-subsystem-linux
+- learn.developing-in-wsl.setting-up-windows-subsystem-linux
+- learn.developing-in-wsl.setting-up-windows-subsystem-linux-extension
 - learn.developing-in-wsl.running-debugging
 - learn.developing-in-wsl.summary
 

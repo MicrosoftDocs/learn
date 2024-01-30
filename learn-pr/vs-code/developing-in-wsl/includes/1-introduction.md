@@ -1,6 +1,6 @@
 In this module, we embark on an exciting journey to bridge the gap between Linux and Windows environments using the Windows Subsystem for Linux (WSL) for development. Whether you're a seasoned developer accustomed to Linux tools or a Windows user keen to explore Linux-based development, this module is tailored for you. 
 
-## Embracing the Best of Both Worlds 
+## Embracing the best of both worlds 
 
 The integration of Linux into the Windows ecosystem is a game-changer for developers. With the advent of the [Windows Subsystem for Linux (WSL)](/windows/wsl-introduction), it's now possible to run a Linux environment directly on Windows, without the overhead of traditional virtual machines (VMs) or dual-boot setups. This module guides you through using this powerful feature in your development workflow. 
 

@@ -1,6 +1,6 @@
 In the evolving landscape of software development, the ability to efficiently edit and debug code is paramount. VS Code when combined with WSL offers a versatile and powerful environment for developers.  
 
-## Installing the Python Extension
+## Installing the Python extension
 
 :::image type="content" source="../media/8-install-python-extension.png" alt-text="Screenshot of the prompt to install Python extension in Visual Studio Code.":::
 
@@ -10,7 +10,7 @@ When you open hello.py, you will be prompted to install the [VS Code Python exte
 
 2. On the prompt to install the Python extension. Select Install. 
 
-## Debugging Your Code 
+## Debugging your code 
 
 :::image type="content" source="../media/9-debug-python.png" alt-text="Screenshot of debugging Python code in the Visual Studio Code.":::
 
@@ -23,13 +23,13 @@ When you open hello.py, you will be prompted to install the [VS Code Python exte
 
 3. Review the output of the print statement in the debug console. 
 
-## Ending Your WSL Session 
+## Ending your WSL session 
 
 To disconnect from WSL, from your Command Palette (Ctrl/CMD+Shift+P), type Remote: Close Remote Connection 
 
 VS Code will now disconnect from WSL and reload. 
 
-## Other VS Code WSL Extension Commands 
+## Other VS Code WSL extension commands 
 
 In this module, we installed WSL with the `wsl --install` command. This command installs Ubuntu as the distro however you can install other distros and select which one to connect to in VS Code. 
 

@@ -6,7 +6,7 @@ This integration allows developers to utilize the full range of Linux tools and 
 
 - **Unified Development Experience:** With VS Code and the WSL extension combined, VS Code’s UI runs on Windows, and all your commands, extensions, and even the terminal, run on Linux. You get the full VS Code experience, including autocomplete and debugging, powered by the tools and compilers installed on Linux. 
 
-## Installing the VS Code WSL Extension
+## Installing the VS Code WSL extension
 
 :::image type="content" source="../media/4-wsl-extension.png" alt-text="Screenshot of the Visual Studio Code Extensions tab with WSL extension showing.":::
 
@@ -14,8 +14,8 @@ In VS Code, go to the Extensions view by clicking on the Extensions icon in the 
 
 1. Select Extensions from the side bar. 
 2. Search for WSL in the Extensions view search bar. 
-2. Find the extension published by Microsoft 
-3. Click the 'Install' button 
+3. Find the extension published by Microsoft 
+4. Click the 'Install' button 
 
 ## Connecting to WSL in VS Code 
 
@@ -25,15 +25,15 @@ In VS Code, go to the Extensions view by clicking on the Extensions icon in the 
     - Your VS Code will reload and connect to WSL 
     - Notice the remote indicator on the bottom right corner displays that VS Code is connected to WSL: Ubuntu 
 
-4. Open a new terminal (Ctrl/CMD+`) and notice the path corresponds to a file path in WSL 
+2. Open a new terminal (Ctrl/CMD+`) and notice the path corresponds to a file path in WSL 
 
-:::image type="content" source="../media/6-open-folder-wsl.png" alt-text="Screenshot of the Visual Studio Code WSL terminal.":::
+:::image type="content" source="../media/6-open-folder-windows-subsystem-linux.png" alt-text="Screenshot of the Visual Studio Code WSL terminal.":::
 
-5. In the terminal type in the command `uname`, the output should be Linux. 
+3. In the terminal type in the command `uname`, the output should be Linux. 
 
-## Opening our Python Project from WSL in VS Code 
+## Opening our Python project from WSL in VS Code 
 
-:::image type="content" source="../media/7-python-in-wsl.png" alt-text="Screenshot of a Python Project open in Visual Studio Code with WSL.":::
+:::image type="content" source="../media/7-python-in-windows-subsystem-linux.png" alt-text="Screenshot of a Python Project open in Visual Studio Code with WSL.":::
 
 1. Open your Command Palette (Ctrl/CMD+Shift+P) and type in WSL: Open folder in WSL 
 

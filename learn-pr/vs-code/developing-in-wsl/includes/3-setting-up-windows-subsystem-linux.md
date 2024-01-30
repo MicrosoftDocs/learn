@@ -7,9 +7,9 @@ We are also going to create a Python project to later use in VS Code.
 
 This module is focused on how we can use WSL and VS Code, but WSL install is independent of VS Code, and you can use WSL anywhere and on its own. 
 
-## Installing WSL and a Linux Distribution 
+## Installing WSL and a Linux distribution 
 
-:::image type="content" source="../media/3-wsl-install.png" alt-text="Screenshot of the Windows terminal and the wsl install command.":::
+:::image type="content" source="../media/3-wsl-install.png" alt-text="Screenshot of the Windows terminal and the WSL install command.":::
 
 ### Enable the Windows Subsystem for Linux: 
 
@@ -19,7 +19,7 @@ This module is focused on how we can use WSL and VS Code, but WSL install is ind
 
 2. Restart Your Computer: A restart is required to complete the installation and apply changes. 
 
-### Set Up Your Linux Distribution: 
+### Set up your Linux distribution: 
 
 A Linux distribution (distro) is a version of the Linux operating system that's tailored with certain software and settings for various needs or preferences. Ubuntu is a popular Linux distro known for its user-friendly interface and extensive software ecosystem, making it an accessible choice for many users. 
 
@@ -27,7 +27,7 @@ A Linux distribution (distro) is a version of the Linux operating system that's 
 
 2. Follow the prompts to create a user account and password for your Linux distro. 
 
-## Creating a Python Project
+## Creating a Python project
 
 Many languages work in WSL and for this module we selected Python. It’s a great language for beginners because it has a simple and readable syntax, offers a wide range of libraries and resources, and has a large and supportive community, making it easy for beginners to find help and resources when they encounter challenges. 
 
@@ -38,7 +38,7 @@ Python should be installed by default on your WSL distro. To verify, run: `pytho
 1. `sudo apt update`
 2. `sudo apt install python3 python3-pip` 
 
-### The WSL File System 
+### The WSL file system 
 
 Now we need to create a folder for our project. When working in WSL, files are stored in the WSL file system. Both your Windows and Linux files are stored on the same physical hard drive. However, they exist in separate file systems: 
 
@@ -48,7 +48,7 @@ Now we need to create a folder for our project. When working in WSL, files are s
  
 Although both file systems coexist on the same physical drive, it's important to manage files within their respective environments to maintain compatibility and performance. 
 
-WSL allows access to Windows files, but for development, especially with tools like VS Code, we recommended to store and manage files in the WSL file system. 
+WSL allows access to Windows files, but for development, especially with tools like VS Code, we recommend to store and manage files in the WSL file system. 
 
 ### Creating a folder in WSL 
 

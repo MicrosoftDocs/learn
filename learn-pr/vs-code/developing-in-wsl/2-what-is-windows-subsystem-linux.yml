@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-what-is-wsl.md)]
+  [!include[](includes/2-what-is-windows-subsystem-linux.md)]
