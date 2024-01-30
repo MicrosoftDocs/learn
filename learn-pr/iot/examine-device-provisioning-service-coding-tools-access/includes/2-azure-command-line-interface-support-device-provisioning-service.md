@@ -16,11 +16,11 @@ You can use DPS service commands to manage Device Provisioning Service instances
 
 | Command | Description |
 | --- | --- |
-| [az iot dps create](/cli/azure/iot/dps?view=azure-cli-latest#az-iot-dps-create) | Create an Azure IoT Hub Device Provisioning Service instance. |
-| [az iot dps delete](/cli/azure/iot/dps?view=azure-cli-latest#az-iot-dps-delete) | Delete an Azure IoT Hub Device Provisioning Service instance. |
-| [az iot dps list](/cli/azure/iot/dps?view=azure-cli-latest#az-iot-dps-list) | List Azure IoT Hub Device Provisioning Service instances. |
-| [az iot dps show](/cli/azure/iot/dps?view=azure-cli-latest#az-iot-dps-show) | Get the details of an Azure IoT Hub Device Provisioning Service instance. |
-| [az iot dps update](/cli/azure/iot/dps?view=azure-cli-latest#az-iot-dps-update) | Update an Azure IoT Hub Device Provisioning Service instance. |
+| [az iot dps create](/cli/azure/iot/dps?view=azure-cli-latest#az-iot-dps-create&preserve-view=true) | Create an Azure IoT Hub Device Provisioning Service instance. |
+| [az iot dps delete](/cli/azure/iot/dps?view=azure-cli-latest#az-iot-dps-delete&preserve-view=true) | Delete an Azure IoT Hub Device Provisioning Service instance. |
+| [az iot dps list](/cli/azure/iot/dps?view=azure-cli-latest#az-iot-dps-list&preserve-view=true) | List Azure IoT Hub Device Provisioning Service instances. |
+| [az iot dps show](/cli/azure/iot/dps?view=azure-cli-latest#az-iot-dps-show&preserve-view=true) | Get the details of an Azure IoT Hub Device Provisioning Service instance. |
+| [az iot dps update](/cli/azure/iot/dps?view=azure-cli-latest#az-iot-dps-update&preserve-view=true) | Update an Azure IoT Hub Device Provisioning Service instance. |
 
 ### Other DPS command categories
 
@@ -28,12 +28,12 @@ Other Azure CLI Commands for DPS are available in the following categories:
 
 | Category | Description |
 | --- | --- |
-| [certificate](/cli/azure/iot/dps/certificate?view=azure-cli-latest) | Manage certificates for an Azure IoT Hub Device Provisioning Service instance. |
-| [connection-string](/cli/azure/iot/dps/connection-string?view=azure-cli-latest) | Manage connection strings for an Azure IoT Hub Device Provisioning Service instance. |
-| [enrollment](/cli/azure/iot/dps/enrollment?view=azure-cli-latest) | Manage individual device enrollments in an Azure IoT Hub Device Provisioning Service. |
-| [enrollment-group](/cli/azure/iot/dps/enrollment-group?view=azure-cli-latest) | Manage enrollment groups in an Azure IoT Hub Device Provisioning Service. |
-| [linked-hub](/cli/azure/iot/dps/linked-hub?view=azure-cli-latest) | Manage linked IoT Hubs in an Azure IoT Hub Device Provisioning Service instance. |
-| [policy](/cli/azure/iot/dps/policy?view=azure-cli-latest) | Manage shared access policies for an Azure IoT Hub Device Provisioning Service instance. |
+| [certificate](/cli/azure/iot/dps/certificate?view=azure-cli-latest&preserve-view=true) | Manage certificates for an Azure IoT Hub Device Provisioning Service instance. |
+| [connection-string](/cli/azure/iot/dps/connection-string?view=azure-cli-latest&preserve-view=true) | Manage connection strings for an Azure IoT Hub Device Provisioning Service instance. |
+| [enrollment](/cli/azure/iot/dps/enrollment?view=azure-cli-latest&preserve-view=true) | Manage individual device enrollments in an Azure IoT Hub Device Provisioning Service. |
+| [enrollment-group](/cli/azure/iot/dps/enrollment-group?view=azure-cli-latest&preserve-view=true) | Manage enrollment groups in an Azure IoT Hub Device Provisioning Service. |
+| [linked-hub](/cli/azure/iot/dps/linked-hub?view=azure-cli-latest&preserve-view=true) | Manage linked IoT Hubs in an Azure IoT Hub Device Provisioning Service instance. |
+| [policy](/cli/azure/iot/dps/policy?view=azure-cli-latest&preserve-view=true) | Manage shared access policies for an Azure IoT Hub Device Provisioning Service instance. |
 
 ## Using the DPS commands
 
