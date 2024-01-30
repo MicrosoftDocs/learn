@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-authentication-microsoft-entra-id.configure-microsoft-entra-multifactor-authentication-settings
+title: Implement multifactor authentication (MFA)
+metadata:
+  title: Implement multifactor authentication (MFA)
+  description: "Implement multifactor authentication (MFA)"
+  ms.date: 01/30/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-configure-microsoft-entra-multifactor-authentication-settings.md)]

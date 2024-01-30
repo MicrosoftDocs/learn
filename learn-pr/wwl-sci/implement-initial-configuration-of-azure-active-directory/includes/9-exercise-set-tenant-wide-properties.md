@@ -19,11 +19,11 @@
 
 ### Find the location associated with your tenant
 
-Just as the Country / region is found in the Microsoft Entra Properties dialog, so is the location information.
+Just as the Country / region is found in the Microsoft Entra ID Properties dialog, so is the location information.
 
 8.  In the **Properties** screen, under **Tenant properties**, locate **Location** and review the information.
     
-    :::image type="content" source="../media/azure-active-directory-properties-country-location-5411f783.png" alt-text="Screenshot of the Microsoft Entra Properties with the Country or region settings highlighted.":::
+    :::image type="content" source="../media/azure-active-directory-properties-country-location-5411f783.png" alt-text="Screenshot of the Microsoft Entra ID Properties with the Country or region settings highlighted.":::
     
 
 ### Find the tenant ID

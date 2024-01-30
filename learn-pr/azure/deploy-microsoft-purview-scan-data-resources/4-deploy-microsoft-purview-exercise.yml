@@ -8,8 +8,7 @@ metadata:
   ms.date: 04/27/2023
   author: whhender
   ms.author: whhender
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/4-deploy-microsoft-purview-exercise.md)]

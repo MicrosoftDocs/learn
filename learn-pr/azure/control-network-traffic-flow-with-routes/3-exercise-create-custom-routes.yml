@@ -6,10 +6,9 @@ metadata:
   ms.date: 10/20/2023
   author: mbender-ms
   ms.author: mbender
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurecli
-  ms.prod: learning-azure
 title: Exercise - Create custom routes
 durationInMinutes: 10
 interactive: bash

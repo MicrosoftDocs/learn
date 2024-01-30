@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-authentication-microsoft-entra-id.integrate-applications-with-microsoft-entra-id
+title: Integrate single sign-on (SSO) and identity providers
+metadata:
+  title: Integrate single sign-on (SSO) and identity providers
+  description: "Integrate single sign-on (SSO) and identity providers"
+  ms.date: 01/30/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-integrate-applications-with-microsoft-entra-id.md)]

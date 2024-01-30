@@ -4,13 +4,11 @@ title: Exercise assign Microsoft Entra roles in Privileged Identity Management
 metadata:
   title: Exercise assign Microsoft Entra roles in Privileged Identity Management
   description: "Exercise assign Microsoft Entra roles in Privileged Identity Management"
-  ms.date: 08/16/2023
+  ms.date: 10/23/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: azure
 durationInMinutes: 10
 content: |
   [!include[](includes/5-assign-azure-active-directory-roles-privileged-identity-management.md)]

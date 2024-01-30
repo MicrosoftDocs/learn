@@ -6,8 +6,8 @@ metadata:
   ms.date: 10/20/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.topic: module
+  ms.service: azure
 title: Explore Azure Center for SAP solutions
 summary: SAP professionals are responsible for managing SAP workloads more efficiently on a secure, scalable, and reliable cloud platform. In this module, we will explore how Azure Center for SAP Solutions (ACSS) can help you achieve these goals.
 abstract: |

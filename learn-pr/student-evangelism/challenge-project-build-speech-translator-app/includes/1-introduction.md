@@ -1,37 +1,38 @@
+Working on a portfolio-worthy project by taking up a well-documented challenge is one of the best ways to demonstrate your skills.
 
-
-One of the best ways to demonstrate your skill is by working on portfolio-worthy projects. This usually starts by taking up a well documented challenge.
-
-In this learning module, you'll build a Canvas App and integrate Microsoft AI Services into it. This project comes with numerous learning opportunities as you get to interact with Microsoft Azure AI services and integrate them into the application you're building.
+In this training module, you'll build a canvas app and integrate Microsoft Azure AI services. This project provides many learning opportunities as you interact with Microsoft Azure AI services and integrate them with the application you're building.
 
 > [!NOTE]
-> This is a **_challenge project_** module where you will complete a project end-to-end based on a specification. This module is designed to be a test of your skills: there are few guidelines and no step-by-step instructions.
+> This is a **_challenge project_** module where you complete a project based on a specification. The module is designed to test your skills. There are few guidelines and no step-by-step instructions.
 
 ## About the challenge
-Communication is a vital element of our everyday life. To make life more inclusive for people, we'll use LowCode solution Power Apps to build a Speech Translator App. 
 
-The app uses the Speech Service API from Microsoft Azure AI Service to recognize the user’s speech and convert it to text and translate the text to the desired language. The app can also speak out the translated text using the Speech Service API. The app can support multiple languages and dialects.
+In this project, you use low-code Microsoft Power Apps to build a speech translator app that can be used to address communication barriers in the workplace.
 
-By the end of this module, you'll build a solution that addresses communication barrier in the workplace.
+The app uses the Speech service API from Microsoft Azure AI services to recognize the user's speech, convert it to text, and translate the text to the desired language. The app can also speak the translated text and can support multiple languages and dialects.
 
-**Summary:** This Challenge Project demonstrates your ability to analyze and translate project requirement into a solution as well as showcase your technical skill using Power Apps and Microsoft Azure AI Services.
+The challenge project helps you to demonstrate your ability to analyze project requirements and translate them into a solution. You'll also showcase your technical skills in Power Apps and Microsoft Azure AI services.
 
-## Learning objectives:
+## Learning objectives
+
 In this module, you'll demonstrate your ability to:
-- Create Data Model using Microsoft Dataverse for a Power Apps Project.
-- Set up Microsoft AI Services Resource on Azure.
-- Create a Power Apps canvas app based on provided specifications
-- Integrate and Consume Microsoft AI Services within Power Apps.
+
+- Create a data model by using Microsoft Dataverse for a Power Apps project.
+- Set up a Microsoft Azure AI services resource on Azure.
+- Create a Power Apps canvas app based on the specifications provided.
+- Integrate and consume Microsoft Azure AI services within Power Apps.
 - Use GitHub Copilot as an assistant.
 
-## Prerequisites:
+## Prerequisites
+
 - Experience creating custom tables and columns in Dataverse
-- Working knowledge of Application development using Power Apps
+- Working knowledge of application development using Power Apps
 - Basic knowledge of Power Fx
-- Microsoft Azure Account
+- A Microsoft Azure account
 
-## Learn before you Do
-If this is your first time learning about Power Apps or about Microsoft Azure AI Services, we have a few resources to help you gt started.
+## _Learn_ before you _do_
 
-- [Power Platform for Beginners](/training/paths/power-plat-fundamentals/?WT.mc_id=academic-109167-ooyinbooke).
-- [Microsoft Azure AI Fundamental](/training/paths/get-started-with-artificial-intelligence-on-azure/?WT.mc_id=academic-109168-ooyinbooke).
+If this module is your first time learning about Power Apps or Microsoft Azure AI services, we have some resources to help you get started:
+
+- [Learning path PL-900: Microsoft Power Platform Fundamentals](/training/paths/power-plat-fundamentals/?WT.mc_id=academic-114984-somelezediko)
+- [Learning path Microsoft Azure AI Fundamentals: AI Overview](/training/paths/get-started-with-artificial-intelligence-on-azure/?WT.mc_id=academic-114984-somelezediko)

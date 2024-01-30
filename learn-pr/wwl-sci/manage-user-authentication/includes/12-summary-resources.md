@@ -5,7 +5,7 @@ Now that you have reviewed this module, you should be able to:
  -  Configure and deploy self-service password reset.
  -  Deploy and manage password protection and smart lockouts.
  -  Implement Kerberos and certificate-based authentication.
- -  Configure Microsoft Entra user authentication to virtual machines.
+ -  Configure Microsoft Entra ID user authentication to virtual machines.
 
 ## Resources
 
@@ -18,7 +18,7 @@ To learn more about some of the idea we've examined in this module, check out th
  -  [Microsoft Authenticator app](/azure/active-directory/authentication/concept-authentication-authenticator-app)
  -  [Passwordless authentication options for Microsoft Entra ID](/azure/active-directory/authentication/concept-authentication-passwordless)
  -  [Authentication methods in Microsoft Entra ID - OATH tokens](/azure/active-directory/authentication/concept-authentication-oath-tokens)
- -  [Configure and enable users for SMS-based authentication using Microsoft Entra ID (preview)](/azure/active-directory/authentication/howto-authentication-sms-signin)
+ -  [Configure and enable users for SMS-based authentication using Microsoft Entra ID](/azure/active-directory/authentication/howto-authentication-sms-signin)
  -  [Authentication methods in Microsoft Entra ID - phone options](/azure/active-directory/authentication/concept-authentication-phone-options)
  -  [Conceptual overview of Microsoft Entra Password Protection](/azure/active-directory/authentication/concept-password-ban-bad-on-premises)
  -  [Enable on-premises Microsoft Entra Password Protection](/azure/active-directory/authentication/howto-password-ban-bad-on-premises-operations)

@@ -9,12 +9,12 @@ There are many benefits for the user and the organization to enabling self-servi
 
 Licensing requirements:
 
- -  Cloud based accounts - A user has to be enrolled into self-service password reset, and that a Microsoft Entra ID P1 or P2 license or a Microsoft 365 Business Standard license is required.
- -  On-premises accounts - A user has to be enrolled into self-service password reset, and that a Microsoft Entra ID P1 or P2 license or a Microsoft 365 Business Premium license.
+ -  Cloud based accounts - A user has to be enrolled into self-service password reset, and that a Microsoft Entra ID Premium P1 or P2 license or a Microsoft 365 Business Standard license is required.
+ -  On-premises accounts - A user has to be enrolled into self-service password reset, and that a Microsoft Entra ID Premium P1 or P2 license or a Microsoft 365 Business Premium license.
 
 ## Enable self-service password reset
 
-:::image type="content" source="../media/enable-password-reset-dfa70be3.png" alt-text="Screenshot of Microsoft Entra ID, configure Self-Service Password Reset dialog. S S P R feature is being enabled for a group of users called S S P R Test Group.":::
+:::image type="content" source="../media/enable-password-reset-dfa70be3.png" alt-text="Screenshot of Microsoft Entra ID configure Self-Service Password Reset dialog. SSPR feature is being enabled for a group of users called SSPR Test Group.":::
 
 
 Basic steps to enable self-service password reset:
@@ -42,9 +42,9 @@ Create a user account that will be added to a security group.
 
 You want to roll out SSPR to a limited set of users first to make sure your SSPR configuration works as expected. Let's create a security group for the limited rollout and add a user to the group.
 
-1.  Sign in to the [Azure portal](https://portal.azure.com/) using a Global administrator account.
-2.  Open the portal menu and then select **Microsoft Entra ID**.
-3.  On the Microsoft Entra ID screen, under **Manage**, select **+ New Group**.
+1.  Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) using a Global administrator account.
+2.  Open the portal menu and then select **Identity**.
+3.  On the Identity menu, select **Groups**, then select **+ New Group**.
 4.  Create a new group using the following information:
     
     | **Setting**       | **Value**               |
@@ -63,8 +63,8 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
 
 Enable SSPR for the group.
 
-1.  Browse back to the Microsoft Entra ID screen.
-2.  Under **Manage**, select **Password reset**.
+1.  Browse back to the Microsoft Entra admin center screen.
+2.  Under **Protection**, select **Password reset**.
     
     > [!IMPORTANT]
     > If the Password reset page still displays the message Get a free Premium trial to use this feature, wait for a few minutes and then refresh the page.

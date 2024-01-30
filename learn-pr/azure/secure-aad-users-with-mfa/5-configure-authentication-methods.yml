@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/03/2021
   author: Justinha
   ms.author: justinha
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 title: Configure multi-factor authentication methods
 durationInMinutes: 6
 content: |

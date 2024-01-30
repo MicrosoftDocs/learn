@@ -3,11 +3,11 @@ uid: learn.wwl.plan-azure-kubernetes-service-deployment
 metadata:
   title: Plan an Azure Kubernetes Service deployment
   description: "In this module, you learn about the core Kubernetes infrastructure components, including control plane nodes, node pools, and workload resources such as pods, deployments, and sets."
-  ms.date: 10/09/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.topic: module
+  ms.service: azure
 title: Plan an Azure Kubernetes Service deployment
 summary: In this module, you learn about the core Kubernetes infrastructure components, including control plane nodes, node pools, and workload resources such as pods, deployments, and sets.
 abstract: |
@@ -19,7 +19,6 @@ abstract: |
 prerequisites: |
   None
 iconUrl: /training/achievements/generic-badge.svg
-hidden: true
 levels:
 - intermediate
 roles:

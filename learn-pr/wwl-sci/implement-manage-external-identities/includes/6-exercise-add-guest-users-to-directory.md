@@ -1,9 +1,9 @@
 ## Add guest users to the directory
 
-1.  Sign in to the [Azure portal](https://portal.azure.com/) as a user who is assigned a limited administrator directory role or the Guest Inviter role.
-2.  Select **Microsoft Entra ID**.
-3.  Under **Manage**, select **Users**.
-4.  Select **New guest user**.
+1.  Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a user who is assigned a limited administrator directory role or the Guest Inviter role.
+2.  Select **Identity**
+3.  Under **Users**, select **All Users**.
+4.  Select **New user - Invite external user**.
     
     :::image type="content" source="../media/new-guest-user-menu-selection-9080639a.png" alt-text="Screenshot of the Users screen with the New guest user menu option selected.":::
     

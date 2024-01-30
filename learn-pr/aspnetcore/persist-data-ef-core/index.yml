@@ -7,9 +7,9 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.prod: entity-framework
-  ms.technology: entity-framework-core
+  ms.topic: module
+  ms.service: entity-framework
+  ms.subservice: entity-framework-core
 title: Persist and retrieve relational data by using Entity Framework Core
 summary: Query and manage relational data in an Entity Framework Core (EF Core) app by using an object-relational mapper (ORM).
 abstract: |

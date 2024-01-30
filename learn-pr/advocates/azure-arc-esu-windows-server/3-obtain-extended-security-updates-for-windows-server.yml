@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.enable-windows-server-extended-security-updates-using-azure-ar.obtain-extended-security-updates-for-windows-server
+title: Obtain Extended Security Updates for Windows Server
+metadata:
+  title: Obtain Extended Security Updates for Windows Server
+  description: Learn how to obtain Extended Security Updates for Windows Server.
+  ms.date: 01/03/2024
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ms.service: windows-server
+  ms.custom: team=cloud_advocates
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-obtain-extended-security-updates-for-windows-server.md)]

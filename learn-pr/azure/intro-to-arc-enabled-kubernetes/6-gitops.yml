@@ -6,8 +6,7 @@ metadata:
   author: JnHs
   ms.date: 08/07/2023
   ms.author: jenhayes
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
   ms.custom:
   - e2e-hybrid
   - event-tier1-build-2022

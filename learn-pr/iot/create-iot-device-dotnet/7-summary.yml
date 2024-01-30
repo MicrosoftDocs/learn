@@ -9,10 +9,9 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.manager: markl
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-dotnet
-  ms.prod: learning-dotnet 
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

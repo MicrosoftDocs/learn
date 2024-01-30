@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.chat-completions.system-message-exercise
+title: "Exercise: Use system messages"
+metadata:
+  title: "Exercise: Use system messages"
+  description: Practice implementing system messages.
+  ms.date: 12/11/2023
+  author: softchris
+  ms.author: chnoring
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-system-message-exercise.md)]

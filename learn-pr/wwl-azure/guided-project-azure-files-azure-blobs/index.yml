@@ -6,8 +6,8 @@ metadata:
   ms.date: 10/16/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.topic: module
+  ms.service: azure
 title: Guided Project - Azure Files and Azure Blobs
 summary: In this module, you practice storing business data securely by using Azure Blob Storage and Azure Files. The lab combines both learning and hands-on practice.
 abstract: |
@@ -23,7 +23,7 @@ prerequisites: |
   - Basic knowledge of security concepts like identities, permissions, and encryption.
   - Basic knowledge of networking concepts like virtual networks and subnetting.
 iconUrl: /training/achievements/guided-project-azure-files-azure-blobs.svg
-hidden: true
+hidden: false
 levels:
 - intermediate
 roles:

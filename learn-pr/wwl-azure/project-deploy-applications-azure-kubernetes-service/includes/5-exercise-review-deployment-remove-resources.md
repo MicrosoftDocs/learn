@@ -14,4 +14,4 @@ In Exercise 4, you review the deployment of the services in the previous exercis
 > To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
 [:::image type="content" source="../media/launch-exercise-162c1d6a.png" alt-text="Button to launch exercise.":::
-](https://microsoftlearning.github.io/APL-1001-deploy-and-manage-containers-with-azure-kubernetes-service/Instructions/Labs/Exercise_04_review_deployment_deprovision.html)
+](https://go.microsoft.com/fwlink/?linkid=2247093)

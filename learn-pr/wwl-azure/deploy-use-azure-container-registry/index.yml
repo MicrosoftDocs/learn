@@ -3,11 +3,11 @@ uid: learn.wwl.deploy-use-azure-container-registry
 metadata:
   title: Deploy and use Azure Container Registry
   description: "Learn how to create a private registry service for building, storing, and managing container images and related artifacts."
-  ms.date: 10/03/2023
+  ms.date: 01/29/2024
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.topic: module
+  ms.service: azure
 title: Deploy and use Azure Container Registry
 summary: Learn how to create a private registry service for building, storing, and managing container images and related artifacts.
 abstract: |
@@ -20,7 +20,6 @@ abstract: |
 prerequisites: |
   None
 iconUrl: /training/achievements/generic-badge.svg
-hidden: true
 levels:
 - intermediate
 roles:

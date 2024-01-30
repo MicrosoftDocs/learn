@@ -1,8 +1,8 @@
 ## Create a dynamic group with all users as members
 
-1.  Sign in to the [Azure portal](https://portal.azure.com/) with an account that is assigned the Global administrator or User administrator role in the tenant.
-2.  Select **Microsoft Entra ID**.
-3.  Under **Manage**, select **Groups**, and then select **New group**.
+1.  Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) with an account that is assigned the Global administrator or User administrator role in the tenant.
+2.  Select **Identity**.
+3.  Under **Groups**, select **All Groups**, and then select **New group**.
 4.  On the New Group page, under **Group type**, select **Security**.
 5.  In the **Group name** box, enter **All company users dynamic group**.
 6.  Select the **Membership type** menu and then select **Dynamic User**.

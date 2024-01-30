@@ -4,10 +4,10 @@ title: Understand search components
 metadata:
   title: Understand search components
   description: "Understand search components"
-  ms.date: 09/18/2023
+  ms.date: 12/11/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.service: cognitive-search
 azureSandbox: false
 labModal: false

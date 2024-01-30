@@ -15,7 +15,6 @@ In this module, you learned how to design with governance in mind. You discovere
 - Build a [cloud governance strategy on Azure](/learn/modules/build-cloud-governance-strategy-azure).
 - Describe [core Azure architectural components](/learn/modules/azure-architecture-fundamentals).
 - Explore [Microsoft Cloud Adoption Framework for Azure](/learn/modules/microsoft-cloud-adoption-framework-for-azure).
-- Get an [introduction to Azure Blueprints](/learn/modules/intro-to-azure-blueprints).
 - Secure your [Azure resources with Azure RBAC](/learn/modules/secure-azure-resources-with-rbac).
 - Learn about [enterprise-scale landing zones in the Microsoft Cloud Adoption Framework for Azure](/learn/modules/enterprise-scale-introduction).
 - Choose the best [Azure landing zone to support your requirements for cloud operations](/learn/modules/cloud-adoption-framework-ready).

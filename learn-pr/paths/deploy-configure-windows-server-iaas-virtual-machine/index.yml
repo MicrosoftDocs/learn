@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/24/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Deploy and configure Windows Server IaaS Virtual Machine
 prerequisites: |
   - Experience with managing Windows Server operating system and Windows Server workloads in on-premises scenarios, including AD DS, DNS, DFS, Hyper-V, and File and Storage Services.
@@ -39,7 +38,6 @@ products:
 - azure-portal
 - azure-storage
 - azure-virtual-machines
-- azure-automanage
 subjects:
 - virtual-machine
 - it-management-monitoring

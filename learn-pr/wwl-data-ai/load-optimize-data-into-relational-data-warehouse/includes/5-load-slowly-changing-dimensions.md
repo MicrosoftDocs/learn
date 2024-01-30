@@ -1,5 +1,3 @@
-
-
 In most relational data warehouses, you need to handle updates to dimension data and support what are commonly referred to as *slowly changing dimensions* (SCDs).
 
 ## Types of slowly changing dimension

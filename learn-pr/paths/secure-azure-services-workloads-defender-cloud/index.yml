@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/10/2023
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Secure Azure services and workloads with Microsoft Defender for Cloud regulatory compliance controls
 prerequisites: |
   - None

@@ -1,5 +1,3 @@
-
-
 In this module, you've learned how to:
 
 - Convert a notebook to a script.

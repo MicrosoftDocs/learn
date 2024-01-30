@@ -8,7 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.custom: devx-track-azurecli, devx-track-azurepowershell, devx-track-terraform
+  ms.service: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/2-explore-deployment-methodologies.md)]

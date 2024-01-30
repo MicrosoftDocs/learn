@@ -9,8 +9,7 @@ metadata:
   author: batamig
   ms.author: bagol
   manager: raynew
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
 quiz:

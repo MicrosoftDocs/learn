@@ -1,6 +1,3 @@
-
-
-
 SC-400: Module 1 Implement information protection with Microsoft Purview
 
 Module 1 Overview

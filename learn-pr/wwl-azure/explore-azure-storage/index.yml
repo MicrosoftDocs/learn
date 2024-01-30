@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/17/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: sap-on-azure
 title: Explore Azure for SAP storage
 summary: This module explores the use of Azure he storage component to design scalable, performant, and resilient SAP deployments in Azure.

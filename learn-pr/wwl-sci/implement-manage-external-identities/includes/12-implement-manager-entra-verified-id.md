@@ -1,11 +1,9 @@
-:::image type="content" source="../media/entra-verified-identity-f5ddd7af.png" alt-text="Screenshot of the Microsoft Entra security settings screen, with the Verifiable credentials selected.":::
+:::image type="content" source="../media/entra-verified-identity-d15c9bf7.png" alt-text="Screenshot of the Microsoft Entra ID security settings screen, with the Verifiable credentials selected.":::
 
 
-Microsoft Entra Verified ID is a preview feature. This content will continue to update as more capabilities are added, and the feature moves to general-availability. For more information you can also look here: [Configure your tenant for Microsoft Entra Verified ID](/azure/active-directory/verifiable-credentials/verifiable-credentials-configure-tenant).
+Microsoft Entra Verified ID is a preview feature. This content will continue to update as more capabilities are added, and the feature moves to general-availability. For more information you can also look here: [Configure your tenant for Microsoft Entra Verifiable Credentials](/azure/active-directory/verifiable-credentials/verifiable-credentials-configure-tenant).
 
-<a name='what-is-entra-verified-id'></a>
-
-### What is Microsoft Entra Verified ID?
+### What is Entra Verified ID?
 
 Microsoft Entra Verified ID safeguards your organization with an identity solution that's seamless and decentralized. The service allows you to issue and verify credentials. For issuers, Microsoft Entra ID provides a service that they can customize and use to issue their own verifiable credentials. For verifiers, the service provides a free REST API that makes it easy to request and accept verifiable credentials in your apps and services.
 
@@ -16,7 +14,7 @@ We use IDs in our daily lives. We have drivers licenses that we use as evidence 
 To deploy Microsoft Entra Verified ID, you will need:
 
  -  An Azure tenant with a subscription
- -  A Microsoft Entra ID P1 or P2 license
+ -  A Microsoft Entra ID premium license
  -  Logged in as the global administrator
  -  A configured Azure Key Vault instance
 

@@ -16,11 +16,11 @@ GitHub also reviews pull request attempts to merge changes into the main branch 
 
 ## Set up Dependabot alerts
 
-Dependabot alerts are enabled for public repositories by default. Repository administrators and owners can however, set up Dependabot alerts for private repositories and for some GitHub Enterprise Server repositories. Enabling these features grants GitHub permission to perform read-only analysis of those specific repositories.
+Dependabot alerts aren't enabled for public or private repositories by default. Repository administrators and owners can however, set up Dependabot alerts for public repositories, private repositories, and for some GitHub Enterprise Server repositories. Enabling these features grants GitHub permission to perform read-only analysis of those specific repositories.
 
 ### Set up Dependabot alerts for private repositories
 
-To set up Dependabot alerts for private repositories, you need to enable both the dependency graph and Dependabot alerts. Follow the steps below for each feature:
+To set up Dependabot alerts for public and private repositories, you need to enable both the dependency graph and Dependabot alerts. Follow the steps below for each feature:
 
 1. Sign in to your GitHub account and select your profile photo from the upper right.
 2. Select **Settings**, then select **Code security and analysis** under **Security** in the left-side menu.
@@ -46,7 +46,7 @@ GitHub Enterprise customers can also enable Dependabot alerts. If you're a GitHu
 
 For more information, see [Connect your enterprise account to GitHub Enterprise Cloud](https://docs.github.com/enterprise-server@3.1/admin/configuration/managing-connections-between-your-enterprise-accounts/connecting-your-enterprise-account-to-github-enterprise-cloud).
 
-## View Dependabot alerts 
+## View Dependabot alerts
 
 Dependabot alerts are displayed in the **Security** tab for the repository and in the repository's dependency graph. The alert includes a link to the affected file in the project, and information about a fixed version, if available. 
 

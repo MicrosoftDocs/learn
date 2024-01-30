@@ -4,11 +4,11 @@ title: Namespaces for Azure Kubernetes Service
 metadata:
   title: Namespaces for Azure Kubernetes Service
   description: "Namespaces for Azure Kubernetes Service"
-  ms.date: 10/09/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.service: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/6-kubernetes-namespaces.md)]

@@ -4,12 +4,11 @@ title: Summary
 metadata:
   title: Summary of learnings about Microsoft commercial marketplace
   description: Summary
-  ms.date: 4/21/2020
+  ms.date: 12/20/2023
   author: marleva
   ms.author: maevan
   manager: jasonh
-  ms.topic: interactive-tutorial
-  ms.service: marketplace
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

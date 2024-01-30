@@ -7,10 +7,9 @@ metadata:
   ms.date: 09/27/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.service: cognitive-search
   ms.custom:
-    - devx-track-python
 azureSandbox: false
 labModal: false
 durationInMinutes: 30

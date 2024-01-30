@@ -103,9 +103,13 @@ redirect_uri=http://localhost/myapp/permissions
 
 scope=
 
-     https://graph.microsoft.com/calendars.read
+    https://graph.microsoft.com/calendars.read
 
-     https://graph.microsoft.com/mail.send
+    https://graph.microsoft.com/mail.send
+
+
+
+
 
 ```
 

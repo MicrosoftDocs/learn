@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/12/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: active-directory
 title: Understand Microsoft Entra ID
 summary: This module explains Microsoft Entra ID. You'll compare Microsoft Entra ID to Active Directory DS, learn about Microsoft Entra ID P1 and P2, and explore Microsoft Entra Domain Services for managing domain-joined devices and apps in the cloud.
@@ -29,7 +29,7 @@ roles:
 - identity-access-admin
 products:
 - azure
-- azure-active-directory
+- entra-id
 - active-directory
 subjects:
 - identity-access

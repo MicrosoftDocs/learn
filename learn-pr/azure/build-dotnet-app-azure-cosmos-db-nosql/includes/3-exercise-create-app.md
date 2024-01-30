@@ -1,4 +1,4 @@
-As the first step to creating your project's application, you need to create a .NET project. Recall that the .NET project should use the **Microsoft.Azure.Cosmos** SDK to connect to the account you have already created. There are three key requirements at this time:
+As the first step to creating your project's application, you need to create a .NET project. Recall that the .NET project should use the **Microsoft.Azure.Cosmos** SDK to connect to the account you already created. There are three key requirements at this time:
 
 - Create a .NET project
 - Add a package reference to the SDK
@@ -27,7 +27,7 @@ The .NET CLI creates and manages .NET projects within a specified directory. Her
     dotnet add package Microsoft.Azure.Cosmos --version 3.*
     ```
 
-1. Build the .NET project to ensure you've correctly configured your project.
+1. Build the .NET project to ensure you correctly configured your project.
 
     ```dotnetcli
     dotnet build
@@ -74,11 +74,13 @@ Now, the .NET project should be built and ready for you to add your own custom c
     const string connectionString = "<your-azure-cosmos-db-connection-string>";
     ```
 
-    Assuming the name of the Azure Cosmos DB account is `nybncrsna76fo-cosmos-nosql` and the key is `Aj2OSQqWhXfFzkITIi4MIbocWAAoBCUWnSPzHlQbDYA3TiyZCJlk8A6R1l6WqD45BxAG5vrsyQ4SCXEkPS1pLh==`, you would configure the JSON object like this example:
-
-    ```csharp
-    const string connectionString = "AccountEndpoint=https://nybncrsna76fo-cosmos-nosql.documents.azure.com:443/;AccountKey=Aj2OSQqWhXfFzkITIi4MIbocWAAoBCUWnSPzHlQbDYA3TiyZCJlk8A6R1l6WqD45BxAG5vrsyQ4SCXEkPS1pLh==;";
-    ```
+    > [!TIP]
+    > Assuming the name of the Azure Cosmos DB account is `nybncrsna76fo-cosmos-nosql` and the key is `Aj2OSQqWhXfFzkITIi4MIbocWAAoBCUWnSPzHlQbDYA3TiyZCJlk8A6R1l6WqD45BxAG5vrsyQ4SCXEkPS1pLh==`, you would configure the connection string like this example:
+    >
+    > ```csharp
+    > const string connectionString = "AccountEndpoint=https://nybncrsna76fo-cosmos-nosql.documents.azure.com:443/;AccountKey=Aj2OSQqWhXfFzkITIi4MIbocWAAoBCUWnSPzHlQbDYA3TiyZCJlk8A6R1l6WqD45BxAG5vrsyQ4SCXEkPS1pLh==;";
+    > ```
+    >
 
 1. Print the connection string to the console.
 

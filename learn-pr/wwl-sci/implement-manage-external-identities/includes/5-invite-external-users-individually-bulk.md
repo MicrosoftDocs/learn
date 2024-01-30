@@ -13,8 +13,6 @@ After a guest user has been added to the directory in Microsoft Entra ID, an app
  -  Create a group to assign to the app and make the user an owner
  -  Configure the app for self-service and assign the group to the app
 
-<a name='how-to-bulk-invite-azure-ad-b2b-collaboration-users'></a>
-
 ## How to bulk invite Microsoft Entra B2B collaboration users
 
 If you use Microsoft Entra B2B collaboration to work with external partners, you can invite multiple guest users to your organization at the same time. Specifically, you do the following:
@@ -25,9 +23,9 @@ If you use Microsoft Entra B2B collaboration to work with external partners, you
 
 ### Understand the CSV template
 
-Download and fill in the bulk upload CSV template to help you successfully invite Microsoft Entra guest users in bulk. The CSV template you download might look like this example:
+Download and fill in the bulk upload CSV template to help you successfully invite Microsoft Entra ID guest users in bulk. The CSV template you download might look like this example:
 
-:::image type="content" source="../media/understand-template-4329aaff.png" alt-text="Screenshot of a common C S V file opened in spreadsheet format.":::
+:::image type="content" source="../media/understand-template-4329aaff.png" alt-text="Screenshot of a common CSV file opened in spreadsheet format.":::
 
 
 ### CSV template structure

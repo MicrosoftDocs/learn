@@ -1,9 +1,8 @@
 ---
-author: davidsmatlak
-ms.prod: learning-azure
+author: mumian
 ms.topic: include
 ms.date: 04/20/2022
-ms.author: davidsmatlak
+ms.author: jgao
 ---
 1. In the **Terminal** menu, select **New Terminal**. The terminal window usually opens in the lower half of your screen.
 

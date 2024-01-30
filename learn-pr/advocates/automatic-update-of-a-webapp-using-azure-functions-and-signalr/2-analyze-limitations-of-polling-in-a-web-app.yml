@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/31/2019
   author: craigshoemaker
   ms.author: cshoe
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Analyze the limitations of a polling-based web app
 durationInMinutes: 6
 content: |
