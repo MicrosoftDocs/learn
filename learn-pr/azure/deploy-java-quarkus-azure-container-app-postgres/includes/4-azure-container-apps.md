@@ -24,6 +24,6 @@ In the next exercise, you'll be introduced to the following concepts.
 * _Container app_: A group of containers (a pod) that's deployed and scales together. They share a single disk space and network.
 * _Revision_: An immutable snapshot of a container app. New revisions are created automatically and are valuable for HTTP traffic redirection strategies like A/B testing.
 
-![Screenshot that illustrates the Container Apps concepts.](../media/azure-container-apps-environment.png)
+![Screenshot that illustrates Container Apps concepts.](../media/azure-container-apps-environment.png)
 
-Let's see all these concepts in action by creating a Container App environment.
+You'll now create a Container App environment to see how these elements work.
