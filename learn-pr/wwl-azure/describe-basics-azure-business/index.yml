@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
-  ms.prod: azure
+  ms.service: azure
 title: Describe the basics of Azure for business
 summary: This module describes what the cloud is and what Microsoft Azure is, and how businesses can grow and transform with Azure.
 abstract: |

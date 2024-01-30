@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
-  ms.prod: azure
+  ms.service: azure
 durationInMinutes: 2
 content: |
   [!include[](includes/11-knowledge-check.md)]

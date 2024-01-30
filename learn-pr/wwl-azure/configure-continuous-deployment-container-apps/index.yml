@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
-  ms.prod: azure
+  ms.service: azure
 title: Configure continuous deployment for container apps
 summary: |
   This module explores deployment options for containerized apps. It reviews the features of Azure DevOps and examines automated deployments to Container Apps using Azure Pipelines.
