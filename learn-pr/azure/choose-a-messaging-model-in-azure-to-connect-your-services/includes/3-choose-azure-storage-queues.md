@@ -66,7 +66,7 @@ Having understood that the communication strategy for this architecture should b
 
 #### Use Service Bus topics if you:
 
-- Need all the features provided by Service Bus queues, and in addition implement a pub-sub pattern where messages can be routed to one of multiple subscriptions, each with its own independed receivers
+- Need all the features provided by Service Bus queues, and in addition implement a pub-sub pattern where messages can be routed to one of multiple subscriptions, each with its own independent receivers
 
 Queue storage isn't quite as feature rich, but if you don't need any of those features, it can be a simpler choice. In addition, it's the best solution if your app has any of the following requirements.
 
