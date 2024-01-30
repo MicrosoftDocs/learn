@@ -32275,6 +32275,51 @@
       "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/8-summary.md",
       "redirect_url": "/training/modules/manage-identities-microsoft-entra-id/9-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/set-up-cors-website-storage/index.yml",
+      "redirect_url": "/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/set-up-cors-website-storage/1-introduction.yml",
+      "redirect_url": "/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/set-up-cors-website-storage/2-determine-whether-you-need-cors-on-your-azure-storage-services.yml",
+      "redirect_url": "/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/set-up-cors-website-storage/5-enabling-cors-for-your-azure-storage-services-using-the-azure-cli.yml",
+      "redirect_url": "/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/set-up-cors-website-storage/6-exercise-enable-cors-for-your-azure-storage-services-using-the-azure-cli.yml",
+      "redirect_url": "/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/set-up-cors-website-storage/7-enabling-cors-for-your-azure-storage-services-using-powershell.yml",
+      "redirect_url": "/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/set-up-cors-website-storage/8-exercise-enable-cors-for-your-azure-storage-services-using-powershell.yml",
+      "redirect_url": "/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/set-up-cors-website-storage/9-knowledge-check.yml",
+      "redirect_url": "/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/set-up-cors-website-storage/10-summary.yml",
+      "redirect_url": "/azure/storage/",
+      "redirect_document_id": false
     }
   ]
 }
