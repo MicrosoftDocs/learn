@@ -18,7 +18,7 @@ In this exercise, you'll use profiles to create, manage and switch between VS Co
 
 1. Select "Create"
 
-"Observe how VS Code undergoes a reload. It gives the impression of a fresh installation, devoid of any extensions and displaying the default dark theme. If you made customizations to VS Code, rest assured, they remain intact. You can revert to your default profile whenever you wish."
+Observe how VS Code undergoes a reload. It gives the impression of a fresh installation, devoid of any extensions and displaying the default dark theme. If you made customizations to VS Code, rest assured, they remain intact. You can revert to your default profile whenever you wish."
 
 ## Configure the profile
 
@@ -93,7 +93,7 @@ The profile will be loaded into the VS Code sidebar allowing you to select which
 1. Select "Create Profile."
 1. Select "Create."
 
-VS Code imports the profile and applies it. You'll see the GitHub Dark Dimmed theme applied and the Sidebar positioned on the right-side of the editor instead of the default left-side position. Under extensions, you'll see the "Remote SSH" extension is installed as well as "Remote SSH: Editing Configuration Files" and "Remote Explorer." These other extensions are installed with the "Remote SSH" extension.
+VS Code imports the profile and applies it. You'll see the GitHub Dark Dimmed theme applied and the Sidebar positioned on the right-side of the editor instead of the default left-side position. Under extensions, you'll see the "Remote - SSH" extension is installed as well as "Remote - SSH: Editing Configuration Files" and "Remote Explorer." These other extensions are installed with the "Remote - SSH" extension.
 
 :::image type="content" source="../media/3-import-profile-preview.png" alt-text="Screenshot of VS Code with the custom profile applied.":::
 

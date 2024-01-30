@@ -17,7 +17,7 @@ In this exercise, you'll enable Settings Sync and explore how to manage your syn
 
 :::image type="content" source="../media/5-settings-sync-activity.png" alt-text="Screenshot of VS Code Settings Sync activity view.":::
 
-Another way to view the status of settings sync is to view the settings sync log.
+Another way to view the status of Settings Sync is to view the Settings Sync log.
 
 ## Make a change to your settings
 
@@ -35,7 +35,7 @@ Another way to view the status of settings sync is to view the settings sync log
 
 :::image type="content" source="../media/5-extensions-icon.png" alt-text="Screenshot of Activity Bar in VS Code with the Extension icon highlighted":::
 
-1. Search for and install the "Remote - Containers" extension.
+1. Search for and install the "Dev Containers" extension.
 
 ## Sync Settings
 
@@ -47,11 +47,11 @@ This command synchronizes your settings to the cloud. You can verify that your s
 
 :::image type="content" source="../media/5-sync-activity-updated.png" alt-text="Screenshot of Settings Sync activity VS Code with UI State and Extensions folders highlighted":::
 
-## Restore Settings on a new machine
+## Restore settings on a new machine
 
 In this section, you'll restore your settings on a new machine. For this exercise, we'll use Visual Studio Code for the Web (vscode.dev). vscode.dev is a free, zero-install VS Code experience running entirely in your browser, allowing you to quickly and safely browse source code repositories and make lightweight code changes. To learn more about vscode.dev, see [https://code.visualstudio.com/docs/editor/vscode-web](https://code.visualstudio.com/docs/editor/vscode-web).
 
-Since vscode.dev is a lightweight environment that you can use to quickly edit files in a browser. Not all extensions work in this environment.
+Since vscode.dev is a lightweight environment that you can use to quickly edit files in a browser, not all extensions work in this environment.
 
 1. Open a new browser tab and navigate to [https://vscode.dev](https://vscode.dev).
 1. Select on the profile icon and select **Backup and Sync Settings**.
@@ -61,4 +61,4 @@ Since vscode.dev is a lightweight environment that you can use to quickly edit f
 
 Your editor is now configured with the same settings as your local machine. You can verify that your settings are synced by opening the Settings Sync Activity view again. Notice that the profile that you created in the previous exercise is now available in the browser-based editor.
 
-In this exercise, you learned how to enable Settings Sync and restore your settings on a new machine. In the next exercise, you'll learn how to use Cloud Changes to ensure that any changes you make to a project are automatically synchronized to the cloud and available on any machine.
+In this exercise, you learned how to enable Settings Sync and restore your settings on a new machine. In the next exercise, you'll learn how to combine different remote environments for a customized remote development experience.

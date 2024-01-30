@@ -2,11 +2,11 @@ In addition to Profiles and Settings Sync, you can further customize your remote
 
 ## Combine Dev Containers with SSH
 
-A common model is to combine a remote machine with a docker container. Using a docker container on a remote machine is useful for standardizing a development environment across a team while still applying the power of remote compute.
+A common model is to combine a remote machine with a Docker container. Using a Docker container on a remote machine is useful for standardizing a development environment across a team while still applying the power of remote compute.
 
 To use Dev Containers with the Remote - SSH extension, you'll need to install the Remote - SSH extension on your local machine. You can do this by opening the Extensions view in VS Code and searching for "Remote - SSH."
 
-In addition, the remote machine will need to have Docker installed.
+In addition, the remote machine will need to have Docker installed. You can find instructions for installing Docker in the [VS Code documentation](https://code.visualstudio.com/docs/containers/overview).
 
 ### Connect to the SSH host
 
@@ -18,9 +18,9 @@ This command allows you to specify the IP address of the machine you wish to con
 
 :::image type="content" source="../media/6-ssh-targets.png" alt-text="Screenshot of VS Code SSH host list.":::
 
-### Open the project on the SSH in a Dev Container
+### Open the project on the remote machine in a Dev Container
 
-Once you connect to the remote machine, you can open a project with a dev container configuration by using the **Remote-Containers: Open Folder in Container** command in the Command Palette. There's nothing special about running a dev container on a remote machine. The process is the same as running a dev container locally.
+Once you connect to the remote machine, you can open a project with a dev container configuration by using the **Dev Containers: Open Folder in Container** command in the Command Palette. There's nothing special about running a dev container on a remote machine. The process is the same as running a dev container locally.
 
 :::image type="content" source="../media/6-dev-container-ssh.png" alt-text="Screenshot of remote indicator in Visual Studo Code showing a dev container running at a remote SSH address":::
 
