@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/28/2023
+  ms.date: 01/30/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/10-knowledge-check.md)]
+  [!include[](includes/11-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -47,17 +47,6 @@ quiz:
     - content: "Enables the verification of credentials issued by other organizations"
       isCorrect: true
       explanation: "Correct. Microsoft Entra Verified ID allows verifiers to use their own tenant to verify credentials issued by other organizations."
-  - content: "What is the purpose of Microsoft Entra multifactor authentication?"
-    choices:
-    - content: "To provide a single sign-on experience for users"
-      isCorrect: false
-      explanation: "Incorrect. Microsoft Entra multifactor authentication adds additional security over only using a password when a user signs in."
-    - content: "To replace passwords with less secure authentication methods"
-      isCorrect: false
-      explanation: "Incorrect. Passwords should be replaced with more secure authentication methods."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
-      isCorrect: true
-      explanation: "Correct. Microsoft Entra multifactor authentication adds additional security over only using a password when a user signs in."
   - content: "A verifier uses their own Microsoft Entra tenant to perform the verification of the credential that was issued by another organization. What is the purpose of using Microsoft Entra Verified ID service for verification?"
     choices:
     - content: "To issue verifiable credentials using your own tenant"
@@ -69,3 +58,14 @@ quiz:
     - content: "To unlock privileges to subjects that possess verified credential expert cards"
       isCorrect: true
       explanation: "Correct. The purpose of using Microsoft Entra Verified ID service for verification is to unlock privileges to subjects that possess verified credential expert cards."
+  - content: "A company is planning to deploy SSO with their applications in Microsoft Entra ID. They need to consider administrative roles, certificate renewal, communication, and licensing. Which of the following is true about the SAML application certificate?"
+    choices:
+    - content: "The certificate cannot be customized."
+      isCorrect: false
+      explanation: "Incorrect. The certificate can be customized for expiration date if needed."
+    - content: "The certificate is valid for one year by default."
+      isCorrect: false
+      explanation: "Incorrect. The certificate is valid for three years by default."
+    - content: "The certificate needs to be renewed prior to its expiration, and the expiration date can be customized in the Microsoft Entra admin center."
+      isCorrect: true
+      explanation: "Correct. It is important to have processes in place to renew certificates prior to their expiration, and to identify the right roles and email distribution lists involved with managing the lifecycle of the signing certificate. The certificate duration can be changed in the Microsoft Entra admin center."

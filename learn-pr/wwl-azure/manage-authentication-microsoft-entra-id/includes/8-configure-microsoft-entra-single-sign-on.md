@@ -54,3 +54,23 @@ From the sign-in perspective, applications with shared accounts aren't different
  -  For each combination of user set and credentials, create a security group in the cloud or on-premises based on your requirements.
  -  Reset the shared credentials. After the application is deployed in Microsoft Entra ID, individuals don't need the password of the shared account. Microsoft Entra ID stores the password and you should consider setting it to be long and complex.
  -  Configure automatic rollover of the password if the application supports it. That way, not even the administrator who did the initial setup knows the password of the shared account.
+
+## Single sign-on options
+
+There are several ways you can configure an application for SSO. Choosing an SSO method depends on how the application is configured for authentication.
+
+ -  Cloud applications can use OpenID Connect, OAuth, SAML, password-based, or linked for SSO. Single sign-on can also be disabled.
+ -  On-premises applications can use password-based, Integrated Windows Authentication, header-based, or linked for SSO. The on-premises choices work when applications are configured for Application Proxy.
+
+This flowchart can help you decide which SSO method is best for your situation.
+
+:::image type="content" source="../media/dec-single-sign-on-options-ea4bc1d9.png" alt-text="Screenshot showing several ways you can configure an application for single sign-on options.":::
+ The following SSO protocols are available to use:
+
+ -  **OpenID Connect and OAuth** \- Choose OpenID Connect and OAuth 2.0 if the application you're connecting to supports it.
+ -  **SAML** \- Choose SAML whenever possible for existing applications that don't use OpenID Connect or OAuth.
+ -  **Password-based** \- Choose password-based when the application has an HTML sign-in page. Password-based SSO is also known as password vaulting. Password-based SSO enables you to manage user access and passwords to web applications that don't support identity federation. It's also useful where several users need to share a single account, such as to your organization's social media app accounts. Password-based SSO supports applications that require multiple sign-in fields for applications that require more than just username and password fields to sign in. You can customize the labels of the username and password fields your users see on My Apps when they enter their credentials.
+ -  **Linked** \- Choose linked when the application is configured for SSO in another identity provider service. The linked option lets you configure the target location when a user selects the application in your organization's end user portals. You can add a link to a custom web application that currently uses federation, such as Microsoft Entra Domain Federation Services. You can also add links to specific web pages that you want to appear on your user's access panels and to an app that doesn't require authentication. The Linked option doesn't provide sign-on functionality through Microsoft Entra credentials.
+ -  **Disabled** \- Choose disabled SSO when the application isn't ready to be configured for SSO.
+ -  **Integrated Windows Authentication (IWA)** \- Choose IWA single sign-on for applications that use IWA, or for claims-aware applications. For more information, see Kerberos Constrained Delegation for single sign-on to your applications with Application Proxy.
+ -  **Header-based** \- Choose header-based single sign-on when the application uses headers for authentication.

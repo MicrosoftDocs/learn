@@ -101,6 +101,10 @@ OATH hardware tokens are supported as part of a public preview.
 
 After you acquire tokens, you need to upload them in a comma-separated values (CSV) file format. Include the **User Principal Name (UPN)**, **serial number**, **secret key**, **time interval**, **manufacturer**, and **model**.
 
+`CSV`
+
+`upn,serial number,secret key,time interval,manufacturer,model Helga@contoso.com,1234567,1234567abcdef1234567abcdef,60,Contoso,HardwareKey`
+
 > [!NOTE]
 > Be sure to include the header row in your CSV file.
 
