@@ -2,7 +2,24 @@ In this unit, you create an Azure resource group that contains the resources for
 
 ## Prepare the working environment
 
-You need to set up some environment variables:
+You need to set up some environment variables. Here are some notes about the variables you'll create:
+
+| Variable | Description |
+|-|-|
+| `AZ_PROJECT` | The name of the project. To keep this value unique, we recommend that you use `AZ_PROJECT_<your initials>`. |
+| `AZ_RESOURCE_GROUP` | The name of the resource group that holds the other resources. |
+| `AZ_LOCATION` | The Azure region. We recommend that you use a region that's close to where you live. To see the list of available regions, enter `az account list-locations` at a command prompt. |
+| `AZ_CONTAINERAPP` | The name of the Azure Container Apps instance that holds the containers. |
+| `AZ_CONTAINERAPP_ENV` | The name of the Azure Container Apps environment. |
+| `AZ_POSTGRES_SERVER_NAME` | The name of your PostgreSQL server. Nonalphanumeric characters aren't allowed: -, _, !, $, #, %. The name should be unique across Azure. Be sure to use a unique identifier. |
+| `AZ_POSTGRES_DB_NAME` | The PostgreSQL database name. The default name of the PostgreSQL database is `postgres`. |
+| `AZ_POSTGRES_USERNAME` | The default admin user name for your PostgreSQL database server. |
+| `AZ_POSTGRES_PASSWORD` | The default password for your PostgreSQL database server. |
+
+> [!NOTE]
+> You can name your Azure resources in any way that you want, but we recommend that you review [Abbreviation examples for Azure resources](/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations). This article provides example abbreviations for many Azure resources (for example, `rg` for resource groups and `ca` for container apps).
+
+Use the following commands to set up the variables. Be sure to modify the values as described in the preceding table.
 
 ```bash
 export AZ_PROJECT="azure-deploy-quarkus"
@@ -16,22 +33,7 @@ export AZ_POSTGRES_PASSWORD="postgres"
 export AZ_POSTGRES_SERVER_NAME="psql-${AZ_PROJECT}"
 ```
 
-> [!NOTE]
-> You can name your Azure resources the way you want, but we recommend [this documentation](/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) that gives you abbreviations for many Azure resources (for example, `rg` for Resource Groups or `ca` for Azure Container Apps).
-
-Make sure to replace the placeholders when needed. These environment variables are used throughout this module.
-
-| Variable | Description |
-|-|-|
-| `AZ_PROJECT` | The name of the project. To keep this value unique, we suggest using *AZ_PROJECT_\[*your initials*\]*. |
-| `AZ_RESOURCE_GROUP` | The name of the group holding all the other resources |
-| `AZ_LOCATION` | The Azure region you use. We recommend that you use a region close to where you live. To see the full list of available regions, enter `az account list-locations` |
-| `AZ_CONTAINERAPP` | The name of the Azure Container Apps holding all the containers |
-| `AZ_CONTAINERAPP_ENV` | The name of the Azure Container Apps environment |
-| `AZ_POSTGRES_SERVER_NAME` | The name of your PostgreSQL server (nonalphanumeric characters aren't allowed (-, _, !, $, #, %)). It **should be unique across Azure make sure to use a unique-identifier** |
-| `AZ_POSTGRES_DB_NAME` | The name of the default PostgreSQL database is `postgres` |
-| `AZ_POSTGRES_USERNAME` | The default username of your PostgreSQL database server |
-| `AZ_POSTGRES_PASSWORD` | The default password of your PostgreSQL database server |
+These environment variables are used throughout the rest of this module.
 
 Next, create a resource group:
 
