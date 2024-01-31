@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-configuration-management-hdinsight-aks.3-excercise-create-hdinsight-on-aks-cluster  
+uid: learn.intro-configuration-management-hdinsight-aks.3-exercise-create-hdinsight-on-aks-cluster  
 title: Exercise - Create HDInsight on AKS cluster
 metadata:
   unitType: learning-content  
@@ -11,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-excercise-create-hdinsight-on-aks-cluster.md)]
+  [!include[](includes/3-exercise-create-hdinsight-on-aks-cluster.md)]
