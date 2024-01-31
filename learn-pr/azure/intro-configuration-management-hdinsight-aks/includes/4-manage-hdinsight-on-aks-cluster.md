@@ -33,8 +33,8 @@ You can view the cluster details in the "Overview" blade of your cluster. It pro
 
 You can check and modify the number of worker nodes for your cluster using "Cluster size" blade in the Azure portal. There are two options to scale up/down your cluster:
 
-1. Manual scale
-2. Auto scale
+- Manual scale
+- Auto scale
   
 :::image type="content" source="../media/worker-nodes.png" alt-text="Screenshot shows check and modify the number of worker nodes." lightbox="../media/worker-nodes.png":::
 
@@ -59,8 +59,8 @@ Secure shell (SSH) allows you to submit jobs and queries to your cluster directl
 HDInsight on AKS allows you to tweak the configuration properties to improve performance of your cluster with certain settings. For example, usage or memory settings. In the Azure portal, use "Configuration management" blade of your cluster to manage the configurations.
 You can do the following actions:
 
-1. Update the existing service configurations or add new configurations.
-2. Export the service configurations using RestAPI.
+- Update the existing service configurations or add new configurations.
+- Export the service configurations using RestAPI.
 
 Learn how to manage the [cluster configuration](/azure/hdinsight-aks/service-configuration).
 
