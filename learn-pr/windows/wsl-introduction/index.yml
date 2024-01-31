@@ -8,8 +8,8 @@ metadata:
   author: mattwojo
   ms.author: mattwoj
   ms.topic: module
-  ms.prod: dev-environment
-  ms.technology: windows-subsystem-for-linux
+  ms.service: dev-environment
+  ms.subservice: windows-subsystem-for-linux
   manager: jken
 title: Training – Introduction to Windows Subsystem for Linux (WSL)
 summary: |
