@@ -35,25 +35,22 @@ Other Azure CLI Commands for DPS are available in the following categories:
 | [linked-hub](/cli/azure/iot/dps/linked-hub?view=azure-cli-latest&preserve-view=true) | Manage linked IoT Hubs in an Azure IoT Hub Device Provisioning Service instance. |
 | [policy](/cli/azure/iot/dps/policy?view=azure-cli-latest&preserve-view=true) | Manage shared access policies for an Azure IoT Hub Device Provisioning Service instance. |
 
-## Using the DPS commands
+## Use the DPS commands
 
-DPS commands have required and optional parameters. The DPS Azure CLI create and delete service commands are listed as examples. See documentation or use the `--help` command parameter for parameter details.
-
-> [!NOTE]
-> To view usage information for any Azure CLI command, enter the command followed by `--help`.
+DPS commands have required and optional arguments. The DPS Azure CLI create and delete service commands are listed as examples. See documentation or use the `--help` command argument for argument details.
 
 ### DPS create command
 
-Use the `az iot dps create` command to create an Azure IoT Hub Device Provisioning Service.
+Use the `az iot dps create` command to create an Azure IoT Hub Device Provisioning Service instance.
 
 `--name` and `--resource-group` arguments are required. Required and frequently used optional arguments are listed in this table.
 
 :::row:::
   :::column:::
-    **command arguments**
+    **Command arguments**
   :::column-end:::
   :::column:::
-    **description**
+    **Description**
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -99,17 +96,17 @@ Use the `az iot dps create` command to create an Azure IoT Hub Device Provisioni
   :::column-end:::
 :::row-end:::
 
-For example, the following command can be used to create an Azure IoT Hub device provisioning service with the standard pricing tier S1, in the region of the resource group:
+For example, the following command can be used to create an Azure IoT Hub Device Provisioning Service with the standard pricing tier S1, in the region of the resource group:
 
 `az iot dps create --name MyDps --resource-group MyResourceGroup`
 
-Or, to create an Azure IoT Hub device provisioning service with the standard pricing tier S1, in the `eastus` region, use the following command:
+Or, to create an Azure IoT Hub Device Provisioning Service with the standard pricing tier S1, in the `eastus` region, use the following command:
 
 `az iot dps create --name MyDps --resource-group MyResourceGroup --location eastus`
 
 ### Delete command
 
-The `az iot dps delete` command can be used to delete an Azure IoT Hub device provisioning service.
+The `az iot dps delete` command can be used to delete an Azure IoT Hub Device Provisioning Service instance.
 
 `--name` and `--resource-group` arguments are required. Required and frequently used optional arguments are listed in this table.
 
@@ -117,10 +114,10 @@ This command takes the following arguments:
 
 :::row:::
   :::column:::
-    **command arguments**
+    **Command arguments**
   :::column-end:::
   :::column:::
-    **description**
+    **Description**
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -156,6 +153,6 @@ This command takes the following arguments:
   :::column-end:::
 :::row-end:::
 
-For example, the following command can be used to delete an Azure IoT Hub device provisioning service named `MyDps`:
+For example, the following command can be used to delete an Azure IoT Hub Device Provisioning Service named `MyDps`:
 
 `az iot dps delete --name MyDps --resource-group MyResourceGroup`
