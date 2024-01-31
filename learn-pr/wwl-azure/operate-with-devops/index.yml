@@ -10,7 +10,7 @@ metadata:
   ms.prod: azure
   ms.service: azure-devops
 title: Operate with DevOps
-summary: This module introduces...
+summary: Achieve operational excellence and enhance developer experience in your organization through DevOps. Your operational and development practices will improve by implementing shift-right testing, observability through performance and security monitoring, Site Reliability Engineering and platform engineering. 
 abstract: |
   Upon completion of this module, you will be able to:
   *   Explore the concepts of operational excellence
