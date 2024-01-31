@@ -9,4 +9,4 @@ Now it's your opportunity to work with Apache Spark in Microsoft Fabric. In this
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-fabric-spark?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2259707)
