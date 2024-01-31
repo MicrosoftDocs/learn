@@ -41,9 +41,9 @@ You can opt for “use advanced configuration” in case you want to customize a
    :::image type="content" source="../media/select-cluster-type.png" alt-text="Screenshot shows select cluster type." lightbox="../media/select-cluster-type.png":::
  
 
-   1. Virtual Machine SKU size is prefilled with the least costing recommended SKU. In the absence of any recommended SKU, it is prefilled with the SKU with the least vCores and maximum quota available at the time of cluster creation. The cluster would be created with a default constant number of five nodes. Flink and Trino clusters would have two head nodes while Spark clusters would have three head nodes. 
+   - Virtual Machine SKU size is prefilled with the least costing recommended SKU. In the absence of any recommended SKU, it is prefilled with the SKU with the least vCores and maximum quota available at the time of cluster creation. The cluster would be created with a default constant number of five nodes. Flink and Trino clusters would have two head nodes while Spark clusters would have three head nodes. 
   
-   1. The user assigned managed identity and storage account will be auto created in the managed resource group.  
+   - The user assigned managed identity and storage account will be auto created in the managed resource group.  
 
 1. Click “Review + create” to review the configurations of the cluster. Once you click Create, “The Deployment is in progress” page is displayed while the cluster is being created.  
 
