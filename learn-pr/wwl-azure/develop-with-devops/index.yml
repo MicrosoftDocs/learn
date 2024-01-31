@@ -10,7 +10,7 @@ metadata:
   ms.prod: azure
   ms.service: azure-devops
 title: Develop with DevOps
-summary: This module introduces...
+summary: Streamline updates to your software development projects by applying version control with Git and GitHub. Your software lifecycle will improve through the implementation of continuous integration, shift-left testing, and shift-left security.
 abstract: |
   Upon completion of this module, you will be able to:
   *   Define source control and version control
