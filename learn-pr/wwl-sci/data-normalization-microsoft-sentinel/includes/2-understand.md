@@ -51,7 +51,7 @@ ASIM uses the following terms:
 
 To view ASIM functions in your Microsoft Sentinel environment.
 
-- Navigate to your Microsoft Sentinel workspace in Azure portal
+- Navigate to your Microsoft Sentinel workspace in the Azure portal
 - Select Logs from the left navigation
 - Expand the schema and filter pane on the left side (if needed use the ellipsis to reveal all the tools)
 - Select Functions
