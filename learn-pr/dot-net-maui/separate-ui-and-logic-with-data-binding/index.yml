@@ -8,7 +8,7 @@ metadata:
   ms.author: adegeo
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet-maui
-title: reate a UI that uses data binding in .NET MAUI.
+title: Create a UI that uses data binding in .NET MAUI.
 summary: |
   Create a UI with data binding. Your UI automatically updates based on the latest data, while the data updates in response to changes in the UI.
 abstract: |

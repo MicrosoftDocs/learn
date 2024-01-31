@@ -21,16 +21,16 @@ quiz:
       content: "You never have to write code related to your UI again."
       explanation: "While you could design a code-less UI, you don't have to, and it's not the most important feature of data binding. Data binding is beneficial because it provides a system where you have real-time updates to the UI when the underlying data changes."
     - isCorrect: true
-      content: "Helps separate the app logic from the UI, simplifying your code-behind."
-      explanation: "The benefit of data binding your UI is that you can easily redesign your UI and not worry about breaking things. Also, data binding handles a lot for you, such as updating specific parts of your UI when the data changes or updating the data when the user interacts with the UI."
-  - content: "In an app that retrieves the latest weather, a label is on the UI that represents the temperature is bound to the data object. When the user presses the \"Get Weather\" button, what would a data-bound app do to update the UI?"
+      content: "The UI is automatically kept in sync with the data"
+      explanation: "One benefit of adding data binding your UI is it keeps the UI elements in sync with the properties of the data object. It also helps seperate app logic from app presentation."
+  - content: "In an app that retrieves the latest weather, a label control that represents the temperature is bound to the data object. When the user presses the \"Get Weather\" button, triggering the `Clicked` event, what would a data-bound app do to update the UI?"
     choices:
-    - content: "The button's `Clicked` event handler can be registered with the code-behind. From the event handler, invoke the weather service and update the weather data object with the weather information."
-      isCorrect: true
-      explanation: "Since the button is only talking to the data object and not the label, it isn't tightly coupled to the label. The label automatically updates its text when the data object is changed."
-    - content: "The button's `Clicked` event handler can be registered with the code-behind. From the event handler, do nothing. The temperature label is data bound so it should update automatically."
-      isCorrect: false
-      explanation: "Even though the text of the label is bound to the data object, something still needs to update the data object with the latest weather information. so that the data object is updated."
-    - content: "The button's `Clicked` event handler can be registered with the code-behind. From the event handler, invoke the weather service and then set the temperature label's text."
-      isCorrect: false
-      explanation: "In this case, the button is tightly coupled to the label, and directly updating the label circumvents the data binding. If the label was changed to a different control, the code-behind would break. Decoupling controls from logic avoids problems like this."
+    - isCorrect: true
+      content: "From the event handler, invoke the weather service and update the weather data object with the latest information."
+      explanation: "Since the code-behind is only \"talking\" to the data object and not the label, it isn't tightly coupled to the label. The label automatically updates its text when the bound data object is changed."
+    - isCorrect: false
+      content: "From the event handler, do nothing. The temperature label is data bound so it should update automatically."
+      explanation: "Even though the text of the label is bound to the data object, something still needs to retrieve the latest data and put it into the data object. Otherwise, if the data object doesn't update, neither does the UI."
+    - isCorrect: false
+      content: "From the event handler, invoke the weather service and then set the temperature label's text."
+      explanation: "In this case, the code-behind is tightly coupled to the label, and directly updating the label circumvents the data binding. If the label was changed to a different control, the code-behind could break. Decoupling controls from the code-behind avoids problems like this."
