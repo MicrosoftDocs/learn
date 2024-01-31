@@ -3,8 +3,8 @@ In this exercise, you will learn how to enable Log Analytics to monitor & collec
 To integrate Log Analytics with HDInsight on AKS cluster, it must be configured at the cluster pool level first. You can enable the integration during cluster pool creation or post the creation. Once the integration at cluster pool is enabled, it isn't possible to disable the integration. However, you can disable the log analytics for individual clusters, which are part of the same pool.
 There are 2 ways you can enable Log Analytics for your cluster once you have configured it at cluster pool level:
 
-1.	Enable Log Analytics during **cluster** creation
-2.	Enable Log Analytics post **cluster** creation
+-	Enable Log Analytics during **cluster** creation
+-	Enable Log Analytics post **cluster** creation
 
 ## Prerequisites
 
