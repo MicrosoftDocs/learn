@@ -3,11 +3,11 @@ uid: learn.wwl.manage-authentication-microsoft-entra-id
 metadata:
   title: Manage authentication by using Microsoft Entra ID
   description: "This module is designed to provide administrators with the knowledge and skills needed to manage authentication effectively using Microsoft Entra ID, ensuring secure access to resources and enhancing user experience."
-  ms.date: 12/28/2023
+  ms.date: 01/30/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
-  ms.prod: azure
+  ms.service: azure
 title: Manage authentication by using Microsoft Entra ID
 summary: This module is designed to provide administrators with the knowledge and skills needed to manage authentication effectively using Microsoft Entra ID, ensuring secure access to resources and enhancing user experience.
 abstract: |
@@ -31,9 +31,10 @@ subjects:
 - cloud-security
 units:
 - learn.wwl.manage-authentication-microsoft-entra-id.introduction
+- learn.wwl.manage-authentication-microsoft-entra-id.what-is-microsoft-entra-authentication
+- learn.wwl.manage-authentication-microsoft-entra-id.configure-microsoft-entra-multifactor-authentication-settings
 - learn.wwl.manage-authentication-microsoft-entra-id.microsoft-entra-verified-id
 - learn.wwl.manage-authentication-microsoft-entra-id.configure-microsoft-entra-verified-id
-- learn.wwl.manage-authentication-microsoft-entra-id.configure-microsoft-entra-multifactor-authentication-settings
 - learn.wwl.manage-authentication-microsoft-entra-id.passwordless-authentication
 - learn.wwl.manage-authentication-microsoft-entra-id.enforce-premises-microsoft-entra-password-protection
 - learn.wwl.manage-authentication-microsoft-entra-id.configure-microsoft-entra-single-sign-on
