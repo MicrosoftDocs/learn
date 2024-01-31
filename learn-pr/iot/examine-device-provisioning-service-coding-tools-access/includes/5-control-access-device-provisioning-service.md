@@ -113,17 +113,17 @@ The following example shows how the shared access signature is then used to auth
 curl -L -i -X PUT -H 'Content-Type: application/json' -H 'Content-Encoding:  utf-8' -H 'Authorization: [token]' -d '{"registrationId": "[registration_id]"}' https://global.azure-devices-provisioning.net/[ID_Scope]/registrations/[registration_id]/register?api-version=2021-06-01
 ```
 
-If using a symmetric key-based enrollment group, you'll need to first generate a device symmetric key using the enrollment group key. Use the enrollment group primary or secondary key to compute an HMAC-SHA256 of the registration ID for the device. The result is then converted into Base64 format to obtain the derived device key. To avoid including the group master key in your device code, the process of deriving device key should be done off the device.
+If using a symmetric key-based enrollment group, you need to first generate a device symmetric key using the enrollment group key. Use the enrollment group primary or secondary key to compute an HMAC-SHA256 of the registration ID for the device. The result is then converted into Base64 format to obtain the derived device key. To avoid including the group master key in your device code, the process of deriving device key should be done off the device.
 
 ### Certificate-based authentication
 
-If you've set up an individual enrollment or enrollment group for X.509 certificated-based authentication, the device will need to use its issued X.509 certificate to attest to Device API. Refer to the following articles on how to set up the enrollment and generate the device certificate.
+If you've set up an individual enrollment or enrollment group for X.509 certificated-based authentication, the device needs to use its issued X.509 certificate to attest to Device API. Refer to the following articles on how to set up the enrollment and generate the device certificate.
 
 * Quickstart - [Provision simulated X.509 device to Azure IoT Hub](/azure/iot-dps/quick-create-simulated-device-x509?tabs=windows&pivots=programming-language-csharp)
 
 * Quickstart - [Enroll X.509 devices to Azure Device Provisioning Service](/azure/iot-dps/quick-enroll-device-x509?pivots=programming-language-csharp)
 
-Once the enrollment has been set up and the device certificate issued, the following example demonstrates how to authenticate to Device API with the device's X.509 certificate.
+Once the enrollment is set up and the device certificate issued, the following example demonstrates how to authenticate to Device API with the device's X.509 certificate.
 
 ```bash
 curl -L -i -X PUT -cert ./[device_cert].pem -key ./[device_cert_private_key].pem -H 'Content-Type: application/json' -H 'Content-Encoding:  utf-8' -d '{"registrationId": "[registration_id]"}' https://global.azure-devices-provisioning.net/[ID_Scope]/registrations/[registration_id]/register?api-version=2021-06-01

@@ -2,7 +2,7 @@
 uid: learn.wwl.examine-device-provisioning-service-coding-tools-access
 metadata:
   title: Examine Device Provisioning Service coding tools and access
-  description: "This module introduces you to the Device Provisioning Service (DPS) SDKs, Azure CLI support for DPS, and how to control access to the service."
+  description: "This module introduces you to the Azure IoT Hub Device Provisioning Service (DPS) SDKs, Azure CLI support for DPS, and how to control access to the service."
   ms.date: 01/08/2024
   author: kgremban
   ms.author: kgremban
@@ -10,7 +10,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.service: iot-hub
 title: Examine Device Provisioning Service coding tools and access
-summary: This module introduces you to the Device Provisioning Service (DPS) SDKs, Azure CLI support for DPS, PowerShell commands for managing the DPS service, and how to control access to the service.
+summary: This module introduces you to the Azure IoT Hub Device Provisioning Service (DPS) SDKs, Azure CLI support for DPS, PowerShell commands for managing the DPS service, and how to control access to the service.
 abstract: |
   After you complete this module, you will be able to:
   - Describe the Azure CLI support for the Device Provisioning Service

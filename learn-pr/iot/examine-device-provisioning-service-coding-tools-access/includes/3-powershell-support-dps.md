@@ -17,7 +17,7 @@ You can use the following [Az.DeviceProvisioningServices](/powershell/module/az.
 | New-AzIoTDeviceProvisioningService | Create an Azure IoT Hub device provisioning service. |
 | New-AzIoTDeviceProvisioningServiceCertificateVerificationCode | Generate a verification code for an Azure IoT Hub Device Provisioning Service certificate. |
 | Remove-AzIoTDeviceProvisioningService | Delete an Azure IoT Hub device provisioning service. |
-| Remove-AzIoTDeviceProvisioningServiceAccessPolicy | Delete a shared access policies in an Azure IoT Hub device provisioning service. |
+| Remove-AzIoTDeviceProvisioningServiceAccessPolicy | Delete a shared access policy in an Azure IoT Hub device provisioning service. |
 | Remove-AzIoTDeviceProvisioningServiceCertificate | Delete an Azure IoT Hub Device Provisioning Service certificate. |
 | Remove-AzIoTDeviceProvisioningServiceEnrollment | Delete a device enrollment record. |
 | Remove-AzIoTDeviceProvisioningServiceEnrollmentGroup | Delete a device enrollment group. |
