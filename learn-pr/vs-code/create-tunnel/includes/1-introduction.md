@@ -10,9 +10,9 @@ Your company has hired their first workers to work remotely. It’s important th
 
 By the end of this module, you will be able to: 
 
-- Explain tunneling and the features of VS Code Remote Tunnel extension. 
+- Explain tunneling and the features of VS Code Remote - Tunnels extension. 
 - Use the VS Code Tunnel extension to tunnel into a remote host. 
-- Configure remote tunnel access via VS Code UI and CLI. 
+- Configure remote tunnel access via VS Code UI and code CLI. 
 
 ## What is the main objective? 
 

@@ -1,6 +1,6 @@
-In this module, we’ve learned some important information about the VS Code Remote-Tunnels extension.   
+In this module, we’ve learned some important information about the VS Code Remote - Tunnels extension.   
 
-Firstly, it lets you connect to a remote machine, like a desktop PC or virtual machine (VM), via a secure tunnel.  Next, it eliminates the need for source code to be on your VS Code client machine since the extension runs commands and other extensions directly on the remote machine. Lastly, we covered how to configure and use the extension by using the VS Code UI as well as from the CLI. 
+Firstly, it lets you connect to a remote machine, like a desktop PC or virtual machine (VM), via a secure tunnel.  Next, it eliminates the need for source code to be on your VS Code client machine since the extension runs commands and other extensions directly on the remote machine. Lastly, we covered how to configure and use the extension by using the VS Code UI as well as the code CLI.
 
 For continued learning, below are a few topics/resources worth exploring that relate to the VS Code Remote - Tunnels extension:  
 
