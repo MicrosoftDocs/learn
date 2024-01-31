@@ -10,7 +10,7 @@ metadata:
   ms.prod: azure
   ms.service: azure-devops
 title: Plan with DevOps
-summary: This module introduces...
+summary: Plan your software development projects agilely using Git Hub Projects boards. You will facilitate collaboration, shared responsibility, continuous learning, and optimization through version control, continuous integration and continuous testing, and Infrastructure as Code.
 abstract: |
   Upon completion of this module, you will be able to:
   *   Describe the components of and the path to a DevOps culture
