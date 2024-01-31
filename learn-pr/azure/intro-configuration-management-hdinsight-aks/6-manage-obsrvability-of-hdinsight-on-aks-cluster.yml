@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-configuration-management-hdinsight-aks.6-manage-obsrvability-of-hdinsight-on-aks-cluster 
+uid: learn.intro-configuration-management-hdinsight-aks.6-manage-observability-of-hdinsight-on-aks-cluster 
 title: Manage observability of HDInsight on AKS cluster
 metadata:
   unitType: learning-content  
@@ -11,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-manage-obsrvability-of-hdinsight-on-aks-cluster.md)]
+  [!include[](includes/6-manage-observability-of-hdinsight-on-aks-cluster.md)]
