@@ -14,7 +14,7 @@ ASIM provides a seamless experience for handling various sources in uniform, nor
 
 - **Support for your custom sources**, in built-in analytics
 
-- **Ease of use**. After an analyst learns ASIM, writing queries is much simpler as the field names are always the same.
+- **Ease of use**. After an analyst learns ASIM, writing queries is simpler as the field names are always the same.
 
 ## ASIM and the Open Source Security Events Metadata
 
