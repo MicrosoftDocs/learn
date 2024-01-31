@@ -76,11 +76,11 @@ You'd create the CNAME record in the *wideworldimports* zone with the following 
 
 If you exposed a web function, you'd create a CNAME record that resolves to the Azure function.
 
-## Configure private DNS zone
+## Configure a private DNS zone
 
-To provide name resolution for virtual machines (VMs) within a virtual network and between virtual networks, create a private DNS zone.
+Another type of DNS zone that you can configure and host in Azure is a private DNS zone. Private DNS zones are not visible on the Internet, and don't require that you use a domain registrar. You can use private DNS zones to assign DNS names to virtual machines (VMs) in your Azure virtual networks.
 
-### Step 1: Create private DNS zone
+### Step 1: Create a private DNS zone
 
 In the Azure portal, search for *private DNS zones*. To create the private zone, you need enter a resource group and the name of the zone. For example, the name might be something like private.wideworldimports.com.
 
