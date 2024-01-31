@@ -27,7 +27,7 @@ For this exercise, *create LA workspace - mycontosoLA*
   
     :::image type="content" source="../media/select-your-cluster-pool.png" alt-text="Screenshot shows select your cluster pool." lightbox="../media/select-your-cluster-pool.png":::
   
-    :::image type="content" source="../media/show-cluster-pool.png" alt-text="Screenshot show cluster pool." lightbox="../media/show-cluster-pool.png":::
+    :::image type="content" source="../media/show-cluster-pool.png" alt-text="Screenshot shows cluster pool." lightbox="../media/show-cluster-pool.png":::
 
 1.	Navigate to the "Monitor settings" blade on the left side menu and click on "Configure" to enable Log Analytics.
 
@@ -50,7 +50,7 @@ Now, LA is configured at the cluster pool. Let’s proceed to enable it for the 
 
 1.	Navigate to the "Monitor settings" blade, select Enable Log Analytics. Choose one or more types of logs you would like to collect and click Save.
 
-    :::image type="content" source="../media/navigate-monitor-setting.png" alt-text="Screenshot shows navigation to the **Monitor settings** blade." lightbox="../media/navigate-monitor-setting.png":::
+    :::image type="content" source="../media/navigate-monitor-setting.png" alt-text="Screenshot shows navigation to the Monitor settings blade." lightbox="../media/navigate-monitor-setting.png":::
   
     :::image type="content" source="../media/monitor-settings.png" alt-text="Screenshot shows Navigate to the Monitor settings." lightbox="../media/monitor-settings.png":::
    
@@ -65,7 +65,7 @@ Now, LA is configured at the cluster pool. Let’s proceed to enable it for the 
 
     :::image type="content" source="../media/query-templates.png" alt-text="Screenshot shows list of commonly used query templates." lightbox="../media/query-templates.png":::
   
-    :::image type="content" source="../media/commonly-used-query.png" alt-text="Screenshot shows list of commonly used query." lightbox="../media/commonly-used-query.png":::
+    :::image type="content" source="../media/commonly-used-query.png" alt-text="Screenshot shows list of commonly used queries." lightbox="../media/commonly-used-query.png":::
  
 
   Example 
