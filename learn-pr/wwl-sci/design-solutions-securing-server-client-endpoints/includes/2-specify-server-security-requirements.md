@@ -275,6 +275,12 @@ For most scenarios, the Microsoft base VM templates combined with the Azure Auto
 
 **Responsibility**: Customer
 
+### 8.2: Pre-scan files to be uploaded to non-compute Azure resources
+
+**Guidance**: Pre-scan any files being uploaded to non-compute Azure resources, such as App Service, Data Lake Storage, Blob Storage, etc. Use Azure Defender for Storage to detect malware uploaded to storage accounts.
+
+**Responsibility**: Customer
+
 ### 8.3: Ensure anti-malware software and signatures are updated
 
 **Guidance**: When deployed, Microsoft Antimalware for Azure will automatically install the latest signature, platform, and engine updates by default. Follow recommendations in Microsoft Defender for Cloud: "Compute & Apps" to ensure all endpoints are up to date with the latest signatures. The Windows OS can be further protected with additional security to limit the risk of virus or malware-based attacks with the Microsoft Defender Advanced Threat Protection service that integrates with Microsoft Defender for Cloud.
