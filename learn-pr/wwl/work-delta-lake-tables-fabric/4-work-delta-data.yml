@@ -6,7 +6,7 @@ metadata:
   description: "Work with delta tables in Spark"
   ms.date: 12/26/2023
   author: wwlpublish
-  ms.author: shlindsay
+  ms.author: anrudduc
   ms.topic: unit
   ms.custom:
   - build-2023
