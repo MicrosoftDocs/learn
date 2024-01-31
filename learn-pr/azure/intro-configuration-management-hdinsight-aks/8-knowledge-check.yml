@@ -1,0 +1,136 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-configuration-management-hdinsight-aks.8-knowledge-check  
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 01/29/2024 
+  author: sairamyeturi
+  ms.author: sairamyeturi 
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  questions:
+  - content: When creating an HDInsight on AKS cluster, what is the primary consideration for determining the size and scale based on workload requirements?
+    choices:
+      - content: Number of worker nodes
+        isCorrect: true
+        explanation: Correct. The size and scale are primarily determined by the number of worker nodes.
+      - content: Storage capacity
+        isCorrect: false
+        explanation: Incorrect. Storage capacity is not the primary consideration for size and scale.
+      - content: Network bandwidth
+        isCorrect: false
+        explanation: Incorrect. Network bandwidth is not the primary consideration for size and scale.
+      - content: CPU clock speed
+        isCorrect: false
+        explanation: Incorrect. CPU clock speed is not the primary consideration for size and scale.
+  - content: In HDInsight on AKS, what is the significance of enabling autoscaling for adjusting the number of worker nodes based on workload demands?
+    choices:
+      - content: Reducing storage costs
+        isCorrect: false
+        explanation: Incorrect. Autoscaling is not primarily for reducing storage costs.
+      - content: Automatically adjusting cluster size
+        isCorrect: true
+        explanation: Correct. Autoscaling adjusts the cluster size based on workload demands.
+      - content: Enhancing network security
+        isCorrect: false
+        explanation: Incorrect. Autoscaling is not primarily for enhancing network security.
+      - content: Improving query performance
+        isCorrect: false
+        explanation: Incorrect. Autoscaling is not primarily for improving query performance.
+  - content: What is the purpose of enabling Azure Log Analytics and Azure managed Prometheus in HDInsight on AKS?
+    choices:
+      - content: Real-time data streaming
+        isCorrect: false
+        explanation: Incorrect. Enabling Log Analytics and managed Prometheus is not primarily for real-time data streaming.
+      - content: Analyzing cluster metrics, logs, and diagnostics
+        isCorrect: true
+        explanation: Correct. Log Analytics and managed Prometheus are used for analyzing cluster metrics, logs, and diagnostics.
+      - content: Ensuring data encryption
+        isCorrect: false
+        explanation: Incorrect. Ensuring data encryption is not the primary purpose of Log Analytics and managed Prometheus.
+      - content: Optimizing storage performance
+        isCorrect: false
+        explanation: Incorrect. Optimizing storage performance is not the primary purpose of Log Analytics and managed Prometheus.
+  - content: How can alerts and notifications be configured in HDInsight on AKS for monitoring cluster health?
+    choices:
+      - content: Using Azure CLI commands
+        isCorrect: false
+        explanation: Incorrect. Alerts and notifications are not configured using Azure CLI commands.
+      - content: Through Azure Log Analytics only
+        isCorrect: false
+        explanation: Incorrect. Alerts and notifications can be configured in the Azure portal, not just through Log Analytics.
+      - content: Configuring in the Azure portal
+        isCorrect: true
+        explanation: Correct. Alerts and notifications are configured in the Azure portal.
+      - content: Writing custom scripts
+        isCorrect: false
+        explanation: Incorrect. Custom scripts are not the primary method for configuring alerts and notifications.
+
+  - content: How can resource utilization be monitored in HDInsight on AKS, and what action can be taken based on the monitoring results?
+    choices:
+      - content: Using Azure portal only; manually adjusting cluster size
+        isCorrect: false
+        explanation: Incorrect. Resource utilization is monitored using Metrics and monitoring, and adjusting cluster size can be automated.
+      - content: Utilizing Metrics and monitoring in HDInsight on AKS
+        isCorrect: true
+        explanation: Correct. Metrics and monitoring are used to monitor resource utilization, and actions can be taken based on the results.
+      - content: Exporting configuration settings via RestAPI
+        isCorrect: false
+        explanation: Incorrect. Exporting configuration settings is not related to monitoring resource utilization.
+      - content: Applying custom Grafana dashboards
+        isCorrect: false
+        explanation: Incorrect. Custom Grafana dashboards are not the primary method for monitoring resource utilization.
+
+  - content: What actions can be performed using the "Configuration management" blade in the Azure portal for HDInsight on AKS?
+    choices:
+      - content: Only exporting service configurations
+        isCorrect: false
+        explanation: Incorrect. Both updating existing configurations and adding new configurations can be done.
+      - content: Only updating existing service configurations
+        isCorrect: false
+        explanation: Incorrect. Both updating existing configurations and adding new configurations can be done.
+      - content: Both updating existing configurations and adding new configurations
+        isCorrect: true
+        explanation: Correct. The "Configuration management" blade allows updating existing configurations and adding new configurations.
+      - content: Neither updating nor exporting service configurations
+        isCorrect: false
+        explanation: Incorrect. Updating and adding configurations can be done using the "Configuration management" blade.
+
+  - content: How does Azure Managed Prometheus contribute to monitoring an HDInsight on AKS cluster?
+    choices:
+      - content: Collects and analyzes cluster metrics
+        isCorrect: true
+        explanation: Correct. Azure Managed Prometheus collects and analyzes cluster metrics.
+      - content: Provides premade dashboards for cluster health
+        isCorrect: false
+        explanation: Incorrect. Azure Managed Prometheus focuses on collecting metrics, not providing dashboards.
+      - content: Enables custom Grafana dashboards
+        isCorrect: false
+        explanation: Incorrect. Enabling custom Grafana dashboards is not the primary purpose of Managed Prometheus.
+      - content: Integrates with Log Analytics
+        isCorrect: false
+        explanation: Incorrect. Managed Prometheus is a separate service and does not integrate with Log Analytics.
+
+  - content: Once Log Analytics is configured at the cluster pool level, how can it be enabled for individual clusters within the same pool?
+    choices:
+      - content: By exporting configuration settings
+        isCorrect: false
+        explanation: Incorrect. Log Analytics is enabled during cluster creation, not by exporting settings.
+      - content: By using Azure PowerShell only
+        isCorrect: false
+        explanation: Incorrect. Log Analytics is enabled during cluster creation, not through Azure PowerShell only.
+      - content: By enabling it during cluster creation
+        isCorrect: true
+        explanation: Correct. Log Analytics is enabled for individual clusters during the creation process.
+      - content: By accessing the "Services" blade in the Azure portal
+        isCorrect: false
+        explanation: Incorrect. Enabling Log Analytics is part of the cluster creation process, not through the "Services" blade.   
+    
+      
+
+  
