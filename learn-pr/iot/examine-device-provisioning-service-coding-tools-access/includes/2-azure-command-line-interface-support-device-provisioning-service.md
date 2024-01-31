@@ -37,7 +37,7 @@ Other Azure CLI Commands for DPS are available in the following categories:
 
 ## Using the DPS commands
 
-DPS commands have required and optional parameters. The create and delete DPS service commands are listed as examples.
+DPS commands have required and optional parameters. The DPS create and delete service commands are listed as examples.
 
 > [!NOTE]
 > To view usage information for any Azure CLI command, enter the command followed by \`--help\`
@@ -103,7 +103,7 @@ For example, the following command can be used to create an Azure IoT Hub device
 
 `az iot dps create --name MyDps --resource-group MyResourceGroup`
 
-Or, to create an Azure IoT Hub device provisioning service with the standard pricing tier S1, in the 'eastus' region, use the following command:
+Or, to create an Azure IoT Hub device provisioning service with the standard pricing tier S1, in the `eastus` region, use the following command:
 
 `az iot dps create --name MyDps --resource-group MyResourceGroup --location eastus`
 
@@ -146,6 +146,6 @@ This command takes the following arguments:
   :::column-end:::
 :::row-end:::
 
-For example, the following command can be used to delete an Azure IoT Hub device provisioning service named 'MyDps':
+For example, the following command can be used to delete an Azure IoT Hub device provisioning service named `MyDps`:
 
 `az iot dps delete --name MyDps --resource-group MyResourceGroup`

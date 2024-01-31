@@ -1,4 +1,4 @@
-This unit describes Azure IoT Hub Device Provisioning Service SDKs. It also describes additional tool support for the Trusted Platform Module (TPM) simulator and X.509 generator.
+This unit describes Azure IoT Hub Device Provisioning Service SDKs. It also describes the Trusted Platform Module (TPM) simulator and X.509 generator tools that you can use to test the SDKs.
 
 ## Azure IoT Hub Device Provisioning Service SDKs
 
@@ -7,9 +7,7 @@ Azure IoT Hub includes a set of Device Provisioning Service SDKs that developers
 There are three categories of software development kits (SDKs) for working with DPS:
 
 * DPS device SDKs
-
 * DPS service SDKs
-
 * DPS management SDKs
 
 Each DSP SDK category is described in the following sections.
@@ -48,7 +46,7 @@ In addition to the sample code included with the SDKs that can be used for refer
 TPM can refer to a standard for securely storing keys to authenticate the platform, or it can refer to the I/O interface used to interact with the modules implementing the standard. TPMs can exist as discrete hardware, integrated hardware, firmware-based, or software-based. In production, TPM is located on the device, either as discrete hardware, integrated hardware, or firmware-based. In the testing phase, a software-based TPM simulator is provided to developers.
 
 > [!NOTE]
-> This simulator is only available for developing on Windows platform for now.
+> This simulator is only available for developing for thew Windows platform.
 
 Steps for using the TPM simulator are:
 
