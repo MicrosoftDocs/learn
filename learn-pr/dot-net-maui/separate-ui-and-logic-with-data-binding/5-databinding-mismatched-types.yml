@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-dotnet-maui
 durationInMinutes: 10
 content: |
-  [!include[](./includes/5-databinding-mismatched-types)]
+  [!include[](./includes/5-databinding-mismatched-types.md)]
 quiz:
   title: Check your knowledge
   questions:

@@ -31,7 +31,7 @@ products:
 - vs
 units:
 - learn.dotnet-maui.separate-ui-and-logic-with-data-binding.1-introduction
-- learn.dotnet-maui.separate-ui-and-logic-with-data-binding.2-compare-event-and-data-driven
+- learn.dotnet-maui.separate-ui-and-logic-with-data-binding.2-compare-event-and-data-bound
 - learn.dotnet-maui.separate-ui-and-logic-with-data-binding.3-use-data-bindings-xaml
 - learn.dotnet-maui.separate-ui-and-logic-with-data-binding.4-exercise-replace-code-with-data-bindings
 - learn.dotnet-maui.separate-ui-and-logic-with-data-binding.5-databinding-mismatched-types
