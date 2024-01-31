@@ -25,7 +25,7 @@ quiz:
         - content: VPN troubleshoot
           isCorrect: false
           explanation: Incorrect. VPN troubleshoot allows you to troubleshoot virtual network gateways and their connections.          
-    - content: Which of the following Network Watcher tools would you use to detect whether changes in NSG rules affect connectivity between IaaS VMs on a virtual network in Adatum's Azure subscription?
+    - content: Which of the following Network Watcher tools allows you to detect whether changes in NSG rules affect connectivity between IaaS VMs on a virtual network in Adatum's Azure subscription?
       choices: 
         - content: Topology
           isCorrect: false
@@ -36,7 +36,7 @@ quiz:
         - content: VPN troubleshoot
           isCorrect: false
           explanation: Incorrect. VPN troubleshoot allows you to troubleshoot virtual network gateways and their connections.          
-    - content:  Which of the following Network Watcher tools would you use if your on-premises devices can't communicate with your Azure virtual machine over the new VPN connection that you created?
+    - content:  Which of the following Network Watcher tools allows you to detect if your on-premises devices can't communicate with your Azure virtual machine over the new VPN connection that you created?
       choices:
         - content: Topology
           isCorrect: false
