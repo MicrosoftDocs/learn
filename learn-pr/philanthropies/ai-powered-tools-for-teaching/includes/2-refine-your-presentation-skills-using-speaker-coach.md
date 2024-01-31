@@ -17,15 +17,15 @@ In this activity, you'll practice using Speaker Coach, an AI-powered tool in Mic
    - Empowering trainers and learners with AI-powered tools
 
 1. Once you have finished creating the presentation deck, try practicing your presentation skills by using the Speaker Coach feature located on the Slide Show tab. Select "Rehearse with Coach" from the group titled Rehearse.
-   :::image type="content" source="../media/rehearse-with-coach.jpg" alt-text="A screenshot of PowerPoint SlideShow menu highlighting Rehearse with Coach option":::
+   :::image type="content" source="../media/rehearse-with-coach.jpg" alt-text="A screenshot of PowerPoint SlideShow menu highlighting Rehearse with Coach option.":::
 
 1. Click on "Start Rehearsing" and begin speaking. The microphone icon will become active on the screen when you are speaking.
    
-   :::image type="content" source="../media/start-rehearsing-1.jpg" alt-text="A screenshot of Rehearse with Coach PowerPoint feature highlighting Start Rehearsing interface":::
-   :::image type="content" source="../media/start-rehearsing-2.jpg" alt-text="A screenshot of Rehearse with Coach PowerPoint feature highlighting Coach - Listening interface":::
+   :::image type="content" source="../media/start-rehearsing-1.jpg" alt-text="A screenshot of Rehearse with Coach PowerPoint feature highlighting Start Rehearsing interface.":::
+   :::image type="content" source="../media/start-rehearsing-2.jpg" alt-text="A screenshot of Rehearse with Coach PowerPoint feature highlighting Coach - Listening interface.":::
 
 1. Once the rehearsal is finished, double-click the screen to stop the recording. A preview of your rehearsal report immediately appears on the screen.
-   :::image type="content" source="../media/rehearsal-report.jpg" alt-text="A screenshot of PowerPoint Your Rehearsal Report (Preview) feature":::
+   :::image type="content" source="../media/rehearsal-report.jpg" alt-text="A screenshot of PowerPoint Your Rehearsal Report (Preview) feature.":::
 
 1. Click the "Rehearse Again" button in the report to redo the practice. You can repeat as many times as you would like.
 
