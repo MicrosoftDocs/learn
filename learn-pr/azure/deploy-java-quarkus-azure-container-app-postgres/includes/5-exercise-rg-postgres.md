@@ -45,7 +45,7 @@ az group create \
 
 ## Create an instance of Azure Database for PostgreSQL
 
-Now you create a managed PostgreSQL server. Run the following command to create a small instance of Azure Database for PostgreSQL.
+You'll now create a managed PostgreSQL server. Run the following command to create a small instance of Azure Database for PostgreSQL:
 
 ```bash
 az postgres flexible-server create \
@@ -84,58 +84,62 @@ export POSTGRES_CONNECTION_STRING_SSL="$POSTGRES_CONNECTION_STRING&ssl=true&sslm
 echo "POSTGRES_CONNECTION_STRING_SSL=$POSTGRES_CONNECTION_STRING_SSL"
 ```
 
+Note the connection string that's returned.
+
 ## Configure the Quarkus application to connect to the PostgreSQL database
 
-Update the `application.properties` file in the `src/main/resources` folder of the project to configure the connection string to the PostgreSQL database. To do so, set the `quarkus.datasource.jdbc.url` property with the value of `$POSTGRES_CONNECTION_STRING_SSL` output previously. The `&ssl=true&sslmode=require` portion of the connection string forces the driver to use SSL, a requirement for Azure Database for PostgreSQL.
+Update the `application.properties` file in the `src/main/resources` folder of the project to configure the connection string to the PostgreSQL database. To do so, set the `quarkus.datasource.jdbc.url` property to the previously output `$POSTGRES_CONNECTION_STRING_SSL` value. The `&ssl=true&sslmode=require` part of the connection string forces the driver to use SSL, a requirement for Azure Database for PostgreSQL.
 
 ```properties
 quarkus.hibernate-orm.database.generation=update
-quarkus.datasource.jdbc.url=<the value of the POSTGRES_CONNECTION_STRING_SSL>
+quarkus.datasource.jdbc.url=<the POSTGRES_CONNECTION_STRING_SSL value>
 ```
 
-## Execute the Quarkus application locally to test the remote database connection
+## Run the Quarkus application locally to test the remote database connection
+
+Use this command to run the application locally: 
 
 ```shell
 ./mvnw clean quarkus:dev
 ```
 
-Once Quarkus is up and running, create a few to-dos with the following `cURL` commands in a separate terminal window:
+When Quarkus is running, create a few to-dos with the following `cURL` commands in a separate terminal window:
 
 ```bash
 curl --header "Content-Type: application/json" \
     --request POST \
-    --data '{"description":"Take Quarkus MS Learn","details":"Take the MS Learn on deploying Quarkus to Azure Container Apps","done": "true"}' \
+    --data '{"description":"Take Quarkus Training","details":"Take the training module on deploying Quarkus to Azure Container Apps","done": "true"}' \
     http://127.0.0.1:8080/api/todos
 
 curl --header "Content-Type: application/json" \
     --request POST \
-    --data '{"description":"Take Azure Container Apps MS Learn","details":"Take the ACA Learn module","done": "false"}' \
+    --data '{"description":"Take Azure Container Apps training","details":"Take training on Azure Container Apps","done": "false"}' \
     http://127.0.0.1:8080/api/todos
 ```
 
-Now check that the to-dos are in the database by accessing the GET endpoint defined in the to-do app:
+Next, check that the to-dos are in the database by accessing the GET endpoint that's defined in the to-do app:
 
 ```bash
 curl http://127.0.0.1:8080/api/todos
 ```
 
-You should have the following output:
+You should see the following output:
 
 ```json
 [
    {
-      "description" : "Take Quarkus MS Learn",
-      "details" : "Take the MS Learn on deploying Quarkus to Azure Container Apps",
+      "description" : "Take Quarkus MS Training",
+      "details" : "Take the training module on deploying Quarkus to Azure Container Apps",
       "done" : true,
       "id" : 1
    },
    {
-      "description" : "Take Azure Container Apps MS Learn",
-      "details" : "Take the ACA Learn module",
+      "description" : "Take Azure Container Apps training",
+      "details" : "Take training on Azure Container Apps",
       "done" : false,
       "id" : 2
    }
 ]
 ```
 
-If you have the following output, you have successfully executed the Quarkus application and connected to the remote PostgreSQL database.
+If you have the following output, you have successfully run the Quarkus application and connected to the remote PostgreSQL database.

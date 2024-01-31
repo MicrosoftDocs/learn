@@ -1,15 +1,16 @@
-In this unit, you create the Azure Container Apps environment using the Azure CLI. Then, you containerize the Quarkus application into a Docker image, push it to Azure Registry and deploy the image to Azure Container Apps.
+In this unit, you create the Azure Container Apps environment by using the Azure CLI. You then containerize the Quarkus application into a Docker image, push it to Azure Container Registry, and deploy the image to Container Apps.
 
 ## Set up the Dockerfile for the Quarkus application
 
-Azure Container Apps is for deploying containerized applications. So, the first thing we need to do is containerize the Quarkus application into a Docker image. This is easy to do as the Quarkus Maven plugin has already generated some Docker files under `src/main/docker`.
-Let's take one of these Docker file (`Dockerfile.jvm`), rename it to `Dockerfile` and move it to the root folder.
+Container Apps is used to deploy containerized applications. So you first need to containerize the Quarkus application into a Docker image. This process is easy because the Quarkus Maven plugin has already generated some Dockerfiles under `src/main/docker`.
+
+Use this command to rename one of these Dockerfiles, `Dockerfile.jvm`, to `Dockerfile` and move it to the root folder:
 
 ```bash
 mv src/main/docker/Dockerfile.jvm ./Dockerfile
 ```
 
-The dockerfile should have the following content:
+The Dockerfile should contain the following:
 
 ```dockerfile
 FROM registry.access.redhat.com/ubi8/openjdk-11:1.14
@@ -30,17 +31,17 @@ ENV JAVA_OPTS="-Dquarkus.http.host=0.0.0.0 -Djava.util.logging.manager=org.jboss
 ENV JAVA_APP_JAR="/deployments/quarkus-run.jar"
 ```
 
-This Dockerfile expects the Quarkus application to be packaged as a `quarkus-run.jar` file. This is the default name for the Quarkus application when it's packaged as a `jar` file. So, we need to make sure that the Quarkus application is packaged as a `jar` file. To do so, we need to execute the following Maven command:
+This Dockerfile expects the Quarkus application to be packaged as a `quarkus-run.jar` file. This name is the default name for the Quarkus application when it's packaged as a JAR file. So you need to make sure that the Quarkus application is packaged as a JAR file. To do so, run the following Maven command:
 
 ```bash
 ./mvnw package
 ```
 
-This command packages the Quarkus application into a `jar` file and generates a `quarkus-run.jar` file in the `target/quarkus-app` folder.
+This command packages the Quarkus application into a JAR file and generates a `quarkus-run.jar` file in the `target/quarkus-app` folder.
 
-## Create the Azure Container App Environment and deploy the container
+## Create the Container Apps environment and deploy the container
 
-Now that we have the Dockerfile at the right location, we can create the Azure Container App environment and deploy the container in a single Azure CLI command. Execute the following command at the root of the project:
+Now that the Dockerfile is in the right location, you can create the Container Apps environment and deploy the container by using a single Azure CLI command. Run the following command at the root of the project:
 
 ```bash
 az containerapp up \
@@ -53,15 +54,15 @@ az containerapp up \
     --source .
 ```
 
-This `az containerapp up` does several things:
+This command does several things:
 
-* It creates a new Azure Container App environment if it doesn't exist
-* It creates a new Azure Registry if it doesn't exist
-* It creates a new Log Analytics workspace if it doesn't exist
-* It builds the Docker image and pushes it to the Azure Registry
-* It deploys the Docker image to the Azure Container App environment
+* Creates a Container App environment if it doesn't exist
+* Creates an Azure registry if it doesn't exist
+* Creates a Log Analytics workspace if it doesn't exist
+* Builds the Docker image and pushes it to the Azure registry
+* Deploys the Docker image to the Container App environment
 
-The `az containerapp up` command takes a bit of time to execute, and you should see a similar output:
+The `az containerapp up` command takes some time to run. You should see output that's similar to the following:
 
 ```bash
 Using resource group 'rg-azure-deploy-quarkus'
@@ -77,13 +78,13 @@ Adding registry password as a secret with name "ca001ad52ae7acrazurecrio-ca001nx
 Your container app ca-azure-deploy-quarkus has been created and deployed! Congrats! 
 ```
 
-## Check the deployment
+## Validate the deployment
 
-You can check the deployment has succeeded in several ways. The easiest way is to search for your resource group in the [Azure portal](https://portal.azure.com). You should see resources similar to the following:
+You can validate that the deployment has succeeded in several ways. The easiest way is to search for your resource group on the [Azure portal](https://portal.azure.com). You should see resources similar to the following:
 
-![Screenshot showing the deployed application.](../media/azure-portal.png)
+![Screenshot that shows the deployed application.](../media/azure-portal.png)
 
-You can also check the deployment by executing the following command that lists all the resources created by the `az containerapp up` command:
+You can also check the deployment by running the following command. It lists all the resources created by the `az containerapp up` command.
 
 ```bash
 az resource list \
@@ -92,7 +93,7 @@ az resource list \
     --output table
 ```
 
-You should see a similar output:
+You should see output that's similar to this:
 
 ```bash
 Name                                ResourceGroup            Location    Type                                      
@@ -104,9 +105,9 @@ ca0ad52sfde7acr                     rg-azure-deploy-quarkus  eastus      Microso
 ca-azure-deploy-quarkus             rg-azure-deploy-quarkus  eastus      Microsoft.App/containerApps
 ```
 
-## Execute the deployed Quarkus application
+## Run the deployed Quarkus application
 
-You can now execute the deployed Quarkus application. First, you need to get the URL of the application. You can get it by executing the following command:
+You can now run the deployed Quarkus application. First, you need to get the URL of the application. You can get it by running the following command:
 
 ```bash
 export AZ_APP_URL=$(
@@ -120,7 +121,7 @@ export AZ_APP_URL=$(
 echo "AZ_APP_URL=$AZ_APP_URL"
 ```
 
-Your application is ready at `https://<appName>.azurecontainerapps.io/`. Notice the `https` protocol. This is because the application is deployed with a TLS certificate. To test the application, you can use `cURL`.
+Your application is ready at `https://<app-name>.azurecontainerapps.io/`. Notice the `https` protocol. That protocol is used because the application is deployed with a TLS certificate. To test the application, you can use cURL:
 
 ```bash
 curl --header "Content-Type: application/json" \
@@ -129,7 +130,7 @@ curl --header "Content-Type: application/json" \
     https://$AZ_APP_URL/api/todos
 ```
 
-Retrieve the data by using a new `cURL` request:
+Retrieve the data by using a new cURL request:
 
 ```bash
 curl https://$AZ_APP_URL/api/todos
