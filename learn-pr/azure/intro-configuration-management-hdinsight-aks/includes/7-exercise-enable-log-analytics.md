@@ -25,22 +25,22 @@ For this exercise, *create LA workspace - mycontosoLA*
 
     Cluster pool for this exercise – “contosopool”
   
-    :::image type="content" source="../media/picture-20.png" alt-text="Screenshot shows select your cluster pool." lightbox="../media/picture-20.png":::
+    :::image type="content" source="../media/select-your-cluster-pool.png" alt-text="Screenshot shows select your cluster pool." lightbox="../media/select-your-cluster-pool.png":::
   
-    :::image type="content" source="../media/picture-21.png" alt-text="Screenshot show cluster pool." lightbox="../media/picture-21.png":::
+    :::image type="content" source="../media/show-cluster-pool.png" alt-text="Screenshot show cluster pool." lightbox="../media/show-cluster-pool.png":::
 
 1.	Navigate to the "Monitor settings" blade on the left side menu and click on "Configure" to enable Log Analytics.
 
-    :::image type="content" source="../media/picture-22.png" alt-text="Screenshot shows enable Log Analytics." lightbox="../media/picture-22.png":::
+    :::image type="content" source="../media/enable-log-analytics.png" alt-text="Screenshot shows enable Log Analytics." lightbox="../media/enable-log-analytics.png":::
 
  
 1. Select the Log Analytics workspace created at the beginning (mycontosoLA) and click Ok.
 
-    :::image type="content" source="../media/picture-23.png" alt-text="Screenshot shows Select the Log Analytics workspace." lightbox="../media/picture-23.png":::
+    :::image type="content" source="../media/select-log-analytics.png" alt-text="Screenshot shows Select the Log Analytics workspace." lightbox="../media/select-log-analytics.png":::
  
 1. Once configured, you can check the monitoring setting. It should have LA status as enabled
 
-    :::image type="content" source="../media/picture-24.png" alt-text="Screenshot shows check the monitoring setting." lightbox="../media/picture-24.png":::
+    :::image type="content" source="../media/monitoring-setting.png" alt-text="Screenshot shows check the monitoring setting." lightbox="../media/monitoring-setting.png":::
 
 Now, LA is configured at the cluster pool. Let’s proceed to enable it for the Spark cluster created as part of this Lab
 
@@ -50,27 +50,27 @@ Now, LA is configured at the cluster pool. Let’s proceed to enable it for the 
 
 1.	Navigate to the "Monitor settings" blade, select Enable Log Analytics. Choose one or more types of logs you would like to collect and click Save.
 
-    :::image type="content" source="../media/picture-25.png" alt-text="Screenshot shows navigation to the **Monitor settings** blade." lightbox="../media/picture-25.png":::
+    :::image type="content" source="../media/navigate-monitor-setting.png" alt-text="Screenshot shows navigation to the **Monitor settings** blade." lightbox="../media/navigate-monitor-setting.png":::
   
-    :::image type="content" source="../media/picture-26.png" alt-text="Screenshot shows Navigate to the Monitor settings." lightbox="../media/picture-26.png":::
+    :::image type="content" source="../media/monitor-settings.png" alt-text="Screenshot shows Navigate to the Monitor settings." lightbox="../media/monitor-settings.png":::
    
 
 ### Access the log and run queries
 
 1.	Navigate to the Monitoring section and select the Logs blade to query and analyze the collected data.
 
-    :::image type="content" source="../media/picture-27.png" alt-text="Screenshot shows select the Logs blade." lightbox="../media/picture-27.png":::
+    :::image type="content" source="../media/select-logs-blade.png" alt-text="Screenshot shows select the Logs blade.":::
 
 2.	A list of commonly used query templates is provided to choose from to simplify the process or you can write your own query using the provided console.
 
-    :::image type="content" source="../media/picture-28.png" alt-text="Screenshot shows list of commonly used query templates." lightbox="../media/picture-28.png":::
+    :::image type="content" source="../media/query-templates.png" alt-text="Screenshot shows list of commonly used query templates." lightbox="../media/query-templates.png":::
   
-    :::image type="content" source="../media/picture-29.png" alt-text="Screenshot shows list of commonly used query." lightbox="../media/picture-29.png":::
+    :::image type="content" source="../media/commonly-used-query.png" alt-text="Screenshot shows list of commonly used query." lightbox="../media/commonly-used-query.png":::
  
 
   Example 
 
-   :::image type="content" source="../media/picture-30.png" alt-text="Screenshot shows Example." lightbox="../media/picture-30.png":::
+   :::image type="content" source="../media/example.png" alt-text="Screenshot shows Example." lightbox="../media/example.png":::
 
 
 
