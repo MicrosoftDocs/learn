@@ -9,4 +9,4 @@ In this module, we walked through a scenario where both data engineers and data 
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-fabric-dataflow)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2259607)
