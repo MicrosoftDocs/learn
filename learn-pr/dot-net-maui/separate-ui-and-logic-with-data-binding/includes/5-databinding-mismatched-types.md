@@ -59,7 +59,7 @@ The `StringFormat` binding property is convenient when displaying a value as a s
 
 Suppose you're prompting the user to choose a password, and you want to use a color in the UI to indicate the strength of the password. There are three levels of strength: weak, good, strong. The strength is based on how many characters are in the password. To give immediate feedback to the user about their password strength, you want the background of the `Entry` control containing the password to change based on the strength. The following image demonstrates those three levels of strength: weak, good, and strong.
 
-:::image type="complex" source="../media/5-databinding-mismatched-types/password-strength.png" alt-text="A .NET MAUI Android app with three entry controls, each with a different colored background.:::
+:::image type="complex" source="../media/5-databinding-mismatched-types/password-strength.png" alt-text="A .NET MAUI Android app with three entry controls, each with a different colored background.":::
 
 Of the three entry controls in the screenshot, the first has four characters entered and features a red background. The second has nine characters entered and features a yellow background. The last entry control has 15 characters and features a blue background.
 
