@@ -1,7 +1,7 @@
 HDInsight on AKS offers an integration with following Azure services
 
-1.	Azure Monitor.
-1.	Azure Managed Prometheus along with Azure managed Grafana dashboards for monitoring.
+-	Azure Monitor.
+-	Azure Managed Prometheus along with Azure managed Grafana dashboards for monitoring.
 
 **Azure Monitor** collects metrics and logs from multiple resources into an Azure Monitor Log Analytics workspace, which presents the data as structured, query able tables that can be used to configure custom alerts. Azure Monitor logs provide excellent overall experience for monitoring workloads and interacting with logs, especially if you have multiple clusters.
 
