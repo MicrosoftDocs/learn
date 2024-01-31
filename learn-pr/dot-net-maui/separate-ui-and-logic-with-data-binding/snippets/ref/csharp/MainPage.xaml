@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:WeatherClient.ViewModels"
+             x:Class="WeatherClient.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="Center" Padding="5" Spacing="20">
+            <Button Text="Event driven" Clicked="BtnEventDriven_Clicked"/>
+            <Button Text="Data bound" Clicked="BtnDatabound_Clicked" />
+            <Button Text="Simple: Event driven" Clicked="BtnSimpleEventDriven_Clicked" />
+            <Button Text="Simple: Data bound" Clicked="BtnSimpleDatabound_Clicked" />
+            <Button Text="Example: Binding resources" Clicked="BtnExampleBindRes_Clicked" />
+            <Button Text="Example: Binding controls" Clicked="BtnExampleBindControls_Clicked" />
+            <Button Text="Example: Multiday forecast" Clicked="BtnExampleFiveDayForecast_Clicked" />
+            <Button Text="Example: Binding string format" Clicked="BtnExampleBindingString_Clicked" />
+            <Button Text="Example: Binding color convert" Clicked="BtnExampleBindingColorConvert_Clicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

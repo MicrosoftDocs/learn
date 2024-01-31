@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeatherClient.Views.ExampleBindingControls"
+             Title="ExampleBindingControls">
+    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label x:Name="TargetLabel" Text="TEXT TO ROTATE" BackgroundColor="Yellow" />
+        <Slider WidthRequest="100" Maximum="360"
+                Value="{Binding Rotation, Mode=OneWayToSource, Source={x:Reference TargetLabel}}" />
+        
+    </VerticalStackLayout>
+</ContentPage>

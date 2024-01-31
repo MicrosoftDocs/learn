@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:WeatherClient.ViewModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="WeatherClient.Views.MainPageDataBound"
+             Title="Weather | Data Bound">
+    <ContentPage.BindingContext>
+        <vm:Weather />
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <toolkit:InvertedBoolConverter x:Key="InvertedBoolConverter" />
+    </ContentPage.Resources>
+    <VerticalStackLayout Margin="5">
+        <Label Text="Welcome to the weather app! Press the 'Refresh' button to get the latest forecast. Remember to provide an address for the forecast! EVENTS" />
+        <BoxView BackgroundColor="Black" HeightRequest="4" Margin="2,10" />
+        <HorizontalStackLayout>
+            <Label Text="Postal Code:" VerticalOptions="Center" Margin="0,0,20,0" />
+            <Entry WidthRequest="100" Margin="0,0,20,0" Text="{Binding PostalCode, Mode=OneWayToSource}" />
+            <Button Text="Refresh" Grid.Row="3" WidthRequest="200" Command="{Binding RefreshCommand}" IsEnabled="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}" />
+            <ActivityIndicator x:Name="actIsBusy" Margin="5,0,0,0" IsRunning="{Binding IsBusy}" />
+        </HorizontalStackLayout>
+        <BoxView BackgroundColor="Black" HeightRequest="4" Margin="2,10" />
+        <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto" ColumnDefinitions="Auto, Auto" Margin="0,5,0,0">
+            <Label Grid.Row="0" Grid.Column="0" Text="Condition" VerticalOptions="Center" />
+            <Image Grid.Row="0" Grid.Column="1" HeightRequest="25" WidthRequest="25" Source="{Binding Icon}" HorizontalOptions="Start" />
+            <Label Grid.Row="1" Grid.Column="0" Text="Temperature" Margin="0,0,20,0" />
+            <Label Grid.Row="1" Grid.Column="1" Text="{Binding Temperature}" />
+            <Label Grid.Row="2" Grid.Column="0" Text="Humidity" Margin="0,0,20,0" />
+            <Label Grid.Row="2" Grid.Column="1" Text="{Binding Humidity}" />
+            <Label Grid.Row="3" Grid.Column="0" Text="Precipitation" Margin="0,0,20,0" />
+            <Label Grid.Row="3" Grid.Column="1" Text="{Binding Precipitation}" />
+            <Label Grid.Row="4" Grid.Column="0" Text="Wind" Margin="0,0,20,0" />
+            <Label Grid.Row="4" Grid.Column="1" Text="{Binding Wind}" />
+        </Grid>
+        <BoxView BackgroundColor="Black" HeightRequest="4" Margin="2,10" />
+        <HorizontalStackLayout>
+            <Label Text="Use Celsius:" VerticalOptions="Center" Margin="0,0,20,0" />
+            <Switch IsToggled="{Binding IsCelsius}" />
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

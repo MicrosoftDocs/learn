@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeatherClient.Views.MainPageEventDriven"
+             Title="Weather | Event Driven">
+    <Grid RowDefinitions="Auto,Auto,*,Auto" Margin="5">
+        <VerticalStackLayout>
+            <Label Text="Welcome to the weather app! Press the 'Refresh' button to get the latest forecast. Remember to provide an address for the forecast! EVENTS" />
+            <BoxView BackgroundColor="Black" HeightRequest="4" Margin="2,10" />
+            <HorizontalStackLayout>
+                <Label Text="Postal Code:" VerticalOptions="Center" Margin="0,0,20,0" />
+                <Entry x:Name="txtPostalCode" WidthRequest="100" Margin="0,0,20,0" />
+                <Button x:Name="btnRefresh" Text="Refresh" Grid.Row="3" WidthRequest="200" Clicked="btnRefresh_Clicked" />
+                <ActivityIndicator x:Name="actIsBusy" Margin="5,0,0,0" />
+            </HorizontalStackLayout>
+            <BoxView BackgroundColor="Black" HeightRequest="4" Margin="2,10" />
+            <Grid Grid.Row="2" RowDefinitions="Auto, Auto, Auto, Auto, Auto" ColumnDefinitions="Auto, Auto" Margin="0,5,0,0">
+                <Label Grid.Row="0" Grid.Column="0" Text="Condition" VerticalOptions="Center" />
+                <Image x:Name="imgCondition" Grid.Row="0" Grid.Column="1" HeightRequest="25" WidthRequest="25" Source="question.png" HorizontalOptions="Start" />
+                <Label Grid.Row="1" Grid.Column="0" Text="Temperature" Margin="0,0,20,0" />
+                <Label x:Name="lblTemperature" Grid.Row="1" Grid.Column="1" Text="0" />
+                <Label Grid.Row="2" Grid.Column="0" Text="Humidity" Margin="0,0,20,0" />
+                <Label x:Name="lblHumidity" Grid.Row="2" Grid.Column="1" Text="0" />
+                <Label Grid.Row="3" Grid.Column="0" Text="Precipitation" Margin="0,0,20,0" />
+                <Label x:Name="lblPrecipitation" Grid.Row="3" Grid.Column="1" Text="0" />
+                <Label Grid.Row="4" Grid.Column="0" Text="Wind" Margin="0,0,20,0" />
+                <Label x:Name="lblWind" Grid.Row="4" Grid.Column="1" Text="0" />
+            </Grid>
+            <BoxView BackgroundColor="Black" HeightRequest="4" Margin="2,10" />
+            <HorizontalStackLayout>
+                <Label Text="Use Celsius:" VerticalOptions="Center" Margin="0,0,20,0" />
+                <Switch x:Name="swiCelsius" Toggled="swiCelsius_Toggled" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

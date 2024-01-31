@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.dotnet-maui.separate-ui-and-logic-with-data-binding.2-compare-event-and-data-driven
+uid: learn.dotnet-maui.separate-ui-and-logic-with-data-binding.2-compare-event-and-data-bound
 title: Compare an event-driven UI to a data-bound UI 
 metadata:
   title: Compare an event-driven UI to a data-bound UI
-  description: In this unit you'll compare an event-driven UI to a data-driven UI.
+  description: In this unit you'll compare an event-driven UI to a data-bound UI.
   ms.date: 12/12/2023
   author: adegeo
   ms.author: adegeo
@@ -11,28 +11,19 @@ metadata:
   ms.prod: learning-dotnet-maui
 durationInMinutes: 6
 content: |
-  [!include[](./includes/2-compare-event-and-data-driven.md)]
+  [!include[](./includes/2-compare-event-and-data-bound.md)]
 quiz:
   title: Check your knowledge
   questions:
   - content: "Which of the following statements describe how data binding improves the UI?"
     choices:
-    - content: "You never have to write code related to your UI again!"
-      isCorrect: false
+    - isCorrect: false
+      content: "You never have to write code related to your UI again."
       explanation: "While you could design a code-less UI, you don't have to, and it's not the most important feature of data binding. Data binding is beneficial because it provides a system where you have real-time updates to the UI when the underlying data changes."
-    - content: "When the data changes, your UI reflects it."
-      isCorrect: true
-      explanation: |
-        Most bindable properties use a default binding mode of `OneWay`, which means that when the UI (target) is notified that the data binding's data (source) changed. The data travels from the source to the target, which is reflected in the UI. Some properties default to `TwoWay`, meaning that data goes both ways between the target and source.
-
-        The answer **Helps separate the app logic from the UI** is also correct.
-    - content: "Helps separate the app logic from the UI."
-      isCorrect: true
-      explanation: |
-        The benefit of data binding your UI is that you can easily redesign your UI and not worry about breaking things. Also, data binding handles a lot for you, such as updating specific parts of your UI when the data changes or updating the data when the user interacts with the UI.
-
-        The answer **When the data changes, your UI reflects it** is also correct.
-  - content: "In an app that retrieves the latest weather, a label is on the UI that represents the temperature is bound to the data object. When the user presses the \"Get Weather\" button, what would a data-driven app do to update the UI?"
+    - isCorrect: true
+      content: "Helps separate the app logic from the UI, simplifying your code-behind."
+      explanation: "The benefit of data binding your UI is that you can easily redesign your UI and not worry about breaking things. Also, data binding handles a lot for you, such as updating specific parts of your UI when the data changes or updating the data when the user interacts with the UI."
+  - content: "In an app that retrieves the latest weather, a label is on the UI that represents the temperature is bound to the data object. When the user presses the \"Get Weather\" button, what would a data-bound app do to update the UI?"
     choices:
     - content: "The button's `Clicked` event handler can be registered with the code-behind. From the event handler, invoke the weather service and update the weather data object with the weather information."
       isCorrect: true

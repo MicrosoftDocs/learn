@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeatherClient.Views.ExampleBindingColor"
+             xmlns:cvt="clr-namespace:WeatherClient.Converters"
+             xmlns:vms="clr-namespace:WeatherClient.ViewModels"
+             Title="ExampleBindingColor">
+    <ContentPage.Resources>
+        <cvt:StrengthToColorConverter x:Key="StrengthToColorConverter" />
+        <vms:PasswordObject x:Key="Pass1" />
+        <vms:PasswordObject x:Key="Pass2" />
+        <vms:PasswordObject x:Key="Pass3" />
+    </ContentPage.Resources>
+    <VerticalStackLayout Margin="10" Spacing="10">
+        <Entry Text="{Binding Password, Mode=OneWayToSource}" BackgroundColor="{Binding PasswordStrength, Converter={StaticResource StrengthToColorConverter}}" BindingContext="{StaticResource Pass1}" />
+        <Entry Text="{Binding Password, Mode=OneWayToSource}" BackgroundColor="{Binding PasswordStrength, Converter={StaticResource StrengthToColorConverter}}" BindingContext="{StaticResource Pass2}" />
+        <Entry Text="{Binding Password, Mode=OneWayToSource}" BackgroundColor="{Binding PasswordStrength, Converter={StaticResource StrengthToColorConverter}}" BindingContext="{StaticResource Pass3}" />
+    </VerticalStackLayout>
+</ContentPage>

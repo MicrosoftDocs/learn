@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.separate-ui-and-logic-with-data-binding.5-databinding-mismatched-types
+title: Data binding with mismatched types
+metadata:
+  title: Data binding with mismatched types
+  description: Learn how to data binding between two mismatched property types.
+  ms.date: 01/25/2024
+  author: adegeo
+  ms.author: adegeo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet-maui
+durationInMinutes: 10
+content: |
+  [!include[](./includes/5-databinding-mismatched-types)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "To display and format a simple value in data binding, which is the best approach?"
+    choices:
+    - isCorrect: false
+      content: "Expose a secondary property that formats the value as a string."
+      explanation: "While you could do this, you end up exposing a string for a single purpose. If you wanted to show that value elsewhere, you would have ot create another property formated for that specific scenario."
+    - isCorrect: true
+      content: "Use the StringFormat binding property."
+      explanation: "This is the best option. You format the data for the specific binding, which can be changed based on how the UI is displaying the data."
+    - isCorrect: false
+      content: "Use a binding converter."
+      explanation: "This is usually not the correct approach. Binding converters are used when you have additional logic in converting a value to a string."
+  - content: "Which type is used in data binding conversion?"
+    choices:
+    - isCorrect: true
+      content: "IValueConverter"
+      explanation: "This interface is used by the data binding system and you implement it to create your own data conversion classes."
+    - isCorrect: false
+      content: "IConvertible"
+      explanation: "This is an interface provided by the base class library that converts an object to different value type representations."
+    - isCorrect: false
+      content: "TypeConverter"
+      explanation: "This class is used by Windows Forms for data conversion. It isn't used by .NET MAUI."
+  - content: "After a converter type is created, how is it used with a binding?"
+    choices:
+    - isCorrect: true
+      content: "Create an instance of the converter and assign it to the binding's Converter property."
+      explanation: ""
+    - isCorrect: false
+      content: "Implement the converter interface in a static class and reference it in the binding's Converter property."
+      explanation: "Static classes can't implement interfaces."
+    - isCorrect: false
+      content: ""
+      explanation: ""
