@@ -4,7 +4,7 @@ Now that your medallion architecture is in place, data teams and the business ca
 
 Teams can use SQL to explore and query data in the gold layer. You can analyze data in delta tables at any layer of the medallion architecture using the T-SQL language, save functions, generate views, and apply SQL security. You can also use the SQL analytics endpoint to connect to your lakehouse from third-party tools and applications.
 
-The SQL analytics endpoint in Fabric enables you to write queries,  manage the data model, and query data using the new visual query experience.
+The SQL analytics endpoint in Fabric enables you to write queries,  manage the semantic model, and query data using the new visual query experience.
 
 ![Screenshot of the SQL analytics endpoint in the Fabric user interface.](../media/sql-endpoint-silver.png)
 

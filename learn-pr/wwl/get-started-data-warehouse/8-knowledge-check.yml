@@ -27,7 +27,7 @@ quiz:
     - content: "Staging table."
       isCorrect: false
       explanation: "Incorrect. Staging tables are used as temporary storage for data as it is loaded into the data warehouse."
-  - content: "What is a dataset in the data warehouse experience?"
+  - content: "What is a semantic model in the data warehouse experience?"
     choices:
     - content: "Datasets are a semantic model with metrics that are used to create reports."
       isCorrect: true

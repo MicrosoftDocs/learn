@@ -2,7 +2,7 @@
 ms.custom:
   - build-2023
 ---
-In our scenario, you need to develop a data model that can standardize the data and provide access to the business. By using Dataflows Gen2, you can connect to the various data sources, and then prep and transform the data. To allow access, you can land the data directly into your Lakehouse or use a data pipeline for other destinations.
+In our scenario, you need to develop a semantic model that can standardize the data and provide access to the business. By using Dataflows Gen2, you can connect to the various data sources, and then prep and transform the data. To allow access, you can land the data directly into your Lakehouse or use a data pipeline for other destinations.
 
 ## What is a dataflow?
 
@@ -16,7 +16,7 @@ Fundamentally, a dataflow includes all of the transformations to reduce data pre
 
 Traditionally, data engineers spend significant time extracting, transforming, and loading data into a consumable format for downstream analytics. The goal of Dataflows Gen2 is to provide an easy, reusable way to perform ETL tasks using Power Query Online.
 
-If you only choose to use a Data Pipeline, you copy data, then use your preferred coding language to extract, transform, and load the data. Alternatively, you can create a Dataflow Gen2 first to extract and transform the data. You can also load the data into a Lakehouse, and other destinations. Now the business can easily consume the curated data model.
+If you only choose to use a Data Pipeline, you copy data, then use your preferred coding language to extract, transform, and load the data. Alternatively, you can create a Dataflow Gen2 first to extract and transform the data. You can also load the data into a Lakehouse, and other destinations. Now the business can easily consume the curated semantic model.
 
 Adding a data destination to your dataflow is optional, and the dataflow preserves all transformation steps. To perform other tasks or load data to a different destination after transformation, create a Data Pipeline and add the Dataflow Gen2 activity to your orchestration.
 
