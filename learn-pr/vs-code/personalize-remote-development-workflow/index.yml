@@ -2,7 +2,7 @@
 uid: learn.personalize-remote-development-workflow
 metadata:
   title: Personalize your Visual Studio Code Remote Development workflow
-  description: Leverage features in VS Code to personalize your development experience for different remote environments.
+  description: Use features in VS Code to personalize your development experience for different remote environments.
   ms.date: 11/28/2023
   author: burkeholland
   ms.author: buhollan
@@ -14,14 +14,14 @@ title: Personalize your Remote Development workflow with Visual Studio Code
 
 summary: |
 
-  In this module, you'll learn how to customize Visual Studio Code for different remote development environments. We'll explore how to backup your Visual Studio Code configuration so that you get your own personalized Visual Studio Code setup no matter where you use Visual Studio Code. We'll also examine how to use profiles in Visual Studio Code to load custom development environments for different remote configurations and projects.
+  In this module, you learn how to customize Visual Studio Code for different remote development environments. We explore how to back up your Visual Studio Code configuration so that you get your own personalized Visual Studio Code set up no matter where you use Visual Studio Code. We also examine how to use profiles in Visual Studio Code to load custom development environments for different remote configurations and projects.
 
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - Enable and configure Settings Sync in Visual Studio Code.
     - Load a personalized version of Visual Studio Code both locally and on the web.
     - Create different profiles tailored for different projects and remote environments.
-    - Combine multiple remote development enviornments for a customized development experience.
+    - Combine multiple remote development environments for a customized development experience.
 
 prerequisites: |
   - Basic understanding of Remote Development concepts in Visual Studio Code, including Dev Containers, WSL, Remote - SSH, and GitHub Codespaces.
