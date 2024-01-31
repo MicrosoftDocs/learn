@@ -34,10 +34,10 @@ subjects:
 units:
 - learn.intro-configuration-management-hdinsight-aks.1-introduction
 - learn.intro-configuration-management-hdinsight-aks.2-guidelines-for-hdinsight-on-aks-cluster
-- learn.intro-configuration-management-hdinsight-aks.3-excercise-create-hdinsight-on-aks-cluster
+- learn.intro-configuration-management-hdinsight-aks.3-exercise-create-hdinsight-on-aks-cluster
 - learn.intro-configuration-management-hdinsight-aks.4-manage-hdinsight-on-aks-cluster
 - learn.intro-configuration-management-hdinsight-aks.5-exercise-customize-cluster-configuration
-- learn.intro-configuration-management-hdinsight-aks.6-manage-obsrvability-of-hdinsight-on-aks-cluster
+- learn.intro-configuration-management-hdinsight-aks.6-manage-observability-of-hdinsight-on-aks-cluster
 - learn.intro-configuration-management-hdinsight-aks.7-exercise-enable-log-analytics
 - learn.intro-configuration-management-hdinsight-aks.8-knowledge-check
 - learn.intro-configuration-management-hdinsight-aks.9-summary
