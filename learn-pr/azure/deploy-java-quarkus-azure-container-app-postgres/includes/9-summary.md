@@ -1,10 +1,10 @@
 Congratulations! You've deployed a Quarkus application to Azure Container Apps.
 
-Your company wanted to learn how to deploy a Quarkus application to the Cloud. You followed these steps:
+Your company wanted to deploy a Quarkus application to the cloud. You completed these steps:
 
-1. Create a sample Quarkus application, execute and test it locally.
+1. Created a sample Quarkus application and ran and tested it locally.
 
-1. Create an Azure for PostgreSQL database, configure your Quarkus application to access the remote database, and execute it locally.
+1. Created an Azure for PostgreSQL database and configured your Quarkus application to access the remote database and ran it locally.
 
 1. Containerize the Quarkus application.
 

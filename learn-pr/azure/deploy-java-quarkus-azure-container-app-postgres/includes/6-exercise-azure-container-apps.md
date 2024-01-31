@@ -141,14 +141,14 @@ This command returns the list of all to-do items from the database:
 ```json
 [
    {
-      "description" : "Take Quarkus MS Learn",
-      "details" : "Take the MS Learn on deploying Quarkus to Azure Container Apps",
+      "description" : "Take Quarkus training",
+      "details" : "Take the training module on deploying Quarkus to Azure Container Apps",
       "done" : true,
       "id" : 1
    },
    {
-      "description" : "Take Azure Container Apps MS Learn",
-      "details" : "Take the ACA Learn module",
+      "description" : "Take Azure Container Apps training",
+      "details" : "Take training on Azure Container Apps",
       "done" : false,
       "id" : 2
    },
@@ -161,7 +161,7 @@ This command returns the list of all to-do items from the database:
 ]
 ```
 
-While you create new to-dos, you can stream the logs for your container with:
+If you run this command, you can stream the logs for your container when you create new to-dos:
 
 ```bash
 az containerapp logs show \
@@ -170,7 +170,7 @@ az containerapp logs show \
     --follow
 ```
 
-Execute more curl commands, and you should see the logs scrolling in the terminal.
+Run more cURL commands. You should see the logs scrolling in the terminal.
 
 ```bash
 curl https://$AZ_APP_URL/api/todos

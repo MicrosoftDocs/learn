@@ -108,7 +108,7 @@ When Quarkus is running, create a few to-dos with the following `cURL` commands 
 ```bash
 curl --header "Content-Type: application/json" \
     --request POST \
-    --data '{"description":"Take Quarkus Training","details":"Take the training module on deploying Quarkus to Azure Container Apps","done": "true"}' \
+    --data '{"description":"Take Quarkus training","details":"Take the training module on deploying Quarkus to Azure Container Apps","done": "true"}' \
     http://127.0.0.1:8080/api/todos
 
 curl --header "Content-Type: application/json" \
@@ -128,7 +128,7 @@ You should see the following output:
 ```json
 [
    {
-      "description" : "Take Quarkus MS Training",
+      "description" : "Take Quarkus training",
       "details" : "Take the training module on deploying Quarkus to Azure Container Apps",
       "done" : true,
       "id" : 1
