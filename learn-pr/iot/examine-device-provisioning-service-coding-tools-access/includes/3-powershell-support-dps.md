@@ -1,4 +1,4 @@
-You can use the following PowerShell commands to manage your Azure IoT Hub Device Provisioning Service.
+You can use the following [Az.DeviceProvisioningServices](/powershell/module/az.deviceprovisioningservices/) PowerShell commands to manage your Azure IoT Hub Device Provisioning Service.
 
 | Command | Description |
 | --- | --- |

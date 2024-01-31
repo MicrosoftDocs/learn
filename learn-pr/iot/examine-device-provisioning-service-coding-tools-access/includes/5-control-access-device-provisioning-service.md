@@ -1,4 +1,4 @@
-The Azure IoT Device Provisioning Service uses *authentication* and *permissions* to grant access to each endpoint. Permissions limit the access to a service instance based on functionality. For example, a backend app must include a token that contains security credentials along with every message it sends to the service.
+The Azure IoT Hub Device Provisioning Service uses *authentication* and *permissions* to grant access to each endpoint. Permissions limit the access to a service instance based on functionality.
 
 ## Authentication
 
@@ -6,13 +6,13 @@ The Device API supports key-based and X.509 certificated-based device authentica
 
 The Service API supports key-based authentication for backend apps.
 
-When using key-based authentication, the Device Provisioning Service uses security tokens to authenticate services to avoid sending keys on the wire. Additionally, security tokens are limited in time validity and scope. Azure IoT Device Provisioning SDKs automatically generate tokens without requiring any special configuration.
+When using key-based authentication, the Device Provisioning Service uses security tokens to authenticate services to avoid sending keys on the wire. Additionally, security tokens are limited in time validity and scope. Device Provisioning SDKs automatically generate tokens without requiring any special configuration.
 
 In some cases you may need to use the HTTP Device Provisioning Service REST APIs directly, without using the SDKs. The following sections describe how to authenticate directly against the REST APIs.
 
 ## Device API authentication
 
-The Device API is used by devices to attest to the Device Provisioning Service and receive an IoT Hub connection.
+The Device API is used by devices to attest to the Device Provisioning Service and receive an Azure IoT Hub connection.
 
 > [!NOTE]
 > In order to receive an authenticated connection, devices must first be registered in the Device Provisioning Service through an enrollment. Use the Service API to programmatically register a device through an enrollment.
@@ -113,10 +113,7 @@ The following example shows how the shared access signature is then used to auth
 curl -L -i -X PUT -H 'Content-Type: application/json' -H 'Content-Encoding:  utf-8' -H 'Authorization: [token]' -d '{"registrationId": "[registration_id]"}' https://global.azure-devices-provisioning.net/[ID_Scope]/registrations/[registration_id]/register?api-version=2021-06-01
 ```
 
-If using a symmetric key-based enrollment group, you'll need to first generate a device symmetric key using the enrollment group key. Use the enrollment group primary or secondary key to compute an HMAC-SHA256 of the registration ID for the device. The result is then converted into Base64 format to obtain the derived device key.
-
-> [!WARNING]
-> To avoid including the group master key in your device code, the process of deriving device key should be done off the device.
+If using a symmetric key-based enrollment group, you'll need to first generate a device symmetric key using the enrollment group key. Use the enrollment group primary or secondary key to compute an HMAC-SHA256 of the registration ID for the device. The result is then converted into Base64 format to obtain the derived device key. To avoid including the group master key in your device code, the process of deriving device key should be done off the device.
 
 ### Certificate-based authentication
 
@@ -142,7 +139,7 @@ Azure IoT Hub Device Provisioning Service grants access to endpoints by verifyin
 
 ### Access control and permissions
 
-You can grant permissions using **Shared access policies**. Shared access policies can grant any combination of permissions. You can define policies in the portal Azure IoT Hub Device Provisioning Service (DPS) blade, or programmatically by using the Device Provisioning Service REST APIs. A newly created provisioning service has a default policy of **provisioningserviceowner**, with all permissions enabled.
+You can grant permissions using **Shared access policies**. Shared access policies can grant any combination of permissions. You can define policies in the portal **Azure IoT Hub Device Provisioning Service (DPS)** blade, or programmatically by using the Device Provisioning Service REST APIs. A newly created provisioning service has a default policy of **provisioningserviceowner**, with all permissions enabled.
 
 HTTP is the only supported protocol, and it implements authentication by including a valid token in the Authorization request header.
 
@@ -155,11 +152,11 @@ SharedAccessSignature sr =
 
 ### Security tokens
 
-The Device Provisioning Service uses security tokens to authenticate services to avoid sending keys on the wire. Additionally, security tokens are limited in time validity and scope. Azure IoT Device Provisioning Service SDKs automatically generate tokens when connecting to a service without requiring any special configuration. Some scenarios do require you to generate and use security tokens directly. Such scenarios include the direct use of the HTTP surface.
+The Device Provisioning Service uses security tokens to authenticate services to avoid sending keys on the wire. Additionally, security tokens are limited in time validity and scope. Device Provisioning Service SDKs automatically generate tokens when connecting to a service without requiring any special configuration. Some scenarios do require you to generate and use security tokens directly. Such scenarios include the direct use of the HTTP surface.
 
 ### Security token structure
 
-You use security tokens to grant time-bounded access for services to specific functionality in IoT Device Provisioning Service. To get authorization to connect to the provisioning service, services must send security tokens signed with either a shared access or symmetric key.
+You use security tokens to grant time-bounded access for services to specific functionality in Device Provisioning Service. To get authorization to connect to the provisioning service, services must send security tokens signed with either a shared access or symmetric key.
 
 A token signed with a shared access key grants access to all the functionality associated with the shared access policy permissions. The security token has the following format:
 
@@ -196,7 +193,7 @@ Here are the expected values:
     \{URL-encoded-resourceURI\}
   :::column-end:::
   :::column:::
-    Lower case URL-encoding of the lower case resource URI. URI prefix (by segment) of the endpoints that can be accessed with this token, starting with host name of the IoT Device Provisioning Service (no protocol). For example, mydps.azure-devices-provisioning.net.
+    Lower case URL-encoding of the lower case resource URI. URI prefix (by segment) of the endpoints that can be accessed with this token, starting with host name of the Device Provisioning Service (no protocol). For example, mydps.azure-devices-provisioning.net.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -327,7 +324,7 @@ provisioning.net&sig=JdyscqTpXdEJs49elIUCcohw2DlFDR3zfH5KqGJo4r4%3D&se=145697344
 
 ## Device Provisioning Service permissions
 
-The following table lists the permissions you can use to control access to your IoT Device Provisioning Service.
+The following table lists the permissions you can use to control access to your Device Provisioning Service.
 
 :::row:::
   :::column:::

@@ -22,9 +22,6 @@ The DPS device SDKs provide implementations of the Register API and others that 
 
 These SDKs were designed and created to run on devices with limited compute and memory resources and are implemented using the C language. Azure RTOS, FreeRTOS, and Bare Metal RTOS are supported.
 
-> [!NOTE]
-> WebSocket support for MQTT/AMQP is limited to .NET Framework 4.x.
-
 ### DPS service SDKs
 
 [DPS service SDKs](/azure/iot-dps/libraries-sdks#service-sdks) provide data plane operations for backend apps. You can use the service SDKs to create and manage individual enrollments and enrollment groups, and to query and manage device registration records.
@@ -33,9 +30,7 @@ The DPS service SDKs help you build backend applications to manage enrollments a
 
 ### DPS management SDKs
 
-[DPS management SDKs](/azure/iot-dps/libraries-sdks#management-sdks) provide control plane operations for backend apps. You can use the management SDKs to create and manage DPS instances and metadata. For example, to create and manage DPS instances in your subscription, to upload and verify certificates with a DPS instance, or to create and manage authorization policies or allocation policies in a DPS instance.
-
-The DPS management SDKs help you build backend applications that manage the DPS instances and their metadata in your Azure subscription.
+[DPS management SDKs](/azure/iot-dps/libraries-sdks#management-sdks) provide control plane operations for backend apps. You can use the management SDKs to create and manage DPS instances and metadata. For example, to create and manage DPS instances in your subscription, to upload and verify certificates with a DPS instance, or to create and manage authorization policies or allocation policies in a DPS instance. .NET, Java, Node.js, and Python platforms are supported.
 
 ## Additional tool support
 
@@ -46,9 +41,9 @@ In addition to the sample code included with the SDKs that can be used for refer
 TPM can refer to a standard for securely storing keys to authenticate the platform, or it can refer to the I/O interface used to interact with the modules implementing the standard. TPMs can exist as discrete hardware, integrated hardware, firmware-based, or software-based. In production, TPM is located on the device, either as discrete hardware, integrated hardware, or firmware-based. In the testing phase, a software-based TPM simulator is provided to developers.
 
 > [!NOTE]
-> This simulator is only available for developing for thew Windows platform.
+> This simulator is only available for developing for the Windows platform.
 
-Steps for using the TPM simulator are:
+To use the TPM simulator:
 
 1. Prepare the development environment and clone the GitHub repository: `git clone https://github.com/Azure/azure-iot-sdk-java.git`
 2. Navigate to the TPM simulator folder under `azure-iot-sdk-java/provisioning/provisioning-tool/tpm-simulator/`.
@@ -87,7 +82,7 @@ To generate X.509 certificate using this generator:
     
    ```
 
-7. When prompted, you may optionally enter a Common Name for your certificates.
+7. When prompted, you may optionally enter a **Common Name** for your certificates.
 8. The tool locally generates a Client Cert, the Client Cert Private Key, Intermediate Cert, and the Root Cert.
 
 Client Cert is the leaf certificate on the device. Client Cert and the associated Client Cert Private Key are needed in device client. Depending on what language you choose, the mechanism to put this in the client application may be different.

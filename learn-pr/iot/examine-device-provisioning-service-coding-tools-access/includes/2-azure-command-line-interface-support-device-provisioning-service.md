@@ -1,4 +1,4 @@
-Azure CLI commands can be used to accomplish many of the tasks associated with the Azure IoT Hub Device Provisioning Service (DPS).
+You can use Azure CLI commands to accomplish many of the tasks associated with the Azure IoT Hub Device Provisioning Service (DPS).
 
 ## Azure IoT extension for Azure CLI
 
@@ -10,9 +10,9 @@ az extension add --name azure-iot
 
 ## Azure CLI commands for DPS
 
-### DPS service commands
+### DPS service management commands
 
-You can use DPS service commands to manage Device Provisioning Service instances. The DPS service commands are listed as follows:
+You can use `az iot dps` Azure CLI commands to manage Device Provisioning Service instances. The DPS service commands are listed as follows:
 
 | Command | Description |
 | --- | --- |
@@ -37,16 +37,16 @@ Other Azure CLI Commands for DPS are available in the following categories:
 
 ## Using the DPS commands
 
-DPS commands have required and optional parameters. The DPS create and delete service commands are listed as examples.
+DPS commands have required and optional parameters. The DPS Azure CLI create and delete service commands are listed as examples. See documentation or use the `--help` command parameter for parameter details.
 
 > [!NOTE]
-> To view usage information for any Azure CLI command, enter the command followed by \`--help\`
+> To view usage information for any Azure CLI command, enter the command followed by `--help`.
 
-### Create command
+### DPS create command
 
-The `az iot dps create` command can be used to create an Azure IoT Hub device provisioning service.
+Use the `az iot dps create` command to create an Azure IoT Hub Device Provisioning Service.
 
-This command takes the following arguments:
+`--name` and `--resource-group` arguments are required. Required and frequently used optional arguments are listed in this table.
 
 :::row:::
   :::column:::
@@ -111,6 +111,8 @@ Or, to create an Azure IoT Hub device provisioning service with the standard pri
 
 The `az iot dps delete` command can be used to delete an Azure IoT Hub device provisioning service.
 
+`--name` and `--resource-group` arguments are required. Required and frequently used optional arguments are listed in this table.
+
 This command takes the following arguments:
 
 :::row:::
@@ -126,7 +128,7 @@ This command takes the following arguments:
     \--ids
   :::column-end:::
   :::column:::
-    One or more resource IDs (space-delimited). If provided, no other 'Resource ID' arguments should be specified.
+    One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -143,6 +145,14 @@ This command takes the following arguments:
   :::column-end:::
   :::column:::
     Name of resource group.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    \--subscription
+  :::column-end:::
+  :::column:::
+    Name or ID of subscription.
   :::column-end:::
 :::row-end:::
 
