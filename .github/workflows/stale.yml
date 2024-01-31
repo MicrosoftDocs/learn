@@ -1,4 +1,8 @@
 name: Mark stale issues and pull requests
+
+permissions:
+  issues: write
+  pull-requests: write
   
 on:
   schedule:
@@ -9,9 +13,6 @@ jobs:
     if: github.repository_owner == 'MicrosoftDocs'
 
     runs-on: ubuntu-latest
-    permissions:
-      issues: write
-      pull-requests: write
 
     steps:
     - uses: actions/stale@v3
