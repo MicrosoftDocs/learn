@@ -33,12 +33,12 @@ Windows 10 and later still supports traditional deployment. Many organizations u
 
 The following table compares traditional and modern Windows 11 deployment.
 
-|                               | Traditional deployment                                                         | Modern deployment |
+| -- | Traditional deployment                                                         | Modern deployment |
 |-------------------------------|--------------------------------------------------------------------------------|-------------------|
-| Deploys Windows 11 images   | Yes                                                                            | No                |
-| Can be used with any preinstalled operating system  | Yes                                                                            | No                |
-| Requires a previous Windows 11 installation | No                                                                             | Yes               |
-| Uses an on-premises infrastructure | Yes                                                                            | No                |
+| Deploys Windows 11 images     | Yes                                                                            | No                |
+| Can be used with any preinstalled operating system| Yes                                                        | No                |
+| Requires a previous Windows 11 installation | No                                                               | Yes               |
+| Uses an on-premises infrastructure | Yes                                                                       | No                |
 | Tools for preparing the deployment  | Windows ADK, Windows Deployment Services, Microsoft Deployment Toolkit (MDT), and Configuration Manager | Windows Configuration Designer and Windows Autopilot |
 
 

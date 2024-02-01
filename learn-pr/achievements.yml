@@ -2803,3 +2803,13 @@ achievements:
   title: Core Cloud Services - Set up CORS for your website and storage assets
   summary: In this module, you'll set up Cross-Origin Resource Sharing (CORS) for your Azure website and storage assets in order to allow cross-domain access to your resources.
   iconUrl: /training/achievements/setup-cors-for-your-website-and-storage-assets.svg
+- uid: learn.build-azure-bot-services-bot.badge
+  type: badge
+  title: Build a chat bot with the Azure Bot Service
+  summary: The Azure Bot Service, combined with Microsoft QnA Maker, provides the tools developers need to build and publish intelligent bots that interact naturally with users using a range of services.
+  iconUrl: /training/achievements/build-chat-bot-with-azure-bot-service.svg
+- uid: learn.azure.choose-bot-building-tool.badge
+  type: badge
+  title: Choose a bot-building tool
+  summary: Identify the different tools available from Microsoft that you can use to create bots. Learn about Azure Bot Service, Microsoft Power Visual Agents, QnA Maker, and Bot Framework Composer and Azure Bot Service. 
+  iconUrl: /training/achievements/choose-bot-building-tool.svg
