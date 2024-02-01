@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.personalize-remote-development-workflow.settings-sync
-title: How to synchronize VS Code Settings
+title: What is Settings Sync
 metadata:
-  title: What Is Settings Sync
-  description: "Settings Sync allows you to backup your Visual Studio Code settings to the cloud and then restore them from anywhere else you run Visual Studio Code."
+  title: What is Settings Sync
+  description: "Settings Sync allows you to back up your Visual Studio Code settings to the cloud and then restore them from anywhere else you run Visual Studio Code."
   ms.date: 11/29/2022
   author: burkeholland
   ms.author: buhollan

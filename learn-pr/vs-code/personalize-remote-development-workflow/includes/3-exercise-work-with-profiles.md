@@ -2,21 +2,21 @@ In this exercise, you'll use profiles to create, manage and switch between VS Co
 
 ## Create a new profile
 
-1. Open VS Code
-1. Select on the gear icon in the bottom left corner of the window to open the **Manage** menu.
-1. Put your mouse over the "Profiles (Default)" menu option.
-1. Select "Create Profile"
+    1. Open VS Code
+    1. Select on the gear icon in the bottom left corner of the window to open the **Manage** menu.
+    1. Put your mouse over the "Profiles (Default)" menu option.
+    1. Select "Create Profile"
 
 :::image type="content" source="../media/3-create-profile.png" alt-text="Screenshot of VS Code create profile menu option.":::
 
-1. Name the profile "Remote SSH."
-1. Leave "Copy from" set to "None."
-1. Select on the gear icon to change the icon for the profile. You can choose any icon you like.
-1. Take the defaults for all other options.
+    1. Name the profile "Remote SSH."
+    1. Leave "Copy from" set to "None."
+    1. Select on the gear icon to change the icon for the profile. You can choose any icon you like.
+    1. Take the defaults for all other options.
 
 :::image type="content" source="../media/3-remote-ssh-profile.png" alt-text="Screenshot of VS Code create profile menu.":::
 
-1. Select "Create"
+    1. Select "Create"
 
 Observe how VS Code undergoes a reload. It gives the impression of a fresh installation, devoid of any extensions and displaying the default dark theme. If you made customizations to VS Code, rest assured, they remain intact. You can revert to your default profile whenever you wish."
 
@@ -56,15 +56,15 @@ Your editor should now look similar to this screenshot:
 
 You can export profiles to share with others. You can also use this feature to back up your profiles.
 
-1. Select on the custom icon in the bottom right corner of the window to open the **Manage** menu.
-1. Put your mouse over the "Profiles (Remote SSH)" menu option.
-1. Select the "Export Profile" option.
+    1. Select on the custom icon in the bottom right corner of the window to open the **Manage** menu.
+    1. Put your mouse over the "Profiles (Remote SSH)" menu option.
+    1. Select the "Export Profile" option.
 
 :::image type="content" source="../media/3-export-profile-option.png" alt-text="Screenshot of VS Code the Export Profile option in the Profiles menu.":::
 
-1. Accept all the default selections and select "Export."
-1. Select "local"
-1. Save the file as "remote-ssh-profile" to your "Documents" folder.
+    1. Accept all the default selections and select "Export."
+    1. Select "local"
+    1. Save the file as "remote-ssh-profile" to your "Documents" folder.
 
 ## Delete a profile
 
@@ -100,6 +100,3 @@ VS Code imports the profile and applies it. You'll see the GitHub Dark Dimmed th
 In this exercise, you learned how to create, manage and share profiles in VS Code. You also learned how to use profiles to share your configurations with others.
 
 In the next section, you'll learn about Settings Sync, a feature that allows you to sync your settings across multiple machines.
-
-
-

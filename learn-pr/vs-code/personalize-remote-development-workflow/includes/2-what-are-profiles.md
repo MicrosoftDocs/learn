@@ -1,12 +1,12 @@
 VS Code Profiles provide a way to organize and isolate customizations within the editor. A profile represents a specific set of configurations that can be easily activated or deactivated. With profiles, users can maintain separate configurations for different projects or teams, ensuring a seamless transition between different development environments.
 
-## What's in a Profile?
+## What's in a profile?
 
 Each profile in VS Code can include settings, extensions, key bindings, snippets, and tasks. Profiles can be created based on existing profiles, templates, or as empty profiles without any customizations.
 
 Keeping track of all of the info included in a profile can be beneficial. For example, when you start working on a new machine, you are immediately productive if your usual key bindings, snippets and more are instantly available instead of spending time recreating that on the new machine.
 
-## Creating and Managing Profiles
+## Creating and managing profiles
 
 To create a new profile, you can use the "Create Profile" command available in the File > Preferences > Profiles menu, or access the Profile menu within the gear icon. Profiles can be based on existing profiles or templates, or they can be created as empty profiles.
 
@@ -30,7 +30,7 @@ To effectively manage profiles in VS Code, it's important to follow certain best
 * Organize profiles: Use meaningful names for profiles and group them based on projects, teams, or workflows. These meaningful names and groupings help in quickly identifying and activating the desired profile.
 * Collaborate with teams: Share profiles with team members to ensure consistent configurations across the team. You can share profiles by exporting them and sharing via GitHub gists or local files.
 
-## Advanced Features and Customizations
+## Advanced features and customizations
 
 - You can associate profiles with specific workspaces to automatically activate the corresponding profile when opening the workspace.
 - When used with Settings Sync, profiles can be synchronized across multiple devices. This feature ensures that developers have consistent configurations regardless of the machine they're working on. You are diving into Settings Sync later in this module.

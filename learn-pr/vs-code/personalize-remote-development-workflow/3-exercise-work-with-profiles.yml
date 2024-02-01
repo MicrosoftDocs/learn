@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.personalize-remote-development-workflow.exercise-profiles
-title: Exercise - Work with Profiles
+title: Exercise - Work with profiles
 metadata:
-  title: Exercise -Work with Profiles
+  title: Exercise -Work with profiles
   description: "Learn how to create, manage and switch between different profiles in Visual Studio Code."
   ms.date: 11/29/2022
   author: burkeholland
