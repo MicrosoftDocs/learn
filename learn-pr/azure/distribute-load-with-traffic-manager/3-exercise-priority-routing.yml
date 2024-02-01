@@ -3,7 +3,7 @@ uid: learn.distribute-load-with-traffic-manager.3-exercise-priority-routing
 metadata:
   title: Exercise - Enable automatic failover by using priority routing
   description: In this hands-on exercise, you enable automatic failover by using priority routing
-  ms.date: 06/27/2023
+  ms.date: 01/31/2024
   author: greg-lindsay
   ms.author: greglin
   ms.topic: unit
