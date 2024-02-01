@@ -14,7 +14,7 @@ You need to set up some environment variables. Here are some notes about the var
 | `AZ_POSTGRES_SERVER_NAME` | The name of your PostgreSQL server. Nonalphanumeric characters aren't allowed: -, _, !, $, #, %. The name should be unique across Azure. Be sure to use a unique identifier. |
 | `AZ_POSTGRES_DB_NAME` | The PostgreSQL database name. The default name of the PostgreSQL database is `postgres`. |
 | `AZ_POSTGRES_USERNAME` | The default admin user name for your PostgreSQL database server. |
-| `AZ_POSTGRES_PASSWORD` | The default password for your PostgreSQL database server. |
+| `AZ_POSTGRES_PASSWORD` | The default password for your PostgreSQL database server. Use a secure password. |
 
 > [!NOTE]
 > You can name your Azure resources in any way that you want, but we recommend that you review [Abbreviation examples for Azure resources](/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations). This article provides example abbreviations for many Azure resources (for example, `rg` for resource groups and `ca` for container apps).
@@ -28,8 +28,8 @@ export AZ_LOCATION="eastus"
 export AZ_CONTAINERAPP="ca-${AZ_PROJECT}"
 export AZ_CONTAINERAPP_ENV="cae-${AZ_PROJECT}"
 export AZ_POSTGRES_DB_NAME="postgres-${AZ_PROJECT}"
-export AZ_POSTGRES_USERNAME="postgres"
-export AZ_POSTGRES_PASSWORD="postgres"
+export AZ_POSTGRES_USERNAME="<user-name>"
+export AZ_POSTGRES_PASSWORD="<secure-password>"
 export AZ_POSTGRES_SERVER_NAME="psql-${AZ_PROJECT}"
 ```
 

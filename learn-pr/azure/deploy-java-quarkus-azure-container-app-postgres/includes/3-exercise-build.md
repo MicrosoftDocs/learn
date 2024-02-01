@@ -199,7 +199,7 @@ Press [r] to resume testing, [o] Toggle test output, [:] for the terminal, [h] f
 
 To test the application, you can use `cURL`.
 
-In a separate terminal, create a new to-do item in the database with the following command.  You should see the log in the Quarkus console:
+In a separate terminal, create a new to-do item in the database with the following command.  You should see the sign-in the Quarkus console:
 
 ```bash
 curl --header "Content-Type: application/json" \
@@ -233,7 +233,7 @@ This command returns the list of to-do items, including the items you created:
 
 ```json
 [ 
-  {"id":1,"description":"Take Quarkus MS Learn","details":"Take the MS Learn on deploying Quarkus to Azure Container Apps","done":true},
+  {"id":1,"description":"Take Quarkus training","details":"Take the training module on deploying Quarkus to Azure Container Apps","done":true},
   {"id":2,"description":"Take Azure Container Apps MS Learn","details":"Take the ACA Learn module","done":false}
 ]
 ```
@@ -266,8 +266,8 @@ class TodoResourceTest {
     @Test
     void shouldCreateATodo() {
         Todo todo = new Todo();
-        todo.description = "Take Quarkus MS Learn";
-        todo.details = "Take the MS Learn on deploying Quarkus to Azure Container Apps";
+        todo.description = "Take Quarkus training";
+        todo.details = "Take the training module on deploying Quarkus to Azure Container Apps";
         todo.done = true;
 
         given().body(todo)
