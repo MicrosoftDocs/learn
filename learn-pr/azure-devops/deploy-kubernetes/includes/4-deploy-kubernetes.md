@@ -122,7 +122,7 @@ The [Kubernetes manifest task](/azure/devops/pipelines/tasks/reference/kubernete
 1. Now let's go check out our deployed web app and API endpoint. To do so, we need to get the external IP addresses for both the *web* and *leaderboard* services.
 1. Navigate to Azure portal, select your AKS cluster, and then select **Services and ingresses**.
 
-    :::image type="content" source="../media/aks-external-ip.png" alt-text="Screenshot of how to find the external IPs for your web and leaderboard services." lightbox="./media/aks-external-ip.png":::
+    :::image type="content" source="../media/aks-external-ip.png" alt-text="Screenshot of how to find the external IPs for your web and leaderboard services." lightbox="../media/aks-external-ip.png":::
 
 1. Select the **External IP** for your *web* service to view your site on AKS.
 
