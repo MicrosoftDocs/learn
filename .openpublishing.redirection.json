@@ -32370,6 +32370,96 @@
       "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/9-microsoft-entra-id-authentication-verification-methods.md",
       "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/10-microsoft-entra-id-authentication-verification-methods",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-chat-bot-with-azure-bot-service/index.yml",
+      "redirect_url": "/azure/bot-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-chat-bot-with-azure-bot-service/1-introduction.yml",
+      "redirect_url": "/azure/bot-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-chat-bot-with-azure-bot-service/2-create-web-app-bot.yml",
+      "redirect_url": "/azure/bot-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-chat-bot-with-azure-bot-service/3-create-qna-maker.yml",
+      "redirect_url": "/azure/bot-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-chat-bot-with-azure-bot-service/4-deploy-bot.yml",
+      "redirect_url": "/azure/bot-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-chat-bot-with-azure-bot-service/5-debug-bot-locally.yml",
+      "redirect_url": "/azure/bot-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-chat-bot-with-azure-bot-service/6-connect-to-knowledge-base.yml",
+      "redirect_url": "/azure/bot-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-chat-bot-with-azure-bot-service/7-summary.yml",
+      "redirect_url": "/azure/bot-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-chat-bot-with-azure-bot-service/8-knowledge-check.yml",
+      "redirect_url": "/azure/bot-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-bot-building-tool/index.yml",
+      "redirect_url": "/azure/bot-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-bot-building-tool/1-introduction.yml",
+      "redirect_url": "/azure/bot-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-bot-building-tool/2-identify-product-options.yml",
+      "redirect_url": "/azure/bot-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-bot-building-tool/3-analyze-decision-criteria.yml",
+      "redirect_url": "/azure/bot-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-bot-building-tool/4-use-power-virtual-agents.yml",
+      "redirect_url": "/azure/bot-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-bot-building-tool/5-use-qna-maker.yml",
+      "redirect_url": "/azure/bot-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-bot-building-tool/6-use-bot-framework-composer-bot-service.yml",
+      "redirect_url": "/azure/bot-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-bot-building-tool/7-knowledge-check.yml",
+      "redirect_url": "/azure/bot-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-bot-building-tool/8-summary.yml",
+      "redirect_url": "/azure/bot-service/",
+      "redirect_document_id": false
     }
   ]
 }
