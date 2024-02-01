@@ -1,10 +1,10 @@
-In this exercise, you'll learn how to:
+In this exercise, you learn how to:
 
 1. Create and use a tunnel through the [code CLI](https://code.visualstudio.com/docs/editor/command-line). 
 1. Install the code CLI on a remote machine you want to work against.  
 1. Have the code CLI establishes a tunnel between a VS Code client and your remote machine.
 
-There are 2 options to obtain the code CLI. From the VS Code download page or from the command prompt.
+There are two options to obtain the CLI code: either from the VS Code download page or through the command prompt
 
 ## Using the 'code' CLI
 ### Get the code CLI from the VS Code download page
@@ -23,7 +23,7 @@ There are 2 options to obtain the code CLI. From the VS Code download page or fr
 1. From the terminal, navigate to the TestCLI directory
 
 ### Install and unpack the code CLI through the terminal
-Not all computers have a UI and if this is the case and you can't access the VS Code download page, you can use the terminal to install the code CLI.
+Not all computers have a UI and if so and you can't access the VS Code download page, you can use the terminal to install the code CLI.
 Assuming you created the folder TestCLI in the previously, you can use the following commands to install the code CLI.
 
 1. From the TestCLI directory in the terminal, run the following command:
@@ -43,7 +43,7 @@ code tunnel
 ```
 This above command downloads and starts the VS Code Server on this machine and then creates a tunnel to it. 
 
-2. Accept license terms by logging into GitHub and submitting provided code like below (yours will be different):
+2. Accept the license terms by logging into GitHub and submitting the provided code like below (yours is different):
 
 :::image type="content" source="../media/1. signIn.png" alt-text="Device Activation":::
 
@@ -55,7 +55,7 @@ You should see a congratulations message like below:
 :::image type="content" source="../media/3. congrats.png" alt-text="Confirmation":::
 
 
-This code CLI will output a vscode.dev URL tied to this remote machine, such as 
+This code CLI outputs a vscode.dev URL tied to this remote machine, such as
 
 ```https://vscode.dev/tunnel/<machine_name>/<folder_name>``` 
 :::image type="content" source="../media/4. link.png" alt-text="Provided link":::
@@ -63,4 +63,4 @@ This code CLI will output a vscode.dev URL tied to this remote machine, such as
 3. Open this URL on a client of your choosing. 
 1. Log into your GitHub
 
-This authenticates you to the tunneling service to ensure you have access to the right set of remote machines. 
+This process authenticates you to the tunneling service to ensure you have access to the right set of remote machines. 

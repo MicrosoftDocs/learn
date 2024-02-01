@@ -1,11 +1,13 @@
 
 ## What are tunnels?
 
-Tunnels are a networking concept that involve creating a secure and direct connection between two separate networks or devices, allowing data to be transmitted privately across different networks or the internet. There are several issues that led to the need for this technology but let's discuss a scenario and why tunnels are useful for that case.
+:::image type="content" source="../media/16. Networks.jpg" alt-text="Network Server Image":::
+
+Tunnels are a networking concept that involves creating a secure and direct connection between two separate networks or devices, allowing data to be transmitted privately across different networks or the internet. There are several issues that led to the need for this technology but let's discuss a scenario and why tunnels are useful for that case.
 
 ### The problems
 
-In a scenario where a software development team is distributed across various locations and needs to interact with a remote server containing essential resources and applications, secure and efficient access becomes a critical requirement. The server, housed within the company's data center, contains vital development tools and databases necessary for the team's work. However, due to stringent security policies, direct access to this server from external networks is heavily restricted. Traditional solutions, such as VPNs, are often cumbersome, leading to slow connections and hindering productivity. Furthermore, these solutions can be complex and resource-intensive to set up and maintain, posing additional challenges for developers. 
+There's a development team that is spread across various locations. The team needs to interact with a remote server containing essential resources and applications. Having secure and efficient access is a critical requirement. The server, housed within their company's data center, contains vital development tools and databases necessary for the team's work. Due to stringent security policies, direct access to this server from external networks is heavily restricted. In such a situation, traditional solutions, such as VPNs, can be cumbersome, leading to slow connections and hindering productivity for developers. 
 
 ### Use cases for tunnels 
 
@@ -14,7 +16,9 @@ In the scenario mentioned earlier, a developer needs to work on an application t
 ## VS Code Remote - Tunnels extension 
 ### Why use it? 
 
-The use of Tunnels offers a streamlined solution to many challenges so it should be no surpise tools and extensions have become availble for dev tool like VS Code. The VS Code Remote - Tunnels extension can eliminate the need for source code to be on your VS Code client machine since the extension runs commands and other extensions directly on the remote machine. This is possible because of the <a href="https://code.visualstudio.com/docs/remote/vscode-server" target="_blank">VS Code Server</a> which is a service that can run on a remote development machine, like your desktop PC or a virtual machine (VM). It allows you to securely connect to that remote machine from anywhere through a local VS Code client, without the requirement of SSH.
+The use of Tunnels offers a streamlined solution to many challenges.  Extensions are now available for dev tool like VS Code. The VS Code Remote - Tunnels extension can eliminate the need for source code to be on your VS Code client machine since the extension runs commands and other extensions directly on the remote machine. This approach is possible because of the <a href="https://code.visualstudio.com/docs/remote/vscode-server" target="_blank">VS Code Server</a>, which is a service that can run on a remote development machine, like your desktop PC or a virtual machine (VM). It allows you to securely connect to that remote machine from anywhere through a local VS Code client, without the requirement of SSH.
+
+:::image type="content" source="../media/8. remoteChart.png" alt-text="VS Code & Remote OS Image":::
 
 ### Setting up VS Code Remote - Tunnels extension 
 
@@ -34,7 +38,7 @@ If installing the complete VS Code Desktop on your remote machine isn't feasible
 
 ### Preparing for Exercises
 
-In the upcoming exercises, you will be using both the VS Code Desktop and the code CLI to set up tunnels. To prepare for these exercises, you will want to have some sample code in a files and folders available on your local machine. Let's take care of that now.:
+In the upcoming exercises, you are using both the VS Code Desktop and the code CLI to set up tunnels. To prepare for these exercises, you want to have some sample code in a file and folder available on your local machine. Let's dive right in.:
 
 1. On your hard drive, create a TestUI folder  
 :::image type="content" source="../media/10. Folder 1.png" alt-text="Creating Folder Image":::

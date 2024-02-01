@@ -26,12 +26,12 @@ quiz:
           isCorrect: false
     - content: What format seems correct for a vscode.dev URL tied to a remote machine & folder? 
       choices:
-        - content: https://vscode.dev/tunnel/<folder_name>/<machine_name>
+        - content: vscode.dev/tunnel/<folder_name>/<machine_name>
           isCorrect: true
           explanation: Correct. This is the right format. The others will not work.
-        - content: https://vscode.dev/tunnel/<machine_name_folder_name> 
+        - content: vscode.dev/tunnel/<machine_name_folder_name> 
           isCorrect: false
-        - content: https://vscode.dev/tunnel/<machine_name>/<folder_name>
+        - content: vscode.dev/tunnel/<machine_name>/<folder_name>
           isCorrect: false
     - content: Which statement is most true?
       choices:

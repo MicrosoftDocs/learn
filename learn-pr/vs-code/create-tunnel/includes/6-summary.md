@@ -8,7 +8,7 @@ For continued learning, below are a few topics/resources worth exploring that re
 
 - <a href="https://code.visualstudio.com/docs/remote/vscode-server" target="_blank">VS Code Server</a> - Article explaining in more detail how the VS Code Server works. 
 
-- <a href="https://learn.microsoft.com/en-us/azure/developer/dev-tunnels/overview" target="_blank">Microsoft Dev Tunnels</a> - Article diving deeper into what dev tunnels are and how they function under the hood. 
+- <a href="https://learn.microsoft.com/azure/developer/dev-tunnels/overview" target="_blank">Microsoft Dev Tunnels</a> - Article diving deeper into what dev tunnels are and how they function under the hood. 
 
 - <a href="http://vscode.dev" target="_blank">vscode.dev</a> - A detailed article about vscode.dev as it relates to cloud tools, extensions, GitHub, customization & more.  
 
