@@ -20,6 +20,7 @@ abstract: |
 prerequisites: |
   - Completion of the ThreadX learning path, a working knowledge of C/C++ and GitHub will be most helpful.
 iconUrl: /training/achievements/iot/netx-duo-build-a-tcp-echo-client.svg
+hidden: true
 levels:
   - beginner
 roles:

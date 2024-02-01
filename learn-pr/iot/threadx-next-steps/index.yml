@@ -21,6 +21,7 @@ prerequisites: |
   - Working knowledge of C or C++
   - Previous modules in this [learning path](/training/paths/azure-rtos-threadx)
 iconUrl: /training/achievements/iot/threadx-next-steps.svg
+hidden: true
 levels:
 - beginner
 roles:
