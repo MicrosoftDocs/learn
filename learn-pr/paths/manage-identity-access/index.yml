@@ -23,7 +23,6 @@ subjects:
 - identity-access
 modules:
 - learn.wwl.hybrid-identity
-- learn.wwl.azure-ad-privileged-identity-management
 - learn.wwl.enterprise-governance
 trophy:
   uid: learn.wwl.manage-identity-access.trophy
