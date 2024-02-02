@@ -31,6 +31,5 @@ subjects:
 - identity-access
 units:
 - learn.wwl.azure-ad-identity-protection.user-risk-policy
-- learn.wwl.azure-ad-identity-protection.summary
 badge:
   uid: learn.wwl.azure-ad-identity-protection.badge
