@@ -32740,6 +32740,11 @@
       "source_path": "learn-pr/wwl-azure/hybrid-identity/8-password-writeback.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/hybrid-identity/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
     }
   ]
 }
