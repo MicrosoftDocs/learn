@@ -2818,3 +2818,8 @@ achievements:
   title: Choose a bot-building tool
   summary: Identify the different tools available from Microsoft that you can use to create bots. Learn about Azure Bot Service, Microsoft Power Visual Agents, QnA Maker, and Bot Framework Composer and Azure Bot Service. 
   iconUrl: /training/achievements/choose-bot-building-tool.svg
+- uid: learn.wwl.azure-active-directory.badge
+  type: badge
+  title: Secure Azure solutions with Microsoft Entra ID
+  summary: Explore how to securely configure and administer your Microsoft Entra instance.
+  iconUrl: /training/achievements/azure-active-directory.svg
