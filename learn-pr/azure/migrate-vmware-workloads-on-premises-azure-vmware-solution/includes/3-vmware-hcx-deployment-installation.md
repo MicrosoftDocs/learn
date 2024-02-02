@@ -1,6 +1,6 @@
-Remember that VMware HCX Advanced deploys by default when Azure VMware Solution deploys in Azure. Before configuring site pairings for your migration, the next step involves deployment and configuration of VMware HCX Connector on-premises. 
+Remember that VMware HCX Advanced deploys by default when Azure VMware Solution deploys in Azure. Before configuring site pairings for your migration, use the next steps for deployment and configuration of VMware HCX Connector on-premises. 
 
-To complete the exercises, you'll need access to an Azure subscription with contributor rights assigned to configure an Azure VMware Solution environment.
+To complete the exercises, you need access to an Azure subscription with contributor rights assigned to configure an Azure VMware Solution environment.
 
 ## Download VMware HCX Connector
 
@@ -16,7 +16,7 @@ Before you deploy VMware HCX Connector in the on-premises vCenter, download the 
 
 1. This action triggers a build of VMware HCX Advanced within the Azure VMware Solution private cloud.
 
-1. After the build completes, you should get a similar screen to the following:
+1. After the build completes, you should see a similar screen to the following image:
 
     :::image type="content" source="../media/3-hcx-deployment-complete.png" alt-text="Screenshot displaying that the VMware HCX add-on installed after enabling the service within the Azure VMware Solution private cloud.":::
 
@@ -26,15 +26,15 @@ Before you deploy VMware HCX Connector in the on-premises vCenter, download the 
 
     :::image type="content" source="../media/3-migration-hcx-start.png" alt-text="Screenshot showing that the VMware HCX add-on is enabled and that there are more options to configure after the add-on finishes installing.":::
 
-1. Select **+ Add** under **Connect with on-premise using HCX keys** to generate a key that you'll use for the on-premises HCX Connector installation.
+1. Select **+ Add** under **Connect with on-premise using HCX keys** to generate a key that you use for the on-premises HCX Connector installation.
 
-1. Supply a VMware HCX key name and you'll see the activation key show up within this pane. This is the key you'll use to activate the on-premises VMware HCX Connector appliance.
+1. Supply a VMware HCX key name and you see the activation key shows up within this pane. This key is used to activate the on-premises VMware HCX Connector appliance.
 
     :::image type="content" source="../media/3-add-hcx-key-portal.png" alt-text="Screenshot that shows where to add the VMware HCX key in the Azure portal for use on-premises.":::
 
 1. Next, under **Manage** on the Azure VMware Solution private cloud, select **Identity**.
 
-1. The URLs and user credentials for the Azure VMware Solution vCenter and NSX-T Manager will appear. Use the copy feature to paste the credential information into the web browser on the jump host VM.
+1. The URLs and user credentials for the Azure VMware Solution vCenter and NSX-T Manager appears. Use the copy feature to paste the credential information into the web browser on the jump host VM.
 
      :::image type="content" source="../media/3-display-user-credentials.png" alt-text="Screenshot of where to find the vCenter and NSX sign-in information in the Azure portal.":::
 
@@ -52,7 +52,7 @@ Before you deploy VMware HCX Connector in the on-premises vCenter, download the 
 
     :::image type="content" source="../media/3-download-vmware-hcx-ova.png" alt-text="Screenshot of selecting VMware HCX, which downloads the OVA file for deployment on-premises.":::
 
-1. In the web browser you've chosen to use, you'll see a status bar. This status bar highlights how long it takes to download the OVA file.
+1. In the web browser you chose to use, you see a status bar. This status bar highlights how long it takes to download the OVA file.
 
     :::image type="content" source="../media/3-status-bar-ova-download.png" alt-text="Screenshot displaying the status of downloading the OVA file for deployment.":::
 
@@ -92,7 +92,7 @@ Next, the VMware HCX Connector OVA file needs to be installed in the on-premises
 
     :::image type="content" source="../media/3-select-networks.png" alt-text="Screenshot of selecting the right management network on-premises.":::
 
-1. In **Customize template**, note that the user account used to configure VMware HCX Connector is *admin*. Enter all required information, then select **Next**.
+1. In **Customize template**, note the user account used to configure VMware HCX Connector is *admin*. Enter all required information, then select **Next**.
 
     :::image type="content" source="../media/3-customize-template.png" alt-text="Screenshot of customizing the OVA template file for the VMware HCX Connector deployment on-premises.":::
 
@@ -112,11 +112,11 @@ After deploying and powering on the VMware HCX Connector appliance on-premises, 
 
 1. Provide a name for the key and wait for Azure to generate a VMware HCX Advanced key for use on-premises.
 
-    :::image type="content" source="../media/3-request-hcx-key.png" alt-text="Screenshot after the VMware HCX Advanced key has been requested from the Azure portal.":::
+    :::image type="content" source="../media/3-request-hcx-key.png" alt-text="Screenshot after the VMware HCX Advanced key is requested from the Azure portal.":::
 
 1. Use the admin credentials you configured earlier to sign in to the on-premises VMware HCX Manager at `https://x.x.x.x:9443`. Replace the x's with the IP address configured for the on-premises appliance.
 
-1. When prompted, enter your key for **HCX License Key**, then select **Add**. If you receive any errors during activation, the on-premises environment might not have open internet access or a proxy configured for activation. Check internet connectivity if VMware HCX Connector on-premises won't activate.
+1. When prompted, enter your key for **HCX License Key**, then select **Add**. If you receive any errors during activation, the on-premises environment might not have open internet access or a proxy configured for activation. Check internet connectivity if VMware HCX Connector on-premises doesn't activate.
 
     :::image type="content" source="../media/3-enter-hcx-license-key.png" alt-text="Screenshot of where to enter the VMware HCX Connector license key on-premises.":::
 
