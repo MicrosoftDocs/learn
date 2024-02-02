@@ -22,6 +22,7 @@ prerequisites: |
   - Working knowledge of C or C++, GitHub and Visual Studio
   - Previous modules in the [Azure RTOS ThreadX learning path](/training/paths/azure-rtos-threadx)
 iconUrl: /training/achievements/iot/threadx-event-notification.svg
+hidden: true
 levels:
   - beginner
 roles:
