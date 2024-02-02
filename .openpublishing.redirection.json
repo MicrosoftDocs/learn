@@ -32510,6 +32510,11 @@
       "source_path": "learn-pr/wwl-azure/azure-active-directory/10-azure-active-directory-groups.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-active-directory/9-azure-active-directory-users.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
     }
   ]
 }
