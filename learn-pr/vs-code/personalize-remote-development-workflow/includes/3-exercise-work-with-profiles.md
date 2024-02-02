@@ -56,15 +56,15 @@ Your editor should now look similar to this screenshot:
 
 You can export profiles to share with others. You can also use this feature to back up your profiles.
 
-    1. Select on the custom icon in the bottom right corner of the window to open the **Manage** menu.
-    1. Put your mouse over the "Profiles (Remote SSH)" menu option.
-    1. Select the "Export Profile" option.
+1. Select on the custom icon in the bottom right corner of the window to open the **Manage** menu.
+1. Put your mouse over the "Profiles (Remote SSH)" menu option.
+1. Select the "Export Profile" option.
 
-:::image type="content" source="../media/3-export-profile-option.png" alt-text="Screenshot of VS Code the Export Profile option in the Profiles menu.":::
+    :::image type="content" source="../media/3-export-profile-option.png" alt-text="Screenshot of VS Code the Export Profile option in the Profiles menu.":::
 
-    1. Accept all the default selections and select "Export."
-    1. Select "local"
-    1. Save the file as "remote-ssh-profile" to your "Documents" folder.
+1. Accept all the default selections and select "Export."
+1. Select "local"
+1. Save the file as "remote-ssh-profile" to your "Documents" folder.
 
 ## Delete a profile
 

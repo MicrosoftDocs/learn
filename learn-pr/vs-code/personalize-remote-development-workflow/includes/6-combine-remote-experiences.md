@@ -22,6 +22,6 @@ This command allows you to specify the IP address of the machine you wish to con
 
 Once you connect to the remote machine, you can open a project with a dev container configuration by using the **Dev Containers: Open Folder in Container** command in the Command Palette. There's nothing special about running a dev container on a remote machine. The process is the same as running a dev container locally.
 
-:::image type="content" source="../media/6-dev-container-ssh.png" alt-text="Screenshot of remote indicator in Visual Studo Code showing a dev container running at a remote SSH address.":::
+:::image type="content" source="../media/6-dev-container-ssh.png" alt-text="Screenshot of remote indicator in Visual Studio Code showing a dev container running at a remote SSH address.":::
 
 There's now a dev container running on a remote machine. In this scenario, you would be remoted into the virtual machine with SSH, and then remoted into the dev container with VS Code. This allows you to apply the power of the remote machine while still having a consistent development environment with dev container configurations.
