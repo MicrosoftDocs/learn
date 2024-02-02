@@ -37,7 +37,6 @@ units:
 - learn.wwl.azure-ad-identity-protection.sign-risk-policy
 - learn.wwl.azure-ad-identity-protection.multi-factor-authentication-settings
 - learn.wwl.azure-ad-identity-protection.enabling-multi-factor-authentication
-- learn.wwl.azure-ad-identity-protection.demonstrations
 - learn.wwl.azure-ad-identity-protection.knowledge-check
 - learn.wwl.azure-ad-identity-protection.summary
 badge:
