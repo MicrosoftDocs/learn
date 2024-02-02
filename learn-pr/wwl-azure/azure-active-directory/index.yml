@@ -29,6 +29,5 @@ products:
 subjects:
 - identity-access
 units:
-- learn.wwl.azure-active-directory.summary
 badge:
   uid: learn.wwl.azure-active-directory.badge
