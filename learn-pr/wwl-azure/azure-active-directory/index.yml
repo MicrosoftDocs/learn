@@ -31,7 +31,6 @@ subjects:
 units:
 - learn.wwl.azure-active-directory.roles-aad
 - learn.wwl.azure-active-directory.passwordless
-- learn.wwl.azure-active-directory.knowledge-check
 - learn.wwl.azure-active-directory.summary
 badge:
   uid: learn.wwl.azure-active-directory.badge
