@@ -22,7 +22,6 @@ products:
 subjects:
 - identity-access
 modules:
-- learn.wwl.hybrid-identity
 - learn.wwl.enterprise-governance
 trophy:
   uid: learn.wwl.manage-identity-access.trophy
