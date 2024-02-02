@@ -4,9 +4,9 @@ Suppose you joined a team that is implementing an Azure IoT solution for the com
 
 In this module, you will:
 
-* Examine the Azure CLI support for the DPS
-* Examine PowerShell support for the DPS
-* Examine the SDKs associated with the DPS
+* Examine the Azure CLI support for DPS
+* Examine PowerShell support for DPS
+* Examine the SDKs associated with DPS
 * Examine user permissions and how to control access to DPS
 
-By the end of this module, you will be able to describe the coding tool options that can be used to deploy devices at scale using the Azure IoT Hub Device Provisioning Service.
+By the end of this module, you'll be able to describe the coding tool options that can be used to deploy devices at scale using the Azure IoT Hub Device Provisioning Service.
