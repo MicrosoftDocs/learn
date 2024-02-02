@@ -171,7 +171,7 @@ Make sure Docker is running locally on your machine and run the to-do applicatio
 
 ```bash
 cd todo
-./mvnw quarkus:dev
+mvnw.cmd quarkus:dev
 ```
 
 The Quarkus application should start and connect to your database. You should see the following output:
@@ -282,7 +282,7 @@ class TodoResourceTest {
 When you test the application, Docker Desktop needs to be running because Quarkus detects that it needs the PostgreSQL database for testing. Test the application by using this command:
 
 ```bash
-./mvnw clean test
+mvnw.cmd clean test
 ```
 
 You should see the following output:
