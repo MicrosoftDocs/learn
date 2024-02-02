@@ -9,7 +9,7 @@ The Device Provisioning Service supports two types of enrollments:
 
 ## Device enrollment tools
 
-The tool that you choose for a particular device enrollment scenario, and the corresponding implementation steps, will vary based on situational requirements, but the processes are discrete and defined.
+The tool that you choose for a particular device enrollment scenario, and the corresponding implementation steps, varies based on situational requirements, but the processes are discrete and defined.
 
 There are four tools that you can use to perform DPS device enrollment tasks:
 
