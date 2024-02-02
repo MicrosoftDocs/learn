@@ -32560,6 +32560,11 @@
       "source_path": "learn-pr/wwl-azure/azure-ad-identity-protection/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-ad-identity-protection/11-access-reviews.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
     }
   ]
 }
