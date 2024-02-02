@@ -1,6 +1,6 @@
-On a Windows Data Science Virtual Machine (DSVM), the graphical desktop is available via Remote Desktop Protocol.
+On a Windows Data Science Virtual Machine (DSVM), the graphical desktop is available via Remote Desktop Protocol (RDP).
 
-With SSH, you can connect to the command line of the Data Science Virtual Machine. Both Windows and Ubuntu DSVM images support SSH connection.
+With SSH, you can connect to the command line of the DSVM. Both Windows and Ubuntu DSVM images support SSH connection.
 
 ## Connect to a Windows server by using RDP
 
@@ -8,7 +8,7 @@ To connect to a Windows DSVM with Remote Desktop:
 
 1. If necessary, download the [Microsoft Remote Desktop client](https://www.microsoft.com/p/microsoft-remote-desktop/9wzdncrfj3ps?portal=true).
 
-1. Go to the DSVM in the portal.
+1. Go back to the DSVM in the Azure portal.
 
 1. Select **Connect** > **RDP**.
 
@@ -16,11 +16,11 @@ To connect to a Windows DSVM with Remote Desktop:
 
 1. Open the file in Microsoft Remote Desktop to connect.
 
-![Screenshot of the portal showing the RDP file download page.](../media/download-rdp-file.png)
+    :::image type="content" source="../media/download-rdp-file.png" alt-text="Screenshot of the portal showing the RDP file download page.":::
 
 ## Connect to the command line by using SSH
 
-To access the command line of your DSVM, you'll use:
+To access the command line of your DSVM, you use:
 
 - An SSH client running in a terminal on your local machine.
 - The username and password that you specified during creation.
@@ -47,9 +47,9 @@ If the `State` value of `OpenSSH.Client` isn't `Installed`, run:
 Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 ```
 
-## Connect by using an SSH client from the command line
+### Connect by using an SSH client from the command line
 
-From a terminal or a PowerShell console, run the following code. Replace your username and the IP address for `1.1.1.1`.
+From a terminal or a PowerShell console, run the following code. Replace `UserName` and `1.1.1.1` with your username and IP address.
 
 ```bash
 ssh UserName@1.1.1.1

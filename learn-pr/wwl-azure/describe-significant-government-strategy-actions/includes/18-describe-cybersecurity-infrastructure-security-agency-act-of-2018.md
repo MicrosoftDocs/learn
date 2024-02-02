@@ -49,4 +49,4 @@ The act states that “DHS shall report on its leadership role in cloud-based cy
 
 ## Importance
 
-The establishment of CISA as an Agency within the Department of Homeland Security is as important as the establishment of Customs and Border Protection, the Coast Guard, the Transportation Security Agency, or even the U.S. Secret Service. These components play an integral role in protecting the national security of the United States, its states, territories, localities, and tribal lands.
+The establishment of CISA as an Agency within the Department of Homeland Security is as important as the establishment of Customs and Border Protection, the Coast Guard, the Transportation Security Agency, or even the U.S. Secret Service. These components play an integral role in protecting the security of the United States, its states, territories, localities, and tribal lands.

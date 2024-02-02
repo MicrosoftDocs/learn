@@ -65,14 +65,12 @@ The commands executed by the script used in this module expect a `--location` op
 az configure --defaults location=<desired location>
 ```
 
-Use the same location that you used when creating the resource group in the previous unit.
-
 > [!NOTE]
 > We advise you to change to the same region for deploying your Java EE application.
 
 ## Create an Azure Database for MySQL instance
 
-After you've signed in, use the project script `setup_mysql.sh` to create your Azure Database for MySQL instance.
+After you've signed in, use the project script `setup_mysql.sh` to create your Azure Database for MySQL instance. Make sure you're in the `mslearn-jakarta-ee-azure` directory.
 
 > [!IMPORTANT]
 > Run the following command in an IPv4 environment. If your environment has a IPv6 address, this command will fail because the firewall configuration for it doesn't support IPv6 addresses yet.
@@ -127,6 +125,9 @@ In this module, you'll use a sample database called `world` from the official My
    ```bash
    cd world-db
    ls -l world.sql
+   ```
+ 
+   ``` output
    -rw-r--r--  1 ******  wheel  398635  1  7 12:25 world.sql
    ```
 
@@ -165,6 +166,7 @@ Query OK, 0 rows affected (0.01 sec)
 
 mysql>
 ```
+
 The `world` database and its tables are automatically created in your MySQL database. This action takes several minutes.
 
 ## Confirm the database and tables
@@ -284,5 +286,4 @@ Now you can view the contents of the `world` database.
 
 ## Unit summary
 
-You've now completed the setup and preparation for your MySQL Server.
-In the next unit, you see the steps to deploy the Java EE (Jakarta EE) application to JBoss EAP on Azure App Service and configure it.
+You've now completed the setup and preparation for your MySQL Server. In the next unit, you see the steps to deploy the Java EE (Jakarta EE) application to JBoss EAP on Azure App Service and configure it.

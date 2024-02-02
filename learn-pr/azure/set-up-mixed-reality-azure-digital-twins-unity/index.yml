@@ -5,17 +5,17 @@ metadata:
   description: Get step-by-step guidance on how to set up and configure a mixed reality project in Unity. Learn about the Azure Digital Twins and SignalR services and common use cases for the Azure platform in Mixed Reality.
   author: JBrentJ
   ms.author: jejacks
-  ms.date: 05/12/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/24/2024
+  ms.topic: module
+  ms.service: digital-twins
 title: Set up a mixed reality project for Azure Digital Twins in Unity 
 summary: Learn how to set up a mixed reality project and learn about Azure Digital Twins and Unity.
 abstract: |
   By the end of this module, you'll be able to:
-  - Understand the breadth of Mixed Reality use cases for industry
-  - Describe a Digital Twins and summarize how they can be used in business settings
-  - Summarize Digital Twins platforms and services such as Azure Digital Twins and Unity
-  - Install and configure your development environment for building Mixed Reality solutions using Azure Digital Twins and Unity
+  - Understand the breadth of Mixed Reality use cases for industry.
+  - Describe Digital Twins and summarize how they can be used in business settings.
+  - Summarize Digital Twins platforms and services such as Azure Digital Twins and Unity.
+  - Install and configure your development environment for building Mixed Reality solutions using Azure Digital Twins and Unity.
 iconUrl: /training/achievements/set-up-mixed-reality-azure-digital-twins-unity.svg
 levels:
 - beginner
@@ -27,7 +27,7 @@ roles:
 products:
 - azure
 - azure-cloud-services
-- azure-cognitive-services
+- ai-services
 - azure-digital-twins
 - azure-iot
 - azure-iot-hub
@@ -38,7 +38,7 @@ products:
 - windows-mixed-reality
 prerequisites: |
   - Azure service creation and configuration
-  - Domain User Azure Active Directory (i.e, not Guest)
+  - Domain User Microsoft Entra ID (i.e., not Guest)
   - [Azure CLI](/cli/azure/install-azure-cli) installed
   - Bing Maps developer account 
   - A Windows 10 PC configured with the required tools

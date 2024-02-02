@@ -1,11 +1,11 @@
-Questions are always on the mind of anyone who's deploying or modifying resources in an environment:
+Anyone who's deploying or modifying resources in an environment has questions like these on their mind:
 
 - Will I break something?
 - Am I going to delete anything?
 - How will this deployment affect existing resources?
 - Can I validate that what I expect to happen is actually what will happen in the deployment, before I hit the deploy button?
 
-Deploying and hoping for the best is not a good approach. A better approach is using the *what-if* operation. This operation helps you anticipate what consequences a new deployment will have, if you attempt it.
+Deploying and hoping for the best isn't a good approach. A better approach is using the *what-if* operation. This operation helps you anticipate the consequences of a new deployment, if you attempt it.
 
 Azure Resource Manager provides the what-if operation to highlight the changes when you deploy a template. The what-if operation doesn't make any changes to existing resources. Instead, it predicts the changes if the specified template is deployed at a resource group and subscription level.
 
@@ -101,8 +101,8 @@ When you use the what-if operation, it lists six types of changes:
 | Type | Explanation | Effect |
 |-|-|-|
 | Create | The resource doesn't currently exist but is defined in the template. | The resource will be created. |
-| Delete | This change type applies only when you're using complete mode for deployment. The resource exists but isn't defined in the template. | If you deploy by using incremental mode, the resource will not be deleted. If you deploy by using complete mode, the resource will be deleted. Note that this change type is returned only for resources that support deletion through complete mode. |
-| Ignore | The resource exists but isn't defined in the template. | The resource won't be deployed or modified. This happens when you use incremental mode, which is the default deployment mode. If you deploy by using complete mode, the resource will be deleted. |
+| Delete | This change type applies only when you're using complete mode for deployment. The resource exists but isn't defined in the template. | If you deploy by using incremental mode, the resource isn't deleted. If you deploy by using complete mode, the resource is deleted. This change type is returned only for resources that support deletion through complete mode. |
+| Ignore | The resource exists but isn't defined in the template. | When you use incremental mode, which is the default deployment mode, the resource isn't deployed or modified. If you deploy by using complete mode, the resource will be deleted. |
 | NoChange | The resource exists and is defined in the template. | The resource will be redeployed, but the properties of the resource won't change. This change type is returned when the result format is set to `FullResourcePayloads`, which is the default result format. |
 | Modify | The resource exists and is defined in the template. | The resource will be redeployed, and the properties of the resource will change. This change type is returned when the result format is set to `FullResourcePayloads`, which is the default result format. |
 | Deploy | The resource exists and is defined in the template. | The resource will be redeployed. The properties of the resource might or might not change. The operation returns this change type when it doesn't have enough information to determine if any properties will change. You see this condition only when the result format is set to `ResourceIdOnly`. |
@@ -137,7 +137,7 @@ You can get the raw JSON results by appending the `--no-pretty-print` argument t
 
 ## Deployment modes and deletion of resources
 
-There are times when you'll want to confirm the deletion of resources as you deploy the template. To that end, the what-if operation accounts for the deployment mode that you use. If you use the *complete* deployment mode, Resource Manager will report the resources that it will delete because they aren't defined in your deployment.
+There are times when you want to confirm the deletion of resources as you deploy the template. To that end, the what-if operation accounts for the deployment mode that you use. If you use the *complete* deployment mode, Resource Manager reports the resources that it will delete because they aren't defined in your deployment.
 
 Let's look at an example of a template that updates an existing resource and is deployed in complete mode:
 
@@ -145,9 +145,9 @@ Let's look at an example of a template that updates an existing resource and is 
 
 Here's an explanation of what is happening in this example:
 
-- The template is updating a storage account named `storage-1`, which is already deployed. The SKU is changing from *LRS* to *GRS*, and the `owner` tag is changing value to *Team B*. The what-if output will show a **Modify** change type for this resource.
-- The template is creating a new Azure Cosmos DB account named `cosmos-db-1`, which doesn't exist in the resource group yet. The what-if output will show a **Create** change type for this resource.
-- The template doesn't include the Azure SQL logical server that already exists in the resource group. Because the deployment uses complete mode, the what-if output will show a **Delete** change type for this resource. If the deployment used incremental mode instead of complete mode, the change type would be **Ignore** instead.
+- The template is updating a storage account named `storage-1`, which is already deployed. The SKU is changing from *LRS* to *GRS*, and the `owner` tag is changing value to *Team B*. The what-if output shows a **Modify** change type for this resource.
+- The template is creating a new Azure Cosmos DB account named `cosmos-db-1`, which doesn't exist in the resource group yet. The what-if output shows a **Create** change type for this resource.
+- The template doesn't include the Azure SQL logical server that already exists in the resource group. Because the deployment uses complete mode, the what-if output shows a **Delete** change type for this resource. If the deployment used incremental mode instead of complete mode, the change type would be **Ignore** instead.
 
 ## Confirm your deployments
 

@@ -1,43 +1,44 @@
 ### YamlMime:Module
 uid: learn.github.communicate-using-markdown
 metadata:
-  title: "Communicate effectively on GitHub by using Markdown"
+  title: Communicate effectively on GitHub using Markdown
   description: Learn to use Markdown to communicate with brevity, clarity, and expression.
-  ms.date: 10/24/2022
+  ms.date: 05/30/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: "Communicate effectively on GitHub by using Markdown"
+  ms.topic: module-standard-task-based
+  ms.prod: github
+title: Communicate effectively on GitHub using Markdown
 summary: Learn to use Markdown to communicate with brevity, clarity, and expression.
 abstract: |
-  In this module, you will:
-  - Use Markdown to add lists, images, and links in a comment or text file
-  - Determine where and how to use Markdown in a GitHub repository
-  - Learn about syntax extensions available in GitHub (GitHub-flavored Markdown)
+  In this module, you'll:
+  - Use Markdown to add lists, images, and links in a comment or text file.
+  - Determine where and how to use Markdown in a GitHub repository.
+  - Learn about syntax extensions available in GitHub (GitHub-flavored Markdown).
 prerequisites: |
+  - Basic understanding of GitHub
   - A GitHub account
   - The ability to navigate and edit files in GitHub
 iconUrl: /training/achievements/github/communicate-using-markdown.svg
 ratingEnabled: true
 levels:
-- beginner
+  - beginner
 roles:
-- devops-engineer
-- administrator
-- developer
-- solution-architect
-- student
+  - devops-engineer
+  - administrator
+  - developer
+  - solution-architect
+  - student
 products:
-- github
-- azure
+  - github
+  - azure
 subjects:
-- devops
+  - devops
 units:
-- learn.github.communicate-using-markdown.1-introduction
-- learn.github.communicate-using-markdown.2-what-is-markdown
-- learn.github.communicate-using-markdown.3-communicating-using-markdown
-- learn.github.communicate-using-markdown.4-knowledge-check
-- learn.github.communicate-using-markdown.5-summary
+  - learn.github.communicate-using-markdown.1-introduction
+  - learn.github.communicate-using-markdown.2-what-is-markdown
+  - learn.github.communicate-using-markdown.3-communicating-using-markdown
+  - learn.github.communicate-using-markdown.4-knowledge-check
+  - learn.github.communicate-using-markdown.5-summary
 badge:
   uid: learn.github.communicate-using-markdown.badge

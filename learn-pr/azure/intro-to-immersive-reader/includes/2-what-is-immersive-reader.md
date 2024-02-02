@@ -8,7 +8,7 @@ Immersive Reader helps readers build confidence, by breaking down content into m
 
 **For people who struggle with concentration**, Immersive Reader can be put into focus mode or line focus to take away distractions. Background, text color, and font spacing can also be changed to mitigate sensory overload, and increase attention-spans and comprehension.
 
-Further, Immersive Reader has text-to-speech capabilities built into the service. It can read one word, phrase, or an entire document, depending on your need.
+Further, Immersive Reader has text to speech capabilities built into the service. It can read one word, phrase, or an entire document, depending on your need.
 
 ## Writing
 
@@ -19,7 +19,7 @@ Dictation is built into Immersive Reader, which can help people who struggle wit
 :::row:::
 :::column span="1":::
 
-Immersive reader is also available for anyone who finds math difficult. When Immersive reader is combined with Math Assistant, learners can have problems, equations, and solutions read aloud to them step by step. **Immersive Reader’s other functions, like line focus, focus mode, and spacing, all work with Math Assistant** to make math more accessible.
+Immersive reader is also available for anyone who finds math difficult. When Immersive reader is combined with Math Assistant, learners can have problems, equations, and solutions read aloud to them step by step. **Immersive Reader's other functions, like line focus, focus mode, and spacing, all work with Math Assistant** to make math more accessible.
 
 :::column-end:::
 :::column span="1":::

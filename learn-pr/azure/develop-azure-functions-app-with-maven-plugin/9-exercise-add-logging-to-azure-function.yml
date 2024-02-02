@@ -7,8 +7,9 @@ metadata:
   ms.date: 04/01/2020
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
 durationInMinutes: 10
 interactive: bash
 azureSandbox: true

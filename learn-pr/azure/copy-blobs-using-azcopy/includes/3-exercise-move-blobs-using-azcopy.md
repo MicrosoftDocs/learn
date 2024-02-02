@@ -42,7 +42,7 @@ First, create two accounts by using the Azure CLI.
 
 ## Setup
 
-We'll start by downloading the latest version of AzCopy; currently version 10. The Azure CLI does include AzCopy, but it may be an older version. We'll also generate SAS tokens for our storage accounts and then upload some sample data.
+We'll start by downloading the latest version of AzCopy; currently version 10. The Azure CLI does include AzCopy, but it might be an older version. We'll also generate SAS tokens for our storage accounts and then upload some sample data.
 
 1. In the Cloud Shell window, run the following commands to download and extract the most recent version of *AzCopy* for Linux.
 
@@ -52,9 +52,9 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
     tar xvf azcopy
     ```
 
-<!-- NOTE TO REVIEWER. I wanted to generate SAS tokens from the command line, using the Azure CLI. However, there are currently bugs in the CLI storage commands which cause dates and timestamps to be handled incorrectly (may also be responsible for some of the issues in Exercise 4), so I have used the portal to generate SAS tokens. -->
+<!-- NOTE TO REVIEWER. I wanted to generate SAS tokens from the command line, using the Azure CLI. However, there are currently bugs in the CLI storage commands which cause dates and timestamps to be handled incorrectly (might also be responsible for some of the issues in Exercise 4), so I have used the portal to generate SAS tokens. -->
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the Sandbox.
+1. Select [this link](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to sign in to the Azure portal. This link signs you in to the Azure portal by using the same account with which you activated the sandbox.
 
 1. Select **All resources**, and select your destination (cool) storage account.
 

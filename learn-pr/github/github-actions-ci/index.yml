@@ -3,11 +3,11 @@ uid: learn.github.github-actions-ci
 metadata:
   title: "Build continuous integration (CI) workflows by using GitHub Actions"
   description: Learn how to create workflows that enable you to use Continuous Integration (CI) for your projects.
-  ms.date: 07/08/2022
+  ms.date: 11/12/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: github
 title: "Build continuous integration (CI) workflows by using GitHub Actions"
 summary: Learn how to create workflows that enable you to use Continuous Integration (CI) for your projects.
 abstract: |

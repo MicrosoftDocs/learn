@@ -1,6 +1,6 @@
-Software security is always an important topic, and it spans the entire software-development lifecycle. While a lot of focus is dedicated towards writing secure code and locking down infrastructure, it's also important to protect the processes that occur during every stage of the software-development lifecycle.
+Software security is always important, and it spans the entire software-development lifecycle. Focus is often dedicated towards writing secure code and locking down infrastructure. It's also important to protect the processes that occur during every stage of the software-development lifecycle.
 
-Suppose you're managing an important GitHub repository. You want to enforce the highest level of security, but also want to offer a welcoming experience for contributors. Unfortunately, being secure often introduces friction that hampers everyone's productivity. To mitigate this overhead, GitHub offers various automated features that allow you to efficiently administer a secure repository without slowing everyone down throughout the entire development process.
+Suppose you're managing an important GitHub repository. You want to enforce the highest level of security, but also want to offer a welcoming experience for contributors. Unfortunately, being secure often introduces friction that obstructs everyone's productivity. To mitigate this overhead, GitHub offers various automated features that allow you to efficiently administer a secure repository without slowing everyone down throughout the entire development process.
 
 ## Learning objectives
 

@@ -2,13 +2,14 @@
 uid: learn.backup-restore-azure-sql.5-exercise-configure-long-term-retention-policies
 metadata:
   title: Exercise - Configure long-term retention policies
-  description: In this unit, you'll configure Azure SQL Database to keep data for months and years.
-  ms.date: 03/10/2022
+  description: Learn how to configure Azure SQL Database to keep data for months and years.
+  ms.date: 12/11/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurepowershell
 title: Exercise - Configure long-term retention policies
 durationInMinutes: 7
 interactive: powershell

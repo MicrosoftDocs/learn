@@ -2,7 +2,7 @@ There are still many customers that aren't ready to transition to the hybrid ope
 
 ## What is Azure Stack HCI?
 
-Azure Stack HCI allows you to deploy Windows and Linux-based virtualized and containerized workloads on a hyperconverged infrastructure (HCI) cluster in your own datacenter, or in a datacenter managed by a service provider. From the hardware standpoint, each Azure Stack HCI cluster consists of between 2 and 16 physical, validated servers running a specialized operating system purposely defined for hyperconverged infrastructure.
+Azure Stack HCI allows you to deploy Windows and Linux-based virtualized and containerized workloads on a hyperconverged infrastructure (HCI) cluster in your own datacenter, or in a datacenter managed by a service provider. From the hardware standpoint, each Azure Stack HCI cluster consists of between 1 and 16 physical, validated servers running a specialized operating system purposely defined for hyperconverged infrastructure.
 
 > [!NOTE]
 > In the simplest terms, you can think of Azure Stack HCI as pre-built, pre-configured, highly-optimized hyperconverged clusters that you can use to deploy Windows and Linux Hyper-V VMs.

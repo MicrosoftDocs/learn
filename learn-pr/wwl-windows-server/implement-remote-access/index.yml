@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
 title: Implement remote access
 summary: Learn to enable remote access within your organization, and to publish your organization’s applications and websites by using Windows Server Web Application Proxy (WAP).
 abstract: |

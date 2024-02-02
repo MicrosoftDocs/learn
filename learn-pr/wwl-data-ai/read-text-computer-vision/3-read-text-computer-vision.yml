@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.read-text-computer-vision.exercise
-title: Exercise - Explore optical character recognition with the Read API
+title: Exercise - Read text in Vision Studio
 metadata:
-  title: Exercise - Explore optical character recognition with the Read API
-  description: "Exercise - Explore optical character recognition with the Read API"
-  ms.date: 01/27/2023
-  author: benjiang
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  title: Exercise - Read text in Vision Studio
+  description: "Exercise - Read text in Vision Studio"
+  ms.date: 10/26/2023
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/3-read-text-computer-vision.md)]

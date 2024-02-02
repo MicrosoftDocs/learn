@@ -7,8 +7,7 @@ metadata:
   ms.date: 02/03/2023
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -22,9 +21,9 @@ quiz:
     - content: "AKS contributor"
       isCorrect: false
       explanation: "AKS Contributor does not have enough rights to access the APIs."
-    - content: "Azure AD service principal"
+    - content: "Microsoft Entra service principal"
       isCorrect: true
-      explanation: "Service principal, managed identity. To interact with Azure APIs, an AKS cluster requires either an Azure Active Directory (AD) service principal or a managed identity. A service principal or managed identity is needed to dynamically create and manage other Azure resources such as an Azure load balancer or Azure container registry."
+      explanation: "Service principal, managed identity. To interact with Azure APIs, an AKS cluster requires either a Microsoft Entra service principal or a managed identity. A service principal or managed identity is needed to dynamically create and manage other Azure resources such as an Azure load balancer or Azure container registry."
     - content: "Global Administrator permissions"
       isCorrect: false
       explanation: "There is no need to have global admin privileges for AKS."

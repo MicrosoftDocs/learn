@@ -1,8 +1,8 @@
-Azure Active Directory Multi-Factor Authentication helps safeguard access to data and applications while maintaining simplicity for users. It provides additional security by requiring a second form of authentication and delivers strong authentication through a range of easy to use authentication methods.
+Microsoft Entra multifactor authentication helps safeguard access to data and applications while maintaining simplicity for users. It provides additional security by requiring a second form of authentication and delivers strong authentication through a range of easy to use authentication methods.
 
 For organizations that need to be compliant with industry standards, such as the Payment Card Industry (PCI) Data Security Standard (DSS) version 3.2, MFA is a must have capability to authenticate users. Beyond being compliant with industry standards, enforcing MFA to authenticate users can also help organizations to mitigate credential theft attacks.
 
-:::image type="content" source="../media/az500-multifactor-authentication-concepts-48fe7123.png" alt-text="Multi-Factor Authentication is monitoring signals and allowing or denying access to resources.":::
+:::image type="content" source="../media/az500-multifactor-authentication-concepts-48fe7123.png" alt-text="multifactor authentication is monitoring signals and allowing or denying access to resources.":::
 
 
 The security of MFA two-step verification lies in its layered approach. Compromising multiple authentication factors presents a significant challenge for attackers. Even if an attacker manages to learn the user's password, it is useless without also having possession of the additional authentication method. Authentication methods include:
@@ -11,14 +11,18 @@ The security of MFA two-step verification lies in its layered approach. Compromi
  -  Something you have (a trusted device that is not easily duplicated, like a phone)
  -  Something you are (biometrics)
 
-## Multi-Factor Authentication Features
+<a name='multi-factor-authentication-features'></a>
+
+## Multifactor authentication Features
 
  -  **Get more security with less complexity**. Azure MFA helps safeguard access to data and applications and helps to meet customer demand for a simple sign-in process. Get strong authentication with a range of easy verification options—phone call, text message, or mobile app notification—and allow customers to choose the method they prefer.
  -  **Mitigate threats with real-time monitoring and alerts**. MFA helps protect your business with security monitoring and machine-learning-based reports that identify inconsistent sign-in patterns. To help mitigate potential threats, real-time alerts notify your IT department of suspicious account credentials.
- -  **Use with Microsoft 365, Salesforce, and more**. MFA for Microsoft 365 helps secure access to Microsoft 365 applications at no additional cost. Multifactor authentication is also available with Azure Active Directory Premium and thousands of software-as-a-service (SaaS) applications, including Salesforce, Dropbox, and other popular services.<br>
+ -  **Use with Microsoft 365, Salesforce, and more**. MFA for Microsoft 365 helps secure access to Microsoft 365 applications at no additional cost. Multifactor authentication is also available with Microsoft Entra ID P1 or P2 and thousands of software-as-a-service (SaaS) applications, including Salesforce, Dropbox, and other popular services.<br>
  -  **Add protection for Azure administrator accounts**. MFA adds a layer of security to your Azure administrator account at no additional cost. When it's turned on, you need to confirm your identity to create a virtual machine, manage storage, or use other Azure services.
 
-## Multi-Factor Authentication Options
+<a name='multi-factor-authentication-options'></a>
+
+## Multifactor authentication Options
 
 :::image type="content" source="../media/az500-multifactor-authentication-options-f2dcc5c6.png" alt-text="Screenshot of MFA users settings page with options to allow or disallow users to create app passwords to sign in to non-browser apps. Also different verification options that can be selected by users, and a checkbox to enable users to remember MFA on devices they trust.":::
 

@@ -1,4 +1,4 @@
-In this module, you learned how to use Azure Event Grid to handle events within your systems. You used an Event Grid trigger within a logic app to subscribe to events published from virtual-machine changes. These events allowed you to configure and send an email notification. You also discovered the native implementation of Event Grid in Azure, and how it allows for simple configuration and use.
+In this module, you learned how to use Azure Event Grid to handle events within your systems. You used an Event Grid trigger within a logic app to subscribe to events published from virtual-machine changes. These events allowed you to configure and send an email notification. You also discovered the native implementation of Event Grid in Azure and how it allows for simple configuration and use.
 
 ## Learn more
 

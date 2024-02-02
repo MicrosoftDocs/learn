@@ -1,22 +1,19 @@
 To verify your solution design you need an IoT Central application with a device template for your IoT Edge device.
 
-You plan to build an environmental monitoring solution for your stores with IoT Central - IoT Central lets you create custom dashboards, implement command and control, and integrate with other back-office systems.
-
-To collect data and manage local sensors, you plan to install an IoT Edge device in each store. The IoT Edge device will connect to your IoT Central application to send telemetry collected from the sensors and respond to commands sent from the application.
+You plan to evaluate an environmental monitoring solution for your stores with IoT Central. To collect data and manage local sensors, you plan to install an IoT Edge device in each store. The IoT Edge device will connect to your IoT Central application to send telemetry collected from the sensors and respond to commands sent from the application.
 
 Here, you'll review some core IoT Central and IoT Edge concepts, and learn how to create a device template for your IoT Edge devices in IoT Central.
 
 ## What is IoT Central?
 
-IoT Central is a fully managed IoT software-as-a-service solution that makes it easy to create solutions that connect the physical and digital worlds. IoT Central enables you to:
+Azure IoT Central is an IoT application platform as a service (aPaaS) that reduces the burden and cost of developing, managing, and maintaining IoT solutions. Use IoT Central to quickly evaluate your IoT scenario and assess the opportunities it can create for your business. IoT Central enables you to:
 
 - Connect to and control IoT devices.
 - Collect and analyze telemetry from the connected devices.
 - Send data from the connected devices to other applications or services for further processing or storage.
 
-You have three options to create an IoT Central application:
+You have two options to create an IoT Central application:
 
-- Visit the [My applications](https://apps.azureiotcentral.com/) IoT Central site.
 - Use the [Azure portal](https://portal.azure.com/).
 - Use the Azure CLI.
 

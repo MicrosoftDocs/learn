@@ -32,42 +32,43 @@ You'll use existing HTML to allow us to focus solely on the CSS. The HTML includ
 
     ```html
     <html>
-    <head>
-        <title>Your Name resume</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+        <head>
+            <title>Your Name resume</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
 
-    <body>       
-        <h1>Your Name</h1>
-        <a href="mailto:your-email@example.com">your-email@example.com</a>
-    <div id="social-media">
-        <h2>Social media</h2>
-        <ul>
-            <li><a href="https://github.com/">GitHub</a></li>
-            <li><a href="https://linkedin.com/in/">LinkedIn</a></li>
-            <li><a href="https://twitter.com/">Twitter</a></li>
-        </ul>
-    </div>
-    
-        <h2>Education</h2>
-        <h3>School name</h3>
-        <h4>Major</h4>
-        <ul>
-            <li>GPA: 4.0</li>
-            <li>Years attended</li>
-        </ul>
+        <body>
+            <h1>Your Name</h1>
+            <a href="mailto:your-email@example.com">your-email@example.com</a>
 
-    <h2>Experience</h2>
-    <div class="experience">
-        <h3>Company name</h3>
-        <h4>Title</h4>
-    </div>
-    <div class="experience">
-        <h3>Cool hackathon</h3>
-        <h4>Project title</h4>
-    </div>
+            <div id="social-media">
+                <h2>Social media</h2>
+                <ul>
+                    <li><a href="https://github.com/">GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/">LinkedIn</a></li>
+                    <li><a href="https://twitter.com/">Twitter</a></li>
+                </ul>
+            </div>
 
-    </body>
+            <h2>Education</h2>
+            <h3>School name</h3>
+            <h4>Major</h4>
+            <ul>
+                <li>GPA: 4.0</li>
+                <li>Years attended</li>
+            </ul>
+
+            <h2>Experience</h2>
+            <div class="experience">
+                <h3>Company name</h3>
+                <h4>Title</h4>
+            </div>
+            <div class="experience">
+                <h3>Cool hackathon</h3>
+                <h4>Project title</h4>
+            </div>
+
+        </body>
     </html>
     ```
 

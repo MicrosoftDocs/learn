@@ -6,10 +6,11 @@ metadata:
   title: Understand end-to-end deployments
   description: Learn about control and data plane operations, and how you perform each within a Bicep infrastructure as code deployment workflow. Also, learn about how to design the scope of your workflow, options you have for performing data-plane operations, and how to work with outputs from your Bicep file in a workflow.
   ms.date: 12/19/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 5
 content: |
   [!include[](includes/2-understand-end-end-deployments.md)]

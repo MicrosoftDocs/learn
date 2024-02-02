@@ -8,8 +8,9 @@ metadata:
   ms.date: 9/28/2021
   author: chtrembl
   ms.author: chtrembl
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
 durationInMinutes: 9
 content: |
   [!include[](includes/6-deploy.md)]

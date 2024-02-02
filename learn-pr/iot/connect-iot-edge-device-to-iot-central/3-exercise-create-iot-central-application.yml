@@ -3,17 +3,18 @@ uid: learn.iot.connect-iot-edge-device-to-iot-central.exercise-create-iot-centra
 title: Exercise - Create an IoT Central application
 metadata:
   title: Exercise - Create an IoT Central application
-  description: Exercise - Create an IoT Central application
-  ms.date: 01/11/2023
+  description: This content is a part of Connect an Azure IoT Edge device to your Azure IoT Central application
   author: dominicbetts
   ms.author: dobett
+  ms.date: 05/24/2023
   ms.reviewer: rangv
   manager: lizross
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-durationInMinutes: 5
-azureSandbox: true
-interactive: bash
+  ms.custom: engagement-fy23
+  ms.topic: unit
+durationInMinutes: 8
+# azureSandbox: true
+# interactive: bash
+azureSandbox: false
 content: |
   [!include[](includes/3-exercise-create-iot-central-application.md)]
 # NOTE: Task validation is failing for learners, so that is disabled for now.

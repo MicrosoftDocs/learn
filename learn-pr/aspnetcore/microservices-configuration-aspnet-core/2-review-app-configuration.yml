@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-configuration-aspnet-core.2-review-app-configuration
+metadata:
+  title: Review app configuration concepts
+  description: Understand the key concepts of .NET and Kubernetes configuration within a microservices app.
+  author: codemillmatt
+  ms.author: masoucou  
+  ms.date: 11/06/2023
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
+title: Review app configuration concepts
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-review-app-configuration.md)]

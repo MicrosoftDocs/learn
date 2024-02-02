@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-aks-edge-essentials.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of Introduction to Azure Kubernetes Service (AKS) Edge Essentials.
+  ms.date: 11/3/2023
+  author: asergaz
+  ms.author: sergaz
+  manager: lizross
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "A company wants to run Kubernetes on PC-class or light edge hardware. Which AKS solution is designed for this purpose?"
+    choices:
+    - content: "AKS on Azure Stack HCI"
+      isCorrect: false
+      explanation: "Incorrect. AKS on Azure Stack HCI is designed for running Kubernetes on Server-class or heavy edge hardware."
+    - content: "AKS Edge Essentials"
+      isCorrect: true
+      explanation: "Correct. AKS Edge Essentials is the lightest weight AKS hybrid solution available, designed to run with a small resource footprint and simple installation experience, making it easy to run Kubernetes on PC-class or light edge hardware."
+    - content: "AKS on Windows Server"
+      isCorrect: false
+      explanation: "Incorrect. AKS on Windows Server is designed for running Kubernetes on Server-class or heavy edge hardware."
+  - content: "A company wants to automate and run their containerized applications on a Kubernetes platform. They have limited resources and need to ensure that the platform can run alongside other applications. Which criteria should they consider when deciding if AKS Edge Essentials is appropriate for their needs?"
+    choices:
+    - content: "AKS Edge Essentials requires a minimum of 8-GB RAM and 4 vCPUs."
+      isCorrect: false
+      explanation: "Incorrect. AKS Edge Essentials has minimal compute and memory requirements (4-GB RAM and 2 vCPUs)."
+    - content: "AKS Edge Essentials consumes limited resources and has minimal compute and memory requirements (4-GB RAM and 2 vCPUs)."
+      isCorrect: true
+      explanation: "Correct. AKS Edge Essentials is designed for static, predefined configurations and has minimal compute and memory requirements (4-GB RAM and 2 vCPUs). It's suitable for containerized workloads that must run alongside other applications at the operational edge."
+    - content: "AKS Edge Essentials enables dynamic VM creation/deletion and cluster lifecycle management."
+      isCorrect: false
+      explanation: "Incorrect. AKS Edge Essentials doesn't enable dynamic VM creation/deletion or cluster lifecycle management."
+  - content: "What does AKS Edge Essentials do to ensure that applications running on the host have the required resources?"
+    choices:
+    - content: "AKS Edge Essentials does not allocate any resources for the VMs."
+      isCorrect: false
+      explanation: "Incorrect. AKS Edge Essentials does allocate resources for the VMs."
+    - content: "AKS Edge Essentials dynamically allocates CPU and memory resources for each of the VMs."
+      isCorrect: false
+      explanation: "Incorrect. AKS Edge Essentials uses static allocation to control how resources are used."
+    - content: "AKS Edge Essentials allocates static CPU and memory resources for each of the VMs."
+      isCorrect: true
+      explanation: "Correct. AKS Edge Essentials uses static allocation to control how resources are used."
+  - content: "What is AKS Edge Essentials?"
+    choices:
+    - content: "A Microsoft-supported Kubernetes platform that enables dynamic VM creation/deletion and cluster lifecycle management."
+      isCorrect: false
+      explanation: "Incorrect. AKS Edge Essentials is intended for static, pre-defined configurations and doesn't enable dynamic VM creation/deletion or cluster lifecycle management."
+    - content: "An on-premises Kubernetes implementation of Azure Kubernetes Service (AKS) that automates running containerized applications at scale."
+      isCorrect: true
+      explanation: "Correct. AKS Edge Essentials is an on-premises Kubernetes implementation of Azure Kubernetes Service (AKS) that automates running containerized applications at scale."
+    - content: " A cloud-based management plane for Kubernetes clusters running anywhere."
+      isCorrect: false
+      explanation: "Incorrect. Azure Arc provides a centralized management console for Kubernetes clusters running anywhere."
+  - content: "What is the benefit of using AKS Edge Essentials?"
+    choices:
+    - content: "It requires additional infrastructure management tools and skills to manage Linux systems in your environment."
+      isCorrect: false
+      explanation: "Incorrect. AKS Edge Essentials enables you to use a broad set of AI capabilities to innovate quickly and drive your edge innovation forward with the least disruption."
+    - content: "It only supports Linux-based containers."
+      isCorrect: false
+      explanation: "Incorrect. AKS Edge Essentials fully supports both Linux-based and Windows-based containers."
+    - content: "It offers interoperability between native Windows applications and containerized Linux workloads."
+      isCorrect: true
+      explanation: "Correct. AKS Edge Essentials offers interoperability between native Windows applications and containerized Linux workloads."

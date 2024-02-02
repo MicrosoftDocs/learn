@@ -6,10 +6,9 @@ metadata:
   title: Setting security policies 
   description: In this unit, you'll learn more about the preventative measures you can take to maintain the health of your GitHub repositories
   ms.date: 09/13/2021
-  author: sterling463
-  ms.author: csterling
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/2-set-security-policies.md)]

@@ -4,10 +4,10 @@ metadata:
   title: Introduction to Azure landing zones in the Microsoft Cloud Adoption Framework for Azure
   description: The Microsoft Cloud Adoption Framework for Azure provides many landing zone options. This module focuses on Azure landing zones.
   ms.date: 10/17/2022
-  author: JefferyMitchell
-  ms.author: jemitche
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: module
+  ms.service: caf 
 title: Introduction to Azure landing zones in the Microsoft Cloud Adoption Framework
 summary: In this module, you'll learn how Azure landing zones help organizations build the strategic design path and target technical state for your Azure environment.
 abstract: | 

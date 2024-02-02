@@ -3,11 +3,12 @@ uid: learn.load-balance-web-traffic-with-application-gateway.3-exercise-create-w
 metadata:
   title: Exercise - Create web sites
   description: Create a virtual network and virtual machines for hosting the vehicle registration web app, and an App Service for hosting the license renewal web app
-  ms.date: 05/02/2019
-  author: vhorne
-  ms.author: victorh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/31/2024
+  author: greg-lindsay
+  ms.author: greglin
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 title: Exercise - Create web sites
 durationInMinutes: 10
 content: |

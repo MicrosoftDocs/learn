@@ -23,8 +23,9 @@ metadata:
   author: krumelur
   
   ms.author: renrup
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: aspnet-core
+  ms.subservice: migration
 
 title: Migrate an ASP.NET Core application from an on-premises environment into Azure
 

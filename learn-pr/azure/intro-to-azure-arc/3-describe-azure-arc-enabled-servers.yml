@@ -3,13 +3,12 @@ uid: learn.azure.intro-to-azure-arc.3-describe-azure-arc-enabled-servers
 metadata:
   title: Describe Azure Arc-enabled servers
   description: Describe Azure Arc-enabled servers
-  ms.date: 04/10/2023
+  ms.date: 12/07/2023
   author: JnHs
   ms.author: jenhayes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Describe Azure Arc-enabled servers
-durationInMinutes: 8
+durationInMinutes: 5
 content: |
   [!include[](includes/3-describe-azure-arc-enabled-servers.md)]

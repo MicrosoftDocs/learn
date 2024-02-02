@@ -1,4 +1,3 @@
-
 Your company supports large-scale applications in the cloud. They've decided to implement Azure Monitor for a simplified logging strategy that consolidates the log data for improved visibility across services. You're tasked with developing the plan to track the health of the cloud applications. A few teams have submitted configuration requirements and questions for your consideration:
 
 - The Engineering team has requested a summary of data that can be collected by Azure Monitor.

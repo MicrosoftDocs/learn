@@ -1,10 +1,10 @@
-In this exercise, you'll define and apply a page-level style in the Tip Calculator application.
+In this exercise, you define and apply a page-level style in the Tip Calculator application.
 
 This exercise is a continuation of the previous exercise. Either use your existing solution as the starting point for these steps, or open the **TipCalculator** project in the **exercise3/TipCalculator** folder in the repository that you cloned in the first exercise.
 
 ## Define a style
 
-Let's start by implementing a style for "size 22 Bold" font to use by labels. You'll store the style in a page-level dictionary.
+Let's start by implementing a "size 22 Bold" font style to use for labels. Store the style in a page-level dictionary.
 
 1. In the **TipCalculator** project, open the **StandardTipPage.xaml** file.
 
@@ -48,7 +48,7 @@ Let's start by implementing a style for "size 22 Bold" font to use by labels. Yo
 
 ## Change the font style
 
-Let's take a look at how easy it's to update styles.
+Let's take a look at how it's easy to update styles.
 
 1. Go back to your style in the resource dictionary and change the **fontSize** resource to **32**.
 
@@ -58,7 +58,7 @@ Let's take a look at how easy it's to update styles.
 
 ## Create a base style
 
-Let's expand the implementation of the **StandardTipPage** page by adding a base style. You'll define a new **Style** with values that overlap with the **Style**  that you created in the previous steps. You'll refactor this new style in the next part of this exercise.
+Let's expand the implementation of the **StandardTipPage** page by adding a base style. You define a new **Style** with values that overlap with the **Style**  that you created in the previous steps. Then, you refactor this new style in the next part of this exercise.
 
 1. Open the **StandardTipPage.xaml** file.
 
@@ -67,7 +67,7 @@ Let's expand the implementation of the **StandardTipPage** page by adding a base
     > [!IMPORTANT]
     > Define this style above the **infoLabelStyle** style. This positioning will be important later when you inherit from this style. A style can only inherit from another style that is already in scope.
 
-1. Add a **Setter** that sets the **FontSize** property. Notice that this is a repetition of the setter from the earlier **Style**.
+1. Add a **Setter** that sets the **FontSize** property. Notice that this setter is a repetition of the setter from the earlier **infoLabelStyle**.
 
     ```XML
     <ContentPage.Resources>
@@ -81,7 +81,7 @@ Let's expand the implementation of the **StandardTipPage** page by adding a base
     </ContentPage.Resources>
     ```
 
-1. Apply the new **baseLabelStyle** to the two labels on the page that display the calculated amounts for the tip and the total. Remove the explicit **FontSize** settings from these labels. The code below shows an example.
+1. Apply the new **baseLabelStyle** to the two labels on the page that display the calculated amounts for the tip and the total. Remove the explicit **FontSize** settings from these labels. The following code shows an example.
 
     ```xml
     <!-- Right column = user input and calculated-value output -->
@@ -94,7 +94,7 @@ Let's expand the implementation of the **StandardTipPage** page by adding a base
 
 ## Use style inheritance
 
-You're now ready to refactor your styles by using inheritance. Refactoring will let you eliminate the repeated use of setter.
+You're now ready to refactor your styles by using inheritance. Refactoring lets you eliminate the repeated use of setter.
 
 1. Open the **StandardTipPage.xaml** file.
 

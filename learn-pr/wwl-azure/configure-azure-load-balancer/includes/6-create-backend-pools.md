@@ -1,4 +1,3 @@
-
 Each load balancer has one or more back-end pools that are used for distributing traffic. The back-end pools contain the IP addresses of the virtual NICs that are connected to your load balancer. You configure these pool settings in the Azure portal.
 
 :::image type="content" source="../media/backend-pools-1984adb4.png" alt-text="Screenshot that shows how to configure back-end pools in the Azure portal.":::

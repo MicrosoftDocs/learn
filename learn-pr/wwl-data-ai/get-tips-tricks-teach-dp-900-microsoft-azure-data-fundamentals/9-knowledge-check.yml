@@ -4,18 +4,17 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/17/2023
+  ms.date: 12/14/2023
   author: wwlpublish
   ms.author: tsheppard
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "How often should you download content from the [Learning Download Center](https://aka.ms/ldc) (LDC) to ensure you have the most up to date course materials?"
+  - content: "How often should you download content from the [Learning Download Center](https://aka.ms/ldc) (LDC) to ensure you have the most up-to-date course materials?"
     choices:
     - content: "Every three years"
       isCorrect: false
@@ -39,12 +38,12 @@ quiz:
       explanation: "Feedback: Incorrect. Flash cards contain a small amount of information, held up for students to see, as an aid to learning, however the Microsoft Whiteboard can help people visualize a process and increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
   - content: "How can instructors prepare for complex lab environments that require provisioning in the DP-900 Microsoft Azure Data Fundamentals course?"
     choices:
-    - content: "Provision labs before module instructional time"
+    - content: "Provision labs before learning path instructional time"
       isCorrect: true
       explanation: "Feedback: Correct. It can take up to 10-15 minutes for a new account to be provisioned. Therefore, by provisioning the labs prior to instructional time instructors can maximize learning in the DP-900 Microsoft Azure Data Fundamentals course."
     - content: "Begin with a demonstration of how to set up the lab environment"
       isCorrect: false
-      explanation: "Feedback: Incorrect. The correct answer is a) provision labs before module instruction time as it can take up to 10-15 minutes for a new account to be provisioned. Therefore, by provisioning the labs prior to instructional time instructors can maximize learning in the DP-900 Microsoft Azure Data Fundamentals course."
-    - content: "Provision labs following module instructional time"
+      explanation: "Feedback: Incorrect. The correct answer is a) provision labs before learning path instruction time as it can take up to 10-15 minutes for a new account to be provisioned. Therefore, by provisioning the labs prior to instructional time instructors can maximize learning in the DP-900 Microsoft Azure Data Fundamentals course."
+    - content: "Provision labs following learning path instructional time"
       isCorrect: false
-      explanation: "Feedback: Incorrect. The correct answer is a) provision labs before module instruction time as it can take up to 10-15 minutes for a new account to be provisioned. Therefore, by provisioning the labs prior to instructional time instructors can maximize learning in the DP-900 Microsoft Azure Data Fundamentals course."
+      explanation: "Feedback: Incorrect. The correct answer is a) provision labs before learning path instruction time as it can take up to 10-15 minutes for a new account to be provisioned. Therefore, by provisioning the labs prior to instructional time instructors can maximize learning in the DP-900 Microsoft Azure Data Fundamentals course."

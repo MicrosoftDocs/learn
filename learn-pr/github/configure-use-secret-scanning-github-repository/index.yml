@@ -4,10 +4,9 @@ metadata:
   title: Configure and use secret scanning in your GitHub repository
   description: Understand how secret scanning works to configure and use it efficiently.
   ms.date: 11/25/2021
-  author: lucie-docs
-  ms.author: lucielenaour
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure and use secret scanning in your GitHub repository
 summary: Understand how secret scanning works to configure and use it efficiently.
 abstract: |

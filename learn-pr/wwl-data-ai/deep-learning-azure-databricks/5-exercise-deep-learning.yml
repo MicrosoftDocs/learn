@@ -7,8 +7,7 @@ metadata:
   ms.date: 03/23/2023
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure-databricks
+  ms.topic: unit
 durationInMinutes: 45
 content: |
   [!include[](includes/5-exercise-deep-learning.md)]

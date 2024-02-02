@@ -3,11 +3,10 @@ uid: learn.wwl.work-azure-repos-github
 metadata:
   title: Work with Azure Repos and GitHub
   description: "Work with Azure Repos and GitHub"
-  ms.date: 12/09/2022
+  ms.date: 08/03/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Work with Azure Repos and GitHub
 summary: This module introduces you to Azure Repos and GitHub and explores ways to migrate from TFVC to Git, and work with GitHub Codespaces for development.
 abstract: |
@@ -48,7 +47,6 @@ units:
 - learn.wwl.work-azure-repos-github.migrate-from-tfvc-to-git
 - learn.wwl.work-azure-repos-github.use-git-tfs
 - learn.wwl.work-azure-repos-github.develop-online-github-codespaces
-- learn.wwl.work-azure-repos-github.version-control-git-azure-repos
 - learn.wwl.work-azure-repos-github.knowledge-check
 - learn.wwl.work-azure-repos-github.summary
 badge:

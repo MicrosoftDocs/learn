@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Design a model deployment solution
 summary: Learn how to design a model deployment solution and how the requirements of the deployed model can affect the way you train a model.
 abstract: |

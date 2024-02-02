@@ -3,17 +3,16 @@
 uid: learn.cela-disability-intro
 metadata:
   title: Introduction to disability and accessibility
-  description: This module presents the core ideas and definitions needed to understand accessibility concepts. You will learn what accessibility means, how to be respectful and inclusive of people of all abilities, and why it's important for technology and materials to be accessible to everyone.
-  ms.date: 05/06/2020
+  description: This module presents the core ideas and definitions needed to understand accessibility concepts. You'll learn what accessibility means, how to be respectful and inclusive of people of all abilities, and why it's important for technology and materials to be accessible to everyone.
+  ms.date: 08/10/2023
   author: erzelman
   ms.author: erzelman
   ms.topic: interactive-tutorial
-  ms.prod: learning-cela-accessibility
   showCreativeCommonsFooter: true
 title: Introduction to disability and accessibility
-summary: This module presents the core ideas and definitions needed to understand accessibility concepts. You will learn what accessibility means, how to be respectful and inclusive of people of all abilities, and why it's important for technology and materials to be accessible to everyone.
+summary: This module presents the core ideas and definitions needed to understand accessibility concepts. You'll learn what accessibility means, how to be respectful and inclusive of people of all abilities, and why it's important for technology and materials to be accessible to everyone.
 abstract: |
-  In this module you will:
+  In this module, you will:
   - Learn what the concepts of accessibility, disability, and inclusion mean.
   - Explore appropriate disability language and etiquette when communicating with and about people with disabilities.
 prerequisites: None

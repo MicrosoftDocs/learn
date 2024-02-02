@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.application-security-groups
+title: Application security groups
+metadata:
+  title: Application security groups
+  description: "Application security groups"
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-application-security-groups.md)]

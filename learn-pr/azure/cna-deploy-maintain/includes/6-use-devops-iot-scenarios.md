@@ -2,7 +2,7 @@ Now that you've implemented a fully functional CI/CD pipeline that deploys a clo
 
 ## What is IoT Edge?
 
-Azure IoT Edge is a managed service that provides the ability to deploy and manage containerized workloads on cross-platform IoT devices. Such workloads benefit from cloud intelligence by using services such as Azure Machine Learning and Azure Cognitive Services. You can build Azure IoT Edge solutions by using a wide range of programming languages, including C#, Node.js, Python, Java, or C, and package your code as Windows or Linux containers.
+Azure IoT Edge is a managed service that provides the ability to deploy and manage containerized workloads on cross-platform IoT devices. Such workloads benefit from cloud intelligence by using services such as Azure Machine Learning and Azure AI services. You can build Azure IoT Edge solutions by using a wide range of programming languages, including C#, Node.js, Python, Java, or C, and package your code as Windows or Linux containers.
 
 ## How to apply DevOps principles in IoT Edge scenarios
 

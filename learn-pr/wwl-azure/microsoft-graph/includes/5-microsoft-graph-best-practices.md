@@ -1,4 +1,3 @@
-
 This unit describes best practices that you can apply to help your applications get the most out of Microsoft Graph and make your application more reliable for end users.
 
 ## Authentication

@@ -1,3 +1,4 @@
+
 With the move to the cloud, many teams have adopted agile development methods. These teams must iterate quickly and repeatedly deploy their solutions to the cloud. Teams must be assured their infrastructure is in a reliable state. Application code must be managed through a unified process.
 
 To meet these challenges in your design for Tailwind Traders, you're investigating how to automate deployments by using the practice of [infrastructure as code](/devops/deliver/what-is-infrastructure-as-code). Let's explore two Azure solutions for deployment and automation of your applications: Azure Resource Manager templates and Azure Automation. 

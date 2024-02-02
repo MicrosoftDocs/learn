@@ -1,6 +1,6 @@
-Azure Data Box family devices aren't the only ways to get data into Azure. For your autonomous-vehicle data, make sure that Data Box Disk is your best choice before you place an order.
+Azure Data Box family devices aren't the only ways to get data into Azure. For your autonomous-vehicle data, you want to make sure that Data Box Disk is your best choice before you place an order.
 
-In this unit, you'll learn when to use a Data Box device and when to use some other solution.
+In this unit, you learn when to use a Data Box device and when to use some other solution.
 
 ## Use cases for Data Box devices
 
@@ -8,14 +8,14 @@ Data Box is ideally suited to transfer terabytes of data in scenarios with limit
 
 Here are the various scenarios where you can use Data Box devices to import data to Azure.
 
- - **One time migration** - When large amount of on-premises data is moved to Azure.
-     - Moving a media library from offline tapes into Azure to create an online media library.
-     - Migrating your VM farm, SQL server, and applications to Azure
-     - Moving historical data to Azure for in-depth analysis and reporting using HDInsight
+- **One time migration** - When a large amount of on-premises data is moved to Azure.
+  - Moving a media library from offline tapes into Azure to create an online media library.
+  - Migrating your VM farm, SQL server, and applications to Azure.
+  - Moving historical data to Azure for in-depth analysis and reporting using HDInsight.
 
- - **Initial bulk transfer** - When an initial bulk transfer is done using Data Box (seed) followed by incremental transfers over the network.
+- **Initial bulk transfer** - When an initial bulk transfer is done using Data Box (seed) followed by incremental transfers over the network.
 
- - **Periodic uploads** - When a large amount of data is generated periodically and needs to be moved to Azure. For example: in energy exploration, where video content is generated on oil rigs and windmill farms.
+- **Periodic uploads** - When a large amount of data is generated periodically and needs to be moved to Azure. For example: in energy exploration, where video content is generated on oil rigs and windmill farms.
 
 Here are the various scenarios where you can use Data Box to export data from Azure. Data Box Disk and Data Box Heavy don't support exporting data from Azure.
 
@@ -31,7 +31,7 @@ The offline options to move your data to Azure include Data Box devices and Azur
 
 ### Data Box devices
 
-To get data into Azure, you can load your data onto physical devices and send them to an Azure datacenter. There, the data is copied into your Azure subscription. As you saw in unit 2, three Data Box products work this way:
+To get data into Azure, you can load your data onto physical devices and send them to an Azure datacenter. There, the data is copied into your Azure subscription. As you saw in unit 2, there are three Data Box products that work this way:
 
 - Data Box
 - Data Box Disk
@@ -67,10 +67,10 @@ Azure Stack Edge also uses physical devices to transfer data into Azure. Unlike 
 
 - **Preprocess data** - Transform data via compute options such as containers or virtual machines before sending it to Azure to create a more actionable dataset. You can use preprocessing to:
 
-    - Aggregate data.
-    - Modify data; for example, to remove personal data.
-    - Subset data to optimize storage and bandwidth or for further analysis.
-    - Analyze and react to IoT Events.
+  - Aggregate data.
+  - Modify data; for example, to remove personal data.
+  - Subset data to optimize storage and bandwidth or for further analysis.
+  - Analyze and react to IoT Events.
 
 - **Transfer data over network to Azure** - Easily and quickly transfer data to Azure to do further compute and analytics or for archival purposes.
 
@@ -88,7 +88,7 @@ Microsoft provides a range of optimized command-line tools, which you can call w
 - **Azure PowerShell.** PowerShell is a scripting interface and language designed to help administrators automate complex tasks by running commands called **cmdlets**. The Azure PowerShell module provides a range of cmdlets to work with Azure. These include cmdlets that you can use to upload data into Azure storage accounts, Azure SQL Database, Azure Cosmos DB, and other destinations. For example, to upload a file to an Azure Storage blob, you'd use the `Set-AzStorageBlobContent` cmdlet.
 - **Azure CLI.** The Azure CLI is a command-line tool that you can call from PowerShell and Bash scripts to work with Azure. It includes options that can move data into Azure locations. For example, you'd use the `az storage blob upload` command to upload a file to an Azure Storage blob.
 
-Scripting tools are easy for administrators and non-developers to use. If you have people with developer skills who are able to write compiled code, you can consider using programming languages to orchestrate data transfer into Azure. Your code must call the Azure Storage Representational State Transfer (REST) application programming interfaces (APIs). The REST APIs are a set of web services that you can call from many different programming languages. Developers can use .NET languages, Java, Python, Node.js, C++, and PHP, among other languages, to call these APIs. Developers can choose the language with which they're most familiar.
+Scripting tools are easy for administrators and nondevelopers to use. If you have people with developer skills who are able to write compiled code, you can consider using programming languages to orchestrate data transfer into Azure. Your code must call the Azure Storage Representational State Transfer (REST) application programming interfaces (APIs). The REST APIs are a set of web services that you can call from many different programming languages. Developers can use .NET languages, Java, Python, Node.js, C++, and PHP, among other languages, to call these APIs. Developers can choose the language with which they're most familiar.
 
 ## Choosing a data transfer method
 
@@ -106,6 +106,6 @@ If you have plenty of available network bandwidth and you want to transfer data 
 
 ## Data transfer for the autonomous vehicles
 
-In your organization, you want to upload autonomous-vehicle telemetry data to Azure in a fast, relatively cheap, and secure way without hogging the network. That's a key use case for Azure Data Box Disk.
+In your organization, you want to upload autonomous-vehicle telemetry data to Azure in a fast, relatively cheap, and secure way without hogging the network. That scenario is a key use case for Azure Data Box Disk.
 
 You can use Azure Data Box Disk for different kinds of data transfer scenarios. Azure Data Box Disk is suitable for one-time migrations like moving up to 35 TB of data from offline tapes to Azure cool storage. If there's more than 35 TB to upload, you can create extra orders. It's also worth reviewing the other Data Box family options that you explored in the first unit, as there might be a more suitable candidate. Incremental transfers also work well. Data Box Disk is used to provide the initial, large seed, after which further increments of data are copied by using standard network techniques.

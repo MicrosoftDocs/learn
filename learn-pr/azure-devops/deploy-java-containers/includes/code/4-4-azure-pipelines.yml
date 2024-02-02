@@ -1,5 +1,0 @@
-    - task: Maven@3
-      displayName: 'Maven pom.xml'
-      inputs:
-        options: '-DskipITs --settings ./maven/settings.xml'
-        publishJUnitResults: false

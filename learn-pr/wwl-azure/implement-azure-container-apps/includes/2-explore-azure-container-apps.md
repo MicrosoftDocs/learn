@@ -1,5 +1,6 @@
 
 
+
 Azure Container Apps enables you to run microservices and containerized applications on a serverless platform that runs on top of Azure Kubernetes Service. Common uses of Azure Container Apps include:
 
 * Deploying API endpoints

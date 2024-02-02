@@ -7,8 +7,8 @@ metadata:
   author: Meghana-ch
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.service: healthbot
 title: Basic Azure Health Bot 
 summary: This module starts with a basic informative bot that has no interrupting or breaking scenario involved. It shows you how to enhance the bot with more advanced functionalities.
 abstract: |

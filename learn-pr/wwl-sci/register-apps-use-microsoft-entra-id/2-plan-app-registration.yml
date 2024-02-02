@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.register-apps-use-microsoft-entra-id.plan-app-registration
+title: Plan for app registration
+metadata:
+  title: Plan for app registration
+  description: "Establish the goals, permissions, and the data integration needs for your application in Microsoft Entra."
+  ms.date: 10/02/2023
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: module-standard-task-based
+  ms.prod: identity-and-access
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-plan-app-registration.md)]

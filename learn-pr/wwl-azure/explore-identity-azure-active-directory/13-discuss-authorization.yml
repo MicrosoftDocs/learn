@@ -4,11 +4,10 @@ title: Discuss authorization
 metadata:
   title: Discuss authorization
   description: "Discuss authorization"
-  ms.date: 03/16/2023
+  ms.date: 01/31/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/13-discuss-authorization.md)]

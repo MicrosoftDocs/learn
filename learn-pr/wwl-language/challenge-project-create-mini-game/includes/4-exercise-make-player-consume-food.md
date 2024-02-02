@@ -1,5 +1,6 @@
 
 
+
 Your goal is to develop a mini-game application. The mini-game displays food that the player can consume. You need to detect if the player has successfully consumed the food, and if so, redisplay the food. You also want to change the player appearance depending on what food was consumed.
 
 ## Specification

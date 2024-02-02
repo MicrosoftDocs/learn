@@ -1,13 +1,12 @@
-
 ## Scenario
 
-You are the SAP solutions architect for your company, responsible for the Azure IaaS solutions. You define the standards for Azure compute, storage, and networking.
+You're the SAP solutions architect for your company, responsible for the Azure IaaS solutions. You define the standards for Azure compute, storage, and networking.
 
 You need to prepare the specifications to use the networking component to design scalable, performant, and resilient SAP deployments in Azure.
 
 ## Learning objectives
 
-You will:
+You'll:
 
 - Explore Azure virtual networks.
 - Consider IP addressing.

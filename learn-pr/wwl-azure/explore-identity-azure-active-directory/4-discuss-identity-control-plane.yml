@@ -4,11 +4,10 @@ title: Discuss identity as a control plane
 metadata:
   title: Discuss identity as a control plane
   description: "Discuss identity as a control plane"
-  ms.date: 03/16/2023
+  ms.date: 01/31/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/4-discuss-identity-control-plane.md)]

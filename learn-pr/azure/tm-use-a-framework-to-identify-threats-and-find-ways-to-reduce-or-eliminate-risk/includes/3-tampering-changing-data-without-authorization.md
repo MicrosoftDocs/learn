@@ -2,11 +2,11 @@
 
 Examples include:
 
-- Modifying data temporarily stored in cache, sent over-the-wire, or permanently stored in databases to compromise data integrity
-- Inserting malicious payloads into browser caches to cause erratic behavior in processes and data stores
-- Modifying memory through weak API call handling to cause crashes and disclosure of sensitive error messages
-- Redirecting data to compromised machines to take over the system
-- Tricking users into joining a network or downloading a file, which grants them traffic and device access (used in combination with spoofing)
+- Modifying data temporarily stored in cache, sent over-the-wire, or permanently stored in databases to compromise data integrity.
+- Inserting malicious payloads into browser caches to cause erratic behavior in processes and data stores.
+- Modifying memory through weak API call handling to cause crashes and disclosure of sensitive error messages.
+- Redirecting data to compromised machines to take over the system.
+- Tricking users into joining a network or downloading a file, which grants them traffic and device access (used in combination with spoofing).
 
 ## Elements and interactions at risk from tampering attacks
 

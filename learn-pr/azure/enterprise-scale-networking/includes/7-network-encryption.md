@@ -1,4 +1,4 @@
-Enterprise cloud deployments might have varying encryption requirements. For instance, a PCI-compliant application will have different requirements than an internal application for requesting time off. This unit covers the considerations and design recommendations for network encryption.
+Enterprise cloud deployments might have varying encryption requirements. For instance, a PCI-compliant application has different requirements than an internal application for requesting time off. This unit covers the considerations and design recommendations for network encryption.
 
 ## Considerations  
   

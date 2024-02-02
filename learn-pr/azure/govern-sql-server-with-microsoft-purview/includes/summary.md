@@ -9,9 +9,9 @@ Now that you have a central location for your data, your organization can manage
 
 ## Learn more
 
-- [Connect to and manage an Azure SQL Database Managed Instance in Microsoft Purview](/azure/purview/register-scan-azure-sql-database-managed-instance)
+- [Connect to and manage an Azure SQL Managed Instance in Microsoft Purview](/azure/purview/register-scan-azure-sql-database-managed-instance)
 
-- [Amazon RDS Multi-Cloud Scanning Connector for Microsoft Purview (Public preview)](/azure/purview/register-scan-amazon-rds)
+- [Amazon RDS Multicloud Scanning Connector for Microsoft Purview (Public preview)](/azure/purview/register-scan-amazon-rds)
 
 - [Connect to and manage an on-premises SQL server instance in Microsoft Purview](/azure/purview/register-scan-on-premises-sql-server)
 
@@ -21,6 +21,6 @@ Now that you have a central location for your data, your organization can manage
 
 - [Use private endpoints for your Microsoft Purview account](/azure/purview/catalog-private-link-end-to-end)
 
-- [Microsoft Purview Studio](https://web.purview.azure.com)
+- [Microsoft Purview Governance Portal](https://web.purview.azure.com)
 
 - [Connect to your Microsoft Purview and scan data sources privately and securely](/azure/purview/catalog-private-link-end-to-end)

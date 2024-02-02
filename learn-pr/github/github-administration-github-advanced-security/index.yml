@@ -5,10 +5,9 @@ metadata:
   title: GitHub administration for GitHub Advanced Security
   description: Understand where GitHub Advanced Security fits in your software development lifecycle and how to enable and roll it out in your organization
   ms.date: 01/05/2023
-  author: lucie-docs
-  ms.author: lucielenaour
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
 title: GitHub administration for GitHub Advanced Security
 summary: Understand where GitHub Advanced Security fits in your software development lifecycle and how to enable and roll it out in your organization
 abstract: |

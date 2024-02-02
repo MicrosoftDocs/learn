@@ -1,10 +1,10 @@
 When alerts are sent to Microsoft Sentinel, they include data elements that Microsoft Sentinel identifies and classifies as entities, such as user accounts, hosts, IP addresses and others. On occasion, this identification can be a challenge, if the alert doesn't contain sufficient information about the entity.
 
-For example, user accounts can be identified in more than one way: using an Azure AD account’s numeric identifier (GUID), or its User Principal Name (UPN) value, or alternatively, using a combination of its username and its NT domain name. Different data sources can identify the same user in different ways. Therefore, whenever possible, Microsoft Sentinel merges those identifiers into a single entity, so that it can be properly identified.
+For example, user accounts can be identified in more than one way: using a Microsoft Entra account’s numeric identifier (GUID), or its User Principal Name (UPN) value, or alternatively, using a combination of its username and its NT domain name. Different data sources can identify the same user in different ways. Therefore, whenever possible, Microsoft Sentinel merges those identifiers into a single entity, so that it can be properly identified.
 
 It can happen, though, that one of your resource providers creates an alert in which an entity isn't sufficiently identified - for example, a user name without the domain name context. In such a case, the user entity can't be merged with other instances of the same user account, which would be identified as a separate entity, and those two entities would remain separate instead of unified.
 
-In order to minimize the risk of this happening, you should verify that all of your alert providers properly identify the entities in the alerts they produce. Additionally, synchronizing user account entities with Azure Active Directory may create a unifying directory, which will be able to merge user account entities.
+In order to minimize the risk of this happening, you should verify that all of your alert providers properly identify the entities in the alerts they produce. Additionally, synchronizing user account entities with Microsoft Entra ID may create a unifying directory, which will be able to merge user account entities.
 
 The following types of entities are currently identified in Microsoft Sentinel:
 
@@ -52,7 +52,7 @@ When you encounter any entity (currently limited to users and hosts) in a search
 
 Entity pages consist of three parts:
 
-- The left-side panel contains the entity's identifying information, collected from data sources like Azure Active Directory, Azure Monitor, Microsoft Defender for Cloud, and Microsoft 365 Defender.
+- The left-side panel contains the entity's identifying information, collected from data sources like Microsoft Entra ID, Azure Monitor, Microsoft Defender for Cloud, and Microsoft Defender XDR.
 
 - The center panel shows a graphical and textual timeline of notable events related to the entity, such as alerts, bookmarks, and activities. Activities are aggregations of notable events from Log Analytics. The queries that detect those activities are developed by Microsoft security research teams.
 
@@ -89,5 +89,3 @@ Entity insights are queries defined by Microsoft security researchers to help yo
 - Office Activity
 
 - BehaviorAnalytics (UEBA)
-
-

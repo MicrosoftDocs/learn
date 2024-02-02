@@ -4,12 +4,11 @@ title: What is Azure Application Gateway?
 metadata:
   title: What is Azure Application Gateway?
   description: Learn what Azure Application Gateway does and how your organization can use it.
-  ms.date: 02/16/2022
+  ms.date: 01/31/2024
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/2-what-is-azure-application-gateway.md)]

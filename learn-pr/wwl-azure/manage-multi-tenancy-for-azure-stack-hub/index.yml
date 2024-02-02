@@ -6,11 +6,12 @@ metadata:
   ms.date: 10/26/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-stack
+  ms.subservice: azure-stack-hub
 title: Manage multi-tenancy for Azure Stack Hub
 summary: |
-  Learn how to configure Azure Stack Hub to allow sign-ins from Azure AD directory tenants.
+  Learn how to configure Azure Stack Hub to allow sign-ins from Microsoft Entra directory tenants.
   This module helps you to prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
 abstract: |
   * Configure multi-tenancy for Azure Stack Hub.

@@ -5,10 +5,9 @@ metadata:
   title: Custom voice recognition
   description: Implement custom voice recognition in your app.
   ms.date: 5/24/2019
-  author: PeterTurcan
-  ms.author: v-pettur
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  author: Karl-Bridge-Microsoft
+  ms.author: kbridge
+  ms.topic: unit
   
 durationInMinutes: 20
 content: |

@@ -1,6 +1,3 @@
-
-
-
 The following code is one possible solution for the challenge from the previous unit.
 
 ```csharp
@@ -70,7 +67,7 @@ You may continue this section for an explanation on how the given solution solve
     The code output is:
 
     ```output
-    Dear Mr, Jones,   
+    Dear Ms. Barros,   
     ```
 
     Review the sample full solution again. The first half of the solution uses string interpolation to display each part of the first paragraph.

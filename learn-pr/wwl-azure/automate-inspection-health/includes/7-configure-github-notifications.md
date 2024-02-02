@@ -1,3 +1,4 @@
+
 Github.com notifications provide updates about the activity that you've subscribed to. You can use the notifications inbox to customize, triage, and manage your updates.
 
 You can choose to subscribe to notifications for:
@@ -23,12 +24,12 @@ By default, you automatically watch all repositories you create and own by your 
 
 ## Notification settings
 
-1. Click on the notification icon in the upper-right corner of any page.
-1. Click on the notification settings under the list of repositories in the left sidebar.
+1.  Click on the notification icon in the upper-right corner of any page.
+2.  Click on the notification settings under the list of repositories in the left sidebar.
     
     :::image type="content" source="../media/github-manage-notifications-44f258de.png" alt-text="Screenshot of GitHub notifications settings.":::
     
-1. On the notifications settings page, choose how you receive notifications.
+3.  On the notifications settings page, choose how you receive notifications.
     
     :::image type="content" source="../media/github-notification-settings-eba2d746.png" alt-text="Screenshot of GitHub notifications configuration.":::
     

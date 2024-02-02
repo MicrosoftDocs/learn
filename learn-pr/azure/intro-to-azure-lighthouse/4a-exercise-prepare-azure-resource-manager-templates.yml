@@ -7,9 +7,10 @@ metadata:
   ms.date: 02/09/2023
   author: SCuffy
   ms.author: socuff
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.topic: unit
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-arm-template
   ms.contributors: socuff-04232021
 durationInMinutes: 45
 azureSandbox: false

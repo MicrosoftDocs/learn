@@ -4,9 +4,9 @@ To adapt to new requirements, the web app will be updated over time, and similar
 
 Whenever a change to the model is needed, the data science team will need to experiment, test, and package the model. While they're working on a new and improved model, the model in production should remain unchanged to ensure a stable experience for the practitioners working with the web app. 
 
-As a machine learning engineer, you want to set up **trunk-based development** for the data scientists. By working with branches in your source control, you'll protect the main branch, which contains the production code, and you'll allow data scientists to safely experiment in their own branches. 
+As a machine learning engineer, you want to set up **feature-based development** for the data scientists. By working with branches in your source control, you'll protect the main branch, which contains the production code, and you'll allow data scientists to safely experiment in their own branches. 
 
-To set up trunk-based development, you'll want to:
+To set up feature-based development, you'll want to:
 
 - **Block** any direct pushes to the main branch.
 - Work with **pull requests** whenever an update to the code is needed.

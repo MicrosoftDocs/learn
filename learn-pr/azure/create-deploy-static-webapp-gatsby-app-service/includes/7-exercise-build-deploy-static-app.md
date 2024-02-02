@@ -116,7 +116,10 @@ Next, configure your new app and link it to your GitHub repository.
    | -------------- | -------------------------------------------------------- |
    | _Organization_ | Select the Organization where you created the repository |
    | _Repository_   | **gatsby-app**                              |
-   | _Branch_       | **main or master**                                               |
+   | _Branch_       | **main or master**          |
+
+   > [!NOTE]
+   > If you don't see any repositories, you may need to authorize Azure Static Web Apps on GitHub. Then browse to your GitHub repository and go to **Settings > Applications > Authorized OAuth Apps**, select **Azure Static Web Apps**, and then select **Grant**. For organization repositories, you must be an owner of the organization to grant the permissions.
 
 1. Use the **Build Details** drop down list to select **Gatsby** to populate the build information.
 

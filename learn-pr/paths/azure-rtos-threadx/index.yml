@@ -7,16 +7,15 @@ metadata:
   ms.date: 04/19/2022
   author: timlt
   ms.author: timlt
-  ms.reviewer: liydu
   manager: lizross
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Azure RTOS ThreadX
 prerequisites: |
   Working knowledge of C or C++, GitHub and Visual Studio
 summary: |
   Learn about Real-time Operating System (RTOS), and Azure RTOS ThreadX, a high-performance RTOS that is one of the most widely used RTOSes in the world.
 iconUrl: /training/achievements/iot/azure-rtos-threadx.svg
+hidden: true
 levels:
   - beginner
 roles:

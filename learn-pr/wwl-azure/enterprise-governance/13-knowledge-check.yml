@@ -4,19 +4,17 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/27/2023
+  ms.date: 05/25/2023
   author: wwlpublish
   ms.author: serlingdavis
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  zone_pivot_groups: None
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/13-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "The company hires a new administrator and needs to create a new Azure AD user account for them. The new hire must be able to: - Read/write resource deployments they're responsible for. - Read Azure AD access permissions They shouldn't be able to view Azure subscription information. What should be configured to make this work?"
+  - content: "The company hires a new administrator and needs to create a new Microsoft Entra user account for them. The new hire must be able to: - Read/write resource deployments they're responsible for. - Read Azure AD access permissions They shouldn't be able to view Azure subscription information. What should be configured to make this work?"
     choices:
     - content: "Assign the user the Contributor role at the resource group level."
       isCorrect: true
