@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.connect-aks-edge-essentials-arc.remote-application-aks-edge-essentials
+uid: learn.connect-aks-edge-essentials-azure-arc.remote-application-aks-edge-essentials
 title: Deploy applications remotely in Arc-enabled AKS Edge Essentials cluster
 metadata:
   title: Deploy applications remotely in Arc-enabled AKS Edge Essentials cluster

@@ -19,7 +19,7 @@ If you don't have a GitHub account already, [create one now](https://docs.github
 
 In the Azure portal, navigate to your Arc-enabled AKS Edge Essentials cluster and select **GitOps** under **Settings**. We create a cluster-level configuration and a namespace-level configuration.
 
-:::image type="content" source="../media/5-aks-edge-kubernetes-azure-arc-resource-gitops-inline.png" alt-text="Screenshot of AKS Edge Essentials Kubernetes Azure Arc resource in Azure portal, with GitOps highlight." lightbox="../media/5-aks-edge-kubernetes-azure-arc-resource-gitops-expanded.png":::
+:::image type="content" source="../media/5-aks-edge-essentials-kubernetes-azure-arc-resource-gitops-inline.png" alt-text="Screenshot of AKS Edge Essentials Kubernetes Azure Arc resource in Azure portal, with GitOps highlight." lightbox="../media/5-aks-edge-essentials-kubernetes-azure-arc-resource-gitops-expanded.png":::
 
 1. Select **Create** and use the following values for the cluster-level configuration.
 
@@ -103,7 +103,7 @@ In the Azure portal, navigate to your Arc-enabled AKS Edge Essentials cluster an
 
 1. To view the application, open a browser and navigate to the EXTERNAL-IP address assigned to the `ingress-nginx-controller` service. In the previous example, the IP address assigned to the service is **192.168.0.4**.
 
-    :::image type="content" source="../media/5-aks-ee-linux-arc-app-inline.png" alt-text="Screenshot of Windows VM with linux sample application running in the browser." lightbox="../media/5-aks-ee-linux-arc-app-expanded.png":::
+    :::image type="content" source="../media/5-aks-edge-essentials-linux-azure-arc-app-inline.png" alt-text="Screenshot of Windows VM with linux sample application running in the browser." lightbox="../media/5-aks-edge-essentials-linux-azure-arc-app-expanded.png":::
 
 ## Update the application
 
@@ -148,7 +148,7 @@ We configured GitOps and Flux to watch for changes in the *main* branch of your 
 
 1. Refresh your application to see this change reflected as a rolling update:
 
-    :::image type="content" source="../media/5-aks-ee-linux-arc-app-updated-inline.png" alt-text="Screenshot of Windows VM with updated linux sample application running in the browser." lightbox="../media/5-aks-ee-linux-arc-app-updated-expanded.png":::
+    :::image type="content" source="../media/5-aks-edge-essentials-linux-azure-arc-app-updated-inline.png" alt-text="Screenshot of Windows VM with updated linux sample application running in the browser." lightbox="../media/5-aks-edge-essentials-linux-azure-arc-app-updated-expanded.png":::
 
 ## Clean up your Azure resources
 

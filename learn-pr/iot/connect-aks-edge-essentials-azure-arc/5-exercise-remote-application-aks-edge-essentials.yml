@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.connect-aks-edge-essentials-arc.exercise-remote-application-aks-edge-essentials
+uid: learn.connect-aks-edge-essentials-azure-arc.exercise-remote-application-aks-edge-essentials
 title: Exercise - Deploy a sample application to the cluster with GitOps and Flux
 metadata:
   title: Exercise - Deploy a sample application to the cluster with GitOps and Flux

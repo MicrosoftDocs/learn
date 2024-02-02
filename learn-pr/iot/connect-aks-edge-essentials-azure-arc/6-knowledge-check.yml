@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.connect-aks-edge-essentials-arc.knowledge-check
+uid: learn.connect-aks-edge-essentials-azure-arc.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -31,7 +31,7 @@ quiz:
     - content: "GitOps is used to create a Kubernetes cluster."
       isCorrect: false
       explanation: "GitOps isn't used to create a Kubernetes cluster, but rather to deploy and manage applications on a Kubernetes cluster."
-    - content: "Gitops is used to automate and validate the creation and teardown of environments."
+    - content: "GitOps is used to automate and validate the creation and teardown of environments."
       isCorrect: true
       explanation: "GitOps enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms by using a Git repository as the source of truth for declarative infrastructure and application code."
   - content: "What is the purpose of Azure Arc-enabled Kubernetes?"
