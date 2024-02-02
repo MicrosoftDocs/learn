@@ -35,7 +35,6 @@ units:
 - learn.wwl.azure-ad-identity-protection.risk-events
 - learn.wwl.azure-ad-identity-protection.user-risk-policy
 - learn.wwl.azure-ad-identity-protection.sign-risk-policy
-- learn.wwl.azure-ad-identity-protection.azure-multi-factor-authentication
 - learn.wwl.azure-ad-identity-protection.multi-factor-authentication-settings
 - learn.wwl.azure-ad-identity-protection.enabling-multi-factor-authentication
 - learn.wwl.azure-ad-identity-protection.conditional-access
