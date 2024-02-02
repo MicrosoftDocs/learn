@@ -6,7 +6,7 @@ The Device API supports key-based and X.509 certificated-based device authentica
 
 The Service API supports key-based authentication for backend apps.
 
-When using key-based authentication, the Device Provisioning Service uses security tokens to authenticate services to avoid sending keys on the wire. Additionally, security tokens are limited in time validity and scope. Device Provisioning SDKs automatically generate tokens without requiring any special configuration.
+When using key-based authentication, the Device Provisioning Service uses security tokens to authenticate services to avoid sending keys on the wire. Additionally, security tokens are limited in time validity and scope. Device Provisioning Service SDKs automatically generate tokens without requiring any special configuration.
 
 In some cases you may need to use the HTTP Device Provisioning Service REST APIs directly, without using the SDKs. The following sections describe how to authenticate directly against the REST APIs.
 
@@ -113,17 +113,17 @@ The following example shows how the shared access signature is then used to auth
 curl -L -i -X PUT -H 'Content-Type: application/json' -H 'Content-Encoding:  utf-8' -H 'Authorization: [token]' -d '{"registrationId": "[registration_id]"}' https://global.azure-devices-provisioning.net/[ID_Scope]/registrations/[registration_id]/register?api-version=2021-06-01
 ```
 
-If using a symmetric key-based enrollment group, you need to first generate a device symmetric key using the enrollment group key. Use the enrollment group primary or secondary key to compute an HMAC-SHA256 of the registration ID for the device. The result is then converted into Base64 format to obtain the derived device key. To avoid including the group master key in your device code, the process of deriving device key should be done off the device.
+If using a symmetric key-based enrollment group, you need to first generate a device symmetric key using the enrollment group key. Use the enrollment group primary or secondary key to compute an HMAC-SHA256 of the registration ID for the device. The result is then converted into Base64 format to obtain the derived device key. To avoid including the group master key in your device code, the process of deriving the device key should be done off the device.
 
 ### Certificate-based authentication
 
-If you've set up an individual enrollment or enrollment group for X.509 certificated-based authentication, the device needs to use its issued X.509 certificate to attest to Device API. Refer to the following articles on how to set up the enrollment and generate the device certificate.
+If you've set up an individual enrollment or enrollment group for X.509 certificated-based authentication, the device needs to use its issued X.509 certificate to attest to the Device API. Refer to the following articles on how to set up the enrollment and generate the device certificate.
 
 * Quickstart - [Provision simulated X.509 device to Azure IoT Hub](/azure/iot-dps/quick-create-simulated-device-x509?tabs=windows&pivots=programming-language-csharp)
 
 * Quickstart - [Enroll X.509 devices to Azure Device Provisioning Service](/azure/iot-dps/quick-enroll-device-x509?pivots=programming-language-csharp)
 
-Once the enrollment is set up and the device certificate issued, the following example demonstrates how to authenticate to Device API with the device's X.509 certificate.
+Once the enrollment is set up and the device certificate issued, the following example demonstrates how to authenticate to the Device API with the device's X.509 certificate.
 
 ```bash
 curl -L -i -X PUT -cert ./[device_cert].pem -key ./[device_cert_private_key].pem -H 'Content-Type: application/json' -H 'Content-Encoding:  utf-8' -d '{"registrationId": "[registration_id]"}' https://global.azure-devices-provisioning.net/[ID_Scope]/registrations/[registration_id]/register?api-version=2021-06-01
@@ -131,7 +131,7 @@ curl -L -i -X PUT -cert ./[device_cert].pem -key ./[device_cert_private_key].pem
 
 ## Service API authentication
 
-The Service API is used to retrieve registration state and remove device registrations. The service is also used by backend apps to programmatically manage both individual groups and enrollment groups. The Service API supports key-based authentication for backend apps.
+The Service API is used to retrieve registration state and remove device registrations. The Service API is also used by backend apps to programmatically manage both individual groups and enrollment groups. The Service API supports key-based authentication for backend apps.
 
 You must have appropriate permissions to access any of the Service API endpoints. For example, a backend app must include a token containing security credentials along with every message it sends to the service.
 

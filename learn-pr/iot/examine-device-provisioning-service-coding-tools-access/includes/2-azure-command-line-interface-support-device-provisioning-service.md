@@ -58,7 +58,7 @@ Use the `az iot dps create` command to create an Azure IoT Hub Device Provisioni
     \--name
   :::column-end:::
   :::column:::
-    IoT Provisioning Service name.
+    Device Provisioning Service name.
 \--name is a required argument.
   :::column-end:::
 :::row-end:::

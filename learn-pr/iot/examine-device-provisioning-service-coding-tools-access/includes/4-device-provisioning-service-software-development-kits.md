@@ -10,7 +10,7 @@ There are three categories of software development kits (SDKs) for working with 
 * DPS service SDKs
 * DPS management SDKs
 
-Each DSP SDK category is described in the following sections.
+Each DPS SDK category is described in the following sections.
 
 ### DPS device SDKs
 
@@ -20,7 +20,7 @@ The DPS device SDKs provide implementations of the Register API and others that 
 
 #### Embedded device SDKs
 
-These SDKs were designed and created to run on devices with limited compute and memory resources and are implemented using the C language. Azure RTOS, FreeRTOS, and Bare Metal RTOS are supported.
+These SDKs were designed and created to run on devices with limited compute and memory resources and are implemented using the C language. FreeRTOS and Bare Metal RTOS are supported.
 
 ### DPS service SDKs
 
@@ -40,15 +40,7 @@ In addition to the sample code included with the SDKs that can be used for refer
 
 TPM can refer to a standard for securely storing keys to authenticate the platform, or it can refer to the I/O interface used to interact with the modules implementing the standard. TPMs can exist as discrete hardware, integrated hardware, firmware-based, or software-based. In production, TPM is located on the device, either as discrete hardware, integrated hardware, or firmware-based. In the testing phase, a software-based TPM simulator is provided to developers.
 
-> [!NOTE]
-> This simulator is only available for developing for the Windows platform.
-
-To use the TPM simulator:
-
-1. Prepare the development environment and clone the GitHub repository: `git clone https://github.com/Azure/azure-iot-sdk-java.git`
-2. Navigate to the TPM simulator folder under `azure-iot-sdk-java/provisioning/provisioning-tool/tpm-simulator/`.
-3. Run Simulator.exe prior to running any client application for provisioning device.
-4. Let the simulator run in the background throughout the provisioning process to obtain registration ID and Endorsement Key. Both values are only valid for one instance of the run.
+This [simulator](/azure/iot-dps/quick-create-simulated-device-tpm) is available for developing for the Windows platform. C, C#, Node.js, Python, and Java platforms are supported.
 
 ### X.509 certificate generator
 
@@ -61,7 +53,7 @@ X.509 certificates can be used as an attestation mechanism to scale production a
     * PowerShell or Bash
   * Device Identity Composition Engine (DICE) Emulator: DICE can be used for cryptographic device identity and attestation based on TLS protocol and X.509 client certificates.
 
-#### Using X.509 certificate generator with DICE emulator
+#### Use a X.509 certificate generator with DICE emulator
 
 The SDKs provide an X.509 certificate generator with DICE emulator, located in the Java SDK. This generator works cross-platform. The generated certificate can be used for development in other languages.
 
