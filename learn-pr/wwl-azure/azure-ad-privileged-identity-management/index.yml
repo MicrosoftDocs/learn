@@ -35,7 +35,6 @@ units:
 - learn.wwl.azure-ad-privileged-identity-management.privileged-identity-management
 - learn.wwl.azure-ad-privileged-identity-management.scope
 - learn.wwl.azure-ad-privileged-identity-management.onboarding
-- learn.wwl.azure-ad-privileged-identity-management.configuration-settings
 - learn.wwl.azure-ad-privileged-identity-management.workflow
 - learn.wwl.azure-ad-privileged-identity-management.demonstrations
 - learn.wwl.azure-ad-privileged-identity-management.knowledge-check
