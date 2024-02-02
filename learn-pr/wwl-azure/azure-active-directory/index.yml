@@ -35,7 +35,6 @@ units:
 - learn.wwl.azure-active-directory.azure-ad-ds-and-self-managed-ad-ds
 - learn.wwl.azure-active-directory.azure-ad-ds-and-azure-ad
 - learn.wwl.azure-active-directory.roles-aad
-- learn.wwl.azure-active-directory.azure-ad-domain-services
 - learn.wwl.azure-active-directory.azure-ad-users
 - learn.wwl.azure-active-directory.azure-ad-groups
 - learn.wwl.azure-active-directory.passwordless
