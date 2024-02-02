@@ -2833,3 +2833,8 @@ achievements:
   title: Configure Microsoft Entra Privileged Identity Management
   summary: Ensure that your privileged identities have extra protection and are accessed only with the least amount of access needed to do the job.
   iconUrl: /training/achievements/azure-ad-privileged-identity-management.svg
+- uid: learn.wwl.hybrid-identity.badge
+  type: badge
+  title: Implement Hybrid identity
+  summary: Explore how to deploy and configure Microsoft Entra Connect to create a hybrid identity solution for your company.
+  iconUrl: /training/achievements/identity-hybrid.svg
