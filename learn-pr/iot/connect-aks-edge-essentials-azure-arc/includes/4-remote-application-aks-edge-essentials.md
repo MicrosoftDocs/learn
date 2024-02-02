@@ -4,7 +4,7 @@ In the retail chain scenario, we need to optimize the customer experience by dep
 
 Here, you learn how to use GitOps and Flux to deploy applications to an Arc-Enabled AKS Edge Essentials cluster.
 
-:::image type="content" source="../media/4-arc-enabled-gitops-flux-inline.png" alt-text="Diagram showing the process of applying GitOps-based configuration to Azure Arc-enabled clusters." lightbox="../media/4-arc-enabled-gitops-flux-expanded.png":::
+:::image type="content" source="../media/4-azure-arc-enabled-gitops-flux-inline.png" alt-text="Diagram showing the process of applying GitOps-based configuration to Azure Arc-enabled clusters." lightbox="../media/4-azure-arc-enabled-gitops-flux-expanded.png":::
 
 ## GitOps for Arc-enabled Kubernetes
 

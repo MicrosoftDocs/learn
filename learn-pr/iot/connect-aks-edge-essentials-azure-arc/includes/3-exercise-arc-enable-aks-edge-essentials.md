@@ -258,7 +258,7 @@ Now that the VM is created, let's run the `AksEdgeQuickStart-v2.ps1` PowerShell 
     Duration: 0 hrs 8 mins 29 seconds
     ```
 
-    :::image type="content" source="../media/3-aks-ee-arc-enabled-success-inline.png" alt-text="Screenshot of Windows VM with PowerShell commands output demonstrating a successful deployment of AKS Edge Essentials and connected with Azure Arc." lightbox="../media/3-aks-ee-arc-enabled-success-expanded.png":::
+    :::image type="content" source="../media/3-aks-edge-essentials-azure-arc-enabled-success-inline.png" alt-text="Screenshot of Windows VM with PowerShell commands output demonstrating a successful deployment of AKS Edge Essentials and connected with Azure Arc." lightbox="../media/3-aks-edge-essentials-azure-arc-enabled-success-expanded.png":::
 
 1. Confirm that the deployment was successful by running the following command:
 
@@ -269,7 +269,7 @@ Now that the VM is created, let's run the `AksEdgeQuickStart-v2.ps1` PowerShell 
 
     The following example screenshot shows the Linux node is ready and the pods are running:
 
-    :::image type="content" source="../media/3-aks-ee-deploy-success-inline.png" alt-text="Screenshot of Windows VM with PowerShell commands output demonstrating a successful deployment of AKS Edge Essentials." lightbox="../media/3-aks-ee-deploy-success-expanded.png":::
+    :::image type="content" source="../media/3-aks-edge-essentials-deploy-success-inline.png" alt-text="Screenshot of Windows VM with PowerShell commands output demonstrating a successful deployment of AKS Edge Essentials." lightbox="../media/3-aks-edge-essentials-deploy-success-expanded.png":::
 
 ## View your cluster in Azure portal
 
@@ -277,7 +277,7 @@ Now that the VM is created, let's run the `AksEdgeQuickStart-v2.ps1` PowerShell 
 
 1. On the left panel, select the **Namespaces** option, under **Kubernetes resources (preview)**:
 
-    :::image type="content" source="../media/3-aks-edge-kubernetes-azure-arc-resource-namespaces-inline.png" alt-text="Screenshot of AKS Edge Essentials Kubernetes Azure Arc resource in Azure portal with namespaces highlight." lightbox="../media/3-aks-edge-kubernetes-azure-arc-resource-namespaces-expanded.png":::
+    :::image type="content" source="../media/3-aks-edge-essentials-kubernetes-azure-arc-resource-namespaces-inline.png" alt-text="Screenshot of AKS Edge Essentials Kubernetes Azure Arc resource in Azure portal with namespaces highlight." lightbox="../media/3-aks-edge-essentials-kubernetes-azure-arc-resource-namespaces-expanded.png":::
 
 1. You need to sign in using a bearer token to view the Kubernetes resources. To get the token, run the following command in the PowerShell command line of the VM:
 
@@ -287,4 +287,4 @@ Now that the VM is created, let's run the `AksEdgeQuickStart-v2.ps1` PowerShell 
 
 1. Now you can view resources on your cluster. The **Workloads** shows the pods running on your cluster.
 
-    :::image type="content" source="../media/3-aks-edge-kubernetes-azure-arc-workloads-inline.png" alt-text="Screenshot of AKS Edge Essentials Kubernetes Azure Arc workloads in Azure portal." lightbox="../media/3-aks-edge-kubernetes-azure-arc-workloads-expanded.png":::
+    :::image type="content" source="../media/3-aks-edge-essentials-kubernetes-azure-arc-workloads-inline.png" alt-text="Screenshot of AKS Edge Essentials Kubernetes Azure Arc workloads in Azure portal." lightbox="../media/3-aks-edge-essentials-kubernetes-azure-arc-workloads-expanded.png":::
