@@ -1,4 +1,4 @@
-In this section, you will configure your Azure DevOps organization to proceed with the rest of this module and create an Azure Kubernetes Service environment to deploy your application to.
+In this section, you'll configure your Azure DevOps organization to proceed with the rest of this module and create an Azure Kubernetes Service (AKS) environment to deploy your application to.
 
 To achieve these objectives, you will:
 
@@ -24,7 +24,7 @@ After adding the user with Basic access level, sign out of Azure DevOps and sign
 
 ## Get the Azure DevOps project
 
-In this section, you will run a template to create your project in Azure DevOps.
+In this section, you run a template to create your project in Azure DevOps.
 
 ### Run the template
 
@@ -41,12 +41,12 @@ From the Azure DevOps Demo Generator portal, follow these steps to run the templ
 
     :::image type="content" source="../media/3-create-new-project.png" alt-text="Screenshot of the Azure DevOps Demo Generator showing the process to create the project.":::
 
-1. Select **Yes, I want to import this repository**, and then **Authorize**. If a window pops up, grant permission to access your GitHub account.
+1. Select **Yes, I want to fork this repository**, and then **Authorize**. If a window pops up, grant permission to access your GitHub account.
 
     > [!IMPORTANT]
     > Selecting this option is necessary for the template to connect to your GitHub repository. Please choose it even if you have already forked the *Space Game* repository as the template will use your existing fork.
 
-1. Select **Create Project** and wait for the template to finish running, which may take a few minutes.
+1. Select **Create Project** and wait for the template to finish running, which might take a few minutes.
 
 1. Select **Navigate to project** to access your project in Azure DevOps.
 
@@ -57,7 +57,7 @@ From the Azure DevOps Demo Generator portal, follow these steps to run the templ
 
 ## Move the work item to Doing
 
-In this step, you will assign a work item to yourself on Azure Boards and move it to the Doing state. In real-world scenarios, you and your team would create work items at the beginning of each sprint or work iteration.
+In this step, you assign a work item to yourself on Azure Boards and move it to the **Doing** state. In real-world scenarios, you and your team would create work items at the beginning of each sprint or work iteration.
 
 Assigning work items provides you with a checklist to work from and gives other team members visibility into your progress and remaining work. It also helps enforce work-in-progress (WIP) limits to prevent the team from taking on too much work at once.
 
@@ -69,24 +69,24 @@ Assigning work items provides you with a checklist to work from and gives other 
 
     :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="Screenshot of Azure Boards showing the location of the down arrow.":::
 
-1. Drag and drop the work item from the **To Do** column to the **Doing** column. You will move the task to the Done column at the end of this module when you have completed it.
+1. Drag and drop the work item from the **To Do** column to the **Doing** column. You'll move the task to the **Done** column at the end of this module after you complete it.
 
-    :::image type="content" source="../media/3-azure-boards-wi1-doing.png" alt-text="Screenshot of Azure Boards showing the card in the Doing column.":::
+    :::image type="content" source="../media/3-azure-boards-wi1-doing.png" alt-text="Screenshot of Azure Boards showing the card in the Doing column." lightbox="../media/3-azure-boards-wi1-doing.png":::
 
 ## Create the Azure Kubernetes Service environment
 
-In this step, you will create the necessary Azure Kubernetes Service resources to deploy the new container version of the website.
+In this step, you create the necessary Azure Kubernetes Service resources to deploy the new container version of the website.
 
 In the previous module, [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you used the Azure portal to create Azure resources. While the portal is useful for exploring Azure capabilities and performing basic tasks, creating components like Azure Kubernetes Service can be a time-consuming process.
 
-In this module, you will be using the Azure CLI to create the resources required to deploy and run your application on Azure Kubernetes Service. The Azure CLI can be accessed from a terminal or through Visual Studio Code. However, in this module, you will be accessing the Azure CLI from Azure Cloud Shell. Cloud Shell is a browser-based shell experience hosted in the cloud, which comes preconfigured with the Azure CLI for use with your Azure subscription.
+In this module, you use the Azure CLI to create the resources required to deploy and run your application on Azure Kubernetes Service. The Azure CLI can be accessed from a terminal or through Visual Studio Code. However, in this module, you access the Azure CLI from Azure Cloud Shell. Cloud Shell is a browser-based shell experience hosted in the cloud, which comes preconfigured with the Azure CLI for use with your Azure subscription.
 
 > [!IMPORTANT]
 > To complete the exercises in this module, you need your own Azure subscription.
 
 ### Launch Cloud Shell
 
-1. Navigate to [Azure portal](https://portal.azure.com?azure-portal=true) and log in.
+1. Navigate to [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 
 1. Select **Cloud Shell** option from the menu, and then choose the **Bash** experience when prompted.
 
@@ -99,7 +99,7 @@ In this module, you will be using the Azure CLI to create the resources required
 
 A region refers to one or more Azure datacenters located in a geographic area. Regions such as East US, West US, and North Europe are examples of such areas. Each Azure resource, including an App Service instance, is associated with a region.
 
-To simplify the execution of commands, begin by setting a default region. Once you set a default region, subsequent commands will use that region by default, unless you explicitly specify a different region.
+To simplify the execution of commands, begin by setting a default region. Once you set a default region, subsequent commands use that region by default, unless you explicitly specify a different region.
 
 1. From Cloud Shell, run the following command to list the regions available in your Azure subscription:
 
@@ -117,11 +117,11 @@ To simplify the execution of commands, begin by setting a default region. Once y
     az configure --defaults location=<REGION>
     ```
 
-This example sets `westus2` as the default region.
+    This example sets `westus2` as the default region.
 
-```azurecli
-az configure --defaults location=westus2
-```
+    ```azurecli
+    az configure --defaults location=westus2
+    ```
 
 ### Create Bash variables
 
@@ -133,7 +133,7 @@ Using Bash variables can make the setup process more convenient and less error-p
     resourceSuffix=$RANDOM
     ```
 
-1. Create globally unique names for your Azure Container Registry and Azure Kubernetes Service instance. Note that these commands use double quotes, which instructs Bash to interpolate the variables using the inline syntax.
+1. Create globally unique names for your Azure Container Registry and Azure Kubernetes Service instance. Note that these commands use double quotes, which instruct Bash to interpolate the variables using the inline syntax.
 
     ```bash
     registryName="tailspinspacegame${resourceSuffix}"
@@ -146,18 +146,18 @@ Using Bash variables can make the setup process more convenient and less error-p
     rgName='tailspin-space-game-rg'
     ```
 
-1. Create a variable to hold the latest AKS version available in your default region.
+1. Find the latest AKS version.
 
     ```azurecli
-    aksVersion=$(az aks get-versions \
-      --query 'orchestrators[-1].orchestratorVersion' \
-      --output tsv)
+    az aks get-versions
     ```
+
+    Make note of the latest version.
 
 ### Create Azure resources
 
 > [!NOTE]
-> In this tutorial, default network settings are used for learning purposes. These settings enable your website to be accessed from the internet. However, in practice, you may choose to configure an Azure virtual network that places your website in a network that is not internet-routable and is only accessible by you and your team. Later, you could reconfigure your network to make the website available to your users.
+> In this tutorial, default network settings are used for learning purposes. These settings enable your website to be accessed from the internet. However, in practice, you might choose to configure an Azure virtual network that places your website in a network that isn't internet-routable and is only accessible by you and your team. Later, you could reconfigure your network to make the website available to your users.
 
 1. Run the following command to create a resource group with the name you defined earlier:
 
@@ -174,19 +174,19 @@ Using Bash variables can make the setup process more convenient and less error-p
       --sku Standard
     ```
 
-1. Run the `az aks create` command to create an AKS instance with the name you defined earlier:
+1. Run the `az aks create` command to create an AKS instance with the name you defined earlier. Replace `<latest-AKS-version>` with the version you noted earlier.
 
     ```azurecli
     az aks create \
       --name $aksName \
       --resource-group $rgName \
       --enable-addons monitoring \
-      --kubernetes-version $aksVersion \
+      --kubernetes-version <latest-AKS-version> \
       --generate-ssh-keys
     ```
 
    > [!NOTE]
-   > AKS deployment completion may take 10-15 minutes.
+   > AKS deployment completion might take 10-15 minutes.
 
 1. Create a variable to store the ID of the service principal configured for the AKS instance:
 
@@ -217,7 +217,7 @@ Using Bash variables can make the setup process more convenient and less error-p
      --output table
     ```
 
-    Make sure to take note of the login server for your container registry. You will need this information later when configuring your pipeline. Here's an example:
+    Make sure to take note of the login server for your container registry. You need this information later when configuring your pipeline. Here's an example:
 
     ```output
     LoginServer                      
@@ -235,13 +235,13 @@ Using Bash variables can make the setup process more convenient and less error-p
     ```
 
 > [!IMPORTANT]
-> The unit [Clean up your Azure DevOps environment](/training/modules/deploy-kubernetes/5-clean-up-environment?azure-portal=true) in this module includes crucial steps for cleanup. It is recommended to perform these steps to avoid running out of free build minutes. Even if you don't finish this module, it is important to follow the cleanup steps.
+> The unit [Clean up your Azure DevOps environment](/training/modules/deploy-kubernetes/5-clean-up-environment?azure-portal=true) in this module includes crucial steps for cleanup. It's recommended to perform these steps to avoid running out of free build minutes. Even if you don't finish this module, it's important to follow the cleanup steps.
 
 ## Create a variable group
 
-In this section you will be adding a variable to your pipeline to store the name of your Azure Container Registry. Defining the name of your Azure Container Registry instance as a variable in your pipeline configuration is recommended over hard-coding it. This makes your configuration more reusable and in case the name of your instance changes, you can easily update the variable and trigger your pipeline without having to modify your configuration.
+In this section, you'll add a variable to your pipeline to store the name of your Azure Container Registry. Defining the name of your Azure Container Registry instance as a variable in your pipeline configuration is recommended over hard-coding it. This makes your configuration more reusable and in case the name of your instance changes, you can easily update the variable and trigger your pipeline without having to modify your configuration.
 
-1. Log in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Pipelines**, and then select **Library** from the left navigation pane.
 
@@ -264,11 +264,11 @@ In this section you will be adding a variable to your pipeline to store the name
 The next step is to create service connections that allow Azure Pipelines to access your Azure Container Registry and Azure Kubernetes Service instances. By creating these service connections, Azure Pipelines can push your containers and instruct your AKS cluster to pull them in to update the deployed service.
 
 > [!IMPORTANT]
-> Make sure that you are signed in to the Azure portal and Azure DevOps with the same Microsoft account.
+> Make sure that you're signed in to the Azure portal and Azure DevOps with the same Microsoft account.
 
 ### Create a Docker Registry service connection
 
-1. Log in to your Azure DevOps organization, and then navigate to your project.
+1. Sign in to your Azure DevOps organization, and then navigate to your project.
 
 1. Select **Project settings** from the bottom corner of the page.
 
@@ -292,7 +292,7 @@ The next step is to create service connections that allow Azure Pipelines to acc
 
 ### Create ARM service connection
 
-Now you will create an Azure Resource Manager service connection to authenticate with your AKS cluster. We're using an ARM service connection instead of Kubernetes because long-lived tokens are no longer created by default since Kubernetes 1.24. Check out this DevOps blog post for more details: [Service Connection guidance for AKS customers using Kubernetes tasks](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/).
+Now you'll create an Azure Resource Manager service connection to authenticate with your AKS cluster. We're using an ARM service connection instead of Kubernetes because long-lived tokens are no longer created by default since Kubernetes 1.24. Check out this DevOps blog post for more details: [Service Connection guidance for AKS customers using Kubernetes tasks](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/).
 
 1. Select **New service connection**, select **Azure Resource Manager**, and then select **Next**.
 
@@ -324,9 +324,9 @@ Now you will create an Azure Resource Manager service connection to authenticate
 
 ## Update the Kubernetes deployment manifest
 
-In this section you will be updating the Kubernetes manifest *deployment.yml* to point to the container registry you created earlier.
+In this section, you'll update the Kubernetes manifest *deployment.yml* to point to the container registry you created earlier.
 
-1. Navigate to your GitHub account and select the repository you forked for this module: "mslearn-tailspin-spacegame-web-kubernetes".
+1. Navigate to your GitHub account and select the repository you forked for this module: *mslearn-tailspin-spacegame-web-kubernetes*.
 
 1. Open the *manifests/deployment.yml* file in edit mode.
 
