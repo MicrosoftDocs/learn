@@ -1,4 +1,4 @@
-You can organize subscriptions into containers called "management groups" and apply your governance conditions to them. Management groups provide enterprise-grade management at a large scale irrespective of the type of your subscriptions.<br>
+You can organize subscriptions into containers called **management groups** and apply your governance conditions to them. Management groups provide enterprise-grade management at a large scale irrespective of the type of your subscriptions.<br>
 
 ## Prerequisites
 
@@ -13,4 +13,4 @@ To assign Azure roles, you must have:
 
 ## To assign Azure roles, complete the following high-level steps: 
 
-:::image type="content" source="../media/configure-azure-role-permissions-a276efb5.png" alt-text="Diagram showing high-level steps to assign Azure roles.":::
+:::image type="content" source="../media/assign-azure-role-permissions-19e4a29e.png" alt-text="Diagram showing how to assign Azure roles.":::
