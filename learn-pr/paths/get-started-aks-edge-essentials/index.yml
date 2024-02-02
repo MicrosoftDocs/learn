@@ -31,6 +31,6 @@ subjects:
 modules:
 - learn.introduction-to-aks-edge-essentials
 - learn.create-first-aks-edge-essentials
-- learn.connect-aks-edge-essentials-arc
+- learn.connect-aks-edge-essentials-azure-arc
 trophy:
   uid: learn.get-started-aks-edge-essentials.trophy
