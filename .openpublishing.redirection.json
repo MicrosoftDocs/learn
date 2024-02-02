@@ -32730,6 +32730,11 @@
       "source_path": "learn-pr/wwl-azure/hybrid-identity/5-pass-through-authentication.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/hybrid-identity/4-password-hash-synchronization.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
     }
   ]
 }
