@@ -32,7 +32,6 @@ products:
 subjects:
 - identity-access
 units:
-- learn.wwl.hybrid-identity.password-writeback
 - learn.wwl.hybrid-identity.summary
 badge:
   uid: learn.wwl.hybrid-identity.badge
