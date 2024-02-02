@@ -32,7 +32,6 @@ products:
 subjects:
 - identity-access
 units:
-- learn.wwl.hybrid-identity.introduction
 - learn.wwl.hybrid-identity.password-hash-synchronization-phs
 - learn.wwl.hybrid-identity.pass-through-authentication-pta
 - learn.wwl.hybrid-identity.password-writeback
