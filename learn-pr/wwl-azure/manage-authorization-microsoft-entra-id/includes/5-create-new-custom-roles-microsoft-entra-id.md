@@ -12,13 +12,13 @@ Custom roles can be created in the Roles and administrators page of the Microsof
 
 3. Select **New custom role**.
 
-4. On the **Basics** tab, provide a name and description for the role and then click **Next**.<br>
+4. On the **Basics** tab, provide a name and description for the role and then click **Next**.
 
 5. On the Permissions tab, select the permissions necessary to manage basic properties and credential properties of app registrations.<br>
 
 6. First, enter "credentials" in the search bar and select the `microsoft.directory/applications/credentials/update permission`.
 
-7. Next, enter "**basic**" in the search bar, select the **`microsoft.directory/applications/basic/update permission`**, and then click **Next**.<br>
+7. Next, enter "**basic**" in the search bar, select the `microsoft.directory/applications/basic/update permission`, and then click **Next**.<br>
 
 8. On the **Review** \+ **create** tab, review the permissions and select Create.<br>
 
