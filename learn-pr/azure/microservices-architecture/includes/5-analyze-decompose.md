@@ -55,7 +55,7 @@ Tactical DDD is when you define your domain models with more precision. The tact
 There are several tactical DDD patterns to consider:
 
 - **Entities:** An entity is an object with a unique identity that persists over time. For example, in a banking application, customers and accounts are entities.
-- **Value objects:** A value object has no identity, is defined by the values of its attributes, and is immutable. Typical examples of value objects include colors, dates and times, and currency values.
+- **Value objects:** A value object has no identity. The values of its attributes define it, and it's immutable. Typical examples of value objects include colors, dates and times, and currency values.
 - **Aggregates:** An aggregate defines a consistency boundary around one or more entities. The purpose of an aggregate is to model transactional invariants. Things in the real world have complex webs of relationships. Customers create orders, orders contain products, products have suppliers, and so on. If the application modifies several related objects, how does it guarantee consistency? How do we keep track of invariants and enforce them?
 - **Domain and application services:** In DDD terminology, a service is an object that implements some logic without holding any state. Evans distinguishes between domain services, which encapsulate domain logic, and application services, which provide technical functionality. Application services typically include technical functionality such as user authentication or sending an SMS message. Domain services are often used to model behavior that spans multiple entities.
 - **Domain events:** Domain events can be used to notify other parts of the system when something happens. As the name suggests, domain events should mean something within the domain. For example, "a record was inserted into a table" isn't a domain event. "A delivery was canceled" is a domain event. Domain events are especially relevant in a microservices architecture. Because microservices are distributed and don't share data stores, domain events provide a way for microservices to coordinate with each other.
@@ -89,7 +89,7 @@ The development team identified one more area of functionality, which doesn't fi
 
 Now we're ready to go from domain model to application design. Here's an approach that you can use to derive microservices from the domain model.
 
-1. Start with a bounded context. In general, the functionality in a microservice shouldn't span more than one bounded context. By definition, a bounded context marks the boundary of a particular domain model. If you find that a microservice mixes different domain models together, that's a sign that you might need to go back and refine your domain analysis.
+1. Start with a bounded context. In general, the functionality in a microservice shouldn't span more than one bounded context. By definition, a bounded context marks the boundary of a particular domain model. If your microservice mixes different domain models together, it's a sign that you might need to refine your domain analysis.
 1. Next, look at the aggregates in your domain model. Aggregates are often good candidates for microservices. A well-designed aggregate shows many of the characteristics of a well-designed microservice:
     - An aggregate is derived from business requirements rather than technical concerns, such as data access or messaging.
     - An aggregate should have high functional cohesion.

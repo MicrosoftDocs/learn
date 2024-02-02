@@ -2,7 +2,7 @@ There are many reasons that you might choose to change the architecture of a sys
 
 As the Fabrikam drone delivery business grows, system load increases. The current architecture is straining under the load. Fabrikam wants to provide better flexibility in scaling the application that isn't available in the current monolithic architecture. Improving the application's scalability is one of the drivers for Fabrikam to look at moving their application to a microservices architecture.
 
-## Scaling monolith vs. scaling microservices
+## Scaling a monolith vs. microservices
 
 One of the primary benefits to a microservices architecture comes in the increased scaling capabilities. Because services are separated, it's easier to scale each service individually as load increases across them.
 

@@ -58,7 +58,7 @@ Teams can pick the technology that best fits their service. They can use a mix o
 
 #### Resiliency
 
-If an individual microservice becomes unavailable, it doesn't disrupt the entire application. This is the case as long as any upstream microservices are designed to handle faults correctly (for example, by implementing circuit breaking). The benefit to your users or service consumers is an always-on experience for your application.
+If an individual microservice becomes unavailable, it doesn't disrupt the entire application, as long as any upstream microservices are designed to handle faults correctly (for example, by implementing circuit breaking). The benefit to your users or service consumers is an always-on experience for your application.
 
 #### Scalability
 
