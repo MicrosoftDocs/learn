@@ -39,7 +39,6 @@ units:
 - learn.wwl.azure-active-directory.azure-ad-domain-services
 - learn.wwl.azure-active-directory.azure-ad-users
 - learn.wwl.azure-active-directory.azure-ad-groups
-- learn.wwl.azure-active-directory.azure-ad-administrative-units
 - learn.wwl.azure-active-directory.passwordless
 - learn.wwl.azure-active-directory.demonstrations
 - learn.wwl.azure-active-directory.knowledge-check
