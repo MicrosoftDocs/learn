@@ -32715,6 +32715,11 @@
       "source_path": "learn-pr/wwl-azure/hybrid-identity/6-federation-azure-active-directory.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/hybrid-identity/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
     }
   ]
 }
