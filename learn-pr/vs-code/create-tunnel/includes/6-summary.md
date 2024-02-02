@@ -1,15 +1,19 @@
-In this module, we’ve learned some important information about the VS Code Remote - Tunnels extension.   
+In this module, we have learned some important aspects of using the VS Code Remote - Tunnels extension.   
 
-Firstly, it lets you connect to a remote machine, like a desktop PC or virtual machine (VM), via a secure tunnel.  Next, it eliminates the need for source code to be on your VS Code client machine since the extension runs commands and other extensions directly on the remote machine. Lastly, we covered how to configure and use the extension by using the VS Code UI as well as the code CLI.
+We discovered that the extension allows you to connect to a remote machine, such as a desktop PC or a virtual machine (VM), through a secure tunnel. We also found out that it eliminates the need for having the source code on your VS Code client machine by running commands and other extensions directly on the remote machine. Additionally, we covered the configuration and usage of the extension through both the VS Code UI and the code CLI.
 
-For continued learning, below are a few topics/resources worth exploring that relate to the VS Code Remote - Tunnels extension:  
+For Continued Learning:
 
-- <a href="https://code.visualstudio.com/docs/remote/tunnels" target="_blank">Developing with Remote Tunnels</a> - Article explaining remote tunnels.
+Below are several topics and resources related to the VS Code Remote - Tunnels extension that are worth exploring for further understanding and depth:  
 
-- <a href="https://code.visualstudio.com/docs/remote/vscode-server" target="_blank">VS Code Server</a> - Article explaining in more detail how the VS Code Server works. 
+- <a href="https://code.visualstudio.com/docs/remote/tunnels" target="_blank">Developing with Remote Tunnels</a> - An article that explains the concept and advantages of developing with remote tunnels.
 
-- <a href="https://learn.microsoft.com/azure/developer/dev-tunnels/overview" target="_blank">Microsoft Dev Tunnels</a> - Article diving deeper into what dev tunnels are and how they function under the hood. 
+- <a href="https://code.visualstudio.com/docs/remote/vscode-server" target="_blank">VS Code Server</a> - This article goes into more detail about how the VS Code Server operates and supports remote development.
 
-- <a href="http://vscode.dev" target="_blank">vscode.dev</a> - A detailed article about vscode.dev as it relates to cloud tools, extensions, GitHub, customization & more.  
+- <a href="https://learn.microsoft.com/azure/developer/dev-tunnels/overview" target="_blank">Microsoft Dev Tunnels</a> - A deeper dive into what development tunnels are and how they function, offering insights into their underlying technology.
 
-- <a href="https://code.visualstudio.com/docs/editor/command-line" target="_blank">Command Line Interface</a> - Overview of the powerful command-line interface built-in VS Code that lets you control how you launch the editor, open files, install extensions, change the display language, and output diagnostics through command-line options.
+- <a href="http://vscode.dev" target="_blank">vscode.dev</a> - A detailed examination of vscode.dev, discussing its integration with cloud tools, extensions, GitHub, customization options, and more. 
+
+- <a href="https://code.visualstudio.com/docs/editor/command-line" target="_blank">Command Line Interface</a> - An overview of the powerful command-line interface (CLI) built into VS Code, which allows you to control the editor, open files, install extensions, change the display language, and output diagnostics through command-line options.
+
+These resources provide valuable insights and further information to enhance your understanding and skills with the VS Code Remote - Tunnels extension and related technologies.
