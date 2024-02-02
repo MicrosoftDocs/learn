@@ -29,7 +29,6 @@ products:
 subjects:
 - identity-access
 units:
-- learn.wwl.azure-ad-privileged-identity-management.microsofts-zero-trust-model
 - learn.wwl.azure-ad-privileged-identity-management.privileged-identity-management
 - learn.wwl.azure-ad-privileged-identity-management.scope
 - learn.wwl.azure-ad-privileged-identity-management.onboarding
