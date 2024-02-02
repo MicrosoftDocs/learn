@@ -2828,3 +2828,8 @@ achievements:
   title: Deploy Microsoft Entra ID Protection
   summary: Protect identities in Microsoft Entra ID using Conditional Access, MFA, access reviews, and other capabilities.
   iconUrl: /training/achievements/azure-ad-identity-protection.svg
+- uid: learn.wwl.azure-ad-privileged-identity-management.badge
+  type: badge
+  title: Configure Microsoft Entra Privileged Identity Management
+  summary: Ensure that your privileged identities have extra protection and are accessed only with the least amount of access needed to do the job.
+  iconUrl: /training/achievements/azure-ad-privileged-identity-management.svg
