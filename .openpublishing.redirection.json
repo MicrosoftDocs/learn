@@ -32460,6 +32460,21 @@
       "source_path": "learn-pr/azure/choose-bot-building-tool/8-summary.yml",
       "redirect_url": "/azure/bot-service/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/4-microsoft-entra-verified-id.md",
+      "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/5-microsoft-entra-verified-id",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/5-configure-microsoft-entra-verified-id.md",
+      "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/6-configure-microsoft-entra-verified-id",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/6-passwordless-authentication.md",
+      "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/4-passwordless-authentication",
+      "redirect_document_id": false
     }
   ]
 }

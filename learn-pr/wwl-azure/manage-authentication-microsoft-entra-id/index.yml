@@ -3,7 +3,7 @@ uid: learn.wwl.manage-authentication-microsoft-entra-id
 metadata:
   title: Manage authentication by using Microsoft Entra ID
   description: "This module is designed to provide administrators with the knowledge and skills needed to manage authentication effectively using Microsoft Entra ID, ensuring secure access to resources and enhancing user experience."
-  ms.date: 01/30/2024
+  ms.date: 02/02/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
@@ -12,8 +12,8 @@ title: Manage authentication by using Microsoft Entra ID
 summary: This module is designed to provide administrators with the knowledge and skills needed to manage authentication effectively using Microsoft Entra ID, ensuring secure access to resources and enhancing user experience.
 abstract: |
   By the end of this module, participants are able to:
+  *    Implement multifactor and passwordless authentication for enhanced security and convenience.
   *   Set up Microsoft Entra Verified ID for trusted identity verification.
-  *   Implement multifactor and passwordless authentication for enhanced security and convenience.
   *   Enforce password protection measures and single sign-on for simplified, secure access.
   *   Integrate SSO with identity providers and endorse modern authentication protocols.
 prerequisites: |
@@ -33,9 +33,9 @@ units:
 - learn.wwl.manage-authentication-microsoft-entra-id.introduction
 - learn.wwl.manage-authentication-microsoft-entra-id.what-is-microsoft-entra-authentication
 - learn.wwl.manage-authentication-microsoft-entra-id.configure-microsoft-entra-multifactor-authentication-settings
+- learn.wwl.manage-authentication-microsoft-entra-id.passwordless-authentication
 - learn.wwl.manage-authentication-microsoft-entra-id.microsoft-entra-verified-id
 - learn.wwl.manage-authentication-microsoft-entra-id.configure-microsoft-entra-verified-id
-- learn.wwl.manage-authentication-microsoft-entra-id.passwordless-authentication
 - learn.wwl.manage-authentication-microsoft-entra-id.enforce-premises-microsoft-entra-password-protection
 - learn.wwl.manage-authentication-microsoft-entra-id.configure-microsoft-entra-single-sign-on
 - learn.wwl.manage-authentication-microsoft-entra-id.integrate-applications-with-microsoft-entra-id
