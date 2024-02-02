@@ -32475,6 +32475,11 @@
       "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/6-passwordless-authentication.md",
       "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/4-passwordless-authentication",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-active-directory/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
     }
   ]
 }
