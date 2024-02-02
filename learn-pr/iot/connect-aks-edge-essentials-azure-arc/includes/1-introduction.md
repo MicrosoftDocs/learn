@@ -1,6 +1,6 @@
 Once you set up on-premises Kubernetes using AKS Edge Essentials and create a Kubernetes cluster, you can manage your Kubernetes infrastructure using the Azure portal, which provides a centralized management console for Kubernetes clusters running anywhere. In addition, various Azure Arc-enabled services like Azure policy, Azure monitor, and Azure Machine Learning services enable you to ensure compliance, monitor your clusters, and run cloud-services on your edge clusters. It helps to ensure that applications and clusters are consistently deployed and configured at scale from source control.
 
-:::image type="content" source="../media/1-aks-edge-Windows-inline.png" alt-text="Diagram of AKS Edge Essentials architecture." lightbox="../media/1-aks-edge-Windows-expanded.png":::
+:::image type="content" source="../media/1-aks-edge-essentials-windows-inline.png" alt-text="Diagram of AKS Edge Essentials architecture." lightbox="../media/1-aks-edge-essentials-windows-expanded.png":::
 
 ## Example scenario
 

@@ -4,7 +4,7 @@ In the retail chain scenario, we connect AKS Edge Essentials to Azure Arc, which
 
 Here, you learn how to Arc-Enable your AKS Edge Essentials cluster and manage it using the Azure portal.
 
-:::image type="content" source="../media/2-aks-edge-kubernetes-azure-arc-resource-inline.png" alt-text="Screenshot of AKS Edge Essentials Kubernetes Azure Arc resource in Azure portal." lightbox="../media/2-aks-edge-kubernetes-azure-arc-resource-expanded.png":::
+:::image type="content" source="../media/2-aks-edge-essentials-kubernetes-azure-arc-resource-inline.png" alt-text="Screenshot of AKS Edge Essentials Kubernetes Azure Arc resource in Azure portal." lightbox="../media/2-aks-edge-essentials-kubernetes-azure-arc-resource-expanded.png":::
 
 ## What is Azure Arc-enabled Kubernetes?
 

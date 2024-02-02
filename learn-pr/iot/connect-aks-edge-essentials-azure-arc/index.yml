@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.connect-aks-edge-essentials-arc
+uid: learn.connect-aks-edge-essentials-azure-arc
 metadata:
   title: Connect your Azure Kubernetes Service (AKS) Edge Essentials cluster to Azure Arc 
   description: Deploy applications to Azure Arc-enabled AKS Edge Essentials cluster with GitOps and Flux.
@@ -21,7 +21,7 @@ prerequisites: |
   - A [GitHub account](https://docs.github.com/get-started/signing-up-for-github)
   - Knowledge about [Kubernetes core concepts for AKS](/azure/aks/hybrid/kubernetes-concepts)
   - Ability to execute scripts with PowerShell
-iconUrl: /training/achievements/iot/connect-your-azure-kubernetes-service-edge-essentials-cluster-to-azure-arc.svg
+iconUrl: /training/achievements/iot/connect-aks-edge-essentials-azure-arc.svg
 levels:
 - beginner
 roles:
@@ -38,12 +38,12 @@ subjects:
 - iot
 - container
 units:
-- learn.connect-aks-edge-essentials-arc.introduction
-- learn.connect-aks-edge-essentials-ar.arc-enable-aks-edge-essentials
-- learn.connect-aks-edge-essentials-ar.exercise-arc-enable-aks-edge-essentials
-- learn.connect-aks-edge-essentials-arc.remote-application-aks-edge-essentials
-- learn.connect-aks-edge-essentials-arc.exercise-remote-application-aks-edge-essentials
-- learn.connect-aks-edge-essentials-arc.knowledge-check
-- learn.connect-aks-edge-essentials-arc.summary
+- learn.connect-aks-edge-essentials-azure-arc.introduction
+- learn.connect-aks-edge-essentials-azure-arc.arc-enable-aks-edge-essentials
+- learn.connect-aks-edge-essentials-azure-arc.exercise-arc-enable-aks-edge-essentials
+- learn.connect-aks-edge-essentials-azure-arc.remote-application-aks-edge-essentials
+- learn.connect-aks-edge-essentials-azure-arc.exercise-remote-application-aks-edge-essentials
+- learn.connect-aks-edge-essentials-azure-arc.knowledge-check
+- learn.connect-aks-edge-essentials-azure-arc.summary
 badge:
-  uid: learn.connect-aks-edge-essentials-arc.badge
+  uid: learn.connect-aks-edge-essentials-azure-arc.badge
