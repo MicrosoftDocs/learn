@@ -33,7 +33,6 @@ units:
 - learn.wwl.azure-active-directory.features
 - learn.wwl.azure-active-directory.azure-ad-vs-ad-ds
 - learn.wwl.azure-active-directory.roles-aad
-- learn.wwl.azure-active-directory.azure-ad-users
 - learn.wwl.azure-active-directory.passwordless
 - learn.wwl.azure-active-directory.demonstrations
 - learn.wwl.azure-active-directory.knowledge-check
