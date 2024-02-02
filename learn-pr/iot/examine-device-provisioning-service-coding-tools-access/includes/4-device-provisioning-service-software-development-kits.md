@@ -53,7 +53,7 @@ X.509 certificates can be used as an attestation mechanism to scale production a
     * PowerShell or Bash
   * Device Identity Composition Engine (DICE) Emulator: DICE can be used for cryptographic device identity and attestation based on TLS protocol and X.509 client certificates.
 
-#### Use a X.509 certificate generator with DICE emulator
+#### Use an X.509 certificate generator with DICE emulator
 
 The SDKs provide an X.509 certificate generator with DICE emulator, located in the Java SDK. This generator works cross-platform. The generated certificate can be used for development in other languages.
 
