@@ -40,7 +40,6 @@ units:
 - learn.wwl.azure-ad-identity-protection.enabling-multi-factor-authentication
 - learn.wwl.azure-ad-identity-protection.conditional-access
 - learn.wwl.azure-ad-identity-protection.conditional-access-conditions
-- learn.wwl.azure-ad-identity-protection.access-reviews
 - learn.wwl.azure-ad-identity-protection.demonstrations
 - learn.wwl.azure-ad-identity-protection.knowledge-check
 - learn.wwl.azure-ad-identity-protection.summary
