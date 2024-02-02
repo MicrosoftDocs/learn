@@ -32500,6 +32500,11 @@
       "source_path": "learn-pr/wwl-azure/azure-active-directory/5-azure-active-directory-domain-services-azure-active-directory.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-active-directory/4-azure-active-directory-domain-services-self-managed.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
     }
   ]
 }
