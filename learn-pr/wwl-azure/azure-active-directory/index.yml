@@ -30,7 +30,6 @@ subjects:
 - identity-access
 units:
 - learn.wwl.azure-active-directory.introduction
-- learn.wwl.azure-active-directory.features
 - learn.wwl.azure-active-directory.roles-aad
 - learn.wwl.azure-active-directory.passwordless
 - learn.wwl.azure-active-directory.knowledge-check
