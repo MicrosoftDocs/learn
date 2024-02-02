@@ -33,7 +33,7 @@ quiz:
       explanation: "This command only creates the Container Apps environment."
     - content: "az containerapp up"
       isCorrect: true
-      explanation: "Correct. This command creates a Container Apps environment, an Azure Registry, and a Log Analytics workspace, builds a Docker image, pushes the image to the registry, and deploys the image."
+      explanation: "Correct. This command creates a Container Apps environment, an Azure registry, and a Log Analytics workspace, builds a Docker image, pushes the image to the registry, and deploys the image."
     - content: "az containerapp deploy"
       isCorrect: false
       explanation: "This command doesn't exist."

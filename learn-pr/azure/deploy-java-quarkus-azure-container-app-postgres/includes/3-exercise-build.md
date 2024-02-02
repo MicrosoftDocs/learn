@@ -1,8 +1,8 @@
-In this unit, you create a basic Quarkus application. You use Maven to bootstrap the application and an integrated development environment (IDE) of your choice to edit the code. Use a terminal of your choice to run the code. You use Docker to start a local PostgreSQL database so you can run and test your to-do application locally.
+In this unit, you create a basic Quarkus application. You use Maven to bootstrap the application and an integrated development environment (IDE) of your choice to edit the code. Use a terminal of your choice to run the code. You use Docker to start a local PostgreSQL database so you can run and test the application locally.
 
 ## Generate the Quarkus application by using Maven
 
-There are different ways to generate a Quarkus project structure. You can use the [Quarkus web interface](https://code.quarkus.io), an IDE plugin, or the Quarkus Maven plugin. Let's use the Maven plugin to generate the project structure.
+There are several ways to generate a Quarkus project structure. You can use the [Quarkus web interface](https://code.quarkus.io), an IDE plugin, or the Quarkus Maven plugin. Let's use the Maven plugin to generate the project structure.
 
 You generate your application with several dependencies:
 
@@ -30,7 +30,7 @@ mvn -U io.quarkus:quarkus-maven-plugin:2.15.1.Final:create \
 > [!NOTE]
 > By default, the project is generated with Java 17. The preceding command uses the `DjavaVersion` parameter to override the default value and use Java 11.
 
-This command creates a new Quarkus project. It generates a Maven directory structure (`src/main/java` for source code and `src/test/java` for tests). It creates some Java classes, some tests, and some Dockerfiles. It also generates a `pom.xml` file with all the needed dependencies (Hibernate, RESTEasy, Jackson, PostgreSQL, and Docker).
+This command creates a new Quarkus project. It generates a Maven directory structure (`src/main/java` for source code and `src/test/java` for tests). It creates some Java classes, some tests, and some Dockerfiles. It also generates a *pom.xml* file with all the needed dependencies (Hibernate, RESTEasy, Jackson, PostgreSQL, and Docker):
 
 ```xml
   <dependencies>
@@ -72,7 +72,7 @@ This command creates a new Quarkus project. It generates a Maven directory struc
 ```
 
 > [!NOTE]
-> All the dependencies in the `pom.xml` are defined in the Quarkus BOM (bill of materials) `io.quarkus.platform:quarkus-bom`.
+> All the dependencies in the *pom.xml* file are defined in the Quarkus BOM (bill of materials) `io.quarkus.platform:quarkus-bom`.
 
 ## Code the application
 
@@ -165,7 +165,7 @@ public class TodoResource {
 
 ## Run the application
 
-When you run the application in development mode, Docker needs to be running. That's because Quarkus detects that you need a PostgreSQL database (because of the PostgreSQL dependency `quarkus-jdbc-postgresql` in `pom.xml`), downloads the PostgreSQL Docker image, and starts a container with the database. It then automatically creates the `Todo` table in the database.
+When you run the application in development mode, Docker needs to be running. That's because Quarkus detects that you need a PostgreSQL database (because of the PostgreSQL dependency `quarkus-jdbc-postgresql` in *pom.xml*), downloads the PostgreSQL Docker image, and starts a container with the database. It then automatically creates the `Todo` table in the database.
 
 Make sure Docker is running locally on your machine and run the to-do application by using this command:
 
@@ -197,33 +197,33 @@ Tests paused
 Press [r] to resume testing, [o] Toggle test output, [:] for the terminal, [h] for more options>
 ```
 
-To test the application, you can use `cURL`.
+To test the application, you can use cURL.
 
-In a separate terminal, create a new to-do item in the database with the following command.  You should see the sign-in the Quarkus console:
+In a separate terminal, create a new to-do item in the database with the following command.  You should see the log in the Quarkus console:
 
 ```bash
 curl --header "Content-Type: application/json" \
     --request POST \
-    --data '{"description":"Take Quarkus MS Learn","details":"Take the MS Learn on deploying Quarkus to Azure Container Apps","done": "true"}' \
+    --data '{"description":"Take Quarkus training","details":"Take the training module on deploying Quarkus to Azure Container Apps","done": "true"}' \
     http://127.0.0.1:8080/api/todos
 ```
 
 This command should return the created item (with an identifier):
 
 ```json
-{"id":1,"description":"Take Quarkus MS Learn","details":"Take the MS Learn on deploying Quarkus to Azure Container Apps","done":true,"createdAt":"2022-12-30T15:17:20.280203Z"}
+{"id":1,"description":"Take Quarkus training","details":"Take the training module on deploying Quarkus to Azure Container Apps","done":true,"createdAt":"2022-12-30T15:17:20.280203Z"}
 ```
 
-Create a second to-do by using the following `cURL` command:
+Create a second to-do by using the following cURL command:
 
 ```bash
 curl --header "Content-Type: application/json" \
     --request POST \
-    --data '{"description":"Take Azure Container Apps MS Learn","details":"Take the ACA Learn module","done": "false"}' \
+    --data '{"description":"Take Azure Container Apps training","details":"Take training on Azure Container Apps","done": "false"}' \
     http://127.0.0.1:8080/api/todos
 ```
 
-Next, retrieve the data by using a new `cURL` request:
+Next, retrieve the data by using a new cURL request:
 
 ```bash
 curl http://127.0.0.1:8080/api/todos
@@ -234,7 +234,7 @@ This command returns the list of to-do items, including the items you created:
 ```json
 [ 
   {"id":1,"description":"Take Quarkus training","details":"Take the training module on deploying Quarkus to Azure Container Apps","done":true},
-  {"id":2,"description":"Take Azure Container Apps MS Learn","details":"Take the ACA Learn module","done":false}
+  {"id":2,"description":"Take Azure Container Apps training","details":"Take training on Azure Container Apps","done":false}
 ]
 ```
 
@@ -285,7 +285,7 @@ When you test the application, Docker Desktop needs to be running because Quarku
 ./mvnw clean test
 ```
 
-You should have the following output:
+You should see the following output:
 
 ```shell
 [INFO] -------------------------------------------------------

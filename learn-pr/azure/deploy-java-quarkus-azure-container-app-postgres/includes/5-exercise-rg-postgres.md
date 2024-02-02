@@ -7,7 +7,7 @@ You need to set up some environment variables. Here are some notes about the var
 | Variable | Description |
 |-|-|
 | `AZ_PROJECT` | The name of the project. To keep this value unique, we recommend that you use `AZ_PROJECT_<your initials>`. |
-| `AZ_RESOURCE_GROUP` | The name of the resource group that holds the other resources. |
+| `AZ_RESOURCE_GROUP` | The name of the resource group that holds the resources. |
 | `AZ_LOCATION` | The Azure region. We recommend that you use a region that's close to where you live. To see the list of available regions, enter `az account list-locations` at a command prompt. |
 | `AZ_CONTAINERAPP` | The name of the Azure Container Apps instance that holds the containers. |
 | `AZ_CONTAINERAPP_ENV` | The name of the Azure Container Apps environment. |
@@ -62,11 +62,11 @@ az postgres flexible-server create \
     --version "14"
 ```
 
-This command creates a small PostgreSQL server that uses the variables you set up earlier.
+This command creates a small PostgreSQL server that uses the variables that you set up earlier.
 
 ## Configure Quarkus to access the PostgreSQL database
 
-Now let's connect the Quarkus application to the PostgreSQL database. To do so, you first need to obtain the connection string for the database:
+You'll now connect the Quarkus application to the PostgreSQL database. To do so, you first need to obtain the connection string for the database:
 
 ```bash
 export POSTGRES_CONNECTION_STRING=$(
@@ -100,10 +100,10 @@ quarkus.datasource.jdbc.url=<the POSTGRES_CONNECTION_STRING_SSL value>
 Use this command to run the application locally: 
 
 ```shell
-./mvnw clean quarkus:dev
+mvnw.cmd clean quarkus:dev
 ```
 
-When Quarkus is running, create a few to-dos with the following `cURL` commands in a separate terminal window:
+When Quarkus is running, create a few to-dos by using the following cURL commands in a separate terminal window:
 
 ```bash
 curl --header "Content-Type: application/json" \
@@ -142,4 +142,4 @@ You should see the following output:
 ]
 ```
 
-If you have the following output, you have successfully run the Quarkus application and connected to the remote PostgreSQL database.
+If you see this output, you have successfully run the Quarkus application and connected to the remote PostgreSQL database.

@@ -1,4 +1,4 @@
-In this unit, you create the Azure Container Apps environment by using the Azure CLI. You then containerize the Quarkus application into a Docker image, push it to Azure Container Registry, and deploy the image to Container Apps.
+In this unit, you create the Azure Container Apps environment by using the Azure CLI.
 
 ## Set up the Dockerfile for the Quarkus application
 
@@ -31,13 +31,13 @@ ENV JAVA_OPTS="-Dquarkus.http.host=0.0.0.0 -Djava.util.logging.manager=org.jboss
 ENV JAVA_APP_JAR="/deployments/quarkus-run.jar"
 ```
 
-This Dockerfile expects the Quarkus application to be packaged as a `quarkus-run.jar` file. This name is the default name for the Quarkus application when it's packaged as a JAR file. So you need to make sure that the Quarkus application is packaged as a JAR file. To do so, run the following Maven command:
+This Dockerfile expects the Quarkus application to be packaged as a *quarkus-run.jar* file. This name is the default name for the Quarkus application when it's packaged as a JAR file. You need to make sure that the Quarkus application is packaged as a JAR file. To do so, run the following Maven command:
 
 ```bash
 ./mvnw package
 ```
 
-This command packages the Quarkus application into a JAR file and generates a `quarkus-run.jar` file in the `target/quarkus-app` folder.
+This command packages the Quarkus application into a JAR file and generates a *quarkus-run.jar* file in the *target/quarkus-app* folder.
 
 ## Create the Container Apps environment and deploy the container
 
@@ -56,11 +56,11 @@ az containerapp up \
 
 This command does several things:
 
-* Creates a Container App environment if it doesn't exist
+* Creates a Container Apps environment if it doesn't exist
 * Creates an Azure registry if it doesn't exist
 * Creates a Log Analytics workspace if it doesn't exist
 * Builds the Docker image and pushes it to the Azure registry
-* Deploys the Docker image to the Container App environment
+* Deploys the Docker image to the Container Apps environment
 
 The `az containerapp up` command takes some time to run. You should see output that's similar to the following:
 

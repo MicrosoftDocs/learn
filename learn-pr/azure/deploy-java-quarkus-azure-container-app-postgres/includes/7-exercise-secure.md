@@ -1,4 +1,4 @@
-In this unit, you ensure that the PostgreSQL database can be accessed only by the Quarkus application, and not by other external clients. You can currently access the database from any client by using Azure CLI and running Quarkus locally. This isn't secure. You need to add a firewall rule to allow only IP addresses within the Azure Container Apps environment to access the database server.
+In this unit, you ensure that the PostgreSQL database can be accessed only by the Quarkus application, and not by other external clients. You can currently access the database from any client by using Azure CLI and running Quarkus locally. This configuration isn't secure. You need to add a firewall rule to allow only IP addresses within the Azure Container Apps environment to access the database server.
 
 ## Access the PostgreSQL server by using the CLI
 
@@ -36,7 +36,7 @@ EndIpAddress     Name                       ResourceGroup            StartIpAddr
 255.255.255.255  AllowAll_2023-1-3_10-20-4  rg-azure-deploy-quarkus  0.0.0.0
 ```
 
-Notice that the range of allowed IP addresses is `0.0.0.0` through `255.255.255.255`. A firewall rule like this allows any client to access the database. To ensure only the Quarkus application can access the database, you need to change that and update the firewall rules of the PostgreSQL server.
+Notice that the range of allowed IP addresses is `0.0.0.0` through `255.255.255.255`. A firewall rule like this allows any client to access the database. To ensure that only the Quarkus application can access the database, you need to update the firewall rules of the PostgreSQL server.
 In this case, it's just a matter of removing the public rule. To remove it, run the following command:
 
 ```bash
