@@ -52,7 +52,7 @@ public class PackageServiceCaller : IPackageProcessor
     }
 ```
 
-The microservice will be deployed on an Azure function. Its code can be found in [*PackageServiceFunction.cs*](https://github.com/MicrosoftDocs/mslearn-microservices-architecture/blob/master/src/after/PackageService/PackageServiceFunction.cs) and contains the following code.
+The microservice is deployed on an Azure function. Its code can be found in [*PackageServiceFunction.cs*](https://github.com/MicrosoftDocs/mslearn-microservices-architecture/blob/master/src/after/PackageService/PackageServiceFunction.cs) and contains the following code.
 
 ```csharp
 public static class PackageServiceFunction
@@ -71,7 +71,7 @@ public static class PackageServiceFunction
     }
 ```
 
-By putting this code on Azure Functions, this service can scale independently as user load increases. You can keep the services for the remaining application code optimized for the rest of the application. The package service scales out as more requests for drone deliveries come in to the system.
+When you put this code on Azure Functions, this service can scale independently as user load increases. You can keep the services for the remaining application code optimized for the rest of the application. The package service scales out as more requests for drone deliveries come in to the system.
 
 Now, let's redeploy the application. First, we deploy our refactored service on Azure Functions. Then, we deploy the refactored application on App Service, and point it to the function.
 
@@ -137,7 +137,7 @@ Now that our service is running on Azure Functions, we need to point our drone a
 
 1. In the code editor, replace the values `PackageServiceUri` and `PackageServiceFunctionCode`. In `PackageServiceUri`, replace `<FunctionName>` with the name of your function app.
 
-    In `PackageServiceFunctionCode`, replace the `<FunctionCode>` with the function code you retrieved. Your *appsettings.json* file should look similar to this:
+    In `PackageServiceFunctionCode`, replace the `<FunctionCode>` with the function code you retrieved. Your *appsettings.json* file should look similar to this example:
 
     ```json
     {
@@ -170,7 +170,7 @@ Now that our service is running on Azure Functions, we need to point our drone a
 
 ## Test the performance of the new architecture
 
-Now that we've moved the resource-constrained service to a microservice that runs on Azure Functions, let's see how this change affected application performance.
+Now that the resource-constrained service is moved to a microservice that runs on Azure Functions, let's see how this change affected application performance.
 
 1. On the home page of your website, select **Send Requests**. This action submits requests from your monolithic app to the microservice that runs on an Azure function.
 
@@ -178,6 +178,6 @@ Now that we've moved the resource-constrained service to a microservice that run
 
     :::image type="content" source="../media/7-web-site-fast.png" alt-text="Screenshot of performance of the Drone Delivery site after moving to a microservices architecture." loc-scope="other":::
 
-The initial attempt was slower while the function app started up. After it was up and running, the response time was significantly better than when this code was running in the monolithic architecture. 
+The initial attempt was slower while the function app started up. After it was up and running, the response time was better than when this code was running in the monolithic architecture.
 
 This piece of the architecture can now be scaled out almost infinitely while it still provides the same performance. By moving this application code to a microservice, we've improved performance by 5 to 10 times. Because Fabrikam has a dedicated development team for this service, they can also iterate on this microservice and realize the benefits of increased agility and feature releases.
