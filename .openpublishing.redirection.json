@@ -32480,6 +32480,11 @@
       "source_path": "learn-pr/wwl-azure/azure-active-directory/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-active-directory/11-azure-active-directory-administrative-units.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
     }
   ]
 }
