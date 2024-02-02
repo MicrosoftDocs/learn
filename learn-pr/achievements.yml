@@ -2813,3 +2813,28 @@ achievements:
   title: Choose a bot-building tool
   summary: Identify the different tools available from Microsoft that you can use to create bots. Learn about Azure Bot Service, Microsoft Power Visual Agents, QnA Maker, and Bot Framework Composer and Azure Bot Service. 
   iconUrl: /training/achievements/choose-bot-building-tool.svg
+- uid: learn.wwl.azure-active-directory.badge
+  type: badge
+  title: Secure Azure solutions with Microsoft Entra ID
+  summary: Explore how to securely configure and administer your Microsoft Entra instance.
+  iconUrl: /training/achievements/azure-active-directory.svg
+- uid: learn.wwl.azure-ad-identity-protection.badge
+  type: badge
+  title: Deploy Microsoft Entra ID Protection
+  summary: Protect identities in Microsoft Entra ID using Conditional Access, MFA, access reviews, and other capabilities.
+  iconUrl: /training/achievements/azure-ad-identity-protection.svg
+- uid: learn.wwl.azure-ad-privileged-identity-management.badge
+  type: badge
+  title: Configure Microsoft Entra Privileged Identity Management
+  summary: Ensure that your privileged identities have extra protection and are accessed only with the least amount of access needed to do the job.
+  iconUrl: /training/achievements/azure-ad-privileged-identity-management.svg
+- uid: learn.wwl.hybrid-identity.badge
+  type: badge
+  title: Implement Hybrid identity
+  summary: Explore how to deploy and configure Microsoft Entra Connect to create a hybrid identity solution for your company.
+  iconUrl: /training/achievements/identity-hybrid.svg
+- uid: learn.wwl.manage-identity-access.trophy
+  type: trophy
+  title: 'AZ-500: Manage Identity and Access'
+  summary: Explore how identity is the starting point for all security within your company. Learn to authenticate and authorize users and apps with Microsoft Entra ID.
+  iconUrl: /training/achievements/management-identity-access.svg
