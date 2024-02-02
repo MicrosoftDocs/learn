@@ -38,7 +38,6 @@ units:
 - learn.wwl.hybrid-identity.password-hash-synchronization-phs
 - learn.wwl.hybrid-identity.pass-through-authentication-pta
 - learn.wwl.hybrid-identity.federation-azure-ad
-- learn.wwl.hybrid-identity.authentication-decision-tree
 - learn.wwl.hybrid-identity.password-writeback
 - learn.wwl.hybrid-identity.knowledge-check
 - learn.wwl.hybrid-identity.summary
