@@ -51,7 +51,7 @@ These signals include:
      -  The least restrictive decision can still require one or more of the following options:
          -  Require multifactor authentication
          -  Require the device to be marked as compliant
-         -  Require Hybrid Azure AD joined device
+         -  Require Hybrid Microsoft Entra ID joined device
          -  Require approved client app
 
 ## Commonly applied policies
@@ -61,7 +61,7 @@ Many organizations have common access concerns that Conditional Access policies 
  -  Requiring multifactor authentication for users with administrative roles
  -  Requiring multifactor authentication for Azure management tasks
  -  Blocking sign-ins for users attempting to use legacy authentication protocols
- -  Requiring trusted locations for Azure AD multifactor authentication registration
+ -  Requiring trusted locations for Microsoft Entra ID multifactor authentication registration
  -  Blocking or granting access from specific locations
  -  Blocking risky sign-in behaviors
  -  Requiring organization-managed devices for specific applications
