@@ -54,7 +54,7 @@ The option to add scripts to the cluster nodes is available directly from the Az
 
 To verify the cloud-init functionality on the scheduler node, you'll start the cluster. This will trigger provisioning of the scheduler node. After the node is running, you'll be able to connect to it from the Azure Cloud Shell and verify that the **/etc/hosts** file contains the entry **10.10.10.10 www.contoso.com**.
 
-1. I the browser window displaying the Azure CycleCloud web application, select the **Start** link on the **contoso-custom-slurm-lab-cluster** page. When prompted to confirm, select **OK**.
+1. In the browser window displaying the Azure CycleCloud web application, select the **Start** link on the **contoso-custom-slurm-lab-cluster** page. When prompted to confirm, select **OK**.
 
     > [!NOTE]
     > If the cluster is already running, you'll need to terminate and restart it in order to apply the updated configuration, otherwise that configuration won't be visible in the subsequent steps.
