@@ -1,18 +1,28 @@
-A device enrollment creates a record of a single device or a group of devices that may at some point register with the Azure IoT Hub Device Provisioning Service. The enrollment record contains the initial configuration for the device(s) as part of that enrollment.
+A device enrollment creates a record of a single device or a group of devices that may at some point register with the Azure IoT Hub Device Provisioning Service (DPS). The enrollment record contains the initial configuration for the device(s) as part of that enrollment.
 
-The tool that you choose for a particular device enrollment scenario, and the corresponding implementation steps, will vary based on situational requirements, but the processes are discrete and defined.
+The enrollment record contains the initial configuration for the device(s) as part of that enrollment. Included in the configuration is either the IoT hub to which a device will be assigned, or an allocation policy that configures the IoT hub from a set of IoT hubs.
 
-## Device enrollment processes
+The Device Provisioning Service supports two types of enrollments:
 
-There are three enrollment processes that you will need to perform on a semi-regular basis:
-
-* Create: Create an enrollment when you need to prepare a device that you want to have ready to register with the Azure IoT Hub Device Provisioning Service. The enrollment record will contain the initial desired configuration for the device.
-* Update: Update a device enrollment if you want to change the IoT Hub that the device should be linked to, the device ID, or the initial device twin state for the device.
-* Remove: Remove enrollments when an enrolled device will not be provisioned to an IoT Hub.
+* [Enrollment groups](/azure/iot-dps/concepts-service#enrollment-group): Used to enroll multiple related devices.
+* [Individual enrollments](/azure/iot-dps/concepts-service#individual-enrollment): Used to enroll a single device.
 
 ## Device enrollment tools
 
-There are two primary approaches for performing device enrollments that you should be familiar with:
+The tool that you choose for a particular device enrollment scenario, and the corresponding implementation steps, will vary based on situational requirements, but the processes are discrete and defined.
 
-* Azure portal: Use the Device Provisioning Service in the portal.
-* Programmatic tools: Azure CLI and the Service SDKs.
+There are four tools that you can use to perform DPS device enrollment tasks:
+
+* [Azure portal](/azure/iot-dps/how-to-manage-enrollments)
+* [DPS CLI commands](/cli/azure/iot/dps)
+* [DPS PowerShell commands](/powershell/module/az.deviceprovisioningservices/)
+* [DPS SDKs](/azure/iot-dps/libraries-sdks)
+
+## Device enrollment tasks
+
+There are several DPS enrollment processes that you may need to perform on a semi-regular basis:
+
+* **Create an enrollment group**: An enrollment group is an entry for a group of devices that share a common attestation mechanism. Use an enrollment group for a large number of devices that share an initial configuration, or for devices that go to the same tenant. Enrollment groups support devices that use either symmetric key or X.509 certificates attestation.
+* **Create an individual enrollment**: An individual enrollment is an entry for a single device that may be assigned to an IoT hub. Devices using symmetric key, X.509 certificates, and TPM attestation are supported.
+* **Update an enrollment entry**: Update an existing group or individual enrollment entry. On the enrollment entry details page, you can update all items, except the security type and credentials.
+* **Remove a device enrollment**: Remove an existing group or individual enrollment.
