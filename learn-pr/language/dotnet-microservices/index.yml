@@ -7,7 +7,7 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.topic: module
-  ms.prod: .net
+  ms.service: dotnet
   ms.custom:
   - team=cloud_advocates
   ms.contributors:

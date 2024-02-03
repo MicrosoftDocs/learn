@@ -15,6 +15,7 @@ prerequisites: |
 summary: |
   Learn about Real-time Operating System (RTOS), and Azure RTOS ThreadX, a high-performance RTOS that is one of the most widely used RTOSes in the world.
 iconUrl: /training/achievements/iot/azure-rtos-threadx.svg
+hidden: true
 levels:
   - beginner
 roles:
