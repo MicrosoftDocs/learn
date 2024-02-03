@@ -14,8 +14,8 @@ summary: |
 
   Remote development provides benefits like consistent environments, the ability to use more powerful hardware, and the flexibility to develop on different platforms without impacting your local machine. Visual Studio Code provides tools for various remote development setups, such as using a container, a remote machine, or the Windows Subsystem for Linux (WSL).  In this path, you'll learn about the different remote development offerings available in Visual Studio Code and practice using them.
 prerequisites: |
-- Basic familiarity with the Visual Studio Code editor
-- Basic knowledge of software development, such as what it means to edit and run code
+  - Basic familiarity with the Visual Studio Code editor
+  - Basic knowledge of software development, such as what it means to edit and run code
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
