@@ -2,21 +2,21 @@ In this exercise, you'll use profiles to create, manage and switch between VS Co
 
 ## Create a new profile
 
-    1. Open VS Code
-    1. Select on the gear icon in the bottom left corner of the window to open the **Manage** menu.
-    1. Put your mouse over the "Profiles (Default)" menu option.
-    1. Select "Create Profile"
+1. Open VS Code
+1. Select on the gear icon in the bottom left corner of the window to open the **Manage** menu.
+1. Put your mouse over the "Profiles (Default)" menu option.
+1. Select "Create Profile"
 
-:::image type="content" source="../media/3-create-profile.png" alt-text="Screenshot of VS Code create profile menu option.":::
+    :::image type="content" source="../media/3-create-profile.png" alt-text="Screenshot of VS Code create profile menu option.":::
 
-    1. Name the profile "Remote SSH."
-    1. Leave "Copy from" set to "None."
-    1. Select on the gear icon to change the icon for the profile. You can choose any icon you like.
-    1. Take the defaults for all other options.
+1. Name the profile "Remote SSH."
+1. Leave "Copy from" set to "None."
+1. Select on the gear icon to change the icon for the profile. You can choose any icon you like.
+1. Take the defaults for all other options.
 
-:::image type="content" source="../media/3-remote-ssh-profile.png" alt-text="Screenshot of VS Code create profile menu.":::
+    :::image type="content" source="../media/3-remote-ssh-profile.png" alt-text="Screenshot of VS Code create profile menu.":::
 
-    1. Select "Create"
+1. Select "Create"
 
 Observe how VS Code undergoes a reload. It gives the impression of a fresh installation, devoid of any extensions and displaying the default dark theme. If you made customizations to VS Code, rest assured, they remain intact. You can revert to your default profile whenever you wish."
 
@@ -46,7 +46,7 @@ You'll install the Remote-SSH extension and change the theme for the Remote SSH 
 
 ### Move the sidebar to the right
 
-1. Open the Command Palette and select "Toggle Primary Sidebar Position."
+- Open the Command Palette and select "Toggle Primary Sidebar Position."
 
 Your editor should now look similar to this screenshot:
 
@@ -86,9 +86,9 @@ You can share profiles with others by sending them the exported profile file. Yo
 1. Select "Select file."
 1. Select the "remote-ssh-profile" file you exported earlier.
 
-The profile will be loaded into the VS Code sidebar allowing you to select which items you want to import from the profile. In this case, you want to import everything.
+    The profile will be loaded into the VS Code sidebar allowing you to select which items you want to import from the profile. In this case, you want to import everything.
 
-:::image type="content" source="../media/3-import-profile-preview.png" alt-text="Screenshot of VS Code the Import Profile options.":::
+    :::image type="content" source="../media/3-import-profile-preview.png" alt-text="Screenshot of VS Code the Import Profile options.":::
  
 1. Select "Create Profile."
 1. Select "Create."
