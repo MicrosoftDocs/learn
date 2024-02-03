@@ -10,7 +10,7 @@ metadata:
   ms.service: vs-code
   ms.topic: learning-path
 summary: |
-  As a developer, have you ever been frustrated with setting up a project configuration or troubleshooting dependency issues on your laptop? Or maybe your local machine doesn't have enough compute power for your development tasks? Remote development is a great way to alleviate these issues; this concept refers to developing on a system or environment that isn't directly present on your local machine.
+  As a developer, have you ever been frustrated with setting up a project configuration or troubleshooting dependency issues on your laptop? Or maybe your local machine doesn't have enough compute power for your development tasks? Remote development is a great way to alleviate these issues because you can develop on a system or environment that isn't directly present on your local machine.
   Remote development provides benefits like consistent environments, the ability to use more powerful hardware, and the flexibility to develop on different platforms without impacting your local machine. Visual Studio Code provides tools for various remote development setups, such as using a container, a remote machine, or the Windows Subsystem for Linux (WSL).  In this path, you'll learn about the different remote development offerings available in Visual Studio Code and practice using them.
 prerequisites: |
   - Basic familiarity with the Visual Studio Code editor
