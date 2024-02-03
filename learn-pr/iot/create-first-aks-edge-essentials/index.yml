@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Knowledge about [Kubernetes core concepts for AKS](/azure/aks/hybrid/kubernetes-concepts)
   - Ability to execute scripts with PowerShell 
-iconUrl: /training/achievements/iot/create-your-first-azure-kubernetes-service-edge-essentials-single-machine-cluster.svg
+iconUrl: /training/achievements/iot/create-first-aks-edge-essentials.svg
 levels:
 - beginner
 roles:
