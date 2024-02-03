@@ -10,7 +10,7 @@ Rolling device certificates will involve updating the certificate stored on the 
 
 There are many ways to obtain new certificates for your IoT devices. These include obtaining certificates from the device factory, generating your own certificates, and having a third party manage certificate creation for you.
 
-Certificates are signed by each other to form a chain of trust from a root CA certificate to a [leaf certificate](s/azure/iot-dps/concepts-x509-attestation#end-entity-leaf-certificate). A signing certificate is the certificate used to sign the leaf certificate at the end of the chain of trust. A signing certificate can be a root CA certificate, or an intermediate certificate in chain of trust.
+Certificates are signed by each other to form a chain of trust from a root CA certificate to a [leaf certificate](/azure/iot-dps/concepts-x509-attestation#end-entity-leaf-certificate). A signing certificate is the certificate used to sign the leaf certificate at the end of the chain of trust. A signing certificate can be a root CA certificate, or an intermediate certificate in chain of trust.
 
 There are two different ways to obtain a signing certificate. The first way, which is recommended for production systems, is to purchase a signing certificate from a root certificate authority (CA). This way chains security down to a trusted source.
 
