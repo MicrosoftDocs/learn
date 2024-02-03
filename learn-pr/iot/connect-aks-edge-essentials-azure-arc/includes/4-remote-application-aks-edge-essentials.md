@@ -4,8 +4,6 @@ In the retail chain scenario, we need to optimize the customer experience by dep
 
 Here, you learn how to use GitOps and Flux to deploy applications to an Arc-Enabled AKS Edge Essentials cluster.
 
-:::image type="content" source="../media/4-azure-arc-enabled-gitops-flux-inline.png" alt-text="Diagram showing the process of applying GitOps-based configuration to Azure Arc-enabled clusters." lightbox="../media/4-azure-arc-enabled-gitops-flux-expanded.png":::
-
 ## GitOps for Arc-enabled Kubernetes
 
 A primary benefit of Azure Arc is to facilitate implementation of DevOps principles, which apply established development practices to operations. DevOps increases agility without jeopardizing the stability of the IT environment. Azure Arc-enabled Kubernetes supports GitOps, a DevOps practice that streamlines application releases by reducing manual deployment effort.
