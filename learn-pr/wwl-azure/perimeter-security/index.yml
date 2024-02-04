@@ -35,7 +35,6 @@ subjects:
 units:
 - learn.wwl.perimeter-security.introduction
 - learn.wwl.perimeter-security.virtual-network-security
-- learn.wwl.perimeter-security.distributed-denial-of-service-ddos
 - learn.wwl.perimeter-security.distributed-denial-of-service-implementation
 - learn.wwl.perimeter-security.vpn-forced-tunneling
 - learn.wwl.perimeter-security.user-defined-routes-network-virtual-appliances
