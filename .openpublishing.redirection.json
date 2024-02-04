@@ -32750,6 +32750,311 @@
       "source_path": "learn-pr/paths/manage-identity-access/index.md",
       "redirect_url": "/training/paths/manage-identity-access-new/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enterprise-governance/index.md",
+      "redirect_url": "/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enterprise-governance/10-azure-blueprints.md",
+      "redirect_url": "/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enterprise-governance/3-azure-cloud-security-advantages.md",
+      "redirect_url": "/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enterprise-governance/4-azure-hierarchy.md",
+      "redirect_url": "/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enterprise-governance/5-azure-policies.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enterprise-governance/7-azure-rbac-vs-azure-policies.md",
+      "redirect_url": "/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enterprise-governance/6-azure-role-based-access-control-rbac.md",
+      "redirect_url": "/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enterprise-governance/11-azure-subscription-management.md",
+      "redirect_url": "/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enterprise-governance/8-built-roles.md",
+      "redirect_url": "/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enterprise-governance/12-demonstrations.md",
+      "redirect_url": "/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enterprise-governance/1-introduction.md",
+      "redirect_url": "/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enterprise-governance/13-knowledge-check.md",
+      "redirect_url": "/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enterprise-governance/9-resource-locks.md",
+      "redirect_url": "/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enterprise-governance/2-shared-responsibility-model.md",
+      "redirect_url": "/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enterprise-governance/14-summary.md",
+      "redirect_url": "/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/index.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/13-demonstration.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/8-disk-encryption.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/2-endpoint-protection.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/1-introduction.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/14-knowledge-check.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/9-managed-disk-encryption-options.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/11-microsoft-cloud-security-benchmark.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/3-privileged-access-device.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/4-privileged-access-workstations.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/6-remote-access-management.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/12-security-center-recommendations.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/15-summary.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/7-update-management.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/5-virtual-machine-templates.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/10-windows-defender.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/implement-platform-protection/index.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/network-security/index.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/network-security/4-application-security-groups.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/network-security/8-azure-application-gateway.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/network-security/10-azure-front-door.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/network-security/12-demonstration.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/network-security/11-expressroute.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/network-security/3-groups-implementation.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/network-security/2-groups-network-security-groups.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/network-security/1-introduction.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/network-security/13-knowledge-check.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/network-security/7-private-links.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/network-security/6-service-endpoint-services.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/network-security/5-service-endpoints.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/network-security/14-summary.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/network-security/9-web-application-firewall.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/perimeter-security/index.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/perimeter-security/6-azure-firewall-features.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/perimeter-security/7-azure-firewall-implementation.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/perimeter-security/2-defense-depth.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/perimeter-security/11-demonstration.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/perimeter-security/4-distributed-denial-of-service.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/perimeter-security/5-distributed-denial-of-service-implementation.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/perimeter-security/10-hub-spoke-topology.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/perimeter-security/1-introduction.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/perimeter-security/12-knowledge-check.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/perimeter-security/13-summary.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/perimeter-security/9-user-defined-routes-network-virtual-appliances.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/perimeter-security/3-virtual-network-security.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/perimeter-security/8-forced-tunneling.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
     }
   ]
 }
