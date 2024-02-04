@@ -33015,6 +33015,11 @@
       "source_path": "learn-pr/wwl-azure/perimeter-security/4-distributed-denial-of-service.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/perimeter-security/5-distributed-denial-of-service-implementation.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
+      "redirect_document_id": false
     }
   ]
 }
