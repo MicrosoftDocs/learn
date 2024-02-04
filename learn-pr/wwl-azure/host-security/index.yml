@@ -47,7 +47,6 @@ units:
 - learn.wwl.host-security.windows-defender
 - learn.wwl.host-security.microsoft-cloud-security-benchmark
 - learn.wwl.host-security.security-center-recommendations
-- learn.wwl.host-security.demonstration
 - learn.wwl.host-security.knowledge-check
 - learn.wwl.host-security.summary
 badge:
