@@ -2853,3 +2853,8 @@ achievements:
   title: Configure and manage host security
   summary: Learn to lock down the devices, virtual machines, and other components that run your applications in Azure.
   iconUrl: /training/achievements/security-host.svg
+- uid: learn.wwl.implement-platform-protection.trophy
+  type: trophy
+  title: 'AZ-500: Implement platform protection'
+  summary: Security has to happen at all levels. Learn how to lock down the infrastructure and network resources that are running in your Azure environment.
+  iconUrl: /training/achievements/platform-implement-protection.svg
