@@ -32855,6 +32855,11 @@
       "source_path": "learn-pr/wwl-azure/host-security/14-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/9-managed-disk-encryption-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
+      "redirect_document_id": false
     }
   ]
 }
