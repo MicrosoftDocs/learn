@@ -22,7 +22,7 @@ Export commands, such as **Export-Csv**, combine the functionality of **ConvertT
 
 A key part of both operations is that the form of the data changes. The structure referred to as *objects* no longer contains the data, which is instead represented in another form entirely. When you convert data to another form, it's generally more difficult to manipulate within Windows PowerShell. For example, you can't easily sort, select, or measure data that's been converted.
 
-As noted previously, the output of **ExportTo-Csv** is a text file. The command writes the property names to the first row, as headers. One advantage of the CSV output format is that Windows PowerShell also supports importing the format with the **Import-Csv** command. **Import-Csv** creates objects that have properties matching the columns in the CSV file.
+As noted previously, the output of **Export-Csv** is a text file. The command writes the property names to the first row, as headers. One advantage of the CSV output format is that Windows PowerShell also supports importing the format with the **Import-Csv** command. **Import-Csv** creates objects that have properties matching the columns in the CSV file.
 
 ## Converting output to XML
 
@@ -50,3 +50,4 @@ Sometimes, you need to display your Windows PowerShell output in a web browser o
  -  *‑Title*. Sets the value of the HTML **title** tag.
  -  *‑PreContent*. Defines any content that should display before the table or list output.
  -  *‑PostContent*. Defines any content that should display after the table or list output.
+

@@ -3,7 +3,7 @@ uid: learn.wwl.manage-data-loss-prevention-polices
 metadata:
   title: Manage data loss prevention policies and reports in Microsoft 365
   description: "Manage data loss prevention policies and reports in Microsoft 365"
-  ms.date: 06/14/2022
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: riswinto
   ms.topic: interactive-tutorial
@@ -11,14 +11,14 @@ metadata:
 title: Manage data loss prevention policies and reports in Microsoft 365
 summary: Learn how to manage data loss prevention policies and mitigate data loss prevention policy violations.
 abstract: |
-  After completing this module, you'll be able to:
+  After completing this module you'll be able to:
   - Review and analyze DLP reports.
   - Manage permissions for DLP reports.
   - Identify and mitigate DLP policy violations.
   - Mitigate DLP violations in Microsoft Defender for Cloud Apps.
 prerequisites: |
   •	Knowledge of data loss prevention in Microsoft 365
-iconUrl: /training/achievements/manage-data-loss-prevention-polices.svg
+iconUrl: /learn/achievements/manage-data-loss-prevention-polices.svg
 levels:
 - intermediate
 roles:
@@ -26,9 +26,7 @@ roles:
 - ip-admin
 - risk-practitioner
 products:
-- microsoft-purview
 - m365
-- m365-information-protection
 subjects:
 - information-protection-governance
 units:
@@ -36,7 +34,6 @@ units:
 - learn.wwl.manage-data-loss-prevention-polices.configure-data-loss-prevention-for-policy-precedence
 - learn.wwl.manage-data-loss-prevention-polices.implement-data-loss-prevention-policies-test-mode
 - learn.wwl.manage-data-loss-prevention-polices.use-data-loss-prevention-reports
-- learn.wwl.manage-data-loss-prevention-polices.review-analyze-data-loss-prevention-reports
 - learn.wwl.manage-data-loss-prevention-polices.manage-permissions-for-data-loss-prevention-reports
 - learn.wwl.manage-data-loss-prevention-polices.manage-respond-data-loss-prevention-policy-violations
 - learn.wwl.manage-data-loss-prevention-polices.knowledge-check

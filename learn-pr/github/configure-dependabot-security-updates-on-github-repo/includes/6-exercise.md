@@ -22,4 +22,4 @@ When you've finished the exercise in GitHub, return here for:
 > - A badge for completing this module.
 ​
 > [!div class="nextstepaction"]
-> [Start the exercise on GitHub](https://github.com/githubtraining/exercise-configure-dependabot)
+> [Start the exercise on GitHub](https://github.com/skills/secure-repository-supply-chain)

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.monitor-protection-of-workloads-in-azure-backup.monitor-jobs-and-backup-instances-in-backup-center
+title: Monitor jobs and backup instances in Backup center
+metadata:
+  title: Monitor jobs and backup instances in Backup center
+  description: Learn about monitoring jobs and backup instances in Backup center.
+  ms.date: 12/01/2023
+  author: AbhishekMallick-MS
+  ms.author: v-abhmallick
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-monitor-jobs-and-backup-instances-in-backup-center.md)]

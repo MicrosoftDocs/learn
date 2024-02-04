@@ -1,15 +1,17 @@
 When you create a web app, Azure assigns the app to a subdomain of `azurewebsites.net`. Suppose your web app is named `contoso`. Azure creates a URL for your web app as `contoso.azurewebsites.net`. Azure also assigns a virtual IP address for your app. For a production web app, you might want users to see a custom domain name.
 
-:::image type="content" source="../media/app-service-custom-domain-1aa14379.png" alt-text="Screenshot that shows the Custom domains page in the Azure portal and a custom domain named contoso with the app URL constoso dot-com." border="false":::
+### How to add and secure a custom domain on your App Service web app
 
-### Configure a custom domain name for your app
+> [!Video https://www.youtube.com/embed/bXP6IvNYISw]
+
+### Steps to configure a custom domain name for your app
 
 There are three steps to create a custom domain name. The following steps outline how to create a domain name in the Azure portal.
 
 > [!Important]
 > To map a custom DNS name to your app, you need a paid tier of an App Service plan for your app.
 
-1. **Reserve your domain name**. If you haven't registered for an external domain name for your app, the easiest way to set up a custom domain is to buy one directly in the Azure portal. (This name isn't the Azure assigned name of `\*.azurewebsites.net`.) The registration process enables you to manage your web app's domain name directly in the Azure portal instead of going to a third-party site. Configuring the domain name in your web app is also a simple process in the Azure portal. 
+1. **Reserve your domain name**. The easiest way to set up a custom domain is to buy one directly in the Azure portal. (This name isn't the Azure assigned name of `\*.azurewebsites.net`.) The registration process enables you to manage your web app's domain name directly in the Azure portal instead of going to a third-party site. Configuring the domain name in your web app is also a simple process in the Azure portal. 
 
 1. **Create DNS records to map the domain to your Azure web app**. The Domain Name System (DNS) uses data records to map domain names to IP addresses. There are several types of DNS records.
 

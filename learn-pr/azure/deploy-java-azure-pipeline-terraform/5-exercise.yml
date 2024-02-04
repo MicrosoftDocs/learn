@@ -7,10 +7,12 @@ metadata:
   ms.date: 02/01/2021
   author: roryp
   ms.author: ropreddy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   zone_pivot_groups: azure-devops-actions
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-extended-java
+    - devx-track-terraform
   ms.contributors: ropreddy-04092021
 durationInMinutes: 8
 content: |

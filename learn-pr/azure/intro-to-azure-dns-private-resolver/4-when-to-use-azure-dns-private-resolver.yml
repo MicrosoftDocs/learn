@@ -4,12 +4,11 @@ title: When to use Azure DNS Private Resolver
 metadata:
   unitType: learning-content
   title: When to use Azure DNS Private Resolver
-  description: "Discover the main use case scenarios for the Azure DNS Private Resolver."
-  ms.date: 03/17/2023
+  description: Discover the main use case scenarios for the Azure DNS Private Resolver.
+  ms.date: 01/31/2024
   author: greg-lindsay
   ms.author: greglin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/4-when-to-use-azure-dns-private-resolver.md)]

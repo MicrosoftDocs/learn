@@ -4,11 +4,10 @@ title: Describe defense in depth
 metadata:
   title: Describe defense in depth
   description: "Describe defense in depth"
-  ms.date: 02/09/2023
+  ms.date: 09/09/2023
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/3-describe-defense-depth.md)]

@@ -1,4 +1,11 @@
-This unit summarizes the [Azure security baseline for Azure Kubernetes Service](https://learn.microsoft.com/security/benchmark/azure/baselines/aks-security-baseline). For areas where there are many controls, we have only included the first five that were mentioned.
+This unit summarizes the [Azure security baseline for Azure Kubernetes Service](/security/benchmark/azure/baselines/aks-security-baseline). For areas where there are many controls, we have only included the first five that were mentioned.
+
+Please refer to [Introduction to Microsoft Cybersecurity Reference Architecture and cloud security benchmark](/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/1-introduction-reference-architecture-benchmark) for more background on Microsoft Cloud Security Benchmark. 
+
+In the table below, we have included controls from the full baseline where:
+
+* Security controls were *supported* but *not* enabled by default
+* There was explicit guidance which contained action to be taken on the part of the customer
 
 | Area | Control | Guidance Summary |
 |---|---|---|
@@ -12,11 +19,11 @@ This unit summarizes the [Azure security baseline for Azure Kubernetes Service](
 |  | 2.3: Enable audit logging for Azure resources | Use Activity logs to monitor actions on Azure Kubernetes Service (AKS) resources to view all activity and their status. |
 |  | 2.4: Collect security logs from operating systems | Enable automatic installation of Log Analytics agents for collecting data from the AKS cluster nodes. Also, turn-on automatic provisioning of the Azure Log Analytics Monitoring Agent from Microsoft Defender for Cloud, as by default, automatic provisioning is off. |
 |  | 2.5: Configure security log storage retention | Onboard your Azure Kubernetes Service (AKS) instances to Azure Monitor and set the corresponding Azure Log Analytics workspace retention period according to your organization's compliance requirements. |
-| Identity and Access Control | 3.1: Maintain an inventory of administrative accounts | Azure Kubernetes Service (AKS) itself does not provide an identity management solution which stores regular user accounts and passwords. With Azure Active Directory (Azure AD) integration, you can grant users or groups access to Kubernetes resources within a namespace or across the cluster. |
-|  | 3.2: Change default passwords where applicable | Azure Kubernetes Service (AKS) does not have the concept of common default passwords and does not provide an identity management solution where regular user accounts and passwords can be stored. With Azure Active Directory (Azure AD) integration, you can grant role-based access to AKS resources within a namespace or across the cluster. |
-|  | 3.3: Use dedicated administrative accounts | Integrate user authentication for your Azure Kubernetes Service (AKS) clusters with Azure Active Directory (Azure AD). Sign in to an AKS cluster using an Azure AD authentication token. |
-|  | 3.4: Use single sign-on (SSO) with Azure Active Directory | Use single sign-on for Azure Kubernetes Service (AKS) with Azure Active Directory (Azure AD) integrated authentication for an AKS cluster. |
-|  | 3.5: Use multi-factor authentication for all Azure Active Directory based access | Integrate Authentication for Azure Kubernetes Service (AKS) with Azure Active Directory (Azure AD). |
+| Identity and Access Control | 3.1: Maintain an inventory of administrative accounts | Azure Kubernetes Service (AKS) itself does not provide an identity management solution which stores regular user accounts and passwords. With Microsoft Entra integration, you can grant users or groups access to Kubernetes resources within a namespace or across the cluster. |
+|  | 3.2: Change default passwords where applicable | Azure Kubernetes Service (AKS) does not have the concept of common default passwords and does not provide an identity management solution where regular user accounts and passwords can be stored. With Microsoft Entra integration, you can grant role-based access to AKS resources within a namespace or across the cluster. |
+|  | 3.3: Use dedicated administrative accounts | Integrate user authentication for your Azure Kubernetes Service (AKS) clusters with Microsoft Entra ID. Sign in to an AKS cluster using a Microsoft Entra authentication token. |
+|  | 3.4: Use single sign-on (SSO) with Microsoft Entra ID | Use single sign-on for Azure Kubernetes Service (AKS) with Microsoft Entra integrated authentication for an AKS cluster. |
+|  | 3.5: Use multi-factor authentication for all Microsoft Entra ID based access | Integrate Authentication for Azure Kubernetes Service (AKS) with Microsoft Entra ID. |
 |Data Protection  | 4.1: Maintain an inventory of sensitive Information | Guidance: Use tags on resources related to Azure Kubernetes Service (AKS) deployments to assist in tracking Azure resources that store or process sensitive information. |
 |  | 4.2: Isolate systems storing or processing sensitive information | Logically isolate teams and workloads in the same cluster with Azure Kubernetes Service (AKS) to provide the least number of privileges, scoped to the resources required by each team. |
 |  | 4.3: Monitor and block unauthorized transfer of sensitive information | Use a third-party solution from Azure Marketplace on network perimeters that monitors for unauthorized transfer of sensitive information and blocks such transfers while alerting information security professionals. |
@@ -50,4 +57,3 @@ This unit summarizes the [Azure security baseline for Azure Kubernetes Service](
 |  | 10.4: Provide security incident contact details and configure alert notifications for security incidents | Security incident contact information will be used by Microsoft to contact you if the Microsoft Security Response Center (MSRC) discovers that the customer's data has been accessed by an unlawful or unauthorized party. |
 |  | 10.5: Incorporate security alerts into your incident response system | Export Microsoft Defender for Cloud alerts and recommendations using its Continuous Export feature. Continuous Export allows you to export alerts and recommendations either manually or in an ongoing, continuous fashion. |
 | Penetration Tests and Red Team Exercises | 11.1: Conduct regular penetration testing of your Azure resources and ensure remediation of all critical security findings | Follow the Microsoft Rules of Engagement to ensure your Penetration Tests are not in violation of Microsoft policies. |
-

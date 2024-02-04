@@ -12,7 +12,7 @@ You can use the same threat-hunting queries to build custom detection rules. The
 
 - Microsoft Defender for Identity
 
-To use advanced hunting, turn on Microsoft 365 Defender.
+To use advanced hunting, turn on Microsoft Defender XDR.
 
 ## Data freshness and update frequency
 
@@ -75,7 +75,7 @@ The following reference lists all the tables in the schema. Each table name link
 | EmailPostDeliveryEvents| Security events that occur post-delivery, after Microsoft 365 has delivered the emails to the recipient mailbox|
 | EmailUrlInfo| Information about URLs on emails|
 | IdentityDirectoryEvents| Events involving an on-premises domain controller running Active Directory (AD). This table covers a range of identity-related events and system events on the domain controller.|
-| IdentityInfo| Account information from various sources, including Azure Active Directory|
+| IdentityInfo| Account information from various sources, including Microsoft Entra ID|
 | IdentityLogonEvents| Authentication events on Active Directory and Microsoft online services|
 | IdentityQueryEvents| Queries for Active Directory objects, such as users, groups, devices, and domains|
 
@@ -153,13 +153,18 @@ When saved, a new custom detection rule immediately runs and checks for matches 
 
 - Every 24 hours—runs every 24 hours, checking data from the past 30 days
 
-- Every 12 hours—runs every 12 hours, checking data from the past 24 hours
+- Every 12 hours—runs every 12 hours, checking data from the past 48 hours
 
-- Every 3 hours—runs every 3 hours, checking data from the past 6 hours
+- Every 3 hours—runs every 3 hours, checking data from the past 12 hours
 
-- Every hour—runs hourly, checking data from the past 2 hours
+- Every hour—runs hourly, checking data from the past 4 hours
+
+- Continuous (NRT)—runs continuously, checking data from events as they are collected and processed in near real-time   (NRT)
 
 Select the frequency that matches how closely you want to monitor detections, and consider your organization's capacity to respond to the alerts.
+
+> [!NOTE]
+> Setting a custom detection to run in Continuous (NRT) frequency allows you to increase your organization's ability to identify threats faster.
 
 **4. Choose the impacted entities.**
 
@@ -204,4 +209,3 @@ Only data from devices in scope will be queried. Also, actions will be taken onl
 **7. Review and turn on the rule.**
 
 After reviewing the rule, select Create to save it. The custom detection rule immediately runs. It runs again based on configured frequency to check for matches, generate alerts, and take response actions.
-

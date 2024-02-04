@@ -4,10 +4,12 @@ title: Describe Azure Network Watcher features
 metadata:
   title: Describe Azure Network Watcher features
   description: "Describe Azure Network Watcher features"
-  ms.date: 04/06/2023
+  ms.date: 01/24/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/2-describe-features.md)]

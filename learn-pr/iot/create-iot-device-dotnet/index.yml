@@ -7,10 +7,11 @@ metadata:
   ms.date: 9/9/2022
   author: CamSoper
   ms.author: casoper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.manager: markl
+  ms.topic: module
+  ms.service: dotnet
 title: Construct Internet of Things devices using the .NET IoT Libraries
-summary: "Read environmental sensors and activate relays using the .NET IoT Libraries."
+summary: "In this module, you'll learn to read environmental sensors and activate relays using the .NET IoT Libraries."
 abstract: |
   By the end of this module, you'll be able to:
   - Construct circuits to implement:
@@ -20,11 +21,11 @@ abstract: |
   - Write code to use GPIO pins to activate an LED or relay module.
   - Deploy and test the code.
 prerequisites: |
-  - Intermediate knowledge of .NET.
-  - Basic understanding of Raspberry Pi and Raspberry Pi OS.
-  - .NET SDK 7 or later.
+  - Intermediate knowledge of .NET
+  - Basic understanding of Raspberry Pi and Raspberry Pi OS
+  - .NET SDK 7 or later
   - The following hardware components:
-    - A Raspberry Pi device (2 or greater) configured with Raspberry Pi OS.
+    - A Raspberry Pi device (2 or greater) configured with Raspberry Pi OS
     - BME280 humidity/barometric pressure/temperature sensor breakout ([example](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout))
     - 5 mm LED ([example](https://www.adafruit.com/product/4203))
     - 1.0K ohm resistor ([example](https://www.adafruit.com/product/4294))

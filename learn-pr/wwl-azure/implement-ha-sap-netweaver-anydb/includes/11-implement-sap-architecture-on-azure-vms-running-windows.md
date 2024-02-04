@@ -1,5 +1,3 @@
-
-
 All tasks in this lab are performed from the Azure portal (including a PowerShell Cloud Shell session).
 
 > [!NOTE]
@@ -26,7 +24,7 @@ After completing this lab, you'll be able to:
 
 ## Exercises
 
-During this lab ([full instructions on GitHub](https://microsoftlearning.github.io/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/Instructions/AZ-120_Lab03b-SQL_HA_Infrastructure_Deployment.html)) you'll complete the following exercises:
+During this lab ([full instructions on GitHub](https://aka.ms/az-120-lab-03b)) you'll complete the following exercises:
 
 - Exercise 1: Provision Azure resources necessary to support highly available SAP NetWeaver deployments
 - Exercise 2: Configure operating system of Azure VMs running Windows to support a highly available SAP NetWeaver deployment

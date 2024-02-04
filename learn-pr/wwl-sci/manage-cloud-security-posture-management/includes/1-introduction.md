@@ -12,7 +12,7 @@ Microsoft Defender for Cloud applies security initiatives to your subscriptions.
 ### What is a security policy?
 An Azure Policy definition, created in Azure Policy, is a rule about specific security conditions that you want controlled. Built in definitions include things like controlling what type of resources can be deployed or enforcing the use of tags on all resources. You can also create your own custom policy definitions.
 
-To implement these policy definitions (whether built-in or custom), you'll need to assign them. You can assign any of these policies through the Azure portal, PowerShell, or Azure CLI. Policies can be disabled or enabled from Azure Policy.
+To implement these policy definitions (whether built-in or custom), you need to assign them. You can assign any of these policies through the Azure portal, PowerShell, or Azure CLI. Policies can be disabled or enabled from Azure Policy.
 
 There are different types of policies in Azure Policy. Defender for Cloud mainly uses 'Audit' policies that check specific conditions and configurations then report on compliance. There are also "Enforce' policies that can be used to apply secure settings.
 
@@ -29,7 +29,7 @@ Defender for Cloud offers the following options for working with security initia
 
 - View and edit the built-in default initiative - When you enable Defender for Cloud, the initiative named 'Azure Security Benchmark' is automatically assigned to all Defender for Cloud registered subscriptions. To customize this initiative, you can enable or disable individual policies within it by editing a policy's parameters. See the list of built-in security policies to understand the options available out-of-the-box.
 
-- Add your own custom initiatives - If you want to customize the security initiatives applied to your subscription, you can do so within Defender for Cloud. You'll then receive recommendations if your machines don't follow the policies you create. For instructions on building and assigning custom policies, see Using custom security initiatives and policies.
+- Add your own custom initiatives - If you want to customize the security initiatives applied to your subscription, you can do so within Defender for Cloud. You'll receive recommendations if your machines don't follow the policies you create. For instructions on building and assigning custom policies, see Using custom security initiatives and policies.
 
 - Add regulatory compliance standards as initiatives - Defender for Cloud's regulatory compliance dashboard shows the status of all the assessments within your environment, in the context of a particular standard or regulation (such as Azure CIS, NIST SP 800-53 R4, SWIFT CSP CSCF-v2020). 
 
@@ -66,3 +66,9 @@ You're a Security Operations Analyst working at a company that uses Microsoft De
 
 You need to improve the number of controls that pass the Azure Security Benchmark as displayed in Microsoft Defender for Cloud.
 
+Now that you have an understanding of Microsoft Defender for Cloud security policies, initiatives and recommendations see it in action.
+
+> [!NOTE]
+> Select the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning.
+
+[![Screenshot of the simulation page.](../media/lab-simulation-mitigate-threats-using-microsoft-defender-for-cloud.png)](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Mitigate%20threats%20using%20Microsoft%20Defender%20for%20Cloud)

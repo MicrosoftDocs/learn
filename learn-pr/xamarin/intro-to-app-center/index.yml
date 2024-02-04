@@ -7,7 +7,6 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: "Introduction to App Center"
 summary: "Characterize the types of services offered by App Center. Describe the use of App Center to build, distribute, test, and analyze usage of apps."
 abstract: |
@@ -17,6 +16,7 @@ abstract: |
 prerequisites: |
   - None
 iconUrl: /training/achievements/app-center/introduction-to-app-center-badge.svg
+hidden: true
 badge:
   uid: learn.azure-intro-to-app-center.badge
 levels: 

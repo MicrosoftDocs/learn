@@ -1,8 +1,8 @@
 ## Overview
 
-Message queues are the primary means of inter-thread communication in ThreadX. One or more messages can reside in a message queue, which generally observes a FIFO discipline. Messages are usually sent to the rear of a queue, but messages are always received from the front of the queue. Thread suspension can occur either when a queue is full and a thread tries to send a message to that queue, or when a queue is empty and a thread tries to read a message from that queue.
+Message queues are the primary means of inter-thread communication in ThreadX. One or more messages can reside in a message queue, which generally observes a first-in, first-out (FIFO) discipline. Usually, messages are sent to the rear of a queue, but messages are always received from the front of the queue. Thread suspension can occur when a queue is full and a thread tries to send a message to that queue. It can also occur when a queue is empty and a thread tries to read a message from that queue.
 
-We'll first investigate how to create message queues, how to send messages to a queue, and how to receive messages from a queue. The name of this project is ProjectMessageQueue.
+First, we investigate how to create message queues, how to send messages to a queue, and how to receive messages from a queue. The name of this project for this module is ProjectMessageQueue.
 
 ## Learning objectives
 
@@ -17,4 +17,4 @@ In this module, you'll:
 
 - [Set up your environment](/training/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true)
 - Working knowledge of C or C++, GitHub, and Visual Studio
-- Previous modules in this [learning path](/training/paths/azure-rtos-threadx/?azure-portal=true)
+- Previous modules in the [Azure RTOS ThreadX learning path](/training/paths/azure-rtos-threadx/?azure-portal=true)

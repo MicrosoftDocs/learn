@@ -4,11 +4,10 @@ title: Profile Container vs Office Container
 metadata:
   title: Profile Container vs Office Container
   description: "Profile Container vs Office Container"
-  ms.date: 02/10/2023
+  ms.date: 06/13/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

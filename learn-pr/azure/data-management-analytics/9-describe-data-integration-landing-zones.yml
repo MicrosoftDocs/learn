@@ -8,8 +8,7 @@ metadata:
   ms.date: 1/28/2022
   author: lapate
   ms.author: lapate
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[Describe data integration landing zones](includes/9-describe-data-integration-landing-zones.md)]

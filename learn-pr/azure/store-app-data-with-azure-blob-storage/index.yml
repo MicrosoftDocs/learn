@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.store-app-data-with-azure-blob-storage
 metadata:
-  title: Store application data with Azure Blob storage
-  description: Discover how to build an app that stores user files with Azure Blob storage, use Blob storage in a web app, and use the Azure Storage SDK.
-  ms.date: 03/23/2023
+  title: Store application data with Azure Blob Storage
+  description: Discover how to build an app that stores user files with Azure Blob Storage, use Blob Storage in a web app, and use the Azure Storage SDK.
+  ms.date: 10/23/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Store application data with Azure Blob storage
-summary: Build an app that stores user files with Azure Blob storage.
+  ms.topic: module
+  ms.service: azure-blob-storage
+title: Store application data with Azure Blob Storage
+summary: Build an app that stores user files with Azure Blob Storage.
 abstract: |
   In this module, you will:
     - Organize your data with Azure Blob Storage

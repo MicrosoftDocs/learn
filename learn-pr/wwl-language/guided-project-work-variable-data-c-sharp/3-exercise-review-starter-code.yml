@@ -4,11 +4,10 @@ title: Exercise - Review starter code
 metadata:
   title: Exercise - Review starter code
   description: "Exercise - Review starter code"
-  ms.date: 04/25/2023
+  ms.date: 02/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/3-exercise-review-starter-code.md)]

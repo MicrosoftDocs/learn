@@ -1,4 +1,4 @@
-Certificate requirements are grouped by area and the namespaces used and the certificates that are required for each namespace. The table in this unit describes the Azure Stack Hub public endpoint PKI certificates that are required for both Azure AD and AD FS Azure Stack Hub deployments. The folder in which your solution provider copies the different certificates per public endpoint.
+Certificate requirements are grouped by area and the namespaces used and the certificates that are required for each namespace. The table in this unit describes the Azure Stack Hub public endpoint PKI certificates that are required for both Microsoft Entra ID and AD FS Azure Stack Hub deployments. The folder in which your solution provider copies the different certificates per public endpoint.
 
 Certificates with the appropriate DNS names for each Azure Stack Hub public infrastructure endpoint are required. Each endpoint's DNS name is expressed in the format: `<prefix>.<region>.<fqdn>`.
 

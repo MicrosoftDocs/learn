@@ -6,10 +6,9 @@ metadata:
   title: Introduction
   description: Overview of what you will learn in the module 
   ms.date: 09/13/2021
-  author: sterling463
-  ms.author: csterling
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

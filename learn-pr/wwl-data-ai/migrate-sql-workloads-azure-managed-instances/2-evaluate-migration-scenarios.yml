@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.migrate-sql-workloads-azure-managed-instances.evaluate-migration-scenarios-sql-database-managed-instance
-title: Evaluate migration scenarios to SQL Database Managed Instance
+title: Evaluate migration scenarios
 metadata:
-  title: Evaluate migration scenarios to SQL Database Managed Instance
-  description: "Evaluate migration scenarios to SQL Database Managed Instance"
+  title: Evaluate migration scenarios
+  description: "Learn to evaluate migration scenarios to Azure SQL Managed Instance"
   ms.date: 05/26/2021
-  author: wwlpublish
-  ms.author: chtestao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: unit
 azureSandbox: false
-durationInMinutes: 20
+durationInMinutes: 8
 content: |
   [!include[](includes/2-evaluate-migration-scenarios.md)]

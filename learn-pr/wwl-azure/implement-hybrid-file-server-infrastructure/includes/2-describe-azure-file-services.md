@@ -12,19 +12,19 @@ The IT staff at Contoso plan to migrate its file sharing and have asked you to i
 In this unit, you'll learn about using Azure Files.
 
 > [!NOTE]
-> To use Azure Storage, you first must create a storage account.
+> To use Azure Files, you first must create a storage account.
 
 ## What is Azure Files
 
 *Azure Files* is an Azure service that provides the functionality of an on-premises file share with the benefits of a platform as a service (PaaS) cloud service, including:
 
 - Serverless deployment. An Azure file share is a PaaS offering of a fully managed file share that doesn't require any infrastructure. You don't need to take care of any VMs, operating systems, or updates.
-- Almost unlimited storage. A single Azure file share can store up to 100 terabytes (TB) of files, and a file can be up to 4-TB in size. The files are organized in a hierarchical folder structure in the same way as on on-premises file servers.
+- Almost unlimited storage. A single Azure file share can store up to 100 tebibytes (TiB) of files, and a file can be up to 4 TiB in size. The files are organized in a hierarchical folder structure in the same way as on on-premises file servers.
 - Data redundancy. Azure file share data replicates to multiple locations in the same Azure datacenter or across many Azure datacenters. The replication setting of the Azure storage account that includes the file share controls the data redundancy.
 - Data encryption. The data on an Azure file share is encrypted at rest when it's stored in an Azure datacenter and in transit on a network.
 - Access from anywhere. By default, clients can access Azure file shares from anywhere if they have internet connectivity.
 - Use of standard protocols. You can access Azure file shares by using the Server Message Block (SMB), Network File System (NFS), and HTTP protocols. Clients can connect to Azure file shares from Windows, Linux, and macOS devices.
-- Integration into an existing environment. You can control access to Azure file shares by using identities from Azure AD or AD DS, which  sync to Azure AD. This helps ensure that users can have the same experience accessing an Azure file share as when they access an on-premises file server.
+- Integration into an existing environment. You can control access to Azure file shares by using Microsoft Entra identities or AD DS identities that are synced to Microsoft Entra ID. This helps ensure that users can have the same experience accessing an Azure file share as when they access an on-premises file server.
 - Granular file permissions. You can use NTFS file system permissions to control access (and the level of access) to files on Azure file shares in the same way as with on-premises file servers.
 - Previous versions and backups. You can create Azure file share snapshots that integrate with the **Previous Versions** feature in File Explorer. You can also use Azure Backup to back up Azure file shares.
 - Optional integration with on-premises file servers. Azure file shares can sync with on-premises file shares to provide benefits such as faster local access, and more free space available in on-premises file servers when using cloud tiering.

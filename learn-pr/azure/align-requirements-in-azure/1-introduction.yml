@@ -3,12 +3,11 @@ uid: learn.align-requirements-in-azure.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction
-  ms.date: 09/24/2018
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Learn about cloud types and service models in Azure.
+  ms.date: 10/13/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

@@ -1,8 +1,8 @@
 In the beginning, computing happened with the creation of mainframe computers. At times, those computers occupied a whole room. Large organizations such as NASA used mainframes for critical applications that processed data. Then came the wave of personal computers (PCs) becoming widely available and connecting people in exponential numbers.
 
-We now have access to a variety of devices that manage data, including Internet of Things (IoT) sensors and mixed reality devices. We have more data than ever before. Using or applying that data through machine learning or with artificial intelligence has never been more powerful. 
+People now have access to various devices that manage data, including Internet of Things (IoT) sensors and mixed reality devices. Everyone has more data than ever before. Using or applying that data through machine learning or with artificial intelligence has never been more powerful.
 
-To be able to process the data and make informed decisions, we need to have access to the data in the right time and right place. In the future, we'll be looking to mixed reality to bring that data into our context, the real world.
+To be able to process the data and make informed decisions, you need to have access to the data in the right time and right place. In the future, look to mixed reality to bring that data into your context, the real world.
 
 ## Common use cases
 

@@ -10,7 +10,7 @@ In this demonstration, we will configure and test an app registration.
 
 In this exercise, we will demo how to register an application.
 
-1.  In the **Portal** search for and select **Azure Active Directory**.
+1.  In the **Portal** search for and select **Microsoft Entra ID**.
 2.  Under **Manage** select **App registrations**.
 3.  Click **New registration**.
      -  Name: **AZ500 app**

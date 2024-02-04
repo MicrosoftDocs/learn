@@ -5,11 +5,10 @@ metadata:
   unitType: learning-content
   title: Deploy the Azure landing zone accelerator
   description: Starting small allows for a rapid landing zone deployment that you can later expand to meet your needs.
-  ms.date: 05/12/2022
-  author: BrianBlanchard
-  ms.author: brblanch
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/04/2023
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/6-deploy-blueprint.md)] 

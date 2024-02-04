@@ -4,12 +4,10 @@ title: Configure data connections to Sentinel
 metadata:
   title: Configure data connections to Sentinel
   description: "Configure data connections to Sentinel"
-  ms.date: 02/24/2023
+  ms.date: 06/23/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
   [!include[](includes/3-data-connections.md)]

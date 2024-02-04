@@ -1,10 +1,10 @@
-In this module, you learned about Markdown and GitHub-flavored Markdown so you could communicate more expressively throughout GitHub.
+In this module, you learned about Markdown and GitHub-flavored Markdown to communicate more expressively throughout GitHub.
 
-You learned about:
+You learned:
 
-- Using Markdown to add lists, images, and links in a comment or text file.
-- Determining where and how to use Markdown in a GitHub repository.
-- Learning about syntax extensions available in GitHub (GitHub-flavored Markdown).
+- How to use Markdown to add lists, images, and links in a comment or text file.
+- Where and how to use Markdown in a GitHub repository.
+- Syntax extensions available in GitHub (GitHub-flavored Markdown).
 
 Now that you know how to use Markdown on GitHub, learn to [Create and host web sites by using GitHub Pages](/training/modules/create-host-web-sites-github-pages/).
 
@@ -12,7 +12,8 @@ Now that you know how to use Markdown on GitHub, learn to [Create and host web s
 
 Here are some links to more information on the topics we discussed in this module.
 
-- [Markdown syntax description](https://daringfireball.net/projects/markdown/syntax?azure-portal=true)
+- [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax?azure-portal=true)
 - [GitHub-Flavored Markdown Spec](https://github.github.com/gfm/?azure-portal=true)
 - [Writing on GitHub](https://help.github.com/en/github/writing-on-github?azure-portal=true)
-- [GitHub markdown emojis](https://gist.github.com/rxaviers/7360908?azure-portal=true)
+- [GitHub Markdown emojis](https://gist.github.com/rxaviers/7360908?azure-portal=true)
+- [Autolinked references and URLs](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls?azure-portal=true)

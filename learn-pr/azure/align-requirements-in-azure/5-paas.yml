@@ -3,12 +3,11 @@ uid: learn.align-requirements-in-azure.5-paas
 title: Platform as a service
 metadata:
   title: PaaS
-  description: Learn about platform as a service and if it might be the right choice for your application
-  ms.date: 09/24/2018
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Learn about platform as a service and if it might be the right choice for your application.
+  ms.date: 10/13/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/5-paas.md)]

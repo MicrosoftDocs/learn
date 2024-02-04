@@ -7,9 +7,9 @@ metadata:
   ms.date: 03/01/2021
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
+  ms.topic: unit
   ms.custom: team=nextgen
+  ms.service: iot-edge
 durationInMinutes: 8 # dummy number at present
 content: |
   [!include[](includes/6-exercise-install-vision-edge-shell.md)]

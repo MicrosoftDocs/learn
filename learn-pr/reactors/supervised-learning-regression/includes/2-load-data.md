@@ -1,4 +1,4 @@
-In this section and the next (3.2), we'll use national statistics gathered by the United Nations (UN) from 2009-2011. This information came from the United Nations Statistics Division's [Social indicators page](https://unstats.un.org/unsd/demographic/products/socind/?azure-portal=true) on April 23, 2012. The data includes national health and welfare statistics for 199 countries/regions and territories. These locations are mostly UN members, but the list also includes areas that aren't independent countries/regions (such as Hong Kong SAR).
+In this section and the next (3.2), we'll use national/regional statistics gathered by the United Nations (UN) from 2009-2011. This information came from the United Nations Statistics Division's [Social indicators page](https://unstats.un.org/unsd/demographic/products/socind/?azure-portal=true) on April 23, 2012. The data includes national/regional health and welfare statistics for 199 countries/regions and territories. These locations are mostly UN members, but the list also includes areas that aren't independent countries/regions (such as Hong Kong SAR).
 
 The dataset includes 199 observations with the following features:
 

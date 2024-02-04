@@ -7,8 +7,10 @@ metadata:
   ms.date: 2/14/2023
   author: sherzyang
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 durationInMinutes: 6
 content: |
   [!include[](includes/6-understand-openai-code-generation.md)]

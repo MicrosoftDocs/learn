@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
 title: Implement Hyper-V Replica
 summary: Learn about Hyper-V Replica, scenarios for its use, and prerequisites to use it. Learn about Azure Site Recovery and the benefits of using it, focusing on implementing Site Recovery in on-premises scenarios.
 abstract: |

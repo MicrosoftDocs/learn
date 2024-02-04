@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.explore-sap-hana-availability
+title: Explore SAP HANA availability
+metadata:
+  title: Explore SAP HANA availability
+  description: "Explore SAP HANA availability"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/8-explore-sap-hana-availability.md)]

@@ -35,7 +35,7 @@ Azure Monitor can collect data from various sources. You can think of monitoring
  -  Guest OS monitoring data: Data about the operating system on which your application is running. This OS could be running in Azure, another cloud, or on-premises.
  -  Azure resource monitoring data: Data about the operation of an Azure resource.
  -  Azure subscription monitoring data: Data about the operation and management of an Azure subscription, as well as data about the health and operation of Azure itself.
- -  Azure tenant monitoring data: Data about the operation of tenant-level Azure services, such as Azure Active Directory.
+ -  Azure tenant monitoring data: Data about the operation of tenant-level Azure services, such as Microsoft Entra ID.
 
 As soon as you create an Azure subscription and start adding resources such as virtual machines and web apps, Azure Monitor starts collecting data. Activity logs record when resources are created or modified. Metrics tell you how the resource is performing and the resources that it's consuming.
 

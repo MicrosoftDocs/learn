@@ -18,4 +18,3 @@ After completing this module, you'll be able to:
 
  -  Conceptual knowledge of storage accounts, blobs, files, disks, and data protection.
  -  Working experience with creating and securing storage systems.
- 

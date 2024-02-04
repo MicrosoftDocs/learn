@@ -15,3 +15,11 @@ By the end of this module, you'll be able to:
 ## What is the main objective?
 
 In this module, you'll incorporate string operations when you create a Python program.
+
+## Prerequisites
+
+You should be familiar with the concept of programming.
+
+You don't need to install Python to complete this module. You'll use an interactive sandbox to complete the exercises.
+
+If you want to try out the code in the explanations, you might want to work through [Get started with Python in Visual Studio Code](/training/modules/python-install-vscode?azure-portal=true) first, if you haven't already. This module helps you prepare a Python environment.

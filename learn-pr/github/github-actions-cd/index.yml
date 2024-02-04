@@ -2,12 +2,12 @@
 uid: learn.github.github-actions-cd
 metadata:
   title: "Build and deploy applications to Azure by using GitHub Actions"
-  description: Create two deployment workflows using GitHub Actions and Microsoft Azure.
-  ms.date: 07/08/2022
+  description: Create two deployment workflows using GitHub Actions and Microsoft Azure. Learn about triggering a CD workflow and storing credentials.
+  ms.date: 11/02/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: github
 title: "Build and deploy applications to Azure by using GitHub Actions"
 summary: Create two deployment workflows using GitHub Actions and Microsoft Azure.
 abstract: |
@@ -24,7 +24,7 @@ prerequisites: |
   - The ability to navigate and edit files in GitHub
   - Basic familiarity with GitHub Actions and workflows
   - Basic familiarity with continuous integration using GitHub Actions and workflows
-  - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true).
+  - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
   - An understanding of Microsoft Azure Fundamentals
 iconUrl: /training/achievements/github/github-actions-cd.svg
 ratingEnabled: true

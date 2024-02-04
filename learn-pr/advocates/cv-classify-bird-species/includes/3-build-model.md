@@ -36,7 +36,7 @@ Download the zip file that contains the dataset:
 
 ## Create a Custom Vision API resource
 
-Next, we'll create an API resource in Azure Cognitive Services Custom Vision.
+Next, we'll create an API resource in Azure AI Custom Vision.
 
 1. In the [Azure portal](https://portal.azure.com/?azure-portal=true), select **Create a resource**.
 

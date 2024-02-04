@@ -35,7 +35,7 @@ When you publish your offer, you’ll be able to identify a preview audience tha
 
 :::image type="content" source="../media/7-technical-configuration.png" alt-text="Screenshot of the technical configuration fields required to publish a transact offer.":::
 
-The Technical configuration step, which is only required for transact offers, is where you enter the technical information we discussed in the previous unit of this module. You’ll be prompted to provide the URL for your offer’s landing page, the URL for the connection webhook, and Azure Active Directory (Azure AD) information.
+The Technical configuration step, which is only required for transact offers, is where you enter the technical information we discussed in the previous unit of this module. You’ll be prompted to provide the URL for your offer’s landing page, the URL for the connection webhook, and Microsoft Entra information.
 
 ### Create SaaS offer plans
 

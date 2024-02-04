@@ -3,11 +3,10 @@ uid: learn.wwl.configure-azure-kubernetes-service
 metadata:
   title: Configure Azure Kubernetes Service
   description: "Learn how to configure Azure Kubernetes Service including networking, storage, and scaling."
-  ms.date: 03/06/2023
+  ms.date: 07/13/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure Azure Kubernetes Service
 summary: Learn how to configure Azure Kubernetes Service including networking, storage, and scaling.
 abstract: |

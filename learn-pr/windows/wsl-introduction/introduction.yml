@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wsl-introduction.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: Introduction to WSL with learning objectives for the training course.
+  ms.date: 10/04/2023
+  author: mattwojo
+  ms.author: mattwoj
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

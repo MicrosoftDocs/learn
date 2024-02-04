@@ -13,7 +13,7 @@ We recommend that your VM health checks verify that the following components are
 
 In most scenarios, measuring point-to-point InfiniBand latency and bandwidth via a ping-pong test (sending and receiving a message) is enough to verify the health of the InfiniBand network.
 
-The *Intel IMP-MPI1 PingPong* test is a useful option, because it's prebuilt and available on the *CentOS HPC 7.7+* image in Azure Marketplace. There's a version included in the Intel MPI environment and a version in the HPC-X MPI environment, though you'll typically get the best latency and bandwidth performance by using the HPC-X version. Scripts to run Intel IMP-MPI1 PingPong tests are available in the [IMB-MPI benchmarks project](https://github.com/Azure/azurehpc/tree/master/apps/imb-mpi).
+The *Intel IMP-MPI1 PingPong* test is a useful option because it's prebuilt and available on the *CentOS HPC 7.7+* image in Azure Marketplace. There's a version included in the Intel MPI environment and a version in the HPC-X MPI environment, though you'll typically get the best latency and bandwidth performance by using the HPC-X version. Scripts to run Intel IMP-MPI1 PingPong tests are available in the [IMB-MPI benchmarks project](https://github.com/Azure/azurehpc/tree/master/apps/imb-mpi).
 
 The following table illustrates the expected InfiniBand network latency and bandwidth measured through an HPC-X Intel IMB-IMP1 PingPong benchmark on HPC VMs. Values that are outside the following ranges are considered unhealthy.
 
@@ -23,7 +23,7 @@ The following table illustrates the expected InfiniBand network latency and band
 | HC44 | &lt; 2 &mu;s | &gt; 11.5 GB/s |
 | HB60 | &lt; 2 &mu;s | &gt; 11.5 GB/s |
 
-Other tools and benchmarks to consider are *osu-micro-benchmarks* and *Mellanox ClusterKit*. The latter is also preinstalled in the CentOS HPC 7.7+ Azure Marketplace image, in the HPC-X environment. Example ClusterKit scripts are available in the [Azure health-check scripts project](https://github.com/Azure/azurehpc/tree/master/apps/health_checks).
+Other tools and benchmarks to consider are *osu-micro-benchmarks* and *Mellanox ClusterKit*. The latter is also preinstalled in the CentOS HPC 7.7+ Azure Marketplace image in the HPC-X environment. Example ClusterKit scripts are available in the [Azure health-check scripts project](https://github.com/Azure/azurehpc/tree/master/apps/health_checks).
 
 ## Memory health checks
 
@@ -46,7 +46,7 @@ It's important to understand what storage solution you're using and its expected
 - [IOzone](http://iozone.org/)
 - [Vdbench](https://www.oracle.com/downloads/server-storage/vdbench-downloads.html)
 
-To measure your storage health, you would create the maximum I/O throughput to generate an IOPS benchmark. Then you would compare your measured I/O benchmark results with the expected I/O performance for your storage solution. 
+To measure your storage health, you'd create the maximum I/O throughput to generate an IOPS benchmark. Then you'd compare your measured I/O benchmark results with the expected I/O performance for your storage solution.
 
 You can find example IOR scripts in the [IOR and mdtest project](https://github.com/Azure/azurehpc/tree/master/apps/ior). You can find example FIO scripts in the [FIO project](https://github.com/Azure/azurehpc/tree/master/apps/fio).
 
@@ -54,6 +54,6 @@ You can find example IOR scripts in the [IOR and mdtest project](https://github.
 
 A great way to verify that your CPU cores are healthy and performing as expected is to measure the maximum floating-point operations per second (FLOPS), and then compare your measured results with the theoretical expected FLOPS.
 
-You can use *High Performance Linpack (HPL)* to measure maximum FLOPS. A side benefit of running HPL is that it can help to identify some bad memory DIMMs (dual in-line memory modules) and overall health of the HPC cluster, because it also performs some limited testing for tightly coupled communication. 
+You can use *High Performance Linpack (HPL)* to measure maximum FLOPS. A side benefit of running HPL is that it can help to identify some bad memory DIMMs (dual in-line memory modules) and overall health of the HPC cluster, because it also performs some limited testing for tightly coupled communication.
 
-HPL is often used in HPC datacenters to burn in a new HPC system. You can find example HPL scripts in the [linpack project](https://github.com/Azure/azurehpc/tree/master/apps/linpack).
+HPC datacenters often use HPL to burn in a new HPC system. You can find example HPL scripts in the [linpack project](https://github.com/Azure/azurehpc/tree/master/apps/linpack).

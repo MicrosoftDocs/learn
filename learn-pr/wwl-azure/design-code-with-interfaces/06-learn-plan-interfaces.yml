@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-code-with-interfaces.learn-plan-interfaces
+title: Learn to plan for interfaces
+metadata:
+  title: Learn to plan for interfaces
+  description: "Learn to plan for interfaces"
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/06-learn-plan-interfaces.md)]

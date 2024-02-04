@@ -1,4 +1,3 @@
-
 After you meet all the prerequisites, you can set up Windows Autopilot deployment. The setup process includes:
 
  -  Obtaining the hardware IDs of the devices that you want to deploy to the cloud service.
@@ -14,7 +13,7 @@ If you want to manage Windows Autopilot in the Intune, you must configure automa
 2.  On the Azure Active Directory blade, select **Mobility (MDM and MAM)**, and then in the details pane, select **Microsoft Intune**.
 3.  On the Microsoft Intune blade, in MDM user scope, select **All** if you want all users to be able to enroll their devices to mobile device management. If you want only some users to be able to enroll their devices to mobile device management, select **Some**, specify the groups whose members should be able to enroll, and then select **Save**.
 
-As discussed earlier, you can create Windows Autopilot deployment profiles in the Endpoint Manager admin center.
+As discussed earlier, you can create Windows Autopilot deployment profiles in the Microsoft Intune admin center.
 
 ### Prepare a Microsoft Autopilot deployment
 
@@ -56,7 +55,7 @@ When you upload a CSV file, you can add devices to an existing Windows Autopilot
 
 To complete this process using Intune, use the following procedure:
 
-1.  In Endpoint Manager admin center, navigate to **Devices** > **Enroll Devices** > **Devices**. Select **Import**.
+1.  In Microsoft Intune admin center, navigate to **Devices** > **Enroll Devices** > **Devices**. Select **Import**.
 2.  Browse and locate your CSV file.
 3.  Import the file.
 4.  After import is complete, select **Device enrollment**, select **Windows enrollment**, select **Windows Autopilot**, select **Devices** and then select **Sync**.
@@ -67,7 +66,7 @@ To complete this process using Intune, use the following procedure:
 
 ### Import a device hash directly into Intune
 
-In certain circumstances, it may be beneficial to directly import the device hash into Microsoft Intune rather than generating the file as shown above. This is often useful in testing scenarios or perhaps could be useful if you have a batch of machines that are being built by onsite technicians ready for users.
+In certain circumstances, it might be beneficial to directly import the device hash into Microsoft Intune rather than generating the file as shown above. This is often useful in testing scenarios or perhaps could be useful if you have a batch of machines that are being built by onsite technicians ready for users.
 
 The following example imports the device directly into Intune along with assigning a Dynamic variable tag (Autopilot-Devices) to an Azure AD group to ensure the device ends up in a specific group:
 

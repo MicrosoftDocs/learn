@@ -1,4 +1,5 @@
 
+
 In this exercise you'll learn how to perform the following actions in the Azure portal:
 
 * Create an Azure Cosmos DB account

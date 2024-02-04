@@ -5,10 +5,9 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 03/14/2021
-  author: tomreidnz
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: nitinme
+  ms.author: nitinme
+  ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-summary.md)]
+  [!INCLUDE[](includes/7-summary.md)]
