@@ -38,7 +38,6 @@ subjects:
 units:
 - learn.wwl.network-security.introduction
 - learn.wwl.network-security.groups-nsg
-- learn.wwl.network-security.groups-implementation
 - learn.wwl.network-security.service-endpoints
 - learn.wwl.network-security.service-endpoint-services
 - learn.wwl.network-security.private-links
