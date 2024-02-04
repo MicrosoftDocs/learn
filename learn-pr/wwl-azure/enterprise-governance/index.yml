@@ -34,7 +34,6 @@ subjects:
 units:
 - learn.wwl.enterprise-governance.introduction
 - learn.wwl.enterprise-governance.shared-responsibility-model
-- learn.wwl.enterprise-governance.azure-role-based-access-control-rbac
 - learn.wwl.enterprise-governance.built-roles
 - learn.wwl.enterprise-governance.resource-locks
 - learn.wwl.enterprise-governance.azure-subscription-management
