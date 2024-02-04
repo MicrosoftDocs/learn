@@ -42,7 +42,6 @@ units:
 - learn.wwl.network-security.service-endpoints
 - learn.wwl.network-security.service-endpoint-services
 - learn.wwl.network-security.private-links
-- learn.wwl.network-security.azure-application-gateway
 - learn.wwl.network-security.web-application-firewall​
 - learn.wwl.network-security.azure-front-door​
 - learn.wwl.network-security.expressroute
