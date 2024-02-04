@@ -35,7 +35,6 @@ products:
 subjects:
 - cloud-security
 units:
-- learn.wwl.host-security.virtual-machine-templates
 - learn.wwl.host-security.windows-defender
 badge:
   uid: learn.wwl.host-security.badge
