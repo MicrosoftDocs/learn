@@ -34,7 +34,6 @@ subjects:
 units:
 - learn.wwl.enterprise-governance.shared-responsibility-model
 - learn.wwl.enterprise-governance.resource-locks
-- learn.wwl.enterprise-governance.knowledge-check
 - learn.wwl.enterprise-governance.summary
 badge:
   uid: learn.wwl.enterprise-governance.badge
