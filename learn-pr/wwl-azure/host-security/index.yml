@@ -41,7 +41,6 @@ units:
 - learn.wwl.host-security.remote-access-management
 - learn.wwl.host-security.update-management
 - learn.wwl.host-security.windows-defender
-- learn.wwl.host-security.microsoft-cloud-security-benchmark
 - learn.wwl.host-security.security-center-recommendations
 - learn.wwl.host-security.summary
 badge:
