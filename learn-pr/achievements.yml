@@ -2843,3 +2843,8 @@ achievements:
   title: 'AZ-500: Manage Identity and Access'
   summary: Explore how identity is the starting point for all security within your company. Learn to authenticate and authorize users and apps with Microsoft Entra ID.
   iconUrl: /training/achievements/management-identity-access.svg
+- uid: learn.wwl.enterprise-governance.badge
+  type: badge
+  title: Design an enterprise governance strategy
+  summary: Learn to use RBAC and Azure Policy to limit access to your Azure solutions, and determine which method is right for your security goals.
+  iconUrl: /training/achievements/enterprise-governance.svg
