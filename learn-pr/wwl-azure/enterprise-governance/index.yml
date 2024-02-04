@@ -32,6 +32,5 @@ products:
 subjects:
 - cloud-security
 units:
-- learn.wwl.enterprise-governance.summary
 badge:
   uid: learn.wwl.enterprise-governance.badge
