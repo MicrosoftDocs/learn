@@ -32770,6 +32770,11 @@
       "source_path": "learn-pr/wwl-azure/enterprise-governance/4-azure-hierarchy.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enterprise-governance/5-azure-policies.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
     }
   ]
 }
