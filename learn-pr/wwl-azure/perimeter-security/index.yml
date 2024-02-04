@@ -33,6 +33,5 @@ products:
 subjects:
 - security
 units:
-- learn.wwl.perimeter-security.vpn-forced-tunneling
 badge:
   uid: learn.wwl.perimeter-security.badge
