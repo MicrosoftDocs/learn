@@ -32980,6 +32980,11 @@
       "source_path": "learn-pr/wwl-azure/network-security/14-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/network-security/9-web-application-firewall.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
+      "redirect_document_id": false
     }
   ]
 }
