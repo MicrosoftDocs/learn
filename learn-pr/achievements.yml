@@ -2858,3 +2858,8 @@ achievements:
   title: 'AZ-500: Implement platform protection'
   summary: Security has to happen at all levels. Learn how to lock down the infrastructure and network resources that are running in your Azure environment.
   iconUrl: /training/achievements/platform-implement-protection.svg
+- uid: learn.wwl.network-security.badge
+  type: badge
+  title: Configure network security
+  summary: Use Azure network capabilities to secure your network and applications from external and internal attacks.
+  iconUrl: /training/achievements/azure-network-security.svg
