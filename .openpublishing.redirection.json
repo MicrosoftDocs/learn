@@ -32930,6 +32930,11 @@
       "source_path": "learn-pr/wwl-azure/network-security/10-azure-front-door.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/network-security/12-demonstration.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
+      "redirect_document_id": false
     }
   ]
 }
