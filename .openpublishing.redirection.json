@@ -32865,6 +32865,11 @@
       "source_path": "learn-pr/wwl-azure/host-security/11-microsoft-cloud-security-benchmark.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/3-privileged-access-device.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
+      "redirect_document_id": false
     }
   ]
 }
