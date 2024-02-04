@@ -32875,6 +32875,11 @@
       "source_path": "learn-pr/wwl-azure/host-security/4-privileged-access-workstations.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/6-remote-access-management.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
+      "redirect_document_id": false
     }
   ]
 }
