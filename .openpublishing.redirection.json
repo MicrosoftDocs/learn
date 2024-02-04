@@ -32815,6 +32815,11 @@
       "source_path": "learn-pr/wwl-azure/enterprise-governance/9-resource-locks.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enterprise-governance/2-shared-responsibility-model.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
     }
   ]
 }
