@@ -41,7 +41,6 @@ units:
 - learn.wwl.enterprise-governance.azure-rbac-vs-azure-policies
 - learn.wwl.enterprise-governance.built-roles
 - learn.wwl.enterprise-governance.resource-locks
-- learn.wwl.enterprise-governance.azure-blueprints
 - learn.wwl.enterprise-governance.azure-subscription-management
 - learn.wwl.enterprise-governance.demonstrations
 - learn.wwl.enterprise-governance.knowledge-check
