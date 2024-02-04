@@ -32,7 +32,6 @@ products:
 subjects:
 - cloud-security
 units:
-- learn.wwl.enterprise-governance.shared-responsibility-model
 - learn.wwl.enterprise-governance.summary
 badge:
   uid: learn.wwl.enterprise-governance.badge
