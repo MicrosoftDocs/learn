@@ -32995,6 +32995,11 @@
       "source_path": "learn-pr/wwl-azure/perimeter-security/6-azure-firewall-features.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/perimeter-security/7-azure-firewall-implementation.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
+      "redirect_document_id": false
     }
   ]
 }
