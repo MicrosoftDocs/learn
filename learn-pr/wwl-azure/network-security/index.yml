@@ -37,6 +37,5 @@ subjects:
 - security
 units:
 - learn.wwl.network-security.web-application-firewall​
-- learn.wwl.network-security.summary
 badge:
   uid: learn.wwl.network-security.badge
