@@ -32940,6 +32940,11 @@
       "source_path": "learn-pr/wwl-azure/network-security/11-expressroute.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/network-security/3-groups-implementation.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
+      "redirect_document_id": false
     }
   ]
 }
