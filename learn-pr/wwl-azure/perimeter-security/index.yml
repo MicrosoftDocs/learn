@@ -37,7 +37,6 @@ units:
 - learn.wwl.perimeter-security.virtual-network-security
 - learn.wwl.perimeter-security.vpn-forced-tunneling
 - learn.wwl.perimeter-security.user-defined-routes-network-virtual-appliances
-- learn.wwl.perimeter-security.hub-spoke-topology
 - learn.wwl.perimeter-security.knowledge-check
 - learn.wwl.perimeter-security.summary
 badge:
