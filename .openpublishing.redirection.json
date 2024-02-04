@@ -32755,6 +32755,11 @@
       "source_path": "learn-pr/wwl-azure/enterprise-governance/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enterprise-governance/10-azure-blueprints.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
     }
   ]
 }
