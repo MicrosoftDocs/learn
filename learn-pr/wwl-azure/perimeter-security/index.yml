@@ -35,6 +35,5 @@ subjects:
 units:
 - learn.wwl.perimeter-security.virtual-network-security
 - learn.wwl.perimeter-security.vpn-forced-tunneling
-- learn.wwl.perimeter-security.user-defined-routes-network-virtual-appliances
 badge:
   uid: learn.wwl.perimeter-security.badge
