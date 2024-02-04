@@ -38,6 +38,5 @@ units:
 - learn.wwl.host-security.virtual-machine-templates
 - learn.wwl.host-security.update-management
 - learn.wwl.host-security.windows-defender
-- learn.wwl.host-security.summary
 badge:
   uid: learn.wwl.host-security.badge
