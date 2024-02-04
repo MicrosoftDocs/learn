@@ -44,7 +44,6 @@ units:
 - learn.wwl.network-security.private-links
 - learn.wwl.network-security.web-application-firewall​
 - learn.wwl.network-security.expressroute
-- learn.wwl.network-security.demonstration
 - learn.wwl.network-security.knowledge-check
 - learn.wwl.network-security.summary
 badge:
