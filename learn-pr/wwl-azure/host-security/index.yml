@@ -35,7 +35,6 @@ products:
 subjects:
 - cloud-security
 units:
-- learn.wwl.host-security.privileged-access-workstations
 - learn.wwl.host-security.virtual-machine-templates
 - learn.wwl.host-security.remote-access-management
 - learn.wwl.host-security.update-management
