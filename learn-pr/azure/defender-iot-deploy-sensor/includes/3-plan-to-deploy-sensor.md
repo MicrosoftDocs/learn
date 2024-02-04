@@ -10,6 +10,7 @@ The OT sensor deployment plan is shown in the following diagram:
 ## Install Defender for IoT software
 <!-- I dont understand the headings here, I would have thought this should be H3 as it is a sub category of the previous H2 heading. But Cat put this entire section as H2s? I have done that here but it seems incorrect-->
 
+<!-- WHAT DOES THIS MEAN  - Ensure that the hostname is configured in the organizational DNS server. in the jenkins sensor-->
 Download the OT monitoring software installation file from the Defender for IoT setup page, and then install it on the OT sensor appliance. For our scenario, the OT sensor appliance is a virtual machine. We will also use the VMware ESXi v-Switch to build the virtual machine, but other systems such as HyperV may also be used.
 
 <!-- do we have an account that can use the vmware to check and demo on??? <https://customerconnect.vmware.com/en/evalcenter?p=vsphere-eval-8> -->
