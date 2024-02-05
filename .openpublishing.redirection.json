@@ -33485,6 +33485,11 @@
       "source_path": "learn-pr/wwl-azure/azure-sentinel/8-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-security-operations-new/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-sentinel/6-playbooks.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-security-operations-new/",
+      "redirect_document_id": false
     }
   ]
 }
