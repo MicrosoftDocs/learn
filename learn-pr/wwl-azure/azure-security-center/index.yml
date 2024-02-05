@@ -32,6 +32,5 @@ subjects:
 - threat-protection
 units:
 - learn.wwl.azure-security-center.workload-protections
-- learn.wwl.azure-security-center.view-and-edit-security-policies
 badge:
   uid: learn.wwl.azure-security-center.badge
