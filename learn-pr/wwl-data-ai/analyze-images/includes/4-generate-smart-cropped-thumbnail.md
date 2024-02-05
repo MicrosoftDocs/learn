@@ -14,12 +14,12 @@ For example, take this image original of a skateboarder.
 
 ![A skateboarder performing a trick in front of a concrete wall.](../media/sample-skateboard.jpg)
 
-With the background removed, we get just the skateboarder on a black background.
+With the background removed, we get just the skateboarder on a transparent background.
 
 ![A skateboarder performing a trick with a black background.](../media/sample-skateboard-no-background.png)
 
 When creating an alpha matte of an image, the result is the foreground in all white, with a black background.
 
-![A sillhouette of a skateboarder performing a trick with a black background.](../media/sample-skateboard-alpha-matte.png)
+![A silhouette of a skateboarder performing a trick with a black background.](../media/sample-skateboard-alpha-matte.png)
 
 Alpha matte images are helpful when client applications intend to do further processing of an image that requires separation of foreground and background objects.
