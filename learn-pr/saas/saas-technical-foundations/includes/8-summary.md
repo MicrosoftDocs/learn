@@ -1,24 +1,24 @@
-- ## Plan for SaaS solution
+## Plan for SaaS solution
 
-  In this learn module you have learned about technical concepts for SaaS solutions, such as:
+In this learn module you have learned about technical concepts for SaaS solutions, such as:
 
-  - Tenancy models - multi-tenant and single-tenant
-  - Difference between monolithic and microservices architectures
-  - The most common Azure services for SaaS and microservices architectures
-  - How to handle authentication and authorization in SaaS solution and in microservices architecture
-  
-  
-  
-  If you are getting started with your SaaS solution, the first stage is all about getting the technical and functional requirements of the solution and aligning architecture and technology to it. 
-  
-  - What is considered tenant in your case?
-  - What are security/compliance, availability and scalability requirements?
-  - Is your solution expected to be multi-regional solution?
-  - Who are end-users and do they require SSO or separate identity?
-  
-  The answers to these and other questions will be the requirements for your future SaaS architecture.
-  
-  
+- Tenancy models - multitenant and single-tenant
+- Difference between monolithic and microservices architectures
+- The most common Azure services for SaaS and microservices architectures
+- How to handle authentication and authorization in SaaS solution and in microservices architecture
+
+
+
+If you are getting started with your SaaS solution, the first stage is all about getting the technical and functional requirements of the solution and aligning architecture and technology to it. 
+
+- What is considered tenant in your case?
+- What are security/compliance, availability and scalability requirements?
+- Is your solution expected to be multi-regional solution?
+- Who are end-users and do they require SSO or separate identity?
+
+The answers to these and other questions will be the requirements for your future SaaS architecture.
+
+
 
 To learn more about architecting multitenant solutions on Azure and other concepts covered in this module, see the following resources:
 

@@ -1,4 +1,4 @@
-Now, let's focus on multi-tenant architecture and its different aspects such as:
+Now, let's focus on multitenant architecture and its different aspects such as:
 * Data isolation
 * Control plane
 * How to avoid "noisy neighbor" problem
@@ -28,12 +28,12 @@ The control plane's structure and tasks vary based on your solution's requiremen
 
 Typical core control plane responsibilities include:
 
-1. Handling tenant lifecycle events like onboarding, moving, and offboarding.
-2. Monitoring tenant feature usage and system performance.
-3. Allocating and managing system resources for workloads, including tenant-specific ones. This might involve deploying via a pipeline or executing deployments directly.
-4. Adapting shared resources for new tenants, such as configuring network routing or scaling capacity.
-5. Storing and overseeing tenant configurations.
-6. Measuring tenant resource consumption for billing or governance.
+- Handling tenant lifecycle events like onboarding, moving, and offboarding.
+- Monitoring tenant feature usage and system performance.
+- Allocating and managing system resources for workloads, including tenant-specific ones. This might involve deploying via a pipeline or executing deployments directly.
+- Adapting shared resources for new tenants, such as configuring network routing or scaling capacity.
+- Storing and overseeing tenant configurations.
+- Measuring tenant resource consumption for billing or governance.
 
 For fully multitenant models without tenant-specific resources, a basic control plane could manage tenant data in a database, like updating records when new tenants sign up.
 

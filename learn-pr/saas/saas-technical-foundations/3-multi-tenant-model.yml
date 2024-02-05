@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.saas-technical-foundations.multi-tenant-model
-title: Multi-tenant-model. Should all your customers share the same instance of SaaS solution?
+uid: learn.saas-technical-foundations.multitenant-model
+title: Multitenant model
 metadata:
-  title: Multi-tenant-model
-  description: "A multi-tenant solution is one used by multiple customers, or tenants. This module covers considerations for multi-tenant model, where one instance of SaaS solution is shared across customers/tenants."
+  title: Multitenant-model
+  description: "A multitenant solution is one used by multiple customers, or tenants. This module covers considerations for multitenant model, where one instance of SaaS solution is shared across customers/tenants."
   ms.date: 6/8/2023
   author: kostinams
   ms.author: irkostin

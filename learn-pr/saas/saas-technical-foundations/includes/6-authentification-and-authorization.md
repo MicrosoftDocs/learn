@@ -1,6 +1,6 @@
-In this module, you learn about authentication and authorization, how it can be implemented with Entra ID, and how to handle identity in microservices architecture.
+In this module, you learn about authentication and authorization, how it can be implemented with Microsoft Entra ID, and how to handle identity in microservices architecture.
 
-### Difference between Authentication and Authorization
+### Difference between authentication and authorization
 
 **Authentication** is the process of challenging a person, software component, or hardware device for credentials in order to verify their identity, or prove that person, component or hardware are who or what they claim to be. Authentication typically requires the use of credentials (like username and password, fingerprints, certificates, or one-time passcodes). 
 
@@ -10,19 +10,19 @@ Single sign-on (SSO) allows users to authenticate their identity once and then l
 
 
 
-Both Authentication and authorization processes can be performed with [Microsoft Identity platform](https://learn.microsoft.com/entra/identity-platform/v2-overview) as part of Microsoft Entra ID (Formerly known as Azure Active Directory), and [Azure Active Directory B2C](https://learn.microsoft.com/azure/active-directory-b2c/overview) (AAD B2C). Microsoft identity platform is suited for solutions where customers' users have Entra ID accounts, often that would be B2B solutions. AAD B2C is suitable for solutions serving end-users directly since those users don't have Entra ID account and don't belong to any tenant. 
+Both Authentication and authorization processes can be performed with [Microsoft Identity platform](https://learn.microsoft.com/entra/identity-platform/v2-overview) as part of Microsoft Entra ID (Formerly known as Azure Active Directory), and [Azure Active Directory B2C](https://learn.microsoft.com/azure/active-directory-b2c/overview) (AAD B2C). Microsoft identity platform is suited for solutions where customers' users have Microsoft Entra ID accounts, often that would be B2B solutions. AAD B2C is suitable for solutions serving end-users directly since those users don't have Microsoft Entra ID account and don't belong to any tenant. 
 
 Both platforms implement the OAuth 2.0 authorization protocol. OAuth 2.0 is a method through which a third-party app can access web-hosted resources on behalf of a user.
 
 #### **Application roles**
 
-One of the key features of Entra ID for SaaS providers is the ability to define *app roles*, and later assign app roles to individual users and groups. App roles are used to control access to various resources and actions within an application. 
+One of the key features of Microsoft Entra ID for SaaS providers is the ability to define *app roles*, and later assign app roles to individual users and groups. App roles are used to control access to various resources and actions within an application. 
 
 For example, an application may have the role of "admin", or "Support operator", which allows users with that role to access certain features and functionality that regular users can't. You can create any kind of role and name it based on business needs.
 
 App roles can be created via the Azure portal under “Application Registrations” <u>in the tenant of the SaaS developer</u>.
 
-![The following screenshot demonstrates how to create App Role in Azure AD](../media/create_approle.png)
+![App Role creation in Azure AD](../media/create-approle.png)
 
  App roles can also be created programmatically (for example, using Graph API).
 
@@ -30,7 +30,7 @@ App roles can be created via the Azure portal under “Application Registrations
 
 Administrators of <u>customer tenants</u> can assign these roles to users or groups. Assignment is done under “Enterprise Applications”:
 
-![The following screenshot demonstrates how to assign App Role to users in customers Azure AD tenant](../media/ent_app.png)
+![App Role assignment in customers' Azure AD tenant](../media/ent-app.png)
 
 
 
@@ -40,13 +40,13 @@ Another important aspect for SaaS providers is the use of scopes. Scopes are use
 
 Scopes can be defined as a collection of permissions that are required to access a particular resource. You can define multiple scopes for different levels of access on APIs and services, registered under App Registrations in Entra ID:
 
-![The following screenshot demonstrates 2 different scopes for reading contracts and for signing contracts.](../media/expose_api.png)
+![The screenshot demonstrates 2 different scopes for reading contracts and for signing contracts.](../media/expose-api.png)
 
 
 
 When a user or application attempts to access a protected resource (for example, emails through Graph API), Graph API verifies that the requested scope is associated with the user or application. This association is passed as part of the JWT access token. If the user or application has the appropriate scope, they're granted access to the resource.
 
-In the scenario, where the user is using delegated permissions and gives consent to the SaaS app to access email records using Graph API, this SaaS app is only been able to retrieve email items for this user.
+In the scenario, where the user is using delegated permissions and gives consent to the SaaS app to access email records using Graph API, this SaaS app is only able to retrieve email items for this user.
 
 In the situation when you're granting permission to one of the APIs protected by Entra ID, which are part of the SaaS application, you have to implement similar logic.
 
@@ -66,7 +66,7 @@ When the API Gateway centralizes authentication, it adds user information when f
 
 When microservices are accessed directly, trust that includes authentication and authorization is handled by a security token issued by a dedicated microservice, shared between microservices.
 
-When using Entra ID, it's possible to register your individual microservices (APIs) and create individual scopes for each. In that way it's possible to assign different scopes (permissions) for each API. Entra ID is performing the authentication role (verifying the identity of the user), while your APIs perform the authorization - deciding if this particular user can access required API. Authorization is implemented by looking into the content of the access token passed to API after authenticating with AAD.
+When using Microsoft Entra ID, it's possible to register your individual microservices (APIs) and create individual scopes for each. In that way it's possible to assign different scopes (permissions) for each API. Microsoft Entra ID is performing the authentication role (verifying the identity of the user), while your APIs perform the authorization - deciding if this particular user can access required API. Authorization is implemented by looking into the content of the access token passed to API after authenticating with Microsoft Entra ID.
 
 
 
@@ -76,7 +76,9 @@ The on-behalf-of (OBO) flow describes the scenario of a web API using an identit
 
 For the middle-tier service to make authenticated requests to the downstream service, it needs to secure an access token from the Entra ID platform. It only uses delegated *scopes* and not application *roles*. *Roles* remain attached to the principal (the user) and never to the application operating on the user's behalf. This occurs to prevent the user gaining permission to resources they shouldn't have access to.
 
-Note, that on-behalf-of flow currently isn't supported in AAD B2C.
+ [!NOTE]
+
+On-behalf-of flow currently isn't supported in Azure Active Directory B2C.
 
 
 
