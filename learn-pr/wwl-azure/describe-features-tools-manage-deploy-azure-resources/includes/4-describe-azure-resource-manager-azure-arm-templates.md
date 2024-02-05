@@ -14,7 +14,7 @@ With Azure Resource Manager, you can:
  -  Apply tags to resources to logically organize all the resources in your subscription.
  -  Clarify your organization's billing by viewing costs for a group of resources that share the same tag.
 
-The following video provides an overview Azure Resource Manager.
+The following video provides an overview of Azure Resource Manager.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=d257e6ec-abab-47f4-a209-22049e7a40b4]
 
