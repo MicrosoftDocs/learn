@@ -33340,6 +33340,11 @@
       "source_path": "learn-pr/wwl-azure/azure-monitor/4-log-analytics.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-security-operations-new/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-monitor/3-metrics-logs.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-security-operations-new/",
+      "redirect_document_id": false
     }
   ]
 }
