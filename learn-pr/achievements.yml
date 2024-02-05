@@ -2843,3 +2843,28 @@ achievements:
   title: 'AZ-500: Manage Identity and Access'
   summary: Explore how identity is the starting point for all security within your company. Learn to authenticate and authorize users and apps with Microsoft Entra ID.
   iconUrl: /training/achievements/management-identity-access.svg
+- uid: learn.wwl.enterprise-governance.badge
+  type: badge
+  title: Design an enterprise governance strategy
+  summary: Learn to use RBAC and Azure Policy to limit access to your Azure solutions, and determine which method is right for your security goals.
+  iconUrl: /training/achievements/enterprise-governance.svg
+- uid: learn.wwl.host-security.badge
+  type: badge
+  title: Configure and manage host security
+  summary: Learn to lock down the devices, virtual machines, and other components that run your applications in Azure.
+  iconUrl: /training/achievements/security-host.svg
+- uid: learn.wwl.implement-platform-protection.trophy
+  type: trophy
+  title: 'AZ-500: Implement platform protection'
+  summary: Security has to happen at all levels. Learn how to lock down the infrastructure and network resources that are running in your Azure environment.
+  iconUrl: /training/achievements/platform-implement-protection.svg
+- uid: learn.wwl.network-security.badge
+  type: badge
+  title: Configure network security
+  summary: Use Azure network capabilities to secure your network and applications from external and internal attacks.
+  iconUrl: /training/achievements/azure-network-security.svg
+- uid: learn.wwl.perimeter-security.badge
+  type: badge
+  title: Implement perimeter security
+  summary: Prevent attacks before they get to your Azure solutions. Use the concepts of defense in depth and zero trust to secure Azure perimeter.
+  iconUrl: /training/achievements/perimeter-security.svg
