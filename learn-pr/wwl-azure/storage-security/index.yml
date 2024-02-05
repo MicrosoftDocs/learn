@@ -37,7 +37,6 @@ units:
 - learn.wwl.storage-security.data-sovereignty
 - learn.wwl.storage-security.shared-access-signatures
 - learn.wwl.storage-security.storage-service-encryption
-- learn.wwl.storage-security.blob-data-retention-policies
 - learn.wwl.storage-security.secure-transfer-required​
 - learn.wwl.storage-security.demonstration
 - learn.wwl.storage-security.knowledge-check
