@@ -1,4 +1,4 @@
-In this module, you'll learn about authentication and authorization, how it can be implemented with Entra ID, and how to handle identity in microservices architecture.
+In this module, you learn about authentication and authorization, how it can be implemented with Entra ID, and how to handle identity in microservices architecture.
 
 ### Difference between Authentication and Authorization
 
@@ -6,11 +6,11 @@ In this module, you'll learn about authentication and authorization, how it can 
 
 Single sign-on (SSO) allows users to authenticate their identity once and then later silently authenticate when accessing various resources that rely on the same identity. Once authenticated, the IAM system acts as the source of identity truth for the other resources available to the user. It removes the need for signing on to multiple, separate target systems.
 
-**Authorization** validates that the user, machine, or software component has been granted access to certain resources. Authorization grants or denies the user, machine, or software component access to certain resources.
+**Authorization** validates that the user, machine, or software component has access to certain resources. Authorization grants or denies the user, machine, or software component access to certain resources.
 
 
 
-Both Authentication and authorization processes can be performed with [Microsoft Identity platform](https://learn.microsoft.com/entra/identity-platform/v2-overview) as part of Microsoft Entra ID (Formerly known as Azure Active Directory), and [Azure Active Directory B2C](https://learn.microsoft.com/azure/active-directory-b2c/overview) (AAD B2C). Microsoft identity platform is suited for solutions where customers' users have Entra ID accounts (often that would be B2B solutions), while AAD B2C is suitable for solutions serving end-users directly since those users don't have Entra ID account and don't belong to any tenant. 
+Both Authentication and authorization processes can be performed with [Microsoft Identity platform](https://learn.microsoft.com/entra/identity-platform/v2-overview) as part of Microsoft Entra ID (Formerly known as Azure Active Directory), and [Azure Active Directory B2C](https://learn.microsoft.com/azure/active-directory-b2c/overview) (AAD B2C). Microsoft identity platform is suited for solutions where customers' users have Entra ID accounts, often that would be B2B solutions. AAD B2C is suitable for solutions serving end-users directly since those users don't have Entra ID account and don't belong to any tenant. 
 
 Both platforms implement the OAuth 2.0 authorization protocol. OAuth 2.0 is a method through which a third-party app can access web-hosted resources on behalf of a user.
 
