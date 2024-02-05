@@ -31,7 +31,6 @@ products:
 subjects:
 - cloud-security
 units:
-- learn.wwl.application-security.microsoft-identity-platform
 - learn.wwl.application-security.summary
 badge:
   uid: learn.wwl.application-security.badge
