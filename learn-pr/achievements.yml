@@ -2893,3 +2893,8 @@ achievements:
   title: 'AZ-500: Secure your data and applications'
   summary: Application running within Azure access your confidential data need to be locked down. Learn to secure your applications, storage, databases, and key vaults.
   iconUrl: /training/achievements/security-data-applications.svg
+- uid: learn.wwl.azure-monitor.badge
+  type: badge
+  title: Configure and manage Azure Monitor
+  summary: Use Azure Monitor, Log Analytics, and other Azure tools to monitor the secure operation of your Azure solutions.
+  iconUrl: /training/achievements/azure-monitor.svg
