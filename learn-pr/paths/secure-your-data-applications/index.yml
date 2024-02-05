@@ -29,7 +29,6 @@ subjects:
 - identity-access
 - information-protection-governance
 modules:
-- learn.wwl.azure-key-vault
 - learn.wwl.storage-security
 - learn.wwl.sql-database-security
 trophy:
