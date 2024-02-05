@@ -35,7 +35,6 @@ subjects:
 units:
 - learn.wwl.enable-containers-security.introduction
 - learn.wwl.enable-containers-security.explore-containers
-- learn.wwl.enable-containers-security.configure-azure-container-instances-security​
 - learn.wwl.enable-containers-security.manage-security-for-azure-container-instances-aci​
 - learn.wwl.enable-containers-security.explore-azure-container-registry-acr​
 - learn.wwl.enable-containers-security.enable-azure-container-registry-authentication
