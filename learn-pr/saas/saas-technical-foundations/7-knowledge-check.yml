@@ -14,7 +14,7 @@ durationInMinutes: 10
 content: |
 quiz:
   questions:
-  - content: "What are disadvantages of multitenant architecture?"
+  - content: "Name disadvantages of a multitenant architecture?"
     choices:
     - content: "Infrastructure cost is lower."
       isCorrect: false
@@ -22,9 +22,9 @@ quiz:
     - content: "Faster time to market."
       isCorrect: false
       explanation: "Since there's no need to deploy separate infrastructure for each tenant, the time to market is faster."
-    - content: "High level of isolation."
+    - content: "Low level of isolation."
       isCorrect: true
-      explanation: "Multitenant architecture provides low level of isolation between tenants, both in terms of data isolation, and compute isolation."
+      explanation: "A multitenant architecture provides low level of isolation between tenants, both in terms of data isolation, and compute isolation."
   - content: "Typical core control plane responsibilities include:"
     choices:
     - content: "Authentication and authorization."
