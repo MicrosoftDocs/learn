@@ -40,7 +40,6 @@ units:
 - learn.wwl.enable-containers-security.enable-azure-container-registry-authentication
 - learn.wwl.enable-containers-security.review-azure-kubernetes-service-aks​
 - learn.wwl.enable-containers-security.implement-azure-kubernetes-service-architecture​
-- learn.wwl.enable-containers-security.configure-azure-kubernetes-service-networking​
 - learn.wwl.enable-containers-security.deploy-azure-kubernetes-service-storage​
 - learn.wwl.enable-containers-security.secure-authentication-to-azure-kubernetes-service-active-directory​
 - learn.wwl.enable-containers-security.manage-access-to-azure-kubernetes-service-using-azure-role-based-access-controls
