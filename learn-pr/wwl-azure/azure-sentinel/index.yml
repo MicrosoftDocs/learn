@@ -31,7 +31,6 @@ subjects:
 units:
 - learn.wwl.azure-sentinel.workbooks
 - learn.wwl.azure-sentinel.playbooks
-- learn.wwl.azure-sentinel.knowledge-check
 - learn.wwl.azure-sentinel.summary
 badge:
   uid: learn.wwl.azure-sentinel.badge
