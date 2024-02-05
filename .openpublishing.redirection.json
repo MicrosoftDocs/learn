@@ -33085,6 +33085,11 @@
       "source_path": "learn-pr/wwl-azure/application-security/11-availability-zone-support-for-app-service-environments.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/application-security/3-azure-ad-application-scenarios.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
     }
   ]
 }
