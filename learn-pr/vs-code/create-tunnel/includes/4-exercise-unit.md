@@ -38,19 +38,20 @@ tar -xf vscode_cli.tar.gz
 ### Create a secure tunnel
 1. Run the following command to download and start the VS Code Server on this machine and then create a tunnel to it. 
 ```bash
-code tunnel
+code tunnel --accept-server-license-terms
 ```
 
-2. Accept the license terms by logging into GitHub and submitting the provided code as shown below (note: your code will be different).
+2. Copy/save the provided link and code as shown below.
+    1. :::image type="content" source="../media/23. TunnelLink.png" alt-text="Image of link to login on client with code":::
 
-:::image type="content" source="../media/1. signIn.png" alt-text="Device Activation":::
+3. On your client, open the previously saved link in a web browser and enter the code that was provided in the terminal (note: your code will be different).
+    1. :::image type="content" source="../media/1. signIn.png" alt-text="Device Activation":::
 
-Then, click the authorize button.
+4. Then, click the authorize button.
+    1. :::image type="content" source="../media/2. auth.png" alt-text="Authentication Page":::
 
-:::image type="content" source="../media/2. auth.png" alt-text="Authentication Page":::
-
-You should see a congratulatory message indicating success.
-:::image type="content" source="../media/3. congrats.png" alt-text="Confirmation":::
+5. You should see a congratulatory message indicating success.
+    1. :::image type="content" source="../media/3. congrats.png" alt-text="Confirmation":::
 
 
 The code CLI outputs a vscode.dev URL specific to this remote machine, such as
@@ -58,7 +59,18 @@ The code CLI outputs a vscode.dev URL specific to this remote machine, such as
 ```https://vscode.dev/tunnel/<machine_name>/<folder_name>``` 
 :::image type="content" source="../media/4. link.png" alt-text="Provided link":::
 
-3. Open this URL on a client of your choice. 
-4. Log into your GitHub
-
 This process authenticates you to the tunneling service, ensuring you have access to the designated remote machines.
+
+6. Open this URL on a client of your choice. 
+7. Click "Allow" to give the 'Remote - Tunnels' extension permissio to sign in.
+
+:::image type="content" source="../media/25. RemoteAsksPermission.png" alt-text="Provided link":::
+8. Click "Yes, I trust the authors" to give access to the folder.
+:::image type="content" source="../media/26. Trust.png" alt-text="Provided link":::
+
+9. Begin coding!
+
+:::image type="content" source="../media/24. CLI_View.png" alt-text="Provided link":::
+
+
+
