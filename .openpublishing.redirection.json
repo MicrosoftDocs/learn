@@ -33610,6 +33610,11 @@
       "source_path": "learn-pr/wwl-azure/storage-security/3-azure-storage-access.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/storage-security/7-blob-data-retention-policies.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
     }
   ]
 }
