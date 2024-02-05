@@ -8,7 +8,7 @@ You can specify the aspect ratio of the cropped image (width / height), ranging 
 
 ## Remove image background
 
-The background removal feature can split the image into the subject in the foreground, and everything else that is considered background. Azure AI Vision achieves this by creating an *alpha matte* of the foreground subject, which is then used to return either the foreground or the background.
+The background removal feature can split the image into the subject in the foreground, and everything else that is considered background. Azure AI Vision achieves this feature by creating an *alpha matte* of the foreground subject, which is then used to return either the foreground or the background.
 
 For example, take this image original of a skateboarder.
 
@@ -18,7 +18,7 @@ With the background removed, we get just the skateboarder on a black background.
 
 ![A skateboarder performing a trick with a black background.](../media/sample-skateboard-no-background.png)
 
-When creating an alpha matte of an image, the result will be the foreground in all white, with a black background.
+When creating an alpha matte of an image, the result is the foreground in all white, with a black background.
 
 ![A sillhouette of a skateboarder performing a trick with a black background.](../media/sample-skateboard-alpha-matte.png)
 
