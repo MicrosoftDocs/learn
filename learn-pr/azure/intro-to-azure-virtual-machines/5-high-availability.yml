@@ -5,10 +5,9 @@ metadata:
   title: Manage the availability of your Azure VMs
   description: Manage the availability of your Azure VMs
   ms.date: 09/13/2022
-  author: cynthn
-  ms.author: cynthn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: ju-shim
+  ms.author: jushiman
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/5-high-availability.md)]

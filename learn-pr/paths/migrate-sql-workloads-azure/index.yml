@@ -1,22 +1,21 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.migrate-sql-workloads-to-azure
 metadata:
-  title: Migrate SQL workloads to Azure
-  description: Migrate SQL workloads to Azure
+  title: Migrate SQL Server workloads to Azure SQL
+  description: Learn how to perform online and offline SQL Server migrations to Azure SQL.
   ms.date: 01/18/2021
-  author: wwlpublish
-  ms.author: chtestao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Migrate SQL workloads to Azure
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: learning-path
+  ms.prod: sql-server
+title: Migrate SQL Server workloads to Azure SQL
 prerequisites: |
   The following prerequisites should be completed:
-  * Understand SQL Server Database file administration
-  * Successfully log in to the Azure portal
-  * Understand the Azure storage options
-  * Understand the Azure compute options
+  * Experience in administering SQL Server databases
+  * Knowledge of SQL Server editions and versions
+  * Basic understanding of Azure storage and compute
 summary: |
-  The objective of this learning path is to educate the learner how they can migrate SQL Server workloads to SQL Services that exist on Azure.
+  Learn how to perform online and offline SQL Server migrations to Azure SQL.
 iconUrl: /training/achievements/migrate-sql-workloads-to-azure.svg
 levels:
 - intermediate
@@ -35,11 +34,12 @@ subjects:
 - database
 - cloud-computing
 modules:
-- learn.wwl.introduction-data-platform-modernization
-- learn-sqlserver.assess-convert-sql-server-databases-using-dma
-- learn-sqlserver.test-optimize-sql-server-databases-using-dea
+- learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql
+- learn.wwl.deploy-iaas-solutions-with-azure-sql
+- learn.wwl.deploy-paas-solutions-with-azure-sql
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines
 - learn-wwl.migrate-sql-workloads-azure-sql-databases
 - learn-wwl.migrate-sql-workloads-azure-managed-instances
+- learn-wwl.perform-post-migration-tasks-azure-sql
 trophy:
   uid: learn.wwl.migrate-sql-workloads-to-azure.trophy

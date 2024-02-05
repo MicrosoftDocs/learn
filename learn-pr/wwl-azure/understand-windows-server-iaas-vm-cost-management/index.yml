@@ -6,8 +6,8 @@ metadata:
   ms.date: 10/15/2020
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: windows-server
 title: Understand Windows Server IaaS Virtual Machine cost management
 summary: You'll be able to use the Pricing calculator to assess likely costs, use Azure Advisor to monitor actual costs for Azure resources, implement Spot VMs and Azure Reservations, and describe benefits of Azure Hybrid licensing.
 abstract: |
@@ -23,7 +23,7 @@ prerequisites: |
   - Core Microsoft compute, storage, networking, and virtualization technologies
   - On-premises resiliency Windows Server-based compute and storage technologies
   - Implementing and managing IaaS services in Azure
-  - Azure Active Directory (Azure AD)
+  - Microsoft Entra ID
   - Security-related technologies (firewalls, encryption, multi-factor authentication)
   - Windows PowerShell scripting
   - Automation and monitoring

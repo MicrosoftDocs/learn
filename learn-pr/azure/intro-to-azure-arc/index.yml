@@ -3,14 +3,14 @@ uid: learn.azure.intro-to-azure-arc
 metadata:
   title: Introduction to Azure Arc
   description: Introduction to Azure Arc
-  ms.date: 04/10/2023
+  ms.date: 12/07/2023
   author: JnHs
   ms.author: jenhayes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: e2e-hybrid
+  ms.service: azure-arc
 title: Introduction to Azure Arc
-summary: In this module, you learn how Azure Arc provides a centralized approach to managing Windows and Linux servers and Kubernetes clusters. You also learn how Azure Arc-enabled data services provides unified management, deployment, and data sovereignty compliance. And, how Azure Arc can integrate with other Azure services.
+summary: In this module, you learn how Azure Arc  simplifies governance and management of hybrid environments by delivering a consistent multicloud and on-premises management platform. You’ll learn how Azure Arc provides a centralized approach to managing Windows and Linux servers and Kubernetes clusters that are hosted outside of Azure. You also learn how Azure Arc-enabled data services provides unified management, deployment, and data sovereignty compliance. Finally, you’ll get an idea of how Azure Arc can integrate with other Azure services.
 abstract: | 
   In this module, you will:
   - Describe Azure Arc-enabled servers.
@@ -19,6 +19,7 @@ abstract: |
   - Describe how Azure Arc can integrate with other Azure services.
 prerequisites: | 
   - Knowledge of personal computer operating systems.
+  - Fundamentals of virtualization.
   - Fundamentals of cloud computing.
 iconUrl: /training/achievements/intro-to-azure-arc.svg
 levels:

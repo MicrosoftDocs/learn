@@ -1,4 +1,3 @@
-
 The following capabilities are available across multiple products that make up the Microsoft Defender for Endpoint platform.
 
 #### Attack surface reduction

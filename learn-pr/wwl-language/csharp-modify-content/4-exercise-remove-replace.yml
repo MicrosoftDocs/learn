@@ -4,11 +4,10 @@ title: Exercise - Use the Remove() and Replace() methods
 metadata:
   title: Exercise - Use the Remove() and Replace() methods
   description: "Exercise - Use the Remove() and Replace() methods"
-  ms.date: 04/25/2023
+  ms.date: 02/05/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/4-exercise-remove-replace.md)]
@@ -19,10 +18,10 @@ quiz:
     choices:
     - content: "`\"Big Dog\"`"
       isCorrect: false
-      explanation: "Incorrect. `\"B\"` is replaced by `\"D\"`."
+      explanation: "Incorrect. `\"B\"` is replaced with `\"D\"`."
     - content: "`\"Big Bog\"`"
       isCorrect: false
-      explanation: "Incorrect. `\"B\"` is replaced by `\"D\"`."
+      explanation: "Incorrect. `\"B\"` is replaced with `\"D\"`."
     - content: "`\"Dig Dog\"`"
       isCorrect: true
-      explanation: "Correct. `\"B\"` is replaced by `\"D\"`."
+      explanation: "Correct. `\"B\"` is replaced with `\"D\"`."

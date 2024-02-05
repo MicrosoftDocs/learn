@@ -8,7 +8,6 @@ metadata:
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-04292021
 summary: With the right deployment practices, we can catch many problems before they get to our production environment and cause an incident. In this module we look at practices that can help us improve our reliability.

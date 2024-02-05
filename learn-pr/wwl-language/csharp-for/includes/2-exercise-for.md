@@ -1,4 +1,3 @@
-
 On the surface, the `for` statement is another iteration statement that allows you to iterate through a code block and thereby change the flow of execution of your code. However, once we examine how each works, we can better identify the nuances of each iteration statement and when to use them.
 
 ## What is the `for` statement?
@@ -107,7 +106,7 @@ This module includes hands-on activities that guide you through the process of b
     The `for` statement includes the following six parts:
 
     1. The `for` keyword.
-    1. A set of parenthesis that defines the conditions of `for` iteration. The parentheses contain three distinct parts, separated by the end of statement operator, a semi-colon.
+    1. A set of parentheses that defines the conditions of `for` iteration. The parentheses contain three distinct parts, separated by the end of statement operator, a semi-colon.
     1. The first part defines and initializes the iterator variable. In this example: `int i = 0`. This section is referred to as the **initializer**.
     1. The second part defines the completion condition. In this example: `i < 10`. In other words, the runtime will continue to iterate over the code in the code block below the `for` statement while `i` is less than `10`. When `i` becomes equal to `10`, the runtime stops executing the `for` statement's code block. The docs refer to this section as the **condition**.
     1. The third part defines the action to take after each iteration. In this case, after each iteration, `i++` will increment the value of `i` by 1. The docs refer to this section as the **iterator**.
@@ -274,7 +273,7 @@ A common usage for the `for` statement is to iterate through an array of element
     Alex
     ```
 
-    > [!NOTE] 
+    > [!NOTE]
     > We could have iterated forward through the array elements by constructing the `for` statement as follows: `for (int i = 0; i < names.Length; i++)`.
 
 ### Examine the limitation of the foreach statement
@@ -329,14 +328,16 @@ Let's try using a `for` statement to modify the contents of an array inside the 
     
     for (int i = 0; i < names.Length; i++)
     {
-        if (names[i] == "David") names[i] = "Sammy";
+        if (names[i] == "David")
+        {
+            names[i] = "Sammy";
+        }
     }
-    
     
     foreach (var name in names)
     {
         Console.WriteLine(name);
-    }        
+    }
     ```
 
 1. Save your code file, and then use Visual Studio Code to run your code.
@@ -361,6 +362,6 @@ Let's try using a `for` statement to modify the contents of an array inside the 
 Here are a few of the takeaways from this unit:
 
 - The `for` iteration statement allows you to iterate through a block of code a specific number of times.
-- The `for` iteration statement allows you to control every aspect of the iteration's mechanics by altering the three conditions inside the parenthesis: the initializer, condition, and iterator.
+- The `for` iteration statement allows you to control every aspect of the iteration's mechanics by altering the three conditions inside the parentheses: the initializer, condition, and iterator.
 - It's common to use the `for` statement when you need to control how you want to iterate through each item in an array.
 - If your code block has only one line of code, you can eliminate the curly braces and white space if you wish.

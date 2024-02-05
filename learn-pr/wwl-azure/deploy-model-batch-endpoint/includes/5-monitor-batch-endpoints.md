@@ -1,5 +1,3 @@
-
-
 When you invoke a batch endpoint, you trigger an Azure Machine Learning **pipeline job**. The job will expect an input parameter pointing to the data set you want to score. 
 
 ## Trigger the batch scoring job

@@ -27,12 +27,12 @@ You should choose whether to include workflow steps that deploy and test your te
 
 ## Authentication and authorization
 
-When you publish template specs to Azure yourself, your Azure Active Directory (Azure AD) user needs to be granted access to the resource group that contains the template spec resource. Likewise, when you publish a Bicep module to a registry, your Azure AD user needs to have permission to write to the Azure Container Registry instance that your organization uses for its Bicep modules.
+When you publish template specs to Azure yourself, your Microsoft Entra user needs to be granted access to the resource group that contains the template spec resource. Likewise, when you publish a Bicep module to a registry, your Microsoft Entra user needs to have permission to write to the Azure Container Registry instance that your organization uses for its Bicep modules.
 
 When you work with an automated deployment workflow, the same principles apply. However, because you aren't the person running the deployment, you need to ensure that your workflow's identity is given the appropriate access to the resource group for publishing the template spec, or to the container registry for publishing modules.
 
 > [!TIP]
-> When you publish a module to a registry, the workload identity running the deployment probably doesn't need a lot of permission. When your registry uses Azure AD authorization, the workload identity needs only the _AcrPush_ permission on the registry.
+> When you publish a module to a registry, the workload identity running the deployment probably doesn't need a lot of permission. When your registry uses Microsoft Entra authorization, the workload identity needs only the _AcrPush_ permission on the registry.
 >
 > Consider using the security _principle of least privilege_. Provide the workflow's identity with access only to the container registry, and not to a resource group or subscription.
 

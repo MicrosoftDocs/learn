@@ -1,14 +1,12 @@
-
-
 You can create a public IP address for your resource in the Azure portal.
 
-:::image type="content" source="../media/create-public-ip-address-f07bd67c.png" alt-text="Screenshot that shows how to create a public IP address in the Azure portal.":::
+:::image type="content" source="../media/create-public-ip-address-f07bd67d.png" alt-text="Screenshot that shows how to create a public IP address in the Azure portal.":::
 
 ### Things to consider when creating a public IP address
 
 To create a public IP address, configure the following settings:
 
-- **IP Version**: Select to create an **IPv4** or **IPv6** address, or **Both** addresses. The **Both** option creates two public IP addresses: an IPv4 address and an IPv6 address.
+- **IP Version**: Select to create an **IPv4** or **IPv6** address, or **Both** addresses.
 
 - **SKU**: Select the SKU for the public IP address, including **Basic** or **Standard**. The value must match the SKU of the Azure load balancer with which the address is used.
 

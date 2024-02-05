@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/05/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Building Open Source Software (OSS) Analytics Solutions with Azure HDInsight
 prerequisites: |
   The following pre-requisite should be completed

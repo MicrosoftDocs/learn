@@ -1,16 +1,14 @@
-
-
 Write Accelerator is a disk capability for M-Series Azure VMs with Premium storage-based Azure managed disks. Its purpose is to improve the I/O latency of writes. Write Accelerator is ideally suited where log file updates are required to persist to disk in a highly performant manner for modern databases.
 
-Write Accelerator should be used for the volumes that contain the transaction log or redo logs of a DBMS. It is not recommended to use Write Accelerator for the data volumes of a DBMS as the feature has been optimized to be used against log disks.
+Write Accelerator should be used for the volumes that contain the transaction log or redo logs of a DBMS. It isn't recommended to use Write Accelerator for the data volumes of a DBMS as the feature has been optimized to be used against log disks.
 
 When using Write Accelerator for Azure VM disks, these restrictions apply:
 
-- **The disk caching must be set to 'None' or 'Read Only'**. All other caching modes are not supported.
+- **The disk caching must be set to 'None' or 'Read Only'**. All other caching modes aren't supported.
 - **Azure Disk Backup does support backup of Write Accelerator-enabled disks. However, during restore the disk will be restored as a normal disk.** Write Accelerater cache can be enabled on the restored disk after mounting it to a VM.
 - **Only smaller I/O sizes (&lt;=512 KiB) are taking the accelerated path**. In workload situations where data is getting bulk loaded or where the transaction log buffers of the different DBMS are filled to a larger degree before getting persisted to the storage, chances are that the I/O written to disk is not taking the accelerated path.
 
-In addition, it is important to note that there are limits on the number of Azure Premium Storage VHDs per VM that can be supported by Write Accelerator. At the time of authoring, the limits are:
+In addition, it's important to note that there are limits on the number of Azure Premium Storage VHDs per VM that can be supported by Write Accelerator. At the time of authoring, the limits are:
 
 :::row:::
   :::column:::

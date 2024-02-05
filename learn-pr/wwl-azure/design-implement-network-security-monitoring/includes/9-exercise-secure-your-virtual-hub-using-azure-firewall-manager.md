@@ -2,6 +2,11 @@
 
 In this lab, you will secure your virtual hub with Azure Firewall Manager. 
 
+## Architecture diagram
+
+:::image type="content" source="../media/9-exercise-secure-your-virtual-hub-using-azure-firewall-manager.png" alt-text="Diagram of virtual network architecture with a secure hub.":::
+
+
 ## Objectives
 
  -  **Task 1**: Create two spoke virtual networks and subnets

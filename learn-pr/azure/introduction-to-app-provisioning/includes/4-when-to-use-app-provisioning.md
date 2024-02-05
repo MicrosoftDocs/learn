@@ -1,7 +1,7 @@
-Applications in the Azure AD gallery support one of two provisioning modes:
+Applications in the Microsoft Entra gallery support one of two provisioning modes:
 
-* **Manual** provisioning means there's no automatic Azure AD provisioning connector for the app yet. User accounts must be created manually. Examples are adding users directly into the app's administrative portal or uploading a spreadsheet with user account detail. Consult the documentation provided by the app, or contact the app developer to determine what mechanisms are available.
-* **Automatic** means that an Azure AD provisioning connector has been developed for this application. Follow the setup tutorial specific to setting up provisioning for the application.
+* **Manual** provisioning means there's no automatic Microsoft Entra provisioning connector for the app yet. User accounts must be created manually. Examples are adding users directly into the app's administrative portal or uploading a spreadsheet with user account detail. Consult the documentation provided by the app, or contact the app developer to determine what mechanisms are available.
+* **Automatic** means that a Microsoft Entra provisioning connector has been developed for this application. Follow the setup tutorial specific to setting up provisioning for the application.
 
 The provisioning mode supported by an application is also visible on the **Provisioning** tab after you've added the application to your enterprise apps.
 
@@ -17,13 +17,15 @@ Some common motivations for using automatic provisioning include:
 - Easily importing a large number of users into a particular SaaS application or system.
 - Having a single set of policies to determine who is provisioned and who can sign in to an app.
 
-Azure AD user provisioning can help address these challenges.
+Microsoft Entra user provisioning can help address these challenges.
 
-## What applications and systems can I use with Azure AD automatic user provisioning?
+<a name='what-applications-and-systems-can-i-use-with-azure-ad-automatic-user-provisioning'></a>
 
-Azure AD features pre-integrated support for many popular SaaS apps and human resources systems, and generic support for apps that implement specific parts of the SCIM 2.0 standard.
+## What applications and systems can I use with Microsoft Entra automatic user provisioning?
 
-* **Pre-integrated applications (gallery SaaS apps)**: You can find all applications for which Azure AD supports a pre-integrated provisioning connector in Tutorials for integrating SaaS applications with Azure Active Directory. The pre-integrated applications listed in the gallery generally use SCIM 2.0-based user management APIs for provisioning.
+Microsoft Entra features pre-integrated support for many popular SaaS apps and human resources systems, and generic support for apps that implement specific parts of the SCIM 2.0 standard.
+
+* **Pre-integrated applications (gallery SaaS apps)**: You can find all applications for which Microsoft Entra ID supports a pre-integrated provisioning connector in Tutorials for integrating SaaS applications with Microsoft Entra ID. The pre-integrated applications listed in the gallery generally use SCIM 2.0-based user management APIs for provisioning.
 
 * **Applications that support SCIM 2.0.**: You can use automatic user provisioning with applications that support SCIM 2.0.
 

@@ -1,16 +1,16 @@
-Your release pipeline now has three stages: _Build_, _Dev_, and _Test_. You and the Tailspin team have one more stage to implement: _Staging_.
+Your release pipeline now has three stages: *Build*, *Dev*, and *Test*. You and the Tailspin team have one more stage to implement: *Staging*.
 
 In this part, you'll:
 
 > [!div class="checklist"]
-> * Create the **staging** environment in Azure Pipelines, and assign yourself as an approver.
-> * Define the _Staging_ stage, which runs only after an approver verifies the results of the _Test_ stage.
+> - Create the **staging** environment in Azure Pipelines, and assign yourself as an approver.
+> - Define the *Staging* stage, which runs only after an approver verifies the results of the *Test* stage.
 
 ## Create the staging environment
 
-Here, you create an environment in Azure Pipelines for _Staging_. For learning purposes, you assign yourself as the approver. In practice, you would assign the users who are required to sign off on changes before those changes move to the next stage. For the Tailspin team, Amita approves changes so that they can be promoted from _Test_ to _Staging_.
+Here, you create an environment in Azure Pipelines for *Staging*. For learning purposes, you assign yourself as the approver. In practice, you would assign the users who are required to approve changes before those changes move to the next stage. For the Tailspin team, Amita approves changes so that they can be promoted from *Test* to *Staging*.
 
-Earlier in this module, you specified `environment` settings for both _Dev_ and _Test_ stages. Here's an example for the _Dev_ stage.
+Earlier in this module, you specified `environment` settings for both *Dev* and *Test* stages. Here's an example for the *Dev* stage.
 
 [!code-yml[](code/2-azure-pipelines.yml?highlight=8)]
 
@@ -37,16 +37,16 @@ To create the **staging** environment:
 
 ## Promote changes to Staging
 
-Here you modify your pipeline configuration to deploy the build to the _Staging_ stage.
+Here you modify your pipeline configuration to deploy the build to the *Staging* stage.
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* as follows:
 
     [!code-yml[](code/6-azure-pipelines.yml?highlight=130-151)]
 
-    This code adds the _Staging_ stage. The stage deploys to the **staging** environment, which includes a release approval.
+    This code adds the *Staging* stage. The stage deploys to the **staging** environment, which includes a release approval.
 
     > [!TIP]
-    > You probably noticed that all three of your deployment stages follow similar steps. You can use _templates_ to define common build tasks one time and reuse them multiple times. You already used this technique in the [Create a build pipeline with Azure Pipelines](/training/modules/create-a-build-pipeline/8-build-multiple-configurations?azure-portal=true) module. For learning purposes, we repeat the steps in each stage.
+    > You probably noticed that all three of your deployment stages follow similar steps. You can use *templates* to define common build tasks one time and reuse them multiple times. You already used this technique in the [Create a build pipeline with Azure Pipelines](/training/modules/create-a-build-pipeline/8-build-multiple-configurations?azure-portal=true) module. For learning purposes, we repeat the steps in each stage.
 
 1. From the integrated terminal, add *azure-pipelines.yml* to the index. Next, commit the change and push it up to GitHub.
 
@@ -61,7 +61,7 @@ Here you modify your pipeline configuration to deploy the build to the _Staging_
 
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
 
-    When the build reaches _Staging_, you see that the pipeline waits for all checks to pass. In this case, there's one check - the manual release approval.
+    When the build reaches *Staging*, you see that the pipeline waits for all checks to pass. In this case, there's one check - the manual release approval.
 
     :::image type="content" source="../media/7-pipeline-review.png" alt-text="A screenshot of Azure Pipelines showing the Staging stage, which requires manual approval.":::
 
@@ -73,11 +73,11 @@ Here you modify your pipeline configuration to deploy the build to the _Staging_
 
     In practice, to verify that they meet your requirements, you would inspect the changes.
 
-1. After the build finishes, open a web browser. Go to the URL that's associated with the App Service instance for your **staging** environment.
+1. After the build finishes, open a web browser. Go to the URL associated with the App Service instance for your **staging** environment.
 
     If you still have the browser tab open, refresh the page. If you don't remember the URL, find it in the Azure portal, on the **App Service details** page.
 
-    You see that the _Space Game_ website is deployed to App Service and is running.
+    You see that the *Space Game* website is deployed to App Service and is running.
 
     :::image type="content" source="../media/6-app-service-staging.png" alt-text="A screenshot of web browser showing the Space Game website in the Staging environment.":::
 
@@ -87,10 +87,10 @@ Here you modify your pipeline configuration to deploy the build to the _Staging_
 
     :::image type="content" source="../media/6-environment-staging.png" alt-text="A screenshot of Azure Pipelines showing the deployment history. The history shows one successful deployment.":::
 
-The Tailspin team gathers to discuss their progress. Amita approves changes in the _Test_ stage while the others watch.
+The Tailspin team gathers to discuss their progress. Amita approves changes in the *Test* stage while the others watch.
 
 **Tim:** To tell you the truth, at first I was a little nervous about automated release pipelines. But I really like this now that I see it working. Each stage can have its own environment, associated tests, and approvers. The pipeline automates many things that we had to do manually. But we still have control where we need it.
 
-**Amita:** I could imagine us doing something similar to promote changes from _Staging_ to _Production_. Speaking of which, when will we add a **production** environment?
+**Amita:** I could imagine us doing something similar to promote changes from *Staging* to *Production*. Speaking of...when do we add a **production** environment?
 
-**Andy:** We'll add that shortly. I think we still need to fill in a few pieces here first.
+**Andy:** Shortly. I think we still need to fill in a few pieces here first before we add that.

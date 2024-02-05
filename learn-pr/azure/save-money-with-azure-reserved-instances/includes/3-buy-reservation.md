@@ -1,4 +1,4 @@
-This unit describes who can buy a reservation, how reservations are scoped, how to make a purchase, and who gets notifications for purchases.
+This unit describes who can buy a reserved instance, how reservations are scoped, how to make a purchase, and who gets notifications for purchases.
 
 ## Who can buy a reservation?
 
@@ -6,9 +6,9 @@ To buy a plan, you must have a subscription owner or reservation purchaser role 
 
 Only the following types of subscriptions support reservation purchases:
 
-- Enterprise Agreement (Azure offers MS-AZR-0017P or MS-AZR-0148P)
-- Pay-As-You-Go subscription (Azure offers MS-AZR-0003P or MS-AZR-0023P)
-- Microsoft Customer Agreement subscription
+- Enterprise offers MS-AZR-0017P or MS-AZR-0148P
+- Pay-As-You-Go offers MS-AZR-0003P or MS-AZR-0023P
+- Microsoft Customer Agreement offer
 
 Cloud solution providers can use the Azure portal or [Partner Center](/partner-center/azure-reservations) to purchase Azure reservations, or they can enable their customers to buy reservations from the Azure portal. 
 
@@ -16,23 +16,23 @@ Enterprise Agreement (EA) admins can limit purchases by disabling the **Add Rese
 
 ## Scope reservations
 
-You have three options to scope a reservation, depending on your needs:
+You can choose from four different options for your reservation, depending on your needs.
 
-- Shared scope - Applies the reservation discount to matching resources in eligible subscriptions that are in the billing context.
+- **Shared scope**: Applies the reservation discount to matching resources in eligible subscriptions that are in the billing context.
   - For Enterprise Agreement customers, the billing context is the enrollment.
   - For Microsoft Customer Agreement customers, the billing scope is the billing profile.
   - For individual subscriptions with pay-as-you-go rates, the billing scope includes all eligible subscriptions created by the account administrator.
-- Single subscription scope - Applies the reservation discount to the matching resources in the selected subscription.
-- Single resource group scope - Applies the reservation discount to the matching resources in the selected resource group only.
-- Management group - Applies the reservation discount to the matching resource in the list of subscriptions that are a part of both the management group and billing scope. To buy a reservation for a management group, you must have at least read permission on the management group and be a reservation owner or reservation purchaser on the billing subscription.
+- **Single subscription scope**: Applies the reservation discount to the matching resources in the selected subscription.
+- **Single resource group scope**: Applies the reservation discount to the matching resources in the selected resource group only.
+- **Management group**: Applies the reservation discount to the matching resource in the list of subscriptions that are a part of both the management group and billing scope. To buy a reservation for a management group, you must have at least read permission on the management group and be a reservation owner or reservation purchaser on the billing subscription.
 
 ## Purchase a reservation
 
-To buy an instance:
+To buy a reserved instance:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 
-1. Select **All services** &gt; **Reservations**.
+1. Navigate to **Reservations**.
 
 1. In the top menu bar, select **Add** to purchase a new reservation. The **Purchase reservations** pane appears.
 
@@ -44,7 +44,7 @@ To buy an instance:
 
 1. Select **Next: Review + buy**.
 
-You can view and manage reservations in the Azure portal at Reservations. Reservation utilization can take up to a day to update after the purchase.
+Reservation utilization can take up to a day to update after the purchase.
 
 You can also make reservation purchases programmatically using any of the following methods:
 
@@ -52,4 +52,4 @@ You can also make reservation purchases programmatically using any of the follow
 - [Azure PowerShell](/powershell/module/azurerm.reservations)
 - [Azure CLI](/cli/azure/reservations/reservation-order)
 
-After you've made a reservation purchase, you can manage it in several ways outlined in the next unit.
+After you make a reservation purchase, you can manage it in several ways outlined in the next unit.

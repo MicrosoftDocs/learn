@@ -1,26 +1,26 @@
-Before we start our quick tour of Docker containers, let's have a look at how our team develops and deploys applications. We'll also briefly describe some of the challenges faced by our teams.
+Before we start our quick tour of Docker containers, let's have a look at how our team develops and deploys applications. We'll also briefly describe some of the challenges our teams face.
 
-The process of developing and managing applications in your company typically includes one or more teams. There's a development team that creates the software, and an operations team responsible for the deployment of these applications. The operations team is also responsible for the management of the application hosting infrastructure.
+The process of developing and managing applications in your company typically includes one or more teams. There's a development team that creates the software and an operations team responsible for deploying these applications. The operations team is also responsible for managing the application-hosting infrastructure.
 
-For example, assume we're developing an order tracking portal that our company's various outlets will use. Several environments host our applications during the app's development and publishing process. First, the development team develops and tests the software in a development environment. From here, the software is then deployed to a quality assurance (QA) environment, followed by pre-production, and a final production environment.
+For example, assume we're developing an order-tracking portal that our company's various outlets will use. Several environments host our applications during the app's development and publishing process. First, the development team develops and tests the software in a development environment. From here, the software is then deployed to a quality assurance (QA) environment, followed by pre-production, and a final production environment.
 
-There are several challenges that we'll need to consider in the above scenario:
+There are several challenges that we'll need to consider in the preceding scenario:
 
-- **Management of hosting environments**
+- **Managing hosting environments**
 
     The different environments all require both software and hardware management. We have to ensure that both the installed software and configured hardware in each is the same. We also need to configure aspects such as network access, data storage, and security per environment in a consistent and easily reproducible manner.
 
 - **Continuity in software delivery**
 
-    The deployment of applications to our environments must happen consistently. Each deployment package must include all system packages, binaries, libraries, configuration files, and other items that will ensure a fully functional application. We also need to make sure that all of these dependencies match software versions and architecture.
+    Deploying applications to our environments must happen consistently. Each deployment package must include all system packages, binaries, libraries, configuration files, and other items that ensure a fully functional application. We also need to make sure that all of these dependencies match software versions and architecture.
 
-- **Efficient use of hardware**
+- **Efficient hardware use**
 
     Each deployed application must execute in such a way that it's isolated from other applications running on the same hardware. We aim to run more than one application per server to make the best use of resources without compromising each other.
 
 - **Application portability**
 
-    There are several reasons why application portability is essential. A hosting environment might fail, or we need to scale out our application. In both instances, the potential result is a redeployment of our software to a new environment. We want to move software from one host to another even if the underlying infrastructure is different. Such a move needs to happen as fast as possible to reduce downtime for our customers.
+    There are several reasons why application portability is essential. A hosting environment might fail, or we might need to scale out our application. In both instances, the potential result is redeploying our software to a new environment. We want to move software from one host to another even if the underlying infrastructure is different. Such a move needs to happen as fast as possible to reduce downtime for our customers.
 
 Before we look at the Docker features that help solve these challenges, we'll discuss a few concepts and look at a brief overview of the Docker architecture.
 
@@ -32,7 +32,7 @@ The container image becomes the unit we use to distribute our applications.
 
 ## What is software containerization?
 
-Software containerization is an OS virtualization method that is used to deploy and run containers without using a virtual machine (VM). Containers can run on physical hardware, in the cloud, VMs, and across multiple OSs.
+Software containerization is an OS-virtualization method used to deploy and run containers without using a virtual machine (VM). Containers can run on physical hardware, in the cloud, on VMs, and across multiple operating systems.
 
 ## What is Docker?
 
@@ -56,15 +56,15 @@ The Docker Engine consists of several components configured as a client-server i
    Some arrows show communication between the Docker Server, running Containers, and stored container images. These arrows indicate how the Docker server loads stored container images and manage running containers.
 :::image-end:::
 
-**The Docker client**
+#### The Docker client
 
-There are two alternatives for Docker client: A command-line application named `docker` or a Graphical User Interface (GUI) based application called Docker Desktop. Both the CLI and Docker Desktop interact with a Docker server. The `docker` commands from the CLI or Docker Desktop use the Docker REST API to send instructions to either a local or remote server and functions as the primary interface we use to manage our containers.
+There are two alternatives for Docker client: A command-line application named `docker` or a Graphical User Interface (GUI) based application called Docker Desktop. Both the CLI and Docker Desktop interact with a Docker server. The `docker` commands from the CLI or Docker Desktop use the Docker REST API to send instructions to either a local or remote server and function as the primary interface we use to manage our containers.
 
-**The Docker server**
+#### The Docker server
 
 The Docker server is a daemon named `dockerd`. The `dockerd` daemon responds to requests from the client via the Docker REST API and can interact with other daemons. The Docker server is also responsible for tracking the lifecycle of our containers.
 
-**Docker objects**
+#### Docker objects
 
 There are several objects that you'll create and configure to support your container deployments. These include networks, storage volumes, plugins, and other service objects. We won't cover all of these objects here, but it's good to keep in mind that these objects are items that we can create and deploy as needed.
 

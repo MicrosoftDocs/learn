@@ -1,12 +1,12 @@
 In the previous unit, you learned how you can use Maven archetypes to create Java projects, and how you can set up your development projects using the `azure-functions-archetype` to create Azure Function projects.
 
-In order to begin the process of simplifying your company's event reporting, you want to create a Java application to help you understand the steps you'll need to take to move your event reporting logic into Azure Functions.
+In order to begin the process of simplifying your company's event reporting, you want to create a Java application to help you understand the steps you need to take to move your event reporting logic into Azure Functions.
 
-In this exercise, you'll create an Azure Function using the Maven archetype using the Azure Cloud Shell, and you'll verify that all of the project files are correctly configured.
+In this exercise, you create an Azure Function using the Maven archetype using the Azure Cloud Shell, and you verify that all of the project files are correctly configured.
 
 ## Create an Azure Function with Maven
 
-You're now going to create an Azure Function using Maven. This exercise will use the Azure Cloud Shell that is available from your sandbox.
+Now, you're going to create an Azure Function using Maven. This exercise uses the Azure Cloud Shell that is available from your sandbox.
 
 1. Activate the sandbox, and wait for the Azure Cloud Shell terminal to open.
 
@@ -18,7 +18,7 @@ You're now going to create an Azure Function using Maven. This exercise will use
       -DarchetypeArtifactId="azure-functions-archetype"
     ```
 
-    The following screenshot illustrates what that command will look like in the Cloud Shell.
+    The following screenshot illustrates what that command looks like in the Cloud Shell.
 
     ![Image showing the Maven command to create an Azure Function archetype.](../media/2-cloud-shell-mvn-archetype-cmd.png)
 
@@ -33,7 +33,7 @@ You're now going to create an Azure Function using Maven. This exercise will use
 
 1. Maven prompts you to confirm the properties for the configuration of the Azure Function. Enter **Y** to confirm and press return.
 
-1. When Maven has finished building your project, you'll see a summary of the parameters you specified in the confirmation message. 
+1. When Maven finishes building your project, you see a summary of the parameters you specified in the confirmation message.
 
     ```output
     [INFO] ----------------------------------------------------------------------------
@@ -44,20 +44,24 @@ You're now going to create an Azure Function using Maven. This exercise will use
     [INFO] Parameter: version, Value: 1.0-SNAPSHOT
     [INFO] Parameter: package, Value: com.contoso.functions
     [INFO] Parameter: packageInPathFormat, Value: com/contoso/functions
-    [INFO] Parameter: package, Value: com.contoso.functions
-    [INFO] Parameter: version, Value: 1.0-SNAPSHOT
+    [INFO] Parameter: resourceGroup, Value: java-functions-group
+    [INFO] Parameter: appName, Value: $(artifactId)-$(timestamp)
+    [INFO] Parameter: javaVersion, Value: 8
     [INFO] Parameter: groupId, Value: com.contoso.functions
-    [INFO] Parameter: docker, Value: false
     [INFO] Parameter: artifactId, Value: event-reporting
+    [INFO] Parameter: appServicePlanName, Value: java-functions-app-service-plan
+    [INFO] Parameter: trigger, Value: HttpTrigger
+    [INFO] Parameter: appRegion, Value: westus
+    [INFO] Parameter: version, Value: 1.0-SNAPSHOT
+    [INFO] Parameter: docker, Value: false
     [INFO] Executing META-INF/archetype-post-generate.groovy post-generation script
     [INFO] Project created from Archetype in dir: /home/user/event-reporting
     [INFO] ------------------------------------------------------------------------
     [INFO] BUILD SUCCESS
     [INFO] ------------------------------------------------------------------------
-    [INFO] Total time: 03:49 min
-    [INFO] Finished at: 2020-01-11T01:10:10+00:00
-    [INFO] Final Memory: 23M/142M
+    [INFO] Total time:  02:28 min
+    [INFO] Finished at: 2024-01-25T19:20:10Z
     [INFO] ------------------------------------------------------------------------
     ```
 
-Congratulations! You've created your Azure Function.
+Congratulations! Your Azure Function is created.

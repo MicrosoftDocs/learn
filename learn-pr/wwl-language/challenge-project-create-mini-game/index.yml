@@ -3,11 +3,11 @@ uid: learn.wwl.challenge-project-create-mini-game
 metadata:
   title: Challenge project - Create a mini-game
   description: "Use methods with parameters and return values to develop the features of a console mini-game."
-  ms.date: 03/22/2023
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Challenge project - Create a mini-game
 summary: Demonstrate your ability to create and use different methods to develop features for a console mini-game.
 abstract: |
@@ -25,10 +25,11 @@ levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
 - k-12-educator
 - student
 products:
-- dotnet-framework
+- dotnet
 - vs-code
 units:
 - learn.wwl.challenge-project-create-mini-game.introduction

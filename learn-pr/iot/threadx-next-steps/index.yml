@@ -6,10 +6,9 @@ metadata:
   ms.date: 03/29/2022
   author: timlt
   ms.author: timlt
-  ms.reviewer: liydu
   manager: lizross
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: rtos
 title: Azure RTOS ThreadX next steps
 summary: Learn the next steps for Azure RTOS ThreadX.
 abstract:  | 
@@ -22,6 +21,7 @@ prerequisites: |
   - Working knowledge of C or C++
   - Previous modules in this [learning path](/training/paths/azure-rtos-threadx)
 iconUrl: /training/achievements/iot/threadx-next-steps.svg
+hidden: true
 levels:
 - beginner
 roles:

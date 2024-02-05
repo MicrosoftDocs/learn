@@ -1,13 +1,13 @@
 ## Grant admin consent in app registrations
 
-For applications your organization has developed or for those that are registered directly in your Azure AD tenant, you can grant tenant-wide admin consent from App registrations in the Azure portal.
+For applications your organization has developed or for those that are registered directly in your Microsoft Entra tenant, you can grant tenant-wide admin consent from App registrations in the Azure portal.
 
 > [!WARNING]
 > Granting tenant-wide admin consent to an application will grant the app and the app's publisher access to your organization's data. Carefully review the permissions the application is requesting before granting consent.
 
 Granting tenant-wide admin consent requires you to sign in as a user that is authorized to consent on behalf of the organization. This includes Global Administrator and Privileged Role Administrator. A user can also be authorized to grant tenant-wide consent if they're assigned a custom directory role that includes the permission to grant permissions to applications.
 
-1.  In a previous exercise, you created an app named Demo app. If necessary, in Microsoft Azure, browse to **Azure Active Directory** then **App registrations** then Demo app.\*\*
+1.  In a previous exercise, you created an app named Demo app. If necessary, in Microsoft Azure, browse to **Microsoft Entra ID** then **App registrations** then Demo app.\*\*
 2.  On the **Demo app** screen, locate and copy and save each **Application (client) ID** and **Directory (tenant) ID** values so that you can use them later.
     
     :::image type="content" source="../media/demo-app-directory-id-6f6b2621.png" alt-text="Screenshot of the Demo app screen with the directory ID highlighted for usage in your registration.":::
@@ -26,7 +26,7 @@ Granting tenant-wide admin consent requires you to sign in as a user that is aut
 
 You can grant tenant-wide admin consent through Enterprise applications if the application has already been provisioned in your tenant.
 
-1.  In Microsoft Azure, browse to **Azure Active Directory**, then **Enterprise applications**, and then **Demo app**.
+1.  In Microsoft Azure, browse to **Microsoft Entra ID**, then **Enterprise applications**, and then **Demo app**.
 2.  On the **Demo app** screen, in the left navigation, under **Security,** select **Permissions.**
 3.  Under **Permissions**, select **Grant admin consent.**
     
@@ -103,9 +103,13 @@ redirect_uri=http://localhost/myapp/permissions
 
 scope=
 
-     https://graph.microsoft.com/calendars.read
+    https://graph.microsoft.com/calendars.read
 
-     https://graph.microsoft.com/mail.send
+    https://graph.microsoft.com/mail.send
+
+
+
+
 
 ```
 
@@ -117,4 +121,4 @@ scope=
 | state         | Recommended   | A value included in the request that will also be returned in the token response. It can be a string of any content you want. Use the state to encode information about the user's state in the app before the authentication request occurred, such as the page or view they were on.                                                                                                                 |
 | scope         | Required      | Defines the set of permissions being requested by the application. This can be either static (using /.default) or dynamic scopes. This can include the OIDC scopes (openid, profile, email).                                                                                                                                                                                                           |
 
-At this point, Azure AD requires a tenant administrator to sign in to complete the request. The administrator is asked to approve all the permissions that you've requested in the scope parameter.
+At this point, Microsoft Entra ID requires a tenant administrator to sign in to complete the request. The administrator is asked to approve all the permissions that you've requested in the scope parameter.

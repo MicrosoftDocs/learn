@@ -4,11 +4,10 @@ uid: learn.hardware-devices
 metadata:
   title: Accessibility best practices for gaming hardware
   description: Learn how to create more accessible standard gaming hardware products, such as game consoles, controllers, and headsets. Discover ways to design hardware packaging that features accessible components to improve the unboxing experience of more customers. 
-  ms.date: 11/14/2021
+  ms.date: 04/30/2023
   author: kaitlynjones
   ms.author: kaitlynjones
   ms.topic: interactive-tutorial
-  ms.prod: learning-gaming-accessibility
   showCreativeCommonsFooter: true
 title: Accessibility best practices for gaming hardware
 summary: This module introduces accessibility best practices considerations for developing gaming hardware, such as consoles, headsets, controllers, and other types of input devices. Accessible packaging components for these products are also presented.

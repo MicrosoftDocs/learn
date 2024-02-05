@@ -12,7 +12,7 @@ In the following exercise, you'll follow the procedure that your R&D team used t
    az login
    ```
 
-1. Create a resource group. You'll deploy the HB120_v2 VM into this resource group.
+1. Create a resource group. You'll deploy the HB120_v2 VM into this resource group. Replace *RESOURCE-GROUP_NAME* with a unique name of your choosing, and replace *LOCATION* with a location near you (for example, eastus).
 
    ```bash
    az group create \
@@ -20,7 +20,7 @@ In the following exercise, you'll follow the procedure that your R&D team used t
       --location <LOCATION>
    ```
 
-1. Create an HB120_v2 VM that uses the CentOS-HPC 7.8 image from Azure Marketplace.
+1. Create an HB120_v2 VM that uses the CentOS-HPC 7.8 image from Azure Marketplace. Replace *RESOURCE-GROUP_NAME* with the resource group you created in the last step, and replace *VM-NAME* with a unique name of your choosing.
 
    ```bash
    az vm create \

@@ -1,6 +1,6 @@
-The Learn modules for the Microsoft Cloud Adoption Framework for Azure will teach you how to apply the various guidance, tools, best practices, and reference architectures found within each methodology of the framework. This module can help you accelerate and unblock adoption in parallel to your learning paths.
+The Learn modules for the Microsoft Cloud Adoption Framework for Azure teach you how to apply the various guidance, tools, best practices, and reference architectures found within each methodology of the framework. This module can help you accelerate and unblock adoption in parallel to your learning paths.
 
-In this module, you'll review the narrative that spans the majority of the Learn modules in this learning path. You'll also see how a range of getting-started resources in the Cloud Adoption Framework can accelerate results across your cloud-adoption efforts.
+In this module, you review the narrative that spans most of the Learn modules in this learning path. You also see how a range of getting-started resources in the Cloud Adoption Framework can accelerate results across your cloud-adoption efforts.
 
 ## Learning objectives
 

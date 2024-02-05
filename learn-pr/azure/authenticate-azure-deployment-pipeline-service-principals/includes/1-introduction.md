@@ -15,7 +15,7 @@ In this module, you'll create a service principal with a key, ready for your pip
 
 ## What is the main goal?
 
-By the end of this module, you'll have an understanding of service principals and how they relate to other Azure and Azure Active Directory (Azure AD) security concepts. You'll be able to create a service principal and manage its keys. You'll also be able to determine the best authorization policy to use for your pipeline's service principal, and configure the appropriate role assignments in Azure.
+By the end of this module, you'll have an understanding of service principals and how they relate to other Azure and Microsoft Entra security concepts. You'll be able to create a service principal and manage its keys. You'll also be able to determine the best authorization policy to use for your pipeline's service principal, and configure the appropriate role assignments in Azure.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ You should be familiar with:
 
 To follow along with the exercises in the module, you'll need:
 
-- An Azure account, with the ability to create resource groups and to create Azure AD applications and service principals.
+- An Azure account, with the ability to create resource groups and to create Microsoft Entra applications and service principals.
   > [!TIP]
   > If you can't meet these requirements with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
 - [Visual Studio Code](https://code.visualstudio.com), installed locally.  

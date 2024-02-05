@@ -1,4 +1,4 @@
-You now understand the various scopes that resources can be deployed at. In this unit, you learn how to start writing Bicep files to deploy at these scopes.
+You now understand the various scopes at which you can deploy resources. In this unit, you'll learn how to start writing Bicep files to deploy at these scopes.
 
 ## Specify the target scope for a Bicep file
 
@@ -27,7 +27,7 @@ In this example, notice that the Bicep file has a `targetScope` of `subscription
 
 ::: zone pivot="cli"
 
-When you initiate a deployment, you need to tell Azure which scope you want to deploy it at. This means that you use a different Azure CLI command for each deployment scope, as shown here:
+When you initiate a deployment, you need to tell Azure at which scope you want to deploy it. This means that you use a different Azure CLI command for each deployment scope, as shown here:
 
 | To deploy at this scope: | Run this Azure CLI command: |
 |-|-|
@@ -41,7 +41,7 @@ When you initiate a deployment, you need to tell Azure which scope you want to d
 
 ::: zone pivot="powershell"
 
-When you initiate a deployment, you need to tell Azure which scope you want to deploy it at. This means that you use a different PowerShell cmdlet for each deployment scope, as shown here:
+When you initiate a deployment, you need to tell Azure at which scope you want to deploy it. This means that you use a different PowerShell cmdlet for each deployment scope, as shown here:
 
 | To deploy at this scope: | Use this PowerShell cmdlet: |
 |-|-|
@@ -54,8 +54,8 @@ When you initiate a deployment, you need to tell Azure which scope you want to d
 
 Azure stores metadata about each deployment. Unlike deployments at the resource group scope, there is some information you need to provide when you deploy at other scopes so that Azure can store the metadata correctly:
 
-- **Location**: The deployment metadata has to be stored in a location that you specify. You don't specify a location for resource group scope deployments, because resource groups are created in a location already and that location is used for its deployment metadata. But when you create a deployment at the subscription, management group, or tenant scope, you need to specify the Azure region that the deployment metadata will be stored in. This doesn't mean that the resources will be created in that location though.
+- **Location**: The deployment metadata has to be stored in a location that you specify. You don't specify a location for resource group scope deployments, because resource groups are created in a location already and that location is used for its deployment metadata. However, when you create a deployment at the subscription, management group, or tenant scope, you need to specify the Azure region that the deployment metadata will be stored in. This doesn't mean that the resources will be created in that location, though.
 
-- **Name**: All deployments in Azure have a name. You can ask Azure for information about a deployment by using its name. When you use the Azure CLI or Azure PowerShell to submit a deployment, you don't need to specify the name, but if you don't, the filename of the template file will be used as the deployment name.
+- **Name**: All deployments in Azure have a name. You can ask Azure for information about a deployment by using its name. When you use the Azure CLI or Azure PowerShell to submit a deployment, you don't need to specify the name; but if you don't, the template file's filename is used as the deployment name.
 
 The combination of the deployment's scope, location, and name must be unique. For example, if you create a subscription deployment named `my-deployment` and use the East US location to store its metadata, you can't then create another deployment to the same subscription also named `my-deployment`, but put it in West Europe. However, you can create another deployment named `my-deployment` in East US, and it will overwrite the older deployment.

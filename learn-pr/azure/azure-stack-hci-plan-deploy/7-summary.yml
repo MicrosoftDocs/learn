@@ -6,8 +6,8 @@ metadata:
   ms.date: 03/24/2022
   author: JasonGerend
   ms.author: jgerend
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: femila
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Summary
 durationInMinutes: 2

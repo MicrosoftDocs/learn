@@ -6,8 +6,8 @@ metadata:
   ms.date: 09/25/2020
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: windows-server
 title: Implement Windows Server IaaS VM network security
 summary: In this module, you will focus on how to improve the network security for Windows Server infrastructure as a service (IaaS) virtual machines (VMs) and how to diagnose network security issues with those VMs.
 abstract: |
@@ -25,7 +25,7 @@ prerequisites: |
   - Core Microsoft compute, storage, networking, and virtualization technologies
   - On-premises resiliency Windows Server–based compute and storage technologies
   - Implementing and managing IaaS services in Azure
-  - Azure Active Directory (Azure AD)
+  - Microsoft Entra ID
   - Security-related technologies (firewalls, encryption, multi-factor authentication)
   - Windows PowerShell scripting
   - Automation and monitoring

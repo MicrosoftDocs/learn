@@ -7,9 +7,10 @@ metadata:
   ms.date: 06/30/2020
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-python
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
 durationInMinutes: 30
 content: |
   [!include[](includes/3-import-dataset.md)]

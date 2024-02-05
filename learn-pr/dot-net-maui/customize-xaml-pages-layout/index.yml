@@ -3,11 +3,13 @@ uid: learn.dotnet-maui.customize-xaml-pages-layout
 metadata:
   title: Customize layout in .NET MAUI XAML pages
   description: Create consistent user interfaces across different devices by using StackLayout and Grid.
-  ms.date: 04/29/2022
+  ms.date: 11/07/2023
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: module
+  ms.service: dotnet-mobile
+  ms.subservice: dotnet-maui
 title: Customize layout in .NET MAUI XAML pages
 summary: Create consistent user interfaces across different devices by using StackLayout and Grid.
 abstract: |
@@ -16,7 +18,8 @@ abstract: |
   - Display views in a vertical or horizontal list using StackLayout
   - Display views in rows and columns using Grid
 prerequisites: |
-  - Visual Studio 2022 with the .NET MAUI workload installed
+  - [Visual Studio 2022](https://www.visualstudio.com?azure-portal=true) with the .NET MAUI workload
+  - Optional: Local installations [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true), the [.NET SDK](https://dotnet.microsoft.com/download?azure-portal=true) with .NET MAUI workload, and the [.NET MAUI Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-maui?azure-portal=true)
   - Familiarity with C# and .NET
 ratingEnabled: true
 iconUrl: /training/achievements/customize-xaml-pages-layout.svg

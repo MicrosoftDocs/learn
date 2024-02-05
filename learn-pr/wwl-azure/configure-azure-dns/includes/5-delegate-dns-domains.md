@@ -10,7 +10,7 @@ The delegation process for your domain involves several steps:
 
 The easiest way to find the DNS name servers assigned to your DNS zone is through the Azure portal.
 
-Let's take another look at our sample Azure Administrator Incorporated Azure AD domain. In a previous unit, we defined a custom domain name for the sample instance as `azureadmininc.org`. In the Azure portal, we can examine the custom domain and find that Azure assigned four DNS name servers to the DNS zone for the domain: `ns1-02.azure-dns.com.`, `ns2-02.azure-dns.net.`, `ns3-02.azure-dns.org.`, and `ns4-02.azure-dns.info.`.
+Let's take another look at our sample Azure Administrator Incorporated Microsoft Entra domain. In a previous unit, we defined a custom domain name for the sample instance as `azureadmininc.org`. In the Azure portal, we can examine the custom domain and find that Azure assigned four DNS name servers to the DNS zone for the domain: `ns1-02.azure-dns.com.`, `ns2-02.azure-dns.net.`, `ns3-02.azure-dns.org.`, and `ns4-02.azure-dns.info.`.
 
 :::image type="content" source="../media/name-servers-cf7cec6a.png" alt-text="Screenshot of a DNS zone with four assigned DNS name servers in the Azure portal.":::
 
@@ -40,7 +40,7 @@ There are several important considerations to keep in mind when working with `NS
 
 You can delegate a subdomain for your domain in Azure DNS by setting up a separate child DNS zone.
 
-Let's consider our sample Azure Administrator Incorporated Azure AD domain. We created a custom domain name for the instance as `azureadmininc.org`. We can configure a separate child DNS zone for the custom domain to support partners of the organization, such as `partners.azureadmininc.com`.
+Let's consider our sample Azure Administrator Incorporated Microsoft Entra domain. We created a custom domain name for the instance as `azureadmininc.org`. We can configure a separate child DNS zone for the custom domain to support partners of the organization, such as `partners.azureadmininc.org`.
 
 The configuration steps for delegating a child DNS zone are similar to the typical delegation process. The key difference is you don't work with your registrar to delegate a subdomain. You delegate the child DNS zone in the Azure portal.
 

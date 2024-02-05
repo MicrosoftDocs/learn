@@ -4,13 +4,12 @@ title: Apply role-based access control
 metadata:
   title: Apply role-based access control
   description: "Apply role-based access control"
-  ms.date: 01/16/2023
+  ms.date: 10/23/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/6-apply-authentication.md)]

@@ -5,7 +5,7 @@ Azure Synapse Analytics is an integrated analytics service that brings together 
 Azure Synapse SQL is a distributed query system in Azure Synapse Analytics that offers two kinds of runtime environments:
 
 - **Serverless SQL pool**: on-demand SQL query processing, primarily used to work with data in a data lake.
-- **Dedicated SQL pool**: Enterprise-scale relational database instances used to host data warehouses in which data is stored relational tables.
+- **Dedicated SQL pool**: Enterprise-scale relational database instances used to host data warehouses in which data is stored in relational tables.
 
 In this module, we'll focus on serverless SQL pool, which provides a pay-per-query endpoint to query the data in your data lake. The benefits of using serverless SQL pool include:
 
@@ -23,7 +23,7 @@ Serverless SQL pool is tailored for querying the data residing in the data lake,
 Synapse SQL serverless resource model is great for unplanned or "bursty" workloads that can be processed using the always-on serverless SQL endpoint in your Azure Synapse Analytics workspace. Using the serverless pool helps when you need to know exact cost for each query executed to monitor and attribute costs.
 
 > [!NOTE]
-> Serverless SQL pool is an analytics system and is not recommended OLTP workloads such as databases used by applications to store transactional data. Workloads that require millisecond response times and are looking to pinpoint a single row in a data set are not good fit for serverless SQL pool.
+> Serverless SQL pool is an analytics system and is not recommended for OLTP workloads such as databases used by applications to store transactional data. Workloads that require millisecond response times and are looking to pinpoint a single row in a data set are not good fit for serverless SQL pool.
 
 Common use cases for serverless SQL pools include:
 

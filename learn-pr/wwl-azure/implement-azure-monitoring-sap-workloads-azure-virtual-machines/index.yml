@@ -6,8 +6,9 @@ metadata:
   ms.date: 03/09/2021
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-monitor
+  ms.subservice: virtual-machines
 title: Implement Azure Monitoring for SAP workloads on Azure VMs
 summary: In this module, you will learn to select and configure monitoring for SAP on Azure, as well as navigate the Log Analytics interface in Azure Monitor.
 abstract: |

@@ -24,14 +24,14 @@ New-AzWvdRegistrationInfo -ResourceGroupName <resourcegroupname> -HostPoolName <
 
 ```
 
-After that, run this cmdlet to add Azure Active Directory users to the default desktop app group for the host pool.
+After that, run this cmdlet to add Microsoft Entra users to the default desktop app group for the host pool.
 
 ```PowerShell
 New-AzRoleAssignment -SignInName <userupn> -RoleDefinitionName "Desktop Virtualization User" -ResourceName <hostpoolname+"-DAG"> -ResourceGroupName <resourcegroupname> -ResourceType 'Microsoft.DesktopVirtualization/applicationGroups'
 
 ```
 
-Run this next cmdlet to add Azure Active Directory user groups to the default desktop app group for the host pool:
+Run this next cmdlet to add Microsoft Entra user groups to the default desktop app group for the host pool:
 
 ```PowerShell
 New-AzRoleAssignment -ObjectId <usergroupobjectid> -RoleDefinitionName "Desktop Virtualization User" -ResourceName <hostpoolname+"-DAG"> -ResourceGroupName <resourcegroupname> -ResourceType 'Microsoft.DesktopVirtualization/applicationGroups'
@@ -60,7 +60,7 @@ You can create a virtual machine in multiple ways:
 
 Do the following to prepare your virtual machines before you can install the Azure Virtual Desktop agents and register the virtual machines to your Azure Virtual Desktop host pool:
 
- -  Domain join the virtual machine. This allows incoming Azure Virtual Desktop users to be mapped from their Azure Active Directory account to their Active Directory account and be successfully allowed access to the virtual machine.
+ -  Domain join the virtual machine. This allows incoming Azure Virtual Desktop users to be mapped from their Microsoft Entra account to their Active Directory account and be successfully allowed access to the virtual machine.
  -  Install the Remote Desktop Session Host (RDSH) role if the virtual machine is running a Windows Server OS. The RDSH role allows the Azure Virtual Desktop agents to install properly.
 
 To successfully domain-join, do the following things on each virtual machine:

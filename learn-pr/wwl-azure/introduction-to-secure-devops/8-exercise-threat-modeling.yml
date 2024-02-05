@@ -4,11 +4,10 @@ title: Exercise threat modeling
 metadata:
   title: Exercise threat modeling
   description: "Exercise threat modeling"
-  ms.date: 02/10/2023
+  ms.date: 06/13/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   zone_pivot_groups: azure-interface
 durationInMinutes: 1
 content: |

@@ -1,4 +1,4 @@
-Your company is looking at ways to deploy your cloud-based video rendering service. You've chosen Azure Kubernetes Service (AKS) as your cloud-native development platform. With the cluster configured, you're ready to deploy one of the components in your video rendering application. You decide to deploy a static version of your company's website to explore the Kubernetes deployment process.
+Your company is looking at ways to deploy your cloud-based video rendering service. You chose Azure Kubernetes Service (AKS) as your cloud-native development platform. With the cluster configured, you're ready to deploy one of the components in your video rendering application. You decide to deploy a static version of your company's website to explore the Kubernetes deployment process.
 
 Before we discuss the Kubernetes way of deployment, let's review some of the steps you'd take to deploy a similar application to a non-Kubernetes environment.
 
@@ -41,7 +41,7 @@ For example, if you wanted to search all workloads related to the `contoso-websi
 
 A Kubernetes deployment is an evolution of pods. A deployment wraps the pods into an intelligent object that allows them to _scale out_. You can easily duplicate and scale your application to support more load without the need to configure complex networking rules.
 
-Deployments allow users to update applications just by changing the image tag without downtime. When you update a deployment, instead of deleting all apps and creating new ones, the deployment turns off the online apps one by one and replaces them with the newest version. This aspect means any deployment can update the pods inside it with no visible effect in availability.
+Deployments allow users to update applications just by changing the image tag without downtime. When you update a deployment, instead of deleting all apps, the deployment turns off the online apps one by one. Then, it replaces them with the newest version. This aspect means any deployment can update the pods inside it with no visible effect in availability.
 
 ## Kubernetes manifest files
 
@@ -49,7 +49,7 @@ A Kubernetes manifest file allows you to describe your workloads in the YAML for
 
 Imagine you have to deploy a workload by hand. You need to think about and manage several aspects. You'd need to create a container, select a specific node, wrap it in a pod, run the pod, monitor execution, and so on.
 
-Manifest files contain all the information that's needed to create and manage the described workload.
+Manifest files contain all the information that you need to create and manage the described workload.
 
 ## What is a Kubernetes label?
 

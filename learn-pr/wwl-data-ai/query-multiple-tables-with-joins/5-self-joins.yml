@@ -6,9 +6,8 @@ metadata:
   description: "Use self joins"
   ms.date: 12/03/2021
   author: wwlpublish
-  ms.author: kadelane
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: rcaper
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

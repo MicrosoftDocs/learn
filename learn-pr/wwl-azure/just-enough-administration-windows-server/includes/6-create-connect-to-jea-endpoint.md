@@ -17,12 +17,13 @@ Enter-PSSession -<ComputerName> localhost -ConfigurationName DNSOps
 
 ```
 
-After you are connected, your command prompt will change to `[locahost]: PS`>. If you're not sure what commands are available, you can use the **Get-Command** cmdlet to review which ones are available.
+After you're connected, your command prompt will change to `[localhost]: PS`>. If you're not sure what commands are available, you can use the **Get-Command** cmdlet to review which ones are available.
 
-One limitation of interactive JEA sessions is that they operate in **NoLanguage** mode. This means you cant use variables to store data. For example, the following commands to start a virtual machine will not work because of the user of variables:
+One limitation of interactive JEA sessions is that they operate in **NoLanguage** mode. This means you cant use variables to store data. For example, the following commands to start a virtual machine won't work because of the user of variables:
 
 ```powershell
-$myvm = Get-VM -Name MyVM Start-VM -vm $myvm
+$myvm = Get-VM -Name MyVM
+Start-VM -vm $myvm
 
 ```
 
@@ -40,7 +41,8 @@ Implicit remoting lets you import proxy versions of cmdlets from a remote machin
 You can even prefix PowerShell commands with a unique string so you can differentiate between the remote commands and local ones. For example, you could use the following commands to import the DNSOps JEA session and prefix the commands with DNSOps:
 
 ```powershell
-$DNSOpssession = New-PSSession -ComputerName 'MyServer' -ConfigurationName 'DNSOps' Import-PSSession -Session $DNSOpssession -Prefix 'DNSOps' Get-DNSOpsCommand
+$DNSOpssession = New-PSSession -ComputerName 'MyServer' -ConfigurationName 'DNSOps'
+Import-PSSession -Session $DNSOpssession -Prefix 'DNSOps' Get-DNSOpsCommand
 
 ```
 

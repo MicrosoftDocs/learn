@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.load-balancing-non-https-traffic-azure.exercise-create-traffic-manager-profile-using-azure-portal
-title: 'Exercise: create a Traffic Manager profile using the Azure portal'
+title: 'Exercise: Create a Traffic Manager profile using the Azure portal'
 metadata:
-  title: 'Exercise: create a Traffic Manager profile using the Azure portal'
-  description: "Exercise: create a Traffic Manager profile using the Azure portal"
-  ms.date: 09/28/2022
+  title: 'Exercise: Create a Traffic Manager profile using the Azure portal'
+  description: "Exercise: Create a Traffic Manager profile using the Azure portal"
+  ms.date: 12/05/2023
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - references_regions
 durationInMinutes: 7
 content: |
   [!include[](includes/6-exercise-create-traffic-manager-profile-using-azure-portal.md)]

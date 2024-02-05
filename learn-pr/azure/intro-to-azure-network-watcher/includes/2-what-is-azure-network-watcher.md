@@ -1,68 +1,93 @@
-Azure Network Watcher is designed to monitor and diagnose network health issues related to Azure Virtual Networks. Network Watcher provides tools that you can use to monitor, diagnose, and measure resources in your Azure virtual network. You can use tools included with Network Watcher to monitor virtual machines, virtual networks, application gateways, and load balancers. Network Watcher primarily supports IaaS resources, with limited support for platform as a service monitoring.
+Azure Network Watcher provides a suite of tools to monitor, diagnose, view metrics, and enable or disable logs for Azure IaaS (Infrastructure-as-a-Service) resources. Network Watcher enables you to monitor and repair the network health of IaaS products like virtual machines (VMs), virtual networks (VNets), application gateways, load balancers, etc. Network Watcher isn't designed or intended for PaaS monitoring or Web analytics.
 
-Network Watcher tools are separated into four broad categories:
+Network Watcher consists of three major sets of tools and capabilities:
 
-- Out-of-box monitoring tools
-- Tools for performing diagnostic checks
-- Tools for performing monitoring tasks
-- Tools for measuring connectivity and latency
-
-## Network Watcher monitoring tools
-
-Network Watchers provides four types of monitoring tools:
-
-- Out-of-box monitoring
-  - Network insights
+- Monitoring
   - Topology
-- Diagnostic tools
+  - Connection monitor
+- Network diagnostic
   - IP flow verify
+  - NSG diagnostics
   - Next hop
+  - Effective security rules
+  - Connection troubleshoot
   - Packet capture
   - VPN troubleshoot
-  - Effective security rules
-- Connectivity monitoring
-  - Connection Monitor
-  - Network Performance Monitor
-- Traffic monitoring
-  - NSG flow logs
+- Traffic
+  - Flow logs
   - Traffic analytics
 
-### Network Watcher Topology tool
+:::image type="content" source="../images/network-watcher-tools.png" alt-text="Diagram that shows Azure Network Watcher's tools.":::
 
-The Topology tool generates graphical displays of your Azure virtual network, its resources, its interconnections, and their relationships with each other. This tool can help you at the beginning of the troubleshooting process by allowing you to visualize all elements involved in the problem that you're troubleshooting, something that might not be apparent by looking at the contents of resource groups in the Azure portal.
+## Monitoring
 
-:::image type="content" source="../images/network-watcher-topology.png" alt-text="Diagram that depicts the Network Watcher topology." border="false":::
+Network Watcher offers two monitoring tools that help you view and monitor resources:
 
-### Connection Monitor tool
+- Topology
+- Connection monitor
 
-The Connection Monitor tool provides allows you to verify that connections work between Azure resources. For example, you could use connection monitor to verify that two IaaS VMs that host the components of a multi-tier application can communicate with each other. You can also use it to verify connectivity in hybrid scenarios.
+### Topology
 
-:::image type="content" source="../images/connection-monitor-portal.png" alt-text="Screenshot that shows an example of connection monitors in the Azure portal." lightbox="../images/connection-monitor-portal.png":::
+The **Topology** tool provides a visualization of the entire network for understanding network configuration. It provides an interactive interface to view resources and their relationships in Azure spanning across multiple subscriptions, resource groups, and locations. At the beginning of the troubleshooting process, this tool helps you visualize all of the elements involved in the problem, allowing you to find something that isn't apparent by looking at the contents of resource groups.
 
-### Network Performance Monitor tool
+### Connection monitor
 
-The Network Performance Monitor tool allows you to track latency and packet loss. You can configure alerts to trigger when latency and packet loss exceed particular thresholds.
+**Connection monitor** provides end-to-end connection monitoring for Azure and hybrid endpoints. It helps you understand network performance between various endpoints in your network infrastructure. You can use connection monitor to verify that two IaaS VMs that host the components of a multi-tier application can communicate with each other. You can also use it to verify connectivity in hybrid scenarios.
 
-## Network Watcher diagnostic tools
+## Network diagnostic tools
 
-Network Watcher provides six tools that you can use to diagnose why problems have occurred on Azure and hybrid networks. These tools are as follows:
+Network Watcher offers seven network diagnostic tools that help troubleshoot and diagnose network issues:
 
-- **IP flow verify**: You can use this tool to determine whether packets are allowed or denied to a specific IaaS virtual machine. This tool will provide information about which network security group (NSG) is causing the packet to be dropped.
-- **Next hop**: You can use this tool to determine the route a packet takes from a source IP address to a destination IP address. Next hop is useful in determining if routing tables for Azure virtual networks are incorrectly configured.
-- **Effective security rules**: You can use Effective security rules to determine which specific rule in a set of NSG rules applied in multiple locations is blocking or allowing specific network traffic.
-- **Packet capture**: You can use Packet capture to record all network traffic sent to and from an IaaS VM.
-- **Connection troubleshoot**: You can use Connection troubleshoot to check TCP connectivity between a source and destination VM.
-- **VPN troubleshoot**. You can use this tool to troubleshoot problems with virtual network gateway connections.
+- IP flow verify
+- NSG diagnostics
+- Next hop
+- Effective security rules
+- Connection troubleshoot
+- Packet capture
+- VPN troubleshoot
 
-## Network Watcher metrics
+### IP flow verify
 
-Azure limits the number of network resources that you can create within a subscription and region. If you reach this limit, you'll be unable to create more resources. For example, if you have 20 static public IP addresses in a region and you try to configure a twenty-first public IP address, you'll be blocked from doing so. You can use the Metrics section of Network Watcher to view what the current limits set on your region and subscription and your current utilization.
+**IP flow verify** allows you to detect traffic filtering issues at a virtual machine level. It checks if a packet is allowed or denied to or from an IP address (IPv4 or IPv6 address). It also tells you which security rule allowed or denied the traffic.
 
-:::image type="content" source="../images/metrics-portal.png" alt-text="Screenshot that shows an example of connection limits and usage in the Metrics tool.":::
+### NSG diagnostics
 
-## Traffic monitoring
+**NSG diagnostics** allows you to detect traffic filtering issues at a virtual machine, virtual machine scale set, or application gateway level. It checks if a packet is allowed or denied to or from an IP address, IP prefix, or a service tag. It tells you which security rule allowed or denied the traffic. It also allows you to add a new security rule with a higher priority to allow or deny the traffic.
 
-Network Watcher includes two logs you can use to troubleshoot Azure networking issues:
+### Next hop
 
-- **NSG flow logs**: You can use NSG flow logs to log the source and destination IP address, port, and protocol, and whether traffic was allowed or denied by an NSG.
-- **Traffic analysis**: You can use Traffic analysis to monitor your cloud environment and get visibility into user and application networking activity across Azure.  
+**Next hop** allows you to detect routing issues. It checks if traffic is routed correctly to the intended destination. It provides you with information about the Next hop type, IP address, and Route table ID for a specific destination IP address.
+
+### Effective security rules
+
+**Effective security rules** allows you to view the effective security rules applied to a network interface. It shows you all security rules applied to the network interface, the subnet the network interface is in, and the aggregate of both.
+
+### Connection troubleshoot
+
+**Connection troubleshoot** enables you to test a connection between a virtual machine, a virtual machine scale set, an application gateway, or a Bastion host and a virtual machine, an FQDN, a URI, or an IPv4 address. The test returns similar information returned when using the connection monitor tool, but tests the connection at a point in time instead of monitoring it over time, as connection monitor does.
+
+### Packet capture
+
+**Packet capture** allows you to remotely create packet capture sessions to record all network traffic to and from a virtual machine (VM) or a virtual machine scale set. 
+
+### VPN troubleshoot
+
+**VPN troubleshoot** enables you to troubleshoot virtual network gateways and their connections. 
+
+## Traffic
+
+Network Watcher offers two traffic tools that help you log and visualize network traffic:
+
+- Flow logs
+- Traffic analytics
+
+### Flow logs
+
+**Flow logs** allows you to log information about your Azure IP traffic and stores the data in Azure storage. You can log IP traffic flowing through a network security group or Azure virtual network.
+
+### Traffic analytics
+
+**Traffic analytics** provides rich visualizations of flow logs data. 
+
+
+

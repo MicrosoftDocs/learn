@@ -6,8 +6,7 @@ metadata:
   ms.date: 08/08/2022
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Introduction to machine learning operations (MLOps)
 prerequisites: |
   Some familiarity with machine learning and Azure Machine Learning.

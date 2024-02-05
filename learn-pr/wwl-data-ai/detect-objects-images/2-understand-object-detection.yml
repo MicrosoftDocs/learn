@@ -6,9 +6,8 @@ metadata:
   description: "Understand object detection"
   ms.date: 09/17/2021
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.topic: unit
 azureSandbox: false
 sandbox: false
 labModal: false

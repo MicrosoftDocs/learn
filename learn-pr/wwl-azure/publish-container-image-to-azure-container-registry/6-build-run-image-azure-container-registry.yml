@@ -7,8 +7,9 @@ metadata:
   ms.date: 04/25/2023
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 10
 content: |
   [!include[](includes/6-build-run-image-azure-container-registry.md)]

@@ -1,14 +1,14 @@
-The application works well, but if the database contains many rows the UI can become unresponsive while the app performs database queries and other operations. In this exercise, you'll convert the application from the synchronous SQLite API to the asynchronous version. This way, your application will always be responsive no matter how many queries you make to your database.
+The application works well, but if the database contains many rows, the UI can become unresponsive while the app performs database queries and other operations. In this exercise, you'll convert the application from the synchronous SQLite API to the asynchronous version. This way, your application will always be responsive no matter how many queries you make to your database.
 
 ## Create an Async connection
 
 1. Open the **PersonRepository.cs** file in the **People** project.
 
-1. Modify the definition of the **Init** method to be `async`. Change the return type of the method to `Task`.
+1. Modify the `Init` method's definition to be `async`. Change the return type of the method to `Task`.
 
-1. Change the **conn** property to a **SQLiteAsyncConnection**. and update the code in the **Init** method that initializes the connection.
+1. Change the `conn` property to a `SQLiteAsyncConnection` and update the code in the `Init` method that initializes the connection.
 
-1. Replace the call to the synchronous **CreateTable** method with the asynchronous **CreateTableAsync** method.
+1. Replace the call to the synchronous `CreateTable` method with the asynchronous `CreateTableAsync` method.
 
     The completed code should look like this:
 
@@ -28,11 +28,13 @@ The application works well, but if the database contains many rows the UI can be
 
 ## Insert an item into a table asynchronously
 
-1. Modify the definition of the **AddNewPerson** method to be `async`. Change the return type of the method to `Task`.
+1. Modify the definition of the `AddNewPerson` method to be `async`. Change the return type of the method to `Task`.
 
-1. Add the `await` keyword to the **Init** method call because **Init** is now an `async` method.
+1. Add the `await` keyword to the `Init` method call because `Init` is now an `async` method.
 
-1. Update the **AddNewPerson** method to insert a new **Person** by using an asynchronous insert operation.
+1. Update the `AddNewPerson` method to insert a new `Person` by using an asynchronous insert operation.
+
+    The code should look like this:
 
     ```csharp
     using System.Threading.Tasks;
@@ -62,11 +64,13 @@ The application works well, but if the database contains many rows the UI can be
 
 ## Get all items from a table asynchronously
 
-1. Modify the definition of the **GetAllPeople**. This method should be `async` and return a `Task<List<Person>>` object.
+1. Modify the `GetAllPeople` method definition. This method should be `async` and return a `Task<List<Person>>` object.
 
-1. Add the `await` keyword to the **Init** method call.
+1. Add the `await` keyword to the `Init` method call.
 
 1. Update the method to return the results by using an asynchronous call.
+
+    The code should look like this:
 
     ```csharp
     public async Task<List<Person>> GetAllPeople()
@@ -85,9 +89,13 @@ The application works well, but if the database contains many rows the UI can be
     }
     ```
 
+1. Save the **PersonRepository.cs** file.
+
 ## Test the asynchronous functionality
 
-1. In the **MainPage.xaml.cs** file, modify both of the button click event handlers to use the asynchronous methods from the **PersonRepository** class. Make use of the `async` and `await` keywords:
+1. Expand **MainPage.xaml** in the Solution Explorer and open the **MainPage.xaml.cs** file.
+
+1. Modify both of the button-click event handlers to use the asynchronous methods from the `PersonRepository` class. Make use of the `async` and `await` keywords:
 
     ```csharp
       public async void OnNewButtonClicked(object sender, EventArgs args)
@@ -106,5 +114,7 @@ The application works well, but if the database contains many rows the UI can be
          peopleList.ItemsSource = people;
       }
     ```
+
+1. Save the **MainPage.xaml.cs** file.
 
 1. Build and run the program on Windows and Android to verify it still functions as before.

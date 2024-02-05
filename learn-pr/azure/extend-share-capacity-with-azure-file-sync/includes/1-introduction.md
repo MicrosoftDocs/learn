@@ -2,11 +2,11 @@ You're an administrator for an architecture firm. The firm stores computer-aided
 
 ## Learning objectives
 
-In this module, you'll:
+In this module, you learn how to:
 
 - Evaluate your server's compatibility with Azure File Sync.
 - Deploy Azure File Sync.
-- Test and troubleshoot file sync.
+- Test that the file sync is working.
 
 ## Prerequisites
 

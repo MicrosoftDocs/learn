@@ -6,8 +6,8 @@ metadata:
   ms.date: 09/24/2020
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: windows-server
 title: Implement scale and high availability with Windows Server VM
 summary: You'll learn how to implement scaling for virtual machine scale sets and load-balanced VMs. You'll also learn how to implement Azure Site Recovery.
 abstract: |
@@ -23,7 +23,7 @@ prerequisites: |
   - Core Microsoft compute, storage, networking, and virtualization technologies.
   - On-premises resiliency Windows Server-based compute and storage technologies.
   - Implementing and managing IaaS services in Azure.
-  - Azure Active Directory (Azure AD).
+  - Microsoft Entra ID.
   - Security-related technologies (firewalls, encryption, multi-factor authentication).
   - Windows PowerShell scripting.
   - Automation and monitoring.

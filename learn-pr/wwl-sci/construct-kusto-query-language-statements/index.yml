@@ -6,8 +6,8 @@ metadata:
   ms.date: 02/23/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: microsoft-sentinel
 title: Construct KQL statements for Microsoft Sentinel
 summary: KQL is the query language used to perform analysis on data to create analytics, workbooks, and perform hunting in Microsoft Sentinel.  Learn how basic KQL statement structure provides the foundation to build more complex statements.
 abstract: |

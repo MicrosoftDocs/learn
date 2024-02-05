@@ -5,10 +5,9 @@ metadata:
   description: Learn about the tools and services available on Azure to ensure your resources are secure.
   brand: azure
   ms.date: 10/23/2019
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: learning-path
 title: Architect secure infrastructure in Azure
 summary: Learn about the tools and services available on Azure to ensure your resources are secure.
 prerequisites: None

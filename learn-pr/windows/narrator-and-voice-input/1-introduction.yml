@@ -5,10 +5,9 @@ metadata:
   title: Introduction
   description: Introduction to adding inclusive audio experience in your app.
   ms.date: 5/24/2019
-  author: PeterTurcan
-  ms.author: v-pettur
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  author: Karl-Bridge-Microsoft
+  ms.author: kbridge
+  ms.topic: unit
   
 durationInMinutes: 5
 content: |

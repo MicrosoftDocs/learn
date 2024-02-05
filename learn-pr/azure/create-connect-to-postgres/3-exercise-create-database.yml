@@ -8,9 +8,7 @@ metadata:
   author: markingmyname
   ms.author: maghan
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
-azureSandbox: true
 content: |
   [!include[](includes/3-exercise-create-database.md)]

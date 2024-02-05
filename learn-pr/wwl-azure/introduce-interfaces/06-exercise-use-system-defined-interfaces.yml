@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduce-interfaces.exercise-use-system-defined-interfaces
+title: Exercise - Use system defined interfaces
+metadata:
+  title: Exercise - Use system defined interfaces
+  description: "Exercise - Use system defined interfaces"
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/06-exercise-use-system-defined-interfaces.md)]

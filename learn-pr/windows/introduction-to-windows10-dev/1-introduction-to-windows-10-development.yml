@@ -5,10 +5,9 @@ metadata:
   title: Introduction to Windows 10 development
   description: Learn about the tools needed for developments with Windows 10. 
   ms.date: 03/03/2023
-  author: JohnKennedy 
-  ms.author: jken
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  author: alvinashcraft 
+  ms.author: aashcraft
+  ms.topic: unit
   
 durationInMinutes: 10
 content: |

@@ -1,4 +1,4 @@
- Workbooks provide a canvas for creating interactive visual reports. In this exercise, you'll create a new workbook, add some descriptive text and a parameter to query all of the resources in a selected subscription. By the end of this unit, you'll have a report that shows the distribution of your resources on a map.
+Workbooks provide a canvas for creating interactive visual reports. In this exercise, you'll create a new workbook, add some descriptive text and a parameter to query all of the resources in a selected subscription. By the end of this unit, you'll have a report that shows the distribution of your resources on a map.
 
 ## Deploy resources for the exercise using the Azure CLI
 
@@ -6,9 +6,11 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
 
 1. Activate the Azure sandbox. When the sandbox is activated, a resource group with the name `learn-{guid}` is created for you to use. This resource group will be visible in the Azure portal, or through CLI commands such as `az group list`.
 1. In the Azure Cloud Shell, get the name of the resource group that was generated for your sandbox.
+
     ```azurecli
     az group list
     ```
+
 1. The output contains a row with the name of the resource group. The name starts with "learn-".
 
     :::image type="content" source="../media/3-cloud-shell-resourcegroup-name.png" alt-text="Screenshot of Cloud Shell displaying resource group name for sandbox.":::
@@ -78,7 +80,7 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
     1. In the **Parameter type** field, select **Subscription picker**.
     1. Select the **Required** checkbox.
 
-    :::image type="content" source="../media/3-parameter-settings.png" alt-text="Screenshot that shows the parameter settings in a workbook."::: 
+    :::image type="content" source="../media/3-parameter-settings.png" alt-text="Screenshot that shows the parameter settings in a workbook.":::
     1. Select **Save**, and then **Done editing**.
 1. Select **Done editing** again. You now have a workbook with a **Subscription** drop-down picker.
 
