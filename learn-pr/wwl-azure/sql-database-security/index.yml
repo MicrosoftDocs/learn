@@ -31,7 +31,6 @@ subjects:
 - security
 units:
 - learn.wwl.sql-database-security.introduction
-- learn.wwl.sql-database-security.authentication
 - learn.wwl.sql-database-security.firewalls
 - learn.wwl.sql-database-security.database-auditing
 - learn.wwl.sql-database-security.data-discovery-classification​
