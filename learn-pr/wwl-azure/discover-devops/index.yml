@@ -7,7 +7,6 @@ metadata:
   author: LuizMacedo
   ms.author: lumac
   ms.topic: module
-  ms.prod: azure
   ms.service: azure-devops
 title: Discover DevOps
 summary: Optimize application lifecycle management through DevOps practices such as collaboration, continuous learning, agility, and automation. Your organization benefits from accelerated time to market, stability and reliability in operations, and minimize mean time to recovery.
@@ -33,8 +32,9 @@ roles:
   - student
   - support-engineer
 products:
-  - github
+  - azure
   - azure-cloud-services
+  - github
   - azure-devops
 subjects:
   - devops
