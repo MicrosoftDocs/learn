@@ -33,7 +33,6 @@ units:
 - learn.wwl.azure-key-vault.introduction
 - learn.wwl.azure-key-vault.example
 - learn.wwl.azure-key-vault.keys
-- learn.wwl.azure-key-vault.customer-managed-keys
 - learn.wwl.azure-key-vault.secrets
 - learn.wwl.azure-key-vault.key-rotation
 - learn.wwl.azure-key-vault.safety
