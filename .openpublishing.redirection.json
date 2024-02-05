@@ -33265,6 +33265,11 @@
       "source_path": "learn-pr/wwl-azure/enable-containers-security/12-manage-azure-kubernetes-service-using-azure-role-based-access-controls.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enable-containers-security/4-manage-security-azure-container-instances.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
+      "redirect_document_id": false
     }
   ]
 }
