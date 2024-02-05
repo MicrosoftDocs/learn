@@ -2903,3 +2903,8 @@ achievements:
   title: Enable and manage Microsoft Defender for Cloud
   summary: Use Microsoft Defender for Cloud to strengthen security posture and protect workloads against modern threats in Azure.
   iconUrl: /training/achievements/azure-security-center.svg
+- uid: learn.wwl.azure-sentinel.badge
+  type: badge
+  title: Configure and monitor Microsoft Sentinel
+  summary: Use Microsoft Sentinel to discover, track, and respond to security breaches within your Azure environment.
+  iconUrl: /training/achievements/azure-sentinel.svg
