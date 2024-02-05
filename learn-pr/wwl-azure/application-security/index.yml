@@ -31,7 +31,6 @@ products:
 subjects:
 - cloud-security
 units:
-- learn.wwl.application-security.introduction
 - learn.wwl.application-security.microsoft-identity-platform
 - learn.wwl.application-security.microsoft-graph-permissions
 - learn.wwl.application-security.managed-identities
