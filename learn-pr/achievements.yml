@@ -2913,3 +2913,8 @@ achievements:
   title: Configure and manage SQL database security
   summary: Configure and lock down your SQL database on Azure to protect your corporate data while it's stored.
   iconUrl: /training/achievements/sql-database-security.svg
+- uid: learn.wwl.storage-security.badge
+  type: badge
+  title: Implement storage security
+  summary: Ensure your data is stored, transferred, and accessed in a secure way using Azure storage and file security features.
+  iconUrl: /training/achievements/storage-security.svg
