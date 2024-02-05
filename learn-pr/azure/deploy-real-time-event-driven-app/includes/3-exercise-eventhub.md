@@ -46,7 +46,6 @@ az eventhubs eventhub create \
     --resource-group $RESOURCE_GROUP \
     --name $EVENT_HUB_NAME \
     --namespace-name $EVENT_HUB_NAMESPACE \
-    --message-retention 1
 az eventhubs eventhub authorization-rule create \
     --resource-group $RESOURCE_GROUP \
     --name $EVENT_HUB_AUTHORIZATION_RULE \
