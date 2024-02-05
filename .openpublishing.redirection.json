@@ -33465,6 +33465,11 @@
       "source_path": "learn-pr/wwl-azure/azure-sentinel/2-enable-azure-sentinel.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-security-operations-new/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-sentinel/7-hunt-investigate-potential-breaches.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-security-operations-new/",
+      "redirect_document_id": false
     }
   ]
 }
