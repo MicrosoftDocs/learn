@@ -70,8 +70,6 @@ If you removed a compromised certificate from the provisioning service, the cert
 
 * The second way would be to use reprovisioning support to reprovision the device to the same IoT hub. This approach can be used to replace the certificate for the device registration on the IoT hub. For more information, see [How to reprovision devices](/azure/iot-dps/how-to-reprovision).
 
-:::image type="content" source="../media/m03-l03-manage-individual-enrollments-secondary-portal-b23afe8f.png" alt-text="Screenshot that shows where to configure secondary certificates when rolling certificates for a device.":::
-
 ### Roll certificates for enrollment groups
 
 To update a group enrollment in response to a security breach, you should delete the compromised root CA or intermediate certificate immediately.
