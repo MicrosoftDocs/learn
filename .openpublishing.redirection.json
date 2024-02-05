@@ -33320,6 +33320,11 @@
       "source_path": "learn-pr/wwl-azure/azure-monitor/7-diagnostic-logging.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-security-operations-new/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-monitor/2-enable-azure-monitor.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-security-operations-new/",
+      "redirect_document_id": false
     }
   ]
 }
