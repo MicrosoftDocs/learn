@@ -31,7 +31,6 @@ products:
 subjects:
 - it-management-monitoring
 units:
-- learn.wwl.azure-monitor.metrics-logs
 - learn.wwl.azure-monitor.summary
 badge:
   uid: learn.wwl.azure-monitor.badge
