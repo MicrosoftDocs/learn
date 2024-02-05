@@ -34,7 +34,6 @@ subjects:
 - information-protection-governance
 units:
 - learn.wwl.storage-security.introduction
-- learn.wwl.storage-security.data-sovereignty
 - learn.wwl.storage-security.shared-access-signatures
 - learn.wwl.storage-security.storage-service-encryption
 - learn.wwl.storage-security.secure-transfer-required​
