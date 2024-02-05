@@ -33235,6 +33235,11 @@
       "source_path": "learn-pr/wwl-azure/enable-containers-security/6-enable-azure-container-registry-authentication.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enable-containers-security/5-explore-azure-container-registry.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
+      "redirect_document_id": false
     }
   ]
 }
