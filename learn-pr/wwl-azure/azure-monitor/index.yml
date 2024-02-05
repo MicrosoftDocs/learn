@@ -35,7 +35,6 @@ units:
 - learn.wwl.azure-monitor.enable-azure-monitor
 - learn.wwl.azure-monitor.metrics-logs
 - learn.wwl.azure-monitor.log-analytics
-- learn.wwl.azure-monitor.diagnostic-logging
 - learn.wwl.azure-monitor.knowledge-check
 - learn.wwl.azure-monitor.summary
 badge:
