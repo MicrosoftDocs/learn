@@ -40,7 +40,6 @@ units:
 - learn.wwl.azure-key-vault.key-rotation
 - learn.wwl.azure-key-vault.safety
 - learn.wwl.azure-key-vault.demonstration
-- learn.wwl.azure-key-vault.azure-hardware-security-module
 - learn.wwl.azure-key-vault.knowledge-check
 - learn.wwl.azure-key-vault.summary
 badge:
