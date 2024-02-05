@@ -41,7 +41,6 @@ units:
 - learn.wwl.azure-security-center.view-and-edit-security-policies
 - learn.wwl.azure-security-center.recommendations
 - learn.wwl.azure-security-center.secure-score
-- learn.wwl.azure-security-center.brute-force-attacks
 - learn.wwl.azure-security-center.understand-just-in-time-vm-access
 - learn.wwl.azure-security-center.just-time-vm-access
 - learn.wwl.azure-security-center.demonstration
