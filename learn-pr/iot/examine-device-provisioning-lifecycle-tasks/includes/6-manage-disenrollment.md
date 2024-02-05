@@ -55,12 +55,11 @@ Select **Delete** at the top of the window, and then select **Yes** to confirm t
 
 After you finish the procedure, you should see your entry removed from the list of enrollment groups.
 
-> [!NOTE]
-> If you delete an enrollment group for a certificate, devices that have the certificate in their certificate chain might still be able to enroll if an enabled enrollment group for the root certificate or another intermediate certificate higher up in their certificate chain exists.
+If you delete an enrollment group for a certificate, devices that have the certificate in their certificate chain might still be able to enroll if an enabled enrollment group for the root certificate or another intermediate certificate higher up in their certificate chain exists.
 
-> [!NOTE]
-> Deleting an enrollment group doesn't delete the registration records for devices in the group. DPS uses the registration records to determine whether the maximum number of registrations has been reached for the DPS instance. Orphaned registration records still count against this quota.
-> You may want to delete the registration records for the enrollment group before deleting the enrollment group itself. You can see and manage the registration records for an enrollment group manually on the Registration status tab for the group in Azure portal. You can retrieve and manage the registration records programmatically using the Device Registration State REST APIs or equivalent APIs in the DPS service SDKs, or using the az iot dps enrollment-group registration Azure CLI commands.
+* Deleting an enrollment group doesn't delete the registration records for devices in the group. DPS uses the registration records to determine whether the maximum number of registrations has been reached for the DPS instance. Orphaned registration records still count against this quota.
+
+* You may want to delete the registration records for the enrollment group before deleting the enrollment group itself. You can see and manage the registration records for an enrollment group manually on the Registration status tab for the group in Azure portal. You can retrieve and manage the registration records programmatically using the Device Registration State REST APIs or equivalent APIs in the DPS service SDKs, or using the az iot dps enrollment-group registration Azure CLI commands.
 
 ## Disallow specific devices from an X.509 enrollment group
 
