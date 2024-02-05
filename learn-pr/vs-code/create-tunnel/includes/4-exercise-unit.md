@@ -10,8 +10,7 @@ There are two options to obtain the code CLI: either from the VS Code download p
 ### Get the code CLI from the VS Code download page
 
 1. Navigate online to the <a href="https://code.visualstudio.com/#alt-downloads" target="_blank">VS Code download page.</a>
-
-:::image type="content" source="../media/0. download.png" alt-text="Download Page":::
+    1. :::image type="content" source="../media/0. download.png" alt-text="Download Page":::
 
 2. Download & extract the code CLI for your operating system into the ‘TestCLI’ directory.
     1. After downloading the file, you have a compressed file.
@@ -57,22 +56,19 @@ code tunnel --accept-server-license-terms
 
 
 The code CLI outputs a vscode.dev URL specific to this remote machine, such as
-
 ```https://vscode.dev/tunnel/<machine_name>/<folder_name>``` 
-:::image type="content" source="../media/4. link.png" alt-text="Provided link":::
+:::image type="content" source="../media/4. link.png" alt-text="Tunnel link for client image":::
 
 This process authenticates you to the tunneling service, ensuring you have access to the designated remote machines.
 
 6. Open this URL on a client of your choice. 
-7. Click "Allow" to give the 'Remote - Tunnels' extension permissio to sign in.
-
-:::image type="content" source="../media/25. RemoteAsksPermission.png" alt-text="Provided link":::
-8. Click "Yes, I trust the authors" to give access to the folder.
-:::image type="content" source="../media/26. Trust.png" alt-text="Provided link":::
+7. Click "Allow" to give the 'Remote - Tunnels' extension permission to sign in.
+    1. :::image type="content" source="../media/25. RemoteAsksPermission.png" alt-text="Remote - Tunnels extension permission to sign in image":::
+1. Click "Yes, I trust the authors" to give access to the folder.
+    1. :::image type="content" source="../media/26. Trust.png" alt-text="Do you trust the authors image":::
 
 9. Begin coding!
-
-:::image type="content" source="../media/24. CLI_View.png" alt-text="Provided link":::
+    1. :::image type="content" source="../media/24. CLI_View.png" alt-text="Code tmage":::
 
 
 
