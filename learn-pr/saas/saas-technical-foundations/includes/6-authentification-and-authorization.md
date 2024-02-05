@@ -44,13 +44,13 @@ Scopes can be defined as a collection of permissions that are required to access
 
 
 
-When a user or application attempts to access a protected resource (for example, emails through Graph API), Graph API verifies that the requested scope is associated with the user or application. This association is passed as part of the JWT access token. If the user or application has the appropriate scope, they are granted access to the resource.
+When a user or application attempts to access a protected resource (for example, emails through Graph API), Graph API verifies that the requested scope is associated with the user or application. This association is passed as part of the JWT access token. If the user or application has the appropriate scope, they're granted access to the resource.
 
 In the scenario, where the user is using delegated permissions and gives consent to the SaaS app to access email records using Graph API, this SaaS app is only been able to retrieve email items for this user.
 
 In the situation when you're granting permission to one of the APIs protected by Entra ID, which are part of the SaaS application, you have to implement similar logic.
 
-Let’s assume that you provide a custom API that allows digital contract signing. In the case of users allowing delegated permissions for the SaaS app to access digital contacts through your API, it should only return contracts for this particular user. It should also check the scope – is it only *Contract.Read*, or also *Contract.Sign*, which should give users the possibility to sign the contract. It is your responsibility as a SaaS provider to implement the authorization logic in your application. 
+Let’s assume that you provide a custom API that allows digital contract signing. If user allows delegated permissions for the SaaS app to access digital contacts through your API, it should only return contracts for this particular user. It should also check the scope – is it only *Contract.Read*, or also *Contract.Sign*, which should give users the possibility to sign the contract. It is your responsibility as a SaaS provider to implement the authorization logic in your application. 
 
 Once you figure out how to handle granular consent for users, the next step will be to implement identity for different microservices.
 
