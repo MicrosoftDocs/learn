@@ -29,6 +29,5 @@ products:
 subjects:
 - threat-protection
 units:
-- learn.wwl.azure-sentinel.workbooks
 badge:
   uid: learn.wwl.azure-sentinel.badge
