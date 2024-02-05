@@ -44,8 +44,10 @@ code tunnel --accept-server-license-terms
 2. Copy/save the provided link and code as shown below.
     1. :::image type="content" source="../media/23. TunnelLink.png" alt-text="Image of link to login on client with code":::
 
-3. On your client, open the previously saved link in a web browser and enter the code that was provided in the terminal (note: your code will be different).
+3. On your client, open the previously saved link in a web browser and enter the code that was provided in the terminal (note: your code will be different) & click continue to activate.
     1. :::image type="content" source="../media/1. signIn.png" alt-text="Device Activation":::
+4. Click continue to authenticate.    
+    1. :::image type="content" source="../media/27. SignIn-BeforeAuth.png" alt-text="Device Activation":::
 
 4. Then, click the authorize button.
     1. :::image type="content" source="../media/2. auth.png" alt-text="Authentication Page":::
