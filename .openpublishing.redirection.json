@@ -33120,6 +33120,11 @@
       "source_path": "learn-pr/wwl-azure/application-security/6-managed-identities.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/application-security/5-microsoft-graph-permissions.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
     }
   ]
 }
