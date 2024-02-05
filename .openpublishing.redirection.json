@@ -33130,6 +33130,11 @@
       "source_path": "learn-pr/wwl-azure/application-security/2-microsoft-identity-platform.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/application-security/15-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
     }
   ]
 }
