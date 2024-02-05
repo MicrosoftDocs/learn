@@ -31,7 +31,6 @@ subjects:
 - security
 units:
 - learn.wwl.azure-key-vault.secrets
-- learn.wwl.azure-key-vault.safety
 - learn.wwl.azure-key-vault.summary
 badge:
   uid: learn.wwl.azure-key-vault.badge
