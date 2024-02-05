@@ -33,7 +33,6 @@ subjects:
 units:
 - learn.wwl.azure-security-center.security-posture
 - learn.wwl.azure-security-center.workload-protections
-- learn.wwl.azure-security-center.policies
 - learn.wwl.azure-security-center.view-and-edit-security-policies
 - learn.wwl.azure-security-center.recommendations
 - learn.wwl.azure-security-center.secure-score
