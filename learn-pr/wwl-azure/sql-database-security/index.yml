@@ -39,7 +39,6 @@ units:
 - learn.wwl.sql-database-security.sql-vulnerability-assessment-express-and-classic-configurations
 - learn.wwl.sql-database-security.dynamic-data-masking
 - learn.wwl.sql-database-security.transparent-data-encryption​
-- learn.wwl.sql-database-security.demonstration
 - learn.wwl.sql-database-security.knowledge-check
 - learn.wwl.sql-database-security.summary
 badge:
