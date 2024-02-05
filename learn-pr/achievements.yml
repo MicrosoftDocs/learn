@@ -2898,3 +2898,8 @@ achievements:
   title: Configure and manage Azure Monitor
   summary: Use Azure Monitor, Log Analytics, and other Azure tools to monitor the secure operation of your Azure solutions.
   iconUrl: /training/achievements/azure-monitor.svg
+- uid: learn.wwl.azure-security-center.badge
+  type: badge
+  title: Enable and manage Microsoft Defender for Cloud
+  summary: Use Microsoft Defender for Cloud to strengthen security posture and protect workloads against modern threats in Azure.
+  iconUrl: /training/achievements/azure-security-center.svg
