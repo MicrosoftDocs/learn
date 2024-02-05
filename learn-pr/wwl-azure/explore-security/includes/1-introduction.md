@@ -4,15 +4,17 @@ In this module, you'll learn how computer systems are built to keep people safe.
 
 In this module you'll explore the following topics:
 
-- Identity: How people are recognized in a computer system
-  - How computer systems recognize people
-  - How computers know what you can and can't do
-  - The blockchain and security
-  - Hackers: How people work to make computers unsafe and what people can do about it.
-  - The importance of good software code
-  - Passwords, the good and the bad
-  - Two-factor authentication as a second line of defense
-  - How biometrics are even better
-  - How hackers use social engineering to steal data
+ -  Identity: How people are recognized in a computer system
+    
+    
+     -  How computer systems recognize people
+     -  How computers know what you can and can't do
+     -  The blockchain and security
+     -  Hackers: How people work to make computers unsafe and what people can do about it.
+     -  The importance of good software code
+     -  Passwords, the good and the bad
+     -  Two-factor authentication as a second line of defense
+     -  How biometrics are even better
+     -  How hackers use social engineering to steal data
 
-Safety is something for which every computer user needs to be responsible. But programmers and engineers have a big role to play in keeping people safe. In this module you'll explore how both, working together, can make a safer computing experience for everyone. 
+Safety is something for which every computer user needs to be responsible. But programmers and engineers have a big role to play in keeping people safe. In this module you'll explore how both, working together, can make a safer computing experience for everyone.
