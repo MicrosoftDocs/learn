@@ -33600,6 +33600,11 @@
       "source_path": "learn-pr/wwl-azure/storage-security/5-azure-active-directory-authentication.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/storage-security/8-azure-files-authentication.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
     }
   ]
 }
