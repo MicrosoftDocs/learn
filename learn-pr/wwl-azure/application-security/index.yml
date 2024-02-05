@@ -38,7 +38,6 @@ units:
 - learn.wwl.application-security.managed-identities
 - learn.wwl.application-security.azure-app-services
 - learn.wwl.application-security.azure-app-service-plan
-- learn.wwl.application-security.availability-zone-support-for-app-service-environments
 - learn.wwl.application-security.demonstration
 - learn.wwl.application-security.knowledge-check
 - learn.wwl.application-security.summary
