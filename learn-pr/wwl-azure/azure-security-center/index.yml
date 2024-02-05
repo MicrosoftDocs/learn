@@ -33,7 +33,6 @@ subjects:
 units:
 - learn.wwl.azure-security-center.introduction
 - learn.wwl.azure-security-center.mitre-attack
-- learn.wwl.azure-security-center.implement-azure-security-center
 - learn.wwl.azure-security-center.security-posture
 - learn.wwl.azure-security-center.workload-protections
 - learn.wwl.azure-security-center.microsoft-cloud-security-benchmark
