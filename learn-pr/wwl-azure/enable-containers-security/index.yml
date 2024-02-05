@@ -33,6 +33,5 @@ products:
 subjects:
 - container
 units:
-- learn.wwl.enable-containers-security.summary
 badge:
   uid: learn.wwl.enable-containers-security.badge
