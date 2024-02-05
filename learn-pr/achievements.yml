@@ -2843,3 +2843,78 @@ achievements:
   title: 'AZ-500: Manage Identity and Access'
   summary: Explore how identity is the starting point for all security within your company. Learn to authenticate and authorize users and apps with Microsoft Entra ID.
   iconUrl: /training/achievements/management-identity-access.svg
+- uid: learn.wwl.enterprise-governance.badge
+  type: badge
+  title: Design an enterprise governance strategy
+  summary: Learn to use RBAC and Azure Policy to limit access to your Azure solutions, and determine which method is right for your security goals.
+  iconUrl: /training/achievements/enterprise-governance.svg
+- uid: learn.wwl.host-security.badge
+  type: badge
+  title: Configure and manage host security
+  summary: Learn to lock down the devices, virtual machines, and other components that run your applications in Azure.
+  iconUrl: /training/achievements/security-host.svg
+- uid: learn.wwl.implement-platform-protection.trophy
+  type: trophy
+  title: 'AZ-500: Implement platform protection'
+  summary: Security has to happen at all levels. Learn how to lock down the infrastructure and network resources that are running in your Azure environment.
+  iconUrl: /training/achievements/platform-implement-protection.svg
+- uid: learn.wwl.network-security.badge
+  type: badge
+  title: Configure network security
+  summary: Use Azure network capabilities to secure your network and applications from external and internal attacks.
+  iconUrl: /training/achievements/azure-network-security.svg
+- uid: learn.wwl.perimeter-security.badge
+  type: badge
+  title: Implement perimeter security
+  summary: Prevent attacks before they get to your Azure solutions. Use the concepts of defense in depth and zero trust to secure Azure perimeter.
+  iconUrl: /training/achievements/perimeter-security.svg
+- uid: learn.wwl.application-security.badge
+  type: badge
+  title: Configure application security features
+  summary: Register your company applications then use Azure security features to configure and monitor secure access to the application.
+  iconUrl: /training/achievements/application-security.svg
+- uid: learn.wwl.azure-key-vault.badge
+  type: badge
+  title: Deploy and secure Azure Key Vault
+  summary: Protect your keys, certificates, and secrets in Azure Key Vault. Learn to configure key vault for the most secure deployment.
+  iconUrl: /training/achievements/azure-key-vault.svg
+- uid: learn.wwl.enable-containers-security.badge
+  type: badge
+  title: Enable Containers security
+  summary: Explore how to secure your applications running within containers and how to securely connect to them.
+  iconUrl: /training/achievements/container-security.svg
+- uid: learn.wwl.manage-security-operation.trophy
+  type: trophy
+  title: 'AZ-500: Manage security operation'
+  summary: Once you have deployed and secured your Azure environment, learn to monitor, operate, and continuously improve the security of your solutions.
+  iconUrl: /training/achievements/operation-manage-security.svg
+- uid: learn.wwl.secure-your-data-applications.trophy
+  type: trophy
+  title: 'AZ-500: Secure your data and applications'
+  summary: Application running within Azure access your confidential data need to be locked down. Learn to secure your applications, storage, databases, and key vaults.
+  iconUrl: /training/achievements/security-data-applications.svg
+- uid: learn.wwl.azure-monitor.badge
+  type: badge
+  title: Configure and manage Azure Monitor
+  summary: Use Azure Monitor, Log Analytics, and other Azure tools to monitor the secure operation of your Azure solutions.
+  iconUrl: /training/achievements/azure-monitor.svg
+- uid: learn.wwl.azure-security-center.badge
+  type: badge
+  title: Enable and manage Microsoft Defender for Cloud
+  summary: Use Microsoft Defender for Cloud to strengthen security posture and protect workloads against modern threats in Azure.
+  iconUrl: /training/achievements/azure-security-center.svg
+- uid: learn.wwl.azure-sentinel.badge
+  type: badge
+  title: Configure and monitor Microsoft Sentinel
+  summary: Use Microsoft Sentinel to discover, track, and respond to security breaches within your Azure environment.
+  iconUrl: /training/achievements/azure-sentinel.svg
+- uid: learn.wwl.sql-database-security.badge
+  type: badge
+  title: Configure and manage SQL database security
+  summary: Configure and lock down your SQL database on Azure to protect your corporate data while it's stored.
+  iconUrl: /training/achievements/sql-database-security.svg
+- uid: learn.wwl.storage-security.badge
+  type: badge
+  title: Implement storage security
+  summary: Ensure your data is stored, transferred, and accessed in a secure way using Azure storage and file security features.
+  iconUrl: /training/achievements/storage-security.svg
