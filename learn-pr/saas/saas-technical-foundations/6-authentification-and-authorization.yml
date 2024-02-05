@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.saas-technical-foundations.authentication-and-authorization
+title: Authentication and Authorization in SaaS Solutions
+metadata:
+  title: |
+    authentication-and-authorization
+  description: "In this module, you'll delve into the concepts of authentication and authorization within SaaS solutions. You'll gain insights into their practical implementation using the Azure Active Directory identity platform and learn effective strategies for managing identity within a microservices architecture."
+  ms.date: 6/8/2023
+  author: kostinams
+  ms.author: irkostin
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-authentification-and-authorization.md)]

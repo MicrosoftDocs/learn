@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.saas-technical-foundations.monolith-vs-microservices
+title: Monolithic and microservices architectures
+metadata:
+  title: |
+    monolith-vs-microservices
+  description: "Learn different aspects of monolithic and microservices architectures, examining their strengths, weaknesses, and the considerations that will help you make informed architectural choices."
+  ms.date: 6/8/2023
+  author: kostinams
+  ms.author: irkostin
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-monolith-vs-microservices.md)]
