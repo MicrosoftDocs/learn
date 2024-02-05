@@ -32,7 +32,6 @@ subjects:
 units:
 - learn.wwl.azure-key-vault.introduction
 - learn.wwl.azure-key-vault.example
-- learn.wwl.azure-key-vault.certificates
 - learn.wwl.azure-key-vault.keys
 - learn.wwl.azure-key-vault.customer-managed-keys
 - learn.wwl.azure-key-vault.secrets
