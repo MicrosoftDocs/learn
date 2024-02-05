@@ -33,7 +33,7 @@ roles:
   - student
   - support-engineer
 products:
-  - azure
+  - github
   - azure-cloud-services
   - azure-devops
 subjects:
