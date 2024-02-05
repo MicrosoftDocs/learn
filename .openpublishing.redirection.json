@@ -33275,6 +33275,11 @@
       "source_path": "learn-pr/wwl-azure/enable-containers-security/7-review-azure-kubernetes-service.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enable-containers-security/11-secure-azure-kubernetes-service-active-directory.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
+      "redirect_document_id": false
     }
   ]
 }
