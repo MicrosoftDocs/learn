@@ -1,4 +1,4 @@
-Organizations often have multiple storage accounts to enable them to implement different sets of requirements. In the chocolate-manufacturer example, there will be one storage account for private business data and one storage account for consumer-facing files. In this exercise, you'll learn the policy factors that are controlled by each type of storage account, which will help you decide how many accounts you need.
+Organizations often have multiple storage accounts to enable them to implement different sets of requirements. In the chocolate-manufacturer example, there's one storage account for private business data and one storage account for consumer-facing files. In this unit, you learn the policy factors that each type of storage account controls, which helps you decide how many accounts you need.
 
 ## What is Azure Storage?
 
@@ -22,7 +22,7 @@ A storage account is an Azure resource and is part of a resource group. The foll
 
 ![Illustration of an Azure subscription containing multiple resource groups, each with one or more storage accounts.](../media/2-resource-groups-and-storage-accounts.png)
 
-Other Azure data services, such as Azure SQL and Azure Cosmos DB, are managed as independent Azure resources and cannot be included in a storage account. The following illustration shows a typical arrangement: Blobs, Files, Queues, and Tables are contained within storage accounts, while other services are not.
+Other Azure data services, such as Azure SQL and Azure Cosmos DB, are managed as independent Azure resources and can't be included in a storage account. The following illustration shows a typical arrangement: Blobs, Files, Queues, and Tables are contained within storage accounts, while other services aren't.
 
 ![Illustration of an Azure subscription showing some data services that cannot be placed in a storage account.](../media/2-typical-subscription-organization.png)
 
@@ -30,19 +30,19 @@ Other Azure data services, such as Azure SQL and Azure Cosmos DB, are managed as
 
 A storage account defines a policy that applies to all the storage services in the account. For example, you could specify that all the contained services will be stored in the West US datacenter, accessible only over https, and billed to the sales department's subscription.
 
-The settings that are defined by a storage account are:
+A storage account defines the following settings:
 
-- **Subscription**: The Azure subscription that will be billed for the services in the account.
+- **Subscription**: The Azure subscription that's billed for the services in the account.
 
-- **Location**: The datacenter that will store the services in the account.
+- **Location**: The datacenter that stores the services in the account.
 
 - **Performance**: Determines the data services you can have in your storage account and the type of hardware disks used to store the data. 
   - **Standard** allows you to have any data service (Blob, File, Queue, Table) and uses magnetic disk drives. 
   - **Premium** provides more services for storing data. For example, storing unstructured object data as block blobs or append blobs, and specialized file storage used to store and create premium file shares. These storage accounts use solid-state drives (SSD) for storage.
 
-- **Replication**: Determines the strategy used to make copies of your data to protect against hardware failure or natural disaster. At a minimum, Azure automatically maintains three copies of your data within the datacenter associated with the storage account. The minimum replication is called locally redundant storage (LRS), and guards against hardware failure but does not protect you from an event that incapacitates the entire datacenter. You can upgrade to one of the other options such as geo-redundant storage (GRS) to get replication at different datacenters across the world.
+- **Replication**: Determines the strategy used to make copies of your data to protect against hardware failure or natural disaster. At a minimum, Azure automatically maintains three copies of your data within the datacenter associated with the storage account. The minimum replication is called locally redundant storage (LRS), and guards against hardware failure but doesn't protect you from an event that incapacitates the entire datacenter. You can upgrade to one of the other options such as geo-redundant storage (GRS) to get replication at different datacenters across the world.
 
-- **Access tier**: Controls how quickly you will be able to access the blobs in a storage account. Hot gives quicker access than Cool, but at increased cost. Hot access tier applies only to blobs, and serves as the default value for new blobs.
+- **Access tier**: Controls how quickly you're able to access the blobs in a storage account. The Hot access tier is optimized for storing data that's accessed or modified frequently and gives quicker access than Cool, but at increased storage cost. The Cool access tier is optimized for storing data that's infrequently accessed or modified, and has a lower storage cost. Hot access tier applies only to blobs, and serves as the default value for new blobs.
 
 - **Secure transfer required**: A security feature that determines the supported protocols for access. Enabled requires HTTPS, while disabled allows HTTP.
 
@@ -54,15 +54,15 @@ A storage account represents a collection of settings like location, replication
 
 ![Illustration showing two storage accounts with different settings.](../media/2-multiple-storage-accounts.png)
 
-The number of storage accounts you need is typically determined by your data diversity, cost sensitivity, and tolerance for management overhead.
+Typically, your data diversity, cost sensitivity, and tolerance for management overhead determine the number of storage accounts you need.
 
 ### Data diversity
 
-Organizations often generate data that differs in where it is consumed, how sensitive it is, which group pays the bills, etc. Diversity along any of these vectors can lead to multiple storage accounts. Let's consider two examples:
+Organizations often generate data that differs in where it's consumed, how sensitive it is, which group pays the bills, etc. Diversity along any of these vectors can lead to multiple storage accounts. Let's consider two examples:
 
-1. Do you have data that is specific to a country or region? If so, you might want to store the data in a datacenter in that region or country for performance or compliance reasons. You will need one storage account for each geographical region.
+1. Do you have data that is specific to a country/region? If so, you might want to store the data in a datacenter in that country/region for performance or compliance reasons. You need one storage account for each geographical region.
 
-1. Do you have some data that is proprietary and some for public consumption? If so, you could enable virtual networks for the proprietary data and not for the public data. Separating proprietary data and public data will also require separate storage accounts.
+1. Do you have some data that is proprietary and some for public consumption? If so, you could enable virtual networks for the proprietary data and not for the public data. Separating proprietary data and public data requires separate storage accounts.
 
 In general, increased diversity means an increased number of storage accounts.
 
@@ -70,10 +70,10 @@ In general, increased diversity means an increased number of storage accounts.
 
 A storage account by itself has no financial cost; however, the settings you choose for the account do influence the cost of services in the account. Geo-redundant storage costs more than locally redundant storage. Premium performance and the Hot access tier increase the cost of blobs.
 
-You can use multiple storage accounts to reduce costs. For example, you could partition your data into critical and non-critical categories. You could place your critical data into a storage account with geo-redundant storage and put your non-critical data in a different storage account with locally redundant storage.
+You can use multiple storage accounts to reduce costs. For example, you could partition your data into critical and noncritical categories. You could place your critical data into a storage account with geo-redundant storage and put your noncritical data in a different storage account with locally redundant storage.
 
 ### Tolerance for management overhead
 
-Each storage account requires some time and attention from an administrator to create and maintain. It also increases complexity for anyone who adds data to your cloud storage; everyone in an administrator role needs to understand the purpose of each storage account so they add new data to the correct account.
+Each storage account requires some time and attention from an administrator to create and maintain. It also increases complexity for anyone who adds data to your cloud storage. Everyone in an administrator role needs to understand the purpose of each storage account so they add new data to the correct account.
 
-Storage accounts are powerful tools to help you obtain the performance and security you need while minimizing costs. A typical strategy is to start with an analysis of your data and create partitions that share characteristics like location, billing, and replication strategy, and then create one storage account for each partition.
+Storage accounts are powerful tools to help you obtain the performance and security you need while minimizing costs. A typical strategy is to start with an analysis of your data. Create partitions that share characteristics like location, billing, and replication strategy. Then, create one storage account for each partition.

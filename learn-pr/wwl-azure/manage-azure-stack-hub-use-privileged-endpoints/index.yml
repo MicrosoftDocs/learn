@@ -6,8 +6,9 @@ metadata:
   ms.date: 03/29/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-stack
+  ms.subservice: azure-stack-hub
 title: Manage Azure Stack Hub by using privileged endpoints
 summary: |
   Learn to access the privileged endpoint (PEP) and invoke the restricted set of cmdlets for Azure Stack.

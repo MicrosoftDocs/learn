@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Install and configure apps on a session host
 summary: MSIX app attach is a way to deliver MSIX applications to both physical and virtual machines. MSIX app attach is different from regular MSIX because it’s specifically for Azure Virtual Desktop.
 abstract: |

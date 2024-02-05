@@ -63,3 +63,4 @@ To directly assign a user to a session host in the Azure portal:
 10. Select the session host you want to assign to the user, then select **Assign**.
 11. Select the user you want to assign the session host to from the list of available users.
 12. When you're done, select **Select**.
+

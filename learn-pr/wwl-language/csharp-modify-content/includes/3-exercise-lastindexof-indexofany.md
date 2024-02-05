@@ -1,6 +1,3 @@
-
-
-
 In this exercise, you use the `IndexOfAny()` method to find the first location of any of the `string` from selected array. You also use `LastIndexOf()` to find the final location of a string within another string.
 
 ### Retrieve the last occurrence of a sub string
@@ -92,12 +89,12 @@ You update the `message` string, adding different types of symbols like square `
     string message = "Help (find) the {opening symbols}";
     Console.WriteLine($"Searching THIS Message: {message}");
     char[] openSymbols = { '[', '{', '(' };
-    int startPosition = 6;
+    int startPosition = 5;
     int openingPosition = message.IndexOfAny(openSymbols);
     Console.WriteLine($"Found WITHOUT using startPosition: {message.Substring(openingPosition)}");
-    
+
     openingPosition = message.IndexOfAny(openSymbols, startPosition);
-    Console.WriteLine($"Found WITH using startPosition: {message.Substring(openingPosition)}");
+    Console.WriteLine($"Found WITH using startPosition {startPosition}:  {message.Substring(openingPosition)}");
     ```
 
 1. Save your code file, and then use Visual Studio Code to run your code. 
@@ -107,7 +104,7 @@ You update the `message` string, adding different types of symbols like square `
     ```output
     Searching THIS message: Help (find) the {opening symbols}
     Found WITHOUT using startPosition: (find) the {opening symbols}
-    Found WITH using startPosition 6: {opening symbols}
+    Found WITH using startPosition 6:  (find) the {opening symbols}
     ```
 
 1. Take a minute to review the code previously entered.
@@ -179,7 +176,7 @@ You update the `message` string, adding different types of symbols like square `
     closingPosition = message.IndexOf(matchingSymbol, openingPosition);
     ```
 
-    The variable `closingPosition` is used in the `Substring()` method, but is also used to find the next `openingPosition` value:
+    The variable `closingPosition` is used to find the length passed into the `Substring()` method, but it is also used to find the next `openingPosition` value:
 
     ```csharp
     int openingPosition = message.IndexOfAny(openSymbols, closingPosition);

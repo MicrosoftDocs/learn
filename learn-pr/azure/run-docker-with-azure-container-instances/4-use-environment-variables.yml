@@ -6,8 +6,8 @@ metadata:
   ms.date: 04/28/2022
   author: v-tcassi
   ms.author: tomcassidy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: devx-track-azurecli
 title: Exercise - Set environment variables
 durationInMinutes: 10
 content: |

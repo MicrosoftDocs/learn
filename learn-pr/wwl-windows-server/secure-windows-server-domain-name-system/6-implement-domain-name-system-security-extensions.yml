@@ -4,13 +4,10 @@ title: Implement DNSSEC
 metadata:
   title: Implement DNSSEC
   description: "Implement DNSSEC"
-  ms.date: 10/20/2021
+  ms.date: 12/12/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/6-implement-domain-name-system-security-extensions.md)]

@@ -7,13 +7,13 @@ You're all done with the tasks for this module. In this unit, you'll move the wo
 
 In this section, you move the work item that you previously assigned to yourself, **Create a Git-based workflow**, to the **Done** column.
 
-In practice, the definition of "Done" often means that working software is in the hands of your users. In this unit, for learning purposes, you mark this work as complete, because you and the Tailspin team have started an improved code workflow that uses Git and GitHub.
+In practice, the definition of "Done" often means that working software is in the hands of your users. In this unit, for learning purposes, you'll mark this work as complete because you and the Tailspin team have started an improved code workflow that uses Git and GitHub.
 
 At the end of each sprint, or work iteration, you and your team might hold a retrospective meeting in which you share the work you completed, what went well in the sprint, and what could be improved.
 
 To complete the work item:
 
-1. In Microsoft Azure DevOps, select **Boards**.
+1. In Microsoft Azure DevOps, select **Boards** on the left menu, then select **Boards**.
 1. Drag the **Create a Git-based workflow** work item from the **Doing** column to the **Done** column.
 
     :::image type="content" source="../media/9-azure-boards-wi2-done.png" alt-text="Screenshot of Azure Boards showing the work item in the Done column.":::
@@ -33,10 +33,10 @@ This option disables the pipeline so that it doesn't process further build reque
 To disable the pipeline:
 
 1. In Azure Pipelines, navigate to your pipeline.
-1. From the drop-down menu, select **Settings**:
+1. Select the ellipsis (**...**), then select **Settings**:
 
     :::image type="content" source="../../shared/media/azure-pipelines-settings-button.png" alt-text="Screenshot of Azure Pipelines showing the location of the Settings menu.":::
-1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
+1. Under **Processing of new run requests**, select **Disabled**, then select **Save**.
 
     Your pipeline will no longer process build requests.
 
@@ -47,18 +47,20 @@ This option deletes your Azure DevOps project, including what's on Azure Boards 
 To delete the project:
 
 1. In Azure DevOps, go to your project. Earlier, we recommended that you name this project *Space Game - web - Workflow*.
-1. Select **Project settings** in the lower corner.
-1. In the **Project details** area, scroll to the bottom and then select **Delete**.
+1. Select **Project settings** in the lower-left corner.
+1. In the **Project details** area, scroll to the bottom and select **Delete**.
 
     :::image type="content" source="../../shared/media/azure-devops-delete-project.png" alt-text="Screenshot of Azure Pipelines showing the location of the Delete button.":::
 
-1. In the window that appears, enter the project name and then select **Delete** a second time.
+1. In the window that appears, enter the project name and select **Delete** a second time.
 
     Your project is now deleted.
 
 To delete the repository:
 
 1. In GitHub, go to your repository, `https://github.com/username/mslearn-tailspin-spacegame-web`.
-1. Select the **Settings** tab and then select **General** in the left menu.
+1. Select the **Settings** tab, then select **General** in the left menu.
 1. Scroll down and select **Delete this repository**.
-1. Enter the name of your repository to confirm and delete.
+1. Select **I want to delete this repository**.
+1. Select **I have read and understand these effects**.
+1. Type the repository name, then select **Delete this repository**.

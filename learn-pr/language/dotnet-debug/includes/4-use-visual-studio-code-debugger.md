@@ -1,4 +1,4 @@
-It's time to put into practice your newly acquired debugging knowledge. It's your first day on the job, and it's time to put your .NET debugging skills to work by fixing a bug in the company's flagship product, a Fibonacci calculator.
+It's time to put your newly acquired debugging knowledge into practice. It's your first day on the job, and it's time to put your .NET debugging skills to work by fixing a bug in the company's flagship product, a Fibonacci calculator.
 
 ## Create a sample .NET project for debugging
 
@@ -25,8 +25,6 @@ To set up Visual Studio Code for .NET debugging, we'll first need a .NET project
     ```
 
     The terminal window displays "Hello World!" as output.
-
-    :::image source="../media/new-dotnet-project.png" alt-text="Screenshot of Visual Studio Code with a new console application.":::
 
 ## Set up Visual Studio Code for .NET debugging
 
@@ -80,9 +78,9 @@ The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 
     > [!NOTE]
     > This code contains an error, which we'll debug later in this module. We don't recommend that you use it in any mission-critical Fibonacci applications until we get that bug fixed.
 
-1. Save the file by selecting **Ctrl+S** for Windows and Linux. Select **Cmd+S** for Mac.
+1. Save the file by selecting <kbd>Ctrl+S</kbd> for Windows and Linux. Select <kbd>Cmd+S</kbd> for Mac.
 
-1. Let's get a look at how the updated code works before we debug it. Run the program by entering the following command in the terminal:
+1. Let's take a look at how the updated code works before we debug it. Run the program by entering the following command in the terminal:
 
    ```dotnetcli
    dotnet run
@@ -90,7 +88,7 @@ The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 
 
    :::image type="content" source="../media/run-modified-program.png" alt-text="Terminal window with modified program output.":::
 
-1. The result, 3, is shown in the terminal output. When you consult this Fibonacci sequence chart that shows the zero-based sequence position for each value in parenthesis, you'll see that the result should have been 5. It's time to get familiar with the debugger and fix this program.
+1. The result, *3*, is shown in the terminal output. When you consult this Fibonacci sequence chart that shows the zero-based sequence position for each value in parenthesis, you'll see that the result should have been 5. It's time to get familiar with the debugger and fix this program.
 
    ```text
    0 (0), 1 (1), 1 (2), 2 (3), 3 (4), 5 (5), 8 (6), 13 (7), 21 (8)...
@@ -98,15 +96,15 @@ The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 
 
 ## Analyze the issues
 
-1. Start the program by selecting the **Run** tab and selecting the **Start debugging** button.
+1. Start the program by selecting the **Run and Debug** tab on the left, then selecting the **Start debugging** button.
 
    :::image source="../media/start-debugging.png" alt-text="Screenshot of the Start debugging button in Visual Studio Code.":::
 
    You should see the program finish quickly. That's normal because you haven't added any breakpoints yet.
 
-1. If the debug console doesn't appear, select **Ctrl+Shift+Y** for Windows and Linux. Select **Cmd+Shift+Y** for Mac. You should see several lines of diagnostic information, followed by these lines at the end:
+1. If the debug console doesn't appear, select <kbd>Ctrl+Shift+Y</kbd> for Windows and Linux or <kbd>Cmd+Shift+Y</kbd> for Mac. You should see several lines of diagnostic information, followed by these lines at the end:
 
-    ```text
+    ```output
     ...
     Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.0\System.Threading.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
     Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.0\System.Text.Encoding.Extensions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
@@ -183,9 +181,9 @@ Okay, we don't need to overthink it past that. We can lean on our debugger a bit
   
 ## Locate the bug with breakpoints
 
-Stepping through your code can be helpful but tedious. Especially when you're working with loops or other code that's called repeatedly. Rather than stepping through the loop over and over, we can set a new breakpoint on the first line of the loop.
+Stepping through your code can be helpful but tedious, especially when you're working with loops or other code that's called repeatedly. Rather than stepping through the loop over and over, we can set a new breakpoint on the first line of the loop.
 
-When we're doing this, it's important to be strategic about where we put our breakpoints. We're especially interested in the value of `sum`, since it represents the current maximum Fibonacci value. Because of that, let's put our breakpoint on the line *after* `sum` is set.
+When we're doing this, it's important to be strategic about where we put our breakpoints. We're especially interested in the value of `sum`, because it represents the current maximum Fibonacci value. Because of that, let's put our breakpoint on the line *after* `sum` is set.
 
 1. Add a second breakpoint on line 13.
 
@@ -239,7 +237,7 @@ When we're doing this, it's important to be strategic about where we put our bre
 
     Wait a minute. The program finished running and printed out 3! That's not right.
 
-    Okay, not to worry. We haven't failed, we've learned. We now know that the code runs through the loop correctly until `i` equals 4, but then it exits out before computing the final value. I'm starting to get some ideas about where the bug is ... are you?
+    Okay, not to worry. We haven't failed, we've learned. We now know that the code runs through the loop correctly until `i` equals 4, but then it exits out before computing the final value. I'm starting to get some ideas about where the bug is. Are you?
 
 1. Let's set one more breakpoint on line 17, which reads:
 
@@ -249,9 +247,9 @@ When we're doing this, it's important to be strategic about where we put our bre
 
     This breakpoint will let us inspect the program state before the function exits. We've already learned all we can expect to from our previous breakpoints on lines 1 and 13, so we can clear them.
 
-1. Remove our previous breakpoints on lines 1 and 13. You can do that by clicking on them in the margin next to the line numbers, or by clearing the breakpoint check boxes for lines 1 and 13 in the breakpoints pane in the lower left.
+1. Remove the previous breakpoints on lines 1 and 13. You can do that by clicking them in the margin next to the line numbers, or by clearing the breakpoint check boxes for lines 1 and 13 in the **Breakpoints** pane in the lower left.
 
-    :::image source="../media/clearing-breakpoints.png" alt-text="Screenshot showing the breakpoints listed in the breakpoints pane.":::
+    :::image source="../media/clearing-breakpoints.png" alt-text="Screenshot showing the breakpoints listed in the Breakpoints pane.":::
 
     Now that we understand what's going on a lot better and have set a breakpoint designed to catch our program in the act of misbehaving, we should be able to catch this bug!
 
@@ -305,7 +303,7 @@ When we're doing this, it's important to be strategic about where we put our bre
 
 1. Stop the debugging session if you haven't already.
 
-1. Next, make the preceding change to line 10, and leave our breakpoint on line 17.
+1. Next, make the preceding change to line 10 and leave our breakpoint on line 17.
 
 1. Restart the debugger. This time, when we hit the breakpoint on line 17, we'll see the following values:
 

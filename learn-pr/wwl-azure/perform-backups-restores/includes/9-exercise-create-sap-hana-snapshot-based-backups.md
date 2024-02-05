@@ -1,5 +1,3 @@
-
-
 SAP HANA supports storage snapshots (this is restricted to single-container systems). SAP HANA MCS with more than one tenant does not support this kind of SAP HANA database snapshot.
 
 The process works as follows:
@@ -8,12 +6,12 @@ The process works as follows:
 2.  Run the storage snapshot (Azure blob snapshot, for example).
 3.  Confirm the SAP HANA snapshot.
 
-The snapshot then also appears in the backup catalog in SAP HANA Studio. On disk, the snapshot shows up in the SAP HANA data directory. It is necessary to ensure that the file system consistency is also guaranteed before running the storage snapshot while SAP HANA is in the snapshot preparation mode.
+The snapshot then also appears in the backup catalog in SAP HANA Studio. On disk, the snapshot shows up in the SAP HANA data directory. It's necessary to ensure that the file system consistency is also guaranteed before running the storage snapshot while SAP HANA is in the snapshot preparation mode.
 
-Once the storage snapshot is done, it is critical to confirm the SAP HANA snapshot. There is a corresponding SQL statement to run: BACKUP DATA CLOSE SNAPSHOT (see [BACKUP DATA CLOSE SNAPSHOT Statement (Backup and Recovery)](https://help.sap.com/viewer/4fe29514fd584807ac9f2a04f6754767/2.0.04/en-US/c39739966f7f4bd5818769ad4ce6a7f8.html)).
+Once the storage snapshot is done, it's critical to confirm the SAP HANA snapshot. There is a corresponding SQL statement to run: BACKUP DATA CLOSE SNAPSHOT (see [BACKUP DATA CLOSE SNAPSHOT Statement (Backup and Recovery)](https://help.sap.com/viewer/4fe29514fd584807ac9f2a04f6754767/2.0.04/en-US/c39739966f7f4bd5818769ad4ce6a7f8.html)).
 
 > [!IMPORTANT]
-> Make sure to confirm the HANA snapshot. Due to "Copy-on-Write," SAP HANA might require additional disk space in snapshot-prepare mode, and it is not possible to start new backups until the SAP HANA snapshot is confirmed.
+> Make sure to confirm the HANA snapshot. Due to "Copy-on-Write," SAP HANA might require additional disk space in snapshot-prepare mode, and it's not possible to start new backups until the SAP HANA snapshot is confirmed.
 
 ## HANA VM backup via Azure Backup service
 
@@ -24,9 +22,9 @@ The Azure Backup service offers an option to back up and restore a VM. There are
  -  For Linux virtual machines, only file-consistent backups are possible, since Linux does not have an equivalent platform to VSS.
  -  Applications need to implement their own integrity validation mechanism for the restored data.
 
-Therefore, one has to make sure SAP HANA is in a consistent state on disk when the backup starts. More specifically, it is recommended to confirm or abandon a storage snapshot as soon as possible after it has been created. While the storage snapshot is being prepared or created, the snapshot-relevant data is frozen. While the snapshot-relevant data remains frozen, changes can still be made in the database. Such changes will not cause the frozen snapshot-relevant data to be changed. Instead, the changes are written to positions in the data area that are separate from the storage snapshot. Changes are also written to the log. However, the longer the snapshot-relevant data is kept frozen, the more the data volume can grow.
+Therefore, one has to make sure SAP HANA is in a consistent state on disk when the backup starts. More specifically, it's recommended to confirm or abandon a storage snapshot as soon as possible after it has been created. While the storage snapshot is being prepared or created, the snapshot-relevant data is frozen. While the snapshot-relevant data remains frozen, changes can still be made in the database. Such changes will not cause the frozen snapshot-relevant data to be changed. Instead, the changes are written to positions in the data area that are separate from the storage snapshot. Changes are also written to the log. However, the longer the snapshot-relevant data is kept frozen, the more the data volume can grow.
 
-Azure Backup takes care of the file system consistency via Azure VM extensions. These extensions are not available standalone and work only in combination with Azure Backup service. Nevertheless, it is still a requirement to provide scripts to create and delete an SAP HANA snapshot to guarantee app consistency.
+Azure Backup takes care of the file system consistency via Azure VM extensions. These extensions aren't available standalone and work only in combination with Azure Backup service. Nevertheless, it's still a requirement to provide scripts to create and delete an SAP HANA snapshot to guarantee app consistency.
 
 Azure Backup, in this case, has four major phases:
 
@@ -54,7 +52,7 @@ Azure Backup provides the capability to restore Azure virtual machines (VMs) and
 4.  From the **Select recovery point** drop-down menu, select the recovery point that contains the files you want. By default, the latest recovery point is already selected.
 5.  To download the software used to copy files from the recovery point, select **Download Executable** (for Windows Azure VM) or **Download Script** (for Linux Azure VM, a python script is generated).
 6.  The executable or script is password protected and requires a password. In the **File Recovery** menu, select the **copy** button to load the password into memory.
-7.  From the download location (usually the Downloads folder), right-select the executable or script and run it with Administrator credentials. When prompted, type the password or paste the password from memory, and press **Enter**. Once the valid password is entered, the script connects to the recovery point. If you run the script on a computer with restricted access, ensure there is access to:
+7.  From the download location (usually the Downloads folder), right-select the executable or script and run it with Administrator credentials. When prompted, type the password or paste the password from memory, and press **Enter**. Once the valid password is entered, the script connects to the recovery point. If you run the script on a computer with restricted access, ensure there's access to:
     
      -  download.microsoft.com
      -  Recovery Service URLs (geo-name refers to the region where the recovery service vault resides)
@@ -73,7 +71,7 @@ Azure Backup provides the capability to restore Azure virtual machines (VMs) and
 
 ## HANA license key and VM restore via Azure Backup service
 
-The Azure Backup service allows creating a new VM during restore. One can choose between creating a VM during restore, restoring the disks, or restoring disk content (as described in the previous section). After restoring the disks, it is still necessary to create a new VM on top of it. Whenever a new VM gets created on Azure the unique VM ID changes.
+The Azure Backup service allows creating a new VM during restore. One can choose between creating a VM during restore, restoring the disks, or restoring disk content (as described in the previous section). After restoring the disks, it's still necessary to create a new VM on top of it. Whenever a new VM gets created on Azure the unique VM ID changes.
 
 As the result of the restore via Azure Backup service, Azure VM unique ID changes. The SAP hardware key, which is used for SAP licensing, is using this unique VM ID. As a consequence, a new SAP license has to be installed after a VM restore.
 

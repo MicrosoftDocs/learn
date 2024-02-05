@@ -7,8 +7,11 @@ metadata:
   ms.date: 07/22/2022
   author: jamesmontemagno
   ms.author: jamont
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
+  zone_pivot_groups: vsandcode
 durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-configure-environment.md)]

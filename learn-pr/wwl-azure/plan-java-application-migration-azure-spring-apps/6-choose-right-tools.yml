@@ -7,8 +7,9 @@ metadata:
   ms.date: 02/06/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

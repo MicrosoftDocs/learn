@@ -1,14 +1,14 @@
-This unit summarizes the [Azure security baseline for Windows Virtual Machines](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline) by providing the first five controls in each of the following nine areas:
+This unit summarizes the [Azure security baseline for Windows Virtual Machines](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline) by providing the first five controls in each of the following nine areas:
 
--   [Network Security](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#network-security)
--   [Logging and Monitoring](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#logging-and-monitoring)
--   [Identity and Access Control](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#identity-and-access-control)
--   [Data Protection](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#data-protection)
--   [Vulnerability Management](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#vulnerability-management)
--   [Inventory and Asset Management](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#inventory-and-asset-management)
--   [Secure Configuration](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#secure-configuration)
--   [Malware Defense](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#malware-defense)
--   [Data Recovery](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#data-recovery)
+-   [Network Security](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#network-security)
+-   [Logging and Monitoring](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#logging-and-monitoring)
+-   [Identity and Access Control](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#identity-and-access-control)
+-   [Data Protection](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#data-protection)
+-   [Vulnerability Management](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#vulnerability-management)
+-   [Inventory and Asset Management](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#inventory-and-asset-management)
+-   [Secure Configuration](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#secure-configuration)
+-   [Malware Defense](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#malware-defense)
+-   [Data Recovery](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#data-recovery)
 
 ## Network Security
 
@@ -92,13 +92,13 @@ If your organization would like to retain the security event log data from the v
 
 ### 3.1: Maintain an inventory of administrative accounts
 
-**Guidance**: While Azure Active Directory (Azure AD) is the recommended method to administrate user access, Azure Virtual Machines may have local accounts. Both local and domain accounts should be reviewed and managed, normally with a minimum footprint. In addition, leverage Azure Privileged Identity Management for administrative accounts used to access the virtual machines resources.
+**Guidance**: While Microsoft Entra ID is the recommended method to administrate user access, Azure Virtual Machines may have local accounts. Both local and domain accounts should be reviewed and managed, normally with a minimum footprint. In addition, leverage Azure Privileged Identity Management for administrative accounts used to access the virtual machines resources.
 
 **Responsibility**: Customer
 
 ### 3.2: Change default passwords where applicable
 
-**Guidance**: Windows Virtual Machines and Azure Active Directory (Azure AD) do not have the concept of default passwords. Customer responsible for third-party applications and marketplace services that may use default passwords.
+**Guidance**: Windows Virtual Machines and Microsoft Entra ID do not have the concept of default passwords. Customer responsible for third-party applications and marketplace services that may use default passwords.
 
 **Responsibility**: Customer
 
@@ -108,15 +108,19 @@ If your organization would like to retain the security event log data from the v
 
 **Responsibility**: Customer
 
-### 3.4: Use Azure Active Directory single sign-on (SSO)
+<a name='34-use-azure-active-directory-single-sign-on-sso'></a>
 
-**Guidance**: Wherever possible, customer to use SSO with Azure Active Directory (Azure AD) rather than configuring individual stand-alone credentials per-service. Use Microsoft Defender for Cloud Identity and Access Management recommendations.
+### 3.4: Use Microsoft Entra single sign-on (SSO)
+
+**Guidance**: Wherever possible, customer to use SSO with Microsoft Entra rather than configuring individual stand-alone credentials per-service. Use Microsoft Defender for Cloud Identity and Access Management recommendations.
 
 **Responsibility**: Customer
 
-### 3.5: Use multi-factor authentication for all Azure Active Directory-based access
+<a name='35-use-multi-factor-authentication-for-all-azure-active-directory-based-access'></a>
 
-**Guidance**: Enable Azure Active Directory (Azure AD) multifactor authentication and follow Microsoft Defender for Cloud Identity and Access Management recommendations.
+### 3.5: Use multifactor authentication for all Microsoft Entra ID-based access
+
+**Guidance**: Enable Microsoft Entra multifactor authentication and follow Microsoft Defender for Cloud Identity and Access Management recommendations.
 
 **Responsibility**: Customer
 
@@ -259,7 +263,7 @@ For most scenarios, the Microsoft base VM templates combined with the Azure Auto
 
 ### 7.5: Securely store configuration of Azure resources
 
-**Guidance**: Use Azure Repos to securely store and manage your code like custom Azure policies, Azure Resource Manager templates, Desired State Configuration scripts etc. To access the resources you manage in Azure DevOps, such as your code, builds, and work tracking, you must have permissions for those specific resources. Most permissions are granted through built-in security groups as described in Permissions and access. You can grant or deny permissions to specific users, built-in security groups, or groups defined in Azure Active Directory (Azure AD) if integrated with Azure DevOps, or Active Directory if integrated with TFS.
+**Guidance**: Use Azure Repos to securely store and manage your code like custom Azure policies, Azure Resource Manager templates, Desired State Configuration scripts etc. To access the resources you manage in Azure DevOps, such as your code, builds, and work tracking, you must have permissions for those specific resources. Most permissions are granted through built-in security groups as described in Permissions and access. You can grant or deny permissions to specific users, built-in security groups, or groups defined in Microsoft Entra ID if integrated with Azure DevOps, or Active Directory if integrated with TFS.
 
 **Responsibility**: Customer
 

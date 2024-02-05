@@ -7,8 +7,9 @@ metadata:
   author: toolboc
   ms.author: chnoring
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: machine-learning 
+  ms.subservice: automl
 title: Use AutoML to train a labeled dataset and develop a production model
 summary: Learn how to use AutoML to train a labeled dataset and develop a production object detection model.
 abstract: |

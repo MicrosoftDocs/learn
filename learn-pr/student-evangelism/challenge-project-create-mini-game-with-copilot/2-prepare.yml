@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.challenge-project-create-mini-game-with-copilot.prepare
+title: Prepare for challenge
+metadata:
+  title: Prepare for challenge
+  description: "Prepare for challenge"
+  ms.date: 08/22/2023
+  author: cyz
+  ms.author: cyzanon
+  ms.custom: team=nextgen
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-prepare.md)]

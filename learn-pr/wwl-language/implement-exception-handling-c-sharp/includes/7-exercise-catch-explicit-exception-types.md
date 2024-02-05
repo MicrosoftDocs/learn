@@ -1,7 +1,3 @@
-
-
-
-
 Earlier in this module, you learned that the exception objects caught by your C# application are instances of an exception class. Generally speaking, your code will `catch` one of the following:
 
 - An exception object that's an instance of the `System.Exception` base class.
@@ -280,7 +276,21 @@ At this point, you may be wondering what happens when multiple exceptions occur 
     ```
 
     You could also wrap the code that causes the `OverflowException` in a separate `try-catch` within the `WriteMessage()` method.
-  
+
+    ```csharp
+    checked
+    {
+        try
+        {
+            smallNumber = (byte)number1;
+        }
+        catch (OverflowException ex)
+        {
+            Console.WriteLine($"Exception caught in WriteMessage: {ex.Message}");
+        }  
+    }
+    ```
+
 1. Under what conditions would it be undesirable to catch subsequent exceptions?
 
     Consider the case when your method (or code block) is completing a two part process. Assume that the second part of the process is dependent on the first part completing. If the first part of the process is unable to complete successfully, there's no point in continuing on to the second part of the process. In this case, it's often better to present the user with a message explaining the error condition without attempting the remaining portion or portions of the larger process.

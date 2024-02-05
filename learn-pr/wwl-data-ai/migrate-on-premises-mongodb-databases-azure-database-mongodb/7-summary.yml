@@ -7,8 +7,10 @@ metadata:
   ms.date: 02/03/2021
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 azureSandbox: false
 durationInMinutes: 1
 content: |

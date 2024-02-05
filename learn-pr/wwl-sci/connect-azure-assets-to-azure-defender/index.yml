@@ -6,8 +6,8 @@ metadata:
   ms.date: 02/22/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: defender-for-cloud
 title: Connect Azure assets to Microsoft Defender for Cloud
 summary: Learn how to connect your various Azure assets to Microsoft Defender for Cloud to detect threats.
 abstract: |

@@ -1,4 +1,4 @@
-When provisioning nodes for a cluster, you might want to be able to perform custom configuration tasks during the operating system boot process, before any scheduler-driven changes take effect. These tasks can include, for example, updating path environment variables, configuring Domain Name System (DNS) name resolution settings, or binding nodes to an Azure Active Directory Domain Services (AD DS) domain.
+When provisioning nodes for a cluster, you might want to be able to perform custom configuration tasks during the operating system boot process, before any scheduler-driven changes take effect. These tasks can include, for example, updating path environment variables, configuring Domain Name System (DNS) name resolution settings, or binding nodes to a Microsoft Entra Domain Services (AD DS) domain.
 
 To implement this functionality, you decided to explore the use of cloud-init in Azure CycleCloud clusters and test it with a simple Bash script that modifies the content of a local file on each node. You intend to validate the outcome by connecting to cluster nodes and reviewing the content of the modified files.
 
@@ -20,7 +20,7 @@ In this exercise, you will perform the following tasks:
 
 To validate the execution of cloud-init scripts, you'll connect to cluster nodes with Azure CycleCloud CLI from Azure Cloud Shell. This connection relies on SSH key-based authentication, so you'll need to upload to the Azure Cloud Shell home directory the private key corresponding to the public key distributed to cluster nodes.
 
-1. If needed, from your computer, start any Azure portal-compatible web browser, navigate to [the Azure portal](https://portal.azure.com), and when prompted, authenticate with a Microsoft account or an Azure AD account that has the Contributor or Owner role in the Azure subscription you're using in this module.
+1. If needed, from your computer, start any Azure portal-compatible web browser, navigate to [the Azure portal](https://portal.azure.com), and when prompted, authenticate with a Microsoft account or a Microsoft Entra account that has the Contributor or Owner role in the Azure subscription you're using in this module.
 1. From the Azure portal, open the **Cloud Shell** by selecting its icon in the toolbar next to the search box and ensure that you're running a Bash session.
 1. Within the web browser window displaying the **Azure Cloud Shell** pane, in the pane's toolbar, select the fourth icon displaying a page with a pair of vertical arrows pointing in the opposite directions. Then, in the drop-down menu, select **Upload**.
 1. In the **Open** dialog box, navigate to the location of the **.pem** file containing the private key and select **Open**.

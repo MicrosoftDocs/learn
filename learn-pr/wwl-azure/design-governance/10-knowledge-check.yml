@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-governance.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/15/2023
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "How can Tailwind Traders ensure policies are implemented across multiple subscriptions?"
+    choices:
+    - content: "Add a resource tag that includes the required policy."
+      isCorrect: false
+      explanation: "Incorrect. Resource tagging provides extra information, or metadata, about your resources, but doesn't impact policy implementation."
+    - content: "Create a management group and place all the relevant subscriptions in the new management group."
+      isCorrect: true
+      explanation: "Correct. A management group could include all the subscriptions. Then a policy could be scoped to the management group and applied to all the subscriptions."
+    - content: "Add a resource group and place all the relevant subscriptions in it."
+      isCorrect: false
+      explanation: "Incorrect. A resource group is a logical container into which Azure resources like web apps, databases, and storage accounts are deployed and managed."
+  - content: "How can Tailwind Traders ensure applications use geo-redundancy to create highly available storage applications?"
+    choices:
+    - content: "Add a resource tag to each storage account for geo-redundant storage."
+      isCorrect: false
+      explanation: "Incorrect. Resource tagging just provides extra information, or metadata, about your resources."
+    - content: "Add a geo-redundant resource group to contain all the storage accounts."
+      isCorrect: false
+      explanation: "Incorrect. A resource group is a logical container into which Azure resources like web apps, databases, and storage accounts are deployed and managed."
+    - content: "Add an Azure policy that requires geo-redundant storage."
+      isCorrect: true
+      explanation: "Correct. An Azure policy can enforce different rules over your resource configurations."
+  - content: "How can Tailwind Traders report all the costs associated with a new product?"
+    choices:
+    - content: "Add a resource tag to identify which resources are used for the new product."
+      isCorrect: true
+      explanation: "Correct. Resource tagging provides extra information, or metadata, about your resources. You could then run a cost report on all resources with that tag."
+    - content: "Add a resource group and move all product assets into the group."
+      isCorrect: false
+      explanation: "Incorrect. The assets are dispersed across multiple departments. Moving the assets would be time consuming and difficult."
+    - content: "Add a spreadsheet and require each department to log their costs."
+      isCorrect: false
+      explanation: "Incorrect. A spreadsheet can be prone to errors."

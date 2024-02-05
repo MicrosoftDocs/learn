@@ -1,3 +1,4 @@
+
 _Caching_ is a common technique that aims to improve the performance and scalability of a system. Caching temporarily copies frequently accessed data to fast storage located close to the application. When the fast data storage is located closer to an application than its original data store, caching can significantly improve response times for client applications by serving data more quickly.
 
 Caching is most effective when a client instance repeatedly reads the same data, especially when the following conditions apply to the original data store:

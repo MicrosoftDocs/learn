@@ -5,10 +5,9 @@ metadata:
   description: Learn how to configure, protect, and isolate your networks in Azure.
   brand: azure
   ms.date: 10/1/2019
-  author: adrianstevens
-  ms.author: adsteven
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: learning-path
 title: Implement network security in Azure
 summary: |
   Learn how to configure, protect, and isolate your networks in Azure. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer).
@@ -32,7 +31,6 @@ products:
 subjects:
 - security
 modules:
-- learn.azure.secure-network-connectivity-azure
 - learn.configure-the-network-for-your-virtual-machines
 - learn.secure-and-isolate-with-nsg-and-service-endpoints
 - learn.end-to-end-encryption-with-app-gateway

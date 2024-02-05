@@ -1,6 +1,6 @@
 An Azure Compute Gallery simplifies custom image sharing across your organization. Custom images are like marketplace images, but you create them yourself. Custom images can be used to bootstrap deployment tasks like preloading applications, application configurations, and other OS configurations.
 
-The Azure Compute Gallery lets you share your custom VM images with others in your organization, within or across regions, within an Azure Active Directory tenant. Choose the images you want to share, the regions you want to make them available in, and who you want to share them with. You can create multiple galleries so that you can logically group shared images.
+The Azure Compute Gallery lets you share your custom VM images with others in your organization, within or across regions, within a Microsoft Entra tenant. Choose the images you want to share, the regions you want to make them available in, and who you want to share them with. You can create multiple galleries so that you can logically group shared images.
 
 The gallery is a top-level resource that provides full Azure role-based access control (RBAC). Images can be versioned, and you can choose to replicate each image version to a different set of Azure regions. The gallery only works with Managed Images.
 
@@ -15,7 +15,7 @@ Azure Compute Gallery is a service that helps you build structure and organizati
 
 Using an Azure Compute Gallery you can share your images to different users, service principals, or AD groups within your organization. Shared images can be replicated to multiple regions, for quicker scaling of your deployments.
 
-Use an Azure Compute Gallery as a repository for images you wan to make available within your company.
+Use an Azure Compute Gallery as a repository for images you want to make available within your company.
 
 The Azure Compute Gallery feature has multiple resource types:<br>
 

@@ -7,6 +7,7 @@ You've created a standard environment for the developers in your agency who work
 
 ## Learn more
 
+- [Development Containers Specification](https://containers.dev/implementors/spec/)
 - [Dev Containers tutorial](https://code.visualstudio.com/docs/remote/containers-tutorial)
 - [Learn to create a development container](https://code.visualstudio.com/docs/remote/create-dev-container)
 - [Main Dev Containers documentation](https://code.visualstudio.com/docs/remote/containers)

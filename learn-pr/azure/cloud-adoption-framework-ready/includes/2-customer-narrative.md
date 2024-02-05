@@ -1,10 +1,10 @@
-In the getting-started module, we shared the narrative for Tailwind Traders. The central operations team and platform team at Tailwind Traders are experienced at managing the company's existing datacenters. The ongoing project to migrate two of the datacenters to Azure is already exposing a few critical learning curves that the company's current skill sets can't address.
+In the _Getting Started_ module, we shared the narrative for Tailwind Traders. The central operations team and platform team at Tailwind Traders are experienced at managing the company's existing datacenters. The ongoing project to migrate two of the datacenters to Azure is already exposing a few critical learning curves that the company's current skill sets can't address.
 
 ## Important constraints
 
 At this time, the business has placed a high priority on migration and meeting the time constraints to get out of the datacenter. Because of that business priority, the business and IT teams have deprioritized longer-term security and compliance requirements until they can complete development of their core cloud platform.
 
-Because Tailwind Traders is new to the cloud, very few members of operations, platform, or IT admin teams are experienced with the cloud. The company wants to slowly move into modern operations, security, and governance, but it still needs a cloud foundation that can scale to meet those needs as they become more important. 
+Because Tailwind Traders is new to the cloud, few members of operations, platform, or IT admin teams are experienced with the cloud. The company wants to slowly move into modern operations, security, and governance, but it still needs a cloud foundation that can scale to meet those needs as they become more important. 
 
 Historically, Tailwind Traders has operated purely from the perspective of central operations. As a result, the workload teams can't interact with production environments. The company doesn't have an easy way of mapping assets (virtual machines, data, and apps) to defined workloads, so the boundaries of each workload can be unclear at times.
 
@@ -13,7 +13,7 @@ Historically, Tailwind Traders has operated purely from the perspective of centr
 The operations and platform teams have agreed to the following alignment:
 
 - The conceptual architecture of Azure landing zones will serve as the long-term vision for the future state of the cloud environment. All affected teams will use that architecture as a basis for building cloud skills and configuring their cloud environment.
-- The teams will use the Azure landing zone accelerator get started with their environmental configuration.
+- The teams will use the Azure landing zone accelerator to get started with their environmental configuration.
 - If the teams need to customize their environment in the future, they'll use one of the custom implementation options that align to or extend the initial accelerator-based deployment.
 
 ## Deviation from standard Azure landing zone guidance
@@ -40,7 +40,7 @@ The following additional constraints might affect Tailwind's decisions.
 
 ### Operations
 
-The central operations team has organically built a set of processes and controls to manage the overall portfolio. The team depends on System Center Operations Manager and System Center Configuration Manager for its operations baseline.
+The central operations team has organically built a set of processes and controls to manage the overall portfolio. The team depends on System Center Operations Manager and Microsoft Configuration Manager for its operations baseline.
 
 The team has also integrated best-of-breed tools for virtual machine management, incident and configuration management tracking, network monitoring, security operations, and governance controls, among other tools. Most of these tools have built-in integration with Azure, which influenced the decision to use Azure as the company's primary cloud provider. Operating these tools requires significant people power and capital.
 
@@ -64,7 +64,7 @@ Although the company has grudgingly accepted this SLA, the new CIO is not impres
 
 ### Retail innovation
 
-The customer narrative from the getting-started module introduced you to the retail innovation team within Tailwind Traders. That team was originally a startup that Tailwind Traders acquired. The startup's original CEO is now Tailwind's chief technology officer (CTO). The CTO still runs that division like a startup, by prioritizing experimentation and innovation.
+The customer narrative from the _Getting Started_ module introduced you to the retail innovation team within Tailwind Traders. That team was originally a startup that Tailwind Traders acquired. The startup's original CEO is now Tailwind's chief technology officer (CTO). The CTO still runs that division like a startup, by prioritizing experimentation and innovation.
 
 The current processes for operations management require that all new innovations from that team go through a release process. The central operations team within IT reviews the architecture for security, governance, and operations management concerns. After the team is comfortable with the solution, it releases the solution into a centrally managed production environment. This process is expected to continue in the cloud.
 
@@ -72,7 +72,7 @@ The current processes for operations management require that all new innovations
 
 Active Directory is the identity store and the primary tool for authentication and access control across the Tailwind Traders datacenters. The company has used some best-of-breed systems to extend identity into a multifactor authentication solution. The company has also federated identities to deploy its Microsoft 365 solution. But even with those, Active Directory is how Tailwind Traders manages identity.
 
-In the cloud, the company now has more options, like Azure Active Directory or Azure Active Directory Domain Services running in an infrastructure as a service (IaaS) infrastructure. The central operations team is struggling to compare options and choose the best identity solution for its cloud adoption plans.
+In the cloud, the company now has more options, like Microsoft Entra ID or Microsoft Entra Domain Services running in an infrastructure as a service (IaaS) infrastructure. The central operations team is struggling to compare options and choose the best identity solution for its cloud adoption plans.
 
 ### Network topology and connectivity
 

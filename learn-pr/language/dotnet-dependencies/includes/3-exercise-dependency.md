@@ -5,9 +5,9 @@ The developers at Tailwind Traders realize that they're about to put extensive r
 At this point, the developers want you to install Humanizer, write a couple of data manipulations, and run them to see if Humanizer delivers on its promise.
 
 > [!NOTE]
-> This module uses the .NET CLI (Command Line Interface) and Visual Studio Code for local development. After completing this module, you can apply the concepts using Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
+> This module uses the .NET CLI (Command Line Interface) and Visual Studio Code for local development. After completing this module, you can apply the concepts using Visual Studio (Windows) or continued development using Visual Studio Code (Windows, Linux, and macOS).
 
-[!include[](../../../includes/dotnet6-sdk-version.md)]
+[!include[](../../../includes/dotnet8-sdk-version.md)]
 
 ## Create a sample .NET project
 
@@ -19,10 +19,10 @@ To set up a .NET project to work with dependencies, we'll use Visual Studio Code
 
 1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
 
-1. In the terminal window, copy and paste the following command.
+1. In the terminal window, copy and paste the following command:
 
     ```dotnetcli
-    dotnet new console -f net6.0
+    dotnet new console -f net8.0
     ```
 
     This command creates a **Program.cs** file in your folder with a basic "Hello World" program already written, along with a C# project file named **DotNetDependencies.csproj**.
@@ -65,7 +65,7 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
     Console.WriteLine("Hello, World!");
     ```
 
-    The preceding function is run at the start of the application and outputs a string to the console. Let's add Humanizer and manipulate data and write it to the console.
+    The preceding function runs at the start of the application and outputs a string to the console. Let's add Humanizer and manipulate data and write it to the console.
 
 1. Install the Humanizer library by running the following command:
 

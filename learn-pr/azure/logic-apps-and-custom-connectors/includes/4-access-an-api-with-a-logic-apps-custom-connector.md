@@ -1,4 +1,4 @@
-As the lead developer for a print framing company, you want to call an in-house, custom-built Web API from your workflow in Azure Logic Apps. The API calculates a price for a picture frame, based on the dimensions of the frame. To access the API from your Azure Logic Apps workflow, you'll need to create your own connector.
+As the lead developer for a print-framing company, you want to call an in-house, custom-built Web API from your workflow in Azure Logic Apps. The API calculates a price for a picture frame based on the dimensions of the frame. To access the API from your Azure Logic Apps workflow, you'll need to create your own connector.
 
 In this unit, you'll learn how to create and use custom connectors in an Azure Logic Apps workflow.
 
@@ -47,11 +47,10 @@ An OpenAPI definition file is a JSON file that lists the API's methods, paramete
    });
    ```
 
-   At deployment, this code installs the Swagger UI, which is a web page that you can use to test your Web API methods. The code also generates and publishes a JSON file that describes your API and is compliant with the OpenAPI standard. You can download and use the JSON file to create a custom connector in Azure Logic Apps.
+   At deployment, this code installs the Swagger UI, which is a web page you can use to test your Web API methods. The code also generates and publishes a JSON file that describes your API and is compliant with the OpenAPI standard. You can download and use the JSON file to create a custom connector in Azure Logic Apps.
 
    > [!NOTE]
-   > In the previous exercise, you deployed a prebuilt Web API to Azure. By default, this deployment included the preceding 
-   > Swagger code. In the next exercise, you'll upload the Swagger-created OpenAPI file to the custom connector.
+   > In the previous exercise, you deployed a prebuilt Web API to Azure. By default, this deployment included the preceding Swagger code. In the next exercise, you'll upload the Swagger-created OpenAPI file to the custom connector.
 
 ## Create a custom connector in the Azure portal
 
@@ -69,4 +68,4 @@ After you implement your description as a Postman collection or OpenAPI definiti
 
 1. Save your new connector.
 
-When you're done, you can use the connector in your Azure Logic Apps workflow. The next exercise shows how to create your own connector.
+When you're done, you can use the connector in your Azure Logic Apps workflow. The next exercise shows you how to create your own connector.

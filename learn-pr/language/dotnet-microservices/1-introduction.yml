@@ -3,14 +3,14 @@ uid: learn.languages.dotnet-microservices.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Microservices are a great way to address modern business application needs. In this module you'll learn more about what microservices are, why you'd want to use them, and how to build your first microservce in .NET.
-  ms.date: 05/10/2021
+  description: Learn more about what containers and microservices are, why you'd want to use them, and how to build your first microservices in .NET with containers and Docker.
+  ms.date: 01/22/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - devx-track-dotnet
   ms.contributors:
   - masoucou-05122021
 durationInMinutes: 1

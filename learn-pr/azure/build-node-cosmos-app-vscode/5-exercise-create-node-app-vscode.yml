@@ -8,8 +8,9 @@ metadata:
   author: seesharprun
   ms.author: sidandrews
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-js
 azureSandbox: true
 durationInMinutes: 10
 content: |

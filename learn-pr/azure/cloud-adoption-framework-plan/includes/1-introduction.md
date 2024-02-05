@@ -1,15 +1,15 @@
-Cloud adoption is a change-management exercise. You make a number of technical decisions and efforts along the way, but the ultimate success of any cloud-adoption effort is defined by the quality of your cloud-adoption plan.
+Cloud adoption is a change-management exercise. You make several technical decisions and efforts along the way, but the ultimate success of any cloud-adoption effort is defined by the quality of your cloud-adoption plan.
 
-In this module, you'll learn how to build rich, data-driven cloud adoption plans.
+In this module, you learn how to build rich, data-driven cloud adoption plans.
 
 ## Learning objectives
 
 In this module, you'll:
 
-- Create an actionable cloud adoption plan
-- Understand your digital estate
-- Assess the digital estate with Azure Migrate and refine your plan
-- Establish a skills readiness plan to prepare the team
+- Create an actionable cloud adoption plan.
+- Understand your digital estate.
+- Assess the digital estate with Azure Migrate and refine your plan.
+- Establish a skills-readiness plan to prepare the team.
 
 ## Prerequisites
 

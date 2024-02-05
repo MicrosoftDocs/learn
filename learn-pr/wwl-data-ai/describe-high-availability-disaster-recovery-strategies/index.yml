@@ -3,11 +3,10 @@ uid: learn.wwl.describe-high-availability-disaster-recovery-strategies
 metadata:
   title: Describe high availability and disaster recovery strategies
   description: "Describe high availability and disaster recovery strategies"
-  ms.date: 07/13/2022
+  ms.date: 06/21/2023
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Describe high availability and disaster recovery strategies
 summary: Plan an appropriate high availability and disaster recovery strategy based on recovery time objective and recovery point objective. Choose the best solution for IaaS or PaaS deployments or hybrid workloads.
 abstract: |
@@ -18,7 +17,7 @@ abstract: |
 prerequisites: |
   - Experience creating and configuring resources using the Azure portal.
   - Basic understanding of SQL Server file storage.
-iconUrl: /training/achievements/describe-high-availability-and-disaster-recovery-strategies.svg
+iconUrl: /learn/achievements/describe-high-availability-and-disaster-recovery-strategies.svg
 levels:
 - intermediate
 roles:

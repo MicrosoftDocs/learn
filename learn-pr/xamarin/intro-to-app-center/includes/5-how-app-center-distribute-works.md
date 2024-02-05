@@ -27,7 +27,7 @@ For example, you may have an app that is available on iOS and Android. With a sh
 
 New users can be added to distribution groups by email address. The added user is sent an email to join the group.
 
-Additionally, users can also be added from Azure Active Directory (AAD) groups. First, you link an AAD tenant to your organization's App Center subscription. Once the tenant is linked, you can start adding AAD groups to your App Center distribution groups.
+Additionally, users can also be added from Microsoft Entra groups. First, you link a Microsoft Entra tenant to your organization's App Center subscription. Once the tenant is linked, you can start adding Microsoft Entra groups to your App Center distribution groups.
 
 ## Manage iOS devices automatically
 

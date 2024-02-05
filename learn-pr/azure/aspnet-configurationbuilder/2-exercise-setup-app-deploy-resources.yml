@@ -7,8 +7,10 @@ metadata:
   ms.date: 06/30/2020
   author: coderandhiker
   ms.author: chrisrt
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurepowershell
 durationInMinutes: 5
 interactive: powershell
 azureSandbox: true

@@ -13,7 +13,7 @@ Microsoft Purview's solutions in the governance portal provide a unified data go
 
 Microsoft Purview automates data discovery by providing data scanning and classification for assets across your data estate. Metadata and descriptions of discovered data assets are integrated into a holistic map of your data estate. Microsoft Purview Data Map provides the foundation for data discovery and data governance. Microsoft Purview Data Map is a cloud native PaaS service that captures metadata about enterprise data present in analytics and operation systems on-premises and cloud. Microsoft Purview Data Map is automatically kept up to date with built-in automated scanning and classification system. Business users can configure and use the data map through an intuitive UI and developers can programmatically interact with the Data Map using open-source Apache Atlas 2.2 APIs. Microsoft Purview Data Map powers the Microsoft Purview Data Catalog, the Microsoft Purview Data Estate Insights and the Microsoft Purview Data Policy as unified experiences within the [Microsoft Purview governance portal](https://web.purview.azure.com/resource/).
 
-For more information, see our [introduction to Data Map](https://learn.microsoft.com/azure/purview/concept-elastic-data-map).
+For more information, see our [introduction to Data Map](/azure/purview/concept-elastic-data-map).
 
 Atop the Data Map, there are purpose-built apps that create environments for data discovery, access management, and insights about your data landscape.
 
@@ -27,19 +27,19 @@ Atop the Data Map, there are purpose-built apps that create environments for dat
 
 ### Data Catalog app
 
-With the Microsoft Purview Data Catalog, business and technical users can quickly and easily find relevant data using a search experience with filters based on lenses such as glossary terms, classifications, sensitivity labels and more. For subject matter experts, data stewards and officers, the Microsoft Purview Data Catalog provides data curation features such as business glossary management and the ability to automate tagging of data assets with glossary terms. Data consumers and producers can also visually trace the lineage of data assets: for example, starting from operational systems on-premises, through movement, transformation & enrichment with various data storage and processing systems in the cloud, to consumption in an analytics system like Power BI. For more information, see our [introduction to search using Data Catalog](https://learn.microsoft.com/azure/purview/how-to-search-catalog).
+With the Microsoft Purview Data Catalog, business and technical users can quickly and easily find relevant data using a search experience with filters based on lenses such as glossary terms, classifications, sensitivity labels and more. For subject matter experts, data stewards and officers, the Microsoft Purview Data Catalog provides data curation features such as business glossary management and the ability to automate tagging of data assets with glossary terms. Data consumers and producers can also visually trace the lineage of data assets: for example, starting from operational systems on-premises, through movement, transformation & enrichment with various data storage and processing systems in the cloud, to consumption in an analytics system like Power BI. For more information, see our [introduction to search using Data Catalog](/azure/purview/how-to-search-catalog).
 
 ### Data Estate Insights app
 
 With the Microsoft Purview Data Estate Insights, the chief data officers and other governance stakeholders can get a bird’s eye view of their data estate and can gain actionable insights into the governance gaps that can be resolved from the experience itself.
 
-For more information, see our [introduction to Data Estate Insights](https://learn.microsoft.com/azure/purview/concept-insights).
+For more information, see our [introduction to Data Estate Insights](/azure/purview/concept-insights).
 
 ### Data Sharing app
 
 Microsoft Purview Data Sharing enables organizations to securely share data both within your organization or cross organizations with business partners and customers. You can share or receive data with just a few clicks. Data providers can centrally manage and monitor data sharing relationships, and revoke sharing at any time. Data consumers can access received data with their own analytics tools and turn data into insights.
 
-For more information, see our [introduction to Data Sharing](https://learn.microsoft.com/azure/purview/concept-data-share).
+For more information, see our [introduction to Data Sharing](/azure/purview/concept-data-share).
 
 ### Data Policy app
 
@@ -64,10 +64,10 @@ Before applying these recommendations to your environment, you should consult yo
 
 Microsoft Purview is a Platform as a Service (PaaS) solution in Azure. You can enable the following network security capabilities for your Microsoft Purview accounts:
 
--   Enable [end-to-end network isolation](https://learn.microsoft.com/azure/purview/catalog-private-link-end-to-end) using Private Link Service.
--   Use [Microsoft Purview Firewall](https://learn.microsoft.com/azure/purview/catalog-private-link-end-to-end#firewalls-to-restrict-public-access) to disable Public access.
--   Deploy [Network Security Group (NSG) rules](https://learn.microsoft.com/azure/purview/concept-best-practices-security#use-network-security-groups) for subnets where Azure data sources private endpoints, Microsoft Purview private endpoints and self-hosted runtime VMs are deployed.
--   Implement Microsoft Purview with private endpoints managed by a Network Virtual Appliance, such as [Azure Firewall](https://learn.microsoft.com/azure/firewall/overview) for network inspection and network filtering.
+-   Enable [end-to-end network isolation](/azure/purview/catalog-private-link-end-to-end) using Private Link Service.
+-   Use [Microsoft Purview Firewall](/azure/purview/catalog-private-link-end-to-end#firewalls-to-restrict-public-access) to disable Public access.
+-   Deploy [Network Security Group (NSG) rules](/azure/purview/concept-best-practices-security#use-network-security-groups) for subnets where Azure data sources private endpoints, Microsoft Purview private endpoints and self-hosted runtime VMs are deployed.
+-   Implement Microsoft Purview with private endpoints managed by a Network Virtual Appliance, such as [Azure Firewall](/azure/firewall/overview) for network inspection and network filtering.
 
 ### Access management
 
@@ -78,8 +78,8 @@ Related to roles and access management in Microsoft Purview, you can apply the f
 -   Define roles and responsibilities to manage Microsoft Purview in control plane and data plane:
     -   Define roles and tasks required to deploy and manage Microsoft Purview inside an Azure subscription.
     -   Define roles and task needed to perform data management and governance using Microsoft Purview.
--   Assign roles to Azure Active Directory groups instead of assigning roles to individual users.
--   Use Azure [Active Directory Entitlement Management](https://learn.microsoft.com/azure/active-directory/governance/entitlement-management-overview) to map user access to Azure AD groups using Access Packages.
+-   Assign roles to Microsoft Entra groups instead of assigning roles to individual users.
+-   Use Azure [Active Directory Entitlement Management](/azure/active-directory/governance/entitlement-management-overview) to map user access to Microsoft Entra groups using Access Packages.
 -   Enforce multi-factor authentication for Microsoft Purview users, especially, for users with privileged roles such as collection admins, data source admins or data curators.
 
 ### Threat protection and preventing data exfiltration

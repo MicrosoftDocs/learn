@@ -1,6 +1,13 @@
 ## Logging and auditing in Microsoft cloud security benchmark
 
-Microsoft cloud security benchmark provides guidance on designing logging capabilities, which is summarized in the following table. For more complete information about these controls, see [Microsoft cloud security benchmark - Logging and threat detection](https://learn.microsoft.com/security/benchmark/azure/mcsb-logging-threat-detection)
+Microsoft cloud security benchmark provides guidance on designing logging capabilities, which is summarized in the following table. For more complete information about these controls, see [Microsoft cloud security benchmark - Logging and threat detection](/security/benchmark/azure/mcsb-logging-threat-detection)
+
+Please refer to [Introduction to Microsoft Cybersecurity Reference Architecture and cloud security benchmark](/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/1-introduction-reference-architecture-benchmark) for more background on Microsoft Cloud Security Benchmark. 
+
+In the summary below, we have included controls from the full baseline where:
+
+* Security controls were *supported* but *not* enabled by default
+* There was explicit guidance which contained action to be taken on the part of the customer
 
 | Control number | Title | Summary |
 |---|---|---|
@@ -50,12 +57,12 @@ The following diagram gives a high-level view of Azure Monitor.
 
 The diagram depicts the Azure Monitor system components:
 
--   The **[data sources](https://learn.microsoft.com/azure/azure-monitor/data-sources)** are the types of data collected from each monitored resource. The data is collected and routed to the **data platform**.
--   The **[data platform](https://learn.microsoft.com/azure/azure-monitor/data-platform)** is made up of the data stores for collected data. Azure Monitor's data platform has stores for metrics, logs, traces, and changes.
+-   The **[data sources](/azure/azure-monitor/data-sources)** are the types of data collected from each monitored resource. The data is collected and routed to the **data platform**.
+-   The **[data platform](/azure/azure-monitor/data-platform)** is made up of the data stores for collected data. Azure Monitor's data platform has stores for metrics, logs, traces, and changes.
 -   The functions and components that consume data include analysis, visualizations, insights, and responses.
 -   Services that integrate with Azure Monitor to provide additional functionality and are integrated throughout the system.
 <!--
-[](https://learn.microsoft.com/azure/azure-monitor/overview#data-sources)
+[](/azure/azure-monitor/overview#data-sources)
 -->
 
 ### Data sources
@@ -70,12 +77,12 @@ Azure Monitor collects these types of data:
 |---------|---------|
 |Application|Data about the performance and functionality of your application code on any platform.|
 |Infrastructure|**- Container.** Data about containers, such as Azure Kubernetes Service, Prometheus, and about the applications running inside containers.<br>**- Operating system.** Data about the guest operating system on which your application is running.|
-|Azure Platform|**- Azure resource**. The operation of an Azure resource.<br>**- Azure subscription.** The operation and management of an Azure subscription, and data about the health and operation of Azure itself.<br>**- Azure tenant.** Data about the operation of tenant-level Azure services, such as Azure Active Directory.<br>**- Azure resource changes.** Data about changes within your Azure resources and how to address and triage incidents and issues.         |
+|Azure Platform|**- Azure resource**. The operation of an Azure resource.<br>**- Azure subscription.** The operation and management of an Azure subscription, and data about the health and operation of Azure itself.<br>**- Azure tenant.** Data about the operation of tenant-level Azure services, such as Microsoft Entra ID.<br>**- Azure resource changes.** Data about changes within your Azure resources and how to address and triage incidents and issues.         |
 |Custom Sources|Use the Azure Monitor REST API to send customer metric or log data to Azure Monitor and incorporate monitoring of resources that don’t expose monitoring data through other methods.|
 
-For detailed information about each of the data sources, see [data sources](https://learn.microsoft.com/azure/azure-monitor/data-sources).
+For detailed information about each of the data sources, see [data sources](/azure/azure-monitor/data-sources).
 <!--
-[](https://learn.microsoft.com/azure/azure-monitor/overview#data-collection-and-routing)
+[](/azure/azure-monitor/overview#data-collection-and-routing)
 -->
 
 ### Data collection and routing
@@ -92,9 +99,9 @@ Azure Monitor collects and routes monitoring data using several mechanisms, depe
 |Azure Monitor Agents|Azure Monitor Agent (AMA) collects monitoring data from the guest operating system of Azure and hybrid virtual machines and delivers it to Azure Monitor for use by features, insights, and other services, such as Microsoft Sentinel and Microsoft Defender for Cloud.|
 |Azure Monitor managed service for Prometheus|Azure Monitor managed service for Prometheus lets you collect and analyze metrics at scale using a Prometheus-compatible monitoring solution, based on the Prometheus project from the Cloud Native Compute Foundation.
 
-For detailed information about data collection, see [data collection](https://learn.microsoft.com/azure/azure-monitor/best-practices-data-collection).
+For detailed information about data collection, see [data collection](/azure/azure-monitor/best-practices-data-collection).
 <!--
-[](https://learn.microsoft.com/azure/azure-monitor/overview#data-platform)
+[](/azure/azure-monitor/overview#data-platform)
 -->
 
 ### Data platform

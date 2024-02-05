@@ -24,7 +24,7 @@ Follow these guidelines while you plan:
   Some configuration information will be overwritten during the upgrade. The information you may need to back up includes:
 
   - The authentication information for the packet core dashboards and the distributed tracing tool:
-    - The Kubernetes Secret Object YAML file if you use the [Azure active directory (AD) authentication method](/azure/private-5g-core/enable-azure-active-directory).
+    - The Kubernetes Secret Object YAML file if you use the [Microsoft Entra authentication method](/azure/private-5g-core/enable-azure-active-directory).
     - The sign-in credentials if you use the local usernames/passwords authentication method.
   - The customizations you made to the packet core dashboards. See the Grafana documentation for instructions on saving a backed-up copy of your dashboards.
   - The traces you want to retain for the distributed tracing tool.

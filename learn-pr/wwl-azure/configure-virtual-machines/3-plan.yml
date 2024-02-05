@@ -4,13 +4,12 @@ title: Plan virtual machines
 metadata:
   title: Plan virtual machines
   description: "Plan virtual machines"
-  ms.date: 12/22/2022
+  ms.date: 11/15/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/3-plan.md)]

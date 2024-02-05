@@ -5,10 +5,9 @@ metadata:
   title: Building and running the project
   description: Building and running the project.
   ms.date: 01/23/2023
-  author: edlamie80
-  ms.author: liydu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: timlt
+  ms.author: timlt
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/3-building-and-running-the-project.md)]

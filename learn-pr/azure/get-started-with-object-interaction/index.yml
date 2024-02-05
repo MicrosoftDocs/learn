@@ -3,7 +3,7 @@ uid: learn.azure.get-started-with-object-interaction-tutorials-mrtk
 metadata:
   title: Getting started with 3D object interaction
   description: This course will provide steps and procedures to follow on how to manipulate and interact with 3D objects. 
-  ms.date: 09/09/2021
+  ms.date: 06/26/2023
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.topic: interactive-tutorial
@@ -18,7 +18,6 @@ abstract: |
   - Learn how to use MRTK's menu prefabs
   - Learn how to interact with holograms using UI menus and buttons
   - Learn how to add text elements
-  - Learn how to spawn tooltips on objects dynamically
 iconUrl: /training/achievements/get-started-with-object-interaction-tutorials-mrtk.svg
 levels:
 - beginner
@@ -35,8 +34,8 @@ prerequisites: |
   - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/install-the-tools)
   - Windows 10 SDK 10.0.18362.0 or later
   - (Optional) A HoloLens 2 device configured for development
-  - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
-  - [Set up a mixed reality project in Unity module](/training/modules/mixed-reality-toolkit-project-unity)
+  - Unity Hub with Unity 2021.3 or later installed and the Universal Windows Platform Build Support module added
+  - [Complete the previous modules](/training/modules/place-scene-objects)
   - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
   - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
 

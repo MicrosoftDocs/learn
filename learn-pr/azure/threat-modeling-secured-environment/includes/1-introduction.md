@@ -1,24 +1,24 @@
 As we learned in the [Threat Modeling Security Fundamentals Learning Path](/training/modules/tm-introduction-to-threat-modeling/), threat modeling is an effective technique to help secure your systems, applications, networks, and services. It also helps you assess applications to use across [Privileged Access Workstations (PAW)](/security/compass/privileged-access-devices).
 
-PAW is a device used for administrative functions and critical asset management tasks. Examples include:
+PAW is a device used for administrative functions and critical asset management tasks, such as:
 
-- Changes to a domain controller
-- Access to a highly sensitive database
-- Termination of a critical resource
+- Changes to a domain controller.
+- Access to a highly sensitive database.
+- Termination of a critical resource.
 
 The sensitive nature of these tasks requires multiple layers of security controls to help prevent malicious attacks. Examples include:
 
-- Exclusive use of alternate credentials and associated smart cards in the environment
-- Restrictive password policies
-- Prohibited use of local administrative accounts
-- Device configuration change restrictions
-- Blocked usage of applications not previously approved by the security team
+- Exclusive use of alternate credentials and associated smart cards in the environment.
+- Restrictive password policies.
+- Prohibited use of local administrative accounts.
+- Device configuration change restrictions.
+- Blocked usage of applications not previously approved by the security team.
 
 Before the application is installed in a PAW, it needs to go through a security review process. It helps to identify potential threats and find ways to reduce or eliminate risk.
 
 ## Threat Modeling Framework
 
-The threat modeling framework is flexible and helps to identify how an application will integrate with the secured environment. It relies on the STRIDE methodology to find potential risks.
+The threat modeling framework is flexible and helps to identify how an application integrates with the secured environment. It relies on the STRIDE methodology to find potential risks.
 
 |Threat|Security control|Affected elements|
 |------|----------------|-----------------|
@@ -41,9 +41,9 @@ You need to threat model an application before installing it in a secured enviro
 
 ## Who can threat model an application to be used in a secured environment?
 
-Any IT security professional or security engineer with a basic understanding of security can threat model an application to be used in a secured environment.
+Any IT security professional or security engineer with a basic understanding of security.
 
-Give priority to IT security professionals or the security team directly involved with managing the secured environment, as they may be familiar with common security risks to look for.
+Give priority to IT security professionals or the security team directly involved with managing the secured environment, as they may already be familiar with common security risks.
 
 > [!TIP]
 > If you can, try to keep those wanting to use the application (e.g., IT admins) separated from those assessing it (e.g., IT security professional or engineer).
@@ -56,7 +56,7 @@ A vulnerable application allows an attacker to access critical resources that ca
 
 ## Learning objectives
 
-In this module, you'll explore the four steps in the threat modeling process for an application to be used in a secured environment and be able to:
+In this module, you explore the four steps in the threat modeling process for an application to be used in a secured environment. By the end of this module, you can:
 
 - Understand the importance of a well defined, open-ended questionnaire to get a better view of the application.
 - Visualize how the application interacts with the secured environment with a detailed data-flow diagram.

@@ -3,11 +3,11 @@ uid: learn.github.release-based-workflow-github
 metadata:
   title: "Manage software delivery by using a release based workflow on GitHub"
   description: Learn to implement a release based workflow on GitHub using project boards, branches, and releases.
-  ms.date: 07/08/2022
+  ms.date: 12/05/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: github
 title: "Manage software delivery by using a release based workflow on GitHub"
 summary: Learn to implement a release based workflow on GitHub using project boards, branches, and releases.
 abstract: |

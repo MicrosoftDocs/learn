@@ -6,8 +6,8 @@ metadata:
   ms.date: 01/31/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: spring-apps
 title: Migrate a Spring Cloud application to Azure
 summary: In this module, you'll create a git repo. Once created, the git repo, you'll create a config server for your Spring Cloud instance to connect to your repo. You'll then create a MySQL database service.
 abstract: |

@@ -7,8 +7,8 @@ metadata:
   author: saifeemustafaq
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: nextgen
+  ms.devlang: csharp
 title: Write your first program in C++
 summary: Get familiar with the C++ programming language! Construct a C++ program and learn basic C++ syntax. Also, learn how to identify and correct common programming errors.
 abstract: |

@@ -2,7 +2,7 @@ Controlling access to your company's data and applications is the foundation of 
 
 A challenge you may face in your organization is how to balance the ease of use with an authorization process while maintaining secure best practices. Setting up your team for success requires ease of access for the user under the umbrella of secure organizational requirements.
 
-Configuring authentication is the first step in ensuring secure software development in your enterprise. The good news is that using the tools available with your IdP is critical to getting the most value from GitHub.
+Configuring authentication is the first step in ensuring secure software development in your enterprise. The good news is that using the tools available with your identity provider (IdP) is critical to getting the most value from GitHub.
 
 ## Organization management through SAML SSO
 
@@ -15,7 +15,7 @@ As the Enterprise Administrator, you're responsible for the authorization of use
 You need to configure SAML SSO for a GitHub organization with the IdP you're using. If you have specific questions on how to implement SAML SSO with your chosen IdP, you can find details in the documentation for each supported IdP. Below is a list of the SAML IdPs that GitHub currently supports:
 
 - Active Directory Federation Services (AD FS)
-- Azure Active Directory (Azure AD)
+- Microsoft Entra ID
 - Okta
 - OneLogin
 - PingOne

@@ -63,6 +63,12 @@ Unlike the previous exercise, where you temporarily hosted your function locally
 
 Your function is now published to Azure and can be called from anywhere. As an HTTP-triggered function that responds to GET requests, it can be run from any browser. Let's try it:
 
-1. Select the invoke URL from the previous command's output to open it in a new browser tab. You'll see the same output we observed when we ran the function locally without providing the right query string parameters.
+1. Run the following command to get the invoke URL: 
+
+    ```azurecli
+    func azure functionapp list-functions "$FUNCTIONAPP" --show-keys
+    ```
+
+1. Paste the URL from the output into a new browser tab. You'll see the same output we observed when we ran the function locally without providing the right query string parameters.
 
 1. Add `&principal=5000&rate=.035&term=36` to the end of the URL (make sure you preserve the `code` parameter), and press <kbd>Enter</kbd>. The result returned is `6300.000000000001`, as expected.

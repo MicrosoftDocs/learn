@@ -7,9 +7,9 @@ metadata:
   ms.date: 06/29/2020
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-central
+  ms.topic: unit
   ms.custom: team=nextgen
+  ms.service: iot-central
 durationInMinutes: 10 # dummy number at present
 content: |
   [!include[](includes/11-how-remote-reboot-device-direct-methods.md)]

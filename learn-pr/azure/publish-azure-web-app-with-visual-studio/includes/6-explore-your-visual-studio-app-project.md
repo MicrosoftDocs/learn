@@ -6,15 +6,15 @@ You've created an ASP.NET Core web app in Visual Studio, and now you'll need to 
 
 ### Dependencies
 
-The dependencies folder contains the ASP.NET Core internals to get your app up and running. Unless you're adding specific third-party packages, you won't need to spend much time in this folder.
+The **Dependencies** folder contains the ASP.NET Core internals to get your app up and running. Unless you're adding specific third-party packages, you won't need to spend much time in this folder.
 
 ### Properties
 
-The properties folder contains configuration data for where you're hosting your web app. If you expand the **PublishProfiles** folder now, you should see the URL for the Alpine Ski Hill site. Each publishing profile is an .xml file containing publishing configuration information, such as the Azure address that Visual Studio uses to upload your files.
+The **Properties** folder contains configuration data for where you're hosting your web app. If you expand the **PublishProfiles** folder now, you should see the URL for the Alpine Ski Hill site. Each publishing profile is an .xml file containing publishing configuration information, such as the Azure address that Visual Studio uses to upload your files.
 
 ### wwwroot
 
-The wwwroot file contains all of your static assets for your site, such as the css, js, images, and lib files. When you are ready to style and add more functionality to your site, you will work in here.
+The **wwwroot** file contains all of your static assets for your site, such as the css, js, images, and lib files. When you're ready to style and add more functionality to your site, you'll work in here.
 
 ### Pages
 
@@ -32,15 +32,15 @@ This is a configuration file for ASP.NET Core.
 
 ### Program.cs
 
-The Program.cs file configures and launches the web host for your site.
+The **Program.cs** file configures and launches the web host for your site.
 
 ## Introduction to Razor templates
 
-We will want to make some basic changes to our website. You'll need to have a basic understanding of how to leverage Razor templates to customize your web app.
+We'll want to make some basic changes to our website. You'll need to have a basic understanding of how to leverage Razor templates to customize your web app.
 
 ## What is Razor?
 
-Razor is an ASP.NET syntax used to create dynamic web pages with C#. When a server reads a Razor page, the C# code is run before it renders the HTML. This allows you to generate dynamic content quickly.
+Razor is an ASP.NET syntax used to create dynamic web pages with C#. When a server reads a Razor page, the C# code runs before it renders the HTML. This allows you to generate dynamic content quickly.
 
 Razor uses `@` directives to tell ASP.NET how to process a page.
 
@@ -60,7 +60,7 @@ For example, take a look at the code in the `Privacy.cshtml` page:
 - The `@page` directive is telling ASP.NET to process this file as a Razor page.
 - The `@model` directive is telling ASP.NET to tie this Razor page with a C# class called `PrivacyModel`.
 
-Razor also uses the `@` symbol to transition between code and HTML. If you look at the preceding snippet, you'll notice `@{ ... }`. This is a **Razor code block**, which is *executed but not rendered*.
+Razor also uses the `@` symbol to transition between code and HTML. If you look at the preceding snippet, you'll notice `@{ ... }`. This is a **Razor code block**, which is _executed but not rendered_.
 
 To render the output of a code statement, use the `@` in front of a C# expression. There's an example in the preceding code block in the `<h1>` tag.
 

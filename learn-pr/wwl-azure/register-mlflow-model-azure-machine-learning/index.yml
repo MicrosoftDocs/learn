@@ -2,12 +2,12 @@
 uid: learn.wwl.register-mlflow-model-azure-machine-learning
 metadata:
   title: Register an MLflow model in Azure Machine Learning
-  description: "Register an MLflow model in Azure Machine Learning"
-  ms.date: 02/17/2023
+  description: "Azure Machine Learning Python SDK v2."
+  ms.date: 01/12/2024
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Register an MLflow model in Azure Machine Learning
 summary: Learn how to log and register an MLflow model in Azure Machine Learning.
 abstract: |
@@ -16,7 +16,7 @@ abstract: |
   - Understand the MLmodel format.
   - Register an MLflow model in Azure Machine Learning.
 prerequisites: ""
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/register-an-mlflow-model-in-azure-machine-learning.svg
 levels:
 - beginner
 roles:

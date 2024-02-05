@@ -17,7 +17,7 @@ The options that you can configure in the Pricing calculator vary between produc
 - **Programs and offers**: Your customer or subscription type might enable you to choose from specific licensing programs or other offers.
 - **Azure Dev/Test pricing**: This option lists the available prices for development and test workloads. Dev/Test pricing applies when you run resources within an Azure subscription that's based on a Dev/Test offer.
 
-Keep in mind that the Pricing calculator provides estimates and *not* actual price quotes. Actual prices can vary depending upon the date of purchase, the payment currency you're using, and the type of Azure customer you are.
+Keep in mind that the Pricing calculator provides estimates and *not* actual price quotes. Actual prices can vary depending upon the date of purchase, the payment currency you're using, and the type of Azure customer you're.
 
 ## Azure TCO calculator
 

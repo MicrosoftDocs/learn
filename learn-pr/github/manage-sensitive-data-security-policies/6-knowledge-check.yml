@@ -6,10 +6,9 @@ metadata:
   title: Knowledge check - Manage sensitive data and security policies 
   description: Knowledge check - Manage sensitive data and security policies module
   ms.date: 09/13/2021
-  author: sterling463
-  ms.author: csterling
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 5
 content: |
 quiz:
