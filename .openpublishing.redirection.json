@@ -33405,6 +33405,11 @@
       "source_path": "learn-pr/wwl-azure/azure-security-center/9-microsoft-cloud-security-benchmark.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-security-operations-new/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/2-mitre-attack.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-security-operations-new/",
+      "redirect_document_id": false
     }
   ]
 }
