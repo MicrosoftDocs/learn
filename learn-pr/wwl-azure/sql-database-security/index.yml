@@ -35,7 +35,6 @@ units:
 - learn.wwl.sql-database-security.sql-advanced-threat-protection
 - learn.wwl.sql-database-security.sql-vulnerability-assessment-express-and-classic-configurations
 - learn.wwl.sql-database-security.transparent-data-encryption​
-- learn.wwl.sql-database-security.knowledge-check
 - learn.wwl.sql-database-security.summary
 badge:
   uid: learn.wwl.sql-database-security.badge
