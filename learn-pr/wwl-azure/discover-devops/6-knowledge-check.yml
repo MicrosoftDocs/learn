@@ -20,7 +20,7 @@ quiz:
       explanation: "Correct. DevOps promotes coordination and collaboration between traditionally siloed roles, spanning such areas as development, operations, quality engineering, and security."
     - content: "To promote manual operational practices."
       isCorrect: false
-      explanation: "Incorrect. Traditional operational practices are frequently based on an outdated, largely manual approach, which is inherently slow and particularly vulnerable to human errors."
+      explanation: "Incorrect. Traditional operational practices are frequently based on an outdated, largely manual approach, which is inherently slow and vulnerable to human errors."
     - content: "To separate development and operational teams."
       isCorrect: false
       explanation: "Incorrect. This approach leads to inefficiencies and clashes between different parts of the internal IT organization."
@@ -34,12 +34,12 @@ quiz:
       explanation: "Incorrect. DevOps emphasizes collaboration and teamwork."
     - content: "To increase the number of manual processes in software development."
       isCorrect: false
-      explanation: "Incorrect. DevOps aims to automate processes and reduce manual work."
+      explanation: "Incorrect. DevOps aims to automate processes and to reduce manual work."
   - content: "What is the purpose of continuous integration (CI) during the development phase?"
     choices:
     - content: "To apply changes in small increments through automated testing and build."
       isCorrect: true
-      explanation: "Correct.Continuous integration (CI) during the development phase involves applying changes in small increments through automated testing and build."
+      explanation: "Correct. Continuous integration (CI) during the development phase involves applying changes in small increments through automated testing and build."
     - content: "To manually test and build artifacts in small increments."
       isCorrect: false
       explanation: "Incorrect. Continuous integration (CI) during the development phase involves applying changes in small increments through automated testing and build."
