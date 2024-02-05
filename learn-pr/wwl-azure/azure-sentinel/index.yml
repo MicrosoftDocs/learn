@@ -29,7 +29,6 @@ products:
 subjects:
 - threat-protection
 units:
-- learn.wwl.azure-sentinel.introduction
 - learn.wwl.azure-sentinel.workbooks
 - learn.wwl.azure-sentinel.playbooks
 - learn.wwl.azure-sentinel.knowledge-check
