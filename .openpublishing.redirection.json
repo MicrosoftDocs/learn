@@ -33455,6 +33455,11 @@
       "source_path": "learn-pr/wwl-azure/azure-sentinel/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-security-operations-new/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-sentinel/3-data-connections.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-security-operations-new/",
+      "redirect_document_id": false
     }
   ]
 }
