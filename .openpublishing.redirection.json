@@ -33055,6 +33055,246 @@
       "source_path": "learn-pr/wwl-azure/perimeter-security/8-forced-tunneling.md",
       "redirect_url": "/training/paths/secure-networking/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/application-security/index.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/application-security/4-app-registration.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/application-security/8-app-service-environment.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/application-security/12-app-service-environment-certificates.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/application-security/10-app-service-environment-networking.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/application-security/11-availability-zone-support-for-app-service-environments.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/application-security/3-azure-ad-application-scenarios.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/application-security/9-azure-app-service-plan.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/application-security/7-azure-app-services.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/application-security/13-demonstration.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/application-security/1-introduction.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/application-security/14-knowledge-check.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/application-security/6-managed-identities.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/application-security/5-microsoft-graph-permissions.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/application-security/2-microsoft-identity-platform.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/application-security/15-summary.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-key-vault/index.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-key-vault/3-access.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-key-vault/12-azure-hardware-security-module.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-key-vault/2-azure-key-vault.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-key-vault/5-certificates.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-key-vault/7-customer-managed-keys.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-key-vault/11-demonstration.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-key-vault/4-example.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-key-vault/1-introduction.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-key-vault/9-key-rotation.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-key-vault/6-keys.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-key-vault/13-knowledge-check.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-key-vault/10-safety.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-key-vault/8-secrets.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-key-vault/14-summary.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enable-containers-security/index.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enable-containers-security/3-configure-azure-container-instances-security.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enable-containers-security/9-configure-azure-kubernetes-services-networking.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enable-containers-security/10-deploy-azure-kubernetes-services-storage.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enable-containers-security/6-enable-azure-container-registry-authentication.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enable-containers-security/5-explore-azure-container-registry.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enable-containers-security/2-explore-containers.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enable-containers-security/8-implement-azure-kubernetes-services-architecture.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enable-containers-security/1-introduction.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enable-containers-security/13-knowledge-check.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enable-containers-security/12-manage-azure-kubernetes-service-using-azure-role-based-access-controls.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enable-containers-security/4-manage-security-azure-container-instances.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enable-containers-security/7-review-azure-kubernetes-service.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enable-containers-security/11-secure-azure-kubernetes-service-active-directory.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enable-containers-security/14-summary.md",
+      "redirect_url": "/training/paths/secure-networking/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/manage-security-operation/index.md",
+      "redirect_url": "/training/paths/manage-security-operations-new/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/secure-your-data-applications/index.md",
+      "redirect_url": "/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
     }
   ]
 }
