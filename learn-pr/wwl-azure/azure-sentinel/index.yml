@@ -33,7 +33,6 @@ units:
 - learn.wwl.azure-sentinel.workbooks
 - learn.wwl.azure-sentinel.incidents
 - learn.wwl.azure-sentinel.playbooks
-- learn.wwl.azure-sentinel.hunting
 - learn.wwl.azure-sentinel.knowledge-check
 - learn.wwl.azure-sentinel.summary
 badge:
