@@ -33095,6 +33095,11 @@
       "source_path": "learn-pr/wwl-azure/application-security/9-azure-app-service-plan.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/application-security/7-azure-app-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
     }
   ]
 }
