@@ -30,7 +30,6 @@ products:
 subjects:
 - security
 units:
-- learn.wwl.azure-key-vault.keys
 - learn.wwl.azure-key-vault.secrets
 - learn.wwl.azure-key-vault.safety
 - learn.wwl.azure-key-vault.knowledge-check
