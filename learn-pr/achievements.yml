@@ -2883,3 +2883,8 @@ achievements:
   title: Enable Containers security
   summary: Explore how to secure your applications running within containers and how to securely connect to them.
   iconUrl: /training/achievements/container-security.svg
+- uid: learn.wwl.manage-security-operation.trophy
+  type: trophy
+  title: 'AZ-500: Manage security operation'
+  summary: Once you have deployed and secured your Azure environment, learn to monitor, operate, and continuously improve the security of your solutions.
+  iconUrl: /training/achievements/operation-manage-security.svg
