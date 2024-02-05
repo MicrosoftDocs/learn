@@ -33075,6 +33075,11 @@
       "source_path": "learn-pr/wwl-azure/application-security/12-app-service-environment-certificates.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/application-security/10-app-service-environment-networking.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
     }
   ]
 }
