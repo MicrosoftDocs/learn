@@ -1,10 +1,10 @@
-In previous units, you've learned how to create a serverless web service Azure Function from a Maven archetype, how to build and run your function in the Cloud Shell, and how to configure your shell environment to test your function.
+In previous units, you learned how to create a serverless web service Azure Function from a Maven archetype. You also learned how to build and run your function in the Cloud Shell, and how to configure your shell environment to test your function.
 
-In this exercise, you'll apply the knowledge that you've gained to open an HTTP port in the Cloud Shell for testing your function. You'll build and run your function in the shell, and you'll create an API URL to test your function using a web browser.
+In this exercise, you apply the knowledge you gained to open an HTTP port in the Cloud Shell for testing your function. Then, build and run your function in the Cloud Shell, and create an API URL to test your function using a web browser.
 
 ## Opening an HTTP port for testing
 
-Before you can test your function remotely, you'll need to open a port so that HTTP requests are mapped to your function. This action will generate a public URL that you'll use later in this exercise to test your function.
+Before you can test your function remotely, you need to open a port so that HTTP requests are mapped to your function. This action generates a public URL that you use later in this exercise to test your function.
 
 1. In the Azure Cloud Shell, use the following cURL command to open an HTTP port for testing:
 
@@ -12,13 +12,13 @@ Before you can test your function remotely, you'll need to open a port so that H
     curl -X POST http://localhost:8888/openPort/7071
     ```
 
-1. When the port is open, you will see a JSON response that resembles the following example:
+1. When the port is open, you see a JSON response that resembles the following example:
 
     ```json
     {"message":"Port 7071 is open","url":"https://gateway.westus.console.azure.com/n/cc-12345678/cc-12345678/proxy/7071/"}
     ```
 
-    The JSON response will be concatenated into a single line as illustrated in the preceding example. However, the following example demonstrates what the JSON response would resemble if it was formatted:
+    The JSON response is concatenated into a single line as illustrated in the preceding example. However, the following example demonstrates what the JSON response would resemble if it was formatted:
 
     ```json
     {
@@ -29,11 +29,11 @@ Before you can test your function remotely, you'll need to open a port so that H
 
     This example should help you examine the data that is contained in the response.
 
-1. Copy the URL from the JSON response in your instance of the Cloud Shell. Later in this exercise, you'll use that URL to test your function in a web browser.
+1. Copy the URL from the JSON response in your instance of the Cloud Shell. Later in this exercise, you use that URL to test your function in a web browser.
 
 ## Building and running your function in the Cloud Shell
 
-After you have opened your port for testing, you're able to build and run your function.
+After you open your port for testing, you're able to build and run your function.
 
 1. In the Azure Cloud Shell, change to the root folder for your application. For example:
 
@@ -47,7 +47,7 @@ After you have opened your port for testing, you're able to build and run your f
     mvn clean package
     ```
 
-    Maven will display a running status of the build process. The first time that you build your function, Maven will download dozens of supporting files; these files are the dependencies that are listed in your *pom.xml* and *host.json* files. The following excerpt shows an abbreviated example of a successful build:
+    Maven displays a running status of the build process. The first time that you build your function, Maven downloads dozens of supporting files; these files are the dependencies that are listed in your *pom.xml* and *host.json* files. The following excerpt shows an abbreviated example of a successful build:
 
     ```output
     [INFO] Scanning for projects...
@@ -66,13 +66,13 @@ After you have opened your port for testing, you're able to build and run your f
     [INFO] ------------------------------------------------------------------------
     ```
 
-1. When Maven has finished building and packaging your function, use the following Maven command to run your function:
+1. When Maven finishes building and packaging your function, use the following Maven command to run your function:
 
     ```bash
     mvn azure-functions:run
     ```
 
-    Maven will display a running status of the startup process. The following excerpt shows an abbreviated example of a successful startup:
+    Maven displays a running status of the startup process. The following excerpt shows an abbreviated example of a successful startup:
 
     ```output
     [INFO] Scanning for projects...
@@ -118,12 +118,12 @@ After you have opened your port for testing, you're able to build and run your f
     ```
     /api/HttpExample
     ```
-    
-    You'll use that URL excerpt in the next section of this exercise to test your function in a web browser.
+
+   You use that URL excerpt in the next section of this exercise to test your function in a web browser.
 
 ## Testing the function from your web browser
 
-Earlier in this exercise, you opened an HTTP port for testing; this port will enable you to test your application in a web browser. To do so, use the following steps.
+Earlier in this exercise, you opened an HTTP port for testing; this port enables you to test your application in a web browser. To do so, use the following steps.
 
 1. Construct the URL for your function's API:
 
@@ -149,7 +149,7 @@ Earlier in this exercise, you opened an HTTP port for testing; this port will en
 
 1. Open a new tab in your web browser, and paste the fully constructed URL from the previous steps into the address field.
 
-1. When you instruct your web browser to request the URL, you will see a plaintext message returned to your web browser that is personalized for the name you passed in the query string. For example:
+1. When you instruct your web browser to request the URL, you see a plaintext message returned to your web browser that is personalized for the name you passed in the query string. For example:
 
     ```output
     Hello, Bob
@@ -183,8 +183,8 @@ Earlier in this exercise, you opened an HTTP port for testing; this port will en
     [1/1/20 7:08:13 AM] }
     ```
 
-If you do not see any errors, then you have successfully tested your function locally!
+If you don't see any errors, then you successfully tested your function locally!
 
 Before continuing, switch back to the Cloud Shell and press <kbd>Ctrl+C</kbd> to close the test server.
 
-In the next unit, you'll learn how to deploy your function to Azure Functions.
+In the next unit, you learn how to deploy your function to Azure Functions.

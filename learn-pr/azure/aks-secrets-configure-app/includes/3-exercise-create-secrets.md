@@ -17,24 +17,31 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
 
 [!INCLUDE [azure-optional-exercise-subscription-note](../../../includes/azure-optional-exercise-subscription-note.md)]
 
-1. Create environment variables for your resource group, cluster, and location. Make sure you update the LOCATION variable with the region closest to you, for example, `eastus`.
+1. Create environment variables for your resource group, cluster, DNS zone, and location. Make sure you update the LOCATION variable with the region closest to you, for example, `eastus`.
 
     ```azurecli-interactive
     export RESOURCE_GROUP=rg-ship-manager
     export CLUSTER_NAME=ship-manager-cluster
+    export ZONE_NAME=ship-$RANDOM.com
     export LOCATION={location}
     ```
 
-    > [!IMPORTANT]
-    > Make a note of the `RESOURCE_GROUP` and `CLUSTER_NAME` variables for later use.
+1. Run the following command to view the values of your environment variables and make a note of them for later use.
 
-2. Create a resource group using the `az group create` command.
+    ```azurecli-interactive
+    echo "RESOURCE_GROUP:" $RESOURCE_GROUP
+    echo "CLUSTER_NAME:"$CLUSTER_NAME
+    echo "ZONE_NAME:" $ZONE_NAME
+    echo "LOCATION:"$LOCATION
+    ```
+
+1. Create a resource group using the `az group create` command.
 
     ```azurecli-interactive
     az group create --location $LOCATION --name $RESOURCE_GROUP
     ```
 
-3. Create an AKS cluster using the `az aks create` command.
+1. Create an AKS cluster using the `az aks create` command.
 
     ```azurecli-interactive
     az aks create \
@@ -43,11 +50,32 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
      --location $LOCATION \
      --node-count 1 \
      --node-vm-size Standard_B2s \
-     --generate-ssh-keys \
-     --enable-addons http_application_routing
+     --generate-ssh-keys
     ```
 
-4. After your cluster is created, get the credentials for the cluster using the `az aks get-credentials` command.
+1. Enable the application routing add-on with the following command.
+
+   ```azurecli-interactive
+   az aks approuting enable -g $RESOURCE_GROUP -n $CLUSTER_NAME
+   ```
+
+   > [!NOTE]
+   > If you see a message asking you to install the **aks-preview** extension, enter `Y` to install it and continue.
+
+1. Create a DNS zone using the `az network dns zone create` command.
+
+   ```azurecli-interactive
+   az network dns zone create -g $RESOURCE_GROUP -n $ZONE_NAME
+   ```
+
+1. Retrieve the ID of your DNS zone and use it as part of the command to add the zone to your cluster for app routing.
+
+   ```azurecli-interactive
+   ZONEID=$(az network dns zone show -g $RESOURCE_GROUP -n $ZONE_NAME --query "id" --output tsv)
+   az aks approuting zone add -g $RESOURCE_GROUP -n $CLUSTER_NAME --ids=${ZONEID} --attach-zones
+   ```
+
+1. Get the credentials for your cluster using the `az aks get-credentials` command.
 
     ```azurecli-interactive
     az aks get-credentials -n $CLUSTER_NAME -g $RESOURCE_GROUP
@@ -68,7 +96,7 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
      --kind MongoDB
     ```
 
-2. Once the database is created, get the connection string using the `az cosmosdb keys list` command and copy the output value.
+1. Once the database is created, get the connection string using the `az cosmosdb keys list` command and copy the output value.
 
     ```azurecli-interactive
     az cosmosdb keys list \
@@ -79,7 +107,7 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
       --query "connectionStrings[0].connectionString"
     ```
 
-3. Create a new YAML file named `backend-secret.yaml` and paste in the following code to create the Secret spec. Make sure to replace the placeholder string with the connection string from the previous output.
+1. Create a new YAML file named `backend-secret.yaml` and paste in the following code to create the Secret spec. Make sure to replace the placeholder string with the connection string from the previous output.
 
     ```yaml
     apiVersion: v1
@@ -92,20 +120,21 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
       database_mongodb_uri: "<paste the connection string here>"
     ```
 
-4. Save and close the file.
-5. Apply the secret using the `kubectl apply` command.
+1. Save and close the file.
+
+1. Apply the secret using the `kubectl apply` command.
 
     ```azurecli-interactive
     kubectl apply -f backend-secret.yaml
     ```
 
-6. Check the result by querying for the secret using the `kubectl get secret` command.
+1. Check the result by querying for the secret using the `kubectl get secret` command.
 
     ```azurecli-interactive
     kubectl get secret ship-manager-database
     ```
 
-    You should get an output similar to the following:
+    You should get an output similar to the following example:
 
     ```output
     NAME                    TYPE     DATA   AGE
@@ -114,17 +143,7 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
 
 ## Create the application
 
-1. Get the DNS zone that has been made available with the HTTP application routing add-on using the `az aks show` command and save the output value for later use.
-
-    ```azurecli-interactive
-    az aks show \
-      -g $RESOURCE_GROUP \
-      -n $CLUSTER_NAME \
-      -o tsv \
-      --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
-    ```
-
-2. Create a new YAML file named `backend-application.yaml` and paste in the following code to create the Deployment spec.
+1. Create a new YAML file named `backend-application.yaml` and paste in the following code to create the Deployment spec.
   
     ```yaml
     apiVersion: apps/v1
@@ -160,7 +179,7 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
 
     Notice that in the `env` section, we use the `valueFrom` and the `secretKeyRef` keys. The order of these keys tells the deployment to use the value from the `key` present in the Secret defined in the `name` key.
 
-3. Add three dashes below the last line in the `backend-application.yaml` file to separate the next section.
+1. Add three dashes below the last line in the `backend-application.yaml` file to separate the next section.
 
     ```yaml
     # Previous lines from the deployment
@@ -181,7 +200,7 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
     ---
     ```
 
-4. Below the three dashes, paste in the following code to create the Ingress spec.
+1. Below the three dashes, paste in the following code to create the Ingress spec.
 
     ```yaml
     apiVersion: networking.k8s.io/v1
@@ -190,10 +209,10 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
       name: ship-manager-backend
       namespace: default
       annotations:
-        kubernetes.io/ingress.class: addon-http-application-routing
+        spec.ingressClassName: webapprouting.kubernetes.azure.com
     spec:
       rules:
-        - host: ship-manager-backend.<paste the DNS ZONE here>
+        - host: ship-manager-backend.<paste the ZONE_NAME here>
           http:
             paths:
               - path: /
@@ -205,9 +224,11 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
                       name: http
     ```
 
-5. Change the DNS zone in the `host:` to match the DNS you copied earlier.
-6. Save and close the file.
-7. Apply the changes to your cluster using the `kubectl apply` command.
+1. Change the DNS zone in the `host:` to match the name of your DNS zone. Use the value of the ZONE_NAME variable you created earlier.
+
+1. Save and close the file.
+
+1. Apply the changes to your cluster using the `kubectl apply` command.
 
     ```azurecli-interactive
     kubectl apply -f backend-application.yaml

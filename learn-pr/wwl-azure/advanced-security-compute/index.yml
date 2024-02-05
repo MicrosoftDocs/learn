@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
-  ms.prod: azure
+  ms.service: azure
 title: Plan and implement advanced security for compute
 summary: This module is designed to provide administrators with the knowledge and skills needed to plan and implement advanced security measures for Azure compute resources, safeguarding applications and data against evolving security threats.
 abstract: |

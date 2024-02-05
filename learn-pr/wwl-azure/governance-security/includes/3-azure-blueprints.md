@@ -81,7 +81,7 @@ To delete blueprints, your account needs the following permissions:
 > [!NOTE]
 > *As blueprint assignments are created on a subscription, the blueprint assign and unassign permissions must be granted on a subscription scope or be inherited onto a subscription scope.*
 
-To assign or unassign a blueprint, your account needs the following permissions: To assign or unassign a blueprint, your account needs the following permissions:
+To assign or unassign a blueprint, your account needs the following permissions:
 
  -  `Microsoft.Blueprint/blueprintAssignments/write` \- Assign a blueprint
  -  `Microsoft.Blueprint/blueprintAssignments/delete` \- Unassign a blueprint

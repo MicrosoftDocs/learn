@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.service: azure
 durationInMinutes: 8
 content: |
   [!include[](includes/4-manually-install-single-instance-sap-hana-azure-virtual-machines.md)]

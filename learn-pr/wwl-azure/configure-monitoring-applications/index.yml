@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
-  ms.prod: azure
+  ms.service: azure
 title: Configure monitoring for applications
 summary: Understand how to monitor the performance of your applications and how to collect and analyze the appropriate telemetry to improve application performance.
 abstract: |

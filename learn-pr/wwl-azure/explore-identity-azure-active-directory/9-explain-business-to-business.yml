@@ -4,11 +4,10 @@ title: Explain Microsoft Entra Business to Business
 metadata:
   title: Explain Microsoft Entra Business to Business
   description: "Explain Microsoft Entra Business to Business"
-  ms.date: 10/26/2023
+  ms.date: 01/31/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
-  ms.prod: azure
 durationInMinutes: 3
 content: |
   [!include[](includes/9-explain-business-to-business.md)]

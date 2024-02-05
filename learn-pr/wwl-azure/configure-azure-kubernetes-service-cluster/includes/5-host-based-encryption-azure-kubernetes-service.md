@@ -25,5 +25,5 @@ A list of examples enabling host-based encryption on new and existing clusters u
  -  Enable host-based encryption on an existing cluster by adding a new node pool using the `--enable-encryption-at-host` flag.
     
     ```azurecli
-    az aks node pool add --name hostencrypt --cluster-name myAKSCluster --resource-group myResourceGroup -s Standard_DS2_v2 --enable-encryption-at-host
+    az aks nodepool add --name hostencrypt --cluster-name myAKSCluster --resource-group myResourceGroup -s Standard_DS2_v2 --enable-encryption-at-host
     ```

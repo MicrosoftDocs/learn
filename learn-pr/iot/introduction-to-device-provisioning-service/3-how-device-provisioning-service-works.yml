@@ -4,9 +4,10 @@ title: How the Device Provisioning Service works
 metadata:
   title: How the Device Provisioning Service works
   description: "How the Device Provisioning Service works"
-  ms.date: 07/18/2022
+  ms.date: 12/15/2023
   author: kgremban
   ms.author: kgremban
+  manager: lizross
   ms.topic: unit
 azureSandbox: false
 labModal: false

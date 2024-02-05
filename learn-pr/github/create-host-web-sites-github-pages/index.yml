@@ -6,7 +6,8 @@ metadata:
   ms.date: 12/06/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: github
 title: "Create and host web sites by using GitHub Pages"
 summary: Learn how to host your personal, organization, and project sites for free with GitHub Pages.
 abstract: |

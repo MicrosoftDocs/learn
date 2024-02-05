@@ -43,7 +43,7 @@ quiz:
         - content: "Pass the postCreate flag to the build command."
           isCorrect: false
           explanation: "The recommended way to execute post create commands is with the devcontainer.json file."
-    - content: "How would you install additional software in a container so that it's saved as part of the configuration?"
+    - content: "How would you install additional software in a container so that it persists your changes even after rebuilding?"
       choices:
         - content: "Use an `apt-get` command in the devcontainer.json file's `postSetupCommand` option."
           isCorrect: false
@@ -54,6 +54,6 @@ quiz:
         - content: "Install the software after the container loads via the terminal."
           isCorrect: false
           explanation: "Although it will work, it will be isolated to your container and not saved with the project configuration."
-        - content: "Add a `RUN apt-get` command in the Dockerfile."
+        - content: "Use a Dev Container Feature."
           isCorrect: true
-          explanation: "The Dockerfile is the right place to install additional software. Using the Dockerfile `RUN` command allows you to use the `apt-get` package manager."
+          explanation: "The most efficient practice that persists your changes even after rebuilding is to install software through a Dev Container Feature."

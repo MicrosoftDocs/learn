@@ -9,7 +9,9 @@ metadata:
   ms.topic: module
   ms.service: azure
 title: Design solutions for securing server and client endpoints
-summary: "You learn how to analyze the security requirements for different types of endpoints including servers, clients, IoT, OT, mobile, and embedded devices. These requirements will take into account different platforms and operating systems and set standards for endpoint protection, hardening and configuration."
+summary: |
+  You learn how to analyze the security requirements for different types of endpoints including servers, clients, IoT, OT, mobile, and embedded devices. These requirements will take into account different platforms and operating systems and set standards for endpoint protection, hardening and configuration.
+  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   By the end of this module, you are able to:
   -   Specify security requirements for servers
