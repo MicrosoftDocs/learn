@@ -36,7 +36,6 @@ units:
 - learn.wwl.enable-containers-security.introduction
 - learn.wwl.enable-containers-security.explore-containers
 - learn.wwl.enable-containers-security.manage-security-for-azure-container-instances-aci​
-- learn.wwl.enable-containers-security.explore-azure-container-registry-acr​
 - learn.wwl.enable-containers-security.review-azure-kubernetes-service-aks​
 - learn.wwl.enable-containers-security.implement-azure-kubernetes-service-architecture​
 - learn.wwl.enable-containers-security.secure-authentication-to-azure-kubernetes-service-active-directory​
