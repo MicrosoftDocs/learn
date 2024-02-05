@@ -31,6 +31,5 @@ subjects:
 - cloud-security
 - threat-protection
 units:
-- learn.wwl.azure-security-center.workload-protections
 badge:
   uid: learn.wwl.azure-security-center.badge
