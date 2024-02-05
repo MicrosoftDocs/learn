@@ -10,4 +10,3 @@ Specifically, in this module you explored the following:
  -  Hackers and ways to prevent people from doing bad things on computer systems
 
 With these topics, you discovered the basics of computer security. Programmers need to be aware of each of these. Security should be at the core of all programming. These topics give you a good place to start.
-
