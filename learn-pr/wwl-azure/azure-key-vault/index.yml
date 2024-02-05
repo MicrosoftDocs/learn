@@ -31,7 +31,6 @@ subjects:
 - security
 units:
 - learn.wwl.azure-key-vault.introduction
-- learn.wwl.azure-key-vault.azure-key-vault
 - learn.wwl.azure-key-vault.example
 - learn.wwl.azure-key-vault.certificates
 - learn.wwl.azure-key-vault.keys
