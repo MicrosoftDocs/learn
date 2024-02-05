@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.migrate-modernize-perform-backups-restores
+metadata:
+  title: Modernize, perform backups and restores for SAP workloads on Azure
+  description: "This module explores backup and restore of Azure virtual machines and examines the steps and important considerations involved in backing up and restoring SAP workloads on Azure. This module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud."
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: module
+  ms.service: azure
+title: Modernize, perform backups and restores for SAP workloads on Azure
+summary: This module explores backup and restore of Azure virtual machines and examines the steps and important considerations involved in backing up and restoring SAP workloads on Azure.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore backup and restore of Azure virtual machines.
+  - Examine application-consistent backup of Azure Linux virtual machines.
+  - Explore application backup.
+  - Explore SAP HANA backup.
+  - Explore SAP HANA file-level backups.
+  - Create SAP HANA snapshot-based backups.
+prerequisites: |
+  Before taking this training, you should complete:
+  *   Azure Administrator (AZ-104) or Azure Solutions Architect Expert (AZ-305) exam.
+  *   SAP HANA or NetWeaver training.
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.migrate-modernize-perform-backups-restores.introduction
+- learn.wwl.migrate-modernize-perform-backups-restores.explore-backup-restore-azure-virtual-machines
+- learn.wwl.migrate-modernize-perform-backups-restores.examine-application-consistent-backup-azure-linux-virtual-machines
+- learn.wwl.migrate-modernize-perform-backups-restores.explore-application-backup
+- learn.wwl.migrate-modernize-perform-backups-restores.explore-sap-hana-backup
+- learn.wwl.migrate-modernize-perform-backups-restores.explore-sap-hana-file-level-backups
+- learn.wwl.migrate-modernize-perform-backups-restores.exercise-create-sap-hana-snapshot-based-backups
+- learn.wwl.migrate-modernize-perform-backups-restores.knowledge-check
+- learn.wwl.migrate-modernize-perform-backups-restores.summary
+badge:
+  uid: learn.wwl.migrate-modernize-perform-backups-restores.badge

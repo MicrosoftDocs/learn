@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
+  ms.custom: devx-track-arm-template
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

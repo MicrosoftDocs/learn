@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-implement-asynchronous-scenarios.exercise-implement-asynchronous-io-operations
+title: Implement Asynchronous IO Operations
+metadata:
+  title: Implement Asynchronous IO Operations
+  description: "The purpose of this lesson is to learn how to implement asynchronous IO operations in C#."
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-exercise-implement-asynchronous-io-operations.md)]

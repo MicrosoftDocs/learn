@@ -5,7 +5,7 @@ metadata:
   description: "Write Subqueries in T-SQL"
   ms.date: 11/07/2023
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: rcaper
   ms.topic: module
   ms.service: sql
   ms.subservice: t-sql

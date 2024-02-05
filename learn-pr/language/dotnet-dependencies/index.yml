@@ -8,7 +8,7 @@ metadata:
   ms.author: jamont
   ms.manager: markl
   ms.topic: module
-  ms.prod: .net
+  ms.service: dotnet
 title: Create a new .NET project and work with dependencies  
 summary: Use dependencies from the NuGet registry to develop .NET applications faster. Learn how to manage dependencies for your project.
 abstract: |
