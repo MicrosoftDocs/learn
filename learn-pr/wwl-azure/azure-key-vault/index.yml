@@ -30,6 +30,5 @@ products:
 subjects:
 - security
 units:
-- learn.wwl.azure-key-vault.summary
 badge:
   uid: learn.wwl.azure-key-vault.badge
