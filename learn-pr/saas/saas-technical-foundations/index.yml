@@ -56,7 +56,7 @@ subjects:
 units:
 - learn.saas-technical-foundations.introduction
 - learn.saas-technical-foundations.tenancy-models
-- learn.saas-technical-foundations.multi-tenant-model
+- learn.saas-technical-foundations.multitenant-model
 - learn.saas-technical-foundations.monolith-vs-microservices
 - learn.saas-technical-foundations.microservices-on-azure
 - learn.saas-technical-foundations.authentication-and-authorization
