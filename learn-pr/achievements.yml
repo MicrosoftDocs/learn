@@ -2888,3 +2888,8 @@ achievements:
   title: 'AZ-500: Manage security operation'
   summary: Once you have deployed and secured your Azure environment, learn to monitor, operate, and continuously improve the security of your solutions.
   iconUrl: /training/achievements/operation-manage-security.svg
+- uid: learn.wwl.secure-your-data-applications.trophy
+  type: trophy
+  title: 'AZ-500: Secure your data and applications'
+  summary: Application running within Azure access your confidential data need to be locked down. Learn to secure your applications, storage, databases, and key vaults.
+  iconUrl: /training/achievements/security-data-applications.svg
