@@ -33215,6 +33215,11 @@
       "source_path": "learn-pr/wwl-azure/enable-containers-security/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enable-containers-security/3-configure-azure-container-instances-security.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-networking/",
+      "redirect_document_id": false
     }
   ]
 }
