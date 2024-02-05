@@ -33145,6 +33145,11 @@
       "source_path": "learn-pr/wwl-azure/azure-key-vault/3-access.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-key-vault/12-azure-hardware-security-module.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
     }
   ]
 }
