@@ -33,6 +33,5 @@ subjects:
 units:
 - learn.wwl.azure-security-center.workload-protections
 - learn.wwl.azure-security-center.view-and-edit-security-policies
-- learn.wwl.azure-security-center.understand-just-in-time-vm-access
 badge:
   uid: learn.wwl.azure-security-center.badge
