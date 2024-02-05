@@ -2893,3 +2893,28 @@ achievements:
   title: 'AZ-500: Secure your data and applications'
   summary: Application running within Azure access your confidential data need to be locked down. Learn to secure your applications, storage, databases, and key vaults.
   iconUrl: /training/achievements/security-data-applications.svg
+- uid: learn.wwl.azure-monitor.badge
+  type: badge
+  title: Configure and manage Azure Monitor
+  summary: Use Azure Monitor, Log Analytics, and other Azure tools to monitor the secure operation of your Azure solutions.
+  iconUrl: /training/achievements/azure-monitor.svg
+- uid: learn.wwl.azure-security-center.badge
+  type: badge
+  title: Enable and manage Microsoft Defender for Cloud
+  summary: Use Microsoft Defender for Cloud to strengthen security posture and protect workloads against modern threats in Azure.
+  iconUrl: /training/achievements/azure-security-center.svg
+- uid: learn.wwl.azure-sentinel.badge
+  type: badge
+  title: Configure and monitor Microsoft Sentinel
+  summary: Use Microsoft Sentinel to discover, track, and respond to security breaches within your Azure environment.
+  iconUrl: /training/achievements/azure-sentinel.svg
+- uid: learn.wwl.sql-database-security.badge
+  type: badge
+  title: Configure and manage SQL database security
+  summary: Configure and lock down your SQL database on Azure to protect your corporate data while it's stored.
+  iconUrl: /training/achievements/sql-database-security.svg
+- uid: learn.wwl.storage-security.badge
+  type: badge
+  title: Implement storage security
+  summary: Ensure your data is stored, transferred, and accessed in a secure way using Azure storage and file security features.
+  iconUrl: /training/achievements/storage-security.svg
