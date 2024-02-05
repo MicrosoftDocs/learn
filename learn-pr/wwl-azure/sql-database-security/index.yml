@@ -30,6 +30,5 @@ products:
 subjects:
 - security
 units:
-- learn.wwl.sql-database-security.vulnerability-assessment-for-sql-server
 badge:
   uid: learn.wwl.sql-database-security.badge
