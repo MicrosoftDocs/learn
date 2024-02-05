@@ -15,7 +15,7 @@ Imagine that as a child, you created a club. You and a group of friends were in 
 
 In this club, you made a "secret password" so only people with the password could get into the clubhouse. You'd spend a good deal of time trying to come up with the perfect (and usually funny) password. You'd whisper the secret password to each other and promised not to tell anyone. The next time one of you came to the clubhouse, someone at the entrance would ask for the password before they'd grant entry.
 
-:::image type="content" source="../media/treehouse.jpg" alt-text="Illustration of a child's clubhouse with":::
+:::image type="content" source="../media/treehouse.jpg" alt-text="Illustration of a child's clubhouse.":::
 
 
 In this case, the password wasn't used to make sure only certain people could get in. You and your friends all knew each other. Rather, you used the password to keep people out. If a parent, guardian, or stranger tried to get into your secret club, you could ask, "What's the password?" If they didn't know it, they couldn't get in.
