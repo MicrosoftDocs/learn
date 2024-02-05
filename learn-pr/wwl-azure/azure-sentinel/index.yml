@@ -30,7 +30,6 @@ subjects:
 - threat-protection
 units:
 - learn.wwl.azure-sentinel.introduction
-- learn.wwl.azure-sentinel.enable-azure-sentinel
 - learn.wwl.azure-sentinel.workbooks
 - learn.wwl.azure-sentinel.incidents
 - learn.wwl.azure-sentinel.playbooks
