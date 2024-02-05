@@ -8,7 +8,7 @@ metadata:
   author: beth-panx
   ms.author: xupa
   ms.topic: module-standard-task-based
-  ms.prod: microsoft-edge
+  ms.service: microsoft-edge
 durationInMinutes : 2
 content: |
   [!include[](includes/6-summary.md)]
