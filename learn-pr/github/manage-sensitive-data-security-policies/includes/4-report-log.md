@@ -8,11 +8,11 @@ Here you'll learn what your organization's audit log records, and how to access 
 
 Your organization's log records actions taken by organization members. The log is available to organization owners, and records information about actions that affect the organization including:
 
-- The repository in which the action was performed
-- The user that performed the action
-- The action that was performed
-- Which country/region in which the action took place
-- The date and time of the action
+- The repository in which the action was performed.
+- The user that performed the action.
+- The action that was performed.
+- Which country/region in which the action took place.
+- The date and time of the action.
 
 You can access the audit log through GitHub.com, GitHub Enterprise Server, or GitHub AE to review actions from the past 90 days. However, interacting with the audit log using either the GraphQL API or the Rest API can allow easy retrieval of specific information types, with other limitations.
 
@@ -20,11 +20,11 @@ You can access the audit log through GitHub.com, GitHub Enterprise Server, or Gi
 
 The GraphQL API is available for organizations using GitHub Enterprise, and can retrieve information about actions up to 120 days old. It can monitor:
 
-- Access to your organization or repository settings
-- Changes in permissions
-- Added or removed users in an organization, repository, or team
-- Users being promoted to admin
-- Changes to permissions of a GitHub App
+- Access to your organization or repository settings.
+- Changes in permissions.
+- Added or removed users in an organization, repository, or team.
+- Users being promoted to admin.
+- Changes to permissions of a GitHub App.
 
 It can't provide information about Git events.
 

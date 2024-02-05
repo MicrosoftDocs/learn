@@ -10,8 +10,8 @@ Here are some helpful tips before you begin the exercise:
 - Stuck on what to do? Revisit the content in the last unit or check out the **Useful resources** section in the exercise's repository README for more resources.
 
 >[!Note]
-> A grading script exists under `.github/workflows/grading.yml`. 
-> You don't need to modify this workflow to complete this exercise. 
+> A grading script exists under *.github/workflows/grading.yml*.
+> You don't need to modify this workflow to complete this exercise.
 > **Altering the contents in this workflow can break the exercise's** 
 > **ability to validate your actions, provide feedback, or grade the results**.
 

@@ -30,14 +30,14 @@ These files record information about security preparation, key contacts, and the
 
 *SECURITY.md* is the primary document for communicating security information. It's a Markdown file in a repository's root, `docs`, or `.github` folder. The *SECURITY.md* file should include:
 
-- A list of supported versions of the project
-- A way to report a security vulnerability
+- A list of supported versions of the project.
+- A way to report a security vulnerability.
 
 It might also include:
 
-- Information about the project's compliance with key privacy and security laws
-- Technologies that administrators and stakeholders use to secure information
-- Known risks
+- Information about the project's compliance with key privacy and security laws.
+- Technologies that administrators and stakeholders use to secure information.
+- Known risks.
 
 ### Other default community health files
 
@@ -60,7 +60,7 @@ GitHub uses and displays these default files for any repository owned by the acc
 
 ## Security settings
 
-The other component of creating robust security policies is taking advantage of GitHub's built-in security settings and features. Imagine you're onboarding collaborators whose scope of work varies--some will be part of focused teams to implement a feature, while others will be responsible for watching over the code base for issues, and a few others might need to assist you with administrative duties. In this section, you'll learn about settings that define user permissions and allow automation of common security tasks.
+The other component of creating robust security policies is taking advantage of GitHub's built-in security settings and features. Imagine you're onboarding collaborators whose scope of work varies--some are part of focused teams to implement a feature, while others are responsible for watching over the code base for issues, and a few others might need to assist you with administrative duties. In this section, you'll learn about settings that define user permissions and allow automation of common security tasks.
 
 ### Change settings according to a trust and control position
 
@@ -77,7 +77,7 @@ Before we go further, you should know that you can configure security settings a
 Here's an example of a basic security setting you could change at the organization level or for a whole enterprise.
 
 - You might choose to set base permissions for all members of one organization working in any repository owned by that organization. Select **Settings** in **Your organizations** to give collaborators a uniform level of access (*None*, *Read*, *Write*, or *Admin*). With this setting, one organization's members could have Read access to its repositories, while another organization's members could have Write access.
-- Alternately, you could apply that setting to every organization covered by the Enterprise plan. Select an enterprise from **Your enterprises** and choose **Policies**. The **Repository policies** tab enables you to review the base permissions for every user in every organization in the enterprise, and change them to "None," "Read," "Write," or "Admin." With this setting, only specific individuals to whom you grant special privileges are able to exceed the base permission level.
+- Alternately, you could apply that setting to every organization covered by the Enterprise plan. Select an enterprise from **Your enterprises** and choose **Policies**. The **Repository policies** tab enables you to review the base permissions for every user in every organization in the enterprise, and change them to *None*, *Read*, *Write*, or *Admin*. With this setting, only specific individuals to whom you grant special privileges are able to exceed the base permission level.
 
 As you can see, settings that Enterprise administrators enforce cascade down to all organizations covered by the GitHub Enterprise plan, while settings not covered by Enterprise administrators are free to be customized by organization administrators. Only GitHub Enterprise administrators and organization owners can configure organization security settings.
 

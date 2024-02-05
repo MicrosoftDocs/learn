@@ -51,7 +51,7 @@ To remove your file that has sensitive data and leave your latest commit untouch
 $ bfg --delete-files YOUR-FILE-WITH-SENSITIVE-DATA
 ```
 
-To replace all text listed in `passwords.txt` wherever it can be found in your repository's history, run:
+To replace all text listed in *passwords.txt* wherever it can be found in your repository's history, run:
 
 ```shell
 $ bfg --replace-text passwords.txt
@@ -176,16 +176,16 @@ GitHub support technicians can assist you in removing confidential information t
 
 GitHub needs you to fulfill other conditions before asking for the help of support technicians.
 
-- **Ask Nicely First.** When your support request affects a repository your organization doesn't own, get in touch with the repository's owner to ask them to remove the data.
-- **No Bots.** You should have a trained professional evaluate the facts of every request you send. No party making requests of this type to GitHub support should use automated bots, whether they're direct representatives of your organization or third parties to which you have outsourced the handling of these requests.
-- **Send In The Correct Request.** This process works best when you only send requests related to the preceding types of private information, and when they're the only requests from you that GitHub is handling at the time.
-- **Processing Time.** If you make a request to GitHub to remove private information, be patient and send only one request for each discrete issue.
+- **Ask nicely first.** When your support request affects a repository your organization doesn't own, get in touch with the repository's owner to ask them to remove the data.
+- **No bots.** You should have a trained professional evaluate the facts of every request you send. No party making requests of this type to GitHub support should use automated bots, whether they're direct representatives of your organization or third parties to which you have outsourced the handling of these requests.
+- **Send in the correct request.** This process works best when you only send requests related to the preceding types of private information, and when they're the only requests from you that GitHub is handling at the time.
+- **Processing time.** If you make a request to GitHub to remove private information, be patient and send only one request for each discrete issue.
 
 #### Request requirements
 
 When you're ready to make your request, assemble the following information.
 
-1. A working, clickable link to each file containing private information. (Note that we're not able to work from search results, examples, or screenshots.)
+1. A working, clickable link to each file containing private information. (We're not able to work from search results, examples, or screenshots.)
 2. Specific line numbers within each file containing the private information.
 3. A brief description of how each item you identified poses a security risk to you or your organization. **It's important that you provide an explanation of how the data poses a security risk beyond merely stating that it does.**
 4. If you're a third party acting as an agent for an organization facing a security risk, include a statement that you have a legal right to act on behalf of that organization.
