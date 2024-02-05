@@ -33,7 +33,6 @@ products:
 subjects:
 - information-protection-governance
 units:
-- learn.wwl.storage-security.shared-access-signatures
 - learn.wwl.storage-security.storage-service-encryption
 - learn.wwl.storage-security.summary
 badge:
