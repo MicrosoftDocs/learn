@@ -2873,3 +2873,8 @@ achievements:
   title: Configure application security features
   summary: Register your company applications then use Azure security features to configure and monitor secure access to the application.
   iconUrl: /training/achievements/application-security.svg
+- uid: learn.wwl.azure-key-vault.badge
+  type: badge
+  title: Deploy and secure Azure Key Vault
+  summary: Protect your keys, certificates, and secrets in Azure Key Vault. Learn to configure key vault for the most secure deployment.
+  iconUrl: /training/achievements/azure-key-vault.svg
