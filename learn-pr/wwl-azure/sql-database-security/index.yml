@@ -33,7 +33,6 @@ units:
 - learn.wwl.sql-database-security.introduction
 - learn.wwl.sql-database-security.firewalls
 - learn.wwl.sql-database-security.database-auditing
-- learn.wwl.sql-database-security.data-discovery-classification​
 - learn.wwl.sql-database-security.microsoft-defender-for-sql
 - learn.wwl.sql-database-security.vulnerability-assessment-for-sql-server
 - learn.wwl.sql-database-security.sql-advanced-threat-protection
