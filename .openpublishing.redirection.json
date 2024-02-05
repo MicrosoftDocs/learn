@@ -33645,6 +33645,11 @@
       "source_path": "learn-pr/wwl-azure/storage-security/4-shared-access-signatures.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/storage-security/6-storage-service-encryption.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
     }
   ]
 }
