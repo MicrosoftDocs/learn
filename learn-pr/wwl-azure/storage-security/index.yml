@@ -33,6 +33,5 @@ products:
 subjects:
 - information-protection-governance
 units:
-- learn.wwl.storage-security.summary
 badge:
   uid: learn.wwl.storage-security.badge
