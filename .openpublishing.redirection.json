@@ -33570,6 +33570,11 @@
       "source_path": "learn-pr/wwl-azure/sql-database-security/8-sql-advanced-threat-protection.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sql-database-security/10-sql-vulnerability-assessment-express-and-classic-configurations.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
     }
   ]
 }
