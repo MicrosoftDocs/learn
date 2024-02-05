@@ -33380,6 +33380,11 @@
       "source_path": "learn-pr/wwl-azure/azure-security-center/17-demonstration.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-security-operations-new/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/3-implement-azure-security-center.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-security-operations-new/",
+      "redirect_document_id": false
     }
   ]
 }
