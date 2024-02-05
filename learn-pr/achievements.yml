@@ -2868,3 +2868,8 @@ achievements:
   title: Implement perimeter security
   summary: Prevent attacks before they get to your Azure solutions. Use the concepts of defense in depth and zero trust to secure Azure perimeter.
   iconUrl: /training/achievements/perimeter-security.svg
+- uid: learn.wwl.application-security.badge
+  type: badge
+  title: Configure application security features
+  summary: Register your company applications then use Azure security features to configure and monitor secure access to the application.
+  iconUrl: /training/achievements/application-security.svg
