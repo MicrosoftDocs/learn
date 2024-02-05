@@ -33,7 +33,6 @@ products:
 subjects:
 - container
 units:
-- learn.wwl.enable-containers-security.secure-authentication-to-azure-kubernetes-service-active-directory​
 - learn.wwl.enable-containers-security.summary
 badge:
   uid: learn.wwl.enable-containers-security.badge
