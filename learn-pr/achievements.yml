@@ -2878,3 +2878,8 @@ achievements:
   title: Deploy and secure Azure Key Vault
   summary: Protect your keys, certificates, and secrets in Azure Key Vault. Learn to configure key vault for the most secure deployment.
   iconUrl: /training/achievements/azure-key-vault.svg
+- uid: learn.wwl.enable-containers-security.badge
+  type: badge
+  title: Enable Containers security
+  summary: Explore how to secure your applications running within containers and how to securely connect to them.
+  iconUrl: /training/achievements/container-security.svg
