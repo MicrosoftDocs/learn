@@ -34,7 +34,6 @@ units:
 - learn.wwl.azure-security-center.mitre-attack
 - learn.wwl.azure-security-center.security-posture
 - learn.wwl.azure-security-center.workload-protections
-- learn.wwl.azure-security-center.microsoft-cloud-security-benchmark
 - learn.wwl.azure-security-center.policies
 - learn.wwl.azure-security-center.view-and-edit-security-policies
 - learn.wwl.azure-security-center.recommendations
