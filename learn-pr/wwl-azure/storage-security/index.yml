@@ -35,7 +35,6 @@ subjects:
 units:
 - learn.wwl.storage-security.introduction
 - learn.wwl.storage-security.data-sovereignty
-- learn.wwl.storage-security.azure-storage-access
 - learn.wwl.storage-security.shared-access-signatures
 - learn.wwl.storage-security.storage-service-encryption
 - learn.wwl.storage-security.blob-data-retention-policies
