@@ -33525,6 +33525,11 @@
       "source_path": "learn-pr/wwl-azure/sql-database-security/5-data-discovery-classification.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sql-database-security/4-database-auditing.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/secure-compute-storage-databases/",
+      "redirect_document_id": false
     }
   ]
 }
