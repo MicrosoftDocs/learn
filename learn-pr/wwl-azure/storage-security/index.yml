@@ -35,7 +35,6 @@ subjects:
 units:
 - learn.wwl.storage-security.shared-access-signatures
 - learn.wwl.storage-security.storage-service-encryption
-- learn.wwl.storage-security.secure-transfer-required​
 - learn.wwl.storage-security.summary
 badge:
   uid: learn.wwl.storage-security.badge
