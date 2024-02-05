@@ -37,7 +37,6 @@ units:
 - learn.wwl.enable-containers-security.review-azure-kubernetes-service-aks​
 - learn.wwl.enable-containers-security.secure-authentication-to-azure-kubernetes-service-active-directory​
 - learn.wwl.enable-containers-security.manage-access-to-azure-kubernetes-service-using-azure-role-based-access-controls
-- learn.wwl.enable-containers-security.knowledge-check
 - learn.wwl.enable-containers-security.summary
 badge:
   uid: learn.wwl.enable-containers-security.badge
