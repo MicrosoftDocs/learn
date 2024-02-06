@@ -27,7 +27,6 @@ subjects:
 units:
 - learn.wwl.create-clustering-model-azure-machine-learning-designer.introduction
 - learn.wwl.create-clustering-model-azure-machine-learning-designer.what-is-azure-machine-learning
-- learn.wwl.create-clustering-model-azure-machine-learning-designer.create-training-pipeline
 - learn.wwl.create-clustering-model-azure-machine-learning-designer.exercise
 - learn.wwl.create-clustering-model-azure-machine-learning-designer.knowledge-check
 - learn.wwl.create-clustering-model-azure-machine-learning-designer.summary
