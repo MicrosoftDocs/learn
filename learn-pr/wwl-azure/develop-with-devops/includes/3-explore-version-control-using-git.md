@@ -1,6 +1,6 @@
 There are different types of version control systems (VCS), but generally they can be categorized as centralized and distributed. In recent years (partially due to the growing popularity of DevOps), the latter category gained significant popularity, with Git becoming the de facto standard in modern software development. This particular VCS would be the most suitable choice for the organization in our sample scenario, especially considering its intention to use GitHub as the target platform for its DevOps transition. In this unit, explore the use of Git as version control.
 
-## Centralized vs Distributed Version Control
+## Centralized vs. Distributed Version Control
 
 Both centralized version control systems (CVCS) and distributed version control systems (DVCS) offer the ability to manage and track changes in software development projects. The primary differences between them are related to the way they implement repositories and collaboration. In particular:
 
@@ -33,7 +33,7 @@ In order to become proficient in working with Git, it's important to become fami
 
 Git also has an extensive set of commands, which provide the ability to fully implement and manage version control through command shell such as Linux Bash or Windows Command Prompt. Alternatively, you can manage Git through desktop applications such as GitHub Desktop. Git-based hosting platforms provide a web interface that facilitates interaction with service-side repositories.
 
-## Git vs GitHub
+## Git vs. GitHub
 
 As described earlier, Git is a multi-platform, open-source DVCS that facilitates collaboration by using local repositories, which can be synchronized with remote repositories. GitHub is a cloud-based service that provides a hosting platform for Git repositories. It extends the range of Git capabilities by including support for:
 
