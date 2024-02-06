@@ -32197,6 +32197,41 @@
         "redirect_document_id": false
     },
     {
+        "source_path": "learn-pr/azure/introduction-to-app-provisioning/1-introduction.yml",
+        "redirect_url": "https://learn.microsoft.com/entra/identity/app-provisioning/user-provisioning",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/introduction-to-app-provisioning/2-what-is-app-provisioning.yml",
+        "redirect_url": "https://learn.microsoft.com/entra/identity/app-provisioning/user-provisioning",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/introduction-to-app-provisioning/3-how-app-provisioning-works.yml",
+        "redirect_url": "https://learn.microsoft.com/entra/identity/app-provisioning/user-provisioning",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/introduction-to-app-provisioning/4-when-to-use-app-provisioning.yml",
+        "redirect_url": "https://learn.microsoft.com/entra/identity/app-provisioning/user-provisioning",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/introduction-to-app-provisioning/5-knowledge-check.yml",
+        "redirect_url": "https://learn.microsoft.com/entra/identity/app-provisioning/user-provisioning",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/introduction-to-app-provisioning/6-summary.yml",
+        "redirect_url": "https://learn.microsoft.com/entra/identity/app-provisioning/user-provisioning",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/introduction-to-app-provisioning/index.yml",
+        "redirect_url": "https://learn.microsoft.com/entra/identity/app-provisioning/user-provisioning",
+        "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/student-evangelism/challenge-project-create-rock-paper-scissors-game-with-github-copilot/index.md",
       "redirect_url": "/training/modules/challenge-project-create-mini-game-with-copilot/",
       "redirect_document_id": false
