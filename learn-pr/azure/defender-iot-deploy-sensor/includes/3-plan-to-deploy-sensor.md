@@ -26,7 +26,7 @@ Run the installation file on the virtual machine, and follow the stages in the w
 ## Activate and initial setup
 
 Next, configure the sensor in a browser, which requires the sensor administrator username and password. The browser displays the **Defender for IoT | Overview** page, which leads you through the four stages of setting up the sensor, each stage is displayed in its own tab.
-<!-- where can we see a proper screen shot of this? check the titles of each section and how best to write these items based on that - add screenshot of the oiverview screen -->
+<!-- ASk to have this stage checked as I havent seen it yet.  where can we see a proper screen shot of this? check the titles of each section and how best to write these items based on that - add screenshot of the oiverview screen -->
 
 ### Management interface tab
 <!-- again not sure about the heading, should we also indent this? -->
@@ -45,9 +45,8 @@ In the **Management interface** tab, you define the network details that connect
 
 The **Interface configurations** tab shows each interface on the sensor, which should match the list of endpoints in the network diagram.<!-- not sure if this is needed here? but it is important and should be checked surely?--> Each interface is set up individually.
 
-Select and enable each interface to be monitored. If you're unsure which interface to use, select the :::image type="icon" source="../media/3-blink-interface.png" alt-text="blink interface icon"::: Blink physical interface LED button to have the selected port blink on your machine. 
-Select any of the interfaces that you've connected to your switch. 
-<!--is this only if you are close to the sensor? How would this work for a cloud sensor?-->
+Select and enable each interface to be monitored.
+If you're unsure which interface to use, select the :::image type="icon" source="../media/3-blink-interface.png" alt-text="blink interface icon"::: Blink physical interface LED button to have the selected port blink on your machine. Select any of the interfaces that are connected to your switch. <!--is this only if you are close to the sensor? How would this work for a cloud sensor?-->
 There are optional, advanced settings for each interface, as follows:
 
 |Name  |Description  |
@@ -57,7 +56,7 @@ There are optional, advanced settings for each interface, as follows:
 
 ### Activation tab
 
-In the **Activation** tab upload the activation file, provided by the deployment team, to activate the sensor.
+In the **Activation** tab upload the activation file, provided by the deployment team.
 
 ### Certificates tab
 

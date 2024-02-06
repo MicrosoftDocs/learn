@@ -18,7 +18,6 @@ For this you will need VMware, ESXi 5.5 or later, installed and operational on y
     | **Maximum bandwidth** | 2.5 Gb/sec | 800 Mb/sec | 160 Mb/sec |
     | **Maximum protected devices** | 12,000 | 10,000 | 800 |
 
-
 Details for the following network parameters to use for your sensor appliance:
 
     - A management network IP address
