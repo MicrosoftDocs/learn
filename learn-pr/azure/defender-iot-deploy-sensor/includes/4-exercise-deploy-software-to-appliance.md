@@ -32,7 +32,7 @@ Details for the following network parameters to use for your sensor appliance:
 
 This procedure describes how to create a VM for your sensor with VMware ESXi.
 
-Defender for IoT also supports other processes, such as using Hyper-V or physical sensors. For more information, see [Defender for IoT installation](how-to-install-software.md).
+<!--Defender for IoT also supports other processes, such as using Hyper-V or physical sensors. For more information, see [Defender for IoT installation](how-to-install-software.md).-->
 
 **To create a VM for your sensor**:
 
@@ -100,7 +100,7 @@ This procedure describes how to configure a SPAN port using a workaround with VM
 
 1. Connect to the sensor, and verify that mirroring works.
 
-[!INCLUDE [validate-traffic-mirroring](includes/validate-traffic-mirroring.md)]
+<!--[!INCLUDE [validate-traffic-mirroring](includes/validate-traffic-mirroring.md)]-->
 <!-- should we keep this link or better to copy the content. ?-->
 
 ## Install Defender for IoT software
@@ -140,7 +140,7 @@ On your virtual machine:
 
 1. If you closed your VM, sign into the ESXi again and open your VM settings.
 
-1. For **CD/DVD Drive 1**, select **Datastore ISO file** and select the Defender for IoT software you'd [downloaded earlier](#download-software-for-your-virtual-sensor).
+<!--1. For **CD/DVD Drive 1**, select **Datastore ISO file** and select the Defender for IoT software you'd [downloaded earlier](#download-software-for-your-virtual-sensor).-->
 
 1. Select **Next** > **Finish**.
 
@@ -177,7 +177,7 @@ This procedure describes how to validate your installation using the sensor's ow
     - **Version** to verify that you have the correct version installed.
     - **ifconfig** to verify that all input interfaces configured during installation are running.
 
-For more post-installation validation tests, such as gateway, DNS or firewall checks, see [Validate an OT sensor software installation](ot-deploy/post-install-validation-ot-software.md).
+<!--For more post-installation validation tests, such as gateway, DNS or firewall checks, see [Validate an OT sensor software installation](ot-deploy/post-install-validation-ot-software.md).-->
 
 ## Define initial setup
 
