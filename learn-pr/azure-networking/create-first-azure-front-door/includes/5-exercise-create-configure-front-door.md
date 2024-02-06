@@ -70,7 +70,7 @@ In this unit, you create a Front Door named `vehicleFrontDoor` with the followin
     | Resource | Select **myPrivateLinkService**. |
     | Region | Region is selected when you select the resource. |
     | Request message | Enter **webServer private connection.** |
-    | Status | Enabled this origin. |
+    | Status | Enable this origin. |
 
 1. Select **Add** to add the origin to the origin group. Leave the rest of the origin group settings as default. Then select **Add** to create the origin group.
 

@@ -1,4 +1,4 @@
-Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more recommended actions taken. It can be found at [https://security.microsoft.com/securescore](https://security.microsoft.com/securescore) in the [Microsoft Defender portal](https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender-portal?view=o365-worldwide).
+Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more recommended actions taken. It can be found at [https://security.microsoft.com/securescore](https://security.microsoft.com/securescore) in the [Microsoft Defender portal](/microsoft-365/security/defender/microsoft-365-defender-portal?view=o365-worldwide).
 
 Following the Secure Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft Defender portal, organizations can monitor and work on the security of their Microsoft 365 identities, apps, and devices.
 
@@ -28,7 +28,7 @@ Some recommended actions only give points when fully completed. Some give partia
 To help you find the information you need more quickly, Microsoft recommended actions are organized into groups:
 
 -   Identity (Microsoft Entra accounts & roles)
--   Device (Microsoft Defender for Endpoint, known as [Microsoft Secure Score for Devices](https://learn.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
+-   Device (Microsoft Defender for Endpoint, known as [Microsoft Secure Score for Devices](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 -   Apps (email and cloud apps, including Office 365 and Microsoft Defender for Cloud Apps)
 -   Data (through Microsoft Information Protection)
 

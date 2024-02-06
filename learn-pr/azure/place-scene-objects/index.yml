@@ -6,8 +6,7 @@ metadata:
   ms.date: 11/26/2023
   author: marlenaklein-msft
   ms.author: marlenaklein
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.topic: module
 title: Place a Mars Rover object in the scene and work with grids and intelligent object tracking
 summary: This course provides you with an understanding of placing objects and tracking objects using solvers.
 abstract: |

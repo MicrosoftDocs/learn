@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-on-remote-machine.what-is-ssh
+title: What is SSH?
+metadata:
+  title: What is SSH
+  description: "SSH lets you connect to a remote machine using key authentication."
+  ms.date: 01/22/2024
+  author: olguzzar
+  ms.author: olguzzar
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-what-is-ssh.md)]
