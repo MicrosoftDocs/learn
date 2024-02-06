@@ -8,63 +8,52 @@ metadata:
   author: LuizMacedo
   ms.author: lumac
   ms.topic: interactive-tutorial
-durationInMinutes: 2
+durationInMinutes: 4
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   questions:
-  - content: ""
+  - content: "What is the primary distinction between continuous delivery and continuous deployment?"
     choices:
-    - content: ""
+    - content: "Continuous deployment implements full automation, including the production environment, while continuous delivery requires a manual approval for the final delivery."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Continuous deployment and continuous delivery are closely related DevOps concepts with very similar names and the same acronym. The primary distinction between them is that continuous deployment implements full automation, including the production environment, while continuous delivery requires a manual approval for the final delivery."
+    - content: "Continuous deployment focuses on minimizing time to deploy and time to mitigate, while continuous delivery strives to implement full automation."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. This answer describes the characteristics of continuous delivery and continuous deployment, but does not provide the primary distinction between them."
+    - content: "Continuous delivery automates the entire software delivery process, while continuous deployment requires manual approval for the final delivery."
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect. This answer describes the primary distinction between continuous delivery and continuous deployment incorrectly."
+  - content: "What is the purpose of progressive exposure techniques in CD practices?"
     choices:
-    - content: ""
+    - content: "To minimize potential damage caused by programming errors that were not detected by CI-based code analysis, reviews, and automated testing."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Progressive exposure techniques aim to control the blast radius of programming errors that were not detected by CI-based code analysis, reviews, and automated testing."
+    - content: "To increase the number of users who can access the application at once."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. This answer does not align with the purpose of progressive exposure techniques."
+    - content: "To eliminate all potential programming errors."
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect. This answer is too extreme and does not align with the purpose of progressive exposure techniques."
+  - content: "What is the main principle of IaC that ensures consistency of the target environment and precludes the possibility of unintended side effects of intermediary changes?"
     choices:
-    - content: ""
+    - content: "Idempotence"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Idempotence designates the characteristic of an action where the outcome is always the same, regardless of the number of times the action is performed. This ensures the consistency of the target environment and precludes the possibility of unintended side effects of intermediary changes."
+    - content: "Automation"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. Automation enhances efficiency, consistency, and scalability, but does not ensure consistency of the target environment."
+    - content: "Version control"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect. Version control facilitates tracking changes to infrastructure in the same manner as tracking software versions."
+  - content: "What is the purpose of a GitHub Actions workflow?"
     choices:
-    - content: ""
+    - content: "To implement software delivery workflows by leveraging the capabilities of the GitHub platform."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. A GitHub Actions workflow provides the mechanism for implementing software delivery workflows by leveraging the capabilities of the GitHub platform."
+    - content: "To create a new repository in GitHub."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. This is not the purpose of a GitHub Actions workflow."
+    - content: "To store and reuse data across steps in a workflow."
       isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. This is the purpose of a variable in a GitHub Actions workflow."
