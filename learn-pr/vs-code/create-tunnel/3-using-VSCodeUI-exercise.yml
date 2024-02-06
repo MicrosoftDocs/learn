@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-tunnel.4-exercise-unit
-title: Exercise - Enabling Remote - Tunnels in code CLI
+uid: learn.create-tunnel.3-using-VSCodeUI-exercise
+title: Exercise - Enabling Remote - Tunnels in VS Code UI
 metadata:
-  title: Exercise - Enabling Remote - Tunnels in code CLI
+  title: Exercise - Enabling Remote - Tunnels in VS Code UI
   description: Describe Exercise
   author: theReynald
   ms.author: radolphe
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-tunnels
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-exercise-unit.md)]
+  [!include[](includes/3-using-VSCodeUI-exercise.md)]
