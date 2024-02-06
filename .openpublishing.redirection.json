@@ -33740,6 +33740,11 @@
       "source_path": "learn-pr/wwl-data-ai/use-automated-machine-learning/5-machine-learning-steps.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-machine-learning/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-automated-machine-learning/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-machine-learning/",
+      "redirect_document_id": false
     }
   ]
 }
