@@ -11,6 +11,7 @@ In this exercise, we enable Remote - Tunnels access using the VS Code UI.
     1. Click on the Extensions icon in the Activity Bar on the side of the window.
     1. Search for Remote – Tunnels.
     1. Click Install.
+
     :::image type="content" source="../media/12. ExtMarketPlace.png" alt-text="Installing Remote - Tunnels Image":::
 
 3. Restart VS Code if prompted to.

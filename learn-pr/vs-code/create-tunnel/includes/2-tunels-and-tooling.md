@@ -58,4 +58,5 @@ In the upcoming exercises, you will be using both the VS Code Desktop and the co
 </html> 
 ```
 4. Copy the file into both the TestUI and TestCLI folders. 
-:::image type="content" source="../media/18. PopulatedFolders.png" alt-text="TestUI and TestCLI Folders with index.html files Image":::
+
+    :::image type="content" source="../media/18. PopulatedFolders.png" alt-text="TestUI and TestCLI Folders with index.html files Image":::
