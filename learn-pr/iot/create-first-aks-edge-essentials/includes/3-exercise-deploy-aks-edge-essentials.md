@@ -10,7 +10,6 @@ Let's create the Azure VM with Windows 11 Enterprise using Azure Cloud Shell.
 
     ```azurecli
     resourcegroup=<rgn>[sandbox resource group name]</rgn>
-    location="westus3"
     vmname="myVM"
     username="azureuser"
     let "randomIdentifier=$RANDOM*$RANDOM"
@@ -27,7 +26,6 @@ Let's create the Azure VM with Windows 11 Enterprise using Azure Cloud Shell.
     ```azurecli
     az vm create \
         --resource-group $resourcegroup \
-        --location $location \
         --name $vmname \
         --image MicrosoftVisualStudio:windowsplustools:base-win11-gen2:latest \
         --public-ip-sku Standard \
@@ -77,7 +75,7 @@ Let's download the K3s installer and Windows node files to [Azure file share](/a
     curl -L -o ~/clouddrive/MicCodSigPCA2011.crt "https://www.microsoft.com/pkiops/certs/MicCodSigPCA2011_2011-07-08.crt" &
     ```
 
-1. Run the PowerShell [Get-AzRemoteDesktopFile](/powershell/module/az.compute/get-azremotedesktopfile) cmdlet to get the RDP file to connect to the VM:
+1. Create the RDP file to connect to the VM:
 
     ```azurecli
     publicIp=$(az vm show -d -g $resourcegroup -n $vmname --query publicIps -o tsv)
