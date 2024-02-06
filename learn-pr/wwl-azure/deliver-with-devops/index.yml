@@ -2,12 +2,11 @@
 uid: learn.wwl.deliver-with-devops
 metadata:
   title: "Deliver with DevOps"
-  description: "Deliver with DevOps"
-  ms.date: 1/16/2024
+  description: "Build and run continuous integration and continuous delivery workflows using GitHub Actions."
+  ms.date: 02/06/2024
   author: LuizMacedo
   ms.author: lumac
   ms.topic: module
-  ms.prod: azure
   ms.service: azure-devops
 title: Deliver with DevOps
 summary: Build and run continuous integration and continuous delivery workflows using GitHub Actions. Your workflows will have accelerated release cycles, increased resiliency, improved collaboration and reusability, and infrastructure as code.
@@ -36,6 +35,7 @@ roles:
 products:
   - azure
   - azure-cloud-services
+  - github
   - azure-devops
 subjects:
   - devops
