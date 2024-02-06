@@ -1,4 +1,4 @@
-Continuous Integration and Continuous Delivery (CI/CD) are important concepts in DevOps that focus on building, testing, and automating the delivery of software artifacts.
+Continuous integration and continuous delivery (CI/CD) are important concepts in DevOps that focus on building, testing, and automating the delivery of software artifacts.
 
 Imagine work for a software development company in the retail industry that is preparing to release a new version of their online store application. The company wants to ensure that the release process is efficient, reliable, and minimizes the risk of errors. Therefore, you have decided to follow a DevOps approach and use GitHub for software lifecycle management. By implementing CI/CD, the company can automate the build, test, and deployment processes, reducing manual effort and improving the overall quality of the software. This allows the company to deliver new features and bug fixes to their users quickly and consistently.
 

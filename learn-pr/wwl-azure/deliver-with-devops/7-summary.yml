@@ -3,7 +3,7 @@ uid: learn.wwl.deliver-with-devops.summary
 title: 'Summary'
 metadata:
   title: 'Summary'
-  description: "This module introduced Continuous Integration (CI) and Continuous Delivery (CD) concepts in DevOps, focusing on automating software release generation and deployment."
+  description: "This module introduced continuous integration (CI) and continuous delivery (CD) concepts in DevOps, focusing on automating software release generation and deployment."
   ms.date: 02/06/2024
   author: LuizMacedo
   ms.author: lumac

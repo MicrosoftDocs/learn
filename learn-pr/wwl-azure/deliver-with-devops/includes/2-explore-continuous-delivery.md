@@ -1,6 +1,6 @@
 Continuous integration (CI) and continuous delivery (CD) are closely related DevOps concepts, representing two distinct stages of the software delivery process. As you know from the previous module, the purpose of CI is to build and test software artifacts. CD automates the process of delivering these artifacts to their intended recipients. By implementing CD, organizations such as the one described in the sample scenario, are able to eliminate the manual effort involved in application deployment. In this unit, explore the characteristics and benefits of CD.
 
-## What is Continuous Delivery?
+## What is continuous delivery?
 
 Continuous delivery comprises the practices, which automate generation of software releases, ensure they are in a deployable state, and make them available to their consumers. Its focus is on minimizing the *time to deploy* and *time to mitigate (TTM)*, also known as *time to remediate (TTR)*. The latter refers to scenarios where a newly released version of the application reaches the production environment and needs to be rolled back.
 
@@ -10,7 +10,7 @@ It's worth noting that DevOps nomenclature includes two closely related terms, w
 
 Akin to CI, automation is based on release definitions created by developers and implemented in the repository hosting platform. For example, GitHub offers for this purpose GitHub Actions workflow, while Azure DevOps relies on Azure Pipelines.
 
-## What are the benefits of Continuous Delivery?
+## What are the benefits of continuous delivery?
 
 Benefits associated with continuous delivery are direct results of its automation and the shift-left approach. The most relevant ones include:
 
