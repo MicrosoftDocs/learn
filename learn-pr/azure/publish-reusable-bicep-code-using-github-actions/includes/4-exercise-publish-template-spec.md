@@ -38,7 +38,7 @@ Now, you can add a second job to publish the template spec to Azure.
 
    :::code language="yaml" source="code/4-workflow.yml" range="30-51" :::
 
-   This job checks out the code from your repository and signs in to Azure by using the GitHub secrets that you created earlier. It then runs the `az ts create` command to publish the template spec to Azure.
+   This job checks out the code from your repository and signs in to Azure using the GitHub secrets that you created. It then runs the `az ts create` command to publish the template spec to Azure.
 
    > [!TIP]
    > To keep things simple, your workflow uses the workflow's _run number_ as the template spec's version number. In the next unit, you'll learn about a more complex versioning scheme.

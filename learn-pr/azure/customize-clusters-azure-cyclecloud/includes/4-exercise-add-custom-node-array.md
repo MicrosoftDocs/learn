@@ -19,7 +19,7 @@ In this exercise, you will perform the following tasks:
 
 You'll start by adding a definition of a nodearray within the Slurm template you customized in the previous exercise of this module. The sample template includes two partitions labeled *hpc* and *htc*. You'll create another partition and the corresponding nodearray intended for jobs that benefit from the Compute Unified Device Architecture (CUDA) capabilities.
 
-1. If needed, from your computer, start any Azure portal-compatible web browser, navigate to [the Azure portal](https://portal.azure.com). When prompted, authenticate with a Microsoft account or an Azure Active Directory (Azure AD) account that has the Contributor or Owner role in the Azure subscription that you're using in this module.
+1. If needed, from your computer, start any Azure portal-compatible web browser, navigate to [the Azure portal](https://portal.azure.com). When prompted, authenticate with a Microsoft account or a Microsoft Entra account that has the Contributor or Owner role in the Azure subscription that you're using in this module.
 
 1. From the Azure portal, open the **Cloud Shell** by selecting its icon in the toolbar next to the search text box and ensure that you're running a Bash session.
 
@@ -67,7 +67,7 @@ You'll start by adding a definition of a nodearray within the Slurm template you
 
 To be able to modify the values of template parameters with the Azure CycleCloud graphical interface, you'll apply more changes to the template.
 
-1. Within the web browser window that displays the Bash session in the **Azure Cloud Shell** pane, within the nano editor interface, scroll to the `[parameters Auto-Scaling]` section and add the following content directly before it:
+1. Within the web browser window that displays the Bash session in the **Azure Cloud Shell** pane, within the nano editor interface, scroll to the `[[parameters Auto-Scaling]]` section and add the following content directly before it:
 
     ```azurecli
 

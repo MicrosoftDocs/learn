@@ -6,8 +6,8 @@ metadata:
   ms.date: 06/29/2022
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: microsoft-sentinel
 title: Explain threat hunting concepts in Microsoft Sentinel
 summary: Learn the threat hunting process in Microsoft Sentinel.
 abstract: |

@@ -6,8 +6,8 @@ metadata:
   ms.date: 04/20/2021
   author: jongalloway
   ms.author: jogallow
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.manager: markl
+  ms.topic: unit
 title: Exercise - Fix issues with form accessibility
 durationInMinutes: 15
 content: |

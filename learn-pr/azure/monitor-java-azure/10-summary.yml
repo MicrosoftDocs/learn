@@ -5,15 +5,15 @@ metadata:
   unitType: summary
   title: Summary of monitoring your Java applications on Azure
   description: We look at a summary of monitoring your Java applications on Azure
-  ms.date: 07/07/2021
+  ms.date: 01/07/2024
   author: roryp
   ms.author: ropreddy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.contributors:
   - ropreddy-07092021
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - devx-track-extended-java
 durationInMinutes: 1
 content: |
   [!include[](includes/10-summary.md)]

@@ -4,13 +4,10 @@ title: Describe the anatomy of a pipeline
 metadata:
   title: Describe the anatomy of a pipeline
   description: "Describe the anatomy of a pipeline"
-  ms.date: 01/10/2023
+  ms.date: 06/20/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/2-describe-anatomy-of-pipeline.md)]

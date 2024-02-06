@@ -4,13 +4,12 @@ There are four access options: Premium Blob Storage, and the Hot, Cool, and Arch
 
 The four access options for Azure Blob Storage offer a range of features and support levels to help you optimize your storage costs. 
 
-| Comparison | Premium Blob Storage | Hot access tier | Cool access tier | Archive access tier |
+| Comparison | Hot access tier | Cool access tier | Cold access tier | Archive access tier |
 | --- | --- | --- | --- | ---|
-| **Availability** | 99.9% | 99.9% | 99% | Offline |
-| **Availability (RA-GRS reads)** | N/A | 99.99% | 99.9% | Offline |
-| **Latency (time to first byte)** | Single-digit milliseconds | milliseconds | milliseconds | hours |
-| **Minimum storage duration** | N/A | N/A | 30 days | 180 days |
-| **Usage costs** | Higher storage costs, Lower access & transaction costs | Higher storage costs, Lower access & transaction costs | Lower storage costs, Higher access & transaction costs | Lowest storage costs, Highest access & transaction costs |
+| **Availability** | 99.9% | 99% | 99% | 99% |
+| **Availability (RA-GRS reads)** | 99.99%  | 99.9% | 99.9% | 99.9%  |
+| **Latency (time to first byte)** | milliseconds | milliseconds | milliseconds | hours |
+| **Minimum storage duration** | N/A | 30 days | 90 days | 180 days |
 
 ### Things to know about Azure blob access tiers
 

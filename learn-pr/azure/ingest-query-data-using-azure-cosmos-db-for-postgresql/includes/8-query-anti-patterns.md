@@ -1,12 +1,12 @@
-As Azure Cosmos DB for PostgreSQL provides distributed functionality by extending PostgreSQL, it's compatible with PostgreSQL constructs. Users can use most of the tools and features in the rich and extensible PostgreSQL ecosystem for distributed tables. However, some SQL features aren't supported for queries that combine information from multiple nodes, and while there are some suggested workarounds, most of these queries are considered anti-patterns. Anti-patterns are queries that may return the requested data but have unintended consequences, such as poor performance, unnecessary data movement, and other unwanted behaviors. You should consider whether a distributed database is appropriate for your situation if you find yourself attempting numerous workarounds or needing to write queries following anti-patterns. You can reevaluate your distribution column selection on each of your tables.
+Because Azure Cosmos DB for PostgreSQL provides distributed functionality by extending PostgreSQL, it's compatible with PostgreSQL constructs. Users can use most of the tools and features in the rich and extensible PostgreSQL ecosystem for distributed tables. However, some SQL features aren't supported for queries that combine information from multiple nodes, and while there are some suggested workarounds, most of these queries are considered *anti-patterns*. Anti-patterns are queries that might return the requested data but have unintended consequences, such as poor performance, unnecessary data movement, and other unwanted behaviors. You should consider whether a distributed database is appropriate for your situation if you find yourself attempting numerous workarounds or needing to write queries following anti-patterns. You can reevaluate your distribution column selection on each of your tables.
 
 ## Joins without specifying a distribution column
 
 ### Using CTEs to join tables on non-distribution columns
 
-When a SQL query is unsupported, one way to work around it's using common table expressions (CTEs), which use what is referred to as pull-push execution.
+When a SQL query is unsupported, one way to work around it is using common table expressions (CTEs), which use what is referred to as pull-push execution.
 
-Suppose the `payment_merchants` table was still a distributed table. Running the following query to join it with the `payment_events` table would fail.
+Suppose the `payment_merchants` table was still a distributed table. Running the following query to join it with the `payment_events` table would fail:
 
 ```sql
 SELECT name, event_id
@@ -16,7 +16,7 @@ LEFT JOIN payment_merchants m ON e.merchant_id = m.merchant_id;
 
 The query results in an error:
 
-```sql
+```output
 ERROR: complex joins are only supported when all distributed tables are co-located and joined on their distribution columns
 ```
 
@@ -60,13 +60,13 @@ Custom Scan (Citus Adaptive)  (cost=0.00..0.00 rows=100000 width=40)
 
 The first part of the output reveals that it was necessary to create a distributed subplan. This subplan means the coordinator has to push the query within the CTE down to workers for execution and pull the results back. The coordinator will send the intermediate results from the CTE down to workers to be used in the join query run on each worker. While this technique does work, it's considered a distributed query anti-pattern because of the data shuffling required between nodes to complete the query.
 
-Thus it’s best to either add the most specific filters and limits to the inner query as possible or aggregate the table. That reduces the network overhead that such a query can cause. For more information about this optimization, see [Subquery/CTE Network Overhead](https://docs.citusdata.com/en/stable/performance/performance_tuning.html#subquery-perf) in the Citus documentation.
+Thus, it’s best to either add the most specific filters and limits to the inner query as possible or aggregate the table. That reduces the network overhead that such a query can cause. For more information about this optimization, see [Subquery/CTE Network Overhead](https://docs.citusdata.com/en/stable/performance/performance_tuning.html#subquery-perf) in the Citus documentation.
 
 ## Using temp tables
 
 There are still a few queries that are [unsupported](https://docs.citusdata.com/en/stable/faq/faq.html#unsupported) even with the use of push-pull execution via subqueries. One of them is using [grouping sets](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-GROUPING-SETS) on a distributed table.
 
-In the payment application, you created a table called `payment_events`, distributed by the column `user_id`. The example below queries it to find the earliest events for a preselected set of users, grouped by combinations of event type and merchant ID. A convenient way to construct this type of query is with grouping sets. However, as mentioned, this feature isn't yet supported in distributed queries:
+In the payment application, you created a table called `payment_events`, distributed by the `user_id` column. The example below queries it to find the earliest events for a preselected set of users, grouped by combinations of event type and merchant ID. A convenient way to construct this type of query is with grouping sets. However, as mentioned, this feature isn't yet supported in distributed queries:
 
 ```sql
 -- This will not work
@@ -98,4 +98,4 @@ FROM results
 GROUP BY user_id, ROLLUP(merchant_id, event_type);
 ```
 
-Creating a temporary table on the coordinator is a last resort. It's limited by the disk size and CPU of the node.
+Creating a temporary table on the coordinator is a last resort. It's limited by the node's disk size and CPU.

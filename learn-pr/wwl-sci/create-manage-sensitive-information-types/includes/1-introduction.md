@@ -1,3 +1,4 @@
+
 Finding sensitive data between all the data produced in an organization requires different search and recognition patterns, which are called sensitive information types. In this module, you'll learn how to use sensitive information types to support your information protection strategy.
 
 A sensitive information type is defined by a pattern that can be identified by a regular expression or a function. In addition, corroborative evidence such as keywords and checksums can be used to identify a sensitive information type. Confidence level and proximity are also used in the evaluation process. Altogether, these elements serve as the foundation of the various policies you'll establish in Microsoft 365 to protect your information and support your data lifecycle management strategy.

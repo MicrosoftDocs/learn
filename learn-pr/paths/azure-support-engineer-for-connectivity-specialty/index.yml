@@ -3,11 +3,10 @@ uid: learn.wwl.azure-support-engineer-for-connectivity-specialty
 metadata:
   title: Azure Support Engineer for Connectivity Specialty
   description: Azure Support Engineer for Connectivity Specialty
-  ms.date: 07/13/2022
-  author: wwlpublish
-  ms.author: lola
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/27/2023
+  author: fabianomira
+  ms.author: famira
+  ms.topic: learning-path
 title: Azure Support Engineer for Connectivity Specialty
 prerequisites: |
   - Demonstrate an understanding of the OSI model

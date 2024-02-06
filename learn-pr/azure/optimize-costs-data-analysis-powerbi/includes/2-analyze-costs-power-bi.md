@@ -4,26 +4,26 @@ Microsoft Cost Management provides a solution that you can use to start analyzin
 
 To install the app:
 
-Open [Microsoft Cost Management Power BI App](https://aka.ms/costmgmt/ACMApp) and get the app. Agree to the terms of use and privacy policy and then continue. Install the app and then go to it. In **Get started with your new app**, under **Connect your data**, select **Connect**.
+Open the [Microsoft Cost Management Power BI App](https://aka.ms/costmgmt/ACMApp) page and get the app. Agree to the terms of use and privacy policy and then continue. Install the app and select **Go to app**. In **Getting started with your new app**, select **Connect your data**, and select **Connect**.
 
 In the dialog that appears, enter your EA enrollment number for **BillingProfileIdOrEnrollmentNumber**. Specify the number of months of data to get. Leave the default **Scope** value of **Enrollment Number**, then select **Next**.
 
-:::image type="content" source="../media/2-ea-number.png" alt-text="Screenshot showing where to input your E A account information." :::
+:::image type="content" source="../media/2-ea-number.png" alt-text="Screenshot showing where to input your EA account information." :::
 
-The next dialog connects to Azure and gets data required for reserved instance recommendations. _Leave the default values as configured_ and select **Sign in**.
+The next dialog connects to Azure and gets data required for reserved instance recommendations. _Leave the default values as configured_ and select **Sign in and continue**.
 
 :::image type="content" source="../media/2-autofit.png" alt-text="Screenshot showing connection information." :::
 
-The final installation step connects to your EA enrollment and requires an [Enterprise Administrator](/azure/cost-management-billing/manage/understand-ea-roles) account. Select **Sign in** to authenticate with your EA enrollment. This step also starts a data refresh action in Power BI.
+The final installation step connects to your EA enrollment and requires an [Enterprise Administrator](/azure/cost-management-billing/manage/understand-ea-roles) account. Select **Sign in and connect** to authenticate with your EA enrollment. This step also starts a data-refresh action in Power BI.
 
 > [!NOTE]
-> The data refresh process might take quite a while to complete. The length depends on the number of months specified and the amount of data needed to sync.
+> The data-refresh process might take quite a while to complete. The length depends on the number of months specified and the amount of data needed to sync.
 
-:::image type="content" source="../media/2-ea-auth.png" alt-text="Screenshot showing where to Sign in." :::
+:::image type="content" source="../media/2-ea-auth.png" alt-text="Screenshot showing where to Sign in and connect." :::
 
 ## Check data freshness
 
-To check the data refresh status, select the **Datasets + dataflows** tab in the workspace. Look next to the Refreshed timestamp. If it's still updating, you'll see a circular indicator showing that the refresh is in progress.
+To check the data-refresh status, select the **Datasets + dataflows** tab in the workspace. Look next to the Refreshed timestamp. If it's still updating, you'll see a circular indicator showing that the refresh is in progress.
 
 :::image type="content" source="../media/2-data-refresh-status.png" alt-text="Screenshot showing data refresh status indicator." lightbox="../media/2-data-refresh-status.png" :::
 

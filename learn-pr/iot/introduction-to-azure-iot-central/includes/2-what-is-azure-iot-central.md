@@ -1,84 +1,47 @@
-Let's begin with an overview of Azure IoT Central. The definitions and features that follow can be used to determine if Azure IoT Central will meet the requirements for your IoT solution(s).
+Azure IoT Central is an IoT application platform as a service (aPaaS) that reduces the burden and cost of developing, managing, and maintaining IoT solutions. Use IoT Central to quickly evaluate your IoT scenario and assess the opportunities it can create for your business. IoT Central streamlines the development of a complex and continually evolving IoT infrastructure, by letting you to focus your efforts on determining the business impact you can create by using an IoT solution.
 
-## What is Internet of Things?
+The web UI lets you quickly connect devices, monitor device conditions, create rules, and manage devices and their data throughout their life cycle. Furthermore, it enables you to act on device insights by extending IoT intelligence into line-of-business applications. Once you've used IoT Central to evaluate your IoT scenario, you can then build your enterprise ready solutions by using the power of Azure IoT platform.
 
-*Internet of Things (IoT)* refers to the network of connected devices and objects that can send and receive data over the internet to other devices and/or systems. Common IoT devices include: smart refrigerators, personal assistants and fitness trackers. IoT devices have sensors that detect and measure various ambient conditions like temperature, location, light, humidity, pressure, acceleration and more. Data collected from IoT devices can be used for live monitoring, analysis, and decision-making.
+## Create an IoT Central application
 
-:::image type="content" source="../media/2-internet-of-things.svg" alt-text="Diagram showing various types of IoT devices connecting to the cloud." border="false" lightbox="../media/2-internet-of-things-expanded.svg":::
+You can quickly deploy a new IoT Central application and then customize it to your specific requirements. Application templates in Azure IoT Central are a tool to help you kickstart your IoT solution development. Use an application template to preconfigure your application with features such as dashboards, device templates, and analytics. You can use application templates for everything from getting a feel for what is possible, to fully customizing your application to fit your scenario.
 
-## Azure IoT Central definition
+The following screenshot is an IoT Central application using the *In-store Analytics - Checkout* application template:
 
-Azure IoT Central is Azure's solution for the challenges faced by IoT professionals. It's an application platform as a service (*aPaaS*) offering that provides a cloud environment to build, manage, and deliver your IoT solution with less work required on your part.
+![Screenshot of an IoT Central application dashboard using the in-store analytics checkout template.](../media/2-in-store-analytics-checkout-dashboard.png)
 
-The goal of aPaaS offerings is to accelerate application development by providing a complete solution for a specific business need. As a subcategory of the platform as a service (*PaaS*) cloud service type, aPaaS offerings handle the scaling and configuration for you but still require some developer input to complete the solution. Using the Azure IoT Central platform, you can start building your IoT Central solutions right from your internet browser.
+## Connect devices
 
-:::image type="content" source="../media/2-azure-iot-central-homepage.svg" alt-text="Screenshot of the Azure IoT Central homepage." border="true" lightbox="../media/2-azure-iot-central-homepage-expanded.svg":::
+Every device connected to IoT Central uses a *device template*. A device template is the blueprint that defines the characteristics and behavior of a type of device such as the:
 
-Its features let you quickly implement IoT solutions with little to no code required. Allowing your organization to focus more attention, efforts, and money on creating business value from your IoT data. Instead of simply gathering the data itself.
+- Telemetry it sends. Examples include temperature and humidity. Telemetry is streaming data.
+- Cloud properties that an operator can modify. Examples include a store address and a last serviced date.
+- Device properties that are set by a device and are read-only in the application. For example, the state of a fan as either on or off.
+- Properties that are set by an operator and that determine the behavior of the device. For example, a target temperature for the device.
+- Commands that are called by an operator and that run on a device. For example, a command to remotely reboot a device.
 
-Since most of the work required to produce a production-ready, enterprise-level IoT solution is handled by Azure IoT Central, you can have your devices connected after completing a few steps. There are four key user roles that assist with these efforts:
+You can create your own custom device templates or connect an [IoT Plug and Play](/azure/iot-develop/overview-iot-plug-and-play) certified device by using a device template provided by the manufacturer:
 
-1. **Administrator**: handles administrative tasks, such as assigning user roles and permissions.
-1. **Device Developer**: writes code for IoT devices.
-1. **Operator**: manages devices connected to the IoT cloud application.
-1. **Solution Builder**: builds the IoT cloud solution that devices connect to.
+![Screenshot of new device template options when at the IoT Central application.](../media/2-in-store-analytics-checkout-new-device-template.png)
 
-## Attributes of a successful IoT solution
+## Manage devices
 
-IoT solutions are valuable for business and personal use. However, building IoT solutions from the ground up can be a daunting task. The key attributes of successful IoT solutions are centered around the following considerations:
+The IoT Central application allows you to easily manage the devices in your IoT Central solution. Operators do tasks such as:
 
-| Attribute | Description |
-| ------------- | --------------- |
-| Scale | Scaling to hundreds of millions of devices creates system requirements for increased data processing, storage, compute, networking, multi-tenancy and more. |
-| Device Management | Systematic pattern to provision, deprovision, manage, monitor and update your IoT devices, and manage device data transmission. |
-| Big Data Management | Manage how your applications capture, store, retain and analyze data across hot, warm and cold paths and different storage options. |
-| Analytics, Insights & Extensibility | Monitor device data in aggregate and over time. Establish rules that automate actions based on device data, and set up integrations with your broader business systems. |
-| High availability & disaster recovery | Ensure your mission-critical applications and data are built for resiliency and protect your resources from network, compute and data failures. |
-| Security & Compliance | Develop a strategy that ensures secure connectivity between devices and the cloud, secure integration with other applications, secure data protection in the cloud with regulatory compliance. |
-| Total cost of ownership | Understand how to estimate long-term aggregated costs of cloud services, including how operational and infrastructure costs grow as your device and message volume grows. |
-| DevOps | Effectively build, operate and maintain cloud services. Manage, provision and deploy code, prevent and manage security issues and test your solution before product deployment. |
+- Monitoring the devices connected to the application.
+- Troubleshooting and remediating issues with devices.
+- Provisioning new devices.
 
-## How to leverage Azure IoT Central
+You can define custom rules and actions that operate over data streaming from connected devices. An operator can enable or disable these rules at the device level to control and automate tasks within the application.
 
-Capturing data from IoT devices is a common motivating factor for the development of IoT solutions, and may be why you're interested in creating your own. IoT data is often used to make critical business decisions and predictions, like those introduced in the previous unit for our national grocery store chain scenario. Let's explore how Azure IoT Central can help us **collect**, **monitor** and **analyze** this scenario's IoT data.
+The following video walks you through monitoring device connectivity status:
 
-:::image type="content" source="../media/2-collect-monitor-analyze-decide.svg" alt-text="Diagram showing the process of collecting, monitoring and analyzing IoT data." border="false" lightbox="../media/2-collect-monitor-analyze-decide.svg":::
+> [!VIDEO 75d0de58-9cc0-4505-9fa1-a0a7da8bb466]
 
-### Collect IoT data
+## Integrate with other services
 
-:::row:::
-    :::column span="2":::
-        In order to take advantage of the features and benefits of Azure IoT Central, you must start with connecting your IoT devices to the platform to establish secure communication between the two. In our example scenario, not only do you need to collect a massive amount of data but you also have to handle various types of data sent from different types of devices, such as: proximity sensors at entrances, optical sensors on building exteriors and accelerometers on shopping carts.
+As an application platform, IoT Central lets you transform your IoT data into the business insights that drive actionable outcomes. Rules, data export, and the REST API are examples of how you can integrate IoT Central with line-of-business applications:
 
-        Azure IoT Central helps you connect tens to millions of devices.
-    :::column-end:::
-    :::column:::
-        :::image type="content" source="../media/2-collect.svg" alt-text="Diagram showing the process of collecting, monitoring and analyzing IoT data with the collect phase emphasized." border="false" lightbox="../media/2-collect-expanded.svg":::
-    :::column-end:::
-:::row-end:::
+![Diagram that demonstrates how IoT Central can transform your IoT data.](../media/2-iot-central-transform.png)
 
-### Monitor IoT data
-
-:::row:::
-    :::column:::
-        :::image type="content" source="../media/2-monitor.svg" alt-text="Diagram showing the process of collecting, monitoring and analyzing IoT data with the monitor phase emphasized." border="false" lightbox="../media/2-monitor-expanded.svg":::
-    :::column-end:::
-    :::column span="2":::
-        Once a secure connection has been established between Azure IoT Central and your IoT devices, you'll be able to monitor your IoT cloud application, devices, and device data in real time. Azure IoT Central has various charting and visual features that you can use to provide real-time data monitoring to the store managers in our example scenario.
-
-        To implement this requirement, you can simply use the built-in dashboards or create your own custom dashboards. Using Azure IoT Central's dashboards, you can give store managers the option to view and monitor devices individually or as a group to better aid with investigating, troubleshooting and fixing device issues.
-    :::column-end:::
-:::row-end:::
-
-### Analyze IoT data
-
-:::row:::
-    :::column span="2":::
-        Live monitoring can be valuable, but there may be times when you'll need to analyze historical data sent from your IoT devices in the past. For instance, the ultimate goal of our fictional IoT solution is to improve the customer experience by ensuring staff availability. To help store managers reach this goal, it's important that they're able to analyze IoT data to base their staffing needs on.
-
-        Azure IoT Central has several options for analyzing the IoT data it collects. Historical device data can be viewed by building Dashboards, viewing the *Analytics* page, or exported to other Azure services or custom applications for additional analysis. Store managers can use these features for reporting purposes or spotting trends in their store's data.
-    :::column-end:::
-    :::column:::
-        :::image type="content" source="../media/2-analyze.svg" alt-text="Diagram showing the process of collecting, monitoring and analyzing IoT data with the analyze phase emphasized." border="false" lightbox="../media/2-analyze-expanded.svg":::
-    :::column-end:::
-:::row-end:::
+You can generate business insights, such as determining machine efficiency trends or predicting future energy usage on a factory floor, by building custom analytics pipelines to process telemetry from your devices and store the results. Configure data exports in your IoT Central application to export telemetry, device property changes, and device template changes to other services where you can analyze, store, and visualize the data with your preferred tools.

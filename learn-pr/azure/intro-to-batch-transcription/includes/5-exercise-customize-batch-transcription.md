@@ -1,12 +1,12 @@
 In the previous exercise, we used the standard en-us model. For the customer service scenario, you need to investigate if it's possible to create a custom model from existing call center data. To create this model, use the Custom Speech portal.
 
-The first step to train a model is to upload training data. For more information, see [Prepare and test your data](/azure/cognitive-services/speech-service/how-to-custom-speech-test-and-train) for step-by-step instructions to prepare human-labeled transcriptions and related text (utterances and pronunciations).
+The first step to train a model is to upload training data. For more information, see [Prepare and test your data](/azure/ai-services/speech-service/how-to-custom-speech-test-and-train) for step-by-step instructions to prepare human-labeled transcriptions and related text (utterances and pronunciations).
 
 ## Train and evaluate a model
 
 1. Sign in to the [Custom Speech portal](https://speech.microsoft.com/customspeech)
 
-1. Go to **Speech-to-text** > **Custom Speech**
+1. Go to **Speech to text** > **Custom Speech**
 
     :::image type="content" source="../media/5-azure-speech-portal.png" alt-text="Screenshot showing the home page of the speech portal with a red line around custom models.":::
 
@@ -40,7 +40,7 @@ Now you've created a project, it's time to upload some training data. Here, you 
 
 After a few seconds, you'll see a message saying your files have successfully processed. Next, let's train a custom model using the sample data.
 
-1. On the left-hand side, select the check box for the dataset, then select **Train**
+1. On the left-hand side, select the checkbox for the dataset, then select **Train**
 
     :::image type="content" source="../media/5-training-a-model.png" alt-text="Screenshot showing the example model selected and train outlined in the portal.":::
 
@@ -85,7 +85,7 @@ We can do this using an endpoint, or linking directly to the model. Here, we lin
 
 1. Return to the sandbox terminal, and type `model_id=<your-model-id>`, replacing \<your-model-id\> with the GUID you copied in the previous step. Then, press <kbd>Enter</kbd>
 
-1. Next, we follow the same steps as we did in the first exercise to create a new batch of transcriptions using the custom model. This time, you specify that Batch Transcription should use your newly created Custom Model in the JSON. Notice how we specify the endpoint with the cognitive services URL, and the custom model ID. Run the following command to create the JSON. 
+1. Next, we follow the same steps as we did in the first exercise to create a new batch of transcriptions using the custom model. This time, you specify that Batch Transcription should use your newly created Custom Model in the JSON. Notice how we specify the endpoint with the Azure AI services URL, and the custom model ID. Run the following command to create the JSON.
 
     ```bash
     # Create the JSON  
@@ -124,7 +124,7 @@ We can do this using an endpoint, or linking directly to the model. Here, we lin
     ```bash
     # Find the URI that will tell us the status. This is found in the original submission response
     info_uri=$(echo "$response" | grep -oP -m 1 "(\s*\"self\":\s*\"\K)([^\"]*)")
-    
+
     # Check the status with a simple GET request
     job_information=$(curl -X GET $info_uri -H "Ocp-Apim-Subscription-Key:$apiKeySpeech")
     echo "$job_information"
@@ -133,7 +133,7 @@ We can do this using an endpoint, or linking directly to the model. Here, we lin
 
     Take note of the status. **Once it states 'Succeeded', then move on.** It might take a minute or two to run. If it states the job is still running, wait 20 seconds, then paste the previous command into the terminal and run it again. **Repeat this until the status is 'Succeeded'**
 
-1. Run the following command to retrieve the uri for the transcription information and download the individual transcription files.
+1. Run the following command to retrieve the URI for the transcription information and download the individual transcription files.
 
     ```bash
     result_info_uri=$(echo $job_information | grep -oP -m 1 "(\s*\"files\":\s*\"\K)([^\"]*)")

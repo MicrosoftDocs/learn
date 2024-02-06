@@ -1,5 +1,3 @@
-
-
 In general, customers have options when deploying SAP products in Azure:
 
 - **Azure VMs**: There's a growing number of Azure VM SKUs certified for hosting SAP HANA including GS5 and several M family VM sizes (with M208ms\_v2, featuring 5.7 TiB of memory and with M128s supporting scale-out configuration). There's also a larger selection of Azure VM SKUs that support non-HANA workloads (NetWeaver and non-NetWeaver products).

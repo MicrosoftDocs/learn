@@ -1,4 +1,5 @@
 
+
 Microsoft Intune comes pre-built with device profiles that allow for common configuration settings to be assigned and deployed across various device platforms in an organization. Custom profiles can be used to add specific settings needed to a device profile that may not already exist within Intune’s built-in settings.
 
 ### Learn more

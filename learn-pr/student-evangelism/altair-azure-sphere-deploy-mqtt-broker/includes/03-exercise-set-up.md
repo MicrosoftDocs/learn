@@ -9,7 +9,7 @@ Installing the Mosquitto MQTT broker on Linux is the easiest option because most
 > [!NOTE]
 > To minimize costs, the MQTT broker can be run on a *General purpose B1 SKU* virtual machine that can be stopped when it's not in use.
 
-The following blog post from K21 Academy is a great guide to installing an Ubuntu server on Azure: [Create and Connect an Ubuntu Virtual Machine in Azure](https://k21academy.com/microsoft-azure/az-104/az-104-create-and-connect-an-ubuntu-virtual-machine-in-azure?azure-portal=true).
+The following blog post from K21 Academy is a great guide to installing an Ubuntu server on Azure: [Create and Connect an Ubuntu Virtual Machine in Azure](https://k21academy.com/microsoft-azure/admin/how-to-create-and-connect-an-ubuntu-virtual-machine-in-azure/).
 
 ## Create an Ubuntu virtual server
 

@@ -1,4 +1,4 @@
-The previous unit introduced you to foundational concepts about working with players with disabilities to inform accessible development. In this unit, you'll learn potential ways to connect with members of the disability community so you can begin forming these partnerships.
+The previous unit introduced you to foundational concepts about working with players with disabilities to inform accessible development. In this unit, learn potential ways to connect with members of the disability community so you can begin forming these partnerships.
 
 ## Identify ways to connect with members of the gaming and disability community
 
@@ -31,7 +31,7 @@ Consider using the following platforms and channels to form connections with mem
 - **Social media:** Social media platforms provide opportunities for disability community members to come together and discuss common interests, including game accessibility. Creating social media posts that contain information or links to upcoming accessibility research studies, surveys, play tests, and more is a great way to reach broader communities.
 
     > [!Tip]
-    > Including tags like **#accessibility**, **#gameaccessibility**, or **#A11y** ([a numeronym for the word accessibility](https://www.a11yproject.com/posts/2017-08-26-a11y-and-other-numeronyms/)) in your post increases the visibility of the post among the players that you're targeting.  
+    > Including tags like **#accessibility**, **#GameAccessibility**, or **#A11y** ([a numeronym for the word accessibility](https://www.a11yproject.com/posts/2017-08-26-a11y-and-other-numeronyms/)) in your post increases the visibility of the post among the players that you're targeting.  
 
 - **Disability nonprofit organizations and advocacy groups:** If your team is looking for feedback from players who have a specific type of disability or experience, nonprofit organizations and advocacy groups can be a great resource.
 
@@ -41,11 +41,11 @@ Consider using the following platforms and channels to form connections with mem
 
 - **Testing services:** Consider using companies or organizations that provide accessibility testing services. One option is the [Microsoft Game Accessibility Testing Service](/gaming/accessibility/mgats) for games that ship on Xbox consoles and PC platforms.
 
-    Developers can submit working game builds or released titles to the program. A test team that consists of multiple players with disabilities will play through and assess their accessibility experience. The development team will produce a report that details this accessibility feedback and suggestions for improvement.
+    Developers can submit working game builds or released titles to the program. A test team that consists of multiple players with disabilities plays through and assess their accessibility experience. The development team produces a report that details this accessibility feedback and suggestions for improvement.
 
     > [!Note]
     > It's important to use testing services that include players with disabilities as part of the test team. Testing services that offer automated accessibility checks or services performed by individuals outside the disability community would not be considered true "community collaboration for accessible design."
 
 - **Preview ring opportunities:** [Preview rings](https://news.xbox.com/2021/05/06/all-about-xbox-update-preview-rings/) are another way to gather accessibility feedback. The Xbox Accessibility Insiders League (XAIL) is one example of a preview ring for content on the Xbox platform. Members of the XAIL preview ring consist of players who have self-identified as having a disability.
 
-    Submitting your new feature, experience, or game to a preview ring like XAIL gives players with disabilities an opportunity to assess new gaming experiences and easily submit accessibility feedback from their own homes.
+    When you submit your new feature, experience, or game to a preview ring like XAIL, it gives players with disabilities an opportunity to assess new gaming experiences and easily submit accessibility feedback from their own homes.

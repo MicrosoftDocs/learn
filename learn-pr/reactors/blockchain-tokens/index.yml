@@ -7,7 +7,6 @@ metadata:
   author: danmabee
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Create tokens using OpenZeppelin
 summary: Learn about the significance of tokens and how they are used in blockchain.

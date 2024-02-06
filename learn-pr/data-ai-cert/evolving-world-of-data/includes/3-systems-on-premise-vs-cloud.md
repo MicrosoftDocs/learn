@@ -93,7 +93,7 @@ Cloud systems like Azure track costs by subscriptions. A subscription can be bas
 
 The cost of operating an on-premises server system rarely aligns with the actual usage of the system. In cloud systems, the cost usually aligns more closely with the actual usage. 
 
-In some cases, however, those costs don't align. For example, an organization will be charged for a service that a cloud administrator provisions but doesn't use. This scenario is called *underutilization*. Organizations can reduce the costs of underutilization by adopting a best practice to provision production instances only after their developers are ready to deploy an application to production.  Developers can use tools like the Azure Cosmos DB emulator or the Azure Storage emulator to develop and test cloud applications without incurring production costs.
+In some cases, however, those costs don't align. For example, an organization will be charged for a service that a cloud administrator provisions but doesn't use. This scenario is called *underutilization*. Organizations can reduce the costs of underutilization by adopting a best practice to provision production instances only after their developers are ready to deploy an application to production.  Developers can use tools like the Azure Cosmos DB emulator or the [Azurite](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/storage/common/storage-use-azurite.md) to develop and test cloud applications without incurring production costs.
 
 ### Lift and shift
 

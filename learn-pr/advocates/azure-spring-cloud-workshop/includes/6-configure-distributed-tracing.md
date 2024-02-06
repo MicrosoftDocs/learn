@@ -1,4 +1,4 @@
-In this unit, we look Azure Spring Apps's Application Insights features, to better understand microservices issues.
+In this unit, we look at the Application Insights features of Azure Spring Apps, to better understand microservices issues.
 
 We now have a complete microservices stack:
 
@@ -19,4 +19,4 @@ To solve that issue, we're going to use Application Performance Monitoring (APM)
 
 You should now have access to a full application map and to a search engine that allows you to find performance bottlenecks.
 
-![Distributed tracing.](../media/6-distributed-tracing.png)
+![Diagram that shows distributed tracing.](../media/6-distributed-tracing.png)

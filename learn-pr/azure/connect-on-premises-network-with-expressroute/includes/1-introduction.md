@@ -2,7 +2,7 @@ You can use the Azure ExpressRoute service to extend your on-premises networks i
 
 Imagine you're the solution architect for a financial organization that has begun migrating resources to Azure. The organization has systems that need to communicate between an on-premises network and Azure, and it doesn't want this traffic traversing the internet. These applications have higher bandwidth requirements and need to have consistent network performance.
 
-The organization also uses Office 365. It wants to reduce traffic over the internet and send this traffic over a dedicated connection to Azure. The organization believes ExpressRoute meets its needs, but it wants to understand more about the service and whether it should include the service in the infrastructure.
+The organization also uses Office 365. It wants to reduce traffic over the internet by sending this traffic over a dedicated connection to Azure. The organization believes ExpressRoute meets its needs, but it wants to understand more about the service and whether it should include the service in the infrastructure.
 
 Your goal is to identify whether ExpressRoute is the correct service to use to allow connectivity from on-premises networks to the Microsoft cloud.
 

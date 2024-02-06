@@ -17,7 +17,7 @@ Use the following steps in the Azure portal to delete the resource group and all
 
 1. In the command bar, select **Delete resource group**.
 
-1. In the confirmation pane, you will be prompted to type the resource group name; you can right click and drag the title from the Resource group pane. 
+1. In the confirmation pane, you're prompted to type the resource group name; you can right-click and drag the title from the Resource group pane. 
 
 1. When the expected name is a match, **Delete** is available. 
  

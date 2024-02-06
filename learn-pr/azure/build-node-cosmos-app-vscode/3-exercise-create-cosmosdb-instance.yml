@@ -8,8 +8,7 @@ metadata:
   author: seesharprun
   ms.author: sidandrews
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: true
 durationInMinutes: 5
 content: |

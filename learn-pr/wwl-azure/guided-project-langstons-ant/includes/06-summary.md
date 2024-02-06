@@ -1,0 +1,1 @@
+In this module, you used what you learned about interfaces to extend the features of your Langston's Ant project. You learned how to use interfaces to represent the functions the ants can perform. By the end of this module, your project was able to display two ants creating a mirrored pattern. Great work!

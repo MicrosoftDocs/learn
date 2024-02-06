@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-microsoft-defender-cloud-apps.implement-microsoft-defender-cloud-apps
-title: Implement Microsoft Defender Cloud Apps
+title: Implement Microsoft Defender for Cloud Apps
 metadata:
-  title: Implement Microsoft Defender Cloud Apps
-  description: "Implement Microsoft Defender Cloud Apps"
-  ms.date: 03/31/2023
+  title: Implement Microsoft Defender for Cloud Apps
+  description: "Implement Microsoft Defender for Cloud Apps"
+  ms.date: 07/18/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 9
 content: |
   [!include[](includes/4-implement-microsoft-defender-cloud-apps.md)]

@@ -4,9 +4,9 @@ The threat-modeling exercise helps you find issues, sometimes more than you expe
 
 First, determine how critical the issue would be to your system. Second, select the security controls that help provide the most protection at the lowest possible cost.
 
-## Determine security issues priority
+## Determine priority of security issues
 
-Security issues are prioritized according to risk severity. The labels might change from organization to organization. However, they tend to follow a pattern from critical to low-risk impact if an attacker exploited the threat.
+Security issues are prioritized according to the severity of the risk if an attacker exploits the threat. The labels might change from organization to organization. However, they tend to follow a pattern from low-risk to critical.
 
 ## Types and functions
 
@@ -24,10 +24,10 @@ Functions are meant to help protect your system against each phase of a potentia
 
 Examples include:
 
-- Preventing break-ins with locks
-- Installing cameras to detect break-ins in process
-- Enacting a response plan to correct the break-in
-- Repairing the damage caused by the break-in
-- Deterring future break-ins with signs and additional security controls
+- Preventing break-ins with locks.
+- Installing cameras to detect break-ins in process.
+- Enacting a response plan to correct the break-in.
+- Repairing the damage caused by the break-in.
+- Deterring future break-ins with signs and added security controls.
 
-We'll look at priorities, types, and functions in the next few units.
+In the next few units, we look at priorities, types, and functions.

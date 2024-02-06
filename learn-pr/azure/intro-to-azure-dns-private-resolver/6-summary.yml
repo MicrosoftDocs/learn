@@ -4,12 +4,11 @@ title: Summary
 metadata:
   unitType: summary
   title: Summary
-  description: "Summary of Azure DNS Private Resolver and other reading"
-  ms.date: 03/17/2023
+  description: Summary of Azure DNS Private Resolver and other reading.
+  ms.date: 01/31/2024
   author: greg-lindsay
   ms.author: greglin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]

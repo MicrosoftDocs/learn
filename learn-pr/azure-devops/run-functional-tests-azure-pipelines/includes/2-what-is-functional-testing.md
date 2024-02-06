@@ -96,7 +96,7 @@ For example, say you have a website that includes a link to the user's profile. 
 
 ### User acceptance testing
 
-_User acceptance testing (UAT)_, like usability testing, focuses on an application's behavior from the user's perspective. Unlike acceptance testing, UAT is typically done by real end users.
+_User acceptance testing (UAT)_, like usability testing, focuses on an application's behavior from the user's perspective. Unlike usability testing, UAT is typically done by real end users.
 
 Depending on the software, end users might be asked to complete specific tasks. Or they might be allowed to explore the software without following specific guidelines. For custom software, UAT typically happens directly with the client. For more general-purpose software, teams might run _beta_ tests. In beta tests, users from different geographic regions or those with particular interests receive early access to the software.
 

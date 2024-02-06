@@ -4,11 +4,10 @@ title: Security, Storage, and Networking with Windows containers
 metadata:
   title: Security, Storage, and Networking with Windows containers
   description: "Security, Storage, and Networking with Windows containers"
-  ms.date: 01/04/2023
+  ms.date: 07/04/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

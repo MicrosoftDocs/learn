@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-implement-asynchronous-scenarios
+metadata:
+  title: 'Guided project: Implement asynchronous scenarios'
+  description: "This module introduces the learner to Tasks and the concept of asynchronous programming."
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: module-intro-to-product
+  ms.service: dotnet
+  ms.devlang: csharp
+title: 'Guided project: Implement asynchronous scenarios'
+summary: |
+  This module guides you through the basics of using asynchronous programming techniques in your Langton's Ants application.  You learn about Tasks and how to use the `async` and `await` keywords to make a method asynchronous.
+  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
+abstract: |
+  After completing this module, you will be able to:
+  - Use a boolean flag for starting a thread.
+  - Put the calculation of a new ant in a new thread using a Task.
+prerequisites: |
+  - Installation of VS Code configured for C# application development, including C# Dev Kit.
+  - Experience with the VS Code editor.
+  - Ability to develop C# console applications that implement business logic using loops, if statements, properties, and methods.
+  - Experience with basic C# syntax rules.
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- dotnet
+- vs-code
+subjects:
+- cloud-computing
+units:
+- learn.wwl.guided-project-implement-asynchronous-scenarios.introduction
+- learn.wwl.guided-project-implement-asynchronous-scenarios.prepare
+- learn.wwl.guided-project-implement-asynchronous-scenarios.exercise-implement-asynchronous-gamebuffer
+- learn.wwl.guided-project-implement-asynchronous-scenarios.exercise-implement-asynchronous-io-operations
+- learn.wwl.guided-project-implement-asynchronous-scenarios.knowledge-check
+- learn.wwl.guided-project-implement-asynchronous-scenarios.summary
+badge:
+  uid: learn.wwl.guided-project-implement-asynchronous-scenarios.badge

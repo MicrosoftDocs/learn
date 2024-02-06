@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/08/2022
+  ms.date: 06/02/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -24,18 +23,18 @@ quiz:
       explanation: "Incorrect. Directory Federation Services trial subscription will not assist identifying an identity model."
     - content: "Active Directory Domain Services in a Cloud Solutions Provider (CSP) subscription and Active Directory Federation Services"
       isCorrect: false
-      explanation: "Incorrect. They should use Azure Active Directory (Azure AD) or Active Directory Federation Services (AD FS) as the identity provider."
-    - content: "Azure Active Directory (AD) in an Enterprise Agreement and Active Directory Federation Services in an Enterprise Agreement"
+      explanation: "Incorrect. They should use Microsoft Entra ID or Active Directory Federation Services (AD FS) as the identity provider."
+    - content: "Microsoft Entra ID in an Enterprise Agreement and Active Directory Federation Services in an Enterprise Agreement"
       isCorrect: true
-      explanation: "Correct. They should deploy Azure Stack Hub using Azure Active Directory (AD) or Active Directory Federation Services (AD FS) as the identity provider."
+      explanation: "Correct. They should deploy Azure Stack Hub using Microsoft Entra ID or Active Directory Federation Services (AD FS) as the identity provider."
   - content: "An Azure Stack Hub operator needs access to adminportal, management, and adminmanagement from outside Azure Stack Hub. What should they do?"
     choices:
     - content: "Deploy the Azure Stack (hDeploy the Azure Stack (hyperconverged infrastructure) HCI operating system and create a cluster.yperconverged infrastructure) HCI operating system and create a cluster."
       isCorrect: false
       explanation: "Incorrect. Deploying the Azure Stack (hyperconverged infrastructure) HCI operating system and create a cluster is necessary for configuring the connection between Azure Stack HCI and Azure."
-    - content: "Deploy Azure Active Directory (AD) Connect."
+    - content: "Deploy Microsoft Entra Connect."
       isCorrect: false
-      explanation: "Incorrect. Azure Active Directory (AD) Connect is used to accomplish hybrid identity."
+      explanation: "Incorrect. Microsoft Entra Connect is used to accomplish hybrid identity."
     - content: "Integrate the Azure Stack Hub DNS services with the DNS servers hosting DNS zones used in Azure Stack Hub."
       isCorrect: true
       explanation: "Correct. They should integrate the Azure Stack Hub DNS services with the DNS servers hosting DNS zones used in Azure Stack Hub."

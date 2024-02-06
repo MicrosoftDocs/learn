@@ -7,8 +7,8 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen, py-fresh-zinc
+  ms.devlang: python
 title: Code control statements in Python
 summary: Learn more advanced topics of Python using interactive Notebooks.
 abstract: |

@@ -3,11 +3,11 @@ uid: learn.wwl.configure-azure-application-gateway
 metadata:
   title: Configure Azure Application Gateway
   description: "Learn how to configure Azure Application Gateway."
-  ms.date: 02/01/2023
+  ms.date: 01/31/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: application-gateway
 title: Configure Azure Application Gateway
 summary: Learn how to configure Azure Application Gateway.
 abstract: |

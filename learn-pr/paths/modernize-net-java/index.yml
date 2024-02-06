@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/10/2023
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Modernize .NET and Java apps
 prerequisites: |
   * Have a basic understanding of Azure, cloud concepts, and services.

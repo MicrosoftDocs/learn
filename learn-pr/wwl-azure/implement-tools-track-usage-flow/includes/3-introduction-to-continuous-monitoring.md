@@ -1,7 +1,8 @@
-:::image type="content" source="../media/route-system-feedback-b3040309.png" alt-text="Routing System Feedback":::
+
+:::image type="content" source="../media/route-system-feedback-b3040309.png" alt-text="Screenshot of the Routing System Feedback with migrate, secure, protect, monitor, configure and govern.":::
 
 
-Continuous monitoring refers to the process and technology required to incorporate monitoring across each phase of your DevOps and IT operations lifecycles.
+Continuous monitoring refers to the process and technology required to incorporate monitoring across each DevOps and IT operations lifecycles phase.
 
 It helps to continuously ensure your application's health, performance, reliability, and infrastructure as it moves from development to production.
 
@@ -21,18 +22,18 @@ It includes links to other documentation that provides details on implementing d
 
 To gain observability across your entire environment, you need to enable monitoring on all your web applications and services.
 
-It will allow you to easily visualize end-to-end transactions and connections across all the components.
+It will allow you to visualize end-to-end transactions and connections across all the components easily.
 
- -  [Azure DevOps Projects gives you a simplified experience with your existing code and Git repository or chooses](/azure/devops-project/overview) from one of the sample applications to create a Continuous Integration (CI) and Continuous Delivery (CD) pipeline to Azure.
+ -  [Azure DevOps Projects gives you a simplified experience with your existing code and Git repository or choose](/azure/devops-project/overview) from one of the sample applications to create a Continuous Integration (CI) and Continuous Delivery (CD) pipeline to Azure.
  -  [Continuous monitoring in your DevOps release pipeline](/azure/application-insights/app-insights-vsts-continuous-monitoring) allows you to gate or roll back your deployment based on monitoring data.
  -  [Status Monitor](/azure/application-insights/app-insights-monitor-performance-live-website-now) allows you to instrument a live .NET app on Windows with Azure Application Insights without modifying or redeploying your code.
- -  If you have access to the code for your application, then enable complete monitoring with [Application Insights](/azure/application-insights/app-insights-overview) by installing the Azure Monitor Application Insights SDK for [.NET](/azure/application-insights/quick-monitor-portal), [Java](/azure/application-insights/app-insights-java-quick-start), [Node.js](/azure/application-insights/app-insights-nodejs-quick-start), or [any other programming language](/azure/application-insights/app-insights-platforms). It allows you to specify custom events, metrics, or page views relevant to your application and business.
+ -  If you have access to the code for your application, then enable complete monitoring with [Application Insights](/azure/application-insights/app-insights-overview) by installing the Azure Monitor Application Insights SDK for [.NET](/azure/application-insights/quick-monitor-portal), [Java](/azure/application-insights/app-insights-java-quick-start), [Node.js](/azure/application-insights/app-insights-nodejs-quick-start), or [any other programming language](/azure/application-insights/app-insights-platforms). It lets you specify custom events, metrics, or page views relevant to your application and business.
 
 ## Enable monitoring for your entire infrastructure
 
 Applications are only as reliable as their underlying infrastructure.
 
-Monitoring enabled across your entire infrastructure will help you achieve full observability and make it easier to discover a potential root cause when something fails.
+Monitoring enabled across your entire infrastructure will help you achieve full observability and make discovering a potential root cause easier when something fails.
 
 Azure Monitor helps you track the health and performance of your entire hybrid infrastructure, including resources such as VMs, containers, storage, and network.
 
@@ -64,11 +65,11 @@ It streamlines the deployment process and ensures the quality of any changes bef
 
  -  Use [Azure Pipelines](/azure/devops/pipelines) to implement Continuous Deployment and automate your entire process from code commit to production based on your CI/CD tests.
  -  Use Quality Gates to integrate monitoring into your pre-deployment or post-deployment. It ensures that you meet the key health/performance metrics (KPIs) as your applications move from dev to production. Any differences in the infrastructure environment or scale aren't negatively impacting your KPIs.
- -  [Maintain separate monitoring instances](/azure/application-insights/app-insights-separate-resources) between your different deployment environments, such as Dev, Test, Canary, and Prod. It ensures that collected data is relevant across the associated applications and infrastructure. If you need to correlate data across environments, you can use [multi-resource charts in Metrics Explorer](/azure/azure-monitor/platform/metrics-charts) or create [cross-resource queries in Log Analytics](/azure/azure-monitor/log-query/cross-workspace-query).
+ -  [Maintain separate monitoring instances](/azure/application-insights/app-insights-separate-resources) between your different deployment environments, such as Dev, Test, Canary, and Prod. It ensures that collected data is relevant across the associated applications and infrastructure. If you need to correlate data across environments, use [multi-resource charts in Metrics Explorer](/azure/azure-monitor/platform/metrics-charts) or create [cross-resource queries in Log Analytics](/azure/azure-monitor/log-query/cross-workspace-query).
 
 ## Create actionable alerts with actions
 
-A critical monitoring aspect is proactively notifying administrators of any current and predicted issues.
+A critical monitoring aspect is proactively notifying administrators of current and predicted issues.
 
  -  Create [alerts in Azure Monitor](/azure/azure-monitor/platform/alerts-overview) based on logs and metrics to identify predictable failure states. It would be best if you had a goal of making all alerts actionable, meaning that they represent actual critical conditions and seek to reduce false positives. Use [dynamic thresholds](/azure/azure-monitor/platform/alerts-dynamic-thresholds) to automatically calculate baselines on metric data rather than defining your static thresholds.
  -  Define actions for alerts to use the most effective means of notifying your administrators. Available [actions for notification](/azure/azure-monitor/platform/action-groups#create-an-action-group-by-using-the-azure-portal) are SMS, e-mails, push notifications or voice calls.

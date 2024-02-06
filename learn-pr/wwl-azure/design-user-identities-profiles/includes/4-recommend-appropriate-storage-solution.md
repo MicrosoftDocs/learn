@@ -207,15 +207,15 @@ We recommend Premium disks for Storage Spaces Direct.
 :::row-end:::
 :::row:::
   :::column:::
-    Azure Active Directory integration
+    Microsoft Entra integration
   :::column-end:::
   :::column:::
-    [Native Active Directory and Azure Active Directory Domain Services](/azure/storage/files/storage-files-active-directory-overview)
+    [Native Active Directory and Microsoft Entra Domain Services](/azure/storage/files/storage-files-active-directory-overview)
   :::column-end:::
   :::column:::
-    [Azure Active Directory Domain Services and Native Active Directory](/azure/azure-netapp-files/faq-smb#does-azure-netapp-files-support-azure-active-directory)
+    [Microsoft Entra Domain Services and Native Active Directory](/azure/azure-netapp-files/faq-smb#does-azure-netapp-files-support-azure-active-directory)
   :::column-end:::
   :::column:::
-    Native Active Directory or Azure Active Directory Domain Services support only.
+    Native Active Directory or Microsoft Entra Domain Services support only.
   :::column-end:::
 :::row-end:::

@@ -18,7 +18,7 @@ To benefit from user-level Audit (Premium) capabilities, a user must be assigned
 
 ### Long-term retention of audit logs
 
-When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for the organization. In Microsoft Purview Audit (Standard), audit log records are retained for 90 days. In comparison, Audit (Premium) retains all Exchange, SharePoint, and Azure Active Directory audit records for one year.
+When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for the organization. In Microsoft Purview Audit (Standard), audit log records are retained for 90 days. In comparison, Audit (Premium) retains all Exchange, SharePoint, and Microsoft Entra audit records for one year.
 
 Audit (Premium) provides this extra retention time by implementing a default audit log retention policy. Retaining audit records for longer periods can help with on-going forensic or compliance investigations. For more information, see the "Default audit log retention policy" section in [Manage audit log retention policies](/microsoft-365/compliance/audit-log-retention-policies?azure-portal=true).
 
@@ -35,7 +35,7 @@ All audit records generated in other services that aren't covered by the default
 
 You can also specify how long to retain audit records that match the policy and a priority level. This design enables specific policies to take priority over other policies.
 
-Any custom audit log retention policy takes precedence over the default audit retention policy in case you must retain Exchange, SharePoint, or Azure Active Directory audit records for less than a year (or up to 10 years) for some or all users in your organization.
+Any custom audit log retention policy takes precedence over the default audit retention policy in case you must retain Exchange, SharePoint, or Microsoft Entra audit records for less than a year (or up to 10 years) for some or all users in your organization.
 
 > [!CAUTION]
 > Any audit log data covered by a 10-year audit log retention policy that you created after the feature was released to general availability in the last quarter of 2020 will be retained for 10 years. This design includes 10-year audit log retention policies that were created before the required add-on license was released for purchase in March 2021. However, because the 10-Year Audit Log Retention Add On license is now available, you must purchase and assign those add-on licenses for all users whose audit data is covered by a 10-year audit retention policy.

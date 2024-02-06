@@ -53,7 +53,7 @@ You must then add the **SearchQueryInitiated** value to the user's mailbox in th
 
 ### Step 3: Set up audit retention policies
 
-The default retention policy in Audit (Premium) retains Exchange, SharePoint, and Azure AD audit records for one year. An organization can create other audit log retention policies to meet the requirements of its security operations, IT, and compliance teams.
+The default retention policy in Audit (Premium) retains Exchange, SharePoint, and Microsoft Entra audit records for one year. An organization can create other audit log retention policies to meet the requirements of its security operations, IT, and compliance teams.
 
 For more information, see the next unit on how to "Manage audit log retention policies."
 

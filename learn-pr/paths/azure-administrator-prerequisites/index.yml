@@ -7,8 +7,7 @@ metadata:
   ms.date: 05/15/2020
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Prerequisites for Azure administrators
 summary: |
   If you're an IT Administrator that's new to Azure, this path is the place to start. 
@@ -66,7 +65,7 @@ products:
 - azure-virtual-machines
 - azure-virtual-network
 - azure-clis
-- azure-active-directory
+- entra-id
 - azure-container-instances
 - azure-container-registry
 - azure-storage
@@ -75,7 +74,6 @@ subjects:
 - virtual-machine
 - it-management-monitoring
 modules:
-- learn.azure.build-cloud-governance-strategy-azure
 - learn.introduction-to-azure-virtual-machines
 - learn.azure.network-fundamentals
 - learn.azure.network-fundamentals-2

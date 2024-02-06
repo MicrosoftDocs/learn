@@ -2,30 +2,27 @@
 uid: learn.languages.dotnet-microservices
 metadata:
   title: Build your first microservice with .NET
-  description: Microservice applications are composed of small, independently versioned, and scalable customer-focused services that communicate with each other over standard protocols with well-defined interfaces. Each microservice typically encapsulates simple business logic, which you can scale out or in, test, deploy, and manage independently.  Smaller teams develop a microservice based on a customer scenario and use any technologies that they want to use. This module will teach you how to build your first microservice with .NET.
-  ms.date: 01/17/2023
+  description: Microservice applications are composed of small, independently versioned, and scalable customer-focused services that communicate with each other by using standard protocols and well-defined interfaces. Each microservice typically encapsulates simple business logic, which you can scale out or in. You test, deploy, and manage the microservice independently. Smaller teams develop a microservice based on a customer scenario and choose the technologies that they use. This module teaches you how to build your first microservice by using .NET.
+  ms.date: 11/16/2023
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: dotnet
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
   - masoucou-05122021
 title: Build your first microservice with .NET
-summary: Microservice applications are composed of small, independently versioned, and scalable customer-focused services that communicate with each other over standard protocols with well-defined interfaces. Each microservice typically encapsulates simple business logic, which you can scale out or in, test, deploy, and manage independently.  Smaller teams develop a microservice based on a customer scenario and use any technologies that they want to use. This module will teach you how to build your first microservice with .NET.
+summary: Microservice applications are composed of small, independently versioned, and scalable customer-focused services that communicate with each other by using standard protocols and well-defined interfaces. Each microservice typically encapsulates simple business logic, which you can scale out or in. You test, deploy, and manage the microservice independently. Smaller teams develop a microservice based on a customer scenario and choose the technologies that they use. This module teaches you how to build your first microservice by using .NET.
 abstract: |
   By the end of this module, you'll be able to:
     
   - Explain what microservices are.
-  - Know how various technologies involved in microservices are and how they relate.
-  - Build a microservice using .NET.
+  - Know the various technologies that are involved in microservices and how they relate to each other.
+  - Build a microservice by using .NET.
 prerequisites: |
-  - Familiarity with command-line based applications.
+  - Familiarity with command-line-based applications.
   - Familiarity with basic Docker concepts.
-  - .NET SDK installed
-  - Docker Desktop installed
-  - Visual Studio Code installed
 ratingEnabled: true
 iconUrl: /training/achievements/dotnet-microservices.svg
 levels:

@@ -1,4 +1,3 @@
-
 On the surface, the `do-while` and `while` statements are yet *another* iteration statement that allows you to iterate through a code block and thereby change the flow of execution of your code. However, once we examine how each works, we can better identify the nuances of each iteration statement and when to use them.
 
 ## What is the do-while statement?
@@ -9,7 +8,7 @@ The `do-while` statement executes a statement or a block of statements while a s
 do
 {
     // This code executes at least one time
-} while (true)
+} while (true);
 ```
 
 The flow of execution starts inside of the curly brace. The code executes at least one time, then the Boolean expression next to the `while` keyword is evaluated. If the Boolean expression returns `true`, the code block is executed again.
@@ -100,7 +99,7 @@ Let's write code that will keep generating random numbers between 1 and 10 until
 
 1. Review your output.
 
-    Since the numbers generated are random, your results will be different. However, the value `7` will be the last number to be printed as the Boolean expression will evaluate to `true` when 7 is generated and the flow of execution will exit the code.
+    Since the numbers generated are random, your results will be different. However, the value `7` will be the last number to be printed as the Boolean expression will evaluate to `false` when 7 is generated and the flow of execution will exit the code block.
 
     ```Output
     2
@@ -212,7 +211,7 @@ In certain cases, we want to short-circuit the remainder of the code in the code
     if (current >= 8) continue;
     ```
 
-    Since our code that writes the value of `current` to the console is located after the `if (current >= 8) continue;`, our code ensures that a value of `current` that is greater that or equal to `8` will never be written to the output window.
+    Since our code that writes the value of `current` to the console is located after the `if (current >= 8) continue;`, our code ensures that a value of `current` that is greater than or equal to `8` will never be written to the output window.
 
     Let's try it out.
 
@@ -239,6 +238,6 @@ In certain cases, we want to short-circuit the remainder of the code in the code
 
 There's a few important ideas you should take away from this unit:
 
-- The `do-while` statement iterates through a code block at least once, and may continue to iterate based on a Boolean expression. The evaluation of the Boolean expression usually depends on some value generated or retrieved inside of the code block.
+- The `do-while` statement iterates through a code block at least once, and might continue to iterate based on a Boolean expression. The evaluation of the Boolean expression usually depends on some value generated or retrieved inside of the code block.
 - The `while` statement evaluates a Boolean expression first, and continues to iterate through the code block as long as the Boolean expression evaluates to `true`.
 - The `continue` keyword to step immediately to the Boolean expression.

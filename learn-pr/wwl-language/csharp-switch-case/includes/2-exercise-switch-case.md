@@ -1,4 +1,3 @@
-
 A `switch` statement is a C# selection statement that provides an alternative to an `if-elseif-else` branching construct. The `switch` statement provides advantages over an `if-elseif-else` construct when evaluating a single value against a list of known matching values.
 
 Consider the following scenario:
@@ -152,7 +151,7 @@ This module includes hands-on activities that guide you through the process of b
 
 1. Notice that the `switch` statement defines a single code block.
 
-    The `switch` statement defines a single code block that includes a list of switch sections. To the right of the `switch` keyword is a *switch expression* that's enclosed in parenthesis.
+    The `switch` statement defines a single code block that includes a list of switch sections. To the right of the `switch` keyword is a *switch expression* that's enclosed in parentheses.
 
 1. Notice the list of switch sections inside the code block.
 

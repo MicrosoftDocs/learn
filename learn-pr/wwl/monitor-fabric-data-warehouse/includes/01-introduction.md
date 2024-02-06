@@ -1,0 +1,3 @@
+A data warehouse is often central to enterprise analysis and reporting, and as such is a critical business asset. It's important to monitor a data warehouse to track and manage costs, identify and resolve query performance issues, and to gain insights into how your data is being used.
+
+In this module, we'll explore some tools and techniques you can use to monitor your Microsoft Fabric data warehouse.

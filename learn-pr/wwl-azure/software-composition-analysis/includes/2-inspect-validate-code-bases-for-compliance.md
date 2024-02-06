@@ -1,3 +1,4 @@
+
 Security for applications is critical. Every day, news services worldwide seem to carry stories about some company systems breached. More importantly, private company and customer data have been disclosed.
 
 It has been happening for a long time. In many cases, it wasn't visible to the public. Private information was often disclosed, yet the people affected weren't even notified.

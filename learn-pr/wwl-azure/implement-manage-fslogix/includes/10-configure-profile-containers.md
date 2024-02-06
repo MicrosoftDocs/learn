@@ -23,142 +23,38 @@ The configuration of Profile Container is accomplished through registry settings
 
 Below are settings **required** to enable Profile Container and to specify the location for the profile VHD to be stored. The minimum required settings to enable Profile Containers are:
 
-:::row:::
-  :::column:::
-    **Value**
-  :::column-end:::
-  :::column:::
-    **Type**
-  :::column-end:::
-  :::column:::
-    **Configured Value**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Enabled (required setting)
-  :::column-end:::
-  :::column:::
-    DWORD
-  :::column-end:::
-  :::column:::
-    1
-  :::column-end:::
-  :::column:::
-    0: Profile Containers disabled. 1: Profile Containers enabled
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    VHDLocations (required setting)
-  :::column-end:::
-  :::column:::
-    MULTI\_SZ or REG\_SZ
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    A list of file system locations to search for the user's profile VHD(X) file. If one isn't found, one will be created in the first listed location. If the VHD path doesn't exist, it will be created before it checks if a VHD(X) exists in the path. These values can contain variables that will be resolved.
-  :::column-end:::
-:::row-end:::
-
+| **Value**                       | **Type**             | **Configured Value** | **Description**                                                                                                                                                                                                                                                                                                  |
+| ------------------------------- | -------------------- | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Enabled (required setting)      | DWORD                | One                  | 0: Profile Containers disabled. 1: Profile Containers enabled                                                                                                                                                                                                                                                    |
+| VHDLocations (required setting) | MULTI\_SZ or REG\_SZ |                      | A list of file system locations to search for the user's profile VHD(X) file. If one isn't found, one is created in the first listed location. If the VHD path doesn't exist, it's created before it checks if a VHD(X) exists in the path. These values can contain variables that will be resolved. |
 
 :::image type="content" source="../media/configure-profile-containters-image-1-ccc04778.png" alt-text="Screenshot of Profile Containers Registry Configuration.":::
 
 
 **VHDLocations may be replaced by CCDLocations when using Cloud Cache.**
 
-These settings below are helpful when configuring Profile Container but are not required.
+These settings below are helpful when configuring Profile Container but aren't required.
 
-:::row:::
-  :::column:::
-    **Value**
-  :::column-end:::
-  :::column:::
-    **Type**
-  :::column-end:::
-  :::column:::
-    **Configured Value**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    DeleteLocalProfileWhenVHDShouldApply
-  :::column-end:::
-  :::column:::
-    DWORD
-  :::column-end:::
-  :::column:::
-    0
-  :::column-end:::
-  :::column:::
-    0: no deletion. 1: delete local profile if exists and matches the profile being loaded from VHD. Use caution with this setting. When the FSLogix Profiles system determines a user should have a FSLogix profile, but a local profile exists, Profile Container permanently deletes the local profile. The user will then be signed in with an FSLogix profile.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    FlipFlopProfileDirectoryName
-  :::column-end:::
-  :::column:::
-    DWORD
-  :::column-end:::
-  :::column:::
-    0
-  :::column-end:::
-  :::column:::
-    When set to '1' the SID folder is created as `"%username%%sid%" instead of the default "%sid%%username%"`. This setting has the same effect as setting `SIDDirNamePattern = "%username%%sid%" and SIDDirNameMatch = "%username%%sid%".`
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    PreventLoginWithFailure
-  :::column-end:::
-  :::column:::
-    DWORD
-  :::column-end:::
-  :::column:::
-    0
-  :::column-end:::
-  :::column:::
-    If set to 1 Profile Container will load FRXShell if there's a failure attaching to, or using an existing profile VHD(X). The user will receive the FRXShell prompt - default prompt to call support, and the users only option will be to sign out.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    PreventLoginWithTempProfile
-  :::column-end:::
-  :::column:::
-    DWORD
-  :::column-end:::
-  :::column:::
-    0
-  :::column-end:::
-  :::column:::
-    If set to 1 Profile Container will load FRXShell if it's determined a temp profile has been created. The user will receive the FRXShell prompt - default prompt to call support, and the users only option will be to sign out.
-  :::column-end:::
-:::row-end:::
-
+| **Value**                            | **Type** | **Configured Value** | **Description**                                                                                                                                                                                                                                                                                                                                                 |
+| ------------------------------------ | -------- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DeleteLocalProfileWhenVHDShouldApply | DWORD    | 0                    | 0: no deletion. 1: delete local profile if exists and matches the profile being loaded from VHD. Use caution with this setting. When the FSLogix Profiles system determines a user should have a FSLogix profile, but a local profile exists, Profile Container permanently deletes the local profile. The user will then be signed in with an FSLogix profile. |
+| FlipFlopProfileDirectoryName         | DWORD    | 0                    | When set to '1' the SID folder is created as `"%username%%sid%" instead of the default "%sid%%username%"`. This setting has the same effect as setting `SIDDirNamePattern = "%username%%sid%" and SIDDirNameMatch = "%username%%sid%".`                                                                                                                         |
+| PreventLoginWithFailure              | DWORD    | 0                    | If set to 1 Profile Container loads FRXShell if there's a failure attaching to, or using an existing profile VHD(X). The user receives the FRXShell prompt - default prompt to call support, and the users only option will be to sign out.                                                                                                             |
+| PreventLoginWithTempProfile          | DWORD    | 0                    | If set to 1 Profile Container loads FRXShell if it's determined a temp profile has been created. The user receives the FRXShell prompt - default prompt to call support, and the users only option will be to sign out.                                                                                                                                 |
 
 ## Set up Include and Exclude User Groups
 
-There are often users, such as local administrators, that have profiles that should remain local. During installation, four user groups are created to manage users who's profiles are included and excluded from Profile Container and Office Container redirection.
+There are often users, such as local administrators that have profiles that should remain local. During installation, four user groups are created to manage users who's profiles are included and excluded from Profile Container and Office Container redirection.
 
 :::image type="content" source="../media/configure-profile-containters-image-2-19dd64bc.png" alt-text="Screenshot of the FSLogix Groups with exclude and include.":::
 
 
 By default Everyone is added to the FSLogix Profile Include List group.
 
-:::image type="content" source="../media/configure-profile-containters-image-3-1732033f.png" alt-text="Screenshot of Profile Containers Include list members..":::
+:::image type="content" source="../media/configure-profile-containters-image-3-1732033f.png" alt-text="Screenshot of Profile Containers Include list members.":::
 
 
-Adding a user to the FSLogix Profile Exclude List group means that the FSLogix agent will not attach a FSLogix profile container for the user. In the case where a user is a member of both the exclude and include groups, exclude takes priority.
+Adding a user to the FSLogix Profile Exclude List group means that the FSLogix agent won't  attach a FSLogix profile container for the user. In the case where a user is a member of both the exclude and include groups, exclude takes priority.
 
 :::image type="content" source="../media/configure-profile-containters-image-4-c930a3fe.png" alt-text="Screenshot of Profile Containers Exclude list.":::
 
