@@ -6,7 +6,7 @@ In the sample scenario, you want to provide your consultants with common workflo
 
 The workflow designer allows you to create and debug the workflow for a logic app workflow graphically. The designer also lets developers look under the hood of a workflow to see how it's implemented. The following image shows an example of a simple workflow, which is triggered by sending an HTTP GET request to a specified URL. The result is returned in the HTTP response. In this example, the workflow is sending back a simple *Hello Logic Apps Template!* message.
 
-![Diagram showing workflow designer overview.](../media/2-workflowdesigner.png)
+![Diagram showing workflow designer overview.](../media/2-workflow-designer.png)
 
 Now, let's look at the workflow definition language as used by the JSON template.
 
