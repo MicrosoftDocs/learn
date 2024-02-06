@@ -33660,6 +33660,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-clustering-model-azure-machine-learning-designer/index.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-machine-learning/7-clustering",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-clustering-model-azure-machine-learning-designer/2-clustering-scenarios.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-machine-learning/7-clustering",
+      "redirect_document_id": false
     }
   ]
 }
