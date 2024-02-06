@@ -11,7 +11,7 @@ metadata:
 title: Deliver with DevOps
 summary: Build and run continuous integration and continuous delivery workflows using GitHub Actions. Your workflows will have accelerated release cycles, increased resiliency, improved collaboration and reusability, and infrastructure as code.
 abstract: |
-  Upon completion of this module, you will be able to:
+  Upon completion of this module, you'll be able to:
   *   Define the concept of continuous delivery
   *   Describe the concept and implementation methods of IaC
   *   Review the progressive exposure techniques and deployment practices
