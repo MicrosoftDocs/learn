@@ -10,7 +10,7 @@ metadata:
   ms.service: aspnet-core
 title: Interact with an ASP.NET Core minimal API
 summary: |
-  Learn how APIs are implemented in [ASP.NET](http://ASP.NET) Core, and how to use API documentation to learn the APIs requirements..
+  Learn how APIs are implemented in [ASP.NET](http://ASP.NET) Core, and how to use API documentation to learn the APIs requirements.
   [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   After completing this module, you'll be able to:
