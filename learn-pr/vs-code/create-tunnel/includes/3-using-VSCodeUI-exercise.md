@@ -40,7 +40,7 @@ In this exercise, we enable Remote - Tunnels access using the VS Code UI.
     
 10. Confirm the account you used to start the tunnel and begin coding!
     
-    :::image type="content" source="../media/21. LastLoggedIn.png" alt-text="Tunnel Link Popup":::
+    :::image type="content" source="../media/21. LastLoggedIn.png" alt-text="Prompt asking to select account used to start tunned":::
     
     :::image type="content" source="../media/22. ClientView_UI.png" alt-text="Client view image":::
 

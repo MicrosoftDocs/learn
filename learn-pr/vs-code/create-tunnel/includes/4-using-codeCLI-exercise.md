@@ -13,11 +13,13 @@ There are two options to obtain the code CLI: either from the VS Code download p
     
     :::image type="content" source="../media/0. download.png" alt-text="Download Page":::
 
-2. Download & extract the code CLI for your operating system into the ‘TestCLI’ directory.
-    1. After downloading the file, you have a compressed file.
+2. Download & extract the code CLI for your operating system into the ‘TestCLI’ directory
     
-    :::image type="content" source="../media/13. compressed_code.png" alt-text="Image of compressed file":::
-    1. Double-click the file to extract it to the TestCLI directory, and you will see the code file.
+    a. After downloading the file, you have a compressed file.
+    
+     :::image type="content" source="../media/13. compressed_code.png" alt-text="Image of compressed file":::
+
+    b. Double-click the file to extract it to the TestCLI directory, and you will see the code file.
     
     :::image type="content" source="../media/14. uncompressed_code.png" alt-text="image of extracted code file":::
 
@@ -54,11 +56,11 @@ code tunnel --accept-server-license-terms
     
     :::image type="content" source="../media/27. SignIn-BeforeAuth.png" alt-text="Single Sign On":::
 
-4. Then, click the authorize button.
+5. Then, click the authorize button.
     
     :::image type="content" source="../media/2. auth.png" alt-text="Authentication Page":::
 
-5. You should see a congratulatory message indicating success.
+6. You should see a congratulatory message indicating success.
     
     :::image type="content" source="../media/3. congrats.png" alt-text="Confirmation":::
 
@@ -69,14 +71,14 @@ The code CLI outputs a vscode.dev URL specific to this remote machine, such as
 
 This process authenticates you to the tunneling service, ensuring you have access to the designated remote machines.
 
-6. Open this URL on a client of your choice. 
-7. Click "Allow" to give the 'Remote - Tunnels' extension permission to sign in.
+7. Open this URL on a client of your choice. 
+8. Click "Allow" to give the 'Remote - Tunnels' extension permission to sign in.
     
     :::image type="content" source="../media/25. RemoteAsksPermission.png" alt-text="Remote - Tunnels extension permission to sign in image":::
-8. Click "Yes, I trust the authors" to give access to the folder.
+9. Click "Yes, I trust the authors" to give access to the folder.
     
     :::image type="content" source="../media/26. Trust.png" alt-text="Do you trust the authors image":::
 
-9. Begin coding!
+10. Begin coding!
     
     :::image type="content" source="../media/24. CLI_View.png" alt-text="Code image":::
