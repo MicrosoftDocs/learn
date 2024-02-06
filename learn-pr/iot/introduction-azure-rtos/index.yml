@@ -18,6 +18,7 @@ abstract: |
 prerequisites: |
   - None, although a working knowledge of C or C++, GitHub and Visual Studio will be most helpful.
 iconUrl: /training/achievements/iot/introduction-azure-rtos.svg
+hidden: true
 levels:
   - beginner
 roles:
