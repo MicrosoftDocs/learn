@@ -28,7 +28,7 @@ The ROW or RANGE arguments set a start and end boundary around the rows being op
 
 The ROWS clause limits the rows within a partition by specifying a fixed number of rows preceding or following the current row.
 
-the RANGE clause logically limits the rows within a partition by specifying a range of values with respect to the value in the current row.
+The RANGE clause logically limits the rows within a partition by specifying a range of values with respect to the value in the current row.
 
 ### CURRENT ROW
 
