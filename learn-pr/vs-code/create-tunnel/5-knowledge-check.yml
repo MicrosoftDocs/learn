@@ -18,18 +18,18 @@ quiz:
       choices:
         - content: code tunnel
           isCorrect: true
-          explanation: Correct. This is the right command. The others will cause an error.
+          explanation: Correct. This answer is the right command. The others cause an error.
         - content:  tunnel code
           isCorrect: false
-          explanation: This answer is incorrect. The correct command is 'code tunnel'.
+          explanation: This answer is incorrect. The correct command is 'code tunnel.'
         - content: code –t 
           isCorrect: false
-          explanation: This answer is incorrect. The correct command is 'code tunnel'.
+          explanation: This answer is incorrect. The correct command is 'code tunnel.'
     - content: What format seems correct for a vscode.dev URL tied to a remote machine & folder? 
       choices:
         - content: vscode.dev/tunnel/<folder_name>/<machine_name>
           isCorrect: true
-          explanation: Correct. This is the right format. The others will not work.
+          explanation: Correct. This answer shows the right format. The others do not work.
         - content: vscode.dev/tunnel/<machine_name_folder_name> 
           isCorrect: false
           explanation: This answer is incorrect. 

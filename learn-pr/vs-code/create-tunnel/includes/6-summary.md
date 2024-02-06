@@ -12,7 +12,7 @@ Below are several topics and resources related to the VS Code Remote - Tunnels e
 
 - <a href="https://code.visualstudio.com/docs/remote/vscode-server" target="_blank">VS Code Server</a> - This article goes into more detail about how the VS Code Server operates and supports remote development.
 
-- <a href="https://learn.microsoft.com/azure/developer/dev-tunnels/overview" target="_blank">Microsoft Dev Tunnels</a> - A deeper dive into what development tunnels are and how they function, offering insights into their underlying technology.
+- <a href="/azure/developer/dev-tunnels/overview" target="_blank">Microsoft Dev Tunnels</a> - A deeper dive into what development tunnels are and how they function, offering insights into their underlying technology.
 
 - <a href="http://vscode.dev" target="_blank">vscode.dev</a> - A detailed examination of vscode.dev, discussing its integration with cloud tools, extensions, GitHub, customization options, and more. 
 

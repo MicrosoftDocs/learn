@@ -1,6 +1,6 @@
 :::image type="content" source="../media/15. WorkingRemotely.jpg" alt-text="Woman Working Image":::
 
-It’s quite common these days that people work remotely, from their home, a coffee shop, or a similar establishment. Regardless of where you work, you want a secure connection between your machine and your company’s resources. It’s important that these connections are secure, which has come to be encrypted to protect your company. Additionally, it’s advantageous to use tools that make setting up and configuring such connections easier.
+It’s common these days that people work remotely, from their home, a coffee shop, or a similar establishment. Regardless of where you work, you want a secure connection between your machine and your company’s resources. It’s important that these connections are secure and encrypted to protect your company. Additionally, it’s advantageous to use tools that make setting up and configuring such connections easier.
 
 
 ## Scenario: Accessing company resources from home 
@@ -10,7 +10,7 @@ Your company has hired their first workers to work remotely. It’s important th
 
 ## What will I learn?
 
-By the end of this module, you will be able to:
+By the end of this module, you'll be able to:
 
 - Explain tunneling and the features of Visual Studio Code (VS Code) Remote - Tunnels extension.
 - Use the VS Code Remote - Tunnels extension to tunnel into a remote host.
@@ -19,4 +19,4 @@ By the end of this module, you will be able to:
 ## What is the main objective?
 By the end of this module, you understand the basics of tunneling and have a solid foundation for using Remote - Tunnels extension, all within VS Code.
 
-Let's get started on this journey to famliarize youself how to leverage tunneling to connect to remote hosts.
+Let's get started on this journey to familiarize yourself how to use tunneling to connect to remote hosts.
