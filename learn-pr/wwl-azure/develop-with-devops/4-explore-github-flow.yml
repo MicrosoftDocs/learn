@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.develop-with-devops.explore-github-flow
-title: 'Explore GitHub Flow'
+title: 'Explore GitHub flow'
 metadata:
-  title: 'Explore GitHub Flow'
-  description: "Explore GitHub Flow"
-  ms.date: 1/16/2024
+  title: 'Explore GitHub flow'
+  description: "GitHub Flow provides prescriptive guidance on applying changes to GitHub-hosted projects, streamlining collaborative software development with Git."
+  ms.date: 02/06/2024
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
