@@ -27,7 +27,6 @@ subjects:
 units:
 - learn.wwl.use-automated-machine-learning.machine-learning
 - learn.wwl.use-automated-machine-learning.machine-learning-steps
-- learn.wwl.use-automated-machine-learning.knowledge-check
 - learn.wwl.use-automated-machine-learning.summary
 badge:
   uid: learn.wwl.use-automated-machine-learning.badge
