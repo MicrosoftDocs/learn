@@ -2,9 +2,10 @@
 uid: learn.wwl.analyze-images.analyze-image
 title: Analyze an image
 metadata:
+  zone_pivot_groups: dev-lang-csharp-python
   title: Analyze an image
   description: "Analyze an image"
-  ms.date: 12/01/2023
+  ms.date: 02/05/2024
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
