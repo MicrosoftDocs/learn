@@ -3,7 +3,7 @@ uid: learn.create-tunnel.5-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Four multiple-choice questions
+  description: Test your knowledge of tunneling in VS Code
   ms.date: 12/15/2023
   author: theReynald
   ms.author: radolphe
@@ -22,8 +22,10 @@ quiz:
           explanation: Correct. This is the right command. The others will cause an error.
         - content:  tunnel code
           isCorrect: false
+          explanation: This answer is incorrect. The correct command is 'code tunnel'.
         - content: code –t 
           isCorrect: false
+          explanation: This answer is incorrect. The correct command is 'code tunnel'.
     - content: What format seems correct for a vscode.dev URL tied to a remote machine & folder? 
       choices:
         - content: vscode.dev/tunnel/<folder_name>/<machine_name>
@@ -31,8 +33,10 @@ quiz:
           explanation: Correct. This is the right format. The others will not work.
         - content: vscode.dev/tunnel/<machine_name_folder_name> 
           isCorrect: false
+          explanation: This answer is incorrect. 
         - content: vscode.dev/tunnel/<machine_name>/<folder_name>
           isCorrect: false
+          explanation: This answer is incorrect. 
     - content: Which statement is most true?
       choices:
         - content: The Remote - Tunnels extension lets you connect to a remote machine, like a desktop PC or virtual machine (VM), via a secure tunnel. You can connect to that machine from a VS Code client anywhere, without the requirement of SSH. 

@@ -10,7 +10,7 @@ There are two options to obtain the code CLI: either from the VS Code download p
 ### Get the code CLI from the VS Code download page
 
 1. Navigate online to the <a href="https://code.visualstudio.com/#alt-downloads" target="_blank">VS Code download page.</a>
-    1. :::image type="content" source="../media/0. download.png" alt-text="Download Page":::
+    :::image type="content" source="../media/0. download.png" alt-text="Download Page":::
 
 2. Download & extract the code CLI for your operating system into the ‘TestCLI’ directory.
     1. After downloading the file, you have a compressed file.
@@ -41,18 +41,18 @@ code tunnel --accept-server-license-terms
 ```
 
 2. Copy/save the provided link and code as shown below.
-    1. :::image type="content" source="../media/23. TunnelLink.png" alt-text="Image of link to login on client with code":::
+    :::image type="content" source="../media/23. TunnelLink.png" alt-text="Image of link to login on client with code":::
 
 3. On your client, open the previously saved link in a web browser and enter the code that was provided in the terminal (note: your code will be different) & click continue to activate.
-    1. :::image type="content" source="../media/1. signIn.png" alt-text="Device Activation":::
+    :::image type="content" source="../media/1. signIn.png" alt-text="Device Activation":::
 4. Click continue to authenticate.    
-    1. :::image type="content" source="../media/27. SignIn-BeforeAuth.png" alt-text="Device Activation":::
+    :::image type="content" source="../media/27. SignIn-BeforeAuth.png" alt-text="Single Sign On":::
 
 4. Then, click the authorize button.
-    1. :::image type="content" source="../media/2. auth.png" alt-text="Authentication Page":::
+    :::image type="content" source="../media/2. auth.png" alt-text="Authentication Page":::
 
 5. You should see a congratulatory message indicating success.
-    1. :::image type="content" source="../media/3. congrats.png" alt-text="Confirmation":::
+    :::image type="content" source="../media/3. congrats.png" alt-text="Confirmation":::
 
 
 The code CLI outputs a vscode.dev URL specific to this remote machine, such as
@@ -63,12 +63,12 @@ This process authenticates you to the tunneling service, ensuring you have acces
 
 6. Open this URL on a client of your choice. 
 7. Click "Allow" to give the 'Remote - Tunnels' extension permission to sign in.
-    1. :::image type="content" source="../media/25. RemoteAsksPermission.png" alt-text="Remote - Tunnels extension permission to sign in image":::
+    :::image type="content" source="../media/25. RemoteAsksPermission.png" alt-text="Remote - Tunnels extension permission to sign in image":::
 1. Click "Yes, I trust the authors" to give access to the folder.
-    1. :::image type="content" source="../media/26. Trust.png" alt-text="Do you trust the authors image":::
+    :::image type="content" source="../media/26. Trust.png" alt-text="Do you trust the authors image":::
 
 9. Begin coding!
-    1. :::image type="content" source="../media/24. CLI_View.png" alt-text="Code tmage":::
+    :::image type="content" source="../media/24. CLI_View.png" alt-text="Code image":::
 
 
 

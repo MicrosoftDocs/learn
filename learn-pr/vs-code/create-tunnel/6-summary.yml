@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-tunnel.6-summary
-title: Summary
+title: Enabling Remote Tunnel Access with VS Code
 metadata:
   title: Summary
-  description: summary
+  description: Enabling Remote Tunnel Access with VS Code
   ms.date: 12/15/2023
   author: theReynald
   ms.author: radolphe

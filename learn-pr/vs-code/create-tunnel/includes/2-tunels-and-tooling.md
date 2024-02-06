@@ -3,7 +3,7 @@
 
 :::image type="content" source="../media/16. Networks.jpg" alt-text="Network Server Image":::
 
-Tunneling is a networking concept that involves creating a secure and direct connection between two separate networks or devices, allowing data to be transmitted privately across different networks or the internet. There are several issues that led to the need for this technology, but let us discuss a scenario and why tunneling is useful for that case.
+Tunneling is a networking concept that involves creating a secure and direct connection between two separate networks or devices, allowing data to be transmitted privately across different networks or the internet. Let's discuss a scenario where tunneling is useful.
 
 ### The problems
 
@@ -16,7 +16,7 @@ In the previously mentioned scenario, a developer needs to work on an applicatio
 ## VS Code Remote - Tunnels extension 
 ### Why use it? 
 
-The use of tunneling offers a streamlined solution to many challenges. Extensions are now available for development tools such as VS Code. The VS Code Remote - Tunnels extension can effectively eliminate the need for source code to be on your VS Code client machine since the extension runs commands and other extensions directly on the remote machine. This approach is possible because of the <a href="https://code.visualstudio.com/docs/remote/vscode-server" target="_blank">VS Code Server</a>, which is a service that can run on a remote development machine, like your desktop PC or a virtual machine (VM), making it possible to securely connect to that remote machine from anywhere through a local VS Code client, without the requirement of SSH.
+The use of tunneling offers a streamlined solution to many challenges. Extensions are now available for development tools such as VS Code. The VS Code <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-server" target="_blank">Remote - Tunnels extension</a> can effectively eliminate the need for source code to be on your VS Code client machine since the extension runs commands and other extensions directly on the remote machine. This approach is possible because of the <a href="https://code.visualstudio.com/docs/remote/vscode-server" target="_blank">VS Code Server</a>, which is a service that can run on a remote development machine, like your desktop PC or a virtual machine (VM), making it possible to securely connect to that remote machine from anywhere through a local VS Code client, without the requirement of SSH.
 
 :::image type="content" source="../media/8. remoteChart.png" alt-text="VS Code & Remote OS Image":::
 

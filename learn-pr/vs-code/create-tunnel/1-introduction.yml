@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-tunnel.1-introduction
-title: Introduction
+title: Introduction to Remote - Tunnels extension
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Introduction to Remote - Tunnels extension
+  description: Introduction to VS Code Remote - Tunnels extension
   author: theReynald
   ms.author: radolphe
   ms.date: 12/15/2023
