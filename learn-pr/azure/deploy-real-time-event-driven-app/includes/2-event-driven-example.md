@@ -4,7 +4,7 @@ If we think about it, we can identify many event-driven scenarios. Plenty of the
 
 A reaction in real time can be seen as an immediate answer. Let's take an example of a cashier in a coffee shop who asks you what you want to drink.
 
-The cashier expects an instant answer, or at least an answer given quickly. Otherwise, the cashier might rephrase the question or suspect that you were rude. A quick answer is requested and also appropriate. The time to answer can vary slightly, but is still considered to be "in real time." So, returning a greeting should happen quickly, but it's fine to think briefly about your order to answer the cashier's question.
+The cashier expects an instant answer, or at least an answer that's given very soon. Otherwise, the cashier might rephrase the question or suspect that you were rude. A quick answer is requested and also appropriate. The time to answer can vary slightly, but it's still seen as being "in real time." So, returning a greeting should happen quickly, but it's fine to think briefly about your order to answer the cashier's question.
 
 If you translate that scenario to software systems, all you care about are timings: Response Time, Completion Time, Access Time, StartUp Times, and so on. The user or the accessing application defines those timings.
 
@@ -16,7 +16,7 @@ You should always be aware of what's happening in your system. So make sure you 
 > [!IMPORTANT]
 > Make sure you specify the deadlines and timings beforehand and set up a nonblocking monitoring solution for checkup.
 
-In summary, we agree that real time means super-fast, in an instant. How fast exactly depends on your given scenario.
+In summary, we agree that real time means super-fast, in an instant. How fast exactly is specified by your given scenario.
 
 ## Event-driven applications
 
@@ -48,7 +48,7 @@ With one barista, listening only to the second event might be enough. With two b
 
 With event sourcing, the event storage comes into focus. As you can see, the events are the same as in the first example. But the barista is important for this concept at the moment when the barista receives an event and then thinks about all corresponding events to get the current state for all the orders made by Alex.
 
-With the second order, the barista knows that Alex's order consists of a coffee, by remembering the first order, and a cappuccino in the second order. Working in parallel with a second barista isn't as easily possible.
+With the second order, the barista knows that Alex's order consists of a coffee, by remembering the first order, and a cappuccino, because this drink was just ordered. Working in parallel with a second barista isn't as easily possible.
 
 When we add a cashier to receive the orders and serve the drinks, the baristas can work independently to prepare the drinks. They don't need to know anything about the customers. The cashier is the so-called event store, persisting the events, in that scenario. Event sourcing adds another layer of complexity, but it also adds decoupling.
 
