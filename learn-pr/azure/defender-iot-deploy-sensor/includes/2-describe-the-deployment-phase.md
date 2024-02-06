@@ -15,6 +15,10 @@ The OT sensor deployment is the phase where you upload, install, and set up the 
 
 ## In this phase
 
-For this module, you need to download the monitoring ISO file and install it on the sensor. The interface, the endpoint appliance being tracked/ protected <!-- which is correct term? -->by the sensor, must be set up and enabled. Finally, you upload the activation file and assign a security certificate to the sensor.
+In this module, you perform this process:
+
+- Download the monitoring ISO file and install it on the sensor.
+- Configure the settings for the interface that the sensor monitors.
+- Upload the activation file and assign a security certificate to the sensor.
 
 Real-life deployment of the OT sensor monitoring software can include extra security features such as using a CA-signed certificate or a proxy connection to the Azure portal. This module covers a basic deployment only and uses a self signed certificate.
