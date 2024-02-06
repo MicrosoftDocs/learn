@@ -1,12 +1,12 @@
 Proper management of device credentials is crucial for high-profile systems like IoT solutions. A best practice for such systems is to have a clear plan of how to revoke access for devices when their credentials, whether a shared access signatures (SAS) token or an X.509 certificate, might be compromised.
 
-Enrollment in the Device Provisioning Service enables a device to be provisioned. A provisioned device is one that has been registered with IoT Hub, allowing it to receive its initial device twin state and begin reporting telemetry data.
+Enrollment in the Device Provisioning Service enables a device to be provisioned. A provisioned device is a device that is registered with IoT Hub, allowing it to receive its initial device twin state and begin reporting telemetry data.
 
 This unit describes how to revoke a device from your provisioning service instance, preventing it from being provisioned or reprovisioned in the future. Disabling an individual enrollment or enrollment group does not remove an existing device registration from IoT Hub.
 
 ## Disallow a device by using an individual enrollment
 
-To disallow a device from being provisioned through Device Provisioning Service, you can change the provisioning status of an individual enrollment to prevent the device from provisioning and reprovisioning. You can leverage this capability if the device is behaving outside its normal parameters or is assumed to be compromised, or as a way to test out provisioning retry mechanism of your devices.
+To disallow a device from being provisioned through Device Provisioning Service, you can change the provisioning status of an individual enrollment to prevent the device from provisioning and reprovisioning. You can use this capability if the device is behaving outside its normal parameters or is assumed to be compromised, or as a way to test out provisioning retry mechanism of your devices.
 
 > [!NOTE]
 > Be aware of the retry policy of devices that you revoke access for. For example, a device that has an infinite retry policy might continuously try to register with the provisioning service. That situation consumes service resources such as service operation quotas and possibly affects performance.
@@ -88,7 +88,7 @@ To disallow an individual device in an enrollment group, follow these steps:
      |--------------|-----------|
      | Attestation mechanism | Select **Symmetric key**      |
      | Generate symmetric keys automatically | Make sure this checkbox is selected. The keys don't matter for this scenario.  |
-     | **Registration ID** | If the device has already been provisioned, use its IoT Hub device ID. You can find this in the registration records of the enrollment group, or in the IoT hub that the device was provisioned to. If the device has not yet been provisioned, enter the device certificate CN. (In this latter case, you don't need the device certificate, but you will need to know the CN.)      |
+     | **Registration ID** | If the device has already been provisioned, use its IoT Hub device ID. You can find this in the registration records of the enrollment group, or in the IoT hub that the device was provisioned to. If the device has not yet been provisioned, enter the device certificate CN. (In this latter case, you don't need the device certificate, but you need to know the CN.)      |
 
 1. Scroll to the bottom of the **Add enrollment** page and uncheck the **Enable this enrollment** checkbox.
 
