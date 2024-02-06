@@ -2,7 +2,7 @@ Proper management of device credentials is crucial for high-profile systems like
 
 Enrollment in the Device Provisioning Service enables a device to be provisioned. A provisioned device is a device that is registered with Azure IoT Hub, allowing it to receive its initial device twin state and begin reporting telemetry data.
 
-This unit describes how to revoke a device from your provisioning service instance, preventing it from being provisioned or reprovisioned in the future. Disabling an individual enrollment or enrollment group does not remove an existing device registration from Azure IoT Hub.
+This unit describes how to revoke a device from your provisioning service instance, preventing it from being provisioned or reprovisioned in the future. Disabling an individual enrollment or enrollment group doesn't remove an existing device registration from Azure IoT Hub.
 
 ## Disallow a device by using an individual enrollment
 
@@ -88,7 +88,7 @@ To disallow an individual device in an enrollment group, follow these steps:
      |--------------|-----------|
      | Attestation mechanism | Select **Symmetric key**      |
      | Generate symmetric keys automatically | Make sure this checkbox is selected. The keys don't matter for this scenario.  |
-     | **Registration ID** | If the device has already been provisioned, use its Azure IoT Hub device ID. You can find this in the registration records of the enrollment group, or in the Azure IoT hub that the device was provisioned to. If the device has not yet been provisioned, enter the device certificate CN. (In this latter case, you don't need the device certificate, but you need to know the CN.)      |
+     | **Registration ID** | If the device has already been provisioned, use its Azure IoT Hub device ID. You can find this in the registration records of the enrollment group, or in the Azure IoT hub that the device was provisioned to. If the device hasn't yet been provisioned, enter the device certificate CN. (In this latter case, you don't need the device certificate, but you need to know the CN.)      |
 
 1. Scroll to the bottom of the **Add enrollment** page and uncheck the **Enable this enrollment** checkbox.
 

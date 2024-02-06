@@ -9,7 +9,7 @@ Certificate verification can be implemented through:
 
 ## Automatic verification of intermediate or root CA through self-attestation
 
-If you are using an intermediate or root CA that you trust and know you have full ownership of the certificate, you can self-attest that you have verified the certificate.
+If you are using an intermediate or root CA that you trust and know you have full ownership of the certificate, you can self-attest that you verified the certificate.
 
 To add an auto-verified certificate, follow these steps:
 

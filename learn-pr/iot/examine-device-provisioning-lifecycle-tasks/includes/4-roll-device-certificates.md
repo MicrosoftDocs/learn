@@ -30,7 +30,7 @@ The mechanics of installing a new certificate on a device often involve one of t
 
 ## Roll the certificate in the Azure IoT hub
 
-The device certificate can be manually added to an Azure IoT hub. The certificate can also be automated using a Device Provisioning service instance. We will focus on this second case, where a Device Provisioning service instance is being used to support autoprovisioning.
+The device certificate can be manually added to an Azure IoT hub. The certificate can also be automated using a Device Provisioning service instance. We focus on this second case, where a Device Provisioning service instance is being used to support autoprovisioning.
 
 When a device is initially provisioned through autoprovisioning, it boots-up, and contacts the provisioning service. The provisioning service responds by performing an identity check before creating a device identity in an Azure IoT hub using the device's leaf certificate as the credential. The provisioning service then tells the device which Azure IoT hub it's assigned to, and the device then uses its leaf certificate to authenticate and connect to the Azure IoT hub.
 
