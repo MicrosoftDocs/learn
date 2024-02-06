@@ -2,14 +2,14 @@
 uid: learn.wwl.plan-with-devops
 metadata:
   title: "Plan with DevOps"
-  description: "In this module you learn how to plan your software development projects agilely using Git Hub Projects boards."
+  description: "In this module you learn how to plan your software development projects agilely using GitHub Projects boards."
   ms.date: 02/06/2024
   author: LuizMacedo
   ms.author: lumac
   ms.topic: module
   ms.service: azure-devops
 title: Plan with DevOps
-summary: Plan your software development projects agilely using Git Hub Projects boards. You'll facilitate collaboration, shared responsibility, continuous learning, and optimization through version control, continuous integration and continuous testing, and Infrastructure as Code.
+summary: Plan your software development projects agilely using GitHub Projects boards. You'll facilitate collaboration, shared responsibility, continuous learning, and optimization through version control, continuous integration and continuous testing, and Infrastructure as Code.
 abstract: |
   Upon completion of this module, you'll be able to:
   *   Describe the components of and the path to a DevOps culture

@@ -1,6 +1,6 @@
 We used the term *agile* in the previous module to describe one of the essential elements of DevOps culture, representing the ability to rapidly respond to customer feedback and needs. This term also appeared several times in the unit describing the correlation between DevOps and the application lifecycle. However, there's also another, more specific meaning of *Agile* (in the capitalized format), which describes an approach to software development and project management. Such an approach is commonly associated with DevOps practices. In our sample scenario, transitioning from the traditional Waterfall approach to Agile would help the organization realize a range of DevOps benefits. In this unit, explore the primary characteristics of Agile and examine its correlation with DevOps.
 
-## What is Agile?
+## Agile principles and values
 
 Agile is an approach to software development that promotes team collaboration, continuous improvement, and automation, with the ultimate goal of faster, more reliable, and customer-centric software delivery. The term originated from the Agile Manifesto, created in 2001 by a group of software developers, providing a set of guiding principles for modern software development. The manifesto included four foundational statements that prioritized individuals and interactions, working solutions, and customer collaboration over rigid processes and tools. In particular, these statements assigned more value to:
 
