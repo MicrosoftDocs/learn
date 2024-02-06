@@ -10,7 +10,7 @@ Translator uses Neural Machine Translation, which increases fluency and readabil
 
 **Custom Translation** allows you to tailor-make a system for translating text and documents, in **60 languages**. Industry and business-specific terminology can be added to build a translation system that performs better with domain-specific terminologies and styles. Customized translation systems can integrate into existing applications, workflows, and websites to improve translations.
 
-### Additional functionality
+### More functionality
 
 **Automatic language detection** can improve reliability and enhance user experience by automatically identifying the source language for translation. This service has a broad range of **over 50 languages**, from Klingon to Kurdish.
 
