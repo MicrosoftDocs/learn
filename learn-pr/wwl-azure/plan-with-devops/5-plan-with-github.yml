@@ -3,11 +3,11 @@ uid: learn.wwl.plan-with-devops.plan-with-github
 title: 'Plan with GitHub'
 metadata:
   title: 'Plan with GitHub'
-  description: "Plan with GitHub"
-  ms.date: 1/16/2024
+  description: "Both GitHub and Azure DevOps offer DevOps planning capabilities, but this unit focuses on GitHub Projects and Project Boards."
+  ms.date: 02/06/2024
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
   [!include[](includes/5-plan-with-github.md)]

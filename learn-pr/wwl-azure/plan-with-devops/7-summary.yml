@@ -3,11 +3,11 @@ uid: learn.wwl.plan-with-devops.summary
 title: 'Summary'
 metadata:
   title: 'Summary'
-  description: "Summary"
-  ms.date: 1/16/2024
+  description: "This module focuses on fostering a DevOps culture through collaboration, defining roles, continuous learning, optimization, and safe experimentation."
+  ms.date: 02/06/2024
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

@@ -1,4 +1,4 @@
-We used the term *agile* in the previous module to describe one of the essential elements of DevOps culture, representing the ability to rapidly respond to customer feedback and needs. This term also appeared several times in the unit describing the correlation between DevOps and the application lifecycle. However, there is also another, more specific meaning of *Agile* (in the capitalized format), which describes an approach to software development and project management. Such an approach is commonly associated with DevOps practices. In our sample scenario, transitioning from the traditional Waterfall approach to Agile would help the organization realize a range of DevOps benefits. In this unit, we will explore the primary characteristics of Agile and examine its correlation with DevOps.
+We used the term *agile* in the previous module to describe one of the essential elements of DevOps culture, representing the ability to rapidly respond to customer feedback and needs. This term also appeared several times in the unit describing the correlation between DevOps and the application lifecycle. However, there's also another, more specific meaning of *Agile* (in the capitalized format), which describes an approach to software development and project management. Such an approach is commonly associated with DevOps practices. In our sample scenario, transitioning from the traditional Waterfall approach to Agile would help the organization realize a range of DevOps benefits. In this unit, explore the primary characteristics of Agile and examine its correlation with DevOps.
 
 ## What is Agile?
 
@@ -11,7 +11,7 @@ Agile is an approach to software development that promotes team collaboration, c
 
 ## Agile methods and practices
 
-The Agile Manifesto and Agile principles provide a set of values and guidelines, but they are intentionally not prescriptive in terms of specific methods and practices. Instead, Agile is meant to be flexible and easily adaptable, allowing organizations and teams to choose a more detailed approach according to their preferences and needs.
+The Agile Manifesto and Agile principles provide a set of values and guidelines, but they're intentionally not prescriptive in terms of specific methods and practices. Instead, Agile is meant to be flexible and easily adaptable, allowing organizations and teams to choose a more detailed approach according to their preferences and needs.
 
 These detailed, comprehensive approaches are commonly referred to as frameworks. Their purpose is to cover all phases of the DevOps lifecycle, including planning, development, delivery, and operations. Some of the more popular Agile frameworks include Scrum and Kanban.
 
@@ -19,7 +19,7 @@ These detailed, comprehensive approaches are commonly referred to as frameworks.
 
 Scrum is a framework used by teams to manage work and solve problems collaboratively in short (typically between one and four weeks long) iterations called sprints. To facilitate collaboration and progress, sprints are structured based on events, artifacts, and roles.
 
-- **Events**, commonly referred to as ceremonies, include meetings taking place daily (Daily Scrum, typically limited to 15 minutes, also known as daily standup) as well as at the beginning and end of each sprint (Sprint Planning, Sprint Review, and Sprint Retrospective).
+- **Events**, commonly referred to as ceremonies, include meetings taking place daily (Daily Scrum, typically limited to 15 minutes, also known as daily standup) and at the beginning and end of each sprint (Sprint Planning, Sprint Review, and Sprint Retrospective).
 - **Artifacts** define a prioritized list of features, enhancements, and fixes to develop. Such artifacts might cover the span of a project or a sprint (Product Backlog or Sprint Backlog, respectively), or they might aid Daily Scrum meetings (task boards and sprint burndown charts). A task board provides a visual way to track the progress of each backlog item. It displays backlog items divided into the tasks required to complete it. Tasks are placed in separate columns (labeled *To do*, *In progress*, and *Done*) based on their status. The sprint burndown chart serves as a visual indicator of whether the team is on track to complete its assigned work by the end of the sprint. It consists of a graph that displays the daily total of remaining work, typically shown in hours.
 - **Roles** include the product owner, Scrum master, and Scrum team, each with its clearly defined responsibilities. The product owner represents the project stakeholders and is responsible for defining, maintaining, and prioritizing the product backlog. The Scrum master oversees the Scrum process, looking for areas for improvements, resolving any blocking issues, and ensuring that the Scrum principles are followed. The Scrum team is responsible for building the product, with the ownership of its engineering and quality components.
 
@@ -37,7 +37,7 @@ The key principle of this approach is visualization of project-related work in t
 
 These cards correspond to product backlog items in the Scrum framework. The cards can be customized to include references to other items in the product delivery process, such as tasks and test cases.
 
-While the concept of a backlog is common in Kanban and Scrum, it is important to note that Kanban is more flexible and does not involve iterations. Work items can be added, reprioritized, or removed from the backlog based on the team's capacity and the changing needs of the project or service being managed with Kanban.
+While the concept of a backlog is common in Kanban and Scrum, it's important to note that Kanban is more flexible and doesn't involve iterations. Work items can be added, reprioritized, or removed from the backlog based on the team's capacity and the changing needs of the project or service being managed with Kanban.
 
 In particular, Kanban promotes the use of a pull model, in which stakeholders add requests to the backlog list of tasks, items, or work that needs to be completed. The development team selects items from the backlog and adds them into the active work process depending on their priority and the team's resources availability. This minimizes the quality issues associated with the pull model, in which stakeholders arbitrarily assign work to development teams, frequently with unrealistic deadlines. In addition, to optimize productivity, Kanban supports imposing limits on the number of items that the development team is currently working on, referred to as *work in progress*  or simply *WIP*.
 
@@ -52,8 +52,8 @@ Another commonly used component of Kanban is a *cumulative flow diagram (CFD)*. 
 Both Scrum and Kanban are considered to be Agile frameworks with the common goal of improving the efficiency and effectiveness of software development. However, each of them offers a different approach to reaching this goal, including their respective principles and practices. In particular:
 
 - **Work cadence**: Scrum uses fixed-length sprints, while Kanban operates based on a continuous flow model, with work being pulled by development teams according to the availability of their resources.
-- **Roles and ceremonies**: Scrum has clearly defined roles and ceremonies, while Kanban does not prescribe any, instead allowing teams to adapt these according to their specific needs.
+- **Roles and ceremonies**: Scrum has clearly defined roles and ceremonies, while Kanban doesn't prescribe any, instead allowing teams to adapt these according to their specific needs.
 - **Work planning**: Scrum uses a prioritized backlog with work committed to during sprint planning. Kanban uses a dynamic backlog, with no commitments for a specific period. In addition, Kanban supports the concept of WIP limits.
 - **Adaptability to change**: Scrum discourages changes to committed work during the sprint. Kanban facilitates adaptation to changes at any point.
 - **Visualizations**: Scrum uses sprint boards and burndown charts. Kanban relies on Kanban boards.
-- **Metrics**: Scrum leverages sprint-related metrics such as velocity and burndown charts. Kanban emphasizes such metrics as lead time and cycle time.
+- **Metrics**: Scrum uses sprint-related metrics such as velocity and burndown charts. Kanban emphasizes such metrics as lead time and cycle time.

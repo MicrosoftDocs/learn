@@ -8,14 +8,14 @@ What is the primary goal of Agile?
 
 ## Multiple Choice
 What does continuous delivery automate?
-( ) The practice of mamaging updates to code by storing it in designated repositories. {{Incorrect. This is the definition of version control.}}
+( ) The practice of managing updates to code by storing it in designated repositories. {{Incorrect. This is the definition of version control.}}
 ( ) The process of merging code changes and building resulting artifacts. {{Incorrect. This is the definition of continuous integration.}}
 (x) The process of deploying artifacts built as part of CI, making them available to their consumers. {{Correct. Continuous delivery automates the process of deploying artifacts built as part of CI, making them available to their consumers.}}
 
 ## Multiple Choice
 What is the purpose of version control in DevOps?
 ( ) To provide real-time visibility into the health and performance of the entire application stack. {{Incorrect. This describes the purpose of continuous monitoring.}}
-(x) To manage updates to code by storing it in desingnated repositories, tracking its revisions, and maintaining change history. {{Correct. Version control facilitates code reviews and the ability to recover from programming errors.}}
+(x) To manage updates to code by storing it in designated repositories, tracking its revisions, and maintaining change history. {{Correct. Version control facilitates code reviews and the ability to recover from programming errors.}}
 ( ) To automate the process of merging code changes and building resulting artifacts. {{Incorrect. This describes the purpose of continuous integration.}}
 
 ## Multiple Choice

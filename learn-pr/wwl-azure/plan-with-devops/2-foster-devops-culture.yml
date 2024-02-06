@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.plan-with-devops.foster-devops-culture
-title: 'Foster Devops Culture'
+title: 'Foster Devops culture'
 metadata:
-  title: 'Foster Devops Culture'
-  description: "Foster Devops Culture"
-  ms.date: 1/16/2024
+  title: 'Foster Devops culture'
+  description: "Fostering DevOps culture for accelerated software delivery."
+  ms.date: 02/06/2024
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

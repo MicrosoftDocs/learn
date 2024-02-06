@@ -7,7 +7,7 @@ The use of version control is a fundamental DevOps practice. Version control is 
 
 ## Continuous integration (CI) and continuous testing
 
-One of the core practices of DevOps is automation. In this case, automation applies to the process of merging code changes, testing them, and building resulting artifacts, as early in the application lifecycle as possible. The intention is to detect any potential issues in the development phase, since this minimizes the effort and cost involved in fixing them. Automated tests validate that code changes have not introduced errors or regression issues.
+One of the core practices of DevOps is automation. In this case, automation applies to the process of merging code changes, testing them, and building resulting artifacts, as early in the application lifecycle as possible. The intention is to detect any potential issues in the development phase, since this minimizes the effort and cost involved in fixing them. Automated tests validate that code changes haven't introduced errors or regression issues.
 
 ## Continuous delivery (CD)
 
@@ -15,11 +15,11 @@ Continuous delivery automates the process of deploying artifacts built as part o
 
 ## Continuous monitoring
 
-Continuous monitoring provides automated real-time visibility into the health and performance of the entire application stack, including its underlying infrastructure. This is accomplished through the collection of telemetry, including logs and metrics, as well as customizable alerting that delivers notifications about anomalous behavior, facilitating prompt remediation actions.
+Continuous monitoring provides automated real-time visibility into the health and performance of the entire application stack, including its underlying infrastructure. This is accomplished through the collection of telemetry, including logs and metrics, and customizable alerting that delivers notifications about anomalous behavior, facilitating prompt remediation actions.
 
 ## Continuous security (DevSecOps)
 
-Security is an essential part of every phase of the DevOps-based application lifecycle, which is the reason for coining the term DevSecOps. DevSecOps is an extension of DevOps, with the focus on integrating security practices into its every stage—from planning, through coding, testing, and deployment, to operations.
+Security is an essential part of every phase of the DevOps-based application lifecycle, which is the reason for coining the term DevSecOps. DevSecOps is an extension of DevOps, with the focus on integrating security practices into each stage—from planning, through coding, testing, and deployment, to operations.
 
 ## Infrastructure as Code (IaC)
 
