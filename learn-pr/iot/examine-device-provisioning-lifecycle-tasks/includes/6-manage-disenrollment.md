@@ -1,8 +1,8 @@
 Proper management of device credentials is crucial for high-profile systems like IoT solutions. A best practice for such systems is to have a clear plan of how to revoke access for devices when their credentials, whether a shared access signatures (SAS) token or an X.509 certificate, might be compromised.
 
-Enrollment in the Device Provisioning Service enables a device to be provisioned. A provisioned device is a device that is registered with IoT Hub, allowing it to receive its initial device twin state and begin reporting telemetry data.
+Enrollment in the Device Provisioning Service enables a device to be provisioned. A provisioned device is a device that is registered with Azure IoT Hub, allowing it to receive its initial device twin state and begin reporting telemetry data.
 
-This unit describes how to revoke a device from your provisioning service instance, preventing it from being provisioned or reprovisioned in the future. Disabling an individual enrollment or enrollment group does not remove an existing device registration from IoT Hub.
+This unit describes how to revoke a device from your provisioning service instance, preventing it from being provisioned or reprovisioned in the future. Disabling an individual enrollment or enrollment group does not remove an existing device registration from Azure IoT Hub.
 
 ## Disallow a device by using an individual enrollment
 
@@ -33,7 +33,7 @@ If an IoT device is at the end of its device lifecycle and should no longer be a
 
 X.509 certificates are typically arranged in a certificate chain of trust. If a certificate at any stage in a chain becomes compromised, trust is broken. The certificate must be disallowed to prevent Device Provisioning Service from provisioning devices downstream in any chain that contains that certificate.
 
-An enrollment group is an entry for devices that share a common attestation mechanism of X.509 certificates signed by the same intermediate or root CA. The enrollment group entry is configured with the X.509 certificate associated with the intermediate or root CA. The entry is also configured with any configuration values, such as twin state and IoT hub connection, that are shared by devices with that certificate in their certificate chain. To disallow the certificate, you can either disable or delete its enrollment group.
+An enrollment group is an entry for devices that share a common attestation mechanism of X.509 certificates signed by the same intermediate or root CA. The enrollment group entry is configured with the X.509 certificate associated with the intermediate or root CA. The entry is also configured with any configuration values, such as twin state and Azure IoT hub connection, that are shared by devices with that certificate in their certificate chain. To disallow the certificate, you can either disable or delete its enrollment group.
 
 To temporarily disallow the certificate by disabling its enrollment group:
 
@@ -88,7 +88,7 @@ To disallow an individual device in an enrollment group, follow these steps:
      |--------------|-----------|
      | Attestation mechanism | Select **Symmetric key**      |
      | Generate symmetric keys automatically | Make sure this checkbox is selected. The keys don't matter for this scenario.  |
-     | **Registration ID** | If the device has already been provisioned, use its IoT Hub device ID. You can find this in the registration records of the enrollment group, or in the IoT hub that the device was provisioned to. If the device has not yet been provisioned, enter the device certificate CN. (In this latter case, you don't need the device certificate, but you need to know the CN.)      |
+     | **Registration ID** | If the device has already been provisioned, use its Azure IoT Hub device ID. You can find this in the registration records of the enrollment group, or in the Azure IoT hub that the device was provisioned to. If the device has not yet been provisioned, enter the device certificate CN. (In this latter case, you don't need the device certificate, but you need to know the CN.)      |
 
 1. Scroll to the bottom of the **Add enrollment** page and uncheck the **Enable this enrollment** checkbox.
 

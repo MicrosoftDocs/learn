@@ -29,7 +29,7 @@ Your certificate is shown in the certificate tab with a status *Verified*.
 
 ## Manual verification of intermediate or root CA
 
-Automatic verification is recommended when you upload new intermediate or root CA certificates to DPS. However, you can still perform proof-of-possession if it makes sense for your IoT scenario.
+Automatic verification is recommended when you upload new intermediate or root CA certificates to DPS. However, you can still perform proof-of-possession if it makes sense for your Azure IoT Hub scenario.
 
 Proof-of-possession involves the following steps:
 
