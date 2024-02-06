@@ -21,7 +21,7 @@ By using the views functionality, you have the option to create multiple boards 
 
 ## How to start with GitHub Projects boards?
 
-Before you start a new GitHub project, create a repository. A repository stores all of your project's files and provide a platform for managing your work and collaborating with others. To track project-related work items, use issues. Issues provide a convenient method for communicating and making decisions within a team, including discussions on application lifecycle details, such as bugs or performance reports, project planning, or brainstorming a new idea. To provide suggestions for improvements, use pull requests containing proposed changes.
+Before you start a new GitHub project, create a repository. A repository stores all of your project's files and provides a platform for managing your work and collaborating with others. To track project-related work items, use issues. Issues provide a convenient method for communicating and making decisions within a team, including discussions on application lifecycle details, such as bugs or performance reports, project planning, or brainstorming a new idea. To provide suggestions for improvements, use pull requests containing proposed changes.
 
 In addition, consider using the default labels included in every repository or creating custom ones. Labels help with keeping track of project goals, designating bugs, differentiating between various types of work, and indicating the status of issues or pull requests. For example, you can locate all bugs in your project by filtering for issues with the corresponding label.
 
