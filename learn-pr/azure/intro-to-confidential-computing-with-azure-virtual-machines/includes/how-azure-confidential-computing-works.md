@@ -3,7 +3,7 @@ Two different CPU-related technologies in Azure help you achieve a high integrit
 - VMs with application enclaves
 - VM-level confidentiality
 
-Choose one or both technologies to protect your applications in virtual machines. Both options take advantage of recent CPU improvements to enable memory encryption, and CPU-state confidentiality and integrity. Both technologies are virtualization extensions, which are implemented by CPU manufacturers to allow a virtualized environment to access CPU resources directly, rather than doing so through the host operating system and hypervisor. Virtualization extensions enable solutions around CPU and memory and can improve the performance and security of the virtual machine's operating system, and application and data processing.
+Choose one or both technologies to protect your applications in virtual machines. Both options take advantage of recent CPU architecture improvements to enable memory encryption, CPU-state confidentiality, and data integrity. Both technologies are virtualization extensions, which are implemented by CPU manufacturers to allow a virtualized environment to access CPU resources directly rather than doing so through the host operating system and hypervisor. These extensions enable improved CPU and memory performance as well as better security of the virtual machine's operating system, applications, and data processing.
 
 | **Technology** | **Supported virtual machines** | **Considerations** |
 |---|---|---|
