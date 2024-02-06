@@ -1,6 +1,6 @@
 Incorporating DevOps into the application lifecycle involves implementing a range of DevOps practices. The ability to maximize DevOps benefits is highly dependent on the extent to which this implementation is successful. In our sample scenario, the organization would need to introduce significant changes to its operating model, starting with promoting collaboration and communication between development and operations teams as well as investing in version control, automation, continuous integration, continuous testing, continuous delivery, and continuous monitoring. You'll explore these practices in this unit.
 
-## Version Control
+## Version control
 
 Version control is the practice of managing updates to code by storing it in designated repositories, tracking its revisions,  and maintaining change history. This facilitates code reviews and the ability to recover from programming errors. In addition, version control systems (VCS) such as Git allow for collaboration in code authoring among multiple developers through such features as repository cloning, pull requests, code change merges, conflict resolution, and support for rollbacks.
 The use of version control is a fundamental DevOps practice. Version control is also a prerequisite for such practices as continuous integration and infrastructure as code.
@@ -13,7 +13,7 @@ One of the core practices of DevOps is automation. In this case, automation appl
 
 Continuous delivery automates the process of deploying artifacts built as part of CI, making them available to their consumers. CD automates progression of these artifacts through different environments, such as testing, staging, and production. Continuous integration and continuous delivery (CI/CD) together form a unified, streamlined, end-to-end software development and delivery process.
 
-## Continuous Monitoring
+## Continuous monitoring
 
 Continuous monitoring provides automated real-time visibility into the health and performance of the entire application stack, including its underlying infrastructure. This is accomplished through the collection of telemetry, including logs and metrics, and customizable alerting that delivers notifications about anomalous behavior, facilitating prompt remediation actions.
 
