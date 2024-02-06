@@ -1,15 +1,14 @@
+You define the structure and workflow for an Azure Logic App workflow using a JSON document. This document contains a JSON description of the elements that make up the logic app workflow and, the Workflow Definition Language schema validates it. The easiest way to explain the schema is to examine an existing workflow created using the workflow designer in the Azure portal, then view the JSON description of this logic app.
 
-You define the structure and workflow for an Azure Logic App workflow using a JSON document. This document contains a JSON description of the elements that make up the logic app workflow and is validated by the Workflow Definition Language schema. The easiest way to explain the schema is to examine an existing workflow created using the workflow designer in the Azure portal, and then view the JSON description of this logic app.
-
-In the sample scenario, you want to provide your consultants with common workflows, which they can adapt to the specific needs of the universities they work with. You want to make it as easy as possible to customize and deploy each workflow, so you decide to take a look at the code behind the workflow, namely the workflow definition JSON. 
+In the sample scenario, you want to provide your consultants with common workflows that they can adapt to the specific needs of the universities with which they work. You want to make it as easy as possible to customize and deploy each workflow, so you decide to take a look at the code behind the workflow, namely the workflow definition JSON.
 
 ## Workflow designer
 
-The workflow designer enables you to create and debug the workflow for a logic app workflow graphically. The designer also lets developers look under the hood of a workflow to see how it's implemented. The following image shows an example of a simple workflow, which is triggered by sending an HTTP GET request to a specified URL. The result is returned in the HTTP response. In this example, the workflow is sending back a simple *Hello Logic Apps Template!* message.
+The workflow designer allows you to create and debug the workflow for a logic app workflow graphically. The designer also lets developers look under the hood of a workflow to see how it's implemented. The following image shows an example of a simple workflow, which is triggered by sending an HTTP GET request to a specified URL. The result is returned in the HTTP response. In this example, the workflow is sending back a simple *Hello Logic Apps Template!* message.
 
-![Diagram showing workflow designer overview.](../media/2-workflowdesigner.png)
+![Diagram showing workflow designer overview.](../media/2-workflow-designer.png)
 
-Let's now look at the workflow definition language as used by the JSON template.
+Now, let's look at the workflow definition language as used by the JSON template.
 
 ## Code view
 
@@ -47,7 +46,7 @@ The Code View window shows the JSON document that describes the workflow. In the
 }
 ```
 
-Notice the sections in the `definition` scope that relate to the actions and triggers shown in the designer. You can edit the JSON code in this document to reflect any changes required in the functionality of the logic app workflow. You can also add further actions, and specify how the logic in the workflow runs from one action to the next.
+Notice the sections in the `definition` scope that relate to the actions and triggers shown in the designer. You can edit the JSON code in this document to reflect any changes required in the logic app workflow's functionality. You can also add further actions and specify how the logic in the workflow runs from one action to the next.
 
 ### Triggers section
 
@@ -78,7 +77,7 @@ A trigger must include the following elements:
 
   - *ApiConnection* for responding to events triggered by other Azure services, such as a message arriving on a message queue, an email message, and so on. The *ApiConnection* trigger type is generalized, and you specify further details indicating the type of the service, and any connection information required.
 
-- The *inputs* section. This section specifies the data that defines the behavior of the trigger. For a Request trigger, the *method* indicates the type of HTTP request that causes the trigger to run. For an *ApiConnection* trigger, the *inputs* section contains information about how to connect to the resource triggering the event (a message queue connection string, for example). If the trigger is a *Request* trigger, the *schema* section of the input definition specifies the schema that the payload of the request body should conform to. HTTP GET requests don't have a request body, so the *schema* is empty in the previous example.
+- The *inputs* section. This section specifies the data that defines the trigger's behavior. For a Request trigger, the *method* indicates the type of HTTP request that causes the trigger to run. For an *ApiConnection* trigger, the *inputs* section contains information about how to connect to the resource triggering the event (a message queue connection string, for example). If the trigger is a *Request* trigger, the *schema* section of the input definition specifies the schema that the payload of the request body should conform to. HTTP GET requests don't have a request body, so the *schema* is empty in the previous example.
 
 The following example shows the definition of another *Request* trigger that starts a workflow and receives HTTP POST requests. A POST request typically provides a request body, containing the data to be posted. The request body in this example contains a customer name and address, comprising the street and city.
 
@@ -168,7 +167,7 @@ In our basic workflow definition, the action generates an HTTP response where th
 }
 ```
 
-The *runAfter* section indicates where the action runs in the workflow sequence. In the previous example, there's only a single action, so it always runs when the trigger fires. If the workflow had multiple actions, you could specify the name of an action and a status for that action in this section. The action will run if the *runAfter* action completes with the specified status. The following code shows an example. The action *mySecondAction* runs after *myFirstAction*, but only if *myFirstAction* finishes with a status of "Succeeded":
+The *runAfter* section indicates where the action runs in the workflow sequence. In the previous example, there's only a single action, so it always runs when the trigger fires. If the workflow had multiple actions, you could specify the name of an action and a status for that action in this section. The action runs if the *runAfter* action completes with the specified status. The following code shows an example. The action *mySecondAction* runs after *myFirstAction*, but only if *myFirstAction* finishes with a status of "Succeeded":
 
 ```JSON
 "actions": {
@@ -219,16 +218,16 @@ You can use a workflow expression in place of any fixed value, variable, or cons
 
 Azure Logic Apps provides built-in functions that you can use to create complex expressions:
 
-- String functions, for concatenating or splitting strings, converting characters between upper and lower case, and searching for substrings.
-- Collection functions, for detecting whether a collection contains items that match a specific pattern, retrieving items from a collection, and combining collections.
-- Logical comparison functions, for detecting whether operands are the same, different, numerically greater, or numerically less than each other.
-- Conversion functions, for changing the type or format of data.
-- Maths functions, such as *add*, *sub*, *div*, and *mul*, plus several others.
-- Date and time functions, for parsing and processing dates and times.
-- Workflow functions, for retrieving information about the data passed to a workflow action. For example, the *parameter* function (previously shown) fetches the value of a named parameter, and the *body* function (shown previously) returns the data being generated by an action.
-- JSON and XML manipulation functions, for parsing and processing JSON and XML documents.
+- **String functions**: For concatenating or splitting strings, converting characters between upper and lower case, and searching for substrings.
+- **Collection functions**: For detecting whether a collection contains items that match a specific pattern, retrieving items from a collection, and combining collections.
+- L**ogical comparison functions**: For detecting whether operands are the same, different, numerically greater, or numerically less than each other.
+- **Conversion functions**: For changing the type or format of data.
+- **Math functions**: Such as *add*, *sub*, *div*, and *mul*, plus several others.
+- **Date and time functions**: For parsing and processing dates and times.
+- **Workflow functions**: For retrieving information about the data passed to a workflow action. For example, the *parameter* function (previously shown) fetches the value of a named parameter, and the *body* function (shown previously) returns the data being generated by an action.
+- **JSON and XML manipulation functions**: For parsing and processing JSON and XML documents.
 
-You can define variables in the *inputs* section of an *InitializeVariable* action, and you can manipulate these variables using expressions. You read the value of a variable using the *variables* function. The following example uses an *InitializeVariable* action to create an integer variable named *myIntegerVariable*, and initialize it to 99. This example also shows a *Condition* action with the *If* type. The condition uses an expression to test the value of the *myIntegerVariable* variable, and if it matches the value 100, the condition uses an HTTP action to perform a GET request.
+You can define variables in the *inputs* section of an *InitializeVariable* action, and you can manipulate these variables using expressions. Read the value of a variable using the *variables* function. The following example uses an *InitializeVariable* action to create an integer variable named *myIntegerVariable* and initialize it to 99. This example also shows a *Condition* action with the *If* type. The condition uses an expression to test the*myIntegerVariable* variable value, and if it matches the value *100*, the condition uses an HTTP action to perform a GET request.
 
 ```JSON
 "actions": {
@@ -274,7 +273,7 @@ You can define variables in the *inputs* section of an *InitializeVariable* acti
 
 ### Parameters section
 
-The parameters section enables you to parameterize a workflow. At runtime, you can provide values for each of these parameters. You reference the parameters anywhere in the workflow where you might use a constant or expression.
+The parameters section enables you to parameterize a workflow. At runtime, you can provide values for each of these parameters. You can reference the parameters anywhere in the workflow where you might use a constant or expression.
 
 You can add a parameters definition with a default value. The default value is used if you don't provide a value for the parameter at runtime. The following example shows how to define a parameter named *cityParam*. The parameter is used inside the condition for the *mypostrequest* action. It performs the action only if the request document contains a city that matches the parameter value. The default parameter value is *New York*:
 

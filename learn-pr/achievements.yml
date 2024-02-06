@@ -2803,6 +2803,11 @@ achievements:
   title: Set up a test environment for application testing in Microsoft Entra ID
   summary: Evaluate whether you need a dedicated test tenant for your application test environment. Create a test tenant in Microsoft Entra ID for use in a continuous integration/continuous deployment (CI/CD) pipeline or for testing applications.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure.introduction-to-app-provisioning.badge
+  type: badge
+  title: Introduction to application provisioning
+  summary: Introduction to application provisioning
+  iconUrl: /learn/achievements/generic-badge.svg
 - uid: learn.azure.set-up-cors-website-storage.badge
   type: badge
   title: Core Cloud Services - Set up CORS for your website and storage assets
