@@ -75,14 +75,14 @@ To disallow an individual device in an enrollment group, follow these steps:
 
 1. Follow the appropriate step depending on whether you have the device (end-entity) certificate or not.
 
-   * If you have the device certificate, provide the following values on the Add enrollment page:
+   * If you have the device certificate, provide the following values on the **Add enrollment** page:
 
      | Field        | Description |
      |--------------|-----------|
      | Attestation mechanism | Select **X.509 client certificates**      |
      | Primary certificate file | Upload the device certificate. For the certificate, use the signed end-entity certificate installed on the device. The device uses the signed end-entity certificate for authentication.  |
 
-   * If you don't have the device certificate, provide the following values on the Add enrollment page:
+   * If you don't have the device certificate, provide the following values on the **Add enrollment** page:
 
      | Field        | Description |
      |--------------|-----------|

@@ -1,4 +1,4 @@
-During the lifecycle of your IoT solution, you'll need to roll certificates. Two of the main reasons for rolling certificates would be a security breach, and certificate expirations. For now, we will focus on rolling certificates due to expiration.
+During the lifecycle of your IoT solution, you need to roll certificates. Two of the main reasons for rolling certificates would be a security breach, and certificate expirations. For now, we focus on rolling certificates due to expiration.
 
 Rolling certificates is a security best practice to help secure your system in the event of a breach. As part of [Assume Breach Methodology](https://download.microsoft.com/download/C/1/9/C1990DBA-502F-4C2A-848D-392B93D9B9C3/Microsoft_Enterprise_Cloud_Red_Teaming.pdf), Microsoft advocates the need for having reactive security processes in place along with preventative measures. Rolling your device certificates should be included as part of these security processes. The frequency in which you roll your certificates depends on the security needs of your solution. Customers with solutions involving highly sensitive data may roll certificate daily, while others roll their certificates every couple years.
 
@@ -20,13 +20,13 @@ Certificates on a device should always be stored in a safe place like a [hardwar
 
 If you got your certificates from a third party, you must look into how they roll their certificates. The process may be included in your arrangement with them, or it may be a separate service they offer.
 
-If you're managing your own device certificates, you'll have to build your own pipeline for updating certificates. Make sure both old and new leaf certificates have the same common name (CN). By having the same CN, the device can reprovision itself without creating a duplicate registration record.
+If you're managing your own device certificates, you have to build your own pipeline for updating certificates. Make sure both old and new leaf certificates have the same common name (CN). By having the same CN, the device can reprovision itself without creating a duplicate registration record.
 
 The mechanics of installing a new certificate on a device often involve one of the following approaches:
 
 * You can trigger affected devices to send a new certificate signing request (CSR) to your PKI Certificate Authority (CA). In this case, each device will likely be able to download its new device certificate directly from the CA.
 
-* You can retain a CSR from each device and use that to get a new device certificate from the PKI CA. In this case, you'll need to push the new certificate to each device in a firmware update using a secure OTA update service like [Device Update for IoT Hub](/azure/iot-hub-device-update/).
+* You can retain a CSR from each device and use that to get a new device certificate from the PKI CA. In this case, you need to push the new certificate to each device in a firmware update using a secure OTA update service like [Device Update for IoT Hub](/azure/iot-hub-device-update/).
 
 ## Roll the certificate in the IoT hub
 
@@ -34,7 +34,7 @@ The device certificate can be manually added to an IoT hub. The certificate can 
 
 When a device is initially provisioned through autoprovisioning, it boots-up, and contacts the provisioning service. The provisioning service responds by performing an identity check before creating a device identity in an IoT hub using the device's leaf certificate as the credential. The provisioning service then tells the device which IoT hub it's assigned to, and the device then uses its leaf certificate to authenticate and connect to the IoT hub.
 
-Once a new leaf certificate has been rolled to the device, it can no longer connect to the IoT hub because it's using a new certificate to connect. The IoT hub only recognizes the device with the old certificate. The result of the device's connection attempt is an "unauthorized" connection error. To resolve this error, you must update the enrollment entry for the device to account for the device's new leaf certificate. Then the provisioning service can update the IoT Hub device registry information as needed when the device is reprovisioned.
+Once a new leaf certificate is rolled to the device, it can no longer connect to the IoT hub because it's using a new certificate to connect. The IoT hub only recognizes the device with the old certificate. The result of the device's connection attempt is an "unauthorized" connection error. To resolve this error, you must update the enrollment entry for the device to account for the device's new leaf certificate. Then the provisioning service can update the IoT Hub device registry information as needed when the device is reprovisioned.
 
 One possible exception to this connection failure would be a scenario where you've created an Enrollment Group for your device in the provisioning service. In this case, if you aren't rolling the root or intermediate certificates in the device's certificate chain of trust, then the device is recognized if the new certificate is part of the chain of trust defined in the enrollment group. If this scenario arises as a reaction to a security breach, you should at least disallow the specific device certificates in the group that are considered to be breached. For more information, see [Disallow specific devices in an enrollment group](/en-us/azure/iot-dps/how-to-revoke-device-access-portal#disallow-specific-devices-from-an-x509-enrollment-group).
 
@@ -58,7 +58,7 @@ Updating enrollment entries for rolled certificates is accomplished on the **Man
 
 1. If any of your certificates were compromised, you should remove them as soon as possible.
 
-1. If one of your certificates is nearing its expiration, you can keep it in place as long as the second certificate is still be active after that date.
+1. If one of your certificates is nearing its expiration, you can keep it in place as long as the second certificate is still active after that date.
 
 Select **Save** when finished.
 

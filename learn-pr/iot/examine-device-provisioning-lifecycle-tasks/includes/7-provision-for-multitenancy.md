@@ -5,7 +5,7 @@ The allocation policies defined by the provisioning service support various allo
 
 It is common to combine these two scenarios. For example, a multitenant IoT solution commonly assigns tenant devices using a group of IoT hubs that are scattered across regions. These tenant devices can be assigned to the IoT hub in that group that has the lowest latency based on geographic location.
 
-Provisioning devices for the multitenant scenario across regions, as described in the the previous paragraph, involves the following:
+Provisioning devices for the multitenant scenario across regions, as described in the previous paragraph, involves the following:
 
 * Two (or more) regional IoT hubs.
 * An enrollment group that uses a multitenant enrollment and specifies assigning devices based on lowest latency.
