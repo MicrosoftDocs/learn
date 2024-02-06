@@ -25,6 +25,5 @@ products:
 subjects:
 - machine-learning
 units:
-- learn.wwl.create-clustering-model-azure-machine-learning-designer.what-is-azure-machine-learning
 badge:
   uid: learn.wwl.create-clustering-model-azure-machine-learning-designer.badge
