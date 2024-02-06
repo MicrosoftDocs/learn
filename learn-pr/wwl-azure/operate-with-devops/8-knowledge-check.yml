@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 1/17/2024
+  ms.date: 02/06/2024
   author: LuizMacedo
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -42,10 +42,10 @@ quiz:
       explanation: "Correct. Performance monitoring uses real-time telemetry to evaluate overall health of workloads and detect issues as soon as they occur."
     - content: "To collect qualitative data about events."
       isCorrect: false
-      explanation: "Incorrect. Qualitative data is not the primary focus of performance monitoring in observability."
+      explanation: "Incorrect. Qualitative data isn't the primary focus of performance monitoring in observability."
     - content: "To provide insights into the financial status of systems and applications."
       isCorrect: false
-      explanation: "Incorrect. Financial status is not the primary focus of performance monitoring in observability."
+      explanation: "Incorrect. Financial status isn't the primary focus of performance monitoring in observability."
   - content: "What is the purpose of Security Information and Event Management (SIEM) solutions in security observability?"
     choices:
     - content: "To collect real-time telemetry data from a wide range of sources, automatically correlate them, and look for patterns to identify security-related events and vulnerabilities."
@@ -53,7 +53,7 @@ quiz:
       explanation: "Correct. SIEM solutions collect real-time telemetry data from various sources, correlate them, and use artificial intelligence and machine learning to identify security-related events and vulnerabilities."
     - content: "To perform live site penetration tests and identify vulnerabilities in the target environment."
       isCorrect: false
-      explanation: "Incorrect. This is not a purpose of SIEM solutions."
+      explanation: "Incorrect. This isn't a purpose of SIEM solutions."
     - content: "To scan repo-hosted source code for security vulnerabilities and programming errors."
       isCorrect: false
       explanation: "Incorrect. This is a purpose of GitHub's Security Code Scanning, not SIEM solutions."
@@ -64,7 +64,7 @@ quiz:
       explanation: "Correct. Error budgets facilitate finding a balance between reliability, cost, and the pace of changes."
     - content: "To reduce the cost of operations."
       isCorrect: false
-      explanation: "Incorrect. Error budgets are not meant to reduce the cost of operations."
+      explanation: "Incorrect. Error budgets aren't meant to reduce the cost of operations."
     - content: "To maximize reliability at all costs."
       isCorrect: false
       explanation: "Incorrect. Error budgets are meant to optimize, not maximize, reliability."

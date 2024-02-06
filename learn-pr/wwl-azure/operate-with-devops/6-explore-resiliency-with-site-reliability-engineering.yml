@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.operate-with-devops.explore-resiliency-with-site-reliability-engineering
-title: 'Explore Resiliency with Site Reliability Engineering'
+title: 'Explore resiliency with site reliability engineering'
 metadata:
-  title: 'Explore Resiliency with Site Reliability Engineering'
-  description: "Explore Resiliency with Site Reliability Engineering"
-  ms.date: 1/17/2024
+  title: 'Explore resiliency with site reliability engineering'
+  description: "Explore the correlation between SRE and DevOps and learn how to implement SRE for increased resiliency."
+  ms.date: 02/06/2024
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

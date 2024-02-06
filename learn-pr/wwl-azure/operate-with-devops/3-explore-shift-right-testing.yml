@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.operate-with-devops.explore-shift-right-testing
-title: 'Explore Shift-Right Testing'
+title: 'Explore shift-right testing'
 metadata:
-  title: 'Explore Shift-Right Testing'
-  description: "Explore Shift-Right Testing"
-  ms.date: 1/17/2024
+  title: 'Explore shift-right testing'
+  description: "In this unit, explore the justification for shift-right testing and its criteria for assessing system reliability and fault injection."
+  ms.date: 02/06/2024
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
   [!include[](includes/3-explore-shift-right-testing.md)]

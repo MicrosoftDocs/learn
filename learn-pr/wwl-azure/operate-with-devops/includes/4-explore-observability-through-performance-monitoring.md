@@ -1,4 +1,4 @@
-As mentioned earlier in this module, observability is one of the fundamental aspects of operational excellence. Its purpose is to provide insights into the operational status of systems and applications. It involves continuous monitoring and evaluating of that operational status. One of the primary targets of observability is performance. Performance monitoring-based observability could yield significant benefits to any organization that depends on technology for its revenue, including the one described in the sample scenario. In this unit, you'll learn about how these benefits can be realized.
+As mentioned earlier in this module, observability is one of the fundamental aspects of operational excellence. Its purpose is to provide insights into the operational status of systems and applications. It involves continuous monitoring and evaluating of that operational status. One of the primary targets of observability is performance. Performance monitoring-based observability could yield significant benefits to any organization that depends on technology for its revenue, including the one described in the sample scenario. In this unit, learn about how these benefits can be realized.
 
 ## What is the role of performance monitoring in observability?
 
@@ -12,4 +12,4 @@ Data collected through performance monitoring is also essential in incident resp
 
 In addition, continuous monitoring drives continuous improvement by providing data for post-incident reviews and root cause analysis. It also helps transition from the reactive to proactive remediation approach.
 
-Lastly, monitoring is commonly used for shift-right testing. By combining it with a continuous delivery workflow, you will be able to detect any anomalies introduced by new software releases and facilitate their swift mitigation. This includes the ability to discover issues that are overlooked in pre-production environments.
+Lastly, monitoring is commonly used for shift-right testing. By combining it with a continuous delivery workflow, you'll be able to detect any anomalies introduced by new software releases and facilitate their swift mitigation. This includes the ability to discover issues that are overlooked in preproduction environments.
