@@ -1,10 +1,4 @@
-In this module, you learned about:
-
-- Fostering a DevOps culture by building mutual respect among teams.
-- Defining roles and responsibilities
-- Facilitating continuous learning and improvement
-- Committing to optimization based on business and customer needs
-- Embracing safe experimentation.
+In this module, you learned about fostering a DevOps culture by building mutual respect among teams, defining roles and responsibilities, facilitating continuous learning and improvement, committing to optimization based on business and customer needs, and embracing safe experimentation.
 
 By promoting collaboration, automation, and a mindset of continuous improvement, organizations can achieve faster, more reliable, and customer-centric software delivery.
 
