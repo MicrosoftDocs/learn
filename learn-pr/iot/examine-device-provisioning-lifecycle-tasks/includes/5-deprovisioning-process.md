@@ -2,9 +2,9 @@ You may find it necessary to deprovision devices that were previously autoprovis
 
 In general, deprovisioning a device involves two steps:
 
-* Disenroll the device from your provisioning service, to prevent future autoprovisioning. Depending on whether you want to revoke access temporarily or permanently, you may want to either disable or delete an enrollment entry. For devices that use X.509 attestation, you may want to disable/delete an entry in the hierarchy of your existing enrollment groups.
+* Disenroll the device from your Device Provisioning Service, to prevent future autoprovisioning. Depending on whether you want to revoke access temporarily or permanently, you may want to either disable or delete an enrollment entry. For devices that use X.509 attestation, you may want to disable/delete an entry in the hierarchy of your existing enrollment groups.
   * To learn how to disenroll a device, see [How to disenroll or revoke a device from Azure IoT Hub Device Provisioning Service](/azure/iot-dps/how-to-revoke-device-access-portal).
-  * To learn how to disenroll a device programmatically using one of the provisioning service SDKs, see [Manage device enrollments with service SDKs](/azure/iot-dps/how-to-manage-enrollments-sdks).
+  * To learn how to disenroll a device programmatically using one of the Device Provisioning Service SDKs, see [Manage device enrollments with service SDKs](/azure/iot-dps/how-to-manage-enrollments-sdks).
 * Deregister the device from your Azure IoT Hub, to prevent future communications and data transfer. Again, you can temporarily disable or permanently delete the device's entry in the identity registry for the Azure IoT Hub where it was provisioned.
 
 The exact steps you take to deprovision a device depend on its attestation mechanism and its applicable enrollment entry with your provisioning service.
@@ -17,16 +17,16 @@ Devices that use TPM attestation or X.509 attestation with a leaf certificate ar
 
 To deprovision a device that has an individual enrollment:
 
-1. Disenroll the device from your provisioning service:
+1. Disenroll the device from your Device Provisioning Service:
 
-   * For devices that use TPM attestation, delete the individual enrollment entry to permanently revoke the device's access to the provisioning service, or disable the entry to temporarily revoke its access.
+   * For devices that use TPM attestation, delete the individual enrollment entry to permanently revoke the device's access to the Device Provisioning Service, or disable the entry to temporarily revoke its access.
    * For devices that use X.509 attestation, you can either delete or disable the entry. Be aware, though, if you delete an individual enrollment for a device that uses X.509 and an enabled enrollment group exists for a signing certificate in that device's certificate chain, the device can re-enroll. For such devices, it may be safer to disable the enrollment entry. Doing so prevents the device from re-enrolling, regardless of whether an enabled enrollment group exists for one of its signing certificates.
 
 1. Disable or delete the device in the identity registry of the Azure IoT hub that it was provisioned to.
 
 ## Deprovision enrollments groups
 
-With X.509 attestation, devices can also be provisioned through an enrollment group. Enrollment groups are configured with a signing certificate, either an intermediate or root CA certificate, and control access to the provisioning service for devices with that certificate in their certificate chain.
+With X.509 attestation, devices can also be provisioned through an enrollment group. Enrollment groups are configured with a signing certificate, either an intermediate or root CA certificate, and control access to the Device Provisioning Service for devices with that certificate in their certificate chain.
 
 To see a list of devices that are provisioned through an enrollment group, you can view the enrollment group's details. This is an easy way to understand which Azure IoT hub each device is provisioned to. To view the device list:
 

@@ -2,14 +2,14 @@ Proper management of device credentials is crucial for high-profile systems like
 
 Enrollment in the Device Provisioning Service enables a device to be provisioned. A provisioned device is a device that is registered with Azure IoT Hub, allowing it to receive its initial device twin state and begin reporting telemetry data.
 
-This unit describes how to revoke a device from your provisioning service instance, preventing it from being provisioned or reprovisioned in the future. Disabling an individual enrollment or enrollment group doesn't remove an existing device registration from Azure IoT Hub.
+This unit describes how to revoke a device from your Device Provisioning Service instance, preventing it from being provisioned or reprovisioned in the future. Disabling an individual enrollment or enrollment group doesn't remove an existing device registration from Azure IoT Hub.
 
 ## Disallow a device by using an individual enrollment
 
 To disallow a device from being provisioned through Device Provisioning Service, you can change the provisioning status of an individual enrollment to prevent the device from provisioning and reprovisioning. You can use this capability if the device is behaving outside its normal parameters or is assumed to be compromised, or as a way to test out provisioning retry mechanism of your devices.
 
 > [!NOTE]
-> Be aware of the retry policy of devices that you revoke access for. For example, a device that has an infinite retry policy might continuously try to register with the provisioning service. That situation consumes service resources such as service operation quotas and possibly affects performance.
+> Be aware of the retry policy of devices that you revoke access for. For example, a device that has an infinite retry policy might continuously try to register with the Device Provisioning Service. That situation consumes service resources such as service operation quotas and possibly affects performance.
 
 To disallow a device by using an individual enrollment:
 
@@ -23,7 +23,7 @@ To disallow a device by using an individual enrollment:
 
 If an IoT device is at the end of its device lifecycle and should no longer be allowed to provision to the IoT solution, the device enrollment should be removed from the Device Provisioning Service:
 
-1. In your provisioning service, select **Manage enrollments**, and then select the **Individual enrollments** tab.
+1. In your Device Provisioning Service, select **Manage enrollments**, and then select the **Individual enrollments** tab.
 
 1. Select the check box next to the enrollment entry for the device that you want to disallow.
 
@@ -39,7 +39,7 @@ To temporarily disallow the certificate by disabling its enrollment group:
 
 1. Sign in to the Azure portal and navigate to your Device Provisioning Service instance.
 
-1. In your provisioning service, select **Manage enrollments**, and then select the **Enrollment Groups** tab.
+1. In your Device Provisioning Service, select **Manage enrollments**, and then select the **Enrollment Groups** tab.
 
 1. Select the enrollment group using the certificate that you want to disallow.
 
@@ -47,7 +47,7 @@ To temporarily disallow the certificate by disabling its enrollment group:
 
 To permanently disallow the certificate by deleting its enrollment group:
 
-In your provisioning service, select **Manage enrollments**, and then select the **Enrollment Groups** tab.
+In your Device Provisioning Service, select **Manage enrollments**, and then select the **Enrollment Groups** tab.
 
 Select the check box next to the enrollment group for the certificate that you want to disallow.
 
@@ -69,7 +69,7 @@ To disallow an individual device in an enrollment group, follow these steps:
 
 1. Sign in to the Azure portal and navigate to your Device Provisioning Service instance.
 
-1. In your provisioning service, select **Manage enrollments**, and then select the **Individual enrollments** tab.
+1. In your Device Provisioning Service, select **Manage enrollments**, and then select the **Individual enrollments** tab.
 
 1. Select **Add individual enrollment**.
 
