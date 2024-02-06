@@ -9,7 +9,7 @@ Let's create the Azure VM with Windows 11 Enterprise using Azure Cloud Shell.
 1. Execute the following command in the Azure Cloud Shell to set the variables for creating the Azure VM:
 
     ```azurecli
-    resourcegroup=<rgn>[sandbox resource group name]</rgn>
+    resourcegroup="<rgn>[resource group name]</rgn>"
     vmname="myVM"
     username="azureuser"
     let "randomIdentifier=$RANDOM*$RANDOM"
