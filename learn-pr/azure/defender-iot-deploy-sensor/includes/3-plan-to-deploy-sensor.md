@@ -13,7 +13,6 @@ The OT sensor deployment plan is shown in the following diagram:
 <!-- WHAT DOES THIS MEAN  - Ensure that the hostname is configured in the organizational DNS server. in the jenkins sensor-->
 Download the OT monitoring software installation file from the Defender for IoT setup page, and then install it on the OT sensor appliance. For our scenario, the OT sensor appliance is a virtual machine. We will use the VMware ESXi v-Switch to build the virtual machine, but other systems such as HyperV could also be used.
 
-<!-- do we have an account that can use the vmware to check and demo on??? <https://customerconnect.vmware.com/en/evalcenter?p=vsphere-eval-8> -->
 You need the details of two network adapters:
 
 - One connects the sensor to the Azure portal for cloud management.
@@ -28,7 +27,7 @@ Run the installation file on the virtual machine, and follow the stages in the w
 Configure the sensor in a browser, and provide the sensor administrator username and password.
 
 The browser displays the **Defender for IoT | Overview** page, which leads you through the four stages of setting up the sensor. Each stage is displayed in its own tab.
-<!-- ASk to have this stage checked as I havent seen it yet.  where can we see a proper screen shot of this? check the titles of each section and how best to write these items based on that - add screenshot of the oiverview screen -->
+<!-- Ask to have this stage checked as I havent seen it yet.  where can we see a proper screen shot of this? check the titles of each section and how best to write these items based on that - add screenshot of the overview screen -->
 
 ### Define network details
 
@@ -63,9 +62,5 @@ In the **Activation** tab upload the activation file, provided by the deployment
 ### Define certificate settings
 
 In the **Certificates** tab, deploy the SSL/TLS certificate settings. It's best practice to use a CA-signed certificate that's more secure, however in our test environment the self-signed certificate is secure enough. <!-- split sentence at However?-->
-<!-- should there be any more added about how to make a certificate or is this enough? There is this section / For more information on creating a certificate see defender-for-iot/organizations/how-to-manage-individual-sensors?branch=main&tabs=self-signed#manage-ssltls-certificates , but it seems a lot to add that in here, what is the expectation that they will have these? we also dont link to outside pages, so this shouldnt be linked to? -->
-<!-- is this uploaded here, what is the procedure? -->
-<!-- so really i presume that the certificate should be provided and mentioned in the intro? or is this user supposed to make one? -->
-<!-- ## Configure optional settings should i just remove this from the image as we won't be doing it because it is preformed in the Site networking setup (which isnt part of these learn modules)? -->
 
 Once these tasks are performed the sensor deployment process is complete and it can send data to the Azure portal.
