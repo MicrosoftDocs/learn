@@ -2,12 +2,8 @@ This unit describes how to download the OT monitoring software from the Defender
 <!-- check all inmages for compliance - may need to redo them or edit -->
 ## Configure firewall to allow the sensor to connect to Azure
 
-<!-- In the previous module should we add after download activation file - save a list of all the endpoints ? This is important for now. but isnt written anywhere. /organizations/tutorial-onboarding.md#onboard-the-virtual-sensor
-In the Add outbound allow rules box, select the Download endpoint details link to download a JSON list of the endpoints you must configure as secure endpoints from your sensor.
-
-Save the downloaded file locally. Use the endpoints listed in the downloaded file to later in this tutorial to ensure that your new sensor can successfully connect to Azure. -->
-
 Configure your firewall rules so that your sensor can access the cloud on port 443, and connect to each of the listed endpoints in the downloaded list.
+<!-- can i see a demo file, also what are the instructions for this? Who to ask?-->
 <!-- Cat has said to use H2 headings as we did in unit 3. But I used numbering as we did in LM3, as per Batami (i think), I have changed it but I am not sure how this applies to uniformity between modules? -->
 
 ## Create a virtual machine with ESXi

@@ -18,6 +18,9 @@ prerequisites: |
   - Access to an [Azure subscription](https://azure.microsoft.com/free) as a Security Admin, Contributor, or Owner 
   -	A Defender for IoT license with an [OT plan](/azure/defender-for-iot/organizations/getting-started)
   - Access to either a virtual or physical OT sensor
+  - Access to a Virtual machine, such as VMware ESXi 5.5 or later
+  - Access to Wireshark or similar PCAP file reader
+  - The endpoints list file and the sensor Activation file related to this sensor
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - intermediate
