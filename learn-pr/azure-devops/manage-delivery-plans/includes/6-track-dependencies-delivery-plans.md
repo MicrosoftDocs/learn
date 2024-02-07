@@ -41,16 +41,16 @@ To review details of the *Push beta* work item, choose the card's icon to open t
 
 The team decides to change the order in which to complete selected work items so as to resolve the dependency issues. They perform the following actions:  
 
-- **Web team**:  
-    - Drag *Create a Git-based workflow* card from **Sprint 1** to **Sprint 2**.
-    - Drag *Check open source code for vulnerabilities and licensing terms* card from **Sprint 2** to **Sprint 1**.
-    - Drag *Update site branding* card from **Sprint 4** to **Sprint 6**.
+- **Web team**:
+  - Drag *Create a Git-based workflow* card from **Sprint 1** to **Sprint 2**.
+  - Drag *Check open source code for vulnerabilities and licensing terms* card from **Sprint 2** to **Sprint 1**.
+  - Drag *Update site branding* card from **Sprint 4** to **Sprint 6**.
 
 - **Engine team**:
-    - Drag *Push beta* card from **Sprint 6** to **Sprint 5**.  
+  - Drag *Push beta* card from **Sprint 6** to **Sprint 5**.  
 
 > [!TIP]
-> If the icons don't update as expected, refresh your browser.
+> If the icons don't update as expected, refresh your browser by pressing **Ctrl+F5**.
 
 Once these changes have been made, the team sees that all dependency issues have been resolved. 
 
