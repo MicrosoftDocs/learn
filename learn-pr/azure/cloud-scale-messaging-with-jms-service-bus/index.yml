@@ -11,7 +11,7 @@ metadata:
 title: Enable asynchronous messaging in Java apps by using JMS and Azure Service Bus
 summary: Send messages to and receive messages from Azure Service Bus with Spring Boot applications.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
   - Describe the benefits of Service Bus.
   - Send messages to Service Bus by using the Java Message Service (JMS) 2.0 API.
   - Receive messages from Service Bus by using the JMS 2.0 API.
