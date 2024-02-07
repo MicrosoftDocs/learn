@@ -1,21 +1,21 @@
-IoT Hub Message Routing enables users to route device-to-cloud messages to service-facing endpoints. Routing also provides a querying capability to filter the data before routing it to the endpoints.
+Azure IoT Hub Message Routing enables users to route device-to-cloud messages to service-facing endpoints. Routing also provides a querying capability to filter the data before routing it to the endpoints.
 
 ## Routing endpoints
 
-An IoT hub has a default built-in messaging endpoint (messages/events).
+An Azure IoT hub has a default built-in messaging endpoint (messages/events).
 
-In addition, custom endpoints can be configured that link IoT hub to other services in your subscription. IoT Hub currently supports the following custom endpoints:
+In addition, custom endpoints can be configured that link Azure IoT hub to other services in your subscription. Azure IoT Hub currently supports the following custom endpoints:
 
- -  Azure Storage containers
- -  Event Hubs
- -  Service Bus Queues
- -  Service Bus Topics
+* Azure Storage containers
+* Event Hubs
+* Service Bus Queues
+* Service Bus Topics
 
-There are two storage services IoT Hub can route messages to: Azure Blob Storage and Azure Data Lake Storage Gen2 (ADLS Gen2) accounts. Both of these use blobs for their storage. Also Service Bus queues and Service Bus topics that have Sessions or Duplicate Detection enabled are not supported as custom endpoints.
+There are two storage services that Azure IoT Hub can route messages to: Azure Blob Storage and Azure Data Lake Storage Gen2 (ADLS Gen2) accounts. Both of these use blobs for their storage. Also Service Bus queues and Service Bus topics that have Sessions or Duplicate Detection enabled are not supported as custom endpoints.
 
 ## Routing queries
 
-A single message may match the condition on multiple routing queries, in which case IoT Hub delivers the message to the endpoint associated with each matched query. IoT Hub also automatically deduplicates message delivery, so if a message matches multiple queries that have the same destination, it is only written once to that destination.
+A single message may match the condition on multiple routing queries, in which case Azure IoT Hub delivers the message to the endpoint associated with each matched query. Azure IoT Hub also automatically deduplicates message delivery, so if a message matches multiple queries that have the same destination, it is only written once to that destination.
 
 > [!IMPORTANT]
 > When you route message data to custom endpoints, messages are only delivered to the built-in endpoint if they don't match any query. To deliver messages to both the built-in endpoint and to a custom endpoint, add a route that sends messages to the built-in events endpoint.
@@ -59,6 +59,6 @@ Each routing query you configure has the following properties:
     Endpoint
   :::column-end:::
   :::column:::
-    The name of the endpoint where IoT Hub sends messages that match the query. We recommend that you choose an endpoint in the same region as your IoT hub.
+    The name of the endpoint where Azure IoT Hub sends messages that match the query. We recommend that you choose an endpoint in the same region as your Azure IoT hub.
   :::column-end:::
 :::row-end:::
