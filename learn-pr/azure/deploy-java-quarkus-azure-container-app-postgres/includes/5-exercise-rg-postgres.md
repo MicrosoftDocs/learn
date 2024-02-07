@@ -30,7 +30,7 @@ export AZ_CONTAINERAPP_ENV="cae-${AZ_PROJECT}"
 export AZ_POSTGRES_DB_NAME="postgres-${AZ_PROJECT}"
 export AZ_POSTGRES_USERNAME="<user-name>"
 export AZ_POSTGRES_PASSWORD="<secure-password>"
-export AZ_POSTGRES_SERVER_NAME="psql-${AZ_PROJECT}"
+export AZ_POSTGRES_SERVER_NAME="psql${AZ_PROJECT}"
 ```
 
 These environment variables are used throughout the rest of this module.
