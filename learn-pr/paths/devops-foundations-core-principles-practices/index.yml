@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.devops-foundations-core-principles-practices
 metadata:
-  title: "DevOps foundations: the core principles and practices"
+  title: "DevOps foundations: The core principles and practices"
   description: 'Explore DevOps practices using Azure DevOps, Git, and GitHub. Your development and operations teams will experience improved collaboration, agility, continuous integration, continuous delivery, automation, and operational excellence throughout all phases of the application lifecycle.'
   ms.date: 02/06/2024
   author: LuizMacedo
   ms.author: lumac
   ms.topic: learning-path
-title: 'DevOps foundations: the core principles and practices'
+title: 'DevOps foundations: The core principles and practices'
 summary: |
   Explore DevOps practices using Azure DevOps, Git, and GitHub. Your development and operations teams will experience improved collaboration, agility, continuous integration, continuous delivery, automation, and operational excellence throughout all phases of the application lifecycle.
   > [!NOTE]
