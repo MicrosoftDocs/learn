@@ -104,8 +104,7 @@ Because the service can take a few seconds to respond, it's best to use asynchro
 ::: zone pivot="csharp"
 
 ```csharp
-AnalyzeDocumentOperation operation = await client.StartAnalyzeDocumentFromUriAsync("prebuilt-document", <URI of the document to analyze>);
-await operation.WaitForCompletionAsync();
+AnalyzeDocumentOperation operation = await client.AnalyzeDocumentFromUriAsync(WaitUntil.Completed, "prebuilt-layout", fileUri);
 
 AnalyzeResult result = operation.Value;
 ```
@@ -115,13 +114,9 @@ AnalyzeResult result = operation.Value;
 ::: zone pivot="python"
 
 ```python
-document_analysis_client = DocumentAnalysisClient(endpoint=endpoint, 
-    credential=AzureKeyCredential(key))
-
-task = document_analysis_client.begin_analyze_document_from_url(
+poller = document_analysis_client.begin_analyze_document_from_url(
     "prebuilt-document", docUrl)
-
-result = task.result()
+result: AnalyzeResult = poller.result()
 ```
 
 ::: zone-end
