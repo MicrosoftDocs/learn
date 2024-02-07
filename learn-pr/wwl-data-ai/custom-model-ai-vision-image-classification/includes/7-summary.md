@@ -8,5 +8,5 @@ In this module, you learned how to:
 - Label and train an image classifier in Vision Studio
 
 More reading:
-- [Create a custom Image Analysis model](/ai-services/computer-vision/how-to/model-customization?azure-portal=true)
+- [Create a custom Image Analysis model](/azure/ai-services/computer-vision/how-to/model-customization)
 - [Azure AI Vision documentation](/azure/ai-services/computer-vision/overview?azure-portal=true)
