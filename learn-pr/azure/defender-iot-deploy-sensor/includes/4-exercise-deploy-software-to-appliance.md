@@ -101,7 +101,7 @@ A sample PCAP file will help you:
 - Validate the switch configuration
 - Confirm that the traffic going through your switch is relevant for monitoring
 - Identify the bandwidth and an estimated number of devices detected by the switch
-<!-- another prereq is to have Wireshark or similar program file reader installed AND knowledge of recording a sample PCAP file from the sensor-->
+
 1. Use a network protocol analyzer application, such as *Wireshark*, to record a sample PCAP file for a few minutes. For example, connect a laptop to a port where you've configured traffic monitoring.
 
 1. Check that *Unicast packets* are present in the recording traffic. Unicast traffic is traffic sent from address to another.<!-- from ONE address to another OR from address to address - Make the same change in the original doc-->
@@ -154,7 +154,7 @@ On your virtual machine:
 
 1. Open your VM settings.
 
-1. For **CD/DVD Drive 1**, select **Datastore ISO file** and select the Defender for IoT software you'd downloaded earlier. <!-- may need to change isnt relevant anymore!!-->
+1. For **CD/DVD Drive 1**, select **Datastore ISO file** and select the Defender for IoT software you downloaded earlier. <!-- may need to change isnt relevant anymore!!OR change to provided as a prereq/ by the .... team -->
 
 1. Select **Next** > **Finish**.
 
