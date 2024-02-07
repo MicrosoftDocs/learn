@@ -31,6 +31,6 @@ modules:
 # - learn.create-tunnel
 - learn.develop-on-remote-machine
 - learn.developing-in-wsl
-# - learn.personalize-remote-development-workflow
+- learn.personalize-remote-development-workflow
 trophy:
   uid: learn.remote-development-vs-code.trophy
