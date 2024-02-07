@@ -6,7 +6,7 @@ Network Watcher consists of three major sets of tools and capabilities:<br>
  -  Network diagnostic tools
  -  Traffic
 
-:::image type="content" source="../media/azure-network-watcher-cf554286.png" alt-text="Diagram showing an example of network watcher monitoring and diagnoistic tools.":::
+:::image type="content" source="../media/azure-network-watcher-cf554286.png" alt-text="Diagram showing an example of network watcher monitoring and diagnostic tools.":::
 
 
 > [!NOTE]
