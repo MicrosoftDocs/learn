@@ -33780,6 +33780,31 @@
       "source_path": "learn-pr/wwl-data-ai/use-automated-machine-learning/8-summary.md",
       "redirect_url": "/training/modules/fundamentals-machine-learning/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/10-knowledge-check.md",
+      "redirect_url": "/training/modules/security-virtual-networks/11-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/11-summary.md",
+      "redirect_url": "/training/modules/security-virtual-networks/12-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/7-expressroute-encryption.md",
+      "redirect_url": "/training/modules/security-virtual-networks/8-expressroute-encryption",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/8-secure-paas-deployments.md",
+      "redirect_url": "/training/modules/security-virtual-networks/9-secure-paas-deployments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/9-flow-logging-network-security-groups.md",
+      "redirect_url": "/training/modules/security-virtual-networks/10-flow-logging-network-security-groups",
+      "redirect_document_id": false
     }
   ]
 }

@@ -4,10 +4,10 @@ title: Implement encryption over ExpressRoute
 metadata:
   title: Implement encryption over ExpressRoute
   description: "Implement encryption over ExpressRoute"
-  ms.date: 12/28/2023
+  ms.date: 02/07/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-expressroute-encryption.md)]
+  [!include[](includes/8-expressroute-encryption.md)]
