@@ -4,12 +4,10 @@ title: Understand Azure Cognitive Search enrichment pipelines
 metadata:
   title: Understand Azure Cognitive Search enrichment pipelines
   description: "Understand Azure Cognitive Search enrichment pipelines"
-  ms.date: 10/18/2023
+  ms.date: 02/06/2024
   author: wwlpublish
-  ms.author: berryivor
+  ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/2-understand-enrichment-pipelines.md)]
