@@ -1,11 +1,14 @@
 This unit describes how to download the OT monitoring software from the Defender for IoT site. Then upload the software to a virtual machine and start the application on the sensor. Afterwards, configure the network settings so that the sensor can connect with the Azure portal. Finally, assign the end point interfaces, activate the sensor and set up the security certificates.
-
+<!-- check all inmages for compliance - may need to redo them or edit -->
 ## Configure firewall to allow the sensor to connect to Azure
 
-<!-- In the previous module should we add after download activation file - save a list of all the endpoints ? This is important for now. but isnt written anywhere.-->
+<!-- In the previous module should we add after download activation file - save a list of all the endpoints ? This is important for now. but isnt written anywhere. /organizations/tutorial-onboarding.md#onboard-the-virtual-sensor
+In the Add outbound allow rules box, select the Download endpoint details link to download a JSON list of the endpoints you must configure as secure endpoints from your sensor.
+
+Save the downloaded file locally. Use the endpoints listed in the downloaded file to later in this tutorial to ensure that your new sensor can successfully connect to Azure. -->
 
 Configure your firewall rules so that your sensor can access the cloud on port 443, and connect to each of the listed endpoints in the downloaded list.
-<!-- Cat has said to use H2 headings as we did in unit 3. But I used numbering as we did in LM3, as per Batami (i think), I have changed it but I am not sure how this applies to uniformity between modules? THe other difference is there are more steps here? -->
+<!-- Cat has said to use H2 headings as we did in unit 3. But I used numbering as we did in LM3, as per Batami (i think), I have changed it but I am not sure how this applies to uniformity between modules? -->
 
 ## Create a virtual machine with ESXi
 
@@ -20,10 +23,9 @@ Details for the following network parameters to use for your sensor appliance:
 - A default gateway
 - Any input interfaces
 -->
-## Create a VM for your sensor
+### Create a VM for your sensor
 
 This procedure describes how to create a VM for your sensor with VMware ESXi.
-<!--</appliance-catalog/virtual-sensor-vmware.md>-->
 
 1. Make sure that VMware is running on your machine.
 
@@ -54,10 +56,9 @@ This procedure describes how to create a VM for your sensor with VMware ESXi.
 | E | 32MB RAM | 1 TB |  4 Core/ 8 Threads |
 | L | 8MB RAM | 1 TB |  4 Core/ 4 Threads |
 
-Your VM is now prepared for your Defender for IoT software installation. <!--You'll continue by installing the software later on in this tutorial, after you've onboarded your sensor in the Azure portal, configured traffic mirroring, and provisioned the machine for cloud management.-->
-<!--  To place the install section here?? Or can this be done in a different order?-->
+Your VM is now prepared for your Defender for IoT software installation. However, first you need to configure traffic mirroring.
 
-## Configure a SPAN port
+### Configure a SPAN port
 
 Virtual switches don't have mirroring capabilities. However, for the sake of this tutorial you can use *promiscuous mode* in a virtual switch environment to view all network traffic that goes through the virtual switch.
 
@@ -95,8 +96,8 @@ This procedure describes how to configure a SPAN port using a workaround with VM
 
 1. Connect to the sensor, and verify that mirroring works.
 
-## Validate traffic mirroring
-<!-- check if this needs to be done, or can we give them a fake file? -->
+### Validate traffic mirroring
+<!-- check if this needs to be done, or can we give them a fake file?  -->
 After configuring traffic mirroring, make an attempt to receive a sample of recorded traffic (PCAP file) from the switch SPAN or mirror port.
 
 A sample PCAP file will help you:
@@ -104,10 +105,10 @@ A sample PCAP file will help you:
 - Validate the switch configuration
 - Confirm that the traffic going through your switch is relevant for monitoring
 - Identify the bandwidth and an estimated number of devices detected by the switch
-
+<!-- another prereq is to have Wireshark or similar program file reader installed AND knowledge of recording a sample PCAP file from the sensor-->
 1. Use a network protocol analyzer application, such as *Wireshark*, to record a sample PCAP file for a few minutes. For example, connect a laptop to a port where you've configured traffic monitoring.
 
-1. Check that *Unicast packets* are present in the recording traffic. Unicast traffic is traffic sent from address to another. 
+1. Check that *Unicast packets* are present in the recording traffic. Unicast traffic is traffic sent from address to another.<!-- from ONE address to another OR from address to address - Make the same change in the original doc-->
 
     If most of the traffic is ARP messages, your traffic mirroring configuration isn't correct.
 
@@ -122,7 +123,7 @@ A sample PCAP file will help you:
 To start the software installation, open your virtual machine.
 
 ### Configure the virtual machine
-
+<!-- is this correct, and described properly, or has it already been done above??check with Mark -->
 The virtual machine must have two network adapters configured, one that connects to the Azure portal, and the other to the traffic mirroring ports on the sensor.
 
 On your virtual machine:
@@ -134,8 +135,9 @@ On your virtual machine:
 
 ### Download the monitoring software file
 
-In Defender for IoT select **Getting started > Sensor**, then select the software version and select **Download**.
-<!-- what are the software names - can i copy a name from the Jenkins list of software? -->
+In Defender for IoT select **Getting started > Sensor**, then select the latest software version and select **Download**. <!-- must ensure they download the correct software version otherwise the admin and log in will be incorrect, if it is different on older versions -->
+
+:::image type="content" source="../media/4-download-iso-file.png" alt-text="screenshot of Downloading ISO monitoring file from Defender for IoT":::
 
 Save the downloaded ISO file in a location that's accessible from your VM.
 
@@ -145,16 +147,18 @@ All files downloaded from the Azure portal are signed by root of trust so that y
 
 On your virtual machine:
 
-1. Mount the ISO file onto the virtual machine using the system specific application. In this scenario, we're using the iLO for HPE machines. <!-- is this written correctly? -->
+1. Mount the ISO file onto the virtual machine using the system specific application. In this scenario, we're using the iLO for HPE machines. <!-- is this written correctly? I think this is what comes next and the reference to iLO is irrelevant! - check with Mark-->
 
 > [!NOTE]
 > Towards the end of this process you will be presented with the usernames and passwords for your device. Make sure to copy these down as these passwords will not be presented again.
 
 **To install the software on the virtual sensor**:
 
-1. If you closed your VM, sign into the ESXi again and open your VM settings.
+On your virtual machine:
 
-<!--1. For **CD/DVD Drive 1**, select **Datastore ISO file** and select the Defender for IoT software you'd [downloaded earlier](#download-software-for-your-virtual-sensor).-->
+1. Open your VM settings.
+
+1. For **CD/DVD Drive 1**, select **Datastore ISO file** and select the Defender for IoT software you'd downloaded earlier. <!-- may need to change isnt relevant anymore!!-->
 
 1. Select **Next** > **Finish**.
 
@@ -162,7 +166,7 @@ On your virtual machine:
 
     :::image type="content" source="../media/4-iot-iso-boot.png" alt-text="Screenshot of the installation wizard for mounting the ISO file on the OT sensor virtual machine":::
 
-1. Select **Install iot-sensor_23.1.1.75399077**.
+1. Select **Install iot-sensor_23.1.1.75399077**. <!-- change this to say Select the correct install version that appears in the list, for example **Install iot-sensor_23.1.1.75399077** -->
 
     The installation process takes 20-30 minutes. When completed the default network details are shown. While the default IP, subnet, and gateway addresses are identical with each installation, the UID is unique for each appliance. For example:
   
@@ -176,7 +180,7 @@ On your virtual machine:
     The IP address is needed to access the sensor for initial setup and activation.
 
 ### Post-installation validation
-
+<!-- do we really need to include this section for the LM? -->
 This procedure describes how to validate your installation using the sensor's own system health checks and is available to the default *admin* user.
 
 **To validate your installation**:
@@ -190,9 +194,7 @@ This procedure describes how to validate your installation using the sensor's ow
     - **Appliance** to check that the system is running. Verify that each line item shows **Running** and that the last line states that the **System is up**.
     - **Version** to verify that you have the correct version installed.
     - **ifconfig** to verify that all input interfaces configured during installation are running.
-
-<!--For more post-installation validation tests, such as gateway, DNS or firewall checks, see [Validate an OT sensor software installation](ot-deploy/post-install-validation-ot-software.md).-->
-
+<!-- I would prefer this heading to be ## Activate and initial setup as is in the diagram before -->
 ## Define initial setup
 
 The following procedure describes how to configure your sensor's initial setup settings, including:
@@ -203,14 +205,14 @@ The following procedure describes how to configure your sensor's initial setup s
 - Activating your sensor
 - Configuring SSL/TLS certificate settings
 
-### Define network settings
+### Signing in to the sensor
 
 Open a browser in the virtual machine.
 
 1. Enter the IP address given at the end of the sensor installation, ```192.168.0.101```. The initial sign-in page appears, for example:
 
     :::image type="content" source="../media/4-console-sign-in-page.png" alt-text="Screenshot of sensor console sign in":::
-1. Enter the following credentials:
+1. Enter the following credentials:<!-- how do we know they have chosen the correct sensor verison? define that above-->
 
     Username: ```admin```
     Password: ```admin```
@@ -222,7 +224,7 @@ Open a browser in the virtual machine.
 The **Defender for IoT | Overview** page opens to the **Management interface** tab.
 <!-- add screenshot of the Overview page here -->
 
-### Management interface tab
+### Define network details
 
 In the **Management interface** tab, define the network details for the sensor. Even though default network values are given after the monitoring software is installed, it's best practice to give different names or settings for security purposes. For example:
 <!-- check data with engineer -->
@@ -238,7 +240,7 @@ In the **Management interface** tab, define the network details for the sensor. 
 
 When you're done, select **Next: Interface configurations** to continue.
 
-### Interface configurations tab
+### Select interfaces to monitor
 <!-- should the content of the next 3 sections be numbered as a procedure or are they too short?-->
 The Interface configurations tab shows all of the interfaces detected by the sensor.
 
@@ -249,7 +251,7 @@ In the **Interface Configurations** tab:
 1. Select **Next: Reboot >** to continue.
 1. Select **Start reboot** to reboot your sensor machine.
 
-### Activation tab
+### Upload activation file
 
 The activation tab is the section to upload the activation file recieved from the Deployment team.
 
@@ -259,21 +261,22 @@ After rebooting, the virtual machine opens to the **Defender for IoT | Overview*
 1. Select the **Terms and Condition** option.
 1. Select **Next:Certificates**.
 
-### Certificates tab
+### Define certificate settings
 
 In the **Certificates** tab:
 
 1. Select **Use Locally generated self-signed certificate (Not recommended)**.
 1. Select the **Confirm** option.
 1. Finally, select **Finish** to complete the initial setup and open the sensor.
-<!--<how-to-manage-individual-sensors?branch=pr-en-us-264789&tabs=self-signed#manage-ssltls-certificates> there is extra stage at the end of this tabbed item do we need to add it? -->
+
 ## Check your work
 
 Verify that your sensor is connected to Azure by checking its connectivity status in Defender for IoT.
 
 1. Open Defender for IoT in the Azure portal.
 1. Select the **Sites and sensors** section.
-1. Check that your sensor is listed and the status is *connected*.
-1. Check that data appears in Defender for IoT by opening the sensor and selecting an interface.
-<!-- is this last point correct?-->
+1. Check that your sensor is listed and the status is *connected*. <!-- there is no connected status. ....and the correct sensor version is listed, and the sensor health is healthy ? -->
+1. Check that device data appears by selecting **Device inventory** and then selecting a device.
+<!-- is this last point correct? what would be the correct check?  -->
 <!-- Cat: Add screenshot image of a successful outcome-->
+:::image type="content" source="../media/4-device-inventory.png" alt-text="Screenshot of the Defender for IoT Device inventory page showing recent data from the sensor":::
