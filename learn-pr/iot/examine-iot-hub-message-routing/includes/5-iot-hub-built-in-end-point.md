@@ -25,7 +25,7 @@ By default, messages are routed to the built-in service-facing endpoint (message
   :::column-end:::
 :::row-end:::
 
-Azure IoT Hub allows data retention in the built-in endpoint for a maximum of 7 days. You can set the retention time during creation of your Azure IoT Hub. Data retention time in Azure IoT Hub depends on your Azure IoT hub tier and unit type. In terms of size, the built-in Event Hubs endpoint can retain messages of the maximum message size up to at least 24 hours of quota. For example, for 1 S1 unit Azure IoT Hub provides enough storage to retain at least 400K messages of 4k size each. If your devices are sending smaller messages, they may be retained for longer (up to 7 days) depending on how much storage is consumed. We guarantee retaining the data for the specified retention time as a minimum.
+Azure IoT Hub allows data retention in the built-in endpoint for a maximum of 7 days. You can set the retention time during creation of your Azure IoT Hub. Data retention time in Azure IoT Hub depends on your Azure IoT hub tier and unit type. In terms of size, the built-in Event Hubs endpoint can retain messages of the maximum message size up to at least 24 hours of quota. For example, for 1 S1 unit Azure IoT Hub provides enough storage to retain at least 400 thousand messages of 4k size each. If your devices are sending smaller messages, they may be retained for longer (up to seven days) depending on how much storage is consumed. We guarantee to retain the data for the specified retention time as a minimum.
 
 Azure IoT Hub also enables you to manage consumer groups on the built-in device-to-cloud receive endpoint. You can have up to 20 consumer groups for each Azure IoT Hub.
 
