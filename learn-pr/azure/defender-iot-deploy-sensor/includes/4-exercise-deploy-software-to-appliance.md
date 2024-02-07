@@ -2,38 +2,28 @@ This unit describes how to download the OT monitoring software from the Defender
 
 ## Configure firewall to allow the sensor to connect to Azure
 
-<!--previous module add after download activation file - save a list of all the endpoints-->
+<!-- In the previous module should we add after download activation file - save a list of all the endpoints ? This is important for now. but isnt written anywhere.-->
 
 Configure your firewall rules so that your sensor can access the cloud on port 443, and connect to each of the listed endpoints in the downloaded list.
 <!-- Cat has said to use H2 headings as we did in unit 3. But I used numbering as we did in LM3, as per Batami (i think), I have changed it but I am not sure how this applies to uniformity between modules? THe other difference is there are more steps here? -->
 
 ## Create a virtual machine with ESXi
 
-For this you will need VMware, ESXi 5.5 or later, installed and operational on your sensor.
-
-- <a name="hw"></a>Available hardware resources for your VM as follows:
-
-    | Deployment type | Corporate | Enterprise | SMB |
-    |--|--|--|--|
-    | **Maximum bandwidth** | 2.5 Gb/sec | 800 Mb/sec | 160 Mb/sec |
-    | **Maximum protected devices** | 12,000 | 10,000 | 800 |
-
+For this you will need VMware, ESXi 5.5 or later, installed and operational on your sensor. Defender for IoT also supports other processes, such as using Hyper-V or physical sensors. <!-- keep this or remove?-->
+<!-- I think the next is not important for this
 Details for the following network parameters to use for your sensor appliance:
 
-    - A management network IP address
-    - A sensor subnet mask
-    - An appliance hostname
-    - A DNS address
-    - A default gateway
-    - Any input interfaces
-
+- A management network IP address
+- A sensor subnet mask
+- An appliance hostname
+- A DNS address
+- A default gateway
+- Any input interfaces
+-->
 ## Create a VM for your sensor
 
 This procedure describes how to create a VM for your sensor with VMware ESXi.
-
-<!--Defender for IoT also supports other processes, such as using Hyper-V or physical sensors. For more information, see [Defender for IoT installation](how-to-install-software.md).-->
-
-**To create a VM for your sensor**:
+<!--</appliance-catalog/virtual-sensor-vmware.md>-->
 
 1. Make sure that VMware is running on your machine.
 
@@ -57,9 +47,15 @@ This procedure describes how to create a VM for your sensor with VMware ESXi.
 
 1. Choose the relevant datastore and select **Next**.
 
-1. Change the virtual hardware parameters according to the required specifications for your needs. For more information, see the [table in the Prerequisites](#hw) section above.
+1. Change the virtual hardware parameters to the following specifications:
 
-Your VM is now prepared for your Defender for IoT software installation. You'll continue by installing the software later on in this tutorial, after you've onboarded your sensor in the Azure portal, configured traffic mirroring, and provisioned the machine for cloud management.
+| Type |Memory  | Storage  | CPU Processor |
+|----|-----|---------|----|
+| E | 32MB RAM | 1 TB |  4 Core/ 8 Threads |
+| L | 8MB RAM | 1 TB |  4 Core/ 4 Threads |
+
+Your VM is now prepared for your Defender for IoT software installation. <!--You'll continue by installing the software later on in this tutorial, after you've onboarded your sensor in the Azure portal, configured traffic mirroring, and provisioned the machine for cloud management.-->
+<!--  To place the install section here?? Or can this be done in a different order?-->
 
 ## Configure a SPAN port
 
@@ -99,8 +95,27 @@ This procedure describes how to configure a SPAN port using a workaround with VM
 
 1. Connect to the sensor, and verify that mirroring works.
 
-<!--[!INCLUDE [validate-traffic-mirroring](includes/validate-traffic-mirroring.md)]-->
-<!-- should we keep this link or better to copy the content. ?-->
+## Validate traffic mirroring
+<!-- check if this needs to be done, or can we give them a fake file? -->
+After configuring traffic mirroring, make an attempt to receive a sample of recorded traffic (PCAP file) from the switch SPAN or mirror port.
+
+A sample PCAP file will help you:
+
+- Validate the switch configuration
+- Confirm that the traffic going through your switch is relevant for monitoring
+- Identify the bandwidth and an estimated number of devices detected by the switch
+
+1. Use a network protocol analyzer application, such as *Wireshark*, to record a sample PCAP file for a few minutes. For example, connect a laptop to a port where you've configured traffic monitoring.
+
+1. Check that *Unicast packets* are present in the recording traffic. Unicast traffic is traffic sent from address to another. 
+
+    If most of the traffic is ARP messages, your traffic mirroring configuration isn't correct.
+
+1. Verify that your OT protocols are present in the analyzed traffic.
+
+    For example:
+
+    :::image type="content" source="../media/4-wireshark-validation.png" alt-text="Screenshot of Wireshark validation.":::
 
 ## Install Defender for IoT software
 
@@ -251,7 +266,7 @@ In the **Certificates** tab:
 1. Select **Use Locally generated self-signed certificate (Not recommended)**.
 1. Select the **Confirm** option.
 1. Finally, select **Finish** to complete the initial setup and open the sensor.
-
+<!--<how-to-manage-individual-sensors?branch=pr-en-us-264789&tabs=self-signed#manage-ssltls-certificates> there is extra stage at the end of this tabbed item do we need to add it? -->
 ## Check your work
 
 Verify that your sensor is connected to Azure by checking its connectivity status in Defender for IoT.
