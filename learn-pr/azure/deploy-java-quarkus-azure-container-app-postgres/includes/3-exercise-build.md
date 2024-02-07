@@ -76,7 +76,7 @@ This command creates a new Quarkus project. It generates a Maven directory struc
 
 ## Code the application
 
-Next, create a new `Todo` Java class and add the following Java code. It uses Java Persistence API (`javax.persistence.Entity` package) to store and retrieve data from your PostgreSQL server. It also uses [Hibernate ORM with Panache](https://quarkus.io/guides/hibernate-orm-panache) (inheriting from `io.quarkus.hibernate.orm.panache.PanacheEntity`) to simplify the persistence layer.
+Next, create a new *Todo.java* class file in the same folder as the *TodoResource.java* file. Add the following Java code to the new file. It uses Java Persistence API (`javax.persistence.Entity` package) to store and retrieve data from your PostgreSQL server. It also uses [Hibernate ORM with Panache](https://quarkus.io/guides/hibernate-orm-panache) (inheriting from `io.quarkus.hibernate.orm.panache.PanacheEntity`) to simplify the persistence layer.
 
 You use a JPA entity (`@Entity`) to map the Java `Todo` object directly to the PostgreSQL `Todo` table. The `TodoResource` REST endpoint then creates a new `Todo` entity class and persists it. This class is a domain model that's mapped on the `Todo` table. The table is automatically created by JPA.
 
@@ -285,7 +285,7 @@ When you test the application, Docker Desktop needs to be running because Quarku
 ./mvnw clean test
 ```
 
-You should see the following output:
+You should see output that looks similar to this:
 
 ```shell
 [INFO] -------------------------------------------------------
