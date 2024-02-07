@@ -2918,3 +2918,13 @@ achievements:
   title: Implement storage security
   summary: Ensure your data is stored, transferred, and accessed in a secure way using Azure storage and file security features.
   iconUrl: /training/achievements/storage-security.svg
+- uid: learn.wwl.create-clustering-model-azure-machine-learning-designer.badge
+  type: badge
+  title: Create a clustering model with Azure Machine Learning designer
+  summary: Clustering is an unsupervised machine learning technique used to group similar entities based on their features. Learn how to create clustering models using Azure Machine Learning designer.
+  iconUrl: /training/achievements/create-clustering-model-azure-machine-learning-designer.svg
+- uid: learn.wwl.use-automated-machine-learning.badge
+  type: badge
+  title: Use Automated Machine Learning in Azure Machine Learning
+  summary: Training a machine learning model is an iterative process that requires time and compute resources. Automated machine learning can help make it easier.
+  iconUrl: /training/achievements/use-automated-machine-learning.svg
