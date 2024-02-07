@@ -15,8 +15,8 @@ summary: |
     - Practice getting started with each remote development offering.
     - Discover tips for personalizing your own remote development workflow.
 prerequisites: |
-  - Basic familiarity with the Visual Studio Code editor
-  - Basic knowledge of software development, such as what it means to edit and run code
+  - Basic familiarity with the Visual Studio Code editor, such as knowing how to install extensions
+  - Basic knowledge of software development, such as editing and running code and working with source control providers like GitHub
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
