@@ -100,7 +100,7 @@ quarkus.datasource.jdbc.url=<the POSTGRES_CONNECTION_STRING_SSL value>
 Use this command to run the application locally: 
 
 ```shell
-mvnw.cmd clean quarkus:dev
+./mvnw clean quarkus:dev
 ```
 
 When Quarkus is running, create a few to-dos by using the following cURL commands in a separate terminal window:

@@ -34,7 +34,7 @@ ENV JAVA_APP_JAR="/deployments/quarkus-run.jar"
 This Dockerfile expects the Quarkus application to be packaged as a *quarkus-run.jar* file. This name is the default name for the Quarkus application when it's packaged as a JAR file. You need to make sure that the Quarkus application is packaged as a JAR file. To do so, run the following Maven command:
 
 ```bash
-mvnw.cmd package
+./mvnw package
 ```
 
 This command packages the Quarkus application into a JAR file and generates a *quarkus-run.jar* file in the *target/quarkus-app* folder.
