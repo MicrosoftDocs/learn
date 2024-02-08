@@ -10,7 +10,7 @@ metadata:
   ms.service: security-copilot
 title: Describe the core features of Microsoft Security Copilot
 summary: |
-  Microsoft Security Copilot has a rich set of features.  Learn about available plugins that enable integration with various data sources, promptbooks, the ways you can export and share information from Security Copilot, and much more.
+  Microsoft Security Copilot has a rich set of features. Learn about available plugins, promptbooks, the ways you can export and share information from Security Copilot, and much more.
   [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   By the end of this module, you'll be able to:
