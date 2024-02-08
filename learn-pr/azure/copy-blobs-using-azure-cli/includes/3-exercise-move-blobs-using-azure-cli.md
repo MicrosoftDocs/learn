@@ -2,7 +2,7 @@ Use the Azure CLI to move blobs from one storage account to another. You can per
 
 In the example scenario, you want to move blobs that contain the details for product specifications, and that are more than six months old, to an archive store in a separate Blob Storage account. You can use a *Cool* storage account for this purpose; it's more cost effective for holding rarely accessed files than keeping them in *Hot* storage.
 
-In this exercise, you'll use the Azure CLI to migrate blobs that haven't changed in the last six months to a separate storage account.
+In this exercise, you use the Azure CLI to migrate blobs that haven't changed in the last six months to a separate storage account.
 
 ## Create and add data to hot storage
 
@@ -68,7 +68,7 @@ In this exercise, you'll use the Azure CLI to migrate blobs that haven't changed
       --account-key $HOT_KEY
     ```
 
-1. Verify that the blobs have been created.
+1. Verify that the blobs were created.
 
     ```azurecli
     az storage blob list \
@@ -80,95 +80,95 @@ In this exercise, you'll use the Azure CLI to migrate blobs that haven't changed
 
 ## Create a cool storage account
 
-Now we'll create a second storage account and move data between accounts.
+Now we create a second storage account and move data between accounts.
 
 1. Create an environment variable for your cool storage account name.
 
-    ```azurecli
-    COOL_STORAGE_NAME=coolstorage$RANDOM
-    ```
+  ```azurecli
+  COOL_STORAGE_NAME=coolstorage$RANDOM
+  ```
 
 1. Create a storage account for holding the archived blobs. Use the **Cool** access tier. As before, specify an appropriate region, and choose a unique name for your storage account.
 
-    ```azurecli
-    az storage account create \
-      --location $LOCATION \
-      --name $COOL_STORAGE_NAME \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
-      --sku Standard_RAGRS \
-      --kind BlobStorage \
-      --access-tier Cool
-    ```
+  ```azurecli
+  az storage account create \
+    --location $LOCATION \
+    --name $COOL_STORAGE_NAME \
+    --resource-group <rgn>[Sandbox resource group]</rgn> \
+    --sku Standard_RAGRS \
+    --kind BlobStorage \
+    --access-tier Cool
+  ```
 
 1. Obtain the keys for your storage account.
 
-    ```azurecli
-    az storage account keys list \
-      --account-name $COOL_STORAGE_NAME \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
-      --output table
-    ```
+  ```azurecli
+  az storage account keys list \
+    --account-name $COOL_STORAGE_NAME \
+    --resource-group <rgn>[Sandbox resource group]</rgn> \
+    --output table
+  ```
 
 1. Create an environment variable for the cool account key; use the value of the first key retrieved by the previous command:
 
-    ```bash
-    COOL_KEY="<source account key>"
-    ```
+  ```bash
+  COOL_KEY="<source account key>"
+  ```
 
-1. Create a container named *archived-specifications* in your storage account. Provide the name of the destination storage account and key as parameters to this command; otherwise, the container will be created in the source storage account.
+1. Create a container named *archived-specifications* in your storage account. Provide the name of the destination storage account and key as parameters to this command. Otherwise, the container is created in the source storage account.
 
-    ```azurecli
-    az storage container create \
-      --name archived-specifications \
-      --account-name $COOL_STORAGE_NAME \
-      --account-key $COOL_KEY
-    ```
+  ```azurecli
+  az storage container create \
+    --name archived-specifications \
+    --account-name $COOL_STORAGE_NAME \
+    --account-key $COOL_KEY
+  ```
 
 1. Verify that the destination container is empty. The following command shouldn't display any output.
 
-    ```azurecli
-    az storage blob list \
-      --container-name archived-specifications \
-      --account-name $COOL_STORAGE_NAME \
-      --account-key $COOL_KEY \
-      --output table
-    ```
+  ```azurecli
+  az storage blob list \
+    --container-name archived-specifications \
+    --account-name $COOL_STORAGE_NAME \
+    --account-key $COOL_KEY \
+    --output table
+  ```
 
 ## Copy blobs to cool storage
 
-1. Batch-copy the blobs from the specifications container in the source storage account to the archived-specifications container in the destination storage account. Use the `--dryrun` flag to see which blobs will be copied, without actually copying them.
+1. Batch-copy the blobs from the specifications container in the source storage account, to the archived-specifications container in the destination storage account. Use the `--dryrun` flag to see which blobs will be copied, without actually copying them.
 
-    ```azurecli
-    az storage blob copy start-batch \
-      --destination-container archived-specifications \
-      --account-name $COOL_STORAGE_NAME \
-      --account-key $COOL_KEY \
-      --source-account-name "$HOT_STORAGE_NAME" \
-      --source-account-key $HOT_KEY \
-      --source-container specifications \
-      --dryrun
-    ```
+  ```azurecli
+  az storage blob copy start-batch \
+    --destination-container archived-specifications \
+    --account-name $COOL_STORAGE_NAME \
+    --account-key $COOL_KEY \
+    --source-account-name "$HOT_STORAGE_NAME" \
+    --source-account-key $HOT_KEY \
+    --source-container specifications \
+    --dryrun
+  ```
 
 1. Review the list of blobs to copy.
 
-1. Repeat the blob copy command, this time without the `--dryrun` parameter used in the previous step. This time, the blobs will be copied.
+1. Repeat the blob copy command, this time without the `--dryrun` parameter used in the previous step. This time, the blobs are copied.
 
-    ```azurecli
-    az storage blob copy start-batch \
-      --destination-container archived-specifications \
-      --account-name $COOL_STORAGE_NAME \
-      --account-key $COOL_KEY \
-      --source-account-name "$HOT_STORAGE_NAME" \
-      --source-account-key $HOT_KEY \
-      --source-container specifications
-    ```
+  ```azurecli
+  az storage blob copy start-batch \
+    --destination-container archived-specifications \
+    --account-name $COOL_STORAGE_NAME \
+    --account-key $COOL_KEY \
+    --source-account-name "$HOT_STORAGE_NAME" \
+    --source-account-key $HOT_KEY \
+    --source-container specifications
+  ```
 
-1. Run the following command and verify that the blobs have been copied to the destination container.
+1. Run the following command and verify that the blobs were copied to the destination container.
 
-    ```azurecli
-    az storage blob list \
-      --container-name archived-specifications \
-      --account-name $COOL_STORAGE_NAME \
-      --account-key $COOL_KEY \
-      --output table
-    ```
+  ```azurecli
+  az storage blob list \
+    --container-name archived-specifications \
+    --account-name $COOL_STORAGE_NAME \
+    --account-key $COOL_KEY \
+    --output table
+  ```
