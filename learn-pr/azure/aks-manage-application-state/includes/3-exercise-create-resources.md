@@ -2,8 +2,6 @@ Now that we've reviewed the basic concepts of external states and how to deal wi
 
 ## Create a resource group
 
-> [!NOTE]
-> The Learn sandbox system that enables you to complete these modules without using your own subscription is currently down for maintenance. This module can still be completed using a subscription you own, but please be aware that the steps might skip some instructions necessary for you to deploy, such as logging into your subscription or cleaning up the deployment at the end of the module.
 
 1. Sign into [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your own subscription.
 2. Open the Cloud Shell and select **Bash**.
@@ -82,7 +80,9 @@ Now that you've created an external state to store all the data from the ship ma
 
     The creation process can take a few moments to complete.
 
-3. Download the kubectl configuration using the `az aks get-credentials` command.
+    [!include[](../../../includes/aks-region-quota.md)]
+
+4. Download the kubectl configuration using the `az aks get-credentials` command.
 
    ```azurecli-interactive
    az aks get-credentials --name $AKS_CLUSTER_NAME --resource-group $RESOURCE_GROUP
@@ -97,7 +97,7 @@ Now that you've created an external state to store all the data from the ship ma
 
    Enter `y` to overwrite.
 
-4. Test the configuration using the `kubectl get nodes` command.
+5. Test the configuration using the `kubectl get nodes` command.
 
     ```azurecli-interactive
     kubectl get nodes
