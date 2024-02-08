@@ -1,4 +1,4 @@
-:::image type="content" source="../media/17. SummaryRemoteCoder.jpg" alt-text="Man Working Image":::
+:::image type="content" source="../media/17. SummaryRemoteCoder.jpg" alt-text="Screenshot of Man Working.":::
 
 In this module, we have learned some important aspects of using the VS Code Remote - Tunnels extension.   
 
