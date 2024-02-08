@@ -2,6 +2,7 @@ Now that we've reviewed the basic concepts of external states and how to deal wi
 
 ## Create a resource group
 
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 1. Sign into [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your own subscription.
 2. Open the Cloud Shell and select **Bash**.
