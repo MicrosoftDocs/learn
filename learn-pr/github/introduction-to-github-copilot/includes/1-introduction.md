@@ -10,7 +10,7 @@ By the end of this module, you'll:
 
 - Explain what GitHub Copilot is and the advantages it provides.
 - Understand the availability of GitHub Copilot Individual, Business, and Enterprise.
-- Discuss the future of GitHub Copilot with Copilot X.
+- Discuss the future of GitHub Copilot.
 - Learn how to get started using GitHub Copilot and some common configurations.
 - Develop using GitHub Copilot with Visual Studio Code using hands-on exercises.
 
