@@ -1,14 +1,13 @@
-This unit describes how to download the OT monitoring software from the Defender for IoT site. Then upload the software to a virtual machine and start the application on the sensor. Afterwards, configure the network settings so that the sensor can connect with the Azure portal. Finally, assign the end point interfaces, activate the sensor and set up the security certificates.
+This unit describes how to download the OT monitoring software from the Defender for IoT in the Azure portal. Then set up a virtual machine and connect it to a device/ interface. Then upload the monitoring software to the sensor. Afterwards, configure the network settings so that the sensor connects with the Azure portal. Finally, assign the end point interfaces, activate the sensor and set up the security certificates.
 <!-- check all inmages for compliance - may need to redo them or edit -->
-## Configure firewall to allow the sensor to connect to Azure
+## Configure firewall to allow the sensor to connect to Azure Portal
 
 Configure your firewall rules so that your sensor can access the cloud on port 443, and connect to each of the listed endpoints in the downloaded list.
 <!-- can i see a demo file, also what are the instructions for this? Who to ask?-->
-<!-- Cat has said to use H2 headings as we did in unit 3. But I used numbering as we did in LM3, as per Batami (i think), I have changed it but I am not sure how this applies to uniformity between modules? -->
 
 ## Create a virtual machine with ESXi
 
-For this you will need VMware, ESXi 5.5 or later, installed and operational on your sensor. Defender for IoT also supports other processes, such as using Hyper-V or physical sensors. <!-- keep this or remove?-->
+To perform this procedure, VMware, ESXi 5.5 or later must be installed and operational on your ??sensor??. Defender for IoT also supports other processes, such as using Hyper-V or physical sensors. <!-- keep this or remove?-->
 <!-- I think the next is not important for this
 Details for the following network parameters to use for your sensor appliance:
 
@@ -19,13 +18,10 @@ Details for the following network parameters to use for your sensor appliance:
 - A default gateway
 - Any input interfaces
 -->
-### Create a VM for your sensor
-
-This procedure describes how to create a VM for your sensor with VMware ESXi.
 
 1. Make sure that VMware is running on your machine.
 
-1. Sign in to the ESXi, choose the relevant **datastore**, and select **Datastore Browser**.
+1. Sign in to <!-- removed the-->ESXi, choose the relevant **datastore**, and select **Datastore Browser**.
 
 1. **Upload** the image and select **Close**.
 
@@ -52,13 +48,11 @@ This procedure describes how to create a VM for your sensor with VMware ESXi.
 | E | 32MB RAM | 1 TB |  4 Core/ 8 Threads |
 | L | 8MB RAM | 1 TB |  4 Core/ 4 Threads |
 
-Your VM is now prepared for your Defender for IoT software installation. However, first you need to configure traffic mirroring.
+Your VM is now prepared for the Defender for IoT software installation. Next you configure the traffic mirroring.
 
 ### Configure a SPAN port
 
-Virtual switches don't have mirroring capabilities. However, for the sake of this tutorial you can use *promiscuous mode* in a virtual switch environment to view all network traffic that goes through the virtual switch.
-
-This procedure describes how to configure a SPAN port using a workaround with VMware ESXi.
+Virtual switches don't have mirroring capabilities. However, for the sake of this learn module you can use *promiscuous mode* in a virtual switch environment to view all network traffic that goes through the virtual switch.
 
 > [!NOTE]
 > Promiscuous mode is an operating mode and a security monitoring technique for a VM's interfaces in the same portgroup level as the virtual switch to view the switch's network traffic. Promiscuous mode is disabled by default but can be defined at the virtual switch or portgroup level.
@@ -94,9 +88,9 @@ This procedure describes how to configure a SPAN port using a workaround with VM
 
 ### Validate traffic mirroring
 <!-- check if this needs to be done, or can we give them a fake file?  -->
-After configuring traffic mirroring, make an attempt to receive a sample of recorded traffic (PCAP file) from the switch SPAN or mirror port.
+After configuring traffic mirroring, retreive a PCAP file to receive a sample of recorded traffic (PCAP file) from the switch SPAN or mirror port.
 
-A sample PCAP file will help you:
+A sample PCAP file helps you: <!-- helps you -->
 
 - Validate the switch configuration
 - Confirm that the traffic going through your switch is relevant for monitoring
@@ -113,7 +107,7 @@ A sample PCAP file will help you:
     For example:
 
     :::image type="content" source="../media/4-wireshark-validation.png" alt-text="Screenshot of Wireshark validation.":::
-
+<!-- Consider breaking this unit at this point and making a new one for the next stage -->
 ## Install Defender for IoT software
 
 To start the software installation, open your virtual machine.

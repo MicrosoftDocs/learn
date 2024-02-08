@@ -48,7 +48,7 @@ The **Interface configurations** tab shows each interface on the sensor, which s
 
 Select and enable each interface to be monitored.<!-- might change to numbered list here-->
 If you're unsure which interface to use, select the :::image type="icon" source="../media/3-blink-interface.png" alt-text="blink interface icon"::: Blink physical interface LED button to have the selected port blink on your machine. Select any of the interfaces that are connected to your switch. <!--is this only if you are close to the sensor? How would this work for a cloud sensor?-->
-There are optional, advanced settings for each interface, as follows:
+There are optional, advanced settings for each interface, as follows:<!-- i think this isnt needed if it is a lm path.-->
 
 |Name  |Description  |
 |---------|---------|
