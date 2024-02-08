@@ -1,6 +1,6 @@
 This unit describes how to download the OT monitoring software from the Defender for IoT in the Azure portal. Then set up a virtual machine and connect it to a device/ interface. Then upload the monitoring software to the sensor. Afterwards, configure the network settings so that the sensor connects with the Azure portal. Finally, assign the end point interfaces, activate the sensor and set up the security certificates.
 <!-- check all inmages for compliance - may need to redo them or edit -->
-## Configure firewall to allow the sensor to connect to Azure Portal
+## Configure firewall to allow the sensor to connect to Azure portal
 
 Configure your firewall rules so that your sensor can access the cloud on port 443, and connect to each of the listed endpoints in the downloaded list.
 <!-- can i see a demo file, also what are the instructions for this? Who to ask?-->
@@ -45,8 +45,8 @@ Details for the following network parameters to use for your sensor appliance:
 
 | Type |Memory  | Storage  | CPU Processor |
 |----|-----|---------|----|
-| E | 32MB RAM | 1 TB |  4 Core/ 8 Threads |
-| L | 8MB RAM | 1 TB |  4 Core/ 4 Threads |
+| E | 32 MB RAM | 1 TB |  4 Core/ 8 Threads |
+| L | 8 MB RAM | 1 TB |  4 Core/ 4 Threads |
 
 Your VM is now prepared for the Defender for IoT software installation. Next you configure the traffic mirroring.
 
@@ -70,9 +70,9 @@ Virtual switches don't have mirroring capabilities. However, for the sake of thi
 
 1. Select **Add** to close the vSwitch properties.
 
-1. Highlight the vSwitch you've created, and select **Add uplink**.
+1. Highlight the vSwitch created, and select **Add uplink**.
 
-1. Select the physical NIC you'll use for the SPAN traffic, change the MTU to **4096**, then select **Save**.
+1. Select the physical NIC to use for the SPAN traffic, change the MTU to **4096**, then select **Save**.
 
 1. Open the **Port Group** properties page and select **Add Port Group**.
 
@@ -88,7 +88,7 @@ Virtual switches don't have mirroring capabilities. However, for the sake of thi
 
 ### Validate traffic mirroring
 <!-- check if this needs to be done, or can we give them a fake file?  -->
-After configuring traffic mirroring, retreive a PCAP file to receive a sample of recorded traffic (PCAP file) from the switch SPAN or mirror port.
+After you configure the traffic mirroring, retrieve a PCAP file to receive a sample of recorded traffic (PCAP file) from the switch SPAN or mirror port.
 
 A sample PCAP file helps you: <!-- helps you -->
 
@@ -243,7 +243,7 @@ In the **Interface Configurations** tab:
 
 ### Upload activation file
 
-The activation tab is the section to upload the activation file recieved from the Deployment team.
+The activation tab is the section to upload the activation file received from the Deployment team.
 
 After rebooting, the virtual machine opens to the **Defender for IoT | Overview** page. In the **Activation** tab:
 
