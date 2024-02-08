@@ -69,10 +69,10 @@ Let's download the K3s installer and Windows node files to [Azure file share](/a
 1. Download K3s installer, Windows node files and certificates to the Azure file share.
 
     ```azurecli
-    curl -L -o ~/clouddrive/AksEdge-Learn.msi "https://aka.ms/aks-edge/k3s-msi" &
-    curl -L -o ~/clouddrive/AksEdgeWindows-Learn.zip "https://aka.ms/aks-edge/windows-node-zip" &
-    curl -L -o ~/clouddrive/MicrosoftRootCertificateAuthority2011.cer "https://download.microsoft.com/download/2/4/8/248D8A62-FCCD-475C-85E7-6ED59520FC0F/MicrosoftRootCertificateAuthority2011.cer" &
-    curl -L -o ~/clouddrive/MicCodSigPCA2011.crt "https://www.microsoft.com/pkiops/certs/MicCodSigPCA2011_2011-07-08.crt" &
+    curl -L -o ~/clouddrive/MicrosoftRootCertificateAuthority2011.cer "https://download.microsoft.com/download/2/4/8/248D8A62-FCCD-475C-85E7-6ED59520FC0F/MicrosoftRootCertificateAuthority2011.cer" && echo "Downloaded MicrosoftRootCertificateAuthority2011.cer"
+    curl -L -o ~/clouddrive/MicCodSigPCA2011.crt "https://www.microsoft.com/pkiops/certs/MicCodSigPCA2011_2011-07-08.crt" && echo "Downloaded MicCodSigPCA2011.crt"
+    curl -L -o ~/clouddrive/AksEdge-Learn.msi "https://aka.ms/aks-edge/k3s-msi" && echo "Downloaded AksEdge-Learn.msi"
+    curl -L -o ~/clouddrive/AksEdgeWindows-Learn.zip "https://aka.ms/aks-edge/windows-node-zip" && echo "Downloaded AksEdgeWindows-Learn.zip"
     ```
 
 1. Create the RDP file to connect to the VM:
