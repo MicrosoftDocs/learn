@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-devops.summary
+title: 'Summary'
+metadata:
+  title: 'Summary'
+  description: "In this module, you have learned about DevOps and its role in addressing the challenges associated with traditional application lifecycle."
+  ms.date: 02/05/2024
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]
