@@ -8,7 +8,6 @@ metadata:
   author: kostinams
   ms.author: irkostin
   ms.topic: interactive-tutorial
-  ms.prod:  learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/3-multi-tenant-model.md)]
