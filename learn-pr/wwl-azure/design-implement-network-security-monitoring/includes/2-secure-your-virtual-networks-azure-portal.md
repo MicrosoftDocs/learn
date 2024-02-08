@@ -147,13 +147,13 @@ The regulatory compliance dashboard shows the status of all the assessments with
 
 ### Regulatory compliance dashboard
 
-:::image type="content" source="../media/compliance-dashboard-799a65d6.png" alt-text="Microsoft Defender for Cloud regulatory compliance dashboard"lightbox="../media/compliance-dashboard-799a65d6.png":::
+:::image type="content" source="../media/compliance-dashboard-799a65d6.png" alt-text="Screenshot showing Microsoft Defender for Cloud regulatory compliance dashboard."lightbox="../media/compliance-dashboard-799a65d6.png":::
 
 The dashboard shows an overview of your compliance status with the set of supported compliance regulations. You will see your overall compliance score, and the number of passing vs. failing assessments associated with each standard.
 
 ### Compliance controls
 
-:::image type="content" source="../media/compliance-drilldown-a608a403.png" alt-text="Regulatory compliance dashboard with drilldown to compliance controls":::
+:::image type="content" source="../media/compliance-drilldown-a608a403.png" alt-text="Screenshot showing the regulatory compliance dashboard with drilldown to compliance controls.":::
 
 1. Subscriptions the standard is applied on.
 1. List of all controls for that standard.
@@ -166,7 +166,7 @@ Some controls are grayed out. These controls do not have any Microsoft Defender 
 
 To generate a PDF report with a summary of your current compliance status for a particular standard, select Download report.
 
-:::image type="content" source="../media/download-report-e839f272.png" alt-text="Download regulatory compliance report."lightbox="../media/download-report-e839f272.png":::
+:::image type="content" source="../media/download-report-e839f272.png" alt-text="Screenshot showing the download regulatory compliance report."lightbox="../media/download-report-e839f272.png":::
 
 The report provides a high-level summary of your compliance status for the selected standard based on Microsoft Defender for Cloud assessments data. The report is organized according to the controls of that standard. The report can be shared with relevant stakeholders and might provide evidence to internal and external auditors.
 
@@ -178,15 +178,15 @@ Microsoft Defender for Cloud automatically collects, analyzes, and integrates lo
 
 The Microsoft Defender for Cloud overview page shows the Security alerts tile at the top of the page, and as a link from the sidebar.
 
-:::image type="content" source="../media/overview-page-alerts-links-a54c327f.png" alt-text="Microsoft Defender for Cloud overview page shows the Security alerts tile" lightbox="../media/overview-page-alerts-links-a54c327f.png":::
+:::image type="content" source="../media/overview-page-alerts-links-a54c327f.png" alt-text="Screenshot that shows Microsoft Defender for Cloud overview page and the Security alerts tile." lightbox="../media/overview-page-alerts-links-a54c327f.png":::
 
 The security alerts page shows the active alerts. You can sort the list by Severity, Alert title, Affected resource, Activity start time. MITRE ATTACK tactics, and status.
 
-:::image type="content" source="../media/alerts-page-9ba7adc1.png" alt-text="Active security alerts list.":::
+:::image type="content" source="../media/alerts-page-9ba7adc1.png" alt-text="Screenshot of the Active security alerts list.":::
 
 To filter the alerts list, select any of the relevant filters. You can add further filters with the Add filter option.
 
-:::image type="content" source="../media/alerts-adding-filters-large-356ce4df.png" alt-text="Adding filters to the alerts view.":::
+:::image type="content" source="../media/alerts-adding-filters-large-356ce4df.png" alt-text="Screenshot of adding filters to the alerts view.":::
 
 
 The list updates according to the filtering options you have selected. Filtering can be very helpful. For example, you might want to address security alerts that occurred in the last 24 hours because you are investigating a potential breach in the system.
@@ -195,11 +195,11 @@ The list updates according to the filtering options you have selected. Filtering
 
 From the Security alerts list, select an alert. A side pane opens and shows a description of the alert and all the affected resources.
 
-:::image type="content" source="../media/alerts-details-pane-e9de3d97.png" alt-text="Mini details view of a security alert.":::
+:::image type="content" source="../media/alerts-details-pane-e9de3d97.png" alt-text="Screenshot showing the mini details view of a security alert.":::
 
 View full details displays further information, as shown in the following image:
 
-:::image type="content" source="../media/alert-take-action-834bdd16.png" alt-text="Full details view of a security alert and take action pane.":::
+:::image type="content" source="../media/alert-take-action-834bdd16.png" alt-text="Screenshot showing the full details view of a security alert and take action pane.":::
 
 The left pane of the security alert page shows high-level information regarding the security alert: title, severity, status, activity time, description of the suspicious activity, and the affected resource. Alongside the affected resource are the Azure tags relevant to the resource. Use these to infer the organizational context of the resource when investigating the alert.
 
@@ -207,7 +207,7 @@ The right pane includes the Alert details tab containing further details of the 
 
 Also in the right pane is the Take action tab. Use this tab to take further actions regarding the security alert. Actions such as:
 
-- **Mitigate the threat:** Provides manual remediation steps for this security alert
-- **Prevent future attacks:** Provides security recommendations to help reduce the attack surface, increase security posture, and thus prevent future attacks
-- **Trigger automated response:** Provides the option to trigger a logic app as a response to this security alert
-- **Suppress similar alerts:** Provides the option to suppress future alerts with similar characteristics if the alert isn’t relevant for your organization
+- **Mitigate the threat:** Provides manual remediation steps for this security alert.
+- **Prevent future attacks:** Provides security recommendations to help reduce the attack surface, increase security posture, and thus prevent future attacks.
+- **Trigger automated response:** Provides the option to trigger a logic app as a response to this security alert.
+- **Suppress similar alerts:** Provides the option to suppress future alerts with similar characteristics if the alert isn’t relevant for your organization.
