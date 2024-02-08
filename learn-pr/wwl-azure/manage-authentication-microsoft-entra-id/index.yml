@@ -7,6 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
+  ms.custom:
+  - N/A
   ms.service: azure
 title: Manage authentication by using Microsoft Entra ID
 summary: This module is designed to provide administrators with the knowledge and skills needed to manage authentication effectively using Microsoft Entra ID, ensuring secure access to resources and enhancing user experience.

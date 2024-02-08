@@ -8,6 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/11-knowledge-check.md)]
@@ -18,7 +20,7 @@ quiz:
     choices:
     - content: "To download a new password policy from Microsoft Entra ID."
       isCorrect: false
-      explanation: "Incorrect. The DC Agent service initiates the download of a new password policy from Microsoft Entra ID, but this is not its main responsibility."
+      explanation: "Incorrect. The DC Agent service initiates the download of a new password policy from Microsoft Entra ID, but this isn't its main responsibility."
     - content: "To create a serviceConnectionPoint object in Microsoft Entra ID."
       isCorrect: false
       explanation: "Incorrect. This is the responsibility of both the Microsoft Entra Password Protection Proxy service and the DC Agent service."
@@ -60,7 +62,7 @@ quiz:
       explanation: "Correct. The purpose of using Microsoft Entra Verified ID service for verification is to unlock privileges to subjects that possess verified credential expert cards."
   - content: "A company is planning to deploy SSO with their applications in Microsoft Entra ID. They need to consider administrative roles, certificate renewal, communication, and licensing. Which of the following is true about the SAML application certificate?"
     choices:
-    - content: "The certificate cannot be customized."
+    - content: "The certificate can't be customized."
       isCorrect: false
       explanation: "Incorrect. The certificate can be customized for expiration date if needed."
     - content: "The certificate is valid for one year by default."
@@ -68,4 +70,4 @@ quiz:
       explanation: "Incorrect. The certificate is valid for three years by default."
     - content: "The certificate needs to be renewed prior to its expiration, and the expiration date can be customized in the Microsoft Entra admin center."
       isCorrect: true
-      explanation: "Correct. It is important to have processes in place to renew certificates prior to their expiration, and to identify the right roles and email distribution lists involved with managing the lifecycle of the signing certificate. The certificate duration can be changed in the Microsoft Entra admin center."
+      explanation: "Correct. It's important to have processes in place to renew certificates prior to their expiration, and to identify the right roles and email distribution lists involved with managing the lifecycle of the signing certificate. The certificate duration can be changed in the Microsoft Entra admin center."
