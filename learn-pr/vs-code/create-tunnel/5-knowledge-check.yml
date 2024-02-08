@@ -3,7 +3,7 @@ uid: learn.create-tunnel.5-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Test your knowledge of tunneling in VS Code
+  description: Test your knowledge of tunneling in Visual Studio Code (VS Code).
   ms.date: 12/15/2023
   author: theReynald
   ms.author: radolphe
@@ -29,7 +29,7 @@ quiz:
       choices:
         - content: vscode.dev/tunnel/<folder_name>/<machine_name>
           isCorrect: true
-          explanation: Correct. This answer shows the right format. The others do not work.
+          explanation: Correct. This answer shows the right format. The others don't work.
         - content: vscode.dev/tunnel/<machine_name_folder_name> 
           isCorrect: false
           explanation: This answer is incorrect. 
@@ -38,9 +38,9 @@ quiz:
           explanation: This answer is incorrect. 
     - content: Which statement is most true?
       choices:
-        - content: The Remote - Tunnels extension lets you connect to a remote machine, like a desktop PC or virtual machine (VM), via a secure tunnel. You can connect to that machine from a VS Code client anywhere, without the requirement of SSH. 
+        - content: The Remote - Tunnels extension lets you connect to a remote machine, like a desktop PC, or virtual machine (VM), via a secure tunnel. You can connect to that machine from a VS Code client anywhere, without the requirement of SSH. 
           isCorrect: true
-          explanation: Correct. The tunnels extension connects to either a remote desktop PC or remote virtual machine (VM)
+          explanation: Correct. The tunnels extension connects to either a remote desktop PC or remote virtual machine (VM).
         - content: The Remote - Tunnels extension lets you connect to a desktop PC but not a virtual machine (VM), via a secure tunnel. 
           isCorrect: false
           explanation: Incorrect. Tunnels extension lets you connect to both either remote machine, desktop PC or virtual. 

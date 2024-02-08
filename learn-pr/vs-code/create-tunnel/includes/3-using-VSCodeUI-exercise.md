@@ -1,4 +1,4 @@
-In this exercise, we enable Remote - Tunnels access using the VS Code UI.  
+In this exercise, we enable Remote - Tunnels access using the Visual Studio Code UI.  
 
 
 ## Using the VS Code UI
@@ -16,7 +16,7 @@ In this exercise, we enable Remote - Tunnels access using the VS Code UI.
     :::image type="content" source="../media/12. ExtensionMarketPlace.png" alt-text="Screenshot of Remote - Tunnels search in extension market place.":::
 
 3. Restart VS Code if prompted to.
-4. Click on the VS Code Account image, and select the option to "Turn on Remote Tunnel Access..." as demonstrated in the image below.
+4. Click on the VS Code Account image, and select the option to "Turn on Remote Tunnel Access..." as demonstrated.
     
     :::image type="content" source="../media/6. account.png" alt-text="Screenshot of accounts.":::
 
@@ -24,7 +24,7 @@ In this exercise, we enable Remote - Tunnels access using the VS Code UI.
     
     :::image type="content" source="../media/5. turnOnForSession.png" alt-text="Screenshot of turn on for this session prompt.":::
 
-6. You are prompted to log in.
+6. You're prompted to log in.
     
     :::image type="content" source="../media/19 SignInGitHub.png" alt-text="Screenshot of prompt to sign in.":::
 
@@ -44,6 +44,6 @@ In this exercise, we enable Remote - Tunnels access using the VS Code UI.
     
     :::image type="content" source="../media/22. ClientView_UI.png" alt-text="Screenshot of client view.":::
 
-When you visit <a href="http://vscode.dev" target="_blank">vscode.dev</a>, you access a lightweight version of VS Code running fully in the browser, known as VS Code for the web (or vscode.dev). This allows you to open a folder on your local machine and start coding without any installation. Official docs can be found <a href="http://vscode.dev" target="_blank">here for vscode.dev</a>.
+When you visit <a href="http://vscode.dev" target="_blank">vscode.dev</a>, you access a lightweight version of VS Code running fully in the browser, known as VS Code for the web (or vscode.dev). This step allows you to open a folder on your local machine and start coding without any installation. Official docs can be found <a href="http://vscode.dev" target="_blank">here for vscode.dev</a>.
 
-*Note: The remote machine is only reachable through a tunnel while VS Code is running there. Once you exit VS Code, tunneling to it will not be possible until you start VS Code there again or run the code tunnel CLI command.*
+*Note: The remote machine is only reachable through a tunnel while VS Code is running there. Once you exit VS Code, tunneling to it won't be possible until you start VS Code there again or run the code tunnel CLI command.*

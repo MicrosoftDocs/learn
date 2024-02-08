@@ -2,7 +2,7 @@ In this exercise, you learn how to:
 
 1. Create and use a tunnel through the [code CLI](https://code.visualstudio.com/docs/editor/command-line). 
 1. Install the code CLI on a remote machine you intend to work on.
-1. Establish a tunnel between a VS Code client and your remote machine using the code CLI.
+1. Establish a tunnel between a Visual Studio Code (VS Code) client and your remote machine using the code CLI.
 
 There are two options to obtain the code CLI: either from the VS Code download page or through the command prompt.
 
@@ -19,7 +19,7 @@ There are two options to obtain the code CLI: either from the VS Code download p
     
      :::image type="content" source="../media/13. compressed_code.png" alt-text="Screenshot of compressed file.":::
 
-    b. Double-click the file to extract it to the TestCLI directory, and you will see the code file.
+    b. Double-click the file to extract it to the TestCLI directory, and you see the code file.
     
     :::image type="content" source="../media/14. uncompressed_code.png" alt-text="Screenshot of extracted code file.":::
 
@@ -27,7 +27,7 @@ There are two options to obtain the code CLI: either from the VS Code download p
 1. From the terminal, navigate to the TestCLI directory.
 
 ### Install and unpack the code CLI through the terminal
-If you don't have access to a UI or the VS Code download page, you can use the terminal to install the code CLI. Assuming you have already created the TestCLI folder, use the following commands to install the code CLI from within the TestCLI directory in the terminal.
+If you don't have access to a UI or the VS Code download page, you can use the terminal to install the code CLI. Assuming you created the TestCLI folder, use the following commands to install the code CLI from within the TestCLI directory in the terminal.
 
 From the TestCLI directory in the terminal, run the following command:
 
@@ -45,17 +45,17 @@ tar -xf vscode_cli.tar.gz
 code tunnel --accept-server-license-terms
 ```
 
-2. Copy/save the provided link and code as shown below.
+2. Copy/save the provided link and code.
     
-    :::image type="content" source="../media/23. TunnelLink.png" alt-text="Screenshot of link to login on client with code.":::
+    :::image type="content" source="../media/23. TunnelLink.png" alt-text="Screenshot of link to log in on client with code.":::
 
-3. On your client, open the previously saved link in a web browser and enter the code that was provided in the terminal (note: your code will be different) & click continue to activate.
+3. On your client, open the previously saved link in a web browser and enter the code that was provided in the terminal (note: your code is different) & click continue to activate.
     
     :::image type="content" source="../media/1. signIn.png" alt-text="Screenshot of device activation page.":::
 
 4. Click continue to authenticate.
     
-    :::image type="content" source="../media/27. SignIn-BeforeAuth.png" alt-text="Screenshot of single sign on page.":::
+    :::image type="content" source="../media/27. SignIn-BeforeAuth.png" alt-text="Screenshot of single sign-on page.":::
 
 5. Then, click the authorize button.
     
@@ -76,9 +76,9 @@ This process authenticates you to the tunneling service, ensuring you have acces
 8. Click "Allow" to give the 'Remote - Tunnels' extension permission to sign in.
     
     :::image type="content" source="../media/25. RemoteAsksPermission.png" alt-text="Screenshot of Remote - Tunnels extension permission to sign in.":::
-9. Click "Yes, I trust the authors" to give access to the folder.
+9. Click "Yes, I trust the author's" to give access to the folder.
     
-    :::image type="content" source="../media/26. Trust.png" alt-text="Screenshot of do you trust the authors prompt.":::
+    :::image type="content" source="../media/26. Trust.png" alt-text="Screenshot of do you trust the author's prompt.":::
 
 10. Begin coding!
     

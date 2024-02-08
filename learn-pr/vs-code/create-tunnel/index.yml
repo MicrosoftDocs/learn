@@ -2,18 +2,18 @@
 uid: learn.create-tunnel
 metadata:
   title: Introduction to Remote - Tunnels extension
-  description: Learn how to enable remote tunnels with VS Code
+  description: Learn how to enable remote tunnels with Visual Studio Code (VS Code).
   ms.date: 12/15/2023
   author: theReynald
   ms.author: radolphe
   ms.topic: interactive-tutorial
   ms.service: vs-code
 title: Introduction to Remote - Tunnels extension
-summary: Enable Remote Tunnel Access with VS Code
+summary: Enable Remote Tunnel Access with VS Code.
 abstract: |
   In this module you will:
-  - Explain what is tunneling & how remote tunnels securely transmit data  
-  - Use Remote - Tunnels extension 
+  - Explain what is tunneling & how remote tunnels securely transmit data.  
+  - Use Remote - Tunnels extension.
 
 iconUrl: /learn/achievements/create-tunnel.svg
 levels:
