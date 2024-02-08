@@ -67,7 +67,7 @@ Deploy a [sample application](https://github.com/Azure-Samples/azure-voting-app-
 
 Deploy a sample ASP.NET Core application based on [Microsoft's sample image](https://hub.docker.com/_/microsoft-dotnet-samples/). See [win-sample-aspnetcore.yaml](https://github.com/Azure/AKS-Edge/blob/main/samples/others/win-sample-aspnetcore.yaml) in the GitHub repo package for the deployment manifest. In the YAML, we specified a `nodeSelector` tag as **windows**.
 
-1. Use the (kubectl apply)(https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply) command to deploy the application:
+1. Use the [kubectl apply](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply) command to deploy the application:
 
     ```powershell
     kubectl apply -f https://raw.githubusercontent.com/Azure/AKS-Edge/main/samples/others/win-sample-aspnetcore.yaml
