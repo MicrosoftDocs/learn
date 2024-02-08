@@ -1,8 +1,8 @@
-Use the Azure CLI to move blobs from one storage account to another. You can perform the move as a batch operation if you have many blobs. Additionally, you can apply the `--if-unmodified-since` parameter if you only want to copy blobs that haven't changed recently.
+Use the Azure CLI to move blobs from one storage account to another. If you have many blobs, you can perform the move as a batch operation. Additionally, you can apply the `--if-unmodified-since` parameter to only copy blobs that aren't recently changed.
 
 In the example scenario, you want to move blobs that contain the details for product specifications, and that are more than six months old, to an archive store in a separate Blob Storage account. You can use a *Cool* storage account for this purpose; it's more cost effective for holding rarely accessed files than keeping them in *Hot* storage.
 
-In this exercise, you use the Azure CLI to migrate blobs that haven't changed in the last six months to a separate storage account.
+In this exercise, you use the Azure CLI to migrate blobs that are unchanged in the last six months to a separate storage account.
 
 ## Create and add data to hot storage
 
@@ -136,7 +136,7 @@ Now we create a second storage account and move data between accounts.
 
 ## Copy blobs to cool storage
 
-1. Batch-copy the blobs from the specifications container in the source storage account, to the archived-specifications container in the destination storage account. Use the `--dryrun` flag to see which blobs will be copied, without actually copying them.
+1. Batch-copy the blobs from the specifications container in the source storage account, to the archived-specifications container in the destination storage account. Use the `--dryrun` flag to see which blobs would be copied, without actually copying them.
 
   ```azurecli
   az storage blob copy start-batch \
