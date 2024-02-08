@@ -391,6 +391,10 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 
 ::: zone-end
 
+<!--
+
 ### Clean up the resources
 
 The sandbox automatically cleans up your resources when you're finished with this module.
+
+-->
