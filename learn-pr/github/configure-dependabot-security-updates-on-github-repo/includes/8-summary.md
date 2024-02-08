@@ -9,9 +9,9 @@ Finally, you learned how to configure your notifications based on how you want t
 Use these links to learn more about the information covered in this module:
 
 - [GitHub Advisory Database](https://github.com/advisories)
-- [About the Dependency graph](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph)
-- [Managing security and analysis settings for your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository#granting-access-to-security-alerts)
-- [Configuring notifications for vulnerable dependencies](https://docs.github.com/en/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/configuring-notifications-for-vulnerable-dependencies)
+- [About the Dependency graph](https://docs.github.com/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph)
+- [Managing security and analysis settings for your repository](https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository#granting-access-to-security-alerts)
+- [Configuring notifications for Dependabot alerts](https://docs.github.com/code-security/dependabot/dependabot-alerts/configuring-notifications-for-dependabot-alerts)
 - [Enabling the dependency graph and Dependabot alerts on your enterprise account](https://docs.github.com/enterprise-server@3.1/admin/configuration/managing-connections-between-your-enterprise-accounts/enabling-the-dependency-graph-and-dependabot-alerts-on-your-enterprise-account)
 - [Connecting your enterprise account to GitHub Enterprise Cloud](https://docs.github.com/enterprise-server@3.1/admin/configuration/managing-connections-between-your-enterprise-accounts/connecting-your-enterprise-account-to-github-enterprise-cloud)
 - [Configuring an outbound web proxy server](https://docs.github.com/en/enterprise-server@3.0/admin/configuration/configuring-network-settings/configuring-an-outbound-web-proxy-server)

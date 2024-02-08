@@ -3,8 +3,8 @@ uid: learn.configure-dependabot-security-updates-on-github-repo
 metadata:
   moduleType: standard
   title: Configure Dependabot security updates on your GitHub repo
-  description: Learn how to configure Dependabot security updates on your GitHub repo.
-  ms.date: 1/5/2022
+  description: In this module, you'll learn how to configure Dependabot security updates on your GitHub repo.
+  ms.date: 02/08/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
@@ -20,10 +20,10 @@ abstract: |
  - Explain how to use GraphQL API to retrieve vulnerability information.
  - Explain how to configure notifications for vulnerable dependencies.
 prerequisites: | 
- - A GitHub account.
- - Administrative access to a repository.
- - Familiarity with managing GitHub administrative settings.
- - Working knowledge of the GitHub pull request workflow.
+ - A GitHub account
+ - Administrative access to a repository
+ - Familiarity with managing GitHub administrative settings
+ - Working knowledge of the GitHub pull request workflow
 iconUrl: /training/achievements/generic-badge.svg
 levels: 
 - intermediate 
