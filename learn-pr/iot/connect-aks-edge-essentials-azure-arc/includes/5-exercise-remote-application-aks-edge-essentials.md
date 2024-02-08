@@ -17,7 +17,7 @@ If you don't have a GitHub account already, [create one now](https://docs.github
 
 ## Deploy the application
 
-In the Azure portal, navigate to your Arc-enabled AKS Edge Essentials cluster and select **GitOps** under **Settings**. We create a cluster-level configuration and a namespace-level configuration.
+In the Azure portal, navigate to your Arc-enabled AKS Edge Essentials cluster and select **GitOps** under **Settings**. Let's create a cluster-level configuration and a namespace-level configuration.
 
 :::image type="content" source="../media/5-aks-edge-essentials-kubernetes-azure-arc-resource-gitops-inline.png" alt-text="Screenshot of AKS Edge Essentials Kubernetes Azure Arc resource in Azure portal, with GitOps highlight." lightbox="../media/5-aks-edge-essentials-kubernetes-azure-arc-resource-gitops-expanded.png":::
 
@@ -155,8 +155,8 @@ We configured GitOps and Flux to watch for changes in the *main* branch of your 
 In the course of this module, you created Azure resources. If you don't expect to need these resources in the future, delete the resource group and Service Principal by running [az group delete](/cli/azure/group#az-group-delete) and [az ad sp delete](/cli/azure/ad/sp#az-ad-sp-delete) commands in Azure Cloud Shell:
 
 ```azurecli
-az group delete --name aksedge-training --force-deletion-types Microsoft.Compute/virtualMachines
-az ad sp delete --id <your-service-principal-ID>
+az group delete --name "aksedge-training" --force-deletion-types Microsoft.Compute/virtualMachines
+az ad sp delete --id "<your-service-principal-ID>"
 ```
 
 > [!IMPORTANT]

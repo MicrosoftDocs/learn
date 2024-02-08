@@ -20,7 +20,7 @@ This unit provides Azure CLI commands that you can run with an Azure subscriptio
     az group create --name $resourcegroup --location $location
     ```
 
-1. Create a new Service Principal with the built-in **Owner** and restricted to the resource group scope. This service principal is used to connect to Azure Arc. Use the [az ad sp create-for-rbac](/cli/azure/ad/sp#az-ad-sp-create-for-rbac) command:
+1. Create a new Service Principal with the built-in **Owner** role and restricted to the resource group scope. This service principal is used to connect to Azure Arc. Use the [az ad sp create-for-rbac](/cli/azure/ad/sp#az-ad-sp-create-for-rbac) command:
 
     ```azurecli
     resourcegroup="aksedge-training"
@@ -48,7 +48,7 @@ This unit provides Azure CLI commands that you can run with an Azure subscriptio
 
 Let's create the Azure VM with Windows 11 Enterprise using Azure Cloud Shell.
 
-1. Execute the following command in the Cloud Shell to set the variables for creating the Azure VM and run the `AksEdgeQuickStart-v2.ps1` PowerShell script:
+1. Execute the following command in the Cloud Shell to set the variables for creating the Azure VM and run the `AksEdgeQuickStart-v2.ps1` PowerShell script later:
 
     ```azurecli
     resourcegroup="aksedge-training"
