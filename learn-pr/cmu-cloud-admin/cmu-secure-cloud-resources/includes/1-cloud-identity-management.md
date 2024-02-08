@@ -18,7 +18,7 @@ Using third-party identity providers to authenticate users offers three advantag
 
 In addition, many identity providers support *multi-factor authentication* (MFA) to make stolen credentials harder to use. An example of MFA at work is when you log into a web site and are prompted to enter an access code sent by SMS to your cell phone. Finally, third-party identity providers frequently implement *Conditional Access*, which erects additional security barriers on the fly if warranted by login history, geographic location, or other factors. This is why you're sometimes prompted for additional information if you log into a web site while you're traveling. The identity provider detects an IP address from which you haven't logged in before and adds an extra layer of security to the authentication process.
 
-**Support for single sign-on (SSO)**: Using 20 user names and passwords to log into 20 different web sites is not only an inconvenience, it's a security issue. Users faced with managing dozens of user names and passwords are more likely to adopt weak security postures, selecting easy-to-guess passwords or using the same password for multiple accounts. One report indicates that the number of accounts users must keep track of doubles every five years -- a phenomenon known as *account sprawl*.<sup>[2][^2]</sup>
+**Support for single sign-on (SSO)**: Using 20 user names and passwords to log into 20 different web sites is not only an inconvenience, it's a security issue. Users faced with managing dozens of user names and passwords are more likely to adopt weak security postures, selecting easy-to-guess passwords or using the same password for multiple accounts. One report indicates that the number of accounts users must keep track of doubles every five years -- a phenomenon known as *account sprawl*.
 
 By contrast, if 20 unrelated web sites allow users to log in with their Microsoft accounts, Google accounts, or Facebook accounts, one set of credentials can be used for all 20 sites. This is known as *single-sign on*. It reduces account sprawl (and therefore enhances security) by reducing the number of credentials users are required to manage.
 
@@ -56,8 +56,4 @@ It is not important to understand how directory services work, the protocols tha
 
 1. _Auth0 (2018). *Adding Salt to Hashing: A Better Way to Store Passwords*. <https://auth0.com/blog/adding-salt-to-hashing-a-better-way-to-store-passwords/>._
 
-1. _Dashlane (2015). *Online Overload – It’s Worse Than You Thought*. <https://blog.dashlane.com/infographic-online-overload-its-worse-than-you-thought/>_
-
 [^1]: <https://auth0.com/blog/adding-salt-to-hashing-a-better-way-to-store-passwords/>  "Auth0 (2018). *Adding Salt to Hashing: A Better Way to Store Passwords*."
-
-[^2]: <https://blog.dashlane.com/infographic-online-overload-its-worse-than-you-thought/>  "Dashlane (2015). *Online Overload – It’s Worse Than You Thought*."

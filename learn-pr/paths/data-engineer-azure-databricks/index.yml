@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.data-engineer-azure-databricks
 metadata:
-  title: Data engineering with Azure Databricks
-  description: Data engineering with Azure Databricks
-  ms.date: 08/29/2022
+  title: Implement a Data Analytics Solution with Azure Databricks
+  description: Implement a Data Analytics Solution with Azure Databricks
+  ms.date: 02/08/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: learning-path
-title: Data engineering with Azure Databricks
+title: Implement a Data Analytics Solution with Azure Databricks
 prerequisites: |
   None
 summary: |

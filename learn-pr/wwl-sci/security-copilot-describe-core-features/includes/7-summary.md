@@ -1,16 +1,11 @@
 
-In this module, you've learned about the core features of Microsoft Security Copilot. You learned about the types of plugins that are available to integrate with various sources to provide guidance specific to your organization's security.
-
-You learned about the standalone experience and the availability of promptbooks that can enhance the effectiveness of security analysts by providing them with a standardized set of prompts that can serve as a framework for conducting investigations and responding to security incidents.
-
-Lastly, you learned how Security Copilot is embedded in Microsoft Defender XDR to enhance incident response and investigation processes for security teams.
+In this module, learned about the core features of Microsoft Security Copilot. These features include promptbooks that provide security analysts a standardized set of prompts that serve as a framework for conducting investigations and responding to security incidents. You learned about the types of plugins that are available and enable integration with various sources, providing domain specific capabilities to aid your investigations.
 
 Now that you completed this module, you can:
 
 - Describe the features available in the standalone Security Copilot experience.
 - Describe the Microsoft plugins available in Security Copilot.
 - Describe the non-Microsoft plugins supported by Security Copilot.
-- Describe the Security Copilot embedded experience of Microsoft Defender XDR.
 
 #### Learn more
 
