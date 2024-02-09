@@ -4,7 +4,7 @@ By creating a new instance of Azure Cosmos DB, you delegated the management of t
 
 ## Clean up resources
 
-[!include[](../../../learn-pr/includes/azure-subscription-cleanup.md)]
+[!include[](../../learn-pr/includes/azure-subscription-cleanup.md)]
 
 1. Navigate to the [Azure portal](https://portal.azure.com?azure-portal=true).
 2. Select **Resource groups** > **rg-ship-manager**.
