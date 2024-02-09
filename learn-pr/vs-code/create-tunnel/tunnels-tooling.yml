@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.create-tunnel.tunnels-tooling
+title: Tunnels & tooling
+metadata:
+  title: Tunnels & tooling
+  description: This page explains the concept tunnels and Visual Studio Code Tunnels extension.
+  author: theReynald
+  ms.author: radolphe
+  ms.date: 12/15/2023
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/tunnels-tooling.md)]
