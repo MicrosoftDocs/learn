@@ -2,7 +2,7 @@
 uid: learn.wwl.security-copilot-and-ai
 metadata:
   title: 'Get started with Microsoft Copilot for Security'
-  description: 'Get started with Microsoft Copilot for Security'
+  description: 'Get started with Microsoft Copilot for Security.'
   ms.date: 01/07/2024
   author: wwlpublish
   ms.author: ceperezb
@@ -11,7 +11,7 @@ title: 'Get started with Microsoft Copilot for Security'
 prerequisites: |
   None
 summary: |
-  Learn about Microsoft Copilot for Security, an AI-powered, cloud-based security analysis tool that enables analysts to process security signals and respond to threats at a machine speed, and the AI concepts upon which it's built.
+  Learn about Microsoft Copilot for Security, an AI-powered security analysis tool that enables analysts to process security signals and respond to threats at a machine speed, and the AI concepts upon which it's built.
 iconUrl: /training/achievements/generic-trophy.svg
 hidden: true
 levels:
@@ -28,6 +28,7 @@ products:
 - intune
 - entra
 - defender-for-threat-intelligence
+- ms-copilot
 subjects:
 - security
 - artificial-intelligence
@@ -37,5 +38,6 @@ modules:
 - learn.wwl.responsible-generative-ai
 - learn-wwl.security-copilot-getting-started
 - learn.security-copilot-describe-core-features
+- learn.security-copilot-embedded-experiences
 trophy:
   uid: earn.wwl.security-copilot-and-ai.trophy
