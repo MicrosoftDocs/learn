@@ -55,7 +55,7 @@ The first step in enforcing compliance with Azure Policy is to assign a policy d
 
 15. **Create a Managed Identity** is automatically checked since this policy definition uses the modify effect. **Permissions** is set to *Contributor* automatically based on the policy definition. For more information, see managed identities and how remediation access control works.<br>
 
-16. Select the **Non-compliancemessages** tab at the top of the wizard.<br>
+16. Select the **Non-compliance messages** tab at the top of the wizard.<br>
 
 17. Set the **Non-compliance message** to *This resource doesn't have the required tag*. This custom message is displayed when a resource is denied or for non-compliant resources during regular evaluation.<br>
 
