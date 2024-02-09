@@ -29,8 +29,7 @@ To summarize Data Loss Prevention alerts using Copilot:
 
     :::image type="content" source="../media/purview-data-loss-prevention-alert-summary.png" lightbox="../media/purview-data-loss-prevention-alert-summary.png" alt-text="Screen capture of the Microsoft Purview DLP alerts page showing the details for a specific alert and the option to get a summary from Security Copilot.":::
 
-1. From the alert summary, you can use the ellipses on the top right of the alert summary to copy the response to
-clipboard, regenerate, or open it in the standalone Security Copilot experience.
+1. From the alert summary, you can use the ellipses on the top right of the alert summary to copy the response to clipboard, regenerate, or transition to the standalone experience by selecting Open in Security Copilot.
 
     :::image type="content" source="../media/purview-data-loss-prevention-alert-summary-ellipses-v4.png" lightbox="../media/purview-data-loss-prevention-alert-summary-ellipses-v4.png" alt-text="Screen capture of the Microsoft Purview DLP alert summary and the options available.  Options include copy to clipboard, regenerate, and open in Security Copilot.":::
 
@@ -83,7 +82,7 @@ Copilot for Security embedded with Microsoft Purview eDiscovery (Premium) suppor
 - Gain contextual summary of evidence collected in eDiscovery review sets.
 - Generate keyword query language from natural language prompt in eDiscovery.
 
-Each of these is described in the section that follows, but before you get started with either scenario, you must be licensed for eDiscovery (Premium) and have the appropriate role permissions.  In addition to the security reader role, as a minimum, for Security Copilot, you must have access to eDiscovery (Premium) cases. To obtain a contextual summary for an item in a review set, the Purview Review role is required.  To generate a search query, you must have the Purview Compliance Search role.
+Each of these is described in the section that follows, but before you get started with either scenario, you must be licensed for eDiscovery (Premium) and have the appropriate role permissions.  In addition to the security reader role, as a minimum, for Copilot, you must have access to eDiscovery (Premium) cases. To obtain a contextual summary for an item in a review set, the Purview Review role is required.  To generate a search query, you must have the Purview Compliance Search role.
 
 #### Gain contextual summary of evidence collected in eDiscovery review sets
 
