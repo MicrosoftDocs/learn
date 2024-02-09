@@ -12,40 +12,40 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "Suppose that you want to use VS Code to work on a project within a Docker container on a remote VM? In addition to the Remote - SSH extension, what other items do you need?"
+  - content: "Suppose that you want to use VS Code to work on a project within a Docker container on a remote VM. In addition to the Remote - SSH extension, what items do you need?"
     choices:
     - content: "Dev Containers extension"
       isCorrect: false
       explanation: "The Dev Containers extension is required, but you need more than just the Dev Containers extension."
     - content: "Dev Containers Extension and Docker installed on the VM"
       isCorrect: true
-      explanation: "You can work in a Docker container on a remote VM using the Remote - SSH extension and the Dev Containers extension. You also need Docker installed on the VM."
+      explanation: "You can work in a Docker container on a remote VM by using the Remote - SSH extension and the Dev Containers extension. You also need Docker installed on the VM."
     - content: "Docker installed on the VM"
       isCorrect: false
       explanation: "Docker must be installed on the VM, but you need more than Docker."
   - content: "You want to create a custom VS Code configuration that you can share with others. What should you do?"
     choices:
-      - content: "Configure the desired extensions and settings, then share the .vscode folder with others."
+      - content: "Configure the extensions and settings, and then share the *.vscode* folder with others."
         isCorrect: false
-        explanation: "While sharing the .vscode folder would work, it's not the best approach. You would need to share the entire .vscode folder, which may contain other settings that you don't want to share."
-      - content: "Configure the desired extensions and settings, then enable Settings Sync and share the URL with others."
+        explanation: "Although sharing the *.vscode* folder would work, it's not the best approach. You would need to share the entire *.vscode* folder, which might contain other settings that you don't want to share."
+      - content: "Configure the desired extensions and settings, and then enable Settings Sync and share the URL with others."
         isCorrect: false
-        explanation: "There's no publicly available URL for your Settings Sync configuration. You could share your configuration with others, but you need to do so manually."
-      - content: "Directly share your User Settings file with others as JSON."
+        explanation: "There's no publicly available URL for your Settings Sync configuration. You could share your configuration with others, but you would need to do so manually."
+      - content: "Directly share the User Settings file with others as JSON."
         isCorrect: false
         explanation: "You can share your User Settings file with others, but you need to do so manually."
       - content: "Create a new profile and export to a GitHub Gist."
         isCorrect: true
-        explanation: "Profiles are a great way to share a custom VS Code configuration with others. You can create a new profile and export it to a GitHub Gist, then share the Gist URL with others."
+        explanation: "Profiles are a great way to share a custom VS Code configuration with others. You can create a profile and export it to a GitHub Gist, and then share the Gist URL with others."
   - content: "You want to make sure that any changes you make to VS Code are reflected everywhere that you use VS Code. What should you do?"
     choices:
-    - content: "You create a new Profile and use the same profile everywhere."
+    - content: "Create a new profile and use the same profile everywhere."
       isCorrect: false
-      explanation: "Profiles can be shared and even synced, but they aren't synced by default and therefore aren't available everywhere you use VS Code."
-    - content: "VS Code installations are separate and must all be manually kept in sync."
+      explanation: "You can share and even sync profiles, but they aren't synced by default and therefore aren't available everywhere you use VS Code."
+    - content: "Manually sync all VS Code installations because they're separate."
       isCorrect: false
-      explanation: "VS Code installations are separate, but they can all be kept in sync automatically."
+      explanation: "VS Code installations are separate, but you can keep them all in sync automatically."
     - content: "Enable Settings Sync."
       isCorrect: true
-      explanation: "Settings Sync is the best way to keep your VS Code installations in sync. You can enable Settings Sync and your settings are available everywhere you use VS Code."
+      explanation: "Settings Sync is the best way to keep your VS Code installations in sync. When you enable Settings Sync, your settings are available everywhere you use VS Code."
   
