@@ -3,12 +3,13 @@ uid: learn.saas-technical-foundations
 metadata:
   title: Technical foundations of SaaS            # Do not edit: title must be "Introduction to (product)"
   description: "Learn from Microsoft about SaaS (Software-as-a-Service) architecture foundations, such as tenancy models, deployment SaaS models, monolithic and microservices architecture, and authentication in SaaS."               # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 6/8/2023               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  ms.date: 2/9/2024               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: kostinams        # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: irkostin             # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: interactive-tutorial
+  ms.service: architecture-center
 
-title: Technical Foundations of SaaS
+title: Technical foundations of SaaS
 
 summary: "Outline the technical aspects for SaaS solution. Choose between single or multitenant architecture, deployment models, how to handle identity and data in SaaS solution."
 

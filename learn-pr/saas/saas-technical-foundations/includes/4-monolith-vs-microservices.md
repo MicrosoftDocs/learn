@@ -44,21 +44,21 @@ A microservices setup involves small, self-contained services, each handling a d
 
 Some of the common benefits of microservices approach include:
 
-1. **Agility:** Microservices allow independent bug fixes and feature updates. Services can be updated without needing a full application redeployment. Rollbacks are feasible, preventing issues from halting feature releases.
-2. **Data Isolation:** Schema updates are simpler, affecting only one microservice. Monolithic apps face challenges due to shared data.
-3. **Compact Code:** Microservices reduce tangled code dependencies seen in monoliths. This eases feature additions as code and data stores are not shared, minimizing dependencies.
-4. **Technology Mix:** Teams can choose fitting technologies for services, supporting diverse technology stacks.
-5. **Fault Isolation:** Individual service failures don't disrupt the whole app, given correct handling of faults in upstream services. Patterns like Circuit Breaker or asynchronous messaging maintain stability.
-6. **Scalability:** Services can be independently scaled, efficiently allocating resources to subsystems. Tools like Kubernetes enable denser service packing on hosts, optimizing resource usage.
+- **Agility:** Microservices allow independent bug fixes and feature updates. Services can be updated without needing a full application redeployment. Rollbacks are feasible, preventing issues from halting feature releases.
+- **Data Isolation:** Schema updates are simpler, affecting only one microservice. Monolithic apps face challenges due to shared data.
+- **Compact Code:** Microservices reduce tangled code dependencies seen in monoliths. This eases feature additions as code and data stores are not shared, minimizing dependencies.
+- **Technology Mix:** Teams can choose fitting technologies for services, supporting diverse technology stacks.
+- **Fault Isolation:** Individual service failures don't disrupt the whole app, given correct handling of faults in upstream services. Patterns like Circuit Breaker or asynchronous messaging maintain stability.
+- **Scalability:** Services can be independently scaled, efficiently allocating resources to subsystems. Tools like Kubernetes enable denser service packing on hosts, optimizing resource usage.
 
 However, these benefits come with challenges, such as:
 
-1. **Complexity:** More parts in microservices create system complexity, though individual services are simpler.
-2. **Data Consistency:** Individual data persistence leads to data integrity challenges. Embracing eventual consistency is key.
-3. **Dev & Testing:** Creating services with dependencies needs a different approach. Tools might not support service dependencies well. Refactoring and testing across services pose difficulties, especially with evolving apps.
-4. **Governance:** Decentralized microservices can lead to diverse languages and frameworks, potentially making maintenance hard. Setting project-wide standards without stifling teams' flexibility helps, especially for cross-cutting tasks like logging.
-5. **Network Impact:** Granular services mean more interservice communication. Long chains of service dependencies can introduce latency. Careful API design, avoiding chattiness, and using async communication mitigate this.
-6. **Management:** Microservices demand mature DevOps culture. Correlating logs across services is tough. Logging for user operations involving multiple services requires attention.
+- **Complexity:** More parts in microservices create system complexity, though individual services are simpler.
+- **Data Consistency:** Individual data persistence leads to data integrity challenges. Embracing eventual consistency is key.
+- **Dev & Testing:** Creating services with dependencies needs a different approach. Tools might not support service dependencies well. Refactoring and testing across services pose difficulties, especially with evolving apps.
+- **Governance:** Decentralized microservices can lead to diverse languages and frameworks, potentially making maintenance hard. Setting project-wide standards without stifling teams' flexibility helps, especially for cross-cutting tasks like logging.
+- **Network Impact:** Granular services mean more interservice communication. Long chains of service dependencies can introduce latency. Careful API design, avoiding chattiness, and using async communication mitigate this.
+- **Management:** Microservices demand mature DevOps culture. Correlating logs across services is tough. Logging for user operations involving multiple services requires attention.
 
 
 
