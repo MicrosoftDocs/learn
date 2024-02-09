@@ -30,8 +30,8 @@ prerequisites: |
 units:
   - learn.create-tunnel.1-introduction
   - learn.create-tunnel.2-tunnels-and-tooling
-  - learn.create-tunnel.3-using-VSCodeUI-exercise
-  - learn.create-tunnel.4-using-codeCLI-exercise
+  - learn.create-tunnel.3-using-vs-code-ui-exercise
+  - learn.create-tunnel.4-using-code-cli-exercise
   - learn.create-tunnel.5-knowledge-check
   - learn.create-tunnel.6-summary
 badge:
