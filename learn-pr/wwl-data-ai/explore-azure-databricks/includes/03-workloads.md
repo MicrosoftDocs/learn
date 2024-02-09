@@ -8,7 +8,7 @@ Azure Databricks is a comprehensive platform that offers many data processing ca
 
 ## Data Science and Engineering
 
-Azure Databricks provides Apache Spark based processing and analysis of large volumes of data in a data lake. Data engineers, data scientists, and data analysts can use interactive notebooks to run code in Python, Scala, SparkSQL, or other languages to cleanse, transform, aggregate, and analyze data.
+Azure Databricks provides Apache Spark based processing and analysis of large volumes of data in a [data lakehouse](/azure/databricks/lakehouse). Data engineers, data scientists, and data analysts can use interactive notebooks to run code in Python, Scala, SparkSQL, or other languages to cleanse, transform, aggregate, and analyze data.
 
 ![A screenshot of the Azure Databricks portal for data science and engineering.](../media/data-engineering.png)
 
