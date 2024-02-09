@@ -22,8 +22,7 @@ prerequisites: |
   - Basic knowledge of Azure Pipelines and YAML.
   - Basic knowledge of security concepts for pipelines.
   - Experience with application logs and troubleshooting.
-iconUrl: /training/achievements/generic-trophy.svg
-hidden: false
+iconUrl: /training/achievements/extend-pipeline-use-multiple-templates.svg
 levels:
   - intermediate
 roles:

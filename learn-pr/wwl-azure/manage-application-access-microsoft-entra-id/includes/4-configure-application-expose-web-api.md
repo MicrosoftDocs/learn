@@ -1,6 +1,6 @@
 By registering your web API and exposing it through scopes, assigning an owner and app role, you can provide permissions-based access to its resources to authorized users and client apps that access your API.
 
-Register the web API
+## Register the web API
 
 Access to APIs requires configuration of access scopes and roles. If you want to expose your resource application web APIs to client applications, configure access scopes and roles for the API. If you want a client application to access a web API, configure permissions to access the API in the app registration.
 
@@ -50,6 +50,9 @@ First, follow these steps to create an example scope named `Employees.Read.All:`
 You can use the default value of application client identity or another supported App ID URI pattern. The App ID URI acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique.<br>
 
 6. Select Add a scope
+
+:::image type="content" source="../media/expose-application-program-interface-c51f4c95.png" alt-text="Screenshot showing the applications registrations page.":::
+
 
 7. Next, specify the scope's attributes in the Add a scope pane. For this walk-through, you can use the example values or specify your own.<br>
 
