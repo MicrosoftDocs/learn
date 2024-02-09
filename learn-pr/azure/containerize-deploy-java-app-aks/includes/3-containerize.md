@@ -91,7 +91,7 @@ Within the root of your project, containerize-and-deploy-Java-app-to-Azure/Proje
 vi Dockerfile
 ```
 
-Add the following contents to Dockerfile, then save and exit by pressing <kbc>ESC</kbd>, then typing *!wq* and pressing <kbc>Enter</kbd>:
+Add the following contents to Dockerfile, then save and exit by pressing <kbc>ESC</kbd>, then typing *:wq!* and pressing <kbc>Enter</kbd>:
 
 ```dockerfile
 #
