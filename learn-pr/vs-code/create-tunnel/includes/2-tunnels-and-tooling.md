@@ -36,7 +36,7 @@ Regardless of the method chosen, the outcome in terms of tunneling functionality
 
 If it's not feasible to install the full VS Code Desktop on your remote machine, the CLI offers a viable alternative. On the other hand, if you're already engaged in tasks within VS Code, employing the VS Code Desktop UI to initiate tunneling for your current machine is a convenient option.
 
-### Preparing for the Exercises
+### Preparing for the exercises
 
 In the upcoming exercises, you will be using both the VS Code Desktop and the code CLI to set up tunnels. To prepare for these exercises, you want to have some sample code in a file and folder available on your local machine. Let's dive right in:
 
