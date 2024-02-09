@@ -20,7 +20,7 @@ The use of tunneling offers a streamlined solution to many challenges. Extension
 
 :::image type="content" source="../media/8-remote-chart.png" alt-text="Screenshot of VS Code & Remote OS chart.":::
 
-### Setting up VS Code Remote - Tunnels extension 
+### Setting up VS Code Remote - Tunnels extension
 
 There are two methods available for setting up tunnels:
 
