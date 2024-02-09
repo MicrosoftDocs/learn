@@ -7,7 +7,7 @@ metadata:
   ms.date: 12/15/2023
   author: theReynald
   ms.author: radolphe
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/knowledge-check.md)]

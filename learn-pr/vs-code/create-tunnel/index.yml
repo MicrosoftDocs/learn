@@ -6,7 +6,7 @@ metadata:
   ms.date: 12/15/2023
   author: theReynald
   ms.author: radolphe
-  ms.topic: interactive-tutorial
+  ms.topic: module-intro-to-product
   ms.service: vs-code
 title: Introduction to Remote - Tunnels extension
 summary: Enable Remote Tunnel Access with VS Code.

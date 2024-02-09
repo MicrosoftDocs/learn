@@ -1,8 +1,8 @@
 In this exercise, you learn how to:
 
-1. Create and use a tunnel through the [code CLI](https://code.visualstudio.com/docs/editor/command-line). 
-1. Install the code CLI on a remote machine you intend to work on.
-1. Establish a tunnel between a Visual Studio Code (VS Code) client and your remote machine using the code CLI.
+- Create and use a tunnel through the [code CLI](https://code.visualstudio.com/docs/editor/command-line). 
+- Install the code CLI on a remote machine you intend to work on.
+- Establish a tunnel between a Visual Studio Code (VS Code) client and your remote machine using the code CLI.
 
 There are two options to obtain the code CLI: either from the VS Code download page or through the command prompt.
 
