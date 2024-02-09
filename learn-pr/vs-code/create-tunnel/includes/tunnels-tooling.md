@@ -24,9 +24,9 @@ The use of tunneling offers a streamlined solution to many challenges. Extension
 
 There are two methods available for setting up tunnels:
 
- 1. <a href="https://code.visualstudio.com/download" target="_blank">VS Code Desktop.</a> Activate tunneling via the VS Code Desktop user interface (UI). VS Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.
+- <a href="https://code.visualstudio.com/download" target="_blank">VS Code Desktop.</a> Activate tunneling via the VS Code Desktop user interface (UI). VS Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.
 
-2. <a href="https://code.visualstudio.com/docs/editor/command-line" target="_blank">code CLI.</a> Execute the tunnel command available in the code command-line interface (CLI) .  The CLI lets you control how you launch the editor. From the command line, you are using the CLI when performing tasks such as opening files, installing extensions, changing the display language, and outputting diagnostics through command-line options (switches). 
+- <a href="https://code.visualstudio.com/docs/editor/command-line" target="_blank">code CLI.</a> Execute the tunnel command available in the code command-line interface (CLI) .  The CLI lets you control how you launch the editor. From the command line, you are using the CLI when performing tasks such as opening files, installing extensions, changing the display language, and outputting diagnostics through command-line options (switches). 
 
 :::image type="content" source="../media/9-cli.png" alt-text="Screenshot of CLI Image.":::
 

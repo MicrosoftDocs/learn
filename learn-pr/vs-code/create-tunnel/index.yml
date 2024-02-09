@@ -30,8 +30,8 @@ prerequisites: |
 units:
   - learn.create-tunnel.introduction
   - learn.create-tunnel.tunnels-tooling
-  - learn.create-tunnel.using-vs-code-ui-exercise
-  - learn.create-tunnel.using-code-cli-exercise
+  - learn.create-tunnel.use-vs-code-ui-exercise
+  - learn.create-tunnel.use-code-cli-exercise
   - learn.create-tunnel.knowledge-check
   - learn.create-tunnel.summary
 badge:
