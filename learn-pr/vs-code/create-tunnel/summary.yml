@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-tunnel.6-summary
+uid: learn.create-tunnel.summary
 title: Summary
 metadata:
   title: Summary
@@ -10,4 +10,4 @@ metadata:
   ms.topic: interactive-tutorial
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/summary.md)]

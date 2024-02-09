@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-tunnel.4-using-code-cli-exercise
+uid: learn.create-tunnel.using-code-cli-exercise
 title: Exercise - enabling Remote - Tunnels in code CLI
 metadata:
   title: Exercise - enabling Remote - Tunnels in code CLI
@@ -10,4 +10,4 @@ metadata:
   ms.topic: interactive-tutorial
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-using-code-cli-exercise.md)]
+  [!include[](includes/using-code-cli-exercise.md)]

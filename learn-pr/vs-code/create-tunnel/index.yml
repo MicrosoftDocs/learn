@@ -28,11 +28,11 @@ prerequisites: |
  - VS Code installed on your machine. 
  - Experience with writing a program or two. 
 units:
-  - learn.create-tunnel.1-introduction
-  - learn.create-tunnel.2-tunnels-and-tooling
-  - learn.create-tunnel.3-using-vs-code-ui-exercise
-  - learn.create-tunnel.4-using-code-cli-exercise
-  - learn.create-tunnel.5-knowledge-check
-  - learn.create-tunnel.6-summary
+  - learn.create-tunnel.introduction
+  - learn.create-tunnel.tunnels-tooling
+  - learn.create-tunnel.using-vs-code-ui-exercise
+  - learn.create-tunnel.using-code-cli-exercise
+  - learn.create-tunnel.knowledge-check
+  - learn.create-tunnel.summary
 badge:
   uid: learn.create-tunnel.badge

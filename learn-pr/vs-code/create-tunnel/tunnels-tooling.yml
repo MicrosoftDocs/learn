@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-tunnel.2-tunnels-and-tooling
+uid: learn.create-tunnel.tunnels-tooling
 title: Tunnels & tooling
 metadata:
   title: Tunnels & tooling
@@ -10,4 +10,4 @@ metadata:
   ms.topic: interactive-tutorial
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-tunnels-and-tooling.md)]
+  [!include[](includes/tunnels-tooling.md)]

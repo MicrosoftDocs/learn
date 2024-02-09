@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-tunnel.5-knowledge-check
+uid: learn.create-tunnel.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-knowledge-check.md)]
+  [!include[](includes/knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
