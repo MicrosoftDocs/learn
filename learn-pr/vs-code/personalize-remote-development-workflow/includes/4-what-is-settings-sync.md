@@ -37,7 +37,7 @@ Additionally, you can select **Settings Sync: Show Log** in the Command Palette.
 
 ## How do I restore my settings on a new machine?
 
-When you want to restore your settings from the cloud on a new machine or new instance of VS Code, you can do so by signing in to Settings Sync with the same account that you used to sync your settings. You get the same UI that you opened when signing in to Settings Sync for the first time, so you can decide at that point which settings you want to sync from the cloud and which settings you don't want to sync.
+When you want to restore your settings from the cloud on a new machine or new instance of VS Code, you can do so by signing in to Settings Sync with the same account that you used to sync your settings. You get the same UI that you opened when signing in to Settings Sync for the first time, so you can decide at that point which settings you want to sync from the cloud.
 
 If you made configuration changes to VS Code that are different from the settings in the cloud, you're prompted to choose which settings you want to keep. You can choose to keep the settings from the cloud or the settings from your local machine. In either case, only the settings that were in conflict are replaced.
 

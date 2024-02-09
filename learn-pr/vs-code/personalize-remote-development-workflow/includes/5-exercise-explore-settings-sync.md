@@ -45,7 +45,7 @@ By default, VS Code automatically syncs your settings whenever you make configur
 
 Open the Command Palette by selecting the F1 key, and then select **Settings Sync: Sync Now**.
 
-This command synchronizes your settings to the cloud. You can verify that your settings have been synced by opening the Settings Sync activity view again.
+This command synchronizes your settings to the cloud. You can verify that your settings were synced by opening the Settings Sync activity view again.
 
 :::image type="content" source="../media/5-sync-activity-updated.png" alt-text="Screenshot of the Settings Sync activity view in VS Code with the Extensions and UI State folders highlighted.":::
 

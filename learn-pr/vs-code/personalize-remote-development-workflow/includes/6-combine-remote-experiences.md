@@ -4,7 +4,7 @@ In addition to profiles and Settings Sync, you can customize your remote develop
 
 A common model is to combine a remote machine with a Docker container. Using a Docker container on a remote machine is useful for standardizing a development environment across a team while still applying the power of remote compute.
 
-To use dev containers with the Remote - SSH extension, you need to install the extension on your local machine. You can do this by selecting the **Extensions** icon in VS Code and searching for **Remote - SSH**.
+To use dev containers with the Remote - SSH extension, you need to install the extension on your local machine. You can install the extension by selecting the **Extensions** icon in VS Code and searching for **Remote - SSH**.
 
 In addition, the remote machine needs to have Docker installed. You can find instructions for installing Docker in the [VS Code documentation](https://code.visualstudio.com/docs/containers/overview).
 
