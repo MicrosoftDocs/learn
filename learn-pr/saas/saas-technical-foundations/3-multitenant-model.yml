@@ -4,10 +4,11 @@ title: Multitenant model
 metadata:
   title: Multitenant model
   description: "A multitenant solution is one used by multiple customers, or tenants. This module covers considerations for multitenant model, where one instance of SaaS solution is shared across customers/tenants."
-  ms.date: 6/8/2023
+  ms.date: 2/9/2024
   author: kostinams
   ms.author: irkostin
   ms.topic: interactive-tutorial
+  ms.service: architecture-center
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-multi-tenant-model.md)]
+  [!include[](includes/3-multitenant-model.md)]

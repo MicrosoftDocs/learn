@@ -10,11 +10,11 @@ Single sign-on (SSO) allows users to authenticate their identity once and then l
 
 
 
-Both Authentication and authorization processes can be performed with [Microsoft Identity platform](https://learn.microsoft.com/entra/identity-platform/v2-overview) as part of Microsoft Entra ID (Formerly known as Azure Active Directory), and [Azure Active Directory B2C](https://learn.microsoft.com/azure/active-directory-b2c/overview) (AAD B2C). Microsoft identity platform is suited for solutions where customers' users have Microsoft Entra ID accounts, often that would be B2B solutions. AAD B2C is suitable for solutions serving end-users directly since those users don't have Microsoft Entra ID account and don't belong to any tenant. 
+Both Authentication and authorization processes can be performed with [Microsoft Identity platform](https://learn.microsoft.com/entra/identity-platform/v2-overview) as part of Microsoft Entra ID (Formerly known as Azure Active Directory) and [Microsoft Entra ID for Customers](https://learn.microsoft.com/entra/external-id/customers/overview-customers-ciam). Microsoft identity platform is suited for solutions where customers' users have Microsoft Entra ID accounts, often that would be B2B solutions. *Microsoft Entra ID for customers* is suitable for solutions serving end-users directly since those users don't have Microsoft Entra ID account and don't belong to any organizational tenant. 
 
 Both platforms implement the OAuth 2.0 authorization protocol. OAuth 2.0 is a method through which a third-party app can access web-hosted resources on behalf of a user.
 
-#### **Application roles**
+#### Application roles
 
 One of the key features of Microsoft Entra ID for SaaS providers is the ability to define *app roles*, and later assign app roles to individual users and groups. App roles are used to control access to various resources and actions within an application. 
 
@@ -22,7 +22,7 @@ For example, an application may have the role of "admin", or "Support operator",
 
 App roles can be created via the Azure portal under “Application Registrations” <u>in the tenant of the SaaS developer</u>.
 
-![App Role creation in Azure AD](../media/create-approle.png)
+![App Role creation in Azure AD](../media/create-app-role.png)
 
  App roles can also be created programmatically (for example, using Graph API).
 
@@ -34,11 +34,11 @@ Administrators of <u>customer tenants</u> can assign these roles to users or gro
 
 
 
-#### **Scopes**
+#### Scopes
 
 Another important aspect for SaaS providers is the use of scopes. Scopes are used to restrict access to data and functionality protected by an API. Custom scopes can be created to provide granular control over what users can access within an application or provide granular permissions to different APIs / microservices.
 
-Scopes can be defined as a collection of permissions that are required to access a particular resource. You can define multiple scopes for different levels of access on APIs and services, registered under App Registrations in Entra ID:
+Scopes can be defined as a collection of permissions that are required to access a particular resource. You can define multiple scopes for different levels of access on APIs and services, registered under App Registrations in Microsoft Entra ID:
 
 ![The screenshot demonstrates 2 different scopes for reading contracts and for signing contracts.](../media/expose-api.png)
 
@@ -48,7 +48,7 @@ When a user or application attempts to access a protected resource (for example,
 
 In the scenario, where the user is using delegated permissions and gives consent to the SaaS app to access email records using Graph API, this SaaS app is only able to retrieve email items for this user.
 
-In the situation when you're granting permission to one of the APIs protected by Entra ID, which are part of the SaaS application, you have to implement similar logic.
+In the situation when you're granting permission to one of the APIs protected by Microsoft , which are part of the SaaS application, you have to implement similar logic.
 
 Let’s assume that you provide a custom API that allows digital contract signing. If user allows delegated permissions for the SaaS app to access digital contacts through your API, it should only return contracts for this particular user. It should also check the scope – is it only *Contract.Read*, or also *Contract.Sign*, which should give users the possibility to sign the contract. It is your responsibility as a SaaS provider to implement the authorization logic in your application. 
 
@@ -62,7 +62,7 @@ In microservice scenarios, authentication is typically handled centrally. One of
 
 ![Diagram showing how the client mobile app interacts with the backend.](../media/api-gateway-centralized-authentication.png)
 
-When the API Gateway centralizes authentication, it adds user information when forwarding requests to the microservices. If services can be accessed directly, an authentication service like Entra ID or a dedicated authentication microservice acting as a security token service (STS) can be used to authenticate users. Trust decisions are shared between services with security tokens or cookies. 
+When the API Gateway centralizes authentication, it adds user information when forwarding requests to the microservices. If services can be accessed directly, an authentication service like Microsoft Entra ID or a dedicated authentication microservice acting as a security token service (STS) can be used to authenticate users. Trust decisions are shared between services with security tokens or cookies. 
 
 When microservices are accessed directly, trust that includes authentication and authorization is handled by a security token issued by a dedicated microservice, shared between microservices.
 
@@ -74,11 +74,7 @@ When using Microsoft Entra ID, it's possible to register your individual microse
 
 The on-behalf-of (OBO) flow describes the scenario of a web API using an identity other than its own to call another web API. Referred to as delegation in OAuth, the intent is to pass a user's identity and permissions through the request chain.
 
-For the middle-tier service to make authenticated requests to the downstream service, it needs to secure an access token from the Entra ID platform. It only uses delegated *scopes* and not application *roles*. *Roles* remain attached to the principal (the user) and never to the application operating on the user's behalf. This occurs to prevent the user gaining permission to resources they shouldn't have access to.
-
- [!NOTE]
-
-On-behalf-of flow currently isn't supported in Azure Active Directory B2C.
+For the middle-tier service to make authenticated requests to the downstream service, it needs to secure an access token from Microsoft Entra ID platform. It only uses delegated *scopes* and not application *roles*. *Roles* remain attached to the principal (the user) and never to the application operating on the user's behalf. This occurs to prevent the user gaining permission to resources they shouldn't have access to.
 
 
 

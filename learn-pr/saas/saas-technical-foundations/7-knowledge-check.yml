@@ -4,10 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Learn from Microsoft about SaaS (Software-as-a-Service) architecture foundations, such as tenancy models, deployment SaaS models, monolithic and microservices architecture, and authentication in SaaS."
-  ms.date: 6/8/2023
+  ms.date: 2/9/2024
   author: kostinams
   ms.author: irkostin
   ms.topic: interactive-tutorial
+  ms.service: architecture-center
 durationInMinutes: 10
 
 content: |

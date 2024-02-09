@@ -1,18 +1,8 @@
-## Introduction
-
 *Software as a service (SaaS)* allows users to connect to and use cloud-based apps over the Internet. Common examples are email, calendaring, and office tools (such as Microsoft Office 365 or Azure services such as Azure Functions or Azure Cosmos DB).
 
 In this module, you're going to focus on technical SaaS foundations, so that you have a solid guide to build your SaaS solution.
 
 
-
-*Microsoft maintains this training module. It was originally written by the following contributors*:
-
-- [Irina Kostina](https://www.linkedin.com/in/irina-kostina/) | Software Engineer, FastTrack for Azure
-
-- [Landon Pierce](https://www.linkedin.com/in/landon-pierce/) | Customer Engineer, FastTrack for Azure
-
-  
 
 ## Learning objectives
 

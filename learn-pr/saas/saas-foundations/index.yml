@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.saas-foundations
+ms.service: architecture-center
 metadata:
   title: Foundations of SaaS # Do not edit: title must be "Introduction to (product)"
   description: "Learn from Microsoft about SaaS (Software-as-a-Service), what is the difference from traditional software company, what is SLA and SLO, things to consider regarding security and privacy" # Copy your 'evaluate' Learning Objective here (see below)
