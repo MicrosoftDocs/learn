@@ -10,9 +10,9 @@ metadata:
   ms.service: app-service 
   ms.subservice: web-apps
 title: Migrate Java web applications to Azure App Service
-summary: In this module, you'll learn to use the Azure Migrate App Containerization tool to containerize and migrate Java web applications to Azure App Service.
+summary: In this module, you learn to use the Azure Migrate App Containerization tool to containerize and migrate Java web applications to Azure App Service.
 abstract: | 
-  By the end of this module, you will be able to:
+  By the end of this module, you're able to:
   - Discover and containerize your Java web app running on Linux machines using Azure Migrate: App Containerization.
   - Build a container image for your Java web application. 
   - Deploy your containerized application to Azure App Service using Azure Migrate: App Containerization. 
