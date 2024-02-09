@@ -2,7 +2,7 @@
 uid: learn.saas-technical-foundations.summary
 title:  Summary
 metadata:
-  title: summary
+  title: Summary
   description: "Learn from Microsoft about SaaS (Software-as-a-Service) architecture foundations. This module covers tenancy models, monolithic and microservices architecture, and authentication in SaaS."
   ms.date: 6/8/2023
   author: kostinams
