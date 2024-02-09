@@ -80,7 +80,8 @@ Follow these steps to enable Microsoft Entra SSO.
 
 4. On the **Set up single sign-on with SAML** page, click the edit/pen icon for **Basic SAML Configuration** to edit the settings.<br>
 
-## :::image type="content" source="../media/set-up-single-sign-on-with-saml-fc9f46b4.png" alt-text="Screenshot showing an example of the setup single sign-on with saml page."::: 
+:::image type="content" source="../media/set-up-single-sign-on-with-saml-fc9f46b4.png" alt-text="Screenshot showing an example of the setup single sign-on with saml page.":::
+
 
 5. On the **Basic SAML Configuration** section, enter the values for the following fields:
 
@@ -105,16 +106,16 @@ Follow these steps to enable Microsoft Entra SSO.
 > These values aren't real. You need to update these values with the actual Sign-on URL and Reply URL. Contact Slack support team to get the value. You can also refer to the patterns shown in the Basic SAML Configuration section.
 
 > [!NOTE]
-> The value fo r Identifier (Entity ID) can be a variable if you have more than one Slack instance that you need to integrate with the tenant. Use the pattern `https://<DOMAIN NAME>.slack.com`. In this scenario, you also must pair with another setting in Slack by using the same value.
+> The value for Identifier (Entity ID) can be a variable if you have more than one Slack instance that you need to integrate with the tenant. Use the pattern `https://<DOMAIN NAME>.slack.com`. In this scenario, you also must pair with another setting in Slack by using the same value.
 
 6. Slack application expects the SAML assertions in a specific format, which requires you to add custom attribute mappings to your SAML token attributes configuration. The following screenshot shows the list of default attributes.
 
-:::image type="content" source="../media/default-attributes-7bda693c.png" alt-text="Screenshot showing an example of the attributes and claims page for a slack application.":::
+:::image type="content" source="../media/default-attributes-7bda693c.png" alt-text="Screenshot showing an example of the attributes and claims page for a Slack application.":::
 
 
 7. In addition to above, Slack application expects few more attributes to be passed back in SAML response which are shown below. These attributes are also pre populated but you can review them as per your requirements.
 
-:::image type="content" source="../media/claims-8fb18a60.png" alt-text="Screenshot showing an example of the required claims page for a slack application.":::
+:::image type="content" source="../media/claims-8fb18a60.png" alt-text="Screenshot showing an example of the required claims page for a Slack application.":::
 
 
 8. On the **Set up single sign-on with SAML** page, in the **SAML Signing Certificate** section, find **Certificate (Base64)** and select **Download** to download the certificate and save it on your computer.
@@ -124,7 +125,7 @@ Follow these steps to enable Microsoft Entra SSO.
 
 9. On the **Set up Slack** section, copy the appropriate URL(s) based on your requirement.
 
-:::image type="content" source="../media/copy-configuration-624d5dde.png" alt-text="Screenshot showing an example of the url configurations page.":::
+:::image type="content" source="../media/copy-configuration-624d5dde.png" alt-text="Screenshot showing an example of the U R L configurations page.":::
 
 
 ## Create a Microsoft Entra test user
@@ -169,7 +170,7 @@ In this section, you'll enable B.Simon to use single sign-on by granting access 
 1.  In a different web browser window, sign in to your up Slack company site as an administrator
 2.  click on your workspace name in the top left, then go to **Settings and administration**, **Workspace settings**.<br>
 
-:::image type="content" source="../media/tutorial-slack-team-settings-b2d349b6.png" alt-text="Screenshot showing an example of how to configure slack single sign-on.":::
+:::image type="content" source="../media/tutorial-slack-team-settings-b2d349b6.png" alt-text="Screenshot showing an example of how to configure Slack single sign-on.":::
 
 
 3. In the **Settings and permissions** section, click the **Authentication** tab, and then click **Configure** button at SAML authentication method.
