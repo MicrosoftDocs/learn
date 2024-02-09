@@ -3,10 +3,12 @@ uid: learn.wwl.configure-vnet-peering
 metadata:
   title: Configure Azure Virtual Network peering
   description: "Learn to configure an Azure Virtual Network peering connection and address transit and connectivity concerns."
-  ms.date: 11/20/2023
+  ms.date: 02/09/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: virtual-network
 title: Configure Azure Virtual Network peering
 summary: |
