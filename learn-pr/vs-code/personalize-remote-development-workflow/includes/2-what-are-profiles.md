@@ -20,22 +20,22 @@ These changes are stored within the active profile, so the customizations are re
 
 ## Switching between profiles
 
-You can use the **Switch Profile** command in the Command Palette, the dropdown menu accessible through the **Manage** gear button, or **File** > **Preferences** > **Profiles**. Additionally, you can assign keyboard shortcuts to quickly switch between profiles. This feature can be valuable if you need different profile settings for different projects.
+You can use the **Profiles** command in the Command Palette, the dropdown menu accessible through the **Manage** gear button, or **File** > **Preferences** > **Profiles**. Additionally, you can assign keyboard shortcuts to quickly switch between profiles. This feature can be valuable if you need different profile settings for different projects.
 
-Let's say that for a Vue.js project you need certain key bindings, snippets, and even tasks. But for working on a Node.js back end, you need different profile settings.
+Let's say that for a Vue.js project, you need certain key bindings, snippets, and even tasks. But for working on a Node.js back end, you need different profile settings.
 
-:::image type="content" source="../media/2-switch-profile.png" alt-text="Screenshot of VS Code switch profile menu option.":::
+:::image type="content" source="../media/2-switch-profile.png" alt-text="Screenshot of the Profiles menu command in Visual Studio Code.":::
 
-To effectively manage profiles in VS Code, it's important to follow certain best practices and utilize useful tips:
+To effectively manage profiles in VS Code, it's important to follow best practices and utilize useful tips:
 
-* Experiment with different configurations: Profiles offer an opportunity to experiment with different settings, extensions, and UI layouts. Don't be afraid to try out new configurations and workflows to find the setup that best suits your needs.
-* Organize profiles: Use meaningful names for profiles and group them based on projects, teams, or workflows. These meaningful names and groupings help in quickly identifying and activating the desired profile.
-* Collaborate with teams: Share profiles with team members to ensure consistent configurations across the team. You can share profiles by exporting them and sharing via GitHub gists or local files.
+* Experiment with configurations: Profiles offer an opportunity to experiment with settings, extensions, and UI layouts. Don't be afraid to try new configurations and workflows to find the setup that best suits your needs.
+* Organize profiles: Use meaningful names for profiles and group them based on projects, teams, or workflows. Meaningful names and groupings help in quickly identifying and activating the profile that you want.
+* Collaborate with teams: Share profiles with team members to help ensure consistent configurations across the team. You can share profiles by exporting them and sharing via GitHub gists or local files.
 
 ## Advanced features and customizations
 
 You can associate profiles with specific workspaces to automatically activate the corresponding profile when opening the workspace.
 
-When you use profiles with Settings Sync, you can synchronize profiles across multiple devices. This feature helps ensure that developers have consistent configurations regardless of the machine they're working on. You'll explore Settings Sync later in this module.
+When you use profiles with Settings Sync, you can synchronize profiles across multiple devices. This feature helps ensure that developers have consistent configurations regardless of the machines they're working on. You'll explore Settings Sync later in this module.
 
-In the upcoming exercise, you'll create, customize, and manage profiles in VS Code.
+In the upcoming exercise, you create, customize, and manage profiles in VS Code.

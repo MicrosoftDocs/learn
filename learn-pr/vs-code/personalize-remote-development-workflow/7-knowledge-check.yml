@@ -34,9 +34,9 @@ quiz:
       - content: "Directly share the User Settings file with others as JSON."
         isCorrect: false
         explanation: "You can share your User Settings file with others, but you need to do so manually."
-      - content: "Create a new profile and export to a GitHub Gist."
+      - content: "Create a new profile and export to a GitHub gist."
         isCorrect: true
-        explanation: "Profiles are a great way to share a custom VS Code configuration with others. You can create a profile and export it to a GitHub Gist, and then share the Gist URL with others."
+        explanation: "Profiles are a great way to share a custom VS Code configuration with others. You can create a profile and export it to a GitHub gist, and then share the gist URL with others."
   - content: "You want to make sure that any changes you make to VS Code are reflected everywhere that you use VS Code. What should you do?"
     choices:
     - content: "Create a new profile and use the same profile everywhere."
