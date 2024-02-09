@@ -19,8 +19,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of Azure DevOps to manage branches.
   - Basic knowledge of security concepts like user and pipeline permissions.
-iconUrl: /training/achievements/generic-trophy.svg
-hidden: false
+iconUrl: /training/achievements/configure-validate-permissions.svg
 levels:
   - intermediate
 roles:
