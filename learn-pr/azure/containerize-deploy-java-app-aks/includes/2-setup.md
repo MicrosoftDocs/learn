@@ -7,7 +7,7 @@ In this unit, you'll use the Azure CLI to create the Azure resources that will b
 
 ### Authenticate with Azure Resource Manager
 
-Use the following command in Cloud Shell to sign in:
+Use the following command in your CLI to sign in:
 
 ```bash
 az login
@@ -48,7 +48,7 @@ AZ_KUBERNETES_CLUSTER_DNS_PREFIX=<YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUS
 
 ### Create an Azure Resource Group
 
-Azure resource groups are Azure containers in Azure subscriptions for holding related resources for an Azure solution. Create a Resource group by using the following command in Cloud Shell:
+Azure resource groups are Azure containers in Azure subscriptions for holding related resources for an Azure solution. Create a Resource group by using the following command in your CLI:
 
 ```bash
 az group create \
