@@ -15,17 +15,17 @@ The first step in enforcing compliance with Azure Policy is to assign a policy d
 
 1. Go to the Azure portal to assign policies. Search for and select **Policy**.
 
-:::image type="content" source="../media/search-policy-936ccf64.png" alt-text="Screenshot showing how to use the Azure portal to assign a policy.":::
+    :::image type="content" source="../media/search-policy-936ccf64.png" alt-text="Screenshot showing how to use the Azure portal to assign a policy.":::
 
 
 2. Select **Assignments** on the left side of the Azure Policy page. An assignment is a policy that has been assigned to take place within a specific scope.
 
-:::image type="content" source="../media/select-assignments-a9eeb5b8.png" alt-text="Screenshot showing the Azure policy authoring assignments page.":::
+    :::image type="content" source="../media/select-assignments-a9eeb5b8.png" alt-text="Screenshot showing the Azure policy authoring assignments page.":::
 
 
 3. Select **Assign Policy** from the top of the **Policy - Assignments** page.
 
-:::image type="content" source="../media/select-assign-policy-73264c35.png" alt-text="Screenshot showing how to assign the policy in the authoring assignments page.":::
+    :::image type="content" source="../media/select-assign-policy-73264c35.png" alt-text="Screenshot showing how to assign the policy in the authoring assignments page.":::
 
 
 4. On the **Assign Policy** page and **Basics** tab, select the **Scope** by selecting the ellipsis and selecting either a management group or subscription. Optionally, select a resource group. A scope determines what resources or grouping of resources the policy assignment gets enforced on. Then click **Select** at the bottom of the **Scope** page. This example uses the **Contoso** subscription. Your subscription will differ.
@@ -36,14 +36,14 @@ The first step in enforcing compliance with Azure Policy is to assign a policy d
 
 7. Select **Inherit a tag from the resource group if missing**. If you can't find it right away, type **inherit a tag** into the search box and then press ENTER or select out of the search box. Click **Select** at the bottom of the **AvailableDefinitions** page once you have found and selected the policy definition.
 
-:::image type="content" source="../media/select-available-definition-c146b13f.png" alt-text="Screenshot showing how to view available Azure policy definition types.":::
+    :::image type="content" source="../media/select-available-definition-c146b13f.png" alt-text="Screenshot showing how to view available Azure policy definition types.":::
 
 
 8. The **Assignment name** is automatically populated with the policy name you selected, but you can change it. For this example, leave *Inherit a tag from the resource group if missing*. You can also add an optional **Description**. The description provides details about this policy assignment.
 
 9. Leave **Policy enforcement** as *Enabled*. When *Disabled*, this setting allows testing the outcome of the policy without triggering the effect. For more information, see enforcement mode.
 
-10.**Assigned by** is automatically filled based on who is logged in. This field is optional, so custom values can be entered.<br>
+10. **Assigned by** is automatically filled based on who is logged in. This field is optional, so custom values can be entered.<br>
 
 11. Select the **Parameters** tab at the top of the wizard.<br>
 
