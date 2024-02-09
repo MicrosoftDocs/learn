@@ -22,8 +22,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of Azure DevOps to manage agents and service connections.
   - Basic knowledge of security concepts like secret variables and secure files.
-iconUrl: /training/achievements/generic-trophy.svg
-hidden: false
+iconUrl: /training/achievements/configure-secure-access-pipeline-resources.svg
 levels:
   - intermediate
 roles:

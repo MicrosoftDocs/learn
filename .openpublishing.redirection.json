@@ -33812,7 +33812,7 @@
       "redirect_document_id": false
     },
 {
-      "source_path": "learn-pr/paths/introduction-azure-rtos/index.yml",
+      "source_path": "learn-pr/iot/introduction-azure-rtos/index.yml",
       "redirect_url": "https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/threadx/index.md",
       "redirect_document_id": false
     },
@@ -33827,7 +33827,7 @@
       "redirect_document_id": false
     },
 {
-      "source_path": "learn-pr/paths/azure-rtos-threadx-fundamentals/index.yml",
+      "source_path": "learn-pr/iot/azure-rtos-threadx-fundamentals/index.yml",
       "redirect_url": "https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/threadx/index.md",
       "redirect_document_id": false
     },
@@ -33877,7 +33877,7 @@
       "redirect_document_id": false
     },
 {
-      "source_path": "learn-pr/paths/threadx-memory-management/index.yml",
+      "source_path": "learn-pr/iot/threadx-memory-management/index.yml",
       "redirect_url": "https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/threadx/index.md",
       "redirect_document_id": false
     },
@@ -33912,7 +33912,7 @@
       "redirect_document_id": false
     },
 {
-      "source_path": "learn-pr/paths/create-first-threadx-project/index.yml",
+      "source_path": "learn-pr/iot/create-first-threadx-project/index.yml",
       "redirect_url": "https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/threadx/index.md",
       "redirect_document_id": false
     },
@@ -33957,7 +33957,7 @@
       "redirect_document_id": false
     },
 {
-      "source_path": "learn-pr/paths/azure-rtos-analyze-thread-behavior/index.yml",
+      "source_path": "learn-pr/iot/azure-rtos-analyze-thread-behavior/index.yml",
       "redirect_url": "https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/threadx/index.md",
       "redirect_document_id": false
     },
@@ -34002,7 +34002,7 @@
       "redirect_document_id": false
     },
 {
-      "source_path": "learn-pr/paths/threadx-break-thread-suspension/index.yml",
+      "source_path": "learn-pr/iot/threadx-break-thread-suspension/index.yml",
       "redirect_url": "https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/threadx/index.md",
       "redirect_document_id": false
     },
@@ -34052,7 +34052,7 @@
       "redirect_document_id": false
     },
 {
-      "source_path": "learn-pr/paths/threadx-event-notification/index.yml",
+      "source_path": "learn-pr/iot/threadx-event-notification/index.yml",
       "redirect_url": "https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/threadx/index.md",
       "redirect_document_id": false
     },
@@ -34102,7 +34102,7 @@
       "redirect_document_id": false
     },
 {
-      "source_path": "learn-pr/paths/threadx-event-flags-group-sync-threads/index.yml",
+      "source_path": "learn-pr/iot/threadx-event-flags-group-sync-threads/index.yml",
       "redirect_url": "https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/threadx/index.md",
       "redirect_document_id": false
     },
@@ -34157,7 +34157,7 @@
       "redirect_document_id": false
     },
 {
-      "source_path": "learn-pr/paths/threadx-message-queues/index.yml",
+      "source_path": "learn-pr/iot/threadx-message-queues/index.yml",
       "redirect_url": "https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/threadx/index.md",
       "redirect_document_id": false
     },
@@ -34207,7 +34207,7 @@
       "redirect_document_id": false
     },
 {
-      "source_path": "learn-pr/paths/threadx-event-chain-suspend-objects/index.yml",
+      "source_path": "learn-pr/iot/threadx-event-chain-suspend-objects/index.yml",
       "redirect_url": "https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/threadx/index.md",
       "redirect_document_id": false
     },
@@ -34262,7 +34262,7 @@
       "redirect_document_id": false
     },
 {
-      "source_path": "learn-pr/paths/threadx-priority-inversion-solutions/index.yml",
+      "source_path": "learn-pr/iot/threadx-priority-inversion-solutions/index.yml",
       "redirect_url": "https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/threadx/index.md",
       "redirect_document_id": false
     },
@@ -34317,7 +34317,7 @@
       "redirect_document_id": false
     },
 {
-      "source_path": "learn-pr/paths/threadx-next-steps/index.yml",
+      "source_path": "learn-pr/iot/threadx-next-steps/index.yml",
       "redirect_url": "https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/threadx/index.md",
       "redirect_document_id": false
     },
@@ -34352,7 +34352,7 @@
       "redirect_document_id": false
     },
 {
-      "source_path": "learn-pr/paths/introduction-azure-rtos-netx-duo/index.yml",
+      "source_path": "learn-pr/iot/introduction-azure-rtos-netx-duo/index.yml",
       "redirect_url": "https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/netx-duo/index.md",
       "redirect_document_id": false
     },
@@ -34372,7 +34372,7 @@
       "redirect_document_id": false
     },
 {
-      "source_path": "learn-pr/paths/azure-rtos-netx-duo-fundamentals/index.yml",
+      "source_path": "learn-pr/iot/azure-rtos-netx-duo-fundamentals/index.yml",
       "redirect_url": "https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/netx-duo/index.md",
       "redirect_document_id": false
     },
@@ -34397,7 +34397,7 @@
       "redirect_document_id": false
     },
 {
-      "source_path": "learn-pr/paths/create-first-netx-duo-project/index.yml",
+      "source_path": "learn-pr/iot/create-first-netx-duo-project/index.yml",
       "redirect_url": "https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/netx-duo/index.md",
       "redirect_document_id": false
     },
@@ -34467,7 +34467,7 @@
       "redirect_document_id": false
     },
 {
-      "source_path": "learn-pr/paths/build-a-udp-echo-server/index.yml",
+      "source_path": "learn-pr/iot/build-a-udp-echo-server/index.yml",
       "redirect_url": "https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/netx-duo/index.md",
       "redirect_document_id": false
     },
@@ -34502,7 +34502,7 @@
       "redirect_document_id": false
     },
 {
-      "source_path": "learn-pr/paths/build-a-tcp-echo-client/index.yml",
+      "source_path": "learn-pr/iot/build-a-tcp-echo-client/index.yml",
       "redirect_url": "https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/netx-duo/index.md",
       "redirect_document_id": false
     },

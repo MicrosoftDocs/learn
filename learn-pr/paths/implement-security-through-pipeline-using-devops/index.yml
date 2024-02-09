@@ -17,8 +17,7 @@ prerequisites: |
   - Basic knowledge of Azure DevOps.
   - Basic knowledge of security concepts like identities and permissions.
   - Experience using the Azure portal to create resources like Azure Key Vault and set permissions.
-iconUrl: /training/achievements/generic-trophy.svg
-hidden: false
+iconUrl: /training/achievements/implement-security-through-pipeline-using-devops.svg
 levels:
   - intermediate
 roles:
