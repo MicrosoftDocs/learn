@@ -47,4 +47,4 @@ In this exercise, we enable Remote - Tunnels access using the Visual Studio Code
 When you visit <a href="http://vscode.dev" target="_blank">vscode.dev</a>, you access a lightweight version of VS Code running fully in the browser, known as VS Code for the web (or vscode.dev). This step allows you to open a folder on your local machine and start coding without any installation. Official docs can be found <a href="http://vscode.dev" target="_blank">here for vscode.dev</a>.
 
 > [!Note]
-> The remote machine is only reachable through a tunnel while VS Code is running there. Once you exit VS Code, tunneling to it won't be possible until you start VS Code there again or run the code tunnel CLI command.*
+> The remote machine is only reachable through a tunnel while VS Code is running there. Once you exit VS Code, tunneling to it won't be possible until you start VS Code there again or run the code tunnel CLI command.
