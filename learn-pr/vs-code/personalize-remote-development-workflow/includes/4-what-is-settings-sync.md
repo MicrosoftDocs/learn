@@ -5,7 +5,7 @@ Settings Sync lets you share your VS Code configurations (such as settings, key 
 
 Settings Sync requires a sign-in with either your Microsoft or GitHub account. After you sign in, you can choose which settings you want to sync across your machines. You can choose to sync all of them or only a few of them.
 
-After you enable Settings Sync, your settings are uploaded to the cloud and kept in sync whenever you make any changes to them. There's no need to manually sync or save any setting when you're using Settings Sync.
+After you turn on Settings Sync, your settings are uploaded to the cloud and kept in sync whenever you make any changes to them. There's no need to manually sync or save any setting when you're using Settings Sync.
 
 Here are the settings that the Settings Sync feature automatically syncs for you:
 
@@ -27,7 +27,7 @@ Here are the settings that the Settings Sync feature automatically syncs for you
 
 It can be helpful to see info like exactly what settings have synced and the last time your settings were synced.
 
-After you enable Settings Sync, the Settings Sync explorer view is available in VS Code. You can access it by opening the Command Palette and selecting **Settings Sync: Show Synced Data**.
+After you turn on Settings Sync, the Settings Sync explorer view is available in VS Code. You can access it by opening the Command Palette and selecting **Settings Sync: Show Synced Data**.
 
 :::image type="content" source="../media/2-show-synced-data.png" alt-text="Screenshot of the Settings Sync explorer view in Visual Studio Code.":::
 
@@ -53,6 +53,6 @@ Turning off Settings Sync doesn't delete your synced data from the cloud.
 
 ## How do I delete my synced data from the cloud?
 
-You can delete your synced data from the cloud by opening the Command Palette and selecting **Settings Sync: Show Synced Data**. This command opens the Settings Sync explorer view. From there, you can select the three dots and then select **Clear Data In Cloud**.
+You can delete your synced data from the cloud by opening the Command Palette and selecting **Settings Sync: Show Synced Data**. This command opens the Settings Sync explorer view. From there, select the three dots and then select **Clear Data In Cloud**.
 
-In the next exercise, you enable Settings Sync and explore how to manage your synced data and restore your settings on a new machine.
+In the next exercise, you turn on Settings Sync and explore how to manage your synced data and restore your settings on a new machine.

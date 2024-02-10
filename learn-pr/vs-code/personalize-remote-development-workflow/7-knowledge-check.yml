@@ -17,7 +17,7 @@ quiz:
     - content: "Dev Containers extension"
       isCorrect: false
       explanation: "The Dev Containers extension is required, but you need more than just the Dev Containers extension."
-    - content: "Dev Containers Extension and Docker installed on the VM"
+    - content: "Dev Containers extension and Docker installed on the VM"
       isCorrect: true
       explanation: "You can work in a Docker container on a remote VM by using the Remote - SSH extension and the Dev Containers extension. You also need Docker installed on the VM."
     - content: "Docker installed on the VM"
@@ -28,12 +28,12 @@ quiz:
       - content: "Configure the extensions and settings, and then share the *.vscode* folder with others."
         isCorrect: false
         explanation: "Although sharing the *.vscode* folder would work, it's not the best approach. You would need to share the entire *.vscode* folder, which might contain other settings that you don't want to share."
-      - content: "Configure the desired extensions and settings, and then enable Settings Sync and share the URL with others."
+      - content: "Configure the desired extensions and settings, and then turn on Settings Sync and share the URL with others."
         isCorrect: false
         explanation: "There's no publicly available URL for your Settings Sync configuration. You could share your configuration with others, but you would need to do so manually."
-      - content: "Directly share the User Settings file with others as JSON."
+      - content: "Directly share the user settings file with others as JSON."
         isCorrect: false
-        explanation: "You can share your User Settings file with others, but you need to do so manually."
+        explanation: "You can share your user settings file with others, but you need to do so manually."
       - content: "Create a new profile and export to a GitHub gist."
         isCorrect: true
         explanation: "Profiles are a great way to share a custom VS Code configuration with others. You can create a profile and export it to a GitHub gist, and then share the gist URL with others."
@@ -45,7 +45,7 @@ quiz:
     - content: "Manually sync all VS Code installations because they're separate."
       isCorrect: false
       explanation: "VS Code installations are separate, but you can keep them all in sync automatically."
-    - content: "Enable Settings Sync."
+    - content: "Turn on Settings Sync."
       isCorrect: true
-      explanation: "Settings Sync is the best way to keep your VS Code installations in sync. When you enable Settings Sync, your settings are available everywhere you use VS Code."
+      explanation: "Settings Sync is the best way to keep your VS Code installations in sync. When you turn on Settings Sync, your settings are available everywhere you use VS Code."
   

@@ -12,7 +12,7 @@ In this exercise, you use profiles to create, manage, and switch between VS Code
 1. Name the profile **Remote SSH**.
 1. Leave **Copy from** set to **None**.
 1. Select the gear icon to change the icon for the profile. You can choose any icon that you like.
-1. Take the defaults for all other options.
+1. Accept the defaults for all other options.
 
     :::image type="content" source="../media/3-remote-ssh-profile.png" alt-text="Screenshot of the options for creating a profile in Visual Studio Code.":::
 

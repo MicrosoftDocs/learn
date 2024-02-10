@@ -1,4 +1,4 @@
-In this exercise, you enable Settings Sync and explore how to manage your synced data and restore your settings on a new machine.
+In this exercise, you turn on Settings Sync and explore how to manage your synced data and restore your settings on a new machine.
 
 The ability to sync settings is important in remote development scenarios because when you connect to a remote environment, your VS Code configuration is different from your local machine configuration. When you use Settings Sync, you can easily restore your settings to the remote environment.
 
@@ -37,7 +37,7 @@ Another way to view the status of Settings Sync is to view the Settings Sync log
 
     :::image type="content" source="../media/5-extensions-icon.png" alt-text="Screenshot of the Extension icon in the Activity Bar in Visual Studio Code.":::
 
-1. Search for and install the **Dev Containers** extension.
+1. Search for and install the Dev Containers extension.
 
 ## Sync settings
 
@@ -63,4 +63,4 @@ Because VS Code for the Web is a lightweight environment that you can use to qui
 
 Your editor is now configured with the same settings as your local machine. You can verify that your settings are synced by opening the Settings Sync activity view again. Notice that the profile that you created in the previous exercise is now available in the browser-based editor.
 
-In this exercise, you learned how to enable Settings Sync and restore your settings on a new machine. In the next exercise, you learn how to combine remote environments for a customized remote development experience.
+In this exercise, you learned how to turn on Settings Sync and restore your settings on a new machine. In the next exercise, you learn how to combine remote environments for a customized remote development experience.

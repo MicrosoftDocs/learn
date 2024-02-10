@@ -18,13 +18,13 @@ summary: |
 
 abstract: |
   By the end of this module, you'll be able to:
-    - Enable and configure Settings Sync in Visual Studio Code.
+    - Turn on and configure Settings Sync in Visual Studio Code.
     - Load a personalized version of Visual Studio Code both locally and on the web.
     - Create profiles that are tailored for various projects and remote environments.
     - Combine multiple remote development environments for a customized development experience.
 
 prerequisites: |
-  - Basic understanding of remote development concepts in Visual Studio Code, including dev containers, Windows Subsystem for Linux, the Remote - SSH extension, and GitHub Codespaces.
+  - Basic understanding of remote development concepts in Visual Studio Code, including dev containers, Windows Subsystem for Linux, the Remote - SSH extension, and GitHub Codespaces
 
 iconUrl: /learn/achievements/introduction-to-visual-studio-code.svg
 
