@@ -1,4 +1,4 @@
-SQL Warehouses (formerly known as SQL Endpoints) provide a relational database interface for data in Azure Databricks. The data is stored in files that are abstracted by Delta tables in a hive metastore, but from the perspective of the user or client application, the SQL Warehouse behaves like a relational database.
+SQL Warehouses (formerly known as SQL Endpoints) provide a relational database interface for data in Azure Databricks. The data is stored in files that are abstracted by Delta tables, but from the perspective of the user or client application, the SQL Warehouse behaves like a relational database.
 
 ## Creating a SQL Warehouse
 
