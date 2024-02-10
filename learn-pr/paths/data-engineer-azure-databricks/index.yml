@@ -11,7 +11,7 @@ title: Implement a Data Analytics Solution with Azure Databricks
 prerequisites: |
   None
 summary: |
-  Learn how to harness the power of Apache Spark and powerful clusters running on the Azure Databricks platform to run large data engineering workloads in the cloud.
+  Learn how to harness the power of Apache Spark and powerful clusters running on the Azure Databricks platform to run data analytics workloads in a data lakehouse.
 iconUrl: /training/achievements/data-engineer-azure-databricks.svg
 levels:
 - intermediate
@@ -21,6 +21,7 @@ products:
 - azure-databricks
 subjects:
 - data-engineering
+- data-analytics
 modules:
 - learn.wwl.explore-azure-databricks
 - learn.wwl.use-apache-spark-azure-databricks
