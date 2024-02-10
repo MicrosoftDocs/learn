@@ -4,7 +4,7 @@ SQL Warehouses (formerly known as SQL Endpoints) provide a relational database i
 
 When you create a premium-tier Azure Databricks workspace, it includes a default SQL Warehouse named **Starter Warehouse**, which you can use to explore sample data and get started with SQL-based data analytics in Azure Databricks. You can modify the configuration of the default SQL Warehouse to suit your needs, or you can create more SQL Warehouses in your workspace.
 
-You can manage the SQL Warehouses in your Azure Databricks workspace by using the Azure Databricks portal in the **SQL** persona view.
+You can manage the SQL Warehouses in your Azure Databricks workspace by using the Azure Databricks portal.
 
 ![Screenshot of the SQL Warehouses page in the Azure Databricks portal.](../media/databricks-sql-warehouses.png)
 
