@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.automate-machine-learning-model-selection-azure-machine-learning
 metadata:
-  title: Experiment to find the best machine learning model with Azure Machine Learning
-  description: Learn how to find the best model with automated machine learning (AutoML) and experimentation in notebooks.
+  title: Experiment with Azure Machine Learning
+  description: Learn how to find the best model with automated machine learning (AutoML) and by experimenting in notebooks.
   ms.date: 06/06/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: learning-path
-title: Automate machine learning model selection with Azure Machine Learning
+title: Experiment with Azure Machine Learning
 prerequisites: |
   None
 summary: |
