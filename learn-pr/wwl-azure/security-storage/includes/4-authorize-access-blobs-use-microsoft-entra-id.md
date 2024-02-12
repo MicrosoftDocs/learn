@@ -41,17 +41,17 @@ When you use MSAL to acquire an OAuth token for access to Azure Storage, you nee
 
 When you provide a resource ID that is specific to a single storage account and service, the resource ID is used to acquire a token for authorizing requests to the specified account and service only. The following table lists the value to use for the resource ID, based on the cloud you're working with. Replace `<account-name>` with the name of your storage account.
 
-| **Cloud**            | **Resource ID**                                  |
-| -------------------- | ------------------------------------------------ |
-| Azure Global         | https://account-name.blob.core.windows.net       |
-| Azure Government     | https://account-name.blob.core.usgovcloudapi.net |
-| Azure China 21Vianet | https://account-name.blob.core.chinacloudapi.cn  |
+| **Cloud**            | **Resource ID**                                   |
+| -------------------- | ------------------------------------------------- |
+| Azure Global         | example: account-name.blob.core.windows.net       |
+| Azure Government     | example: account-name.blob.core.usgovcloudapi.net |
+| Azure China 21Vianet | example: account-name.blob.core.chinacloudapi.cn  |
 
 You can also provide a resource ID that applies to any storage account, as shown in the following table. This resource ID is the same for all public and sovereign clouds, and is used to acquire a token for authorizing requests to any storage account.
 
 | **Cloud**                                                    | **Resource ID**            |
 | ------------------------------------------------------------ | -------------------------- |
-| Azure Global<br>Azure Government<br>Azure China 21Vianet<br> | https://storage.azure.com/ |
+| Azure Global<br>Azure Government<br>Azure China 21Vianet<br> | example: storage.azure.com |
 
 ## Assign Azure roles for access rights
 
