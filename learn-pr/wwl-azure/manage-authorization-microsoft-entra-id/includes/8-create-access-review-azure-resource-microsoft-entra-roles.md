@@ -4,11 +4,23 @@ The need for access to privileged Azure resource and Microsoft Entra roles by em
 
 Using Privileged Identity Management requires licenses.
 
-To create access reviews for Azure resources, you must be assigned to the Owner or the User Access Administrator role for the Azure resources. To create access reviews for Microsoft Entra roles, you must be assigned to the Global Administrator or the Privileged Role Administrator role.<br>
+To create access reviews for Azure resources, you must be assigned to the Owner or the User Access Administrator role for the Azure resources. To create access reviews for Microsoft Entra roles, you must be assigned to the Global Administrator or the Privileged Role Administrator role.
+
+## Types of licenses
+
+The following licenses are available for use with Microsoft Entra ID Governance in the commercial cloud. The choice of licenses you need in a tenant depends on the features you're using in that tenant.
+
+ -  Free - Included with Microsoft cloud subscriptions such as Microsoft Azure, Microsoft 365, and others.
+ -  Microsoft Entra ID P1 - Microsoft Entra ID P1 is available as a standalone product or included with Microsoft 365 E3 for enterprise customers and Microsoft 365 Business Premium for small to medium businesses.
+ -  Microsoft Entra ID P2 - Microsoft Entra ID P2 is available as a standalone product or included with Microsoft 365 E5 for enterprise customers.
+ -  Microsoft Entra ID Governance - Microsoft Entra ID Governance is an advanced set of identity governance capabilities available for Microsoft Entra ID P1 and P2 customers, as two products Microsoft Entra ID Governance and Microsoft Entra ID Governance Step Up for Microsoft Entra ID P2. These products contain the basic identity governance capabilities that were in Microsoft Entra ID P2, and additional advanced identity governance capabilities.
 
 Access Reviews for Service Principals require a Microsoft Entra Workload ID Premium plan in addition to Microsoft Entra ID P2 or Microsoft Entra ID Governance licenses.<br>
 
- -  Workload Identities Premium licensing: You can view and acquire licenses on the Workload Identities blade in the Microsoft Entra admin center.<br>
+ -  Workload Identities Premium licensing: You can view and acquire licenses on the Workload Identities blade in the Microsoft Entra admin center.
+
+> [!NOTE]
+> Some Microsoft Entra ID Governance scenarios can be configured to depend upon other features that aren't covered by Microsoft Entra ID Governance.
 
 ## Create access reviews
 
