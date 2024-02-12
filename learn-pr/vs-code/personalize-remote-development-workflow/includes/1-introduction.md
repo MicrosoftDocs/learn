@@ -2,7 +2,7 @@ With the Visual Studio Code (VS Code) remote extensions, you can connect to and 
 
 It's important to know how to customize VS Code for any project or environment so that you can be more productive and focused with only the settings and extensions that you need.
 
-## Scenario: working at an agency
+## Scenario: Working at an agency
 
 Suppose that you work at an agency that does web development projects for large clients. As a developer at this agency, you work in several languages and frameworks. The agency standardized on Docker containers for development environments. These Docker environments make it easier for developers to jump in and out of projects without having to configure their machines for every project that they work on.
 
