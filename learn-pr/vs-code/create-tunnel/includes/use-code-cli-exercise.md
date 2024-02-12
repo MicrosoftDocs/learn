@@ -9,11 +9,11 @@ There are two options to obtain the code CLI: either from the VS Code download p
 ## Using the 'code CLI'
 ### Get the code CLI from the VS Code download page
 
-1. Navigate online to the <a href="https://code.visualstudio.com/#alt-downloads" target="_blank">VS Code download page.</a>
+1. Navigate online to the [VS Code download page.](https://code.visualstudio.com/#alt-downloads)
     
     :::image type="content" source="../media/0-download.png" alt-text="Screenshot of download Page.":::
 
-2. Download & extract the code CLI for your operating system into the ‘TestCLI’ directory
+2. Download and extract the code CLI for your operating system into the ‘TestCLI’ directory
     
     a. After downloading the file, you have a compressed file.
     
@@ -49,7 +49,7 @@ code tunnel --accept-server-license-terms
     
     :::image type="content" source="../media/23-tunnel-link.png" alt-text="Screenshot of link to log in on client with code.":::
 
-3. On your client, open the previously saved link in a web browser and enter the code that was provided in the terminal (note: your code is different) & click continue to activate.
+3. On your client, open the previously saved link in a web browser and enter the code that was provided in your terminal and click continue to activate.
     
     :::image type="content" source="../media/1-sign-in.png" alt-text="Screenshot of device activation page.":::
 

@@ -1,4 +1,4 @@
-:::image type="content" source="../media/15-working-remotely.jpg" alt-text="Screenshot of Woman Working.":::
+:::image type="content" source="../media/15-working-remotely.jpg" alt-text="Photo of Woman Working.":::
 
 It’s common these days that people work remotely, from their home, a coffee shop, or a similar establishment. Regardless of where you work, you want a secure connection between your machine and your company’s resources. It’s important that these connections are secure and encrypted to protect your company. Additionally, it’s advantageous to use tools that make setting up and configuring such connections easier.
 

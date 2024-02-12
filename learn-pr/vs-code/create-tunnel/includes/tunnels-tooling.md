@@ -1,13 +1,13 @@
 
 ## What are tunnels?
 
-:::image type="content" source="../media/16-networks.jpg" alt-text="Screenshot of network servers.":::
+:::image type="content" source="../media/16-networks.jpg" alt-text="Photo of network servers.":::
 
 Tunneling is a networking concept that involves creating a secure and direct connection between two separate networks or devices, allowing data to be transmitted privately across different networks or the internet. Let's discuss a scenario where tunneling is useful.
 
 ### The problems
 
-There's a development team that is spread across various locations. The team needs to interact with a remote server containing essential resources and applications. Securing efficient access is critically required. The server, that is housed within their company's data center, contains vital development tools and databases necessary for the team's work. Given the stringent security policies, direct access to this server from external networks is heavily restricted. In such a situation, traditional solutions, such as VPNs, can be cumbersome and can lead to slow connections, which hinders productivity for developers. 
+There's a development team that is spread across various locations. The team needs to interact with a remote server containing essential resources and applications. Securing efficient access is critically required. The server that is housed within their company's data center contains vital development tools and databases necessary for the team's work. Given the stringent security policies, direct access to this server from external networks is heavily restricted. In such a situation, traditional solutions, such as VPNs, can be cumbersome and can lead to slow connections, which hinder productivity for developers. 
 
 ### Use cases for tunnels 
 
@@ -16,17 +16,17 @@ In the previously mentioned scenario, a developer needs to work on an applicatio
 ## VS Code Remote - Tunnels extension 
 ### Why use it? 
 
-The use of tunneling offers a streamlined solution to many challenges. Extensions are now available for development tools such as VS Code. The VS Code <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-server" target="_blank">Remote - Tunnels extension</a> can effectively eliminate the need for source code to be on your VS Code client machine since the extension runs commands and other extensions directly on the remote machine. This approach is possible because of the <a href="https://code.visualstudio.com/docs/remote/vscode-server" target="_blank">VS Code Server</a>, which is a service that can run on a remote development machine, like your desktop PC or a virtual machine (VM), making it possible to securely connect to that remote machine from anywhere through a local VS Code client, without the requirement of SSH.
+The use of tunneling offers a streamlined solution to many challenges. Extensions are now available for development tools such as VS Code. The VS Code [Remote - Tunnels extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-server) can effectively eliminate the need for source code to be on your VS Code client machine since the extension runs commands and other extensions directly on the remote machine. This approach is possible because of the [VS Code Server](https://code.visualstudio.com/docs/remote/vscode-server), which is a service that can run on a remote development machine, like your desktop PC or a virtual machine (VM), making it possible to securely connect to that remote machine from anywhere through a local VS Code client, without the requirement of SSH.
 
-:::image type="content" source="../media/8-remote-chart.png" alt-text="Screenshot of VS Code & Remote OS chart.":::
+:::image type="content" source="../media/8-remote-chart.png" alt-text="Diagram of VS Code and Remote OS chart.":::
 
 ### Setting up VS Code Remote - Tunnels extension
 
 There are two methods available for setting up tunnels:
 
-- <a href="https://code.visualstudio.com/download" target="_blank">VS Code Desktop.</a> Activate tunneling via the VS Code Desktop user interface (UI). VS Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.
+- [VS Code Desktop.](https://code.visualstudio.com/download) Activate tunneling via the VS Code Desktop user interface (UI). VS Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.
 
-- <a href="https://code.visualstudio.com/docs/editor/command-line" target="_blank">code CLI.</a> Execute the tunnel command available in the code command-line interface (CLI) .  The CLI lets you control how you launch the editor. From the command line, you are using the CLI when performing tasks such as opening files, installing extensions, changing the display language, and outputting diagnostics through command-line options (switches). 
+- [Code CLI.](https://code.visualstudio.com/docs/editor/command-line) Execute the tunnel command available in the code command-line interface (CLI).  The CLI lets you control how you launch the editor. From the command line, you are using the CLI when performing tasks such as opening files, installing extensions, changing the display language, and outputting diagnostics through command-line options (switches). 
 
 :::image type="content" source="../media/9-cli.png" alt-text="Screenshot of CLI Image.":::
 

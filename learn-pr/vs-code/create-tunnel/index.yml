@@ -12,10 +12,10 @@ title: Introduction to Remote - Tunnels extension
 summary: Enable Remote Tunnel Access with VS Code.
 abstract: |
   In this module you will:
-  - Explain what is tunneling & how remote tunnels securely transmit data.  
+  - Explain what is tunneling and how remote tunnels securely transmit data.  
   - Use Remote - Tunnels extension.
 
-iconUrl: /learn/achievements/create-tunnel.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
