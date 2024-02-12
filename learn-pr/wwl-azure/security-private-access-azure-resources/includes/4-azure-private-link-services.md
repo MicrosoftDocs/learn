@@ -5,7 +5,8 @@ Azure Private Link service is the reference to your own service that is powered 
 
 ## Workflow<br>
 
-## :::image type="content" source="../media/azure-private-link-service-workflow-5626baa9.png" alt-text="Diagram showing an example of an Azure Private Link Service workflow."::: 
+:::image type="content" source="../media/azure-private-link-service-workflow-5626baa9.png" alt-text="Diagram showing an example of an Azure Private Link Service workflow.":::
+
 
 ## Create your Private Link Service<br>
 
