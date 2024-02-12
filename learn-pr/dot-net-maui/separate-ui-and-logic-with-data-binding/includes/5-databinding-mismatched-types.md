@@ -26,13 +26,13 @@ This outputs a string to the UI that looks like `You owe 22.0304 to the bank`, b
 string formattedBillAmount = string.Format("{0:C}", BillAmount);
 ```
 
-But to use formatting in data binding, you have to either have the data object provide you that formatted string as a different property, or intercept it some how and format it yourself. Fortunately, .NET MAUI bindings provide a way to format strings, the `StringFormat` binding property. The format string follows the same rules as the `String.Format` method. Enclose the format string in single quotes so that the XAML parser doesn't get confused by the curly braces. String format parameter `0` is the property value processed by the binding.
+But to use formatting in data binding, you have to either have the data object provide you that formatted string as a different property, or intercept it somehow and format it yourself. Fortunately, .NET MAUI bindings provide a way to format strings with the `StringFormat` binding property. The format string follows the same rules as the `String.Format` method. Enclose the format string in single quotes so that the XAML parser doesn't get confused by the curly braces. String format parameter `0` is the property value processed by the binding.
 
 ```xaml
 <Label Text="{Binding BillAmount, StringFormat='You owe {0:C} to the bank'}" />
 ```
 
-Consider the following XAML, which demonstrates displaying the `BillAmount` in both ways:
+Consider the following XAML, which demonstrates displaying the `BillAmount` using both ways:
 
 ```xaml
 <VerticalStackLayout Padding="10">
