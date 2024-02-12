@@ -26,9 +26,8 @@ products:
 - vs-code
 modules:
 - learn.use-docker-container-dev-env-vs-code
-# - learn.introduction-to-codespaces
 - learn.edit-code-using-any-device
-# - learn.create-tunnel
+- learn.create-tunnel
 - learn.develop-on-remote-machine
 - learn.developing-in-wsl
 - learn.personalize-remote-development-workflow
