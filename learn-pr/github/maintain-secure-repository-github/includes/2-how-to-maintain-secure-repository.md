@@ -16,7 +16,7 @@ There are many aspects to building and deploying secure applications. Here are t
 - **There is a general knowledge problem.** Many developers and other staff members assume they understand security, but they don't. Cybersecurity is a constantly evolving discipline. A program of ongoing education and training is essential.
 
 - **Code must be created correctly and securely.** We need to be sure that the code is created correctly and securely implements the required features. We also need to make sure that the features were designed with security in mind.
-- 
+
 - **Applications must comply with rules and regulations.** We need to make sure that the code complies with required rules and regulations. We have to test for compliance while building the code and then retest periodically, even after deployment.
 
 ### Security at every step
