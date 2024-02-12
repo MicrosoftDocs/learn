@@ -74,7 +74,7 @@ Notice that when you press the **Refresh** button, the **Condition** field chang
 
 ## Convert Farenheight to Celsius
 
-The final converter for the app is one that lets the **Use Celsius** change the **Temperature** value. This one is a bit more involved than the previous converter.
+The final converter for the app is one that lets the **Use Celsius** switch change the **Temperature** value. This one is a bit more involved than the previous converter.
 
 01. Add a new class to the _Converters_ folder named _FahrenheitToCelsiusConverter.cs_.
 01. Open _FahrenheitToCelsiusConverter.cs_ in the code editor and replace all the code with the following:
@@ -109,7 +109,7 @@ The final converter for the app is one that lets the **Use Celsius** change the 
     }
     ```
 
-    An important difference between this converter and the previous is the `IsActive` property. This property is controlling whether or not the converter will convert the incoming Fahrenheit value to Celsius. Converters that are applied to the binding are always active. There are times when you want to prevent a converter from changing the value. This is usually done in the `Convert` method directly, using the `parameter` as a toggle. This converter takes a different approach of exposing a public property to turn the converter on and off.
+    An important difference between this converter and the previous is the `IsActive` property. This property is controlling whether or not the converter will convert the incoming Fahrenheit value to Celsius. Converters that are applied to the binding are always active. There are times when you want to prevent a converter from changing the value. This is usually done in the `Convert` method directly, using `parameter` as a toggle. This converter takes a different approach of exposing a public property to turn the converter on and off.
 
     This converter also formats the resulting string with a `C` or `F` moniker indicating Celsius or Fahrenheit.
 
@@ -152,7 +152,7 @@ Now that the converter exists and is attached to the temperature label, we need 
     IsToggled="{Binding IsActive, Mode=OneWayToSource, Source={StaticResource FahrenheitToCelsiusConverter}}"
     ```
 
-    This binding binds to the converter `FahrenheitToCelsiusConverter.IsActive` property. It uses the mode `OneWayToSource`. This inverts the binding so that instead of the source property (`IsActive`) controlling the target (`IsToggled`); the target sets the source. When the switch control is interacted with, changing the **target** `IsToggled` property, the converter updates the **source** `FahrenheitToCelsiusConverter.IsActive` property to match.
+    This binding binds to the converter `FahrenheitToCelsiusConverter.IsActive` property. It uses the mode `OneWayToSource`. This inverts the binding so that instead of the source property (`IsActive`) controlling the target (`IsToggled`), the target sets the source. When the switch control is interacted with, changing the **target** `IsToggled` property, the converter updates the **source** `FahrenheitToCelsiusConverter.IsActive` property to match.
 
 01. Next, open the _Mainpage.xaml.cs_ code-behind file.
 01. Find the `swiCelsius_Toggled` method and the change code.
