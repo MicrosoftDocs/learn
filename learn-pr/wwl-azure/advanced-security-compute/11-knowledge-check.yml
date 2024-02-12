@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/28/2023
+  ms.date: 02/12/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/11-knowledge-check.md)]
@@ -47,25 +49,25 @@ quiz:
     - content: "To assign specific permissions to users, service principals, or other identities that need to interact with a registry."
       isCorrect: true
       explanation: "Correct. Azure RBAC allows for fine-grained control over permissions for interacting with an Azure Container Registry."
-  - content: "What is the purpose of Azure DevTest Labs?"
+  - content: "A company is using Azure Container Instances to host their containerized applications. They want to optimize the resource settings for their container groups. Which Azure service can provide insight into the compute resources used by their container instances and help determine the best resource settings?"
     choices:
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-      isCorrect: false
-      explanation: "Incorrect. This is the definition of Azure Resource Manager."
-    - content: "A cloud-based service that provides a central location for managing keys, secrets, and certificates."
-      isCorrect: false
-      explanation: "Incorrect. This is the definition of Azure Key Vault."
-    - content: "Provides developers and testers a self-service sandbox environment to quickly create and deploy environments for testing and experimentation."
-      isCorrect: true
-      explanation: "Correct. Azure DevTest Labs is a service that provides developers and testers a self-service sandbox environment to quickly create and deploy environments for testing and experimentation."
-  - content: "A DevOps engineer needs to enable automation and validation of the creation and teardown of environments to deliver secure and stable application hosting platforms. Which Azure service can be used for this purpose?"
-    choices:
-    - content: "Azure Logic Apps"
-      isCorrect: false
-      explanation: "Incorrect. Azure Logic Apps is a cloud-based service that provides a way to schedule, automate, and orchestrate tasks, business processes, and workflows when you need to integrate apps, data, systems, and services across enterprises or organizations."
     - content: "Azure Functions"
       isCorrect: false
       explanation: "Incorrect. Azure Functions is a serverless compute service that enables developers to run event-triggered code without having to explicitly provision or manage infrastructure."
-    - content: "Azure Resource Manager (ARM)"
+    - content: "Azure Logic Apps"
+      isCorrect: false
+      explanation: "Incorrect. Azure Logic Apps is a cloud-based service that provides a way to create workflows that integrate with various systems and services."
+    - content: "Azure Monitor"
       isCorrect: true
-      explanation: "Correct. Azure Resource Manager (ARM) enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      explanation: "Correct. Azure Monitor provides insight into the compute resources used by container instances and helps determine the best resource settings for container groups."
+  - content: "A team is managing a multitenant cluster in AKS and wants to isolate resources. What Kubernetes feature creates a logical isolation boundary for workloads and resources?"
+    choices:
+    - content: "Pod disruption budgets"
+      isCorrect: false
+      explanation: "Incorrect. Pod disruption budgets are used for ensuring high availability during node maintenance."
+    - content: "Resource quotas"
+      isCorrect: false
+      explanation: "Incorrect. Resource quotas are used for scheduling and limiting resource usage."
+    - content: "Kubernetes Namespace"
+      isCorrect: true
+      explanation: "Correct. A Kubernetes Namespace creates a logical isolation boundary for workloads and resources, allowing teams and workloads to be isolated in the same cluster."
