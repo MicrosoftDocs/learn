@@ -53,8 +53,8 @@ Access Reviews for Service Principals require a Microsoft Entra Workload ID Prem
 14. In the **Reviewers** section, select one or more people to review all the users. Or you can select to have the members review their own access.<br>
 
  -  **Selected users** \- Use this option to designate a specific user to complete the review. This option is available regardless of the scope of the review, and the selected reviewers can review users, groups and service principals.
- -  **Members (self)** \- Use this option to have the users review their own role assignments. This option is only available if the review is scoped to Users and Groups or Users. For Microsoft Entra roles, role-assignable groups will not be a part of the review when this option is selected.
- -  **Manager** – Use this option to have the user’s manager review their role assignment. This option is only available if the review is scoped to Users and Groups or Users. Upon selecting Manager, you will also have the option to specify a fallback reviewer. Fallback reviewers are asked to review a user when the user has no manager specified in the directory. For Microsoft Entra roles, role-assignable groups will be reviewed by the fallback reviewer if one is selected.
+ -  **Members (self)** \- Use this option to have the users review their own role assignments. This option is only available if the review is scoped to Users and Groups or Users. For Microsoft Entra roles, role-assignable groups won't be a part of the review when this option is selected.
+ -  **Manager** – Use this option to have the user’s manager review their role assignment. This option is only available if the review is scoped to Users and Groups or Users. Upon selecting Manager, you'll also have the option to specify a fallback reviewer. Fallback reviewers are asked to review a user when the user has no manager specified in the directory. For Microsoft Entra roles, role-assignable groups will be reviewed by the fallback reviewer if one is selected.
 
 ## Upon completion settings
 
@@ -62,14 +62,14 @@ Access Reviews for Service Principals require a Microsoft Entra Workload ID Prem
 
 2. If you want to automatically remove access for users that were denied, set Auto apply results to resource to Enable. If you want to manually apply the results when the review completes, set the switch to Disable.<br>
 
-3. Use the If reviewer doesn't respond list to specify what happens for users that are not reviewed by the reviewer within the review period. This setting does not impact users who were reviewed by the reviewers.
+3. Use the If reviewer doesn't respond list to specify what happens for users that aren't reviewed by the reviewer within the review period. This setting doesn't impact users who were reviewed by the reviewers.
 
  -  No change - Leave user's access unchanged
  -  Remove access - Remove user's access
  -  Approve access - Approve user's access
  -  Take recommendations - Take the system's recommendation on denying or approving the user's continued access
 
-4. Use the Action to apply on denied guest users list to specify what happens for guest users that are denied. This setting is not editable for Microsoft Entra ID and Azure resource role reviews at this time; guest users, like all users, will always lose access to the resource if denied.
+4. Use the Action to apply on denied guest users list to specify what happens for guest users that are denied. This setting isn't editable for Microsoft Entra ID and Azure resource role reviews at this time; guest users, like all users, will always lose access to the resource if denied.
 
 5. You can send notifications to additional users or groups to receive review completion updates. This feature allows for stakeholders other than the review creator to be updated on the progress of the review. To use this feature, select Select User(s) or Group(s) and add an additional user or group upon you want to receive the status of completion.<br>
 
@@ -83,6 +83,6 @@ Access Reviews for Service Principals require a Microsoft Entra Workload ID Prem
 
 4. Set Mail notifications to Enable to have Microsoft Entra ID send email notifications to reviewers when an access review starts, and to administrators when a review completes.<br>
 
-5. Set Reminders to Enable to have Microsoft Entra ID send reminders of access reviews in progress to reviewers who have not completed their review.<br>
+5. Set Reminders to Enable to have Microsoft Entra ID send reminders of access reviews in progress to reviewers who haven't completed their review.<br>
 
 6. The content of the email sent to reviewers is auto-generated based on the review details, such as review name, resource name, due date, etc. If you need a way to communicate additional information such as additional instructions or contact information, you can specify these details in the Additional content for reviewer email which will be included in the invitation and reminder emails sent to assigned reviewers. The highlighted section below is where this information will be displayed.
