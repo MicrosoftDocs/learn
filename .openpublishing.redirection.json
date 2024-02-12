@@ -34555,6 +34555,31 @@
       "source_path": "learn-pr/iot/build-a-tcp-echo-client/6-summary.yml",
       "redirect_url": "https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/netx-duo/index.md",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/5-microsoft-entra-verified-id.md",
+      "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/8-microsoft-entra-verified-id",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/6-configure-microsoft-entra-verified-id.md",
+      "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/9-configure-microsoft-entra-verified-id",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/7-enforce-premises-microsoft-entra-password-protection.md",
+      "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/5-enforce-premises-microsoft-entra-password-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/8-configure-microsoft-entra-single-sign-on.md",
+      "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/6-configure-microsoft-entra-single-sign-on",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/9-integrate-applications-with-microsoft-entra-id.md",
+      "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/7-integrate-applications-with-microsoft-entra-id",
+      "redirect_document_id": false
     }
   ]
 }

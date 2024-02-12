@@ -4,10 +4,12 @@ title: Plan and implement Network Security Groups (NSGs) and Application Securit
 metadata:
   title: Plan and implement Network Security Groups (NSGs) and Application Security Groups (ASGs)
   description: "Plan and implement Network Security Groups (NSGs) and Application Security Groups (ASGs)"
-  ms.date: 02/07/2024
+  ms.date: 02/12/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/2-network-security-groups-application-security-groups.md)]

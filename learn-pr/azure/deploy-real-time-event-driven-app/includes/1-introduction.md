@@ -2,7 +2,7 @@ Application stacks, which describe the real-world scenario the best, tend to be 
 
 ## Learning objectives
 
-By the end of this module, you'll be able to:
+By the end of this module, you're able to:
 
 - Explain event-driven and real-time workloads by example.
 - Create a scenario with simulated telemetric data.
@@ -12,8 +12,8 @@ By the end of this module, you'll be able to:
 
 ## Prerequisites
 
-As a Java developer, you're already familiar with NoSQL databases and how to connect them with functions. As you complete the exercises in this module, you'll use a personal Azure account. Make sure that you have the following resources:
+As a Java developer, you're already familiar with NoSQL databases and how to connect them with functions. To complete the exercises in this module, use a personal Azure account. Make sure that you have the following resources:
   
 - An Azure subscription
-- Local installations of Java JDK (1.8 or later), Maven (3.0 or later), and the Azure CLI (2.12 or later)
+- Local installations of Java JDK (17 or later), Maven (3.0 or later), and the Azure CLI (2.12 or later)
 - Azure Functions Core Tools (4x)
