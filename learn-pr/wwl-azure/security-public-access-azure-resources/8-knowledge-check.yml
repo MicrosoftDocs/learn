@@ -18,10 +18,10 @@ quiz:
     choices:
     - content: "It applies the same mitigation policies for all customers."
       isCorrect: false
-      explanation: "Incorrect. This would not provide tailored protection policies for each customer."
+      explanation: "Incorrect. This wouldn't provide tailored protection policies for each customer."
     - content: "It relies on customers to configure their own protection policies."
       isCorrect: false
-      explanation: "Incorrect. This would not provide tailored protection policies for each customer."
+      explanation: "Incorrect. This wouldn't provide tailored protection policies for each customer."
     - content: "It automatically learns per customer per Public IP traffic patterns for Layer 3 and 4."
       isCorrect: true
       explanation: "Correct. Azure DDoS Protection uses automatic learning of per customer per Public IP traffic patterns for Layer 3 and 4 to provide tailored protection policies for each customer."
@@ -51,10 +51,10 @@ quiz:
     choices:
     - content: "DDoS Protection Key Features"
       isCorrect: false
-      explanation: "Incorrect. DDoS Protection Key Features provides always-on traffic monitoring, adaptive real-time tuning, and DDoS protection analytics, metrics, and alerting, but it does not offer additional value-added services such as rapid response support, cost protection, and discounts on WAF."
+      explanation: "Incorrect. DDoS Protection Key Features provides always-on traffic monitoring, adaptive real-time tuning, and DDoS protection analytics, metrics, and alerting, but it doesn't offer additional value-added services such as rapid response support, cost protection, and discounts on WAF."
     - content: "DDoS Network Protection"
       isCorrect: false
-      explanation: "Incorrect. DDoS Network Protection is automatically tuned to help protect specific Azure resources in a virtual network, but it does not offer additional value-added services such as rapid response support, cost protection, and discounts on WAF."
+      explanation: "Incorrect. DDoS Network Protection is automatically tuned to help protect specific Azure resources in a virtual network, but it doesn't offer additional value-added services such as rapid response support, cost protection, and discounts on WAF."
     - content: "DDoS IP Protection"
       isCorrect: true
       explanation: "Correct. DDoS IP Protection is a pay-per-protected-IP model that offers the same core engineering features as DDoS Network Protection, but with additional value-added services such as rapid response support, cost protection, and discounts on WAF."
@@ -62,10 +62,10 @@ quiz:
     choices:
     - content: "DDoS Protection Key Features"
       isCorrect: false
-      explanation: "Incorrect. DDoS Protection Key Features provides always-on traffic monitoring, adaptive real-time tuning, and DDoS mitigation analytics, metrics, and alerting, but it does not offer the pay-per-protected-IP model or additional value-added services of DDoS IP Protection."
+      explanation: "Incorrect. DDoS Protection Key Features provides always-on traffic monitoring, adaptive real-time tuning, and DDoS mitigation analytics, metrics, and alerting, but it doesn't offer the pay-per-protected-IP model or additional value-added services of DDoS IP Protection."
     - content: "DDoS Network Protection"
       isCorrect: false
-      explanation: "Incorrect. DDoS Network Protection is automatically tuned to help protect specific Azure resources in a virtual network, but it does not offer the additional value-added services of DDoS IP Protection."
+      explanation: "Incorrect. DDoS Network Protection is automatically tuned to help protect specific Azure resources in a virtual network, but it doesn't offer the additional value-added services of DDoS IP Protection."
     - content: "DDoS IP Protection"
       isCorrect: true
       explanation: "Correct. DDoS IP Protection is a pay-per-protected-IP model that offers additional value-added services such as rapid response support, cost protection, and discounts on WAF."
@@ -73,10 +73,10 @@ quiz:
     choices:
     - content: "Modifications to the request"
       isCorrect: false
-      explanation: "Incorrect. This setting does not affect the encryption of traffic between the application gateway and backend servers."
+      explanation: "Incorrect. This setting doesn't affect the encryption of traffic between the application gateway and backend servers."
     - content: "Backend server DNS resolution"
       isCorrect: false
-      explanation: "Incorrect. This setting does not affect the encryption of traffic between the application gateway and backend servers."
+      explanation: "Incorrect. This setting doesn't affect the encryption of traffic between the application gateway and backend servers."
     - content: "Port and protocol"
       isCorrect: true
       explanation: "Correct. The port and protocol used in HTTP settings determine whether the traffic between the application gateway and backend servers is encrypted, accomplishing end-to-end TLS."
