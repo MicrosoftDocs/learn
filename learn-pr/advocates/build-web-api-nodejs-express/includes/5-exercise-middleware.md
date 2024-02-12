@@ -57,28 +57,36 @@ In this exercise, continue to use the [dev container](https://code.visualstudio.
 In a code editor, open the **client.js** application file and inspect the contents:
 
 ```javascript
-const http = require("http");
+const http = require('http');
 
-http.get(
-  {
-    port: 3000,
-    hostname: "localhost",
-    path: "/users",
-    headers: {},
-  },
-  (res) => {
-    console.log(`connected - statusCode: ${res.statusCode}`);
-    res.on("data", (chunk) => {
-      console.log("chunk", "" + chunk);
-    });
-    res.on("end", () => {
-      console.log("No more data");
-    });
-    res.on("close", () => {
-      console.log("Closing connection");
-    });
-  }
-);
+const options = {
+  port: 3000,
+  hostname: 'localhost',
+  path: '/users',
+  headers: {}
+};
+
+const req = http.get(options, (res) => {
+  console.log(`Connected - Status Code ${res.statusCode}`);
+
+  res.on('data', (chunk) => {
+    console.log("Chunk data: ", chunk.toString());
+  });
+
+  res.on('end', () => {
+    console.log('No more data');
+  });
+
+  res.on('close', () => {
+    console.log('Connection closed');
+  });
+});
+
+req.on('error', (error) => {
+  console.error('An error occurred: ', error);
+});
+
+req.end();
 ```
 
 This code is a simple HTTP client that connects to the Express application. It's not a web browser. It doesn't render HTML. It just connects to the server and reads the data that's returned. It is a good example of using the HTTP module from Node.js.
@@ -128,14 +136,14 @@ To protect this route, we'll add some code to the Express application.
 
    ```javascript
    function isAuthorized(req, res, next) {
-     const auth = req.headers.authorization;
-     if (auth === 'secretpassword') {
-       next();
-     } else {
-       res.status(401);
-       res.send('Not permitted');
-     }
-   }
+      const authHeader = req.headers.authorization;
+    
+      if (!authHeader || authHeader !== 'secretpassword') {
+        return res.status(401).send('Unauthorized: Access Denied');
+      }
+    
+      next();
+    }
    ```
 
 1. Next, locate the following section of code in the same file:
