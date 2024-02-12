@@ -16,7 +16,11 @@ You can integrate your cloud-enabled software as service (SaaS) applications wit
  -  Salesforce
  -  SAP (Systems, Applications, and Products in Data Processing) Cloud Identity Platform
 
-## Example: Microsoft Entra SSO integration with Slack
+## Example: Integrating Slack with Microsoft Entra ID enables you to:
+
+ -  Control who has access to Slack in Microsoft Entra ID.
+ -  Enable your users to be automatically signed in to Slack with their Microsoft Entra accounts.
+ -  Manage your accounts in one central location.
 
 ## Prerequisites
 
@@ -145,7 +149,7 @@ In this section, you'll create a test user called B.Simon.
  -  Select the **Show password** check box, and then write down the value that's displayed in the **Password** box.
  -  Select **Review + create**.
 
-Select **Create**.
+5. Select **Create**.
 
 ## Assign the Microsoft Entra test user
 
