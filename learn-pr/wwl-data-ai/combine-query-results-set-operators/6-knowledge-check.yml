@@ -27,13 +27,13 @@ quiz:
     choices:
     - content: "EXCEPT"
       isCorrect: false
-      explanation: "That's incorrect. The EXCEPT set operator will return rows that are in one result set, but not the other."
+      explanation: "That's incorrect. The EXCEPT set operator returns rows that are in one result set, but not the other."
     - content: "INTERSECT"
       isCorrect: true
-      explanation: "That's correct. The INTERSECT set operator will return rows that are in both result sets."
+      explanation: "That's correct. The INTERSECT set operator returns rows that are in both result sets."
     - content: "OUTER APPLY"
       isCorrect: false
-      explanation: "That's incorrect. OUTER APPLY is a table operator will return rows from two result sets."
+      explanation: "That's incorrect. OUTER APPLY is a table operator returns rows from two result sets."
   - content: "What type of result does the APPLY operator return?"
     choices:
     - content: "Table-valued"
