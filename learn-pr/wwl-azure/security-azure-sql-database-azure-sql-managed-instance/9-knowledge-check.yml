@@ -41,9 +41,9 @@ quiz:
     - content: "Create an SQL Database Administrator"
       isCorrect: false
       explanation: "The SQL Database Admin account would offer too much access the users."
-    - content: "Create an Microsoft Entra ID Database Administrator"
+    - content: "Create a Microsoft Entra ID Database Administrator"
       isCorrect: false
-      explanation: "An Microsoft Entra ID Database admin could only configure and manage the database."
+      explanation: "A Microsoft Entra ID Database admin could only configure and manage the database."
     - content: "Create users in each database"
       isCorrect: true
       explanation: "Don't create users in the Master db. Instead, contained users should be created on each database."
@@ -62,10 +62,10 @@ quiz:
     choices:
     - content: "Manually apply labels to each asset in the Microsoft Purview Data Map."
       isCorrect: false
-      explanation: "Incorrect. This would be a time-consuming process and would not be efficient for applying labels to multiple assets."
+      explanation: "Incorrect. This would be a time-consuming process and wouldn't be efficient for applying labels to multiple assets."
     - content: "Create autolabeling rules for each asset individually."
       isCorrect: false
-      explanation: "Incorrect. This would be a time-consuming process and would not be efficient for applying labels to multiple assets."
+      explanation: "Incorrect. This would be a time-consuming process and wouldn't be efficient for applying labels to multiple assets."
     - content: "Create new or apply existing sensitivity labels in the Microsoft Purview compliance portal, register and scan the asset in the Microsoft Purview Data Map, and Microsoft Purview will automatically apply classifications and labels based on autolabeling rules."
       isCorrect: true
       explanation: "Correct. The company needs to create or apply existing sensitivity labels in the Microsoft Purview compliance portal, register and scan the asset in the Microsoft Purview Data Map, and Microsoft Purview will automatically apply classifications and labels based on autolabeling rules."
