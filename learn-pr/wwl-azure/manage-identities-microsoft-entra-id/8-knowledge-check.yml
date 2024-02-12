@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/29/2024
+  ms.date: 02/12/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -14,17 +14,6 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A company wants to ensure that their application hosting platforms are secure and stable. Which of the following enables the automation and validation of the creation and teardown of environments to help deliver this?"
-    choices:
-    - content: "Microsoft Entra B2C"
-      isCorrect: false
-      explanation: "Incorrect. Microsoft Entra B2C is a service that allows customers to sign in with an identity they've already established."
-    - content: "Microsoft Entra External ID"
-      isCorrect: false
-      explanation: "Incorrect. Microsoft Entra External ID is built on the same technology as Microsoft Entra B2C, but it's a separate service with some feature differences."
-    - content: "Infrastructure as Code"
-      isCorrect: true
-      explanation: "Correct. Infrastructure as Code enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
   - content: "A company wants to collaborate with a vendor outside of their organization. Which capability of Microsoft Entra External ID should they use?"
     choices:
     - content: "B2C collaboration"
@@ -69,3 +58,14 @@ quiz:
     - content: "Microsoft Entra entitlement management"
       isCorrect: true
       explanation: "Correct. Microsoft Entra entitlement management is an identity governance feature that lets you manage identity and access for external users at scale by automating access request workflows, access assignments, reviews, and expiration."
+  - content: "A company wants to create a sign-up experience for external users who want to access their apps. What options can they provide as part of the sign-up flow?"
+    choices:
+    - content: "Collecting information about the user is not possible in a self-service sign-up user flow."
+      isCorrect: false
+      explanation: "Incorrect. Collecting information about the user is possible in a self-service sign-up user flow."
+    - content: "API connectors cannot be used to integrate self-service sign-up user flows with external cloud systems."
+      isCorrect: false
+      explanation: "Incorrect. API connectors can be used to integrate self-service sign-up user flows with external cloud systems."
+    - content: "Providing options for different social or enterprise identity providers."
+      isCorrect: true
+      explanation: "Correct. As part of the sign-up flow, a company can provide options for different social or enterprise identity providers."
