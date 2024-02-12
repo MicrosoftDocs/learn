@@ -1,4 +1,4 @@
-In this exercise, you convert an app that uses events and code-behind to one that uses mostly data binding. The sample app is weather forecasting app that displays the weather for the day.
+In this exercise, you'll convert an app that uses events and code-behind to one that uses mostly data binding. The sample app is a weather forecasting app that displays the weather for the day.
 
 ## Download and run the sample
 
@@ -10,7 +10,7 @@ To start this exercise module, download the [Weather Sample]() project. This pro
 
     :::image type="content" source="../media/4-exercise-replace-code-with-data-bindings/app2.png" alt-text="A weather app showing the weather for the day.":::
 
-01. For reference, here's a summary of the classes and files you work with in this exercise.
+01. For reference, here's a summary of the classes and files you'll work with in this exercise.
 
     | File                         | Description                                                                                                                                          |
     |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
