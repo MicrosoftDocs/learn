@@ -17,8 +17,8 @@ To start this exercise module, download the [Weather Sample]() project. This pro
     | _MainPage.xaml_              | Defines the UI and logic for the initial page. The **XAML** file defines the UI by using markup.                                                     |
     | _MainPage.xaml.cs_           | Defines the UI and logic for the initial page. The associated code-behind file that contains the code related to the UI defined by _MainPage.xaml_. |
     | _Services\WeatherService.cs_ | This class simulates a weather reporting service. It contains a single method named `GetWeather` that returns a `WeatherData` type.                 |
-    | _Models\WeatherData.cs       | Contains the weather data. This is a simple record type that provides the day's temperature, precipitation, humidity, wind, and condition.           |
-    | _Models\WeatherType.cs       | An enumeration of the weather condition, sunny or cloudy.                                                                                            |
+    | _Models\WeatherData.cs_      | Contains the weather data. This is a simple record type that provides the day's temperature, precipitation, humidity, wind, and condition.           |
+    | _Models\WeatherType.cs_      | An enumeration of the weather condition, sunny or cloudy.                                                                                            |
 
 ## Set the binding context
 
