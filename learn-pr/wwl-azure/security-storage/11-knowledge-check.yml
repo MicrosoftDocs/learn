@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/28/2023
+  ms.date: 02/12/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -47,17 +47,6 @@ quiz:
     - content: "Using either Microsoft Entra ID or a shared access signature SAS"
       isCorrect: true
       explanation: "Correct. Microsoft recommends that clients use either Microsoft Entra ID or a shared access signature SAS to authorize access to data in Azure Storage."
-  - content: "What does Azure Files enable for application hosting platforms?"
-    choices:
-    - content: "Enables automatic creation and teardown of environments without validation"
-      isCorrect: false
-      explanation: "Incorrect. Automatic creation and teardown without validation can lead to security vulnerabilities."
-    - content: "Enables manual creation and teardown of environments"
-      isCorrect: false
-      explanation: "Incorrect. Manual creation and teardown are not efficient or secure."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
-      isCorrect: true
-      explanation: "Correct. Azure Files enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
   - content: "What is the purpose of authorizing access to resources in Azure Storage?"
     choices:
     - content: "To restrict access to resources only to users with Microsoft Entra Domain Services authorization"
@@ -69,3 +58,14 @@ quiz:
     - content: "To ensure that resources are accessible only when authorized and only to those users or applications to whom access is granted"
       isCorrect: true
       explanation: "Correct. Authorization ensures that resources are secure and only accessible to authorized users or applications."
+  - content: "A company wants to ensure that only authorized users have access to their Azure Storage resources. Which of the following authorization options should they use to achieve this?"
+    choices:
+    - content: "Anonymous public read access"
+      isCorrect: false
+      explanation: "Incorrect. This option allows anyone to access the resources without any authorization."
+    - content: "Shared Key storage account key"
+      isCorrect: false
+      explanation: "Incorrect. While this option provides authorization, it requires storing the account access key with the code, which is not recommended for security reasons."
+    - content: "Microsoft Entra ID"
+      isCorrect: true
+      explanation: "Correct. This option provides fine-grained access control to users, groups, or applications via role-based access control (RBAC) and avoids the need to store the account access key with the code."
