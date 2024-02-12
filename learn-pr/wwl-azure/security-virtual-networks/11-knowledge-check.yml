@@ -4,27 +4,18 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/07/2024
+  ms.date: 02/12/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/11-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A company wants to ensure secure and stable application hosting platforms. Which of the following enables the automation and validation of the creation and teardown of environments?"
-    choices:
-    - content: "Network Security Group"
-      isCorrect: false
-      explanation: "Incorrect. Network Security Groups are used to filter network traffic between Azure resources in an Azure virtual network."
-    - content: "Azure Virtual Network"
-      isCorrect: false
-      explanation: "Incorrect. Azure Virtual Network is a logical representation of an organization's network infrastructure."
-    - content: "Azure DevOps"
-      isCorrect: true
-      explanation: "Correct. Azure DevOps enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
   - content: "A company is migrating their applications to a PaaS environment. They want to ensure that their security perimeter is strong and secure. Which of the following is a best practice for managing the identity perimeter?"
     choices:
     - content: "Store credentials and secrets in source code or GitHub."
@@ -69,3 +60,14 @@ quiz:
     - content: "The security rules in the network security group associated with the network interface"
       isCorrect: true
       explanation: "Correct. The security rules in the network security group associated with the network interface are processed first for inbound traffic."
+  - content: "A company wants to establish network topologies that combine cross premises connectivity with inter virtual network connectivity. Which Azure feature allows them to do this?"
+    choices:
+    - content: "Azure Virtual Network Gateway"
+      isCorrect: false
+      explanation: "Incorrect. Azure Virtual Network Gateway is used to establish secure, cross-premises connectivity between an on-premises network and Azure."
+    - content: "Azure Resource Manager"
+      isCorrect: false
+      explanation: "Incorrect. Azure Resource Manager is a deployment model used to manage resources in Azure."
+    - content: "VNet peering"
+      isCorrect: true
+      explanation: "Correct. VNet peering allows the establishment of network topologies that combine cross premises connectivity with inter virtual network connectivity without using a virtual network gateway."
