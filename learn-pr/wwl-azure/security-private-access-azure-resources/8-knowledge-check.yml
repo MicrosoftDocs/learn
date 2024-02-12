@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/29/2023
+  ms.date: 02/12/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -25,17 +25,6 @@ quiz:
     - content: "To host web and mobile applications"
       isCorrect: true
       explanation: "Correct. Azure App Service is a fully managed platform for building, deploying, and scaling web and mobile applications."
-  - content: "A company wants to ensure secure and stable application hosting platforms. Which of the following enables automation and validation of the creation and teardown of environments?"
-    choices:
-    - content: "Virtual network service endpoint policies"
-      isCorrect: false
-      explanation: "Incorrect. Virtual network service endpoint policies filter virtual network traffic to Azure services."
-    - content: "Microsoft Entra ID tenants"
-      isCorrect: false
-      explanation: "Incorrect. Microsoft Entra ID tenants allow for multiple endpoints across different tenants."
-    - content: "Azure DevOps"
-      isCorrect: true
-      explanation: "Correct. Azure DevOps enables automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
   - content: "A company wants to route traffic for their custom containers through virtual network integration. What must they ensure is configured in addition to the routing setting?"
     choices:
     - content: "Database backup is supported over the virtual network integration."
@@ -58,14 +47,25 @@ quiz:
     - content: "Azure App Service"
       isCorrect: true
       explanation: "Correct. Azure App Service is a fully managed platform for building, deploying, and scaling web and mobile applications. It provides automatic scaling and high availability features."
-  - content: "A company wants to enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms. Which feature should they use?"
+  - content: "A company wants to create a Private Link service in Azure. What is the purpose of an alias in a Private Link service?"
     choices:
-    - content: "Azure Virtual Network"
+    - content: "To restrict access to the service to a limited set of trusted subscriptions."
       isCorrect: false
-      explanation: "Incorrect. Azure Virtual Network is used for routing traffic between Azure resources."
-    - content: "Azure DNS Private Zones"
+      explanation: "Incorrect. This is the purpose of the 'Restricted by subscription' visibility setting, not the alias."
+    - content: "To restrict access to the service based on role-based access control only."
       isCorrect: false
-      explanation: "Incorrect. Azure DNS Private Zones are used for managing DNS resolution for private endpoints."
-    - content: "Azure DevTest Labs"
+      explanation: "Incorrect. This is the purpose of the 'Role based access control only' visibility setting, not the alias."
+    - content: "To provide a globally unique name for the service that can be shared with customers and used to request a connection to the service."
       isCorrect: true
-      explanation: "Correct. Azure DevTest Labs enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      explanation: "Correct. The alias is a globally unique name for the service that can be shared with customers and used to request a connection to the service. It helps mask the customer data for the service and creates an easy-to-share name for the service."
+  - content: "A company wants to securely connect to an Azure service using a private IP address. Which of the following options should they use?"
+    choices:
+    - content: "Virtual network interface"
+      isCorrect: false
+      explanation: "Incorrect. A virtual network interface does not provide a private IP address for connecting to an Azure service."
+    - content: "Public endpoint"
+      isCorrect: false
+      explanation: "Incorrect. A public endpoint is not a secure way to connect to an Azure service."
+    - content: "Private endpoint"
+      isCorrect: true
+      explanation: "Correct. A private endpoint provides a private and secure connection to an Azure service using a private IP address from the virtual network."
