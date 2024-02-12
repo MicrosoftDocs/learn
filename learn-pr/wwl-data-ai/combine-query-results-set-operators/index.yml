@@ -2,8 +2,8 @@
 uid: learn.wwl.combine-query-results-set-operators
 metadata:
   title: Combine query results with set operators
-  description: "Combine query results with set operators"
-  ms.date: 02/09/2024
+  description: "Combine query results with set operators using Transact-SQL."
+  ms.date: 02/12/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
