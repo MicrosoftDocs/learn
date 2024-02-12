@@ -25,7 +25,7 @@ quiz:
         - content: code –t 
           isCorrect: false
           explanation: This answer is incorrect. The correct command is 'code tunnel.'
-    - content: What format seems correct for a vscode.dev URL tied to a remote machine & folder? 
+    - content: What format seems correct for a vscode.dev URL tied to a remote machine and folder? 
       choices:
         - content: vscode.dev/tunnel/<folder_name>/<machine_name>
           isCorrect: true
