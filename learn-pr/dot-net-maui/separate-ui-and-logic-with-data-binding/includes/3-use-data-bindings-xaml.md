@@ -2,7 +2,7 @@ Data bindings can be declared in either code or in XAML using markup extensions.
 
 ## What are data bindings
 
-A _binding_ ties two properties together. One property is in your UI and the other is in your data-model object. If the value of either property changes, the binding object can update the other one. In other words, bindings are intermediary objects that synchronize your UI and data. We use the terms _source_ and _target_ to identify the two objects involved.
+A _binding_ ties two properties together. One property is in your UI and the other is in your data-model object. If the value of either property changes, the binding object can update the other one. In other words, bindings are intermediary objects that synchronize your UI and data. We use the terms _source_ and _target_ to identify the two objects involved:
 
 - **Source**: A source can be an object of any type. In practice, you typically use a data-object as your source. You need to identify the property on that source object to participate in the binding. You identify the property by setting the `Path` property in the binding.
 
@@ -20,7 +20,7 @@ Let's look at a simple binding created in XAML by using the `{Binding}` markup e
 <VerticalStackLayout Margin="10">
     <VerticalStackLayout.Resources>
         <ResourceDictionary>
-            <WeatherService x:Key="myWeatherService" />
+            <services:WeatherService x:Key="myWeatherService" />
         </ResourceDictionary>
     </VerticalStackLayout.Resources>
 
@@ -34,7 +34,7 @@ The binding source is:
 
 - The `Path` points to a property named `Humidity` on the `WeatherService` type.
 
-  The `Path` can be is the first unnamed parameter on the `{Binding}` syntax, and the `Path=` syntax can be omitted. These two bindings are equivalent:
+  The `Path` is the first unnamed parameter on the `{Binding}` syntax, and the `Path=` syntax can be omitted. These two bindings are equivalent:
 
   ```xaml
   <Label Text="{Binding Path=Humidity, Source={StaticResource myWeatherService}}" />
@@ -46,11 +46,11 @@ The binding target is:
 - The `Label` control.
 - The control's `Text` property.
 
-When the XAML is loaded, the `{Binding}` XAML extension creates a binding between the `WeatherService` and `Label`. The binding reads the `WeatherService.Humidity` property's value into the `Label.Text` property.
+When the UI is displayed, the `{Binding}` XAML extension creates a binding between the `WeatherService` and `Label`. The binding reads the `WeatherService.Humidity` property's value into the `Label.Text` property.
 
 ## Use another control as a binding source
 
-One nifty feature of binding is being able to bind to other controls. The following XAML is a simple demonstration:
+One useful feature of binding is being able to bind to other controls. The following XAML is a simple demonstration:
 
 ```xaml
 <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
@@ -64,11 +64,11 @@ The `Slider.Value` property is bound to the `Label.Rotation` property, but in a 
 
 :::image type="content" source="../media/3-use-data-bindings-xaml/rotate.gif" alt-text="An animated image of a slider control being dragged with a mouse. As the slider moves, a piece of text rotates to match the position of the slider.":::
 
-The typical scenario for binding controls to one another is when a control, usually a collection control such as a `ListView` or `Picker`, has a selected item that you want to use as a data source. In the example of a page displaying the weather forecast, you might have a `ListView` present a five-day forecast. When the user selects a day in the list, the details of that weather forecast are displayed in other controls. If the user selects another day, the other controls are again updated with the selected day's details.
+The typical scenario for binding controls to one another is when a control, usually a collection control such as a `ListView` or `CarouselView`, has a selected item that you want to use as a data source. In the example of a page displaying the weather forecast, you might have a `ListView` present a five-day forecast. When the user selects a day in the list, the details of that weather forecast are displayed in other controls. If the user selects another day, the other controls are again updated with the selected day's details.
 
 ## Use the same source across multiple bindings
 
-The previous example demonstrated using a static resource as a source for a single binding. That source can be used in multiple bindings. Here's an example of declaring a binding across three different controls, all binding to the same object and property `Path`:
+The previous example demonstrated using a static resource as a source for a single binding. That source can be used in multiple bindings. Here's an example of declaring a binding across three different controls, all binding to the same object and property `Path`, though some omitting the `Path` property:
 
 ```xaml
 <VerticalStackLayout Margin="10">
@@ -94,13 +94,13 @@ You don't have to use the same `Path` when using the same `Source`:
 
 Rarely do you present a single piece of data from a source, though it could happen. Usually you have several controls using different pieces of data from the same source. This situation is so common that the `BindableObject` class has a property named `BindingContext` that works as a source for data binding. Remember that .NET MAUI controls inherit from the `BindableObject` class, so the .NET MAUI controls have the `BindingContext` property.
 
-Setting the `Source` of the binding direction is optional. A binding that doesn't have `Source` set automatically searches the XAML visual tree for a `BindingContext`, which is set in the XAML or assigned to a parent element by code. Bindings are evaluated following this pattern:
+Setting the `Source` of the binding is optional. A binding that doesn't have `Source` set automatically searches the XAML visual tree for a `BindingContext`, which is set in the XAML or assigned to a parent element by code. Bindings are evaluated following this pattern:
 
 01. If the binding defines a `Source`, that source is used and searching stops. The binding's `Path` applied to the `Source` to get a value. If `Source` isn't set, the search begins for a binding source.
 
 01. The search begins with the target object itself. If the target object's `BindingContext` isn't null, the search stops and the binding's `Path` is applied to the `BindingContext` to get a value. If the `BindingContext` is null, then the search continues.
 
-01. This process continues until it reaches the XAML root, typically a `ContentPage`. The search ends by checking the `BindingContext` of the root for a non-null value. If no valid `BindingContext` was found, the binding has nothing to bind against and does nothing.
+01. This process continues until it reaches the XAML root. The search ends by checking the `BindingContext` of the root for a non-null value. If no valid `BindingContext` was found, the binding has nothing to bind against and does nothing.
 
 It's common to set the `BindingContext` at the root object's level, to apply to the entire XAML.
 

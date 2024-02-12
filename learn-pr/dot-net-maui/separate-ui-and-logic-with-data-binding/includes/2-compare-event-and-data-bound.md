@@ -1,6 +1,6 @@
 An event-driven user interface (UI) is designed around the events a control exposes. These events can be associated with event handler code that's invoked when the event is triggered. For example, let's say you have a button that when clicked performs a long-running operation. The event handler assigned to the `Clicked` event could start the operation and then set the button's `IsEnabled` property to `false`, preventing the button from being clicked again while the operation is running.
 
-A data-bound UI uses data binding to present and interact with data. Properties of controls are bound to the data object's properties, and those bindings can detect changes in the properties. Using the previous example, consider the button that performs a long-running operation. Instead of disabling the button in the code-behind, the `IsEnabled` property is bound to the data object's `IsBusy` property. Whenever the data object becomes "busy" the button's enabled state is automatically changed to match.
+A data-bound UI uses data binding to present and interact with data. Properties of controls are bound to the data object's properties, and those bindings can detect changes in the properties. Using the previous example, consider the button that performs a long-running operation. Instead of disabling the button in code-behind, the `IsEnabled` property is bound to the data object's `IsBusy` property. Whenever the data object becomes "busy" the button's enabled state is automatically changed to match.
 
 ## Pros and cons of using events and code-behind
 
