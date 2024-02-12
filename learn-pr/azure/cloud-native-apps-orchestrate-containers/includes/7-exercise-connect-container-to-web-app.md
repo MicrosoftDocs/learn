@@ -101,16 +101,16 @@ There might be a small delay between the creation of the ingress and the creatio
     The command should output a result similar to the following example:
 
     ```output
-    ZoneName                               ResourceGroup                                 RecordSets    MaxRecordSets
+    Name                               ResourceGroup                                 RecordSets    MaxRecordSets
     -------------------------------------  --------------------------------------------  ------------  ---------------
     5cd29ec927f24764b052.eastus.aksapp.io  mc_rg-contoso-video_aks-contoso-video_eastus  4             10000
     ```
 
-3. Copy the values for `ZoneName` and `ResourceGroup` to use in the next step.
-4. List the DNS records for the zone using the `az network dns record-set list` command. Replace `<zone-name>` and `<resource-group>` with the values you copied in the previous step.
+3. Copy the values for `Name` and `ResourceGroup` to use in the next step.
+4. List the DNS records for the zone using the `az network dns record-set list` command. Replace `<name>` and `<resource-group>` with the values you copied in the previous step.
 
     ```azurecli-interactive
-    az network dns record-set list -g <resource-group> -z <zone-name> --output table
+    az network dns record-set list -g <resource-group> -z <name> --output table
     ```
 
     The command should output a result similar to the following example:
@@ -150,7 +150,7 @@ There might be a small delay between the creation of the ingress and the creatio
     | Linux Plan | Leave as default. |
     | Pricing plan | Select **Free F1 0.00 USD/Month**. |
 
-4. Select **Next: Docker**.
+4. Select the **Docker** tab at the top of the screen.
 5. On the **Docker** tab, enter the following values for each setting:
 
     | Setting | Value |

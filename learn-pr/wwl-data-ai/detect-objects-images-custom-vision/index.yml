@@ -8,7 +8,6 @@ metadata:
   ms.author: sheryang
   ms.topic: module
   ms.service: azure-ai-custom-vision
-  ms.subservice: custom-vision
 title: Detect objects in images with Azure AI Custom Vision
 summary: Object detection is a form of computer vision in which artificial intelligence (AI) agents can identify and locate specific types of object in an image or camera feed.
 abstract: |

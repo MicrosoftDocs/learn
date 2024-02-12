@@ -7,6 +7,8 @@ To verify the VM you created previously is still running, use the following comm
 
 ```azurecli
 az vm list
+
+
 ```
 
 If you receive an empty response `[]`, you need to complete the first exercise in this module again. If the result lists your current VM and its settings, you may continue.
@@ -21,40 +23,36 @@ In this procedure, you get the IP address for your VM and attempt to access your
     
     ```azurecli
     IPADDRESS="$(az vm list-ip-addresses \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
       --name my-vm \
       --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
-      --output tsv)"
-    
+      --output tsv)"    
     ```
 2.  Run the following `curl` command to download the home page:
     
     ```bash
     curl --connect-timeout 5 http://$IPADDRESS
-    
     ```
     
     The `--connect-timeout` argument specifies to allow up to five seconds for the connection to occur. After five seconds, you see an error message that states that the connection timed out:
     
     ```output
     curl: (28) Connection timed out after 5001 milliseconds
-    
     ```
     
     This message means that the VM was not accessible within the timeout period.
 3.  As an optional step, try to access the web server from a browser:
+    
+    
     1.  Run the following to print your VM's IP address to the console:
         
         ```bash
-        echo $IPADDRESS
-        
+        echo $IPADDRESS       
         ```
         
         You see an IP address, for example, *23.102.42.235*.
     2.  Copy the IP address that you see to the clipboard.
-    3.  Open a new browser tab and go to your web server. After a few moments, you see that the connection isn't happening.
-        
-        If you wait for the browser to time out, you'll see something like this:
+    3.  Open a new browser tab and go to your web server. After a few moments, you see that the connection isn't happening. If you wait for the browser to time out, you'll see something like this:
         
         :::image type="content" source="../media/browser-request-timeout-d7cc0e02.png" alt-text="Screenshot of a web browser showing an error message that says the connection timed out.":::
         
@@ -68,16 +66,16 @@ Your web server wasn't accessible. To find out why, let's examine your current N
     
     ```azurecli
     az network nsg list \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
       --query '[].name' \
-      --output tsv
-    
+      --output tsv    
     ```
     
     You see this:
     
     ```output
     my-vmNSG
+    
     
     ```
     
@@ -86,9 +84,8 @@ Your web server wasn't accessible. To find out why, let's examine your current N
     
     ```azurecli
     az network nsg rule list \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --nsg-name my-vmNSG
-    
+      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+      --nsg-name my-vmNSG    
     ```
     
     You see a large block of text in JSON format in the output. In the next step, you'll run a similar command that makes this output easier to read.
@@ -96,11 +93,10 @@ Your web server wasn't accessible. To find out why, let's examine your current N
     
     ```azurecli
     az network nsg rule list \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
       --nsg-name my-vmNSG \
       --query '[].{Name:name, Priority:priority, Port:destinationPortRange, Access:access}' \
-      --output table
-    
+      --output table    
     ```
     
     You see this:
@@ -109,7 +105,7 @@ Your web server wasn't accessible. To find out why, let's examine your current N
     Name              Priority    Port    Access
     -----------------  ----------  ------  --------
     default-allow-ssh  1000        22      Allow
-    
+       
     ```
     
     You see the default rule, *default-allow-ssh*. This rule allows inbound connections over port 22 (SSH). SSH (Secure Shell) is a protocol that's used on Linux to allow administrators to access the system remotely. The priority of this rule is 1000. Rules are processed in priority order, with lower numbers processed before higher numbers.
@@ -124,14 +120,13 @@ Here, you create a network security rule that allows inbound access on port 80 (
     
     ```azurecli
     az network nsg rule create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
       --nsg-name my-vmNSG \
       --name allow-http \
       --protocol tcp \
       --priority 100 \
       --destination-port-range 80 \
-      --access Allow
-    
+      --access Allow    
     ```
     
     For learning purposes, here you set the priority to 100. In this case, the priority doesn't matter. You would need to consider the priority if you had overlapping port ranges.
@@ -139,11 +134,10 @@ Here, you create a network security rule that allows inbound access on port 80 (
     
     ```azurecli
     az network nsg rule list \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
       --nsg-name my-vmNSG \
       --query '[].{Name:name, Priority:priority, Port:destinationPortRange, Access:access}' \
-      --output table
-    
+      --output table    
     ```
     
     You see this both the *default-allow-ssh* rule and your new rule, *allow-http*:
@@ -152,8 +146,7 @@ Here, you create a network security rule that allows inbound access on port 80 (
     Name              Priority    Port    Access
     -----------------  ----------  ------  --------
     default-allow-ssh  1000        22      Allow
-    allow-http        100        80      Allow
-    
+    allow-http          100        80      Allow    
     ```
 
 ## Task 4: Access your web server again
@@ -173,11 +166,8 @@ Now that you've configured network access to port 80, let's try to access the we
     
     ```html
     <html><body><h2>Welcome to Azure! My name is my-vm.</h2></body></html>
-    
     ```
-2.  As an optional step, refresh your browser tab that points to your web server.
-    
-    You see this:
+2.  As an optional step, refresh your browser tab that points to your web server. You see this:
     
     :::image type="content" source="../media/browser-request-successful-df21c6f1.png" alt-text="A screenshot of a web browser showing the home page from the web server. The home page displays a welcome message.":::
     
