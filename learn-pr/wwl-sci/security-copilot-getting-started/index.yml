@@ -2,7 +2,7 @@
 uid: learn-wwl.security-copilot-getting-started
 metadata:
   title: Describe Microsoft Copilot for Security
-  description: "Describe Microsoft Copilot for Security"
+  description: "Describe Microsoft Copilot for Security."
   ms.date: 10/31/2023
   author: ceperezb
   ms.author: ceperezb
@@ -11,15 +11,15 @@ metadata:
   ms.service: security-copilot
 title: Describe Microsoft Copilot for Security
 summary: |
-  Get acquainted with Microsoft Copilot for Security. You’ll be introduced to some basic terminology, how Microsoft Copilot for Security processes prompts, the elements of an effective prompt, and how to enable the solution.
+  Get acquainted with Microsoft Copilot for Security. You are introduced to some basic terminology, how Microsoft Copilot for Security processes prompts, the elements of an effective prompt, and how to enable the solution.
   [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   By the end of this module, you'll be able to:
-    - Describe what Microsoft Security Copilot is.
-    - Describe the terminology of Microsoft Security Copilot.
-    - Describe how Microsoft Security Copilot processes prompt requests.
+    - Describe what Microsoft Copilot for Security is.
+    - Describe the terminology of Microsoft Copilot for Security.
+    - Describe how Microsoft Copilot for Security processes prompt requests.
     - Describe the elements of an effective prompt
-    - Describe how to enable your Microsoft Security Copilot solution.
+    - Describe how to enable Microsoft Copilot for Security.
 prerequisites: |
   - None
 iconUrl: /learn/achievements/generic-badge.svg
