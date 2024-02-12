@@ -1,12 +1,12 @@
-An event-driven user interface (UI) is designed around the events a control exposes. These events are associated with event handler code that is invoked when the event is triggered. For example, let's say you have a button that when clicked performs a long-running operation. The event handler assigned to the `Clicked` event could start the operation and then set the button's `IsEnabled` property to `false`, preventing the button from being clicked again while the operation is running.
+An event-driven user interface (UI) is designed around the events a control exposes. These events can be associated with event handler code that's invoked when the event is triggered. For example, let's say you have a button that when clicked performs a long-running operation. The event handler assigned to the `Clicked` event could start the operation and then set the button's `IsEnabled` property to `false`, preventing the button from being clicked again while the operation is running.
 
-A data-bound UI uses data binding to present and interact with data. Properties of controls are bound to the data object's properties, and those bindings can detect changes in the properties. Using the previous example, consider the button that performs a long-running operation. Instead of disabling the button in the code-behind, the `IsEnabled` property is bound data object's `IsBusy` property. Whenever the data object becomes "busy" the button's enabled state is automatically changed to match.
+A data-bound UI uses data binding to present and interact with data. Properties of controls are bound to the data object's properties, and those bindings can detect changes in the properties. Using the previous example, consider the button that performs a long-running operation. Instead of disabling the button in the code-behind, the `IsEnabled` property is bound to the data object's `IsBusy` property. Whenever the data object becomes "busy" the button's enabled state is automatically changed to match.
 
 ## Pros and cons of using events and code-behind
 
 Using the control's event handler with the code-behind is a quick and convenient way of designing the app logic for your UI. You use code to call out to services to get data, perform operations on that data, and interact with the controls on the page. The code is used to keep the UI and data synchronized.
 
-Consider the example of a weather service app. The following XAML fragment represents a simple UI button the user selects to get the latest data and update the UI with the humidity.
+Consider the example of a weather service app. The following XAML fragment contains a simple UI button the user selects to get the latest data and update the UI with the humidity.
 
 ```xaml
 <VerticalStackLayout Margin="10">
@@ -27,7 +27,7 @@ There are three named controls in this example:
 - `Button` control named **RefreshWeatherButton**.
 - `Label` control named **Humidity**.
 
-The `RefreshWeatherButton` has an event handler declared for the `Clicked` event. When the button is clicked, the event handler queries a weather service for the latest weather forecast, using the `PostalCode` entry control, and sets the `Humidity` label's text to the current humidity.
+The `RefreshWeatherButton` has an event handler declared for the `Clicked` event. When the button is clicked, the event handler queries a weather service for the latest weather forecast, using the data entered in the `PostalCode` entry control, and sets the `Humidity` label's text to the current humidity.
 
 ```csharp
 private void RefreshWeatherButton_Clicked(object sender, EventArgs e)
@@ -48,7 +48,7 @@ Data binding in XAML is one of many declarative ways of designing how your app i
 
 Data binding can be declared in the XAML along with the controls themself, much like how events are. Because the bindings don't require code-behind, you can easily create, alter, or redesign the UI to fit how you want to present the data.
 
-Let's take the same example as in the previous section, but change it for data binding:
+Let's take the same example as in the previous section, but update it to use data binding:
 
 ```xaml
 <VerticalStackLayout Margin="10">
@@ -63,7 +63,7 @@ Let's take the same example as in the previous section, but change it for data b
 
 You can spot the properties that are data bound, they use the XAML extension syntax `{Binding ...}` for the value of the property. Don't worry about the specifics yet, that is covered later in this module.
 
-The same three controls are declared in the XAML, but none of them are named, as a name isn't required.
+The same three controls are declared in the XAML, but none of them are named, as a name isn't required:
 
 - `Entry` control:
 
@@ -71,7 +71,7 @@ The same three controls are declared in the XAML, but none of them are named, as
 
 - `Button` control:
 
-  The button's `Command` property is bound to a property named `RefreshWeather`. `Command` is a property on the button that invokes code when the button is pressed. It's an alternative to the `Clicked` event that is used in data binding.
+  The button's `Command` property is bound to a property named `RefreshWeather`. `Command` is a property on the button that invokes code when the button is pressed. It's an alternative to the `Clicked` event that's used in data binding.
 
 - `Label` control:
 
