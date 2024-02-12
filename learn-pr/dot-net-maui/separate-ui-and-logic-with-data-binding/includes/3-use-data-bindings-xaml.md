@@ -96,7 +96,7 @@ Rarely do you present a single piece of data from a source, though it could happ
 
 Setting the `Source` of the binding direction is optional. A binding that doesn't have `Source` set automatically searches the XAML visual tree for a `BindingContext`, which is set in the XAML or assigned to a parent element by code. Bindings are evaluated following this pattern:
 
-01. If the binding defines a `Source`, that source is used and searching stops. The binding's `Path` applied to the `Source` to get a value. If `Source` isn't set, the search begins for a binding source.
+01. If the binding defines a `Source`, that source is used and searching stops. The binding's `Path` is applied to the `Source` to get a value. If `Source` isn't set, the search begins for a binding source.
 
 01. The search begins with the target object itself. If the target object's `BindingContext` isn't null, the search stops and the binding's `Path` is applied to the `BindingContext` to get a value. If the `BindingContext` is null, then the search continues.
 
