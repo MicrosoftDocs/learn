@@ -19,8 +19,7 @@ abstract: |
     - Validate that mandatory variables are present and set correctly in Azure DevOps.
 prerequisites: |
   - Basic knowledge of Azure Pipelines and YAML.
-iconUrl: /training/achievements/generic-trophy.svg
-hidden: false
+iconUrl: /training/achievements/configure-pipelines-securely-use-variables-parameters.svg
 levels:
   - intermediate
 roles:

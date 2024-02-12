@@ -6,9 +6,8 @@ metadata:
   ms.date: 06/30/2022
   author: wwlpublish
   ms.author: eric
-  ms.topic: module
-  ms.service: sap-on-azure
-  ms.subservice: sap-large-instances
+  ms.topic: interactive-tutorial
+  ms.service: azure
 title: Implement business continuity, disaster recovery, and backup for SAP HANA on Azure (Large Instances)
 summary: Investigate business continuity, disaster recovery, and backup of SAP HANA on Azure (Large Instances).
 abstract: |

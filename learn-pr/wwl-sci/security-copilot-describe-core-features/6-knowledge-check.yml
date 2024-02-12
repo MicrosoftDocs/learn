@@ -29,24 +29,12 @@ quiz:
       explanation: "The landing page includes more than just the plugins."
   - content: "What are plugins in Microsoft Security Copilot?"
     choices:
-    - content: "Extensions that give Security Copilot access to information and capabilities from within your organization's Microsoft products."
+    - content: "Plugins from Microsoft and third-party security products are a means to extend and integrate services with Security Copilot."
       isCorrect: true
-      explanation: "Plugins extend Security Copilot’s capabilities by giving it access to information and capabilities from within your organization's Microsoft products."
+      explanation: "Plugins bring more context from event logs, alerts, incidents, and policies from both Microsoft security products and supported third-party solutions."
     - content: "Open-source intelligence feeds that provide guidance specific to your organization."
       isCorrect: false
-      explanation: "Open-source intelligence feeds are not the only source of plugins."
+      explanation: "Although there can be plugins to Open-source intelligence feeds, plugins provide a much broader set of services.  Plugins provide a means to extent and integrate across many different types of services."
     - content: "Third-party vendors that provide guidance specific to your organization."
       isCorrect: false
-      explanation: "Third-party vendors are not the only source of plugins."
-  - content: "What is the embedded experience in Security Copilot?"
-    choices:
-    - content: "Security Copilot accessible directly from some Microsoft security products"
-      isCorrect: true
-      explanation: "With the embedded experience, Security Copilot is accessible directly from some Microsoft security products."
-    - content: "A mechanism to provide feedback on the accuracy of the AI generated response."
-      isCorrect: false
-      explanation: "This is a feature available in both the standalone and embedded experience."
-    - content: "A capability to analyze scripts and codes using external tools."
-      isCorrect: false
-      explanation: "The script analysis capability of Security Copilot in Microsoft Defender XDR provides security teams added capacity to inspect scripts and code without using external tools."
-  
+      explanation: "Although there can be plugins from third-party vendors, they are not the only source of plugins. Plugins are a means to extend and integrate services from Microsoft and third-party vendors, with Security Copilot."

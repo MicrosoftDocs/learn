@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.service: azure
 durationInMinutes: 7
 content: |
   [!include[](includes/6-autoscaler-node-pool.md)]

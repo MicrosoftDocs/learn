@@ -9,8 +9,9 @@ metadata:
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.service: azure-ai-document-intelligence
-  ms.custom:
-  - N/A
+azureSandbox: false
+labId: 156539
+labModal: true
 durationInMinutes: 3
 content: |
   [!include[](includes/4-exercise-model.md)]

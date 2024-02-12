@@ -3,11 +3,11 @@ uid: learn.wwl.guided-project-langstons-ant
 metadata:
   title: Guided project langstons ant
   description: "This module will guide you through the steps required to develop your own Langston's Ant project. Your code will use interfaces to represent the functions the ants can perform."
-  ms.date: 12/07/2023
+  ms.date: 01/29/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
-  ms.prod: dotnet-csharp
+  ms.service: dotnet-csharp
 title: Guided project langstons ant
 summary: This module will guide you through the steps required to develop your own Langston's Ant project. Your code will use interfaces to represent the functions the ants can perform.
 abstract: |
@@ -21,6 +21,7 @@ prerequisites: |
   - Basic understanding of the C# programming language
   - Familiarity with classes, abstract classes, and inheritance
 iconUrl: /training/achievements/guided-project-langstons-ant.svg
+hidden: true
 levels:
 - beginner
 roles:
