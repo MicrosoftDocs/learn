@@ -15,7 +15,7 @@ abstract: |
   - Explain what is tunneling and how remote tunnels securely transmit data.  
   - Use Remote - Tunnels extension.
 
-iconUrl: /learn/achievements/create-tunnel.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
@@ -35,4 +35,4 @@ units:
   - learn.create-tunnel.knowledge-check
   - learn.create-tunnel.summary
 badge:
-  uid: learn.createtunnel.badge
+  uid: learn.create-tunnel.badge
