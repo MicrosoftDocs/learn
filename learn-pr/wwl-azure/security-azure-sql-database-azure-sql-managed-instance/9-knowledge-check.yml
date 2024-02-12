@@ -4,11 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/27/2023
+  ms.date: 02/12/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
@@ -25,17 +25,6 @@ quiz:
     - content: "To capture technical metadata, extract schema, and apply classifications to your data"
       isCorrect: true
       explanation: "Correct. Scanning a data source in Microsoft Purview captures technical metadata, extracts schema, and applies classifications to your data."
-  - content: "What is the purpose of environment automation and validation?"
-    choices:
-    - content: "Enables manual creation and teardown of environments"
-      isCorrect: false
-      explanation: "Incorrect. Environment automation and validation aim to automate the creation and teardown of environments."
-    - content: "Enables the creation of unstable application hosting platforms"
-      isCorrect: false
-      explanation: "Incorrect. Environment automation and validation aim to deliver secure and stable application hosting platforms."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
-      isCorrect: true
-      explanation: "Correct. Environment automation and validation aim to automate the creation and teardown of environments to deliver secure and stable application hosting platforms."
   - content: "What is the purpose of authentication in a secure database?"
     choices:
     - content: "To limit the permissions granted to the application"
@@ -47,25 +36,36 @@ quiz:
     - content: "To prove the user is who they claim to be"
       isCorrect: true
       explanation: "Correct. Authentication is the process of proving the user is who they claim to be by providing user account and authentication information."
-  - content: "An App Service web application uses an SQL database. Users need to authenticate to the database with their Azure AD credentials. Which of the following configuration tasks would enable this?"
+  - content: "An App Service web application uses an SQL database. Users need to authenticate to the database with their Microsoft Entra ID credentials. Which of the following configuration tasks would enable this?"
     choices:
     - content: "Create an SQL Database Administrator"
       isCorrect: false
       explanation: "The SQL Database Admin account would offer too much access the users."
-    - content: "Create an Azure AD Database Administrator"
+    - content: "Create an Microsoft Entra ID Database Administrator"
       isCorrect: false
-      explanation: "An Azure AD Database admin could only configure and manage the database."
+      explanation: "An Microsoft Entra ID Database admin could only configure and manage the database."
     - content: "Create users in each database"
       isCorrect: true
       explanation: "Don't create users in the Master db. Instead, contained users should be created on each database."
-  - content: "What is the purpose of deterministic encryption?"
+  - content: "A company wants to maintain an audit trail of selected events in their Azure SQL Database. They also want to be able to report on database activity and analyze results. What feature should they use?"
     choices:
-    - content: "To prevent searching, grouping, indexing, and joining on encrypted columns"
+    - content: "Azure Functions"
       isCorrect: false
-      explanation: "Incorrect. This also describes randomized encryption."
-    - content: "To encrypt data in a less predictable manner"
+      explanation: "Incorrect. Azure Functions is a serverless compute service that enables users to run event-triggered code without having to provision or manage infrastructure."
+    - content: "Azure Virtual Machines"
       isCorrect: false
-      explanation: "Incorrect. This describes randomized encryption."
-    - content: "To enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      explanation: "Incorrect. Azure Virtual Machines is a service that allows users to create and manage virtual machines in the cloud."
+    - content: "SQL database auditing"
       isCorrect: true
-      explanation: "Correct. Deterministic encryption is used for columns that will be used as search or grouping parameters, such as a government ID number, to enable automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      explanation: "Correct. SQL database auditing enables users to retain an audit trail of selected events, report on database activity, and analyze results."
+  - content: "A company wants to ensure that their sensitive data is properly classified and protected. They want to apply sensitivity labels to their assets in the Microsoft Purview Data Map. What are the steps they need to follow to apply labels to their assets?"
+    choices:
+    - content: "Manually apply labels to each asset in the Microsoft Purview Data Map."
+      isCorrect: false
+      explanation: "Incorrect. This would be a time-consuming process and would not be efficient for applying labels to multiple assets."
+    - content: "Create autolabeling rules for each asset individually."
+      isCorrect: false
+      explanation: "Incorrect. This would be a time-consuming process and would not be efficient for applying labels to multiple assets."
+    - content: "Create new or apply existing sensitivity labels in the Microsoft Purview compliance portal, register and scan the asset in the Microsoft Purview Data Map, and Microsoft Purview will automatically apply classifications and labels based on autolabeling rules."
+      isCorrect: true
+      explanation: "Correct. The company needs to create or apply existing sensitivity labels in the Microsoft Purview compliance portal, register and scan the asset in the Microsoft Purview Data Map, and Microsoft Purview will automatically apply classifications and labels based on autolabeling rules."
