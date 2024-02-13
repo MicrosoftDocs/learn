@@ -155,7 +155,6 @@ The SDKs you can use to connect to the built-in Event Hubs-compatible endpoint t
   :::column-end:::
 :::row-end:::
 
-
 The product integrations you can use with the built-in Event Hubs-compatible endpoint that Azure IoT Hub exposes include:
 
 * Azure Functions.

@@ -2,7 +2,7 @@
 uid: learn.wwl.examine-iot-hub-message-routing
 metadata:
   title: Examine Azure IoT Hub message routing
-  description: "This module introduces you to Azure IoT Hub message routing, the common message format implemented by Azure IoT Hub, Azure IoT Hub's service-facing endpoints, and the message routing query syntax."
+  description: "This module introduces you to Azure IoT Hub message routing, the common set of message features implemented by Azure IoT Hub, Azure IoT Hub's service-facing endpoints, and the message routing query syntax."
   ms.date: 02/06/2024
   author: kgremban
   ms.author: kgremban
@@ -10,11 +10,11 @@ metadata:
   ms.topic: module-standard-task-based
   ms.service: iot-hub
 title: Examine Azure IoT Hub message routing
-summary: This module introduces you to Azure IoT Hub message routing, the common message format implemented by Azure IoT Hub, Azure IoT Hub's service-facing endpoints, and the message routing query syntax.
+summary: This module introduces you to Azure IoT Hub message routing, the common set of message features implemented by Azure IoT Hub, Azure IoT Hub's service-facing endpoints, and the message routing query syntax.
 abstract: |
   After you complete this module, you will be able to:
   - Describe message processing concepts.
-  - Describe the Azure IoT Hub common message format and features of Azure IoT Hub message routing.
+  - Describe the Azure IoT Hub common message features of Azure IoT Hub message routing.
   - Describe the built-in and custom endpoints that can be used with Azure IoT Hub message routing.
   - Describe the message routing query syntax.
 prerequisites: |

@@ -5,7 +5,7 @@ Suppose you joined a team that is implementing an Azure IoT solution for the com
 In this module, you will:
 
 * Review message processing concepts.
-* Examine the Azure IoT Hub common message format and features of Azure IoT Hub message routing.
+* Examine the Azure IoT Hub common message features and features of Azure IoT Hub message routing.
 * Examine the built-in and custom endpoints that can be used with Azure IoT Hub message routing.
 * Examine the message routing query syntax.
 

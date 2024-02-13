@@ -1,6 +1,57 @@
-Message routing enables users to route different data types namely, device telemetry messages, device lifecycle events, and device twin change events to various endpoints. You can also apply rich queries to this data before routing it to receive the data that matters to you.
+A single message may match the condition on multiple routing queries, in which case Azure IoT Hub delivers the message to the endpoint associated with each matched query. Azure IoT Hub also automatically deduplicates message delivery, so if a message matches multiple queries that have the same destination, it is only written once to that destination.
 
-Message routing allows you to query on the message properties and message body as well as device twin tags and device twin properties. If the message body is not JSON, message routing can still route the message, but queries cannot be applied to the message body. Queries are described as Boolean expressions where a Boolean true makes the query succeed which routes all the incoming data, and Boolean false fails the query and no data is routed. If the expression evaluates to null or undefined, it is treated as false and an error is generated in diagnostic logs if there is a routing failure. The query syntax must be correct for the route to be saved and evaluated.
+IoT Hub message routing provides a querying capability to filter the data before routing it to the endpoints.
+
+Each routing query you configure has the following properties:
+
+:::row:::
+  :::column:::
+    **Property**
+  :::column-end:::
+  :::column:::
+    **Description**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Name
+  :::column-end:::
+  :::column:::
+    The unique name that identifies the query.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Source
+  :::column-end:::
+  :::column:::
+    The origin of the data stream to be acted upon. For example, device telemetry.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Condition
+  :::column-end:::
+  :::column:::
+    The query expression for the routing query that is run against the message application properties, system properties, message body, device twin tags, and device twin properties to determine if it is a match for the endpoint. For more information about constructing a query, see the see message routing query syntax.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Endpoint
+  :::column-end:::
+  :::column:::
+    The name of the endpoint where Azure IoT Hub sends messages that match the query. We recommend that you choose an endpoint in the same region as your Azure IoT hub.
+  :::column-end:::
+:::row-end:::
+
+A single message may match the condition on multiple routing queries, in which case IoT Hub delivers the message to the endpoint associated with each matched query. IoT Hub also automatically deduplicates message delivery, so if a message matches multiple queries that have the same destination, it's only written once to that destination.
+
+## Message routing query syntax
+
+Message routing enables users to route different data types, including device telemetry messages, device lifecycle events, and device twin change events, to various endpoints. You can also apply rich queries to this data before routing it to receive the data that matters to you. This article describes the IoT Hub message routing query language, and provides some common query patterns.
+
+Message routing allows you to query on the message properties and message body as well as device twin tags and device twin properties. If the message body isn't in JSON format, message routing can still route the message, but queries can't be applied to the message body. Queries are described as Boolean expressions where, if true, the query succeeds and routes all the incoming data; otherwise, the query fails and the incoming data isn't routed. If the expression evaluates to a null or undefined value, it's treated as a Boolean false value, and generates an error in the IoT Hub routes resource logs. The query syntax must be correct for the route to be saved and evaluated.
 
 ## Message routing query based on message properties
 
@@ -39,7 +90,7 @@ Application properties are user-defined strings that can be added to the message
 
 ### Query expressions for message routing query based on message properties
 
-A query on message system properties needs to be prefixed with the `$` symbol. Queries on application properties are accessed with their name and should not be prefixed with the `$` symbol. If an application property name begins with `$`, then Azure IoT Hub searchs for it in the system properties, and it is not found, then it looks in the application properties. For example:
+A query on message system properties needs to be prefixed with the `$` symbol. Queries on application properties are accessed with their name and should not be prefixed with the `$` symbol. If an application property name begins with `$`, then Azure IoT Hub searchs for it in the system properties, and it is not found, then it looks in the application properties. The following examples show how to query on system properties and application properties.
 
 To query on system property contentEncoding
 
@@ -66,7 +117,7 @@ A full list of supported operators and functions is shown in Expression and cond
 
 ## Message routing query based on message body
 
-To enable querying on message body, the message should be in a JSON encoded in either UTF-8, UTF-16 or UTF-32. The `contentType` must be set to `application/JSON` and `contentEncoding` to one of the supported UTF encodings in the system properties. If these properties are not specified, Azure IoT Hub will not evaluate the query expression on the message body.
+To enable querying on message body, the message should be in a JSON encoded in either UTF-8, UTF-16 or UTF-32. The `contentType` must be set to `application/JSON`. The `contentEncoding` system property must be one of the supported UTF encodings supported by that system property. If these properties are not specified, Azure IoT Hub will not evaluate the query expression on the message body.
 
 The following example shows how to create a message with a properly formed and encoded JSON body:
 
@@ -120,7 +171,7 @@ deviceClient.sendEvent(message, (err, res) => {
 
 ### Query expressions for message routing query based on message body
 
-A query on message body needs to be prefixed with the $body. You can use a body reference, body array reference, or multiple body references in the query expression. Your query expression can also combine a body reference with message system properties, and message application properties reference. For example, the following are all valid query expressions:
+A query on a message body needs to be prefixed with `$body`. You can use a body reference, body array reference, or multiple body references in the query expression. Your query expression can also combine a body reference with a message system properties reference or a message application properties reference. For example, the following are all valid query expressions:
 
 ```SQL
 $body.Weather.HistoricalData[0].Month = 'Feb'
@@ -142,9 +193,30 @@ $body.Weather.Temperature = 50 AND processingPath = 'hot'
 
 ```
 
+You can run queries and functions only on properties in the body reference. You can't run queries or functions on the entire body reference. For example, the following query is not supported and returns `undefined`:
+
+```SQL
+$body[0] = 'Feb'
+
+```
+
+To filter a twin notification payload based on what changed, run your query on the message body. For example, to filter when there's a desired property change on `sendFrequency` and the value is greater than 10:
+
+```SQL
+`$body.properties.desired.telemetryConfig.sendFrequency > 10`
+
+```
+
+To filter messages that contains a property change, no matter the value of the property, you can use the `is_defined()` function (when the value is a primitive type):
+
+```SQL
+`is_defined($body.properties.desired.telemetryConfig.sendFrequency)`
+
+```
+
 ## Message routing query based on device twin
 
-Message routing enables you to query on Device Twin tags and properties, which are JSON objects. Querying on module twin is not supported. A sample of Device Twin tags and properties is shown below.
+Message routing enables you to query on device twin or module twin tags and properties, which are JSON objects. The following sample illustrates a device twin with tags and properties:
 
 ```json
 {
@@ -176,9 +248,12 @@ Message routing enables you to query on Device Twin tags and properties, which a
 
 ```
 
+> [!NOTE]
+> Modules do not inherit twin tags from their corresponding devices. Twin queries for messages originating from device modules (for example, from IoT Edge modules) query against the module twin and not the corresponding device twin.
+
 ### Query expressions for message routing query based on device twin
 
-A query on device twin properties needs to be prefixed with the `$twin`. Your query expression can also combine a twin tag or property reference with a body reference, message system properties, and message application properties reference. We recommend using unique names in tags and properties as the query is not case-sensitive. Also refrain from using twin, `$twin`, body, or `$body`, as a property names. For example, the following are all valid query expressions:
+A query on device twin properties needs to be prefixed with `$twin`. Your query expression can also combine a twin tag or property reference with a body reference, a message system properties reference, or a message application properties reference. We recommend using unique names in tags and properties as the query is not case-sensitive. We also recommend that you avoid using `twin`, `$twin`, `body`, or `$body`, as a property names. For example, the following are all valid query expressions:
 
 ```SQL
 $twin.properties.desired.telemetryConfig.sendFrequency = '5m'
@@ -194,3 +269,7 @@ $body.Weather.Temperature = 50 AND $twin.properties.desired.telemetryConfig.send
 $twin.tags.deploymentLocation.floor = 1 
 
 ```
+
+## Limitations
+
+Routing queries don't support using whitespace or any of the following characters in property names, the message body path, or the device/module twin path: `()<>@,;:\"/?={}`.
