@@ -9,7 +9,7 @@ Windows containers support two types of runtime isolation: **Process** and **Hyp
 Process isolation is the most common approach. Multiple container instances running on the same host achieve isolation through the namespace and resource control settings, along with other process isolation functions.
 
 - Each container shares the same kernel with the host OS and other containers on the host.
-- Each container has a virtual network adapter connected to a virtual switch.
+- Each container has a virtual network adapter that connects to a virtual switch.
 - Each container endpoint is placed in its own network namespace. The default network namespace is the location of the host virtual network adapter and host network stack.
 
 Hyper-V isolation provides enhanced security and broader compatibility between the host and containers. Multiple container instances run on the same host, but each container runs in an optimized virtual machine. The virtual machine provides hardware-level isolation between each container and the container host.
@@ -25,7 +25,7 @@ Hyper-V isolation provides enhanced security and broader compatibility between t
 Windows uses the Host Networking Service (HNS) and Host Compute Service (HCS) to create containers and attach endpoints to the network.
 
 - **Network**: HNS creates a Hyper-V virtual switch for each network, and HNS creates the required NAT and IP pools.
-- **Endpoints**: HNS creates the network namespace for each container endpoint, and HNS/HCS adds the virtual network adapter to the namespace. HNS creates virtual switch ports. HNS assigns the IP address, DNS information, routes, and so on, to the endpoint according to the configured network driver mode.
+- **Endpoints**: HNS creates the network namespace for each container endpoint, and HNS/HCS adds the virtual network adapter to the namespace. HNS creates virtual switch ports. HNS assigns the IP address, Domain Name System (DNS) information, routes, and so on, to the endpoint according to the configured network driver mode.
 - **Policies**: For the default NAT network, HNS creates the WinNAT port forwarding rules and mappings with the corresponding Windows Firewall ALLOW rules. For all other networks, HNS uses the Virtual Filtering Platform (VFP) to create policies for load balancing, ACLs, and encapsulation.
 
 ## Firewall interaction
@@ -46,7 +46,8 @@ The following table summarizes the network driver types available for Docker con
 | **NAT (Default)** | Good for Developers | Same Subnet: Bridged connection through Hyper-V virtual switch<br><br>Cross subnet: Not supported (only one NAT internal prefix) | Routed through Management virtual network adapter (bound to WinNAT) | Not directly supported: requires exposing ports through host |
 | **Transparent** | Good for Developers or small deployments | Same Subnet: Bridged connection through Hyper-V virtual switch<br><br>Cross Subnet: Routed through container host. | Routed through container host with direct access to (physical) network adapter | Routed through container host with direct access to (physical) network adapter |
 | **Overlay** | Good for multi-node; required for Docker Swarm, available in Kubernetes | Same Subnet: Bridged connection through Hyper-V virtual switch<br><br>Cross Subnet: Network traffic is encapsulated and routed through management virtual network adapter. | Not directly supported - requires second container endpoint attached to NAT network on Windows Server 2016 or VFP NAT rule on Windows Server 2019. | Same/Cross Subnet: Network traffic is encapsulated by using VXLAN and routed through management virtual network adapter |
-| **L2Bridge** | Used for Kubernetes and Microsoft SDN | Same Subnet: Bridged connection through Hyper-V virtual switch<br><br>Cross Subnet: Container MAC address rewritten on ingress and egress and routed. | Container MAC address rewritten on ingress and egress | Same Subnet: Bridged connection<br><br>Cross Subnet: routed through management virtual network adapter on WSv1809 and above |
+| **L2Bridge** | Used for Kubernetes and Microsoft Software Designed Network (SDN) | Same Subnet: Bridged connection through Hyper-V virtual switch<br><br>Cross Subnet: Container MAC address rewritten on ingress and egress and routed. | Container MAC address 
+rewritten on ingress and egress | Same Subnet: Bridged connection<br><br>Cross Subnet: routed through management virtual network adapter on WSv1809 and above |
 | **L2Tunnel** | Azure only | Same/Cross Subnet: Hair-pinned to physical host's Hyper-V virtual switch to where policy is applied. | Traffic must go through Azure virtual network gateway | Same/Cross Subnet: Hair-pinned to physical host's Hyper-V virtual switch to where policy is applied |
 
 ## Advanced networking options
