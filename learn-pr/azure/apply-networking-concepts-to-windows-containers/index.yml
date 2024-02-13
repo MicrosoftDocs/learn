@@ -10,7 +10,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.service: azure-kubernetes-service
 title: Apply Networking concepts to Windows containers running on Azure Kubernetes Service (AKS) and AKS Hybrid
-summary: Define networking configurations for Kubernetes environments, their pros and cons, then choose the best option for your scenario.
+summary: Define networking configurations for Kubernetes environments and their pros and cons, then choose the best option for your scenario.
 abstract: |
   By the end of this module, you'll be able to:
   - Describe networking concepts for Windows containers.
@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   You should be familiar with:
   - Basic knowledge of microservice architectures and operating system virtualization.
-  - asic knowledge of Docker containers for Windows.
+  - Basic knowledge of Docker containers for Windows.
   - Basic knowledge of container orchestration with Kubernetes and Azure Kubernetes Service.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
