@@ -11,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 16
 content: |
-  [!include[](includes/4-networking concepts-for-kubernetes-containers.md)]
+  [!include[](includes/4-networking-concepts-for-kubernetes-containers.md)]
