@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Containerize and deploy a Java app to Azure
   description: Containerize a Java app, push the container image to Azure Container Registry, and then deploy to Azure Kubernetes Service.
-  ms.date: 01/05/2023
+  ms.date: 02/09/2024
   author: chtrembl
   ms.author: chtrembl
   ms.topic: module
