@@ -46,7 +46,7 @@ See [Blob storage](/azure/storage/blobs/storage-blob-event-quickstart) to learn 
 
 ## Service Bus queues and Service Bus topics as a routing endpoint
 
-Service Bus queues and topics used as IoT Hub endpoints must not have **Sessions** or **Duplicate Detection** enabled. If either of those options are enabled, the endpoint appears as Unreachable in the Azure portal.
+Service Bus queues and topics used as Azure IoT Hub endpoints must not have **Sessions** or **Duplicate Detection** enabled. If either of those options are enabled, the endpoint appears as Unreachable in the Azure portal.
 
 To learn how to read from this endpoint type, see:
 * Read from [Service Bus queues](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues)
@@ -55,7 +55,7 @@ To learn how to read from this endpoint type, see:
 
 ## Event Hubs as a routing endpoint
 
-Event Hubs is a service that processes large amounts of event data (telemetry) from connected devices and applications. After you collect data into Event Hubs, you can store the data using a storage cluster or transform it using a real-time analytics provider. This large-scale event collection and processing capability is a key component of modern application architectures including the Internet of Things (IoT).
+Event Hubs is a service that processes large amounts of event data (telemetry) from connected devices and applications. After you collect data into Event Hubs, you can store the data using a storage cluster or transform it using a real-time analytics provider. This large-scale event collection and processing capability are a key component of modern application architectures including the Internet of Things (IoT).
 
 See [Event Hubs](/azure/event-hubs/event-hubs-dotnet-standard-getstarted-send) to learn about how to read messages from Event Hubs.
 
@@ -65,13 +65,13 @@ You can send data directly to Azure Cosmos DB from Azure IoT Hub. Cosmos DB is a
 
 ## Route to an endpoint in another subscription
 
-If the endpoint resource is in a different subscription than your IoT hub, you need to configure your IoT hub as a trusted Microsoft service before creating a custom endpoint. When you do create the custom endpoint, set the Authentication type to user-assigned identity.
+If the endpoint resource is in a different subscription than your Azure IoT hub, you need to configure your Azure IoT hub as a trusted Microsoft service before creating a custom endpoint. When you do create the custom endpoint, set the Authentication type to user-assigned identity.
 
 For more information, see [Egress connectivity from IoT Hub to other Azure resources](/azure/iot-hub/iot-hub-managed-identity#egress-connectivity-from-iot-hub-to-other-azure-resources).
 
 ## Fallback route
 
-The fallback route sends all the messages that don't satisfy query conditions on any of the existing routes to the built-in endpoint (**messages/events**), which is compatible with Event Hubs. If message routing is enabled, you can enable the fallback route capability. Once a route is created, data stops flowing to the built-in endpoint, unless a route is created to that endpoint. If there are no routes to the built-in endpoint and a fallback route is enabled, only messages that don't match any query conditions on routes will be sent to the built-in endpoint. Also, if all existing routes are deleted, the fallback route capability must be enabled to receive all data at the built-in endpoint.
+The fallback route sends all the messages that don't satisfy query conditions on any of the existing routes to the built-in endpoint (**messages/events**), which is compatible with Event Hubs. If message routing is enabled, you can enable the fallback route capability. Once a route is created, data stops flowing to the built-in endpoint, unless a route is created to that endpoint. If there are no routes to the built-in endpoint and a fallback route is enabled, only messages that don't match any query conditions on routes are sent to the built-in endpoint. Also, if all existing routes are deleted, the fallback route capability must be enabled to receive all data at the built-in endpoint.
 
 You can enable or disable the fallback route in the Azure portal, from the **Message routing** blade. You can also use Azure Resource Manager for FallbackRouteProperties to use a custom endpoint for the fallback route.
 
@@ -85,15 +85,15 @@ In addition to device telemetry, message routing also enables sending non-teleme
 * Digital twin change events
 * Device connection state events
 
-For example, if a route is created with the data source set to **Device Twin Change Events**, IoT Hub sends messages to the endpoint that contain the change in the device twin. Similarly, if a route is created with the data source set to **Device Lifecycle Events**, IoT Hub sends a message indicating whether the device or module was deleted or created. For more information about device lifecycle events, see Device and module lifecycle notifications. When using Azure IoT Plug and Play, a developer can create routes with the data source set to **Digital Twin Change Events** and IoT Hub sends messages whenever a digital twin property is set or changed, a digital twin is replaced, or when a change event happens for the underlying device twin. Finally, if a route is created with data source set to **Device Connection State Events**, IoT Hub sends a message indicating whether the device was connected or disconnected.
+For example, if a route is created with the data source set to **Device Twin Change Events**, Azure IoT Hub sends messages to the endpoint that contain the change in the device twin. Similarly, if a route is created with the data source set to **Device Lifecycle Events**, Azure IoT Hub sends a message indicating whether the device or module was deleted or created. For more information about device lifecycle events, see Device and module lifecycle notifications. When using Azure IoT Plug and Play, a developer can create routes with the data source set to **Digital Twin Change Events** and Azure IoT Hub sends messages whenever a digital twin property is set or changed, a digital twin is replaced, or when a change event happens for the underlying device twin. Finally, if a route is created with data source set to **Device Connection State Events**, IoT Hub sends a message indicating whether the device was connected or disconnected.
 
 Azure IoT Hub also integrates with Azure Event Grid to publish device events to support real-time integrations and automation of workflows based on these events.
 
 ## Limitations for device connection state events
 
-Device connection state events are available for devices connecting using either the MQTT or AMQP protocol, or using either of these protocols over WebSockets. Requests made only with HTTPS won't trigger device connection state notifications. For IoT Hub to start sending device connection state events, after opening a connection a device must call either the *cloud-to-device receive message* operation or the *device-to-cloud send telemetry* operation. Outside of the Azure IoT SDKs, in MQTT these operations equate to SUBSCRIBE or PUBLISH operations on the appropriate messaging topics. Over AMQP these operations equate to attaching or transferring a message on the appropriate link paths.
+Device connection state events are available for devices connecting using either the MQTT or AMQP protocol, or using either of these protocols over WebSockets. Requests made only with HTTPS don't trigger device connection state notifications. For Azure IoT Hub to start sending device connection state events, after opening a connection a device must call either the *cloud-to-device receive message* operation or the *device-to-cloud send telemetry* operation. Outside of the Azure IoT SDKs, in MQTT these operations equate to SUBSCRIBE or PUBLISH operations on the appropriate messaging topics. Over AMQP these operations equate to attaching or transferring a message on the appropriate link paths.
 
-IoT Hub doesn't report each individual device connect and disconnect, but rather publishes the current connection state taken at a periodic, 60-second snapshot. Receiving either the same connection state event with different sequence numbers or different connection state events both mean that there was a change in the device connection state during the 60-second window.
+Azure IoT Hub doesn't report each individual device connect and disconnect, but rather publishes the current connection state taken at a periodic, 60-second snapshot. Receiving either the same connection state event with different sequence numbers or different connection state events both mean that there was a change in the device connection state during the 60-second window.
 
 ## Test routes
 
@@ -103,11 +103,11 @@ When you create a new route or edit an existing route, you should test the route
 
 When you route device-to-cloud telemetry messages using built-in endpoints, there's a slight increase in the end-to-end latency after the creation of the first route.
 
-In most cases, the average increase in latency is less than 500 milliseconds. However, the latency you experience can vary and can be higher depending on the tier of your IoT hub and your solution architecture. You can monitor the latency using the **Routing: message latency for messages/events** or **d2c.endpoints.latency.builtIn.events** IoT Hub metrics. Creating or deleting any route after the first one doesn't impact the end-to-end latency.
+In most cases, the average increase in latency is less than 500 milliseconds. However, the latency you experience can vary and can be higher depending on the tier of your Azure IoT hub and your solution architecture. You can monitor the latency using the **Routing: message latency for messages/events** or **d2c.endpoints.latency.builtIn.events** Azure IoT Hub metrics. Creating or deleting any route after the first one doesn't impact the end-to-end latency.
 
 ## Monitor and troubleshoot
 
-IoT Hub provides several metrics related to routing and endpoints to give you an overview of the health of your hub and messages sent. For a list of all of the IoT Hub metrics broken out by functional category, see the [Metrics](/azure/iot-hub/monitor-iot-hub-reference#metrics) section of [Monitoring Azure IoT Hub data reference](/azure/iot-hub/monitor-iot-hub-reference). You can track errors that occur during evaluation of a routing query and endpoint health as perceived by IoT Hub with the [routes category in IoT Hub resource logs](/azure/iot-hub/monitor-iot-hub-reference#routes). To learn more about using metrics and resource logs with IoT Hub, see [Monitoring Azure IoT Hub](/azure/iot-hub/monitor-iot-hub).
+Azure IoT Hub provides several metrics related to routing and endpoints to give you an overview of the health of your hub and messages sent. For a list of all of the IoT Hub metrics broken out by functional category, see the [Metrics](/azure/iot-hub/monitor-iot-hub-reference#metrics) section of [Monitoring Azure IoT Hub data reference](/azure/iot-hub/monitor-iot-hub-reference). You can track errors that occur during evaluation of a routing query and endpoint health as perceived by Azure IoT Hub with the [routes category in IoT Hub resource logs](/azure/iot-hub/monitor-iot-hub-reference#routes). To learn more about using metrics and resource logs with Azure IoT Hub, see [Monitoring Azure IoT Hub](/azure/iot-hub/monitor-iot-hub).
 
 You can use the REST API [Get Endpoint Health](/rest/api/iothub/iothubresource/getendpointhealth#iothubresource_getendpointhealth) to get the health status of the endpoints.
 

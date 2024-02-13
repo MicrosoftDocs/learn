@@ -1,6 +1,6 @@
 A single message may match the condition on multiple routing queries, in which case Azure IoT Hub delivers the message to the endpoint associated with each matched query. Azure IoT Hub also automatically deduplicates message delivery, so if a message matches multiple queries that have the same destination, it is only written once to that destination.
 
-IoT Hub message routing provides a querying capability to filter the data before routing it to the endpoints.
+Azure IoT Hub message routing provides a querying capability to filter the data before routing it to the endpoints.
 
 Each routing query you configure has the following properties:
 
@@ -45,17 +45,17 @@ Each routing query you configure has the following properties:
   :::column-end:::
 :::row-end:::
 
-A single message may match the condition on multiple routing queries, in which case IoT Hub delivers the message to the endpoint associated with each matched query. IoT Hub also automatically deduplicates message delivery, so if a message matches multiple queries that have the same destination, it's only written once to that destination.
+A single message may match the condition on multiple routing queries, in which case Azure IoT Hub delivers the message to the endpoint associated with each matched query. Azure IoT Hub also automatically deduplicates message delivery, so if a message matches multiple queries that have the same destination, it's only written once to that destination.
 
 ## Message routing query syntax
 
-Message routing enables users to route different data types, including device telemetry messages, device lifecycle events, and device twin change events, to various endpoints. You can also apply rich queries to this data before routing it to receive the data that matters to you. This article describes the IoT Hub message routing query language, and provides some common query patterns.
+Message routing enables users to route different data types, including device telemetry messages, device lifecycle events, and device twin change events, to various endpoints. You can also apply rich queries to this data before routing it to receive the data that matters to you. This article describes the Azure IoT Hub message routing query language, and provides some common query patterns.
 
-Message routing allows you to query on the message properties and message body as well as device twin tags and device twin properties. If the message body isn't in JSON format, message routing can still route the message, but queries can't be applied to the message body. Queries are described as Boolean expressions where, if true, the query succeeds and routes all the incoming data; otherwise, the query fails and the incoming data isn't routed. If the expression evaluates to a null or undefined value, it's treated as a Boolean false value, and generates an error in the IoT Hub routes resource logs. The query syntax must be correct for the route to be saved and evaluated.
+Message routing allows you to query on the message properties and message body as well as device twin tags and device twin properties. If the message body isn't in JSON format, message routing can still route the message, but queries can't be applied to the message body. Queries are described as Boolean expressions where, if true, the query succeeds and routes all the incoming data; otherwise, the query fails and the incoming data isn't routed. If the expression evaluates to a null or undefined value, it's treated as a Boolean false value, and generates an error in the Azure IoT Hub routes resource logs. The query syntax must be correct for the route to be saved and evaluated.
 
 ## Message routing query based on message properties
 
-The Azure IoT Hub defines a common format for all device-to-cloud messaging for interoperability across protocols. Azure IoT Hub message assumes the following JSON representation of the message. System properties are added for all users and identify content of the message. Users can selectively add application properties to the message. We recommend using unique property names as Azure IoT Hub device-to-cloud messaging is not case-sensitive. For example, if you have multiple properties with the same name, Azure IoT Hub only sends one of the properties.
+The Azure IoT Hub defines a common format for all device-to-cloud messaging for interoperability across protocols. Azure IoT Hub message assumes the following JSON representation of the message. System properties are added for all users and identify content of the message. Users can selectively add application properties to the message. We recommend using unique property names as Azure IoT Hub device-to-cloud messaging isn't case-sensitive. For example, if you have multiple properties with the same name, Azure IoT Hub only sends one of the properties.
 
 ```json
 { 
@@ -90,7 +90,7 @@ Application properties are user-defined strings that can be added to the message
 
 ### Query expressions for message routing query based on message properties
 
-A query on message system properties needs to be prefixed with the `$` symbol. Queries on application properties are accessed with their name and should not be prefixed with the `$` symbol. If an application property name begins with `$`, then Azure IoT Hub searchs for it in the system properties, and it is not found, then it looks in the application properties. The following examples show how to query on system properties and application properties.
+A query on message system properties needs to be prefixed with the `$` symbol. Queries on application properties are accessed with their name and should not be prefixed with the `$` symbol. If an application property name begins with `$`, then Azure IoT Hub searches for it in the system properties, and it isn't found, then it looks in the application properties. The following examples show how to query on system properties and application properties.
 
 To query on system property contentEncoding
 
@@ -117,7 +117,7 @@ A full list of supported operators and functions is shown in Expression and cond
 
 ## Message routing query based on message body
 
-To enable querying on message body, the message should be in a JSON encoded in either UTF-8, UTF-16 or UTF-32. The `contentType` must be set to `application/JSON`. The `contentEncoding` system property must be one of the supported UTF encodings supported by that system property. If these properties are not specified, Azure IoT Hub will not evaluate the query expression on the message body.
+To enable querying on message body, the message should be in a JSON encoded in either UTF-8, UTF-16 or UTF-32. The `contentType` must be set to `application/JSON`. The `contentEncoding` system property must be one of the supported UTF encodings supported by that system property. If these properties aren't specified, Azure IoT Hub will not evaluate the query expression on the message body.
 
 The following example shows how to create a message with a properly formed and encoded JSON body:
 
@@ -193,7 +193,7 @@ $body.Weather.Temperature = 50 AND processingPath = 'hot'
 
 ```
 
-You can run queries and functions only on properties in the body reference. You can't run queries or functions on the entire body reference. For example, the following query is not supported and returns `undefined`:
+You can run queries and functions only on properties in the body reference. You can't run queries or functions on the entire body reference. For example, the following query isn't supported and returns `undefined`:
 
 ```SQL
 $body[0] = 'Feb'
@@ -253,7 +253,7 @@ Message routing enables you to query on device twin or module twin tags and prop
 
 ### Query expressions for message routing query based on device twin
 
-A query on device twin properties needs to be prefixed with `$twin`. Your query expression can also combine a twin tag or property reference with a body reference, a message system properties reference, or a message application properties reference. We recommend using unique names in tags and properties as the query is not case-sensitive. We also recommend that you avoid using `twin`, `$twin`, `body`, or `$body`, as a property names. For example, the following are all valid query expressions:
+A query on device twin properties needs to be prefixed with `$twin`. Your query expression can also combine a twin tag or property reference with a body reference, a message system properties reference, or a message application properties reference. We recommend using unique names in tags and properties as the query isn't case-sensitive. We also recommend that you avoid using `twin`, `$twin`, `body`, or `$body`, as a property names. For example, the following are all valid query expressions:
 
 ```SQL
 $twin.properties.desired.telemetryConfig.sendFrequency = '5m'

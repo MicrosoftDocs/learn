@@ -9,4 +9,4 @@ In this module, you will:
 * Examine the built-in and custom endpoints that can be used with Azure IoT Hub message routing.
 * Examine the message routing query syntax.
 
-By the end of this module, you will be able to describe how an Azure IoT Hub solution uses message routing to process message and event data.
+By the end of this module, you'll be able to describe how an Azure IoT Hub solution uses message routing to process message and event data.

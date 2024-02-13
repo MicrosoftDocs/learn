@@ -13,11 +13,15 @@ Azure IoT hub supports Azure Storage containers, Event Hubs, Service Bus queues,
 
 ### Azure Storage endpoint
 
-There are two storage services Azure IoT Hub can route messages to -- Azure Blob Storage and Azure Data Lake Storage Gen2 (ADLS Gen2) accounts. Azure Data Lake Storage accounts are hierarchical namespace-enabled storage accounts built on top of blob storage. Both of these use blobs for their storage.
+There are two storage services Azure IoT Hub can route messages to:
+* Azure Blob Storage 
+* Azure Data Lake Storage Gen2 (ADLS Gen2) accounts 
+
+Azure Data Lake Storage accounts are hierarchical namespace-enabled storage accounts built on top of blob storage. Both of these use blobs for their storage.
 
 ### Event Hubs
 
-Event Hubs is a service that processes large amounts of event data (telemetry) from connected devices and applications. After you collect data into Event Hubs, you can store the data using a storage cluster or transform it using a real-time analytics provider. This large-scale event collection and processing capability is a key component of modern application architectures including the Internet of Things (IoT).
+Event Hubs is a service that processes large amounts of event data (telemetry) from connected devices and applications. After you collect data into Event Hubs, you can store the data using a storage cluster or transform it using a real-time analytics provider. This large-scale event collection and processing capability are a key component of modern application architectures including the Internet of Things (IoT).
 
 ### Service Bus Queues and Service Bus Topics
 
@@ -25,7 +29,7 @@ Service Bus queues and topics used as Azure IoT Hub endpoints must not have Sess
 
 ## Fallback route
 
-The fallback route sends all the messages that don't satisfy query conditions on any of the existing routes to the built-in endpoint (messages/events) that is compatible with Event Hubs. If message routing is turned on, you can enable the fallback route capability. Once a route is created, data stops flowing to the built-in-endpoint, unless a route is created to that endpoint. If there are no routes to the built-in-endpoint and a fallback route is enabled, only messages that don't match any query conditions on routes will be sent to the built-in-endpoint. Also, if all existing routes are deleted, fallback route must be enabled to receive all data at the built-in-endpoint.
+The fallback route sends all the messages that don't satisfy query conditions on any of the existing routes to the built-in endpoint (messages/events) that is compatible with Event Hubs. If message routing is turned on, you can enable the fallback route capability. Once a route is created, data stops flowing to the built-in-endpoint, unless a route is created to that endpoint. If there are no routes to the built-in-endpoint and a fallback route is enabled, only messages that don't match any query conditions on routes are sent to the built-in-endpoint. Also, if all existing routes are deleted, fallback route must be enabled to receive all data at the built-in-endpoint.
 
 You can enable/disable the fallback route in the Azure portal-&gt;Message Routing blade. You can also use Azure Resource Manager for FallbackRouteProperties to use a custom endpoint for fallback route.
 
@@ -49,6 +53,6 @@ In most cases, the average increase in latency is less than 500 ms. You can moni
 
 Azure IoT Hub provides several metrics related to routing and endpoints to give you an overview of the health of your hub and messages sent. You can combine information from multiple metrics to identify root cause for issues. For example, use metric `Routing: telemetry messages dropped` or `d2c.telemetry.egress.dropped` to identify the number of messages that were dropped when they didn't match queries on any of the routes and fallback route was disabled. [IoT Hub metrics](/azure/iot-hub/iot-hub-metrics) lists all metrics that are enabled by default for your Azure IoT Hub.
 
-You can use the REST API [Get Endpoint Health](/rest/api/iothub/iothubresource/getendpointhealth) to get health status of the endpoints. We recommend using the Azure IoT Hub metrics related to routing message latency to identify and debug errors when endpoint health is dead or unhealthy. For example, for endpoint type Event Hubs, you can monitor `d2c.endpoints.latency.eventHubs`. The status of an unhealthy endpoint will be updated to healthy when Azure IoT Hub has established an eventually consistent state of health.
+You can use the REST API [Get Endpoint Health](/rest/api/iothub/iothubresource/getendpointhealth) to get health status of the endpoints. We recommend using the Azure IoT Hub metrics related to routing message latency to identify and debug errors when endpoint health is dead or unhealthy. For example, for endpoint type Event Hubs, you can monitor `d2c.endpoints.latency.eventHubs`. The status of an unhealthy endpoint is updated to healthy when Azure IoT Hub has established an eventually consistent state of health.
 
 Using the `routes` diagnostic logs in Azure Monitor diagnostic settings, you can track errors that occur during evaluation of a routing query and endpoint health as perceived by Azure IoT Hub, for example when an endpoint is dead. These diagnostic logs can be sent to Azure Monitor logs, Event Hubs, or Azure Storage for custom processing.

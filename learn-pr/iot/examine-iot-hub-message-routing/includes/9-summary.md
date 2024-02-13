@@ -2,6 +2,6 @@ Your team needs to implement device message processing to support downstream dat
 
 You learned how to implement device message processing.
 
-If you and your company had not learned to implement device message processing, you would not be prepared to support downstream data analysis and other downstream requirements.
+If you and your company didn't implement device message processing, you wouldn't be prepared to support downstream data analysis and other downstream requirements.
 
-Your device message processing experience will help you to support your company's downstream data analysis and other downstream requirements.
+Your device message processing experience helps you to support your company's downstream data analysis and other downstream requirements.

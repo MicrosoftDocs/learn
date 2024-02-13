@@ -25,7 +25,7 @@ By default, messages are routed to the built-in service-facing endpoint (message
   :::column-end:::
 :::row-end:::
 
-Azure IoT Hub allows data retention in the built-in endpoint for a maximum of 7 days. You can set the retention time during creation of your Azure IoT Hub. Data retention time in Azure IoT Hub depends on your Azure IoT hub tier and unit type. In terms of size, the built-in Event Hubs endpoint can retain messages of the maximum message size up to at least 24 hours of quota. For example, for 1 S1 unit Azure IoT Hub provides enough storage to retain at least 400 thousand messages of 4k size each. If your devices are sending smaller messages, they may be retained for longer (up to seven days) depending on how much storage is consumed. We guarantee to retain the data for the specified retention time as a minimum.
+Azure IoT Hub allows data retention in the built-in endpoint for a maximum of seven days. You can set the retention time during creation of your Azure IoT Hub. Data retention time in Azure IoT Hub depends on your Azure IoT hub tier and unit type. In terms of size, the built-in Event Hubs endpoint can retain messages of the maximum message size up to at least 24 hours of quota. For example, for 1 S1 unit Azure IoT Hub provides enough storage to retain at least 400 thousand messages of 4k size each. If your devices are sending smaller messages, they may be retained for longer (up to seven days) depending on how much storage is consumed. We guarantee to retain the data for the specified retention time as a minimum.
 
 Azure IoT Hub also enables you to manage consumer groups on the built-in device-to-cloud receive endpoint. You can have up to 20 consumer groups for each Azure IoT Hub.
 
@@ -43,7 +43,7 @@ When you use Event Hubs SDKs or product integrations that are unaware of Azure I
 
 The Events section contains the following values: Partitions, Event Hubs-compatible name, Event Hubs-compatible endpoint, Retention time, and Consumer groups.
 
-:::image type="content" source="../media/m04-l02-built-in-endpoints-event-hub-compatible-5d025c6e.png" alt-text="Screenshot that shows the Events section for the Built-in endpoint properties for IoT hub.":::
+:::image type="content" source="../media/m04-l02-built-in-endpoints-event-hub-compatible-5d025c6e.png" alt-text="Screenshot that shows the Events section for the Built-in endpoint properties for Azure IoT hub.":::
 
 In the portal, the Event Hubs-compatible endpoint field contains a complete Event Hubs connection string that looks like: `Endpoint=sb://abcd1234namespace.servicebus.windows.net/;SharedAccessKeyName=iothubowner;SharedAccessKey=keykeykeykeykeykey=;EntityPath=iothub-ehub-abcd-1234-123456`. If the SDK you're using requires other values, then they would be:
 
