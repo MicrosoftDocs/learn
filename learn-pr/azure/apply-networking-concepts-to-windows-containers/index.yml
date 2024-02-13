@@ -34,7 +34,7 @@ units:
 - learn.azure.apply-networking-concepts-to-windows-containers.introduction
 - learn.azure.apply-networking-concepts-to-windows-containers.networking-concepts-for-containers
 - learn.azure.apply-networking-concepts-to-windows-containers.networking-concepts-for-windows-containers
-- learn.azure.apply-networking-concepts-to-windows-containers.networking concepts-for-kubernetes-containers
+- learn.azure.apply-networking-concepts-to-windows-containers.networking-concepts-for-kubernetes-containers
 - learn.azure.apply-networking-concepts-to-windows-containers.windows-container-networking-with-azure-kubernetes-service
 - learn.azure.apply-networking-concepts-to-windows-containers.windows-container-networking-with-azure-kubernetes-service-hybrid
 - learn.azure.apply-networking-concepts-to-windows-containers.knowledge-check

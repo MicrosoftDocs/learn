@@ -36,7 +36,7 @@ To simplify the network configuration for your application workloads, AKS Hybrid
 - **Kubernetes nodes** (*worker* **virtual machines**). These virtual machines are created as highly available virtual machines in AKS Hybrid.
 - **Kubernetes services**. Services group pod IP addresses to enable direct access via a single IP address and distribute traffic by using a load balancer.
 - **HAProxy load balancers**. A TCP/HTTP load balancer and proxy server that distributes incoming requests across multiple endpoints.
-- **Microsoft On-premises Cloud Service**. The cloud provider that enables the creation and management of the virtualized environment hosting Kubernetes on an on-premises AKS Hybrid cluster. The networking model implemented in your AKS Hybrid cluster determines the IP address allocation method used by the Microsoft On-Premises Cloud Service.
+- **Microsoft On-premises Cloud Service**. The cloud provider that enables the creation and management of the virtualized environment hosting Kubernetes on an on-premises AKS Hybrid cluster. The networking model implemented in your AKS Hybrid cluster determines the IP address allocation method used by the Microsoft On-premises Cloud Service.
 
 ## Load balancing in AKS Hybrid
 
