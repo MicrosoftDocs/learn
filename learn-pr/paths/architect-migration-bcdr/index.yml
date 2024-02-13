@@ -28,7 +28,7 @@ products:
 - azure-sql-database
 - azure-migrate
 subjects:
-- business-continuity
+# - business-continuity
 - migration
 modules:
 - learn.protect-on-premises-infrastructure-with-azure-site-recovery
