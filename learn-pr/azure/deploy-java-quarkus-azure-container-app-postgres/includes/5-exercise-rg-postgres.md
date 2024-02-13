@@ -23,10 +23,10 @@ Use the following commands to set up the variables. Be sure to modify the values
 
 ```bash
 export AZ_PROJECT="azure-deploy-quarkus"
-export AZ_RESOURCE_GROUP="rg-${AZ_PROJECT}"
+export AZ_RESOURCE_GROUP="rg${AZ_PROJECT}"
 export AZ_LOCATION="eastus"
-export AZ_CONTAINERAPP="ca-${AZ_PROJECT}"
-export AZ_CONTAINERAPP_ENV="cae-${AZ_PROJECT}"
+export AZ_CONTAINERAPP="ca${AZ_PROJECT}"
+export AZ_CONTAINERAPP_ENV="cae${AZ_PROJECT}"
 export AZ_POSTGRES_DB_NAME="postgres-${AZ_PROJECT}"
 export AZ_POSTGRES_USERNAME="<user-name>"
 export AZ_POSTGRES_PASSWORD="<secure-password>"

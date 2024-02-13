@@ -4,13 +4,13 @@ In this unit, you create the Azure Container Apps environment by using the Azure
 
 Container Apps is used to deploy containerized applications. So you first need to containerize the Quarkus application into a Docker image. This process is easy because the Quarkus Maven plugin has already generated some Dockerfiles under `src/main/docker`.
 
-Use this command to rename one of these Dockerfiles, `Dockerfile.jvm`, to `Dockerfile` and move it to the root folder:
+Use this command to rename one of these Dockerfiles, *Dockerfile.legacy-jar*, to *Dockerfile* and move it to the root folder:
 
 ```bash
-mv src/main/docker/Dockerfile.jvm ./Dockerfile
+mv src/main/docker/Dockerfile.legacy-jar ./Dockerfile
 ```
 
-The Dockerfile should contain the following:
+The Dockerfile should contain code that's similar to the following:
 
 ```dockerfile
 FROM registry.access.redhat.com/ubi8/openjdk-11:1.14
