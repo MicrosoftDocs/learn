@@ -22,15 +22,15 @@ You need to set up some environment variables. Here are some notes about the var
 Use the following commands to set up the variables. Be sure to modify the values as described in the preceding table.
 
 ```bash
-export AZ_PROJECT="azure-deploy-quarkus"
-export AZ_RESOURCE_GROUP="rg${AZ_PROJECT}"
+export AZ_PROJECT_<your initials>="azure-deploy-quarkus"
+export AZ_RESOURCE_GROUP="rg${AZ_PROJECT_<your initials>}"
 export AZ_LOCATION="eastus"
-export AZ_CONTAINERAPP="ca${AZ_PROJECT}"
-export AZ_CONTAINERAPP_ENV="cae${AZ_PROJECT}"
-export AZ_POSTGRES_DB_NAME="postgres-${AZ_PROJECT}"
+export AZ_CONTAINERAPP="ca${AZ_PROJECT_<your initials>}"
+export AZ_CONTAINERAPP_ENV="cae${AZ_PROJECT_<your initials>}"
+export AZ_POSTGRES_DB_NAME="postgres-${AZ_PROJECT_<your initials>}"
 export AZ_POSTGRES_USERNAME="<user-name>"
 export AZ_POSTGRES_PASSWORD="<secure-password>"
-export AZ_POSTGRES_SERVER_NAME="psql${AZ_PROJECT}"
+export AZ_POSTGRES_SERVER_NAME="psql${AZ_PROJECT_<your initials>}"
 ```
 
 These environment variables are used throughout the rest of this module.
