@@ -19,7 +19,7 @@ The following diagram depicts the approach to log analysis you'll be following t
 
 Recall that your IT team has noticed recurring issues related to virtual machines with high CPU usage and insufficient free space. 
 
-You also want to ensure that you're getting data about all active virtual machines in your network. You need to be able to identify machines that stop sending data, so that you can investigate and ensure have full visibility of the status of your virtual machines.
+You want to ensure that you're getting data about all active virtual machines in your network. You need to be able to identify machines that stop sending data, so that you can investigate and ensure the full visibility of the status of your virtual machines.
 
 Therefore, for your analysis, you'll need data about:
 
