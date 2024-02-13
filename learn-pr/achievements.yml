@@ -3028,3 +3028,8 @@ achievements:
   title: Building and running a TCP echo client
   summary: Design, build, and run a TCP echo client.
   iconUrl: /training/achievements/iot/netx-duo-build-a-tcp-echo-client.svg
+- uid: learn.design-your-migration-to-azure.badge
+  type: badge
+  summary: Minimize the time and resources required to migrate your on-premises environment to Azure. Assess your current systems with Azure Migrate, and migrate them with Azure Migrate and Azure Database Migration Service.
+  title: Design your migration to Azure
+  iconUrl: /training/achievements/design-your-migration-to-azure.svg
