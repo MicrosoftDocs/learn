@@ -81,7 +81,7 @@ Now that you've created an external state to store all the data from the ship ma
 
     The creation process can take a few moments to complete.
 
-    [!include[](../../includes/aks-regional-quota.md)]
+    [!INCLUDE [aks-regional-quota](../../includes/aks-regional-quota.md)]
 
 4. Download the kubectl configuration using the `az aks get-credentials` command.
 
