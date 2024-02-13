@@ -33,7 +33,7 @@ Each routing query you configure has the following properties:
     Condition
   :::column-end:::
   :::column:::
-    The query expression for the routing query that is run against the message application properties, system properties, message body, device twin tags, and device twin properties to determine if it is a match for the endpoint. For more information about constructing a query, see the see message routing query syntax.
+    The query expression for the routing query that is run against the message application properties, system properties, message body, device twin tags, and device twin properties to determine if it is a match for the endpoint.
   :::column-end:::
 :::row-end:::
 :::row:::

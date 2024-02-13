@@ -2,12 +2,12 @@ Message routing enables you to send messages from your devices to cloud services
 
 * Sending device telemetry messages and events to the built-in endpoint and custom endpoints. Events that can be routed include device lifecycle events, device twin change events, digital twin change events, and device connection state events.
 
-* Filtering data before routing it to various endpoints by applying rich queries. Message routing allows you to query on the message properties and message body as well as device twin tags and device twin properties. For more information, see queries in message routing.
+* Filtering data before routing it to various endpoints by applying rich queries. Message routing allows you to query on the message properties and message body as well as device twin tags and device twin properties.
 
 As described in the previous unit page, Azure IoT Hub defines a common set of features for all device-to-cloud messaging for interoperability across protocols.
 
 > [!NOTE]
-> Some of the features mentioned in this unit, like cloud-to-device messaging, device twins, and device management, are only available in the standard tier of IoT Hub. For more information about the basic and standard/free IoT Hub tiers, see Choose the right IoT Hub tier for your solution.
+> Some of the features mentioned in this unit, like cloud-to-device messaging, device twins, and device management, are only available in the standard tier of IoT Hub.
 
 ## Routing endpoints
 
@@ -31,7 +31,7 @@ Make sure you configure your services to support the expected throughput. For ex
 
 You can use standard Event Hubs integration and SDKs to receive device-to-cloud messages from the built-in endpoint (messages/events). Once a route is created, data stops flowing to the built-in endpoint unless a route is created to that endpoint. Even if no routes are created, a fallback route must be enabled to route messages to the built-in endpoint. The fallback is enabled by default if you create your hub using the portal or the CLI.
 
-The built-in endpoint is described in more detail on this next unit page.
+The built-in endpoint is described in more detail on the next unit page.
 
 ## Azure Storage containers as a routing endpoint
 
@@ -42,7 +42,7 @@ There are two storage services that Azure IoT Hub can route messages to:
 
 Azure Data Lake Storage accounts are hierarchical namespace-enabled storage accounts built on top of blob storage. Both of these use blobs for their storage.
 
-See [Blob storage](/azure/storage/blobs/storage-blob-event-quickstart) to learn how to read from this endpoint type.
+To learn how to read from this endpoint type, see [Blob storage](/azure/storage/blobs/storage-blob-event-quickstart).
 
 ## Service Bus queues and Service Bus topics as a routing endpoint
 
