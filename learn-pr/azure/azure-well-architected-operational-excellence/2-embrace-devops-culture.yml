@@ -29,7 +29,7 @@ quiz:
     - content: 'Using a common toolset can reduce the amount of security controls required.'
       isCorrect: false
       explanation: "Incorrect. Using a common toolset doesn’t reduce the amount of security controls required. Security controls are a key component of DevOps culture and are used to ensure that applications are secure and compliant."
-  - content: 'Which of the following in an example of building a continuous learning and experimentation mindset?'
+  - content: 'Which of the following is an example of building a continuous learning and experimentation mindset?'
     choices:
     - content: 'Conducting blameless postmortems after incidents.' 
       isCorrect: true

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/12/2024
+  ms.date: 02/13/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -60,14 +60,14 @@ quiz:
     - content: "The developer should register the web API with the Microsoft identity platform, assign an owner, create an app role, and add a scope."
       isCorrect: true
       explanation: "Correct. By registering the web API and exposing it through scopes, assigning an owner and app role, the developer can provide permissions-based access to authorized users and client apps that access the API."
-  - content: "A company wants to ensure that only authorized users have access to their enterprise applications. What feature in Microsoft Enterprise Identity can they use to automate the creation and teardown of environments to help deliver secure and stable application hosting platforms?"
+  - content: "A developer needs to securely store secrets in Azure Key Vault and allow services to access them. What is the benefit of using managed identities?"
     choices:
-    - content: "App registration permission scopes"
+    - content: "Managed identities require developers to manage credentials."
       isCorrect: false
-      explanation: "Incorrect. App registration permission scopes are used to grant the right level of access to resources for applications, but don't enable automation and validation of environment creation and teardown."
-    - content: "OAuth permission grants"
+      explanation: "Incorrect. Managed identities eliminate the need for developers to manage credentials."
+    - content: "Managed identities can only be used to authenticate to Microsoft Entra resources."
       isCorrect: false
-      explanation: "Incorrect. OAuth permission grants are used to control application access, but don't enable automation and validation of environment creation and teardown."
-    - content: "Service principals"
+      explanation: "Incorrect. Managed identities can be used to authenticate to any resource that supports Microsoft Entra authentication, including the developer's own applications."
+    - content: "Managed identities eliminate the need for developers to manage secrets, credentials, certificates, and keys used to secure communication between services."
       isCorrect: true
-      explanation: "Correct. Service principals can be used to automate application management and interactions, including the creation and teardown of environments, to help deliver secure and stable application hosting platforms."
+      explanation: "Correct. Managed identities provide an automatically managed identity in Microsoft Entra ID for applications to use when connecting to resources that support Microsoft Entra authentication. Applications can use managed identities to obtain Microsoft Entra tokens without having to manage any credentials."
