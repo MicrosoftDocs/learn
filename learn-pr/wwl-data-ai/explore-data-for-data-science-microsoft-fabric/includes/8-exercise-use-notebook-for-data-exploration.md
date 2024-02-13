@@ -7,4 +7,4 @@ In this exercise, you’ll learn how to perform Exploratory Data Analysis (EDA) 
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/08a-data-science-explore-data.html?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2259792&azure-portal=true)

@@ -4,10 +4,12 @@ title: 'Configure Microsoft Entra Privileged Identity Management '
 metadata:
   title: Configure Microsoft Entra Privileged Identity Management
   description: "Configure Microsoft Entra Privileged Identity Management"
-  ms.date: 02/02/2024
+  ms.date: 02/12/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/7-microsoft-entra-privileged-identity-management.md)]
