@@ -3,7 +3,7 @@ uid: learn.wwl.security-public-access-azure-resources
 metadata:
   title: Plan and implement security for public access to Azure resources
   description: "This module is designed to empower administrators with the knowledge and skills required to plan and implement robust security measures for public access to Azure resources, ensuring the confidentiality, integrity, and availability of applications and services."
-  ms.date: 02/12/2024
+  ms.date: 02/13/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
