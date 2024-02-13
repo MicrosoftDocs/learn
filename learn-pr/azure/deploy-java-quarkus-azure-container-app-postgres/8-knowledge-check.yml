@@ -15,7 +15,7 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: 'Which of the following Java classes provides generic CRUD methods for managing JPA objects?'
+  - content: 'Which of the following Java classes provides generic CRUD methods for managing Java Persistence API (JPA) objects?'
     choices:
     - content: PanacheEntity
       isCorrect: true
