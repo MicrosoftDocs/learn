@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/28/2023
+  ms.date: 02/13/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -14,39 +14,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the main purpose of Azure Front Door?"
-    choices:
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
-      isCorrect: false
-      explanation: "Incorrect. This describes the purpose of Azure DevOps."
-    - content: "A cloud-based database service that enables the creation, management, and scaling of NoSQL databases"
-      isCorrect: false
-      explanation: "Incorrect. This describes the purpose of Azure Cosmos DB."
-    - content: "Provides fast, reliable, and secure access between users and applications' static and dynamic web content across the globe"
-      isCorrect: true
-      explanation: "Correct. Azure Front Door is Microsoft's modern cloud Content Delivery Network (CDN) that provides fast, reliable, and secure access between users and applications' static and dynamic web content across the globe."
   - content: "What does Azure DDoS Protection do to provide tailored protection policies for each customer?"
     choices:
     - content: "It applies the same mitigation policies for all customers."
       isCorrect: false
-      explanation: "Incorrect. This would not provide tailored protection policies for each customer."
+      explanation: "Incorrect. This wouldn't provide tailored protection policies for each customer."
     - content: "It relies on customers to configure their own protection policies."
       isCorrect: false
-      explanation: "Incorrect. This would not provide tailored protection policies for each customer."
+      explanation: "Incorrect. This wouldn't provide tailored protection policies for each customer."
     - content: "It automatically learns per customer per Public IP traffic patterns for Layer 3 and 4."
       isCorrect: true
       explanation: "Correct. Azure DDoS Protection uses automatic learning of per customer per Public IP traffic patterns for Layer 3 and 4 to provide tailored protection policies for each customer."
-  - content: "A security specialist needs to ensure that Azure resources are protected against threats while maintaining high performance. Which of the following enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms?"
-    choices:
-    - content: "Azure Front Door"
-      isCorrect: false
-      explanation: "Incorrect. Azure Front Door is a global, scalable entry-point that uses the Microsoft global edge network to create fast, secure, and widely scalable web applications."
-    - content: "Azure Firewall Manager"
-      isCorrect: false
-      explanation: "Incorrect. Azure Firewall Manager is a network security management service that provides central security policy and route management for cloud-based security perimeters."
-    - content: "Azure DevOps"
-      isCorrect: true
-      explanation: "Correct. Azure DevOps enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
   - content: "A company wants to ensure the security of their web applications from common exploits and vulnerabilities. Which of the following solutions can help them achieve this?"
     choices:
     - content: "Securing each individual web application separately"
@@ -58,14 +36,47 @@ quiz:
     - content: "Deploying a centralized Web Application Firewall (WAF)"
       isCorrect: true
       explanation: "Correct. A WAF provides centralized protection of web applications from common exploits and vulnerabilities, making security management simpler and giving application administrators better assurance of protection against threats and intrusions."
-  - content: "A company wants to ensure the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms. Which of the following options would enable this?"
+  - content: "A company wants to improve the performance and security of their web applications for their global users. They want to use a cloud Content Delivery Network (CDN) that can provide fast, reliable, and secure access between their users and their applications. Which Microsoft service can they use to achieve this?"
     choices:
-    - content: "Using a different tool that does not support automation"
+    - content: "Azure Traffic Manager"
       isCorrect: false
-      explanation: "Incorrect. Using a tool that does not support automation will not enable the automation and validation of the creation and teardown of environments."
-    - content: "Using a manual process to create and teardown environments"
+      explanation: "Incorrect. Azure Traffic Manager is a DNS-based traffic load balancer that enables users to distribute traffic optimally to services across global Azure regions."
+    - content: "Azure Virtual Network"
       isCorrect: false
-      explanation: "Incorrect. A manual process is prone to human error and can lead to inconsistencies in the environment."
-    - content: "Using an infrastructure as code tool to automate the creation and teardown of environments"
+      explanation: "Incorrect. Azure Virtual Network is a service that allows users to create and manage virtual private networks (VPNs) in Azure."
+    - content: "Azure Front Door"
       isCorrect: true
-      explanation: "Correct. An infrastructure as code tool enables the automation and validation of the creation and teardown of environments, ensuring consistency and stability in the application hosting platform."
+      explanation: "Correct. Azure Front Door is Microsoft's modern cloud Content Delivery Network (CDN) that provides fast, reliable, and secure access between users and applications' static and dynamic web content across the globe. It delivers content using Microsoft's global edge network with hundreds of global and local points of presence (PoPs) distributed around the world close to both enterprise and consumer end-users."
+  - content: "A company wants to protect their Azure resources from DDoS attacks. Which Azure DDoS Protection tier should they choose if they want to pay per protected IP and receive additional value-added services such as rapid response support, cost protection, and discounts on WAF?"
+    choices:
+    - content: "DDoS Protection Key Features"
+      isCorrect: false
+      explanation: "Incorrect. DDoS Protection Key Features provides always-on traffic monitoring, adaptive real-time tuning, and DDoS protection analytics, metrics, and alerting, but it doesn't offer additional value-added services such as rapid response support, cost protection, and discounts on WAF."
+    - content: "DDoS Network Protection"
+      isCorrect: false
+      explanation: "Incorrect. DDoS Network Protection is automatically tuned to help protect specific Azure resources in a virtual network, but it doesn't offer additional value-added services such as rapid response support, cost protection, and discounts on WAF."
+    - content: "DDoS IP Protection"
+      isCorrect: true
+      explanation: "Correct. DDoS IP Protection is a pay-per-protected-IP model that offers the same core engineering features as DDoS Network Protection, but with additional value-added services such as rapid response support, cost protection, and discounts on WAF."
+  - content: "A company wants to protect their Azure resources from DDoS attacks. Which Azure DDoS Protection tier should they choose if they want to pay per protected IP and receive additional value-added services such as rapid response support, cost protection, and discounts on WAF?"
+    choices:
+    - content: "DDoS Protection Key Features"
+      isCorrect: false
+      explanation: "Incorrect. DDoS Protection Key Features provides always-on traffic monitoring, adaptive real-time tuning, and DDoS mitigation analytics, metrics, and alerting, but it doesn't offer the pay-per-protected-IP model or additional value-added services of DDoS IP Protection."
+    - content: "DDoS Network Protection"
+      isCorrect: false
+      explanation: "Incorrect. DDoS Network Protection is automatically tuned to help protect specific Azure resources in a virtual network, but it doesn't offer the additional value-added services of DDoS IP Protection."
+    - content: "DDoS IP Protection"
+      isCorrect: true
+      explanation: "Correct. DDoS IP Protection is a pay-per-protected-IP model that offers additional value-added services such as rapid response support, cost protection, and discounts on WAF."
+  - content: "A company is using an application gateway to route traffic to their backend servers. They want to ensure that the traffic between the application gateway and backend servers is encrypted. Which setting in HTTP settings should they configure to accomplish this?"
+    choices:
+    - content: "Modifications to the request"
+      isCorrect: false
+      explanation: "Incorrect. This setting doesn't affect the encryption of traffic between the application gateway and backend servers."
+    - content: "Backend server DNS resolution"
+      isCorrect: false
+      explanation: "Incorrect. This setting doesn't affect the encryption of traffic between the application gateway and backend servers."
+    - content: "Port and protocol"
+      isCorrect: true
+      explanation: "Correct. The port and protocol used in HTTP settings determine whether the traffic between the application gateway and backend servers is encrypted, accomplishing end-to-end TLS."

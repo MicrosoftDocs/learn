@@ -34625,6 +34625,41 @@
       "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/9-integrate-applications-with-microsoft-entra-id.md",
       "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/7-integrate-applications-with-microsoft-entra-id",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-your-migration-to-azure/index.yml",
+      "redirect_url": "/azure/azure-sql/migration-guides/database/sql-server-to-sql-database-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-your-migration-to-azure/1-introduction.yml",
+      "redirect_url": "/azure/azure-sql/migration-guides/database/sql-server-to-sql-database-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-your-migration-to-azure/2-plan-your-azure-migration.yml",
+      "redirect_url": "/azure/azure-sql/migration-guides/database/sql-server-to-sql-database-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-your-migration-to-azure/3-assess-your-environment.yml",
+      "redirect_url": "/azure/azure-sql/migration-guides/database/sql-server-to-sql-database-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-your-migration-to-azure/4-migrate-servers.yml",
+      "redirect_url": "/azure/azure-sql/migration-guides/database/sql-server-to-sql-database-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-your-migration-to-azure/5-migrate-databases.yml",
+      "redirect_url": "/azure/azure-sql/migration-guides/database/sql-server-to-sql-database-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-your-migration-to-azure/6-summary.yml",
+      "redirect_url": "/azure/azure-sql/migration-guides/database/sql-server-to-sql-database-guide",
+      "redirect_document_id": false
     }
   ]
 }
