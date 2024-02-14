@@ -27,7 +27,7 @@ Microsoft Azure is certified for the following SAP products, with full support f
 
 | SAP Product | Guest OS | RDBMS | Virtual Machine Types |
 |-|-|-|-|
-| SAP Business One on SQL Server | Windows | SQL Server | All NetWeaver certified virtual machine types | [SAP Note \#928839](https://me.sap.com/notes/928839) |
+| SAP Business One on SQL Server | Windows | SQL Server | All NetWeaver certified virtual machine types: [SAP Note \#928839](https://me.sap.com/notes/928839) |
 | SAP BPC 10.01 MS SP08 | Windows and Linux | | All NetWeaver Certified virtual machine types: [SAP Note \#2451795](https://me.sap.com/notes/2451795)
 | SAP Business Objects BI platform | Windows and Linux | | [SAP Note \#2145537](https://me.sap.com/notes/2145537) |
 | SAP Data Services 4.2 | | | [SAP Note \#2288344](https://me.sap.com/notes/2288344) |
