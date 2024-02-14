@@ -33692,17 +33692,22 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/6-message-routing-query-syntax.yml",
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/6-message-routing-to-multiple-end-points.yml",
       "redirect_url": "/training/modules/examine-iot-hub-message-routing/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/7-knowledge-check.yml",
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/7-message-routing-query-syntax.yml",
       "redirect_url": "/training/modules/examine-iot-hub-message-routing/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/8-summary.yml",
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/8-knowledge-check.yml",
+      "redirect_url": "/training/modules/examine-iot-hub-message-routing/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/9-summary.yml",
       "redirect_url": "/training/modules/examine-iot-hub-message-routing/",
       "redirect_document_id": false
     },
