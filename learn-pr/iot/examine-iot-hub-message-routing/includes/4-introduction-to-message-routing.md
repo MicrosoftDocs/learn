@@ -15,7 +15,15 @@ Each IoT hub has a default built-in endpoint (**messages/events**) that is compa
 
 Each message is routed to all endpoints whose routing queries it matches. In other words, a message can be routed to multiple endpoints. If a message matches multiple routes that point to the same endpoint, IoT Hub delivers the message to that endpoint only once.
 
-In addition to the built-in endpoint, Azure IoT Hub supports the following **custom** endpoints.
+## Built-in endpoint
+
+You can use standard Event Hubs integration and SDKs to receive device-to-cloud messages from the built-in endpoint (messages/events). Once a route is created, data stops flowing to the built-in endpoint unless a route is created to that endpoint. Even if no routes are created, a fallback route must be enabled to route messages to the built-in endpoint. The fallback is enabled by default if you create your hub using the portal or the CLI.
+
+The built-in endpoint is described in more detail on the next unit page.
+
+## Custom endpoints
+
+In addition to the built-in endpoint, Azure IoT Hub supports the following custom endpoints:
 
 * Storage containers
 * Service Bus queues
@@ -27,13 +35,7 @@ IoT Hub needs write access to these service endpoints for message routing to wor
 
 Make sure you configure your services to support the expected throughput. For example, if you're using Event Hubs as a custom endpoint, you must configure the **throughput units** for that event hub so it can handle the ingress of events you plan to send via IoT Hub message routing. Similarly, when using a Service Bus queue as an endpoint, you must configure the **maximum size** to ensure the queue can hold all the data ingressed, until it's egressed by consumers. When you first configure your IoT solution, you may need to monitor your other endpoints and make any necessary adjustments for the actual load.
 
-## Built-in endpoint
-
-You can use standard Event Hubs integration and SDKs to receive device-to-cloud messages from the built-in endpoint (messages/events). Once a route is created, data stops flowing to the built-in endpoint unless a route is created to that endpoint. Even if no routes are created, a fallback route must be enabled to route messages to the built-in endpoint. The fallback is enabled by default if you create your hub using the portal or the CLI.
-
-The built-in endpoint is described in more detail on the next unit page.
-
-## Azure Storage containers as a routing endpoint
+### Azure Storage containers as a routing endpoint
 
 There are two storage services that Azure IoT Hub can route messages to:
 
@@ -42,30 +44,30 @@ There are two storage services that Azure IoT Hub can route messages to:
 
 Azure Data Lake Storage accounts are hierarchical namespace-enabled storage accounts built on top of blob storage. Both of these use blobs for their storage.
 
-To learn how to read from this endpoint type, see [Blob storage](/azure/storage/blobs/storage-blob-event-quickstart).
+To learn how to read from this endpoint type, see read from [Blob storage](/azure/storage/blobs/storage-blob-event-quickstart).
 
-## Service Bus queues and Service Bus topics as a routing endpoint
+### Azure Service Bus queues and Service Bus topics as a routing endpoint
 
-Service Bus queues and topics used as Azure IoT Hub endpoints must not have **Sessions** or **Duplicate Detection** enabled. If either of those options are enabled, the endpoint appears as Unreachable in the Azure portal.
+Service Bus queues and topics used as Azure IoT Hub endpoints must not have **Sessions** or **Duplicate Detection** enabled. If either of those options are enabled, the endpoint appears as **Unreachable** in the Azure portal.
 
-To learn how to read from this endpoint type, see:
-* Read from [Service Bus queues](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues)
+To learn how to read from these endpoint types, see:
+* Read from [Service Bus queues](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues).
 
-* Read from [Service Bus topics](/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions)
+* Read from [Service Bus topics](/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions).
 
-## Event Hubs as a routing endpoint
+### Event Hubs as a routing endpoint
 
 Event Hubs is a service that processes large amounts of event data (telemetry) from connected devices and applications. After you collect data into Event Hubs, you can store the data using a storage cluster or transform it using a real-time analytics provider. This large-scale event collection and processing capability are a key component of modern application architectures including the Internet of Things (IoT).
 
-See [Event Hubs](/azure/event-hubs/event-hubs-dotnet-standard-getstarted-send) to learn about how to read messages from Event Hubs.
+See, read from [Event Hubs](/azure/event-hubs/event-hubs-dotnet-standard-getstarted-send) to learn about how to read messages from Event Hubs.
 
-## Azure Cosmos DB as a routing endpoint (preview)
+### Azure Cosmos DB as a routing endpoint (preview)
 
 You can send data directly to Azure Cosmos DB from Azure IoT Hub. Cosmos DB is a fully managed hyperscale multi-model database service. It provides low latency and high availability, making it a great choice for scenarios like connected solutions and manufacturing that require extensive downstream data analysis.
 
 ## Route to an endpoint in another subscription
 
-If the endpoint resource is in a different subscription than your Azure IoT hub, you need to configure your Azure IoT hub as a trusted Microsoft service before creating a custom endpoint. When you do create the custom endpoint, set the Authentication type to user-assigned identity.
+If the endpoint resource is in a different subscription than your Azure IoT hub, you need to configure your Azure IoT hub as a trusted Microsoft service before creating a custom endpoint. When you do create the custom endpoint, set the **Authentication** type to user-assigned identity.
 
 For more information, see [Egress connectivity from IoT Hub to other Azure resources](/azure/iot-hub/iot-hub-managed-identity#egress-connectivity-from-iot-hub-to-other-azure-resources).
 
@@ -73,7 +75,7 @@ For more information, see [Egress connectivity from IoT Hub to other Azure resou
 
 The fallback route sends all the messages that don't satisfy query conditions on any of the existing routes to the built-in endpoint (**messages/events**), which is compatible with Event Hubs. If message routing is enabled, you can enable the fallback route capability. Once a route is created, data stops flowing to the built-in endpoint, unless a route is created to that endpoint. If there are no routes to the built-in endpoint and a fallback route is enabled, only messages that don't match any query conditions on routes are sent to the built-in endpoint. Also, if all existing routes are deleted, the fallback route capability must be enabled to receive all data at the built-in endpoint.
 
-You can enable or disable the fallback route in the Azure portal, from the **Message routing** blade. You can also use Azure Resource Manager for FallbackRouteProperties to use a custom endpoint for the fallback route.
+You can enable or disable the fallback route in the Azure portal, from the **Message routing** blade. You can also use Azure Resource Manager for **FallbackRouteProperties** to use a custom endpoint for the fallback route.
 
 ## Non-telemetry events
 

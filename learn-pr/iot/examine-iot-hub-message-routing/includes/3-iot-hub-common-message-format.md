@@ -8,7 +8,7 @@ An Azure IoT Hub message consists of:
 * A set of *application properties*. A dictionary of string properties that the application can define and access, without needing to deserialize the message body. Azure IoT Hub never modifies these properties.
 * A message body, which can be any type of data.
 
-Property names and values can only contain ASCII alphanumeric characters and `! # $ % & ' * + - . ^ _  `` | ~` when you send device-to-cloud messages using the HTTPS protocol or send cloud-to-device messages.
+Property names and values can only contain ASCII alphanumeric characters and `! # $ % & ' * + - . ^ _  ``` | ~` when you send device-to-cloud messages using the HTTPS protocol or send cloud-to-device messages.
 
 Device-to-cloud messaging with Azure IoT Hub has the following characteristics:
 
@@ -299,8 +299,9 @@ routing query
   :::column-end:::
 :::row-end:::
 
-## System Property Names
-The system property names vary based on the endpoint to which the messages are being routed. See the table below for details on these names.
+## System property names
+
+The system property names vary based on the endpoint to which the messages are being routed. See the following table for details.
 
 | System property name | Event Hubs | Azure Storage | Service Bus | Event Grid |
 | --- | --- | --- | --- | --- |

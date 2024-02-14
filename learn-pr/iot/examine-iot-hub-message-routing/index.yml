@@ -14,7 +14,7 @@ summary: This module introduces you to Azure IoT Hub message routing, the common
 abstract: |
   After you complete this module, you'll be able to:
   - Describe message processing concepts.
-  - Describe the Azure IoT Hub common message features of Azure IoT Hub message routing.
+  - Describe the common message features of Azure IoT Hub message routing.
   - Describe the built-in and custom endpoints that can be used with Azure IoT Hub message routing.
   - Describe the message routing query syntax.
 prerequisites: |
@@ -36,7 +36,6 @@ units:
 - learn.wwl.examine-iot-hub-message-routing.examine-common-message-format
 - learn.wwl.examine-iot-hub-message-routing.examine
 - learn.wwl.examine-iot-hub-message-routing.built-endpoint
-- learn.wwl.examine-iot-hub-message-routing.examine-routing-to-multiple-endpoints
 - learn.wwl.examine-iot-hub-message-routing.examine-query-syntax
 - learn.wwl.examine-iot-hub-message-routing.knowledge-check
 - learn.wwl.examine-iot-hub-message-routing.summary

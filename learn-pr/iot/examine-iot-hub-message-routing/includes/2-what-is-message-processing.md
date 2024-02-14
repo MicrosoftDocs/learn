@@ -6,7 +6,7 @@ The following Azure IoT Reference Architecture diagram illustrates the primary m
 
 As you can see, message processing involves a broad spectrum of protocols, services, and standards. Here are some of the topics that can be investigated in more depth:
 
-* Message format: To support seamless interoperability across protocols, Azure IoT Hub defines a common message format for all device-facing protocols.
+* Message features: To support seamless interoperability across protocols, Azure IoT Hub defines a common set of message features for all device-facing protocols.
 * Message routing: This Azure IoT Hub feature enables users to route device-to-cloud messages to service endpoints like Azure Storage containers, Event Hubs, Service Bus queues, and Service Bus topics. Routing also provides a querying capability to filter the data before routing it to the endpoints. In addition to device telemetry data, you can also send non-telemetry events that can be used to trigger actions.
 * Event Grid: Azure Event Grid is a fully managed event routing service that uses a publish-subscribe model. Azure IoT Hub and Event Grid work together to integrate Azure IoT Hub events into Azure and non-Azure services, in near-real time. Azure IoT Hub publishes device events, which are generally available, and now also publishes telemetry events, a feature that is currently in public preview.
 * Message enrichment: Message enrichment is the ability of the Azure IoT Hub to stamp messages with additional information before the messages are sent to the designated endpoint.

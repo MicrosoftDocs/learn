@@ -41,7 +41,7 @@ Some product integrations and Event Hubs SDKs are aware of Azure IoT Hub and let
 
 When you use Event Hubs SDKs or product integrations that are unaware of Azure IoT Hub, you need an Event Hubs-compatible endpoint and Event Hubs-compatible name. You can retrieve these values from Azure IoT hub service in the Azure portal by opening the **Built-in endpoints** blade.
 
-The Events section contains the following values: Partitions, Event Hubs-compatible name, Event Hubs-compatible endpoint, Retention time, and Consumer groups.
+The **Event Hub Details** section contains the following values: **Partitions**, **Event Hubs-compatible name**, **Event Hubs-compatible endpoint**, **Retention for**, and **Consumer Groups**.
 
 :::image type="content" source="../media/eventhubcompatible.png" alt-text="Screenshot that shows the Events section for the Built-in endpoint properties for Azure IoT hub.":::
 
@@ -137,7 +137,7 @@ The SDKs you can use to connect to the built-in Event Hubs-compatible endpoint t
     [Quickstart](/azure/iot-develop/quickstart-send-telemetry-iot-hub?pivots=programming-language-nodejs)
   :::column-end:::
   :::column:::
-    Uses IoT Hub connection string
+    Uses Azure IoT Hub connection string
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -151,7 +151,7 @@ The SDKs you can use to connect to the built-in Event Hubs-compatible endpoint t
     [Quickstart](/azure/iot-develop/quickstart-send-telemetry-iot-hub?pivots=programming-language-python)
   :::column-end:::
   :::column:::
-    Uses IoT Hub connection string
+    Uses Azure IoT Hub connection string
   :::column-end:::
 :::row-end:::
 
