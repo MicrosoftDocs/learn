@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction        
   title: Introduction to Azure Data Factory
   description: Evaluate whether Azure Data Factory can help you integrate your data sources. Describe how Azure Data Factory can ingest data from on-premises, multicloud and SaaS data sources.
-  ms.date: 04/06/2023  
+  ms.date: 02/13/2024  
   author: jonburchel
   ms.author: jburchel  
   ms.topic: module
