@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/7-message-routing-query-syntax.md)]
+  [!include[](includes/6-message-routing-query-syntax.md)]

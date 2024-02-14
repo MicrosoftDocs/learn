@@ -33690,6 +33690,21 @@
       "source_path": "learn-pr/wwl-azure/storage-security/12-summary.md",
       "redirect_url": "/training/paths/secure-compute-storage-databases/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/6-message-routing-query-syntax.yml",
+      "redirect_url": "/training/modules/examine-iot-hub-message-routing/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/7-knowledge-check.yml",
+      "redirect_url": "/training/modules/examine-iot-hub-message-routing/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/8-summary.yml",
+      "redirect_url": "/training/modules/examine-iot-hub-message-routing/",
+      "redirect_document_id": false
     }
   ]
 }
