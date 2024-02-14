@@ -60,8 +60,8 @@ To prepare for an AKS cluster deployment, you add a secret to the repository tha
     > Record the output of the command, which contains JSON representation of the newly created service principal properties. You'll need it shortly.
 
 1. Switch back to the web browser tab displaying the **cna-devops-03** GitHub repository, and then select the **Settings** tab header.
-1. On the **Settings** page, in the vertical menu, select **Secrets**.
-1. On the **Action secrets** page, select **New repository secret**.
+1. On the **Settings** page, in the vertical menu, select **Secrets and variables**.
+1. On the **Action secrets and variables** page, select **New repository secret**.
 1. On the **Actions secrets / New secret** page, in the **Name** text box, enter **AZURE_CREDENTIALS**. In the **Value** text box, paste the JSON representation of the service principal settings you recorded earlier, and then select **Add secret**.
 1. Switch to the web browser tab displaying the Azure portal with the Bash session of the **Cloud Shell** open.
 1. Within the Bash session in the Azure Cloud Shell pane, run the following command to create a resource group to host the AKS cluster. Make sure to replace the `location` placeholder with the name of the Azure region where you can provision Azure resources, such as `eastus` or 'southcentralus`.
@@ -166,11 +166,11 @@ Now you're ready to proceed with deploying an AKS cluster by using a GitHub work
     }
     ```
 
-1. At the end of the **Code** tab, select **Commit new file**.
+1. At the end of the **Code** tab, select **Commit changes**.
 1. Within the GitHub repo, select the **Actions** tab header.
-1. On the **Get started with GitHub Actions** page, select **Set up this workflow**.
-1. In the file path, replace **blank.yml** with **aks-deploy.yml**.
-1. In the **Edit new file** section, replace the existing template with the following content, while ensuring that you preserve the existing indentations (replace the `<subscription_ID>` placeholder with your subscription ID, which you identified earlier in this exercise).
+1. On the **Get started with GitHub Actions** page, select **set up a workflow yourself**.
+1. In the file path, replace **main.yml** with **aks-deploy.yml**.
+1. In the **Edit new file** section, replace the existing template with the following content, while ensuring that you preserve the existing indentations (replace the `<subscription_id>` placeholder with your subscription ID, which you identified earlier in this exercise).
 
     ```yaml
     name: Deploy AKS
@@ -213,7 +213,7 @@ Now you're ready to proceed with deploying an AKS cluster by using a GitHub work
     > [!NOTE]
     > The **workflow_dispatch** event will allow you to launch the workflow manually.
 
-1. On the beginning of the page, select **Start commit**.
+1. On the beginning of the page, select **Commit changes**.
 1. In the **Commit changes** pop-up window, select **Commit new file**.
 1. On the **Actions** tab, in the list of workflows, select the **Deploy AKS** entry.
 1. From the list of workflow runs, select **Run workflow**, and then in the drop-down menu, select **Run workflow**.
