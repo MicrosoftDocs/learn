@@ -21,7 +21,7 @@ In the Azure portal, navigate to your Arc-enabled AKS Edge Essentials cluster an
 
 :::image type="content" source="../media/5-aks-edge-essentials-kubernetes-azure-arc-resource-gitops-inline.png" alt-text="Screenshot of AKS Edge Essentials Kubernetes Azure Arc resource in Azure portal, with GitOps highlight." lightbox="../media/5-aks-edge-essentials-kubernetes-azure-arc-resource-gitops-expanded.png":::
 
-1. Select **Create** and use the following values for the cluster-level configuration.
+1. Select **Create** and use the following values for the cluster-level configuration:
 
     | Attribute | Input |
     | --- | --- |
@@ -50,7 +50,7 @@ In the Azure portal, navigate to your Arc-enabled AKS Edge Essentials cluster an
     > [!NOTE]
     > Wait until the `config-nginx` has successfully been created and visible on your Azure portal GitOps before creating the namespace-level configuration (you can move on to creating the next configuration if the compliance is in a pending state).
 
-1. Select **Create** and use the following values for the namespace-level configuration.
+1. Select **Create** and use the following values for the namespace-level configuration:
 
     | Attribute | Input |
     | --- | --- |
@@ -146,7 +146,7 @@ We configured GitOps and Flux to watch for changes in the *main* branch of your 
     > [!NOTE]
     > Because we set the **sync interval** to **1 min** when creating the configuration, Flux pulls down changes from GitHub every minute.
 
-1. Refresh your application to see this change reflected as a rolling update:
+1. Refresh your application to see this change reflected as a rolling update.
 
     :::image type="content" source="../media/5-aks-edge-essentials-linux-azure-arc-app-updated-inline.png" alt-text="Screenshot of Windows VM with updated linux sample application running in the browser." lightbox="../media/5-aks-edge-essentials-linux-azure-arc-app-updated-expanded.png":::
 

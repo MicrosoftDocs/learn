@@ -9,7 +9,7 @@ This unit provides Azure CLI commands that you can run with an Azure subscriptio
 
 1. In another browser tab, navigate to the [Azure Cloud Shell](https://ms.portal.azure.com/#cloudshell/).
 
-1. Run the following commands in the Cloud Shell to set up your session and create a resource group to use for this unit. Replace the value of `<your-Azure-subscription-ID>` with your Azure subscription ID value.
+1. Run the following commands in the Cloud Shell to set up your session and create a resource group to use for this unit. Replace the value of `<your-Azure-subscription-ID>` with your Azure subscription ID value:
 
     ```azurecli
     resourcegroup="aksedge-training"
@@ -109,7 +109,7 @@ Let's create the Azure VM with Windows 11 Enterprise using Azure Cloud Shell.
     echo username:s:$username >> ./myvm.rdp
     ```
 
-1. Download the RDP file to your local machine.
+1. Download the RDP file to your local machine:
 
     ```azurecli
     download myvm.rdp
@@ -127,7 +127,7 @@ Now that the VM is created, let's run the `AksEdgeQuickStart-v2.ps1` PowerShell 
 > [!NOTE]
 > The following commands are executed in the PowerShell command line of the VM.
 
-1. Open the PowerShell command line by clicking on the **Start** menu and typing **PowerShell**. Then run the following command to change the working directory to `C:\aksedgeLearn`.
+1. Open the PowerShell command line by clicking on the **Start** menu and typing **PowerShell**. Then run the following command to change the working directory to `C:\aksedgeLearn`:
 
     ```powershell
     if (!(Test-Path -Path "C:\aksedgeLearn")) {
@@ -136,13 +136,13 @@ Now that the VM is created, let's run the `AksEdgeQuickStart-v2.ps1` PowerShell 
     Push-Location "C:\aksedgeLearn"
     ```
 
-1. Download AKS Edge Essentials K3s installer.
+1. Download AKS Edge Essentials K3s installer:
 
     ```powershell
     curl -L -o AksEdge-Learn.msi "https://aka.ms/aks-edge/k3s-msi"
     ```
 
-1. Set the parameters to create a single machine K3S cluster with a Linux node. The `aideuser-config.json` and `aksedge-config.json` files are used to run the `AksEdgeQuickStart-v2.ps1` PowerShell script. Replace the values of `[SUBSCRIPTION_NAME]`, `[SUBSCRIPTION_ID]` , `[TENANT_ID]`, `[RESOURCE_GROUP_NAME]`, `[SERVICE_PRINCIPAL_ID]` and `[SERVICE_PRINCIPAL_PASSWORD]` with the values you took a note earlier.
+1. Set the parameters to create a single machine K3S cluster with a Linux node. The `aideuser-config.json` and `aksedge-config.json` files are used to run the `AksEdgeQuickStart-v2.ps1` PowerShell script. Replace the values of `[SUBSCRIPTION_NAME]`, `[SUBSCRIPTION_ID]` , `[TENANT_ID]`, `[RESOURCE_GROUP_NAME]`, `[SERVICE_PRINCIPAL_ID]` and `[SERVICE_PRINCIPAL_PASSWORD]` with the values you took a note earlier:
 
     ```powershell
     $aideuserConfig = @"
@@ -201,7 +201,7 @@ Now that the VM is created, let's run the `AksEdgeQuickStart-v2.ps1` PowerShell 
     echo $aksedgeConfig | Out-File -FilePath "aksedge-config.json"
     ```
 
-1. Download and run the `AksEdgeQuickStart-v2.ps1` PowerShell script.
+1. Download and run the `AksEdgeQuickStart-v2.ps1` PowerShell script:
 
     ```powershell
     $url = "https://raw.githubusercontent.com/Azure/AKS-Edge/main/tools/scripts/AksEdgeQuickStart/AksEdgeQuickStart-v2.ps1"
@@ -275,7 +275,7 @@ Now that the VM is created, let's run the `AksEdgeQuickStart-v2.ps1` PowerShell 
 
 1. You can view your cluster in the Azure portal if you navigate to `aksedge-training` resource group and then select the `myVM-k3s` **Kubernetes - Azure Arc** resource.
 
-1. On the left panel, select the **Namespaces** option, under **Kubernetes resources (preview)**:
+1. On the left panel, select the **Namespaces** option, under **Kubernetes resources (preview)**.
 
     :::image type="content" source="../media/3-aks-edge-essentials-kubernetes-azure-arc-resource-namespaces-inline.png" alt-text="Screenshot of AKS Edge Essentials Kubernetes Azure Arc resource in Azure portal with namespaces highlight." lightbox="../media/3-aks-edge-essentials-kubernetes-azure-arc-resource-namespaces-expanded.png":::
 

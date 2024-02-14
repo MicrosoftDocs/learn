@@ -21,7 +21,7 @@ Let's create the Azure VM with Windows 11 Enterprise using Azure Cloud Shell.
     > [!NOTE]
     > Take a note of the `Admin Password`. You will need it later.
 
-1. Create the Azure VM with Windows 11 Enterprise using the [az vm create](/cli/azure/vm#az-vm-create) command.
+1. Create the Azure VM with Windows 11 Enterprise using the [az vm create](/cli/azure/vm#az-vm-create) command:
 
     ```azurecli
     az vm create \
@@ -54,7 +54,7 @@ Let's create the Azure VM with Windows 11 Enterprise using Azure Cloud Shell.
 
 Let's download the K3s installer and Windows node files to [Azure file share](/azure/storage/files/storage-how-to-use-files-windows) and then mount it in the VM so we can access it using the drive with letter *Z*.
 
-1. Take a note of the storage account name, key and the Azure file share name. You need it later.
+1. Take a note of the storage account name, key and the Azure file share name. You need it later:
 
     ```azurecli
     storageAccountName=$(az storage account list --resource-group $resourcegroup --query '[0].name' -o tsv)
@@ -66,7 +66,7 @@ Let's download the K3s installer and Windows node files to [Azure file share](/a
     echo Storage Account File: $storageAccountFile
     ```
 
-1. Download K3s installer, Windows node files and certificates to the Azure file share.
+1. Download K3s installer, Windows node files and certificates to the Azure file share:
 
     ```azurecli
     curl -L -o ~/clouddrive/MicrosoftRootCertificateAuthority2011.cer "https://download.microsoft.com/download/2/4/8/248D8A62-FCCD-475C-85E7-6ED59520FC0F/MicrosoftRootCertificateAuthority2011.cer" && echo "Downloaded MicrosoftRootCertificateAuthority2011.cer"
@@ -83,7 +83,7 @@ Let's download the K3s installer and Windows node files to [Azure file share](/a
     echo username:s:$username >> ./myvm.rdp
     ```
 
-1. Download the RDP file to your local machine.
+1. Download the RDP file to your local machine:
 
     ```azurecli
     download myvm.rdp
@@ -91,15 +91,15 @@ Let's download the K3s installer and Windows node files to [Azure file share](/a
 
 1. Open the RDP file and connect to the VM using *azureuser* as the **user**, and the `Admin Password` you took a note earlier, as the **password**.
 
-> [!TIP]
-> When logging in for the first time to the Windows 11 Enterprise Azure VM, you can accept all options by clicking **Next** and **Accept**.
+    > [!TIP]
+    > When logging in for the first time to the Windows 11 Enterprise Azure VM, you can accept all options by clicking **Next** and **Accept**.
 
-> [!NOTE]
-> The following commands are executed in the PowerShell command line of the VM.
+    > [!NOTE]
+    > The following commands are executed in the PowerShell command line of the VM.
 
 1. Open the PowerShell command line by clicking on the **Start** menu and typing **PowerShell**.
 
-1. Run the following PowerShell commands to mount the Azure file share in the VM with the letter *Z*. Replace the values of `[YOUR_STORAGE_ACCOUNT_NAME]`, `[YOUR_STORAGE_ACCOUNT_KEY]` and `[YOUR_STORAGE_ACCOUNT_FILE]` with the values you took a note earlier.
+1. Run the following PowerShell commands to mount the Azure file share in the VM with the letter *Z*. Replace the values of `[YOUR_STORAGE_ACCOUNT_NAME]`, `[YOUR_STORAGE_ACCOUNT_KEY]` and `[YOUR_STORAGE_ACCOUNT_FILE]` with the values you took a note earlier:
 
     ```powershell
     $storageAccountName = "[YOUR_STORAGE_ACCOUNT_NAME]"
@@ -120,7 +120,7 @@ Now that the VM is created and the install files downloaded, let's run the `AksE
 > [!NOTE]
 > The following commands are executed in the PowerShell command line of the VM.
 
-1. Open the PowerShell command line by clicking on the **Start** menu and typing **PowerShell**. Then run the following command to change the working directory to `C:\aksedgeLearn`.
+1. Open the PowerShell command line by clicking on the **Start** menu and typing **PowerShell**. Then run the following command to change the working directory to `C:\aksedgeLearn`:
 
     ```powershell
     if (!(Test-Path -Path "C:\aksedgeLearn")) {
@@ -129,14 +129,14 @@ Now that the VM is created and the install files downloaded, let's run the `AksE
     Push-Location "C:\aksedgeLearn"
     ```
 
-1. Install Windows certificates
+1. Install Windows certificates:
 
     ```powershell
     certutil.exe -addstore -f "AuthRoot" "Z:\\MicrosoftRootCertificateAuthority2011.cer"
     certutil.exe -addstore -f "CA" "Z:\\MicCodSigPCA2011.crt"
     ```
 
-1. Set the parameters to create a single machine K3S cluster with a Linux and Windows node. The `aideuser-config.json` and `aksedge-config.json` files are used to run the `AksEdgeQuickStart-v2.ps1` PowerShell script.
+1. Set the parameters to create a single machine K3S cluster with a Linux and Windows node. The `aideuser-config.json` and `aksedge-config.json` files are used to run the `AksEdgeQuickStart-v2.ps1` PowerShell script:
 
     ```powershell
     $aideuserConfig = @"
@@ -199,7 +199,7 @@ Now that the VM is created and the install files downloaded, let's run the `AksE
     echo $aksedgeConfig | Out-File -FilePath "aksedge-config.json"
     ```
 
-1. Download and run the `AksEdgeQuickStart-v2.ps1` PowerShell script.
+1. Download and run the `AksEdgeQuickStart-v2.ps1` PowerShell script:
 
     ```powershell
     $url = "https://raw.githubusercontent.com/Azure/AKS-Edge/main/tools/scripts/AksEdgeQuickStart/AksEdgeQuickStart-v2.ps1"
@@ -253,7 +253,7 @@ Now that the VM is created and the install files downloaded, let's run the `AksE
     Duration: 0 hrs 23 mins 13 seconds
     ```
 
-    :::image type="content" source="../media/3-aks-ee-install-success-inline.png" alt-text="Screenshot of Windows VM with powershell commands output demonstrating a successful download and installation of AKS Edge Essentials K3s distribution." lightbox="../media/3-aks-ee-install-success-expanded.png":::
+    :::image type="content" source="../media/3-aks-edge-install-success-inline.png" alt-text="Screenshot of Windows VM with powershell commands output demonstrating a successful download and installation of AKS Edge Essentials K3s distribution." lightbox="../media/3-aks-edge-install-success-expanded.png":::
 
 > [!TIP]
 > Since the installation process takes around 30 minutes to complete, you can continue to the next learning unit, we will get back to this later.
