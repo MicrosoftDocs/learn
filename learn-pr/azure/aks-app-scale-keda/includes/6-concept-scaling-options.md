@@ -1,4 +1,4 @@
-Sometimes scaling the number of pods to handle increased demand isn't enough. To adjust to changing application demands, such as between the workday and evening or on a weekend, clusters often need a way to automatically scale.
+Sometimes, scaling the number of pods to handle increased demand isn't enough. To adjust to changing application demands, such as between the workday and evening or on a weekend, clusters often need a way to automatically scale.
 
 ## Kubernetes scaling options
 
