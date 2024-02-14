@@ -29,7 +29,6 @@ products:
 subjects:
 - migration
 modules:
-- learn.design-your-migration-to-azure
 - learn-m365.m365-azure-migrate-introduction 
 - learn-m365.m365-azure-migrate-set-up 
 - learn-m365.m365-azure-migrate-discover-assess

@@ -2923,3 +2923,118 @@ achievements:
   title: Implement storage security
   summary: Ensure your data is stored, transferred, and accessed in a secure way using Azure storage and file security features.
   iconUrl: /training/achievements/storage-security.svg
+- uid: learn.wwl.create-clustering-model-azure-machine-learning-designer.badge
+  type: badge
+  title: Create a clustering model with Azure Machine Learning designer
+  summary: Clustering is an unsupervised machine learning technique used to group similar entities based on their features. Learn how to create clustering models using Azure Machine Learning designer.
+  iconUrl: /training/achievements/create-clustering-model-azure-machine-learning-designer.svg
+- uid: learn.wwl.use-automated-machine-learning.badge
+  type: badge
+  title: Use Automated Machine Learning in Azure Machine Learning
+  summary: Training a machine learning model is an iterative process that requires time and compute resources. Automated machine learning can help make it easier.
+  iconUrl: /training/achievements/use-automated-machine-learning.svg
+- uid: learn.iot.azure-rtos-threadx.trophy
+  type: trophy
+  title: Azure RTOS ThreadX
+  summary: Learn about Real-time Operating System (RTOS), and Azure RTOS ThreadX, a high-performance RTOS that is one of the most widely used RTOSes in the world.
+  iconUrl: /training/achievements/iot/azure-rtos-threadx.svg
+- uid: learn.iot.introduction-azure-rtos.badge
+  type: badge
+  title: Introduction to Azure RTOS
+  summary: Learn the basics of RTOS.
+  iconUrl: /training/achievements/iot/introduction-azure-rtos.svg
+- uid: learn.iot.azure-rtos-threadx-fundamentals.badge
+  type: badge
+  title: Azure RTOS ThreadX fundamentals
+  summary: Learn the fundamentals of Azure RTOS ThreadX.
+  iconUrl: /training/achievements/iot/azure-rtos-threadx-fundamentals.svg
+- uid: learn.iot.threadx-memory-management.badge
+  type: badge
+  title: Azure RTOS ThreadX memory management
+  summary: Learn about the memory management options that are available in Azure RTOS ThreadX.
+  iconUrl: /training/achievements/iot/threadx-memory-management.svg
+- uid: learn.iot.create-first-threadx-project.badge
+  type: badge
+  title: Azure RTOS ThreadX first project
+  summary: Learn how to create a Hello World project by using Azure RTOS ThreadX.
+  iconUrl: /training/achievements/iot/create-first-threadx-project.svg
+- uid: learn.iot.azure-rtos-analyze-thread-behavior.badge
+  type: badge
+  title: Azure RTOS ThreadX — Analyze thread behavior with timing facilities
+  summary: Now that you have created your first Hello World project, have you thought about analyzing the behavior of your system? If so, this is the module you should investigate.
+  iconUrl: /training/achievements/iot/azure-rtos-analyze-thread-behavior.svg
+- uid: learn.iot.threadx-break-thread-suspension.badge
+  type: badge
+  title: Use Wait Abort to break thread suspension
+  summary: Learn how to use Wait Abort to break thread suspension in Azure RTOS ThreadX.
+  iconUrl: /training/achievements/iot/threadx-break-thread-suspension.svg
+- uid: learn.iot.threadx-event-notification.badge
+  type: badge
+  title: Use a counting semaphore for event notification in Azure RTOS ThreadX
+  summary: Learn when to use a mutex and a counting semaphore and consolidate your understanding of the differences.
+  iconUrl: /training/achievements/iot/threadx-event-notification.svg
+- uid: learn.iot.threadx-event-flags-group-sync-threads.badge
+  type: badge
+  title: Use an event flags group to sync threads in ThreadX
+  summary: Learn how to use an event flags group to sync threads in Azure RTOS ThreadX.
+  iconUrl: /training/achievements/iot/threadx-event-flags-group-sync-threads.svg
+- uid: learn.iot.threadx-message-queues.badge
+  type: badge
+  title: Use message queues for inter-thread communication in Azure RTOS ThreadX
+  summary: Learn how to have threads send messages to other threads.
+  iconUrl: /training/achievements/iot/threadx-message-queues.svg
+- uid: learn.iot.threadx-event-chain-suspend-objects.badge
+  type: badge
+  title: Use event-chaining to suspend multiple objects in ThreadX
+  summary: Learn how to use event-chaining to suspend multiple objects in Azure RTOS ThreadX.
+  iconUrl: /training/achievements/iot/threadx-event-chain-suspend-objects.svg
+- uid: learn.iot.threadx-priority-inversion-solutions.badge
+  type: badge
+  title: ThreadX priority inversion solutions
+  summary: Learn how preemption threshold and priority inheritance work as solutions to priority inversion in Azure RTOS ThreadX.
+  iconUrl: /training/achievements/iot/threadx-priority-inversion-solutions.svg
+- uid: learn.iot.threadx-next-steps.badge
+  type: badge
+  title: Azure RTOS ThreadX next steps
+  summary: Learn the next steps for Azure RTOS ThreadX.
+  iconUrl: /training/achievements/iot/threadx-next-steps.svg
+- uid: learn.iot.azure-rtos-netx-duo.trophy
+  type: trophy
+  title: Azure RTOS NetX Duo
+  summary: Learn about basics of TCP/IP and related network concepts, and Azure RTOS NetX Duo, an industrial grade dual IPv4 and IPv6 TCP/IP network stack that is designed specifically for deeply embedded, real-time, and IoT applications.
+  iconUrl: /training/achievements/iot/azure-rtos-netx-duo.svg
+- uid: learn.iot.introduction-azure-rtos-netx-duo.badge
+  type: badge
+  title: Introduction to Azure RTOS NetX Duo
+  summary: Learn the basics of Azure RTOS NetX Duo.
+  iconUrl: /learn/achievements/iot/introduction-azure-rtos-netx-duo.svg
+- uid: learn.iot.azure-rtos-netx-duo-fundamentals.badge
+  type: badge
+  title: Fundamentals of Azure RTOS NetX Duo
+  summary: Learn the fundamentals of Azure RTOS NetX Duo. 
+  iconUrl: /learn/achievements/iot/azure-rtos-netx-duo-fundamentals.svg
+- uid: learn.iot.create-first-netx-duo-project.badge
+  type: badge
+  title: Create the first Azure RTOS NetX Duo project
+  summary: The first Azure RTOS NetX Duo project is built and run.
+  iconUrl: /learn/achievements/iot/create-first-netx-duo-project.svg
+- uid: learn.iot.build-a-udp-echo-client.badge
+  type: badge
+  title: Building and running a UDP echo client
+  summary: Design, build, and run a UDP echo client.
+  iconUrl: /training/achievements/iot/netx-duo-build-a-udp-echo-client.svg
+- uid: learn.iot.build-a-udp-echo-server.badge
+  type: badge
+  title: Building and running a UDP echo server
+  summary: Design, build, and run a UDP echo server.
+  iconUrl: /training/achievements/iot/netx-duo-build-a-udp-echo-server.svg
+- uid: learn.iot.build-a-tcp-echo-client.badge
+  type: badge
+  title: Building and running a TCP echo client
+  summary: Design, build, and run a TCP echo client.
+  iconUrl: /training/achievements/iot/netx-duo-build-a-tcp-echo-client.svg
+- uid: learn.design-your-migration-to-azure.badge
+  type: badge
+  summary: Minimize the time and resources required to migrate your on-premises environment to Azure. Assess your current systems with Azure Migrate, and migrate them with Azure Migrate and Azure Database Migration Service.
+  title: Design your migration to Azure
+  iconUrl: /training/achievements/design-your-migration-to-azure.svg
