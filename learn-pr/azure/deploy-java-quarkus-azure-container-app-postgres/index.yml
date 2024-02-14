@@ -19,6 +19,7 @@ abstract: |
   - Deploy the application to Container Apps.
   - Configure the database firewall so that only internal IP addresses can access it.
 prerequisites: | 
+  - Familiarity with developing Java applications
   - An Azure subscription
   - Local installations of Java JDK (11 or later), Maven (3.8), and the Azure CLI (2.48 or later) 
   - Docker and Docker Desktop

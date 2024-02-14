@@ -171,7 +171,7 @@ Make sure Docker is running locally on your machine and run the to-do applicatio
 
 ```bash
 cd todo
-./mvnw quarkus:dev
+mvnw.cmd quarkus:dev
 ```
 
 The Quarkus application should start and connect to your database. You should see the following output:
@@ -204,14 +204,14 @@ In a separate terminal, create a new to-do item in the database with the followi
 ```bash
 curl --header "Content-Type: application/json" \
     --request POST \
-    --data '{"description":"Take Quarkus training","details":"Take the training module on deploying Quarkus to Azure Container Apps","done": "true"}' \
+    --data '{"description":"Take Quarkus MS Learn","details":"Take the MS Learn on deploying Quarkus to Azure Container Apps","done": "true"}' \
     http://127.0.0.1:8080/api/todos
 ```
 
 This command should return the created item (with an identifier):
 
 ```json
-{"id":1,"description":"Take Quarkus training","details":"Take the training module on deploying Quarkus to Azure Container Apps","done":true,"createdAt":"2022-12-30T15:17:20.280203Z"}
+{"id":1,"description":"Take Quarkus MS Learn","details":"Take the MS Learn on deploying Quarkus to Azure Container Apps","done":true,"createdAt":"2022-12-30T15:17:20.280203Z"}
 ```
 
 Create a second to-do by using the following cURL command:
@@ -219,7 +219,7 @@ Create a second to-do by using the following cURL command:
 ```bash
 curl --header "Content-Type: application/json" \
     --request POST \
-    --data '{"description":"Take Azure Container Apps training","details":"Take training on Azure Container Apps","done": "false"}' \
+    --data '{"description":"Take Azure Container Apps MS Learn","details":"Take the ACA Learn module","done": "false"}' \
     http://127.0.0.1:8080/api/todos
 ```
 
@@ -233,8 +233,8 @@ This command returns the list of to-do items, including the items you created:
 
 ```json
 [ 
-  {"id":1,"description":"Take Quarkus training","details":"Take the training module on deploying Quarkus to Azure Container Apps","done":true},
-  {"id":2,"description":"Take Azure Container Apps training","details":"Take training on Azure Container Apps","done":false}
+  {"id":1,"description":"Take Quarkus MS Learn","details":"Take the MS Learn on deploying Quarkus to Azure Container Apps","done":true},
+  {"id":2,"description":"Take Azure Container Apps MS Learn","details":"Take the ACA Learn module","done":false}
 ]
 ```
 
@@ -266,8 +266,8 @@ class TodoResourceTest {
     @Test
     void shouldCreateATodo() {
         Todo todo = new Todo();
-        todo.description = "Take Quarkus training";
-        todo.details = "Take the training module on deploying Quarkus to Azure Container Apps";
+        todo.description = "Take Quarkus MS Learn";
+        todo.details = "Take the MS Learn on deploying Quarkus to Azure Container Apps";
         todo.done = true;
 
         given().body(todo)
@@ -282,7 +282,7 @@ class TodoResourceTest {
 When you test the application, Docker Desktop needs to be running because Quarkus detects that it needs the PostgreSQL database for testing. Test the application by using this command:
 
 ```bash
-./mvnw clean test
+mvnw.cmd clean test
 ```
 
 You should see output that looks similar to this:

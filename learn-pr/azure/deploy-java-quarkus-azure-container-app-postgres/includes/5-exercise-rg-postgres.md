@@ -100,7 +100,7 @@ quarkus.datasource.jdbc.url=<the POSTGRES_CONNECTION_STRING_SSL value>
 Use this command to run the application locally: 
 
 ```shell
-./mvnw clean quarkus:dev
+mvnw.cmd clean quarkus:dev
 ```
 
 When Quarkus is running, create a few to-dos by using the following cURL commands in a separate terminal window:
@@ -108,12 +108,12 @@ When Quarkus is running, create a few to-dos by using the following cURL command
 ```bash
 curl --header "Content-Type: application/json" \
     --request POST \
-    --data '{"description":"Take Quarkus training","details":"Take the training module on deploying Quarkus to Azure Container Apps","done": "true"}' \
+    --data '{"description":"Take Quarkus MS Learn","details":"Take the MS Learn on deploying Quarkus to Azure Container Apps","done": "true"}' \
     http://127.0.0.1:8080/api/todos
 
 curl --header "Content-Type: application/json" \
     --request POST \
-    --data '{"description":"Take Azure Container Apps training","details":"Take training on Azure Container Apps","done": "false"}' \
+    --data '{"description":"Take Azure Container Apps MS Learn","details":"Take the ACA Learn module","done": "false"}' \
     http://127.0.0.1:8080/api/todos
 ```
 
@@ -128,14 +128,14 @@ You should see the following output:
 ```json
 [
    {
-      "description" : "Take Quarkus training",
-      "details" : "Take the training module on deploying Quarkus to Azure Container Apps",
+      "description" : "Take Quarkus MS Learn",
+      "details" : "Take the MS Learn on deploying Quarkus to Azure Container Apps",
       "done" : true,
       "id" : 1
    },
    {
-      "description" : "Take Azure Container Apps training",
-      "details" : "Take training on Azure Container Apps",
+      "description" : "Take Azure Container Apps MS Learn",
+      "details" : "Take the ACA Learn module",
       "done" : false,
       "id" : 2
    }
