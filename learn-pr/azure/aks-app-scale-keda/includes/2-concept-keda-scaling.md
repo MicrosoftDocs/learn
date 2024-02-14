@@ -8,7 +8,7 @@ KEDA is a Kubernetes event-driven autoscaler. It's an open-source, CNCF solution
 * Scale application workloads to meet demand using KEDA scalers
 * Autoscale applications with `ScaledObjects`
 * Autoscale jobs with `ScaledJobs`
-* Use production-grade security by decoupling autoscaling and authentication from worklaods
+* Use production-grade security by decoupling autoscaling and authentication from workloads
 * Bring-your-own external scaler to use tailor-made autoscaling configurations
 
 ## Architecture
@@ -16,7 +16,7 @@ KEDA is a Kubernetes event-driven autoscaler. It's an open-source, CNCF solution
 KEDA provides two main components:
 
 * The **KEDA operator** allows end users to scale workloads in or out from *zero to N* instances with support for Kubernetes Deployments, Jobs, StatefulSets, or any customer resource that defines a `/scale` subresource.
-* The **metrics server** exposes external metrics to the HPA, such as messages in a Kafka topic or events in an Azure Event Hub, to drive autoscaling actions. Due to upstream limitations, the KEDA metrics server must be the only installed metrics adapter in the cluster.
+* The **metrics server** exposes external metrics to the HPA, such as messages in a Kafka topic or events in Azure Event Hubs, to drive autoscaling actions. Due to upstream limitations, the KEDA metrics server must be the only installed metrics adapter in the cluster.
 
 The following diagram shows how KEDA integrates with the Kubernetes HPA, external event sources, and Kubernetes API Server to provide autoscaling functionality:
 
