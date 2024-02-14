@@ -1,4 +1,4 @@
-In this module, you deployed an application as a Deployment with a static replica count. We discussed why this might be challenging for workloads that process events and have fluctuating resource needs. After looking at the options for your scenario, you determined that using KEDA with a scaler for the Redis list would help autoscale in an efficient and effective manner.
+In this module, you deployed an application as a Deployment with a static replica count. We discussed why this situation might be challenging for workloads that process events and have fluctuating resource needs. After looking at the options for your scenario, you determined that using KEDA with a scaler for the Redis list would help autoscale in an efficient and effective manner.
 
 ## Delete Azure resources
 
