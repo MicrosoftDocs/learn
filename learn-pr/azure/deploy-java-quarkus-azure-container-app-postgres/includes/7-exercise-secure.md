@@ -33,7 +33,7 @@ You should see the following output:
 ```bash
 EndIpAddress     Name                       ResourceGroup            StartIpAddress
 ---------------  -------------------------  -----------------------  ----------------
-255.255.255.255  AllowAll_2023-1-3_10-20-4  rg-azure-deploy-quarkus  0.0.0.0
+255.255.255.255  AllowAll_2023-1-3_10-20-4  rgazure-deploy-quarkus  0.0.0.0
 ```
 
 Notice that the range of allowed IP addresses is `0.0.0.0` through `255.255.255.255`. A firewall rule like this allows any client to access the database. To ensure that only the Quarkus application can access the database, you need to update the firewall rules of the PostgreSQL server.

@@ -10,7 +10,7 @@ Use this command to rename one of these Dockerfiles, *Dockerfile.legacy-jar*, to
 mv src/main/docker/Dockerfile.legacy-jar ./Dockerfile
 ```
 
-The Dockerfile should contain code that's similar to the following:
+Replace the content after the long comment in the Dockerfile with the following:
 
 ```dockerfile
 FROM registry.access.redhat.com/ubi8/openjdk-11:1.14
@@ -96,13 +96,13 @@ az resource list \
 You should see output that's similar to this:
 
 ```bash
-Name                                ResourceGroup            Location    Type                                      
-----------------------------------  -----------------------  ----------  ----------------------------------------- 
-psqlazuredeployquarkus              rg-azure-deploy-quarkus  eastus      Microsoft.DBforPostgreSQL/flexibleServers
-workspace-rgazuredeployfdsrkusZRnr  rg-azure-deploy-quarkus  eastus      Microsoft.OperationalInsights/workspaces
-cae-azure-deploy-quarkus            rg-azure-deploy-quarkus  eastus      Microsoft.App/managedEnvironments
-ca0ad52sfde7acr                     rg-azure-deploy-quarkus  eastus      Microsoft.ContainerRegistry/registries
-ca-azure-deploy-quarkus             rg-azure-deploy-quarkus  eastus      Microsoft.App/containerApps
+Name                                ResourceGroup           Location    Type                                       Status
+----------------------------------  ----------------------  ----------  -----------------------------------------  --------
+caea3a6e0afeacr                     rgazure-deploy-quarkus  eastus      Microsoft.ContainerRegistry/registries
+psqlazure-deploy-quarkus            rgazure-deploy-quarkus  eastus      Microsoft.DBforPostgreSQL/flexibleServers
+caazure-deploy-quarkus              rgazure-deploy-quarkus  eastus      Microsoft.App/containerApps
+caeazure-deploy-quarkus             rgazure-deploy-quarkus  eastus      Microsoft.App/managedEnvironments
+workspace-rgazuredeployquarkuscDD3  rgazure-deploy-quarkus  eastus      Microsoft.OperationalInsights/workspaces
 ```
 
 ## Run the deployed Quarkus application
