@@ -7,7 +7,7 @@ Kubernetes clusters can scale in one of two ways:
 * Using the **Cluster Autoscaler**, which watches for pods that can't be scheduled on nodes because of resource constraints. The cluster automatically increases the number of nodes to meet the demand.
 * Using the **Horizontal Pod Autoscaler (HPA)**, which uses the Metrics Server in a Kubernetes cluster to monitor the resource demand of pods. If an application needs more resources, the number of pods is automatically increased to meet the demand.
 
-Both the HPA and Cluster Autoscaler can also decrease the number of pods and nodes as needed. The Cluster Autoscaler decreases the number of nodes when there has been unused capacity for a period of time. Any pods on a node that needs to be removed by the Cluster Autoscaler are safely scheduled elsewhere in the cluster.
+Both the HPA and Cluster Autoscaler can also decrease the number of pods and nodes as needed. The Cluster Autoscaler decreases the number of nodes when there has been unused capacity for a period of time. Any pods on a node that the Cluster Autoscaler needs to remove are safely scheduled elsewhere in the cluster.
 
 The Cluster Autoscaler might be unable to scale down in situations where the pods can't move, such as:
 
