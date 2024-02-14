@@ -1,4 +1,4 @@
-Congratulations! You've deployed a Quarkus application to Azure Container Apps.
+Congratulations! You deployed a Quarkus application to Azure Container Apps.
 
 Your company wanted to deploy a Quarkus application to the cloud. You completed these steps:
 
