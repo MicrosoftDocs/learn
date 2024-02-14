@@ -86,3 +86,93 @@ The data and privacy settings is where admins configure options for:
 :::image type="content" source="../media/secruity-copilot-data-sharing.png" alt-text="A screen capture of the setting in Copilot for sharing your organization's data. Settings can be enabled or disabled to allow Microsoft to use data gathered to improve Copilot and to train the security AI model.":::
 
 For more information about how Microsoft handles your data, see [Data security and privacy](/security-copilot/privacy-data-security).
+
+
+===========
+
+To start using Microsoft Copilot for Security, organizations need to take steps to onboard the service and users. These include:
+
+- Provision Copilot capacity
+- Set up the default environment
+- Assign role permissions
+
+### Provision capacity
+
+Microsoft Copilot for Security is sold as a consumptive offering, meaning that Customers will be billed monthly based on a provisioned capacity that is billed by the hour.  The capacity that is provisioned is referred to as a security compute unit (SCU).  An SCU is the unit of measure of computing power used to run Copilot in both the standalone and embedded experiences.
+
+Before users can start using Copilot, admins need to provision and allocate capacity. To provision capacity, you need to have an Azure subscription.
+
+There are two ways to provision capacity:
+
+- Provision capacity within Copilot
+- Provision capacity through Azure
+
+In either case, you must have one of the following Microsoft Entra ID roles to accomplish this task:
+
+- Azure owner
+- Azure contributor
+
+***Provision capacity within Copilot***
+
+When you first open Copilot for Security (https://securitycopilot.microsoft.com) as an admin, a wizard will guide you through the steps in setting up capacity for your organization.
+
+1. Sign in to Copilot for Security (https://securitycopilot.microsoft.com).
+
+1. Set up your organization's Azure subscription by entering the following values:
+
+   1. Azure subscription
+   1. Resource group
+   1. Capacity name
+   1. Azure region
+
+1. Select the number of compute units your organization needs.
+
+1. Confirm that you acknowledge and have read the terms and conditions, then select Continue. After creating the capacity, it will take a few minutes to deploy the Azure resource.
+
+After creating the capacity, it will take a few minutes to deploy the Azure resource on the back end.
+
+***Provision capacity through Azure***
+
+- Sign in to the Azure portal.
+
+- Search for Copilot for Security in the list of services, then select Copilot for Security.
+
+- Select Resource groups.
+
+- Select Create.
+
+- Enter the following values:
+
+  - Subscription: Select your Azure subscription.
+  - Resource group: Enter a new resource group name.
+  - Capacity details: Enter a capacity name.
+  - Security compute units: Enter the number of units.
+
+- Confirm that you acknowledge and have read the terms and conditions, then select Review + create.
+
+- Verify that all the information is correct, then select Create. A confirmation page is displayed.
+
+***Manage capacity***
+
+Admins can easily manage capacity by increasing or decreasing provisioned SCUs within the Azure portal or the Security Copilot product itself. Copilot for Security provides a usage monitoring dashboard for capacity owners, allowing them to track usage over time and make informed decisions about capacity provisioning.
+
+### Set up the default environment
+
+To set up the default environment, you need to have one of the following Microsoft Entra ID roles:
+
+- Global administrator
+- Security administrator
+
+During the set up of Copilot for Security, you'll be prompted to configure settings.
+
+1. You'll be prompted to select the capacity. Select the capacity you created from the drop-down menu.
+
+1. View the location where your data is stored, then select Continue.
+
+1. Decide where your prompts are evaluated in terms of GPU availability. You can restrict the evaluation within your geo or allow evaluation anywhere in the world. For more information on the list of mapped locations for your geo, see Data security and privacy. Then select Continue.
+
+1. You'll be informed of the required roles that need to be assigned for users in your organization to use Copilot for Security. Select Continue.
+
+1. A confirmation page is displayed. Select Finish.
+
+
