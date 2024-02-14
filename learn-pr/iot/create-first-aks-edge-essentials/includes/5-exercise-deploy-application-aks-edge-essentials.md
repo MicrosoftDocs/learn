@@ -14,7 +14,7 @@ In this exercise, we deploy a containerized Linux and Windows application on the
 
     The following example screenshot shows the Linux and Windows nodes are ready and the pods are running:
 
-    :::image type="content" source="../media/5-aks-edge-deploy-success-inline.png" alt-text="Screenshot of Windows VM with powershell commands output demonstrating a successful deployment of AKS Edge Essentials." lightbox="../media/5-aks-edge-deploy-success-expanded.png":::
+    :::image type="content" source="../media/5-aks-edge-deploy-success-inline.png" alt-text="Screenshot of Windows VM with PowerShell commands output demonstrating a successful deployment of AKS Edge Essentials." lightbox="../media/5-aks-edge-deploy-success-expanded.png":::
 
 ## Deploy a Linux application
 
