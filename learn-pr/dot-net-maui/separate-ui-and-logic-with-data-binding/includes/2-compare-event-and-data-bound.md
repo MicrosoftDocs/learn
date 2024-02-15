@@ -44,7 +44,7 @@ This design works great for small UIs, but as soon as the UI becomes complex, ma
 
 ## Data binding helps
 
-Data binding in XAML is one of many declarative ways of designing how your app interacts with data.
+Data bindings can be implemented in XAML or code, but are much more common in XAML where they help to reduce the size of the code-behind file. By replacing procedural code in event handlers with declarative code or markup, the app is simplified and clarified.
 
 Data binding can be declared in the XAML along with the controls themself, much like how events are. Because the bindings don't require code-behind, you can easily create, alter, or redesign the UI to fit how you want to present the data.
 
