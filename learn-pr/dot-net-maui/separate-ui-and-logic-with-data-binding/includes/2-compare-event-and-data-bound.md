@@ -4,7 +4,7 @@ A data-bound UI uses data binding to present and interact with data. Properties 
 
 ## Pros and cons of using events and code-behind
 
-Using the control's event handler with code-behind is a quick and convenient way of designing the app logic for your UI. You use code to call out to services to get data, perform operations on that data, and interact with the controls on the page. The code is used to keep the UI and data synchronized.
+Using the control's event handler with code-behind is a quick and convenient way of designing the app logic for your UI. You use code to call services to get data, perform operations on that data, and interact with the controls on the page. The code is used to keep the UI and data synchronized.
 
 Consider the example of a weather service app. The following XAML fragment contains a simple UI button the user selects to get the latest data and update the UI with the humidity.
 

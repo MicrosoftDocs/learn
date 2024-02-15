@@ -25,14 +25,14 @@ To start this exercise module, download the [Weather Sample]() project. This pro
 You'll need to edit the code-behind for the **Refresh** button's click event handler. The code currently gets the weather data and updates the controls directly. Instead, get the weather data and set it as the binding context for the page.
 
 01. Open the _MainPage.xaml.cs_ code file.
-01. Review the `btnRefresh_Clicked` method. This method does the following steps:
+01. Review the `btnRefresh_Clicked` method. This method performs the following steps:
 
     - Disables the button and enables the "busy" spinner.
     - Gets the weather forecast from the weather service.
     - Updates the controls on the page with the weather information.
     - Enables the button and disables the "busy" spinner.
 
-01. Remove the code that updates the other controls. Your event code should look like the following snippet:
+01. Remove the code that updates the controls with data. Your event code should look like the following snippet:
 
     ```csharp
     private async void btnRefresh_Clicked(object sender, EventArgs e)

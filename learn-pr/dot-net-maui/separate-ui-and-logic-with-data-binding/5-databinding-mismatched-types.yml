@@ -37,14 +37,3 @@ quiz:
     - isCorrect: false
       content: "TypeConverter"
       explanation: "This class is used by Windows Forms for data conversion. It isn't used by .NET MAUI."
-  - content: "After a converter type is created, how is it used with a binding?"
-    choices:
-    - isCorrect: true
-      content: "Create an instance of the converter and assign it to the binding's Converter property."
-      explanation: ""
-    - isCorrect: false
-      content: "Implement the converter interface in a static class and reference it in the binding's Converter property."
-      explanation: "Static classes can't implement interfaces."
-    - isCorrect: false
-      content: ""
-      explanation: ""

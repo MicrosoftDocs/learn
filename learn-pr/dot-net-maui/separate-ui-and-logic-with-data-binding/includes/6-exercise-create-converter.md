@@ -18,8 +18,6 @@ The current binding context of the weather app's page is a data object with prop
     
     internal class WeatherConditionToImageConverter : IValueConverter
     {
-        public bool IsActive { get; set; }
-    
         public object? Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
         {
             WeatherType weatherCondition = (WeatherType)value!;
@@ -49,7 +47,7 @@ The current binding context of the weather app's page is a data object with prop
                  x:Class="WeatherClient.MainPage">
     ```
 
-01. Add an instance of the `WeatherConditionToImageConverter` converter to the page's resources, with the key of `WeatherConditionToImageConverter`.
+01. Add an instance of the `WeatherConditionToImageConverter` converter to the page's resources, with the key of `WeatherConditionToImageConverter`:
 
     ```xaml
     <ContentPage ...
@@ -114,7 +112,7 @@ The final converter for the app is one that lets the **Use Celsius** switch chan
     This converter also formats the resulting string with a `C` or `F` moniker indicating Celsius or Fahrenheit.
 
 01. Open the _MainPage.xaml_ file.
-01. Add an instance of the `FahrenheitToCelsiusConverter` converter to the page's resources, with the key of `FahrenheitToCelsiusConverter`.
+01. Add an instance of the `FahrenheitToCelsiusConverter` converter to the page's resources, with the key of `FahrenheitToCelsiusConverter`:
 
     ```xaml
     <ContentPage ...
@@ -126,7 +124,7 @@ The final converter for the app is one that lets the **Use Celsius** switch chan
     ```
 
 01. Find the `<Label>` control named `lblTemperature`.
-01. Change the `Text="{Binding Temperature}` property, adding the converter.
+01. Change the `Text="{Binding Temperature}` property, adding the converter:
 
     ```xaml
     Text="{Binding Temperature, Converter={StaticResource FahrenheitToCelsiusConverter}}"
@@ -157,7 +155,7 @@ Now that the converter exists and is attached to the temperature label, we need 
 01. Next, open the _Mainpage.xaml.cs_ code-behind file.
 01. Find the `swiCelsius_Toggled` method and the change code.
 
-    This method forcibly changed the label `Text` property, which is now controlled by the binding and converter. We want this code to instead trigger a binding update for the label, letting the converter do its conversion.
+    This method forcibly changed the label `Text` property, which is now controlled by the binding and converter. We want this code to instead trigger a binding update for the label, letting the converter do its conversion:
 
     ```csharp
     private void swiCelsius_Toggled(object sender, ToggledEventArgs e)
