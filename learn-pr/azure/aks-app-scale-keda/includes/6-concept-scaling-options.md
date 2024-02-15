@@ -2,7 +2,7 @@ Sometimes, scaling the number of pods to handle increased demand isn't enough. T
 
 ## Kubernetes scaling options
 
-Kubernetes clusters can scale in one of two ways:
+Kubernetes clusters can scale using one of the following components:
 
 * The **Cluster Autoscaler**, which watches for pods that can't be scheduled on nodes because of resource constraints. The cluster automatically increases the number of nodes to meet the demand.
 * The **Horizontal Pod Autoscaler (HPA)**, which uses the Metrics Server in a Kubernetes cluster to monitor the resource demand of pods. If an application needs more resources, the number of pods is automatically increased to meet the demand.
