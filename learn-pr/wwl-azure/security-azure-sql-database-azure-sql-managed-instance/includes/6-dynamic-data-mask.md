@@ -6,7 +6,7 @@ For example, a service representative at a call center might identify a caller b
 
 ### Dynamic data masking basics
 
-You set up a dynamic data masking policy in the Azure portal by selecting the dynamic data masking operation in your SQL Database configuration blade or settings blade. This feature cannot be set by using portal for Azure Synapse
+You set up a dynamic data masking policy in the Azure portal by selecting the **Dynamic Data Masking** blade under Security in your SQL Database configuration pane.
 
 ### Dynamic data masking policy
 
@@ -30,53 +30,43 @@ You set up a dynamic data masking policy in the Azure portal by selecting the dy
 | Random number        | Masking method, which generates a random number according to the selected boundaries and actual data types. If the designated boundaries are equal, then the masking function is a constant number.<br><br>:::image type="content" source="https://learn.microsoft.com/azure/azure-sql/database/media/dynamic-data-masking-overview/random-number.png?view=azuresql" alt-text="Screenshot that shows the masking method for generating a random number.":::                                                                                                                                                                                                                                                                                                |
 | Custom text          | Masking method, which exposes the first and last characters and adds a custom padding string in the middle. If the original string is shorter than the exposed prefix and suffix, only the padding string is used.<br><br>prefix\[padding\]suffix<br><br>:::image type="content" source="https://learn.microsoft.com/azure/azure-sql/database/media/dynamic-data-masking-overview/custom-text.png?view=azuresql" alt-text="Screenshot of the navigation pane.":::                                                                                                                                                                                                                                                                                          |
 
-## Permissions
+## Recommended fields to mask
 
-Users with SELECT permission on a table can view the table data. Columns that are defined as masked display the masked data. Grant the UNMASK permission to a user to allow them to retrieve unmasked data from the columns for which masking is defined.
+The DDM recommendations engine, flags certain fields from your database as potentially sensitive fields, which may be good candidates for masking. In the Dynamic Data Masking pane in the portal, you see the recommended columns for your database. Select Add Mask for one or more columns, then select the appropriate masking function and select Save, to apply mask for these fields.
 
-Administrative users and roles can always view unmasked data via the CONTROL permission, which includes both the ALTER ANY MASK and UNMASK permission. Administrative users or roles such as sysadmin, serveradmin, or db\_owner have CONTROL permissions on the database by design, and can view unmasked data.<br>
+## Set up dynamic data masking for your database using PowerShell cmdlets
 
-You don't need any special permission to create a table with a dynamic data mask, only the standard CREATE TABLE and ALTER on schema permissions.<br>
+### Data masking policies
 
-Adding, replacing, or removing the mask of a column, requires the ALTER ANY MASK permission and ALTER permission on the table. It's appropriate to grant ALTER ANY MASK to a security officer.<br>
+`Get-AzSqlDatabaseDataMaskingPolicy`
 
-### 
+`Set-AzSqlDatabaseDataMaskingPolicy`
 
-### 
+`Data masking rules`
 
-### 
+`Get-AzSqlDatabaseDataMaskingRule`
 
-### 
+`New-AzSqlDatabaseDataMaskingRule`
 
-### 
+`Remove-AzSqlDatabaseDataMaskingRule`
 
-### 
+`Set-AzSqlDatabaseDataMaskingRule`
 
-### 
+Set up dynamic data masking for your database using the REST API
 
-### 
+You can use the REST API to programmatically manage data masking policy and rules. The published REST API supports the following operations:
 
-### 
+### Data masking policies<br>
 
-### 
+ -  `Create Or Update: Creates or updates a database data masking policy.`
+ -  `Get: Gets a database data masking policy.`
 
-### 
+### Data masking rules
 
-### 
+ -  `Create Or Update: Creates or updates a database data masking rule.`
+ -  `List By Database: Gets a list of database data masking rules.`
 
-### 
-
-### 
-
-### 
-
-### 
-
-### Recommended fields to mask
-
-The DDM recommendations engine flags certain fields from your database as potentially sensitive fields, which may be good candidates for masking. In the Dynamic Data Masking blade in the portal, you can review the recommended columns for your database. All you need to do is click **Add Mask** for one or more columns and then **Save** to apply a mask for these fields.
-
-Permissions
+### Permissions
 
 These are the built-in roles to configure dynamic data masking is:
 
@@ -84,7 +74,7 @@ These are the built-in roles to configure dynamic data masking is:
  -  SQL DB Contributor
  -  SQL Server Contributor
 
-These are the required actions to use dynamic data masking:
+These are the required actions to use dynamic data masking:<br>
 
 Read/Write:<br>
 
@@ -102,208 +92,17 @@ Write:
 
 Prevent unauthorized access to sensitive data and gain control by masking it to an unauthorized user at different levels of the database. You can grant or revoke UNMASK permissions at the database-level, schema-level, table-level or at the column-level to any database user or role. Combined with Microsoft Entra authentication, UNMASK permissions can be managed for users, groups, and applications maintained within your Azure environment. The UNMASK permission provides a granular way to control and limit unauthorized access to data stored in the database and improve data security management.
 
-1. Create schema to contain user tables:
-
-**SQL**
-
-`CREATE SCHEMA Data;`
-
-`GO`
-
-2. Create table with masked columns:
-
-**SQL**
-
-`CREATE TABLE Data.Membership (`
-
-`MemberID INT IDENTITY(1, 1) NOT NULL PRIMARY KEY CLUSTERED,`
-
-`FirstName VARCHAR(100) MASKED WITH (FUNCTION = 'partial(1, "xxxxx", 1)') NULL,`
-
-`LastName VARCHAR(100) NOT NULL,`
-
-`Phone VARCHAR(12) MASKED WITH (FUNCTION = 'default()') NULL,`
-
-`Email VARCHAR(100) MASKED WITH (FUNCTION = 'email()') NOT NULL,`
-
-`DiscountCode SMALLINT MASKED WITH (FUNCTION = 'random(1, 100)') NULL,`
-
-`BirthDay DATETIME MASKED WITH (FUNCTION = 'default()') NULL`
-
-`);`
-
-3. Insert sample data:
-
-**SQL**
-
-`INSERT INTO Data.Membership (FirstName, LastName, Phone, Email, DiscountCode, BirthDay)`
-
-`VALUES`
-
-`('Roberto', 'Tamburello', '555.123.4567', 'RTamburello@contoso.com', 10, '1985-01-25 03:25:05'),`
-
-`('Janice', 'Galvin', '555.123.4568', 'JGalvin@contoso.com.co', 5, '1990-05-14 11:30:00'),`
-
-`('Shakti', 'Menon', '555.123.4570', 'SMenon@contoso.net', 50, '2004-02-29 14:20:10'),`
-
-`('Zheng', 'Mu', '555.123.4569', 'ZMu@contoso.net', 40, '1990-03-01 06:00:00');`
-
-4. Create schema to contain service tables:
-
-**SQL**
-
-`CREATE SCHEMA Service;`
-
-`GO`
-
-5. Create service table with masked columns:
-
-**SQL**
-
-`CREATE TABLE Service.Feedback (`
-
-`MemberID INT IDENTITY(1, 1) NOT NULL PRIMARY KEY CLUSTERED,`
-
-`Feedback VARCHAR(100) MASKED WITH (FUNCTION = 'default()') NULL,`
-
-`Rating INT MASKED WITH (FUNCTION = 'default()'),`
-
-`Received_On DATETIME`
-
-`);`
-
-6. Insert sample data:
-
-**SQL**
-
-`INSERT INTO Service.Feedback (Feedback, Rating, Received_On)`
-
-`VALUES`
-
-`('Good', 4, '2022-01-25 11:25:05'),`
-
-`('Excellent', 5, '2021-12-22 08:10:07'),`
-
-`('Average', 3, '2021-09-15 09:00:00');`
-
-7. Create different users in the database:
-
-**SQL**
-
-`CREATE USER ServiceAttendant WITHOUT LOGIN;`
-
-`GO`
-
-`CREATE USER ServiceLead WITHOUT LOGIN;`
-
-`GO`
-
-`CREATE USER ServiceManager WITHOUT LOGIN;`
-
-`GO`
-
-`CREATE USER ServiceHead WITHOUT LOGIN;`
-
-`GO`
-
-8. Grant read permissions to the users in the database:
-
-**SQL**
-
-`ALTER ROLE db_datareader ADD MEMBER ServiceAttendant;`
-
-`ALTER ROLE db_datareader ADD MEMBER ServiceLead;`
-
-`ALTER ROLE db_datareader ADD MEMBER ServiceManager;`
-
-`ALTER ROLE db_datareader ADD MEMBER ServiceHead;`
-
-9. Grant different UNMASK permissions to users:
-
-**SQL**
-
-`ALTER ROLE db_datareader ADD MEMBER ServiceAttendant;`
-
-`ALTER ROLE db_datareader ADD MEMBER ServiceLead;`
-
-`ALTER ROLE db_datareader ADD MEMBER ServiceManager;`
-
-`ALTER ROLE db_datareader ADD MEMBER ServiceHead;`
-
+1.  Create schema to contain user tables:
+2.  Create table with masked columns:
+3.  Insert sample data:
+4.  Create schema to contain service tables:
+5.  Create service table with masked columns:
+6.  Insert sample data:
+7.  Create different users in the database:
+8.  Grant read permissions to the users in the database:
+9.  Grant different UNMASK permissions to users:
 10. Query the data under the context of user ServiceAttendant:
-
-**SQL**
-
-`EXECUTE AS USER = 'ServiceAttendant';`
-
-`SELECT MemberID, FirstName, LastName, Phone, Email, BirthDay`
-
-`FROM Data.Membership;`
-
-`SELECT MemberID, Feedback, Rating`
-
-`FROM Service.Feedback;`
-
-`REVERT;`
-
 11. Query the data under the context of user ServiceLead:
-
-**SQL**
-
-`EXECUTE AS USER = 'ServiceLead';`
-
-`SELECT MemberID, FirstName, LastName, Phone, Email, BirthDay`
-
-`FROM Data.Membership;`
-
-`SELECT MemberID, Feedback, Rating`
-
-`FROM Service.Feedback;`
-
-`REVERT;`
-
 12. Query the data under the context of user ServiceManager:
-
-**SQL**
-
-`EXECUTE AS USER = 'ServiceManager';`
-
-`SELECT MemberID, FirstName, LastName, Phone, Email, BirthDay`
-
-`FROM Data.Membership;`
-
-`SELECT MemberID, Feedback, Rating`
-
-`FROM Service.Feedback;`
-
-`REVERT;`
-
 13. Query the data under the context of user ServiceHead
-
-**SQL**
-
-`EXECUTE AS USER = 'ServiceHead';`
-
-`SELECT MemberID, FirstName, LastName, Phone, Email, BirthDay`
-
-`FROM Data.Membership;`
-
-`SELECT MemberID, Feedback, Rating`
-
-`FROM Service.Feedback;`
-
-`REVERT;`
-
 14. To revoke UNMASK permissions, use the following T-SQL statements:
-
-**SQL**
-
-`REVOKE UNMASK ON Data.Membership(FirstName) FROM ServiceAttendant;`
-
-`REVOKE UNMASK ON Data.Membership FROM ServiceLead;`
-
-`REVOKE UNMASK ON SCHEMA::Data FROM ServiceManager;`
-
-`REVOKE UNMASK ON SCHEMA::Service FROM ServiceManager;`
-
-`REVOKE UNMASK FROM ServiceHead;`<br>
