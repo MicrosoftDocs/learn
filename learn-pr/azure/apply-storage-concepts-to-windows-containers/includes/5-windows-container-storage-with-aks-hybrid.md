@@ -1,9 +1,9 @@
-Azure Kubernetes Service (AKS) hybrid deployment options ("AKS hybrid") is an on-premises implementation of the Azure Kubernetes Service orchestrator, which automates running containerized applications at scale while allowing you to operate consistent cloud native applications anywhere. AKS hybrid enables you to leverage your existing investments in on-premises infrastructure and integrate them with Azure services.
+Azure Kubernetes Service (AKS) hybrid deployment options ("AKS hybrid") is an on-premises implementation of the Azure Kubernetes Service orchestrator. The orchestrater automates  running containerized applications at scale while allowing you to operate consistent cloud native applications anywhere. AKS hybrid enables you to leverage your existing investments in on-premises infrastructure and integrate them with Azure services.
 
 Depending on your hardware class, compute availability and your Kubernetes adoption process, the following AKS hybrid deployment options are available:
 
 - AKS on Windows Server
-- AKS on Azure Stack HCI
+- AKS on Azure Stack HCI (Hyper-converged infrastructure)
 - AKS cluster provisioning from Azure (PREVIEW)
 - AKS Edge Essentials
 
@@ -21,7 +21,7 @@ Where AKS hybrid storage differs from AKS, is its support for using your on-prem
 
 ## Persistent volumes
 
-A persistent volume is a storage resource created and managed by the Kubernetes API that can exist beyond the lifetime of an individual pod. For example, when using the AKS hybrid deployment option AKS on Azure Stack HCI, you can use AKS Disk volumes backed by VHDX that are mounted as `ReadWriteOnce` and are accessible to a single node at a time. Or you can use AKS Files volumes backed by SMB or NFS file shares. These are mounted as `ReadWriteMany` and are available to multiple nodes concurrently.
+A persistent volume is a storage resource created and managed by the Kubernetes API that can exist beyond the lifetime of an individual pod. For example, when using the AKS hybrid deployment option AKS on Azure Stack HCI, you can use AKS Disk volumes backed by VHDX that are mounted as `ReadWriteOnce` and are accessible to a single node at a time. Or you can use AKS Files volumes backed by SMB (Server Message Block) or NFS (Network File System) file shares. These are mounted as `ReadWriteMany` and are available to multiple nodes concurrently.
 
 A persistent volume can be statically created by a cluster administrator, or dynamically created by the Kubernetes API server. If a pod is scheduled and requests storage that is not currently available, Kubernetes can create the underlying VHDX file and then attach it to the pod. Dynamic provisioning uses a `StorageClass` to identify what type of storage needs to be created.
 
