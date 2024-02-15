@@ -50,7 +50,7 @@ az storage blob upload \
   --file blobdata.dat
 ```
 
-If a blob with the given name already exists in the container, it's overwritten. Use the `--if-match` parameter with an ETag to specify that the blob should only be overwritten with the new data if its ETag matches the value given. The `--if-none-match` parameter overwrites the blob if none of the ETags supplied in the command match that of the blob. Other options are `--if-modified-since`, which overwrites the blob only if it was modified since a specified date, and `--if-unmodified-since`, which makes sure that the blob is unhanged since the date given. The following example uploads a file to Blob Storage and overwrites an existing blob with the same name only if the blob is unchanged since the date and time specified.
+If a blob with the given name already exists in the container, it's overwritten. Use the `--if-match` parameter with an ETag to specify that the blob should only be overwritten with the new data if its ETag matches the value given. The `--if-none-match` parameter overwrites the blob if none of the ETags supplied in the command match that of the blob. Other options are `--if-modified-since`, which overwrites the blob only if it was modified since a specified date, and `--if-unmodified-since`, which makes sure that the blob is unchanged since the date given. The following example uploads a file to Blob Storage and overwrites an existing blob with the same name only if the blob is unchanged since the date and time specified.
 
 ```azurecli
 az storage blob upload \
@@ -124,7 +124,7 @@ az storage blob delete \
   --name sourceBlob
 ```
 
-The `--if-modified-since`, `--if-unmodified-since`, `--if-match`, and `--if-none-match` parameters, allow you to perform a delete operation that depends on the last modification date of the blob and its ETag.
+The `--if-modified-since`, `--if-unmodified-since`, `--if-match`, and `--if-none-match` parameters allow you to perform a delete operation that depends on the last modification date of the blob and its ETag.
 
 If you have multiple blobs to remove, run the `az storage blob delete-batch` command. For example, to delete blobs that are unmodified in the last six months, run the following commands.
 
