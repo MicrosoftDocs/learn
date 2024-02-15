@@ -36,7 +36,6 @@ products:
 - azure-portal
 subjects: 
   - cloud-computing
-  - data-ai
   - infrastructure
 units:
 - learn.analyze-logs-with-kql.introduction
