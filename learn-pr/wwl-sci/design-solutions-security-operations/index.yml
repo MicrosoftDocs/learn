@@ -2,7 +2,7 @@
 uid: learn.wwl.design-solutions-security-operations
 metadata:
   title: Design solutions for security operations
-  description: "You learn techniques to design security operations capabilities including logging, auditing, Security Event Management (SIEM), Security Orchestration and Automated Response (SOAR), and security workflows."
+  description: "You learn techniques to design security operations capabilities including logging, auditing, Security Information and Event Management (SIEM), Security Orchestration and Automated Response (SOAR), and security workflows."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
@@ -10,13 +10,13 @@ metadata:
   ms.service: azure
 title: Design solutions for security operations
 summary: | 
-  You learn techniques to design security operations capabilities including logging, auditing, Security Event Management (SIEM), Security Orchestration and Automated Response (SOAR), and security workflows.
+  You learn techniques to design security operations capabilities including logging, auditing, Security Information and Event Management (SIEM), Security Orchestration and Automated Response (SOAR), and security workflows.
   [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   By the end of this module, you are able to:
   - Design security operations capabilities in hybrid and multicloud environments
   - Design centralized logging and auditing
-  - Design Security Event Management (SIEM) solutions
+  - Design Security Information and Event Management (SIEM) solutions
   - Design a solution for detection and response that includes Extended Detection and Response (XDR)
   - Design a solution for security orchestration, automation and response (SOAR)
   - Design security workflows
