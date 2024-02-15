@@ -4,11 +4,11 @@ metadata:
   title: Deploy a Quarkus application to Azure Red Hat OpenShift
   description: Create a Quarkus application, connect it to a PostgreSQL database, and then deploy to Azure Red Hat OpenShift.
   ms.date: 02/14/2024
-  author: edburns
-  ms.author: edburns
+  author: danieloh
+  ms.author: danieloh
   ms.topic: module
   ms.custom: team=devdiv
-  ms.contributors: edburns
+  ms.contributors: danieloh
   ms.service: azure-redhat-openshift
 title: Deploy a Quarkus application to Azure Red Hat OpenShift
 summary: Create a Quarkus application, connect it to a PostgreSQL database, and then deploy to Red Hat OpenShift.
