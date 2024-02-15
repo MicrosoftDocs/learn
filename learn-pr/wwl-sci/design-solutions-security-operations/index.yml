@@ -14,13 +14,13 @@ summary: |
   [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   By the end of this module, you are able to:
-  - Design security operations capabilities in hybrid and multicloud environments
-  - Design centralized logging and auditing
-  - Design Security Information and Event Management (SIEM) solutions
-  - Design a solution for detection and response that includes Extended Detection and Response (XDR)
-  - Design a solution for security orchestration, automation and response (SOAR)
-  - Design security workflows
-  - Design and evaluate threat detection with the MITRE ATT&CK framework
+  - Design security operations capabilities in hybrid and multicloud environments.
+  - Design centralized logging and auditing.
+  - Design Security Information and Event Management (SIEM) solutions.
+  - Design a solution for detection and response that includes Extended Detection and Response (XDR).
+  - Design a solution for security orchestration, automation, and response (SOAR).
+  - Design security workflows.
+  - Design and evaluate threat detection with the MITRE ATT&CK framework.
 prerequisites: |
   - Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
   - Experience with hybrid and cloud implementations.
