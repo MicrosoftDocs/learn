@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/31/2023
   author: rayoef
   ms.author: rayoflores
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure-kubernetes-service
 title: Configure Azure CNI networking in Azure Kubernetes Service (AKS)
 summary: This module introduces Azure CNI networking and how to configure it in Azure Kubernetes Service (AKS). We cover some Kubernetes networking basics, including how certain resource types use IP addresses, how to size a cluster for a workload, and how to design a network for an AKS cluster using Azure CNI.
