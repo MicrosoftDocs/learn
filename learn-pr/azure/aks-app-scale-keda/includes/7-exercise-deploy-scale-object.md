@@ -108,7 +108,7 @@ For more information, see [KEDA Scalers](https://keda.sh/docs/2.2/scalers/).
 
 ## Apply the manifest
 
-1. Deploy the manifest to your cluster by using the `kubectl apply` command:
+1. Deploy the manifest to your cluster using the `kubectl apply` command:
 
       ```azurecli-interactive
       kubectl apply -f ./scaled-object.yaml
@@ -120,7 +120,7 @@ For more information, see [KEDA Scalers](https://keda.sh/docs/2.2/scalers/).
       scaledobject.keda.sh/scaled-contoso created
       ```
 
-2. Check the number of running pods by using the `kubectl get pods` command:
+2. Check the number of running pods using the `kubectl get pods` command:
 
       ```azurecli-interactive
       kubectl get pods
@@ -136,7 +136,7 @@ For more information, see [KEDA Scalers](https://keda.sh/docs/2.2/scalers/).
 3. Periodically run the `kubectl get pods` command to verify the Deployment is scaling the number of pods according to the backlog of work.
 
     > [!NOTE]
-    > If you have Linux utility `watch` installed, you can run the following command to see the pods scale to process the Redis list items: `watch kubectl get pods`. If not, you can also use `kubectl get pods -w`.
+    > If you have the Linux utility watch installed, you can use the `watch kubectl get pods` command to see the pods scale to process the Redis list items. If not, you can use the `kubectl get pods -w` command.
 
     Your output should look similar to the following example output:
 
