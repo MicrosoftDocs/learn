@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.connect-aks-edge-essentials-azure-arc.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of Connect your Azure Kubernetes Service (AKS) Edge Essentials cluster to Azure Arc.
+  ms.date: 01/17/2024
+  author: asergaz
+  ms.author: sergaz
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "In the retail chain scenario, what is the benefit of using GitOps and Flux on an Arc-enabled AKS Edge Essentials cluster?"
+    choices:
+    - content: "To reduce manual deployment effort."
+      isCorrect: true
+      explanation: "GitOps is a DevOps practice that streamlines application releases by reducing manual deployment effort. By using GitOps and Flux to deploy applications to an Arc-enabled AKS Edge Essentials cluster, organizations can increase agility without jeopardizing the stability of the IT environment."
+    - content: "To track inventory and analyze interactions."
+      isCorrect: false
+      explanation: "This is a task that the smart shelf application needs to perform, not a benefit of using GitOps and Flux."
+    - content: "To manage sensors and secure data."
+      isCorrect: false
+      explanation: "This is a task that needs to be performed in the retail chain scenario, not a benefit of using GitOps and Flux."
+  - content: "A user wants to deploy containerized Linux applications on multiple Arc-enabled AKS Edge Essentials clusters using GitOps and Flux. What is the purpose of GitOps in this scenario?"
+    choices:
+    - content: "GitOps is used to monitor the performance of the application."
+      isCorrect: false
+      explanation: "GitOps isn't used to monitor the performance of the application, but rather to deploy and manage applications on a Kubernetes cluster."
+    - content: "GitOps is used to create a Kubernetes cluster."
+      isCorrect: false
+      explanation: "GitOps isn't used to create a Kubernetes cluster, but rather to deploy and manage applications on a Kubernetes cluster."
+    - content: "GitOps is used to automate and validate the creation and teardown of environments."
+      isCorrect: true
+      explanation: "GitOps enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms by using a Git repository as the source of truth for declarative infrastructure and application code."
+  - content: "What is the purpose of Azure Arc-enabled Kubernetes?"
+    choices:
+    - content: "Provides a centralized management console for Kubernetes clusters running anywhere, scalability, and robust security that helps optimize the retail chain's customer experience strategies."
+      isCorrect: false
+      explanation: "This answer describes a specific use case for Azure Arc-enabled Kubernetes, but not its overall purpose."
+    - content: "Allows you to connect Kubernetes clusters located anywhere to Azure and manage them in a consistent way, just as you would in Azure."
+      isCorrect: true
+      explanation: "This answer accurately describes the purpose of Azure Arc-enabled Kubernetes, which provides management capabilities such as inventory, monitoring, policy compliance, security, user access, and more."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      isCorrect: false
+      explanation: "This answer describes the purpose of GitOps, not Azure Arc-enabled Kubernetes overall purpose."

@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/02/2024
+  ms.date: 02/12/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/10-knowledge-check.md)]
@@ -40,10 +42,10 @@ quiz:
     choices:
     - content: "Click on the Access control tab and select the role to assign."
       isCorrect: false
-      explanation: "Incorrect. This is not the first step."
+      explanation: "Incorrect. This isn't the first step."
     - content: "Select the user, group, or service principal to assign the selected role."
       isCorrect: false
-      explanation: "Incorrect. This is not the first step."
+      explanation: "Incorrect. This isn't the first step."
     - content: "Identify the needed scope by searching for the resource group in the Azure portal."
       isCorrect: true
       explanation: "Correct. The first step is to identify the needed scope by searching for the resource group in the Azure portal."
@@ -65,7 +67,7 @@ quiz:
       explanation: "Incorrect. Adding a condition is optional but recommended for more fine-grained access control."
     - content: "Select the Unconstrained option under Delegation type on the Conditions tab."
       isCorrect: false
-      explanation: "Incorrect. This option does not provide fine-grained access control."
+      explanation: "Incorrect. This option doesn't provide fine-grained access control."
     - content: "Select the Constrained recommended option under Delegation type on the Conditions tab."
       isCorrect: true
       explanation: "Correct. This option provides more fine-grained access control by constraining the roles and principals the user can assign roles to."
