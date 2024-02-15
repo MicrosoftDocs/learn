@@ -31,7 +31,6 @@ products:
   - azure
 subjects: 
   - cloud-computing
-  - data-ai
 units:
 - learn.wwl.get-started-openai.introduction
 - learn.wwl.get-started-openai.access-azure-openai
