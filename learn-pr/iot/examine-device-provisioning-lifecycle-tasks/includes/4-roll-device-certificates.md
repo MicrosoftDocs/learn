@@ -1,14 +1,14 @@
-During the lifecycle of your Azure IoT Hub solution, you need to roll certificates. Two of the main reasons for rolling certificates would be a security breach, and certificate expirations. For now, we focus on rolling certificates due to expiration.
+During the lifecycle of your Azure IoT Hub solution, you need to roll certificates. Two of the main reasons for rolling certificates are a security breach and certificate expirations.
 
 Rolling certificates is a security best practice to help secure your system in the event of a breach. As part of [Assume Breach Methodology](https://download.microsoft.com/download/C/1/9/C1990DBA-502F-4C2A-848D-392B93D9B9C3/Microsoft_Enterprise_Cloud_Red_Teaming.pdf), Microsoft advocates the need for having reactive security processes in place along with preventative measures. Rolling your device certificates should be included as part of these security processes. The frequency in which you roll your certificates depends on the security needs of your solution. Customers with solutions involving highly sensitive data may roll certificate daily, while others roll their certificates every couple years.
 
-Rolling device certificates involves updating the certificate stored on the device and the Azure IoT hub. Afterwards, the device can reprovision itself with the Azure IoT hub using normal [provisioning](/azure/iot-dps/about-iot-dps#provisioning-process) with the Device Provisioning Service (DPS).
+Rolling device certificates involves updating the certificate stored on the device and the Azure IoT hub. Afterwards, the device can reprovision itself with the Azure IoT hub using normal provisioning with the Device Provisioning Service (DPS).
 
 ## Obtain new certificates
 
 There are many ways to obtain new certificates for your IoT devices. These include obtaining certificates from the device factory, generating your own certificates, and having a third party manage certificate creation for you.
 
-Certificates are signed by each other to form a chain of trust from a root CA certificate to a [leaf certificate](/azure/iot-dps/concepts-x509-attestation#end-entity-leaf-certificate). A signing certificate is the certificate used to sign the leaf certificate at the end of the chain of trust. A signing certificate can be a root CA certificate, or an intermediate certificate in chain of trust.
+Certificates are signed by each other to form a chain of trust from a root CA certificate to a leaf certificate. A signing certificate is the certificate used to sign the leaf certificate at the end of the chain of trust. A signing certificate can be a root CA certificate, or an intermediate certificate in chain of trust.
 
 There are two different ways to obtain a signing certificate. The first way, which is recommended for production systems, is to purchase a signing certificate from a root certificate authority (CA). This way chains security down to a trusted source.
 
@@ -16,7 +16,7 @@ The second way is to create your own X.509 certificates using a tool like OpenSS
 
 ## Roll the certificate on the device
 
-Certificates on a device should always be stored in a safe place like a [hardware security module (HSM)](/azure/iot-dps/concepts-service#hardware-security-module). The way you roll device certificates depends on how they were created and installed in the devices in the first place.
+Certificates on a device should always be stored in a safe place like a hardware security module (HSM). The way you roll device certificates depends on how they were created and installed in the devices in the first place.
 
 If you got your certificates from a third party, you must look into how they roll their certificates. The process may be included in your arrangement with them, or it may be a separate service they offer.
 
@@ -26,7 +26,7 @@ The mechanics of installing a new certificate on a device often involve one of t
 
 * You can trigger affected devices to send a new certificate signing request (CSR) to your PKI Certificate Authority (CA). In this case, each device will likely be able to download its new device certificate directly from the CA.
 
-* You can retain a CSR from each device and use that to get a new device certificate from the PKI CA. In this case, you need to push the new certificate to each device in a firmware update using a secure OTA update service like [Device Update for IoT Hub](/azure/iot-hub-device-update/).
+* You can retain a CSR from each device and use that to get a new device certificate from the PKI CA. In this case, you need to push the new certificate to each device in a firmware update using a secure OTA update service like Device Update for IoT Hub.
 
 ## Roll the certificate in the Azure IoT hub
 
@@ -36,7 +36,7 @@ When a device is initially provisioned through autoprovisioning, it boots-up, an
 
 Once a new leaf certificate is rolled to the device, it can no longer connect to the Azure IoT hub because it's using a new certificate to connect. The Azure IoT hub only recognizes the device with the old certificate. The result of the device's connection attempt is an "unauthorized" connection error. To resolve this error, you must update the enrollment entry for the device to account for the device's new leaf certificate. Then the provisioning service can update the Azure IoT Hub device registry information as needed when the device is reprovisioned.
 
-One possible exception to this connection failure would be a scenario where you've created an Enrollment Group for your device in the provisioning service. In this case, if you aren't rolling the root or intermediate certificates in the device's certificate chain of trust, then the device is recognized if the new certificate is part of the chain of trust defined in the enrollment group. If this scenario arises as a reaction to a security breach, you should at least disallow the specific device certificates in the group that are considered to be breached. For more information, see [Disallow specific devices in an enrollment group](/en-us/azure/iot-dps/how-to-revoke-device-access-portal#disallow-specific-devices-from-an-x509-enrollment-group).
+One possible exception to this connection failure would be a scenario where you've created an enrollment group for your device in the provisioning service. In this case, if you aren't rolling the root or intermediate certificates in the device's certificate chain of trust, then the device is recognized if the new certificate is part of the chain of trust defined in the enrollment group. If this scenario arises as a reaction to a security breach, you should at least disallow the specific device certificates in the group that are considered to be breached.
 
 How you handle updating the enrollment entry depends on whether you're using individual enrollments, or group enrollments. Also the recommended procedures differ depending on whether you're rolling certificates because of a security breach, or certificate expiration. The following sections describe how to handle these updates.
 
@@ -66,7 +66,7 @@ If you removed a compromised certificate from the provisioning service, the cert
 
 * The first way would be to manually navigate to your Azure IoT hub and immediately remove the device registration associated with the compromised certificate. Then when the device provisions again with an updated certificate, a new device registration is created.
 
-* The second way would be to use reprovisioning support to reprovision the device to the same Azure IoT hub. This approach can be used to replace the certificate for the device registration on the Azure IoT hub. For more information, see [How to reprovision devices](/azure/iot-dps/how-to-reprovision).
+* The second way would be to use reprovisioning support to reprovision the device to the same Azure IoT hub. This approach can be used to replace the certificate for the device registration on the Azure IoT hub.
 
 ### Roll certificates for enrollment groups
 
@@ -80,12 +80,12 @@ Once the certificate is rolled on both the device and the Device Provisioning Se
 
 One easy way of programming devices to reprovision is to program the device to contact the provisioning service to go through the provisioning flow if the device receives an "unauthorized" error from attempting to connect to the Azure IoT hub.
 
-Another way is for both the old and the new certificates to be valid for a short overlap, and use the Azure IoT hub to send a command to devices to have them re-register via the provisioning service to update their Azure IoT Hub connection information. Because each device can process commands differently, you have to program your device to know what to do when the command is invoked. There are several ways you can command your device via Azure IoT Hub, and we recommend using [direct methods](/azure/iot-hub/iot-hub-devguide-direct-methods) or [jobs](/azure/iot-hub/iot-hub-devguide-jobs) to initiate the process.
+Another way is for both the old and the new certificates to be valid for a short overlap, and use the Azure IoT hub to send a command to devices to have them re-register via the provisioning service to update their Azure IoT Hub connection information. Because each device can process commands differently, you have to program your device to know what to do when the command is invoked. There are several ways you can command your device via Azure IoT Hub, and we recommend using direct methods or jobs to initiate the process.
 
 Once reprovisioning is complete, devices are able to connect to Azure IoT Hub using their new certificates.
 
 ## Disallow certificates
 
-In response to a security breach, you may need to disallow a device certificate. To disallow a device certificate, disable the enrollment entry for the target device/certificate. For more information, see disallowing devices in the [Manage disenrollment](/azure/iot-dps/how-to-revoke-device-access-portal) article.
+In response to a security breach, you may need to disallow a device certificate. To disallow a device certificate, disable the enrollment entry for the target device/certificate.
 
 Once a certificate is included as part of a disabled enrollment entry, any attempts to register with an Azure IoT hub using that certificates fails even if it is enabled as part of another enrollment entry.

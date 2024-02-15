@@ -37,33 +37,4 @@ Proof-of-possession involves the following steps:
 1. Create an X.509 verification certificate with the verification code as its subject and sign the certificate with the private key associated with your X.509 CA certificate.
 1. Upload the signed verification certificate to the service. The service validates the verification certificate using the public portion of the CA certificate to be verified, thus proving that you are in possession of the CA certificate's private key.
 
-## Register the public part of an X.509 certificate and get a verification code
-
-To register a CA certificate with your provisioning service and get a verification code that you can use during proof-of-possession, follow these steps:
-
-1. In the Azure portal, navigate to your provisioning service and open **Certificates** from the left-hand menu.
-1. Select **Add** to add a new certificate.
-1. Enter a friendly display name for your certificate in the **Certificate name** field.
-Select the folder icon, then browse to the .cer or .pem file that represents the public part of your X.509 certificate. Select **Open**.
-1. Once you get a notification that your certificate is successfully uploaded, select **Save**. Your certificate shows in the **Certificate Explorer** list. The status of this certificate is *Unverified*.
-1. Select the certificate that you added in the previous step to open its details.
-1. In Certificate Details, notice that there's an empty **Verification code** field. Select **Generate Verification Code**.
-1. The provisioning service creates a **Verification Code** that you can use to validate the certificate ownership. Copy the code to your clipboard.
-
-## Digitally sign the verification code to create a verification certificate
-
-Now, you need to sign the verification code from DPS with the private key associated with your X.509 CA certificate, which generates a signature. This process is known as [Proof of possession](https://tools.ietf.org/html/rfc5280#section-3.1) and results in a signed verification certificate.
-
-Microsoft provides tools and samples that can help you create a signed verification certificate:
-
-* The Azure IoT Hub C SDK provides PowerShell (Windows) and Bash (Linux) scripts to help you create CA and leaf certificates for development and to perform proof-of-possession using a verification code. You can download the [files](https://github.com/Azure/azure-iot-sdk-c/tree/master/tools/CACertificates) relevant to your system to a working folder and follow the instructions in the [Managing CA certificates readme](https://github.com/Azure/azure-iot-sdk-c/blob/master/tools/CACertificates/CACertificateOverview.md) to perform proof-of-possession on a CA certificate.
-* The Azure IoT Hub C\# SDK contains the [Group Certificate Verification Sample](https://github.com/Azure/azure-iot-sdk-csharp/tree/main/provisioning/service/samples/how%20to%20guides/GroupCertificateVerificationSample), which you can use to do proof-of-possession.
-
-The PowerShell and Bash scripts provided in the documentation and SDKs rely on [OpenSSL](https://www.openssl.org/). You may also use OpenSSL or other third-party tools to help you do proof-of-possession. For an example using tooling provided with the SDKs, see [Create an X.509 certificate chain](/azure/iot-dps/tutorial-custom-hsm-enrollment-group-x509#create-an-x509-certificate-chain).
-
-## Upload the signed verification certificate
-
-To upload the resulting signature as a verification certificate to your provisioning service in the portal:
-
-* In Certificate Details on the Azure portal, where you copied the verification code from, select the folder icon next to the **Verification Certificate .pem or .cer file** field. Browse to the signed verification certificate from your system and select **Open**.
-* Once the certificate is successfully uploaded, select **Verify**. The STATUS of your certificate changes to *Verified* in the **Certificates** list. Select **Refresh** if it does not update automatically.
+For more information about certificate manual verification and proof-of-possession, see [How to verify X.509 CA certificates with your Device Provisioning Service](/azure/iot-dps/how-to-verify-certificates#manual-verification-of-intermediate-or-root-ca).
