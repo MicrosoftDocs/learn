@@ -41,7 +41,7 @@ You create a Deployment manifest file to deploy your application. The manifest f
 
 Kubernetes groups containers into logical structures called pods, which have no intelligence. Deployments add the missing intelligence to create your application.
 
-1. In Cloud Shell, create a manifest file for the Kubernetes Deployment called `deployment.yaml` using the `touch` command;
+1. In Cloud Shell, create a manifest file for the Kubernetes Deployment called `deployment.yaml` using the `touch` command:
 
     ```azurecli-interactive
     touch deployment.yaml
