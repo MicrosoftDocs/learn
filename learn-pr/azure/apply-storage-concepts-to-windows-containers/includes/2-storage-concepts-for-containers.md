@@ -9,7 +9,7 @@ All containers are created from container images. A container image is a bundle 
 - dependencies of your app
 - any other miscellaneous configuration files your app needs to run properly
 
-In a Windows environment, layers are stored using CimFS, and are supported on NTFS (New Technology File System), ReFS, or RefDisks for layer storage. You can change where the files are stored using the `docker-root`(or equivalent with containerd) configuration, but you shouldn't modify any files in the layer directories. They're carefully managed using docker (or equivalent commands).
+In a Windows environment, layers are stored using CimFS, and are supported on NTFS (New Technology File System), ReFS, or RefDisks for layer storage. You can change where the files are stored using the `docker-root`(or equivalent with container) configuration, but you shouldn't modify any files in the layer directories. They're carefully managed using docker (or equivalent commands).
 
 ## Persistent Storage
 
@@ -32,7 +32,7 @@ The following example shows the Docker command for creating a bind mount to fold
 
 Named volumes allow you to create a volume by name, assign it to a container, and reuse it later by the same name. Volumes give you a way of creating and managing a special location on the host dedicated to storing container data. You don't need to keep track of the actual path of where it was created, just the name.
 
-The Docker engine on Windows has a built-in named volume plugin that can create volumes on the local machine. If you want to use named volumes on multiple machines, an another plugin is required.
+The Docker engine on Windows has a built-in named volume plugin that can create volumes on the local machine. If you want to use named volumes on multiple machines, another plugin is required.
 
 The following example shows the docker commands to create and start a container named mycontainer that is mapped to the local volume `c:data`:
 
