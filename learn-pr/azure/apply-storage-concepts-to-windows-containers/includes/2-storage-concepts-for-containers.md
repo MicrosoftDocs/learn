@@ -1,17 +1,17 @@
 Windows containers by default use ephemeral storage (scratch space) for all input and output. Each container has its own scratch space, where all file creation and file writes are captured so they don't escape to the host. When a container instance is deleted, all changes that occurred in the scratch space are thrown away. When a new container instance is started, a new scratch space is provided for the instance.
 
-## Layer Storage
+## Layer storage
 
 All containers are created from container images. A container image is a bundle of files organized into a stack of layers (referred to as layer storage) that resides on your local machine or in a remote container registry. The container image consists of the user mode operating system files needed to:
 
-- support your app
-- any application runtime
-- dependencies of your app
-- any other miscellaneous configuration files your app needs to run properly
+- Support your app
+- Any application runtime
+- Dependencies of your app
+- Any other miscellaneous configuration files your app needs to run properly
 
 In a Windows environment, layers are stored using CimFS, and are supported on NTFS (New Technology File System), ReFS, or RefDisks for layer storage. You can change where the files are stored using the `docker-root`(or equivalent with container) configuration, but you shouldn't modify any files in the layer directories. They're carefully managed using docker (or equivalent commands).
 
-## Persistent Storage
+## Persistent storage
 
 You may have cases where your app needs to be able to persist data in a container. Or you may want to store files in a container that weren't included at container build-time. You can give persistent storage to your Windows containers in a couple of ways:
 
