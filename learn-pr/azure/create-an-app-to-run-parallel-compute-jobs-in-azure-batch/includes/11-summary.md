@@ -4,7 +4,7 @@ You've learned how you can use different libraries to integrate Azure Batch and 
 
 ## Clean up
 
-When working in your own subscription, the best practice at the end of a module is to decide whether or not you still need the resources you created. Resources left running can cost you money. You can delete resources one by one, or delete the resource group that holds the resources to delete the entire set.
+When you're working in your own subscription, the best practice at the end of a module is to decide whether or not you still need the resources you created. Resources left running can cost you money. You can delete resources one by one, or delete the resource group that holds the resources to delete the entire set.
 
 ## Learn more
 
