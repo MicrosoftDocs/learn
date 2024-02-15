@@ -163,7 +163,7 @@ By the end of this exercise, you'll have a working Batch process that can conver
 
 1. On the left menu, select **Jobs** under **Features**, then select **WinFFmpegJob**. On this page, you'll see the current status of the tasks.
 
-1. When the tasks have completed, return to the storage account your created in the first exercise.
+1. When the tasks have completed, return to the storage account you created in the first exercise.
 
 1. On the left menu, select **Containers** under **Data storage**, then select the **output** folder.
 
