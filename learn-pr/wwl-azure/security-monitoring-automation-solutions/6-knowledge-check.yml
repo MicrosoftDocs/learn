@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/28/2023
+  ms.date: 02/15/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -43,7 +43,7 @@ quiz:
       explanation: "Incorrect. Azure Storage account is used to retain log data longer than 90 days for audit, static analysis, or back up."
     - content: "Exporting Activity Logs to a file"
       isCorrect: false
-      explanation: "Incorrect. Exporting Activity Logs to a file does not enable the Azure Monitor Logs feature, which allows correlating activity log data with other monitoring data collected by Azure Monitor."
+      explanation: "Incorrect. Exporting Activity Logs to a file doesn't enable the Azure Monitor Logs feature, which allows correlating activity log data with other monitoring data collected by Azure Monitor."
     - content: "Sending the activity log to a Log Analytics workspace"
       isCorrect: true
       explanation: "Correct. Sending the activity log to a Log Analytics workspace enables the Azure Monitor Logs feature, where you can correlate activity log data with other monitoring data collected by Azure Monitor. You can also consolidate log entries from multiple Azure subscriptions and tenants into one location for analysis together. Use log queries to perform complex analysis and gain deep insights on activity log entries. Use log alerts with Activity entries for more complex alerting logic. Store activity log entries for longer than the activity log retention period. Incur no data ingestion or retention charges for activity log data stored in a Log Analytics workspace."
@@ -51,21 +51,21 @@ quiz:
     choices:
     - content: "Microsoft Defender for Cloud"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Defender for Cloud provides recommendations for improving the security posture of Azure resources, but it does not assess the current security posture."
+      explanation: "Incorrect. Microsoft Defender for Cloud provides recommendations for improving the security posture of Azure resources, but it doesn't assess the current security posture."
     - content: "Azure Policy"
       isCorrect: false
-      explanation: "Incorrect. Azure Policy is used to enforce compliance with organizational standards and policies, but it does not assess the current security posture."
+      explanation: "Incorrect. Azure Policy is used to enforce compliance with organizational standards and policies, but it doesn't assess the current security posture."
     - content: "Azure Advisor"
       isCorrect: true
       explanation: "Correct. Azure Advisor assesses the security posture of Azure resources and provides recommendations for improving security, performance, and cost optimization."
-  - content: "A company wants to ensure that their Azure resources are secure and stable. What service can they use to automate the creation and teardown of environments to achieve this goal?"
+  - content: "A security analyst is creating a playbook in Microsoft Sentinel. They want to automate the response to an incident or alert. What is the next step they should take after defining the trigger, conditions, and actions in the playbook?"
     choices:
-    - content: "Azure Policy"
+    - content: "Add additional logic to the steps using a library of functions"
       isCorrect: false
-      explanation: "Incorrect. Azure Policy is used to enforce compliance with organizational standards and policies, but it does not assess the current security posture."
-    - content: "Microsoft Defender for Cloud"
+      explanation: "Incorrect. The security analyst can add additional logic to the steps using a library of functions while defining the trigger, conditions, and actions in the playbook."
+    - content: "Create a new automation rule"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Defender for Cloud provides recommendations for improving the security posture of Azure resources, but it does not assess the current security posture."
-    - content: "Azure DevTest Labs"
+      explanation: "Incorrect. The security analyst should create an automation rule before defining the trigger, conditions, and actions in the playbook."
+    - content: "Determine the criteria under which the playbook will run and set up the automation mechanism that will run it when those criteria are met"
       isCorrect: true
-      explanation: "Correct. Azure DevTest Labs enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      explanation: "Correct. After defining the trigger, conditions, and actions in the playbook, the security analyst should determine the criteria under which the playbook will run and set up the automation mechanism that will run it when those criteria are met by creating an automation rule."
