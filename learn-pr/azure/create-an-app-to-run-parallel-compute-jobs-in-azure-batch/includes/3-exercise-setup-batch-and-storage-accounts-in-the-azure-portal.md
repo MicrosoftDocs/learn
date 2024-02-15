@@ -43,7 +43,7 @@ In order to create batch workloads, we need to create an account within the Batc
 
     :::image type="content" source="../media/3-batch-account-create.png" alt-text="Screenshot that shows the new batch account form.":::
 
-1. Select an existing resource group, or create a new one for the resource we're adding in this module. To simplify cleanup once you've finished with this module, we recommend creating a new resource group. Note the name of the resource group you're using; you'll need it hroughout these exercises.
+1. Select an existing resource group, or create a new one for the resource we're adding in this module. To simplify cleanup once you've finished with this module, we recommend creating a new resource group. Note the name of the resource group you're using; you'll need it throughout these exercises.
 
 1. In the **Account name** field, enter a unique name.
 
