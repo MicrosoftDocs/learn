@@ -2,7 +2,7 @@ You may find it necessary to deprovision devices that were previously autoprovis
 
 In general, deprovisioning a device involves two steps:
 
-* Disenroll the device from your Device Provisioning Service, to prevent future autoprovisioning. Depending on whether you want to revoke access temporarily or permanently, you may want to either disable or delete an enrollment entry. For devices that use X.509 attestation, you may want to disable/delete an entry in the hierarchy of your existing enrollment groups.
+* Disenroll the device from your Device Provisioning Service, to prevent future autoprovisioning. Depending on whether you want to revoke access temporarily or permanently, you may want to either disable or delete an enrollment entry. For devices that use X.509 attestation, you may want to disable/delete an entry in the hierarchy of your existing enrollment groups. Disenrollment is described in more detail on the next unit page.
 * Deregister the device from your Azure IoT Hub, to prevent future communications and data transfer. Again, you can temporarily disable or permanently delete the device's entry in the identity registry for the Azure IoT Hub where it was provisioned.
 
 The exact steps you take to deprovision a device depend on its attestation mechanism and its applicable enrollment entry with your provisioning service.
@@ -19,6 +19,8 @@ To deprovision a device that has an individual enrollment:
 
    * For devices that use TPM attestation, delete the individual enrollment entry to permanently revoke the device's access to the Device Provisioning Service, or disable the entry to temporarily revoke its access.
    * For devices that use X.509 attestation, you can either delete or disable the entry. Be aware, though, if you delete an individual enrollment for a device that uses X.509 and an enabled enrollment group exists for a signing certificate in that device's certificate chain, the device can re-enroll. For such devices, it may be safer to disable the enrollment entry. Doing so prevents the device from re-enrolling, regardless of whether an enabled enrollment group exists for one of its signing certificates.
+
+     Disenrollment is described in more detail on the next unit page.
 
 1. Disable or delete the device in the identity registry of the Azure IoT hub that it was provisioned to.
 
@@ -49,8 +51,6 @@ With enrollment groups, there are two scenarios to consider:
 
        * If you have the device (end-entity) certificate, you can create a disabled X.509 individual enrollment.
        * If you don't have the device certificate, you can create a disabled symmetric key individual enrollment based on the device ID in the registration record for that device.
-
-       To learn more, see [Disallow specific devices in an enrollment group](/azure/iot-dps/how-to-revoke-device-access-portal#disallow-specific-devices-from-an-x509-enrollment-group).
 
        The presence of a disabled individual enrollment for a device revokes access to the provisioning service for that device while still permitting access for other devices that have the enrollment group's signing certificate in their chain. Don't delete the disabled individual enrollment for the device. Doing so allows the device to re-enroll through the enrollment group.
 
