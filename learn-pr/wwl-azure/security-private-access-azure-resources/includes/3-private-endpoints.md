@@ -62,7 +62,8 @@ You can connect to a private-link resource by using the following connection app
 
 **Manually request**: Use this method when you don't have the required permissions and want to request access. An approval workflow is initiated. The private endpoint and later private-endpoint connections are created in a *Pending* state. The private-link resource owner is responsible to approve the connection. After it's approved, the private endpoint is enabled to send traffic normally, as shown in the following approval workflow diagram:<br>
 
-## :::image type="content" source="../media/private-link-workflow-2f1e37e7.png" alt-text="Diagram showing an example of a private link platform as a service workflow."::: 
+:::image type="content" source="../media/private-link-workflow-2f1e37e7.png" alt-text="Diagram showing an example of a private link platform as a service workflow.":::
+
 
 Over a private-endpoint connection, a private-link resource owner can:
 
@@ -95,9 +96,9 @@ The following information lists the known limitations to the use of private endp
 
 ## Static IP address
 
-| **Limitation**                                         | **Description**                                                                                                                            |
-| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| Static IP address configuration currently unsupported. | Azure Kubernetes Service (AKS)<br>Azure Application Gateway<br>HD Insight<br>Recovery Services Vaults<br>Third party Private Link services |
+| **Limitation**                                         | **Description**                                                                                                                           |
+| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Static IP address configuration currently unsupported. | Azure Kubernetes Service (AKS)<br>Azure Application Gateway<br>HDInsight<br>Recovery Services Vaults<br>Third party Private Link services |
 
 ## Network security group
 

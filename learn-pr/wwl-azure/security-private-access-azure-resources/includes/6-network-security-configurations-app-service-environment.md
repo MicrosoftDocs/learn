@@ -74,7 +74,7 @@ With an External ASE, you can configure a IP-based TLS/SSL binding for your app 
 
 ## Front-end scaling
 
-When you scale out your App Service plans, workers are automatically added to support them. Every ASE is created with two front ends. The front ends automatically scale out at a rate of one front end for every set of 15 App Service plan instances. For example, if you have three App Service plans with five instances each, you'd have a total of 15 instances and three front ends. If you scale to a total of 30 instances, you have four front ends. This pattern continues as you scale out.
+When you scale out your App Service plans, workers are automatically added to support them. Every ASE is created with two front ends. The front ends automatically scale- out at a rate of one front end for every set of 15 App Service plan instances. For example, if you have three App Service plans with five instances each, you'd have a total of 15 instances and three front ends. If you scale to a total of 30 instances, you have four front ends. This pattern continues as you scale out.
 
 The number of front ends that are allocated by default is good for a moderate load. You can lower the ratio to as little as one front end for every five instances. You can also change the size of the front ends. By default, they're single core. In the Azure portal, you can change their size to two or four cores instead.<br>
 
@@ -94,7 +94,7 @@ In an ILB ASE, the domain suffix used for app creation is .&lt;asename&gt;.appse
  -  contoso.ilb-ase.appserviceenvironment.net
  -  contoso.scm.ilb-ase.appserviceenvironment.net
 
-The Software Configuration Management (SCM) URL is used to access the Kudu console or for publishing your app by using Web Deploy. The Kudu console gives you a web UI for debugging, uploading files, editing files, and much more.<br>
+The Software Configuration Management (SCM) URL is used to access the Kudu console or publishing your app by using Web Deploy. The Kudu console gives you a web UI for debugging, uploading files, editing files, and much more.<br>
 
 ## DNS configuration
 
@@ -117,7 +117,7 @@ To configure DNS in Azure DNS Private zones:
 
 The DNS settings for your ASE default domain suffix do not restrict your apps to only being accessible by those names. You can set a custom domain name without any validation on your apps in an ILB ASE. If you then want to create a zone named contoso.net, you could do so and point it to the ILB IP address. The custom domain name works for app requests but doesn't for the scm site. The scm site is only available at &lt;appname&gt;.scm.&lt;asename&gt;.appserviceenvironment.net.
 
-The zone named .&lt;asename&gt;.appserviceenvironment.net is globally unique. Before May 2019, customers were able to specify the domain suffix of the ILB ASE. If you wanted to use .contoso.com for the domain suffix, you were able do so and that would include the scm site. There were challenges with that model including; managing the default TLS/SSL certificate, lack of single sign-on with the scm site, and the requirement to use a wildcard certificate. The ILB ASE default certificate upgrade process was also disruptive and caused application restarts. To solve these problems, the ILB ASE behavior was changed to use a domain suffix based on the name of the ASE and with a Microsoft owned suffix. The change to the ILB ASE behavior only affects ILB ASEs made after May 2019. Pre-existing ILB ASEs must still manage the default certificate of the ASE and their DNS configuration. If your ILB ASE V2 was created after May 2019, you do not need to manage the ILB default certificate as it is managed by Microsoft.<br>
+The zone named .&lt;asename&gt;.appserviceenvironment.net is globally unique. Before May 2019, customers were able to specify the domain suffix of the ILB ASE. If you wanted to use .contoso.com for the domain suffix, you were able do so and that would include the scm site. There were challenges with that model including; managing the default TLS/SSL certificate, lack of single sign-on with the scm site, and the requirement to use a wildcard certificate. The ILB ASE default certificate upgrade process was also disruptive and caused application restarts. To solve these problems, the ILB ASE behavior was changed to use a domain suffix based on the name of the ASE and with a Microsoft owned suffix. The change to the ILB ASE behavior only affects ILB ASEs made after May 2019. Pre-existing ILB ASEs must still manage the default certificate of the ASE and their DNS configuration. If your ILB ASE V2 was created after May 2019, you did not need to manage the ILB default certificate as it is managed by Microsoft.<br>
 
 ## Publishing
 
@@ -176,7 +176,7 @@ To enable logging on your ASE:
 4.  Select and configure the log destinations that you want.
 5.  Select AppServiceEnvironmentPlatformLogs.
 
-:::image type="content" source="../media/azure-network-watcher-dashboard-52d9ebe8.png" alt-text="Screenshot showing the diagnostic settings page":::
+:::image type="content" source="../media/azure-network-watcher-dashboard-52d9ebe8.png" alt-text="Screenshot showing the diagnostic settings page.":::
 
 
 If you integrate with Log Analytics, you can see the logs by selecting Logs from the ASE portal and creating a query against AppServiceEnvironmentPlatformLogs. Logs are only emitted when your ASE has an event that will trigger it. If your ASE doesn't have such an event, there won't be any logs. To quickly see an example of logs in your Log Analytics workspace, perform a scale operation with one of the App Service plans in your ASE. You can then run a query against AppServiceEnvironmentPlatformLogs to see those logs.
@@ -202,7 +202,7 @@ If you have multiple ASEs, you might want some ASEs to be upgraded before others
 
 Select the value desired and select Save. The default for any ASE is None.
 
-:::image type="content" source="../media/application-service-environment-configuration-page-0f23112f.png" alt-text="Screenshot showing the application service environment configuraton page.":::
+:::image type="content" source="../media/application-service-environment-configuration-page-0f23112f.png" alt-text="Screenshot showing the application service environment configuration page.":::
 
 
 The upgradePreferences feature makes the most sense when you have multiple ASEs because your "Early" ASEs will be upgraded before your "Late" ASEs. When you have multiple ASEs, you should set your development and test ASEs to be "Early" and your production ASEs to be "Late".
