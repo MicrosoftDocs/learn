@@ -4,11 +4,12 @@ title: Use data bindings in XAML
 metadata:
   title: Use data bindings in XAML
   description: In this unit, you'll learn about how to declare and use data bindings in XAML.
-  ms.date: 11/22/2023
+  ms.date: 02/15/2024
   author: adegeo
   ms.author: adegeo
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet-maui
+  ms.topic: module-standard-task-based
+  ms.service: dotnet-mobile
+  ms.subservice: dotnet-maui
 durationInMinutes: 6
 content: |
   [!include[](./includes/3-use-data-bindings-xaml.md)]

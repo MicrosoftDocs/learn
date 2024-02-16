@@ -4,11 +4,12 @@ title: Data binding with mismatched types
 metadata:
   title: Data binding with mismatched types
   description: Learn how to data binding between two mismatched property types.
-  ms.date: 01/25/2024
+  ms.date: 02/15/2024
   author: adegeo
   ms.author: adegeo
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet-maui
+  ms.topic: module-standard-task-based
+  ms.service: dotnet-mobile
+  ms.subservice: dotnet-maui
 durationInMinutes: 10
 content: |
   [!include[](./includes/5-databinding-mismatched-types.md)]
