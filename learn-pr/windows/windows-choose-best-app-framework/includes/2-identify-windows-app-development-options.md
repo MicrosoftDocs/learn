@@ -28,7 +28,7 @@ Windows Forms is popular choice for system utility apps or line-of-business appl
 
 WinUI 3 is the native UI platform component that ships with the Windows App SDK. Unlike its predecessor UWP, Windows App SDK APIs are decoupled from the Windows SDKs. The Windows App SDK provides a set of APIs and tools that are used to create desktop apps for Windows. The Windows App SDK can be used to create applications on Windows 11 and downlevel to Windows 10, version 1809.
 
-WinUI apps incorporate Fluent design, providing the look-and-feel in-box Windows apps. WinUI 3 apps can be written in C# or C++. The XAML UI framework feels familiar to Windows developers who are experienced in WPF development. It's a great choice if the current feature set meets your requirements, and the ongoing development efforts in the framework regularly provide new features and functionality.
+WinUI apps incorporate Fluent design, providing the look-and-feel in-box Windows apps. WinUI 3 apps can be written in C# or C++. The XAML UI framework feels familiar to Windows developers who are experienced in WPF development. It's a great choice if the current feature set meets your requirements, and the ongoing development efforts in the framework regularly provide new features and functionality. WinUI is currently positioned as the framework of choice for independent software vendors (ISVs) who want to build first-class Windows applications.
 
 The Fluent design principles aren't just a set of styles and themes. They also include accessibility and the overall user experience when interacting with the application. WinUI embodies all that. WPF might be able to match the style but may not go all the way if the best of the best in user experience is a requirement.
 
