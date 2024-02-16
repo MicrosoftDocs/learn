@@ -16,7 +16,7 @@ The content in the module helps you prepare for the certification exam SC-100: M
 
 ## Security Control: Endpoint security
 
-This section provides a summary of the security controls for [Endpoint security from the Microsoft cloud security benchmark](https://learn.microsoft.com/security/benchmark/azure/mcsb-endpoint-security).
+This section provides a summary of the security controls for [Endpoint security from the Microsoft cloud security benchmark](/security/benchmark/azure/mcsb-endpoint-security).
 
 Endpoint Security covers controls in endpoint detection and response, including use of endpoint detection and response (EDR) and anti-malware service for endpoints in cloud environments.
 
@@ -27,7 +27,7 @@ In the summary below, we have included controls from the full baseline where:
 * Security controls were *supported* but *not* enabled by default
 * There was explicit guidance which contained action to be taken on the part of the customer
 <!-- 
-[](https://learn.microsoft.com/security/benchmark/azure/mcsb-endpoint-security#es-1-use-endpoint-detection-and-response-edr)
+[](/security/benchmark/azure/mcsb-endpoint-security#es-1-use-endpoint-detection-and-response-edr)
 -->
 
 ### ES-1: Use Endpoint Detection and Response (EDR)

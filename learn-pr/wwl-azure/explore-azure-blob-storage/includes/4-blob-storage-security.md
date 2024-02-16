@@ -27,7 +27,7 @@ You can rely on Microsoft-managed keys for the encryption of your storage accoun
 
 The following table compares key management options for Azure Storage encryption.
 
-|  | Microsoft-managed keys | Customer-managed keys | Customer-provided keys |
+| -- | Microsoft-managed keys | Customer-managed keys | Customer-provided keys |
 |--|--|--|--|
 | Encryption/decryption operations | Azure | Azure | Azure |
 | Azure Storage services supported | All | Blob storage, Azure Files | Blob storage |

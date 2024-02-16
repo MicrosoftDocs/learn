@@ -1,4 +1,4 @@
-An Azure AI resource can host one or more *projects*. Each project encapsulates the tools and assets used to create a specific AI solution. For example, you might create a project to enable data scientists and developers to collaborate on building a custom copilot for a business application or process.
+An Azure AI hub can host one or more *projects*. Each project encapsulates the tools and assets used to create a specific AI solution. For example, you might create a project to enable data scientists and developers to collaborate on building a custom copilot for a business application or process.
 
 ![Screenshot of a project in Azure AI Studio.](../media/azure-ai-project.png)
 

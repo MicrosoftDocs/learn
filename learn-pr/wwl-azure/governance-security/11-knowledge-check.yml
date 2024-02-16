@@ -4,27 +4,18 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/28/2023
+  ms.date: 02/12/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/11-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A company wants to automate the creation and teardown of environments to deliver secure and stable application hosting platforms. Which of the following options enables this?"
-    choices:
-    - content: "EncipherOnly"
-      isCorrect: false
-      explanation: "Incorrect. EncipherOnly is a key usage option that allows only encryption operations."
-    - content: "KeyCertSign"
-      isCorrect: false
-      explanation: "Incorrect. KeyCertSign is a key usage option that allows signing of certificates."
-    - content: "KeyEncipherment"
-      isCorrect: true
-      explanation: "Correct. KeyEncipherment is a key usage option that enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
   - content: "A company wants to ensure protection against accidental or malicious deletion of their secrets. What feature should they configure on their key vault?"
     choices:
     - content: "Configure soft delete and purge protection features on their secrets"
@@ -47,25 +38,36 @@ quiz:
     - content: "Policy Assignment"
       isCorrect: true
       explanation: "Correct. Policy Assignment allows assignment of a policy or initiative to the subscription the blueprint is assigned to, ensuring only approved changes can be made to the environment."
-  - content: "A company wants to enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms. Which Azure service can they use for this purpose?"
+  - content: "A company wants to ensure that their development teams can rapidly build and start up new environments with trust they're building within organizational compliance. Which Azure service enables cloud architects and central information technology groups to define a repeatable set of Azure resources that implements and adheres to an organization's standards, patterns, and requirements?"
     choices:
-    - content: "Azure Cosmos DB"
+    - content: "Azure Resource Manager templates"
       isCorrect: false
-      explanation: "Incorrect. Azure Cosmos DB is a globally distributed, multi-model database service."
-    - content: "Azure Functions"
+      explanation: "Incorrect. Azure Resource Manager templates are documents that get used for deployments of one or more Azure resources, but once those resources deploy there's no active connection or relationship to the template."
+    - content: "Azure Policy"
       isCorrect: false
-      explanation: "Incorrect. Azure Functions is a serverless compute service that enables you to run event-triggered code without having to explicitly provision or manage infrastructure."
-    - content: "Azure DevTest Labs"
+      explanation: "Incorrect. Azure Policy is a default allow and explicit deny system focused on resource properties during deployment and for already existing resources."
+    - content: "Azure Blueprints"
       isCorrect: true
-      explanation: "Correct. Azure DevTest Labs enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-  - content: "A company wants to ensure that their application hosting platforms are secure and stable. What enables the automation and validation of the creation and teardown of environments to help deliver this?"
+      explanation: "Correct. Azure Blueprints enables cloud architects and central information technology groups to define a repeatable set of Azure resources that implements and adheres to an organization's standards, patterns, and requirements. It makes it possible for development teams to rapidly build and start up new environments with trust they're building within organizational compliance."
+  - content: "A security administrator needs to ensure that cryptographic keys are regularly updated to enhance security. Which of the following Azure Key Vault configurations should be implemented to achieve this goal?"
     choices:
-    - content: "A firewall"
+    - content: "Implement backup and recovery processes for certificates, secrets, and keys"
       isCorrect: false
-      explanation: "Incorrect. A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules."
-    - content: "An antivirus software"
+      explanation: "Incorrect. Backup and recovery processes ensure data resilience and availability, but they do not address key rotation."
+    - content: "Configure access to Key Vault using Azure Role Based Access Control (RBAC)"
       isCorrect: false
-      explanation: "Incorrect. An antivirus software is a program designed to prevent, detect, and remove malware from computer systems."
-    - content: "A built-in policy"
+      explanation: "Incorrect. RBAC is used to control permissions effectively, but it does not address key rotation."
+    - content: "Configure key rotation to enhance security by regularly updating cryptographic keys"
       isCorrect: true
-      explanation: "Correct. A built-in policy enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      explanation: "Correct. Key rotation enhances security by regularly updating cryptographic keys."
+  - content: "A company needs to store cryptographic keys in a FIPS 140-2 Level 3 validated HSM. Which Azure service can they use?"
+    choices:
+    - content: "Azure Key Vault Managed HSM"
+      isCorrect: false
+      explanation: "Incorrect. Azure Key Vault Managed HSM currently uses FIPS 140-2 Level 2 validated HSMs."
+    - content: "Azure Security Center"
+      isCorrect: false
+      explanation: "Incorrect. Azure Security Center is a unified infrastructure security management system that strengthens the security posture of your data centers and provides advanced threat protection across hybrid workloads."
+    - content: "Azure Dedicated HSM"
+      isCorrect: true
+      explanation: "Correct. Azure Dedicated HSM is an Azure service that provides cryptographic key storage in Azure and meets the most stringent security requirements, including FIPS 140-2 Level 3 validation."

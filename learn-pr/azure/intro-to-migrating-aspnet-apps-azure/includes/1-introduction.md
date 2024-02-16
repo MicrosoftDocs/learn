@@ -1,6 +1,6 @@
-Migrating a Microsoft ASP.NET application from on-premises to Microsoft Azure, along with a supporting Azure SQL database, can provide many advantages, but also challenges. Learn how to evaluate the migration process to determine if it’s right for your application.
+Migrating a Microsoft ASP.NET application from on-premises to Microsoft Azure, along with a supporting Azure SQL database, can provide many advantages, but also challenges. In this module, you'll learn how to evaluate the migration process to determine if it’s right for your application.
 
-Tailwind Traders has hosted web applications on its own internal infrastructure by using servers running Windows Server, Internet Information Services (IIS), and Microsoft SQL Server. Beyond the initial effort and costs, these applications incur ongoing maintenance costs in terms of hardware, operating system updates, and licensing costs. These maintenance costs make Microsoft Azure App Service an attractive alternative.
+Imagine that you work for Tailwind Traders, which has hosted web applications on its own internal infrastructure by using servers running Windows Server, Internet Information Services (IIS), and Microsoft SQL Server. Beyond the initial effort and costs, these applications incur ongoing maintenance costs in terms of hardware, operating system updates, and licensing costs. These maintenance costs make Microsoft Azure App Service an attractive alternative.
 
 You might be considering the option of migrating Microsoft ASP.NET applications and any associated SQL Server databases to Azure App Service and Azure SQL Database. Before proceeding with the actual process of migrating apps and data, you should carefully consider and assess your existing environment, apps, and requirements to ensure a successful migration.
 
@@ -12,10 +12,10 @@ By the end of this module, you’ll be able to identify the various migration-as
 
 After completing this module, you'll be able to:
 
-- Assess application migration considerations
-- Determine which tools can help evaluate existing infrastructure
-- Evaluate key findings to plan a migration
-- Decide if migration is the right choice
+- Assess application migration considerations.
+- Determine which tools can help evaluate existing infrastructure.
+- Evaluate key findings to plan a migration.
+- Decide if migration is the right choice.
 
 ## Prerequisites
 

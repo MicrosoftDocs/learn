@@ -9,7 +9,7 @@ metadata:
   ms.author: cacaste
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.service: azure
 durationInMinutes: 10
 content: |
   [!include[](includes/7-exercise-check-services-configuration.md)]
