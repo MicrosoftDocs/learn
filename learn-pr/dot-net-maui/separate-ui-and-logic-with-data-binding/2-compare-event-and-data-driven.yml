@@ -3,7 +3,7 @@ uid: learn.dotnet-maui.separate-ui-and-logic-with-data-binding.2-compare-event-a
 title: Compare an event-driven UI to a data-bound UI 
 metadata:
   title: Compare an event-driven UI to a data-bound UI
-  description: In this unit you'll compare an event-driven UI to a data-bound UI.
+  description: In this unit, you'll compare an event-driven UI to a data-bound UI.
   ms.date: 12/12/2023
   author: adegeo
   ms.author: adegeo
@@ -21,8 +21,8 @@ quiz:
       content: "You never have to write code related to your UI again."
       explanation: "While you could design a code-less UI, you don't have to, and it's not the most important feature of data binding. Data binding is beneficial because it provides a system where you have real-time updates to the UI when the underlying data changes."
     - isCorrect: true
-      content: "The UI is automatically kept in sync with the data"
-      explanation: "One benefit of adding data binding your UI is it keeps the UI elements in sync with the properties of the data object. It also helps seperate app logic from app presentation."
+      content: "The UI is automatically kept in sync with the data."
+      explanation: "One benefit of adding data binding your UI, is that it keeps the UI elements in sync with the properties of the data object. It also helps separate app logic from app presentation."
   - content: "In an app that retrieves the latest weather, a label control that represents the temperature is bound to the data object. When the user presses the \"Get Weather\" button, triggering the `Clicked` event, what would the event handler code do to update the UI?"
     choices:
     - isCorrect: true

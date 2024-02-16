@@ -3,7 +3,7 @@ uid: learn.dotnet-maui.separate-ui-and-logic-with-data-binding.3-use-data-bindin
 title: Use data bindings in XAML
 metadata:
   title: Use data bindings in XAML
-  description: In this unit you'll learn about how to declare and use data bindings in XAML.
+  description: In this unit, you'll learn about how to declare and use data bindings in XAML.
   ms.date: 11/22/2023
   author: adegeo
   ms.author: adegeo
@@ -22,7 +22,7 @@ quiz:
       explanation: "The source object can be any type."
     - isCorrect: false
       content: "It must be a `BindableObject`."
-      explanation: "The source doesn't need to be a `BindableObject`"
+      explanation: "The source doesn't need to be a `BindableObject`."
     - isCorrect: false
       content: "It must be a subclass of `View`."
       explanation: "The source doesn't need to be a `View`."

@@ -15,17 +15,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "To display and format a simple value in data binding, which is the best approach?"
+  - content: "To display and format a value as a string in data binding, which is the best approach?"
     choices:
     - isCorrect: false
       content: "Expose a secondary property that formats the value as a string."
-      explanation: "While you could do this, you end up exposing a string for a single purpose. If you wanted to show that value elsewhere, you would have ot create another property formated for that specific scenario."
+      explanation: "While you could create a new property, you end up exposing a string for a single purpose. If you wanted to show that value elsewhere, you would have to create another property formatted for that specific scenario."
     - isCorrect: true
       content: "Use the StringFormat binding property."
-      explanation: "This is the best option. You format the data for the specific binding, which can be changed based on how the UI is displaying the data."
+      explanation: "You format the data with the binding. This option makes it easy to change the string format based on how the UI displays the data."
     - isCorrect: false
       content: "Use a binding converter."
-      explanation: "This is usually not the correct approach. Binding converters are used when you have additional logic in converting a value to a string."
+      explanation: "Using a converter in this scenario is usually not the correct approach. Binding converters are used when you have extra logic in converting a value to a string."
   - content: "Which type is used in data binding conversion?"
     choices:
     - isCorrect: true
@@ -33,7 +33,7 @@ quiz:
       explanation: "This interface is used by the data binding system and you implement it to create your own data conversion classes."
     - isCorrect: false
       content: "IConvertible"
-      explanation: "This is an interface provided by the base class library that converts an object to different value type representations."
+      explanation: "This interface is provided by the base class library, and converts an object to different value type representations. The class isn't usable as a XAML binding converter."
     - isCorrect: false
       content: "TypeConverter"
       explanation: "This class is used by Windows Forms for data conversion. It isn't used by .NET MAUI."

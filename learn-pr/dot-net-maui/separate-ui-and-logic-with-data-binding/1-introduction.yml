@@ -3,7 +3,7 @@ uid: learn.dotnet-maui.separate-ui-and-logic-with-data-binding.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Move app logic to a objects that are bound to the apps UI. Data bindings can make your code faster to read, easier to maintain, and more testable.
+  description: Move app logic to objects that are bound to the apps UI. Data bindings can make your code faster to read, easier to maintain, and more testable.
   ms.date: 11/22/2023
   author: adegeo
   ms.author: adegeo
