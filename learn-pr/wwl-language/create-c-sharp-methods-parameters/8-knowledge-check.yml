@@ -36,10 +36,10 @@ quiz:
       explanation: "Incorrect. `false` needs to be a named argument using the parameter name `member`."
   - content: "Given the following method signature, `void SetHealth(string health)`, why don't operations inside the method affect the original input string `health`?"
     choices:
-    - content: "The `string` data type is pass by value"
+    - content: "The `string` data type is pass by value."
       isCorrect: false
       explanation: "Incorrect. Strings are pass by reference, but they're immutable so the value can't be altered once assigned."
-    - content: "The method code must be incorrect"
+    - content: "The method code must be incorrect."
       isCorrect: false
       explanation: "Incorrect. Strings are pass by reference, but they're immutable so the value can't be altered once assigned."
     - content: "Strings can't be altered once assigned, they can only be overwritten with a new value."
