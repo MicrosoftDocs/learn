@@ -23,7 +23,7 @@ quiz:
     - isCorrect: true
       content: "The UI is automatically kept in sync with the data"
       explanation: "One benefit of adding data binding your UI is it keeps the UI elements in sync with the properties of the data object. It also helps seperate app logic from app presentation."
-  - content: "In an app that retrieves the latest weather, a label control that represents the temperature is bound to the data object. When the user presses the \"Get Weather\" button, triggering the `Clicked` event, what would a data-bound app do to update the UI?"
+  - content: "In an app that retrieves the latest weather, a label control that represents the temperature is bound to the data object. When the user presses the \"Get Weather\" button, triggering the `Clicked` event, what would the event handler code do to update the UI?"
     choices:
     - isCorrect: true
       content: "From the event handler, invoke the weather service and update the weather data object with the latest information."

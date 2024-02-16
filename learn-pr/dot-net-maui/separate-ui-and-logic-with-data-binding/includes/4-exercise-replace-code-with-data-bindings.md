@@ -96,28 +96,27 @@ Now that the code-behind sets the binding context for the page, you can add the 
     <Label x:Name="lblWind" Grid.Row="4" Grid.Column="1" Text="{Binding Wind}" />
     ```
 
+01. Within the `<Grid>` of controls that lists all of the weather details, remove all of the `x:Name="..."` attributes.
+
+    The names aren't required now that the controls aren't referenced in the code-behind.
+
 01. Verify that your XAML bindings match the following snippet:
 
     ```xaml
     <Grid Grid.Row="2" RowDefinitions="Auto, Auto, Auto, Auto, Auto" ColumnDefinitions="Auto, Auto" Margin="0,5,0,0">
         <Label Grid.Row="0" Grid.Column="0" Text="Condition" VerticalOptions="Center" />
-        <Image x:Name="imgCondition" Grid.Row="0" Grid.Column="1" HeightRequest="25" WidthRequest="25" Source="question.png" HorizontalOptions="Start" />
+        <Image Grid.Row="0" Grid.Column="1" HeightRequest="25" WidthRequest="25" Source="question.png" HorizontalOptions="Start" />
         <Label Grid.Row="1" Grid.Column="0" Text="Temperature" Margin="0,0,20,0" />
-        <Label x:Name="lblTemperature" Grid.Row="1" Grid.Column="1" Text="{Binding Temperature}" />
+        <Label Grid.Row="1" Grid.Column="1" Text="{Binding Temperature}" />
         <Label Grid.Row="2" Grid.Column="0" Text="Humidity" Margin="0,0,20,0" />
-        <Label x:Name="lblHumidity" Grid.Row="2" Grid.Column="1" Text="{Binding Humidity}" />
+        <Label Grid.Row="2" Grid.Column="1" Text="{Binding Humidity}" />
         <Label Grid.Row="3" Grid.Column="0" Text="Precipitation" Margin="0,0,20,0" />
-        <Label x:Name="lblPrecipitation" Grid.Row="3" Grid.Column="1" Text="{Binding Precipitation}" />
+        <Label Grid.Row="3" Grid.Column="1" Text="{Binding Precipitation}" />
         <Label Grid.Row="4" Grid.Column="0" Text="Wind" Margin="0,0,20,0" />
-        <Label x:Name="lblWind" Grid.Row="4" Grid.Column="1" Text="{Binding Wind}" />
+        <Label Grid.Row="4" Grid.Column="1" Text="{Binding Wind}" />
     </Grid>
     ```
 
 01. Run the app and press the **Refresh** button. The app works almost like the original.
 
-Notice that the icon representing the **Condition** doesn't update from the question mark to a sun or cloud icon. And if you press the **Use Celsius** switch, the celsius value changes but if you refresh the weather, the **Temperature** label no longer updates. These bugs exist for the following reasons:
-
-- The icon is an image resource that was chosen in code based on the `WeatherData.Condition` enumeration value. The image resource isn't something we can bind to without some extra effort.
-- The **Temperature** binding breaks when the **Use Celsius** switch is pressed because the code-behind for the switch directly sets the `Text` property of the label control. This action removes the binding associated with that property. So when the latest weather is fetched and the `BindingContext` updated, the **Temperature** isn't updated because there isn't a binding associated with the data.
-
-These bugs are fixed in the next exercise after you learn more about bindings.
+Notice that the icon representing the **Condition** doesn't update from the question mark to a sun or cloud icon. Why doesn't the icon change? Because the icon is an image resource that was chosen in code based on the `WeatherData.Condition` enumeration value. The enumeration value can't be changed to an image resource without some extra effort This is fixed in the next exercise after you learn more about bindings.

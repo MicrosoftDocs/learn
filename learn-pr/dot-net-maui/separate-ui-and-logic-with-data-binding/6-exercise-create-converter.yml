@@ -3,7 +3,7 @@ uid: learn.dotnet-maui.separate-ui-and-logic-with-data-binding.6-exercise-create
 title: Exercise - Create a .NET MAUI converter
 metadata:
   title: Exercise - Create a .NET MAUI converter
-  description: Learn how to create two different converters. One that converts an enumeration to an image resource, and another that converts between Celsius and Fahrenheit.
+  description: Learn how to implement a converter that converts an enumeration to an image resource.
   ms.date: 01/28/2024
   author: adegeo
   ms.author: adegeo

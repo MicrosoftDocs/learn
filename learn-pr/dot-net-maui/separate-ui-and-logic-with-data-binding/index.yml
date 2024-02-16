@@ -20,7 +20,7 @@ prerequisites: |
   - Visual Studio 2022 with the **.NET Multi-platform App UI development** workload installed. 
   - Familiarity with intermediate programming concepts like interfaces, classes, and attributes.
   - Ability to write XAML code.
-iconUrl: //TODO
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
@@ -38,4 +38,4 @@ units:
 - learn.dotnet-maui.separate-ui-and-logic-with-data-binding.6-exercise-create-converter
 - learn.dotnet-maui.separate-ui-and-logic-with-data-binding.7-summary
 badge:
-  uid: //TODO
+  uid: learn.dotnet-maui.separate-ui-and-logic-with-data-binding.badge
