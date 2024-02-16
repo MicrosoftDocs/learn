@@ -6,7 +6,7 @@ metadata:
   ms.date: 04/25/2023
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: container-registry
 title: Manage container images in Azure Container Registry
 summary: Learn how to use Azure Container Registry to store your container images, and automate builds and deployments.
