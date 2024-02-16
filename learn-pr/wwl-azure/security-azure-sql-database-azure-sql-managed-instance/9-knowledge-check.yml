@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/15/2024
+  ms.date: 02/16/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -14,58 +14,58 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the purpose of scanning a data source in Microsoft Purview?"
+  - content: "Why is database auditing enabled in Azure SQL Database?"
     choices:
-    - content: "To modify the data source in the Microsoft Purview governance portal"
-      isCorrect: false
-      explanation: "Incorrect. Scanning a data source in Microsoft Purview captures technical metadata, extracts schema, and applies classifications to your data."
-    - content: "To delete the data source from the Microsoft Purview Data Map"
-      isCorrect: false
-      explanation: "Incorrect. Scanning a data source in Microsoft Purview captures technical metadata, extracts schema, and applies classifications to your data."
-    - content: "To capture technical metadata, extract schema, and apply classifications to your data"
+    - content: "To track database activities and detect security violations."
       isCorrect: true
-      explanation: "Correct. Scanning a data source in Microsoft Purview captures technical metadata, extracts schema, and applies classifications to your data."
-  - content: "What is the purpose of authentication in a secure database?"
+      explanation: "Auditing enables tracking of database access and activities, helping to identify unauthorized actions and ensure compliance with security policies."
+    - content: "To reduce data storage requirements."
+      isCorrect: false
+      explanation: "Auditing does not directly impact storage requirements."
+    - content: "To automatically optimize database indexes."
+      isCorrect: false
+      explanation: "Auditing is crucial for tracking operations and ensuring security compliance, not for index optimization."
+  - content: "When is Azure SQL Database Always Encrypted recommended?"
     choices:
-    - content: "To limit the permissions granted to the application"
+    - content: "For encrypting data only at rest."
       isCorrect: false
-      explanation: "Incorrect. This is a best practice for application authentication, but not the purpose of authentication in a secure database."
-    - content: "To determine what actions a user is allowed to perform"
-      isCorrect: false
-      explanation: "Incorrect. This is the purpose of authorization, not authentication."
-    - content: "To prove the user is who they claim to be"
+      explanation: "Always Encrypted is designed to protect data not just at rest, but also in use and in transit."
+    - content: "For scenarios requiring encryption of sensitive data in use, at rest, and in transit."
       isCorrect: true
-      explanation: "Correct. Authentication is the process of proving the user is who they claim to be by providing user account and authentication information."
-  - content: "An App Service web application uses an SQL database. Users need to authenticate to the database with their Microsoft Entra ID credentials. Which of the following configuration tasks would enable this?"
+      explanation: "Always Encrypted provides a comprehensive encryption solution, protecting sensitive data throughout its lifecycle."
+    - content: "When database performance is the only consideration."
+      isCorrect: false
+      explanation: "While performance is a consideration, Always Encrypted is primarily recommended for scenarios requiring strong data encryption."
+  - content: "What is the benefit of implementing Transparent Database Encryption (TDE) in Azure SQL Database?"
     choices:
-    - content: "Create an SQL Database Administrator"
+    - content: "To encrypt data in transit between client and server."
       isCorrect: false
-      explanation: "The SQL Database Admin account would offer too much access the users."
-    - content: "Create a Microsoft Entra ID Database Administrator"
+      explanation: "TDE is focused on data at rest, whereas data in transit encryption is handled by other mechanisms."
+    - content: "To automatically redact sensitive data in query results."
       isCorrect: false
-      explanation: "A Microsoft Entra ID Database admin could only configure and manage the database."
-    - content: "Create users in each database"
+      explanation: "TDE does not provide data redaction in query results; this is achieved through other features like dynamic data masking."
+    - content: "To encrypt data at rest, protecting stored data from unauthorized access."
       isCorrect: true
-      explanation: "Don't create users in the Master db. Instead, contained users should be created on each database."
-  - content: "A company wants to maintain an audit trail of selected events in their Azure SQL Database. They also want to be able to report on database activity and analyze results. What feature should they use?"
+      explanation: "TDE encrypts stored data, ensuring it remains inaccessible to unauthorized users without the appropriate encryption keys."
+  - content: "What is a use case for the Microsoft Purview governance portal?"
     choices:
-    - content: "Azure Functions"
+    - content: "To increase network bandwidth."
       isCorrect: false
-      explanation: "Incorrect. Azure Functions is a serverless compute service that enables users to run event-triggered code without having to provision or manage infrastructure."
-    - content: "Azure Virtual Machines"
-      isCorrect: false
-      explanation: "Incorrect. Azure Virtual Machines is a service that allows users to create and manage virtual machines in the cloud."
-    - content: "SQL database auditing"
+      explanation: "The Purview governance portal is used for data governance, not for managing network bandwidth."
+    - content: "To classify and manage sensitive information across data sources."
       isCorrect: true
-      explanation: "Correct. SQL database auditing enables users to retain an audit trail of selected events, report on database activity, and analyze results."
-  - content: "A company wants to ensure that their sensitive data is properly classified and protected. They want to apply sensitivity labels to their assets in the Microsoft Purview Data Map. What are the steps they need to follow to apply labels to their assets?"
+      explanation: "The Microsoft Purview governance portal provides tools for discovering, classifying, and managing sensitive data across an organization's data estate."
+    - content: "To directly manage virtual machine resources."
+      isCorrect: false
+      explanation: "Purview is focused on data governance across various data sources, not on direct VM management."
+  - content: "What is the purpose of Microsoft Entra database authentication in Azure SQL Database?"
     choices:
-    - content: "Manually apply labels to each asset in the Microsoft Purview Data Map."
+    - content: "To increase database storage efficiency."
       isCorrect: false
-      explanation: "Incorrect. This would be a time-consuming process and wouldn't be efficient for applying labels to multiple assets."
-    - content: "Create autolabeling rules for each asset individually."
+      explanation: "Database authentication focuses on security, not on enhancing storage efficiency."
+    - content: "To enhance query performance."
       isCorrect: false
-      explanation: "Incorrect. This would be a time-consuming process and wouldn't be efficient for applying labels to multiple assets."
-    - content: "Create new or apply existing sensitivity labels in the Microsoft Purview compliance portal, register and scan the asset in the Microsoft Purview Data Map, and Microsoft Purview will automatically apply classifications and labels based on autolabeling rules."
+      explanation: "Authentication mechanisms are designed to secure access, rather than directly improving query performance."
+    - content: "To secure database access by integrating with Microsoft Entra ID."
       isCorrect: true
-      explanation: "Correct. The company needs to create or apply existing sensitivity labels in the Microsoft Purview compliance portal, register and scan the asset in the Microsoft Purview Data Map, and Microsoft Purview will automatically apply classifications and labels based on autolabeling rules."
+      explanation: "Microsoft Entra database authentication enhances security by allowing for Microsoft Entra ID-based authentication, providing a more secure and manageable access control mechanism."
