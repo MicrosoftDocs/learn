@@ -3,7 +3,7 @@ uid: learn.dotnet-maui.separate-ui-and-logic-with-data-binding
 metadata:
   title: Create a UI that uses data binding in .NET MAUI.
   description: Create a UI with data binding. Your UI automatically updates based on the latest data, while the data updates in response to changes in the UI.
-  ms.date: 02/15/2024
+  ms.date: 02/14/2024
   author: adegeo
   ms.author: adegeo
   ms.topic: module-standard-task-based
