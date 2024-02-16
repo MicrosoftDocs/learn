@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/06/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Build a Form Recognizer custom skill for Azure Cognitive Search
 summary: Learn how to use an Azure Form Recognizer solution as a custom skill to enrich content in an Azure Cognitive Search pipeline.
