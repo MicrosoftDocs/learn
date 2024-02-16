@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: module
-  ms.prod: azure
+  ms.service: azure
 title: Configure scaling in Azure Kubernetes Service
 summary: This module covers the scaling applications in Azure Kubernetes Service (AKS), including manually scaling pods or nodes and integrating with Azure Container Instances (ACI).
 abstract: |

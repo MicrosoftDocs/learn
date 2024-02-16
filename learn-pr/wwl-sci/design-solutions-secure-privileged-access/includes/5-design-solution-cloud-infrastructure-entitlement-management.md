@@ -19,7 +19,7 @@ Permissions Management has been designed in such a way that we recommended you '
 
 ![Diagram that shows use case for Permissions Management.](../media/discover-remediate-monitor.png)
 <!-- 
-[](https://learn.microsoft.com/azure/active-directory/cloud-infrastructure-entitlement-management/overview#discover)
+[](/azure/active-directory/cloud-infrastructure-entitlement-management/overview#discover)
 -->
 ### Discover
 
@@ -29,7 +29,7 @@ Customers can assess permission risks by evaluating the gap between permissions 
 -   Permission Creep Index (PCI): An aggregated metric that periodically evaluates the level of risk associated with the number of unused or excessive permissions across your identities and resources. It measures how much damage identities can cause based on the permissions they have.
 -   Permission usage analytics: Multi-dimensional view of permissions risk for all identities, actions, and resources.
 <!-- 
-[](https://learn.microsoft.com/azure/active-directory/cloud-infrastructure-entitlement-management/overview#remediate)
+[](/azure/active-directory/cloud-infrastructure-entitlement-management/overview#remediate)
 -->
 ### Remediate
 
@@ -38,7 +38,7 @@ Customers can right-size permissions based on usage, grant new permissions on-de
 -   Automated deletion of permissions unused for the past 90 days.
 -   Permissions on-demand: Grant identities permissions on-demand for a time-limited period or an as-needed basis.
 <!-- 
-[](https://learn.microsoft.com/azure/active-directory/cloud-infrastructure-entitlement-management/overview#monitor)
+[](/azure/active-directory/cloud-infrastructure-entitlement-management/overview#monitor)
 -->
 ### Monitor
 

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/05/2023
+  ms.date: 02/05/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -19,7 +19,7 @@ quiz:
       explanation: "Correct. Use `IndexOfAny()` to retrieve the next index for any of several chars in a string."
     - content: "`Remove()`"
       isCorrect: false
-      explanation: "Incorrect. `Remove()` method won't find an index."
+      explanation: "Incorrect. `Remove()` method doesn't return an index."
     - content: "`IndexOf()`"
       isCorrect: false
       explanation: "Incorrect. `IndexOf()` could be used to find the position of a single char in a string, but not any of several chars."

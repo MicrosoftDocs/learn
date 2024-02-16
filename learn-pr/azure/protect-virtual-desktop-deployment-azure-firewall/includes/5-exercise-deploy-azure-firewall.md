@@ -18,8 +18,10 @@ Create a virtual network that acts as the central connectivity point or hub for 
     :::image type="content" source="../media/5-create-virtual-network.png" alt-text="Screenshot showing the information to include when creating a virtual network.":::
 
 1. Select the **IP Addresses** tab at the top of the screen.
+1. Change the address from **10.0.0.0** to **10.1.0.0**.
 1. Under **Subnets**, select the **Default** link.
 1. Select **Azure Firewall** in the **Subnet purpose** drop-down.
+1. Change the **Starting address** **to 10.1.0.0**.
 1. Leave the rest of the values as the defaults.
 1. Select **Save**.
 1. Select **Review + create** and wait for validation to pass.
@@ -40,6 +42,7 @@ Connect the hub virtual network with the virtual network used by the host pool b
     |Remote virtual network: Peering link name     |   remote-firewallVNet-hostVNet      |
     |Subscription     | Your subscription        |
     |Virtual network    | hostVNet       |
+1. Select **Allow 'hostVNet' to receive forwarded traffic from 'firewallVNet'**.
 
     :::image type="content" source="../media/5-add-peering.png" alt-text="Screenshot showing the information to include when adding a peering.":::
 
@@ -61,7 +64,7 @@ Now that you have the virtual networks created and peered, deploy Azure Firewall
    |Resource group     |learn-firewall-rg |
    |Name     |learn-fw|
    |Region     |Select the same location that you used previously|
-   | Firewall tier | Standard |
+   | Firewall SKU | Standard |
    |Firewall management|Use Firewall rules (classic) to manage this firewall|
    |Choose a virtual network     |Use existing: firewallVNet|
    |Public IP address     |Add new<br>Name:  fw-pip|

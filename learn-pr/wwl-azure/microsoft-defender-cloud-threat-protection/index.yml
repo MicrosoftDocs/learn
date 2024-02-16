@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
-  ms.prod: azure
+  ms.service: azure
 title: Configure and manage threat protection by using Microsoft Defender for Cloud
 summary: This module focuses on configuring and managing security monitoring and automation solutions using Azure Monitor and Microsoft Sentinel, enabling organizations to proactively identify and respond to security incidents in their cloud environment.
 abstract: |

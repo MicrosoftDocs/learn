@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-implement-asynchronous-scenarios.prepare
+title: Prepare for guided project
+metadata:
+  title: Prepare for guided project
+  description: "Use this unit to prepare for the guided project."
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-prepare.md)]

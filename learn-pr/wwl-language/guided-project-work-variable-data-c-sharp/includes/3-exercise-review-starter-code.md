@@ -178,7 +178,7 @@ The Program.cs file contains a preliminary version of the application that you'r
 
 1. Enter `1` followed by pressing the Enter key to "display all pets".
 
-1. Check that the all of the pet information displays.
+1. Check that all of the pet information displays.
 
     As you observe the data on all pets, the last pet displayed should match the following output:
 

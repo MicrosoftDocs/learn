@@ -6,6 +6,7 @@ metadata:
   ms.date: 12/15/2023
   author: kgremban
   ms.author: kgremban
+  manager: lizross
   ms.topic: module-intro-to-product
   ms.service: iot-dps
 title: Introduction to Azure IoT Hub Device Provisioning Service

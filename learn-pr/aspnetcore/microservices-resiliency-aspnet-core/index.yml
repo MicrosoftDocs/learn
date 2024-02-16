@@ -6,7 +6,7 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.date: 11/06/2023
-  ms.prod: aspnet-core
+  ms.service: aspnet-core
   ms.topic: module
 title: Implement resiliency in a cloud-native .NET microservice
 summary: Learn how to make your cloud-native .NET Core microservices app fault-tolerant with minimal impact on the user.

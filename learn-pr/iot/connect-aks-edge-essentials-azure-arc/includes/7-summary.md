@@ -1,0 +1,8 @@
+Your task is to boost customer experiences through smart shelf technology that tracks inventory and analyzes interactions. The company is seeking for a solution managing sensors, securing data, and enabling remote oversight. You need to set up a system for seamless sensor integration and data analysis, with centralized management, scalability, and robust security, optimizing the retail chain's customer experience strategies.
+
+You practiced on a testing environment and found that AKS Edge Essentials connected to Azure Arc can extend the Azure platform to the edge with core services such as governance, monitoring, application, ML, and data services. On the module exercises, you learned how to:
+
+* Connect AKS Edge Essentials to Azure Arc
+* Deploy applications to Azure Arc-enabled AKS Edge Essentials cluster with GitOps and Flux
+
+An Arc-Enabled AKS Edge Essentials cluster lets you control the cluster configuration and workloads at scale, using your Git repositories as the source of truth. This connection to Azure provides management capabilities such as inventory, monitoring, policy compliance, security, user access, and more. In the retail chain scenario, we connect AKS Edge Essentials to Azure Arc, which provides a centralized management console for Kubernetes clusters running anywhere, scalability, and robust security that helps optimize the retail chain's customer experience strategies.
