@@ -4,10 +4,10 @@ title: Discover value types and reference types
 metadata:
   title: Discover value types and reference types
   description: "Discover value types and reference types"
-  ms.date: 09/12/2023
+  ms.date: 02/16/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/2-value-reference-types.md)]

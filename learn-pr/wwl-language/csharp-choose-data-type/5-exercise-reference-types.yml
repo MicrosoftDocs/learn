@@ -4,10 +4,10 @@ title: Exercise - Discover reference types
 metadata:
   title: Exercise - Discover reference types
   description: "Exercise - Discover reference types"
-  ms.date: 09/12/2023
+  ms.date: 02/16/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise-reference-types.md)]
