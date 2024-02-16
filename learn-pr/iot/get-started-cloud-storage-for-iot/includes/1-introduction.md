@@ -4,8 +4,8 @@ Suppose you have joined a team that is implementing an Azure IoT solution for th
 
 In this module, you will:
 
- -  Examine the lambda architecture for data storage.
- -  Review Azure storage options commonly implemented with IoT solutions.
- -  Examine the features provided by specific Azure storage options.
+* Examine the lambda architecture for data storage.
+* Review Azure storage options commonly implemented with IoT solutions.
+* Examine the features provided by specific Azure storage options.
 
 By the end of this module, you will be able to describe the hot and cold storage path options for an Azure IoT solution.

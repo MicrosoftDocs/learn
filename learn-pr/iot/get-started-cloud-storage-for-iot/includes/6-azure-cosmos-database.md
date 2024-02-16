@@ -2,12 +2,12 @@ Today’s applications are required to be highly responsive and always online. T
 
 ## Key benefits
 
- -  Azure Cosmos DB natively partitions your data for high availability and scalability. Azure Cosmos DB offers 99.99% guarantees for availability, throughput, low latency, and consistency on all single-region accounts and all multi-region accounts with relaxed consistency, and 99.999% read availability on all multi-region database accounts.
- -  Azure Cosmos DB has SSD backed storage with low-latency order-of-millisecond response times.
- -  Azure Cosmos DB's support for consistency levels like eventual, consistent prefix, session, and bounded-staleness allows for full flexibility and low cost-to-performance ratio. No database service offers as much flexibility as Azure Cosmos DB in levels consistency.
- -  Azure Cosmos DB has a flexible data-friendly pricing model that meters storage and throughput independently.
- -  Azure Cosmos DB's reserved throughput model allows you to think in terms of number of reads/writes instead of CPU/memory/IOPs of the underlying hardware.
- -  Azure Cosmos DB's design lets you scale to massive request volumes in the order of trillions of requests per day.
+* Azure Cosmos DB natively partitions your data for high availability and scalability. Azure Cosmos DB offers 99.99% guarantees for availability, throughput, low latency, and consistency on all single-region accounts and all multi-region accounts with relaxed consistency, and 99.999% read availability on all multi-region database accounts.
+* Azure Cosmos DB has SSD backed storage with low-latency order-of-millisecond response times.
+* Azure Cosmos DB's support for consistency levels like eventual, consistent prefix, session, and bounded-staleness allows for full flexibility and low cost-to-performance ratio. No database service offers as much flexibility as Azure Cosmos DB in levels consistency.
+* Azure Cosmos DB has a flexible data-friendly pricing model that meters storage and throughput independently.
+* Azure Cosmos DB's reserved throughput model allows you to think in terms of number of reads/writes instead of CPU/memory/IOPs of the underlying hardware.
+* Azure Cosmos DB's design lets you scale to massive request volumes in the order of trillions of requests per day.
 
 > [!NOTE]
 > Azure Stream Analytics can target Azure Cosmos DB for JSON output, enabling data archiving and low-latency queries on unstructured JSON data.

@@ -2,18 +2,18 @@ There is a wide variety of cloud storage options available to architects who are
 
 Azure storage options that are commonly found in IoT solutions include:
 
- -  Azure Blob Storage and Azure Data Lake Gen2, which are both available as Azure IoT Hub routing endpoints.
- -  Azure Cosmos DB and Azure SQL Database, which are both available as Azure Stream Analytics outputs.
+* Azure Blob Storage and Azure Data Lake Gen2, which are both available as Azure IoT Hub routing endpoints.
+* Azure Cosmos DB and Azure SQL Database, which are both available as Azure Stream Analytics outputs.
 
 ## Azure Storage characteristics
 
 Azure Storage is Microsoft's cloud storage solution for modern data storage scenarios. Azure Storage offers a massively scalable object store for data objects, a file system service for the cloud, a messaging store for reliable messaging, and a NoSQL store. Azure Storage is:
 
- -  Durable and highly available. Redundancy ensures that your data is safe if a transient hardware failure occurs. You can also opt to replicate data across datacenters or geographical regions for extra protection from local catastrophe or natural disaster. Data replicated in this way remains highly available in the event of an unexpected outage.
- -  Secure. All data written to Azure Storage is encrypted by the service. Azure Storage provides you with fine-grained control over who has access to your data.
- -  Scalable. Azure Storage is designed to be massively scalable to meet the data storage and performance needs of today's applications.
- -  Managed. Microsoft Azure handles hardware maintenance, updates, and critical issues for you.
- -  Accessible. Data in Azure Storage is accessible from anywhere in the world over HTTP or HTTPS. Microsoft provides client libraries for Azure Storage in various programming languages, including .NET, Java, Node.js, Python, PHP, Ruby, Go, and others, and a mature REST API. Azure Storage supports scripting in Azure PowerShell or Azure CLI. And the Azure portal and Azure Storage Explorer offer easy visual solutions for working with your data.
+* Durable and highly available. Redundancy ensures that your data is safe if a transient hardware failure occurs. You can also opt to replicate data across datacenters or geographical regions for extra protection from local catastrophe or natural disaster. Data replicated in this way remains highly available in the event of an unexpected outage.
+* Secure. All data written to Azure Storage is encrypted by the service. Azure Storage provides you with fine-grained control over who has access to your data.
+* Scalable. Azure Storage is designed to be massively scalable to meet the data storage and performance needs of today's applications.
+* Managed. Microsoft Azure handles hardware maintenance, updates, and critical issues for you.
+* Accessible. Data in Azure Storage is accessible from anywhere in the world over HTTP or HTTPS. Microsoft provides client libraries for Azure Storage in various programming languages, including .NET, Java, Node.js, Python, PHP, Ruby, Go, and others, and a mature REST API. Azure Storage supports scripting in Azure PowerShell or Azure CLI. And the Azure portal and Azure Storage Explorer offer easy visual solutions for working with your data.
 
 ## Azure Storage as a routing endpoint
 
