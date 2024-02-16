@@ -4,8 +4,8 @@ The enrollment record contains the initial configuration for the device(s) as pa
 
 The Device Provisioning Service supports two types of enrollments:
 
-* Enrollment groups: Used to enroll multiple related devices.
-* Individual enrollments: Used to enroll a single device.
+* **Enrollment groups**: Used to enroll multiple related devices.
+* **Individual enrollments**: Used to enroll a single device.
 
 ## Device enrollment tools
 

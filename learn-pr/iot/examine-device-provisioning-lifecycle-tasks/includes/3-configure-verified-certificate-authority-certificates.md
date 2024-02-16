@@ -37,4 +37,4 @@ Proof-of-possession involves the following steps:
 1. Create an X.509 verification certificate with the verification code as its subject and sign the certificate with the private key associated with your X.509 CA certificate.
 1. Upload the signed verification certificate to the service. The service validates the verification certificate using the public portion of the CA certificate to be verified, thus proving that you are in possession of the CA certificate's private key.
 
-For more information about certificate manual verification and proof-of-possession, see [How to verify X.509 CA certificates with your Device Provisioning Service](/azure/iot-dps/how-to-verify-certificates#manual-verification-of-intermediate-or-root-ca).
+For more information about certificate manual verification and proof-of-possession, see [Manual verification of intermediate or root CA](/azure/iot-dps/how-to-verify-certificates#manual-verification-of-intermediate-or-root-ca).
