@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.prod: aspnet-core
+  ms.service: aspnet-core
 title: Implement HTTP operations in ASP.NET Razor Pages
 summary: |
   Learn how to implement HTTP clients based on `HttpClient` and `IHttpClientFactory`. And how to implement code to perform HTTP operations in [ASP.NET](https://ASP.NET) Core Razor Pages.

@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.custom-model-ai-vision-image-classification.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check your knowledge of custom model image classification with Azure AI Vision."
+  ms.date: 01/29/2024
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "How many images per class do you need to train a custom image classification model with Azure AI Vision?"
+    choices:
+    - content: "At least 10"
+      isCorrect: false
+      explanation: "Incorrect. You need about 3-5 images per class to train a custom image classification model with Azure AI Vision."
+    - content: "About 3-5"
+      isCorrect: true
+      explanation: "Correct. You need about 3-5 images per class to train a custom image classification model with Azure AI Vision."
+    - content: "About 8"
+      isCorrect: false
+      explanation: "Incorrect. You need about 3-5 images per class to train a custom image classification model with Azure AI Vision."
+  - content: "How can you access your custom image classification model after training it with Azure AI Vision?"
+    choices:
+    - content: "Through APIs or Vision Studio"
+      isCorrect: true
+      explanation: "Correct. You can access your custom image classification model through APIs or Vision Studio."
+    - content: "Only through APIs"
+      isCorrect: false
+      explanation: "Incorrect. You can access your custom image classification model through APIs or Vision Studio."
+    - content: "Only in the browser"
+      isCorrect: false
+      explanation: "Incorrect. You can access your custom image classification model through APIs or Vision Studio."
+  - content: "What are the two types of custom models that you can train with Azure AI Vision?"
+    choices:
+    - content: "Image segmentation and image enhancement"
+      isCorrect: false
+      explanation: "Incorrect. You can train image classification and object detection models with Azure AI Vision."
+    - content: "Image classification and object detection"
+      isCorrect: true
+      explanation: "Correct. You can train image classification and object detection models with Azure AI Vision."
+    - content: "Image captioning and image generation"
+      isCorrect: false
+      explanation: "Incorrect. You can train image classification and object detection models with Azure AI Vision."
+  

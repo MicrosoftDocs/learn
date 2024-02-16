@@ -9,7 +9,9 @@ metadata:
   ms.topic: module
   ms.service: azure
 title: Design solutions for securing privileged access
-summary: "You learn advanced techniques for designing solutions that manage privileged access effectively."
+summary: |
+  You learn advanced techniques for designing solutions that manage privileged access effectively.
+  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   By the end of this module, you are able to:
     - Understand privileged access and the Enterprise Access Model

@@ -9,7 +9,7 @@ metadata:
   ms.topic: unit
   ms.custom:
     - devx-track-dotnet
-  ms.prod: aspnet-core
+  ms.service: aspnet-core
 title: Summary
 durationInMinutes: 2
 content: |

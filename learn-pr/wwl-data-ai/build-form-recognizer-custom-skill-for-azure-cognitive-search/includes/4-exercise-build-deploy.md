@@ -30,7 +30,7 @@ We'll use a script to create the Azure Forms Recognizer resource, a resource gro
 1. Change to the `04-custom-skill` directory and then execute the setup script:
 
    ``` bash
-   cd doc-intelligence/04-custom-skill/
+   cd doc-intelligence/Labfiles/04-custom-skill/
    bash setup.sh
    ```
 

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.get-started-prompt-flow-ai-studio.exercise
+title: Exercise - Get started with prompt flow
+metadata:
+  title: Exercise - Get started with prompt flow
+  description: "Get started with prompt flow in the Azure AI Studio."
+  ms.date: 01/25/2024
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise.md)]

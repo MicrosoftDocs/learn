@@ -7,7 +7,6 @@ metadata:
   ms.date: 10/05/2023
   author: kjo-msft
   ms.author: karinjohnson
-  ms.prod: github
   ms.topic: learning-path
 summary: |
   Learn how to use GitHub and Visual Studio Code together to build and manage code. Take a tour of GitHub features, learn how to integrate GitHub into Visual Studio Code, and explore the power of GitHub Copilot in Visual Studio Code.

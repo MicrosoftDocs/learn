@@ -6,7 +6,8 @@ metadata:
   ms.date: 12/04/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: github
 title: "Settle competing commits by using merge conflict resolution on GitHub"
 summary: Learn to settle overlapping commits across branches by using merge conflict resolution.
 abstract: |

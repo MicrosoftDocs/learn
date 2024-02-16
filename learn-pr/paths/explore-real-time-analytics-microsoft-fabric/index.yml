@@ -7,8 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: learning-path
-  ms.prod: azure
-  ms.service: fabric
 title: Implement Real-Time Analytics with Microsoft Fabric
 prerequisites: |
   The student should be able to:

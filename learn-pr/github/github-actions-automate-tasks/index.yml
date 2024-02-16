@@ -6,7 +6,8 @@ metadata:
   ms.date: 10/06/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: github
 title: "Automate development tasks by using GitHub Actions"
 summary: Create a basic GitHub Action and use that action in a workflow.
 abstract: |

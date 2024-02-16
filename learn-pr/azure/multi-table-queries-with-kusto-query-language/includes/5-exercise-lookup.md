@@ -8,7 +8,7 @@ Recall that the `lookup` operator enriches a *fact* table with data from a *dime
 
 For this query, you start with the *SalesFact* table and use the `lookup` operator to get *Customer* data and add it to the resultant table.
 
-In the following procedure, you build the query in stages to give yourself a better understanding the result of using the `lookup` operator.
+In the following procedure, you build the query in stages to give yourself a better understanding of the result of using the `lookup` operator.
 
 1. Run the following query to get 10 matching arbitrary rows from the *SalesFact* table and the *Customers* table.
 
@@ -37,9 +37,9 @@ In the following procedure, you build the query in stages to give yourself a bet
 
     :::image type="content" source="../media/5-lookup-1.png" alt-text="Screenshot of the lookup operator, with total sales per country/region query and results.":::
 
-1. Take a look at the resulting list. You notice that the top sales are in the United States. Try modifying the query to show the total sales in the United States by state.
+1. Take a look at the resulting list. Notice that the top sales are in the United States. Try modifying the query to show the total sales in the United States by state.
 
-In the preceding unit, you used a *rightouter* `join` to get the total sales by product category. The query took 0.834 seconds to run. You'll now write a query to get the same result by using the `lookup` operator and then compare the execution time.
+In the preceding unit, you used a *rightouter* `join` to get the total sales by product category. That query took 0.834 seconds to run. Now, write a query to get the same result by using the `lookup` operator and then compare the execution time.
 
 1. Run the following query.
 
