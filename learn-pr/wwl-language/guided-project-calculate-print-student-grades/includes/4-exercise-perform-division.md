@@ -1,5 +1,3 @@
-
-
 In this exercise, you'll calculate and store the average of the assignment scores from each student. Since you know the number of scored assignments for each student, the average is calculated by dividing the sum of the assignment scores by the number of assignments. To store the averages, you'll be using the Decimal data type.
 
 ## Create variables to store the average
