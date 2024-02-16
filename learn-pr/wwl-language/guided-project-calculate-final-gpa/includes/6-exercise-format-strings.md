@@ -1,3 +1,4 @@
+
 In this exercise, you'll modify the console output from the previous exercise to achieve the specified reporting format.
 
 ## Format the console output
