@@ -1,4 +1,4 @@
-You need to deploy your network infrastructure in a hub-spoke configuration for your resources. Additionally, your internal HR department wants to host a new internal HR system that shouldn't be accessible from the internet. The system should be accessible to everyone in the company, whether they work at headquarters or in a satellite office.
+You've decided to deploy your network infrastructure in a hub-spoke configuration for your resources. Additionally, your internal HR department wants to host a new internal HR system that shouldn't be accessible from the internet. The HR system should be accessible to everyone in the company, whether they work at headquarters or in a satellite office.
 
 In this exercise, you deploy your network infrastructure, and then create a new virtual network to host the servers for your company's new HR system.
 
