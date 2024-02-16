@@ -10,7 +10,12 @@ metadata:
   ms.service: azure
 title: Plan and implement security for Azure SQL Database and Azure SQL Managed Instance
 summary: This module is designed to empower administrators with the knowledge and skills needed to plan and implement robust security measures for Azure SQL Database and Azure SQL Managed Instance, ensuring data protection and regulatory compliance.
-abstract: ""
+abstract: |
+  By the end of this module, participants will be able to:
+    - Implement security for Azure SQL Managed Instance to safeguard sensitive data.
+    - Use Microsoft Enterprise Identity for database authentication and conduct database auditing for compliance.
+    - Utilize Microsoft Purview for data governance and classification to protect sensitive information.
+    - Apply dynamic masking and Transparent Database Encryption, and recommend Always Encrypted for client-side data protection.
 prerequisites: |
   - None
 iconUrl: /training/achievements/generic-badge.svg
