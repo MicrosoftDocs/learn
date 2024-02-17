@@ -1,8 +1,8 @@
 Data storage for an IoT solution involves a combination of short and long-term storage.
 
-Suppose you have joined a team that is implementing an Azure IoT solution for the company. Your team will be implementing device message processing in support of data analytics and other downstream requirements. Understanding the rationale behind various data storage options will help to ensure that message and event data is retained in an appropriate repository. You decide to examine Azure storage options for both hot and cold data paths.
+Suppose you joined a team that is implementing an Azure IoT solution for the company. Your team is implementing device message processing in support of data analytics and other downstream requirements. Understanding the rationale behind various data storage options helps to ensure that message and event data is retained in an appropriate repository. You decide to examine Azure storage options for both hot and cold data paths.
 
-In this module, you will:
+In this module, you'll:
 
 * Examine the lambda architecture for data storage.
 * Review Azure storage options commonly implemented with IoT solutions.
