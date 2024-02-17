@@ -1,4 +1,4 @@
-For this exercise, we will use Azure Container Registry and its features to build and store the container images. 
+For this exercise, we use Azure Container Registry and its features to build and store the container images. 
 
 The Azure Container Registry (ACR) allows you to build, store, and manage container images and artifacts in a private registry for all types of container deployments. App Containerization uses Azure Container Registry Tasks to build container images in Azure on-demand and then store those images.
 
@@ -8,13 +8,12 @@ The Azure Container Registry (ACR) allows you to build, store, and manage contai
 
     ![Screenshot for app ACR selection.](../media/build-java-app.png)
 
-2. **Configure Application Insights**: You can enable monitoring for your Java apps without instrumenting your code. The tool will install the Java standalone agent as part of the container image. Once configured during deployment, the Java agent will automatically collect a multitude of requests, dependencies, logs, and metrics for your application that can be used for monitoring with Application Insights. This option is enabled by default for all Java applications and we'll leave it as-is. 
+1. **Configure Application Insights**: You can enable monitoring for your Java apps without instrumenting your code. The tool installs the Java standalone agent as part of the container image. Once the Java agent is configured during deployment, it automatically collects a multitude of requests, dependencies, logs, and metrics for your application that can be used for monitoring with Application Insights. This option is enabled by default for all Java applications, so we can leave it as is.
 
-3. **Review the Dockerfile**: The Dockerfile needed to build the container images for each selected application are generated at the beginning of the build step. Select **Review** to review the Dockerfile. You can also add any necessary customizations to the Dockerfile in the review step and save the changes before starting the build process. We'll not be making any changes to the Dockerfile in this exercise.
+1. **Review the Dockerfile**: The Dockerfile needed to build the container images for each selected application are generated at the beginning of the build step. Select **Review** to review the Dockerfile. You can also add any necessary customizations to the Dockerfile in the review step and save the changes before starting the build process. For this exercise, we don't make any changes to the Dockerfile.
 
-4. **Trigger build process**: Select the application to build images for and select **Build**. Clicking **Build** will start the container image build for each application. The tool keeps monitoring the build status continuously and will let you proceed to the next step upon successful completion of the build.
+1. **Trigger build process**: Select the application to build images for and select **Build**. Selecting **Build** starts the container image build for each application. The tool keeps monitoring the build status continuously and will let you proceed to the next step upon successful completion of the build.
 
-5. **Track build status**: You can also monitor progress of the build step by clicking the **Build in Progress** link under the status column. The link takes a couple of minutes to be active after you've triggered the build process.  
+1. **Track build status**: You can also monitor progress of the build step by clicking the **Build in Progress** link under the status column. The link takes a couple of minutes to be active after you trigger the build process.  
 
-6. Once the build is completed, select **Continue** to specify deployment settings. 
-
+1. Once the build is completed, select **Continue** to specify deployment settings.
