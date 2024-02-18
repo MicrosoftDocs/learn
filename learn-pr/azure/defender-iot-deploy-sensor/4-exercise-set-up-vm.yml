@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.defender-iot-deploy-sensor.exercise-deploy-software-to-appliance
-title: Exercise - Deploy Defender for IoT software to a virtual appliance
+uid: learn.defender-iot-deploy-sensor.exercise-set-up-vm
+title: Exercise - Set up a virtual machine
 metadata:
-  title: Exercise - Deploy Defender for IoT software to a virtual appliance
-  description: "Exercise - Deploy Defender for IoT software to a virtual appliance"
+  title: Exercise - Set up a virtual machine
+  description: "Exercise - Set up a virtual machine"
   ms.date: 1/16/2024
   author: limwainstein
   ms.author: lwainstein
